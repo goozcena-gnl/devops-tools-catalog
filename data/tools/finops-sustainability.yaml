@@ -147,6 +147,7 @@
   name: CloudZero
   summary: Cloud cost intelligence.
   official_url: https://www.cloudzero.com
+  documentation_url: https://docs.cloudzero.com/docs
   categories:
   - finops-sustainability
   subcategories:
@@ -162,20 +163,22 @@
   avoid_when:
   - Basic tagging-based cost reports already meet your needs.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L80
   - legacy:devopstools_final.md#L791
-  needs_review: true
+  needs_review: false
 - id: dash0
   name: Dash0
-  summary: Cloud cost management.
+  summary: OpenTelemetry-native observability platform with cost-control features.
   official_url: https://www.dash0.com
+  documentation_url: https://www.dash0.com/docs/dash0
   categories:
   - finops-sustainability
   subcategories:
@@ -191,16 +194,17 @@
   avoid_when:
   - You prefer best-of-breed tools for monitoring and FinOps separately.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L81
   - legacy:devopstools_final.md#L792
-  needs_review: true
+  needs_review: false
 - id: datadog-cloud-cost-management
   name: Datadog Cloud Cost Management
   summary: Cloud cost monitoring.

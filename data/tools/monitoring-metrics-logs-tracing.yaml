@@ -331,6 +331,7 @@
   summary: Monitoring platform with open source base and enterprise/cloud offerings.
   official_url: https://www.centreon.com
   repository_url: https://github.com/centreon/centreon
+  documentation_url: https://docs.centreon.com/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -348,20 +349,22 @@
   - Cloud-native/Kubernetes is your primary target.
   deployment_models: []
   license_model: open-core
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L7
   - legacy:devopstools_final.md#L699
-  needs_review: true
+  needs_review: false
 - id: checkmk
   name: checkmk
   summary: IT monitoring platform with open source Raw Edition and paid enterprise editions.
   official_url: https://checkmk.com
   repository_url: https://github.com/Checkmk/checkmk
+  documentation_url: https://docs.checkmk.com/latest/en/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -379,15 +382,16 @@
   - Your stack is purely containerized/cloud-native.
   deployment_models: []
   license_model: open-core
+  license_spdx: GPL-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L8
   - legacy:devopstools_final.md#L700
-  needs_review: true
+  needs_review: false
 - id: clickhouse
   name: ClickHouse
   summary: Columnar database commonly used as an observability backend.

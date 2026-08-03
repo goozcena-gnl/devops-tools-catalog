@@ -232,6 +232,7 @@
   summary: Platform for deploying and managing containers.
   official_url: https://www.convox.com
   repository_url: https://github.com/convox/convox
+  documentation_url: https://docs.convox.com/getting-started/introduction
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -248,21 +249,23 @@
   avoid_when:
   - You need multi-cloud beyond what Convox supports or prefer direct Kubernetes control.
   deployment_models: []
-  license_model: unknown
+  license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:7_Development-Collaboration/README.md#L89
   - legacy:devopstools_final.md#L1132
-  needs_review: true
+  needs_review: false
 - id: dokku
   name: Dokku
   summary: PaaS for deploying apps using Docker.
   official_url: https://dokku.com
   repository_url: https://github.com/dokku/dokku
+  documentation_url: https://dokku.com/docs/
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -280,15 +283,16 @@
   - You need multi-host clustering or high-availability out of the box.
   deployment_models: []
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:7_Development-Collaboration/README.md#L90
   - legacy:devopstools_final.md#L1133
-  needs_review: true
+  needs_review: false
 - id: flux
   name: Flux
   summary: Open and extensible GitOps toolkit for Kubernetes.

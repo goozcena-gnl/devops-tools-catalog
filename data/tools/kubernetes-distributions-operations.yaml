@@ -96,6 +96,7 @@
   summary: Simple deployment tool for Kubernetes.
   official_url: https://carvel.dev/kapp
   repository_url: https://github.com/carvel-dev/kapp
+  documentation_url: https://carvel.dev/kapp/docs/latest/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -113,15 +114,16 @@
   - You already use Helm/Kustomize and don't need another deployment layer.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L21
   - legacy:devopstools_final.md#L451
-  needs_review: true
+  needs_review: false
 - id: casavue
   name: CasaVue
   summary: Kubernetes cluster visualization and management dashboard.
@@ -158,6 +160,7 @@
     clusters.
   official_url: https://cluster-api.sigs.k8s.io
   repository_url: https://github.com/kubernetes-sigs/cluster-api
+  documentation_url: https://cluster-api.sigs.k8s.io/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -175,15 +178,16 @@
   - You run a single cluster or your cloud provider's tooling (eksctl/az aks) already handles provisioning.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L23
   - legacy:devopstools_final.md#L453
-  needs_review: true
+  needs_review: false
 - id: cluster-api-provider-aws
   name: Cluster API Provider AWS
   summary: Kubernetes-native declarative infrastructure provider for creating and operating self-managed

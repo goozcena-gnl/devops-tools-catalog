@@ -174,6 +174,7 @@
   summary: Declarative IaC language for Azure Resource Manager deployments.
   official_url: https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview
   repository_url: https://github.com/Azure/bicep
+  documentation_url: https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/
   categories:
   - infrastructure-as-code
   subcategories:
@@ -193,15 +194,16 @@
   - You need to manage resources outside Azure.
   deployment_models: []
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L38
   - legacy:devopstools_final.md#L171
-  needs_review: true
+  needs_review: false
 - id: azure-verified-modules-avm
   name: Azure Verified Modules (AVM)
   summary: Microsoft-curated, consistently designed Bicep and Terraform modules for Azure resources.
@@ -298,6 +300,7 @@
   summary: Cloud governance rules engine.
   official_url: https://cloudcustodian.io
   repository_url: https://github.com/cloud-custodian/cloud-custodian
+  documentation_url: https://cloudcustodian.io/docs/index.html
   categories:
   - infrastructure-as-code
   subcategories:
@@ -317,15 +320,16 @@
   - You only need basic tagging or have few resources.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L42
   - legacy:devopstools_final.md#L174
-  needs_review: true
+  needs_review: false
 - id: crossplane
   name: Crossplane
   summary: Kubernetes-native IaC control plane.
