@@ -1,0 +1,15 @@
+{
+  "canonical_records": 1092,
+  "categories": 30,
+  "license_models": {
+    "documentation": 97,
+    "open-core": 68,
+    "oss": 644,
+    "source-available": 15,
+    "unknown": 268
+  },
+  "statuses": {
+    "archived": 7,
+    "needs-review": 1085
+  }
+}
