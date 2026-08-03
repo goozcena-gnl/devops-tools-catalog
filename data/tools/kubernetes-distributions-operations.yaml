@@ -572,6 +572,7 @@
   summary: Community-maintained Kubernetes IDE fork.
   official_url: https://freelensapp.github.io
   repository_url: https://github.com/freelensapp/freelens
+  documentation_url: https://github.com/freelensapp/freelens/blob/master/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -589,20 +590,22 @@
   - Terminal-based tools (k9s) are faster for your workflow.
   deployment_models: []
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L27
   - legacy:devopstools_final.md#L461
-  needs_review: true
+  needs_review: false
 - id: gateway-api
   name: Gateway API
   summary: Kubernetes service networking APIs.
   official_url: https://gateway-api.sigs.k8s.io
   repository_url: https://github.com/kubernetes-sigs/gateway-api
+  documentation_url: https://gateway-api.sigs.k8s.io/guides/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -620,15 +623,16 @@
   - Simple Ingress rules suffice or your ingress controller lacks Gateway API support.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L5
   - legacy:devopstools_final.md#L433
-  needs_review: true
+  needs_review: false
 - id: gke
   name: GKE
   summary: Google Kubernetes Engine.

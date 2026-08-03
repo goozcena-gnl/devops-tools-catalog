@@ -335,6 +335,7 @@
   summary: Kubernetes-native IaC control plane.
   official_url: https://www.crossplane.io
   repository_url: https://github.com/crossplane/crossplane
+  documentation_url: https://docs.crossplane.io/
   categories:
   - infrastructure-as-code
   subcategories:
@@ -354,15 +355,16 @@
   - Your team doesn't already run Kubernetes.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L44
   - legacy:devopstools_final.md#L175
-  needs_review: true
+  needs_review: false
 - id: env0
   name: Env0
   summary: Infrastructure as Code automation and governance platform.
@@ -400,6 +402,7 @@
   summary: Cost estimates for IaC projects.
   official_url: https://www.infracost.io
   repository_url: https://github.com/infracost/infracost
+  documentation_url: https://www.infracost.io/docs/
   categories:
   - infrastructure-as-code
   subcategories:
@@ -419,15 +422,17 @@
   - Your cloud spend is trivial or pricing is flat.
   deployment_models: []
   license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L46
   - legacy:devopstools_final.md#L176
-  needs_review: true
+  needs_review: false
 - id: kics
   name: KICS
   summary: IaC scanning for security issues.

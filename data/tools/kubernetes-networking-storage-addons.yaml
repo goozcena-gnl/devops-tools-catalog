@@ -2353,6 +2353,7 @@
     or you find ChaosHub's experiment catalog doesn't cover your stack.
   official_url: https://litmuschaos.io
   repository_url: https://github.com/litmuschaos/litmus
+  documentation_url: https://docs.litmuschaos.io/
   categories:
   - kubernetes-networking-storage-addons
   - chaos-performance-engineering
@@ -2375,8 +2376,9 @@
     outages.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -2385,7 +2387,7 @@
   - legacy:8_Chaos-Engineering/README.md#L26
   - legacy:devopstools_final.md#L1172
   - legacy:devopstools_final.md#L601
-  needs_review: true
+  needs_review: false
 - id: loft-vind
   name: Loft Vind
   summary: Loft Labs tool (see repository for capabilities and usage).
@@ -3421,6 +3423,7 @@
   summary: Vulnerability scanner for containers and Kubernetes.
   official_url: https://aquasecurity.github.io/trivy
   repository_url: https://github.com/aquasecurity/trivy
+  documentation_url: https://trivy.dev/latest/
   categories:
   - kubernetes-networking-storage-addons
   - application-cloud-security
@@ -3446,8 +3449,9 @@
   - You need runtime threat detection (use Falco) rather than pre-deployment scanning.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -3456,7 +3460,7 @@
   - legacy:6_Security/README.md#L54
   - legacy:devopstools_final.md#L633
   - legacy:devopstools_final.md#L918
-  needs_review: true
+  needs_review: false
 - id: truenas
   name: TrueNAS
   summary: Storage platform/OS for NAS and SAN with community and enterprise editions.

@@ -439,6 +439,7 @@
   summary: Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
   official_url: https://coroot.com
   repository_url: https://github.com/coroot/coroot
+  documentation_url: https://coroot.com/docs/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -456,15 +457,16 @@
   - You need a battle-tested platform at very large scale.
   deployment_models: []
   license_model: oss
+  license_spdx: AGPL-3.0-only
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L9
   - legacy:devopstools_final.md#L701
-  needs_review: true
+  needs_review: false
 - id: cortex
   name: Cortex
   summary: Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus and
@@ -588,6 +590,7 @@
   summary: APM intake/processing for Elastic Observability (agents + server + UI).
   official_url: https://www.elastic.co/observability/application-performance-monitoring
   repository_url: https://github.com/elastic/apm-server
+  documentation_url: https://www.elastic.co/guide/en/apm/server/current/index.html
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -605,6 +608,7 @@
   - Licensing or running the Elastic stack isn't feasible.
   deployment_models: []
   license_model: source-available
+  commercial_offering: true
   maturity: unknown
   status: needs-review
   alternatives: []
