@@ -57,9 +57,9 @@ def render_tool(
         [
             f"### {tool['name']}",
             "",
-            f"**Categories:** {category_names}  ",
-            f"**Roles:** {role_names}  ",
-            f"**Model:** {str(tool['license_model']).replace('-', ' ').title()}  ",
+            f"**Categories:** {category_names}",
+            f"**Roles:** {role_names}",
+            f"**Model:** {str(tool['license_model']).replace('-', ' ').title()}",
             f"**Status:** {str(tool['status']).replace('-', ' ').title()}",
             *(["**Repository:** Archived"] if tool.get("repository_archived") else []),
             "",

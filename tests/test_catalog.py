@@ -57,6 +57,31 @@ def test_localstack_active_tool_with_archived_repository() -> None:
     assert localstack["needs_review"] is False
 
 
+def test_capsule_uses_current_project_repository() -> None:
+    capsule = next(tool for tool in load_tools() if tool["id"] == "capsule")
+    assert capsule["official_url"] == "https://projectcapsule.dev/"
+    assert capsule["repository_url"] == "https://github.com/projectcapsule/capsule"
+    assert capsule["status"] == "active"
+
+
+def test_cai_remains_under_review_for_license_boundary() -> None:
+    cai = next(tool for tool in load_tools() if tool["id"] == "cai-robotsec")
+    assert cai["license_model"] == "source-available"
+    assert cai["status"] == "needs-review"
+    assert cai["needs_review"] is True
+
+
+def test_commercial_cloud_services_can_be_active() -> None:
+    aws = next(tool for tool in load_tools() if tool["id"] == "amazon-web-services-aws")
+    storage_gateway = next(
+        tool for tool in load_tools() if tool["id"] == "aws-storage-gateway"
+    )
+    assert aws["license_model"] == "commercial"
+    assert storage_gateway["license_model"] == "commercial"
+    assert aws["status"] == "active"
+    assert storage_gateway["status"] == "active"
+
+
 def test_every_source_occurrence_has_a_disposition() -> None:
     with (ROOT / "migration" / "reconciliation.csv").open(
         encoding="utf-8", newline=""
