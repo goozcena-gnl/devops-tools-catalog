@@ -503,8 +503,9 @@
 - id: incus
   name: Incus
   summary: Modern system container and VM manager.
-  official_url: https://linuxcontainers.org/fr/incus/introduction
+  official_url: https://linuxcontainers.org/incus/
   repository_url: https://github.com/lxc/incus
+  documentation_url: https://linuxcontainers.org/incus/docs/main/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -521,15 +522,16 @@
   - You only need application containers (Docker/Podman) or full hypervisor features.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L154
   - legacy:devopstools_final.md#L245
-  needs_review: true
+  needs_review: false
 - id: incus-os
   name: Incus OS
   summary: Operating system images and distribution tooling for Incus environments.
@@ -561,6 +563,7 @@
   summary: Secure containers with lightweight VMs.
   official_url: https://katacontainers.io
   repository_url: https://github.com/kata-containers/kata-containers
+  documentation_url: https://katacontainers.io/docs/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -577,15 +580,16 @@
   - The performance overhead of micro-VMs is unacceptable or you run trusted workloads only.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L156
   - legacy:devopstools_final.md#L247
-  needs_review: true
+  needs_review: false
 - id: kcli
   name: kcli
   summary: Unified CLI for provisioning VMs, Kubernetes clusters, and infrastructure across libvirt, cloud,

@@ -89,8 +89,9 @@
 - id: aralez
   name: Aralez
   summary: Kubernetes operator (see docs).
-  official_url: https://sadoyan.github.io/aralez-docs
+  official_url: https://aralez.rs
   repository_url: https://github.com/sadoyan/aralez
+  documentation_url: https://aralez.rs
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -108,15 +109,16 @@
   - A more established operator covers your use case.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L70
   - legacy:devopstools_final.md#L531
-  needs_review: true
+  needs_review: false
 - id: aws-ack-rds-controller
   name: AWS ACK RDS Controller
   summary: AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
@@ -2284,6 +2286,7 @@
   summary: Lightweight service mesh for Kubernetes.
   official_url: https://linkerd.io
   repository_url: https://github.com/linkerd/linkerd2
+  documentation_url: https://linkerd.io/docs/overview/
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -2304,8 +2307,9 @@
   - You need advanced traffic routing, multi-cluster gateways, or Envoy ecosystem compatibility (use Istio).
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -2314,7 +2318,7 @@
   - legacy:6_Security/README.md#L122
   - legacy:devopstools_final.md#L1017
   - legacy:devopstools_final.md#L600
-  needs_review: true
+  needs_review: false
 - id: linstor
   name: LINSTOR
   summary: Distributed storage management (DRBD-based) with community and enterprise support.

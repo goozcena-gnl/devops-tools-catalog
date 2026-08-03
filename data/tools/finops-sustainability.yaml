@@ -271,6 +271,7 @@
   name: Flexera One
   summary: Cloud cost management.
   official_url: https://www.flexera.com/products/flexera-one
+  documentation_url: https://docs.flexera.com/flexera-one/
   categories:
   - finops-sustainability
   subcategories:
@@ -286,20 +287,22 @@
   avoid_when:
   - You're a small team that doesn't need asset/license management overhead.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L84
   - legacy:devopstools_final.md#L795
-  needs_review: true
+  needs_review: false
 - id: ibm-turbonomic-cloud-optimization
   name: IBM Turbonomic Cloud Optimization
   summary: Cloud resource optimization.
   official_url: https://www.ibm.com/products/turbonomic/cloud-optimization
+  documentation_url: https://www.ibm.com/docs/en/tarm
   categories:
   - finops-sustainability
   subcategories:
@@ -315,16 +318,17 @@
   avoid_when:
   - You want lightweight open-source recommendations (OpenCost, KRR).
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L85
   - legacy:devopstools_final.md#L796
-  needs_review: true
+  needs_review: false
 - id: kion-finops
   name: Kion FinOps
   summary: Cloud governance and cost management.

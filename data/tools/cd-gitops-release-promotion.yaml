@@ -480,6 +480,7 @@
   summary: Automated Kubernetes deployment updates.
   official_url: https://keel.sh
   repository_url: https://github.com/keel-hq/keel
+  documentation_url: https://keel.sh/docs/
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -497,15 +498,16 @@
   - You need a full GitOps pipeline with drift detection—use Flux or Argo CD instead.
   deployment_models: []
   license_model: oss
+  license_spdx: MPL-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:10_Miscellaneous/README.md#L8
   - legacy:devopstools_final.md#L1268
-  needs_review: true
+  needs_review: false
 - id: kubechecks
   name: KubeChecks
   summary: Pre-merge validation for Kubernetes GitOps changes.
@@ -602,6 +604,7 @@
   summary: Heroku-like mini PaaS.
   official_url: https://piku.github.io
   repository_url: https://github.com/piku/piku
+  documentation_url: https://piku.github.io/
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -619,15 +622,16 @@
   - You need scaling, orchestration, or container isolation.
   deployment_models: []
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:7_Development-Collaboration/README.md#L92
   - legacy:devopstools_final.md#L1136
-  needs_review: true
+  needs_review: false
 - id: porter
   name: Porter
   summary: PaaS for deploying apps to Kubernetes.

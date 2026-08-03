@@ -824,6 +824,7 @@
   summary: Identify vulnerable dependencies.
   official_url: https://owasp.org/www-project-dependency-check
   repository_url: https://github.com/dependency-check/DependencyCheck
+  documentation_url: https://dependency-check.github.io/DependencyCheck/
   categories:
   - application-cloud-security
   subcategories:
@@ -840,15 +841,16 @@
   - For container image scanning (use Trivy/Grype) or if false positives from CPE matching are too noisy.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:6_Security/README.md#L20
   - legacy:devopstools_final.md#L856
-  needs_review: true
+  needs_review: false
 - id: detect-secrets
   name: detect-secrets
   summary: Secrets detection with baseline support (reduce false positives).
@@ -938,6 +940,7 @@
   summary: Container image linter for security best practices.
   official_url: https://containers.goodwith.tech
   repository_url: https://github.com/goodwithtech/dockle
+  documentation_url: https://github.com/goodwithtech/dockle#readme
   categories:
   - application-cloud-security
   subcategories:
@@ -954,15 +957,16 @@
   - You already run Trivy which covers many of the same checks.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:6_Security/README.md#L22
   - legacy:devopstools_final.md#L858
-  needs_review: true
+  needs_review: false
 - id: drata
   name: Drata
   summary: Security and compliance automation platform.

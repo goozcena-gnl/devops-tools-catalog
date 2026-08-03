@@ -685,6 +685,7 @@
   summary: Container-native CI/CD platform.
   official_url: https://www.drone.io
   repository_url: https://github.com/harness/drone
+  documentation_url: https://docs.drone.io/
   categories:
   - ci-build-testing
   subcategories:
@@ -701,16 +702,18 @@
   avoid_when:
   - '* You need enterprise features (now largely folded into Harness).'
   deployment_models: []
-  license_model: oss
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L32
   - legacy:devopstools_final.md#L323
-  needs_review: true
+  needs_review: false
 - id: firebase-test-lab
   name: Firebase Test Lab
   summary: Cloud-based app testing on real and virtual devices.
@@ -746,6 +749,7 @@
   summary: Acceptance testing framework.
   official_url: https://fitnesse.org
   repository_url: https://github.com/unclebob/fitnesse
+  documentation_url: https://fitnesse.org/FitNesse/UserGuide.html
   categories:
   - ci-build-testing
   subcategories:
@@ -763,15 +767,16 @@
   - Your team prefers code-first testing or the wiki paradigm feels outdated.
   deployment_models: []
   license_model: oss
+  license_spdx: CPL-1.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:7_Development-Collaboration/README.md#L11
   - legacy:devopstools_final.md#L1033
-  needs_review: true
+  needs_review: false
 - id: github-actions
   name: GitHub Actions
   summary: CI/CD automation built into GitHub.
