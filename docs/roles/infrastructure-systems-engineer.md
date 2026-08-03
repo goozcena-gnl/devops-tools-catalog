@@ -37,7 +37,7 @@
 | [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | active |
 | [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | active |
 | [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | needs-review |
-| [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | active |
+| [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | needs-review |
 | [dive](https://github.com/wagoodman/dive) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Docker Desktop](https://www.docker.com/products/docker-desktop) | Virtualization, bare metal and homelab | unknown | needs-review |
 | [Dockur macOS](https://github.com/dockur/macos) | Virtualization, bare metal and homelab | oss | needs-review |

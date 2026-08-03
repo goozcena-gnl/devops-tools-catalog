@@ -117,6 +117,21 @@ def test_batch03_open_core_monitoring_docs_are_present() -> None:
     assert checkmk["status"] == "active"
 
 
+def test_batch03_conftest_has_authoritative_apache_license() -> None:
+    conftest = next(tool for tool in load_tools() if tool["id"] == "conftest")
+    assert conftest["license_model"] == "oss"
+    assert conftest["license_spdx"] == "Apache-2.0"
+    assert conftest["status"] == "active"
+
+
+def test_batch03_ctop_remains_under_review_pending_maintenance_signal() -> None:
+    ctop = next(tool for tool in load_tools() if tool["id"] == "ctop")
+    assert ctop["license_model"] == "oss"
+    assert ctop["license_spdx"] == "MIT"
+    assert ctop["status"] == "needs-review"
+    assert ctop["needs_review"] is True
+
+
 def test_every_source_occurrence_has_a_disposition() -> None:
     with (ROOT / "migration" / "reconciliation.csv").open(
         encoding="utf-8", newline=""
