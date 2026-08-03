@@ -32,15 +32,15 @@
 | [Cloudsmith](https://cloudsmith.com) | Artifact and package management | unknown | needs-review |
 | [Codecov](https://about.codecov.io) | CI, build and testing | unknown | needs-review |
 | [Codefresh](https://codefresh.io) | CI, build and testing | unknown | needs-review |
-| [commitlint](https://commitlint.js.org) | CI, build and testing | oss | needs-review |
-| [Concourse](https://concourse-ci.org) | CI, build and testing | oss | needs-review |
-| [Convox](https://www.convox.com) | CD, GitOps, release and promotion | unknown | needs-review |
+| [commitlint](https://commitlint.js.org) | CI, build and testing | oss | active |
+| [Concourse](https://concourse-ci.org) | CI, build and testing | oss | active |
+| [Convox](https://www.convox.com) | CD, GitOps, release and promotion | oss | active |
 | [Cypress](https://www.cypress.io) | CI, build and testing | open-core | needs-review |
 | [Dagger](https://dagger.io) | CI, build and testing | oss | needs-review |
 | [Devtron](https://devtron.ai) | CI, build and testing | oss | needs-review |
 | [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | unknown | needs-review |
 | [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | unknown | needs-review |
-| [Dokku](https://dokku.com) | CD, GitOps, release and promotion | oss | needs-review |
+| [Dokku](https://dokku.com) | CD, GitOps, release and promotion | oss | active |
 | [Drone](https://www.drone.io) | CI, build and testing | oss | needs-review |
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |
 | [FitNesse](https://fitnesse.org) | CI, build and testing | oss | needs-review |

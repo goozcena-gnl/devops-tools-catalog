@@ -144,8 +144,8 @@ Extensible web server and reverse proxy with automatic HTTPS.
 
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
 Platform for deploying and managing containers.
 
@@ -157,14 +157,14 @@ Platform for deploying and managing containers.
 
 - You need multi-cloud beyond what Convox supports or prefer direct Kubernetes control.
 
-[Official site](https://www.convox.com) · [Source repository](https://github.com/convox/convox)
+[Official site](https://www.convox.com) · [Documentation](https://docs.convox.com/getting-started/introduction) · [Source repository](https://github.com/convox/convox)
 
 ### Dokku
 
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 PaaS for deploying apps using Docker.
 
@@ -176,7 +176,7 @@ PaaS for deploying apps using Docker.
 
 - You need multi-host clustering or high-availability out of the box.
 
-[Official site](https://dokku.com) · [Source repository](https://github.com/dokku/dokku)
+[Official site](https://dokku.com) · [Documentation](https://dokku.com/docs/) · [Source repository](https://github.com/dokku/dokku)
 
 ### Flux
 

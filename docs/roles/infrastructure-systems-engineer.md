@@ -15,7 +15,7 @@
 | [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
 | [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | active |
 | [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
-| [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | needs-review |
+| [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
 | [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) | Virtualization, bare metal and homelab | documentation | needs-review |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
@@ -30,14 +30,14 @@
 | [Chef](https://www.chef.io) | Configuration management | oss | needs-review |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [CloudCasa](https://cloudcasa.io) | Backup, disaster recovery and resilience | unknown | needs-review |
-| [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | needs-review |
+| [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | active |
 | [Confidential Containers](https://confidentialcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [ConfigHub](https://www.confighub.com) | Configuration management | unknown | needs-review |
 | [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | active |
 | [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | active |
-| [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | needs-review |
+| [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | active |
 | [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | needs-review |
-| [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | needs-review |
+| [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | active |
 | [dive](https://github.com/wagoodman/dive) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Docker Desktop](https://www.docker.com/products/docker-desktop) | Virtualization, bare metal and homelab | unknown | needs-review |
 | [Dockur macOS](https://github.com/dockur/macos) | Virtualization, bare metal and homelab | oss | needs-review |

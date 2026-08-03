@@ -434,7 +434,7 @@ Threat intelligence platform providing IP/domain reputation, vulnerability resea
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Semantic code analysis for vulnerabilities.
 
@@ -446,7 +446,7 @@ Semantic code analysis for vulnerabilities.
 
 - Your codebase language isn't supported or you need near-instant scan times.
 
-[Official site](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql) · [Source repository](https://github.com/github/codeql)
+[Official site](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql) · [Documentation](https://codeql.github.com/docs/) · [Source repository](https://github.com/github/codeql)
 
 ### Codiga
 
@@ -472,7 +472,7 @@ Automated code analysis and security.
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Test configuration files using OPA/Rego.
 
@@ -484,7 +484,7 @@ Test configuration files using OPA/Rego.
 
 - You're not comfortable writing Rego policies.
 
-[Official site](https://www.conftest.dev) · [Source repository](https://github.com/open-policy-agent/conftest)
+[Official site](https://www.conftest.dev) · [Documentation](https://www.conftest.dev/) · [Source repository](https://github.com/open-policy-agent/conftest)
 
 ### copy-fail-destroyer
 
@@ -776,7 +776,7 @@ Intrusion prevention by monitoring logs and banning abusive IPs (e.g., SSH).
 **Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Runtime security for cloud-native environments.
 
@@ -790,7 +790,7 @@ Runtime security for cloud-native environments.
 - You only need pre-deployment scanning (use Trivy) or can't accept the kernel module/eBPF overhead.
 - You only need pre-deployment scanning (use Trivy/Kubescape instead).
 
-[Official site](https://falco.org) · [Source repository](https://github.com/falcosecurity/falco)
+[Official site](https://falco.org) · [Documentation](https://falco.org/docs/) · [Source repository](https://github.com/falcosecurity/falco)
 
 ### Filigran
 
@@ -1158,7 +1158,7 @@ Drop-in binary that maps Kubernetes attack paths to cluster-admin escalation, no
 **Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes control plane manager (multi-tenancy/security).
 
@@ -1172,7 +1172,7 @@ Kubernetes control plane manager (multi-tenancy/security).
 - Cluster API or vcluster already satisfies your multi-tenancy model.
 - You need full cluster isolation or use a managed K8s service.
 
-[Official site](https://kamaji.clastix.io) · [Source repository](https://github.com/clastix/kamaji)
+[Official site](https://kamaji.clastix.io) · [Documentation](https://kamaji.clastix.io/) · [Source repository](https://github.com/clastix/kamaji)
 
 ### kickthemout
 

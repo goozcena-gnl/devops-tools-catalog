@@ -105,7 +105,7 @@ Managed AWS infrastructure provisioning service for modeling resources as templa
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Declarative IaC language for Azure Resource Manager deployments.
 
@@ -117,7 +117,7 @@ Declarative IaC language for Azure Resource Manager deployments.
 
 - You need to manage resources outside Azure.
 
-[Official site](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) · [Source repository](https://github.com/Azure/bicep)
+[Official site](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) · [Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/) · [Source repository](https://github.com/Azure/bicep)
 
 ### Azure Verified Modules (AVM)
 
@@ -201,7 +201,7 @@ Terraform CDK framework.
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Cloud governance rules engine.
 
@@ -213,7 +213,7 @@ Cloud governance rules engine.
 
 - You only need basic tagging or have few resources.
 
-[Official site](https://cloudcustodian.io) · [Source repository](https://github.com/cloud-custodian/cloud-custodian)
+[Official site](https://cloudcustodian.io) · [Documentation](https://cloudcustodian.io/docs/index.html) · [Source repository](https://github.com/cloud-custodian/cloud-custodian)
 
 ### Crossplane
 

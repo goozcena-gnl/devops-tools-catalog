@@ -67,7 +67,7 @@ Kubernetes troubleshooting and monitoring platform with chat integrations and au
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Simple deployment tool for Kubernetes.
 
@@ -79,7 +79,7 @@ Simple deployment tool for Kubernetes.
 
 - You already use Helm/Kustomize and don't need another deployment layer.
 
-[Official site](https://carvel.dev/kapp) · [Source repository](https://github.com/carvel-dev/kapp)
+[Official site](https://carvel.dev/kapp) · [Documentation](https://carvel.dev/kapp/docs/latest/) · [Source repository](https://github.com/carvel-dev/kapp)
 
 ### CasaVue
 
@@ -105,7 +105,7 @@ Kubernetes cluster visualization and management dashboard.
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Declarative APIs and tooling for provisioning, upgrading, and operating multiple Kubernetes clusters.
 
@@ -117,7 +117,7 @@ Declarative APIs and tooling for provisioning, upgrading, and operating multiple
 
 - You run a single cluster or your cloud provider's tooling (eksctl/az aks) already handles provisioning.
 
-[Official site](https://cluster-api.sigs.k8s.io) · [Source repository](https://github.com/kubernetes-sigs/cluster-api)
+[Official site](https://cluster-api.sigs.k8s.io) · [Documentation](https://cluster-api.sigs.k8s.io/) · [Source repository](https://github.com/kubernetes-sigs/cluster-api)
 
 ### Cluster API Provider AWS
 

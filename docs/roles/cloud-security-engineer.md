@@ -33,9 +33,9 @@
 | [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) | Application and cloud security | oss | active |
 | [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Cisco Talos Intelligence](https://www.talosintelligence.com) | Application and cloud security | documentation | needs-review |
-| [CodeQL](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql) | Application and cloud security | oss | needs-review |
+| [CodeQL](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql) | Application and cloud security | oss | active |
 | [Codiga](https://github.com/codiga) | Application and cloud security | unknown | needs-review |
-| [Conftest](https://www.conftest.dev) | Application and cloud security | oss | needs-review |
+| [Conftest](https://www.conftest.dev) | Application and cloud security | oss | active |
 | [copy-fail-destroyer](https://github.com/NorskHelsenett/copy-fail-destroyer) | Application and cloud security | oss | needs-review |
 | [Coraza](https://coraza.io) | Application and cloud security | oss | needs-review |
 | [Cosmian KMS](https://cosmian.com/data-protection-suite/cosmian-kms) | IAM, secrets and certificate management | unknown | needs-review |
@@ -57,7 +57,7 @@
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
 | [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) | Application and cloud security | unknown | needs-review |
 | [fail2ban](https://github.com/fail2ban/fail2ban) | Application and cloud security | oss | needs-review |
-| [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Filigran](https://filigran.io) | Application and cloud security | unknown | needs-review |
 | [firewalld](https://firewalld.org) | Application and cloud security | oss | needs-review |
 | [Fortify Static Code Analyzer](https://www.opentext.com/products/static-application-security-testing) | Application and cloud security | unknown | needs-review |
@@ -83,7 +83,7 @@
 | [k0rdent](https://docs.k0rdent.io/latest) | Application and cloud security | oss | needs-review |
 | [k8s Sidecar Secret Forge](https://github.com/stegianna/k8s-sidecar-secret-forge) | Application and cloud security | oss | needs-review |
 | [k8scout](https://github.com/k8scout/k8scout) | Application and cloud security | oss | needs-review |
-| [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | needs-review |
 | [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
 | [kickthemout](https://github.com/roccomuso/kickthemout) | Application and cloud security | oss | needs-review |
