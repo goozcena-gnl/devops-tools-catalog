@@ -223,6 +223,80 @@ def test_batch04_elastic_apm_server_remains_under_review_for_license_boundary() 
     )
 
 
+def test_batch05_verified_tools_are_active_with_expected_metadata() -> None:
+    tools = load_tools()
+
+    for tool_id, spdx in [
+        ("dependencycheck", "Apache-2.0"),
+        ("dockle", "Apache-2.0"),
+        ("linkerd", "Apache-2.0"),
+        ("aralez", "Apache-2.0"),
+        ("k0s", "Apache-2.0"),
+        ("k3s", "Apache-2.0"),
+        ("fluent-bit", "Apache-2.0"),
+        ("kics", "Apache-2.0"),
+        ("kusionstack", "Apache-2.0"),
+        ("incus", "Apache-2.0"),
+        ("kata-containers", "Apache-2.0"),
+    ]:
+        tool = next(tool for tool in tools if tool["id"] == tool_id)
+        assert tool["license_model"] == "oss"
+        assert tool["license_spdx"] == spdx
+        assert tool["status"] == "active"
+        assert tool["needs_review"] is False
+
+    fitnesse = next(tool for tool in tools if tool["id"] == "fitnesse")
+    assert fitnesse["license_model"] == "oss"
+    assert fitnesse["license_spdx"] == "CPL-1.0"
+    assert fitnesse["status"] == "active"
+    assert fitnesse["needs_review"] is False
+
+    keel = next(tool for tool in tools if tool["id"] == "keel")
+    assert keel["license_model"] == "oss"
+    assert keel["license_spdx"] == "MPL-2.0"
+    assert keel["status"] == "active"
+    assert keel["needs_review"] is False
+
+    piku = next(tool for tool in tools if tool["id"] == "piku")
+    assert piku["license_model"] == "oss"
+    assert piku["license_spdx"] == "MIT"
+    assert piku["status"] == "active"
+    assert piku["needs_review"] is False
+
+    drone = next(tool for tool in tools if tool["id"] == "drone")
+    assert drone["license_model"] == "open-core"
+    assert drone["license_spdx"] == "Apache-2.0"
+    assert drone["commercial_offering"] is True
+    assert drone["status"] == "active"
+    assert drone["needs_review"] is False
+
+    for tool_id in [
+        "exoway",
+        "google-cloud-platform",
+        "flexera-one",
+        "ibm-turbonomic-cloud-optimization",
+    ]:
+        tool = next(tool for tool in tools if tool["id"] == tool_id)
+        assert tool["license_model"] == "commercial"
+        assert tool["commercial_offering"] is True
+        assert tool["status"] == "active"
+        assert tool["needs_review"] is False
+
+
+def test_batch05_elastic_stack_remains_under_review_for_license_boundary() -> None:
+    elastic_stack = next(
+        tool for tool in load_tools() if tool["id"] == "elastic-stack-elk"
+    )
+    assert elastic_stack["license_model"] == "source-available"
+    assert elastic_stack["commercial_offering"] is True
+    assert elastic_stack["status"] == "needs-review"
+    assert elastic_stack["needs_review"] is True
+    assert (
+        elastic_stack["documentation_url"]
+        == "https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html"
+    )
+
+
 def test_every_source_occurrence_has_a_disposition() -> None:
     with (ROOT / "migration" / "reconciliation.csv").open(
         encoding="utf-8", newline=""
