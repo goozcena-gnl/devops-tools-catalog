@@ -96,7 +96,7 @@
 | [etcd](https://etcd.io) | Databases, caching and data infrastructure | oss | needs-review |
 | [EveryDev.ai](https://www.everydev.ai) | Documentation, learning and career resources | unknown | needs-review |
 | [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | active |
+| [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | needs-review |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
 | [Finout](https://www.finout.io) | FinOps and sustainability | commercial | active |
 | [Flawless](https://github.com/William-Lu-stack/Flawless) | MLOps, LLMOps and AI infrastructure | oss | needs-review |

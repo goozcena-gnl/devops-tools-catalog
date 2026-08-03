@@ -189,7 +189,7 @@
 | [etckeeper](https://etckeeper.branchable.com) | Configuration management | oss | needs-review |
 | [EveryDev.ai](https://www.everydev.ai) | Documentation, learning and career resources | unknown | needs-review |
 | [Exercism](https://exercism.org) | Foundations, Linux and scripting | documentation | needs-review |
-| [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | active |
+| [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | needs-review |
 | [fd](https://github.com/sharkdp/fd) | Foundations, Linux and scripting | oss | needs-review |
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |
 | [Firecracker](https://firecracker-microvm.github.io) | Virtualization, bare metal and homelab | oss | active |
