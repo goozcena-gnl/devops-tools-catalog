@@ -624,6 +624,7 @@
     AGPL option for parts).
   official_url: https://www.elastic.co/elastic-stack
   repository_url: https://github.com/elastic/elasticsearch
+  documentation_url: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -642,6 +643,7 @@
     is simpler).
   deployment_models: []
   license_model: source-available
+  commercial_offering: true
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -656,6 +658,7 @@
   summary: Fast and lightweight log processor.
   official_url: https://fluentbit.io
   repository_url: https://github.com/fluent/fluent-bit
+  documentation_url: https://docs.fluentbit.io/manual
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -673,15 +676,16 @@
   - You need complex log transformations—Fluentd or Vector offer richer plugin/processing ecosystems.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L55
   - legacy:devopstools_final.md#L762
-  needs_review: true
+  needs_review: false
 - id: fluentd
   name: Fluentd
   summary: Unified logging layer.

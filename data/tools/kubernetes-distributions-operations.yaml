@@ -762,6 +762,7 @@
   summary: Kubernetes distribution.
   official_url: https://k0sproject.io
   repository_url: https://github.com/k0sproject/k0s
+  documentation_url: https://docs.k0sproject.io/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -779,15 +780,16 @@
   - K3s or a managed service already covers your needs with a larger community.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L161
   - legacy:devopstools_final.md#L663
-  needs_review: true
+  needs_review: false
 - id: k0smotron
   name: k0smotron
   summary: Kubernetes operator and Cluster API provider for managing hosted k0s control planes and child
@@ -878,6 +880,7 @@
   summary: Lightweight Kubernetes by Rancher.
   official_url: https://k3s.io
   repository_url: https://github.com/k3s-io/k3s
+  documentation_url: https://docs.k3s.io/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -895,15 +898,16 @@
   - You need full upstream Kubernetes compatibility or run enterprise workloads requiring RKE2/kubeadm.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L162
   - legacy:devopstools_final.md#L664
-  needs_review: true
+  needs_review: false
 - id: k8s-cleaner-sveltos
   name: K8s Cleaner (Sveltos)
   summary: Kubernetes resource cleaner.
