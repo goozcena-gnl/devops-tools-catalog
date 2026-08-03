@@ -1,0 +1,51 @@
+name: Full link audit
+
+on:
+  schedule:
+    - cron: "23 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scheduled-link-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install catalogue dependencies
+        run: python -m pip install --disable-pip-version-check -e .
+
+      - name: Run strict full audit
+        id: link-audit
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m scripts.check_links --strict --check-archived --workers 8
+
+      - name: Upload consolidated audit report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: link-audit-report
+          path: reports/link-report.*
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Report strict audit result
+        if: steps.link-audit.outcome == 'failure'
+        run: exit 1

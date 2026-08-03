@@ -1,0 +1,59 @@
+name: Propose a tool
+description: Propose a non-redundant operational tool or resource.
+title: "[Add]: "
+labels: [catalogue, needs-triage]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Tool name
+    validations:
+      required: true
+  - type: input
+    id: official-url
+    attributes:
+      label: Official URL
+    validations:
+      required: true
+  - type: input
+    id: repository-url
+    attributes:
+      label: Repository URL
+  - type: input
+    id: categories
+    attributes:
+      label: Proposed categories
+    validations:
+      required: true
+  - type: input
+    id: roles
+    attributes:
+      label: Relevant roles
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Practical operational use case
+    validations:
+      required: true
+  - type: dropdown
+    id: licence-model
+    attributes:
+      label: Licence or offering model
+      options: [oss, source-available, open-core, commercial, free-saas, documentation, unknown]
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Licence and maintenance evidence
+      description: Link primary sources, including an official licence file when available.
+    validations:
+      required: true
+  - type: textarea
+    id: differentiation
+    attributes:
+      label: Why is this not redundant?
+    validations:
+      required: true

@@ -1,0 +1,33 @@
+name: Deprecate or archive a tool
+description: Propose lifecycle reclassification while preserving history.
+title: "[Lifecycle]: "
+labels: [catalogue, lifecycle, needs-triage]
+body:
+  - type: input
+    id: id
+    attributes:
+      label: Canonical tool ID
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Proposed status
+      options: [deprecated, archived, historical]
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Official evidence
+      description: Provide a maintainer notice, archived repository, rename, or vendor announcement.
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Replacement or migration target
+  - type: textarea
+    id: migration
+    attributes:
+      label: Migration context
