@@ -20,7 +20,7 @@
 | [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [Combodo (iTop)](https://combodo.com) | SRE, incident response and on-call | open-core | needs-review |
-| [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Datadog](https://github.com/DataDog) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [dnsglobe](https://github.com/514-labs/dnsglobe) | SRE, incident response and on-call | oss | needs-review |

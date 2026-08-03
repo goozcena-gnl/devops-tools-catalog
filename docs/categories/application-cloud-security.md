@@ -510,7 +510,7 @@ Kubernetes DaemonSet that detects and remediates Linux kernel page-cache write v
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 ModSecurity-compatible WAF library.
 
@@ -522,14 +522,14 @@ ModSecurity-compatible WAF library.
 
 - You need a turnkey appliance with a management UI.
 
-[Official site](https://coraza.io) · [Source repository](https://github.com/corazawaf/coraza)
+[Official site](https://coraza.io) · [Documentation](https://coraza.io/docs/) · [Source repository](https://github.com/corazawaf/coraza)
 
 ### CrowdSec
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
 Collaborative intrusion prevention/behavior detection engine.
 
@@ -541,7 +541,7 @@ Collaborative intrusion prevention/behavior detection engine.
 
 - You need deep protocol inspection (use a full IDS like Suricata).
 
-[Official site](https://www.crowdsec.net) · [Source repository](https://github.com/crowdsecurity/crowdsec)
+[Official site](https://www.crowdsec.net) · [Documentation](https://docs.crowdsec.net/) · [Source repository](https://github.com/crowdsecurity/crowdsec)
 
 ### CVEMap
 
@@ -2378,7 +2378,7 @@ EBPF-based runtime security and threat detection for Linux systems and container
 **Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Vulnerability scanner for containers and Kubernetes.
 
@@ -2392,7 +2392,7 @@ Vulnerability scanner for containers and Kubernetes.
 - You need deep SAST or DAST capabilities.
 - You need runtime threat detection (use Falco) rather than pre-deployment scanning.
 
-[Official site](https://aquasecurity.github.io/trivy) · [Source repository](https://github.com/aquasecurity/trivy)
+[Official site](https://aquasecurity.github.io/trivy) · [Documentation](https://trivy.dev/latest/) · [Source repository](https://github.com/aquasecurity/trivy)
 
 ### TruffleHog
 

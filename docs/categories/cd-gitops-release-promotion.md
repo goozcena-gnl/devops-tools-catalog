@@ -183,7 +183,7 @@ PaaS for deploying apps using Docker.
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Open and extensible GitOps toolkit for Kubernetes.
 
@@ -195,7 +195,7 @@ Open and extensible GitOps toolkit for Kubernetes.
 
 - * You need a rich UI out of the box or prefer a centralized multi-cluster management plane.
 
-[Official site](https://fluxcd.io) · [Source repository](https://github.com/fluxcd/flux2)
+[Official site](https://fluxcd.io) · [Documentation](https://fluxcd.io/flux/) · [Source repository](https://github.com/fluxcd/flux2)
 
 ### Flux Operator
 
@@ -278,7 +278,7 @@ Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 GitOps promotion workflow for Kubernetes.
 
@@ -290,7 +290,7 @@ GitOps promotion workflow for Kubernetes.
 
 - * You have a single environment or simple deployment pipeline.
 
-[Official site](https://kargo.io) · [Source repository](https://github.com/akuity/kargo)
+[Official site](https://kargo.io) · [Documentation](https://docs.kargo.io/) · [Source repository](https://github.com/akuity/kargo)
 
 ### Keel
 

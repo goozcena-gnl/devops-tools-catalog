@@ -123,8 +123,8 @@ OpenTelemetry-native observability platform with cost-control features.
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Cloud cost monitoring.
 
@@ -136,14 +136,14 @@ Cloud cost monitoring.
 
 - Adding yet another Datadog SKU pushes your bill higher than the savings.
 
-[Official site](https://www.datadoghq.com/product/cloud-cost-management)
+[Official site](https://www.datadoghq.com/product/cloud-cost-management) · [Documentation](https://docs.datadoghq.com/cloud_cost_management/)
 
 ### Finout
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Cloud cost observability.
 
@@ -155,7 +155,7 @@ Cloud cost observability.
 
 - Simpler single-cloud cost tools handle your use case.
 
-[Official site](https://www.finout.io)
+[Official site](https://www.finout.io) · [Documentation](https://docs.finout.io/)
 
 ### Flexera One
 

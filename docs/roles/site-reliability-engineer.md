@@ -59,7 +59,7 @@
 | [Compute Gardener](https://www.compute-gardener.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | unknown | needs-review |
 | [CoreDNS](https://coredns.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [CronJob Guardian](https://illeniumstudios.github.io/cronjob-guardian) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Crossplane Provider Upjet](https://github.com/upbound/upjet) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -94,8 +94,8 @@
 | [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Forecastle](https://github.com/stakater/Forecastle) | Kubernetes distributions and operations | oss | needs-review |
-| [FreeLens](https://freelensapp.github.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Gateway API](https://gateway-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [FreeLens](https://freelensapp.github.io) | Kubernetes distributions and operations | oss | active |
+| [Gateway API](https://gateway-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Gatus](https://gatus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [git-sync](https://github.com/kubernetes/git-sync) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [GKE](https://cloud.google.com/kubernetes-engine) | Kubernetes distributions and operations | unknown | needs-review |
@@ -246,7 +246,7 @@
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Linnix](https://github.com/linnix-os/linnix) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | open-core | needs-review |
-| [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | needs-review |
+| [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
 | [Loft Vind](https://github.com/loft-sh/vind) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Logstash](https://www.elastic.co/logstash) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -355,7 +355,7 @@
 | [Toxiproxy](https://github.com/Shopify/toxiproxy) | Chaos and performance engineering | oss | needs-review |
 | [Tracetest](https://tracetest.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | unknown | needs-review |
-| [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [TrueNAS](https://www.truenas.com) | Kubernetes networking, storage and add-ons | open-core | needs-review |
 | [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) | Kubernetes distributions and operations | documentation | needs-review |
 | [Typhoon](https://typhoon.psdn.io) | Kubernetes distributions and operations | oss | needs-review |

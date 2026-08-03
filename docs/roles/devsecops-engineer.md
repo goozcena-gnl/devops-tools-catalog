@@ -39,9 +39,9 @@
 | [Codiga](https://github.com/codiga) | Application and cloud security | unknown | needs-review |
 | [Conftest](https://www.conftest.dev) | Application and cloud security | oss | active |
 | [copy-fail-destroyer](https://github.com/NorskHelsenett/copy-fail-destroyer) | Application and cloud security | oss | needs-review |
-| [Coraza](https://coraza.io) | Application and cloud security | oss | needs-review |
+| [Coraza](https://coraza.io) | Application and cloud security | oss | active |
 | [Cosmian KMS](https://cosmian.com/data-protection-suite/cosmian-kms) | IAM, secrets and certificate management | unknown | needs-review |
-| [CrowdSec](https://www.crowdsec.net) | Application and cloud security | oss | needs-review |
+| [CrowdSec](https://www.crowdsec.net) | Application and cloud security | open-core | active |
 | [CVEMap](https://github.com/projectdiscovery/cvemap) | Application and cloud security | oss | needs-review |
 | [CycloneDX](https://cyclonedx.org) | Application and cloud security | documentation | needs-review |
 | [Cyclonus](https://github.com/mattfenwick/cyclonus) | Application and cloud security | oss | needs-review |
@@ -182,7 +182,7 @@
 | [ThreatLocker](https://www.threatlocker.com) | Application and cloud security | unknown | needs-review |
 | [Touti-Cracker](https://github.com/Touti-Sudo/Touti-Cracker) | Application and cloud security | oss | needs-review |
 | [Tracee](https://aquasecurity.github.io/tracee/latest) | Application and cloud security | oss | needs-review |
-| [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [TruffleHog](https://trufflesecurity.com) | Application and cloud security | open-core | needs-review |
 | [Valqore](https://www.valqore.io) | Application and cloud security | unknown | needs-review |
 | [Velociraptor](https://docs.velociraptor.app) | Application and cloud security | oss | needs-review |

@@ -220,7 +220,7 @@ Cloud governance rules engine.
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes-native IaC control plane.
 
@@ -232,7 +232,7 @@ Kubernetes-native IaC control plane.
 
 - Your team doesn't already run Kubernetes.
 
-[Official site](https://www.crossplane.io) · [Source repository](https://github.com/crossplane/crossplane)
+[Official site](https://www.crossplane.io) · [Documentation](https://docs.crossplane.io/) · [Source repository](https://github.com/crossplane/crossplane)
 
 ### Env0
 
@@ -258,7 +258,7 @@ Infrastructure as Code automation and governance platform.
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
 Cost estimates for IaC projects.
 
@@ -270,7 +270,7 @@ Cost estimates for IaC projects.
 
 - Your cloud spend is trivial or pricing is flat.
 
-[Official site](https://www.infracost.io) · [Source repository](https://github.com/infracost/infracost)
+[Official site](https://www.infracost.io) · [Documentation](https://www.infracost.io/docs/) · [Source repository](https://github.com/infracost/infracost)
 
 ### KICS
 

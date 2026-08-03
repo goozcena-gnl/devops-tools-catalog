@@ -36,7 +36,7 @@
 | [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | active |
 | [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | active |
 | [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | active |
-| [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | needs-review |
+| [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | active |
 | [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | needs-review |
 | [dive](https://github.com/wagoodman/dive) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Docker Desktop](https://www.docker.com/products/docker-desktop) | Virtualization, bare metal and homelab | unknown | needs-review |
@@ -47,8 +47,8 @@
 | [etckeeper](https://etckeeper.branchable.com) | Configuration management | oss | needs-review |
 | [Exercism](https://exercism.org) | Foundations, Linux and scripting | documentation | needs-review |
 | [fd](https://github.com/sharkdp/fd) | Foundations, Linux and scripting | oss | needs-review |
-| [Firecracker](https://firecracker-microvm.github.io) | Virtualization, bare metal and homelab | oss | needs-review |
-| [Flatcar Container Linux](https://www.flatcar.org) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Firecracker](https://firecracker-microvm.github.io) | Virtualization, bare metal and homelab | oss | active |
+| [Flatcar Container Linux](https://www.flatcar.org) | Virtualization, bare metal and homelab | oss | active |
 | [Flathub](https://flathub.org) | Foundations, Linux and scripting | unknown | needs-review |
 | [Flatpak](https://flatpak.org) | Foundations, Linux and scripting | oss | needs-review |
 | [freeCodeCamp](https://www.freecodecamp.org) | Foundations, Linux and scripting | documentation | needs-review |
@@ -62,7 +62,7 @@
 | [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) | Virtualization, bare metal and homelab | documentation | needs-review |
 | [Incus](https://linuxcontainers.org/fr/incus/introduction) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Incus OS](https://linuxcontainers.org/incus-os) | Virtualization, bare metal and homelab | oss | needs-review |
-| [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | needs-review |
+| [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [JuiceFS](https://juicefs.com/en) | Databases, caching and data infrastructure | open-core | needs-review |
 | [Juju](https://canonical.com/juju) | Configuration management | oss | needs-review |
 | [Kasten K10](https://www.kasten.io) | Backup, disaster recovery and resilience | unknown | needs-review |

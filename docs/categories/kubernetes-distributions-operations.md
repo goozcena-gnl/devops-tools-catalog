@@ -371,7 +371,7 @@ Kubernetes dashboard that discovers and displays application URLs from Ingress a
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Community-maintained Kubernetes IDE fork.
 
@@ -383,14 +383,14 @@ Community-maintained Kubernetes IDE fork.
 
 - Terminal-based tools (k9s) are faster for your workflow.
 
-[Official site](https://freelensapp.github.io) · [Source repository](https://github.com/freelensapp/freelens)
+[Official site](https://freelensapp.github.io) · [Documentation](https://github.com/freelensapp/freelens/blob/master/README.md) · [Source repository](https://github.com/freelensapp/freelens)
 
 ### Gateway API
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes service networking APIs.
 
@@ -402,7 +402,7 @@ Kubernetes service networking APIs.
 
 - Simple Ingress rules suffice or your ingress controller lacks Gateway API support.
 
-[Official site](https://gateway-api.sigs.k8s.io) · [Source repository](https://github.com/kubernetes-sigs/gateway-api)
+[Official site](https://gateway-api.sigs.k8s.io) · [Documentation](https://gateway-api.sigs.k8s.io/guides/) · [Source repository](https://github.com/kubernetes-sigs/gateway-api)
 
 ### GKE
 

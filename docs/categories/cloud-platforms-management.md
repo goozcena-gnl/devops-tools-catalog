@@ -123,8 +123,8 @@ Cloud orchestration framework for automating application and infrastructure life
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Cloud management platform.
 
@@ -136,14 +136,14 @@ Cloud management platform.
 
 - Your workloads are single-cloud with built-in cost tools.
 
-[Official site](https://www.concierto.cloud)
+[Official site](https://www.concierto.cloud) · [Documentation](https://concierto.cloud/)
 
 ### DigitalOcean
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Developer-friendly cloud infrastructure provider.
 
@@ -155,7 +155,7 @@ Developer-friendly cloud infrastructure provider.
 
 - You need enterprise-grade compliance or advanced networking.
 
-[Official site](https://www.digitalocean.com)
+[Official site](https://www.digitalocean.com) · [Documentation](https://docs.digitalocean.com/)
 
 ### Exoway
 

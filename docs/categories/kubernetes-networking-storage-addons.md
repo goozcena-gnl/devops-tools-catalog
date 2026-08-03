@@ -1487,7 +1487,7 @@ Distributed storage management (DRBD-based) with community and enterprise suppor
 **Categories:** Kubernetes networking, storage and add-ons, Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with a hub of pre-built experiments and GitOps-friendly CRD workflows. ❌ **Avoid when** your environment is non-Kubernetes or you find ChaosHub's experiment catalog doesn't cover your stack.
 
@@ -1499,7 +1499,7 @@ Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with 
 
 - You haven't established basic monitoring and incident response—chaos without observability is just outages.
 
-[Official site](https://litmuschaos.io) · [Source repository](https://github.com/litmuschaos/litmus)
+[Official site](https://litmuschaos.io) · [Documentation](https://docs.litmuschaos.io/) · [Source repository](https://github.com/litmuschaos/litmus)
 
 ### Loft Vind
 
@@ -2171,7 +2171,7 @@ Local dev against remote Kubernetes.
 **Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Vulnerability scanner for containers and Kubernetes.
 
@@ -2185,7 +2185,7 @@ Vulnerability scanner for containers and Kubernetes.
 - You need deep SAST or DAST capabilities.
 - You need runtime threat detection (use Falco) rather than pre-deployment scanning.
 
-[Official site](https://aquasecurity.github.io/trivy) · [Source repository](https://github.com/aquasecurity/trivy)
+[Official site](https://aquasecurity.github.io/trivy) · [Documentation](https://trivy.dev/latest/) · [Source repository](https://github.com/aquasecurity/trivy)
 
 ### TrueNAS
 

@@ -371,7 +371,7 @@ CI/CD system with declarative pipelines.
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
 End-to-end testing for web applications.
 
@@ -383,14 +383,14 @@ End-to-end testing for web applications.
 
 - You need multi-tab, multi-origin, or non-Chromium browser coverage (consider Playwright instead).
 
-[Official site](https://www.cypress.io) · [Source repository](https://github.com/cypress-io/cypress)
+[Official site](https://www.cypress.io) · [Documentation](https://docs.cypress.io/) · [Source repository](https://github.com/cypress-io/cypress)
 
 ### Dagger
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
 CI/CD as code toolkit.
 
@@ -402,7 +402,7 @@ CI/CD as code toolkit.
 
 - * Your team prefers YAML-based pipelines or isn't comfortable with programmatic pipeline definitions.
 
-[Official site](https://dagger.io) · [Source repository](https://github.com/dagger/dagger)
+[Official site](https://dagger.io) · [Documentation](https://docs.dagger.io/) · [Source repository](https://github.com/dagger/dagger)
 
 ### Devtron
 
