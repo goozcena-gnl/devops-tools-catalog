@@ -15,7 +15,7 @@
 - [Cloudify](https://cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
 - [CloudZero](https://www.cloudzero.com) — Cloud cost intelligence.
 - [Concierto Cloud](https://www.concierto.cloud) — Cloud management platform.
-- [Dash0](https://www.dash0.com) — Cloud cost management.
+- [Dash0](https://www.dash0.com) — OpenTelemetry-native observability platform with cost-control features.
 - [Datadog Cloud Cost Management](https://www.datadoghq.com/product/cloud-cost-management) — Cloud cost monitoring.
 - [DigitalOcean](https://www.digitalocean.com) — Developer-friendly cloud infrastructure provider.
 - [Exoway](https://www.exoway.io) — Cloud infrastructure and hosting services.

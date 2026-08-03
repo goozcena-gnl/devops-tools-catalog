@@ -333,7 +333,7 @@ GitOps and CI/CD platform.
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Lint commit messages (Conventional Commits).
 
@@ -345,14 +345,14 @@ Lint commit messages (Conventional Commits).
 
 - Your team isn't bought in—forced adoption breeds resentment and meaningless messages.
 
-[Official site](https://commitlint.js.org) · [Source repository](https://github.com/conventional-changelog/commitlint)
+[Official site](https://commitlint.js.org) · [Documentation](https://commitlint.js.org/guides/getting-started.html) · [Source repository](https://github.com/conventional-changelog/commitlint)
 
 ### Concourse
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 CI/CD system with declarative pipelines.
 
@@ -364,7 +364,7 @@ CI/CD system with declarative pipelines.
 
 - * You need a quick setup with lots of community plugins; the learning curve is steep.
 
-[Official site](https://concourse-ci.org) · [Source repository](https://github.com/concourse/concourse)
+[Official site](https://concourse-ci.org) · [Documentation](https://concourse-ci.org/docs/) · [Source repository](https://github.com/concourse/concourse)
 
 ### Cypress
 

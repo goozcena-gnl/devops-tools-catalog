@@ -34,10 +34,10 @@
 | [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [cardamon](https://github.com/dominikhei/cardamon) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Carvel](https://carvel.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Carvel kapp](https://carvel.dev/kapp) | Kubernetes distributions and operations | oss | needs-review |
+| [Carvel kapp](https://carvel.dev/kapp) | Kubernetes distributions and operations | oss | active |
 | [Carvel ytt](https://carvel.dev/ytt) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CasaVue](https://casavue.app) | Kubernetes distributions and operations | unknown | needs-review |
-| [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Ceph](https://ceph.io/en) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Chaos Mesh](https://chaos-mesh.org) | Chaos and performance engineering | oss | needs-review |
@@ -45,14 +45,14 @@
 | [Chaos Room](https://github.com/fpaparoni/chaos-room) | Chaos and performance engineering | oss | needs-review |
 | [Chaos Toolkit](https://chaostoolkit.org) | Chaos and performance engineering | oss | needs-review |
 | [ChaosBlade](https://chaosblade.io/en) | Chaos and performance engineering | oss | needs-review |
-| [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Chisel Operator](https://chisel.fyralabs.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [CloudCasa](https://cloudcasa.io) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CloudNativePG](https://cloudnative-pg.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Cluster API](https://cluster-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [Cluster API](https://cluster-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Cluster Bare Autoscaler](https://github.com/docent-net/cluster-bare-autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Combodo (iTop)](https://combodo.com) | SRE, incident response and on-call | open-core | needs-review |
@@ -87,7 +87,7 @@
 | [Envoy Gateway](https://gateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
 | [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Fargate](https://aws.amazon.com/fargate) | Kubernetes distributions and operations | unknown | needs-review |
 | [flannel](https://github.com/flannel-io/flannel) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [flow](https://github.com/programmersd21/flow) | SRE, incident response and on-call | oss | needs-review |
@@ -157,7 +157,7 @@
 | [K9s](https://k9scli.io) | Kubernetes distributions and operations | oss | needs-review |
 | [k9sight](https://github.com/doganarif/k9sight) | Kubernetes distributions and operations | oss | needs-review |
 | [Kagent](https://kagent.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Karpenter](https://karpenter.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kasten K10](https://www.kasten.io) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [KCL](https://www.kcl-lang.io) | Kubernetes networking, storage and add-ons | oss | needs-review |

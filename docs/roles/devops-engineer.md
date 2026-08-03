@@ -48,7 +48,7 @@
 | [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [AWS Skill Builder](https://skillbuilder.aws) | Documentation, learning and career resources | documentation | needs-review |
 | [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) | Cloud platforms and cloud management | commercial | active |
-| [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | needs-review |
+| [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
 | [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) | Chaos and performance engineering | unknown | needs-review |
 | [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [Azure DevOps](https://azure.microsoft.com/en-us/services/devops) | CI, build and testing | unknown | needs-review |
@@ -96,7 +96,7 @@
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | source-available | archived |
 | [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | needs-review |
-| [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [CFEngine](https://cfengine.com) | Configuration management | open-core | needs-review |
 | [Chaos Mesh](https://chaos-mesh.org) | Chaos and performance engineering | oss | needs-review |
 | [Chaos Monkey](https://netflix.github.io/chaosmonkey) | Chaos and performance engineering | oss | needs-review |
@@ -104,16 +104,16 @@
 | [Chaos Toolkit](https://chaostoolkit.org) | Chaos and performance engineering | oss | needs-review |
 | [ChaosBlade](https://chaosblade.io/en) | Chaos and performance engineering | oss | needs-review |
 | [Chapril Services](https://www.chapril.org/-services-.html) | Emerging and experimental tools | unknown | needs-review |
-| [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Chef](https://www.chef.io) | Configuration management | oss | needs-review |
 | [CircleCI](https://circleci.com) | CI, build and testing | unknown | needs-review |
-| [Civo](https://www.civo.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Civo](https://www.civo.com) | Cloud platforms and cloud management | commercial | active |
 | [Claude Code Cheat Sheet](https://shipyard.build/blog/claude-code-cheat-sheet) | Documentation, learning and career resources | documentation | needs-review |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [Clone-Wars](https://github.com/GorvGoyl/Clone-Wars) | Emerging and experimental tools | oss | needs-review |
 | [CloudBees](https://www.cloudbees.com) | CI, build and testing | open-core | needs-review |
-| [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | needs-review |
-| [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | active |
+| [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | commercial | active |
 | [Cloudify](https://cloudify.co) | Cloud platforms and cloud management | oss | active |
 | [Cloudsmith](https://cloudsmith.com) | Artifact and package management | unknown | needs-review |
 | [cmd.ms](https://cmd.ms) | Emerging and experimental tools | oss | needs-review |
@@ -125,23 +125,23 @@
 | [Coder](https://coder.com) | Developer experience and local environments | oss | needs-review |
 | [CodeWhale](https://codewhale.net/en) | Developer experience and local environments | unknown | needs-review |
 | [Codex](https://github.com/openai/codex) | Developer experience and local environments | oss | needs-review |
-| [commitlint](https://commitlint.js.org) | CI, build and testing | oss | needs-review |
+| [commitlint](https://commitlint.js.org) | CI, build and testing | oss | active |
 | [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | unknown | needs-review |
-| [Concourse](https://concourse-ci.org) | CI, build and testing | oss | needs-review |
+| [Concourse](https://concourse-ci.org) | CI, build and testing | oss | active |
 | [Confidential Containers](https://confidentialcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [ConfigHub](https://www.confighub.com) | Configuration management | unknown | needs-review |
 | [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | unknown | needs-review |
 | [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | active |
 | [Continue](https://www.continue.dev) | Developer experience and local environments | oss | needs-review |
-| [Convox](https://www.convox.com) | CD, GitOps, release and promotion | unknown | needs-review |
+| [Convox](https://www.convox.com) | CD, GitOps, release and promotion | oss | active |
 | [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) | Emerging and experimental tools | unknown | needs-review |
 | [cosign (sigstore)](https://docs.sigstore.dev/cosign) | Emerging and experimental tools | oss | needs-review |
 | [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | active |
-| [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | needs-review |
+| [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | active |
 | [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | needs-review |
-| [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | needs-review |
+| [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | active |
 | [CUE](https://cuelang.org) | Emerging and experimental tools | oss | needs-review |
 | [Cursor](https://cursor.com) | Developer experience and local environments | unknown | needs-review |
 | [Cypress](https://www.cypress.io) | CI, build and testing | open-core | needs-review |
@@ -170,7 +170,7 @@
 | [Docker Offload](https://www.docker.com/products/docker-offload) | Containers and image tooling | unknown | needs-review |
 | [Dockur macOS](https://github.com/dockur/macos) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Dockur Windows](https://github.com/dockur/windows) | Virtualization, bare metal and homelab | oss | needs-review |
-| [Dokku](https://dokku.com) | CD, GitOps, release and promotion | oss | needs-review |
+| [Dokku](https://dokku.com) | CD, GitOps, release and promotion | oss | active |
 | [Dozzle](https://dozzle.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [drawDB](https://www.drawdb.app) | Developer experience and local environments | oss | needs-review |
 | [Drone](https://www.drone.io) | CI, build and testing | oss | needs-review |

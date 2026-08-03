@@ -66,8 +66,8 @@ Hybrid cloud storage service.
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Cloud infrastructure provider focused on Kubernetes.
 
@@ -79,14 +79,14 @@ Cloud infrastructure provider focused on Kubernetes.
 
 - You need a full-spectrum cloud provider beyond K8s.
 
-[Official site](https://www.civo.com)
+[Official site](https://www.civo.com) · [Documentation](https://www.civo.com/docs)
 
 ### CloudFuze
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Cloud file transfer and management.
 

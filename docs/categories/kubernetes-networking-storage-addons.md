@@ -569,7 +569,7 @@ Kubernetes add-on that configures public DNS servers with information about expo
 **Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Runtime security for cloud-native environments.
 
@@ -583,7 +583,7 @@ Runtime security for cloud-native environments.
 - You only need pre-deployment scanning (use Trivy) or can't accept the kernel module/eBPF overhead.
 - You only need pre-deployment scanning (use Trivy/Kubescape instead).
 
-[Official site](https://falco.org) · [Source repository](https://github.com/falcosecurity/falco)
+[Official site](https://falco.org) · [Documentation](https://falco.org/docs/) · [Source repository](https://github.com/falcosecurity/falco)
 
 ### flannel
 
@@ -1065,7 +1065,7 @@ AI-powered Kubernetes agent for cluster management.
 **Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes control plane manager (multi-tenancy/security).
 
@@ -1079,7 +1079,7 @@ Kubernetes control plane manager (multi-tenancy/security).
 - Cluster API or vcluster already satisfies your multi-tenancy model.
 - You need full cluster isolation or use a managed K8s service.
 
-[Official site](https://kamaji.clastix.io) · [Source repository](https://github.com/clastix/kamaji)
+[Official site](https://kamaji.clastix.io) · [Documentation](https://kamaji.clastix.io/) · [Source repository](https://github.com/clastix/kamaji)
 
 ### Karpenter
 

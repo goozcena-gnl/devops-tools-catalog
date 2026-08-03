@@ -124,7 +124,7 @@ Lightweight Kubernetes CRI implementation for running OCI-compatible container r
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Checkpoint/Restore In Userspace for Linux containers and processes.
 
@@ -136,14 +136,14 @@ Checkpoint/Restore In Userspace for Linux containers and processes.
 
 - Your workloads are stateless and easily re-schedulable.
 
-[Official site](https://criu.org/Main_Page) · [Source repository](https://github.com/checkpoint-restore/criu)
+[Official site](https://criu.org/Main_Page) · [Documentation](https://criu.org/Main_Page) · [Source repository](https://github.com/checkpoint-restore/criu)
 
 ### ctop
 
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Container metrics viewer (top-like).
 

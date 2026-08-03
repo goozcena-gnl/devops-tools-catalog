@@ -16,8 +16,8 @@
 | [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | active |
 | [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [cardamon](https://github.com/dominikhei/cardamon) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
-| [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
+| [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [Combodo (iTop)](https://combodo.com) | SRE, incident response and on-call | open-core | needs-review |
 | [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | needs-review |

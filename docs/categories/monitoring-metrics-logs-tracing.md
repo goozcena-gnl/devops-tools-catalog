@@ -219,7 +219,7 @@ Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
 Monitoring platform with open source base and enterprise/cloud offerings.
 
@@ -231,14 +231,14 @@ Monitoring platform with open source base and enterprise/cloud offerings.
 
 - Cloud-native/Kubernetes is your primary target.
 
-[Official site](https://www.centreon.com) · [Source repository](https://github.com/centreon/centreon)
+[Official site](https://www.centreon.com) · [Documentation](https://docs.centreon.com/) · [Source repository](https://github.com/centreon/centreon)
 
 ### checkmk
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
 IT monitoring platform with open source Raw Edition and paid enterprise editions.
 
@@ -250,7 +250,7 @@ IT monitoring platform with open source Raw Edition and paid enterprise editions
 
 - Your stack is purely containerized/cloud-native.
 
-[Official site](https://checkmk.com) · [Source repository](https://github.com/Checkmk/checkmk)
+[Official site](https://checkmk.com) · [Documentation](https://docs.checkmk.com/latest/en/) · [Source repository](https://github.com/Checkmk/checkmk)
 
 ### ClickHouse
 

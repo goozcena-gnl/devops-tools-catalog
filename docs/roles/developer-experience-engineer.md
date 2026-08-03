@@ -40,8 +40,8 @@
 | [Coder](https://coder.com) | Developer experience and local environments | oss | needs-review |
 | [CodeWhale](https://codewhale.net/en) | Developer experience and local environments | unknown | needs-review |
 | [Codex](https://github.com/openai/codex) | Developer experience and local environments | oss | needs-review |
-| [commitlint](https://commitlint.js.org) | CI, build and testing | oss | needs-review |
-| [Concourse](https://concourse-ci.org) | CI, build and testing | oss | needs-review |
+| [commitlint](https://commitlint.js.org) | CI, build and testing | oss | active |
+| [Concourse](https://concourse-ci.org) | CI, build and testing | oss | active |
 | [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | unknown | needs-review |
 | [Continue](https://www.continue.dev) | Developer experience and local environments | oss | needs-review |
 | [Cursor](https://cursor.com) | Developer experience and local environments | unknown | needs-review |

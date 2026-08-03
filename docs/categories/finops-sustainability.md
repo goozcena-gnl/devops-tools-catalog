@@ -85,8 +85,8 @@ Multi-cloud FinOps and governance platform for cost reporting, optimization, and
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Cloud cost intelligence.
 
@@ -98,16 +98,16 @@ Cloud cost intelligence.
 
 - Basic tagging-based cost reports already meet your needs.
 
-[Official site](https://www.cloudzero.com)
+[Official site](https://www.cloudzero.com) · [Documentation](https://docs.cloudzero.com/docs)
 
 ### Dash0
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud cost management.
+OpenTelemetry-native observability platform with cost-control features.
 
 **Use when**
 
@@ -117,7 +117,7 @@ Cloud cost management.
 
 - You prefer best-of-breed tools for monitoring and FinOps separately.
 
-[Official site](https://www.dash0.com)
+[Official site](https://www.dash0.com) · [Documentation](https://www.dash0.com/docs/dash0)
 
 ### Datadog Cloud Cost Management
 
