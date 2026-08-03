@@ -316,9 +316,10 @@
   needs_review: true
 - id: cai-robotsec
   name: CAI (RobotSec)
-  summary: Cybersecurity assessment for robotics.
+  summary: Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
   official_url: https://aliasrobotics.github.io/cai
-  repository_url: https://github.com/aliasrobotics/RIS
+  repository_url: https://github.com/aliasrobotics/cai
+  documentation_url: https://aliasrobotics.github.io/cai/
   categories:
   - application-cloud-security
   subcategories:
@@ -334,7 +335,7 @@
   avoid_when:
   - For general web or cloud workloads.
   deployment_models: []
-  license_model: oss
+  license_model: source-available
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -405,8 +406,9 @@
 - id: cedar-policy
   name: Cedar Policy
   summary: Policy language and authorization engine (Cedar) for fine-grained access control.
-  official_url: https://www.cedarpolicy.com/en
+  official_url: https://cedarpolicy.com/en
   repository_url: https://github.com/cedar-policy/cedar
+  documentation_url: https://docs.cedarpolicy.com/
   categories:
   - application-cloud-security
   subcategories:
@@ -423,15 +425,16 @@
   - You need infrastructure/K8s admission control (use OPA/Rego).
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:6_Security/README.md#L63
   - legacy:devopstools_final.md#L931
-  needs_review: true
+  needs_review: false
 - id: chain-bench
   name: Chain Bench
   summary: Supply chain security auditing tool.

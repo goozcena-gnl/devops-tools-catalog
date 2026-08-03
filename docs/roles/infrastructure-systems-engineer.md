@@ -13,8 +13,8 @@
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
 | [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
-| [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | needs-review |
-| [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | unknown | needs-review |
+| [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | active |
+| [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | needs-review |
 | [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) | Virtualization, bare metal and homelab | documentation | needs-review |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
@@ -33,8 +33,8 @@
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | needs-review |
 | [Confidential Containers](https://confidentialcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [ConfigHub](https://www.confighub.com) | Configuration management | unknown | needs-review |
-| [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | needs-review |
-| [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | needs-review |
+| [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | active |
+| [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | active |
 | [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | needs-review |
 | [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | needs-review |

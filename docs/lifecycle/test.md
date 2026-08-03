@@ -11,10 +11,10 @@
 - [Apache JMeter](https://jmeter.apache.org) — Load testing and performance measurement tool.
 - [Apiiro](https://apiiro.com) — Application security platform focused on securing agentic development and software delivery.
 - [Appcircle](https://appcircle.io) — CI/CD platform for mobile apps.
-- [Argo Workflows](https://argoproj.github.io/argo-workflows) — Kubernetes-native workflow engine.
+- [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) — Kubernetes-native workflow engine for orchestrating DAG-based CI, data, and ML pipelines.
 - [Arnica](https://www.arnica.io) — Application security platform covering SAST, SCA, IaC, and secrets scanning.
 - [Arsenal](https://github.com/Orange-Cyberdefense/arsenal) — Security tools knowledge base.
-- [Artillery](https://www.artillery.io) — Modern load testing toolkit.
+- [Artillery](https://www.artillery.io) — Load testing platform and toolkit for HTTP, APIs, and Playwright-based scenarios.
 - [ASP.NET Aspire](https://aspire.dev) — Orchestration + tooling for building cloud-native .NET distributed applications.
 - [AutoPWN Suite](https://kaangultekin.net/projects/autopwn-suite) — Automated reconnaissance and vulnerability discovery framework for security testing labs.
 - [Awesome DevSecOps](https://github.com/devsecops/awesome-devsecops) — Curated list of DevSecOps resources.
@@ -37,12 +37,12 @@
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 - [Burp Suite](https://portswigger.net/burp) — Web vulnerability scanner and testing suite.
 - [Cadence CI](https://cadence.ci) — CI/CD platform.
-- [CAI (RobotSec)](https://aliasrobotics.github.io/cai) — Cybersecurity assessment for robotics.
+- [CAI (RobotSec)](https://aliasrobotics.github.io/cai) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
 - [Calico Cloud](https://www.calicocloud.io/home) — Managed SaaS platform built on Calico Open Source for networking/security/observability.
-- [Capsule](https://capsule.clastix.io) — Kubernetes multi-tenancy and policy enforcement.
+- [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 - [Cato Networks](https://www.catonetworks.com) — SASE (Secure Access Service Edge) platform.
 - [CC Switch](https://ccswitch.io/en) — Control surface for switching and managing AI coding tools.
-- [Cedar Policy](https://www.cedarpolicy.com/en) — Policy language and authorization engine (Cedar) for fine-grained access control.
+- [Cedar Policy](https://cedarpolicy.com/en) — Policy language and authorization engine (Cedar) for fine-grained access control.
 - [Chain Bench](https://github.com/aquasecurity/chain-bench) — Supply chain security auditing tool.
 - [Chainguard](https://www.chainguard.dev) — Secure container images and supply chain security platform.
 - [Chaos Mesh](https://chaos-mesh.org) — Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you want a CNCF-backed, Kubernetes-native chaos platform with a dashboard and CRD-based workflows. ❌ **Avoid when** your workloads aren't on Kubernetes or you need bare-metal/VM-level experiments.

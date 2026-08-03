@@ -18,7 +18,7 @@
 - [Alpine Linux](https://github.com/alpinelinux) — Security-oriented, lightweight Linux distribution.
 - [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) — AWS monitoring and observability service.
 - [Amazon Q Developer](https://aws.amazon.com/q/developer) — AI code suggestions for AWS and more.
-- [Amazon Web Services (AWS)](https://aws.amazon.com) — Comprehensive cloud computing platform by Amazon.
+- [Amazon Web Services (AWS)](https://aws.amazon.com/) — Comprehensive cloud computing platform by Amazon.
 - [Ansible](https://www.ansible.com) — Agentless configuration management, orchestration, and automation.
 - [Apache CloudStack](https://cloudstack.apache.org) — Open source infrastructure-as-a-service platform for building and managing private and public clouds.
 - [Apache Kafka](https://kafka.apache.org) — Distributed event streaming platform.
@@ -33,7 +33,7 @@
 - [Auth0](https://auth0.com) — Identity platform for authenticating users, applications, and AI agents.
 - [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) — Collection of Kubernetes architecture diagrams.
 - [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) — Curated list of Prometheus resources.
-- [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts) — Collection of Prometheus alerting rules.
+- [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) — Curated, copy-pasteable Prometheus alert rules and guidance for common services and platforms.
 - [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) — Collection of 130+ specialized Codex subagents for a wide range of development use cases.
 - [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) — AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
 - [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — MCP server for AWS Billing & Cost Management use cases (announced by AWS).
@@ -41,7 +41,7 @@
 - [AWS Lambda](https://aws.amazon.com/lambda) — Serverless compute service by AWS.
 - [AWS MCP](https://awslabs.github.io/mcp) — AWS implementation of Model Context Protocol.
 - [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) — Managed secret storage for AWS.
-- [AWS Storage Gateway](https://aws.amazon.com/fr/storagegateway) — Hybrid cloud storage service.
+- [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) — Hybrid cloud storage service.
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
 - [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) — Chaos engineering service for Azure. ✅ **Use when** your infrastructure is Azure-native and you want tight integration with Azure Monitor. ❌ **Avoid when** you're multi-cloud or need experiments beyond Azure-supported fault types.
 - [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) — Azure service for running containerized apps.
@@ -58,7 +58,7 @@
 - [Bito](https://bito.ai) — AI coding assistant for IDE/workflow productivity.
 - [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) — Prometheus exporter for probing HTTP, HTTPS, DNS, TCP, ICMP, and gRPC endpoints.
 - [BorgBackup](https://www.borgbackup.org) — Deduplicating backup program (often used for cluster/VM backups).
-- [BotKube](https://botkube.io) — Kubernetes monitoring and alerting via chat.
+- [BotKube](https://botkube.io) — Kubernetes troubleshooting and monitoring platform with chat integrations and automation plugins.
 - [Bottlerocket](https://bottlerocket.dev) — Linux-based, security-hardened operating system purpose-built for running containers.
 - [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) — ACME-based certificate authority server powering Let's Encrypt.
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
@@ -66,7 +66,7 @@
 - [cAdvisor](https://github.com/google/cadvisor) — Container Advisor daemon that collects, aggregates, and exports container resource usage and performance data.
 - [Cal.com](https://cal.com) — Open-source scheduling and booking platform (Calendly alternative) for teams and individuals.
 - [Camunda](https://camunda.com) — Workflow and process automation (BPMN/DMN).
-- [Capsule](https://capsule.clastix.io) — Kubernetes multi-tenancy and policy enforcement.
+- [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 - [cardamon](https://github.com/dominikhei/cardamon) — Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop rules for them.
 - [Carvel](https://carvel.dev) — Kubernetes tools suite.
 - [Carvel kapp](https://carvel.dev/kapp) — Simple deployment tool for Kubernetes.
@@ -104,12 +104,12 @@
 - [Confidential Containers](https://confidentialcontainers.org) — CNCF project for running Kubernetes pods inside hardware-backed Trusted Execution Environments (TEEs).
 - [ConfigHub](https://www.confighub.com) — Configuration management platform for distributed applications.
 - [Confluence](https://www.atlassian.com/software/confluence) — AI-powered team knowledge base and collaboration workspace by Atlassian.
-- [containerd](https://containerd.io) — Container runtime.
+- [containerd](https://containerd.io) — Industry-standard container runtime focused on simplicity, portability, and robust Kubernetes integration.
 - [CoreDNS](https://coredns.io) — Flexible, plugin-based DNS server used as the default cluster DNS in Kubernetes.
 - [Coroot](https://coroot.com) — Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
 - [Cortex](https://cortexmetrics.io) — Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus and OpenTelemetry metrics (CNCF Incubating).
 - [Cosmian KMS](https://cosmian.com/data-protection-suite/cosmian-kms) — Key management service.
-- [CRI-O](https://cri-o.io) — Kubernetes container runtime (CRI implementation).
+- [CRI-O](https://cri-o.io) — Lightweight Kubernetes CRI implementation for running OCI-compatible container runtimes.
 - [CRIU](https://criu.org/Main_Page) — Checkpoint/Restore In Userspace for Linux containers and processes.
 - [CronJob Guardian](https://illeniumstudios.github.io/cronjob-guardian) — Kubernetes operator for monitoring CronJobs with SLA tracking, dead-man's switch detection, intelligent alerting, and a built-in dashboard.
 - [Crossplane Provider Upjet](https://github.com/upbound/upjet) — Build Crossplane providers from Terraform.

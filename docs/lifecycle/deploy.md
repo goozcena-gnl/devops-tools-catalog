@@ -14,15 +14,15 @@
 - [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) — Azure Kubernetes Service.
 - [Alpine Linux](https://github.com/alpinelinux) — Security-oriented, lightweight Linux distribution.
 - [Amazon Q Developer](https://aws.amazon.com/q/developer) — AI code suggestions for AWS and more.
-- [Amazon Web Services (AWS)](https://aws.amazon.com) — Comprehensive cloud computing platform by Amazon.
+- [Amazon Web Services (AWS)](https://aws.amazon.com/) — Comprehensive cloud computing platform by Amazon.
 - [Ansible](https://www.ansible.com) — Agentless configuration management, orchestration, and automation.
 - [Apache CloudStack](https://cloudstack.apache.org) — Open source infrastructure-as-a-service platform for building and managing private and public clouds.
 - [Apache Kafka](https://kafka.apache.org) — Distributed event streaming platform.
 - [Aralez](https://sadoyan.github.io/aralez-docs) — Kubernetes operator (see docs).
 - [Argo CD](https://argo-cd.readthedocs.io/en/stable/) — Declarative GitOps continuous delivery for Kubernetes.
 - [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) — Agent-based architecture for ArgoCD to manage remote clusters.
-- [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview) — Preview ArgoCD application changes.
-- [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable) — Automated image updates for ArgoCD.
+- [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) — Pull-request diff tool for previewing Argo CD application manifest changes before sync.
+- [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) — Automated image updates for ArgoCD.
 - [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
 - [Arize Phoenix](https://arize.com/docs/phoenix) — LLM observability and evaluation platform.
 - [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager JSON template format for declarative Azure deployments, with Bicep recommended for new authoring.
@@ -34,10 +34,10 @@
 - [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) — AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
 - [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — MCP server for AWS Billing & Cost Management use cases (announced by AWS).
 - [AWS CDK](https://aws.amazon.com/cdk) — Infrastructure as code framework that defines cloud resources in familiar programming languages.
-- [AWS CloudFormation](https://aws.amazon.com/cloudformation) — AWS-native infrastructure provisioning service (templates/stacks).
+- [AWS CloudFormation](https://aws.amazon.com/cloudformation) — Managed AWS infrastructure provisioning service for modeling resources as templates and stacks.
 - [AWS Lambda](https://aws.amazon.com/lambda) — Serverless compute service by AWS.
 - [AWS MCP](https://awslabs.github.io/mcp) — AWS implementation of Model Context Protocol.
-- [AWS Storage Gateway](https://aws.amazon.com/fr/storagegateway) — Hybrid cloud storage service.
+- [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) — Hybrid cloud storage service.
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
 - [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) — Declarative IaC language for Azure Resource Manager deployments.
 - [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) — Azure service for running containerized apps.
@@ -51,12 +51,12 @@
 - [Backstage](https://backstage.io) — Internal developer portal (IDP) / software catalog for improving developer experience.
 - [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) — Embedded key/value store for Go applications.
 - [Bito](https://bito.ai) — AI coding assistant for IDE/workflow productivity.
-- [BotKube](https://botkube.io) — Kubernetes monitoring and alerting via chat.
+- [BotKube](https://botkube.io) — Kubernetes troubleshooting and monitoring platform with chat integrations and automation plugins.
 - [Bottlerocket](https://bottlerocket.dev) — Linux-based, security-hardened operating system purpose-built for running containers.
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 - [Bunnyshell](https://www.bunnyshell.com) — Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven by environment-as-code workflows.
 - [Caddy](https://caddyserver.com) — Extensible web server and reverse proxy with automatic HTTPS.
-- [Capsule](https://capsule.clastix.io) — Kubernetes multi-tenancy and policy enforcement.
+- [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 - [Carvel](https://carvel.dev) — Kubernetes tools suite.
 - [Carvel kapp](https://carvel.dev/kapp) — Simple deployment tool for Kubernetes.
 - [Carvel ytt](https://carvel.dev/ytt) — YAML templating tool for Kubernetes configurations.
@@ -84,10 +84,10 @@
 - [Concierto Cloud](https://www.concierto.cloud) — Cloud management platform.
 - [Confidential Containers](https://confidentialcontainers.org) — CNCF project for running Kubernetes pods inside hardware-backed Trusted Execution Environments (TEEs).
 - [ConfigHub](https://www.confighub.com) — Configuration management platform for distributed applications.
-- [containerd](https://containerd.io) — Container runtime.
+- [containerd](https://containerd.io) — Industry-standard container runtime focused on simplicity, portability, and robust Kubernetes integration.
 - [Convox](https://www.convox.com) — Platform for deploying and managing containers.
 - [CoreDNS](https://coredns.io) — Flexible, plugin-based DNS server used as the default cluster DNS in Kubernetes.
-- [CRI-O](https://cri-o.io) — Kubernetes container runtime (CRI implementation).
+- [CRI-O](https://cri-o.io) — Lightweight Kubernetes CRI implementation for running OCI-compatible container runtimes.
 - [CRIU](https://criu.org/Main_Page) — Checkpoint/Restore In Userspace for Linux containers and processes.
 - [CronJob Guardian](https://illeniumstudios.github.io/cronjob-guardian) — Kubernetes operator for monitoring CronJobs with SLA tracking, dead-man's switch detection, intelligent alerting, and a built-in dashboard.
 - [Crossplane](https://www.crossplane.io) — Kubernetes-native IaC control plane.

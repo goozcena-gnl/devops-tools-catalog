@@ -7,9 +7,9 @@
 
 ### Academy JetBrains
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Interactive programming courses and tutorials by JetBrains.
@@ -26,9 +26,9 @@ Interactive programming courses and tutorials by JetBrains.
 
 ### AppImage
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Portable Linux application packaging format (single executable).
@@ -45,9 +45,9 @@ Portable Linux application packaging format (single executable).
 
 ### Bash
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Bourne Again Shell.
@@ -64,9 +64,9 @@ Bourne Again Shell.
 
 ### Bat
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Better `cat` with syntax highlighting.
@@ -83,9 +83,9 @@ Better `cat` with syntax highlighting.
 
 ### Exercism
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Language practice tracks across many programming languages.
@@ -102,9 +102,9 @@ Language practice tracks across many programming languages.
 
 ### fd
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Simple, fast alternative to `find`.
@@ -121,9 +121,9 @@ Simple, fast alternative to `find`.
 
 ### Flathub
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Main application repository ("app store") for Flatpak packages.
@@ -140,9 +140,9 @@ Main application repository ("app store") for Flatpak packages.
 
 ### Flatpak
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Universal Linux application isolation and distribution framework.
@@ -159,9 +159,9 @@ Universal Linux application isolation and distribution framework.
 
 ### freeCodeCamp
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Free learning platform for multi-language coding tutorials.
@@ -180,9 +180,9 @@ Free learning platform for multi-language coding tutorials.
 
 ### Go by Example
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Hands-on Go programming snippets and examples.
@@ -199,9 +199,9 @@ Hands-on Go programming snippets and examples.
 
 ### HariSekhon/DevOps-Bash-tools
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Large collection of Bash scripts, shell helpers, and automation tooling for DevOps, cloud, CI/CD, Kubernetes, and APIs.
@@ -218,9 +218,9 @@ Large collection of Bash scripts, shell helpers, and automation tooling for DevO
 
 ### htop
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Interactive process viewer.
@@ -237,9 +237,9 @@ Interactive process viewer.
 
 ### Linux Foundation Training
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Official Linux and open source training resources.
@@ -256,9 +256,9 @@ Official Linux and open source training resources.
 
 ### LinuxJourney
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Learn Linux from scratch.
@@ -275,9 +275,9 @@ Learn Linux from scratch.
 
 ### Python Official Tutorial
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Official Python documentation and tutorial.
@@ -294,9 +294,9 @@ Official Python documentation and tutorial.
 
 ### Rocky Linux
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Enterprise Linux distribution.
@@ -313,9 +313,9 @@ Enterprise Linux distribution.
 
 ### ShellCheck
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Shell script linter.
@@ -332,9 +332,9 @@ Shell script linter.
 
 ### Swiftorial
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Interactive tutorials for learning Swift programming.
@@ -351,9 +351,9 @@ Interactive tutorials for learning Swift programming.
 
 ### The Linux Command Line
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Free book on Linux CLI.
@@ -370,9 +370,9 @@ Free book on Linux CLI.
 
 ### The Linux Documentation Project (TLDP)
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Linux documentation library and community resource.
@@ -389,9 +389,9 @@ Linux documentation library and community resource.
 
 ### Zsh
 
-**Categories:** Foundations, Linux and scripting  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Foundations, Linux and scripting
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Z shell.

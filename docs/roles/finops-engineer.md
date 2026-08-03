@@ -5,16 +5,16 @@
 
 | Tool | Categories | Model | Status |
 |---|---|---|---|
-| [Apptio Cloudability](https://www.apptio.com/products/cloudability) | FinOps and sustainability | unknown | needs-review |
 | [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | active |
 | [Cast AI](https://cast.ai) | FinOps and sustainability | unknown | needs-review |
-| [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | unknown | needs-review |
+| [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | commercial | active |
 | [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) | FinOps and sustainability | unknown | needs-review |
 | [CloudZero](https://www.cloudzero.com) | FinOps and sustainability | unknown | needs-review |
 | [Dash0](https://www.dash0.com) | FinOps and sustainability | unknown | needs-review |
 | [Datadog Cloud Cost Management](https://www.datadoghq.com/product/cloud-cost-management) | FinOps and sustainability | unknown | needs-review |
 | [Finout](https://www.finout.io) | FinOps and sustainability | unknown | needs-review |
 | [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | unknown | needs-review |
+| [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
 | [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | unknown | needs-review |
 | [Kion FinOps](https://kion.io/platform/finops) | FinOps and sustainability | unknown | needs-review |
 | [Kubecost (Apptio)](https://www.apptio.com/products/kubecost) | FinOps and sustainability | open-core | needs-review |

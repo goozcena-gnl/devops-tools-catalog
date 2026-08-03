@@ -12,10 +12,9 @@
 | [agentsmith](https://github.com/PromptPartner/agentsmith) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AITMPL Agents](https://www.aitmpl.com/agents) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [Amazon Web Services (AWS)](https://aws.amazon.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
 | [Apache Kafka](https://kafka.apache.org) | Databases, caching and data infrastructure | oss | needs-review |
-| [Apptio Cloudability](https://www.apptio.com/products/cloudability) | FinOps and sustainability | unknown | needs-review |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [Arize Phoenix](https://arize.com/docs/phoenix) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
@@ -26,14 +25,14 @@
 | [Awesome Kubernetes Operator Resources](https://github.com/calvin-puram/awesome-kubernetes-operator-resources) | Documentation, learning and career resources | documentation | needs-review |
 | [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
-| [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | needs-review |
+| [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | active |
 | [AWS Cloud Quest Practitioner](https://skillbuilder.aws/learn/FU5WCYVGKY/aws-cloud-quest-cloud-practitioner/learn) | Documentation, learning and career resources | documentation | needs-review |
-| [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | unknown | needs-review |
+| [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
 | [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [AWS MCP](https://awslabs.github.io/mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) | IAM, secrets and certificate management | unknown | needs-review |
 | [AWS Skill Builder](https://skillbuilder.aws) | Documentation, learning and career resources | documentation | needs-review |
-| [AWS Storage Gateway](https://aws.amazon.com/fr/storagegateway) | Cloud platforms and cloud management | unknown | needs-review |
+| [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) | Cloud platforms and cloud management | commercial | active |
 | [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | needs-review |
 | [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | unknown | needs-review |
@@ -58,7 +57,7 @@
 | [Civo](https://www.civo.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [Claude Code Cheat Sheet](https://shipyard.build/blog/claude-code-cheat-sheet) | Documentation, learning and career resources | documentation | needs-review |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
-| [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | unknown | needs-review |
+| [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | commercial | active |
 | [CloudCasa](https://cloudcasa.io) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | needs-review |
 | [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | unknown | needs-review |
@@ -125,6 +124,7 @@
 | [Hoji AI](https://hoji.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Hortator](https://hortator.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [IBM Cloud](https://www.ibm.com/cloud) | Cloud platforms and cloud management | unknown | needs-review |
+| [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
 | [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | unknown | needs-review |
 | [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | unknown | needs-review |
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | needs-review |

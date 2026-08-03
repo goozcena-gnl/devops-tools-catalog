@@ -223,9 +223,10 @@
   needs_review: false
 - id: capsule
   name: Capsule
-  summary: Kubernetes multi-tenancy and policy enforcement.
-  official_url: https://capsule.clastix.io
-  repository_url: https://github.com/clastix/capsule
+  summary: Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
+  official_url: https://projectcapsule.dev/
+  repository_url: https://github.com/projectcapsule/capsule
+  documentation_url: https://projectcapsule.dev/docs/
   categories:
   - kubernetes-networking-storage-addons
   - application-cloud-security
@@ -251,8 +252,9 @@
   - You need full cluster-level isolation (use vcluster) or have a single tenant.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -261,7 +263,7 @@
   - legacy:6_Security/README.md#L62
   - legacy:devopstools_final.md#L535
   - legacy:devopstools_final.md#L930
-  needs_review: true
+  needs_review: false
 - id: carvel
   name: Carvel
   summary: Kubernetes tools suite.
@@ -421,6 +423,7 @@
   summary: EBPF-based networking, observability, and security for Kubernetes.
   official_url: https://cilium.io
   repository_url: https://github.com/cilium/cilium
+  documentation_url: https://docs.cilium.io/en/stable/
   categories:
   - kubernetes-networking-storage-addons
   - application-cloud-security
@@ -446,8 +449,9 @@
   - Your kernel doesn't support eBPF or you need a simpler CNI.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -456,7 +460,7 @@
   - legacy:6_Security/README.md#L64
   - legacy:devopstools_final.md#L542
   - legacy:devopstools_final.md#L932
-  needs_review: true
+  needs_review: false
 - id: cloudflare-kubernetes-gateway
   name: Cloudflare Kubernetes Gateway
   summary: Cloudflare gateway for Kubernetes clusters.

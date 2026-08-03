@@ -9,13 +9,13 @@
 | [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | active |
 | [Appcircle](https://appcircle.io) | CI, build and testing | unknown | needs-review |
 | [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
-| [Argo Workflows](https://argoproj.github.io/argo-workflows) | CI, build and testing | oss | needs-review |
+| [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) | CI, build and testing | oss | active |
 | [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |
-| [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview) | CD, GitOps, release and promotion | oss | needs-review |
-| [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable) | CD, GitOps, release and promotion | oss | needs-review |
+| [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) | CD, GitOps, release and promotion | oss | active |
+| [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
-| [Artillery](https://www.artillery.io) | CI, build and testing | oss | needs-review |
+| [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
 | [Azure DevOps](https://azure.microsoft.com/en-us/services/devops) | CI, build and testing | unknown | needs-review |
 | [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | unknown | needs-review |
 | [Bitbucket](https://bitbucket.org) | Source control and repository management | unknown | needs-review |

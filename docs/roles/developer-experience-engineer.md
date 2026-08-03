@@ -12,8 +12,8 @@
 | [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | active |
 | [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | active |
 | [Appcircle](https://appcircle.io) | CI, build and testing | unknown | needs-review |
-| [Argo Workflows](https://argoproj.github.io/argo-workflows) | CI, build and testing | oss | needs-review |
-| [Artillery](https://www.artillery.io) | CI, build and testing | oss | needs-review |
+| [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) | CI, build and testing | oss | active |
+| [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
 | [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | needs-review |
 | [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | unknown | needs-review |
 | [AWS Cloud9](https://aws.amazon.com/cloud9) | Developer experience and local environments | unknown | needs-review |

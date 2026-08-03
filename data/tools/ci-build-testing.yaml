@@ -96,9 +96,10 @@
   needs_review: true
 - id: argo-workflows
   name: Argo Workflows
-  summary: Kubernetes-native workflow engine.
-  official_url: https://argoproj.github.io/argo-workflows
+  summary: Kubernetes-native workflow engine for orchestrating DAG-based CI, data, and ML pipelines.
+  official_url: https://argo-workflows.readthedocs.io/en/latest/
   repository_url: https://github.com/argoproj/argo-workflows
+  documentation_url: https://argo-workflows.readthedocs.io/en/latest/
   categories:
   - ci-build-testing
   subcategories:
@@ -116,20 +117,22 @@
   - '* You don''t have Kubernetes or need a simple, linear CI pipeline.'
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L6
   - legacy:devopstools_final.md#L309
-  needs_review: true
+  needs_review: false
 - id: artillery
   name: Artillery
-  summary: Modern load testing toolkit.
+  summary: Load testing platform and toolkit for HTTP, APIs, and Playwright-based scenarios.
   official_url: https://www.artillery.io
   repository_url: https://github.com/artilleryio/artillery
+  documentation_url: https://www.artillery.io/docs
   categories:
   - ci-build-testing
   subcategories:
@@ -147,15 +150,16 @@
   - You need advanced protocol support beyond HTTP/WebSocket/Socket.io.
   deployment_models: []
   license_model: oss
+  license_spdx: MPL-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:7_Development-Collaboration/README.md#L9
   - legacy:devopstools_final.md#L1030
-  needs_review: true
+  needs_review: false
 - id: azure-devops
   name: Azure DevOps
   summary: Microsoft's DevOps platform.

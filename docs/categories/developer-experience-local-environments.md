@@ -7,9 +7,9 @@
 
 ### actionlint
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lint GitHub Actions workflows locally (catches many YAML/runtime mistakes early).
@@ -26,9 +26,9 @@ Lint GitHub Actions workflows locally (catches many YAML/runtime mistakes early)
 
 ### Aider
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AI pair programming in the terminal.
@@ -45,9 +45,9 @@ AI pair programming in the terminal.
 
 ### Angular
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Web application framework.
@@ -64,9 +64,9 @@ Web application framework.
 
 ### ASP.NET Aspire
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Orchestration + tooling for building cloud-native .NET distributed applications.
@@ -83,9 +83,9 @@ Orchestration + tooling for building cloud-native .NET distributed applications.
 
 ### AWS Cloud9
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Cloud-based IDE for writing, running, and debugging code.
@@ -102,9 +102,9 @@ Cloud-based IDE for writing, running, and debugging code.
 
 ### Azure Storage Explorer
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
@@ -121,9 +121,9 @@ GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
 
 ### Black
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Python code formatter.
@@ -140,9 +140,9 @@ Python code formatter.
 
 ### Bottles
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source tool to manage Windows applications on Linux using Wine.
@@ -159,9 +159,9 @@ Open-source tool to manage Windows applications on Linux using Wine.
 
 ### CC Switch
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Control surface for switching and managing AI coding tools.
@@ -178,9 +178,9 @@ Control surface for switching and managing AI coding tools.
 
 ### Coder
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Self-hosted cloud development environments and AI development infrastructure with governance.
@@ -197,9 +197,9 @@ Self-hosted cloud development environments and AI development infrastructure wit
 
 ### CodeWhale
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Terminal coding agent designed to work across different model providers.
@@ -216,9 +216,9 @@ Terminal coding agent designed to work across different model providers.
 
 ### Codex
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lightweight coding agent from OpenAI that runs in your terminal.
@@ -235,9 +235,9 @@ Lightweight coding agent from OpenAI that runs in your terminal.
 
 ### Continue
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source AI code assistant.
@@ -254,9 +254,9 @@ Open-source AI code assistant.
 
 ### Cursor
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI-powered code editor.
@@ -273,9 +273,9 @@ AI-powered code editor.
 
 ### Development Containers
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open specification for defining reproducible, containerized development environments (devcontainers).
@@ -292,9 +292,9 @@ Open specification for defining reproducible, containerized development environm
 
 ### DevPod
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source dev environments that can run locally or on remote providers.
@@ -311,9 +311,9 @@ Open-source dev environments that can run locally or on remote providers.
 
 ### drawDB
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Database diagram editor.
@@ -330,9 +330,9 @@ Database diagram editor.
 
 ### ESLint
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Pluggable JavaScript and TypeScript linter.
@@ -349,9 +349,9 @@ Pluggable JavaScript and TypeScript linter.
 
 ### Floci
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Local AWS service emulator for development and CI.
@@ -368,9 +368,9 @@ Local AWS service emulator for development and CI.
 
 ### Ghostty
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Fast, cross-platform GPU-accelerated terminal emulator with native desktop integration.
@@ -387,9 +387,9 @@ Fast, cross-platform GPU-accelerated terminal emulator with native desktop integ
 
 ### GitHub Codespaces
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Hosted cloud development environments integrated with GitHub.
@@ -406,9 +406,9 @@ Hosted cloud development environments integrated with GitHub.
 
 ### Godcoder
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Local-first desktop coding agent that keeps your code on your machine.
@@ -425,9 +425,9 @@ Local-first desktop coding agent that keeps your code on your machine.
 
 ### golangci-lint
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Go lint aggregator (fast, many linters).
@@ -444,9 +444,9 @@ Go lint aggregator (fast, many linters).
 
 ### Hadolint
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Dockerfile linter (best practices + common pitfalls).
@@ -463,9 +463,9 @@ Dockerfile linter (best practices + common pitfalls).
 
 ### HashiCorp Vagrant
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Source Available  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Source Available
 **Status:** Needs Review
 
 Tool for building and managing virtual machine environments (BUSL-1.1).
@@ -482,9 +482,9 @@ Tool for building and managing virtual machine environments (BUSL-1.1).
 
 ### IntelliJ IDEA
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Java IDE with support for many languages.
@@ -501,9 +501,9 @@ Java IDE with support for many languages.
 
 ### JSON Crack
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Interactive JSON visualizer that turns data structures into graphs.
@@ -520,9 +520,9 @@ Interactive JSON visualizer that turns data structures into graphs.
 
 ### LocalStack
 
-**Categories:** Virtualization, bare metal and homelab, Developer experience and local environments  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer, Developer Experience Engineer  
-**Model:** Open Core  
+**Categories:** Virtualization, bare metal and homelab, Developer experience and local environments
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer, Developer Experience Engineer
+**Model:** Open Core
 **Status:** Active
 **Repository:** Archived
 
@@ -542,9 +542,9 @@ Local cloud development platform that emulates AWS services for integration test
 
 ### markdownlint
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Markdown lint rules + tooling ecosystem.
@@ -561,9 +561,9 @@ Markdown lint rules + tooling ecosystem.
 
 ### MarkItDown
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Python tool for converting files and Office documents to Markdown.
@@ -580,9 +580,9 @@ Python tool for converting files and Office documents to Markdown.
 
 ### micro
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Easy-to-use terminal text editor with plugins, mouse support, and Lua customization.
@@ -599,9 +599,9 @@ Easy-to-use terminal text editor with plugins, mouse support, and Lua customizat
 
 ### mypy
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Static type checker for Python.
@@ -618,9 +618,9 @@ Static type checker for Python.
 
 ### Ninite
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Windows app installer/updater (bundled installers).
@@ -637,9 +637,9 @@ Windows app installer/updater (bundled installers).
 
 ### Nixite
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Nix-based bootstrap/installer helper (see project).
@@ -656,9 +656,9 @@ Nix-based bootstrap/installer helper (see project).
 
 ### Odysseus
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Self-hosted AI workspace for local agent workflows.
@@ -675,9 +675,9 @@ Self-hosted AI workspace for local agent workflows.
 
 ### Omarchy
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.
@@ -694,9 +694,9 @@ Beautiful, opinionated Linux workstation environment focused on a curated deskto
 
 ### Ona (formerly Gitpod)
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Open Core  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Cloud-based development environments.
@@ -713,9 +713,9 @@ Cloud-based development environments.
 
 ### Open Interpreter
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Run AI that can execute tasks locally.
@@ -732,9 +732,9 @@ Run AI that can execute tasks locally.
 
 ### OpenCode
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source AI coding agent.
@@ -751,9 +751,9 @@ Open-source AI coding agent.
 
 ### OpenWiki
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 CLI that writes and maintains agent documentation for your codebase.
@@ -770,9 +770,9 @@ CLI that writes and maintains agent documentation for your codebase.
 
 ### Play with Docker
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Documentation  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Interactive Docker playground; open-source platform with hosted labs site.
@@ -789,9 +789,9 @@ Interactive Docker playground; open-source platform with hosted labs site.
 
 ### Postman
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 API development and testing platform.
@@ -808,9 +808,9 @@ API development and testing platform.
 
 ### Prettier
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Opinionated formatter for JSON/YAML/Markdown and more.
@@ -827,9 +827,9 @@ Opinionated formatter for JSON/YAML/Markdown and more.
 
 ### PyCharm
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Python IDE by JetBrains.
@@ -846,9 +846,9 @@ Python IDE by JetBrains.
 
 ### QuantumByte
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Intent-to-working-app open-source application builder engine.
@@ -865,9 +865,9 @@ Intent-to-working-app open-source application builder engine.
 
 ### RamaLama
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AI-powered development assistant.
@@ -884,9 +884,9 @@ AI-powered development assistant.
 
 ### RTK AI
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI-powered development assistant.
@@ -903,9 +903,9 @@ AI-powered development assistant.
 
 ### Ruff
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Ultra-fast Python linter/formatter.
@@ -922,9 +922,9 @@ Ultra-fast Python linter/formatter.
 
 ### Scrapling
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Web scraping toolkit for extracting and parsing web content.
@@ -941,9 +941,9 @@ Web scraping toolkit for extracting and parsing web content.
 
 ### shfmt
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Shell formatter (`shfmt`).
@@ -960,9 +960,9 @@ Shell formatter (`shfmt`).
 
 ### Spec Kit
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Toolkit from GitHub for getting started with Spec-Driven Development.
@@ -979,9 +979,9 @@ Toolkit from GitHub for getting started with Spec-Driven Development.
 
 ### Starlight
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Documentation  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Documentation site framework.
@@ -998,9 +998,9 @@ Documentation site framework.
 
 ### Tabby
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Self-hosted AI coding assistant.
@@ -1017,9 +1017,9 @@ Self-hosted AI coding assistant.
 
 ### Tabby (Terminal)
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Cross-platform terminal emulator with built-in SSH, serial, and theming/plugins.
@@ -1036,9 +1036,9 @@ Cross-platform terminal emulator with built-in SSH, serial, and theming/plugins.
 
 ### Termix
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Browser-based terminal multiplexer for managing remote shell sessions from any device.
@@ -1055,9 +1055,9 @@ Browser-based terminal multiplexer for managing remote shell sessions from any d
 
 ### tunnelto.dev
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Expose your local web server to the internet with a public URL via secure tunnels.
@@ -1074,9 +1074,9 @@ Expose your local web server to the internet with a public URL via secure tunnel
 
 ### Understand Anything
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI-powered codebase graph and explainer for understanding repositories.
@@ -1093,9 +1093,9 @@ AI-powered codebase graph and explainer for understanding repositories.
 
 ### VSCode
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Code editor by Microsoft. Source is MIT on GitHub; official binaries are under Microsoft license.
@@ -1112,9 +1112,9 @@ Code editor by Microsoft. Source is MIT on GitHub; official binaries are under M
 
 ### VSCodium
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Community-built, telemetry-free distributions of VS Code, based on the open-source codebase.
@@ -1131,9 +1131,9 @@ Community-built, telemetry-free distributions of VS Code, based on the open-sour
 
 ### WezTerm
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Rust-based terminal emulator and multiplexer with panes, workspaces, SSH, and Lua configuration.
@@ -1150,9 +1150,9 @@ Rust-based terminal emulator and multiplexer with panes, workspaces, SSH, and Lu
 
 ### WinApps
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Run Windows apps via RDP/virtualization.
@@ -1169,9 +1169,9 @@ Run Windows apps via RDP/virtualization.
 
 ### Windsurf
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Open Core  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 AI-powered code editor/IDE with agentic workflows (chat, code completion, refactoring) to speed up development.
@@ -1188,9 +1188,9 @@ AI-powered code editor/IDE with agentic workflows (chat, code completion, refact
 
 ### Wine
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Run Windows applications on Unix-like OSes.
@@ -1207,9 +1207,9 @@ Run Windows applications on Unix-like OSes.
 
 ### yamllint
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 YAML linter (structure + style checks).
@@ -1226,9 +1226,9 @@ YAML linter (structure + style checks).
 
 ### Yazi
 
-**Categories:** Developer experience and local environments  
-**Roles:** DevOps Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Developer experience and local environments
+**Roles:** DevOps Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Blazing-fast terminal file manager written in Rust with async I/O.

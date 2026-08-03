@@ -7,9 +7,9 @@
 
 ### Akka.NET
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Actor-based concurrency framework for .NET.
@@ -26,9 +26,9 @@ Actor-based concurrency framework for .NET.
 
 ### Barbara
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 DevOps/engineering platform.
@@ -45,9 +45,9 @@ DevOps/engineering platform.
 
 ### BMC Control-M
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Application and data workflow orchestration platform.
@@ -64,9 +64,9 @@ Application and data workflow orchestration platform.
 
 ### Brainboard
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Visual cloud architecture and IaC design platform.
@@ -83,9 +83,9 @@ Visual cloud architecture and IaC design platform.
 
 ### Braintrust
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Open Core  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Decentralized AI marketplace and DevOps collaboration platform.
@@ -102,9 +102,9 @@ Decentralized AI marketplace and DevOps collaboration platform.
 
 ### Chapril Services
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Community-hosted catalogue of libre online services including collaboration, communication, file sharing, and code hosting tools.
@@ -121,9 +121,9 @@ Community-hosted catalogue of libre online services including collaboration, com
 
 ### Clone-Wars
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 GitHub project (see repository for details).
@@ -140,9 +140,9 @@ GitHub project (see repository for details).
 
 ### cmd.ms
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Microsoft Cloud command-line shortcut browser with 355+ shortcuts to Azure, Entra, Intune, and Microsoft 365 admin portals via the browser address bar.
@@ -159,9 +159,9 @@ Microsoft Cloud command-line shortcut browser with 355+ shortcuts to Azure, Entr
 
 ### Code Newsletter AI
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI-curated development newsletter.
@@ -178,9 +178,9 @@ AI-curated development newsletter.
 
 ### codegraph
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Codebase graph visualization tool for understanding repository structure.
@@ -197,9 +197,9 @@ Codebase graph visualization tool for understanding repository structure.
 
 ### Cortex XSOAR
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Commercial SOAR platform (Community/Starter/Enterprise licensing). Content packs are open on GitHub.
@@ -216,9 +216,9 @@ Commercial SOAR platform (Community/Starter/Enterprise licensing). Content packs
 
 ### cosign (sigstore)
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Container/artifact signing and verification.
@@ -235,9 +235,9 @@ Container/artifact signing and verification.
 
 ### CUE
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Data validation language and tool.
@@ -254,9 +254,9 @@ Data validation language and tool.
 
 ### Diagrams
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Python library for building cloud and system architecture diagrams as code.
@@ -273,9 +273,9 @@ Python library for building cloud and system architecture diagrams as code.
 
 ### Duplicati
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Free backup software with strong encryption and support for many cloud storage backends.
@@ -292,9 +292,9 @@ Free backup software with strong encryption and support for many cloud storage b
 
 ### Entire
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Open Core  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Developer platform with an open-source CLI that captures and versions AI agent coding sessions as searchable checkpoints alongside Git commits.
@@ -311,9 +311,9 @@ Developer platform with an open-source CLI that captures and versions AI agent c
 
 ### Eraser DiagramGPT
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI-assisted diagramming tool.
@@ -330,9 +330,9 @@ AI-assisted diagramming tool.
 
 ### fulcio (sigstore)
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Sigstore's free OIDC-based root CA for issuing short-lived code-signing certificates.
@@ -349,9 +349,9 @@ Sigstore's free OIDC-based root CA for issuing short-lived code-signing certific
 
 ### gitsign (sigstore)
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Keyless Git commit signing using Sigstore.
@@ -368,9 +368,9 @@ Keyless Git commit signing using Sigstore.
 
 ### glances
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Cross-platform system monitoring tool (top/htop-like).
@@ -387,9 +387,9 @@ Cross-platform system monitoring tool (top/htop-like).
 
 ### Homer
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Static dashboard for organizing links to self-hosted services and tools.
@@ -406,9 +406,9 @@ Static dashboard for organizing links to self-hosted services and tools.
 
 ### IcePanel
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Collaborative software architecture modeling tool for mapping systems, services, and C4-style relationships.
@@ -425,9 +425,9 @@ Collaborative software architecture modeling tool for mapping systems, services,
 
 ### Informatica
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Data integration and cloud data management solutions.
@@ -444,9 +444,9 @@ Data integration and cloud data management solutions.
 
 ### IT Tools
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Collection of developer utility tools (converters, encoders, generators, and more) available as a self-hostable web app.
@@ -463,9 +463,9 @@ Collection of developer utility tools (converters, encoders, generators, and mor
 
 ### Keygraph
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Open Core  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Knowledge graph tool with AI-powered pentesting capabilities.
@@ -482,9 +482,9 @@ Knowledge graph tool with AI-powered pentesting capabilities.
 
 ### kubernetes-sigs/bom
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 SBOM generation tooling for Kubernetes projects.
@@ -501,9 +501,9 @@ SBOM generation tooling for Kubernetes projects.
 
 ### nOps
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Commercial FinOps / cloud cost optimization platform.
@@ -520,9 +520,9 @@ Commercial FinOps / cloud cost optimization platform.
 
 ### OllyGarden
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Open Core  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 OpenTelemetry adoption platform with tools for improving telemetry pipelines; built by OpenTelemetry contributors.
@@ -539,9 +539,9 @@ OpenTelemetry adoption platform with tools for improving telemetry pipelines; bu
 
 ### openspeedtest
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Self-hosted network speed test application.
@@ -558,9 +558,9 @@ Self-hosted network speed test application.
 
 ### Paperless-ngx
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Document management system for scanning, indexing, and searching your paper documents.
@@ -577,9 +577,9 @@ Document management system for scanning, indexing, and searching your paper docu
 
 ### Papra
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Document/PDF organization (see project).
@@ -596,9 +596,9 @@ Document/PDF organization (see project).
 
 ### Portabase
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Self-hosted tool for automating and restoring database backups across many database engines.
@@ -615,9 +615,9 @@ Self-hosted tool for automating and restoring database backups across many datab
 
 ### PrivateBin
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Secure pastebin alternative.
@@ -634,9 +634,9 @@ Secure pastebin alternative.
 
 ### rekor (sigstore)
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Software supply chain transparency log for recording signed metadata.
@@ -653,9 +653,9 @@ Software supply chain transparency log for recording signed metadata.
 
 ### Rude Tools
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Developer utilities collection.
@@ -672,9 +672,9 @@ Developer utilities collection.
 
 ### SearXNG
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Self-hosted metasearch engine.
@@ -691,9 +691,9 @@ Self-hosted metasearch engine.
 
 ### Shannon
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Open Core  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 AI pentester that autonomously hunts for vulnerabilities.
@@ -710,9 +710,9 @@ AI pentester that autonomously hunts for vulnerabilities.
 
 ### Snip
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Code snippet manager.
@@ -729,9 +729,9 @@ Code snippet manager.
 
 ### Snorlax
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator for scheduling deployment sleep/wake cycles to reduce resource costs.
@@ -748,9 +748,9 @@ Kubernetes operator for scheduling deployment sleep/wake cycles to reduce resour
 
 ### sshm
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 SSH connection manager (see project).
@@ -767,9 +767,9 @@ SSH connection manager (see project).
 
 ### Structurizr
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 C4 model architecture tooling with diagrams-as-code and Structurizr DSL.
@@ -786,9 +786,9 @@ C4 model architecture tooling with diagrams-as-code and Structurizr DSL.
 
 ### Timoni
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Package manager for Kubernetes.
@@ -805,9 +805,9 @@ Package manager for Kubernetes.
 
 ### tty-share
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lightweight terminal sharing tool over the web.
@@ -824,9 +824,9 @@ Lightweight terminal sharing tool over the web.
 
 ### UrBackup
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Client/server backup system.
@@ -843,9 +843,9 @@ Client/server backup system.
 
 ### Valkey
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 High-performance in-memory data store.
@@ -862,9 +862,9 @@ High-performance in-memory data store.
 
 ### YamlQL
 
-**Categories:** Emerging and experimental tools  
-**Roles:** DevOps Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Emerging and experimental tools
+**Roles:** DevOps Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Query YAML files using SQL-like syntax.

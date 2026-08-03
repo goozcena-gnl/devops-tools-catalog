@@ -3,14 +3,13 @@
 
 45 records support this lifecycle stage.
 
-- [Amazon Web Services (AWS)](https://aws.amazon.com) — Comprehensive cloud computing platform by Amazon.
+- [Amazon Web Services (AWS)](https://aws.amazon.com/) — Comprehensive cloud computing platform by Amazon.
 - [Apache CloudStack](https://cloudstack.apache.org) — Open source infrastructure-as-a-service platform for building and managing private and public clouds.
-- [Apptio Cloudability](https://www.apptio.com/products/cloudability) — Cloud cost management.
-- [AWS Storage Gateway](https://aws.amazon.com/fr/storagegateway) — Hybrid cloud storage service.
+- [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) — Hybrid cloud storage service.
 - [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) — Open source script and workflow set for detecting and cleaning up orphaned Azure resources.
 - [Cast AI](https://cast.ai) — Kubernetes automation and cloud optimization platform for rightsizing, autoscaling, cost control, and performance.
 - [Civo](https://www.civo.com) — Cloud infrastructure provider focused on Kubernetes.
-- [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) — Cloud operations management.
+- [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) — Hybrid and multi-cloud operations platform for governed provisioning, orchestration, and FinOps controls.
 - [CloudFuze](https://www.cloudfuze.com) — Cloud file transfer and management.
 - [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) — Multi-cloud FinOps and governance platform for cost reporting, optimization, and policy control.
 - [Cloudify](https://cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
@@ -25,6 +24,7 @@
 - [Google Cloud Platform](https://cloud.google.com) — Cloud services by Google.
 - [Heroku](https://www.heroku.com) — Cloud platform as a service for app deployment.
 - [IBM Cloud](https://www.ibm.com/cloud) — Enterprise cloud services and infrastructure by IBM.
+- [IBM Cloudability](https://www.apptio.com/products/cloudability/) — Enterprise FinOps and cloud cost management platform for multi-cloud visibility, allocation, and optimization.
 - [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) — Cloud resource optimization.
 - [Kion FinOps](https://kion.io/platform/finops) — Cloud governance and cost management.
 - [Kubecost (Apptio)](https://www.apptio.com/products/kubecost) — Commercial Kubernetes cost monitoring/optimization product built around OpenCost.

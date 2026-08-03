@@ -1,7 +1,7 @@
 - id: apptio-cloudability
-  name: Apptio Cloudability
-  summary: Cloud cost management.
-  official_url: https://www.apptio.com/products/cloudability
+  name: IBM Cloudability
+  summary: Enterprise FinOps and cloud cost management platform for multi-cloud visibility, allocation, and optimization.
+  official_url: https://www.apptio.com/products/cloudability/
   categories:
   - finops-sustainability
   subcategories:
@@ -17,16 +17,17 @@
   avoid_when:
   - You're single-cloud with simple billing—native tools (AWS Cost Explorer) may suffice.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L77
   - legacy:devopstools_final.md#L786
-  needs_review: true
+  needs_review: false
 - id: azure-orphan-resources
   name: Azure Orphan Resources
   summary: Open source script and workflow set for detecting and cleaning up orphaned Azure resources.
@@ -87,8 +88,9 @@
   needs_review: true
 - id: cloudbolt-cloud-operations
   name: CloudBolt Cloud Operations
-  summary: Cloud operations management.
+  summary: Hybrid and multi-cloud operations platform for governed provisioning, orchestration, and FinOps controls.
   official_url: https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations
+  documentation_url: https://www.cloudbolt.io/cmp/how-it-works-cmp/
   categories:
   - finops-sustainability
   subcategories:
@@ -104,16 +106,17 @@
   avoid_when:
   - You only need cost visibility without provisioning features.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L79
   - legacy:devopstools_final.md#L789
-  needs_review: true
+  needs_review: false
 - id: cloudhealth
   name: CloudHealth
   summary: Multi-cloud FinOps and governance platform for cost reporting, optimization, and policy control.

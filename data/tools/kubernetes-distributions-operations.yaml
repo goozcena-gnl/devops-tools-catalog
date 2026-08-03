@@ -60,9 +60,10 @@
   needs_review: true
 - id: botkube
   name: BotKube
-  summary: Kubernetes monitoring and alerting via chat.
+  summary: Kubernetes troubleshooting and monitoring platform with chat integrations and automation plugins.
   official_url: https://botkube.io
   repository_url: https://github.com/kubeshop/botkube
+  documentation_url: https://docs.botkube.io/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -80,15 +81,16 @@
   - You already have mature alerting pipelines (PagerDuty/Opsgenie) and don't need ChatOps.
   deployment_models: []
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L20
   - legacy:devopstools_final.md#L450
-  needs_review: true
+  needs_review: false
 - id: carvel-kapp
   name: Carvel kapp
   summary: Simple deployment tool for Kubernetes.
@@ -2560,6 +2562,7 @@
   summary: Kubernetes-native job queueing and quota management controller for batch and AI/ML workloads.
   official_url: https://kueue.sigs.k8s.io
   repository_url: https://github.com/kubernetes-sigs/kueue
+  documentation_url: https://kueue.sigs.k8s.io/docs/
   categories:
   - kubernetes-distributions-operations
   - kubernetes-networking-storage-addons
@@ -2579,15 +2582,16 @@
   - You only run long-lived services with no batch jobs.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L13
   - legacy:devopstools_final.md#L597
-  needs_review: true
+  needs_review: false
 - id: kustomize
   name: Kustomize
   summary: Kubernetes configuration customization tool.
