@@ -139,12 +139,14 @@ def test_batch04_verified_tools_are_active_with_expected_metadata() -> None:
     assert coraza["license_model"] == "oss"
     assert coraza["license_spdx"] == "Apache-2.0"
     assert coraza["status"] == "active"
+    assert coraza["needs_review"] is False
 
     crowdsec = next(tool for tool in tools if tool["id"] == "crowdsec")
     assert crowdsec["license_model"] == "open-core"
     assert crowdsec["license_spdx"] == "MIT"
     assert crowdsec["commercial_offering"] is True
     assert crowdsec["status"] == "active"
+    assert crowdsec["needs_review"] is False
 
     for tool_id, spdx in [
         ("flux", "Apache-2.0"),
@@ -167,18 +169,21 @@ def test_batch04_verified_tools_are_active_with_expected_metadata() -> None:
     assert infracost["license_spdx"] == "Apache-2.0"
     assert infracost["commercial_offering"] is True
     assert infracost["status"] == "active"
+    assert infracost["needs_review"] is False
 
     cypress = next(tool for tool in tools if tool["id"] == "cypress")
     assert cypress["license_model"] == "open-core"
     assert cypress["license_spdx"] == "MIT"
     assert cypress["commercial_offering"] is True
     assert cypress["status"] == "active"
+    assert cypress["needs_review"] is False
 
     dagger = next(tool for tool in tools if tool["id"] == "dagger")
     assert dagger["license_model"] == "open-core"
     assert dagger["license_spdx"] == "Apache-2.0"
     assert dagger["commercial_offering"] is True
     assert dagger["status"] == "active"
+    assert dagger["needs_review"] is False
 
     for tool_id in [
         "concierto-cloud",
@@ -196,11 +201,13 @@ def test_batch04_verified_tools_are_active_with_expected_metadata() -> None:
     assert freelens["license_model"] == "oss"
     assert freelens["license_spdx"] == "MIT"
     assert freelens["status"] == "active"
+    assert freelens["needs_review"] is False
 
     coroot = next(tool for tool in tools if tool["id"] == "coroot")
     assert coroot["license_model"] == "oss"
     assert coroot["license_spdx"] == "AGPL-3.0-only"
     assert coroot["status"] == "active"
+    assert coroot["needs_review"] is False
 
 
 def test_batch04_elastic_apm_server_remains_under_review_for_license_boundary() -> None:
