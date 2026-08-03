@@ -162,7 +162,7 @@ Developer-friendly cloud infrastructure provider.
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
 **Model:** Commercial<br>
-**Status:** Active
+**Status:** Needs Review
 
 Cloud infrastructure and hosting services.
 

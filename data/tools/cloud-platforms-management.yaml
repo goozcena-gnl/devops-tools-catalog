@@ -286,14 +286,14 @@
   license_model: commercial
   commercial_offering: true
   maturity: unknown
-  status: active
+  status: needs-review
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L12
   - legacy:devopstools_final.md#L154
-  needs_review: false
+  needs_review: true
 - id: google-cloud-platform
   name: Google Cloud Platform
   summary: Cloud services by Google.

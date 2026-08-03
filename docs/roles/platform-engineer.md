@@ -160,7 +160,7 @@
 | [Eraser DiagramGPT](https://www.eraser.io/diagramgpt) | Emerging and experimental tools | unknown | needs-review |
 | [EveryDev.ai](https://www.everydev.ai) | Documentation, learning and career resources | unknown | needs-review |
 | [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | active |
+| [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | needs-review |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
 | [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |

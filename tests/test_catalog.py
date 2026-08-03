@@ -271,7 +271,6 @@ def test_batch05_verified_tools_are_active_with_expected_metadata() -> None:
     assert drone["needs_review"] is False
 
     for tool_id in [
-        "exoway",
         "google-cloud-platform",
         "flexera-one",
         "ibm-turbonomic-cloud-optimization",
@@ -281,6 +280,12 @@ def test_batch05_verified_tools_are_active_with_expected_metadata() -> None:
         assert tool["commercial_offering"] is True
         assert tool["status"] == "active"
         assert tool["needs_review"] is False
+
+    exoway = next(tool for tool in tools if tool["id"] == "exoway")
+    assert exoway["license_model"] == "commercial"
+    assert exoway["commercial_offering"] is True
+    assert exoway["status"] == "needs-review"
+    assert exoway["needs_review"] is True
 
 
 def test_batch05_elastic_stack_remains_under_review_for_license_boundary() -> None:
