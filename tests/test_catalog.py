@@ -132,6 +132,90 @@ def test_batch03_ctop_remains_under_review_pending_maintenance_signal() -> None:
     assert ctop["needs_review"] is True
 
 
+def test_batch04_verified_tools_are_active_with_expected_metadata() -> None:
+    tools = load_tools()
+
+    coraza = next(tool for tool in tools if tool["id"] == "coraza")
+    assert coraza["license_model"] == "oss"
+    assert coraza["license_spdx"] == "Apache-2.0"
+    assert coraza["status"] == "active"
+
+    crowdsec = next(tool for tool in tools if tool["id"] == "crowdsec")
+    assert crowdsec["license_model"] == "open-core"
+    assert crowdsec["license_spdx"] == "MIT"
+    assert crowdsec["commercial_offering"] is True
+    assert crowdsec["status"] == "active"
+
+    for tool_id, spdx in [
+        ("flux", "Apache-2.0"),
+        ("kargo", "Apache-2.0"),
+        ("crossplane", "Apache-2.0"),
+        ("gateway-api", "Apache-2.0"),
+        ("litmuschaos", "Apache-2.0"),
+        ("trivy", "Apache-2.0"),
+        ("firecracker", "Apache-2.0"),
+        ("flatcar-container-linux", "Apache-2.0"),
+    ]:
+        tool = next(tool for tool in tools if tool["id"] == tool_id)
+        assert tool["license_model"] == "oss"
+        assert tool["license_spdx"] == spdx
+        assert tool["status"] == "active"
+        assert tool["needs_review"] is False
+
+    infracost = next(tool for tool in tools if tool["id"] == "infracost")
+    assert infracost["license_model"] == "open-core"
+    assert infracost["license_spdx"] == "Apache-2.0"
+    assert infracost["commercial_offering"] is True
+    assert infracost["status"] == "active"
+
+    cypress = next(tool for tool in tools if tool["id"] == "cypress")
+    assert cypress["license_model"] == "open-core"
+    assert cypress["license_spdx"] == "MIT"
+    assert cypress["commercial_offering"] is True
+    assert cypress["status"] == "active"
+
+    dagger = next(tool for tool in tools if tool["id"] == "dagger")
+    assert dagger["license_model"] == "open-core"
+    assert dagger["license_spdx"] == "Apache-2.0"
+    assert dagger["commercial_offering"] is True
+    assert dagger["status"] == "active"
+
+    for tool_id in [
+        "concierto-cloud",
+        "digitalocean",
+        "datadog-cloud-cost-management",
+        "finout",
+    ]:
+        tool = next(tool for tool in tools if tool["id"] == tool_id)
+        assert tool["license_model"] == "commercial"
+        assert tool["commercial_offering"] is True
+        assert tool["status"] == "active"
+        assert tool["needs_review"] is False
+
+    freelens = next(tool for tool in tools if tool["id"] == "freelens")
+    assert freelens["license_model"] == "oss"
+    assert freelens["license_spdx"] == "MIT"
+    assert freelens["status"] == "active"
+
+    coroot = next(tool for tool in tools if tool["id"] == "coroot")
+    assert coroot["license_model"] == "oss"
+    assert coroot["license_spdx"] == "AGPL-3.0-only"
+    assert coroot["status"] == "active"
+
+
+def test_batch04_elastic_apm_server_remains_under_review_for_license_boundary() -> None:
+    elastic_apm = next(
+        tool for tool in load_tools() if tool["id"] == "elastic-apm-server"
+    )
+    assert elastic_apm["license_model"] == "source-available"
+    assert elastic_apm["status"] == "needs-review"
+    assert elastic_apm["needs_review"] is True
+    assert (
+        elastic_apm["documentation_url"]
+        == "https://www.elastic.co/guide/en/apm/server/current/index.html"
+    )
+
+
 def test_every_source_occurrence_has_a_disposition() -> None:
     with (ROOT / "migration" / "reconciliation.csv").open(
         encoding="utf-8", newline=""
