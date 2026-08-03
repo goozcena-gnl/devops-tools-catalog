@@ -45,6 +45,14 @@ def render_tool(
 ) -> str:
     category_names = ", ".join(categories[item] for item in tool["categories"])
     role_names = ", ".join(roles[item] for item in tool["roles"])
+    metadata_lines = [
+        f"**Categories:** {category_names}",
+        f"**Roles:** {role_names}",
+        f"**Model:** {str(tool['license_model']).replace('-', ' ').title()}",
+        f"**Status:** {str(tool['status']).replace('-', ' ').title()}",
+    ]
+    if tool.get("repository_archived"):
+        metadata_lines.append("**Repository:** Archived")
     use_fallback = (
         "Use after confirming that the documented capability matches a concrete "
         "operational requirement."
@@ -57,11 +65,7 @@ def render_tool(
         [
             f"### {tool['name']}",
             "",
-            f"**Categories:** {category_names}",
-            f"**Roles:** {role_names}",
-            f"**Model:** {str(tool['license_model']).replace('-', ' ').title()}",
-            f"**Status:** {str(tool['status']).replace('-', ' ').title()}",
-            *(["**Repository:** Archived"] if tool.get("repository_archived") else []),
+            "<br>\n".join(metadata_lines),
             "",
             str(tool["summary"]),
             "",

@@ -7,9 +7,9 @@
 
 ### AWS Fault Injection Service
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Unknown
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Managed chaos engineering service on AWS. ✅ **Use when** you're already on AWS and need turnkey fault injection with IAM-scoped safety controls. ❌ **Avoid when** your workloads span multiple clouds or you need deep application-level fault injection.
@@ -26,9 +26,9 @@ Managed chaos engineering service on AWS. ✅ **Use when** you're already on AWS
 
 ### Azure Chaos Studio
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Unknown
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Chaos engineering service for Azure. ✅ **Use when** your infrastructure is Azure-native and you want tight integration with Azure Monitor. ❌ **Avoid when** you're multi-cloud or need experiments beyond Azure-supported fault types.
@@ -45,9 +45,9 @@ Chaos engineering service for Azure. ✅ **Use when** your infrastructure is Azu
 
 ### Chaos Mesh
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you want a CNCF-backed, Kubernetes-native chaos platform with a dashboard and CRD-based workflows. ❌ **Avoid when** your workloads aren't on Kubernetes or you need bare-metal/VM-level experiments.
@@ -64,9 +64,9 @@ Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you wan
 
 ### Chaos Monkey
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Tool for randomly terminating instances to test resilience. ✅ **Use when** you want simple, continuous instance-termination tests to validate auto-scaling and failover. ❌ **Avoid when** you need fault types beyond instance killing or aren't running on Spinnaker.
@@ -83,9 +83,9 @@ Tool for randomly terminating instances to test resilience. ✅ **Use when** you
 
 ### Chaos Room
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Chaos engineering tool. ✅ **Use when** you want a lightweight, experimental chaos tool for learning or small projects. ❌ **Avoid when** you need production-grade reliability, active maintenance, or broad fault coverage.
@@ -102,9 +102,9 @@ Chaos engineering tool. ✅ **Use when** you want a lightweight, experimental ch
 
 ### Chaos Toolkit
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source chaos engineering toolkit for building reliability experiments. ✅ **Use when** you want declarative, version-controlled experiments that are CI/CD-friendly and platform-agnostic. ❌ **Avoid when** you need real-time orchestration or a rich UI—it's primarily CLI/JSON-driven.
@@ -121,9 +121,9 @@ Open-source chaos engineering toolkit for building reliability experiments. ✅ 
 
 ### ChaosBlade
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Chaos engineering platform with comprehensive fault injection capabilities. ✅ **Use when** you need broad fault injection (OS, JVM, Docker, K8s) in a single CLI tool. ❌ **Avoid when** you need a polished UI-driven workflow or strong English-language community support.
@@ -140,9 +140,9 @@ Chaos engineering platform with comprehensive fault injection capabilities. ✅ 
 
 ### Gremlin
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Unknown
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Chaos engineering platform for proactive reliability testing. ✅ **Use when** you need enterprise-grade chaos with built-in safety controls, team collaboration, and guided scenarios. ❌ **Avoid when** budget is tight or you prefer fully open-source tooling without vendor lock-in.
@@ -159,9 +159,9 @@ Chaos engineering platform for proactive reliability testing. ✅ **Use when** y
 
 ### iPerf
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Network performance measurement tool.
@@ -178,9 +178,9 @@ Network performance measurement tool.
 
 ### Kube Monkey
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, opt-in pod-killing schedule for Kubernetes with minimal setup. ❌ **Avoid when** you need network/IO faults or fine-grained experiment control beyond random pod deletion.
@@ -197,9 +197,9 @@ Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, o
 
 ### KubeInvaders
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Gamified chaos engineering for Kubernetes. ✅ **Use when** you want a fun, visual way to introduce chaos engineering concepts in workshops or game days. ❌ **Avoid when** you need automated, scheduled, or CI-integrated chaos experiments.
@@ -216,9 +216,9 @@ Gamified chaos engineering for Kubernetes. ✅ **Use when** you want a fun, visu
 
 ### LitmusChaos
 
-**Categories:** Kubernetes networking, storage and add-ons, Chaos and performance engineering
-**Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
-**Model:** Oss
+**Categories:** Kubernetes networking, storage and add-ons, Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with a hub of pre-built experiments and GitOps-friendly CRD workflows. ❌ **Avoid when** your environment is non-Kubernetes or you find ChaosHub's experiment catalog doesn't cover your stack.
@@ -235,9 +235,9 @@ Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with 
 
 ### MemoryChecker
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Memory testing and diagnostics tool.
@@ -254,9 +254,9 @@ Memory testing and diagnostics tool.
 
 ### MemTest86
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Unknown
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Industry-standard memory diagnostics and stress testing tool.
@@ -273,9 +273,9 @@ Industry-standard memory diagnostics and stress testing tool.
 
 ### OCCT
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Unknown
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Comprehensive system stability and stress testing tool.
@@ -292,9 +292,9 @@ Comprehensive system stability and stress testing tool.
 
 ### Pumba
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Chaos testing, network emulation, and stress testing tool for containers.
@@ -311,9 +311,9 @@ Chaos testing, network emulation, and stress testing tool for containers.
 
 ### strace-tui
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Terminal UI for visualizing and exploring `strace` output.
@@ -330,9 +330,9 @@ Terminal UI for visualizing and exploring `strace` output.
 
 ### stress
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Simple workload generator for POSIX systems.
@@ -349,9 +349,9 @@ Simple workload generator for POSIX systems.
 
 ### stress-ng
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Stress test tool for a wide range of subsystems.
@@ -368,9 +368,9 @@ Stress test tool for a wide range of subsystems.
 
 ### stressapptest
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Memory and I/O stress test tool.
@@ -387,9 +387,9 @@ Memory and I/O stress test tool.
 
 ### stressdisk
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Disk stress testing utility.
@@ -406,9 +406,9 @@ Disk stress testing utility.
 
 ### Toxiproxy
 
-**Categories:** Chaos and performance engineering
-**Roles:** DevOps Engineer, Site Reliability Engineer
-**Model:** Oss
+**Categories:** Chaos and performance engineering<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Framework for simulating network conditions and toxic network behavior. ✅ **Use when** you want to inject network faults (latency, timeouts, bandwidth limits) in integration/CI tests. ❌ **Avoid when** you need infrastructure-level chaos beyond the network layer or production-scale distributed experiments.

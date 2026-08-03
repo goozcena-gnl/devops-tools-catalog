@@ -7,9 +7,9 @@
 
 ### Argo CD
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Declarative GitOps continuous delivery for Kubernetes.
@@ -26,9 +26,9 @@ Declarative GitOps continuous delivery for Kubernetes.
 
 ### ArgoCD Agent
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Agent-based architecture for ArgoCD to manage remote clusters.
@@ -45,9 +45,9 @@ Agent-based architecture for ArgoCD to manage remote clusters.
 
 ### ArgoCD Diff Preview
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Pull-request diff tool for previewing Argo CD application manifest changes before sync.
@@ -64,9 +64,9 @@ Pull-request diff tool for previewing Argo CD application manifest changes befor
 
 ### ArgoCD Image Updater
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Automated image updates for ArgoCD.
@@ -83,9 +83,9 @@ Automated image updates for ArgoCD.
 
 ### ArgoCD Vault Plugin
 
-**Categories:** CD, GitOps, release and promotion, IAM, secrets and certificate management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, DevSecOps Engineer, Release Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion, IAM, secrets and certificate management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, DevSecOps Engineer, Release Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Integrates secrets from external stores into ArgoCD.
@@ -104,9 +104,9 @@ Integrates secrets from external stores into ArgoCD.
 
 ### Bunnyshell
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven by environment-as-code workflows.
@@ -123,9 +123,9 @@ Environment-as-a-service platform for preview, staging, and ephemeral cloud envi
 
 ### Caddy
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Extensible web server and reverse proxy with automatic HTTPS.
@@ -142,9 +142,9 @@ Extensible web server and reverse proxy with automatic HTTPS.
 
 ### Convox
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Platform for deploying and managing containers.
@@ -161,9 +161,9 @@ Platform for deploying and managing containers.
 
 ### Dokku
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 PaaS for deploying apps using Docker.
@@ -180,9 +180,9 @@ PaaS for deploying apps using Docker.
 
 ### Flux
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open and extensible GitOps toolkit for Kubernetes.
@@ -199,9 +199,9 @@ Open and extensible GitOps toolkit for Kubernetes.
 
 ### Flux Operator
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes operator for managing Flux CD instances.
@@ -218,9 +218,9 @@ Kubernetes operator for managing Flux CD instances.
 
 ### flux9s
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
@@ -237,9 +237,9 @@ K9s-inspired terminal UI for Flux resources, controller health, and GitOps state
 
 ### GitOps Bridge
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 GitOps bridge for Kubernetes deployments.
@@ -256,9 +256,9 @@ GitOps bridge for Kubernetes deployments.
 
 ### Kamal
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
@@ -275,9 +275,9 @@ Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
 
 ### Kargo
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 GitOps promotion workflow for Kubernetes.
@@ -294,9 +294,9 @@ GitOps promotion workflow for Kubernetes.
 
 ### Keel
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Automated Kubernetes deployment updates.
@@ -313,9 +313,9 @@ Automated Kubernetes deployment updates.
 
 ### KubeChecks
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Pre-merge validation for Kubernetes GitOps changes.
@@ -332,9 +332,9 @@ Pre-merge validation for Kubernetes GitOps changes.
 
 ### Netlify
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Modern web hosting and automation platform.
@@ -351,9 +351,9 @@ Modern web hosting and automation platform.
 
 ### OpenFeature
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open standard for feature flag management.
@@ -370,9 +370,9 @@ Open standard for feature flag management.
 
 ### Piku
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Heroku-like mini PaaS.
@@ -389,9 +389,9 @@ Heroku-like mini PaaS.
 
 ### Porter
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 PaaS for deploying apps to Kubernetes.
@@ -408,9 +408,9 @@ PaaS for deploying apps to Kubernetes.
 
 ### Qovery
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Platform for deploying apps on Kubernetes.
@@ -427,9 +427,9 @@ Platform for deploying apps on Kubernetes.
 
 ### Renovate
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Automated dependency updates.
@@ -446,9 +446,9 @@ Automated dependency updates.
 
 ### Tofu Controller
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Flux controller for managing Terraform and OpenTofu resources the GitOps way.
@@ -465,9 +465,9 @@ Flux controller for managing Terraform and OpenTofu resources the GitOps way.
 
 ### Uncloud
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Multi-node Docker Compose for running containerized apps in production without Kubernetes.
@@ -484,9 +484,9 @@ Multi-node Docker Compose for running containerized apps in production without K
 
 ### Waypoint
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Source Available
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
 Application build, deploy, and release workflow platform from HashiCorp.
@@ -503,9 +503,9 @@ Application build, deploy, and release workflow platform from HashiCorp.
 
 ### Weaveworks GitOps
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 GitOps automation for Kubernetes and cloud-native apps.
@@ -522,9 +522,9 @@ GitOps automation for Kubernetes and cloud-native apps.
 
 ### YokeCD
 
-**Categories:** CD, GitOps, release and promotion
-**Roles:** DevOps Engineer, Platform Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 GitOps continuous delivery tool.

@@ -7,9 +7,9 @@
 
 ### Bitbucket
 
-**Categories:** Source control and repository management
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Source control and repository management<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Git repository hosting by Atlassian.
@@ -26,9 +26,9 @@ Git repository hosting by Atlassian.
 
 ### Git
 
-**Categories:** Source control and repository management
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** Source control and repository management<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Distributed version control system.
@@ -45,9 +45,9 @@ Distributed version control system.
 
 ### Gitea
 
-**Categories:** Source control and repository management
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** Source control and repository management<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Lightweight, self-hosted Git service.
@@ -64,9 +64,9 @@ Lightweight, self-hosted Git service.
 
 ### GitHub
 
-**Categories:** Source control and repository management
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Source control and repository management<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Popular platform for hosting Git repositories.
@@ -83,9 +83,9 @@ Popular platform for hosting Git repositories.
 
 ### GitLab
 
-**Categories:** Source control and repository management
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Open Core
+**Categories:** Source control and repository management<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Git repository management with CI/CD.
@@ -102,9 +102,9 @@ Git repository management with CI/CD.
 
 ### GitLab University
 
-**Categories:** Source control and repository management
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Documentation
+**Categories:** Source control and repository management<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Training resources for GitLab, CI/CD, and DevOps practices.
@@ -121,9 +121,9 @@ Training resources for GitLab, CI/CD, and DevOps practices.
 
 ### Learn Git Branching
 
-**Categories:** Source control and repository management
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Documentation
+**Categories:** Source control and repository management<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Interactive Git learning tool.
@@ -140,9 +140,9 @@ Interactive Git learning tool.
 
 ### Oh My Git!
 
-**Categories:** Source control and repository management
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Documentation
+**Categories:** Source control and repository management<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Git learning game.

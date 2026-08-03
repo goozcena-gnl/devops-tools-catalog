@@ -7,10 +7,10 @@
 
 ### CDKTF
 
-**Categories:** Deprecated and historical tools, Infrastructure as Code
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
-**Model:** Source Available
-**Status:** Archived
+**Categories:** Deprecated and historical tools, Infrastructure as Code<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Source Available<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
 Terraform CDK framework.
@@ -27,10 +27,10 @@ Terraform CDK framework.
 
 ### Grafana OnCall
 
-**Categories:** Deprecated and historical tools, SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
-**Status:** Archived
+**Categories:** Deprecated and historical tools, SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
 Incident response and on-call management (OSS core with SaaS offering).
@@ -47,10 +47,10 @@ Incident response and on-call management (OSS core with SaaS offering).
 
 ### Kaniko
 
-**Categories:** Deprecated and historical tools, Containers and image tooling
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
-**Model:** Oss
-**Status:** Archived
+**Categories:** Deprecated and historical tools, Containers and image tooling<br>
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer<br>
+**Model:** Oss<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
 Build container images in Kubernetes without Docker daemon.
@@ -67,10 +67,10 @@ Build container images in Kubernetes without Docker daemon.
 
 ### Keptn
 
-**Categories:** Deprecated and historical tools, CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
-**Status:** Archived
+**Categories:** Deprecated and historical tools, CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
 Cloud-native lifecycle management and delivery.
@@ -87,10 +87,10 @@ Cloud-native lifecycle management and delivery.
 
 ### Kubeapps
 
-**Categories:** Deprecated and historical tools, Kubernetes distributions and operations
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
-**Model:** Oss
-**Status:** Archived
+**Categories:** Deprecated and historical tools, Kubernetes distributions and operations<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Model:** Oss<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
 Kubernetes application dashboard for deploying and managing Helm charts and other packages.
@@ -107,10 +107,10 @@ Kubernetes application dashboard for deploying and managing Helm charts and othe
 
 ### Kubernetes Dashboard
 
-**Categories:** Deprecated and historical tools, Kubernetes distributions and operations
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
-**Model:** Oss
-**Status:** Archived
+**Categories:** Deprecated and historical tools, Kubernetes distributions and operations<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Model:** Oss<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
 Web UI for Kubernetes.
@@ -127,10 +127,10 @@ Web UI for Kubernetes.
 
 ### tnu
 
-**Categories:** Deprecated and historical tools, CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
-**Status:** Archived
+**Categories:** Deprecated and historical tools, CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
 Test runner for Node.js.

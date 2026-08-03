@@ -7,9 +7,9 @@
 
 ### AWS Lambda
 
-**Categories:** Serverless, edge and WebAssembly
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Serverless, edge and WebAssembly<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Serverless compute service by AWS.
@@ -26,9 +26,9 @@ Serverless compute service by AWS.
 
 ### Azure Container Apps
 
-**Categories:** Serverless, edge and WebAssembly
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Serverless, edge and WebAssembly<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Azure service for running containerized apps.
@@ -45,9 +45,9 @@ Azure service for running containerized apps.
 
 ### Azure Functions
 
-**Categories:** Serverless, edge and WebAssembly
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Serverless, edge and WebAssembly<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Managed serverless compute service by Azure (runtime host is open source).
@@ -64,9 +64,9 @@ Managed serverless compute service by Azure (runtime host is open source).
 
 ### Azure Functions Host
 
-**Categories:** Serverless, edge and WebAssembly
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Oss
+**Categories:** Serverless, edge and WebAssembly<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 The runtime host and core execution engine for Azure Functions.
@@ -83,9 +83,9 @@ The runtime host and core execution engine for Azure Functions.
 
 ### Google Cloud Functions
 
-**Categories:** Serverless, edge and WebAssembly
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Serverless, edge and WebAssembly<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Event-driven serverless functions on Google Cloud.
@@ -102,9 +102,9 @@ Event-driven serverless functions on Google Cloud.
 
 ### Google Cloud Run
 
-**Categories:** Serverless, edge and WebAssembly
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Serverless, edge and WebAssembly<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Serverless containers on Google Cloud.
@@ -121,9 +121,9 @@ Serverless containers on Google Cloud.
 
 ### Knative
 
-**Categories:** Serverless, edge and WebAssembly
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Oss
+**Categories:** Serverless, edge and WebAssembly<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes-based platform to deploy and manage serverless workloads.
@@ -140,9 +140,9 @@ Kubernetes-based platform to deploy and manage serverless workloads.
 
 ### OpenFaaS
 
-**Categories:** Serverless, edge and WebAssembly
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Open Core
+**Categories:** Serverless, edge and WebAssembly<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Functions-as-a-Service framework for Kubernetes; OSS core with commercial Pro features.
@@ -159,9 +159,9 @@ Functions-as-a-Service framework for Kubernetes; OSS core with commercial Pro fe
 
 ### Spin
 
-**Categories:** Serverless, edge and WebAssembly
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Oss
+**Categories:** Serverless, edge and WebAssembly<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Framework for building and running serverless WebAssembly applications.

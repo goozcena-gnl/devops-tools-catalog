@@ -7,9 +7,9 @@
 
 ### Ansible Lint
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Best practices checker for Ansible.
@@ -26,9 +26,9 @@ Best practices checker for Ansible.
 
 ### Apache JMeter
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Load testing and performance measurement tool.
@@ -45,9 +45,9 @@ Load testing and performance measurement tool.
 
 ### Appcircle
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD platform for mobile apps.
@@ -64,9 +64,9 @@ CI/CD platform for mobile apps.
 
 ### Argo Workflows
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Kubernetes-native workflow engine for orchestrating DAG-based CI, data, and ML pipelines.
@@ -83,9 +83,9 @@ Kubernetes-native workflow engine for orchestrating DAG-based CI, data, and ML p
 
 ### Artillery
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Load testing platform and toolkit for HTTP, APIs, and Playwright-based scenarios.
@@ -102,9 +102,9 @@ Load testing platform and toolkit for HTTP, APIs, and Playwright-based scenarios
 
 ### Azure DevOps
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Microsoft's DevOps platform.
@@ -121,9 +121,9 @@ Microsoft's DevOps platform.
 
 ### Bamboo
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD server by Atlassian.
@@ -140,9 +140,9 @@ CI/CD server by Atlassian.
 
 ### Bitbucket Pipelines
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Integrated CI/CD for Bitbucket repositories.
@@ -159,9 +159,9 @@ Integrated CI/CD for Bitbucket repositories.
 
 ### Bitrise
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD for mobile apps with automation workflows.
@@ -178,9 +178,9 @@ CI/CD for mobile apps with automation workflows.
 
 ### BrowserStack App Automate
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Automated mobile app testing on real devices.
@@ -197,9 +197,9 @@ Automated mobile app testing on real devices.
 
 ### Buddy
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD pipeline automation tool.
@@ -216,9 +216,9 @@ CI/CD pipeline automation tool.
 
 ### Buildkite
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD platform with agent-based execution.
@@ -235,9 +235,9 @@ CI/CD platform with agent-based execution.
 
 ### Cadence CI
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD platform.
@@ -254,9 +254,9 @@ CI/CD platform.
 
 ### CircleCI
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud CI/CD platform.
@@ -273,9 +273,9 @@ Cloud CI/CD platform.
 
 ### CloudBees
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Open Core
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Enterprise CI/CD built around Jenkins.
@@ -292,9 +292,9 @@ Enterprise CI/CD built around Jenkins.
 
 ### Codecov
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Code coverage reporting and test insights platform.
@@ -311,9 +311,9 @@ Code coverage reporting and test insights platform.
 
 ### Codefresh
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 GitOps and CI/CD platform.
@@ -330,9 +330,9 @@ GitOps and CI/CD platform.
 
 ### commitlint
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Lint commit messages (Conventional Commits).
@@ -349,9 +349,9 @@ Lint commit messages (Conventional Commits).
 
 ### Concourse
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 CI/CD system with declarative pipelines.
@@ -368,9 +368,9 @@ CI/CD system with declarative pipelines.
 
 ### Cypress
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Open Core
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 End-to-end testing for web applications.
@@ -387,9 +387,9 @@ End-to-end testing for web applications.
 
 ### Dagger
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 CI/CD as code toolkit.
@@ -406,9 +406,9 @@ CI/CD as code toolkit.
 
 ### Devtron
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and day-2 operations.
@@ -425,9 +425,9 @@ AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and da
 
 ### Drone
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Container-native CI/CD platform.
@@ -444,9 +444,9 @@ Container-native CI/CD platform.
 
 ### Firebase Test Lab
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud-based app testing on real and virtual devices.
@@ -463,9 +463,9 @@ Cloud-based app testing on real and virtual devices.
 
 ### FitNesse
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Acceptance testing framework.
@@ -482,9 +482,9 @@ Acceptance testing framework.
 
 ### GitHub Actions
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD automation built into GitHub.
@@ -501,9 +501,9 @@ CI/CD automation built into GitHub.
 
 ### GitLab CI
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Open Core
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 CI/CD built into GitLab.
@@ -520,9 +520,9 @@ CI/CD built into GitLab.
 
 ### gitmoji
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Documentation
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Standardized emoji guide for commit messages.
@@ -539,9 +539,9 @@ Standardized emoji guide for commit messages.
 
 ### GoCD
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source CI/CD server.
@@ -558,9 +558,9 @@ Open-source CI/CD server.
 
 ### Google Cloud Build
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD service for Google Cloud.
@@ -577,9 +577,9 @@ CI/CD service for Google Cloud.
 
 ### Harness
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD and DevOps platform.
@@ -596,9 +596,9 @@ CI/CD and DevOps platform.
 
 ### Jenkins
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Automation server for CI/CD.
@@ -615,9 +615,9 @@ Automation server for CI/CD.
 
 ### Jenkins X
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes-native CI/CD.
@@ -634,9 +634,9 @@ Kubernetes-native CI/CD.
 
 ### k6
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Load testing tool for performance testing.
@@ -653,9 +653,9 @@ Load testing tool for performance testing.
 
 ### Katalon Studio
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Automated testing for web, API, and mobile.
@@ -672,10 +672,10 @@ Automated testing for web, API, and mobile.
 
 ### Keptn
 
-**Categories:** Deprecated and historical tools, CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
-**Status:** Archived
+**Categories:** Deprecated and historical tools, CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
 Cloud-native lifecycle management and delivery.
@@ -692,9 +692,9 @@ Cloud-native lifecycle management and delivery.
 
 ### Mantis
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 CI/CD platform for ML and data workflows.
@@ -711,9 +711,9 @@ CI/CD platform for ML and data workflows.
 
 ### Mergify
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Merge queue and pull-request automation to keep CI green and streamline merges.
@@ -730,9 +730,9 @@ Merge queue and pull-request automation to keep CI green and streamline merges.
 
 ### Nektos Act
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Run GitHub Actions locally.
@@ -749,9 +749,9 @@ Run GitHub Actions locally.
 
 ### Octopus Deploy
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Deployment automation platform.
@@ -768,9 +768,9 @@ Deployment automation platform.
 
 ### OneDev
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Self-hosted Git server with integrated CI/CD, issue tracking, packages, code search, and AI-assisted workflows.
@@ -787,9 +787,9 @@ Self-hosted Git server with integrated CI/CD, issue tracking, packages, code sea
 
 ### OpenShift Pipelines
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Tekton-based CI/CD experience packaged and supported for OpenShift clusters (built on OSS Tekton).
@@ -806,9 +806,9 @@ Tekton-based CI/CD experience packaged and supported for OpenShift clusters (bui
 
 ### Playwright
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 End-to-end testing for web apps.
@@ -825,9 +825,9 @@ End-to-end testing for web apps.
 
 ### Probot DCO
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 DCO checks for GitHub pull requests.
@@ -844,9 +844,9 @@ DCO checks for GitHub pull requests.
 
 ### pytest
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Python testing framework.
@@ -863,9 +863,9 @@ Python testing framework.
 
 ### pytest-cov
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Pytest plugin for coverage reporting, including support for distributed test runs.
@@ -882,9 +882,9 @@ Pytest plugin for coverage reporting, including support for distributed test run
 
 ### Review Flow
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 GitHub pull request review workflow visualization and management tool.
@@ -901,9 +901,9 @@ GitHub pull request review workflow visualization and management tool.
 
 ### Sauce Labs Real Device Cloud
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Mobile app testing on a wide range of real devices.
@@ -920,9 +920,9 @@ Mobile app testing on a wide range of real devices.
 
 ### Selenium
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Browser automation for testing web applications.
@@ -939,9 +939,9 @@ Browser automation for testing web applications.
 
 ### Semantic Pull Request (GitHub Action)
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Enforce semantic PR titles in GitHub Actions.
@@ -958,9 +958,9 @@ Enforce semantic PR titles in GitHub Actions.
 
 ### Semaphore CI
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD platform for software projects.
@@ -977,9 +977,9 @@ CI/CD platform for software projects.
 
 ### ServerSpec
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Test server configurations using RSpec.
@@ -996,9 +996,9 @@ Test server configurations using RSpec.
 
 ### Spinnaker
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Multi-cloud continuous delivery platform.
@@ -1015,9 +1015,9 @@ Multi-cloud continuous delivery platform.
 
 ### TeamCity
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD server by JetBrains.
@@ -1034,9 +1034,9 @@ CI/CD server by JetBrains.
 
 ### Tekton
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes-native CI/CD framework.
@@ -1053,9 +1053,9 @@ Kubernetes-native CI/CD framework.
 
 ### Test Kitchen
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Test infrastructure code on various platforms.
@@ -1072,9 +1072,9 @@ Test infrastructure code on various platforms.
 
 ### Testcontainers
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Open Core
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Libraries for integration tests using disposable containers; OSS core with paid cloud add-ons.
@@ -1091,9 +1091,9 @@ Libraries for integration tests using disposable containers; OSS core with paid 
 
 ### Testkube
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Kubernetes-native test orchestration platform for running, scheduling, and scaling automated tests across environments.
@@ -1110,9 +1110,9 @@ Kubernetes-native test orchestration platform for running, scheduling, and scali
 
 ### TestRail
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Test case management platform.
@@ -1129,9 +1129,9 @@ Test case management platform.
 
 ### TestRigor
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 AI-powered end-to-end testing platform.
@@ -1148,10 +1148,10 @@ AI-powered end-to-end testing platform.
 
 ### tnu
 
-**Categories:** Deprecated and historical tools, CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
-**Status:** Archived
+**Categories:** Deprecated and historical tools, CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
 Test runner for Node.js.
@@ -1168,9 +1168,9 @@ Test runner for Node.js.
 
 ### To Be Continuous
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Documentation
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Modular GitLab CI template ecosystem for standardizing and accelerating professional pipelines.
@@ -1187,9 +1187,9 @@ Modular GitLab CI template ecosystem for standardizing and accelerating professi
 
 ### Travis CI
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD service for GitHub.
@@ -1206,9 +1206,9 @@ CI/CD service for GitHub.
 
 ### validate-dependabot
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 GitHub Action that validates `dependabot.yml` against the official Dependabot schema before merge.
@@ -1225,9 +1225,9 @@ GitHub Action that validates `dependabot.yml` against the official Dependabot sc
 
 ### Vitest
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Blazing fast Vite-native unit testing framework.
@@ -1244,9 +1244,9 @@ Blazing fast Vite-native unit testing framework.
 
 ### Woodpecker CI
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Oss
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 CI/CD platform for Git.
@@ -1263,9 +1263,9 @@ CI/CD platform for Git.
 
 ### Xray
 
-**Categories:** CI, build and testing
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Test management for Jira (manual + automated tests).

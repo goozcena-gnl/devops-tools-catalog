@@ -7,9 +7,9 @@
 
 ### 1Password Connect
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Embeddable API server for programmatic access to 1Password vaults from infrastructure and applications.
@@ -26,9 +26,9 @@ Embeddable API server for programmatic access to 1Password vaults from infrastru
 
 ### ArgoCD Vault Plugin
 
-**Categories:** CD, GitOps, release and promotion, IAM, secrets and certificate management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, DevSecOps Engineer, Release Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** CD, GitOps, release and promotion, IAM, secrets and certificate management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, DevSecOps Engineer, Release Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Integrates secrets from external stores into ArgoCD.
@@ -47,9 +47,9 @@ Integrates secrets from external stores into ArgoCD.
 
 ### Auth0
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Identity platform for authenticating users, applications, and AI agents.
@@ -66,9 +66,9 @@ Identity platform for authenticating users, applications, and AI agents.
 
 ### AWS Secrets Manager
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Managed secret storage for AWS.
@@ -85,9 +85,9 @@ Managed secret storage for AWS.
 
 ### Boulder (Let's Encrypt)
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 ACME-based certificate authority server powering Let's Encrypt.
@@ -104,9 +104,9 @@ ACME-based certificate authority server powering Let's Encrypt.
 
 ### CertMate
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Certificate management automation.
@@ -123,9 +123,9 @@ Certificate management automation.
 
 ### Cosmian KMS
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Key management service.
@@ -142,9 +142,9 @@ Key management service.
 
 ### Descope
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
@@ -161,9 +161,9 @@ Customer identity and access management platform with flows, SDKs, SSO, MFA, pas
 
 ### Dex
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 OpenID Connect identity provider for Kubernetes and beyond.
@@ -180,9 +180,9 @@ OpenID Connect identity provider for Kubernetes and beyond.
 
 ### Doppler
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Universal secrets management platform.
@@ -199,9 +199,9 @@ Universal secrets management platform.
 
 ### Entrust KeyControl
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Key management for enterprise.
@@ -218,9 +218,9 @@ Key management for enterprise.
 
 ### External Secrets Operator
 
-**Categories:** Kubernetes networking, storage and add-ons, IAM, secrets and certificate management
-**Roles:** Cloud Engineer, Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Kubernetes networking, storage and add-ons, IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Sync external secrets into Kubernetes.
@@ -239,9 +239,9 @@ Sync external secrets into Kubernetes.
 
 ### Futurex KMES Series 3
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Hardware key management.
@@ -258,9 +258,9 @@ Hardware key management.
 
 ### HashiCorp Boundary
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Source Available
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
 Secure remote access to systems.
@@ -277,9 +277,9 @@ Secure remote access to systems.
 
 ### HashiCorp Vault
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Source Available
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
 Secure secret storage and access.
@@ -296,9 +296,9 @@ Secure secret storage and access.
 
 ### IBM Guardium Key Lifecycle Manager
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Enterprise key management.
@@ -315,9 +315,9 @@ Enterprise key management.
 
 ### InfraHQ
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Identity-aware access management / access proxy for infrastructure.
@@ -334,9 +334,9 @@ Identity-aware access management / access proxy for infrastructure.
 
 ### JumpServer
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source bastion host / privileged access management (PAM) platform.
@@ -353,9 +353,9 @@ Open-source bastion host / privileged access management (PAM) platform.
 
 ### Keycloak
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open source identity and access management.
@@ -372,9 +372,9 @@ Open source identity and access management.
 
 ### Keystore Explorer
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 GUI for managing keystores.
@@ -391,9 +391,9 @@ GUI for managing keystores.
 
 ### Lade
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Auto-load secrets from vaults into environment variables or files for shell commands with minimal exposure.
@@ -410,9 +410,9 @@ Auto-load secrets from vaults into environment variables or files for shell comm
 
 ### mkcert
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Local SSL certificate generation.
@@ -429,9 +429,9 @@ Local SSL certificate generation.
 
 ### OpenBao
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source secrets management and encryption platform.
@@ -448,9 +448,9 @@ Open-source secrets management and encryption platform.
 
 ### OpenSSH
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 The ubiquitous open-source SSH suite for secure remote login, file transfer, and tunneling.
@@ -467,9 +467,9 @@ The ubiquitous open-source SSH suite for secure remote login, file transfer, and
 
 ### OpenStack Barbican
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 OpenStack secrets management.
@@ -486,9 +486,9 @@ OpenStack secrets management.
 
 ### passbolt
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Open Core
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Password manager for teams with self-hosted and paid offerings.
@@ -505,9 +505,9 @@ Password manager for teams with self-hosted and paid offerings.
 
 ### SOPS
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Secrets management tool for GitOps/IaC (encrypt YAML/JSON/env).
@@ -524,9 +524,9 @@ Secrets management tool for GitOps/IaC (encrypt YAML/JSON/env).
 
 ### SSOReady
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Enterprise SSO and SCIM integration platform for adding SAML login and directory sync to applications.
@@ -543,9 +543,9 @@ Enterprise SSO and SCIM integration platform for adding SAML login and directory
 
 ### StrongKey
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Enterprise key management.
@@ -562,9 +562,9 @@ Enterprise key management.
 
 ### Teleport
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Open Core
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Secure access platform for SSH/Kubernetes/databases with OSS core and enterprise editions.
@@ -581,9 +581,9 @@ Secure access platform for SSH/Kubernetes/databases with OSS core and enterprise
 
 ### Teller
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Run processes with secrets from multiple providers and manage secret scanning, syncing, templating, and redaction.
@@ -600,9 +600,9 @@ Run processes with secrets from multiple providers and manage secret scanning, s
 
 ### Thales CipherTrust Manager
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Enterprise key and secret management.
@@ -619,9 +619,9 @@ Enterprise key and secret management.
 
 ### webssh
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Modern web-based SSH terminal with SFTP file management.
@@ -638,9 +638,9 @@ Modern web-based SSH terminal with SFTP file management.
 
 ### XCA
 
-**Categories:** IAM, secrets and certificate management
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 X.509 certificate and key management.
