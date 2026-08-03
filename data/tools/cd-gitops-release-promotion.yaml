@@ -298,6 +298,7 @@
   summary: Open and extensible GitOps toolkit for Kubernetes.
   official_url: https://fluxcd.io
   repository_url: https://github.com/fluxcd/flux2
+  documentation_url: https://fluxcd.io/flux/
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -315,15 +316,16 @@
   - '* You need a rich UI out of the box or prefer a centralized multi-cluster management plane.'
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L144
   - legacy:devopstools_final.md#L390
-  needs_review: true
+  needs_review: false
 - id: flux-operator
   name: Flux Operator
   summary: Kubernetes operator for managing Flux CD instances.
@@ -445,6 +447,7 @@
   summary: GitOps promotion workflow for Kubernetes.
   official_url: https://kargo.io
   repository_url: https://github.com/akuity/kargo
+  documentation_url: https://docs.kargo.io/
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -462,15 +465,16 @@
   - '* You have a single environment or simple deployment pipeline.'
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L150
   - legacy:devopstools_final.md#L394
-  needs_review: true
+  needs_review: false
 - id: keel
   name: Keel
   summary: Automated Kubernetes deployment updates.

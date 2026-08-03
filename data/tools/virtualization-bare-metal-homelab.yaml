@@ -359,6 +359,7 @@
   summary: Lightweight virtualization for microVMs.
   official_url: https://firecracker-microvm.github.io
   repository_url: https://github.com/firecracker-microvm/firecracker
+  documentation_url: https://github.com/firecracker-microvm/firecracker/blob/main/docs/README.md
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -375,20 +376,22 @@
   - You need full VM features like GPU passthrough or legacy OS support.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L150
   - legacy:devopstools_final.md#L240
-  needs_review: true
+  needs_review: false
 - id: flatcar-container-linux
   name: Flatcar Container Linux
   summary: Immutable Linux distro for containers.
   official_url: https://www.flatcar.org
   repository_url: https://github.com/flatcar/Flatcar
+  documentation_url: https://www.flatcar.org/docs/latest/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -405,15 +408,16 @@
   - You need to install arbitrary packages or run non-containerized workloads.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L152
   - legacy:devopstools_final.md#L242
-  needs_review: true
+  needs_review: false
 - id: futurfusion
   name: FuturFusion
   summary: Dell-backed VMware exit solution that preserves and migrates existing VMware estates to open

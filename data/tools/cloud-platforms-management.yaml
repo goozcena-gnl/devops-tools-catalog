@@ -199,6 +199,7 @@
   name: Concierto Cloud
   summary: Cloud management platform.
   official_url: https://www.concierto.cloud
+  documentation_url: https://concierto.cloud/
   categories:
   - cloud-platforms-management
   subcategories:
@@ -216,20 +217,22 @@
   avoid_when:
   - Your workloads are single-cloud with built-in cost tools.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L230
   - legacy:devopstools_final.md#L301
-  needs_review: true
+  needs_review: false
 - id: digitalocean
   name: DigitalOcean
   summary: Developer-friendly cloud infrastructure provider.
   official_url: https://www.digitalocean.com
+  documentation_url: https://docs.digitalocean.com/
   categories:
   - cloud-platforms-management
   subcategories:
@@ -247,16 +250,17 @@
   avoid_when:
   - You need enterprise-grade compliance or advanced networking.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L10
   - legacy:devopstools_final.md#L153
-  needs_review: true
+  needs_review: false
 - id: exoway
   name: Exoway
   summary: Cloud infrastructure and hosting services.

@@ -589,6 +589,7 @@
   summary: End-to-end testing for web applications.
   official_url: https://www.cypress.io
   repository_url: https://github.com/cypress-io/cypress
+  documentation_url: https://docs.cypress.io/
   categories:
   - ci-build-testing
   subcategories:
@@ -606,20 +607,23 @@
   - You need multi-tab, multi-origin, or non-Chromium browser coverage (consider Playwright instead).
   deployment_models: []
   license_model: open-core
+  license_spdx: MIT
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:7_Development-Collaboration/README.md#L10
   - legacy:devopstools_final.md#L1031
-  needs_review: true
+  needs_review: false
 - id: dagger
   name: Dagger
   summary: CI/CD as code toolkit.
   official_url: https://dagger.io
   repository_url: https://github.com/dagger/dagger
+  documentation_url: https://docs.dagger.io/
   categories:
   - ci-build-testing
   subcategories:
@@ -636,16 +640,18 @@
   avoid_when:
   - '* Your team prefers YAML-based pipelines or isn''t comfortable with programmatic pipeline definitions.'
   deployment_models: []
-  license_model: oss
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L30
   - legacy:devopstools_final.md#L321
-  needs_review: true
+  needs_review: false
 - id: devtron
   name: Devtron
   summary: AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and day-2 operations.
