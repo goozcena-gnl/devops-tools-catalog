@@ -7,9 +7,9 @@
 
 ### Ansible
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Agentless configuration management, orchestration, and automation.
@@ -26,9 +26,9 @@ Agentless configuration management, orchestration, and automation.
 
 ### CFEngine
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Open Core
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Policy-based configuration management; community + commercial editions.
@@ -45,9 +45,9 @@ Policy-based configuration management; community + commercial editions.
 
 ### Chef
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Infrastructure automation and configuration management.
@@ -64,9 +64,9 @@ Infrastructure automation and configuration management.
 
 ### ConfigHub
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Unknown
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Configuration management platform for distributed applications.
@@ -83,9 +83,9 @@ Configuration management platform for distributed applications.
 
 ### etckeeper
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Version control for `/etc` (tracks config changes in Git).
@@ -102,10 +102,10 @@ Version control for `/etc` (tracks config changes in Git).
 
 ### Juju
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
-**Status:** Needs Review
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
+**Status:** Needs Review<br>
 **Repository:** Archived
 
 Service modeling and orchestration tool from Canonical (operators/charms).
@@ -122,9 +122,9 @@ Service modeling and orchestration tool from Canonical (operators/charms).
 
 ### Kolla-Ansible
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Ansible playbooks for deploying OpenStack.
@@ -141,9 +141,9 @@ Ansible playbooks for deploying OpenStack.
 
 ### Mitogen for Ansible
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Ansible accelerator to speed up module execution and reduce SSH overhead.
@@ -160,9 +160,9 @@ Ansible accelerator to speed up module execution and reduce SSH overhead.
 
 ### Puppet
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Open Core
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Configuration management and automation; open source core with enterprise features.
@@ -179,9 +179,9 @@ Configuration management and automation; open source core with enterprise featur
 
 ### Red Hat Ansible Automation Platform
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Unknown
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Enterprise automation platform built around Ansible.
@@ -198,9 +198,9 @@ Enterprise automation platform built around Ansible.
 
 ### Rudder
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Open Core
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Continuous configuration and automation platform.
@@ -217,9 +217,9 @@ Continuous configuration and automation platform.
 
 ### Salt
 
-**Categories:** Configuration management
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Configuration management<br>
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Event-driven automation and configuration management.

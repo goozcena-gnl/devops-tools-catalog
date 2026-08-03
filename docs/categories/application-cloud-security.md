@@ -7,9 +7,9 @@
 
 ### Aikido
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Open Core
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud posture scanning.
@@ -26,9 +26,9 @@ Developer-first security platform covering SAST, SCA, DAST, IaC, container, secr
 
 ### Apiiro
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Application security platform focused on securing agentic development and software delivery.
@@ -45,9 +45,9 @@ Application security platform focused on securing agentic development and softwa
 
 ### Arnica
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Application security platform covering SAST, SCA, IaC, and secrets scanning.
@@ -64,9 +64,9 @@ Application security platform covering SAST, SCA, IaC, and secrets scanning.
 
 ### Arsenal
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Documentation
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Security tools knowledge base.
@@ -83,9 +83,9 @@ Security tools knowledge base.
 
 ### AutoPWN Suite
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Source Available
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
 Automated reconnaissance and vulnerability discovery framework for security testing labs.
@@ -102,9 +102,9 @@ Automated reconnaissance and vulnerability discovery framework for security test
 
 ### Awesome DevSecOps
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Documentation
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Curated list of DevSecOps resources.
@@ -121,9 +121,9 @@ Curated list of DevSecOps resources.
 
 ### Awesome WAF
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Documentation
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Curated list of Web Application Firewalls.
@@ -140,9 +140,9 @@ Curated list of Web Application Firewalls.
 
 ### AWS Service Control Policies
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 AWS organization-level access control.
@@ -159,9 +159,9 @@ AWS organization-level access control.
 
 ### Azure Policy
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Azure resource governance.
@@ -178,9 +178,9 @@ Azure resource governance.
 
 ### BunkerWeb
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
@@ -199,9 +199,9 @@ Open source, cloud-native web application firewall and security gateway for reve
 
 ### Burp Suite
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Web vulnerability scanner and testing suite.
@@ -218,9 +218,9 @@ Web vulnerability scanner and testing suite.
 
 ### CAI (RobotSec)
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Source Available
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
 Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
@@ -237,9 +237,9 @@ Open cybersecurity AI framework for robotics and offensive security workflows, w
 
 ### Calico Cloud
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Open Core
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Managed SaaS platform built on Calico Open Source for networking/security/observability.
@@ -256,9 +256,9 @@ Managed SaaS platform built on Calico Open Source for networking/security/observ
 
 ### Capsule
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
@@ -277,9 +277,9 @@ Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and
 
 ### Cato Networks
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 SASE (Secure Access Service Edge) platform.
@@ -296,9 +296,9 @@ SASE (Secure Access Service Edge) platform.
 
 ### Cedar Policy
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Policy language and authorization engine (Cedar) for fine-grained access control.
@@ -315,9 +315,9 @@ Policy language and authorization engine (Cedar) for fine-grained access control
 
 ### Chain Bench
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Supply chain security auditing tool.
@@ -334,9 +334,9 @@ Supply chain security auditing tool.
 
 ### Chainguard
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Secure container images and supply chain security platform.
@@ -353,9 +353,9 @@ Secure container images and supply chain security platform.
 
 ### Checkmarx
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Application security testing platform.
@@ -372,9 +372,9 @@ Application security testing platform.
 
 ### Checkov (Bridgecrew / Prisma Cloud)
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
@@ -391,9 +391,9 @@ Open source IaC and software supply chain scanner maintained under the Bridgecre
 
 ### Cilium
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 EBPF-based networking, observability, and security for Kubernetes.
@@ -412,9 +412,9 @@ EBPF-based networking, observability, and security for Kubernetes.
 
 ### Cisco Talos Intelligence
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Documentation
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Threat intelligence platform providing IP/domain reputation, vulnerability research, malware analysis, and security advisories by Cisco.
@@ -431,9 +431,9 @@ Threat intelligence platform providing IP/domain reputation, vulnerability resea
 
 ### CodeQL
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Semantic code analysis for vulnerabilities.
@@ -450,9 +450,9 @@ Semantic code analysis for vulnerabilities.
 
 ### Codiga
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Automated code analysis and security.
@@ -469,9 +469,9 @@ Automated code analysis and security.
 
 ### Conftest
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Test configuration files using OPA/Rego.
@@ -488,9 +488,9 @@ Test configuration files using OPA/Rego.
 
 ### copy-fail-destroyer
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes DaemonSet that detects and remediates Linux kernel page-cache write vulnerabilities (Copy Fail / Dirty Frag) and exposes Prometheus metrics.
@@ -507,9 +507,9 @@ Kubernetes DaemonSet that detects and remediates Linux kernel page-cache write v
 
 ### Coraza
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 ModSecurity-compatible WAF library.
@@ -526,9 +526,9 @@ ModSecurity-compatible WAF library.
 
 ### CrowdSec
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Collaborative intrusion prevention/behavior detection engine.
@@ -545,9 +545,9 @@ Collaborative intrusion prevention/behavior detection engine.
 
 ### CVEMap
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 CVE mapping and analysis tool.
@@ -564,9 +564,9 @@ CVE mapping and analysis tool.
 
 ### CycloneDX
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Documentation
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Open standard for SBOMs and related software supply chain BOM formats, including support for VEX and AI/ML metadata.
@@ -583,9 +583,9 @@ Open standard for SBOMs and related software supply chain BOM formats, including
 
 ### Cyclonus
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes network policy testing tool.
@@ -602,9 +602,9 @@ Kubernetes network policy testing tool.
 
 ### DependencyCheck
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Identify vulnerable dependencies.
@@ -621,9 +621,9 @@ Identify vulnerable dependencies.
 
 ### detect-secrets
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Secrets detection with baseline support (reduce false positives).
@@ -640,9 +640,9 @@ Secrets detection with baseline support (reduce false positives).
 
 ### DigiCert
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Digital certificates and SSL solutions.
@@ -659,9 +659,9 @@ Digital certificates and SSL solutions.
 
 ### docker-socket-proxy
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Proxy that restricts access to the Docker socket API.
@@ -678,9 +678,9 @@ Proxy that restricts access to the Docker socket API.
 
 ### Dockle
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Container image linter for security best practices.
@@ -697,9 +697,9 @@ Container image linter for security best practices.
 
 ### Drata
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Security and compliance automation platform.
@@ -716,9 +716,9 @@ Security and compliance automation platform.
 
 ### Duo Security
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Multi-factor authentication and access security.
@@ -735,9 +735,9 @@ Multi-factor authentication and access security.
 
 ### F5 WAF for NGINX
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Commercial WAF for NGINX.
@@ -754,9 +754,9 @@ Commercial WAF for NGINX.
 
 ### fail2ban
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Intrusion prevention by monitoring logs and banning abusive IPs (e.g., SSH).
@@ -773,9 +773,9 @@ Intrusion prevention by monitoring logs and banning abusive IPs (e.g., SSH).
 
 ### Falco
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Runtime security for cloud-native environments.
@@ -794,9 +794,9 @@ Runtime security for cloud-native environments.
 
 ### Filigran
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Open threat intelligence and incident response platform (OpenCTI / OpenBAS) for collecting, analyzing, and acting on cyber threat intelligence.
@@ -813,9 +813,9 @@ Open threat intelligence and incident response platform (OpenCTI / OpenBAS) for 
 
 ### firewalld
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Dynamically managed firewall for Linux with D-Bus interface.
@@ -832,9 +832,9 @@ Dynamically managed firewall for Linux with D-Bus interface.
 
 ### Fortify Static Code Analyzer
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Static application security testing.
@@ -851,9 +851,9 @@ Static application security testing.
 
 ### FOSSA
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Software supply chain and license compliance platform.
@@ -870,9 +870,9 @@ Software supply chain and license compliance platform.
 
 ### Gibson
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Network monitoring and threat-hunting tool that maps processes to connections, flags beaconing, and helps generate firewall rules.
@@ -889,9 +889,9 @@ Network monitoring and threat-hunting tool that maps processes to connections, f
 
 ### Gitleaks
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Detect hardcoded secrets in code.
@@ -908,9 +908,9 @@ Detect hardcoded secrets in code.
 
 ### Google Cloud Organization Policy
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 GCP resource governance.
@@ -927,9 +927,9 @@ GCP resource governance.
 
 ### Greenbone (OpenVAS)
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Vulnerability scanning and management framework (formerly OpenVAS).
@@ -946,9 +946,9 @@ Vulnerability scanning and management framework (formerly OpenVAS).
 
 ### Grype
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Vulnerability scanner for container images and filesystems.
@@ -965,9 +965,9 @@ Vulnerability scanner for container images and filesystems.
 
 ### GUAC
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Supply chain graph platform for ingesting SBOMs and metadata to map software relationships and provenance.
@@ -984,9 +984,9 @@ Supply chain graph platform for ingesting SBOMs and metadata to map software rel
 
 ### Guardon
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source browser extension that brings Kubernetes guardrails and developer-first security checks directly into the browser workflow.
@@ -1003,9 +1003,9 @@ Open-source browser extension that brings Kubernetes guardrails and developer-fi
 
 ### Hybrid Analysis
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Free malware analysis sandbox service powered by CrowdStrike Falcon Sandbox.
@@ -1022,9 +1022,9 @@ Free malware analysis sandbox service powered by CrowdStrike Falcon Sandbox.
 
 ### Iroh
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Peer-to-peer networking library for building distributed, hole-punching-capable, end-to-end encrypted connections.
@@ -1041,9 +1041,9 @@ Peer-to-peer networking library for building distributed, hole-punching-capable,
 
 ### ISMS Builder
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Self-hosted information security management system builder for ISO 27001, NIS2, and GDPR compliance.
@@ -1060,9 +1060,9 @@ Self-hosted information security management system builder for ISO 27001, NIS2, 
 
 ### JARVIS OS
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 AI-native operating system and LLM security research platform.
@@ -1079,9 +1079,9 @@ AI-native operating system and LLM security research platform.
 
 ### k-guard
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patching, and hardening.
@@ -1098,9 +1098,9 @@ Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patch
 
 ### k0rdent
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes security and compliance scanner.
@@ -1117,9 +1117,9 @@ Kubernetes security and compliance scanner.
 
 ### k8s Sidecar Secret Forge
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes secret management sidecar.
@@ -1136,9 +1136,9 @@ Kubernetes secret management sidecar.
 
 ### k8scout
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Drop-in binary that maps Kubernetes attack paths to cluster-admin escalation, node escape, secret theft, and cloud IAM takeover from within a pod.
@@ -1155,9 +1155,9 @@ Drop-in binary that maps Kubernetes attack paths to cluster-admin escalation, no
 
 ### Kamaji
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes control plane manager (multi-tenancy/security).
@@ -1176,9 +1176,9 @@ Kubernetes control plane manager (multi-tenancy/security).
 
 ### kickthemout
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kick devices off your local network using ARP spoofing (Node.js-based network security testing tool).
@@ -1195,9 +1195,9 @@ Kick devices off your local network using ARP spoofing (Node.js-based network se
 
 ### Kiuwan
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Application security and code quality platform.
@@ -1214,9 +1214,9 @@ Application security and code quality platform.
 
 ### Kps-zeroexposure
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes zero-exposure policy tool.
@@ -1233,9 +1233,9 @@ Kubernetes zero-exposure policy tool.
 
 ### KubeLinter
 
-**Categories:** Kubernetes distributions and operations, Application and cloud security
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Kubernetes distributions and operations, Application and cloud security<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
@@ -1254,9 +1254,9 @@ Static analysis tool for Kubernetes YAML and Helm manifests that detects securit
 
 ### LOTP (Living Off the Pipeline)
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Documentation
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow injection or unintended code execution.
@@ -1273,9 +1273,9 @@ Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow
 
 ### Lynis
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Open Core
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Security auditing and hardening tool with an enterprise offering (CISOfy).
@@ -1292,9 +1292,9 @@ Security auditing and hardening tool with an enterprise offering (CISOfy).
 
 ### ManageEngine Network Configuration Manager
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Network device configuration management.
@@ -1311,9 +1311,9 @@ Network device configuration management.
 
 ### MCPDefender
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Security proxy for MCP traffic between AI apps and MCP servers (AGPL-3.0).
@@ -1330,9 +1330,9 @@ Security proxy for MCP traffic between AI apps and MCP servers (AGPL-3.0).
 
 ### MEDUSA
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 AI security scanner with extensive detection rules for application and model risks.
@@ -1349,9 +1349,9 @@ AI security scanner with extensive detection rules for application and model ris
 
 ### MFASweep
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 PowerShell tool for enumerating and testing MFA bypass paths across Microsoft 365 and Azure AD environments.
@@ -1368,9 +1368,9 @@ PowerShell tool for enumerating and testing MFA bypass paths across Microsoft 36
 
 ### mitmproxy
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Interactive HTTPS proxy with CLI, web UI, and Python scripting for traffic inspection and testing.
@@ -1387,9 +1387,9 @@ Interactive HTTPS proxy with CLI, web UI, and Python scripting for traffic inspe
 
 ### ModSecurity
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Web Application Firewall (WAF) engine.
@@ -1406,9 +1406,9 @@ Web Application Firewall (WAF) engine.
 
 ### NAXSI (WAF for NGINX)
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open source WAF module for NGINX (NAXSI).
@@ -1425,9 +1425,9 @@ Open source WAF module for NGINX (NAXSI).
 
 ### NetBird
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Zero-trust networking platform built on WireGuard.
@@ -1444,9 +1444,9 @@ Zero-trust networking platform built on WireGuard.
 
 ### Nikto
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Web server scanner for dangerous files, outdated software, and common misconfigurations.
@@ -1463,9 +1463,9 @@ Web server scanner for dangerous files, outdated software, and common misconfigu
 
 ### nomos
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Security guardrail for AI agents (Claude Code, Codex, MCP) that blocks secret access and gates risky commands with allow/deny/approval policies.
@@ -1482,9 +1482,9 @@ Security guardrail for AI agents (Claude Code, Codex, MCP) that blocks secret ac
 
 ### Notary Project
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Supply chain signing and verification for artifacts (CNCF).
@@ -1501,9 +1501,9 @@ Supply chain signing and verification for artifacts (CNCF).
 
 ### Nuclei
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Fast vulnerability scanner.
@@ -1520,9 +1520,9 @@ Fast vulnerability scanner.
 
 ### Omni
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Source Available
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
 Kubernetes cluster lifecycle management platform by Sidero Labs; BSL/source-available + SaaS.
@@ -1539,9 +1539,9 @@ Kubernetes cluster lifecycle management platform by Sidero Labs; BSL/source-avai
 
 ### Open Policy Agent
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Policy-based control for cloud-native environments.
@@ -1558,9 +1558,9 @@ Policy-based control for cloud-native environments.
 
 ### open-appsec
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 ML-based application & API security (WAF/RASP style).
@@ -1577,9 +1577,9 @@ ML-based application & API security (WAF/RASP style).
 
 ### OpenSCAP
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Security Content Automation Protocol.
@@ -1596,9 +1596,9 @@ Security Content Automation Protocol.
 
 ### OpenSCAP Tools
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Collection of OpenSCAP tools.
@@ -1615,9 +1615,9 @@ Collection of OpenSCAP tools.
 
 ### OpenZiti
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source zero-trust overlay networking platform.
@@ -1634,9 +1634,9 @@ Open-source zero-trust overlay networking platform.
 
 ### OPNsense
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source firewall and routing software.
@@ -1653,9 +1653,9 @@ Open-source firewall and routing software.
 
 ### OSINT Framework
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Documentation
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Curated framework of OSINT resources and investigative tools.
@@ -1672,9 +1672,9 @@ Curated framework of OSINT resources and investigative tools.
 
 ### OSSIM
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open Source Security Information and Event Management (SIEM) platform.
@@ -1691,9 +1691,9 @@ Open Source Security Information and Event Management (SIEM) platform.
 
 ### OWASP ZAP
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Web application security scanner (DAST).
@@ -1710,9 +1710,9 @@ Web application security scanner (DAST).
 
 ### Palo Alto Cortex Cloud
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud-native security operations platform.
@@ -1729,9 +1729,9 @@ Cloud-native security operations platform.
 
 ### Pangolin
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Zero-trust remote access platform and VPN alternative.
@@ -1748,9 +1748,9 @@ Zero-trust remote access platform and VPN alternative.
 
 ### Parrot Security
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Security-oriented Linux distribution for penetration testing, digital forensics, and privacy.
@@ -1767,9 +1767,9 @@ Security-oriented Linux distribution for penetration testing, digital forensics,
 
 ### PenTest Toolkit Pro
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Offline HTML toolkit for pentest checklists, audits, reporting, and action plans.
@@ -1786,9 +1786,9 @@ Offline HTML toolkit for pentest checklists, audits, reporting, and action plans
 
 ### pfSense
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source firewall and router platform.
@@ -1805,9 +1805,9 @@ Open-source firewall and router platform.
 
 ### pip-audit
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Audit Python environments/dependencies for known vulnerabilities.
@@ -1824,9 +1824,9 @@ Audit Python environments/dependencies for known vulnerabilities.
 
 ### piqc
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes scanner that discovers LLMs running on vLLM and extracts their deployment and runtime facts.
@@ -1843,9 +1843,9 @@ Kubernetes scanner that discovers LLMs running on vLLM and extracts their deploy
 
 ### Portmaster
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Self-hosted application firewall and privacy suite for monitoring and controlling network connections.
@@ -1862,9 +1862,9 @@ Self-hosted application firewall and privacy suite for monitoring and controllin
 
 ### Pritunl
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Open Core
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 VPN server for secure remote access; open-source core with commercial features.
@@ -1881,9 +1881,9 @@ VPN server for secure remote access; open-source core with commercial features.
 
 ### Qubes OS
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Security-focused desktop operating system using Xen-based virtualization for compartmentalization.
@@ -1900,9 +1900,9 @@ Security-focused desktop operating system using Xen-based virtualization for com
 
 ### Red Labs
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Documentation
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Security labs/training environment.
@@ -1919,9 +1919,9 @@ Security labs/training environment.
 
 ### RITA
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Network traffic analysis tool for detecting command-and-control and beaconing behavior.
@@ -1938,9 +1938,9 @@ Network traffic analysis tool for detecting command-and-control and beaconing be
 
 ### SafeLine
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Open Core
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Self-hosted web application firewall (WAF) / reverse proxy; OSS core with paid tiers.
@@ -1957,9 +1957,9 @@ Self-hosted web application firewall (WAF) / reverse proxy; OSS core with paid t
 
 ### Security Onion
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Free and open platform for network security monitoring, log management, and threat hunting.
@@ -1976,9 +1976,9 @@ Free and open platform for network security monitoring, log management, and thre
 
 ### Securix
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Linux server hardening and security configuration scripts designed for government cloud environments.
@@ -1995,9 +1995,9 @@ Linux server hardening and security configuration scripts designed for governmen
 
 ### SELinux Project
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Security-Enhanced Linux project.
@@ -2014,9 +2014,9 @@ Security-Enhanced Linux project.
 
 ### Semgrep
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 AI-assisted SAST, SCA, secrets detection, and code scanning platform.
@@ -2033,9 +2033,9 @@ AI-assisted SAST, SCA, secrets detection, and code scanning platform.
 
 ### Shuffle Automation
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source SOAR platform for security automation and response workflows.
@@ -2052,9 +2052,9 @@ Open-source SOAR platform for security automation and response workflows.
 
 ### SkillSpector
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Security scanner for AI agent skills, prompts, and tool definitions.
@@ -2071,9 +2071,9 @@ Security scanner for AI agent skills, prompts, and tool definitions.
 
 ### SLSA
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Documentation
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Supply-chain Levels for Software Artifacts: a framework and set of standards for improving software supply chain integrity and provenance.
@@ -2090,9 +2090,9 @@ Supply-chain Levels for Software Artifacts: a framework and set of standards for
 
 ### slsa-verifier
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Verify SLSA provenance and attestations for artifacts, images, and packages.
@@ -2109,9 +2109,9 @@ Verify SLSA provenance and attestations for artifacts, images, and packages.
 
 ### Snort
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source network intrusion detection and prevention system (IDS/IPS).
@@ -2128,9 +2128,9 @@ Open-source network intrusion detection and prevention system (IDS/IPS).
 
 ### Snyk
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Security scanning for code, dependencies, and containers.
@@ -2147,9 +2147,9 @@ Security scanning for code, dependencies, and containers.
 
 ### Socket
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Supply chain security platform focused on malicious and zero-day dependency risks.
@@ -2166,9 +2166,9 @@ Supply chain security platform focused on malicious and zero-day dependency risk
 
 ### SOOS DAST
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Open Core
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 DAST scanning Docker image for dynamic application security testing, runnable in CI/CD pipelines.
@@ -2185,9 +2185,9 @@ DAST scanning Docker image for dynamic application security testing, runnable in
 
 ### Suricata
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 High-performance network IDS, IPS, and threat detection engine.
@@ -2204,9 +2204,9 @@ High-performance network IDS, IPS, and threat detection engine.
 
 ### Syft
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Generate SBOMs for containers and filesystems.
@@ -2223,9 +2223,9 @@ Generate SBOMs for containers and filesystems.
 
 ### SysWarden
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Firewall orchestration platform that applies blocklists, GeoIP, ASN, and security integrations to block malicious traffic.
@@ -2242,9 +2242,9 @@ Firewall orchestration platform that applies blocklists, GeoIP, ASN, and securit
 
 ### Tailscale
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Open Core
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Zero-config VPN for secure networking; OSS client with commercial/SaaS control plane (self-hosting via Headscale available).
@@ -2261,9 +2261,9 @@ Zero-config VPN for secure networking; OSS client with commercial/SaaS control p
 
 ### Tenable One
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Unified exposure management platform.
@@ -2280,9 +2280,9 @@ Unified exposure management platform.
 
 ### testssl.sh
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities.
@@ -2299,9 +2299,9 @@ Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities.
 
 ### Tetragon
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
@@ -2318,9 +2318,9 @@ EBPF-based Kubernetes security observability and runtime enforcement engine (Cil
 
 ### ThreatLocker
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Zero trust endpoint protection platform.
@@ -2337,9 +2337,9 @@ Zero trust endpoint protection platform.
 
 ### Touti-Cracker
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Security testing tool.
@@ -2356,9 +2356,9 @@ Security testing tool.
 
 ### Tracee
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 EBPF-based runtime security and threat detection for Linux systems and containers.
@@ -2375,9 +2375,9 @@ EBPF-based runtime security and threat detection for Linux systems and container
 
 ### Trivy
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Vulnerability scanner for containers and Kubernetes.
@@ -2396,9 +2396,9 @@ Vulnerability scanner for containers and Kubernetes.
 
 ### TruffleHog
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Open Core
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Secret scanning tool; OSS core with enterprise features and integrations.
@@ -2415,9 +2415,9 @@ Secret scanning tool; OSS core with enterprise features and integrations.
 
 ### Valqore
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Automatic safety and security checks for cloud and AI environments.
@@ -2434,9 +2434,9 @@ Automatic safety and security checks for cloud and AI environments.
 
 ### Velociraptor
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Digital forensics and incident response platform for endpoint investigation and threat hunting.
@@ -2453,9 +2453,9 @@ Digital forensics and incident response platform for endpoint investigation and 
 
 ### VirusTotal
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Analyze files, domains, IPs, and URLs with multi-engine scanning and community intelligence.
@@ -2472,9 +2472,9 @@ Analyze files, domains, IPs, and URLs with multi-engine scanning and community i
 
 ### Wazuh
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source XDR and SIEM platform for threat detection and compliance monitoring.
@@ -2491,9 +2491,9 @@ Open-source XDR and SIEM platform for threat detection and compliance monitoring
 
 ### WireGuard
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Oss
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Fast, modern, and secure VPN tunneling protocol.
@@ -2510,9 +2510,9 @@ Fast, modern, and secure VPN tunneling protocol.
 
 ### Wiz
 
-**Categories:** Application and cloud security
-**Roles:** DevSecOps Engineer, Cloud Security Engineer
-**Model:** Unknown
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud security platform.

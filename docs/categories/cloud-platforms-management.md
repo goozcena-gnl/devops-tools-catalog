@@ -7,9 +7,9 @@
 
 ### Amazon Web Services (AWS)
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Commercial
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Commercial<br>
 **Status:** Active
 
 Comprehensive cloud computing platform by Amazon.
@@ -26,9 +26,9 @@ Comprehensive cloud computing platform by Amazon.
 
 ### Apache CloudStack
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Oss
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Open source infrastructure-as-a-service platform for building and managing private and public clouds.
@@ -45,9 +45,9 @@ Open source infrastructure-as-a-service platform for building and managing priva
 
 ### AWS Storage Gateway
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Commercial
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Commercial<br>
 **Status:** Active
 
 Hybrid cloud storage service.
@@ -64,9 +64,9 @@ Hybrid cloud storage service.
 
 ### Civo
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud infrastructure provider focused on Kubernetes.
@@ -83,9 +83,9 @@ Cloud infrastructure provider focused on Kubernetes.
 
 ### CloudFuze
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud file transfer and management.
@@ -102,9 +102,9 @@ Cloud file transfer and management.
 
 ### Cloudify
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Oss
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
@@ -121,9 +121,9 @@ Cloud orchestration framework for automating application and infrastructure life
 
 ### Concierto Cloud
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud management platform.
@@ -140,9 +140,9 @@ Cloud management platform.
 
 ### DigitalOcean
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Developer-friendly cloud infrastructure provider.
@@ -159,9 +159,9 @@ Developer-friendly cloud infrastructure provider.
 
 ### Exoway
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud infrastructure and hosting services.
@@ -178,9 +178,9 @@ Cloud infrastructure and hosting services.
 
 ### Google Cloud Platform
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud services by Google.
@@ -197,9 +197,9 @@ Cloud services by Google.
 
 ### Heroku
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud platform as a service for app deployment.
@@ -216,9 +216,9 @@ Cloud platform as a service for app deployment.
 
 ### IBM Cloud
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Enterprise cloud services and infrastructure by IBM.
@@ -235,9 +235,9 @@ Enterprise cloud services and infrastructure by IBM.
 
 ### Linode
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud hosting and compute services.
@@ -254,9 +254,9 @@ Cloud hosting and compute services.
 
 ### Microsoft Azure
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud computing services by Microsoft.
@@ -273,9 +273,9 @@ Cloud computing services by Microsoft.
 
 ### Morpheus Data
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Hybrid cloud management platform.
@@ -292,9 +292,9 @@ Hybrid cloud management platform.
 
 ### Oracle Cloud Infrastructure (OCI)
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud services by Oracle.
@@ -311,9 +311,9 @@ Cloud services by Oracle.
 
 ### Scaleway
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 European cloud provider offering compute/storage services.
@@ -330,9 +330,9 @@ European cloud provider offering compute/storage services.
 
 ### Virtana
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Hybrid cloud management.
@@ -349,9 +349,9 @@ Hybrid cloud management.
 
 ### Vultr
 
-**Categories:** Cloud platforms and cloud management
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
-**Model:** Unknown
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 High-performance cloud compute and infrastructure provider.

@@ -7,9 +7,9 @@
 
 ### Amazon CloudWatch
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 AWS monitoring and observability service.
@@ -26,9 +26,9 @@ AWS monitoring and observability service.
 
 ### Apache SkyWalking
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 APM platform for distributed tracing, metrics, and service topology.
@@ -45,9 +45,9 @@ APM platform for distributed tracing, metrics, and service topology.
 
 ### AppNeta
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Network performance monitoring.
@@ -64,9 +64,9 @@ Network performance monitoring.
 
 ### Ask O11y plugin for Grafana
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Grafana plugin that provides natural-language observability exploration.
@@ -83,9 +83,9 @@ Grafana plugin that provides natural-language observability exploration.
 
 ### Awesome Prometheus
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Documentation
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Curated list of Prometheus resources.
@@ -102,9 +102,9 @@ Curated list of Prometheus resources.
 
 ### Awesome Prometheus Alerts
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Documentation
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Documentation<br>
 **Status:** Active
 
 Curated, copy-pasteable Prometheus alert rules and guidance for common services and platforms.
@@ -121,9 +121,9 @@ Curated, copy-pasteable Prometheus alert rules and guidance for common services 
 
 ### Beszel
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC, backups, and REST API.
@@ -140,9 +140,9 @@ Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC,
 
 ### blackbox_exporter
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Prometheus exporter for probing HTTP, HTTPS, DNS, TCP, ICMP, and gRPC endpoints.
@@ -159,9 +159,9 @@ Prometheus exporter for probing HTTP, HTTPS, DNS, TCP, ICMP, and gRPC endpoints.
 
 ### Cacti
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Network graphing solution (RRDTool-based).
@@ -178,9 +178,9 @@ Network graphing solution (RRDTool-based).
 
 ### cAdvisor
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Container Advisor daemon that collects, aggregates, and exports container resource usage and performance data.
@@ -197,9 +197,9 @@ Container Advisor daemon that collects, aggregates, and exports container resour
 
 ### cardamon
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop rules for them.
@@ -216,9 +216,9 @@ Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop
 
 ### Centreon
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Monitoring platform with open source base and enterprise/cloud offerings.
@@ -235,9 +235,9 @@ Monitoring platform with open source base and enterprise/cloud offerings.
 
 ### checkmk
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 IT monitoring platform with open source Raw Edition and paid enterprise editions.
@@ -254,9 +254,9 @@ IT monitoring platform with open source Raw Edition and paid enterprise editions
 
 ### ClickHouse
 
-**Categories:** Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Active
 
 Columnar database commonly used as an observability backend.
@@ -275,9 +275,9 @@ Columnar database commonly used as an observability backend.
 
 ### Coroot
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
@@ -294,9 +294,9 @@ Open source APM/observability platform (metrics/logs/traces/profiling) with RCA 
 
 ### Cortex
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus and OpenTelemetry metrics (CNCF Incubating).
@@ -313,9 +313,9 @@ Horizontally scalable, highly available, multi-tenant, long-term storage for Pro
 
 ### Datadog
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Full-stack cloud monitoring, log management, and APM.
@@ -332,9 +332,9 @@ Full-stack cloud monitoring, log management, and APM.
 
 ### Dozzle
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes support.
@@ -351,9 +351,9 @@ Self-hosted real-time Docker and container log viewer with alerting, remote host
 
 ### Dynatrace
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Application performance monitoring and observability platform.
@@ -370,9 +370,9 @@ Application performance monitoring and observability platform.
 
 ### Elastic APM Server
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Source Available
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
 APM intake/processing for Elastic Observability (agents + server + UI).
@@ -389,9 +389,9 @@ APM intake/processing for Elastic Observability (agents + server + UI).
 
 ### Elastic Stack (ELK)
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Source Available
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
 Search/analytics/log platform; source licensing varies by component (Elastic License/SSPL and AGPL option for parts).
@@ -408,9 +408,9 @@ Search/analytics/log platform; source licensing varies by component (Elastic Lic
 
 ### Fluent Bit
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Fast and lightweight log processor.
@@ -427,9 +427,9 @@ Fast and lightweight log processor.
 
 ### Fluentd
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Unified logging layer.
@@ -446,9 +446,9 @@ Unified logging layer.
 
 ### Gatus
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Developer-oriented health dashboard and status page for monitoring endpoints and services.
@@ -465,9 +465,9 @@ Developer-oriented health dashboard and status page for monitoring endpoints and
 
 ### Goldilocks
 
-**Categories:** Kubernetes distributions and operations, Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Kubernetes distributions and operations, Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
@@ -484,9 +484,9 @@ Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 
 ### Gonzo
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.
@@ -503,9 +503,9 @@ K9s-inspired log analysis TUI with live log exploration and AI-assisted insights
 
 ### Grafana
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Visualization and analytics for metrics.
@@ -522,9 +522,9 @@ Visualization and analytics for metrics.
 
 ### Grafana Alloy Deploy
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Documentation
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).
@@ -541,9 +541,9 @@ Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/tra
 
 ### Grafana Beyla
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 EBPF-based auto-instrumentation for distributed tracing/metrics with minimal code changes.
@@ -560,9 +560,9 @@ EBPF-based auto-instrumentation for distributed tracing/metrics with minimal cod
 
 ### Grafana Loki
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Log aggregation system designed to work with Grafana; label-based indexing.
@@ -579,9 +579,9 @@ Log aggregation system designed to work with Grafana; label-based indexing.
 
 ### Grafana Mimir
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Horizontally scalable, multi-tenant Prometheus-compatible time series database.
@@ -598,9 +598,9 @@ Horizontally scalable, multi-tenant Prometheus-compatible time series database.
 
 ### Grafana Pyroscope
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Continuous profiling (often paired with tracing/APM for root-cause).
@@ -617,9 +617,9 @@ Continuous profiling (often paired with tracing/APM for root-cause).
 
 ### Grafana Tempo
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Distributed tracing backend (compatible with Jaeger/Zipkin/OTLP).
@@ -636,9 +636,9 @@ Distributed tracing backend (compatible with Jaeger/Zipkin/OTLP).
 
 ### grove
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 AI-powered Kubernetes troubleshooting.
@@ -655,9 +655,9 @@ AI-powered Kubernetes troubleshooting.
 
 ### HolmesGPT
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source SRE AI agent for investigating production incidents across Kubernetes, VMs, cloud services, and databases with operator mode for 24/7 background monitoring (CNCF).
@@ -674,9 +674,9 @@ Open-source SRE AI agent for investigating production incidents across Kubernete
 
 ### Honeycomb
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Observability platform built for high-cardinality events, tracing, and AI-era debugging.
@@ -693,9 +693,9 @@ Observability platform built for high-cardinality events, tracing, and AI-era de
 
 ### HyperDX
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Observability and troubleshooting platform.
@@ -712,9 +712,9 @@ Observability and troubleshooting platform.
 
 ### Icinga
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open source monitoring system derived from Nagios.
@@ -731,9 +731,9 @@ Open source monitoring system derived from Nagios.
 
 ### InfluxData
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Time series platform with OSS components and commercial cloud/enterprise offerings.
@@ -750,9 +750,9 @@ Time series platform with OSS components and commercial cloud/enterprise offerin
 
 ### Jaeger
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open source distributed tracing platform.
@@ -769,9 +769,9 @@ Open source distributed tracing platform.
 
 ### Komodor
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Kubernetes troubleshooting and monitoring.
@@ -788,9 +788,9 @@ Kubernetes troubleshooting and monitoring.
 
 ### KRR
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes Resource Recommendations by Robusta.
@@ -807,9 +807,9 @@ Kubernetes Resource Recommendations by Robusta.
 
 ### Kube State Metrics
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Exposes Kubernetes cluster state as metrics.
@@ -826,9 +826,9 @@ Exposes Kubernetes cluster state as metrics.
 
 ### kube-binpacking-exporter
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Exports precomputed Kubernetes cluster binpacking metrics.
@@ -845,9 +845,9 @@ Exports precomputed Kubernetes cluster binpacking metrics.
 
 ### Kubernetes Monitoring Mixins
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Documentation
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Monitoring dashboards and alerts for Kubernetes.
@@ -864,9 +864,9 @@ Monitoring dashboards and alerts for Kubernetes.
 
 ### Kubewatch
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes event watcher and notifier.
@@ -883,9 +883,9 @@ Kubernetes event watcher and notifier.
 
 ### Kwatcher
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes event watcher.
@@ -902,9 +902,9 @@ Kubernetes event watcher.
 
 ### Linnix
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 EBPF and PSI-based observability for pinpointing processes and pods causing Linux stalls and incidents.
@@ -921,9 +921,9 @@ EBPF and PSI-based observability for pinpointing processes and pods causing Linu
 
 ### Logstash
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Source Available
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
 Log ingestion/processing pipeline (Elastic ecosystem).
@@ -940,9 +940,9 @@ Log ingestion/processing pipeline (Elastic ecosystem).
 
 ### M/Monit
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Systems monitoring and management (Monit/M/Monit).
@@ -959,9 +959,9 @@ Systems monitoring and management (Monit/M/Monit).
 
 ### Maintenant
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 One-container self-hosted monitoring for Docker and Kubernetes with autodiscovery, uptime checks, metrics, and status pages.
@@ -978,9 +978,9 @@ One-container self-hosted monitoring for Docker and Kubernetes with autodiscover
 
 ### Munin
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Classic monitoring and graphing tool.
@@ -997,9 +997,9 @@ Classic monitoring and graphing tool.
 
 ### Nagios
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Infrastructure monitoring (Nagios Core).
@@ -1016,9 +1016,9 @@ Infrastructure monitoring (Nagios Core).
 
 ### Netdata Cloud
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 SaaS control plane for Netdata (Netdata Agent is open-source; Cloud adds centralized management/collaboration).
@@ -1035,9 +1035,9 @@ SaaS control plane for Netdata (Netdata Agent is open-source; Cloud adds central
 
 ### New Relic
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Full-stack observability platform.
@@ -1054,9 +1054,9 @@ Full-stack observability platform.
 
 ### OpenObserve
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Unified logs/metrics/traces with a focus on log search and cost efficiency.
@@ -1073,9 +1073,9 @@ Unified logs/metrics/traces with a focus on log search and cost efficiency.
 
 ### OpenSearch
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Search/analytics engine commonly used for logs (Elastic-alternative fork).
@@ -1092,9 +1092,9 @@ Search/analytics engine commonly used for logs (Elastic-alternative fork).
 
 ### OpenTelemetry
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Observability framework for traces/metrics/logs.
@@ -1111,9 +1111,9 @@ Observability framework for traces/metrics/logs.
 
 ### OpenTelemetry Collector
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Vendor-neutral collector to receive/process/export traces (and also logs/metrics) to backends.
@@ -1130,9 +1130,9 @@ Vendor-neutral collector to receive/process/export traces (and also logs/metrics
 
 ### OpenTelemetry eBPF Instrumentation
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Documentation
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Zero-code eBPF-based instrumentation for collecting OpenTelemetry telemetry.
@@ -1149,9 +1149,9 @@ Zero-code eBPF-based instrumentation for collecting OpenTelemetry telemetry.
 
 ### otel-gui
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls, service maps, and correlated logs.
@@ -1168,9 +1168,9 @@ Lightweight, zero-config OpenTelemetry trace viewer for local development with t
 
 ### Pandora FMS
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Monitoring platform with community and enterprise editions.
@@ -1187,9 +1187,9 @@ Monitoring platform with community and enterprise editions.
 
 ### Prometheus
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Monitoring and alerting toolkit.
@@ -1206,9 +1206,9 @@ Monitoring and alerting toolkit.
 
 ### Quickwit
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Distributed log search/indexing built around fast ingestion and cost control.
@@ -1225,9 +1225,9 @@ Distributed log search/indexing built around fast ingestion and cost control.
 
 ### Robusta
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Kubernetes observability and automation.
@@ -1244,9 +1244,9 @@ Kubernetes observability and automation.
 
 ### rsyslog
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 High-performance syslog daemon with flexible routing (often used as a log edge forwarder).
@@ -1263,9 +1263,9 @@ High-performance syslog daemon with flexible routing (often used as a log edge f
 
 ### Sematext
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Full-stack observability platform covering logs, metrics, tracing, real user monitoring, and synthetic monitoring.
@@ -1282,9 +1282,9 @@ Full-stack observability platform covering logs, metrics, tracing, real user mon
 
 ### Sensu
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Observability pipeline (metrics/events/alerts).
@@ -1301,9 +1301,9 @@ Observability pipeline (metrics/events/alerts).
 
 ### Sentry
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Error monitoring with performance/tracing features (popular for app-level APM signals).
@@ -1320,9 +1320,9 @@ Error monitoring with performance/tracing features (popular for app-level APM si
 
 ### SigNoz
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Open-source observability platform.
@@ -1339,9 +1339,9 @@ Open-source observability platform.
 
 ### Site24x7
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Full-stack monitoring platform.
@@ -1358,9 +1358,9 @@ Full-stack monitoring platform.
 
 ### syslog-ng
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Syslog daemon/log collector with parsing and multiple destinations.
@@ -1377,9 +1377,9 @@ Syslog daemon/log collector with parsing and multiple destinations.
 
 ### Telegraf
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Plugin-driven server agent for collecting and reporting metrics (part of InfluxData ecosystem).
@@ -1396,9 +1396,9 @@ Plugin-driven server agent for collecting and reporting metrics (part of InfluxD
 
 ### Thanos
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Highly available Prometheus setup with long-term storage.
@@ -1415,9 +1415,9 @@ Highly available Prometheus setup with long-term storage.
 
 ### Tracetest
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Trace-based testing for distributed systems.
@@ -1434,9 +1434,9 @@ Trace-based testing for distributed systems.
 
 ### Uptime Kuma
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Self-hosted uptime monitoring.
@@ -1453,9 +1453,9 @@ Self-hosted uptime monitoring.
 
 ### UptimeRobot
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Uptime monitoring service.
@@ -1472,9 +1472,9 @@ Uptime monitoring service.
 
 ### Vector
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 High-performance observability data pipeline (logs/metrics/traces) as an alternative to Fluent Bit/Fluentd.
@@ -1491,9 +1491,9 @@ High-performance observability data pipeline (logs/metrics/traces) as an alterna
 
 ### VictoriaMetrics
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Time series database; OSS core with enterprise offerings.
@@ -1510,9 +1510,9 @@ Time series database; OSS core with enterprise offerings.
 
 ### Zabbix
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Enterprise-grade monitoring platform (metrics, triggers, dashboards).
@@ -1529,9 +1529,9 @@ Enterprise-grade monitoring platform (metrics, triggers, dashboards).
 
 ### Zipkin
 
-**Categories:** Monitoring, metrics, logs and tracing
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Distributed tracing system.

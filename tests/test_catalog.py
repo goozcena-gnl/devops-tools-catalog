@@ -72,9 +72,10 @@ def test_cai_remains_under_review_for_license_boundary() -> None:
 
 
 def test_commercial_cloud_services_can_be_active() -> None:
-    aws = next(tool for tool in load_tools() if tool["id"] == "amazon-web-services-aws")
+    tools = load_tools()
+    aws = next(tool for tool in tools if tool["id"] == "amazon-web-services-aws")
     storage_gateway = next(
-        tool for tool in load_tools() if tool["id"] == "aws-storage-gateway"
+        tool for tool in tools if tool["id"] == "aws-storage-gateway"
     )
     assert aws["license_model"] == "commercial"
     assert storage_gateway["license_model"] == "commercial"

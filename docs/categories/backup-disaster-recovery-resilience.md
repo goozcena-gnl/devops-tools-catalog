@@ -7,9 +7,9 @@
 
 ### BorgBackup
 
-**Categories:** Backup, disaster recovery and resilience
-**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Backup, disaster recovery and resilience<br>
+**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Deduplicating backup program (often used for cluster/VM backups).
@@ -26,9 +26,9 @@ Deduplicating backup program (often used for cluster/VM backups).
 
 ### CloudCasa
 
-**Categories:** Backup, disaster recovery and resilience
-**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer
-**Model:** Unknown
+**Categories:** Backup, disaster recovery and resilience<br>
+**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Kubernetes backup and disaster recovery.
@@ -45,9 +45,9 @@ Kubernetes backup and disaster recovery.
 
 ### Kasten K10
 
-**Categories:** Backup, disaster recovery and resilience
-**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer
-**Model:** Unknown
+**Categories:** Backup, disaster recovery and resilience<br>
+**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Kubernetes backup and DR platform.
@@ -64,9 +64,9 @@ Kubernetes backup and DR platform.
 
 ### kube-dump
 
-**Categories:** Backup, disaster recovery and resilience
-**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Backup, disaster recovery and resilience<br>
+**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Backup tool for Kubernetes cluster resources.
@@ -83,9 +83,9 @@ Backup tool for Kubernetes cluster resources.
 
 ### Stash
 
-**Categories:** Backup, disaster recovery and resilience
-**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Backup, disaster recovery and resilience<br>
+**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Backup operator for Kubernetes.
@@ -102,9 +102,9 @@ Backup operator for Kubernetes.
 
 ### Trilio
 
-**Categories:** Backup, disaster recovery and resilience
-**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer
-**Model:** Unknown
+**Categories:** Backup, disaster recovery and resilience<br>
+**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Kubernetes backup and recovery platform.
@@ -121,9 +121,9 @@ Kubernetes backup and recovery platform.
 
 ### Velero
 
-**Categories:** Backup, disaster recovery and resilience
-**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Backup, disaster recovery and resilience<br>
+**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes cluster backup and restore.
@@ -140,9 +140,9 @@ Kubernetes cluster backup and restore.
 
 ### VolSync
 
-**Categories:** Backup, disaster recovery and resilience
-**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Backup, disaster recovery and resilience<br>
+**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Kubernetes volume data replication.

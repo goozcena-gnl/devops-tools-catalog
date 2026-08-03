@@ -7,9 +7,9 @@
 
 ### Artifact Hub
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Oss
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Discover and share packages (Helm charts, operators, etc.).
@@ -26,9 +26,9 @@ Discover and share packages (Helm charts, operators, etc.).
 
 ### Cloudsmith
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Managed package and artifact repository service.
@@ -45,9 +45,9 @@ Managed package and artifact repository service.
 
 ### Docker Hardened Images
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Curated hardened container images catalog.
@@ -64,9 +64,9 @@ Curated hardened container images catalog.
 
 ### Docker Hub
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud-based registry for Docker images.
@@ -83,9 +83,9 @@ Cloud-based registry for Docker images.
 
 ### Google Artifact Registry
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Google Cloud's unified repository for container images and language packages.
@@ -102,9 +102,9 @@ Google Cloud's unified repository for container images and language packages.
 
 ### Harbor
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Oss
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Cloud-native registry for storing, signing, and scanning container images.
@@ -121,9 +121,9 @@ Cloud-native registry for storing, signing, and scanning container images.
 
 ### JFrog Artifactory
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Open Core
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Universal artifact repository manager.
@@ -140,9 +140,9 @@ Universal artifact repository manager.
 
 ### JFrog Connect
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 IoT device update and management platform.
@@ -159,9 +159,9 @@ IoT device update and management platform.
 
 ### JFrog Distribution
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Release distribution for artifacts/binaries.
@@ -178,9 +178,9 @@ Release distribution for artifacts/binaries.
 
 ### JFrog Pipelines
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 CI/CD automation integrated with JFrog platform.
@@ -197,9 +197,9 @@ CI/CD automation integrated with JFrog platform.
 
 ### JFrog Platform
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Unified DevSecOps platform for artifact management, security, CI/CD, and distribution.
@@ -216,9 +216,9 @@ Unified DevSecOps platform for artifact management, security, CI/CD, and distrib
 
 ### Kubesearch
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Search engine for Helm charts and Kubernetes packages.
@@ -235,9 +235,9 @@ Search engine for Helm charts and Kubernetes packages.
 
 ### Nexus Repository
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Open Core
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Universal artifact repository manager.
@@ -254,9 +254,9 @@ Universal artifact repository manager.
 
 ### ORAS
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Oss
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 OCI registry client/library (store artifacts in registries).
@@ -273,9 +273,9 @@ OCI registry client/library (store artifacts in registries).
 
 ### ProGet
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Unknown
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Universal package manager for DevOps and CI/CD.
@@ -292,9 +292,9 @@ Universal package manager for DevOps and CI/CD.
 
 ### Quay
 
-**Categories:** Artifact and package management
-**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer
-**Model:** Open Core
+**Categories:** Artifact and package management<br>
+**Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Container registry for building, storing, and distributing images.

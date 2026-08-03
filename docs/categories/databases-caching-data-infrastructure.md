@@ -7,9 +7,9 @@
 
 ### Apache Kafka
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Distributed event streaming platform.
@@ -26,9 +26,9 @@ Distributed event streaming platform.
 
 ### bbolt
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Embedded key/value store for Go applications.
@@ -45,9 +45,9 @@ Embedded key/value store for Go applications.
 
 ### ClickHouse
 
-**Categories:** Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Active
 
 Columnar database commonly used as an observability backend.
@@ -66,9 +66,9 @@ Columnar database commonly used as an observability backend.
 
 ### etcd
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Distributed, reliable key-value store used as the primary data store for Kubernetes.
@@ -85,9 +85,9 @@ Distributed, reliable key-value store used as the primary data store for Kuberne
 
 ### Garage
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Lightweight S3-compatible object storage.
@@ -104,9 +104,9 @@ Lightweight S3-compatible object storage.
 
 ### Garage WebUI
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Unknown
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Web interface for Garage object storage.
@@ -123,9 +123,9 @@ Web interface for Garage object storage.
 
 ### JuiceFS
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Open Core
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Distributed POSIX file system with community edition and enterprise/cloud offerings.
@@ -142,9 +142,9 @@ Distributed POSIX file system with community edition and enterprise/cloud offeri
 
 ### Meilisearch
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Fast, typo-tolerant search and AI retrieval engine.
@@ -161,9 +161,9 @@ Fast, typo-tolerant search and AI retrieval engine.
 
 ### Memcached
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 High-performance, distributed memory object caching system.
@@ -180,10 +180,10 @@ High-performance, distributed memory object caching system.
 
 ### MinIO
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Open Core
-**Status:** Needs Review
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Open Core<br>
+**Status:** Needs Review<br>
 **Repository:** Archived
 
 High-performance object storage.
@@ -200,9 +200,9 @@ High-performance object storage.
 
 ### MongoDB
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Unknown
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Modern document database and developer data platform.
@@ -219,9 +219,9 @@ Modern document database and developer data platform.
 
 ### RabbitMQ
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Open-source message broker and streaming platform for reliable asynchronous communication.
@@ -238,9 +238,9 @@ Open-source message broker and streaming platform for reliable asynchronous comm
 
 ### Redis
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Source Available
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
 In-memory data structure store, used as a database, cache, and message broker. **Licensing varies by version:** Redis ≤7.2 uses BSD (OSS); Redis CE 7.4–7.8 uses RSAL/SSPL (source-available); Redis 8+ uses tri-license (AGPL option available).
@@ -257,9 +257,9 @@ In-memory data structure store, used as a database, cache, and message broker. *
 
 ### RustFS
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 S3-compatible object storage system implemented in Rust.
@@ -276,9 +276,9 @@ S3-compatible object storage system implemented in Rust.
 
 ### SeaweedFS
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Distributed storage system for files, objects, and volumes.
@@ -295,9 +295,9 @@ Distributed storage system for files, objects, and volumes.
 
 ### Squid
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Caching proxy for the web (HTTP, HTTPS, FTP, and more).
@@ -314,9 +314,9 @@ Caching proxy for the web (HTTP, HTTPS, FTP, and more).
 
 ### TiKV
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Oss
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Distributed transactional key-value database with horizontal scalability and strong consistency.
@@ -333,9 +333,9 @@ Distributed transactional key-value database with horizontal scalability and str
 
 ### Varnish Cache
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Unknown
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 High-performance HTTP reverse proxy and cache accelerator.
@@ -352,9 +352,9 @@ High-performance HTTP reverse proxy and cache accelerator.
 
 ### Xata
 
-**Categories:** Databases, caching and data infrastructure
-**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer
-**Model:** Unknown
+**Categories:** Databases, caching and data infrastructure<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Managed Postgres platform with branching workflows for databases.

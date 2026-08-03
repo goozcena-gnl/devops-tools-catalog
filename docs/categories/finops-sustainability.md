@@ -7,9 +7,9 @@
 
 ### Azure Orphan Resources
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Oss
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 Open source script and workflow set for detecting and cleaning up orphaned Azure resources.
@@ -26,9 +26,9 @@ Open source script and workflow set for detecting and cleaning up orphaned Azure
 
 ### Cast AI
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Kubernetes automation and cloud optimization platform for rightsizing, autoscaling, cost control, and performance.
@@ -45,9 +45,9 @@ Kubernetes automation and cloud optimization platform for rightsizing, autoscali
 
 ### CloudBolt Cloud Operations
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Commercial
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Commercial<br>
 **Status:** Active
 
 Hybrid and multi-cloud operations platform for governed provisioning, orchestration, and FinOps controls.
@@ -64,9 +64,9 @@ Hybrid and multi-cloud operations platform for governed provisioning, orchestrat
 
 ### CloudHealth
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Multi-cloud FinOps and governance platform for cost reporting, optimization, and policy control.
@@ -83,9 +83,9 @@ Multi-cloud FinOps and governance platform for cost reporting, optimization, and
 
 ### CloudZero
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost intelligence.
@@ -102,9 +102,9 @@ Cloud cost intelligence.
 
 ### Dash0
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost management.
@@ -121,9 +121,9 @@ Cloud cost management.
 
 ### Datadog Cloud Cost Management
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost monitoring.
@@ -140,9 +140,9 @@ Cloud cost monitoring.
 
 ### Finout
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost observability.
@@ -159,9 +159,9 @@ Cloud cost observability.
 
 ### Flexera One
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost management.
@@ -178,9 +178,9 @@ Cloud cost management.
 
 ### IBM Cloudability
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Commercial
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Commercial<br>
 **Status:** Active
 
 Enterprise FinOps and cloud cost management platform for multi-cloud visibility, allocation, and optimization.
@@ -197,9 +197,9 @@ Enterprise FinOps and cloud cost management platform for multi-cloud visibility,
 
 ### IBM Turbonomic Cloud Optimization
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud resource optimization.
@@ -216,9 +216,9 @@ Cloud resource optimization.
 
 ### Kion FinOps
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud governance and cost management.
@@ -235,9 +235,9 @@ Cloud governance and cost management.
 
 ### Kubecost (Apptio)
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Open Core
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Commercial Kubernetes cost monitoring/optimization product built around OpenCost.
@@ -254,9 +254,9 @@ Commercial Kubernetes cost monitoring/optimization product built around OpenCost
 
 ### Kubernetes Capacity Calculator
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Documentation
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Calculator for estimating Kubernetes node counts and cluster capacity from workload requirements.
@@ -273,9 +273,9 @@ Calculator for estimating Kubernetes node counts and cluster capacity from workl
 
 ### Kubex
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 AI-driven Kubernetes and GPU resource optimization platform for pod scaling, node tuning, and capacity efficiency.
@@ -292,9 +292,9 @@ AI-driven Kubernetes and GPU resource optimization platform for pod scaling, nod
 
 ### Learnkube Kubernetes Instance Calculator
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Documentation
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Documentation<br>
 **Status:** Needs Review
 
 Calculator for choosing cost-effective cloud instance sizes for Kubernetes workloads.
@@ -311,9 +311,9 @@ Calculator for choosing cost-effective cloud instance sizes for Kubernetes workl
 
 ### Nutanix Cost Governance
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost governance.
@@ -330,9 +330,9 @@ Cloud cost governance.
 
 ### OpenCost
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Oss
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Oss<br>
 **Status:** Active
 
 CNCF incubating open standard and project for Kubernetes cost monitoring and allocation.
@@ -349,9 +349,9 @@ CNCF incubating open standard and project for Kubernetes cost monitoring and all
 
 ### PointFive
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost optimization.
@@ -368,9 +368,9 @@ Cloud cost optimization.
 
 ### ProsperOps
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud savings automation.
@@ -387,9 +387,9 @@ Cloud savings automation.
 
 ### Spot FinOps
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost optimization.
@@ -406,9 +406,9 @@ Cloud cost optimization.
 
 ### Ternary
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost optimization for Terraform.
@@ -425,9 +425,9 @@ Cloud cost optimization for Terraform.
 
 ### VegaCloud Inform
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost management.
@@ -444,9 +444,9 @@ Cloud cost management.
 
 ### Xosphere
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost optimization platform focused on automating AWS Spot and EC2 savings.
@@ -463,9 +463,9 @@ Cloud cost optimization platform focused on automating AWS Spot and EC2 savings.
 
 ### Yotascale
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost management.
@@ -482,9 +482,9 @@ Cloud cost management.
 
 ### Zesty
 
-**Categories:** FinOps and sustainability
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer
-**Model:** Unknown
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Cloud cost optimization.

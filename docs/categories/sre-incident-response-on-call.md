@@ -7,9 +7,9 @@
 
 ### Combodo (iTop)
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 ITSM/CMDB platform; Combodo-backed iTop ecosystem with commercial extensions and support.
@@ -26,9 +26,9 @@ ITSM/CMDB platform; Combodo-backed iTop ecosystem with commercial extensions and
 
 ### dnsglobe
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Terminal UI for tracking global DNS propagation across public resolvers.
@@ -45,9 +45,9 @@ Terminal UI for tracking global DNS propagation across public resolvers.
 
 ### flow
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Terminal tool for visualizing live network traffic and behavior.
@@ -64,9 +64,9 @@ Terminal tool for visualizing live network traffic and behavior.
 
 ### GoAlert
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 On-call alert and escalation management.
@@ -83,10 +83,10 @@ On-call alert and escalation management.
 
 ### Grafana OnCall
 
-**Categories:** Deprecated and historical tools, SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
-**Status:** Archived
+**Categories:** Deprecated and historical tools, SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
 Incident response and on-call management (OSS core with SaaS offering).
@@ -103,9 +103,9 @@ Incident response and on-call management (OSS core with SaaS offering).
 
 ### ManageEngine IT Operations Management
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Comprehensive IT operations management platform.
@@ -122,9 +122,9 @@ Comprehensive IT operations management platform.
 
 ### ManageEngine NetFlow Analyzer
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Network traffic monitoring and analysis.
@@ -141,9 +141,9 @@ Network traffic monitoring and analysis.
 
 ### Moogsoft
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 AI-powered incident management and observability platform.
@@ -160,9 +160,9 @@ AI-powered incident management and observability platform.
 
 ### NetWatch Labs
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Collection of terminal-first network and system diagnostics tools for Linux operators.
@@ -179,9 +179,9 @@ Collection of terminal-first network and system diagnostics tools for Linux oper
 
 ### ntfy
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Simple pub-sub notifications (self-hostable).
@@ -198,9 +198,9 @@ Simple pub-sub notifications (self-hostable).
 
 ### PagerDuty
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Digital operations management and incident response.
@@ -217,9 +217,9 @@ Digital operations management and incident response.
 
 ### PatchMon
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Patch management and monitoring platform.
@@ -236,9 +236,9 @@ Patch management and monitoring platform.
 
 ### Pulse Relay
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Unknown
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Incident/alert relay environment.
@@ -255,9 +255,9 @@ Incident/alert relay environment.
 
 ### RustNet
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Cross-platform network monitoring TUI with packet inspection, process attribution, filtering, and connection analytics.
@@ -274,9 +274,9 @@ Cross-platform network monitoring TUI with packet inspection, process attributio
 
 ### Server Pulse
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Linux server diagnostics and monitoring TUI covering system health, Docker containers, logs, networking, and security checks.
@@ -293,9 +293,9 @@ Linux server diagnostics and monitoring TUI covering system health, Docker conta
 
 ### Wireshark
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Oss
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
 Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
@@ -312,9 +312,9 @@ Leading network protocol analyzer for capturing and inspecting traffic across hu
 
 ### Zenduty
 
-**Categories:** SRE, incident response and on-call
-**Roles:** Site Reliability Engineer, Observability Engineer
-**Model:** Open Core
+**Categories:** SRE, incident response and on-call<br>
+**Roles:** Site Reliability Engineer, Observability Engineer<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
 Incident management and on-call platform with developer-friendly APIs.
