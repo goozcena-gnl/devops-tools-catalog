@@ -1,0 +1,3519 @@
+- id: aikido
+  name: Aikido
+  summary: Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud
+    posture scanning.
+  official_url: https://www.aikido.dev
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L839
+  needs_review: true
+- id: apiiro
+  name: Apiiro
+  summary: Application security platform focused on securing agentic development and software delivery.
+  official_url: https://apiiro.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L840
+  needs_review: true
+- id: arnica
+  name: Arnica
+  summary: Application security platform covering SAST, SCA, IaC, and secrets scanning.
+  official_url: https://www.arnica.io
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L841
+  needs_review: true
+- id: arsenal
+  name: Arsenal
+  summary: Security tools knowledge base.
+  repository_url: https://github.com/Orange-Cyberdefense/arsenal
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You need a quick cheat-sheet for pentest commands.
+  avoid_when:
+  - You need an automated scanner.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L4
+  - legacy:devopstools_final.md#L835
+  needs_review: true
+- id: autopwn-suite
+  name: autopwn-suite
+  summary: Automated penetration testing framework.
+  official_url: https://kaangultekin.net/projects/autopwn-suite
+  repository_url: https://github.com/kaangultekin/autopwn-suite
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Quick automated recon/vuln scanning in lab environments.
+  avoid_when:
+  - In production or regulated contexts where you need auditable, fine-grained control.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L5
+  - legacy:devopstools_final.md#L836
+  needs_review: true
+- id: awesome-devsecops
+  name: Awesome DevSecOps
+  summary: Curated list of DevSecOps resources.
+  repository_url: https://github.com/devsecops/awesome-devsecops
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - As a starting point for tool discovery.
+  avoid_when:
+  - Treating it as a prescriptive stack.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L6
+  - legacy:devopstools_final.md#L837
+  needs_review: true
+- id: awesome-waf
+  name: Awesome WAF
+  summary: Curated list of Web Application Firewalls.
+  repository_url: https://github.com/0xInfection/Awesome-WAF
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - WAF research and bypass testing knowledge.
+  avoid_when:
+  - Relying on it as your sole WAF evaluation source.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L7
+  - legacy:devopstools_final.md#L838
+  needs_review: true
+- id: aws-service-control-policies
+  name: AWS Service Control Policies
+  summary: AWS organization-level access control.
+  official_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Enforce guardrails across AWS accounts in an organization.
+  avoid_when:
+  - You only have a single account (use IAM policies instead).
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L59
+  - legacy:devopstools_final.md#L927
+  needs_review: true
+- id: azure-policy
+  name: Azure Policy
+  summary: Azure resource governance.
+  official_url: https://learn.microsoft.com/en-us/azure/governance/policy
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Enforce compliance and resource standards across Azure subscriptions.
+  avoid_when:
+  - You're not on Azure or prefer OPA for cross-cloud policy.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L60
+  - legacy:devopstools_final.md#L928
+  needs_review: true
+- id: bridgecrew
+  name: BridgeCrew
+  summary: Commercial DevSecOps platform (now part of Prisma Cloud). Use Checkov for the OSS scanner.
+  official_url: https://bridgecrew.io
+  repository_url: https://github.com/bridgecrewio/checkov
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You want turnkey IaC scanning with policy-as-code.
+  avoid_when:
+  - You already have a mature OPA/Conftest pipeline.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L8
+  - legacy:devopstools_final.md#L842
+  needs_review: true
+- id: burp-suite
+  name: Burp Suite
+  summary: Web vulnerability scanner and testing suite.
+  official_url: https://portswigger.net/burp
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Hands-on DAST and manual web app pentesting.
+  avoid_when:
+  - You only need CI/CD-integrated automated scanning (use ZAP or Nuclei).
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L10
+  - legacy:devopstools_final.md#L844
+  needs_review: true
+- id: cai-robotsec
+  name: CAI (RobotSec)
+  summary: Cybersecurity assessment for robotics.
+  official_url: https://aliasrobotics.github.io/cai
+  repository_url: https://github.com/aliasrobotics/RIS
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Assessing ROS/robotics systems.
+  avoid_when:
+  - For general web or cloud workloads.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L11
+  - legacy:devopstools_final.md#L845
+  needs_review: true
+- id: calico-cloud
+  name: Calico Cloud
+  summary: Managed SaaS platform built on Calico Open Source for networking/security/observability.
+  official_url: https://www.calicocloud.io/home
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You want managed Calico with a dashboard and threat feeds.
+  avoid_when:
+  - Calico Open Source already meets your needs.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L61
+  - legacy:devopstools_final.md#L929
+  needs_review: true
+- id: cato-networks
+  name: Cato Networks
+  summary: SASE (Secure Access Service Edge) platform.
+  official_url: https://www.catonetworks.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Converged SD-WAN + security in distributed enterprises.
+  avoid_when:
+  - You need piecemeal best-of-breed tools or have simple networking needs.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L78
+  - legacy:devopstools_final.md#L951
+  needs_review: true
+- id: cedar-policy
+  name: Cedar Policy
+  summary: Policy language and authorization engine (Cedar) for fine-grained access control.
+  official_url: https://www.cedarpolicy.com/en
+  repository_url: https://github.com/cedar-policy/cedar
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Application-level authorization with a formally verified engine.
+  avoid_when:
+  - You need infrastructure/K8s admission control (use OPA/Rego).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L63
+  - legacy:devopstools_final.md#L931
+  needs_review: true
+- id: chain-bench
+  name: Chain Bench
+  summary: Supply chain security auditing tool.
+  repository_url: https://github.com/aquasecurity/chain-bench
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Audit your CI/CD pipeline against CIS Software Supply Chain benchmarks.
+  avoid_when:
+  - You only need image vulnerability scanning (use Trivy/Grype).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L12
+  - legacy:devopstools_final.md#L846
+  needs_review: true
+- id: chainguard
+  name: Chainguard
+  summary: Secure container images and supply chain security platform.
+  official_url: https://www.chainguard.dev
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You want minimal, CVE-free base images out of the box.
+  avoid_when:
+  - You need full control over your base image build process.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L13
+  - legacy:devopstools_final.md#L847
+  needs_review: true
+- id: checkmarx
+  name: Checkmarx
+  summary: Application security testing platform.
+  official_url: https://checkmarx.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Enterprise-grade SAST/SCA with compliance reporting.
+  avoid_when:
+  - For small teams where OSS alternatives (CodeQL, Semgrep) suffice.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L14
+  - legacy:devopstools_final.md#L848
+  needs_review: true
+- id: cisco-talos-intelligence
+  name: Cisco Talos Intelligence
+  summary: Threat intelligence platform providing IP/domain reputation, vulnerability research, malware
+    analysis, and security advisories by Cisco.
+  official_url: https://www.talosintelligence.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L849
+  needs_review: true
+- id: codeql
+  name: CodeQL
+  summary: Semantic code analysis for vulnerabilities.
+  official_url: https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql
+  repository_url: https://github.com/github/codeql
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Deep semantic SAST on GitHub-hosted repos.
+  avoid_when:
+  - Your codebase language isn't supported or you need near-instant scan times.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L15
+  - legacy:devopstools_final.md#L850
+  needs_review: true
+- id: codiga
+  name: Codiga
+  summary: Automated code analysis and security.
+  official_url: https://github.com/codiga
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Real-time code review with IDE integration.
+  avoid_when:
+  - You need a full SAST platform with compliance dashboards.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L16
+  - legacy:devopstools_final.md#L851
+  needs_review: true
+- id: conftest
+  name: Conftest
+  summary: Test configuration files using OPA/Rego.
+  official_url: https://www.conftest.dev
+  repository_url: https://github.com/open-policy-agent/conftest
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Shift-left policy checks for Terraform/K8s/Docker configs in CI.
+  avoid_when:
+  - You're not comfortable writing Rego policies.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L65
+  - legacy:devopstools_final.md#L933
+  needs_review: true
+- id: copy-fail-destroyer
+  name: copy-fail-destroyer
+  summary: Kubernetes DaemonSet that detects and remediates Linux kernel page-cache write vulnerabilities
+    (Copy Fail / Dirty Frag) and exposes Prometheus metrics.
+  repository_url: https://github.com/NorskHelsenett/copy-fail-destroyer
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L934
+  needs_review: true
+- id: coraza
+  name: Coraza
+  summary: ModSecurity-compatible WAF library.
+  official_url: https://coraza.io
+  repository_url: https://github.com/corazawaf/coraza
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You want a Go-native, embeddable WAF with ModSecurity rule compatibility.
+  avoid_when:
+  - You need a turnkey appliance with a management UI.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L17
+  - legacy:devopstools_final.md#L852
+  needs_review: true
+- id: crowdsec
+  name: CrowdSec
+  summary: Collaborative intrusion prevention/behavior detection engine.
+  official_url: https://www.crowdsec.net
+  repository_url: https://github.com/crowdsecurity/crowdsec
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Crowd-sourced IP reputation and behavior-based ban lists.
+  avoid_when:
+  - You need deep protocol inspection (use a full IDS like Suricata).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L66
+  - legacy:devopstools_final.md#L935
+  needs_review: true
+- id: cvemap
+  name: CVEMap
+  summary: CVE mapping and analysis tool.
+  repository_url: https://github.com/projectdiscovery/cvemap
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - CLI-based CVE lookup/filtering during triage.
+  avoid_when:
+  - You need a full vulnerability management lifecycle tool.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L18
+  - legacy:devopstools_final.md#L853
+  needs_review: true
+- id: cyclonedx
+  name: CycloneDX
+  summary: Open standard for SBOMs and related software supply chain BOM formats, including support for
+    VEX and AI/ML metadata.
+  official_url: https://cyclonedx.org
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L854
+  needs_review: true
+- id: cyclonus
+  name: Cyclonus
+  summary: Kubernetes network policy testing tool.
+  repository_url: https://github.com/mattfenwick/cyclonus
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Verify and debug Kubernetes NetworkPolicy behavior.
+  avoid_when:
+  - You're not actively managing network policies.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L19
+  - legacy:devopstools_final.md#L855
+  needs_review: true
+- id: dependencycheck
+  name: DependencyCheck
+  summary: Identify vulnerable dependencies.
+  official_url: https://owasp.org/www-project-dependency-check
+  repository_url: https://github.com/dependency-check/DependencyCheck
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - SCA in Java/Maven/.NET projects.
+  avoid_when:
+  - For container image scanning (use Trivy/Grype) or if false positives from CPE matching are too noisy.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L20
+  - legacy:devopstools_final.md#L856
+  needs_review: true
+- id: detect-secrets
+  name: detect-secrets
+  summary: Secrets detection with baseline support (reduce false positives).
+  repository_url: https://github.com/Yelp/detect-secrets
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - As a pre-commit hook to prevent secret leaks with manageable false-positive rates.
+  avoid_when:
+  - You need historical repo scanning (use TruffleHog/Gitleaks).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L21
+  - legacy:devopstools_final.md#L857
+  needs_review: true
+- id: digicert
+  name: DigiCert
+  summary: Digital certificates and SSL solutions.
+  official_url: https://github.com/digicert
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You need EV/OV certificates with enterprise PKI management.
+  avoid_when:
+  - For internal or dev certs (use Let's Encrypt or mkcert).
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L67
+  - legacy:devopstools_final.md#L936
+  needs_review: true
+- id: docker-socket-proxy
+  name: docker-socket-proxy
+  summary: Proxy that restricts access to the Docker socket API.
+  repository_url: https://github.com/Tecnativa/docker-socket-proxy
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L938
+  needs_review: true
+- id: dockle
+  name: Dockle
+  summary: Container image linter for security best practices.
+  official_url: https://containers.goodwith.tech
+  repository_url: https://github.com/goodwithtech/dockle
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Enforce Dockerfile/image best practices in CI.
+  avoid_when:
+  - You already run Trivy which covers many of the same checks.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L22
+  - legacy:devopstools_final.md#L858
+  needs_review: true
+- id: drata
+  name: Drata
+  summary: Security and compliance automation platform.
+  official_url: https://drata.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - SOC 2/ISO 27001 compliance automation with continuous monitoring.
+  avoid_when:
+  - You just need a vulnerability scanner.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L23
+  - legacy:devopstools_final.md#L859
+  needs_review: true
+- id: duo-security
+  name: Duo Security
+  summary: Multi-factor authentication and access security.
+  official_url: https://duo.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Turnkey MFA integration across VPN/SSH/web apps.
+  avoid_when:
+  - You already have MFA via your IdP (Okta, Azure AD, etc.).
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L68
+  - legacy:devopstools_final.md#L937
+  needs_review: true
+- id: f5-waf-for-nginx
+  name: F5 WAF for NGINX
+  summary: Commercial WAF for NGINX.
+  official_url: https://www.f5.com/products/nginx/f5-waf-for-nginx
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You need vendor-supported, enterprise-grade WAF with F5 threat intelligence.
+  avoid_when:
+  - Budget is limited (consider ModSecurity/Coraza).
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L24
+  - legacy:devopstools_final.md#L860
+  needs_review: true
+- id: fail2ban
+  name: fail2ban
+  summary: Intrusion prevention by monitoring logs and banning abusive IPs (e.g., SSH).
+  repository_url: https://github.com/fail2ban/fail2ban
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Simple, log-based brute-force protection on SSH/web servers.
+  avoid_when:
+  - In ephemeral/container environments or if you need crowd-sourced threat intel (use CrowdSec).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L79
+  - legacy:devopstools_final.md#L952
+  needs_review: true
+- id: filigran
+  name: Filigran
+  summary: Open threat intelligence and incident response platform (OpenCTI / OpenBAS) for collecting,
+    analyzing, and acting on cyber threat intelligence.
+  official_url: https://filigran.io
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L862
+  needs_review: true
+- id: firewalld
+  name: firewalld
+  summary: Dynamically managed firewall for Linux with D-Bus interface.
+  official_url: https://firewalld.org
+  repository_url: https://github.com/firewalld/firewalld
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Dynamic, zone-based host firewall management on RHEL/Fedora.
+  avoid_when:
+  - You manage firewall rules declaratively via Ansible/iptables or run in containers.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L69
+  - legacy:devopstools_final.md#L939
+  needs_review: true
+- id: fortify-static-code-analyzer
+  name: Fortify Static Code Analyzer
+  summary: Static application security testing.
+  official_url: https://www.opentext.com/products/static-application-security-testing
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Enterprise SAST with broad language support and compliance reporting.
+  avoid_when:
+  - For small or OSS projects where CodeQL/Semgrep are sufficient.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L26
+  - legacy:devopstools_final.md#L864
+  needs_review: true
+- id: fossa
+  name: FOSSA
+  summary: Software supply chain and license compliance platform.
+  official_url: https://fossa.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L863
+  needs_review: true
+- id: gibson
+  name: Gibson
+  summary: Network monitoring and threat-hunting tool that maps processes to connections, flags beaconing,
+    and helps generate firewall rules.
+  repository_url: https://github.com/HackingLZ/gibson
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L953
+  needs_review: true
+- id: gitleaks
+  name: Gitleaks
+  summary: Detect hardcoded secrets in code.
+  official_url: https://gitleaks.io
+  repository_url: https://github.com/gitleaks/gitleaks
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - As a fast, CI-friendly secret scanner for Git history.
+  avoid_when:
+  - You need a managed platform with triage workflows (consider TruffleHog Enterprise or Snyk).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L27
+  - legacy:devopstools_final.md#L865
+  needs_review: true
+- id: google-cloud-organization-policy
+  name: Google Cloud Organization Policy
+  summary: GCP resource governance.
+  official_url: https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Enforce constraints across GCP projects/folders.
+  avoid_when:
+  - You're not on GCP or prefer cross-cloud policy tools like OPA.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L70
+  - legacy:devopstools_final.md#L940
+  needs_review: true
+- id: greenbone-openvas
+  name: Greenbone (OpenVAS)
+  summary: Vulnerability scanning and management framework (formerly OpenVAS).
+  official_url: https://github.com/greenbone
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L866
+  needs_review: true
+- id: grype
+  name: Grype
+  summary: Vulnerability scanner for container images and filesystems.
+  repository_url: https://github.com/anchore/grype
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You want a fast, offline-capable CVE scanner that pairs with Syft SBOMs.
+  avoid_when:
+  - You need a single tool covering IaC + secrets + vulnerabilities (use Trivy).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L28
+  - legacy:devopstools_final.md#L868
+  needs_review: true
+- id: guac
+  name: GUAC
+  summary: Supply chain graph platform for ingesting SBOMs and metadata to map software relationships
+    and provenance.
+  official_url: https://guac.sh
+  repository_url: https://github.com/guacsec/guac
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L867
+  needs_review: true
+- id: guardon
+  name: Guardon
+  summary: Open-source browser extension that brings Kubernetes guardrails and developer-first security
+    checks directly into the browser workflow.
+  repository_url: https://github.com/guardon-dev/guardon
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L869
+  needs_review: true
+- id: hybrid-analysis
+  name: Hybrid Analysis
+  summary: Free malware analysis sandbox service powered by CrowdStrike Falcon Sandbox.
+  official_url: https://www.hybrid-analysis.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L870
+  needs_review: true
+- id: iroh
+  name: Iroh
+  summary: Peer-to-peer networking library for building distributed, hole-punching-capable, end-to-end
+    encrypted connections.
+  official_url: https://www.iroh.computer
+  repository_url: https://github.com/n0-computer/iroh
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L955
+  needs_review: true
+- id: isms-builder
+  name: ISMS Builder
+  summary: Self-hosted information security management system builder for ISO 27001, NIS2, and GDPR compliance.
+  official_url: https://www.isms-builder.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L872
+  needs_review: true
+- id: jarvis-os
+  name: JARVIS OS
+  summary: AI-native operating system and LLM security research platform.
+  official_url: https://jarvisoslinux.org
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L873
+  needs_review: true
+- id: k-guard
+  name: k-guard
+  summary: Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patching, and hardening.
+  repository_url: https://github.com/KamouloxPelvis/k-guard
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L942
+  needs_review: true
+- id: k0rdent
+  name: k0rdent
+  summary: Kubernetes security and compliance scanner.
+  official_url: https://docs.k0rdent.io/latest
+  repository_url: https://github.com/k0rdent/k0rdent
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Kubernetes-native compliance checks.
+  avoid_when:
+  - You need broader cloud security posture beyond K8s.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L29
+  - legacy:devopstools_final.md#L871
+  needs_review: true
+- id: k8s-sidecar-secret-forge
+  name: k8s Sidecar Secret Forge
+  summary: Kubernetes secret management sidecar.
+  repository_url: https://github.com/stegianna/k8s-sidecar-secret-forge
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Dynamic secret injection without modifying app code.
+  avoid_when:
+  - External Secrets or Vault Agent already handle your use case.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L71
+  - legacy:devopstools_final.md#L941
+  needs_review: true
+- id: k8scout
+  name: k8scout
+  summary: Drop-in binary that maps Kubernetes attack paths to cluster-admin escalation, node escape,
+    secret theft, and cloud IAM takeover from within a pod.
+  repository_url: https://github.com/k8scout/k8scout
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L874
+  needs_review: true
+- id: kickthemout
+  name: kickthemout
+  summary: Kick devices off your local network using ARP spoofing (Node.js-based network security testing
+    tool).
+  repository_url: https://github.com/roccomuso/kickthemout
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L956
+  needs_review: true
+- id: kiuwan
+  name: Kiuwan
+  summary: Application security and code quality platform.
+  official_url: https://www.kiuwan.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Combined SAST and code quality in enterprise CI/CD.
+  avoid_when:
+  - You have separate, preferred tools for each concern.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L30
+  - legacy:devopstools_final.md#L875
+  needs_review: true
+- id: kps-zeroexposure
+  name: Kps-zeroexposure
+  summary: Kubernetes zero-exposure policy tool.
+  repository_url: https://github.com/adrghph/kps-zeroexposure
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Enforce zero-trust network defaults in K8s.
+  avoid_when:
+  - You already manage this through Cilium or Calico network policies.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L31
+  - legacy:devopstools_final.md#L876
+  needs_review: true
+- id: lotp-living-off-the-pipeline
+  name: LOTP (Living Off the Pipeline)
+  summary: Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow injection
+    or unintended code execution.
+  official_url: https://boostsecurityio.github.io/lotp
+  repository_url: https://github.com/boostsecurityio/lotp
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L878
+  needs_review: true
+- id: lynis
+  name: Lynis
+  summary: Security auditing and hardening tool with an enterprise offering (CISOfy).
+  official_url: https://cisofy.com/lynis
+  repository_url: https://github.com/CISOfy/lynis
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Host-level security auditing and CIS hardening checks on Linux/macOS.
+  avoid_when:
+  - For container or Kubernetes workloads (use Trivy/Falco).
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L33
+  - legacy:devopstools_final.md#L879
+  needs_review: true
+- id: manageengine-network-configuration-manager
+  name: ManageEngine Network Configuration Manager
+  summary: Network device configuration management.
+  official_url: https://www.manageengine.com/network-configuration-manager
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Managing multi-vendor network device configs with change tracking.
+  avoid_when:
+  - Your infrastructure is fully software-defined or cloud-native.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L80
+  - legacy:devopstools_final.md#L954
+  needs_review: true
+- id: mcpdefender
+  name: MCPDefender
+  summary: Security proxy for MCP traffic between AI apps and MCP servers (AGPL-3.0).
+  official_url: https://mcpdefender.com
+  repository_url: https://github.com/MCP-Defender/MCP-Defender
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Running MCP-based AI agents that need request inspection and guardrails.
+  avoid_when:
+  - You're not using MCP protocol.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L34
+  - legacy:devopstools_final.md#L881
+  needs_review: true
+- id: medusa
+  name: MEDUSA
+  summary: AI security scanner with extensive detection rules for application and model risks.
+  official_url: https://pantheonsecurity.io
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L882
+  needs_review: true
+- id: mfasweep
+  name: MFASweep
+  summary: PowerShell tool for enumerating and testing MFA bypass paths across Microsoft 365 and Azure
+    AD environments.
+  repository_url: https://github.com/dafthack/MFASweep
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L883
+  needs_review: true
+- id: mitmproxy
+  name: mitmproxy
+  summary: Interactive HTTPS proxy with CLI, web UI, and Python scripting for traffic inspection and testing.
+  official_url: https://mitmproxy.org
+  repository_url: https://github.com/mitmproxy/mitmproxy
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L880
+  needs_review: true
+- id: modsecurity
+  name: ModSecurity
+  summary: Web Application Firewall (WAF) engine.
+  official_url: https://modsecurity.org
+  repository_url: https://github.com/SpiderLabs/ModSecurity
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You need a battle-tested, rule-driven WAF with OWASP CRS.
+  avoid_when:
+  - You want a Go-native or cloud-native solution (consider Coraza).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L35
+  - legacy:devopstools_final.md#L884
+  needs_review: true
+- id: naxsi-waf-for-nginx
+  name: NAXSI (WAF for NGINX)
+  summary: Open source WAF module for NGINX (NAXSI).
+  repository_url: https://github.com/wargio/naxsi
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - A lightweight, learning-mode WAF tightly coupled with NGINX.
+  avoid_when:
+  - You need ModSecurity rule compatibility.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L36
+  - legacy:devopstools_final.md#L885
+  needs_review: true
+- id: netbird
+  name: NetBird
+  summary: Zero-trust networking platform built on WireGuard.
+  official_url: https://netbird.io
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L957
+  needs_review: true
+- id: nikto
+  name: Nikto
+  summary: Web server scanner for dangerous files, outdated software, and common misconfigurations.
+  repository_url: https://github.com/sullo/nikto
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L886
+  needs_review: true
+- id: nomos
+  name: nomos
+  summary: Security guardrail for AI agents (Claude Code, Codex, MCP) that blocks secret access and gates
+    risky commands with allow/deny/approval policies.
+  repository_url: https://github.com/safe-agentic-world/nomos
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L887
+  needs_review: true
+- id: notary-project
+  name: Notary Project
+  summary: Supply chain signing and verification for artifacts (CNCF).
+  official_url: https://github.com/notaryproject
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Sign and verify container images/artifacts in your supply chain.
+  avoid_when:
+  - You only need image scanning without signature verification.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L37
+  - legacy:devopstools_final.md#L888
+  needs_review: true
+- id: nuclei
+  name: Nuclei
+  summary: Fast vulnerability scanner.
+  official_url: https://docs.projectdiscovery.io/opensource/nuclei/overview
+  repository_url: https://github.com/projectdiscovery/nuclei
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Template-driven, high-speed DAST with a huge community template library.
+  avoid_when:
+  - You need authenticated, deep-crawl web app testing (use Burp Suite or ZAP).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L38
+  - legacy:devopstools_final.md#L889
+  needs_review: true
+- id: omni
+  name: Omni
+  summary: Kubernetes cluster lifecycle management platform by Sidero Labs; BSL/source-available + SaaS.
+  official_url: https://www.siderolabs.com/omni
+  repository_url: https://github.com/siderolabs/omni
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Managing Talos Linux K8s clusters at scale.
+  avoid_when:
+  - You don't use Talos or need a vendor-neutral approach.
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L39
+  - legacy:devopstools_final.md#L891
+  needs_review: true
+- id: open-appsec
+  name: open-appsec
+  summary: ML-based application & API security (WAF/RASP style).
+  official_url: https://www.openappsec.io
+  repository_url: https://github.com/openappsec/openappsec
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You want ML-driven threat detection that doesn't rely on static signatures.
+  avoid_when:
+  - You need deterministic, auditable rule-based filtering.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L40
+  - legacy:devopstools_final.md#L892
+  needs_review: true
+- id: open-policy-agent
+  name: Open Policy Agent
+  summary: Policy-based control for cloud-native environments.
+  official_url: https://www.openpolicyagent.org
+  repository_url: https://github.com/open-policy-agent/opa
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Cross-cutting policy enforcement (K8s admission, API auth, Terraform).
+  avoid_when:
+  - You only need Kubernetes-specific policies (Kyverno may be simpler).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L73
+  - legacy:devopstools_final.md#L944
+  needs_review: true
+- id: openscap
+  name: OpenSCAP
+  summary: Security Content Automation Protocol.
+  official_url: https://www.open-scap.org
+  repository_url: https://github.com/OpenSCAP/openscap
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Compliance scanning against SCAP/STIG/CIS benchmarks on RHEL-family systems.
+  avoid_when:
+  - For non-Linux or container-only environments.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L41
+  - legacy:devopstools_final.md#L893
+  needs_review: true
+- id: openscap-tools
+  name: OpenSCAP Tools
+  summary: Collection of OpenSCAP tools.
+  official_url: https://www.open-scap.org/tools
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Alongside OpenSCAP for profile tailoring and report generation.
+  avoid_when:
+  - You're not using SCAP content.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L42
+  - legacy:devopstools_final.md#L894
+  needs_review: true
+- id: openziti
+  name: OpenZiti
+  summary: Open-source zero-trust overlay networking platform.
+  official_url: https://netfoundry.io/docs/openziti
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L959
+  needs_review: true
+- id: opnsense
+  name: OPNsense
+  summary: Open-source firewall and routing software.
+  official_url: https://github.com/opnsense
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - A modern, HardenedBSD-based firewall with frequent updates and a clean UI.
+  avoid_when:
+  - You need extensive third-party pfSense package ecosystem compatibility.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L81
+  - legacy:devopstools_final.md#L958
+  needs_review: true
+- id: osint-framework
+  name: OSINT Framework
+  summary: Curated framework of OSINT resources and investigative tools.
+  official_url: https://osintframework.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L890
+  needs_review: true
+- id: ossim
+  name: OSSIM
+  summary: Open Source Security Information and Event Management (SIEM) platform.
+  repository_url: https://github.com/alienfault/ossim
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L895
+  needs_review: true
+- id: owasp-zap
+  name: OWASP ZAP
+  summary: Web application security scanner (DAST).
+  official_url: https://www.zaproxy.org
+  repository_url: https://github.com/zaproxy/zaproxy
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Free, CI-integrated DAST with active/passive scanning.
+  avoid_when:
+  - You need commercial support or advanced manual testing workflows (use Burp Suite).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L43
+  - legacy:devopstools_final.md#L896
+  needs_review: true
+- id: palo-alto-cortex-cloud
+  name: Palo Alto Cortex Cloud
+  summary: Cloud-native security operations platform.
+  official_url: https://www.paloaltonetworks.com/cortex/cloud
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Unified CSPM/CWPP across multi-cloud with SOC integration.
+  avoid_when:
+  - You need lightweight, single-concern tooling.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L44
+  - legacy:devopstools_final.md#L899
+  needs_review: true
+- id: pangolin
+  name: Pangolin
+  summary: Zero-trust remote access platform and VPN alternative.
+  official_url: https://pangolin.net
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L960
+  needs_review: true
+- id: parrot-security
+  name: Parrot Security
+  summary: Security-oriented Linux distribution for penetration testing, digital forensics, and privacy.
+  official_url: https://parrotsec.org
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L897
+  needs_review: true
+- id: pentest-toolkit-pro
+  name: PenTest Toolkit Pro
+  summary: Offline HTML toolkit for pentest checklists, audits, reporting, and action plans.
+  repository_url: https://github.com/Cyber-Autopsie/PenTest-Toolkit-Pro
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L898
+  needs_review: true
+- id: pfsense
+  name: pfSense
+  summary: Open-source firewall and router platform.
+  official_url: https://www.pfsense.org
+  repository_url: https://github.com/pfsense/pfsense
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - A mature, well-documented open-source firewall with a large community.
+  avoid_when:
+  - You're concerned about Netgate's licensing direction (consider OPNsense).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L82
+  - legacy:devopstools_final.md#L961
+  needs_review: true
+- id: pip-audit
+  name: pip-audit
+  summary: Audit Python environments/dependencies for known vulnerabilities.
+  official_url: https://pypi.org/project/pip-audit
+  repository_url: https://github.com/pypa/pip-audit
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Python-specific SCA in CI.
+  avoid_when:
+  - You already run Trivy/Grype which also cover Python packages.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L45
+  - legacy:devopstools_final.md#L900
+  needs_review: true
+- id: piqc
+  name: piqc
+  summary: Kubernetes scanner that discovers LLMs running on vLLM and extracts their deployment and runtime
+    facts.
+  repository_url: https://github.com/paralleliq/piqc
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L901
+  needs_review: true
+- id: portmaster
+  name: Portmaster
+  summary: Self-hosted application firewall and privacy suite for monitoring and controlling network connections.
+  official_url: https://safing.io
+  repository_url: https://github.com/safing/portmaster
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L962
+  needs_review: true
+- id: pritunl
+  name: Pritunl
+  summary: VPN server for secure remote access; open-source core with commercial features.
+  official_url: https://pritunl.com
+  repository_url: https://github.com/pritunl/pritunl
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - A self-hosted VPN with a web UI and multi-server support.
+  avoid_when:
+  - You want mesh networking with zero-config (use Tailscale/WireGuard).
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L83
+  - legacy:devopstools_final.md#L963
+  needs_review: true
+- id: qubes-os
+  name: Qubes OS
+  summary: Security-focused desktop operating system using Xen-based virtualization for compartmentalization.
+  official_url: https://github.com/QubesOS
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You need strong workstation-level compartmentalization (e.g., security research).
+  avoid_when:
+  - For server workloads or if hardware compatibility is a concern.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L74
+  - legacy:devopstools_final.md#L945
+  needs_review: true
+- id: red-labs
+  name: Red Labs
+  summary: Security labs/training environment.
+  official_url: https://redlabs.enterprisesecurity.io
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Hands-on security practice and team training.
+  avoid_when:
+  - Expecting production-grade tooling from it.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L46
+  - legacy:devopstools_final.md#L902
+  needs_review: true
+- id: rita
+  name: RITA
+  summary: Network traffic analysis tool for detecting command-and-control and beaconing behavior.
+  official_url: https://www.activecountermeasures.com/free-tools/rita
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L964
+  needs_review: true
+- id: safeline
+  name: SafeLine
+  summary: Self-hosted web application firewall (WAF) / reverse proxy; OSS core with paid tiers.
+  official_url: https://safepoint.cloud/landing/safeline
+  repository_url: https://github.com/chaitin/SafeLine
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - A self-hosted WAF with a polished UI and semantic analysis engine.
+  avoid_when:
+  - You need full ModSecurity CRS rule compatibility.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L47
+  - legacy:devopstools_final.md#L903
+  needs_review: true
+- id: security-onion
+  name: Security Onion
+  summary: Free and open platform for network security monitoring, log management, and threat hunting.
+  official_url: https://securityonionsolutions.com
+  repository_url: https://github.com/Security-Onion-Solutions/securityonion
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L965
+  needs_review: true
+- id: securix
+  name: Securix
+  summary: Linux server hardening and security configuration scripts designed for government cloud environments.
+  repository_url: https://github.com/cloud-gouv/securix
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L905
+  needs_review: true
+- id: selinux-project
+  name: SELinux Project
+  summary: Security-Enhanced Linux project.
+  official_url: https://github.com/selinuxproject
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Mandatory access control on RHEL-family systems.
+  avoid_when:
+  - On distros that default to AppArmor (e.g., Ubuntu/SUSE) unless you have specific MAC requirements.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L48
+  - legacy:devopstools_final.md#L906
+  needs_review: true
+- id: semgrep
+  name: Semgrep
+  summary: AI-assisted SAST, SCA, secrets detection, and code scanning platform.
+  official_url: https://semgrep.dev
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L904
+  needs_review: true
+- id: shuffle-automation
+  name: Shuffle Automation
+  summary: Open-source SOAR platform for security automation and response workflows.
+  official_url: https://shuffler.io
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L907
+  needs_review: true
+- id: skillspector
+  name: SkillSpector
+  summary: Security scanner for AI agent skills, prompts, and tool definitions.
+  repository_url: https://github.com/NVIDIA/SkillSpector
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L910
+  needs_review: true
+- id: slsa
+  name: SLSA
+  summary: 'Supply-chain Levels for Software Artifacts: a framework and set of standards for improving
+    software supply chain integrity and provenance.'
+  official_url: https://slsa.dev
+  repository_url: https://github.com/slsa-framework/slsa
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L908
+  needs_review: true
+- id: slsa-verifier
+  name: slsa-verifier
+  summary: Verify SLSA provenance and attestations for artifacts, images, and packages.
+  repository_url: https://github.com/slsa-framework/slsa-verifier
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L909
+  needs_review: true
+- id: snort
+  name: Snort
+  summary: Open-source network intrusion detection and prevention system (IDS/IPS).
+  official_url: https://www.snort.org
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L966
+  needs_review: true
+- id: snyk
+  name: Snyk
+  summary: Security scanning for code, dependencies, and containers.
+  official_url: https://snyk.io
+  repository_url: https://github.com/snyk/snyk
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Developer-friendly SCA/SAST with IDE integration and fix PRs.
+  avoid_when:
+  - Budget is constrained and OSS tools (Trivy, Grype, CodeQL) cover your needs.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L49
+  - legacy:devopstools_final.md#L911
+  needs_review: true
+- id: socket
+  name: Socket
+  summary: Supply chain security platform focused on malicious and zero-day dependency risks.
+  official_url: https://socket.dev
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L912
+  needs_review: true
+- id: soos-dast
+  name: SOOS DAST
+  summary: DAST scanning Docker image for dynamic application security testing, runnable in CI/CD pipelines.
+  official_url: https://hub.docker.com/r/soosio/dast
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L913
+  needs_review: true
+- id: suricata
+  name: Suricata
+  summary: High-performance network IDS, IPS, and threat detection engine.
+  official_url: https://suricata.io
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L967
+  needs_review: true
+- id: syft
+  name: Syft
+  summary: Generate SBOMs for containers and filesystems.
+  repository_url: https://github.com/anchore/syft
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Produce SPDX/CycloneDX SBOMs for compliance and supply chain visibility.
+  avoid_when:
+  - You only need vulnerability counts (pipe Syft output into Grype).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L50
+  - legacy:devopstools_final.md#L914
+  needs_review: true
+- id: syswarden
+  name: SysWarden
+  summary: Firewall orchestration platform that applies blocklists, GeoIP, ASN, and security integrations
+    to block malicious traffic.
+  official_url: https://www.syswarden.io
+  repository_url: https://github.com/duggytuxy/syswarden
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L968
+  needs_review: true
+- id: tailscale
+  name: Tailscale
+  summary: Zero-config VPN for secure networking; OSS client with commercial/SaaS control plane (self-hosting
+    via Headscale available).
+  official_url: https://tailscale.com
+  repository_url: https://github.com/tailscale/tailscale
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Zero-config, identity-based mesh networking across devices.
+  avoid_when:
+  - You need a traditional gateway VPN or want to avoid a SaaS control plane (use Headscale or WireGuard
+    directly).
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L84
+  - legacy:devopstools_final.md#L969
+  needs_review: true
+- id: tenable-one
+  name: Tenable One
+  summary: Unified exposure management platform.
+  official_url: https://github.com/tenable
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Enterprise-wide vulnerability management across IT, cloud, and OT.
+  avoid_when:
+  - For lightweight or developer-centric scanning.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L51
+  - legacy:devopstools_final.md#L915
+  needs_review: true
+- id: testssl-sh
+  name: testssl.sh
+  summary: Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities.
+  official_url: https://testssl.sh
+  repository_url: https://github.com/drwetter/testssl.sh
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Quick, scriptable TLS configuration audits.
+  avoid_when:
+  - You need continuous monitoring (use a TLS observatory or Qualys SSL Labs API).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L52
+  - legacy:devopstools_final.md#L916
+  needs_review: true
+- id: tetragon
+  name: Tetragon
+  summary: EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
+  official_url: https://tetragon.io
+  repository_url: https://github.com/cilium/tetragon
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L946
+  needs_review: true
+- id: threatlocker
+  name: ThreatLocker
+  summary: Zero trust endpoint protection platform.
+  official_url: https://www.threatlocker.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Allowlist-based endpoint lockdown in regulated environments.
+  avoid_when:
+  - You need Linux-first or cloud-native runtime protection (use Falco).
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L75
+  - legacy:devopstools_final.md#L947
+  needs_review: true
+- id: touti-cracker
+  name: Touti-Cracker
+  summary: Security testing tool.
+  repository_url: https://github.com/Touti-Sudo/Touti-Cracker
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Educational/CTF purposes.
+  avoid_when:
+  - In production or professional pentests.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L53
+  - legacy:devopstools_final.md#L917
+  needs_review: true
+- id: tracee
+  name: Tracee
+  summary: EBPF-based runtime security and threat detection for Linux systems and containers.
+  official_url: https://aquasecurity.github.io/tracee/latest
+  repository_url: https://github.com/aquasecurity/tracee
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L923
+  needs_review: true
+- id: trufflehog
+  name: TruffleHog
+  summary: Secret scanning tool; OSS core with enterprise features and integrations.
+  official_url: https://trufflesecurity.com
+  repository_url: https://github.com/trufflesecurity/trufflehog
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Deep Git history scanning with credential verification.
+  avoid_when:
+  - You only need pre-commit hooks (use detect-secrets or Gitleaks).
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L55
+  - legacy:devopstools_final.md#L919
+  needs_review: true
+- id: valqore
+  name: Valqore
+  summary: Automatic safety and security checks for cloud and AI environments.
+  official_url: https://www.valqore.io
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L948
+  needs_review: true
+- id: velociraptor
+  name: Velociraptor
+  summary: Digital forensics and incident response platform for endpoint investigation and threat hunting.
+  official_url: https://docs.velociraptor.app
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L920
+  needs_review: true
+- id: virustotal
+  name: VirusTotal
+  summary: Analyze files, domains, IPs, and URLs with multi-engine scanning and community intelligence.
+  official_url: https://www.virustotal.com/gui/home/upload
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L921
+  needs_review: true
+- id: wazuh
+  name: Wazuh
+  summary: Open-source XDR and SIEM platform for threat detection and compliance monitoring.
+  official_url: https://wazuh.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L922
+  needs_review: true
+- id: wireguard
+  name: WireGuard
+  summary: Fast, modern, and secure VPN tunneling protocol.
+  official_url: https://www.wireguard.com
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Network Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L970
+  needs_review: true
+- id: wiz
+  name: Wiz
+  summary: Cloud security platform.
+  official_url: https://www.wiz.io
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - Agentless CSPM/CWPP with a unified risk graph across multi-cloud.
+  avoid_when:
+  - You need on-prem-only or OSS-first security tooling.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L56
+  - legacy:devopstools_final.md#L924
+  needs_review: true

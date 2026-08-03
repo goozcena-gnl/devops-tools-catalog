@@ -1,0 +1,453 @@
+- id: combodo-itop
+  name: Combodo (iTop)
+  summary: ITSM/CMDB platform; Combodo-backed iTop ecosystem with commercial extensions and support.
+  official_url: https://combodo.com
+  repository_url: https://github.com/Combodo/iTop
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need an open-source CMDB and ITIL-aligned service management.
+  avoid_when:
+  - You want modern incident-response tooling rather than traditional ITSM.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L99
+  - legacy:devopstools_final.md#L814
+  needs_review: true
+- id: dnsglobe
+  name: dnsglobe
+  summary: Terminal UI for tracking global DNS propagation across public resolvers.
+  repository_url: https://github.com/514-labs/dnsglobe
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L815
+  needs_review: true
+- id: flow
+  name: flow
+  summary: Terminal tool for visualizing live network traffic and behavior.
+  repository_url: https://github.com/programmersd21/flow
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L816
+  needs_review: true
+- id: goalert
+  name: GoAlert
+  summary: On-call alert and escalation management.
+  official_url: https://goalert.me
+  repository_url: https://github.com/target/goalert
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Self-hosted on-call scheduling and escalation without SaaS costs.
+  avoid_when:
+  - You need rich integrations and mobile apps that PagerDuty/Opsgenie provide.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L100
+  - legacy:devopstools_final.md#L817
+  needs_review: true
+- id: manageengine-it-operations-management
+  name: ManageEngine IT Operations Management
+  summary: Comprehensive IT operations management platform.
+  official_url: https://www.manageengine.com/it-operations-management
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Traditional enterprise IT ops needing a single vendor for monitoring, ITSM, and network management.
+  avoid_when:
+  - Cloud-native DevOps teams wanting open, composable tooling.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L102
+  - legacy:devopstools_final.md#L819
+  needs_review: true
+- id: manageengine-netflow-analyzer
+  name: ManageEngine NetFlow Analyzer
+  summary: Network traffic monitoring and analysis.
+  official_url: https://www.manageengine.com/netflow
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Deep network bandwidth and traffic analysis using NetFlow/sFlow/IPFIX.
+  avoid_when:
+  - Your monitoring needs are application-centric, not network-centric.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L103
+  - legacy:devopstools_final.md#L820
+  needs_review: true
+- id: moogsoft
+  name: Moogsoft
+  summary: AI-powered incident management and observability platform.
+  official_url: https://www.moogsoft.com
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - AI-driven alert correlation and noise reduction across large alert volumes.
+  avoid_when:
+  - Your alert volume is manageable with simple routing rules.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L104
+  - legacy:devopstools_final.md#L821
+  needs_review: true
+- id: netwatch-labs
+  name: NetWatch Labs
+  summary: Collection of terminal-first network and system diagnostics tools for Linux operators.
+  official_url: https://www.netwatchlabs.com
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L822
+  needs_review: true
+- id: ntfy
+  name: ntfy
+  summary: Simple pub-sub notifications (self-hostable).
+  official_url: https://ntfy.sh
+  repository_url: https://github.com/binwiederhier/ntfy
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Lightweight, self-hosted push notifications via HTTP.
+  avoid_when:
+  - You need on-call scheduling, escalations, or incident workflows.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L105
+  - legacy:devopstools_final.md#L823
+  needs_review: true
+- id: pagerduty
+  name: PagerDuty
+  summary: Digital operations management and incident response.
+  official_url: https://www.pagerduty.com
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Enterprise-grade on-call, escalation, and incident orchestration with deep integrations.
+  avoid_when:
+  - Budget is a concern—open-source alternatives (GoAlert, Grafana OnCall) exist.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L106
+  - legacy:devopstools_final.md#L824
+  needs_review: true
+- id: patchmon
+  name: PatchMon
+  summary: Patch management and monitoring platform.
+  official_url: https://patchmon.net
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Tracking patch status across your fleet.
+  avoid_when:
+  - Your config management tool (Ansible, SCCM) already handles patching visibility.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L107
+  - legacy:devopstools_final.md#L825
+  needs_review: true
+- id: pulse-relay
+  name: Pulse Relay
+  summary: Incident/alert relay environment.
+  official_url: https://pulserelay.pro
+  repository_url: https://github.com/rcourtman/Pulse
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Forwarding alerts between systems with transformation logic.
+  avoid_when:
+  - Native integrations between your monitoring and incident tools already work.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L108
+  - legacy:devopstools_final.md#L826
+  needs_review: true
+- id: rustnet
+  name: RustNet
+  summary: Cross-platform network monitoring TUI with packet inspection, process attribution, filtering,
+    and connection analytics.
+  repository_url: https://github.com/domcyrus/rustnet
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L827
+  needs_review: true
+- id: server-pulse
+  name: Server Pulse
+  summary: Linux server diagnostics and monitoring TUI covering system health, Docker containers, logs,
+    networking, and security checks.
+  repository_url: https://github.com/Server-Pulse/server-pulse
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L828
+  needs_review: true
+- id: wireshark
+  name: Wireshark
+  summary: Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
+  official_url: https://www.wireshark.org
+  repository_url: https://gitlab.com/wireshark/wireshark
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L829
+  needs_review: true
+- id: zenduty
+  name: Zenduty
+  summary: Incident management and on-call platform with developer-friendly APIs.
+  official_url: https://github.com/zenduty
+  categories:
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Cost-effective PagerDuty alternative with good API/integration coverage.
+  avoid_when:
+  - You need the ecosystem maturity and enterprise features of PagerDuty.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L109
+  - legacy:devopstools_final.md#L830
+  needs_review: true

@@ -1,0 +1,529 @@
+- id: apache-kafka
+  name: Apache Kafka
+  summary: Distributed event streaming platform.
+  official_url: https://kafka.apache.org
+  repository_url: https://github.com/apache/kafka
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need durable, high-throughput event streaming with replay capability.
+  avoid_when:
+  - You only need simple message queuing (consider RabbitMQ or SQS instead).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L202
+  - legacy:devopstools_final.md#L277
+  needs_review: true
+- id: bbolt
+  name: bbolt
+  summary: Embedded key/value store for Go applications.
+  official_url: https://pkg.go.dev/go.etcd.io/bbolt
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L278
+  needs_review: true
+- id: etcd
+  name: etcd
+  summary: Distributed, reliable key-value store used as the primary data store for Kubernetes.
+  official_url: https://etcd.io
+  repository_url: https://github.com/etcd-io/etcd
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L279
+  needs_review: true
+- id: garage
+  name: Garage
+  summary: Lightweight S3-compatible object storage.
+  official_url: https://garagehq.deuxfleurs.fr
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a self-hosted, geo-distributed S3-compatible store with minimal resources.
+  avoid_when:
+  - You need enterprise-grade performance or a mature ecosystem.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L206
+  - legacy:devopstools_final.md#L281
+  needs_review: true
+- id: garage-webui
+  name: Garage WebUI
+  summary: Web interface for Garage object storage.
+  official_url: https://hub.docker.com/r/khairul169/garage-webui
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You run Garage and want a simple browser-based management UI.
+  avoid_when:
+  - You manage Garage via CLI/API or use a different object store.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L208
+  - legacy:devopstools_final.md#L282
+  needs_review: true
+- id: juicefs
+  name: JuiceFS
+  summary: Distributed POSIX file system with community edition and enterprise/cloud offerings.
+  official_url: https://juicefs.com/en
+  repository_url: https://github.com/juicedata/juicefs
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a POSIX-compatible distributed filesystem backed by object storage.
+  avoid_when:
+  - You don't need POSIX semantics or your workload fits a simple object store.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L210
+  - legacy:devopstools_final.md#L283
+  needs_review: true
+- id: meilisearch
+  name: Meilisearch
+  summary: Fast, typo-tolerant search and AI retrieval engine.
+  official_url: https://www.meilisearch.com
+  repository_url: https://github.com/meilisearch/meilisearch
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L284
+  needs_review: true
+- id: memcached
+  name: Memcached
+  summary: High-performance, distributed memory object caching system.
+  official_url: https://memcached.org
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need dead-simple, high-speed key-value caching with minimal overhead.
+  avoid_when:
+  - You need persistence, data structures, or pub/sub (use Redis instead).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L212
+  - legacy:devopstools_final.md#L285
+  needs_review: true
+- id: minio
+  name: MinIO
+  summary: High-performance object storage.
+  official_url: https://www.min.io
+  repository_url: https://github.com/minio/minio
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need S3-compatible object storage on-prem with high throughput.
+  avoid_when:
+  - The AGPL license or enterprise pricing doesn't fit your model.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L214
+  - legacy:devopstools_final.md#L286
+  needs_review: true
+  repository_archived: true
+- id: mongodb
+  name: MongoDB
+  summary: Modern document database and developer data platform.
+  official_url: https://www.mongodb.com
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L287
+  needs_review: true
+- id: rabbitmq
+  name: RabbitMQ
+  summary: Open-source message broker and streaming platform for reliable asynchronous communication.
+  official_url: https://www.rabbitmq.com
+  repository_url: https://github.com/rabbitmq/rabbitmq-server
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L288
+  needs_review: true
+- id: redis
+  name: Redis
+  summary: In-memory data structure store, used as a database, cache, and message broker. **Licensing
+    varies by version:** Redis ≤7.2 uses BSD (OSS); Redis CE 7.4–7.8 uses RSAL/SSPL (source-available);
+    Redis 8+ uses tri-license (AGPL option available).
+  official_url: https://redis.io
+  repository_url: https://github.com/redis/redis
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need an in-memory store with rich data structures, pub/sub, and Lua scripting.
+  avoid_when:
+  - You need disk-first durability or the license change affects your distribution model.
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L216
+  - legacy:devopstools_final.md#L289
+  needs_review: true
+- id: rustfs
+  name: RustFS
+  summary: S3-compatible object storage system implemented in Rust.
+  official_url: https://rustfs.com
+  repository_url: https://github.com/rustfs/rustfs
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a modern, Rust-based S3-compatible store with memory safety guarantees.
+  avoid_when:
+  - You need a battle-tested storage system for production-critical data.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L218
+  - legacy:devopstools_final.md#L290
+  needs_review: true
+- id: seaweedfs
+  name: SeaweedFS
+  summary: Distributed storage system for files, objects, and volumes.
+  official_url: https://seaweedfs.com
+  repository_url: https://github.com/seaweedfs/seaweedfs
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a fast distributed filesystem that also speaks S3 and supports tiered storage.
+  avoid_when:
+  - You only need simple object storage and want a larger community (use MinIO).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L220
+  - legacy:devopstools_final.md#L291
+  needs_review: true
+- id: squid
+  name: Squid
+  summary: Caching proxy for the web (HTTP, HTTPS, FTP, and more).
+  official_url: https://www.squid-cache.org
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a forward/reverse caching proxy to reduce bandwidth and speed up web content.
+  avoid_when:
+  - You only need a reverse proxy/load balancer (use Nginx/HAProxy instead).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L222
+  - legacy:devopstools_final.md#L292
+  needs_review: true
+- id: tikv
+  name: TiKV
+  summary: Distributed transactional key-value database with horizontal scalability and strong consistency.
+  official_url: https://tikv.org
+  repository_url: https://github.com/tikv/tikv
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L293
+  needs_review: true
+- id: varnish-cache
+  name: Varnish Cache
+  summary: High-performance HTTP reverse proxy and cache accelerator.
+  official_url: https://www.varnish-software.com/fr-fr/produits/varnish-cache
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L294
+  needs_review: true
+- id: xata
+  name: Xata
+  summary: Managed Postgres platform with branching workflows for databases.
+  official_url: https://xata.io
+  categories:
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L295
+  needs_review: true

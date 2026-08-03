@@ -1,0 +1,1822 @@
+- id: actionlint
+  name: actionlint
+  summary: Lint GitHub Actions workflows locally (catches many YAML/runtime mistakes early).
+  official_url: https://rhysd.github.io/actionlint
+  repository_url: https://github.com/rhysd/actionlint
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Linters / formatters
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - Ever you author GitHub Actions workflows—catches typos, bad expressions, and missing inputs before
+    push.
+  avoid_when:
+  - Only if you don't use GitHub Actions.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L70
+  - legacy:devopstools_final.md#L1109
+  needs_review: true
+- id: aider
+  name: Aider
+  summary: AI pair programming in the terminal.
+  official_url: https://aider.chat
+  repository_url: https://github.com/paul-gauthier/aider
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - '* You want terminal-based AI coding assistance that works with your existing editor and git workflow.'
+  avoid_when:
+  - '* You prefer IDE-integrated AI or need a visual interface.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L174
+  - legacy:devopstools_final.md#L411
+  needs_review: true
+- id: angular
+  name: Angular
+  summary: Web application framework.
+  official_url: https://angular.dev
+  repository_url: https://github.com/angular/angular
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Development Frameworks
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need an opinionated, batteries-included framework for large enterprise SPAs.
+  avoid_when:
+  - A lighter library (React, Vue) is sufficient and the Angular learning curve isn't justified.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L84
+  - legacy:devopstools_final.md#L1124
+  needs_review: true
+- id: asp-net-aspire
+  name: ASP.NET Aspire
+  summary: Orchestration + tooling for building cloud-native .NET distributed applications.
+  official_url: https://aspire.dev
+  repository_url: https://github.com/dotnet/aspire
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Development Frameworks
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - Building .NET distributed apps and you want built-in service discovery, telemetry, and health checks.
+  avoid_when:
+  - You're not in the .NET ecosystem.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L85
+  - legacy:devopstools_final.md#L1125
+  needs_review: true
+- id: aws-cloud9
+  name: AWS Cloud9
+  summary: Cloud-based IDE for writing, running, and debugging code.
+  official_url: https://aws.amazon.com/cloud9
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - IDE
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need a browser-based IDE tightly integrated with AWS services.
+  avoid_when:
+  - You need full IDE features or you're not in the AWS ecosystem.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L44
+  - legacy:devopstools_final.md#L1078
+  needs_review: true
+- id: azure-storage-explorer
+  name: Azure Storage Explorer
+  summary: GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
+  official_url: https://azure.microsoft.com/en-us/products/storage/storage-explorer
+  repository_url: https://github.com/microsoft/AzureStorageExplorer
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need a visual way to browse/manage Azure Storage during development.
+  avoid_when:
+  - CLI scripts or IaC already handle your storage operations.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L32
+  - legacy:devopstools_final.md#L1056
+  needs_review: true
+- id: black
+  name: Black
+  summary: Python code formatter.
+  official_url: https://black.readthedocs.io
+  repository_url: https://github.com/psf/black
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Linters / formatters
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want zero-debate, deterministic Python formatting.
+  avoid_when:
+  - Ruff's formatter (which is Black-compatible and faster) already covers your needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L71
+  - legacy:devopstools_final.md#L1110
+  needs_review: true
+- id: bottles
+  name: Bottles
+  summary: Open-source tool to manage Windows applications on Linux using Wine.
+  official_url: https://usebottles.com
+  repository_url: https://github.com/bottlesdevs/Bottles
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Desktop / Utilities
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need a user-friendly GUI to run Windows apps on Linux with isolated environments.
+  avoid_when:
+  - A native Linux alternative exists or you need guaranteed enterprise app compatibility.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L42
+  - legacy:devopstools_final.md#L1298
+  needs_review: true
+- id: cc-switch
+  name: CC Switch
+  summary: Control surface for switching and managing AI coding tools.
+  official_url: https://ccswitch.io/en
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L412
+  needs_review: true
+- id: coder
+  name: Coder
+  summary: Self-hosted cloud development environments and AI development infrastructure with governance.
+  official_url: https://coder.com
+  repository_url: https://github.com/coder/coder
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1057
+  needs_review: true
+- id: codewhale
+  name: CodeWhale
+  summary: Terminal coding agent designed to work across different model providers.
+  official_url: https://codewhale.net/en
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L413
+  needs_review: true
+- id: codex
+  name: Codex
+  summary: Lightweight coding agent from OpenAI that runs in your terminal.
+  repository_url: https://github.com/openai/codex
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L414
+  needs_review: true
+- id: continue
+  name: Continue
+  summary: Open-source AI code assistant.
+  official_url: https://www.continue.dev
+  repository_url: https://github.com/continuedev/continue
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - '* You want an open-source, IDE-integrated AI assistant with flexibility to choose your own LLM backend.'
+  avoid_when:
+  - '* You want a polished, turnkey AI coding experience without setup.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L176
+  - legacy:devopstools_final.md#L415
+  needs_review: true
+- id: cursor
+  name: Cursor
+  summary: AI-powered code editor.
+  official_url: https://cursor.com
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - IDE
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - AI-assisted coding (chat, autocomplete, codebase-aware edits) is a priority.
+  avoid_when:
+  - You need a stable, mature extension ecosystem—it's VS Code-based but still evolving.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L45
+  - legacy:devopstools_final.md#L1079
+  needs_review: true
+- id: development-containers
+  name: Development Containers
+  summary: Open specification for defining reproducible, containerized development environments (devcontainers).
+  official_url: https://containers.dev
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1058
+  needs_review: true
+- id: devpod
+  name: DevPod
+  summary: Open-source dev environments that can run locally or on remote providers.
+  official_url: https://devpod.sh
+  repository_url: https://github.com/loft-sh/devpod
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want reproducible dev containers across local Docker, SSH hosts, or cloud VMs without vendor lock-in.
+  avoid_when:
+  - Your team is already standardized on GitHub Codespaces or Gitpod.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L33
+  - legacy:devopstools_final.md#L1059
+  needs_review: true
+- id: drawdb
+  name: drawDB
+  summary: Database diagram editor.
+  official_url: https://www.drawdb.app
+  repository_url: https://github.com/drawdb-io/drawdb
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - API Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want a quick, browser-based tool to visually design database schemas.
+  avoid_when:
+  - You need full migration generation or team collaboration features (consider dbdiagram.io or schema-as-code
+    tools).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L52
+  - legacy:devopstools_final.md#L1086
+  needs_review: true
+- id: eslint
+  name: ESLint
+  summary: Pluggable JavaScript and TypeScript linter.
+  official_url: https://eslint.org
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Linters / formatters
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1111
+  needs_review: true
+- id: floci
+  name: Floci
+  summary: Local AWS service emulator for development and CI.
+  official_url: https://floci.io/floci
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1060
+  needs_review: true
+- id: ghostty
+  name: Ghostty
+  summary: Fast, cross-platform GPU-accelerated terminal emulator with native desktop integration.
+  official_url: https://ghostty.org
+  repository_url: https://github.com/ghostty-org/ghostty
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1062
+  needs_review: true
+- id: github-codespaces
+  name: GitHub Codespaces
+  summary: Hosted cloud development environments integrated with GitHub.
+  repository_url: https://github.com/features/codespaces
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - Your team is on GitHub and wants zero-setup, cloud-based dev environments.
+  avoid_when:
+  - You need self-hosted control or want to minimize per-seat cloud costs.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L34
+  - legacy:devopstools_final.md#L1061
+  needs_review: true
+- id: godcoder
+  name: Godcoder
+  summary: Local-first desktop coding agent that keeps your code on your machine.
+  repository_url: https://github.com/eli-labz/Godcoder
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L416
+  needs_review: true
+- id: golangci-lint
+  name: golangci-lint
+  summary: Go lint aggregator (fast, many linters).
+  official_url: https://golangci-lint.run
+  repository_url: https://github.com/golangci/golangci-lint
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Linters / formatters
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - As the default Go linting tool—aggregates dozens of linters in one fast pass.
+  avoid_when:
+  - Only if you intentionally want a single specific linter in isolation.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L72
+  - legacy:devopstools_final.md#L1112
+  needs_review: true
+- id: hadolint
+  name: Hadolint
+  summary: Dockerfile linter (best practices + common pitfalls).
+  repository_url: https://github.com/hadolint/hadolint
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Linters / formatters
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - Ever you write Dockerfiles—catches insecure or inefficient patterns.
+  avoid_when:
+  - Only if you use Buildpacks or other non-Dockerfile build methods.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L73
+  - legacy:devopstools_final.md#L1113
+  needs_review: true
+- id: hashicorp-vagrant
+  name: HashiCorp Vagrant
+  summary: Tool for building and managing virtual machine environments (BUSL-1.1).
+  official_url: https://www.vagrantup.com
+  repository_url: https://github.com/hashicorp/vagrant
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need full VM-based dev environments (e.g., kernel work, multi-node clusters).
+  avoid_when:
+  - Containers suffice—VMs are heavier and slower to provision.
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L35
+  - legacy:devopstools_final.md#L1063
+  needs_review: true
+- id: intellij-idea
+  name: IntelliJ IDEA
+  summary: Java IDE with support for many languages.
+  official_url: https://www.jetbrains.com/idea
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - IDE
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - Working in JVM languages where deep refactoring, inspections, and framework support matter.
+  avoid_when:
+  - You primarily work outside the JVM ecosystem—it's heavyweight for scripting or web-only work.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L46
+  - legacy:devopstools_final.md#L1080
+  needs_review: true
+- id: json-crack
+  name: JSON Crack
+  summary: Interactive JSON visualizer that turns data structures into graphs.
+  official_url: https://jsoncrack.com
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - API Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1087
+  needs_review: true
+- id: markdownlint
+  name: markdownlint
+  summary: Markdown lint rules + tooling ecosystem.
+  repository_url: https://github.com/DavidAnson/markdownlint
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Linters / formatters
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You maintain docs-as-code and want consistent Markdown style.
+  avoid_when:
+  - Prettier already reformats your Markdown and additional rules add friction.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L74
+  - legacy:devopstools_final.md#L1114
+  needs_review: true
+- id: markitdown
+  name: MarkItDown
+  summary: Python tool for converting files and Office documents to Markdown.
+  repository_url: https://github.com/microsoft/markitdown
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - API Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1088
+  needs_review: true
+- id: micro
+  name: micro
+  summary: Easy-to-use terminal text editor with plugins, mouse support, and Lua customization.
+  official_url: https://micro-editor.github.io
+  repository_url: https://github.com/zyedidia/micro
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1065
+  needs_review: true
+- id: mypy
+  name: mypy
+  summary: Static type checker for Python.
+  official_url: https://mypy-lang.org
+  repository_url: https://github.com/python/mypy
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Type checking
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - Your Python codebase has type annotations and you want to catch type errors before runtime.
+  avoid_when:
+  - Your code is untyped and the team isn't ready to adopt gradual typing.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L81
+  - legacy:devopstools_final.md#L1121
+  needs_review: true
+- id: ninite
+  name: Ninite
+  summary: Windows app installer/updater (bundled installers).
+  official_url: https://ninite.com
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - Onboarding Windows machines quickly with common desktop apps.
+  avoid_when:
+  - You need proper configuration management (use Chocolatey, winget, or an MDM instead).
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L37
+  - legacy:devopstools_final.md#L1066
+  needs_review: true
+- id: nixite
+  name: Nixite
+  summary: Nix-based bootstrap/installer helper (see project).
+  official_url: https://aspizu.github.io/nixite
+  repository_url: https://github.com/aspizu/nixite
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want a thin Nix wrapper for bootstrapping environments.
+  avoid_when:
+  - You need a full Nix ecosystem setup (use Nix flakes directly).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L38
+  - legacy:devopstools_final.md#L1067
+  needs_review: true
+- id: odysseus
+  name: Odysseus
+  summary: Self-hosted AI workspace for local agent workflows.
+  official_url: https://pewdiepie-archdaemon.github.io/odysseus
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L420
+  needs_review: true
+- id: omarchy
+  name: Omarchy
+  summary: Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.
+  official_url: https://omarchy.org
+  repository_url: https://github.com/basecamp/omarchy
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1069
+  needs_review: true
+- id: ona-formerly-gitpod
+  name: Ona (formerly Gitpod)
+  summary: Cloud-based development environments.
+  official_url: https://github.com/gitpod-io
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want instant, prebuilt cloud dev environments for any Git provider.
+  avoid_when:
+  - Local development meets your needs or latency to cloud instances is a concern.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L39
+  - legacy:devopstools_final.md#L1068
+  needs_review: true
+- id: open-interpreter
+  name: Open Interpreter
+  summary: Run AI that can execute tasks locally.
+  official_url: https://openinterpreter.com
+  repository_url: https://github.com/KillianLucas/open-interpreter
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - '* You want an AI that can execute code, manage files, and control your computer via natural language.'
+  avoid_when:
+  - '* You''re uncomfortable with AI having system-level access or need isolated sandboxed execution.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L178
+  - legacy:devopstools_final.md#L418
+  needs_review: true
+- id: opencode
+  name: OpenCode
+  summary: Open-source AI coding agent.
+  official_url: https://opencode.ai
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L417
+  needs_review: true
+- id: openwiki
+  name: OpenWiki
+  summary: CLI that writes and maintains agent documentation for your codebase.
+  repository_url: https://github.com/langchain-ai/openwiki
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L419
+  needs_review: true
+- id: play-with-docker
+  name: Play with Docker
+  summary: Interactive Docker playground; open-source platform with hosted labs site.
+  official_url: https://labs.play-with-docker.com
+  repository_url: https://github.com/play-with-docker/play-with-docker
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - Quick Docker experiments, workshops, or demos without installing anything.
+  avoid_when:
+  - For persistent work—sessions are ephemeral.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L40
+  - legacy:devopstools_final.md#L1070
+  needs_review: true
+- id: postman
+  name: Postman
+  summary: API development and testing platform.
+  official_url: https://www.postman.com
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - API Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need a GUI-driven API workspace with team collaboration, mock servers, and documentation.
+  avoid_when:
+  - Your API tests should live in code/CI—consider scripted alternatives (curl, HTTPie, Bruno) to prevent
+    test sprawl outside version control.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L53
+  - legacy:devopstools_final.md#L1089
+  needs_review: true
+- id: prettier
+  name: Prettier
+  summary: Opinionated formatter for JSON/YAML/Markdown and more.
+  official_url: https://prettier.io
+  repository_url: https://github.com/prettier/prettier
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Linters / formatters
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want one formatter for JS/TS/JSON/YAML/Markdown with zero config debates.
+  avoid_when:
+  - For Python (use Black/Ruff) or languages Prettier doesn't support.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L75
+  - legacy:devopstools_final.md#L1115
+  needs_review: true
+- id: pycharm
+  name: PyCharm
+  summary: Python IDE by JetBrains.
+  official_url: https://www.jetbrains.com/pycharm
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - IDE
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want best-in-class Python debugging, refactoring, and framework support (Django, Flask).
+  avoid_when:
+  - VS Code with the Python extension is sufficient for your workflow and you want a lighter tool.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L47
+  - legacy:devopstools_final.md#L1081
+  needs_review: true
+- id: quantumbyte
+  name: QuantumByte
+  summary: Intent-to-working-app open-source application builder engine.
+  repository_url: https://github.com/QuantumByteOSS/quantumbyte
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Development Frameworks
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1126
+  needs_review: true
+- id: ramalama
+  name: RamaLama
+  summary: AI-powered development assistant.
+  official_url: https://ramalama.ai
+  repository_url: https://github.com/containers/ramalama
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - '* You want to run LLMs locally in containers with OCI-native tooling.'
+  avoid_when:
+  - '* You prefer cloud-hosted AI or don''t need containerized LLM management.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L180
+  - legacy:devopstools_final.md#L421
+  needs_review: true
+- id: rtk-ai
+  name: RTK AI
+  summary: AI-powered development assistant.
+  official_url: https://www.rtk-ai.app
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - '* You want an AI development assistant with specific workflow integrations.'
+  avoid_when:
+  - '* You prefer open-source AI tools with transparent models.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L182
+  - legacy:devopstools_final.md#L422
+  needs_review: true
+- id: ruff
+  name: Ruff
+  summary: Ultra-fast Python linter/formatter.
+  official_url: https://docs.astral.sh/ruff
+  repository_url: https://github.com/astral-sh/ruff
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Linters / formatters
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - As a drop-in replacement for Flake8 + isort + Black with 10–100× speed gains.
+  avoid_when:
+  - You depend on niche Flake8 plugins Ruff hasn't yet reimplemented.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L76
+  - legacy:devopstools_final.md#L1116
+  needs_review: true
+- id: scrapling
+  name: Scrapling
+  summary: Web scraping toolkit for extracting and parsing web content.
+  official_url: https://scrapling.readthedocs.io/en/latest
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - API Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1090
+  needs_review: true
+- id: shfmt
+  name: shfmt
+  summary: Shell formatter (`shfmt`).
+  official_url: https://pkg.go.dev/mvdan.cc/sh/v3
+  repository_url: https://github.com/mvdan/sh
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Linters / formatters
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - Ever you have shell scripts in your repo—consistent formatting prevents merge conflicts.
+  avoid_when:
+  - Only if you have no shell scripts.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L77
+  - legacy:devopstools_final.md#L1117
+  needs_review: true
+- id: spec-kit
+  name: Spec Kit
+  summary: Toolkit from GitHub for getting started with Spec-Driven Development.
+  repository_url: https://github.com/github/spec-kit
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L423
+  needs_review: true
+- id: starlight
+  name: Starlight
+  summary: Documentation site framework.
+  official_url: https://starlight.astro.build
+  repository_url: https://github.com/withastro/starlight
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Development Frameworks
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want a fast, content-focused docs site with Astro.
+  avoid_when:
+  - You're already invested in Docusaurus, MkDocs, or Hugo and switching cost isn't worth it.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L86
+  - legacy:devopstools_final.md#L1127
+  needs_review: true
+- id: tabby
+  name: Tabby
+  summary: Self-hosted AI coding assistant.
+  official_url: https://www.tabbyml.com
+  repository_url: https://github.com/TabbyML/tabby
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - '* You want a self-hosted GitHub Copilot alternative with full control over your data and model.'
+  avoid_when:
+  - '* You lack GPU infrastructure for self-hosting or want zero-maintenance AI code completion.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L184
+  - legacy:devopstools_final.md#L424
+  needs_review: true
+- id: tabby-terminal
+  name: Tabby (Terminal)
+  summary: Cross-platform terminal emulator with built-in SSH, serial, and theming/plugins.
+  official_url: https://tabby.sh
+  repository_url: https://github.com/eugeny/tabby
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want a modern, extensible terminal with SSH management built in.
+  avoid_when:
+  - You prefer lightweight, native terminals (iTerm2, Windows Terminal) and manage SSH via config files.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L41
+  - legacy:devopstools_final.md#L1071
+  needs_review: true
+- id: termix
+  name: Termix
+  summary: Browser-based terminal multiplexer for managing remote shell sessions from any device.
+  official_url: https://termix.site
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1072
+  needs_review: true
+- id: tunnelto-dev
+  name: tunnelto.dev
+  summary: Expose your local web server to the internet with a public URL via secure tunnels.
+  official_url: https://tunnelto.dev
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1073
+  needs_review: true
+- id: understand-anything
+  name: Understand Anything
+  summary: AI-powered codebase graph and explainer for understanding repositories.
+  official_url: https://understand-anything.com
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L425
+  needs_review: true
+- id: vscode
+  name: VSCode
+  summary: Code editor by Microsoft. Source is MIT on GitHub; official binaries are under Microsoft license.
+  official_url: https://code.visualstudio.com
+  repository_url: https://github.com/microsoft/vscode
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - IDE
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - As a general-purpose editor for nearly any language—massive extension ecosystem and fast startup.
+  avoid_when:
+  - You need deep, language-specific IDE features (e.g., JVM refactoring) that specialized IDEs handle
+    better.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L48
+  - legacy:devopstools_final.md#L1082
+  needs_review: true
+- id: vscodium
+  name: VSCodium
+  summary: Community-built, telemetry-free distributions of VS Code, based on the open-source codebase.
+  official_url: https://vscodium.com
+  repository_url: https://github.com/VSCodium/vscodium
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - IDE
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want VS Code without Microsoft telemetry or proprietary bits.
+  avoid_when:
+  - You rely on Microsoft-specific extensions (e.g., Remote Development, Copilot) that require the official
+    build.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L49
+  - legacy:devopstools_final.md#L1083
+  needs_review: true
+- id: wezterm
+  name: WezTerm
+  summary: Rust-based terminal emulator and multiplexer with panes, workspaces, SSH, and Lua configuration.
+  official_url: https://wezterm.org
+  repository_url: https://github.com/wez/wezterm
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1074
+  needs_review: true
+- id: winapps
+  name: WinApps
+  summary: Run Windows apps via RDP/virtualization.
+  repository_url: https://github.com/winapps-org/winapps
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Desktop / Utilities
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want Windows apps to appear as native Linux desktop windows via an RDP-backed VM.
+  avoid_when:
+  - You don't want to maintain a Windows VM or RDP infrastructure.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L46
+  - legacy:devopstools_final.md#L1300
+  needs_review: true
+- id: windsurf
+  name: Windsurf
+  summary: AI-powered code editor/IDE with agentic workflows (chat, code completion, refactoring) to speed
+    up development.
+  official_url: https://windsurf.com
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - AI-Enhanced Development
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - '* You want an AI-native IDE with deep agentic capabilities for code generation and refactoring.'
+  avoid_when:
+  - '* You prefer your existing editor/IDE setup or want a fully open-source solution.'
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L186
+  - legacy:devopstools_final.md#L426
+  needs_review: true
+- id: wine
+  name: Wine
+  summary: Run Windows applications on Unix-like OSes.
+  official_url: https://www.winehq.org
+  repository_url: https://github.com/wine-mirror/wine
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Desktop / Utilities
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You must run specific Windows-only software on Linux/macOS without a VM.
+  avoid_when:
+  - The app requires kernel-level drivers, DRM, or anti-cheat that Wine can't emulate.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L44
+  - legacy:devopstools_final.md#L1299
+  needs_review: true
+- id: yamllint
+  name: yamllint
+  summary: YAML linter (structure + style checks).
+  repository_url: https://github.com/adrienverge/yamllint
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Linters / formatters
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - YAML-heavy projects (k8s manifests, CI configs) need consistent style.
+  avoid_when:
+  - Prettier already handles your YAML formatting needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L78
+  - legacy:devopstools_final.md#L1118
+  needs_review: true
+- id: yazi
+  name: Yazi
+  summary: Blazing-fast terminal file manager written in Rust with async I/O.
+  official_url: https://yazi-rs.github.io
+  repository_url: https://github.com/sxyazi/yazi
+  categories:
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1075
+  needs_review: true

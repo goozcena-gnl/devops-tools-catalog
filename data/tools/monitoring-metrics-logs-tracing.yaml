@@ -1,0 +1,2424 @@
+- id: amazon-cloudwatch
+  name: Amazon CloudWatch
+  summary: AWS monitoring and observability service.
+  official_url: https://aws.amazon.com/cloudwatch
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - All-in on AWS.
+  avoid_when:
+  - Multi-cloud or vendor-neutral strategy required.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L4
+  - legacy:devopstools_final.md#L695
+  needs_review: true
+- id: apache-skywalking
+  name: Apache SkyWalking
+  summary: APM platform for distributed tracing, metrics, and service topology.
+  official_url: https://skywalking.apache.org
+  repository_url: https://github.com/apache/skywalking
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Tracing & APM
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Java-heavy environments needing auto-instrumented tracing with service mesh support.
+  avoid_when:
+  - You've standardized on OTel and prefer a lighter, more modular stack.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L67
+  - legacy:devopstools_final.md#L775
+  needs_review: true
+- id: appneta
+  name: AppNeta
+  summary: Network performance monitoring.
+  official_url: https://www.broadcom.com/products/software/network-management/appneta
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Deep network path visibility is critical.
+  avoid_when:
+  - You only need application-level metrics.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L5
+  - legacy:devopstools_final.md#L696
+  needs_review: true
+- id: ask-o11y-plugin-for-grafana
+  name: Ask O11y plugin for Grafana
+  summary: Grafana plugin that provides natural-language observability exploration.
+  official_url: https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L744
+  needs_review: true
+- id: awesome-prometheus
+  name: Awesome Prometheus
+  summary: Curated list of Prometheus resources.
+  repository_url: https://github.com/roaldnefs/awesome-prometheus
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Ramping up on the Prometheus ecosystem.
+  avoid_when:
+  - You need hands-on tooling, not reading lists.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L36
+  - legacy:devopstools_final.md#L737
+  needs_review: true
+- id: awesome-prometheus-alerts
+  name: Awesome Prometheus Alerts
+  summary: Collection of Prometheus alerting rules.
+  official_url: https://samber.github.io/awesome-prometheus-alerts
+  repository_url: https://github.com/samber/awesome-prometheus-alerts
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Bootstrapping alert rules quickly.
+  avoid_when:
+  - Blindly copying rules without tuning thresholds for your workload.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L37
+  - legacy:devopstools_final.md#L738
+  needs_review: true
+- id: beszel
+  name: Beszel
+  summary: Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC, backups, and
+    REST API.
+  official_url: https://beszel.dev
+  repository_url: https://github.com/henrygd/beszel
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L697
+  needs_review: true
+- id: blackbox-exporter
+  name: blackbox_exporter
+  summary: Prometheus exporter for probing HTTP, HTTPS, DNS, TCP, ICMP, and gRPC endpoints.
+  repository_url: https://github.com/prometheus/blackbox_exporter
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L739
+  needs_review: true
+- id: cacti
+  name: Cacti
+  summary: Network graphing solution (RRDTool-based).
+  official_url: https://www.cacti.net
+  repository_url: https://github.com/Cacti/cacti
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Lightweight SNMP/network graphing on a budget.
+  avoid_when:
+  - You need modern alerting, APM, or dynamic cloud workloads.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L6
+  - legacy:devopstools_final.md#L698
+  needs_review: true
+- id: cadvisor
+  name: cAdvisor
+  summary: Container Advisor daemon that collects, aggregates, and exports container resource usage and
+    performance data.
+  repository_url: https://github.com/google/cadvisor
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L723
+  needs_review: true
+- id: cardamon
+  name: cardamon
+  summary: Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop rules for
+    them.
+  repository_url: https://github.com/dominikhei/cardamon
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L740
+  needs_review: true
+- id: centreon
+  name: Centreon
+  summary: Monitoring platform with open source base and enterprise/cloud offerings.
+  official_url: https://www.centreon.com
+  repository_url: https://github.com/centreon/centreon
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Migrating from Nagios and want a polished UI with enterprise support.
+  avoid_when:
+  - Cloud-native/Kubernetes is your primary target.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L7
+  - legacy:devopstools_final.md#L699
+  needs_review: true
+- id: checkmk
+  name: checkmk
+  summary: IT monitoring platform with open source Raw Edition and paid enterprise editions.
+  official_url: https://checkmk.com
+  repository_url: https://github.com/Checkmk/checkmk
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Monitoring heterogeneous infra (servers, network, VMs) with auto-discovery.
+  avoid_when:
+  - Your stack is purely containerized/cloud-native.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L8
+  - legacy:devopstools_final.md#L700
+  needs_review: true
+- id: clickhouse
+  name: ClickHouse
+  summary: Columnar database commonly used as an observability backend.
+  official_url: https://clickhouse.com
+  repository_url: https://github.com/ClickHouse/ClickHouse
+  categories:
+  - monitoring-metrics-logs-tracing
+  - databases-caching-data-infrastructure
+  subcategories:
+  - Caching & Data Stores
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - site-reliability-engineer
+  - infrastructure-systems-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - monitor
+  use_when:
+  - You need blazing-fast OLAP queries on large datasets.
+  - You need blazing-fast analytical queries over massive log/trace datasets.
+  avoid_when:
+  - You lack the team to operate a complex OLAP database.
+  - You need OLTP workloads, frequent small updates, or strong transactional guarantees.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L204
+  - legacy:5_Monitoring-Observability/README.md#L38
+  - legacy:devopstools_final.md#L280
+  - legacy:devopstools_final.md#L741
+  needs_review: true
+- id: coroot
+  name: Coroot
+  summary: Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
+  official_url: https://coroot.com
+  repository_url: https://github.com/coroot/coroot
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want eBPF-powered root-cause analysis without heavy instrumentation.
+  avoid_when:
+  - You need a battle-tested platform at very large scale.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L9
+  - legacy:devopstools_final.md#L701
+  needs_review: true
+- id: cortex
+  name: Cortex
+  summary: Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus and
+    OpenTelemetry metrics (CNCF Incubating).
+  official_url: https://cortexmetrics.io
+  repository_url: https://github.com/cortexproject/cortex
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L742
+  needs_review: true
+- id: datadog
+  name: Datadog
+  summary: Full-stack cloud monitoring, log management, and APM.
+  official_url: https://github.com/DataDog
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want a single pane of glass with minimal ops overhead.
+  avoid_when:
+  - Budget is tight—costs scale steeply with data volume.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L10
+  - legacy:devopstools_final.md#L702
+  needs_review: true
+- id: dozzle
+  name: Dozzle
+  summary: Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes
+    support.
+  official_url: https://dozzle.dev
+  repository_url: https://github.com/amir20/dozzle
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L760
+  needs_review: true
+- id: dynatrace
+  name: Dynatrace
+  summary: Application performance monitoring and observability platform.
+  official_url: https://github.com/dynatrace
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Enterprise APM with AI-assisted root cause is a priority.
+  avoid_when:
+  - You need lightweight, self-hosted, or cost-sensitive monitoring.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L11
+  - legacy:devopstools_final.md#L703
+  needs_review: true
+- id: elastic-apm-server
+  name: Elastic APM Server
+  summary: APM intake/processing for Elastic Observability (agents + server + UI).
+  official_url: https://www.elastic.co/observability/application-performance-monitoring
+  repository_url: https://github.com/elastic/apm-server
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Tracing & APM
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You already run Elasticsearch and want APM tightly integrated with logs.
+  avoid_when:
+  - Licensing or running the Elastic stack isn't feasible.
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L68
+  - legacy:devopstools_final.md#L776
+  needs_review: true
+- id: elastic-stack-elk
+  name: Elastic Stack (ELK)
+  summary: Search/analytics/log platform; source licensing varies by component (Elastic License/SSPL and
+    AGPL option for parts).
+  official_url: https://www.elastic.co/elastic-stack
+  repository_url: https://github.com/elastic/elasticsearch
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Powerful full-text search and analytics over logs.
+  avoid_when:
+  - Licensing concerns, high cost of running Elasticsearch, or you only need label-based log queries (Loki
+    is simpler).
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L54
+  - legacy:devopstools_final.md#L761
+  needs_review: true
+- id: fluent-bit
+  name: Fluent Bit
+  summary: Fast and lightweight log processor.
+  official_url: https://fluentbit.io
+  repository_url: https://github.com/fluent/fluent-bit
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Low-footprint log forwarding from edge/containers.
+  avoid_when:
+  - You need complex log transformations—Fluentd or Vector offer richer plugin/processing ecosystems.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L55
+  - legacy:devopstools_final.md#L762
+  needs_review: true
+- id: fluentd
+  name: Fluentd
+  summary: Unified logging layer.
+  official_url: https://www.fluentd.org
+  repository_url: https://github.com/fluent/fluentd
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Routing logs between many inputs and outputs with a large plugin ecosystem.
+  avoid_when:
+  - Memory footprint matters—Fluent Bit or Vector are leaner.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L56
+  - legacy:devopstools_final.md#L763
+  needs_review: true
+- id: gatus
+  name: Gatus
+  summary: Developer-oriented health dashboard and status page for monitoring endpoints and services.
+  official_url: https://gatus.io
+  repository_url: https://github.com/TwiN/gatus
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L704
+  needs_review: true
+- id: gonzo
+  name: Gonzo
+  summary: K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.
+  official_url: https://www.controltheory.com/gonzo
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L765
+  needs_review: true
+- id: grafana
+  name: Grafana
+  summary: Visualization and analytics for metrics.
+  official_url: https://grafana.com
+  repository_url: https://github.com/grafana/grafana
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Building dashboards across heterogeneous data sources.
+  avoid_when:
+  - You need an all-in-one monitoring solution—Grafana is a frontend, not a backend.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L39
+  - legacy:devopstools_final.md#L743
+  needs_review: true
+- id: grafana-alloy-deploy
+  name: Grafana Alloy Deploy
+  summary: Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).
+  official_url: https://grafana.com/docs/alloy/latest/set-up/deploy
+  repository_url: https://github.com/grafana/alloy
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Already in the Grafana ecosystem and want a unified collector replacing Promtail/Agent.
+  avoid_when:
+  - OTel Collector already satisfies your vendor-neutral pipeline needs.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L40
+  - legacy:devopstools_final.md#L745
+  needs_review: true
+- id: grafana-beyla
+  name: Grafana Beyla
+  summary: EBPF-based auto-instrumentation for distributed tracing/metrics with minimal code changes.
+  official_url: https://grafana.com/oss/beyla
+  repository_url: https://github.com/grafana/beyla
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Tracing & APM
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want zero-code-change HTTP/gRPC tracing on Linux.
+  avoid_when:
+  - You need deep application-level span detail or run non-Linux kernels.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L69
+  - legacy:devopstools_final.md#L777
+  needs_review: true
+- id: grafana-loki
+  name: Grafana Loki
+  summary: Log aggregation system designed to work with Grafana; label-based indexing.
+  official_url: https://grafana.com/oss/loki
+  repository_url: https://github.com/grafana/loki
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want cost-effective logs tightly integrated with Grafana dashboards.
+  avoid_when:
+  - You need full-text indexing or complex ad-hoc log analytics.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L57
+  - legacy:devopstools_final.md#L764
+  needs_review: true
+- id: grafana-mimir
+  name: Grafana Mimir
+  summary: Horizontally scalable, multi-tenant Prometheus-compatible time series database.
+  official_url: https://grafana.com/oss/mimir
+  repository_url: https://github.com/grafana/mimir
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You outgrow single-node Prometheus and need multi-tenant long-term storage.
+  avoid_when:
+  - Thanos already solves your HA/storage needs, or your scale is small.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L41
+  - legacy:devopstools_final.md#L746
+  needs_review: true
+- id: grafana-pyroscope
+  name: Grafana Pyroscope
+  summary: Continuous profiling (often paired with tracing/APM for root-cause).
+  official_url: https://grafana.com/oss/pyroscope
+  repository_url: https://github.com/grafana/pyroscope
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Tracing & APM
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Correlating CPU/memory flamegraphs with traces for root-cause analysis.
+  avoid_when:
+  - You don't yet have basic metrics and tracing—profiling adds complexity on top.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L70
+  - legacy:devopstools_final.md#L778
+  needs_review: true
+- id: grafana-tempo
+  name: Grafana Tempo
+  summary: Distributed tracing backend (compatible with Jaeger/Zipkin/OTLP).
+  official_url: https://grafana.com/oss/tempo
+  repository_url: https://github.com/grafana/tempo
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Cost-effective trace storage using object storage and tight Grafana integration.
+  avoid_when:
+  - You need trace analytics/aggregation beyond trace-by-ID lookups.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L42
+  - legacy:devopstools_final.md#L747
+  needs_review: true
+- id: grove
+  name: grove
+  summary: AI-powered Kubernetes troubleshooting.
+  repository_url: https://github.com/ai-dynamo/grove
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Experimenting with AI-assisted K8s debugging.
+  avoid_when:
+  - You need production-proven, auditable troubleshooting workflows.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L27
+  - legacy:devopstools_final.md#L725
+  needs_review: true
+- id: holmesgpt
+  name: HolmesGPT
+  summary: Open-source SRE AI agent for investigating production incidents across Kubernetes, VMs, cloud
+    services, and databases with operator mode for 24/7 background monitoring (CNCF).
+  official_url: https://holmesgpt.dev/latest
+  repository_url: https://github.com/HolmesGPT/holmesgpt
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L726
+  needs_review: true
+- id: honeycomb
+  name: Honeycomb
+  summary: Observability platform built for high-cardinality events, tracing, and AI-era debugging.
+  official_url: https://www.honeycomb.io
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L705
+  needs_review: true
+- id: hyperdx
+  name: HyperDX
+  summary: Observability and troubleshooting platform.
+  official_url: https://www.hyperdx.io
+  repository_url: https://github.com/hyperdxio/hyperdx
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want a self-hosted Datadog-like experience with session replay.
+  avoid_when:
+  - You need proven large-scale production deployments.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L43
+  - legacy:devopstools_final.md#L748
+  needs_review: true
+- id: icinga
+  name: Icinga
+  summary: Open source monitoring system derived from Nagios.
+  official_url: https://icinga.com
+  repository_url: https://github.com/Icinga/icinga2
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want Nagios-style host/service checks with a modern API and HA.
+  avoid_when:
+  - You need metrics-first or tracing-centric observability.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L12
+  - legacy:devopstools_final.md#L706
+  needs_review: true
+- id: influxdata
+  name: InfluxData
+  summary: Time series platform with OSS components and commercial cloud/enterprise offerings.
+  official_url: https://www.influxdata.com
+  repository_url: https://github.com/influxdata/influxdb
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - IoT/sensor-heavy time series with Flux query language.
+  avoid_when:
+  - Prometheus-compatible ecosystem or PromQL is your standard.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L44
+  - legacy:devopstools_final.md#L749
+  needs_review: true
+- id: jaeger
+  name: Jaeger
+  summary: Open source distributed tracing platform.
+  official_url: https://www.jaegertracing.io
+  repository_url: https://github.com/jaegertracing/jaeger
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Tracing & APM
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - CNCF-native distributed tracing with mature UI and backend options.
+  avoid_when:
+  - You need an all-in-one observability platform—Jaeger is tracing-only.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L71
+  - legacy:devopstools_final.md#L779
+  needs_review: true
+- id: komodor
+  name: Komodor
+  summary: Kubernetes troubleshooting and monitoring.
+  official_url: https://komodor.com
+  repository_url: https://github.com/komodorio/komodor
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Your team spends too much time correlating K8s events, deploys, and config changes.
+  avoid_when:
+  - A simple `kubectl` + Prometheus setup is sufficient.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L28
+  - legacy:devopstools_final.md#L727
+  needs_review: true
+- id: krr
+  name: KRR
+  summary: Kubernetes Resource Recommendations by Robusta.
+  repository_url: https://github.com/robusta-dev/krr
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Right-sizing pod requests/limits based on real usage data.
+  avoid_when:
+  - VPA already handles your resource tuning needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L29
+  - legacy:devopstools_final.md#L729
+  needs_review: true
+- id: kube-binpacking-exporter
+  name: kube-binpacking-exporter
+  summary: Exports precomputed Kubernetes cluster binpacking metrics.
+  repository_url: https://github.com/procore-oss/kube-binpacking-exporter
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L731
+  needs_review: true
+- id: kube-state-metrics
+  name: Kube State Metrics
+  summary: Exposes Kubernetes cluster state as metrics.
+  repository_url: https://github.com/kubernetes/kube-state-metrics
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need K8s object-level metrics (deployments, pods, nodes) in Prometheus.
+  avoid_when:
+  - You only care about node/container resource metrics (use cAdvisor/metrics-server instead).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L30
+  - legacy:devopstools_final.md#L730
+  needs_review: true
+- id: kubernetes-monitoring-mixins
+  name: Kubernetes Monitoring Mixins
+  summary: Monitoring dashboards and alerts for Kubernetes.
+  official_url: https://monitoring.mixins.dev/kubernetes
+  repository_url: https://github.com/kubernetes-monitoring/kubernetes-mixin
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Bootstrapping Grafana dashboards and Prometheus rules for K8s.
+  avoid_when:
+  - You've already customized dashboards to your workload and don't want overrides.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L45
+  - legacy:devopstools_final.md#L750
+  needs_review: true
+- id: kubewatch
+  name: Kubewatch
+  summary: Kubernetes event watcher and notifier.
+  repository_url: https://github.com/robusta-dev/kubewatch
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want Slack/webhook alerts on K8s resource changes.
+  avoid_when:
+  - You already have event routing via Robusta or a full observability platform.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L31
+  - legacy:devopstools_final.md#L732
+  needs_review: true
+- id: kwatcher
+  name: Kwatcher
+  summary: Kubernetes event watcher.
+  repository_url: https://github.com/Berg-it/Kwatcher
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Lightweight K8s event streaming to external systems.
+  avoid_when:
+  - Kubewatch or Robusta already covers your event-watching needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L32
+  - legacy:devopstools_final.md#L733
+  needs_review: true
+- id: linnix
+  name: Linnix
+  summary: EBPF and PSI-based observability for pinpointing processes and pods causing Linux stalls and
+    incidents.
+  repository_url: https://github.com/linnix-os/linnix
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L728
+  needs_review: true
+- id: logstash
+  name: Logstash
+  summary: Log ingestion/processing pipeline (Elastic ecosystem).
+  official_url: https://www.elastic.co/logstash
+  repository_url: https://github.com/elastic/logstash
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Complex parsing/enrichment pipelines feeding Elasticsearch.
+  avoid_when:
+  - JVM overhead is a concern—lighter agents (Fluent Bit, Vector) may suffice.
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L58
+  - legacy:devopstools_final.md#L766
+  needs_review: true
+- id: m-monit
+  name: M/Monit
+  summary: Systems monitoring and management (Monit/M/Monit).
+  official_url: https://www.mmonit.com
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need simple process/service watchdogs that auto-restart failures.
+  avoid_when:
+  - Comprehensive dashboarding or distributed tracing is needed.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L13
+  - legacy:devopstools_final.md#L708
+  needs_review: true
+- id: maintenant
+  name: Maintenant
+  summary: One-container self-hosted monitoring for Docker and Kubernetes with autodiscovery, uptime checks,
+    metrics, and status pages.
+  official_url: https://maintenant.dev
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L707
+  needs_review: true
+- id: munin
+  name: Munin
+  summary: Classic monitoring and graphing tool.
+  official_url: https://munin-monitoring.org
+  repository_url: https://github.com/munin-monitoring/munin
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Quick capacity-planning graphs for a small fleet.
+  avoid_when:
+  - You need real-time alerting or high-resolution metrics.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L14
+  - legacy:devopstools_final.md#L709
+  needs_review: true
+- id: nagios
+  name: Nagios
+  summary: Infrastructure monitoring (Nagios Core).
+  official_url: https://www.nagios.org
+  repository_url: https://github.com/NagiosEnterprises/nagioscore
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Legacy check plugins already exist and your team knows the ecosystem.
+  avoid_when:
+  - Starting green-field—modern alternatives offer better UX and scalability.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L15
+  - legacy:devopstools_final.md#L710
+  needs_review: true
+- id: netdata-cloud
+  name: Netdata Cloud
+  summary: SaaS control plane for Netdata (Netdata Agent is open-source; Cloud adds centralized management/collaboration).
+  official_url: https://www.netdata.cloud
+  repository_url: https://github.com/netdata/netdata
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want per-second granularity with near-zero config.
+  avoid_when:
+  - Long-term storage or complex cross-service correlation is the main goal.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L16
+  - legacy:devopstools_final.md#L711
+  needs_review: true
+- id: new-relic
+  name: New Relic
+  summary: Full-stack observability platform.
+  official_url: https://github.com/newrelic
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Generous free tier fits and you want integrated APM + infra + logs.
+  avoid_when:
+  - Data governance or on-prem requirements rule out SaaS.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L17
+  - legacy:devopstools_final.md#L712
+  needs_review: true
+- id: openobserve
+  name: OpenObserve
+  summary: Unified logs/metrics/traces with a focus on log search and cost efficiency.
+  official_url: https://openobserve.ai
+  repository_url: https://github.com/openobserve/openobserve
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want an Elasticsearch alternative with drastically lower storage costs.
+  avoid_when:
+  - You need a mature, battle-tested ecosystem with wide third-party integrations.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L59
+  - legacy:devopstools_final.md#L767
+  needs_review: true
+- id: opensearch
+  name: OpenSearch
+  summary: Search/analytics engine commonly used for logs (Elastic-alternative fork).
+  official_url: https://opensearch.org
+  repository_url: https://github.com/opensearch-project/OpenSearch
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need ELK-like capabilities under a true open-source license.
+  avoid_when:
+  - You're happy with Elastic's licensing, as plugin/feature parity may lag.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L60
+  - legacy:devopstools_final.md#L768
+  needs_review: true
+- id: opentelemetry
+  name: OpenTelemetry
+  summary: Observability framework for traces/metrics/logs.
+  official_url: https://github.com/open-telemetry
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want vendor-neutral instrumentation and backend flexibility.
+  avoid_when:
+  - Your team isn't ready to learn OTel's configuration surface and maturity varies per language SDK.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L46
+  - legacy:devopstools_final.md#L751
+  needs_review: true
+- id: opentelemetry-collector
+  name: OpenTelemetry Collector
+  summary: Vendor-neutral collector to receive/process/export traces (and also logs/metrics) to backends.
+  official_url: https://opentelemetry.io/docs/collector
+  repository_url: https://github.com/open-telemetry/opentelemetry-collector
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Tracing & APM
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want a single, vendor-agnostic telemetry pipeline.
+  avoid_when:
+  - A simpler agent (Fluent Bit, Telegraf) already covers your single-signal needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L72
+  - legacy:devopstools_final.md#L780
+  needs_review: true
+- id: opentelemetry-ebpf-instrumentation
+  name: OpenTelemetry eBPF Instrumentation
+  summary: Zero-code eBPF-based instrumentation for collecting OpenTelemetry telemetry.
+  official_url: https://opentelemetry.io/docs/zero-code/obi
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Tracing & APM
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L781
+  needs_review: true
+- id: otel-gui
+  name: otel-gui
+  summary: Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls,
+    service maps, and correlated logs.
+  repository_url: https://github.com/metafab/otel-gui
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L752
+  needs_review: true
+- id: pandora-fms
+  name: Pandora FMS
+  summary: Monitoring platform with community and enterprise editions.
+  official_url: https://pandorafms.com/community/pandora-fms-downloads
+  repository_url: https://github.com/pandorafms/pandorafms
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need a single tool covering network, servers, and apps in traditional environments.
+  avoid_when:
+  - Kubernetes-native or open-standards (OTel) alignment is required.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L18
+  - legacy:devopstools_final.md#L713
+  needs_review: true
+- id: prometheus
+  name: Prometheus
+  summary: Monitoring and alerting toolkit.
+  official_url: https://prometheus.io
+  repository_url: https://github.com/prometheus/prometheus
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Cloud-native/Kubernetes metrics with a pull model and PromQL.
+  avoid_when:
+  - You need long-term storage out of the box or event/log-based monitoring.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L19
+  - legacy:devopstools_final.md#L714
+  needs_review: true
+- id: quickwit
+  name: Quickwit
+  summary: Distributed log search/indexing built around fast ingestion and cost control.
+  official_url: https://quickwit.io
+  repository_url: https://github.com/quickwit-oss/quickwit
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Cost-efficient log search on object storage with sub-second latency.
+  avoid_when:
+  - You need the broad ecosystem and maturity of Elasticsearch/OpenSearch.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L61
+  - legacy:devopstools_final.md#L769
+  needs_review: true
+- id: robusta
+  name: Robusta
+  summary: Kubernetes observability and automation.
+  official_url: https://home.robusta.dev
+  repository_url: https://github.com/robusta-dev/robusta
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Kubernetes Observability & Troubleshooting
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want automated runbooks and enriched alerts for K8s.
+  avoid_when:
+  - Your cluster is small and basic Prometheus alerting suffices.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L33
+  - legacy:devopstools_final.md#L734
+  needs_review: true
+- id: rsyslog
+  name: rsyslog
+  summary: High-performance syslog daemon with flexible routing (often used as a log edge forwarder).
+  official_url: https://www.rsyslog.com
+  repository_url: https://github.com/rsyslog/rsyslog
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - High-throughput syslog forwarding on Linux hosts.
+  avoid_when:
+  - You need structured log parsing or container-native log collection.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L62
+  - legacy:devopstools_final.md#L770
+  needs_review: true
+- id: sematext
+  name: Sematext
+  summary: Full-stack observability platform covering logs, metrics, tracing, real user monitoring, and
+    synthetic monitoring.
+  official_url: https://sematext.com
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L715
+  needs_review: true
+- id: sensu
+  name: Sensu
+  summary: Observability pipeline (metrics/events/alerts).
+  official_url: https://sensu.io
+  repository_url: https://github.com/sensu/sensu-go
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need a flexible pipeline to route checks/metrics across hybrid infra.
+  avoid_when:
+  - A simpler Prometheus + Grafana stack already covers your needs.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L20
+  - legacy:devopstools_final.md#L716
+  needs_review: true
+- id: sentry
+  name: Sentry
+  summary: Error monitoring with performance/tracing features (popular for app-level APM signals).
+  official_url: https://sentry.io/welcome
+  repository_url: https://github.com/getsentry/sentry
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Tracing & APM
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Developer-facing error tracking with stack traces and release health.
+  avoid_when:
+  - Infrastructure-level tracing or metrics monitoring is the goal.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L73
+  - legacy:devopstools_final.md#L782
+  needs_review: true
+- id: signoz
+  name: SigNoz
+  summary: Open-source observability platform.
+  official_url: https://signoz.io
+  repository_url: https://github.com/SigNoz/signoz
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Self-hosted Datadog alternative with OTel-native traces, metrics, and logs.
+  avoid_when:
+  - You lack capacity to run ClickHouse-based infra.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L47
+  - legacy:devopstools_final.md#L753
+  needs_review: true
+- id: site24x7
+  name: Site24x7
+  summary: Full-stack monitoring platform.
+  official_url: https://www.site24x7.com
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want SaaS monitoring with broad coverage (infra, apps, network) at mid-market pricing.
+  avoid_when:
+  - Deep customization or open-source tooling is preferred.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L21
+  - legacy:devopstools_final.md#L717
+  needs_review: true
+- id: syslog-ng
+  name: syslog-ng
+  summary: Syslog daemon/log collector with parsing and multiple destinations.
+  official_url: https://www.syslog-ng.com/products/open-source-log-management
+  repository_url: https://github.com/syslog-ng/syslog-ng
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Advanced syslog parsing, filtering, and multi-destination routing.
+  avoid_when:
+  - Rsyslog already meets your needs or you're in a container-only environment.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L63
+  - legacy:devopstools_final.md#L771
+  needs_review: true
+- id: telegraf
+  name: Telegraf
+  summary: Plugin-driven server agent for collecting and reporting metrics (part of InfluxData ecosystem).
+  official_url: https://www.influxdata.com/time-series-platform/telegraf
+  repository_url: https://github.com/influxdata/telegraf
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need a batteries-included agent with 300+ input plugins.
+  avoid_when:
+  - Prometheus exporters or OTel Collector already cover your collection needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L48
+  - legacy:devopstools_final.md#L754
+  needs_review: true
+- id: thanos
+  name: Thanos
+  summary: Highly available Prometheus setup with long-term storage.
+  official_url: https://thanos.io
+  repository_url: https://github.com/thanos-io/thanos
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Extending Prometheus with global querying and cheap object-store retention.
+  avoid_when:
+  - Mimir's multi-tenancy or Cortex is a better fit, or you only have one small Prometheus instance.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L49
+  - legacy:devopstools_final.md#L755
+  needs_review: true
+- id: tracetest
+  name: Tracetest
+  summary: Trace-based testing for distributed systems.
+  official_url: https://tracetest.io
+  repository_url: https://github.com/kubeshop/tracetest
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Tracing & APM
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Writing integration tests that assert on distributed trace structure.
+  avoid_when:
+  - Traditional API/contract testing already gives sufficient coverage.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L74
+  - legacy:devopstools_final.md#L783
+  needs_review: true
+- id: uptime-kuma
+  name: Uptime Kuma
+  summary: Self-hosted uptime monitoring.
+  official_url: https://uptime.kuma.pet
+  repository_url: https://github.com/louislam/uptime-kuma
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Simple, self-hosted uptime/status-page monitoring.
+  avoid_when:
+  - You need full infrastructure observability beyond HTTP/TCP checks.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L22
+  - legacy:devopstools_final.md#L718
+  needs_review: true
+- id: uptimerobot
+  name: UptimeRobot
+  summary: Uptime monitoring service.
+  official_url: https://uptimerobot.com
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Quick external uptime checks with a generous free tier.
+  avoid_when:
+  - You need internal monitoring, deep diagnostics, or self-hosting.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L23
+  - legacy:devopstools_final.md#L719
+  needs_review: true
+- id: vector
+  name: Vector
+  summary: High-performance observability data pipeline (logs/metrics/traces) as an alternative to Fluent
+    Bit/Fluentd.
+  official_url: https://vector.dev
+  repository_url: https://github.com/vectordotdev/vector
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Log Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want a fast, Rust-based pipeline with VRL transforms and unified log/metric routing.
+  avoid_when:
+  - Fluent Bit/Fluentd plugin ecosystem is critical to your workflow.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L64
+  - legacy:devopstools_final.md#L772
+  needs_review: true
+- id: victoriametrics
+  name: VictoriaMetrics
+  summary: Time series database; OSS core with enterprise offerings.
+  official_url: https://victoriametrics.com
+  repository_url: https://github.com/VictoriaMetrics/VictoriaMetrics
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want a Prometheus-compatible TSDB with better compression and simpler ops.
+  avoid_when:
+  - You need enterprise clustering features—those require a paid license.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L50
+  - legacy:devopstools_final.md#L756
+  needs_review: true
+- id: zabbix
+  name: Zabbix
+  summary: Enterprise-grade monitoring platform (metrics, triggers, dashboards).
+  official_url: https://www.zabbix.com
+  repository_url: https://github.com/zabbix/zabbix
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Monitoring & Observability Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Large-scale traditional infra monitoring with templates and agent support.
+  avoid_when:
+  - Your workload is fully cloud-native and you prefer PromQL/OTel standards.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L24
+  - legacy:devopstools_final.md#L720
+  needs_review: true
+- id: zipkin
+  name: Zipkin
+  summary: Distributed tracing system.
+  official_url: https://zipkin.io
+  repository_url: https://github.com/openzipkin/zipkin
+  categories:
+  - monitoring-metrics-logs-tracing
+  subcategories:
+  - Visualization, Metrics, and Tracing
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - Simple, lightweight distributed tracing for Java-centric stacks.
+  avoid_when:
+  - Jaeger or OTel Collector already serves as your tracing backend.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L51
+  - legacy:devopstools_final.md#L757
+  needs_review: true

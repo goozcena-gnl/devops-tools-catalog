@@ -1,0 +1,359 @@
+- id: ansible
+  name: Ansible
+  summary: Agentless configuration management, orchestration, and automation.
+  official_url: https://www.ansible.com
+  repository_url: https://github.com/ansible/ansible
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want agentless, YAML-based automation with a low learning curve.
+  avoid_when:
+  - You need real-time state enforcement or managing thousands of nodes at high frequency.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L68
+  - legacy:devopstools_final.md#L194
+  needs_review: true
+- id: cfengine
+  name: CFEngine
+  summary: Policy-based configuration management; community + commercial editions.
+  official_url: https://cfengine.com
+  repository_url: https://github.com/cfengine/core
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need an ultra-lightweight agent with convergent policy enforcement at massive scale.
+  avoid_when:
+  - Community size and ecosystem matter more than raw performance.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L70
+  - legacy:devopstools_final.md#L195
+  needs_review: true
+- id: chef
+  name: Chef
+  summary: Infrastructure automation and configuration management.
+  official_url: https://www.chef.io
+  repository_url: https://github.com/chef/chef
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want Ruby-based, test-driven infrastructure with rich cookbooks.
+  avoid_when:
+  - You prefer agentless tooling or simpler YAML-based workflows.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L72
+  - legacy:devopstools_final.md#L196
+  needs_review: true
+- id: confighub
+  name: ConfigHub
+  summary: Configuration management platform for distributed applications.
+  official_url: https://www.confighub.com
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need centralized, context-aware config management across environments.
+  avoid_when:
+  - A simple secrets manager or feature-flag service suffices.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L74
+  - legacy:devopstools_final.md#L197
+  needs_review: true
+- id: etckeeper
+  name: etckeeper
+  summary: Version control for `/etc` (tracks config changes in Git).
+  official_url: https://etckeeper.branchable.com
+  repository_url: https://github.com/etckeeper/etckeeper
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a safety net that records every change to system config files.
+  avoid_when:
+  - You're already managing all configs declaratively via IaC/CM tools.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L76
+  - legacy:devopstools_final.md#L198
+  needs_review: true
+- id: juju
+  name: Juju
+  summary: Service modeling and orchestration tool from Canonical (operators/charms).
+  official_url: https://canonical.com/juju
+  repository_url: https://github.com/canonical/juju
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You deploy complex application stacks on Ubuntu/MAAS/LXD and want charm-based modeling.
+  avoid_when:
+  - You're not in the Canonical ecosystem or prefer Helm/Terraform patterns.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L78
+  - legacy:devopstools_final.md#L199
+  needs_review: true
+  repository_archived: true
+- id: kolla-ansible
+  name: Kolla-Ansible
+  summary: Ansible playbooks for deploying OpenStack.
+  official_url: https://docs.openstack.org/kolla-ansible/latest
+  repository_url: https://github.com/openstack/kolla-ansible
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You're deploying OpenStack and want containerized services via Ansible.
+  avoid_when:
+  - You're not running OpenStack.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L80
+  - legacy:devopstools_final.md#L200
+  needs_review: true
+- id: mitogen-for-ansible
+  name: Mitogen for Ansible
+  summary: Ansible accelerator to speed up module execution and reduce SSH overhead.
+  official_url: https://mitogen.networkgenomics.com/ansible_detailed.html
+  repository_url: https://github.com/mitogen-hq/mitogen
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - Ansible playbook execution is slow due to SSH overhead on many hosts.
+  avoid_when:
+  - You're on the latest Ansible versions where compatibility may lag.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L82
+  - legacy:devopstools_final.md#L201
+  needs_review: true
+- id: puppet
+  name: Puppet
+  summary: Configuration management and automation; open source core with enterprise features.
+  official_url: https://puppet.com
+  repository_url: https://github.com/puppetlabs/puppet
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a mature, agent-based system with strong state enforcement and reporting.
+  avoid_when:
+  - You want agentless simplicity or your team doesn't want to learn Puppet DSL.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L84
+  - legacy:devopstools_final.md#L202
+  needs_review: true
+- id: red-hat-ansible-automation-platform
+  name: Red Hat Ansible Automation Platform
+  summary: Enterprise automation platform built around Ansible.
+  official_url: https://www.redhat.com/en/technologies/management/ansible
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need enterprise support, RBAC, and a centralized dashboard for Ansible at scale.
+  avoid_when:
+  - Community Ansible and AWX cover your needs.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L86
+  - legacy:devopstools_final.md#L203
+  needs_review: true
+- id: rudder
+  name: Rudder
+  summary: Continuous configuration and automation platform.
+  official_url: https://www.rudder.io
+  repository_url: https://github.com/Normation/rudder
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want continuous compliance with a web UI and audit trails out of the box.
+  avoid_when:
+  - Your team prefers code-first workflows over GUI-driven management.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L88
+  - legacy:devopstools_final.md#L204
+  needs_review: true
+- id: salt
+  name: Salt
+  summary: Event-driven automation and configuration management.
+  official_url: https://saltproject.io
+  repository_url: https://github.com/saltstack/salt
+  categories:
+  - configuration-management
+  subcategories:
+  - Configuration Management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need event-driven, highly scalable remote execution and config management.
+  avoid_when:
+  - The learning curve for states/pillars/grains feels excessive for your team size.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L90
+  - legacy:devopstools_final.md#L205
+  needs_review: true

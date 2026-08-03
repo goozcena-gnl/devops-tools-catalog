@@ -1,0 +1,484 @@
+- id: artifact-hub
+  name: Artifact Hub
+  summary: Discover and share packages (Helm charts, operators, etc.).
+  official_url: https://artifacthub.io
+  repository_url: https://github.com/artifacthub/hub
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want a searchable catalog for cloud-native packages (Helm, OLM, etc.).'
+  avoid_when:
+  - '* You need a private artifact registry; Artifact Hub is a discovery layer, not a storage backend.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L102
+  - legacy:devopstools_final.md#L367
+  needs_review: true
+- id: cloudsmith
+  name: Cloudsmith
+  summary: Managed package and artifact repository service.
+  official_url: https://cloudsmith.com
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want a fully managed, multi-format package registry with fine-grained access control.'
+  avoid_when:
+  - '* You prefer self-hosted solutions or have cost constraints for large storage.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L104
+  - legacy:devopstools_final.md#L368
+  needs_review: true
+- id: docker-hardened-images
+  name: Docker Hardened Images
+  summary: Curated hardened container images catalog.
+  official_url: https://hub.docker.com/hardened-images/catalog
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You need pre-hardened base images to reduce CVE count and meet compliance.'
+  avoid_when:
+  - '* You maintain your own hardened base images or need full control over image contents.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L106
+  - legacy:devopstools_final.md#L369
+  needs_review: true
+- id: docker-hub
+  name: Docker Hub
+  summary: Cloud-based registry for Docker images.
+  official_url: https://www.docker.com/products/docker-hub
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You need a public registry for open-source images or a simple private registry.'
+  avoid_when:
+  - '* You need advanced RBAC, vulnerability scanning, or have rate-limit concerns at scale.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L108
+  - legacy:devopstools_final.md#L370
+  needs_review: true
+- id: google-artifact-registry
+  name: Google Artifact Registry
+  summary: Google Cloud's unified repository for container images and language packages.
+  official_url: https://cloud.google.com/artifact-registry
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You''re on GCP and want a native, IAM-integrated registry for containers and packages.'
+  avoid_when:
+  - '* You''re multi-cloud and want a vendor-neutral registry.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L110
+  - legacy:devopstools_final.md#L371
+  needs_review: true
+- id: harbor
+  name: Harbor
+  summary: Cloud-native registry for storing, signing, and scanning container images.
+  official_url: https://goharbor.io
+  repository_url: https://github.com/goharbor/harbor
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You need a self-hosted registry with built-in vulnerability scanning, RBAC, and image replication.'
+  avoid_when:
+  - '* You want a managed service and don''t want to operate registry infrastructure.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L112
+  - legacy:devopstools_final.md#L372
+  needs_review: true
+- id: jfrog-artifactory
+  name: JFrog Artifactory
+  summary: Universal artifact repository manager.
+  official_url: https://jfrog.com/artifactory
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You need a single repository for all package formats (Maven, npm, Docker, etc.) with enterprise
+    support.'
+  avoid_when:
+  - '* You only store one artifact type and want to avoid licensing costs.'
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L114
+  - legacy:devopstools_final.md#L373
+  needs_review: true
+- id: jfrog-connect
+  name: JFrog Connect
+  summary: IoT device update and management platform.
+  official_url: https://jfrog.com/connect
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You need OTA updates and device fleet management integrated with Artifactory.'
+  avoid_when:
+  - '* You don''t manage IoT/edge devices.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L116
+  - legacy:devopstools_final.md#L374
+  needs_review: true
+- id: jfrog-distribution
+  name: JFrog Distribution
+  summary: Release distribution for artifacts/binaries.
+  official_url: https://jfrog.com/distribution
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You need to distribute signed release bundles to edge nodes or remote sites.'
+  avoid_when:
+  - '* You don''t require multi-site artifact distribution.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L118
+  - legacy:devopstools_final.md#L375
+  needs_review: true
+- id: jfrog-pipelines
+  name: JFrog Pipelines
+  summary: CI/CD automation integrated with JFrog platform.
+  official_url: https://jfrog.com/pipelines
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want CI/CD tightly integrated with Artifactory and the JFrog ecosystem.'
+  avoid_when:
+  - '* You already have a CI/CD platform and don''t want vendor lock-in.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L120
+  - legacy:devopstools_final.md#L376
+  needs_review: true
+- id: jfrog-platform
+  name: JFrog Platform
+  summary: Unified DevSecOps platform for artifact management, security, CI/CD, and distribution.
+  official_url: https://jfrog.com
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want a single vendor for artifact management, security scanning, and distribution.'
+  avoid_when:
+  - '* You prefer best-of-breed tools or want to avoid enterprise licensing costs.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L122
+  - legacy:devopstools_final.md#L377
+  needs_review: true
+- id: kubesearch
+  name: Kubesearch
+  summary: Search engine for Helm charts and Kubernetes packages.
+  official_url: https://kubesearch.dev
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L378
+  needs_review: true
+- id: nexus-repository
+  name: Nexus Repository
+  summary: Universal artifact repository manager.
+  official_url: https://www.sonatype.com/products/sonatype-nexus-repository
+  repository_url: https://github.com/sonatype/nexus-public
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You need a self-hosted, multi-format artifact repository (especially strong for Java/Maven).'
+  avoid_when:
+  - '* You need advanced HA or replication features only in the Pro tier and can''t justify the cost.'
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L124
+  - legacy:devopstools_final.md#L379
+  needs_review: true
+- id: oras
+  name: ORAS
+  summary: OCI registry client/library (store artifacts in registries).
+  official_url: https://oras.land
+  repository_url: https://github.com/oras-project/oras
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want to store non-container artifacts (configs, SBOMs, signatures) in OCI-compliant registries.'
+  avoid_when:
+  - '* You only push/pull container images and don''t need generic OCI artifact support.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L126
+  - legacy:devopstools_final.md#L380
+  needs_review: true
+- id: proget
+  name: ProGet
+  summary: Universal package manager for DevOps and CI/CD.
+  official_url: https://inedo.com/proget
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You''re in a Windows/.NET ecosystem and need a universal feed manager.'
+  avoid_when:
+  - '* You''re Linux/cloud-native and other tools have better ecosystem fit.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L128
+  - legacy:devopstools_final.md#L381
+  needs_review: true
+- id: quay
+  name: Quay
+  summary: Container registry for building, storing, and distributing images.
+  official_url: https://quay.io
+  repository_url: https://github.com/quay/quay
+  categories:
+  - artifact-package-management
+  subcategories:
+  - Artifact Management
+  roles:
+  - devops-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want a registry with built-in security scanning and geo-replication, especially in Red Hat/OpenShift
+    environments.'
+  avoid_when:
+  - '* You need a lightweight, easy-to-operate registry without enterprise complexity.'
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L130
+  - legacy:devopstools_final.md#L382
+  needs_review: true

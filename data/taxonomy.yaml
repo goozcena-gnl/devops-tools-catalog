@@ -1,0 +1,122 @@
+version: 1
+categories:
+  - id: foundations-linux-scripting
+    name: Foundations, Linux and scripting
+  - id: source-control-repository-management
+    name: Source control and repository management
+  - id: cloud-platforms-management
+    name: Cloud platforms and cloud management
+  - id: infrastructure-as-code
+    name: Infrastructure as Code
+  - id: configuration-management
+    name: Configuration management
+  - id: virtualization-bare-metal-homelab
+    name: Virtualization, bare metal and homelab
+  - id: containers-image-tooling
+    name: Containers and image tooling
+  - id: kubernetes-distributions-operations
+    name: Kubernetes distributions and operations
+  - id: kubernetes-networking-storage-addons
+    name: Kubernetes networking, storage and add-ons
+  - id: ci-build-testing
+    name: CI, build and testing
+  - id: cd-gitops-release-promotion
+    name: CD, GitOps, release and promotion
+  - id: artifact-package-management
+    name: Artifact and package management
+  - id: platform-engineering-idp
+    name: Platform engineering and internal developer platforms
+  - id: developer-experience-local-environments
+    name: Developer experience and local environments
+  - id: monitoring-metrics-logs-tracing
+    name: Monitoring, metrics, logs and tracing
+  - id: sre-incident-response-on-call
+    name: SRE, incident response and on-call
+  - id: backup-disaster-recovery-resilience
+    name: Backup, disaster recovery and resilience
+  - id: chaos-performance-engineering
+    name: Chaos and performance engineering
+  - id: application-cloud-security
+    name: Application and cloud security
+  - id: iam-secrets-certificates
+    name: IAM, secrets and certificate management
+  - id: software-supply-chain-security
+    name: Software supply-chain security
+  - id: policy-governance-compliance
+    name: Policy, governance and compliance
+  - id: finops-sustainability
+    name: FinOps and sustainability
+  - id: databases-caching-data-infrastructure
+    name: Databases, caching and data infrastructure
+  - id: serverless-edge-webassembly
+    name: Serverless, edge and WebAssembly
+  - id: workflow-automation-chatops
+    name: Workflow automation and ChatOps
+  - id: mlops-llmops-ai-infrastructure
+    name: MLOps, LLMOps and AI infrastructure
+  - id: documentation-learning-career
+    name: Documentation, learning and career resources
+  - id: emerging-experimental
+    name: Emerging and experimental tools
+  - id: deprecated-historical
+    name: Deprecated and historical tools
+roles:
+  - id: devops-engineer
+    name: DevOps Engineer
+  - id: cloud-engineer
+    name: Cloud Engineer
+  - id: platform-engineer
+    name: Platform Engineer
+  - id: site-reliability-engineer
+    name: Site Reliability Engineer
+  - id: devsecops-engineer
+    name: DevSecOps Engineer
+  - id: infrastructure-systems-engineer
+    name: Infrastructure and Systems Engineer
+  - id: kubernetes-engineer
+    name: Kubernetes Engineer
+  - id: finops-engineer
+    name: FinOps Engineer
+  - id: mlops-ai-infrastructure-engineer
+    name: MLOps and AI Infrastructure Engineer
+  - id: developer-experience-engineer
+    name: Developer Experience Engineer
+  - id: release-engineer
+    name: Release Engineer
+  - id: observability-engineer
+    name: Observability Engineer
+  - id: cloud-security-engineer
+    name: Cloud Security Engineer
+lifecycle_stages:
+  - plan
+  - develop
+  - build
+  - test
+  - release
+  - deploy
+  - operate
+  - monitor
+  - secure
+  - optimize
+  - learn
+  - retire
+license_models:
+  - oss
+  - source-available
+  - open-core
+  - commercial
+  - free-saas
+  - documentation
+  - unknown
+statuses:
+  - active
+  - deprecated
+  - archived
+  - historical
+  - needs-review
+maturities:
+  - established
+  - growing
+  - emerging
+  - experimental
+  - unknown

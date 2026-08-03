@@ -1,0 +1,512 @@
+- id: bazel
+  name: Bazel
+  summary: Fast, scalable, multi-language build system.
+  official_url: https://bazel.build
+  repository_url: https://github.com/bazelbuild/bazel
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You have a large monorepo and need hermetic, incremental builds at scale.'
+  avoid_when:
+  - '* You have a small project; Bazel''s complexity is not worth it for simple builds.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L72
+  - legacy:devopstools_final.md#L347
+  needs_review: true
+- id: buildah
+  name: Buildah
+  summary: Build OCI images without a daemon.
+  official_url: https://buildah.io
+  repository_url: https://github.com/containers/buildah
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You need daemonless, rootless container image builds (especially in CI or restricted environments).'
+  avoid_when:
+  - '* You''re happy with standard Docker builds and don''t have security constraints on the daemon.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L74
+  - legacy:devopstools_final.md#L348
+  needs_review: true
+- id: buildkit
+  name: BuildKit
+  summary: Next-generation Docker image build engine used by Buildx.
+  official_url: https://docs.docker.com/build/buildkit
+  repository_url: https://github.com/moby/buildkit
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want faster Docker builds with better caching, parallelism, and build secrets.'
+  avoid_when:
+  - '* You''re already using it (it''s the default in modern Docker); switching only matters on older
+    Docker versions.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L76
+  - legacy:devopstools_final.md#L349
+  needs_review: true
+- id: cek
+  name: cek
+  summary: Inspect OCI image filesystems and layers without running containers.
+  repository_url: https://github.com/bschaatsbergen/cek
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L350
+  needs_review: true
+- id: distroless
+  name: Distroless
+  summary: Minimal container images for secure deployments.
+  repository_url: https://github.com/GoogleContainerTools/distroless
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want to minimize attack surface by shipping images without shells or package managers.'
+  avoid_when:
+  - '* You need to exec into containers for debugging or require OS-level packages at runtime.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L78
+  - legacy:devopstools_final.md#L351
+  needs_review: true
+- id: docker-build
+  name: Docker Build
+  summary: Docker image build system.
+  official_url: https://docs.docker.com/build
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You''re using Docker and want the standard, well-documented build flow.'
+  avoid_when:
+  - '* You need daemonless builds or your CI environment doesn''t support Docker-in-Docker.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L80
+  - legacy:devopstools_final.md#L352
+  needs_review: true
+- id: docker-buildx
+  name: Docker Buildx
+  summary: Docker CLI plugin for extended build capabilities.
+  repository_url: https://github.com/docker/buildx
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You need multi-platform images or advanced BuildKit features via Docker CLI.'
+  avoid_when:
+  - '* You only build for a single platform and don''t need extended features.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L82
+  - legacy:devopstools_final.md#L353
+  needs_review: true
+- id: docker-offload
+  name: Docker Offload
+  summary: Offload Docker builds to the cloud.
+  official_url: https://www.docker.com/products/docker-offload
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* Local builds are slow and you want to offload compute to the cloud.'
+  avoid_when:
+  - '* You have fast local hardware or strict data-locality requirements.'
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L84
+  - legacy:devopstools_final.md#L354
+  needs_review: true
+- id: earthly
+  name: Earthly
+  summary: Build automation framework.
+  official_url: https://earthly.dev
+  repository_url: https://github.com/earthly/earthly
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want Dockerfile-like syntax with Makefile-like orchestration for reproducible builds.'
+  avoid_when:
+  - '* Your team already has a well-tuned build system and doesn''t need another abstraction layer.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L86
+  - legacy:devopstools_final.md#L355
+  needs_review: true
+- id: gradle
+  name: Gradle
+  summary: Flexible build automation tool for Java and other languages.
+  official_url: https://gradle.org
+  repository_url: https://github.com/gradle/gradle
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You build JVM projects and need flexible, incremental builds with dependency management.'
+  avoid_when:
+  - '* Your project is not JVM-based or you prefer simpler tools like Maven.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L88
+  - legacy:devopstools_final.md#L356
+  needs_review: true
+- id: ko
+  name: Ko
+  summary: Build Go apps into container images.
+  official_url: https://ko.build
+  repository_url: https://github.com/ko-build/ko
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You have Go applications and want fast, simple, Dockerfile-free container builds.'
+  avoid_when:
+  - '* Your application is not written in Go or needs custom OS-level dependencies.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L92
+  - legacy:devopstools_final.md#L358
+  needs_review: true
+- id: nix
+  name: Nix
+  summary: Reproducible build and package manager.
+  official_url: https://nixos.org
+  repository_url: https://github.com/NixOS/nix
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You need fully reproducible, declarative builds and dev environments.'
+  avoid_when:
+  - '* Your team is unfamiliar with functional paradigms; the learning curve is significant.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L94
+  - legacy:devopstools_final.md#L359
+  needs_review: true
+- id: sbt
+  name: sbt
+  summary: Interactive build tool for Scala, Java, and other JVM projects.
+  official_url: https://www.scala-sbt.org
+  repository_url: https://github.com/sbt/sbt
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L360
+  needs_review: true
+- id: shipwright
+  name: Shipwright
+  summary: Framework for building container images on Kubernetes.
+  official_url: https://shipwright.io
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want a Kubernetes CRD-based abstraction over multiple build strategies (Buildah, Kaniko, BuildKit,
+    etc.).'
+  avoid_when:
+  - '* You don''t run Kubernetes or only need one build tool.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L96
+  - legacy:devopstools_final.md#L361
+  needs_review: true
+- id: skaffold
+  name: Skaffold
+  summary: Command-line workflow tool for fast, repeatable Kubernetes development across build, push,
+    deploy, and debug loops.
+  official_url: https://skaffold.dev
+  repository_url: https://github.com/GoogleContainerTools/skaffold
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L362
+  needs_review: true
+- id: skopeo
+  name: Skopeo
+  summary: Daemonless tool to inspect, copy, sign, and sync container images across registries and local
+    stores.
+  repository_url: https://github.com/containers/skopeo
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L363
+  needs_review: true
+- id: werf
+  name: werf
+  summary: GitOps tool for building and deploying containers.
+  official_url: https://werf.io
+  repository_url: https://github.com/werf/werf
+  categories:
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - '* You want an integrated build-and-deploy tool that tracks Git state for convergence.'
+  avoid_when:
+  - '* You already have separate, well-established build and deploy pipelines.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L98
+  - legacy:devopstools_final.md#L364
+  needs_review: true

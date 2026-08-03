@@ -1,0 +1,1370 @@
+- id: alpine-linux
+  name: Alpine Linux
+  summary: Security-oriented, lightweight Linux distribution.
+  official_url: https://github.com/alpinelinux
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need tiny container base images with a small attack surface.
+  avoid_when:
+  - Musl libc compatibility issues or lack of glibc-based packages blocks your workload.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L130
+  - legacy:devopstools_final.md#L228
+  needs_review: true
+- id: azure-linux
+  name: Azure Linux
+  summary: Microsoft's CBL-Mariner-based Linux distribution optimized for container and cloud workloads
+    on Azure.
+  official_url: https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L229
+  needs_review: true
+- id: bottlerocket
+  name: Bottlerocket
+  summary: Linux-based OS for running containers.
+  official_url: https://bottlerocket.dev
+  repository_url: https://github.com/bottlerocket-os/bottlerocket
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want an immutable, security-hardened OS purpose-built for container hosts.
+  avoid_when:
+  - You need general-purpose SSH access and package management on the host.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L132
+  - legacy:devopstools_final.md#L230
+  needs_review: true
+- id: confidential-containers
+  name: Confidential Containers
+  summary: CNCF project for running Kubernetes pods inside hardware-backed Trusted Execution Environments
+    (TEEs).
+  official_url: https://confidentialcontainers.org
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L231
+  needs_review: true
+- id: containerd
+  name: containerd
+  summary: Container runtime.
+  official_url: https://containerd.io
+  repository_url: https://github.com/containerd/containerd
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a lightweight, production-grade container runtime (Kubernetes default).
+  avoid_when:
+  - You need Docker-CLI-level UX for local development without additional tooling.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L134
+  - legacy:devopstools_final.md#L232
+  needs_review: true
+- id: cri-o
+  name: CRI-O
+  summary: Kubernetes container runtime (CRI implementation).
+  official_url: https://cri-o.io
+  repository_url: https://github.com/cri-o/cri-o
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a minimal, Kubernetes-only container runtime with no extras.
+  avoid_when:
+  - You also need to run containers outside Kubernetes on the same host.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L136
+  - legacy:devopstools_final.md#L233
+  needs_review: true
+- id: criu
+  name: CRIU
+  summary: Checkpoint/Restore In Userspace for Linux containers and processes.
+  official_url: https://criu.org/Main_Page
+  repository_url: https://github.com/checkpoint-restore/criu
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need live migration, fast restart, or snapshotting of running processes/containers.
+  avoid_when:
+  - Your workloads are stateless and easily re-schedulable.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L138
+  - legacy:devopstools_final.md#L234
+  needs_review: true
+- id: ctop
+  name: ctop
+  summary: Container metrics viewer (top-like).
+  official_url: https://ctop.sh
+  repository_url: https://github.com/bcicen/ctop
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a quick, visual overview of container resource usage in a terminal.
+  avoid_when:
+  - You already have a full monitoring stack (Prometheus/Grafana) in place.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L140
+  - legacy:devopstools_final.md#L235
+  needs_review: true
+- id: dive
+  name: dive
+  summary: Explore Docker image layers.
+  repository_url: https://github.com/wagoodman/dive
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to analyze and reduce Docker image size by inspecting each layer.
+  avoid_when:
+  - You don't need image optimization or already use multi-stage builds effectively.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L142
+  - legacy:devopstools_final.md#L236
+  needs_review: true
+- id: docker-desktop
+  name: Docker Desktop
+  summary: Desktop Docker environment.
+  official_url: https://www.docker.com/products/docker-desktop
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a batteries-included Docker experience on Mac/Windows with GUI.
+  avoid_when:
+  - Licensing costs are a concern for large teams or you prefer open-source alternatives.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L144
+  - legacy:devopstools_final.md#L237
+  needs_review: true
+- id: dockur-macos
+  name: Dockur macOS
+  summary: MacOS in a Docker container.
+  repository_url: https://github.com/dockur/macos
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a macOS environment for CI/testing without dedicated Apple hardware.
+  avoid_when:
+  - You need production-grade macOS VMs or strict Apple EULA compliance.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L146
+  - legacy:devopstools_final.md#L238
+  needs_review: true
+- id: dockur-windows
+  name: Dockur Windows
+  summary: Windows in a Docker container.
+  repository_url: https://github.com/dockur/windows
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a disposable Windows environment for testing or CI.
+  avoid_when:
+  - You need production Windows workloads with full licensing compliance.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L148
+  - legacy:devopstools_final.md#L239
+  needs_review: true
+- id: firecracker
+  name: Firecracker
+  summary: Lightweight virtualization for microVMs.
+  official_url: https://firecracker-microvm.github.io
+  repository_url: https://github.com/firecracker-microvm/firecracker
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need sub-second VM startup for multi-tenant serverless or container workloads.
+  avoid_when:
+  - You need full VM features like GPU passthrough or legacy OS support.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L150
+  - legacy:devopstools_final.md#L240
+  needs_review: true
+- id: flatcar-container-linux
+  name: Flatcar Container Linux
+  summary: Immutable Linux distro for containers.
+  official_url: https://www.flatcar.org
+  repository_url: https://github.com/flatcar/Flatcar
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want an auto-updating, immutable OS for container hosts.
+  avoid_when:
+  - You need to install arbitrary packages or run non-containerized workloads.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L152
+  - legacy:devopstools_final.md#L242
+  needs_review: true
+- id: futurfusion
+  name: FuturFusion
+  summary: Dell-backed VMware exit solution that preserves and migrates existing VMware estates to open
+    infrastructure.
+  official_url: https://futurfusion.io
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L241
+  needs_review: true
+- id: gvisor
+  name: gVisor
+  summary: Application kernel and container sandbox runtime that provides strong isolation between containers
+    and the host.
+  official_url: https://gvisor.dev
+  repository_url: https://github.com/google/gvisor
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L243
+  needs_review: true
+- id: hyper-v
+  name: Hyper-V
+  summary: Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows
+    Server.
+  official_url: https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L244
+  needs_review: true
+- id: incus
+  name: Incus
+  summary: Modern system container and VM manager.
+  official_url: https://linuxcontainers.org/fr/incus/introduction
+  repository_url: https://github.com/lxc/incus
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a unified tool for system containers and VMs with a modern API.
+  avoid_when:
+  - You only need application containers (Docker/Podman) or full hypervisor features.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L154
+  - legacy:devopstools_final.md#L245
+  needs_review: true
+- id: incus-os
+  name: Incus OS
+  summary: Operating system images and distribution tooling for Incus environments.
+  official_url: https://linuxcontainers.org/incus-os
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L246
+  needs_review: true
+- id: kata-containers
+  name: Kata Containers
+  summary: Secure containers with lightweight VMs.
+  official_url: https://katacontainers.io
+  repository_url: https://github.com/kata-containers/kata-containers
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need VM-level isolation for untrusted container workloads.
+  avoid_when:
+  - The performance overhead of micro-VMs is unacceptable or you run trusted workloads only.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L156
+  - legacy:devopstools_final.md#L247
+  needs_review: true
+- id: kcli
+  name: kcli
+  summary: Unified CLI for provisioning VMs, Kubernetes clusters, and infrastructure across libvirt, cloud,
+    and virtualization providers.
+  official_url: https://kcli.readthedocs.io/en/latest
+  repository_url: https://github.com/karmab/kcli
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L248
+  needs_review: true
+- id: lazydocker
+  name: Lazydocker
+  summary: Terminal UI for Docker and Docker Compose.
+  repository_url: https://github.com/jesseduffield/lazydocker
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a quick TUI to manage containers, images, and logs without memorizing CLI flags.
+  avoid_when:
+  - You prefer scripted automation or already use Portainer.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L158
+  - legacy:devopstools_final.md#L249
+  needs_review: true
+- id: libvirt
+  name: libvirt
+  summary: API/daemon for managing virtualization platforms.
+  official_url: https://libvirt.org
+  repository_url: https://github.com/libvirt/libvirt
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a stable abstraction layer over KVM/QEMU/Xen for VM management.
+  avoid_when:
+  - You only run containers or use a higher-level orchestrator like Proxmox.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L160
+  - legacy:devopstools_final.md#L250
+  needs_review: true
+- id: lima
+  name: Lima
+  summary: Linux VMs on macOS (and more).
+  official_url: https://lima-vm.io
+  repository_url: https://github.com/lima-vm/lima
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need lightweight Linux VMs on macOS for container development without Docker Desktop.
+  avoid_when:
+  - You're on Linux or prefer a more integrated solution like OrbStack.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L162
+  - legacy:devopstools_final.md#L251
+  needs_review: true
+- id: linux-containers-lxc-lxd
+  name: Linux Containers (LXC/LXD)
+  summary: System containers and VM manager.
+  official_url: https://linuxcontainers.org
+  repository_url: https://github.com/canonical/lxd
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want lightweight system containers that behave like VMs.
+  avoid_when:
+  - You need OCI-compliant application containers for microservices.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L164
+  - legacy:devopstools_final.md#L252
+  needs_review: true
+- id: localstack
+  name: LocalStack
+  summary: Local AWS cloud emulator for development and testing.
+  official_url: https://www.localstack.cloud
+  repository_url: https://github.com/localstack/localstack
+  categories:
+  - virtualization-bare-metal-homelab
+  - developer-experience-local-environments
+  subcategories:
+  - Developer Environment
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  - deploy
+  - operate
+  use_when:
+  - You want to develop and test AWS integrations offline without incurring cloud costs.
+  - You want to develop/test AWS integrations offline without incurring cloud costs.
+  avoid_when:
+  - You need full API parity with AWS or are testing non-AWS services.
+  - You need high-fidelity parity with production AWS services (some services are only partially emulated).
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L166
+  - legacy:7_Development-Collaboration/README.md#L36
+  - legacy:devopstools_final.md#L1064
+  - legacy:devopstools_final.md#L253
+  needs_review: true
+  repository_archived: true
+- id: miniblue
+  name: MiniBlue
+  summary: Local Azure emulator that emulates 26+ Azure services in a single binary for development and
+    testing without an Azure account.
+  official_url: https://miniblue.io
+  repository_url: https://github.com/moabukar/miniblue
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L254
+  needs_review: true
+- id: nerdctl
+  name: nerdctl
+  summary: Docker-compatible CLI for containerd.
+  repository_url: https://github.com/containerd/nerdctl
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a Docker-like CLI experience on top of containerd without Docker daemon.
+  avoid_when:
+  - You're already using Docker or Podman and don't want to switch.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L168
+  - legacy:devopstools_final.md#L255
+  needs_review: true
+- id: open-vswitch
+  name: Open vSwitch
+  summary: Production-quality multilayer virtual switch for network automation, programmatic control,
+    and virtualized environments.
+  official_url: https://www.openvswitch.org
+  repository_url: https://github.com/openvswitch/ovs
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L259
+  needs_review: true
+- id: oracle-virtualbox
+  name: Oracle VirtualBox
+  summary: Cross-platform type-2 hypervisor for running virtual machines on desktops and servers.
+  official_url: https://www.virtualbox.org
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L256
+  needs_review: true
+- id: orbstack
+  name: OrbStack
+  summary: Fast Docker & Linux VM environment for macOS.
+  official_url: https://orbstack.dev
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a faster, lower-resource Docker Desktop alternative on macOS.
+  avoid_when:
+  - You need cross-platform support or a fully open-source tool.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L170
+  - legacy:devopstools_final.md#L257
+  needs_review: true
+- id: podman
+  name: Podman
+  summary: Daemonless container engine for developing and managing containers.
+  official_url: https://podman.io
+  repository_url: https://github.com/containers/podman
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want rootless, daemonless containers with Docker CLI compatibility.
+  avoid_when:
+  - Docker Compose ecosystem compatibility (especially on macOS) is a hard requirement.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L172
+  - legacy:devopstools_final.md#L260
+  needs_review: true
+- id: portainer
+  name: Portainer
+  summary: Container management platform.
+  official_url: https://www.portainer.io
+  repository_url: https://github.com/portainer/portainer
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a web UI to manage Docker/Kubernetes for small teams or edge environments.
+  avoid_when:
+  - You need GitOps-style declarative management or are already using a full platform.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L174
+  - legacy:devopstools_final.md#L261
+  needs_review: true
+- id: proxmox-datacenter-manager
+  name: Proxmox Datacenter Manager
+  summary: Proxmox datacenter management product.
+  official_url: https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You operate multiple Proxmox clusters and need centralized management.
+  avoid_when:
+  - You run a single Proxmox node or prefer cloud-based orchestration.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L176
+  - legacy:devopstools_final.md#L262
+  needs_review: true
+- id: proxmox-optimizer
+  name: proxmox-optimizer
+  summary: Proxmox optimization utilities.
+  repository_url: https://github.com/dtouzeau/proxmox-optimizer
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want quick tuning scripts for Proxmox performance.
+  avoid_when:
+  - You prefer manual tuning or use a different hypervisor.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L180
+  - legacy:devopstools_final.md#L264
+  needs_review: true
+- id: proxmox-virtual-environment-ve
+  name: Proxmox Virtual Environment (VE)
+  summary: Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
+  official_url: https://github.com/proxmox
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a powerful, free hypervisor with a web UI for on-prem VMs and containers.
+  avoid_when:
+  - You need VMware-level enterprise support or advanced vSAN features.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L178
+  - legacy:devopstools_final.md#L263
+  needs_review: true
+- id: rancher-desktop
+  name: Rancher Desktop
+  summary: Desktop Kubernetes and container management.
+  official_url: https://rancherdesktop.io
+  repository_url: https://github.com/rancher-sandbox/rancher-desktop
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a free, open-source Docker Desktop alternative with built-in K8s.
+  avoid_when:
+  - You don't need local Kubernetes and just want a simple Docker environment.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L182
+  - legacy:devopstools_final.md#L265
+  needs_review: true
+- id: remmina
+  name: Remmina
+  summary: Remote desktop client.
+  official_url: https://remmina.org
+  repository_url: https://github.com/FreeRDP/Remmina
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a Linux-native RDP/VNC/SSH remote desktop client.
+  avoid_when:
+  - You primarily use macOS/Windows with their built-in remote tools.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L184
+  - legacy:devopstools_final.md#L266
+  needs_review: true
+- id: rootlesskit
+  name: RootlessKit
+  summary: Rootless container toolkit.
+  repository_url: https://github.com/rootless-containers/rootlesskit
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You're building rootless container runtimes and need user namespace plumbing.
+  avoid_when:
+  - You're an end-user—tools like Podman/Docker already integrate this.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L186
+  - legacy:devopstools_final.md#L267
+  needs_review: true
+- id: runc
+  name: runc
+  summary: OCI runtime for containers.
+  repository_url: https://github.com/opencontainers/runc
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need the reference OCI container runtime (used by Docker, containerd, CRI-O).
+  avoid_when:
+  - You need stronger isolation (consider Kata Containers or gVisor instead).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L188
+  - legacy:devopstools_final.md#L268
+  needs_review: true
+- id: sealos
+  name: Sealos
+  summary: Cloud operating system for Kubernetes.
+  official_url: https://sealos.io
+  repository_url: https://github.com/labring/sealos
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a one-click Kubernetes cluster lifecycle manager with app marketplace.
+  avoid_when:
+  - You need granular control over cluster bootstrapping or use managed K8s.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L190
+  - legacy:devopstools_final.md#L269
+  needs_review: true
+- id: sustainable-computing-kepler
+  name: Sustainable Computing (Kepler)
+  summary: Power consumption monitoring for Kubernetes (project ecosystem).
+  official_url: https://sustainable-computing.io
+  repository_url: https://github.com/sustainable-computing-io/kepler
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to measure and optimize energy consumption of Kubernetes workloads.
+  avoid_when:
+  - Energy monitoring isn't a priority or your infra lacks eBPF/hardware power counters.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L192
+  - legacy:devopstools_final.md#L270
+  needs_review: true
+- id: unraid
+  name: Unraid
+  summary: Operating system for network-attached storage and virtualization.
+  official_url: https://unraid.net
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want an easy-to-use home/prosumer NAS+VM platform with a plugin ecosystem.
+  avoid_when:
+  - You need enterprise storage features or a free/open-source solution.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L194
+  - legacy:devopstools_final.md#L271
+  needs_review: true
+- id: vates-vms
+  name: Vates VMS
+  summary: Open virtualization stack built around XCP-ng, Xen Orchestra, and related tooling, with commercial
+    support and management offerings.
+  official_url: https://github.com/vatesfr
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L272
+  needs_review: true
+- id: volare
+  name: Volare
+  summary: Kubernetes volume populator that populates Persistent Volume Claims (PVCs) from multiple external
+    sources concurrently.
+  repository_url: https://github.com/AdamShannag/volare
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need to pre-populate PVCs from multiple sources (S3, Git, HTTP) before pod startup.
+  avoid_when:
+  - Your volumes are provisioned by CSI drivers or init containers suffice.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L196
+  - legacy:devopstools_final.md#L273
+  needs_review: true
+- id: wsl-container
+  name: WSL container
+  summary: Run Linux containers directly inside WSL 2 without a Docker daemon.
+  official_url: https://learn.microsoft.com/en-us/windows/wsl/wsl-container
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L258
+  needs_review: true
+- id: xcp-ng
+  name: XCP-ng
+  summary: Open-source virtualization platform (Xen-based).
+  official_url: https://github.com/xcp-ng
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a fully open-source Xen hypervisor with Xen Orchestra management.
+  avoid_when:
+  - You prefer KVM-based virtualization or need broad community/third-party tooling.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L198
+  - legacy:devopstools_final.md#L274
+  needs_review: true

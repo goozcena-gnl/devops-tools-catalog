@@ -1,0 +1,221 @@
+- id: cdktf
+  name: CDKTF
+  summary: Terraform CDK framework.
+  official_url: https://developer.hashicorp.com/terraform/cdktf
+  repository_url: https://github.com/hashicorp/terraform-cdk
+  categories:
+  - deprecated-historical
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - retire
+  use_when:
+  - You want Terraform's provider ecosystem with imperative-language constructs.
+  avoid_when:
+  - Your team is comfortable with HCL and you don't need programmatic abstractions.
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: archived
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L40
+  - legacy:devopstools_final.md#L173
+  needs_review: true
+  repository_archived: true
+- id: grafana-oncall
+  name: Grafana OnCall
+  summary: Incident response and on-call management (OSS core with SaaS offering).
+  official_url: https://grafana.com/products/cloud/oncall
+  repository_url: https://github.com/grafana/oncall
+  categories:
+  - deprecated-historical
+  - sre-incident-response-on-call
+  subcategories:
+  - IT Operations & Incident Management
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - retire
+  use_when:
+  - Already in the Grafana ecosystem and want integrated on-call with alert routing.
+  avoid_when:
+  - You need a standalone, feature-rich incident management platform.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: archived
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L101
+  - legacy:devopstools_final.md#L818
+  needs_review: true
+  repository_archived: true
+- id: kaniko
+  name: Kaniko
+  summary: Build container images in Kubernetes without Docker daemon.
+  repository_url: https://github.com/GoogleContainerTools/kaniko
+  categories:
+  - deprecated-historical
+  - containers-image-tooling
+  subcategories:
+  - Build & Image Tools
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - retire
+  use_when:
+  - '* You need to build images inside Kubernetes pods without privileged mode.'
+  avoid_when:
+  - '* You can run Docker builds outside of Kubernetes or need full Docker build compatibility.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: archived
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L90
+  - legacy:devopstools_final.md#L357
+  needs_review: true
+  repository_archived: true
+- id: keptn
+  name: Keptn
+  summary: Cloud-native lifecycle management and delivery.
+  official_url: https://keptn.sh
+  repository_url: https://github.com/keptn/keptn
+  categories:
+  - deprecated-historical
+  - ci-build-testing
+  subcategories:
+  - CI/CD Platforms
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  - release-engineer
+  lifecycle_stages:
+  - retire
+  use_when:
+  - '* You need automated quality gates and SLO-based delivery orchestration.'
+  avoid_when:
+  - '* You need a full CI/CD pipeline; Keptn augments delivery rather than replacing CI.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: archived
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L48
+  - legacy:devopstools_final.md#L331
+  needs_review: true
+  repository_archived: true
+- id: kubeapps
+  name: Kubeapps
+  summary: Kubernetes application dashboard for deploying and managing Helm charts and other packages.
+  official_url: https://kubeapps.com
+  repository_url: https://github.com/vmware-tanzu/kubeapps
+  categories:
+  - deprecated-historical
+  - kubernetes-distributions-operations
+  subcategories:
+  - Kubernetes Management & Operations
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - retire
+  use_when:
+  - You want a self-service UI for teams to browse and deploy Helm charts.
+  avoid_when:
+  - All deployments go through GitOps pipelines.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: archived
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L40
+  - legacy:devopstools_final.md#L487
+  needs_review: true
+  repository_archived: true
+- id: kubernetes-dashboard
+  name: Kubernetes Dashboard
+  summary: Web UI for Kubernetes.
+  repository_url: https://github.com/kubernetes/dashboard
+  categories:
+  - deprecated-historical
+  - kubernetes-distributions-operations
+  subcategories:
+  - Kubernetes Management & Operations
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - retire
+  use_when:
+  - You need the official, basic web UI for cluster visibility.
+  avoid_when:
+  - You want richer features—use Lens/FreeLens/K9s instead.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: archived
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L52
+  - legacy:devopstools_final.md#L504
+  needs_review: true
+  repository_archived: true
+- id: tnu
+  name: tnu
+  summary: Test runner for Node.js.
+  repository_url: https://github.com/jfroy/tnu
+  categories:
+  - deprecated-historical
+  - ci-build-testing
+  subcategories:
+  - Testing & QA
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  - release-engineer
+  lifecycle_stages:
+  - retire
+  use_when:
+  - You want a minimal, no-config Node.js test runner.
+  avoid_when:
+  - You need rich plugin ecosystems or advanced features (use Vitest or Jest instead).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: archived
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L22
+  - legacy:devopstools_final.md#L1046
+  needs_review: true
+  repository_archived: true

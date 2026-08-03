@@ -1,0 +1,471 @@
+- id: activepieces
+  name: Activepieces
+  summary: Workflow automation platform; OSS core with commercial cloud/enterprise features.
+  official_url: https://www.activepieces.com
+  repository_url: https://github.com/activepieces/activepieces
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Automation & Workflow
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - '* You want a self-hostable, open-core alternative to Zapier for integrating apps and automating tasks.'
+  avoid_when:
+  - '* You need deep DevOps-specific workflows; it''s more suited for business automation.'
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L160
+  - legacy:devopstools_final.md#L401
+  needs_review: true
+- id: cal-com
+  name: Cal.com
+  summary: Open-source scheduling and booking platform (Calendly alternative) for teams and individuals.
+  official_url: https://cal.com
+  repository_url: https://github.com/calcom/cal.com
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Communication & ChatOps
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1153
+  needs_review: true
+- id: camunda
+  name: Camunda
+  summary: Workflow and process automation (BPMN/DMN).
+  official_url: https://camunda.com
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Automation & Workflow
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - '* You need BPMN-based process orchestration with long-running workflows and human tasks.'
+  avoid_when:
+  - '* You need lightweight CI/CD or task automation without formal process modeling.'
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L162
+  - legacy:devopstools_final.md#L402
+  needs_review: true
+- id: confluence
+  name: Confluence
+  summary: AI-powered team knowledge base and collaboration workspace by Atlassian.
+  official_url: https://www.atlassian.com/software/confluence
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Project Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1022
+  needs_review: true
+- id: jira
+  name: Jira
+  summary: Issue tracking and project management platform by Atlassian.
+  official_url: https://www.atlassian.com/software/jira
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Project Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - You need deep workflow customization and enterprise integrations.
+  avoid_when:
+  - Teams are small and agile—overhead can slow you down.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L4
+  - legacy:devopstools_final.md#L1023
+  needs_review: true
+- id: kestra
+  name: Kestra
+  summary: Declarative orchestration platform for workflows, jobs, and data pipelines.
+  official_url: https://kestra.io
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Automation & Workflow
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L403
+  needs_review: true
+- id: mattermost
+  name: Mattermost
+  summary: Self-hostable collaboration platform; open-source core with enterprise editions.
+  official_url: https://mattermost.com
+  repository_url: https://github.com/mattermost/mattermost
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Communication & ChatOps
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - You need a self-hosted Slack alternative for compliance, air-gapped, or data-sovereignty requirements.
+  avoid_when:
+  - Your team is already on Slack and the migration friction isn't justified.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L105
+  - legacy:devopstools_final.md#L1154
+  needs_review: true
+- id: n8n
+  name: n8n
+  summary: Workflow automation platform (fair-code / Sustainable Use License; not OSI open source).
+  official_url: https://n8n.io
+  repository_url: https://github.com/n8n-io/n8n
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Automation & Workflow
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - '* You want a self-hostable, visual workflow automation tool with many integrations.'
+  avoid_when:
+  - '* You need a truly OSS-licensed tool or enterprise-scale orchestration.'
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L164
+  - legacy:devopstools_final.md#L404
+  needs_review: true
+- id: numaflow
+  name: Numaflow
+  summary: Kubernetes-native data/stream processing platform.
+  official_url: https://numaflow.numaproj.io
+  repository_url: https://github.com/numaproj/numaflow
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Automation & Workflow
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - '* You need Kubernetes-native stream processing for event-driven data pipelines.'
+  avoid_when:
+  - '* You need a general-purpose workflow engine or are not on Kubernetes.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L166
+  - legacy:devopstools_final.md#L405
+  needs_review: true
+- id: plane
+  name: Plane
+  summary: Open-source project management tool.
+  official_url: https://plane.so
+  repository_url: https://github.com/makeplane/plane
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Project Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - You want a self-hosted, lightweight Jira alternative.
+  avoid_when:
+  - You need a mature plugin ecosystem or enterprise support today.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L5
+  - legacy:devopstools_final.md#L1024
+  needs_review: true
+- id: plumber
+  name: Plumber
+  summary: Workflow automation and integration platform.
+  official_url: https://getplumber.io
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Automation & Workflow
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - '* You need a lightweight automation and integration tool.'
+  avoid_when:
+  - '* You need a mature platform with a large integration ecosystem.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L168
+  - legacy:devopstools_final.md#L406
+  needs_review: true
+- id: rundeck
+  name: Rundeck
+  summary: Runbook automation and self-service operations platform.
+  official_url: https://www.rundeck.com
+  repository_url: https://github.com/rundeck/rundeck
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Automation & Workflow
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L407
+  needs_review: true
+- id: slack
+  name: Slack
+  summary: Team communication and collaboration platform.
+  official_url: https://slack.com
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Communication & ChatOps
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - You want the richest integration ecosystem and your team is already there.
+  avoid_when:
+  - Data residency, self-hosting, or cost-per-seat is a concern at scale.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L106
+  - legacy:devopstools_final.md#L1155
+  needs_review: true
+- id: tenzu
+  name: Tenzu
+  summary: Ethical open-source task and Kanban collaboration platform.
+  official_url: https://tenzu.net/fr
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Project Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1025
+  needs_review: true
+- id: wekan
+  name: WeKan
+  summary: Open-source kanban board for task and project management.
+  official_url: https://wekan.fi
+  repository_url: https://github.com/wekan/wekan
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Project Management
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1026
+  needs_review: true
+- id: windmill
+  name: Windmill
+  summary: Developer platform to build internal tools and automations.
+  official_url: https://www.windmill.dev
+  repository_url: https://github.com/windmill-labs/windmill
+  categories:
+  - workflow-automation-chatops
+  subcategories:
+  - Automation & Workflow
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - '* You want to build internal tools, scripts, and automations with a code-first approach.'
+  avoid_when:
+  - '* You need a no-code platform or already have a mature internal tools framework.'
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L170
+  - legacy:devopstools_final.md#L408
+  needs_review: true

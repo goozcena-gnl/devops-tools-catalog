@@ -1,0 +1,739 @@
+- id: apptio-cloudability
+  name: Apptio Cloudability
+  summary: Cloud cost management.
+  official_url: https://www.apptio.com/products/cloudability
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Enterprise-grade multi-cloud cost allocation and chargeback.
+  avoid_when:
+  - You're single-cloud with simple billing—native tools (AWS Cost Explorer) may suffice.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L77
+  - legacy:devopstools_final.md#L786
+  needs_review: true
+- id: azure-orphan-resources
+  name: Azure Orphan Resources
+  summary: Detect orphaned Azure resources.
+  repository_url: https://github.com/dolevshor/azure-orphan-resources
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Cleaning up forgotten Azure disks, NICs, and IPs.
+  avoid_when:
+  - You're not on Azure or already have policy-based cleanup.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L78
+  - legacy:devopstools_final.md#L787
+  needs_review: true
+- id: cast-ai
+  name: Cast AI
+  summary: Kubernetes automation and cloud optimization platform for rightsizing, autoscaling, cost control,
+    and performance.
+  official_url: https://cast.ai
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L788
+  needs_review: true
+- id: cloudbolt-cloud-operations
+  name: CloudBolt Cloud Operations
+  summary: Cloud operations management.
+  official_url: https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Hybrid cloud orchestration with self-service portals.
+  avoid_when:
+  - You only need cost visibility without provisioning features.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L79
+  - legacy:devopstools_final.md#L789
+  needs_review: true
+- id: cloudhealth
+  name: CloudHealth
+  summary: Multi-cloud FinOps and governance platform for cost reporting, optimization, and policy control.
+  official_url: https://www.broadcom.com/products/software/finops/cloudhealth
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L790
+  needs_review: true
+- id: cloudzero
+  name: CloudZero
+  summary: Cloud cost intelligence.
+  official_url: https://www.cloudzero.com
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Engineering-driven cost attribution per feature/team/customer.
+  avoid_when:
+  - Basic tagging-based cost reports already meet your needs.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L80
+  - legacy:devopstools_final.md#L791
+  needs_review: true
+- id: dash0
+  name: Dash0
+  summary: Cloud cost management.
+  official_url: https://www.dash0.com
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Unified observability and cost insights in one platform.
+  avoid_when:
+  - You prefer best-of-breed tools for monitoring and FinOps separately.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L81
+  - legacy:devopstools_final.md#L792
+  needs_review: true
+- id: datadog-cloud-cost-management
+  name: Datadog Cloud Cost Management
+  summary: Cloud cost monitoring.
+  official_url: https://www.datadoghq.com/product/cloud-cost-management
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - You already use Datadog and want cost data alongside infra metrics.
+  avoid_when:
+  - Adding yet another Datadog SKU pushes your bill higher than the savings.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L82
+  - legacy:devopstools_final.md#L793
+  needs_review: true
+- id: finout
+  name: Finout
+  summary: Cloud cost observability.
+  official_url: https://www.finout.io
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Blending cloud cost data from multiple providers and SaaS tools.
+  avoid_when:
+  - Simpler single-cloud cost tools handle your use case.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L83
+  - legacy:devopstools_final.md#L794
+  needs_review: true
+- id: flexera-one
+  name: Flexera One
+  summary: Cloud cost management.
+  official_url: https://www.flexera.com/products/flexera-one
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Enterprise IT asset management combined with multi-cloud cost optimization.
+  avoid_when:
+  - You're a small team that doesn't need asset/license management overhead.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L84
+  - legacy:devopstools_final.md#L795
+  needs_review: true
+- id: ibm-turbonomic-cloud-optimization
+  name: IBM Turbonomic Cloud Optimization
+  summary: Cloud resource optimization.
+  official_url: https://www.ibm.com/products/turbonomic/cloud-optimization
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Automated resource right-sizing driven by demand-based AI.
+  avoid_when:
+  - You want lightweight open-source recommendations (OpenCost, KRR).
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L85
+  - legacy:devopstools_final.md#L796
+  needs_review: true
+- id: kion-finops
+  name: Kion FinOps
+  summary: Cloud governance and cost management.
+  official_url: https://kion.io/platform/finops
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Combining cloud governance (accounts, policies) with FinOps.
+  avoid_when:
+  - You only need cost analysis without governance controls.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L86
+  - legacy:devopstools_final.md#L797
+  needs_review: true
+- id: kubecost-apptio
+  name: Kubecost (Apptio)
+  summary: Commercial Kubernetes cost monitoring/optimization product built around OpenCost.
+  official_url: https://www.apptio.com/products/kubecost
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Granular K8s cost allocation per namespace/deployment with savings recommendations.
+  avoid_when:
+  - OpenCost's free capabilities already cover your needs.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L87
+  - legacy:devopstools_final.md#L800
+  needs_review: true
+- id: kubernetes-capacity-calculator
+  name: Kubernetes Capacity Calculator
+  summary: Calculator for estimating Kubernetes node counts and cluster capacity from workload requirements.
+  official_url: https://wintelguy.com/kubernetes-capacity-calculator.pl
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L799
+  needs_review: true
+- id: kubex
+  name: Kubex
+  summary: AI-driven Kubernetes and GPU resource optimization platform for pod scaling, node tuning, and
+    capacity efficiency.
+  official_url: https://kubex.ai
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L798
+  needs_review: true
+- id: learnkube-kubernetes-instance-calculator
+  name: Learnkube Kubernetes Instance Calculator
+  summary: Calculator for choosing cost-effective cloud instance sizes for Kubernetes workloads.
+  official_url: https://learnkube.com/kubernetes-instance-calculator
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L801
+  needs_review: true
+- id: nutanix-cost-governance
+  name: Nutanix Cost Governance
+  summary: Cloud cost governance.
+  official_url: https://www.nutanix.com/products/cloud-manager/cost-governance
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Nutanix hybrid cloud customers needing unified cost views.
+  avoid_when:
+  - You're not in the Nutanix ecosystem.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L88
+  - legacy:devopstools_final.md#L802
+  needs_review: true
+- id: opencost
+  name: OpenCost
+  summary: Kubernetes cost monitoring tool.
+  official_url: https://www.opencost.io
+  repository_url: https://github.com/opencost/opencost
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Free, CNCF-backed K8s cost visibility with Prometheus integration.
+  avoid_when:
+  - You need multi-cloud non-K8s cost tracking or advanced savings features.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L89
+  - legacy:devopstools_final.md#L803
+  needs_review: true
+- id: pointfive
+  name: PointFive
+  summary: Cloud cost optimization.
+  official_url: https://www.pointfive.co
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Automated waste detection and savings recommendations.
+  avoid_when:
+  - Your cloud spend is small enough to manage manually.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L90
+  - legacy:devopstools_final.md#L804
+  needs_review: true
+- id: prosperops
+  name: ProsperOps
+  summary: Cloud savings automation.
+  official_url: https://www.prosperops.com
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Autonomous RI/Savings Plan purchasing to maximize discount coverage.
+  avoid_when:
+  - You want manual control over commitment purchases.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L91
+  - legacy:devopstools_final.md#L805
+  needs_review: true
+- id: spot-finops
+  name: Spot FinOps
+  summary: Cloud cost optimization.
+  official_url: https://spot.io/solutions/finops
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Leveraging spot/preemptible instances with automated fallback.
+  avoid_when:
+  - Your workloads can't tolerate interruption and you don't use spot.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L92
+  - legacy:devopstools_final.md#L806
+  needs_review: true
+- id: ternary
+  name: Ternary
+  summary: Cloud cost optimization for Terraform.
+  official_url: https://ternary.app
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - GCP-focused FinOps with BigQuery billing integration.
+  avoid_when:
+  - You're primarily on AWS/Azure.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L93
+  - legacy:devopstools_final.md#L807
+  needs_review: true
+- id: vegacloud-inform
+  name: VegaCloud Inform
+  summary: Cloud cost management.
+  official_url: https://www.vegacloud.io/products/inform
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Automated anomaly detection on cloud spend.
+  avoid_when:
+  - Simpler alerting on billing thresholds is sufficient.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L94
+  - legacy:devopstools_final.md#L808
+  needs_review: true
+- id: xosphere
+  name: Xosphere
+  summary: Cloud cost optimization platform focused on automating AWS Spot and EC2 savings.
+  official_url: https://www.xosphere.io
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L809
+  needs_review: true
+- id: yotascale
+  name: Yotascale
+  summary: Cloud cost management.
+  official_url: https://www.yotascale.com
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Context-aware cost attribution for dynamic, containerized environments.
+  avoid_when:
+  - Basic tagging-based reports meet your needs.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L95
+  - legacy:devopstools_final.md#L810
+  needs_review: true
+- id: zesty
+  name: Zesty
+  summary: Cloud cost optimization.
+  official_url: https://zesty.co
+  categories:
+  - finops-sustainability
+  subcategories:
+  - Cost Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - optimize
+  use_when:
+  - Automated disk and reserved instance optimization on AWS.
+  avoid_when:
+  - You need multi-cloud support or prefer manual commitment management.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L96
+  - legacy:devopstools_final.md#L811
+  needs_review: true

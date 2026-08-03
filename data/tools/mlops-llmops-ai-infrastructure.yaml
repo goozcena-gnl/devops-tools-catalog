@@ -1,0 +1,1997 @@
+- id: agent-reach
+  name: Agent Reach
+  summary: CLI that gives agents search and reading access across web, social, and code platforms.
+  repository_url: https://github.com/Panniantong/Agent-Reach
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1231
+  needs_review: true
+- id: agent-skills
+  name: agent-skills
+  summary: Production-grade engineering skills for AI coding agents.
+  repository_url: https://github.com/addyosmani/agent-skills
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1232
+  needs_review: true
+- id: agentmemory
+  name: AGENTMEMORY
+  summary: Persistent memory layer for AI coding agents.
+  official_url: https://www.agent-memory.dev
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1230
+  needs_review: true
+- id: agentsmith
+  name: agentsmith
+  summary: Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini, etc.) assembled
+    by a single setup script.
+  repository_url: https://github.com/PromptPartner/agentsmith
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1229
+  needs_review: true
+- id: aitmpl-agents
+  name: AITMPL Agents
+  summary: Agents directory/platform.
+  official_url: https://www.aitmpl.com/agents
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You're exploring or cataloging available AI agents and want a discovery interface.
+  avoid_when:
+  - You need production-grade agent orchestration—this is a directory, not a runtime.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L40
+  - legacy:devopstools_final.md#L1212
+  needs_review: true
+- id: amazon-q-developer
+  name: Amazon Q Developer
+  summary: AI code suggestions for AWS and more.
+  official_url: https://aws.amazon.com/q/developer
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You're in the AWS ecosystem and want AI-assisted coding with AWS-specific context.
+  avoid_when:
+  - Your stack is non-AWS and you'd get more value from a general-purpose assistant.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L20
+  - legacy:devopstools_final.md#L1197
+  needs_review: true
+- id: arize-phoenix
+  name: Arize Phoenix
+  summary: LLM observability and evaluation platform.
+  official_url: https://arize.com/docs/phoenix
+  repository_url: https://github.com/Arize-ai/phoenix
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Observability & Evaluation
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need tracing, evaluation, and debugging for LLM applications with a self-hosted option.
+  avoid_when:
+  - You're not running LLM workloads or already have sufficient observability through your existing stack.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L64
+  - legacy:devopstools_final.md#L1251
+  needs_review: true
+- id: awesome-codex-subagents
+  name: awesome-codex-subagents
+  summary: Collection of 130+ specialized Codex subagents for a wide range of development use cases.
+  repository_url: https://github.com/VoltAgent/awesome-codex-subagents
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1233
+  needs_review: true
+- id: aws-billing-and-cost-management-mcp-server
+  name: AWS Billing and Cost Management MCP Server
+  summary: MCP server for AWS Billing & Cost Management use cases (announced by AWS).
+  official_url: https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want AI assistants to query and reason over your AWS billing data via MCP.
+  avoid_when:
+  - You don't use AWS or already have FinOps tooling that meets your needs.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L42
+  - legacy:devopstools_final.md#L1213
+  needs_review: true
+- id: aws-mcp
+  name: AWS MCP
+  summary: AWS implementation of Model Context Protocol.
+  official_url: https://awslabs.github.io/mcp
+  repository_url: https://github.com/awslabs/mcp
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want AI agents to interact with AWS services through a standardized context protocol.
+  avoid_when:
+  - Your infrastructure isn't on AWS or you don't use MCP-compatible clients.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L44
+  - legacy:devopstools_final.md#L1214
+  needs_review: true
+- id: azure-ai-foundry
+  name: Azure AI Foundry
+  summary: Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation,
+    safety).
+  official_url: https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - MLOps Platforms
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You're already on Azure and need an integrated AI lifecycle platform.
+  avoid_when:
+  - You need cloud-agnostic tooling or aren't building production AI workloads.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L4
+  - legacy:devopstools_final.md#L1179
+  needs_review: true
+- id: azure-mcp-server
+  name: Azure MCP Server
+  summary: Azure MCP server implementation.
+  official_url: https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want AI tools to interact with Azure resources via the MCP standard.
+  avoid_when:
+  - You're not on Azure or your AI tooling doesn't support MCP.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L46
+  - legacy:devopstools_final.md#L1215
+  needs_review: true
+- id: bito
+  name: Bito
+  summary: AI coding assistant for IDE/workflow productivity.
+  official_url: https://bito.ai
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want an AI assistant with privacy-focused, enterprise-ready features.
+  avoid_when:
+  - You already have an established AI coding assistant and don't need a second one.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L22
+  - legacy:devopstools_final.md#L1198
+  needs_review: true
+- id: codebase-memory-mcp
+  name: codebase-memory-mcp
+  summary: High-performance code intelligence MCP server that indexes repositories into a persistent knowledge
+    graph.
+  repository_url: https://github.com/DeusData/codebase-memory-mcp
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1222
+  needs_review: true
+- id: composio
+  name: Composio
+  summary: Agent tooling platform for managed auth, app connectors, triggers, and sandboxed tool execution
+    across developer and business apps.
+  official_url: https://composio.dev
+  repository_url: https://github.com/composiohq/composio
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1234
+  needs_review: true
+- id: deepspeed
+  name: DeepSpeed
+  summary: Deep learning optimization library for large-scale model training and inference.
+  official_url: https://www.deepspeed.ai
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - MLOps Platforms
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1180
+  needs_review: true
+- id: docker-agent
+  name: Docker Agent
+  summary: Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration
+    flows with YAML-based configuration.
+  official_url: https://docker.github.io/docker-agent
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1235
+  needs_review: true
+- id: docker-hub-mcp
+  name: Docker Hub MCP
+  summary: MCP-related Docker images.
+  official_url: https://hub.docker.com/mcp
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want pre-packaged, containerized MCP servers for quick deployment.
+  avoid_when:
+  - You need heavily customized MCP server configurations not covered by available images.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L48
+  - legacy:devopstools_final.md#L1216
+  needs_review: true
+- id: docker-mcp-gateway
+  name: Docker MCP Gateway
+  summary: Docker CLI plugin and gateway for discovering, running, and routing MCP servers in containers.
+  repository_url: https://github.com/docker/mcp-gateway
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1217
+  needs_review: true
+- id: ecc-tools
+  name: ecc.tools
+  summary: OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
+  official_url: https://ecc.tools
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1236
+  needs_review: true
+- id: evidently
+  name: Evidently
+  summary: Open-source evaluation and monitoring framework for ML and AI systems.
+  repository_url: https://github.com/evidentlyai/evidently
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Observability & Evaluation
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1252
+  needs_review: true
+- id: flawless
+  name: Flawless
+  summary: AI SRE AgenticOps agent for autonomous incident detection, diagnosis, and remediation across
+    Kubernetes and cloud infrastructure.
+  repository_url: https://github.com/William-Lu-stack/Flawless
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1199
+  needs_review: true
+- id: fulling
+  name: fulling
+  summary: AI-powered full-stack engineer agent built with Next.js, Claude, and PostgreSQL, using Kubernetes
+    as infrastructure.
+  repository_url: https://github.com/FullAgent/fulling
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1237
+  needs_review: true
+- id: genai-agentos
+  name: genai-agentos
+  summary: Framework for building, running, and managing multi-agent AI workflows.
+  repository_url: https://github.com/genai-works-org/genai-agentos
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You're building multi-agent systems and need a lightweight orchestration framework.
+  avoid_when:
+  - You have a single-agent use case or prefer mature frameworks like LangGraph or CrewAI.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L60
+  - legacy:devopstools_final.md#L1238
+  needs_review: true
+- id: github-copilot
+  name: GitHub Copilot
+  summary: AI-powered code completion assistant.
+  repository_url: https://github.com/features/copilot
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want inline code suggestions tightly integrated with VS Code, JetBrains, or GitHub workflows.
+  avoid_when:
+  - Your organization prohibits sending code to external AI services.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L24
+  - legacy:devopstools_final.md#L1200
+  needs_review: true
+- id: github-mcp-server
+  name: GitHub MCP Server
+  summary: GitHub's MCP server implementation.
+  repository_url: https://github.com/github/github-mcp-server
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want AI assistants to read/write GitHub repos, issues, and PRs via MCP.
+  avoid_when:
+  - You use GitLab/Bitbucket or don't need AI-driven GitHub interactions.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L50
+  - legacy:devopstools_final.md#L1218
+  needs_review: true
+- id: gitlab-mcp-server
+  name: GitLab MCP Server
+  summary: GitLab MCP server documentation.
+  official_url: https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You're on GitLab and want MCP-compatible AI agents to interact with your projects.
+  avoid_when:
+  - You don't use GitLab or aren't adopting MCP-based tooling.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L52
+  - legacy:devopstools_final.md#L1219
+  needs_review: true
+- id: grafana-mcp
+  name: Grafana MCP
+  summary: Model Context Protocol for Grafana.
+  repository_url: https://github.com/grafana/mcp-grafana
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want AI assistants to query dashboards, alerts, and data sources in Grafana.
+  avoid_when:
+  - You don't use Grafana or prefer direct API integrations over MCP.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L54
+  - legacy:devopstools_final.md#L1220
+  needs_review: true
+- id: haystack
+  name: Haystack
+  summary: Framework for building LLM-powered apps and search systems.
+  official_url: https://haystack.deepset.ai
+  repository_url: https://github.com/deepset-ai/haystack
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - LLM & Application Frameworks
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You're building RAG pipelines or document-search applications and want modular, composable components.
+  avoid_when:
+  - You only need simple API calls to an LLM with no retrieval or pipeline logic.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L14
+  - legacy:devopstools_final.md#L1190
+  needs_review: true
+- id: headroom
+  name: Headroom
+  summary: Context optimization layer that compresses tool outputs, logs, files, and RAG chunks before
+    they reach the LLM.
+  official_url: https://headroomlabs-ai.github.io/headroom
+  repository_url: https://github.com/headroomlabs-ai/headroom
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1239
+  needs_review: true
+- id: hermes-agent
+  name: Hermes Agent
+  summary: Agent framework and runtime from Nous Research.
+  official_url: https://hermes-agent.nousresearch.com
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1240
+  needs_review: true
+- id: hoji-ai
+  name: Hoji AI
+  summary: AI assistant for GitHub workflows.
+  official_url: https://hoji.ai
+  repository_url: https://github.com/hoji-ai/hoji
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want AI-driven automation specifically for GitHub issue triage, PR reviews, or workflow actions.
+  avoid_when:
+  - You don't use GitHub or need broader DevOps AI coverage.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L26
+  - legacy:devopstools_final.md#L1201
+  needs_review: true
+- id: hortator
+  name: Hortator
+  summary: Kubernetes-native platform for orchestrating AI agents.
+  official_url: https://hortator.ai
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1241
+  needs_review: true
+- id: k8sgpt
+  name: K8sGPT
+  summary: AI-powered Kubernetes troubleshooting.
+  official_url: https://k8sgpt.ai
+  repository_url: https://github.com/k8sgpt-ai/k8sgpt
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want natural-language diagnostics for Kubernetes cluster issues.
+  avoid_when:
+  - Your team already has strong K8s expertise and established runbooks—AI triage adds little value.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L28
+  - legacy:devopstools_final.md#L1202
+  needs_review: true
+- id: kelos
+  name: Kelos
+  summary: Kubernetes-native framework for orchestrating autonomous AI coding agents.
+  repository_url: https://github.com/kelos-dev/kelos
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1242
+  needs_review: true
+- id: kserve
+  name: KServe
+  summary: Model serving on Kubernetes.
+  official_url: https://kserve.github.io/website
+  repository_url: https://github.com/kserve/kserve
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - MLOps Platforms
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need scalable, standardized model inference on existing Kubernetes clusters.
+  avoid_when:
+  - You don't run Kubernetes or only need simple batch predictions.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L6
+  - legacy:devopstools_final.md#L1181
+  needs_review: true
+- id: kthena
+  name: Kthena
+  summary: Kubernetes-native AI serving platform for scalable multi-model deployment, routing, and intelligent
+    auto-scaling.
+  official_url: https://kthena.volcano.sh
+  repository_url: https://github.com/volcano-sh/kthena
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - MLOps Platforms
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1182
+  needs_review: true
+- id: kube-copilot
+  name: Kube Copilot
+  summary: AI assistant for Kubernetes operations.
+  repository_url: https://github.com/feiskyer/kube-copilot
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want an interactive AI helper that can execute kubectl commands on your behalf.
+  avoid_when:
+  - You have strict RBAC policies and aren't comfortable giving an AI agent cluster access.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L30
+  - legacy:devopstools_final.md#L1203
+  needs_review: true
+- id: kubernetes-mcp-server
+  name: Kubernetes MCP Server
+  summary: Go-native MCP server for Kubernetes and OpenShift with direct API server integration, multi-cluster
+    support, Helm/Tekton toolsets, and no external CLI dependencies (Apache-2.0).
+  repository_url: https://github.com/containers/kubernetes-mcp-server
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1221
+  needs_review: true
+- id: kubernetes-skill-for-claude-code
+  name: kubernetes-skill for Claude Code
+  summary: Claude Code agent skill for interacting with Kubernetes clusters.
+  official_url: https://lukasniessen.github.io/kubernetes-skill
+  repository_url: https://github.com/lukasniessen/kubernetes-skill
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1243
+  needs_review: true
+- id: langchain
+  name: LangChain
+  summary: LLM application framework; OSS libraries with commercial companion products.
+  official_url: https://www.langchain.com
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - LLM & Application Frameworks
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need a broad ecosystem of integrations and chains for complex LLM workflows.
+  avoid_when:
+  - Your use case is straightforward prompt-response or you want minimal abstraction layers.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L16
+  - legacy:devopstools_final.md#L1191
+  needs_review: true
+- id: langflow
+  name: Langflow
+  summary: Low-code builder for agentic and RAG applications.
+  official_url: https://www.langflow.org
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - LLM & Application Frameworks
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1192
+  needs_review: true
+- id: langfuse
+  name: Langfuse
+  summary: LLM observability and analytics; OSS self-hosted core with commercial cloud offering.
+  official_url: https://langfuse.com
+  repository_url: https://github.com/langfuse/langfuse
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Observability & Evaluation
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want detailed LLM trace analytics with the option to self-host or use managed cloud.
+  avoid_when:
+  - You have minimal LLM usage and don't need per-request cost/latency tracking.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L66
+  - legacy:devopstools_final.md#L1253
+  needs_review: true
+- id: langgraph
+  name: LangGraph
+  summary: Framework for building reliable stateful AI agents and multi-step workflows.
+  official_url: https://www.langchain.com/langgraph
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - LLM & Application Frameworks
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1193
+  needs_review: true
+- id: langsmith
+  name: LangSmith
+  summary: LLM application development platform with observability, testing, and evaluation (LangChain-affiliated).
+  official_url: https://smith.langchain.com
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Observability & Evaluation
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You're already using LangChain and want tightly integrated tracing, testing, and prompt management.
+  avoid_when:
+  - You don't use LangChain—vendor lock-in to the LangChain ecosystem may not be worth it.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L68
+  - legacy:devopstools_final.md#L1254
+  needs_review: true
+- id: last30days-skill
+  name: last30days-skill
+  summary: Agent skill that researches current topics across web and social sources and synthesizes grounded
+    summaries.
+  repository_url: https://github.com/mvanhorn/last30days-skill
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1244
+  needs_review: true
+- id: litellm
+  name: LiteLLM
+  summary: Gateway and proxy for 100+ LLM providers with budgets, rate limiting, logging, and spend tracking.
+  official_url: https://www.litellm.ai
+  repository_url: https://github.com/BerriAI/litellm
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - LLM & Application Frameworks
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1194
+  needs_review: true
+- id: llm-d
+  name: llm-d
+  summary: Kubernetes-native high-performance distributed LLM inference framework for serving models at
+    scale.
+  official_url: https://github.com/llm-d
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - MLOps Platforms
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1183
+  needs_review: true
+- id: llmfit
+  name: llmfit
+  summary: Hardware-aware CLI/TUI for recommending which LLM models fit local RAM, CPU, and GPU capacity.
+  repository_url: https://github.com/AlexsJones/llmfit
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1204
+  needs_review: true
+- id: lm-studio
+  name: LM Studio
+  summary: Desktop app for running local LLMs.
+  official_url: https://lmstudio.ai
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want a GUI-driven way to experiment with local LLMs on your workstation.
+  avoid_when:
+  - You need headless/server deployments or programmatic API-first workflows.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L32
+  - legacy:devopstools_final.md#L1205
+  needs_review: true
+- id: mcp-server-kubernetes
+  name: mcp-server-kubernetes
+  summary: Node MCP server for interacting with Kubernetes clusters via kubectl.
+  official_url: https://www.npmjs.com/package/mcp-server-kubernetes
+  repository_url: https://github.com/modelcontextprotocol/servers
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want AI tools to inspect and manage Kubernetes resources through MCP.
+  avoid_when:
+  - Security policy forbids AI-agent access to your clusters or you don't run Kubernetes.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L56
+  - legacy:devopstools_final.md#L1223
+  needs_review: true
+- id: mcpsnoop
+  name: mcpsnoop
+  summary: Transparent MCP proxy for inspecting live tool calls between clients and servers.
+  repository_url: https://github.com/kerlenton/mcpsnoop
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1224
+  needs_review: true
+- id: migratowl
+  name: Migratowl
+  summary: AI-powered dependency migration analyzer.
+  official_url: https://migratowl.bitkaio.com
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1206
+  needs_review: true
+- id: mlflow
+  name: MLflow
+  summary: Platform for managing ML lifecycles.
+  official_url: https://mlflow.org
+  repository_url: https://github.com/mlflow/mlflow
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - MLOps Platforms
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need experiment tracking, model registry, and reproducibility across ML projects.
+  avoid_when:
+  - You have no ML model training workflows or already use a tightly integrated managed platform.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L8
+  - legacy:devopstools_final.md#L1184
+  needs_review: true
+- id: nvidia-ai-cluster-runtime
+  name: NVIDIA AI Cluster Runtime
+  summary: NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
+  official_url: https://docs.nvidia.com/aicr/overview/introduction
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - MLOps Platforms
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1185
+  needs_review: true
+- id: nvidia-dgx-cloud
+  name: NVIDIA DGX Cloud
+  summary: Cloud platform for AI and ML workloads.
+  official_url: https://www.nvidia.com/en-us/data-center/dgx-cloud
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - MLOps Platforms
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need massive GPU compute for large-scale model training or fine-tuning.
+  avoid_when:
+  - Your workloads are inference-only or fit comfortably on commodity cloud GPUs.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L10
+  - legacy:devopstools_final.md#L1186
+  needs_review: true
+- id: ollama
+  name: Ollama
+  summary: Local LLM runtime and model manager; open-source core (model licenses vary).
+  official_url: https://ollama.com
+  repository_url: https://github.com/ollama/ollama
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need a lightweight CLI/API to run LLMs locally with zero cloud dependency.
+  avoid_when:
+  - You need production-scale multi-node inference or enterprise support.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L34
+  - legacy:devopstools_final.md#L1207
+  needs_review: true
+- id: open-webui
+  name: Open WebUI
+  summary: Self-hosted web UI for running and managing local AI model backends (e.g., Ollama).
+  official_url: https://openwebui.com
+  repository_url: https://github.com/open-webui/open-webui
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want a ChatGPT-like interface for self-hosted models with multi-user support.
+  avoid_when:
+  - You only interact with models programmatically and don't need a web frontend.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L36
+  - legacy:devopstools_final.md#L1208
+  needs_review: true
+- id: peerd
+  name: peerd
+  summary: Browser-native harness for AI agents.
+  official_url: https://peerd.ai
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1245
+  needs_review: true
+- id: promptfoo
+  name: Promptfoo
+  summary: Test and evaluate LLM prompts.
+  official_url: https://www.promptfoo.dev
+  repository_url: https://github.com/promptfoo/promptfoo
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Observability & Evaluation
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want CI-friendly, automated prompt regression testing and red-teaming.
+  avoid_when:
+  - You're still in early prototyping and prompt stability isn't yet a concern.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:9_AI-MLOps/README.md#L70
+  - legacy:devopstools_final.md#L1255
+  needs_review: true
+- id: ray
+  name: Ray
+  summary: Distributed compute framework for scaling ML, AI, and Python workloads.
+  official_url: https://www.ray.io
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - MLOps Platforms
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1187
+  needs_review: true
+- id: reshapr
+  name: reShapr
+  summary: No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MCP endpoints
+    with security controls and flexible deployment (Apache-2.0).
+  official_url: https://reshapr.io
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1225
+  needs_review: true
+- id: sim
+  name: Sim
+  summary: AI workspace for building, deploying, and monitoring agentic workflows.
+  official_url: https://www.sim.ai
+  repository_url: https://github.com/simstudioai/sim
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1246
+  needs_review: true
+- id: stakpak
+  name: Stakpak
+  summary: Autonomous AI agent for production operations running 24/7 on your machines to auto-heal incidents,
+    manage costs, and monitor infrastructure (Apache-2.0).
+  official_url: https://stakpak.dev
+  repository_url: https://github.com/stakpak/agent
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - AI Ops & AI Tooling for DevOps
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1209
+  needs_review: true
+- id: terraform-mcp-server
+  name: Terraform MCP Server
+  summary: MCP server for Terraform automation and infrastructure-as-code workflows.
+  repository_url: https://github.com/hashicorp/terraform-mcp-server
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Model Context Protocol (MCP) Servers
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1226
+  needs_review: true
+- id: terraform-skill
+  name: terraform-skill
+  summary: Claude Code skill for Terraform and OpenTofu best practices, testing, modules, CI/CD, and security.
+  repository_url: https://github.com/antonbabenko/terraform-skill
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1247
+  needs_review: true
+- id: voltagent
+  name: VoltAgent
+  summary: Open-source TypeScript framework for building AI agents.
+  official_url: https://voltagent.dev
+  repository_url: https://github.com/VoltAgent/voltagent
+  categories:
+  - mlops-llmops-ai-infrastructure
+  subcategories:
+  - Agent Frameworks & Orchestration
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1248
+  needs_review: true

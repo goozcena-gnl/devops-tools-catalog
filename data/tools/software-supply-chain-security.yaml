@@ -1,0 +1,150 @@
+- id: git-push-no-mistakes
+  name: git push no-mistakes
+  summary: Guardrails to prevent common mistakes when pushing to Git.
+  official_url: https://kunchenguid.github.io/no-mistakes
+  categories:
+  - software-supply-chain-security
+  subcategories:
+  - Git hooks / commit hygiene
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  - secure
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1106
+  needs_review: true
+- id: husky
+  name: Husky
+  summary: Git hooks for Node.js projects (commonly paired with lint-staged).
+  official_url: https://typicode.github.io/husky
+  repository_url: https://github.com/typicode/husky
+  categories:
+  - software-supply-chain-security
+  subcategories:
+  - Git hooks / commit hygiene
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  - secure
+  use_when:
+  - In Node.js projects where pairing with lint-staged is the idiomatic approach.
+  avoid_when:
+  - In polyglot repos—pre-commit or Lefthook handle multiple languages better.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L66
+  - legacy:devopstools_final.md#L1104
+  needs_review: true
+- id: lefthook
+  name: Lefthook
+  summary: Fast Git hooks manager (parallel execution, cross-platform).
+  official_url: https://lefthook.dev
+  repository_url: https://github.com/evilmartians/lefthook
+  categories:
+  - software-supply-chain-security
+  subcategories:
+  - Git hooks / commit hygiene
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  - secure
+  use_when:
+  - You need fast, parallel hook execution without a runtime dependency (single Go binary).
+  avoid_when:
+  - Pre-commit's massive hook repository already covers your needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L65
+  - legacy:devopstools_final.md#L1103
+  needs_review: true
+- id: pre-commit
+  name: pre-commit
+  summary: Multi-language Git hook framework (config-driven, reproducible hooks across teams).
+  official_url: https://pre-commit.com
+  repository_url: https://github.com/pre-commit/pre-commit
+  categories:
+  - software-supply-chain-security
+  subcategories:
+  - Git hooks / commit hygiene
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  - secure
+  use_when:
+  - Your repo spans multiple languages and you want a single, declarative hook config.
+  avoid_when:
+  - You're in a pure Node.js project where Husky + lint-staged is simpler.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L64
+  - legacy:devopstools_final.md#L1102
+  needs_review: true
+- id: simple-git-hooks
+  name: simple-git-hooks
+  summary: Lightweight Git hooks manager for Node.js.
+  repository_url: https://github.com/toplenboren/simple-git-hooks
+  categories:
+  - software-supply-chain-security
+  subcategories:
+  - Git hooks / commit hygiene
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  - secure
+  use_when:
+  - You need a zero-dependency, minimal hooks setup for a small Node.js project.
+  avoid_when:
+  - You need parallel execution or per-file staged filtering.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L67
+  - legacy:devopstools_final.md#L1105
+  needs_review: true

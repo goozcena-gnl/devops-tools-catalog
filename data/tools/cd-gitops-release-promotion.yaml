@@ -1,0 +1,852 @@
+- id: argocd
+  name: ArgoCD
+  summary: Declarative GitOps continuous delivery for Kubernetes.
+  official_url: https://argo-cd.readthedocs.io
+  repository_url: https://github.com/argoproj/argo-cd
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You want a mature, UI-rich GitOps controller for Kubernetes with strong multi-cluster support.'
+  avoid_when:
+  - '* You don''t use Kubernetes or prefer a pull-based model without a central server.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L134
+  - legacy:devopstools_final.md#L385
+  needs_review: true
+- id: argocd-agent
+  name: ArgoCD Agent
+  summary: Agent-based architecture for ArgoCD to manage remote clusters.
+  official_url: https://argocd-agent.readthedocs.io/latest
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You manage clusters behind firewalls or want agent-based control-plane decoupling.'
+  avoid_when:
+  - '* Your clusters are reachable from ArgoCD and the standard model works fine.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L136
+  - legacy:devopstools_final.md#L386
+  needs_review: true
+- id: argocd-diff-preview
+  name: ArgoCD Diff Preview
+  summary: Preview ArgoCD application changes.
+  official_url: https://dag-andersen.github.io/argocd-diff-preview
+  repository_url: https://github.com/dag-andersen/argocd-diff-preview
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You want PR-level visibility into what ArgoCD will change before merging.'
+  avoid_when:
+  - '* You don''t use ArgoCD or have another diff/preview mechanism.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L138
+  - legacy:devopstools_final.md#L387
+  needs_review: true
+- id: argocd-image-updater
+  name: ArgoCD Image Updater
+  summary: Automated image updates for ArgoCD.
+  official_url: https://argocd-image-updater.readthedocs.io/en/stable
+  repository_url: https://github.com/argoproj-labs/argocd-image-updater
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You want automatic image tag updates committed to Git when new images are pushed.'
+  avoid_when:
+  - '* You prefer explicit, manual image bumps or use a promotion tool like Kargo.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L140
+  - legacy:devopstools_final.md#L388
+  needs_review: true
+- id: argocd-vault-plugin
+  name: ArgoCD Vault Plugin
+  summary: Integrates secrets from external stores into ArgoCD.
+  official_url: https://argocd-vault-plugin.readthedocs.io/en/stable
+  repository_url: https://github.com/argoproj-labs/argocd-vault-plugin
+  categories:
+  - cd-gitops-release-promotion
+  - iam-secrets-certificates
+  subcategories:
+  - GitOps
+  - Secret Management
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - devsecops-engineer
+  - release-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  - operate
+  - secure
+  use_when:
+  - '* You need to inject secrets from Vault/AWS/GCP into ArgoCD-managed manifests.'
+  - You run ArgoCD and want inline secret injection from Vault/AWS SM/etc.
+  avoid_when:
+  - '* You use External Secrets Operator or Sealed Secrets and don''t need in-manifest substitution.'
+  - You use External Secrets Operator which covers the same need more broadly.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L142
+  - legacy:6_Security/README.md#L87
+  - legacy:devopstools_final.md#L389
+  - legacy:devopstools_final.md#L974
+  needs_review: true
+- id: bunnyshell
+  name: Bunnyshell
+  summary: Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven
+    by environment-as-code workflows.
+  official_url: https://www.bunnyshell.com
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1130
+  needs_review: true
+- id: caddy
+  name: Caddy
+  summary: Extensible web server and reverse proxy with automatic HTTPS.
+  official_url: https://caddyserver.com
+  repository_url: https://github.com/caddyserver/caddy
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1131
+  needs_review: true
+- id: convox
+  name: Convox
+  summary: Platform for deploying and managing containers.
+  official_url: https://www.convox.com
+  repository_url: https://github.com/convox/convox
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - You want a Heroku-like experience on top of your own AWS/GCP infrastructure.
+  avoid_when:
+  - You need multi-cloud beyond what Convox supports or prefer direct Kubernetes control.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L89
+  - legacy:devopstools_final.md#L1132
+  needs_review: true
+- id: dokku
+  name: Dokku
+  summary: PaaS for deploying apps using Docker.
+  official_url: https://dokku.com
+  repository_url: https://github.com/dokku/dokku
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - You want a single-server, git-push PaaS for side projects or small apps.
+  avoid_when:
+  - You need multi-host clustering or high-availability out of the box.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L90
+  - legacy:devopstools_final.md#L1133
+  needs_review: true
+- id: flux
+  name: Flux
+  summary: Open and extensible GitOps toolkit for Kubernetes.
+  official_url: https://fluxcd.io
+  repository_url: https://github.com/fluxcd/flux2
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You want a lightweight, composable GitOps toolkit that runs entirely in-cluster.'
+  avoid_when:
+  - '* You need a rich UI out of the box or prefer a centralized multi-cluster management plane.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L144
+  - legacy:devopstools_final.md#L390
+  needs_review: true
+- id: flux-operator
+  name: Flux Operator
+  summary: Kubernetes operator for managing Flux CD instances.
+  official_url: https://fluxoperator.dev
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You manage multiple Flux installations and want operator-driven lifecycle management.'
+  avoid_when:
+  - '* You run a single Flux instance and don''t need operator abstraction.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L146
+  - legacy:devopstools_final.md#L391
+  needs_review: true
+- id: flux9s
+  name: flux9s
+  summary: K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
+  official_url: https://flux9s.ca
+  repository_url: https://github.com/dgunzy/flux9s
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L392
+  needs_review: true
+- id: gitops-bridge
+  name: GitOps Bridge
+  summary: GitOps bridge for Kubernetes deployments.
+  repository_url: https://github.com/gitops-bridge-dev/gitops-bridge
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You want to connect Terraform/IaC provisioning with ArgoCD/Flux bootstrapping.'
+  avoid_when:
+  - '* You don''t use Terraform for cluster provisioning or have your own bootstrap scripts.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L148
+  - legacy:devopstools_final.md#L393
+  needs_review: true
+- id: kamal
+  name: Kamal
+  summary: Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
+  official_url: https://kamal-deploy.org
+  repository_url: https://github.com/basecamp/kamal
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1134
+  needs_review: true
+- id: kargo
+  name: Kargo
+  summary: GitOps promotion workflow for Kubernetes.
+  official_url: https://kargo.io
+  repository_url: https://github.com/akuity/kargo
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You need structured, multi-stage promotion workflows across environments in a GitOps model.'
+  avoid_when:
+  - '* You have a single environment or simple deployment pipeline.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L150
+  - legacy:devopstools_final.md#L394
+  needs_review: true
+- id: keel
+  name: Keel
+  summary: Automated Kubernetes deployment updates.
+  official_url: https://keel.sh
+  repository_url: https://github.com/keel-hq/keel
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Release Management
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - You want simple, policy-driven image update automation for Kubernetes.
+  avoid_when:
+  - You need a full GitOps pipeline with drift detection—use Flux or Argo CD instead.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L8
+  - legacy:devopstools_final.md#L1268
+  needs_review: true
+- id: kubechecks
+  name: KubeChecks
+  summary: Pre-merge validation for Kubernetes GitOps changes.
+  official_url: https://kubechecks.readthedocs.io/en/latest
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You want automated policy and diff checks on PRs before GitOps changes merge.'
+  avoid_when:
+  - '* You already have CI-based validation or don''t do PR-based GitOps.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L152
+  - legacy:devopstools_final.md#L395
+  needs_review: true
+- id: netlify
+  name: Netlify
+  summary: Modern web hosting and automation platform.
+  official_url: https://www.netlify.com
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - Static sites, Jamstack apps, and serverless functions with great DX (preview deploys, forms, edge
+    functions).
+  avoid_when:
+  - You need server-side rendering beyond what Netlify Functions supports or want to avoid vendor lock-in.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L91
+  - legacy:devopstools_final.md#L1135
+  needs_review: true
+- id: openfeature
+  name: OpenFeature
+  summary: Open standard for feature flag management.
+  official_url: https://github.com/open-feature
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Feature Flags
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - You want a vendor-neutral abstraction layer so you can swap flag backends freely.
+  avoid_when:
+  - You only need a single provider's SDK and don't anticipate switching.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L14
+  - legacy:devopstools_final.md#L1272
+  needs_review: true
+- id: piku
+  name: Piku
+  summary: Heroku-like mini PaaS.
+  official_url: https://piku.github.io
+  repository_url: https://github.com/piku/piku
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - You want the simplest possible git-push deployment to a single Linux box (Raspberry Pi included).
+  avoid_when:
+  - You need scaling, orchestration, or container isolation.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L92
+  - legacy:devopstools_final.md#L1136
+  needs_review: true
+- id: porter
+  name: Porter
+  summary: PaaS for deploying apps to Kubernetes.
+  official_url: https://github.com/porter-dev
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - You want Heroku-like UX on top of your own Kubernetes cluster.
+  avoid_when:
+  - You don't need Kubernetes or prefer lower-level Helm/ArgoCD control.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L93
+  - legacy:devopstools_final.md#L1137
+  needs_review: true
+- id: qovery
+  name: Qovery
+  summary: Platform for deploying apps on Kubernetes.
+  official_url: https://www.qovery.com
+  repository_url: https://github.com/Qovery/engine
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - You want an opinionated deployment layer over Kubernetes with preview environments and multi-cloud
+    support.
+  avoid_when:
+  - You need deep Kubernetes customization or want to avoid another abstraction layer.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L94
+  - legacy:devopstools_final.md#L1138
+  needs_review: true
+- id: renovate
+  name: Renovate
+  summary: Automated dependency updates.
+  official_url: https://www.mend.io/renovate
+  repository_url: https://github.com/renovatebot/renovate
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Release Management
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - You manage many repos with diverse package ecosystems and want highly configurable auto-PRs.
+  avoid_when:
+  - Your project has very few dependencies and manual updates are trivial.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L10
+  - legacy:devopstools_final.md#L1269
+  needs_review: true
+- id: tofu-controller
+  name: Tofu Controller
+  summary: Flux controller for managing Terraform and OpenTofu resources the GitOps way.
+  official_url: https://flux-iac.github.io/tofu-controller
+  repository_url: https://github.com/flux-iac/tofu-controller
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L396
+  needs_review: true
+- id: uncloud
+  name: Uncloud
+  summary: Multi-node Docker Compose for running containerized apps in production without Kubernetes.
+  official_url: https://uncloud.run
+  repository_url: https://github.com/psviderski/uncloud
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1139
+  needs_review: true
+- id: waypoint
+  name: Waypoint
+  summary: Application build, deploy, and release workflow platform from HashiCorp.
+  official_url: https://developer.hashicorp.com/waypoint
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Hosting & Deployment
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1140
+  needs_review: true
+- id: weaveworks-gitops
+  name: Weaveworks GitOps
+  summary: GitOps automation for Kubernetes and cloud-native apps.
+  official_url: https://docs.gitops.weaveworks.org
+  repository_url: https://github.com/weaveworks/weave-gitops
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You want a UI/dashboard layer on top of Flux.'
+  avoid_when:
+  - '* Weaveworks has shut down; consider long-term maintenance risks.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L154
+  - legacy:devopstools_final.md#L397
+  needs_review: true
+- id: yokecd
+  name: YokeCD
+  summary: GitOps continuous delivery tool.
+  official_url: https://yokecd.github.io
+  repository_url: https://github.com/yokecd/yokecd
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - GitOps
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  use_when:
+  - '* You want a newer, lightweight GitOps tool and are willing to explore early-stage projects.'
+  avoid_when:
+  - '* You need production-proven tooling with large community support.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L156
+  - legacy:devopstools_final.md#L398
+  needs_review: true

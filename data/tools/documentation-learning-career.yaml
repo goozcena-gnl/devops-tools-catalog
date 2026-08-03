@@ -1,0 +1,1413 @@
+- id: awesome-devops
+  name: Awesome DevOps
+  summary: Curated DevOps resources.
+  repository_url: https://github.com/wmariuss/awesome-devops
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You're exploring the DevOps landscape and want a broad starting point.
+  avoid_when:
+  - You need depth on a specific tool—go straight to that tool's docs.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L18
+  - legacy:devopstools_final.md#L1275
+  needs_review: true
+- id: awesome-kubernetes-operator-resources
+  name: Awesome Kubernetes Operator Resources
+  summary: Curated operator-focused resources and learning links.
+  repository_url: https://github.com/calvin-puram/awesome-kubernetes-operator-resources
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You're ramping up on operator patterns and want a breadth of community references.
+  avoid_when:
+  - You need a structured course rather than a link collection.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L145
+  - legacy:devopstools_final.md#L642
+  needs_review: true
+- id: aws-cloud-quest-practitioner
+  name: AWS Cloud Quest Practitioner
+  summary: AWS Skill Builder gamified learning for cloud fundamentals.
+  official_url: https://skillbuilder.aws/learn/FU5WCYVGKY/aws-cloud-quest-cloud-practitioner/learn
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You learn better through interactive, game-based exercises.
+  avoid_when:
+  - You already hold AWS certs and need advanced, hands-on lab content.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L20
+  - legacy:devopstools_final.md#L1276
+  needs_review: true
+- id: aws-skill-builder
+  name: AWS Skill Builder
+  summary: AWS training platform.
+  official_url: https://skillbuilder.aws
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - Preparing for AWS certifications or onboarding to AWS.
+  avoid_when:
+  - Your org uses GCP or Azure — the skills are not directly transferable.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L41
+  - legacy:devopstools_final.md#L120
+  needs_review: true
+- id: azure-devops-labs
+  name: Azure DevOps Labs
+  summary: Hands-on labs for Azure DevOps services and practices.
+  official_url: https://www.azuredevopslabs.com
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - Learn Azure-specific DevOps tooling (Boards, Pipelines, Repos).
+  avoid_when:
+  - You're on a non-Azure stack — the labs are tightly coupled to Azure services.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L42
+  - legacy:devopstools_final.md#L121
+  needs_review: true
+- id: azure-mastery
+  name: Azure Mastery
+  summary: Free Azure learning platform with certification prep, quizzes, flashcards, and guided study
+    paths.
+  official_url: https://www.azurekt.com
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L122
+  needs_review: true
+- id: azure-messaging-for-aws-professionals
+  name: Azure Messaging for AWS Professionals
+  summary: Azure Architecture Center guide mapping Azure messaging services to AWS concepts.
+  official_url: https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You're an AWS-experienced engineer ramping up on Azure messaging.
+  avoid_when:
+  - You have no AWS background—start with Azure messaging docs directly.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L22
+  - legacy:devopstools_final.md#L1277
+  needs_review: true
+- id: backend-roadmap
+  name: Roadmap.sh
+  summary: Community-maintained role and skill roadmaps for software and infrastructure careers.
+  official_url: https://roadmap.sh
+  repository_url: https://github.com/kamranahmedse/developer-roadmap
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You want a structured overview of skills to learn for backend development.
+  - You want a visual guide to orient your learning across roles.
+  - You're planning a DevOps learning journey and want to see the full landscape.
+  avoid_when:
+  - You mistake the roadmap for a mandatory checklist—pick what's relevant to your stack.
+  - You treat it as gospel—every team's needs differ.
+  - You try to learn everything at once—focus on what your team actually needs.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L24
+  - legacy:10_Miscellaneous/README.md#L30
+  - legacy:10_Miscellaneous/README.md#L38
+  - legacy:devopstools_final.md#L1278
+  - legacy:devopstools_final.md#L1283
+  - legacy:devopstools_final.md#L1293
+  needs_review: true
+- id: bytebytego-devops-guide
+  name: ByteByteGo DevOps Guide
+  summary: DevOps and CI/CD guides.
+  official_url: https://bytebytego.com/guides/devops-cicd
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You want visual, high-level explanations of DevOps concepts and patterns.
+  avoid_when:
+  - You need implementation-level detail or runbooks.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L26
+  - legacy:devopstools_final.md#L1279
+  needs_review: true
+- id: claude-code-cheat-sheet
+  name: Claude Code Cheat Sheet
+  summary: Practical guide to Claude Code CLI usage, permissions, hooks, MCP, skills, and agent workflows.
+  official_url: https://shipyard.build/blog/claude-code-cheat-sheet
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1280
+  needs_review: true
+- id: cncf-free-courses
+  name: CNCF Free Courses
+  summary: Free CNCF training courses.
+  official_url: https://www.cncf.io/training/courses?_sfm_lf_course_free=1
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - Vendor-neutral cloud-native fundamentals and certification prep.
+  avoid_when:
+  - Expecting deep hands-on labs — pair with a sandbox environment.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L43
+  - legacy:devopstools_final.md#L123
+  needs_review: true
+- id: deeptutor
+  name: DeepTutor
+  summary: Interactive learning and tutoring platform.
+  official_url: https://hkuds.github.io/DeepTutor
+  repository_url: https://github.com/hkuds/DeepTutor
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - AI-assisted, personalized learning.
+  avoid_when:
+  - For topics requiring verified, authoritative content — AI tutors can hallucinate.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L44
+  - legacy:devopstools_final.md#L124
+  needs_review: true
+- id: dev-community-devops
+  name: 'DEV Community #devops'
+  summary: DEV Community tag feed for DevOps articles, tutorials, and discussions.
+  official_url: https://dev.to/t/devops
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1284
+  needs_review: true
+- id: devops-community
+  name: DevOps Community
+  summary: Community resources and events.
+  official_url: https://www.devopscommunity.in
+  repository_url: https://github.com/rohitg00/DevOpsCommunity
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - Networking and discovering curated DevOps content.
+  avoid_when:
+  - Treating community advice as production-grade guidance without validation.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L45
+  - legacy:devopstools_final.md#L125
+  needs_review: true
+- id: devops-exercises
+  name: DevOps Exercises
+  summary: DevOps interview questions and exercises.
+  repository_url: https://github.com/bregman-arie/devops-exercises
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - Interview prep and self-assessment.
+  avoid_when:
+  - Relying solely on Q&A — hands-on practice is irreplaceable.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L47
+  - legacy:devopstools_final.md#L127
+  needs_review: true
+- id: devops-interview-questions
+  name: DevOps Interview Questions
+  summary: Curated DevOps interview questions.
+  official_url: https://interview.devopscommunity.in
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - Identify knowledge gaps before interviews.
+  avoid_when:
+  - Memorizing answers without understanding underlying concepts.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L48
+  - legacy:devopstools_final.md#L128
+  needs_review: true
+- id: devops-projects
+  name: DevOps Projects
+  summary: Hands-on DevOps project ideas/roadmap for building a portfolio.
+  repository_url: https://github.com/ophircloud/DevOps-Projects
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - Build a practical portfolio with end-to-end projects and clear milestones.
+  avoid_when:
+  - Treating it as a prescriptive “one true roadmap” — adapt projects to your target stack and role.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L49
+  - legacy:devopstools_final.md#L129
+  needs_review: true
+- id: devops-resources
+  name: DevOps Resources
+  summary: Comprehensive DevOps learning resources.
+  repository_url: https://github.com/bregman-arie/devops-resources
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You want interview prep or a broad reference of DevOps topics.
+  avoid_when:
+  - You need curated, opinionated guidance—the breadth can overwhelm.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L28
+  - legacy:devopstools_final.md#L1281
+  needs_review: true
+- id: devopscube-kubernetes-tutorials-beginners
+  name: DevOpsCube Kubernetes Tutorials (Beginners)
+  summary: Beginner-friendly Kubernetes learning resources.
+  official_url: https://devopscube.com/kubernetes-tutorials-beginners
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - As a structured starting path for Kubernetes.
+  avoid_when:
+  - You need advanced topics like operators, service mesh, or multi-cluster setups.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L46
+  - legacy:devopstools_final.md#L126
+  needs_review: true
+- id: dsoxlab
+  name: dsoxlab
+  summary: 'DevSecOps XL Labs: domain-agnostic CLI framework for driving hands-on learning labs across
+    multiple repositories.'
+  repository_url: https://github.com/stephrobert/dsoxlab
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1282
+  needs_review: true
+- id: endoflife-date
+  name: endoflife.date
+  summary: Track software end-of-life dates.
+  official_url: https://endoflife.date
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - End of Life Dates
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You need a quick, centralized reference for product EOL/support timelines.
+  avoid_when:
+  - You require contractual SLA-grade accuracy—always verify with the vendor.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L4
+  - legacy:devopstools_final.md#L1265
+  needs_review: true
+- id: everydev-ai
+  name: EveryDev.ai
+  summary: Community-driven directory, comparison hub, and discussion platform for AI developer tools.
+  official_url: https://www.everydev.ai
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Guides
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1258
+  needs_review: true
+- id: freecodecamp-devops
+  name: FreeCodeCamp DevOps
+  summary: DevOps tutorials.
+  official_url: https://www.freecodecamp.org/news/tag/devops
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You prefer free, long-form written tutorials to get started.
+  avoid_when:
+  - You need enterprise-grade or advanced-level content.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L32
+  - legacy:devopstools_final.md#L1285
+  needs_review: true
+- id: hashnode
+  name: Hashnode
+  summary: Developer blogging and publishing platform with active engineering and DevOps content.
+  official_url: https://hashnode.com
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1286
+  needs_review: true
+- id: k8s-in-a-box
+  name: K8s in a Box
+  summary: Hands-on troubleshooting lab that spins up a local kind cluster filled with intentionally broken
+    workloads.
+  repository_url: https://github.com/moabukar/k8s-in-a-box
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L649
+  needs_review: true
+- id: k8squest
+  name: k8squest
+  summary: Game-based local Kubernetes learning platform with troubleshooting missions.
+  repository_url: https://github.com/Manoj-engineer/k8squest
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L650
+  needs_review: true
+- id: killer-sh
+  name: Killer.sh
+  summary: CKA/CKAD exam simulator.
+  official_url: https://killer.sh
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You're preparing for CKA/CKAD/CKS exams and want the most realistic practice environment.
+  avoid_when:
+  - You're not pursuing certification and just need general Kubernetes practice.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L146
+  - legacy:devopstools_final.md#L643
+  needs_review: true
+- id: killercoda
+  name: Killercoda
+  summary: Interactive, browser-based hands-on labs platform (scenarios-as-code).
+  official_url: https://github.com/killercoda
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - Risk-free, browser-based practice of Kubernetes, Docker, and Linux.
+  avoid_when:
+  - As a substitute for building and breaking real clusters.* <!-- cspell:ignore Killercoda -->.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L50
+  - legacy:devopstools_final.md#L130
+  needs_review: true
+- id: killercoda-cka
+  name: Killercoda CKA
+  summary: Interactive Kubernetes training labs.
+  official_url: https://killercoda.com/cka
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You want free, browser-based hands-on Kubernetes exercises.
+  avoid_when:
+  - You need exam-grade fidelity (use Killer.sh) or structured video courses.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L147
+  - legacy:devopstools_final.md#L644
+  needs_review: true
+- id: kindling
+  name: Kindling
+  summary: AI-powered job search assistant for managing applications and career research.
+  official_url: https://mykindling.io/get-kindling
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1287
+  needs_review: true
+- id: kodekloud
+  name: KodeKloud
+  summary: Hands-on Kubernetes and DevOps training platform.
+  official_url: https://kodekloud.com
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You want structured courses with integrated labs and certification prep.
+  avoid_when:
+  - Free resources (Killercoda, official docs) are sufficient for your learning goals.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L148
+  - legacy:devopstools_final.md#L645
+  needs_review: true
+- id: kubecodex
+  name: kubeCodex
+  summary: Kubernetes reference/learning repository.
+  repository_url: https://github.com/TheCodingSheikh/kubecodex
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You want a community-curated quick-reference for Kubernetes concepts.
+  avoid_when:
+  - Official Kubernetes documentation covers what you need with more authority.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L149
+  - legacy:devopstools_final.md#L646
+  needs_review: true
+- id: kubelearn
+  name: KubeLearn
+  summary: Interactive Kubernetes learning game with quizzes, drag-and-drop challenges, and hands-on exercises.
+  official_url: https://kubelearn.yoparchi.fr
+  repository_url: https://github.com/miltlima/kubelearn
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L647
+  needs_review: true
+- id: kubernetes-de-a-z
+  name: Kubernetes de A à Z
+  summary: Kubernetes learning repository.
+  repository_url: https://github.com/ibrahimbakayoko/kubernetes-de-a-z
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - If you prefer French-language Kubernetes learning material.
+  avoid_when:
+  - You need English or regularly updated content.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L51
+  - legacy:devopstools_final.md#L131
+  needs_review: true
+- id: kubernetes-gitops-guide
+  name: Kubernetes GitOps Guide
+  summary: Practical GitOps guide for Kubernetes.
+  repository_url: https://github.com/thezawzaw/kubernetes-gitops-guide
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You're adopting GitOps and want a practical walkthrough with real examples.
+  avoid_when:
+  - You already have GitOps workflows established and need tool-specific docs instead.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L150
+  - legacy:devopstools_final.md#L651
+  needs_review: true
+- id: kubernetes-learning-path
+  name: Kubernetes Learning Path
+  summary: Official Kubernetes docs.
+  official_url: https://kubernetes.io/docs/home
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You need authoritative, up-to-date Kubernetes reference material.
+  avoid_when:
+  - You're a complete beginner—start with an introductory course first.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L34
+  - legacy:devopstools_final.md#L1288
+  needs_review: true
+- id: labex-devops-tutorials
+  name: LabEx DevOps Tutorials
+  summary: Hands-on DevOps tutorials with labs, code examples, and interactive playground exercises.
+  official_url: https://labex.io/tutorials/category/devops
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1289
+  needs_review: true
+- id: labsdevops-fr
+  name: LabsDevOps.fr
+  summary: DevOps labs and learning resources.
+  official_url: https://labsdevops.fr
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - French-language, hands-on DevOps exercises.
+  avoid_when:
+  - You need English content or enterprise-level lab complexity.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L52
+  - legacy:devopstools_final.md#L132
+  needs_review: true
+- id: learnkube
+  name: LearnKube
+  summary: Kubernetes learning hub covering security contexts, instance sizing, and practical DevOps guides.
+  official_url: https://learnkube.com
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L648
+  needs_review: true
+- id: microsoft-learn
+  name: Microsoft Learn
+  summary: Free training from Microsoft.
+  official_url: https://learn.microsoft.com/en-us/training
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You're preparing for Microsoft certifications or learning Azure/M365/.NET.
+  avoid_when:
+  - Your stack is entirely non-Microsoft.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L36
+  - legacy:devopstools_final.md#L1291
+  needs_review: true
+- id: mini-classes-ansible-public
+  name: Mini-classes Ansible Public
+  summary: Shared support project and labs for public Ansible training sessions.
+  repository_url: https://github.com/apille-pro/miniclasses_ansible_public
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1290
+  needs_review: true
+- id: mlops-for-devops-engineers
+  name: MLOps for DevOps Engineers
+  summary: Hands-on, project-based guide that teaches MLOps concepts and production ML workflows from
+    a DevOps and platform engineering perspective.
+  repository_url: https://github.com/techiescamp/mlops-for-devops
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Guides
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1259
+  needs_review: true
+- id: onedr0p-cluster-template
+  name: onedr0p/cluster-template
+  summary: GitOps-based Kubernetes cluster template.
+  repository_url: https://github.com/onedr0p/cluster-template
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You want an opinionated, community-maintained home-lab/GitOps cluster bootstrap.
+  avoid_when:
+  - You need enterprise-grade templates or your cluster requirements diverge significantly from the template's
+    opinions.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L151
+  - legacy:devopstools_final.md#L652
+  needs_review: true
+- id: open-notebook
+  name: Open Notebook
+  summary: Privacy-first AI note-taking and research platform for learning workflows.
+  official_url: https://www.open-notebook.ai
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Guides
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1260
+  needs_review: true
+- id: reference-cheatsheets-zip
+  name: Reference (cheatsheets.zip)
+  summary: Open-source cheat sheets and quick references for developers; formerly served from quickref.me.
+  official_url: https://cheatsheets.zip
+  repository_url: https://github.com/Fechin/reference
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1292
+  needs_review: true
+- id: sysadmin-to-sre-roadmap
+  name: SysAdmin to SRE Roadmap
+  summary: French roadmap for progressing from SysAdmin to SRE/DevOps across Linux, Kubernetes, IaC, CI/CD,
+    security, observability, and AI.
+  official_url: https://sre.yoparchi.fr
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L133
+  needs_review: true
+- id: system-design
+  name: System Design
+  summary: Comprehensive system design learning guide and interview preparation resource.
+  repository_url: https://github.com/karanpratapsingh/system-design
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Interview Prep
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - Structured system design interview prep.
+  avoid_when:
+  - Treating diagrams as production architectures — they are intentionally simplified.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L53
+  - legacy:devopstools_final.md#L134
+  needs_review: true
+- id: techops-examples
+  name: TechOps Examples
+  summary: DevOps and cloud newsletter focused on practical real-world examples and learning resources.
+  official_url: https://www.techopsexamples.com
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1294
+  needs_review: true
+- id: trendshift
+  name: Trendshift
+  summary: Daily momentum rankings for trending GitHub repositories.
+  official_url: https://trendshift.io
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Learning & Development
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1295
+  needs_review: true
+- id: udemy-cka-course
+  name: Udemy CKA Course
+  summary: Online course for Kubernetes certification.
+  official_url: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests
+  categories:
+  - documentation-learning-career
+  subcategories:
+  - Kubernetes Training & Certification
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You prefer video-based learning with hands-on labs for CKA prep (Mumshad Mannambeth's course is widely
+    recommended).
+  avoid_when:
+  - You learn better from docs and interactive labs (Killercoda/KodeKloud).
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L152
+  - legacy:devopstools_final.md#L653
+  needs_review: true
