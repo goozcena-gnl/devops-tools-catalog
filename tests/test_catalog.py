@@ -83,6 +83,40 @@ def test_commercial_cloud_services_can_be_active() -> None:
     assert storage_gateway["status"] == "active"
 
 
+def test_batch03_commercial_platforms_are_active() -> None:
+    tools = load_tools()
+    for tool_id in ["civo", "cloudfuze", "cloudzero", "dash0"]:
+        tool = next(tool for tool in tools if tool["id"] == tool_id)
+        assert tool["license_model"] == "commercial"
+        assert tool["commercial_offering"] is True
+        assert tool["status"] == "active"
+        assert tool["needs_review"] is False
+
+
+def test_batch03_open_source_ci_cd_tools_are_active() -> None:
+    tools = load_tools()
+    commitlint = next(tool for tool in tools if tool["id"] == "commitlint")
+    concourse = next(tool for tool in tools if tool["id"] == "concourse")
+    assert commitlint["license_model"] == "oss"
+    assert commitlint["license_spdx"] == "MIT"
+    assert commitlint["status"] == "active"
+    assert concourse["license_model"] == "oss"
+    assert concourse["license_spdx"] == "Apache-2.0"
+    assert concourse["status"] == "active"
+
+
+def test_batch03_open_core_monitoring_docs_are_present() -> None:
+    tools = load_tools()
+    centreon = next(tool for tool in tools if tool["id"] == "centreon")
+    checkmk = next(tool for tool in tools if tool["id"] == "checkmk")
+    assert centreon["license_model"] == "open-core"
+    assert centreon["documentation_url"] == "https://docs.centreon.com/"
+    assert centreon["status"] == "active"
+    assert checkmk["license_model"] == "open-core"
+    assert checkmk["documentation_url"] == "https://docs.checkmk.com/latest/en/"
+    assert checkmk["status"] == "active"
+
+
 def test_every_source_occurrence_has_a_disposition() -> None:
     with (ROOT / "migration" / "reconciliation.csv").open(
         encoding="utf-8", newline=""
