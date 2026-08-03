@@ -919,6 +919,7 @@
   summary: Runtime security for cloud-native environments.
   official_url: https://falco.org
   repository_url: https://github.com/falcosecurity/falco
+  documentation_url: https://falco.org/docs/
   categories:
   - kubernetes-networking-storage-addons
   - application-cloud-security
@@ -944,8 +945,9 @@
   - You only need pre-deployment scanning (use Trivy/Kubescape instead).
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -954,7 +956,7 @@
   - legacy:6_Security/README.md#L25
   - legacy:devopstools_final.md#L556
   - legacy:devopstools_final.md#L861
-  needs_review: true
+  needs_review: false
 - id: flannel
   name: flannel
   summary: Simple Layer 3 network fabric (CNI) for Kubernetes.
@@ -1701,6 +1703,7 @@
   summary: Kubernetes control plane manager (multi-tenancy/security).
   official_url: https://kamaji.clastix.io
   repository_url: https://github.com/clastix/kamaji
+  documentation_url: https://kamaji.clastix.io/
   categories:
   - kubernetes-networking-storage-addons
   - application-cloud-security
@@ -1726,8 +1729,9 @@
   - You need full cluster isolation or use a managed K8s service.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -1736,7 +1740,7 @@
   - legacy:6_Security/README.md#L72
   - legacy:devopstools_final.md#L580
   - legacy:devopstools_final.md#L943
-  needs_review: true
+  needs_review: false
 - id: karpenter
   name: Karpenter
   summary: Kubernetes node autoscaler.

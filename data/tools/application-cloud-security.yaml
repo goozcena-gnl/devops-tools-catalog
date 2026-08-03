@@ -554,6 +554,7 @@
   summary: Semantic code analysis for vulnerabilities.
   official_url: https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql
   repository_url: https://github.com/github/codeql
+  documentation_url: https://codeql.github.com/docs/
   categories:
   - application-cloud-security
   subcategories:
@@ -570,15 +571,16 @@
   - Your codebase language isn't supported or you need near-instant scan times.
   deployment_models: []
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:6_Security/README.md#L15
   - legacy:devopstools_final.md#L850
-  needs_review: true
+  needs_review: false
 - id: codiga
   name: Codiga
   summary: Automated code analysis and security.
@@ -613,6 +615,7 @@
   summary: Test configuration files using OPA/Rego.
   official_url: https://www.conftest.dev
   repository_url: https://github.com/open-policy-agent/conftest
+  documentation_url: https://www.conftest.dev/
   categories:
   - application-cloud-security
   subcategories:
@@ -630,14 +633,14 @@
   deployment_models: []
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:6_Security/README.md#L65
   - legacy:devopstools_final.md#L933
-  needs_review: true
+  needs_review: false
 - id: copy-fail-destroyer
   name: copy-fail-destroyer
   summary: Kubernetes DaemonSet that detects and remediates Linux kernel page-cache write vulnerabilities

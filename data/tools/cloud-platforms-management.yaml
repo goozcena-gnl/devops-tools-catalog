@@ -102,6 +102,7 @@
   name: Civo
   summary: Cloud infrastructure provider focused on Kubernetes.
   official_url: https://www.civo.com
+  documentation_url: https://www.civo.com/docs
   categories:
   - cloud-platforms-management
   subcategories:
@@ -119,16 +120,17 @@
   avoid_when:
   - You need a full-spectrum cloud provider beyond K8s.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L8
   - legacy:devopstools_final.md#L152
-  needs_review: true
+  needs_review: false
 - id: cloudfuze
   name: CloudFuze
   summary: Cloud file transfer and management.
@@ -150,16 +152,17 @@
   avoid_when:
   - You're migrating infrastructure rather than user files.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L228
   - legacy:devopstools_final.md#L300
-  needs_review: true
+  needs_review: false
 - id: cloudify
   name: Cloudify
   summary: Cloud orchestration framework for automating application and infrastructure lifecycle across

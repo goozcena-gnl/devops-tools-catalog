@@ -181,6 +181,7 @@
   summary: Checkpoint/Restore In Userspace for Linux containers and processes.
   official_url: https://criu.org/Main_Page
   repository_url: https://github.com/checkpoint-restore/criu
+  documentation_url: https://criu.org/Main_Page
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -198,14 +199,14 @@
   deployment_models: []
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L138
   - legacy:devopstools_final.md#L234
-  needs_review: true
+  needs_review: false
 - id: ctop
   name: ctop
   summary: Container metrics viewer (top-like).
@@ -227,15 +228,16 @@
   - You already have a full monitoring stack (Prometheus/Grafana) in place.
   deployment_models: []
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L140
   - legacy:devopstools_final.md#L235
-  needs_review: true
+  needs_review: false
 - id: dive
   name: dive
   summary: Explore Docker image layers.
