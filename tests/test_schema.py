@@ -34,10 +34,10 @@ def test_verified_archived_tool_is_separated_from_active_catalogue() -> None:
     assert kaniko["lifecycle_stages"] == ["retire"]
 
 
-def test_archived_repository_can_remain_under_project_review() -> None:
+def test_archived_repository_can_remain_for_active_tool() -> None:
     localstack = next(tool for tool in load_tools() if tool["id"] == "localstack")
     assert localstack["repository_archived"] is True
-    assert localstack["status"] == "needs-review"
+    assert localstack["status"] == "active"
 
 
 def test_moved_repository_uses_active_official_location() -> None:

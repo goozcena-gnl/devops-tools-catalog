@@ -43,10 +43,18 @@ def test_multi_category_tool_is_preserved() -> None:
     }
 
 
-def test_unknown_licence_is_explicitly_reviewable() -> None:
+def test_arm_templates_license_is_verified() -> None:
     arm_templates = next(tool for tool in load_tools() if tool["id"] == "arm-templates")
-    assert arm_templates["license_model"] == "unknown"
-    assert arm_templates["needs_review"] is True
+    assert arm_templates["license_model"] == "oss"
+    assert arm_templates["license_spdx"] == "MIT"
+    assert arm_templates["needs_review"] is False
+
+
+def test_localstack_active_tool_with_archived_repository() -> None:
+    localstack = next(tool for tool in load_tools() if tool["id"] == "localstack")
+    assert localstack["status"] == "active"
+    assert localstack["repository_archived"] is True
+    assert localstack["needs_review"] is False
 
 
 def test_every_source_occurrence_has_a_disposition() -> None:
