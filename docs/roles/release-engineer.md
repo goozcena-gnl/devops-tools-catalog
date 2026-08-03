@@ -5,15 +5,15 @@
 
 | Tool | Categories | Model | Status |
 |---|---|---|---|
-| [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | needs-review |
-| [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | needs-review |
+| [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | active |
+| [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | active |
 | [Appcircle](https://appcircle.io) | CI, build and testing | unknown | needs-review |
+| [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [Argo Workflows](https://argoproj.github.io/argo-workflows) | CI, build and testing | oss | needs-review |
-| [ArgoCD](https://argo-cd.readthedocs.io) | CD, GitOps, release and promotion | oss | needs-review |
 | [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |
 | [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview) | CD, GitOps, release and promotion | oss | needs-review |
 | [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable) | CD, GitOps, release and promotion | oss | needs-review |
-| [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | needs-review |
+| [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | needs-review |
 | [Azure DevOps](https://azure.microsoft.com/en-us/services/devops) | CI, build and testing | unknown | needs-review |

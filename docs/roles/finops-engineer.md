@@ -6,7 +6,7 @@
 | Tool | Categories | Model | Status |
 |---|---|---|---|
 | [Apptio Cloudability](https://www.apptio.com/products/cloudability) | FinOps and sustainability | unknown | needs-review |
-| [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | needs-review |
+| [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | active |
 | [Cast AI](https://cast.ai) | FinOps and sustainability | unknown | needs-review |
 | [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | unknown | needs-review |
 | [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) | FinOps and sustainability | unknown | needs-review |
@@ -22,7 +22,7 @@
 | [Kubex](https://kubex.ai) | FinOps and sustainability | unknown | needs-review |
 | [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | needs-review |
 | [Nutanix Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | unknown | needs-review |
-| [OpenCost](https://www.opencost.io) | FinOps and sustainability | oss | needs-review |
+| [OpenCost](https://www.opencost.io) | FinOps and sustainability | oss | active |
 | [PointFive](https://www.pointfive.co) | FinOps and sustainability | unknown | needs-review |
 | [ProsperOps](https://www.prosperops.com) | FinOps and sustainability | unknown | needs-review |
 | [Spot FinOps](https://spot.io/solutions/finops) | FinOps and sustainability | unknown | needs-review |

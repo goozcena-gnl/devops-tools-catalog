@@ -29,7 +29,7 @@ AWS monitoring and observability service.
 **Categories:** Monitoring, metrics, logs and tracing  
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 APM platform for distributed tracing, metrics, and service topology.
 
@@ -41,7 +41,7 @@ APM platform for distributed tracing, metrics, and service topology.
 
 - You've standardized on OTel and prefer a lighter, more modular stack.
 
-[Official site](https://skywalking.apache.org) · [Source repository](https://github.com/apache/skywalking)
+[Official site](https://skywalking.apache.org) · [Documentation](https://skywalking.apache.org/docs/) · [Source repository](https://github.com/apache/skywalking)
 
 ### AppNeta
 
@@ -257,7 +257,7 @@ IT monitoring platform with open source Raw Edition and paid enterprise editions
 **Categories:** Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure  
 **Roles:** DevOps Engineer, Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer, Observability Engineer  
 **Model:** Open Core  
-**Status:** Needs Review
+**Status:** Active
 
 Columnar database commonly used as an observability backend.
 
@@ -271,7 +271,7 @@ Columnar database commonly used as an observability backend.
 - You lack the team to operate a complex OLAP database.
 - You need OLTP workloads, frequent small updates, or strong transactional guarantees.
 
-[Official site](https://clickhouse.com) · [Source repository](https://github.com/ClickHouse/ClickHouse)
+[Official site](https://clickhouse.com) · [Documentation](https://clickhouse.com/docs) · [Source repository](https://github.com/ClickHouse/ClickHouse)
 
 ### Coroot
 
@@ -468,7 +468,7 @@ Developer-oriented health dashboard and status page for monitoring endpoints and
 **Categories:** Kubernetes distributions and operations, Monitoring, metrics, logs and tracing  
 **Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, Observability Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 
@@ -480,7 +480,7 @@ Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 
 - You require strict, manually controlled resource sizing or can’t use VPA recommendations due to workload characteristics (e.g., highly bursty or latency-critical services).
 
-[Source repository](https://github.com/FairwindsOps/goldilocks)
+[Official site](https://goldilocks.docs.fairwinds.com/) · [Documentation](https://goldilocks.docs.fairwinds.com/) · [Source repository](https://github.com/FairwindsOps/goldilocks)
 
 ### Gonzo
 

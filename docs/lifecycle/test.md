@@ -16,7 +16,7 @@
 - [Arsenal](https://github.com/Orange-Cyberdefense/arsenal) — Security tools knowledge base.
 - [Artillery](https://www.artillery.io) — Modern load testing toolkit.
 - [ASP.NET Aspire](https://aspire.dev) — Orchestration + tooling for building cloud-native .NET distributed applications.
-- [autopwn-suite](https://kaangultekin.net/projects/autopwn-suite) — Automated penetration testing framework.
+- [AutoPWN Suite](https://kaangultekin.net/projects/autopwn-suite) — Automated reconnaissance and vulnerability discovery framework for security testing labs.
 - [Awesome DevSecOps](https://github.com/devsecops/awesome-devsecops) — Curated list of DevSecOps resources.
 - [Awesome WAF](https://github.com/0xInfection/Awesome-WAF) — Curated list of Web Application Firewalls.
 - [AWS Cloud9](https://aws.amazon.com/cloud9) — Cloud-based IDE for writing, running, and debugging code.
@@ -31,11 +31,10 @@
 - [Bitrise](https://bitrise.io) — CI/CD for mobile apps with automation workflows.
 - [Black](https://black.readthedocs.io) — Python code formatter.
 - [Bottles](https://usebottles.com) — Open-source tool to manage Windows applications on Linux using Wine.
-- [BridgeCrew](https://bridgecrew.io) — Commercial DevSecOps platform (now part of Prisma Cloud). Use Checkov for the OSS scanner.
 - [BrowserStack App Automate](https://www.browserstack.com/app-automate) — Automated mobile app testing on real devices.
 - [Buddy](https://buddy.works) — CI/CD pipeline automation tool.
 - [Buildkite](https://buildkite.com) — CI/CD platform with agent-based execution.
-- [BunkerWeb](https://www.bunkerweb.io) — Web security gateway / WAF for NGINX.
+- [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 - [Burp Suite](https://portswigger.net/burp) — Web vulnerability scanner and testing suite.
 - [Cadence CI](https://cadence.ci) — CI/CD platform.
 - [CAI (RobotSec)](https://aliasrobotics.github.io/cai) — Cybersecurity assessment for robotics.
@@ -52,6 +51,7 @@
 - [Chaos Toolkit](https://chaostoolkit.org) — Open-source chaos engineering toolkit for building reliability experiments. ✅ **Use when** you want declarative, version-controlled experiments that are CI/CD-friendly and platform-agnostic. ❌ **Avoid when** you need real-time orchestration or a rich UI—it's primarily CLI/JSON-driven.
 - [ChaosBlade](https://chaosblade.io/en) — Chaos engineering platform with comprehensive fault injection capabilities. ✅ **Use when** you need broad fault injection (OS, JVM, Docker, K8s) in a single CLI tool. ❌ **Avoid when** you need a polished UI-driven workflow or strong English-language community support.
 - [Checkmarx](https://checkmarx.com) — Application security testing platform.
+- [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) — Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
 - [Cilium](https://cilium.io) — EBPF-based networking, observability, and security for Kubernetes.
 - [CircleCI](https://circleci.com) — Cloud CI/CD platform.
 - [Cisco Talos Intelligence](https://www.talosintelligence.com) — Threat intelligence platform providing IP/domain reputation, vulnerability research, malware analysis, and security advisories by Cisco.
@@ -139,10 +139,10 @@
 - [Kiuwan](https://www.kiuwan.com) — Application security and code quality platform.
 - [Kps-zeroexposure](https://github.com/adrghph/kps-zeroexposure) — Kubernetes zero-exposure policy tool.
 - [Kube Monkey](https://github.com/asobti/kube-monkey) — Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, opt-in pod-killing schedule for Kubernetes with minimal setup. ❌ **Avoid when** you need network/IO faults or fine-grained experiment control beyond random pod deletion.
-- [kube-linter](https://docs.kubelinter.io) — Static analysis for Kubernetes YAML files.
 - [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) — Gamified chaos engineering for Kubernetes. ✅ **Use when** you want a fun, visual way to introduce chaos engineering concepts in workshops or game days. ❌ **Avoid when** you need automated, scheduled, or CI-integrated chaos experiments.
+- [KubeLinter](https://docs.kubelinter.io/) — Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
 - [LitmusChaos](https://litmuschaos.io) — Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with a hub of pre-built experiments and GitOps-friendly CRD workflows. ❌ **Avoid when** your environment is non-Kubernetes or you find ChaosHub's experiment catalog doesn't cover your stack.
-- [LocalStack](https://www.localstack.cloud) — Local AWS cloud emulator for development and testing.
+- [LocalStack](https://www.localstack.cloud) — Local cloud development platform that emulates AWS services for integration testing and offline workflows.
 - [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) — Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow injection or unintended code execution.
 - [Lynis](https://cisofy.com/lynis) — Security auditing and hardening tool with an enterprise offering (CISOfy).
 - [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Network device configuration management.

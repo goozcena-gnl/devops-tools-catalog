@@ -1,8 +1,9 @@
 - id: argocd
-  name: ArgoCD
+  name: Argo CD
   summary: Declarative GitOps continuous delivery for Kubernetes.
-  official_url: https://argo-cd.readthedocs.io
+  official_url: https://argo-cd.readthedocs.io/en/stable/
   repository_url: https://github.com/argoproj/argo-cd
+  documentation_url: https://argo-cd.readthedocs.io/en/stable/
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -20,15 +21,16 @@
   - '* You don''t use Kubernetes or prefer a pull-based model without a central server.'
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L134
   - legacy:devopstools_final.md#L385
-  needs_review: true
+  needs_review: false
 - id: argocd-agent
   name: ArgoCD Agent
   summary: Agent-based architecture for ArgoCD to manage remote clusters.
@@ -124,8 +126,9 @@
 - id: argocd-vault-plugin
   name: ArgoCD Vault Plugin
   summary: Integrates secrets from external stores into ArgoCD.
-  official_url: https://argocd-vault-plugin.readthedocs.io/en/stable
+  official_url: https://argocd-vault-plugin.readthedocs.io/en/stable/
   repository_url: https://github.com/argoproj-labs/argocd-vault-plugin
+  documentation_url: https://argocd-vault-plugin.readthedocs.io/en/stable/
   categories:
   - cd-gitops-release-promotion
   - iam-secrets-certificates
@@ -152,8 +155,9 @@
   - You use External Secrets Operator which covers the same need more broadly.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -162,7 +166,7 @@
   - legacy:6_Security/README.md#L87
   - legacy:devopstools_final.md#L389
   - legacy:devopstools_final.md#L974
-  needs_review: true
+  needs_review: false
 - id: bunnyshell
   name: Bunnyshell
   summary: Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven

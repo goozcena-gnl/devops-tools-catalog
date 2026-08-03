@@ -48,7 +48,7 @@ Embedded key/value store for Go applications.
 **Categories:** Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure  
 **Roles:** DevOps Engineer, Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer, Observability Engineer  
 **Model:** Open Core  
-**Status:** Needs Review
+**Status:** Active
 
 Columnar database commonly used as an observability backend.
 
@@ -62,7 +62,7 @@ Columnar database commonly used as an observability backend.
 - You lack the team to operate a complex OLAP database.
 - You need OLTP workloads, frequent small updates, or strong transactional guarantees.
 
-[Official site](https://clickhouse.com) · [Source repository](https://github.com/ClickHouse/ClickHouse)
+[Official site](https://clickhouse.com) · [Documentation](https://clickhouse.com/docs) · [Source repository](https://github.com/ClickHouse/ClickHouse)
 
 ### etcd
 

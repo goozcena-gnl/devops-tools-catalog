@@ -656,7 +656,9 @@
 - id: goldilocks
   name: Goldilocks
   summary: Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
+  official_url: https://goldilocks.docs.fairwinds.com/
   repository_url: https://github.com/FairwindsOps/goldilocks
+  documentation_url: https://goldilocks.docs.fairwinds.com/
   categories:
   - kubernetes-distributions-operations
   - monitoring-metrics-logs-tracing
@@ -681,15 +683,16 @@
     characteristics (e.g., highly bursty or latency-critical services).
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L28
   - legacy:devopstools_final.md#L724
-  needs_review: true
+  needs_review: false
 - id: hanoi-cli
   name: Hanoi CLI
   summary: Interactive rebalance advisor for Kubernetes.
@@ -1468,10 +1471,11 @@
   - legacy:devopstools_final.md#L484
   needs_review: true
 - id: kube-linter
-  name: kube-linter
-  summary: Static analysis for Kubernetes YAML files.
-  official_url: https://docs.kubelinter.io
+  name: KubeLinter
+  summary: Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
+  official_url: https://docs.kubelinter.io/
   repository_url: https://github.com/stackrox/kube-linter
+  documentation_url: https://docs.kubelinter.io/
   categories:
   - kubernetes-distributions-operations
   - application-cloud-security
@@ -1497,8 +1501,9 @@
   - You already run kube-score or kubeconform and don't need overlapping checks.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -1507,7 +1512,7 @@
   - legacy:6_Security/README.md#L32
   - legacy:devopstools_final.md#L485
   - legacy:devopstools_final.md#L877
-  needs_review: true
+  needs_review: false
 - id: kube-score
   name: kube-score
   summary: Static analysis tool for Kubernetes YAML manifests with best-practice recommendations.

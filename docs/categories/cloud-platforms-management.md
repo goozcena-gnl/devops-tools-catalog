@@ -29,9 +29,9 @@ Comprehensive cloud computing platform by Amazon.
 **Categories:** Cloud platforms and cloud management  
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
-Open-source cloud computing platform.
+Open source infrastructure-as-a-service platform for building and managing private and public clouds.
 
 **Use when**
 
@@ -41,7 +41,7 @@ Open-source cloud computing platform.
 
 - You lack the team to operate your own cloud infrastructure.
 
-[Official site](https://cloudstack.apache.org) · [Source repository](https://github.com/apache/cloudstack)
+[Official site](https://cloudstack.apache.org) · [Documentation](https://docs.cloudstack.apache.org) · [Source repository](https://github.com/apache/cloudstack)
 
 ### AWS Storage Gateway
 
@@ -105,7 +105,7 @@ Cloud file transfer and management.
 **Categories:** Cloud platforms and cloud management  
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
 
@@ -117,7 +117,7 @@ Cloud orchestration framework for automating application and infrastructure life
 
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
-[Official site](https://docs.cloudify.co) · [Source repository](https://github.com/cloudify-cosmo/cloudify-manager)
+[Official site](https://cloudify.co) · [Documentation](https://docs.cloudify.co) · [Source repository](https://github.com/cloudify-cosmo/cloudify-manager)
 
 ### Concierto Cloud
 

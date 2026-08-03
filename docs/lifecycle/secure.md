@@ -6,19 +6,18 @@
 - [1Password Connect](https://www.1password.dev/connect) — Embeddable API server for programmatic access to 1Password vaults from infrastructure and applications.
 - [Aikido](https://www.aikido.dev) — Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud posture scanning.
 - [Apiiro](https://apiiro.com) — Application security platform focused on securing agentic development and software delivery.
-- [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable) — Integrates secrets from external stores into ArgoCD.
+- [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
 - [Arnica](https://www.arnica.io) — Application security platform covering SAST, SCA, IaC, and secrets scanning.
 - [Arsenal](https://github.com/Orange-Cyberdefense/arsenal) — Security tools knowledge base.
 - [Auth0](https://auth0.com) — Identity platform for authenticating users, applications, and AI agents.
-- [autopwn-suite](https://kaangultekin.net/projects/autopwn-suite) — Automated penetration testing framework.
+- [AutoPWN Suite](https://kaangultekin.net/projects/autopwn-suite) — Automated reconnaissance and vulnerability discovery framework for security testing labs.
 - [Awesome DevSecOps](https://github.com/devsecops/awesome-devsecops) — Curated list of DevSecOps resources.
 - [Awesome WAF](https://github.com/0xInfection/Awesome-WAF) — Curated list of Web Application Firewalls.
 - [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) — Managed secret storage for AWS.
 - [AWS Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) — AWS organization-level access control.
 - [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) — Azure resource governance.
 - [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) — ACME-based certificate authority server powering Let's Encrypt.
-- [BridgeCrew](https://bridgecrew.io) — Commercial DevSecOps platform (now part of Prisma Cloud). Use Checkov for the OSS scanner.
-- [BunkerWeb](https://www.bunkerweb.io) — Web security gateway / WAF for NGINX.
+- [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 - [Burp Suite](https://portswigger.net/burp) — Web vulnerability scanner and testing suite.
 - [CAI (RobotSec)](https://aliasrobotics.github.io/cai) — Cybersecurity assessment for robotics.
 - [Calico Cloud](https://www.calicocloud.io/home) — Managed SaaS platform built on Calico Open Source for networking/security/observability.
@@ -29,6 +28,7 @@
 - [Chain Bench](https://github.com/aquasecurity/chain-bench) — Supply chain security auditing tool.
 - [Chainguard](https://www.chainguard.dev) — Secure container images and supply chain security platform.
 - [Checkmarx](https://checkmarx.com) — Application security testing platform.
+- [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) — Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
 - [Cilium](https://cilium.io) — EBPF-based networking, observability, and security for Kubernetes.
 - [Cisco Talos Intelligence](https://www.talosintelligence.com) — Threat intelligence platform providing IP/domain reputation, vulnerability research, malware analysis, and security advisories by Cisco.
 - [CodeQL](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql) — Semantic code analysis for vulnerabilities.
@@ -52,7 +52,7 @@
 - [Drata](https://drata.com) — Security and compliance automation platform.
 - [Duo Security](https://duo.com) — Multi-factor authentication and access security.
 - [Entrust KeyControl](https://www.entrust.com/products/key-management/keycontrol) — Key management for enterprise.
-- [External Secrets Operator](https://external-secrets.io) — Sync external secrets into Kubernetes.
+- [External Secrets Operator](https://external-secrets.io/main) — Sync external secrets into Kubernetes.
 - [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) — Commercial WAF for NGINX.
 - [fail2ban](https://github.com/fail2ban/fail2ban) — Intrusion prevention by monitoring logs and banning abusive IPs (e.g., SSH).
 - [Falco](https://falco.org) — Runtime security for cloud-native environments.
@@ -89,7 +89,7 @@
 - [kickthemout](https://github.com/roccomuso/kickthemout) — Kick devices off your local network using ARP spoofing (Node.js-based network security testing tool).
 - [Kiuwan](https://www.kiuwan.com) — Application security and code quality platform.
 - [Kps-zeroexposure](https://github.com/adrghph/kps-zeroexposure) — Kubernetes zero-exposure policy tool.
-- [kube-linter](https://docs.kubelinter.io) — Static analysis for Kubernetes YAML files.
+- [KubeLinter](https://docs.kubelinter.io/) — Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
 - [Lade](https://github.com/zifeo/lade) — Auto-load secrets from vaults into environment variables or files for shell commands with minimal exposure.
 - [Lefthook](https://lefthook.dev) — Fast Git hooks manager (parallel execution, cross-platform).
 - [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) — Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow injection or unintended code execution.

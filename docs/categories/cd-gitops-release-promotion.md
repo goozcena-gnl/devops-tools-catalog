@@ -5,12 +5,12 @@
 
 [Back to catalogue](../../README.md)
 
-### ArgoCD
+### Argo CD
 
 **Categories:** CD, GitOps, release and promotion  
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 Declarative GitOps continuous delivery for Kubernetes.
 
@@ -22,7 +22,7 @@ Declarative GitOps continuous delivery for Kubernetes.
 
 - * You don't use Kubernetes or prefer a pull-based model without a central server.
 
-[Official site](https://argo-cd.readthedocs.io) · [Source repository](https://github.com/argoproj/argo-cd)
+[Official site](https://argo-cd.readthedocs.io/en/stable/) · [Documentation](https://argo-cd.readthedocs.io/en/stable/) · [Source repository](https://github.com/argoproj/argo-cd)
 
 ### ArgoCD Agent
 
@@ -86,7 +86,7 @@ Automated image updates for ArgoCD.
 **Categories:** CD, GitOps, release and promotion, IAM, secrets and certificate management  
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, DevSecOps Engineer, Release Engineer, Cloud Security Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 Integrates secrets from external stores into ArgoCD.
 
@@ -100,7 +100,7 @@ Integrates secrets from external stores into ArgoCD.
 - * You use External Secrets Operator or Sealed Secrets and don't need in-manifest substitution.
 - You use External Secrets Operator which covers the same need more broadly.
 
-[Official site](https://argocd-vault-plugin.readthedocs.io/en/stable) · [Source repository](https://github.com/argoproj-labs/argocd-vault-plugin)
+[Official site](https://argocd-vault-plugin.readthedocs.io/en/stable/) · [Documentation](https://argocd-vault-plugin.readthedocs.io/en/stable/) · [Source repository](https://github.com/argoproj-labs/argocd-vault-plugin)
 
 ### Bunnyshell
 

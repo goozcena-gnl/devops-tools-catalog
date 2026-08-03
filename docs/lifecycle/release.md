@@ -3,11 +3,11 @@
 
 66 records support this lifecycle stage.
 
-- [ArgoCD](https://argo-cd.readthedocs.io) — Declarative GitOps continuous delivery for Kubernetes.
+- [Argo CD](https://argo-cd.readthedocs.io/en/stable/) — Declarative GitOps continuous delivery for Kubernetes.
 - [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) — Agent-based architecture for ArgoCD to manage remote clusters.
 - [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview) — Preview ArgoCD application changes.
 - [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable) — Automated image updates for ArgoCD.
-- [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable) — Integrates secrets from external stores into ArgoCD.
+- [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
 - [Artifact Hub](https://artifacthub.io) — Discover and share packages (Helm charts, operators, etc.).
 - [Bazel](https://bazel.build) — Fast, scalable, multi-language build system.
 - [Buildah](https://buildah.io) — Build OCI images without a daemon.

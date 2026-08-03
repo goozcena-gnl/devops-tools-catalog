@@ -17,17 +17,17 @@
 | [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | unknown | needs-review |
 | [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Amazon Web Services (AWS)](https://aws.amazon.com) | Cloud platforms and cloud management | unknown | needs-review |
-| [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | needs-review |
+| [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
 | [Apptio Cloudability](https://www.apptio.com/products/cloudability) | FinOps and sustainability | unknown | needs-review |
 | [Aralez](https://sadoyan.github.io/aralez-docs) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [ArgoCD](https://argo-cd.readthedocs.io) | CD, GitOps, release and promotion | oss | needs-review |
+| [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |
 | [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview) | CD, GitOps, release and promotion | oss | needs-review |
 | [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable) | CD, GitOps, release and promotion | oss | needs-review |
-| [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | needs-review |
+| [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [Arize Phoenix](https://arize.com/docs/phoenix) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | unknown | needs-review |
-| [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | needs-review |
+| [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
+| [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
 | [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
 | [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | unknown | needs-review |
 | [Awesome DevOps](https://github.com/wmariuss/awesome-devops) | Documentation, learning and career resources | documentation | needs-review |
@@ -52,7 +52,7 @@
 | [Azure Mastery](https://www.azurekt.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Azure Messaging for AWS Professionals](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging) | Documentation, learning and career resources | documentation | needs-review |
-| [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | needs-review |
+| [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | active |
 | [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
@@ -66,7 +66,7 @@
 | [Braintrust](https://www.braintrust.dev) | Emerging and experimental tools | open-core | needs-review |
 | [Buildah](https://buildah.io) | Containers and image tooling | oss | needs-review |
 | [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | needs-review |
-| [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | unknown | needs-review |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
@@ -92,7 +92,7 @@
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) | FinOps and sustainability | unknown | needs-review |
-| [Cloudify](https://docs.cloudify.co) | Cloud platforms and cloud management | oss | needs-review |
+| [Cloudify](https://cloudify.co) | Cloud platforms and cloud management | oss | active |
 | [CloudNativePG](https://cloudnative-pg.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CloudZero](https://www.cloudzero.com) | FinOps and sustainability | unknown | needs-review |
 | [Cluster API](https://cluster-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
@@ -162,7 +162,7 @@
 | [EveryDev.ai](https://www.everydev.ai) | Documentation, learning and career resources | unknown | needs-review |
 | [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | unknown | needs-review |
-| [External Secrets Operator](https://external-secrets.io) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | needs-review |
+| [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
 | [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
 | [Fargate](https://aws.amazon.com/fargate) | Kubernetes distributions and operations | unknown | needs-review |
@@ -189,7 +189,7 @@
 | [gitsign (sigstore)](https://github.com/sigstore/gitsign) | Emerging and experimental tools | oss | needs-review |
 | [GKE](https://cloud.google.com/kubernetes-engine) | Kubernetes distributions and operations | unknown | needs-review |
 | [glances](https://nicolargo.github.io/glances) | Emerging and experimental tools | oss | needs-review |
-| [Goldilocks](https://github.com/FairwindsOps/goldilocks) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Goldilocks](https://goldilocks.docs.fairwinds.com/) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | active |
 | [Google Cloud Functions](https://cloud.google.com/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | unknown | needs-review |
@@ -295,7 +295,6 @@
 | [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) | Kubernetes distributions and operations | unknown | needs-review |
 | [kube-bench](https://aquasecurity.github.io/kube-bench) | Kubernetes distributions and operations | oss | needs-review |
 | [kube-hunter](https://aquasecurity.github.io/kube-hunter) | Kubernetes distributions and operations | oss | needs-review |
-| [kube-linter](https://docs.kubelinter.io) | Kubernetes distributions and operations, Application and cloud security | oss | needs-review |
 | [Kube-OVN](https://www.kube-ovn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [kube-score](https://kube-score.com) | Kubernetes distributions and operations | oss | needs-review |
 | [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) | Kubernetes distributions and operations | oss | needs-review |
@@ -322,6 +321,7 @@
 | [KubeGUI](https://kubegui.net) | Kubernetes distributions and operations | unknown | needs-review |
 | [KubeHatch](https://vclusterlabs-experiments.github.io/kubehatch) | Kubernetes distributions and operations | unknown | needs-review |
 | [KubeLearn](https://kubelearn.yoparchi.fr) | Documentation, learning and career resources | documentation | needs-review |
+| [KubeLinter](https://docs.kubelinter.io/) | Kubernetes distributions and operations, Application and cloud security | oss | active |
 | [Kubently](https://kubently.io) | Kubernetes networking, storage and add-ons | unknown | needs-review |
 | [KubePlumber](https://github.com/David-VTUK/KubePlumber) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -412,7 +412,7 @@
 | [onedr0p/cluster-template](https://github.com/onedr0p/cluster-template) | Documentation, learning and career resources | oss | needs-review |
 | [Open Notebook](https://www.open-notebook.ai) | Documentation, learning and career resources | oss | needs-review |
 | [Open WebUI](https://openwebui.com) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [OpenCost](https://www.opencost.io) | FinOps and sustainability | oss | needs-review |
+| [OpenCost](https://www.opencost.io) | FinOps and sustainability | oss | active |
 | [OpenFaaS](https://www.openfaas.com) | Serverless, edge and WebAssembly | open-core | needs-review |
 | [OpenFeature](https://github.com/open-feature) | CD, GitOps, release and promotion | oss | needs-review |
 | [OpenKruise](https://openkruise.io) | Kubernetes networking, storage and add-ons | oss | needs-review |

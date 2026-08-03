@@ -16,17 +16,17 @@
 - [Amazon Q Developer](https://aws.amazon.com/q/developer) — AI code suggestions for AWS and more.
 - [Amazon Web Services (AWS)](https://aws.amazon.com) — Comprehensive cloud computing platform by Amazon.
 - [Ansible](https://www.ansible.com) — Agentless configuration management, orchestration, and automation.
-- [Apache CloudStack](https://cloudstack.apache.org) — Open-source cloud computing platform.
+- [Apache CloudStack](https://cloudstack.apache.org) — Open source infrastructure-as-a-service platform for building and managing private and public clouds.
 - [Apache Kafka](https://kafka.apache.org) — Distributed event streaming platform.
 - [Aralez](https://sadoyan.github.io/aralez-docs) — Kubernetes operator (see docs).
-- [ArgoCD](https://argo-cd.readthedocs.io) — Declarative GitOps continuous delivery for Kubernetes.
+- [Argo CD](https://argo-cd.readthedocs.io/en/stable/) — Declarative GitOps continuous delivery for Kubernetes.
 - [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) — Agent-based architecture for ArgoCD to manage remote clusters.
 - [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview) — Preview ArgoCD application changes.
 - [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable) — Automated image updates for ArgoCD.
-- [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable) — Integrates secrets from external stores into ArgoCD.
+- [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
 - [Arize Phoenix](https://arize.com/docs/phoenix) — LLM observability and evaluation platform.
-- [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager (ARM) JSON template format for declarative deployments.
-- [Atlantis](https://www.runatlantis.io) — Terraform pull-request automation.
+- [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager JSON template format for declarative Azure deployments, with Bicep recommended for new authoring.
+- [Atlantis](https://www.runatlantis.io) — Self-hosted pull-request automation for Terraform and OpenTofu plans and applies.
 - [atmos](https://atmos.tools) — Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
 - [Atmosly](https://atmosly.com) — Platform engineering automation for self-service environments and app delivery.
 - [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) — Collection of Kubernetes architecture diagrams.
@@ -52,8 +52,8 @@
 - [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) — Embedded key/value store for Go applications.
 - [Bito](https://bito.ai) — AI coding assistant for IDE/workflow productivity.
 - [BotKube](https://botkube.io) — Kubernetes monitoring and alerting via chat.
-- [Bottlerocket](https://bottlerocket.dev) — Linux-based OS for running containers.
-- [BunkerWeb](https://www.bunkerweb.io) — Web security gateway / WAF for NGINX.
+- [Bottlerocket](https://bottlerocket.dev) — Linux-based, security-hardened operating system purpose-built for running containers.
+- [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 - [Bunnyshell](https://www.bunnyshell.com) — Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven by environment-as-code workflows.
 - [Caddy](https://caddyserver.com) — Extensible web server and reverse proxy with automatic HTTPS.
 - [Capsule](https://capsule.clastix.io) — Kubernetes multi-tenancy and policy enforcement.
@@ -73,7 +73,7 @@
 - [CloudCustodian](https://cloudcustodian.io) — Cloud governance rules engine.
 - [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) — Cloudflare gateway for Kubernetes clusters.
 - [CloudFuze](https://www.cloudfuze.com) — Cloud file transfer and management.
-- [Cloudify](https://docs.cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
+- [Cloudify](https://cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
 - [CloudNativePG](https://cloudnative-pg.io) — Kubernetes operator for managing PostgreSQL clusters with high availability, backups, and day-2 operations.
 - [Cluster API](https://cluster-api.sigs.k8s.io) — Declarative APIs and tooling for provisioning, upgrading, and operating multiple Kubernetes clusters.
 - [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) — Kubernetes-native declarative infrastructure provider for creating and operating self-managed and EKS clusters on AWS.
@@ -125,7 +125,7 @@
 - [etckeeper](https://etckeeper.branchable.com) — Version control for `/etc` (tracks config changes in Git).
 - [Evidently](https://github.com/evidentlyai/evidently) — Open-source evaluation and monitoring framework for ML and AI systems.
 - [Exoway](https://www.exoway.io) — Cloud infrastructure and hosting services.
-- [External Secrets Operator](https://external-secrets.io) — Sync external secrets into Kubernetes.
+- [External Secrets Operator](https://external-secrets.io/main) — Sync external secrets into Kubernetes.
 - [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) — Kubernetes add-on that configures public DNS servers with information about exposed Kubernetes services.
 - [Falco](https://falco.org) — Runtime security for cloud-native environments.
 - [Fargate](https://aws.amazon.com/fargate) — Serverless compute for containers.
@@ -151,7 +151,7 @@
 - [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab MCP server documentation.
 - [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) — GitOps bridge for Kubernetes deployments.
 - [GKE](https://cloud.google.com/kubernetes-engine) — Google Kubernetes Engine.
-- [Goldilocks](https://github.com/FairwindsOps/goldilocks) — Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
+- [Goldilocks](https://goldilocks.docs.fairwinds.com/) — Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 - [Google Cloud Functions](https://cloud.google.com/functions) — Event-driven serverless functions on Google Cloud.
 - [Google Cloud Platform](https://cloud.google.com) — Cloud services by Google.
 - [Google Cloud Run](https://cloud.google.com/run) — Serverless containers on Google Cloud.
@@ -248,7 +248,6 @@
 - [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Real-time Kubernetes dashboard.
 - [kube-bench](https://aquasecurity.github.io/kube-bench) — CIS Kubernetes benchmark tool.
 - [kube-hunter](https://aquasecurity.github.io/kube-hunter) — Kubernetes security testing tool.
-- [kube-linter](https://docs.kubelinter.io) — Static analysis for Kubernetes YAML files.
 - [Kube-OVN](https://www.kube-ovn.io) — CloudNative Network for KubeVirt and Multi-Tenancy.
 - [kube-score](https://kube-score.com) — Static analysis tool for Kubernetes YAML manifests with best-practice recommendations.
 - [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) — Tool for bootstrapping Kubernetes clusters.
@@ -271,6 +270,7 @@
 - [Kubeflow](https://www.kubeflow.org) — ML workflows on Kubernetes.
 - [KubeGUI](https://kubegui.net) — GUI for Kubernetes cluster management.
 - [KubeHatch](https://vclusterlabs-experiments.github.io/kubehatch) — Minimal internal Kubernetes platform for creating isolated ephemeral vClusters with a CLI and web UI.
+- [KubeLinter](https://docs.kubelinter.io/) — Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
 - [Kubently](https://kubently.io) — Kubernetes operations and management platform.
 - [KubePlumber](https://github.com/David-VTUK/KubePlumber) — Kubernetes network connectivity validation and troubleshooting tool.
 - [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) — Autoscaling components (HPA/VPA/Cluster Autoscaler).
@@ -316,7 +316,7 @@
 - [llm-d](https://github.com/llm-d) — Kubernetes-native high-performance distributed LLM inference framework for serving models at scale.
 - [llmfit](https://github.com/AlexsJones/llmfit) — Hardware-aware CLI/TUI for recommending which LLM models fit local RAM, CPU, and GPU capacity.
 - [LM Studio](https://lmstudio.ai) — Desktop app for running local LLMs.
-- [LocalStack](https://www.localstack.cloud) — Local AWS cloud emulator for development and testing.
+- [LocalStack](https://www.localstack.cloud) — Local cloud development platform that emulates AWS services for integration testing and offline workflows.
 - [Loft Vind](https://github.com/loft-sh/vind) — Loft Labs tool (see repository for capabilities and usage).
 - [Longhorn](https://longhorn.io) — Cloud native distributed block storage for Kubernetes.
 - [Luxury Yacht](https://luxury-yacht.app) — Desktop application for Kubernetes management.

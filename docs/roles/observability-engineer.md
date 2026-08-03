@@ -6,7 +6,7 @@
 | Tool | Categories | Model | Status |
 |---|---|---|---|
 | [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [Apache SkyWalking](https://skywalking.apache.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Apache SkyWalking](https://skywalking.apache.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) | Monitoring, metrics, logs and tracing | documentation | needs-review |
@@ -18,7 +18,7 @@
 | [cardamon](https://github.com/dominikhei/cardamon) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
-| [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | needs-review |
+| [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [Combodo (iTop)](https://combodo.com) | SRE, incident response and on-call | open-core | needs-review |
 | [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -33,7 +33,7 @@
 | [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Gatus](https://gatus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [GoAlert](https://goalert.me) | SRE, incident response and on-call | oss | needs-review |
-| [Goldilocks](https://github.com/FairwindsOps/goldilocks) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Goldilocks](https://goldilocks.docs.fairwinds.com/) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | active |
 | [Gonzo](https://www.controltheory.com/gonzo) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) | Monitoring, metrics, logs and tracing | documentation | needs-review |
