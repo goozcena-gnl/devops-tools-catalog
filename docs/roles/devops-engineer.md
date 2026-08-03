@@ -141,7 +141,7 @@
 | [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | active |
 | [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | active |
 | [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | needs-review |
-| [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | active |
+| [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | needs-review |
 | [CUE](https://cuelang.org) | Emerging and experimental tools | oss | needs-review |
 | [Cursor](https://cursor.com) | Developer experience and local environments | unknown | needs-review |
 | [Cypress](https://www.cypress.io) | CI, build and testing | open-core | needs-review |

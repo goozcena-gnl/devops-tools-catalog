@@ -230,14 +230,14 @@
   license_model: oss
   license_spdx: MIT
   maturity: unknown
-  status: active
+  status: needs-review
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L140
   - legacy:devopstools_final.md#L235
-  needs_review: false
+  needs_review: true
 - id: dive
   name: dive
   summary: Explore Docker image layers.

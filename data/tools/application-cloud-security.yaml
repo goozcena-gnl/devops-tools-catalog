@@ -632,6 +632,7 @@
   - You're not comfortable writing Rego policies.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: active
   alternatives: []
