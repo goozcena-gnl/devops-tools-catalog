@@ -238,7 +238,7 @@ Windows in a Docker container.
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Lightweight virtualization for microVMs.
 
@@ -250,14 +250,14 @@ Lightweight virtualization for microVMs.
 
 - You need full VM features like GPU passthrough or legacy OS support.
 
-[Official site](https://firecracker-microvm.github.io) · [Source repository](https://github.com/firecracker-microvm/firecracker)
+[Official site](https://firecracker-microvm.github.io) · [Documentation](https://github.com/firecracker-microvm/firecracker/blob/main/docs/README.md) · [Source repository](https://github.com/firecracker-microvm/firecracker)
 
 ### Flatcar Container Linux
 
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Immutable Linux distro for containers.
 
@@ -269,7 +269,7 @@ Immutable Linux distro for containers.
 
 - You need to install arbitrary packages or run non-containerized workloads.
 
-[Official site](https://www.flatcar.org) · [Source repository](https://github.com/flatcar/Flatcar)
+[Official site](https://www.flatcar.org) · [Documentation](https://www.flatcar.org/docs/latest/) · [Source repository](https://github.com/flatcar/Flatcar)
 
 ### FuturFusion
 

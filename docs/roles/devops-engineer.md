@@ -126,7 +126,7 @@
 | [CodeWhale](https://codewhale.net/en) | Developer experience and local environments | unknown | needs-review |
 | [Codex](https://github.com/openai/codex) | Developer experience and local environments | oss | needs-review |
 | [commitlint](https://commitlint.js.org) | CI, build and testing | oss | active |
-| [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | unknown | needs-review |
+| [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | commercial | active |
 | [Concourse](https://concourse-ci.org) | CI, build and testing | oss | active |
 | [Confidential Containers](https://confidentialcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [ConfigHub](https://www.confighub.com) | Configuration management | unknown | needs-review |
@@ -134,18 +134,18 @@
 | [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | active |
 | [Continue](https://www.continue.dev) | Developer experience and local environments | oss | needs-review |
 | [Convox](https://www.convox.com) | CD, GitOps, release and promotion | oss | active |
-| [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) | Emerging and experimental tools | unknown | needs-review |
 | [cosign (sigstore)](https://docs.sigstore.dev/cosign) | Emerging and experimental tools | oss | needs-review |
 | [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | active |
 | [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | active |
-| [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | needs-review |
+| [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | active |
 | [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | needs-review |
 | [CUE](https://cuelang.org) | Emerging and experimental tools | oss | needs-review |
 | [Cursor](https://cursor.com) | Developer experience and local environments | unknown | needs-review |
-| [Cypress](https://www.cypress.io) | CI, build and testing | open-core | needs-review |
-| [Dagger](https://dagger.io) | CI, build and testing | oss | needs-review |
+| [Cypress](https://www.cypress.io) | CI, build and testing | open-core | active |
+| [Dagger](https://dagger.io) | CI, build and testing | open-core | active |
 | [Datadog](https://github.com/DataDog) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [DeepTutor](https://hkuds.github.io/DeepTutor) | Documentation, learning and career resources | documentation | needs-review |
 | [DEV Community #devops](https://dev.to/t/devops) | Documentation, learning and career resources | documentation | needs-review |
@@ -159,7 +159,7 @@
 | [DevPod](https://devpod.sh) | Developer experience and local environments | oss | needs-review |
 | [Devtron](https://devtron.ai) | CI, build and testing | oss | needs-review |
 | [Diagrams](https://pypi.org/project/diagrams) | Emerging and experimental tools | oss | needs-review |
-| [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | commercial | active |
 | [Distroless](https://github.com/GoogleContainerTools/distroless) | Containers and image tooling | oss | needs-review |
 | [dive](https://github.com/wagoodman/dive) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Docker Build](https://docs.docker.com/build) | Containers and image tooling | unknown | needs-review |
@@ -192,15 +192,15 @@
 | [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | unknown | needs-review |
 | [fd](https://github.com/sharkdp/fd) | Foundations, Linux and scripting | oss | needs-review |
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |
-| [Firecracker](https://firecracker-microvm.github.io) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Firecracker](https://firecracker-microvm.github.io) | Virtualization, bare metal and homelab | oss | active |
 | [FitNesse](https://fitnesse.org) | CI, build and testing | oss | needs-review |
-| [Flatcar Container Linux](https://www.flatcar.org) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Flatcar Container Linux](https://www.flatcar.org) | Virtualization, bare metal and homelab | oss | active |
 | [Flathub](https://flathub.org) | Foundations, Linux and scripting | unknown | needs-review |
 | [Flatpak](https://flatpak.org) | Foundations, Linux and scripting | oss | needs-review |
 | [Floci](https://floci.io/floci) | Developer experience and local environments | oss | needs-review |
 | [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | needs-review |
+| [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
 | [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | needs-review |
 | [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
 | [freeCodeCamp](https://www.freecodecamp.org) | Foundations, Linux and scripting | documentation | needs-review |
@@ -265,7 +265,7 @@
 | [Incus OS](https://linuxcontainers.org/incus-os) | Virtualization, bare metal and homelab | oss | needs-review |
 | [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Informatica](https://www.informatica.com) | Emerging and experimental tools | unknown | needs-review |
-| [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | needs-review |
+| [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [IntelliJ IDEA](https://www.jetbrains.com/idea) | Developer experience and local environments | unknown | needs-review |
 | [iPerf](https://iperf.fr/iperf-download.php) | Chaos and performance engineering | oss | needs-review |
 | [IT Tools](https://it-tools.tech) | Emerging and experimental tools | oss | needs-review |
@@ -286,7 +286,7 @@
 | [k8squest](https://github.com/Manoj-engineer/k8squest) | Documentation, learning and career resources | documentation | needs-review |
 | [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [Kaniko](https://github.com/GoogleContainerTools/kaniko) | Deprecated and historical tools, Containers and image tooling | oss | archived |
-| [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | needs-review |
+| [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
 | [Kata Containers](https://katacontainers.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Katalon Studio](https://github.com/katalon-studio) | CI, build and testing | unknown | needs-review |
 | [kcli](https://kcli.readthedocs.io/en/latest) | Virtualization, bare metal and homelab | oss | needs-review |
@@ -333,7 +333,7 @@
 | [Linux Containers (LXC/LXD)](https://linuxcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Linux Foundation Training](https://training.linuxfoundation.org?_sft_product_type=training) | Foundations, Linux and scripting | documentation | needs-review |
 | [LinuxJourney](https://labex.io/linuxjourney) | Foundations, Linux and scripting | documentation | needs-review |
-| [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | needs-review |
+| [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
 | [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | open-core | active |
 | [Logstash](https://www.elastic.co/logstash) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [M/Monit](https://www.mmonit.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |

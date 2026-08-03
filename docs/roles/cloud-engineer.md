@@ -67,11 +67,11 @@
 | [CNCF Free Courses](https://www.cncf.io/training/courses?_sfm_lf_course_free=1) | Documentation, learning and career resources | documentation | needs-review |
 | [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Composio](https://composio.dev) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
-| [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | unknown | needs-review |
+| [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | commercial | active |
 | [Cosmian KMS](https://cosmian.com/data-protection-suite/cosmian-kms) | IAM, secrets and certificate management | unknown | needs-review |
-| [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | needs-review |
+| [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | active |
 | [Dash0](https://www.dash0.com) | FinOps and sustainability | commercial | active |
-| [Datadog Cloud Cost Management](https://www.datadoghq.com/product/cloud-cost-management) | FinOps and sustainability | unknown | needs-review |
+| [Datadog Cloud Cost Management](https://www.datadoghq.com/product/cloud-cost-management) | FinOps and sustainability | commercial | active |
 | [DeepSpeed](https://www.deepspeed.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [DeepTutor](https://hkuds.github.io/DeepTutor) | Documentation, learning and career resources | documentation | needs-review |
 | [Descope](https://www.descope.com) | IAM, secrets and certificate management | unknown | needs-review |
@@ -83,7 +83,7 @@
 | [DevOps Resources](https://github.com/bregman-arie/devops-resources) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOpsCube Kubernetes Tutorials (Beginners)](https://devopscube.com/kubernetes-tutorials-beginners) | Documentation, learning and career resources | documentation | needs-review |
 | [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | needs-review |
-| [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | commercial | active |
 | [Docker Agent](https://docker.github.io/docker-agent) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Docker Hub MCP](https://hub.docker.com/mcp) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Docker MCP Gateway](https://github.com/docker/mcp-gateway) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -98,7 +98,7 @@
 | [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | unknown | needs-review |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
-| [Finout](https://www.finout.io) | FinOps and sustainability | unknown | needs-review |
+| [Finout](https://www.finout.io) | FinOps and sustainability | commercial | active |
 | [Flawless](https://github.com/William-Lu-stack/Flawless) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | unknown | needs-review |
 | [FreeCodeCamp DevOps](https://www.freecodecamp.org/news/tag/devops) | Documentation, learning and career resources | documentation | needs-review |
@@ -127,7 +127,7 @@
 | [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
 | [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | unknown | needs-review |
 | [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | unknown | needs-review |
-| [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | needs-review |
+| [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [InfraHQ](https://infrahq.com) | IAM, secrets and certificate management | oss | needs-review |
 | [JuiceFS](https://juicefs.com/en) | Databases, caching and data infrastructure | open-core | needs-review |
 | [JumpServer](https://www.jumpserver.com) | IAM, secrets and certificate management | oss | needs-review |

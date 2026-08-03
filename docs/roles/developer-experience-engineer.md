@@ -45,8 +45,8 @@
 | [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | unknown | needs-review |
 | [Continue](https://www.continue.dev) | Developer experience and local environments | oss | needs-review |
 | [Cursor](https://cursor.com) | Developer experience and local environments | unknown | needs-review |
-| [Cypress](https://www.cypress.io) | CI, build and testing | open-core | needs-review |
-| [Dagger](https://dagger.io) | CI, build and testing | oss | needs-review |
+| [Cypress](https://www.cypress.io) | CI, build and testing | open-core | active |
+| [Dagger](https://dagger.io) | CI, build and testing | open-core | active |
 | [Development Containers](https://containers.dev) | Developer experience and local environments | oss | needs-review |
 | [DevPod](https://devpod.sh) | Developer experience and local environments | oss | needs-review |
 | [Devtron](https://devtron.ai) | CI, build and testing | oss | needs-review |

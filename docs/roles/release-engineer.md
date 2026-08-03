@@ -35,8 +35,8 @@
 | [commitlint](https://commitlint.js.org) | CI, build and testing | oss | active |
 | [Concourse](https://concourse-ci.org) | CI, build and testing | oss | active |
 | [Convox](https://www.convox.com) | CD, GitOps, release and promotion | oss | active |
-| [Cypress](https://www.cypress.io) | CI, build and testing | open-core | needs-review |
-| [Dagger](https://dagger.io) | CI, build and testing | oss | needs-review |
+| [Cypress](https://www.cypress.io) | CI, build and testing | open-core | active |
+| [Dagger](https://dagger.io) | CI, build and testing | open-core | active |
 | [Devtron](https://devtron.ai) | CI, build and testing | oss | needs-review |
 | [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | unknown | needs-review |
 | [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | unknown | needs-review |
@@ -44,7 +44,7 @@
 | [Drone](https://www.drone.io) | CI, build and testing | oss | needs-review |
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |
 | [FitNesse](https://fitnesse.org) | CI, build and testing | oss | needs-review |
-| [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | needs-review |
+| [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
 | [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | needs-review |
 | [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
 | [Git](https://git-scm.com) | Source control and repository management | oss | needs-review |
@@ -72,7 +72,7 @@
 | [JFrog Platform](https://jfrog.com) | Artifact and package management | unknown | needs-review |
 | [k6](https://k6.io) | CI, build and testing | oss | needs-review |
 | [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | needs-review |
-| [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | needs-review |
+| [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
 | [Katalon Studio](https://github.com/katalon-studio) | CI, build and testing | unknown | needs-review |
 | [Keel](https://keel.sh) | CD, GitOps, release and promotion | oss | needs-review |
 | [Keptn](https://keptn.sh) | Deprecated and historical tools, CI, build and testing | oss | archived |

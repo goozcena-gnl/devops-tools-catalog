@@ -278,7 +278,7 @@ Columnar database commonly used as an observability backend.
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
 
@@ -290,7 +290,7 @@ Open source APM/observability platform (metrics/logs/traces/profiling) with RCA 
 
 - You need a battle-tested platform at very large scale.
 
-[Official site](https://coroot.com) · [Source repository](https://github.com/coroot/coroot)
+[Official site](https://coroot.com) · [Documentation](https://coroot.com/docs/) · [Source repository](https://github.com/coroot/coroot)
 
 ### Cortex
 
@@ -385,7 +385,7 @@ APM intake/processing for Elastic Observability (agents + server + UI).
 
 - Licensing or running the Elastic stack isn't feasible.
 
-[Official site](https://www.elastic.co/observability/application-performance-monitoring) · [Source repository](https://github.com/elastic/apm-server)
+[Official site](https://www.elastic.co/observability/application-performance-monitoring) · [Documentation](https://www.elastic.co/guide/en/apm/server/current/index.html) · [Source repository](https://github.com/elastic/apm-server)
 
 ### Elastic Stack (ELK)
 

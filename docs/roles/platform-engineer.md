@@ -104,20 +104,20 @@
 | [codegraph](https://colbymchenry.github.io/codegraph) | Emerging and experimental tools | unknown | needs-review |
 | [Composio](https://composio.dev) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [Compute Gardener](https://www.compute-gardener.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | unknown | needs-review |
+| [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | commercial | active |
 | [Convox](https://www.convox.com) | CD, GitOps, release and promotion | oss | active |
 | [CoreDNS](https://coredns.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) | Emerging and experimental tools | unknown | needs-review |
 | [cosign (sigstore)](https://docs.sigstore.dev/cosign) | Emerging and experimental tools | oss | needs-review |
 | [CronJob Guardian](https://illeniumstudios.github.io/cronjob-guardian) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | needs-review |
+| [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | active |
 | [Crossplane Provider Upjet](https://github.com/upbound/upjet) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [crossview](https://github.com/crossplane-contrib/crossview) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [crust-gather](https://deepwiki.com/crust-gather/crust-gather) | Kubernetes distributions and operations | oss | needs-review |
 | [CUE](https://cuelang.org) | Emerging and experimental tools | oss | needs-review |
 | [Dapr](https://dapr.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Dash0](https://www.dash0.com) | FinOps and sustainability | commercial | active |
-| [Datadog Cloud Cost Management](https://www.datadoghq.com/product/cloud-cost-management) | FinOps and sustainability | unknown | needs-review |
+| [Datadog Cloud Cost Management](https://www.datadoghq.com/product/cloud-cost-management) | FinOps and sustainability | commercial | active |
 | [Datree](https://www.datree.io) | Kubernetes distributions and operations | unknown | needs-review |
 | [DC/OS](https://dcos.io) | Kubernetes distributions and operations | oss | needs-review |
 | [DeepSpeed](https://www.deepspeed.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -132,7 +132,7 @@
 | [DevOps Resources](https://github.com/bregman-arie/devops-resources) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOpsCube Kubernetes Tutorials (Beginners)](https://devopscube.com/kubernetes-tutorials-beginners) | Documentation, learning and career resources | documentation | needs-review |
 | [Diagrams](https://pypi.org/project/diagrams) | Emerging and experimental tools | oss | needs-review |
-| [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | commercial | active |
 | [Distroless](https://github.com/GoogleContainerTools/distroless) | Containers and image tooling | oss | needs-review |
 | [Docker Agent](https://docker.github.io/docker-agent) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Docker Build](https://docs.docker.com/build) | Containers and image tooling | unknown | needs-review |
@@ -165,20 +165,20 @@
 | [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Fargate](https://aws.amazon.com/fargate) | Kubernetes distributions and operations | unknown | needs-review |
-| [Finout](https://www.finout.io) | FinOps and sustainability | unknown | needs-review |
+| [Finout](https://www.finout.io) | FinOps and sustainability | commercial | active |
 | [flannel](https://github.com/flannel-io/flannel) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Flawless](https://github.com/William-Lu-stack/Flawless) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | unknown | needs-review |
-| [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | needs-review |
+| [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
 | [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | needs-review |
 | [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
 | [Forecastle](https://github.com/stakater/Forecastle) | Kubernetes distributions and operations | oss | needs-review |
 | [FreeCodeCamp DevOps](https://www.freecodecamp.org/news/tag/devops) | Documentation, learning and career resources | documentation | needs-review |
-| [FreeLens](https://freelensapp.github.io) | Kubernetes distributions and operations | oss | needs-review |
+| [FreeLens](https://freelensapp.github.io) | Kubernetes distributions and operations | oss | active |
 | [fulcio (sigstore)](https://github.com/sigstore/fulcio) | Emerging and experimental tools | oss | needs-review |
 | [fulling](https://github.com/FullAgent/fulling) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Garden](https://garden.io) | Platform engineering and internal developer platforms | oss | needs-review |
-| [Gateway API](https://gateway-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [Gateway API](https://gateway-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [genai-agentos](https://github.com/genai-works-org/genai-agentos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [git-sync](https://github.com/kubernetes/git-sync) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [GitHub Copilot](https://github.com/features/copilot) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
@@ -228,7 +228,7 @@
 | [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | unknown | needs-review |
 | [IcePanel](https://icepanel.io) | Emerging and experimental tools | unknown | needs-review |
 | [Informatica](https://www.informatica.com) | Emerging and experimental tools | unknown | needs-review |
-| [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | needs-review |
+| [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) | Kubernetes distributions and operations | oss | needs-review |
 | [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [IT Tools](https://it-tools.tech) | Emerging and experimental tools | oss | needs-review |
@@ -253,7 +253,7 @@
 | [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [Kaniko](https://github.com/GoogleContainerTools/kaniko) | Deprecated and historical tools, Containers and image tooling | oss | archived |
-| [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | needs-review |
+| [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
 | [Karpenter](https://karpenter.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KCL](https://www.kcl-lang.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KDash](https://kdash.cli.rs) | Kubernetes distributions and operations | oss | needs-review |
@@ -370,7 +370,7 @@
 | [Linode](https://www.linode.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | open-core | needs-review |
 | [LiteLLM](https://www.litellm.ai) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
-| [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | needs-review |
+| [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
 | [llm-d](https://github.com/llm-d) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [llmfit](https://github.com/AlexsJones/llmfit) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LM Studio](https://lmstudio.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
@@ -512,7 +512,7 @@
 | [Timoni](https://timoni.sh) | Emerging and experimental tools | oss | needs-review |
 | [Tofu Controller](https://flux-iac.github.io/tofu-controller) | CD, GitOps, release and promotion | oss | needs-review |
 | [Trendshift](https://trendshift.io) | Documentation, learning and career resources | unknown | needs-review |
-| [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [TrueNAS](https://www.truenas.com) | Kubernetes networking, storage and add-ons | open-core | needs-review |
 | [tty-share](https://tty-share.com) | Emerging and experimental tools | oss | needs-review |
 | [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) | Kubernetes distributions and operations | documentation | needs-review |
