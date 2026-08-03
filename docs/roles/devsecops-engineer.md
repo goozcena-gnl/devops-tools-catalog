@@ -8,20 +8,19 @@
 | [1Password Connect](https://www.1password.dev/connect) | IAM, secrets and certificate management | unknown | needs-review |
 | [Aikido](https://www.aikido.dev) | Application and cloud security | open-core | needs-review |
 | [Apiiro](https://apiiro.com) | Application and cloud security | unknown | needs-review |
-| [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | needs-review |
+| [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [Arnica](https://www.arnica.io) | Application and cloud security | unknown | needs-review |
 | [Arsenal](https://github.com/Orange-Cyberdefense/arsenal) | Application and cloud security | documentation | needs-review |
 | [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
 | [Auth0](https://auth0.com) | IAM, secrets and certificate management | unknown | needs-review |
-| [autopwn-suite](https://kaangultekin.net/projects/autopwn-suite) | Application and cloud security | oss | needs-review |
+| [AutoPWN Suite](https://kaangultekin.net/projects/autopwn-suite) | Application and cloud security | source-available | needs-review |
 | [Awesome DevSecOps](https://github.com/devsecops/awesome-devsecops) | Application and cloud security | documentation | needs-review |
 | [Awesome WAF](https://github.com/0xInfection/Awesome-WAF) | Application and cloud security | documentation | needs-review |
 | [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) | IAM, secrets and certificate management | unknown | needs-review |
 | [AWS Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) | Application and cloud security | unknown | needs-review |
 | [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) | Application and cloud security | unknown | needs-review |
 | [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) | IAM, secrets and certificate management | oss | needs-review |
-| [BridgeCrew](https://bridgecrew.io) | Application and cloud security | unknown | needs-review |
-| [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Burp Suite](https://portswigger.net/burp) | Application and cloud security | unknown | needs-review |
 | [CAI (RobotSec)](https://aliasrobotics.github.io/cai) | Application and cloud security | oss | needs-review |
 | [Calico Cloud](https://www.calicocloud.io/home) | Application and cloud security | open-core | needs-review |
@@ -32,6 +31,7 @@
 | [Chain Bench](https://github.com/aquasecurity/chain-bench) | Application and cloud security | oss | needs-review |
 | [Chainguard](https://www.chainguard.dev) | Application and cloud security | unknown | needs-review |
 | [Checkmarx](https://checkmarx.com) | Application and cloud security | unknown | needs-review |
+| [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) | Application and cloud security | oss | active |
 | [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
 | [Cisco Talos Intelligence](https://www.talosintelligence.com) | Application and cloud security | documentation | needs-review |
 | [Cloudsmith](https://cloudsmith.com) | Artifact and package management | unknown | needs-review |
@@ -58,7 +58,7 @@
 | [Drata](https://drata.com) | Application and cloud security | unknown | needs-review |
 | [Duo Security](https://duo.com) | Application and cloud security | unknown | needs-review |
 | [Entrust KeyControl](https://www.entrust.com/products/key-management/keycontrol) | IAM, secrets and certificate management | unknown | needs-review |
-| [External Secrets Operator](https://external-secrets.io) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | needs-review |
+| [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
 | [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) | Application and cloud security | unknown | needs-review |
 | [fail2ban](https://github.com/fail2ban/fail2ban) | Application and cloud security | oss | needs-review |
 | [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
@@ -102,7 +102,7 @@
 | [kickthemout](https://github.com/roccomuso/kickthemout) | Application and cloud security | oss | needs-review |
 | [Kiuwan](https://www.kiuwan.com) | Application and cloud security | unknown | needs-review |
 | [Kps-zeroexposure](https://github.com/adrghph/kps-zeroexposure) | Application and cloud security | oss | needs-review |
-| [kube-linter](https://docs.kubelinter.io) | Kubernetes distributions and operations, Application and cloud security | oss | needs-review |
+| [KubeLinter](https://docs.kubelinter.io/) | Kubernetes distributions and operations, Application and cloud security | oss | active |
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
 | [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | needs-review |
 | [Lefthook](https://lefthook.dev) | Software supply-chain security | oss | needs-review |

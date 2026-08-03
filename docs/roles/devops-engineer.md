@@ -15,26 +15,26 @@
 | [Amazon Web Services (AWS)](https://aws.amazon.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [Angular](https://angular.dev) | Developer experience and local environments | oss | needs-review |
 | [Ansible](https://www.ansible.com) | Configuration management | oss | needs-review |
-| [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | needs-review |
-| [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | needs-review |
-| [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | needs-review |
+| [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | active |
+| [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
+| [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | active |
 | [Apache Kafka](https://kafka.apache.org) | Databases, caching and data infrastructure | oss | needs-review |
-| [Apache SkyWalking](https://skywalking.apache.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Apache SkyWalking](https://skywalking.apache.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [Appcircle](https://appcircle.io) | CI, build and testing | unknown | needs-review |
 | [AppImage](https://appimage.org) | Foundations, Linux and scripting | oss | needs-review |
 | [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [Argo Workflows](https://argoproj.github.io/argo-workflows) | CI, build and testing | oss | needs-review |
-| [ArgoCD](https://argo-cd.readthedocs.io) | CD, GitOps, release and promotion | oss | needs-review |
 | [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |
 | [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview) | CD, GitOps, release and promotion | oss | needs-review |
 | [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable) | CD, GitOps, release and promotion | oss | needs-review |
-| [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | needs-review |
-| [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | unknown | needs-review |
+| [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
+| [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
 | [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | needs-review |
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | needs-review |
-| [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | needs-review |
+| [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
 | [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
 | [Awesome DevOps](https://github.com/wmariuss/awesome-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Awesome Kubernetes Operator Resources](https://github.com/calvin-puram/awesome-kubernetes-operator-resources) | Documentation, learning and career resources | documentation | needs-review |
@@ -74,7 +74,7 @@
 | [Black](https://black.readthedocs.io) | Developer experience and local environments | oss | needs-review |
 | [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [BMC Control-M](https://www.bmc.com/it-solutions/control-m.html) | Emerging and experimental tools | unknown | needs-review |
-| [Bottlerocket](https://bottlerocket.dev) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Bottlerocket](https://bottlerocket.dev) | Virtualization, bare metal and homelab | oss | active |
 | [Bottles](https://usebottles.com) | Developer experience and local environments | oss | needs-review |
 | [Brainboard](https://www.brainboard.co) | Emerging and experimental tools | unknown | needs-review |
 | [Braintrust](https://www.braintrust.dev) | Emerging and experimental tools | open-core | needs-review |
@@ -109,12 +109,12 @@
 | [CircleCI](https://circleci.com) | CI, build and testing | unknown | needs-review |
 | [Civo](https://www.civo.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [Claude Code Cheat Sheet](https://shipyard.build/blog/claude-code-cheat-sheet) | Documentation, learning and career resources | documentation | needs-review |
-| [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | needs-review |
+| [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [Clone-Wars](https://github.com/GorvGoyl/Clone-Wars) | Emerging and experimental tools | oss | needs-review |
 | [CloudBees](https://www.cloudbees.com) | CI, build and testing | open-core | needs-review |
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | needs-review |
 | [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | unknown | needs-review |
-| [Cloudify](https://docs.cloudify.co) | Cloud platforms and cloud management | oss | needs-review |
+| [Cloudify](https://cloudify.co) | Cloud platforms and cloud management | oss | active |
 | [Cloudsmith](https://cloudsmith.com) | Artifact and package management | unknown | needs-review |
 | [cmd.ms](https://cmd.ms) | Emerging and experimental tools | oss | needs-review |
 | [CNCF Free Courses](https://www.cncf.io/training/courses?_sfm_lf_course_free=1) | Documentation, learning and career resources | documentation | needs-review |
@@ -227,7 +227,7 @@
 | [GoCD](https://www.gocd.org) | CI, build and testing | oss | needs-review |
 | [Godcoder](https://github.com/eli-labz/Godcoder) | Developer experience and local environments | oss | needs-review |
 | [golangci-lint](https://golangci-lint.run) | Developer experience and local environments | oss | needs-review |
-| [Goldilocks](https://github.com/FairwindsOps/goldilocks) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Goldilocks](https://goldilocks.docs.fairwinds.com/) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | active |
 | [Gonzo](https://www.controltheory.com/gonzo) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Google Artifact Registry](https://cloud.google.com/artifact-registry) | Artifact and package management | unknown | needs-review |
 | [Google Cloud Build](https://cloud.google.com/build) | CI, build and testing | unknown | needs-review |
@@ -334,7 +334,7 @@
 | [Linux Foundation Training](https://training.linuxfoundation.org?_sft_product_type=training) | Foundations, Linux and scripting | documentation | needs-review |
 | [LinuxJourney](https://labex.io/linuxjourney) | Foundations, Linux and scripting | documentation | needs-review |
 | [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | needs-review |
-| [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | open-core | needs-review |
+| [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | open-core | active |
 | [Logstash](https://www.elastic.co/logstash) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [M/Monit](https://www.mmonit.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Maintenant](https://maintenant.dev) | Monitoring, metrics, logs and tracing | unknown | needs-review |

@@ -428,7 +428,7 @@ Google Kubernetes Engine.
 **Categories:** Kubernetes distributions and operations, Monitoring, metrics, logs and tracing  
 **Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, Observability Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 
@@ -440,7 +440,7 @@ Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 
 - You require strict, manually controlled resource sizing or can’t use VPA recommendations due to workload characteristics (e.g., highly bursty or latency-critical services).
 
-[Source repository](https://github.com/FairwindsOps/goldilocks)
+[Official site](https://goldilocks.docs.fairwinds.com/) · [Documentation](https://goldilocks.docs.fairwinds.com/) · [Source repository](https://github.com/FairwindsOps/goldilocks)
 
 ### Hanoi CLI
 
@@ -955,27 +955,6 @@ Kubernetes security testing tool.
 
 [Official site](https://aquasecurity.github.io/kube-hunter) · [Source repository](https://github.com/aquasecurity/kube-hunter)
 
-### kube-linter
-
-**Categories:** Kubernetes distributions and operations, Application and cloud security  
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
-**Model:** Oss  
-**Status:** Needs Review
-
-Static analysis for Kubernetes YAML files.
-
-**Use when**
-
-- Catch misconfigurations early in CI before deployment.
-- You want fast CI-time checks for missing security contexts or anti-patterns.
-
-**Consider alternatives when**
-
-- You already run OPA/Gatekeeper admission policies that cover the same checks.
-- You already run kube-score or kubeconform and don't need overlapping checks.
-
-[Official site](https://docs.kubelinter.io) · [Source repository](https://github.com/stackrox/kube-linter)
-
 ### kube-score
 
 **Categories:** Kubernetes distributions and operations  
@@ -1375,6 +1354,27 @@ Minimal internal Kubernetes platform for creating isolated ephemeral vClusters w
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
 [Official site](https://vclusterlabs-experiments.github.io/kubehatch)
+
+### KubeLinter
+
+**Categories:** Kubernetes distributions and operations, Application and cloud security  
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
+**Model:** Oss  
+**Status:** Active
+
+Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
+
+**Use when**
+
+- Catch misconfigurations early in CI before deployment.
+- You want fast CI-time checks for missing security contexts or anti-patterns.
+
+**Consider alternatives when**
+
+- You already run OPA/Gatekeeper admission policies that cover the same checks.
+- You already run kube-score or kubeconform and don't need overlapping checks.
+
+[Official site](https://docs.kubelinter.io/) · [Documentation](https://docs.kubelinter.io/) · [Source repository](https://github.com/stackrox/kube-linter)
 
 ### KubePlumber
 

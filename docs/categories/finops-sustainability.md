@@ -29,9 +29,9 @@ Cloud cost management.
 **Categories:** FinOps and sustainability  
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
-Detect orphaned Azure resources.
+Open source script and workflow set for detecting and cleaning up orphaned Azure resources.
 
 **Use when**
 
@@ -41,7 +41,7 @@ Detect orphaned Azure resources.
 
 - You're not on Azure or already have policy-based cleanup.
 
-[Source repository](https://github.com/dolevshor/azure-orphan-resources)
+[Official site](https://github.com/dolevshor/azure-orphan-resources) · [Source repository](https://github.com/dolevshor/azure-orphan-resources)
 
 ### Cast AI
 
@@ -333,9 +333,9 @@ Cloud cost governance.
 **Categories:** FinOps and sustainability  
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes cost monitoring tool.
+CNCF incubating open standard and project for Kubernetes cost monitoring and allocation.
 
 **Use when**
 
@@ -345,7 +345,7 @@ Kubernetes cost monitoring tool.
 
 - You need multi-cloud non-K8s cost tracking or advanced savings features.
 
-[Official site](https://www.opencost.io) · [Source repository](https://github.com/opencost/opencost)
+[Official site](https://www.opencost.io) · [Documentation](https://opencost.io/docs/) · [Source repository](https://github.com/opencost/opencost)
 
 ### PointFive
 

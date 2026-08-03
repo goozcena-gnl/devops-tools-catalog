@@ -4,12 +4,13 @@
   "license_models": {
     "documentation": 97,
     "open-core": 68,
-    "oss": 644,
-    "source-available": 15,
-    "unknown": 268
+    "oss": 645,
+    "source-available": 16,
+    "unknown": 266
   },
   "statuses": {
+    "active": 19,
     "archived": 7,
-    "needs-review": 1085
+    "needs-review": 1066
   }
 }

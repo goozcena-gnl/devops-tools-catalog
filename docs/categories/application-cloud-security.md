@@ -81,14 +81,14 @@ Security tools knowledge base.
 
 [Source repository](https://github.com/Orange-Cyberdefense/arsenal)
 
-### autopwn-suite
+### AutoPWN Suite
 
 **Categories:** Application and cloud security  
 **Roles:** DevSecOps Engineer, Cloud Security Engineer  
-**Model:** Oss  
+**Model:** Source Available  
 **Status:** Needs Review
 
-Automated penetration testing framework.
+Automated reconnaissance and vulnerability discovery framework for security testing labs.
 
 **Use when**
 
@@ -98,7 +98,7 @@ Automated penetration testing framework.
 
 - In production or regulated contexts where you need auditable, fine-grained control.
 
-[Official site](https://kaangultekin.net/projects/autopwn-suite) · [Source repository](https://github.com/kaangultekin/autopwn-suite)
+[Official site](https://kaangultekin.net/projects/autopwn-suite) · [Documentation](https://kaangultekin.net/projects/autopwn-suite) · [Source repository](https://github.com/GamehunterKaan/AutoPWN-Suite)
 
 ### Awesome DevSecOps
 
@@ -176,33 +176,14 @@ Azure resource governance.
 
 [Official site](https://learn.microsoft.com/en-us/azure/governance/policy)
 
-### BridgeCrew
-
-**Categories:** Application and cloud security  
-**Roles:** DevSecOps Engineer, Cloud Security Engineer  
-**Model:** Unknown  
-**Status:** Needs Review
-
-Commercial DevSecOps platform (now part of Prisma Cloud). Use Checkov for the OSS scanner.
-
-**Use when**
-
-- You want turnkey IaC scanning with policy-as-code.
-
-**Consider alternatives when**
-
-- You already have a mature OPA/Conftest pipeline.
-
-[Official site](https://bridgecrew.io) · [Source repository](https://github.com/bridgecrewio/checkov)
-
 ### BunkerWeb
 
 **Categories:** Kubernetes networking, storage and add-ons, Application and cloud security  
 **Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
-Web security gateway / WAF for NGINX.
+Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 
 **Use when**
 
@@ -214,7 +195,7 @@ Web security gateway / WAF for NGINX.
 - You need deep custom rule authoring (consider ModSecurity/Coraza instead).
 - Your cloud provider's managed WAF (AWS WAF/Cloud Armor) already meets your needs.
 
-[Official site](https://www.bunkerweb.io) · [Source repository](https://github.com/bunkerity/bunkerweb)
+[Official site](https://www.bunkerweb.io) · [Documentation](https://docs.bunkerweb.io) · [Source repository](https://github.com/bunkerity/bunkerweb)
 
 ### Burp Suite
 
@@ -388,6 +369,25 @@ Application security testing platform.
 - For small teams where OSS alternatives (CodeQL, Semgrep) suffice.
 
 [Official site](https://checkmarx.com)
+
+### Checkov (Bridgecrew / Prisma Cloud)
+
+**Categories:** Application and cloud security  
+**Roles:** DevSecOps Engineer, Cloud Security Engineer  
+**Model:** Oss  
+**Status:** Active
+
+Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
+
+**Use when**
+
+- You want turnkey IaC scanning with policy-as-code.
+
+**Consider alternatives when**
+
+- You already have a mature OPA/Conftest pipeline.
+
+[Official site](https://www.checkov.io) · [Documentation](https://www.checkov.io/1.Welcome/What%20is%20Checkov.html) · [Source repository](https://github.com/bridgecrewio/checkov)
 
 ### Cilium
 
@@ -1231,14 +1231,14 @@ Kubernetes zero-exposure policy tool.
 
 [Source repository](https://github.com/adrghph/kps-zeroexposure)
 
-### kube-linter
+### KubeLinter
 
 **Categories:** Kubernetes distributions and operations, Application and cloud security  
 **Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
-Static analysis for Kubernetes YAML files.
+Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
 
 **Use when**
 
@@ -1250,7 +1250,7 @@ Static analysis for Kubernetes YAML files.
 - You already run OPA/Gatekeeper admission policies that cover the same checks.
 - You already run kube-score or kubeconform and don't need overlapping checks.
 
-[Official site](https://docs.kubelinter.io) · [Source repository](https://github.com/stackrox/kube-linter)
+[Official site](https://docs.kubelinter.io/) · [Documentation](https://docs.kubelinter.io/) · [Source repository](https://github.com/stackrox/kube-linter)
 
 ### LOTP (Living Off the Pipeline)
 

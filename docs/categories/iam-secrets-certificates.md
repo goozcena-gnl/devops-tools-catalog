@@ -29,7 +29,7 @@ Embeddable API server for programmatic access to 1Password vaults from infrastru
 **Categories:** CD, GitOps, release and promotion, IAM, secrets and certificate management  
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, DevSecOps Engineer, Release Engineer, Cloud Security Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 Integrates secrets from external stores into ArgoCD.
 
@@ -43,7 +43,7 @@ Integrates secrets from external stores into ArgoCD.
 - * You use External Secrets Operator or Sealed Secrets and don't need in-manifest substitution.
 - You use External Secrets Operator which covers the same need more broadly.
 
-[Official site](https://argocd-vault-plugin.readthedocs.io/en/stable) · [Source repository](https://github.com/argoproj-labs/argocd-vault-plugin)
+[Official site](https://argocd-vault-plugin.readthedocs.io/en/stable/) · [Documentation](https://argocd-vault-plugin.readthedocs.io/en/stable/) · [Source repository](https://github.com/argoproj-labs/argocd-vault-plugin)
 
 ### Auth0
 
@@ -221,7 +221,7 @@ Key management for enterprise.
 **Categories:** Kubernetes networking, storage and add-ons, IAM, secrets and certificate management  
 **Roles:** Cloud Engineer, Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 Sync external secrets into Kubernetes.
 
@@ -235,7 +235,7 @@ Sync external secrets into Kubernetes.
 - Sealed Secrets or native CSI secret drivers already meet your needs.
 - Your apps can fetch secrets directly from Vault/cloud APIs.
 
-[Official site](https://external-secrets.io) · [Source repository](https://github.com/external-secrets/external-secrets)
+[Official site](https://external-secrets.io/main) · [Documentation](https://external-secrets.io/main) · [Source repository](https://github.com/external-secrets/external-secrets)
 
 ### Futurex KMES Series 3
 

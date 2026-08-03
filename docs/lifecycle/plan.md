@@ -4,8 +4,8 @@
 56 records support this lifecycle stage.
 
 - [Activepieces](https://www.activepieces.com) — Workflow automation platform; OSS core with commercial cloud/enterprise features.
-- [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager (ARM) JSON template format for declarative deployments.
-- [Atlantis](https://www.runatlantis.io) — Terraform pull-request automation.
+- [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager JSON template format for declarative Azure deployments, with Bicep recommended for new authoring.
+- [Atlantis](https://www.runatlantis.io) — Self-hosted pull-request automation for Terraform and OpenTofu plans and applies.
 - [atmos](https://atmos.tools) — Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
 - [AWS CDK](https://aws.amazon.com/cdk) — Infrastructure as code framework that defines cloud resources in familiar programming languages.
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation) — AWS-native infrastructure provisioning service (templates/stacks).

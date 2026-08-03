@@ -33,6 +33,7 @@
   summary: APM platform for distributed tracing, metrics, and service topology.
   official_url: https://skywalking.apache.org
   repository_url: https://github.com/apache/skywalking
+  documentation_url: https://skywalking.apache.org/docs/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -50,15 +51,16 @@
   - You've standardized on OTel and prefer a lighter, more modular stack.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L67
   - legacy:devopstools_final.md#L775
-  needs_review: true
+  needs_review: false
 - id: appneta
   name: AppNeta
   summary: Network performance monitoring.
@@ -387,6 +389,7 @@
   summary: Columnar database commonly used as an observability backend.
   official_url: https://clickhouse.com
   repository_url: https://github.com/ClickHouse/ClickHouse
+  documentation_url: https://clickhouse.com/docs
   categories:
   - monitoring-metrics-logs-tracing
   - databases-caching-data-infrastructure
@@ -411,8 +414,9 @@
   - You need OLTP workloads, frequent small updates, or strong transactional guarantees.
   deployment_models: []
   license_model: open-core
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -421,7 +425,7 @@
   - legacy:5_Monitoring-Observability/README.md#L38
   - legacy:devopstools_final.md#L280
   - legacy:devopstools_final.md#L741
-  needs_review: true
+  needs_review: false
 - id: coroot
   name: Coroot
   summary: Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.

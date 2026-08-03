@@ -9,10 +9,10 @@
 
 **Categories:** Infrastructure as Code  
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
-**Status:** Needs Review
+**Model:** Oss  
+**Status:** Active
 
-Azure Resource Manager (ARM) JSON template format for declarative deployments.
+Azure Resource Manager JSON template format for declarative Azure deployments, with Bicep recommended for new authoring.
 
 **Use when**
 
@@ -22,16 +22,16 @@ Azure Resource Manager (ARM) JSON template format for declarative deployments.
 
 - Starting new Azure IaC projects (prefer Bicep instead).
 
-[Official site](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) · [Source repository](https://github.com/Azure/azure-quickstart-templates)
+[Official site](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) · [Documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) · [Source repository](https://github.com/Azure/azure-quickstart-templates)
 
 ### Atlantis
 
 **Categories:** Infrastructure as Code  
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
-Terraform pull-request automation.
+Self-hosted pull-request automation for Terraform and OpenTofu plans and applies.
 
 **Use when**
 
@@ -41,7 +41,7 @@ Terraform pull-request automation.
 
 - You need advanced RBAC, drift detection, or a managed solution.
 
-[Official site](https://www.runatlantis.io) · [Source repository](https://github.com/runatlantis/atlantis)
+[Official site](https://www.runatlantis.io) · [Documentation](https://www.runatlantis.io/docs/) · [Source repository](https://github.com/runatlantis/atlantis)
 
 ### atmos
 

@@ -82,7 +82,7 @@
 - [Learn Git Branching](https://learngitbranching.js.org) — Interactive Git learning tool.
 - [Linux Foundation Training](https://training.linuxfoundation.org?_sft_product_type=training) — Official Linux and open source training resources.
 - [LinuxJourney](https://labex.io/linuxjourney) — Learn Linux from scratch.
-- [LocalStack](https://www.localstack.cloud) — Local AWS cloud emulator for development and testing.
+- [LocalStack](https://www.localstack.cloud) — Local cloud development platform that emulates AWS services for integration testing and offline workflows.
 - [markdownlint](https://github.com/DavidAnson/markdownlint) — Markdown lint rules + tooling ecosystem.
 - [MarkItDown](https://github.com/microsoft/markitdown) — Python tool for converting files and Office documents to Markdown.
 - [micro](https://micro-editor.github.io) — Easy-to-use terminal text editor with plugins, mouse support, and Lua customization.

@@ -10,8 +10,8 @@
 | [Ansible](https://www.ansible.com) | Configuration management | oss | needs-review |
 | [Apache Kafka](https://kafka.apache.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [AppImage](https://appimage.org) | Foundations, Linux and scripting | oss | needs-review |
-| [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | unknown | needs-review |
-| [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | needs-review |
+| [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
+| [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
 | [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
 | [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | needs-review |
 | [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | unknown | needs-review |
@@ -23,12 +23,12 @@
 | [Bat](https://github.com/sharkdp/bat) | Foundations, Linux and scripting | oss | needs-review |
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
 | [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | needs-review |
-| [Bottlerocket](https://bottlerocket.dev) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Bottlerocket](https://bottlerocket.dev) | Virtualization, bare metal and homelab | oss | active |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | source-available | archived |
 | [CFEngine](https://cfengine.com) | Configuration management | open-core | needs-review |
 | [Chef](https://www.chef.io) | Configuration management | oss | needs-review |
-| [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | needs-review |
+| [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [CloudCasa](https://cloudcasa.io) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | needs-review |
 | [Confidential Containers](https://confidentialcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
@@ -78,7 +78,7 @@
 | [Linux Containers (LXC/LXD)](https://linuxcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Linux Foundation Training](https://training.linuxfoundation.org?_sft_product_type=training) | Foundations, Linux and scripting | documentation | needs-review |
 | [LinuxJourney](https://labex.io/linuxjourney) | Foundations, Linux and scripting | documentation | needs-review |
-| [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | open-core | needs-review |
+| [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | open-core | active |
 | [Meilisearch](https://www.meilisearch.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Memcached](https://memcached.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [MiniBlue](https://miniblue.io) | Virtualization, bare metal and homelab | oss | needs-review |

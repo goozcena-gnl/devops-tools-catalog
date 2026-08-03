@@ -10,7 +10,7 @@
 **Categories:** CI, build and testing  
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 Best practices checker for Ansible.
 
@@ -22,14 +22,14 @@ Best practices checker for Ansible.
 
 - Only if you don't use Ansible.
 
-[Official site](https://ansible.readthedocs.io/projects/lint) · [Source repository](https://github.com/ansible/ansible-lint)
+[Official site](https://ansible.readthedocs.io/projects/lint) · [Documentation](https://ansible.readthedocs.io/projects/lint/) · [Source repository](https://github.com/ansible/ansible-lint)
 
 ### Apache JMeter
 
 **Categories:** CI, build and testing  
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 Load testing and performance measurement tool.
 
@@ -41,7 +41,7 @@ Load testing and performance measurement tool.
 
 - You want developer-friendly scripting—its XML-based test plans age poorly in version control.
 
-[Official site](https://jmeter.apache.org) · [Source repository](https://github.com/apache/jmeter)
+[Official site](https://jmeter.apache.org) · [Documentation](https://jmeter.apache.org/usermanual/index.html) · [Source repository](https://github.com/apache/jmeter)
 
 ### Appcircle
 

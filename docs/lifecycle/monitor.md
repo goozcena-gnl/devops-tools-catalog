@@ -31,7 +31,7 @@
 - [Fluentd](https://www.fluentd.org) — Unified logging layer.
 - [Gatus](https://gatus.io) — Developer-oriented health dashboard and status page for monitoring endpoints and services.
 - [GoAlert](https://goalert.me) — On-call alert and escalation management.
-- [Goldilocks](https://github.com/FairwindsOps/goldilocks) — Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
+- [Goldilocks](https://goldilocks.docs.fairwinds.com/) — Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 - [Gonzo](https://www.controltheory.com/gonzo) — K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.
 - [Grafana](https://grafana.com) — Visualization and analytics for metrics.
 - [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) — Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).

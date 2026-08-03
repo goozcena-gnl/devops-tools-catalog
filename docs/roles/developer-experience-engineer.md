@@ -9,8 +9,8 @@
 | [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [Aider](https://aider.chat) | Developer experience and local environments | oss | needs-review |
 | [Angular](https://angular.dev) | Developer experience and local environments | oss | needs-review |
-| [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | needs-review |
-| [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | needs-review |
+| [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | active |
+| [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | active |
 | [Appcircle](https://appcircle.io) | CI, build and testing | unknown | needs-review |
 | [Argo Workflows](https://argoproj.github.io/argo-workflows) | CI, build and testing | oss | needs-review |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | needs-review |
@@ -86,7 +86,7 @@
 | [Kestra](https://kestra.io) | Workflow automation and ChatOps | oss | needs-review |
 | [kubara](https://kubara.io) | Platform engineering and internal developer platforms | unknown | needs-review |
 | [Learn Git Branching](https://learngitbranching.js.org) | Source control and repository management | documentation | needs-review |
-| [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | open-core | needs-review |
+| [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | open-core | active |
 | [Mantis](https://mantis.getaugur.ai/docs/introduction/overview) | CI, build and testing | oss | needs-review |
 | [markdownlint](https://github.com/DavidAnson/markdownlint) | Developer experience and local environments | oss | needs-review |
 | [MarkItDown](https://github.com/microsoft/markitdown) | Developer experience and local environments | oss | needs-review |

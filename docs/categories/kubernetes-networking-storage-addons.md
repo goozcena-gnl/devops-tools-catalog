@@ -124,9 +124,9 @@ Kubernetes operator for Azure resources.
 **Categories:** Kubernetes networking, storage and add-ons, Application and cloud security  
 **Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
-Web security gateway / WAF for NGINX.
+Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 
 **Use when**
 
@@ -138,7 +138,7 @@ Web security gateway / WAF for NGINX.
 - You need deep custom rule authoring (consider ModSecurity/Coraza instead).
 - Your cloud provider's managed WAF (AWS WAF/Cloud Armor) already meets your needs.
 
-[Official site](https://www.bunkerweb.io) · [Source repository](https://github.com/bunkerity/bunkerweb)
+[Official site](https://www.bunkerweb.io) · [Documentation](https://docs.bunkerweb.io) · [Source repository](https://github.com/bunkerity/bunkerweb)
 
 ### Capsule
 
@@ -529,7 +529,7 @@ Gateway API implementation for Envoy with traffic management, security, and obse
 **Categories:** Kubernetes networking, storage and add-ons, IAM, secrets and certificate management  
 **Roles:** Cloud Engineer, Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
 Sync external secrets into Kubernetes.
 
@@ -543,7 +543,7 @@ Sync external secrets into Kubernetes.
 - Sealed Secrets or native CSI secret drivers already meet your needs.
 - Your apps can fetch secrets directly from Vault/cloud APIs.
 
-[Official site](https://external-secrets.io) · [Source repository](https://github.com/external-secrets/external-secrets)
+[Official site](https://external-secrets.io/main) · [Documentation](https://external-secrets.io/main) · [Source repository](https://github.com/external-secrets/external-secrets)
 
 ### ExternalDNS
 

@@ -107,10 +107,11 @@
   - legacy:devopstools_final.md#L835
   needs_review: true
 - id: autopwn-suite
-  name: autopwn-suite
-  summary: Automated penetration testing framework.
+  name: AutoPWN Suite
+  summary: Automated reconnaissance and vulnerability discovery framework for security testing labs.
   official_url: https://kaangultekin.net/projects/autopwn-suite
-  repository_url: https://github.com/kaangultekin/autopwn-suite
+  repository_url: https://github.com/GamehunterKaan/AutoPWN-Suite
+  documentation_url: https://kaangultekin.net/projects/autopwn-suite
   categories:
   - application-cloud-security
   subcategories:
@@ -126,7 +127,7 @@
   avoid_when:
   - In production or regulated contexts where you need auditable, fine-grained control.
   deployment_models: []
-  license_model: oss
+  license_model: source-available
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -253,10 +254,11 @@
   - legacy:devopstools_final.md#L928
   needs_review: true
 - id: bridgecrew
-  name: BridgeCrew
-  summary: Commercial DevSecOps platform (now part of Prisma Cloud). Use Checkov for the OSS scanner.
-  official_url: https://bridgecrew.io
+  name: Checkov (Bridgecrew / Prisma Cloud)
+  summary: Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
+  official_url: https://www.checkov.io
   repository_url: https://github.com/bridgecrewio/checkov
+  documentation_url: https://www.checkov.io/1.Welcome/What%20is%20Checkov.html
   categories:
   - application-cloud-security
   subcategories:
@@ -272,16 +274,17 @@
   avoid_when:
   - You already have a mature OPA/Conftest pipeline.
   deployment_models: []
-  license_model: unknown
+  license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:6_Security/README.md#L8
   - legacy:devopstools_final.md#L842
-  needs_review: true
+  needs_review: false
 - id: burp-suite
   name: Burp Suite
   summary: Web vulnerability scanner and testing suite.

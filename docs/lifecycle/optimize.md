@@ -4,16 +4,16 @@
 45 records support this lifecycle stage.
 
 - [Amazon Web Services (AWS)](https://aws.amazon.com) — Comprehensive cloud computing platform by Amazon.
-- [Apache CloudStack](https://cloudstack.apache.org) — Open-source cloud computing platform.
+- [Apache CloudStack](https://cloudstack.apache.org) — Open source infrastructure-as-a-service platform for building and managing private and public clouds.
 - [Apptio Cloudability](https://www.apptio.com/products/cloudability) — Cloud cost management.
 - [AWS Storage Gateway](https://aws.amazon.com/fr/storagegateway) — Hybrid cloud storage service.
-- [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) — Detect orphaned Azure resources.
+- [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) — Open source script and workflow set for detecting and cleaning up orphaned Azure resources.
 - [Cast AI](https://cast.ai) — Kubernetes automation and cloud optimization platform for rightsizing, autoscaling, cost control, and performance.
 - [Civo](https://www.civo.com) — Cloud infrastructure provider focused on Kubernetes.
 - [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) — Cloud operations management.
 - [CloudFuze](https://www.cloudfuze.com) — Cloud file transfer and management.
 - [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) — Multi-cloud FinOps and governance platform for cost reporting, optimization, and policy control.
-- [Cloudify](https://docs.cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
+- [Cloudify](https://cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
 - [CloudZero](https://www.cloudzero.com) — Cloud cost intelligence.
 - [Concierto Cloud](https://www.concierto.cloud) — Cloud management platform.
 - [Dash0](https://www.dash0.com) — Cloud cost management.
@@ -35,7 +35,7 @@
 - [Microsoft Azure](https://azure.microsoft.com) — Cloud computing services by Microsoft.
 - [Morpheus Data](https://morpheusdata.com) — Hybrid cloud management platform.
 - [Nutanix Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) — Cloud cost governance.
-- [OpenCost](https://www.opencost.io) — Kubernetes cost monitoring tool.
+- [OpenCost](https://www.opencost.io) — CNCF incubating open standard and project for Kubernetes cost monitoring and allocation.
 - [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) — Cloud services by Oracle.
 - [PointFive](https://www.pointfive.co) — Cloud cost optimization.
 - [ProsperOps](https://www.prosperops.com) — Cloud savings automation.

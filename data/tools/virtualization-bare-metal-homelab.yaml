@@ -56,9 +56,10 @@
   needs_review: true
 - id: bottlerocket
   name: Bottlerocket
-  summary: Linux-based OS for running containers.
+  summary: Linux-based, security-hardened operating system purpose-built for running containers.
   official_url: https://bottlerocket.dev
   repository_url: https://github.com/bottlerocket-os/bottlerocket
+  documentation_url: https://bottlerocket.dev/en/docs/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -76,14 +77,14 @@
   deployment_models: []
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L132
   - legacy:devopstools_final.md#L230
-  needs_review: true
+  needs_review: false
 - id: confidential-containers
   name: Confidential Containers
   summary: CNCF project for running Kubernetes pods inside hardware-backed Trusted Execution Environments
@@ -724,9 +725,10 @@
   needs_review: true
 - id: localstack
   name: LocalStack
-  summary: Local AWS cloud emulator for development and testing.
+  summary: Local cloud development platform that emulates AWS services for integration testing and offline workflows.
   official_url: https://www.localstack.cloud
   repository_url: https://github.com/localstack/localstack
+  documentation_url: https://docs.localstack.cloud
   categories:
   - virtualization-bare-metal-homelab
   - developer-experience-local-environments
@@ -751,7 +753,7 @@
   deployment_models: []
   license_model: open-core
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -760,7 +762,7 @@
   - legacy:7_Development-Collaboration/README.md#L36
   - legacy:devopstools_final.md#L1064
   - legacy:devopstools_final.md#L253
-  needs_review: true
+  needs_review: false
   repository_archived: true
 - id: miniblue
   name: MiniBlue

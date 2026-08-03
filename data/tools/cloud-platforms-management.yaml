@@ -31,9 +31,10 @@
   needs_review: true
 - id: apache-cloudstack
   name: Apache CloudStack
-  summary: Open-source cloud computing platform.
+  summary: Open source infrastructure-as-a-service platform for building and managing private and public clouds.
   official_url: https://cloudstack.apache.org
   repository_url: https://github.com/apache/cloudstack
+  documentation_url: https://docs.cloudstack.apache.org
   categories:
   - cloud-platforms-management
   subcategories:
@@ -52,15 +53,16 @@
   - You lack the team to operate your own cloud infrastructure.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L6
   - legacy:devopstools_final.md#L151
-  needs_review: true
+  needs_review: false
 - id: aws-storage-gateway
   name: AWS Storage Gateway
   summary: Hybrid cloud storage service.
@@ -158,8 +160,9 @@
   name: Cloudify
   summary: Cloud orchestration framework for automating application and infrastructure lifecycle across
     hybrid and multi-cloud environments.
-  official_url: https://docs.cloudify.co
+  official_url: https://cloudify.co
   repository_url: https://github.com/cloudify-cosmo/cloudify-manager
+  documentation_url: https://docs.cloudify.co
   categories:
   - cloud-platforms-management
   subcategories:
@@ -176,14 +179,15 @@
   avoid_when: []
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L299
-  needs_review: true
+  needs_review: false
 - id: concierto-cloud
   name: Concierto Cloud
   summary: Cloud management platform.

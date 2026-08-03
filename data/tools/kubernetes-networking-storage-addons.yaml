@@ -180,9 +180,10 @@
   needs_review: true
 - id: bunkerweb
   name: BunkerWeb
-  summary: Web security gateway / WAF for NGINX.
+  summary: Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
   official_url: https://www.bunkerweb.io
   repository_url: https://github.com/bunkerity/bunkerweb
+  documentation_url: https://docs.bunkerweb.io
   categories:
   - kubernetes-networking-storage-addons
   - application-cloud-security
@@ -208,8 +209,9 @@
   - Your cloud provider's managed WAF (AWS WAF/Cloud Armor) already meets your needs.
   deployment_models: []
   license_model: oss
+  license_spdx: AGPL-3.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -218,7 +220,7 @@
   - legacy:6_Security/README.md#L9
   - legacy:devopstools_final.md#L534
   - legacy:devopstools_final.md#L843
-  needs_review: true
+  needs_review: false
 - id: capsule
   name: Capsule
   summary: Kubernetes multi-tenancy and policy enforcement.
@@ -839,8 +841,9 @@
 - id: external-secrets-operator
   name: External Secrets Operator
   summary: Sync external secrets into Kubernetes.
-  official_url: https://external-secrets.io
+  official_url: https://external-secrets.io/main
   repository_url: https://github.com/external-secrets/external-secrets
+  documentation_url: https://external-secrets.io/main
   categories:
   - kubernetes-networking-storage-addons
   - iam-secrets-certificates
@@ -866,8 +869,9 @@
   - Your apps can fetch secrets directly from Vault/cloud APIs.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -876,7 +880,7 @@
   - legacy:6_Security/README.md#L90
   - legacy:devopstools_final.md#L553
   - legacy:devopstools_final.md#L977
-  needs_review: true
+  needs_review: false
 - id: externaldns
   name: ExternalDNS
   summary: Kubernetes add-on that configures public DNS servers with information about exposed Kubernetes

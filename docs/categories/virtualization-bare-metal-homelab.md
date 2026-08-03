@@ -48,9 +48,9 @@ Microsoft's CBL-Mariner-based Linux distribution optimized for container and clo
 **Categories:** Virtualization, bare metal and homelab  
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
 **Model:** Oss  
-**Status:** Needs Review
+**Status:** Active
 
-Linux-based OS for running containers.
+Linux-based, security-hardened operating system purpose-built for running containers.
 
 **Use when**
 
@@ -60,7 +60,7 @@ Linux-based OS for running containers.
 
 - You need general-purpose SSH access and package management on the host.
 
-[Official site](https://bottlerocket.dev) · [Source repository](https://github.com/bottlerocket-os/bottlerocket)
+[Official site](https://bottlerocket.dev) · [Documentation](https://bottlerocket.dev/en/docs/) · [Source repository](https://github.com/bottlerocket-os/bottlerocket)
 
 ### Confidential Containers
 
@@ -485,10 +485,10 @@ System containers and VM manager.
 **Categories:** Virtualization, bare metal and homelab, Developer experience and local environments  
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer, Developer Experience Engineer  
 **Model:** Open Core  
-**Status:** Needs Review
+**Status:** Active
 **Repository:** Archived
 
-Local AWS cloud emulator for development and testing.
+Local cloud development platform that emulates AWS services for integration testing and offline workflows.
 
 **Use when**
 
@@ -500,7 +500,7 @@ Local AWS cloud emulator for development and testing.
 - You need full API parity with AWS or are testing non-AWS services.
 - You need high-fidelity parity with production AWS services (some services are only partially emulated).
 
-[Official site](https://www.localstack.cloud) · [Source repository](https://github.com/localstack/localstack)
+[Official site](https://www.localstack.cloud) · [Documentation](https://docs.localstack.cloud) · [Source repository](https://github.com/localstack/localstack)
 
 ### MiniBlue
 

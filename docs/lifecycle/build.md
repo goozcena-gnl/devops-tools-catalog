@@ -14,10 +14,10 @@
 - [Appcircle](https://appcircle.io) — CI/CD platform for mobile apps.
 - [Argo Workflows](https://argoproj.github.io/argo-workflows) — Kubernetes-native workflow engine.
 - [Arize Phoenix](https://arize.com/docs/phoenix) — LLM observability and evaluation platform.
-- [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager (ARM) JSON template format for declarative deployments.
+- [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager JSON template format for declarative Azure deployments, with Bicep recommended for new authoring.
 - [Artifact Hub](https://artifacthub.io) — Discover and share packages (Helm charts, operators, etc.).
 - [Artillery](https://www.artillery.io) — Modern load testing toolkit.
-- [Atlantis](https://www.runatlantis.io) — Terraform pull-request automation.
+- [Atlantis](https://www.runatlantis.io) — Self-hosted pull-request automation for Terraform and OpenTofu plans and applies.
 - [atmos](https://atmos.tools) — Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
 - [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) — Collection of 130+ specialized Codex subagents for a wide range of development use cases.
 - [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — MCP server for AWS Billing & Cost Management use cases (announced by AWS).

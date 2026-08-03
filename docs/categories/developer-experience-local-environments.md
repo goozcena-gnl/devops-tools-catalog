@@ -523,10 +523,10 @@ Interactive JSON visualizer that turns data structures into graphs.
 **Categories:** Virtualization, bare metal and homelab, Developer experience and local environments  
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer, Developer Experience Engineer  
 **Model:** Open Core  
-**Status:** Needs Review
+**Status:** Active
 **Repository:** Archived
 
-Local AWS cloud emulator for development and testing.
+Local cloud development platform that emulates AWS services for integration testing and offline workflows.
 
 **Use when**
 
@@ -538,7 +538,7 @@ Local AWS cloud emulator for development and testing.
 - You need full API parity with AWS or are testing non-AWS services.
 - You need high-fidelity parity with production AWS services (some services are only partially emulated).
 
-[Official site](https://www.localstack.cloud) · [Source repository](https://github.com/localstack/localstack)
+[Official site](https://www.localstack.cloud) · [Documentation](https://docs.localstack.cloud) · [Source repository](https://github.com/localstack/localstack)
 
 ### markdownlint
 
