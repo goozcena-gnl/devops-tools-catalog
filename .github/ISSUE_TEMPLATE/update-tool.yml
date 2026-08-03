@@ -1,0 +1,30 @@
+name: Update a tool
+description: Correct metadata, status, URLs, or decision guidance.
+title: "[Update]: "
+labels: [catalogue, needs-triage]
+body:
+  - type: input
+    id: id
+    attributes:
+      label: Canonical tool ID
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Requested changes
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary-source evidence
+    validations:
+      required: true
+  - type: input
+    id: verified-on
+    attributes:
+      label: Verification date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true

@@ -1,0 +1,46 @@
+name: Catalogue quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install maintenance dependencies
+        run: python -m pip install --disable-pip-version-check -e '.[dev]'
+
+      - name: Lint maintenance code
+        run: python -m ruff check scripts tests
+
+      - name: Check maintenance code formatting
+        run: python -m ruff format --check scripts tests
+
+      - name: Run tests
+        run: python -m pytest
+
+      - name: Check generated documentation
+        run: python -m scripts.generate_docs --check
+
+      - name: Validate catalogue and repository hygiene
+        run: python -m scripts.validate_catalog
