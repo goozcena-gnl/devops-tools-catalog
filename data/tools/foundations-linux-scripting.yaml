@@ -1,0 +1,640 @@
+- id: academy-jetbrains
+  name: Academy JetBrains
+  summary: Interactive programming courses and tutorials by JetBrains.
+  official_url: https://academy.jetbrains.com
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Programming Languages
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Hands-on, IDE-integrated learning of Kotlin, Java, or Python.
+  avoid_when:
+  - You don't use JetBrains IDEs — the tight coupling is the main benefit.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L33
+  - legacy:devopstools_final.md#L112
+  needs_review: true
+- id: appimage
+  name: AppImage
+  summary: Portable Linux application packaging format (single executable).
+  official_url: https://appimage.org
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux Packaging & App Distribution
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - You need a single, distro-agnostic binary with zero installation.
+  avoid_when:
+  - You need system-level integration, auto-updates, or sandboxing.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L28
+  - legacy:devopstools_final.md#L107
+  needs_review: true
+- id: bash
+  name: Bash
+  summary: Bourne Again Shell.
+  official_url: https://www.gnu.org/software/bash
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - As the default scripting language for Linux automation and CI pipelines.
+  avoid_when:
+  - For complex, large-scale programs where Python or Go offer better maintainability.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L14
+  - legacy:devopstools_final.md#L92
+  needs_review: true
+- id: bat
+  name: Bat
+  summary: Better `cat` with syntax highlighting.
+  repository_url: https://github.com/sharkdp/bat
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Day-to-day file inspection and code review in the terminal.
+  avoid_when:
+  - In scripts where plain `cat` is expected for compatibility.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L15
+  - legacy:devopstools_final.md#L93
+  needs_review: true
+- id: exercism
+  name: Exercism
+  summary: Language practice tracks across many programming languages.
+  official_url: https://exercism.org
+  repository_url: https://github.com/exercism/exercism
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Programming Languages
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Mentor-guided practice when learning a new language.
+  avoid_when:
+  - You need project-based learning — exercises are algorithm-focused.* <!-- cspell:ignore Exercism -->.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L34
+  - legacy:devopstools_final.md#L113
+  needs_review: true
+- id: fd
+  name: fd
+  summary: Simple, fast alternative to `find`.
+  repository_url: https://github.com/sharkdp/fd
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Quick, human-friendly file searches.
+  avoid_when:
+  - In portable scripts where `find` is the POSIX standard.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L16
+  - legacy:devopstools_final.md#L94
+  needs_review: true
+- id: flathub
+  name: Flathub
+  summary: Main application repository ("app store") for Flatpak packages.
+  official_url: https://flathub.org
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux Packaging & App Distribution
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - As the primary source for discovering and distributing Flatpak apps.
+  avoid_when:
+  - For server-side or headless deployments where native packages are more appropriate.* <!-- cspell:ignore
+    Flathub -->.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L29
+  - legacy:devopstools_final.md#L108
+  needs_review: true
+- id: flatpak
+  name: Flatpak
+  summary: Universal Linux application isolation and distribution framework.
+  official_url: https://flatpak.org
+  repository_url: https://github.com/flatpak/flatpak
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux Packaging & App Distribution
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Sandboxed, cross-distro desktop app delivery.
+  avoid_when:
+  - For CLI tools, daemons, or resource-constrained environments — the runtime overhead is non-trivial.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L30
+  - legacy:devopstools_final.md#L109
+  needs_review: true
+- id: freecodecamp
+  name: freeCodeCamp
+  summary: Free learning platform for multi-language coding tutorials.
+  official_url: https://www.freecodecamp.org
+  repository_url: https://github.com/freeCodeCamp/freeCodeCamp
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  - Programming Languages
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Free, structured web-dev and general programming curricula.
+  - Self-paced, structured beginner courses.
+  avoid_when:
+  - You need deep DevOps or infrastructure-specific content.
+  - You need deep, advanced-topic coverage.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L17
+  - legacy:1_Foundational-Skills/README.md#L35
+  - legacy:devopstools_final.md#L114
+  - legacy:devopstools_final.md#L95
+  needs_review: true
+- id: go-by-example
+  name: Go by Example
+  summary: Hands-on Go programming snippets and examples.
+  official_url: https://gobyexample.com
+  repository_url: https://github.com/mmcgrana/gobyexample
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Programming Languages
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - As a quick reference when learning Go idioms.
+  avoid_when:
+  - As a sole learning resource — it lacks project-level context.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L36
+  - legacy:devopstools_final.md#L115
+  needs_review: true
+- id: harisekhon-devops-bash-tools
+  name: HariSekhon/DevOps-Bash-tools
+  summary: Large collection of Bash scripts, shell helpers, and automation tooling for DevOps, cloud,
+    CI/CD, Kubernetes, and APIs.
+  repository_url: https://github.com/HariSekhon/DevOps-Bash-tools
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L96
+  needs_review: true
+- id: htop
+  name: htop
+  summary: Interactive process viewer.
+  official_url: https://htop.dev
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Real-time process monitoring and troubleshooting on Linux.
+  avoid_when:
+  - Relying on it for production alerting — use proper monitoring stacks instead.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L18
+  - legacy:devopstools_final.md#L97
+  needs_review: true
+- id: linux-foundation-training
+  name: Linux Foundation Training
+  summary: Official Linux and open source training resources.
+  official_url: https://training.linuxfoundation.org?_sft_product_type=training
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Preparing for LF certifications (CKA, LFCS, etc.).
+  avoid_when:
+  - Budget is a constraint — many courses are paid.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L19
+  - legacy:devopstools_final.md#L98
+  needs_review: true
+- id: linuxjourney
+  name: LinuxJourney
+  summary: Learn Linux from scratch.
+  official_url: https://labex.io/linuxjourney
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - As a gentle introduction for complete Linux beginners.
+  avoid_when:
+  - You already have sysadmin experience.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L20
+  - legacy:devopstools_final.md#L99
+  needs_review: true
+- id: python-official-tutorial
+  name: Python Official Tutorial
+  summary: Official Python documentation and tutorial.
+  official_url: https://docs.python.org/3/tutorial
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Programming Languages
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - As the authoritative starting point for Python.
+  avoid_when:
+  - You prefer video or interactive formats.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L37
+  - legacy:devopstools_final.md#L116
+  needs_review: true
+- id: rocky-linux
+  name: Rocky Linux
+  summary: Enterprise Linux distribution.
+  official_url: https://rockylinux.org
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - As a CentOS/RHEL-compatible production OS.
+  avoid_when:
+  - You need cutting-edge packages — rolling-release distros are better for that.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L21
+  - legacy:devopstools_final.md#L100
+  needs_review: true
+- id: shellcheck
+  name: ShellCheck
+  summary: Shell script linter.
+  official_url: https://www.shellcheck.net
+  repository_url: https://github.com/koalaman/shellcheck
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Catch bugs and enforce best practices in every shell script.
+  avoid_when:
+  - Ignoring its warnings — they almost always indicate real issues.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L22
+  - legacy:devopstools_final.md#L101
+  needs_review: true
+- id: swiftorial
+  name: Swiftorial
+  summary: Interactive tutorials for learning Swift programming.
+  official_url: https://www.swiftorial.com/swiftlessons
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Programming Languages
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Quick, interactive Swift fundamentals.
+  avoid_when:
+  - You're targeting server-side or non-Apple platforms — Swift's ecosystem is Apple-centric.* <!-- cspell:ignore
+    Swiftorial -->.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L38
+  - legacy:devopstools_final.md#L117
+  needs_review: true
+- id: the-linux-command-line
+  name: The Linux Command Line
+  summary: Free book on Linux CLI.
+  official_url: https://linuxcommand.org/tlcl.php
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - As a thorough, well-structured reference for learning the CLI.
+  avoid_when:
+  - You prefer interactive/video-based learning.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L23
+  - legacy:devopstools_final.md#L102
+  needs_review: true
+- id: the-linux-documentation-project-tldp
+  name: The Linux Documentation Project (TLDP)
+  summary: Linux documentation library and community resource.
+  official_url: https://tldp.org
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - Classic HOWTOs and in-depth guides.
+  avoid_when:
+  - Treating it as fully current — some content is dated.* <!-- cspell:ignore TLDP -->.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L24
+  - legacy:devopstools_final.md#L103
+  needs_review: true
+- id: zsh
+  name: Zsh
+  summary: Z shell.
+  official_url: https://www.zsh.org
+  categories:
+  - foundations-linux-scripting
+  subcategories:
+  - Linux & Scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  - learn
+  use_when:
+  - A richer interactive shell experience (completions, themes via Oh My Zsh).
+  avoid_when:
+  - Making it a hard dependency in CI scripts — stick to Bash/POSIX sh for portability.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L25
+  - legacy:devopstools_final.md#L104
+  needs_review: true

@@ -1,0 +1,611 @@
+- id: aws-fault-injection-service
+  name: AWS Fault Injection Service
+  summary: Managed chaos engineering service on AWS. ✅ **Use when** you're already on AWS and need turnkey
+    fault injection with IAM-scoped safety controls. ❌ **Avoid when** your workloads span multiple clouds
+    or you need deep application-level fault injection.
+  official_url: https://aws.amazon.com/fis
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Chaos Engineering Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L4
+  - legacy:devopstools_final.md#L1160
+  needs_review: true
+- id: azure-chaos-studio
+  name: Azure Chaos Studio
+  summary: Chaos engineering service for Azure. ✅ **Use when** your infrastructure is Azure-native and
+    you want tight integration with Azure Monitor. ❌ **Avoid when** you're multi-cloud or need experiments
+    beyond Azure-supported fault types.
+  official_url: https://azure.microsoft.com/en-us/products/chaos-studio
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Chaos Engineering Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L6
+  - legacy:devopstools_final.md#L1161
+  needs_review: true
+- id: chaos-mesh
+  name: Chaos Mesh
+  summary: Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you want a CNCF-backed,
+    Kubernetes-native chaos platform with a dashboard and CRD-based workflows. ❌ **Avoid when** your workloads
+    aren't on Kubernetes or you need bare-metal/VM-level experiments.
+  official_url: https://chaos-mesh.org
+  repository_url: https://github.com/chaos-mesh/chaos-mesh
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Chaos Engineering Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L10
+  - legacy:devopstools_final.md#L1163
+  needs_review: true
+- id: chaos-monkey
+  name: Chaos Monkey
+  summary: Tool for randomly terminating instances to test resilience. ✅ **Use when** you want simple,
+    continuous instance-termination tests to validate auto-scaling and failover. ❌ **Avoid when** you
+    need fault types beyond instance killing or aren't running on Spinnaker.
+  official_url: https://netflix.github.io/chaosmonkey
+  repository_url: https://github.com/Netflix/chaosmonkey
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Application & Network-Level Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L18
+  - legacy:devopstools_final.md#L1168
+  needs_review: true
+- id: chaos-room
+  name: Chaos Room
+  summary: Chaos engineering tool. ✅ **Use when** you want a lightweight, experimental chaos tool for
+    learning or small projects. ❌ **Avoid when** you need production-grade reliability, active maintenance,
+    or broad fault coverage.
+  repository_url: https://github.com/fpaparoni/chaos-room
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Application & Network-Level Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L20
+  - legacy:devopstools_final.md#L1169
+  needs_review: true
+- id: chaos-toolkit
+  name: Chaos Toolkit
+  summary: Open-source chaos engineering toolkit for building reliability experiments. ✅ **Use when**
+    you want declarative, version-controlled experiments that are CI/CD-friendly and platform-agnostic.
+    ❌ **Avoid when** you need real-time orchestration or a rich UI—it's primarily CLI/JSON-driven.
+  official_url: https://chaostoolkit.org
+  repository_url: https://github.com/chaostoolkit/chaostoolkit
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Chaos Engineering Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L12
+  - legacy:devopstools_final.md#L1164
+  needs_review: true
+- id: chaosblade
+  name: ChaosBlade
+  summary: Chaos engineering platform with comprehensive fault injection capabilities. ✅ **Use when**
+    you need broad fault injection (OS, JVM, Docker, K8s) in a single CLI tool. ❌ **Avoid when** you need
+    a polished UI-driven workflow or strong English-language community support.
+  official_url: https://chaosblade.io/en
+  repository_url: https://github.com/chaosblade-io/chaosblade
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Chaos Engineering Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L8
+  - legacy:devopstools_final.md#L1162
+  needs_review: true
+- id: gremlin
+  name: Gremlin
+  summary: Chaos engineering platform for proactive reliability testing. ✅ **Use when** you need enterprise-grade
+    chaos with built-in safety controls, team collaboration, and guided scenarios. ❌ **Avoid when** budget
+    is tight or you prefer fully open-source tooling without vendor lock-in.
+  official_url: https://www.gremlin.com
+  repository_url: https://github.com/gremlin-io/gremlin
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Chaos Engineering Platforms
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L14
+  - legacy:devopstools_final.md#L1165
+  needs_review: true
+- id: iperf
+  name: iPerf
+  summary: Network performance measurement tool.
+  official_url: https://iperf.fr/iperf-download.php
+  repository_url: https://github.com/esnet/iperf
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - System Diagnostics & Stress Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when:
+  - Measuring real network throughput between two endpoints.
+  avoid_when:
+  - Confusing iPerf results with application-level performance — it tests raw bandwidth, not app behavior.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L63
+  - legacy:devopstools_final.md#L145
+  needs_review: true
+- id: kube-monkey
+  name: Kube Monkey
+  summary: Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, opt-in pod-killing
+    schedule for Kubernetes with minimal setup. ❌ **Avoid when** you need network/IO faults or fine-grained
+    experiment control beyond random pod deletion.
+  repository_url: https://github.com/asobti/kube-monkey
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Application & Network-Level Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L22
+  - legacy:devopstools_final.md#L1170
+  needs_review: true
+- id: kubeinvaders
+  name: KubeInvaders
+  summary: Gamified chaos engineering for Kubernetes. ✅ **Use when** you want a fun, visual way to introduce
+    chaos engineering concepts in workshops or game days. ❌ **Avoid when** you need automated, scheduled,
+    or CI-integrated chaos experiments.
+  repository_url: https://github.com/lucky-sideburn/kubeinvaders
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Application & Network-Level Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L24
+  - legacy:devopstools_final.md#L1171
+  needs_review: true
+- id: memorychecker
+  name: MemoryChecker
+  summary: Memory testing and diagnostics tool.
+  repository_url: https://github.com/lordmulder/MemoryChecker
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - System Diagnostics & Stress Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when:
+  - Quick, user-friendly RAM verification.
+  avoid_when:
+  - For exhaustive, boot-level memory testing — use MemTest86 instead.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L56
+  - legacy:devopstools_final.md#L137
+  needs_review: true
+- id: memtest86
+  name: MemTest86
+  summary: Industry-standard memory diagnostics and stress testing tool.
+  official_url: https://www.memtest86.com
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - System Diagnostics & Stress Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when:
+  - Thorough, pre-OS memory validation on bare metal.
+  avoid_when:
+  - In virtualized environments — hypervisors intercept memory access patterns.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L57
+  - legacy:devopstools_final.md#L138
+  needs_review: true
+- id: occt
+  name: OCCT
+  summary: Comprehensive system stability and stress testing tool.
+  official_url: https://www.ocbase.com
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - System Diagnostics & Stress Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when:
+  - All-in-one CPU/GPU/RAM/PSU stress testing on workstations.
+  avoid_when:
+  - On Linux servers — it's Windows-only.* <!-- cspell:ignore OCCT -->.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L58
+  - legacy:devopstools_final.md#L139
+  needs_review: true
+- id: pumba
+  name: Pumba
+  summary: Chaos testing, network emulation, and stress testing tool for containers.
+  repository_url: https://github.com/alexei-led/pumba
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Application & Network-Level Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1173
+  needs_review: true
+- id: strace-tui
+  name: strace-tui
+  summary: Terminal UI for visualizing and exploring `strace` output.
+  repository_url: https://github.com/Rodrigodd/strace-tui
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - System Diagnostics & Stress Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L144
+  needs_review: true
+- id: stress
+  name: stress
+  summary: Simple workload generator for POSIX systems.
+  repository_url: https://github.com/resurrecting-open-source-projects/stress
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - System Diagnostics & Stress Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when:
+  - Quick, basic load generation.
+  avoid_when:
+  - You need fine-grained control over stress parameters — use stress-ng instead.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L59
+  - legacy:devopstools_final.md#L140
+  needs_review: true
+- id: stress-ng
+  name: stress-ng
+  summary: Stress test tool for a wide range of subsystems.
+  repository_url: https://github.com/ColinIanKing/stress-ng
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - System Diagnostics & Stress Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when:
+  - Comprehensive, configurable stress testing across CPU, memory, I/O, and more.
+  avoid_when:
+  - In production without resource limits — it can easily OOM-kill critical processes.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L60
+  - legacy:devopstools_final.md#L141
+  needs_review: true
+- id: stressapptest
+  name: stressapptest
+  summary: Memory and I/O stress test tool.
+  repository_url: https://github.com/stressapptest/stressapptest
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - System Diagnostics & Stress Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when:
+  - Hardware qualification testing of memory and I/O subsystems.
+  avoid_when:
+  - For general CPU benchmarks — it's purpose-built for memory/IO validation.* <!-- cspell:ignore stressapptest
+    -->.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L61
+  - legacy:devopstools_final.md#L142
+  needs_review: true
+- id: stressdisk
+  name: stressdisk
+  summary: Disk stress testing utility.
+  repository_url: https://github.com/ncw/stressdisk
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - System Diagnostics & Stress Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when:
+  - Verify disk reliability and detect bad sectors.
+  avoid_when:
+  - On SSDs in production — excessive writes reduce drive lifespan.* <!-- cspell:ignore stressdisk -->.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:1_Foundational-Skills/README.md#L62
+  - legacy:devopstools_final.md#L143
+  needs_review: true
+- id: toxiproxy
+  name: Toxiproxy
+  summary: Framework for simulating network conditions and toxic network behavior. ✅ **Use when** you
+    want to inject network faults (latency, timeouts, bandwidth limits) in integration/CI tests. ❌ **Avoid
+    when** you need infrastructure-level chaos beyond the network layer or production-scale distributed
+    experiments.
+  repository_url: https://github.com/Shopify/toxiproxy
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - Application & Network-Level Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:8_Chaos-Engineering/README.md#L28
+  - legacy:devopstools_final.md#L1174
+  needs_review: true

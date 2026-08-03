@@ -1,0 +1,589 @@
+- id: amazon-web-services-aws
+  name: Amazon Web Services (AWS)
+  summary: Comprehensive cloud computing platform by Amazon.
+  official_url: https://aws.amazon.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need the broadest service catalog with global reach.
+  avoid_when:
+  - Simplicity and cost predictability matter more than breadth.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L4
+  - legacy:devopstools_final.md#L150
+  needs_review: true
+- id: apache-cloudstack
+  name: Apache CloudStack
+  summary: Open-source cloud computing platform.
+  official_url: https://cloudstack.apache.org
+  repository_url: https://github.com/apache/cloudstack
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You want to build a self-hosted IaaS cloud without vendor lock-in.
+  avoid_when:
+  - You lack the team to operate your own cloud infrastructure.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L6
+  - legacy:devopstools_final.md#L151
+  needs_review: true
+- id: aws-storage-gateway
+  name: AWS Storage Gateway
+  summary: Hybrid cloud storage service.
+  official_url: https://aws.amazon.com/fr/storagegateway
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Management & Migration
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need to bridge on-prem storage with AWS (file, volume, or tape gateway).
+  avoid_when:
+  - You're fully in the cloud or not using AWS.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L226
+  - legacy:devopstools_final.md#L298
+  needs_review: true
+- id: civo
+  name: Civo
+  summary: Cloud infrastructure provider focused on Kubernetes.
+  official_url: https://www.civo.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You want fast, affordable managed Kubernetes clusters.
+  avoid_when:
+  - You need a full-spectrum cloud provider beyond K8s.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L8
+  - legacy:devopstools_final.md#L152
+  needs_review: true
+- id: cloudfuze
+  name: CloudFuze
+  summary: Cloud file transfer and management.
+  official_url: https://www.cloudfuze.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Management & Migration
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need to migrate files between cloud storage providers (OneDrive, Google Drive, etc.).
+  avoid_when:
+  - You're migrating infrastructure rather than user files.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L228
+  - legacy:devopstools_final.md#L300
+  needs_review: true
+- id: cloudify
+  name: Cloudify
+  summary: Cloud orchestration framework for automating application and infrastructure lifecycle across
+    hybrid and multi-cloud environments.
+  official_url: https://docs.cloudify.co
+  repository_url: https://github.com/cloudify-cosmo/cloudify-manager
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Management & Migration
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L299
+  needs_review: true
+- id: concierto-cloud
+  name: Concierto Cloud
+  summary: Cloud management platform.
+  official_url: https://www.concierto.cloud
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Management & Migration
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need a unified dashboard for multi-cloud governance and cost optimization.
+  avoid_when:
+  - Your workloads are single-cloud with built-in cost tools.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L230
+  - legacy:devopstools_final.md#L301
+  needs_review: true
+- id: digitalocean
+  name: DigitalOcean
+  summary: Developer-friendly cloud infrastructure provider.
+  official_url: https://www.digitalocean.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You want simple, predictable pricing and quick setup for small-to-mid workloads.
+  avoid_when:
+  - You need enterprise-grade compliance or advanced networking.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L10
+  - legacy:devopstools_final.md#L153
+  needs_review: true
+- id: exoway
+  name: Exoway
+  summary: Cloud infrastructure and hosting services.
+  official_url: https://www.exoway.io
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need a niche/regional hosting provider.
+  avoid_when:
+  - You require a mature, well-documented ecosystem.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L12
+  - legacy:devopstools_final.md#L154
+  needs_review: true
+- id: google-cloud-platform
+  name: Google Cloud Platform
+  summary: Cloud services by Google.
+  official_url: https://cloud.google.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need best-in-class data analytics, ML, or Kubernetes (GKE).
+  avoid_when:
+  - Your workloads are tightly coupled to AWS/Azure-specific services.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L14
+  - legacy:devopstools_final.md#L155
+  needs_review: true
+- id: heroku
+  name: Heroku
+  summary: Cloud platform as a service for app deployment.
+  official_url: https://www.heroku.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You want zero-ops app deployment with Git push.
+  avoid_when:
+  - You need fine-grained infrastructure control or cost-efficient scaling.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L16
+  - legacy:devopstools_final.md#L156
+  needs_review: true
+- id: ibm-cloud
+  name: IBM Cloud
+  summary: Enterprise cloud services and infrastructure by IBM.
+  official_url: https://www.ibm.com/cloud
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need mainframe integration or regulated-industry compliance.
+  avoid_when:
+  - Developer experience and modern tooling are top priorities.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L18
+  - legacy:devopstools_final.md#L157
+  needs_review: true
+- id: linode
+  name: Linode
+  summary: Cloud hosting and compute services.
+  official_url: https://www.linode.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You want straightforward, competitively priced Linux VMs.
+  avoid_when:
+  - You need a deep managed-services catalog.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L20
+  - legacy:devopstools_final.md#L158
+  needs_review: true
+- id: microsoft-azure
+  name: Microsoft Azure
+  summary: Cloud computing services by Microsoft.
+  official_url: https://azure.microsoft.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You're invested in the Microsoft ecosystem or need hybrid with Azure Arc.
+  avoid_when:
+  - You want the simplest developer onboarding experience.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L22
+  - legacy:devopstools_final.md#L159
+  needs_review: true
+- id: morpheus-data
+  name: Morpheus Data
+  summary: Hybrid cloud management platform.
+  official_url: https://morpheusdata.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Management & Migration
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need a single pane of glass for provisioning across private and public clouds.
+  avoid_when:
+  - You're cloud-native with existing IaC pipelines.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L232
+  - legacy:devopstools_final.md#L302
+  needs_review: true
+- id: oracle-cloud-infrastructure-oci
+  name: Oracle Cloud Infrastructure (OCI)
+  summary: Cloud services by Oracle.
+  official_url: https://www.oracle.com/cloud
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need Oracle Database workloads or generous free-tier compute.
+  avoid_when:
+  - Community support and third-party integrations are critical.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L24
+  - legacy:devopstools_final.md#L160
+  needs_review: true
+- id: scaleway
+  name: Scaleway
+  summary: European cloud provider offering compute/storage services.
+  official_url: https://www.scaleway.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need EU data sovereignty and competitive pricing.
+  avoid_when:
+  - You require a global edge network or extensive managed services.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L26
+  - legacy:devopstools_final.md#L161
+  needs_review: true
+- id: virtana
+  name: Virtana
+  summary: Hybrid cloud management.
+  official_url: https://www.virtana.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Management & Migration
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You need AI-driven infrastructure performance and capacity planning across hybrid environments.
+  avoid_when:
+  - Your monitoring and capacity needs are already covered by existing tools.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L234
+  - legacy:devopstools_final.md#L303
+  needs_review: true
+- id: vultr
+  name: Vultr
+  summary: High-performance cloud compute and infrastructure provider.
+  official_url: https://www.vultr.com
+  categories:
+  - cloud-platforms-management
+  subcategories:
+  - Cloud Providers
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - optimize
+  use_when:
+  - You want cheap, high-performance bare metal or cloud compute worldwide.
+  avoid_when:
+  - You require managed PaaS-level services.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L28
+  - legacy:devopstools_final.md#L162
+  needs_review: true

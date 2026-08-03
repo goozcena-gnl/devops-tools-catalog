@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/goozcena-gnl/Devops-Tools/schema/tool.schema.json",
+  "title": "DevOps Tools catalogue record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "summary",
+    "categories",
+    "roles",
+    "license_model",
+    "status",
+    "verified_on"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 1},
+    "summary": {"type": "string", "minLength": 1},
+    "official_url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "repository_url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "repository_archived": {"type": "boolean"},
+    "documentation_url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "categories": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "subcategories": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "roles": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "lifecycle_stages": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "use_when": {"type": "array", "items": {"type": "string"}},
+    "avoid_when": {"type": "array", "items": {"type": "string"}},
+    "deployment_models": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "license_model": {"type": "string", "enum": ["oss", "source-available", "open-core", "commercial", "free-saas", "documentation", "unknown"]},
+    "license_spdx": {"type": "string", "minLength": 1},
+    "commercial_offering": {"type": "boolean"},
+    "maturity": {"type": "string", "enum": ["established", "growing", "emerging", "experimental", "unknown"]},
+    "status": {"type": "string", "enum": ["active", "deprecated", "archived", "historical", "needs-review"]},
+    "alternatives": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "tags": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "verified_on": {"type": "string", "format": "date"},
+    "sources": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "needs_review": {"type": "boolean"}
+  },
+  "anyOf": [
+    {"required": ["official_url"]},
+    {"required": ["repository_url"]}
+  ]
+}

@@ -1,0 +1,237 @@
+- id: atmosly
+  name: Atmosly
+  summary: Platform engineering automation for self-service environments and app delivery.
+  official_url: https://atmosly.com
+  categories:
+  - platform-engineering-idp
+  subcategories:
+  - Platform Engineering & Internal Developer Platforms (IDP)
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - deploy
+  - operate
+  use_when:
+  - You want managed platform engineering with self-service infra provisioning.
+  avoid_when:
+  - Your org is too small for an IDP or you prefer building on OSS foundations.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L97
+  - legacy:devopstools_final.md#L1143
+  needs_review: true
+- id: backstage
+  name: Backstage
+  summary: Internal developer portal (IDP) / software catalog for improving developer experience.
+  official_url: https://backstage.io
+  repository_url: https://github.com/backstage/backstage
+  categories:
+  - platform-engineering-idp
+  subcategories:
+  - Platform Engineering & Internal Developer Platforms (IDP)
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - deploy
+  - operate
+  use_when:
+  - You have 50+ services and need a unified catalog, docs, and plugin ecosystem.
+  avoid_when:
+  - You have a small team—the setup and maintenance overhead won't pay off yet.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L98
+  - legacy:devopstools_final.md#L1144
+  needs_review: true
+- id: garden
+  name: Garden
+  summary: Developer-first automation for building/testing/deploying cloud-native apps.
+  official_url: https://garden.io
+  repository_url: https://github.com/garden-io/garden
+  categories:
+  - platform-engineering-idp
+  subcategories:
+  - Platform Engineering & Internal Developer Platforms (IDP)
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - deploy
+  - operate
+  use_when:
+  - Inner-loop development of multi-service Kubernetes apps is painfully slow.
+  avoid_when:
+  - Your services are few and docker-compose handles the dev workflow fine.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L99
+  - legacy:devopstools_final.md#L1145
+  needs_review: true
+- id: humanitec
+  name: Humanitec
+  summary: Internal developer platform for platform engineering (app/service delivery with abstractions).
+  official_url: https://humanitec.com
+  categories:
+  - platform-engineering-idp
+  subcategories:
+  - Platform Engineering & Internal Developer Platforms (IDP)
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - deploy
+  - operate
+  use_when:
+  - You want a commercial, score-based IDP with enterprise support and quick time-to-value.
+  avoid_when:
+  - You want OSS flexibility or your platform team prefers building custom abstractions.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L100
+  - legacy:devopstools_final.md#L1146
+  needs_review: true
+- id: kubara
+  name: kubara
+  summary: Platform engineering framework for building internal platforms.
+  official_url: https://kubara.io
+  categories:
+  - platform-engineering-idp
+  subcategories:
+  - Platform Engineering & Internal Developer Platforms (IDP)
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1147
+  needs_review: true
+- id: openrun
+  name: OpenRun
+  summary: Internal tools deployment platform.
+  official_url: https://openrun.dev
+  categories:
+  - platform-engineering-idp
+  subcategories:
+  - Platform Engineering & Internal Developer Platforms (IDP)
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1148
+  needs_review: true
+- id: opslevel
+  name: OpsLevel
+  summary: SaaS internal developer portal and service catalog (scorecards, ownership, maturity).
+  official_url: https://www.opslevel.com
+  categories:
+  - platform-engineering-idp
+  subcategories:
+  - Platform Engineering & Internal Developer Platforms (IDP)
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - deploy
+  - operate
+  use_when:
+  - You need service ownership tracking, maturity scorecards, and compliance checks without building it
+    yourself.
+  avoid_when:
+  - Backstage's plugin ecosystem covers your needs at lower cost.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L101
+  - legacy:devopstools_final.md#L1149
+  needs_review: true
+- id: port
+  name: Port
+  summary: Internal developer portal and service catalog with automations/workflows.
+  official_url: https://docs.port.io
+  categories:
+  - platform-engineering-idp
+  subcategories:
+  - Platform Engineering & Internal Developer Platforms (IDP)
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - deploy
+  - operate
+  use_when:
+  - You want a low-code IDP with built-in self-service actions and software catalog.
+  avoid_when:
+  - You need deep customization that only a code-first approach (Backstage) can provide.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:7_Development-Collaboration/README.md#L102
+  - legacy:devopstools_final.md#L1150
+  needs_review: true

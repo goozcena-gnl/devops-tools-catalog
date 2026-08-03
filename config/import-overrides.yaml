@@ -1,0 +1,217 @@
+version: 1
+heading_categories:
+  Version Control & Code Repository: source-control-repository-management
+  Linux & Scripting: foundations-linux-scripting
+  Linux Packaging & App Distribution: foundations-linux-scripting
+  Programming Languages: foundations-linux-scripting
+  Learning & Interview Prep: documentation-learning-career
+  System Diagnostics & Stress Tools: chaos-performance-engineering
+  Cloud Providers: cloud-platforms-management
+  Infrastructure as Code (IaC): infrastructure-as-code
+  Configuration Management: configuration-management
+  Serverless Solutions: serverless-edge-webassembly
+  Collaborative Infrastructure: infrastructure-as-code
+  Virtualization & Containerization: virtualization-bare-metal-homelab
+  Caching & Data Stores: databases-caching-data-infrastructure
+  Cloud Management & Migration: cloud-platforms-management
+  CI/CD Platforms: ci-build-testing
+  Build & Image Tools: containers-image-tooling
+  Artifact Management: artifact-package-management
+  GitOps: cd-gitops-release-promotion
+  Automation & Workflow: workflow-automation-chatops
+  AI-Enhanced Development: developer-experience-local-environments
+  Kubernetes Core Concepts: kubernetes-distributions-operations
+  Kubernetes Management & Operations: kubernetes-distributions-operations
+  Kubernetes Ecosystem & Add-ons: kubernetes-networking-storage-addons
+  Kubernetes Training & Certification: documentation-learning-career
+  Kubernetes Alternatives & Platforms: kubernetes-distributions-operations
+  Storage: kubernetes-networking-storage-addons
+  Backup & Disaster Recovery: backup-disaster-recovery-resilience
+  Monitoring & Observability Platforms: monitoring-metrics-logs-tracing
+  Kubernetes Observability & Troubleshooting: monitoring-metrics-logs-tracing
+  Visualization, Metrics, and Tracing: monitoring-metrics-logs-tracing
+  Log Management: monitoring-metrics-logs-tracing
+  Tracing & APM: monitoring-metrics-logs-tracing
+  Cost Management: finops-sustainability
+  IT Operations & Incident Management: sre-incident-response-on-call
+  Application Security (SAST, DAST, SCA) & Vulnerability Scanning: application-cloud-security
+  Infrastructure Security: application-cloud-security
+  Network Security: application-cloud-security
+  Secret Management: iam-secrets-certificates
+  Certificate & Key Management: iam-secrets-certificates
+  Identity & Access Management: iam-secrets-certificates
+  Infrastructure Access Management: iam-secrets-certificates
+  Service Mesh: kubernetes-networking-storage-addons
+  Project Management: workflow-automation-chatops
+  Testing & QA: ci-build-testing
+  Mobile CI/CD & Device Tools: ci-build-testing
+  Developer Environment: developer-experience-local-environments
+  IDE: developer-experience-local-environments
+  API Development: developer-experience-local-environments
+  Code Quality: ci-build-testing
+  Git hooks / commit hygiene: software-supply-chain-security
+  Linters / formatters: developer-experience-local-environments
+  Type checking: developer-experience-local-environments
+  Development Frameworks: developer-experience-local-environments
+  Hosting & Deployment: cd-gitops-release-promotion
+  Platform Engineering & Internal Developer Platforms (IDP): platform-engineering-idp
+  Communication & ChatOps: workflow-automation-chatops
+  Chaos Engineering Platforms: chaos-performance-engineering
+  Application & Network-Level Tools: chaos-performance-engineering
+  MLOps Platforms: mlops-llmops-ai-infrastructure
+  LLM & Application Frameworks: mlops-llmops-ai-infrastructure
+  AI Ops & AI Tooling for DevOps: mlops-llmops-ai-infrastructure
+  Model Context Protocol (MCP) Servers: mlops-llmops-ai-infrastructure
+  Agent Frameworks & Orchestration: mlops-llmops-ai-infrastructure
+  AI Observability & Evaluation: mlops-llmops-ai-infrastructure
+  Learning & Guides: documentation-learning-career
+  End of Life Dates: documentation-learning-career
+  Release Management: cd-gitops-release-promotion
+  Feature Flags: cd-gitops-release-promotion
+  Learning & Development: documentation-learning-career
+  Desktop / Utilities: developer-experience-local-environments
+  Other: emerging-experimental
+category_roles:
+  foundations-linux-scripting: [devops-engineer, infrastructure-systems-engineer]
+  source-control-repository-management: [devops-engineer, release-engineer, developer-experience-engineer]
+  cloud-platforms-management: [cloud-engineer, devops-engineer, platform-engineer]
+  infrastructure-as-code: [cloud-engineer, devops-engineer, platform-engineer, infrastructure-systems-engineer]
+  configuration-management: [devops-engineer, infrastructure-systems-engineer]
+  virtualization-bare-metal-homelab: [infrastructure-systems-engineer, devops-engineer]
+  containers-image-tooling: [devops-engineer, platform-engineer, kubernetes-engineer]
+  kubernetes-distributions-operations: [kubernetes-engineer, platform-engineer, site-reliability-engineer]
+  kubernetes-networking-storage-addons: [kubernetes-engineer, platform-engineer, site-reliability-engineer]
+  ci-build-testing: [devops-engineer, release-engineer, developer-experience-engineer]
+  cd-gitops-release-promotion: [devops-engineer, release-engineer, platform-engineer]
+  artifact-package-management: [devops-engineer, release-engineer, devsecops-engineer]
+  platform-engineering-idp: [platform-engineer, developer-experience-engineer]
+  developer-experience-local-environments: [developer-experience-engineer, devops-engineer]
+  monitoring-metrics-logs-tracing: [observability-engineer, site-reliability-engineer, devops-engineer]
+  sre-incident-response-on-call: [site-reliability-engineer, observability-engineer]
+  backup-disaster-recovery-resilience: [site-reliability-engineer, infrastructure-systems-engineer, cloud-engineer]
+  chaos-performance-engineering: [site-reliability-engineer, devops-engineer]
+  application-cloud-security: [devsecops-engineer, cloud-security-engineer]
+  iam-secrets-certificates: [devsecops-engineer, cloud-security-engineer, cloud-engineer]
+  software-supply-chain-security: [devsecops-engineer, release-engineer]
+  policy-governance-compliance: [devsecops-engineer, cloud-security-engineer, platform-engineer]
+  finops-sustainability: [finops-engineer, cloud-engineer, platform-engineer]
+  databases-caching-data-infrastructure: [devops-engineer, cloud-engineer, infrastructure-systems-engineer]
+  serverless-edge-webassembly: [cloud-engineer, devops-engineer, platform-engineer]
+  workflow-automation-chatops: [devops-engineer, site-reliability-engineer, developer-experience-engineer]
+  mlops-llmops-ai-infrastructure: [mlops-ai-infrastructure-engineer, platform-engineer, cloud-engineer]
+  documentation-learning-career: [devops-engineer, cloud-engineer, platform-engineer]
+  emerging-experimental: [devops-engineer, platform-engineer]
+  deprecated-historical: [devops-engineer, infrastructure-systems-engineer]
+category_lifecycle:
+  foundations-linux-scripting: [develop, operate, learn]
+  source-control-repository-management: [plan, develop]
+  cloud-platforms-management: [deploy, operate, optimize]
+  infrastructure-as-code: [plan, build, deploy]
+  configuration-management: [deploy, operate]
+  virtualization-bare-metal-homelab: [deploy, operate]
+  containers-image-tooling: [build, release]
+  kubernetes-distributions-operations: [deploy, operate]
+  kubernetes-networking-storage-addons: [deploy, operate]
+  ci-build-testing: [build, test]
+  cd-gitops-release-promotion: [release, deploy]
+  artifact-package-management: [build, release]
+  platform-engineering-idp: [develop, deploy, operate]
+  developer-experience-local-environments: [develop, test]
+  monitoring-metrics-logs-tracing: [monitor, operate]
+  sre-incident-response-on-call: [operate, monitor]
+  backup-disaster-recovery-resilience: [operate]
+  chaos-performance-engineering: [test, operate]
+  application-cloud-security: [secure, test]
+  iam-secrets-certificates: [secure, operate]
+  software-supply-chain-security: [secure, build, release]
+  policy-governance-compliance: [secure, operate]
+  finops-sustainability: [optimize]
+  databases-caching-data-infrastructure: [deploy, operate]
+  serverless-edge-webassembly: [build, deploy, operate]
+  workflow-automation-chatops: [plan, operate]
+  mlops-llmops-ai-infrastructure: [build, deploy, operate]
+  documentation-learning-career: [learn]
+  emerging-experimental: [learn, develop]
+  deprecated-historical: [retire]
+url_aliases:
+  https://clickhouse.com/use-cases/observability: https://clickhouse.com/
+  https://clastix.io/capsule/: https://capsule.clastix.io/
+  https://docs.kubelinter.io/: https://stackrox.github.io/kube-linter/
+  https://roadmap.sh/backend: https://roadmap.sh/
+  https://roadmap.sh/devops: https://roadmap.sh/
+record_overrides:
+  https://canonical.com/juju:
+    repository_archived: true
+  https://developer.hashicorp.com/terraform/cdktf:
+    categories: [deprecated-historical, infrastructure-as-code]
+    lifecycle_stages: [retire]
+    repository_archived: true
+    status: archived
+    needs_review: true
+  https://grafana.com/products/cloud/oncall:
+    categories: [deprecated-historical, sre-incident-response-on-call]
+    lifecycle_stages: [retire]
+    repository_archived: true
+    status: archived
+    needs_review: true
+  https://github.com/GoogleContainerTools/kaniko:
+    categories: [deprecated-historical, containers-image-tooling]
+    lifecycle_stages: [retire]
+    repository_archived: true
+    status: archived
+    needs_review: true
+  https://github.com/jfroy/tnu:
+    categories: [deprecated-historical, ci-build-testing]
+    lifecycle_stages: [retire]
+    repository_archived: true
+    status: archived
+    needs_review: true
+  https://github.com/kubernetes/dashboard:
+    categories: [deprecated-historical, kubernetes-distributions-operations]
+    lifecycle_stages: [retire]
+    repository_archived: true
+    status: archived
+    needs_review: true
+  https://keptn.sh:
+    categories: [deprecated-historical, ci-build-testing]
+    lifecycle_stages: [retire]
+    repository_archived: true
+    status: archived
+    needs_review: true
+  https://kubeapps.com:
+    categories: [deprecated-historical, kubernetes-distributions-operations]
+    lifecycle_stages: [retire]
+    repository_archived: true
+    status: archived
+    needs_review: true
+  https://owasp.org/www-project-dependency-check:
+    repository_url: https://github.com/dependency-check/DependencyCheck
+  https://www.localstack.cloud:
+    repository_archived: true
+  https://www.min.io:
+    repository_archived: true
+  https://roadmap.sh:
+    name: Roadmap.sh
+    summary: Community-maintained role and skill roadmaps for software and infrastructure careers.
+disposition_overrides:
+  https://developer.hashicorp.com/terraform/cdktf:
+    disposition: archived
+    reason: Official GitHub repository is archived; retained for historical and migration context.
+  https://grafana.com/products/cloud/oncall:
+    disposition: archived
+    reason: Official GitHub repository is archived; retained for historical and migration context.
+  https://github.com/GoogleContainerTools/kaniko:
+    disposition: archived
+    reason: Official GitHub repository is archived; retained for historical and migration context.
+  https://github.com/jfroy/tnu:
+    disposition: archived
+    reason: Official GitHub repository is archived; retained for historical and migration context.
+  https://github.com/kubernetes/dashboard:
+    disposition: archived
+    reason: Official GitHub repository is archived; retained for historical and migration context.
+  https://keptn.sh:
+    disposition: archived
+    reason: Official GitHub repository is archived; retained for historical and migration context.
+  https://kubeapps.com:
+    disposition: archived
+    reason: Official GitHub repository is archived; retained for historical and migration context.

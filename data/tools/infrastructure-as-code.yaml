@@ -1,0 +1,1027 @@
+- id: arm-templates
+  name: ARM Templates
+  summary: Azure Resource Manager (ARM) JSON template format for declarative deployments.
+  official_url: https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview
+  repository_url: https://github.com/Azure/azure-quickstart-templates
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You have legacy Azure deployments already using ARM JSON.
+  avoid_when:
+  - Starting new Azure IaC projects (prefer Bicep instead).
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L32
+  - legacy:devopstools_final.md#L165
+  needs_review: true
+- id: atlantis
+  name: Atlantis
+  summary: Terraform pull-request automation.
+  official_url: https://www.runatlantis.io
+  repository_url: https://github.com/runatlantis/atlantis
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Collaborative Infrastructure
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want self-hosted, GitOps-style `plan`/`apply` in pull requests.
+  avoid_when:
+  - You need advanced RBAC, drift detection, or a managed solution.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L114
+  - legacy:devopstools_final.md#L219
+  needs_review: true
+- id: atmos
+  name: atmos
+  summary: Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at
+    scale.
+  official_url: https://atmos.tools
+  repository_url: https://github.com/cloudposse/atmos
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L166
+  needs_review: true
+- id: aws-cdk
+  name: AWS CDK
+  summary: Infrastructure as code framework that defines cloud resources in familiar programming languages.
+  official_url: https://aws.amazon.com/cdk
+  repository_url: https://github.com/aws/aws-cdk
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - Your team prefers TypeScript/Python over declarative DSLs and you're all-in on AWS.
+  avoid_when:
+  - You need multi-cloud support.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L34
+  - legacy:devopstools_final.md#L169
+  needs_review: true
+- id: aws-cloudformation
+  name: AWS CloudFormation
+  summary: AWS-native infrastructure provisioning service (templates/stacks).
+  official_url: https://aws.amazon.com/cloudformation
+  repository_url: https://github.com/aws-cloudformation/aws-cloudformation-templates
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want native AWS support with no extra tooling.
+  avoid_when:
+  - Templates become unwieldy or you need multi-cloud.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L36
+  - legacy:devopstools_final.md#L170
+  needs_review: true
+- id: azure-bicep
+  name: Azure Bicep
+  summary: Declarative IaC language for Azure Resource Manager deployments.
+  official_url: https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview
+  repository_url: https://github.com/Azure/bicep
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You're deploying to Azure and want a cleaner syntax than ARM JSON.
+  avoid_when:
+  - You need to manage resources outside Azure.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L38
+  - legacy:devopstools_final.md#L171
+  needs_review: true
+- id: azure-verified-modules-avm
+  name: Azure Verified Modules (AVM)
+  summary: Microsoft-curated, consistently designed Bicep and Terraform modules for Azure resources.
+  official_url: https://azure.github.io/Azure-Verified-Modules
+  repository_url: https://github.com/Azure/Azure-Verified-Modules
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L167
+  needs_review: true
+- id: azurenamingtool
+  name: AzureNamingTool
+  summary: NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed
+    configuration.
+  repository_url: https://github.com/Azure/AzureNamingTool
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L168
+  needs_review: true
+- id: cdk8s
+  name: cdk8s
+  summary: Define Kubernetes applications and reusable abstractions in general-purpose programming languages
+    and synthesize them to YAML.
+  official_url: https://cdk8s.io
+  repository_url: https://github.com/cdk8s-team/cdk8s
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L172
+  needs_review: true
+- id: cloudcustodian
+  name: CloudCustodian
+  summary: Cloud governance rules engine.
+  official_url: https://cloudcustodian.io
+  repository_url: https://github.com/cloud-custodian/cloud-custodian
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You need automated policy enforcement (cost, security, compliance) across clouds.
+  avoid_when:
+  - You only need basic tagging or have few resources.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L42
+  - legacy:devopstools_final.md#L174
+  needs_review: true
+- id: crossplane
+  name: Crossplane
+  summary: Kubernetes-native IaC control plane.
+  official_url: https://www.crossplane.io
+  repository_url: https://github.com/crossplane/crossplane
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want to manage cloud resources via Kubernetes CRDs and GitOps.
+  avoid_when:
+  - Your team doesn't already run Kubernetes.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L44
+  - legacy:devopstools_final.md#L175
+  needs_review: true
+- id: env0
+  name: Env0
+  summary: Infrastructure as Code automation and governance platform.
+  official_url: https://github.com/env0
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Collaborative Infrastructure
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You need managed IaC workflows with cost governance and environment-as-a-service.
+  avoid_when:
+  - You want a fully self-hosted or open-source solution.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L116
+  - legacy:devopstools_final.md#L220
+  needs_review: true
+- id: infracost
+  name: Infracost
+  summary: Cost estimates for IaC projects.
+  official_url: https://www.infracost.io
+  repository_url: https://github.com/infracost/infracost
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want cost visibility in pull requests before deploying.
+  avoid_when:
+  - Your cloud spend is trivial or pricing is flat.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L46
+  - legacy:devopstools_final.md#L176
+  needs_review: true
+- id: kics
+  name: KICS
+  summary: IaC scanning for security issues.
+  official_url: https://kics.io
+  repository_url: https://github.com/Checkmarx/kics
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You need a multi-framework IaC security scanner in CI.
+  avoid_when:
+  - You already have a comprehensive CSPM covering IaC.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L48
+  - legacy:devopstools_final.md#L177
+  needs_review: true
+- id: kusionstack
+  name: KusionStack
+  summary: Infrastructure automation platform.
+  official_url: https://kusionstack.io
+  repository_url: https://github.com/KusionStack/kusion
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want an opinionated platform engineering stack with intent-driven delivery.
+  avoid_when:
+  - You need broad community support and mature ecosystem integrations.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L50
+  - legacy:devopstools_final.md#L178
+  needs_review: true
+- id: opentaco
+  name: OpenTaco
+  summary: Terraform/OpenTofu CI orchestration and pull-request automation.
+  official_url: https://opentaco.dev
+  repository_url: https://github.com/diggerhq/digger
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Collaborative Infrastructure
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want open-source PR automation that runs in your own CI (no separate server).
+  avoid_when:
+  - You need an all-in-one platform with state management and a dashboard.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L118
+  - legacy:devopstools_final.md#L221
+  needs_review: true
+- id: opentofu
+  name: OpenTofu
+  summary: Open-source Terraform fork.
+  official_url: https://opentofu.org
+  repository_url: https://github.com/opentofu/opentofu
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want Terraform-compatible IaC under a truly open-source license.
+  avoid_when:
+  - You rely on HashiCorp enterprise support or features exclusive to Terraform.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L52
+  - legacy:devopstools_final.md#L179
+  needs_review: true
+- id: packer
+  name: Packer
+  summary: Machine image creation.
+  official_url: https://www.packer.io
+  repository_url: https://github.com/hashicorp/packer
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You need reproducible, versioned machine images (AMIs, VM images).
+  avoid_when:
+  - You use immutable containers and don't need VM-level images.
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L54
+  - legacy:devopstools_final.md#L180
+  needs_review: true
+- id: pluralith
+  name: Pluralith
+  summary: Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
+  official_url: https://www.pluralith.com
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L181
+  needs_review: true
+- id: pulumi
+  name: Pulumi
+  summary: IaC using real programming languages.
+  official_url: https://www.pulumi.com
+  repository_url: https://github.com/pulumi/pulumi
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want IaC with full programming-language power, testing, and abstractions.
+  avoid_when:
+  - Your team prefers declarative configs or you want to minimize vendor lock-in to a SaaS state backend.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L56
+  - legacy:devopstools_final.md#L182
+  needs_review: true
+- id: scalr
+  name: Scalr
+  summary: Terraform automation and collaboration software.
+  official_url: https://github.com/Scalr
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Collaborative Infrastructure
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You need a Terraform Cloud alternative with OPA policy enforcement and hierarchical configs.
+  avoid_when:
+  - Atlantis or native CI pipelines suffice.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L120
+  - legacy:devopstools_final.md#L222
+  needs_review: true
+- id: score
+  name: Score
+  summary: Developer-centric, platform-agnostic workload specification for defining runtime requirements
+    once in `score.yaml` and targeting multiple environments.
+  official_url: https://score.dev
+  repository_url: https://github.com/score-spec/spec
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L183
+  needs_review: true
+- id: spacelift
+  name: Spacelift
+  summary: IaC automation with policy-as-code and collaboration.
+  official_url: https://spacelift.io
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Collaborative Infrastructure
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You need enterprise-grade IaC orchestration with drift detection and policies.
+  - You need enterprise-grade IaC orchestration with multi-tool support (Terraform, Pulumi, CloudFormation).
+  avoid_when:
+  - Budget is limited and simpler tooling covers your workflow.
+  - Budget is tight and Atlantis or native CI covers your needs.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L122
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L58
+  - legacy:devopstools_final.md#L184
+  - legacy:devopstools_final.md#L223
+  needs_review: true
+- id: terraform
+  name: Terraform
+  summary: Infrastructure provisioning tool.
+  official_url: https://www.terraform.io
+  repository_url: https://github.com/hashicorp/terraform
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You need the largest provider ecosystem and industry-standard HCL workflows.
+  avoid_when:
+  - The BSL license is incompatible with your organization's policies.
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L60
+  - legacy:devopstools_final.md#L187
+  needs_review: true
+- id: terraform-aws-eks-operation-scheduler
+  name: terraform-aws-eks-operation-scheduler
+  summary: Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge
+    for cost savings.
+  repository_url: https://github.com/gianniskt/terraform-aws-eks-operation-scheduler
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L188
+  needs_review: true
+- id: terraform-cloud
+  name: Terraform Cloud
+  summary: Managed service for Terraform workflows and state management.
+  official_url: https://developer.hashicorp.com/terraform/enterprise/cloud-docs
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Collaborative Infrastructure
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want HashiCorp-managed remote state, runs, and Sentinel policies.
+  avoid_when:
+  - You want open-source tooling or need to avoid vendor dependency on HashiCorp.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L124
+  - legacy:devopstools_final.md#L224
+  needs_review: true
+- id: terraform-docs
+  name: terraform-docs
+  summary: Generate documentation from Terraform modules in various output formats.
+  official_url: https://terraform-docs.io
+  repository_url: https://github.com/terraform-docs/terraform-docs
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L185
+  needs_review: true
+- id: terraform-plugin-docs
+  name: terraform-plugin-docs
+  summary: Generate and validate Terraform provider/plugin documentation from source.
+  repository_url: https://github.com/hashicorp/terraform-plugin-docs
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L186
+  needs_review: true
+- id: terragrunt
+  name: Terragrunt
+  summary: Terraform wrapper for DRY configurations.
+  official_url: https://terragrunt.gruntwork.io
+  repository_url: https://github.com/gruntwork-io/terragrunt
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You manage many Terraform modules/environments and want to keep configs DRY.
+  avoid_when:
+  - You have a simple, single-environment setup.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L62
+  - legacy:devopstools_final.md#L189
+  needs_review: true
+- id: terrateam
+  name: Terrateam
+  summary: GitOps-style Terraform pull-request automation with collaboration features.
+  official_url: https://terrateam.io
+  repository_url: https://github.com/terrateamio/terrateam
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Collaborative Infrastructure
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want GitHub-native Terraform automation with access controls and apply locks.
+  avoid_when:
+  - You use GitLab/Bitbucket or prefer a fully self-hosted solution.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L126
+  - legacy:devopstools_final.md#L225
+  needs_review: true
+- id: terravision
+  name: terravision
+  summary: Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google,
+    Azure).
+  repository_url: https://github.com/patrickchugh/terravision
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L190
+  needs_review: true
+- id: tflint
+  name: TFLint
+  summary: Terraform linter (style + provider-specific rules).
+  repository_url: https://github.com/terraform-linters/tflint
+  categories:
+  - infrastructure-as-code
+  subcategories:
+  - Infrastructure as Code (IaC)
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You want to catch Terraform errors and enforce conventions before `plan`.
+  avoid_when:
+  - You already have comprehensive CI validation covering the same rules.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L64
+  - legacy:devopstools_final.md#L191
+  needs_review: true

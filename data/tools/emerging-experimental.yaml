@@ -1,0 +1,1321 @@
+- id: akka-net
+  name: Akka.NET
+  summary: Actor-based concurrency framework for .NET.
+  official_url: https://getakka.net
+  repository_url: https://github.com/akkadotnet/akka.net
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You're building highly concurrent, distributed .NET systems that benefit from the actor model.
+  avoid_when:
+  - Simple async/await or a message queue covers your concurrency needs.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L50
+  - legacy:devopstools_final.md#L1303
+  needs_review: true
+- id: barbara
+  name: Barbara
+  summary: DevOps/engineering platform.
+  official_url: https://www.barbara.tech
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need an edge computing / IoT DevOps platform.
+  avoid_when:
+  - Your workloads are purely cloud-native with no edge component.
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L52
+  - legacy:devopstools_final.md#L1304
+  needs_review: true
+- id: bmc-control-m
+  name: BMC Control-M
+  summary: Application and data workflow orchestration platform.
+  official_url: https://www.bmc.com/it-solutions/control-m.html
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need enterprise-grade, cross-platform job scheduling with deep SAP/mainframe integration.
+  avoid_when:
+  - Open-source orchestrators (Airflow, Prefect) meet your needs at lower cost.
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L54
+  - legacy:devopstools_final.md#L1305
+  needs_review: true
+- id: brainboard
+  name: Brainboard
+  summary: Visual cloud architecture and IaC design platform.
+  official_url: https://www.brainboard.co
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want to visually design cloud architectures and auto-generate Terraform code.
+  avoid_when:
+  - Your team already writes IaC fluently and doesn't need a visual layer.
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L56
+  - legacy:devopstools_final.md#L1306
+  needs_review: true
+- id: braintrust
+  name: Braintrust
+  summary: Decentralized AI marketplace and DevOps collaboration platform.
+  official_url: https://www.braintrust.dev
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need an eval/logging framework for LLM applications.
+  avoid_when:
+  - You're not building AI/LLM features and don't need prompt evaluation tooling.
+  deployment_models: []
+  license_model: open-core
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L58
+  - legacy:devopstools_final.md#L1307
+  needs_review: true
+- id: chapril-services
+  name: Chapril Services
+  summary: Community-hosted catalogue of libre online services including collaboration, communication,
+    file sharing, and code hosting tools.
+  official_url: https://www.chapril.org/-services-.html
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1308
+  needs_review: true
+- id: clone-wars
+  name: Clone-Wars
+  summary: GitHub project (see repository for details).
+  repository_url: https://github.com/GorvGoyl/Clone-Wars
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want inspiration or reference implementations of popular app clones for learning.
+  avoid_when:
+  - You're looking for production-ready software.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L60
+  - legacy:devopstools_final.md#L1309
+  needs_review: true
+- id: cmd-ms
+  name: cmd.ms
+  summary: Microsoft Cloud command-line shortcut browser with 355+ shortcuts to Azure, Entra, Intune,
+    and Microsoft 365 admin portals via the browser address bar.
+  official_url: https://cmd.ms
+  repository_url: https://github.com/merill/cmd
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1310
+  needs_review: true
+- id: code-newsletter-ai
+  name: Code Newsletter AI
+  summary: AI-curated development newsletter.
+  official_url: https://codenewsletter.ai
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want an automated, AI-filtered digest of dev news.
+  avoid_when:
+  - You prefer human-curated newsletters with editorial judgment.
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L62
+  - legacy:devopstools_final.md#L1311
+  needs_review: true
+- id: codegraph
+  name: codegraph
+  summary: Codebase graph visualization tool for understanding repository structure.
+  official_url: https://colbymchenry.github.io/codegraph
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1320
+  needs_review: true
+- id: cortex-xsoar
+  name: Cortex XSOAR
+  summary: Commercial SOAR platform (Community/Starter/Enterprise licensing). Content packs are open on
+    GitHub.
+  official_url: https://www.paloaltonetworks.com/cortex/cortex-xsoar
+  repository_url: https://github.com/demisto/content
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need a mature SOAR platform with hundreds of integrations for security operations automation.
+  avoid_when:
+  - Your SOC is small and a simpler SIEM with basic automation suffices.
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L66
+  - legacy:devopstools_final.md#L1316
+  needs_review: true
+- id: cosign-sigstore
+  name: cosign (sigstore)
+  summary: Container/artifact signing and verification.
+  official_url: https://docs.sigstore.dev/cosign
+  repository_url: https://github.com/sigstore/cosign
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need keyless or key-based signing for container images in your supply chain.
+  avoid_when:
+  - You have no container supply-chain security requirements yet.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L64
+  - legacy:devopstools_final.md#L1312
+  needs_review: true
+- id: cue
+  name: CUE
+  summary: Data validation language and tool.
+  official_url: https://cuelang.org
+  repository_url: https://github.com/cue-lang/cue
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need schema validation and constraint-based configuration that goes beyond JSON Schema.
+  avoid_when:
+  - Your team is already invested in JSON Schema/OPA and the learning curve isn't justified.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L68
+  - legacy:devopstools_final.md#L1317
+  needs_review: true
+- id: diagrams
+  name: Diagrams
+  summary: Python library for building cloud and system architecture diagrams as code.
+  official_url: https://pypi.org/project/diagrams
+  repository_url: https://github.com/mingrammer/diagrams
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1318
+  needs_review: true
+- id: duplicati
+  name: Duplicati
+  summary: Free backup software with strong encryption and support for many cloud storage backends.
+  official_url: https://duplicati.com
+  repository_url: https://github.com/duplicati/duplicati
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1319
+  needs_review: true
+- id: entire
+  name: Entire
+  summary: Developer platform with an open-source CLI that captures and versions AI agent coding sessions
+    as searchable checkpoints alongside Git commits.
+  official_url: https://entire.io
+  repository_url: https://github.com/entireio/cli
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You use AI coding agents heavily and want to audit/replay their sessions.
+  avoid_when:
+  - You don't use AI agents or Git history alone provides sufficient traceability.
+  deployment_models: []
+  license_model: open-core
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L70
+  - legacy:devopstools_final.md#L1321
+  needs_review: true
+- id: eraser-diagramgpt
+  name: Eraser DiagramGPT
+  summary: AI-assisted diagramming tool.
+  official_url: https://www.eraser.io/diagramgpt
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want to quickly generate architecture diagrams from natural language prompts.
+  avoid_when:
+  - You need precise, version-controlled diagrams—use diagram-as-code tools instead.
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L72
+  - legacy:devopstools_final.md#L1322
+  needs_review: true
+- id: fulcio-sigstore
+  name: fulcio (sigstore)
+  summary: Sigstore's free OIDC-based root CA for issuing short-lived code-signing certificates.
+  repository_url: https://github.com/sigstore/fulcio
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1313
+  needs_review: true
+- id: gitsign-sigstore
+  name: gitsign (sigstore)
+  summary: Keyless Git commit signing using Sigstore.
+  repository_url: https://github.com/sigstore/gitsign
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1314
+  needs_review: true
+- id: glances
+  name: glances
+  summary: Cross-platform system monitoring tool (top/htop-like).
+  official_url: https://nicolargo.github.io/glances
+  repository_url: https://github.com/nicolargo/glances
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want a feature-rich, cross-platform terminal monitor with web/API export.
+  avoid_when:
+  - Htop/top is enough or you already have full observability stacks deployed.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L74
+  - legacy:devopstools_final.md#L1323
+  needs_review: true
+- id: homer
+  name: Homer
+  summary: Static dashboard for organizing links to self-hosted services and tools.
+  official_url: https://homer-demo.netlify.app
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1324
+  needs_review: true
+- id: icepanel
+  name: IcePanel
+  summary: Collaborative software architecture modeling tool for mapping systems, services, and C4-style
+    relationships.
+  official_url: https://icepanel.io
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1326
+  needs_review: true
+- id: informatica
+  name: Informatica
+  summary: Data integration and cloud data management solutions.
+  official_url: https://www.informatica.com
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need enterprise-grade ETL/data governance with broad connector support.
+  avoid_when:
+  - Lighter open-source tools (Airbyte, dbt) cover your data integration needs.
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L76
+  - legacy:devopstools_final.md#L1325
+  needs_review: true
+- id: it-tools
+  name: IT Tools
+  summary: Collection of developer utility tools (converters, encoders, generators, and more) available
+    as a self-hostable web app.
+  official_url: https://it-tools.tech
+  repository_url: https://github.com/CorentinTh/it-tools
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1327
+  needs_review: true
+- id: keygraph
+  name: Keygraph
+  summary: Knowledge graph tool with AI-powered pentesting capabilities.
+  official_url: https://github.com/KeygraphHQ
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want to map and reason about infrastructure relationships with integrated security testing.
+  avoid_when:
+  - You already have separate asset inventory and pentest tooling that works well together.
+  deployment_models: []
+  license_model: open-core
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L78
+  - legacy:devopstools_final.md#L1328
+  needs_review: true
+- id: kubernetes-sigs-bom
+  name: kubernetes-sigs/bom
+  summary: SBOM generation tooling for Kubernetes projects.
+  official_url: https://kubernetes-sigs.github.io/bom
+  repository_url: https://github.com/kubernetes-sigs/bom
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need SPDX-format SBOMs for container images or Go projects.
+  avoid_when:
+  - Syft or Trivy already handles your SBOM generation.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L80
+  - legacy:devopstools_final.md#L1329
+  needs_review: true
+- id: nops
+  name: nOps
+  summary: Commercial FinOps / cloud cost optimization platform.
+  official_url: https://www.nops.io
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need automated AWS cost optimization with commitment management.
+  avoid_when:
+  - You're multi-cloud or your cloud spend is small enough for manual review.
+  deployment_models: []
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L82
+  - legacy:devopstools_final.md#L1330
+  needs_review: true
+- id: ollygarden
+  name: OllyGarden
+  summary: OpenTelemetry adoption platform with tools for improving telemetry pipelines; built by OpenTelemetry
+    contributors.
+  official_url: https://github.com/ollygarden
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You're adopting OpenTelemetry and need help assessing/improving instrumentation quality.
+  avoid_when:
+  - Your OTel setup is mature and well-understood.
+  deployment_models: []
+  license_model: open-core
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L84
+  - legacy:devopstools_final.md#L1331
+  needs_review: true
+- id: openspeedtest
+  name: openspeedtest
+  summary: Self-hosted network speed test application.
+  official_url: https://github.com/openspeedtest
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want to test internal network bandwidth without sending traffic to external services.
+  avoid_when:
+  - A simple iperf test between hosts is sufficient.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L86
+  - legacy:devopstools_final.md#L1332
+  needs_review: true
+- id: paperless-ngx
+  name: Paperless-ngx
+  summary: Document management system for scanning, indexing, and searching your paper documents.
+  official_url: https://docs.paperless-ngx.com
+  repository_url: https://github.com/paperless-ngx/paperless-ngx
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want to digitize and search physical documents with OCR in a self-hosted setup.
+  avoid_when:
+  - You only deal with born-digital documents and a shared drive or wiki suffices.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L88
+  - legacy:devopstools_final.md#L1333
+  needs_review: true
+- id: papra
+  name: Papra
+  summary: Document/PDF organization (see project).
+  repository_url: https://github.com/papra-hq/papra
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need lightweight, self-hosted PDF/document organization.
+  avoid_when:
+  - Paperless-ngx or a full DMS already covers your needs.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L90
+  - legacy:devopstools_final.md#L1334
+  needs_review: true
+- id: portabase
+  name: Portabase
+  summary: Self-hosted tool for automating and restoring database backups across many database engines.
+  official_url: https://portabase.io
+  repository_url: https://github.com/Portabase/portabase
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1335
+  needs_review: true
+- id: privatebin
+  name: PrivateBin
+  summary: Secure pastebin alternative.
+  official_url: https://privatebin.info
+  repository_url: https://github.com/PrivateBin/PrivateBin
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need end-to-end encrypted, self-hosted paste sharing where the server sees nothing.
+  avoid_when:
+  - You need collaboration features—use a wiki or shared doc instead.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L92
+  - legacy:devopstools_final.md#L1336
+  needs_review: true
+- id: rekor-sigstore
+  name: rekor (sigstore)
+  summary: Software supply chain transparency log for recording signed metadata.
+  repository_url: https://github.com/sigstore/rekor
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1315
+  needs_review: true
+- id: rude-tools
+  name: Rude Tools
+  summary: Developer utilities collection.
+  official_url: https://rudetools.dev
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want a grab-bag of small dev utilities in one place.
+  avoid_when:
+  - You need well-maintained, individually supported tools.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L94
+  - legacy:devopstools_final.md#L1337
+  needs_review: true
+- id: searxng
+  name: SearXNG
+  summary: Self-hosted metasearch engine.
+  official_url: https://docs.searxng.org
+  repository_url: https://github.com/searxng/searxng
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want privacy-respecting, self-hosted web search that aggregates multiple engines.
+  avoid_when:
+  - You don't want to maintain the instance or deal with upstream engine rate-limiting.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L96
+  - legacy:devopstools_final.md#L1338
+  needs_review: true
+- id: shannon
+  name: Shannon
+  summary: AI pentester that autonomously hunts for vulnerabilities.
+  repository_url: https://github.com/KeygraphHQ/shannon
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want continuous, automated vulnerability discovery to supplement manual pentests.
+  avoid_when:
+  - You need compliance-grade pentesting with human-verified findings.
+  deployment_models: []
+  license_model: open-core
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L98
+  - legacy:devopstools_final.md#L1339
+  needs_review: true
+- id: snip
+  name: Snip
+  summary: Code snippet manager.
+  repository_url: https://github.com/edouard-claude/snip
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want a lightweight, local snippet manager.
+  avoid_when:
+  - Your IDE's built-in snippets or a team-shared tool like Gist/Gitlab Snippets is sufficient.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L100
+  - legacy:devopstools_final.md#L1340
+  needs_review: true
+- id: snorlax
+  name: Snorlax
+  summary: Kubernetes operator for scheduling deployment sleep/wake cycles to reduce resource costs.
+  repository_url: https://github.com/moonbeam-nyc/snorlax
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You have non-production clusters/namespaces that should scale to zero on a schedule.
+  avoid_when:
+  - You need more granular cost control—consider KEDA or cluster autoscaler instead.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L102
+  - legacy:devopstools_final.md#L1341
+  needs_review: true
+- id: sshm
+  name: sshm
+  summary: SSH connection manager (see project).
+  repository_url: https://github.com/Gu1llaum-3/sshm
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You manage many SSH hosts and want a TUI to organize them.
+  avoid_when:
+  - Your `~/.ssh/config` with aliases and ProxyJump is already manageable.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L104
+  - legacy:devopstools_final.md#L1342
+  needs_review: true
+- id: structurizr
+  name: Structurizr
+  summary: C4 model architecture tooling with diagrams-as-code and Structurizr DSL.
+  official_url: https://github.com/structurizr
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L1343
+  needs_review: true
+- id: timoni
+  name: Timoni
+  summary: Package manager for Kubernetes.
+  official_url: https://timoni.sh
+  repository_url: https://github.com/stefanprodan/timoni
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want CUE-based Kubernetes packaging as a type-safe alternative to Helm.
+  avoid_when:
+  - Your team is productive with Helm and the ecosystem support matters more than type safety.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L106
+  - legacy:devopstools_final.md#L1344
+  needs_review: true
+- id: tty-share
+  name: tty-share
+  summary: Lightweight terminal sharing tool over the web.
+  official_url: https://tty-share.com
+  repository_url: https://github.com/elisescu/tty-share
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need quick, zero-install terminal sharing for pair debugging.
+  avoid_when:
+  - You need persistent, multi-user terminal collaboration—use tmux/tmate instead.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L108
+  - legacy:devopstools_final.md#L1345
+  needs_review: true
+- id: urbackup
+  name: UrBackup
+  summary: Client/server backup system.
+  official_url: https://www.urbackup.org
+  repository_url: https://github.com/uroni/urbackup_backend
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You want a self-hosted, agentless backup solution for mixed OS environments.
+  avoid_when:
+  - You need cloud-tier backup with deduplication and compliance features.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L110
+  - legacy:devopstools_final.md#L1346
+  needs_review: true
+- id: valkey
+  name: Valkey
+  summary: High-performance in-memory data store.
+  official_url: https://valkey.io
+  repository_url: https://github.com/valkey-io/valkey
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You need a Redis-compatible, truly open-source in-memory store without licensing concerns.
+  avoid_when:
+  - You rely on Redis-specific modules or managed Redis services that Valkey doesn't support yet.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L112
+  - legacy:devopstools_final.md#L1347
+  needs_review: true
+- id: yamlql
+  name: YamlQL
+  summary: Query YAML files using SQL-like syntax.
+  repository_url: https://github.com/AKSarav/YamlQL
+  categories:
+  - emerging-experimental
+  subcategories:
+  - Other
+  roles:
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - learn
+  use_when:
+  - You have large/complex YAML files and want SQL-like queries instead of chained yq/jq.
+  avoid_when:
+  - Simple yq one-liners already solve your use case.
+  deployment_models: []
+  license_model: oss
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L114
+  - legacy:devopstools_final.md#L1348
+  needs_review: true

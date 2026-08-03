@@ -1,0 +1,3625 @@
+- id: actions-runner-controller
+  name: Actions Runner Controller
+  summary: Run GitHub Actions runners on Kubernetes.
+  repository_url: https://github.com/actions/actions-runner-controller
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need autoscaling, ephemeral GitHub Actions runners with Kubernetes-native lifecycle management.
+  avoid_when:
+  - GitHub-hosted runners or a simple VM-based setup meets your CI needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L68
+  - legacy:devopstools_final.md#L528
+  needs_review: true
+- id: agones
+  name: Agones
+  summary: Kubernetes-native platform for hosting, running, and scaling dedicated game servers.
+  official_url: https://agones.dev/site
+  repository_url: https://github.com/googleforgames/agones
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L529
+  needs_review: true
+- id: ai-gateway-envoy
+  name: AI Gateway (Envoy)
+  summary: Envoy-based AI gateway for managing LLM traffic in Kubernetes.
+  official_url: https://aigateway.envoyproxy.io
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need unified rate-limiting, auth, and routing across multiple LLM providers.
+  avoid_when:
+  - You call a single LLM API directly and don't need traffic management.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L69
+  - legacy:devopstools_final.md#L530
+  needs_review: true
+- id: aralez
+  name: Aralez
+  summary: Kubernetes operator (see docs).
+  official_url: https://sadoyan.github.io/aralez-docs
+  repository_url: https://github.com/sadoyan/aralez
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need its specific operator capabilities (consult docs).
+  avoid_when:
+  - A more established operator covers your use case.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L70
+  - legacy:devopstools_final.md#L531
+  needs_review: true
+- id: aws-ack-rds-controller
+  name: AWS ACK RDS Controller
+  summary: AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
+  repository_url: https://github.com/aws-controllers-k8s/rds-controller
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to manage RDS instances declaratively from Kubernetes manifests.
+  avoid_when:
+  - You already use Terraform/Crossplane for AWS resource management or don't run on AWS.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L71
+  - legacy:devopstools_final.md#L532
+  needs_review: true
+- id: azure-service-operator
+  name: Azure Service Operator
+  summary: Kubernetes operator for Azure resources.
+  official_url: https://azure.github.io/azure-service-operator
+  repository_url: https://github.com/Azure/azure-service-operator
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to provision Azure resources (databases, storage, etc.) via Kubernetes CRDs.
+  avoid_when:
+  - You already manage Azure infra through Terraform/Bicep or don't run on Azure.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L72
+  - legacy:devopstools_final.md#L533
+  needs_review: true
+- id: bunkerweb
+  name: BunkerWeb
+  summary: Web security gateway / WAF for NGINX.
+  official_url: https://www.bunkerweb.io
+  repository_url: https://github.com/bunkerity/bunkerweb
+  categories:
+  - kubernetes-networking-storage-addons
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - devsecops-engineer
+  - kubernetes-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - deploy
+  - operate
+  - secure
+  use_when:
+  - A batteries-included, self-hosted WAF with a web UI.
+  - You need an open-source WAF with ModSecurity rules in front of your ingress.
+  avoid_when:
+  - You need deep custom rule authoring (consider ModSecurity/Coraza instead).
+  - Your cloud provider's managed WAF (AWS WAF/Cloud Armor) already meets your needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L73
+  - legacy:6_Security/README.md#L9
+  - legacy:devopstools_final.md#L534
+  - legacy:devopstools_final.md#L843
+  needs_review: true
+- id: capsule
+  name: Capsule
+  summary: Kubernetes multi-tenancy and policy enforcement.
+  official_url: https://capsule.clastix.io
+  repository_url: https://github.com/clastix/capsule
+  categories:
+  - kubernetes-networking-storage-addons
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - devsecops-engineer
+  - kubernetes-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - deploy
+  - operate
+  - secure
+  use_when:
+  - Lightweight, namespace-based multi-tenancy without vClusters.
+  - You need lightweight namespace-based multi-tenancy with tenant isolation policies.
+  avoid_when:
+  - Tenants need full cluster-admin isolation (use vCluster or separate clusters).
+  - You need full cluster-level isolation (use vcluster) or have a single tenant.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L74
+  - legacy:6_Security/README.md#L62
+  - legacy:devopstools_final.md#L535
+  - legacy:devopstools_final.md#L930
+  needs_review: true
+- id: carvel
+  name: Carvel
+  summary: Kubernetes tools suite.
+  official_url: https://carvel.dev
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a composable set of small, focused tools (ytt, kapp, imgpkg) for packaging and deploying.
+  avoid_when:
+  - Helm or Kustomize already covers your workflow end-to-end.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L75
+  - legacy:devopstools_final.md#L536
+  needs_review: true
+- id: carvel-ytt
+  name: Carvel ytt
+  summary: YAML templating tool for Kubernetes configurations.
+  official_url: https://carvel.dev/ytt
+  repository_url: https://github.com/carvel-dev/ytt
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a data-aware YAML templating approach with overlays and validation.
+  avoid_when:
+  - Helm templates or Kustomize patches are already sufficient for your complexity level.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L76
+  - legacy:devopstools_final.md#L537
+  needs_review: true
+- id: ceph
+  name: Ceph
+  summary: Distributed storage system for object, block, and file storage.
+  official_url: https://ceph.io/en
+  repository_url: https://github.com/ceph/ceph
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Storage
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need battle-tested, unified distributed storage at scale with multi-protocol support.
+  avoid_when:
+  - Your team lacks the expertise to manage Ceph's operational complexity or cloud-native storage suffices.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L171
+  - legacy:devopstools_final.md#L675
+  needs_review: true
+- id: cert-manager
+  name: cert-manager
+  summary: X.509 certificate management for Kubernetes.
+  official_url: https://cert-manager.io
+  repository_url: https://github.com/cert-manager/cert-manager
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need automated TLS certificate issuance and renewal (Let's Encrypt, Vault, etc.).
+  avoid_when:
+  - Your ingress controller or service mesh already handles certificate lifecycle.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L77
+  - legacy:devopstools_final.md#L538
+  needs_review: true
+- id: chisel-operator
+  name: Chisel Operator
+  summary: Operator for managing Chisel tunnels in Kubernetes.
+  official_url: https://chisel.fyralabs.com
+  repository_url: https://github.com/FyraLabs/chisel-operator
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need to expose Kubernetes services through HTTP tunnels without public IPs.
+  avoid_when:
+  - You have proper ingress, VPN, or cloud load balancers available.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L78
+  - legacy:devopstools_final.md#L539
+  needs_review: true
+- id: cilium
+  name: Cilium
+  summary: EBPF-based networking, observability, and security for Kubernetes.
+  official_url: https://cilium.io
+  repository_url: https://github.com/cilium/cilium
+  categories:
+  - kubernetes-networking-storage-addons
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - devsecops-engineer
+  - kubernetes-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - deploy
+  - operate
+  - secure
+  use_when:
+  - You need high-performance networking, network policies, and observability using eBPF.
+  - You need high-performance, identity-aware network policies with L7 visibility.
+  avoid_when:
+  - Your kernel doesn't support eBPF or a simpler CNI (Calico/Flannel) meets your needs.
+  - Your kernel doesn't support eBPF or you need a simpler CNI.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L79
+  - legacy:6_Security/README.md#L64
+  - legacy:devopstools_final.md#L542
+  - legacy:devopstools_final.md#L932
+  needs_review: true
+- id: cloudflare-kubernetes-gateway
+  name: Cloudflare Kubernetes Gateway
+  summary: Cloudflare gateway for Kubernetes clusters.
+  repository_url: https://github.com/pl4nty/cloudflare-kubernetes-gateway
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to expose Kubernetes services through Cloudflare Tunnels using the Gateway API.
+  avoid_when:
+  - You don't use Cloudflare or need a vendor-neutral ingress solution.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L80
+  - legacy:devopstools_final.md#L543
+  needs_review: true
+- id: cloudnativepg
+  name: CloudNativePG
+  summary: Kubernetes operator for managing PostgreSQL clusters with high availability, backups, and day-2
+    operations.
+  official_url: https://cloudnative-pg.io
+  repository_url: https://github.com/cloudnative-pg/cloudnative-pg
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L541
+  needs_review: true
+- id: cluster-bare-autoscaler
+  name: Cluster Bare Autoscaler
+  summary: Bare-metal Kubernetes autoscaler that powers nodes on or off based on cluster demand while
+    safely cordoning and draining them.
+  repository_url: https://github.com/docent-net/cluster-bare-autoscaler
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L540
+  needs_review: true
+- id: compute-gardener
+  name: Compute Gardener
+  summary: Carbon-aware Kubernetes scheduler for sustainable computing.
+  official_url: https://www.compute-gardener.com
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to schedule workloads based on grid carbon intensity for sustainability goals.
+  avoid_when:
+  - Latency-sensitive workloads can't tolerate scheduling delays or you lack carbon intensity data.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L81
+  - legacy:devopstools_final.md#L544
+  needs_review: true
+- id: coredns
+  name: CoreDNS
+  summary: Flexible, plugin-based DNS server used as the default cluster DNS in Kubernetes.
+  official_url: https://coredns.io
+  repository_url: https://github.com/coredns/coredns
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L545
+  needs_review: true
+- id: cronjob-guardian
+  name: CronJob Guardian
+  summary: Kubernetes operator for monitoring CronJobs with SLA tracking, dead-man's switch detection,
+    intelligent alerting, and a built-in dashboard.
+  official_url: https://illeniumstudios.github.io/cronjob-guardian
+  repository_url: https://github.com/iLLeniumStudios/cronjob-guardian
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L547
+  needs_review: true
+- id: crossplane-provider-upjet
+  name: Crossplane Provider Upjet
+  summary: Build Crossplane providers from Terraform.
+  repository_url: https://github.com/upbound/upjet
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to reuse existing Terraform providers as Crossplane managed resources.
+  avoid_when:
+  - A native Crossplane provider already exists for your target service.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L82
+  - legacy:devopstools_final.md#L546
+  needs_review: true
+- id: crossview
+  name: crossview
+  summary: Standard UI dashboard for Crossplane resources.
+  repository_url: https://github.com/crossplane-contrib/crossview
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L550
+  needs_review: true
+- id: dapr
+  name: Dapr
+  summary: Distributed application runtime for microservices.
+  official_url: https://dapr.io
+  repository_url: https://github.com/dapr/dapr
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want portable building blocks (pub/sub, state, secrets) across microservices without vendor lock-in.
+  avoid_when:
+  - You only have a few services and the sidecar overhead isn't justified.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L83
+  - legacy:devopstools_final.md#L548
+  needs_review: true
+- id: descheduler
+  name: Descheduler
+  summary: Rebalance pods in Kubernetes clusters.
+  repository_url: https://github.com/kubernetes-sigs/descheduler
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - Pods become unevenly distributed after node additions, taints, or affinity changes.
+  avoid_when:
+  - Workloads are stateful or disruption-sensitive and can't tolerate evictions.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L84
+  - legacy:devopstools_final.md#L549
+  needs_review: true
+- id: dotnet-operator-sdk
+  name: dotnet-operator-sdk
+  summary: Build Kubernetes operators/controllers using .NET.
+  official_url: https://dotnet.github.io/dotnet-operator-sdk
+  repository_url: https://github.com/dotnet/dotnet-operator-sdk
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - Your team's expertise is in C#/.NET and you want to build operators in a familiar language.
+  avoid_when:
+  - Go-based frameworks (kubebuilder/operator-sdk) offer more community support and examples.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L85
+  - legacy:devopstools_final.md#L551
+  needs_review: true
+- id: easymile-postgresql-operator
+  name: EasyMile PostgreSQL Operator
+  summary: Kubernetes operator for managing PostgreSQL instances.
+  official_url: https://easymile.github.io/postgresql-operator
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a lightweight PostgreSQL operator for simple setups.
+  avoid_when:
+  - You need production-grade HA—use CloudNativePG or Zalando's postgres-operator instead.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L86
+  - legacy:devopstools_final.md#L552
+  needs_review: true
+- id: envoy-gateway
+  name: Envoy Gateway
+  summary: Gateway API implementation for Envoy with traffic management, security, and observability features.
+  official_url: https://gateway.envoyproxy.io
+  repository_url: https://github.com/envoyproxy/gateway
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L555
+  needs_review: true
+- id: external-secrets-operator
+  name: External Secrets Operator
+  summary: Sync external secrets into Kubernetes.
+  official_url: https://external-secrets.io
+  repository_url: https://github.com/external-secrets/external-secrets
+  categories:
+  - kubernetes-networking-storage-addons
+  - iam-secrets-certificates
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  - Secret Management
+  roles:
+  - cloud-engineer
+  - platform-engineer
+  - site-reliability-engineer
+  - devsecops-engineer
+  - kubernetes-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - secure
+  use_when:
+  - Sync secrets from any external backend into K8s Secrets declaratively.
+  - You need to sync secrets from Vault, AWS Secrets Manager, Azure Key Vault, etc. into Kubernetes.
+  avoid_when:
+  - Sealed Secrets or native CSI secret drivers already meet your needs.
+  - Your apps can fetch secrets directly from Vault/cloud APIs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L87
+  - legacy:6_Security/README.md#L90
+  - legacy:devopstools_final.md#L553
+  - legacy:devopstools_final.md#L977
+  needs_review: true
+- id: externaldns
+  name: ExternalDNS
+  summary: Kubernetes add-on that configures public DNS servers with information about exposed Kubernetes
+    services.
+  official_url: https://kubernetes-sigs.github.io/external-dns/latest
+  repository_url: https://github.com/kubernetes-sigs/external-dns
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L554
+  needs_review: true
+- id: falco
+  name: Falco
+  summary: Runtime security for cloud-native environments.
+  official_url: https://falco.org
+  repository_url: https://github.com/falcosecurity/falco
+  categories:
+  - kubernetes-networking-storage-addons
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - devsecops-engineer
+  - kubernetes-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - deploy
+  - operate
+  - secure
+  use_when:
+  - Real-time runtime threat detection in Kubernetes.
+  - You need real-time detection of anomalous container behavior (shell spawns, privilege escalation).
+  avoid_when:
+  - You only need pre-deployment scanning (use Trivy) or can't accept the kernel module/eBPF overhead.
+  - You only need pre-deployment scanning (use Trivy/Kubescape instead).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L88
+  - legacy:6_Security/README.md#L25
+  - legacy:devopstools_final.md#L556
+  - legacy:devopstools_final.md#L861
+  needs_review: true
+- id: flannel
+  name: flannel
+  summary: Simple Layer 3 network fabric (CNI) for Kubernetes.
+  repository_url: https://github.com/flannel-io/flannel
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L557
+  needs_review: true
+- id: git-sync
+  name: git-sync
+  summary: Sidecar app that clones a Git repository and keeps it synchronized with upstream.
+  repository_url: https://github.com/kubernetes/git-sync
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L558
+  needs_review: true
+- id: hami
+  name: HAMi
+  summary: Heterogeneous AI computing virtualization middleware.
+  official_url: https://project-hami.io
+  repository_url: https://github.com/Project-HAMi/HAMi
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need GPU sharing and virtualization across multiple AI workloads on Kubernetes.
+  avoid_when:
+  - You have dedicated GPU nodes per workload or use cloud-managed GPU scheduling.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L89
+  - legacy:devopstools_final.md#L559
+  needs_review: true
+- id: haproxy
+  name: HAProxy
+  summary: Reliable, high-performance TCP/HTTP load balancer.
+  official_url: https://www.haproxy.org
+  repository_url: https://github.com/haproxy/haproxy
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a battle-tested L4/L7 load balancer with fine-grained traffic control.
+  avoid_when:
+  - Cloud-native load balancers or an ingress controller (NGINX/Envoy) already handle your traffic.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L90
+  - legacy:devopstools_final.md#L560
+  needs_review: true
+- id: haproxy-data-plane-api
+  name: HAProxy Data Plane API
+  summary: API for managing HAProxy configuration, runtime operations, stats, and logs.
+  official_url: https://www.haproxy.com/documentation/dataplaneapi
+  repository_url: https://github.com/haproxytech/dataplaneapi
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L561
+  needs_review: true
+- id: haproxy-kubernetes-ingress-controller
+  name: HAProxy Kubernetes Ingress Controller
+  summary: HAProxy-powered Kubernetes ingress controller for high-performance Layer 7 traffic management.
+  official_url: https://www.haproxy.com/documentation/kubernetes-ingress
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L573
+  needs_review: true
+- id: hashicorp-consul
+  name: HashiCorp Consul
+  summary: Service networking and discovery platform.
+  official_url: https://www.consul.io
+  repository_url: https://github.com/hashicorp/consul
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Service Mesh
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - Service discovery and mesh across VMs and Kubernetes (multi-runtime).
+  avoid_when:
+  - You're Kubernetes-only and want a lighter mesh (use Istio or Linkerd).
+  deployment_models: []
+  license_model: source-available
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L120
+  - legacy:devopstools_final.md#L1015
+  needs_review: true
+- id: headlamp-plugins
+  name: Headlamp Plugins
+  summary: Official plugin collection for the Headlamp Kubernetes UI.
+  repository_url: https://github.com/headlamp-k8s/plugins
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L562
+  needs_review: true
+- id: helm
+  name: Helm
+  summary: Kubernetes package manager.
+  official_url: https://helm.sh
+  repository_url: https://github.com/helm/helm
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need templated, versioned, reusable Kubernetes application packages.
+  avoid_when:
+  - Simple apps with static manifests work fine with Kustomize or plain kubectl.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L91
+  - legacy:devopstools_final.md#L563
+  needs_review: true
+- id: helm-chart-generator
+  name: Helm Chart Generator
+  summary: Tool for generating Helm charts from templates.
+  repository_url: https://github.com/ravaga/helm-chart-generator
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to scaffold new Helm charts quickly with consistent structure.
+  avoid_when:
+  - '`helm create` or an existing chart boilerplate covers your needs.'
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L92
+  - legacy:devopstools_final.md#L564
+  needs_review: true
+- id: helm-chart-testing
+  name: helm-chart-testing
+  summary: Tooling for testing Helm charts.
+  official_url: https://helm.sh/docs/topics/chart_tests
+  repository_url: https://github.com/helm/chart-testing
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You maintain Helm chart repositories and need CI-based lint and install testing.
+  avoid_when:
+  - You only consume upstream charts without modification.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L95
+  - legacy:devopstools_final.md#L567
+  needs_review: true
+- id: helm-diff
+  name: helm-diff
+  summary: Helm plugin to show differences between releases.
+  repository_url: https://github.com/databus23/helm-diff
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to preview changes before `helm upgrade` to catch unexpected diffs.
+  avoid_when:
+  - You use GitOps tools (ArgoCD/Flux) that already show diffs before sync.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L96
+  - legacy:devopstools_final.md#L568
+  needs_review: true
+- id: helm-docs
+  name: helm-docs
+  summary: Generate documentation for Helm charts.
+  repository_url: https://github.com/norwoodj/helm-docs
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want auto-generated README docs from `values.yaml` comments.
+  avoid_when:
+  - Your charts are internal with minimal consumers and hand-written docs suffice.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L97
+  - legacy:devopstools_final.md#L569
+  needs_review: true
+- id: helm-mapkubeapis
+  name: helm-mapkubeapis
+  summary: Helm plugin for API version migration.
+  repository_url: https://github.com/helm/helm-mapkubeapis
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - Upgrading Kubernetes and Helm releases reference deprecated/removed API versions.
+  avoid_when:
+  - Your charts already target current API versions.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L98
+  - legacy:devopstools_final.md#L570
+  needs_review: true
+- id: helm-secrets
+  name: helm-secrets
+  summary: Manage secrets with Helm charts.
+  repository_url: https://github.com/jkroepke/helm-secrets
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need to encrypt secrets in Helm values files using SOPS/Vault for GitOps.
+  avoid_when:
+  - You use External Secrets Operator or Sealed Secrets for secret management.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L99
+  - legacy:devopstools_final.md#L571
+  needs_review: true
+- id: helm-unittest
+  name: helm-unittest
+  summary: Unit test framework for Helm charts.
+  repository_url: https://github.com/helm-unittest/helm-unittest
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to test rendered Helm templates without deploying to a cluster.
+  avoid_when:
+  - Simple `helm template` + diff checks are sufficient for your CI pipeline.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L100
+  - legacy:devopstools_final.md#L572
+  needs_review: true
+- id: helmfile
+  name: Helmfile
+  summary: Declarative Helm deployments.
+  official_url: https://helmfile.readthedocs.io/en/latest
+  repository_url: https://github.com/helmfile/helmfile
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You manage multiple Helm releases across environments and want declarative, diff-able state.
+  avoid_when:
+  - You deploy a single chart or already use ArgoCD/Flux for Helm release management.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L93
+  - legacy:devopstools_final.md#L565
+  needs_review: true
+- id: helmper
+  name: Helmper
+  summary: Helm helper for mirroring charts and images to OCI registries.
+  official_url: https://christoffernissen.github.io/helmper
+  repository_url: https://github.com/christoffernissen/helmper
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need to mirror Helm charts and their images into air-gapped or private registries.
+  avoid_when:
+  - You pull charts directly from public registries without mirroring requirements.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L94
+  - legacy:devopstools_final.md#L566
+  needs_review: true
+- id: holos
+  name: Holos
+  summary: Platform for managing Kubernetes configuration holistically.
+  official_url: https://holos.run
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to unify Helm, Kustomize, and CUE-based configs into a single rendering pipeline.
+  avoid_when:
+  - You're committed to one configuration tool and don't need cross-tool orchestration.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L101
+  - legacy:devopstools_final.md#L574
+  needs_review: true
+- id: hwameistor
+  name: HwameiStor
+  summary: Cloud-native local storage system.
+  official_url: https://hwameistor.io
+  repository_url: https://github.com/hwameistor/hwameistor
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need high-performance local persistent storage with HA and volume migration on bare metal.
+  avoid_when:
+  - Cloud-provided block storage (EBS/PD) or distributed storage (Ceph/Longhorn) is available.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L102
+  - legacy:devopstools_final.md#L576
+  needs_review: true
+- id: hybernate
+  name: Hybernate
+  summary: Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce resource consumption
+    during off-peak hours.
+  official_url: https://okedeji.io/hybernate
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L575
+  needs_review: true
+- id: istio
+  name: Istio
+  summary: Service mesh for managing microservices traffic.
+  official_url: https://istio.io
+  repository_url: https://github.com/istio/istio
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Service Mesh
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need advanced traffic management, mTLS, and observability at scale.
+  avoid_when:
+  - For small clusters where the complexity and resource overhead aren't justified.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:6_Security/README.md#L121
+  - legacy:devopstools_final.md#L1016
+  needs_review: true
+- id: k8s-csi-s3
+  name: k8s-csi-s3
+  summary: CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
+  repository_url: https://github.com/yandex-cloud/k8s-csi-s3
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L578
+  needs_review: true
+- id: k8s-sidecar
+  name: k8s-sidecar
+  summary: Kubernetes sidecar container that watches ConfigMaps/Secrets and syncs files.
+  repository_url: https://github.com/kiwigrid/k8s-sidecar
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need to dynamically reload config files in pods (e.g., Grafana dashboards from ConfigMaps).
+  avoid_when:
+  - Reloader's rolling-restart approach or native config reloading is simpler.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L103
+  - legacy:devopstools_final.md#L577
+  needs_review: true
+- id: kagent
+  name: Kagent
+  summary: AI-powered Kubernetes agent for cluster management.
+  official_url: https://kagent.dev
+  repository_url: https://github.com/kagent-dev/kagent
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want AI-assisted cluster operations and troubleshooting.
+  avoid_when:
+  - You need deterministic, auditable automation rather than AI-driven suggestions.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L104
+  - legacy:devopstools_final.md#L579
+  needs_review: true
+- id: kamaji
+  name: Kamaji
+  summary: Kubernetes control plane manager (multi-tenancy/security).
+  official_url: https://kamaji.clastix.io
+  repository_url: https://github.com/clastix/kamaji
+  categories:
+  - kubernetes-networking-storage-addons
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - devsecops-engineer
+  - kubernetes-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - deploy
+  - operate
+  - secure
+  use_when:
+  - You need lightweight, shared-infrastructure tenant control planes.
+  - You need to run many lightweight tenant control planes on a single management cluster.
+  avoid_when:
+  - Cluster API or vcluster already satisfies your multi-tenancy model.
+  - You need full cluster isolation or use a managed K8s service.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L105
+  - legacy:6_Security/README.md#L72
+  - legacy:devopstools_final.md#L580
+  - legacy:devopstools_final.md#L943
+  needs_review: true
+- id: karpenter
+  name: Karpenter
+  summary: Kubernetes node autoscaler.
+  official_url: https://karpenter.sh
+  repository_url: https://github.com/aws/karpenter-provider-aws
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need fast, flexible node provisioning with workload-aware instance selection (primarily AWS).
+  avoid_when:
+  - The standard Cluster Autoscaler works well enough or you're on a cloud without Karpenter support.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L106
+  - legacy:devopstools_final.md#L581
+  needs_review: true
+- id: kcl
+  name: KCL
+  summary: Constraint-based configuration and policy language for Kubernetes and cloud-native environments.
+  official_url: https://www.kcl-lang.io
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a purpose-built language for configuration validation, generation, and policy with strong
+    typing.
+  avoid_when:
+  - Your team is already productive with CUE, Jsonnet, or Helm templates.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L107
+  - legacy:devopstools_final.md#L582
+  needs_review: true
+- id: keda
+  name: KEDA
+  summary: Kubernetes-based Event Driven Autoscaler.
+  official_url: https://keda.sh
+  repository_url: https://github.com/kedacore/keda
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need to scale workloads based on external event sources (queues, streams, custom metrics).
+  avoid_when:
+  - Standard HPA with CPU/memory metrics is sufficient.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L108
+  - legacy:devopstools_final.md#L583
+  needs_review: true
+- id: keda-gpu-scaler
+  name: keda-gpu-scaler
+  summary: GPU-aware autoscaling extension for KEDA workloads.
+  official_url: https://keda-gpu-scaler.readthedocs.io/en/latest
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L584
+  needs_review: true
+- id: kgateway
+  name: KGateway
+  summary: Kubernetes gateway networking.
+  official_url: https://kgateway.dev
+  repository_url: https://github.com/kgateway-dev/kgateway
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want an Envoy-based Gateway API implementation with advanced routing.
+  avoid_when:
+  - Your existing ingress controller already supports Gateway API.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L109
+  - legacy:devopstools_final.md#L585
+  needs_review: true
+- id: kong
+  name: Kong
+  summary: API gateway (Kong Gateway) with enterprise and SaaS offerings (Konnect).
+  official_url: https://konghq.com/kong
+  repository_url: https://github.com/Kong/kong
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a feature-rich API gateway with plugin ecosystem, rate limiting, and auth.
+  avoid_when:
+  - A simpler ingress controller (NGINX/Traefik) or service mesh handles your API traffic needs.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L110
+  - legacy:devopstools_final.md#L586
+  needs_review: true
+- id: koreo
+  name: Koreo
+  summary: Kubernetes resource orchestration framework.
+  official_url: https://github.com/koreo-dev
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need declarative workflows to coordinate Kubernetes resources and external systems.
+  avoid_when:
+  - Existing operators or Crossplane compositions cover your orchestration needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L111
+  - legacy:devopstools_final.md#L587
+  needs_review: true
+- id: krateo-core-provider
+  name: Krateo Core Provider
+  summary: Krateo component that manages Helm charts as Kubernetes-native resources and generates CRDs
+    dynamically from chart schemas.
+  repository_url: https://github.com/krateoplatformops/core-provider
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L589
+  needs_review: true
+- id: krateo-oasgen-provider
+  name: Krateo OASGen Provider
+  summary: OpenAPI generator for Kubernetes.
+  official_url: https://docs.krateo.io/key-concepts/kog/oasgen-provider
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to auto-generate Kubernetes CRDs from OpenAPI specs for the Krateo platform.
+  avoid_when:
+  - You don't use Krateo or prefer hand-crafted CRD definitions.
+  deployment_models: []
+  license_model: documentation
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L112
+  - legacy:devopstools_final.md#L588
+  needs_review: true
+- id: kratix
+  name: Kratix
+  summary: Framework for platform engineering on Kubernetes.
+  official_url: https://www.kratix.io
+  repository_url: https://github.com/syntasso/kratix
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You're building an internal platform and need to compose "as-a-service" APIs from Kubernetes primitives.
+  avoid_when:
+  - You have simple infrastructure needs that don't warrant a platform abstraction layer.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L113
+  - legacy:devopstools_final.md#L590
+  needs_review: true
+- id: kro
+  name: kro
+  summary: Kube Resource Orchestrator for defining higher-level Kubernetes abstractions and composing
+    resources declaratively.
+  official_url: https://kro.run
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L592
+  needs_review: true
+- id: kroc
+  name: kroc
+  summary: Kubernetes Reactive Object Creator for event-driven resource automation.
+  repository_url: https://github.com/pawelcit/kroc
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L591
+  needs_review: true
+- id: kube-ovn
+  name: Kube-OVN
+  summary: CloudNative Network for KubeVirt and Multi-Tenancy.
+  official_url: https://www.kube-ovn.io
+  repository_url: https://github.com/kubeovn/kube-ovn
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need advanced networking features like subnet isolation, VPC, QoS, and traffic mirroring.
+  avoid_when:
+  - A simpler CNI (Calico/Flannel/Cilium) provides sufficient network policy and performance.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L117
+  - legacy:devopstools_final.md#L596
+  needs_review: true
+- id: kubently
+  name: Kubently
+  summary: Kubernetes operations and management platform.
+  official_url: https://kubently.io
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a managed operations layer for Kubernetes clusters.
+  avoid_when:
+  - You already have mature tooling (ArgoCD + monitoring + alerting) or prefer open-source-only stacks.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L114
+  - legacy:devopstools_final.md#L593
+  needs_review: true
+- id: kubernetes-autoscaler
+  name: Kubernetes Autoscaler
+  summary: Autoscaling components (HPA/VPA/Cluster Autoscaler).
+  repository_url: https://github.com/kubernetes/autoscaler
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need standard pod or node autoscaling based on resource utilization.
+  avoid_when:
+  - Karpenter (for nodes) or KEDA (for event-driven scaling) better fits your workload patterns.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L115
+  - legacy:devopstools_final.md#L594
+  needs_review: true
+- id: kubevela
+  name: KubeVela
+  summary: Application delivery platform on Kubernetes.
+  official_url: https://kubevela.io
+  repository_url: https://github.com/kubevela/kubevela
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want an OAM-based abstraction for application delivery across hybrid/multi-cloud.
+  avoid_when:
+  - Helm + ArgoCD or a simpler deployment model meets your needs without extra abstraction.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L116
+  - legacy:devopstools_final.md#L595
+  needs_review: true
+- id: kuttl
+  name: KUTTL
+  summary: KUbernetes Test TooL for end-to-end testing of Kubernetes operators and controllers using declarative
+    YAML test cases.
+  official_url: https://kuttl.dev
+  repository_url: https://github.com/kudobuilder/kuttl
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L598
+  needs_review: true
+- id: kyverno
+  name: Kyverno
+  summary: Kubernetes policy engine.
+  official_url: https://kyverno.io
+  repository_url: https://github.com/kyverno/kyverno
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need Kubernetes-native policy enforcement without learning Rego (validate, mutate, generate).
+  avoid_when:
+  - You already have OPA Gatekeeper deployed and your team knows Rego.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L118
+  - legacy:devopstools_final.md#L599
+  needs_review: true
+- id: linkerd
+  name: Linkerd
+  summary: Lightweight service mesh for Kubernetes.
+  official_url: https://linkerd.io
+  repository_url: https://github.com/linkerd/linkerd2
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  - Service Mesh
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a lightweight service mesh with mTLS, observability, and reliability features.
+  - You want a minimal, Rust-based mesh with automatic mTLS and low operational overhead.
+  avoid_when:
+  - You don't need mesh-level traffic management or Istio's richer feature set is required.
+  - You need advanced traffic routing, multi-cluster gateways, or Envoy ecosystem compatibility (use Istio).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L119
+  - legacy:6_Security/README.md#L122
+  - legacy:devopstools_final.md#L1017
+  - legacy:devopstools_final.md#L600
+  needs_review: true
+- id: linstor
+  name: LINSTOR
+  summary: Distributed storage management (DRBD-based) with community and enterprise support.
+  official_url: https://linbit.com/linstor
+  repository_url: https://github.com/LINBIT/linstor-server
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Storage
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need synchronous replication with DRBD for low-latency block storage on bare metal.
+  avoid_when:
+  - Longhorn or Ceph (via Rook) provides sufficient performance with simpler operations.
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L172
+  - legacy:devopstools_final.md#L676
+  needs_review: true
+- id: litmuschaos
+  name: LitmusChaos
+  summary: Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with a hub of pre-built
+    experiments and GitOps-friendly CRD workflows. ❌ **Avoid when** your environment is non-Kubernetes
+    or you find ChaosHub's experiment catalog doesn't cover your stack.
+  official_url: https://litmuschaos.io
+  repository_url: https://github.com/litmuschaos/litmus
+  categories:
+  - kubernetes-networking-storage-addons
+  - chaos-performance-engineering
+  subcategories:
+  - Application & Network-Level Tools
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - test
+  - deploy
+  - operate
+  use_when:
+  - You want to test system resilience with Kubernetes-native chaos experiments.
+  avoid_when:
+  - You haven't established basic monitoring and incident response—chaos without observability is just
+    outages.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L120
+  - legacy:8_Chaos-Engineering/README.md#L26
+  - legacy:devopstools_final.md#L1172
+  - legacy:devopstools_final.md#L601
+  needs_review: true
+- id: loft-vind
+  name: Loft Vind
+  summary: Loft Labs tool (see repository for capabilities and usage).
+  repository_url: https://github.com/loft-sh/vind
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - The specific capabilities match your needs (consult repo docs).
+  avoid_when:
+  - More established Loft tools (vcluster, DevPod) cover your use case.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L121
+  - legacy:devopstools_final.md#L602
+  needs_review: true
+- id: longhorn
+  name: Longhorn
+  summary: Cloud native distributed block storage for Kubernetes.
+  official_url: https://longhorn.io
+  repository_url: https://github.com/longhorn/longhorn
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Storage
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want easy-to-deploy distributed block storage with built-in backup and DR.
+  avoid_when:
+  - You need high-IOPS workloads or enterprise-scale storage (consider Ceph/Portworx).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L173
+  - legacy:devopstools_final.md#L677
+  needs_review: true
+- id: luxury-yacht
+  name: Luxury Yacht
+  summary: Desktop application for Kubernetes management.
+  official_url: https://luxury-yacht.app
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L603
+  needs_review: true
+- id: m9sweeper
+  name: m9sweeper
+  summary: Kubernetes security and compliance tool.
+  official_url: https://m9sweeper.io
+  repository_url: https://github.com/m9sweeper/m9sweeper
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a centralized dashboard for image scanning, policy enforcement, and compliance reporting.
+  avoid_when:
+  - You already run Trivy + Kubescape and don't need another aggregation layer.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L122
+  - legacy:devopstools_final.md#L604
+  needs_review: true
+- id: mariadb-operator
+  name: MariaDB Operator
+  summary: Kubernetes operator for managing MariaDB lifecycle, replication, Galera clustering, backups,
+    and upgrades.
+  repository_url: https://github.com/mariadb-operator/mariadb-operator
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L605
+  needs_review: true
+- id: metallb
+  name: MetalLB
+  summary: Load balancer implementation for bare metal.
+  official_url: https://metallb.universe.tf
+  repository_url: https://github.com/metallb/metallb
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You run Kubernetes on bare metal and need LoadBalancer-type services.
+  avoid_when:
+  - You're on a cloud provider with native load balancer integration.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L123
+  - legacy:devopstools_final.md#L606
+  needs_review: true
+- id: metrics-server
+  name: Metrics Server
+  summary: Resource usage metrics for Kubernetes.
+  repository_url: https://github.com/kubernetes-sigs/metrics-server
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need `kubectl top` and HPA/VPA to function—it's a baseline requirement.
+  avoid_when:
+  - Your managed Kubernetes already includes it or you rely solely on Prometheus for metrics.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L124
+  - legacy:devopstools_final.md#L607
+  needs_review: true
+- id: moco
+  name: MOCO
+  summary: MySQL Operator for Kubernetes by Cybozu.
+  official_url: https://cybozu-go.github.io/moco
+  repository_url: https://github.com/cybozu-go/moco
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need automated MySQL InnoDB Cluster management on Kubernetes with GTID-based replication.
+  avoid_when:
+  - A managed MySQL service (RDS/Cloud SQL) reduces your operational burden.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L125
+  - legacy:devopstools_final.md#L609
+  needs_review: true
+- id: multus-cni
+  name: Multus CNI
+  summary: CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods.
+  repository_url: https://github.com/k8snetworkplumbingwg/multus-cni
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L608
+  needs_review: true
+- id: mysql-operator-for-kubernetes
+  name: MySQL Operator for Kubernetes
+  summary: Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups,
+    and upgrades.
+  repository_url: https://github.com/mysql/mysql-operator
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L610
+  needs_review: true
+- id: nelm
+  name: Nelm
+  summary: Helm-compatible Kubernetes deployment tool and Helm 4 alternative with plan previews, improved
+    CRD handling, and secret workflows.
+  repository_url: https://github.com/werf/nelm
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L611
+  needs_review: true
+- id: nginx-gateway-fabric
+  name: nginx-gateway-fabric
+  summary: NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
+  repository_url: https://github.com/nginx/nginx-gateway-fabric
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L612
+  needs_review: true
+- id: nginx-ingress-controller
+  name: NGINX Ingress Controller
+  summary: F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS traffic to cluster
+    services.
+  official_url: https://docs.nginx.com/nginx-ingress-controller
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L613
+  needs_review: true
+- id: nocalhost
+  name: Nocalhost
+  summary: Cloud-native app development tool.
+  official_url: https://nocalhost.dev
+  repository_url: https://github.com/nocalhost/nocalhost
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to develop and debug applications directly in a Kubernetes cluster with hot-reload.
+  avoid_when:
+  - Telepresence or local Docker Compose development is sufficient for your workflow.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L126
+  - legacy:devopstools_final.md#L614
+  needs_review: true
+- id: openkruise
+  name: OpenKruise
+  summary: Enhanced workloads for Kubernetes.
+  official_url: https://openkruise.io
+  repository_url: https://github.com/openkruise/kruise
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need advanced deployment strategies (in-place updates, canary, sidecar management) beyond native
+    Deployments.
+  avoid_when:
+  - Standard Deployments/StatefulSets with a service mesh handle your rollout needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L127
+  - legacy:devopstools_final.md#L616
+  needs_review: true
+- id: openkruise-agents
+  name: OpenKruise Agents
+  summary: Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
+  repository_url: https://github.com/openkruise/agents
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L617
+  needs_review: true
+- id: operatorhub
+  name: OperatorHub
+  summary: Community catalog for discovering, installing, and publishing Kubernetes Operators.
+  official_url: https://operatorhub.io
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L615
+  needs_review: true
+- id: ovn-kubernetes
+  name: OVN-Kubernetes
+  summary: Networking for Kubernetes using OVN.
+  official_url: https://ovn-kubernetes.io
+  repository_url: https://github.com/ovn-org/ovn-kubernetes
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need enterprise-grade SDN with OVS/OVN features (network virtualization, multi-tenancy).
+  avoid_when:
+  - Simpler CNI plugins provide adequate performance and policy enforcement.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L128
+  - legacy:devopstools_final.md#L618
+  needs_review: true
+- id: portworx
+  name: Portworx
+  summary: Kubernetes data services platform.
+  official_url: https://portworx.com
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Storage
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need enterprise-grade persistent storage with advanced features (encryption, migration, disaster
+    recovery).
+  avoid_when:
+  - Open-source alternatives (Longhorn/Rook-Ceph) meet your requirements and budget is a concern.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L174
+  - legacy:devopstools_final.md#L678
+  needs_review: true
+- id: predictive-horizontal-pod-autoscaler
+  name: Predictive Horizontal Pod Autoscaler
+  summary: Predictive scaling for Kubernetes workloads.
+  official_url: https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest
+  repository_url: https://github.com/jthomperoo/predictive-horizontal-pod-autoscaler
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You have predictable traffic patterns and want to pre-scale before load spikes.
+  avoid_when:
+  - Your traffic is unpredictable or reactive HPA/KEDA scaling is fast enough.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L129
+  - legacy:devopstools_final.md#L619
+  needs_review: true
+- id: project-contour
+  name: Project Contour
+  summary: Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reconfiguration,
+    and secure multi-team delegation.
+  official_url: https://projectcontour.io
+  repository_url: https://github.com/projectcontour/contour
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L620
+  needs_review: true
+- id: project-sveltos
+  name: Project Sveltos
+  summary: Kubernetes add-on controller for deploying and managing Helm charts, Kustomize, and raw YAML
+    across multi-cluster fleets from a management cluster.
+  official_url: https://projectsveltos.io/latest
+  repository_url: https://github.com/projectsveltos/addon-controller
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L621
+  needs_review: true
+- id: pv-migrate
+  name: pv-migrate
+  summary: CLI tool for migrating data between Kubernetes Persistent Volumes.
+  repository_url: https://github.com/utkuozdemir/pv-migrate
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need to move PV data across storage classes, namespaces, or clusters.
+  avoid_when:
+  - Your storage backend supports native volume cloning or VolSync handles replication.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L130
+  - legacy:devopstools_final.md#L623
+  needs_review: true
+- id: redis-operator
+  name: Redis Operator
+  summary: Kubernetes operator for provisioning and managing Redis clusters.
+  official_url: https://redis-operator.opstree.dev
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L622
+  needs_review: true
+- id: reloader
+  name: Reloader
+  summary: Kubernetes controller that watches ConfigMap/Secret changes and triggers rolling upgrades.
+  official_url: https://docs.stakater.com/reloader/latest
+  repository_url: https://github.com/stakater/Reloader
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - Your apps don't support hot-reloading config and need pod restarts on ConfigMap/Secret changes.
+  avoid_when:
+  - Your apps watch config files natively or you use k8s-sidecar for file syncing.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L131
+  - legacy:devopstools_final.md#L624
+  needs_review: true
+- id: restart-operator
+  name: restart-operator
+  summary: Kubernetes operator for scheduling recurring restarts of Deployments, StatefulSets, and DaemonSets
+    with cron expressions.
+  repository_url: https://github.com/archsyscall/restart-operator
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L625
+  needs_review: true
+- id: rook
+  name: Rook
+  summary: Storage orchestrator for Kubernetes.
+  official_url: https://rook.io
+  repository_url: https://github.com/rook/rook
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Storage
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want Kubernetes-native orchestration of Ceph (or NFS) with operator-managed lifecycle.
+  avoid_when:
+  - You don't need distributed storage or a managed storage service (EBS/PD) is simpler.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L175
+  - legacy:devopstools_final.md#L679
+  needs_review: true
+- id: sealed-secrets
+  name: Sealed Secrets
+  summary: Encrypt Kubernetes secrets for GitOps workflows.
+  repository_url: https://github.com/bitnami-labs/sealed-secrets
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to safely commit encrypted secrets to Git.
+  avoid_when:
+  - You use External Secrets Operator to sync from a central secret store or helm-secrets with SOPS.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L132
+  - legacy:devopstools_final.md#L626
+  needs_review: true
+- id: security-profiles-operator
+  name: security-profiles-operator
+  summary: Kubernetes operator for managing seccomp, SELinux, and AppArmor security profiles.
+  repository_url: https://github.com/kubernetes-sigs/security-profiles-operator
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L627
+  needs_review: true
+- id: spinkube
+  name: Spinkube
+  summary: WebAssembly on Kubernetes ecosystem.
+  official_url: https://github.com/spinkube
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to run WebAssembly workloads alongside containers on Kubernetes.
+  avoid_when:
+  - All your workloads are standard containers and you don't need Wasm's sandboxing or portability.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L133
+  - legacy:devopstools_final.md#L628
+  needs_review: true
+- id: strimzi
+  name: Strimzi
+  summary: Apache Kafka on Kubernetes operator.
+  official_url: https://strimzi.io
+  repository_url: https://github.com/strimzi/strimzi-kafka-operator
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need to run and manage Kafka clusters on Kubernetes with automated operations.
+  avoid_when:
+  - A managed Kafka service (Confluent Cloud/MSK/Event Hubs) better fits your operational model.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L134
+  - legacy:devopstools_final.md#L629
+  needs_review: true
+- id: swimmer
+  name: Swimmer
+  summary: User-friendly multi-cluster Kubernetes GUI client.
+  repository_url: https://github.com/teru01/swimmer
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L634
+  needs_review: true
+- id: system-upgrade-controller
+  name: System Upgrade Controller
+  summary: Automate Kubernetes upgrades.
+  repository_url: https://github.com/rancher/system-upgrade-controller
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You run k3s/RKE2 and want plan-based automated node upgrades.
+  avoid_when:
+  - You use managed Kubernetes with built-in upgrade mechanisms or need fine-grained control over the
+    upgrade process.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L135
+  - legacy:devopstools_final.md#L630
+  needs_review: true
+- id: talos
+  name: Talos
+  summary: Secure, immutable Kubernetes OS.
+  official_url: https://www.talos.dev
+  repository_url: https://github.com/siderolabs/talos
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a minimal, API-managed, immutable Linux OS purpose-built for Kubernetes.
+  avoid_when:
+  - You need SSH access, general-purpose OS tooling, or run non-Kubernetes workloads on the same nodes.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L136
+  - legacy:devopstools_final.md#L631
+  needs_review: true
+- id: telepresence
+  name: Telepresence
+  summary: Local dev against remote Kubernetes.
+  official_url: https://www.telepresence.io
+  repository_url: https://github.com/telepresenceio/telepresence
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want to develop/debug a service locally while connected to a remote cluster's network.
+  avoid_when:
+  - Your services run fine locally with Docker Compose or Nocalhost's in-cluster approach suits better.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L137
+  - legacy:devopstools_final.md#L632
+  needs_review: true
+- id: trivy
+  name: Trivy
+  summary: Vulnerability scanner for containers and Kubernetes.
+  official_url: https://aquasecurity.github.io/trivy
+  repository_url: https://github.com/aquasecurity/trivy
+  categories:
+  - kubernetes-networking-storage-addons
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - devsecops-engineer
+  - kubernetes-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - deploy
+  - operate
+  - secure
+  use_when:
+  - As a swiss-army-knife scanner covering CVEs, secrets, IaC, and SBOM in one tool.
+  - You need a comprehensive scanner for container images, IaC, SBOM, and Kubernetes misconfigurations.
+  avoid_when:
+  - You need deep SAST or DAST capabilities.
+  - You need runtime threat detection (use Falco) rather than pre-deployment scanning.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L138
+  - legacy:6_Security/README.md#L54
+  - legacy:devopstools_final.md#L633
+  - legacy:devopstools_final.md#L918
+  needs_review: true
+- id: truenas
+  name: TrueNAS
+  summary: Storage platform/OS for NAS and SAN with community and enterprise editions.
+  official_url: https://www.truenas.com
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Storage
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a feature-rich NAS/SAN platform with ZFS for home lab or enterprise file storage.
+  avoid_when:
+  - You need Kubernetes-native distributed block storage (use Longhorn/Rook instead).
+  deployment_models: []
+  license_model: open-core
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L176
+  - legacy:devopstools_final.md#L680
+  needs_review: true
+- id: vitess
+  name: Vitess
+  summary: Database clustering system for horizontal scaling of MySQL.
+  official_url: https://vitess.io
+  repository_url: https://github.com/vitessio/vitess
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need to horizontally shard MySQL for massive scale on Kubernetes.
+  avoid_when:
+  - A single MySQL instance or managed database service handles your throughput requirements.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L139
+  - legacy:devopstools_final.md#L635
+  needs_review: true
+- id: vpa
+  name: VPA
+  summary: Vertical Pod Autoscaler.
+  repository_url: https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want automated right-sizing of pod CPU/memory requests based on actual usage.
+  avoid_when:
+  - Your workloads have highly variable resource needs or you prefer manual tuning with metrics dashboards.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L140
+  - legacy:devopstools_final.md#L636
+  needs_review: true
+- id: wozz
+  name: Wozz
+  summary: Kubernetes management and operations tool.
+  official_url: https://wozz.io/index.html
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a simplified Kubernetes operations interface.
+  avoid_when:
+  - Established tools (K9s/Lens/ArgoCD) already cover your management and deployment workflows.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L141
+  - legacy:devopstools_final.md#L637
+  needs_review: true
+- id: yaml
+  name: YAML
+  summary: Data serialization format used in Kubernetes.
+  official_url: https://yaml.org
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - Writing Kubernetes manifests—it's the standard format.
+  avoid_when:
+  - Complexity demands a templating/programming layer (use Helm, CUE, KCL, or ytt on top).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L142
+  - legacy:devopstools_final.md#L638
+  needs_review: true
+- id: zeropod
+  name: zeropod
+  summary: Scale Kubernetes pods to zero and restore them on demand using checkpoint and restore.
+  repository_url: https://github.com/ctrox/zeropod
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when: []
+  avoid_when: []
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:devopstools_final.md#L639
+  needs_review: true

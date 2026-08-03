@@ -1,0 +1,239 @@
+- id: borgbackup
+  name: BorgBackup
+  summary: Deduplicating backup program (often used for cluster/VM backups).
+  official_url: https://www.borgbackup.org
+  repository_url: https://github.com/borgbackup/borg
+  categories:
+  - backup-disaster-recovery-resilience
+  subcategories:
+  - Backup & Disaster Recovery
+  roles:
+  - cloud-engineer
+  - site-reliability-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - operate
+  use_when:
+  - You need efficient, deduplicated backups with encryption for filesystems or VM/node-level data.
+  avoid_when:
+  - You need Kubernetes-native backup of resources and PVs (use Velero/Kasten instead).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L179
+  - legacy:devopstools_final.md#L683
+  needs_review: true
+- id: cloudcasa
+  name: CloudCasa
+  summary: Kubernetes backup and disaster recovery.
+  official_url: https://cloudcasa.io
+  categories:
+  - backup-disaster-recovery-resilience
+  subcategories:
+  - Backup & Disaster Recovery
+  roles:
+  - cloud-engineer
+  - site-reliability-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - operate
+  use_when:
+  - You want a SaaS-managed Kubernetes backup solution with minimal operational overhead.
+  avoid_when:
+  - You need on-prem-only, self-hosted backup or prefer open-source (Velero).
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L180
+  - legacy:devopstools_final.md#L684
+  needs_review: true
+- id: kasten-k10
+  name: Kasten K10
+  summary: Kubernetes backup and DR platform.
+  official_url: https://www.kasten.io
+  categories:
+  - backup-disaster-recovery-resilience
+  subcategories:
+  - Backup & Disaster Recovery
+  roles:
+  - cloud-engineer
+  - site-reliability-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - operate
+  use_when:
+  - You need enterprise-grade Kubernetes backup with application-consistent snapshots, DR, and compliance
+    features.
+  avoid_when:
+  - Velero meets your needs and you want to avoid commercial licensing costs.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L181
+  - legacy:devopstools_final.md#L685
+  needs_review: true
+- id: kube-dump
+  name: kube-dump
+  summary: Backup tool for Kubernetes cluster resources.
+  official_url: https://kube-dump.woozymasta.ru
+  repository_url: https://github.com/WoozyMasta/kube-dump
+  categories:
+  - backup-disaster-recovery-resilience
+  subcategories:
+  - Backup & Disaster Recovery
+  roles:
+  - cloud-engineer
+  - site-reliability-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - operate
+  use_when:
+  - You need a simple export of Kubernetes resource definitions for disaster recovery or auditing.
+  avoid_when:
+  - You also need persistent volume data backup (use Velero/Kasten).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L182
+  - legacy:devopstools_final.md#L686
+  needs_review: true
+- id: stash
+  name: Stash
+  summary: Backup operator for Kubernetes.
+  official_url: https://stash.run
+  repository_url: https://github.com/stashed/stash
+  categories:
+  - backup-disaster-recovery-resilience
+  subcategories:
+  - Backup & Disaster Recovery
+  roles:
+  - cloud-engineer
+  - site-reliability-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - operate
+  use_when:
+  - You want a Kubernetes-native backup operator with support for databases, volumes, and scheduled backups.
+  avoid_when:
+  - Velero's ecosystem and community adoption better fits your support needs.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L183
+  - legacy:devopstools_final.md#L687
+  needs_review: true
+- id: trilio
+  name: Trilio
+  summary: Kubernetes backup and recovery platform.
+  official_url: https://trilio.io/products/kubernetes-backup-and-recovery
+  categories:
+  - backup-disaster-recovery-resilience
+  subcategories:
+  - Backup & Disaster Recovery
+  roles:
+  - cloud-engineer
+  - site-reliability-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - operate
+  use_when:
+  - You need enterprise backup with application-consistent snapshots and multi-cloud recovery.
+  avoid_when:
+  - Velero or Kasten already covers your backup requirements.
+  deployment_models: []
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L184
+  - legacy:devopstools_final.md#L688
+  needs_review: true
+- id: velero
+  name: Velero
+  summary: Kubernetes cluster backup and restore.
+  official_url: https://velero.io
+  repository_url: https://github.com/vmware-tanzu/velero
+  categories:
+  - backup-disaster-recovery-resilience
+  subcategories:
+  - Backup & Disaster Recovery
+  roles:
+  - cloud-engineer
+  - site-reliability-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - operate
+  use_when:
+  - You need the de facto open-source standard for Kubernetes resource and volume backup/migration.
+  avoid_when:
+  - You need application-aware, database-consistent backups (pair with specific DB backup tools or use
+    Kasten).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L185
+  - legacy:devopstools_final.md#L689
+  needs_review: true
+- id: volsync
+  name: VolSync
+  summary: Kubernetes volume data replication.
+  official_url: https://volsync.readthedocs.io
+  repository_url: https://github.com/backube/volsync
+  categories:
+  - backup-disaster-recovery-resilience
+  subcategories:
+  - Backup & Disaster Recovery
+  roles:
+  - cloud-engineer
+  - site-reliability-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - operate
+  use_when:
+  - You need asynchronous PV replication across clusters or storage backends for DR.
+  avoid_when:
+  - Your storage backend has native replication or you only need full-cluster backup (use Velero).
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L186
+  - legacy:devopstools_final.md#L690
+  needs_review: true
