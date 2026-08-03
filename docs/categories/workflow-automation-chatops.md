@@ -7,9 +7,9 @@
 
 ### Activepieces
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Open Core  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Workflow automation platform; OSS core with commercial cloud/enterprise features.
@@ -26,9 +26,9 @@ Workflow automation platform; OSS core with commercial cloud/enterprise features
 
 ### Cal.com
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source scheduling and booking platform (Calendly alternative) for teams and individuals.
@@ -45,9 +45,9 @@ Open-source scheduling and booking platform (Calendly alternative) for teams and
 
 ### Camunda
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Open Core  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Workflow and process automation (BPMN/DMN).
@@ -64,9 +64,9 @@ Workflow and process automation (BPMN/DMN).
 
 ### Confluence
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI-powered team knowledge base and collaboration workspace by Atlassian.
@@ -83,9 +83,9 @@ AI-powered team knowledge base and collaboration workspace by Atlassian.
 
 ### Jira
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Issue tracking and project management platform by Atlassian.
@@ -102,9 +102,9 @@ Issue tracking and project management platform by Atlassian.
 
 ### Kestra
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Declarative orchestration platform for workflows, jobs, and data pipelines.
@@ -121,9 +121,9 @@ Declarative orchestration platform for workflows, jobs, and data pipelines.
 
 ### Mattermost
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Open Core  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Self-hostable collaboration platform; open-source core with enterprise editions.
@@ -140,9 +140,9 @@ Self-hostable collaboration platform; open-source core with enterprise editions.
 
 ### n8n
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Source Available  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Source Available
 **Status:** Needs Review
 
 Workflow automation platform (fair-code / Sustainable Use License; not OSI open source).
@@ -159,9 +159,9 @@ Workflow automation platform (fair-code / Sustainable Use License; not OSI open 
 
 ### Numaflow
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes-native data/stream processing platform.
@@ -178,9 +178,9 @@ Kubernetes-native data/stream processing platform.
 
 ### Plane
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source project management tool.
@@ -197,9 +197,9 @@ Open-source project management tool.
 
 ### Plumber
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Workflow automation and integration platform.
@@ -216,9 +216,9 @@ Workflow automation and integration platform.
 
 ### Rundeck
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Runbook automation and self-service operations platform.
@@ -235,9 +235,9 @@ Runbook automation and self-service operations platform.
 
 ### Slack
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Team communication and collaboration platform.
@@ -254,9 +254,9 @@ Team communication and collaboration platform.
 
 ### Tenzu
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Ethical open-source task and Kanban collaboration platform.
@@ -273,9 +273,9 @@ Ethical open-source task and Kanban collaboration platform.
 
 ### WeKan
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source kanban board for task and project management.
@@ -292,9 +292,9 @@ Open-source kanban board for task and project management.
 
 ### Windmill
 
-**Categories:** Workflow automation and ChatOps  
-**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer  
-**Model:** Open Core  
+**Categories:** Workflow automation and ChatOps
+**Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Developer platform to build internal tools and automations.

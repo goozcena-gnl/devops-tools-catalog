@@ -1,7 +1,8 @@
 - id: amazon-web-services-aws
   name: Amazon Web Services (AWS)
   summary: Comprehensive cloud computing platform by Amazon.
-  official_url: https://aws.amazon.com
+  official_url: https://aws.amazon.com/
+  documentation_url: https://docs.aws.amazon.com/
   categories:
   - cloud-platforms-management
   subcategories:
@@ -19,16 +20,17 @@
   avoid_when:
   - Simplicity and cost predictability matter more than breadth.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L4
   - legacy:devopstools_final.md#L150
-  needs_review: true
+  needs_review: false
 - id: apache-cloudstack
   name: Apache CloudStack
   summary: Open source infrastructure-as-a-service platform for building and managing private and public clouds.
@@ -66,7 +68,8 @@
 - id: aws-storage-gateway
   name: AWS Storage Gateway
   summary: Hybrid cloud storage service.
-  official_url: https://aws.amazon.com/fr/storagegateway
+  official_url: https://aws.amazon.com/storagegateway/
+  documentation_url: https://docs.aws.amazon.com/storagegateway/
   categories:
   - cloud-platforms-management
   subcategories:
@@ -84,16 +87,17 @@
   avoid_when:
   - You're fully in the cloud or not using AWS.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L226
   - legacy:devopstools_final.md#L298
-  needs_review: true
+  needs_review: false
 - id: civo
   name: Civo
   summary: Cloud infrastructure provider focused on Kubernetes.

@@ -7,9 +7,9 @@
 
 ### Awesome DevOps
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Curated DevOps resources.
@@ -26,9 +26,9 @@ Curated DevOps resources.
 
 ### Awesome Kubernetes Operator Resources
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Curated operator-focused resources and learning links.
@@ -45,9 +45,9 @@ Curated operator-focused resources and learning links.
 
 ### AWS Cloud Quest Practitioner
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 AWS Skill Builder gamified learning for cloud fundamentals.
@@ -64,9 +64,9 @@ AWS Skill Builder gamified learning for cloud fundamentals.
 
 ### AWS Skill Builder
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 AWS training platform.
@@ -83,9 +83,9 @@ AWS training platform.
 
 ### Azure DevOps Labs
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Hands-on labs for Azure DevOps services and practices.
@@ -102,9 +102,9 @@ Hands-on labs for Azure DevOps services and practices.
 
 ### Azure Mastery
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Free Azure learning platform with certification prep, quizzes, flashcards, and guided study paths.
@@ -121,9 +121,9 @@ Free Azure learning platform with certification prep, quizzes, flashcards, and g
 
 ### Azure Messaging for AWS Professionals
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Azure Architecture Center guide mapping Azure messaging services to AWS concepts.
@@ -140,9 +140,9 @@ Azure Architecture Center guide mapping Azure messaging services to AWS concepts
 
 ### ByteByteGo DevOps Guide
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 DevOps and CI/CD guides.
@@ -159,9 +159,9 @@ DevOps and CI/CD guides.
 
 ### Claude Code Cheat Sheet
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Practical guide to Claude Code CLI usage, permissions, hooks, MCP, skills, and agent workflows.
@@ -178,9 +178,9 @@ Practical guide to Claude Code CLI usage, permissions, hooks, MCP, skills, and a
 
 ### CNCF Free Courses
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Free CNCF training courses.
@@ -197,9 +197,9 @@ Free CNCF training courses.
 
 ### DeepTutor
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Interactive learning and tutoring platform.
@@ -216,9 +216,9 @@ Interactive learning and tutoring platform.
 
 ### DEV Community #devops
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 DEV Community tag feed for DevOps articles, tutorials, and discussions.
@@ -235,9 +235,9 @@ DEV Community tag feed for DevOps articles, tutorials, and discussions.
 
 ### DevOps Community
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Community resources and events.
@@ -254,9 +254,9 @@ Community resources and events.
 
 ### DevOps Exercises
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 DevOps interview questions and exercises.
@@ -273,9 +273,9 @@ DevOps interview questions and exercises.
 
 ### DevOps Interview Questions
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Curated DevOps interview questions.
@@ -292,9 +292,9 @@ Curated DevOps interview questions.
 
 ### DevOps Projects
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Hands-on DevOps project ideas/roadmap for building a portfolio.
@@ -311,9 +311,9 @@ Hands-on DevOps project ideas/roadmap for building a portfolio.
 
 ### DevOps Resources
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Comprehensive DevOps learning resources.
@@ -330,9 +330,9 @@ Comprehensive DevOps learning resources.
 
 ### DevOpsCube Kubernetes Tutorials (Beginners)
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Beginner-friendly Kubernetes learning resources.
@@ -349,9 +349,9 @@ Beginner-friendly Kubernetes learning resources.
 
 ### dsoxlab
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 DevSecOps XL Labs: domain-agnostic CLI framework for driving hands-on learning labs across multiple repositories.
@@ -368,9 +368,9 @@ DevSecOps XL Labs: domain-agnostic CLI framework for driving hands-on learning l
 
 ### endoflife.date
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Track software end-of-life dates.
@@ -387,9 +387,9 @@ Track software end-of-life dates.
 
 ### EveryDev.ai
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Community-driven directory, comparison hub, and discussion platform for AI developer tools.
@@ -406,9 +406,9 @@ Community-driven directory, comparison hub, and discussion platform for AI devel
 
 ### FreeCodeCamp DevOps
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 DevOps tutorials.
@@ -425,9 +425,9 @@ DevOps tutorials.
 
 ### Hashnode
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Developer blogging and publishing platform with active engineering and DevOps content.
@@ -444,9 +444,9 @@ Developer blogging and publishing platform with active engineering and DevOps co
 
 ### K8s in a Box
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Hands-on troubleshooting lab that spins up a local kind cluster filled with intentionally broken workloads.
@@ -463,9 +463,9 @@ Hands-on troubleshooting lab that spins up a local kind cluster filled with inte
 
 ### k8squest
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Game-based local Kubernetes learning platform with troubleshooting missions.
@@ -482,9 +482,9 @@ Game-based local Kubernetes learning platform with troubleshooting missions.
 
 ### Killer.sh
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 CKA/CKAD exam simulator.
@@ -501,9 +501,9 @@ CKA/CKAD exam simulator.
 
 ### Killercoda
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Interactive, browser-based hands-on labs platform (scenarios-as-code).
@@ -520,9 +520,9 @@ Interactive, browser-based hands-on labs platform (scenarios-as-code).
 
 ### Killercoda CKA
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Interactive Kubernetes training labs.
@@ -539,9 +539,9 @@ Interactive Kubernetes training labs.
 
 ### Kindling
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI-powered job search assistant for managing applications and career research.
@@ -558,9 +558,9 @@ AI-powered job search assistant for managing applications and career research.
 
 ### KodeKloud
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Hands-on Kubernetes and DevOps training platform.
@@ -577,9 +577,9 @@ Hands-on Kubernetes and DevOps training platform.
 
 ### kubeCodex
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Kubernetes reference/learning repository.
@@ -596,9 +596,9 @@ Kubernetes reference/learning repository.
 
 ### KubeLearn
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Interactive Kubernetes learning game with quizzes, drag-and-drop challenges, and hands-on exercises.
@@ -615,9 +615,9 @@ Interactive Kubernetes learning game with quizzes, drag-and-drop challenges, and
 
 ### Kubernetes de A à Z
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Kubernetes learning repository.
@@ -634,9 +634,9 @@ Kubernetes learning repository.
 
 ### Kubernetes GitOps Guide
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Practical GitOps guide for Kubernetes.
@@ -653,9 +653,9 @@ Practical GitOps guide for Kubernetes.
 
 ### Kubernetes Learning Path
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Official Kubernetes docs.
@@ -672,9 +672,9 @@ Official Kubernetes docs.
 
 ### LabEx DevOps Tutorials
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Hands-on DevOps tutorials with labs, code examples, and interactive playground exercises.
@@ -691,9 +691,9 @@ Hands-on DevOps tutorials with labs, code examples, and interactive playground e
 
 ### LabsDevOps.fr
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 DevOps labs and learning resources.
@@ -710,9 +710,9 @@ DevOps labs and learning resources.
 
 ### LearnKube
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Kubernetes learning hub covering security contexts, instance sizing, and practical DevOps guides.
@@ -729,9 +729,9 @@ Kubernetes learning hub covering security contexts, instance sizing, and practic
 
 ### Microsoft Learn
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Free training from Microsoft.
@@ -748,9 +748,9 @@ Free training from Microsoft.
 
 ### Mini-classes Ansible Public
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Shared support project and labs for public Ansible training sessions.
@@ -767,9 +767,9 @@ Shared support project and labs for public Ansible training sessions.
 
 ### MLOps for DevOps Engineers
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Hands-on, project-based guide that teaches MLOps concepts and production ML workflows from a DevOps and platform engineering perspective.
@@ -786,9 +786,9 @@ Hands-on, project-based guide that teaches MLOps concepts and production ML work
 
 ### onedr0p/cluster-template
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 GitOps-based Kubernetes cluster template.
@@ -805,9 +805,9 @@ GitOps-based Kubernetes cluster template.
 
 ### Open Notebook
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Oss  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Privacy-first AI note-taking and research platform for learning workflows.
@@ -824,9 +824,9 @@ Privacy-first AI note-taking and research platform for learning workflows.
 
 ### Reference (cheatsheets.zip)
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Open-source cheat sheets and quick references for developers; formerly served from quickref.me.
@@ -843,9 +843,9 @@ Open-source cheat sheets and quick references for developers; formerly served fr
 
 ### Roadmap.sh
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Community-maintained role and skill roadmaps for software and infrastructure careers.
@@ -866,9 +866,9 @@ Community-maintained role and skill roadmaps for software and infrastructure car
 
 ### SysAdmin to SRE Roadmap
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 French roadmap for progressing from SysAdmin to SRE/DevOps across Linux, Kubernetes, IaC, CI/CD, security, observability, and AI.
@@ -885,9 +885,9 @@ French roadmap for progressing from SysAdmin to SRE/DevOps across Linux, Kuberne
 
 ### System Design
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Comprehensive system design learning guide and interview preparation resource.
@@ -904,9 +904,9 @@ Comprehensive system design learning guide and interview preparation resource.
 
 ### TechOps Examples
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 DevOps and cloud newsletter focused on practical real-world examples and learning resources.
@@ -923,9 +923,9 @@ DevOps and cloud newsletter focused on practical real-world examples and learnin
 
 ### Trendshift
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Unknown  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Daily momentum rankings for trending GitHub repositories.
@@ -942,9 +942,9 @@ Daily momentum rankings for trending GitHub repositories.
 
 ### Udemy CKA Course
 
-**Categories:** Documentation, learning and career resources  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer  
-**Model:** Documentation  
+**Categories:** Documentation, learning and career resources
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Online course for Kubernetes certification.

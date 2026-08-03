@@ -114,9 +114,10 @@
   needs_review: true
 - id: containerd
   name: containerd
-  summary: Container runtime.
+  summary: Industry-standard container runtime focused on simplicity, portability, and robust Kubernetes integration.
   official_url: https://containerd.io
   repository_url: https://github.com/containerd/containerd
+  documentation_url: https://containerd.io/docs/2.3/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -133,20 +134,22 @@
   - You need Docker-CLI-level UX for local development without additional tooling.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L134
   - legacy:devopstools_final.md#L232
-  needs_review: true
+  needs_review: false
 - id: cri-o
   name: CRI-O
-  summary: Kubernetes container runtime (CRI implementation).
+  summary: Lightweight Kubernetes CRI implementation for running OCI-compatible container runtimes.
   official_url: https://cri-o.io
   repository_url: https://github.com/cri-o/cri-o
+  documentation_url: https://github.com/cri-o/cri-o/blob/main/install.md
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -163,15 +166,16 @@
   - You also need to run containers outside Kubernetes on the same host.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L136
   - legacy:devopstools_final.md#L233
-  needs_review: true
+  needs_review: false
 - id: criu
   name: CRIU
   summary: Checkpoint/Restore In Userspace for Linux containers and processes.

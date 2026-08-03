@@ -150,9 +150,10 @@
   needs_review: true
 - id: awesome-prometheus-alerts
   name: Awesome Prometheus Alerts
-  summary: Collection of Prometheus alerting rules.
-  official_url: https://samber.github.io/awesome-prometheus-alerts
+  summary: Curated, copy-pasteable Prometheus alert rules and guidance for common services and platforms.
+  official_url: https://samber.github.io/awesome-prometheus-alerts/
   repository_url: https://github.com/samber/awesome-prometheus-alerts
+  documentation_url: https://samber.github.io/awesome-prometheus-alerts/rules/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -170,15 +171,16 @@
   - Blindly copying rules without tuning thresholds for your workload.
   deployment_models: []
   license_model: documentation
+  license_spdx: CC-BY-4.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L37
   - legacy:devopstools_final.md#L738
-  needs_review: true
+  needs_review: false
 - id: beszel
   name: Beszel
   summary: Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC, backups, and
@@ -240,6 +242,7 @@
   summary: Network graphing solution (RRDTool-based).
   official_url: https://www.cacti.net
   repository_url: https://github.com/Cacti/cacti
+  documentation_url: https://docs.cacti.net/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -257,15 +260,16 @@
   - You need modern alerting, APM, or dynamic cloud workloads.
   deployment_models: []
   license_model: oss
+  license_spdx: GPL-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L6
   - legacy:devopstools_final.md#L698
-  needs_review: true
+  needs_review: false
 - id: cadvisor
   name: cAdvisor
   summary: Container Advisor daemon that collects, aggregates, and exports container resource usage and

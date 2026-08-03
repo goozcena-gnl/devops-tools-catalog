@@ -17,7 +17,7 @@
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
 | [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) | Monitoring, metrics, logs and tracing | documentation | needs-review |
-| [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts) | Monitoring, metrics, logs and tracing | documentation | needs-review |
+| [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) | Monitoring, metrics, logs and tracing | documentation | active |
 | [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AWS Fault Injection Service](https://aws.amazon.com/fis) | Chaos and performance engineering | unknown | needs-review |
 | [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) | Chaos and performance engineering | unknown | needs-review |
@@ -25,13 +25,13 @@
 | [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | needs-review |
-| [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | needs-review |
+| [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | active |
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
-| [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | active |
 | [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Cal.com](https://cal.com) | Workflow automation and ChatOps | oss | needs-review |
 | [Camunda](https://camunda.com) | Workflow automation and ChatOps | open-core | needs-review |
-| [Capsule](https://capsule.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [cardamon](https://github.com/dominikhei/cardamon) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Carvel](https://carvel.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Carvel kapp](https://carvel.dev/kapp) | Kubernetes distributions and operations | oss | needs-review |
@@ -47,7 +47,7 @@
 | [ChaosBlade](https://chaosblade.io/en) | Chaos and performance engineering | oss | needs-review |
 | [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Chisel Operator](https://chisel.fyralabs.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [CloudCasa](https://cloudcasa.io) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -236,7 +236,7 @@
 | [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Kubey](https://kubey.app) | Kubernetes distributions and operations | oss | needs-review |
-| [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | active |
 | [Kustomize](https://kustomize.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KUTTL](https://kuttl.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kwatcher](https://github.com/Berg-it/Kwatcher) | Monitoring, metrics, logs and tracing | oss | needs-review |

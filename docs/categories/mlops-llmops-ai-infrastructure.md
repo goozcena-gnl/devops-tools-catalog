@@ -7,9 +7,9 @@
 
 ### Agent Reach
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 CLI that gives agents search and reading access across web, social, and code platforms.
@@ -26,9 +26,9 @@ CLI that gives agents search and reading access across web, social, and code pla
 
 ### agent-skills
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Production-grade engineering skills for AI coding agents.
@@ -45,9 +45,9 @@ Production-grade engineering skills for AI coding agents.
 
 ### AGENTMEMORY
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Persistent memory layer for AI coding agents.
@@ -64,9 +64,9 @@ Persistent memory layer for AI coding agents.
 
 ### agentsmith
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini, etc.) assembled by a single setup script.
@@ -83,9 +83,9 @@ Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini
 
 ### AITMPL Agents
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Agents directory/platform.
@@ -102,9 +102,9 @@ Agents directory/platform.
 
 ### Amazon Q Developer
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI code suggestions for AWS and more.
@@ -121,9 +121,9 @@ AI code suggestions for AWS and more.
 
 ### Arize Phoenix
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 LLM observability and evaluation platform.
@@ -140,9 +140,9 @@ LLM observability and evaluation platform.
 
 ### awesome-codex-subagents
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Collection of 130+ specialized Codex subagents for a wide range of development use cases.
@@ -159,9 +159,9 @@ Collection of 130+ specialized Codex subagents for a wide range of development u
 
 ### AWS Billing and Cost Management MCP Server
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Documentation  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 MCP server for AWS Billing & Cost Management use cases (announced by AWS).
@@ -178,9 +178,9 @@ MCP server for AWS Billing & Cost Management use cases (announced by AWS).
 
 ### AWS MCP
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AWS implementation of Model Context Protocol.
@@ -197,9 +197,9 @@ AWS implementation of Model Context Protocol.
 
 ### Azure AI Foundry
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Documentation  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
@@ -216,9 +216,9 @@ Azure platform for building, deploying, and operating AI solutions (models, agen
 
 ### Azure MCP Server
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Documentation  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Azure MCP server implementation.
@@ -235,9 +235,9 @@ Azure MCP server implementation.
 
 ### Bito
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI coding assistant for IDE/workflow productivity.
@@ -254,9 +254,9 @@ AI coding assistant for IDE/workflow productivity.
 
 ### codebase-memory-mcp
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 High-performance code intelligence MCP server that indexes repositories into a persistent knowledge graph.
@@ -273,9 +273,9 @@ High-performance code intelligence MCP server that indexes repositories into a p
 
 ### Composio
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Open Core  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Agent tooling platform for managed auth, app connectors, triggers, and sandboxed tool execution across developer and business apps.
@@ -292,9 +292,9 @@ Agent tooling platform for managed auth, app connectors, triggers, and sandboxed
 
 ### DeepSpeed
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Deep learning optimization library for large-scale model training and inference.
@@ -311,9 +311,9 @@ Deep learning optimization library for large-scale model training and inference.
 
 ### Docker Agent
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
@@ -330,9 +330,9 @@ Declarative multi-agent framework from Docker for defining AI agents, tools, and
 
 ### Docker Hub MCP
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 MCP-related Docker images.
@@ -349,9 +349,9 @@ MCP-related Docker images.
 
 ### Docker MCP Gateway
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Docker CLI plugin and gateway for discovering, running, and routing MCP servers in containers.
@@ -368,9 +368,9 @@ Docker CLI plugin and gateway for discovering, running, and routing MCP servers 
 
 ### ecc.tools
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
@@ -387,9 +387,9 @@ OSS-first ecosystem for agent skills, agents, and security tooling around AI cod
 
 ### Evidently
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source evaluation and monitoring framework for ML and AI systems.
@@ -406,9 +406,9 @@ Open-source evaluation and monitoring framework for ML and AI systems.
 
 ### Flawless
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AI SRE AgenticOps agent for autonomous incident detection, diagnosis, and remediation across Kubernetes and cloud infrastructure.
@@ -425,9 +425,9 @@ AI SRE AgenticOps agent for autonomous incident detection, diagnosis, and remedi
 
 ### fulling
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AI-powered full-stack engineer agent built with Next.js, Claude, and PostgreSQL, using Kubernetes as infrastructure.
@@ -444,9 +444,9 @@ AI-powered full-stack engineer agent built with Next.js, Claude, and PostgreSQL,
 
 ### genai-agentos
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Framework for building, running, and managing multi-agent AI workflows.
@@ -463,9 +463,9 @@ Framework for building, running, and managing multi-agent AI workflows.
 
 ### GitHub Copilot
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI-powered code completion assistant.
@@ -482,9 +482,9 @@ AI-powered code completion assistant.
 
 ### GitHub MCP Server
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 GitHub's MCP server implementation.
@@ -501,9 +501,9 @@ GitHub's MCP server implementation.
 
 ### GitLab MCP Server
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Documentation  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 GitLab MCP server documentation.
@@ -520,9 +520,9 @@ GitLab MCP server documentation.
 
 ### Grafana MCP
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Model Context Protocol for Grafana.
@@ -539,9 +539,9 @@ Model Context Protocol for Grafana.
 
 ### Haystack
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Framework for building LLM-powered apps and search systems.
@@ -558,9 +558,9 @@ Framework for building LLM-powered apps and search systems.
 
 ### Headroom
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Context optimization layer that compresses tool outputs, logs, files, and RAG chunks before they reach the LLM.
@@ -577,9 +577,9 @@ Context optimization layer that compresses tool outputs, logs, files, and RAG ch
 
 ### Hermes Agent
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Agent framework and runtime from Nous Research.
@@ -596,9 +596,9 @@ Agent framework and runtime from Nous Research.
 
 ### Hoji AI
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AI assistant for GitHub workflows.
@@ -615,9 +615,9 @@ AI assistant for GitHub workflows.
 
 ### Hortator
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes-native platform for orchestrating AI agents.
@@ -634,9 +634,9 @@ Kubernetes-native platform for orchestrating AI agents.
 
 ### K8sGPT
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AI-powered Kubernetes troubleshooting.
@@ -653,9 +653,9 @@ AI-powered Kubernetes troubleshooting.
 
 ### Kelos
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes-native framework for orchestrating autonomous AI coding agents.
@@ -672,9 +672,9 @@ Kubernetes-native framework for orchestrating autonomous AI coding agents.
 
 ### KServe
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Model serving on Kubernetes.
@@ -691,9 +691,9 @@ Model serving on Kubernetes.
 
 ### Kthena
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes-native AI serving platform for scalable multi-model deployment, routing, and intelligent auto-scaling.
@@ -710,9 +710,9 @@ Kubernetes-native AI serving platform for scalable multi-model deployment, routi
 
 ### Kube Copilot
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AI assistant for Kubernetes operations.
@@ -729,9 +729,9 @@ AI assistant for Kubernetes operations.
 
 ### Kubernetes MCP Server
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Go-native MCP server for Kubernetes and OpenShift with direct API server integration, multi-cluster support, Helm/Tekton toolsets, and no external CLI dependencies (Apache-2.0).
@@ -748,9 +748,9 @@ Go-native MCP server for Kubernetes and OpenShift with direct API server integra
 
 ### kubernetes-skill for Claude Code
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Documentation  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Claude Code agent skill for interacting with Kubernetes clusters.
@@ -767,9 +767,9 @@ Claude Code agent skill for interacting with Kubernetes clusters.
 
 ### LangChain
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Open Core  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 LLM application framework; OSS libraries with commercial companion products.
@@ -786,9 +786,9 @@ LLM application framework; OSS libraries with commercial companion products.
 
 ### Langflow
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Low-code builder for agentic and RAG applications.
@@ -805,9 +805,9 @@ Low-code builder for agentic and RAG applications.
 
 ### Langfuse
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Open Core  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 LLM observability and analytics; OSS self-hosted core with commercial cloud offering.
@@ -824,9 +824,9 @@ LLM observability and analytics; OSS self-hosted core with commercial cloud offe
 
 ### LangGraph
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Framework for building reliable stateful AI agents and multi-step workflows.
@@ -843,9 +843,9 @@ Framework for building reliable stateful AI agents and multi-step workflows.
 
 ### LangSmith
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Open Core  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 LLM application development platform with observability, testing, and evaluation (LangChain-affiliated).
@@ -862,9 +862,9 @@ LLM application development platform with observability, testing, and evaluation
 
 ### last30days-skill
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Agent skill that researches current topics across web and social sources and synthesizes grounded summaries.
@@ -881,9 +881,9 @@ Agent skill that researches current topics across web and social sources and syn
 
 ### LiteLLM
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Open Core  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Gateway and proxy for 100+ LLM providers with budgets, rate limiting, logging, and spend tracking.
@@ -900,9 +900,9 @@ Gateway and proxy for 100+ LLM providers with budgets, rate limiting, logging, a
 
 ### llm-d
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes-native high-performance distributed LLM inference framework for serving models at scale.
@@ -919,9 +919,9 @@ Kubernetes-native high-performance distributed LLM inference framework for servi
 
 ### llmfit
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Hardware-aware CLI/TUI for recommending which LLM models fit local RAM, CPU, and GPU capacity.
@@ -938,9 +938,9 @@ Hardware-aware CLI/TUI for recommending which LLM models fit local RAM, CPU, and
 
 ### LM Studio
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Desktop app for running local LLMs.
@@ -957,9 +957,9 @@ Desktop app for running local LLMs.
 
 ### mcp-server-kubernetes
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Node MCP server for interacting with Kubernetes clusters via kubectl.
@@ -976,9 +976,9 @@ Node MCP server for interacting with Kubernetes clusters via kubectl.
 
 ### mcpsnoop
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Transparent MCP proxy for inspecting live tool calls between clients and servers.
@@ -995,9 +995,9 @@ Transparent MCP proxy for inspecting live tool calls between clients and servers
 
 ### Migratowl
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI-powered dependency migration analyzer.
@@ -1014,9 +1014,9 @@ AI-powered dependency migration analyzer.
 
 ### MLflow
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Platform for managing ML lifecycles.
@@ -1033,9 +1033,9 @@ Platform for managing ML lifecycles.
 
 ### NVIDIA AI Cluster Runtime
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Documentation  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
@@ -1052,9 +1052,9 @@ NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
 
 ### NVIDIA DGX Cloud
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Cloud platform for AI and ML workloads.
@@ -1071,9 +1071,9 @@ Cloud platform for AI and ML workloads.
 
 ### Ollama
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Local LLM runtime and model manager; open-source core (model licenses vary).
@@ -1090,9 +1090,9 @@ Local LLM runtime and model manager; open-source core (model licenses vary).
 
 ### Open WebUI
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Self-hosted web UI for running and managing local AI model backends (e.g., Ollama).
@@ -1109,9 +1109,9 @@ Self-hosted web UI for running and managing local AI model backends (e.g., Ollam
 
 ### peerd
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Browser-native harness for AI agents.
@@ -1128,9 +1128,9 @@ Browser-native harness for AI agents.
 
 ### Promptfoo
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Test and evaluate LLM prompts.
@@ -1147,9 +1147,9 @@ Test and evaluate LLM prompts.
 
 ### Ray
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Distributed compute framework for scaling ML, AI, and Python workloads.
@@ -1166,9 +1166,9 @@ Distributed compute framework for scaling ML, AI, and Python workloads.
 
 ### reShapr
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MCP endpoints with security controls and flexible deployment (Apache-2.0).
@@ -1185,9 +1185,9 @@ No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MC
 
 ### Sim
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Unknown  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 AI workspace for building, deploying, and monitoring agentic workflows.
@@ -1204,9 +1204,9 @@ AI workspace for building, deploying, and monitoring agentic workflows.
 
 ### Stakpak
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Autonomous AI agent for production operations running 24/7 on your machines to auto-heal incidents, manage costs, and monitor infrastructure (Apache-2.0).
@@ -1223,9 +1223,9 @@ Autonomous AI agent for production operations running 24/7 on your machines to a
 
 ### Terraform MCP Server
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 MCP server for Terraform automation and infrastructure-as-code workflows.
@@ -1242,9 +1242,9 @@ MCP server for Terraform automation and infrastructure-as-code workflows.
 
 ### terraform-skill
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Documentation  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Claude Code skill for Terraform and OpenTofu best practices, testing, modules, CI/CD, and security.
@@ -1261,9 +1261,9 @@ Claude Code skill for Terraform and OpenTofu best practices, testing, modules, C
 
 ### VoltAgent
 
-**Categories:** MLOps, LLMOps and AI infrastructure  
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer  
-**Model:** Oss  
+**Categories:** MLOps, LLMOps and AI infrastructure
+**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source TypeScript framework for building AI agents.

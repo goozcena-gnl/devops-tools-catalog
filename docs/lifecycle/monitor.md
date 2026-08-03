@@ -8,7 +8,7 @@
 - [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) — Network performance monitoring.
 - [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) — Grafana plugin that provides natural-language observability exploration.
 - [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) — Curated list of Prometheus resources.
-- [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts) — Collection of Prometheus alerting rules.
+- [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) — Curated, copy-pasteable Prometheus alert rules and guidance for common services and platforms.
 - [Beszel](https://beszel.dev) — Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC, backups, and REST API.
 - [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) — Prometheus exporter for probing HTTP, HTTPS, DNS, TCP, ICMP, and gRPC endpoints.
 - [Cacti](https://www.cacti.net) — Network graphing solution (RRDTool-based).

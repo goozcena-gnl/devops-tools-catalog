@@ -14,11 +14,11 @@
 | [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Bazel](https://bazel.build) | Containers and image tooling | oss | needs-review |
-| [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | needs-review |
+| [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | active |
 | [Buildah](https://buildah.io) | Containers and image tooling | oss | needs-review |
 | [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | needs-review |
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
-| [Capsule](https://capsule.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Carvel](https://carvel.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Carvel kapp](https://carvel.dev/kapp) | Kubernetes distributions and operations | oss | needs-review |
 | [Carvel ytt](https://carvel.dev/ytt) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -27,7 +27,7 @@
 | [Ceph](https://ceph.io/en) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Chisel Operator](https://chisel.fyralabs.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CloudNativePG](https://cloudnative-pg.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Cluster API](https://cluster-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
@@ -177,7 +177,7 @@
 | [Kubevious](https://kubevious.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubey](https://kubey.app) | Kubernetes distributions and operations | oss | needs-review |
-| [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | active |
 | [Kustomize](https://kustomize.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KUTTL](https://kuttl.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | needs-review |

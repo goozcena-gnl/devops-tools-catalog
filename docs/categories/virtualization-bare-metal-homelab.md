@@ -7,9 +7,9 @@
 
 ### Alpine Linux
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Security-oriented, lightweight Linux distribution.
@@ -26,9 +26,9 @@ Security-oriented, lightweight Linux distribution.
 
 ### Azure Linux
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Microsoft's CBL-Mariner-based Linux distribution optimized for container and cloud workloads on Azure.
@@ -45,9 +45,9 @@ Microsoft's CBL-Mariner-based Linux distribution optimized for container and clo
 
 ### Bottlerocket
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Active
 
 Linux-based, security-hardened operating system purpose-built for running containers.
@@ -64,9 +64,9 @@ Linux-based, security-hardened operating system purpose-built for running contai
 
 ### Confidential Containers
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 CNCF project for running Kubernetes pods inside hardware-backed Trusted Execution Environments (TEEs).
@@ -83,12 +83,12 @@ CNCF project for running Kubernetes pods inside hardware-backed Trusted Executio
 
 ### containerd
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
-**Status:** Needs Review
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
+**Status:** Active
 
-Container runtime.
+Industry-standard container runtime focused on simplicity, portability, and robust Kubernetes integration.
 
 **Use when**
 
@@ -98,16 +98,16 @@ Container runtime.
 
 - You need Docker-CLI-level UX for local development without additional tooling.
 
-[Official site](https://containerd.io) · [Source repository](https://github.com/containerd/containerd)
+[Official site](https://containerd.io) · [Documentation](https://containerd.io/docs/2.3/) · [Source repository](https://github.com/containerd/containerd)
 
 ### CRI-O
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
-**Status:** Needs Review
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
+**Status:** Active
 
-Kubernetes container runtime (CRI implementation).
+Lightweight Kubernetes CRI implementation for running OCI-compatible container runtimes.
 
 **Use when**
 
@@ -117,13 +117,13 @@ Kubernetes container runtime (CRI implementation).
 
 - You also need to run containers outside Kubernetes on the same host.
 
-[Official site](https://cri-o.io) · [Source repository](https://github.com/cri-o/cri-o)
+[Official site](https://cri-o.io) · [Documentation](https://github.com/cri-o/cri-o/blob/main/install.md) · [Source repository](https://github.com/cri-o/cri-o)
 
 ### CRIU
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Checkpoint/Restore In Userspace for Linux containers and processes.
@@ -140,9 +140,9 @@ Checkpoint/Restore In Userspace for Linux containers and processes.
 
 ### ctop
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Container metrics viewer (top-like).
@@ -159,9 +159,9 @@ Container metrics viewer (top-like).
 
 ### dive
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Explore Docker image layers.
@@ -178,9 +178,9 @@ Explore Docker image layers.
 
 ### Docker Desktop
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Desktop Docker environment.
@@ -197,9 +197,9 @@ Desktop Docker environment.
 
 ### Dockur macOS
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 MacOS in a Docker container.
@@ -216,9 +216,9 @@ MacOS in a Docker container.
 
 ### Dockur Windows
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Windows in a Docker container.
@@ -235,9 +235,9 @@ Windows in a Docker container.
 
 ### Firecracker
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lightweight virtualization for microVMs.
@@ -254,9 +254,9 @@ Lightweight virtualization for microVMs.
 
 ### Flatcar Container Linux
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Immutable Linux distro for containers.
@@ -273,9 +273,9 @@ Immutable Linux distro for containers.
 
 ### FuturFusion
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Dell-backed VMware exit solution that preserves and migrates existing VMware estates to open infrastructure.
@@ -292,9 +292,9 @@ Dell-backed VMware exit solution that preserves and migrates existing VMware est
 
 ### gVisor
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Application kernel and container sandbox runtime that provides strong isolation between containers and the host.
@@ -311,9 +311,9 @@ Application kernel and container sandbox runtime that provides strong isolation 
 
 ### Hyper-V
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows Server.
@@ -330,9 +330,9 @@ Microsoft's native hypervisor for creating and running virtual machines on Windo
 
 ### Incus
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Modern system container and VM manager.
@@ -349,9 +349,9 @@ Modern system container and VM manager.
 
 ### Incus OS
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Operating system images and distribution tooling for Incus environments.
@@ -368,9 +368,9 @@ Operating system images and distribution tooling for Incus environments.
 
 ### Kata Containers
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Secure containers with lightweight VMs.
@@ -387,9 +387,9 @@ Secure containers with lightweight VMs.
 
 ### kcli
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Unified CLI for provisioning VMs, Kubernetes clusters, and infrastructure across libvirt, cloud, and virtualization providers.
@@ -406,9 +406,9 @@ Unified CLI for provisioning VMs, Kubernetes clusters, and infrastructure across
 
 ### Lazydocker
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Terminal UI for Docker and Docker Compose.
@@ -425,9 +425,9 @@ Terminal UI for Docker and Docker Compose.
 
 ### libvirt
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 API/daemon for managing virtualization platforms.
@@ -444,9 +444,9 @@ API/daemon for managing virtualization platforms.
 
 ### Lima
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Linux VMs on macOS (and more).
@@ -463,9 +463,9 @@ Linux VMs on macOS (and more).
 
 ### Linux Containers (LXC/LXD)
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 System containers and VM manager.
@@ -482,9 +482,9 @@ System containers and VM manager.
 
 ### LocalStack
 
-**Categories:** Virtualization, bare metal and homelab, Developer experience and local environments  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer, Developer Experience Engineer  
-**Model:** Open Core  
+**Categories:** Virtualization, bare metal and homelab, Developer experience and local environments
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer, Developer Experience Engineer
+**Model:** Open Core
 **Status:** Active
 **Repository:** Archived
 
@@ -504,9 +504,9 @@ Local cloud development platform that emulates AWS services for integration test
 
 ### MiniBlue
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Local Azure emulator that emulates 26+ Azure services in a single binary for development and testing without an Azure account.
@@ -523,9 +523,9 @@ Local Azure emulator that emulates 26+ Azure services in a single binary for dev
 
 ### nerdctl
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Docker-compatible CLI for containerd.
@@ -542,9 +542,9 @@ Docker-compatible CLI for containerd.
 
 ### Open vSwitch
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Production-quality multilayer virtual switch for network automation, programmatic control, and virtualized environments.
@@ -561,9 +561,9 @@ Production-quality multilayer virtual switch for network automation, programmati
 
 ### Oracle VirtualBox
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Cross-platform type-2 hypervisor for running virtual machines on desktops and servers.
@@ -580,9 +580,9 @@ Cross-platform type-2 hypervisor for running virtual machines on desktops and se
 
 ### OrbStack
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Fast Docker & Linux VM environment for macOS.
@@ -599,9 +599,9 @@ Fast Docker & Linux VM environment for macOS.
 
 ### Podman
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Daemonless container engine for developing and managing containers.
@@ -618,9 +618,9 @@ Daemonless container engine for developing and managing containers.
 
 ### Portainer
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Open Core  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Container management platform.
@@ -637,9 +637,9 @@ Container management platform.
 
 ### Proxmox Datacenter Manager
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Proxmox datacenter management product.
@@ -656,9 +656,9 @@ Proxmox datacenter management product.
 
 ### Proxmox Virtual Environment (VE)
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Open Core  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
@@ -675,9 +675,9 @@ Open source virtualization platform (KVM + LXC) with optional enterprise subscri
 
 ### proxmox-optimizer
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Proxmox optimization utilities.
@@ -694,9 +694,9 @@ Proxmox optimization utilities.
 
 ### Rancher Desktop
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Desktop Kubernetes and container management.
@@ -713,9 +713,9 @@ Desktop Kubernetes and container management.
 
 ### Remmina
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Remote desktop client.
@@ -732,9 +732,9 @@ Remote desktop client.
 
 ### RootlessKit
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Rootless container toolkit.
@@ -751,9 +751,9 @@ Rootless container toolkit.
 
 ### runc
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 OCI runtime for containers.
@@ -770,9 +770,9 @@ OCI runtime for containers.
 
 ### Sealos
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Cloud operating system for Kubernetes.
@@ -789,9 +789,9 @@ Cloud operating system for Kubernetes.
 
 ### Sustainable Computing (Kepler)
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Power consumption monitoring for Kubernetes (project ecosystem).
@@ -808,9 +808,9 @@ Power consumption monitoring for Kubernetes (project ecosystem).
 
 ### Unraid
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Operating system for network-attached storage and virtualization.
@@ -827,9 +827,9 @@ Operating system for network-attached storage and virtualization.
 
 ### Vates VMS
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Open Core  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Open virtualization stack built around XCP-ng, Xen Orchestra, and related tooling, with commercial support and management offerings.
@@ -846,9 +846,9 @@ Open virtualization stack built around XCP-ng, Xen Orchestra, and related toolin
 
 ### Volare
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes volume populator that populates Persistent Volume Claims (PVCs) from multiple external sources concurrently.
@@ -865,9 +865,9 @@ Kubernetes volume populator that populates Persistent Volume Claims (PVCs) from 
 
 ### WSL container
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Documentation  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Run Linux containers directly inside WSL 2 without a Docker daemon.
@@ -884,9 +884,9 @@ Run Linux containers directly inside WSL 2 without a Docker daemon.
 
 ### XCP-ng
 
-**Categories:** Virtualization, bare metal and homelab  
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Virtualization, bare metal and homelab
+**Roles:** DevOps Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source virtualization platform (Xen-based).

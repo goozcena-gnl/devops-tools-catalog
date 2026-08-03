@@ -7,9 +7,9 @@
 
 ### AKS
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Azure Kubernetes Service.
@@ -26,9 +26,9 @@ Azure Kubernetes Service.
 
 ### Awesome Kubernetes Architecture Diagrams
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Documentation  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Collection of Kubernetes architecture diagrams.
@@ -45,12 +45,12 @@ Collection of Kubernetes architecture diagrams.
 
 ### BotKube
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
-**Status:** Needs Review
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
+**Status:** Active
 
-Kubernetes monitoring and alerting via chat.
+Kubernetes troubleshooting and monitoring platform with chat integrations and automation plugins.
 
 **Use when**
 
@@ -60,13 +60,13 @@ Kubernetes monitoring and alerting via chat.
 
 - You already have mature alerting pipelines (PagerDuty/Opsgenie) and don't need ChatOps.
 
-[Official site](https://botkube.io) · [Source repository](https://github.com/kubeshop/botkube)
+[Official site](https://botkube.io) · [Documentation](https://docs.botkube.io/) · [Source repository](https://github.com/kubeshop/botkube)
 
 ### Carvel kapp
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Simple deployment tool for Kubernetes.
@@ -83,9 +83,9 @@ Simple deployment tool for Kubernetes.
 
 ### CasaVue
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes cluster visualization and management dashboard.
@@ -102,9 +102,9 @@ Kubernetes cluster visualization and management dashboard.
 
 ### Cluster API
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Declarative APIs and tooling for provisioning, upgrading, and operating multiple Kubernetes clusters.
@@ -121,9 +121,9 @@ Declarative APIs and tooling for provisioning, upgrading, and operating multiple
 
 ### Cluster API Provider AWS
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes-native declarative infrastructure provider for creating and operating self-managed and EKS clusters on AWS.
@@ -140,9 +140,9 @@ Kubernetes-native declarative infrastructure provider for creating and operating
 
 ### crust-gather
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubectl plugin for collecting Kubernetes cluster state, logs, and events into browsable snapshots for debugging and post-mortem analysis.
@@ -159,9 +159,9 @@ Kubectl plugin for collecting Kubernetes cluster state, logs, and events into br
 
 ### Datree
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes policy enforcement tool.
@@ -178,9 +178,9 @@ Kubernetes policy enforcement tool.
 
 ### DC/OS
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source datacenter operating system built on Apache Mesos for running containers and distributed services.
@@ -197,9 +197,9 @@ Open-source datacenter operating system built on Apache Mesos for running contai
 
 ### Desktop Kubernetes
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Tooling to run Kubernetes locally on the desktop.
@@ -216,9 +216,9 @@ Tooling to run Kubernetes locally on the desktop.
 
 ### Docker Swarm
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Container orchestration system by Docker.
@@ -235,9 +235,9 @@ Container orchestration system by Docker.
 
 ### Dockhand
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes deployment and management tool.
@@ -254,9 +254,9 @@ Kubernetes deployment and management tool.
 
 ### Easykube
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Developer tool for reasoning about and running complex microservice backends locally with Kubernetes.
@@ -273,9 +273,9 @@ Developer tool for reasoning about and running complex microservice backends loc
 
 ### ECS
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Amazon Elastic Container Service.
@@ -292,9 +292,9 @@ Amazon Elastic Container Service.
 
 ### EKS
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Amazon Elastic Kubernetes Service.
@@ -311,9 +311,9 @@ Amazon Elastic Kubernetes Service.
 
 ### EKS Node Viewer
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Visualize EKS node usage and capacity.
@@ -330,9 +330,9 @@ Visualize EKS node usage and capacity.
 
 ### Fargate
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Serverless compute for containers.
@@ -349,9 +349,9 @@ Serverless compute for containers.
 
 ### Forecastle
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes dashboard that discovers and displays application URLs from Ingress annotations as a dynamic launchpad.
@@ -368,9 +368,9 @@ Kubernetes dashboard that discovers and displays application URLs from Ingress a
 
 ### FreeLens
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Community-maintained Kubernetes IDE fork.
@@ -387,9 +387,9 @@ Community-maintained Kubernetes IDE fork.
 
 ### Gateway API
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes service networking APIs.
@@ -406,9 +406,9 @@ Kubernetes service networking APIs.
 
 ### GKE
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Google Kubernetes Engine.
@@ -425,9 +425,9 @@ Google Kubernetes Engine.
 
 ### Goldilocks
 
-**Categories:** Kubernetes distributions and operations, Monitoring, metrics, logs and tracing  
-**Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, Observability Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations, Monitoring, metrics, logs and tracing
+**Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, Observability Engineer
+**Model:** Oss
 **Status:** Active
 
 Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
@@ -444,9 +444,9 @@ Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 
 ### Hanoi CLI
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Interactive rebalance advisor for Kubernetes.
@@ -463,9 +463,9 @@ Interactive rebalance advisor for Kubernetes.
 
 ### ingress2gateway
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Translate Ingress and provider-specific resources into Gateway API manifests.
@@ -482,9 +482,9 @@ Translate Ingress and provider-specific resources into Gateway API manifests.
 
 ### k0s
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes distribution.
@@ -501,9 +501,9 @@ Kubernetes distribution.
 
 ### k0smotron
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator and Cluster API provider for managing hosted k0s control planes and child clusters inside Kubernetes.
@@ -520,9 +520,9 @@ Kubernetes operator and Cluster API provider for managing hosted k0s control pla
 
 ### k10ls
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Native Kubernetes API-based CLI for keeping port-forwards to pods and services open across clusters and contexts.
@@ -539,9 +539,9 @@ Native Kubernetes API-based CLI for keeping port-forwards to pods and services o
 
 ### k3d
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lightweight wrapper to run k3s (Rancher Lab's minimal Kubernetes distribution) in Docker.
@@ -558,9 +558,9 @@ Lightweight wrapper to run k3s (Rancher Lab's minimal Kubernetes distribution) i
 
 ### k3s
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lightweight Kubernetes by Rancher.
@@ -577,9 +577,9 @@ Lightweight Kubernetes by Rancher.
 
 ### K8s Cleaner (Sveltos)
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes resource cleaner.
@@ -596,9 +596,9 @@ Kubernetes resource cleaner.
 
 ### K8s Diagram Builder
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Visual generator for Kubernetes YAML and topology diagrams.
@@ -615,9 +615,9 @@ Visual generator for Kubernetes YAML and topology diagrams.
 
 ### k8s-d2
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Generate D2 diagrams from Kubernetes topology and resources.
@@ -634,9 +634,9 @@ Generate D2 diagrams from Kubernetes topology and resources.
 
 ### k8sql
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Query Kubernetes clusters with SQL and PRQL.
@@ -653,9 +653,9 @@ Query Kubernetes clusters with SQL and PRQL.
 
 ### K8Studio
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Visual IDE to manage and monitor Kubernetes clusters.
@@ -672,9 +672,9 @@ Visual IDE to manage and monitor Kubernetes clusters.
 
 ### K9s
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Terminal UI to manage Kubernetes clusters.
@@ -691,9 +691,9 @@ Terminal UI to manage Kubernetes clusters.
 
 ### k9sight
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Keyboard-driven TUI for debugging Kubernetes workloads and resources.
@@ -710,9 +710,9 @@ Keyboard-driven TUI for debugging Kubernetes workloads and resources.
 
 ### KDash
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Fast terminal dashboard for Kubernetes.
@@ -729,9 +729,9 @@ Fast terminal dashboard for Kubernetes.
 
 ### KHI (Kubernetes History Inspector)
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Visualize and inspect Kubernetes cluster event history.
@@ -748,9 +748,9 @@ Visualize and inspect Kubernetes cluster event history.
 
 ### kimspect
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Inspect container images used by pods, nodes, namespaces, and registries from the CLI.
@@ -767,9 +767,9 @@ Inspect container images used by pods, nodes, namespaces, and registries from th
 
 ### kind
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes IN Docker - local clusters for testing.
@@ -786,9 +786,9 @@ Kubernetes IN Docker - local clusters for testing.
 
 ### Kogaro
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes configuration hygiene agent that catches silent failures and misconfigurations before they become incidents.
@@ -805,9 +805,9 @@ Kubernetes configuration hygiene agent that catches silent failures and misconfi
 
 ### Kompose
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Convert Docker Compose to Kubernetes.
@@ -824,9 +824,9 @@ Convert Docker Compose to Kubernetes.
 
 ### Kontroler
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes-native workflow orchestration platform with controller, API, and UI components.
@@ -843,9 +843,9 @@ Kubernetes-native workflow orchestration platform with controller, API, and UI c
 
 ### Kor
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 CLI for discovering unused and orphaned Kubernetes resources.
@@ -862,9 +862,9 @@ CLI for discovering unused and orphaned Kubernetes resources.
 
 ### krew
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 `kubectl` plugin manager.
@@ -881,9 +881,9 @@ CLI for discovering unused and orphaned Kubernetes resources.
 
 ### kuba
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Fuzzy, multi-cluster kubectl companion for faster day-to-day Kubernetes operations.
@@ -900,9 +900,9 @@ Fuzzy, multi-cluster kubectl companion for faster day-to-day Kubernetes operatio
 
 ### Kube-Argus
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Real-time Kubernetes dashboard.
@@ -919,9 +919,9 @@ Real-time Kubernetes dashboard.
 
 ### kube-bench
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 CIS Kubernetes benchmark tool.
@@ -938,9 +938,9 @@ CIS Kubernetes benchmark tool.
 
 ### kube-hunter
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes security testing tool.
@@ -957,9 +957,9 @@ Kubernetes security testing tool.
 
 ### kube-score
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Static analysis tool for Kubernetes YAML manifests with best-practice recommendations.
@@ -976,9 +976,9 @@ Static analysis tool for Kubernetes YAML manifests with best-practice recommenda
 
 ### kubeadm
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Tool for bootstrapping Kubernetes clusters.
@@ -995,9 +995,9 @@ Tool for bootstrapping Kubernetes clusters.
 
 ### Kubeapps
 
-**Categories:** Deprecated and historical tools, Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Deprecated and historical tools, Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Archived
 **Repository:** Archived
 
@@ -1015,9 +1015,9 @@ Kubernetes application dashboard for deploying and managing Helm charts and othe
 
 ### kubebuilder Book
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Documentation  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Guide for building Kubernetes APIs using `kubebuilder`.
@@ -1034,9 +1034,9 @@ Guide for building Kubernetes APIs using `kubebuilder`.
 
 ### kubecfg
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 CLI/TUI for managing kubeconfig contexts and namespaces.
@@ -1053,9 +1053,9 @@ CLI/TUI for managing kubeconfig contexts and namespaces.
 
 ### KubeClipper
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Web-based tool for rapid deployment and management of Kubernetes clusters.
@@ -1072,9 +1072,9 @@ Web-based tool for rapid deployment and management of Kubernetes clusters.
 
 ### kubeconform
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Fast Kubernetes manifest schema validation (offline schema support).
@@ -1091,9 +1091,9 @@ Fast Kubernetes manifest schema validation (offline schema support).
 
 ### kubectl
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes command-line tool.
@@ -1110,9 +1110,9 @@ Kubernetes command-line tool.
 
 ### kubectl Quick Reference
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Documentation  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Cheat sheet for `kubectl` commands.
@@ -1129,9 +1129,9 @@ Cheat sheet for `kubectl` commands.
 
 ### kubectl-ai
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AI-powered kubectl plugin.
@@ -1148,9 +1148,9 @@ AI-powered kubectl plugin.
 
 ### kubectl-browse-pvc
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Browse Kubernetes PVCs from the CLI.
@@ -1167,9 +1167,9 @@ Browse Kubernetes PVCs from the CLI.
 
 ### kubectl-df-pv
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Show disk usage for Kubernetes persistent volumes.
@@ -1186,9 +1186,9 @@ Show disk usage for Kubernetes persistent volumes.
 
 ### kubectl-explore
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Interactive kubectl resource explorer.
@@ -1205,9 +1205,9 @@ Interactive kubectl resource explorer.
 
 ### kubectl-klock
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lock resources in Kubernetes clusters.
@@ -1224,9 +1224,9 @@ Lock resources in Kubernetes clusters.
 
 ### kubectx + kubens
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Switch contexts/namespaces quickly.
@@ -1243,9 +1243,9 @@ Switch contexts/namespaces quickly.
 
 ### Kubedock
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Minimal Docker API implementation that orchestrates containers on Kubernetes clusters.
@@ -1262,9 +1262,9 @@ Minimal Docker API implementation that orchestrates containers on Kubernetes clu
 
 ### KubeEdge
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Extend Kubernetes to edge computing.
@@ -1281,9 +1281,9 @@ Extend Kubernetes to edge computing.
 
 ### KubeFlame
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes flame graph profiling tool.
@@ -1300,9 +1300,9 @@ Kubernetes flame graph profiling tool.
 
 ### Kubeflow
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 ML workflows on Kubernetes.
@@ -1319,9 +1319,9 @@ ML workflows on Kubernetes.
 
 ### KubeGUI
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 GUI for Kubernetes cluster management.
@@ -1338,9 +1338,9 @@ GUI for Kubernetes cluster management.
 
 ### KubeHatch
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Minimal internal Kubernetes platform for creating isolated ephemeral vClusters with a CLI and web UI.
@@ -1357,9 +1357,9 @@ Minimal internal Kubernetes platform for creating isolated ephemeral vClusters w
 
 ### KubeLinter
 
-**Categories:** Kubernetes distributions and operations, Application and cloud security  
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations, Application and cloud security
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
+**Model:** Oss
 **Status:** Active
 
 Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
@@ -1378,9 +1378,9 @@ Static analysis tool for Kubernetes YAML and Helm manifests that detects securit
 
 ### KubePlumber
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes network connectivity validation and troubleshooting tool.
@@ -1397,9 +1397,9 @@ Kubernetes network connectivity validation and troubleshooting tool.
 
 ### Kubernetes Common Errors & Fixes
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Documentation  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Troubleshooting Kubernetes.
@@ -1416,9 +1416,9 @@ Troubleshooting Kubernetes.
 
 ### Kubernetes Dashboard
 
-**Categories:** Deprecated and historical tools, Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Deprecated and historical tools, Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Archived
 **Repository:** Archived
 
@@ -1436,9 +1436,9 @@ Web UI for Kubernetes.
 
 ### Kubernetes The Hard Way
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Documentation  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Guide to bootstrapping Kubernetes the hard way.
@@ -1455,9 +1455,9 @@ Guide to bootstrapping Kubernetes the hard way.
 
 ### Kubescape
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes security scanning.
@@ -1474,9 +1474,9 @@ Kubernetes security scanning.
 
 ### Kubesec
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Security risk analysis for Kubernetes YAML.
@@ -1493,9 +1493,9 @@ Security risk analysis for Kubernetes YAML.
 
 ### Kubeshark
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes traffic analyzer.
@@ -1512,9 +1512,9 @@ Kubernetes traffic analyzer.
 
 ### KubeSolo
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Native macOS application to run a local Kubernetes cluster.
@@ -1531,9 +1531,9 @@ Native macOS application to run a local Kubernetes cluster.
 
 ### KubeSpec
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Documentation  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Interactive Kubernetes API specification reference.
@@ -1550,9 +1550,9 @@ Interactive Kubernetes API specification reference.
 
 ### KubeSphere
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes multi-tenant management platform.
@@ -1569,9 +1569,9 @@ Kubernetes multi-tenant management platform.
 
 ### Kubetail
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes log exploration and tailing tool.
@@ -1588,9 +1588,9 @@ Kubernetes log exploration and tailing tool.
 
 ### KubeTUI
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Terminal UI for Kubernetes clusters.
@@ -1607,9 +1607,9 @@ Terminal UI for Kubernetes clusters.
 
 ### KubeView
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes cluster visualizer.
@@ -1626,9 +1626,9 @@ Kubernetes cluster visualizer.
 
 ### Kubevious
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes configuration analysis.
@@ -1645,9 +1645,9 @@ Kubernetes configuration analysis.
 
 ### KubeVirt
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Run VMs on Kubernetes.
@@ -1664,9 +1664,9 @@ Run VMs on Kubernetes.
 
 ### Kubey
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Self-hosted multi-cluster Kubernetes web UI with cross-cluster comparison, live logs, and team access.
@@ -1683,10 +1683,10 @@ Self-hosted multi-cluster Kubernetes web UI with cross-cluster comparison, live 
 
 ### Kueue
 
-**Categories:** Kubernetes distributions and operations, Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
-**Status:** Needs Review
+**Categories:** Kubernetes distributions and operations, Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
+**Status:** Active
 
 Kubernetes-native job queueing and quota management controller for batch and AI/ML workloads.
 
@@ -1698,13 +1698,13 @@ Kubernetes-native job queueing and quota management controller for batch and AI/
 
 - You only run long-lived services with no batch jobs.
 
-[Official site](https://kueue.sigs.k8s.io) · [Source repository](https://github.com/kubernetes-sigs/kueue)
+[Official site](https://kueue.sigs.k8s.io) · [Documentation](https://kueue.sigs.k8s.io/docs/) · [Source repository](https://github.com/kubernetes-sigs/kueue)
 
 ### Kustomize
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes configuration customization tool.
@@ -1721,9 +1721,9 @@ Kubernetes configuration customization tool.
 
 ### Lens
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes IDE (the former open-source core has been retired; current product is proprietary).
@@ -1740,9 +1740,9 @@ Kubernetes IDE (the former open-source core has been retired; current product is
 
 ### lfk
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lightning-fast, keyboard-focused TUI for navigating and managing Kubernetes clusters with a three-column Miller columns layout and owner-based resource hierarchy.
@@ -1759,9 +1759,9 @@ Lightning-fast, keyboard-focused TUI for navigating and managing Kubernetes clus
 
 ### MicroK8s
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lightweight Kubernetes by Canonical.
@@ -1778,9 +1778,9 @@ Lightweight Kubernetes by Canonical.
 
 ### Minikube
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Local Kubernetes development environment.
@@ -1797,9 +1797,9 @@ Local Kubernetes development environment.
 
 ### Nomad
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Source Available  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Source Available
 **Status:** Needs Review
 
 HashiCorp scheduler.
@@ -1816,9 +1816,9 @@ HashiCorp scheduler.
 
 ### OKD
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Community Kubernetes distribution upstream of OpenShift.
@@ -1835,9 +1835,9 @@ Community Kubernetes distribution upstream of OpenShift.
 
 ### OpenLens
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open source distribution of Lens features.
@@ -1854,9 +1854,9 @@ Open source distribution of Lens features.
 
 ### Orbit
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes multi-cluster management.
@@ -1873,9 +1873,9 @@ Kubernetes multi-cluster management.
 
 ### Popeye
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes cluster resource sanitizer that scans live clusters for potential issues and misconfigurations.
@@ -1892,9 +1892,9 @@ Kubernetes cluster resource sanitizer that scans live clusters for potential iss
 
 ### Rancher
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Open Core  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Kubernetes management platform by SUSE.
@@ -1911,9 +1911,9 @@ Kubernetes management platform by SUSE.
 
 ### Rancher k3k
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Run and manage k3s clusters via Kubernetes (see docs).
@@ -1930,9 +1930,9 @@ Run and manage k3s clusters via Kubernetes (see docs).
 
 ### Red Hat OpenShift
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Enterprise Kubernetes platform (commercial); upstream community distribution is OKD.
@@ -1949,9 +1949,9 @@ Enterprise Kubernetes platform (commercial); upstream community distribution is 
 
 ### RKE2
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Rancher Kubernetes Engine 2 (hardened Kubernetes).
@@ -1968,9 +1968,9 @@ Rancher Kubernetes Engine 2 (hardened Kubernetes).
 
 ### Rūsternetes
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Educational reimplementation of Kubernetes in Rust.
@@ -1987,9 +1987,9 @@ Educational reimplementation of Kubernetes in Rust.
 
 ### Seabird
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Native desktop app for exploring and managing Kubernetes clusters with an integrated terminal and manifest editor (MPL-2.0).
@@ -2006,9 +2006,9 @@ Native desktop app for exploring and managing Kubernetes clusters with an integr
 
 ### Security Contexts
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Documentation  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Kubernetes security context configuration.
@@ -2025,9 +2025,9 @@ Kubernetes security context configuration.
 
 ### sk8r
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes dashboard.
@@ -2044,9 +2044,9 @@ Kubernetes dashboard.
 
 ### Tarook
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Cloud-native platform for streamlined Kubernetes and infrastructure management.
@@ -2063,9 +2063,9 @@ Cloud-native platform for streamlined Kubernetes and infrastructure management.
 
 ### Tuning Linux Swap for Kubernetes
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Documentation  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 Guide to optimizing swap for Kubernetes nodes.
@@ -2082,9 +2082,9 @@ Guide to optimizing swap for Kubernetes nodes.
 
 ### Typhoon
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platforms.
@@ -2101,9 +2101,9 @@ Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platfo
 
 ### vcluster
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Run virtual Kubernetes clusters inside a host cluster (multi-tenancy / isolation).
@@ -2120,9 +2120,9 @@ Run virtual Kubernetes clusters inside a host cluster (multi-tenancy / isolation
 
 ### webernetes
 
-**Categories:** Kubernetes distributions and operations  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes distributions and operations
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Run Kubernetes entirely in the browser for learning and experimentation.

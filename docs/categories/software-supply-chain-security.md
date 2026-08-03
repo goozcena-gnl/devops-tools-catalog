@@ -7,9 +7,9 @@
 
 ### git push no-mistakes
 
-**Categories:** Software supply-chain security  
-**Roles:** DevSecOps Engineer, Release Engineer  
-**Model:** Unknown  
+**Categories:** Software supply-chain security
+**Roles:** DevSecOps Engineer, Release Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Guardrails to prevent common mistakes when pushing to Git.
@@ -26,9 +26,9 @@ Guardrails to prevent common mistakes when pushing to Git.
 
 ### Husky
 
-**Categories:** Software supply-chain security  
-**Roles:** DevSecOps Engineer, Release Engineer  
-**Model:** Oss  
+**Categories:** Software supply-chain security
+**Roles:** DevSecOps Engineer, Release Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Git hooks for Node.js projects (commonly paired with lint-staged).
@@ -45,9 +45,9 @@ Git hooks for Node.js projects (commonly paired with lint-staged).
 
 ### Lefthook
 
-**Categories:** Software supply-chain security  
-**Roles:** DevSecOps Engineer, Release Engineer  
-**Model:** Oss  
+**Categories:** Software supply-chain security
+**Roles:** DevSecOps Engineer, Release Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Fast Git hooks manager (parallel execution, cross-platform).
@@ -64,9 +64,9 @@ Fast Git hooks manager (parallel execution, cross-platform).
 
 ### pre-commit
 
-**Categories:** Software supply-chain security  
-**Roles:** DevSecOps Engineer, Release Engineer  
-**Model:** Oss  
+**Categories:** Software supply-chain security
+**Roles:** DevSecOps Engineer, Release Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Multi-language Git hook framework (config-driven, reproducible hooks across teams).
@@ -83,9 +83,9 @@ Multi-language Git hook framework (config-driven, reproducible hooks across team
 
 ### simple-git-hooks
 
-**Categories:** Software supply-chain security  
-**Roles:** DevSecOps Engineer, Release Engineer  
-**Model:** Oss  
+**Categories:** Software supply-chain security
+**Roles:** DevSecOps Engineer, Release Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lightweight Git hooks manager for Node.js.

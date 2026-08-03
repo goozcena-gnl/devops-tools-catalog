@@ -16,14 +16,13 @@
 | [Akka.NET](https://getakka.net) | Emerging and experimental tools | oss | needs-review |
 | [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | unknown | needs-review |
 | [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [Amazon Web Services (AWS)](https://aws.amazon.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
-| [Apptio Cloudability](https://www.apptio.com/products/cloudability) | FinOps and sustainability | unknown | needs-review |
 | [Aralez](https://sadoyan.github.io/aralez-docs) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |
-| [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview) | CD, GitOps, release and promotion | oss | needs-review |
-| [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable) | CD, GitOps, release and promotion | oss | needs-review |
+| [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) | CD, GitOps, release and promotion | oss | active |
+| [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [Arize Phoenix](https://arize.com/docs/phoenix) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
@@ -36,13 +35,13 @@
 | [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
-| [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | needs-review |
+| [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | active |
 | [AWS Cloud Quest Practitioner](https://skillbuilder.aws/learn/FU5WCYVGKY/aws-cloud-quest-cloud-practitioner/learn) | Documentation, learning and career resources | documentation | needs-review |
-| [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | unknown | needs-review |
+| [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
 | [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [AWS MCP](https://awslabs.github.io/mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AWS Skill Builder](https://skillbuilder.aws) | Documentation, learning and career resources | documentation | needs-review |
-| [AWS Storage Gateway](https://aws.amazon.com/fr/storagegateway) | Cloud platforms and cloud management | unknown | needs-review |
+| [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) | Cloud platforms and cloud management | commercial | active |
 | [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | needs-review |
 | [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | unknown | needs-review |
@@ -61,7 +60,7 @@
 | [Bazel](https://bazel.build) | Containers and image tooling | oss | needs-review |
 | [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [BMC Control-M](https://www.bmc.com/it-solutions/control-m.html) | Emerging and experimental tools | unknown | needs-review |
-| [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | needs-review |
+| [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | active |
 | [Brainboard](https://www.brainboard.co) | Emerging and experimental tools | unknown | needs-review |
 | [Braintrust](https://www.braintrust.dev) | Emerging and experimental tools | open-core | needs-review |
 | [Buildah](https://buildah.io) | Containers and image tooling | oss | needs-review |
@@ -70,7 +69,7 @@
 | [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | unknown | needs-review |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
-| [Capsule](https://capsule.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Carvel](https://carvel.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Carvel kapp](https://carvel.dev/kapp) | Kubernetes distributions and operations | oss | needs-review |
 | [Carvel ytt](https://carvel.dev/ytt) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -83,11 +82,11 @@
 | [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Chapril Services](https://www.chapril.org/-services-.html) | Emerging and experimental tools | unknown | needs-review |
 | [Chisel Operator](https://chisel.fyralabs.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | needs-review |
+| [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Civo](https://www.civo.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [Claude Code Cheat Sheet](https://shipyard.build/blog/claude-code-cheat-sheet) | Documentation, learning and career resources | documentation | needs-review |
 | [Clone-Wars](https://github.com/GorvGoyl/Clone-Wars) | Emerging and experimental tools | oss | needs-review |
-| [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | unknown | needs-review |
+| [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | commercial | active |
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | needs-review |
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | unknown | needs-review |
@@ -225,6 +224,7 @@
 | [HwameiStor](https://hwameistor.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Hybernate](https://okedeji.io/hybernate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [IBM Cloud](https://www.ibm.com/cloud) | Cloud platforms and cloud management | unknown | needs-review |
+| [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
 | [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | unknown | needs-review |
 | [IcePanel](https://icepanel.io) | Emerging and experimental tools | unknown | needs-review |
 | [Informatica](https://www.informatica.com) | Emerging and experimental tools | unknown | needs-review |
@@ -349,7 +349,7 @@
 | [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubex](https://kubex.ai) | FinOps and sustainability | unknown | needs-review |
 | [Kubey](https://kubey.app) | Kubernetes distributions and operations | oss | needs-review |
-| [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | active |
 | [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | needs-review |
 | [Kustomize](https://kustomize.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KUTTL](https://kuttl.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |

@@ -7,9 +7,9 @@
 
 ### Bazel
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Fast, scalable, multi-language build system.
@@ -26,9 +26,9 @@ Fast, scalable, multi-language build system.
 
 ### Buildah
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Build OCI images without a daemon.
@@ -45,9 +45,9 @@ Build OCI images without a daemon.
 
 ### BuildKit
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Next-generation Docker image build engine used by Buildx.
@@ -64,9 +64,9 @@ Next-generation Docker image build engine used by Buildx.
 
 ### cek
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Inspect OCI image filesystems and layers without running containers.
@@ -83,9 +83,9 @@ Inspect OCI image filesystems and layers without running containers.
 
 ### Distroless
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Minimal container images for secure deployments.
@@ -102,9 +102,9 @@ Minimal container images for secure deployments.
 
 ### Docker Build
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Docker image build system.
@@ -121,9 +121,9 @@ Docker image build system.
 
 ### Docker Buildx
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Docker CLI plugin for extended build capabilities.
@@ -140,9 +140,9 @@ Docker CLI plugin for extended build capabilities.
 
 ### Docker Offload
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Offload Docker builds to the cloud.
@@ -159,9 +159,9 @@ Offload Docker builds to the cloud.
 
 ### Earthly
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Build automation framework.
@@ -178,9 +178,9 @@ Build automation framework.
 
 ### Gradle
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Flexible build automation tool for Java and other languages.
@@ -197,9 +197,9 @@ Flexible build automation tool for Java and other languages.
 
 ### Kaniko
 
-**Categories:** Deprecated and historical tools, Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Deprecated and historical tools, Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Archived
 **Repository:** Archived
 
@@ -217,9 +217,9 @@ Build container images in Kubernetes without Docker daemon.
 
 ### Ko
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Build Go apps into container images.
@@ -236,9 +236,9 @@ Build Go apps into container images.
 
 ### Nix
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Reproducible build and package manager.
@@ -255,9 +255,9 @@ Reproducible build and package manager.
 
 ### sbt
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Interactive build tool for Scala, Java, and other JVM projects.
@@ -274,9 +274,9 @@ Interactive build tool for Scala, Java, and other JVM projects.
 
 ### Shipwright
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Framework for building container images on Kubernetes.
@@ -293,9 +293,9 @@ Framework for building container images on Kubernetes.
 
 ### Skaffold
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Command-line workflow tool for fast, repeatable Kubernetes development across build, push, deploy, and debug loops.
@@ -312,9 +312,9 @@ Command-line workflow tool for fast, repeatable Kubernetes development across bu
 
 ### Skopeo
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Daemonless tool to inspect, copy, sign, and sync container images across registries and local stores.
@@ -331,9 +331,9 @@ Daemonless tool to inspect, copy, sign, and sync container images across registr
 
 ### werf
 
-**Categories:** Containers and image tooling  
-**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Containers and image tooling
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 GitOps tool for building and deploying containers.

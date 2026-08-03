@@ -8,7 +8,7 @@
 - [Atlantis](https://www.runatlantis.io) — Self-hosted pull-request automation for Terraform and OpenTofu plans and applies.
 - [atmos](https://atmos.tools) — Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
 - [AWS CDK](https://aws.amazon.com/cdk) — Infrastructure as code framework that defines cloud resources in familiar programming languages.
-- [AWS CloudFormation](https://aws.amazon.com/cloudformation) — AWS-native infrastructure provisioning service (templates/stacks).
+- [AWS CloudFormation](https://aws.amazon.com/cloudformation) — Managed AWS infrastructure provisioning service for modeling resources as templates and stacks.
 - [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) — Declarative IaC language for Azure Resource Manager deployments.
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) — Microsoft-curated, consistently designed Bicep and Terraform modules for Azure resources.
 - [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.

@@ -7,9 +7,9 @@
 
 ### Atmosly
 
-**Categories:** Platform engineering and internal developer platforms  
-**Roles:** Platform Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Platform engineering and internal developer platforms
+**Roles:** Platform Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Platform engineering automation for self-service environments and app delivery.
@@ -26,9 +26,9 @@ Platform engineering automation for self-service environments and app delivery.
 
 ### Backstage
 
-**Categories:** Platform engineering and internal developer platforms  
-**Roles:** Platform Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Platform engineering and internal developer platforms
+**Roles:** Platform Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Internal developer portal (IDP) / software catalog for improving developer experience.
@@ -45,9 +45,9 @@ Internal developer portal (IDP) / software catalog for improving developer exper
 
 ### Garden
 
-**Categories:** Platform engineering and internal developer platforms  
-**Roles:** Platform Engineer, Developer Experience Engineer  
-**Model:** Oss  
+**Categories:** Platform engineering and internal developer platforms
+**Roles:** Platform Engineer, Developer Experience Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Developer-first automation for building/testing/deploying cloud-native apps.
@@ -64,9 +64,9 @@ Developer-first automation for building/testing/deploying cloud-native apps.
 
 ### Humanitec
 
-**Categories:** Platform engineering and internal developer platforms  
-**Roles:** Platform Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Platform engineering and internal developer platforms
+**Roles:** Platform Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Internal developer platform for platform engineering (app/service delivery with abstractions).
@@ -83,9 +83,9 @@ Internal developer platform for platform engineering (app/service delivery with 
 
 ### kubara
 
-**Categories:** Platform engineering and internal developer platforms  
-**Roles:** Platform Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Platform engineering and internal developer platforms
+**Roles:** Platform Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Platform engineering framework for building internal platforms.
@@ -102,9 +102,9 @@ Platform engineering framework for building internal platforms.
 
 ### OpenRun
 
-**Categories:** Platform engineering and internal developer platforms  
-**Roles:** Platform Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Platform engineering and internal developer platforms
+**Roles:** Platform Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Internal tools deployment platform.
@@ -121,9 +121,9 @@ Internal tools deployment platform.
 
 ### OpsLevel
 
-**Categories:** Platform engineering and internal developer platforms  
-**Roles:** Platform Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Platform engineering and internal developer platforms
+**Roles:** Platform Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 SaaS internal developer portal and service catalog (scorecards, ownership, maturity).
@@ -140,9 +140,9 @@ SaaS internal developer portal and service catalog (scorecards, ownership, matur
 
 ### Port
 
-**Categories:** Platform engineering and internal developer platforms  
-**Roles:** Platform Engineer, Developer Experience Engineer  
-**Model:** Unknown  
+**Categories:** Platform engineering and internal developer platforms
+**Roles:** Platform Engineer, Developer Experience Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Internal developer portal and service catalog with automations/workflows.

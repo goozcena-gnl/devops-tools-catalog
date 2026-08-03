@@ -10,10 +10,10 @@
 | [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) | Monitoring, metrics, logs and tracing | documentation | needs-review |
-| [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts) | Monitoring, metrics, logs and tracing | documentation | needs-review |
+| [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) | Monitoring, metrics, logs and tracing | documentation | active |
 | [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | active |
 | [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [cardamon](https://github.com/dominikhei/cardamon) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |

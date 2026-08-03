@@ -12,17 +12,17 @@
 - [Ansible Lint](https://ansible.readthedocs.io/projects/lint) — Best practices checker for Ansible.
 - [Apache JMeter](https://jmeter.apache.org) — Load testing and performance measurement tool.
 - [Appcircle](https://appcircle.io) — CI/CD platform for mobile apps.
-- [Argo Workflows](https://argoproj.github.io/argo-workflows) — Kubernetes-native workflow engine.
+- [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) — Kubernetes-native workflow engine for orchestrating DAG-based CI, data, and ML pipelines.
 - [Arize Phoenix](https://arize.com/docs/phoenix) — LLM observability and evaluation platform.
 - [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager JSON template format for declarative Azure deployments, with Bicep recommended for new authoring.
 - [Artifact Hub](https://artifacthub.io) — Discover and share packages (Helm charts, operators, etc.).
-- [Artillery](https://www.artillery.io) — Modern load testing toolkit.
+- [Artillery](https://www.artillery.io) — Load testing platform and toolkit for HTTP, APIs, and Playwright-based scenarios.
 - [Atlantis](https://www.runatlantis.io) — Self-hosted pull-request automation for Terraform and OpenTofu plans and applies.
 - [atmos](https://atmos.tools) — Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
 - [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) — Collection of 130+ specialized Codex subagents for a wide range of development use cases.
 - [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — MCP server for AWS Billing & Cost Management use cases (announced by AWS).
 - [AWS CDK](https://aws.amazon.com/cdk) — Infrastructure as code framework that defines cloud resources in familiar programming languages.
-- [AWS CloudFormation](https://aws.amazon.com/cloudformation) — AWS-native infrastructure provisioning service (templates/stacks).
+- [AWS CloudFormation](https://aws.amazon.com/cloudformation) — Managed AWS infrastructure provisioning service for modeling resources as templates and stacks.
 - [AWS Lambda](https://aws.amazon.com/lambda) — Serverless compute service by AWS.
 - [AWS MCP](https://awslabs.github.io/mcp) — AWS implementation of Model Context Protocol.
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).

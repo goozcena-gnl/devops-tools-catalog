@@ -12,7 +12,7 @@
 | [Akka.NET](https://getakka.net) | Emerging and experimental tools | oss | needs-review |
 | [Alpine Linux](https://github.com/alpinelinux) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [Amazon Web Services (AWS)](https://aws.amazon.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Angular](https://angular.dev) | Developer experience and local environments | oss | needs-review |
 | [Ansible](https://www.ansible.com) | Configuration management | oss | needs-review |
 | [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | active |
@@ -24,14 +24,14 @@
 | [AppImage](https://appimage.org) | Foundations, Linux and scripting | oss | needs-review |
 | [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
-| [Argo Workflows](https://argoproj.github.io/argo-workflows) | CI, build and testing | oss | needs-review |
+| [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) | CI, build and testing | oss | active |
 | [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |
-| [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview) | CD, GitOps, release and promotion | oss | needs-review |
-| [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable) | CD, GitOps, release and promotion | oss | needs-review |
+| [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) | CD, GitOps, release and promotion | oss | active |
+| [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
 | [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
-| [Artillery](https://www.artillery.io) | CI, build and testing | oss | needs-review |
+| [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | needs-review |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
@@ -39,15 +39,15 @@
 | [Awesome DevOps](https://github.com/wmariuss/awesome-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Awesome Kubernetes Operator Resources](https://github.com/calvin-puram/awesome-kubernetes-operator-resources) | Documentation, learning and career resources | documentation | needs-review |
 | [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) | Monitoring, metrics, logs and tracing | documentation | needs-review |
-| [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts) | Monitoring, metrics, logs and tracing | documentation | needs-review |
-| [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | needs-review |
+| [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) | Monitoring, metrics, logs and tracing | documentation | active |
+| [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | active |
 | [AWS Cloud Quest Practitioner](https://skillbuilder.aws/learn/FU5WCYVGKY/aws-cloud-quest-cloud-practitioner/learn) | Documentation, learning and career resources | documentation | needs-review |
 | [AWS Cloud9](https://aws.amazon.com/cloud9) | Developer experience and local environments | unknown | needs-review |
-| [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | unknown | needs-review |
+| [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
 | [AWS Fault Injection Service](https://aws.amazon.com/fis) | Chaos and performance engineering | unknown | needs-review |
 | [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [AWS Skill Builder](https://skillbuilder.aws) | Documentation, learning and career resources | documentation | needs-review |
-| [AWS Storage Gateway](https://aws.amazon.com/fr/storagegateway) | Cloud platforms and cloud management | unknown | needs-review |
+| [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) | Cloud platforms and cloud management | commercial | active |
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | needs-review |
 | [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) | Chaos and performance engineering | unknown | needs-review |
 | [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | unknown | needs-review |
@@ -85,7 +85,7 @@
 | [Buildkite](https://buildkite.com) | CI, build and testing | unknown | needs-review |
 | [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | unknown | needs-review |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
-| [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | active |
 | [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
 | [Cadence CI](https://cadence.ci) | CI, build and testing | unknown | needs-review |
 | [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -131,14 +131,14 @@
 | [Confidential Containers](https://confidentialcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [ConfigHub](https://www.confighub.com) | Configuration management | unknown | needs-review |
 | [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | unknown | needs-review |
-| [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | needs-review |
+| [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | active |
 | [Continue](https://www.continue.dev) | Developer experience and local environments | oss | needs-review |
 | [Convox](https://www.convox.com) | CD, GitOps, release and promotion | unknown | needs-review |
 | [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) | Emerging and experimental tools | unknown | needs-review |
 | [cosign (sigstore)](https://docs.sigstore.dev/cosign) | Emerging and experimental tools | oss | needs-review |
-| [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | needs-review |
+| [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | active |
 | [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | needs-review |
 | [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | needs-review |

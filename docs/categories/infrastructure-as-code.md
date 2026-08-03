@@ -7,9 +7,9 @@
 
 ### ARM Templates
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Active
 
 Azure Resource Manager JSON template format for declarative Azure deployments, with Bicep recommended for new authoring.
@@ -26,9 +26,9 @@ Azure Resource Manager JSON template format for declarative Azure deployments, w
 
 ### Atlantis
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Active
 
 Self-hosted pull-request automation for Terraform and OpenTofu plans and applies.
@@ -45,9 +45,9 @@ Self-hosted pull-request automation for Terraform and OpenTofu plans and applies
 
 ### atmos
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
@@ -64,10 +64,10 @@ Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile config
 
 ### AWS CDK
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
-**Status:** Needs Review
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
+**Status:** Active
 
 Infrastructure as code framework that defines cloud resources in familiar programming languages.
 
@@ -79,16 +79,16 @@ Infrastructure as code framework that defines cloud resources in familiar progra
 
 - You need multi-cloud support.
 
-[Official site](https://aws.amazon.com/cdk) · [Source repository](https://github.com/aws/aws-cdk)
+[Official site](https://aws.amazon.com/cdk) · [Documentation](https://docs.aws.amazon.com/cdk/) · [Source repository](https://github.com/aws/aws-cdk)
 
 ### AWS CloudFormation
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
-**Status:** Needs Review
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Commercial
+**Status:** Active
 
-AWS-native infrastructure provisioning service (templates/stacks).
+Managed AWS infrastructure provisioning service for modeling resources as templates and stacks.
 
 **Use when**
 
@@ -98,13 +98,13 @@ AWS-native infrastructure provisioning service (templates/stacks).
 
 - Templates become unwieldy or you need multi-cloud.
 
-[Official site](https://aws.amazon.com/cloudformation) · [Source repository](https://github.com/aws-cloudformation/aws-cloudformation-templates)
+[Official site](https://aws.amazon.com/cloudformation) · [Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) · [Source repository](https://github.com/aws-cloudformation/aws-cloudformation-templates)
 
 ### Azure Bicep
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Declarative IaC language for Azure Resource Manager deployments.
@@ -121,9 +121,9 @@ Declarative IaC language for Azure Resource Manager deployments.
 
 ### Azure Verified Modules (AVM)
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Microsoft-curated, consistently designed Bicep and Terraform modules for Azure resources.
@@ -140,9 +140,9 @@ Microsoft-curated, consistently designed Bicep and Terraform modules for Azure r
 
 ### AzureNamingTool
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
@@ -159,9 +159,9 @@ NET Blazor app with REST API for generating and validating Azure resource names 
 
 ### cdk8s
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Define Kubernetes applications and reusable abstractions in general-purpose programming languages and synthesize them to YAML.
@@ -178,9 +178,9 @@ Define Kubernetes applications and reusable abstractions in general-purpose prog
 
 ### CDKTF
 
-**Categories:** Deprecated and historical tools, Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Source Available  
+**Categories:** Deprecated and historical tools, Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Source Available
 **Status:** Archived
 **Repository:** Archived
 
@@ -198,9 +198,9 @@ Terraform CDK framework.
 
 ### CloudCustodian
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Cloud governance rules engine.
@@ -217,9 +217,9 @@ Cloud governance rules engine.
 
 ### Crossplane
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes-native IaC control plane.
@@ -236,9 +236,9 @@ Kubernetes-native IaC control plane.
 
 ### Env0
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Infrastructure as Code automation and governance platform.
@@ -255,9 +255,9 @@ Infrastructure as Code automation and governance platform.
 
 ### Infracost
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Open Core  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Cost estimates for IaC projects.
@@ -274,9 +274,9 @@ Cost estimates for IaC projects.
 
 ### KICS
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 IaC scanning for security issues.
@@ -293,9 +293,9 @@ IaC scanning for security issues.
 
 ### KusionStack
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Infrastructure automation platform.
@@ -312,9 +312,9 @@ Infrastructure automation platform.
 
 ### OpenTaco
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Terraform/OpenTofu CI orchestration and pull-request automation.
@@ -331,9 +331,9 @@ Terraform/OpenTofu CI orchestration and pull-request automation.
 
 ### OpenTofu
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Open-source Terraform fork.
@@ -350,9 +350,9 @@ Open-source Terraform fork.
 
 ### Packer
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Source Available  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Source Available
 **Status:** Needs Review
 
 Machine image creation.
@@ -369,9 +369,9 @@ Machine image creation.
 
 ### Pluralith
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
@@ -388,9 +388,9 @@ Visualize and document Terraform infrastructure with automatically generated arc
 
 ### Pulumi
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Open Core  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 IaC using real programming languages.
@@ -407,9 +407,9 @@ IaC using real programming languages.
 
 ### Scalr
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Terraform automation and collaboration software.
@@ -426,9 +426,9 @@ Terraform automation and collaboration software.
 
 ### Score
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Developer-centric, platform-agnostic workload specification for defining runtime requirements once in `score.yaml` and targeting multiple environments.
@@ -445,9 +445,9 @@ Developer-centric, platform-agnostic workload specification for defining runtime
 
 ### Spacelift
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 IaC automation with policy-as-code and collaboration.
@@ -466,9 +466,9 @@ IaC automation with policy-as-code and collaboration.
 
 ### Terraform
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Source Available  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Source Available
 **Status:** Needs Review
 
 Infrastructure provisioning tool.
@@ -485,9 +485,9 @@ Infrastructure provisioning tool.
 
 ### Terraform Cloud
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Unknown  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Managed service for Terraform workflows and state management.
@@ -504,9 +504,9 @@ Managed service for Terraform workflows and state management.
 
 ### terraform-aws-eks-operation-scheduler
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge for cost savings.
@@ -523,9 +523,9 @@ Terraform module that schedules AWS EKS node groups to scale up and down with La
 
 ### terraform-docs
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Generate documentation from Terraform modules in various output formats.
@@ -542,9 +542,9 @@ Generate documentation from Terraform modules in various output formats.
 
 ### terraform-plugin-docs
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Generate and validate Terraform provider/plugin documentation from source.
@@ -561,9 +561,9 @@ Generate and validate Terraform provider/plugin documentation from source.
 
 ### Terragrunt
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Terraform wrapper for DRY configurations.
@@ -580,9 +580,9 @@ Terraform wrapper for DRY configurations.
 
 ### Terrateam
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Open Core  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 GitOps-style Terraform pull-request automation with collaboration features.
@@ -599,9 +599,9 @@ GitOps-style Terraform pull-request automation with collaboration features.
 
 ### terravision
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google, Azure).
@@ -618,9 +618,9 @@ Generate professional cloud architecture diagrams automatically from Terraform c
 
 ### TFLint
 
-**Categories:** Infrastructure as Code  
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer  
-**Model:** Oss  
+**Categories:** Infrastructure as Code
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Terraform linter (style + provider-specific rules).

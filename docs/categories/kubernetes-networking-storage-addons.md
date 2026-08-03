@@ -7,9 +7,9 @@
 
 ### Actions Runner Controller
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Run GitHub Actions runners on Kubernetes.
@@ -26,9 +26,9 @@ Run GitHub Actions runners on Kubernetes.
 
 ### Agones
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes-native platform for hosting, running, and scaling dedicated game servers.
@@ -45,9 +45,9 @@ Kubernetes-native platform for hosting, running, and scaling dedicated game serv
 
 ### AI Gateway (Envoy)
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Envoy-based AI gateway for managing LLM traffic in Kubernetes.
@@ -64,9 +64,9 @@ Envoy-based AI gateway for managing LLM traffic in Kubernetes.
 
 ### Aralez
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator (see docs).
@@ -83,9 +83,9 @@ Kubernetes operator (see docs).
 
 ### AWS ACK RDS Controller
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
@@ -102,9 +102,9 @@ AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
 
 ### Azure Service Operator
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator for Azure resources.
@@ -121,9 +121,9 @@ Kubernetes operator for Azure resources.
 
 ### BunkerWeb
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security  
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
+**Model:** Oss
 **Status:** Active
 
 Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
@@ -142,12 +142,12 @@ Open source, cloud-native web application firewall and security gateway for reve
 
 ### Capsule
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security  
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
-**Model:** Oss  
-**Status:** Needs Review
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
+**Model:** Oss
+**Status:** Active
 
-Kubernetes multi-tenancy and policy enforcement.
+Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 
 **Use when**
 
@@ -159,13 +159,13 @@ Kubernetes multi-tenancy and policy enforcement.
 - Tenants need full cluster-admin isolation (use vCluster or separate clusters).
 - You need full cluster-level isolation (use vcluster) or have a single tenant.
 
-[Official site](https://capsule.clastix.io) · [Source repository](https://github.com/clastix/capsule)
+[Official site](https://projectcapsule.dev/) · [Documentation](https://projectcapsule.dev/docs/) · [Source repository](https://github.com/projectcapsule/capsule)
 
 ### Carvel
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes tools suite.
@@ -182,9 +182,9 @@ Kubernetes tools suite.
 
 ### Carvel ytt
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 YAML templating tool for Kubernetes configurations.
@@ -201,9 +201,9 @@ YAML templating tool for Kubernetes configurations.
 
 ### Ceph
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Distributed storage system for object, block, and file storage.
@@ -220,9 +220,9 @@ Distributed storage system for object, block, and file storage.
 
 ### cert-manager
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 X.509 certificate management for Kubernetes.
@@ -239,9 +239,9 @@ X.509 certificate management for Kubernetes.
 
 ### Chisel Operator
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Operator for managing Chisel tunnels in Kubernetes.
@@ -258,10 +258,10 @@ Operator for managing Chisel tunnels in Kubernetes.
 
 ### Cilium
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security  
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
-**Model:** Oss  
-**Status:** Needs Review
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
+**Model:** Oss
+**Status:** Active
 
 EBPF-based networking, observability, and security for Kubernetes.
 
@@ -275,13 +275,13 @@ EBPF-based networking, observability, and security for Kubernetes.
 - Your kernel doesn't support eBPF or a simpler CNI (Calico/Flannel) meets your needs.
 - Your kernel doesn't support eBPF or you need a simpler CNI.
 
-[Official site](https://cilium.io) · [Source repository](https://github.com/cilium/cilium)
+[Official site](https://cilium.io) · [Documentation](https://docs.cilium.io/en/stable/) · [Source repository](https://github.com/cilium/cilium)
 
 ### Cloudflare Kubernetes Gateway
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Cloudflare gateway for Kubernetes clusters.
@@ -298,9 +298,9 @@ Cloudflare gateway for Kubernetes clusters.
 
 ### CloudNativePG
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator for managing PostgreSQL clusters with high availability, backups, and day-2 operations.
@@ -317,9 +317,9 @@ Kubernetes operator for managing PostgreSQL clusters with high availability, bac
 
 ### Cluster Bare Autoscaler
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Bare-metal Kubernetes autoscaler that powers nodes on or off based on cluster demand while safely cordoning and draining them.
@@ -336,9 +336,9 @@ Bare-metal Kubernetes autoscaler that powers nodes on or off based on cluster de
 
 ### Compute Gardener
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Carbon-aware Kubernetes scheduler for sustainable computing.
@@ -355,9 +355,9 @@ Carbon-aware Kubernetes scheduler for sustainable computing.
 
 ### CoreDNS
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Flexible, plugin-based DNS server used as the default cluster DNS in Kubernetes.
@@ -374,9 +374,9 @@ Flexible, plugin-based DNS server used as the default cluster DNS in Kubernetes.
 
 ### CronJob Guardian
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator for monitoring CronJobs with SLA tracking, dead-man's switch detection, intelligent alerting, and a built-in dashboard.
@@ -393,9 +393,9 @@ Kubernetes operator for monitoring CronJobs with SLA tracking, dead-man's switch
 
 ### Crossplane Provider Upjet
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Build Crossplane providers from Terraform.
@@ -412,9 +412,9 @@ Build Crossplane providers from Terraform.
 
 ### crossview
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Standard UI dashboard for Crossplane resources.
@@ -431,9 +431,9 @@ Standard UI dashboard for Crossplane resources.
 
 ### Dapr
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Distributed application runtime for microservices.
@@ -450,9 +450,9 @@ Distributed application runtime for microservices.
 
 ### Descheduler
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Rebalance pods in Kubernetes clusters.
@@ -469,9 +469,9 @@ Rebalance pods in Kubernetes clusters.
 
 ### dotnet-operator-sdk
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Build Kubernetes operators/controllers using .NET.
@@ -488,9 +488,9 @@ Build Kubernetes operators/controllers using .NET.
 
 ### EasyMile PostgreSQL Operator
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator for managing PostgreSQL instances.
@@ -507,9 +507,9 @@ Kubernetes operator for managing PostgreSQL instances.
 
 ### Envoy Gateway
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Gateway API implementation for Envoy with traffic management, security, and observability features.
@@ -526,9 +526,9 @@ Gateway API implementation for Envoy with traffic management, security, and obse
 
 ### External Secrets Operator
 
-**Categories:** Kubernetes networking, storage and add-ons, IAM, secrets and certificate management  
-**Roles:** Cloud Engineer, Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons, IAM, secrets and certificate management
+**Roles:** Cloud Engineer, Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
+**Model:** Oss
 **Status:** Active
 
 Sync external secrets into Kubernetes.
@@ -547,9 +547,9 @@ Sync external secrets into Kubernetes.
 
 ### ExternalDNS
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes add-on that configures public DNS servers with information about exposed Kubernetes services.
@@ -566,9 +566,9 @@ Kubernetes add-on that configures public DNS servers with information about expo
 
 ### Falco
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security  
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Runtime security for cloud-native environments.
@@ -587,9 +587,9 @@ Runtime security for cloud-native environments.
 
 ### flannel
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Simple Layer 3 network fabric (CNI) for Kubernetes.
@@ -606,9 +606,9 @@ Simple Layer 3 network fabric (CNI) for Kubernetes.
 
 ### git-sync
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Sidecar app that clones a Git repository and keeps it synchronized with upstream.
@@ -625,9 +625,9 @@ Sidecar app that clones a Git repository and keeps it synchronized with upstream
 
 ### HAMi
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Heterogeneous AI computing virtualization middleware.
@@ -644,9 +644,9 @@ Heterogeneous AI computing virtualization middleware.
 
 ### HAProxy
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Reliable, high-performance TCP/HTTP load balancer.
@@ -663,9 +663,9 @@ Reliable, high-performance TCP/HTTP load balancer.
 
 ### HAProxy Data Plane API
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 API for managing HAProxy configuration, runtime operations, stats, and logs.
@@ -682,9 +682,9 @@ API for managing HAProxy configuration, runtime operations, stats, and logs.
 
 ### HAProxy Kubernetes Ingress Controller
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 HAProxy-powered Kubernetes ingress controller for high-performance Layer 7 traffic management.
@@ -701,9 +701,9 @@ HAProxy-powered Kubernetes ingress controller for high-performance Layer 7 traff
 
 ### HashiCorp Consul
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Source Available  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Source Available
 **Status:** Needs Review
 
 Service networking and discovery platform.
@@ -720,9 +720,9 @@ Service networking and discovery platform.
 
 ### Headlamp Plugins
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Official plugin collection for the Headlamp Kubernetes UI.
@@ -739,9 +739,9 @@ Official plugin collection for the Headlamp Kubernetes UI.
 
 ### Helm
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes package manager.
@@ -758,9 +758,9 @@ Kubernetes package manager.
 
 ### Helm Chart Generator
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Tool for generating Helm charts from templates.
@@ -777,9 +777,9 @@ Tool for generating Helm charts from templates.
 
 ### helm-chart-testing
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Tooling for testing Helm charts.
@@ -796,9 +796,9 @@ Tooling for testing Helm charts.
 
 ### helm-diff
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Helm plugin to show differences between releases.
@@ -815,9 +815,9 @@ Helm plugin to show differences between releases.
 
 ### helm-docs
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Generate documentation for Helm charts.
@@ -834,9 +834,9 @@ Generate documentation for Helm charts.
 
 ### helm-mapkubeapis
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Helm plugin for API version migration.
@@ -853,9 +853,9 @@ Helm plugin for API version migration.
 
 ### helm-secrets
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Manage secrets with Helm charts.
@@ -872,9 +872,9 @@ Manage secrets with Helm charts.
 
 ### helm-unittest
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Unit test framework for Helm charts.
@@ -891,9 +891,9 @@ Unit test framework for Helm charts.
 
 ### Helmfile
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Declarative Helm deployments.
@@ -910,9 +910,9 @@ Declarative Helm deployments.
 
 ### Helmper
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Helm helper for mirroring charts and images to OCI registries.
@@ -929,9 +929,9 @@ Helm helper for mirroring charts and images to OCI registries.
 
 ### Holos
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Platform for managing Kubernetes configuration holistically.
@@ -948,9 +948,9 @@ Platform for managing Kubernetes configuration holistically.
 
 ### HwameiStor
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Cloud-native local storage system.
@@ -967,9 +967,9 @@ Cloud-native local storage system.
 
 ### Hybernate
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce resource consumption during off-peak hours.
@@ -986,9 +986,9 @@ Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce 
 
 ### Istio
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Service mesh for managing microservices traffic.
@@ -1005,9 +1005,9 @@ Service mesh for managing microservices traffic.
 
 ### k8s-csi-s3
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
@@ -1024,9 +1024,9 @@ CSI driver for mounting S3-compatible object storage as Kubernetes persistent vo
 
 ### k8s-sidecar
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes sidecar container that watches ConfigMaps/Secrets and syncs files.
@@ -1043,9 +1043,9 @@ Kubernetes sidecar container that watches ConfigMaps/Secrets and syncs files.
 
 ### Kagent
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 AI-powered Kubernetes agent for cluster management.
@@ -1062,9 +1062,9 @@ AI-powered Kubernetes agent for cluster management.
 
 ### Kamaji
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security  
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes control plane manager (multi-tenancy/security).
@@ -1083,9 +1083,9 @@ Kubernetes control plane manager (multi-tenancy/security).
 
 ### Karpenter
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes node autoscaler.
@@ -1102,9 +1102,9 @@ Kubernetes node autoscaler.
 
 ### KCL
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Constraint-based configuration and policy language for Kubernetes and cloud-native environments.
@@ -1121,9 +1121,9 @@ Constraint-based configuration and policy language for Kubernetes and cloud-nati
 
 ### KEDA
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes-based Event Driven Autoscaler.
@@ -1140,9 +1140,9 @@ Kubernetes-based Event Driven Autoscaler.
 
 ### keda-gpu-scaler
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 GPU-aware autoscaling extension for KEDA workloads.
@@ -1159,9 +1159,9 @@ GPU-aware autoscaling extension for KEDA workloads.
 
 ### KGateway
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes gateway networking.
@@ -1178,9 +1178,9 @@ Kubernetes gateway networking.
 
 ### Kong
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Open Core  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 API gateway (Kong Gateway) with enterprise and SaaS offerings (Konnect).
@@ -1197,9 +1197,9 @@ API gateway (Kong Gateway) with enterprise and SaaS offerings (Konnect).
 
 ### Koreo
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes resource orchestration framework.
@@ -1216,9 +1216,9 @@ Kubernetes resource orchestration framework.
 
 ### Krateo Core Provider
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Krateo component that manages Helm charts as Kubernetes-native resources and generates CRDs dynamically from chart schemas.
@@ -1235,9 +1235,9 @@ Krateo component that manages Helm charts as Kubernetes-native resources and gen
 
 ### Krateo OASGen Provider
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Documentation  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Documentation
 **Status:** Needs Review
 
 OpenAPI generator for Kubernetes.
@@ -1254,9 +1254,9 @@ OpenAPI generator for Kubernetes.
 
 ### Kratix
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Framework for platform engineering on Kubernetes.
@@ -1273,9 +1273,9 @@ Framework for platform engineering on Kubernetes.
 
 ### kro
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kube Resource Orchestrator for defining higher-level Kubernetes abstractions and composing resources declaratively.
@@ -1292,9 +1292,9 @@ Kube Resource Orchestrator for defining higher-level Kubernetes abstractions and
 
 ### kroc
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes Reactive Object Creator for event-driven resource automation.
@@ -1311,9 +1311,9 @@ Kubernetes Reactive Object Creator for event-driven resource automation.
 
 ### Kube-OVN
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 CloudNative Network for KubeVirt and Multi-Tenancy.
@@ -1330,9 +1330,9 @@ CloudNative Network for KubeVirt and Multi-Tenancy.
 
 ### Kubently
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes operations and management platform.
@@ -1349,9 +1349,9 @@ Kubernetes operations and management platform.
 
 ### Kubernetes Autoscaler
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Autoscaling components (HPA/VPA/Cluster Autoscaler).
@@ -1368,9 +1368,9 @@ Autoscaling components (HPA/VPA/Cluster Autoscaler).
 
 ### KubeVela
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Application delivery platform on Kubernetes.
@@ -1387,10 +1387,10 @@ Application delivery platform on Kubernetes.
 
 ### Kueue
 
-**Categories:** Kubernetes distributions and operations, Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
-**Status:** Needs Review
+**Categories:** Kubernetes distributions and operations, Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
+**Status:** Active
 
 Kubernetes-native job queueing and quota management controller for batch and AI/ML workloads.
 
@@ -1402,13 +1402,13 @@ Kubernetes-native job queueing and quota management controller for batch and AI/
 
 - You only run long-lived services with no batch jobs.
 
-[Official site](https://kueue.sigs.k8s.io) · [Source repository](https://github.com/kubernetes-sigs/kueue)
+[Official site](https://kueue.sigs.k8s.io) · [Documentation](https://kueue.sigs.k8s.io/docs/) · [Source repository](https://github.com/kubernetes-sigs/kueue)
 
 ### KUTTL
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 KUbernetes Test TooL for end-to-end testing of Kubernetes operators and controllers using declarative YAML test cases.
@@ -1425,9 +1425,9 @@ KUbernetes Test TooL for end-to-end testing of Kubernetes operators and controll
 
 ### Kyverno
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes policy engine.
@@ -1444,9 +1444,9 @@ Kubernetes policy engine.
 
 ### Linkerd
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Lightweight service mesh for Kubernetes.
@@ -1465,9 +1465,9 @@ Lightweight service mesh for Kubernetes.
 
 ### LINSTOR
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Open Core  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Distributed storage management (DRBD-based) with community and enterprise support.
@@ -1484,9 +1484,9 @@ Distributed storage management (DRBD-based) with community and enterprise suppor
 
 ### LitmusChaos
 
-**Categories:** Kubernetes networking, storage and add-ons, Chaos and performance engineering  
-**Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons, Chaos and performance engineering
+**Roles:** DevOps Engineer, Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with a hub of pre-built experiments and GitOps-friendly CRD workflows. ❌ **Avoid when** your environment is non-Kubernetes or you find ChaosHub's experiment catalog doesn't cover your stack.
@@ -1503,9 +1503,9 @@ Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with 
 
 ### Loft Vind
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Loft Labs tool (see repository for capabilities and usage).
@@ -1522,9 +1522,9 @@ Loft Labs tool (see repository for capabilities and usage).
 
 ### Longhorn
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Cloud native distributed block storage for Kubernetes.
@@ -1541,9 +1541,9 @@ Cloud native distributed block storage for Kubernetes.
 
 ### Luxury Yacht
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Desktop application for Kubernetes management.
@@ -1560,9 +1560,9 @@ Desktop application for Kubernetes management.
 
 ### m9sweeper
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes security and compliance tool.
@@ -1579,9 +1579,9 @@ Kubernetes security and compliance tool.
 
 ### MariaDB Operator
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator for managing MariaDB lifecycle, replication, Galera clustering, backups, and upgrades.
@@ -1598,9 +1598,9 @@ Kubernetes operator for managing MariaDB lifecycle, replication, Galera clusteri
 
 ### MetalLB
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Load balancer implementation for bare metal.
@@ -1617,9 +1617,9 @@ Load balancer implementation for bare metal.
 
 ### Metrics Server
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Resource usage metrics for Kubernetes.
@@ -1636,9 +1636,9 @@ Resource usage metrics for Kubernetes.
 
 ### MOCO
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 MySQL Operator for Kubernetes by Cybozu.
@@ -1655,9 +1655,9 @@ MySQL Operator for Kubernetes by Cybozu.
 
 ### Multus CNI
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods.
@@ -1674,9 +1674,9 @@ CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods.
 
 ### MySQL Operator for Kubernetes
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups, and upgrades.
@@ -1693,9 +1693,9 @@ Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecy
 
 ### Nelm
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Helm-compatible Kubernetes deployment tool and Helm 4 alternative with plan previews, improved CRD handling, and secret workflows.
@@ -1712,9 +1712,9 @@ Helm-compatible Kubernetes deployment tool and Helm 4 alternative with plan prev
 
 ### NGINX Ingress Controller
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS traffic to cluster services.
@@ -1731,9 +1731,9 @@ F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS tra
 
 ### nginx-gateway-fabric
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
@@ -1750,9 +1750,9 @@ NGINX-powered implementation of the Kubernetes Gateway API for managing north-so
 
 ### Nocalhost
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Cloud-native app development tool.
@@ -1769,9 +1769,9 @@ Cloud-native app development tool.
 
 ### OpenKruise
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Enhanced workloads for Kubernetes.
@@ -1788,9 +1788,9 @@ Enhanced workloads for Kubernetes.
 
 ### OpenKruise Agents
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
@@ -1807,9 +1807,9 @@ Kubernetes sandboxing and operator patterns for running and managing AI agent wo
 
 ### OperatorHub
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Community catalog for discovering, installing, and publishing Kubernetes Operators.
@@ -1826,9 +1826,9 @@ Community catalog for discovering, installing, and publishing Kubernetes Operato
 
 ### OVN-Kubernetes
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Networking for Kubernetes using OVN.
@@ -1845,9 +1845,9 @@ Networking for Kubernetes using OVN.
 
 ### Portworx
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes data services platform.
@@ -1864,9 +1864,9 @@ Kubernetes data services platform.
 
 ### Predictive Horizontal Pod Autoscaler
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Predictive scaling for Kubernetes workloads.
@@ -1883,9 +1883,9 @@ Predictive scaling for Kubernetes workloads.
 
 ### Project Contour
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reconfiguration, and secure multi-team delegation.
@@ -1902,9 +1902,9 @@ Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reco
 
 ### Project Sveltos
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes add-on controller for deploying and managing Helm charts, Kustomize, and raw YAML across multi-cluster fleets from a management cluster.
@@ -1921,9 +1921,9 @@ Kubernetes add-on controller for deploying and managing Helm charts, Kustomize, 
 
 ### pv-migrate
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 CLI tool for migrating data between Kubernetes Persistent Volumes.
@@ -1940,9 +1940,9 @@ CLI tool for migrating data between Kubernetes Persistent Volumes.
 
 ### Redis Operator
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator for provisioning and managing Redis clusters.
@@ -1959,9 +1959,9 @@ Kubernetes operator for provisioning and managing Redis clusters.
 
 ### Reloader
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes controller that watches ConfigMap/Secret changes and triggers rolling upgrades.
@@ -1978,9 +1978,9 @@ Kubernetes controller that watches ConfigMap/Secret changes and triggers rolling
 
 ### restart-operator
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator for scheduling recurring restarts of Deployments, StatefulSets, and DaemonSets with cron expressions.
@@ -1997,9 +1997,9 @@ Kubernetes operator for scheduling recurring restarts of Deployments, StatefulSe
 
 ### Rook
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Storage orchestrator for Kubernetes.
@@ -2016,9 +2016,9 @@ Storage orchestrator for Kubernetes.
 
 ### Sealed Secrets
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Encrypt Kubernetes secrets for GitOps workflows.
@@ -2035,9 +2035,9 @@ Encrypt Kubernetes secrets for GitOps workflows.
 
 ### security-profiles-operator
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Kubernetes operator for managing seccomp, SELinux, and AppArmor security profiles.
@@ -2054,9 +2054,9 @@ Kubernetes operator for managing seccomp, SELinux, and AppArmor security profile
 
 ### Spinkube
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 WebAssembly on Kubernetes ecosystem.
@@ -2073,9 +2073,9 @@ WebAssembly on Kubernetes ecosystem.
 
 ### Strimzi
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Apache Kafka on Kubernetes operator.
@@ -2092,9 +2092,9 @@ Apache Kafka on Kubernetes operator.
 
 ### Swimmer
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 User-friendly multi-cluster Kubernetes GUI client.
@@ -2111,9 +2111,9 @@ User-friendly multi-cluster Kubernetes GUI client.
 
 ### System Upgrade Controller
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Automate Kubernetes upgrades.
@@ -2130,9 +2130,9 @@ Automate Kubernetes upgrades.
 
 ### Talos
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Secure, immutable Kubernetes OS.
@@ -2149,9 +2149,9 @@ Secure, immutable Kubernetes OS.
 
 ### Telepresence
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Local dev against remote Kubernetes.
@@ -2168,9 +2168,9 @@ Local dev against remote Kubernetes.
 
 ### Trivy
 
-**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security  
-**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons, Application and cloud security
+**Roles:** Platform Engineer, Site Reliability Engineer, DevSecOps Engineer, Kubernetes Engineer, Cloud Security Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Vulnerability scanner for containers and Kubernetes.
@@ -2189,9 +2189,9 @@ Vulnerability scanner for containers and Kubernetes.
 
 ### TrueNAS
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Open Core  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Open Core
 **Status:** Needs Review
 
 Storage platform/OS for NAS and SAN with community and enterprise editions.
@@ -2208,9 +2208,9 @@ Storage platform/OS for NAS and SAN with community and enterprise editions.
 
 ### Vitess
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Database clustering system for horizontal scaling of MySQL.
@@ -2227,9 +2227,9 @@ Database clustering system for horizontal scaling of MySQL.
 
 ### VPA
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Vertical Pod Autoscaler.
@@ -2246,9 +2246,9 @@ Vertical Pod Autoscaler.
 
 ### Wozz
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Unknown  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Unknown
 **Status:** Needs Review
 
 Kubernetes management and operations tool.
@@ -2265,9 +2265,9 @@ Kubernetes management and operations tool.
 
 ### YAML
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Data serialization format used in Kubernetes.
@@ -2284,9 +2284,9 @@ Data serialization format used in Kubernetes.
 
 ### zeropod
 
-**Categories:** Kubernetes networking, storage and add-ons  
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer  
-**Model:** Oss  
+**Categories:** Kubernetes networking, storage and add-ons
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer
+**Model:** Oss
 **Status:** Needs Review
 
 Scale Kubernetes pods to zero and restore them on demand using checkpoint and restore.

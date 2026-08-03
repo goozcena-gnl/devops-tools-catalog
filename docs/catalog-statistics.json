@@ -2,15 +2,16 @@
   "canonical_records": 1092,
   "categories": 30,
   "license_models": {
+    "commercial": 5,
     "documentation": 97,
     "open-core": 68,
-    "oss": 645,
-    "source-available": 16,
-    "unknown": 266
+    "oss": 644,
+    "source-available": 17,
+    "unknown": 261
   },
   "statuses": {
-    "active": 19,
+    "active": 38,
     "archived": 7,
-    "needs-review": 1066
+    "needs-review": 1047
   }
 }

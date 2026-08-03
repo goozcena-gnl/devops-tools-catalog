@@ -19,11 +19,11 @@
 - [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) — ACME-based certificate authority server powering Let's Encrypt.
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 - [Burp Suite](https://portswigger.net/burp) — Web vulnerability scanner and testing suite.
-- [CAI (RobotSec)](https://aliasrobotics.github.io/cai) — Cybersecurity assessment for robotics.
+- [CAI (RobotSec)](https://aliasrobotics.github.io/cai) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
 - [Calico Cloud](https://www.calicocloud.io/home) — Managed SaaS platform built on Calico Open Source for networking/security/observability.
-- [Capsule](https://capsule.clastix.io) — Kubernetes multi-tenancy and policy enforcement.
+- [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 - [Cato Networks](https://www.catonetworks.com) — SASE (Secure Access Service Edge) platform.
-- [Cedar Policy](https://www.cedarpolicy.com/en) — Policy language and authorization engine (Cedar) for fine-grained access control.
+- [Cedar Policy](https://cedarpolicy.com/en) — Policy language and authorization engine (Cedar) for fine-grained access control.
 - [CertMate](https://www.certmate.org) — Certificate management automation.
 - [Chain Bench](https://github.com/aquasecurity/chain-bench) — Supply chain security auditing tool.
 - [Chainguard](https://www.chainguard.dev) — Secure container images and supply chain security platform.

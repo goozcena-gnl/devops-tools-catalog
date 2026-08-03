@@ -63,9 +63,10 @@
   needs_review: true
 - id: argocd-diff-preview
   name: ArgoCD Diff Preview
-  summary: Preview ArgoCD application changes.
-  official_url: https://dag-andersen.github.io/argocd-diff-preview
+  summary: Pull-request diff tool for previewing Argo CD application manifest changes before sync.
+  official_url: https://dag-andersen.github.io/argocd-diff-preview/
   repository_url: https://github.com/dag-andersen/argocd-diff-preview
+  documentation_url: https://dag-andersen.github.io/argocd-diff-preview/
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -83,20 +84,22 @@
   - '* You don''t use ArgoCD or have another diff/preview mechanism.'
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L138
   - legacy:devopstools_final.md#L387
-  needs_review: true
+  needs_review: false
 - id: argocd-image-updater
   name: ArgoCD Image Updater
   summary: Automated image updates for ArgoCD.
-  official_url: https://argocd-image-updater.readthedocs.io/en/stable
+  official_url: https://argocd-image-updater.readthedocs.io/en/stable/
   repository_url: https://github.com/argoproj-labs/argocd-image-updater
+  documentation_url: https://argocd-image-updater.readthedocs.io/en/stable/
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -114,15 +117,16 @@
   - '* You prefer explicit, manual image bumps or use a promotion tool like Kargo.'
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L140
   - legacy:devopstools_final.md#L388
-  needs_review: true
+  needs_review: false
 - id: argocd-vault-plugin
   name: ArgoCD Vault Plugin
   summary: Integrates secrets from external stores into ArgoCD.
