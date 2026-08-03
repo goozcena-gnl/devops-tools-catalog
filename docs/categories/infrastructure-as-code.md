@@ -277,7 +277,7 @@ Cost estimates for IaC projects.
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 IaC scanning for security issues.
 
@@ -289,14 +289,14 @@ IaC scanning for security issues.
 
 - You already have a comprehensive CSPM covering IaC.
 
-[Official site](https://kics.io) · [Source repository](https://github.com/Checkmarx/kics)
+[Official site](https://kics.io) · [Documentation](https://docs.kics.io/) · [Source repository](https://github.com/Checkmarx/kics)
 
 ### KusionStack
 
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Infrastructure automation platform.
 
@@ -308,7 +308,7 @@ Infrastructure automation platform.
 
 - You need broad community support and mature ecosystem integrations.
 
-[Official site](https://kusionstack.io) · [Source repository](https://github.com/KusionStack/kusion)
+[Official site](https://kusionstack.io) · [Documentation](https://www.kusionstack.io/docs/) · [Source repository](https://github.com/KusionStack/kusion)
 
 ### OpenTaco
 

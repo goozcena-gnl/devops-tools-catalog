@@ -161,8 +161,8 @@ Cloud cost observability.
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Cloud cost management.
 
@@ -174,7 +174,7 @@ Cloud cost management.
 
 - You're a small team that doesn't need asset/license management overhead.
 
-[Official site](https://www.flexera.com/products/flexera-one)
+[Official site](https://www.flexera.com/products/flexera-one) · [Documentation](https://docs.flexera.com/flexera-one/)
 
 ### IBM Cloudability
 
@@ -199,8 +199,8 @@ Enterprise FinOps and cloud cost management platform for multi-cloud visibility,
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Cloud resource optimization.
 
@@ -212,7 +212,7 @@ Cloud resource optimization.
 
 - You want lightweight open-source recommendations (OpenCost, KRR).
 
-[Official site](https://www.ibm.com/products/turbonomic/cloud-optimization)
+[Official site](https://www.ibm.com/products/turbonomic/cloud-optimization) · [Documentation](https://www.ibm.com/docs/en/tarm)
 
 ### Kion FinOps
 

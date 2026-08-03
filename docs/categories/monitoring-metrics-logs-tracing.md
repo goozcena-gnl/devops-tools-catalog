@@ -404,14 +404,14 @@ Search/analytics/log platform; source licensing varies by component (Elastic Lic
 
 - Licensing concerns, high cost of running Elasticsearch, or you only need label-based log queries (Loki is simpler).
 
-[Official site](https://www.elastic.co/elastic-stack) · [Source repository](https://github.com/elastic/elasticsearch)
+[Official site](https://www.elastic.co/elastic-stack) · [Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) · [Source repository](https://github.com/elastic/elasticsearch)
 
 ### Fluent Bit
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Fast and lightweight log processor.
 
@@ -423,7 +423,7 @@ Fast and lightweight log processor.
 
 - You need complex log transformations—Fluentd or Vector offer richer plugin/processing ecosystems.
 
-[Official site](https://fluentbit.io) · [Source repository](https://github.com/fluent/fluent-bit)
+[Official site](https://fluentbit.io) · [Documentation](https://docs.fluentbit.io/manual) · [Source repository](https://github.com/fluent/fluent-bit)
 
 ### Fluentd
 

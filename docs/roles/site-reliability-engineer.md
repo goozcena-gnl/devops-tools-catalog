@@ -13,7 +13,7 @@
 | [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Apache SkyWalking](https://skywalking.apache.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [Aralez](https://sadoyan.github.io/aralez-docs) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Aralez](https://aralez.rs) | Kubernetes networking, storage and add-ons | oss | active |
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
 | [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) | Monitoring, metrics, logs and tracing | documentation | needs-review |
@@ -91,7 +91,7 @@
 | [Fargate](https://aws.amazon.com/fargate) | Kubernetes distributions and operations | unknown | needs-review |
 | [flannel](https://github.com/flannel-io/flannel) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [flow](https://github.com/programmersd21/flow) | SRE, incident response and on-call | oss | needs-review |
-| [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Forecastle](https://github.com/stakater/Forecastle) | Kubernetes distributions and operations | oss | needs-review |
 | [FreeLens](https://freelensapp.github.io) | Kubernetes distributions and operations | oss | active |
@@ -142,11 +142,11 @@
 | [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | unknown | needs-review |
-| [k0s](https://k0sproject.io) | Kubernetes distributions and operations | oss | needs-review |
+| [k0s](https://k0sproject.io) | Kubernetes distributions and operations | oss | active |
 | [k0smotron](https://k0smotron.io) | Kubernetes distributions and operations | oss | needs-review |
 | [k10ls](https://github.com/besrabasant/k10ls) | Kubernetes distributions and operations | oss | needs-review |
 | [k3d](https://k3d.io/stable) | Kubernetes distributions and operations | oss | needs-review |
-| [k3s](https://k3s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [k3s](https://k3s.io) | Kubernetes distributions and operations | oss | active |
 | [K8s Cleaner (Sveltos)](https://sveltos.projectsveltos.io/k8sCleaner.html) | Kubernetes distributions and operations | oss | needs-review |
 | [K8s Diagram Builder](https://www.k8sdiagram.fun) | Kubernetes distributions and operations | unknown | needs-review |
 | [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -243,7 +243,7 @@
 | [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Lens](https://lenshq.io) | Kubernetes distributions and operations | unknown | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
-| [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Linnix](https://github.com/linnix-os/linnix) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | open-core | needs-review |
 | [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |

@@ -41,9 +41,9 @@
 | [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | unknown | needs-review |
 | [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | unknown | needs-review |
 | [Dokku](https://dokku.com) | CD, GitOps, release and promotion | oss | active |
-| [Drone](https://www.drone.io) | CI, build and testing | oss | needs-review |
+| [Drone](https://www.drone.io) | CI, build and testing | open-core | active |
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |
-| [FitNesse](https://fitnesse.org) | CI, build and testing | oss | needs-review |
+| [FitNesse](https://fitnesse.org) | CI, build and testing | oss | active |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
 | [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | needs-review |
 | [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
@@ -74,7 +74,7 @@
 | [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
 | [Katalon Studio](https://github.com/katalon-studio) | CI, build and testing | unknown | needs-review |
-| [Keel](https://keel.sh) | CD, GitOps, release and promotion | oss | needs-review |
+| [Keel](https://keel.sh) | CD, GitOps, release and promotion | oss | active |
 | [Keptn](https://keptn.sh) | Deprecated and historical tools, CI, build and testing | oss | archived |
 | [KubeChecks](https://kubechecks.readthedocs.io/en/latest) | CD, GitOps, release and promotion | oss | needs-review |
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
@@ -91,7 +91,7 @@
 | [OpenFeature](https://github.com/open-feature) | CD, GitOps, release and promotion | oss | needs-review |
 | [OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | unknown | needs-review |
 | [ORAS](https://oras.land) | Artifact and package management | oss | needs-review |
-| [Piku](https://piku.github.io) | CD, GitOps, release and promotion | oss | needs-review |
+| [Piku](https://piku.github.io) | CD, GitOps, release and promotion | oss | active |
 | [Playwright](https://playwright.dev) | CI, build and testing | oss | needs-review |
 | [Porter](https://github.com/porter-dev) | CD, GitOps, release and promotion | unknown | needs-review |
 | [pre-commit](https://pre-commit.com) | Software supply-chain security | oss | needs-review |

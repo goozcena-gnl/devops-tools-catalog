@@ -29,7 +29,7 @@
 | [Elastic APM Server](https://www.elastic.co/observability/application-performance-monitoring) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [Elastic Stack (ELK)](https://www.elastic.co/elastic-stack) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [flow](https://github.com/programmersd21/flow) | SRE, incident response and on-call | oss | needs-review |
-| [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Gatus](https://gatus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [GoAlert](https://goalert.me) | SRE, incident response and on-call | oss | needs-review |

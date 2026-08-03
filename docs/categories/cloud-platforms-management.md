@@ -161,8 +161,8 @@ Developer-friendly cloud infrastructure provider.
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Cloud infrastructure and hosting services.
 
@@ -174,14 +174,14 @@ Cloud infrastructure and hosting services.
 
 - You require a mature, well-documented ecosystem.
 
-[Official site](https://www.exoway.io)
+[Official site](https://www.exoway.io) · [Documentation](https://help.exoway.io/fr/)
 
 ### Google Cloud Platform
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Cloud services by Google.
 
@@ -193,7 +193,7 @@ Cloud services by Google.
 
 - Your workloads are tightly coupled to AWS/Azure-specific services.
 
-[Official site](https://cloud.google.com)
+[Official site](https://cloud.google.com) · [Documentation](https://cloud.google.com/docs)
 
 ### Heroku
 

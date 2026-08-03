@@ -13,9 +13,9 @@
 | [Dash0](https://www.dash0.com) | FinOps and sustainability | commercial | active |
 | [Datadog Cloud Cost Management](https://www.datadoghq.com/product/cloud-cost-management) | FinOps and sustainability | commercial | active |
 | [Finout](https://www.finout.io) | FinOps and sustainability | commercial | active |
-| [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | unknown | needs-review |
+| [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | commercial | active |
 | [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
-| [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | unknown | needs-review |
+| [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | commercial | active |
 | [Kion FinOps](https://kion.io/platform/finops) | FinOps and sustainability | unknown | needs-review |
 | [Kubecost (Apptio)](https://www.apptio.com/products/kubecost) | FinOps and sustainability | open-core | needs-review |
 | [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | needs-review |

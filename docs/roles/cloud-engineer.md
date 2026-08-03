@@ -96,11 +96,11 @@
 | [etcd](https://etcd.io) | Databases, caching and data infrastructure | oss | needs-review |
 | [EveryDev.ai](https://www.everydev.ai) | Documentation, learning and career resources | unknown | needs-review |
 | [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | unknown | needs-review |
+| [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | active |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
 | [Finout](https://www.finout.io) | FinOps and sustainability | commercial | active |
 | [Flawless](https://github.com/William-Lu-stack/Flawless) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | unknown | needs-review |
+| [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | commercial | active |
 | [FreeCodeCamp DevOps](https://www.freecodecamp.org/news/tag/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [fulling](https://github.com/FullAgent/fulling) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Futurex KMES Series 3](https://www.futurex.com/products/key-management-server/kmes-series-3) | IAM, secrets and certificate management | unknown | needs-review |
@@ -111,7 +111,7 @@
 | [GitHub MCP Server](https://github.com/github/github-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Google Cloud Functions](https://cloud.google.com/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
-| [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | commercial | active |
 | [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [Grafana MCP](https://github.com/grafana/mcp-grafana) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [HashiCorp Boundary](https://boundaryproject.io) | IAM, secrets and certificate management | source-available | needs-review |
@@ -126,7 +126,7 @@
 | [IBM Cloud](https://www.ibm.com/cloud) | Cloud platforms and cloud management | unknown | needs-review |
 | [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
 | [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | unknown | needs-review |
-| [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | unknown | needs-review |
+| [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | commercial | active |
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [InfraHQ](https://infrahq.com) | IAM, secrets and certificate management | oss | needs-review |
 | [JuiceFS](https://juicefs.com/en) | Databases, caching and data infrastructure | open-core | needs-review |
@@ -138,7 +138,7 @@
 | [Kelos](https://github.com/kelos-dev/kelos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | needs-review |
 | [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
-| [KICS](https://kics.io) | Infrastructure as Code | oss | needs-review |
+| [KICS](https://kics.io) | Infrastructure as Code | oss | active |
 | [Killer.sh](https://killer.sh) | Documentation, learning and career resources | documentation | needs-review |
 | [Killercoda](https://github.com/killercoda) | Documentation, learning and career resources | documentation | needs-review |
 | [Killercoda CKA](https://killercoda.com/cka) | Documentation, learning and career resources | documentation | needs-review |
@@ -160,7 +160,7 @@
 | [Kubernetes MCP Server](https://github.com/containers/kubernetes-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [kubernetes-skill for Claude Code](https://lukasniessen.github.io/kubernetes-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Kubex](https://kubex.ai) | FinOps and sustainability | unknown | needs-review |
-| [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | needs-review |
+| [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
 | [LabEx DevOps Tutorials](https://labex.io/tutorials/category/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [LabsDevOps.fr](https://labsdevops.fr) | Documentation, learning and career resources | documentation | needs-review |
 | [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | needs-review |

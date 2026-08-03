@@ -605,7 +605,7 @@ Kubernetes network policy testing tool.
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Identify vulnerable dependencies.
 
@@ -617,7 +617,7 @@ Identify vulnerable dependencies.
 
 - For container image scanning (use Trivy/Grype) or if false positives from CPE matching are too noisy.
 
-[Official site](https://owasp.org/www-project-dependency-check) · [Source repository](https://github.com/dependency-check/DependencyCheck)
+[Official site](https://owasp.org/www-project-dependency-check) · [Documentation](https://dependency-check.github.io/DependencyCheck/) · [Source repository](https://github.com/dependency-check/DependencyCheck)
 
 ### detect-secrets
 
@@ -681,7 +681,7 @@ Proxy that restricts access to the Docker socket API.
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Container image linter for security best practices.
 
@@ -693,7 +693,7 @@ Container image linter for security best practices.
 
 - You already run Trivy which covers many of the same checks.
 
-[Official site](https://containers.goodwith.tech) · [Source repository](https://github.com/goodwithtech/dockle)
+[Official site](https://containers.goodwith.tech) · [Documentation](https://github.com/goodwithtech/dockle#readme) · [Source repository](https://github.com/goodwithtech/dockle)
 
 ### Drata
 

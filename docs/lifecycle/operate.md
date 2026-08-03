@@ -25,7 +25,7 @@
 - [Apache SkyWalking](https://skywalking.apache.org) — APM platform for distributed tracing, metrics, and service topology.
 - [AppImage](https://appimage.org) — Portable Linux application packaging format (single executable).
 - [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) — Network performance monitoring.
-- [Aralez](https://sadoyan.github.io/aralez-docs) — Kubernetes operator (see docs).
+- [Aralez](https://aralez.rs) — Kubernetes operator (see docs).
 - [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
 - [Arize Phoenix](https://arize.com/docs/phoenix) — LLM observability and evaluation platform.
 - [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) — Grafana plugin that provides natural-language observability exploration.
@@ -242,7 +242,7 @@
 - [IBM Cloud](https://www.ibm.com/cloud) — Enterprise cloud services and infrastructure by IBM.
 - [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) — Enterprise key management.
 - [Icinga](https://icinga.com) — Open source monitoring system derived from Nagios.
-- [Incus](https://linuxcontainers.org/fr/incus/introduction) — Modern system container and VM manager.
+- [Incus](https://linuxcontainers.org/incus/) — Modern system container and VM manager.
 - [Incus OS](https://linuxcontainers.org/incus-os) — Operating system images and distribution tooling for Incus environments.
 - [InfluxData](https://www.influxdata.com) — Time series platform with OSS components and commercial cloud/enterprise offerings.
 - [InfraHQ](https://infrahq.com) — Identity-aware access management / access proxy for infrastructure.
