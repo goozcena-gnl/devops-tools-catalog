@@ -427,8 +427,8 @@ AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and da
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
 Container-native CI/CD platform.
 
@@ -440,7 +440,7 @@ Container-native CI/CD platform.
 
 - * You need enterprise features (now largely folded into Harness).
 
-[Official site](https://www.drone.io) · [Source repository](https://github.com/harness/drone)
+[Official site](https://www.drone.io) · [Documentation](https://docs.drone.io/) · [Source repository](https://github.com/harness/drone)
 
 ### Firebase Test Lab
 
@@ -466,7 +466,7 @@ Cloud-based app testing on real and virtual devices.
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Acceptance testing framework.
 
@@ -478,7 +478,7 @@ Acceptance testing framework.
 
 - Your team prefers code-first testing or the wiki paradigm feels outdated.
 
-[Official site](https://fitnesse.org) · [Source repository](https://github.com/unclebob/fitnesse)
+[Official site](https://fitnesse.org) · [Documentation](https://fitnesse.org/FitNesse/UserGuide.html) · [Source repository](https://github.com/unclebob/fitnesse)
 
 ### GitHub Actions
 

@@ -9,7 +9,7 @@
 | [Agones](https://agones.dev/site) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | unknown | needs-review |
-| [Aralez](https://sadoyan.github.io/aralez-docs) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Aralez](https://aralez.rs) | Kubernetes networking, storage and add-ons | oss | active |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
 | [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -92,11 +92,11 @@
 | [Hybernate](https://okedeji.io/hybernate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) | Kubernetes distributions and operations | oss | needs-review |
 | [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [k0s](https://k0sproject.io) | Kubernetes distributions and operations | oss | needs-review |
+| [k0s](https://k0sproject.io) | Kubernetes distributions and operations | oss | active |
 | [k0smotron](https://k0smotron.io) | Kubernetes distributions and operations | oss | needs-review |
 | [k10ls](https://github.com/besrabasant/k10ls) | Kubernetes distributions and operations | oss | needs-review |
 | [k3d](https://k3d.io/stable) | Kubernetes distributions and operations | oss | needs-review |
-| [k3s](https://k3s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [k3s](https://k3s.io) | Kubernetes distributions and operations | oss | active |
 | [K8s Cleaner (Sveltos)](https://sveltos.projectsveltos.io/k8sCleaner.html) | Kubernetes distributions and operations | oss | needs-review |
 | [K8s Diagram Builder](https://www.k8sdiagram.fun) | Kubernetes distributions and operations | unknown | needs-review |
 | [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -183,7 +183,7 @@
 | [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Lens](https://lenshq.io) | Kubernetes distributions and operations | unknown | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
-| [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | open-core | needs-review |
 | [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
 | [Loft Vind](https://github.com/loft-sh/vind) | Kubernetes networking, storage and add-ons | oss | needs-review |

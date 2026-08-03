@@ -18,7 +18,7 @@
 - [Ansible](https://www.ansible.com) — Agentless configuration management, orchestration, and automation.
 - [Apache CloudStack](https://cloudstack.apache.org) — Open source infrastructure-as-a-service platform for building and managing private and public clouds.
 - [Apache Kafka](https://kafka.apache.org) — Distributed event streaming platform.
-- [Aralez](https://sadoyan.github.io/aralez-docs) — Kubernetes operator (see docs).
+- [Aralez](https://aralez.rs) — Kubernetes operator (see docs).
 - [Argo CD](https://argo-cd.readthedocs.io/en/stable/) — Declarative GitOps continuous delivery for Kubernetes.
 - [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) — Agent-based architecture for ArgoCD to manage remote clusters.
 - [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) — Pull-request diff tool for previewing Argo CD application manifest changes before sync.
@@ -186,7 +186,7 @@
 - [Hybernate](https://okedeji.io/hybernate) — Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce resource consumption during off-peak hours.
 - [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) — Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows Server.
 - [IBM Cloud](https://www.ibm.com/cloud) — Enterprise cloud services and infrastructure by IBM.
-- [Incus](https://linuxcontainers.org/fr/incus/introduction) — Modern system container and VM manager.
+- [Incus](https://linuxcontainers.org/incus/) — Modern system container and VM manager.
 - [Incus OS](https://linuxcontainers.org/incus-os) — Operating system images and distribution tooling for Incus environments.
 - [Infracost](https://www.infracost.io) — Cost estimates for IaC projects.
 - [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) — Translate Ingress and provider-specific resources into Gateway API manifests.

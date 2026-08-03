@@ -173,7 +173,7 @@
 | [Dokku](https://dokku.com) | CD, GitOps, release and promotion | oss | active |
 | [Dozzle](https://dozzle.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [drawDB](https://www.drawdb.app) | Developer experience and local environments | oss | needs-review |
-| [Drone](https://www.drone.io) | CI, build and testing | oss | needs-review |
+| [Drone](https://www.drone.io) | CI, build and testing | open-core | active |
 | [dsoxlab](https://github.com/stephrobert/dsoxlab) | Documentation, learning and career resources | documentation | needs-review |
 | [Duplicati](https://duplicati.com) | Emerging and experimental tools | oss | needs-review |
 | [Dynatrace](https://github.com/dynatrace) | Monitoring, metrics, logs and tracing | unknown | needs-review |
@@ -189,16 +189,16 @@
 | [etckeeper](https://etckeeper.branchable.com) | Configuration management | oss | needs-review |
 | [EveryDev.ai](https://www.everydev.ai) | Documentation, learning and career resources | unknown | needs-review |
 | [Exercism](https://exercism.org) | Foundations, Linux and scripting | documentation | needs-review |
-| [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | unknown | needs-review |
+| [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | active |
 | [fd](https://github.com/sharkdp/fd) | Foundations, Linux and scripting | oss | needs-review |
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |
 | [Firecracker](https://firecracker-microvm.github.io) | Virtualization, bare metal and homelab | oss | active |
-| [FitNesse](https://fitnesse.org) | CI, build and testing | oss | needs-review |
+| [FitNesse](https://fitnesse.org) | CI, build and testing | oss | active |
 | [Flatcar Container Linux](https://www.flatcar.org) | Virtualization, bare metal and homelab | oss | active |
 | [Flathub](https://flathub.org) | Foundations, Linux and scripting | unknown | needs-review |
 | [Flatpak](https://flatpak.org) | Foundations, Linux and scripting | oss | needs-review |
 | [Floci](https://floci.io/floci) | Developer experience and local environments | oss | needs-review |
-| [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
 | [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | needs-review |
@@ -232,7 +232,7 @@
 | [Google Artifact Registry](https://cloud.google.com/artifact-registry) | Artifact and package management | unknown | needs-review |
 | [Google Cloud Build](https://cloud.google.com/build) | CI, build and testing | unknown | needs-review |
 | [Google Cloud Functions](https://cloud.google.com/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
-| [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | commercial | active |
 | [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [Gradle](https://gradle.org) | Containers and image tooling | oss | needs-review |
 | [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
@@ -261,7 +261,7 @@
 | [IBM Cloud](https://www.ibm.com/cloud) | Cloud platforms and cloud management | unknown | needs-review |
 | [IcePanel](https://icepanel.io) | Emerging and experimental tools | unknown | needs-review |
 | [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Incus](https://linuxcontainers.org/fr/incus/introduction) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Incus](https://linuxcontainers.org/incus/) | Virtualization, bare metal and homelab | oss | active |
 | [Incus OS](https://linuxcontainers.org/incus-os) | Virtualization, bare metal and homelab | oss | needs-review |
 | [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Informatica](https://www.informatica.com) | Emerging and experimental tools | unknown | needs-review |
@@ -287,14 +287,14 @@
 | [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [Kaniko](https://github.com/GoogleContainerTools/kaniko) | Deprecated and historical tools, Containers and image tooling | oss | archived |
 | [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
-| [Kata Containers](https://katacontainers.io) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Kata Containers](https://katacontainers.io) | Virtualization, bare metal and homelab | oss | active |
 | [Katalon Studio](https://github.com/katalon-studio) | CI, build and testing | unknown | needs-review |
 | [kcli](https://kcli.readthedocs.io/en/latest) | Virtualization, bare metal and homelab | oss | needs-review |
-| [Keel](https://keel.sh) | CD, GitOps, release and promotion | oss | needs-review |
+| [Keel](https://keel.sh) | CD, GitOps, release and promotion | oss | active |
 | [Keptn](https://keptn.sh) | Deprecated and historical tools, CI, build and testing | oss | archived |
 | [Kestra](https://kestra.io) | Workflow automation and ChatOps | oss | needs-review |
 | [Keygraph](https://github.com/KeygraphHQ) | Emerging and experimental tools | open-core | needs-review |
-| [KICS](https://kics.io) | Infrastructure as Code | oss | needs-review |
+| [KICS](https://kics.io) | Infrastructure as Code | oss | active |
 | [Killer.sh](https://killer.sh) | Documentation, learning and career resources | documentation | needs-review |
 | [Killercoda](https://github.com/killercoda) | Documentation, learning and career resources | documentation | needs-review |
 | [Killercoda CKA](https://killercoda.com/cka) | Documentation, learning and career resources | documentation | needs-review |
@@ -319,7 +319,7 @@
 | [kubernetes-sigs/bom](https://kubernetes-sigs.github.io/bom) | Emerging and experimental tools | oss | needs-review |
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
 | [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | needs-review |
+| [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
 | [Kwatcher](https://github.com/Berg-it/Kwatcher) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [LabEx DevOps Tutorials](https://labex.io/tutorials/category/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [LabsDevOps.fr](https://labsdevops.fr) | Documentation, learning and career resources | documentation | needs-review |
@@ -406,7 +406,7 @@
 | [Pandora FMS](https://pandorafms.com/community/pandora-fms-downloads) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Paperless-ngx](https://docs.paperless-ngx.com) | Emerging and experimental tools | oss | needs-review |
 | [Papra](https://github.com/papra-hq/papra) | Emerging and experimental tools | oss | needs-review |
-| [Piku](https://piku.github.io) | CD, GitOps, release and promotion | oss | needs-review |
+| [Piku](https://piku.github.io) | CD, GitOps, release and promotion | oss | active |
 | [Plane](https://plane.so) | Workflow automation and ChatOps | oss | needs-review |
 | [Play with Docker](https://labs.play-with-docker.com) | Developer experience and local environments | documentation | needs-review |
 | [Playwright](https://playwright.dev) | CI, build and testing | oss | needs-review |

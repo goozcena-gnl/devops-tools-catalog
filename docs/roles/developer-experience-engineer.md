@@ -51,10 +51,10 @@
 | [DevPod](https://devpod.sh) | Developer experience and local environments | oss | needs-review |
 | [Devtron](https://devtron.ai) | CI, build and testing | oss | needs-review |
 | [drawDB](https://www.drawdb.app) | Developer experience and local environments | oss | needs-review |
-| [Drone](https://www.drone.io) | CI, build and testing | oss | needs-review |
+| [Drone](https://www.drone.io) | CI, build and testing | open-core | active |
 | [ESLint](https://eslint.org) | Developer experience and local environments | oss | needs-review |
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |
-| [FitNesse](https://fitnesse.org) | CI, build and testing | oss | needs-review |
+| [FitNesse](https://fitnesse.org) | CI, build and testing | oss | active |
 | [Floci](https://floci.io/floci) | Developer experience and local environments | oss | needs-review |
 | [Garden](https://garden.io) | Platform engineering and internal developer platforms | oss | needs-review |
 | [Ghostty](https://ghostty.org) | Developer experience and local environments | oss | needs-review |

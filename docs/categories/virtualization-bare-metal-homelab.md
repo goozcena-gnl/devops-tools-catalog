@@ -333,7 +333,7 @@ Microsoft's native hypervisor for creating and running virtual machines on Windo
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Modern system container and VM manager.
 
@@ -345,7 +345,7 @@ Modern system container and VM manager.
 
 - You only need application containers (Docker/Podman) or full hypervisor features.
 
-[Official site](https://linuxcontainers.org/fr/incus/introduction) · [Source repository](https://github.com/lxc/incus)
+[Official site](https://linuxcontainers.org/incus/) · [Documentation](https://linuxcontainers.org/incus/docs/main/) · [Source repository](https://github.com/lxc/incus)
 
 ### Incus OS
 
@@ -371,7 +371,7 @@ Operating system images and distribution tooling for Incus environments.
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Secure containers with lightweight VMs.
 
@@ -383,7 +383,7 @@ Secure containers with lightweight VMs.
 
 - The performance overhead of micro-VMs is unacceptable or you run trusted workloads only.
 
-[Official site](https://katacontainers.io) · [Source repository](https://github.com/kata-containers/kata-containers)
+[Official site](https://katacontainers.io) · [Documentation](https://katacontainers.io/docs/) · [Source repository](https://github.com/kata-containers/kata-containers)
 
 ### kcli
 

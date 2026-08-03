@@ -67,7 +67,7 @@ Envoy-based AI gateway for managing LLM traffic in Kubernetes.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes operator (see docs).
 
@@ -79,7 +79,7 @@ Kubernetes operator (see docs).
 
 - A more established operator covers your use case.
 
-[Official site](https://sadoyan.github.io/aralez-docs) · [Source repository](https://github.com/sadoyan/aralez)
+[Official site](https://aralez.rs) · [Documentation](https://aralez.rs) · [Source repository](https://github.com/sadoyan/aralez)
 
 ### AWS ACK RDS Controller
 
@@ -1447,7 +1447,7 @@ Kubernetes policy engine.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Lightweight service mesh for Kubernetes.
 
@@ -1461,7 +1461,7 @@ Lightweight service mesh for Kubernetes.
 - You don't need mesh-level traffic management or Istio's richer feature set is required.
 - You need advanced traffic routing, multi-cluster gateways, or Envoy ecosystem compatibility (use Istio).
 
-[Official site](https://linkerd.io) · [Source repository](https://github.com/linkerd/linkerd2)
+[Official site](https://linkerd.io) · [Documentation](https://linkerd.io/docs/overview/) · [Source repository](https://github.com/linkerd/linkerd2)
 
 ### LINSTOR
 

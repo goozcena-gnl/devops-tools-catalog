@@ -485,7 +485,7 @@ Translate Ingress and provider-specific resources into Gateway API manifests.
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes distribution.
 
@@ -497,7 +497,7 @@ Kubernetes distribution.
 
 - K3s or a managed service already covers your needs with a larger community.
 
-[Official site](https://k0sproject.io) · [Source repository](https://github.com/k0sproject/k0s)
+[Official site](https://k0sproject.io) · [Documentation](https://docs.k0sproject.io/) · [Source repository](https://github.com/k0sproject/k0s)
 
 ### k0smotron
 
@@ -561,7 +561,7 @@ Lightweight wrapper to run k3s (Rancher Lab's minimal Kubernetes distribution) i
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Lightweight Kubernetes by Rancher.
 
@@ -573,7 +573,7 @@ Lightweight Kubernetes by Rancher.
 
 - You need full upstream Kubernetes compatibility or run enterprise workloads requiring RKE2/kubeadm.
 
-[Official site](https://k3s.io) · [Source repository](https://github.com/k3s-io/k3s)
+[Official site](https://k3s.io) · [Documentation](https://docs.k3s.io/) · [Source repository](https://github.com/k3s-io/k3s)
 
 ### K8s Cleaner (Sveltos)
 

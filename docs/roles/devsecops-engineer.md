@@ -45,7 +45,7 @@
 | [CVEMap](https://github.com/projectdiscovery/cvemap) | Application and cloud security | oss | needs-review |
 | [CycloneDX](https://cyclonedx.org) | Application and cloud security | documentation | needs-review |
 | [Cyclonus](https://github.com/mattfenwick/cyclonus) | Application and cloud security | oss | needs-review |
-| [DependencyCheck](https://owasp.org/www-project-dependency-check) | Application and cloud security | oss | needs-review |
+| [DependencyCheck](https://owasp.org/www-project-dependency-check) | Application and cloud security | oss | active |
 | [Descope](https://www.descope.com) | IAM, secrets and certificate management | unknown | needs-review |
 | [detect-secrets](https://github.com/Yelp/detect-secrets) | Application and cloud security | oss | needs-review |
 | [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | needs-review |
@@ -53,7 +53,7 @@
 | [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | unknown | needs-review |
 | [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | unknown | needs-review |
 | [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) | Application and cloud security | oss | needs-review |
-| [Dockle](https://containers.goodwith.tech) | Application and cloud security | oss | needs-review |
+| [Dockle](https://containers.goodwith.tech) | Application and cloud security | oss | active |
 | [Doppler](https://www.doppler.com) | IAM, secrets and certificate management | unknown | needs-review |
 | [Drata](https://drata.com) | Application and cloud security | unknown | needs-review |
 | [Duo Security](https://duo.com) | Application and cloud security | unknown | needs-review |

@@ -60,18 +60,18 @@
 | [HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools) | Foundations, Linux and scripting | oss | needs-review |
 | [htop](https://htop.dev) | Foundations, Linux and scripting | oss | needs-review |
 | [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) | Virtualization, bare metal and homelab | documentation | needs-review |
-| [Incus](https://linuxcontainers.org/fr/incus/introduction) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Incus](https://linuxcontainers.org/incus/) | Virtualization, bare metal and homelab | oss | active |
 | [Incus OS](https://linuxcontainers.org/incus-os) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [JuiceFS](https://juicefs.com/en) | Databases, caching and data infrastructure | open-core | needs-review |
 | [Juju](https://canonical.com/juju) | Configuration management | oss | needs-review |
 | [Kasten K10](https://www.kasten.io) | Backup, disaster recovery and resilience | unknown | needs-review |
-| [Kata Containers](https://katacontainers.io) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Kata Containers](https://katacontainers.io) | Virtualization, bare metal and homelab | oss | active |
 | [kcli](https://kcli.readthedocs.io/en/latest) | Virtualization, bare metal and homelab | oss | needs-review |
-| [KICS](https://kics.io) | Infrastructure as Code | oss | needs-review |
+| [KICS](https://kics.io) | Infrastructure as Code | oss | active |
 | [Kolla-Ansible](https://docs.openstack.org/kolla-ansible/latest) | Configuration management | oss | needs-review |
 | [kube-dump](https://kube-dump.woozymasta.ru) | Backup, disaster recovery and resilience | oss | needs-review |
-| [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | needs-review |
+| [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
 | [Lazydocker](https://github.com/jesseduffield/lazydocker) | Virtualization, bare metal and homelab | oss | needs-review |
 | [libvirt](https://libvirt.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Lima](https://lima-vm.io) | Virtualization, bare metal and homelab | oss | needs-review |

@@ -297,7 +297,7 @@ GitOps promotion workflow for Kubernetes.
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Automated Kubernetes deployment updates.
 
@@ -309,7 +309,7 @@ Automated Kubernetes deployment updates.
 
 - You need a full GitOps pipeline with drift detection—use Flux or Argo CD instead.
 
-[Official site](https://keel.sh) · [Source repository](https://github.com/keel-hq/keel)
+[Official site](https://keel.sh) · [Documentation](https://keel.sh/docs/) · [Source repository](https://github.com/keel-hq/keel)
 
 ### KubeChecks
 
@@ -373,7 +373,7 @@ Open standard for feature flag management.
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Heroku-like mini PaaS.
 
@@ -385,7 +385,7 @@ Heroku-like mini PaaS.
 
 - You need scaling, orchestration, or container isolation.
 
-[Official site](https://piku.github.io) · [Source repository](https://github.com/piku/piku)
+[Official site](https://piku.github.io) · [Documentation](https://piku.github.io/) · [Source repository](https://github.com/piku/piku)
 
 ### Porter
 
