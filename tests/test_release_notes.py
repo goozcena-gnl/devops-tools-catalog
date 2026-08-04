@@ -29,8 +29,8 @@ def test_internal_draft_references_public_notes_file() -> None:
     assert "--notes-file docs/releases/v0.2.0-notes.md" in text
 
 
-def test_changelog_v020_remains_unreleased_draft() -> None:
+def test_changelog_v020_uses_planned_publication_date() -> None:
     text = _read(CHANGELOG)
 
-    assert "## [0.2.0] - Draft" in text
+    assert "## [0.2.0] - 2026-08-04" in text
     assert "Publication metadata finalized on 2026-08-04" in text
