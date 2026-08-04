@@ -324,7 +324,7 @@
 - id: deeptutor
   name: DeepTutor
   summary: Interactive learning and tutoring platform.
-  official_url: https://hkuds.github.io/DeepTutor
+  official_url: https://deeptutor.info/
   repository_url: https://github.com/hkuds/DeepTutor
   categories:
   - documentation-learning-career
