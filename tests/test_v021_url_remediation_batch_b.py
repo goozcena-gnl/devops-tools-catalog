@@ -440,7 +440,8 @@ def _changed_canonical_yaml_files() -> set[str]:
                 "git",
                 "diff",
                 "--name-only",
-                f"{BATCH_B_BASELINE_SHA}...HEAD",
+                BATCH_B_BASELINE_SHA,
+                "HEAD",
                 "--",
                 "data/tools/",
             ],
@@ -520,3 +521,41 @@ def test_batch_b_canonical_diff_git_failure_raises(monkeypatch: object) -> None:
             assert "Unable to compute" in str(exc), (
                 f"Unexpected AssertionError message: {exc}"
             )
+
+
+def test_batch_b_canonical_diff_uses_explicit_two_commit_range() -> None:
+    """Helper must pass BASELINE and HEAD as two separate args, not a three-dot range."""
+    import contextlib
+    import unittest.mock as mock
+
+    captured: list[list[str]] = []
+
+    def _record(*args: object, **kwargs: object) -> subprocess.CompletedProcess:
+        if args:
+            captured.append(list(args[0]))
+        return subprocess.CompletedProcess(args[0], 0, stdout="", stderr="")
+
+    with (
+        mock.patch("subprocess.run", side_effect=_record),
+        contextlib.suppress(Exception),
+    ):
+        _changed_canonical_yaml_files()
+
+    diff_calls = [c for c in captured if len(c) >= 3 and c[:2] == ["git", "diff"]]
+    assert diff_calls, "Expected at least one git diff invocation"
+
+    diff_cmd = diff_calls[0]
+    three_dot_args = [a for a in diff_cmd if "..." in a]
+    assert not three_dot_args, (
+        f"Three-dot revision range must not be used in the diff command; "
+        f"found: {three_dot_args}"
+    )
+    assert BATCH_B_BASELINE_SHA in diff_cmd, (
+        f"Baseline SHA {BATCH_B_BASELINE_SHA!r} must appear in diff command"
+    )
+    assert "HEAD" in diff_cmd, "HEAD must appear as an explicit argument"
+    sha_idx = diff_cmd.index(BATCH_B_BASELINE_SHA)
+    assert diff_cmd[sha_idx + 1] == "HEAD", (
+        f"HEAD must follow immediately after the baseline SHA; "
+        f"got {diff_cmd[sha_idx + 1]!r}"
+    )
