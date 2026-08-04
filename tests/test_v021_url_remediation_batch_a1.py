@@ -34,12 +34,14 @@ EXPECTED_UNCHANGED_IDS = EXPECTED_IDS - EXPECTED_CHANGED_IDS
 
 
 def _ledger_rows() -> list[dict[str, str]]:
+    assert LEDGER.exists(), f"Missing batch A1 review ledger: {LEDGER}"
     lines = [line.rstrip() for line in LEDGER.read_text(encoding="utf-8").splitlines()]
     table_lines = [line for line in lines if line.startswith("|")]
     header = [part.strip() for part in table_lines[0].strip("|").split("|")]
     rows: list[dict[str, str]] = []
     for line in table_lines[2:]:
-        if set(line.strip()) == {"-", "|", " "}:
+        stripped = line.strip()
+        if stripped and set(stripped) <= {"|", "-", ":", " "}:
             continue
         values = [part.strip() for part in line.strip("|").split("|")]
         if len(values) != len(header):
@@ -102,3 +104,36 @@ def test_batch_a1_unique_change_accounting() -> None:
     assert unchanged_ids == EXPECTED_UNCHANGED_IDS
     assert len(changed_ids) == 1
     assert len(unchanged_ids) == 19
+
+
+def test_markdown_separator_rows_with_alignment_are_skipped(tmp_path: Path) -> None:
+    ledger = tmp_path / "ledger.md"
+    ledger.write_text(
+        "\n".join(
+            [
+                "| tool_id | affected_field | canonical_changed |",
+                "|---|---|---|",
+                "|:---|---:|:---:|",
+                "| deeptutor | official_url | yes |",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    lines = [line.rstrip() for line in ledger.read_text(encoding="utf-8").splitlines()]
+    table_lines = [line for line in lines if line.startswith("|")]
+    header = [part.strip() for part in table_lines[0].strip("|").split("|")]
+    rows: list[dict[str, str]] = []
+    for line in table_lines[2:]:
+        stripped = line.strip()
+        if stripped and set(stripped) <= {"|", "-", ":", " "}:
+            continue
+        values = [part.strip() for part in line.strip("|").split("|")]
+        if len(values) != len(header):
+            continue
+        rows.append(dict(zip(header, values, strict=True)))
+
+    assert len(rows) == 1
+    assert rows[0]["tool_id"] == "deeptutor"
+    assert rows[0]["affected_field"] == "official_url"
+    assert rows[0]["canonical_changed"] == "yes"
