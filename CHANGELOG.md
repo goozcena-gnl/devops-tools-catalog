@@ -8,9 +8,9 @@ All notable catalogue architecture and governance changes are recorded here. Ind
 
 - No post-v0.2.0 changes recorded yet.
 
-## [0.2.0] - Draft
+## [0.2.0] - 2026-08-04
 
-Publication metadata finalized on 2026-08-04; tag and GitHub Release remain pending explicit owner approval.
+Publication metadata finalized on 2026-08-04. Tag and GitHub Release publication will follow after this release commit is merged and explicitly approved.
 
 ### Scope
 
