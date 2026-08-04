@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import subprocess
 from pathlib import Path
 
 import yaml
@@ -8,6 +9,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs" / "maintenance" / "v0.2.1-url-remediation-batch-b-review.md"
 PLAN_CSV = ROOT / "docs" / "maintenance" / "v0.2.1-url-remediation-plan.csv"
+BATCH_B_BASELINE_SHA = "f8904bcbdd6d41f6f64076937e282e9b4393e15c"
 
 EXPECTED_IDS = {
     "cdktf",
@@ -37,15 +39,14 @@ EXPECTED_WORK_ITEMS = {
     ("tnu", "repository_url"),
 }
 
-EXPECTED_CHANGED_IDS = {"grafana-oncall", "kubernetes-dashboard"}
-EXPECTED_UNCHANGED_IDS = EXPECTED_IDS - EXPECTED_CHANGED_IDS
+EXPECTED_CHANGED_IDS: set[str] = set()
+EXPECTED_UNCHANGED_IDS = EXPECTED_IDS
 
 RECOGNIZED_DECISIONS = {
     "retain historical provenance; clear needs_review",
     "retain historical URL; clear needs_review",
-    "replace with official cold-storage location; clear needs_review",
-    "replace with official retirement location; clear needs_review",
     "retain; needs_review remains true",
+    "retain; ownership proof pending; needs_review remains true",
     "no change required; boundary already correctly documented",
 }
 
@@ -254,24 +255,21 @@ def test_batch_b_pinned_final_decisions() -> None:
     rows = _ledger_rows()
     by_id_field = {(row["tool_id"], row["affected_field"]): row for row in rows}
 
-    # Changed records
+    # Retained pending primary-source ownership proof
     grafana = by_id_field[("grafana-oncall", "repository_url")]
-    assert grafana["final_value"] == "https://github.com/grafana-cold-storage/oncall"
-    assert grafana["canonical_changed"] == "yes"
+    assert grafana["final_value"] == "https://github.com/grafana/oncall"
+    assert grafana["canonical_changed"] == "no"
     assert (
         grafana["final_decision"]
-        == "replace with official cold-storage location; clear needs_review"
+        == "retain; ownership proof pending; needs_review remains true"
     )
 
     k8s_dashboard = by_id_field[("kubernetes-dashboard", "repository_url")]
-    assert (
-        k8s_dashboard["final_value"]
-        == "https://github.com/kubernetes-retired/dashboard"
-    )
-    assert k8s_dashboard["canonical_changed"] == "yes"
+    assert k8s_dashboard["final_value"] == "https://github.com/kubernetes/dashboard"
+    assert k8s_dashboard["canonical_changed"] == "no"
     assert (
         k8s_dashboard["final_decision"]
-        == "replace with official retirement location; clear needs_review"
+        == "retain; ownership proof pending; needs_review remains true"
     )
 
     # Historical provenance retained
@@ -328,18 +326,18 @@ def test_batch_b_pinned_final_decisions() -> None:
 
 def test_batch_b_grafana_oncall_yaml_coherent() -> None:
     tool = _load_tool("data/tools/deprecated-historical.yaml", "grafana-oncall")
-    assert tool["repository_url"] == "https://github.com/grafana-cold-storage/oncall"
+    assert tool["repository_url"] == "https://github.com/grafana/oncall"
     assert tool["status"] == "archived"
     assert tool.get("repository_archived") is True
-    assert tool.get("needs_review") is False
+    assert tool.get("needs_review") is True
 
 
 def test_batch_b_kubernetes_dashboard_yaml_coherent() -> None:
     tool = _load_tool("data/tools/deprecated-historical.yaml", "kubernetes-dashboard")
-    assert tool["repository_url"] == "https://github.com/kubernetes-retired/dashboard"
+    assert tool["repository_url"] == "https://github.com/kubernetes/dashboard"
     assert tool["status"] == "archived"
     assert tool.get("repository_archived") is True
-    assert tool.get("needs_review") is False
+    assert tool.get("needs_review") is True
 
 
 def test_batch_b_active_products_not_archived_by_repository_flag() -> None:
@@ -359,8 +357,6 @@ def test_batch_b_historical_records_needs_review_cleared() -> None:
         "keptn",
         "kubeapps",
         "tnu",
-        "grafana-oncall",
-        "kubernetes-dashboard",
     ]
     for tid in confirmed_closed:
         tool = _load_tool("data/tools/deprecated-historical.yaml", tid)
@@ -380,29 +376,147 @@ def test_batch_b_inconclusive_records_needs_review_preserved() -> None:
         "minio.needs_review must remain true: repository boundary unresolved"
     )
 
+    grafana_oncall = _load_tool(
+        "data/tools/deprecated-historical.yaml", "grafana-oncall"
+    )
+    assert grafana_oncall.get("needs_review") is True, (
+        "grafana-oncall.needs_review must remain true: grafana-cold-storage ownership unverified"
+    )
+
+    k8s_dashboard = _load_tool(
+        "data/tools/deprecated-historical.yaml", "kubernetes-dashboard"
+    )
+    assert k8s_dashboard.get("needs_review") is True, (
+        "kubernetes-dashboard.needs_review must remain true: kubernetes-retired ownership unverified"
+    )
+
 
 # ---------------------------------------------------------------------------
 # Non-selected canonical record invariant
 # ---------------------------------------------------------------------------
 
+SELECTED_YAML_FILES = {
+    "data/tools/deprecated-historical.yaml",
+    "data/tools/configuration-management.yaml",
+    "data/tools/virtualization-bare-metal-homelab.yaml",
+    "data/tools/databases-caching-data-infrastructure.yaml",
+}
+
+
+def _changed_canonical_yaml_files() -> set[str]:
+    """Return the set of data/tools/ files changed since the Batch B baseline SHA.
+
+    Raises AssertionError with an actionable message when git is unavailable
+    or the diff command fails unexpectedly.  Calls pytest.skip when the baseline
+    commit is not reachable in the local git history (e.g., shallow CI clone).
+    """
+    import pytest
+
+    # Step 1: Verify the baseline commit is present in the local object store.
+    # If it is absent (shallow clone / partial fetch), skip rather than fail.
+    try:
+        subprocess.run(
+            ["git", "cat-file", "-e", f"{BATCH_B_BASELINE_SHA}^{{commit}}"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+    except FileNotFoundError as exc:
+        raise AssertionError(
+            "Git is required for the Batch B canonical scope invariant"
+        ) from exc
+    except subprocess.CalledProcessError:
+        pytest.skip(
+            f"Baseline commit {BATCH_B_BASELINE_SHA} is not reachable in the "
+            "local git history (shallow clone or partial fetch); "
+            "skipping canonical scope invariant"
+        )
+
+    # Step 2: Baseline is confirmed present — run the diff.
+    try:
+        result = subprocess.run(
+            [
+                "git",
+                "diff",
+                "--name-only",
+                f"{BATCH_B_BASELINE_SHA}...HEAD",
+                "--",
+                "data/tools/",
+            ],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+    except subprocess.CalledProcessError as exc:
+        stderr = (exc.stderr or "").strip()
+        raise AssertionError(
+            "Unable to compute the Batch B canonical diff from baseline "
+            f"{BATCH_B_BASELINE_SHA}: {stderr or exc}"
+        ) from exc
+
+    return {line.strip() for line in result.stdout.splitlines() if line.strip()}
+
 
 def test_batch_b_no_non_selected_canonical_record_changed() -> None:
-    import subprocess
-
-    selected_yaml_files = {
-        "data/tools/deprecated-historical.yaml",
-        "data/tools/configuration-management.yaml",
-        "data/tools/virtualization-bare-metal-homelab.yaml",
-        "data/tools/databases-caching-data-infrastructure.yaml",
-    }
-    result = subprocess.run(
-        ["git", "diff", "--name-only", "main...HEAD", "--", "data/tools/"],
-        capture_output=True,
-        text=True,
-        cwd=ROOT,
-    )
-    changed_yaml = set(result.stdout.strip().splitlines())
-    non_selected_changed = changed_yaml - selected_yaml_files
-    assert not non_selected_changed, (
+    changed_yaml = _changed_canonical_yaml_files()
+    non_selected_changed = changed_yaml - SELECTED_YAML_FILES
+    assert non_selected_changed == set(), (
         f"Non-selected canonical YAML files changed: {sorted(non_selected_changed)}"
     )
+
+
+def test_batch_b_selected_yaml_files_changed() -> None:
+    """Confirm the helper detects at least one selected Batch B YAML change."""
+    changed_yaml = _changed_canonical_yaml_files()
+    assert changed_yaml, (
+        "Expected at least one selected Batch B YAML file to differ from baseline "
+        f"{BATCH_B_BASELINE_SHA}; got empty diff"
+    )
+    assert changed_yaml <= SELECTED_YAML_FILES, (
+        f"Unexpected YAML files changed: {changed_yaml - SELECTED_YAML_FILES}"
+    )
+
+
+def test_batch_b_canonical_diff_missing_baseline_skips(monkeypatch: object) -> None:
+    """An unreachable baseline commit must trigger pytest.skip, not pass silently."""
+    import unittest.mock as mock
+
+    import pytest
+
+    def _catfile_fails(*args: object, **kwargs: object) -> None:
+        raise subprocess.CalledProcessError(128, "git", stderr="not a valid object")
+
+    with (
+        mock.patch("subprocess.run", side_effect=_catfile_fails),
+        pytest.raises(pytest.skip.Exception),
+    ):
+        _changed_canonical_yaml_files()
+
+
+def test_batch_b_canonical_diff_git_failure_raises(monkeypatch: object) -> None:
+    """A failing git diff command must raise AssertionError, not return an empty set."""
+    import unittest.mock as mock
+
+    call_count = 0
+
+    def _diff_fails(*args: object, **kwargs: object) -> subprocess.CompletedProcess:
+        nonlocal call_count
+        call_count += 1
+        if call_count == 1:
+            # First call (cat-file): succeed so the baseline check passes.
+            return subprocess.CompletedProcess(args[0], 0, stdout="", stderr="")
+        # Second call (diff): fail to simulate an unexpected git error.
+        raise subprocess.CalledProcessError(128, "git", stderr="simulated git error")
+
+    with mock.patch("subprocess.run", side_effect=_diff_fails):
+        try:
+            _changed_canonical_yaml_files()
+            raise AssertionError(  # pragma: no cover
+                "Expected AssertionError when git diff command fails"
+            )
+        except AssertionError as exc:
+            assert "Unable to compute" in str(exc), (
+                f"Unexpected AssertionError message: {exc}"
+            )

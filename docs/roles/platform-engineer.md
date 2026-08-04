@@ -327,7 +327,7 @@
 | [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | needs-review |
 | [Kubernetes Common Errors & Fixes](https://middleware.io/blog/kubernetes-common-errors-fix) | Kubernetes distributions and operations | documentation | needs-review |
-| [Kubernetes Dashboard](https://github.com/kubernetes-retired/dashboard) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
+| [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
 | [Kubernetes de A à Z](https://github.com/ibrahimbakayoko/kubernetes-de-a-z) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes GitOps Guide](https://github.com/thezawzaw/kubernetes-gitops-guide) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes Learning Path](https://kubernetes.io/docs/home) | Documentation, learning and career resources | documentation | needs-review |

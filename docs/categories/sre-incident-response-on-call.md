@@ -99,7 +99,7 @@ Incident response and on-call management (OSS core with SaaS offering).
 
 - You need a standalone, feature-rich incident management platform.
 
-[Official site](https://grafana.com/products/cloud/oncall) · [Source repository](https://github.com/grafana-cold-storage/oncall)
+[Official site](https://grafana.com/products/cloud/oncall) · [Source repository](https://github.com/grafana/oncall)
 
 ### ManageEngine IT Operations Management
 
