@@ -525,7 +525,6 @@ def test_batch_b_canonical_diff_git_failure_raises(monkeypatch: object) -> None:
 
 def test_batch_b_canonical_diff_uses_explicit_two_commit_range() -> None:
     """Helper must pass BASELINE and HEAD as two separate args, not a three-dot range."""
-    import contextlib
     import unittest.mock as mock
 
     captured: list[list[str]] = []
@@ -535,11 +534,12 @@ def test_batch_b_canonical_diff_uses_explicit_two_commit_range() -> None:
             captured.append(list(args[0]))
         return subprocess.CompletedProcess(args[0], 0, stdout="", stderr="")
 
-    with (
-        mock.patch("subprocess.run", side_effect=_record),
-        contextlib.suppress(Exception),
-    ):
-        _changed_canonical_yaml_files()
+    with mock.patch("subprocess.run", side_effect=_record):
+        changed_files = _changed_canonical_yaml_files()
+
+    assert changed_files == set(), (
+        "The fully mocked successful diff should return an empty changed-file set"
+    )
 
     diff_calls = [c for c in captured if len(c) >= 3 and c[:2] == ["git", "diff"]]
     assert diff_calls, "Expected at least one git diff invocation"
