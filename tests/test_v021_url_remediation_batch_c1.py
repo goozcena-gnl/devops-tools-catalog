@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import os
 import subprocess
 from collections import Counter
 from pathlib import Path
@@ -143,7 +144,7 @@ def _load_tool(yaml_file: str, tool_id: str) -> dict:
     return by_id[tool_id]
 
 
-def _changed_canonical_yaml_files() -> set[str]:
+def _require_batch_c1_baseline() -> None:
     import pytest
 
     try:
@@ -156,14 +157,24 @@ def _changed_canonical_yaml_files() -> set[str]:
         )
     except FileNotFoundError as exc:
         raise AssertionError(
-            "Git is required for the Batch C1 canonical scope invariant"
+            "Git executable is required for Batch C1 pinned-baseline invariants"
         ) from exc
-    except subprocess.CalledProcessError:
+    except subprocess.CalledProcessError as exc:
+        if os.getenv("GITHUB_ACTIONS") == "true":
+            raise AssertionError(
+                f"Baseline commit {BATCH_C1_BASELINE_SHA} is not reachable in this "
+                "GitHub Actions checkout, so Batch C1 invariants cannot be enforced. "
+                "Verify .github/workflows/quality.yml checkout uses fetch-depth: 0."
+            ) from exc
+
         pytest.skip(
-            f"Baseline commit {BATCH_C1_BASELINE_SHA} is not reachable in the "
-            "local git history (shallow clone or partial fetch); "
-            "skipping canonical scope invariant"
+            f"Baseline commit {BATCH_C1_BASELINE_SHA} is not reachable in this local "
+            "shallow/partial clone; skipping Batch C1 pinned-baseline invariants"
         )
+
+
+def _changed_canonical_yaml_files() -> set[str]:
+    _require_batch_c1_baseline()
 
     try:
         result = subprocess.run(
@@ -341,8 +352,6 @@ def test_batch_c1_no_non_selected_canonical_record_changed() -> None:
 
 
 def test_batch_c1_protected_planning_files_unchanged_since_baseline() -> None:
-    import pytest
-
     protected = [
         "docs/maintenance/v0.2.1-url-remediation-plan.md",
         "docs/maintenance/v0.2.1-url-remediation-plan.csv",
@@ -350,19 +359,7 @@ def test_batch_c1_protected_planning_files_unchanged_since_baseline() -> None:
         "tests/link_review_test_utils.py",
     ]
 
-    try:
-        subprocess.run(
-            ["git", "cat-file", "-e", f"{BATCH_C1_BASELINE_SHA}^{{commit}}"],
-            cwd=ROOT,
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-    except subprocess.CalledProcessError:
-        pytest.skip(
-            f"Baseline commit {BATCH_C1_BASELINE_SHA} not reachable; "
-            "skipping protected-file parity check"
-        )
+    _require_batch_c1_baseline()
 
     result = subprocess.run(
         [
@@ -416,3 +413,137 @@ def test_batch_c1_canonical_diff_uses_explicit_two_commit_range() -> None:
         "HEAD must follow immediately after the baseline SHA; "
         f"got {diff_cmd[sha_idx + 1]!r}"
     )
+
+
+def test_batch_c1_require_baseline_available_succeeds() -> None:
+    import unittest.mock as mock
+
+    with mock.patch(
+        "subprocess.run",
+        return_value=subprocess.CompletedProcess(
+            ["git", "cat-file"], 0, stdout="", stderr=""
+        ),
+    ):
+        _require_batch_c1_baseline()
+
+
+def test_batch_c1_require_baseline_missing_local_skips(monkeypatch: object) -> None:
+    import unittest.mock as mock
+
+    import pytest
+
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+
+    with (
+        mock.patch(
+            "subprocess.run",
+            side_effect=subprocess.CalledProcessError(
+                128, "git", stderr="not a valid object"
+            ),
+        ),
+        pytest.raises(pytest.skip.Exception) as exc_info,
+    ):
+        _require_batch_c1_baseline()
+
+    message = str(exc_info.value)
+    assert BATCH_C1_BASELINE_SHA in message
+    assert "local" in message
+    assert "shallow/partial clone" in message
+
+
+def test_batch_c1_require_baseline_missing_in_ci_is_actionable_failure(
+    monkeypatch: object,
+) -> None:
+    import unittest.mock as mock
+
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+
+    with mock.patch(
+        "subprocess.run",
+        side_effect=subprocess.CalledProcessError(
+            128, "git", stderr="not a valid object"
+        ),
+    ):
+        try:
+            _require_batch_c1_baseline()
+            raise AssertionError(  # pragma: no cover
+                "Expected AssertionError when baseline is missing in CI"
+            )
+        except AssertionError as exc:
+            text = str(exc)
+            assert BATCH_C1_BASELINE_SHA in text
+            assert "Batch C1 invariants cannot be enforced" in text
+            assert "fetch-depth: 0" in text
+
+
+def test_batch_c1_require_baseline_git_unavailable_actionable_error() -> None:
+    import unittest.mock as mock
+
+    with mock.patch("subprocess.run", side_effect=FileNotFoundError("git missing")):
+        try:
+            _require_batch_c1_baseline()
+            raise AssertionError(  # pragma: no cover
+                "Expected AssertionError when git executable is unavailable"
+            )
+        except AssertionError as exc:
+            assert "Git executable is required" in str(exc)
+
+
+def test_quality_workflow_checkout_pinned_and_fetch_depth_zero() -> None:
+    workflow = ROOT / ".github" / "workflows" / "quality.yml"
+    text = workflow.read_text(encoding="utf-8")
+    assert "uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1" in text
+    assert "fetch-depth: 0" in text
+
+
+def test_batch_c1_protected_parity_command_uses_explicit_two_commit_range() -> None:
+    import unittest.mock as mock
+
+    captured: list[list[str]] = []
+
+    def _record(*args: object, **kwargs: object) -> subprocess.CompletedProcess:
+        if args:
+            captured.append(list(args[0]))
+        return subprocess.CompletedProcess(args[0], 0, stdout="", stderr="")
+
+    with mock.patch("subprocess.run", side_effect=_record):
+        test_batch_c1_protected_planning_files_unchanged_since_baseline()
+
+    diff_calls = [c for c in captured if len(c) >= 3 and c[:2] == ["git", "diff"]]
+    assert diff_calls, "Expected at least one git diff invocation"
+
+    diff_cmd = diff_calls[0]
+    three_dot_args = [arg for arg in diff_cmd if "..." in arg]
+    assert not three_dot_args, (
+        "Three-dot revision range must not be used in the protected parity command; "
+        f"found: {three_dot_args}"
+    )
+    assert BATCH_C1_BASELINE_SHA in diff_cmd
+    assert "HEAD" in diff_cmd
+    sha_idx = diff_cmd.index(BATCH_C1_BASELINE_SHA)
+    assert diff_cmd[sha_idx + 1] == "HEAD", (
+        "HEAD must follow immediately after the baseline SHA in protected parity diff; "
+        f"got {diff_cmd[sha_idx + 1]!r}"
+    )
+
+
+def test_batch_c1_protected_parity_subprocess_failure_is_actionable() -> None:
+    import unittest.mock as mock
+
+    call_count = 0
+
+    def _side_effect(*args: object, **kwargs: object) -> subprocess.CompletedProcess:
+        nonlocal call_count
+        call_count += 1
+        if call_count == 1:
+            return subprocess.CompletedProcess(args[0], 0, stdout="", stderr="")
+        raise subprocess.CalledProcessError(128, "git", stderr="simulated diff error")
+
+    with mock.patch("subprocess.run", side_effect=_side_effect):
+        try:
+            test_batch_c1_protected_planning_files_unchanged_since_baseline()
+            raise AssertionError(  # pragma: no cover
+                "Expected CalledProcessError when protected parity git diff fails"
+            )
+        except subprocess.CalledProcessError as exc:
+            assert exc.returncode == 128
