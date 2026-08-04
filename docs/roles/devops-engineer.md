@@ -147,7 +147,7 @@
 | [Cypress](https://www.cypress.io) | CI, build and testing | open-core | active |
 | [Dagger](https://dagger.io) | CI, build and testing | open-core | active |
 | [Datadog](https://github.com/DataDog) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [DeepTutor](https://hkuds.github.io/DeepTutor) | Documentation, learning and career resources | documentation | needs-review |
+| [DeepTutor](https://deeptutor.info/) | Documentation, learning and career resources | documentation | needs-review |
 | [DEV Community #devops](https://dev.to/t/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Development Containers](https://containers.dev) | Developer experience and local environments | oss | needs-review |
 | [DevOps Community](https://www.devopscommunity.in) | Documentation, learning and career resources | documentation | needs-review |

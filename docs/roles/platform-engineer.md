@@ -121,7 +121,7 @@
 | [Datree](https://www.datree.io) | Kubernetes distributions and operations | unknown | needs-review |
 | [DC/OS](https://dcos.io) | Kubernetes distributions and operations | oss | needs-review |
 | [DeepSpeed](https://www.deepspeed.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [DeepTutor](https://hkuds.github.io/DeepTutor) | Documentation, learning and career resources | documentation | needs-review |
+| [DeepTutor](https://deeptutor.info/) | Documentation, learning and career resources | documentation | needs-review |
 | [Descheduler](https://github.com/kubernetes-sigs/descheduler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) | Kubernetes distributions and operations | oss | needs-review |
 | [DEV Community #devops](https://dev.to/t/devops) | Documentation, learning and career resources | documentation | needs-review |

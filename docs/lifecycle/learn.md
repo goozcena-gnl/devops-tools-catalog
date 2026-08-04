@@ -30,7 +30,7 @@
 - [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) — Commercial SOAR platform (Community/Starter/Enterprise licensing). Content packs are open on GitHub.
 - [cosign (sigstore)](https://docs.sigstore.dev/cosign) — Container/artifact signing and verification.
 - [CUE](https://cuelang.org) — Data validation language and tool.
-- [DeepTutor](https://hkuds.github.io/DeepTutor) — Interactive learning and tutoring platform.
+- [DeepTutor](https://deeptutor.info/) — Interactive learning and tutoring platform.
 - [DEV Community #devops](https://dev.to/t/devops) — DEV Community tag feed for DevOps articles, tutorials, and discussions.
 - [DevOps Community](https://www.devopscommunity.in) — Community resources and events.
 - [DevOps Exercises](https://github.com/bregman-arie/devops-exercises) — DevOps interview questions and exercises.
