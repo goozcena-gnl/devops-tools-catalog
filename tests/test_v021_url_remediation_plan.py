@@ -5,9 +5,14 @@ import json
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
-from urllib.parse import urlparse
 
 import yaml
+
+from tests.link_review_test_utils import (
+    STRICT_CLASSES,
+    is_machine_api_endpoint,
+    parse_strict_ledger_rows,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 PLAN_MD = ROOT / "docs" / "maintenance" / "v0.2.1-url-remediation-plan.md"
@@ -16,13 +21,6 @@ LEDGER = ROOT / "docs" / "link-review-ledger.md"
 REPORT = ROOT / "reports" / "link-report.json"
 SCHEMA = ROOT / "schema" / "tool.schema.json"
 
-STRICT_CLASSES = {
-    "manual-verification-required",
-    "http-error",
-    "tls-failure",
-    "repository-archived",
-}
-
 
 def _read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
@@ -30,10 +28,30 @@ def _read(path: Path) -> str:
 
 def _catalog_ids() -> set[str]:
     ids: set[str] = set()
+    seen_at: dict[str, tuple[Path, int]] = {}
     for path in sorted((ROOT / "data" / "tools").glob("*.yaml")):
-        payload = yaml.safe_load(path.read_text(encoding="utf-8")) or []
-        for record in payload:
-            ids.add(record["id"])
+        payload = yaml.safe_load(path.read_text(encoding="utf-8"))
+        assert isinstance(payload, list), (
+            f"{path}: expected top-level YAML list, got {type(payload).__name__}"
+        )
+        for idx, record in enumerate(payload):
+            assert isinstance(record, dict), (
+                f"{path}: record[{idx}] expected mapping, got {type(record).__name__}"
+            )
+            assert "id" in record, f"{path}: record[{idx}] missing required 'id'"
+            record_id = record["id"]
+            assert isinstance(record_id, str) and record_id.strip(), (
+                f"{path}: record[{idx}] id must be a non-empty string"
+            )
+
+            previous = seen_at.get(record_id)
+            assert previous is None, (
+                f"Duplicate canonical id '{record_id}' in {path}: record[{idx}] "
+                f"(already defined in {previous[0]}: record[{previous[1]}])"
+            )
+
+            seen_at[record_id] = (path, idx)
+            ids.add(record_id)
     return ids
 
 
@@ -42,49 +60,21 @@ def _plan_rows() -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
-def _strict_ledger_rows() -> list[dict[str, str]]:
-    lines = _read(LEDGER).splitlines()
-    header_idx = next(
-        i for i, line in enumerate(lines) if line.startswith("| tool_id |")
-    )
-    rows: list[dict[str, str]] = []
-    for line in lines[header_idx + 2 :]:
-        if not line.startswith("|"):
-            if rows:
-                break
-            continue
-        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
-        rows.append(
-            {
-                "tool_id": cells[0],
-                "checked_url": cells[2],
-                "result_category": cells[3],
-                "candidate_replacement_url": cells[6],
-            }
-        )
-    return rows
-
-
-def _is_machine_api_endpoint(url: str) -> bool:
-    parsed = urlparse(url)
-    host = (parsed.hostname or "").casefold()
-    path = parsed.path.casefold().rstrip("/")
-
-    def _is_or_prefix(prefix: str) -> bool:
-        return path == prefix or path.startswith(prefix + "/")
-
-    if host == "api.github.com":
-        return True
-    if host == "api.githubcopilot.com" and _is_or_prefix("/graphql"):
-        return True
-    if _is_or_prefix("/api/v3"):
-        return True
-    return _is_or_prefix("/api/graphql")
+def _strict_ledger_rows() -> list:
+    return parse_strict_ledger_rows(LEDGER)
 
 
 def test_plan_artifacts_exist() -> None:
     assert PLAN_MD.exists(), f"Missing planning document: {PLAN_MD}"
     assert PLAN_CSV.exists(), f"Missing planning matrix: {PLAN_CSV}"
+
+
+def test_shared_helper_imports_are_used_by_both_test_modules() -> None:
+    v021_source = _read(ROOT / "tests" / "test_v021_url_remediation_plan.py")
+    ledger_source = _read(ROOT / "tests" / "test_link_review_ledger.py")
+    expected_import = "from tests.link_review_test_utils import"
+    assert expected_import in v021_source
+    assert expected_import in ledger_source
 
 
 def test_planned_ids_exist_and_are_disjoint_with_batch_limits() -> None:
@@ -119,9 +109,9 @@ def test_strict_rows_and_counts_are_accounted_for() -> None:
     plan_ids = {row["tool_id"] for row in _plan_rows()}
 
     strict_rows = [
-        row for row in _strict_ledger_rows() if row["result_category"] in STRICT_CLASSES
+        row for row in _strict_ledger_rows() if row.result_category in STRICT_CLASSES
     ]
-    strict_counts = Counter(row["result_category"] for row in strict_rows)
+    strict_counts = Counter(row.result_category for row in strict_rows)
 
     assert len(strict_rows) == 38
     assert strict_counts["manual-verification-required"] == 25
@@ -129,7 +119,7 @@ def test_strict_rows_and_counts_are_accounted_for() -> None:
     assert strict_counts["tls-failure"] == 1
     assert strict_counts["repository-archived"] == 10
 
-    strict_ids = {row["tool_id"] for row in strict_rows}
+    strict_ids = {row.tool_id for row in strict_rows}
     missing = sorted(strict_ids - plan_ids)
     assert not missing, f"Strict unresolved IDs missing from plan: {missing}"
 
@@ -143,18 +133,38 @@ def test_strict_rows_and_counts_are_accounted_for() -> None:
 
 def test_machine_api_replacement_candidates_remain_zero() -> None:
     strict_rows = [
-        row for row in _strict_ledger_rows() if row["result_category"] in STRICT_CLASSES
+        row for row in _strict_ledger_rows() if row.result_category in STRICT_CLASSES
     ]
 
     machine_candidates = [
-        row["candidate_replacement_url"]
+        row.candidate_replacement_url
         for row in strict_rows
-        if row["candidate_replacement_url"] != "-"
-        and _is_machine_api_endpoint(row["candidate_replacement_url"])
+        if row.candidate_replacement_url != "-"
+        and is_machine_api_endpoint(row.candidate_replacement_url)
     ]
     assert not machine_candidates, (
         f"Machine/API candidates found in strict ledger: {machine_candidates}"
     )
+
+
+def test_plan_csv_header_semantics_and_lf_endings() -> None:
+    raw = PLAN_CSV.read_bytes()
+    assert b"\r" not in raw
+    assert raw.endswith(b"\n")
+
+    rows = _plan_rows()
+    assert rows, "Planning CSV has no rows"
+    headers = set(rows[0].keys())
+    assert "current_catalog_status" in headers
+    assert "http_status_or_network" not in headers
+
+    status_values = {
+        row["current_catalog_status"]
+        for row in rows
+        if row["report_classification"] != "lifecycle-license-ambiguity"
+    }
+    assert status_values
+    assert status_values <= {"active", "archived", "needs-review"}
 
 
 def test_allowed_fields_are_schema_valid() -> None:
