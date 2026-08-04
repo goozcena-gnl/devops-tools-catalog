@@ -19,6 +19,7 @@ def test_public_notes_are_public_only() -> None:
     assert "- [ ]" not in text
     assert "```bash" not in text
     assert "DO NOT RUN DURING THIS PR" not in text
+    assert "Issue #2 remains open" in text
 
 
 def test_internal_draft_references_public_notes_file() -> None:
