@@ -43,7 +43,7 @@ Incident response and on-call management (OSS core with SaaS offering).
 
 - You need a standalone, feature-rich incident management platform.
 
-[Official site](https://grafana.com/products/cloud/oncall) · [Source repository](https://github.com/grafana/oncall)
+[Official site](https://grafana.com/products/cloud/oncall) · [Source repository](https://github.com/grafana-cold-storage/oncall)
 
 ### Kaniko
 
@@ -123,7 +123,7 @@ Web UI for Kubernetes.
 
 - You want richer features—use Lens/FreeLens/K9s instead.
 
-[Source repository](https://github.com/kubernetes/dashboard)
+[Source repository](https://github.com/kubernetes-retired/dashboard)
 
 ### tnu
 

@@ -8,7 +8,7 @@
 - [Kaniko](https://github.com/GoogleContainerTools/kaniko) — Build container images in Kubernetes without Docker daemon.
 - [Keptn](https://keptn.sh) — Cloud-native lifecycle management and delivery.
 - [Kubeapps](https://kubeapps.com) — Kubernetes application dashboard for deploying and managing Helm charts and other packages.
-- [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) — Web UI for Kubernetes.
+- [Kubernetes Dashboard](https://github.com/kubernetes-retired/dashboard) — Web UI for Kubernetes.
 - [tnu](https://github.com/jfroy/tnu) — Test runner for Node.js.
 
 [Back to catalogue](../../README.md)
