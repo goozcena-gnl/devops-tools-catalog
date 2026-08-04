@@ -499,7 +499,7 @@
 | [Telepresence](https://www.telepresence.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Ternary](https://ternary.app) | FinOps and sustainability | unknown | needs-review |
 | [Terraform](https://www.terraform.io) | Infrastructure as Code | source-available | needs-review |
-| [Terraform Cloud](https://developer.hashicorp.com/terraform/enterprise/cloud-docs) | Infrastructure as Code | unknown | needs-review |
+| [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | unknown | needs-review |
 | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |

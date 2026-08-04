@@ -843,7 +843,7 @@
   name: YokeCD
   summary: GitOps continuous delivery tool.
   official_url: https://yokecd.github.io
-  repository_url: https://github.com/yokecd/yokecd
+  repository_url: https://github.com/yokecd/yoke
   categories:
   - cd-gitops-release-promotion
   subcategories:

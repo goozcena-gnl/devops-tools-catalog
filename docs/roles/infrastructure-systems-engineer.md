@@ -123,7 +123,7 @@
 | [Sustainable Computing (Kepler)](https://sustainable-computing.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Swiftorial](https://www.swiftorial.com/swiftlessons) | Foundations, Linux and scripting | documentation | needs-review |
 | [Terraform](https://www.terraform.io) | Infrastructure as Code | source-available | needs-review |
-| [Terraform Cloud](https://developer.hashicorp.com/terraform/enterprise/cloud-docs) | Infrastructure as Code | unknown | needs-review |
+| [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | unknown | needs-review |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |

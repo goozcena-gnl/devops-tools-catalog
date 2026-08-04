@@ -830,7 +830,7 @@
 - id: terraform-cloud
   name: Terraform Cloud
   summary: Managed service for Terraform workflows and state management.
-  official_url: https://developer.hashicorp.com/terraform/enterprise/cloud-docs
+  official_url: https://developer.hashicorp.com/terraform/cloud-docs
   categories:
   - infrastructure-as-code
   subcategories:

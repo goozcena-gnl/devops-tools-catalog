@@ -100,7 +100,7 @@
 | [Nixite](https://aspizu.github.io/nixite) | Developer experience and local environments | oss | needs-review |
 | [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | needs-review |
 | [Octopus Deploy](https://octopus.com) | CI, build and testing | unknown | needs-review |
-| [Odysseus](https://pewdiepie-archdaemon.github.io/odysseus) | Developer experience and local environments | oss | needs-review |
+| [Odysseus](https://odysseus-dev.github.io/odysseus) | Developer experience and local environments | oss | needs-review |
 | [Oh My Git!](https://ohmygit.org) | Source control and repository management | documentation | needs-review |
 | [Omarchy](https://omarchy.org) | Developer experience and local environments | oss | needs-review |
 | [Ona (formerly Gitpod)](https://github.com/gitpod-io) | Developer experience and local environments | open-core | needs-review |

@@ -3427,7 +3427,7 @@
   summary: Vulnerability scanner for containers and Kubernetes.
   official_url: https://aquasecurity.github.io/trivy
   repository_url: https://github.com/aquasecurity/trivy
-  documentation_url: https://trivy.dev/latest/
+  documentation_url: https://trivy.dev/docs/latest/
   categories:
   - kubernetes-networking-storage-addons
   - application-cloud-security

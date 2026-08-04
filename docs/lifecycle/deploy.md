@@ -436,7 +436,7 @@
 - [Tarook](https://tarook.cloud/en) — Cloud-native platform for streamlined Kubernetes and infrastructure management.
 - [Telepresence](https://www.telepresence.io) — Local dev against remote Kubernetes.
 - [Terraform](https://www.terraform.io) — Infrastructure provisioning tool.
-- [Terraform Cloud](https://developer.hashicorp.com/terraform/enterprise/cloud-docs) — Managed service for Terraform workflows and state management.
+- [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) — Managed service for Terraform workflows and state management.
 - [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) — MCP server for Terraform automation and infrastructure-as-code workflows.
 - [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge for cost savings.
 - [terraform-docs](https://terraform-docs.io) — Generate documentation from Terraform modules in various output formats.

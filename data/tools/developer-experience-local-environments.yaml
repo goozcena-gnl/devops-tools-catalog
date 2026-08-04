@@ -941,7 +941,7 @@
 - id: odysseus
   name: Odysseus
   summary: Self-hosted AI workspace for local agent workflows.
-  official_url: https://pewdiepie-archdaemon.github.io/odysseus
+  official_url: https://odysseus-dev.github.io/odysseus
   categories:
   - developer-experience-local-environments
   subcategories:
