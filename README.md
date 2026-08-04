@@ -9,7 +9,7 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 - **Canonical records:** 1092
 - **Categories:** 30
-- **Records requiring review:** 991
+- **Records requiring review:** 993
 - **Archived repositories:** 10
 - **Last generation date:** 2026-08-03
 - **Maintenance status:** Active migration; unverified metadata is explicitly marked.

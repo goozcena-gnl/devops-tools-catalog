@@ -35,7 +35,7 @@
   name: Grafana OnCall
   summary: Incident response and on-call management (OSS core with SaaS offering).
   official_url: https://grafana.com/products/cloud/oncall
-  repository_url: https://github.com/grafana-cold-storage/oncall
+  repository_url: https://github.com/grafana/oncall
   categories:
   - deprecated-historical
   - sre-incident-response-on-call
@@ -60,7 +60,7 @@
   sources:
   - legacy:5_Monitoring-Observability/README.md#L101
   - legacy:devopstools_final.md#L818
-  needs_review: false
+  needs_review: true
   repository_archived: true
 - id: kaniko
   name: Kaniko
@@ -160,7 +160,7 @@
 - id: kubernetes-dashboard
   name: Kubernetes Dashboard
   summary: Web UI for Kubernetes.
-  repository_url: https://github.com/kubernetes-retired/dashboard
+  repository_url: https://github.com/kubernetes/dashboard
   categories:
   - deprecated-historical
   - kubernetes-distributions-operations
@@ -186,7 +186,7 @@
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L52
   - legacy:devopstools_final.md#L504
-  needs_review: false
+  needs_review: true
   repository_archived: true
 - id: tnu
   name: tnu
