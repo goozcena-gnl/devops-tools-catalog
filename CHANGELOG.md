@@ -8,24 +8,34 @@ All notable catalogue architecture and governance changes are recorded here. Ind
 
 - No post-v0.2.0 changes recorded yet.
 
-## [0.2.0] - Draft
+## [0.2.0] - 2026-08-04
 
-### Planned release title
-
-- DevOps Tools Catalogue v0.2.0 - Wave 1 Evidence Reconciliation and Strict Link Audit Refresh
+Publication metadata finalized; tag and GitHub Release remain pending explicit owner approval.
 
 ### Scope
 
-- Completes Wave 1 reconciliation for the immutable 100-ID review plan across Batch 01..05.
-- Refreshes strict full-link audit artefacts and unresolved strict-item ledger.
-- Prepares release-candidate metadata and governance updates without publishing a tag/release.
+- Completed five Wave 1 evidence-verification batches (PRs #9, #10, #11, #12, #13) following the approved plan (PR #8).
+- Reconciled all 100 immutable planned records with conservative, evidence-backed lifecycle, licensing/SPDX, documentation, and URL metadata updates.
+- Finalized Wave 1 completion and release-candidate metadata in PR #14, then hardened machine-API detection behavior in PR #15.
 
-### Notes
+### Highlights
 
-- Final Wave 1 selected-ID outcomes: 94 active, 6 needs-review, 0 archived.
-- Strict unresolved link classes total 38 (`manual-verification-required`, `http-error`, `tls-failure`, `repository-archived`).
-- This is a draft entry; do not publish a tag or GitHub release without explicit owner approval.
-- Issue #2 remains open for human verification of unresolved strict items.
+- Wave 1 selected-record outcomes are 94 active, 6 needs-review, and 0 archived.
+- Applied project/repository identity corrections and authoritative-source URL/documentation normalization.
+- Preserved explicit product-boundary treatment for OSS, open-core, source-available, and commercial offerings.
+- Corrected Markdown metadata rendering details (including explicit `<br>` handling) in generated documentation paths.
+- Added focused lifecycle and regression coverage for verification decisions and link-review safety guards.
+- Refreshed strict link-audit artefacts and reconciled unresolved strict-item tracking.
+- Sanitized `candidate_replacement_url` semantics to keep machine/API probe endpoints as evidence only.
+- Hardened link-review machine-API endpoint detection to avoid hostname-boundary false positives.
+
+### Remaining verification debt
+
+- Issue #2 remains open for unresolved strict and manual link verification follow-up.
+- Strict unresolved classes remain: `manual-verification-required: 25`, `http-error: 2`, `tls-failure: 1`, `repository-archived: 10` (total 38).
+- Additional unresolved classes remain tracked: `rate-limited: 19`, `restricted-or-bot-blocked: 11`, plus transient and DNS-inconclusive cases.
+- `elastic-stack-elk` and `exoway` remain under conservative `needs-review` lifecycle status.
+- Additional catalogue records outside the Wave 1 immutable scope remain under progressive evidence review.
 
 ## [0.1.0] - Draft
 
