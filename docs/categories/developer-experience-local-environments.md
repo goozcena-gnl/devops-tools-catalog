@@ -671,7 +671,7 @@ Self-hosted AI workspace for local agent workflows.
 
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
-[Official site](https://pewdiepie-archdaemon.github.io/odysseus)
+[Official site](https://odysseus-dev.github.io/odysseus)
 
 ### Omarchy
 

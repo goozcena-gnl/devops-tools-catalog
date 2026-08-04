@@ -2185,7 +2185,7 @@ Vulnerability scanner for containers and Kubernetes.
 - You need deep SAST or DAST capabilities.
 - You need runtime threat detection (use Falco) rather than pre-deployment scanning.
 
-[Official site](https://aquasecurity.github.io/trivy) · [Documentation](https://trivy.dev/latest/) · [Source repository](https://github.com/aquasecurity/trivy)
+[Official site](https://aquasecurity.github.io/trivy) · [Documentation](https://trivy.dev/docs/latest/) · [Source repository](https://github.com/aquasecurity/trivy)
 
 ### TrueNAS
 

@@ -374,7 +374,7 @@
 | [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | needs-review |
 | [OCCT](https://www.ocbase.com) | Chaos and performance engineering | unknown | needs-review |
 | [Octopus Deploy](https://octopus.com) | CI, build and testing | unknown | needs-review |
-| [Odysseus](https://pewdiepie-archdaemon.github.io/odysseus) | Developer experience and local environments | oss | needs-review |
+| [Odysseus](https://odysseus-dev.github.io/odysseus) | Developer experience and local environments | oss | needs-review |
 | [Oh My Git!](https://ohmygit.org) | Source control and repository management | documentation | needs-review |
 | [OllyGarden](https://github.com/ollygarden) | Emerging and experimental tools | open-core | needs-review |
 | [Omarchy](https://omarchy.org) | Developer experience and local environments | oss | needs-review |
@@ -513,7 +513,7 @@
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |
 | [Termix](https://termix.site) | Developer experience and local environments | unknown | needs-review |
 | [Terraform](https://www.terraform.io) | Infrastructure as Code | source-available | needs-review |
-| [Terraform Cloud](https://developer.hashicorp.com/terraform/enterprise/cloud-docs) | Infrastructure as Code | unknown | needs-review |
+| [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | unknown | needs-review |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |

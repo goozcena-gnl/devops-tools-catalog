@@ -537,4 +537,4 @@ GitOps continuous delivery tool.
 
 - * You need production-proven tooling with large community support.
 
-[Official site](https://yokecd.github.io) · [Source repository](https://github.com/yokecd/yokecd)
+[Official site](https://yokecd.github.io) · [Source repository](https://github.com/yokecd/yoke)

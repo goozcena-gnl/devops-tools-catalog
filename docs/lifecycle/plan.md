@@ -49,7 +49,7 @@
 - [Spacelift](https://spacelift.io) — IaC automation with policy-as-code and collaboration.
 - [Tenzu](https://tenzu.net/fr) — Ethical open-source task and Kanban collaboration platform.
 - [Terraform](https://www.terraform.io) — Infrastructure provisioning tool.
-- [Terraform Cloud](https://developer.hashicorp.com/terraform/enterprise/cloud-docs) — Managed service for Terraform workflows and state management.
+- [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) — Managed service for Terraform workflows and state management.
 - [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge for cost savings.
 - [terraform-docs](https://terraform-docs.io) — Generate documentation from Terraform modules in various output formats.
 - [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) — Generate and validate Terraform provider/plugin documentation from source.

@@ -90,7 +90,7 @@
 - [Ninite](https://ninite.com) — Windows app installer/updater (bundled installers).
 - [Nixite](https://aspizu.github.io/nixite) — Nix-based bootstrap/installer helper (see project).
 - [nOps](https://www.nops.io) — Commercial FinOps / cloud cost optimization platform.
-- [Odysseus](https://pewdiepie-archdaemon.github.io/odysseus) — Self-hosted AI workspace for local agent workflows.
+- [Odysseus](https://odysseus-dev.github.io/odysseus) — Self-hosted AI workspace for local agent workflows.
 - [Oh My Git!](https://ohmygit.org) — Git learning game.
 - [OllyGarden](https://github.com/ollygarden) — OpenTelemetry adoption platform with tools for improving telemetry pipelines; built by OpenTelemetry contributors.
 - [Omarchy](https://omarchy.org) — Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.

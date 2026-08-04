@@ -500,7 +500,7 @@ Managed service for Terraform workflows and state management.
 
 - You want open-source tooling or need to avoid vendor dependency on HashiCorp.
 
-[Official site](https://developer.hashicorp.com/terraform/enterprise/cloud-docs)
+[Official site](https://developer.hashicorp.com/terraform/cloud-docs)
 
 ### terraform-aws-eks-operation-scheduler
 

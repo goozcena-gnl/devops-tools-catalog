@@ -170,7 +170,7 @@
 - [Nuclei](https://docs.projectdiscovery.io/opensource/nuclei/overview) — Fast vulnerability scanner.
 - [OCCT](https://www.ocbase.com) — Comprehensive system stability and stress testing tool.
 - [Octopus Deploy](https://octopus.com) — Deployment automation platform.
-- [Odysseus](https://pewdiepie-archdaemon.github.io/odysseus) — Self-hosted AI workspace for local agent workflows.
+- [Odysseus](https://odysseus-dev.github.io/odysseus) — Self-hosted AI workspace for local agent workflows.
 - [Omarchy](https://omarchy.org) — Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.
 - [Omni](https://www.siderolabs.com/omni) — Kubernetes cluster lifecycle management platform by Sidero Labs; BSL/source-available + SaaS.
 - [Ona (formerly Gitpod)](https://github.com/gitpod-io) — Cloud-based development environments.
