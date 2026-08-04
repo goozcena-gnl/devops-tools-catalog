@@ -162,7 +162,7 @@
 | [KubePlumber](https://github.com/David-VTUK/KubePlumber) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kubernetes Common Errors & Fixes](https://middleware.io/blog/kubernetes-common-errors-fix) | Kubernetes distributions and operations | documentation | needs-review |
-| [Kubernetes Dashboard](https://github.com/kubernetes/dashboard) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
+| [Kubernetes Dashboard](https://github.com/kubernetes-retired/dashboard) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
 | [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) | Kubernetes distributions and operations | documentation | needs-review |
 | [Kubescape](https://kubescape.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubesec](https://kubesec.io) | Kubernetes distributions and operations | oss | needs-review |
