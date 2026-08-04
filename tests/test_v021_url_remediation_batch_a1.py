@@ -33,19 +33,39 @@ EXPECTED_CHANGED_IDS = {"deeptutor"}
 EXPECTED_UNCHANGED_IDS = EXPECTED_IDS - EXPECTED_CHANGED_IDS
 
 
-def _ledger_rows() -> list[dict[str, str]]:
-    assert LEDGER.exists(), f"Missing batch A1 review ledger: {LEDGER}"
-    lines = [line.rstrip() for line in LEDGER.read_text(encoding="utf-8").splitlines()]
+def _ledger_rows(ledger_path: Path = LEDGER) -> list[dict[str, str]]:
+    assert ledger_path.exists(), f"Missing batch A1 review ledger: {ledger_path}"
+    lines = [
+        line.rstrip() for line in ledger_path.read_text(encoding="utf-8").splitlines()
+    ]
     table_lines = [line for line in lines if line.startswith("|")]
+    assert table_lines, (
+        f"Batch A1 review ledger contains no Markdown table: {ledger_path}"
+    )
     header = [part.strip() for part in table_lines[0].strip("|").split("|")]
+    required_columns = {
+        "tool_id",
+        "affected_field",
+        "final_value",
+        "decision",
+        "canonical_changed",
+    }
+    missing_columns = required_columns - set(header)
+    assert not missing_columns, (
+        "Batch A1 review ledger is missing required columns "
+        f"{sorted(missing_columns)}: {ledger_path}"
+    )
+
     rows: list[dict[str, str]] = []
-    for line in table_lines[2:]:
+    for row_number, line in enumerate(table_lines[2:], start=3):
         stripped = line.strip()
         if stripped and set(stripped) <= {"|", "-", ":", " "}:
             continue
         values = [part.strip() for part in line.strip("|").split("|")]
-        if len(values) != len(header):
-            continue
+        assert len(values) == len(header), (
+            f"Batch A1 review ledger has malformed row at line {row_number}: "
+            f"expected {len(header)} columns, got {len(values)}: {ledger_path}"
+        )
         rows.append(dict(zip(header, values, strict=True)))
     return rows
 
@@ -137,3 +157,47 @@ def test_markdown_separator_rows_with_alignment_are_skipped(tmp_path: Path) -> N
     assert rows[0]["tool_id"] == "deeptutor"
     assert rows[0]["affected_field"] == "official_url"
     assert rows[0]["canonical_changed"] == "yes"
+
+
+def test_empty_ledger_reports_missing_table(tmp_path: Path) -> None:
+    ledger = tmp_path / "empty-ledger.md"
+    ledger.write_text("", encoding="utf-8")
+
+    try:
+        _ledger_rows(ledger)
+    except AssertionError as exc:
+        message = str(exc)
+        assert "contains no Markdown table" in message
+        assert str(ledger) in message
+    else:
+        raise AssertionError("Expected AssertionError for empty ledger")
+
+
+def test_missing_required_column_reports_actionable_error(tmp_path: Path) -> None:
+    ledger = tmp_path / "missing-column-ledger.md"
+    ledger.write_text(
+        "\n".join(
+            [
+                "| tool_id | affected_field | final_value | decision |",
+                "|---|---|---|---|",
+                "| deeptutor | official_url | https://deeptutor.info/ | replace URL with primary-source proof |",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    try:
+        _ledger_rows(ledger)
+    except AssertionError as exc:
+        message = str(exc)
+        assert "missing required columns" in message
+        assert "canonical_changed" in message
+        assert str(ledger) in message
+    else:
+        raise AssertionError("Expected AssertionError for missing required column")
+
+
+def test_committed_batch_a1_ledger_parses_successfully() -> None:
+    rows = _ledger_rows()
+    assert rows
+    assert len(rows) == 21
