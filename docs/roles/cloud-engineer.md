@@ -73,7 +73,7 @@
 | [Dash0](https://www.dash0.com) | FinOps and sustainability | commercial | active |
 | [Datadog Cloud Cost Management](https://www.datadoghq.com/product/cloud-cost-management) | FinOps and sustainability | commercial | active |
 | [DeepSpeed](https://www.deepspeed.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [DeepTutor](https://hkuds.github.io/DeepTutor) | Documentation, learning and career resources | documentation | needs-review |
+| [DeepTutor](https://deeptutor.info/) | Documentation, learning and career resources | documentation | needs-review |
 | [Descope](https://www.descope.com) | IAM, secrets and certificate management | unknown | needs-review |
 | [DEV Community #devops](https://dev.to/t/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOps Community](https://www.devopscommunity.in) | Documentation, learning and career resources | documentation | needs-review |

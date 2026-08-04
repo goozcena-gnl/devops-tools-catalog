@@ -212,7 +212,7 @@ Interactive learning and tutoring platform.
 
 - For topics requiring verified, authoritative content — AI tutors can hallucinate.
 
-[Official site](https://hkuds.github.io/DeepTutor) · [Source repository](https://github.com/hkuds/DeepTutor)
+[Official site](https://deeptutor.info/) · [Source repository](https://github.com/hkuds/DeepTutor)
 
 ### DEV Community #devops
 
