@@ -5,6 +5,8 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import urlparse
 
+import pytest
+
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER_PATH = ROOT / "docs" / "link-review-ledger.md"
 REPORT_PATH = ROOT / "reports" / "link-report.json"
@@ -48,15 +50,65 @@ def _parse_ledger_rows() -> list[dict[str, str]]:
 
 
 def _is_machine_api_endpoint(url: str) -> bool:
+    def _path_is_or_starts_with(path_value: str, prefix: str) -> bool:
+        return path_value == prefix or path_value.startswith(f"{prefix}/")
+
     parsed = urlparse(url)
-    host = parsed.netloc.casefold()
-    path = parsed.path
-    return (
-        host == "api.github.com"
-        or "/api/v3/" in path
-        or (host == "api.githubcopilot.com" and "/graphql" in path)
-        or (host.endswith("github.com") and path.rstrip("/").endswith("/graphql"))
-    )
+    host = (parsed.hostname or "").casefold()
+    path = parsed.path.casefold().rstrip("/")
+
+    if host == "api.github.com":
+        return True
+
+    if host == "api.githubcopilot.com" and _path_is_or_starts_with(path, "/graphql"):
+        return True
+
+    if _path_is_or_starts_with(path, "/api/v3"):
+        return True
+
+    return _path_is_or_starts_with(path, "/api/graphql")
+
+
+@pytest.mark.parametrize(
+    "url",
+    [
+        "https://api.github.com/repos/example/project",
+        "https://api.github.com/graphql",
+        "https://api.github.com:443/repos/example/project",
+        "https://API.GITHUB.COM/repos/example/project",
+        "https://github.example.com/api/v3",
+        "https://github.example.com/api/v3/repos/example/project",
+        "https://github.example.com/api/graphql",
+        "https://api.githubcopilot.com/graphql",
+        "https://api.githubcopilot.com/GRAPHQL",
+        "https://github.example.com:8443/api/v3/repos/example/project",
+    ],
+)
+def test_machine_api_endpoint_detection_rejected_urls(url: str) -> None:
+    assert _is_machine_api_endpoint(url)
+
+
+@pytest.mark.parametrize(
+    "url",
+    [
+        "https://evilgithub.com/repos/example/project",
+        "https://notgithub.com/graphql",
+        "https://example.com/github.com/graphql",
+        "https://github.com/example/project",
+        "https://docs.github.com/en/rest",
+        "https://example.com/api/v3-guide",
+        "https://example.com/api/v30/repos/example/project",
+        "https://example.com/documentation/api/v3/example",
+        "https://example.com/graphql-guide",
+        "https://example.com/path/graphql",
+        "https://github.example.com/api/v3-guide",
+        "https://github.example.com/documentation/api/v3/example",
+        "mailto:someone@example.com",
+        "",
+    ],
+)
+def test_machine_api_endpoint_detection_accepted_urls(url: str) -> None:
+    assert not _is_machine_api_endpoint(url)
 
 
 def test_link_review_ledger_candidates_and_strict_counts() -> None:
