@@ -17,6 +17,7 @@ WORKFLOW = ROOT / ".github" / "workflows" / "quality.yml"
 
 BATCH = "batch-c2-access-retry"
 BATCH_C2_BASELINE_SHA = "52be634373c5bece54a376808c46ac31eceb3675"
+BATCH_C2_RESULT_SHA = "45dedfdecf2a80207eb0acf6585e4298078cf469"
 
 EXPECTED_IDS = {
     "oracle-cloud-infrastructure-oci",
@@ -225,44 +226,52 @@ def _load_tool(yaml_file: str, tool_id: str) -> dict:
     return by_id[tool_id]
 
 
-def _require_batch_c2_baseline() -> None:
+def _require_batch_c2_refs() -> None:
     import pytest
 
-    try:
-        subprocess.run(
-            ["git", "cat-file", "-e", f"{BATCH_C2_BASELINE_SHA}^{{commit}}"],
-            cwd=ROOT,
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-    except FileNotFoundError as exc:
-        raise AssertionError(
-            "Git executable is required for Batch C2 pinned-baseline invariants"
-        ) from exc
-    except subprocess.CalledProcessError as exc:
-        if os.getenv("GITHUB_ACTIONS") == "true":
+    refs = [
+        ("baseline", BATCH_C2_BASELINE_SHA),
+        ("result", BATCH_C2_RESULT_SHA),
+    ]
+    for label, sha in refs:
+        try:
+            subprocess.run(
+                ["git", "cat-file", "-e", f"{sha}^{{commit}}"],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+        except FileNotFoundError as exc:
             raise AssertionError(
-                f"Baseline commit {BATCH_C2_BASELINE_SHA} is not reachable in this "
-                "GitHub Actions checkout, so Batch C2 invariants cannot be enforced. "
-                "Verify .github/workflows/quality.yml checkout uses fetch-depth: 0."
+                "Git executable is required for Batch C2 pinned-result invariants"
             ) from exc
+        except subprocess.CalledProcessError as exc:
+            if os.getenv("GITHUB_ACTIONS") == "true":
+                raise AssertionError(
+                    f"{label.capitalize()} commit {sha} is not reachable in this "
+                    "GitHub Actions checkout, so Batch C2 invariants cannot be "
+                    "enforced. Required refs: "
+                    f"{BATCH_C2_BASELINE_SHA} -> {BATCH_C2_RESULT_SHA}. "
+                    "Verify .github/workflows/quality.yml checkout uses fetch-depth: 0."
+                ) from exc
 
-        pytest.skip(
-            f"Baseline commit {BATCH_C2_BASELINE_SHA} is not reachable in this local "
-            "shallow/partial clone; skipping Batch C2 pinned-baseline invariants"
-        )
+            pytest.skip(
+                f"{label.capitalize()} commit {sha} is not reachable in this local "
+                "shallow/partial clone; skipping Batch C2 pinned-result invariants "
+                f"({BATCH_C2_BASELINE_SHA} -> {BATCH_C2_RESULT_SHA})"
+            )
 
 
 def _git_diff_name_only(paths: list[str]) -> set[str]:
-    _require_batch_c2_baseline()
+    _require_batch_c2_refs()
 
     cmd = [
         "git",
         "diff",
         "--name-only",
         BATCH_C2_BASELINE_SHA,
-        "HEAD",
+        BATCH_C2_RESULT_SHA,
         "--",
         *paths,
     ]
@@ -277,8 +286,9 @@ def _git_diff_name_only(paths: list[str]) -> set[str]:
     except subprocess.CalledProcessError as exc:
         stderr = (exc.stderr or "").strip()
         raise AssertionError(
-            "Unable to compute Batch C2 baseline diff using explicit two-commit "
-            f"range ({BATCH_C2_BASELINE_SHA} HEAD): {stderr or exc}"
+            "Unable to compute Batch C2 baseline/result diff using explicit "
+            f"two-commit range ({BATCH_C2_BASELINE_SHA} {BATCH_C2_RESULT_SHA}): "
+            f"{stderr or exc}"
         ) from exc
 
     return {line.strip() for line in result.stdout.splitlines() if line.strip()}
@@ -405,7 +415,7 @@ def test_batch_c2_baseline_available_succeeds() -> None:
             ["git", "cat-file"], 0, stdout="", stderr=""
         ),
     ):
-        _require_batch_c2_baseline()
+        _require_batch_c2_refs()
 
 
 def test_batch_c2_baseline_missing_local_skips(monkeypatch: object) -> None:
@@ -424,10 +434,11 @@ def test_batch_c2_baseline_missing_local_skips(monkeypatch: object) -> None:
         ),
         pytest.raises(pytest.skip.Exception) as exc_info,
     ):
-        _require_batch_c2_baseline()
+        _require_batch_c2_refs()
 
     text = str(exc_info.value)
     assert BATCH_C2_BASELINE_SHA in text
+    assert BATCH_C2_RESULT_SHA in text
     assert "local" in text
     assert "shallow/partial clone" in text
 
@@ -444,13 +455,68 @@ def test_batch_c2_baseline_missing_in_ci_fails_actionably(monkeypatch: object) -
         ),
     ):
         try:
-            _require_batch_c2_baseline()
+            _require_batch_c2_refs()
             raise AssertionError(  # pragma: no cover
                 "Expected AssertionError when baseline is missing in CI"
             )
         except AssertionError as exc:
             text = str(exc)
             assert BATCH_C2_BASELINE_SHA in text
+            assert BATCH_C2_RESULT_SHA in text
+            assert "Batch C2 invariants cannot be enforced" in text
+            assert "fetch-depth: 0" in text
+
+
+def test_batch_c2_result_missing_local_skips(monkeypatch: object) -> None:
+    import unittest.mock as mock
+
+    import pytest
+
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+
+    def _side_effect(*args: object, **kwargs: object) -> subprocess.CompletedProcess:
+        cmd = list(args[0])
+        if f"{BATCH_C2_BASELINE_SHA}^{{commit}}" in cmd:
+            return subprocess.CompletedProcess(cmd, 0, stdout="", stderr="")
+        if f"{BATCH_C2_RESULT_SHA}^{{commit}}" in cmd:
+            raise subprocess.CalledProcessError(128, cmd, stderr="not a valid object")
+        return subprocess.CompletedProcess(cmd, 0, stdout="", stderr="")
+
+    with (
+        mock.patch("subprocess.run", side_effect=_side_effect),
+        pytest.raises(pytest.skip.Exception) as exc_info,
+    ):
+        _require_batch_c2_refs()
+
+    text = str(exc_info.value)
+    assert BATCH_C2_BASELINE_SHA in text
+    assert BATCH_C2_RESULT_SHA in text
+    assert "local" in text
+
+
+def test_batch_c2_result_missing_in_ci_fails_actionably(monkeypatch: object) -> None:
+    import unittest.mock as mock
+
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+
+    def _side_effect(*args: object, **kwargs: object) -> subprocess.CompletedProcess:
+        cmd = list(args[0])
+        if f"{BATCH_C2_BASELINE_SHA}^{{commit}}" in cmd:
+            return subprocess.CompletedProcess(cmd, 0, stdout="", stderr="")
+        if f"{BATCH_C2_RESULT_SHA}^{{commit}}" in cmd:
+            raise subprocess.CalledProcessError(128, cmd, stderr="not a valid object")
+        return subprocess.CompletedProcess(cmd, 0, stdout="", stderr="")
+
+    with mock.patch("subprocess.run", side_effect=_side_effect):
+        try:
+            _require_batch_c2_refs()
+            raise AssertionError(  # pragma: no cover
+                "Expected AssertionError when result is missing in CI"
+            )
+        except AssertionError as exc:
+            text = str(exc)
+            assert BATCH_C2_BASELINE_SHA in text
+            assert BATCH_C2_RESULT_SHA in text
             assert "Batch C2 invariants cannot be enforced" in text
             assert "fetch-depth: 0" in text
 
@@ -460,7 +526,7 @@ def test_batch_c2_git_unavailable_fails_actionably() -> None:
 
     with mock.patch("subprocess.run", side_effect=FileNotFoundError("git missing")):
         try:
-            _require_batch_c2_baseline()
+            _require_batch_c2_refs()
             raise AssertionError(  # pragma: no cover
                 "Expected AssertionError when git executable is unavailable"
             )
@@ -527,9 +593,12 @@ def test_batch_c2_diff_commands_use_explicit_two_commit_range() -> None:
 
     cmd = diff_calls[0]
     assert BATCH_C2_BASELINE_SHA in cmd
-    assert "HEAD" in cmd
+    assert BATCH_C2_RESULT_SHA in cmd
     idx = cmd.index(BATCH_C2_BASELINE_SHA)
-    assert cmd[idx + 1] == "HEAD", "HEAD must immediately follow baseline SHA"
+    assert cmd[idx + 1] == BATCH_C2_RESULT_SHA, (
+        "Result SHA must immediately follow baseline SHA"
+    )
+    assert "HEAD" not in cmd
     assert not [arg for arg in cmd if "..." in arg], (
         f"Three-dot revision must not be used: {cmd}"
     )
