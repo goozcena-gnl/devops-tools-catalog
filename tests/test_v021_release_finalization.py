@@ -13,6 +13,9 @@ PUBLIC_NOTES = ROOT / "docs" / "releases" / "v0.2.1-notes.md"
 INTERNAL_DRAFT = ROOT / "docs" / "releases" / "v0.2.1-draft.md"
 COMPLETION = ROOT / "docs" / "maintenance" / "v0.2.1-remediation-completion.md"
 
+FINALIZATION_BASELINE_SHA = "e04412ebfb85118d33a2f9bc584a44b8f2334259"
+FINALIZATION_RESULT_SHA = "a97f52db89857e4132c84de99c075c6d15a3b7d2"
+
 ALLOWED_CHANGED_FILES = {
     "pyproject.toml",
     "CHANGELOG.md",
@@ -48,60 +51,62 @@ def _read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
-class _NoPrDiff(RuntimeError):
-    pass
+def _require_finalization_refs() -> None:
+    refs = [
+        ("baseline", FINALIZATION_BASELINE_SHA),
+        ("result", FINALIZATION_RESULT_SHA),
+    ]
 
-
-def _resolve_base_ref() -> tuple[str, bool]:
-    pr_base = os.getenv("GITHUB_BASE_REF", "").strip()
-    if pr_base:
-        for ref in (f"origin/{pr_base}", pr_base):
-            check = subprocess.run(
-                ["git", "rev-parse", "--verify", ref],
+    for label, sha in refs:
+        try:
+            subprocess.run(
+                ["git", "cat-file", "-e", f"{sha}^{{commit}}"],
                 cwd=ROOT,
-                text=True,
                 capture_output=True,
+                text=True,
+                check=True,
             )
-            if check.returncode == 0:
-                return ref, True
-        raise AssertionError(
-            f"Unable to resolve pull_request base ref for GITHUB_BASE_REF={pr_base!r}"
-        )
+        except FileNotFoundError as exc:
+            raise AssertionError(
+                "Git executable is required for finalization pinned baseline/result invariants"
+            ) from exc
+        except subprocess.CalledProcessError as exc:
+            if os.getenv("GITHUB_ACTIONS") == "true":
+                raise AssertionError(
+                    f"{label.capitalize()} commit {sha} is not reachable in this "
+                    "GitHub Actions checkout, so finalization pinned baseline/result "
+                    "invariants cannot be enforced. Required refs: "
+                    f"{FINALIZATION_BASELINE_SHA} -> {FINALIZATION_RESULT_SHA}. "
+                    "Verify .github/workflows/quality.yml checkout uses fetch-depth: 0."
+                ) from exc
 
-    for ref in ("origin/main", "main"):
-        check = subprocess.run(
-            ["git", "rev-parse", "--verify", ref],
-            cwd=ROOT,
-            text=True,
-            capture_output=True,
-        )
-        if check.returncode == 0:
-            return ref, False
-    raise AssertionError("Unable to resolve merge-base against main")
-
-
-def _diff_names(base: str, *paths: str) -> set[str]:
-    cmd = ["git", "diff", "--name-only", f"{base}..HEAD", "--", *paths]
-    out = subprocess.check_output(cmd, cwd=ROOT, text=True)
-    return {line.strip() for line in out.splitlines() if line.strip()}
+            pytest.skip(
+                f"{label.capitalize()} commit {sha} is not reachable in this local "
+                "shallow/partial clone; skipping finalization pinned baseline/result "
+                f"invariants ({FINALIZATION_BASELINE_SHA} -> {FINALIZATION_RESULT_SHA})"
+            )
 
 
-def _pr_changed_files() -> set[str]:
-    base_ref, is_pr_context = _resolve_base_ref()
-    merge_base = subprocess.check_output(
-        ["git", "merge-base", "HEAD", base_ref], cwd=ROOT, text=True
-    ).strip()
-    head_sha = subprocess.check_output(
-        ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
-    ).strip()
+def _finalization_changed_files(*paths: str) -> set[str]:
+    _require_finalization_refs()
 
-    if not is_pr_context and merge_base == head_sha:
-        raise _NoPrDiff(
-            "No active PR/file-scope diff in this local post-merge context; "
-            "skipping PR-only changed-file scope invariant"
-        )
-
-    return _diff_names(merge_base, ".")
+    cmd = [
+        "git",
+        "diff",
+        "--name-only",
+        FINALIZATION_BASELINE_SHA,
+        FINALIZATION_RESULT_SHA,
+        "--",
+        *paths,
+    ]
+    result = subprocess.run(
+        cmd,
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    return {line.strip() for line in result.stdout.splitlines() if line.strip()}
 
 
 def test_pyproject_version_is_021() -> None:
@@ -172,124 +177,160 @@ def test_public_notes_do_not_claim_full_evidence_debt_resolution() -> None:
 
 
 def test_finalization_pr_changed_file_scope_is_limited() -> None:
-    try:
-        changed = _pr_changed_files()
-    except _NoPrDiff as exc:
-        pytest.skip(str(exc))
+    changed = _finalization_changed_files(".")
     assert changed == ALLOWED_CHANGED_FILES
 
 
 def test_no_protected_paths_modified_by_finalization_pr() -> None:
-    base_ref, _ = _resolve_base_ref()
-    base = subprocess.check_output(
-        ["git", "merge-base", "HEAD", base_ref], cwd=ROOT, text=True
-    ).strip()
-    changed = _diff_names(base, *PROTECTED_PATHS)
+    changed = _finalization_changed_files(*PROTECTED_PATHS)
     assert changed == set()
 
 
-def test_finalization_scope_helper_never_uses_git_status(monkeypatch: object) -> None:
-    monkeypatch.setenv("GITHUB_BASE_REF", "main")
-
-    def _mock_run(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
-        if args[:3] == ["git", "rev-parse", "--verify"]:
-            return subprocess.CompletedProcess(args, 0, stdout="ok\n", stderr="")
-        return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
-
-    def _mock_check_output(args: list[str], **kwargs: object) -> str:
-        if args[:2] == ["git", "status"]:
-            raise AssertionError("git status must not be used")
-        if args[:2] == ["git", "merge-base"]:
-            return "abc123\n"
-        if args[:2] == ["git", "rev-parse"]:
-            return "def456\n"
-        if args[:3] == ["git", "diff", "--name-only"]:
-            return "pyproject.toml\nCHANGELOG.md\n"
-        raise AssertionError(f"Unexpected command: {args}")
-
-    monkeypatch.setattr(subprocess, "run", _mock_run)
-    monkeypatch.setattr(subprocess, "check_output", _mock_check_output)
-
-    changed = _pr_changed_files()
-    assert changed == {"pyproject.toml", "CHANGELOG.md"}
-
-
-def test_finalization_scope_helper_skips_post_merge_main_context(
+def test_finalization_refs_missing_baseline_in_ci_fails_actionably(
     monkeypatch: object,
 ) -> None:
-    monkeypatch.delenv("GITHUB_BASE_REF", raising=False)
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
 
-    def _mock_run(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
-        if args[:3] == ["git", "rev-parse", "--verify"] and args[-1] in {
-            "origin/main",
-            "main",
-        }:
-            return subprocess.CompletedProcess(args, 0, stdout="ok\n", stderr="")
-        return subprocess.CompletedProcess(args, 1, stdout="", stderr="")
-
-    def _mock_check_output(args: list[str], **kwargs: object) -> str:
-        if args[:2] == ["git", "merge-base"]:
-            return "same-sha\n"
-        if args[:2] == ["git", "rev-parse"]:
-            return "same-sha\n"
-        raise AssertionError(f"Unexpected command: {args}")
-
-    monkeypatch.setattr(subprocess, "run", _mock_run)
-    monkeypatch.setattr(subprocess, "check_output", _mock_check_output)
-
-    with pytest.raises(_NoPrDiff):
-        _pr_changed_files()
-
-
-def test_finalization_scope_helper_pr_context_enforces_exact_eight_files(
-    monkeypatch: object,
-) -> None:
-    monkeypatch.setenv("GITHUB_BASE_REF", "main")
-
-    expected = sorted(ALLOWED_CHANGED_FILES)
-
-    def _mock_run(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
-        if args[:3] == ["git", "rev-parse", "--verify"]:
-            return subprocess.CompletedProcess(args, 0, stdout="ok\n", stderr="")
+    def _side_effect(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        if (
+            args[:3] == ["git", "cat-file", "-e"]
+            and args[3] == f"{FINALIZATION_BASELINE_SHA}^{{commit}}"
+        ):
+            raise subprocess.CalledProcessError(128, args, stderr="not a valid object")
         return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
 
-    def _mock_check_output(args: list[str], **kwargs: object) -> str:
-        if args[:2] == ["git", "merge-base"]:
-            return "base-sha\n"
-        if args[:2] == ["git", "rev-parse"]:
-            return "head-sha\n"
+    monkeypatch.setattr(subprocess, "run", _side_effect)
+
+    with pytest.raises(AssertionError) as exc_info:
+        _require_finalization_refs()
+
+    text = str(exc_info.value)
+    assert FINALIZATION_BASELINE_SHA in text
+    assert FINALIZATION_RESULT_SHA in text
+    assert "fetch-depth: 0" in text
+
+
+def test_finalization_refs_missing_result_in_ci_fails_actionably(
+    monkeypatch: object,
+) -> None:
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+
+    def _side_effect(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        if (
+            args[:3] == ["git", "cat-file", "-e"]
+            and args[3] == f"{FINALIZATION_RESULT_SHA}^{{commit}}"
+        ):
+            raise subprocess.CalledProcessError(128, args, stderr="not a valid object")
+        return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+
+    monkeypatch.setattr(subprocess, "run", _side_effect)
+
+    with pytest.raises(AssertionError) as exc_info:
+        _require_finalization_refs()
+
+    text = str(exc_info.value)
+    assert FINALIZATION_BASELINE_SHA in text
+    assert FINALIZATION_RESULT_SHA in text
+    assert "fetch-depth: 0" in text
+
+
+def test_finalization_refs_missing_result_local_skips(monkeypatch: object) -> None:
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+
+    def _side_effect(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        if (
+            args[:3] == ["git", "cat-file", "-e"]
+            and args[3] == f"{FINALIZATION_RESULT_SHA}^{{commit}}"
+        ):
+            raise subprocess.CalledProcessError(128, args, stderr="not a valid object")
+        return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+
+    monkeypatch.setattr(subprocess, "run", _side_effect)
+
+    with pytest.raises(pytest.skip.Exception) as exc_info:
+        _require_finalization_refs()
+
+    text = str(exc_info.value)
+    assert FINALIZATION_BASELINE_SHA in text
+    assert FINALIZATION_RESULT_SHA in text
+    assert "shallow/partial clone" in text
+
+
+def test_finalization_diff_uses_explicit_two_commit_range(monkeypatch: object) -> None:
+    captured: list[list[str]] = []
+
+    def _side_effect(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        captured.append(list(args))
+        if args[:3] == ["git", "cat-file", "-e"]:
+            return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
         if args[:3] == ["git", "diff", "--name-only"]:
-            return "\n".join(expected) + "\n"
+            return subprocess.CompletedProcess(
+                args,
+                0,
+                stdout="\n".join(sorted(ALLOWED_CHANGED_FILES)) + "\n",
+                stderr="",
+            )
         raise AssertionError(f"Unexpected command: {args}")
 
-    monkeypatch.setattr(subprocess, "run", _mock_run)
-    monkeypatch.setattr(subprocess, "check_output", _mock_check_output)
+    monkeypatch.setattr(subprocess, "run", _side_effect)
 
-    changed = _pr_changed_files()
+    changed = _finalization_changed_files(".")
     assert changed == ALLOWED_CHANGED_FILES
 
+    diff_calls = [
+        cmd
+        for cmd in captured
+        if len(cmd) >= 3 and cmd[:3] == ["git", "diff", "--name-only"]
+    ]
+    assert diff_calls, "Expected git diff command"
 
-def test_finalization_scope_helper_does_not_broadly_suppress_exceptions(
+    cmd = diff_calls[0]
+    assert cmd[3] == FINALIZATION_BASELINE_SHA
+    assert cmd[4] == FINALIZATION_RESULT_SHA
+    assert "HEAD" not in cmd
+    assert not [arg for arg in cmd if "..." in arg]
+    assert not [called for called in captured if called[:2] == ["git", "status"]]
+
+
+def test_finalization_protected_path_parity_uses_pinned_refs(
     monkeypatch: object,
 ) -> None:
-    monkeypatch.setenv("GITHUB_BASE_REF", "main")
+    captured: list[list[str]] = []
 
-    def _mock_run(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
-        if args[:3] == ["git", "rev-parse", "--verify"]:
-            return subprocess.CompletedProcess(args, 0, stdout="ok\n", stderr="")
-        return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+    def _side_effect(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        captured.append(list(args))
+        if args[:3] == ["git", "cat-file", "-e"]:
+            return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+        if args[:3] == ["git", "diff", "--name-only"]:
+            return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+        raise AssertionError(f"Unexpected command: {args}")
 
-    def _mock_check_output(args: list[str], **kwargs: object) -> str:
-        if args[:2] == ["git", "merge-base"]:
-            return "base-sha\n"
-        if args[:2] == ["git", "rev-parse"]:
-            return "head-sha\n"
+    monkeypatch.setattr(subprocess, "run", _side_effect)
+
+    changed = _finalization_changed_files(*PROTECTED_PATHS)
+    assert changed == set()
+
+    diff_calls = [
+        cmd
+        for cmd in captured
+        if len(cmd) >= 3 and cmd[:3] == ["git", "diff", "--name-only"]
+    ]
+    assert diff_calls, "Expected git diff command"
+    cmd = diff_calls[0]
+    assert cmd[3] == FINALIZATION_BASELINE_SHA
+    assert cmd[4] == FINALIZATION_RESULT_SHA
+    assert "HEAD" not in cmd
+
+
+def test_finalization_helper_subprocess_failure_propagates(monkeypatch: object) -> None:
+    def _side_effect(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        if args[:3] == ["git", "cat-file", "-e"]:
+            return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
         if args[:3] == ["git", "diff", "--name-only"]:
             raise subprocess.CalledProcessError(2, args, stderr="bad diff")
         raise AssertionError(f"Unexpected command: {args}")
 
-    monkeypatch.setattr(subprocess, "run", _mock_run)
-    monkeypatch.setattr(subprocess, "check_output", _mock_check_output)
+    monkeypatch.setattr(subprocess, "run", _side_effect)
 
     with pytest.raises(subprocess.CalledProcessError):
-        _pr_changed_files()
+        _finalization_changed_files(".")
