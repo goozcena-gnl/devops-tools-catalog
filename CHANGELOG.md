@@ -2,9 +2,9 @@
 
 All notable catalogue architecture and governance changes are recorded here. Individual tool metadata changes remain visible in Git history and pull requests.
 
-## [0.2.1] - Draft
+## [0.2.1] - 2026-08-05
 
-Release-candidate metadata for the merged v0.2.1 remediation sequence. Tag and GitHub Release publication remain pending explicit owner approval after this finalization PR is merged.
+Publication metadata finalized on 2026-08-05 after completion of the v0.2.1 remediation sequence. Tag and GitHub Release publication follow from this release commit after explicit owner approval.
 
 ### Scope
 
