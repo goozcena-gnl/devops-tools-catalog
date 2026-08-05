@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import os
 import subprocess
 from pathlib import Path
+
+import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 PYPROJECT = ROOT / "pyproject.toml"
@@ -17,6 +20,8 @@ ALLOWED_CHANGED_FILES = {
     "docs/releases/v0.2.1-draft.md",
     "docs/maintenance/v0.2.1-remediation-completion.md",
     "tests/test_v021_release_finalization.py",
+    "tests/test_v021_url_remediation_batch_c2.py",
+    "tests/test_v021_license_lifecycle_remediation_batch_d.py",
 }
 
 PROTECTED_PATHS = [
@@ -43,7 +48,26 @@ def _read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def _merge_base_ref() -> str:
+class _NoPrDiff(RuntimeError):
+    pass
+
+
+def _resolve_base_ref() -> tuple[str, bool]:
+    pr_base = os.getenv("GITHUB_BASE_REF", "").strip()
+    if pr_base:
+        for ref in (f"origin/{pr_base}", pr_base):
+            check = subprocess.run(
+                ["git", "rev-parse", "--verify", ref],
+                cwd=ROOT,
+                text=True,
+                capture_output=True,
+            )
+            if check.returncode == 0:
+                return ref, True
+        raise AssertionError(
+            f"Unable to resolve pull_request base ref for GITHUB_BASE_REF={pr_base!r}"
+        )
+
     for ref in ("origin/main", "main"):
         check = subprocess.run(
             ["git", "rev-parse", "--verify", ref],
@@ -52,9 +76,7 @@ def _merge_base_ref() -> str:
             capture_output=True,
         )
         if check.returncode == 0:
-            return subprocess.check_output(
-                ["git", "merge-base", "HEAD", ref], cwd=ROOT, text=True
-            ).strip()
+            return ref, False
     raise AssertionError("Unable to resolve merge-base against main")
 
 
@@ -64,17 +86,22 @@ def _diff_names(base: str, *paths: str) -> set[str]:
     return {line.strip() for line in out.splitlines() if line.strip()}
 
 
-def _working_tree_changed_names() -> set[str]:
-    out = subprocess.check_output(["git", "status", "--porcelain"], cwd=ROOT, text=True)
-    changed = set()
-    for line in out.splitlines():
-        if not line.strip():
-            continue
-        path = line[3:]
-        if " -> " in path:
-            path = path.split(" -> ", 1)[1]
-        changed.add(path.strip())
-    return changed
+def _pr_changed_files() -> set[str]:
+    base_ref, is_pr_context = _resolve_base_ref()
+    merge_base = subprocess.check_output(
+        ["git", "merge-base", "HEAD", base_ref], cwd=ROOT, text=True
+    ).strip()
+    head_sha = subprocess.check_output(
+        ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
+    ).strip()
+
+    if not is_pr_context and merge_base == head_sha:
+        raise _NoPrDiff(
+            "No active PR/file-scope diff in this local post-merge context; "
+            "skipping PR-only changed-file scope invariant"
+        )
+
+    return _diff_names(merge_base, ".")
 
 
 def test_pyproject_version_is_021() -> None:
@@ -145,14 +172,124 @@ def test_public_notes_do_not_claim_full_evidence_debt_resolution() -> None:
 
 
 def test_finalization_pr_changed_file_scope_is_limited() -> None:
-    base = _merge_base_ref()
-    changed = _diff_names(base, ".")
-    if not changed:
-        changed = _working_tree_changed_names()
+    try:
+        changed = _pr_changed_files()
+    except _NoPrDiff as exc:
+        pytest.skip(str(exc))
     assert changed == ALLOWED_CHANGED_FILES
 
 
 def test_no_protected_paths_modified_by_finalization_pr() -> None:
-    base = _merge_base_ref()
+    base_ref, _ = _resolve_base_ref()
+    base = subprocess.check_output(
+        ["git", "merge-base", "HEAD", base_ref], cwd=ROOT, text=True
+    ).strip()
     changed = _diff_names(base, *PROTECTED_PATHS)
     assert changed == set()
+
+
+def test_finalization_scope_helper_never_uses_git_status(monkeypatch: object) -> None:
+    monkeypatch.setenv("GITHUB_BASE_REF", "main")
+
+    def _mock_run(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        if args[:3] == ["git", "rev-parse", "--verify"]:
+            return subprocess.CompletedProcess(args, 0, stdout="ok\n", stderr="")
+        return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+
+    def _mock_check_output(args: list[str], **kwargs: object) -> str:
+        if args[:2] == ["git", "status"]:
+            raise AssertionError("git status must not be used")
+        if args[:2] == ["git", "merge-base"]:
+            return "abc123\n"
+        if args[:2] == ["git", "rev-parse"]:
+            return "def456\n"
+        if args[:3] == ["git", "diff", "--name-only"]:
+            return "pyproject.toml\nCHANGELOG.md\n"
+        raise AssertionError(f"Unexpected command: {args}")
+
+    monkeypatch.setattr(subprocess, "run", _mock_run)
+    monkeypatch.setattr(subprocess, "check_output", _mock_check_output)
+
+    changed = _pr_changed_files()
+    assert changed == {"pyproject.toml", "CHANGELOG.md"}
+
+
+def test_finalization_scope_helper_skips_post_merge_main_context(
+    monkeypatch: object,
+) -> None:
+    monkeypatch.delenv("GITHUB_BASE_REF", raising=False)
+
+    def _mock_run(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        if args[:3] == ["git", "rev-parse", "--verify"] and args[-1] in {
+            "origin/main",
+            "main",
+        }:
+            return subprocess.CompletedProcess(args, 0, stdout="ok\n", stderr="")
+        return subprocess.CompletedProcess(args, 1, stdout="", stderr="")
+
+    def _mock_check_output(args: list[str], **kwargs: object) -> str:
+        if args[:2] == ["git", "merge-base"]:
+            return "same-sha\n"
+        if args[:2] == ["git", "rev-parse"]:
+            return "same-sha\n"
+        raise AssertionError(f"Unexpected command: {args}")
+
+    monkeypatch.setattr(subprocess, "run", _mock_run)
+    monkeypatch.setattr(subprocess, "check_output", _mock_check_output)
+
+    with pytest.raises(_NoPrDiff):
+        _pr_changed_files()
+
+
+def test_finalization_scope_helper_pr_context_enforces_exact_eight_files(
+    monkeypatch: object,
+) -> None:
+    monkeypatch.setenv("GITHUB_BASE_REF", "main")
+
+    expected = sorted(ALLOWED_CHANGED_FILES)
+
+    def _mock_run(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        if args[:3] == ["git", "rev-parse", "--verify"]:
+            return subprocess.CompletedProcess(args, 0, stdout="ok\n", stderr="")
+        return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+
+    def _mock_check_output(args: list[str], **kwargs: object) -> str:
+        if args[:2] == ["git", "merge-base"]:
+            return "base-sha\n"
+        if args[:2] == ["git", "rev-parse"]:
+            return "head-sha\n"
+        if args[:3] == ["git", "diff", "--name-only"]:
+            return "\n".join(expected) + "\n"
+        raise AssertionError(f"Unexpected command: {args}")
+
+    monkeypatch.setattr(subprocess, "run", _mock_run)
+    monkeypatch.setattr(subprocess, "check_output", _mock_check_output)
+
+    changed = _pr_changed_files()
+    assert changed == ALLOWED_CHANGED_FILES
+
+
+def test_finalization_scope_helper_does_not_broadly_suppress_exceptions(
+    monkeypatch: object,
+) -> None:
+    monkeypatch.setenv("GITHUB_BASE_REF", "main")
+
+    def _mock_run(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        if args[:3] == ["git", "rev-parse", "--verify"]:
+            return subprocess.CompletedProcess(args, 0, stdout="ok\n", stderr="")
+        return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+
+    def _mock_check_output(args: list[str], **kwargs: object) -> str:
+        if args[:2] == ["git", "merge-base"]:
+            return "base-sha\n"
+        if args[:2] == ["git", "rev-parse"]:
+            return "head-sha\n"
+        if args[:3] == ["git", "diff", "--name-only"]:
+            raise subprocess.CalledProcessError(2, args, stderr="bad diff")
+        raise AssertionError(f"Unexpected command: {args}")
+
+    monkeypatch.setattr(subprocess, "run", _mock_run)
+    monkeypatch.setattr(subprocess, "check_output", _mock_check_output)
+
+    with pytest.raises(subprocess.CalledProcessError):
+        _pr_changed_files()
