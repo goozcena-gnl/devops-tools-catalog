@@ -34,7 +34,7 @@ Publication metadata finalized on 2026-08-05 after completion of the v0.2.1 reme
 - Access/retry-dependent boundaries remain across retained C1/C2 unresolved records.
 - Licence/lifecycle ambiguity boundaries remain for `autopwn-suite`, `cai-robotsec`, `ctop`, `elastic-apm-server`, and `elastic-stack-elk`.
 
-This draft entry does not claim that all catalogue URL or lifecycle debt is resolved.
+This release does not claim that all catalogue URL or lifecycle debt is resolved.
 
 ## [0.2.0] - 2026-08-04
 
