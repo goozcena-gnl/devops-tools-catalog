@@ -271,7 +271,7 @@ def _require_batch_d_refs() -> None:
             )
         except FileNotFoundError as exc:
             raise AssertionError(
-                "Git executable is required for Batch D pinned-result invariants"
+                "Git executable is required for Batch D pinned baseline/result invariants"
             ) from exc
         except subprocess.CalledProcessError as exc:
             if os.getenv("GITHUB_ACTIONS") == "true":
@@ -285,7 +285,7 @@ def _require_batch_d_refs() -> None:
 
             pytest.skip(
                 f"{label.capitalize()} commit {sha} is not reachable in this local "
-                "shallow/partial clone; skipping Batch D pinned-result invariants "
+                "shallow/partial clone; skipping Batch D pinned baseline/result invariants "
                 f"({BATCH_D_BASELINE_SHA} -> {BATCH_D_RESULT_SHA})"
             )
 

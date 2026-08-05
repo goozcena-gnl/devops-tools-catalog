@@ -244,7 +244,7 @@ def _require_batch_c2_refs() -> None:
             )
         except FileNotFoundError as exc:
             raise AssertionError(
-                "Git executable is required for Batch C2 pinned-result invariants"
+                "Git executable is required for Batch C2 pinned baseline/result invariants"
             ) from exc
         except subprocess.CalledProcessError as exc:
             if os.getenv("GITHUB_ACTIONS") == "true":
@@ -258,7 +258,7 @@ def _require_batch_c2_refs() -> None:
 
             pytest.skip(
                 f"{label.capitalize()} commit {sha} is not reachable in this local "
-                "shallow/partial clone; skipping Batch C2 pinned-result invariants "
+                "shallow/partial clone; skipping Batch C2 pinned baseline/result invariants "
                 f"({BATCH_C2_BASELINE_SHA} -> {BATCH_C2_RESULT_SHA})"
             )
 
