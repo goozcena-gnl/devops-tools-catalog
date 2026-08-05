@@ -1,0 +1,2504 @@
+manifest_version: 1
+source_release: v0.2.1
+source_main_sha: dc7cfd457a7c9638b1132048792092c8b5e3ae02
+scope_policy: reviewed_but_unchanged_carryover_only
+expected_unique_ids: 63
+expected_field_level_work_items: 82
+excluded_global_needs_review_population: true
+logical_workstreams:
+- id: N1
+  unique_ids: 30
+  field_level_rows: 35
+- id: N2
+  unique_ids: 23
+  field_level_rows: 24
+- id: N3
+  unique_ids: 5
+  field_level_rows: 5
+- id: N4
+  unique_ids: 5
+  field_level_rows: 18
+  execution_state: HOLD_NO_NEW_EVIDENCE
+execution_sub_batches:
+- id: N1a
+  parent_workstream: N1
+  max_unique_ids: 20
+  unique_ids: 20
+  tool_ids:
+  - ansible-lint
+  - apache-cloudstack
+  - argo-workflows
+  - argocd
+  - argocd-agent
+  - argocd-image-updater
+  - argocd-vault-plugin
+  - black
+  - cilium
+  - cosmian-kms
+  - drata
+  - entrust-keycontrol
+  - helmfile
+  - kcli
+  - keda-gpu-scaler
+  - kubechecks
+  - kuttl
+  - labex-devops-tutorials
+  - linuxjourney
+  - mcp-server-kubernetes
+- id: N1b
+  parent_workstream: N1
+  max_unique_ids: 20
+  unique_ids: 10
+  tool_ids:
+  - oracle-cloud-infrastructure-oci
+  - paperless-ngx
+  - predictive-horizontal-pod-autoscaler
+  - pytest
+  - scrapling
+  - udemy-cka-course
+  - vegacloud-inform
+  - volsync
+  - vultr
+  - wine
+- id: N2a
+  parent_workstream: N2
+  max_unique_ids: 20
+  unique_ids: 20
+  tool_ids:
+  - agones
+  - azure-devops
+  - bottlerocket
+  - burp-suite
+  - cedar-policy
+  - certmate
+  - coroot
+  - devops-projects
+  - etckeeper
+  - exoway
+  - fortify-static-code-analyzer
+  - gremlin
+  - hoji-ai
+  - jumpserver
+  - k8s-cleaner-sveltos
+  - kata-containers
+  - kdash
+  - komodor
+  - kubeflame
+  - mantis
+- id: N2b
+  parent_workstream: N2
+  max_unique_ids: 20
+  unique_ids: 3
+  tool_ids:
+  - microsoft-azure
+  - soos-dast
+  - yotascale
+- id: N3a
+  parent_workstream: N3
+  max_unique_ids: 20
+  unique_ids: 5
+  tool_ids:
+  - grafana-oncall
+  - juju
+  - kubernetes-dashboard
+  - localstack
+  - minio
+hold_register:
+- workstream: N4
+  tool_ids:
+  - autopwn-suite
+  - cai-robotsec
+  - ctop
+  - elastic-apm-server
+  - elastic-stack-elk
+  row_count: 18
+  reason: authoritative lifecycle/license boundary evidence not yet established in
+    v0.2.1 ledgers
+  required_to_unblock: authoritative product legal licensing statements and lifecycle
+    maintenance evidence
+  max_permitted_action_while_hold: retain safest canonical state only
+multi_field_ids:
+- tool_id: ansible-lint
+  field_level_rows: 2
+- tool_id: argo-workflows
+  field_level_rows: 2
+- tool_id: argocd
+  field_level_rows: 2
+- tool_id: argocd-image-updater
+  field_level_rows: 2
+- tool_id: argocd-vault-plugin
+  field_level_rows: 2
+- tool_id: autopwn-suite
+  field_level_rows: 4
+- tool_id: cai-robotsec
+  field_level_rows: 4
+- tool_id: ctop
+  field_level_rows: 2
+- tool_id: elastic-apm-server
+  field_level_rows: 4
+- tool_id: elastic-stack-elk
+  field_level_rows: 4
+- tool_id: hoji-ai
+  field_level_rows: 2
+global_invariants:
+- N1 unique IDs + N2 unique IDs + N3 unique IDs + N4 unique IDs = 63
+- N1a/N1b/N2a/N2b/N3a each contain at most 20 unique IDs
+- N4 remains HOLD and does not define an executable implementation batch
+- No selected ID omitted; no extra ID added
+- Execution branches must be created from execution_baseline_sha after this planning
+  PR merges
+work_items:
+- sequence_number: 1
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: ansible-lint
+  canonical_yaml_file: data/tools/ci-build-testing.yaml
+  affected_field: documentation_url
+  current_value: https://ansible.readthedocs.io/projects/lint/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: GPL-3.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 2
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: ansible-lint
+  canonical_yaml_file: data/tools/ci-build-testing.yaml
+  affected_field: official_url
+  current_value: https://ansible.readthedocs.io/projects/lint
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: GPL-3.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 3
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: apache-cloudstack
+  canonical_yaml_file: data/tools/cloud-platforms-management.yaml
+  affected_field: documentation_url
+  current_value: https://docs.cloudstack.apache.org
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 4
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: argo-workflows
+  canonical_yaml_file: data/tools/ci-build-testing.yaml
+  affected_field: documentation_url
+  current_value: https://argo-workflows.readthedocs.io/en/latest/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 5
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: argo-workflows
+  canonical_yaml_file: data/tools/ci-build-testing.yaml
+  affected_field: official_url
+  current_value: https://argo-workflows.readthedocs.io/en/latest/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 6
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: argocd
+  canonical_yaml_file: data/tools/cd-gitops-release-promotion.yaml
+  affected_field: documentation_url
+  current_value: https://argo-cd.readthedocs.io/en/stable/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 7
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: argocd
+  canonical_yaml_file: data/tools/cd-gitops-release-promotion.yaml
+  affected_field: official_url
+  current_value: https://argo-cd.readthedocs.io/en/stable/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 8
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: argocd-agent
+  canonical_yaml_file: data/tools/cd-gitops-release-promotion.yaml
+  affected_field: official_url
+  current_value: https://argocd-agent.readthedocs.io/latest
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 9
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: argocd-image-updater
+  canonical_yaml_file: data/tools/cd-gitops-release-promotion.yaml
+  affected_field: documentation_url
+  current_value: https://argocd-image-updater.readthedocs.io/en/stable/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 10
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: argocd-image-updater
+  canonical_yaml_file: data/tools/cd-gitops-release-promotion.yaml
+  affected_field: official_url
+  current_value: https://argocd-image-updater.readthedocs.io/en/stable/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 11
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: argocd-vault-plugin
+  canonical_yaml_file: data/tools/cd-gitops-release-promotion.yaml
+  affected_field: documentation_url
+  current_value: https://argocd-vault-plugin.readthedocs.io/en/stable/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 12
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: argocd-vault-plugin
+  canonical_yaml_file: data/tools/cd-gitops-release-promotion.yaml
+  affected_field: official_url
+  current_value: https://argocd-vault-plugin.readthedocs.io/en/stable/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 13
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: black
+  canonical_yaml_file: data/tools/developer-experience-local-environments.yaml
+  affected_field: official_url
+  current_value: https://black.readthedocs.io
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 14
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: cilium
+  canonical_yaml_file: data/tools/kubernetes-networking-storage-addons.yaml
+  affected_field: documentation_url
+  current_value: https://docs.cilium.io/en/stable/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 15
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: cosmian-kms
+  canonical_yaml_file: data/tools/iam-secrets-certificates.yaml
+  affected_field: official_url
+  current_value: https://cosmian.com/data-protection-suite/cosmian-kms
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: transient-failure
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 16
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: drata
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: official_url
+  current_value: https://drata.com
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 17
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: entrust-keycontrol
+  canonical_yaml_file: data/tools/iam-secrets-certificates.yaml
+  affected_field: official_url
+  current_value: https://www.entrust.com/products/key-management/keycontrol
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 18
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: helmfile
+  canonical_yaml_file: data/tools/kubernetes-networking-storage-addons.yaml
+  affected_field: official_url
+  current_value: https://helmfile.readthedocs.io/en/latest
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 19
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: kcli
+  canonical_yaml_file: data/tools/virtualization-bare-metal-homelab.yaml
+  affected_field: official_url
+  current_value: https://kcli.readthedocs.io/en/latest
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 20
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: keda-gpu-scaler
+  canonical_yaml_file: data/tools/kubernetes-networking-storage-addons.yaml
+  affected_field: official_url
+  current_value: https://keda-gpu-scaler.readthedocs.io/en/latest
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 21
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: kubechecks
+  canonical_yaml_file: data/tools/cd-gitops-release-promotion.yaml
+  affected_field: official_url
+  current_value: https://kubechecks.readthedocs.io/en/latest
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 22
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: kuttl
+  canonical_yaml_file: data/tools/kubernetes-networking-storage-addons.yaml
+  affected_field: official_url
+  current_value: https://kuttl.dev
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: dns-inconclusive
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 23
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: labex-devops-tutorials
+  canonical_yaml_file: data/tools/documentation-learning-career.yaml
+  affected_field: official_url
+  current_value: https://labex.io/tutorials/category/devops
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: documentation
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 24
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: linuxjourney
+  canonical_yaml_file: data/tools/foundations-linux-scripting.yaml
+  affected_field: official_url
+  current_value: https://labex.io/linuxjourney
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: documentation
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 25
+  logical_workstream: N1
+  execution_sub_batch: N1a
+  tool_id: mcp-server-kubernetes
+  canonical_yaml_file: data/tools/mlops-llmops-ai-infrastructure.yaml
+  affected_field: official_url
+  current_value: https://www.npmjs.com/package/mcp-server-kubernetes
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c1-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c1-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 26
+  logical_workstream: N1
+  execution_sub_batch: N1b
+  tool_id: oracle-cloud-infrastructure-oci
+  canonical_yaml_file: data/tools/cloud-platforms-management.yaml
+  affected_field: official_url
+  current_value: https://www.oracle.com/cloud
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-c2-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c2-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 27
+  logical_workstream: N1
+  execution_sub_batch: N1b
+  tool_id: paperless-ngx
+  canonical_yaml_file: data/tools/emerging-experimental.yaml
+  affected_field: official_url
+  current_value: https://docs.paperless-ngx.com
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c2-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c2-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 28
+  logical_workstream: N1
+  execution_sub_batch: N1b
+  tool_id: predictive-horizontal-pod-autoscaler
+  canonical_yaml_file: data/tools/kubernetes-networking-storage-addons.yaml
+  affected_field: official_url
+  current_value: https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c2-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c2-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 29
+  logical_workstream: N1
+  execution_sub_batch: N1b
+  tool_id: pytest
+  canonical_yaml_file: data/tools/ci-build-testing.yaml
+  affected_field: official_url
+  current_value: https://docs.pytest.org/en/stable
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c2-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c2-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 30
+  logical_workstream: N1
+  execution_sub_batch: N1b
+  tool_id: scrapling
+  canonical_yaml_file: data/tools/developer-experience-local-environments.yaml
+  affected_field: official_url
+  current_value: https://scrapling.readthedocs.io/en/latest
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c2-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c2-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 31
+  logical_workstream: N1
+  execution_sub_batch: N1b
+  tool_id: udemy-cka-course
+  canonical_yaml_file: data/tools/documentation-learning-career.yaml
+  affected_field: official_url
+  current_value: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: documentation
+  current_license_spdx: unknown
+  v021_source_batch: batch-c2-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c2-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 32
+  logical_workstream: N1
+  execution_sub_batch: N1b
+  tool_id: vegacloud-inform
+  canonical_yaml_file: data/tools/finops-sustainability.yaml
+  affected_field: official_url
+  current_value: https://www.vegacloud.io/products/inform
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-c2-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c2-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 33
+  logical_workstream: N1
+  execution_sub_batch: N1b
+  tool_id: volsync
+  canonical_yaml_file: data/tools/backup-disaster-recovery-resilience.yaml
+  affected_field: official_url
+  current_value: https://volsync.readthedocs.io
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c2-access-retry
+  v021_report_classification: rate-limited
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c2-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 34
+  logical_workstream: N1
+  execution_sub_batch: N1b
+  tool_id: vultr
+  canonical_yaml_file: data/tools/cloud-platforms-management.yaml
+  affected_field: official_url
+  current_value: https://www.vultr.com
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-c2-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c2-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 35
+  logical_workstream: N1
+  execution_sub_batch: N1b
+  tool_id: wine
+  canonical_yaml_file: data/tools/developer-experience-local-environments.yaml
+  affected_field: official_url
+  current_value: https://www.winehq.org
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-c2-access-retry
+  v021_report_classification: restricted-or-bot-blocked
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-c2-access-retry; docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: status/license/lifecycle/repository-governance changes without
+    separate evidence
+  risk_level: medium
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 36
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: agones
+  canonical_yaml_file: data/tools/kubernetes-networking-storage-addons.yaml
+  affected_field: official_url
+  current_value: https://agones.dev/site
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 37
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: azure-devops
+  canonical_yaml_file: data/tools/ci-build-testing.yaml
+  affected_field: official_url
+  current_value: https://azure.microsoft.com/en-us/services/devops
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 38
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: bottlerocket
+  canonical_yaml_file: data/tools/virtualization-bare-metal-homelab.yaml
+  affected_field: documentation_url
+  current_value: https://bottlerocket.dev/en/docs/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 39
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: burp-suite
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: official_url
+  current_value: https://portswigger.net/burp
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 40
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: cedar-policy
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: official_url
+  current_value: https://cedarpolicy.com/en
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 41
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: certmate
+  canonical_yaml_file: data/tools/iam-secrets-certificates.yaml
+  affected_field: repository_url
+  current_value: https://github.com/usual2970/certmate
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 42
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: coroot
+  canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
+  affected_field: documentation_url
+  current_value: https://coroot.com/docs/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: AGPL-3.0-only
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 43
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: devops-projects
+  canonical_yaml_file: data/tools/documentation-learning-career.yaml
+  affected_field: repository_url
+  current_value: https://github.com/ophircloud/DevOps-Projects
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: documentation
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: http-error
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 44
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: etckeeper
+  canonical_yaml_file: data/tools/configuration-management.yaml
+  affected_field: repository_url
+  current_value: https://github.com/etckeeper/etckeeper
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 45
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: exoway
+  canonical_yaml_file: data/tools/cloud-platforms-management.yaml
+  affected_field: documentation_url
+  current_value: https://help.exoway.io/fr/
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: commercial
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: tls-failure
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 46
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: fortify-static-code-analyzer
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: official_url
+  current_value: https://www.opentext.com/products/static-application-security-testing
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: http-error
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 47
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: gremlin
+  canonical_yaml_file: data/tools/chaos-performance-engineering.yaml
+  affected_field: repository_url
+  current_value: https://github.com/gremlin-io/gremlin
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 48
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: hoji-ai
+  canonical_yaml_file: data/tools/mlops-llmops-ai-infrastructure.yaml
+  affected_field: official_url
+  current_value: https://hoji.ai
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: dns-inconclusive
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: access/retry boundary
+  authoritative_evidence_required: successful controlled retry plus independent primary
+    source confirming canonical value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_CONTROLLED_RETRY
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 49
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: hoji-ai
+  canonical_yaml_file: data/tools/mlops-llmops-ai-infrastructure.yaml
+  affected_field: repository_url
+  current_value: https://github.com/hoji-ai/hoji
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 50
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: jumpserver
+  canonical_yaml_file: data/tools/iam-secrets-certificates.yaml
+  affected_field: official_url
+  current_value: https://www.jumpserver.com
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 51
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: k8s-cleaner-sveltos
+  canonical_yaml_file: data/tools/kubernetes-distributions-operations.yaml
+  affected_field: official_url
+  current_value: https://sveltos.projectsveltos.io/k8sCleaner.html
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 52
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: kata-containers
+  canonical_yaml_file: data/tools/virtualization-bare-metal-homelab.yaml
+  affected_field: documentation_url
+  current_value: https://katacontainers.io/docs/
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: oss
+  current_license_spdx: Apache-2.0
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 53
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: kdash
+  canonical_yaml_file: data/tools/kubernetes-distributions-operations.yaml
+  affected_field: official_url
+  current_value: https://kdash.cli.rs
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 54
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: komodor
+  canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
+  affected_field: repository_url
+  current_value: https://github.com/komodorio/komodor
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 55
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: kubeflame
+  canonical_yaml_file: data/tools/kubernetes-distributions-operations.yaml
+  affected_field: official_url
+  current_value: https://kubeflame.github.io
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a1-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a1-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 56
+  logical_workstream: N2
+  execution_sub_batch: N2a
+  tool_id: mantis
+  canonical_yaml_file: data/tools/ci-build-testing.yaml
+  affected_field: official_url
+  current_value: https://mantis.getaugur.ai/docs/introduction/overview
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-a2-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a2-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a2-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 57
+  logical_workstream: N2
+  execution_sub_batch: N2b
+  tool_id: microsoft-azure
+  canonical_yaml_file: data/tools/cloud-platforms-management.yaml
+  affected_field: official_url
+  current_value: https://azure.microsoft.com
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-a2-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a2-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a2-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 58
+  logical_workstream: N2
+  execution_sub_batch: N2b
+  tool_id: soos-dast
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: official_url
+  current_value: https://hub.docker.com/r/soosio/dast
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: open-core
+  current_license_spdx: unknown
+  v021_source_batch: batch-a2-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a2-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a2-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 59
+  logical_workstream: N2
+  execution_sub_batch: N2b
+  tool_id: yotascale
+  canonical_yaml_file: data/tools/finops-sustainability.yaml
+  affected_field: official_url
+  current_value: https://www.yotascale.com
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: unknown
+  current_license_spdx: unknown
+  v021_source_batch: batch-a2-hard-url-failures
+  v021_report_classification: manual-verification-required
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-a2-hard-url-failures; docs/maintenance/v0.2.1-url-remediation-batch-a2-review.md
+  unresolved_boundary: hard-failure evidence boundary
+  authoritative_evidence_required: authoritative primary-source evidence (official
+    docs/site/repo governance) for exact field value
+  allowed_decisions: retain|replace URL with primary-source proof|remove optional
+    URL
+  forbidden_decisions: replacement from redirects/search snippets; mass normalization
+  risk_level: high
+  readiness_class: READY_PRIMARY_EVIDENCE
+  implementation_dependency: none
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 60
+  logical_workstream: N3
+  execution_sub_batch: N3a
+  tool_id: grafana-oncall
+  canonical_yaml_file: data/tools/deprecated-historical.yaml
+  affected_field: repository_url
+  current_value: https://github.com/grafana/oncall
+  current_status: archived
+  current_needs_review: 'True'
+  current_license_model: open-core
+  current_license_spdx: unknown
+  v021_source_batch: batch-b-archived-boundary
+  v021_report_classification: repository-archived
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-b-archived-boundary; docs/maintenance/v0.2.1-url-remediation-batch-b-review.md
+  unresolved_boundary: archived-repository product-boundary
+  authoritative_evidence_required: official governance or migration statement proving
+    active product boundary and canonical org location
+  allowed_decisions: preserve active product boundary|retain|governed repository_url
+    update with authoritative proof
+  forbidden_decisions: retire active product due to archived OSS repo; clear needs_review
+    without governance proof
+  risk_level: high
+  readiness_class: READY_GOVERNANCE_VERIFICATION
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 61
+  logical_workstream: N3
+  execution_sub_batch: N3a
+  tool_id: juju
+  canonical_yaml_file: data/tools/configuration-management.yaml
+  affected_field: repository_url
+  current_value: https://github.com/canonical/juju
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-b-archived-boundary
+  v021_report_classification: repository-archived
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-b-archived-boundary; docs/maintenance/v0.2.1-url-remediation-batch-b-review.md
+  unresolved_boundary: archived-repository product-boundary
+  authoritative_evidence_required: official governance or migration statement proving
+    active product boundary and canonical org location
+  allowed_decisions: preserve active product boundary|retain|governed repository_url
+    update with authoritative proof
+  forbidden_decisions: retire active product due to archived OSS repo; clear needs_review
+    without governance proof
+  risk_level: high
+  readiness_class: READY_GOVERNANCE_VERIFICATION
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 62
+  logical_workstream: N3
+  execution_sub_batch: N3a
+  tool_id: kubernetes-dashboard
+  canonical_yaml_file: data/tools/deprecated-historical.yaml
+  affected_field: repository_url
+  current_value: https://github.com/kubernetes/dashboard
+  current_status: archived
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: unknown
+  v021_source_batch: batch-b-archived-boundary
+  v021_report_classification: repository-archived
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-b-archived-boundary; docs/maintenance/v0.2.1-url-remediation-batch-b-review.md
+  unresolved_boundary: archived-repository product-boundary
+  authoritative_evidence_required: official governance or migration statement proving
+    active product boundary and canonical org location
+  allowed_decisions: preserve active product boundary|retain|governed repository_url
+    update with authoritative proof
+  forbidden_decisions: retire active product due to archived OSS repo; clear needs_review
+    without governance proof
+  risk_level: high
+  readiness_class: READY_GOVERNANCE_VERIFICATION
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 63
+  logical_workstream: N3
+  execution_sub_batch: N3a
+  tool_id: localstack
+  canonical_yaml_file: data/tools/virtualization-bare-metal-homelab.yaml
+  affected_field: repository_url
+  current_value: https://github.com/localstack/localstack
+  current_status: active
+  current_needs_review: 'False'
+  current_license_model: open-core
+  current_license_spdx: unknown
+  v021_source_batch: batch-b-archived-boundary
+  v021_report_classification: repository-archived
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-b-archived-boundary; docs/maintenance/v0.2.1-url-remediation-batch-b-review.md
+  unresolved_boundary: archived-repository product-boundary
+  authoritative_evidence_required: official governance or migration statement proving
+    active product boundary and canonical org location
+  allowed_decisions: preserve active product boundary|retain|governed repository_url
+    update with authoritative proof
+  forbidden_decisions: retire active product due to archived OSS repo; clear needs_review
+    without governance proof
+  risk_level: high
+  readiness_class: READY_GOVERNANCE_VERIFICATION
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 64
+  logical_workstream: N3
+  execution_sub_batch: N3a
+  tool_id: minio
+  canonical_yaml_file: data/tools/databases-caching-data-infrastructure.yaml
+  affected_field: repository_url
+  current_value: https://github.com/minio/minio
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: open-core
+  current_license_spdx: unknown
+  v021_source_batch: batch-b-archived-boundary
+  v021_report_classification: repository-archived
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-b-archived-boundary; docs/maintenance/v0.2.1-url-remediation-batch-b-review.md
+  unresolved_boundary: archived-repository product-boundary
+  authoritative_evidence_required: official governance or migration statement proving
+    active product boundary and canonical org location
+  allowed_decisions: preserve active product boundary|retain|governed repository_url
+    update with authoritative proof
+  forbidden_decisions: retire active product due to archived OSS repo; clear needs_review
+    without governance proof
+  risk_level: high
+  readiness_class: READY_GOVERNANCE_VERIFICATION
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: n/a
+- sequence_number: 65
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: autopwn-suite
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: license_model
+  current_value: source-available
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 66
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: autopwn-suite
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: license_spdx
+  current_value: unknown
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 67
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: autopwn-suite
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: needs_review
+  current_value: 'True'
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 68
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: autopwn-suite
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: status
+  current_value: needs-review
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 69
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: cai-robotsec
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: license_model
+  current_value: source-available
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 70
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: cai-robotsec
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: license_spdx
+  current_value: unknown
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 71
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: cai-robotsec
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: needs_review
+  current_value: 'True'
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 72
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: cai-robotsec
+  canonical_yaml_file: data/tools/application-cloud-security.yaml
+  affected_field: status
+  current_value: needs-review
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 73
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: ctop
+  canonical_yaml_file: data/tools/virtualization-bare-metal-homelab.yaml
+  affected_field: needs_review
+  current_value: 'True'
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: MIT
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 74
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: ctop
+  canonical_yaml_file: data/tools/virtualization-bare-metal-homelab.yaml
+  affected_field: status
+  current_value: needs-review
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: oss
+  current_license_spdx: MIT
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 75
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: elastic-apm-server
+  canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
+  affected_field: license_model
+  current_value: source-available
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 76
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: elastic-apm-server
+  canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
+  affected_field: license_spdx
+  current_value: unknown
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 77
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: elastic-apm-server
+  canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
+  affected_field: needs_review
+  current_value: 'True'
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 78
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: elastic-apm-server
+  canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
+  affected_field: status
+  current_value: needs-review
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 79
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: elastic-stack-elk
+  canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
+  affected_field: license_model
+  current_value: source-available
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 80
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: elastic-stack-elk
+  canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
+  affected_field: license_spdx
+  current_value: unknown
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 81
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: elastic-stack-elk
+  canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
+  affected_field: needs_review
+  current_value: 'True'
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
+- sequence_number: 82
+  logical_workstream: N4
+  execution_sub_batch: HOLD
+  tool_id: elastic-stack-elk
+  canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
+  affected_field: status
+  current_value: needs-review
+  current_status: needs-review
+  current_needs_review: 'True'
+  current_license_model: source-available
+  current_license_spdx: unknown
+  v021_source_batch: batch-d-license-lifecycle-ambiguity
+  v021_report_classification: lifecycle-license-ambiguity
+  v021_previous_decision: reviewed-but-unchanged in v0.2.1
+  v021_evidence_sources: batch-d-license-lifecycle-ambiguity; docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md
+  unresolved_boundary: license/lifecycle ambiguity boundary
+  authoritative_evidence_required: authoritative product/legal licensing statement
+    and lifecycle maintenance evidence
+  allowed_decisions: retain safest canonical state only until authoritative evidence
+  forbidden_decisions: SPDX guessing; metadata-only license normalization; inactivity-only
+    lifecycle changes
+  risk_level: high
+  readiness_class: HOLD_NO_NEW_EVIDENCE
+  implementation_dependency: requires governance reviewer sign-off
+  regression_test_requirement: selector exactness; row/unique counts; ledger-canonical
+    coherence; no non-selected drift; protected-path parity
+  human_review_requirement: required
+  hold_reason: authoritative lifecycle/license boundary evidence not yet established
+    in v0.2.1 ledgers
