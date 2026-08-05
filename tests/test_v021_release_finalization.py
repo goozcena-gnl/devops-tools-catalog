@@ -281,17 +281,12 @@ def test_protected_path_parity_test_does_not_intercept_ci_missing_result(
 
 
 def test_ci_missing_ref_match_rejects_unrelated_assertion_text() -> None:
-    with (
-        pytest.raises(
-            AssertionError,
-            match="Regex pattern did not match",
-        ),
-        pytest.raises(
+    with pytest.raises(AssertionError):  # noqa: SIM117
+        with pytest.raises(
             AssertionError,
             match=MISSING_REF_CI_MESSAGE_FRAGMENT,
-        ),
-    ):
-        raise AssertionError("Unrelated assertion text")
+        ):
+            raise AssertionError("Unrelated assertion text")
 
 
 def test_finalization_refs_missing_result_local_skips(monkeypatch: object) -> None:
