@@ -2,11 +2,39 @@
 
 All notable catalogue architecture and governance changes are recorded here. Individual tool metadata changes remain visible in Git history and pull requests.
 
-## Unreleased
+## [0.2.1] - Draft
 
-### Notes
+Release-candidate metadata for the merged v0.2.1 remediation sequence. Tag and GitHub Release publication remain pending explicit owner approval after this finalization PR is merged.
 
-- No post-v0.2.0 changes recorded yet.
+### Scope
+
+- Completed all approved remediation batches A1, A2, B, C1, C2, and D across immutable plan scope.
+- Reconciled 80 planned rows and 80 reviewed rows with 73 unique IDs.
+- Confirmed zero unreviewed rows, zero lost IDs, zero new IDs, and zero non-selected changed IDs.
+
+### Canonical changes
+
+- Total changed canonical IDs: 10.
+- Total changed canonical fields: 10.
+- URL/documentation/repository replacements (5): `deeptutor.official_url`, `odysseus.official_url`, `terraform-cloud.official_url`, `trivy.documentation_url`, `yokecd.repository_url`.
+- Batch B `needs_review` resolutions (5): `cdktf`, `kaniko`, `keptn`, `kubeapps`, `tnu` changed from `true` to `false`.
+- Reviewed-but-unchanged unique IDs: 63.
+- Machine/API canonical replacement candidates remain 0.
+
+### Governance and regression hardening
+
+- Preserved evidence-first governance and immutable-scope batch accounting.
+- Included pinned-baseline regression hardening in PR #22 without changing canonical batch decisions.
+- Retained unresolved boundaries rather than guessing replacements when evidence remained inconclusive.
+
+### Remaining evidence boundaries
+
+- Issue #2 remains open.
+- Archived-governance boundaries remain for `grafana-oncall`, `juju`, `kubernetes-dashboard`, and `minio`.
+- Access/retry-dependent boundaries remain across retained C1/C2 unresolved records.
+- Licence/lifecycle ambiguity boundaries remain for `autopwn-suite`, `cai-robotsec`, `ctop`, `elastic-apm-server`, and `elastic-stack-elk`.
+
+This draft entry does not claim that all catalogue URL or lifecycle debt is resolved.
 
 ## [0.2.0] - 2026-08-04
 
