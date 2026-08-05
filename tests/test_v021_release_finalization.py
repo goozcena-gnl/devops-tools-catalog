@@ -46,6 +46,8 @@ PROTECTED_PATHS = [
     ".github/workflows",
 ]
 
+MISSING_REF_CI_MESSAGE_FRAGMENT = "is not reachable in this GitHub Actions checkout"
+
 
 def _read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
@@ -249,7 +251,10 @@ def test_scope_parity_test_does_not_intercept_ci_missing_baseline(
 
     monkeypatch.setattr(subprocess, "run", _side_effect)
 
-    with pytest.raises(AssertionError):
+    with pytest.raises(
+        AssertionError,
+        match=MISSING_REF_CI_MESSAGE_FRAGMENT,
+    ):
         test_finalization_pr_changed_file_scope_is_limited()
 
 
@@ -268,8 +273,25 @@ def test_protected_path_parity_test_does_not_intercept_ci_missing_result(
 
     monkeypatch.setattr(subprocess, "run", _side_effect)
 
-    with pytest.raises(AssertionError):
+    with pytest.raises(
+        AssertionError,
+        match=MISSING_REF_CI_MESSAGE_FRAGMENT,
+    ):
         test_no_protected_paths_modified_by_finalization_pr()
+
+
+def test_ci_missing_ref_match_rejects_unrelated_assertion_text() -> None:
+    with (
+        pytest.raises(
+            AssertionError,
+            match="Regex pattern did not match",
+        ),
+        pytest.raises(
+            AssertionError,
+            match=MISSING_REF_CI_MESSAGE_FRAGMENT,
+        ),
+    ):
+        raise AssertionError("Unrelated assertion text")
 
 
 def test_finalization_refs_missing_result_local_skips(monkeypatch: object) -> None:
