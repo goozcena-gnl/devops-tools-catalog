@@ -116,9 +116,36 @@ def test_pyproject_version_is_021() -> None:
     assert 'version = "0.2.1"' in text
 
 
-def test_changelog_has_v021_draft_and_not_published_claim() -> None:
+def _extract_changelog_section(heading: str) -> str:
     text = _read(CHANGELOG)
-    assert "## [0.2.1] - Draft" in text
+    marker = f"## [{heading}]"
+    start = text.find(marker)
+    assert start != -1, f"Missing changelog heading: {marker}"
+
+    rest = text[start:]
+    next_section = rest.find("\n## [", len(marker))
+    if next_section == -1:
+        return rest
+    return rest[:next_section]
+
+
+def test_changelog_has_v021_finalized_state_and_publication_still_pending() -> None:
+    text = _read(CHANGELOG)
+    assert "## [0.2.1] - 2026-08-05" in text
+    assert "## [0.2.1] - Draft" not in text
+
+    section = _extract_changelog_section("0.2.1")
+    assert (
+        "Publication metadata finalized on 2026-08-05 after completion of the "
+        "v0.2.1 remediation sequence." in section
+    )
+    assert "This draft entry does not claim" not in section
+    assert (
+        "This release does not claim that all catalogue URL or lifecycle debt "
+        "is resolved." in section
+    )
+
+    # Publication remains an explicit follow-up owner action.
     assert "v0.2.1 tag created" not in text.lower()
     assert "v0.2.1 github release published" not in text.lower()
 
