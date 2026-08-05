@@ -14,7 +14,7 @@ INTERNAL_DRAFT = ROOT / "docs" / "releases" / "v0.2.1-draft.md"
 COMPLETION = ROOT / "docs" / "maintenance" / "v0.2.1-remediation-completion.md"
 
 FINALIZATION_BASELINE_SHA = "e04412ebfb85118d33a2f9bc584a44b8f2334259"
-FINALIZATION_RESULT_SHA = "a97f52db89857e4132c84de99c075c6d15a3b7d2"
+FINALIZATION_RESULT_SHA = "9f1c6e9f13acf954cffa57ff9a7f0275314af4fa"
 
 ALLOWED_CHANGED_FILES = {
     "pyproject.toml",
@@ -109,19 +109,6 @@ def _finalization_changed_files(*paths: str) -> set[str]:
     return {line.strip() for line in result.stdout.splitlines() if line.strip()}
 
 
-def _finalization_changed_files_or_skip(*paths: str) -> set[str]:
-    try:
-        return _finalization_changed_files(*paths)
-    except AssertionError as exc:
-        text = str(exc)
-        if "is not reachable in this GitHub Actions checkout" in text:
-            pytest.skip(
-                "Pinned finalization refs are unavailable in this CI checkout; "
-                "historical scope/protected-path parity assertions are skipped"
-            )
-        raise
-
-
 def test_pyproject_version_is_021() -> None:
     text = _read(PYPROJECT)
     assert 'version = "0.2.1"' in text
@@ -190,12 +177,12 @@ def test_public_notes_do_not_claim_full_evidence_debt_resolution() -> None:
 
 
 def test_finalization_pr_changed_file_scope_is_limited() -> None:
-    changed = _finalization_changed_files_or_skip(".")
+    changed = _finalization_changed_files(".")
     assert changed == ALLOWED_CHANGED_FILES
 
 
 def test_no_protected_paths_modified_by_finalization_pr() -> None:
-    changed = _finalization_changed_files_or_skip(*PROTECTED_PATHS)
+    changed = _finalization_changed_files(*PROTECTED_PATHS)
     assert changed == set()
 
 
@@ -245,6 +232,44 @@ def test_finalization_refs_missing_result_in_ci_fails_actionably(
     assert FINALIZATION_BASELINE_SHA in text
     assert FINALIZATION_RESULT_SHA in text
     assert "fetch-depth: 0" in text
+
+
+def test_scope_parity_test_does_not_intercept_ci_missing_baseline(
+    monkeypatch: object,
+) -> None:
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+
+    def _side_effect(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        if (
+            args[:3] == ["git", "cat-file", "-e"]
+            and args[3] == f"{FINALIZATION_BASELINE_SHA}^{{commit}}"
+        ):
+            raise subprocess.CalledProcessError(128, args, stderr="not a valid object")
+        return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+
+    monkeypatch.setattr(subprocess, "run", _side_effect)
+
+    with pytest.raises(AssertionError):
+        test_finalization_pr_changed_file_scope_is_limited()
+
+
+def test_protected_path_parity_test_does_not_intercept_ci_missing_result(
+    monkeypatch: object,
+) -> None:
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+
+    def _side_effect(args: list[str], **kwargs: object) -> subprocess.CompletedProcess:
+        if (
+            args[:3] == ["git", "cat-file", "-e"]
+            and args[3] == f"{FINALIZATION_RESULT_SHA}^{{commit}}"
+        ):
+            raise subprocess.CalledProcessError(128, args, stderr="not a valid object")
+        return subprocess.CompletedProcess(args, 0, stdout="", stderr="")
+
+    monkeypatch.setattr(subprocess, "run", _side_effect)
+
+    with pytest.raises(AssertionError):
+        test_no_protected_paths_modified_by_finalization_pr()
 
 
 def test_finalization_refs_missing_result_local_skips(monkeypatch: object) -> None:
