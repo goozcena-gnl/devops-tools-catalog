@@ -1,6 +1,7 @@
 manifest_version: 1
 source_release: v0.2.1
 source_main_sha: dc7cfd457a7c9638b1132048792092c8b5e3ae02
+execution_baseline_policy: pin_current_main_at_batch_start
 scope_policy: reviewed_but_unchanged_carryover_only
 expected_unique_ids: 63
 expected_field_level_work_items: 82
@@ -145,8 +146,10 @@ global_invariants:
 - N1a/N1b/N2a/N2b/N3a each contain at most 20 unique IDs
 - N4 remains HOLD and does not define an executable implementation batch
 - No selected ID omitted; no extra ID added
-- Execution branches must be created from execution_baseline_sha after this planning
-  PR merges
+- Each batch pins execution_baseline_sha to the exact current main SHA immediately
+  before its branch is created
+- Batch baselines belong in batch evidence ledgers and tests; this frozen manifest
+  is not rewritten after each batch
 work_items:
 - sequence_number: 1
   logical_workstream: N1
@@ -156,7 +159,7 @@ work_items:
   affected_field: documentation_url
   current_value: https://ansible.readthedocs.io/projects/lint/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: GPL-3.0
   v021_source_batch: batch-c1-access-retry
@@ -185,7 +188,7 @@ work_items:
   affected_field: official_url
   current_value: https://ansible.readthedocs.io/projects/lint
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: GPL-3.0
   v021_source_batch: batch-c1-access-retry
@@ -214,7 +217,7 @@ work_items:
   affected_field: documentation_url
   current_value: https://docs.cloudstack.apache.org
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-c1-access-retry
@@ -243,7 +246,7 @@ work_items:
   affected_field: documentation_url
   current_value: https://argo-workflows.readthedocs.io/en/latest/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-c1-access-retry
@@ -272,7 +275,7 @@ work_items:
   affected_field: official_url
   current_value: https://argo-workflows.readthedocs.io/en/latest/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-c1-access-retry
@@ -301,7 +304,7 @@ work_items:
   affected_field: documentation_url
   current_value: https://argo-cd.readthedocs.io/en/stable/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-c1-access-retry
@@ -330,7 +333,7 @@ work_items:
   affected_field: official_url
   current_value: https://argo-cd.readthedocs.io/en/stable/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-c1-access-retry
@@ -359,9 +362,9 @@ work_items:
   affected_field: official_url
   current_value: https://argocd-agent.readthedocs.io/latest
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: rate-limited
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -388,7 +391,7 @@ work_items:
   affected_field: documentation_url
   current_value: https://argocd-image-updater.readthedocs.io/en/stable/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-c1-access-retry
@@ -417,7 +420,7 @@ work_items:
   affected_field: official_url
   current_value: https://argocd-image-updater.readthedocs.io/en/stable/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-c1-access-retry
@@ -446,7 +449,7 @@ work_items:
   affected_field: documentation_url
   current_value: https://argocd-vault-plugin.readthedocs.io/en/stable/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-c1-access-retry
@@ -475,7 +478,7 @@ work_items:
   affected_field: official_url
   current_value: https://argocd-vault-plugin.readthedocs.io/en/stable/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-c1-access-retry
@@ -504,9 +507,9 @@ work_items:
   affected_field: official_url
   current_value: https://black.readthedocs.io
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: rate-limited
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -533,7 +536,7 @@ work_items:
   affected_field: documentation_url
   current_value: https://docs.cilium.io/en/stable/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-c1-access-retry
@@ -562,9 +565,9 @@ work_items:
   affected_field: official_url
   current_value: https://cosmian.com/data-protection-suite/cosmian-kms
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: transient-failure
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -591,9 +594,9 @@ work_items:
   affected_field: official_url
   current_value: https://drata.com
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -620,9 +623,9 @@ work_items:
   affected_field: official_url
   current_value: https://www.entrust.com/products/key-management/keycontrol
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -649,9 +652,9 @@ work_items:
   affected_field: official_url
   current_value: https://helmfile.readthedocs.io/en/latest
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: rate-limited
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -678,9 +681,9 @@ work_items:
   affected_field: official_url
   current_value: https://kcli.readthedocs.io/en/latest
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: rate-limited
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -707,9 +710,9 @@ work_items:
   affected_field: official_url
   current_value: https://keda-gpu-scaler.readthedocs.io/en/latest
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: rate-limited
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -736,9 +739,9 @@ work_items:
   affected_field: official_url
   current_value: https://kubechecks.readthedocs.io/en/latest
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: rate-limited
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -765,9 +768,9 @@ work_items:
   affected_field: official_url
   current_value: https://kuttl.dev
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: dns-inconclusive
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -794,9 +797,9 @@ work_items:
   affected_field: official_url
   current_value: https://labex.io/tutorials/category/devops
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: documentation
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -823,9 +826,9 @@ work_items:
   affected_field: official_url
   current_value: https://labex.io/linuxjourney
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: documentation
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -852,9 +855,9 @@ work_items:
   affected_field: official_url
   current_value: https://www.npmjs.com/package/mcp-server-kubernetes
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c1-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -881,9 +884,9 @@ work_items:
   affected_field: official_url
   current_value: https://www.oracle.com/cloud
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c2-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -910,9 +913,9 @@ work_items:
   affected_field: official_url
   current_value: https://docs.paperless-ngx.com
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c2-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -939,9 +942,9 @@ work_items:
   affected_field: official_url
   current_value: https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c2-access-retry
   v021_report_classification: rate-limited
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -968,9 +971,9 @@ work_items:
   affected_field: official_url
   current_value: https://docs.pytest.org/en/stable
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c2-access-retry
   v021_report_classification: rate-limited
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -997,9 +1000,9 @@ work_items:
   affected_field: official_url
   current_value: https://scrapling.readthedocs.io/en/latest
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c2-access-retry
   v021_report_classification: rate-limited
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1026,9 +1029,9 @@ work_items:
   affected_field: official_url
   current_value: https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: documentation
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c2-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1055,9 +1058,9 @@ work_items:
   affected_field: official_url
   current_value: https://www.vegacloud.io/products/inform
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c2-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1084,9 +1087,9 @@ work_items:
   affected_field: official_url
   current_value: https://volsync.readthedocs.io
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c2-access-retry
   v021_report_classification: rate-limited
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1113,9 +1116,9 @@ work_items:
   affected_field: official_url
   current_value: https://www.vultr.com
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c2-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1142,9 +1145,9 @@ work_items:
   affected_field: official_url
   current_value: https://www.winehq.org
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-c2-access-retry
   v021_report_classification: restricted-or-bot-blocked
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1171,9 +1174,9 @@ work_items:
   affected_field: official_url
   current_value: https://agones.dev/site
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1199,9 +1202,9 @@ work_items:
   affected_field: official_url
   current_value: https://azure.microsoft.com/en-us/services/devops
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1227,9 +1230,9 @@ work_items:
   affected_field: documentation_url
   current_value: https://bottlerocket.dev/en/docs/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1255,9 +1258,9 @@ work_items:
   affected_field: official_url
   current_value: https://portswigger.net/burp
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1283,7 +1286,7 @@ work_items:
   affected_field: official_url
   current_value: https://cedarpolicy.com/en
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-a1-hard-url-failures
@@ -1311,9 +1314,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/usual2970/certmate
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1339,7 +1342,7 @@ work_items:
   affected_field: documentation_url
   current_value: https://coroot.com/docs/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: AGPL-3.0-only
   v021_source_batch: batch-a1-hard-url-failures
@@ -1367,9 +1370,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/ophircloud/DevOps-Projects
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: documentation
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: http-error
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1395,9 +1398,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/etckeeper/etckeeper
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1423,9 +1426,9 @@ work_items:
   affected_field: documentation_url
   current_value: https://help.exoway.io/fr/
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: commercial
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: tls-failure
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1451,9 +1454,9 @@ work_items:
   affected_field: official_url
   current_value: https://www.opentext.com/products/static-application-security-testing
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: http-error
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1479,9 +1482,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/gremlin-io/gremlin
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1507,9 +1510,9 @@ work_items:
   affected_field: official_url
   current_value: https://hoji.ai
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: dns-inconclusive
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1535,9 +1538,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/hoji-ai/hoji
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1563,9 +1566,9 @@ work_items:
   affected_field: official_url
   current_value: https://www.jumpserver.com
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1591,9 +1594,9 @@ work_items:
   affected_field: official_url
   current_value: https://sveltos.projectsveltos.io/k8sCleaner.html
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1619,7 +1622,7 @@ work_items:
   affected_field: documentation_url
   current_value: https://katacontainers.io/docs/
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: oss
   current_license_spdx: Apache-2.0
   v021_source_batch: batch-a1-hard-url-failures
@@ -1647,9 +1650,9 @@ work_items:
   affected_field: official_url
   current_value: https://kdash.cli.rs
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1675,9 +1678,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/komodorio/komodor
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1703,9 +1706,9 @@ work_items:
   affected_field: official_url
   current_value: https://kubeflame.github.io
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a1-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1731,9 +1734,9 @@ work_items:
   affected_field: official_url
   current_value: https://mantis.getaugur.ai/docs/introduction/overview
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a2-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1759,9 +1762,9 @@ work_items:
   affected_field: official_url
   current_value: https://azure.microsoft.com
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a2-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1787,9 +1790,9 @@ work_items:
   affected_field: official_url
   current_value: https://hub.docker.com/r/soosio/dast
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: open-core
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a2-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1815,9 +1818,9 @@ work_items:
   affected_field: official_url
   current_value: https://www.yotascale.com
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: unknown
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-a2-hard-url-failures
   v021_report_classification: manual-verification-required
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1843,9 +1846,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/grafana/oncall
   current_status: archived
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: open-core
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-b-archived-boundary
   v021_report_classification: repository-archived
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1872,9 +1875,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/canonical/juju
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-b-archived-boundary
   v021_report_classification: repository-archived
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1901,9 +1904,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/kubernetes/dashboard
   current_status: archived
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-b-archived-boundary
   v021_report_classification: repository-archived
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1930,9 +1933,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/localstack/localstack
   current_status: active
-  current_needs_review: 'False'
+  current_needs_review: false
   current_license_model: open-core
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-b-archived-boundary
   v021_report_classification: repository-archived
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1959,9 +1962,9 @@ work_items:
   affected_field: repository_url
   current_value: https://github.com/minio/minio
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: open-core
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-b-archived-boundary
   v021_report_classification: repository-archived
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -1988,9 +1991,9 @@ work_items:
   affected_field: license_model
   current_value: source-available
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2015,11 +2018,11 @@ work_items:
   tool_id: autopwn-suite
   canonical_yaml_file: data/tools/application-cloud-security.yaml
   affected_field: license_spdx
-  current_value: unknown
+  current_value: null
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2044,11 +2047,11 @@ work_items:
   tool_id: autopwn-suite
   canonical_yaml_file: data/tools/application-cloud-security.yaml
   affected_field: needs_review
-  current_value: 'True'
+  current_value: true
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2075,9 +2078,9 @@ work_items:
   affected_field: status
   current_value: needs-review
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2104,9 +2107,9 @@ work_items:
   affected_field: license_model
   current_value: source-available
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2131,11 +2134,11 @@ work_items:
   tool_id: cai-robotsec
   canonical_yaml_file: data/tools/application-cloud-security.yaml
   affected_field: license_spdx
-  current_value: unknown
+  current_value: null
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2160,11 +2163,11 @@ work_items:
   tool_id: cai-robotsec
   canonical_yaml_file: data/tools/application-cloud-security.yaml
   affected_field: needs_review
-  current_value: 'True'
+  current_value: true
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2191,9 +2194,9 @@ work_items:
   affected_field: status
   current_value: needs-review
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2218,9 +2221,9 @@ work_items:
   tool_id: ctop
   canonical_yaml_file: data/tools/virtualization-bare-metal-homelab.yaml
   affected_field: needs_review
-  current_value: 'True'
+  current_value: true
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
   current_license_spdx: MIT
   v021_source_batch: batch-d-license-lifecycle-ambiguity
@@ -2249,7 +2252,7 @@ work_items:
   affected_field: status
   current_value: needs-review
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: oss
   current_license_spdx: MIT
   v021_source_batch: batch-d-license-lifecycle-ambiguity
@@ -2278,9 +2281,9 @@ work_items:
   affected_field: license_model
   current_value: source-available
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2305,11 +2308,11 @@ work_items:
   tool_id: elastic-apm-server
   canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
   affected_field: license_spdx
-  current_value: unknown
+  current_value: null
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2334,11 +2337,11 @@ work_items:
   tool_id: elastic-apm-server
   canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
   affected_field: needs_review
-  current_value: 'True'
+  current_value: true
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2365,9 +2368,9 @@ work_items:
   affected_field: status
   current_value: needs-review
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2394,9 +2397,9 @@ work_items:
   affected_field: license_model
   current_value: source-available
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2421,11 +2424,11 @@ work_items:
   tool_id: elastic-stack-elk
   canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
   affected_field: license_spdx
-  current_value: unknown
+  current_value: null
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2450,11 +2453,11 @@ work_items:
   tool_id: elastic-stack-elk
   canonical_yaml_file: data/tools/monitoring-metrics-logs-tracing.yaml
   affected_field: needs_review
-  current_value: 'True'
+  current_value: true
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
@@ -2481,9 +2484,9 @@ work_items:
   affected_field: status
   current_value: needs-review
   current_status: needs-review
-  current_needs_review: 'True'
+  current_needs_review: true
   current_license_model: source-available
-  current_license_spdx: unknown
+  current_license_spdx: null
   v021_source_batch: batch-d-license-lifecycle-ambiguity
   v021_report_classification: lifecycle-license-ambiguity
   v021_previous_decision: reviewed-but-unchanged in v0.2.1
