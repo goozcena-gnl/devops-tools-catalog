@@ -7,7 +7,7 @@
 - [Aider](https://aider.chat) — AI pair programming in the terminal.
 - [Aikido](https://www.aikido.dev) — Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud posture scanning.
 - [Angular](https://angular.dev) — Web application framework.
-- [Ansible Lint](https://ansible.readthedocs.io/projects/lint) — Best practices checker for Ansible.
+- [Ansible Lint](https://docs.ansible.com/projects/lint/) — Best practices checker for Ansible.
 - [Apache JMeter](https://jmeter.apache.org) — Load testing and performance measurement tool.
 - [Apiiro](https://apiiro.com) — Application security platform focused on securing agentic development and software delivery.
 - [Appcircle](https://appcircle.io) — CI/CD platform for mobile apps.

@@ -22,7 +22,7 @@ Best practices checker for Ansible.
 
 - Only if you don't use Ansible.
 
-[Official site](https://ansible.readthedocs.io/projects/lint) · [Documentation](https://ansible.readthedocs.io/projects/lint/) · [Source repository](https://github.com/ansible/ansible-lint)
+[Official site](https://docs.ansible.com/projects/lint/) · [Documentation](https://docs.ansible.com/projects/lint/) · [Source repository](https://github.com/ansible/ansible-lint)
 
 ### Apache JMeter
 

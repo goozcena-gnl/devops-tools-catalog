@@ -9,7 +9,7 @@
 | [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [Aider](https://aider.chat) | Developer experience and local environments | oss | needs-review |
 | [Angular](https://angular.dev) | Developer experience and local environments | oss | needs-review |
-| [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | active |
+| [Ansible Lint](https://docs.ansible.com/projects/lint/) | CI, build and testing | oss | active |
 | [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | active |
 | [Appcircle](https://appcircle.io) | CI, build and testing | unknown | needs-review |
 | [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) | CI, build and testing | oss | active |
