@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs" / "maintenance" / "v0.2.1-url-remediation-batch-b-review.md"
 PLAN_CSV = ROOT / "docs" / "maintenance" / "v0.2.1-url-remediation-plan.csv"
 BATCH_B_BASELINE_SHA = "f8904bcbdd6d41f6f64076937e282e9b4393e15c"
+BATCH_B_RESULT_SHA = "0e001953922a63f7fdda62cdf2085e0004823b5c"
 
 EXPECTED_IDS = {
     "cdktf",
@@ -404,34 +405,35 @@ SELECTED_YAML_FILES = {
 
 
 def _changed_canonical_yaml_files() -> set[str]:
-    """Return the set of data/tools/ files changed since the Batch B baseline SHA.
+    """Return data/tools/ files changed in the immutable Batch B range.
 
-    Raises AssertionError with an actionable message when git is unavailable
-    or the diff command fails unexpectedly.  Calls pytest.skip when the baseline
-    commit is not reachable in the local git history (e.g., shallow CI clone).
+    Raises AssertionError with an actionable message when git is unavailable,
+    either immutable endpoint is absent, or the diff fails unexpectedly.
     """
-    import pytest
-
-    # Step 1: Verify the baseline commit is present in the local object store.
-    # If it is absent (shallow clone / partial fetch), skip rather than fail.
-    try:
-        subprocess.run(
-            ["git", "cat-file", "-e", f"{BATCH_B_BASELINE_SHA}^{{commit}}"],
-            cwd=ROOT,
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-    except FileNotFoundError as exc:
-        raise AssertionError(
-            "Git is required for the Batch B canonical scope invariant"
-        ) from exc
-    except subprocess.CalledProcessError:
-        pytest.skip(
-            f"Baseline commit {BATCH_B_BASELINE_SHA} is not reachable in the "
-            "local git history (shallow clone or partial fetch); "
-            "skipping canonical scope invariant"
-        )
+    # Step 1: Verify both immutable endpoints are available.
+    for label, sha in (
+        ("Baseline", BATCH_B_BASELINE_SHA),
+        ("Result", BATCH_B_RESULT_SHA),
+    ):
+        try:
+            subprocess.run(
+                ["git", "cat-file", "-e", f"{sha}^{{commit}}"],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+        except FileNotFoundError as exc:
+            raise AssertionError(
+                "Git is required for the Batch B canonical scope invariant"
+            ) from exc
+        except subprocess.CalledProcessError as exc:
+            raise AssertionError(
+                f"{label} commit {sha} is not reachable; Batch B invariants cannot "
+                "be enforced. Required range: "
+                f"{BATCH_B_BASELINE_SHA} -> {BATCH_B_RESULT_SHA}. Ensure the checkout "
+                "contains full history."
+            ) from exc
 
     # Step 2: Baseline is confirmed present — run the diff.
     try:
@@ -441,7 +443,7 @@ def _changed_canonical_yaml_files() -> set[str]:
                 "diff",
                 "--name-only",
                 BATCH_B_BASELINE_SHA,
-                "HEAD",
+                BATCH_B_RESULT_SHA,
                 "--",
                 "data/tools/",
             ],
@@ -454,7 +456,7 @@ def _changed_canonical_yaml_files() -> set[str]:
         stderr = (exc.stderr or "").strip()
         raise AssertionError(
             "Unable to compute the Batch B canonical diff from baseline "
-            f"{BATCH_B_BASELINE_SHA}: {stderr or exc}"
+            f"{BATCH_B_BASELINE_SHA} -> {BATCH_B_RESULT_SHA}: {stderr or exc}"
         ) from exc
 
     return {line.strip() for line in result.stdout.splitlines() if line.strip()}
@@ -480,20 +482,22 @@ def test_batch_b_selected_yaml_files_changed() -> None:
     )
 
 
-def test_batch_b_canonical_diff_missing_baseline_skips(monkeypatch: object) -> None:
-    """An unreachable baseline commit must trigger pytest.skip, not pass silently."""
+def test_batch_b_canonical_diff_missing_ref_fails(monkeypatch: object) -> None:
+    """An unreachable immutable endpoint must fail, never skip silently."""
     import unittest.mock as mock
-
-    import pytest
 
     def _catfile_fails(*args: object, **kwargs: object) -> None:
         raise subprocess.CalledProcessError(128, "git", stderr="not a valid object")
 
-    with (
-        mock.patch("subprocess.run", side_effect=_catfile_fails),
-        pytest.raises(pytest.skip.Exception),
-    ):
-        _changed_canonical_yaml_files()
+    with mock.patch("subprocess.run", side_effect=_catfile_fails):
+        try:
+            _changed_canonical_yaml_files()
+            raise AssertionError("Expected missing Batch B ref to fail")
+        except AssertionError as exc:
+            text = str(exc)
+            assert BATCH_B_BASELINE_SHA in text
+            assert BATCH_B_RESULT_SHA in text
+            assert "cannot be enforced" in text
 
 
 def test_batch_b_canonical_diff_git_failure_raises(monkeypatch: object) -> None:
@@ -505,10 +509,10 @@ def test_batch_b_canonical_diff_git_failure_raises(monkeypatch: object) -> None:
     def _diff_fails(*args: object, **kwargs: object) -> subprocess.CompletedProcess:
         nonlocal call_count
         call_count += 1
-        if call_count == 1:
-            # First call (cat-file): succeed so the baseline check passes.
+        if call_count <= 2:
+            # Both cat-file checks succeed so the range check can run.
             return subprocess.CompletedProcess(args[0], 0, stdout="", stderr="")
-        # Second call (diff): fail to simulate an unexpected git error.
+        # The diff fails to simulate an unexpected git error.
         raise subprocess.CalledProcessError(128, "git", stderr="simulated git error")
 
     with mock.patch("subprocess.run", side_effect=_diff_fails):
@@ -524,7 +528,7 @@ def test_batch_b_canonical_diff_git_failure_raises(monkeypatch: object) -> None:
 
 
 def test_batch_b_canonical_diff_uses_explicit_two_commit_range() -> None:
-    """Helper must pass BASELINE and HEAD as two separate args, not a three-dot range."""
+    """Helper must pass immutable endpoints separately, not a three-dot range."""
     import unittest.mock as mock
 
     captured: list[list[str]] = []
@@ -553,9 +557,9 @@ def test_batch_b_canonical_diff_uses_explicit_two_commit_range() -> None:
     assert BATCH_B_BASELINE_SHA in diff_cmd, (
         f"Baseline SHA {BATCH_B_BASELINE_SHA!r} must appear in diff command"
     )
-    assert "HEAD" in diff_cmd, "HEAD must appear as an explicit argument"
+    assert BATCH_B_RESULT_SHA in diff_cmd
     sha_idx = diff_cmd.index(BATCH_B_BASELINE_SHA)
-    assert diff_cmd[sha_idx + 1] == "HEAD", (
-        f"HEAD must follow immediately after the baseline SHA; "
+    assert diff_cmd[sha_idx + 1] == BATCH_B_RESULT_SHA, (
+        "Result SHA must follow immediately after the baseline SHA; "
         f"got {diff_cmd[sha_idx + 1]!r}"
     )
