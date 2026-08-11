@@ -16,6 +16,7 @@ PLAN_CSV = ROOT / "docs" / "maintenance" / "v0.2.1-url-remediation-plan.csv"
 
 BATCH = "batch-c1-access-retry"
 BATCH_C1_BASELINE_SHA = "0e001953922a63f7fdda62cdf2085e0004823b5c"
+BATCH_C1_RESULT_SHA = "52be634373c5bece54a376808c46ac31eceb3675"
 
 EXPECTED_IDS = {
     "ansible-lint",
@@ -144,33 +145,54 @@ def _load_tool(yaml_file: str, tool_id: str) -> dict:
     return by_id[tool_id]
 
 
-def _require_batch_c1_baseline() -> None:
-    import pytest
-
+def _load_tool_at_result(yaml_file: str, tool_id: str) -> dict:
     try:
-        subprocess.run(
-            ["git", "cat-file", "-e", f"{BATCH_C1_BASELINE_SHA}^{{commit}}"],
+        result = subprocess.run(
+            ["git", "show", f"{BATCH_C1_RESULT_SHA}:{yaml_file}"],
             cwd=ROOT,
             capture_output=True,
-            text=True,
+            encoding="utf-8",
             check=True,
         )
-    except FileNotFoundError as exc:
+    except (FileNotFoundError, subprocess.CalledProcessError) as exc:
         raise AssertionError(
-            "Git executable is required for Batch C1 pinned-baseline invariants"
+            f"Unable to load Batch C1 result {BATCH_C1_RESULT_SHA}:{yaml_file}"
         ) from exc
-    except subprocess.CalledProcessError as exc:
-        if os.getenv("GITHUB_ACTIONS") == "true":
-            raise AssertionError(
-                f"Baseline commit {BATCH_C1_BASELINE_SHA} is not reachable in this "
-                "GitHub Actions checkout, so Batch C1 invariants cannot be enforced. "
-                "Verify .github/workflows/quality.yml checkout uses fetch-depth: 0."
-            ) from exc
+    tools = yaml.safe_load(result.stdout)
+    by_id = {t["id"]: t for t in tools if isinstance(t, dict) and "id" in t}
+    assert tool_id in by_id, f"Tool {tool_id!r} missing from Batch C1 result"
+    return by_id[tool_id]
 
-        pytest.skip(
-            f"Baseline commit {BATCH_C1_BASELINE_SHA} is not reachable in this local "
-            "shallow/partial clone; skipping Batch C1 pinned-baseline invariants"
-        )
+
+def _require_batch_c1_baseline() -> None:
+    for label, sha in (
+        ("Baseline", BATCH_C1_BASELINE_SHA),
+        ("Result", BATCH_C1_RESULT_SHA),
+    ):
+        try:
+            subprocess.run(
+                ["git", "cat-file", "-e", f"{sha}^{{commit}}"],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+        except FileNotFoundError as exc:
+            raise AssertionError(
+                "Git executable is required for Batch C1 pinned-range invariants"
+            ) from exc
+        except subprocess.CalledProcessError as exc:
+            environment = (
+                "GitHub Actions checkout"
+                if os.getenv("GITHUB_ACTIONS") == "true"
+                else "local checkout"
+            )
+            raise AssertionError(
+                f"{label} commit {sha} is not reachable in this {environment}, so "
+                "Batch C1 invariants cannot be enforced. Required range: "
+                f"{BATCH_C1_BASELINE_SHA} -> {BATCH_C1_RESULT_SHA}. Verify the "
+                "checkout uses fetch-depth: 0 or otherwise contains full history."
+            ) from exc
 
 
 def _changed_canonical_yaml_files() -> set[str]:
@@ -183,7 +205,7 @@ def _changed_canonical_yaml_files() -> set[str]:
                 "diff",
                 "--name-only",
                 BATCH_C1_BASELINE_SHA,
-                "HEAD",
+                BATCH_C1_RESULT_SHA,
                 "--",
                 "data/tools/",
             ],
@@ -196,7 +218,7 @@ def _changed_canonical_yaml_files() -> set[str]:
         stderr = (exc.stderr or "").strip()
         raise AssertionError(
             "Unable to compute the Batch C1 canonical diff from baseline "
-            f"{BATCH_C1_BASELINE_SHA}: {stderr or exc}"
+            f"{BATCH_C1_BASELINE_SHA} -> {BATCH_C1_RESULT_SHA}: {stderr or exc}"
         ) from exc
 
     return {line.strip() for line in result.stdout.splitlines() if line.strip()}
@@ -295,7 +317,7 @@ def test_batch_c1_final_values_match_canonical_yaml() -> None:
 
     for row in _ledger_rows():
         key = (row["tool_id"], row["affected_field"])
-        tool = _load_tool(yaml_map[key], row["tool_id"])
+        tool = _load_tool_at_result(yaml_map[key], row["tool_id"])
         actual = tool.get(row["affected_field"])
         assert str(actual) == row["final_value"], (
             f"final_value mismatch for {key}: "
@@ -367,7 +389,7 @@ def test_batch_c1_protected_planning_files_unchanged_since_baseline() -> None:
             "diff",
             "--name-only",
             BATCH_C1_BASELINE_SHA,
-            "HEAD",
+            BATCH_C1_RESULT_SHA,
             "--",
             *protected,
         ],
@@ -407,10 +429,10 @@ def test_batch_c1_canonical_diff_uses_explicit_two_commit_range() -> None:
         f"found: {three_dot_args}"
     )
     assert BATCH_C1_BASELINE_SHA in diff_cmd
-    assert "HEAD" in diff_cmd
+    assert BATCH_C1_RESULT_SHA in diff_cmd
     sha_idx = diff_cmd.index(BATCH_C1_BASELINE_SHA)
-    assert diff_cmd[sha_idx + 1] == "HEAD", (
-        "HEAD must follow immediately after the baseline SHA; "
+    assert diff_cmd[sha_idx + 1] == BATCH_C1_RESULT_SHA, (
+        "Result SHA must follow immediately after the baseline SHA; "
         f"got {diff_cmd[sha_idx + 1]!r}"
     )
 
@@ -427,28 +449,26 @@ def test_batch_c1_require_baseline_available_succeeds() -> None:
         _require_batch_c1_baseline()
 
 
-def test_batch_c1_require_baseline_missing_local_skips(monkeypatch: object) -> None:
+def test_batch_c1_require_ref_missing_local_fails(monkeypatch: object) -> None:
     import unittest.mock as mock
-
-    import pytest
 
     monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
 
-    with (
-        mock.patch(
-            "subprocess.run",
-            side_effect=subprocess.CalledProcessError(
-                128, "git", stderr="not a valid object"
-            ),
+    with mock.patch(
+        "subprocess.run",
+        side_effect=subprocess.CalledProcessError(
+            128, "git", stderr="not a valid object"
         ),
-        pytest.raises(pytest.skip.Exception) as exc_info,
     ):
-        _require_batch_c1_baseline()
-
-    message = str(exc_info.value)
-    assert BATCH_C1_BASELINE_SHA in message
-    assert "local" in message
-    assert "shallow/partial clone" in message
+        try:
+            _require_batch_c1_baseline()
+            raise AssertionError("Expected missing Batch C1 ref to fail")
+        except AssertionError as exc:
+            message = str(exc)
+            assert BATCH_C1_BASELINE_SHA in message
+            assert BATCH_C1_RESULT_SHA in message
+            assert "local checkout" in message
+            assert "fetch-depth: 0" in message
 
 
 def test_batch_c1_require_baseline_missing_in_ci_is_actionable_failure(
@@ -519,10 +539,10 @@ def test_batch_c1_protected_parity_command_uses_explicit_two_commit_range() -> N
         f"found: {three_dot_args}"
     )
     assert BATCH_C1_BASELINE_SHA in diff_cmd
-    assert "HEAD" in diff_cmd
+    assert BATCH_C1_RESULT_SHA in diff_cmd
     sha_idx = diff_cmd.index(BATCH_C1_BASELINE_SHA)
-    assert diff_cmd[sha_idx + 1] == "HEAD", (
-        "HEAD must follow immediately after the baseline SHA in protected parity diff; "
+    assert diff_cmd[sha_idx + 1] == BATCH_C1_RESULT_SHA, (
+        "Result SHA must follow immediately after the baseline SHA in protected parity diff; "
         f"got {diff_cmd[sha_idx + 1]!r}"
     )
 
@@ -535,7 +555,7 @@ def test_batch_c1_protected_parity_subprocess_failure_is_actionable() -> None:
     def _side_effect(*args: object, **kwargs: object) -> subprocess.CompletedProcess:
         nonlocal call_count
         call_count += 1
-        if call_count == 1:
+        if call_count <= 2:
             return subprocess.CompletedProcess(args[0], 0, stdout="", stderr="")
         raise subprocess.CalledProcessError(128, "git", stderr="simulated diff error")
 

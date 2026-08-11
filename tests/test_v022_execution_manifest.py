@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import subprocess
 from collections import Counter, defaultdict
 from copy import deepcopy
 from functools import cache
@@ -189,6 +190,60 @@ def _canonical_index() -> dict[str, tuple[Path, dict]]:
     return _index_canonical_records(paths)
 
 
+def _canonical_index_at(revision: str) -> dict[str, tuple[Path, dict]]:
+    try:
+        listing = subprocess.run(
+            [
+                "git",
+                "ls-tree",
+                "-r",
+                "--name-only",
+                revision,
+                "--",
+                "data/tools/",
+            ],
+            cwd=ROOT,
+            capture_output=True,
+            encoding="utf-8",
+            check=True,
+        )
+    except (FileNotFoundError, subprocess.CalledProcessError) as exc:
+        raise AssertionError(
+            f"Unable to load frozen canonical snapshot {revision}"
+        ) from exc
+
+    by_id: dict[str, tuple[Path, dict]] = {}
+    yaml_paths = [
+        line for line in listing.stdout.splitlines() if line.endswith(".yaml")
+    ]
+    assert yaml_paths, f"No canonical YAML in frozen snapshot {revision}"
+    for relative in yaml_paths:
+        try:
+            shown = subprocess.run(
+                ["git", "show", f"{revision}:{relative}"],
+                cwd=ROOT,
+                capture_output=True,
+                encoding="utf-8",
+                check=True,
+            )
+        except (FileNotFoundError, subprocess.CalledProcessError) as exc:
+            raise AssertionError(
+                f"Unable to read frozen canonical file {revision}:{relative}"
+            ) from exc
+        payload = yaml.safe_load(shown.stdout)
+        records = payload if isinstance(payload, list) else payload.get("tools")
+        assert isinstance(records, list), (
+            f"Canonical tools must be a list: {revision}:{relative}"
+        )
+        path = ROOT / relative
+        for record in records:
+            tool_id = record.get("id") if isinstance(record, dict) else None
+            assert isinstance(tool_id, str) and tool_id
+            assert tool_id not in by_id, f"Duplicate canonical ID: {tool_id}"
+            by_id[tool_id] = (path, record)
+    return by_id
+
+
 @cache
 def _schema_fields() -> frozenset[str]:
     import json
@@ -343,7 +398,7 @@ def _validate_frozen_scope(payload: dict) -> None:
 
 
 def _validate_canonical_parity(payload: dict) -> None:
-    by_id = _canonical_index()
+    by_id = _canonical_index_at(payload["source_main_sha"])
     for row in payload["work_items"]:
         tool_id = row["tool_id"]
         assert tool_id in by_id, f"Missing canonical ID: {tool_id}"
