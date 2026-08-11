@@ -592,7 +592,7 @@ Kubernetes resource cleaner.
 
 - You already have TTL controllers or namespace-level lifecycle policies.
 
-[Official site](https://sveltos.projectsveltos.io/k8sCleaner.html) · [Source repository](https://github.com/gianlucam76/k8s-cleaner)
+[Official site](https://gianlucam76.github.io/k8s-cleaner/) · [Source repository](https://github.com/gianlucam76/k8s-cleaner)
 
 ### K8s Diagram Builder
 
@@ -725,7 +725,7 @@ Fast terminal dashboard for Kubernetes.
 
 - You need the richer plugin ecosystem of k9s.
 
-[Official site](https://kdash.cli.rs) · [Source repository](https://github.com/kdash-rs/kdash)
+[Official site](https://kdash-rs.github.io) · [Source repository](https://github.com/kdash-rs/kdash)
 
 ### KHI (Kubernetes History Inspector)
 

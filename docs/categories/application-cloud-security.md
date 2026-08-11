@@ -311,7 +311,7 @@ Policy language and authorization engine (Cedar) for fine-grained access control
 
 - You need infrastructure/K8s admission control (use OPA/Rego).
 
-[Official site](https://cedarpolicy.com/en) · [Documentation](https://docs.cedarpolicy.com/) · [Source repository](https://github.com/cedar-policy/cedar)
+[Official site](https://www.cedarpolicy.com) · [Documentation](https://docs.cedarpolicy.com/) · [Source repository](https://github.com/cedar-policy/cedar)
 
 ### Chain Bench
 

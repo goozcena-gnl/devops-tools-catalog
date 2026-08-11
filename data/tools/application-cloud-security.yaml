@@ -406,7 +406,7 @@
 - id: cedar-policy
   name: Cedar Policy
   summary: Policy language and authorization engine (Cedar) for fine-grained access control.
-  official_url: https://cedarpolicy.com/en
+  official_url: https://www.cedarpolicy.com
   repository_url: https://github.com/cedar-policy/cedar
   documentation_url: https://docs.cedarpolicy.com/
   categories:

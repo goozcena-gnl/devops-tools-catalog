@@ -10,7 +10,7 @@
 | [agent-skills](https://github.com/addyosmani/agent-skills) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AGENTMEMORY](https://www.agent-memory.dev) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [agentsmith](https://github.com/PromptPartner/agentsmith) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Agones](https://agones.dev/site) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Agones](https://agones.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AITMPL Agents](https://www.aitmpl.com/agents) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Akka.NET](https://getakka.net) | Emerging and experimental tools | oss | needs-review |
@@ -237,7 +237,7 @@
 | [k10ls](https://github.com/besrabasant/k10ls) | Kubernetes distributions and operations | oss | needs-review |
 | [k3d](https://k3d.io/stable) | Kubernetes distributions and operations | oss | needs-review |
 | [k3s](https://k3s.io) | Kubernetes distributions and operations | oss | active |
-| [K8s Cleaner (Sveltos)](https://sveltos.projectsveltos.io/k8sCleaner.html) | Kubernetes distributions and operations | oss | needs-review |
+| [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) | Kubernetes distributions and operations | oss | needs-review |
 | [K8s Diagram Builder](https://www.k8sdiagram.fun) | Kubernetes distributions and operations | unknown | needs-review |
 | [K8s in a Box](https://github.com/moabukar/k8s-in-a-box) | Documentation, learning and career resources | documentation | needs-review |
 | [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -256,7 +256,7 @@
 | [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
 | [Karpenter](https://karpenter.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KCL](https://www.kcl-lang.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [KDash](https://kdash.cli.rs) | Kubernetes distributions and operations | oss | needs-review |
+| [KDash](https://kdash-rs.github.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KEDA](https://keda.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Keel](https://keel.sh) | CD, GitOps, release and promotion | oss | active |

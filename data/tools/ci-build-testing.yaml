@@ -163,7 +163,7 @@
 - id: azure-devops
   name: Azure DevOps
   summary: Microsoft's DevOps platform.
-  official_url: https://azure.microsoft.com/en-us/services/devops
+  official_url: https://azure.microsoft.com/en-us/products/devops/
   categories:
   - ci-build-testing
   subcategories:
@@ -1086,7 +1086,7 @@
 - id: mantis
   name: Mantis
   summary: CI/CD platform for ML and data workflows.
-  official_url: https://mantis.getaugur.ai/docs/introduction/overview
+  official_url: https://getmantis.ai
   repository_url: https://github.com/augur-ai/mantis
   categories:
   - ci-build-testing

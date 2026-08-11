@@ -7,7 +7,7 @@
 |---|---|---|---|
 | [Actions Runner Controller](https://github.com/actions/actions-runner-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
-| [Agones](https://agones.dev/site) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Agones](https://agones.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | unknown | needs-review |
 | [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | unknown | needs-review |
@@ -147,7 +147,7 @@
 | [k10ls](https://github.com/besrabasant/k10ls) | Kubernetes distributions and operations | oss | needs-review |
 | [k3d](https://k3d.io/stable) | Kubernetes distributions and operations | oss | needs-review |
 | [k3s](https://k3s.io) | Kubernetes distributions and operations | oss | active |
-| [K8s Cleaner (Sveltos)](https://sveltos.projectsveltos.io/k8sCleaner.html) | Kubernetes distributions and operations | oss | needs-review |
+| [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) | Kubernetes distributions and operations | oss | needs-review |
 | [K8s Diagram Builder](https://www.k8sdiagram.fun) | Kubernetes distributions and operations | unknown | needs-review |
 | [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [k8s-d2](https://github.com/vieitesss/k8s-d2) | Kubernetes distributions and operations | oss | needs-review |
@@ -161,7 +161,7 @@
 | [Karpenter](https://karpenter.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kasten K10](https://www.kasten.io) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [KCL](https://www.kcl-lang.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [KDash](https://kdash.cli.rs) | Kubernetes distributions and operations | oss | needs-review |
+| [KDash](https://kdash-rs.github.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KEDA](https://keda.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kestra](https://kestra.io) | Workflow automation and ChatOps | oss | needs-review |

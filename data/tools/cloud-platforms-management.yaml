@@ -265,7 +265,7 @@
   name: Exoway
   summary: Cloud infrastructure and hosting services.
   official_url: https://www.exoway.io
-  documentation_url: https://help.exoway.io/fr/
+  documentation_url: https://doc.exoway.io/
   categories:
   - cloud-platforms-management
   subcategories:

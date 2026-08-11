@@ -121,7 +121,7 @@
   name: etckeeper
   summary: Version control for `/etc` (tracks config changes in Git).
   official_url: https://etckeeper.branchable.com
-  repository_url: https://github.com/etckeeper/etckeeper
+  repository_url: https://git.joeyh.name/index.cgi/etckeeper.git
   categories:
   - configuration-management
   subcategories:

@@ -117,7 +117,7 @@ Microsoft's DevOps platform.
 
 - * You prefer open tooling or are multi-cloud without Azure ties.
 
-[Official site](https://azure.microsoft.com/en-us/services/devops)
+[Official site](https://azure.microsoft.com/en-us/products/devops/)
 
 ### Bamboo
 
@@ -707,7 +707,7 @@ CI/CD platform for ML and data workflows.
 
 - * Your workloads are traditional application builds.
 
-[Official site](https://mantis.getaugur.ai/docs/introduction/overview) · [Source repository](https://github.com/augur-ai/mantis)
+[Official site](https://getmantis.ai) · [Source repository](https://github.com/augur-ai/mantis)
 
 ### Mergify
 

@@ -31,7 +31,7 @@
 - id: agones
   name: Agones
   summary: Kubernetes-native platform for hosting, running, and scaling dedicated game servers.
-  official_url: https://agones.dev/site
+  official_url: https://agones.dev
   repository_url: https://github.com/googleforgames/agones
   categories:
   - kubernetes-networking-storage-addons

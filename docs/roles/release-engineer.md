@@ -16,7 +16,7 @@
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
-| [Azure DevOps](https://azure.microsoft.com/en-us/services/devops) | CI, build and testing | unknown | needs-review |
+| [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | unknown | needs-review |
 | [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | unknown | needs-review |
 | [Bitbucket](https://bitbucket.org) | Source control and repository management | unknown | needs-review |
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | unknown | needs-review |
@@ -80,7 +80,7 @@
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
 | [Learn Git Branching](https://learngitbranching.js.org) | Source control and repository management | documentation | needs-review |
 | [Lefthook](https://lefthook.dev) | Software supply-chain security | oss | needs-review |
-| [Mantis](https://mantis.getaugur.ai/docs/introduction/overview) | CI, build and testing | oss | needs-review |
+| [Mantis](https://getmantis.ai) | CI, build and testing | oss | needs-review |
 | [Mergify](https://mergify.com) | CI, build and testing | unknown | needs-review |
 | [Nektos Act](https://nektosact.com) | CI, build and testing | oss | needs-review |
 | [Netlify](https://www.netlify.com) | CD, GitOps, release and promotion | unknown | needs-review |

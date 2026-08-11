@@ -23,7 +23,7 @@
 - [AWS Fault Injection Service](https://aws.amazon.com/fis) — Managed chaos engineering service on AWS. ✅ **Use when** you're already on AWS and need turnkey fault injection with IAM-scoped safety controls. ❌ **Avoid when** your workloads span multiple clouds or you need deep application-level fault injection.
 - [AWS Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) — AWS organization-level access control.
 - [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) — Chaos engineering service for Azure. ✅ **Use when** your infrastructure is Azure-native and you want tight integration with Azure Monitor. ❌ **Avoid when** you're multi-cloud or need experiments beyond Azure-supported fault types.
-- [Azure DevOps](https://azure.microsoft.com/en-us/services/devops) — Microsoft's DevOps platform.
+- [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) — Microsoft's DevOps platform.
 - [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) — Azure resource governance.
 - [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) — GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
 - [Bamboo](https://www.atlassian.com/software/bamboo) — CI/CD server by Atlassian.
@@ -42,7 +42,7 @@
 - [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 - [Cato Networks](https://www.catonetworks.com) — SASE (Secure Access Service Edge) platform.
 - [CC Switch](https://ccswitch.io/en) — Control surface for switching and managing AI coding tools.
-- [Cedar Policy](https://cedarpolicy.com/en) — Policy language and authorization engine (Cedar) for fine-grained access control.
+- [Cedar Policy](https://www.cedarpolicy.com) — Policy language and authorization engine (Cedar) for fine-grained access control.
 - [Chain Bench](https://github.com/aquasecurity/chain-bench) — Supply chain security auditing tool.
 - [Chainguard](https://www.chainguard.dev) — Secure container images and supply chain security platform.
 - [Chaos Mesh](https://chaos-mesh.org) — Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you want a CNCF-backed, Kubernetes-native chaos platform with a dashboard and CRD-based workflows. ❌ **Avoid when** your workloads aren't on Kubernetes or you need bare-metal/VM-level experiments.
@@ -146,7 +146,7 @@
 - [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) — Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow injection or unintended code execution.
 - [Lynis](https://cisofy.com/lynis) — Security auditing and hardening tool with an enterprise offering (CISOfy).
 - [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Network device configuration management.
-- [Mantis](https://mantis.getaugur.ai/docs/introduction/overview) — CI/CD platform for ML and data workflows.
+- [Mantis](https://getmantis.ai) — CI/CD platform for ML and data workflows.
 - [markdownlint](https://github.com/DavidAnson/markdownlint) — Markdown lint rules + tooling ecosystem.
 - [MarkItDown](https://github.com/microsoft/markitdown) — Python tool for converting files and Office documents to Markdown.
 - [MCPDefender](https://mcpdefender.com) — Security proxy for MCP traffic between AI apps and MCP servers (AGPL-3.0).
