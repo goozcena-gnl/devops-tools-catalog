@@ -1,9 +1,9 @@
 - id: ansible-lint
   name: Ansible Lint
   summary: Best practices checker for Ansible.
-  official_url: https://ansible.readthedocs.io/projects/lint
+  official_url: https://docs.ansible.com/projects/lint/
   repository_url: https://github.com/ansible/ansible-lint
-  documentation_url: https://ansible.readthedocs.io/projects/lint/
+  documentation_url: https://docs.ansible.com/projects/lint/
   categories:
   - ci-build-testing
   subcategories:

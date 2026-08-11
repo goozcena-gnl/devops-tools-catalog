@@ -9,7 +9,7 @@
 - [agentsmith](https://github.com/PromptPartner/agentsmith) — Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini, etc.) assembled by a single setup script.
 - [AITMPL Agents](https://www.aitmpl.com/agents) — Agents directory/platform.
 - [Amazon Q Developer](https://aws.amazon.com/q/developer) — AI code suggestions for AWS and more.
-- [Ansible Lint](https://ansible.readthedocs.io/projects/lint) — Best practices checker for Ansible.
+- [Ansible Lint](https://docs.ansible.com/projects/lint/) — Best practices checker for Ansible.
 - [Apache JMeter](https://jmeter.apache.org) — Load testing and performance measurement tool.
 - [Appcircle](https://appcircle.io) — CI/CD platform for mobile apps.
 - [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) — Kubernetes-native workflow engine for orchestrating DAG-based CI, data, and ML pipelines.

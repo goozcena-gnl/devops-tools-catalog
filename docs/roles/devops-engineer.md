@@ -15,7 +15,7 @@
 | [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Angular](https://angular.dev) | Developer experience and local environments | oss | needs-review |
 | [Ansible](https://www.ansible.com) | Configuration management | oss | needs-review |
-| [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | active |
+| [Ansible Lint](https://docs.ansible.com/projects/lint/) | CI, build and testing | oss | active |
 | [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
 | [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | active |
 | [Apache Kafka](https://kafka.apache.org) | Databases, caching and data infrastructure | oss | needs-review |

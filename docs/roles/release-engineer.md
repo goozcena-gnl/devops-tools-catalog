@@ -5,7 +5,7 @@
 
 | Tool | Categories | Model | Status |
 |---|---|---|---|
-| [Ansible Lint](https://ansible.readthedocs.io/projects/lint) | CI, build and testing | oss | active |
+| [Ansible Lint](https://docs.ansible.com/projects/lint/) | CI, build and testing | oss | active |
 | [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | active |
 | [Appcircle](https://appcircle.io) | CI, build and testing | unknown | needs-review |
 | [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
