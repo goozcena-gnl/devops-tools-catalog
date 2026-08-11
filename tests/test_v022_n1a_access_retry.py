@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import subprocess
 from collections import Counter
+from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
@@ -12,7 +13,8 @@ MANIFEST = ROOT / "docs" / "maintenance" / "v0.2.2-carryover-execution-manifest.
 LEDGER = ROOT / "docs" / "maintenance" / "v0.2.2-n1a-access-retry-review.md"
 
 N1A_BASELINE_SHA = "4a682ec8eca022712d5f62b6579880b4411d2a9e"
-N1A_CANONICAL_CANDIDATE_SHA = "b1270542ba9d824997bbb3f65a9ade73f905a173"
+N1A_RESULT_SHA = "4a39a9ad5e04514277ec6a28d97a88b79d58ee93"
+N1A_HISTORICAL_PRE_REBASE_CANDIDATE_SHA = "b1270542ba9d824997bbb3f65a9ade73f905a173"
 
 EXPECTED_IDS = {
     "ansible-lint",
@@ -76,7 +78,7 @@ EXPECTED_CHANGED_FIELDS = {
     ),
 }
 
-EXPECTED_CANDIDATE_FILES = {
+EXPECTED_RESULT_FILES = {
     "data/tools/ci-build-testing.yaml",
     "docs/categories/ci-build-testing.md",
     "docs/lifecycle/build.md",
@@ -173,13 +175,13 @@ def _git(*args: str) -> str:
         detail = (exc.stderr or exc.stdout or str(exc)).strip()
         raise AssertionError(
             "N1a pinned-range invariant failed for explicit refs "
-            f"{N1A_BASELINE_SHA} -> {N1A_CANONICAL_CANDIDATE_SHA}: {detail}"
+            f"{N1A_BASELINE_SHA} -> {N1A_RESULT_SHA}: {detail}"
         ) from exc
     return result.stdout
 
 
 def _require_refs() -> None:
-    for sha in (N1A_BASELINE_SHA, N1A_CANONICAL_CANDIDATE_SHA):
+    for sha in (N1A_BASELINE_SHA, N1A_RESULT_SHA):
         _git("cat-file", "-e", f"{sha}^{{commit}}")
 
 
@@ -189,7 +191,7 @@ def _changed_files() -> set[str]:
         "diff",
         "--name-only",
         N1A_BASELINE_SHA,
-        N1A_CANONICAL_CANDIDATE_SHA,
+        N1A_RESULT_SHA,
         "--",
     )
     return {line for line in output.splitlines() if line}
@@ -235,21 +237,41 @@ def _current_records() -> dict[str, tuple[str, dict[str, Any]]]:
 
 def _field_changes() -> dict[tuple[str, str], tuple[Any, Any]]:
     baseline = _records_at(N1A_BASELINE_SHA)
-    candidate = _records_at(N1A_CANONICAL_CANDIDATE_SHA)
-    assert baseline.keys() == candidate.keys(), (
-        f"Canonical ID drift: lost={sorted(baseline.keys() - candidate.keys())}, "
-        f"new={sorted(candidate.keys() - baseline.keys())}"
+    result = _records_at(N1A_RESULT_SHA)
+    assert baseline.keys() == result.keys(), (
+        f"Canonical ID drift: lost={sorted(baseline.keys() - result.keys())}, "
+        f"new={sorted(result.keys() - baseline.keys())}"
     )
 
     changes: dict[tuple[str, str], tuple[Any, Any]] = {}
     for tool_id in baseline:
         baseline_path, before = baseline[tool_id]
-        candidate_path, after = candidate[tool_id]
-        assert baseline_path == candidate_path, f"Canonical file moved for {tool_id}"
+        result_path, after = result[tool_id]
+        assert baseline_path == result_path, f"Canonical file moved for {tool_id}"
         for field in before.keys() | after.keys():
             if before.get(field) != after.get(field):
                 changes[(tool_id, field)] = (before.get(field), after.get(field))
     return changes
+
+
+def _assert_current_n1a_persistence(
+    current: dict[str, tuple[str, dict[str, Any]]],
+    accepted: dict[str, tuple[str, dict[str, Any]]],
+) -> None:
+    for tool_id in EXPECTED_IDS:
+        assert tool_id in current, f"Current catalogue lost N1a ID {tool_id!r}"
+        assert tool_id in accepted, f"N1a result is missing selected ID {tool_id!r}"
+        current_record = current[tool_id][1]
+        accepted_record = accepted[tool_id][1]
+        for field in FORBIDDEN_SELECTED_FIELDS:
+            assert current_record.get(field) == accepted_record.get(field), (
+                f"N1a-protected field drifted for {(tool_id, field)}"
+            )
+
+    for tool_id, field in EXPECTED_WORK_ITEMS:
+        assert current[tool_id][1].get(field) == accepted[tool_id][1].get(field), (
+            f"Accepted N1a decision drifted for {(tool_id, field)}"
+        )
 
 
 def test_n1a_frozen_selector_is_exact() -> None:
@@ -287,11 +309,11 @@ def test_n1a_ledger_records_previous_and_final_values() -> None:
     manifest = {
         (row["tool_id"], row["affected_field"]): row for row in _manifest_rows()
     }
-    candidate = _records_at(N1A_CANONICAL_CANDIDATE_SHA)
+    result = _records_at(N1A_RESULT_SHA)
     for row in _ledger_rows():
         key = (row["tool_id"], row["affected_field"])
         expected = manifest[key]
-        yaml_path, record = candidate[row["tool_id"]]
+        yaml_path, record = result[row["tool_id"]]
         assert row["canonical_yaml_file"] == expected["canonical_yaml_file"]
         assert row["canonical_yaml_file"] == yaml_path
         assert row["previous_value"] == str(expected["current_value"])
@@ -317,23 +339,23 @@ def test_n1a_ledger_separates_observation_evidence_and_inference() -> None:
             assert "primary-source proof" in row["final_decision"]
 
 
-def test_n1a_explicit_candidate_diff_is_exact() -> None:
-    assert _changed_files() == EXPECTED_CANDIDATE_FILES
+def test_n1a_explicit_historical_result_diff_is_exact() -> None:
+    assert _changed_files() == EXPECTED_RESULT_FILES
     assert _field_changes() == EXPECTED_CHANGED_FIELDS
 
 
 def test_n1a_has_no_lost_or_new_canonical_ids() -> None:
     baseline = _records_at(N1A_BASELINE_SHA)
-    candidate = _records_at(N1A_CANONICAL_CANDIDATE_SHA)
-    assert baseline.keys() == candidate.keys()
+    result = _records_at(N1A_RESULT_SHA)
+    assert baseline.keys() == result.keys()
 
 
 def test_n1a_selected_protected_fields_are_unchanged() -> None:
     baseline = _records_at(N1A_BASELINE_SHA)
-    candidate = _records_at(N1A_CANONICAL_CANDIDATE_SHA)
+    result = _records_at(N1A_RESULT_SHA)
     for tool_id in EXPECTED_IDS:
         before = baseline[tool_id][1]
-        after = candidate[tool_id][1]
+        after = result[tool_id][1]
         for field in FORBIDDEN_SELECTED_FIELDS:
             assert before.get(field) == after.get(field), (
                 f"Forbidden N1a change for {(tool_id, field)}"
@@ -341,15 +363,35 @@ def test_n1a_selected_protected_fields_are_unchanged() -> None:
 
 
 def test_n1a_changed_values_remain_typed_strings() -> None:
-    candidate = _records_at(N1A_CANONICAL_CANDIDATE_SHA)
+    result = _records_at(N1A_RESULT_SHA)
     for tool_id, field in EXPECTED_CHANGED_FIELDS:
-        assert isinstance(candidate[tool_id][1][field], str)
+        assert isinstance(result[tool_id][1][field], str)
 
 
-def test_n1a_current_canonical_tree_matches_locked_candidate() -> None:
-    assert _current_records() == _records_at(N1A_CANONICAL_CANDIDATE_SHA), (
-        "Canonical data drifted after the locked N1a candidate commit"
+def test_n1a_current_state_preserves_owned_decisions() -> None:
+    _assert_current_n1a_persistence(
+        _current_records(),
+        _records_at(N1A_RESULT_SHA),
     )
+
+
+def test_n1a_unrelated_future_canonical_change_does_not_invalidate_history() -> None:
+    accepted = _records_at(N1A_RESULT_SHA)
+    future = deepcopy(accepted)
+    unrelated_id = next(tool_id for tool_id in future if tool_id not in EXPECTED_IDS)
+    future[unrelated_id][1]["summary"] = "A later authorized unrelated change."
+
+    _assert_current_n1a_persistence(future, accepted)
+
+
+def test_n1a_ledger_records_permanent_result_and_pre_rebase_provenance() -> None:
+    text = LEDGER.read_text(encoding="utf-8")
+    assert f"Permanent N1a result SHA: `{N1A_RESULT_SHA}`" in text
+    assert (
+        "Historical pre-rebase candidate SHA: "
+        f"`{N1A_HISTORICAL_PRE_REBASE_CANDIDATE_SHA}`" in text
+    )
+    assert "provenance only" in text
 
 
 def test_n1a_scope_audit_totals_are_recorded() -> None:
@@ -380,11 +422,11 @@ def test_n1a_missing_ref_is_always_an_actionable_failure(monkeypatch: Any) -> No
     except AssertionError as exc:
         message = str(exc)
         assert N1A_BASELINE_SHA in message
-        assert N1A_CANONICAL_CANDIDATE_SHA in message
+        assert N1A_RESULT_SHA in message
         assert "missing object" in message
 
 
-def test_n1a_missing_candidate_ref_is_always_a_failure(monkeypatch: Any) -> None:
+def test_n1a_missing_result_ref_is_always_a_failure(monkeypatch: Any) -> None:
     calls = 0
 
     def fail_second(*args: Any, **kwargs: Any) -> subprocess.CompletedProcess[str]:
@@ -392,17 +434,17 @@ def test_n1a_missing_candidate_ref_is_always_a_failure(monkeypatch: Any) -> None
         calls += 1
         if calls == 1:
             return subprocess.CompletedProcess(args[0], 0, stdout="", stderr="")
-        raise subprocess.CalledProcessError(128, args[0], stderr="missing candidate")
+        raise subprocess.CalledProcessError(128, args[0], stderr="missing result")
 
     monkeypatch.setattr(subprocess, "run", fail_second)
     try:
         _require_refs()
-        raise AssertionError("Expected missing candidate ref to fail")
+        raise AssertionError("Expected missing result ref to fail")
     except AssertionError as exc:
         message = str(exc)
         assert N1A_BASELINE_SHA in message
-        assert N1A_CANONICAL_CANDIDATE_SHA in message
-        assert "missing candidate" in message
+        assert N1A_RESULT_SHA in message
+        assert "missing result" in message
 
 
 def test_n1a_git_unavailable_is_actionable(monkeypatch: Any) -> None:
@@ -429,8 +471,23 @@ def test_n1a_historical_diff_uses_two_explicit_commits(monkeypatch: Any) -> None
     _changed_files()
     diff = next(command for command in commands if command[:2] == ["git", "diff"])
     baseline_index = diff.index(N1A_BASELINE_SHA)
-    assert diff[baseline_index + 1] == N1A_CANONICAL_CANDIDATE_SHA
+    assert diff[baseline_index + 1] == N1A_RESULT_SHA
     assert not any("..." in argument for argument in diff)
+
+
+def test_n1a_pre_rebase_sha_is_never_an_executable_ref(monkeypatch: Any) -> None:
+    commands: list[list[str]] = []
+
+    def record(*args: Any, **kwargs: Any) -> subprocess.CompletedProcess[str]:
+        command = list(args[0])
+        commands.append(command)
+        return subprocess.CompletedProcess(command, 0, stdout="", stderr="")
+
+    monkeypatch.setattr(subprocess, "run", record)
+    _changed_files()
+    command_text = "\n".join(" ".join(command) for command in commands)
+    assert N1A_HISTORICAL_PRE_REBASE_CANDIDATE_SHA not in command_text
+    assert N1A_RESULT_SHA in command_text
 
 
 def test_n1a_ledger_parser_rejects_malformed_rows(tmp_path: Path) -> None:
