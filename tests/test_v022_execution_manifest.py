@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 from collections import Counter, defaultdict
 from copy import deepcopy
+from functools import cache
 from pathlib import Path
 
 import pytest
@@ -109,24 +110,12 @@ N4_IDS = {
     "elastic-stack-elk",
 }
 LEDGER_BY_SOURCE_BATCH = {
-    "batch-a1-hard-url-failures": (
-        "docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md"
-    ),
-    "batch-a2-hard-url-failures": (
-        "docs/maintenance/v0.2.1-url-remediation-batch-a2-review.md"
-    ),
-    "batch-b-archived-boundary": (
-        "docs/maintenance/v0.2.1-url-remediation-batch-b-review.md"
-    ),
-    "batch-c1-access-retry": (
-        "docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md"
-    ),
-    "batch-c2-access-retry": (
-        "docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md"
-    ),
-    "batch-d-license-lifecycle-ambiguity": (
-        "docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md"
-    ),
+    "batch-a1-hard-url-failures": "docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md",
+    "batch-a2-hard-url-failures": "docs/maintenance/v0.2.1-url-remediation-batch-a2-review.md",
+    "batch-b-archived-boundary": "docs/maintenance/v0.2.1-url-remediation-batch-b-review.md",
+    "batch-c1-access-retry": "docs/maintenance/v0.2.1-url-remediation-batch-c1-review.md",
+    "batch-c2-access-retry": "docs/maintenance/v0.2.1-url-remediation-batch-c2-review.md",
+    "batch-d-license-lifecycle-ambiguity": "docs/maintenance/v0.2.1-license-lifecycle-remediation-batch-d-review.md",
 }
 READINESS_BY_CLASSIFICATION = {
     "manual-verification-required": "READY_PRIMARY_EVIDENCE",
@@ -200,11 +189,12 @@ def _canonical_index() -> dict[str, tuple[Path, dict]]:
     return _index_canonical_records(paths)
 
 
-def _schema_fields() -> set[str]:
+@cache
+def _schema_fields() -> frozenset[str]:
     import json
 
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-    return set(schema["properties"])
+    return frozenset(schema["properties"])
 
 
 def _canonical_value(record: dict, field: str):
