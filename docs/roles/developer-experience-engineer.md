@@ -17,7 +17,7 @@
 | [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | needs-review |
 | [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | unknown | needs-review |
 | [AWS Cloud9](https://aws.amazon.com/cloud9) | Developer experience and local environments | unknown | needs-review |
-| [Azure DevOps](https://azure.microsoft.com/en-us/services/devops) | CI, build and testing | unknown | needs-review |
+| [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | unknown | needs-review |
 | [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
 | [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | needs-review |
 | [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | unknown | needs-review |
@@ -87,7 +87,7 @@
 | [kubara](https://kubara.io) | Platform engineering and internal developer platforms | unknown | needs-review |
 | [Learn Git Branching](https://learngitbranching.js.org) | Source control and repository management | documentation | needs-review |
 | [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | open-core | active |
-| [Mantis](https://mantis.getaugur.ai/docs/introduction/overview) | CI, build and testing | oss | needs-review |
+| [Mantis](https://getmantis.ai) | CI, build and testing | oss | needs-review |
 | [markdownlint](https://github.com/DavidAnson/markdownlint) | Developer experience and local environments | oss | needs-review |
 | [MarkItDown](https://github.com/microsoft/markitdown) | Developer experience and local environments | oss | needs-review |
 | [Mattermost](https://mattermost.com) | Workflow automation and ChatOps | open-core | needs-review |

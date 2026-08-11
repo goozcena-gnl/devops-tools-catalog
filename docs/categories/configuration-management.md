@@ -98,7 +98,7 @@ Version control for `/etc` (tracks config changes in Git).
 
 - You're already managing all configs declaratively via IaC/CM tools.
 
-[Official site](https://etckeeper.branchable.com) · [Source repository](https://github.com/etckeeper/etckeeper)
+[Official site](https://etckeeper.branchable.com) · [Source repository](https://git.joeyh.name/index.cgi/etckeeper.git)
 
 ### Juju
 

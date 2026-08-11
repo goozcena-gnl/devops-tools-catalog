@@ -59,7 +59,7 @@
   summary: Linux-based, security-hardened operating system purpose-built for running containers.
   official_url: https://bottlerocket.dev
   repository_url: https://github.com/bottlerocket-os/bottlerocket
-  documentation_url: https://bottlerocket.dev/en/docs/
+  documentation_url: https://bottlerocket.dev/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -563,7 +563,7 @@
   summary: Secure containers with lightweight VMs.
   official_url: https://katacontainers.io
   repository_url: https://github.com/kata-containers/kata-containers
-  documentation_url: https://katacontainers.io/docs/
+  documentation_url: https://github.com/kata-containers/kata-containers/tree/main/docs
   categories:
   - virtualization-bare-metal-homelab
   subcategories:

@@ -28,7 +28,7 @@
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
 - [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) — Declarative IaC language for Azure Resource Manager deployments.
 - [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) — Azure service for running containerized apps.
-- [Azure DevOps](https://azure.microsoft.com/en-us/services/devops) — Microsoft's DevOps platform.
+- [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) — Microsoft's DevOps platform.
 - [Azure Functions](https://azure.microsoft.com/en-us/products/functions) — Managed serverless compute service by Azure (runtime host is open source).
 - [Azure Functions Host](https://github.com/Azure/azure-functions-host) — The runtime host and core execution engine for Azure Functions.
 - [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) — Azure MCP server implementation.
@@ -136,7 +136,7 @@
 - [llm-d](https://github.com/llm-d) — Kubernetes-native high-performance distributed LLM inference framework for serving models at scale.
 - [llmfit](https://github.com/AlexsJones/llmfit) — Hardware-aware CLI/TUI for recommending which LLM models fit local RAM, CPU, and GPU capacity.
 - [LM Studio](https://lmstudio.ai) — Desktop app for running local LLMs.
-- [Mantis](https://mantis.getaugur.ai/docs/introduction/overview) — CI/CD platform for ML and data workflows.
+- [Mantis](https://getmantis.ai) — CI/CD platform for ML and data workflows.
 - [mcp-server-kubernetes](https://www.npmjs.com/package/mcp-server-kubernetes) — Node MCP server for interacting with Kubernetes clusters via kubectl.
 - [mcpsnoop](https://github.com/kerlenton/mcpsnoop) — Transparent MCP proxy for inspecting live tool calls between clients and servers.
 - [Mergify](https://mergify.com) — Merge queue and pull-request automation to keep CI green and streamline merges.

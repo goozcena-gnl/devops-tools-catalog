@@ -174,7 +174,7 @@ Cloud infrastructure and hosting services.
 
 - You require a mature, well-documented ecosystem.
 
-[Official site](https://www.exoway.io) · [Documentation](https://help.exoway.io/fr/)
+[Official site](https://www.exoway.io) · [Documentation](https://doc.exoway.io/)
 
 ### Google Cloud Platform
 

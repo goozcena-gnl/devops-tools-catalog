@@ -290,7 +290,7 @@ Open source APM/observability platform (metrics/logs/traces/profiling) with RCA 
 
 - You need a battle-tested platform at very large scale.
 
-[Official site](https://coroot.com) · [Documentation](https://coroot.com/docs/) · [Source repository](https://github.com/coroot/coroot)
+[Official site](https://coroot.com) · [Documentation](https://docs.coroot.com/) · [Source repository](https://github.com/coroot/coroot)
 
 ### Cortex
 

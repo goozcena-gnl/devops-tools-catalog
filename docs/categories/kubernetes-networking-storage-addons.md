@@ -41,7 +41,7 @@ Kubernetes-native platform for hosting, running, and scaling dedicated game serv
 
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
-[Official site](https://agones.dev/site) · [Source repository](https://github.com/googleforgames/agones)
+[Official site](https://agones.dev) · [Source repository](https://github.com/googleforgames/agones)
 
 ### AI Gateway (Envoy)
 

@@ -60,7 +60,7 @@ Linux-based, security-hardened operating system purpose-built for running contai
 
 - You need general-purpose SSH access and package management on the host.
 
-[Official site](https://bottlerocket.dev) · [Documentation](https://bottlerocket.dev/en/docs/) · [Source repository](https://github.com/bottlerocket-os/bottlerocket)
+[Official site](https://bottlerocket.dev) · [Documentation](https://bottlerocket.dev/) · [Source repository](https://github.com/bottlerocket-os/bottlerocket)
 
 ### Confidential Containers
 
@@ -383,7 +383,7 @@ Secure containers with lightweight VMs.
 
 - The performance overhead of micro-VMs is unacceptable or you run trusted workloads only.
 
-[Official site](https://katacontainers.io) · [Documentation](https://katacontainers.io/docs/) · [Source repository](https://github.com/kata-containers/kata-containers)
+[Official site](https://katacontainers.io) · [Documentation](https://github.com/kata-containers/kata-containers/tree/main/docs) · [Source repository](https://github.com/kata-containers/kata-containers)
 
 ### kcli
 

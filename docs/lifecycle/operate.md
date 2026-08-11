@@ -11,7 +11,7 @@
 - [agent-skills](https://github.com/addyosmani/agent-skills) — Production-grade engineering skills for AI coding agents.
 - [AGENTMEMORY](https://www.agent-memory.dev) — Persistent memory layer for AI coding agents.
 - [agentsmith](https://github.com/PromptPartner/agentsmith) — Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini, etc.) assembled by a single setup script.
-- [Agones](https://agones.dev/site) — Kubernetes-native platform for hosting, running, and scaling dedicated game servers.
+- [Agones](https://agones.dev) — Kubernetes-native platform for hosting, running, and scaling dedicated game servers.
 - [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) — Envoy-based AI gateway for managing LLM traffic in Kubernetes.
 - [AITMPL Agents](https://www.aitmpl.com/agents) — Agents directory/platform.
 - [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) — Azure Kubernetes Service.
@@ -259,7 +259,7 @@
 - [k10ls](https://github.com/besrabasant/k10ls) — Native Kubernetes API-based CLI for keeping port-forwards to pods and services open across clusters and contexts.
 - [k3d](https://k3d.io/stable) — Lightweight wrapper to run k3s (Rancher Lab's minimal Kubernetes distribution) in Docker.
 - [k3s](https://k3s.io) — Lightweight Kubernetes by Rancher.
-- [K8s Cleaner (Sveltos)](https://sveltos.projectsveltos.io/k8sCleaner.html) — Kubernetes resource cleaner.
+- [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) — Kubernetes resource cleaner.
 - [K8s Diagram Builder](https://www.k8sdiagram.fun) — Visual generator for Kubernetes YAML and topology diagrams.
 - [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) — CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
 - [k8s-d2](https://github.com/vieitesss/k8s-d2) — Generate D2 diagrams from Kubernetes topology and resources.
@@ -276,7 +276,7 @@
 - [Kata Containers](https://katacontainers.io) — Secure containers with lightweight VMs.
 - [KCL](https://www.kcl-lang.io) — Constraint-based configuration and policy language for Kubernetes and cloud-native environments.
 - [kcli](https://kcli.readthedocs.io/en/latest) — Unified CLI for provisioning VMs, Kubernetes clusters, and infrastructure across libvirt, cloud, and virtualization providers.
-- [KDash](https://kdash.cli.rs) — Fast terminal dashboard for Kubernetes.
+- [KDash](https://kdash-rs.github.io) — Fast terminal dashboard for Kubernetes.
 - [KEDA](https://keda.sh) — Kubernetes-based Event Driven Autoscaler.
 - [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) — GPU-aware autoscaling extension for KEDA workloads.
 - [Kelos](https://github.com/kelos-dev/kelos) — Kubernetes-native framework for orchestrating autonomous AI coding agents.

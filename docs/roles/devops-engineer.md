@@ -51,7 +51,7 @@
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
 | [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) | Chaos and performance engineering | unknown | needs-review |
 | [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | unknown | needs-review |
-| [Azure DevOps](https://azure.microsoft.com/en-us/services/devops) | CI, build and testing | unknown | needs-review |
+| [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | unknown | needs-review |
 | [Azure DevOps Labs](https://www.azuredevopslabs.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [Azure Functions Host](https://github.com/Azure/azure-functions-host) | Serverless, edge and WebAssembly | oss | needs-review |
@@ -338,7 +338,7 @@
 | [Logstash](https://www.elastic.co/logstash) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [M/Monit](https://www.mmonit.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Maintenant](https://maintenant.dev) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [Mantis](https://mantis.getaugur.ai/docs/introduction/overview) | CI, build and testing | oss | needs-review |
+| [Mantis](https://getmantis.ai) | CI, build and testing | oss | needs-review |
 | [markdownlint](https://github.com/DavidAnson/markdownlint) | Developer experience and local environments | oss | needs-review |
 | [MarkItDown](https://github.com/microsoft/markitdown) | Developer experience and local environments | oss | needs-review |
 | [Mattermost](https://mattermost.com) | Workflow automation and ChatOps | open-core | needs-review |

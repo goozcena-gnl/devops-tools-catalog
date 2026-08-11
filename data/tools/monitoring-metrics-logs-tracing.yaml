@@ -439,7 +439,7 @@
   summary: Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
   official_url: https://coroot.com
   repository_url: https://github.com/coroot/coroot
-  documentation_url: https://coroot.com/docs/
+  documentation_url: https://docs.coroot.com/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:

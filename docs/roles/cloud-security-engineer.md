@@ -25,7 +25,7 @@
 | [Calico Cloud](https://www.calicocloud.io/home) | Application and cloud security | open-core | needs-review |
 | [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Cato Networks](https://www.catonetworks.com) | Application and cloud security | unknown | needs-review |
-| [Cedar Policy](https://cedarpolicy.com/en) | Application and cloud security | oss | active |
+| [Cedar Policy](https://www.cedarpolicy.com) | Application and cloud security | oss | active |
 | [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | needs-review |
 | [Chain Bench](https://github.com/aquasecurity/chain-bench) | Application and cloud security | oss | needs-review |
 | [Chainguard](https://www.chainguard.dev) | Application and cloud security | unknown | needs-review |
