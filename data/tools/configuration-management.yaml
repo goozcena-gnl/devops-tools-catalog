@@ -151,7 +151,7 @@
   name: Juju
   summary: Service modeling and orchestration tool from Canonical (operators/charms).
   official_url: https://canonical.com/juju
-  repository_url: https://github.com/canonical/juju
+  repository_url: https://github.com/juju/juju
   categories:
   - configuration-management
   subcategories:
