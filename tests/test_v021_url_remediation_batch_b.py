@@ -100,12 +100,33 @@ def _planning_rows() -> list[dict[str, str]]:
 
 
 def _load_tool(yaml_file: str, tool_id: str) -> dict:
-    path = ROOT / yaml_file
-    assert path.exists(), f"Canonical YAML file not found: {path}"
-    tools = yaml.safe_load(path.read_text(encoding="utf-8"))
-    assert isinstance(tools, list), f"Expected list in {path}"
+    """Load the canonical record from Batch B's immutable accepted result.
+
+    Later explicitly authorized remediation batches may supersede a Batch B
+    field decision. Historical Batch B tests must validate their own result
+    rather than freeze the mutable current catalogue forever.
+    """
+    try:
+        result = subprocess.run(
+            ["git", "show", f"{BATCH_B_RESULT_SHA}:{yaml_file}"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+    except FileNotFoundError as exc:
+        raise AssertionError("Git is required for Batch B historical records") from exc
+    except subprocess.CalledProcessError as exc:
+        detail = (exc.stderr or exc.stdout or str(exc)).strip()
+        raise AssertionError(
+            f"Unable to read Batch B result {BATCH_B_RESULT_SHA}:{yaml_file}: {detail}"
+        ) from exc
+    tools = yaml.safe_load(result.stdout)
+    assert isinstance(tools, list), f"Expected list at {BATCH_B_RESULT_SHA}:{yaml_file}"
     by_id = {t["id"]: t for t in tools if isinstance(t, dict) and "id" in t}
-    assert tool_id in by_id, f"Tool {tool_id!r} not found in {path}"
+    assert tool_id in by_id, (
+        f"Tool {tool_id!r} not found at {BATCH_B_RESULT_SHA}:{yaml_file}"
+    )
     return by_id[tool_id]
 
 

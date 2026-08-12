@@ -118,7 +118,7 @@ Service modeling and orchestration tool from Canonical (operators/charms).
 
 - You're not in the Canonical ecosystem or prefer Helm/Terraform patterns.
 
-[Official site](https://canonical.com/juju) · [Source repository](https://github.com/canonical/juju)
+[Official site](https://canonical.com/juju) · [Source repository](https://github.com/juju/juju)
 
 ### Kolla-Ansible
 

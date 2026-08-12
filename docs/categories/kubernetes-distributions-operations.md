@@ -1432,7 +1432,7 @@ Web UI for Kubernetes.
 
 - You want richer features—use Lens/FreeLens/K9s instead.
 
-[Source repository](https://github.com/kubernetes/dashboard)
+[Source repository](https://github.com/kubernetes-retired/dashboard)
 
 ### Kubernetes The Hard Way
 

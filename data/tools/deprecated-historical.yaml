@@ -160,7 +160,7 @@
 - id: kubernetes-dashboard
   name: Kubernetes Dashboard
   summary: Web UI for Kubernetes.
-  repository_url: https://github.com/kubernetes/dashboard
+  repository_url: https://github.com/kubernetes-retired/dashboard
   categories:
   - deprecated-historical
   - kubernetes-distributions-operations
