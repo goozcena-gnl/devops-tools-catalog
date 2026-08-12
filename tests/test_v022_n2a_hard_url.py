@@ -13,7 +13,10 @@ MANIFEST = ROOT / "docs" / "maintenance" / "v0.2.2-carryover-execution-manifest.
 LEDGER = ROOT / "docs" / "maintenance" / "v0.2.2-n2a-hard-url-review.md"
 
 N2A_BASELINE_SHA = "be3d54483b778b1d57b4a4e712d331ea7918c4b7"
-N2A_CANONICAL_CANDIDATE_SHA = "a87818631a06a038c3df1f7dfdc8cff68e1b066e"
+N2A_RESULT_SHA = "24e5230c90bd81f1207b9b3fc8b8158eef1712ca"
+N2A_HISTORICAL_PRE_REBASE_CANDIDATE_SHA = "a87818631a06a038c3df1f7dfdc8cff68e1b066e"
+N2A_RESULT_TREE_SHA = "21592d368eaa2c678b22dc43edac3b020cb3ea42"
+N2A_CURRENT_MAIN_REF = "origin/main"
 
 EXPECTED_SCOPE = {
     ("agones", "official_url"): (
@@ -249,13 +252,13 @@ def _git(*args: str) -> str:
         detail = (exc.stderr or exc.stdout or str(exc)).strip()
         raise AssertionError(
             "N2a pinned-range invariant failed for explicit refs "
-            f"{N2A_BASELINE_SHA} -> {N2A_CANONICAL_CANDIDATE_SHA}: {detail}"
+            f"{N2A_BASELINE_SHA} -> {N2A_RESULT_SHA}: {detail}"
         ) from exc
     return result.stdout
 
 
 def _require_refs() -> None:
-    for sha in (N2A_BASELINE_SHA, N2A_CANONICAL_CANDIDATE_SHA):
+    for sha in (N2A_BASELINE_SHA, N2A_RESULT_SHA):
         _git("cat-file", "-e", f"{sha}^{{commit}}")
 
 
@@ -265,7 +268,7 @@ def _changed_files() -> set[str]:
         "diff",
         "--name-only",
         N2A_BASELINE_SHA,
-        N2A_CANONICAL_CANDIDATE_SHA,
+        N2A_RESULT_SHA,
         "--",
     )
     return {line for line in output.splitlines() if line}
@@ -305,17 +308,17 @@ def _current_records() -> dict[str, tuple[str, dict[str, Any]]]:
 
 def _field_changes() -> dict[tuple[str, str], tuple[Any, Any]]:
     baseline = _records_at(N2A_BASELINE_SHA)
-    candidate = _records_at(N2A_CANONICAL_CANDIDATE_SHA)
-    assert baseline.keys() == candidate.keys(), (
-        f"Canonical ID drift: lost={sorted(baseline.keys() - candidate.keys())}, "
-        f"new={sorted(candidate.keys() - baseline.keys())}"
+    result = _records_at(N2A_RESULT_SHA)
+    assert baseline.keys() == result.keys(), (
+        f"Canonical ID drift: lost={sorted(baseline.keys() - result.keys())}, "
+        f"new={sorted(result.keys() - baseline.keys())}"
     )
 
     changes: dict[tuple[str, str], tuple[Any, Any]] = {}
     for tool_id in baseline:
         baseline_path, before = baseline[tool_id]
-        candidate_path, after = candidate[tool_id]
-        assert baseline_path == candidate_path, f"Canonical file moved for {tool_id}"
+        result_path, after = result[tool_id]
+        assert baseline_path == result_path, f"Canonical file moved for {tool_id}"
         for field in before.keys() | after.keys():
             if before.get(field) != after.get(field):
                 changes[(tool_id, field)] = (before.get(field), after.get(field))
@@ -380,15 +383,15 @@ def test_n2a_ledger_exactly_covers_frozen_rows() -> None:
 
 
 def test_n2a_ledger_records_previous_and_final_values() -> None:
-    candidate = _records_at(N2A_CANONICAL_CANDIDATE_SHA)
+    result = _records_at(N2A_RESULT_SHA)
     for row in _ledger_rows():
         key = (row["tool_id"], row["affected_field"])
         expected_path, previous_value, final_value = EXPECTED_SCOPE[key]
-        candidate_path, candidate_record = candidate[row["tool_id"]]
-        assert row["canonical_yaml_file"] == expected_path == candidate_path
+        result_path, result_record = result[row["tool_id"]]
+        assert row["canonical_yaml_file"] == expected_path == result_path
         assert row["previous_value"] == previous_value
         assert row["final_value"] == final_value
-        assert candidate_record[row["affected_field"]] == final_value
+        assert result_record[row["affected_field"]] == final_value
         assert row["v021_previous_decision"] == "reviewed-but-unchanged in v0.2.1"
         assert (row["canonical_changed"] == "yes") == (key in EXPECTED_CHANGED_FIELDS)
 
@@ -403,52 +406,62 @@ def test_n2a_ledger_separates_observation_evidence_and_inference() -> None:
         assert "redirect alone" not in row["final_decision"].lower()
 
 
-def test_n2a_explicit_historical_candidate_diff_is_exact() -> None:
+def test_n2a_explicit_historical_result_diff_is_exact() -> None:
     assert _changed_files() == EXPECTED_CANDIDATE_FILES
     assert _field_changes() == EXPECTED_CHANGED_FIELDS
 
 
 def test_n2a_has_no_lost_or_new_canonical_ids() -> None:
     baseline = _records_at(N2A_BASELINE_SHA)
-    candidate = _records_at(N2A_CANONICAL_CANDIDATE_SHA)
-    assert baseline.keys() == candidate.keys()
+    result = _records_at(N2A_RESULT_SHA)
+    assert baseline.keys() == result.keys()
 
 
 def test_n2a_selected_protected_fields_are_unchanged() -> None:
     baseline = _records_at(N2A_BASELINE_SHA)
-    candidate = _records_at(N2A_CANONICAL_CANDIDATE_SHA)
+    result = _records_at(N2A_RESULT_SHA)
     for tool_id in EXPECTED_IDS:
         for field in PROTECTED_SELECTED_FIELDS:
-            assert baseline[tool_id][1].get(field) == candidate[tool_id][1].get(
-                field
-            ), f"Forbidden N2a change for {(tool_id, field)}"
+            assert baseline[tool_id][1].get(field) == result[tool_id][1].get(field), (
+                f"Forbidden N2a change for {(tool_id, field)}"
+            )
 
 
-def test_n2a_changed_values_remain_typed_strings() -> None:
-    candidate = _records_at(N2A_CANONICAL_CANDIDATE_SHA)
-    for tool_id, field in EXPECTED_CHANGED_FIELDS:
-        assert isinstance(candidate[tool_id][1][field], str)
+def test_n2a_selected_values_remain_typed_strings() -> None:
+    result = _records_at(N2A_RESULT_SHA)
+    for tool_id, field in EXPECTED_SCOPE:
+        assert isinstance(result[tool_id][1][field], str)
 
 
 def test_n2a_current_state_preserves_owned_decisions() -> None:
     _assert_current_n2a_persistence(
         _current_records(),
-        _records_at(N2A_CANONICAL_CANDIDATE_SHA),
+        _records_at(N2A_RESULT_SHA),
     )
 
 
 def test_n2a_unrelated_future_canonical_change_does_not_invalidate_history() -> None:
-    accepted = _records_at(N2A_CANONICAL_CANDIDATE_SHA)
+    accepted = _records_at(N2A_RESULT_SHA)
     future = deepcopy(accepted)
     unrelated_id = next(tool_id for tool_id in future if tool_id not in EXPECTED_IDS)
     future[unrelated_id][1]["summary"] = "A later authorized unrelated change."
     _assert_current_n2a_persistence(future, accepted)
 
 
-def test_n2a_ledger_records_pinned_range_and_scope_totals() -> None:
+def test_n2a_ledger_records_permanent_result_and_pre_rebase_provenance() -> None:
     text = LEDGER.read_text(encoding="utf-8")
     assert f"Execution baseline SHA: `{N2A_BASELINE_SHA}`" in text
-    assert f"Canonical candidate SHA: `{N2A_CANONICAL_CANDIDATE_SHA}`" in text
+    assert f"Permanent N2a result SHA: `{N2A_RESULT_SHA}`" in text
+    assert (
+        "Historical pre-rebase candidate SHA: "
+        f"`{N2A_HISTORICAL_PRE_REBASE_CANDIDATE_SHA}`" in text
+    )
+    assert f"Result tree SHA: `{N2A_RESULT_TREE_SHA}`" in text
+    assert "provenance only" in text
+
+
+def test_n2a_scope_audit_totals_are_recorded() -> None:
+    text = LEDGER.read_text(encoding="utf-8")
     for expected in (
         "SELECTED_MANIFEST_ROWS: 21",
         "REVIEWED_MANIFEST_ROWS: 21",
@@ -478,8 +491,29 @@ def test_n2a_missing_ref_is_always_an_actionable_failure(monkeypatch: Any) -> No
     except AssertionError as exc:
         message = str(exc)
         assert N2A_BASELINE_SHA in message
-        assert N2A_CANONICAL_CANDIDATE_SHA in message
+        assert N2A_RESULT_SHA in message
         assert "missing object" in message
+
+
+def test_n2a_missing_result_ref_is_always_a_failure(monkeypatch: Any) -> None:
+    calls = 0
+
+    def fail_second(*args: Any, **kwargs: Any) -> subprocess.CompletedProcess[str]:
+        nonlocal calls
+        calls += 1
+        if calls == 1:
+            return subprocess.CompletedProcess(args[0], 0, stdout="", stderr="")
+        raise subprocess.CalledProcessError(128, args[0], stderr="missing result")
+
+    monkeypatch.setattr(subprocess, "run", fail_second)
+    try:
+        _require_refs()
+        raise AssertionError("Expected missing result ref to fail")
+    except AssertionError as exc:
+        message = str(exc)
+        assert N2A_BASELINE_SHA in message
+        assert N2A_RESULT_SHA in message
+        assert "missing result" in message
 
 
 def test_n2a_git_unavailable_is_actionable(monkeypatch: Any) -> None:
@@ -506,9 +540,33 @@ def test_n2a_historical_diff_uses_two_explicit_commits(monkeypatch: Any) -> None
     _changed_files()
     diff = next(command for command in commands if command[:2] == ["git", "diff"])
     baseline_index = diff.index(N2A_BASELINE_SHA)
-    assert diff[baseline_index + 1] == N2A_CANONICAL_CANDIDATE_SHA
+    assert diff[baseline_index + 1] == N2A_RESULT_SHA
     assert "HEAD" not in diff
     assert not any("..." in argument for argument in diff)
+
+
+def test_n2a_permanent_result_has_expected_identity_and_history() -> None:
+    _require_refs()
+    assert _git("rev-parse", f"{N2A_RESULT_SHA}^{{tree}}").strip() == (
+        N2A_RESULT_TREE_SHA
+    )
+    assert _git("rev-parse", f"{N2A_RESULT_SHA}^").strip() == N2A_BASELINE_SHA
+    _git("merge-base", "--is-ancestor", N2A_RESULT_SHA, N2A_CURRENT_MAIN_REF)
+
+
+def test_n2a_pre_rebase_sha_is_never_an_executable_ref(monkeypatch: Any) -> None:
+    commands: list[list[str]] = []
+
+    def record(*args: Any, **kwargs: Any) -> subprocess.CompletedProcess[str]:
+        command = list(args[0])
+        commands.append(command)
+        return subprocess.CompletedProcess(command, 0, stdout="", stderr="")
+
+    monkeypatch.setattr(subprocess, "run", record)
+    _changed_files()
+    command_text = "\n".join(" ".join(command) for command in commands)
+    assert N2A_HISTORICAL_PRE_REBASE_CANDIDATE_SHA not in command_text
+    assert N2A_RESULT_SHA in command_text
 
 
 def test_n2a_ledger_parser_rejects_malformed_rows(tmp_path: Path) -> None:
