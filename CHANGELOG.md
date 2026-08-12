@@ -2,6 +2,31 @@
 
 All notable catalogue architecture and governance changes are recorded here. Individual tool metadata changes remain visible in Git history and pull requests.
 
+## [0.2.2] - 2026-08-12
+
+Publication metadata finalized on 2026-08-12 after the approved v0.2.2 carryover review sequence. Tag and GitHub Release publication remain deferred until this release commit is merged and the repository owner separately approves publication.
+
+### Scope
+
+- Reconciled all 82 frozen planning rows across 63 unique IDs: 64 reviewed rows across 58 IDs and 18 N4 HOLD rows across 5 IDs.
+- Confirmed zero lost IDs, zero new IDs, and zero non-selected changed IDs between the immutable v0.2.1 source and accepted v0.2.2 implementation result.
+- Completed approved N1a, N1b, N2a, N2b, and N3a review workstreams. N4 was not executed and remains `HOLD_NO_NEW_EVIDENCE`.
+
+### Canonical changes
+
+- Changed 15 selected canonical fields across 14 IDs.
+- Reviewed but retained 49 selected rows across 44 IDs.
+- Regenerated 23 deterministic category, role, and lifecycle documents from the accepted canonical changes.
+- Machine/API canonical replacement candidates remain 0.
+
+### Remaining evidence boundaries
+
+- Issue #2 remains open.
+- N4 remains unresolved and on HOLD for `autopwn-suite`, `cai-robotsec`, `ctop`, `elastic-apm-server`, and `elastic-stack-elk` (18 field-level rows).
+- Executed ledgers retain explicit access/retry, URL identity or migration, product/lifecycle/name, and archived-source governance follow-up boundaries where the approved evidence did not support broader changes.
+
+This release does not claim complete catalogue URL, lifecycle, licence, or evidence-debt resolution.
+
 ## [0.2.1] - 2026-08-05
 
 Publication metadata finalized on 2026-08-05 after completion of the v0.2.1 remediation sequence. Tag and GitHub Release publication follow from this release commit after explicit owner approval.

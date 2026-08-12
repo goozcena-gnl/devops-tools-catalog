@@ -111,8 +111,16 @@ def _finalization_changed_files(*paths: str) -> set[str]:
     return {line.strip() for line in result.stdout.splitlines() if line.strip()}
 
 
-def test_pyproject_version_is_021() -> None:
-    text = _read(PYPROJECT)
+def test_v021_release_commit_pyproject_version_is_021() -> None:
+    _require_finalization_refs()
+    result = subprocess.run(
+        ["git", "show", f"{FINALIZATION_RESULT_SHA}:pyproject.toml"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    text = result.stdout
     assert 'version = "0.2.1"' in text
 
 
