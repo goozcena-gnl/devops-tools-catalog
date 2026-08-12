@@ -134,9 +134,19 @@ category_lifecycle:
   emerging-experimental: [learn, develop]
   deprecated-historical: [retire]
 url_aliases:
+  https://clickhouse.com/cloud/clickstack?loc=o11y: https://clickhouse.com/clickstack
   https://clickhouse.com/use-cases/observability: https://clickhouse.com/
   https://clastix.io/capsule/: https://capsule.clastix.io/
+  https://crates.io/crates/zoxide: https://github.com/ajeetdsouza/zoxide
+  https://docs.coroot.com/: https://coroot.com
   https://docs.kubelinter.io/: https://stackrox.github.io/kube-linter/
+  https://github.com/aristocratos/btop#description: https://github.com/aristocratos/btop
+  https://github.com/danielfoehrKn/kubeswitch?tab=readme-ov-file#execute-commands: https://github.com/danielfoehrKn/kubeswitch
+  https://microsoft.github.io/autogen/stable//index.html: https://microsoft.github.io/autogen/stable/index.html
+  https://www.powershellgallery.com/packages/PSScriptAnalyzer/1.25.0: https://www.powershellgallery.com/packages/PSScriptAnalyzer/
+  https://www.risk-analysis-editor.com/index.fr.html: https://www.risk-analysis-editor.com/
+  https://www.suse.com/products/rancher/virtualization/: https://harvesterhci.io/
+  https://uptrace.dev/get/hosted/open-source-apm: https://uptrace.dev/
   https://roadmap.sh/backend: https://roadmap.sh/
   https://roadmap.sh/devops: https://roadmap.sh/
 record_overrides:

@@ -458,6 +458,37 @@
   - legacy:7_Development-Collaboration/README.md#L33
   - legacy:devopstools_final.md#L1059
   needs_review: true
+- id: direnv
+  name: direnv
+  summary: Shell extension that loads and unloads directory-specific environment variables.
+  official_url: https://direnv.net/
+  repository_url: https://github.com/direnv/direnv
+  documentation_url: https://direnv.net/docs/hook.html
+  categories:
+  - developer-experience-local-environments
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want project-specific environment variables to follow the current working directory across supported
+    shells.
+  avoid_when:
+  - You need a centralized secret manager or policy-controlled credential distribution.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://direnv.net/
+  - https://direnv.net/docs/hook.html
+  - https://github.com/direnv/direnv
+  - https://github.com/direnv/direnv/blob/master/LICENSE
+  needs_review: false
 - id: drawdb
   name: drawDB
   summary: Database diagram editor.
@@ -515,6 +546,34 @@
   sources:
   - legacy:devopstools_final.md#L1111
   needs_review: true
+- id: feint
+  name: Feint
+  summary: Local emulator for selected Scaleway, Outscale, and Exoscale cloud APIs.
+  repository_url: https://github.com/stephrobert/feint
+  categories:
+  - developer-experience-local-environments
+  - cloud-platforms-management
+  roles:
+  - cloud-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need local, account-free tests for infrastructure code targeting the supported European cloud
+    APIs.
+  avoid_when:
+  - You require complete provider parity or validation against real cloud control planes.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/stephrobert/feint
+  - https://github.com/stephrobert/feint/blob/main/LICENSE
+  needs_review: false
 - id: floci
   name: Floci
   summary: Local AWS service emulator for development and CI.
@@ -541,6 +600,37 @@
   sources:
   - legacy:devopstools_final.md#L1060
   needs_review: true
+- id: floci-az
+  name: Floci-AZ
+  summary: Local emulator for selected Azure services exposed through a single native process.
+  official_url: https://floci.io/floci-az/
+  repository_url: https://github.com/floci-io/floci-az
+  documentation_url: https://floci.io/floci-az/getting-started/
+  categories:
+  - developer-experience-local-environments
+  - cloud-platforms-management
+  roles:
+  - cloud-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need local Azure SDK, CLI, Terraform, or OpenTofu tests against the services Floci-AZ emulates.
+  avoid_when:
+  - You require full Azure behavioral parity or production control-plane validation.
+  deployment_models:
+  - local-binary
+  - container
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://floci.io/floci-az/
+  - https://github.com/floci-io/floci-az
+  - https://github.com/floci-io/floci-az/blob/main/LICENSE
+  needs_review: false
 - id: ghostty
   name: Ghostty
   summary: Fast, cross-platform GPU-accelerated terminal emulator with native desktop integration.
@@ -767,9 +857,38 @@
   sources:
   - legacy:devopstools_final.md#L1087
   needs_review: true
+- id: kitty
+  name: kitty
+  summary: Cross-platform GPU-accelerated terminal emulator with extensible keyboard-driven workflows.
+  official_url: https://sw.kovidgoyal.net/kitty/
+  repository_url: https://github.com/kovidgoyal/kitty
+  documentation_url: https://sw.kovidgoyal.net/kitty/overview/
+  categories:
+  - developer-experience-local-environments
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  use_when:
+  - You want a scriptable terminal with GPU rendering, tabs, layouts, and remote-control capabilities.
+  avoid_when:
+  - You need a minimal terminal supplied and supported by the base operating system.
+  deployment_models:
+  - desktop
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://sw.kovidgoyal.net/kitty/
+  - https://github.com/kovidgoyal/kitty
+  - https://github.com/kovidgoyal/kitty/blob/master/LICENSE
+  needs_review: false
 - id: markdownlint
   name: markdownlint
-  summary: Markdown lint rules + tooling ecosystem.
+  summary: Node.js style checker and configurable rule set for Markdown and CommonMark files.
   repository_url: https://github.com/DavidAnson/markdownlint
   categories:
   - developer-experience-local-environments
@@ -787,15 +906,18 @@
   - Prettier already reformats your Markdown and additional rules add friction.
   deployment_models: []
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-12'
   sources:
   - legacy:7_Development-Collaboration/README.md#L74
   - legacy:devopstools_final.md#L1114
-  needs_review: true
+  - https://github.com/DavidAnson/markdownlint
+  - https://github.com/DavidAnson/markdownlint/blob/main/LICENSE
+  needs_review: false
 - id: markitdown
   name: MarkItDown
   summary: Python tool for converting files and Office documents to Markdown.
@@ -879,6 +1001,37 @@
   - legacy:7_Development-Collaboration/README.md#L81
   - legacy:devopstools_final.md#L1121
   needs_review: true
+- id: neovim
+  name: Neovim
+  summary: Extensible Vim-derived text editor with built-in APIs for plugins and editor automation.
+  official_url: https://neovim.io/
+  repository_url: https://github.com/neovim/neovim
+  documentation_url: https://neovim.io/doc/
+  categories:
+  - developer-experience-local-environments
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  use_when:
+  - You want a keyboard-driven editor that can be configured for code, configuration, and remote terminal
+    work.
+  avoid_when:
+  - Your team requires a centrally standardized graphical IDE with minimal local configuration.
+  deployment_models:
+  - local-cli
+  - desktop
+  license_model: oss
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://neovim.io/
+  - https://neovim.io/doc/
+  - https://github.com/neovim/neovim
+  - https://github.com/neovim/neovim/blob/master/LICENSE.txt
+  needs_review: false
 - id: ninite
   name: Ninite
   summary: Windows app installer/updater (bundled installers).
@@ -964,6 +1117,41 @@
   sources:
   - legacy:devopstools_final.md#L420
   needs_review: true
+- id: okteto
+  name: Okteto
+  summary: Development platform for building and testing applications directly in Kubernetes environments.
+  official_url: https://www.okteto.com/
+  repository_url: https://github.com/okteto/okteto
+  documentation_url: https://www.okteto.com/docs/
+  categories:
+  - developer-experience-local-environments
+  - kubernetes-distributions-operations
+  roles:
+  - developer-experience-engineer
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You want development workflows to run against Kubernetes-hosted dependencies and preview environments.
+  avoid_when:
+  - Local containers provide sufficient fidelity or your organization cannot operate development workloads
+    in clusters.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://www.okteto.com/
+  - https://www.okteto.com/docs/
+  - https://github.com/okteto/okteto
+  - https://github.com/okteto/okteto/blob/master/LICENSE
+  needs_review: false
 - id: omarchy
   name: Omarchy
   summary: Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.
@@ -1192,6 +1380,37 @@
   - legacy:7_Development-Collaboration/README.md#L75
   - legacy:devopstools_final.md#L1115
   needs_review: true
+- id: psscriptanalyzer
+  name: PSScriptAnalyzer
+  summary: Static code checker and formatter for PowerShell scripts and modules.
+  official_url: https://www.powershellgallery.com/packages/PSScriptAnalyzer/
+  repository_url: https://github.com/PowerShell/PSScriptAnalyzer
+  documentation_url: https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview
+  categories:
+  - developer-experience-local-environments
+  - ci-build-testing
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need repeatable PowerShell quality and best-practice checks locally or in CI.
+  avoid_when:
+  - Your codebase does not contain PowerShell scripts or modules.
+  deployment_models:
+  - local-cli
+  - ci-plugin
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview
+  - https://github.com/PowerShell/PSScriptAnalyzer
+  - https://github.com/PowerShell/PSScriptAnalyzer/blob/master/LICENSE
+  needs_review: false
 - id: pycharm
   name: PyCharm
   summary: Python IDE by JetBrains.
@@ -1418,6 +1637,36 @@
   sources:
   - legacy:devopstools_final.md#L423
   needs_review: true
+- id: stackblitz
+  name: StackBlitz
+  summary: Browser-based development environment powered by in-browser WebContainers.
+  official_url: https://stackblitz.com/
+  documentation_url: https://developer.stackblitz.com/
+  categories:
+  - developer-experience-local-environments
+  roles:
+  - developer-experience-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need instantly shareable browser development environments for supported web and Node.js projects.
+  avoid_when:
+  - Workloads require unsupported native services, privileged containers, or a conventional remote development
+    host.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://stackblitz.com/
+  - https://developer.stackblitz.com/
+  - https://stackblitz.com/pricing
+  needs_review: false
 - id: starlight
   name: Starlight
   summary: Documentation site framework.
@@ -1820,3 +2069,59 @@
   sources:
   - legacy:devopstools_final.md#L1075
   needs_review: true
+- id: zellij
+  name: Zellij
+  summary: Terminal workspace and multiplexer with layouts, panes, sessions, and plugins.
+  official_url: https://zellij.dev/
+  repository_url: https://github.com/zellij-org/zellij
+  documentation_url: https://zellij.dev/documentation/
+  categories:
+  - developer-experience-local-environments
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  use_when:
+  - You want persistent terminal sessions and reproducible pane layouts for local or remote workflows.
+  avoid_when:
+  - A basic shell session or an existing terminal multiplexer already satisfies the workflow.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://zellij.dev/
+  - https://zellij.dev/documentation/
+  - https://github.com/zellij-org/zellij
+  - https://github.com/zellij-org/zellij/blob/main/LICENSE.md
+  needs_review: false
+- id: zoxide
+  name: zoxide
+  summary: Shell command that ranks visited directories to provide faster directory navigation.
+  repository_url: https://github.com/ajeetdsouza/zoxide
+  categories:
+  - developer-experience-local-environments
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  use_when:
+  - You frequently navigate many local directories and want history-ranked shell jumps.
+  avoid_when:
+  - Shell history collection or an additional shell hook is inappropriate for the environment.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/ajeetdsouza/zoxide
+  - https://github.com/ajeetdsouza/zoxide/blob/main/LICENSE
+  needs_review: false

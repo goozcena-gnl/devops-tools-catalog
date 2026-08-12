@@ -205,7 +205,7 @@ def test_batch04_verified_tools_are_active_with_expected_metadata() -> None:
 
     coroot = next(tool for tool in tools if tool["id"] == "coroot")
     assert coroot["license_model"] == "oss"
-    assert coroot["license_spdx"] == "AGPL-3.0-only"
+    assert coroot["license_spdx"] == "Apache-2.0"
     assert coroot["status"] == "active"
     assert coroot["needs_review"] is False
 

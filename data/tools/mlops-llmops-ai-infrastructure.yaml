@@ -205,6 +205,38 @@
   - legacy:9_AI-MLOps/README.md#L64
   - legacy:devopstools_final.md#L1251
   needs_review: true
+- id: autogen
+  name: AutoGen
+  summary: Microsoft framework for building single-agent and multi-agent applications, runtimes, and extensions.
+  official_url: https://microsoft.github.io/autogen/stable/index.html
+  repository_url: https://github.com/microsoft/autogen
+  documentation_url: https://microsoft.github.io/autogen/stable/index.html
+  categories:
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - build
+  - deploy
+  use_when:
+  - You need programmable agent workflows, multi-agent messaging, or distributed agent runtimes with supported
+    extensions.
+  avoid_when:
+  - A single model call or a simpler workflow library meets the application requirement.
+  deployment_models:
+  - software-library
+  - self-hosted
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://microsoft.github.io/autogen/stable/index.html
+  - https://github.com/microsoft/autogen
+  - https://github.com/microsoft/autogen/blob/main/LICENSE-CODE
+  needs_review: false
 - id: awesome-codex-subagents
   name: awesome-codex-subagents
   summary: Collection of 130+ specialized Codex subagents for a wide range of development use cases.
@@ -449,6 +481,43 @@
   sources:
   - legacy:devopstools_final.md#L1234
   needs_review: true
+- id: deepeval
+  name: DeepEval
+  summary: Local-first framework for evaluating and regression-testing LLM applications, agents, RAG pipelines,
+    and MCP systems.
+  official_url: https://deepeval.com/
+  repository_url: https://github.com/confident-ai/deepeval
+  documentation_url: https://deepeval.com/docs/introduction
+  categories:
+  - mlops-llmops-ai-infrastructure
+  - ci-build-testing
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - release-engineer
+  lifecycle_stages:
+  - test
+  - release
+  - monitor
+  use_when:
+  - You need repeatable local or CI evaluations for LLM outputs, traces, RAG components, or agent behavior.
+  avoid_when:
+  - Your evaluation criteria cannot tolerate nondeterministic judge models without additional calibration
+    and human review.
+  deployment_models:
+  - software-library
+  - local-cli
+  - hosted-saas
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://deepeval.com/docs/introduction
+  - https://deepeval.com/docs/evaluation-introduction
+  - https://github.com/confident-ai/deepeval
+  - https://github.com/confident-ai/deepeval/blob/main/LICENSE.md
+  needs_review: false
 - id: deepspeed
   name: DeepSpeed
   summary: Deep learning optimization library for large-scale model training and inference.
@@ -565,6 +634,40 @@
   sources:
   - legacy:devopstools_final.md#L1217
   needs_review: true
+- id: docling
+  name: Docling
+  summary: Document conversion toolkit that extracts structured content for downstream data and AI pipelines.
+  official_url: https://docling.ai/
+  repository_url: https://github.com/docling-project/docling
+  documentation_url: https://docling-project.github.io/docling/
+  categories:
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - build
+  use_when:
+  - You need local conversion, OCR, table extraction, or chunking before indexing documents for RAG and
+    agent workflows.
+  avoid_when:
+  - Your source formats are already structured or you require a managed document-processing service with
+    operational support.
+  deployment_models:
+  - software-library
+  - local-cli
+  - self-hosted-service
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://docling.ai/
+  - https://docling-project.github.io/docling/
+  - https://github.com/docling-project/docling
+  - https://github.com/docling-project/docling/blob/main/LICENSE
+  needs_review: false
 - id: ecc-tools
   name: ecc.tools
   summary: OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
@@ -834,6 +937,41 @@
   - legacy:9_AI-MLOps/README.md#L54
   - legacy:devopstools_final.md#L1220
   needs_review: true
+- id: graphify
+  name: Graphify
+  summary: Local code-knowledge graph tool for mapping code, configuration, schemas, and documentation
+    for AI coding assistants.
+  official_url: https://graphify.com/
+  repository_url: https://github.com/Graphify-Labs/graphify
+  documentation_url: https://graphify.com/docs
+  categories:
+  - mlops-llmops-ai-infrastructure
+  - developer-experience-local-environments
+  roles:
+  - developer-experience-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - develop
+  - build
+  use_when:
+  - You want an on-device, queryable structural graph to give supported coding assistants auditable codebase
+    context.
+  avoid_when:
+  - Text search and language-server indexes already answer the required questions or the supported parsers
+    do not cover the codebase.
+  deployment_models:
+  - local-cli
+  - self-hosted-mcp
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://graphify.com/
+  - https://graphify.com/docs
+  - https://github.com/Graphify-Labs/graphify
+  - https://github.com/Graphify-Labs/graphify/blob/main/LICENSE
+  needs_review: false
 - id: haystack
   name: Haystack
   summary: Framework for building LLM-powered apps and search systems.
@@ -1551,6 +1689,41 @@
   sources:
   - legacy:devopstools_final.md#L1224
   needs_review: true
+- id: mem0
+  name: Mem0
+  summary: Memory layer for AI applications that can run as an embedded library, self-hosted service,
+    or managed platform.
+  official_url: https://mem0.ai/
+  repository_url: https://github.com/mem0ai/mem0
+  documentation_url: https://docs.mem0.ai/open-source/overview
+  categories:
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need persistent, scoped memory for agent or assistant applications with embedded, self-hosted,
+    or managed deployment choices.
+  avoid_when:
+  - Stateless prompts or an application-owned datastore provide sufficient memory semantics and governance.
+  deployment_models:
+  - software-library
+  - self-hosted
+  - hosted-saas
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://docs.mem0.ai/open-source/overview
+  - https://github.com/mem0ai/mem0
+  - https://github.com/mem0ai/mem0/blob/main/LICENSE
+  needs_review: false
 - id: migratowl
   name: Migratowl
   summary: AI-powered dependency migration analyzer.

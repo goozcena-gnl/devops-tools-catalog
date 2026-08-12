@@ -253,6 +253,40 @@
   - legacy:5_Monitoring-Observability/README.md#L105
   - legacy:devopstools_final.md#L823
   needs_review: true
+- id: opensre
+  name: OpenSRE
+  summary: Self-hostable framework for AI-assisted production incident investigation, evaluation, and
+    remediation workflows.
+  official_url: https://www.opensre.com/
+  repository_url: https://github.com/Tracer-Cloud/opensre
+  documentation_url: https://www.opensre.com/docs
+  categories:
+  - sre-incident-response-on-call
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - site-reliability-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  maturity: experimental
+  use_when:
+  - You are evaluating self-hosted AI agents for evidence-linked incident investigation across supported
+    operational integrations.
+  avoid_when:
+  - Production remediation requires mature stability guarantees or autonomous actions are not protected
+    by review and least-privilege controls.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://www.opensre.com/
+  - https://github.com/Tracer-Cloud/opensre
+  - https://github.com/Tracer-Cloud/opensre/blob/main/LICENSE
+  needs_review: false
 - id: pagerduty
   name: PagerDuty
   summary: Digital operations management and incident response.

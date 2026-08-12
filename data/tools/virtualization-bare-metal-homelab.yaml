@@ -114,7 +114,8 @@
   needs_review: true
 - id: containerd
   name: containerd
-  summary: Industry-standard container runtime focused on simplicity, portability, and robust Kubernetes integration.
+  summary: Industry-standard container runtime focused on simplicity, portability, and robust Kubernetes
+    integration.
   official_url: https://containerd.io
   repository_url: https://github.com/containerd/containerd
   documentation_url: https://containerd.io/docs/2.3/
@@ -143,6 +144,37 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L134
   - legacy:devopstools_final.md#L232
+  needs_review: false
+- id: corosync
+  name: Corosync
+  summary: Cluster communication engine providing membership, quorum, and group communication services
+    for high-availability systems.
+  official_url: https://corosync.github.io/corosync/
+  repository_url: https://github.com/corosync/corosync
+  categories:
+  - virtualization-bare-metal-homelab
+  - backup-disaster-recovery-resilience
+  roles:
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You build a Linux high-availability cluster that needs membership, quorum, and messaging for a resource
+    manager such as Pacemaker.
+  avoid_when:
+  - A managed platform already provides workload failover and cluster membership.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: BSD-3-Clause
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://corosync.github.io/corosync/
+  - https://github.com/corosync/corosync
+  - https://github.com/corosync/corosync/blob/main/LICENSE
   needs_review: false
 - id: cri-o
   name: CRI-O
@@ -238,35 +270,6 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L140
   - legacy:devopstools_final.md#L235
   needs_review: true
-- id: dive
-  name: dive
-  summary: Explore Docker image layers.
-  repository_url: https://github.com/wagoodman/dive
-  categories:
-  - virtualization-bare-metal-homelab
-  subcategories:
-  - Virtualization & Containerization
-  roles:
-  - devops-engineer
-  - infrastructure-systems-engineer
-  lifecycle_stages:
-  - deploy
-  - operate
-  use_when:
-  - You want to analyze and reduce Docker image size by inspecting each layer.
-  avoid_when:
-  - You don't need image optimization or already use multi-stage builds effectively.
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L142
-  - legacy:devopstools_final.md#L236
-  needs_review: true
 - id: docker-desktop
   name: Docker Desktop
   summary: Desktop Docker environment.
@@ -354,6 +357,41 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L148
   - legacy:devopstools_final.md#L239
   needs_review: true
+- id: elemental
+  name: Elemental
+  summary: Rancher-integrated stack for centrally managing immutable operating-system images on Kubernetes
+    nodes.
+  official_url: https://elemental.docs.rancher.com/
+  repository_url: https://github.com/rancher/elemental
+  documentation_url: https://elemental.docs.rancher.com/
+  categories:
+  - virtualization-bare-metal-homelab
+  - kubernetes-distributions-operations
+  roles:
+  - infrastructure-systems-engineer
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want Rancher-managed registration, installation, and image-based lifecycle management for Kubernetes
+    node operating systems.
+  avoid_when:
+  - Your node operating systems are managed through another immutable-image or configuration-management
+    workflow.
+  deployment_models:
+  - kubernetes-operator
+  - bare-metal
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://elemental.docs.rancher.com/
+  - https://github.com/rancher/elemental
+  - https://github.com/rancher/elemental/blob/main/LICENSE
+  needs_review: false
 - id: firecracker
   name: Firecracker
   summary: Lightweight virtualization for microVMs.
@@ -473,6 +511,44 @@
   sources:
   - legacy:devopstools_final.md#L243
   needs_review: true
+- id: harvester
+  name: Harvester
+  summary: Kubernetes-based hyperconverged infrastructure platform integrating KubeVirt virtualization
+    and Longhorn storage.
+  official_url: https://harvesterhci.io/
+  repository_url: https://github.com/harvester/harvester
+  documentation_url: https://docs.harvesterhci.io/
+  categories:
+  - virtualization-bare-metal-homelab
+  - kubernetes-distributions-operations
+  roles:
+  - infrastructure-systems-engineer
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want an integrated bare-metal HCI appliance for virtual machines with Kubernetes-based management
+    and distributed storage.
+  avoid_when:
+  - You need a general-purpose Kubernetes distribution without the HCI appliance model or already operate
+    a supported virtualization stack.
+  deployment_models:
+  - bare-metal
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://harvesterhci.io/
+  - https://docs.harvesterhci.io/
+  - https://github.com/harvester/harvester
+  - https://github.com/harvester/harvester/blob/master/LICENSE
+  - https://www.suse.com/products/rancher/virtualization/
+  needs_review: false
 - id: hyper-v
   name: Hyper-V
   summary: Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows
@@ -739,7 +815,8 @@
   needs_review: true
 - id: localstack
   name: LocalStack
-  summary: Local cloud development platform that emulates AWS services for integration testing and offline workflows.
+  summary: Local cloud development platform that emulates AWS services for integration testing and offline
+    workflows.
   official_url: https://www.localstack.cloud
   repository_url: https://github.com/localstack/localstack
   documentation_url: https://docs.localstack.cloud
@@ -778,6 +855,42 @@
   - legacy:devopstools_final.md#L253
   needs_review: false
   repository_archived: true
+- id: metal3
+  name: Metal3
+  summary: Kubernetes-native components for provisioning and managing bare-metal hosts, including Cluster
+    API integration.
+  official_url: https://metal3.io/
+  documentation_url: https://book.metal3.io/
+  repository_url: https://github.com/metal3-io/baremetal-operator
+  categories:
+  - virtualization-bare-metal-homelab
+  - kubernetes-distributions-operations
+  roles:
+  - infrastructure-systems-engineer
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want Kubernetes APIs and Cluster API workflows to inventory, provision, and remediate bare-metal
+    machines.
+  avoid_when:
+  - Your hardware lacks supported management interfaces or an existing bare-metal provisioning platform
+    already owns lifecycle control.
+  deployment_models:
+  - kubernetes-operator
+  - bare-metal
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://metal3.io/
+  - https://book.metal3.io/
+  - https://github.com/metal3-io/baremetal-operator
+  - https://github.com/metal3-io/baremetal-operator/blob/main/LICENSE
+  needs_review: false
 - id: miniblue
   name: MiniBlue
   summary: Local Azure emulator that emulates 26+ Azure services in a single binary for development and
@@ -918,6 +1031,69 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L170
   - legacy:devopstools_final.md#L257
   needs_review: true
+- id: ovirt
+  name: oVirt
+  summary: Open-source virtualization management platform for KVM hosts, virtual machines, storage, and
+    networks.
+  official_url: https://www.ovirt.org/
+  repository_url: https://github.com/oVirt/ovirt-engine
+  documentation_url: https://www.ovirt.org/documentation/
+  categories:
+  - virtualization-bare-metal-homelab
+  roles:
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need centralized management of KVM virtualization hosts and virtual-machine infrastructure.
+  avoid_when:
+  - You require a vendor-managed virtualization service or a Kubernetes-native VM control plane.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://www.ovirt.org/
+  - https://www.ovirt.org/documentation/
+  - https://github.com/oVirt/ovirt-engine
+  - https://github.com/oVirt/ovirt-engine/blob/master/LICENSE
+  needs_review: false
+- id: pacemaker
+  name: Pacemaker
+  summary: High-availability cluster resource manager that detects failures and coordinates service recovery
+    across nodes.
+  official_url: https://clusterlabs.org/projects/pacemaker/
+  repository_url: https://github.com/ClusterLabs/pacemaker
+  documentation_url: https://clusterlabs.org/projects/pacemaker/doc/
+  categories:
+  - virtualization-bare-metal-homelab
+  - backup-disaster-recovery-resilience
+  roles:
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need policy-driven failover and fencing for stateful Linux services across a cluster of hosts.
+  avoid_when:
+  - Workload availability is already handled by a managed service or an orchestrator with its own recovery
+    model.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://clusterlabs.org/projects/pacemaker/
+  - https://clusterlabs.org/projects/pacemaker/doc/2.1/Pacemaker_Explained/singlehtml/
+  - https://github.com/ClusterLabs/pacemaker
+  - https://github.com/ClusterLabs/pacemaker/blob/main/COPYING
+  needs_review: false
 - id: podman
   name: Podman
   summary: Daemonless container engine for developing and managing containers.
@@ -1065,6 +1241,40 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L178
   - legacy:devopstools_final.md#L263
   needs_review: true
+- id: qemu
+  name: QEMU
+  summary: Machine emulator and virtualizer supporting full-system emulation, user-mode emulation, and
+    hardware-assisted virtualization.
+  official_url: https://www.qemu.org/
+  repository_url: https://github.com/qemu/qemu
+  documentation_url: https://www.qemu.org/docs/master/
+  categories:
+  - virtualization-bare-metal-homelab
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  - operate
+  use_when:
+  - You need cross-architecture emulation, virtual-machine device models, or KVM-accelerated virtual machines.
+  avoid_when:
+  - You require a complete multi-host virtualization management platform rather than a virtualization
+    engine.
+  deployment_models:
+  - local-cli
+  - self-hosted
+  license_model: oss
+  license_spdx: GPL-2.0-only
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://www.qemu.org/
+  - https://www.qemu.org/docs/master/system/introduction.html
+  - https://www.qemu.org/docs/master/about/license.html
+  - https://github.com/qemu/qemu
+  needs_review: false
 - id: rancher-desktop
   name: Rancher Desktop
   summary: Desktop Kubernetes and container management.

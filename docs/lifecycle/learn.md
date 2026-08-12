@@ -58,7 +58,7 @@
 - [HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools) — Large collection of Bash scripts, shell helpers, and automation tooling for DevOps, cloud, CI/CD, Kubernetes, and APIs.
 - [Hashnode](https://hashnode.com) — Developer blogging and publishing platform with active engineering and DevOps content.
 - [Homer](https://homer-demo.netlify.app) — Static dashboard for organizing links to self-hosted services and tools.
-- [htop](https://htop.dev) — Interactive process viewer.
+- [htop](https://htop.dev/) — Interactive process viewer for inspecting system processes and resource usage.
 - [IcePanel](https://icepanel.io) — Collaborative software architecture modeling tool for mapping systems, services, and C4-style relationships.
 - [Informatica](https://www.informatica.com) — Data integration and cloud data management solutions.
 - [IT Tools](https://it-tools.tech) — Collection of developer utility tools (converters, encoders, generators, and more) available as a self-hostable web app.

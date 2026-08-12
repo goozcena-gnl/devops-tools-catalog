@@ -57,6 +57,40 @@
   - legacy:4_Kubernetes-Containers/README.md#L180
   - legacy:devopstools_final.md#L684
   needs_review: true
+- id: k8up
+  name: K8up
+  summary: Kubernetes backup operator that schedules Restic-based PVC and application-aware backups and
+    restores.
+  official_url: https://k8up.io/
+  repository_url: https://github.com/k8up-io/k8up
+  documentation_url: https://docs.k8up.io/k8up/
+  categories:
+  - backup-disaster-recovery-resilience
+  - kubernetes-networking-storage-addons
+  roles:
+  - kubernetes-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want Kubernetes custom resources to schedule PVC and application-aware backups to Restic-compatible
+    storage.
+  avoid_when:
+  - You need cluster-resource backup beyond the documented data workflows or use storage-native snapshots
+    as the recovery system of record.
+  deployment_models:
+  - kubernetes-operator
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://docs.k8up.io/k8up/
+  - https://docs.k8up.io/k8up/explanations/architecture.html
+  - https://github.com/k8up-io/k8up
+  - https://github.com/k8up-io/k8up/blob/master/LICENSE
+  needs_review: false
 - id: kasten-k10
   name: Kasten K10
   summary: Kubernetes backup and DR platform.

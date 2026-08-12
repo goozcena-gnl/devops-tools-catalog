@@ -1,1 +1,28 @@
-[]
+- id: risk-analysis-editor
+  name: Risk Analysis Editor
+  summary: Offline browser-based editor for configurable risk registers, treatment plans, matrices, and reports.
+  official_url: https://www.risk-analysis-editor.com/
+  repository_url: https://github.com/StephaneV/Risk-Analysis-Editor
+  categories:
+  - policy-governance-compliance
+  roles:
+  - cloud-security-engineer
+  - devsecops-engineer
+  lifecycle_stages:
+  - plan
+  - secure
+  use_when:
+  - You need an offline, file-based risk-analysis workflow using EBIOS RM, GDPR DPIA, ISO 27005, or a custom scoring model.
+  avoid_when:
+  - You require collaborative workflow, centralized approvals, or integrations supplied by a governance platform.
+  deployment_models:
+  - local-web-application
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://www.risk-analysis-editor.com/
+  - https://github.com/StephaneV/Risk-Analysis-Editor
+  - https://github.com/StephaneV/Risk-Analysis-Editor/blob/main/LICENSE
+  needs_review: false

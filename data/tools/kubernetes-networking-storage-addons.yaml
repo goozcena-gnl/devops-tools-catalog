@@ -225,7 +225,8 @@
   needs_review: false
 - id: capsule
   name: Capsule
-  summary: Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
+  summary: Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service
+    namespaces.
   official_url: https://projectcapsule.dev/
   repository_url: https://github.com/projectcapsule/capsule
   documentation_url: https://projectcapsule.dev/docs/
@@ -580,6 +581,35 @@
   - legacy:4_Kubernetes-Containers/README.md#L81
   - legacy:devopstools_final.md#L544
   needs_review: true
+- id: containerized-data-importer
+  name: Containerized Data Importer
+  summary: Kubernetes service for importing, cloning, and uploading virtual-machine disk images into persistent
+    volumes for KubeVirt.
+  repository_url: https://github.com/kubevirt/containerized-data-importer
+  documentation_url: https://github.com/kubevirt/containerized-data-importer#readme
+  categories:
+  - kubernetes-networking-storage-addons
+  - virtualization-bare-metal-homelab
+  roles:
+  - kubernetes-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You operate KubeVirt and need declarative workflows for preparing VM disk images in Kubernetes storage.
+  avoid_when:
+  - You do not run KubeVirt or your VM images are provisioned entirely outside Kubernetes.
+  deployment_models:
+  - kubernetes-operator
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/kubevirt/containerized-data-importer
+  - https://github.com/kubevirt/containerized-data-importer/blob/main/LICENSE
+  needs_review: false
 - id: coredns
   name: CoreDNS
   summary: Flexible, plugin-based DNS server used as the default cluster DNS in Kubernetes.
@@ -2099,6 +2129,35 @@
   sources:
   - legacy:devopstools_final.md#L591
   needs_review: true
+- id: krouter
+  name: KRouter
+  summary: Kubernetes Gateway API implementation for HTTP, gRPC, TCP, UDP, and TLS routing.
+  official_url: https://krouter.cloud/
+  repository_url: https://github.com/link-society/krouter
+  categories:
+  - kubernetes-networking-storage-addons
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a Gateway API-native router using standard resources across the protocols documented by KRouter.
+  avoid_when:
+  - You need the broader ecosystem, support model, or service-mesh capabilities of a more established
+    gateway implementation.
+  deployment_models:
+  - kubernetes-operator
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://krouter.cloud/
+  - https://github.com/link-society/krouter
+  - https://github.com/link-society/krouter/blob/main/LICENSE
+  needs_review: false
 - id: kube-ovn
   name: Kube-OVN
   summary: CloudNative Network for KubeVirt and Multi-Tenancy.
@@ -3241,6 +3300,40 @@
   sources:
   - legacy:devopstools_final.md#L627
   needs_review: true
+- id: skupper
+  name: Skupper
+  summary: Application-networking platform that securely connects services across Kubernetes clusters
+    and local systems.
+  official_url: https://skupper.io/
+  repository_url: https://github.com/skupperproject/skupper
+  documentation_url: https://skupper.io/docs/
+  categories:
+  - kubernetes-networking-storage-addons
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  - cloud-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need service-level connectivity across clusters, clouds, and local systems without exposing each
+    service publicly.
+  avoid_when:
+  - Conventional network routing, a VPN, or an existing service mesh already meets the connectivity requirement.
+  deployment_models:
+  - kubernetes-controller
+  - local-system
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://skupper.io/docs/overview/index.html
+  - https://skupper.io/docs/
+  - https://github.com/skupperproject/skupper
+  - https://github.com/skupperproject/skupper/blob/main/LICENSE
+  needs_review: false
 - id: spinkube
   name: Spinkube
   summary: WebAssembly on Kubernetes ecosystem.

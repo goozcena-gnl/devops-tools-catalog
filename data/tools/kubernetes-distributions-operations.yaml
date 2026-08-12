@@ -757,6 +757,32 @@
   sources:
   - legacy:devopstools_final.md#L463
   needs_review: true
+- id: json2k8s
+  name: json2k8s
+  summary: Command-line utility that generates Kubernetes manifests from JSON input.
+  repository_url: https://github.com/0dotxyz/json2k8s
+  categories:
+  - kubernetes-distributions-operations
+  roles:
+  - kubernetes-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - deploy
+  use_when:
+  - You need a lightweight conversion step that turns structured JSON definitions into Kubernetes manifests.
+  avoid_when:
+  - You require a mature templating, policy, or environment-overlay system such as Kustomize or Helm.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/0dotxyz/json2k8s
+  - https://github.com/0dotxyz/json2k8s/blob/main/LICENSE
+  needs_review: false
 - id: k0s
   name: k0s
   summary: Kubernetes distribution.
@@ -1486,7 +1512,8 @@
   needs_review: true
 - id: kube-linter
   name: KubeLinter
-  summary: Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
+  summary: Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability
+    anti-patterns.
   official_url: https://docs.kubelinter.io/
   repository_url: https://github.com/stackrox/kube-linter
   documentation_url: https://docs.kubelinter.io/
@@ -1675,6 +1702,34 @@
   sources:
   - legacy:devopstools_final.md#L499
   needs_review: true
+- id: kubecm
+  name: KubeCM
+  summary: Command-line utility for merging, switching, and managing kubeconfig files and contexts.
+  official_url: https://kubecm.cloud/
+  repository_url: https://github.com/sunny0826/kubecm
+  categories:
+  - kubernetes-distributions-operations
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You manage many kubeconfig files or cluster contexts and want a dedicated CLI for organizing them.
+  avoid_when:
+  - Native kubectl context commands or centrally issued short-lived access already cover the workflow.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://kubecm.cloud/
+  - https://github.com/sunny0826/kubecm
+  - https://github.com/sunny0826/kubecm/blob/main/LICENSE
+  needs_review: false
 - id: kubeconform
   name: kubeconform
   summary: Fast Kubernetes manifest schema validation (offline schema support).
@@ -2391,6 +2446,33 @@
   - legacy:4_Kubernetes-Containers/README.md#L57
   - legacy:devopstools_final.md#L511
   needs_review: true
+- id: kubeswitch
+  name: kubeswitch
+  summary: Command-line context switcher for Kubernetes operators managing multiple clusters and kubeconfig
+    stores.
+  repository_url: https://github.com/danielfoehrKn/kubeswitch
+  categories:
+  - kubernetes-distributions-operations
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need fast context selection across many local or supported remote kubeconfig sources.
+  avoid_when:
+  - A small static kubeconfig and kubectl context switching are sufficient.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/danielfoehrKn/kubeswitch
+  - https://github.com/danielfoehrKn/kubeswitch/blob/master/LICENSE
+  needs_review: false
 - id: kubetail
   name: Kubetail
   summary: Kubernetes log exploration and tailing tool.
@@ -2626,15 +2708,19 @@
   - You need complex logic, conditionals, or loops (use Helm instead).
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-12'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L61
   - legacy:devopstools_final.md#L516
-  needs_review: true
+  - https://kustomize.io/
+  - https://github.com/kubernetes-sigs/kustomize
+  - https://github.com/kubernetes-sigs/kustomize/blob/master/LICENSE
+  needs_review: false
 - id: lens
   name: Lens
   summary: Kubernetes IDE (the former open-source core has been retired; current product is proprietary).

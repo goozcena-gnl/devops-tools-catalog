@@ -149,6 +149,38 @@
   - legacy:3_CI-CD-Automation/README.md#L78
   - legacy:devopstools_final.md#L351
   needs_review: true
+- id: dive
+  name: dive
+  summary: Command-line and terminal user interface for inspecting image layers and their contribution
+    to container image contents.
+  repository_url: https://github.com/wagoodman/dive
+  categories:
+  - containers-image-tooling
+  roles:
+  - devops-engineer
+  - release-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - build
+  - test
+  use_when:
+  - You want to inspect container image layers and identify files that contribute to inefficient image
+    construction.
+  avoid_when:
+  - You need vulnerability or policy scanning rather than layer and file analysis.
+  deployment_models:
+  - local-cli
+  - container
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L142
+  - legacy:devopstools_final.md#L236
+  - https://github.com/wagoodman/dive
+  - https://github.com/wagoodman/dive/blob/main/LICENSE
+  needs_review: false
 - id: docker-build
   name: Docker Build
   summary: Docker image build system.
