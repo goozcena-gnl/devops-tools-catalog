@@ -98,9 +98,9 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 683 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 682 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 17 |
-| `open-core` | OSS/community core with commercial features or service. | 80 |
+| `open-core` | OSS/community core with commercial features or service. | 81 |
 | `commercial` | Proprietary commercial product. | 21 |
 | `free-saas` | Hosted service with a free offering. | 0 |
 | `documentation` | Learning or documentation resource. | 97 |

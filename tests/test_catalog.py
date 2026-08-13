@@ -204,8 +204,9 @@ def test_batch04_verified_tools_are_active_with_expected_metadata() -> None:
     assert freelens["needs_review"] is False
 
     coroot = next(tool for tool in tools if tool["id"] == "coroot")
-    assert coroot["license_model"] == "oss"
+    assert coroot["license_model"] == "open-core"
     assert coroot["license_spdx"] == "Apache-2.0"
+    assert coroot["commercial_offering"] is True
     assert coroot["status"] == "active"
     assert coroot["needs_review"] is False
 

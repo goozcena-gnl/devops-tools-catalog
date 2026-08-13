@@ -134,7 +134,7 @@
 | [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | active |
 | [Continue](https://www.continue.dev) | Developer experience and local environments | oss | needs-review |
 | [Convox](https://www.convox.com) | CD, GitOps, release and promotion | oss | active |
-| [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | active |
+| [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) | Emerging and experimental tools | unknown | needs-review |
 | [cosign (sigstore)](https://docs.sigstore.dev/cosign) | Emerging and experimental tools | oss | needs-review |

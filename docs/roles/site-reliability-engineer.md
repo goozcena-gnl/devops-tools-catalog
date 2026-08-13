@@ -62,7 +62,7 @@
 | [Compute Gardener](https://www.compute-gardener.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | unknown | needs-review |
 | [CoreDNS](https://coredns.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | oss | active |
+| [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Corosync](https://corosync.github.io/corosync/) | Virtualization, bare metal and homelab, Backup, disaster recovery and resilience | oss | active |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [CronJob Guardian](https://illeniumstudios.github.io/cronjob-guardian) | Kubernetes networking, storage and add-ons | oss | needs-review |

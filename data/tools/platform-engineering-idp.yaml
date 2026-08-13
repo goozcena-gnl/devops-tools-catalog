@@ -93,7 +93,7 @@
   - https://coolify.io/
   - https://coolify.io/docs/
   - https://github.com/coollabsio/coolify
-  - https://github.com/coollabsio/coolify/blob/v4.x/LICENSE
+  - https://github.com/coollabsio/coolify/blob/main/LICENSE
   needs_review: false
 - id: dokploy
   name: Dokploy

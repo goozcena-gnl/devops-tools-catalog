@@ -296,7 +296,7 @@ Open-source observability stack for logs, metrics, traces, and session data buil
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Oss<br>
+**Model:** Open Core<br>
 **Status:** Active
 
 Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.

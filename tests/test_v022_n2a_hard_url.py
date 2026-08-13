@@ -174,6 +174,7 @@ PROTECTED_SELECTED_FIELDS = {
 }
 
 AUTHORIZED_CURRENT_DRIFT = {
+    ("coroot", "license_model"): "open-core",
     ("coroot", "license_spdx"): "Apache-2.0",
 }
 

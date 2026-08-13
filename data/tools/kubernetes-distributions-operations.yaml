@@ -1728,7 +1728,7 @@
   sources:
   - https://kubecm.cloud/
   - https://github.com/sunny0826/kubecm
-  - https://github.com/sunny0826/kubecm/blob/main/LICENSE
+  - https://github.com/sunny0826/kubecm/blob/master/LICENSE
   needs_review: false
 - id: kubeconform
   name: kubeconform

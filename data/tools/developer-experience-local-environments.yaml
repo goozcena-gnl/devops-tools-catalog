@@ -1409,7 +1409,7 @@
   sources:
   - https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview
   - https://github.com/PowerShell/PSScriptAnalyzer
-  - https://github.com/PowerShell/PSScriptAnalyzer/blob/master/LICENSE
+  - https://github.com/PowerShell/PSScriptAnalyzer/blob/main/LICENSE
   needs_review: false
 - id: pycharm
   name: PyCharm

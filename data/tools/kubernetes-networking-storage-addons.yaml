@@ -2156,7 +2156,7 @@
   sources:
   - https://krouter.cloud/
   - https://github.com/link-society/krouter
-  - https://github.com/link-society/krouter/blob/main/LICENSE
+  - https://github.com/link-society/krouter/blob/main/LICENSE.txt
   needs_review: false
 - id: kube-ovn
   name: Kube-OVN

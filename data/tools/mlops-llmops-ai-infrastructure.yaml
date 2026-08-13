@@ -970,7 +970,7 @@
   - https://graphify.com/
   - https://graphify.com/docs
   - https://github.com/Graphify-Labs/graphify
-  - https://github.com/Graphify-Labs/graphify/blob/main/LICENSE
+  - https://github.com/Graphify-Labs/graphify/blob/v8/LICENSE
   needs_review: false
 - id: haystack
   name: Haystack

@@ -437,7 +437,7 @@
   - Relying on it for production alerting — use proper monitoring stacks instead.
   deployment_models: []
   license_model: oss
-  license_spdx: GPL-2.0-only
+  license_spdx: GPL-2.0-or-later
   maturity: unknown
   status: active
   alternatives: []
@@ -448,6 +448,7 @@
   - legacy:devopstools_final.md#L97
   - https://htop.dev/
   - https://github.com/htop-dev/htop
+  - https://github.com/htop-dev/htop/blob/main/README.md#license
   - https://github.com/htop-dev/htop/blob/main/COPYING
   needs_review: false
 - id: linux-foundation-training

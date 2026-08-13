@@ -486,8 +486,9 @@
   avoid_when:
   - You need a battle-tested platform at very large scale.
   deployment_models: []
-  license_model: oss
+  license_model: open-core
   license_spdx: Apache-2.0
+  commercial_offering: true
   maturity: unknown
   status: active
   alternatives: []
@@ -498,6 +499,7 @@
   - legacy:devopstools_final.md#L701
   - https://coroot.com/
   - https://docs.coroot.com/
+  - https://docs.coroot.com/quick-start/enterprise/
   - https://github.com/coroot/coroot
   - https://github.com/coroot/coroot/blob/main/LICENSE
   needs_review: false
