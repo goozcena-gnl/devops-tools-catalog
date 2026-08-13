@@ -461,6 +461,39 @@
   - legacy:3_CI-CD-Automation/README.md#L24
   - legacy:devopstools_final.md#L318
   needs_review: true
+- id: codacy
+  name: Codacy
+  summary: Hosted code quality and security analysis platform that integrates findings and coverage into
+    repository workflows.
+  official_url: https://www.codacy.com/
+  documentation_url: https://docs.codacy.com/
+  categories:
+  - ci-build-testing
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - developer-experience-engineer
+  - release-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You want centrally managed static analysis, coverage, and pull-request feedback across repositories
+    and languages.
+  avoid_when:
+  - Repository-local linters and CI checks already provide sufficient control or source cannot be sent
+    to the service.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://www.codacy.com/
+  - https://docs.codacy.com/
+  - https://www.codacy.com/pricing
+  needs_review: false
 - id: codecov
   name: Codecov
   summary: Code coverage reporting and test insights platform.
@@ -1083,6 +1116,41 @@
   - legacy:7_Development-Collaboration/README.md#L13
   - legacy:devopstools_final.md#L1035
   needs_review: true
+- id: lychee
+  name: lychee
+  summary: Asynchronous command-line link checker for Markdown, HTML, reStructuredText, websites, and
+    other inputs.
+  official_url: https://lychee.cli.rs/
+  repository_url: https://github.com/lycheeverse/lychee
+  documentation_url: https://lychee.cli.rs/overview/
+  categories:
+  - ci-build-testing
+  - documentation-learning-career
+  roles:
+  - developer-experience-engineer
+  - release-engineer
+  lifecycle_stages:
+  - test
+  - release
+  use_when:
+  - You need repeatable broken-link checks for documentation, repositories, or websites locally and in
+    CI.
+  avoid_when:
+  - Authenticated, bot-protected, or rate-limited targets make automated HTTP results unreliable without
+    tailored exclusions.
+  deployment_models:
+  - local-cli
+  - ci-action
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://lychee.cli.rs/overview/
+  - https://lychee.cli.rs/continuous-integration/github/
+  - https://github.com/lycheeverse/lychee
+  - https://github.com/lycheeverse/lychee/blob/master/LICENSE-APACHE
+  needs_review: false
 - id: mantis
   name: Mantis
   summary: CI/CD platform for ML and data workflows.

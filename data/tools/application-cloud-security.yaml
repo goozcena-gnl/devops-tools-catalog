@@ -1,3 +1,32 @@
+- id: ad-miner
+  name: AD Miner
+  summary: Defensive Active Directory audit tool that analyzes BloodHound graph data to identify security
+    weaknesses.
+  repository_url: https://github.com/AD-Security/AD_Miner
+  categories:
+  - application-cloud-security
+  - iam-secrets-certificates
+  roles:
+  - cloud-security-engineer
+  - devsecops-engineer
+  lifecycle_stages:
+  - secure
+  use_when:
+  - You are authorized to audit Active Directory and want prioritized defensive findings from collected
+    BloodHound graph data.
+  avoid_when:
+  - You lack authorization to assess the directory or do not have the required BloodHound data collection
+    and governance controls.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/AD-Security/AD_Miner
+  - https://github.com/AD-Security/AD_Miner/blob/main/LICENSE
+  needs_review: false
 - id: aikido
   name: Aikido
   summary: Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud
@@ -253,9 +282,42 @@
   - legacy:6_Security/README.md#L60
   - legacy:devopstools_final.md#L928
   needs_review: true
+- id: bloodhound
+  name: BloodHound
+  summary: Graph-based platform for authorized analysis of identity relationships and attack paths in
+    directory and cloud environments.
+  official_url: https://bloodhound.specterops.io/
+  repository_url: https://github.com/SpecterOps/BloodHound
+  documentation_url: https://bloodhound.specterops.io/get-started/introduction
+  categories:
+  - application-cloud-security
+  - iam-secrets-certificates
+  roles:
+  - cloud-security-engineer
+  - devsecops-engineer
+  lifecycle_stages:
+  - secure
+  use_when:
+  - You are authorized to map identity relationships and prioritize remediation of risky privilege paths.
+  avoid_when:
+  - Collection is not approved or sensitive directory graph data cannot be stored and governed appropriately.
+  deployment_models:
+  - self-hosted
+  - hosted-saas
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://bloodhound.specterops.io/
+  - https://github.com/SpecterOps/BloodHound
+  - https://github.com/SpecterOps/BloodHound/blob/main/LICENSE
+  needs_review: false
 - id: bridgecrew
   name: Checkov (Bridgecrew / Prisma Cloud)
-  summary: Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
+  summary: Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma
+    Cloud ecosystem.
   official_url: https://www.checkov.io
   repository_url: https://github.com/bridgecrewio/checkov
   documentation_url: https://www.checkov.io/1.Welcome/What%20is%20Checkov.html
@@ -316,7 +378,8 @@
   needs_review: true
 - id: cai-robotsec
   name: CAI (RobotSec)
-  summary: Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
+  summary: Open cybersecurity AI framework for robotics and offensive security workflows, with commercial
+    pro licensing options.
   official_url: https://aliasrobotics.github.io/cai
   repository_url: https://github.com/aliasrobotics/cai
   documentation_url: https://aliasrobotics.github.io/cai/
@@ -549,6 +612,40 @@
   sources:
   - legacy:devopstools_final.md#L849
   needs_review: true
+- id: clamav
+  name: ClamAV
+  summary: Cross-platform antivirus engine and command-line toolkit for detecting malicious files and
+    content.
+  official_url: https://www.clamav.net/
+  repository_url: https://github.com/Cisco-Talos/clamav
+  documentation_url: https://docs.clamav.net/
+  categories:
+  - application-cloud-security
+  roles:
+  - infrastructure-systems-engineer
+  - devsecops-engineer
+  lifecycle_stages:
+  - operate
+  - secure
+  use_when:
+  - You need scriptable file scanning, mail-gateway scanning, or antivirus checks in Linux and Unix-oriented
+    systems.
+  avoid_when:
+  - You require a complete managed endpoint detection and response platform with centralized response
+    workflows.
+  deployment_models:
+  - local-cli
+  - self-hosted
+  license_model: oss
+  license_spdx: GPL-2.0-only
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://www.clamav.net/
+  - https://docs.clamav.net/
+  - https://github.com/Cisco-Talos/clamav
+  - https://github.com/Cisco-Talos/clamav/blob/main/COPYING.txt
+  needs_review: false
 - id: codeql
   name: CodeQL
   summary: Semantic code analysis for vulnerabilities.
@@ -1694,6 +1791,41 @@
   - legacy:6_Security/README.md#L31
   - legacy:devopstools_final.md#L876
   needs_review: true
+- id: kubearmor
+  name: KubeArmor
+  summary: Runtime security enforcement system for applying workload policies through Linux Security Modules.
+  official_url: https://kubearmor.io/
+  repository_url: https://github.com/kubearmor/KubeArmor
+  documentation_url: https://docs.kubearmor.io/
+  categories:
+  - application-cloud-security
+  - kubernetes-networking-storage-addons
+  roles:
+  - cloud-security-engineer
+  - devsecops-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - secure
+  use_when:
+  - You need declarative runtime hardening and visibility for Kubernetes or host workloads using supported
+    Linux Security Modules.
+  avoid_when:
+  - Your nodes cannot provide the required kernel security mechanisms or you only need image-time scanning.
+  deployment_models:
+  - kubernetes
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://kubearmor.io/
+  - https://docs.kubearmor.io/
+  - https://github.com/kubearmor/KubeArmor
+  - https://github.com/kubearmor/KubeArmor/blob/main/LICENSE
+  needs_review: false
 - id: lotp-living-off-the-pipeline
   name: LOTP (Living Off the Pipeline)
   summary: Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow injection
@@ -2318,6 +2450,42 @@
   sources:
   - legacy:devopstools_final.md#L890
   needs_review: true
+- id: osquery
+  name: osquery
+  summary: Operating-system instrumentation framework that exposes host state through a SQL interface.
+  official_url: https://osquery.io/
+  repository_url: https://github.com/osquery/osquery
+  documentation_url: https://osquery.readthedocs.io/
+  categories:
+  - application-cloud-security
+  - monitoring-metrics-logs-tracing
+  roles:
+  - cloud-security-engineer
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  - secure
+  use_when:
+  - You want queryable endpoint inventory, configuration, and event data for fleet security or operations
+    workflows.
+  avoid_when:
+  - You need a complete fleet-management and response service without deploying additional orchestration
+    around osquery.
+  deployment_models:
+  - endpoint-agent
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0 OR GPL-2.0-only
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://osquery.io/
+  - https://osquery.readthedocs.io/
+  - https://github.com/osquery/osquery
+  - https://github.com/osquery/osquery/blob/master/LICENSE
+  needs_review: false
 - id: ossim
   name: OSSIM
   summary: Open Source Security Information and Event Management (SIEM) platform.

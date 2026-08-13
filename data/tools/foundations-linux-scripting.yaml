@@ -118,6 +118,85 @@
   - legacy:1_Foundational-Skills/README.md#L15
   - legacy:devopstools_final.md#L93
   needs_review: true
+- id: bmon
+  name: bmon
+  summary: Terminal bandwidth monitor and rate estimator for network interfaces.
+  official_url: https://jafaral.github.io/bmon/
+  repository_url: https://github.com/Jafaral/bmon
+  categories:
+  - foundations-linux-scripting
+  roles:
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need an interactive terminal view of per-interface traffic rates while troubleshooting a host.
+  avoid_when:
+  - You need retained network telemetry, alerting, or fleet-wide dashboards.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: BSD-2-Clause
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://jafaral.github.io/bmon/
+  - https://github.com/Jafaral/bmon
+  - https://github.com/Jafaral/bmon/blob/master/LICENSE.BSD
+  needs_review: false
+- id: btop
+  name: btop
+  summary: Terminal resource monitor for CPU, memory, disks, networks, and processes.
+  repository_url: https://github.com/aristocratos/btop
+  categories:
+  - foundations-linux-scripting
+  roles:
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want an interactive terminal dashboard for diagnosing resource pressure on an individual system.
+  avoid_when:
+  - You require durable metrics, automated alerts, or centralized fleet monitoring.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/aristocratos/btop
+  - https://github.com/aristocratos/btop/blob/main/LICENSE
+  needs_review: false
+- id: duf
+  name: duf
+  summary: Command-line utility that presents disk usage and free-space information for mounted filesystems.
+  repository_url: https://github.com/muesli/duf
+  categories:
+  - foundations-linux-scripting
+  roles:
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - operate
+  use_when:
+  - You need a readable interactive overview of local and network filesystem capacity from a terminal.
+  avoid_when:
+  - You need historical capacity trends or alerting across multiple hosts.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/muesli/duf
+  - https://github.com/muesli/duf/blob/master/LICENSE
+  needs_review: false
 - id: exercism
   name: Exercism
   summary: Language practice tracks across many programming languages.
@@ -338,8 +417,9 @@
   needs_review: true
 - id: htop
   name: htop
-  summary: Interactive process viewer.
-  official_url: https://htop.dev
+  summary: Interactive process viewer for inspecting system processes and resource usage.
+  official_url: https://htop.dev/
+  repository_url: https://github.com/htop-dev/htop
   categories:
   - foundations-linux-scripting
   subcategories:
@@ -357,15 +437,20 @@
   - Relying on it for production alerting — use proper monitoring stacks instead.
   deployment_models: []
   license_model: oss
+  license_spdx: GPL-2.0-or-later
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-12'
   sources:
   - legacy:1_Foundational-Skills/README.md#L18
   - legacy:devopstools_final.md#L97
-  needs_review: true
+  - https://htop.dev/
+  - https://github.com/htop-dev/htop
+  - https://github.com/htop-dev/htop/blob/main/README.md#license
+  - https://github.com/htop-dev/htop/blob/main/COPYING
+  needs_review: false
 - id: linux-foundation-training
   name: Linux Foundation Training
   summary: Official Linux and open source training resources.
@@ -426,6 +511,38 @@
   - legacy:1_Foundational-Skills/README.md#L20
   - legacy:devopstools_final.md#L99
   needs_review: true
+- id: nodejs
+  name: Node.js
+  summary: Cross-platform JavaScript runtime used to build command-line tools, services, and automation.
+  official_url: https://nodejs.org/en
+  repository_url: https://github.com/nodejs/node
+  documentation_url: https://nodejs.org/docs/latest/api/
+  categories:
+  - foundations-linux-scripting
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - build
+  - operate
+  use_when:
+  - You build JavaScript or TypeScript automation, development tooling, or server-side services.
+  avoid_when:
+  - Your runtime standard or workload requirements call for another language ecosystem.
+  deployment_models:
+  - local-runtime
+  - self-hosted
+  license_model: oss
+  license_spdx: MIT
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://nodejs.org/en
+  - https://nodejs.org/docs/latest/api/
+  - https://github.com/nodejs/node
+  - https://github.com/nodejs/node/blob/main/LICENSE
+  needs_review: false
 - id: python-official-tutorial
   name: Python Official Tutorial
   summary: Official Python documentation and tutorial.

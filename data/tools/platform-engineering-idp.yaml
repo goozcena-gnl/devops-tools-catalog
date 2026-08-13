@@ -59,6 +59,77 @@
   - legacy:7_Development-Collaboration/README.md#L98
   - legacy:devopstools_final.md#L1144
   needs_review: true
+- id: coolify
+  name: Coolify
+  summary: Self-hostable application platform for deploying code, containers, databases, and packaged
+    services to user-managed servers.
+  official_url: https://coolify.io/
+  repository_url: https://github.com/coollabsio/coolify
+  documentation_url: https://coolify.io/docs/
+  categories:
+  - platform-engineering-idp
+  - cd-gitops-release-promotion
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a Git-integrated self-hosted application platform on servers you control, with an optional
+    managed service.
+  avoid_when:
+  - You require a hyperscale managed platform or prefer direct orchestration through Kubernetes or infrastructure
+    as code.
+  deployment_models:
+  - self-hosted
+  - hosted-saas
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://coolify.io/
+  - https://coolify.io/docs/
+  - https://github.com/coollabsio/coolify
+  - https://github.com/coollabsio/coolify/blob/main/LICENSE
+  needs_review: false
+- id: dokploy
+  name: Dokploy
+  summary: Self-hostable platform for deploying applications, Docker Compose stacks, and databases across
+    user-managed servers.
+  official_url: https://dokploy.com/
+  repository_url: https://github.com/Dokploy/dokploy
+  documentation_url: https://docs.dokploy.com/
+  categories:
+  - platform-engineering-idp
+  - cd-gitops-release-promotion
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a self-hosted control plane for Git, Dockerfile, buildpack, or Docker Compose deployments
+    on your servers.
+  avoid_when:
+  - You need Kubernetes-native orchestration or do not want to operate the platform and its target servers.
+  deployment_models:
+  - self-hosted
+  - hosted-saas
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://dokploy.com/
+  - https://docs.dokploy.com/
+  - https://github.com/Dokploy/dokploy
+  - https://github.com/Dokploy/dokploy/blob/canary/LICENSE.MD
+  needs_review: false
 - id: garden
   name: Garden
   summary: Developer-first automation for building/testing/deploying cloud-native apps.
@@ -235,3 +306,72 @@
   - legacy:7_Development-Collaboration/README.md#L102
   - legacy:devopstools_final.md#L1150
   needs_review: true
+- id: railway
+  name: Railway
+  summary: Managed application platform for building, deploying, networking, scaling, and observing services
+    from source repositories or containers.
+  official_url: https://railway.com/
+  documentation_url: https://docs.railway.com/
+  categories:
+  - platform-engineering-idp
+  - cd-gitops-release-promotion
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - monitor
+  use_when:
+  - You want a managed platform with repository-driven deployments, preview environments, networking,
+    databases, and service telemetry.
+  avoid_when:
+  - You require full infrastructure control, self-hosting, or cloud-provider-specific primitives not exposed
+    by the platform.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://railway.com/
+  - https://docs.railway.com/
+  - https://railway.com/pricing
+  needs_review: false
+- id: vercel
+  name: Vercel
+  summary: Managed web application platform providing Git-based builds, preview deployments, production
+    hosting, and serverless infrastructure.
+  official_url: https://vercel.com/
+  documentation_url: https://vercel.com/docs/vercel-platform
+  categories:
+  - platform-engineering-idp
+  - cd-gitops-release-promotion
+  - serverless-edge-webassembly
+  roles:
+  - platform-engineer
+  - developer-experience-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  - deploy
+  use_when:
+  - You want Git-triggered preview and production deployments for supported web frameworks on managed
+    infrastructure.
+  avoid_when:
+  - You need self-hosting, unrestricted runtime control, or workloads outside the platform's web and function
+    model.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://vercel.com/
+  - https://vercel.com/docs/vercel-platform
+  - https://vercel.com/docs/deployments/overview
+  - https://vercel.com/pricing
+  needs_review: false

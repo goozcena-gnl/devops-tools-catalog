@@ -292,6 +292,72 @@
   sources:
   - legacy:devopstools_final.md#L287
   needs_review: true
+- id: pgvector
+  name: pgvector
+  summary: PostgreSQL extension that adds vector data types, similarity search, and vector indexes.
+  repository_url: https://github.com/pgvector/pgvector
+  categories:
+  - databases-caching-data-infrastructure
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - infrastructure-systems-engineer
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You want vector similarity search alongside relational application data in PostgreSQL.
+  avoid_when:
+  - You need a dedicated vector database's independent scaling, distribution, or specialized operational
+    model.
+  deployment_models:
+  - database-extension
+  - self-hosted
+  license_model: oss
+  license_spdx: PostgreSQL
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/pgvector/pgvector
+  - https://github.com/pgvector/pgvector/blob/master/LICENSE
+  needs_review: false
+- id: qdrant
+  name: Qdrant
+  summary: Vector database and similarity-search engine available for self-hosted and managed deployments.
+  official_url: https://qdrant.tech/
+  repository_url: https://github.com/qdrant/qdrant
+  documentation_url: https://qdrant.tech/documentation/
+  categories:
+  - databases-caching-data-infrastructure
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need filtered vector similarity search for retrieval or recommendation workloads with self-hosted
+    and managed options.
+  avoid_when:
+  - A relational database extension meets the scale and operational requirements with less infrastructure.
+  deployment_models:
+  - self-hosted
+  - hosted-saas
+  - hybrid-cloud
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://qdrant.tech/documentation/
+  - https://qdrant.tech/documentation/overview/
+  - https://github.com/qdrant/qdrant
+  - https://github.com/qdrant/qdrant/blob/master/LICENSE
+  needs_review: false
 - id: rabbitmq
   name: RabbitMQ
   summary: Open-source message broker and streaming platform for reliable asynchronous communication.

@@ -148,3 +148,35 @@
   - legacy:7_Development-Collaboration/README.md#L67
   - legacy:devopstools_final.md#L1105
   needs_review: true
+- id: tekton-chains
+  name: Tekton Chains
+  summary: Tekton controller that records, signs, and stores supply-chain metadata for pipeline task runs.
+  official_url: https://tekton.dev/docs/chains/
+  repository_url: https://github.com/tektoncd/chains
+  documentation_url: https://tekton.dev/docs/chains/
+  categories:
+  - software-supply-chain-security
+  - ci-build-testing
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - build
+  - release
+  - secure
+  use_when:
+  - You run Tekton Pipelines and need signed provenance or attestations for task and pipeline executions.
+  avoid_when:
+  - Your CI system is not Tekton-based or another provenance service already signs and stores equivalent metadata.
+  deployment_models:
+  - kubernetes-controller
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://tekton.dev/docs/chains/
+  - https://github.com/tektoncd/chains
+  - https://github.com/tektoncd/chains/blob/main/LICENSE
+  needs_review: false

@@ -434,6 +434,36 @@
   - legacy:devopstools_final.md#L280
   - legacy:devopstools_final.md#L741
   needs_review: false
+- id: clickstack
+  name: ClickStack
+  summary: Open-source observability stack for logs, metrics, traces, and session data built on ClickHouse
+    and HyperDX.
+  official_url: https://clickhouse.com/clickstack
+  documentation_url: https://clickhouse.com/docs/use-cases/observability/clickstack/overview
+  categories:
+  - monitoring-metrics-logs-tracing
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want a ClickHouse-backed OpenTelemetry observability stack with an integrated HyperDX user interface.
+  avoid_when:
+  - You only need the ClickHouse database or prefer independently assembled observability components.
+  deployment_models:
+  - self-hosted
+  - hosted-saas
+  license_model: open-core
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://clickhouse.com/clickstack
+  - https://clickhouse.com/docs/use-cases/observability/clickstack/overview
+  - https://clickhouse.com/blog/clickstack-a-high-performance-oss-observability-stack-on-clickhouse
+  needs_review: false
 - id: coroot
   name: Coroot
   summary: Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
@@ -456,16 +486,22 @@
   avoid_when:
   - You need a battle-tested platform at very large scale.
   deployment_models: []
-  license_model: oss
-  license_spdx: AGPL-3.0-only
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
   maturity: unknown
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-12'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L9
   - legacy:devopstools_final.md#L701
+  - https://coroot.com/
+  - https://docs.coroot.com/
+  - https://docs.coroot.com/quick-start/enterprise/
+  - https://github.com/coroot/coroot
+  - https://github.com/coroot/coroot/blob/main/LICENSE
   needs_review: false
 - id: cortex
   name: Cortex
@@ -526,6 +562,36 @@
   - legacy:5_Monitoring-Observability/README.md#L10
   - legacy:devopstools_final.md#L702
   needs_review: true
+- id: docker-otel-lgtm
+  name: Docker OpenTelemetry LGTM
+  summary: Single-container OpenTelemetry backend bundling Grafana, Loki, Tempo, Mimir, and an OpenTelemetry
+    Collector for development and demos.
+  repository_url: https://github.com/grafana/docker-otel-lgtm
+  categories:
+  - monitoring-metrics-logs-tracing
+  - developer-experience-local-environments
+  roles:
+  - observability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  - monitor
+  use_when:
+  - You need a disposable local OpenTelemetry backend to inspect traces, metrics, and logs with Grafana
+    tooling.
+  avoid_when:
+  - You need an independently scalable, durable, or production-supported observability deployment.
+  deployment_models:
+  - container
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/grafana/docker-otel-lgtm
+  - https://github.com/grafana/docker-otel-lgtm/blob/main/LICENSE
+  needs_review: false
 - id: dozzle
   name: Dozzle
   summary: Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes
@@ -1888,6 +1954,37 @@
   - legacy:5_Monitoring-Observability/README.md#L19
   - legacy:devopstools_final.md#L714
   needs_review: true
+- id: prometheus-pushgateway
+  name: Prometheus Pushgateway
+  summary: Metrics cache that accepts pushed metrics from short-lived and batch jobs for Prometheus scraping.
+  official_url: https://prometheus.io/docs/practices/pushing/
+  repository_url: https://github.com/prometheus/pushgateway
+  documentation_url: https://github.com/prometheus/pushgateway#readme
+  categories:
+  - monitoring-metrics-logs-tracing
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You must expose service-level metrics from short-lived batch jobs that Prometheus cannot scrape while
+    they run.
+  avoid_when:
+  - A normal pull target is available or pushed metrics would lose useful per-instance lifecycle semantics.
+  deployment_models:
+  - self-hosted
+  - container
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://prometheus.io/docs/practices/pushing/
+  - https://github.com/prometheus/pushgateway
+  - https://github.com/prometheus/pushgateway/blob/master/LICENSE
+  needs_review: false
 - id: quickwit
   name: Quickwit
   summary: Distributed log search/indexing built around fast ingestion and cost control.
@@ -2132,6 +2229,34 @@
   - legacy:5_Monitoring-Observability/README.md#L21
   - legacy:devopstools_final.md#L717
   needs_review: true
+- id: slok
+  name: Slok
+  summary: Kubernetes operator that manages service-level objectives and tracks error budgets.
+  repository_url: https://github.com/slok-operator/slok
+  categories:
+  - monitoring-metrics-logs-tracing
+  - sre-incident-response-on-call
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want Kubernetes custom resources to define SLOs and calculate error-budget status.
+  avoid_when:
+  - Your SLO definitions and reporting are already managed outside Kubernetes.
+  deployment_models:
+  - kubernetes-operator
+  license_model: oss
+  license_spdx: Apache-2.0
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://github.com/slok-operator/slok
+  - https://github.com/slok-operator/slok/blob/main/LICENSE
+  needs_review: false
 - id: syslog-ng
   name: syslog-ng
   summary: Syslog daemon/log collector with parsing and multiple destinations.
@@ -2317,6 +2442,39 @@
   - legacy:5_Monitoring-Observability/README.md#L23
   - legacy:devopstools_final.md#L719
   needs_review: true
+- id: uptrace
+  name: Uptrace
+  summary: OpenTelemetry-native APM platform for storing and correlating traces, metrics, and logs.
+  official_url: https://uptrace.dev/
+  repository_url: https://github.com/uptrace/uptrace
+  documentation_url: https://uptrace.dev/get/hosted
+  categories:
+  - monitoring-metrics-logs-tracing
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You want a self-hosted or managed OpenTelemetry backend with correlated application telemetry.
+  avoid_when:
+  - You do not want to operate its ClickHouse, PostgreSQL, and Redis dependencies and do not want the
+    hosted service.
+  deployment_models:
+  - self-hosted
+  - hosted-saas
+  license_model: open-core
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  status: active
+  verified_on: '2026-08-12'
+  sources:
+  - https://uptrace.dev/
+  - https://uptrace.dev/get/hosted
+  - https://github.com/uptrace/uptrace
+  - https://github.com/uptrace/uptrace/blob/master/LICENSE
+  needs_review: false
 - id: vector
   name: Vector
   summary: High-performance observability data pipeline (logs/metrics/traces) as an alternative to Fluent

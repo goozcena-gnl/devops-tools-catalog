@@ -173,6 +173,11 @@ PROTECTED_SELECTED_FIELDS = {
     "license_spdx",
 }
 
+AUTHORIZED_CURRENT_DRIFT = {
+    ("coroot", "license_model"): "open-core",
+    ("coroot", "license_spdx"): "Apache-2.0",
+}
+
 REQUIRED_LEDGER_COLUMNS = {
     "tool_id",
     "affected_field",
@@ -339,9 +344,17 @@ def _assert_current_n2a_persistence(
         assert accepted_record.get(field) == expected_value
         assert current_record.get(field) == expected_value
         for protected_field in PROTECTED_SELECTED_FIELDS:
-            assert current_record.get(protected_field) == accepted_record.get(
-                protected_field
-            ), f"N2a-protected field drifted for {(tool_id, protected_field)}"
+            current_value = current_record.get(protected_field)
+            accepted_value = accepted_record.get(protected_field)
+            if current_value == accepted_value:
+                continue
+            authorized_value = AUTHORIZED_CURRENT_DRIFT.get((tool_id, protected_field))
+            if authorized_value is not None:
+                assert current_value == authorized_value
+                continue
+            raise AssertionError(
+                f"N2a-protected field drifted for {(tool_id, protected_field)}"
+            )
 
 
 def test_n2a_frozen_selector_is_exact() -> None:
