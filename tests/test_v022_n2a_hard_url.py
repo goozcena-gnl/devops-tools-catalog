@@ -347,9 +347,7 @@ def _assert_current_n2a_persistence(
             accepted_value = accepted_record.get(protected_field)
             if current_value == accepted_value:
                 continue
-            authorized_value = AUTHORIZED_CURRENT_DRIFT.get(
-                (tool_id, protected_field)
-            )
+            authorized_value = AUTHORIZED_CURRENT_DRIFT.get((tool_id, protected_field))
             if authorized_value is not None:
                 assert current_value == authorized_value
                 continue
