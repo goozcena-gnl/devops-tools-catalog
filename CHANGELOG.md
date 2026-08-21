@@ -2,6 +2,36 @@
 
 All notable catalogue architecture and governance changes are recorded here. Individual tool metadata changes remain visible in Git history and pull requests.
 
+## [0.3.0] - 2026-08-21
+
+### Scope
+
+- Expanded the canonical catalogue from the v0.2.2 baseline to 1,229 records.
+- Incorporated two major evidence-reviewed candidate waves.
+- Preserved deterministic documentation generation and schema compatibility.
+
+### Catalogue expansion
+
+- Added 54 canonical records through PR #39.
+- Added 83 canonical records through PR #40.
+- Incorporated evidence-backed updates to existing records.
+- Reconciled duplicate, alias, hosted-service, OSS/open-core, commercial, and lifecycle classifications explicitly.
+
+### Quality and governance
+
+- Completed independent semantic review and remediation before merge.
+- Incorporated SPDX licence and offering-model corrections.
+- Aligned contributor documentation with both Ruff lint and format CI checks through PR #41.
+- Kept catalogue generation and validation deterministic.
+
+### Remaining evidence boundaries
+
+- The RepoD candidate remains held as `NEEDS_REVIEW` because authoritative upstream repository, licence, and ownership evidence is insufficient.
+- Repository issue #2 remains open for unresolved catalogue URL review.
+- Branch-protection controls remain unavailable for this private repository on the current GitHub plan.
+
+This release does not claim that all catalogue evidence debt is resolved.
+
 ## [0.2.2] - 2026-08-12
 
 Publication metadata finalized on 2026-08-12 after the approved v0.2.2 carryover review sequence. Tag and GitHub Release publication remain deferred until this release commit is merged and the repository owner separately approves publication.

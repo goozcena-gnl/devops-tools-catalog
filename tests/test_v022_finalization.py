@@ -16,7 +16,7 @@ MANIFEST = ROOT / "docs/maintenance/v0.2.2-carryover-execution-manifest.yaml"
 COMPLETION = ROOT / "docs/maintenance/v0.2.2-remediation-completion.md"
 RELEASE_NOTES = ROOT / "docs/releases/v0.2.2-notes.md"
 CHANGELOG = ROOT / "CHANGELOG.md"
-PYPROJECT = ROOT / "pyproject.toml"
+RELEASE_TAG = "v0.2.2"
 
 SOURCE_SHA = "dc7cfd457a7c9638b1132048792092c8b5e3ae02"
 IMPLEMENTATION_SHA = "8c07b17be553147a219c5227cb20e9d66210552b"
@@ -197,7 +197,14 @@ def _ledger_rows(path: Path) -> list[dict[str, str]]:
 
 
 def test_release_metadata_and_boundary_statements() -> None:
-    project = tomllib.loads(PYPROJECT.read_text(encoding="utf-8"))
+    result = subprocess.run(
+        ["git", "show", f"{RELEASE_TAG}:pyproject.toml"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    project = tomllib.loads(result.stdout)
     assert project["project"]["version"] == "0.2.2"
 
     changelog = CHANGELOG.read_text(encoding="utf-8")
