@@ -38,6 +38,7 @@ python -m venv .venv
 .venv/bin/python -m scripts.validate_catalog
 .venv/bin/python -m pytest
 .venv/bin/python -m ruff check scripts tests
+.venv/bin/python -m ruff format --check scripts tests
 ```
 
 Run `python -m scripts.generate_docs --check` a second time to confirm deterministic output. Full network link audits are intentionally separate:
