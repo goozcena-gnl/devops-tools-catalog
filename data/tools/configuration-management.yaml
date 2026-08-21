@@ -178,6 +178,41 @@
   - legacy:devopstools_final.md#L199
   needs_review: true
   repository_archived: true
+- id: katello
+  name: Katello
+  summary: Foreman plugin for repository synchronization, content views, lifecycle environments, and host
+    patch content.
+  official_url: https://theforeman.org/plugins/katello/
+  repository_url: https://github.com/Katello/katello
+  repository_archived: false
+  documentation_url: https://docs.theforeman.org/
+  categories:
+  - configuration-management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You operate Foreman and need governed package and content promotion across managed hosts.
+  avoid_when:
+  - Avoid it when Foreman's host provisioning alone is sufficient or the Pulp-backed content platform
+    overhead is unwarranted.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: GPL-2.0-only
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://theforeman.org/plugins/katello/
+  - https://docs.theforeman.org/
+  - https://github.com/Katello/katello
+  needs_review: false
 - id: kolla-ansible
   name: Kolla-Ansible
   summary: Ansible playbooks for deploying OpenStack.
@@ -357,3 +392,38 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L90
   - legacy:devopstools_final.md#L205
   needs_review: true
+- id: uyuni
+  name: Uyuni
+  summary: Open-source systems management platform for software channels, configuration, patching, and
+    client lifecycle.
+  official_url: https://www.uyuni-project.org/
+  repository_url: https://github.com/uyuni-project/uyuni
+  repository_archived: false
+  documentation_url: https://www.uyuni-project.org/uyuni-docs/
+  categories:
+  - configuration-management
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need centralized Linux fleet patch, package, configuration, and lifecycle management.
+  avoid_when:
+  - Avoid it when the supported distribution matrix or server operating model does not fit the managed
+    fleet.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: GPL-2.0-only
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.uyuni-project.org/
+  - https://www.uyuni-project.org/uyuni-docs/
+  - https://github.com/uyuni-project/uyuni
+  needs_review: false

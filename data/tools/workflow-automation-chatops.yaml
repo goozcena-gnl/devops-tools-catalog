@@ -114,6 +114,40 @@
   sources:
   - legacy:devopstools_final.md#L1022
   needs_review: true
+- id: gotify
+  name: Gotify
+  summary: Self-hosted server and clients for receiving application push notifications.
+  official_url: https://gotify.net/
+  repository_url: https://github.com/gotify/server
+  repository_archived: false
+  documentation_url: https://gotify.net/docs/
+  categories:
+  - workflow-automation-chatops
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  use_when:
+  - You need a simple self-hosted push-notification endpoint for operational automation.
+  avoid_when:
+  - Avoid it when incident routing, escalation, acknowledgement, and on-call schedules are required.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://gotify.net/
+  - https://gotify.net/docs/
+  - https://github.com/gotify/server
+  needs_review: false
 - id: jira
   name: Jira
   summary: Issue tracking and project management platform by Atlassian.

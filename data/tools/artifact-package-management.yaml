@@ -450,6 +450,42 @@
   - legacy:3_CI-CD-Automation/README.md#L128
   - legacy:devopstools_final.md#L381
   needs_review: true
+- id: pulp
+  name: Pulp
+  summary: Repository platform for managing and distributing software packages and other content types
+    through plugins.
+  official_url: https://pulpproject.org/
+  repository_url: https://github.com/pulp/pulpcore
+  repository_archived: false
+  documentation_url: https://pulpproject.org/pulpcore/
+  categories:
+  - artifact-package-management
+  roles:
+  - devops-engineer
+  - release-engineer
+  - devsecops-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - You need a programmable, self-hosted content repository supporting multiple package ecosystems.
+  avoid_when:
+  - Avoid it when a simple static registry is sufficient and Pulp's plugin and worker operations would
+    add unnecessary complexity.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: GPL-2.0-or-later
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://pulpproject.org/
+  - https://pulpproject.org/pulpcore/
+  - https://github.com/pulp/pulpcore
+  needs_review: false
 - id: quay
   name: Quay
   summary: Container registry for building, storing, and distributing images.
@@ -482,3 +518,73 @@
   - legacy:3_CI-CD-Automation/README.md#L130
   - legacy:devopstools_final.md#L382
   needs_review: true
+- id: repod
+  name: Repod
+  summary: Package repository manager for governing APT, RPM, and APK artifacts with security metadata
+    and audit trails.
+  official_url: https://getrepod.com/
+  repository_url: https://github.com/getautoflow/repod
+  repository_archived: false
+  documentation_url: https://docs.getrepod.com/
+  categories:
+  - artifact-package-management
+  roles:
+  - devops-engineer
+  - release-engineer
+  - devsecops-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - You need a self-hosted Linux package repository with signing, scanning, SBOM, and approval workflows.
+  avoid_when:
+  - Avoid production adoption until the project's licence and sustained maintenance history are verified.
+  deployment_models:
+  - self-hosted
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://getrepod.com/
+  - https://docs.getrepod.com/
+  - https://github.com/getautoflow/repod
+  needs_review: true
+- id: yarn
+  name: Yarn
+  summary: JavaScript package manager with lockfiles, workspaces, and configurable dependency-installation
+    modes.
+  official_url: https://yarnpkg.com/
+  repository_url: https://github.com/yarnpkg/berry
+  repository_archived: false
+  documentation_url: https://yarnpkg.com/getting-started
+  categories:
+  - artifact-package-management
+  roles:
+  - devops-engineer
+  - release-engineer
+  - devsecops-engineer
+  lifecycle_stages:
+  - build
+  - release
+  use_when:
+  - You need deterministic JavaScript dependency management across projects or workspaces.
+  avoid_when:
+  - Avoid introducing it alongside another package manager without enforcing one lockfile and workflow.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: BSD-2-Clause
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://yarnpkg.com/
+  - https://yarnpkg.com/getting-started
+  - https://github.com/yarnpkg/berry
+  needs_review: false

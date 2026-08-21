@@ -1,3 +1,36 @@
+- id: asciinema
+  name: asciinema
+  summary: Terminal session recorder and player that stores text-based cast files.
+  official_url: https://asciinema.org/
+  repository_url: https://github.com/asciinema/asciinema
+  repository_archived: false
+  categories:
+  - documentation-learning-career
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You need reproducible terminal demonstrations for documentation, training, or incident handoff.
+  avoid_when:
+  - Avoid recording sessions that may expose credentials, private paths, customer data, or other sensitive
+    terminal output.
+  deployment_models:
+  - local
+  - saas
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://asciinema.org/
+  - https://github.com/asciinema/asciinema
+  needs_review: false
 - id: awesome-devops
   name: Awesome DevOps
   summary: Curated DevOps resources.
@@ -265,6 +298,36 @@
   sources:
   - legacy:10_Miscellaneous/README.md#L26
   - legacy:devopstools_final.md#L1279
+  needs_review: true
+- id: certgames
+  name: CertGames
+  summary: Hosted cybersecurity learning platform backed by a project-based training repository.
+  official_url: https://certgames.com/
+  repository_url: https://github.com/CarterPerez-dev/Cybersecurity-Projects
+  repository_archived: false
+  categories:
+  - documentation-learning-career
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You want project-oriented security learning in a purpose-built training environment.
+  avoid_when:
+  - Avoid treating training exercises as authorization to assess systems outside the provided lab scope.
+  deployment_models:
+  - saas
+  license_model: documentation
+  maturity: emerging
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://certgames.com/
+  - https://github.com/CarterPerez-dev/Cybersecurity-Projects
   needs_review: true
 - id: claude-code-cheat-sheet
   name: Claude Code Cheat Sheet
@@ -552,6 +615,43 @@
   - legacy:1_Foundational-Skills/README.md#L46
   - legacy:devopstools_final.md#L126
   needs_review: true
+- id: docmost
+  name: Docmost
+  summary: Collaborative wiki and documentation platform with real-time editing, spaces, permissions,
+    and search.
+  official_url: https://docmost.com/
+  repository_url: https://github.com/docmost/docmost
+  repository_archived: false
+  documentation_url: https://docmost.com/docs/
+  categories:
+  - documentation-learning-career
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You need a self-hosted team knowledge base with collaborative editing and structured spaces.
+  avoid_when:
+  - Avoid it when required governance features are enterprise-only or a Git-native documentation workflow
+    is preferred.
+  deployment_models:
+  - self-hosted
+  - saas
+  license_model: open-core
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://docmost.com/
+  - https://docmost.com/docs/
+  - https://github.com/docmost/docmost
+  needs_review: false
 - id: dsoxlab
   name: dsoxlab
   summary: 'DevSecOps XL Labs: domain-agnostic CLI framework for driving hands-on learning labs across
@@ -1273,6 +1373,33 @@
   sources:
   - legacy:devopstools_final.md#L1292
   needs_review: true
+- id: root-me
+  name: Root Me
+  summary: Hosted learning platform offering cybersecurity challenges and training resources.
+  official_url: https://www.root-me.org/
+  categories:
+  - documentation-learning-career
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - learn
+  use_when:
+  - You need hands-on security exercises in a purpose-built learning environment.
+  avoid_when:
+  - Avoid treating challenge techniques as authorization to test third-party systems.
+  deployment_models:
+  - saas
+  license_model: documentation
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.root-me.org/
+  needs_review: false
 - id: sysadmin-to-sre-roadmap
   name: SysAdmin to SRE Roadmap
   summary: French roadmap for progressing from SysAdmin to SRE/DevOps across Linux, Kubernetes, IaC, CI/CD,

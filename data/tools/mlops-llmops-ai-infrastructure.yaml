@@ -1784,6 +1784,38 @@
   - legacy:9_AI-MLOps/README.md#L8
   - legacy:devopstools_final.md#L1184
   needs_review: true
+- id: model-express
+  name: Model Express
+  summary: Rust service that stages model data near inference systems to reduce startup time.
+  repository_url: https://github.com/ai-dynamo/modelexpress
+  repository_archived: false
+  categories:
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - platform-engineer
+  - cloud-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need to reduce model-serving cold starts by pre-positioning model artifacts beside inference runtimes.
+  avoid_when:
+  - Avoid it when model storage, integrity, and cache lifecycle are already handled by the serving platform.
+  deployment_models:
+  - self-hosted
+  - kubernetes
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: emerging
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/ai-dynamo/modelexpress
+  needs_review: false
 - id: nvidia-ai-cluster-runtime
   name: NVIDIA AI Cluster Runtime
   summary: NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
@@ -1874,6 +1906,38 @@
   sources:
   - legacy:9_AI-MLOps/README.md#L34
   - legacy:devopstools_final.md#L1207
+  needs_review: true
+- id: omniroute
+  name: OmniRoute
+  summary: Self-hosted gateway that presents multiple AI model providers behind one routing and fallback
+    endpoint.
+  official_url: https://omniroute.online/
+  categories:
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - platform-engineer
+  - cloud-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need local provider routing and failover for development-time AI clients.
+  avoid_when:
+  - Avoid it for production credentials or regulated data until its licence, security controls, and operational
+    maturity are independently verified.
+  deployment_models:
+  - local
+  - self-hosted
+  license_model: unknown
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://omniroute.online/
   needs_review: true
 - id: open-webui
   name: Open WebUI
@@ -1966,6 +2030,41 @@
   sources:
   - legacy:9_AI-MLOps/README.md#L70
   - legacy:devopstools_final.md#L1255
+  needs_review: true
+- id: rakazo
+  name: Rakazo
+  summary: Self-hosted agent workspace with sandboxed browser and shell sessions, routines, approvals,
+    and audit history.
+  official_url: https://rakazo.com/
+  repository_url: https://github.com/elie222/rakazo
+  repository_archived: false
+  categories:
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - platform-engineer
+  - cloud-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You are evaluating self-hosted agent execution with explicit approval and audit boundaries.
+  avoid_when:
+  - Avoid production credentials or high-impact automation while the beta security and isolation model
+    remains under review.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://rakazo.com/
+  - https://github.com/elie222/rakazo
   needs_review: true
 - id: ray
   name: Ray
@@ -2139,6 +2238,39 @@
   sources:
   - legacy:devopstools_final.md#L1247
   needs_review: true
+- id: victoriametrics-mcp-server
+  name: VictoriaMetrics MCP server
+  summary: Model Context Protocol server that exposes VictoriaMetrics observability operations to compatible
+    AI clients.
+  repository_url: https://github.com/VictoriaMetrics/mcp-victoriametrics
+  repository_archived: false
+  categories:
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - platform-engineer
+  - cloud-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  use_when:
+  - You need a governed MCP integration between an AI operations client and VictoriaMetrics.
+  avoid_when:
+  - Avoid it when model access to observability data cannot be constrained, audited, and isolated from
+    write operations.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: emerging
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/VictoriaMetrics/mcp-victoriametrics
+  needs_review: false
 - id: voltagent
   name: VoltAgent
   summary: Open-source TypeScript framework for building AI agents.

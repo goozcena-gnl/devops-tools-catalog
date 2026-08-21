@@ -685,19 +685,19 @@ Reliable, high-performance TCP/HTTP load balancer.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 API for managing HAProxy configuration, runtime operations, stats, and logs.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a supported HTTP API to validate and apply HAProxy configuration or runtime changes.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Avoid it when configuration must remain exclusively file-driven and no API write surface is acceptable.
 
-[Official site](https://www.haproxy.com/documentation/dataplaneapi) · [Source repository](https://github.com/haproxytech/dataplaneapi)
+[Official site](https://www.haproxy.com/documentation/dataplaneapi/) · [Documentation](https://www.haproxy.com/documentation/haproxy-data-plane-api/) · [Source repository](https://github.com/haproxytech/dataplaneapi)
 
 ### HAProxy Kubernetes Ingress Controller
 

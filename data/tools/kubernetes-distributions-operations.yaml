@@ -91,6 +91,42 @@
   - legacy:4_Kubernetes-Containers/README.md#L20
   - legacy:devopstools_final.md#L450
   needs_review: false
+- id: capacitor-next
+  name: Capacitor Next
+  summary: Local-first web interface for Kubernetes resources, Helm history, and Flux reconciliation state.
+  official_url: https://gimlet.io/capacitor-next/
+  repository_url: https://github.com/gimlet-io/capacitor
+  repository_archived: false
+  documentation_url: https://gimlet.io/capacitor-next/docs/
+  categories:
+  - kubernetes-distributions-operations
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You operate Flux-managed clusters and want a browser-based operational view that respects Kubernetes
+    RBAC.
+  avoid_when:
+  - Avoid it when a mature multi-tenant control plane is required instead of a local-first client.
+  deployment_models:
+  - local
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://gimlet.io/capacitor-next/
+  - https://gimlet.io/capacitor-next/docs/
+  - https://github.com/gimlet-io/capacitor
+  needs_review: false
 - id: carvel-kapp
   name: Carvel kapp
   summary: Simple deployment tool for Kubernetes.
@@ -1018,6 +1054,38 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L467
+  needs_review: true
+- id: k8s-mechanic
+  name: k8s-mechanic
+  summary: Kubernetes controller that proposes GitOps pull requests for observed cluster failures with
+    human approval.
+  repository_url: https://github.com/lenaxia/k8s-mechanic
+  repository_archived: false
+  categories:
+  - kubernetes-distributions-operations
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You are evaluating read-only, human-reviewed remediation proposals for a GitOps-managed cluster.
+  avoid_when:
+  - Avoid granting write access or relying on generated fixes without independent review and secret-redaction
+    validation.
+  deployment_models:
+  - kubernetes
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: experimental
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/lenaxia/k8s-mechanic
   needs_review: true
 - id: k8sql
   name: k8sql
@@ -2267,8 +2335,8 @@
   needs_review: true
 - id: kubescape
   name: Kubescape
-  summary: Kubernetes security scanning.
-  official_url: https://kubescape.io
+  summary: Kubernetes security platform for posture, vulnerability, compliance, and runtime risk assessment.
+  official_url: https://kubescape.io/
   repository_url: https://github.com/kubescape/kubescape
   categories:
   - kubernetes-distributions-operations
@@ -2282,20 +2350,29 @@
   - deploy
   - operate
   use_when:
-  - You need multi-framework security posture scanning (NSA, MITRE, CIS).
+  - You need Kubernetes posture and compliance assessment across manifests, clusters, images, and runtime
+    context.
   avoid_when:
-  - You only need image vulnerability scanning (use Trivy alone).
-  deployment_models: []
+  - Avoid it when a narrowly scoped image scanner is sufficient and cluster security operations are out
+    of scope.
+  deployment_models:
+  - local
+  - ci
+  - kubernetes
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-21'
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L53
-  - legacy:devopstools_final.md#L506
-  needs_review: true
+  - https://kubescape.io/
+  - https://github.com/kubescape/kubescape
+  - https://kubescape.io/docs/
+  needs_review: false
+  repository_archived: false
+  documentation_url: https://kubescape.io/docs/
+  license_spdx: Apache-2.0
 - id: kubesec
   name: Kubesec
   summary: Security risk analysis for Kubernetes YAML.
@@ -2964,6 +3041,39 @@
   - legacy:4_Kubernetes-Containers/README.md#L64
   - legacy:devopstools_final.md#L519
   needs_review: true
+- id: pluto
+  name: Pluto
+  summary: Command-line utility for detecting deprecated Kubernetes API versions in live clusters and
+    manifests.
+  repository_url: https://github.com/FairwindsOps/pluto
+  repository_archived: false
+  categories:
+  - kubernetes-distributions-operations
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You are planning a Kubernetes upgrade and need to find resources using removed or deprecated API versions.
+  avoid_when:
+  - Avoid relying on it as the only upgrade-readiness check; controllers, CRDs, and workload behavior
+    still need validation.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/FairwindsOps/pluto
+  needs_review: false
 - id: popeye
   name: Popeye
   summary: Kubernetes cluster resource sanitizer that scans live clusters for potential issues and misconfigurations.
@@ -3141,6 +3251,40 @@
   - legacy:4_Kubernetes-Containers/README.md#L15
   - legacy:devopstools_final.md#L444
   needs_review: true
+- id: sablier
+  name: Sablier
+  summary: Workload scaler that starts containerized services on demand and idles them after inactivity.
+  official_url: https://sablierapp.dev/
+  repository_url: https://github.com/sablierapp/sablier
+  repository_archived: false
+  documentation_url: https://sablierapp.dev/tutorials/getting-started/
+  categories:
+  - kubernetes-distributions-operations
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need demand-driven scale-to-zero for Docker, Kubernetes, Podman, or Proxmox LXC workloads.
+  avoid_when:
+  - Avoid it when cold-start latency or an external request-routing dependency is unacceptable.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: AGPL-3.0-only
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://sablierapp.dev/
+  - https://sablierapp.dev/tutorials/getting-started/
+  - https://github.com/sablierapp/sablier
+  needs_review: false
 - id: seabird
   name: Seabird
   summary: Native desktop app for exploring and managing Kubernetes clusters with an integrated terminal

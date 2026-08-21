@@ -503,6 +503,45 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L50
   - legacy:devopstools_final.md#L178
   needs_review: false
+- id: nautobot
+  name: Nautobot
+  summary: Network source-of-truth and automation platform with extensible data models and application
+    plugins.
+  official_url: https://docs.nautobot.com/
+  repository_url: https://github.com/nautobot/nautobot
+  repository_archived: false
+  documentation_url: https://docs.nautobot.com/projects/core/en/stable/
+  categories:
+  - infrastructure-as-code
+  roles:
+  - cloud-engineer
+  - devops-engineer
+  - platform-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - build
+  - deploy
+  use_when:
+  - You need a programmable network source of truth that drives validation and automation workflows.
+  avoid_when:
+  - Avoid it when a simple IPAM or static inventory meets requirements without an application platform.
+  deployment_models:
+  - self-hosted
+  - saas
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://docs.nautobot.com/
+  - https://docs.nautobot.com/projects/core/en/stable/
+  - https://github.com/nautobot/nautobot
+  needs_review: false
 - id: opentaco
   name: OpenTaco
   summary: Terraform/OpenTofu CI orchestration and pull-request automation.

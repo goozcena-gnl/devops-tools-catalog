@@ -1,3 +1,38 @@
+- id: ocs-inventory-ng
+  name: OCS Inventory NG
+  summary: IT inventory platform that collects hardware and software data from agents and network discovery.
+  official_url: https://ocsinventory-ng.org/
+  repository_url: https://github.com/OCSInventory-NG/OCSInventory-Server
+  repository_archived: false
+  documentation_url: https://wiki.ocsinventory-ng.org/
+  categories:
+  - policy-governance-compliance
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - secure
+  - operate
+  use_when:
+  - You need automated endpoint and network asset inventory with self-hosted data control.
+  avoid_when:
+  - Avoid it when agentless cloud inventory or a full IT service-management workflow is the primary requirement.
+  deployment_models:
+  - self-hosted
+  license_model: open-core
+  license_spdx: GPL-2.0-only
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://ocsinventory-ng.org/
+  - https://wiki.ocsinventory-ng.org/
+  - https://github.com/OCSInventory-NG/OCSInventory-Server
+  needs_review: false
 - id: risk-analysis-editor
   name: Risk Analysis Editor
   summary: Offline browser-based editor for configurable risk registers, treatment plans, matrices, and reports.
@@ -25,4 +60,41 @@
   - https://www.risk-analysis-editor.com/
   - https://github.com/StephaneV/Risk-Analysis-Editor
   - https://github.com/StephaneV/Risk-Analysis-Editor/blob/main/LICENSE
+  needs_review: false
+- id: snipe-it
+  name: Snipe-IT
+  summary: IT asset management platform for hardware, software licences, accessories, and custody history.
+  official_url: https://snipeitapp.com/
+  repository_url: https://github.com/snipe/snipe-it
+  repository_archived: false
+  documentation_url: https://snipe-it.readme.io/docs
+  categories:
+  - policy-governance-compliance
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - secure
+  - operate
+  use_when:
+  - You need a self-hosted system of record for IT asset assignment and lifecycle governance.
+  avoid_when:
+  - Avoid it when automated discovery and configuration state are required without integration to inventory
+    agents.
+  deployment_models:
+  - self-hosted
+  - saas
+  license_model: open-core
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://snipeitapp.com/
+  - https://snipe-it.readme.io/docs
+  - https://github.com/snipe/snipe-it
   needs_review: false

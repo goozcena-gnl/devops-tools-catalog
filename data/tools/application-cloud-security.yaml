@@ -54,6 +54,38 @@
   sources:
   - legacy:devopstools_final.md#L839
   needs_review: true
+- id: aircrack-ng
+  name: Aircrack-ng
+  summary: Wireless network security-auditing suite for capture analysis and controlled Wi-Fi validation.
+  official_url: https://www.aircrack-ng.org/
+  repository_url: https://github.com/aircrack-ng/aircrack-ng
+  repository_archived: false
+  documentation_url: https://www.aircrack-ng.org/documentation
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it in an authorized wireless assessment, defensive validation, or isolated research lab.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.aircrack-ng.org/
+  - https://www.aircrack-ng.org/documentation
+  - https://github.com/aircrack-ng/aircrack-ng
+  needs_review: false
 - id: apiiro
   name: Apiiro
   summary: Application security platform focused on securing agentic development and software delivery.
@@ -71,9 +103,11 @@
   use_when: []
   avoid_when: []
   deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  license_model: open-core
+  license_spdx: GPL-2.0-or-later
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -282,6 +316,38 @@
   - legacy:6_Security/README.md#L60
   - legacy:devopstools_final.md#L928
   needs_review: true
+- id: blackarch-linux
+  name: BlackArch Linux
+  summary: Arch Linux-based distribution that packages tools for authorized security testing and research.
+  official_url: https://blackarch.org/
+  repository_url: https://github.com/BlackArch/blackarch
+  repository_archived: false
+  documentation_url: https://blackarch.org/guide.html
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for an isolated, authorized security lab that needs a broad packaged toolset.
+  avoid_when:
+  - Avoid it as a general-purpose production workstation when the large security-tool surface is unnecessary.
+  deployment_models:
+  - local
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://blackarch.org/
+  - https://blackarch.org/guide.html
+  - https://github.com/BlackArch/blackarch
+  needs_review: false
 - id: bloodhound
   name: BloodHound
   summary: Graph-based platform for authorized analysis of identity relationships and attack paths in
@@ -376,6 +442,37 @@
   - legacy:6_Security/README.md#L10
   - legacy:devopstools_final.md#L844
   needs_review: true
+- id: burp-suite-community-edition
+  name: Burp Suite Community Edition
+  summary: Proprietary no-cost desktop toolkit for manual web application security testing.
+  official_url: https://portswigger.net/burp/downloads
+  documentation_url: https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized manual web application testing or security training where Community Edition
+    capabilities are sufficient.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://portswigger.net/burp/downloads
+  - https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install
+  needs_review: false
 - id: cai-robotsec
   name: CAI (RobotSec)
   summary: Open cybersecurity AI framework for robotics and offensive security workflows, with commercial
@@ -437,6 +534,38 @@
   - legacy:6_Security/README.md#L61
   - legacy:devopstools_final.md#L929
   needs_review: true
+- id: cartography
+  name: Cartography
+  summary: Graph-based asset inventory that maps cloud and infrastructure relationships into Neo4j.
+  official_url: https://docs.cartography.dev/
+  repository_url: https://github.com/lyft/cartography
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - You need queryable relationship data for cloud asset inventory, exposure analysis, or defensive investigations.
+  avoid_when:
+  - Avoid it when operating and securing Neo4j plus scheduled ingestion is disproportionate to the inventory
+    need.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://docs.cartography.dev/
+  - https://github.com/lyft/cartography
+  needs_review: false
 - id: cato-networks
   name: Cato Networks
   summary: SASE (Secure Access Service Edge) platform.
@@ -497,6 +626,36 @@
   sources:
   - legacy:6_Security/README.md#L63
   - legacy:devopstools_final.md#L931
+  needs_review: false
+- id: certipy
+  name: Certipy
+  summary: Active Directory Certificate Services assessment tool for identifying configuration and trust
+    weaknesses.
+  repository_url: https://github.com/ly4k/Certipy
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized AD CS audit, defensive validation, or incident-response investigation.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/ly4k/Certipy
   needs_review: false
 - id: chain-bench
   name: Chain Bench
@@ -645,6 +804,37 @@
   - https://docs.clamav.net/
   - https://github.com/Cisco-Talos/clamav
   - https://github.com/Cisco-Talos/clamav/blob/main/COPYING.txt
+  needs_review: false
+- id: cloudfox
+  name: CloudFox
+  summary: Cloud environment situational-awareness utility for authorized AWS, Azure, and GCP security
+    assessments.
+  repository_url: https://github.com/BishopFox/cloudfox
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized cloud security assessment or defensive inventory where permission-aware findings
+    are required.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/BishopFox/cloudfox
   needs_review: false
 - id: codeql
   name: CodeQL
@@ -916,6 +1106,44 @@
   - legacy:6_Security/README.md#L19
   - legacy:devopstools_final.md#L855
   needs_review: true
+- id: defectdojo
+  name: DefectDojo
+  summary: Application security posture and vulnerability-management platform that ingests findings from
+    many scanners.
+  official_url: https://www.defectdojo.com/
+  repository_url: https://github.com/DefectDojo/django-DefectDojo
+  repository_archived: false
+  documentation_url: https://docs.defectdojo.com/
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - You need to normalize, deduplicate, triage, and govern application-security findings across tools
+    and teams.
+  avoid_when:
+  - Avoid it when a smaller single-scanner workflow does not justify platform operations and data-governance
+    overhead.
+  deployment_models:
+  - self-hosted
+  - saas
+  license_model: open-core
+  license_spdx: BSD-3-Clause
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.defectdojo.com/
+  - https://docs.defectdojo.com/
+  - https://github.com/DefectDojo/django-DefectDojo
+  needs_review: false
 - id: dependencycheck
   name: DependencyCheck
   summary: Identify vulnerable dependencies.
@@ -1064,6 +1292,38 @@
   - legacy:6_Security/README.md#L22
   - legacy:devopstools_final.md#L858
   needs_review: false
+- id: dradis-community-edition
+  name: Dradis Community Edition
+  summary: Self-hosted collaboration and reporting platform for security assessment projects.
+  official_url: https://dradis.com/ce/
+  repository_url: https://github.com/dradis/dradis-ce
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - You need a community-licensed workspace for organizing authorized assessment evidence and reports.
+  avoid_when:
+  - Avoid it when enterprise integrations, vendor support, or managed hosting are required.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: GPL-2.0-only
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://dradis.com/ce/
+  - https://github.com/dradis/dradis-ce
+  needs_review: false
 - id: drata
   name: Drata
   summary: Security and compliance automation platform.
@@ -1180,6 +1440,66 @@
   - legacy:6_Security/README.md#L79
   - legacy:devopstools_final.md#L952
   needs_review: true
+- id: feroxbuster
+  name: feroxbuster
+  summary: Recursive web content discovery utility for authorized application assessment.
+  repository_url: https://github.com/epi052/feroxbuster
+  repository_archived: false
+  documentation_url: https://epi052.github.io/feroxbuster-docs/overview/
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it in an authorized web assessment to discover unlinked content and endpoints.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://epi052.github.io/feroxbuster-docs/overview/
+  - https://github.com/epi052/feroxbuster
+  needs_review: false
+- id: ffuf
+  name: ffuf
+  summary: Web content and parameter discovery utility for authorized HTTP security assessment.
+  repository_url: https://github.com/ffuf/ffuf
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it in an authorized application assessment to identify undocumented HTTP content or input surfaces.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/ffuf/ffuf
+  needs_review: false
 - id: filigran
   name: Filigran
   summary: Open threat intelligence and incident response platform (OpenCTI / OpenBAS) for collecting,
@@ -1292,6 +1612,37 @@
   sources:
   - legacy:devopstools_final.md#L863
   needs_review: true
+- id: ghostwriter
+  name: Ghostwriter
+  summary: Collaborative platform for managing security assessments, findings, evidence, and reports.
+  official_url: https://www.ghostwriter.wiki/home
+  repository_url: https://github.com/GhostManager/Ghostwriter
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - You need a self-hosted workflow and reporting system for authorized security engagements.
+  avoid_when:
+  - Avoid it when client data, evidence, and report access cannot be isolated and governed appropriately.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: BSD-3-Clause
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.ghostwriter.wiki/home
+  - https://github.com/GhostManager/Ghostwriter
+  needs_review: false
 - id: gibson
   name: Gibson
   summary: Network monitoring and threat-hunting tool that maps processes to connections, flags beaconing,
@@ -1378,6 +1729,36 @@
   - legacy:6_Security/README.md#L70
   - legacy:devopstools_final.md#L940
   needs_review: true
+- id: graphql-cop
+  name: graphql-cop
+  summary: Security audit utility for identifying GraphQL configuration and implementation weaknesses.
+  repository_url: https://github.com/dolevf/graphql-cop
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized GraphQL defensive validation or application security testing.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/dolevf/graphql-cop
+  needs_review: false
 - id: greenbone-openvas
   name: Greenbone (OpenVAS)
   summary: Vulnerability scanning and management framework (formerly OpenVAS).
@@ -1488,6 +1869,98 @@
   sources:
   - legacy:devopstools_final.md#L869
   needs_review: true
+- id: hashcat
+  name: Hashcat
+  summary: Hardware-accelerated password recovery and security-auditing utility.
+  official_url: https://hashcat.net/hashcat/
+  repository_url: https://github.com/hashcat/hashcat
+  repository_archived: false
+  documentation_url: https://hashcat.net/wiki/
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized password-strength validation, recovery, or controlled research with approved
+    data handling.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://hashcat.net/hashcat/
+  - https://hashcat.net/wiki/
+  - https://github.com/hashcat/hashcat
+  needs_review: false
+- id: hcxdumptool
+  name: hcxdumptool
+  summary: Wireless packet-capture utility for supported Linux Wi-Fi adapters.
+  repository_url: https://github.com/ZerBea/hcxdumptool
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it in an authorized wireless assessment or lab that requires controlled 802.11 capture collection.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/ZerBea/hcxdumptool
+  needs_review: false
+- id: hcxtools
+  name: hcxtools
+  summary: Utilities for converting and processing wireless capture data for security-audit workflows.
+  repository_url: https://github.com/ZerBea/hcxtools
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it to process captures collected during authorized wireless assessments or controlled research.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/ZerBea/hcxtools
+  needs_review: false
 - id: hybrid-analysis
   name: Hybrid Analysis
   summary: Free malware analysis sandbox service powered by CrowdStrike Falcon Sandbox.
@@ -1514,6 +1987,35 @@
   sources:
   - legacy:devopstools_final.md#L870
   needs_review: true
+- id: impacket
+  name: Impacket
+  summary: Python library and utilities for programmatic access to common network and Windows protocols.
+  repository_url: https://github.com/fortra/impacket
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized protocol testing, defensive research, interoperability work, or incident response.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - library
+  - local
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/fortra/impacket
+  needs_review: false
 - id: iroh
   name: Iroh
   summary: Peer-to-peer networking library for building distributed, hole-punching-capable, end-to-end
@@ -1594,6 +2096,40 @@
   sources:
   - legacy:devopstools_final.md#L873
   needs_review: true
+- id: john-the-ripper
+  name: John the Ripper
+  summary: Password security auditing and recovery tool supporting many hash and encrypted-file formats.
+  official_url: https://www.openwall.com/john/
+  repository_url: https://github.com/openwall/john
+  repository_archived: false
+  documentation_url: https://www.openwall.com/john/doc/
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized password-strength audits, recovery, or controlled security research.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: GPL-2.0-or-later
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.openwall.com/john/
+  - https://www.openwall.com/john/doc/
+  - https://github.com/openwall/john
+  needs_review: false
 - id: k-guard
   name: k-guard
   summary: Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patching, and hardening.
@@ -1706,6 +2242,37 @@
   sources:
   - legacy:devopstools_final.md#L874
   needs_review: true
+- id: katana
+  name: Katana
+  summary: Web crawling framework for discovering application endpoints during authorized assessment and
+    testing.
+  repository_url: https://github.com/projectdiscovery/katana
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it in authorized application discovery, attack-surface inventory, or defensive validation.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/projectdiscovery/katana
+  needs_review: false
 - id: kickthemout
   name: kickthemout
   summary: Kick devices off your local network using ARP spoofing (Node.js-based network security testing
@@ -1913,6 +2480,35 @@
   - legacy:6_Security/README.md#L80
   - legacy:devopstools_final.md#L954
   needs_review: true
+- id: masscan
+  name: masscan
+  summary: High-rate asynchronous TCP port scanner for large authorized network inventories.
+  repository_url: https://github.com/robertdavidgraham/masscan
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it only for explicitly authorized large-scale network inventory with rate, scope, and safety controls.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: AGPL-3.0-only
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/robertdavidgraham/masscan
+  needs_review: false
 - id: mcpdefender
   name: MCPDefender
   summary: Security proxy for MCP traffic between AI apps and MCP servers (AGPL-3.0).
@@ -1969,6 +2565,40 @@
   sources:
   - legacy:devopstools_final.md#L882
   needs_review: true
+- id: metasploit
+  name: Metasploit Framework
+  summary: Modular framework for authorized security validation, exploit research, and controlled testing.
+  official_url: https://www.metasploit.com/
+  repository_url: https://github.com/rapid7/metasploit-framework
+  repository_archived: false
+  documentation_url: https://docs.metasploit.com/
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it in an authorized penetration test, defensive validation lab, or security-research environment.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: BSD-3-Clause
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.metasploit.com/
+  - https://docs.metasploit.com/
+  - https://github.com/rapid7/metasploit-framework
+  needs_review: false
 - id: mfasweep
   name: MFASweep
   summary: PowerShell tool for enumerating and testing MFA bypass paths across Microsoft 365 and Azure
@@ -2108,6 +2738,67 @@
   sources:
   - legacy:devopstools_final.md#L957
   needs_review: true
+- id: netexec
+  name: NetExec
+  summary: Network service assessment framework for authorized Windows and directory security operations.
+  official_url: https://www.netexec.wiki/
+  repository_url: https://github.com/Pennyw0rth/NetExec
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized enterprise network assessment, defensive validation, or incident-response triage.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: BSD-2-Clause
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.netexec.wiki/
+  - https://github.com/Pennyw0rth/NetExec
+  needs_review: false
+- id: nextdns
+  name: NextDNS
+  summary: Managed recursive DNS service with policy-based filtering, analytics, and encrypted DNS endpoints.
+  official_url: https://nextdns.io/
+  documentation_url: https://github.com/nextdns/nextdns/wiki
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - You need centrally managed DNS filtering for users, devices, or distributed networks.
+  avoid_when:
+  - Avoid it when DNS query data must remain entirely on infrastructure you operate.
+  deployment_models:
+  - saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://nextdns.io/
+  - https://github.com/nextdns/nextdns/wiki
+  needs_review: false
 - id: nikto
   name: Nikto
   summary: Web server scanner for dangerous files, outdated software, and common misconfigurations.
@@ -2134,6 +2825,40 @@
   sources:
   - legacy:devopstools_final.md#L886
   needs_review: true
+- id: nmap
+  name: Nmap
+  summary: Network discovery and security-auditing utility with host, service, and platform identification
+    capabilities.
+  official_url: https://nmap.org/
+  repository_url: https://github.com/nmap/nmap
+  repository_archived: false
+  documentation_url: https://nmap.org/docs.html
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized network inventory, defensive validation, troubleshooting, or security assessment.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: source-available
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://nmap.org/
+  - https://nmap.org/docs.html
+  - https://github.com/nmap/nmap
+  needs_review: false
 - id: nomos
   name: nomos
   summary: Security guardrail for AI agents (Claude Code, Codex, MCP) that blocks secret access and gates
@@ -2512,6 +3237,38 @@
   sources:
   - legacy:devopstools_final.md#L895
   needs_review: true
+- id: owasp-amass
+  name: OWASP Amass
+  summary: Attack-surface mapping and external asset discovery framework.
+  official_url: https://owasp.org/www-project-amass/
+  repository_url: https://github.com/owasp-amass/amass
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized external asset inventory, defensive exposure management, or security research.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://owasp.org/www-project-amass/
+  - https://github.com/owasp-amass/amass
+  needs_review: false
 - id: owasp-zap
   name: OWASP ZAP
   summary: Web application security scanner (DAST).
@@ -2600,7 +3357,7 @@
 - id: parrot-security
   name: Parrot Security
   summary: Security-oriented Linux distribution for penetration testing, digital forensics, and privacy.
-  official_url: https://parrotsec.org
+  official_url: https://www.parrotsec.org/
   categories:
   - application-cloud-security
   subcategories:
@@ -2611,18 +3368,56 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - Use it for an isolated, authorized security lab, digital-forensics workstation, or privacy-focused
+    research environment.
+  avoid_when:
+  - Avoid it as a general production workstation when its security-tool surface and specialized defaults
+    are unnecessary.
+  deployment_models:
+  - local
   license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.parrotsec.org/
+  - https://parrotsec.org/docs/
+  - https://gitlab.com/parrotsec
+  needs_review: false
+  documentation_url: https://parrotsec.org/docs/
+- id: peass-ng
+  name: PEASS-ng
+  summary: Security assessment script suite for identifying local privilege-escalation exposure on supported
+    systems.
+  repository_url: https://github.com/peass-ng/PEASS-ng
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it only for authorized host hardening reviews, lab validation, or incident-response investigation.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-21'
   sources:
-  - legacy:devopstools_final.md#L897
-  needs_review: true
+  - https://github.com/peass-ng/PEASS-ng
+  - https://github.com/peass-ng/PEASS-ng/blob/master/LICENSE
+  needs_review: false
 - id: pentest-toolkit-pro
   name: PenTest Toolkit Pro
   summary: Offline HTML toolkit for pentest checklists, audits, reporting, and action plans.
@@ -2822,6 +3617,34 @@
   - legacy:6_Security/README.md#L74
   - legacy:devopstools_final.md#L945
   needs_review: true
+- id: reaver
+  name: Reaver
+  summary: Wireless security assessment utility for evaluating WPS-enabled access points.
+  repository_url: https://github.com/t6x/reaver-wps-fork-t6x
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it only in an authorized wireless assessment or controlled lab evaluating WPS exposure.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/t6x/reaver-wps-fork-t6x
+  needs_review: true
 - id: red-labs
   name: Red Labs
   summary: Security labs/training environment.
@@ -2877,6 +3700,64 @@
   sources:
   - legacy:devopstools_final.md#L964
   needs_review: true
+- id: roadtools
+  name: ROADtools
+  summary: Collection of Microsoft Entra ID data, authentication, and security-analysis utilities.
+  repository_url: https://github.com/dirkjanm/ROADtools
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized Entra ID audit, defensive analysis, incident response, or security research.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/dirkjanm/ROADtools
+  needs_review: false
+- id: rustscan
+  name: RustScan
+  summary: Fast port-discovery utility designed to hand identified services to deeper analysis tools.
+  repository_url: https://github.com/bee-san/rustscan
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized network inventory or assessment where rapid port discovery is required.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/bee-san/rustscan
+  needs_review: false
 - id: safeline
   name: SafeLine
   summary: Self-hosted web application firewall (WAF) / reverse proxy; OSS core with paid tiers.
@@ -3229,6 +4110,68 @@
   sources:
   - legacy:devopstools_final.md#L913
   needs_review: true
+- id: sqlmap
+  name: sqlmap
+  summary: Automated SQL injection detection and database security-testing utility.
+  official_url: https://sqlmap.org/
+  repository_url: https://github.com/sqlmapproject/sqlmap
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it only for authorized database-backed application assessment or controlled security research.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: GPL-2.0-or-later
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://sqlmap.org/
+  - https://github.com/sqlmapproject/sqlmap
+  needs_review: false
+- id: subfinder
+  name: subfinder
+  summary: Passive subdomain discovery utility using external data sources.
+  repository_url: https://github.com/projectdiscovery/subfinder
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it for authorized external asset inventory or defensive attack-surface discovery.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/projectdiscovery/subfinder
+  needs_review: false
 - id: suricata
   name: Suricata
   summary: High-performance network IDS, IPS, and threat detection engine.
@@ -3284,6 +4227,40 @@
   - legacy:6_Security/README.md#L50
   - legacy:devopstools_final.md#L914
   needs_review: true
+- id: sysdig
+  name: Sysdig Secure
+  summary: Commercial cloud-native application protection platform for runtime detection, vulnerability,
+    posture, and entitlement risk.
+  official_url: https://www.sysdig.com/
+  documentation_url: https://docs.sysdig.com/en/docs/sysdig-secure/
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - You need managed CNAPP controls informed by runtime activity across cloud, container, and Kubernetes
+    environments.
+  avoid_when:
+  - Avoid treating the commercial platform as equivalent to the independently governed open-source Falco
+    project.
+  deployment_models:
+  - saas
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.sysdig.com/
+  - https://docs.sysdig.com/en/docs/sysdig-secure/
+  needs_review: false
 - id: syswarden
   name: SysWarden
   summary: Firewall orchestration platform that applies blocklists, GeoIP, ASN, and security integrations
@@ -3649,6 +4626,35 @@
   sources:
   - legacy:devopstools_final.md#L922
   needs_review: true
+- id: wifit3
+  name: Wifit3
+  summary: Cross-platform wireless security auditing utility designed around external USB Wi-Fi adapters.
+  repository_url: https://github.com/derv82/wifit3
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  use_when:
+  - Use it in an authorized wireless assessment or lab where its adapter-focused workflow is required.
+  avoid_when:
+  - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: GPL-2.0-only
+  maturity: emerging
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/derv82/wifit3
+  needs_review: false
 - id: wireguard
   name: WireGuard
   summary: Fast, modern, and secure VPN tunneling protocol.

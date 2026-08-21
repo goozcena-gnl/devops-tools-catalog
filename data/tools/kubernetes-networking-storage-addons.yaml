@@ -1108,7 +1108,7 @@
 - id: haproxy-data-plane-api
   name: HAProxy Data Plane API
   summary: API for managing HAProxy configuration, runtime operations, stats, and logs.
-  official_url: https://www.haproxy.com/documentation/dataplaneapi
+  official_url: https://www.haproxy.com/documentation/dataplaneapi/
   repository_url: https://github.com/haproxytech/dataplaneapi
   categories:
   - kubernetes-networking-storage-addons
@@ -1121,18 +1121,25 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need a supported HTTP API to validate and apply HAProxy configuration or runtime changes.
+  avoid_when:
+  - Avoid it when configuration must remain exclusively file-driven and no API write surface is acceptable.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-21'
   sources:
-  - legacy:devopstools_final.md#L561
-  needs_review: true
+  - https://www.haproxy.com/documentation/dataplaneapi/
+  - https://github.com/haproxytech/dataplaneapi
+  needs_review: false
+  repository_archived: false
+  documentation_url: https://www.haproxy.com/documentation/haproxy-data-plane-api/
+  license_spdx: Apache-2.0
 - id: haproxy-kubernetes-ingress-controller
   name: HAProxy Kubernetes Ingress Controller
   summary: HAProxy-powered Kubernetes ingress controller for high-performance Layer 7 traffic management.

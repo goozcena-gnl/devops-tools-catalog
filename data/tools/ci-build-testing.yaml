@@ -617,6 +617,40 @@
   - legacy:3_CI-CD-Automation/README.md#L28
   - legacy:devopstools_final.md#L320
   needs_review: false
+- id: cucumber
+  name: Cucumber
+  summary: Behavior-driven development tooling that executes executable specifications written in Gherkin.
+  official_url: https://cucumber.io/
+  documentation_url: https://cucumber.io/docs/
+  categories:
+  - ci-build-testing
+  roles:
+  - devops-engineer
+  - release-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - build
+  - test
+  use_when:
+  - You need cross-functional acceptance specifications that can run as automated tests.
+  avoid_when:
+  - Avoid it when feature files would duplicate lower-level tests without a maintained business-facing
+    contract.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://cucumber.io/
+  - https://cucumber.io/docs/
+  - https://github.com/cucumber
+  needs_review: false
 - id: cypress
   name: Cypress
   summary: End-to-end testing for web applications.
@@ -992,6 +1026,39 @@
   - legacy:3_CI-CD-Automation/README.md#L42
   - legacy:devopstools_final.md#L328
   needs_review: true
+- id: jasmine
+  name: Jasmine
+  summary: Behavior-driven JavaScript testing framework for browser and Node.js applications.
+  official_url: https://jasmine.github.io/
+  repository_url: https://github.com/jasmine/jasmine
+  repository_archived: false
+  categories:
+  - ci-build-testing
+  roles:
+  - devops-engineer
+  - release-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - build
+  - test
+  use_when:
+  - You need a standalone JavaScript unit-testing framework with minimal runtime dependencies.
+  avoid_when:
+  - Avoid it when an existing test runner and assertion ecosystem already standardizes the project.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://jasmine.github.io/
+  - https://github.com/jasmine/jasmine
+  needs_review: false
 - id: jenkins
   name: Jenkins
   summary: Automation server for CI/CD.
@@ -1055,6 +1122,41 @@
   - legacy:3_CI-CD-Automation/README.md#L46
   - legacy:devopstools_final.md#L330
   needs_review: true
+- id: junit
+  name: JUnit
+  summary: Testing framework for Java and other JVM languages.
+  official_url: https://junit.org/
+  repository_url: https://github.com/junit-team/junit-framework
+  repository_archived: false
+  documentation_url: https://docs.junit.org/current/user-guide/
+  categories:
+  - ci-build-testing
+  roles:
+  - devops-engineer
+  - release-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - build
+  - test
+  use_when:
+  - You need a standard JVM unit and integration test framework supported by build and IDE tooling.
+  avoid_when:
+  - Avoid introducing it as a second test framework without a migration or interoperability plan.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: EPL-2.0
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://junit.org/
+  - https://docs.junit.org/current/user-guide/
+  - https://github.com/junit-team/junit-framework
+  needs_review: false
 - id: k6
   name: k6
   summary: Load testing tool for performance testing.
@@ -1209,6 +1311,39 @@
   sources:
   - legacy:devopstools_final.md#L333
   needs_review: true
+- id: mockito
+  name: Mockito
+  summary: Java mocking framework for isolating collaborators in automated unit tests.
+  official_url: https://site.mockito.org/
+  repository_url: https://github.com/mockito/mockito
+  repository_archived: false
+  categories:
+  - ci-build-testing
+  roles:
+  - devops-engineer
+  - release-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - build
+  - test
+  use_when:
+  - You need test doubles for focused Java unit tests.
+  avoid_when:
+  - Avoid using mocks where integration or contract tests are needed to validate real component behavior.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://site.mockito.org/
+  - https://github.com/mockito/mockito
+  needs_review: false
 - id: nektos-act
   name: Nektos Act
   summary: Run GitHub Actions locally.
@@ -1510,6 +1645,40 @@
   - legacy:7_Development-Collaboration/README.md#L29
   - legacy:devopstools_final.md#L1053
   needs_review: true
+- id: schemathesis
+  name: Schemathesis
+  summary: Property-based API testing tool that generates cases from OpenAPI and GraphQL schemas.
+  official_url: https://schemathesis.readthedocs.io/en/stable/
+  repository_url: https://github.com/schemathesis/schemathesis
+  repository_archived: false
+  categories:
+  - ci-build-testing
+  roles:
+  - devops-engineer
+  - release-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - build
+  - test
+  use_when:
+  - You need automated negative and edge-case API testing driven by a maintained schema.
+  avoid_when:
+  - Avoid it when the API schema is incomplete or generated traffic cannot be safely isolated from production
+    data.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://schemathesis.readthedocs.io/en/stable/
+  - https://github.com/schemathesis/schemathesis
+  needs_review: false
 - id: selenium
   name: Selenium
   summary: Browser automation for testing web applications.
@@ -1991,6 +2160,39 @@
   - legacy:7_Development-Collaboration/README.md#L23
   - legacy:devopstools_final.md#L1047
   needs_review: true
+- id: webpack
+  name: webpack
+  summary: JavaScript module bundler with code splitting and a plugin-based build pipeline.
+  official_url: https://webpack.js.org/
+  repository_url: https://github.com/webpack/webpack
+  repository_archived: false
+  categories:
+  - ci-build-testing
+  roles:
+  - devops-engineer
+  - release-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - build
+  - test
+  use_when:
+  - You need a configurable asset build graph for a JavaScript application.
+  avoid_when:
+  - Avoid it when the framework's supported build tool already meets requirements with less custom configuration.
+  deployment_models:
+  - local
+  - ci
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://webpack.js.org/
+  - https://github.com/webpack/webpack
+  needs_review: false
 - id: woodpecker-ci
   name: Woodpecker CI
   summary: CI/CD platform for Git.

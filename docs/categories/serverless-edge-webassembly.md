@@ -124,19 +124,19 @@ Serverless containers on Google Cloud.
 **Categories:** Serverless, edge and WebAssembly<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes-based platform to deploy and manage serverless workloads.
+Kubernetes-based platform APIs for deploying, scaling, and delivering serverless workloads and events.
 
 **Use when**
 
-- You want vendor-neutral serverless on your own Kubernetes clusters.
+- You need vendor-neutral serverless workload and event APIs on Kubernetes.
 
 **Consider alternatives when**
 
-- You don't already operate Kubernetes or want fully managed FaaS.
+- Avoid it when you do not already operate Kubernetes or a managed function service meets requirements with less platform overhead.
 
-[Official site](https://github.com/knative)
+[Official site](https://knative.dev/) · [Documentation](https://knative.dev/docs/)
 
 ### OpenFaaS
 
