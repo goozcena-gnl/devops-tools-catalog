@@ -7,9 +7,9 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 ## Catalogue status
 
-- **Canonical records:** 1230
+- **Canonical records:** 1229
 - **Categories:** 30
-- **Records requiring review:** 990
+- **Records requiring review:** 988
 - **Archived repositories:** 10
 - **Last generation date:** 2026-08-21
 - **Maintenance status:** Active migration; unverified metadata is explicitly marked.
@@ -43,7 +43,7 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 | [Kubernetes networking, storage and add-ons](docs/categories/kubernetes-networking-storage-addons.md) | 125 |
 | [CI, build and testing](docs/categories/ci-build-testing.md) | 78 |
 | [CD, GitOps, release and promotion](docs/categories/cd-gitops-release-promotion.md) | 32 |
-| [Artifact and package management](docs/categories/artifact-package-management.md) | 19 |
+| [Artifact and package management](docs/categories/artifact-package-management.md) | 18 |
 | [Platform engineering and internal developer platforms](docs/categories/platform-engineering-idp.md) | 12 |
 | [Developer experience and local environments](docs/categories/developer-experience-local-environments.md) | 79 |
 | [Monitoring, metrics, logs and tracing](docs/categories/monitoring-metrics-logs-tracing.md) | 91 |
@@ -100,18 +100,18 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 |---|---|---:|
 | `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 741 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 19 |
-| `open-core` | OSS/community core with commercial features or service. | 92 |
+| `open-core` | OSS/community core with commercial features or service. | 93 |
 | `commercial` | Proprietary commercial product. | 26 |
 | `free-saas` | Hosted service with a free offering. | 1 |
 | `documentation` | Learning or documentation resource. | 99 |
-| `unknown` | Reliable licence evidence has not been recorded. | 252 |
+| `unknown` | Reliable licence evidence has not been recorded. | 250 |
 
 ## Project-status legend
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 235 |
-| `needs-review` | Imported but not yet fully verified. | 988 |
+| `active` | Maintained according to recorded primary-source evidence. | 236 |
+| `needs-review` | Imported but not yet fully verified. | 986 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 0 |
 | `archived` | Repository or product is archived. | 7 |
 | `historical` | Retained for context or migration work. | 0 |

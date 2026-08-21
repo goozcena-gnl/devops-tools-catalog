@@ -418,17 +418,20 @@
   deployment_models:
   - self-hosted
   - saas
-  license_model: unknown
+  license_model: open-core
+  license_spdx: Apache-2.0
   commercial_offering: true
   maturity: growing
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-21'
   sources:
   - https://changedetection.io/
+  - https://changedetection.io/docs/api_v1/
   - https://github.com/dgtlmoon/changedetection.io
-  needs_review: true
+  - https://github.com/dgtlmoon/changedetection.io/blob/master/LICENSE
+  needs_review: false
 - id: checkmate
   name: Checkmate
   summary: Self-hosted uptime and infrastructure monitoring platform with incidents, status pages, and

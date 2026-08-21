@@ -44,7 +44,7 @@
 | [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Ceph](https://ceph.io/en) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [changedetection.io](https://changedetection.io/) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [changedetection.io](https://changedetection.io/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Chaos Mesh](https://chaos-mesh.org) | Chaos and performance engineering | oss | needs-review |
 | [Chaos Monkey](https://netflix.github.io/chaosmonkey) | Chaos and performance engineering | oss | needs-review |
 | [Chaos Room](https://github.com/fpaparoni/chaos-room) | Chaos and performance engineering | oss | needs-review |

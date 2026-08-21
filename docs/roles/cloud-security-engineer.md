@@ -9,7 +9,7 @@
 | [AD Miner](https://github.com/AD-Security/AD_Miner) | Application and cloud security, IAM, secrets and certificate management | oss | active |
 | [Aikido](https://www.aikido.dev) | Application and cloud security | open-core | needs-review |
 | [Aircrack-ng](https://www.aircrack-ng.org/) | Application and cloud security | oss | active |
-| [Apiiro](https://apiiro.com) | Application and cloud security | open-core | active |
+| [Apiiro](https://apiiro.com) | Application and cloud security | unknown | needs-review |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [Arnica](https://www.arnica.io) | Application and cloud security | unknown | needs-review |
 | [Arsenal](https://github.com/Orange-Cyberdefense/arsenal) | Application and cloud security | documentation | needs-review |
@@ -60,7 +60,7 @@
 | [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) | Application and cloud security | oss | needs-review |
 | [Dockle](https://containers.goodwith.tech) | Application and cloud security | oss | active |
 | [Doppler](https://www.doppler.com) | IAM, secrets and certificate management | unknown | needs-review |
-| [Dradis Community Edition](https://dradis.com/ce/) | Application and cloud security | oss | active |
+| [Dradis Community Edition](https://dradis.com/ce/) | Application and cloud security | open-core | active |
 | [Drata](https://drata.com) | Application and cloud security | unknown | needs-review |
 | [Duo Security](https://duo.com) | Application and cloud security | unknown | needs-review |
 | [Entrust KeyControl](https://www.entrust.com/products/key-management/keycontrol) | IAM, secrets and certificate management | unknown | needs-review |
@@ -153,7 +153,7 @@
 | [Parrot Security](https://www.parrotsec.org/) | Application and cloud security | oss | active |
 | [passbolt](https://www.passbolt.com) | IAM, secrets and certificate management | open-core | needs-review |
 | [Password Pusher](https://pwpush.com/) | IAM, secrets and certificate management | open-core | active |
-| [PEASS-ng](https://github.com/peass-ng/PEASS-ng) | Application and cloud security | unknown | needs-review |
+| [PEASS-ng](https://github.com/peass-ng/PEASS-ng) | Application and cloud security | oss | active |
 | [PenTest Toolkit Pro](https://github.com/Cyber-Autopsie/PenTest-Toolkit-Pro) | Application and cloud security | oss | needs-review |
 | [pfSense](https://www.pfsense.org) | Application and cloud security | oss | needs-review |
 | [pip-audit](https://pypi.org/project/pip-audit) | Application and cloud security | oss | needs-review |

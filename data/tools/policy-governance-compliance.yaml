@@ -65,7 +65,7 @@
   name: Snipe-IT
   summary: IT asset management platform for hardware, software licences, accessories, and custody history.
   official_url: https://snipeitapp.com/
-  repository_url: https://github.com/snipe/snipe-it
+  repository_url: https://github.com/grokability/snipe-it
   repository_archived: false
   documentation_url: https://snipe-it.readme.io/docs
   categories:
@@ -96,5 +96,5 @@
   sources:
   - https://snipeitapp.com/
   - https://snipe-it.readme.io/docs
-  - https://github.com/snipe/snipe-it
+  - https://github.com/grokability/snipe-it
   needs_review: false

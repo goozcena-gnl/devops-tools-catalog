@@ -103,11 +103,9 @@
   use_when: []
   avoid_when: []
   deployment_models: []
-  license_model: open-core
-  license_spdx: GPL-2.0-or-later
-  commercial_offering: true
-  maturity: established
-  status: active
+  license_model: unknown
+  maturity: unknown
+  status: needs-review
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
@@ -538,7 +536,7 @@
   name: Cartography
   summary: Graph-based asset inventory that maps cloud and infrastructure relationships into Neo4j.
   official_url: https://docs.cartography.dev/
-  repository_url: https://github.com/lyft/cartography
+  repository_url: https://github.com/cartography-cncf/cartography
   repository_archived: false
   categories:
   - application-cloud-security
@@ -564,7 +562,7 @@
   verified_on: '2026-08-21'
   sources:
   - https://docs.cartography.dev/
-  - https://github.com/lyft/cartography
+  - https://github.com/cartography-cncf/cartography
   needs_review: false
 - id: cato-networks
   name: Cato Networks
@@ -1312,7 +1310,7 @@
   - Avoid it when enterprise integrations, vendor support, or managed hosting are required.
   deployment_models:
   - self-hosted
-  license_model: oss
+  license_model: open-core
   license_spdx: GPL-2.0-only
   commercial_offering: true
   maturity: established
@@ -1322,6 +1320,7 @@
   verified_on: '2026-08-21'
   sources:
   - https://dradis.com/ce/
+  - https://dradis.com/evaluation/poc.html
   - https://github.com/dradis/dradis-ce
   needs_review: false
 - id: drata
@@ -3408,15 +3407,18 @@
   - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
   deployment_models:
   - local
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  license_model: oss
+  license_spdx: GPL-2.0-or-later
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
   verified_on: '2026-08-21'
   sources:
   - https://github.com/peass-ng/PEASS-ng
   - https://github.com/peass-ng/PEASS-ng/blob/master/LICENSE
+  - https://github.com/peass-ng/PEASS-ng/releases/tag/20260817-e45108b9
   needs_review: false
 - id: pentest-toolkit-pro
   name: PenTest Toolkit Pro

@@ -603,7 +603,7 @@
   deployment_models:
   - self-hosted
   license_model: oss
-  license_spdx: GPL-3.0-only
+  license_spdx: Apache-2.0
   maturity: established
   status: active
   alternatives: []
@@ -612,7 +612,9 @@
   sources:
   - https://homarr.dev/
   - https://homarr.dev/docs/category/getting-started/
+  - https://homarr.dev/docs/community/license/
   - https://github.com/homarr-labs/homarr
+  - https://github.com/homarr-labs/homarr/blob/dev/LICENSE
   needs_review: false
 - id: hyper-v
   name: Hyper-V

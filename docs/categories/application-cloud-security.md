@@ -66,8 +66,8 @@ Wireless network security-auditing suite for capture analysis and controlled Wi-
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Open Core<br>
-**Status:** Active
+**Model:** Unknown<br>
+**Status:** Needs Review
 
 Application security platform focused on securing agentic development and software delivery.
 
@@ -387,7 +387,7 @@ Graph-based asset inventory that maps cloud and infrastructure relationships int
 
 - Avoid it when operating and securing Neo4j plus scheduled ingestion is disproportionate to the inventory need.
 
-[Official site](https://docs.cartography.dev/) · [Source repository](https://github.com/lyft/cartography)
+[Official site](https://docs.cartography.dev/) · [Source repository](https://github.com/cartography-cncf/cartography)
 
 ### Cato Networks
 
@@ -908,7 +908,7 @@ Container image linter for security best practices.
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Oss<br>
+**Model:** Open Core<br>
 **Status:** Active
 
 Self-hosted collaboration and reporting platform for security assessment projects.
@@ -2339,8 +2339,8 @@ Security-oriented Linux distribution for penetration testing, digital forensics,
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
 Security assessment script suite for identifying local privilege-escalation exposure on supported systems.
 

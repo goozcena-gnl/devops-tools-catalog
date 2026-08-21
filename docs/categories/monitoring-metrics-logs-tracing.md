@@ -256,8 +256,8 @@ Monitoring platform with open source base and enterprise/cloud offerings.
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** Observability Engineer, Site Reliability Engineer, DevOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
 Website change-monitoring service with self-hosted and hosted deployment options.
 

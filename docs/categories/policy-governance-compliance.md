@@ -60,4 +60,4 @@ IT asset management platform for hardware, software licences, accessories, and c
 
 - Avoid it when automated discovery and configuration state are required without integration to inventory agents.
 
-[Official site](https://snipeitapp.com/) · [Documentation](https://snipe-it.readme.io/docs) · [Source repository](https://github.com/snipe/snipe-it)
+[Official site](https://snipeitapp.com/) · [Documentation](https://snipe-it.readme.io/docs) · [Source repository](https://github.com/grokability/snipe-it)

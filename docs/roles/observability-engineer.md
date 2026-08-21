@@ -18,7 +18,7 @@
 | [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [cardamon](https://github.com/dominikhei/cardamon) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
-| [changedetection.io](https://changedetection.io/) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [changedetection.io](https://changedetection.io/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Checkmate](https://checkmate.so/) | Monitoring, metrics, logs and tracing | oss | active |
 | [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
