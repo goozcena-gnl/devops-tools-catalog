@@ -264,6 +264,39 @@
   sources:
   - legacy:devopstools_final.md#L412
   needs_review: true
+- id: code-server
+  name: code-server
+  summary: Self-hosted service that runs Visual Studio Code in a web browser.
+  repository_url: https://github.com/coder/code-server
+  repository_archived: false
+  documentation_url: https://coder.com/docs/code-server
+  categories:
+  - developer-experience-local-environments
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need browser-accessible development environments on infrastructure you control.
+  avoid_when:
+  - Avoid exposing it without strong authentication, network isolation, workspace boundaries, and extension
+    governance.
+  deployment_models:
+  - self-hosted
+  license_model: open-core
+  license_spdx: MIT
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://coder.com/docs/code-server
+  - https://github.com/coder/code-server
+  needs_review: false
 - id: coder
   name: Coder
   summary: Self-hosted cloud development environments and AI development infrastructure with governance.
@@ -802,6 +835,38 @@
   - legacy:7_Development-Collaboration/README.md#L35
   - legacy:devopstools_final.md#L1063
   needs_review: true
+- id: httpx-python
+  name: HTTPX
+  summary: Python HTTP client library with synchronous, asynchronous, HTTP/2, and streaming APIs.
+  official_url: https://www.python-httpx.org/
+  repository_url: https://github.com/encode/httpx
+  repository_archived: false
+  categories:
+  - developer-experience-local-environments
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You need a modern Python HTTP client for application, test, or automation code.
+  avoid_when:
+  - Avoid it when the standard library or an existing client dependency already satisfies the operational
+    requirements.
+  deployment_models:
+  - library
+  license_model: oss
+  license_spdx: BSD-3-Clause
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.python-httpx.org/
+  - https://github.com/encode/httpx
+  needs_review: false
 - id: intellij-idea
   name: IntelliJ IDEA
   summary: Java IDE with support for many languages.

@@ -237,6 +237,42 @@
   sources:
   - legacy:devopstools_final.md#L739
   needs_review: true
+- id: bugsink
+  name: Bugsink
+  summary: Self-hosted Sentry SDK-compatible error tracking service.
+  official_url: https://www.bugsink.com/
+  repository_url: https://github.com/bugsink/bugsink
+  repository_archived: false
+  documentation_url: https://www.bugsink.com/docs/
+  categories:
+  - monitoring-metrics-logs-tracing
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  use_when:
+  - You need a compact self-hosted error tracker compatible with Sentry SDKs and accept its source-available
+    terms.
+  avoid_when:
+  - Avoid it when an OSI-approved licence or the right to offer a competing service is required.
+  deployment_models:
+  - self-hosted
+  license_model: source-available
+  license_spdx: PolyForm-Shield-1.0.0
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.bugsink.com/
+  - https://www.bugsink.com/docs/
+  - https://github.com/bugsink/bugsink
+  needs_review: false
 - id: cacti
   name: Cacti
   summary: Network graphing solution (RRDTool-based).
@@ -358,6 +394,78 @@
   sources:
   - legacy:5_Monitoring-Observability/README.md#L7
   - legacy:devopstools_final.md#L699
+  needs_review: false
+- id: changedetection-io
+  name: changedetection.io
+  summary: Website change-monitoring service with self-hosted and hosted deployment options.
+  official_url: https://changedetection.io/
+  repository_url: https://github.com/dgtlmoon/changedetection.io
+  repository_archived: false
+  categories:
+  - monitoring-metrics-logs-tracing
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  use_when:
+  - You need alerts for authorized monitoring of content, status, or configuration changes on web pages.
+  avoid_when:
+  - Avoid monitoring pages where terms, access controls, privacy obligations, or data handling prohibit
+    automated collection.
+  deployment_models:
+  - self-hosted
+  - saas
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://changedetection.io/
+  - https://changedetection.io/docs/api_v1/
+  - https://github.com/dgtlmoon/changedetection.io
+  - https://github.com/dgtlmoon/changedetection.io/blob/master/LICENSE
+  needs_review: false
+- id: checkmate
+  name: Checkmate
+  summary: Self-hosted uptime and infrastructure monitoring platform with incidents, status pages, and
+    host metrics.
+  official_url: https://checkmate.so/
+  repository_url: https://github.com/bluewave-labs/checkmate
+  repository_archived: false
+  documentation_url: https://checkmate.so/docs
+  categories:
+  - monitoring-metrics-logs-tracing
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  use_when:
+  - You need a self-hosted service and host availability monitor with status-page capabilities.
+  avoid_when:
+  - Avoid it when full metrics querying, distributed tracing, or vendor-backed enterprise support is required.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: AGPL-3.0-only
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://checkmate.so/
+  - https://checkmate.so/docs
+  - https://github.com/bluewave-labs/checkmate
   needs_review: false
 - id: checkmk
   name: checkmk
@@ -811,6 +919,43 @@
   sources:
   - legacy:devopstools_final.md#L704
   needs_review: true
+- id: glitchtip
+  name: GlitchTip
+  summary: Sentry-compatible error tracking and performance monitoring platform with self-hosted and managed
+    offerings.
+  official_url: https://glitchtip.com/
+  repository_url: https://gitlab.com/glitchtip/glitchtip-backend
+  repository_archived: false
+  documentation_url: https://glitchtip.com/documentation/
+  categories:
+  - monitoring-metrics-logs-tracing
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  use_when:
+  - You need Sentry SDK compatibility with a lightweight self-hosted or managed error-monitoring backend.
+  avoid_when:
+  - Avoid it when complete Sentry feature parity or enterprise support commitments are mandatory.
+  deployment_models:
+  - self-hosted
+  - saas
+  license_model: open-core
+  license_spdx: MIT
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://glitchtip.com/
+  - https://glitchtip.com/documentation/
+  - https://gitlab.com/glitchtip/glitchtip-backend
+  needs_review: false
 - id: gonzo
   name: Gonzo
   summary: K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.

@@ -186,8 +186,9 @@
   needs_review: true
 - id: knative
   name: Knative
-  summary: Kubernetes-based platform to deploy and manage serverless workloads.
-  official_url: https://github.com/knative
+  summary: Kubernetes-based platform APIs for deploying, scaling, and delivering serverless workloads
+    and events.
+  official_url: https://knative.dev/
   categories:
   - serverless-edge-webassembly
   subcategories:
@@ -201,20 +202,24 @@
   - deploy
   - operate
   use_when:
-  - You want vendor-neutral serverless on your own Kubernetes clusters.
+  - You need vendor-neutral serverless workload and event APIs on Kubernetes.
   avoid_when:
-  - You don't already operate Kubernetes or want fully managed FaaS.
-  deployment_models: []
+  - Avoid it when you do not already operate Kubernetes or a managed function service meets requirements
+    with less platform overhead.
+  deployment_models:
+  - kubernetes
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-21'
   sources:
-  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L106
-  - legacy:devopstools_final.md#L214
-  needs_review: true
+  - https://knative.dev/
+  - https://knative.dev/docs/
+  - https://github.com/knative
+  needs_review: false
+  documentation_url: https://knative.dev/docs/
 - id: openfaas
   name: OpenFaaS
   summary: Functions-as-a-Service framework for Kubernetes; OSS core with commercial Pro features.

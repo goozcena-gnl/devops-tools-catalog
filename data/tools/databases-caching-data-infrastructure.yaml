@@ -322,6 +322,79 @@
   - https://github.com/pgvector/pgvector
   - https://github.com/pgvector/pgvector/blob/master/LICENSE
   needs_review: false
+- id: phpipam
+  name: phpIPAM
+  summary: Web application for IP address management, subnet planning, and address-space documentation.
+  official_url: https://phpipam.net/
+  repository_url: https://github.com/phpipam/phpipam
+  repository_archived: false
+  documentation_url: https://phpipam.net/documents/
+  categories:
+  - databases-caching-data-infrastructure
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a self-hosted IPAM for network inventory and allocation workflows.
+  avoid_when:
+  - Avoid it when IPAM must be tightly integrated with a broader network source-of-truth and automation
+    platform.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://phpipam.net/
+  - https://phpipam.net/documents/
+  - https://github.com/phpipam/phpipam
+  needs_review: false
+- id: pocketbase
+  name: PocketBase
+  summary: Embedded backend service combining SQLite, authentication, file storage, realtime subscriptions,
+    and an HTTP API.
+  official_url: https://pocketbase.io/
+  repository_url: https://github.com/pocketbase/pocketbase
+  repository_archived: false
+  documentation_url: https://pocketbase.io/docs/
+  categories:
+  - databases-caching-data-infrastructure
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a compact backend for prototypes, internal tools, or edge deployments with modest scaling
+    requirements.
+  avoid_when:
+  - Avoid it when independent database scaling, high availability, or mature enterprise operations are
+    required.
+  deployment_models:
+  - self-hosted
+  - embedded
+  license_model: oss
+  license_spdx: MIT
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://pocketbase.io/
+  - https://pocketbase.io/docs/
+  - https://github.com/pocketbase/pocketbase
+  needs_review: false
 - id: qdrant
   name: Qdrant
   summary: Vector database and similarity-search engine available for self-hosted and managed deployments.

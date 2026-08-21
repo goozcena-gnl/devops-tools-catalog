@@ -840,9 +840,10 @@
   - legacy:devopstools_final.md#L397
   needs_review: true
 - id: yokecd
-  name: YokeCD
-  summary: GitOps continuous delivery tool.
-  official_url: https://yokecd.github.io
+  name: Yoke
+  summary: Kubernetes package management and deployment tool that evaluates Go-based configuration as
+    code.
+  official_url: https://yokecd.github.io/
   repository_url: https://github.com/yokecd/yoke
   categories:
   - cd-gitops-release-promotion
@@ -856,17 +857,23 @@
   - release
   - deploy
   use_when:
-  - '* You want a newer, lightweight GitOps tool and are willing to explore early-stage projects.'
+  - You want typed, testable Go-based Kubernetes package definitions and direct cluster deployment.
   avoid_when:
-  - '* You need production-proven tooling with large community support.'
-  deployment_models: []
+  - Avoid it when the team requires declarative YAML-only GitOps reconciliation with a larger established
+    ecosystem.
+  deployment_models:
+  - local
+  - ci
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-21'
   sources:
-  - legacy:3_CI-CD-Automation/README.md#L156
-  - legacy:devopstools_final.md#L398
-  needs_review: true
+  - https://yokecd.github.io/
+  - https://github.com/yokecd/yoke
+  needs_review: false
+  repository_archived: false
+  documentation_url: https://yokecd.github.io/docs/
+  license_spdx: MIT

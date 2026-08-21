@@ -25,6 +25,42 @@
   sources:
   - legacy:devopstools_final.md#L1106
   needs_review: true
+- id: harden-runner
+  name: Harden-Runner
+  summary: GitHub Actions runner security component that observes runtime network, file, and process activity.
+  official_url: https://github.com/step-security/harden-runner
+  repository_url: https://github.com/step-security/harden-runner
+  repository_archived: false
+  documentation_url: https://docs.stepsecurity.io/harden-runner
+  categories:
+  - software-supply-chain-security
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - secure
+  - build
+  - release
+  use_when:
+  - You need runtime visibility and egress policy controls for GitHub Actions runners.
+  avoid_when:
+  - Avoid assuming the public-repository community tier provides the same controls or support as StepSecurity
+    enterprise plans.
+  deployment_models:
+  - ci-plugin
+  - self-hosted
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://github.com/step-security/harden-runner
+  - https://docs.stepsecurity.io/harden-runner
+  needs_review: false
 - id: husky
   name: Husky
   summary: Git hooks for Node.js projects (commonly paired with lint-staged).
@@ -148,6 +184,39 @@
   - legacy:7_Development-Collaboration/README.md#L67
   - legacy:devopstools_final.md#L1105
   needs_review: true
+- id: stepsecurity
+  name: StepSecurity
+  summary: Commercial software supply-chain security platform for GitHub Actions policy, remediation,
+    and runner runtime protection.
+  official_url: https://www.stepsecurity.io/
+  documentation_url: https://docs.stepsecurity.io/
+  categories:
+  - software-supply-chain-security
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - secure
+  - build
+  - release
+  use_when:
+  - You need organization-wide GitHub Actions hardening, policy automation, and managed runtime findings.
+  avoid_when:
+  - Avoid conflating the platform subscription with the separately licensed Harden-Runner repository.
+  deployment_models:
+  - saas
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.stepsecurity.io/
+  - https://docs.stepsecurity.io/
+  needs_review: false
 - id: tekton-chains
   name: Tekton Chains
   summary: Tekton controller that records, signs, and stores supply-chain metadata for pipeline task runs.
@@ -179,4 +248,41 @@
   - https://tekton.dev/docs/chains/
   - https://github.com/tektoncd/chains
   - https://github.com/tektoncd/chains/blob/main/LICENSE
+  needs_review: false
+- id: the-update-framework
+  name: The Update Framework
+  summary: CNCF framework and specification for securing software update metadata against repository and
+    signing-key compromise.
+  official_url: https://theupdateframework.io/
+  repository_url: https://github.com/theupdateframework/specification
+  repository_archived: false
+  documentation_url: https://theupdateframework.github.io/specification/latest/
+  categories:
+  - software-supply-chain-security
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - secure
+  - build
+  - release
+  use_when:
+  - You design or operate a software update system that needs threshold signing, rollback protection,
+    and delegated trust.
+  avoid_when:
+  - Avoid implementing the specification without a maintained implementation, key-rotation design, and
+    recovery procedures.
+  deployment_models:
+  - library
+  - service
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://theupdateframework.io/
+  - https://theupdateframework.github.io/specification/latest/
+  - https://github.com/theupdateframework/specification
   needs_review: false

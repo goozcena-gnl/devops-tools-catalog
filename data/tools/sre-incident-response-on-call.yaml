@@ -429,6 +429,68 @@
   sources:
   - legacy:devopstools_final.md#L828
   needs_review: true
+- id: stratoshark
+  name: Stratoshark
+  summary: System-call and log analyzer from the Wireshark project for inspecting captured system activity.
+  official_url: https://stratoshark.org/
+  categories:
+  - sre-incident-response-on-call
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need Wireshark-style interactive analysis of system-call captures during authorized troubleshooting
+    or incident response.
+  avoid_when:
+  - Avoid collecting sensitive host activity without approved capture scope and evidence handling.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: GPL-2.0-or-later
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://stratoshark.org/
+  - https://gitlab.com/wireshark/wireshark
+  needs_review: false
+- id: tshark
+  name: TShark
+  summary: Command-line network protocol analyzer from the Wireshark project for live captures and saved
+    trace files.
+  official_url: https://www.wireshark.org/docs/man-pages/tshark.html
+  categories:
+  - sre-incident-response-on-call
+  roles:
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need scriptable packet capture and protocol decoding for authorized troubleshooting or incident
+    response.
+  avoid_when:
+  - Avoid capturing sensitive traffic without authorization, retention controls, and an approved evidence-handling
+    process.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: GPL-2.0-or-later
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.wireshark.org/docs/man-pages/tshark.html
+  - https://gitlab.com/wireshark/wireshark
+  needs_review: false
 - id: wireshark
   name: Wireshark
   summary: Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.

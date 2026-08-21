@@ -596,21 +596,21 @@ GitOps automation for Kubernetes and cloud-native apps.
 
 [Official site](https://docs.gitops.weaveworks.org) · [Source repository](https://github.com/weaveworks/weave-gitops)
 
-### YokeCD
+### Yoke
 
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-GitOps continuous delivery tool.
+Kubernetes package management and deployment tool that evaluates Go-based configuration as code.
 
 **Use when**
 
-- * You want a newer, lightweight GitOps tool and are willing to explore early-stage projects.
+- You want typed, testable Go-based Kubernetes package definitions and direct cluster deployment.
 
 **Consider alternatives when**
 
-- * You need production-proven tooling with large community support.
+- Avoid it when the team requires declarative YAML-only GitOps reconciliation with a larger established ecosystem.
 
-[Official site](https://yokecd.github.io) · [Source repository](https://github.com/yokecd/yoke)
+[Official site](https://yokecd.github.io/) · [Documentation](https://yokecd.github.io/docs/) · [Source repository](https://github.com/yokecd/yoke)

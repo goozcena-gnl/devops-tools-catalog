@@ -11,7 +11,7 @@ from tests.conftest import minimal_record
 
 def test_catalogue_loads_successfully() -> None:
     tools = load_tools()
-    assert len(tools) == 1146
+    assert len(tools) == 1229
     assert tools == sorted(tools, key=lambda item: item["id"])
 
 

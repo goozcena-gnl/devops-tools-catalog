@@ -27,6 +27,38 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L130
   - legacy:devopstools_final.md#L228
   needs_review: true
+- id: arcane
+  name: Arcane
+  summary: Self-hosted web interface for managing Docker containers, images, networks, and Compose projects.
+  official_url: https://getarcane.app/
+  repository_url: https://github.com/getarcaneapp/arcane
+  repository_archived: false
+  categories:
+  - virtualization-bare-metal-homelab
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a focused graphical management surface for Docker hosts.
+  avoid_when:
+  - Avoid it when you require Kubernetes orchestration or a mature enterprise fleet-management control
+    plane.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: BSD-3-Clause
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://getarcane.app/
+  - https://github.com/getarcaneapp/arcane
+  needs_review: false
 - id: azure-linux
   name: Azure Linux
   summary: Microsoft's CBL-Mariner-based Linux distribution optimized for container and cloud workloads
@@ -549,6 +581,41 @@
   - https://github.com/harvester/harvester/blob/master/LICENSE
   - https://www.suse.com/products/rancher/virtualization/
   needs_review: false
+- id: homarr
+  name: Homarr
+  summary: Self-hosted dashboard for organizing and monitoring links to homelab and infrastructure services.
+  official_url: https://homarr.dev/
+  repository_url: https://github.com/homarr-labs/homarr
+  repository_archived: false
+  documentation_url: https://homarr.dev/docs/category/getting-started/
+  categories:
+  - virtualization-bare-metal-homelab
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a consolidated operator landing page for self-hosted services and basic integrations.
+  avoid_when:
+  - Avoid it as a substitute for service discovery, observability, or an access-control gateway.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://homarr.dev/
+  - https://homarr.dev/docs/category/getting-started/
+  - https://homarr.dev/docs/community/license/
+  - https://github.com/homarr-labs/homarr
+  - https://github.com/homarr-labs/homarr/blob/dev/LICENSE
+  needs_review: false
 - id: hyper-v
   name: Hyper-V
   summary: Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows
@@ -694,6 +761,40 @@
   sources:
   - legacy:devopstools_final.md#L248
   needs_review: true
+- id: komodo
+  name: Komodo
+  summary: Self-hosted platform for building, deploying, and operating containerized workloads across
+    servers.
+  official_url: https://komo.do/
+  repository_url: https://github.com/moghtech/komodo
+  repository_archived: false
+  documentation_url: https://komo.do/docs/intro
+  categories:
+  - virtualization-bare-metal-homelab
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a self-hosted control plane for Docker and Compose workloads across multiple hosts.
+  avoid_when:
+  - Avoid it when Kubernetes-native reconciliation or a vendor-supported enterprise platform is required.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://komo.do/
+  - https://komo.do/docs/intro
+  - https://github.com/moghtech/komodo
+  needs_review: false
 - id: lazydocker
   name: Lazydocker
   summary: Terminal UI for Docker and Docker Compose.
@@ -948,6 +1049,41 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L168
   - legacy:devopstools_final.md#L255
   needs_review: true
+- id: nextcloud
+  name: Nextcloud
+  summary: Self-hosted collaboration platform for files, groupware, communication, and extensible applications.
+  official_url: https://nextcloud.com/
+  repository_url: https://github.com/nextcloud/server
+  repository_archived: false
+  documentation_url: https://docs.nextcloud.com/
+  categories:
+  - virtualization-bare-metal-homelab
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need an extensible self-hosted collaboration and file-sync platform with deployment control.
+  avoid_when:
+  - Avoid it when a narrowly scoped file service would better fit the operational and upgrade burden.
+  deployment_models:
+  - self-hosted
+  - saas
+  license_model: open-core
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://nextcloud.com/
+  - https://docs.nextcloud.com/
+  - https://github.com/nextcloud/server
+  needs_review: false
 - id: open-vswitch
   name: Open vSwitch
   summary: Production-quality multilayer virtual switch for network automation, programmatic control,
@@ -1093,6 +1229,36 @@
   - https://clusterlabs.org/projects/pacemaker/doc/2.1/Pacemaker_Explained/singlehtml/
   - https://github.com/ClusterLabs/pacemaker
   - https://github.com/ClusterLabs/pacemaker/blob/main/COPYING
+  needs_review: false
+- id: pikapods
+  name: PikaPods
+  summary: Managed hosting service for deploying supported open-source applications as isolated pods.
+  official_url: https://www.pikapods.com/
+  documentation_url: https://docs.pikapods.com/
+  categories:
+  - virtualization-bare-metal-homelab
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want managed hosting for a supported open-source application without operating its base infrastructure.
+  avoid_when:
+  - Avoid treating PikaPods as the canonical identity or licence source for the applications it hosts.
+  deployment_models:
+  - saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.pikapods.com/
+  - https://docs.pikapods.com/
   needs_review: false
 - id: podman
   name: Podman

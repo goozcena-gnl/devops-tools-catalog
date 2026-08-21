@@ -28,6 +28,72 @@
   - legacy:1_Foundational-Skills/README.md#L4
   - legacy:devopstools_final.md#L82
   needs_review: true
+- id: codeberg
+  name: Codeberg
+  summary: Non-profit hosted software forge built on Forgejo for free and open-source projects.
+  official_url: https://codeberg.org/
+  documentation_url: https://docs.codeberg.org/
+  categories:
+  - source-control-repository-management
+  roles:
+  - devops-engineer
+  - release-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - develop
+  use_when:
+  - You need a community-governed hosted Git forge for openly licensed projects.
+  avoid_when:
+  - Avoid it when enterprise SLAs, proprietary public projects, or self-hosted administrative control
+    are required.
+  deployment_models:
+  - saas
+  license_model: free-saas
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://codeberg.org/
+  - https://docs.codeberg.org/
+  needs_review: false
+- id: gerrit-code-review
+  name: Gerrit Code Review
+  summary: Self-hosted Git code-review system with change-based workflows and granular access controls.
+  official_url: https://www.gerritcodereview.com/
+  repository_url: https://gerrit.googlesource.com/gerrit
+  repository_archived: false
+  documentation_url: https://gerrit-documentation.storage.googleapis.com/Documentation/3.13.0/index.html
+  categories:
+  - source-control-repository-management
+  roles:
+  - devops-engineer
+  - release-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - plan
+  - develop
+  use_when:
+  - You need enforced pre-submit review with Gerrit's change and patch-set workflow.
+  avoid_when:
+  - Avoid it when contributors and automation require a conventional pull-request workflow with lower
+    operating overhead.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-21'
+  sources:
+  - https://www.gerritcodereview.com/
+  - https://gerrit-documentation.storage.googleapis.com/Documentation/3.13.0/index.html
+  - https://gerrit.googlesource.com/gerrit
+  needs_review: false
 - id: git
   name: Git
   summary: Distributed version control system.
@@ -61,8 +127,9 @@
   needs_review: true
 - id: gitea
   name: Gitea
-  summary: Lightweight, self-hosted Git service.
-  official_url: https://about.gitea.com
+  summary: Self-hosted Git forge with repository hosting, code review, issues, packages, and automation
+    integrations.
+  official_url: https://about.gitea.com/
   repository_url: https://github.com/go-gitea/gitea
   categories:
   - source-control-repository-management
@@ -76,21 +143,25 @@
   - plan
   - develop
   use_when:
-  - You need a low-resource, self-hosted Git platform.
+  - You need a lightweight self-hosted Git forge with integrated collaboration features.
   avoid_when:
-  - You need enterprise-grade CI/CD, advanced permissions, or large-scale org management out of the box.*
-    <!-- cspell:ignore Gitea -->.
-  deployment_models: []
+  - Avoid it when required enterprise governance, managed operations, or ecosystem integrations are unavailable.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-21'
   sources:
-  - legacy:1_Foundational-Skills/README.md#L6
-  - legacy:devopstools_final.md#L84
-  needs_review: true
+  - https://about.gitea.com/
+  - https://github.com/go-gitea/gitea
+  - https://docs.gitea.com/
+  needs_review: false
+  repository_archived: false
+  documentation_url: https://docs.gitea.com/
+  license_spdx: MIT
 - id: github
   name: GitHub
   summary: Popular platform for hosting Git repositories.
