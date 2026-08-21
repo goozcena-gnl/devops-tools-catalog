@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+import subprocess
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -148,7 +149,13 @@ def test_machine_api_replacement_candidates_remain_zero() -> None:
 
 
 def test_plan_csv_header_semantics_and_lf_endings() -> None:
-    raw = PLAN_CSV.read_bytes()
+    repository_path = PLAN_CSV.relative_to(ROOT).as_posix()
+    raw = subprocess.run(
+        ["git", "show", f":{repository_path}"],
+        cwd=ROOT,
+        capture_output=True,
+        check=True,
+    ).stdout
     assert b"\r" not in raw
     assert raw.endswith(b"\n")
 
