@@ -442,12 +442,12 @@ def test_batch_d_ledger_previous_values_match_pinned_baseline() -> None:
         )
 
 
-def test_batch_d_ledger_final_values_match_current_canonical_yaml() -> None:
+def test_batch_d_ledger_final_values_match_pinned_result() -> None:
     planning = {row["tool_id"]: row for row in _planning_rows()}
     for row in _ledger_rows():
         tool_id = row["tool_id"]
         yaml_file = planning[tool_id]["canonical_yaml_file"]
-        tool = _load_tool(yaml_file, tool_id)
+        tool = _load_tool_at_rev(BATCH_D_RESULT_SHA, yaml_file, tool_id)
 
         assert row["final_status"] == str(tool.get("status", ""))
         assert row["final_needs_review"] == str(tool.get("needs_review", "")).lower()

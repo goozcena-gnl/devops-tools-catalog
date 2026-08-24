@@ -6,13 +6,13 @@
     "documentation": 99,
     "free-saas": 1,
     "open-core": 93,
-    "oss": 741,
+    "oss": 742,
     "source-available": 19,
-    "unknown": 250
+    "unknown": 249
   },
   "statuses": {
     "active": 236,
-    "archived": 7,
-    "needs-review": 986
+    "archived": 9,
+    "needs-review": 984
   }
 }

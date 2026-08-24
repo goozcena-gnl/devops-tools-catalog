@@ -316,7 +316,8 @@ Proprietary no-cost desktop toolkit for manual web application security testing.
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Source Available<br>
-**Status:** Needs Review
+**Status:** Archived<br>
+**Repository:** Archived
 
 Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
 

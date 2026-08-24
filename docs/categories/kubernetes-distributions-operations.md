@@ -180,8 +180,9 @@ Kubectl plugin for collecting Kubernetes cluster state, logs, and events into br
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Archived<br>
+**Repository:** Archived
 
 Kubernetes policy enforcement tool.
 
@@ -193,7 +194,7 @@ Kubernetes policy enforcement tool.
 
 - You already enforce policies at admission time with Kyverno/OPA Gatekeeper.
 
-[Official site](https://www.datree.io)
+[Official site](https://github.com/datreeio/datree) · [Source repository](https://github.com/datreeio/datree)
 
 ### DC/OS
 

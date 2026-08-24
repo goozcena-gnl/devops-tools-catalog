@@ -212,7 +212,7 @@ Local emulator for selected Azure services exposed through a single native proce
 
 - You require full Azure behavioral parity or production control-plane validation.
 
-[Official site](https://floci.io/floci-az/) · [Documentation](https://floci.io/floci-az/getting-started/) · [Source repository](https://github.com/floci-io/floci-az)
+[Official site](https://floci.io/floci-az/) · [Documentation](https://floci.io/floci-az/) · [Source repository](https://github.com/floci-io/floci-az)
 
 ### Google Cloud Platform
 

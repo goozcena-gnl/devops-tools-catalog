@@ -3,7 +3,9 @@
 
 Records remain here for migration and historical context; they are not active recommendations.
 
+- **CAI (RobotSec)** (archived) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
 - **CDKTF** (archived) — Terraform CDK framework.
+- **Datree** (archived) — Kubernetes policy enforcement tool.
 - **Grafana OnCall** (archived) — Incident response and on-call management (OSS core with SaaS offering).
 - **Kaniko** (archived) — Build container images in Kubernetes without Docker daemon.
 - **Keptn** (archived) — Cloud-native lifecycle management and delivery.

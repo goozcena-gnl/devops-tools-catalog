@@ -42,7 +42,7 @@
 | [crossview](https://github.com/crossplane-contrib/crossview) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [crust-gather](https://deepwiki.com/crust-gather/crust-gather) | Kubernetes distributions and operations | oss | needs-review |
 | [Dapr](https://dapr.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Datree](https://www.datree.io) | Kubernetes distributions and operations | unknown | needs-review |
+| [Datree](https://github.com/datreeio/datree) | Kubernetes distributions and operations | oss | archived |
 | [DC/OS](https://dcos.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Descheduler](https://github.com/kubernetes-sigs/descheduler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) | Kubernetes distributions and operations | oss | needs-review |
