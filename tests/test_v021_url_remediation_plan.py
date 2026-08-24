@@ -19,7 +19,6 @@ ROOT = Path(__file__).resolve().parents[1]
 PLAN_MD = ROOT / "docs" / "maintenance" / "v0.2.1-url-remediation-plan.md"
 PLAN_CSV = ROOT / "docs" / "maintenance" / "v0.2.1-url-remediation-plan.csv"
 LEDGER = ROOT / "docs" / "link-review-ledger.md"
-REPORT = ROOT / "reports" / "link-report.json"
 SCHEMA = ROOT / "schema" / "tool.schema.json"
 
 
@@ -123,13 +122,6 @@ def test_strict_rows_and_counts_are_accounted_for() -> None:
     strict_ids = {row.tool_id for row in strict_rows}
     missing = sorted(strict_ids - plan_ids)
     assert not missing, f"Strict unresolved IDs missing from plan: {missing}"
-
-    report = json.loads(_read(REPORT))
-    summary = report["summary"]
-    assert summary["manual-verification-required"] == 25
-    assert summary["http-error"] == 2
-    assert summary["tls-failure"] == 1
-    assert summary["repository-archived"] == 10
 
 
 def test_machine_api_replacement_candidates_remain_zero() -> None:

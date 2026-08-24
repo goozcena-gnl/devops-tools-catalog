@@ -1,3 +1,5 @@
+import json
+from collections import Counter
 from pathlib import Path
 
 import scripts.check_links as check_links
@@ -223,3 +225,19 @@ def test_machine_report_exposes_strict_and_recovery_fields() -> None:
     assert by_url[recovered.url]["head_status"] == 404
     assert by_url[recovered.url]["get_fallback"] is True
     assert by_url[blocker.url]["strict_status"] == "blocking-new"
+
+
+def test_committed_link_report_counts_are_self_consistent() -> None:
+    report_path = Path(__file__).resolve().parents[1] / "reports" / "link-report.json"
+    payload = json.loads(report_path.read_text(encoding="utf-8"))
+    results = payload["results"]
+
+    assert payload["summary"] == dict(
+        sorted(Counter(item["classification"] for item in results).items())
+    )
+    strict_counts = Counter(item["strict_status"] for item in results)
+    assert payload["strict"]["blocking_new"] == strict_counts["blocking-new"]
+    assert payload["strict"]["blocking_known"] == strict_counts["blocking-known"]
+    assert payload["strict"]["strict_result"] == (
+        "FAIL" if strict_counts["blocking-new"] else "PASS"
+    )
