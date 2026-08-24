@@ -404,6 +404,20 @@ def load_cache(path: Path, max_age: timedelta) -> dict[str, LinkResult]:
         return {}
 
 
+def cache_result_matches_context(
+    result: LinkResult, context: UrlContext, *, check_archived: bool
+) -> bool:
+    if repository_coordinates(result.url) is None:
+        return True
+    if check_archived:
+        return (
+            result.request_method == "GITHUB_API"
+            and result.repository_archived_expected
+            == context.repository_archived_expected
+        )
+    return result.request_method != "GITHUB_API"
+
+
 def load_baseline(path: Path) -> dict[str, BaselineItem]:
     payload = json.loads(path.read_text(encoding="utf-8"))
     if payload.get("version") != 1:
@@ -611,7 +625,15 @@ def run_audit(
 ) -> list[LinkResult]:
     contexts = catalogue_url_contexts(root)
     urls = list(contexts)
-    cache = load_cache(cache_path, timedelta(hours=cache_hours))
+    loaded_cache = load_cache(cache_path, timedelta(hours=cache_hours))
+    cache = {
+        url: result
+        for url, result in loaded_cache.items()
+        if url in contexts
+        and cache_result_matches_context(
+            result, contexts[url], check_archived=check_archived
+        )
+    }
     limiter = DomainRateLimiter(domain_interval)
     results = dict(cache)
     pending = [url for url in urls if url not in cache]

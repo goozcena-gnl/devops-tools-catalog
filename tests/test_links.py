@@ -8,6 +8,7 @@ from scripts.check_links import (
     DomainRateLimiter,
     HttpOutcome,
     LinkResult,
+    UrlContext,
     assess_strict_results,
     catalogue_url_contexts,
     check_url,
@@ -15,6 +16,7 @@ from scripts.check_links import (
     classify_status,
     report_payload,
     repository_coordinates,
+    run_audit,
     strict_exit_code,
 )
 
@@ -31,6 +33,7 @@ def result(url: str, classification: str, **kwargs: object) -> LinkResult:
         checked_at="2026-08-24T00:00:00+00:00",
         repository_archived=kwargs.get("repository_archived"),
         repository_archived_expected=kwargs.get("repository_archived_expected"),
+        request_method=kwargs.get("request_method", "HEAD"),
         head_status=kwargs.get("head_status"),
         get_fallback=bool(kwargs.get("get_fallback", False)),
     )
@@ -38,6 +41,59 @@ def result(url: str, classification: str, **kwargs: object) -> LinkResult:
 
 def baseline_item(url: str, classification: str) -> BaselineItem:
     return BaselineItem(url, classification, "reviewed", "issue-2", "2026-08-24")
+
+
+def archived_result(url: str, expected: bool) -> LinkResult:
+    return result(
+        url,
+        (
+            "repository-archived-expected"
+            if expected
+            else "repository-archived-unexpected"
+        ),
+        status=200,
+        repository_archived=True,
+        repository_archived_expected=expected,
+        request_method="GITHUB_API",
+    )
+
+
+def run_with_cached_result(
+    monkeypatch,
+    tmp_path: Path,
+    *,
+    cached: LinkResult,
+    current_expected: bool,
+    check_archived: bool,
+    fresh: LinkResult,
+) -> tuple[LinkResult, list[dict[str, object]]]:
+    context = UrlContext(("tool",), current_expected)
+    calls: list[dict[str, object]] = []
+
+    monkeypatch.setattr(
+        check_links, "catalogue_url_contexts", lambda root: {cached.url: context}
+    )
+    monkeypatch.setattr(
+        check_links, "load_cache", lambda path, max_age: {cached.url: cached}
+    )
+    monkeypatch.setattr(check_links, "write_if_changed", lambda path, content: False)
+
+    def probe(url: str, **kwargs: object) -> LinkResult:
+        calls.append({"url": url, **kwargs})
+        return fresh
+
+    monkeypatch.setattr(check_links, "check_url", probe)
+    checked = run_audit(
+        tmp_path,
+        workers=1,
+        retries=0,
+        timeout=1,
+        domain_interval=0,
+        cache_path=tmp_path / "cache.json",
+        cache_hours=24,
+        check_archived=check_archived,
+    )
+    return checked[0], calls
 
 
 def test_link_status_classification_is_non_binary() -> None:
@@ -152,6 +208,170 @@ def test_repository_archive_expectation_comes_only_from_repository_records(
     ].repository_archived_expected
     assert not contexts["https://github.com/org/shared"].repository_archived_expected
     assert not contexts["https://product.test"].repository_archived_expected
+
+
+def test_cache_reprobes_when_expected_archive_metadata_is_removed(
+    monkeypatch, tmp_path: Path
+) -> None:
+    url = "https://github.com/org/repository"
+    fresh = archived_result(url, False)
+
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=archived_result(url, True),
+        current_expected=False,
+        check_archived=True,
+        fresh=fresh,
+    )
+
+    assert checked is fresh
+    assert len(calls) == 1
+    assert calls[0]["repository_archived_expected"] is False
+
+
+def test_cache_reprobes_when_unexpected_archive_metadata_is_added(
+    monkeypatch, tmp_path: Path
+) -> None:
+    url = "https://github.com/org/repository"
+    fresh = archived_result(url, True)
+
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=archived_result(url, False),
+        current_expected=True,
+        check_archived=True,
+        fresh=fresh,
+    )
+
+    assert checked is fresh
+    assert len(calls) == 1
+    assert calls[0]["repository_archived_expected"] is True
+
+
+def test_archive_enabled_run_rejects_ordinary_head_cache(
+    monkeypatch, tmp_path: Path
+) -> None:
+    url = "https://github.com/org/repository"
+    cached = result(url, "valid", status=200, request_method="HEAD")
+    fresh = archived_result(url, False)
+
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=cached,
+        current_expected=False,
+        check_archived=True,
+        fresh=fresh,
+    )
+
+    assert checked is fresh
+    assert len(calls) == 1
+    assert calls[0]["check_archived"] is True
+
+
+def test_archive_disabled_run_rejects_github_api_cache(
+    monkeypatch, tmp_path: Path
+) -> None:
+    url = "https://github.com/org/repository"
+    fresh = result(url, "valid", status=200, request_method="HEAD")
+
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=archived_result(url, False),
+        current_expected=False,
+        check_archived=False,
+        fresh=fresh,
+    )
+
+    assert checked is fresh
+    assert len(calls) == 1
+    assert calls[0]["check_archived"] is False
+
+
+def test_archive_cache_is_reused_for_unchanged_expected_context(
+    monkeypatch, tmp_path: Path
+) -> None:
+    url = "https://github.com/org/repository"
+    cached = archived_result(url, True)
+
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=cached,
+        current_expected=True,
+        check_archived=True,
+        fresh=result(url, "http-error"),
+    )
+
+    assert checked is cached
+    assert calls == []
+
+
+def test_archive_cache_is_reused_for_unchanged_unexpected_context(
+    monkeypatch, tmp_path: Path
+) -> None:
+    url = "https://github.com/org/repository"
+    cached = archived_result(url, False)
+
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=cached,
+        current_expected=False,
+        check_archived=True,
+        fresh=result(url, "http-error"),
+    )
+
+    assert checked is cached
+    assert calls == []
+
+
+def test_archive_api_fallback_is_not_authoritative_on_next_checked_run(
+    monkeypatch, tmp_path: Path
+) -> None:
+    url = "https://github.com/org/repository"
+    cached_fallback = result(
+        url,
+        "valid",
+        status=200,
+        repository_archived_expected=True,
+        request_method="GET",
+    )
+    fresh = archived_result(url, True)
+
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=cached_fallback,
+        current_expected=True,
+        check_archived=True,
+        fresh=fresh,
+    )
+
+    assert checked is fresh
+    assert len(calls) == 1
+    assert calls[0]["check_archived"] is True
+
+
+def test_non_github_cache_reuse_ignores_archive_mode(
+    monkeypatch, tmp_path: Path
+) -> None:
+    cached = result("https://example.test", "valid", status=200)
+
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=cached,
+        current_expected=False,
+        check_archived=True,
+        fresh=result(cached.url, "http-error"),
+    )
+
+    assert checked is cached
+    assert calls == []
 
 
 def test_strict_assessment_separates_known_new_and_changed_blockers() -> None:
