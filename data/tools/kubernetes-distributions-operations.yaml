@@ -285,7 +285,9 @@
 - id: datree
   name: Datree
   summary: Kubernetes policy enforcement tool.
-  official_url: https://www.datree.io
+  official_url: https://github.com/datreeio/datree
+  repository_url: https://github.com/datreeio/datree
+  repository_archived: true
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -302,16 +304,20 @@
   avoid_when:
   - You already enforce policies at admission time with Kyverno/OPA Gatekeeper.
   deployment_models: []
-  license_model: unknown
+  license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: archived
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-24'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L24
   - legacy:devopstools_final.md#L456
-  needs_review: true
+  - https://github.com/datreeio/datree
+  - https://github.com/datreeio/datree/blob/main/README.md
+  - https://github.com/datreeio/datree/blob/main/LICENSE.md
+  needs_review: false
 - id: dc-os
   name: DC/OS
   summary: Open-source datacenter operating system built on Apache Mesos for running containers and distributed

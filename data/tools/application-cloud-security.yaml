@@ -477,6 +477,7 @@
     pro licensing options.
   official_url: https://aliasrobotics.github.io/cai
   repository_url: https://github.com/aliasrobotics/cai
+  repository_archived: true
   documentation_url: https://aliasrobotics.github.io/cai/
   categories:
   - application-cloud-security
@@ -495,14 +496,17 @@
   deployment_models: []
   license_model: source-available
   maturity: unknown
-  status: needs-review
+  status: archived
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-24'
   sources:
   - legacy:6_Security/README.md#L11
   - legacy:devopstools_final.md#L845
-  needs_review: true
+  - https://github.com/aliasrobotics/cai
+  - https://github.com/aliasrobotics/cai/blob/archive/README.md
+  - https://aliasrobotics.com/cybersecuritysuperintelligence.php
+  needs_review: false
 - id: calico-cloud
   name: Calico Cloud
   summary: Managed SaaS platform built on Calico Open Source for networking/security/observability.

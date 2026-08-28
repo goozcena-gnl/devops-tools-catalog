@@ -102,7 +102,7 @@
 - [crust-gather](https://deepwiki.com/crust-gather/crust-gather) — Kubectl plugin for collecting Kubernetes cluster state, logs, and events into browsable snapshots for debugging and post-mortem analysis.
 - [ctop](https://ctop.sh) — Container metrics viewer (top-like).
 - [Dapr](https://dapr.io) — Distributed application runtime for microservices.
-- [Datree](https://www.datree.io) — Kubernetes policy enforcement tool.
+- [Datree](https://github.com/datreeio/datree) — Kubernetes policy enforcement tool.
 - [DC/OS](https://dcos.io) — Open-source datacenter operating system built on Apache Mesos for running containers and distributed services.
 - [DeepSpeed](https://www.deepspeed.ai) — Deep learning optimization library for large-scale model training and inference.
 - [Descheduler](https://github.com/kubernetes-sigs/descheduler) — Rebalance pods in Kubernetes clusters.

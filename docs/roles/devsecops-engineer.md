@@ -27,7 +27,7 @@
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Burp Suite](https://portswigger.net/burp) | Application and cloud security | unknown | needs-review |
 | [Burp Suite Community Edition](https://portswigger.net/burp/downloads) | Application and cloud security | commercial | active |
-| [CAI (RobotSec)](https://aliasrobotics.github.io/cai) | Application and cloud security | source-available | needs-review |
+| [CAI (RobotSec)](https://aliasrobotics.github.io/cai) | Application and cloud security | source-available | archived |
 | [Calico Cloud](https://www.calicocloud.io/home) | Application and cloud security | open-core | needs-review |
 | [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Cartography](https://docs.cartography.dev/) | Application and cloud security | oss | active |

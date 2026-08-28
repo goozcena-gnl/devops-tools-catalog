@@ -123,7 +123,7 @@
 | [Dapr](https://dapr.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Dash0](https://www.dash0.com) | FinOps and sustainability | commercial | active |
 | [Datadog Cloud Cost Management](https://www.datadoghq.com/product/cloud-cost-management) | FinOps and sustainability | commercial | active |
-| [Datree](https://www.datree.io) | Kubernetes distributions and operations | unknown | needs-review |
+| [Datree](https://github.com/datreeio/datree) | Kubernetes distributions and operations | oss | archived |
 | [DC/OS](https://dcos.io) | Kubernetes distributions and operations | oss | needs-review |
 | [DeepSpeed](https://www.deepspeed.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [DeepTutor](https://deeptutor.info/) | Documentation, learning and career resources | documentation | needs-review |

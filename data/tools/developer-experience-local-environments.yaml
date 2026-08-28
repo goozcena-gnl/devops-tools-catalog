@@ -638,7 +638,7 @@
   summary: Local emulator for selected Azure services exposed through a single native process.
   official_url: https://floci.io/floci-az/
   repository_url: https://github.com/floci-io/floci-az
-  documentation_url: https://floci.io/floci-az/getting-started/
+  documentation_url: https://floci.io/floci-az/
   categories:
   - developer-experience-local-environments
   - cloud-platforms-management
@@ -658,10 +658,11 @@
   license_model: oss
   license_spdx: MIT
   status: active
-  verified_on: '2026-08-12'
+  verified_on: '2026-08-24'
   sources:
   - https://floci.io/floci-az/
   - https://github.com/floci-io/floci-az
+  - https://github.com/floci-io/floci-az/blob/main/README.md
   - https://github.com/floci-io/floci-az/blob/main/LICENSE
   needs_review: false
 - id: ghostty

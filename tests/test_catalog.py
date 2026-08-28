@@ -64,11 +64,12 @@ def test_capsule_uses_current_project_repository() -> None:
     assert capsule["status"] == "active"
 
 
-def test_cai_remains_under_review_for_license_boundary() -> None:
+def test_cai_preserves_license_boundary_when_archived() -> None:
     cai = next(tool for tool in load_tools() if tool["id"] == "cai-robotsec")
     assert cai["license_model"] == "source-available"
-    assert cai["status"] == "needs-review"
-    assert cai["needs_review"] is True
+    assert cai["status"] == "archived"
+    assert cai["repository_archived"] is True
+    assert cai["needs_review"] is False
 
 
 def test_commercial_cloud_services_can_be_active() -> None:
