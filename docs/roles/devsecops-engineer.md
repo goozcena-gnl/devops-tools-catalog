@@ -204,7 +204,7 @@
 | [slsa-verifier](https://github.com/slsa-framework/slsa-verifier) | Application and cloud security | oss | needs-review |
 | [Snipe-IT](https://snipeitapp.com/) | Policy, governance and compliance | open-core | active |
 | [Snort](https://www.snort.org) | Application and cloud security | oss | needs-review |
-| [Snyk](https://snyk.io) | Application and cloud security | open-core | active |
+| [Snyk](https://snyk.io) | Application and cloud security | commercial | active |
 | [Socket](https://socket.dev) | Application and cloud security | unknown | needs-review |
 | [SOOS DAST](https://hub.docker.com/r/soosio/dast) | Application and cloud security | open-core | needs-review |
 | [SOPS](https://getsops.io) | IAM, secrets and certificate management | oss | needs-review |

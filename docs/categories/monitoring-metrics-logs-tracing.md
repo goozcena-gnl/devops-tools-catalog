@@ -512,9 +512,7 @@ Self-hosted log processing and observability platform with visual pipelines, sea
 
 **Use when**
 
-- You want a self-hosted low-code pipeline for ingesting
-- transforming
-- and exploring logs.
+- You want a self-hosted low-code pipeline for ingesting, transforming, and exploring logs.
 
 **Consider alternatives when**
 
@@ -1468,9 +1466,7 @@ Self-hosted network inventory and topology mapping platform with automated devic
 
 **Consider alternatives when**
 
-- You need packet-level monitoring
-- endpoint management
-- or cannot authorize active network discovery.
+- You need packet-level monitoring, endpoint management, or cannot authorize active network discovery.
 
 [Official site](https://scanopy.net/) · [Source repository](https://github.com/scanopy/scanopy)
 
@@ -1774,9 +1770,7 @@ Hosted monitoring service for website and server uptime, DNS records, certificat
 
 **Consider alternatives when**
 
-- You require self-hosting
-- internal telemetry correlation
-- or control over the monitoring data plane.
+- You require self-hosting, internal telemetry correlation, or control over the monitoring data plane.
 
 [Official site](https://virtualeyes.io/)
 

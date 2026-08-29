@@ -7,7 +7,7 @@
 |---|---|---|---|
 | [actionlint](https://rhysd.github.io/actionlint) | Developer experience and local environments | oss | needs-review |
 | [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
-| [AFFiNE](https://affine.pro/) | Workflow automation and ChatOps, Documentation, learning and career resources | open-core | active |
+| [AFFiNE](https://affine.pro/) | Documentation, learning and career resources | open-core | active |
 | [Aider](https://aider.chat) | Developer experience and local environments | oss | needs-review |
 | [Angular](https://angular.dev) | Developer experience and local environments | oss | needs-review |
 | [Ansible Lint](https://docs.ansible.com/projects/lint/) | CI, build and testing | oss | active |

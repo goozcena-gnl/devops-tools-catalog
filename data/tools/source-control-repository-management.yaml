@@ -67,7 +67,7 @@
   roles: [developer-experience-engineer, devops-engineer]
   lifecycle_stages: [plan, develop]
   use_when: [Your team uses Cursor paid plans and wants to evaluate its early-beta agent-oriented repository workflow.]
-  avoid_when: [You need a generally available forge with mature integrations, self-hosting, or provider independence.]
+  avoid_when: ["You need a generally available forge with mature integrations, self-hosting, or provider independence."]
   license_model: commercial
   commercial_offering: true
   maturity: experimental
@@ -357,8 +357,8 @@
   categories: [source-control-repository-management, ci-build-testing]
   roles: [devops-engineer, release-engineer]
   lifecycle_stages: [develop, build, test]
-  use_when: [An eligible open-source community needs the integrated Gerrit, Gitea, and Zuul services operated by OpenDev.]
-  avoid_when: [You need a general commercial forge, private enterprise hosting, or control over the service infrastructure.]
+  use_when: ["An eligible open-source community needs the integrated Gerrit, Gitea, and Zuul services operated by OpenDev."]
+  avoid_when: ["You need a general commercial forge, private enterprise hosting, or control over the service infrastructure."]
   license_model: free-saas
   maturity: established
   status: active

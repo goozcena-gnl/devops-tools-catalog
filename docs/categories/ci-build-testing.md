@@ -491,9 +491,7 @@ Containerized HTTP and HTTPS echo service for inspecting requests and testing pr
 
 **Use when**
 
-- You need a disposable endpoint to inspect forwarded headers
-- TLS behavior
-- or request bodies in authorized tests.
+- You need a disposable endpoint to inspect forwarded headers, TLS behavior, or request bodies in authorized tests.
 
 **Consider alternatives when**
 
@@ -950,15 +948,11 @@ Public collaborative infrastructure service providing Git hosting, code review, 
 
 **Use when**
 
-- An eligible open-source community needs the integrated Gerrit
-- Gitea
-- and Zuul services operated by OpenDev.
+- An eligible open-source community needs the integrated Gerrit, Gitea, and Zuul services operated by OpenDev.
 
 **Consider alternatives when**
 
-- You need a general commercial forge
-- private enterprise hosting
-- or control over the service infrastructure.
+- You need a general commercial forge, private enterprise hosting, or control over the service infrastructure.
 
 [Official site](https://opendev.org/) · [Documentation](https://docs.opendev.org/opendev/system-config/latest/)
 

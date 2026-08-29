@@ -56,8 +56,8 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 | [Policy, governance and compliance](docs/categories/policy-governance-compliance.md) | 3 |
 | [FinOps and sustainability](docs/categories/finops-sustainability.md) | 30 |
 | [Databases, caching and data infrastructure](docs/categories/databases-caching-data-infrastructure.md) | 23 |
-| [Serverless, edge and WebAssembly](docs/categories/serverless-edge-webassembly.md) | 11 |
-| [Workflow automation and ChatOps](docs/categories/workflow-automation-chatops.md) | 19 |
+| [Serverless, edge and WebAssembly](docs/categories/serverless-edge-webassembly.md) | 10 |
+| [Workflow automation and ChatOps](docs/categories/workflow-automation-chatops.md) | 18 |
 | [MLOps, LLMOps and AI infrastructure](docs/categories/mlops-llmops-ai-infrastructure.md) | 80 |
 | [Documentation, learning and career resources](docs/categories/documentation-learning-career.md) | 56 |
 | [Emerging and experimental tools](docs/categories/emerging-experimental.md) | 58 |
@@ -98,9 +98,9 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 785 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 786 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 21 |
-| `open-core` | OSS/community core with commercial features or service. | 96 |
+| `open-core` | OSS/community core with commercial features or service. | 95 |
 | `commercial` | Proprietary commercial product. | 33 |
 | `free-saas` | Hosted service with a free offering. | 3 |
 | `documentation` | Learning or documentation resource. | 99 |

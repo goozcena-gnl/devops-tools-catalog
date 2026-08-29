@@ -575,9 +575,7 @@ Self-hosted OpenID Connect provider that authenticates users with passkeys.
 
 **Consider alternatives when**
 
-- You require a broad enterprise IAM suite with complex federation
-- lifecycle governance
-- or vendor support.
+- You require a broad enterprise IAM suite with complex federation, lifecycle governance, or vendor support.
 
 [Official site](https://pocket-id.org/) · [Source repository](https://github.com/pocket-id/pocket-id)
 
@@ -710,9 +708,7 @@ Lightweight self-hosted authentication gateway for protecting applications behin
 
 **Consider alternatives when**
 
-- You require full identity governance
-- complex authorization policy
-- or enterprise federation.
+- You require full identity governance, complex authorization policy, or enterprise federation.
 
 [Official site](https://tinyauth.app/) · [Source repository](https://github.com/tinyauthapp/tinyauth)
 

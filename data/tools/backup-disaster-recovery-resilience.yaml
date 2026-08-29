@@ -176,7 +176,7 @@
   categories: [backup-disaster-recovery-resilience]
   roles: [infrastructure-systems-engineer, site-reliability-engineer]
   lifecycle_stages: [operate]
-  use_when: [You need scriptable copy, synchronization, or mount workflows across heterogeneous storage providers.]
+  use_when: ["You need scriptable copy, synchronization, or mount workflows across heterogeneous storage providers."]
   avoid_when: [You need application-consistent backups with catalogued retention and coordinated restore procedures.]
   license_model: oss
   license_spdx: MIT
@@ -194,7 +194,7 @@
   roles: [infrastructure-systems-engineer, site-reliability-engineer]
   lifecycle_stages: [operate]
   use_when: [You want auditable encrypted snapshot backups to commodity or cloud object storage.]
-  avoid_when: [You need application-aware orchestration, centralized policy management, or vendor-supported recovery workflows.]
+  avoid_when: ["You need application-aware orchestration, centralized policy management, or vendor-supported recovery workflows."]
   license_model: oss
   license_spdx: BSD-2-Clause
   maturity: established

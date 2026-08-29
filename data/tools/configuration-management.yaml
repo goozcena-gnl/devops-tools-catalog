@@ -39,7 +39,7 @@
   use_when: [You already use Ansible and need supported modules for declarative Kubernetes resource automation.]
   avoid_when: [You need continuous GitOps reconciliation rather than task-driven automation.]
   license_model: oss
-  license_spdx: GPL-3.0-only
+  license_spdx: GPL-3.0-or-later
   maturity: established
   status: active
   verified_on: '2026-08-29'

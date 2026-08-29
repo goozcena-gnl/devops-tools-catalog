@@ -305,9 +305,7 @@ Cursor-hosted Git forge designed for human and coding-agent repository collabora
 
 **Consider alternatives when**
 
-- You need a generally available forge with mature integrations
-- self-hosting
-- or provider independence.
+- You need a generally available forge with mature integrations, self-hosting, or provider independence.
 
 [Official site](https://cursor.com/origin)
 

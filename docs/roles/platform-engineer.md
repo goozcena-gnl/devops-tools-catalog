@@ -71,6 +71,7 @@
 | [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | unknown | needs-review |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
+| [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
 | [Capacitor Next](https://gimlet.io/capacitor-next/) | Kubernetes distributions and operations | oss | active |
 | [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Carvel](https://carvel.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -552,7 +553,6 @@
 | [tty-share](https://tty-share.com) | Emerging and experimental tools | oss | needs-review |
 | [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) | Kubernetes distributions and operations | documentation | needs-review |
 | [Typhoon](https://typhoon.psdn.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Ubuntu Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | commercial | active |
 | [Udemy CKA Course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests) | Documentation, learning and career resources | documentation | needs-review |
 | [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | needs-review |
 | [UrBackup](https://www.urbackup.org) | Emerging and experimental tools | oss | needs-review |

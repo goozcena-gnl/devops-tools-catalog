@@ -62,6 +62,7 @@
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 - [Bunnyshell](https://www.bunnyshell.com) — Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven by environment-as-code workflows.
 - [Caddy](https://caddyserver.com) — Extensible web server and reverse proxy with automatic HTTPS.
+- [Canonical Kubernetes](https://ubuntu.com/kubernetes) — Canonical's open-source Kubernetes distribution for production clusters across public cloud, on-premises, and edge infrastructure.
 - [Capacitor Next](https://gimlet.io/capacitor-next/) — Local-first web interface for Kubernetes resources, Helm history, and Flux reconciliation state.
 - [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 - [Carvel](https://carvel.dev) — Kubernetes tools suite.
@@ -514,7 +515,6 @@
 - [TrueNAS](https://www.truenas.com) — Storage platform/OS for NAS and SAN with community and enterprise editions.
 - [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) — Guide to optimizing swap for Kubernetes nodes.
 - [Typhoon](https://typhoon.psdn.io) — Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platforms.
-- [Ubuntu Kubernetes](https://ubuntu.com/kubernetes) — Canonical-supported Kubernetes distribution and managed offering for public cloud, on-premises, and edge deployments.
 - [Uncloud](https://uncloud.run) — Multi-node Docker Compose for running containerized apps in production without Kubernetes.
 - [Unraid](https://unraid.net) — Operating system for network-attached storage and virtualization.
 - [Uyuni](https://www.uyuni-project.org/) — Open-source systems management platform for software channels, configuration, patching, and client lifecycle.

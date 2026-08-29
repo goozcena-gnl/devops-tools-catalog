@@ -81,7 +81,7 @@
 | [JuiceFS](https://juicefs.com/en) | Databases, caching and data infrastructure | open-core | needs-review |
 | [Juju](https://canonical.com/juju) | Configuration management | oss | needs-review |
 | [k3sup](https://github.com/alexellis/k3sup) | Kubernetes distributions and operations | open-core | active |
-| [Kairos](https://kairos.io/) | Kubernetes distributions and operations, Serverless, edge and WebAssembly | oss | active |
+| [Kairos](https://kairos.io/) | Kubernetes distributions and operations | oss | active |
 | [Kasten K10](https://www.kasten.io) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [Kata Containers](https://katacontainers.io) | Virtualization, bare metal and homelab | oss | active |
 | [Katello](https://theforeman.org/plugins/katello/) | Configuration management | oss | active |

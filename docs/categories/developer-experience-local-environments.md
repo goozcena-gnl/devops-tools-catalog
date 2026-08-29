@@ -415,9 +415,7 @@ Containerized HTTP and HTTPS echo service for inspecting requests and testing pr
 
 **Use when**
 
-- You need a disposable endpoint to inspect forwarded headers
-- TLS behavior
-- or request bodies in authorized tests.
+- You need a disposable endpoint to inspect forwarded headers, TLS behavior, or request bodies in authorized tests.
 
 **Consider alternatives when**
 
@@ -1526,9 +1524,7 @@ Linux desktop application that runs Windows in a managed virtual machine with in
 
 **Consider alternatives when**
 
-- You need native performance
-- enterprise VDI governance
-- or a supported Windows server virtualization platform.
+- You need native performance, enterprise VDI governance, or a supported Windows server virtualization platform.
 
 [Official site](https://www.winboat.app/) · [Source repository](https://github.com/winboat-org/winboat)
 

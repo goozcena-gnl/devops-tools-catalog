@@ -35,15 +35,11 @@ Self-hosted DNS resolver and filtering service for network-wide blocking and DNS
 
 **Use when**
 
-- You need centrally managed DNS filtering for a home
-- lab
-- or small network.
+- You need centrally managed DNS filtering for a home, lab, or small network.
 
 **Consider alternatives when**
 
-- You need authoritative enterprise DNS
-- endpoint-level policy
-- or high-availability support guarantees.
+- You need authoritative enterprise DNS, endpoint-level policy, or high-availability support guarantees.
 
 [Documentation](https://github.com/AdguardTeam/AdGuardHome/wiki) · [Source repository](https://github.com/AdguardTeam/AdGuardHome)
 
@@ -806,9 +802,7 @@ Browser-based toolkit for defensively decoding, transforming, and analyzing data
 
 **Use when**
 
-- You need repeatable in-browser transformations for authorized analysis of encodings
-- files
-- or network data.
+- You need repeatable in-browser transformations for authorized analysis of encodings, files, or network data.
 
 **Consider alternatives when**
 
@@ -2916,7 +2910,7 @@ Open-source network intrusion detection and prevention system (IDS/IPS).
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Open Core<br>
+**Model:** Commercial<br>
 **Status:** Active
 
 Security scanning for code, dependencies, and containers.

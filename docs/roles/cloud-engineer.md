@@ -51,6 +51,7 @@
 | [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | needs-review |
 | [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) | IAM, secrets and certificate management | oss | needs-review |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
+| [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
 | [Cast AI](https://cast.ai) | FinOps and sustainability | unknown | needs-review |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | source-available | archived |
@@ -277,7 +278,6 @@
 | [TiKV](https://tikv.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [Trendshift](https://trendshift.io) | Documentation, learning and career resources | unknown | needs-review |
 | [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | unknown | needs-review |
-| [Ubuntu Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | commercial | active |
 | [Udemy CKA Course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests) | Documentation, learning and career resources | documentation | needs-review |
 | [Varnish Cache](https://www.varnish-software.com/fr-fr/produits/varnish-cache) | Databases, caching and data infrastructure | unknown | needs-review |
 | [Vaultwarden](https://www.vaultwarden.net/) | IAM, secrets and certificate management | oss | active |

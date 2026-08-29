@@ -81,6 +81,25 @@ Kubernetes troubleshooting and monitoring platform with chat integrations and au
 
 [Official site](https://botkube.io) · [Documentation](https://docs.botkube.io/) · [Source repository](https://github.com/kubeshop/botkube)
 
+### Canonical Kubernetes
+
+**Categories:** Kubernetes distributions and operations<br>
+**Roles:** Kubernetes Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Oss<br>
+**Status:** Active
+
+Canonical's open-source Kubernetes distribution for production clusters across public cloud, on-premises, and edge infrastructure.
+
+**Use when**
+
+- You want Canonical packaging, lifecycle support, or managed operations for Kubernetes on Ubuntu-based infrastructure.
+
+**Consider alternatives when**
+
+- You are standardized on another Kubernetes distribution or provider-managed service.
+
+[Official site](https://ubuntu.com/kubernetes) · [Documentation](https://documentation.ubuntu.com/canonical-kubernetes/latest/) · [Source repository](https://github.com/canonical/k8s-snap)
+
 ### Capacitor Next
 
 **Categories:** Kubernetes distributions and operations<br>
@@ -901,7 +920,7 @@ Keyboard-driven TUI for debugging Kubernetes workloads and resources.
 
 ### Kairos
 
-**Categories:** Kubernetes distributions and operations, Serverless, edge and WebAssembly<br>
+**Categories:** Kubernetes distributions and operations<br>
 **Roles:** Kubernetes Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
 **Status:** Active
@@ -2077,10 +2096,7 @@ Kubernetes SIGs toolkit that simulates large numbers of nodes and pods without r
 
 **Consider alternatives when**
 
-- You need to validate real workload networking
-- storage
-- scheduling resource use
-- or node behavior.
+- You need to validate real workload networking, storage, scheduling resource use, or node behavior.
 
 [Official site](https://kwok.sigs.k8s.io/) · [Source repository](https://github.com/kubernetes-sigs/kwok)
 
@@ -2615,27 +2631,6 @@ Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platfo
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
 [Official site](https://typhoon.psdn.io) · [Source repository](https://github.com/poseidon/typhoon)
-
-### Ubuntu Kubernetes
-
-**Categories:** Kubernetes distributions and operations<br>
-**Roles:** Kubernetes Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Commercial<br>
-**Status:** Active
-
-Canonical-supported Kubernetes distribution and managed offering for public cloud, on-premises, and edge deployments.
-
-**Use when**
-
-- You want Canonical packaging
-- lifecycle support
-- or managed operations for Kubernetes on Ubuntu-based infrastructure.
-
-**Consider alternatives when**
-
-- You need a community-only upstream distribution or are standardized on another provider-managed service.
-
-[Official site](https://ubuntu.com/kubernetes) · [Documentation](https://documentation.ubuntu.com/canonical-kubernetes/)
 
 ### vcluster
 

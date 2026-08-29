@@ -61,6 +61,17 @@ def test_wave3_additions_resolve_to_unique_canonical_records() -> None:
     assert len(tools_by_id) == 1285
 
 
+def test_wave3_guidance_sentences_are_not_split_by_flow_yaml_commas() -> None:
+    rows = _rows()
+    tools_by_id = {tool["id"]: tool for tool in load_tools(ROOT)}
+    for row in rows:
+        if row["decision"] != "ADD":
+            continue
+        tool = tools_by_id[row["resulting_catalog_id"]]
+        assert len(tool.get("use_when", [])) == 1, tool["id"]
+        assert len(tool.get("avoid_when", [])) == 1, tool["id"]
+
+
 def test_wave3_duplicate_and_existing_boundaries_are_explicit() -> None:
     rows = {int(row["input_index"]): row for row in _rows()}
     assert rows[52]["duplicate_of_input_index"] == "51"

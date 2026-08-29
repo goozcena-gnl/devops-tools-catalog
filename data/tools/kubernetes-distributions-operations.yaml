@@ -91,6 +91,25 @@
   - legacy:4_Kubernetes-Containers/README.md#L20
   - legacy:devopstools_final.md#L450
   needs_review: false
+- id: canonical-kubernetes
+  name: Canonical Kubernetes
+  summary: Canonical's open-source Kubernetes distribution for production clusters across public cloud, on-premises, and edge infrastructure.
+  official_url: https://ubuntu.com/kubernetes
+  repository_url: https://github.com/canonical/k8s-snap
+  documentation_url: https://documentation.ubuntu.com/canonical-kubernetes/latest/
+  categories: [kubernetes-distributions-operations]
+  roles: [kubernetes-engineer, cloud-engineer, platform-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: ["You want Canonical packaging, lifecycle support, or managed operations for Kubernetes on Ubuntu-based infrastructure."]
+  avoid_when: [You are standardized on another Kubernetes distribution or provider-managed service.]
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  commercial_offering: true
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://ubuntu.com/kubernetes, https://documentation.ubuntu.com/canonical-kubernetes/latest/, https://github.com/canonical/k8s-snap, https://github.com/canonical/k8s-snap/blob/main/LICENSE]
+  needs_review: false
 - id: capacitor-next
   name: Capacitor Next
   summary: Local-first web interface for Kubernetes resources, Helm history, and Flux reconciliation state.
@@ -1278,7 +1297,7 @@
   summary: Immutable Linux meta-distribution for building edge appliances and Kubernetes-based operating-system images.
   official_url: https://kairos.io/
   repository_url: https://github.com/kairos-io/kairos
-  categories: [kubernetes-distributions-operations, serverless-edge-webassembly]
+  categories: [kubernetes-distributions-operations]
   roles: [kubernetes-engineer, infrastructure-systems-engineer]
   lifecycle_stages: [build, deploy, operate]
   use_when: [You need declarative immutable host images and lifecycle tooling for edge Kubernetes deployments.]
@@ -2981,7 +3000,7 @@
   roles: [kubernetes-engineer, site-reliability-engineer]
   lifecycle_stages: [test, operate]
   use_when: [You need inexpensive scale and control-plane testing with simulated Kubernetes nodes.]
-  avoid_when: [You need to validate real workload networking, storage, scheduling resource use, or node behavior.]
+  avoid_when: ["You need to validate real workload networking, storage, scheduling resource use, or node behavior."]
   license_model: oss
   license_spdx: Apache-2.0
   maturity: growing
@@ -3719,23 +3738,6 @@
   sources:
   - legacy:devopstools_final.md#L672
   needs_review: true
-- id: ubuntu-kubernetes
-  name: Ubuntu Kubernetes
-  summary: Canonical-supported Kubernetes distribution and managed offering for public cloud, on-premises, and edge deployments.
-  official_url: https://ubuntu.com/kubernetes
-  documentation_url: https://documentation.ubuntu.com/canonical-kubernetes/
-  categories: [kubernetes-distributions-operations]
-  roles: [kubernetes-engineer, cloud-engineer, platform-engineer]
-  lifecycle_stages: [deploy, operate]
-  use_when: [You want Canonical packaging, lifecycle support, or managed operations for Kubernetes on Ubuntu-based infrastructure.]
-  avoid_when: [You need a community-only upstream distribution or are standardized on another provider-managed service.]
-  license_model: commercial
-  commercial_offering: true
-  maturity: established
-  status: active
-  verified_on: '2026-08-29'
-  sources: [https://ubuntu.com/kubernetes, https://documentation.ubuntu.com/canonical-kubernetes/]
-  needs_review: false
 - id: vcluster
   name: vcluster
   summary: Run virtual Kubernetes clusters inside a host cluster (multi-tenancy / isolation).

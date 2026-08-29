@@ -16,15 +16,11 @@ Self-hosted DNS resolver and filtering service for network-wide blocking and DNS
 
 **Use when**
 
-- You need centrally managed DNS filtering for a home
-- lab
-- or small network.
+- You need centrally managed DNS filtering for a home, lab, or small network.
 
 **Consider alternatives when**
 
-- You need authoritative enterprise DNS
-- endpoint-level policy
-- or high-availability support guarantees.
+- You need authoritative enterprise DNS, endpoint-level policy, or high-availability support guarantees.
 
 [Documentation](https://github.com/AdguardTeam/AdGuardHome/wiki) · [Source repository](https://github.com/AdguardTeam/AdGuardHome)
 
@@ -977,10 +973,7 @@ Browser-based rack layout designer for planning equipment placement and exportin
 
 **Consider alternatives when**
 
-- You need a full DCIM system with discovery
-- cabling
-- capacity
-- and asset lifecycle integration.
+- You need a full DCIM system with discovery, cabling, capacity, and asset lifecycle integration.
 
 [Official site](https://www.racku.la/) · [Source repository](https://github.com/RackulaLives/Rackula)
 
@@ -1109,10 +1102,7 @@ Self-hosted authoritative and recursive DNS server with an administrative web in
 
 **Use when**
 
-- You need a self-hosted DNS server covering authoritative zones
-- recursion
-- forwarding
-- and lab or small-network administration.
+- You need a self-hosted DNS server covering authoritative zones, recursion, forwarding, and lab or small-network administration.
 
 **Consider alternatives when**
 
@@ -1169,9 +1159,7 @@ Bootable USB tool that launches ISO, WIM, IMG, VHD, and EFI images directly from
 
 **Use when**
 
-- You maintain multi-image boot media for provisioning
-- recovery
-- or hardware diagnostics.
+- You maintain multi-image boot media for provisioning, recovery, or hardware diagnostics.
 
 **Consider alternatives when**
 
@@ -1213,9 +1201,7 @@ Linux desktop application that runs Windows in a managed virtual machine with in
 
 **Consider alternatives when**
 
-- You need native performance
-- enterprise VDI governance
-- or a supported Windows server virtualization platform.
+- You need native performance, enterprise VDI governance, or a supported Windows server virtualization platform.
 
 [Official site](https://www.winboat.app/) · [Source repository](https://github.com/winboat-org/winboat)
 

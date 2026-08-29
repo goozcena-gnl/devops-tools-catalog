@@ -547,7 +547,7 @@
   categories: [developer-experience-local-environments, ci-build-testing]
   roles: [devops-engineer, developer-experience-engineer]
   lifecycle_stages: [develop, test]
-  use_when: [You need a disposable endpoint to inspect forwarded headers, TLS behavior, or request bodies in authorized tests.]
+  use_when: ["You need a disposable endpoint to inspect forwarded headers, TLS behavior, or request bodies in authorized tests."]
   avoid_when: [You need production application behavior or must not echo potentially sensitive request data.]
   license_model: oss
   license_spdx: MIT
@@ -2096,7 +2096,7 @@
   roles: [developer-experience-engineer, infrastructure-systems-engineer]
   lifecycle_stages: [develop, operate]
   use_when: [You need selected Windows applications alongside a Linux workstation and can operate a local virtual machine.]
-  avoid_when: [You need native performance, enterprise VDI governance, or a supported Windows server virtualization platform.]
+  avoid_when: ["You need native performance, enterprise VDI governance, or a supported Windows server virtualization platform."]
   license_model: oss
   license_spdx: MIT
   maturity: emerging

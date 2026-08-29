@@ -76,6 +76,7 @@
 - [cAdvisor](https://github.com/google/cadvisor) — Container Advisor daemon that collects, aggregates, and exports container resource usage and performance data.
 - [Cal.com](https://cal.com) — Open-source scheduling and booking platform (Calendly alternative) for teams and individuals.
 - [Camunda](https://camunda.com) — Workflow and process automation (BPMN/DMN).
+- [Canonical Kubernetes](https://ubuntu.com/kubernetes) — Canonical's open-source Kubernetes distribution for production clusters across public cloud, on-premises, and edge infrastructure.
 - [Capacitor Next](https://gimlet.io/capacitor-next/) — Local-first web interface for Kubernetes resources, Helm history, and Flux reconciliation state.
 - [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 - [cardamon](https://github.com/dominikhei/cardamon) — Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop rules for them.
@@ -673,7 +674,6 @@
 - [TShark](https://www.wireshark.org/docs/man-pages/tshark.html) — Command-line network protocol analyzer from the Wireshark project for live captures and saved trace files.
 - [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) — Guide to optimizing swap for Kubernetes nodes.
 - [Typhoon](https://typhoon.psdn.io) — Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platforms.
-- [Ubuntu Kubernetes](https://ubuntu.com/kubernetes) — Canonical-supported Kubernetes distribution and managed offering for public cloud, on-premises, and edge deployments.
 - [Unraid](https://unraid.net) — Operating system for network-attached storage and virtualization.
 - [Uptime Kuma](https://uptime.kuma.pet) — Self-hosted uptime monitoring.
 - [UptimeRobot](https://uptimerobot.com) — Uptime monitoring service.

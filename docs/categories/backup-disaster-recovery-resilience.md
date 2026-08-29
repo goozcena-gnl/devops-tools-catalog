@@ -168,9 +168,7 @@ Command-line data transfer and synchronization tool for object stores, cloud fil
 
 **Use when**
 
-- You need scriptable copy
-- synchronization
-- or mount workflows across heterogeneous storage providers.
+- You need scriptable copy, synchronization, or mount workflows across heterogeneous storage providers.
 
 **Consider alternatives when**
 
@@ -193,9 +191,7 @@ Encrypted deduplicating backup program for local and remote storage backends.
 
 **Consider alternatives when**
 
-- You need application-aware orchestration
-- centralized policy management
-- or vendor-supported recovery workflows.
+- You need application-aware orchestration, centralized policy management, or vendor-supported recovery workflows.
 
 [Official site](https://restic.net/) · [Source repository](https://github.com/restic/restic)
 

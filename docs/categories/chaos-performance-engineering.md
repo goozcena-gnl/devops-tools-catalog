@@ -229,10 +229,7 @@ Kubernetes SIGs toolkit that simulates large numbers of nodes and pods without r
 
 **Consider alternatives when**
 
-- You need to validate real workload networking
-- storage
-- scheduling resource use
-- or node behavior.
+- You need to validate real workload networking, storage, scheduling resource use, or node behavior.
 
 [Official site](https://kwok.sigs.k8s.io/) · [Source repository](https://github.com/kubernetes-sigs/kwok)
 

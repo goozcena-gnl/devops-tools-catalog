@@ -1060,7 +1060,7 @@
   categories: [application-cloud-security]
   roles: [devsecops-engineer, cloud-security-engineer]
   lifecycle_stages: [test, secure]
-  use_when: [You need repeatable in-browser transformations for authorized analysis of encodings, files, or network data.]
+  use_when: ["You need repeatable in-browser transformations for authorized analysis of encodings, files, or network data."]
   avoid_when: [You need a hardened automated pipeline or cannot expose sensitive material to browser runtime state.]
   license_model: oss
   license_spdx: Apache-2.0
@@ -4138,8 +4138,7 @@
   avoid_when:
   - Budget is constrained and OSS tools (Trivy, Grype, CodeQL) cover your needs.
   deployment_models: []
-  license_model: open-core
-  license_spdx: Apache-2.0
+  license_model: commercial
   commercial_offering: true
   maturity: established
   status: active

@@ -8,7 +8,7 @@
 | [Academy JetBrains](https://academy.jetbrains.com) | Foundations, Linux and scripting | documentation | needs-review |
 | [actionlint](https://rhysd.github.io/actionlint) | Developer experience and local environments | oss | needs-review |
 | [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
-| [AFFiNE](https://affine.pro/) | Workflow automation and ChatOps, Documentation, learning and career resources | open-core | active |
+| [AFFiNE](https://affine.pro/) | Documentation, learning and career resources | open-core | active |
 | [Aider](https://aider.chat) | Developer experience and local environments | oss | needs-review |
 | [Akka.NET](https://getakka.net) | Emerging and experimental tools | oss | needs-review |
 | [Alpine Linux](https://github.com/alpinelinux) | Virtualization, bare metal and homelab | oss | needs-review |

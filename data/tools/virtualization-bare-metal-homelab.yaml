@@ -6,8 +6,8 @@
   categories: [virtualization-bare-metal-homelab, application-cloud-security]
   roles: [infrastructure-systems-engineer, cloud-security-engineer]
   lifecycle_stages: [deploy, operate, secure]
-  use_when: [You need centrally managed DNS filtering for a home, lab, or small network.]
-  avoid_when: [You need authoritative enterprise DNS, endpoint-level policy, or high-availability support guarantees.]
+  use_when: ["You need centrally managed DNS filtering for a home, lab, or small network."]
+  avoid_when: ["You need authoritative enterprise DNS, endpoint-level policy, or high-availability support guarantees."]
   license_model: oss
   license_spdx: GPL-3.0-only
   maturity: established
@@ -1484,7 +1484,7 @@
   roles: [infrastructure-systems-engineer, devops-engineer]
   lifecycle_stages: [plan, operate]
   use_when: [You need a lightweight visual record or draft layout for physical rack equipment.]
-  avoid_when: [You need a full DCIM system with discovery, cabling, capacity, and asset lifecycle integration.]
+  avoid_when: ["You need a full DCIM system with discovery, cabling, capacity, and asset lifecycle integration."]
   license_model: oss
   license_spdx: MIT
   maturity: emerging
@@ -1678,7 +1678,7 @@
   categories: [virtualization-bare-metal-homelab]
   roles: [infrastructure-systems-engineer, cloud-security-engineer]
   lifecycle_stages: [deploy, operate, secure]
-  use_when: [You need a self-hosted DNS server covering authoritative zones, recursion, forwarding, and lab or small-network administration.]
+  use_when: ["You need a self-hosted DNS server covering authoritative zones, recursion, forwarding, and lab or small-network administration."]
   avoid_when: [You require a vendor-managed global DNS service or established enterprise support contracts.]
   license_model: oss
   license_spdx: GPL-3.0-only
@@ -1751,7 +1751,7 @@
   categories: [virtualization-bare-metal-homelab]
   roles: [infrastructure-systems-engineer, devops-engineer]
   lifecycle_stages: [deploy, operate]
-  use_when: [You maintain multi-image boot media for provisioning, recovery, or hardware diagnostics.]
+  use_when: ["You maintain multi-image boot media for provisioning, recovery, or hardware diagnostics."]
   avoid_when: [Secure-boot policy or supply-chain controls require vendor-certified single-purpose installation media.]
   license_model: oss
   license_spdx: GPL-3.0-only

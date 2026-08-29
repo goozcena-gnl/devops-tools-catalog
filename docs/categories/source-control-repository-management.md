@@ -58,9 +58,7 @@ Cursor-hosted Git forge designed for human and coding-agent repository collabora
 
 **Consider alternatives when**
 
-- You need a generally available forge with mature integrations
-- self-hosting
-- or provider independence.
+- You need a generally available forge with mature integrations, self-hosting, or provider independence.
 
 [Official site](https://cursor.com/origin)
 
@@ -265,14 +263,10 @@ Public collaborative infrastructure service providing Git hosting, code review, 
 
 **Use when**
 
-- An eligible open-source community needs the integrated Gerrit
-- Gitea
-- and Zuul services operated by OpenDev.
+- An eligible open-source community needs the integrated Gerrit, Gitea, and Zuul services operated by OpenDev.
 
 **Consider alternatives when**
 
-- You need a general commercial forge
-- private enterprise hosting
-- or control over the service infrastructure.
+- You need a general commercial forge, private enterprise hosting, or control over the service infrastructure.
 
 [Official site](https://opendev.org/) · [Documentation](https://docs.opendev.org/opendev/system-config/latest/)

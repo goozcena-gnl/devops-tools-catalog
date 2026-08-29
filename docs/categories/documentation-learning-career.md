@@ -7,7 +7,7 @@
 
 ### AFFiNE
 
-**Categories:** Workflow automation and ChatOps, Documentation, learning and career resources<br>
+**Categories:** Documentation, learning and career resources<br>
 **Roles:** Developer Experience Engineer, DevOps Engineer<br>
 **Model:** Open Core<br>
 **Status:** Active
@@ -16,9 +16,7 @@ Local-first collaborative workspace combining documents, whiteboards, and databa
 
 **Use when**
 
-- Engineering teams want a self-hostable workspace for operational notes
-- diagrams
-- and structured project knowledge.
+- Engineering teams want a self-hostable workspace for operational notes, diagrams, and structured project knowledge.
 
 **Consider alternatives when**
 

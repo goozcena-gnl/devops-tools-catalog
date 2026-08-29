@@ -20,6 +20,7 @@
 | [Buildah](https://buildah.io) | Containers and image tooling | oss | needs-review |
 | [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | needs-review |
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
+| [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
 | [Capacitor Next](https://gimlet.io/capacitor-next/) | Kubernetes distributions and operations | oss | active |
 | [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Carvel](https://carvel.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -123,7 +124,7 @@
 | [K9s](https://k9scli.io) | Kubernetes distributions and operations | oss | needs-review |
 | [k9sight](https://github.com/doganarif/k9sight) | Kubernetes distributions and operations | oss | needs-review |
 | [Kagent](https://kagent.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Kairos](https://kairos.io/) | Kubernetes distributions and operations, Serverless, edge and WebAssembly | oss | active |
+| [Kairos](https://kairos.io/) | Kubernetes distributions and operations | oss | active |
 | [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Kaniko](https://github.com/GoogleContainerTools/kaniko) | Deprecated and historical tools, Containers and image tooling | oss | archived |
 | [Karpenter](https://karpenter.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -290,7 +291,6 @@
 | [TrueNAS](https://www.truenas.com) | Kubernetes networking, storage and add-ons | open-core | needs-review |
 | [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) | Kubernetes distributions and operations | documentation | needs-review |
 | [Typhoon](https://typhoon.psdn.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Ubuntu Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | commercial | active |
 | [vcluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | needs-review |
 | [Vitess](https://vitess.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
