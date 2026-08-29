@@ -28,6 +28,40 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L68
   - legacy:devopstools_final.md#L194
   needs_review: true
+- id: ansible-kubernetes-core
+  name: Ansible kubernetes.core collection
+  summary: Ansible collection of modules and plugins for managing Kubernetes and OpenShift resources and APIs.
+  repository_url: https://github.com/ansible-collections/kubernetes.core
+  documentation_url: https://docs.ansible.com/ansible/latest/collections/kubernetes/core/
+  categories: [configuration-management, kubernetes-distributions-operations]
+  roles: [devops-engineer, kubernetes-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You already use Ansible and need supported modules for declarative Kubernetes resource automation.]
+  avoid_when: [You need continuous GitOps reconciliation rather than task-driven automation.]
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/ansible-collections/kubernetes.core, https://docs.ansible.com/ansible/latest/collections/kubernetes/core/, https://github.com/ansible-collections/kubernetes.core/blob/main/LICENSE]
+  needs_review: false
+- id: attuneops
+  name: AttuneOps
+  summary: Infrastructure orchestration application for authoring and running resumable multi-host automation procedures.
+  official_url: https://attuneops.io/
+  documentation_url: https://docs.attuneautomation.com/
+  categories: [configuration-management, workflow-automation-chatops]
+  roles: [devops-engineer, infrastructure-systems-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You want a visual procedure-oriented orchestrator with a free single-user community edition for labs or small environments.]
+  avoid_when: [You require source-available automation code or fully unattended collaborative operation without a commercial plan.]
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://attuneops.io/, https://attuneops.io/pricing, https://docs.attuneautomation.com/]
+  needs_review: false
 - id: cfengine
   name: CFEngine
   summary: Policy-based configuration management; community + commercial editions.
@@ -426,4 +460,21 @@
   - https://www.uyuni-project.org/
   - https://www.uyuni-project.org/uyuni-docs/
   - https://github.com/uyuni-project/uyuni
+  needs_review: false
+- id: webmin
+  name: Webmin
+  summary: Web-based administration interface for Unix systems and common server services.
+  official_url: https://webmin.com/
+  repository_url: https://github.com/webmin/webmin
+  categories: [configuration-management]
+  roles: [infrastructure-systems-engineer, devops-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You need delegated browser-based administration for individual Unix hosts and supported services.]
+  avoid_when: [You require declarative fleet-wide desired-state management or cannot expose an administrative web interface.]
+  license_model: oss
+  license_spdx: BSD-3-Clause
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://webmin.com/, https://github.com/webmin/webmin, https://github.com/webmin/webmin/blob/master/LICENCE]
   needs_review: false

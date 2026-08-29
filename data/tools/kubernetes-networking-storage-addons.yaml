@@ -1618,6 +1618,23 @@
   sources:
   - legacy:devopstools_final.md#L575
   needs_review: true
+- id: ipman
+  name: ipman
+  summary: Kubernetes operator that establishes encrypted IPsec connectivity between selected cluster networks.
+  official_url: https://dialohq.github.io/ipman/
+  repository_url: https://github.com/dialohq/ipman
+  categories: [kubernetes-networking-storage-addons, emerging-experimental]
+  roles: [kubernetes-engineer, cloud-security-engineer]
+  lifecycle_stages: [deploy, operate, secure]
+  use_when: [You are evaluating Kubernetes-managed IPsec links between clusters or external networks.]
+  avoid_when: [You need an established service mesh or enterprise VPN with broad interoperability and support.]
+  license_model: oss
+  license_spdx: MIT
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://dialohq.github.io/ipman/, https://github.com/dialohq/ipman, https://github.com/dialohq/ipman/blob/master/LICENSE]
+  needs_review: false
 - id: istio
   name: Istio
   summary: Service mesh for managing microservices traffic.
@@ -2196,6 +2213,23 @@
   - legacy:4_Kubernetes-Containers/README.md#L117
   - legacy:devopstools_final.md#L596
   needs_review: true
+- id: kubeelasti
+  name: KubeElasti
+  summary: Kubernetes controller and request proxy for scaling HTTP workloads to zero and restoring them on demand.
+  official_url: https://kubeelasti.dev/
+  repository_url: https://github.com/KubeElasti/KubeElasti
+  categories: [kubernetes-networking-storage-addons, finops-sustainability, emerging-experimental]
+  roles: [kubernetes-engineer, platform-engineer]
+  lifecycle_stages: [deploy, operate, optimize]
+  use_when: [You want to evaluate request-aware scale-to-zero behavior for low-traffic Kubernetes HTTP workloads.]
+  avoid_when: [Cold-start latency is unacceptable or you need a mature autoscaling platform with vendor support.]
+  license_model: oss
+  license_spdx: MIT
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://kubeelasti.dev/, https://github.com/KubeElasti/KubeElasti, https://github.com/KubeElasti/KubeElasti/blob/main/LICENSE]
+  needs_review: false
 - id: kubently
   name: Kubently
   summary: Kubernetes operations and management platform.

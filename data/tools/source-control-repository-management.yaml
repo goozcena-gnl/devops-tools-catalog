@@ -59,6 +59,22 @@
   - https://codeberg.org/
   - https://docs.codeberg.org/
   needs_review: false
+- id: cursor-origin
+  name: Cursor Origin
+  summary: Cursor-hosted Git forge designed for human and coding-agent repository collaboration.
+  official_url: https://cursor.com/origin
+  categories: [source-control-repository-management, emerging-experimental]
+  roles: [developer-experience-engineer, devops-engineer]
+  lifecycle_stages: [plan, develop]
+  use_when: [Your team uses Cursor paid plans and wants to evaluate its early-beta agent-oriented repository workflow.]
+  avoid_when: [You need a generally available forge with mature integrations, self-hosting, or provider independence.]
+  license_model: commercial
+  commercial_offering: true
+  maturity: experimental
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://cursor.com/origin]
+  needs_review: false
 - id: gerrit-code-review
   name: Gerrit Code Review
   summary: Self-hosted Git code-review system with change-based workflows and granular access controls.
@@ -125,6 +141,24 @@
   - legacy:1_Foundational-Skills/README.md#L5
   - legacy:devopstools_final.md#L83
   needs_review: true
+- id: gitbutler
+  name: GitButler
+  summary: Git client and collaboration workflow built around virtual branches and parallel changes.
+  official_url: https://gitbutler.com/
+  repository_url: https://github.com/gitbutlerapp/gitbutler
+  categories: [source-control-repository-management, developer-experience-local-environments]
+  roles: [developer-experience-engineer, release-engineer]
+  lifecycle_stages: [develop]
+  use_when: [You want a desktop workflow for composing and managing parallel Git changes through virtual branches.]
+  avoid_when: [You require a conventional command-line-only Git workflow or an OSI-approved license for the full application.]
+  license_model: source-available
+  license_spdx: FSL-1.1-MIT
+  commercial_offering: true
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://gitbutler.com/, https://github.com/gitbutlerapp/gitbutler, https://github.com/gitbutlerapp/gitbutler/blob/master/LICENSE.md]
+  needs_review: false
 - id: gitea
   name: Gitea
   summary: Self-hosted Git forge with repository hosting, code review, issues, packages, and automation
@@ -315,3 +349,19 @@
   - legacy:1_Foundational-Skills/README.md#L11
   - legacy:devopstools_final.md#L89
   needs_review: true
+- id: opendev
+  name: OpenDev
+  summary: Public collaborative infrastructure service providing Git hosting, code review, CI, and related services for open-source projects.
+  official_url: https://opendev.org/
+  documentation_url: https://docs.opendev.org/opendev/system-config/latest/
+  categories: [source-control-repository-management, ci-build-testing]
+  roles: [devops-engineer, release-engineer]
+  lifecycle_stages: [develop, build, test]
+  use_when: [An eligible open-source community needs the integrated Gerrit, Gitea, and Zuul services operated by OpenDev.]
+  avoid_when: [You need a general commercial forge, private enterprise hosting, or control over the service infrastructure.]
+  license_model: free-saas
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://opendev.org/, https://docs.opendev.org/opendev/system-config/latest/]
+  needs_review: false

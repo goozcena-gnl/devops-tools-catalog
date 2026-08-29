@@ -1999,6 +1999,22 @@
   sources:
   - legacy:devopstools_final.md#L1245
   needs_review: true
+- id: praesto
+  name: Praesto
+  summary: Kubernetes-native model cache system using an operator, node agent, and CSI driver to stage model artifacts on cluster nodes.
+  repository_url: https://github.com/federicolepera/praesto
+  categories: [mlops-llmops-ai-infrastructure, kubernetes-networking-storage-addons, emerging-experimental]
+  roles: [mlops-ai-infrastructure-engineer, kubernetes-engineer]
+  lifecycle_stages: [deploy, operate, optimize]
+  use_when: [You are testing node-local model caching to reduce repeated artifact downloads for Kubernetes AI workloads.]
+  avoid_when: [You need an established model registry or cannot operate privileged node and CSI components.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/federicolepera/praesto, https://github.com/federicolepera/praesto/blob/main/LICENSE]
+  needs_review: false
 - id: promptfoo
   name: Promptfoo
   summary: Test and evaluate LLM prompts.

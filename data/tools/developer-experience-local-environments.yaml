@@ -491,6 +491,23 @@
   - legacy:7_Development-Collaboration/README.md#L33
   - legacy:devopstools_final.md#L1059
   needs_review: true
+- id: diffyml
+  name: diffyml
+  summary: Command-line tool that compares YAML documents structurally instead of as line-oriented text.
+  official_url: https://szhekpisov.github.io/diffyml/
+  repository_url: https://github.com/szhekpisov/diffyml
+  categories: [developer-experience-local-environments]
+  roles: [devops-engineer, developer-experience-engineer]
+  lifecycle_stages: [develop, test]
+  use_when: [You need readable semantic differences between YAML documents in local or CI workflows.]
+  avoid_when: [A conventional text diff is sufficient or ordering and comments must remain significant.]
+  license_model: oss
+  license_spdx: MIT
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://szhekpisov.github.io/diffyml/, https://github.com/szhekpisov/diffyml, https://github.com/szhekpisov/diffyml/blob/main/LICENSE]
+  needs_review: false
 - id: direnv
   name: direnv
   summary: Shell extension that loads and unloads directory-specific environment variables.
@@ -521,6 +538,23 @@
   - https://direnv.net/docs/hook.html
   - https://github.com/direnv/direnv
   - https://github.com/direnv/direnv/blob/master/LICENSE
+  needs_review: false
+- id: docker-http-https-echo
+  name: docker-http-https-echo
+  summary: Containerized HTTP and HTTPS echo service for inspecting requests and testing proxies, ingress, and clients.
+  official_url: https://code.mendhak.com/docker-http-https-echo/
+  repository_url: https://github.com/mendhak/docker-http-https-echo
+  categories: [developer-experience-local-environments, ci-build-testing]
+  roles: [devops-engineer, developer-experience-engineer]
+  lifecycle_stages: [develop, test]
+  use_when: [You need a disposable endpoint to inspect forwarded headers, TLS behavior, or request bodies in authorized tests.]
+  avoid_when: [You need production application behavior or must not echo potentially sensitive request data.]
+  license_model: oss
+  license_spdx: MIT
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://code.mendhak.com/docker-http-https-echo/, https://github.com/mendhak/docker-http-https-echo, https://github.com/mendhak/docker-http-https-echo/blob/master/LICENSE.md]
   needs_review: false
 - id: drawdb
   name: drawDB
@@ -777,6 +811,23 @@
   - legacy:7_Development-Collaboration/README.md#L72
   - legacy:devopstools_final.md#L1112
   needs_review: true
+- id: graft
+  name: Graft
+  summary: Local-first developer tool for creating isolated Git-backed workspaces and coordinating parallel coding-agent work.
+  official_url: https://trailhq.com/graft
+  repository_url: https://github.com/trailhq/Graft
+  categories: [developer-experience-local-environments, source-control-repository-management]
+  roles: [developer-experience-engineer, devops-engineer]
+  lifecycle_stages: [develop]
+  use_when: [You need isolated workspaces for parallel agent or developer changes in the same Git repository.]
+  avoid_when: [Your workflow does not use Git worktrees or you need a hosted multi-user development platform.]
+  license_model: oss
+  license_spdx: MIT
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://trailhq.com/graft, https://github.com/trailhq/Graft, https://github.com/trailhq/Graft/blob/main/LICENSE]
+  needs_review: false
 - id: hadolint
   name: Hadolint
   summary: Dockerfile linter (best practices + common pitfalls).
@@ -951,6 +1002,23 @@
   - https://sw.kovidgoyal.net/kitty/
   - https://github.com/kovidgoyal/kitty
   - https://github.com/kovidgoyal/kitty/blob/master/LICENSE
+  needs_review: false
+- id: kubetable
+  name: KubeTable
+  summary: Local-first desktop database client that discovers and connects to databases running in Kubernetes clusters.
+  official_url: https://kubetable.dev/
+  repository_url: https://github.com/kubetable/kubetable
+  categories: [developer-experience-local-environments, emerging-experimental]
+  roles: [developer-experience-engineer, kubernetes-engineer]
+  lifecycle_stages: [develop, operate]
+  use_when: [You need a desktop workflow for reaching databases through Kubernetes contexts without a hosted control plane.]
+  avoid_when: [You require a mature shared database administration platform or cannot grant local cluster credentials.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://kubetable.dev/, https://github.com/kubetable/kubetable, https://github.com/kubetable/kubetable/blob/main/LICENSE]
   needs_review: false
 - id: markdownlint
   name: markdownlint
@@ -2019,6 +2087,23 @@
   - legacy:10_Miscellaneous/README.md#L46
   - legacy:devopstools_final.md#L1300
   needs_review: true
+- id: winboat
+  name: WinBoat
+  summary: Linux desktop application that runs Windows in a managed virtual machine with integrated applications and filesystem access.
+  official_url: https://www.winboat.app/
+  repository_url: https://github.com/winboat-org/winboat
+  categories: [developer-experience-local-environments, virtualization-bare-metal-homelab]
+  roles: [developer-experience-engineer, infrastructure-systems-engineer]
+  lifecycle_stages: [develop, operate]
+  use_when: [You need selected Windows applications alongside a Linux workstation and can operate a local virtual machine.]
+  avoid_when: [You need native performance, enterprise VDI governance, or a supported Windows server virtualization platform.]
+  license_model: oss
+  license_spdx: MIT
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://www.winboat.app/, https://github.com/winboat-org/winboat, https://github.com/winboat-org/winboat/blob/main/LICENSE]
+  needs_review: false
 - id: windsurf
   name: Windsurf
   summary: AI-powered code editor/IDE with agentic workflows (chat, code completion, refactoring) to speed

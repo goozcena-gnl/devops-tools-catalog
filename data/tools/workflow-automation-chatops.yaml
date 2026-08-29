@@ -29,6 +29,23 @@
   - legacy:3_CI-CD-Automation/README.md#L160
   - legacy:devopstools_final.md#L401
   needs_review: true
+- id: affine
+  name: AFFiNE
+  summary: Local-first collaborative workspace combining documents, whiteboards, and databases with self-hosting and hosted-service options.
+  official_url: https://affine.pro/
+  repository_url: https://github.com/toeverything/AFFiNE
+  categories: [workflow-automation-chatops, documentation-learning-career]
+  roles: [developer-experience-engineer, devops-engineer]
+  lifecycle_stages: [plan, learn]
+  use_when: [Engineering teams want a self-hostable workspace for operational notes, diagrams, and structured project knowledge.]
+  avoid_when: [You require a single permissive license across server and enterprise components or a specialized runbook automation engine.]
+  license_model: open-core
+  commercial_offering: true
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://affine.pro/, https://github.com/toeverything/AFFiNE, https://github.com/toeverything/AFFiNE/tree/canary/packages/backend/server/LICENSE]
+  needs_review: false
 - id: cal-com
   name: Cal.com
   summary: Open-source scheduling and booking platform (Calendly alternative) for teams and individuals.

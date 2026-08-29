@@ -28,6 +28,23 @@
   - legacy:4_Kubernetes-Containers/README.md#L179
   - legacy:devopstools_final.md#L683
   needs_review: true
+- id: clonezilla
+  name: Clonezilla
+  summary: Bootable disk-imaging and cloning system for bare-metal backup, recovery, and machine deployment.
+  official_url: https://clonezilla.org/
+  documentation_url: https://clonezilla.org/clonezilla-live-doc.php
+  categories: [backup-disaster-recovery-resilience]
+  roles: [infrastructure-systems-engineer, devops-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You need offline disk or partition imaging for bare-metal recovery or repeated workstation deployment.]
+  avoid_when: [You need continuous application-aware backups or orchestration-native recovery for cloud workloads.]
+  license_model: oss
+  license_spdx: GPL-2.0-only
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://clonezilla.org/, https://clonezilla.org/downloads.php, https://clonezilla.org/clonezilla-live.php]
+  needs_review: false
 - id: cloudcasa
   name: CloudCasa
   summary: Kubernetes backup and disaster recovery.
@@ -151,6 +168,40 @@
   - legacy:4_Kubernetes-Containers/README.md#L182
   - legacy:devopstools_final.md#L686
   needs_review: true
+- id: rclone
+  name: Rclone
+  summary: Command-line data transfer and synchronization tool for object stores, cloud file services, and local filesystems.
+  official_url: https://rclone.org/
+  repository_url: https://github.com/rclone/rclone
+  categories: [backup-disaster-recovery-resilience]
+  roles: [infrastructure-systems-engineer, site-reliability-engineer]
+  lifecycle_stages: [operate]
+  use_when: [You need scriptable copy, synchronization, or mount workflows across heterogeneous storage providers.]
+  avoid_when: [You need application-consistent backups with catalogued retention and coordinated restore procedures.]
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://rclone.org/, https://github.com/rclone/rclone, https://github.com/rclone/rclone/blob/master/COPYING]
+  needs_review: false
+- id: restic
+  name: restic
+  summary: Encrypted deduplicating backup program for local and remote storage backends.
+  official_url: https://restic.net/
+  repository_url: https://github.com/restic/restic
+  categories: [backup-disaster-recovery-resilience]
+  roles: [infrastructure-systems-engineer, site-reliability-engineer]
+  lifecycle_stages: [operate]
+  use_when: [You want auditable encrypted snapshot backups to commodity or cloud object storage.]
+  avoid_when: [You need application-aware orchestration, centralized policy management, or vendor-supported recovery workflows.]
+  license_model: oss
+  license_spdx: BSD-2-Clause
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://restic.net/, https://github.com/restic/restic, https://github.com/restic/restic/blob/master/LICENSE]
+  needs_review: false
 - id: stash
   name: Stash
   summary: Backup operator for Kubernetes.
@@ -181,6 +232,23 @@
   - legacy:4_Kubernetes-Containers/README.md#L183
   - legacy:devopstools_final.md#L687
   needs_review: true
+- id: syncthing
+  name: Syncthing
+  summary: Continuous peer-to-peer file synchronization service with encrypted transport and no mandatory central server.
+  official_url: https://syncthing.net/
+  repository_url: https://github.com/syncthing/syncthing
+  categories: [backup-disaster-recovery-resilience]
+  roles: [infrastructure-systems-engineer, devops-engineer]
+  lifecycle_stages: [operate]
+  use_when: [You need continuous file replication between devices under your control without a hosted coordination service.]
+  avoid_when: [You need immutable point-in-time backups because synchronization also propagates unwanted changes.]
+  license_model: oss
+  license_spdx: MPL-2.0
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://syncthing.net/, https://github.com/syncthing/syncthing, https://github.com/syncthing/syncthing/blob/main/LICENSE]
+  needs_review: false
 - id: trilio
   name: Trilio
   summary: Kubernetes backup and recovery platform.
