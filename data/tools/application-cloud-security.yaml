@@ -1052,6 +1052,23 @@
   - legacy:6_Security/README.md#L18
   - legacy:devopstools_final.md#L853
   needs_review: true
+- id: cyberchef
+  name: CyberChef
+  summary: Browser-based toolkit for defensively decoding, transforming, and analyzing data without sending it to a server.
+  official_url: https://gchq.github.io/CyberChef/
+  repository_url: https://github.com/gchq/CyberChef
+  categories: [application-cloud-security]
+  roles: [devsecops-engineer, cloud-security-engineer]
+  lifecycle_stages: [test, secure]
+  use_when: ["You need repeatable in-browser transformations for authorized analysis of encodings, files, or network data."]
+  avoid_when: [You need a hardened automated pipeline or cannot expose sensitive material to browser runtime state.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://gchq.github.io/CyberChef/, https://github.com/gchq/CyberChef, https://github.com/gchq/CyberChef/blob/master/LICENSE]
+  needs_review: false
 - id: cyclonedx
   name: CycloneDX
   summary: Open standard for SBOMs and related software supply chain BOM formats, including support for
@@ -2332,6 +2349,23 @@
   - legacy:6_Security/README.md#L30
   - legacy:devopstools_final.md#L875
   needs_review: true
+- id: kloak
+  name: Kloak
+  summary: eBPF-based Kubernetes runtime proxy that can keep application secrets out of workload processes.
+  official_url: https://getkloak.io/
+  repository_url: https://github.com/spinningfactory/kloak
+  categories: [application-cloud-security, emerging-experimental]
+  roles: [cloud-security-engineer, kubernetes-engineer]
+  lifecycle_stages: [deploy, operate, secure]
+  use_when: [You are evaluating runtime secret isolation for authorized Kubernetes workloads and can validate its eBPF interception model.]
+  avoid_when: [You need a mature cross-platform secret manager or cannot accept kernel-level interception dependencies.]
+  license_model: oss
+  license_spdx: AGPL-3.0-only
+  maturity: experimental
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://getkloak.io/, https://github.com/spinningfactory/kloak, https://github.com/spinningfactory/kloak/blob/main/LICENSE]
+  needs_review: false
 - id: kps-zeroexposure
   name: Kps-zeroexposure
   summary: Kubernetes zero-exposure policy tool.
@@ -2395,6 +2429,22 @@
   - https://docs.kubearmor.io/
   - https://github.com/kubearmor/KubeArmor
   - https://github.com/kubearmor/KubeArmor/blob/main/LICENSE
+  needs_review: false
+- id: kubernetes-mcp-guard
+  name: Kubernetes MCP Guard
+  summary: Security-focused MCP server that proposes Kubernetes remediation actions behind explicit human approval gates.
+  repository_url: https://github.com/mirusser/Kubernetes-MCP-Guard
+  categories: [application-cloud-security, emerging-experimental]
+  roles: [cloud-security-engineer, kubernetes-engineer]
+  lifecycle_stages: [operate, secure]
+  use_when: [You are testing human-approved Kubernetes security remediation through an MCP client in a controlled environment.]
+  avoid_when: [You need unattended production remediation or a mature policy engine with an established support lifecycle.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: experimental
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/mirusser/Kubernetes-MCP-Guard, https://github.com/mirusser/Kubernetes-MCP-Guard/blob/main/LICENSE]
   needs_review: false
 - id: lotp-living-off-the-pipeline
   name: LOTP (Living Off the Pipeline)
@@ -3240,6 +3290,23 @@
   sources:
   - legacy:devopstools_final.md#L895
   needs_review: true
+- id: osv-scanner
+  name: OSV-Scanner
+  summary: Vulnerability scanner that checks source trees, lockfiles, and container images against the OSV database.
+  official_url: https://google.github.io/osv-scanner/
+  repository_url: https://github.com/google/osv-scanner
+  categories: [application-cloud-security, software-supply-chain-security]
+  roles: [devsecops-engineer, cloud-security-engineer]
+  lifecycle_stages: [build, test, secure]
+  use_when: [You want an open-source scanner that understands ecosystems and OSV vulnerability records in CI or local workflows.]
+  avoid_when: [You require a commercial remediation platform or vulnerability intelligence beyond OSV coverage.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://google.github.io/osv-scanner/, https://github.com/google/osv-scanner, https://github.com/google/osv-scanner/blob/master/LICENSE]
+  needs_review: false
 - id: owasp-amass
   name: OWASP Amass
   summary: Attack-surface mapping and external asset discovery framework.
@@ -3902,6 +3969,22 @@
   sources:
   - legacy:devopstools_final.md#L904
   needs_review: true
+- id: shieldlist-agent
+  name: Shieldlist agent
+  summary: Host agent that tails service logs and applies rule-based IP sanctions through nftables, with an optional central controller.
+  repository_url: https://git.lrob.net/Shieldlist/shieldlist-agent
+  categories: [application-cloud-security, emerging-experimental]
+  roles: [infrastructure-systems-engineer, cloud-security-engineer]
+  lifecycle_stages: [operate, secure]
+  use_when: [You are evaluating self-hosted log-driven blocking on Linux hosts and can review its firewall rules and privileges.]
+  avoid_when: [You need a mature cross-platform intrusion-prevention product or centrally governed policy without operating the companion controller.]
+  license_model: oss
+  license_spdx: AGPL-3.0-only
+  maturity: experimental
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://git.lrob.net/Shieldlist/shieldlist-agent, https://git.lrob.net/Shieldlist/shieldlist-agent/src/branch/main/LICENSE]
+  needs_review: false
 - id: shuffle-automation
   name: Shuffle Automation
   summary: Open-source SOAR platform for security automation and response workflows.
@@ -4038,7 +4121,8 @@
   name: Snyk
   summary: Security scanning for code, dependencies, and containers.
   official_url: https://snyk.io
-  repository_url: https://github.com/snyk/snyk
+  repository_url: https://github.com/snyk/cli
+  documentation_url: https://docs.snyk.io/
   categories:
   - application-cloud-security
   subcategories:
@@ -4054,16 +4138,21 @@
   avoid_when:
   - Budget is constrained and OSS tools (Trivy, Grype, CodeQL) cover your needs.
   deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-29'
   sources:
+  - https://snyk.io
+  - https://docs.snyk.io/scan-with-snyk/snyk-container
+  - https://github.com/snyk/cli
+  - https://github.com/snyk/cli/blob/main/LICENSE
   - legacy:6_Security/README.md#L49
   - legacy:devopstools_final.md#L911
-  needs_review: true
+  needs_review: false
 - id: socket
   name: Socket
   summary: Supply chain security platform focused on malicious and zero-day dependency risks.

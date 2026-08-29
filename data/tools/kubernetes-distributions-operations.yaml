@@ -91,6 +91,25 @@
   - legacy:4_Kubernetes-Containers/README.md#L20
   - legacy:devopstools_final.md#L450
   needs_review: false
+- id: canonical-kubernetes
+  name: Canonical Kubernetes
+  summary: Canonical's open-source Kubernetes distribution for production clusters across public cloud, on-premises, and edge infrastructure.
+  official_url: https://ubuntu.com/kubernetes
+  repository_url: https://github.com/canonical/k8s-snap
+  documentation_url: https://documentation.ubuntu.com/canonical-kubernetes/latest/
+  categories: [kubernetes-distributions-operations]
+  roles: [kubernetes-engineer, cloud-engineer, platform-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: ["You want Canonical packaging, lifecycle support, or managed operations for Kubernetes on Ubuntu-based infrastructure."]
+  avoid_when: [You are standardized on another Kubernetes distribution or provider-managed service.]
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  commercial_offering: true
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://ubuntu.com/kubernetes, https://documentation.ubuntu.com/canonical-kubernetes/latest/, https://github.com/canonical/k8s-snap, https://github.com/canonical/k8s-snap/blob/main/LICENSE]
+  needs_review: false
 - id: capacitor-next
   name: Capacitor Next
   summary: Local-first web interface for Kubernetes resources, Helm history, and Flux reconciliation state.
@@ -253,6 +272,23 @@
   sources:
   - legacy:devopstools_final.md#L454
   needs_review: true
+- id: crc
+  name: CRC
+  summary: Local virtual-machine environment for running OpenShift, MicroShift, or Podman for development and testing.
+  official_url: https://crc.dev/
+  repository_url: https://github.com/crc-org/crc
+  categories: [kubernetes-distributions-operations, developer-experience-local-environments]
+  roles: [kubernetes-engineer, developer-experience-engineer]
+  lifecycle_stages: [develop, test]
+  use_when: [You need a supported local environment that mirrors an OpenShift or MicroShift workflow on a workstation.]
+  avoid_when: [You need a multi-node production cluster or cannot allocate a local virtual machine.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://crc.dev/, https://github.com/crc-org/crc, https://github.com/crc-org/crc/blob/main/LICENSE]
+  needs_review: false
 - id: crust-gather
   name: crust-gather
   summary: Kubectl plugin for collecting Kubernetes cluster state, logs, and events into browsable snapshots
@@ -551,6 +587,23 @@
   - legacy:4_Kubernetes-Containers/README.md#L26
   - legacy:devopstools_final.md#L458
   needs_review: true
+- id: exoscale-sks
+  name: Exoscale SKS
+  summary: Exoscale managed Kubernetes service with managed control planes and cloud infrastructure integration.
+  official_url: https://www.exoscale.com/sks/
+  documentation_url: https://community.exoscale.com/documentation/sks/
+  categories: [kubernetes-distributions-operations]
+  roles: [cloud-engineer, kubernetes-engineer, platform-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You run workloads on Exoscale and want the provider to operate Kubernetes control planes.]
+  avoid_when: [You need a self-managed distribution or infrastructure outside Exoscale regions and APIs.]
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://www.exoscale.com/sks/, https://community.exoscale.com/documentation/sks/]
+  needs_review: false
 - id: fargate
   name: Fargate
   summary: Serverless compute for containers.
@@ -641,6 +694,23 @@
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L27
   - legacy:devopstools_final.md#L461
+  needs_review: false
+- id: gardener
+  name: Gardener
+  summary: Kubernetes API-driven system for creating and operating homogeneous managed Kubernetes clusters across infrastructure providers.
+  official_url: https://gardener.cloud/
+  repository_url: https://github.com/gardener/gardener
+  categories: [kubernetes-distributions-operations]
+  roles: [kubernetes-engineer, platform-engineer, cloud-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You are building a managed Kubernetes service across multiple infrastructure providers.]
+  avoid_when: [You need only a few clusters and do not want to operate another Kubernetes control plane for cluster lifecycle.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://gardener.cloud/, https://github.com/gardener/gardener, https://github.com/gardener/gardener/blob/master/LICENSE]
   needs_review: false
 - id: gateway-api
   name: Gateway API
@@ -976,6 +1046,23 @@
   - legacy:4_Kubernetes-Containers/README.md#L162
   - legacy:devopstools_final.md#L664
   needs_review: false
+- id: k3sup
+  name: k3sup
+  summary: Command-line installer for bootstrapping and joining remote K3s nodes over SSH.
+  repository_url: https://github.com/alexellis/k3sup
+  categories: [kubernetes-distributions-operations]
+  roles: [kubernetes-engineer, infrastructure-systems-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You want a lightweight SSH-based workflow to install K3s on Linux hosts.]
+  avoid_when: [You need a provider-neutral full cluster lifecycle manager or cannot use SSH administration.]
+  license_model: open-core
+  license_spdx: MIT
+  commercial_offering: true
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/alexellis/k3sup, https://github.com/alexellis/k3sup/blob/master/LICENSE]
+  needs_review: false
 - id: k8s-cleaner-sveltos
   name: K8s Cleaner (Sveltos)
   summary: Kubernetes resource cleaner.
@@ -1205,6 +1292,23 @@
   sources:
   - legacy:devopstools_final.md#L472
   needs_review: true
+- id: kairos
+  name: Kairos
+  summary: Immutable Linux meta-distribution for building edge appliances and Kubernetes-based operating-system images.
+  official_url: https://kairos.io/
+  repository_url: https://github.com/kairos-io/kairos
+  categories: [kubernetes-distributions-operations]
+  roles: [kubernetes-engineer, infrastructure-systems-engineer]
+  lifecycle_stages: [build, deploy, operate]
+  use_when: [You need declarative immutable host images and lifecycle tooling for edge Kubernetes deployments.]
+  avoid_when: [You prefer a conventional mutable Linux fleet or need a turnkey managed Kubernetes service.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://kairos.io/, https://github.com/kairos-io/kairos, https://github.com/kairos-io/kairos/blob/master/LICENSE]
+  needs_review: false
 - id: kdash
   name: KDash
   summary: Fast terminal dashboard for Kubernetes.
@@ -1410,6 +1514,23 @@
   sources:
   - legacy:devopstools_final.md#L479
   needs_review: true
+- id: kops
+  name: kOps
+  summary: Kubernetes lifecycle manager for creating and upgrading production clusters, principally on cloud infrastructure.
+  official_url: https://kops.sigs.k8s.io/
+  repository_url: https://github.com/kubernetes/kops
+  categories: [kubernetes-distributions-operations]
+  roles: [kubernetes-engineer, cloud-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You need declarative ownership of Kubernetes cluster infrastructure and lifecycle instead of a managed control plane.]
+  avoid_when: [A provider-managed Kubernetes service meets your requirements with less operational burden.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://kops.sigs.k8s.io/, https://github.com/kubernetes/kops, https://github.com/kubernetes/kops/blob/master/LICENSE]
+  needs_review: false
 - id: kor
   name: Kor
   summary: CLI for discovering unused and orphaned Kubernetes resources.
@@ -2252,6 +2373,38 @@
   sources:
   - legacy:devopstools_final.md#L503
   needs_review: true
+- id: kubekey
+  name: KubeKey
+  summary: Command-line tool for installing Kubernetes, KubeSphere, and related cluster add-ons across Linux hosts.
+  repository_url: https://github.com/kubesphere/kubekey
+  categories: [kubernetes-distributions-operations]
+  roles: [kubernetes-engineer, infrastructure-systems-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You need a packaged installer for Kubernetes or KubeSphere on supported infrastructure.]
+  avoid_when: [You require a provider-managed control plane or an installer outside its supported operating-system matrix.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/kubesphere/kubekey, https://github.com/kubesphere/kubekey/blob/master/LICENSE]
+  needs_review: false
+- id: kubemarine
+  name: KubeMarine
+  summary: Python-based automation framework for deploying and maintaining Kubernetes clusters on Linux hosts.
+  repository_url: https://github.com/Netcracker/KubeMarine
+  categories: [kubernetes-distributions-operations]
+  roles: [kubernetes-engineer, infrastructure-systems-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You need repeatable inventory-driven cluster deployment and maintenance on self-managed servers.]
+  avoid_when: [You prefer a managed Kubernetes service or need a broader infrastructure provisioning system.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/Netcracker/KubeMarine, https://github.com/Netcracker/KubeMarine/blob/main/LICENSE]
+  needs_review: false
 - id: kubeplumber
   name: KubePlumber
   summary: Kubernetes network connectivity validation and troubleshooting tool.
@@ -2529,6 +2682,23 @@
   - legacy:4_Kubernetes-Containers/README.md#L57
   - legacy:devopstools_final.md#L511
   needs_review: true
+- id: kubespray
+  name: Kubespray
+  summary: Ansible-based Kubernetes cluster deployment and lifecycle automation maintained by Kubernetes SIGs.
+  repository_url: https://github.com/kubernetes-sigs/kubespray
+  documentation_url: https://kubespray.io/
+  categories: [kubernetes-distributions-operations, configuration-management]
+  roles: [kubernetes-engineer, infrastructure-systems-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You need configurable Kubernetes installation across cloud or bare-metal hosts using Ansible inventories.]
+  avoid_when: [You want a managed control plane or do not want to maintain Ansible-based cluster lifecycle automation.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/kubernetes-sigs/kubespray, https://kubespray.io/, https://github.com/kubernetes-sigs/kubespray/blob/master/LICENSE]
+  needs_review: false
 - id: kubeswitch
   name: kubeswitch
   summary: Command-line context switcher for Kubernetes operators managing multiple clusters and kubeconfig
@@ -2769,6 +2939,23 @@
   - legacy:4_Kubernetes-Containers/README.md#L13
   - legacy:devopstools_final.md#L597
   needs_review: false
+- id: kurl
+  name: kURL
+  summary: Toolkit for packaging customized offline-capable Kubernetes installers for software appliances.
+  official_url: https://kurl.sh/
+  repository_url: https://github.com/replicatedhq/kURL
+  categories: [kubernetes-distributions-operations]
+  roles: [kubernetes-engineer, release-engineer]
+  lifecycle_stages: [build, release, deploy]
+  use_when: [You distribute software with an embedded Kubernetes installer for connected or air-gapped customer environments.]
+  avoid_when: [You only operate internal clusters or need a general-purpose managed Kubernetes service.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://kurl.sh/, https://github.com/replicatedhq/kURL, https://github.com/replicatedhq/kURL/blob/main/LICENSE]
+  needs_review: false
 - id: kustomize
   name: Kustomize
   summary: Kubernetes configuration customization tool.
@@ -2803,6 +2990,23 @@
   - https://kustomize.io/
   - https://github.com/kubernetes-sigs/kustomize
   - https://github.com/kubernetes-sigs/kustomize/blob/master/LICENSE
+  needs_review: false
+- id: kwok
+  name: KWOK
+  summary: Kubernetes SIGs toolkit that simulates large numbers of nodes and pods without running real workloads.
+  official_url: https://kwok.sigs.k8s.io/
+  repository_url: https://github.com/kubernetes-sigs/kwok
+  categories: [kubernetes-distributions-operations, chaos-performance-engineering]
+  roles: [kubernetes-engineer, site-reliability-engineer]
+  lifecycle_stages: [test, operate]
+  use_when: [You need inexpensive scale and control-plane testing with simulated Kubernetes nodes.]
+  avoid_when: ["You need to validate real workload networking, storage, scheduling resource use, or node behavior."]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://kwok.sigs.k8s.io/, https://github.com/kubernetes-sigs/kwok, https://github.com/kubernetes-sigs/kwok/blob/main/LICENSE]
   needs_review: false
 - id: lens
   name: Lens
@@ -2978,15 +3182,19 @@
   - You need Red Hat enterprise support or the release cadence doesn't fit production requirements.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-08-29'
   sources:
+  - https://okd.io/
+  - https://github.com/okd-project/okd
+  - https://github.com/okd-project/okd/blob/master/LICENSE
   - legacy:4_Kubernetes-Containers/README.md#L165
   - legacy:devopstools_final.md#L667
-  needs_review: true
+  needs_review: false
 - id: openlens
   name: OpenLens
   summary: Open source distribution of Lens features.
@@ -3017,6 +3225,40 @@
   - legacy:4_Kubernetes-Containers/README.md#L63
   - legacy:devopstools_final.md#L518
   needs_review: true
+- id: openstack-magnum
+  name: OpenStack Magnum
+  summary: OpenStack service for provisioning and managing container orchestration clusters through OpenStack APIs.
+  official_url: https://docs.openstack.org/magnum/latest/
+  repository_url: https://opendev.org/openstack/magnum
+  categories: [kubernetes-distributions-operations, cloud-platforms-management]
+  roles: [cloud-engineer, kubernetes-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You operate OpenStack and need API-managed Kubernetes cluster lifecycle integrated with its infrastructure services.]
+  avoid_when: [You are not operating OpenStack or want a provider-managed Kubernetes control plane.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://opendev.org/openstack/magnum, https://docs.openstack.org/magnum/latest/, https://github.com/openstack/magnum]
+  needs_review: false
+- id: oracle-kubernetes-engine
+  name: Oracle Kubernetes Engine
+  summary: Oracle Cloud Infrastructure managed Kubernetes service for operating clusters with OCI networking and infrastructure.
+  official_url: https://www.oracle.com/cloud/cloud-native/kubernetes-engine/
+  documentation_url: https://docs.oracle.com/en-us/iaas/Content/ContEng/home.htm
+  categories: [kubernetes-distributions-operations]
+  roles: [cloud-engineer, kubernetes-engineer, platform-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You deploy on OCI and want Oracle to manage the Kubernetes control plane.]
+  avoid_when: [You need provider-neutral cluster infrastructure or are not committed to OCI services and regions.]
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://www.oracle.com/cloud/cloud-native/kubernetes-engine/, https://docs.oracle.com/en-us/iaas/Content/ContEng/home.htm]
+  needs_review: false
 - id: orbit
   name: Orbit
   summary: Kubernetes multi-cluster management.
@@ -3290,6 +3532,40 @@
   - https://sablierapp.dev/
   - https://sablierapp.dev/tutorials/getting-started/
   - https://github.com/sablierapp/sablier
+  needs_review: false
+- id: scaleway-kapsule
+  name: Scaleway Kubernetes Kapsule
+  summary: Scaleway managed Kubernetes service for clusters running on Scaleway compute, network, and storage resources.
+  official_url: https://www.scaleway.com/en/kubernetes-kapsule/
+  documentation_url: https://www.scaleway.com/en/docs/containers/kubernetes/
+  categories: [kubernetes-distributions-operations]
+  roles: [cloud-engineer, kubernetes-engineer, platform-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You want managed Kubernetes tightly integrated with Scaleway infrastructure.]
+  avoid_when: [You need a control plane spanning non-Scaleway infrastructure; evaluate Kosmos instead.]
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://www.scaleway.com/en/kubernetes-kapsule/, https://www.scaleway.com/en/docs/containers/kubernetes/]
+  needs_review: false
+- id: scaleway-kosmos
+  name: Scaleway Kubernetes Kosmos
+  summary: Scaleway managed Kubernetes control plane for clusters whose nodes can span cloud and on-premises infrastructure.
+  official_url: https://www.scaleway.com/en/kubernetes-kosmos/
+  documentation_url: https://www.scaleway.com/en/docs/containers/kubernetes/
+  categories: [kubernetes-distributions-operations]
+  roles: [cloud-engineer, kubernetes-engineer, platform-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: [You need a Scaleway-managed control plane with worker nodes across heterogeneous infrastructure.]
+  avoid_when: [All nodes run on Scaleway and the simpler Kapsule service meets the topology requirement.]
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://www.scaleway.com/en/kubernetes-kosmos/, https://www.scaleway.com/en/docs/containers/kubernetes/]
   needs_review: false
 - id: seabird
   name: Seabird

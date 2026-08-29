@@ -1,18 +1,18 @@
 {
-  "canonical_records": 1229,
+  "canonical_records": 1285,
   "categories": 30,
   "license_models": {
-    "commercial": 26,
+    "commercial": 33,
     "documentation": 99,
-    "free-saas": 1,
-    "open-core": 93,
-    "oss": 742,
-    "source-available": 19,
-    "unknown": 249
+    "free-saas": 3,
+    "open-core": 95,
+    "oss": 786,
+    "source-available": 21,
+    "unknown": 248
   },
   "statuses": {
-    "active": 236,
+    "active": 295,
     "archived": 9,
-    "needs-review": 984
+    "needs-review": 981
   }
 }

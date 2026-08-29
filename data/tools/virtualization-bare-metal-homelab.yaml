@@ -1,3 +1,20 @@
+- id: adguard-home
+  name: AdGuard Home
+  summary: Self-hosted DNS resolver and filtering service for network-wide blocking and DNS controls.
+  repository_url: https://github.com/AdguardTeam/AdGuardHome
+  documentation_url: https://github.com/AdguardTeam/AdGuardHome/wiki
+  categories: [virtualization-bare-metal-homelab, application-cloud-security]
+  roles: [infrastructure-systems-engineer, cloud-security-engineer]
+  lifecycle_stages: [deploy, operate, secure]
+  use_when: ["You need centrally managed DNS filtering for a home, lab, or small network."]
+  avoid_when: ["You need authoritative enterprise DNS, endpoint-level policy, or high-availability support guarantees."]
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/AdguardTeam/AdGuardHome, https://github.com/AdguardTeam/AdGuardHome/blob/master/LICENSE.txt]
+  needs_review: false
 - id: alpine-linux
   name: Alpine Linux
   summary: Security-oriented, lightweight Linux distribution.
@@ -86,6 +103,23 @@
   sources:
   - legacy:devopstools_final.md#L229
   needs_review: true
+- id: blocky
+  name: blocky
+  summary: Configurable DNS proxy and ad blocker with upstream groups, caching, filtering, and Prometheus metrics.
+  official_url: https://0xerr0r.github.io/blocky/latest/
+  repository_url: https://github.com/0xERR0R/blocky
+  categories: [virtualization-bare-metal-homelab, application-cloud-security]
+  roles: [infrastructure-systems-engineer, cloud-security-engineer]
+  lifecycle_stages: [deploy, operate, secure]
+  use_when: [You need a lightweight self-hosted DNS proxy with filtering and observable resolver behavior.]
+  avoid_when: [You need authoritative DNS management or a vendor-supported enterprise security gateway.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://0xerr0r.github.io/blocky/latest/, https://github.com/0xERR0R/blocky, https://github.com/0xERR0R/blocky/blob/main/LICENSE]
+  needs_review: false
 - id: bottlerocket
   name: Bottlerocket
   summary: Linux-based, security-hardened operating system purpose-built for running containers.
@@ -1441,6 +1475,23 @@
   - https://www.qemu.org/docs/master/about/license.html
   - https://github.com/qemu/qemu
   needs_review: false
+- id: rackula
+  name: Rackula
+  summary: Browser-based rack layout designer for planning equipment placement and exporting rack diagrams.
+  official_url: https://www.racku.la/
+  repository_url: https://github.com/RackulaLives/Rackula
+  categories: [virtualization-bare-metal-homelab]
+  roles: [infrastructure-systems-engineer, devops-engineer]
+  lifecycle_stages: [plan, operate]
+  use_when: [You need a lightweight visual record or draft layout for physical rack equipment.]
+  avoid_when: ["You need a full DCIM system with discovery, cabling, capacity, and asset lifecycle integration."]
+  license_model: oss
+  license_spdx: MIT
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://www.racku.la/, https://github.com/RackulaLives/Rackula, https://github.com/RackulaLives/Rackula/blob/main/LICENSE]
+  needs_review: false
 - id: rancher-desktop
   name: Rancher Desktop
   summary: Desktop Kubernetes and container management.
@@ -1619,6 +1670,23 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L192
   - legacy:devopstools_final.md#L270
   needs_review: true
+- id: technitium-dns-server
+  name: Technitium DNS Server
+  summary: Self-hosted authoritative and recursive DNS server with an administrative web interface and blocking capabilities.
+  official_url: https://technitium.com/dns/
+  repository_url: https://github.com/TechnitiumSoftware/DnsServer
+  categories: [virtualization-bare-metal-homelab]
+  roles: [infrastructure-systems-engineer, cloud-security-engineer]
+  lifecycle_stages: [deploy, operate, secure]
+  use_when: ["You need a self-hosted DNS server covering authoritative zones, recursion, forwarding, and lab or small-network administration."]
+  avoid_when: [You require a vendor-managed global DNS service or established enterprise support contracts.]
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://technitium.com/dns/, https://github.com/TechnitiumSoftware/DnsServer, https://github.com/TechnitiumSoftware/DnsServer/blob/master/LICENSE]
+  needs_review: false
 - id: unraid
   name: Unraid
   summary: Operating system for network-attached storage and virtualization.
@@ -1675,6 +1743,23 @@
   sources:
   - legacy:devopstools_final.md#L272
   needs_review: true
+- id: ventoy
+  name: Ventoy
+  summary: Bootable USB tool that launches ISO, WIM, IMG, VHD, and EFI images directly from copied files.
+  official_url: https://www.ventoy.net/
+  repository_url: https://github.com/ventoy/Ventoy
+  categories: [virtualization-bare-metal-homelab]
+  roles: [infrastructure-systems-engineer, devops-engineer]
+  lifecycle_stages: [deploy, operate]
+  use_when: ["You maintain multi-image boot media for provisioning, recovery, or hardware diagnostics."]
+  avoid_when: [Secure-boot policy or supply-chain controls require vendor-certified single-purpose installation media.]
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  maturity: established
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://www.ventoy.net/, https://github.com/ventoy/Ventoy, https://github.com/ventoy/Ventoy/blob/master/COPYING]
+  needs_review: false
 - id: volare
   name: Volare
   summary: Kubernetes volume populator that populates Persistent Volume Claims (PVCs) from multiple external

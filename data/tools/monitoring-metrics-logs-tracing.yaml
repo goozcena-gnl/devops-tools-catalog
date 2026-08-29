@@ -827,6 +827,23 @@
   - legacy:5_Monitoring-Observability/README.md#L54
   - legacy:devopstools_final.md#L761
   needs_review: true
+- id: flowg
+  name: FlowG
+  summary: Self-hosted log processing and observability platform with visual pipelines, search, and dashboards.
+  official_url: https://flowg.cloud/
+  repository_url: https://github.com/link-society/flowg
+  categories: [monitoring-metrics-logs-tracing]
+  roles: [observability-engineer, site-reliability-engineer]
+  lifecycle_stages: [operate, monitor]
+  use_when: ["You want a self-hosted low-code pipeline for ingesting, transforming, and exploring logs."]
+  avoid_when: [You need an established large-scale observability backend or a managed service with operational support.]
+  license_model: oss
+  license_spdx: MIT
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://flowg.cloud/, https://github.com/link-society/flowg, https://github.com/link-society/flowg/blob/main/LICENSE.txt]
+  needs_review: false
 - id: fluent-bit
   name: Fluent Bit
   summary: Fast and lightweight log processor.
@@ -1410,6 +1427,22 @@
   - legacy:5_Monitoring-Observability/README.md#L71
   - legacy:devopstools_final.md#L779
   needs_review: true
+- id: klarity
+  name: Klarity
+  summary: Self-hosted observability dashboard that correlates Kubernetes resources, logs, metrics, events, and traces.
+  repository_url: https://github.com/selvarajmurugesan90/klarity
+  categories: [monitoring-metrics-logs-tracing, emerging-experimental]
+  roles: [observability-engineer, kubernetes-engineer]
+  lifecycle_stages: [operate, monitor]
+  use_when: [You are evaluating a consolidated Kubernetes troubleshooting UI in a lab or non-critical environment.]
+  avoid_when: [You need a mature supported observability platform or independently scalable telemetry storage.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: experimental
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/selvarajmurugesan90/klarity, https://github.com/selvarajmurugesan90/klarity/blob/main/LICENSE]
+  needs_review: false
 - id: komodor
   name: Komodor
   summary: Kubernetes troubleshooting and monitoring.
@@ -2223,6 +2256,23 @@
   - legacy:5_Monitoring-Observability/README.md#L62
   - legacy:devopstools_final.md#L770
   needs_review: true
+- id: scanopy
+  name: Scanopy
+  summary: Self-hosted network inventory and topology mapping platform with automated device discovery.
+  official_url: https://scanopy.net/
+  repository_url: https://github.com/scanopy/scanopy
+  categories: [monitoring-metrics-logs-tracing]
+  roles: [infrastructure-systems-engineer, observability-engineer]
+  lifecycle_stages: [operate, monitor]
+  use_when: [You need a maintained inventory and visual topology of devices on networks you are authorized to scan.]
+  avoid_when: ["You need packet-level monitoring, endpoint management, or cannot authorize active network discovery."]
+  license_model: oss
+  license_spdx: AGPL-3.0-only
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://scanopy.net/, https://github.com/scanopy/scanopy, https://github.com/scanopy/scanopy/blob/main/LICENSE.md]
+  needs_review: false
 - id: sematext
   name: Sematext
   summary: Full-stack observability platform covering logs, metrics, tracing, real user monitoring, and
@@ -2683,6 +2733,22 @@
   - legacy:5_Monitoring-Observability/README.md#L50
   - legacy:devopstools_final.md#L756
   needs_review: true
+- id: virtualeyes
+  name: VirtualEyes
+  summary: Hosted monitoring service for website and server uptime, DNS records, certificates, domains, and scheduled-job heartbeats.
+  official_url: https://virtualeyes.io/
+  categories: [monitoring-metrics-logs-tracing]
+  roles: [site-reliability-engineer, observability-engineer]
+  lifecycle_stages: [operate, monitor]
+  use_when: [You want a hosted external monitor with a free entry point and common notification integrations.]
+  avoid_when: ["You require self-hosting, internal telemetry correlation, or control over the monitoring data plane."]
+  license_model: free-saas
+  commercial_offering: true
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://virtualeyes.io/]
+  needs_review: false
 - id: zabbix
   name: Zabbix
   summary: Enterprise-grade monitoring platform (metrics, triggers, dashboards).

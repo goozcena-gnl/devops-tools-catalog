@@ -1,3 +1,20 @@
+- id: affine
+  name: AFFiNE
+  summary: Local-first collaborative workspace combining documents, whiteboards, and databases with self-hosting and hosted-service options.
+  official_url: https://affine.pro/
+  repository_url: https://github.com/toeverything/AFFiNE
+  categories: [documentation-learning-career]
+  roles: [developer-experience-engineer, devops-engineer]
+  lifecycle_stages: [plan, learn]
+  use_when: ["Engineering teams want a self-hostable workspace for operational notes, diagrams, and structured project knowledge."]
+  avoid_when: [You require a single permissive license across server and enterprise components or a specialized runbook automation engine.]
+  license_model: open-core
+  commercial_offering: true
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://affine.pro/, https://github.com/toeverything/AFFiNE, https://github.com/toeverything/AFFiNE/tree/canary/packages/backend/server/LICENSE]
+  needs_review: false
 - id: asciinema
   name: asciinema
   summary: Terminal session recorder and player that stores text-based cast files.

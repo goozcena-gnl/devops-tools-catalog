@@ -817,6 +817,23 @@
   - legacy:1_Foundational-Skills/README.md#L24
   - legacy:devopstools_final.md#L103
   needs_review: true
+- id: trippy
+  name: Trippy
+  summary: Cross-platform network diagnostic TUI that combines traceroute and ping with live hop statistics.
+  official_url: https://trippy.rs/
+  repository_url: https://github.com/fujiapple852/trippy
+  categories: [foundations-linux-scripting]
+  roles: [infrastructure-systems-engineer, site-reliability-engineer]
+  lifecycle_stages: [operate, monitor]
+  use_when: [You need interactive path and packet-loss diagnostics from an operator workstation.]
+  avoid_when: [You need continuous distributed network monitoring or ICMP and tracing probes are prohibited.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://trippy.rs/, https://github.com/fujiapple852/trippy, https://github.com/fujiapple852/trippy/blob/master/LICENSE]
+  needs_review: false
 - id: zsh
   name: Zsh
   summary: Z shell.

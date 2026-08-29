@@ -389,6 +389,23 @@
   - legacy:3_CI-CD-Automation/README.md#L124
   - legacy:devopstools_final.md#L379
   needs_review: true
+- id: opendepot
+  name: OpenDepot
+  summary: Kubernetes-native registry for publishing and consuming OpenTofu and Terraform providers and modules.
+  official_url: https://tonedefdev.github.io/opendepot/
+  repository_url: https://github.com/tonedefdev/opendepot
+  categories: [artifact-package-management, infrastructure-as-code, emerging-experimental]
+  roles: [platform-engineer, devops-engineer]
+  lifecycle_stages: [build, release, deploy]
+  use_when: [You need a self-hosted IaC registry operated through Kubernetes-native resources.]
+  avoid_when: [You need an established hosted registry or do not want to operate a Kubernetes control plane for artifact distribution.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://tonedefdev.github.io/opendepot/, https://github.com/tonedefdev/opendepot, https://github.com/tonedefdev/opendepot/blob/main/LICENSE]
+  needs_review: false
 - id: oras
   name: ORAS
   summary: OCI registry client/library (store artifacts in registries).

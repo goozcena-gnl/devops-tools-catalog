@@ -59,6 +59,22 @@
   - legacy:5_Monitoring-Observability/README.md#L78
   - legacy:devopstools_final.md#L787
   needs_review: false
+- id: ballast
+  name: Ballast
+  summary: Kubernetes operator that recommends and applies workload resource requests from observed usage.
+  repository_url: https://github.com/Tight-Line/ballast
+  categories: [finops-sustainability, emerging-experimental]
+  roles: [finops-engineer, kubernetes-engineer]
+  lifecycle_stages: [operate, optimize]
+  use_when: [You are evaluating automated request right-sizing for Kubernetes workloads and can review recommendations before rollout.]
+  avoid_when: [You need established vendor support or cannot tolerate an experimental controller changing workload resources.]
+  license_model: oss
+  license_spdx: MIT
+  maturity: experimental
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/Tight-Line/ballast, https://github.com/Tight-Line/ballast/blob/main/LICENSE]
+  needs_review: false
 - id: cast-ai
   name: Cast AI
   summary: Kubernetes automation and cloud optimization platform for rightsizing, autoscaling, cost control,
@@ -173,6 +189,24 @@
   sources:
   - legacy:5_Monitoring-Observability/README.md#L80
   - legacy:devopstools_final.md#L791
+  needs_review: false
+- id: cruisekube
+  name: CruiseKube
+  summary: Kubernetes controller that recommends and automates workload CPU and memory right-sizing.
+  official_url: https://cruisekube.com/
+  repository_url: https://github.com/truefoundry/CruiseKube
+  categories: [finops-sustainability, emerging-experimental]
+  roles: [finops-engineer, kubernetes-engineer]
+  lifecycle_stages: [operate, optimize]
+  use_when: [You want policy-controlled Kubernetes resource optimization and can evaluate a young controller in staged environments.]
+  avoid_when: [You require an OSI-approved license or a long-established production support history.]
+  license_model: source-available
+  license_spdx: BUSL-1.1
+  commercial_offering: true
+  maturity: emerging
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://cruisekube.com/, https://github.com/truefoundry/CruiseKube, https://github.com/truefoundry/CruiseKube/blob/main/LICENSE]
   needs_review: false
 - id: dash0
   name: Dash0
@@ -328,6 +362,22 @@
   sources:
   - legacy:5_Monitoring-Observability/README.md#L85
   - legacy:devopstools_final.md#L796
+  needs_review: false
+- id: k8s-overcommit-operator
+  name: k8s-overcommit-operator
+  summary: Kubernetes operator that manages namespace-level resource-request overcommit policies.
+  repository_url: https://github.com/InditexTech/k8s-overcommit-operator
+  categories: [finops-sustainability]
+  roles: [finops-engineer, kubernetes-engineer]
+  lifecycle_stages: [operate, optimize]
+  use_when: [You need centrally governed request overcommit to improve cluster utilization across selected namespaces.]
+  avoid_when: [Workloads have tight latency guarantees or overcommit risk has not been validated with capacity and eviction testing.]
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  verified_on: '2026-08-29'
+  sources: [https://github.com/InditexTech/k8s-overcommit-operator, https://github.com/InditexTech/k8s-overcommit-operator/blob/main/LICENSE]
   needs_review: false
 - id: kion-finops
   name: Kion FinOps
