@@ -51,20 +51,17 @@ def test_v040_metadata_preserves_historical_v030_release() -> None:
 
 
 def test_v040_metadata_does_not_claim_publication() -> None:
-    combined = "\n".join(
-        (
-            CHANGELOG.read_text(encoding="utf-8"),
-            RELEASE_NOTES.read_text(encoding="utf-8"),
-        )
-    ).lower()
+    changelog = CHANGELOG.read_text(encoding="utf-8").lower()
+    notes = RELEASE_NOTES.read_text(encoding="utf-8").lower()
+    combined = f"{changelog}\n{notes}"
     prohibited_claims = {
         "v0.4.0 has been published",
         "v0.4.0 tag exists",
         "v0.4.0 github release published",
         "github release is live",
     }
-    assert not prohibited_claims & {
-        claim for claim in prohibited_claims if claim in combined
-    }
-    assert "no v0.4.0 tag" in combined
-    assert "no github release" in combined
+    assert all(claim not in combined for claim in prohibited_claims)
+    assert "at v0.4.0 preparation time, no v0.4.0 tag" in changelog
+    assert "at release-preparation review time, no v0.4.0 tag" in notes
+    assert "owner-approved action" in changelog
+    assert "owner-approved action" in notes

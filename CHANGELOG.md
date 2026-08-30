@@ -36,7 +36,7 @@ All notable catalogue architecture and governance changes are recorded here. Ind
 - Repository issue #2 remains open for unresolved catalogue URL review.
 - Reviewed link debt remains explicitly bounded; this release does not claim that all catalogue evidence debt is resolved.
 
-This entry prepares v0.4.0 metadata only. No v0.4.0 tag or GitHub Release has been created; publication requires a separate owner-approved action after merge.
+At v0.4.0 preparation time, no v0.4.0 tag or GitHub Release had been created; publication was reserved for a separate owner-approved action after merge.
 
 ## [0.3.0] - 2026-08-21
 
