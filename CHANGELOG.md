@@ -2,6 +2,42 @@
 
 All notable catalogue architecture and governance changes are recorded here. Individual tool metadata changes remain visible in Git history and pull requests.
 
+## [0.4.0] - 2026-08-29
+
+### Scope
+
+- Prepared a backward-compatible minor release covering all accepted work in PRs #43, #44, and #45.
+- Expanded the canonical catalogue from 1,229 to 1,285 records without changing the schema or consumer contract.
+
+### Catalogue expansion
+
+- Added 56 canonical records through the evidence-reviewed Wave 3 reconciliation.
+- Applied evidence-backed updates to three existing records while explicitly accounting for one already-correct identity, one duplicate, and one out-of-scope submission.
+- Reconciled upstream, mirror, product/component, managed-service, licence, lifecycle, and taxonomy boundaries using primary sources.
+
+### Link-audit reliability and regression semantics
+
+- Made strict auditing regression-aware by separating reviewed `blocking_known` debt from `blocking_new` failures.
+- Hardened repository archive expectations, audit-context-compatible caching, and HEAD-to-ranged-GET fallback behavior with regression coverage.
+- Remediated the Floci-AZ, Datree, and CAI strict-link regressions without adding them to the reviewed blocker baseline.
+
+### Evidence and governance
+
+- Preserved the reviewed known-blocker baseline and required new strict blockers to remain zero.
+- Completed independent identity, licence, offering-model, lifecycle, taxonomy, and link review for Wave 3.
+
+### Validation
+
+- Passed Ruff lint and format checks, 337 tests, deterministic documentation verification, catalogue validation, and Git whitespace checks.
+- Fresh and compatible cached strict audits each reported four known blockers, zero new blockers, and `PASS`.
+
+### Remaining evidence boundaries
+
+- Repository issue #2 remains open for unresolved catalogue URL review.
+- Reviewed link debt remains explicitly bounded; this release does not claim that all catalogue evidence debt is resolved.
+
+At v0.4.0 preparation time, no v0.4.0 tag or GitHub Release had been created; publication was reserved for a separate owner-approved action after merge.
+
 ## [0.3.0] - 2026-08-21
 
 ### Scope
