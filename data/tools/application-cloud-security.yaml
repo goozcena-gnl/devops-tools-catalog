@@ -3402,6 +3402,9 @@
   name: Pangolin
   summary: Zero-trust remote access platform and VPN alternative.
   official_url: https://pangolin.net
+  repository_url: https://github.com/fosrl/pangolin
+  repository_archived: false
+  documentation_url: https://docs.pangolin.net
   categories:
   - application-cloud-security
   subcategories:
@@ -3410,20 +3413,31 @@
   - devsecops-engineer
   - cloud-security-engineer
   lifecycle_stages:
-  - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - operate
+  use_when:
+  - You need identity-aware access to private web and network resources without opening inbound ports.
+  avoid_when:
+  - You need a conventional site-to-site VPN without application-aware access controls or a commercial licence is unacceptable.
+  deployment_models:
+  - self-hosted
+  - saas
+  license_model: open-core
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - zero-trust-network-access
+  - reverse-proxy
+  - wireguard
+  verified_on: '2026-09-01'
   sources:
-  - legacy:devopstools_final.md#L960
-  needs_review: true
+  - https://pangolin.net
+  - https://docs.pangolin.net
+  - https://github.com/fosrl/pangolin
+  needs_review: false
 - id: parrot-security
   name: Parrot Security
   summary: Security-oriented Linux distribution for penetration testing, digital forensics, and privacy.
@@ -3661,6 +3675,47 @@
   - legacy:6_Security/README.md#L83
   - legacy:devopstools_final.md#L963
   needs_review: true
+- id: prowler
+  name: Prowler
+  summary: Cloud security posture and compliance assessment platform for AWS, Azure, Google Cloud, and Kubernetes.
+  official_url: https://prowler.com
+  repository_url: https://github.com/prowler-cloud/prowler
+  repository_archived: false
+  documentation_url: https://docs.prowler.com/
+  categories:
+  - application-cloud-security
+  - policy-governance-compliance
+  roles:
+  - cloud-security-engineer
+  - devsecops-engineer
+  - cloud-engineer
+  lifecycle_stages:
+  - secure
+  - operate
+  use_when:
+  - You need repeatable cloud configuration checks and compliance evidence across supported providers.
+  avoid_when:
+  - You need real-time workload protection or a provider-neutral control framework not covered by its checks.
+  deployment_models:
+  - local-binary
+  - self-hosted
+  - saas
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives: []
+  tags:
+  - cspm
+  - compliance
+  - cloud-security
+  verified_on: '2026-09-01'
+  sources:
+  - https://docs.prowler.com/
+  - https://github.com/prowler-cloud/prowler
+  - https://github.com/prowler-cloud/prowler/blob/master/LICENSE
+  needs_review: false
 - id: qubes-os
   name: Qubes OS
   summary: Security-focused desktop operating system using Xen-based virtualization for compartmentalization.

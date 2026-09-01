@@ -292,6 +292,46 @@
   sources:
   - legacy:devopstools_final.md#L287
   needs_review: true
+- id: mysql
+  name: MySQL
+  summary: Relational database server with transactional storage, replication, and a large application ecosystem.
+  official_url: https://www.mysql.com
+  repository_url: https://github.com/mysql/mysql-server
+  repository_archived: false
+  documentation_url: https://dev.mysql.com/doc/
+  categories:
+  - databases-caching-data-infrastructure
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a widely supported relational database with mature replication and tooling.
+  avoid_when:
+  - You need PostgreSQL-specific extensibility or want to avoid commercial/community edition differences.
+  deployment_models:
+  - self-hosted
+  - managed-service
+  license_model: open-core
+  license_spdx: GPL-2.0-only
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives:
+  - postgresql
+  tags:
+  - relational-database
+  - sql
+  - replication
+  verified_on: '2026-09-01'
+  sources:
+  - https://dev.mysql.com/doc/
+  - https://github.com/mysql/mysql-server
+  - https://github.com/mysql/mysql-server/blob/trunk/LICENSE
+  needs_review: false
 - id: pgvector
   name: pgvector
   summary: PostgreSQL extension that adds vector data types, similarity search, and vector indexes.
@@ -394,6 +434,46 @@
   - https://pocketbase.io/
   - https://pocketbase.io/docs/
   - https://github.com/pocketbase/pocketbase
+  needs_review: false
+- id: postgresql
+  name: PostgreSQL
+  summary: Extensible open-source relational database with strong transactional, indexing, and SQL capabilities.
+  official_url: https://www.postgresql.org
+  repository_url: https://git.postgresql.org/git/postgresql.git
+  repository_archived: false
+  documentation_url: https://www.postgresql.org/docs/
+  categories:
+  - databases-caching-data-infrastructure
+  roles:
+  - devops-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a standards-oriented relational database with rich extensions and deployment options.
+  avoid_when:
+  - An embedded database or a purpose-built non-relational store better matches the workload.
+  deployment_models:
+  - self-hosted
+  - managed-service
+  license_model: oss
+  license_spdx: PostgreSQL
+  commercial_offering: false
+  maturity: established
+  status: active
+  alternatives:
+  - mysql
+  tags:
+  - relational-database
+  - sql
+  - extensions
+  verified_on: '2026-09-01'
+  sources:
+  - https://www.postgresql.org/docs/
+  - https://git.postgresql.org/git/postgresql.git
+  - https://www.postgresql.org/about/licence/
   needs_review: false
 - id: qdrant
   name: Qdrant

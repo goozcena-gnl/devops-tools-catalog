@@ -1752,6 +1752,47 @@
   sources:
   - legacy:devopstools_final.md#L1206
   needs_review: true
+- id: milvus
+  name: Milvus
+  summary: Distributed vector database for large-scale similarity search and retrieval workloads.
+  official_url: https://milvus.io
+  repository_url: https://github.com/milvus-io/milvus
+  repository_archived: false
+  documentation_url: https://milvus.io/docs
+  categories:
+  - mlops-llmops-ai-infrastructure
+  - databases-caching-data-infrastructure
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - platform-engineer
+  - cloud-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need scalable vector indexing and similarity search for retrieval or recommendation workloads.
+  avoid_when:
+  - The workload fits an embedded vector index or an existing database extension with lower operational overhead.
+  deployment_models:
+  - self-hosted
+  - managed-service
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives:
+  - qdrant
+  tags:
+  - vector-database
+  - similarity-search
+  - rag
+  verified_on: '2026-09-01'
+  sources:
+  - https://milvus.io/docs
+  - https://github.com/milvus-io/milvus
+  - https://github.com/milvus-io/milvus/blob/master/LICENSE
+  needs_review: false
 - id: mlflow
   name: MLflow
   summary: Platform for managing ML lifecycles.
@@ -2286,6 +2327,47 @@
   verified_on: '2026-08-21'
   sources:
   - https://github.com/VictoriaMetrics/mcp-victoriametrics
+  needs_review: false
+- id: vllm
+  name: vLLM
+  summary: High-throughput, memory-efficient inference and serving engine for large language models.
+  official_url: https://vllm.ai
+  repository_url: https://github.com/vllm-project/vllm
+  repository_archived: false
+  documentation_url: https://docs.vllm.ai/
+  categories:
+  - mlops-llmops-ai-infrastructure
+  roles:
+  - mlops-ai-infrastructure-engineer
+  - platform-engineer
+  - cloud-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need high-throughput OpenAI-compatible serving for supported language models on accelerator infrastructure.
+  avoid_when:
+  - You need a lightweight desktop runtime or the target models and hardware are unsupported.
+  deployment_models:
+  - self-hosted
+  - container
+  - kubernetes-operator
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  alternatives:
+  - ollama
+  - llm-d
+  tags:
+  - llm-inference
+  - model-serving
+  - gpu
+  verified_on: '2026-09-01'
+  sources:
+  - https://docs.vllm.ai/
+  - https://github.com/vllm-project/vllm
+  - https://github.com/vllm-project/vllm/blob/main/LICENSE
   needs_review: false
 - id: voltagent
   name: VoltAgent

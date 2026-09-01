@@ -329,36 +329,6 @@
   - legacy:7_Development-Collaboration/README.md#L5
   - legacy:devopstools_final.md#L1024
   needs_review: true
-- id: plumber
-  name: Plumber
-  summary: Workflow automation and integration platform.
-  official_url: https://getplumber.io
-  categories:
-  - workflow-automation-chatops
-  subcategories:
-  - Automation & Workflow
-  roles:
-  - devops-engineer
-  - site-reliability-engineer
-  - developer-experience-engineer
-  lifecycle_stages:
-  - plan
-  - operate
-  use_when:
-  - '* You need a lightweight automation and integration tool.'
-  avoid_when:
-  - '* You need a mature platform with a large integration ecosystem.'
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:3_CI-CD-Automation/README.md#L168
-  - legacy:devopstools_final.md#L406
-  needs_review: true
 - id: rundeck
   name: Rundeck
   summary: Runbook automation and self-service operations platform.

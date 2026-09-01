@@ -226,6 +226,44 @@
   - legacy:1_Foundational-Skills/README.md#L7
   - legacy:devopstools_final.md#L85
   needs_review: true
+- id: github-cli
+  name: GitHub CLI
+  summary: Official command-line interface for GitHub repositories, pull requests, issues, releases, and Actions workflows.
+  official_url: https://cli.github.com
+  repository_url: https://github.com/cli/cli
+  repository_archived: false
+  documentation_url: https://cli.github.com/manual/
+  categories:
+  - source-control-repository-management
+  - developer-experience-local-environments
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - develop
+  - release
+  use_when:
+  - You automate or manage GitHub workflows without leaving the terminal.
+  avoid_when:
+  - Your repositories are hosted elsewhere or the workflow requires a provider-neutral Git client.
+  deployment_models:
+  - local-binary
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags:
+  - github
+  - cli
+  - developer-experience
+  verified_on: '2026-09-01'
+  sources:
+  - https://cli.github.com/manual/
+  - https://github.com/cli/cli
+  - https://github.com/cli/cli/blob/trunk/LICENSE
+  needs_review: false
 - id: gitlab
   name: GitLab
   summary: Git repository management with CI/CD.

@@ -203,6 +203,43 @@
   - https://github.com/aristocratos/btop
   - https://github.com/aristocratos/btop/blob/main/LICENSE
   needs_review: false
+- id: curl
+  name: curl
+  summary: Command-line client and transfer library for working with URL-based network protocols.
+  official_url: https://curl.se
+  repository_url: https://github.com/curl/curl
+  repository_archived: false
+  documentation_url: https://curl.se/docs/
+  categories:
+  - foundations-linux-scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  - cloud-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  use_when:
+  - You need a ubiquitous, scriptable client for API checks, downloads, or network troubleshooting.
+  avoid_when:
+  - You need a stateful API collaboration workspace or browser-based request authoring.
+  deployment_models:
+  - local-binary
+  license_model: oss
+  license_spdx: curl
+  maturity: established
+  status: active
+  alternatives: []
+  tags:
+  - http-client
+  - api
+  - network-troubleshooting
+  verified_on: '2026-09-01'
+  sources:
+  - https://curl.se
+  - https://github.com/curl/curl
+  - https://curl.se/docs/copyright.html
+  needs_review: false
 - id: dool
   name: dool
   summary: Linux command-line monitor for correlating CPU, memory, disk, network, and process activity
@@ -512,6 +549,43 @@
   - https://github.com/htop-dev/htop/blob/main/README.md#license
   - https://github.com/htop-dev/htop/blob/main/COPYING
   needs_review: false
+- id: jq
+  name: jq
+  summary: Command-line processor for querying and transforming JSON data.
+  official_url: https://jqlang.org
+  repository_url: https://github.com/jqlang/jq
+  repository_archived: false
+  documentation_url: https://jqlang.org/manual/
+  categories:
+  - foundations-linux-scripting
+  roles:
+  - devops-engineer
+  - infrastructure-systems-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  use_when:
+  - You need deterministic JSON filtering and transformation in shell scripts or pipelines.
+  avoid_when:
+  - The input is not JSON or the transformation is clearer in a general-purpose program.
+  deployment_models:
+  - local-binary
+  license_model: oss
+  license_spdx: MIT
+  maturity: established
+  status: active
+  alternatives: []
+  tags:
+  - json
+  - cli
+  - shell-scripting
+  verified_on: '2026-09-01'
+  sources:
+  - https://jqlang.org
+  - https://github.com/jqlang/jq
+  - https://github.com/jqlang/jq/blob/master/COPYING
+  needs_review: false
 - id: linux-foundation-training
   name: Linux Foundation Training
   summary: Official Linux and open source training resources.
@@ -756,6 +830,42 @@
   sources:
   - https://sysstat.github.io/
   - https://github.com/sysstat/sysstat
+  needs_review: false
+- id: systemd
+  name: systemd
+  summary: Linux system and service manager providing process supervision, logging, timers, and host lifecycle controls.
+  official_url: https://systemd.io
+  repository_url: https://github.com/systemd/systemd
+  repository_archived: false
+  documentation_url: https://systemd.io/COMMAND_LINE/
+  categories:
+  - foundations-linux-scripting
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You operate Linux distributions that use systemd for services, boot, timers, and journal management.
+  avoid_when:
+  - You target systems with a different init and service-management stack.
+  deployment_models:
+  - host-service
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags:
+  - linux
+  - init-system
+  - service-management
+  verified_on: '2026-09-01'
+  sources:
+  - https://systemd.io
+  - https://github.com/systemd/systemd
+  - https://github.com/systemd/systemd/tree/main/LICENSES
   needs_review: false
 - id: the-linux-command-line
   name: The Linux Command Line

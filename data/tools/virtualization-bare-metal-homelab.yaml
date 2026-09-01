@@ -1146,6 +1146,43 @@
   sources:
   - legacy:devopstools_final.md#L259
   needs_review: true
+- id: openstack
+  name: OpenStack
+  summary: Open-source cloud infrastructure platform for operating compute, networking, storage, identity, and related services.
+  official_url: https://www.openstack.org
+  documentation_url: https://docs.openstack.org/
+  categories:
+  - virtualization-bare-metal-homelab
+  - cloud-platforms-management
+  roles:
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a self-hosted private or public IaaS cloud with modular infrastructure services.
+  avoid_when:
+  - The organization cannot sustain the platform engineering and operational complexity of an OpenStack deployment.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives:
+  - apache-cloudstack
+  tags:
+  - private-cloud
+  - iaas
+  - virtualization
+  verified_on: '2026-09-01'
+  sources:
+  - https://www.openstack.org/software/
+  - https://docs.openstack.org/
+  - https://governance.openstack.org/tc/reference/licensing.html
+  needs_review: false
 - id: oracle-virtualbox
   name: Oracle VirtualBox
   summary: Cross-platform type-2 hypervisor for running virtual machines on desktops and servers.
