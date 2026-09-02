@@ -846,6 +846,47 @@
   - legacy:4_Kubernetes-Containers/README.md#L86
   - legacy:devopstools_final.md#L552
   needs_review: true
+- id: envoy
+  name: Envoy
+  summary: Cloud-native L4/L7 proxy used for edge routing, service networking, and observability-aware traffic control.
+  official_url: https://www.envoyproxy.io
+  repository_url: https://github.com/envoyproxy/envoy
+  repository_archived: false
+  documentation_url: https://www.envoyproxy.io/docs/envoy/latest/
+  categories:
+  - kubernetes-networking-storage-addons
+  roles:
+  - platform-engineer
+  - kubernetes-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  - monitor
+  use_when:
+  - You need a programmable, telemetry-rich proxy for service mesh, gateway, or edge traffic.
+  avoid_when:
+  - A simpler reverse proxy is sufficient and Envoy's configuration and operational complexity are not justified.
+  deployment_models:
+  - self-hosted
+  - container
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives:
+  - haproxy
+  - nginx
+  tags:
+  - proxy
+  - service-mesh
+  - gateway
+  verified_on: '2026-09-01'
+  sources:
+  - https://www.envoyproxy.io/docs/envoy/latest/
+  - https://github.com/envoyproxy/envoy
+  - https://github.com/envoyproxy/envoy/blob/main/LICENSE
+  needs_review: false
 - id: envoy-gateway
   name: Envoy Gateway
   summary: Gateway API implementation for Envoy with traffic management, security, and observability features.
@@ -2814,6 +2855,48 @@
   sources:
   - legacy:devopstools_final.md#L611
   needs_review: true
+- id: nginx
+  name: NGINX
+  summary: Web server, reverse proxy, load balancer, and HTTP cache.
+  official_url: https://nginx.org
+  repository_url: https://github.com/nginx/nginx
+  repository_archived: false
+  documentation_url: https://nginx.org/en/docs/
+  categories:
+  - kubernetes-networking-storage-addons
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a mature, efficient web server or reverse proxy with broad deployment support.
+  avoid_when:
+  - You need dynamic service-mesh control planes or features available only in NGINX Plus.
+  deployment_models:
+  - self-hosted
+  - container
+  license_model: open-core
+  license_spdx: BSD-2-Clause
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives:
+  - caddy
+  - haproxy
+  - envoy
+  tags:
+  - reverse-proxy
+  - web-server
+  - load-balancer
+  verified_on: '2026-09-01'
+  sources:
+  - https://nginx.org/en/docs/
+  - https://github.com/nginx/nginx
+  - https://github.com/nginx/nginx/blob/master/LICENSE
+  needs_review: false
 - id: nginx-gateway-fabric
   name: nginx-gateway-fabric
   summary: NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.

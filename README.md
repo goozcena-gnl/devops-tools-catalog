@@ -7,11 +7,11 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 ## Catalogue status
 
-- **Canonical records:** 1285
+- **Canonical records:** 1305
 - **Categories:** 30
-- **Records requiring review:** 983
+- **Records requiring review:** 981
 - **Archived repositories:** 12
-- **Last generation date:** 2026-08-29
+- **Last generation date:** 2026-09-01
 - **Maintenance status:** Active migration; unverified metadata is explicitly marked.
 
 ## Start with a task
@@ -32,33 +32,33 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Category | Records |
 |---|---:|
-| [Foundations, Linux and scripting](docs/categories/foundations-linux-scripting.md) | 29 |
-| [Source control and repository management](docs/categories/source-control-repository-management.md) | 14 |
-| [Cloud platforms and cloud management](docs/categories/cloud-platforms-management.md) | 22 |
+| [Foundations, Linux and scripting](docs/categories/foundations-linux-scripting.md) | 32 |
+| [Source control and repository management](docs/categories/source-control-repository-management.md) | 15 |
+| [Cloud platforms and cloud management](docs/categories/cloud-platforms-management.md) | 24 |
 | [Infrastructure as Code](docs/categories/infrastructure-as-code.md) | 35 |
 | [Configuration management](docs/categories/configuration-management.md) | 18 |
-| [Virtualization, bare metal and homelab](docs/categories/virtualization-bare-metal-homelab.md) | 65 |
-| [Containers and image tooling](docs/categories/containers-image-tooling.md) | 19 |
-| [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 140 |
-| [Kubernetes networking, storage and add-ons](docs/categories/kubernetes-networking-storage-addons.md) | 128 |
-| [CI, build and testing](docs/categories/ci-build-testing.md) | 80 |
+| [Virtualization, bare metal and homelab](docs/categories/virtualization-bare-metal-homelab.md) | 66 |
+| [Containers and image tooling](docs/categories/containers-image-tooling.md) | 21 |
+| [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 141 |
+| [Kubernetes networking, storage and add-ons](docs/categories/kubernetes-networking-storage-addons.md) | 130 |
+| [CI, build and testing](docs/categories/ci-build-testing.md) | 81 |
 | [CD, GitOps, release and promotion](docs/categories/cd-gitops-release-promotion.md) | 32 |
 | [Artifact and package management](docs/categories/artifact-package-management.md) | 19 |
 | [Platform engineering and internal developer platforms](docs/categories/platform-engineering-idp.md) | 12 |
-| [Developer experience and local environments](docs/categories/developer-experience-local-environments.md) | 86 |
-| [Monitoring, metrics, logs and tracing](docs/categories/monitoring-metrics-logs-tracing.md) | 95 |
-| [SRE, incident response and on-call](docs/categories/sre-incident-response-on-call.md) | 21 |
+| [Developer experience and local environments](docs/categories/developer-experience-local-environments.md) | 89 |
+| [Monitoring, metrics, logs and tracing](docs/categories/monitoring-metrics-logs-tracing.md) | 97 |
+| [SRE, incident response and on-call](docs/categories/sre-incident-response-on-call.md) | 22 |
 | [Backup, disaster recovery and resilience](docs/categories/backup-disaster-recovery-resilience.md) | 15 |
 | [Chaos and performance engineering](docs/categories/chaos-performance-engineering.md) | 23 |
-| [Application and cloud security](docs/categories/application-cloud-security.md) | 177 |
-| [IAM, secrets and certificate management](docs/categories/iam-secrets-certificates.md) | 40 |
-| [Software supply-chain security](docs/categories/software-supply-chain-security.md) | 10 |
-| [Policy, governance and compliance](docs/categories/policy-governance-compliance.md) | 3 |
+| [Application and cloud security](docs/categories/application-cloud-security.md) | 179 |
+| [IAM, secrets and certificate management](docs/categories/iam-secrets-certificates.md) | 41 |
+| [Software supply-chain security](docs/categories/software-supply-chain-security.md) | 12 |
+| [Policy, governance and compliance](docs/categories/policy-governance-compliance.md) | 4 |
 | [FinOps and sustainability](docs/categories/finops-sustainability.md) | 30 |
-| [Databases, caching and data infrastructure](docs/categories/databases-caching-data-infrastructure.md) | 23 |
+| [Databases, caching and data infrastructure](docs/categories/databases-caching-data-infrastructure.md) | 26 |
 | [Serverless, edge and WebAssembly](docs/categories/serverless-edge-webassembly.md) | 10 |
-| [Workflow automation and ChatOps](docs/categories/workflow-automation-chatops.md) | 18 |
-| [MLOps, LLMOps and AI infrastructure](docs/categories/mlops-llmops-ai-infrastructure.md) | 80 |
+| [Workflow automation and ChatOps](docs/categories/workflow-automation-chatops.md) | 17 |
+| [MLOps, LLMOps and AI infrastructure](docs/categories/mlops-llmops-ai-infrastructure.md) | 82 |
 | [Documentation, learning and career resources](docs/categories/documentation-learning-career.md) | 56 |
 | [Emerging and experimental tools](docs/categories/emerging-experimental.md) | 58 |
 | [Deprecated and historical tools](docs/categories/deprecated-historical.md) | 7 |
@@ -98,20 +98,20 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 786 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 801 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 21 |
-| `open-core` | OSS/community core with commercial features or service. | 95 |
+| `open-core` | OSS/community core with commercial features or service. | 101 |
 | `commercial` | Proprietary commercial product. | 33 |
 | `free-saas` | Hosted service with a free offering. | 3 |
 | `documentation` | Learning or documentation resource. | 99 |
-| `unknown` | Reliable licence evidence has not been recorded. | 248 |
+| `unknown` | Reliable licence evidence has not been recorded. | 247 |
 
 ## Project-status legend
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 295 |
-| `needs-review` | Imported but not yet fully verified. | 981 |
+| `active` | Maintained according to recorded primary-source evidence. | 317 |
+| `needs-review` | Imported but not yet fully verified. | 979 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 0 |
 | `archived` | Repository or product is archived. | 9 |
 | `historical` | Retained for context or migration work. | 0 |

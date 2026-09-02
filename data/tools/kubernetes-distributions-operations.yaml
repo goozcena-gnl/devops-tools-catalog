@@ -2432,6 +2432,49 @@
   sources:
   - legacy:devopstools_final.md#L482
   needs_review: true
+- id: kubernetes
+  name: Kubernetes
+  summary: CNCF-hosted orchestration system for deploying, scaling, and managing containerized applications.
+  official_url: https://kubernetes.io
+  repository_url: https://github.com/kubernetes/kubernetes
+  repository_archived: false
+  documentation_url: https://kubernetes.io/docs/
+  categories:
+  - kubernetes-distributions-operations
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  - site-reliability-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a portable, declarative control plane for orchestrating container workloads across clusters.
+  avoid_when:
+  - A single-host runtime or simpler scheduler satisfies the operational and scaling requirements.
+  deployment_models:
+  - self-hosted
+  - managed-service
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: established
+  status: active
+  alternatives:
+  - k3s
+  - k0s
+  - nomad
+  tags:
+  - kubernetes
+  - container-orchestration
+  - cncf
+  verified_on: '2026-09-01'
+  sources:
+  - https://kubernetes.io/docs/concepts/overview/
+  - https://github.com/kubernetes/kubernetes
+  - https://github.com/kubernetes/kubernetes/blob/master/LICENSE
+  needs_review: false
 - id: kubernetes-common-errors-and-fixes
   name: Kubernetes Common Errors & Fixes
   summary: Troubleshooting Kubernetes.

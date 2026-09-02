@@ -141,6 +141,7 @@ url_aliases:
   https://cursor.com/fr/origin: https://cursor.com/origin
   https://docs.coroot.com/: https://coroot.com
   https://docs.kubelinter.io/: https://stackrox.github.io/kube-linter/
+  https://fossorial.io/: https://pangolin.net
   https://github.com/danielfoehrKn/kubeswitch?tab=readme-ov-file#execute-commands: https://github.com/danielfoehrKn/kubeswitch
   https://github.com/openstack/magnum: https://opendev.org/openstack/magnum
   https://github.com/snyk/snyk: https://github.com/snyk/cli

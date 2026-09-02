@@ -1,3 +1,45 @@
+- id: dependency-track
+  name: Dependency-Track
+  summary: OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
+  official_url: https://dependencytrack.org
+  repository_url: https://github.com/DependencyTrack/dependency-track
+  repository_archived: false
+  documentation_url: https://docs.dependencytrack.org/
+  categories:
+  - software-supply-chain-security
+  - application-cloud-security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  - release-engineer
+  lifecycle_stages:
+  - secure
+  - build
+  - release
+  use_when:
+  - You need continuous SBOM ingestion, vulnerability intelligence, policy analysis, and portfolio-level component risk tracking.
+  avoid_when:
+  - A stateless scanner in a single pipeline is sufficient and you do not need a persistent component inventory.
+  deployment_models:
+  - self-hosted
+  - container
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives:
+  - osv-scanner
+  - snyk
+  tags:
+  - sbom
+  - software-composition-analysis
+  - vulnerability-management
+  verified_on: '2026-09-01'
+  sources:
+  - https://docs.dependencytrack.org/
+  - https://github.com/DependencyTrack/dependency-track
+  - https://github.com/DependencyTrack/dependency-track/blob/master/LICENSE
+  needs_review: false
 - id: git-push-no-mistakes
   name: git push no-mistakes
   summary: Guardrails to prevent common mistakes when pushing to Git.
@@ -123,6 +165,47 @@
   - legacy:7_Development-Collaboration/README.md#L65
   - legacy:devopstools_final.md#L1103
   needs_review: true
+- id: plumber
+  name: Plumber
+  summary: CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
+  official_url: https://getplumber.io
+  repository_url: https://github.com/getplumber/plumber
+  repository_archived: false
+  documentation_url: https://getplumber.io/docs
+  categories:
+  - software-supply-chain-security
+  - ci-build-testing
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - secure
+  - build
+  - test
+  use_when:
+  - You need focused checks for unsafe or weakly pinned dependencies and configuration in CI/CD pipelines.
+  avoid_when:
+  - You need a general-purpose SAST, SCA, or cloud-posture platform beyond CI/CD configuration.
+  deployment_models:
+  - local-binary
+  - ci-plugin
+  license_model: oss
+  license_spdx: MPL-2.0
+  maturity: growing
+  status: active
+  alternatives:
+  - harden-runner
+  tags:
+  - cicd-security
+  - github-actions
+  - gitlab-ci
+  verified_on: '2026-09-01'
+  sources:
+  - https://getplumber.io
+  - https://github.com/getplumber/plumber
+  - https://github.com/getplumber/plumber/blob/main/LICENSE
+  needs_review: false
 - id: pre-commit
   name: pre-commit
   summary: Multi-language Git hook framework (config-driven, reproducible hooks across teams).

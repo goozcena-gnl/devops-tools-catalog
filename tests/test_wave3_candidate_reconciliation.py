@@ -58,7 +58,7 @@ def test_wave3_additions_resolve_to_unique_canonical_records() -> None:
     ]
     assert len(added_ids) == len(set(added_ids)) == 56
     assert set(added_ids) <= set(tools_by_id)
-    assert len(tools_by_id) == 1285
+    assert len(tools_by_id) == 1305
 
 
 def test_wave3_guidance_sentences_are_not_split_by_flow_yaml_commas() -> None:

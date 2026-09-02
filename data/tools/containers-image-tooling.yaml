@@ -181,6 +181,48 @@
   - https://github.com/wagoodman/dive
   - https://github.com/wagoodman/dive/blob/main/LICENSE
   needs_review: false
+- id: docker
+  name: Docker
+  summary: Product ecosystem for developing, building, distributing, and running application containers.
+  official_url: https://www.docker.com
+  documentation_url: https://docs.docker.com/
+  categories:
+  - containers-image-tooling
+  - developer-experience-local-environments
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - build
+  - release
+  - deploy
+  use_when:
+  - You need an integrated container workflow spanning local development, image builds, distribution, and runtime operations.
+  avoid_when:
+  - You require a daemonless or rootless-first engine and prefer Podman or lower-level OCI tooling.
+  deployment_models:
+  - local-binary
+  - host-service
+  - desktop
+  license_model: open-core
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives:
+  - podman
+  - nerdctl
+  tags:
+  - containers
+  - oci
+  - container-runtime
+  verified_on: '2026-09-01'
+  sources:
+  - https://docs.docker.com/get-started/docker-overview/
+  - https://docs.docker.com/engine/
+  - https://docs.docker.com/subscription/desktop-license/
+  needs_review: false
 - id: docker-build
   name: Docker Build
   summary: Docker image build system.
@@ -241,6 +283,46 @@
   - legacy:3_CI-CD-Automation/README.md#L82
   - legacy:devopstools_final.md#L353
   needs_review: true
+- id: docker-compose
+  name: Docker Compose
+  summary: Declarative tool for defining and running multi-container applications from a Compose file.
+  official_url: https://docs.docker.com/compose/
+  repository_url: https://github.com/docker/compose
+  repository_archived: false
+  documentation_url: https://docs.docker.com/compose/
+  categories:
+  - containers-image-tooling
+  - developer-experience-local-environments
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  - deploy
+  use_when:
+  - You need reproducible local or single-host orchestration for several related containers.
+  avoid_when:
+  - You need multi-node scheduling, cluster reconciliation, or production-grade orchestration.
+  deployment_models:
+  - local-binary
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives:
+  - podman
+  tags:
+  - containers
+  - local-development
+  - compose
+  verified_on: '2026-09-01'
+  sources:
+  - https://docs.docker.com/compose/
+  - https://github.com/docker/compose
+  - https://github.com/docker/compose/blob/main/LICENSE
+  needs_review: false
 - id: docker-offload
   name: Docker Offload
   summary: Offload Docker builds to the cloud.

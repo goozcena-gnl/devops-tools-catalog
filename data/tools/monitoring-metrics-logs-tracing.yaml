@@ -1,3 +1,43 @@
+- id: alertmanager
+  name: Alertmanager
+  summary: Prometheus component that deduplicates, groups, silences, and routes alerts to notification receivers.
+  official_url: https://prometheus.io/docs/alerting/latest/alertmanager/
+  repository_url: https://github.com/prometheus/alertmanager
+  repository_archived: false
+  documentation_url: https://prometheus.io/docs/alerting/latest/alertmanager/
+  categories:
+  - monitoring-metrics-logs-tracing
+  - sre-incident-response-on-call
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  use_when:
+  - You use Prometheus-compatible alerts and need routing, grouping, inhibition, and silencing.
+  avoid_when:
+  - You require a complete on-call scheduling and incident-management platform.
+  deployment_models:
+  - self-hosted
+  - container
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives:
+  - goalert
+  tags:
+  - prometheus
+  - alerting
+  - incident-response
+  verified_on: '2026-09-01'
+  sources:
+  - https://prometheus.io/docs/alerting/latest/alertmanager/
+  - https://github.com/prometheus/alertmanager
+  - https://github.com/prometheus/alertmanager/blob/main/LICENSE
+  needs_review: false
 - id: amazon-cloudwatch
   name: Amazon CloudWatch
   summary: AWS monitoring and observability service.
@@ -1892,6 +1932,44 @@
   - legacy:5_Monitoring-Observability/README.md#L17
   - legacy:devopstools_final.md#L712
   needs_review: true
+- id: node-exporter
+  name: Node Exporter
+  summary: Prometheus exporter that exposes hardware and operating-system metrics from Unix-like hosts.
+  official_url: https://prometheus.io/docs/guides/node-exporter/
+  repository_url: https://github.com/prometheus/node_exporter
+  repository_archived: false
+  documentation_url: https://prometheus.io/docs/guides/node-exporter/
+  categories:
+  - monitoring-metrics-logs-tracing
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  use_when:
+  - You need standard Prometheus host metrics for Linux and other Unix-like systems.
+  avoid_when:
+  - You need application telemetry, logs, traces, or native Windows host metrics.
+  deployment_models:
+  - host-service
+  - container
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives: []
+  tags:
+  - prometheus
+  - host-metrics
+  - exporter
+  verified_on: '2026-09-01'
+  sources:
+  - https://prometheus.io/docs/guides/node-exporter/
+  - https://github.com/prometheus/node_exporter
+  - https://github.com/prometheus/node_exporter/blob/master/LICENSE
+  needs_review: false
 - id: openobserve
   name: OpenObserve
   summary: Unified logs/metrics/traces with a focus on log search and cost efficiency.
