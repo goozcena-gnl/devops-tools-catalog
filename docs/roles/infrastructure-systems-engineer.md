@@ -118,7 +118,7 @@
 | [NGINX](https://nginx.org) | Kubernetes networking, storage and add-ons | open-core | active |
 | [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Open vSwitch](https://www.openvswitch.org) | Virtualization, bare metal and homelab | oss | needs-review |
-| [OpenStack](https://www.openstack.org) | Virtualization, bare metal and homelab, Cloud platforms and cloud management | oss | active |
+| [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
 | [Oracle VirtualBox](https://www.virtualbox.org) | Virtualization, bare metal and homelab | oss | needs-review |

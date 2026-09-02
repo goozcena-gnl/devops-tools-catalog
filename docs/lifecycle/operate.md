@@ -499,7 +499,7 @@
 - [NetWatch Labs](https://www.netwatchlabs.com) — Collection of terminal-first network and system diagnostics tools for Linux operators.
 - [New Relic](https://github.com/newrelic) — Full-stack observability platform.
 - [Nextcloud](https://nextcloud.com/) — Self-hosted collaboration platform for files, groupware, communication, and extensible applications.
-- [NGINX](https://nginx.org) — High-performance web server, reverse proxy, load balancer, and HTTP cache.
+- [NGINX](https://nginx.org) — Web server, reverse proxy, load balancer, and HTTP cache.
 - [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) — F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS traffic to cluster services.
 - [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) — NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
 - [Nocalhost](https://nocalhost.dev) — Cloud-native app development tool.

@@ -218,7 +218,7 @@
 | [OpenCost](https://www.opencost.io) | FinOps and sustainability | oss | active |
 | [OpenFaaS](https://www.openfaas.com) | Serverless, edge and WebAssembly | open-core | needs-review |
 | [OpenSSH](https://www.openssh.org) | IAM, secrets and certificate management | oss | needs-review |
-| [OpenStack](https://www.openstack.org) | Virtualization, bare metal and homelab, Cloud platforms and cloud management | oss | active |
+| [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
 | [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) | IAM, secrets and certificate management | oss | needs-review |
 | [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) | Kubernetes distributions and operations, Cloud platforms and cloud management | oss | active |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |

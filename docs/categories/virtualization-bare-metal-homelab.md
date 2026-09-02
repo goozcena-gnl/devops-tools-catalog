@@ -751,7 +751,7 @@ Production-quality multilayer virtual switch for network automation, programmati
 
 ### OpenStack
 
-**Categories:** Virtualization, bare metal and homelab, Cloud platforms and cloud management<br>
+**Categories:** Cloud platforms and cloud management, Virtualization, bare metal and homelab<br>
 **Roles:** Cloud Engineer, Infrastructure and Systems Engineer, Platform Engineer<br>
 **Model:** Oss<br>
 **Status:** Active

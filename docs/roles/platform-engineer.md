@@ -451,7 +451,7 @@
 | [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | needs-review |
 | [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | unknown | needs-review |
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
-| [OpenStack](https://www.openstack.org) | Virtualization, bare metal and homelab, Cloud platforms and cloud management | oss | active |
+| [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
 | [OperatorHub](https://operatorhub.io) | Kubernetes networking, storage and add-ons | unknown | needs-review |

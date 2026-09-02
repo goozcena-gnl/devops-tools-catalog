@@ -20,7 +20,7 @@
 - [DeepEval](https://deepeval.com/) — Local-first framework for evaluating and regression-testing LLM applications, agents, RAG pipelines, and MCP systems.
 - [Dependency-Track](https://dependencytrack.org) — OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
 - [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal container images for secure deployments.
-- [Docker](https://www.docker.com) — Container platform and CLI for building, distributing, and running OCI-compatible application containers.
+- [Docker](https://www.docker.com) — Product ecosystem for developing, building, distributing, and running application containers.
 - [Docker Build](https://docs.docker.com/build) — Docker image build system.
 - [Docker Buildx](https://github.com/docker/buildx) — Docker CLI plugin for extended build capabilities.
 - [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) — Curated hardened container images catalog.

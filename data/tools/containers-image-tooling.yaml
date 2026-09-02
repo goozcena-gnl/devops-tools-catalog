@@ -183,10 +183,8 @@
   needs_review: false
 - id: docker
   name: Docker
-  summary: Container platform and CLI for building, distributing, and running OCI-compatible application containers.
+  summary: Product ecosystem for developing, building, distributing, and running application containers.
   official_url: https://www.docker.com
-  repository_url: https://github.com/docker/cli
-  repository_archived: false
   documentation_url: https://docs.docker.com/
   categories:
   - containers-image-tooling
@@ -196,16 +194,18 @@
   - platform-engineer
   - developer-experience-engineer
   lifecycle_stages:
+  - develop
   - build
   - release
   - deploy
   use_when:
-  - You need the mainstream container workflow and its broad registry, build, and runtime ecosystem.
+  - You need an integrated container workflow spanning local development, image builds, distribution, and runtime operations.
   avoid_when:
   - You require a daemonless or rootless-first engine and prefer Podman or lower-level OCI tooling.
   deployment_models:
   - local-binary
   - host-service
+  - desktop
   license_model: open-core
   commercial_offering: true
   maturity: established
@@ -220,8 +220,8 @@
   verified_on: '2026-09-01'
   sources:
   - https://docs.docker.com/get-started/docker-overview/
-  - https://github.com/docker/cli
-  - https://github.com/docker/cli/blob/master/LICENSE
+  - https://docs.docker.com/engine/
+  - https://docs.docker.com/subscription/desktop-license/
   needs_review: false
 - id: docker-build
   name: Docker Build

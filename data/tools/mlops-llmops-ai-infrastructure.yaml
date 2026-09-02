@@ -2358,7 +2358,6 @@
   status: active
   alternatives:
   - ollama
-  - llm-d
   tags:
   - llm-inference
   - model-serving

@@ -392,17 +392,17 @@ Shell extension that loads and unloads directory-specific environment variables.
 **Model:** Open Core<br>
 **Status:** Active
 
-Container platform and CLI for building, distributing, and running OCI-compatible application containers.
+Product ecosystem for developing, building, distributing, and running application containers.
 
 **Use when**
 
-- You need the mainstream container workflow and its broad registry, build, and runtime ecosystem.
+- You need an integrated container workflow spanning local development, image builds, distribution, and runtime operations.
 
 **Consider alternatives when**
 
 - You require a daemonless or rootless-first engine and prefer Podman or lower-level OCI tooling.
 
-[Official site](https://www.docker.com) · [Documentation](https://docs.docker.com/) · [Source repository](https://github.com/docker/cli)
+[Official site](https://www.docker.com) · [Documentation](https://docs.docker.com/)
 
 ### Docker Compose
 

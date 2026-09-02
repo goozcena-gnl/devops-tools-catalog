@@ -115,7 +115,7 @@
 - [Descheduler](https://github.com/kubernetes-sigs/descheduler) — Rebalance pods in Kubernetes clusters.
 - [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) — Tooling to run Kubernetes locally on the desktop.
 - [DigitalOcean](https://www.digitalocean.com) — Developer-friendly cloud infrastructure provider.
-- [Docker](https://www.docker.com) — Container platform and CLI for building, distributing, and running OCI-compatible application containers.
+- [Docker](https://www.docker.com) — Product ecosystem for developing, building, distributing, and running application containers.
 - [Docker Agent](https://docker.github.io/docker-agent) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
 - [Docker Compose](https://docs.docker.com/compose/) — Declarative tool for defining and running multi-container applications from a Compose file.
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) — Desktop Docker environment.
@@ -392,7 +392,7 @@
 - [nerdctl](https://github.com/containerd/nerdctl) — Docker-compatible CLI for containerd.
 - [Netlify](https://www.netlify.com) — Modern web hosting and automation platform.
 - [Nextcloud](https://nextcloud.com/) — Self-hosted collaboration platform for files, groupware, communication, and extensible applications.
-- [NGINX](https://nginx.org) — High-performance web server, reverse proxy, load balancer, and HTTP cache.
+- [NGINX](https://nginx.org) — Web server, reverse proxy, load balancer, and HTTP cache.
 - [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) — F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS traffic to cluster services.
 - [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) — NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
 - [Nocalhost](https://nocalhost.dev) — Cloud-native app development tool.

@@ -2857,7 +2857,7 @@
   needs_review: true
 - id: nginx
   name: NGINX
-  summary: High-performance web server, reverse proxy, load balancer, and HTTP cache.
+  summary: Web server, reverse proxy, load balancer, and HTTP cache.
   official_url: https://nginx.org
   repository_url: https://github.com/nginx/nginx
   repository_archived: false

@@ -67,7 +67,7 @@
 - [Devtron](https://devtron.ai) — AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and day-2 operations.
 - [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal container images for secure deployments.
 - [dive](https://github.com/wagoodman/dive) — Command-line and terminal user interface for inspecting image layers and their contribution to container image contents.
-- [Docker](https://www.docker.com) — Container platform and CLI for building, distributing, and running OCI-compatible application containers.
+- [Docker](https://www.docker.com) — Product ecosystem for developing, building, distributing, and running application containers.
 - [Docker Agent](https://docker.github.io/docker-agent) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
 - [Docker Build](https://docs.docker.com/build) — Docker image build system.
 - [Docker Buildx](https://github.com/docker/buildx) — Docker CLI plugin for extended build capabilities.

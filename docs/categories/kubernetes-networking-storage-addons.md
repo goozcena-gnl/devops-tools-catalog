@@ -1850,7 +1850,7 @@ Helm-compatible Kubernetes deployment tool and Helm 4 alternative with plan prev
 **Model:** Open Core<br>
 **Status:** Active
 
-High-performance web server, reverse proxy, load balancer, and HTTP cache.
+Web server, reverse proxy, load balancer, and HTTP cache.
 
 **Use when**
 
