@@ -1,14 +1,19 @@
+import http.server
 import json
+import threading
 from collections import Counter
 from pathlib import Path
 
 import scripts.check_links as check_links
 from scripts.check_links import (
+    CACHE_VERSION,
     BaselineItem,
     DomainRateLimiter,
     HttpOutcome,
     LinkResult,
+    TrackingRedirectHandler,
     UrlContext,
+    _http_request,
     assess_strict_results,
     catalogue_url_contexts,
     check_url,
@@ -19,6 +24,13 @@ from scripts.check_links import (
     run_audit,
     strict_exit_code,
 )
+
+
+def run_local_http_handler(handler: type[http.server.BaseHTTPRequestHandler]):
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    thread = threading.Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+    return server, thread
 
 
 def result(url: str, classification: str, **kwargs: object) -> LinkResult:
@@ -163,6 +175,138 @@ def test_head_and_get_404_remains_manual(monkeypatch) -> None:
     assert checked.classification == "manual-verification-required"
     assert checked.head_status == checked.status == 404
     assert checked.get_fallback is True
+
+
+def test_http_request_preserves_cookie_across_same_url_redirect() -> None:
+    cookies: list[str | None] = []
+
+    class CookieChallenge(http.server.BaseHTTPRequestHandler):
+        def respond(self) -> None:
+            cookie = self.headers.get("Cookie")
+            cookies.append(cookie)
+            if cookie == "milvus_challenge=accepted":
+                self.send_response(200)
+            else:
+                self.send_response(302)
+                self.send_header("Location", "/")
+                self.send_header(
+                    "Set-Cookie",
+                    "milvus_challenge=accepted; Path=/; HttpOnly; SameSite=Lax",
+                )
+            self.end_headers()
+
+        do_GET = respond
+        do_HEAD = respond
+
+        def log_message(self, format: str, *args: object) -> None:
+            pass
+
+    server, thread = run_local_http_handler(CookieChallenge)
+    try:
+        url = f"http://127.0.0.1:{server.server_port}/"
+        outcome = _http_request(url, method="HEAD", timeout=2)
+    finally:
+        server.shutdown()
+        server.server_close()
+        thread.join(timeout=2)
+
+    assert outcome.classification == "valid-redirect"
+    assert outcome.status == 200
+    assert outcome.redirect_codes == (302,)
+    assert cookies == [None, "milvus_challenge=accepted"]
+    assert CACHE_VERSION == 3
+
+
+def test_http_request_builds_cookie_aware_bounded_opener(monkeypatch) -> None:
+    handlers: list[object] = []
+
+    class Response:
+        status = 200
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args: object) -> None:
+            pass
+
+        def geturl(self) -> str:
+            return "https://example.test/"
+
+    class Opener:
+        def open(self, request: object, timeout: float) -> Response:
+            return Response()
+
+    def build_opener(*configured_handlers: object) -> Opener:
+        handlers.extend(configured_handlers)
+        return Opener()
+
+    monkeypatch.setattr(check_links.urllib.request, "build_opener", build_opener)
+    outcome = _http_request("https://example.test/", method="HEAD", timeout=2)
+
+    redirect_handler = next(
+        handler for handler in handlers if isinstance(handler, TrackingRedirectHandler)
+    )
+    assert any(
+        isinstance(handler, check_links.urllib.request.HTTPCookieProcessor)
+        for handler in handlers
+    )
+    assert redirect_handler.max_redirections == 10
+    assert outcome.classification == "valid"
+
+
+def test_cookie_support_does_not_accept_a_genuine_redirect_loop() -> None:
+    request_count = 0
+
+    class RedirectLoop(http.server.BaseHTTPRequestHandler):
+        def respond(self) -> None:
+            nonlocal request_count
+            request_count += 1
+            self.send_response(302)
+            self.send_header("Location", "/")
+            self.send_header("Set-Cookie", "challenge=never-satisfied; Path=/")
+            self.end_headers()
+
+        do_GET = respond
+        do_HEAD = respond
+
+        def log_message(self, format: str, *args: object) -> None:
+            pass
+
+    server, thread = run_local_http_handler(RedirectLoop)
+    try:
+        url = f"http://127.0.0.1:{server.server_port}/"
+        outcome = _http_request(url, method="HEAD", timeout=2)
+    finally:
+        server.shutdown()
+        server.server_close()
+        thread.join(timeout=2)
+
+    assert outcome.classification == "http-error"
+    assert outcome.status == 302
+    assert outcome.error and "redirect" in outcome.error.lower()
+    assert 1 < request_count <= TrackingRedirectHandler.max_redirections
+
+
+def test_tls_failure_remains_blocking_without_insecure_fallback(monkeypatch) -> None:
+    methods: list[str] = []
+
+    def tls_failure(url: str, *, method: str, timeout: float) -> HttpOutcome:
+        methods.append(method)
+        return HttpOutcome("tls-failure", None, None, (), "certificate failure")
+
+    monkeypatch.setattr(check_links, "_http_request", tls_failure)
+    checked = check_url(
+        "https://invalid.test",
+        limiter=DomainRateLimiter(0),
+        retries=2,
+        timeout=1,
+        check_archived=False,
+    )
+
+    assert methods == ["HEAD"]
+    assert checked.classification == "tls-failure"
+    assert checked.get_fallback is False
+    assert strict_exit_code(True, assess_strict_results([checked], {})) == 1
 
 
 def test_archive_classification_requires_explicit_expectation() -> None:

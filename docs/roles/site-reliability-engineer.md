@@ -406,7 +406,7 @@
 | [WeKan](https://wekan.fi) | Workflow automation and ChatOps | oss | needs-review |
 | [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | needs-review |
 | [Wireshark](https://www.wireshark.org) | SRE, incident response and on-call | oss | needs-review |
-| [Wozz](https://wozz.io/index.html) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
 | [YAML](https://yaml.org) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Zenduty](https://github.com/zenduty) | SRE, incident response and on-call | open-core | needs-review |

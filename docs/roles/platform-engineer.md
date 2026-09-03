@@ -579,7 +579,7 @@
 | [Weaveworks GitOps](https://docs.gitops.weaveworks.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [webernetes](https://github.com/ngrok/webernetes) | Kubernetes distributions and operations | oss | needs-review |
 | [werf](https://werf.io) | Containers and image tooling | oss | needs-review |
-| [Wozz](https://wozz.io/index.html) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
 | [XCP-ng](https://xcp-ng.org/) | Virtualization, bare metal and homelab | oss | active |
 | [Xosphere](https://www.xosphere.io) | FinOps and sustainability | unknown | needs-review |
 | [YAML](https://yaml.org) | Kubernetes networking, storage and add-ons | oss | needs-review |

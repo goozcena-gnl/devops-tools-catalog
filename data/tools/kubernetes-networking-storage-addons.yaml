@@ -3775,34 +3775,54 @@
   needs_review: true
 - id: wozz
   name: Wozz
-  summary: Kubernetes management and operations tool.
-  official_url: https://wozz.io/index.html
+  summary: Open-source GitHub Action and CLI for detecting Kubernetes resource-cost
+    increases and overprovisioned workloads.
+  official_url: https://github.com/WozzHQ/wozz
+  repository_url: https://github.com/WozzHQ/wozz
+  repository_archived: false
+  documentation_url: https://github.com/WozzHQ/wozz#readme
   categories:
   - kubernetes-networking-storage-addons
+  - finops-sustainability
   subcategories:
   - Kubernetes Ecosystem & Add-ons
   roles:
   - platform-engineer
   - site-reliability-engineer
   - kubernetes-engineer
+  - finops-engineer
   lifecycle_stages:
-  - deploy
+  - plan
+  - test
   - operate
+  - optimize
   use_when:
-  - You need a simplified Kubernetes operations interface.
+  - You want pull-request cost feedback for Kubernetes resource changes or a local
+    audit of overprovisioned workloads.
   avoid_when:
-  - Established tools (K9s/Lens/ArgoCD) already cover your management and deployment workflows.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You need continuous allocation reporting, billing reconciliation, or automated
+    cluster-wide resource changes beyond its documented checks.
+  deployment_models:
+  - ci
+  - local-cli
+  license_model: oss
+  license_spdx: MIT
+  maturity: emerging
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - cost-optimization
+  - resource-rightsizing
+  - pull-request-checks
+  verified_on: '2026-09-03'
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L141
   - legacy:devopstools_final.md#L637
-  needs_review: true
+  - legacy:4_Kubernetes-Containers/README.md#L141
+  - https://github.com/WozzHQ/wozz
+  - https://github.com/WozzHQ/wozz#readme
+  - https://github.com/WozzHQ/wozz/blob/main/LICENSE
+  needs_review: false
 - id: yaml
   name: YAML
   summary: Data serialization format used in Kubernetes.

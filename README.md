@@ -9,7 +9,7 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 - **Canonical records:** 1305
 - **Categories:** 30
-- **Records requiring review:** 977
+- **Records requiring review:** 976
 - **Archived repositories:** 12
 - **Last generation date:** 2026-09-03
 - **Maintenance status:** Active migration; unverified metadata is explicitly marked.
@@ -54,7 +54,7 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 | [IAM, secrets and certificate management](docs/categories/iam-secrets-certificates.md) | 41 |
 | [Software supply-chain security](docs/categories/software-supply-chain-security.md) | 12 |
 | [Policy, governance and compliance](docs/categories/policy-governance-compliance.md) | 4 |
-| [FinOps and sustainability](docs/categories/finops-sustainability.md) | 30 |
+| [FinOps and sustainability](docs/categories/finops-sustainability.md) | 31 |
 | [Databases, caching and data infrastructure](docs/categories/databases-caching-data-infrastructure.md) | 26 |
 | [Serverless, edge and WebAssembly](docs/categories/serverless-edge-webassembly.md) | 10 |
 | [Workflow automation and ChatOps](docs/categories/workflow-automation-chatops.md) | 17 |
@@ -98,20 +98,20 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 801 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 802 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 21 |
 | `open-core` | OSS/community core with commercial features or service. | 101 |
 | `commercial` | Proprietary commercial product. | 33 |
 | `free-saas` | Hosted service with a free offering. | 3 |
 | `documentation` | Learning or documentation resource. | 99 |
-| `unknown` | Reliable licence evidence has not been recorded. | 247 |
+| `unknown` | Reliable licence evidence has not been recorded. | 246 |
 
 ## Project-status legend
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 321 |
-| `needs-review` | Imported but not yet fully verified. | 975 |
+| `active` | Maintained according to recorded primary-source evidence. | 322 |
+| `needs-review` | Imported but not yet fully verified. | 974 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 0 |
 | `archived` | Repository or product is archived. | 9 |
 | `historical` | Retained for context or migration work. | 0 |

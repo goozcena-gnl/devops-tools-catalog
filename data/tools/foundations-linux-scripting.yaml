@@ -837,7 +837,7 @@
   official_url: https://systemd.io
   repository_url: https://github.com/systemd/systemd
   repository_archived: false
-  documentation_url: https://systemd.io/COMMAND_LINE/
+  documentation_url: https://www.freedesktop.org/software/systemd/man/latest/
   categories:
   - foundations-linux-scripting
   roles:
@@ -861,9 +861,10 @@
   - linux
   - init-system
   - service-management
-  verified_on: '2026-09-01'
+  verified_on: '2026-09-03'
   sources:
   - https://systemd.io
+  - https://www.freedesktop.org/software/systemd/man/latest/
   - https://github.com/systemd/systemd
   - https://github.com/systemd/systemd/tree/main/LICENSES
   needs_review: false
