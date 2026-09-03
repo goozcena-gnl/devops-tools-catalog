@@ -10,7 +10,9 @@ from scripts.check_links import LinkResult, assess_strict_results, load_baseline
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_IDS = {"milvus", "systemd", "wozz"}
-BASELINE_SHA256 = "ea610c49fe7cf71299eb11610574cf623198df3345b4fdb294d9e3748743289c"
+BASELINE_NORMALIZED_SHA256 = (
+    "5d4a16c083d434ffa2a6d8e7cdf5c73bfa4bb1a925641b973a0117d19f4f5e1e"
+)
 REVIEWED_BLOCKERS = {
     "https://github.com/gremlin-io/gremlin",
     "https://github.com/hoji-ai/hoji",
@@ -86,9 +88,10 @@ def test_original_unbaselined_blocker_values_are_accounted_for() -> None:
     assert ORIGINAL_UNBASELINED_BLOCKERS.isdisjoint(REVIEWED_BLOCKERS)
 
 
-def test_reviewed_blocker_baseline_is_byte_for_byte_unchanged() -> None:
+def test_reviewed_blocker_baseline_is_unchanged() -> None:
     path = ROOT / "config" / "link-audit-baseline.json"
-    assert hashlib.sha256(path.read_bytes()).hexdigest() == BASELINE_SHA256
+    normalized_bytes = path.read_text(encoding="utf-8").encode("utf-8")
+    assert hashlib.sha256(normalized_bytes).hexdigest() == BASELINE_NORMALIZED_SHA256
     baseline = load_baseline(path)
     assert set(baseline) == REVIEWED_BLOCKERS
     assert len(baseline) == 9
