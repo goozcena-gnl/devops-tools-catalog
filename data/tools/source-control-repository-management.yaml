@@ -189,6 +189,8 @@
   tags: []
   verified_on: '2026-08-21'
   sources:
+  - legacy:devopstools_final.md#L84
+  - legacy:1_Foundational-Skills/README.md#L6
   - https://about.gitea.com/
   - https://github.com/go-gitea/gitea
   - https://docs.gitea.com/

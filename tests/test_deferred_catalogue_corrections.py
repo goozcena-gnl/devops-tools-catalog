@@ -6,6 +6,7 @@ from pathlib import Path
 
 from scripts.catalog import load_tools
 from tests import test_v022_n1a_access_retry as n1a
+from tests.test_migration_provenance import legacy_pointer, reconciliation_rows
 
 EXPECTED_IDS = {
     "mcp-server-kubernetes",
@@ -14,6 +15,35 @@ EXPECTED_IDS = {
     "xcp-ng",
 }
 ROOT = Path(__file__).resolve().parents[1]
+EXPECTED_PRIMARY_SOURCES = {
+    "mcp-server-kubernetes": {
+        "https://www.npmjs.com/package/mcp-server-kubernetes",
+        "https://github.com/Flux159/mcp-server-kubernetes",
+        "https://github.com/Flux159/mcp-server-kubernetes#readme",
+        "https://github.com/Flux159/mcp-server-kubernetes/blob/main/LICENSE",
+        "https://github.com/Flux159/mcp-server-kubernetes/blob/main/package.json",
+    },
+    "floci": {
+        "https://floci.io/aws/",
+        "https://floci.io/floci/",
+        "https://github.com/floci-io/floci",
+        "https://github.com/floci-io/floci/blob/main/LICENSE",
+    },
+    "opnsense": {
+        "https://opnsense.org/opnsense/",
+        "https://docs.opnsense.org/",
+        "https://github.com/opnsense/core",
+        "https://docs.opnsense.org/legal.html",
+        "https://opnsense.com/support-overview/",
+    },
+    "xcp-ng": {
+        "https://xcp-ng.org/",
+        "https://docs.xcp-ng.org/",
+        "https://docs.xcp-ng.org/project/architecture/",
+        "https://docs.xcp-ng.org/project/licenses/",
+        "https://xcp-ng.com/",
+    },
+}
 
 
 def _corrected_tools() -> dict[str, dict]:
@@ -41,7 +71,9 @@ def test_deferred_records_are_verified_active_and_documented() -> None:
         assert tool["avoid_when"]
         assert tool["deployment_models"]
         assert tool["sources"]
-        assert all(source.startswith("https://") for source in tool["sources"])
+        primary = EXPECTED_PRIMARY_SOURCES[tool["id"]]
+        assert all(source.startswith("https://") for source in primary)
+        assert primary <= set(tool["sources"])
 
 
 def test_deferred_records_drop_known_stale_identities() -> None:
@@ -51,11 +83,13 @@ def test_deferred_records_drop_known_stale_identities() -> None:
     )
     assert tools["opnsense"]["official_url"] != "https://github.com/opnsense"
     assert tools["xcp-ng"]["official_url"] != "https://github.com/xcp-ng"
-    assert all(
-        not source.startswith("legacy:")
-        for tool in tools.values()
-        for source in tool["sources"]
-    )
+    rows = reconciliation_rows()
+    for tool_id, tool in tools.items():
+        legacy = {legacy_pointer(row) for row in rows if row["canonical_id"] == tool_id}
+        assert legacy
+        # Exact union rejects stale URLs, unrelated provenance and other schemes.
+        assert set(tool["sources"]) == EXPECTED_PRIMARY_SOURCES[tool_id] | legacy
+        assert len(tool["sources"]) == len(set(tool["sources"]))
 
 
 def test_deferred_record_identity_and_licence_semantics() -> None:

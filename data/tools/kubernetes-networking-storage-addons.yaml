@@ -1175,6 +1175,7 @@
   tags: []
   verified_on: '2026-08-21'
   sources:
+  - legacy:devopstools_final.md#L561
   - https://www.haproxy.com/documentation/dataplaneapi/
   - https://github.com/haproxytech/dataplaneapi
   needs_review: false

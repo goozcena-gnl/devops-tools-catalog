@@ -1674,6 +1674,8 @@
   - helm
   verified_on: '2026-09-03'
   sources:
+  - legacy:devopstools_final.md#L1223
+  - legacy:9_AI-MLOps/README.md#L56
   - https://www.npmjs.com/package/mcp-server-kubernetes
   - https://github.com/Flux159/mcp-server-kubernetes
   - https://github.com/Flux159/mcp-server-kubernetes#readme

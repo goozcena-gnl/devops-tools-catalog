@@ -871,6 +871,8 @@
   tags: []
   verified_on: '2026-08-21'
   sources:
+  - legacy:devopstools_final.md#L398
+  - legacy:3_CI-CD-Automation/README.md#L156
   - https://yokecd.github.io/
   - https://github.com/yokecd/yoke
   needs_review: false

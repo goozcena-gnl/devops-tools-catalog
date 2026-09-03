@@ -1856,6 +1856,8 @@
   - on-premises
   verified_on: '2026-09-03'
   sources:
+  - legacy:devopstools_final.md#L274
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L198
   - https://xcp-ng.org/
   - https://docs.xcp-ng.org/
   - https://docs.xcp-ng.org/project/architecture/

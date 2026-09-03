@@ -202,6 +202,8 @@
   - gitlab-ci
   verified_on: '2026-09-01'
   sources:
+  - legacy:devopstools_final.md#L406
+  - legacy:3_CI-CD-Automation/README.md#L168
   - https://getplumber.io
   - https://github.com/getplumber/plumber
   - https://github.com/getplumber/plumber/blob/main/LICENSE

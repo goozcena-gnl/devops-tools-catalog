@@ -2568,6 +2568,8 @@
   tags: []
   verified_on: '2026-08-21'
   sources:
+  - legacy:devopstools_final.md#L506
+  - legacy:4_Kubernetes-Containers/README.md#L53
   - https://kubescape.io/
   - https://github.com/kubescape/kubescape
   - https://kubescape.io/docs/
