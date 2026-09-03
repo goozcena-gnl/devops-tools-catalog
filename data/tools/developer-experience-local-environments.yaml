@@ -682,6 +682,7 @@
   - ci
   verified_on: '2026-09-03'
   sources:
+  - legacy:devopstools_final.md#L1060
   - https://floci.io/aws/
   - https://floci.io/floci/
   - https://github.com/floci-io/floci

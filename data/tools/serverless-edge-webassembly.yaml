@@ -215,6 +215,8 @@
   tags: []
   verified_on: '2026-08-21'
   sources:
+  - legacy:devopstools_final.md#L214
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L106
   - https://knative.dev/
   - https://knative.dev/docs/
   - https://github.com/knative

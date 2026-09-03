@@ -3214,6 +3214,8 @@
   - vpn
   verified_on: '2026-09-03'
   sources:
+  - legacy:devopstools_final.md#L958
+  - legacy:6_Security/README.md#L81
   - https://opnsense.org/opnsense/
   - https://docs.opnsense.org/
   - https://github.com/opnsense/core
@@ -3452,6 +3454,7 @@
   - wireguard
   verified_on: '2026-09-01'
   sources:
+  - legacy:devopstools_final.md#L960
   - https://pangolin.net
   - https://docs.pangolin.net
   - https://github.com/fosrl/pangolin
@@ -3485,6 +3488,7 @@
   tags: []
   verified_on: '2026-08-21'
   sources:
+  - legacy:devopstools_final.md#L897
   - https://www.parrotsec.org/
   - https://parrotsec.org/docs/
   - https://gitlab.com/parrotsec
