@@ -537,7 +537,7 @@ Linux system and service manager providing process supervision, logging, timers,
 
 - You target systems with a different init and service-management stack.
 
-[Official site](https://systemd.io) · [Documentation](https://systemd.io/COMMAND_LINE/) · [Source repository](https://github.com/systemd/systemd)
+[Official site](https://systemd.io) · [Documentation](https://www.freedesktop.org/software/systemd/man/latest/) · [Source repository](https://github.com/systemd/systemd)
 
 ### The Linux Command Line
 

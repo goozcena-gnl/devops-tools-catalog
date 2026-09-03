@@ -2436,22 +2436,22 @@ Vertical Pod Autoscaler.
 
 ### Wozz
 
-**Categories:** Kubernetes networking, storage and add-ons<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Categories:** Kubernetes networking, storage and add-ons, FinOps and sustainability<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, FinOps Engineer<br>
+**Model:** Oss<br>
+**Status:** Active
 
-Kubernetes management and operations tool.
+Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 
 **Use when**
 
-- You need a simplified Kubernetes operations interface.
+- You want pull-request cost feedback for Kubernetes resource changes or a local audit of overprovisioned workloads.
 
 **Consider alternatives when**
 
-- Established tools (K9s/Lens/ArgoCD) already cover your management and deployment workflows.
+- You need continuous allocation reporting, billing reconciliation, or automated cluster-wide resource changes beyond its documented checks.
 
-[Official site](https://wozz.io/index.html)
+[Official site](https://github.com/WozzHQ/wozz) · [Documentation](https://github.com/WozzHQ/wozz#readme) · [Source repository](https://github.com/WozzHQ/wozz)
 
 ### YAML
 

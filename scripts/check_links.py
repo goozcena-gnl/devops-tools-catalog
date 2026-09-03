@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import dataclasses
+import http.cookiejar
 import json
 import os
 import socket
@@ -30,7 +31,7 @@ DEFAULT_MARKDOWN_REPORT = ROOT / "reports" / "link-report.md"
 DEFAULT_BASELINE = ROOT / "config" / "link-audit-baseline.json"
 TRANSIENT_CODES = {408, 425, 429, 500, 502, 503, 504}
 GET_FALLBACK_CODES = {404, 405, 501}
-CACHE_VERSION = 2
+CACHE_VERSION = 3
 BLOCKING_CLASSIFICATIONS = frozenset(
     {
         "manual-verification-required",
@@ -245,7 +246,11 @@ def github_repository_result(
 
 def _http_request(url: str, *, method: str, timeout: float) -> HttpOutcome:
     handler = TrackingRedirectHandler()
-    opener = urllib.request.build_opener(handler)
+    cookie_jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(
+        handler,
+        urllib.request.HTTPCookieProcessor(cookie_jar),
+    )
     headers = {"User-Agent": USER_AGENT, "Accept": "*/*"}
     if method == "GET":
         headers.update(

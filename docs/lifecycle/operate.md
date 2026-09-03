@@ -720,7 +720,7 @@
 - [WinBoat](https://www.winboat.app/) — Linux desktop application that runs Windows in a managed virtual machine with integrated applications and filesystem access.
 - [Windmill](https://www.windmill.dev) — Developer platform to build internal tools and automations.
 - [Wireshark](https://www.wireshark.org) — Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
-- [Wozz](https://wozz.io/index.html) — Kubernetes management and operations tool.
+- [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 - [WSL container](https://learn.microsoft.com/en-us/windows/wsl/wsl-container) — Run Linux containers directly inside WSL 2 without a Docker daemon.
 - [Xata](https://xata.io) — Managed Postgres platform with branching workflows for databases.
 - [XCA](https://www.hohnstaedt.de/xca) — X.509 certificate and key management.
