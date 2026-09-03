@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import csv
 import hashlib
 import json
 from collections import Counter
@@ -29,6 +30,15 @@ ORIGINAL_UNBASELINED_BLOCKERS = {
     "https://milvus.io/docs",
     "https://systemd.io/COMMAND_LINE/",
     "https://wozz.io/index.html",
+}
+WOZZ_PRIMARY_SOURCES = {
+    "https://github.com/WozzHQ/wozz",
+    "https://github.com/WozzHQ/wozz#readme",
+    "https://github.com/WozzHQ/wozz/blob/main/LICENSE",
+}
+WOZZ_LEGACY_SOURCES = {
+    "legacy:devopstools_final.md#L637",
+    "legacy:4_Kubernetes-Containers/README.md#L141",
 }
 
 
@@ -69,8 +79,27 @@ def test_corrected_link_identities_are_exact() -> None:
     assert wozz["license_spdx"] == "MIT"
     assert wozz["status"] == "active"
     assert wozz["needs_review"] is False
-    assert "https://wozz.io/index.html" not in wozz.values()
-    assert all(source.startswith("https://") for source in wozz["sources"])
+    active_urls = {
+        wozz["official_url"],
+        wozz["repository_url"],
+        wozz["documentation_url"],
+    }
+    assert "https://wozz.io/index.html" not in active_urls
+    assert set(wozz["sources"]) == WOZZ_PRIMARY_SOURCES | WOZZ_LEGACY_SOURCES
+
+
+def test_wozz_sources_preserve_migration_provenance() -> None:
+    reconciliation_path = ROOT / "migration" / "reconciliation.csv"
+    with reconciliation_path.open(encoding="utf-8", newline="") as handle:
+        rows = [row for row in csv.DictReader(handle) if row["canonical_id"] == "wozz"]
+
+    assert {(row["source_file"], row["line"], row["disposition"]) for row in rows} == {
+        ("devopstools_final.md", "637", "kept"),
+        ("4_Kubernetes-Containers/README.md", "141", "merged"),
+    }
+    migration_sources = {f"legacy:{row['source_file']}#L{row['line']}" for row in rows}
+    assert migration_sources == WOZZ_LEGACY_SOURCES
+    assert migration_sources <= set(_tools()["wozz"]["sources"])
 
 
 def test_original_unbaselined_blocker_values_are_accounted_for() -> None:

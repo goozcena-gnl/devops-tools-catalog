@@ -3817,6 +3817,8 @@
   - pull-request-checks
   verified_on: '2026-09-03'
   sources:
+  - legacy:devopstools_final.md#L637
+  - legacy:4_Kubernetes-Containers/README.md#L141
   - https://github.com/WozzHQ/wozz
   - https://github.com/WozzHQ/wozz#readme
   - https://github.com/WozzHQ/wozz/blob/main/LICENSE
