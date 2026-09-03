@@ -1818,30 +1818,47 @@
   needs_review: true
 - id: xcp-ng
   name: XCP-ng
-  summary: Open-source virtualization platform (Xen-based).
-  official_url: https://github.com/xcp-ng
+  summary: Xen-based open-source virtualization platform for managing hosts, resource
+    pools, and virtual machines.
+  official_url: https://xcp-ng.org/
+  documentation_url: https://docs.xcp-ng.org/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
   - Virtualization & Containerization
   roles:
   - devops-engineer
+  - platform-engineer
   - infrastructure-systems-engineer
   lifecycle_stages:
   - deploy
   - operate
   use_when:
-  - You want a fully open-source Xen hypervisor with Xen Orchestra management.
+  - You need a self-hosted Xen virtualization appliance for hosts, pools, and virtual
+    machines, optionally managed with Xen Orchestra.
   avoid_when:
-  - You prefer KVM-based virtualization or need broad community/third-party tooling.
-  deployment_models: []
+  - You require a KVM-based stack or hardware and support coverage outside the XCP-ng
+    compatibility and support matrices.
+  deployment_models:
+  - self-hosted
+  - appliance
   license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives:
+  - proxmox-virtual-environment-ve
+  tags:
+  - xen
+  - hypervisor
+  - virtualization
+  - virtual-machines
+  - on-premises
+  verified_on: '2026-09-03'
   sources:
-  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L198
-  - legacy:devopstools_final.md#L274
-  needs_review: true
+  - https://xcp-ng.org/
+  - https://docs.xcp-ng.org/
+  - https://docs.xcp-ng.org/project/architecture/
+  - https://docs.xcp-ng.org/project/licenses/
+  - https://xcp-ng.com/
+  needs_review: false

@@ -2282,21 +2282,21 @@ Open-source zero-trust overlay networking platform.
 ### OPNsense
 
 **Categories:** Application and cloud security<br>
-**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open-source firewall and routing software.
+FreeBSD-based open-source firewall and routing platform for network security gateways.
 
 **Use when**
 
-- A modern, HardenedBSD-based firewall with frequent updates and a clean UI.
+- You need a self-hosted firewall and routing gateway with web-based administration.
 
 **Consider alternatives when**
 
-- You need extensive third-party pfSense package ecosystem compatibility.
+- You require a package, appliance certification, or vendor support arrangement that is not available for OPNsense.
 
-[Official site](https://github.com/opnsense)
+[Official site](https://opnsense.org/opnsense/) · [Documentation](https://docs.opnsense.org/) · [Source repository](https://github.com/opnsense/core)
 
 ### OSINT Framework
 

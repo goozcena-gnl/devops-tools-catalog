@@ -9,9 +9,9 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 - **Canonical records:** 1305
 - **Categories:** 30
-- **Records requiring review:** 981
+- **Records requiring review:** 977
 - **Archived repositories:** 12
-- **Last generation date:** 2026-09-01
+- **Last generation date:** 2026-09-03
 - **Maintenance status:** Active migration; unverified metadata is explicitly marked.
 
 ## Start with a task
@@ -34,12 +34,12 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 |---|---:|
 | [Foundations, Linux and scripting](docs/categories/foundations-linux-scripting.md) | 32 |
 | [Source control and repository management](docs/categories/source-control-repository-management.md) | 15 |
-| [Cloud platforms and cloud management](docs/categories/cloud-platforms-management.md) | 24 |
+| [Cloud platforms and cloud management](docs/categories/cloud-platforms-management.md) | 25 |
 | [Infrastructure as Code](docs/categories/infrastructure-as-code.md) | 35 |
 | [Configuration management](docs/categories/configuration-management.md) | 18 |
 | [Virtualization, bare metal and homelab](docs/categories/virtualization-bare-metal-homelab.md) | 66 |
 | [Containers and image tooling](docs/categories/containers-image-tooling.md) | 21 |
-| [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 141 |
+| [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 142 |
 | [Kubernetes networking, storage and add-ons](docs/categories/kubernetes-networking-storage-addons.md) | 130 |
 | [CI, build and testing](docs/categories/ci-build-testing.md) | 81 |
 | [CD, GitOps, release and promotion](docs/categories/cd-gitops-release-promotion.md) | 32 |
@@ -110,8 +110,8 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 317 |
-| `needs-review` | Imported but not yet fully verified. | 979 |
+| `active` | Maintained according to recorded primary-source evidence. | 321 |
+| `needs-review` | Imported but not yet fully verified. | 975 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 0 |
 | `archived` | Repository or product is archived. | 9 |
 | `historical` | Retained for context or migration work. | 0 |

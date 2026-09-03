@@ -520,22 +520,22 @@ Local emulator for selected Scaleway, Outscale, and Exoscale cloud APIs.
 
 ### Floci
 
-**Categories:** Developer experience and local environments<br>
-**Roles:** DevOps Engineer, Developer Experience Engineer<br>
+**Categories:** Developer experience and local environments, Cloud platforms and cloud management<br>
+**Roles:** Cloud Engineer, DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Local AWS service emulator for development and CI.
+Local emulator for selected AWS services used in development, testing, and CI workflows.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need local AWS SDK, CLI, Terraform, or OpenTofu integration tests against services implemented by Floci.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require complete AWS service coverage or production control-plane parity.
 
-[Official site](https://floci.io/floci)
+[Official site](https://floci.io/aws/) · [Documentation](https://floci.io/floci/) · [Source repository](https://github.com/floci-io/floci)
 
 ### Floci-AZ
 

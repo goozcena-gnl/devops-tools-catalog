@@ -96,6 +96,17 @@ FORBIDDEN_SELECTED_FIELDS = {
     "repository_url",
 }
 
+# Later, evidence-backed catalogue maintenance may supersede an N1a current-state
+# protection without rewriting the pinned N1a history. Keep this allowlist at field
+# granularity: N1a reviewed only mcp-server-kubernetes's official_url, while the
+# deferred correction wave separately verified these four fields.
+N1A_CURRENT_STATE_SUPERSESSIONS = {
+    ("mcp-server-kubernetes", "repository_url"),
+    ("mcp-server-kubernetes", "license_spdx"),
+    ("mcp-server-kubernetes", "status"),
+    ("mcp-server-kubernetes", "needs_review"),
+}
+
 REQUIRED_LEDGER_COLUMNS = {
     "tool_id",
     "affected_field",
@@ -264,6 +275,8 @@ def _assert_current_n1a_persistence(
         current_record = current[tool_id][1]
         accepted_record = accepted[tool_id][1]
         for field in FORBIDDEN_SELECTED_FIELDS:
+            if (tool_id, field) in N1A_CURRENT_STATE_SUPERSESSIONS:
+                continue
             assert current_record.get(field) == accepted_record.get(field), (
                 f"N1a-protected field drifted for {(tool_id, field)}"
             )

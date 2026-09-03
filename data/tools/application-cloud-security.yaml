@@ -3175,8 +3175,12 @@
   needs_review: true
 - id: opnsense
   name: OPNsense
-  summary: Open-source firewall and routing software.
-  official_url: https://github.com/opnsense
+  summary: FreeBSD-based open-source firewall and routing platform for network security
+    gateways.
+  official_url: https://opnsense.org/opnsense/
+  repository_url: https://github.com/opnsense/core
+  repository_archived: false
+  documentation_url: https://docs.opnsense.org/
   categories:
   - application-cloud-security
   subcategories:
@@ -3184,24 +3188,38 @@
   roles:
   - devsecops-engineer
   - cloud-security-engineer
+  - infrastructure-systems-engineer
   lifecycle_stages:
-  - test
+  - deploy
   - secure
+  - operate
   use_when:
-  - A modern, HardenedBSD-based firewall with frequent updates and a clean UI.
+  - You need a self-hosted firewall and routing gateway with web-based administration.
   avoid_when:
-  - You need extensive third-party pfSense package ecosystem compatibility.
-  deployment_models: []
+  - You require a package, appliance certification, or vendor support arrangement
+    that is not available for OPNsense.
+  deployment_models:
+  - self-hosted
+  - appliance
   license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  commercial_offering: true
+  maturity: established
+  status: active
+  alternatives:
+  - pfsense
+  tags:
+  - firewall
+  - router
+  - network-security
+  - vpn
+  verified_on: '2026-09-03'
   sources:
-  - legacy:6_Security/README.md#L81
-  - legacy:devopstools_final.md#L958
-  needs_review: true
+  - https://opnsense.org/opnsense/
+  - https://docs.opnsense.org/
+  - https://github.com/opnsense/core
+  - https://docs.opnsense.org/legal.html
+  - https://opnsense.com/support-overview/
+  needs_review: false
 - id: osint-framework
   name: OSINT Framework
   summary: Curated framework of OSINT resources and investigative tools.

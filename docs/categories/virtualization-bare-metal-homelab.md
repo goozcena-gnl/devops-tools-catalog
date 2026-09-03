@@ -1246,18 +1246,18 @@ Run Linux containers directly inside WSL 2 without a Docker daemon.
 ### XCP-ng
 
 **Categories:** Virtualization, bare metal and homelab<br>
-**Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
+**Roles:** DevOps Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open-source virtualization platform (Xen-based).
+Xen-based open-source virtualization platform for managing hosts, resource pools, and virtual machines.
 
 **Use when**
 
-- You want a fully open-source Xen hypervisor with Xen Orchestra management.
+- You need a self-hosted Xen virtualization appliance for hosts, pools, and virtual machines, optionally managed with Xen Orchestra.
 
 **Consider alternatives when**
 
-- You prefer KVM-based virtualization or need broad community/third-party tooling.
+- You require a KVM-based stack or hardware and support coverage outside the XCP-ng compatibility and support matrices.
 
-[Official site](https://github.com/xcp-ng)
+[Official site](https://xcp-ng.org/) · [Documentation](https://docs.xcp-ng.org/)

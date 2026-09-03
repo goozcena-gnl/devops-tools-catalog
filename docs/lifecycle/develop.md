@@ -63,7 +63,7 @@
 - [Feint](https://github.com/stephrobert/feint) — Local emulator for selected Scaleway, Outscale, and Exoscale cloud APIs.
 - [Flathub](https://flathub.org) — Main application repository ("app store") for Flatpak packages.
 - [Flatpak](https://flatpak.org) — Universal Linux application isolation and distribution framework.
-- [Floci](https://floci.io/floci) — Local AWS service emulator for development and CI.
+- [Floci](https://floci.io/aws/) — Local emulator for selected AWS services used in development, testing, and CI workflows.
 - [Floci-AZ](https://floci.io/floci-az/) — Local emulator for selected Azure services exposed through a single native process.
 - [freeCodeCamp](https://www.freecodecamp.org) — Free learning platform for multi-language coding tutorials.
 - [fulcio (sigstore)](https://github.com/sigstore/fulcio) — Sigstore's free OIDC-based root CA for issuing short-lived code-signing certificates.
