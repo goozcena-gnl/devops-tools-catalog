@@ -1033,22 +1033,22 @@ Desktop app for running local LLMs.
 
 ### mcp-server-kubernetes
 
-**Categories:** MLOps, LLMOps and AI infrastructure<br>
-**Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
+**Categories:** MLOps, LLMOps and AI infrastructure, Kubernetes distributions and operations<br>
+**Roles:** Cloud Engineer, Platform Engineer, Kubernetes Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Node MCP server for interacting with Kubernetes clusters via kubectl.
+Model Context Protocol server for managing Kubernetes resources through kubectl and Helm operations.
 
 **Use when**
 
-- You want AI tools to inspect and manage Kubernetes resources through MCP.
+- You want an MCP client to inspect or manage Kubernetes resources and Helm releases using an existing kubeconfig.
 
 **Consider alternatives when**
 
-- Security policy forbids AI-agent access to your clusters or you don't run Kubernetes.
+- You cannot provide a least-privilege Kubernetes identity or restrict the cluster operations exposed to the MCP client.
 
-[Official site](https://www.npmjs.com/package/mcp-server-kubernetes) · [Source repository](https://github.com/modelcontextprotocol/servers)
+[Official site](https://www.npmjs.com/package/mcp-server-kubernetes) · [Documentation](https://github.com/Flux159/mcp-server-kubernetes#readme) · [Source repository](https://github.com/Flux159/mcp-server-kubernetes)
 
 ### mcpsnoop
 

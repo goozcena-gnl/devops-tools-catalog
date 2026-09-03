@@ -643,30 +643,50 @@
   needs_review: false
 - id: floci
   name: Floci
-  summary: Local AWS service emulator for development and CI.
-  official_url: https://floci.io/floci
+  summary: Local emulator for selected AWS services used in development, testing,
+    and CI workflows.
+  official_url: https://floci.io/aws/
+  repository_url: https://github.com/floci-io/floci
+  repository_archived: false
+  documentation_url: https://floci.io/floci/
   categories:
   - developer-experience-local-environments
+  - cloud-platforms-management
   subcategories:
   - Developer Environment
   roles:
+  - cloud-engineer
   - devops-engineer
   - developer-experience-engineer
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need local AWS SDK, CLI, Terraform, or OpenTofu integration tests against
+    services implemented by Floci.
+  avoid_when:
+  - You require complete AWS service coverage or production control-plane parity.
+  deployment_models:
+  - local-binary
+  - container
   license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  license_spdx: MIT
+  maturity: growing
+  status: active
+  alternatives:
+  - localstack
+  tags:
+  - aws-emulator
+  - local-development
+  - integration-testing
+  - ci
+  verified_on: '2026-09-03'
   sources:
-  - legacy:devopstools_final.md#L1060
-  needs_review: true
+  - https://floci.io/aws/
+  - https://floci.io/floci/
+  - https://github.com/floci-io/floci
+  - https://github.com/floci-io/floci/blob/main/LICENSE
+  needs_review: false
 - id: floci-az
   name: Floci-AZ
   summary: Local emulator for selected Azure services exposed through a single native process.

@@ -1631,36 +1631,55 @@
   needs_review: true
 - id: mcp-server-kubernetes
   name: mcp-server-kubernetes
-  summary: Node MCP server for interacting with Kubernetes clusters via kubectl.
+  summary: Model Context Protocol server for managing Kubernetes resources through
+    kubectl and Helm operations.
   official_url: https://www.npmjs.com/package/mcp-server-kubernetes
-  repository_url: https://github.com/modelcontextprotocol/servers
+  repository_url: https://github.com/Flux159/mcp-server-kubernetes
+  repository_archived: false
+  documentation_url: https://github.com/Flux159/mcp-server-kubernetes#readme
   categories:
   - mlops-llmops-ai-infrastructure
+  - kubernetes-distributions-operations
   subcategories:
   - Model Context Protocol (MCP) Servers
   roles:
   - cloud-engineer
   - platform-engineer
+  - kubernetes-engineer
   - mlops-ai-infrastructure-engineer
   lifecycle_stages:
-  - build
   - deploy
   - operate
+  - secure
   use_when:
-  - You want AI tools to inspect and manage Kubernetes resources through MCP.
+  - You want an MCP client to inspect or manage Kubernetes resources and Helm releases
+    using an existing kubeconfig.
   avoid_when:
-  - Security policy forbids AI-agent access to your clusters or you don't run Kubernetes.
-  deployment_models: []
+  - You cannot provide a least-privilege Kubernetes identity or restrict the cluster
+    operations exposed to the MCP client.
+  deployment_models:
+  - local-binary
+  - container
+  - kubernetes
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: MIT
+  maturity: growing
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - mcp
+  - kubernetes
+  - cluster-management
+  - kubectl
+  - helm
+  verified_on: '2026-09-03'
   sources:
-  - legacy:9_AI-MLOps/README.md#L56
-  - legacy:devopstools_final.md#L1223
-  needs_review: true
+  - https://www.npmjs.com/package/mcp-server-kubernetes
+  - https://github.com/Flux159/mcp-server-kubernetes
+  - https://github.com/Flux159/mcp-server-kubernetes#readme
+  - https://github.com/Flux159/mcp-server-kubernetes/blob/main/LICENSE
+  - https://github.com/Flux159/mcp-server-kubernetes/blob/main/package.json
+  needs_review: false
 - id: mcpsnoop
   name: mcpsnoop
   summary: Transparent MCP proxy for inspecting live tool calls between clients and servers.

@@ -149,7 +149,7 @@
 | [OpenSSH](https://www.openssh.org) | IAM, secrets and certificate management | oss | needs-review |
 | [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) | IAM, secrets and certificate management | oss | needs-review |
 | [OpenZiti](https://netfoundry.io/docs/openziti) | Application and cloud security | oss | needs-review |
-| [OPNsense](https://github.com/opnsense) | Application and cloud security | oss | needs-review |
+| [OPNsense](https://opnsense.org/opnsense/) | Application and cloud security | oss | active |
 | [OSINT Framework](https://osintframework.com) | Application and cloud security | documentation | needs-review |
 | [osquery](https://osquery.io/) | Application and cloud security, Monitoring, metrics, logs and tracing | oss | active |
 | [OSSIM](https://github.com/alienfault/ossim) | Application and cloud security | oss | needs-review |

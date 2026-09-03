@@ -73,7 +73,7 @@
 | [Feint](https://github.com/stephrobert/feint) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |
 | [FitNesse](https://fitnesse.org) | CI, build and testing | oss | active |
-| [Floci](https://floci.io/floci) | Developer experience and local environments | oss | needs-review |
+| [Floci](https://floci.io/aws/) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
 | [Floci-AZ](https://floci.io/floci-az/) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
 | [Garden](https://garden.io) | Platform engineering and internal developer platforms | oss | needs-review |
 | [Gerrit Code Review](https://www.gerritcodereview.com/) | Source control and repository management | oss | active |

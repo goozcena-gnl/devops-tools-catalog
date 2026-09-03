@@ -163,7 +163,7 @@
 | [OpenSSH](https://www.openssh.org) | IAM, secrets and certificate management | oss | needs-review |
 | [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) | IAM, secrets and certificate management | oss | needs-review |
 | [OpenZiti](https://netfoundry.io/docs/openziti) | Application and cloud security | oss | needs-review |
-| [OPNsense](https://github.com/opnsense) | Application and cloud security | oss | needs-review |
+| [OPNsense](https://opnsense.org/opnsense/) | Application and cloud security | oss | active |
 | [ORAS](https://oras.land) | Artifact and package management | oss | needs-review |
 | [OSINT Framework](https://osintframework.com) | Application and cloud security | documentation | needs-review |
 | [OSSIM](https://github.com/alienfault/ossim) | Application and cloud security | oss | needs-review |

@@ -222,7 +222,7 @@
 | [Flatcar Container Linux](https://www.flatcar.org) | Virtualization, bare metal and homelab | oss | active |
 | [Flathub](https://flathub.org) | Foundations, Linux and scripting | unknown | needs-review |
 | [Flatpak](https://flatpak.org) | Foundations, Linux and scripting | oss | needs-review |
-| [Floci](https://floci.io/floci) | Developer experience and local environments | oss | needs-review |
+| [Floci](https://floci.io/aws/) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
 | [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
@@ -636,7 +636,7 @@
 | [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | needs-review |
 | [WSL container](https://learn.microsoft.com/en-us/windows/wsl/wsl-container) | Virtualization, bare metal and homelab | documentation | needs-review |
 | [Xata](https://xata.io) | Databases, caching and data infrastructure | unknown | needs-review |
-| [XCP-ng](https://github.com/xcp-ng) | Virtualization, bare metal and homelab | oss | needs-review |
+| [XCP-ng](https://xcp-ng.org/) | Virtualization, bare metal and homelab | oss | active |
 | [Xray](https://www.getxray.app) | CI, build and testing | unknown | needs-review |
 | [yamllint](https://github.com/adrienverge/yamllint) | Developer experience and local environments | oss | needs-review |
 | [YamlQL](https://github.com/AKSarav/YamlQL) | Emerging and experimental tools | oss | needs-review |
