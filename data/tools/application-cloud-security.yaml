@@ -3438,6 +3438,7 @@
   use_when:
   - You need identity-aware access to private web and network resources without opening inbound ports.
   avoid_when:
+  - You need a conventional site-to-site VPN without application-aware access controls.
   - Your organization cannot comply with the AGPLv3 terms applicable to the Community Edition.
   - You require Enterprise-only features but cannot accept Pangolin's separate commercial licence.
   deployment_models:

@@ -2446,6 +2446,7 @@ Zero-trust remote access platform and VPN alternative.
 
 **Consider alternatives when**
 
+- You need a conventional site-to-site VPN without application-aware access controls.
 - Your organization cannot comply with the AGPLv3 terms applicable to the Community Edition.
 - You require Enterprise-only features but cannot accept Pangolin's separate commercial licence.
 

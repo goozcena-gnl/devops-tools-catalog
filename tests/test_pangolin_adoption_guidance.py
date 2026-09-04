@@ -18,6 +18,7 @@ EXPECTED_EVIDENCE_SOURCES = {
     "https://docs.pangolin.net/self-host/enterprise-edition",
 }
 EXPECTED_AVOID_WHEN = [
+    "You need a conventional site-to-site VPN without application-aware access controls.",
     "Your organization cannot comply with the AGPLv3 terms applicable to the Community Edition.",
     "You require Enterprise-only features but cannot accept Pangolin's separate commercial licence.",
 ]
@@ -55,7 +56,9 @@ def test_pangolin_guidance_distinguishes_community_and_enterprise_terms() -> Non
         "You need identity-aware access to private web and network resources without opening inbound ports."
     ]
     assert pangolin["avoid_when"] == EXPECTED_AVOID_WHEN
-    community, enterprise = pangolin["avoid_when"]
+    functional, community, enterprise = pangolin["avoid_when"]
+    assert "site-to-site VPN" in functional
+    assert "commercial licence" not in functional
     assert "AGPLv3" in community
     assert "Community Edition" in community
     assert "Enterprise-only" in enterprise
