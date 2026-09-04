@@ -11,7 +11,7 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 - **Categories:** 30
 - **Records requiring review:** 976
 - **Archived repositories:** 12
-- **Last generation date:** 2026-09-03
+- **Last generation date:** 2026-09-05
 - **Maintenance status:** Active migration; unverified metadata is explicitly marked.
 
 ## Start with a task
