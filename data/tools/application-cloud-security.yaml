@@ -3438,7 +3438,9 @@
   use_when:
   - You need identity-aware access to private web and network resources without opening inbound ports.
   avoid_when:
-  - You need a conventional site-to-site VPN without application-aware access controls or a commercial licence is unacceptable.
+  - You need a conventional site-to-site VPN without application-aware access controls.
+  - Your organization cannot comply with the AGPLv3 terms applicable to the Community Edition.
+  - You require Enterprise-only features but cannot accept Pangolin's separate commercial licence.
   deployment_models:
   - self-hosted
   - saas
@@ -3452,12 +3454,15 @@
   - zero-trust-network-access
   - reverse-proxy
   - wireguard
-  verified_on: '2026-09-01'
+  verified_on: '2026-09-05'
   sources:
   - legacy:devopstools_final.md#L960
   - https://pangolin.net
   - https://docs.pangolin.net
   - https://github.com/fosrl/pangolin
+  - https://github.com/fosrl/pangolin/blob/main/LICENSE
+  - https://docs.pangolin.net/development/contributing
+  - https://docs.pangolin.net/self-host/enterprise-edition
   needs_review: false
 - id: parrot-security
   name: Parrot Security
