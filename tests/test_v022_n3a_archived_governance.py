@@ -57,6 +57,31 @@ PROTECTED_SELECTED_FIELDS = {
     "official_url",
     "documentation_url",
 }
+CURRENT_AUTHORIZED_SUPERSEDING_VALUES = {
+    ("grafana-oncall", "repository_url"): (
+        "https://github.com/grafana-cold-storage/oncall"
+    ),
+    ("grafana-oncall", "official_url"): (
+        "https://grafana.com/docs/oncall/latest/intro/"
+    ),
+    ("grafana-oncall", "documentation_url"): (
+        "https://grafana.com/docs/oncall/latest/"
+    ),
+    ("grafana-oncall", "license_model"): "oss",
+    ("grafana-oncall", "license_spdx"): "AGPL-3.0-only",
+    ("grafana-oncall", "needs_review"): False,
+    ("juju", "documentation_url"): "https://documentation.ubuntu.com/juju/",
+    ("juju", "status"): "active",
+    ("juju", "needs_review"): False,
+    ("kubernetes-dashboard", "needs_review"): False,
+    ("localstack", "license_model"): "commercial",
+    ("minio", "canonical_path"): "data/tools/deprecated-historical.yaml",
+    ("minio", "official_url"): "https://github.com/minio/minio",
+    ("minio", "status"): "archived",
+    ("minio", "needs_review"): False,
+    ("minio", "license_model"): "oss",
+    ("minio", "license_spdx"): "AGPL-3.0-only",
+}
 REQUIRED_LEDGER_COLUMNS = {
     "tool_id",
     "affected_field",
@@ -202,7 +227,9 @@ def _field_changes() -> dict[tuple[str, str], tuple[Any, Any]]:
 def _assert_owned_values(
     current: dict[str, tuple[str, dict[str, Any]]],
     accepted: dict[str, tuple[str, dict[str, Any]]],
+    authorized_superseding_values: dict[tuple[str, str], Any] | None = None,
 ) -> None:
+    authorized_superseding_values = authorized_superseding_values or {}
     for (tool_id, field), (
         expected_path,
         _before,
@@ -210,11 +237,19 @@ def _assert_owned_values(
     ) in EXPECTED_SCOPE.items():
         current_path, current_record = current[tool_id]
         accepted_path, accepted_record = accepted[tool_id]
-        assert current_path == accepted_path == expected_path
-        assert current_record[field] == accepted_record[field] == expected_value
+        assert accepted_path == expected_path
+        assert current_path == authorized_superseding_values.get(
+            (tool_id, "canonical_path"), expected_path
+        )
+        assert accepted_record[field] == expected_value
+        assert current_record[field] == authorized_superseding_values.get(
+            (tool_id, field), expected_value
+        )
         for protected_field in PROTECTED_SELECTED_FIELDS:
-            assert current_record.get(protected_field) == accepted_record.get(
-                protected_field
+            assert current_record.get(protected_field) == (
+                authorized_superseding_values.get(
+                    (tool_id, protected_field), accepted_record.get(protected_field)
+                )
             )
 
 
@@ -284,6 +319,7 @@ def test_n3a_current_state_preserves_owned_decisions() -> None:
     _assert_owned_values(
         _current_records(),
         _records_at_tree(N3A_ACCEPTED_DATA_TREE_SHA),
+        CURRENT_AUTHORIZED_SUPERSEDING_VALUES,
     )
 
 

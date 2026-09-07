@@ -58,7 +58,7 @@ def test_deferred_correction_wave_has_exact_expected_ids() -> None:
     assert {tool_id: counts[tool_id] for tool_id in EXPECTED_IDS} == {
         tool_id: 1 for tool_id in EXPECTED_IDS
     }
-    assert len(catalogue) == 1305
+    assert len(catalogue) == 1306
 
 
 def test_deferred_records_are_verified_active_and_documented() -> None:

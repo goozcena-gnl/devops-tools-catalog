@@ -1244,6 +1244,8 @@
   name: Headlamp Plugins
   summary: Official plugin collection for the Headlamp Kubernetes UI.
   repository_url: https://github.com/headlamp-k8s/plugins
+  repository_archived: false
+  documentation_url: https://headlamp.dev/docs/latest/development/plugins/
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -1255,18 +1257,24 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
+  use_when:
+  - You operate Headlamp and want the official project-maintained plugin collection.
+  avoid_when:
+  - You need the Headlamp core application rather than optional extensions.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
+  license_spdx: MIT
+  maturity: growing
+  status: active
+  alternatives:
+  - headlamp
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-07'
   sources:
   - legacy:devopstools_final.md#L562
-  needs_review: true
+  - https://github.com/headlamp-k8s/plugins
+  - https://headlamp.dev/docs/latest/development/plugins/
+  needs_review: false
 - id: helm
   name: Helm
   summary: Kubernetes package manager.

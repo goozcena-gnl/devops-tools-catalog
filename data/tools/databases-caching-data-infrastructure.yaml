@@ -233,38 +233,6 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L212
   - legacy:devopstools_final.md#L285
   needs_review: true
-- id: minio
-  name: MinIO
-  summary: High-performance object storage.
-  official_url: https://www.min.io
-  repository_url: https://github.com/minio/minio
-  categories:
-  - databases-caching-data-infrastructure
-  subcategories:
-  - Caching & Data Stores
-  roles:
-  - devops-engineer
-  - cloud-engineer
-  - infrastructure-systems-engineer
-  lifecycle_stages:
-  - deploy
-  - operate
-  use_when:
-  - You need S3-compatible object storage on-prem with high throughput.
-  avoid_when:
-  - The AGPL license or enterprise pricing doesn't fit your model.
-  deployment_models: []
-  license_model: open-core
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L214
-  - legacy:devopstools_final.md#L286
-  needs_review: true
-  repository_archived: true
 - id: mongodb
   name: MongoDB
   summary: Modern document database and developer data platform.

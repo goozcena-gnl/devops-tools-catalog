@@ -183,9 +183,12 @@
   needs_review: true
 - id: juju
   name: Juju
-  summary: Service modeling and orchestration tool from Canonical (operators/charms).
+  summary: Open-source application orchestration engine for deploying and operating charm-based applications
+    across machines and Kubernetes.
   official_url: https://canonical.com/juju
   repository_url: https://github.com/juju/juju
+  repository_archived: false
+  documentation_url: https://documentation.ubuntu.com/juju/
   categories:
   - configuration-management
   subcategories:
@@ -202,16 +205,18 @@
   - You're not in the Canonical ecosystem or prefer Helm/Terraform patterns.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-07'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L78
   - legacy:devopstools_final.md#L199
-  needs_review: true
-  repository_archived: true
+  - https://canonical.com/juju
+  - https://documentation.ubuntu.com/juju/
+  - https://github.com/juju/juju
+  needs_review: false
 - id: katello
   name: Katello
   summary: Foreman plugin for repository synchronization, content views, lifecycle environments, and host
