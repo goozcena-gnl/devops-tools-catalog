@@ -257,9 +257,9 @@ Kubernetes backup and recovery platform.
 **Categories:** Backup, disaster recovery and resilience<br>
 **Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes cluster backup and restore.
+Open-source backup, restore, disaster-recovery, and migration tooling for Kubernetes resources and persistent volumes.
 
 **Use when**
 
@@ -269,7 +269,7 @@ Kubernetes cluster backup and restore.
 
 - You need application-aware, database-consistent backups (pair with specific DB backup tools or use Kasten).
 
-[Official site](https://velero.io) · [Source repository](https://github.com/vmware-tanzu/velero)
+[Official site](https://velero.io) · [Documentation](https://velero.io/docs/) · [Source repository](https://github.com/velero-io/velero)
 
 ### VolSync
 

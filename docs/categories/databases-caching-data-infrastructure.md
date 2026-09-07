@@ -197,25 +197,25 @@ Distributed vector database for large-scale similarity search and retrieval work
 
 [Official site](https://milvus.io) · [Documentation](https://milvus.io/docs) · [Source repository](https://github.com/milvus-io/milvus)
 
-### MinIO
+### MinIO Community Server
 
-**Categories:** Databases, caching and data infrastructure<br>
+**Categories:** Deprecated and historical tools, Databases, caching and data infrastructure<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review<br>
+**Model:** Oss<br>
+**Status:** Archived<br>
 **Repository:** Archived
 
-High-performance object storage.
+Archived and unmaintained AGPL-licensed S3-compatible object-storage server retained for historical and migration reference.
 
 **Use when**
 
-- You need S3-compatible object storage on-prem with high throughput.
+- You are maintaining or migrating an existing MinIO Community Server deployment.
 
 **Consider alternatives when**
 
-- The AGPL license or enterprise pricing doesn't fit your model.
+- You need maintained community object storage; upstream directs new users to separately licensed MinIO AIStor Free or Enterprise products.
 
-[Official site](https://www.min.io) · [Source repository](https://github.com/minio/minio)
+[Official site](https://github.com/minio/minio) · [Source repository](https://github.com/minio/minio)
 
 ### MongoDB
 

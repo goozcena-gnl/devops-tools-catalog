@@ -178,7 +178,7 @@
 - [KubeLinter](https://docs.kubelinter.io/) — Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
 - [KWOK](https://kwok.sigs.k8s.io/) — Kubernetes SIGs toolkit that simulates large numbers of nodes and pods without running real workloads.
 - [LitmusChaos](https://litmuschaos.io) — Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with a hub of pre-built experiments and GitOps-friendly CRD workflows. ❌ **Avoid when** your environment is non-Kubernetes or you find ChaosHub's experiment catalog doesn't cover your stack.
-- [LocalStack](https://www.localstack.cloud) — Local cloud development platform that emulates AWS services for integration testing and offline workflows.
+- [LocalStack](https://www.localstack.cloud) — Licensed local AWS emulation platform delivered through a unified image, with a non-commercial Hobby plan and paid commercial-use plans.
 - [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) — Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow injection or unintended code execution.
 - [lychee](https://lychee.cli.rs/) — Asynchronous command-line link checker for Markdown, HTML, reStructuredText, websites, and other inputs.
 - [Lynis](https://cisofy.com/lynis) — Security auditing and hardening tool with an enterprise offering (CISOfy).

@@ -761,19 +761,19 @@ Service networking and discovery platform.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Official plugin collection for the Headlamp Kubernetes UI.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You operate Headlamp and want the official project-maintained plugin collection.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need the Headlamp core application rather than optional extensions.
 
-[Source repository](https://github.com/headlamp-k8s/plugins)
+[Documentation](https://headlamp.dev/docs/latest/development/plugins/) · [Source repository](https://github.com/headlamp-k8s/plugins)
 
 ### Helm
 

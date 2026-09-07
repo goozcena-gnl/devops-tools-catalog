@@ -180,19 +180,19 @@ Define Kubernetes applications and reusable abstractions in general-purpose prog
 
 **Categories:** Deprecated and historical tools, Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Source Available<br>
+**Model:** Oss<br>
 **Status:** Archived<br>
 **Repository:** Archived
 
-Terraform CDK framework.
+Archived framework for defining Terraform infrastructure with general-purpose programming languages.
 
 **Use when**
 
-- You want Terraform's provider ecosystem with imperative-language constructs.
+- You are maintaining an existing CDKTF codebase while planning its migration.
 
 **Consider alternatives when**
 
-- Your team is comfortable with HCL and you don't need programmatic abstractions.
+- You are starting a new project; HashiCorp recommends migrating to standard Terraform and HCL for long-term support.
 
 [Official site](https://developer.hashicorp.com/terraform/cdktf) · [Source repository](https://github.com/hashicorp/terraform-cdk)
 

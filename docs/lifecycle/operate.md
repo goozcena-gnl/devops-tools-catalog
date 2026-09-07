@@ -248,6 +248,7 @@
 - [HashiCorp Consul](https://www.consul.io) — Service networking and discovery platform.
 - [HashiCorp Vault](https://www.vaultproject.io) — Secure secret storage and access.
 - [Haystack](https://haystack.deepset.ai) — Framework for building LLM-powered apps and search systems.
+- [Headlamp](https://headlamp.dev/) — Maintained Kubernetes SIG UI project providing an extensible web and desktop interface for managing multiple Kubernetes clusters.
 - [Headlamp Plugins](https://github.com/headlamp-k8s/plugins) — Official plugin collection for the Headlamp Kubernetes UI.
 - [Headroom](https://headroomlabs-ai.github.io/headroom) — Context optimization layer that compresses tool outputs, logs, files, and RAG chunks before they reach the LLM.
 - [Helm](https://helm.sh) — Kubernetes package manager.
@@ -289,7 +290,7 @@
 - [Jira](https://www.atlassian.com/software/jira) — Issue tracking and project management platform by Atlassian.
 - [jq](https://jqlang.org) — Command-line processor for querying and transforming JSON data.
 - [JuiceFS](https://juicefs.com/en) — Distributed POSIX file system with community edition and enterprise/cloud offerings.
-- [Juju](https://canonical.com/juju) — Service modeling and orchestration tool from Canonical (operators/charms).
+- [Juju](https://canonical.com/juju) — Open-source application orchestration engine for deploying and operating charm-based applications across machines and Kubernetes.
 - [JumpServer](https://www.jumpserver.com) — Open-source bastion host / privileged access management (PAM) platform.
 - [k0s](https://k0sproject.io) — Kubernetes distribution.
 - [k0smotron](https://k0smotron.io) — Kubernetes operator and Cluster API provider for managing hosted k0s control planes and child clusters inside Kubernetes.
@@ -449,7 +450,7 @@
 - [llm-d](https://github.com/llm-d) — Kubernetes-native high-performance distributed LLM inference framework for serving models at scale.
 - [llmfit](https://github.com/AlexsJones/llmfit) — Hardware-aware CLI/TUI for recommending which LLM models fit local RAM, CPU, and GPU capacity.
 - [LM Studio](https://lmstudio.ai) — Desktop app for running local LLMs.
-- [LocalStack](https://www.localstack.cloud) — Local cloud development platform that emulates AWS services for integration testing and offline workflows.
+- [LocalStack](https://www.localstack.cloud) — Licensed local AWS emulation platform delivered through a unified image, with a non-commercial Hobby plan and paid commercial-use plans.
 - [Loft Vind](https://github.com/loft-sh/vind) — Loft Labs tool (see repository for capabilities and usage).
 - [Logstash](https://www.elastic.co/logstash) — Log ingestion/processing pipeline (Elastic ecosystem).
 - [Longhorn](https://longhorn.io) — Cloud native distributed block storage for Kubernetes.
@@ -477,7 +478,6 @@
 - [Milvus](https://milvus.io) — Distributed vector database for large-scale similarity search and retrieval workloads.
 - [MiniBlue](https://miniblue.io) — Local Azure emulator that emulates 26+ Azure services in a single binary for development and testing without an Azure account.
 - [Minikube](https://minikube.sigs.k8s.io/docs) — Local Kubernetes development environment.
-- [MinIO](https://www.min.io) — High-performance object storage.
 - [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) — Ansible accelerator to speed up module execution and reduce SSH overhead.
 - [mkcert](https://github.com/FiloSottile/mkcert) — Local SSL certificate generation.
 - [MLflow](https://mlflow.org) — Platform for managing ML lifecycles.
@@ -700,7 +700,7 @@
 - [Vaultwarden](https://www.vaultwarden.net/) — Self-hosted server compatible with Bitwarden clients for team and personal secret vaults.
 - [vcluster](https://www.vcluster.com) — Run virtual Kubernetes clusters inside a host cluster (multi-tenancy / isolation).
 - [Vector](https://vector.dev) — High-performance observability data pipeline (logs/metrics/traces) as an alternative to Fluent Bit/Fluentd.
-- [Velero](https://velero.io) — Kubernetes cluster backup and restore.
+- [Velero](https://velero.io) — Open-source backup, restore, disaster-recovery, and migration tooling for Kubernetes resources and persistent volumes.
 - [Ventoy](https://www.ventoy.net/) — Bootable USB tool that launches ISO, WIM, IMG, VHD, and EFI images directly from copied files.
 - [VictoriaMetrics](https://victoriametrics.com) — Time series database; OSS core with enterprise offerings.
 - [VictoriaMetrics MCP server](https://github.com/VictoriaMetrics/mcp-victoriametrics) — Model Context Protocol server that exposes VictoriaMetrics observability operations to compatible AI clients.

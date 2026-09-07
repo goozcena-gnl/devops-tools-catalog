@@ -100,25 +100,25 @@ On-call alert and escalation management.
 
 [Official site](https://goalert.me) · [Source repository](https://github.com/target/goalert)
 
-### Grafana OnCall
+### Grafana OnCall OSS
 
 **Categories:** Deprecated and historical tools, SRE, incident response and on-call<br>
 **Roles:** Site Reliability Engineer, Observability Engineer<br>
-**Model:** Open Core<br>
+**Model:** Oss<br>
 **Status:** Archived<br>
 **Repository:** Archived
 
-Incident response and on-call management (OSS core with SaaS offering).
+Archived open-source on-call management and incident-response system whose active development continues in the commercial Grafana Cloud IRM service.
 
 **Use when**
 
-- Already in the Grafana ecosystem and want integrated on-call with alert routing.
+- You are maintaining or migrating an existing self-hosted Grafana OnCall OSS deployment.
 
 **Consider alternatives when**
 
-- You need a standalone, feature-rich incident management platform.
+- You need an actively maintained self-hosted on-call project or depend on the discontinued Grafana Cloud Connection services.
 
-[Official site](https://grafana.com/products/cloud/oncall) · [Source repository](https://github.com/grafana/oncall)
+[Official site](https://grafana.com/docs/oncall/latest/intro/) · [Documentation](https://grafana.com/docs/oncall/latest/) · [Source repository](https://github.com/grafana-cold-storage/oncall)
 
 ### ManageEngine IT Operations Management
 

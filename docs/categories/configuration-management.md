@@ -143,10 +143,9 @@ Version control for `/etc` (tracks config changes in Git).
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review<br>
-**Repository:** Archived
+**Status:** Active
 
-Service modeling and orchestration tool from Canonical (operators/charms).
+Open-source application orchestration engine for deploying and operating charm-based applications across machines and Kubernetes.
 
 **Use when**
 
@@ -156,7 +155,7 @@ Service modeling and orchestration tool from Canonical (operators/charms).
 
 - You're not in the Canonical ecosystem or prefer Helm/Terraform patterns.
 
-[Official site](https://canonical.com/juju) · [Source repository](https://github.com/juju/juju)
+[Official site](https://canonical.com/juju) · [Documentation](https://documentation.ubuntu.com/juju/) · [Source repository](https://github.com/juju/juju)
 
 ### Katello
 

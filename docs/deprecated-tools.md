@@ -4,11 +4,12 @@
 Records remain here for migration and historical context; they are not active recommendations.
 
 - **CAI (RobotSec)** (archived) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
-- **CDKTF** (archived) — Terraform CDK framework.
+- **CDKTF** (archived) — Archived framework for defining Terraform infrastructure with general-purpose programming languages.
 - **Datree** (archived) — Kubernetes policy enforcement tool.
-- **Grafana OnCall** (archived) — Incident response and on-call management (OSS core with SaaS offering).
+- **Grafana OnCall OSS** (archived) — Archived open-source on-call management and incident-response system whose active development continues in the commercial Grafana Cloud IRM service.
 - **Kaniko** (archived) — Build container images in Kubernetes without Docker daemon.
 - **Keptn** (archived) — Cloud-native lifecycle management and delivery.
 - **Kubeapps** (archived) — Kubernetes application dashboard for deploying and managing Helm charts and other packages.
-- **Kubernetes Dashboard** (archived) — Web UI for Kubernetes.
-- **tnu** (archived) — Test runner for Node.js.
+- **Kubernetes Dashboard** (archived) — Retired general-purpose web UI for Kubernetes clusters.
+- **MinIO Community Server** (archived) — Archived and unmaintained AGPL-licensed S3-compatible object-storage server retained for historical and migration reference.
+- **Talos Node Updater (tnu)** (archived) — Archived Go utility that coordinated Talos Linux node upgrades through the Talos API and Rancher System Upgrade Controller.

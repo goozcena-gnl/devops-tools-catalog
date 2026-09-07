@@ -7,11 +7,11 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 ## Catalogue status
 
-- **Canonical records:** 1305
+- **Canonical records:** 1306
 - **Categories:** 30
-- **Records requiring review:** 976
-- **Archived repositories:** 12
-- **Last generation date:** 2026-09-03
+- **Records requiring review:** 970
+- **Archived repositories:** 11
+- **Last generation date:** 2026-09-07
 - **Maintenance status:** Active migration; unverified metadata is explicitly marked.
 
 ## Start with a task
@@ -39,9 +39,9 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 | [Configuration management](docs/categories/configuration-management.md) | 18 |
 | [Virtualization, bare metal and homelab](docs/categories/virtualization-bare-metal-homelab.md) | 66 |
 | [Containers and image tooling](docs/categories/containers-image-tooling.md) | 21 |
-| [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 142 |
+| [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 144 |
 | [Kubernetes networking, storage and add-ons](docs/categories/kubernetes-networking-storage-addons.md) | 130 |
-| [CI, build and testing](docs/categories/ci-build-testing.md) | 81 |
+| [CI, build and testing](docs/categories/ci-build-testing.md) | 80 |
 | [CD, GitOps, release and promotion](docs/categories/cd-gitops-release-promotion.md) | 32 |
 | [Artifact and package management](docs/categories/artifact-package-management.md) | 19 |
 | [Platform engineering and internal developer platforms](docs/categories/platform-engineering-idp.md) | 12 |
@@ -61,7 +61,7 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 | [MLOps, LLMOps and AI infrastructure](docs/categories/mlops-llmops-ai-infrastructure.md) | 82 |
 | [Documentation, learning and career resources](docs/categories/documentation-learning-career.md) | 56 |
 | [Emerging and experimental tools](docs/categories/emerging-experimental.md) | 58 |
-| [Deprecated and historical tools](docs/categories/deprecated-historical.md) | 7 |
+| [Deprecated and historical tools](docs/categories/deprecated-historical.md) | 8 |
 
 ## Browse by role
 
@@ -98,10 +98,10 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 802 |
-| `source-available` | Source is visible under a non-OSI or restricted licence. | 21 |
-| `open-core` | OSS/community core with commercial features or service. | 101 |
-| `commercial` | Proprietary commercial product. | 33 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 806 |
+| `source-available` | Source is visible under a non-OSI or restricted licence. | 20 |
+| `open-core` | OSS/community core with commercial features or service. | 98 |
+| `commercial` | Proprietary commercial product. | 34 |
 | `free-saas` | Hosted service with a free offering. | 3 |
 | `documentation` | Learning or documentation resource. | 99 |
 | `unknown` | Reliable licence evidence has not been recorded. | 246 |
@@ -110,10 +110,10 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 322 |
-| `needs-review` | Imported but not yet fully verified. | 974 |
+| `active` | Maintained according to recorded primary-source evidence. | 326 |
+| `needs-review` | Imported but not yet fully verified. | 970 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 0 |
-| `archived` | Repository or product is archived. | 9 |
+| `archived` | Repository or product is archived. | 10 |
 | `historical` | Retained for context or migration work. | 0 |
 
 ## Recommendations and decisions
