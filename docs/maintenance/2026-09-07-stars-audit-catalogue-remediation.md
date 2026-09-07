@@ -35,10 +35,11 @@ the existing official plugins record remains separate.
 - `python -m ruff check scripts tests` — pass.
 - `python -m ruff format --check scripts tests` — pass.
 - `python -m scripts.check_links --strict` — strict result `FAIL`: 1,835 valid, 31 valid redirects,
-  218 permanent redirects, nine known/baselined blockers, and two new blockers. The two new blockers are
-  unrelated pre-existing catalogue links: `https://kubegui.net` and
-  `https://github.com/firecracker-microvm/firecracker/blob/main/docs/README.md`. All links introduced or
-  changed by this remediation passed. The unrelated records and strict baseline were intentionally not changed.
+  218 permanent redirects, nine known/baselined blockers, and two new blockers. At the time, the unrelated
+  pre-existing failures were `https://kubegui.net` and Firecracker's removed `docs/README.md` path. All links
+  introduced or changed by this remediation passed. The unrelated records and strict baseline were intentionally
+  not changed. Post-merge revalidation later classified the KubeGUI result as transient and repaired the
+  Firecracker link separately.
 
 ## Scope and non-goals
 
@@ -47,4 +48,4 @@ the existing official plugins record remains separate.
 - No GitHub List was created or modified.
 - No unrelated catalogue record was intentionally changed.
 - The five `ALREADY_CORRECT` findings were left unchanged after re-verification.
-- The pull request must remain unmerged for human review.
+- The remediation pull request was merged only after human review and exact-HEAD revalidation.

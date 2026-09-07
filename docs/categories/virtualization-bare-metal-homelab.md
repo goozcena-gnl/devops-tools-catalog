@@ -345,7 +345,7 @@ Lightweight virtualization for microVMs.
 
 - You need full VM features like GPU passthrough or legacy OS support.
 
-[Official site](https://firecracker-microvm.github.io) · [Documentation](https://github.com/firecracker-microvm/firecracker/blob/main/docs/README.md) · [Source repository](https://github.com/firecracker-microvm/firecracker)
+[Official site](https://firecracker-microvm.github.io) · [Documentation](https://github.com/firecracker-microvm/firecracker/blob/main/docs/getting-started.md) · [Source repository](https://github.com/firecracker-microvm/firecracker)
 
 ### Flatcar Container Linux
 
