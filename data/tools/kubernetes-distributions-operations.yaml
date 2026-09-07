@@ -842,6 +842,45 @@
   sources:
   - legacy:devopstools_final.md#L462
   needs_review: true
+- id: headlamp
+  name: Headlamp
+  summary: Maintained Kubernetes SIG UI project providing an extensible web and desktop interface for
+    managing multiple Kubernetes clusters.
+  official_url: https://headlamp.dev/
+  repository_url: https://github.com/kubernetes-sigs/headlamp
+  repository_archived: false
+  documentation_url: https://headlamp.dev/docs/latest/
+  categories:
+  - kubernetes-distributions-operations
+  subcategories:
+  - Kubernetes Management & Operations
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You need a maintained vendor-neutral Kubernetes UI with multi-cluster and plugin support.
+  avoid_when:
+  - You need a terminal-only workflow or cannot grant the UI appropriate Kubernetes RBAC permissions.
+  deployment_models:
+  - self-hosted
+  - desktop
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  alternatives:
+  - k9s
+  tags: []
+  verified_on: '2026-09-07'
+  sources:
+  - https://headlamp.dev/
+  - https://headlamp.dev/docs/latest/
+  - https://github.com/kubernetes-sigs/headlamp
+  needs_review: false
 - id: ingress2gateway
   name: ingress2gateway
   summary: Translate Ingress and provider-specific resources into Gateway API manifests.

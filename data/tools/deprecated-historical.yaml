@@ -1,6 +1,7 @@
 - id: cdktf
   name: CDKTF
-  summary: Terraform CDK framework.
+  summary: Archived framework for defining Terraform infrastructure with general-purpose programming
+    languages.
   official_url: https://developer.hashicorp.com/terraform/cdktf
   repository_url: https://github.com/hashicorp/terraform-cdk
   categories:
@@ -16,26 +17,32 @@
   lifecycle_stages:
   - retire
   use_when:
-  - You want Terraform's provider ecosystem with imperative-language constructs.
+  - You are maintaining an existing CDKTF codebase while planning its migration.
   avoid_when:
-  - Your team is comfortable with HCL and you don't need programmatic abstractions.
+  - You are starting a new project; HashiCorp recommends migrating to standard Terraform and HCL for
+    long-term support.
   deployment_models: []
-  license_model: source-available
+  license_model: oss
+  license_spdx: MPL-2.0
   maturity: unknown
   status: archived
-  alternatives: []
+  alternatives:
+  - terraform
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-07'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L40
   - legacy:devopstools_final.md#L173
+  - https://github.com/hashicorp/terraform-cdk
   needs_review: false
   repository_archived: true
 - id: grafana-oncall
-  name: Grafana OnCall
-  summary: Incident response and on-call management (OSS core with SaaS offering).
-  official_url: https://grafana.com/products/cloud/oncall
-  repository_url: https://github.com/grafana/oncall
+  name: Grafana OnCall OSS
+  summary: Archived open-source on-call management and incident-response system whose active development
+    continues in the commercial Grafana Cloud IRM service.
+  official_url: https://grafana.com/docs/oncall/latest/intro/
+  repository_url: https://github.com/grafana-cold-storage/oncall
+  documentation_url: https://grafana.com/docs/oncall/latest/
   categories:
   - deprecated-historical
   - sre-incident-response-on-call
@@ -47,20 +54,25 @@
   lifecycle_stages:
   - retire
   use_when:
-  - Already in the Grafana ecosystem and want integrated on-call with alert routing.
+  - You are maintaining or migrating an existing self-hosted Grafana OnCall OSS deployment.
   avoid_when:
-  - You need a standalone, feature-rich incident management platform.
+  - You need an actively maintained self-hosted on-call project or depend on the discontinued Grafana Cloud
+    Connection services.
   deployment_models: []
-  license_model: open-core
+  license_model: oss
+  license_spdx: AGPL-3.0-only
   maturity: unknown
   status: archived
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L101
   - legacy:devopstools_final.md#L818
-  needs_review: true
+  - https://grafana.com/docs/oncall/latest/intro/
+  - https://grafana.com/blog/grafana-oncall-maintenance-mode/
+  - https://github.com/grafana-cold-storage/oncall
+  needs_review: false
   repository_archived: true
 - id: kaniko
   name: Kaniko
@@ -159,7 +171,7 @@
   repository_archived: true
 - id: kubernetes-dashboard
   name: Kubernetes Dashboard
-  summary: Web UI for Kubernetes.
+  summary: Retired general-purpose web UI for Kubernetes clusters.
   repository_url: https://github.com/kubernetes-retired/dashboard
   categories:
   - deprecated-historical
@@ -173,49 +185,94 @@
   lifecycle_stages:
   - retire
   use_when:
-  - You need the official, basic web UI for cluster visibility.
+  - You are maintaining or migrating an existing Kubernetes Dashboard deployment.
   avoid_when:
-  - You want richer features—use Lens/FreeLens/K9s instead.
+  - You need a maintained Kubernetes web UI; the retired project explicitly recommends Headlamp.
   deployment_models: []
   license_model: oss
   maturity: unknown
   status: archived
-  alternatives: []
+  alternatives:
+  - headlamp
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-07'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L52
   - legacy:devopstools_final.md#L504
-  needs_review: true
+  - https://github.com/kubernetes-retired/dashboard
+  - https://github.com/kubernetes-sigs/headlamp
+  needs_review: false
   repository_archived: true
-- id: tnu
-  name: tnu
-  summary: Test runner for Node.js.
-  repository_url: https://github.com/jfroy/tnu
+- id: minio
+  name: MinIO Community Server
+  summary: Archived and unmaintained AGPL-licensed S3-compatible object-storage server retained for historical
+    and migration reference.
+  official_url: https://github.com/minio/minio
+  repository_url: https://github.com/minio/minio
+  repository_archived: true
   categories:
   - deprecated-historical
-  - ci-build-testing
+  - databases-caching-data-infrastructure
   subcategories:
-  - Testing & QA
+  - Caching & Data Stores
   roles:
   - devops-engineer
-  - developer-experience-engineer
-  - release-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
   lifecycle_stages:
   - retire
   use_when:
-  - You want a minimal, no-config Node.js test runner.
+  - You are maintaining or migrating an existing MinIO Community Server deployment.
   avoid_when:
-  - You need rich plugin ecosystems or advanced features (use Vitest or Jest instead).
+  - You need maintained community object storage; upstream directs new users to separately licensed MinIO
+    AIStor Free or Enterprise products.
   deployment_models: []
   license_model: oss
+  license_spdx: AGPL-3.0-only
+  maturity: established
+  status: archived
+  alternatives: []
+  tags: []
+  verified_on: '2026-09-07'
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L214
+  - legacy:devopstools_final.md#L286
+  - https://github.com/minio/minio
+  - https://docs.min.io/aistor/operations/licenses/
+  - https://www.min.io/pricing
+  needs_review: false
+- id: tnu
+  name: Talos Node Updater (tnu)
+  summary: Archived Go utility that coordinated Talos Linux node upgrades through the Talos API and Rancher
+    System Upgrade Controller.
+  repository_url: https://github.com/jfroy/tnu
+  categories:
+  - deprecated-historical
+  - kubernetes-distributions-operations
+  subcategories:
+  - Kubernetes Management & Operations
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - retire
+  use_when:
+  - You are maintaining an existing tnu-based Talos node-upgrade workflow.
+  avoid_when:
+  - You are designing a new upgrade workflow; the archived project directs users to home-operations/tuppr.
+  deployment_models: []
+  license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: archived
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-07'
   sources:
   - legacy:7_Development-Collaboration/README.md#L22
   - legacy:devopstools_final.md#L1046
+  - https://github.com/jfroy/tnu
+  - https://github.com/home-operations/tuppr
   needs_review: false
   repository_archived: true

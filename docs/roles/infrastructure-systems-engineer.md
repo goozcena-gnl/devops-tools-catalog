@@ -33,7 +33,7 @@
 | [Bottlerocket](https://bottlerocket.dev) | Virtualization, bare metal and homelab | oss | active |
 | [btop](https://github.com/aristocratos/btop) | Foundations, Linux and scripting | oss | active |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
-| [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | source-available | archived |
+| [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [CFEngine](https://cfengine.com) | Configuration management | open-core | needs-review |
 | [Chef](https://www.chef.io) | Configuration management | oss | needs-review |
 | [ClamAV](https://www.clamav.net/) | Application and cloud security | oss | active |
@@ -82,7 +82,7 @@
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [jq](https://jqlang.org) | Foundations, Linux and scripting | oss | active |
 | [JuiceFS](https://juicefs.com/en) | Databases, caching and data infrastructure | open-core | needs-review |
-| [Juju](https://canonical.com/juju) | Configuration management | oss | needs-review |
+| [Juju](https://canonical.com/juju) | Configuration management | oss | active |
 | [k3sup](https://github.com/alexellis/k3sup) | Kubernetes distributions and operations | open-core | active |
 | [Kairos](https://kairos.io/) | Kubernetes distributions and operations | oss | active |
 | [Kasten K10](https://www.kasten.io) | Backup, disaster recovery and resilience | unknown | needs-review |
@@ -103,12 +103,12 @@
 | [Linux Containers (LXC/LXD)](https://linuxcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Linux Foundation Training](https://training.linuxfoundation.org?_sft_product_type=training) | Foundations, Linux and scripting | documentation | needs-review |
 | [LinuxJourney](https://labex.io/linuxjourney) | Foundations, Linux and scripting | documentation | needs-review |
-| [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | open-core | active |
+| [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | commercial | active |
 | [Meilisearch](https://www.meilisearch.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Memcached](https://memcached.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [Metal3](https://metal3.io/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
 | [MiniBlue](https://miniblue.io) | Virtualization, bare metal and homelab | oss | needs-review |
-| [MinIO](https://www.min.io) | Databases, caching and data infrastructure | open-core | needs-review |
+| [MinIO Community Server](https://github.com/minio/minio) | Deprecated and historical tools, Databases, caching and data infrastructure | oss | archived |
 | [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) | Configuration management | oss | needs-review |
 | [MongoDB](https://www.mongodb.com) | Databases, caching and data infrastructure | unknown | needs-review |
 | [MySQL](https://www.mysql.com) | Databases, caching and data infrastructure | open-core | active |
@@ -194,7 +194,7 @@
 | [Uyuni](https://www.uyuni-project.org/) | Configuration management | oss | active |
 | [Varnish Cache](https://www.varnish-software.com/fr-fr/produits/varnish-cache) | Databases, caching and data infrastructure | unknown | needs-review |
 | [Vates VMS](https://github.com/vatesfr) | Virtualization, bare metal and homelab | open-core | needs-review |
-| [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | needs-review |
+| [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | active |
 | [Ventoy](https://www.ventoy.net/) | Virtualization, bare metal and homelab | oss | active |
 | [Volare](https://github.com/AdamShannag/volare) | Virtualization, bare metal and homelab | oss | needs-review |
 | [VolSync](https://volsync.readthedocs.io) | Backup, disaster recovery and resilience | oss | needs-review |

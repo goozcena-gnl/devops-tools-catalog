@@ -280,9 +280,12 @@
   needs_review: true
 - id: velero
   name: Velero
-  summary: Kubernetes cluster backup and restore.
+  summary: Open-source backup, restore, disaster-recovery, and migration tooling for Kubernetes resources
+    and persistent volumes.
   official_url: https://velero.io
-  repository_url: https://github.com/vmware-tanzu/velero
+  repository_url: https://github.com/velero-io/velero
+  repository_archived: false
+  documentation_url: https://velero.io/docs/
   categories:
   - backup-disaster-recovery-resilience
   subcategories:
@@ -300,15 +303,18 @@
     Kasten).
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-07'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L185
   - legacy:devopstools_final.md#L689
-  needs_review: true
+  - https://velero.io/docs/
+  - https://github.com/velero-io/velero
+  needs_review: false
 - id: volsync
   name: VolSync
   summary: Kubernetes volume data replication.

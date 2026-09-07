@@ -55,7 +55,7 @@
 | [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
 | [Cast AI](https://cast.ai) | FinOps and sustainability | unknown | needs-review |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
-| [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | source-available | archived |
+| [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [CertGames](https://certgames.com/) | Documentation, learning and career resources | documentation | needs-review |
 | [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | needs-review |
 | [Civo](https://www.civo.com) | Cloud platforms and cloud management | commercial | active |
@@ -198,7 +198,7 @@
 | [Migratowl](https://migratowl.bitkaio.com) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Milvus](https://milvus.io) | MLOps, LLMOps and AI infrastructure, Databases, caching and data infrastructure | open-core | active |
 | [Mini-classes Ansible Public](https://github.com/apille-pro/miniclasses_ansible_public) | Documentation, learning and career resources | documentation | needs-review |
-| [MinIO](https://www.min.io) | Databases, caching and data infrastructure | open-core | needs-review |
+| [MinIO Community Server](https://github.com/minio/minio) | Deprecated and historical tools, Databases, caching and data infrastructure | oss | archived |
 | [mkcert](https://github.com/FiloSottile/mkcert) | IAM, secrets and certificate management | oss | needs-review |
 | [MLflow](https://mlflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [MLOps for DevOps Engineers](https://github.com/techiescamp/mlops-for-devops) | Documentation, learning and career resources | documentation | needs-review |
@@ -290,7 +290,7 @@
 | [Varnish Cache](https://www.varnish-software.com/fr-fr/produits/varnish-cache) | Databases, caching and data infrastructure | unknown | needs-review |
 | [Vaultwarden](https://www.vaultwarden.net/) | IAM, secrets and certificate management | oss | active |
 | [VegaCloud Inform](https://www.vegacloud.io/products/inform) | FinOps and sustainability | unknown | needs-review |
-| [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | needs-review |
+| [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | active |
 | [VictoriaMetrics MCP server](https://github.com/VictoriaMetrics/mcp-victoriametrics) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Virtana](https://www.virtana.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [vLLM](https://vllm.ai) | MLOps, LLMOps and AI infrastructure | oss | active |

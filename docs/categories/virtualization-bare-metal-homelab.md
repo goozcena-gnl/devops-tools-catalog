@@ -636,21 +636,19 @@ System containers and VM manager.
 
 **Categories:** Virtualization, bare metal and homelab, Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer, Developer Experience Engineer<br>
-**Model:** Open Core<br>
+**Model:** Commercial<br>
 **Status:** Active<br>
 **Repository:** Archived
 
-Local cloud development platform that emulates AWS services for integration testing and offline workflows.
+Licensed local AWS emulation platform delivered through a unified image, with a non-commercial Hobby plan and paid commercial-use plans.
 
 **Use when**
 
-- You want to develop and test AWS integrations offline without incurring cloud costs.
-- You want to develop/test AWS integrations offline without incurring cloud costs.
+- You want to develop and test AWS integrations locally using a plan whose terms fit your intended use.
 
 **Consider alternatives when**
 
-- You need full API parity with AWS or are testing non-AWS services.
-- You need high-fidelity parity with production AWS services (some services are only partially emulated).
+- You need the archived Community distribution to receive updates, require exact AWS parity, or cannot accept account-based licensing and plan entitlements.
 
 [Official site](https://www.localstack.cloud) · [Documentation](https://docs.localstack.cloud) · [Source repository](https://github.com/localstack/localstack)
 

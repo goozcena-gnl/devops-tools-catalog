@@ -27,7 +27,7 @@ EXPECTED_AVOID_WHEN = [
 def _pangolin() -> dict:
     tools = load_tools()
     counts = Counter(tool["id"] for tool in tools)
-    assert len(tools) == 1305
+    assert len(tools) == 1306
     assert counts["pangolin"] == 1
     return next(tool for tool in tools if tool["id"] == "pangolin")
 

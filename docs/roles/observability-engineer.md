@@ -48,7 +48,7 @@
 | [Grafana Beyla](https://grafana.com/oss/beyla) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Grafana Loki](https://grafana.com/oss/loki) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Grafana Mimir](https://grafana.com/oss/mimir) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Grafana OnCall](https://grafana.com/products/cloud/oncall) | Deprecated and historical tools, SRE, incident response and on-call | open-core | archived |
+| [Grafana OnCall OSS](https://grafana.com/docs/oncall/latest/intro/) | Deprecated and historical tools, SRE, incident response and on-call | oss | archived |
 | [Grafana Pyroscope](https://grafana.com/oss/pyroscope) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [grove](https://github.com/ai-dynamo/grove) | Monitoring, metrics, logs and tracing | oss | needs-review |

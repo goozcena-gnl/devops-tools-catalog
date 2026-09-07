@@ -143,8 +143,11 @@ url_aliases:
   https://docs.kubelinter.io/: https://stackrox.github.io/kube-linter/
   https://fossorial.io/: https://pangolin.net
   https://github.com/danielfoehrKn/kubeswitch?tab=readme-ov-file#execute-commands: https://github.com/danielfoehrKn/kubeswitch
+  https://github.com/grafana/oncall: https://github.com/grafana-cold-storage/oncall
+  https://github.com/headlamp-k8s/headlamp: https://github.com/kubernetes-sigs/headlamp
   https://github.com/openstack/magnum: https://opendev.org/openstack/magnum
   https://github.com/snyk/snyk: https://github.com/snyk/cli
+  https://github.com/vmware-tanzu/velero: https://github.com/velero-io/velero
   https://graft.nanonets.ai/: https://trailhq.com/graft
   https://microsoft.github.io/autogen/stable//index.html: https://microsoft.github.io/autogen/stable/index.html
   https://www.powershellgallery.com/packages/PSScriptAnalyzer/1.25.0: https://www.powershellgallery.com/packages/PSScriptAnalyzer/
@@ -155,19 +158,31 @@ url_aliases:
   https://roadmap.sh/devops: https://roadmap.sh/
 record_overrides:
   https://canonical.com/juju:
-    repository_archived: true
+    repository_archived: false
+    documentation_url: https://documentation.ubuntu.com/juju/
+    maturity: established
+    status: active
+    needs_review: false
   https://developer.hashicorp.com/terraform/cdktf:
     categories: [deprecated-historical, infrastructure-as-code]
     lifecycle_stages: [retire]
     repository_archived: true
     status: archived
-    needs_review: true
+    license_model: oss
+    license_spdx: MPL-2.0
+    needs_review: false
   https://grafana.com/products/cloud/oncall:
+    name: Grafana OnCall OSS
+    official_url: https://grafana.com/docs/oncall/latest/intro/
+    repository_url: https://github.com/grafana-cold-storage/oncall
+    documentation_url: https://grafana.com/docs/oncall/latest/
     categories: [deprecated-historical, sre-incident-response-on-call]
     lifecycle_stages: [retire]
     repository_archived: true
     status: archived
-    needs_review: true
+    license_model: oss
+    license_spdx: AGPL-3.0-only
+    needs_review: false
   https://github.com/GoogleContainerTools/kaniko:
     categories: [deprecated-historical, containers-image-tooling]
     lifecycle_stages: [retire]
@@ -175,17 +190,25 @@ record_overrides:
     status: archived
     needs_review: true
   https://github.com/jfroy/tnu:
-    categories: [deprecated-historical, ci-build-testing]
+    name: Talos Node Updater (tnu)
+    summary: Archived Go utility that coordinated Talos Linux node upgrades through the Talos API and Rancher System Upgrade Controller.
+    categories: [deprecated-historical, kubernetes-distributions-operations]
+    subcategories: [Kubernetes Management & Operations]
+    roles: [kubernetes-engineer, platform-engineer, site-reliability-engineer]
     lifecycle_stages: [retire]
     repository_archived: true
     status: archived
-    needs_review: true
+    license_spdx: Apache-2.0
+    needs_review: false
   https://github.com/kubernetes/dashboard:
+    summary: Retired general-purpose web UI for Kubernetes clusters.
+    repository_url: https://github.com/kubernetes-retired/dashboard
     categories: [deprecated-historical, kubernetes-distributions-operations]
     lifecycle_stages: [retire]
     repository_archived: true
     status: archived
-    needs_review: true
+    alternatives: [headlamp]
+    needs_review: false
   https://keptn.sh:
     categories: [deprecated-historical, ci-build-testing]
     lifecycle_stages: [retire]
@@ -202,8 +225,29 @@ record_overrides:
     repository_url: https://github.com/dependency-check/DependencyCheck
   https://www.localstack.cloud:
     repository_archived: true
+    license_model: commercial
+    status: active
+    needs_review: false
   https://www.min.io:
+    name: MinIO Community Server
+    summary: Archived and unmaintained AGPL-licensed S3-compatible object-storage server retained for historical and migration reference.
+    official_url: https://github.com/minio/minio
+    categories: [deprecated-historical, databases-caching-data-infrastructure]
+    lifecycle_stages: [retire]
     repository_archived: true
+    license_model: oss
+    license_spdx: AGPL-3.0-only
+    maturity: established
+    status: archived
+    needs_review: false
+  https://velero.io:
+    repository_url: https://github.com/velero-io/velero
+    repository_archived: false
+    documentation_url: https://velero.io/docs/
+    license_spdx: Apache-2.0
+    maturity: established
+    status: active
+    needs_review: false
   https://roadmap.sh:
     name: Roadmap.sh
     summary: Community-maintained role and skill roadmaps for software and infrastructure careers.

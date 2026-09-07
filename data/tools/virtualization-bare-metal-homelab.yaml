@@ -950,8 +950,8 @@
   needs_review: true
 - id: localstack
   name: LocalStack
-  summary: Local cloud development platform that emulates AWS services for integration testing and offline
-    workflows.
+  summary: Licensed local AWS emulation platform delivered through a unified image, with a non-commercial
+    Hobby plan and paid commercial-use plans.
   official_url: https://www.localstack.cloud
   repository_url: https://github.com/localstack/localstack
   documentation_url: https://docs.localstack.cloud
@@ -971,23 +971,25 @@
   - deploy
   - operate
   use_when:
-  - You want to develop and test AWS integrations offline without incurring cloud costs.
-  - You want to develop/test AWS integrations offline without incurring cloud costs.
+  - You want to develop and test AWS integrations locally using a plan whose terms fit your intended use.
   avoid_when:
-  - You need full API parity with AWS or are testing non-AWS services.
-  - You need high-fidelity parity with production AWS services (some services are only partially emulated).
+  - You need the archived Community distribution to receive updates, require exact AWS parity, or cannot
+    accept account-based licensing and plan entitlements.
   deployment_models: []
-  license_model: open-core
+  license_model: commercial
   maturity: unknown
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-07'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L166
   - legacy:7_Development-Collaboration/README.md#L36
   - legacy:devopstools_final.md#L1064
   - legacy:devopstools_final.md#L253
+  - https://github.com/localstack/localstack
+  - https://docs.localstack.cloud/aws/licensing/
+  - https://www.localstack.cloud/pricing
   needs_review: false
   repository_archived: true
 - id: metal3

@@ -24,7 +24,7 @@ def test_v040_project_version_and_release_metadata_exist() -> None:
 
 
 def test_v040_advertised_catalogue_growth_matches_canonical_data() -> None:
-    assert len(load_tools(ROOT)) == 1305
+    assert len(load_tools(ROOT)) == 1306
     for text in (
         CHANGELOG.read_text(encoding="utf-8"),
         RELEASE_NOTES.read_text(encoding="utf-8"),

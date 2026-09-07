@@ -184,6 +184,7 @@
 - [Harvester](https://harvesterhci.io/) — Kubernetes-based hyperconverged infrastructure platform integrating KubeVirt virtualization and Longhorn storage.
 - [HashiCorp Consul](https://www.consul.io) — Service networking and discovery platform.
 - [Haystack](https://haystack.deepset.ai) — Framework for building LLM-powered apps and search systems.
+- [Headlamp](https://headlamp.dev/) — Maintained Kubernetes SIG UI project providing an extensible web and desktop interface for managing multiple Kubernetes clusters.
 - [Headlamp Plugins](https://github.com/headlamp-k8s/plugins) — Official plugin collection for the Headlamp Kubernetes UI.
 - [Headroom](https://headroomlabs-ai.github.io/headroom) — Context optimization layer that compresses tool outputs, logs, files, and RAG chunks before they reach the LLM.
 - [Helm](https://helm.sh) — Kubernetes package manager.
@@ -215,7 +216,7 @@
 - [Istio](https://istio.io) — Service mesh for managing microservices traffic.
 - [json2k8s](https://github.com/0dotxyz/json2k8s) — Command-line utility that generates Kubernetes manifests from JSON input.
 - [JuiceFS](https://juicefs.com/en) — Distributed POSIX file system with community edition and enterprise/cloud offerings.
-- [Juju](https://canonical.com/juju) — Service modeling and orchestration tool from Canonical (operators/charms).
+- [Juju](https://canonical.com/juju) — Open-source application orchestration engine for deploying and operating charm-based applications across machines and Kubernetes.
 - [k0s](https://k0sproject.io) — Kubernetes distribution.
 - [k0smotron](https://k0smotron.io) — Kubernetes operator and Cluster API provider for managing hosted k0s control planes and child clusters inside Kubernetes.
 - [k10ls](https://github.com/besrabasant/k10ls) — Native Kubernetes API-based CLI for keeping port-forwards to pods and services open across clusters and contexts.
@@ -357,7 +358,7 @@
 - [llm-d](https://github.com/llm-d) — Kubernetes-native high-performance distributed LLM inference framework for serving models at scale.
 - [llmfit](https://github.com/AlexsJones/llmfit) — Hardware-aware CLI/TUI for recommending which LLM models fit local RAM, CPU, and GPU capacity.
 - [LM Studio](https://lmstudio.ai) — Desktop app for running local LLMs.
-- [LocalStack](https://www.localstack.cloud) — Local cloud development platform that emulates AWS services for integration testing and offline workflows.
+- [LocalStack](https://www.localstack.cloud) — Licensed local AWS emulation platform delivered through a unified image, with a non-commercial Hobby plan and paid commercial-use plans.
 - [Loft Vind](https://github.com/loft-sh/vind) — Loft Labs tool (see repository for capabilities and usage).
 - [Longhorn](https://longhorn.io) — Cloud native distributed block storage for Kubernetes.
 - [Luxury Yacht](https://luxury-yacht.app) — Desktop application for Kubernetes management.
@@ -377,7 +378,6 @@
 - [Milvus](https://milvus.io) — Distributed vector database for large-scale similarity search and retrieval workloads.
 - [MiniBlue](https://miniblue.io) — Local Azure emulator that emulates 26+ Azure services in a single binary for development and testing without an Azure account.
 - [Minikube](https://minikube.sigs.k8s.io/docs) — Local Kubernetes development environment.
-- [MinIO](https://www.min.io) — High-performance object storage.
 - [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) — Ansible accelerator to speed up module execution and reduce SSH overhead.
 - [MLflow](https://mlflow.org) — Platform for managing ML lifecycles.
 - [MOCO](https://cybozu-go.github.io/moco) — MySQL Operator for Kubernetes by Cybozu.

@@ -53,7 +53,7 @@ def test_remediation_scope_and_canonical_count() -> None:
     assert {tool_id: counts[tool_id] for tool_id in EXPECTED_IDS} == {
         tool_id: 1 for tool_id in EXPECTED_IDS
     }
-    assert len(catalogue) == 1305
+    assert len(catalogue) == 1306
 
 
 def test_corrected_link_identities_are_exact() -> None:
