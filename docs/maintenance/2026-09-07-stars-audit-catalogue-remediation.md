@@ -31,7 +31,7 @@ the existing official plugins record remains separate.
 - `python -m scripts.generate_docs` — pass.
 - `python -m scripts.generate_docs --check` — pass; generated output is deterministic.
 - `python -m scripts.validate_catalog` — pass.
-- `python -m pytest` — 364 tests executed after the remediation-specific historical-invariant update.
+- `python -m pytest` — 366 tests passed after incorporating the latest `main` branch and updating its catalogue-count invariant.
 - `python -m ruff check scripts tests` — pass.
 - `python -m ruff format --check scripts tests` — pass.
 - `python -m scripts.check_links --strict` — strict result `FAIL`: 1,835 valid, 31 valid redirects,
