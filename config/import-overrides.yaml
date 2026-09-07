@@ -171,6 +171,8 @@ record_overrides:
     license_model: oss
     license_spdx: MPL-2.0
     needs_review: false
+  https://firecracker-microvm.github.io:
+    documentation_url: https://github.com/firecracker-microvm/firecracker/blob/main/docs/getting-started.md
   https://grafana.com/products/cloud/oncall:
     name: Grafana OnCall OSS
     official_url: https://grafana.com/docs/oncall/latest/intro/

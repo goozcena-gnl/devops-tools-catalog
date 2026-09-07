@@ -463,7 +463,7 @@
   summary: Lightweight virtualization for microVMs.
   official_url: https://firecracker-microvm.github.io
   repository_url: https://github.com/firecracker-microvm/firecracker
-  documentation_url: https://github.com/firecracker-microvm/firecracker/blob/main/docs/README.md
+  documentation_url: https://github.com/firecracker-microvm/firecracker/blob/main/docs/getting-started.md
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -485,10 +485,12 @@
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-07'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L150
   - legacy:devopstools_final.md#L240
+  - https://github.com/firecracker-microvm/firecracker
+  - https://github.com/firecracker-microvm/firecracker/blob/main/docs/getting-started.md
   needs_review: false
 - id: flatcar-container-linux
   name: Flatcar Container Linux
