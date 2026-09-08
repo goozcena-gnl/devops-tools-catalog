@@ -180,8 +180,9 @@
   needs_review: true
 - id: kestra
   name: Kestra
-  summary: Declarative orchestration platform for workflows, jobs, and data pipelines.
-  official_url: https://kestra.io
+  summary: Workflow orchestration platform with an Apache-licensed core and commercial enterprise and
+    hosted capabilities.
+  official_url: https://kestra.io/
   categories:
   - workflow-automation-chatops
   subcategories:
@@ -193,18 +194,32 @@
   lifecycle_stages:
   - plan
   - operate
-  use_when: []
-  avoid_when: []
+  use_when:
+  - You need declarative scheduled or event-driven workflows and can operate the selected runtime and
+    storage backend.
+  avoid_when:
+  - You require enterprise identity, governance, or availability features without selecting the corresponding
+    edition.
   deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_model: open-core
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-08'
   sources:
   - legacy:devopstools_final.md#L403
-  needs_review: true
+  - https://github.com/kestra-io/kestra
+  - https://github.com/kestra-io/kestra/blob/develop/LICENSE
+  - https://kestra.io/
+  - https://github.com/kestra-io/kestra/blob/develop/README.md
+  - https://kestra.io/enterprise
+  needs_review: false
+  repository_url: https://github.com/kestra-io/kestra
+  repository_archived: false
+  documentation_url: https://github.com/kestra-io/kestra/blob/develop/README.md
+  license_spdx: Apache-2.0
+  commercial_offering: true
 - id: mattermost
   name: Mattermost
   summary: Self-hostable collaboration platform; open-source core with enterprise editions.
@@ -329,6 +344,37 @@
   - legacy:7_Development-Collaboration/README.md#L5
   - legacy:devopstools_final.md#L1024
   needs_review: true
+- id: redmine
+  name: Redmine
+  summary: Self-hosted project and issue tracking application with workflows, wikis, and repository integration.
+  categories:
+  - workflow-automation-chatops
+  use_when:
+  - You need a self-managed issue tracker for operational work and can maintain its Ruby application and
+    database.
+  avoid_when:
+  - You require a managed incident paging service or want to avoid application upgrades and plugin compatibility
+    work.
+  maturity: established
+  official_url: https://www.redmine.org/
+  repository_url: https://github.com/redmine/redmine
+  repository_archived: false
+  documentation_url: https://github.com/redmine/redmine/blob/master/README.rdoc
+  license_spdx: GPL-2.0-or-later
+  license_model: oss
+  sources:
+  - https://github.com/redmine/redmine
+  - https://github.com/redmine/redmine/blob/master/LICENSE.txt
+  - https://www.redmine.org/
+  - https://github.com/redmine/redmine/blob/master/README.rdoc
+  roles:
+  - devops-engineer
+  lifecycle_stages:
+  - plan
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: rundeck
   name: Rundeck
   summary: Runbook automation and self-service operations platform.

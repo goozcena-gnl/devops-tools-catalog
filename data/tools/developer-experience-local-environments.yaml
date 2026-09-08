@@ -29,6 +29,96 @@
   - legacy:7_Development-Collaboration/README.md#L70
   - legacy:devopstools_final.md#L1109
   needs_review: true
+- id: agent-skills
+  name: Addy Osmani Agent Skills
+  summary: Versioned coding-agent workflows covering specifications, implementation, testing, review,
+    and delivery.
+  repository_url: https://github.com/addyosmani/agent-skills
+  categories:
+  - developer-experience-local-environments
+  subcategories: []
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  use_when:
+  - You maintain coding-agent workflows for infrastructure repositories and want inspectable process instructions.
+  avoid_when:
+  - You need enforced policy or AI infrastructure hosting; a skill collection provides neither.
+  deployment_models: []
+  license_model: oss
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-09-08'
+  sources:
+  - legacy:devopstools_final.md#L1232
+  - https://github.com/addyosmani/agent-skills
+  - https://github.com/addyosmani/agent-skills/blob/main/LICENSE
+  - https://skills.addy.ie/
+  - https://github.com/addyosmani/agent-skills/blob/main/README.md
+  needs_review: false
+  official_url: https://skills.addy.ie/
+  repository_archived: false
+  documentation_url: https://github.com/addyosmani/agent-skills/blob/main/README.md
+  license_spdx: MIT
+- id: agentsroom
+  name: AgentsRoom
+  summary: Desktop workspace for managing projects and coordinating coding-agent sessions and team workflows.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You need to organize multiple coding agents and can supply the underlying CLI accounts and subscriptions.
+  avoid_when:
+  - You expect agent-provider usage to be included or require enforced isolation beyond the documented
+    application boundaries.
+  maturity: emerging
+  official_url: https://agentsroom.dev/
+  license_model: commercial
+  sources:
+  - https://agentsroom.dev/
+  - https://agentsroom.dev/en/pricing
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: aichat
+  name: AIChat
+  summary: Terminal model client with multiple provider integrations and optional tool and retrieval workflows.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You want a configurable command-line model interface for reviewed operational assistance.
+  avoid_when:
+  - You cannot approve provider data handling or need deterministic unattended operational actions.
+  maturity: established
+  repository_url: https://github.com/sigoden/aichat
+  repository_archived: false
+  documentation_url: https://github.com/sigoden/aichat/blob/main/README.md
+  license_spdx: MIT OR Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/sigoden/aichat
+  - https://github.com/sigoden/aichat/blob/main/LICENSE-APACHE
+  - https://github.com/sigoden/aichat/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: aider
   name: Aider
   summary: AI pair programming in the terminal.
@@ -119,6 +209,37 @@
   - legacy:7_Development-Collaboration/README.md#L85
   - legacy:devopstools_final.md#L1125
   needs_review: true
+- id: ast-grep
+  name: ast-grep
+  summary: Syntax-tree-based code search, linting, and rewriting tool.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You maintain infrastructure code or repository-wide policies and need structural checks beyond text
+    matching.
+  avoid_when:
+  - You require full compiler semantic analysis or your target language is unsupported.
+  maturity: growing
+  official_url: https://ast-grep.github.io/
+  repository_url: https://github.com/ast-grep/ast-grep
+  repository_archived: false
+  documentation_url: https://github.com/ast-grep/ast-grep/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/ast-grep/ast-grep
+  - https://github.com/ast-grep/ast-grep/blob/main/LICENSE
+  - https://ast-grep.github.io/
+  - https://github.com/ast-grep/ast-grep/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: aws-cloud9
   name: AWS Cloud9
   summary: Cloud-based IDE for writing, running, and debugging code.
@@ -297,6 +418,40 @@
   - https://coder.com/docs/code-server
   - https://github.com/coder/code-server
   needs_review: false
+- id: codemod
+  name: Codemod
+  summary: Code transformation and maintenance platform with an open-source engine and paid organization-wide
+    workflow features.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You maintain many repositories and need repeatable migrations or remediation campaigns with reviewed
+    transformations.
+  avoid_when:
+  - You need only a local search-and-replace or cannot accept the selected commercial orchestration features.
+  maturity: growing
+  official_url: https://codemod.com/
+  repository_url: https://github.com/codemod/codemod
+  repository_archived: false
+  documentation_url: https://github.com/codemod/codemod/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: open-core
+  sources:
+  - https://github.com/codemod/codemod
+  - https://github.com/codemod/codemod/blob/main/LICENSE
+  - https://codemod.com/
+  - https://github.com/codemod/codemod/blob/main/README.md
+  - https://codemod.com/pricing
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: coder
   name: Coder
   summary: Self-hosted cloud development environments and AI development infrastructure with governance.
@@ -408,7 +563,7 @@
   needs_review: true
 - id: cursor
   name: Cursor
-  summary: AI-powered code editor.
+  summary: Commercial AI coding workspace and editor for agent-assisted repository development.
   official_url: https://cursor.com
   categories:
   - developer-experience-local-environments
@@ -421,20 +576,56 @@
   - develop
   - test
   use_when:
-  - AI-assisted coding (chat, autocomplete, codebase-aware edits) is a priority.
+  - You want integrated agent-assisted work on infrastructure code and can govern model access and review
+    generated changes.
   avoid_when:
-  - You need a stable, mature extension ecosystem—it's VS Code-based but still evolving.
+  - Your repository data policy prohibits the selected provider integrations or you need deterministic
+    unattended changes.
   deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-08'
   sources:
   - legacy:7_Development-Collaboration/README.md#L45
   - legacy:devopstools_final.md#L1079
-  needs_review: true
+  - https://cursor.com/fr/changelog/3-0
+  - https://cursor.com/pricing
+  - https://cursor.com/docs
+  needs_review: false
+  commercial_offering: true
+  documentation_url: https://cursor.com/docs
+- id: delta
+  name: delta
+  summary: Terminal pager that improves presentation of Git and other diffs.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You review infrastructure-code changes in a terminal and want syntax-aware diff presentation.
+  avoid_when:
+  - You require machine-parseable diff output or cannot alter the configured pager behaviour.
+  maturity: established
+  official_url: https://dandavison.github.io/delta/
+  repository_url: https://github.com/dandavison/delta
+  repository_archived: false
+  documentation_url: https://github.com/dandavison/delta/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/dandavison/delta
+  - https://github.com/dandavison/delta/blob/main/LICENSE
+  - https://dandavison.github.io/delta/
+  - https://github.com/dandavison/delta/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: development-containers
   name: Development Containers
   summary: Open specification for defining reproducible, containerized development environments (devcontainers).
@@ -908,6 +1099,39 @@
   - legacy:7_Development-Collaboration/README.md#L35
   - legacy:devopstools_final.md#L1063
   needs_review: true
+- id: hoppscotch
+  name: Hoppscotch
+  summary: API development workspace with community self-hosting and commercial collaboration options.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You need browser-oriented API requests and testing with a deployment model suited to your team's data
+    policies.
+  avoid_when:
+  - You require enterprise identity or governance features without reviewing edition limits.
+  maturity: established
+  official_url: https://hoppscotch.io/
+  repository_url: https://github.com/hoppscotch/hoppscotch
+  repository_archived: false
+  documentation_url: https://github.com/hoppscotch/hoppscotch/blob/main/README.md
+  license_spdx: MIT
+  license_model: open-core
+  sources:
+  - https://github.com/hoppscotch/hoppscotch
+  - https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE
+  - https://hoppscotch.io/
+  - https://github.com/hoppscotch/hoppscotch/blob/main/README.md
+  - https://docs.hoppscotch.io/documentation/self-host/community-edition/install-and-build
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: httpx-python
   name: HTTPX
   summary: Python HTTP client library with synchronous, asynchronous, HTTP/2, and streaming APIs.
@@ -939,6 +1163,38 @@
   sources:
   - https://www.python-httpx.org/
   - https://github.com/encode/httpx
+  needs_review: false
+- id: insomnia
+  name: Insomnia
+  summary: API client and testing workspace with local workflows and paid collaboration capabilities.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You need interactive API design and testing with a choice of local, Git, or hosted collaboration storage.
+  avoid_when:
+  - Your governance requires features absent from the selected edition or prohibits the chosen cloud synchronization
+    mode.
+  maturity: established
+  official_url: https://insomnia.rest/
+  repository_url: https://github.com/Kong/insomnia
+  repository_archived: false
+  documentation_url: https://github.com/Kong/insomnia/blob/develop/README.md
+  license_spdx: Apache-2.0
+  license_model: open-core
+  sources:
+  - https://github.com/Kong/insomnia
+  - https://github.com/Kong/insomnia/blob/develop/LICENSE
+  - https://insomnia.rest/
+  - https://github.com/Kong/insomnia/blob/develop/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: intellij-idea
   name: IntelliJ IDEA
@@ -995,6 +1251,38 @@
   sources:
   - legacy:devopstools_final.md#L1087
   needs_review: true
+- id: kilo
+  name: Kilo Code
+  summary: Open-source coding-agent tooling with configurable model providers and commercial hosted services.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You want agent-assisted work on infrastructure repositories and can govern model access and command
+    execution.
+  avoid_when:
+  - You require deterministic changes without review or cannot approve the selected provider's data handling.
+  maturity: growing
+  official_url: https://kilo.ai/
+  repository_url: https://github.com/Kilo-Org/kilocode
+  repository_archived: false
+  documentation_url: https://github.com/Kilo-Org/kilocode/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/Kilo-Org/kilocode
+  - https://github.com/Kilo-Org/kilocode/blob/main/LICENSE
+  - https://kilo.ai/
+  - https://github.com/Kilo-Org/kilocode/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: kitty
   name: kitty
   summary: Cross-platform GPU-accelerated terminal emulator with extensible keyboard-driven workflows.
@@ -1023,6 +1311,37 @@
   - https://sw.kovidgoyal.net/kitty/
   - https://github.com/kovidgoyal/kitty
   - https://github.com/kovidgoyal/kitty/blob/master/LICENSE
+  needs_review: false
+- id: kubernetes-crd-model-gen
+  name: KubernetesCRDModelGen
+  summary: Generator for C# models representing Kubernetes custom resources.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You build .NET Kubernetes integrations and need generated CRD types as part of a maintained controller
+    toolchain.
+  avoid_when:
+  - You only operate existing resources or can use established client models without another generation
+    dependency.
+  maturity: growing
+  official_url: https://github.com/IvanJosipovic/KubernetesCRDModelGen
+  repository_url: https://github.com/IvanJosipovic/KubernetesCRDModelGen
+  repository_archived: false
+  documentation_url: https://github.com/IvanJosipovic/KubernetesCRDModelGen/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/IvanJosipovic/KubernetesCRDModelGen
+  - https://github.com/IvanJosipovic/KubernetesCRDModelGen/blob/main/LICENSE
+  - https://github.com/IvanJosipovic/KubernetesCRDModelGen/blob/main/README.md
+  roles:
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - develop
+  - build
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: kubetable
   name: KubeTable
@@ -1099,6 +1418,37 @@
   sources:
   - legacy:devopstools_final.md#L1088
   needs_review: true
+- id: matt-pocock-skills
+  name: Matt Pocock Skills
+  summary: Reusable coding-agent skills for specifications, testing, review, and maintenance workflows.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You maintain engineering workflows for AI coding tools and want inspectable, versioned process instructions.
+  avoid_when:
+  - You require an infrastructure control plane or deterministic enforcement rather than agent-followed
+    guidance.
+  maturity: growing
+  official_url: https://www.aihero.dev/skills
+  repository_url: https://github.com/mattpocock/skills
+  repository_archived: false
+  documentation_url: https://github.com/mattpocock/skills/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/mattpocock/skills
+  - https://github.com/mattpocock/skills/blob/main/LICENSE
+  - https://www.aihero.dev/skills
+  - https://github.com/mattpocock/skills/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: micro
   name: micro
   summary: Easy-to-use terminal text editor with plugins, mouse support, and Lua customization.
@@ -1126,6 +1476,36 @@
   sources:
   - legacy:devopstools_final.md#L1065
   needs_review: true
+- id: mise
+  name: mise
+  summary: Tool-version, environment, and task manager with project configuration usable locally and in
+    CI.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You need consistent tool versions and commands across development machines and CI jobs.
+  avoid_when:
+  - You require hermetic builds without externally downloaded tools or do not want another environment
+    manager.
+  maturity: growing
+  official_url: https://mise.jdx.dev/
+  repository_url: https://github.com/jdx/mise
+  repository_archived: false
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/jdx/mise
+  - https://github.com/jdx/mise/blob/main/LICENSE
+  - https://mise.jdx.dev/
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: mypy
   name: mypy
   summary: Static type checker for Python.
@@ -1445,6 +1825,36 @@
   sources:
   - legacy:devopstools_final.md#L419
   needs_review: true
+- id: paseo
+  name: Paseo
+  summary: Interface for accessing coding agents running on a development machine from other devices.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You need to follow local coding-agent sessions remotely and can secure the host and connection method.
+  avoid_when:
+  - You require an enterprise remote-execution service or cannot expose development-session access.
+  maturity: emerging
+  official_url: https://paseo.sh/
+  repository_url: https://github.com/getpaseo/paseo
+  repository_archived: false
+  documentation_url: https://github.com/getpaseo/paseo/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/getpaseo/paseo
+  - https://github.com/getpaseo/paseo/blob/main/LICENSE
+  - https://paseo.sh/
+  - https://github.com/getpaseo/paseo/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: play-with-docker
   name: Play with Docker
   summary: Interactive Docker playground; open-source platform with hosted labs site.
@@ -1852,6 +2262,69 @@
   - legacy:7_Development-Collaboration/README.md#L86
   - legacy:devopstools_final.md#L1127
   needs_review: true
+- id: superpowers
+  name: Superpowers
+  summary: Reusable coding-agent skills and workflow instructions for planning, testing, and code review.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You want a versioned engineering workflow for supported coding agents and will review the installed
+    instructions.
+  avoid_when:
+  - You require centrally enforced policy; agent instructions alone do not guarantee execution or security
+    boundaries.
+  maturity: growing
+  repository_url: https://github.com/obra/superpowers
+  repository_archived: false
+  documentation_url: https://github.com/obra/superpowers/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/obra/superpowers
+  - https://github.com/obra/superpowers/blob/main/LICENSE
+  - https://github.com/obra/superpowers/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: superset-agent-workspace
+  name: Superset (agent workspace)
+  summary: Source-available development workspace for parallel coding-agent sessions and Git worktrees.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You want to organize agent work across isolated Git worktrees and accept the workspace's source-available
+    terms.
+  avoid_when:
+  - You need Apache Superset analytics or plan to resell this workspace as a hosted service under its
+    default licence.
+  maturity: growing
+  official_url: https://superset.sh/
+  repository_url: https://github.com/superset-sh/superset
+  repository_archived: false
+  documentation_url: https://docs.superset.sh/overview
+  license_spdx: Elastic-2.0
+  license_model: source-available
+  sources:
+  - https://github.com/superset-sh/superset
+  - https://github.com/superset-sh/superset/blob/main/LICENSE.md
+  - https://superset.sh/
+  - https://docs.superset.sh/overview
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+  commercial_offering: true
 - id: tabby
   name: Tabby
   summary: Self-hosted AI coding assistant.
@@ -1912,6 +2385,67 @@
   - legacy:7_Development-Collaboration/README.md#L41
   - legacy:devopstools_final.md#L1071
   needs_review: true
+- id: termic
+  name: Termic
+  summary: Desktop development workspace combining agent sessions, terminals, Git worktrees, and review
+    tools.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You coordinate agent-assisted changes across repositories and want integrated worktree and diff workflows.
+  avoid_when:
+  - You need mature sandbox network-egress enforcement; upstream documents experimental isolation features.
+  maturity: emerging
+  official_url: https://termic.dev/
+  repository_url: https://github.com/simion/termic
+  repository_archived: false
+  documentation_url: https://termic.dev/docs/introduction/
+  license_spdx: AGPL-3.0-or-later
+  license_model: oss
+  sources:
+  - https://github.com/simion/termic
+  - https://github.com/simion/termic/blob/main/LICENSE
+  - https://termic.dev/
+  - https://termic.dev/docs/introduction/
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: terminal-browser
+  name: terminal-browser
+  summary: Browser integrated with terminal sessions for interactive web previews and browser automation.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You need to inspect development web services alongside terminal workflows, including remote SSH sessions.
+  avoid_when:
+  - Your terminal is unsupported or you need a conventional graphical browser's full compatibility guarantees.
+  maturity: emerging
+  official_url: https://terminal-browser.com/
+  repository_url: https://github.com/zenbu-labs/terminal-browser
+  repository_archived: false
+  documentation_url: https://github.com/zenbu-labs/terminal-browser/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/zenbu-labs/terminal-browser
+  - https://github.com/zenbu-labs/terminal-browser/blob/main/LICENSE
+  - https://terminal-browser.com/
+  - https://github.com/zenbu-labs/terminal-browser/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: termix
   name: Termix
   summary: Browser-based terminal multiplexer for managing remote shell sessions from any device.
@@ -2052,6 +2586,36 @@
   - legacy:7_Development-Collaboration/README.md#L49
   - legacy:devopstools_final.md#L1083
   needs_review: true
+- id: watchexec
+  name: Watchexec
+  summary: Filesystem-event command runner for repeating checks and development tasks.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You want local tests or validation commands to rerun when selected files change.
+  avoid_when:
+  - You need a durable scheduler or exactly-once execution guarantees.
+  maturity: established
+  official_url: https://watchexec.github.io/
+  repository_url: https://github.com/watchexec/watchexec
+  repository_archived: false
+  documentation_url: https://github.com/watchexec/watchexec/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/watchexec/watchexec
+  - https://github.com/watchexec/watchexec/blob/main/LICENSE
+  - https://watchexec.github.io/
+  - https://github.com/watchexec/watchexec/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: wezterm
   name: WezTerm
   summary: Rust-based terminal emulator and multiplexer with panes, workspaces, SSH, and Lua configuration.
@@ -2241,6 +2805,37 @@
   sources:
   - legacy:devopstools_final.md#L1075
   needs_review: true
+- id: zed
+  name: Zed
+  summary: Code editor supporting collaborative editing, language tooling, and coding-agent workflows.
+  categories:
+  - developer-experience-local-environments
+  use_when:
+  - You want a native editor for infrastructure repositories and can validate language and extension support.
+  avoid_when:
+  - Your workflow requires unavailable IDE integrations or must avoid hosted collaboration and model-service
+    dependencies.
+  maturity: growing
+  official_url: https://zed.dev/
+  repository_url: https://github.com/zed-industries/zed
+  repository_archived: false
+  documentation_url: https://github.com/zed-industries/zed/blob/main/README.md
+  license_model: oss
+  sources:
+  - https://github.com/zed-industries/zed
+  - https://github.com/zed-industries/zed/blob/main/LICENSE-APACHE
+  - https://zed.dev/
+  - https://github.com/zed-industries/zed/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - test
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: zellij
   name: Zellij
   summary: Terminal workspace and multiplexer with layouts, panes, sessions, and plugins.

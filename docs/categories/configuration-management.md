@@ -81,24 +81,24 @@ Policy-based configuration management; community + commercial editions.
 
 [Official site](https://cfengine.com) · [Source repository](https://github.com/cfengine/core)
 
-### Chef
+### Chef Infra
 
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Infrastructure automation and configuration management.
+Commercially distributed infrastructure configuration-management tooling with separately Apache-licensed upstream source.
 
 **Use when**
 
-- You want Ruby-based, test-driven infrastructure with rich cookbooks.
+- You need policy-based host configuration and can operate Chef clients and the required licensing and management services.
 
 **Consider alternatives when**
 
-- You prefer agentless tooling or simpler YAML-based workflows.
+- You require agentless management or expect Apache source terms to cover Progress-distributed binaries, updates, and support.
 
-[Official site](https://www.chef.io) · [Source repository](https://github.com/chef/chef)
+[Official site](https://www.chef.io/products/chef-infra) · [Documentation](https://github.com/chef/chef/blob/main/README.md) · [Source repository](https://github.com/chef/chef)
 
 ### ConfigHub
 

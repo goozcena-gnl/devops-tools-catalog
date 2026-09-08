@@ -93,9 +93,10 @@
   - legacy:devopstools_final.md#L195
   needs_review: true
 - id: chef
-  name: Chef
-  summary: Infrastructure automation and configuration management.
-  official_url: https://www.chef.io
+  name: Chef Infra
+  summary: Commercially distributed infrastructure configuration-management tooling with separately Apache-licensed
+    upstream source.
+  official_url: https://www.chef.io/products/chef-infra
   repository_url: https://github.com/chef/chef
   categories:
   - configuration-management
@@ -108,20 +109,30 @@
   - deploy
   - operate
   use_when:
-  - You want Ruby-based, test-driven infrastructure with rich cookbooks.
+  - You need policy-based host configuration and can operate Chef clients and the required licensing and
+    management services.
   avoid_when:
-  - You prefer agentless tooling or simpler YAML-based workflows.
+  - You require agentless management or expect Apache source terms to cover Progress-distributed binaries,
+    updates, and support.
   deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-08'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L72
   - legacy:devopstools_final.md#L196
-  needs_review: true
+  - https://github.com/chef/chef
+  - https://github.com/chef/chef/blob/main/LICENSE
+  - https://www.chef.io/products/chef-infra
+  - https://github.com/chef/chef/blob/main/README.md
+  - https://docs.chef.io/licensing/
+  needs_review: false
+  repository_archived: false
+  documentation_url: https://github.com/chef/chef/blob/main/README.md
+  commercial_offering: true
 - id: confighub
   name: ConfigHub
   summary: Configuration management platform for distributed applications.

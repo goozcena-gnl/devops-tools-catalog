@@ -1379,6 +1379,36 @@
   - legacy:4_Kubernetes-Containers/README.md#L31
   - legacy:devopstools_final.md#L473
   needs_review: true
+- id: kftray
+  name: kftray
+  summary: Desktop and terminal tools for managing Kubernetes port-forwarding sessions.
+  categories:
+  - kubernetes-distributions-operations
+  use_when:
+  - You repeatedly connect to cluster services and want persistent, organized forwarding configurations.
+  avoid_when:
+  - You require production ingress, centralized access policy, or connectivity without Kubernetes API
+    permissions.
+  maturity: growing
+  official_url: https://kftray.app/
+  repository_url: https://github.com/hcavarsan/kftray
+  repository_archived: false
+  documentation_url: https://github.com/hcavarsan/kftray/blob/main/README.md
+  license_model: oss
+  sources:
+  - https://github.com/hcavarsan/kftray
+  - https://github.com/hcavarsan/kftray/blob/main/LICENSE.md
+  - https://kftray.app/
+  - https://github.com/hcavarsan/kftray/blob/main/README.md
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: khi-kubernetes-history-inspector
   name: KHI (Kubernetes History Inspector)
   summary: Visualize and inspect Kubernetes cluster event history.
@@ -2205,6 +2235,63 @@
   - legacy:4_Kubernetes-Containers/README.md#L9
   - legacy:devopstools_final.md#L438
   needs_review: true
+- id: kubectl-view-allocations
+  name: kubectl-view-allocations
+  summary: kubectl plugin for comparing Kubernetes resource allocations and utilization.
+  categories:
+  - kubernetes-distributions-operations
+  use_when:
+  - You investigate requests, limits, and allocatable resources during cluster capacity review.
+  avoid_when:
+  - You need forecasting and historical metrics rather than a current allocation view.
+  maturity: growing
+  official_url: https://github.com/davidB/kubectl-view-allocations
+  repository_url: https://github.com/davidB/kubectl-view-allocations
+  repository_archived: false
+  documentation_url: https://github.com/davidB/kubectl-view-allocations/blob/master/README.md
+  license_spdx: CC0-1.0
+  license_model: oss
+  sources:
+  - https://github.com/davidB/kubectl-view-allocations
+  - https://github.com/davidB/kubectl-view-allocations/blob/master/LICENSE.txt
+  - https://github.com/davidB/kubectl-view-allocations/blob/master/README.md
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - operate
+  - optimize
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: kubectl-x
+  name: kubectl-x
+  summary: Read-only kubectl plugin for querying and streaming logs across multiple kubeconfig contexts.
+  categories:
+  - kubernetes-distributions-operations
+  use_when:
+  - You need parallel multi-cluster queries with context-labelled table, JSON, or YAML output.
+  avoid_when:
+  - You need cross-cluster writes or a stable API for unattended scripts; upstream describes the interface
+    as unstable.
+  maturity: experimental
+  repository_url: https://github.com/platformersdev/kubectl-x
+  repository_archived: false
+  documentation_url: https://github.com/platformersdev/kubectl-x/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/platformersdev/kubectl-x
+  - https://github.com/platformersdev/kubectl-x/blob/main/LICENSE
+  - https://github.com/platformersdev/kubectl-x/blob/main/README.md
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: kubectx-kubens
   name: kubectx + kubens
   summary: Switch contexts/namespaces quickly.
@@ -2867,6 +2954,36 @@
   - legacy:4_Kubernetes-Containers/README.md#L32
   - legacy:devopstools_final.md#L505
   needs_review: true
+- id: kubeui
+  name: KubeUI
+  summary: Desktop Kubernetes client for browsing resources, logs, events, and YAML.
+  categories:
+  - kubernetes-distributions-operations
+  use_when:
+  - You want a graphical workstation interface for inspecting and editing resources in existing clusters.
+  avoid_when:
+  - You need a hosted multi-user platform or centralized permission management beyond Kubernetes RBAC.
+  maturity: growing
+  official_url: https://kubeui.com/
+  repository_url: https://github.com/IvanJosipovic/KubeUI
+  repository_archived: false
+  documentation_url: https://github.com/IvanJosipovic/KubeUI/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/IvanJosipovic/KubeUI
+  - https://github.com/IvanJosipovic/KubeUI/blob/main/LICENSE
+  - https://kubeui.com/
+  - https://github.com/IvanJosipovic/KubeUI/blob/main/README.md
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: kubeview
   name: KubeView
   summary: Kubernetes cluster visualizer.
@@ -3406,6 +3523,36 @@
   sources:
   - https://github.com/FairwindsOps/pluto
   needs_review: false
+- id: polykube
+  name: Polykube
+  summary: Experimental GitOps-driven operators for portable workloads across Kubernetes clusters.
+  categories:
+  - kubernetes-distributions-operations
+  use_when:
+  - You can evaluate multi-cluster workload patterns using Flux, Cilium, and the documented networking
+    prerequisites.
+  avoid_when:
+  - You need production global traffic management, database provisioning, or secret replication; these
+    exceed the alpha scope.
+  maturity: experimental
+  repository_url: https://github.com/Kismet-Engineering/polykube
+  repository_archived: false
+  documentation_url: https://github.com/Kismet-Engineering/polykube/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/Kismet-Engineering/polykube
+  - https://github.com/Kismet-Engineering/polykube/blob/main/LICENSE
+  - https://github.com/Kismet-Engineering/polykube/blob/main/README.md
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: popeye
   name: Popeye
   summary: Kubernetes cluster resource sanitizer that scans live clusters for potential issues and misconfigurations.
@@ -3461,6 +3608,39 @@
   sources:
   - legacy:devopstools_final.md#L671
   needs_review: true
+- id: radar
+  name: Radar
+  summary: Kubernetes inspection interface with resource topology, events, GitOps information, and an
+    MCP surface.
+  categories:
+  - kubernetes-distributions-operations
+  use_when:
+  - You need interactive cluster troubleshooting and can run the local or in-cluster open-source interface.
+  avoid_when:
+  - You require hosted fleet functionality without evaluating Radar Cloud separately or cannot grant API
+    access.
+  maturity: growing
+  official_url: https://radarhq.io/
+  repository_url: https://github.com/skyhook-io/radar
+  repository_archived: false
+  documentation_url: https://github.com/skyhook-io/radar/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/skyhook-io/radar
+  - https://github.com/skyhook-io/radar/blob/main/LICENSE
+  - https://radarhq.io/
+  - https://github.com/skyhook-io/radar/blob/main/README.md
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: rancher
   name: Rancher
   summary: Kubernetes management platform by SUSE.
@@ -3583,6 +3763,35 @@
   - legacy:4_Kubernetes-Containers/README.md#L15
   - legacy:devopstools_final.md#L444
   needs_review: true
+- id: rothgar-k
+  name: k (rothgar)
+  summary: Experimental kubectl wrapper adding context, cluster, and namespace shorthand.
+  categories:
+  - kubernetes-distributions-operations
+  use_when:
+  - You repeatedly switch Kubernetes contexts interactively and want concise targeting while retaining
+    kubectl behavior.
+  avoid_when:
+  - You need unchanged kubectl argument semantics or established automation interfaces; the wrapper changes
+    context selection.
+  maturity: experimental
+  repository_url: https://github.com/rothgar/k
+  repository_archived: false
+  documentation_url: https://github.com/rothgar/k/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/rothgar/k
+  - https://github.com/rothgar/k/blob/main/LICENSE
+  - https://github.com/rothgar/k/blob/main/README.md
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: sablier
   name: Sablier
   summary: Workload scaler that starts containerized services on demand and idles them after inactivity.
@@ -3737,6 +3946,36 @@
   sources:
   - legacy:devopstools_final.md#L523
   needs_review: true
+- id: sofka
+  name: sofka
+  summary: Terminal user interface for inspecting and operating Kubernetes resources.
+  categories:
+  - kubernetes-distributions-operations
+  use_when:
+  - You prefer interactive terminal-based resource, log, and event inspection across Kubernetes contexts.
+  avoid_when:
+  - You need a centrally managed multi-user control plane or cannot grant the selected Kubernetes API
+    permissions.
+  maturity: emerging
+  official_url: https://sofka.rs/
+  repository_url: https://github.com/nklmilojevic/sofka
+  repository_archived: false
+  documentation_url: https://github.com/nklmilojevic/sofka/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/nklmilojevic/sofka
+  - https://github.com/nklmilojevic/sofka/blob/main/LICENSE-APACHE
+  - https://sofka.rs/
+  - https://github.com/nklmilojevic/sofka/blob/main/README.md
+  roles:
+  - kubernetes-engineer
+  - platform-engineer
+  lifecycle_stages:
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: tarook
   name: Tarook
   summary: Cloud-native platform for streamlined Kubernetes and infrastructure management.

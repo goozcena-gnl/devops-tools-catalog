@@ -398,7 +398,7 @@
 - id: ibm-cloud
   name: IBM Cloud
   summary: Enterprise cloud services and infrastructure by IBM.
-  official_url: https://www.ibm.com/cloud
+  official_url: https://www.ibm.com/products/cloud
   categories:
   - cloud-platforms-management
   subcategories:
@@ -412,20 +412,24 @@
   - operate
   - optimize
   use_when:
-  - You need mainframe integration or regulated-industry compliance.
+  - You need IBM cloud infrastructure and services with region, compliance, and support options validated
+    for your workload.
   avoid_when:
-  - Developer experience and modern tooling are top priorities.
+  - Required services or regions are unavailable, or your operational tooling is committed to another
+    provider.
   deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-08'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L18
   - legacy:devopstools_final.md#L157
-  needs_review: true
+  - https://www.ibm.com/products/cloud
+  needs_review: false
+  commercial_offering: true
 - id: linode
   name: Linode
   summary: Cloud hosting and compute services.
@@ -618,6 +622,38 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L26
   - legacy:devopstools_final.md#L161
   needs_review: true
+- id: steampipe
+  name: Steampipe
+  summary: SQL query tooling for cloud APIs, with AGPL upstream source and vendor distributions under
+    separate commercial terms.
+  categories:
+  - cloud-platforms-management
+  use_when:
+  - You need ad hoc infrastructure inventory or compliance queries across API-backed services using SQL.
+  avoid_when:
+  - You need a continuously reconciled asset database or assume upstream AGPL terms also govern Turbot
+    binaries and services.
+  maturity: established
+  official_url: https://steampipe.io/
+  repository_url: https://github.com/turbot/steampipe
+  repository_archived: false
+  documentation_url: https://github.com/turbot/steampipe/blob/develop/README.md
+  license_model: commercial
+  sources:
+  - https://github.com/turbot/steampipe
+  - https://github.com/turbot/steampipe/blob/develop/LICENSE
+  - https://steampipe.io/
+  - https://github.com/turbot/steampipe/blob/develop/README.md
+  - https://turbot.com/open-source
+  roles:
+  - cloud-engineer
+  lifecycle_stages:
+  - operate
+  - secure
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: virtana
   name: Virtana
   summary: Hybrid cloud management.

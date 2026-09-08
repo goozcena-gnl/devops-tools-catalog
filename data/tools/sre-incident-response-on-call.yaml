@@ -1,3 +1,31 @@
+- id: alertmanager-receiver-azdo
+  name: Alertmanager receiver for Azure DevOps
+  summary: Webhook receiver that creates and resolves Azure DevOps work items from Alertmanager notifications.
+  categories:
+  - sre-incident-response-on-call
+  use_when:
+  - Your incident workflow uses Azure DevOps work items and you can configure receiver authentication
+    and field mapping.
+  avoid_when:
+  - You need paging or incident-command features rather than work-item synchronization.
+  maturity: emerging
+  repository_url: https://github.com/IvanJosipovic/alertmanager-receiver-azdo
+  repository_archived: false
+  documentation_url: https://github.com/IvanJosipovic/alertmanager-receiver-azdo/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/IvanJosipovic/alertmanager-receiver-azdo
+  - https://github.com/IvanJosipovic/alertmanager-receiver-azdo/blob/main/LICENSE
+  - https://github.com/IvanJosipovic/alertmanager-receiver-azdo/blob/main/README.md
+  roles:
+  - site-reliability-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: combodo-itop
   name: Combodo (iTop)
   summary: ITSM/CMDB platform; Combodo-backed iTop ecosystem with commercial extensions and support.

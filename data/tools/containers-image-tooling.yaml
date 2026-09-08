@@ -119,6 +119,61 @@
   sources:
   - legacy:devopstools_final.md#L350
   needs_review: true
+- id: containeryard
+  name: ContainerYard
+  summary: Tool for composing reusable modules into generated Containerfiles.
+  categories:
+  - containers-image-tooling
+  use_when:
+  - You maintain repeated container build definitions and want versioned composition with pinned remote
+    modules.
+  avoid_when:
+  - A straightforward Dockerfile is sufficient or you cannot maintain another generation layer and module
+    trust boundary.
+  maturity: emerging
+  repository_url: https://github.com/mcmah309/containeryard
+  repository_archived: false
+  documentation_url: https://github.com/mcmah309/containeryard/blob/master/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/mcmah309/containeryard
+  - https://github.com/mcmah309/containeryard/blob/master/LICENSE
+  - https://github.com/mcmah309/containeryard/blob/master/README.md
+  roles:
+  - platform-engineer
+  lifecycle_stages:
+  - build
+  - release
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: crun
+  name: crun
+  summary: OCI container runtime implemented in C for running Linux containers.
+  categories:
+  - containers-image-tooling
+  use_when:
+  - You need a lightweight low-level runtime compatible with your chosen container engine.
+  avoid_when:
+  - You need image building and orchestration; those functions belong to higher-level container tools.
+  maturity: established
+  repository_url: https://github.com/containers/crun
+  repository_archived: false
+  documentation_url: https://github.com/containers/crun/blob/main/README.md
+  license_model: oss
+  sources:
+  - https://github.com/containers/crun
+  - https://github.com/containers/crun/blob/main/COPYING
+  - https://github.com/containers/crun/blob/main/README.md
+  roles:
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: distroless
   name: Distroless
   summary: Minimal container images for secure deployments.
@@ -624,3 +679,32 @@
   - legacy:3_CI-CD-Automation/README.md#L98
   - legacy:devopstools_final.md#L364
   needs_review: true
+- id: youki
+  name: youki
+  summary: OCI container runtime implemented in Rust.
+  categories:
+  - containers-image-tooling
+  use_when:
+  - You evaluate low-level container runtimes and can test OCI compatibility with your container stack.
+  avoid_when:
+  - You need an end-user container engine or cannot validate kernel and runtime integration requirements.
+  maturity: growing
+  official_url: https://youki-dev.github.io/youki/
+  repository_url: https://github.com/youki-dev/youki
+  repository_archived: false
+  documentation_url: https://github.com/youki-dev/youki/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/youki-dev/youki
+  - https://github.com/youki-dev/youki/blob/main/LICENSE
+  - https://youki-dev.github.io/youki/
+  - https://github.com/youki-dev/youki/blob/main/README.md
+  roles:
+  - platform-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false

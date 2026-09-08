@@ -26,34 +26,6 @@
   sources:
   - legacy:devopstools_final.md#L1231
   needs_review: true
-- id: agent-skills
-  name: agent-skills
-  summary: Production-grade engineering skills for AI coding agents.
-  repository_url: https://github.com/addyosmani/agent-skills
-  categories:
-  - mlops-llmops-ai-infrastructure
-  subcategories:
-  - Agent Frameworks & Orchestration
-  roles:
-  - cloud-engineer
-  - platform-engineer
-  - mlops-ai-infrastructure-engineer
-  lifecycle_stages:
-  - build
-  - deploy
-  - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:devopstools_final.md#L1232
-  needs_review: true
 - id: agentmemory
   name: AGENTMEMORY
   summary: Persistent memory layer for AI coding agents.
@@ -481,6 +453,37 @@
   sources:
   - legacy:devopstools_final.md#L1234
   needs_review: true
+- id: deepagents
+  name: Deep Agents
+  summary: Agent harness with tool execution, context management, persistence, and sandbox integration
+    built on LangGraph.
+  categories:
+  - mlops-llmops-ai-infrastructure
+  use_when:
+  - You are building long-running tool-using agents and need explicit state, approval, and execution-environment
+    controls.
+  avoid_when:
+  - You only need a simple model call or cannot operate and secure the selected model and sandbox backends.
+  maturity: growing
+  repository_url: https://github.com/langchain-ai/deepagents
+  repository_archived: false
+  documentation_url: https://github.com/langchain-ai/deepagents/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/langchain-ai/deepagents
+  - https://github.com/langchain-ai/deepagents/blob/main/LICENSE
+  - https://github.com/langchain-ai/deepagents/blob/main/README.md
+  roles:
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - test
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: deepeval
   name: DeepEval
   summary: Local-first framework for evaluating and regression-testing LLM applications, agents, RAG pipelines,
@@ -1598,6 +1601,39 @@
   sources:
   - legacy:devopstools_final.md#L1204
   needs_review: true
+- id: llmrouter
+  name: LLMRouter
+  summary: Framework for training, evaluating, and serving model-routing policies under quality and cost
+    objectives.
+  categories:
+  - mlops-llmops-ai-infrastructure
+  use_when:
+  - You operate multiple models and need reproducible routing experiments before deploying a selection
+    policy.
+  avoid_when:
+  - You need a turnkey supported gateway without training data, evaluation, and routing-policy maintenance.
+  maturity: emerging
+  official_url: https://ulab-uiuc.github.io/LLMRouter/
+  repository_url: https://github.com/ulab-uiuc/LLMRouter
+  repository_archived: false
+  documentation_url: https://github.com/ulab-uiuc/LLMRouter/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/ulab-uiuc/LLMRouter
+  - https://github.com/ulab-uiuc/LLMRouter/blob/main/LICENSE
+  - https://ulab-uiuc.github.io/LLMRouter/
+  - https://github.com/ulab-uiuc/LLMRouter/blob/main/README.md
+  roles:
+  - mlops-ai-infrastructure-engineer
+  lifecycle_stages:
+  - build
+  - test
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: lm-studio
   name: LM Studio
   summary: Desktop app for running local LLMs.

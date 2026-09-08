@@ -235,6 +235,34 @@
   - legacy:8_Chaos-Engineering/README.md#L14
   - legacy:devopstools_final.md#L1165
   needs_review: true
+- id: hyperfine
+  name: hyperfine
+  summary: CLI benchmark runner for repeated command timing and statistical comparison.
+  categories:
+  - chaos-performance-engineering
+  use_when:
+  - You compare operational commands or build steps and can control warmup, caches, and environment noise.
+  avoid_when:
+  - You need distributed load generation or detailed application profiling rather than elapsed-command
+    measurements.
+  maturity: established
+  repository_url: https://github.com/sharkdp/hyperfine
+  repository_archived: false
+  documentation_url: https://github.com/sharkdp/hyperfine/blob/master/README.md
+  license_spdx: MIT OR Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/sharkdp/hyperfine
+  - https://github.com/sharkdp/hyperfine/blob/master/LICENSE-APACHE
+  - https://github.com/sharkdp/hyperfine/blob/master/README.md
+  roles:
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - optimize
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: iperf
   name: iPerf
   summary: Network performance measurement tool.
@@ -410,6 +438,33 @@
   - legacy:1_Foundational-Skills/README.md#L58
   - legacy:devopstools_final.md#L139
   needs_review: true
+- id: oha
+  name: oha
+  summary: HTTP load-generation CLI with an interactive results display.
+  categories:
+  - chaos-performance-engineering
+  use_when:
+  - You run controlled endpoint load tests and can choose suitable concurrency and rate limits.
+  avoid_when:
+  - You need browser-level workflows or coordinated distributed load generation.
+  maturity: growing
+  repository_url: https://github.com/hatoo/oha
+  repository_archived: false
+  documentation_url: https://github.com/hatoo/oha/blob/master/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/hatoo/oha
+  - https://github.com/hatoo/oha/blob/master/LICENSE
+  - https://github.com/hatoo/oha/blob/master/README.md
+  roles:
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - optimize
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: pumba
   name: Pumba
   summary: Chaos testing, network emulation, and stress testing tool for containers.

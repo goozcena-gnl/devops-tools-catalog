@@ -327,6 +327,36 @@
   - legacy:1_Foundational-Skills/README.md#L9
   - legacy:devopstools_final.md#L87
   needs_review: true
+- id: gogs
+  name: Gogs
+  summary: Self-hosted Git service distributed as a lightweight application.
+  categories:
+  - source-control-repository-management
+  use_when:
+  - You need a small self-managed Git forge and can maintain its database, backups, and authentication
+    configuration.
+  avoid_when:
+  - You need a broader integrated delivery platform or managed availability with minimal server administration.
+  maturity: established
+  official_url: https://gogs.io/
+  repository_url: https://github.com/gogs/gogs
+  repository_archived: false
+  documentation_url: https://github.com/gogs/gogs/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/gogs/gogs
+  - https://github.com/gogs/gogs/blob/main/LICENSE
+  - https://gogs.io/
+  - https://github.com/gogs/gogs/blob/main/README.md
+  roles:
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: learn-git-branching
   name: Learn Git Branching
   summary: Interactive Git learning tool.

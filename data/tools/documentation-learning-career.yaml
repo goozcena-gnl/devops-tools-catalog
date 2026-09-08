@@ -15,6 +15,33 @@
   verified_on: '2026-08-29'
   sources: [https://affine.pro/, https://github.com/toeverything/AFFiNE, https://github.com/toeverything/AFFiNE/tree/canary/packages/backend/server/LICENSE]
   needs_review: false
+- id: anthropic-skills
+  name: Anthropic Skills examples
+  summary: Reference skill implementations illustrating coding-agent workflows, testing, and artifact
+    handling.
+  categories:
+  - documentation-learning-career
+  use_when:
+  - You develop agent integrations and need concrete examples to inspect and adapt under their individual
+    licences.
+  avoid_when:
+  - You need one permissive licence for the entire collection; document skills use separate source-available
+    terms.
+  maturity: growing
+  repository_url: https://github.com/anthropics/skills
+  repository_archived: false
+  documentation_url: https://github.com/anthropics/skills/blob/main/README.md
+  license_model: documentation
+  sources:
+  - https://github.com/anthropics/skills
+  - https://github.com/anthropics/skills/blob/main/README.md
+  roles:
+  - devops-engineer
+  lifecycle_stages:
+  - learn
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: asciinema
   name: asciinema
   summary: Terminal session recorder and player that stores text-based cast files.
@@ -457,6 +484,27 @@
   sources:
   - legacy:devopstools_final.md#L1284
   needs_review: true
+- id: devops-bulletin
+  name: DevOps Bulletin
+  summary: Newsletter collecting DevOps, cloud, security, and automation news and tutorials.
+  categories:
+  - documentation-learning-career
+  use_when:
+  - You want a maintained operational-engineering reading list for discovering tools and practices.
+  avoid_when:
+  - You need primary technical evidence or a structured certification curriculum.
+  maturity: established
+  official_url: https://www.devopsbulletin.com/
+  license_model: documentation
+  sources:
+  - https://www.devopsbulletin.com/
+  roles:
+  - devops-engineer
+  lifecycle_stages:
+  - learn
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: devops-community
   name: DevOps Community
   summary: Community resources and events.
@@ -638,6 +686,29 @@
   - legacy:1_Foundational-Skills/README.md#L46
   - legacy:devopstools_final.md#L126
   needs_review: true
+- id: devopsish
+  name: DevOps'ish
+  summary: Maintained newsletter covering DevOps, cloud-native operations, open source, and related industry
+    developments.
+  categories:
+  - documentation-learning-career
+  use_when:
+  - You want a regular discovery feed for operational technology changes and will verify technical claims
+    upstream.
+  avoid_when:
+  - You need authoritative product documentation or an operational runbook rather than editorial coverage.
+  maturity: established
+  official_url: https://devopsish.com/
+  license_model: documentation
+  sources:
+  - https://devopsish.com/
+  roles:
+  - devops-engineer
+  lifecycle_stages:
+  - learn
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: docmost
   name: Docmost
   summary: Collaborative wiki and documentation platform with real-time editing, spaces, permissions,
@@ -1063,6 +1134,28 @@
   sources:
   - legacy:devopstools_final.md#L647
   needs_review: true
+- id: kubernetes-contributors
+  name: Kubernetes Contributors
+  summary: Official contributor documentation and community entry point for the Kubernetes project.
+  categories:
+  - documentation-learning-career
+  use_when:
+  - You maintain Kubernetes integrations or contribute upstream and need development, review, and governance
+    guidance.
+  avoid_when:
+  - You need end-user cluster administration documentation or a managed support contract.
+  maturity: established
+  official_url: https://www.kubernetes.dev/
+  license_model: documentation
+  sources:
+  - https://www.kubernetes.dev/
+  roles:
+  - devops-engineer
+  lifecycle_stages:
+  - learn
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: kubernetes-de-a-z
   name: Kubernetes de A à Z
   summary: Kubernetes learning repository.
@@ -1231,6 +1324,35 @@
   sources:
   - legacy:devopstools_final.md#L648
   needs_review: true
+- id: linux-dsoxlab-training
+  name: Linux dsoxlab training
+  summary: Linux administration and hardening lab content for RHCSA and LFCS practice using the separate
+    dsoxlab CLI.
+  categories:
+  - documentation-learning-career
+  use_when:
+  - You want guided Linux administration exercises with automated checks and can provision the required
+    lab environments.
+  avoid_when:
+  - You need a production management tool or training that runs without the separate dsoxlab runner and
+    its prerequisites.
+  maturity: emerging
+  repository_url: https://github.com/stephrobert/linux-dsoxlab-training
+  repository_archived: false
+  documentation_url: https://github.com/stephrobert/linux-dsoxlab-training/blob/main/README.md
+  license_spdx: CC-BY-4.0
+  license_model: documentation
+  sources:
+  - https://github.com/stephrobert/linux-dsoxlab-training
+  - https://github.com/stephrobert/linux-dsoxlab-training/blob/main/LICENSE
+  - https://github.com/stephrobert/linux-dsoxlab-training/blob/main/README.md
+  roles:
+  - devops-engineer
+  lifecycle_stages:
+  - learn
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: microsoft-learn
   name: Microsoft Learn
   summary: Free training from Microsoft.
@@ -1369,6 +1491,27 @@
   sources:
   - legacy:devopstools_final.md#L1260
   needs_review: true
+- id: opsquiz
+  name: OpsQuiz
+  summary: Scenario-based quizzes covering Kubernetes, Linux, cloud, CI/CD, and related operational topics.
+  categories:
+  - documentation-learning-career
+  use_when:
+  - You want supplementary interview or knowledge-gap practice with immediate explanations.
+  avoid_when:
+  - You need accredited certification or authoritative documentation for production decisions.
+  maturity: emerging
+  official_url: https://opsquiz.org/
+  license_model: documentation
+  sources:
+  - https://opsquiz.org/
+  roles:
+  - devops-engineer
+  lifecycle_stages:
+  - learn
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: reference-cheatsheets-zip
   name: Reference (cheatsheets.zip)
   summary: Open-source cheat sheets and quick references for developers; formerly served from quickref.me.
@@ -1422,6 +1565,27 @@
   verified_on: '2026-08-21'
   sources:
   - https://www.root-me.org/
+  needs_review: false
+- id: selfhst
+  name: selfh.st
+  summary: Publication covering self-hosted software releases, projects, and operational community news.
+  categories:
+  - documentation-learning-career
+  use_when:
+  - You maintain self-hosted services or homelabs and want a regular discovery source for project changes.
+  avoid_when:
+  - You need vendor-supported guidance or security validation of every featured project.
+  maturity: established
+  official_url: https://selfh.st/
+  license_model: documentation
+  sources:
+  - https://selfh.st/
+  roles:
+  - devops-engineer
+  lifecycle_stages:
+  - learn
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: sysadmin-to-sre-roadmap
   name: SysAdmin to SRE Roadmap
@@ -1531,6 +1695,30 @@
   sources:
   - legacy:devopstools_final.md#L1295
   needs_review: true
+- id: ubuntu-fr
+  name: Ubuntu-fr community documentation
+  summary: French-speaking Ubuntu community resource with documentation and user support forums.
+  categories:
+  - documentation-learning-career
+  use_when:
+  - You need French-language Ubuntu administration references and community troubleshooting assistance.
+  avoid_when:
+  - You need Canonical-authoritative release or support commitments; community guidance must be checked
+    against upstream documentation.
+  maturity: established
+  official_url: https://www.ubuntu-fr.org/
+  documentation_url: https://doc.ubuntu-fr.org/
+  license_model: documentation
+  sources:
+  - https://www.ubuntu-fr.org/
+  - https://doc.ubuntu-fr.org/
+  roles:
+  - devops-engineer
+  lifecycle_stages:
+  - learn
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: udemy-cka-course
   name: Udemy CKA Course
   summary: Online course for Kubernetes certification.
