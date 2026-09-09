@@ -37,7 +37,7 @@
 - [DEV Community #devops](https://dev.to/t/devops) — DEV Community tag feed for DevOps articles, tutorials, and discussions.
 - [DevOps Community](https://www.devopscommunity.in) — Community resources and events.
 - [DevOps Exercises](https://github.com/bregman-arie/devops-exercises) — DevOps interview questions and exercises.
-- [DevOps Interview Questions](https://interview.devopscommunity.in) — Curated DevOps interview questions.
+- [DevOps Interview Questions](https://github.com/rohitg00/devops-interview-questions) — Curated DevOps interview questions.
 - [DevOps Projects](https://github.com/ophircloud/DevOps-Projects) — Hands-on DevOps project ideas/roadmap for building a portfolio.
 - [DevOps Resources](https://github.com/bregman-arie/devops-resources) — Comprehensive DevOps learning resources.
 - [DevOpsCube Kubernetes Tutorials (Beginners)](https://devopscube.com/kubernetes-tutorials-beginners) — Beginner-friendly Kubernetes learning resources.

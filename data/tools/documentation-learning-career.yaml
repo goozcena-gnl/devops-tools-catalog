@@ -519,7 +519,10 @@
 - id: devops-interview-questions
   name: DevOps Interview Questions
   summary: Curated DevOps interview questions.
-  official_url: https://interview.devopscommunity.in
+  official_url: https://github.com/rohitg00/devops-interview-questions
+  repository_url: https://github.com/rohitg00/devops-interview-questions
+  repository_archived: false
+  documentation_url: https://github.com/rohitg00/devops-interview-questions/blob/main/README.md
   categories:
   - documentation-learning-career
   subcategories:
@@ -540,10 +543,13 @@
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-09'
   sources:
   - legacy:1_Foundational-Skills/README.md#L48
   - legacy:devopstools_final.md#L128
+  - https://interview.devopscommunity.in/
+  - https://github.com/rohitg00/devops-interview-questions
+  - https://github.com/rohitg00/devops-interview-questions/blob/main/README.md
   needs_review: true
 - id: devops-projects
   name: DevOps Projects

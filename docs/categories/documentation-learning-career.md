@@ -345,7 +345,7 @@ Curated DevOps interview questions.
 
 - Memorizing answers without understanding underlying concepts.
 
-[Official site](https://interview.devopscommunity.in)
+[Official site](https://github.com/rohitg00/devops-interview-questions) · [Documentation](https://github.com/rohitg00/devops-interview-questions/blob/main/README.md) · [Source repository](https://github.com/rohitg00/devops-interview-questions)
 
 ### DevOps Projects
 

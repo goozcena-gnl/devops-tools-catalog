@@ -83,7 +83,7 @@
 | [DEV Community #devops](https://dev.to/t/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOps Community](https://www.devopscommunity.in) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOps Exercises](https://github.com/bregman-arie/devops-exercises) | Documentation, learning and career resources | documentation | needs-review |
-| [DevOps Interview Questions](https://interview.devopscommunity.in) | Documentation, learning and career resources | documentation | needs-review |
+| [DevOps Interview Questions](https://github.com/rohitg00/devops-interview-questions) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOps Projects](https://github.com/ophircloud/DevOps-Projects) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOps Resources](https://github.com/bregman-arie/devops-resources) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOpsCube Kubernetes Tutorials (Beginners)](https://devopscube.com/kubernetes-tutorials-beginners) | Documentation, learning and career resources | documentation | needs-review |
