@@ -1400,6 +1400,7 @@
   - https://github.com/hcavarsan/kftray/blob/main/LICENSE.md
   - https://kftray.app/
   - https://github.com/hcavarsan/kftray/blob/main/README.md
+  - https://github.com/hcavarsan/kftray/blob/main/crates/kftray-tauri/Cargo.toml
   roles:
   - kubernetes-engineer
   - platform-engineer
@@ -1407,8 +1408,9 @@
   - develop
   - operate
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-09'
   needs_review: false
+  license_spdx: GPL-3.0-only
 - id: khi-kubernetes-history-inspector
   name: KHI (Kubernetes History Inspector)
   summary: Visualize and inspect Kubernetes cluster event history.
@@ -3961,20 +3963,21 @@
   repository_url: https://github.com/nklmilojevic/sofka
   repository_archived: false
   documentation_url: https://github.com/nklmilojevic/sofka/blob/main/README.md
-  license_spdx: Apache-2.0
+  license_spdx: MIT OR Apache-2.0
   license_model: oss
   sources:
   - https://github.com/nklmilojevic/sofka
   - https://github.com/nklmilojevic/sofka/blob/main/LICENSE-APACHE
   - https://sofka.rs/
   - https://github.com/nklmilojevic/sofka/blob/main/README.md
+  - https://github.com/nklmilojevic/sofka/blob/main/LICENSE-MIT
   roles:
   - kubernetes-engineer
   - platform-engineer
   lifecycle_stages:
   - operate
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-09'
   needs_review: false
 - id: tarook
   name: Tarook

@@ -624,12 +624,13 @@
   needs_review: true
 - id: steampipe
   name: Steampipe
-  summary: SQL query tooling for cloud APIs, with AGPL upstream source and vendor distributions under
-    separate commercial terms.
+  summary: AGPL source project for querying cloud APIs with SQL; Turbot-built binaries and hosted services
+    use separate commercial terms.
   categories:
   - cloud-platforms-management
   use_when:
-  - You need ad hoc infrastructure inventory or compliance queries across API-backed services using SQL.
+  - You need SQL-based infrastructure inventory or compliance queries and can build the AGPL source distribution,
+    or separately accept Turbot distribution terms.
   avoid_when:
   - You need a continuously reconciled asset database or assume upstream AGPL terms also govern Turbot
     binaries and services.
@@ -638,7 +639,7 @@
   repository_url: https://github.com/turbot/steampipe
   repository_archived: false
   documentation_url: https://github.com/turbot/steampipe/blob/develop/README.md
-  license_model: commercial
+  license_model: oss
   sources:
   - https://github.com/turbot/steampipe
   - https://github.com/turbot/steampipe/blob/develop/LICENSE
@@ -652,8 +653,9 @@
   - secure
   commercial_offering: true
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-09'
   needs_review: false
+  license_spdx: AGPL-3.0-only
 - id: virtana
   name: Virtana
   summary: Hybrid cloud management.

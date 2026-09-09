@@ -241,7 +241,7 @@ Kubernetes-native IaC control plane.
 **Model:** Oss<br>
 **Status:** Active
 
-SDK and templates for implementing Crossplane composition functions in C#.
+C# implementation toolkit for Crossplane composition functions, including templates, model generation, and a gRPC function host.
 
 **Use when**
 

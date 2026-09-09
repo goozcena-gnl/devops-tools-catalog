@@ -367,7 +367,8 @@
   needs_review: false
 - id: crossplane-function-sdk-csharp
   name: Crossplane function SDK for C#
-  summary: SDK and templates for implementing Crossplane composition functions in C#.
+  summary: C# implementation toolkit for Crossplane composition functions, including templates, model
+    generation, and a gRPC function host.
   categories:
   - infrastructure-as-code
   use_when:
@@ -375,7 +376,7 @@
     and generated models.
   avoid_when:
   - You can use an existing composition function or do not support the documented Crossplane version.
-  maturity: growing
+  maturity: emerging
   repository_url: https://github.com/IvanJosipovic/function-sdk-csharp
   repository_archived: false
   documentation_url: https://github.com/IvanJosipovic/function-sdk-csharp/blob/alpha/README.md
@@ -391,7 +392,7 @@
   - build
   - deploy
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-09'
   needs_review: false
 - id: crossplane-upjet
   name: Upjet

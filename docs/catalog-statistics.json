@@ -2,11 +2,11 @@
   "canonical_records": 1423,
   "categories": 30,
   "license_models": {
-    "commercial": 46,
+    "commercial": 44,
     "documentation": 108,
     "free-saas": 3,
-    "open-core": 103,
-    "oss": 900,
+    "open-core": 104,
+    "oss": 901,
     "source-available": 21,
     "unknown": 242
   },

@@ -446,14 +446,14 @@ European cloud provider offering compute/storage services.
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** Cloud Engineer<br>
-**Model:** Commercial<br>
+**Model:** Oss<br>
 **Status:** Active
 
-SQL query tooling for cloud APIs, with AGPL upstream source and vendor distributions under separate commercial terms.
+AGPL source project for querying cloud APIs with SQL; Turbot-built binaries and hosted services use separate commercial terms.
 
 **Use when**
 
-- You need ad hoc infrastructure inventory or compliance queries across API-backed services using SQL.
+- You need SQL-based infrastructure inventory or compliance queries and can build the AGPL source distribution, or separately accept Turbot distribution terms.
 
 **Consider alternatives when**
 

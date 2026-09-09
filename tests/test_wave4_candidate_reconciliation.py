@@ -167,14 +167,14 @@ def test_wave4_feature_and_product_family_boundaries(rows, catalogue) -> None:
 
 
 def test_wave4_licences_do_not_cross_product_boundaries(rows, catalogue) -> None:
-    assert rows[22]["license_model"] == "commercial"
-    assert not rows[22]["license_spdx"]
+    assert rows[22]["license_model"] == "oss"
+    assert rows[22]["license_spdx"] == "AGPL-3.0-only"
     assert rows[49]["license_model"] == "commercial"
     assert not rows[49]["license_spdx"]
     assert rows[50]["license_spdx"] == "MIT"
     assert rows[49]["resulting_catalog_id"] != rows[50]["resulting_catalog_id"]
-    assert rows[31]["license_model"] == "commercial"
-    assert not rows[31]["license_spdx"]
+    assert rows[31]["license_model"] == "open-core"
+    assert rows[31]["license_spdx"] == "MIT"
     assert rows[77]["license_model"] == "commercial"
     assert rows[78]["license_model"] == "source-available"
     assert rows[83]["license_model"] == rows[102]["license_model"] == "open-core"
@@ -207,9 +207,10 @@ def test_wave4_uncertain_candidates_are_held_without_new_records(
 ) -> None:
     for index in (98, 150):
         assert rows[index]["decision"] == "NEEDS_REVIEW"
-        assert rows[index]["license_model"] == "unknown"
         assert rows[index]["needs_review"] == "true"
         assert not rows[index]["resulting_catalog_id"]
+    assert rows[98]["license_model"] == "commercial"
+    assert rows[150]["license_model"] == "unknown"
     assert "portkube" not in catalogue
     assert "kubiya" not in catalogue
 
@@ -239,3 +240,48 @@ def test_wave4_tracking_urls_and_ambiguities_do_not_create_aliases(rows) -> None
     assert rows[87]["input_url"] not in aliases
     assert rows[121]["input_url"] not in aliases
     assert rows[129]["input_url"] not in aliases
+
+
+def test_wave4_altcha_keeps_usable_core_and_commercial_boundary(catalogue) -> None:
+    tool = catalogue["altcha"]
+    assert tool["repository_url"] == "https://github.com/altcha-org/altcha"
+    assert tool["repository_archived"] is False
+    assert tool["commercial_offering"] is True
+    assert (
+        "https://github.com/altcha-org/altcha/blob/main/LICENSE.txt" in tool["sources"]
+    )
+    assert "server-side verification" in " ".join(tool["use_when"])
+    assert "commercial Sentinel and Cloud" in " ".join(tool["avoid_when"])
+
+
+def test_wave4_steampipe_source_does_not_relicense_vendor_binaries(catalogue) -> None:
+    tool = catalogue["steampipe"]
+    assert tool["repository_url"] == "https://github.com/turbot/steampipe"
+    assert tool["commercial_offering"] is True
+    assert "AGPL source distribution" in " ".join(tool["use_when"])
+    assert "Turbot binaries and services" in " ".join(tool["avoid_when"])
+    assert "https://turbot.com/open-source" in tool["sources"]
+
+
+def test_wave4_authoritative_licence_grants_are_recorded(catalogue) -> None:
+    expected = {
+        "lightpanda": "AGPL-3.0-or-later",
+        "mariadb-server": "GPL-2.0-only",
+        "crun": "GPL-2.0-or-later",
+        "sniffglue": "GPL-3.0-or-later",
+        "kftray": "GPL-3.0-only",
+        "sofka": "MIT OR Apache-2.0",
+        "openobserve": "AGPL-3.0-only",
+    }
+    for tool_id, spdx in expected.items():
+        assert catalogue[tool_id]["license_spdx"] == spdx
+
+
+def test_wave4_platform_generation_and_function_host_scope(catalogue, rows) -> None:
+    generator = catalogue["kubernetes-crd-model-gen"]
+    assert "CLI" in generator["summary"]
+    sdk = catalogue["crossplane-function-sdk-csharp"]
+    assert "gRPC function host" in sdk["summary"]
+    assert sdk["maturity"] == "emerging"
+    assert sdk["status"] == "active"
+    assert rows[149]["decision"] == rows[151]["decision"] == "SKIP_OUT_OF_SCOPE"

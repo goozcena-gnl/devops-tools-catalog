@@ -88,20 +88,25 @@
   needs_review: false
 - id: altcha
   name: ALTCHA
-  summary: Bot-protection product family offering managed Cloud and self-hosted Sentinel deployments.
+  summary: Bot-protection family with a self-hosted MIT-licensed proof-of-work core and commercial Sentinel
+    and Cloud capabilities.
   categories:
   - application-cloud-security
   use_when:
-  - You need browser bot and spam protection and can choose a supported managed or self-hosted commercial
-    deployment.
+  - You need bot protection and can operate the open-source challenge endpoint and server-side verification,
+    or select commercial Sentinel or Cloud capabilities.
   avoid_when:
-  - You expect the licence of an open-source widget or SDK to cover the complete Sentinel or hosted product.
+  - You need protection without browser-side JavaScript or assume the MIT core licence includes commercial
+    Sentinel and Cloud capabilities.
   maturity: growing
   official_url: https://altcha.org/
-  license_model: commercial
+  license_model: open-core
   sources:
   - https://altcha.org/
   - https://altcha.org/pricing/
+  - https://github.com/altcha-org/altcha
+  - https://github.com/altcha-org/altcha/blob/main/LICENSE.txt
+  - https://github.com/altcha-org/altcha/blob/main/README.md
   roles:
   - devsecops-engineer
   lifecycle_stages:
@@ -109,8 +114,12 @@
   - test
   commercial_offering: true
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-09'
   needs_review: false
+  license_spdx: MIT
+  repository_url: https://github.com/altcha-org/altcha
+  repository_archived: false
+  documentation_url: https://github.com/altcha-org/altcha/blob/main/README.md
 - id: anubis
   name: Anubis
   summary: Reverse proxy middleware that uses proof-of-work challenges to reduce automated web scraping
@@ -4339,14 +4348,16 @@
   - https://github.com/kpcyrd/sniffglue
   - https://github.com/kpcyrd/sniffglue/blob/main/LICENSE
   - https://github.com/kpcyrd/sniffglue/blob/main/README.md
+  - https://github.com/kpcyrd/sniffglue/blob/main/Cargo.toml
   roles:
   - devsecops-engineer
   lifecycle_stages:
   - secure
   - operate
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-09'
   needs_review: false
+  license_spdx: GPL-3.0-or-later
 - id: snort
   name: Snort
   summary: Open-source network intrusion detection and prevention system (IDS/IPS).

@@ -50,7 +50,6 @@
 - [cargo-binstall](https://github.com/cargo-bins/cargo-binstall) — Installer for prebuilt Rust package executables with source-build fallback.
 - [cargo-chef](https://github.com/LukeMathWalker/cargo-chef) — Tool for separating Rust dependency builds into cacheable container-build stages.
 - [cargo-deny](https://github.com/EmbarkStudios/cargo-deny) — Cargo dependency policy checker for advisories, licences, sources, and banned packages.
-- [cargo-dist](https://github.com/axodotdev/cargo-dist) — Release automation for building and distributing application binaries and installers.
 - [cargo-vet](https://mozilla.github.io/cargo-vet/) — Tool for recording and enforcing human audits of Rust dependencies.
 - [cdk8s](https://cdk8s.io) — Define Kubernetes applications and reusable abstractions in general-purpose programming languages and synthesize them to YAML.
 - [cek](https://github.com/bschaatsbergen/cek) — Inspect OCI image filesystems and layers without running containers.
@@ -66,7 +65,7 @@
 - [Concourse](https://concourse-ci.org) — CI/CD system with declarative pipelines.
 - [ContainerYard](https://github.com/mcmah309/containeryard) — Tool for composing reusable modules into generated Containerfiles.
 - [Crossplane](https://www.crossplane.io) — Kubernetes-native IaC control plane.
-- [Crossplane function SDK for C#](https://github.com/IvanJosipovic/function-sdk-csharp) — SDK and templates for implementing Crossplane composition functions in C#.
+- [Crossplane function SDK for C#](https://github.com/IvanJosipovic/function-sdk-csharp) — C# implementation toolkit for Crossplane composition functions, including templates, model generation, and a gRPC function host.
 - [Cucumber](https://cucumber.io/) — Behavior-driven development tooling that executes executable specifications written in Gherkin.
 - [Cypress](https://www.cypress.io) — End-to-end testing for web applications.
 - [Dagger](https://dagger.io) — CI/CD as code toolkit.
@@ -74,6 +73,7 @@
 - [DeepSpeed](https://www.deepspeed.ai) — Deep learning optimization library for large-scale model training and inference.
 - [Dependency-Track](https://dependencytrack.org) — OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
 - [Devtron](https://devtron.ai) — AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and day-2 operations.
+- [dist (cargo-dist)](https://github.com/axodotdev/cargo-dist) — Release automation for building and distributing application binaries and installers.
 - [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal container images for secure deployments.
 - [dive](https://github.com/wagoodman/dive) — Command-line and terminal user interface for inspecting image layers and their contribution to container image contents.
 - [Docker](https://www.docker.com) — Product ecosystem for developing, building, distributing, and running application containers.
@@ -145,7 +145,7 @@
 - [Kube Copilot](https://github.com/feiskyer/kube-copilot) — AI assistant for Kubernetes operations.
 - [Kubernetes MCP Server](https://github.com/containers/kubernetes-mcp-server) — Go-native MCP server for Kubernetes and OpenShift with direct API server integration, multi-cluster support, Helm/Tekton toolsets, and no external CLI dependencies (Apache-2.0).
 - [kubernetes-skill for Claude Code](https://lukasniessen.github.io/kubernetes-skill) — Claude Code agent skill for interacting with Kubernetes clusters.
-- [KubernetesCRDModelGen](https://github.com/IvanJosipovic/KubernetesCRDModelGen) — Generator for C# models representing Kubernetes custom resources.
+- [KubernetesCRDModelGen](https://github.com/IvanJosipovic/KubernetesCRDModelGen) — CLI and build-time generator for C# models from Kubernetes custom-resource definitions.
 - [Kubesearch](https://kubesearch.dev) — Search engine for Helm charts and Kubernetes packages.
 - [kURL](https://kurl.sh/) — Toolkit for packaging customized offline-capable Kubernetes installers for software appliances.
 - [KusionStack](https://kusionstack.io) — Infrastructure automation platform.

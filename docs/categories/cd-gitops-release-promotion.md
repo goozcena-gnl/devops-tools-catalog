@@ -159,25 +159,6 @@ Extensible web server and reverse proxy with automatic HTTPS.
 
 [Official site](https://caddyserver.com) · [Source repository](https://github.com/caddyserver/caddy)
 
-### cargo-dist
-
-**Categories:** CD, GitOps, release and promotion<br>
-**Roles:** Release Engineer<br>
-**Model:** Oss<br>
-**Status:** Active
-
-Release automation for building and distributing application binaries and installers.
-
-**Use when**
-
-- You publish command-line applications and want generated release workflows across target platforms.
-
-**Consider alternatives when**
-
-- You need fully bespoke packaging or cannot review and maintain generated CI workflows.
-
-[Documentation](https://github.com/axodotdev/cargo-dist/blob/main/README.md) · [Source repository](https://github.com/axodotdev/cargo-dist)
-
 ### Convox
 
 **Categories:** CD, GitOps, release and promotion<br>
@@ -215,6 +196,25 @@ Self-hostable application platform for deploying code, containers, databases, an
 - You require a hyperscale managed platform or prefer direct orchestration through Kubernetes or infrastructure as code.
 
 [Official site](https://coolify.io/) · [Documentation](https://coolify.io/docs/) · [Source repository](https://github.com/coollabsio/coolify)
+
+### dist (cargo-dist)
+
+**Categories:** CD, GitOps, release and promotion<br>
+**Roles:** Release Engineer<br>
+**Model:** Oss<br>
+**Status:** Active
+
+Release automation for building and distributing application binaries and installers.
+
+**Use when**
+
+- You publish command-line applications and want generated release workflows across target platforms.
+
+**Consider alternatives when**
+
+- You need fully bespoke packaging or cannot review and maintain generated CI workflows.
+
+[Documentation](https://github.com/axodotdev/cargo-dist/blob/main/README.md) · [Source repository](https://github.com/axodotdev/cargo-dist)
 
 ### Dokku
 

@@ -705,7 +705,7 @@
 - [Stakpak](https://stakpak.dev) — Autonomous AI agent for production operations running 24/7 on your machines to auto-heal incidents, manage costs, and monitor infrastructure (Apache-2.0).
 - [Starship](https://starship.rs/) — Configurable cross-shell prompt showing repository and runtime context.
 - [Stash](https://stash.run) — Backup operator for Kubernetes.
-- [Steampipe](https://steampipe.io/) — SQL query tooling for cloud APIs, with AGPL upstream source and vendor distributions under separate commercial terms.
+- [Steampipe](https://steampipe.io/) — AGPL source project for querying cloud APIs with SQL; Turbot-built binaries and hosted services use separate commercial terms.
 - [strace-tui](https://github.com/Rodrigodd/strace-tui) — Terminal UI for visualizing and exploring `strace` output.
 - [Stratoshark](https://stratoshark.org/) — System-call and log analyzer from the Wireshark project for inspecting captured system activity.
 - [stress](https://github.com/resurrecting-open-source-projects/stress) — Simple workload generator for POSIX systems.

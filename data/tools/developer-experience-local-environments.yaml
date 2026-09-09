@@ -1314,11 +1314,11 @@
   needs_review: false
 - id: kubernetes-crd-model-gen
   name: KubernetesCRDModelGen
-  summary: Generator for C# models representing Kubernetes custom resources.
+  summary: CLI and build-time generator for C# models from Kubernetes custom-resource definitions.
   categories:
   - developer-experience-local-environments
   use_when:
-  - You build .NET Kubernetes integrations and need generated CRD types as part of a maintained controller
+  - Your platform team needs a repeatable CLI or build-time CRD-to-C# generation step for its controller
     toolchain.
   avoid_when:
   - You only operate existing resources or can use established client models without another generation
@@ -1341,7 +1341,7 @@
   - develop
   - build
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-09'
   needs_review: false
 - id: kubetable
   name: KubeTable

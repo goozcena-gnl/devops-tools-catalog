@@ -296,8 +296,9 @@
   - deploy
   - operate
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-09'
   needs_review: false
+  license_spdx: GPL-2.0-only
 - id: meilisearch
   name: Meilisearch
   summary: Fast, typo-tolerant search and AI retrieval engine.

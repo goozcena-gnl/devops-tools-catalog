@@ -33,7 +33,6 @@
 | [cargo-binstall](https://github.com/cargo-bins/cargo-binstall) | Artifact and package management | oss | active |
 | [cargo-chef](https://github.com/LukeMathWalker/cargo-chef) | CI, build and testing | oss | active |
 | [cargo-deny](https://github.com/EmbarkStudios/cargo-deny) | Software supply-chain security | oss | active |
-| [cargo-dist](https://github.com/axodotdev/cargo-dist) | CD, GitOps, release and promotion | oss | active |
 | [cargo-nextest](https://nexte.st/) | CI, build and testing | oss | active |
 | [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) | CI, build and testing | oss | active |
 | [cargo-vet](https://mozilla.github.io/cargo-vet/) | Software supply-chain security | oss | active |
@@ -53,6 +52,7 @@
 | [DeepEval](https://deepeval.com/) | MLOps, LLMOps and AI infrastructure, CI, build and testing | open-core | active |
 | [Dependency-Track](https://dependencytrack.org) | Software supply-chain security, Application and cloud security | oss | active |
 | [Devtron](https://devtron.ai) | CI, build and testing | oss | needs-review |
+| [dist (cargo-dist)](https://github.com/axodotdev/cargo-dist) | CD, GitOps, release and promotion | oss | active |
 | [dive](https://github.com/wagoodman/dive) | Containers and image tooling | oss | active |
 | [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | unknown | needs-review |
 | [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | unknown | needs-review |

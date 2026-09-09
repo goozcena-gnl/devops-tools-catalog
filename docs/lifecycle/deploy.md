@@ -113,7 +113,7 @@
 - [CRIU](https://criu.org/Main_Page) — Checkpoint/Restore In Userspace for Linux containers and processes.
 - [CronJob Guardian](https://illeniumstudios.github.io/cronjob-guardian) — Kubernetes operator for monitoring CronJobs with SLA tracking, dead-man's switch detection, intelligent alerting, and a built-in dashboard.
 - [Crossplane](https://www.crossplane.io) — Kubernetes-native IaC control plane.
-- [Crossplane function SDK for C#](https://github.com/IvanJosipovic/function-sdk-csharp) — SDK and templates for implementing Crossplane composition functions in C#.
+- [Crossplane function SDK for C#](https://github.com/IvanJosipovic/function-sdk-csharp) — C# implementation toolkit for Crossplane composition functions, including templates, model generation, and a gRPC function host.
 - [Crossplane Provider Upjet](https://github.com/upbound/upjet) — Build Crossplane providers from Terraform.
 - [crossview](https://github.com/crossplane-contrib/crossview) — Standard UI dashboard for Crossplane resources.
 - [crun](https://github.com/containers/crun) — OCI container runtime implemented in C for running Linux containers.

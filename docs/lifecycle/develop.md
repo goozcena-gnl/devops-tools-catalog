@@ -120,7 +120,7 @@
 - [kitty](https://sw.kovidgoyal.net/kitty/) — Cross-platform GPU-accelerated terminal emulator with extensible keyboard-driven workflows.
 - [kubara](https://kubara.io) — Platform engineering framework for building internal platforms.
 - [kubernetes-sigs/bom](https://kubernetes-sigs.github.io/bom) — SBOM generation tooling for Kubernetes projects.
-- [KubernetesCRDModelGen](https://github.com/IvanJosipovic/KubernetesCRDModelGen) — Generator for C# models representing Kubernetes custom resources.
+- [KubernetesCRDModelGen](https://github.com/IvanJosipovic/KubernetesCRDModelGen) — CLI and build-time generator for C# models from Kubernetes custom-resource definitions.
 - [KubeTable](https://kubetable.dev/) — Local-first desktop database client that discovers and connects to databases running in Kubernetes clusters.
 - [Learn Git Branching](https://learngitbranching.js.org) — Interactive Git learning tool.
 - [Linux Foundation Training](https://training.linuxfoundation.org?_sft_product_type=training) — Official Linux and open source training resources.

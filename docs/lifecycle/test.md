@@ -10,7 +10,7 @@
 - [Aider](https://aider.chat) — AI pair programming in the terminal.
 - [Aikido](https://www.aikido.dev) — Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud posture scanning.
 - [Aircrack-ng](https://www.aircrack-ng.org/) — Wireless network security-auditing suite for capture analysis and controlled Wi-Fi validation.
-- [ALTCHA](https://altcha.org/) — Bot-protection product family offering managed Cloud and self-hosted Sentinel deployments.
+- [ALTCHA](https://altcha.org/) — Bot-protection family with a self-hosted MIT-licensed proof-of-work core and commercial Sentinel and Cloud capabilities.
 - [Angular](https://angular.dev) — Web application framework.
 - [Ansible Lint](https://docs.ansible.com/projects/lint/) — Best practices checker for Ansible.
 - [Ansible Molecule](https://docs.ansible.com/projects/molecule/) — Scenario-based testing framework for Ansible roles and collections.

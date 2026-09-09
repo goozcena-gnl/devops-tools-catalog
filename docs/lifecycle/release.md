@@ -16,7 +16,6 @@
 - [BuildKit](https://docs.docker.com/build/buildkit) — Next-generation Docker image build engine used by Buildx.
 - [Bunnyshell](https://www.bunnyshell.com) — Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven by environment-as-code workflows.
 - [Caddy](https://caddyserver.com) — Extensible web server and reverse proxy with automatic HTTPS.
-- [cargo-dist](https://github.com/axodotdev/cargo-dist) — Release automation for building and distributing application binaries and installers.
 - [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) — Rust library API compatibility checker for detecting semantic-versioning violations.
 - [cek](https://github.com/bschaatsbergen/cek) — Inspect OCI image filesystems and layers without running containers.
 - [Cloudsmith](https://cloudsmith.com) — Managed package and artifact repository service.
@@ -24,6 +23,7 @@
 - [Convox](https://www.convox.com) — Platform for deploying and managing containers.
 - [DeepEval](https://deepeval.com/) — Local-first framework for evaluating and regression-testing LLM applications, agents, RAG pipelines, and MCP systems.
 - [Dependency-Track](https://dependencytrack.org) — OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
+- [dist (cargo-dist)](https://github.com/axodotdev/cargo-dist) — Release automation for building and distributing application binaries and installers.
 - [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal container images for secure deployments.
 - [Docker](https://www.docker.com) — Product ecosystem for developing, building, distributing, and running application containers.
 - [Docker Build](https://docs.docker.com/build) — Docker image build system.

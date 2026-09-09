@@ -255,7 +255,7 @@
   - legacy:devopstools_final.md#L1131
   needs_review: true
 - id: cargo-dist
-  name: cargo-dist
+  name: dist (cargo-dist)
   summary: Release automation for building and distributing application binaries and installers.
   categories:
   - cd-gitops-release-promotion
@@ -279,7 +279,7 @@
   - build
   - release
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-09'
   needs_review: false
 - id: convox
   name: Convox

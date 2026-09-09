@@ -8,7 +8,7 @@
 - [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) — Self-hosted DNS resolver and filtering service for network-wide blocking and DNS controls.
 - [Aikido](https://www.aikido.dev) — Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud posture scanning.
 - [Aircrack-ng](https://www.aircrack-ng.org/) — Wireless network security-auditing suite for capture analysis and controlled Wi-Fi validation.
-- [ALTCHA](https://altcha.org/) — Bot-protection product family offering managed Cloud and self-hosted Sentinel deployments.
+- [ALTCHA](https://altcha.org/) — Bot-protection family with a self-hosted MIT-licensed proof-of-work core and commercial Sentinel and Cloud capabilities.
 - [Anubis](https://anubis.techaro.lol/) — Reverse proxy middleware that uses proof-of-work challenges to reduce automated web scraping load.
 - [Apiiro](https://apiiro.com) — Application security platform focused on securing agentic development and software delivery.
 - [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
@@ -218,7 +218,7 @@
 - [SPIRE](https://spiffe.io/docs/latest/spire-about/) — SPIFFE runtime environment that issues and rotates workload identities across heterogeneous infrastructure.
 - [sqlmap](https://sqlmap.org/) — Automated SQL injection detection and database security-testing utility.
 - [SSOReady](https://ssoready.com) — Enterprise SSO and SCIM integration platform for adding SAML login and directory sync to applications.
-- [Steampipe](https://steampipe.io/) — SQL query tooling for cloud APIs, with AGPL upstream source and vendor distributions under separate commercial terms.
+- [Steampipe](https://steampipe.io/) — AGPL source project for querying cloud APIs with SQL; Turbot-built binaries and hosted services use separate commercial terms.
 - [StepSecurity](https://www.stepsecurity.io/) — Commercial software supply-chain security platform for GitHub Actions policy, remediation, and runner runtime protection.
 - [StrongKey](https://www.strongkey.com) — Enterprise key management.
 - [subfinder](https://github.com/projectdiscovery/subfinder) — Passive subdomain discovery utility using external data sources.

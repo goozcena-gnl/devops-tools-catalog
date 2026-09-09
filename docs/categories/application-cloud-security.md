@@ -85,20 +85,20 @@ Wireless network security-auditing suite for capture analysis and controlled Wi-
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer<br>
-**Model:** Commercial<br>
+**Model:** Open Core<br>
 **Status:** Active
 
-Bot-protection product family offering managed Cloud and self-hosted Sentinel deployments.
+Bot-protection family with a self-hosted MIT-licensed proof-of-work core and commercial Sentinel and Cloud capabilities.
 
 **Use when**
 
-- You need browser bot and spam protection and can choose a supported managed or self-hosted commercial deployment.
+- You need bot protection and can operate the open-source challenge endpoint and server-side verification, or select commercial Sentinel or Cloud capabilities.
 
 **Consider alternatives when**
 
-- You expect the licence of an open-source widget or SDK to cover the complete Sentinel or hosted product.
+- You need protection without browser-side JavaScript or assume the MIT core licence includes commercial Sentinel and Cloud capabilities.
 
-[Official site](https://altcha.org/)
+[Official site](https://altcha.org/) · [Documentation](https://github.com/altcha-org/altcha/blob/main/README.md) · [Source repository](https://github.com/altcha-org/altcha)
 
 ### Anubis
 

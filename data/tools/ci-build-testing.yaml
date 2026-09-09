@@ -1386,6 +1386,7 @@
   - https://github.com/lightpanda-io/browser/blob/main/LICENSE
   - https://lightpanda.io/
   - https://github.com/lightpanda-io/browser/blob/main/README.md
+  - https://github.com/lightpanda-io/browser/blob/main/src/main.zig
   roles:
   - devops-engineer
   - release-engineer
@@ -1394,8 +1395,9 @@
   - test
   commercial_offering: true
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-09'
   needs_review: false
+  license_spdx: AGPL-3.0-or-later
 - id: lychee
   name: lychee
   summary: Asynchronous command-line link checker for Markdown, HTML, reStructuredText, websites, and

@@ -9,7 +9,7 @@
 | [AD Miner](https://github.com/AD-Security/AD_Miner) | Application and cloud security, IAM, secrets and certificate management | oss | active |
 | [Aikido](https://www.aikido.dev) | Application and cloud security | open-core | needs-review |
 | [Aircrack-ng](https://www.aircrack-ng.org/) | Application and cloud security | oss | active |
-| [ALTCHA](https://altcha.org/) | Application and cloud security | commercial | active |
+| [ALTCHA](https://altcha.org/) | Application and cloud security | open-core | active |
 | [Anubis](https://anubis.techaro.lol/) | Application and cloud security | oss | active |
 | [Apiiro](https://apiiro.com) | Application and cloud security | unknown | needs-review |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |

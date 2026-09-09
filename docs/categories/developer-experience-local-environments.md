@@ -1000,11 +1000,11 @@ Cross-platform GPU-accelerated terminal emulator with extensible keyboard-driven
 **Model:** Oss<br>
 **Status:** Active
 
-Generator for C# models representing Kubernetes custom resources.
+CLI and build-time generator for C# models from Kubernetes custom-resource definitions.
 
 **Use when**
 
-- You build .NET Kubernetes integrations and need generated CRD types as part of a maintained controller toolchain.
+- Your platform team needs a repeatable CLI or build-time CRD-to-C# generation step for its controller toolchain.
 
 **Consider alternatives when**
 

@@ -263,7 +263,7 @@
 | [SSOReady](https://ssoready.com) | IAM, secrets and certificate management | unknown | needs-review |
 | [Stakpak](https://stakpak.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Stash](https://stash.run) | Backup, disaster recovery and resilience | oss | needs-review |
-| [Steampipe](https://steampipe.io/) | Cloud platforms and cloud management | commercial | active |
+| [Steampipe](https://steampipe.io/) | Cloud platforms and cloud management | oss | active |
 | [StrongKey](https://www.strongkey.com) | IAM, secrets and certificate management | unknown | needs-review |
 | [SysAdmin to SRE Roadmap](https://sre.yoparchi.fr) | Documentation, learning and career resources | documentation | needs-review |
 | [System Design](https://github.com/karanpratapsingh/system-design) | Documentation, learning and career resources | documentation | needs-review |
