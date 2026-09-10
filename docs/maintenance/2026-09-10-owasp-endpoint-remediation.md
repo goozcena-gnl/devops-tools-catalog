@@ -58,3 +58,14 @@ ledger URL and its repaired current URL, preserving the historical assertion.
 
 The checker, blocker baseline, taxonomy, schema, version and release history are
 unchanged. This maintenance does not revise any other Wave 4 decision.
+
+## Preparation validation
+
+The post-Wave-4 full audit had reported these three old routes as new blockers.
+After the endpoint repairs, the focused audit checked eight active URLs with
+zero blockers. Two independent fresh full strict audits with archive checks
+each checked 2,407 URLs and reported nine known blockers, zero new blockers,
+and PASS. The immediately compatible cached rerun reported the same strict
+counts and PASS. These preparation results establish observed strict-link
+recovery without expanding the baseline; final review and post-merge audits
+must still verify the live endpoints independently.
