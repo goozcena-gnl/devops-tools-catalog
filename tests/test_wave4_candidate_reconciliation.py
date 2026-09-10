@@ -136,6 +136,15 @@ def test_wave4_ledger_matches_canonical_metadata(rows, catalogue) -> None:
             ("license_spdx", "license_spdx"),
             ("status", "status"),
         ):
+            if (
+                row["resulting_catalog_id"] == "owasp-docksec"
+                and field == "official_url"
+            ):
+                # The immutable Wave 4 ledger predates the OWASP route repair.
+                assert row[column] == "https://owasp.org/DockSec/"
+                assert row[column] in tool["sources"]
+                assert tool[field] == "https://owasp.org/projects/docksec"
+                continue
             assert row[column] == tool.get(field, ""), (row["input_index"], column)
         assert row["categories"].split(";") == tool["categories"]
         assert row["needs_review"] == str(tool["needs_review"]).lower()

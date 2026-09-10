@@ -61,7 +61,7 @@
 - [Cyclonus](https://github.com/mattfenwick/cyclonus) — Kubernetes network policy testing tool.
 - [DefectDojo](https://www.defectdojo.com/) — Application security posture and vulnerability-management platform that ingests findings from many scanners.
 - [Dependency-Track](https://dependencytrack.org) — OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
-- [DependencyCheck](https://owasp.org/www-project-dependency-check) — Identify vulnerable dependencies.
+- [DependencyCheck](https://owasp.org/projects/dependency-check) — Identify vulnerable dependencies.
 - [Descope](https://www.descope.com) — Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
 - [detect-secrets](https://github.com/Yelp/detect-secrets) — Secrets detection with baseline support (reduce false positives).
 - [Dex](https://dexidp.io) — OpenID Connect identity provider for Kubernetes and beyond.
@@ -170,8 +170,8 @@
 - [osquery](https://osquery.io/) — Operating-system instrumentation framework that exposes host state through a SQL interface.
 - [OSSIM](https://github.com/alienfault/ossim) — Open Source Security Information and Event Management (SIEM) platform.
 - [OSV-Scanner](https://google.github.io/osv-scanner/) — Vulnerability scanner that checks source trees, lockfiles, and container images against the OSV database.
-- [OWASP Amass](https://owasp.org/www-project-amass/) — Attack-surface mapping and external asset discovery framework.
-- [OWASP DockSec](https://owasp.org/DockSec/) — Container-security analysis tool combining scanners with AI-assisted explanations and remediation guidance.
+- [OWASP Amass](https://owasp.org/projects/amass) — Attack-surface mapping and external asset discovery framework.
+- [OWASP DockSec](https://owasp.org/projects/docksec) — Container-security analysis tool combining scanners with AI-assisted explanations and remediation guidance.
 - [OWASP ZAP](https://www.zaproxy.org) — Web application security scanner (DAST).
 - [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) — Cloud-native security operations platform.
 - [Pangolin](https://pangolin.net) — Zero-trust remote access platform and VPN alternative.

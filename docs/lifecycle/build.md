@@ -191,7 +191,7 @@
 - [OpenTofu](https://opentofu.org) — Open-source Terraform fork.
 - [ORAS](https://oras.land) — OCI registry client/library (store artifacts in registries).
 - [OSV-Scanner](https://google.github.io/osv-scanner/) — Vulnerability scanner that checks source trees, lockfiles, and container images against the OSV database.
-- [OWASP DockSec](https://owasp.org/DockSec/) — Container-security analysis tool combining scanners with AI-assisted explanations and remediation guidance.
+- [OWASP DockSec](https://owasp.org/projects/docksec) — Container-security analysis tool combining scanners with AI-assisted explanations and remediation guidance.
 - [Packer](https://www.packer.io) — Machine image creation.
 - [peerd](https://peerd.ai) — Browser-native harness for AI agents.
 - [pgvector](https://github.com/pgvector/pgvector) — PostgreSQL extension that adds vector data types, similarity search, and vector indexes.

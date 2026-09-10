@@ -62,7 +62,7 @@
 | [Cyclonus](https://github.com/mattfenwick/cyclonus) | Application and cloud security | oss | needs-review |
 | [DefectDojo](https://www.defectdojo.com/) | Application and cloud security | open-core | active |
 | [Dependency-Track](https://dependencytrack.org) | Software supply-chain security, Application and cloud security | oss | active |
-| [DependencyCheck](https://owasp.org/www-project-dependency-check) | Application and cloud security | oss | active |
+| [DependencyCheck](https://owasp.org/projects/dependency-check) | Application and cloud security | oss | active |
 | [Descope](https://www.descope.com) | IAM, secrets and certificate management | unknown | needs-review |
 | [detect-secrets](https://github.com/Yelp/detect-secrets) | Application and cloud security | oss | needs-review |
 | [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | needs-review |
@@ -176,8 +176,8 @@
 | [OSINT Framework](https://osintframework.com) | Application and cloud security | documentation | needs-review |
 | [OSSIM](https://github.com/alienfault/ossim) | Application and cloud security | oss | needs-review |
 | [OSV-Scanner](https://google.github.io/osv-scanner/) | Application and cloud security, Software supply-chain security | oss | active |
-| [OWASP Amass](https://owasp.org/www-project-amass/) | Application and cloud security | oss | active |
-| [OWASP DockSec](https://owasp.org/DockSec/) | Application and cloud security | oss | active |
+| [OWASP Amass](https://owasp.org/projects/amass) | Application and cloud security | oss | active |
+| [OWASP DockSec](https://owasp.org/projects/docksec) | Application and cloud security | oss | active |
 | [OWASP ZAP](https://www.zaproxy.org) | Application and cloud security | oss | needs-review |
 | [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) | Application and cloud security | unknown | needs-review |
 | [Pangolin](https://pangolin.net) | Application and cloud security | open-core | active |
