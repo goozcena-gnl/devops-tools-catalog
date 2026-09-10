@@ -617,6 +617,32 @@
   - https://github.com/harvester/harvester/blob/master/LICENSE
   - https://www.suse.com/products/rancher/virtualization/
   needs_review: false
+- id: harvester-seeder
+  name: Harvester Seeder
+  summary: Kubernetes-based automation for installing Harvester onto bare-metal machines.
+  categories:
+  - virtualization-bare-metal-homelab
+  use_when:
+  - You provision Harvester hosts and can supply the documented layer-2 network and Tinkerbell prerequisites.
+  avoid_when:
+  - You need a general-purpose installer or cannot accept the project's active-development compatibility
+    risk.
+  maturity: experimental
+  repository_url: https://github.com/harvester/seeder
+  repository_archived: false
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/harvester/seeder
+  - https://github.com/harvester/seeder/blob/main/LICENSE
+  roles:
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: homarr
   name: Homarr
   summary: Self-hosted dashboard for organizing and monitoring links to homelab and infrastructure services.
@@ -737,6 +763,34 @@
   sources:
   - legacy:devopstools_final.md#L246
   needs_review: true
+- id: ironic
+  name: OpenStack Ironic
+  summary: Bare-metal provisioning service supporting hardware inspection, deployment, and power management.
+  categories:
+  - virtualization-bare-metal-homelab
+  use_when:
+  - You operate a physical server fleet and can configure management networks and supported hardware interfaces.
+  avoid_when:
+  - You only manage virtual machines or cannot support the required provisioning-network and BMC integration.
+  maturity: established
+  official_url: https://ironicbaremetal.org/
+  repository_url: https://opendev.org/openstack/ironic
+  documentation_url: https://github.com/openstack/ironic/blob/master/README.rst
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/openstack/ironic
+  - https://github.com/openstack/ironic/blob/master/LICENSE
+  - https://ironicbaremetal.org/
+  - https://github.com/openstack/ironic/blob/master/README.rst
+  roles:
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: kata-containers
   name: Kata Containers
   summary: Secure containers with lightweight VMs.
@@ -830,6 +884,34 @@
   - https://komo.do/
   - https://komo.do/docs/intro
   - https://github.com/moghtech/komodo
+  needs_review: false
+- id: kubevirtbmc
+  name: KubeVirtBMC
+  summary: IPMI and Redfish management interfaces for KubeVirt virtual machines.
+  categories:
+  - virtualization-bare-metal-homelab
+  use_when:
+  - You need existing bare-metal provisioning tools to control KubeVirt VMs through BMC protocols.
+  avoid_when:
+  - You require physical hardware management or can use the KubeVirt API directly without a compatibility
+    layer.
+  maturity: growing
+  official_url: https://docs.kubevirtbmc.io/
+  repository_url: https://github.com/kubevirtbmc/kubevirtbmc
+  repository_archived: false
+  documentation_url: https://docs.kubevirtbmc.io/
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/kubevirtbmc/kubevirtbmc
+  - https://github.com/kubevirtbmc/kubevirtbmc/blob/main/LICENSE
+  - https://docs.kubevirtbmc.io/
+  roles:
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - operate
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: lazydocker
   name: Lazydocker
@@ -1690,6 +1772,36 @@
   status: active
   verified_on: '2026-08-29'
   sources: [https://technitium.com/dns/, https://github.com/TechnitiumSoftware/DnsServer, https://github.com/TechnitiumSoftware/DnsServer/blob/master/LICENSE]
+  needs_review: false
+- id: tinkerbell
+  name: Tinkerbell
+  summary: Bare-metal provisioning stack for declarative machine installation workflows.
+  categories:
+  - virtualization-bare-metal-homelab
+  use_when:
+  - You need repeatable physical-host provisioning and can operate the required boot and management services.
+  avoid_when:
+  - A managed provisioning service is required or your environment cannot provide the necessary network
+    and hardware access.
+  maturity: established
+  official_url: https://tinkerbell.org/
+  repository_url: https://github.com/tinkerbell/tinkerbell
+  repository_archived: false
+  documentation_url: https://github.com/tinkerbell/tinkerbell/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/tinkerbell/tinkerbell
+  - https://github.com/tinkerbell/tinkerbell/blob/main/LICENSE
+  - https://tinkerbell.org/
+  - https://github.com/tinkerbell/tinkerbell/blob/main/README.md
+  roles:
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: unraid
   name: Unraid

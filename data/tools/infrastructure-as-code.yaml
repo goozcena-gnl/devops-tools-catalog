@@ -365,6 +365,63 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L44
   - legacy:devopstools_final.md#L175
   needs_review: false
+- id: crossplane-function-sdk-csharp
+  name: Crossplane function SDK for C#
+  summary: C# implementation toolkit for Crossplane composition functions, including templates, model
+    generation, and a gRPC function host.
+  categories:
+  - infrastructure-as-code
+  use_when:
+  - Your platform team chooses C# for Crossplane composition logic and can maintain the function service
+    and generated models.
+  avoid_when:
+  - You can use an existing composition function or do not support the documented Crossplane version.
+  maturity: emerging
+  repository_url: https://github.com/IvanJosipovic/function-sdk-csharp
+  repository_archived: false
+  documentation_url: https://github.com/IvanJosipovic/function-sdk-csharp/blob/alpha/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/IvanJosipovic/function-sdk-csharp
+  - https://github.com/IvanJosipovic/function-sdk-csharp/blob/alpha/LICENSE
+  - https://github.com/IvanJosipovic/function-sdk-csharp/blob/alpha/README.md
+  roles:
+  - platform-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  status: active
+  verified_on: '2026-09-09'
+  needs_review: false
+- id: crossplane-upjet
+  name: Upjet
+  summary: Code generation and controller runtime for building Crossplane providers from Terraform providers.
+  categories:
+  - infrastructure-as-code
+  use_when:
+  - You maintain a Crossplane provider and want to reuse a Terraform provider's resource schema and implementation.
+  avoid_when:
+  - You only consume an existing provider or cannot maintain generated controllers and Terraform compatibility.
+  maturity: established
+  repository_url: https://github.com/crossplane/upjet
+  repository_archived: false
+  documentation_url: https://github.com/crossplane/upjet/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/crossplane/upjet
+  - https://github.com/crossplane/upjet/blob/main/LICENSE
+  - https://github.com/crossplane/upjet/blob/main/README.md
+  roles:
+  - platform-engineer
+  - cloud-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: env0
   name: Env0
   summary: Infrastructure as Code automation and governance platform.

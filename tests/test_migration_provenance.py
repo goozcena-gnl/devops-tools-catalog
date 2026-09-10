@@ -74,7 +74,7 @@ def test_reconciliation_accounting_matches_every_original_occurrence(catalogue) 
         "merged": 802,
         "archived": 7,
     }
-    assert len(catalogue) == len({tool["id"] for tool in catalogue}) == 1306
+    assert len(catalogue) == len({tool["id"] for tool in catalogue}) == 1423
 
 
 def test_restoration_closes_exact_historical_twenty_pointer_gap(catalogue) -> None:

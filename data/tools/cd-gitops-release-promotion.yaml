@@ -1,3 +1,30 @@
+- id: aks-kargo-analysisrun-logs
+  name: AKS Kargo AnalysisRun logs
+  summary: API service exposing Azure Log Analytics job logs through Kargo's AnalysisRun log interface.
+  categories:
+  - cd-gitops-release-promotion
+  use_when:
+  - You use Kargo with AKS logs stored in Azure Log Analytics and need that integration in promotion workflows.
+  avoid_when:
+  - Your logs are already accessible through supported native providers or you do not use Azure Log Analytics.
+  maturity: emerging
+  repository_url: https://github.com/IvanJosipovic/aks-kargo-analysisrun-logs
+  repository_archived: false
+  documentation_url: https://github.com/IvanJosipovic/aks-kargo-analysisrun-logs/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/IvanJosipovic/aks-kargo-analysisrun-logs
+  - https://github.com/IvanJosipovic/aks-kargo-analysisrun-logs/blob/main/LICENSE
+  - https://github.com/IvanJosipovic/aks-kargo-analysisrun-logs/blob/main/README.md
+  roles:
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: argocd
   name: Argo CD
   summary: Declarative GitOps continuous delivery for Kubernetes.
@@ -227,6 +254,33 @@
   sources:
   - legacy:devopstools_final.md#L1131
   needs_review: true
+- id: cargo-dist
+  name: dist (cargo-dist)
+  summary: Release automation for building and distributing application binaries and installers.
+  categories:
+  - cd-gitops-release-promotion
+  use_when:
+  - You publish command-line applications and want generated release workflows across target platforms.
+  avoid_when:
+  - You need fully bespoke packaging or cannot review and maintain generated CI workflows.
+  maturity: growing
+  repository_url: https://github.com/axodotdev/cargo-dist
+  repository_archived: false
+  documentation_url: https://github.com/axodotdev/cargo-dist/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/axodotdev/cargo-dist
+  - https://github.com/axodotdev/cargo-dist/blob/main/LICENSE-APACHE
+  - https://github.com/axodotdev/cargo-dist/blob/main/README.md
+  roles:
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  status: active
+  verified_on: '2026-09-09'
+  needs_review: false
 - id: convox
   name: Convox
   summary: Platform for deploying and managing containers.

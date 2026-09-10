@@ -1,3 +1,65 @@
+- id: apache-cassandra
+  name: Apache Cassandra
+  summary: Distributed wide-column database designed for replicated, horizontally scalable workloads.
+  categories:
+  - databases-caching-data-infrastructure
+  use_when:
+  - You need partitioned data with multi-node replication and can design queries and consistency choices
+    explicitly.
+  avoid_when:
+  - You need relational joins or cannot operate repair, compaction, and capacity planning across a cluster.
+  maturity: established
+  official_url: https://cassandra.apache.org/
+  repository_url: https://github.com/apache/cassandra
+  repository_archived: false
+  documentation_url: https://github.com/apache/cassandra/blob/trunk/README.asc
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/apache/cassandra
+  - https://github.com/apache/cassandra/blob/trunk/LICENSE.txt
+  - https://cassandra.apache.org/
+  - https://github.com/apache/cassandra/blob/trunk/README.asc
+  roles:
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: apache-hbase
+  name: Apache HBase
+  summary: Distributed wide-column datastore integrated with the Hadoop ecosystem.
+  categories:
+  - databases-caching-data-infrastructure
+  use_when:
+  - You need large sparse tables with random access and can operate the underlying distributed storage
+    ecosystem.
+  avoid_when:
+  - You need a simple relational datastore or cannot maintain region, storage, and coordination services.
+  maturity: established
+  official_url: https://hbase.apache.org/
+  repository_url: https://github.com/apache/hbase
+  repository_archived: false
+  documentation_url: https://github.com/apache/hbase/blob/master/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/apache/hbase
+  - https://github.com/apache/hbase/blob/master/LICENSE.txt
+  - https://hbase.apache.org/
+  - https://github.com/apache/hbase/blob/master/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: apache-kafka
   name: Apache Kafka
   summary: Distributed event streaming platform.
@@ -29,6 +91,37 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L202
   - legacy:devopstools_final.md#L277
   needs_review: true
+- id: apache-zookeeper
+  name: Apache ZooKeeper
+  summary: Distributed coordination service for naming, configuration, and synchronization.
+  categories:
+  - databases-caching-data-infrastructure
+  use_when:
+  - You operate software requiring ZooKeeper and can maintain a quorum with appropriate persistence and
+    monitoring.
+  avoid_when:
+  - Your application does not require coordination or already uses another compatible consensus backend.
+  maturity: established
+  official_url: https://zookeeper.apache.org/
+  repository_url: https://github.com/apache/zookeeper
+  repository_archived: false
+  documentation_url: https://github.com/apache/zookeeper/blob/master/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/apache/zookeeper
+  - https://github.com/apache/zookeeper/blob/master/LICENSE.txt
+  - https://zookeeper.apache.org/
+  - https://github.com/apache/zookeeper/blob/master/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: bbolt
   name: bbolt
   summary: Embedded key/value store for Go applications.
@@ -175,6 +268,37 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L210
   - legacy:devopstools_final.md#L283
   needs_review: true
+- id: mariadb-server
+  name: MariaDB Server
+  summary: Open-source relational database server with MySQL heritage.
+  categories:
+  - databases-caching-data-infrastructure
+  use_when:
+  - You need a self-managed SQL database and can validate application, replication, and backup compatibility.
+  avoid_when:
+  - You assume complete interchangeability with every MySQL release or require a fully managed database
+    service.
+  maturity: established
+  official_url: https://mariadb.org/
+  repository_url: https://github.com/MariaDB/server
+  repository_archived: false
+  documentation_url: https://github.com/MariaDB/server/blob/main/README.md
+  license_model: oss
+  sources:
+  - https://github.com/MariaDB/server
+  - https://github.com/MariaDB/server/blob/main/COPYING
+  - https://mariadb.org/
+  - https://github.com/MariaDB/server/blob/main/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-09'
+  needs_review: false
+  license_spdx: GPL-2.0-only
 - id: meilisearch
   name: Meilisearch
   summary: Fast, typo-tolerant search and AI retrieval engine.
@@ -662,8 +786,9 @@
   needs_review: true
 - id: varnish-cache
   name: Varnish Cache
-  summary: High-performance HTTP reverse proxy and cache accelerator.
-  official_url: https://www.varnish-software.com/fr-fr/produits/varnish-cache
+  summary: HTTP reverse proxy and cache maintained by Varnish Software; distinct from the renamed Vinyl
+    Cache project.
+  official_url: https://www.varnish.org/
   categories:
   - databases-caching-data-infrastructure
   subcategories:
@@ -675,18 +800,30 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
+  use_when:
+  - You need programmable HTTP caching and can maintain VCL configuration and cache invalidation.
+  avoid_when:
+  - Your content is not cacheable or you require commercial Enterprise features absent from Varnish Cache.
   deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  license_model: oss
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-08'
   sources:
   - legacy:devopstools_final.md#L294
-  needs_review: true
+  - https://github.com/varnish/varnish
+  - https://github.com/varnish/varnish/blob/main/LICENSE
+  - https://www.varnish.org/
+  - https://github.com/varnish/varnish/blob/main/README.md
+  - https://info.varnish-software.com/blog/varnish-cache-lts-tls-and-other-goodies
+  needs_review: false
+  repository_url: https://github.com/varnish/varnish
+  repository_archived: false
+  documentation_url: https://github.com/varnish/varnish/blob/main/README.md
+  license_spdx: BSD-2-Clause
+  commercial_offering: true
 - id: xata
   name: Xata
   summary: Managed Postgres platform with branching workflows for databases.

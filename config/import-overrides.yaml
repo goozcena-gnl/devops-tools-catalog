@@ -134,6 +134,26 @@ category_lifecycle:
   emerging-experimental: [learn, develop]
   deprecated-historical: [retire]
 url_aliases:
+  https://skills.addy.ie/: https://github.com/addyosmani/agent-skills
+  https://almalinux.org/fr/: https://almalinux.org/
+  https://www.atlassian.com/fr/software/bitbucket/features/pipelines: https://www.atlassian.com/software/bitbucket/features/pipelines
+  https://gogs.io/getting-started/introduction: https://gogs.io/
+  https://www.oracle.com/fr/linux/: https://www.oracle.com/linux/
+  https://www.debian.org/index.fr.html: https://www.debian.org/
+  https://ulab-uiuc.github.io/LLMRouter/: https://github.com/ulab-uiuc/LLMRouter
+  https://wso2.com/api-platform/: https://github.com/wso2/api-platform
+  https://github.com/python/cpython: https://www.python.org/
+  https://learn.microsoft.com/fr-fr/powershell/: https://learn.microsoft.com/en-us/powershell/
+  https://dotnet.microsoft.com/fr-fr/: https://dotnet.microsoft.com/
+  https://www.consul.io: https://developer.hashicorp.com/consul
+  https://www.ibm.com/fr-fr/products/cloud: https://www.ibm.com/products/cloud
+  https://agentsroom.dev/fr/features/teams: https://agentsroom.dev/
+  https://www.nuget.org/packages/ACR-SyncTool: https://github.com/IvanJosipovic/ACR-SyncTool
+  https://www.nuget.org/packages/KubernetesCRDModelGen: https://github.com/IvanJosipovic/KubernetesCRDModelGen
+  https://crates.io/crates/ouch: https://github.com/ouch-org/ouch
+  https://crates.io/crates/kubectl-view-allocations: https://github.com/davidB/kubectl-view-allocations
+  https://crates.io/crates/sniffglue: https://github.com/kpcyrd/sniffglue
+  https://crates.io/crates/kubernetes-audit-log-explorer: https://github.com/karlpvoss/kubernetes-audit-log-explorer
   https://clickhouse.com/cloud/clickstack?loc=o11y: https://clickhouse.com/clickstack
   https://clickhouse.com/use-cases/observability: https://clickhouse.com/
   https://clastix.io/capsule/: https://capsule.clastix.io/

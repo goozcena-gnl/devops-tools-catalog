@@ -28,6 +28,93 @@
   - legacy:1_Foundational-Skills/README.md#L33
   - legacy:devopstools_final.md#L112
   needs_review: true
+- id: almalinux
+  name: AlmaLinux OS
+  summary: Community-governed enterprise Linux distribution with RHEL-compatible binaries and server and
+    cloud images.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You need an enterprise Linux server platform with a community lifecycle and existing RHEL-oriented
+    operational tooling.
+  avoid_when:
+  - Your application certification or support contract specifically requires a different vendor distribution.
+  maturity: established
+  official_url: https://almalinux.org/
+  license_model: oss
+  sources:
+  - https://almalinux.org/
+  - https://wiki.almalinux.org/
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: apache-http-server
+  name: Apache HTTP Server
+  summary: Modular HTTP server supporting web hosting, TLS, authentication, and reverse proxying.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You operate web services that benefit from Apache modules and explicit server configuration.
+  avoid_when:
+  - You need automatic cloud-native service discovery without additional integration and configuration
+    management.
+  maturity: established
+  official_url: https://httpd.apache.org/
+  repository_url: https://github.com/apache/httpd
+  repository_archived: false
+  documentation_url: https://github.com/apache/httpd/blob/trunk/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/apache/httpd
+  - https://github.com/apache/httpd/blob/trunk/LICENSE
+  - https://httpd.apache.org/
+  - https://github.com/apache/httpd/blob/trunk/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: apache-tomcat
+  name: Apache Tomcat
+  summary: Java web application server implementing Jakarta servlet and related specifications.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You deploy servlet applications and can align Java, Jakarta API, and Tomcat release compatibility.
+  avoid_when:
+  - You need a full Jakarta EE platform or applications depend on incompatible javax and jakarta API generations.
+  maturity: established
+  official_url: https://tomcat.apache.org/
+  repository_url: https://github.com/apache/tomcat
+  repository_archived: false
+  documentation_url: https://github.com/apache/tomcat/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/apache/tomcat
+  - https://github.com/apache/tomcat/blob/main/LICENSE
+  - https://tomcat.apache.org/
+  - https://github.com/apache/tomcat/blob/main/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: appimage
   name: AppImage
   summary: Portable Linux application packaging format (single executable).
@@ -88,6 +175,37 @@
   verified_on: '2026-08-21'
   sources:
   - https://github.com/Atoptool/atop
+  needs_review: false
+- id: atuin
+  name: Atuin
+  summary: Shell-history tool with searchable local storage and optional encrypted synchronization.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You need searchable command history across machines and can govern history storage and synchronization.
+  avoid_when:
+  - Commands may contain secrets that your retention policy forbids storing or synchronizing.
+  maturity: established
+  official_url: https://atuin.sh/
+  repository_url: https://github.com/atuinsh/atuin
+  repository_archived: false
+  documentation_url: https://github.com/atuinsh/atuin/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/atuinsh/atuin
+  - https://github.com/atuinsh/atuin/blob/main/LICENSE
+  - https://atuin.sh/
+  - https://github.com/atuinsh/atuin/blob/main/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: bash
   name: Bash
@@ -240,6 +358,31 @@
   - https://github.com/curl/curl
   - https://curl.se/docs/copyright.html
   needs_review: false
+- id: debian
+  name: Debian
+  summary: Community-maintained operating-system distribution used for servers, cloud systems, and workstations.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You want stable distribution packages and can plan security maintenance and release upgrades for your
+    hosts.
+  avoid_when:
+  - You require a single vendor's commercial support contract or faster default package turnover.
+  maturity: established
+  official_url: https://www.debian.org/
+  license_model: oss
+  sources:
+  - https://www.debian.org/
+  - https://www.debian.org/intro/free
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: dool
   name: dool
   summary: Linux command-line monitor for correlating CPU, memory, disk, network, and process activity
@@ -270,6 +413,36 @@
   sources:
   - https://github.com/scottchiefbaker/dool
   needs_review: false
+- id: dotnet
+  name: .NET
+  summary: Cross-platform runtime and tooling for building and operating managed applications and services.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You operate .NET services or build automation in its ecosystem and can track supported runtime releases.
+  avoid_when:
+  - You need compatibility with a legacy framework feature unavailable in modern cross-platform .NET.
+  maturity: established
+  official_url: https://dotnet.microsoft.com/
+  repository_url: https://github.com/dotnet/runtime
+  repository_archived: false
+  documentation_url: https://github.com/dotnet/runtime/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/dotnet/runtime
+  - https://github.com/dotnet/runtime/blob/main/LICENSE.TXT
+  - https://dotnet.microsoft.com/
+  - https://github.com/dotnet/runtime/blob/main/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: duf
   name: duf
   summary: Command-line utility that presents disk usage and free-space information for mounted filesystems.
@@ -294,6 +467,37 @@
   sources:
   - https://github.com/muesli/duf
   - https://github.com/muesli/duf/blob/master/LICENSE
+  needs_review: false
+- id: eclipse-jetty
+  name: Eclipse Jetty
+  summary: Java HTTP server and servlet container usable standalone or embedded.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You operate Java web services that need an embeddable or standalone servlet engine.
+  avoid_when:
+  - You need a full enterprise application server or cannot align the application's Java and Jakarta versions.
+  maturity: established
+  official_url: https://jetty.org/
+  repository_url: https://github.com/jetty/jetty.project
+  repository_archived: false
+  documentation_url: https://github.com/jetty/jetty.project/blob/jetty-12.1.x/README.md
+  license_spdx: EPL-2.0 OR Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/jetty/jetty.project
+  - https://github.com/jetty/jetty.project/blob/jetty-12.1.x/LICENSE
+  - https://jetty.org/
+  - https://github.com/jetty/jetty.project/blob/jetty-12.1.x/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: exercism
   name: Exercism
@@ -326,6 +530,35 @@
   - legacy:1_Foundational-Skills/README.md#L34
   - legacy:devopstools_final.md#L113
   needs_review: true
+- id: eza
+  name: eza
+  summary: Directory-listing CLI with file metadata and Git-aware presentation.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You inspect files interactively and want richer listings during local administration.
+  avoid_when:
+  - You need POSIX ls compatibility in portable scripts.
+  maturity: growing
+  official_url: https://eza.rocks/
+  repository_url: https://github.com/eza-community/eza
+  repository_archived: false
+  documentation_url: https://github.com/eza-community/eza/blob/main/README.md
+  license_spdx: EUPL-1.2
+  license_model: oss
+  sources:
+  - https://github.com/eza-community/eza
+  - https://github.com/eza-community/eza/blob/main/LICENSE.txt
+  - https://eza.rocks/
+  - https://github.com/eza-community/eza/blob/main/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: fd
   name: fd
   summary: Simple, fast alternative to `find`.
@@ -340,22 +573,28 @@
   lifecycle_stages:
   - develop
   - operate
-  - learn
   use_when:
-  - Quick, human-friendly file searches.
+  - You need interactive file discovery with concise syntax and can account for hidden-file and ignore
+    defaults.
   avoid_when:
-  - In portable scripts where `find` is the POSIX standard.
+  - Portable automation must use POSIX find semantics.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-08'
   sources:
   - legacy:1_Foundational-Skills/README.md#L16
   - legacy:devopstools_final.md#L94
-  needs_review: true
+  - https://github.com/sharkdp/fd
+  - https://github.com/sharkdp/fd/blob/master/LICENSE-APACHE
+  - https://github.com/sharkdp/fd/blob/master/README.md
+  needs_review: false
+  repository_archived: false
+  documentation_url: https://github.com/sharkdp/fd/blob/master/README.md
+  license_spdx: MIT OR Apache-2.0
 - id: flathub
   name: Flathub
   summary: Main application repository ("app store") for Flatpak packages.
@@ -454,6 +693,38 @@
   - legacy:devopstools_final.md#L114
   - legacy:devopstools_final.md#L95
   needs_review: true
+- id: go
+  name: Go
+  summary: Compiled language and toolchain used to build portable infrastructure services and command-line
+    tools.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You develop operational services or CLIs and want compiled deployment artifacts with an integrated
+    toolchain.
+  avoid_when:
+  - You need dynamic scripting or cannot maintain compiled binaries for the required target platforms.
+  maturity: established
+  official_url: https://go.dev/
+  repository_url: https://github.com/golang/go
+  repository_archived: false
+  documentation_url: https://github.com/golang/go/blob/master/README.md
+  license_spdx: BSD-3-Clause
+  license_model: oss
+  sources:
+  - https://github.com/golang/go
+  - https://github.com/golang/go/blob/master/LICENSE
+  - https://go.dev/
+  - https://github.com/golang/go/blob/master/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: go-by-example
   name: Go by Example
   summary: Hands-on Go programming snippets and examples.
@@ -485,6 +756,34 @@
   - legacy:1_Foundational-Skills/README.md#L36
   - legacy:devopstools_final.md#L115
   needs_review: true
+- id: gping
+  name: gping
+  summary: Ping utility with terminal graphs for comparing host latency.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You need an immediate visual comparison of ICMP response times during network troubleshooting.
+  avoid_when:
+  - ICMP is blocked or you need application-level availability and durable monitoring.
+  maturity: established
+  repository_url: https://github.com/orf/gping
+  repository_archived: false
+  documentation_url: https://github.com/orf/gping/blob/main/readme.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/orf/gping
+  - https://github.com/orf/gping/blob/main/LICENSE
+  - https://github.com/orf/gping/blob/main/readme.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: harisekhon-devops-bash-tools
   name: HariSekhon/DevOps-Bash-tools
   summary: Large collection of Bash scripts, shell helpers, and automation tooling for DevOps, cloud,
@@ -549,6 +848,34 @@
   - https://github.com/htop-dev/htop/blob/main/README.md#license
   - https://github.com/htop-dev/htop/blob/main/COPYING
   needs_review: false
+- id: jaq
+  name: jaq
+  summary: JSON query CLI implementing a substantial subset of jq's language.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You transform structured command output and can test filter compatibility with your required jq features.
+  avoid_when:
+  - You need guaranteed compatibility with all jq behaviours and extensions.
+  maturity: growing
+  repository_url: https://github.com/01mf02/jaq
+  repository_archived: false
+  documentation_url: https://github.com/01mf02/jaq/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/01mf02/jaq
+  - https://github.com/01mf02/jaq/blob/main/LICENSE-MIT
+  - https://github.com/01mf02/jaq/blob/main/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: jq
   name: jq
   summary: Command-line processor for querying and transforming JSON data.
@@ -586,6 +913,37 @@
   - https://github.com/jqlang/jq
   - https://github.com/jqlang/jq/blob/master/COPYING
   needs_review: false
+- id: just
+  name: just
+  summary: Command runner for keeping project recipes in a versioned justfile.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You need repeatable development and operations commands without a full build system.
+  avoid_when:
+  - You need dependency-aware incremental compilation or portable execution without installing the runner.
+  maturity: established
+  official_url: https://just.systems/
+  repository_url: https://github.com/casey/just
+  repository_archived: false
+  documentation_url: https://github.com/casey/just/blob/master/README.md
+  license_spdx: CC0-1.0
+  license_model: oss
+  sources:
+  - https://github.com/casey/just
+  - https://github.com/casey/just/blob/master/LICENSE
+  - https://just.systems/
+  - https://github.com/casey/just/blob/master/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - build
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: linux-foundation-training
   name: Linux Foundation Training
   summary: Official Linux and open source training resources.
@@ -616,6 +974,37 @@
   - legacy:1_Foundational-Skills/README.md#L19
   - legacy:devopstools_final.md#L98
   needs_review: true
+- id: linux-kernel
+  name: Linux kernel
+  summary: Operating-system kernel underpinning Linux server, cloud, and container hosts.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You select or maintain host kernels and need upstream security, driver, and subsystem information.
+  avoid_when:
+  - You need a complete supported distribution; kernel source alone does not provide userland or a fleet
+    lifecycle.
+  maturity: established
+  official_url: https://www.kernel.org/
+  repository_url: https://github.com/torvalds/linux
+  repository_archived: false
+  documentation_url: https://github.com/torvalds/linux/blob/master/README
+  license_spdx: GPL-2.0-only WITH Linux-syscall-note
+  license_model: oss
+  sources:
+  - https://github.com/torvalds/linux
+  - https://github.com/torvalds/linux/blob/master/COPYING
+  - https://www.kernel.org/
+  - https://github.com/torvalds/linux/blob/master/README
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: linuxjourney
   name: LinuxJourney
   summary: Learn Linux from scratch.
@@ -646,6 +1035,30 @@
   - legacy:1_Foundational-Skills/README.md#L20
   - legacy:devopstools_final.md#L99
   needs_review: true
+- id: mobaxterm
+  name: MobaXterm
+  summary: Windows remote-administration terminal combining SSH, SFTP, X11, and other network clients.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You administer remote Unix and Windows systems from a Windows workstation and want integrated sessions
+    and file transfer.
+  avoid_when:
+  - You need a cross-platform client or cannot accept proprietary edition limits and licensing terms.
+  maturity: established
+  official_url: https://mobaxterm.mobatek.net/
+  license_model: commercial
+  sources:
+  - https://mobaxterm.mobatek.net/
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - operate
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: nodejs
   name: Node.js
   summary: Cross-platform JavaScript runtime used to build command-line tools, services, and automation.
@@ -678,6 +1091,121 @@
   - https://github.com/nodejs/node
   - https://github.com/nodejs/node/blob/main/LICENSE
   needs_review: false
+- id: oracle-linux
+  name: Oracle Linux
+  summary: Enterprise Linux distribution with optional commercial support and infrastructure-management
+    services.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You operate Oracle-oriented server workloads and need an enterprise Linux distribution with vendor
+    support options.
+  avoid_when:
+  - Your certifications mandate another distribution or you have not evaluated kernel and support-subscription
+    differences.
+  maturity: established
+  official_url: https://www.oracle.com/linux/
+  license_model: oss
+  sources:
+  - https://www.oracle.com/linux/
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+  commercial_offering: true
+- id: ouch
+  name: ouch
+  summary: Command-line archive compression and extraction tool with format detection.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You handle common archive formats interactively and want consistent commands.
+  avoid_when:
+  - Your automation requires specific native archiver options or unsupported formats.
+  maturity: growing
+  official_url: https://github.com/ouch-org/ouch
+  repository_url: https://github.com/ouch-org/ouch
+  repository_archived: false
+  documentation_url: https://github.com/ouch-org/ouch/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/ouch-org/ouch
+  - https://github.com/ouch-org/ouch/blob/main/LICENSE
+  - https://github.com/ouch-org/ouch/blob/main/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: powershell
+  name: PowerShell
+  summary: Cross-platform shell and scripting runtime for object-based system automation.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You automate Windows or cross-platform infrastructure using PowerShell modules and structured objects.
+  avoid_when:
+  - You need POSIX shell portability or depend on Windows-only modules on non-Windows hosts.
+  maturity: established
+  official_url: https://learn.microsoft.com/en-us/powershell/
+  repository_url: https://github.com/PowerShell/PowerShell
+  repository_archived: false
+  documentation_url: https://learn.microsoft.com/en-us/powershell/
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/PowerShell/PowerShell
+  - https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt
+  - https://learn.microsoft.com/en-us/powershell/
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: python
+  name: Python
+  summary: Programming language and reference runtime widely used for infrastructure automation and operational
+    tooling.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You build automation scripts or operate Python-based tools and can manage interpreter and dependency
+    lifecycles.
+  avoid_when:
+  - You require a dependency-free single binary or cannot maintain a supported interpreter environment.
+  maturity: established
+  official_url: https://www.python.org/
+  repository_url: https://github.com/python/cpython
+  repository_archived: false
+  documentation_url: https://github.com/python/cpython/blob/main/README.rst
+  license_model: oss
+  sources:
+  - https://github.com/python/cpython
+  - https://github.com/python/cpython/blob/main/LICENSE
+  - https://www.python.org/
+  - https://github.com/python/cpython/blob/main/README.rst
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: python-official-tutorial
   name: Python Official Tutorial
   summary: Official Python documentation and tutorial.
@@ -708,6 +1236,34 @@
   - legacy:1_Foundational-Skills/README.md#L37
   - legacy:devopstools_final.md#L116
   needs_review: true
+- id: ripgrep
+  name: ripgrep
+  summary: Recursive text-search CLI with regular expressions and ignore-file support.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You inspect logs, configuration, and repositories interactively or in controlled automation.
+  avoid_when:
+  - You need POSIX grep compatibility or must search ignored and hidden files without adjusting defaults.
+  maturity: established
+  repository_url: https://github.com/BurntSushi/ripgrep
+  repository_archived: false
+  documentation_url: https://github.com/BurntSushi/ripgrep/blob/master/README.md
+  license_spdx: MIT OR Unlicense
+  license_model: oss
+  sources:
+  - https://github.com/BurntSushi/ripgrep
+  - https://github.com/BurntSushi/ripgrep/blob/master/UNLICENSE
+  - https://github.com/BurntSushi/ripgrep/blob/master/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: rocky-linux
   name: Rocky Linux
   summary: Enterprise Linux distribution.
@@ -738,6 +1294,65 @@
   - legacy:1_Foundational-Skills/README.md#L21
   - legacy:devopstools_final.md#L100
   needs_review: true
+- id: ruby
+  name: Ruby
+  summary: Programming language and runtime used by automation tools and application services.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You maintain Ruby-based infrastructure tooling or services and can manage runtime and gem dependencies.
+  avoid_when:
+  - You need a standalone executable without a runtime or have no Ruby ecosystem requirements.
+  maturity: established
+  official_url: https://www.ruby-lang.org/en/
+  repository_url: https://github.com/ruby/ruby
+  repository_archived: false
+  documentation_url: https://github.com/ruby/ruby/blob/master/README.md
+  license_spdx: BSD-2-Clause OR Ruby
+  license_model: oss
+  sources:
+  - https://github.com/ruby/ruby
+  - https://github.com/ruby/ruby/blob/master/COPYING
+  - https://www.ruby-lang.org/en/
+  - https://github.com/ruby/ruby/blob/master/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: seesaw
+  name: Seesaw
+  summary: Linux Virtual Server-based load-balancing platform with redundant nodes and network configuration.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You operate an LVS load-balancing pair with the required shared layer-2 networking and routing expertise.
+  avoid_when:
+  - You need a managed load balancer or cannot provision the documented network interfaces and failover
+    topology.
+  maturity: established
+  repository_url: https://github.com/google/seesaw
+  repository_archived: false
+  documentation_url: https://github.com/google/seesaw/blob/master/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/google/seesaw
+  - https://github.com/google/seesaw/blob/master/LICENSE
+  - https://github.com/google/seesaw/blob/master/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: shellcheck
   name: ShellCheck
   summary: Shell script linter.
@@ -769,6 +1384,36 @@
   - legacy:1_Foundational-Skills/README.md#L22
   - legacy:devopstools_final.md#L101
   needs_review: true
+- id: starship
+  name: Starship
+  summary: Configurable cross-shell prompt showing repository and runtime context.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You want consistent interactive context indicators across development and administration shells.
+  avoid_when:
+  - You need shell completion or automation behaviour; a prompt is only a presentation layer.
+  maturity: established
+  official_url: https://starship.rs/
+  repository_url: https://github.com/starship/starship
+  repository_archived: false
+  documentation_url: https://github.com/starship/starship/blob/main/README.md
+  license_spdx: ISC
+  license_model: oss
+  sources:
+  - https://github.com/starship/starship
+  - https://github.com/starship/starship/blob/main/LICENSE
+  - https://starship.rs/
+  - https://github.com/starship/starship/blob/main/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: swiftorial
   name: Swiftorial
   summary: Interactive tutorials for learning Swift programming.
@@ -868,6 +1513,38 @@
   - https://github.com/systemd/systemd
   - https://github.com/systemd/systemd/tree/main/LICENSES
   needs_review: false
+- id: tailcat
+  name: tailcat
+  summary: Tailscale project providing short-lived encrypted netcat-style connections without a tailnet
+    account.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You need temporary machine-to-machine connectivity for development, file transfer, or CI and can protect
+    shared connection addresses.
+  avoid_when:
+  - You need centralized identity, policy, governance, or audit controls provided by a managed tailnet.
+  maturity: emerging
+  official_url: https://tailscale.com/tailcat
+  repository_url: https://github.com/tailscale/tailcat
+  repository_archived: false
+  documentation_url: https://github.com/tailscale/tailcat/blob/main/README.md
+  license_spdx: BSD-3-Clause
+  license_model: oss
+  sources:
+  - https://github.com/tailscale/tailcat
+  - https://github.com/tailscale/tailcat/blob/main/LICENSE
+  - https://tailscale.com/tailcat
+  - https://github.com/tailscale/tailcat/blob/main/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - develop
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: the-linux-command-line
   name: The Linux Command Line
   summary: Free book on Linux CLI.
@@ -944,6 +1621,34 @@
   status: active
   verified_on: '2026-08-29'
   sources: [https://trippy.rs/, https://github.com/fujiapple852/trippy, https://github.com/fujiapple852/trippy/blob/master/LICENSE]
+  needs_review: false
+- id: xh
+  name: xh
+  summary: Command-line HTTP client with concise request syntax and formatted responses.
+  categories:
+  - foundations-linux-scripting
+  use_when:
+  - You debug HTTP APIs or script controlled requests with readable command syntax.
+  avoid_when:
+  - Your scripts require curl-specific options or environments cannot install an additional binary.
+  maturity: established
+  repository_url: https://github.com/ducaale/xh
+  repository_archived: false
+  documentation_url: https://github.com/ducaale/xh/blob/master/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/ducaale/xh
+  - https://github.com/ducaale/xh/blob/master/LICENSE
+  - https://github.com/ducaale/xh/blob/master/README.md
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: zsh
   name: Zsh

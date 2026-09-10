@@ -86,6 +86,72 @@
   - https://www.aircrack-ng.org/documentation
   - https://github.com/aircrack-ng/aircrack-ng
   needs_review: false
+- id: altcha
+  name: ALTCHA
+  summary: Bot-protection family with a self-hosted MIT-licensed proof-of-work core and commercial Sentinel
+    and Cloud capabilities.
+  categories:
+  - application-cloud-security
+  use_when:
+  - You need bot protection and can operate the open-source challenge endpoint and server-side verification,
+    or select commercial Sentinel or Cloud capabilities.
+  avoid_when:
+  - You need protection without browser-side JavaScript or assume the MIT core licence includes commercial
+    Sentinel and Cloud capabilities.
+  maturity: growing
+  official_url: https://altcha.org/
+  license_model: open-core
+  sources:
+  - https://altcha.org/
+  - https://altcha.org/pricing/
+  - https://github.com/altcha-org/altcha
+  - https://github.com/altcha-org/altcha/blob/main/LICENSE.txt
+  - https://github.com/altcha-org/altcha/blob/main/README.md
+  roles:
+  - devsecops-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-09'
+  needs_review: false
+  license_spdx: MIT
+  repository_url: https://github.com/altcha-org/altcha
+  repository_archived: false
+  documentation_url: https://github.com/altcha-org/altcha/blob/main/README.md
+- id: anubis
+  name: Anubis
+  summary: Reverse proxy middleware that uses proof-of-work challenges to reduce automated web scraping
+    load.
+  categories:
+  - application-cloud-security
+  use_when:
+  - You operate public web services suffering expensive automated traffic and can deploy a challenge proxy.
+  avoid_when:
+  - Clients cannot execute JavaScript or accessibility and machine-to-machine access requirements conflict
+    with browser challenges.
+  maturity: growing
+  official_url: https://anubis.techaro.lol/
+  repository_url: https://github.com/TecharoHQ/anubis
+  repository_archived: false
+  documentation_url: https://github.com/TecharoHQ/anubis/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/TecharoHQ/anubis
+  - https://github.com/TecharoHQ/anubis/blob/main/LICENSE
+  - https://anubis.techaro.lol/
+  - https://github.com/TecharoHQ/anubis/blob/main/README.md
+  roles:
+  - devsecops-engineer
+  lifecycle_stages:
+  - deploy
+  - secure
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: apiiro
   name: Apiiro
   summary: Application security platform focused on securing agentic development and software delivery.
@@ -2430,6 +2496,34 @@
   - https://github.com/kubearmor/KubeArmor
   - https://github.com/kubearmor/KubeArmor/blob/main/LICENSE
   needs_review: false
+- id: kubernetes-audit-log-explorer
+  name: Kubernetes Audit Log Explorer
+  summary: Terminal interface for browsing and filtering Kubernetes audit-log events.
+  categories:
+  - application-cloud-security
+  use_when:
+  - You investigate existing Kubernetes audit logs locally and want interactive event inspection.
+  avoid_when:
+  - You need audit collection, long-term storage, or automated threat detection.
+  maturity: emerging
+  official_url: https://github.com/karlpvoss/kubernetes-audit-log-explorer
+  repository_url: https://github.com/karlpvoss/kubernetes-audit-log-explorer
+  repository_archived: false
+  documentation_url: https://github.com/karlpvoss/kubernetes-audit-log-explorer/blob/master/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/karlpvoss/kubernetes-audit-log-explorer
+  - https://github.com/karlpvoss/kubernetes-audit-log-explorer/blob/master/LICENSE
+  - https://github.com/karlpvoss/kubernetes-audit-log-explorer/blob/master/README.md
+  roles:
+  - devsecops-engineer
+  lifecycle_stages:
+  - secure
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: kubernetes-mcp-guard
   name: Kubernetes MCP Guard
   summary: Security-focused MCP server that proposes Kubernetes remediation actions behind explicit human approval gates.
@@ -2651,6 +2745,36 @@
   - https://www.metasploit.com/
   - https://docs.metasploit.com/
   - https://github.com/rapid7/metasploit-framework
+  needs_review: false
+- id: metatron
+  name: METATRON
+  summary: Experimental local-model assistant combining reconnaissance tools and stored scan results for
+    security assessment.
+  categories:
+  - application-cloud-security
+  use_when:
+  - You evaluate authorized security workflows in an isolated lab and can independently verify all model-generated
+    findings.
+  avoid_when:
+  - You need validated production risk assessments or unattended exploit decisions; generated analysis
+    is not authoritative.
+  maturity: experimental
+  repository_url: https://github.com/sooryathejas/METATRON
+  repository_archived: false
+  documentation_url: https://github.com/sooryathejas/METATRON/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/sooryathejas/METATRON
+  - https://github.com/sooryathejas/METATRON/blob/main/LICENSE
+  - https://github.com/sooryathejas/METATRON/blob/main/README.md
+  roles:
+  - devsecops-engineer
+  lifecycle_stages:
+  - secure
+  - test
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: mfasweep
   name: MFASweep
@@ -3358,6 +3482,38 @@
   sources:
   - https://owasp.org/www-project-amass/
   - https://github.com/owasp-amass/amass
+  needs_review: false
+- id: owasp-docksec
+  name: OWASP DockSec
+  summary: Container-security analysis tool combining scanners with AI-assisted explanations and remediation
+    guidance.
+  categories:
+  - application-cloud-security
+  use_when:
+  - You want to evaluate contextual Dockerfile findings and can review model output against underlying
+    scanner evidence.
+  avoid_when:
+  - You require authoritative vulnerability conclusions without human validation or cannot approve the
+    configured model-data flow.
+  maturity: experimental
+  official_url: https://owasp.org/DockSec/
+  repository_url: https://github.com/OWASP/DockSec
+  repository_archived: false
+  documentation_url: https://github.com/OWASP/DockSec/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/OWASP/DockSec
+  - https://github.com/OWASP/DockSec/blob/main/LICENSE
+  - https://owasp.org/DockSec/
+  - https://github.com/OWASP/DockSec/blob/main/README.md
+  roles:
+  - devsecops-engineer
+  lifecycle_stages:
+  - build
+  - secure
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: owasp-zap
   name: OWASP ZAP
@@ -4173,6 +4329,35 @@
   sources:
   - legacy:devopstools_final.md#L909
   needs_review: true
+- id: sniffglue
+  name: sniffglue
+  summary: Network packet sniffer designed with sandboxing for interactive traffic inspection.
+  categories:
+  - application-cloud-security
+  use_when:
+  - You inspect authorized network traffic and need concise terminal protocol visibility.
+  avoid_when:
+  - You need a full intrusion-detection system or comprehensive packet-analysis GUI.
+  maturity: growing
+  official_url: https://github.com/kpcyrd/sniffglue
+  repository_url: https://github.com/kpcyrd/sniffglue
+  repository_archived: false
+  documentation_url: https://github.com/kpcyrd/sniffglue/blob/main/README.md
+  license_model: oss
+  sources:
+  - https://github.com/kpcyrd/sniffglue
+  - https://github.com/kpcyrd/sniffglue/blob/main/LICENSE
+  - https://github.com/kpcyrd/sniffglue/blob/main/README.md
+  - https://github.com/kpcyrd/sniffglue/blob/main/Cargo.toml
+  roles:
+  - devsecops-engineer
+  lifecycle_stages:
+  - secure
+  - operate
+  status: active
+  verified_on: '2026-09-09'
+  needs_review: false
+  license_spdx: GPL-3.0-or-later
 - id: snort
   name: Snort
   summary: Open-source network intrusion detection and prevention system (IDS/IPS).
@@ -4777,6 +4962,34 @@
   sources:
   - legacy:devopstools_final.md#L921
   needs_review: true
+- id: vulnx
+  name: vulnx
+  summary: CLI for searching and analysing vulnerability intelligence from ProjectDiscovery services.
+  categories:
+  - application-cloud-security
+  use_when:
+  - You need scriptable CVE research and filtering for vulnerability triage with the service's access
+    limits understood.
+  avoid_when:
+  - You need a local vulnerability scanner; searching intelligence does not test whether your systems
+    are vulnerable.
+  maturity: growing
+  repository_url: https://github.com/projectdiscovery/vulnx
+  repository_archived: false
+  documentation_url: https://github.com/projectdiscovery/vulnx/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/projectdiscovery/vulnx
+  - https://github.com/projectdiscovery/vulnx/blob/main/LICENSE
+  - https://github.com/projectdiscovery/vulnx/blob/main/README.md
+  roles:
+  - devsecops-engineer
+  lifecycle_stages:
+  - secure
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: wazuh
   name: Wazuh
   summary: Open-source XDR and SIEM platform for threat detection and compliance monitoring.

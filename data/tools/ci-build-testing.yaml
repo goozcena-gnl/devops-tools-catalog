@@ -31,6 +31,35 @@
   - legacy:7_Development-Collaboration/README.md#L56
   - legacy:devopstools_final.md#L1093
   needs_review: false
+- id: ansible-molecule
+  name: Ansible Molecule
+  summary: Scenario-based testing framework for Ansible roles and collections.
+  categories:
+  - ci-build-testing
+  use_when:
+  - You need repeatable provisioning, convergence, and verification tests for Ansible changes in CI.
+  avoid_when:
+  - You cannot provide the scenario driver infrastructure or need a general-purpose application test runner.
+  maturity: established
+  official_url: https://docs.ansible.com/projects/molecule/
+  repository_url: https://github.com/ansible/molecule
+  repository_archived: false
+  documentation_url: https://docs.ansible.com/projects/molecule/
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/ansible/molecule
+  - https://github.com/ansible/molecule/blob/main/LICENSE
+  - https://docs.ansible.com/projects/molecule/
+  roles:
+  - devops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: apache-jmeter
   name: Apache JMeter
   summary: Load testing and performance measurement tool.
@@ -237,20 +266,24 @@
   - build
   - test
   use_when:
-  - '* Your source code lives in Bitbucket and you want zero-config CI.'
+  - Your source repositories are in Bitbucket Cloud and you want integrated CI/CD with hosted or supported
+    self-hosted runners.
   avoid_when:
-  - '* You need complex multi-repo or multi-cloud pipelines.'
+  - Your workflow cannot use Bitbucket Cloud or requires features outside the selected plan.
   deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-08'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L12
   - legacy:devopstools_final.md#L312
-  needs_review: true
+  - https://www.atlassian.com/fr/software/bitbucket/features/pipelines
+  - https://www.atlassian.com/software/bitbucket/pricing
+  needs_review: false
+  commercial_offering: true
 - id: bitrise
   name: Bitrise
   summary: CI/CD for mobile apps with automation workflows.
@@ -401,6 +434,92 @@
   - legacy:3_CI-CD-Automation/README.md#L20
   - legacy:devopstools_final.md#L316
   needs_review: true
+- id: cargo-chef
+  name: cargo-chef
+  summary: Tool for separating Rust dependency builds into cacheable container-build stages.
+  categories:
+  - ci-build-testing
+  use_when:
+  - You build Rust services in containers and want to preserve dependency layers across application changes.
+  avoid_when:
+  - Your build layout cannot support its recipe assumptions or existing cache tooling already solves the
+    bottleneck.
+  maturity: growing
+  repository_url: https://github.com/LukeMathWalker/cargo-chef
+  repository_archived: false
+  documentation_url: https://github.com/LukeMathWalker/cargo-chef/blob/main/README.md
+  license_spdx: MIT OR Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/LukeMathWalker/cargo-chef
+  - https://github.com/LukeMathWalker/cargo-chef/blob/main/LICENSE-APACHE
+  - https://github.com/LukeMathWalker/cargo-chef/blob/main/README.md
+  roles:
+  - devops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: cargo-nextest
+  name: cargo-nextest
+  summary: Rust test runner with parallel execution, profiles, and CI-oriented reporting.
+  categories:
+  - ci-build-testing
+  use_when:
+  - You maintain Rust projects and need configurable test execution and CI feedback.
+  avoid_when:
+  - Your test suite relies on unsupported cargo-test behaviours without adapting its execution model.
+  maturity: established
+  official_url: https://nexte.st/
+  repository_url: https://github.com/nextest-rs/nextest
+  repository_archived: false
+  documentation_url: https://github.com/nextest-rs/nextest/blob/main/README.md
+  license_spdx: MIT OR Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/nextest-rs/nextest
+  - https://github.com/nextest-rs/nextest/blob/main/LICENSE-APACHE
+  - https://nexte.st/
+  - https://github.com/nextest-rs/nextest/blob/main/README.md
+  roles:
+  - devops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: cargo-semver-checks
+  name: cargo-semver-checks
+  summary: Rust library API compatibility checker for detecting semantic-versioning violations.
+  categories:
+  - ci-build-testing
+  use_when:
+  - You publish Rust libraries and want release checks against a selected baseline API.
+  avoid_when:
+  - You need behavioural compatibility proof or test binaries without a public library API.
+  maturity: growing
+  repository_url: https://github.com/obi1kenobi/cargo-semver-checks
+  repository_archived: false
+  documentation_url: https://github.com/obi1kenobi/cargo-semver-checks/blob/main/README.md
+  license_spdx: MIT OR Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/obi1kenobi/cargo-semver-checks
+  - https://github.com/obi1kenobi/cargo-semver-checks/blob/main/LICENSE-APACHE
+  - https://github.com/obi1kenobi/cargo-semver-checks/blob/main/README.md
+  roles:
+  - devops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - test
+  - release
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+  commercial_offering: true
 - id: circleci
   name: CircleCI
   summary: Cloud CI/CD platform.
@@ -1026,6 +1145,35 @@
   - legacy:3_CI-CD-Automation/README.md#L42
   - legacy:devopstools_final.md#L328
   needs_review: true
+- id: hurl
+  name: Hurl
+  summary: HTTP request and assertion runner using plain-text test files.
+  categories:
+  - ci-build-testing
+  use_when:
+  - You need versioned API smoke tests and response assertions in delivery pipelines.
+  avoid_when:
+  - You need full browser interaction or a distributed performance-testing service.
+  maturity: established
+  official_url: https://hurl.dev/
+  repository_url: https://github.com/Orange-OpenSource/hurl
+  repository_archived: false
+  documentation_url: https://github.com/Orange-OpenSource/hurl/blob/master/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/Orange-OpenSource/hurl
+  - https://github.com/Orange-OpenSource/hurl/blob/master/LICENSE
+  - https://hurl.dev/
+  - https://github.com/Orange-OpenSource/hurl/blob/master/README.md
+  roles:
+  - devops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - test
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: jasmine
   name: Jasmine
   summary: Behavior-driven JavaScript testing framework for browser and Node.js applications.
@@ -1218,6 +1366,38 @@
   - legacy:7_Development-Collaboration/README.md#L13
   - legacy:devopstools_final.md#L1035
   needs_review: true
+- id: lightpanda
+  name: Lightpanda Browser
+  summary: Headless browser engine for JavaScript-driven automation without graphical rendering.
+  categories:
+  - ci-build-testing
+  use_when:
+  - You run browser automation where resource consumption matters and can validate site and protocol compatibility.
+  avoid_when:
+  - You need screenshot rendering or full Chromium compatibility for end-user visual testing.
+  maturity: growing
+  official_url: https://lightpanda.io/
+  repository_url: https://github.com/lightpanda-io/browser
+  repository_archived: false
+  documentation_url: https://github.com/lightpanda-io/browser/blob/main/README.md
+  license_model: oss
+  sources:
+  - https://github.com/lightpanda-io/browser
+  - https://github.com/lightpanda-io/browser/blob/main/LICENSE
+  - https://lightpanda.io/
+  - https://github.com/lightpanda-io/browser/blob/main/README.md
+  - https://github.com/lightpanda-io/browser/blob/main/src/main.zig
+  roles:
+  - devops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - test
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-09'
+  needs_review: false
+  license_spdx: AGPL-3.0-or-later
 - id: lychee
   name: lychee
   summary: Asynchronous command-line link checker for Markdown, HTML, reStructuredText, websites, and
@@ -1645,6 +1825,33 @@
   - legacy:7_Development-Collaboration/README.md#L29
   - legacy:devopstools_final.md#L1053
   needs_review: true
+- id: sccache
+  name: sccache
+  summary: Compiler cache supporting local and remote storage backends.
+  categories:
+  - ci-build-testing
+  use_when:
+  - You need to reuse compilation outputs across compatible CI or developer builds.
+  avoid_when:
+  - Your builds are not cacheable or you cannot secure and manage shared cache storage.
+  maturity: established
+  repository_url: https://github.com/mozilla/sccache
+  repository_archived: false
+  documentation_url: https://github.com/mozilla/sccache/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/mozilla/sccache
+  - https://github.com/mozilla/sccache/blob/main/LICENSE
+  - https://github.com/mozilla/sccache/blob/main/README.md
+  roles:
+  - devops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: schemathesis
   name: Schemathesis
   summary: Property-based API testing tool that generates cases from OpenAPI and GraphQL schemas.
@@ -2101,6 +2308,31 @@
   - legacy:3_CI-CD-Automation/README.md#L66
   - legacy:devopstools_final.md#L343
   needs_review: true
+- id: trunk
+  name: Trunk
+  summary: Developer workflow platform for code checks, flaky-test management, and merge automation.
+  categories:
+  - ci-build-testing
+  use_when:
+  - You need coordinated repository quality checks and CI workflow services with appropriate plan controls.
+  avoid_when:
+  - You need only a standalone linter or cannot accept the selected hosted integration and billing model.
+  maturity: established
+  official_url: https://trunk.io/
+  license_model: commercial
+  sources:
+  - https://trunk.io/
+  - https://trunk.io/pricing
+  roles:
+  - devops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - test
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: validate-dependabot
   name: validate-dependabot
   summary: GitHub Action that validates `dependabot.yml` against the official Dependabot schema before

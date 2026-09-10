@@ -250,6 +250,33 @@
   sources:
   - legacy:devopstools_final.md#L697
   needs_review: true
+- id: better-stack
+  name: Better Stack
+  summary: Commercial observability and incident-management platform with telemetry, on-call, and status-page
+    services.
+  categories:
+  - monitoring-metrics-logs-tracing
+  use_when:
+  - You want managed telemetry and incident workflows and can accept the service's retention and usage
+    billing.
+  avoid_when:
+  - You need an entirely self-hosted stack or cannot send operational telemetry to the provider.
+  maturity: established
+  official_url: https://betterstack.com/
+  license_model: commercial
+  sources:
+  - https://betterstack.com/
+  - https://betterstack.com/pricing
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: blackbox-exporter
   name: blackbox_exporter
   summary: Prometheus exporter for probing HTTP, HTTPS, DNS, TCP, ICMP, and gRPC endpoints.
@@ -277,6 +304,35 @@
   sources:
   - legacy:devopstools_final.md#L739
   needs_review: true
+- id: bottom
+  name: bottom
+  summary: Terminal resource monitor for processes, CPU, memory, and disks.
+  categories:
+  - monitoring-metrics-logs-tracing
+  use_when:
+  - You need interactive host troubleshooting without deploying a monitoring backend.
+  avoid_when:
+  - You need durable fleet telemetry, alerting, or centralized retention.
+  maturity: established
+  official_url: https://bottom.pages.dev/stable/
+  repository_url: https://github.com/ClementTsang/bottom
+  repository_archived: false
+  documentation_url: https://bottom.pages.dev/stable/
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/ClementTsang/bottom
+  - https://github.com/ClementTsang/bottom/blob/main/LICENSE
+  - https://bottom.pages.dev/stable/
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: bugsink
   name: Bugsink
   summary: Self-hosted Sentry SDK-compatible error tracking service.
@@ -1013,6 +1069,36 @@
   - https://glitchtip.com/documentation/
   - https://gitlab.com/glitchtip/glitchtip-backend
   needs_review: false
+- id: goaccess
+  name: GoAccess
+  summary: Terminal and HTML web-log analyser providing real-time HTTP traffic statistics.
+  categories:
+  - monitoring-metrics-logs-tracing
+  use_when:
+  - You need immediate analysis of web access logs on a server without deploying a full telemetry backend.
+  avoid_when:
+  - You need distributed tracing, application instrumentation, or centrally retained multi-host observability.
+  maturity: established
+  official_url: https://goaccess.io/
+  repository_url: https://github.com/allinurl/goaccess
+  repository_archived: false
+  documentation_url: https://github.com/allinurl/goaccess/blob/master/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/allinurl/goaccess
+  - https://github.com/allinurl/goaccess/blob/master/COPYING
+  - https://goaccess.io/
+  - https://github.com/allinurl/goaccess/blob/master/README.md
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: gonzo
   name: Gonzo
   summary: K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.
@@ -1257,6 +1343,32 @@
   - legacy:5_Monitoring-Observability/README.md#L42
   - legacy:devopstools_final.md#L747
   needs_review: true
+- id: groundcover
+  name: groundcover
+  summary: Commercial observability platform offering infrastructure and application monitoring with BYOC
+    deployment.
+  categories:
+  - monitoring-metrics-logs-tracing
+  use_when:
+  - You want managed observability capabilities while retaining the documented data plane in your cloud.
+  avoid_when:
+  - You require a wholly open-source platform or cannot operate its cloud and agent prerequisites.
+  maturity: growing
+  official_url: https://www.groundcover.com/
+  license_model: commercial
+  sources:
+  - https://www.groundcover.com/
+  - https://www.groundcover.com/pricing
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: grove
   name: grove
   summary: AI-powered Kubernetes troubleshooting.
@@ -1972,8 +2084,9 @@
   needs_review: false
 - id: openobserve
   name: OpenObserve
-  summary: Unified logs/metrics/traces with a focus on log search and cost efficiency.
-  official_url: https://openobserve.ai
+  summary: Observability platform for logs, metrics, and traces with an open-source core and commercial
+    enterprise offerings.
+  official_url: https://openobserve.ai/
   repository_url: https://github.com/openobserve/openobserve
   categories:
   - monitoring-metrics-logs-tracing
@@ -1987,20 +2100,30 @@
   - operate
   - monitor
   use_when:
-  - You want an Elasticsearch alternative with drastically lower storage costs.
+  - You want unified telemetry with a self-hosted option and can manage storage, retention, and ingestion.
   avoid_when:
-  - You need a mature, battle-tested ecosystem with wide third-party integrations.
+  - You require enterprise features without reviewing edition terms or cannot operate the selected storage
+    architecture.
   deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_model: open-core
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-09'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L59
   - legacy:devopstools_final.md#L767
-  needs_review: true
+  - https://github.com/openobserve/openobserve
+  - https://github.com/openobserve/openobserve/blob/main/LICENSE
+  - https://openobserve.ai/
+  - https://github.com/openobserve/openobserve/blob/main/README.md
+  - https://openobserve.ai/pricing/
+  needs_review: false
+  repository_archived: false
+  documentation_url: https://github.com/openobserve/openobserve/blob/main/README.md
+  commercial_offering: true
+  license_spdx: AGPL-3.0-only
 - id: opensearch
   name: OpenSearch
   summary: Search/analytics engine commonly used for logs (Elastic-alternative fork).
@@ -2529,6 +2652,36 @@
   sources:
   - https://github.com/slok-operator/slok
   - https://github.com/slok-operator/slok/blob/main/LICENSE
+  needs_review: false
+- id: sniffnet
+  name: Sniffnet
+  summary: Desktop network-traffic monitor showing connections and traffic statistics.
+  categories:
+  - monitoring-metrics-logs-tracing
+  use_when:
+  - You troubleshoot traffic on an authorized host and can provide packet-capture permissions.
+  avoid_when:
+  - You need full packet-forensic decoding or centralized network detection and retention.
+  maturity: growing
+  official_url: https://sniffnet.app/
+  repository_url: https://github.com/GyulyVGC/sniffnet
+  repository_archived: false
+  documentation_url: https://github.com/GyulyVGC/sniffnet/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/GyulyVGC/sniffnet
+  - https://github.com/GyulyVGC/sniffnet/blob/main/LICENSE-APACHE
+  - https://sniffnet.app/
+  - https://github.com/GyulyVGC/sniffnet/blob/main/README.md
+  roles:
+  - observability-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - monitor
+  - operate
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: syslog-ng
   name: syslog-ng

@@ -86,6 +86,36 @@
   - legacy:4_Kubernetes-Containers/README.md#L69
   - legacy:devopstools_final.md#L530
   needs_review: true
+- id: antrea
+  name: Antrea
+  summary: Kubernetes CNI and network-policy implementation built on Open vSwitch.
+  categories:
+  - kubernetes-networking-storage-addons
+  use_when:
+  - You need a Kubernetes network stack with OVS-based policy enforcement and operational diagnostics.
+  avoid_when:
+  - Your platform standardizes on another CNI or cannot support the required node networking configuration.
+  maturity: established
+  official_url: https://antrea.io/
+  repository_url: https://github.com/antrea-io/antrea
+  repository_archived: false
+  documentation_url: https://github.com/antrea-io/antrea/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/antrea-io/antrea
+  - https://github.com/antrea-io/antrea/blob/main/LICENSE
+  - https://antrea.io/
+  - https://github.com/antrea-io/antrea/blob/main/README.md
+  roles:
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: aralez
   name: Aralez
   summary: Kubernetes operator (see docs).
@@ -1212,7 +1242,7 @@
 - id: hashicorp-consul
   name: HashiCorp Consul
   summary: Service networking and discovery platform.
-  official_url: https://www.consul.io
+  official_url: https://developer.hashicorp.com/consul
   repository_url: https://github.com/hashicorp/consul
   categories:
   - kubernetes-networking-storage-addons
@@ -1226,20 +1256,29 @@
   - deploy
   - operate
   use_when:
-  - Service discovery and mesh across VMs and Kubernetes (multi-runtime).
+  - You need service discovery and networking across machines and clusters and can comply with current
+    source-available terms.
   avoid_when:
-  - You're Kubernetes-only and want a lighter mesh (use Istio or Linkerd).
+  - You require an OSI-approved licence for current releases or native platform discovery meets the requirement.
   deployment_models: []
   license_model: source-available
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-08'
   sources:
   - legacy:6_Security/README.md#L120
   - legacy:devopstools_final.md#L1015
-  needs_review: true
+  - https://github.com/hashicorp/consul
+  - https://github.com/hashicorp/consul/blob/main/LICENSE
+  - https://developer.hashicorp.com/consul
+  - https://github.com/hashicorp/consul/blob/main/README.md
+  needs_review: false
+  repository_archived: false
+  documentation_url: https://github.com/hashicorp/consul/blob/main/README.md
+  license_spdx: BUSL-1.1
+  commercial_offering: true
 - id: headlamp-plugins
   name: Headlamp Plugins
   summary: Official plugin collection for the Headlamp Kubernetes UI.
@@ -1999,9 +2038,9 @@
   - legacy:devopstools_final.md#L585
   needs_review: true
 - id: kong
-  name: Kong
-  summary: API gateway (Kong Gateway) with enterprise and SaaS offerings (Konnect).
-  official_url: https://konghq.com/kong
+  name: Kong Gateway
+  summary: API gateway with an open-source core and commercial management and enterprise capabilities.
+  official_url: https://developer.konghq.com/gateway/install/
   repository_url: https://github.com/Kong/kong
   categories:
   - kubernetes-networking-storage-addons
@@ -2015,20 +2054,28 @@
   - deploy
   - operate
   use_when:
-  - You need a feature-rich API gateway with plugin ecosystem, rate limiting, and auth.
+  - You need policy and plugin-based API traffic control and can select the appropriate gateway edition.
   avoid_when:
-  - A simpler ingress controller (NGINX/Traefik) or service mesh handles your API traffic needs.
+  - You assume commercial plugins, support, or Konnect services are included under the core software licence.
   deployment_models: []
   license_model: open-core
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-08'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L110
   - legacy:devopstools_final.md#L586
-  needs_review: true
+  - https://github.com/Kong/kong
+  - https://github.com/Kong/kong/blob/master/LICENSE
+  - https://developer.konghq.com/gateway/install/
+  - https://github.com/Kong/kong/blob/master/README.md
+  needs_review: false
+  repository_archived: false
+  documentation_url: https://github.com/Kong/kong/blob/master/README.md
+  license_spdx: Apache-2.0
+  commercial_offering: true
 - id: koreo
   name: Koreo
   summary: Kubernetes resource orchestration framework.
@@ -2864,6 +2911,35 @@
   sources:
   - legacy:devopstools_final.md#L611
   needs_review: true
+- id: netflix-eureka
+  name: Eureka
+  summary: Service registry supporting client-side discovery and failover.
+  categories:
+  - kubernetes-networking-storage-addons
+  use_when:
+  - You operate services built around Eureka discovery and can manage registry replication and client
+    behaviour.
+  avoid_when:
+  - Native platform discovery is sufficient or your clients do not integrate with the Eureka protocol.
+  maturity: established
+  repository_url: https://github.com/Netflix/eureka
+  repository_archived: false
+  documentation_url: https://github.com/Netflix/eureka/blob/master/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/Netflix/eureka
+  - https://github.com/Netflix/eureka/blob/master/LICENSE
+  - https://github.com/Netflix/eureka/blob/master/README.md
+  roles:
+  - platform-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: nginx
   name: NGINX
   summary: Web server, reverse proxy, load balancer, and HTTP cache.
@@ -2992,6 +3068,37 @@
   - legacy:4_Kubernetes-Containers/README.md#L126
   - legacy:devopstools_final.md#L614
   needs_review: true
+- id: ocelot
+  name: Ocelot
+  summary: API gateway middleware for .NET services with routing and request aggregation.
+  categories:
+  - kubernetes-networking-storage-addons
+  use_when:
+  - You build a .NET-hosted gateway and want routing behaviour integrated into your application deployment.
+  avoid_when:
+  - You need an independently operated gateway appliance or cannot maintain a .NET application and its
+    dependencies.
+  maturity: established
+  official_url: https://ocelot.readthedocs.io/en/latest/
+  repository_url: https://github.com/ThreeMammals/Ocelot
+  repository_archived: false
+  documentation_url: https://ocelot.readthedocs.io/en/latest/
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/ThreeMammals/Ocelot
+  - https://github.com/ThreeMammals/Ocelot/blob/develop/LICENSE.md
+  - https://ocelot.readthedocs.io/en/latest/
+  roles:
+  - platform-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: openkruise
   name: OpenKruise
   summary: Enhanced workloads for Kubernetes.
@@ -3648,6 +3755,37 @@
   - legacy:4_Kubernetes-Containers/README.md#L137
   - legacy:devopstools_final.md#L632
   needs_review: true
+- id: traefik
+  name: Traefik Proxy
+  summary: Reverse proxy and ingress controller with dynamic service discovery.
+  categories:
+  - kubernetes-networking-storage-addons
+  use_when:
+  - You need ingress routing that follows container or Kubernetes service changes.
+  avoid_when:
+  - Your platform requires unsupported routing policy or enterprise features absent from the open-source
+    proxy.
+  maturity: established
+  official_url: https://traefik.io/traefik
+  repository_url: https://github.com/traefik/traefik
+  repository_archived: false
+  documentation_url: https://github.com/traefik/traefik/blob/master/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/traefik/traefik
+  - https://github.com/traefik/traefik/blob/master/LICENSE.md
+  - https://traefik.io/traefik
+  - https://github.com/traefik/traefik/blob/master/README.md
+  roles:
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: trivy
   name: Trivy
   summary: Vulnerability scanner for containers and Kubernetes.
@@ -3721,6 +3859,35 @@
   - legacy:4_Kubernetes-Containers/README.md#L176
   - legacy:devopstools_final.md#L680
   needs_review: true
+- id: valkey-operator
+  name: Valkey Operator
+  summary: Kubernetes operator for deploying and managing Valkey clusters, including scaling and failover.
+  categories:
+  - kubernetes-networking-storage-addons
+  use_when:
+  - You are evaluating Kubernetes-managed Valkey and can test its alpha API and recovery behavior in noncritical
+    environments.
+  avoid_when:
+  - You require a production-ready operator; upstream explicitly warns that the project is in early development.
+  maturity: experimental
+  repository_url: https://github.com/valkey-io/valkey-operator
+  repository_archived: false
+  documentation_url: https://github.com/valkey-io/valkey-operator/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/valkey-io/valkey-operator
+  - https://github.com/valkey-io/valkey-operator/blob/main/LICENSE
+  - https://github.com/valkey-io/valkey-operator/blob/main/README.md
+  roles:
+  - platform-engineer
+  - kubernetes-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: vitess
   name: Vitess
   summary: Database clustering system for horizontal scaling of MySQL.
@@ -3831,6 +3998,41 @@
   - https://github.com/WozzHQ/wozz
   - https://github.com/WozzHQ/wozz#readme
   - https://github.com/WozzHQ/wozz/blob/main/LICENSE
+  needs_review: false
+- id: wso2-api-platform
+  name: WSO2 API Platform
+  summary: API lifecycle platform with gateway, governance, and developer-portal capabilities across deployment
+    models.
+  categories:
+  - kubernetes-networking-storage-addons
+  use_when:
+  - You need API governance and gateway operations and can choose between self-built source and supported
+    commercial distributions.
+  avoid_when:
+  - You expect the upstream software licence to provide production subscriptions, managed hosting, or
+    vendor update rights.
+  maturity: growing
+  official_url: https://wso2.com/api-platform/
+  repository_url: https://github.com/wso2/api-platform
+  repository_archived: false
+  documentation_url: https://github.com/wso2/api-platform/blob/main/README.md
+  license_spdx: Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/wso2/api-platform
+  - https://github.com/wso2/api-platform/blob/main/LICENSE
+  - https://wso2.com/api-platform/
+  - https://github.com/wso2/api-platform/blob/main/README.md
+  - https://wso2.com/subscription/
+  roles:
+  - platform-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
   needs_review: false
 - id: yaml
   name: YAML

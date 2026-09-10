@@ -1,3 +1,32 @@
+- id: acr-synctool
+  name: ACR-SyncTool
+  summary: Command-line tool for synchronizing container images into Azure Container Registry.
+  categories:
+  - artifact-package-management
+  use_when:
+  - You need to populate a restricted ACR from approved upstream registries using an authorized execution
+    environment.
+  avoid_when:
+  - You need general registry replication policy or cannot provide source and destination access.
+  maturity: growing
+  official_url: https://github.com/IvanJosipovic/ACR-SyncTool
+  repository_url: https://github.com/IvanJosipovic/ACR-SyncTool
+  repository_archived: false
+  documentation_url: https://github.com/IvanJosipovic/ACR-SyncTool/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/IvanJosipovic/ACR-SyncTool
+  - https://github.com/IvanJosipovic/ACR-SyncTool/blob/main/LICENSE
+  - https://github.com/IvanJosipovic/ACR-SyncTool/blob/main/README.md
+  roles:
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - release
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: artifact-hub
   name: Artifact Hub
   summary: Discover and share packages (Helm charts, operators, etc.).
@@ -29,6 +58,33 @@
   - legacy:3_CI-CD-Automation/README.md#L102
   - legacy:devopstools_final.md#L367
   needs_review: true
+- id: cargo-binstall
+  name: cargo-binstall
+  summary: Installer for prebuilt Rust package executables with source-build fallback.
+  categories:
+  - artifact-package-management
+  use_when:
+  - You want faster Rust CLI installation and can define trust requirements for binary release sources.
+  avoid_when:
+  - You require builds exclusively from audited source or cannot accept upstream binary provenance.
+  maturity: growing
+  repository_url: https://github.com/cargo-bins/cargo-binstall
+  repository_archived: false
+  documentation_url: https://github.com/cargo-bins/cargo-binstall/blob/main/README.md
+  license_spdx: GPL-3.0-only
+  license_model: oss
+  sources:
+  - https://github.com/cargo-bins/cargo-binstall
+  - https://github.com/cargo-bins/cargo-binstall/blob/main/crates/bin/LICENSE
+  - https://github.com/cargo-bins/cargo-binstall/blob/main/README.md
+  roles:
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - deploy
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: cloudsmith
   name: Cloudsmith
   summary: Managed package and artifact repository service.

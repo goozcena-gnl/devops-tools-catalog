@@ -1,3 +1,61 @@
+- id: cargo-deny
+  name: cargo-deny
+  summary: Cargo dependency policy checker for advisories, licences, sources, and banned packages.
+  categories:
+  - software-supply-chain-security
+  use_when:
+  - You enforce Rust dependency policy in CI with explicit exception and licence rules.
+  avoid_when:
+  - You need application-level vulnerability testing rather than dependency metadata checks.
+  maturity: established
+  repository_url: https://github.com/EmbarkStudios/cargo-deny
+  repository_archived: false
+  documentation_url: https://github.com/EmbarkStudios/cargo-deny/blob/main/README.md
+  license_spdx: MIT OR Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/EmbarkStudios/cargo-deny
+  - https://github.com/EmbarkStudios/cargo-deny/blob/main/LICENSE-APACHE
+  - https://github.com/EmbarkStudios/cargo-deny/blob/main/README.md
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - secure
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
+- id: cargo-vet
+  name: cargo-vet
+  summary: Tool for recording and enforcing human audits of Rust dependencies.
+  categories:
+  - software-supply-chain-security
+  use_when:
+  - You maintain a Rust dependency-review process and can fund review and audit-policy upkeep.
+  avoid_when:
+  - You expect automatic vulnerability scanning to replace human source review.
+  maturity: growing
+  official_url: https://mozilla.github.io/cargo-vet/
+  repository_url: https://github.com/mozilla/cargo-vet
+  repository_archived: false
+  documentation_url: https://github.com/mozilla/cargo-vet/blob/main/README.md
+  license_spdx: MIT OR Apache-2.0
+  license_model: oss
+  sources:
+  - https://github.com/mozilla/cargo-vet
+  - https://github.com/mozilla/cargo-vet/blob/main/LICENSE-APACHE
+  - https://mozilla.github.io/cargo-vet/
+  - https://github.com/mozilla/cargo-vet/blob/main/README.md
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - secure
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: dependency-track
   name: Dependency-Track
   summary: OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
@@ -40,6 +98,36 @@
   - https://github.com/DependencyTrack/dependency-track
   - https://github.com/DependencyTrack/dependency-track/blob/master/LICENSE
   needs_review: false
+- id: ggshield
+  name: ggshield
+  summary: GitGuardian CLI for secret scanning in local development, hooks, and CI.
+  categories:
+  - software-supply-chain-security
+  use_when:
+  - You need to invoke GitGuardian scanning from developer or CI workflows with appropriate API credentials.
+  avoid_when:
+  - You require fully offline scanning or cannot send eligible content to the configured GitGuardian service.
+  maturity: established
+  repository_url: https://github.com/GitGuardian/ggshield
+  repository_archived: false
+  documentation_url: https://github.com/GitGuardian/ggshield/blob/main/README.md
+  license_spdx: MIT
+  license_model: oss
+  sources:
+  - https://github.com/GitGuardian/ggshield
+  - https://github.com/GitGuardian/ggshield/blob/main/LICENSE
+  - https://github.com/GitGuardian/ggshield/blob/main/README.md
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - develop
+  - build
+  - secure
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: git-push-no-mistakes
   name: git push no-mistakes
   summary: Guardrails to prevent common mistakes when pushing to Git.
@@ -67,6 +155,31 @@
   sources:
   - legacy:devopstools_final.md#L1106
   needs_review: true
+- id: gitguardian
+  name: GitGuardian
+  summary: Commercial secret-security platform for detecting and managing credential exposure across development
+    systems.
+  categories:
+  - software-supply-chain-security
+  use_when:
+  - You need organization-wide secret detection, remediation workflows, and managed integrations.
+  avoid_when:
+  - You need a standalone offline scanner or assume the ggshield CLI licence covers the hosted platform.
+  maturity: established
+  official_url: https://www.gitguardian.com/
+  license_model: commercial
+  sources:
+  - https://www.gitguardian.com/
+  - https://www.gitguardian.com/pricing
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - secure
+  commercial_offering: true
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: harden-runner
   name: Harden-Runner
   summary: GitHub Actions runner security component that observes runtime network, file, and process activity.
@@ -239,6 +352,35 @@
   - legacy:7_Development-Collaboration/README.md#L64
   - legacy:devopstools_final.md#L1102
   needs_review: true
+- id: rustsec-advisory-db
+  name: RustSec Advisory Database
+  summary: Community advisory database for security and maintenance issues in Rust dependencies.
+  categories:
+  - software-supply-chain-security
+  use_when:
+  - You assess Rust dependency risk and need machine-readable advisories for audit tooling.
+  avoid_when:
+  - You need proof that unlisted packages are safe or expect every advisory to use one identical content
+    licence.
+  maturity: established
+  official_url: https://rustsec.org/
+  repository_url: https://github.com/rustsec/advisory-db
+  repository_archived: false
+  documentation_url: https://github.com/rustsec/advisory-db/blob/main/README.md
+  license_model: documentation
+  sources:
+  - https://github.com/rustsec/advisory-db
+  - https://github.com/rustsec/advisory-db/blob/main/LICENSE.txt
+  - https://rustsec.org/
+  - https://github.com/rustsec/advisory-db/blob/main/README.md
+  roles:
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - secure
+  status: active
+  verified_on: '2026-09-08'
+  needs_review: false
 - id: simple-git-hooks
   name: simple-git-hooks
   summary: Lightweight Git hooks manager for Node.js.
