@@ -1232,7 +1232,7 @@
 - id: dependencycheck
   name: DependencyCheck
   summary: Identify vulnerable dependencies.
-  official_url: https://owasp.org/www-project-dependency-check
+  official_url: https://owasp.org/projects/dependency-check
   repository_url: https://github.com/dependency-check/DependencyCheck
   documentation_url: https://dependency-check.github.io/DependencyCheck/
   categories:
@@ -1256,8 +1256,11 @@
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-10'
   sources:
+  - https://owasp.org/www-project-dependency-check
+  - https://owasp.org/www-project-dependency-check/
+  - https://owasp.org/projects/dependency-check
   - legacy:6_Security/README.md#L20
   - legacy:devopstools_final.md#L856
   needs_review: false
@@ -3454,7 +3457,7 @@
 - id: owasp-amass
   name: OWASP Amass
   summary: Attack-surface mapping and external asset discovery framework.
-  official_url: https://owasp.org/www-project-amass/
+  official_url: https://owasp.org/projects/amass
   repository_url: https://github.com/owasp-amass/amass
   repository_archived: false
   categories:
@@ -3478,8 +3481,9 @@
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-21'
+  verified_on: '2026-09-10'
   sources:
+  - https://owasp.org/projects/amass
   - https://owasp.org/www-project-amass/
   - https://github.com/owasp-amass/amass
   needs_review: false
@@ -3496,13 +3500,14 @@
   - You require authoritative vulnerability conclusions without human validation or cannot approve the
     configured model-data flow.
   maturity: experimental
-  official_url: https://owasp.org/DockSec/
+  official_url: https://owasp.org/projects/docksec
   repository_url: https://github.com/OWASP/DockSec
   repository_archived: false
   documentation_url: https://github.com/OWASP/DockSec/blob/main/README.md
   license_spdx: MIT
   license_model: oss
   sources:
+  - https://owasp.org/projects/docksec
   - https://github.com/OWASP/DockSec
   - https://github.com/OWASP/DockSec/blob/main/LICENSE
   - https://owasp.org/DockSec/
@@ -3513,7 +3518,7 @@
   - build
   - secure
   status: active
-  verified_on: '2026-09-08'
+  verified_on: '2026-09-10'
   needs_review: false
 - id: owasp-zap
   name: OWASP ZAP

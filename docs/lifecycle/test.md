@@ -99,7 +99,7 @@
 - [Deep Agents](https://github.com/langchain-ai/deepagents) — Agent harness with tool execution, context management, persistence, and sandbox integration built on LangGraph.
 - [DeepEval](https://deepeval.com/) — Local-first framework for evaluating and regression-testing LLM applications, agents, RAG pipelines, and MCP systems.
 - [DefectDojo](https://www.defectdojo.com/) — Application security posture and vulnerability-management platform that ingests findings from many scanners.
-- [DependencyCheck](https://owasp.org/www-project-dependency-check) — Identify vulnerable dependencies.
+- [DependencyCheck](https://owasp.org/projects/dependency-check) — Identify vulnerable dependencies.
 - [detect-secrets](https://github.com/Yelp/detect-secrets) — Secrets detection with baseline support (reduce false positives).
 - [Development Containers](https://containers.dev) — Open specification for defining reproducible, containerized development environments (devcontainers).
 - [DevPod](https://devpod.sh) — Open-source dev environments that can run locally or on remote providers.
@@ -253,7 +253,7 @@
 - [OSINT Framework](https://osintframework.com) — Curated framework of OSINT resources and investigative tools.
 - [OSSIM](https://github.com/alienfault/ossim) — Open Source Security Information and Event Management (SIEM) platform.
 - [OSV-Scanner](https://google.github.io/osv-scanner/) — Vulnerability scanner that checks source trees, lockfiles, and container images against the OSV database.
-- [OWASP Amass](https://owasp.org/www-project-amass/) — Attack-surface mapping and external asset discovery framework.
+- [OWASP Amass](https://owasp.org/projects/amass) — Attack-surface mapping and external asset discovery framework.
 - [OWASP ZAP](https://www.zaproxy.org) — Web application security scanner (DAST).
 - [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) — Cloud-native security operations platform.
 - [Parrot Security](https://www.parrotsec.org/) — Security-oriented Linux distribution for penetration testing, digital forensics, and privacy.

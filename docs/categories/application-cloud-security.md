@@ -941,7 +941,7 @@ Identify vulnerable dependencies.
 
 - For container image scanning (use Trivy/Grype) or if false positives from CPE matching are too noisy.
 
-[Official site](https://owasp.org/www-project-dependency-check) · [Documentation](https://dependency-check.github.io/DependencyCheck/) · [Source repository](https://github.com/dependency-check/DependencyCheck)
+[Official site](https://owasp.org/projects/dependency-check) · [Documentation](https://dependency-check.github.io/DependencyCheck/) · [Source repository](https://github.com/dependency-check/DependencyCheck)
 
 ### detect-secrets
 
@@ -2467,7 +2467,7 @@ Attack-surface mapping and external asset discovery framework.
 
 - Do not use against systems or networks without explicit authorization and agreed safety boundaries.
 
-[Official site](https://owasp.org/www-project-amass/) · [Source repository](https://github.com/owasp-amass/amass)
+[Official site](https://owasp.org/projects/amass) · [Source repository](https://github.com/owasp-amass/amass)
 
 ### OWASP DockSec
 
@@ -2486,7 +2486,7 @@ Container-security analysis tool combining scanners with AI-assisted explanation
 
 - You require authoritative vulnerability conclusions without human validation or cannot approve the configured model-data flow.
 
-[Official site](https://owasp.org/DockSec/) · [Documentation](https://github.com/OWASP/DockSec/blob/main/README.md) · [Source repository](https://github.com/OWASP/DockSec)
+[Official site](https://owasp.org/projects/docksec) · [Documentation](https://github.com/OWASP/DockSec/blob/main/README.md) · [Source repository](https://github.com/OWASP/DockSec)
 
 ### OWASP ZAP
 
