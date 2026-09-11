@@ -8,6 +8,7 @@ import json
 from collections import Counter
 from collections.abc import Sequence
 from datetime import date
+from pathlib import Path
 
 from scripts.catalog import ROOT, load_taxonomy, load_tools
 
@@ -61,7 +62,7 @@ def _priority_score(signals: list[str]) -> int:
     return sum(weights[item] for item in signals)
 
 
-def build_inventory(root=ROOT) -> dict[str, object]:
+def build_inventory(root: Path = ROOT) -> dict[str, object]:
     taxonomy = load_taxonomy(root)
     tools = load_tools(root)
     if not tools:
@@ -230,7 +231,7 @@ def render_markdown(inventory: dict[str, object], *, limit: int = 20) -> str:
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--root", default=ROOT)
+    parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--format", choices=("json", "markdown"), default="markdown")
     parser.add_argument("--limit", type=int, default=20)
     return parser.parse_args(argv)
@@ -238,7 +239,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
-    inventory = build_inventory(args.root)
+    inventory = build_inventory(args.root.resolve())
     if args.format == "json":
         print(json.dumps(inventory, indent=2, sort_keys=True))
     else:
