@@ -799,6 +799,18 @@ def test_get_fallback_confirms_only_partial_responses(
     assert checked.attempts == 1  # One attempt can contain HEAD and both GET probes.
     payload = report_payload([checked], {}, assess_strict_results([checked], {}))
     assert payload["results"][0]["get_confirmation"] == (partial == 206)
+    if ordinary == 206:
+        # A successful partial status is retained, never relabeled as a full 200.
+        assert checked.classification == "valid"
+        assert payload["results"][0]["status"] == 206
+    markdown = check_links.markdown_report(
+        [checked], {}, assess_strict_results([checked], {})
+    )
+    assert "| Final GET status | Ordinary GET confirmation |" in markdown
+    if partial is not None:
+        assert (
+            f"| {head} | {status} | {'yes' if partial == 206 else 'no'} |" in markdown
+        )
     assert (checked.error is not None) == (status == 404)
 
 
@@ -887,3 +899,87 @@ def test_existing_retry_classifications_keep_bounded_backoff(
     assert sleeps == [0.5, 1.0]
     assert checked.attempts == 3
     assert checked.classification == classification
+
+
+@pytest.mark.parametrize(
+    "certificate", [False, True], ids=["EOF-recovery", "certificate-stop"]
+)
+def test_confirmation_tls_failure_preserves_cycle_metadata(
+    monkeypatch, certificate
+) -> None:
+    calls = []
+    sleeps = []
+
+    class Response:
+        def __init__(self, status):
+            self.status = status
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            pass
+
+        def geturl(self):
+            return (
+                "https://example.test/recovered"
+                if self.status == 200
+                else "https://example.test/probe"
+            )
+
+    class Opener:
+        def __init__(self, handler):
+            self.handler = handler
+
+        def open(self, request, timeout):
+            calls.append((request.get_method(), request.get_header("Range")))
+            if len(calls) == 1:
+                return Response(404)
+            if len(calls) == 2:
+                self.handler.codes.append(301)
+                return Response(206)
+            if len(calls) == 3:
+                error = (
+                    ssl.SSLCertVerificationError(1, "certificate rejected")
+                    if certificate
+                    else ssl.SSLEOFError(ssl.SSL_ERROR_EOF, "EOF")
+                )
+                raise urllib.error.URLError(error)
+            return Response(200)
+
+    monkeypatch.setattr(
+        check_links.urllib.request,
+        "build_opener",
+        lambda handler, *args: Opener(handler),
+    )
+    monkeypatch.setattr(check_links.time, "sleep", sleeps.append)
+    checked = check_url(
+        "https://example.test/",
+        limiter=DomainRateLimiter(0),
+        retries=2,
+        timeout=1,
+        check_archived=False,
+    )
+    expected = [("HEAD", None), ("GET", "bytes=0-1023"), ("GET", None)]
+    if certificate:
+        assert checked.attempts == 1
+        assert checked.classification == "tls-failure"
+        assert checked.head_status == 404
+        assert checked.request_method == "GET"
+        assert checked.get_fallback and checked.get_confirmation
+        assert checked.status is None and checked.final_url is None
+        assert checked.error is not None
+        assert strict_exit_code(True, assess_strict_results([checked], {})) == 1
+        assert sleeps == []
+    else:
+        expected.append(("HEAD", None))
+        assert checked.attempts == 2
+        assert checked.classification == "valid"
+        assert checked.head_status == checked.status == 200
+        assert checked.request_method == "HEAD"
+        assert not checked.get_fallback and not checked.get_confirmation
+        assert checked.final_url == "https://example.test/recovered"
+        assert checked.error is None
+        assert sleeps == [0.5]
+    assert checked.redirect_codes == ()  # Earlier ranged-probe redirects do not leak.
+    assert calls == expected

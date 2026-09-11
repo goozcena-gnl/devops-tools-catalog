@@ -76,3 +76,21 @@ endpoints are not used as deterministic TLS fault injection.
   Seven other URL classifications drifted between nonblocking states (DNS,
   transient HTTP or access restriction); there was no blocking-classification
   drift. No baseline entry was changed or removed.
+
+### Final review clarifications
+
+The Markdown column is explicitly **Final GET status**: when ordinary confirmation
+occurred, that status belongs to the confirming response, not the ranged probe.
+If an ordinary GET itself returns 206, the checker preserves status 206 and the
+existing successful-2xx classification; it does not claim a full 200 or complete
+representation. HTTP 206 denotes partial content (RFC 9110 section 15.3.7).
+This auditor checks response status, not representation completeness or server
+protocol conformance. No additional body download or recursive confirmation is
+introduced. The deterministic test asserts the retained 206 and classification.
+
+Two additional tests exercise wrapped TLS failures during ordinary confirmation:
+EOF followed by a successful HEAD resets all final-attempt metadata, while a
+certificate error stops immediately in the first cycle. Redirect metadata from
+the earlier ranged probe cannot leak into the final result. Each HTTP probe owns
+its own cookie jar; cookie continuity is supported within that probe's redirects,
+not promised across separate HEAD/GET calls.

@@ -602,7 +602,7 @@ def markdown_report(
             "",
             "## HEAD to GET fallbacks",
             "",
-            "| URL | HEAD status | GET status | Ordinary GET confirmation | Raw classification |",
+            "| URL | HEAD status | Final GET status | Ordinary GET confirmation | Raw classification |",
             "|---|---:|---:|---|---|",
         ]
     )
