@@ -22,6 +22,7 @@ dev = [
 [project.scripts]
 catalog-generate = "scripts.generate_docs:main"
 catalog-import = "scripts.import_archive:main"
+catalog-review-debt = "scripts.review_debt:main"
 catalog-validate = "scripts.validate_catalog:main"
 
 [tool.hatch.build.targets.wheel]
