@@ -69,9 +69,7 @@ def build_inventory(root: Path = ROOT) -> dict[str, object]:
         raise ValueError("catalogue is empty")
 
     reference_date = max(_parse_date(tool["verified_on"]) for tool in tools)
-    category_names = {
-        item["id"]: item["name"] for item in taxonomy["categories"]
-    }
+    category_names = {item["id"]: item["name"] for item in taxonomy["categories"]}
     category_counts: dict[str, dict[str, object]] = {
         category_id: {
             "name": category_names[category_id],
