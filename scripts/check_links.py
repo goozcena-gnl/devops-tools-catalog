@@ -31,7 +31,7 @@ DEFAULT_MARKDOWN_REPORT = ROOT / "reports" / "link-report.md"
 DEFAULT_BASELINE = ROOT / "config" / "link-audit-baseline.json"
 TRANSIENT_CODES = {408, 425, 429, 500, 502, 503, 504}
 GET_FALLBACK_CODES = {404, 405, 501}
-CACHE_VERSION = 3
+CACHE_VERSION = 4
 BLOCKING_CLASSIFICATIONS = frozenset(
     {
         "manual-verification-required",
@@ -57,6 +57,7 @@ class LinkResult:
     request_method: str = "HEAD"
     head_status: int | None = None
     get_fallback: bool = False
+    get_confirmation: bool = False
     checker_version: int = CACHE_VERSION
 
 
@@ -73,6 +74,7 @@ class HttpOutcome:
     final_url: str | None
     redirect_codes: tuple[int, ...]
     error: str | None
+    retryable: bool = False
 
 
 @dataclasses.dataclass(frozen=True)
@@ -244,7 +246,21 @@ def github_repository_result(
         return None
 
 
-def _http_request(url: str, *, method: str, timeout: float) -> HttpOutcome:
+def _tls_outcome(error: ssl.SSLError) -> HttpOutcome:
+    # Only explicit EOF transport conditions are retryable. Unknown SSL errors
+    # and certificate validation failures remain immediate strict blockers.
+    retryable = not isinstance(error, ssl.SSLCertVerificationError) and (
+        isinstance(error, ssl.SSLEOFError)
+        or getattr(error, "reason", None) == "UNEXPECTED_EOF_WHILE_READING"
+    )
+    return HttpOutcome(
+        "tls-failure", None, None, (), f"{type(error).__name__}: {error}", retryable
+    )
+
+
+def _http_request(
+    url: str, *, method: str, timeout: float, ranged: bool = False
+) -> HttpOutcome:
     handler = TrackingRedirectHandler()
     cookie_jar = http.cookiejar.CookieJar()
     opener = urllib.request.build_opener(
@@ -256,9 +272,10 @@ def _http_request(url: str, *, method: str, timeout: float) -> HttpOutcome:
         headers.update(
             {
                 "Accept": "text/html,application/xhtml+xml,*/*;q=0.1",
-                "Range": "bytes=0-1023",
             }
         )
+        if ranged:
+            headers["Range"] = "bytes=0-1023"
     request = urllib.request.Request(url, method=method, headers=headers)
     try:
         with opener.open(request, timeout=timeout) as response:
@@ -280,16 +297,14 @@ def _http_request(url: str, *, method: str, timeout: float) -> HttpOutcome:
             error=f"HTTP {error.code}: {error.reason}",
         )
     except ssl.SSLError as error:
-        return HttpOutcome(
-            "tls-failure", None, None, (), f"{type(error).__name__}: {error}"
-        )
+        return _tls_outcome(error)
     except TimeoutError as error:
         return HttpOutcome(
             "timeout-inconclusive", None, None, (), f"{type(error).__name__}: {error}"
         )
     except urllib.error.URLError as error:
         if isinstance(error.reason, ssl.SSLError):
-            classification = "tls-failure"
+            return _tls_outcome(error.reason)
         elif isinstance(error.reason, socket.gaierror):
             classification = "dns-inconclusive"
         else:
@@ -325,6 +340,7 @@ def check_url(
     head_status: int | None = None
     request_method = "HEAD"
     get_fallback = False
+    get_confirmation = False
     attempts = 0
 
     for attempt in range(retries + 1):
@@ -334,14 +350,23 @@ def check_url(
         head_status = outcome.status
         request_method = "HEAD"
         get_fallback = False
+        get_confirmation = False
         if outcome.status in GET_FALLBACK_CODES:
             limiter.wait(url)
-            outcome = _http_request(url, method="GET", timeout=timeout)
+            outcome = _http_request(url, method="GET", timeout=timeout, ranged=True)
             request_method = "GET"
             get_fallback = True
+            if outcome.status == 206:
+                # Confirm the ordinary resource status without downloading its body.
+                limiter.wait(url)
+                outcome = _http_request(
+                    url, method="GET", timeout=timeout, ranged=False
+                )
+                get_confirmation = True
 
         should_retry = (
-            outcome.classification
+            outcome.retryable
+            or outcome.classification
             in {
                 "rate-limited",
                 "transient-failure",
@@ -349,8 +374,7 @@ def check_url(
                 "dns-inconclusive",
                 "network-inconclusive",
             }
-            and attempt < retries
-        )
+        ) and attempt < retries
         if not should_retry:
             break
         time.sleep(0.5 * (2**attempt))
@@ -369,6 +393,7 @@ def check_url(
         request_method=request_method,
         head_status=head_status,
         get_fallback=get_fallback,
+        get_confirmation=get_confirmation,
     )
 
 
@@ -575,20 +600,21 @@ def markdown_report(
     rows.extend(
         [
             "",
-            "## HEAD to ranged GET fallbacks",
+            "## HEAD to GET fallbacks",
             "",
-            "| URL | HEAD status | GET status | Raw classification |",
-            "|---|---:|---:|---|",
+            "| URL | HEAD status | Final GET status | Ordinary GET confirmation | Raw classification |",
+            "|---|---:|---:|---|---|",
         ]
     )
     recoveries = [result for result in results if result.get_fallback]
     for result in recoveries:
         rows.append(
             f"| {result.url} | {result.head_status or ''} | "
-            f"{result.status or ''} | {result.classification} |"
+            f"{result.status or ''} | {'yes' if result.get_confirmation else 'no'} | "
+            f"{result.classification} |"
         )
     if not recoveries:
-        rows.append("| _None_ |  |  |  |")
+        rows.append("| _None_ |  |  |  |  |")
 
     rows.extend(
         [
