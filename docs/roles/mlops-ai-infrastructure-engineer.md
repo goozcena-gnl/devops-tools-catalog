@@ -6,10 +6,10 @@
 | Tool | Categories | Model | Status |
 |---|---|---|---|
 | [Agent Reach](https://github.com/Panniantong/Agent-Reach) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [AGENTMEMORY](https://www.agent-memory.dev) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [agentmemory](https://www.agent-memory.dev) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [agentsmith](https://github.com/PromptPartner/agentsmith) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AITMPL Agents](https://www.aitmpl.com/agents) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [Arize Phoenix](https://arize.com/docs/phoenix) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AutoGen](https://microsoft.github.io/autogen/stable/index.html) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) | MLOps, LLMOps and AI infrastructure | oss | needs-review |

@@ -24,24 +24,24 @@ CLI that gives agents search and reading access across web, social, and code pla
 
 [Source repository](https://github.com/Panniantong/Agent-Reach)
 
-### AGENTMEMORY
+### agentmemory
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Persistent memory layer for AI coding agents.
+Local persistent-memory runtime with hooks, MCP, REST, retrieval, and session replay for AI coding agents.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Coding agents need locally operated, cross-session memory exposed through hooks, MCP, or REST.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a hosted managed-memory service or do not want another local runtime and persistent data store.
 
-[Official site](https://www.agent-memory.dev)
+[Official site](https://www.agent-memory.dev) · [Documentation](https://github.com/rohitg00/agentmemory#readme) · [Source repository](https://github.com/rohitg00/agentmemory)
 
 ### agentsmith
 
@@ -69,7 +69,7 @@ Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Agents directory/platform.
+Directory and installer catalogue for reusable Claude Code agent prompt components.
 
 **Use when**
 
@@ -77,16 +77,16 @@ Agents directory/platform.
 
 **Consider alternatives when**
 
-- You need production-grade agent orchestration—this is a directory, not a runtime.
+- You need production-grade agent orchestration; this is a component catalogue and installer, not an agent runtime.
 
-[Official site](https://www.aitmpl.com/agents)
+[Official site](https://www.aitmpl.com/agents) · [Documentation](https://docs.aitmpl.com/concepts/agents) · [Source repository](https://github.com/davila7/claude-code-templates)
 
 ### Amazon Q Developer
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 AI code suggestions for AWS and more.
 
@@ -98,7 +98,7 @@ AI code suggestions for AWS and more.
 
 - Your stack is non-AWS and you'd get more value from a general-purpose assistant.
 
-[Official site](https://aws.amazon.com/q/developer)
+[Official site](https://aws.amazon.com/q/developer) · [Documentation](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)
 
 ### Arize Phoenix
 

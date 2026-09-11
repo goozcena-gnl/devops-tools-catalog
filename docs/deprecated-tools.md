@@ -3,6 +3,7 @@
 
 Records remain here for migration and historical context; they are not active recommendations.
 
+- **AWS Cloud9** (deprecated) — Cloud-based IDE for writing, running, and debugging code.
 - **CAI (RobotSec)** (archived) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
 - **CDKTF** (archived) — Archived framework for defining Terraform infrastructure with general-purpose programming languages.
 - **Datree** (archived) — Kubernetes policy enforcement tool.

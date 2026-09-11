@@ -5,12 +5,12 @@
 
 | Tool | Categories | Model | Status |
 |---|---|---|---|
-| [1Password Connect](https://www.1password.dev/connect) | IAM, secrets and certificate management | unknown | needs-review |
+| [1Password Connect](https://www.1password.dev/connect) | IAM, secrets and certificate management | commercial | active |
 | [Agent Reach](https://github.com/Panniantong/Agent-Reach) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [AGENTMEMORY](https://www.agent-memory.dev) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [agentmemory](https://www.agent-memory.dev) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [agentsmith](https://github.com/PromptPartner/agentsmith) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AITMPL Agents](https://www.aitmpl.com/agents) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
 | [Apache Kafka](https://kafka.apache.org) | Databases, caching and data infrastructure | oss | needs-review |
@@ -20,7 +20,7 @@
 | [asciinema](https://asciinema.org/) | Documentation, learning and career resources | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
 | [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
-| [Auth0](https://auth0.com) | IAM, secrets and certificate management | unknown | needs-review |
+| [Auth0](https://auth0.com) | IAM, secrets and certificate management | commercial | active |
 | [Awesome DevOps](https://github.com/wmariuss/awesome-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Awesome Kubernetes Operator Resources](https://github.com/calvin-puram/awesome-kubernetes-operator-resources) | Documentation, learning and career resources | documentation | needs-review |
 | [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -29,14 +29,14 @@
 | [AWS CLI](https://aws.amazon.com/cli/) | Cloud platforms and cloud management | oss | active |
 | [AWS Cloud Quest Practitioner](https://skillbuilder.aws/learn/FU5WCYVGKY/aws-cloud-quest-cloud-practitioner/learn) | Documentation, learning and career resources | documentation | needs-review |
 | [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
-| [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | commercial | active |
 | [AWS MCP](https://awslabs.github.io/mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) | IAM, secrets and certificate management | unknown | needs-review |
+| [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) | IAM, secrets and certificate management | commercial | active |
 | [AWS Skill Builder](https://skillbuilder.aws) | Documentation, learning and career resources | documentation | needs-review |
 | [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) | Cloud platforms and cloud management | commercial | active |
 | [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
-| [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | commercial | active |
 | [Azure DevOps Labs](https://www.azuredevopslabs.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [Azure Functions Host](https://github.com/Azure/azure-functions-host) | Serverless, edge and WebAssembly | oss | needs-review |

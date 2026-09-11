@@ -18,7 +18,7 @@
 | [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) | Monitoring, metrics, logs and tracing, SRE, incident response and on-call | oss | active |
 | [AlmaLinux OS](https://almalinux.org/) | Foundations, Linux and scripting | oss | active |
 | [Alpine Linux](https://github.com/alpinelinux) | Virtualization, bare metal and homelab | oss | needs-review |
-| [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Angular](https://angular.dev) | Developer experience and local environments | oss | needs-review |
 | [Ansible](https://www.ansible.com) | Configuration management | oss | needs-review |
@@ -32,9 +32,9 @@
 | [Apache Kafka](https://kafka.apache.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [Apache SkyWalking](https://skywalking.apache.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [Apache Tomcat](https://tomcat.apache.org/) | Foundations, Linux and scripting | oss | active |
-| [Appcircle](https://appcircle.io) | CI, build and testing | unknown | needs-review |
+| [Appcircle](https://appcircle.io) | CI, build and testing | commercial | active |
 | [AppImage](https://appimage.org) | Foundations, Linux and scripting | oss | needs-review |
-| [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Arcane](https://getarcane.app/) | Virtualization, bare metal and homelab | oss | active |
 | [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) | CI, build and testing | oss | active |
@@ -46,7 +46,7 @@
 | [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
 | [asciinema](https://asciinema.org/) | Documentation, learning and career resources | oss | active |
-| [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) | Monitoring, metrics, logs and tracing | oss | active |
 | [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | needs-review |
 | [ast-grep](https://ast-grep.github.io/) | Developer experience and local environments | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
@@ -61,15 +61,15 @@
 | [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | active |
 | [AWS CLI](https://aws.amazon.com/cli/) | Cloud platforms and cloud management | oss | active |
 | [AWS Cloud Quest Practitioner](https://skillbuilder.aws/learn/FU5WCYVGKY/aws-cloud-quest-cloud-practitioner/learn) | Documentation, learning and career resources | documentation | needs-review |
-| [AWS Cloud9](https://aws.amazon.com/cloud9) | Developer experience and local environments | unknown | needs-review |
+| [AWS Cloud9](https://aws.amazon.com/cloud9) | Developer experience and local environments | commercial | deprecated |
 | [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
-| [AWS Fault Injection Service](https://aws.amazon.com/fis) | Chaos and performance engineering | unknown | needs-review |
-| [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [AWS Fault Injection Service](https://aws.amazon.com/fis) | Chaos and performance engineering | commercial | active |
+| [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | commercial | active |
 | [AWS Skill Builder](https://skillbuilder.aws) | Documentation, learning and career resources | documentation | needs-review |
 | [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) | Cloud platforms and cloud management | commercial | active |
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
-| [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) | Chaos and performance engineering | unknown | needs-review |
-| [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) | Chaos and performance engineering | commercial | active |
+| [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | commercial | active |
 | [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | unknown | needs-review |
 | [Azure DevOps Labs](https://www.azuredevopslabs.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | unknown | needs-review |

@@ -10,7 +10,7 @@
 | [Ansible Lint](https://docs.ansible.com/projects/lint/) | CI, build and testing | oss | active |
 | [Ansible Molecule](https://docs.ansible.com/projects/molecule/) | CI, build and testing | oss | active |
 | [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | active |
-| [Appcircle](https://appcircle.io) | CI, build and testing | unknown | needs-review |
+| [Appcircle](https://appcircle.io) | CI, build and testing | commercial | active |
 | [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) | CI, build and testing | oss | active |
 | [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |

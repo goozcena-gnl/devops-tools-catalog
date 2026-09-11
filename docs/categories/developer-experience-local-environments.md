@@ -161,20 +161,20 @@ Syntax-tree-based code search, linting, and rewriting tool.
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Deprecated
 
 Cloud-based IDE for writing, running, and debugging code.
 
 **Use when**
 
-- You need a browser-based IDE tightly integrated with AWS services.
+- You are an existing AWS Cloud9 customer who needs its browser-based IDE and AWS integrations while planning a successor.
 
 **Consider alternatives when**
 
-- You need full IDE features or you're not in the AWS ecosystem.
+- You are a new customer; AWS Cloud9 has not accepted new customers since July 25, 2024.
 
-[Official site](https://aws.amazon.com/cloud9)
+[Official site](https://aws.amazon.com/cloud9) · [Documentation](https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html)
 
 ### Azure Storage Explorer
 

@@ -9,8 +9,8 @@
 
 **Categories:** Platform engineering and internal developer platforms<br>
 **Roles:** Platform Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Platform engineering automation for self-service environments and app delivery.
 

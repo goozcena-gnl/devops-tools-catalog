@@ -8,7 +8,7 @@
 - [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) — AWS monitoring and observability service.
 - [Apache SkyWalking](https://skywalking.apache.org) — APM platform for distributed tracing, metrics, and service topology.
 - [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) — Network performance monitoring.
-- [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) — Grafana plugin that provides natural-language observability exploration.
+- [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) — Grafana plugin that provides natural-language observability exploration.
 - [atop](https://github.com/Atoptool/atop) — Linux system and process monitor that records resource utilization for live and historical analysis.
 - [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) — Curated list of Prometheus resources.
 - [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) — Curated, copy-pasteable Prometheus alert rules and guidance for common services and platforms.

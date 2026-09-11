@@ -2,6 +2,7 @@
   name: AKS
   summary: Azure Kubernetes Service.
   official_url: https://azure.microsoft.com/en-us/products/kubernetes-service
+  documentation_url: https://learn.microsoft.com/en-us/azure/aks/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -17,17 +18,21 @@
   - You're on Azure and want a managed Kubernetes with AAD integration and Azure ecosystem support.
   avoid_when:
   - You need multi-cloud portability or aren't invested in the Azure ecosystem.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L155
   - legacy:devopstools_final.md#L656
-  needs_review: true
+  - https://learn.microsoft.com/en-us/azure/aks/what-is-aks
+  - https://azure.microsoft.com/en-us/pricing/details/kubernetes-service/
+  needs_review: false
 - id: awesome-kubernetes-architecture-diagrams
   name: Awesome Kubernetes Architecture Diagrams
   summary: Collection of Kubernetes architecture diagrams.

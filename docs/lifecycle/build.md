@@ -5,9 +5,9 @@
 
 - [ACR-SyncTool](https://github.com/IvanJosipovic/ACR-SyncTool) — Command-line tool for synchronizing container images into Azure Container Registry.
 - [Agent Reach](https://github.com/Panniantong/Agent-Reach) — CLI that gives agents search and reading access across web, social, and code platforms.
-- [AGENTMEMORY](https://www.agent-memory.dev) — Persistent memory layer for AI coding agents.
+- [agentmemory](https://www.agent-memory.dev) — Local persistent-memory runtime with hooks, MCP, REST, retrieval, and session replay for AI coding agents.
 - [agentsmith](https://github.com/PromptPartner/agentsmith) — Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini, etc.) assembled by a single setup script.
-- [AITMPL Agents](https://www.aitmpl.com/agents) — Agents directory/platform.
+- [AITMPL Agents](https://www.aitmpl.com/agents) — Directory and installer catalogue for reusable Claude Code agent prompt components.
 - [Amazon Q Developer](https://aws.amazon.com/q/developer) — AI code suggestions for AWS and more.
 - [Ansible Lint](https://docs.ansible.com/projects/lint/) — Best practices checker for Ansible.
 - [Ansible Molecule](https://docs.ansible.com/projects/molecule/) — Scenario-based testing framework for Ansible roles and collections.

@@ -66,20 +66,20 @@ Load testing and performance measurement tool.
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 CI/CD platform for mobile apps.
 
 **Use when**
 
-- * You need a dedicated mobile CI/CD with native iOS/Android build support.
+- You need dedicated mobile CI/CD with native and cross-platform iOS or Android build, test, distribution, and store publishing workflows.
 
 **Consider alternatives when**
 
-- * Your workloads are primarily backend or non-mobile.
+- Your workloads are primarily backend or non-mobile and do not need mobile signing, distribution, or store publishing workflows.
 
-[Official site](https://appcircle.io)
+[Official site](https://appcircle.io) · [Documentation](https://docs.appcircle.io/)
 
 ### Argo Workflows
 

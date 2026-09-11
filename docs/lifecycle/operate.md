@@ -10,11 +10,11 @@
 - [Activepieces](https://www.activepieces.com) — Workflow automation platform; OSS core with commercial cloud/enterprise features.
 - [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) — Self-hosted DNS resolver and filtering service for network-wide blocking and DNS controls.
 - [Agent Reach](https://github.com/Panniantong/Agent-Reach) — CLI that gives agents search and reading access across web, social, and code platforms.
-- [AGENTMEMORY](https://www.agent-memory.dev) — Persistent memory layer for AI coding agents.
+- [agentmemory](https://www.agent-memory.dev) — Local persistent-memory runtime with hooks, MCP, REST, retrieval, and session replay for AI coding agents.
 - [agentsmith](https://github.com/PromptPartner/agentsmith) — Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini, etc.) assembled by a single setup script.
 - [Agones](https://agones.dev) — Kubernetes-native platform for hosting, running, and scaling dedicated game servers.
 - [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) — Envoy-based AI gateway for managing LLM traffic in Kubernetes.
-- [AITMPL Agents](https://www.aitmpl.com/agents) — Agents directory/platform.
+- [AITMPL Agents](https://www.aitmpl.com/agents) — Directory and installer catalogue for reusable Claude Code agent prompt components.
 - [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) — Azure Kubernetes Service.
 - [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) — Prometheus component that deduplicates, groups, silences, and routes alerts to notification receivers.
 - [Alertmanager receiver for Azure DevOps](https://github.com/IvanJosipovic/alertmanager-receiver-azdo) — Webhook receiver that creates and resolves Azure DevOps work items from Alertmanager notifications.
@@ -41,7 +41,7 @@
 - [Arcane](https://getarcane.app/) — Self-hosted web interface for managing Docker containers, images, networks, and Compose projects.
 - [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
 - [Arize Phoenix](https://arize.com/docs/phoenix) — LLM observability and evaluation platform.
-- [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) — Grafana plugin that provides natural-language observability exploration.
+- [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) — Grafana plugin that provides natural-language observability exploration.
 - [Atmosly](https://atmosly.com) — Platform engineering automation for self-service environments and app delivery.
 - [atop](https://github.com/Atoptool/atop) — Linux system and process monitor that records resource utilization for live and historical analysis.
 - [AttuneOps](https://attuneops.io/) — Infrastructure orchestration application for authoring and running resumable multi-host automation procedures.
@@ -54,13 +54,13 @@
 - [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) — AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
 - [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — MCP server for AWS Billing & Cost Management use cases (announced by AWS).
 - [AWS CLI](https://aws.amazon.com/cli/) — Official command-line interface for administering Amazon Web Services from shells and automation.
-- [AWS Fault Injection Service](https://aws.amazon.com/fis) — Managed chaos engineering service on AWS. ✅ **Use when** you're already on AWS and need turnkey fault injection with IAM-scoped safety controls. ❌ **Avoid when** your workloads span multiple clouds or you need deep application-level fault injection.
+- [AWS Fault Injection Service](https://aws.amazon.com/fis) — Managed AWS service for running controlled fault-injection experiments against AWS workloads.
 - [AWS Lambda](https://aws.amazon.com/lambda) — Serverless compute service by AWS.
 - [AWS MCP](https://awslabs.github.io/mcp) — AWS implementation of Model Context Protocol.
 - [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) — Managed secret storage for AWS.
 - [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) — Hybrid cloud storage service.
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
-- [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) — Chaos engineering service for Azure. ✅ **Use when** your infrastructure is Azure-native and you want tight integration with Azure Monitor. ❌ **Avoid when** you're multi-cloud or need experiments beyond Azure-supported fault types.
+- [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) — Managed Azure service for validating application resilience with controlled disruptions and fault-injection experiments.
 - [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) — Azure service for running containerized apps.
 - [Azure Functions](https://azure.microsoft.com/en-us/products/functions) — Managed serverless compute service by Azure (runtime host is open source).
 - [Azure Functions Host](https://github.com/Azure/azure-functions-host) — The runtime host and core execution engine for Azure Functions.

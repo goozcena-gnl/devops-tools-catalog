@@ -28,8 +28,8 @@ Prometheus component that deduplicates, groups, silences, and routes alerts to n
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 AWS monitoring and observability service.
 
@@ -41,7 +41,7 @@ AWS monitoring and observability service.
 
 - Multi-cloud or vendor-neutral strategy required.
 
-[Official site](https://aws.amazon.com/cloudwatch)
+[Official site](https://aws.amazon.com/cloudwatch) · [Documentation](https://docs.aws.amazon.com/cloudwatch/)
 
 ### Apache SkyWalking
 
@@ -66,8 +66,8 @@ APM platform for distributed tracing, metrics, and service topology.
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Network performance monitoring.
 
@@ -85,20 +85,20 @@ Network performance monitoring.
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
 Grafana plugin that provides natural-language observability exploration.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Grafana operators want an in-product AI investigation workflow using Grafana telemetry and MCP tools with approval-gated writes.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You cannot provide the required Grafana LLM and MCP integrations or need a vendor-neutral observability interface outside Grafana.
 
-[Official site](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview)
+[Official site](https://grafana.com/grafana/plugins/consensys-asko11y-app/) · [Documentation](https://github.com/Consensys/ask-o11y-plugin#readme) · [Source repository](https://github.com/Consensys/ask-o11y-plugin)
 
 ### Awesome Prometheus
 

@@ -5,23 +5,23 @@
 
 | Tool | Categories | Model | Status |
 |---|---|---|---|
-| [1Password Connect](https://www.1password.dev/connect) | IAM, secrets and certificate management | unknown | needs-review |
+| [1Password Connect](https://www.1password.dev/connect) | IAM, secrets and certificate management | commercial | active |
 | [AD Miner](https://github.com/AD-Security/AD_Miner) | Application and cloud security, IAM, secrets and certificate management | oss | active |
 | [Aikido](https://www.aikido.dev) | Application and cloud security | open-core | needs-review |
 | [Aircrack-ng](https://www.aircrack-ng.org/) | Application and cloud security | oss | active |
 | [ALTCHA](https://altcha.org/) | Application and cloud security | open-core | active |
 | [Anubis](https://anubis.techaro.lol/) | Application and cloud security | oss | active |
-| [Apiiro](https://apiiro.com) | Application and cloud security | unknown | needs-review |
+| [Apiiro](https://apiiro.com) | Application and cloud security | commercial | active |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
-| [Arnica](https://www.arnica.io) | Application and cloud security | unknown | needs-review |
+| [Arnica](https://www.arnica.io) | Application and cloud security | commercial | active |
 | [Arsenal](https://github.com/Orange-Cyberdefense/arsenal) | Application and cloud security | documentation | needs-review |
 | [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
-| [Auth0](https://auth0.com) | IAM, secrets and certificate management | unknown | needs-review |
+| [Auth0](https://auth0.com) | IAM, secrets and certificate management | commercial | active |
 | [AutoPWN Suite](https://kaangultekin.net/projects/autopwn-suite) | Application and cloud security | source-available | needs-review |
 | [Awesome DevSecOps](https://github.com/devsecops/awesome-devsecops) | Application and cloud security | documentation | needs-review |
 | [Awesome WAF](https://github.com/0xInfection/Awesome-WAF) | Application and cloud security | documentation | needs-review |
-| [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) | IAM, secrets and certificate management | unknown | needs-review |
-| [AWS Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) | Application and cloud security | unknown | needs-review |
+| [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) | IAM, secrets and certificate management | commercial | active |
+| [AWS Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) | Application and cloud security | commercial | active |
 | [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) | Application and cloud security | unknown | needs-review |
 | [BlackArch Linux](https://blackarch.org/) | Application and cloud security | oss | active |
 | [BloodHound](https://bloodhound.specterops.io/) | Application and cloud security, IAM, secrets and certificate management | open-core | active |

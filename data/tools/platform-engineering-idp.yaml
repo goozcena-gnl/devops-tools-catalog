@@ -17,17 +17,22 @@
   - You want managed platform engineering with self-service infra provisioning.
   avoid_when:
   - Your org is too small for an IDP or you prefer building on OSS foundations.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:7_Development-Collaboration/README.md#L97
   - legacy:devopstools_final.md#L1143
-  needs_review: true
+  - https://atmosly.com/
+  - https://atmosly.com/pricing
+  needs_review: false
 - id: backstage
   name: Backstage
   summary: Internal developer portal (IDP) / software catalog for improving developer experience.

@@ -166,22 +166,29 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - AppSec teams need code-to-runtime context to inventory applications and prioritize software supply-chain and application risks.
+  avoid_when:
+  - You require a fully open-source scanner or only need a single-purpose SAST or dependency scan.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:devopstools_final.md#L840
-  needs_review: true
+  - https://apiiro.com/
+  - https://apiiro.com/wp-content/uploads/2021/10/Apiiro-EULA-May-11-2021.pdf
+  needs_review: false
 - id: arnica
   name: Arnica
   summary: Application security platform covering SAST, SCA, IaC, and secrets scanning.
   official_url: https://www.arnica.io
+  documentation_url: https://docs.arnica.io/arnica-documentation
   categories:
   - application-cloud-security
   subcategories:
@@ -192,18 +199,24 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - AppSec teams need SaaS-based application security posture management across source-code access, SAST, SCA, IaC, and secrets risks.
+  avoid_when:
+  - You need an open-source, fully self-hosted application security platform.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:devopstools_final.md#L841
-  needs_review: true
+  - https://docs.arnica.io/arnica-documentation
+  - https://docs.arnica.io/arnica-documentation/platform-operations/billing
+  needs_review: false
 - id: arsenal
   name: Arsenal
   summary: Security tools knowledge base.
@@ -326,6 +339,7 @@
   name: AWS Service Control Policies
   summary: AWS organization-level access control.
   official_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html
+  documentation_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html
   categories:
   - application-cloud-security
   subcategories:
@@ -340,17 +354,21 @@
   - Enforce guardrails across AWS accounts in an organization.
   avoid_when:
   - You only have a single account (use IAM policies instead).
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:6_Security/README.md#L59
   - legacy:devopstools_final.md#L927
-  needs_review: true
+  - https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html
+  - https://aws.amazon.com/organizations/pricing/
+  needs_review: false
 - id: azure-policy
   name: Azure Policy
   summary: Azure resource governance.
