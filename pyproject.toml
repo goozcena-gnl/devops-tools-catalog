@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "devops-tools-catalog"
-version = "0.4.0"
+version = "0.5.0"
 description = "Validation and documentation tooling for the DevOps Tools catalogue"
 requires-python = ">=3.11"
 dependencies = [

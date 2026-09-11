@@ -2,6 +2,47 @@
 
 All notable catalogue architecture and governance changes are recorded here. Individual tool metadata changes remain visible in Git history and pull requests.
 
+## [0.5.0] - 2026-09-11
+
+### Scope
+
+- Prepared a backward-compatible minor release covering all accepted work in PRs #47 through #57.
+- Expanded the canonical catalogue from 1,285 to 1,423 records, a net gain of 138, without a schema migration or breaking consumer contract.
+
+### Catalogue expansion
+
+- Added 20 prioritized, evidence-reviewed tools from the Stéphane Robert audit, the missing Headlamp core identity, and 117 tools from September Wave 4.
+- Accounted for Wave 4's 152 submitted occurrences as 145 semantic identities: 117 additions, 11 existing-record updates, 7 duplicates, 15 out-of-scope submissions, and 2 evidence holds, with none unaccounted.
+
+### Evidence, provenance and catalogue correctness
+
+- Corrected upstream identity, lifecycle, and product, component, community, enterprise, and licence boundaries using primary evidence.
+- Restored exact historical migration pointers for reconciled records and added regression coverage for source-to-canonical traceability.
+- Preserved uncertainty explicitly where evidence was insufficient; Kubiya and portkube remain held rather than added speculatively.
+
+### Link-audit reliability
+
+- Repaired current endpoints for Firecracker, DevOps Interview Questions, and three OWASP projects while retaining historical URLs as provenance.
+- Preserved regression-aware governance: reviewed `blocking_known` debt remains distinct from release-blocking `blocking_new` failures.
+
+### Checker hardening
+
+- Added cookie-aware redirect handling and bounded retries for explicit transient TLS EOF transport failures; certificate validation remains strict and there is no insecure HTTPS fallback.
+- Required ordinary-GET confirmation after ranged HTTP 206 fallback responses and advanced cache semantics to version 4 so older partial-response conclusions are not reused.
+
+### Validation
+
+- Passed Ruff lint and format checks, 435 automated tests, deterministic documentation verification, catalogue validation, and Git whitespace checks.
+- Two independent fresh strict audits and an immediate compatible cached audit each checked 2,407 URLs, reported four observed known blockers, zero new blockers, five apparent baseline resolutions, and `PASS` with cache version 4.
+- Broad GitHub rate limiting or access restriction affected those five baseline URLs, so their apparent resolution is not treated as evidence that the reviewed debt was eliminated.
+
+### Remaining evidence boundaries
+
+- Repository issue #2 remains open for unresolved catalogue URL review; 959 canonical records remain explicitly marked as requiring review.
+- Known reviewed link debt remains nine blockers. This preparation does not claim that all records are fully reviewed, all URLs are permanently healthy, or all known link debt is resolved.
+
+At v0.5.0 release-preparation review time, no v0.5.0 tag or GitHub Release had been created. Publication requires a separate owner-approved action after this preparation is reviewed and merged.
+
 ## [0.4.0] - 2026-08-29
 
 ### Scope
