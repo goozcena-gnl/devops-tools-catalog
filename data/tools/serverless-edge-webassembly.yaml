@@ -72,8 +72,10 @@
   needs_review: false
 - id: azure-functions
   name: Azure Functions
-  summary: Managed serverless compute service by Azure (runtime host is open source).
+  summary: Commercial managed Azure PaaS for event-driven and scheduled compute; the separately catalogued
+    Functions Host runtime is open source.
   official_url: https://azure.microsoft.com/en-us/products/functions
+  documentation_url: https://learn.microsoft.com/en-us/azure/azure-functions/
   categories:
   - serverless-edge-webassembly
   subcategories:
@@ -90,17 +92,22 @@
   - You need event-driven compute tightly integrated with Azure services.
   avoid_when:
   - Your functions exceed execution time limits or you want cloud-agnostic FaaS.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L98
   - legacy:devopstools_final.md#L210
-  needs_review: true
+  - https://learn.microsoft.com/en-us/azure/azure-functions/
+  - https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview
+  - https://azure.microsoft.com/en-us/pricing/details/functions/
+  needs_review: false
 - id: azure-functions-host
   name: Azure Functions Host
   summary: The runtime host and core execution engine for Azure Functions.

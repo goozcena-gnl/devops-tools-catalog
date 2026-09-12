@@ -142,20 +142,20 @@ Simple deployment tool for Kubernetes.
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Kubernetes cluster visualization and management dashboard.
+Open-source progressive web application that indexes Kubernetes Ingress resources into a customizable application dashboard.
 
 **Use when**
 
-- You want a lightweight visual overview of cluster state.
+- You want a lightweight, self-hosted front page for applications exposed through Kubernetes Ingress.
 
 **Consider alternatives when**
 
-- You need deep RBAC, multi-cluster, or enterprise-grade dashboards.
+- You need general cluster management, observability, deep RBAC, or multi-cluster administration.
 
-[Official site](https://casavue.app)
+[Official site](https://casavue.app) · [Documentation](https://casavue.app/deployment/quick_start/) · [Source repository](https://github.com/czoczo/casavue)
 
 ### Cluster API
 

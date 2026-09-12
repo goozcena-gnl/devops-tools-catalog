@@ -70,9 +70,9 @@
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
 | [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) | Chaos and performance engineering | commercial | active |
 | [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | commercial | active |
-| [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | unknown | needs-review |
+| [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | commercial | active |
 | [Azure DevOps Labs](https://www.azuredevopslabs.com) | Documentation, learning and career resources | documentation | needs-review |
-| [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | commercial | active |
 | [Azure Functions Host](https://github.com/Azure/azure-functions-host) | Serverless, edge and WebAssembly | oss | needs-review |
 | [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) | Virtualization, bare metal and homelab | documentation | needs-review |
 | [Azure Mastery](https://www.azurekt.com) | Documentation, learning and career resources | documentation | needs-review |
@@ -80,16 +80,16 @@
 | [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
-| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | unknown | needs-review |
+| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | active |
 | [Barbara](https://www.barbara.tech) | Emerging and experimental tools | unknown | needs-review |
 | [Bash](https://www.gnu.org/software/bash) | Foundations, Linux and scripting | oss | needs-review |
 | [Bat](https://github.com/sharkdp/bat) | Foundations, Linux and scripting | oss | needs-review |
 | [Bazel](https://bazel.build) | Containers and image tooling | oss | needs-review |
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
 | [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Bitbucket](https://bitbucket.org) | Source control and repository management | unknown | needs-review |
+| [Bitbucket](https://www.atlassian.com/software/bitbucket) | Source control and repository management | commercial | active |
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | commercial | active |
-| [Bitrise](https://bitrise.io) | CI, build and testing | unknown | needs-review |
+| [Bitrise](https://bitrise.io) | CI, build and testing | commercial | active |
 | [Black](https://black.readthedocs.io) | Developer experience and local environments | oss | needs-review |
 | [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [BMC Control-M](https://www.bmc.com/it-solutions/control-m.html) | Emerging and experimental tools | unknown | needs-review |
@@ -97,17 +97,17 @@
 | [Bottles](https://usebottles.com) | Developer experience and local environments | oss | needs-review |
 | [Brainboard](https://www.brainboard.co) | Emerging and experimental tools | unknown | needs-review |
 | [Braintrust](https://www.braintrust.dev) | Emerging and experimental tools | open-core | needs-review |
-| [BrowserStack App Automate](https://www.browserstack.com/app-automate) | CI, build and testing | unknown | needs-review |
-| [Buddy](https://buddy.works) | CI, build and testing | unknown | needs-review |
+| [BrowserStack App Automate](https://www.browserstack.com/app-automate) | CI, build and testing | commercial | active |
+| [Buddy](https://buddy.works) | CI, build and testing | commercial | active |
 | [Bugsink](https://www.bugsink.com/) | Monitoring, metrics, logs and tracing | source-available | active |
 | [Buildah](https://buildah.io) | Containers and image tooling | oss | needs-review |
 | [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | needs-review |
-| [Buildkite](https://buildkite.com) | CI, build and testing | unknown | needs-review |
-| [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | unknown | needs-review |
+| [Buildkite](https://buildkite.com) | CI, build and testing | commercial | active |
+| [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | commercial | active |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | active |
 | [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
-| [Cadence CI](https://cadence.ci) | CI, build and testing | unknown | needs-review |
+| [Cadence CI](https://cadence.ci) | CI, build and testing | commercial | active |
 | [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Cal.com](https://cal.com) | Workflow automation and ChatOps | oss | needs-review |
 | [Camunda](https://camunda.com) | Workflow automation and ChatOps | open-core | needs-review |
@@ -115,7 +115,7 @@
 | [cargo-chef](https://github.com/LukeMathWalker/cargo-chef) | CI, build and testing | oss | active |
 | [cargo-nextest](https://nexte.st/) | CI, build and testing | oss | active |
 | [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) | CI, build and testing | oss | active |
-| [CC Switch](https://ccswitch.io/en) | Developer experience and local environments | unknown | needs-review |
+| [CC Switch](https://ccswitch.io/en) | Developer experience and local environments | oss | active |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | needs-review |
@@ -132,7 +132,7 @@
 | [Checkmate](https://checkmate.so/) | Monitoring, metrics, logs and tracing | oss | active |
 | [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Chef Infra](https://www.chef.io/products/chef-infra) | Configuration management | commercial | active |
-| [CircleCI](https://circleci.com) | CI, build and testing | unknown | needs-review |
+| [CircleCI](https://circleci.com) | CI, build and testing | commercial | active |
 | [Civo](https://www.civo.com) | Cloud platforms and cloud management | commercial | active |
 | [Claude Code Cheat Sheet](https://shipyard.build/blog/claude-code-cheat-sheet) | Documentation, learning and career resources | documentation | needs-review |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |

@@ -174,6 +174,12 @@ PROTECTED_SELECTED_FIELDS = {
 }
 
 AUTHORIZED_CURRENT_DRIFT = {
+    ("azure-devops", "license_model"): "commercial",
+    ("azure-devops", "needs_review"): False,
+    ("azure-devops", "status"): "active",
+    ("burp-suite", "license_model"): "commercial",
+    ("burp-suite", "needs_review"): False,
+    ("burp-suite", "status"): "active",
     ("coroot", "license_model"): "open-core",
     ("coroot", "license_spdx"): "Apache-2.0",
 }

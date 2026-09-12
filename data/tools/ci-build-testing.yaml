@@ -197,8 +197,10 @@
   needs_review: false
 - id: azure-devops
   name: Azure DevOps
-  summary: Microsoft's DevOps platform.
+  summary: Microsoft's commercial DevOps product family, available as Azure DevOps Services and self-hosted
+    Azure DevOps Server.
   official_url: https://azure.microsoft.com/en-us/products/devops/
+  documentation_url: https://learn.microsoft.com/en-us/azure/devops/
   categories:
   - ci-build-testing
   subcategories:
@@ -211,24 +213,32 @@
   - build
   - test
   use_when:
-  - '* You''re invested in the Microsoft/Azure ecosystem and want integrated boards, repos, and pipelines.'
+  - You are invested in the Microsoft ecosystem and want integrated boards, repositories, pipelines, test
+    plans, and artifacts.
   avoid_when:
-  - '* You prefer open tooling or are multi-cloud without Azure ties.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an open-source control plane or do not want Azure DevOps licensing and administration.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L8
   - legacy:devopstools_final.md#L310
-  needs_review: true
+  - https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops
+  - https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/
+  - https://azure.microsoft.com/en-us/pricing/details/devops/server/
+  needs_review: false
 - id: bamboo
   name: Bamboo
-  summary: CI/CD server by Atlassian.
+  summary: Atlassian's commercially licensed, self-managed CI/CD server for build and deployment automation.
   official_url: https://www.atlassian.com/software/bamboo
+  documentation_url: https://confluence.atlassian.com/bamboo
   categories:
   - ci-build-testing
   subcategories:
@@ -241,21 +251,27 @@
   - build
   - test
   use_when:
-  - '* You''re deep in the Atlassian stack (Jira, Bitbucket).'
+  - You need self-managed CI/CD integrated with Atlassian products and have a supported Bamboo Data Center
+    subscription.
   avoid_when:
-  - '* You want a cloud-native or actively-evolving CI/CD (Atlassian is sunsetting Bamboo in favor of
-    Bitbucket Pipelines).'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You are a new customer or need a long-lived platform beyond Bamboo Data Center's announced March 2029
+    end-of-life boundary.
+  deployment_models:
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L10
   - legacy:devopstools_final.md#L311
-  needs_review: true
+  - https://www.atlassian.com/software/bamboo/pricing
+  - https://www.atlassian.com/licensing/bamboo
+  - https://www.atlassian.com/licensing/data-center-end-of-life
+  needs_review: false
 - id: bitbucket-pipelines
   name: Bitbucket Pipelines
   summary: Integrated CI/CD for Bitbucket repositories.
@@ -292,8 +308,9 @@
   commercial_offering: true
 - id: bitrise
   name: Bitrise
-  summary: CI/CD for mobile apps with automation workflows.
+  summary: Commercial mobile DevOps platform for building, testing, and releasing mobile applications.
   official_url: https://bitrise.io
+  documentation_url: https://docs.bitrise.io/en/bitrise-ci/getting-started/getting-started
   categories:
   - ci-build-testing
   subcategories:
@@ -306,24 +323,30 @@
   - build
   - test
   use_when:
-  - '* You build mobile apps and want pre-built integrations for iOS/Android.'
+  - You build mobile apps and want managed macOS/Linux CI infrastructure and mobile-focused workflows.
   avoid_when:
-  - '* Your projects are server-side or infrastructure-focused.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - Your workloads are not mobile-focused or you require a wholly open-source CI control plane.
+  deployment_models:
+  - hosted-saas
+  - customer-cloud-runner
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L14
   - legacy:devopstools_final.md#L313
-  needs_review: true
+  - https://docs.bitrise.io/en/bitrise-ci/getting-started/getting-started
+  - https://bitrise.io/pricing
+  needs_review: false
 - id: browserstack-app-automate
   name: BrowserStack App Automate
-  summary: Automated mobile app testing on real devices.
+  summary: Commercial cloud service for automated native and hybrid mobile-app testing on real devices.
   official_url: https://www.browserstack.com/app-automate
+  documentation_url: https://www.browserstack.com/docs/app-automate/appium/overview
   categories:
   - ci-build-testing
   subcategories:
@@ -339,21 +362,26 @@
   - You need broad real-device coverage without maintaining a device lab.
   avoid_when:
   - Budget is tight and emulators/simulators cover your test matrix.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:7_Development-Collaboration/README.md#L27
   - legacy:devopstools_final.md#L1051
-  needs_review: true
+  - https://www.browserstack.com/docs/app-automate/appium/overview
+  - https://www.browserstack.com/pricing
+  needs_review: false
 - id: buddy
   name: Buddy
-  summary: CI/CD pipeline automation tool.
+  summary: Commercial visual CI/CD platform available as a hosted service or self-hosted installation.
   official_url: https://buddy.works
+  documentation_url: https://buddy.works/docs
   categories:
   - ci-build-testing
   subcategories:
@@ -366,24 +394,32 @@
   - build
   - test
   use_when:
-  - '* You want a visual, low-config CI/CD for web projects.'
+  - You want visual pipeline authoring with hosted or self-hosted execution for application delivery.
   avoid_when:
-  - '* You need enterprise-grade scale or complex orchestration.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an open-source CI control plane or prefer pipeline configuration without a proprietary service.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L16
   - legacy:devopstools_final.md#L314
-  needs_review: true
+  - https://buddy.works/docs
+  - https://buddy.works/docs/self-hosted
+  - https://buddy.works/pricing
+  needs_review: false
 - id: buildkite
   name: Buildkite
-  summary: CI/CD platform with agent-based execution.
+  summary: Commercial software-delivery platform with a managed control plane and hosted or self-hosted build
+    agents.
   official_url: https://buildkite.com
+  documentation_url: https://buildkite.com/docs/platform
   categories:
   - ci-build-testing
   subcategories:
@@ -396,24 +432,34 @@
   - build
   - test
   use_when:
-  - '* You want to run builds on your own infrastructure with a managed orchestration layer.'
+  - You want a managed orchestration layer while retaining the option to execute builds on your own
+    infrastructure.
   avoid_when:
-  - '* You prefer fully managed builds and don''t want to manage agents.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an open-source control plane or do not want Buildkite's commercial platform dependency.
+  deployment_models:
+  - hosted-saas
+  - self-hosted-agent
+  - hosted-agent
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L18
   - legacy:devopstools_final.md#L315
-  needs_review: true
+  - https://buildkite.com/docs/platform
+  - https://buildkite.com/docs/agent
+  - https://buildkite.com/pricing/
+  needs_review: false
 - id: cadence-ci
   name: Cadence CI
-  summary: CI/CD platform.
+  summary: Commercial integration platform using Mélodium pipelines with managed orchestration and bring-your-own
+    compute.
   official_url: https://cadence.ci
+  documentation_url: https://cadence.ci/en/docs/how-it-works/general
   categories:
   - ci-build-testing
   subcategories:
@@ -426,20 +472,29 @@
   - build
   - test
   use_when:
-  - '* You need a lightweight CI/CD solution.'
+  - You want observable DevOps, DataOps, or MLOps pipelines that execute across your cloud or Kubernetes
+    infrastructure.
   avoid_when:
-  - '* You need a battle-tested platform with a large ecosystem of plugins and integrations.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an established CI ecosystem or do not want the separate Cadence.CI control plane and Mélodium
+    execution model.
+  deployment_models:
+  - hosted-saas
+  - customer-cloud
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L20
   - legacy:devopstools_final.md#L316
-  needs_review: true
+  - https://cadence.ci/en/docs/how-it-works/general
+  - https://cadence.ci/en/pricing
+  - https://melodium.tech/en
+  needs_review: false
 - id: cargo-chef
   name: cargo-chef
   summary: Tool for separating Rust dependency builds into cacheable container-build stages.
@@ -528,8 +583,10 @@
   commercial_offering: true
 - id: circleci
   name: CircleCI
-  summary: Cloud CI/CD platform.
+  summary: Commercial CI/CD platform offered as a managed cloud service or self-hosted CircleCI Server, with
+    optional self-hosted runners.
   official_url: https://circleci.com
+  documentation_url: https://circleci.com/docs/
   categories:
   - ci-build-testing
   subcategories:
@@ -542,20 +599,27 @@
   - build
   - test
   use_when:
-  - '* You want fast, cloud-hosted CI with excellent caching and parallelism.'
+  - You want managed or private CI/CD with configurable executors, caching, parallelism, and runner options.
   avoid_when:
-  - '* You need on-prem-only execution or strict data residency.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an open-source CI control plane or cannot accept CircleCI's commercial licensing model.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  - self-hosted-runner
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L22
   - legacy:devopstools_final.md#L317
-  needs_review: true
+  - https://circleci.com/docs/guides/plans-pricing/plan-overview/
+  - https://circleci.com/docs/guides/execution-runner/runner-overview/
+  - https://circleci.com/pricing/
+  needs_review: false
 - id: cloudbees
   name: CloudBees
   summary: Enterprise CI/CD built around Jenkins.

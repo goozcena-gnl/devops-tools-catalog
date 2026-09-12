@@ -30,43 +30,43 @@
 - [AWS Fault Injection Service](https://aws.amazon.com/fis) — Managed AWS service for running controlled fault-injection experiments against AWS workloads.
 - [AWS Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) — AWS organization-level access control.
 - [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) — Managed Azure service for validating application resilience with controlled disruptions and fault-injection experiments.
-- [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) — Microsoft's DevOps platform.
-- [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) — Azure resource governance.
+- [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) — Microsoft's commercial DevOps product family, available as Azure DevOps Services and self-hosted Azure DevOps Server.
+- [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) — Managed Azure governance service for enforcing organizational standards and assessing compliance at scale.
 - [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) — GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
-- [Bamboo](https://www.atlassian.com/software/bamboo) — CI/CD server by Atlassian.
+- [Bamboo](https://www.atlassian.com/software/bamboo) — Atlassian's commercially licensed, self-managed CI/CD server for build and deployment automation.
 - [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) — Integrated CI/CD for Bitbucket repositories.
-- [Bitrise](https://bitrise.io) — CI/CD for mobile apps with automation workflows.
+- [Bitrise](https://bitrise.io) — Commercial mobile DevOps platform for building, testing, and releasing mobile applications.
 - [Black](https://black.readthedocs.io) — Python code formatter.
 - [BlackArch Linux](https://blackarch.org/) — Arch Linux-based distribution that packages tools for authorized security testing and research.
 - [Bottles](https://usebottles.com) — Open-source tool to manage Windows applications on Linux using Wine.
-- [BrowserStack App Automate](https://www.browserstack.com/app-automate) — Automated mobile app testing on real devices.
-- [Buddy](https://buddy.works) — CI/CD pipeline automation tool.
-- [Buildkite](https://buildkite.com) — CI/CD platform with agent-based execution.
+- [BrowserStack App Automate](https://www.browserstack.com/app-automate) — Commercial cloud service for automated native and hybrid mobile-app testing on real devices.
+- [Buddy](https://buddy.works) — Commercial visual CI/CD platform available as a hosted service or self-hosted installation.
+- [Buildkite](https://buildkite.com) — Commercial software-delivery platform with a managed control plane and hosted or self-hosted build agents.
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
-- [Burp Suite](https://portswigger.net/burp) — Web vulnerability scanner and testing suite.
+- [Burp Suite](https://portswigger.net/burp) — Proprietary product family for manual web security testing and automated dynamic application security testing.
 - [Burp Suite Community Edition](https://portswigger.net/burp/downloads) — Proprietary no-cost desktop toolkit for manual web application security testing.
-- [Cadence CI](https://cadence.ci) — CI/CD platform.
+- [Cadence CI](https://cadence.ci) — Commercial integration platform using Mélodium pipelines with managed orchestration and bring-your-own compute.
 - [CAI (RobotSec)](https://aliasrobotics.github.io/cai) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
 - [Calico Cloud](https://www.calicocloud.io/home) — Managed SaaS platform built on Calico Open Source for networking/security/observability.
 - [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 - [cargo-nextest](https://nexte.st/) — Rust test runner with parallel execution, profiles, and CI-oriented reporting.
 - [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) — Rust library API compatibility checker for detecting semantic-versioning violations.
 - [Cartography](https://docs.cartography.dev/) — Graph-based asset inventory that maps cloud and infrastructure relationships into Neo4j.
-- [Cato Networks](https://www.catonetworks.com) — SASE (Secure Access Service Edge) platform.
-- [CC Switch](https://ccswitch.io/en) — Control surface for switching and managing AI coding tools.
+- [Cato Networks](https://www.catonetworks.com/solutions/sase-platform/) — Commercial cloud-delivered SASE platform combining networking, security, access, and centralized policy management.
+- [CC Switch](https://ccswitch.io/en) — Open-source desktop manager for configuring and switching among AI coding command-line tools and providers.
 - [Cedar Policy](https://www.cedarpolicy.com) — Policy language and authorization engine (Cedar) for fine-grained access control.
 - [Certipy](https://github.com/ly4k/Certipy) — Active Directory Certificate Services assessment tool for identifying configuration and trust weaknesses.
 - [Chain Bench](https://github.com/aquasecurity/chain-bench) — Supply chain security auditing tool.
-- [Chainguard](https://www.chainguard.dev) — Secure container images and supply chain security platform.
+- [Chainguard Containers](https://www.chainguard.dev) — Minimal, security-hardened container images offered as a limited free set and licensed production catalog with remediation SLAs.
 - [Chaos Mesh](https://chaos-mesh.org) — Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you want a CNCF-backed, Kubernetes-native chaos platform with a dashboard and CRD-based workflows. ❌ **Avoid when** your workloads aren't on Kubernetes or you need bare-metal/VM-level experiments.
 - [Chaos Monkey](https://netflix.github.io/chaosmonkey) — Tool for randomly terminating instances to test resilience. ✅ **Use when** you want simple, continuous instance-termination tests to validate auto-scaling and failover. ❌ **Avoid when** you need fault types beyond instance killing or aren't running on Spinnaker.
 - [Chaos Room](https://github.com/fpaparoni/chaos-room) — Chaos engineering tool. ✅ **Use when** you want a lightweight, experimental chaos tool for learning or small projects. ❌ **Avoid when** you need production-grade reliability, active maintenance, or broad fault coverage.
 - [Chaos Toolkit](https://chaostoolkit.org) — Open-source chaos engineering toolkit for building reliability experiments. ✅ **Use when** you want declarative, version-controlled experiments that are CI/CD-friendly and platform-agnostic. ❌ **Avoid when** you need real-time orchestration or a rich UI—it's primarily CLI/JSON-driven.
 - [ChaosBlade](https://chaosblade.io/en) — Chaos engineering platform with comprehensive fault injection capabilities. ✅ **Use when** you need broad fault injection (OS, JVM, Docker, K8s) in a single CLI tool. ❌ **Avoid when** you need a polished UI-driven workflow or strong English-language community support.
-- [Checkmarx](https://checkmarx.com) — Application security testing platform.
+- [Checkmarx One](https://checkmarx.com) — Commercial cloud application-security platform combining multiple scanners and SDLC integrations.
 - [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) — Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
 - [Cilium](https://cilium.io) — EBPF-based networking, observability, and security for Kubernetes.
-- [CircleCI](https://circleci.com) — Cloud CI/CD platform.
+- [CircleCI](https://circleci.com) — Commercial CI/CD platform offered as a managed cloud service or self-hosted CircleCI Server, with optional self-hosted runners.
 - [Cisco Talos Intelligence](https://www.talosintelligence.com) — Threat intelligence platform providing IP/domain reputation, vulnerability research, malware analysis, and security advisories by Cisco.
 - [CloudBees](https://www.cloudbees.com) — Enterprise CI/CD built around Jenkins.
 - [CloudFox](https://github.com/BishopFox/cloudfox) — Cloud environment situational-awareness utility for authorized AWS, Azure, and GCP security assessments.

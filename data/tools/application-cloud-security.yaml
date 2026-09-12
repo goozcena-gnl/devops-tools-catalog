@@ -371,8 +371,10 @@
   needs_review: false
 - id: azure-policy
   name: Azure Policy
-  summary: Azure resource governance.
+  summary: Managed Azure governance service for enforcing organizational standards and assessing compliance
+    at scale.
   official_url: https://learn.microsoft.com/en-us/azure/governance/policy
+  documentation_url: https://learn.microsoft.com/en-us/azure/governance/policy/
   categories:
   - application-cloud-security
   subcategories:
@@ -387,17 +389,21 @@
   - Enforce compliance and resource standards across Azure subscriptions.
   avoid_when:
   - You're not on Azure or prefer OPA for cross-cloud policy.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:6_Security/README.md#L60
   - legacy:devopstools_final.md#L928
-  needs_review: true
+  - https://learn.microsoft.com/en-us/azure/governance/policy/
+  - https://learn.microsoft.com/en-us/azure/governance/policy/overview
+  needs_review: false
 - id: blackarch-linux
   name: BlackArch Linux
   summary: Arch Linux-based distribution that packages tools for authorized security testing and research.
@@ -497,8 +503,10 @@
   needs_review: false
 - id: burp-suite
   name: Burp Suite
-  summary: Web vulnerability scanner and testing suite.
+  summary: Proprietary product family for manual web security testing and automated dynamic application
+    security testing.
   official_url: https://portswigger.net/burp
+  documentation_url: https://portswigger.net/burp/documentation
   categories:
   - application-cloud-security
   subcategories:
@@ -510,20 +518,26 @@
   - test
   - secure
   use_when:
-  - Hands-on DAST and manual web app pentesting.
+  - You need authorized hands-on web application testing or PortSwigger's managed DAST workflows.
   avoid_when:
-  - You only need CI/CD-integrated automated scanning (use ZAP or Nuclei).
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You need an open-source scanner or cannot establish explicit authorization and safety boundaries for
+    testing.
+  deployment_models:
+  - local
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:6_Security/README.md#L10
   - legacy:devopstools_final.md#L844
-  needs_review: true
+  - https://portswigger.net/burp/documentation
+  - https://portswigger.net/buy/pro
+  needs_review: false
 - id: burp-suite-community-edition
   name: Burp Suite Community Edition
   summary: Proprietary no-cost desktop toolkit for manual web application security testing.
@@ -654,8 +668,10 @@
   needs_review: false
 - id: cato-networks
   name: Cato Networks
-  summary: SASE (Secure Access Service Edge) platform.
-  official_url: https://www.catonetworks.com
+  summary: Commercial cloud-delivered SASE platform combining networking, security, access, and centralized
+    policy management.
+  official_url: https://www.catonetworks.com/solutions/sase-platform/
+  documentation_url: https://knowledge.catonetworks.com/
   categories:
   - application-cloud-security
   subcategories:
@@ -670,17 +686,23 @@
   - Converged SD-WAN + security in distributed enterprises.
   avoid_when:
   - You need piecemeal best-of-breed tools or have simple networking needs.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  - edge-appliance
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:6_Security/README.md#L78
   - legacy:devopstools_final.md#L951
-  needs_review: true
+  - https://www.catonetworks.com/solutions/sase-platform/
+  - https://www.catonetworks.com/MSA/
+  - https://knowledge.catonetworks.com/docs/accessing-the-master-service-agreement
+  needs_review: false
 - id: cedar-policy
   name: Cedar Policy
   summary: Policy language and authorization engine (Cedar) for fine-grained access control.
@@ -773,9 +795,11 @@
   - legacy:devopstools_final.md#L846
   needs_review: true
 - id: chainguard
-  name: Chainguard
-  summary: Secure container images and supply chain security platform.
+  name: Chainguard Containers
+  summary: Minimal, security-hardened container images offered as a limited free set and licensed production
+    catalog with remediation SLAs.
   official_url: https://www.chainguard.dev
+  documentation_url: https://edu.chainguard.dev/chainguard/containers/overview/
   categories:
   - application-cloud-security
   subcategories:
@@ -787,24 +811,32 @@
   - test
   - secure
   use_when:
-  - You want minimal, CVE-free base images out of the box.
+  - You want continuously rebuilt, signed container images with provenance and optional contractual CVE
+    remediation SLAs.
   avoid_when:
-  - You need full control over your base image build process.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require full control of the image build pipeline or intend to adopt Wolfi, apko, or melange as though
+    they were the same product.
+  deployment_models:
+  - container-registry
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:6_Security/README.md#L13
   - legacy:devopstools_final.md#L847
-  needs_review: true
+  - https://edu.chainguard.dev/chainguard/containers/overview/
+  - https://www.chainguard.dev/pricing
+  - https://www.chainguard.dev/legal/chainguard-containers
+  needs_review: false
 - id: checkmarx
-  name: Checkmarx
-  summary: Application security testing platform.
+  name: Checkmarx One
+  summary: Commercial cloud application-security platform combining multiple scanners and SDLC integrations.
   official_url: https://checkmarx.com
+  documentation_url: https://docs.checkmarx.com/en/34965-67042-checkmarx-one.html
   categories:
   - application-cloud-security
   subcategories:
@@ -816,20 +848,25 @@
   - test
   - secure
   use_when:
-  - Enterprise-grade SAST/SCA with compliance reporting.
+  - You need an enterprise platform spanning SAST, SCA, DAST, IaC, API, container, and secrets scanning.
   avoid_when:
-  - For small teams where OSS alternatives (CodeQL, Semgrep) suffice.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You only need a standalone open-source scanner such as KICS and do not need the Checkmarx One platform.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:6_Security/README.md#L14
   - legacy:devopstools_final.md#L848
-  needs_review: true
+  - https://docs.checkmarx.com/en/34965-67042-checkmarx-one.html
+  - https://checkmarx.com/packaging/
+  - https://checkmarx.com/legal/checkmarx-one-license-types-and-restrictions/
+  needs_review: false
 - id: cisco-talos-intelligence
   name: Cisco Talos Intelligence
   summary: Threat intelligence platform providing IP/domain reputation, vulnerability research, malware

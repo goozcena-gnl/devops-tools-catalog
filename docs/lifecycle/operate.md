@@ -62,7 +62,7 @@
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
 - [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) — Managed Azure service for validating application resilience with controlled disruptions and fault-injection experiments.
 - [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) — Azure service for running containerized apps.
-- [Azure Functions](https://azure.microsoft.com/en-us/products/functions) — Managed serverless compute service by Azure (runtime host is open source).
+- [Azure Functions](https://azure.microsoft.com/en-us/products/functions) — Commercial managed Azure PaaS for event-driven and scheduled compute; the separately catalogued Functions Host runtime is open source.
 - [Azure Functions Host](https://github.com/Azure/azure-functions-host) — The runtime host and core execution engine for Azure Functions.
 - [Azure kubelogin](https://azure.github.io/kubelogin/) — Kubernetes exec credential plugin implementing Microsoft Entra authentication for Azure clusters.
 - [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) — Microsoft's CBL-Mariner-based Linux distribution optimized for container and cloud workloads on Azure.
@@ -75,7 +75,7 @@
 - [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) — Embedded key/value store for Go applications.
 - [Beszel](https://beszel.dev) — Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC, backups, and REST API.
 - [Better Stack](https://betterstack.com/) — Commercial observability and incident-management platform with telemetry, on-call, and status-page services.
-- [Bito](https://bito.ai) — AI coding assistant for IDE/workflow productivity.
+- [Bito](https://bito.ai) — Commercial AI code-review and codebase-intelligence platform for repositories, IDEs, CLIs, and engineering workflows.
 - [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) — Prometheus exporter for probing HTTP, HTTPS, DNS, TCP, ICMP, and gRPC endpoints.
 - [blocky](https://0xerr0r.github.io/blocky/latest/) — Configurable DNS proxy and ad blocker with upstream groups, caching, filtering, and Prometheus metrics.
 - [bmon](https://jafaral.github.io/bmon/) — Terminal bandwidth monitor and rate estimator for network interfaces.
@@ -98,7 +98,7 @@
 - [Carvel](https://carvel.dev) — Kubernetes tools suite.
 - [Carvel kapp](https://carvel.dev/kapp) — Simple deployment tool for Kubernetes.
 - [Carvel ytt](https://carvel.dev/ytt) — YAML templating tool for Kubernetes configurations.
-- [CasaVue](https://casavue.app) — Kubernetes cluster visualization and management dashboard.
+- [CasaVue](https://casavue.app) — Open-source progressive web application that indexes Kubernetes Ingress resources into a customizable application dashboard.
 - [Centreon](https://www.centreon.com) — Monitoring platform with open source base and enterprise/cloud offerings.
 - [Ceph](https://ceph.io/en) — Distributed storage system for object, block, and file storage.
 - [cert-manager](https://cert-manager.io) — X.509 certificate management for Kubernetes.

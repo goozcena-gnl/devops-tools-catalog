@@ -80,6 +80,7 @@
   summary: Kubernetes automation and cloud optimization platform for rightsizing, autoscaling, cost control,
     and performance.
   official_url: https://cast.ai
+  documentation_url: https://docs.cast.ai/docs/getting-started
   categories:
   - finops-sustainability
   subcategories:
@@ -90,18 +91,28 @@
   - finops-engineer
   lifecycle_stages:
   - optimize
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want a commercial platform to monitor and automatically optimize Kubernetes compute cost, scheduling,
+    and resource requests.
+  avoid_when:
+  - You require a wholly open-source optimization control plane or cannot install the CAST AI agent and grant
+    the cloud permissions needed for automation.
+  deployment_models:
+  - hosted-saas
+  - in-cluster-agent
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:devopstools_final.md#L788
-  needs_review: true
+  - https://docs.cast.ai/docs/getting-started
+  - https://docs.cast.ai/docs/administration-platform-usage
+  - https://cast.ai/pricing
+  needs_review: false
 - id: cloudbolt-cloud-operations
   name: CloudBolt Cloud Operations
   summary: Hybrid and multi-cloud operations platform for governed provisioning, orchestration, and FinOps controls.

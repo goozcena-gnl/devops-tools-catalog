@@ -38,7 +38,7 @@
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
 | [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | commercial | active |
 | [Azure DevOps Labs](https://www.azuredevopslabs.com) | Documentation, learning and career resources | documentation | needs-review |
-| [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | commercial | active |
 | [Azure Functions Host](https://github.com/Azure/azure-functions-host) | Serverless, edge and WebAssembly | oss | needs-review |
 | [Azure Mastery](https://www.azurekt.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
@@ -47,12 +47,12 @@
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
-| [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | needs-review |
 | [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) | IAM, secrets and certificate management | oss | needs-review |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
-| [Cast AI](https://cast.ai) | FinOps and sustainability | unknown | needs-review |
+| [Cast AI](https://cast.ai) | FinOps and sustainability | commercial | active |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [CertGames](https://certgames.com/) | Documentation, learning and career resources | documentation | needs-review |

@@ -237,20 +237,20 @@ Open-source tool to manage Windows applications on Linux using Wine.
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Control surface for switching and managing AI coding tools.
+Open-source desktop manager for configuring and switching among AI coding command-line tools and providers.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You use multiple supported AI coding CLIs and want one local interface for provider and configuration management.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You use a single provider or cannot accept a desktop application modifying local tool configuration.
 
-[Official site](https://ccswitch.io/en)
+[Official site](https://ccswitch.io/en) · [Documentation](https://github.com/farion1231/cc-switch#readme) · [Source repository](https://github.com/farion1231/cc-switch)
 
 ### code-server
 

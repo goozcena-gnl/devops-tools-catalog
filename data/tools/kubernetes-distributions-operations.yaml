@@ -186,8 +186,12 @@
   needs_review: false
 - id: casavue
   name: CasaVue
-  summary: Kubernetes cluster visualization and management dashboard.
+  summary: Open-source progressive web application that indexes Kubernetes Ingress resources into a
+    customizable application dashboard.
   official_url: https://casavue.app
+  repository_url: https://github.com/czoczo/casavue
+  repository_archived: false
+  documentation_url: https://casavue.app/deployment/quick_start/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -200,20 +204,26 @@
   - deploy
   - operate
   use_when:
-  - You want a lightweight visual overview of cluster state.
+  - You want a lightweight, self-hosted front page for applications exposed through Kubernetes Ingress.
   avoid_when:
-  - You need deep RBAC, multi-cluster, or enterprise-grade dashboards.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You need general cluster management, observability, deep RBAC, or multi-cluster administration.
+  deployment_models:
+  - kubernetes
+  - self-hosted
+  license_model: oss
+  license_spdx: GPL-3.0
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L22
   - legacy:devopstools_final.md#L452
-  needs_review: true
+  - https://casavue.app/
+  - https://github.com/czoczo/casavue
+  - https://github.com/czoczo/casavue/blob/main/LICENSE
+  needs_review: false
 - id: cluster-api
   name: Cluster API
   summary: Declarative APIs and tooling for provisioning, upgrading, and operating multiple Kubernetes

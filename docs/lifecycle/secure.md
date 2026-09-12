@@ -21,13 +21,13 @@
 - [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) — Managed secret storage for AWS.
 - [AWS Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) — AWS organization-level access control.
 - [Azure kubelogin](https://azure.github.io/kubelogin/) — Kubernetes exec credential plugin implementing Microsoft Entra authentication for Azure clusters.
-- [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) — Azure resource governance.
+- [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) — Managed Azure governance service for enforcing organizational standards and assessing compliance at scale.
 - [BlackArch Linux](https://blackarch.org/) — Arch Linux-based distribution that packages tools for authorized security testing and research.
 - [blocky](https://0xerr0r.github.io/blocky/latest/) — Configurable DNS proxy and ad blocker with upstream groups, caching, filtering, and Prometheus metrics.
 - [BloodHound](https://bloodhound.specterops.io/) — Graph-based platform for authorized analysis of identity relationships and attack paths in directory and cloud environments.
 - [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) — ACME-based certificate authority server powering Let's Encrypt.
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
-- [Burp Suite](https://portswigger.net/burp) — Web vulnerability scanner and testing suite.
+- [Burp Suite](https://portswigger.net/burp) — Proprietary product family for manual web security testing and automated dynamic application security testing.
 - [Burp Suite Community Edition](https://portswigger.net/burp/downloads) — Proprietary no-cost desktop toolkit for manual web application security testing.
 - [CAI (RobotSec)](https://aliasrobotics.github.io/cai) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
 - [Calico Cloud](https://www.calicocloud.io/home) — Managed SaaS platform built on Calico Open Source for networking/security/observability.
@@ -35,13 +35,13 @@
 - [cargo-deny](https://github.com/EmbarkStudios/cargo-deny) — Cargo dependency policy checker for advisories, licences, sources, and banned packages.
 - [cargo-vet](https://mozilla.github.io/cargo-vet/) — Tool for recording and enforcing human audits of Rust dependencies.
 - [Cartography](https://docs.cartography.dev/) — Graph-based asset inventory that maps cloud and infrastructure relationships into Neo4j.
-- [Cato Networks](https://www.catonetworks.com) — SASE (Secure Access Service Edge) platform.
+- [Cato Networks](https://www.catonetworks.com/solutions/sase-platform/) — Commercial cloud-delivered SASE platform combining networking, security, access, and centralized policy management.
 - [Cedar Policy](https://www.cedarpolicy.com) — Policy language and authorization engine (Cedar) for fine-grained access control.
 - [Certipy](https://github.com/ly4k/Certipy) — Active Directory Certificate Services assessment tool for identifying configuration and trust weaknesses.
 - [CertMate](https://www.certmate.org) — Certificate management automation.
 - [Chain Bench](https://github.com/aquasecurity/chain-bench) — Supply chain security auditing tool.
-- [Chainguard](https://www.chainguard.dev) — Secure container images and supply chain security platform.
-- [Checkmarx](https://checkmarx.com) — Application security testing platform.
+- [Chainguard Containers](https://www.chainguard.dev) — Minimal, security-hardened container images offered as a limited free set and licensed production catalog with remediation SLAs.
+- [Checkmarx One](https://checkmarx.com) — Commercial cloud application-security platform combining multiple scanners and SDLC integrations.
 - [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) — Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
 - [Cilium](https://cilium.io) — EBPF-based networking, observability, and security for Kubernetes.
 - [Cisco Talos Intelligence](https://www.talosintelligence.com) — Threat intelligence platform providing IP/domain reputation, vulnerability research, malware analysis, and security advisories by Cisco.

@@ -22,12 +22,12 @@
 | [Awesome WAF](https://github.com/0xInfection/Awesome-WAF) | Application and cloud security | documentation | needs-review |
 | [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) | IAM, secrets and certificate management | commercial | active |
 | [AWS Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) | Application and cloud security | commercial | active |
-| [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) | Application and cloud security | unknown | needs-review |
+| [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) | Application and cloud security | commercial | active |
 | [BlackArch Linux](https://blackarch.org/) | Application and cloud security | oss | active |
 | [BloodHound](https://bloodhound.specterops.io/) | Application and cloud security, IAM, secrets and certificate management | open-core | active |
 | [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) | IAM, secrets and certificate management | oss | needs-review |
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
-| [Burp Suite](https://portswigger.net/burp) | Application and cloud security | unknown | needs-review |
+| [Burp Suite](https://portswigger.net/burp) | Application and cloud security | commercial | active |
 | [Burp Suite Community Edition](https://portswigger.net/burp/downloads) | Application and cloud security | commercial | active |
 | [CAI (RobotSec)](https://aliasrobotics.github.io/cai) | Application and cloud security | source-available | archived |
 | [Calico Cloud](https://www.calicocloud.io/home) | Application and cloud security | open-core | needs-review |
@@ -35,13 +35,13 @@
 | [cargo-deny](https://github.com/EmbarkStudios/cargo-deny) | Software supply-chain security | oss | active |
 | [cargo-vet](https://mozilla.github.io/cargo-vet/) | Software supply-chain security | oss | active |
 | [Cartography](https://docs.cartography.dev/) | Application and cloud security | oss | active |
-| [Cato Networks](https://www.catonetworks.com) | Application and cloud security | unknown | needs-review |
+| [Cato Networks](https://www.catonetworks.com/solutions/sase-platform/) | Application and cloud security | commercial | active |
 | [Cedar Policy](https://www.cedarpolicy.com) | Application and cloud security | oss | active |
 | [Certipy](https://github.com/ly4k/Certipy) | Application and cloud security | oss | active |
 | [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | needs-review |
 | [Chain Bench](https://github.com/aquasecurity/chain-bench) | Application and cloud security | oss | needs-review |
-| [Chainguard](https://www.chainguard.dev) | Application and cloud security | unknown | needs-review |
-| [Checkmarx](https://checkmarx.com) | Application and cloud security | unknown | needs-review |
+| [Chainguard Containers](https://www.chainguard.dev) | Application and cloud security | commercial | active |
+| [Checkmarx One](https://checkmarx.com) | Application and cloud security | commercial | active |
 | [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) | Application and cloud security | oss | active |
 | [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Cisco Talos Intelligence](https://www.talosintelligence.com) | Application and cloud security | documentation | needs-review |

@@ -19,24 +19,24 @@
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
-| [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | unknown | needs-review |
-| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | unknown | needs-review |
-| [Bitbucket](https://bitbucket.org) | Source control and repository management | unknown | needs-review |
+| [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | commercial | active |
+| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | active |
+| [Bitbucket](https://www.atlassian.com/software/bitbucket) | Source control and repository management | commercial | active |
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | commercial | active |
-| [Bitrise](https://bitrise.io) | CI, build and testing | unknown | needs-review |
-| [BrowserStack App Automate](https://www.browserstack.com/app-automate) | CI, build and testing | unknown | needs-review |
-| [Buddy](https://buddy.works) | CI, build and testing | unknown | needs-review |
-| [Buildkite](https://buildkite.com) | CI, build and testing | unknown | needs-review |
-| [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | unknown | needs-review |
+| [Bitrise](https://bitrise.io) | CI, build and testing | commercial | active |
+| [BrowserStack App Automate](https://www.browserstack.com/app-automate) | CI, build and testing | commercial | active |
+| [Buddy](https://buddy.works) | CI, build and testing | commercial | active |
+| [Buildkite](https://buildkite.com) | CI, build and testing | commercial | active |
+| [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | commercial | active |
 | [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
-| [Cadence CI](https://cadence.ci) | CI, build and testing | unknown | needs-review |
+| [Cadence CI](https://cadence.ci) | CI, build and testing | commercial | active |
 | [cargo-binstall](https://github.com/cargo-bins/cargo-binstall) | Artifact and package management | oss | active |
 | [cargo-chef](https://github.com/LukeMathWalker/cargo-chef) | CI, build and testing | oss | active |
 | [cargo-deny](https://github.com/EmbarkStudios/cargo-deny) | Software supply-chain security | oss | active |
 | [cargo-nextest](https://nexte.st/) | CI, build and testing | oss | active |
 | [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) | CI, build and testing | oss | active |
 | [cargo-vet](https://mozilla.github.io/cargo-vet/) | Software supply-chain security | oss | active |
-| [CircleCI](https://circleci.com) | CI, build and testing | unknown | needs-review |
+| [CircleCI](https://circleci.com) | CI, build and testing | commercial | active |
 | [CloudBees](https://www.cloudbees.com) | CI, build and testing | open-core | needs-review |
 | [Cloudsmith](https://cloudsmith.com) | Artifact and package management | unknown | needs-review |
 | [Codacy](https://www.codacy.com/) | CI, build and testing, Application and cloud security | commercial | active |

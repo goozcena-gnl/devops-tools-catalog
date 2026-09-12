@@ -366,8 +366,12 @@
   needs_review: true
 - id: cc-switch
   name: CC Switch
-  summary: Control surface for switching and managing AI coding tools.
+  summary: Open-source desktop manager for configuring and switching among AI coding command-line tools and
+    providers.
   official_url: https://ccswitch.io/en
+  repository_url: https://github.com/farion1231/cc-switch
+  repository_archived: false
+  documentation_url: https://github.com/farion1231/cc-switch#readme
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -378,18 +382,26 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You use multiple supported AI coding CLIs and want one local interface for provider and configuration
+    management.
+  avoid_when:
+  - You use a single provider or cannot accept a desktop application modifying local tool configuration.
+  deployment_models:
+  - local
+  license_model: oss
+  license_spdx: MIT
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:devopstools_final.md#L412
-  needs_review: true
+  - https://ccswitch.io/en
+  - https://github.com/farion1231/cc-switch
+  - https://github.com/farion1231/cc-switch/blob/main/LICENSE
+  needs_review: false
 - id: code-server
   name: code-server
   summary: Self-hosted service that runs Visual Studio Code in a web browser.

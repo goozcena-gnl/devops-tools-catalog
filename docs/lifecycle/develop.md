@@ -24,13 +24,13 @@
 - [Barbara](https://www.barbara.tech) — DevOps/engineering platform.
 - [Bash](https://www.gnu.org/software/bash) — Bourne Again Shell.
 - [Bat](https://github.com/sharkdp/bat) — Better `cat` with syntax highlighting.
-- [Bitbucket](https://bitbucket.org) — Git repository hosting by Atlassian.
+- [Bitbucket](https://www.atlassian.com/software/bitbucket) — Atlassian's commercial Git repository-hosting product family, covering Bitbucket Cloud and the self-managed Bitbucket Data Center offering.
 - [Black](https://black.readthedocs.io) — Python code formatter.
 - [BMC Control-M](https://www.bmc.com/it-solutions/control-m.html) — Application and data workflow orchestration platform.
 - [Bottles](https://usebottles.com) — Open-source tool to manage Windows applications on Linux using Wine.
 - [Brainboard](https://www.brainboard.co) — Visual cloud architecture and IaC design platform.
 - [Braintrust](https://www.braintrust.dev) — Decentralized AI marketplace and DevOps collaboration platform.
-- [CC Switch](https://ccswitch.io/en) — Control surface for switching and managing AI coding tools.
+- [CC Switch](https://ccswitch.io/en) — Open-source desktop manager for configuring and switching among AI coding command-line tools and providers.
 - [Chapril Services](https://www.chapril.org/-services-.html) — Community-hosted catalogue of libre online services including collaboration, communication, file sharing, and code hosting tools.
 - [Clone-Wars](https://github.com/GorvGoyl/Clone-Wars) — GitHub project (see repository for details).
 - [cmd.ms](https://cmd.ms) — Microsoft Cloud command-line shortcut browser with 355+ shortcuts to Azure, Entra, Intune, and Microsoft 365 admin portals via the browser address bar.

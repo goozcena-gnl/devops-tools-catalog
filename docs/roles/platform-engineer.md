@@ -48,7 +48,7 @@
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
 | [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | commercial | active |
 | [Azure DevOps Labs](https://www.azuredevopslabs.com) | Documentation, learning and career resources | documentation | needs-review |
-| [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | commercial | active |
 | [Azure Functions Host](https://github.com/Azure/azure-functions-host) | Serverless, edge and WebAssembly | oss | needs-review |
 | [Azure kubelogin](https://azure.github.io/kubelogin/) | IAM, secrets and certificate management | oss | active |
 | [Azure Mastery](https://www.azurekt.com) | Documentation, learning and career resources | documentation | needs-review |
@@ -61,7 +61,7 @@
 | [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | needs-review |
 | [Barbara](https://www.barbara.tech) | Emerging and experimental tools | unknown | needs-review |
 | [Bazel](https://bazel.build) | Containers and image tooling | oss | needs-review |
-| [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [BMC Control-M](https://www.bmc.com/it-solutions/control-m.html) | Emerging and experimental tools | unknown | needs-review |
 | [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | active |
 | [Brainboard](https://www.brainboard.co) | Emerging and experimental tools | unknown | needs-review |
@@ -69,7 +69,7 @@
 | [Buildah](https://buildah.io) | Containers and image tooling | oss | needs-review |
 | [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | needs-review |
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
-| [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | unknown | needs-review |
+| [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | commercial | active |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
 | [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
@@ -78,8 +78,8 @@
 | [Carvel](https://carvel.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Carvel kapp](https://carvel.dev/kapp) | Kubernetes distributions and operations | oss | active |
 | [Carvel ytt](https://carvel.dev/ytt) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [CasaVue](https://casavue.app) | Kubernetes distributions and operations | unknown | needs-review |
-| [Cast AI](https://cast.ai) | FinOps and sustainability | unknown | needs-review |
+| [CasaVue](https://casavue.app) | Kubernetes distributions and operations | oss | active |
+| [Cast AI](https://cast.ai) | FinOps and sustainability | commercial | active |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | needs-review |

@@ -123,39 +123,39 @@ Load testing platform and toolkit for HTTP, APIs, and Playwright-based scenarios
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Microsoft's DevOps platform.
+Microsoft's commercial DevOps product family, available as Azure DevOps Services and self-hosted Azure DevOps Server.
 
 **Use when**
 
-- * You're invested in the Microsoft/Azure ecosystem and want integrated boards, repos, and pipelines.
+- You are invested in the Microsoft ecosystem and want integrated boards, repositories, pipelines, test plans, and artifacts.
 
 **Consider alternatives when**
 
-- * You prefer open tooling or are multi-cloud without Azure ties.
+- You require an open-source control plane or do not want Azure DevOps licensing and administration.
 
-[Official site](https://azure.microsoft.com/en-us/products/devops/)
+[Official site](https://azure.microsoft.com/en-us/products/devops/) · [Documentation](https://learn.microsoft.com/en-us/azure/devops/)
 
 ### Bamboo
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-CI/CD server by Atlassian.
+Atlassian's commercially licensed, self-managed CI/CD server for build and deployment automation.
 
 **Use when**
 
-- * You're deep in the Atlassian stack (Jira, Bitbucket).
+- You need self-managed CI/CD integrated with Atlassian products and have a supported Bamboo Data Center subscription.
 
 **Consider alternatives when**
 
-- * You want a cloud-native or actively-evolving CI/CD (Atlassian is sunsetting Bamboo in favor of Bitbucket Pipelines).
+- You are a new customer or need a long-lived platform beyond Bamboo Data Center's announced March 2029 end-of-life boundary.
 
-[Official site](https://www.atlassian.com/software/bamboo)
+[Official site](https://www.atlassian.com/software/bamboo) · [Documentation](https://confluence.atlassian.com/bamboo)
 
 ### Bitbucket Pipelines
 
@@ -180,29 +180,29 @@ Integrated CI/CD for Bitbucket repositories.
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-CI/CD for mobile apps with automation workflows.
+Commercial mobile DevOps platform for building, testing, and releasing mobile applications.
 
 **Use when**
 
-- * You build mobile apps and want pre-built integrations for iOS/Android.
+- You build mobile apps and want managed macOS/Linux CI infrastructure and mobile-focused workflows.
 
 **Consider alternatives when**
 
-- * Your projects are server-side or infrastructure-focused.
+- Your workloads are not mobile-focused or you require a wholly open-source CI control plane.
 
-[Official site](https://bitrise.io)
+[Official site](https://bitrise.io) · [Documentation](https://docs.bitrise.io/en/bitrise-ci/getting-started/getting-started)
 
 ### BrowserStack App Automate
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Automated mobile app testing on real devices.
+Commercial cloud service for automated native and hybrid mobile-app testing on real devices.
 
 **Use when**
 
@@ -212,64 +212,64 @@ Automated mobile app testing on real devices.
 
 - Budget is tight and emulators/simulators cover your test matrix.
 
-[Official site](https://www.browserstack.com/app-automate)
+[Official site](https://www.browserstack.com/app-automate) · [Documentation](https://www.browserstack.com/docs/app-automate/appium/overview)
 
 ### Buddy
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-CI/CD pipeline automation tool.
+Commercial visual CI/CD platform available as a hosted service or self-hosted installation.
 
 **Use when**
 
-- * You want a visual, low-config CI/CD for web projects.
+- You want visual pipeline authoring with hosted or self-hosted execution for application delivery.
 
 **Consider alternatives when**
 
-- * You need enterprise-grade scale or complex orchestration.
+- You require an open-source CI control plane or prefer pipeline configuration without a proprietary service.
 
-[Official site](https://buddy.works)
+[Official site](https://buddy.works) · [Documentation](https://buddy.works/docs)
 
 ### Buildkite
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-CI/CD platform with agent-based execution.
+Commercial software-delivery platform with a managed control plane and hosted or self-hosted build agents.
 
 **Use when**
 
-- * You want to run builds on your own infrastructure with a managed orchestration layer.
+- You want a managed orchestration layer while retaining the option to execute builds on your own infrastructure.
 
 **Consider alternatives when**
 
-- * You prefer fully managed builds and don't want to manage agents.
+- You require an open-source control plane or do not want Buildkite's commercial platform dependency.
 
-[Official site](https://buildkite.com)
+[Official site](https://buildkite.com) · [Documentation](https://buildkite.com/docs/platform)
 
 ### Cadence CI
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-CI/CD platform.
+Commercial integration platform using Mélodium pipelines with managed orchestration and bring-your-own compute.
 
 **Use when**
 
-- * You need a lightweight CI/CD solution.
+- You want observable DevOps, DataOps, or MLOps pipelines that execute across your cloud or Kubernetes infrastructure.
 
 **Consider alternatives when**
 
-- * You need a battle-tested platform with a large ecosystem of plugins and integrations.
+- You require an established CI ecosystem or do not want the separate Cadence.CI control plane and Mélodium execution model.
 
-[Official site](https://cadence.ci)
+[Official site](https://cadence.ci) · [Documentation](https://cadence.ci/en/docs/how-it-works/general)
 
 ### cargo-chef
 
@@ -332,20 +332,20 @@ Rust library API compatibility checker for detecting semantic-versioning violati
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud CI/CD platform.
+Commercial CI/CD platform offered as a managed cloud service or self-hosted CircleCI Server, with optional self-hosted runners.
 
 **Use when**
 
-- * You want fast, cloud-hosted CI with excellent caching and parallelism.
+- You want managed or private CI/CD with configurable executors, caching, parallelism, and runner options.
 
 **Consider alternatives when**
 
-- * You need on-prem-only execution or strict data residency.
+- You require an open-source CI control plane or cannot accept CircleCI's commercial licensing model.
 
-[Official site](https://circleci.com)
+[Official site](https://circleci.com) · [Documentation](https://circleci.com/docs/)
 
 ### CloudBees
 

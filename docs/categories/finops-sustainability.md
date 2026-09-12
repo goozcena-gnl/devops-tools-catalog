@@ -47,20 +47,20 @@ Kubernetes operator that recommends and applies workload resource requests from 
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Kubernetes automation and cloud optimization platform for rightsizing, autoscaling, cost control, and performance.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a commercial platform to monitor and automatically optimize Kubernetes compute cost, scheduling, and resource requests.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a wholly open-source optimization control plane or cannot install the CAST AI agent and grant the cloud permissions needed for automation.
 
-[Official site](https://cast.ai)
+[Official site](https://cast.ai) · [Documentation](https://docs.cast.ai/docs/getting-started)
 
 ### CloudBolt Cloud Operations
 

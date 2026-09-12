@@ -391,8 +391,10 @@
   needs_review: true
 - id: bito
   name: Bito
-  summary: AI coding assistant for IDE/workflow productivity.
+  summary: Commercial AI code-review and codebase-intelligence platform for repositories, IDEs, CLIs, and
+    engineering workflows.
   official_url: https://bito.ai
+  documentation_url: https://docs.bito.ai/
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -406,20 +408,27 @@
   - deploy
   - operate
   use_when:
-  - You want an AI assistant with privacy-focused, enterprise-ready features.
+  - You want codebase-aware AI reviews and architecture assistance across Git providers and developer tools.
   avoid_when:
-  - You already have an established AI coding assistant and don't need a second one.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an open-source implementation or cannot use Bito's hosted, self-hosted, or on-premises product
+    boundary.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  - on-premises
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:9_AI-MLOps/README.md#L22
   - legacy:devopstools_final.md#L1198
-  needs_review: true
+  - https://docs.bito.ai/help/billing-and-plans/overview
+  - https://bito.ai/pricing/
+  needs_review: false
 - id: codebase-memory-mcp
   name: codebase-memory-mcp
   summary: High-performance code intelligence MCP server that indexes repositories into a persistent knowledge

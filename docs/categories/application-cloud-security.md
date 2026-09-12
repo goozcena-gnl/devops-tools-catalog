@@ -256,10 +256,10 @@ AWS organization-level access control.
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Azure resource governance.
+Managed Azure governance service for enforcing organizational standards and assessing compliance at scale.
 
 **Use when**
 
@@ -269,7 +269,7 @@ Azure resource governance.
 
 - You're not on Azure or prefer OPA for cross-cloud policy.
 
-[Official site](https://learn.microsoft.com/en-us/azure/governance/policy)
+[Official site](https://learn.microsoft.com/en-us/azure/governance/policy) · [Documentation](https://learn.microsoft.com/en-us/azure/governance/policy/)
 
 ### BlackArch Linux
 
@@ -353,20 +353,20 @@ Open source, cloud-native web application firewall and security gateway for reve
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Web vulnerability scanner and testing suite.
+Proprietary product family for manual web security testing and automated dynamic application security testing.
 
 **Use when**
 
-- Hands-on DAST and manual web app pentesting.
+- You need authorized hands-on web application testing or PortSwigger's managed DAST workflows.
 
 **Consider alternatives when**
 
-- You only need CI/CD-integrated automated scanning (use ZAP or Nuclei).
+- You need an open-source scanner or cannot establish explicit authorization and safety boundaries for testing.
 
-[Official site](https://portswigger.net/burp)
+[Official site](https://portswigger.net/burp) · [Documentation](https://portswigger.net/burp/documentation)
 
 ### Burp Suite Community Edition
 
@@ -470,10 +470,10 @@ Graph-based asset inventory that maps cloud and infrastructure relationships int
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-SASE (Secure Access Service Edge) platform.
+Commercial cloud-delivered SASE platform combining networking, security, access, and centralized policy management.
 
 **Use when**
 
@@ -483,7 +483,7 @@ SASE (Secure Access Service Edge) platform.
 
 - You need piecemeal best-of-breed tools or have simple networking needs.
 
-[Official site](https://www.catonetworks.com)
+[Official site](https://www.catonetworks.com/solutions/sase-platform/) · [Documentation](https://knowledge.catonetworks.com/)
 
 ### Cedar Policy
 
@@ -542,43 +542,43 @@ Supply chain security auditing tool.
 
 [Source repository](https://github.com/aquasecurity/chain-bench)
 
-### Chainguard
+### Chainguard Containers
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Secure container images and supply chain security platform.
+Minimal, security-hardened container images offered as a limited free set and licensed production catalog with remediation SLAs.
 
 **Use when**
 
-- You want minimal, CVE-free base images out of the box.
+- You want continuously rebuilt, signed container images with provenance and optional contractual CVE remediation SLAs.
 
 **Consider alternatives when**
 
-- You need full control over your base image build process.
+- You require full control of the image build pipeline or intend to adopt Wolfi, apko, or melange as though they were the same product.
 
-[Official site](https://www.chainguard.dev)
+[Official site](https://www.chainguard.dev) · [Documentation](https://edu.chainguard.dev/chainguard/containers/overview/)
 
-### Checkmarx
+### Checkmarx One
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Application security testing platform.
+Commercial cloud application-security platform combining multiple scanners and SDLC integrations.
 
 **Use when**
 
-- Enterprise-grade SAST/SCA with compliance reporting.
+- You need an enterprise platform spanning SAST, SCA, DAST, IaC, API, container, and secrets scanning.
 
 **Consider alternatives when**
 
-- For small teams where OSS alternatives (CodeQL, Semgrep) suffice.
+- You only need a standalone open-source scanner such as KICS and do not need the Checkmarx One platform.
 
-[Official site](https://checkmarx.com)
+[Official site](https://checkmarx.com) · [Documentation](https://docs.checkmarx.com/en/34965-67042-checkmarx-one.html)
 
 ### Checkov (Bridgecrew / Prisma Cloud)
 

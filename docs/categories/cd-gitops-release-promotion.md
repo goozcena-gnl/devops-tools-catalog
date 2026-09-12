@@ -125,20 +125,20 @@ Integrates secrets from external stores into ArgoCD.
 
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven by environment-as-code workflows.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want pull requests to provision isolated preview environments in your own Kubernetes or cloud infrastructure.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You do not need production-like ephemeral environments or cannot connect the platform to the target infrastructure and source repositories.
 
-[Official site](https://www.bunnyshell.com)
+[Official site](https://www.bunnyshell.com) · [Documentation](https://documentation.bunnyshell.com/)
 
 ### Caddy
 
