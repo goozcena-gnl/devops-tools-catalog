@@ -9,39 +9,39 @@
 
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Managed chaos engineering service on AWS. ✅ **Use when** you're already on AWS and need turnkey fault injection with IAM-scoped safety controls. ❌ **Avoid when** your workloads span multiple clouds or you need deep application-level fault injection.
+Managed AWS service for running controlled fault-injection experiments against AWS workloads.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need AWS-native fault injection with IAM controls, experiment templates, stop conditions, and supported AWS targets.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Your workloads span multiple clouds or require fault types outside the AWS FIS target and action catalogue.
 
-[Official site](https://aws.amazon.com/fis)
+[Official site](https://aws.amazon.com/fis) · [Documentation](https://docs.aws.amazon.com/fis/latest/userguide/what-is.html)
 
 ### Azure Chaos Studio
 
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Chaos engineering service for Azure. ✅ **Use when** your infrastructure is Azure-native and you want tight integration with Azure Monitor. ❌ **Avoid when** you're multi-cloud or need experiments beyond Azure-supported fault types.
+Managed Azure service for validating application resilience with controlled disruptions and fault-injection experiments.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need Azure-native resilience scenarios or experiments against supported Azure resources with Azure Monitor integration.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Your workloads are primarily outside Azure or require fault types beyond the supported resource and fault catalogue.
 
-[Official site](https://azure.microsoft.com/en-us/products/chaos-studio)
+[Official site](https://azure.microsoft.com/en-us/products/chaos-studio) · [Documentation](https://learn.microsoft.com/en-us/azure/chaos-studio/)
 
 ### Chaos Mesh
 

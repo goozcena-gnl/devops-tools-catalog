@@ -27,9 +27,9 @@
 - [Awesome DevSecOps](https://github.com/devsecops/awesome-devsecops) — Curated list of DevSecOps resources.
 - [Awesome WAF](https://github.com/0xInfection/Awesome-WAF) — Curated list of Web Application Firewalls.
 - [AWS Cloud9](https://aws.amazon.com/cloud9) — Cloud-based IDE for writing, running, and debugging code.
-- [AWS Fault Injection Service](https://aws.amazon.com/fis) — Managed chaos engineering service on AWS. ✅ **Use when** you're already on AWS and need turnkey fault injection with IAM-scoped safety controls. ❌ **Avoid when** your workloads span multiple clouds or you need deep application-level fault injection.
+- [AWS Fault Injection Service](https://aws.amazon.com/fis) — Managed AWS service for running controlled fault-injection experiments against AWS workloads.
 - [AWS Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) — AWS organization-level access control.
-- [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) — Chaos engineering service for Azure. ✅ **Use when** your infrastructure is Azure-native and you want tight integration with Azure Monitor. ❌ **Avoid when** you're multi-cloud or need experiments beyond Azure-supported fault types.
+- [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) — Managed Azure service for validating application resilience with controlled disruptions and fault-injection experiments.
 - [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) — Microsoft's DevOps platform.
 - [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) — Azure resource governance.
 - [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) — GUI tool for managing Azure Storage accounts, blobs, queues, and tables.

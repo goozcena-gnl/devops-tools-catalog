@@ -9,8 +9,8 @@
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Azure Kubernetes Service.
 
@@ -22,7 +22,7 @@ Azure Kubernetes Service.
 
 - You need multi-cloud portability or aren't invested in the Azure ecosystem.
 
-[Official site](https://azure.microsoft.com/en-us/products/kubernetes-service)
+[Official site](https://azure.microsoft.com/en-us/products/kubernetes-service) · [Documentation](https://learn.microsoft.com/en-us/azure/aks/)
 
 ### Ansible kubernetes.core collection
 

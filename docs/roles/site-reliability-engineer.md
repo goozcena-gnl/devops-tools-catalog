@@ -9,23 +9,23 @@
 | [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [Agones](https://agones.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | unknown | needs-review |
+| [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | commercial | active |
 | [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) | Monitoring, metrics, logs and tracing, SRE, incident response and on-call | oss | active |
 | [Alertmanager receiver for Azure DevOps](https://github.com/IvanJosipovic/alertmanager-receiver-azdo) | SRE, incident response and on-call | oss | active |
-| [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Apache Cassandra](https://cassandra.apache.org/) | Databases, caching and data infrastructure | oss | active |
 | [Apache HBase](https://hbase.apache.org/) | Databases, caching and data infrastructure | oss | active |
 | [Apache SkyWalking](https://skywalking.apache.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [Apache ZooKeeper](https://zookeeper.apache.org/) | Databases, caching and data infrastructure | oss | active |
-| [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Aralez](https://aralez.rs) | Kubernetes networking, storage and add-ons | oss | active |
-| [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
 | [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) | Monitoring, metrics, logs and tracing | documentation | active |
 | [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [AWS Fault Injection Service](https://aws.amazon.com/fis) | Chaos and performance engineering | unknown | needs-review |
-| [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) | Chaos and performance engineering | unknown | needs-review |
+| [AWS Fault Injection Service](https://aws.amazon.com/fis) | Chaos and performance engineering | commercial | active |
+| [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) | Chaos and performance engineering | commercial | active |
 | [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Better Stack](https://betterstack.com/) | Monitoring, metrics, logs and tracing | commercial | active |

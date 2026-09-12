@@ -123,18 +123,18 @@ Reverse proxy middleware that uses proof-of-work challenges to reduce automated 
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Application security platform focused on securing agentic development and software delivery.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- AppSec teams need code-to-runtime context to inventory applications and prioritize software supply-chain and application risks.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a fully open-source scanner or only need a single-purpose SAST or dependency scan.
 
 [Official site](https://apiiro.com)
 
@@ -142,20 +142,20 @@ Application security platform focused on securing agentic development and softwa
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Application security platform covering SAST, SCA, IaC, and secrets scanning.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- AppSec teams need SaaS-based application security posture management across source-code access, SAST, SCA, IaC, and secrets risks.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need an open-source, fully self-hosted application security platform.
 
-[Official site](https://www.arnica.io)
+[Official site](https://www.arnica.io) · [Documentation](https://docs.arnica.io/arnica-documentation)
 
 ### Arsenal
 
@@ -237,8 +237,8 @@ Curated list of Web Application Firewalls.
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 AWS organization-level access control.
 
@@ -250,7 +250,7 @@ AWS organization-level access control.
 
 - You only have a single account (use IAM policies instead).
 
-[Official site](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
+[Official site](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) · [Documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
 
 ### Azure Policy
 

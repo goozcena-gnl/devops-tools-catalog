@@ -9,20 +9,20 @@
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Embeddable API server for programmatic access to 1Password vaults from infrastructure and applications.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Applications need a self-hosted REST API for scoped access to vault items in a 1Password account.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a standalone secrets store that does not depend on a 1Password subscription and service boundary.
 
-[Official site](https://www.1password.dev/connect)
+[Official site](https://www.1password.dev/connect) · [Documentation](https://www.1password.dev/connect/get-started)
 
 ### AD Miner
 
@@ -68,27 +68,27 @@ Integrates secrets from external stores into ArgoCD.
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Identity platform for authenticating users, applications, and AI agents.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Applications need a managed customer identity service with OAuth, OpenID Connect, SAML, and extensible authentication flows.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require an independently operated open-source identity control plane without a hosted-service dependency.
 
-[Official site](https://auth0.com)
+[Official site](https://auth0.com) · [Documentation](https://auth0.com/docs)
 
 ### AWS Secrets Manager
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Managed secret storage for AWS.
 
@@ -100,7 +100,7 @@ Managed secret storage for AWS.
 
 - For multi-cloud setups where Vault provides a unified interface.
 
-[Official site](https://aws.amazon.com/secrets-manager)
+[Official site](https://aws.amazon.com/secrets-manager) · [Documentation](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
 
 ### Azure kubelogin
 

@@ -8,7 +8,7 @@
 | [Actions Runner Controller](https://github.com/actions/actions-runner-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Agones](https://agones.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | unknown | needs-review |
+| [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | commercial | active |
 | [Ansible kubernetes.core collection](https://github.com/ansible-collections/kubernetes.core) | Configuration management, Kubernetes distributions and operations | oss | active |
 | [Antrea](https://antrea.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Aralez](https://aralez.rs) | Kubernetes networking, storage and add-ons | oss | active |

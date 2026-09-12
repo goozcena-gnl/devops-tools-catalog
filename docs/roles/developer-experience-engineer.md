@@ -15,13 +15,13 @@
 | [Angular](https://angular.dev) | Developer experience and local environments | oss | needs-review |
 | [Ansible Lint](https://docs.ansible.com/projects/lint/) | CI, build and testing | oss | active |
 | [Apache JMeter](https://jmeter.apache.org) | CI, build and testing | oss | active |
-| [Appcircle](https://appcircle.io) | CI, build and testing | unknown | needs-review |
+| [Appcircle](https://appcircle.io) | CI, build and testing | commercial | active |
 | [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) | CI, build and testing | oss | active |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
 | [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | needs-review |
 | [ast-grep](https://ast-grep.github.io/) | Developer experience and local environments | oss | active |
-| [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | unknown | needs-review |
-| [AWS Cloud9](https://aws.amazon.com/cloud9) | Developer experience and local environments | unknown | needs-review |
+| [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | commercial | active |
+| [AWS Cloud9](https://aws.amazon.com/cloud9) | Developer experience and local environments | commercial | deprecated |
 | [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | unknown | needs-review |
 | [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
 | [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | needs-review |

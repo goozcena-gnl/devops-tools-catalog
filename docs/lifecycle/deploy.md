@@ -6,11 +6,11 @@
 - [Actions Runner Controller](https://github.com/actions/actions-runner-controller) — Run GitHub Actions runners on Kubernetes.
 - [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) — Self-hosted DNS resolver and filtering service for network-wide blocking and DNS controls.
 - [Agent Reach](https://github.com/Panniantong/Agent-Reach) — CLI that gives agents search and reading access across web, social, and code platforms.
-- [AGENTMEMORY](https://www.agent-memory.dev) — Persistent memory layer for AI coding agents.
+- [agentmemory](https://www.agent-memory.dev) — Local persistent-memory runtime with hooks, MCP, REST, retrieval, and session replay for AI coding agents.
 - [agentsmith](https://github.com/PromptPartner/agentsmith) — Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini, etc.) assembled by a single setup script.
 - [Agones](https://agones.dev) — Kubernetes-native platform for hosting, running, and scaling dedicated game servers.
 - [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) — Envoy-based AI gateway for managing LLM traffic in Kubernetes.
-- [AITMPL Agents](https://www.aitmpl.com/agents) — Agents directory/platform.
+- [AITMPL Agents](https://www.aitmpl.com/agents) — Directory and installer catalogue for reusable Claude Code agent prompt components.
 - [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) — Azure Kubernetes Service.
 - [AKS Kargo AnalysisRun logs](https://github.com/IvanJosipovic/aks-kargo-analysisrun-logs) — API service exposing Azure Log Analytics job logs through Kargo's AnalysisRun log interface.
 - [AlmaLinux OS](https://almalinux.org/) — Community-governed enterprise Linux distribution with RHEL-compatible binaries and server and cloud images.

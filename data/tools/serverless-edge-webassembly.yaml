@@ -2,6 +2,7 @@
   name: AWS Lambda
   summary: Serverless compute service by AWS.
   official_url: https://aws.amazon.com/lambda
+  documentation_url: https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
   categories:
   - serverless-edge-webassembly
   subcategories:
@@ -18,21 +19,26 @@
   - You need event-driven, short-lived functions tightly integrated with AWS services.
   avoid_when:
   - Workloads are long-running, latency-sensitive (cold starts), or you want cloud portability.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L94
   - legacy:devopstools_final.md#L208
-  needs_review: true
+  - https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+  - https://aws.amazon.com/lambda/pricing/
+  needs_review: false
 - id: azure-container-apps
   name: Azure Container Apps
   summary: Azure service for running containerized apps.
   official_url: https://azure.microsoft.com/en-us/products/container-apps
+  documentation_url: https://learn.microsoft.com/en-us/azure/container-apps/
   categories:
   - serverless-edge-webassembly
   subcategories:
@@ -49,17 +55,21 @@
   - You want serverless containers on Azure with built-in scaling and Dapr integration.
   avoid_when:
   - You need full Kubernetes control or are not on Azure.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L96
   - legacy:devopstools_final.md#L209
-  needs_review: true
+  - https://learn.microsoft.com/en-us/azure/container-apps/
+  - https://azure.microsoft.com/en-us/pricing/details/container-apps/
+  needs_review: false
 - id: azure-functions
   name: Azure Functions
   summary: Managed serverless compute service by Azure (runtime host is open source).

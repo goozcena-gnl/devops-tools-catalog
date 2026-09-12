@@ -27,9 +27,12 @@
   - legacy:devopstools_final.md#L1231
   needs_review: true
 - id: agentmemory
-  name: AGENTMEMORY
-  summary: Persistent memory layer for AI coding agents.
+  name: agentmemory
+  summary: Local persistent-memory runtime with hooks, MCP, REST, retrieval, and session replay for AI coding agents.
   official_url: https://www.agent-memory.dev
+  repository_url: https://github.com/rohitg00/agentmemory
+  repository_archived: false
+  documentation_url: https://github.com/rohitg00/agentmemory#readme
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -42,18 +45,28 @@
   - build
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - Coding agents need locally operated, cross-session memory exposed through hooks, MCP, or REST.
+  avoid_when:
+  - You require a hosted managed-memory service or do not want another local runtime and persistent data store.
+  deployment_models:
+  - local-runtime
+  - self-hosted-mcp
+  - container
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:devopstools_final.md#L1230
-  needs_review: true
+  - https://www.agent-memory.dev/
+  - https://github.com/rohitg00/agentmemory
+  - https://github.com/rohitg00/agentmemory/blob/main/LICENSE
+  needs_review: false
 - id: agentsmith
   name: agentsmith
   summary: Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini, etc.) assembled
@@ -85,12 +98,15 @@
   needs_review: true
 - id: aitmpl-agents
   name: AITMPL Agents
-  summary: Agents directory/platform.
+  summary: Directory and installer catalogue for reusable Claude Code agent prompt components.
   official_url: https://www.aitmpl.com/agents
+  repository_url: https://github.com/davila7/claude-code-templates
+  repository_archived: false
+  documentation_url: https://docs.aitmpl.com/concepts/agents
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
-  - Model Context Protocol (MCP) Servers
+  - Agent Frameworks & Orchestration
   roles:
   - cloud-engineer
   - platform-engineer
@@ -102,22 +118,28 @@
   use_when:
   - You're exploring or cataloging available AI agents and want a discovery interface.
   avoid_when:
-  - You need production-grade agent orchestration—this is a directory, not a runtime.
-  deployment_models: []
+  - You need production-grade agent orchestration; this is a component catalogue and installer, not an agent runtime.
+  deployment_models:
+  - local-cli
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:9_AI-MLOps/README.md#L40
   - legacy:devopstools_final.md#L1212
+  - https://docs.aitmpl.com/concepts/agents
+  - https://github.com/davila7/claude-code-templates
+  - https://github.com/davila7/claude-code-templates/blob/main/LICENSE
+  - https://www.npmjs.com/package/claude-code-templates
   needs_review: true
 - id: amazon-q-developer
   name: Amazon Q Developer
   summary: AI code suggestions for AWS and more.
   official_url: https://aws.amazon.com/q/developer
+  documentation_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -134,17 +156,21 @@
   - You're in the AWS ecosystem and want AI-assisted coding with AWS-specific context.
   avoid_when:
   - Your stack is non-AWS and you'd get more value from a general-purpose assistant.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:9_AI-MLOps/README.md#L20
   - legacy:devopstools_final.md#L1197
-  needs_review: true
+  - https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html
+  - https://aws.amazon.com/q/developer/pricing/
+  needs_review: false
 - id: arize-phoenix
   name: Arize Phoenix
   summary: LLM observability and evaluation platform.

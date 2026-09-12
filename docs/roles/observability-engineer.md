@@ -6,10 +6,10 @@
 | Tool | Categories | Model | Status |
 |---|---|---|---|
 | [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) | Monitoring, metrics, logs and tracing, SRE, incident response and on-call | oss | active |
-| [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Apache SkyWalking](https://skywalking.apache.org) | Monitoring, metrics, logs and tracing | oss | active |
-| [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | commercial | active |
+| [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) | Monitoring, metrics, logs and tracing | documentation | active |
 | [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |

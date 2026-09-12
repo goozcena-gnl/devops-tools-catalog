@@ -1,9 +1,8 @@
 - id: aws-fault-injection-service
   name: AWS Fault Injection Service
-  summary: Managed chaos engineering service on AWS. ✅ **Use when** you're already on AWS and need turnkey
-    fault injection with IAM-scoped safety controls. ❌ **Avoid when** your workloads span multiple clouds
-    or you need deep application-level fault injection.
+  summary: Managed AWS service for running controlled fault-injection experiments against AWS workloads.
   official_url: https://aws.amazon.com/fis
+  documentation_url: https://docs.aws.amazon.com/fis/latest/userguide/what-is.html
   categories:
   - chaos-performance-engineering
   subcategories:
@@ -14,25 +13,30 @@
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need AWS-native fault injection with IAM controls, experiment templates, stop conditions, and supported AWS targets.
+  avoid_when:
+  - Your workloads span multiple clouds or require fault types outside the AWS FIS target and action catalogue.
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:8_Chaos-Engineering/README.md#L4
   - legacy:devopstools_final.md#L1160
-  needs_review: true
+  - https://docs.aws.amazon.com/fis/latest/userguide/what-is.html
+  - https://aws.amazon.com/fis/pricing/
+  needs_review: false
 - id: azure-chaos-studio
   name: Azure Chaos Studio
-  summary: Chaos engineering service for Azure. ✅ **Use when** your infrastructure is Azure-native and
-    you want tight integration with Azure Monitor. ❌ **Avoid when** you're multi-cloud or need experiments
-    beyond Azure-supported fault types.
+  summary: Managed Azure service for validating application resilience with controlled disruptions and fault-injection experiments.
   official_url: https://azure.microsoft.com/en-us/products/chaos-studio
+  documentation_url: https://learn.microsoft.com/en-us/azure/chaos-studio/
   categories:
   - chaos-performance-engineering
   subcategories:
@@ -43,19 +47,25 @@
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need Azure-native resilience scenarios or experiments against supported Azure resources with Azure Monitor integration.
+  avoid_when:
+  - Your workloads are primarily outside Azure or require fault types beyond the supported resource and fault catalogue.
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:8_Chaos-Engineering/README.md#L6
   - legacy:devopstools_final.md#L1161
-  needs_review: true
+  - https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview
+  - https://azure.microsoft.com/en-us/pricing/details/chaos-studio/
+  needs_review: false
 - id: chaos-mesh
   name: Chaos Mesh
   summary: Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you want a CNCF-backed,

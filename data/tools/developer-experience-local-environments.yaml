@@ -244,6 +244,7 @@
   name: AWS Cloud9
   summary: Cloud-based IDE for writing, running, and debugging code.
   official_url: https://aws.amazon.com/cloud9
+  documentation_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -255,20 +256,24 @@
   - develop
   - test
   use_when:
-  - You need a browser-based IDE tightly integrated with AWS services.
+  - You are an existing AWS Cloud9 customer who needs its browser-based IDE and AWS integrations while planning a successor.
   avoid_when:
-  - You need full IDE features or you're not in the AWS ecosystem.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You are a new customer; AWS Cloud9 has not accepted new customers since July 25, 2024.
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: deprecated
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:7_Development-Collaboration/README.md#L44
   - legacy:devopstools_final.md#L1078
-  needs_review: true
+  - https://docs.aws.amazon.com/cloud9/latest/user-guide/history.html
+  - https://docs.aws.amazon.com/cloud9/latest/user-guide/welcome.html
+  needs_review: false
 - id: azure-storage-explorer
   name: Azure Storage Explorer
   summary: GUI tool for managing Azure Storage accounts, blobs, queues, and tables.

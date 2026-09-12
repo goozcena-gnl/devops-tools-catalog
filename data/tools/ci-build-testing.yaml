@@ -97,6 +97,7 @@
   name: Appcircle
   summary: CI/CD platform for mobile apps.
   official_url: https://appcircle.io
+  documentation_url: https://docs.appcircle.io/
   categories:
   - ci-build-testing
   subcategories:
@@ -109,20 +110,25 @@
   - build
   - test
   use_when:
-  - '* You need a dedicated mobile CI/CD with native iOS/Android build support.'
+  - You need dedicated mobile CI/CD with native and cross-platform iOS or Android build, test, distribution, and store publishing workflows.
   avoid_when:
-  - '* Your workloads are primarily backend or non-mobile.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - Your workloads are primarily backend or non-mobile and do not need mobile signing, distribution, or store publishing workflows.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L4
   - legacy:devopstools_final.md#L308
-  needs_review: true
+  - https://docs.appcircle.io/
+  - https://appcircle.io/pricing
+  needs_review: false
 - id: argo-workflows
   name: Argo Workflows
   summary: Kubernetes-native workflow engine for orchestrating DAG-based CI, data, and ML pipelines.

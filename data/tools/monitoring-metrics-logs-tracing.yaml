@@ -42,6 +42,7 @@
   name: Amazon CloudWatch
   summary: AWS monitoring and observability service.
   official_url: https://aws.amazon.com/cloudwatch
+  documentation_url: https://docs.aws.amazon.com/cloudwatch/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -57,17 +58,21 @@
   - All-in on AWS.
   avoid_when:
   - Multi-cloud or vendor-neutral strategy required.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L4
   - legacy:devopstools_final.md#L695
-  needs_review: true
+  - https://docs.aws.amazon.com/cloudwatch/
+  - https://aws.amazon.com/cloudwatch/pricing/
+  needs_review: false
 - id: apache-skywalking
   name: Apache SkyWalking
   summary: APM platform for distributed tracing, metrics, and service topology.
@@ -120,21 +125,29 @@
   - Deep network path visibility is critical.
   avoid_when:
   - You only need application-level metrics.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  - endpoint-agent
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L5
   - legacy:devopstools_final.md#L696
-  needs_review: true
+  - https://www.broadcom.com/products/software/network-management/appneta
+  - https://docs.broadcom.com/doc/appneta-spd-nov-2022
+  needs_review: false
 - id: ask-o11y-plugin-for-grafana
   name: Ask O11y plugin for Grafana
   summary: Grafana plugin that provides natural-language observability exploration.
-  official_url: https://grafana.com/grafana/plugins/consensys-asko11y-app?tab=overview
+  official_url: https://grafana.com/grafana/plugins/consensys-asko11y-app/
+  repository_url: https://github.com/Consensys/ask-o11y-plugin
+  repository_archived: false
+  documentation_url: https://github.com/Consensys/ask-o11y-plugin#readme
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -146,18 +159,27 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - Grafana operators want an in-product AI investigation workflow using Grafana telemetry and MCP tools with approval-gated writes.
+  avoid_when:
+  - You cannot provide the required Grafana LLM and MCP integrations or need a vendor-neutral observability interface outside Grafana.
+  deployment_models:
+  - self-hosted
+  - hosted-saas
+  license_model: oss
+  license_spdx: MIT
+  commercial_offering: false
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-11'
   sources:
   - legacy:devopstools_final.md#L744
-  needs_review: true
+  - https://grafana.com/grafana/plugins/consensys-asko11y-app/
+  - https://github.com/Consensys/ask-o11y-plugin
+  - https://github.com/Consensys/ask-o11y-plugin/blob/main/LICENSE
+  needs_review: false
 - id: awesome-prometheus
   name: Awesome Prometheus
   summary: Curated list of Prometheus resources.

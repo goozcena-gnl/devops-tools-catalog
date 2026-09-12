@@ -7,14 +7,14 @@
 |---|---|---|---|
 | [Actions Runner Controller](https://github.com/actions/actions-runner-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Agent Reach](https://github.com/Panniantong/Agent-Reach) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [AGENTMEMORY](https://www.agent-memory.dev) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [agentmemory](https://www.agent-memory.dev) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [agentsmith](https://github.com/PromptPartner/agentsmith) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Agones](https://agones.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AITMPL Agents](https://www.aitmpl.com/agents) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Akka.NET](https://getakka.net) | Emerging and experimental tools | oss | needs-review |
-| [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | unknown | needs-review |
-| [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | commercial | active |
+| [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Antrea](https://antrea.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
@@ -29,7 +29,7 @@
 | [asciinema](https://asciinema.org/) | Documentation, learning and career resources | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
 | [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
-| [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | unknown | needs-review |
+| [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | commercial | active |
 | [AutoGen](https://microsoft.github.io/autogen/stable/index.html) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Awesome DevOps](https://github.com/wmariuss/awesome-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
@@ -40,13 +40,13 @@
 | [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | active |
 | [AWS Cloud Quest Practitioner](https://skillbuilder.aws/learn/FU5WCYVGKY/aws-cloud-quest-cloud-practitioner/learn) | Documentation, learning and career resources | documentation | needs-review |
 | [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
-| [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | commercial | active |
 | [AWS MCP](https://awslabs.github.io/mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AWS Skill Builder](https://skillbuilder.aws) | Documentation, learning and career resources | documentation | needs-review |
 | [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) | Cloud platforms and cloud management | commercial | active |
 | [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
-| [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | commercial | active |
 | [Azure DevOps Labs](https://www.azuredevopslabs.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [Azure Functions Host](https://github.com/Azure/azure-functions-host) | Serverless, edge and WebAssembly | oss | needs-review |

@@ -9,8 +9,8 @@
 
 **Categories:** Serverless, edge and WebAssembly<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Serverless compute service by AWS.
 
@@ -22,14 +22,14 @@ Serverless compute service by AWS.
 
 - Workloads are long-running, latency-sensitive (cold starts), or you want cloud portability.
 
-[Official site](https://aws.amazon.com/lambda)
+[Official site](https://aws.amazon.com/lambda) · [Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 
 ### Azure Container Apps
 
 **Categories:** Serverless, edge and WebAssembly<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Azure service for running containerized apps.
 
@@ -41,7 +41,7 @@ Azure service for running containerized apps.
 
 - You need full Kubernetes control or are not on Azure.
 
-[Official site](https://azure.microsoft.com/en-us/products/container-apps)
+[Official site](https://azure.microsoft.com/en-us/products/container-apps) · [Documentation](https://learn.microsoft.com/en-us/azure/container-apps/)
 
 ### Azure Functions
 
