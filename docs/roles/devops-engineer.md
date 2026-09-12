@@ -80,7 +80,7 @@
 | [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
-| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | active |
+| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | deprecated |
 | [Barbara](https://www.barbara.tech) | Emerging and experimental tools | unknown | needs-review |
 | [Bash](https://www.gnu.org/software/bash) | Foundations, Linux and scripting | oss | needs-review |
 | [Bat](https://github.com/sharkdp/bat) | Foundations, Linux and scripting | oss | needs-review |

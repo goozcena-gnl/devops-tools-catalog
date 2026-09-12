@@ -251,17 +251,17 @@
   - build
   - test
   use_when:
-  - You need self-managed CI/CD integrated with Atlassian products and have a supported Bamboo Data Center
-    subscription.
+  - You are an existing customer maintaining self-managed CI/CD integrated with Atlassian products during
+    Bamboo Data Center's supported transition period.
   avoid_when:
-  - You are a new customer or need a long-lived platform beyond Bamboo Data Center's announced March 2029
-    end-of-life boundary.
+  - You are considering new adoption; Atlassian ended sales to new customers on 2026-03-30 and Bamboo Data
+    Center reaches end of life on 2029-03-28.
   deployment_models:
   - enterprise-self-hosted
   license_model: commercial
   commercial_offering: true
   maturity: established
-  status: active
+  status: deprecated
   alternatives: []
   tags: []
   verified_on: '2026-09-12'

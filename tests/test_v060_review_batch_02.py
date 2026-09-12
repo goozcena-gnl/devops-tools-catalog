@@ -54,10 +54,10 @@ def test_batch_02_standalone_oss_identities_use_canonical_repositories() -> None
         assert tool["needs_review"] is False
 
 
-def test_bamboo_is_active_with_documented_data_center_exit_boundary() -> None:
+def test_bamboo_is_deprecated_with_documented_data_center_exit_boundary() -> None:
     bamboo = _tools_by_id()["bamboo"]
 
-    assert bamboo["status"] == "active"
+    assert bamboo["status"] == "deprecated"
     assert bamboo["license_model"] == "commercial"
     assert bamboo["needs_review"] is False
     assert "2029" in " ".join(bamboo["avoid_when"])

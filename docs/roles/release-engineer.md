@@ -20,7 +20,7 @@
 | [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
 | [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | commercial | active |
-| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | active |
+| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | deprecated |
 | [Bitbucket](https://www.atlassian.com/software/bitbucket) | Source control and repository management | commercial | active |
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | commercial | active |
 | [Bitrise](https://bitrise.io) | CI, build and testing | commercial | active |

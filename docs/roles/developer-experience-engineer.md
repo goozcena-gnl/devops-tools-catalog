@@ -25,7 +25,7 @@
 | [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | commercial | active |
 | [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
 | [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | needs-review |
-| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | active |
+| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | deprecated |
 | [Bitbucket](https://www.atlassian.com/software/bitbucket) | Source control and repository management | commercial | active |
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | commercial | active |
 | [Bitrise](https://bitrise.io) | CI, build and testing | commercial | active |

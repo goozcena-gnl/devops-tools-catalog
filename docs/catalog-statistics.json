@@ -11,9 +11,9 @@
     "unknown": 203
   },
   "statuses": {
-    "active": 492,
+    "active": 491,
     "archived": 10,
-    "deprecated": 1,
+    "deprecated": 2,
     "needs-review": 920
   }
 }

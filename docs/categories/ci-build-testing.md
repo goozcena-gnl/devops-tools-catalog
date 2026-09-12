@@ -143,17 +143,17 @@ Microsoft's commercial DevOps product family, available as Azure DevOps Services
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Commercial<br>
-**Status:** Active
+**Status:** Deprecated
 
 Atlassian's commercially licensed, self-managed CI/CD server for build and deployment automation.
 
 **Use when**
 
-- You need self-managed CI/CD integrated with Atlassian products and have a supported Bamboo Data Center subscription.
+- You are an existing customer maintaining self-managed CI/CD integrated with Atlassian products during Bamboo Data Center's supported transition period.
 
 **Consider alternatives when**
 
-- You are a new customer or need a long-lived platform beyond Bamboo Data Center's announced March 2029 end-of-life boundary.
+- You are considering new adoption; Atlassian ended sales to new customers on 2026-03-30 and Bamboo Data Center reaches end of life on 2029-03-28.
 
 [Official site](https://www.atlassian.com/software/bamboo) · [Documentation](https://confluence.atlassian.com/bamboo)
 

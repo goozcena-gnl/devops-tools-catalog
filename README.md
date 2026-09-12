@@ -110,9 +110,9 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 492 |
+| `active` | Maintained according to recorded primary-source evidence. | 491 |
 | `needs-review` | Imported but not yet fully verified. | 920 |
-| `deprecated` | Superseded or discouraged by its maintainer. | 1 |
+| `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 10 |
 | `historical` | Retained for context or migration work. | 0 |
 
