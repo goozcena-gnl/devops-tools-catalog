@@ -47,10 +47,10 @@ Azure service for running containerized apps.
 
 **Categories:** Serverless, edge and WebAssembly<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Managed serverless compute service by Azure (runtime host is open source).
+Commercial managed Azure PaaS for event-driven and scheduled compute; the separately catalogued Functions Host runtime is open source.
 
 **Use when**
 
@@ -60,7 +60,7 @@ Managed serverless compute service by Azure (runtime host is open source).
 
 - Your functions exceed execution time limits or you want cloud-agnostic FaaS.
 
-[Official site](https://azure.microsoft.com/en-us/products/functions)
+[Official site](https://azure.microsoft.com/en-us/products/functions) · [Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/)
 
 ### Azure Functions Host
 

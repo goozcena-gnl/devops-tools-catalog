@@ -13,7 +13,7 @@
 - [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) — Declarative IaC language for Azure Resource Manager deployments.
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) — Microsoft-curated, consistently designed Bicep and Terraform modules for Azure resources.
 - [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
-- [Bitbucket](https://bitbucket.org) — Git repository hosting by Atlassian.
+- [Bitbucket](https://www.atlassian.com/software/bitbucket) — Atlassian's commercial Git repository-hosting product family, covering Bitbucket Cloud and the self-managed Bitbucket Data Center offering.
 - [Cal.com](https://cal.com) — Open-source scheduling and booking platform (Calendly alternative) for teams and individuals.
 - [Camunda](https://camunda.com) — Workflow and process automation (BPMN/DMN).
 - [cdk8s](https://cdk8s.io) — Define Kubernetes applications and reusable abstractions in general-purpose programming languages and synthesize them to YAML.

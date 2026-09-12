@@ -17,7 +17,7 @@
 | [AWS MCP](https://awslabs.github.io/mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
-| [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Composio](https://composio.dev) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [Deep Agents](https://github.com/langchain-ai/deepagents) | MLOps, LLMOps and AI infrastructure | oss | active |

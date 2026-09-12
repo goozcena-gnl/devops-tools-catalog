@@ -22,23 +22,23 @@
 | [ast-grep](https://ast-grep.github.io/) | Developer experience and local environments | oss | active |
 | [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | commercial | active |
 | [AWS Cloud9](https://aws.amazon.com/cloud9) | Developer experience and local environments | commercial | deprecated |
-| [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | unknown | needs-review |
+| [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | commercial | active |
 | [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
 | [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | needs-review |
-| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | unknown | needs-review |
-| [Bitbucket](https://bitbucket.org) | Source control and repository management | unknown | needs-review |
+| [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | deprecated |
+| [Bitbucket](https://www.atlassian.com/software/bitbucket) | Source control and repository management | commercial | active |
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | commercial | active |
-| [Bitrise](https://bitrise.io) | CI, build and testing | unknown | needs-review |
+| [Bitrise](https://bitrise.io) | CI, build and testing | commercial | active |
 | [Black](https://black.readthedocs.io) | Developer experience and local environments | oss | needs-review |
 | [Bottles](https://usebottles.com) | Developer experience and local environments | oss | needs-review |
-| [BrowserStack App Automate](https://www.browserstack.com/app-automate) | CI, build and testing | unknown | needs-review |
-| [Buddy](https://buddy.works) | CI, build and testing | unknown | needs-review |
-| [Buildkite](https://buildkite.com) | CI, build and testing | unknown | needs-review |
-| [Cadence CI](https://cadence.ci) | CI, build and testing | unknown | needs-review |
+| [BrowserStack App Automate](https://www.browserstack.com/app-automate) | CI, build and testing | commercial | active |
+| [Buddy](https://buddy.works) | CI, build and testing | commercial | active |
+| [Buildkite](https://buildkite.com) | CI, build and testing | commercial | active |
+| [Cadence CI](https://cadence.ci) | CI, build and testing | commercial | active |
 | [Cal.com](https://cal.com) | Workflow automation and ChatOps | oss | needs-review |
 | [Camunda](https://camunda.com) | Workflow automation and ChatOps | open-core | needs-review |
-| [CC Switch](https://ccswitch.io/en) | Developer experience and local environments | unknown | needs-review |
-| [CircleCI](https://circleci.com) | CI, build and testing | unknown | needs-review |
+| [CC Switch](https://ccswitch.io/en) | Developer experience and local environments | oss | active |
+| [CircleCI](https://circleci.com) | CI, build and testing | commercial | active |
 | [CloudBees](https://www.cloudbees.com) | CI, build and testing | open-core | needs-review |
 | [Codacy](https://www.codacy.com/) | CI, build and testing, Application and cloud security | commercial | active |
 | [code-server](https://github.com/coder/code-server) | Developer experience and local environments | open-core | active |

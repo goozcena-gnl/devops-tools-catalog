@@ -30,30 +30,30 @@
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
 - [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) — Declarative IaC language for Azure Resource Manager deployments.
 - [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) — Azure service for running containerized apps.
-- [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) — Microsoft's DevOps platform.
-- [Azure Functions](https://azure.microsoft.com/en-us/products/functions) — Managed serverless compute service by Azure (runtime host is open source).
+- [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) — Microsoft's commercial DevOps product family, available as Azure DevOps Services and self-hosted Azure DevOps Server.
+- [Azure Functions](https://azure.microsoft.com/en-us/products/functions) — Commercial managed Azure PaaS for event-driven and scheduled compute; the separately catalogued Functions Host runtime is open source.
 - [Azure Functions Host](https://github.com/Azure/azure-functions-host) — The runtime host and core execution engine for Azure Functions.
 - [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) — Azure MCP server implementation.
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) — Microsoft-curated, consistently designed Bicep and Terraform modules for Azure resources.
 - [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
-- [Bamboo](https://www.atlassian.com/software/bamboo) — CI/CD server by Atlassian.
+- [Bamboo](https://www.atlassian.com/software/bamboo) — Atlassian's commercially licensed, self-managed CI/CD server for build and deployment automation.
 - [Bazel](https://bazel.build) — Fast, scalable, multi-language build system.
 - [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) — Integrated CI/CD for Bitbucket repositories.
-- [Bito](https://bito.ai) — AI coding assistant for IDE/workflow productivity.
-- [Bitrise](https://bitrise.io) — CI/CD for mobile apps with automation workflows.
-- [BrowserStack App Automate](https://www.browserstack.com/app-automate) — Automated mobile app testing on real devices.
-- [Buddy](https://buddy.works) — CI/CD pipeline automation tool.
+- [Bito](https://bito.ai) — Commercial AI code-review and codebase-intelligence platform for repositories, IDEs, CLIs, and engineering workflows.
+- [Bitrise](https://bitrise.io) — Commercial mobile DevOps platform for building, testing, and releasing mobile applications.
+- [BrowserStack App Automate](https://www.browserstack.com/app-automate) — Commercial cloud service for automated native and hybrid mobile-app testing on real devices.
+- [Buddy](https://buddy.works) — Commercial visual CI/CD platform available as a hosted service or self-hosted installation.
 - [Buildah](https://buildah.io) — Build OCI images without a daemon.
 - [BuildKit](https://docs.docker.com/build/buildkit) — Next-generation Docker image build engine used by Buildx.
-- [Buildkite](https://buildkite.com) — CI/CD platform with agent-based execution.
-- [Cadence CI](https://cadence.ci) — CI/CD platform.
+- [Buildkite](https://buildkite.com) — Commercial software-delivery platform with a managed control plane and hosted or self-hosted build agents.
+- [Cadence CI](https://cadence.ci) — Commercial integration platform using Mélodium pipelines with managed orchestration and bring-your-own compute.
 - [cargo-binstall](https://github.com/cargo-bins/cargo-binstall) — Installer for prebuilt Rust package executables with source-build fallback.
 - [cargo-chef](https://github.com/LukeMathWalker/cargo-chef) — Tool for separating Rust dependency builds into cacheable container-build stages.
 - [cargo-deny](https://github.com/EmbarkStudios/cargo-deny) — Cargo dependency policy checker for advisories, licences, sources, and banned packages.
 - [cargo-vet](https://mozilla.github.io/cargo-vet/) — Tool for recording and enforcing human audits of Rust dependencies.
 - [cdk8s](https://cdk8s.io) — Define Kubernetes applications and reusable abstractions in general-purpose programming languages and synthesize them to YAML.
 - [cek](https://github.com/bschaatsbergen/cek) — Inspect OCI image filesystems and layers without running containers.
-- [CircleCI](https://circleci.com) — Cloud CI/CD platform.
+- [CircleCI](https://circleci.com) — Commercial CI/CD platform offered as a managed cloud service or self-hosted CircleCI Server, with optional self-hosted runners.
 - [CloudBees](https://www.cloudbees.com) — Enterprise CI/CD built around Jenkins.
 - [CloudCustodian](https://cloudcustodian.io) — Cloud governance rules engine.
 - [Cloudsmith](https://cloudsmith.com) — Managed package and artifact repository service.

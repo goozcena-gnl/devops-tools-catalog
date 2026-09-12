@@ -1,7 +1,9 @@
 - id: bitbucket
   name: Bitbucket
-  summary: Git repository hosting by Atlassian.
-  official_url: https://bitbucket.org
+  summary: Atlassian's commercial Git repository-hosting product family, covering Bitbucket Cloud and the
+    self-managed Bitbucket Data Center offering.
+  official_url: https://www.atlassian.com/software/bitbucket
+  documentation_url: https://support.atlassian.com/bitbucket-cloud/
   categories:
   - source-control-repository-management
   subcategories:
@@ -14,20 +16,28 @@
   - plan
   - develop
   use_when:
-  - Your team is already invested in the Atlassian ecosystem (Jira, Confluence).
+  - Your team wants Git hosting integrated with Jira and other Atlassian products, in cloud or supported
+    self-managed form.
   avoid_when:
-  - You need broad open-source community integrations.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an open-source forge or cannot accept Atlassian's cloud, Data Center, and hybrid licensing
+    boundaries.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:1_Foundational-Skills/README.md#L4
   - legacy:devopstools_final.md#L82
-  needs_review: true
+  - https://www.atlassian.com/software/bitbucket/pricing
+  - https://support.atlassian.com/bitbucket-cloud/docs/manage-your-plan-and-billing/
+  - https://www.atlassian.com/licensing/data-center-end-of-life
+  needs_review: false
 - id: codeberg
   name: Codeberg
   summary: Non-profit hosted software forge built on Forgejo for free and open-source projects.

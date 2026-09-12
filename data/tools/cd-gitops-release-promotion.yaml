@@ -203,6 +203,7 @@
   summary: Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven
     by environment-as-code workflows.
   official_url: https://www.bunnyshell.com
+  documentation_url: https://documentation.bunnyshell.com/
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -214,18 +215,28 @@
   lifecycle_stages:
   - release
   - deploy
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want pull requests to provision isolated preview environments in your own Kubernetes or cloud
+    infrastructure.
+  avoid_when:
+  - You do not need production-like ephemeral environments or cannot connect the platform to the target
+    infrastructure and source repositories.
+  deployment_models:
+  - hosted-saas
+  - customer-cloud
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-12'
   sources:
   - legacy:devopstools_final.md#L1130
-  needs_review: true
+  - https://www.bunnyshell.com/
+  - https://documentation.bunnyshell.com/
+  - https://www.bunnyshell.com/pricing/
+  needs_review: false
 - id: caddy
   name: Caddy
   summary: Extensible web server and reverse proxy with automatic HTTPS.

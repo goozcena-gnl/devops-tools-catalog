@@ -47,7 +47,7 @@
 | [Carvel](https://carvel.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Carvel kapp](https://carvel.dev/kapp) | Kubernetes distributions and operations | oss | active |
 | [Carvel ytt](https://carvel.dev/ytt) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [CasaVue](https://casavue.app) | Kubernetes distributions and operations | unknown | needs-review |
+| [CasaVue](https://casavue.app) | Kubernetes distributions and operations | oss | active |
 | [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Ceph](https://ceph.io/en) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | needs-review |

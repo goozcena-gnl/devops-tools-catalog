@@ -9,20 +9,20 @@
 
 **Categories:** Source control and repository management<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Git repository hosting by Atlassian.
+Atlassian's commercial Git repository-hosting product family, covering Bitbucket Cloud and the self-managed Bitbucket Data Center offering.
 
 **Use when**
 
-- Your team is already invested in the Atlassian ecosystem (Jira, Confluence).
+- Your team wants Git hosting integrated with Jira and other Atlassian products, in cloud or supported self-managed form.
 
 **Consider alternatives when**
 
-- You need broad open-source community integrations.
+- You require an open-source forge or cannot accept Atlassian's cloud, Data Center, and hybrid licensing boundaries.
 
-[Official site](https://bitbucket.org)
+[Official site](https://www.atlassian.com/software/bitbucket) · [Documentation](https://support.atlassian.com/bitbucket-cloud/)
 
 ### Codeberg
 

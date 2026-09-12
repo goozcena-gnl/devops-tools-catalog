@@ -55,7 +55,7 @@
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
 - [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) — Declarative IaC language for Azure Resource Manager deployments.
 - [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) — Azure service for running containerized apps.
-- [Azure Functions](https://azure.microsoft.com/en-us/products/functions) — Managed serverless compute service by Azure (runtime host is open source).
+- [Azure Functions](https://azure.microsoft.com/en-us/products/functions) — Commercial managed Azure PaaS for event-driven and scheduled compute; the separately catalogued Functions Host runtime is open source.
 - [Azure Functions Host](https://github.com/Azure/azure-functions-host) — The runtime host and core execution engine for Azure Functions.
 - [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) — Microsoft's CBL-Mariner-based Linux distribution optimized for container and cloud workloads on Azure.
 - [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) — Azure MCP server implementation.
@@ -64,7 +64,7 @@
 - [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
 - [Backstage](https://backstage.io) — Internal developer portal (IDP) / software catalog for improving developer experience.
 - [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) — Embedded key/value store for Go applications.
-- [Bito](https://bito.ai) — AI coding assistant for IDE/workflow productivity.
+- [Bito](https://bito.ai) — Commercial AI code-review and codebase-intelligence platform for repositories, IDEs, CLIs, and engineering workflows.
 - [blocky](https://0xerr0r.github.io/blocky/latest/) — Configurable DNS proxy and ad blocker with upstream groups, caching, filtering, and Prometheus metrics.
 - [BotKube](https://botkube.io) — Kubernetes troubleshooting and monitoring platform with chat integrations and automation plugins.
 - [Bottlerocket](https://bottlerocket.dev) — Linux-based, security-hardened operating system purpose-built for running containers.
@@ -78,7 +78,7 @@
 - [Carvel](https://carvel.dev) — Kubernetes tools suite.
 - [Carvel kapp](https://carvel.dev/kapp) — Simple deployment tool for Kubernetes.
 - [Carvel ytt](https://carvel.dev/ytt) — YAML templating tool for Kubernetes configurations.
-- [CasaVue](https://casavue.app) — Kubernetes cluster visualization and management dashboard.
+- [CasaVue](https://casavue.app) — Open-source progressive web application that indexes Kubernetes Ingress resources into a customizable application dashboard.
 - [cdk8s](https://cdk8s.io) — Define Kubernetes applications and reusable abstractions in general-purpose programming languages and synthesize them to YAML.
 - [Ceph](https://ceph.io/en) — Distributed storage system for object, block, and file storage.
 - [cert-manager](https://cert-manager.io) — X.509 certificate management for Kubernetes.

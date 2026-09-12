@@ -237,20 +237,20 @@ Azure MCP server implementation.
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-AI coding assistant for IDE/workflow productivity.
+Commercial AI code-review and codebase-intelligence platform for repositories, IDEs, CLIs, and engineering workflows.
 
 **Use when**
 
-- You want an AI assistant with privacy-focused, enterprise-ready features.
+- You want codebase-aware AI reviews and architecture assistance across Git providers and developer tools.
 
 **Consider alternatives when**
 
-- You already have an established AI coding assistant and don't need a second one.
+- You require an open-source implementation or cannot use Bito's hosted, self-hosted, or on-premises product boundary.
 
-[Official site](https://bito.ai)
+[Official site](https://bito.ai) · [Documentation](https://docs.bito.ai/)
 
 ### codebase-memory-mcp
 
