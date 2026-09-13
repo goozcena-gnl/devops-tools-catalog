@@ -96,7 +96,7 @@
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | active |
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | commercial | active |
-| [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) | FinOps and sustainability | unknown | needs-review |
+| [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) | FinOps and sustainability | commercial | active |
 | [Cloudify](https://cloudify.co) | Cloud platforms and cloud management | oss | active |
 | [CloudNativePG](https://cloudnative-pg.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CloudZero](https://www.cloudzero.com) | FinOps and sustainability | commercial | active |
@@ -145,13 +145,13 @@
 | [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | commercial | active |
 | [Distroless](https://github.com/GoogleContainerTools/distroless) | Containers and image tooling | oss | needs-review |
 | [Docker](https://www.docker.com) | Containers and image tooling, Developer experience and local environments | open-core | active |
-| [Docker Agent](https://docker.github.io/docker-agent) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [Docker Build](https://docs.docker.com/build) | Containers and image tooling | unknown | needs-review |
+| [Docker Agent](https://docker.github.io/docker-agent/) | MLOps, LLMOps and AI infrastructure | oss | active |
+| [Docker Build](https://docs.docker.com/build/) | Containers and image tooling | unknown | needs-review |
 | [Docker Buildx](https://github.com/docker/buildx) | Containers and image tooling | oss | needs-review |
 | [Docker Compose](https://docs.docker.com/compose/) | Containers and image tooling, Developer experience and local environments | oss | active |
 | [Docker Hub MCP](https://hub.docker.com/mcp) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Docker MCP Gateway](https://github.com/docker/mcp-gateway) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Docker Offload](https://www.docker.com/products/docker-offload) | Containers and image tooling | unknown | needs-review |
+| [Docker Offload](https://www.docker.com/products/docker-offload) | Containers and image tooling | commercial | active |
 | [Docker Swarm](https://docs.docker.com/engine/swarm) | Kubernetes distributions and operations | unknown | needs-review |
 | [Dockhand](https://dockhand.pro) | Kubernetes distributions and operations | unknown | needs-review |
 | [Docmost](https://docmost.com/) | Documentation, learning and career resources | open-core | active |

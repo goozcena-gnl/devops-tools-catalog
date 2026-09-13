@@ -40,7 +40,7 @@
 - [codegraph](https://colbymchenry.github.io/codegraph) — Codebase graph visualization tool for understanding repository structure.
 - [Codemod](https://codemod.com/) — Code transformation and maintenance platform with an open-source engine and paid organization-wide workflow features.
 - [Coder](https://coder.com) — Self-hosted cloud development environments and AI development infrastructure with governance.
-- [CodeWhale](https://codewhale.net/en) — Terminal coding agent designed to work across different model providers.
+- [CodeWhale](https://codewhale.net/en) — Open-source terminal coding agent with multi-provider model support and local tool execution.
 - [Codex](https://github.com/openai/codex) — Lightweight coding agent from OpenAI that runs in your terminal.
 - [Continue](https://www.continue.dev) — Open-source AI code assistant.
 - [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) — Commercial SOAR platform (Community/Starter/Enterprise licensing). Content packs are open on GitHub.

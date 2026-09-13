@@ -47,8 +47,9 @@
   needs_review: false
 - id: cloudcasa
   name: CloudCasa
-  summary: Kubernetes backup and disaster recovery.
-  official_url: https://cloudcasa.io
+  summary: Kubernetes and cloud-native data protection service with SaaS and enterprise self-hosted editions.
+  official_url: https://cloudcasa.io/
+  documentation_url: https://docs.cloudcasa.io/help/guide-kubernetes-backup.html
   categories:
   - backup-disaster-recovery-resilience
   subcategories:
@@ -60,20 +61,27 @@
   lifecycle_stages:
   - operate
   use_when:
-  - You want a SaaS-managed Kubernetes backup solution with minimal operational overhead.
+  - You want policy-driven Kubernetes backup, recovery, and migration with a managed control plane or an enterprise self-hosted edition.
   avoid_when:
-  - You need on-prem-only, self-hosted backup or prefer open-source (Velero).
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an open-source product or want to operate only the separately available Kubernetes backup components.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://cloudcasa.io/kubernetes-backup-pricing/
+  - https://docs.cloudcasa.io/help/guide-kubernetes-backup.html
+  - https://docs.cloudcasa.io/self-hosted-admin-guide/overview.html
+  - https://docs.cloudcasa.io/self-hosted-admin-guide/licensing.html
   - legacy:4_Kubernetes-Containers/README.md#L180
   - legacy:devopstools_final.md#L684
-  needs_review: true
+  needs_review: false
 - id: k8up
   name: K8up
   summary: Kubernetes backup operator that schedules Restic-based PVC and application-aware backups and

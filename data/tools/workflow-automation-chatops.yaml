@@ -91,6 +91,7 @@
   name: Confluence
   summary: AI-powered team knowledge base and collaboration workspace by Atlassian.
   official_url: https://www.atlassian.com/software/confluence
+  documentation_url: https://support.atlassian.com/confluence-cloud/
   categories:
   - workflow-automation-chatops
   subcategories:
@@ -102,18 +103,26 @@
   lifecycle_stages:
   - plan
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need an established collaborative knowledge workspace integrated with Atlassian's project and service-management products.
+  avoid_when:
+  - You require a new perpetual self-managed deployment; Confluence Data Center is in transition toward its announced 2029 end of life.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://www.atlassian.com/software/confluence
+  - https://support.atlassian.com/confluence-cloud/docs/learn-about-confluence-cloud-plans/
+  - https://www.atlassian.com/licensing/data-center-end-of-life
   - legacy:devopstools_final.md#L1022
-  needs_review: true
+  needs_review: false
 - id: gotify
   name: Gotify
   summary: Self-hosted server and clients for receiving application push notifications.

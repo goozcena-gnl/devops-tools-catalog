@@ -172,6 +172,11 @@ def test_deferred_record_identity_and_licence_semantics() -> None:
 
 def test_n1a_supersession_is_exact_and_does_not_weaken_other_guards() -> None:
     assert {
+        ("cosmian-kms", "repository_url"),
+        ("cosmian-kms", "official_url"),
+        ("cosmian-kms", "license_model"),
+        ("cosmian-kms", "status"),
+        ("cosmian-kms", "needs_review"),
         ("mcp-server-kubernetes", "repository_url"),
         ("mcp-server-kubernetes", "license_spdx"),
         ("mcp-server-kubernetes", "status"),

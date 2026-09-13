@@ -313,20 +313,20 @@ Self-hosted cloud development environments and AI development infrastructure wit
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Terminal coding agent designed to work across different model providers.
+Open-source terminal coding agent with multi-provider model support and local tool execution.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a terminal-native coding agent that can use multiple model providers and local development tools.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a mature enterprise support model or a generally available hosted cloud edition.
 
-[Official site](https://codewhale.net/en)
+[Official site](https://codewhale.net/en) · [Documentation](https://codewhale.net/en/product) · [Source repository](https://github.com/Hmbown/CodeWhale)
 
 ### Codex
 

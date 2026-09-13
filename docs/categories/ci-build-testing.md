@@ -389,39 +389,39 @@ Hosted code quality and security analysis platform that integrates findings and 
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Code coverage reporting and test insights platform.
+Hosted code coverage reporting, test analytics, and quality-gating platform operated by Harness.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want pull-request coverage feedback, test analytics, and coverage quality gates across supported CI systems.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a current on-premises deployment or want only a local coverage-file viewer.
 
-[Official site](https://about.codecov.io)
+[Official site](https://about.codecov.io/) · [Documentation](https://docs.codecov.com/)
 
 ### Codefresh
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-GitOps and CI/CD platform.
+Commercial software-delivery platform combining CI, deployment, and Argo-based GitOps capabilities.
 
 **Use when**
 
-- * You want combined CI/CD + GitOps (ArgoCD-based) in a single platform.
+- You want CI, deployment, and Argo-based GitOps workflows under one commercial control plane.
 
 **Consider alternatives when**
 
-- * You only need simple CI with no Kubernetes component.
+- You only need simple CI or want to operate the separate upstream Argo projects without a commercial platform.
 
-[Official site](https://codefresh.io)
+[Official site](https://codefresh.io/) · [Documentation](https://codefresh.io/docs/docs/getting-started/intro-to-codefresh/)
 
 ### commitlint
 

@@ -61,24 +61,23 @@
 | [Claude Code Cheat Sheet](https://shipyard.build/blog/claude-code-cheat-sheet) | Documentation, learning and career resources | documentation | needs-review |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | commercial | active |
-| [CloudCasa](https://cloudcasa.io) | Backup, disaster recovery and resilience | unknown | needs-review |
+| [CloudCasa](https://cloudcasa.io/) | Backup, disaster recovery and resilience | commercial | active |
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | active |
 | [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | commercial | active |
-| [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) | FinOps and sustainability | unknown | needs-review |
+| [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) | FinOps and sustainability | commercial | active |
 | [Cloudify](https://cloudify.co) | Cloud platforms and cloud management | oss | active |
 | [CloudZero](https://www.cloudzero.com) | FinOps and sustainability | commercial | active |
 | [CNCF Free Courses](https://www.cncf.io/training/courses?_sfm_lf_course_free=1) | Documentation, learning and career resources | documentation | needs-review |
 | [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Composio](https://composio.dev) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | commercial | active |
-| [Cosmian KMS](https://cosmian.com/data-protection-suite/cosmian-kms) | IAM, secrets and certificate management | unknown | needs-review |
 | [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | active |
 | [curl](https://curl.se) | Foundations, Linux and scripting | oss | active |
 | [Dash0](https://www.dash0.com) | FinOps and sustainability | commercial | active |
 | [Datadog Cloud Cost Management](https://www.datadoghq.com/product/cloud-cost-management) | FinOps and sustainability | commercial | active |
 | [DeepSpeed](https://www.deepspeed.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [DeepTutor](https://deeptutor.info/) | Documentation, learning and career resources | documentation | needs-review |
-| [Descope](https://www.descope.com) | IAM, secrets and certificate management | unknown | needs-review |
+| [Descope](https://www.descope.com/) | IAM, secrets and certificate management | commercial | active |
 | [DEV Community #devops](https://dev.to/t/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOps Community](https://www.devopscommunity.in) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOps Exercises](https://github.com/bregman-arie/devops-exercises) | Documentation, learning and career resources | documentation | needs-review |
@@ -88,7 +87,7 @@
 | [DevOpsCube Kubernetes Tutorials (Beginners)](https://devopscube.com/kubernetes-tutorials-beginners) | Documentation, learning and career resources | documentation | needs-review |
 | [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | needs-review |
 | [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | commercial | active |
-| [Docker Agent](https://docker.github.io/docker-agent) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Docker Agent](https://docker.github.io/docker-agent/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Docker Hub MCP](https://hub.docker.com/mcp) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Docker MCP Gateway](https://github.com/docker/mcp-gateway) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Docmost](https://docmost.com/) | Documentation, learning and career resources | open-core | active |
@@ -100,6 +99,7 @@
 | [Env0](https://github.com/env0) | Infrastructure as Code | unknown | needs-review |
 | [etcd](https://etcd.io) | Databases, caching and data infrastructure | oss | needs-review |
 | [EveryDev.ai](https://www.everydev.ai) | Documentation, learning and career resources | unknown | needs-review |
+| [Eviden KMS](https://github.com/Cosmian/kms) | IAM, secrets and certificate management | source-available | active |
 | [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Exoscale SKS](https://www.exoscale.com/sks/) | Kubernetes distributions and operations | commercial | active |
 | [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | needs-review |

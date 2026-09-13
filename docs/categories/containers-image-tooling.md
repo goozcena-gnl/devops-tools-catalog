@@ -183,17 +183,17 @@ Product ecosystem for developing, building, distributing, and running applicatio
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Docker image build system.
+Umbrella Docker image-build feature implemented through the separately catalogued Docker Buildx client and BuildKit backend.
 
 **Use when**
 
-- * You're using Docker and want the standard, well-documented build flow.
+- You need the documentation umbrella for Docker's standard image-build workflow.
 
 **Consider alternatives when**
 
-- * You need daemonless builds or your CI environment doesn't support Docker-in-Docker.
+- You are selecting a standalone implementation; compare the separate Buildx and BuildKit records while this umbrella identity is reconciled.
 
-[Official site](https://docs.docker.com/build)
+[Official site](https://docs.docker.com/build/) · [Documentation](https://docs.docker.com/build/concepts/overview/)
 
 ### Docker Buildx
 
@@ -237,20 +237,20 @@ Declarative tool for defining and running multi-container applications from a Co
 
 **Categories:** Containers and image tooling<br>
 **Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Offload Docker builds to the cloud.
+Fully managed Docker service for building and running containers in cloud compute through Docker Desktop workflows.
 
 **Use when**
 
-- * Local builds are slow and you want to offload compute to the cloud.
+- Local compute, VDI, or nested-virtualization limits make remote Docker build and container execution useful.
 
 **Consider alternatives when**
 
-- * You have fast local hardware or strict data-locality requirements.
+- You require offline or self-hosted execution, strict data locality, or do not have the required Docker subscriptions.
 
-[Official site](https://www.docker.com/products/docker-offload)
+[Official site](https://www.docker.com/products/docker-offload) · [Documentation](https://docs.docker.com/offload/)
 
 ### Earthly
 

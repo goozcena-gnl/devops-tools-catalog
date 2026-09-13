@@ -53,9 +53,9 @@
 | [Descheduler](https://github.com/kubernetes-sigs/descheduler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) | Kubernetes distributions and operations | oss | needs-review |
 | [Distroless](https://github.com/GoogleContainerTools/distroless) | Containers and image tooling | oss | needs-review |
-| [Docker Build](https://docs.docker.com/build) | Containers and image tooling | unknown | needs-review |
+| [Docker Build](https://docs.docker.com/build/) | Containers and image tooling | unknown | needs-review |
 | [Docker Buildx](https://github.com/docker/buildx) | Containers and image tooling | oss | needs-review |
-| [Docker Offload](https://www.docker.com/products/docker-offload) | Containers and image tooling | unknown | needs-review |
+| [Docker Offload](https://www.docker.com/products/docker-offload) | Containers and image tooling | commercial | active |
 | [Docker Swarm](https://docs.docker.com/engine/swarm) | Kubernetes distributions and operations | unknown | needs-review |
 | [Dockhand](https://dockhand.pro) | Kubernetes distributions and operations | unknown | needs-review |
 | [dotnet-operator-sdk](https://dotnet.github.io/dotnet-operator-sdk) | Kubernetes networking, storage and add-ons | oss | needs-review |

@@ -102,7 +102,7 @@
 - [Compute Gardener](https://www.compute-gardener.com) — Carbon-aware Kubernetes scheduler for sustainable computing.
 - [Concierto Cloud](https://www.concierto.cloud) — Cloud management platform.
 - [Confidential Containers](https://confidentialcontainers.org) — CNCF project for running Kubernetes pods inside hardware-backed Trusted Execution Environments (TEEs).
-- [ConfigHub](https://www.confighub.com) — Configuration management platform for distributed applications.
+- [ConfigHub](https://www.confighub.com/) — Preview-stage commercial configuration control plane for modeling, governing, and reconciling distributed system configuration.
 - [containerd](https://containerd.io) — Industry-standard container runtime focused on simplicity, portability, and robust Kubernetes integration.
 - [Containerized Data Importer](https://github.com/kubevirt/containerized-data-importer) — Kubernetes service for importing, cloning, and uploading virtual-machine disk images into persistent volumes for KubeVirt.
 - [Convox](https://www.convox.com) — Platform for deploying and managing containers.
@@ -129,10 +129,10 @@
 - [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) — Tooling to run Kubernetes locally on the desktop.
 - [DigitalOcean](https://www.digitalocean.com) — Developer-friendly cloud infrastructure provider.
 - [Docker](https://www.docker.com) — Product ecosystem for developing, building, distributing, and running application containers.
-- [Docker Agent](https://docker.github.io/docker-agent) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
+- [Docker Agent](https://docker.github.io/docker-agent/) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
 - [Docker Compose](https://docs.docker.com/compose/) — Declarative tool for defining and running multi-container applications from a Compose file.
-- [Docker Desktop](https://www.docker.com/products/docker-desktop) — Desktop Docker environment.
-- [Docker Hub MCP](https://hub.docker.com/mcp) — MCP-related Docker images.
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) — Proprietary desktop application bundling Docker container, image, Kubernetes, and developer tooling for macOS, Windows, and Linux.
+- [Docker Hub MCP](https://hub.docker.com/mcp) — Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
 - [Docker MCP Gateway](https://github.com/docker/mcp-gateway) — Docker CLI plugin and gateway for discovering, running, and routing MCP servers in containers.
 - [Docker Swarm](https://docs.docker.com/engine/swarm) — Container orchestration system by Docker.
 - [Dockhand](https://dockhand.pro) — Kubernetes deployment and management tool.

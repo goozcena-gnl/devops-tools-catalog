@@ -142,25 +142,25 @@
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | active |
 | [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | commercial | active |
 | [Cloudify](https://cloudify.co) | Cloud platforms and cloud management | oss | active |
-| [Cloudsmith](https://cloudsmith.com) | Artifact and package management | unknown | needs-review |
+| [Cloudsmith](https://cloudsmith.com/) | Artifact and package management | commercial | active |
 | [cmd.ms](https://cmd.ms) | Emerging and experimental tools | oss | needs-review |
 | [CNCF Free Courses](https://www.cncf.io/training/courses?_sfm_lf_course_free=1) | Documentation, learning and career resources | documentation | needs-review |
 | [Code Newsletter AI](https://codenewsletter.ai) | Emerging and experimental tools | unknown | needs-review |
 | [code-server](https://github.com/coder/code-server) | Developer experience and local environments | open-core | active |
 | [Codeberg](https://codeberg.org/) | Source control and repository management | free-saas | active |
-| [Codecov](https://about.codecov.io) | CI, build and testing | unknown | needs-review |
-| [Codefresh](https://codefresh.io) | CI, build and testing | unknown | needs-review |
+| [Codecov](https://about.codecov.io/) | CI, build and testing | commercial | active |
+| [Codefresh](https://codefresh.io/) | CI, build and testing | commercial | active |
 | [codegraph](https://colbymchenry.github.io/codegraph) | Emerging and experimental tools | unknown | needs-review |
 | [Codemod](https://codemod.com/) | Developer experience and local environments | open-core | active |
 | [Coder](https://coder.com) | Developer experience and local environments | oss | needs-review |
-| [CodeWhale](https://codewhale.net/en) | Developer experience and local environments | unknown | needs-review |
+| [CodeWhale](https://codewhale.net/en) | Developer experience and local environments | oss | active |
 | [Codex](https://github.com/openai/codex) | Developer experience and local environments | oss | needs-review |
 | [commitlint](https://commitlint.js.org) | CI, build and testing | oss | active |
 | [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | commercial | active |
 | [Concourse](https://concourse-ci.org) | CI, build and testing | oss | active |
 | [Confidential Containers](https://confidentialcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
-| [ConfigHub](https://www.confighub.com) | Configuration management | unknown | needs-review |
-| [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | unknown | needs-review |
+| [ConfigHub](https://www.confighub.com/) | Configuration management | commercial | active |
+| [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | commercial | active |
 | [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | active |
 | [Continue](https://www.continue.dev) | Developer experience and local environments | oss | needs-review |
 | [Convox](https://www.convox.com) | CD, GitOps, release and promotion | oss | active |
@@ -179,7 +179,7 @@
 | [Cursor Origin](https://cursor.com/origin) | Source control and repository management, Emerging and experimental tools | commercial | active |
 | [Cypress](https://www.cypress.io) | CI, build and testing | open-core | active |
 | [Dagger](https://dagger.io) | CI, build and testing | open-core | active |
-| [Datadog](https://github.com/DataDog) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Datadog](https://www.datadoghq.com/product/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Debian](https://www.debian.org/) | Foundations, Linux and scripting | oss | active |
 | [DeepTutor](https://deeptutor.info/) | Documentation, learning and career resources | documentation | needs-review |
 | [delta](https://dandavison.github.io/delta/) | Developer experience and local environments | oss | active |
@@ -202,13 +202,13 @@
 | [Distroless](https://github.com/GoogleContainerTools/distroless) | Containers and image tooling | oss | needs-review |
 | [dive](https://github.com/wagoodman/dive) | Containers and image tooling | oss | active |
 | [Docker](https://www.docker.com) | Containers and image tooling, Developer experience and local environments | open-core | active |
-| [Docker Build](https://docs.docker.com/build) | Containers and image tooling | unknown | needs-review |
+| [Docker Build](https://docs.docker.com/build/) | Containers and image tooling | unknown | needs-review |
 | [Docker Buildx](https://github.com/docker/buildx) | Containers and image tooling | oss | needs-review |
 | [Docker Compose](https://docs.docker.com/compose/) | Containers and image tooling, Developer experience and local environments | oss | active |
-| [Docker Desktop](https://www.docker.com/products/docker-desktop) | Virtualization, bare metal and homelab | unknown | needs-review |
-| [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | unknown | needs-review |
-| [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | unknown | needs-review |
-| [Docker Offload](https://www.docker.com/products/docker-offload) | Containers and image tooling | unknown | needs-review |
+| [Docker Desktop](https://www.docker.com/products/docker-desktop) | Virtualization, bare metal and homelab | commercial | active |
+| [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | open-core | active |
+| [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | commercial | active |
+| [Docker Offload](https://www.docker.com/products/docker-offload) | Containers and image tooling | commercial | active |
 | [docker-http-https-echo](https://code.mendhak.com/docker-http-https-echo/) | Developer experience and local environments, CI, build and testing | oss | active |
 | [Dockur macOS](https://github.com/dockur/macos) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Dockur Windows](https://github.com/dockur/windows) | Virtualization, bare metal and homelab | oss | needs-review |

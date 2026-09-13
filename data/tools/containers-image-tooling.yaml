@@ -282,8 +282,9 @@
   needs_review: false
 - id: docker-build
   name: Docker Build
-  summary: Docker image build system.
-  official_url: https://docs.docker.com/build
+  summary: Umbrella Docker image-build feature implemented through the separately catalogued Docker Buildx client and BuildKit backend.
+  official_url: https://docs.docker.com/build/
+  documentation_url: https://docs.docker.com/build/concepts/overview/
   categories:
   - containers-image-tooling
   subcategories:
@@ -296,17 +297,21 @@
   - build
   - release
   use_when:
-  - '* You''re using Docker and want the standard, well-documented build flow.'
+  - You need the documentation umbrella for Docker's standard image-build workflow.
   avoid_when:
-  - '* You need daemonless builds or your CI environment doesn''t support Docker-in-Docker.'
+  - You are selecting a standalone implementation; compare the separate Buildx and BuildKit records while this umbrella identity is reconciled.
   deployment_models: []
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://docs.docker.com/build/
+  - https://docs.docker.com/build/concepts/overview/
+  - https://github.com/docker/buildx
+  - https://github.com/moby/buildkit
   - legacy:3_CI-CD-Automation/README.md#L80
   - legacy:devopstools_final.md#L352
   needs_review: true
@@ -382,8 +387,9 @@
   needs_review: false
 - id: docker-offload
   name: Docker Offload
-  summary: Offload Docker builds to the cloud.
+  summary: Fully managed Docker service for building and running containers in cloud compute through Docker Desktop workflows.
   official_url: https://www.docker.com/products/docker-offload
+  documentation_url: https://docs.docker.com/offload/
   categories:
   - containers-image-tooling
   subcategories:
@@ -396,20 +402,26 @@
   - build
   - release
   use_when:
-  - '* Local builds are slow and you want to offload compute to the cloud.'
+  - Local compute, VDI, or nested-virtualization limits make remote Docker build and container execution useful.
   avoid_when:
-  - '* You have fast local hardware or strict data-locality requirements.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require offline or self-hosted execution, strict data locality, or do not have the required Docker subscriptions.
+  deployment_models:
+  - hosted-saas
+  - desktop
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://www.docker.com/products/docker-offload
+  - https://docs.docker.com/offload/
+  - https://docs.docker.com/offload/quickstart/
   - legacy:3_CI-CD-Automation/README.md#L84
   - legacy:devopstools_final.md#L354
-  needs_review: true
+  needs_review: false
 - id: earthly
   name: Earthly
   summary: Build automation framework.

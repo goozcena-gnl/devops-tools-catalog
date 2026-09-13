@@ -135,8 +135,9 @@
   commercial_offering: true
 - id: confighub
   name: ConfigHub
-  summary: Configuration management platform for distributed applications.
-  official_url: https://www.confighub.com
+  summary: Preview-stage commercial configuration control plane for modeling, governing, and reconciling distributed system configuration.
+  official_url: https://www.confighub.com/
+  documentation_url: https://www.confighub.com/faq
   categories:
   - configuration-management
   subcategories:
@@ -148,20 +149,27 @@
   - deploy
   - operate
   use_when:
-  - You need centralized, context-aware config management across environments.
+  - You want to evaluate a centralized configuration control plane across application and infrastructure systems.
   avoid_when:
-  - A simple secrets manager or feature-flag service suffices.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require a generally available production service, or you are looking for the unrelated ConfigHub LLC project that shut down in 2018.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: experimental
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://www.confighub.com/
+  - https://www.confighub.com/faq
+  - https://www.confighub.com/enterprise
+  - https://www.confighub.com/tos
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L74
   - legacy:devopstools_final.md#L197
-  needs_review: true
+  needs_review: false
 - id: etckeeper
   name: etckeeper
   summary: Version control for `/etc` (tracks config changes in Git).

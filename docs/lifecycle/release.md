@@ -18,7 +18,7 @@
 - [Caddy](https://caddyserver.com) — Extensible web server and reverse proxy with automatic HTTPS.
 - [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) — Rust library API compatibility checker for detecting semantic-versioning violations.
 - [cek](https://github.com/bschaatsbergen/cek) — Inspect OCI image filesystems and layers without running containers.
-- [Cloudsmith](https://cloudsmith.com) — Managed package and artifact repository service.
+- [Cloudsmith](https://cloudsmith.com/) — Managed multi-format package and artifact repository service with access controls and supply-chain features.
 - [ContainerYard](https://github.com/mcmah309/containeryard) — Tool for composing reusable modules into generated Containerfiles.
 - [Convox](https://www.convox.com) — Platform for deploying and managing containers.
 - [DeepEval](https://deepeval.com/) — Local-first framework for evaluating and regression-testing LLM applications, agents, RAG pipelines, and MCP systems.
@@ -26,11 +26,11 @@
 - [dist (cargo-dist)](https://github.com/axodotdev/cargo-dist) — Release automation for building and distributing application binaries and installers.
 - [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal container images for secure deployments.
 - [Docker](https://www.docker.com) — Product ecosystem for developing, building, distributing, and running application containers.
-- [Docker Build](https://docs.docker.com/build) — Docker image build system.
+- [Docker Build](https://docs.docker.com/build/) — Umbrella Docker image-build feature implemented through the separately catalogued Docker Buildx client and BuildKit backend.
 - [Docker Buildx](https://github.com/docker/buildx) — Docker CLI plugin for extended build capabilities.
-- [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) — Curated hardened container images catalog.
-- [Docker Hub](https://www.docker.com/products/docker-hub) — Cloud-based registry for Docker images.
-- [Docker Offload](https://www.docker.com/products/docker-offload) — Offload Docker builds to the cloud.
+- [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) — Docker-maintained catalog of minimal, hardened container images, Helm charts, and system packages with community and paid tiers.
+- [Docker Hub](https://www.docker.com/products/docker-hub) — Hosted container registry and discovery service for publishing, sharing, and pulling container images.
+- [Docker Offload](https://www.docker.com/products/docker-offload) — Fully managed Docker service for building and running containers in cloud compute through Docker Desktop workflows.
 - [Dokku](https://dokku.com) — PaaS for deploying apps using Docker.
 - [Earthly](https://earthly.dev) — Build automation framework.
 - [Flux](https://fluxcd.io) — Open and extensible GitOps toolkit for Kubernetes.

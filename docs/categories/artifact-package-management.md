@@ -66,58 +66,58 @@ Installer for prebuilt Rust package executables with source-build fallback.
 
 **Categories:** Artifact and package management<br>
 **Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Managed package and artifact repository service.
+Managed multi-format package and artifact repository service with access controls and supply-chain features.
 
 **Use when**
 
-- * You want a fully managed, multi-format package registry with fine-grained access control.
+- You want a fully managed, multi-format package registry with fine-grained access control.
 
 **Consider alternatives when**
 
-- * You prefer self-hosted solutions or have cost constraints for large storage.
+- You require a self-hosted registry or need to avoid a proprietary hosted control plane.
 
-[Official site](https://cloudsmith.com)
+[Official site](https://cloudsmith.com/) · [Documentation](https://docs.cloudsmith.com/)
 
 ### Docker Hardened Images
 
 **Categories:** Artifact and package management<br>
 **Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Curated hardened container images catalog.
+Docker-maintained catalog of minimal, hardened container images, Helm charts, and system packages with community and paid tiers.
 
 **Use when**
 
-- * You need pre-hardened base images to reduce CVE count and meet compliance.
+- You need Docker-maintained hardened base images with provenance, SBOMs, and low-vulnerability defaults.
 
 **Consider alternatives when**
 
-- * You maintain your own hardened base images or need full control over image contents.
+- You need unrestricted customization or compliance variants without the relevant paid DHI tier.
 
-[Official site](https://hub.docker.com/hardened-images/catalog)
+[Official site](https://hub.docker.com/hardened-images/catalog) · [Documentation](https://docs.docker.com/dhi/)
 
 ### Docker Hub
 
 **Categories:** Artifact and package management<br>
 **Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud-based registry for Docker images.
+Hosted container registry and discovery service for publishing, sharing, and pulling container images.
 
 **Use when**
 
-- * You need a public registry for open-source images or a simple private registry.
+- You need a widely integrated hosted registry for public images or straightforward private repositories.
 
 **Consider alternatives when**
 
-- * You need advanced RBAC, vulnerability scanning, or have rate-limit concerns at scale.
+- You require a self-hosted registry or cannot accept plan-specific storage, pull, and collaboration limits.
 
-[Official site](https://www.docker.com/products/docker-hub)
+[Official site](https://www.docker.com/products/docker-hub) · [Documentation](https://docs.docker.com/docker-hub/)
 
 ### Google Artifact Registry
 

@@ -338,8 +338,9 @@
   needs_review: true
 - id: docker-desktop
   name: Docker Desktop
-  summary: Desktop Docker environment.
+  summary: Proprietary desktop application bundling Docker container, image, Kubernetes, and developer tooling for macOS, Windows, and Linux.
   official_url: https://www.docker.com/products/docker-desktop
+  documentation_url: https://docs.docker.com/desktop/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -351,20 +352,25 @@
   - deploy
   - operate
   use_when:
-  - You want a batteries-included Docker experience on Mac/Windows with GUI.
+  - You want a supported, batteries-included local Docker environment with desktop management and integrated developer tools.
   avoid_when:
-  - Licensing costs are a concern for large teams or you prefer open-source alternatives.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - Your organization requires a paid subscription but cannot accept Docker's commercial terms, or a headless engine is sufficient.
+  deployment_models:
+  - desktop
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://www.docker.com/products/docker-desktop
+  - https://docs.docker.com/desktop/
+  - https://docs.docker.com/desktop/setup/install/windows-install/
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L144
   - legacy:devopstools_final.md#L237
-  needs_review: true
+  needs_review: false
 - id: dockur-macos
   name: Dockur macOS
   summary: MacOS in a Docker container.

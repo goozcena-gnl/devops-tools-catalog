@@ -72,14 +72,14 @@
 - [CloudFox](https://github.com/BishopFox/cloudfox) — Cloud environment situational-awareness utility for authorized AWS, Azure, and GCP security assessments.
 - [Codacy](https://www.codacy.com/) — Hosted code quality and security analysis platform that integrates findings and coverage into repository workflows.
 - [code-server](https://github.com/coder/code-server) — Self-hosted service that runs Visual Studio Code in a web browser.
-- [Codecov](https://about.codecov.io) — Code coverage reporting and test insights platform.
-- [Codefresh](https://codefresh.io) — GitOps and CI/CD platform.
+- [Codecov](https://about.codecov.io/) — Hosted code coverage reporting, test analytics, and quality-gating platform operated by Harness.
+- [Codefresh](https://codefresh.io/) — Commercial software-delivery platform combining CI, deployment, and Argo-based GitOps capabilities.
 - [Codemod](https://codemod.com/) — Code transformation and maintenance platform with an open-source engine and paid organization-wide workflow features.
 - [CodeQL](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql) — Semantic code analysis for vulnerabilities.
 - [Coder](https://coder.com) — Self-hosted cloud development environments and AI development infrastructure with governance.
-- [CodeWhale](https://codewhale.net/en) — Terminal coding agent designed to work across different model providers.
+- [CodeWhale](https://codewhale.net/en) — Open-source terminal coding agent with multi-provider model support and local tool execution.
 - [Codex](https://github.com/openai/codex) — Lightweight coding agent from OpenAI that runs in your terminal.
-- [Codiga](https://github.com/codiga) — Automated code analysis and security.
+- [Codiga](https://www.codiga.io/blog/codiga-joins-datadog/) — Discontinued static code analysis and coding-assistant service whose technology was integrated into Datadog Code Analysis.
 - [commitlint](https://commitlint.js.org) — Lint commit messages (Conventional Commits).
 - [Concourse](https://concourse-ci.org) — CI/CD system with declarative pipelines.
 - [Conftest](https://www.conftest.dev) — Test configuration files using OPA/Rego.
@@ -105,7 +105,7 @@
 - [DevPod](https://devpod.sh) — Open-source dev environments that can run locally or on remote providers.
 - [Devtron](https://devtron.ai) — AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and day-2 operations.
 - [diffyml](https://szhekpisov.github.io/diffyml/) — Command-line tool that compares YAML documents structurally instead of as line-oriented text.
-- [DigiCert](https://github.com/digicert) — Digital certificates and SSL solutions.
+- [DigiCert](https://www.digicert.com/) — Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing, device trust, and related product families.
 - [direnv](https://direnv.net/) — Shell extension that loads and unloads directory-specific environment variables.
 - [dive](https://github.com/wagoodman/dive) — Command-line and terminal user interface for inspecting image layers and their contribution to container image contents.
 - [Docker Compose](https://docs.docker.com/compose/) — Declarative tool for defining and running multi-container applications from a Compose file.

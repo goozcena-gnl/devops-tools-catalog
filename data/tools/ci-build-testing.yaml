@@ -685,8 +685,9 @@
   needs_review: false
 - id: codecov
   name: Codecov
-  summary: Code coverage reporting and test insights platform.
-  official_url: https://about.codecov.io
+  summary: Hosted code coverage reporting, test analytics, and quality-gating platform operated by Harness.
+  official_url: https://about.codecov.io/
+  documentation_url: https://docs.codecov.com/
   categories:
   - ci-build-testing
   subcategories:
@@ -698,22 +699,31 @@
   lifecycle_stages:
   - build
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want pull-request coverage feedback, test analytics, and coverage quality gates across supported CI systems.
+  avoid_when:
+  - You require a current on-premises deployment or want only a local coverage-file viewer.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://about.codecov.io/
+  - https://docs.codecov.com/
+  - https://about.codecov.io/pricing/
+  - https://docs.codecov.com/docs/frequently-asked-questions
   - legacy:devopstools_final.md#L1032
-  needs_review: true
+  needs_review: false
 - id: codefresh
   name: Codefresh
-  summary: GitOps and CI/CD platform.
-  official_url: https://codefresh.io
+  summary: Commercial software-delivery platform combining CI, deployment, and Argo-based GitOps capabilities.
+  official_url: https://codefresh.io/
+  documentation_url: https://codefresh.io/docs/docs/getting-started/intro-to-codefresh/
   categories:
   - ci-build-testing
   subcategories:
@@ -726,20 +736,26 @@
   - build
   - test
   use_when:
-  - '* You want combined CI/CD + GitOps (ArgoCD-based) in a single platform.'
+  - You want CI, deployment, and Argo-based GitOps workflows under one commercial control plane.
   avoid_when:
-  - '* You only need simple CI with no Kubernetes component.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You only need simple CI or want to operate the separate upstream Argo projects without a commercial platform.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://codefresh.io/docs/docs/getting-started/intro-to-codefresh/
+  - https://codefresh.io/docs/docs/installation/installation-options/
+  - https://codefresh.io/pricing/
   - legacy:3_CI-CD-Automation/README.md#L26
   - legacy:devopstools_final.md#L319
-  needs_review: true
+  needs_review: false
 - id: commitlint
   name: commitlint
   summary: Lint commit messages (Conventional Commits).

@@ -43,15 +43,15 @@
 | [Codacy](https://www.codacy.com/) | CI, build and testing, Application and cloud security | commercial | active |
 | [code-server](https://github.com/coder/code-server) | Developer experience and local environments | open-core | active |
 | [Codeberg](https://codeberg.org/) | Source control and repository management | free-saas | active |
-| [Codecov](https://about.codecov.io) | CI, build and testing | unknown | needs-review |
-| [Codefresh](https://codefresh.io) | CI, build and testing | unknown | needs-review |
+| [Codecov](https://about.codecov.io/) | CI, build and testing | commercial | active |
+| [Codefresh](https://codefresh.io/) | CI, build and testing | commercial | active |
 | [Codemod](https://codemod.com/) | Developer experience and local environments | open-core | active |
 | [Coder](https://coder.com) | Developer experience and local environments | oss | needs-review |
-| [CodeWhale](https://codewhale.net/en) | Developer experience and local environments | unknown | needs-review |
+| [CodeWhale](https://codewhale.net/en) | Developer experience and local environments | oss | active |
 | [Codex](https://github.com/openai/codex) | Developer experience and local environments | oss | needs-review |
 | [commitlint](https://commitlint.js.org) | CI, build and testing | oss | active |
 | [Concourse](https://concourse-ci.org) | CI, build and testing | oss | active |
-| [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | unknown | needs-review |
+| [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | commercial | active |
 | [Continue](https://www.continue.dev) | Developer experience and local environments | oss | needs-review |
 | [Coolify](https://coolify.io/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | open-core | active |
 | [CRC](https://crc.dev/) | Kubernetes distributions and operations, Developer experience and local environments | oss | active |

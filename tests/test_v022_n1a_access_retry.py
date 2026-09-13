@@ -98,9 +98,14 @@ FORBIDDEN_SELECTED_FIELDS = {
 
 # Later, evidence-backed catalogue maintenance may supersede an N1a current-state
 # protection without rewriting the pinned N1a history. Keep this allowlist at field
-# granularity: N1a reviewed only mcp-server-kubernetes's official_url, while the
-# deferred correction wave separately verified these four fields.
+# granularity: later evidence reviews independently verified only the listed fields
+# for Cosmian/Eviden KMS and mcp-server-kubernetes.
 N1A_CURRENT_STATE_SUPERSESSIONS = {
+    ("cosmian-kms", "repository_url"),
+    ("cosmian-kms", "official_url"),
+    ("cosmian-kms", "license_model"),
+    ("cosmian-kms", "status"),
+    ("cosmian-kms", "needs_review"),
     ("mcp-server-kubernetes", "repository_url"),
     ("mcp-server-kubernetes", "license_spdx"),
     ("mcp-server-kubernetes", "status"),
@@ -282,6 +287,8 @@ def _assert_current_n1a_persistence(
             )
 
     for tool_id, field in EXPECTED_WORK_ITEMS:
+        if (tool_id, field) in N1A_CURRENT_STATE_SUPERSESSIONS:
+            continue
         assert current[tool_id][1].get(field) == accepted[tool_id][1].get(field), (
             f"Accepted N1a decision drifted for {(tool_id, field)}"
         )

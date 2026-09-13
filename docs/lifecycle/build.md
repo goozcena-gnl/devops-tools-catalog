@@ -56,10 +56,10 @@
 - [CircleCI](https://circleci.com) — Commercial CI/CD platform offered as a managed cloud service or self-hosted CircleCI Server, with optional self-hosted runners.
 - [CloudBees](https://www.cloudbees.com) — Enterprise CI/CD built around Jenkins.
 - [CloudCustodian](https://cloudcustodian.io) — Cloud governance rules engine.
-- [Cloudsmith](https://cloudsmith.com) — Managed package and artifact repository service.
+- [Cloudsmith](https://cloudsmith.com/) — Managed multi-format package and artifact repository service with access controls and supply-chain features.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) — High-performance code intelligence MCP server that indexes repositories into a persistent knowledge graph.
-- [Codecov](https://about.codecov.io) — Code coverage reporting and test insights platform.
-- [Codefresh](https://codefresh.io) — GitOps and CI/CD platform.
+- [Codecov](https://about.codecov.io/) — Hosted code coverage reporting, test analytics, and quality-gating platform operated by Harness.
+- [Codefresh](https://codefresh.io/) — Commercial software-delivery platform combining CI, deployment, and Argo-based GitOps capabilities.
 - [commitlint](https://commitlint.js.org) — Lint commit messages (Conventional Commits).
 - [Composio](https://composio.dev) — Agent tooling platform for managed auth, app connectors, triggers, and sandboxed tool execution across developer and business apps.
 - [Concourse](https://concourse-ci.org) — CI/CD system with declarative pipelines.
@@ -77,14 +77,14 @@
 - [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal container images for secure deployments.
 - [dive](https://github.com/wagoodman/dive) — Command-line and terminal user interface for inspecting image layers and their contribution to container image contents.
 - [Docker](https://www.docker.com) — Product ecosystem for developing, building, distributing, and running application containers.
-- [Docker Agent](https://docker.github.io/docker-agent) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
-- [Docker Build](https://docs.docker.com/build) — Docker image build system.
+- [Docker Agent](https://docker.github.io/docker-agent/) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
+- [Docker Build](https://docs.docker.com/build/) — Umbrella Docker image-build feature implemented through the separately catalogued Docker Buildx client and BuildKit backend.
 - [Docker Buildx](https://github.com/docker/buildx) — Docker CLI plugin for extended build capabilities.
-- [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) — Curated hardened container images catalog.
-- [Docker Hub](https://www.docker.com/products/docker-hub) — Cloud-based registry for Docker images.
-- [Docker Hub MCP](https://hub.docker.com/mcp) — MCP-related Docker images.
+- [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) — Docker-maintained catalog of minimal, hardened container images, Helm charts, and system packages with community and paid tiers.
+- [Docker Hub](https://www.docker.com/products/docker-hub) — Hosted container registry and discovery service for publishing, sharing, and pulling container images.
+- [Docker Hub MCP](https://hub.docker.com/mcp) — Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
 - [Docker MCP Gateway](https://github.com/docker/mcp-gateway) — Docker CLI plugin and gateway for discovering, running, and routing MCP servers in containers.
-- [Docker Offload](https://www.docker.com/products/docker-offload) — Offload Docker builds to the cloud.
+- [Docker Offload](https://www.docker.com/products/docker-offload) — Fully managed Docker service for building and running containers in cloud compute through Docker Desktop workflows.
 - [Docling](https://docling.ai/) — Document conversion toolkit that extracts structured content for downstream data and AI pipelines.
 - [Drone](https://www.drone.io) — Container-native CI/CD platform.
 - [Earthly](https://earthly.dev) — Build automation framework.

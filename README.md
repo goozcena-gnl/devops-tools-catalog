@@ -9,9 +9,9 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 - **Canonical records:** 1423
 - **Categories:** 30
-- **Records requiring review:** 920
+- **Records requiring review:** 903
 - **Archived repositories:** 11
-- **Last generation date:** 2026-09-12
+- **Last generation date:** 2026-09-13
 - **Maintenance status:** Active migration; unverified metadata is explicitly marked.
 
 ## Start with a task
@@ -98,23 +98,23 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 905 |
-| `source-available` | Source is visible under a non-OSI or restricted licence. | 21 |
-| `open-core` | OSS/community core with commercial features or service. | 104 |
-| `commercial` | Proprietary commercial product. | 79 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 907 |
+| `source-available` | Source is visible under a non-OSI or restricted licence. | 22 |
+| `open-core` | OSS/community core with commercial features or service. | 105 |
+| `commercial` | Proprietary commercial product. | 92 |
 | `free-saas` | Hosted service with a free offering. | 3 |
 | `documentation` | Learning or documentation resource. | 108 |
-| `unknown` | Reliable licence evidence has not been recorded. | 203 |
+| `unknown` | Reliable licence evidence has not been recorded. | 186 |
 
 ## Project-status legend
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 491 |
-| `needs-review` | Imported but not yet fully verified. | 920 |
+| `active` | Maintained according to recorded primary-source evidence. | 507 |
+| `needs-review` | Imported but not yet fully verified. | 903 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 10 |
-| `historical` | Retained for context or migration work. | 0 |
+| `historical` | Retained for context or migration work. | 1 |
 
 ## Recommendations and decisions
 

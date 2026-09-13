@@ -63,7 +63,7 @@
 | [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [ClickStack](https://clickhouse.com/clickstack) | Monitoring, metrics, logs and tracing | open-core | active |
-| [CloudCasa](https://cloudcasa.io) | Backup, disaster recovery and resilience | unknown | needs-review |
+| [CloudCasa](https://cloudcasa.io/) | Backup, disaster recovery and resilience | commercial | active |
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CloudNativePG](https://cloudnative-pg.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Cluster API](https://cluster-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
@@ -71,7 +71,7 @@
 | [Cluster Bare Autoscaler](https://github.com/docent-net/cluster-bare-autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Combodo (iTop)](https://combodo.com) | SRE, incident response and on-call | open-core | needs-review |
 | [Compute Gardener](https://www.compute-gardener.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | unknown | needs-review |
+| [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | commercial | active |
 | [CoreDNS](https://coredns.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Corosync](https://corosync.github.io/corosync/) | Virtualization, bare metal and homelab, Backup, disaster recovery and resilience | oss | active |
@@ -81,7 +81,7 @@
 | [crossview](https://github.com/crossplane-contrib/crossview) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [crust-gather](https://deepwiki.com/crust-gather/crust-gather) | Kubernetes distributions and operations | oss | needs-review |
 | [Dapr](https://dapr.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Datadog](https://github.com/DataDog) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Datadog](https://www.datadoghq.com/product/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Datree](https://github.com/datreeio/datree) | Kubernetes distributions and operations | oss | archived |
 | [DC/OS](https://dcos.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Descheduler](https://github.com/kubernetes-sigs/descheduler) | Kubernetes networking, storage and add-ons | oss | needs-review |

@@ -38,11 +38,11 @@
 | [cargo-vet](https://mozilla.github.io/cargo-vet/) | Software supply-chain security | oss | active |
 | [CircleCI](https://circleci.com) | CI, build and testing | commercial | active |
 | [CloudBees](https://www.cloudbees.com) | CI, build and testing | open-core | needs-review |
-| [Cloudsmith](https://cloudsmith.com) | Artifact and package management | unknown | needs-review |
+| [Cloudsmith](https://cloudsmith.com/) | Artifact and package management | commercial | active |
 | [Codacy](https://www.codacy.com/) | CI, build and testing, Application and cloud security | commercial | active |
 | [Codeberg](https://codeberg.org/) | Source control and repository management | free-saas | active |
-| [Codecov](https://about.codecov.io) | CI, build and testing | unknown | needs-review |
-| [Codefresh](https://codefresh.io) | CI, build and testing | unknown | needs-review |
+| [Codecov](https://about.codecov.io/) | CI, build and testing | commercial | active |
+| [Codefresh](https://codefresh.io/) | CI, build and testing | commercial | active |
 | [commitlint](https://commitlint.js.org) | CI, build and testing | oss | active |
 | [Concourse](https://concourse-ci.org) | CI, build and testing | oss | active |
 | [Convox](https://www.convox.com) | CD, GitOps, release and promotion | oss | active |
@@ -54,8 +54,8 @@
 | [Devtron](https://devtron.ai) | CI, build and testing | oss | needs-review |
 | [dist (cargo-dist)](https://github.com/axodotdev/cargo-dist) | CD, GitOps, release and promotion | oss | active |
 | [dive](https://github.com/wagoodman/dive) | Containers and image tooling | oss | active |
-| [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | unknown | needs-review |
-| [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | unknown | needs-review |
+| [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | open-core | active |
+| [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | commercial | active |
 | [Dokku](https://dokku.com) | CD, GitOps, release and promotion | oss | active |
 | [Drone](https://www.drone.io) | CI, build and testing | open-core | active |
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |

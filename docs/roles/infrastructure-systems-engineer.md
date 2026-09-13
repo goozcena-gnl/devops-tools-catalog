@@ -47,10 +47,10 @@
 | [ClamAV](https://www.clamav.net/) | Application and cloud security | oss | active |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [Clonezilla](https://clonezilla.org/) | Backup, disaster recovery and resilience | oss | active |
-| [CloudCasa](https://cloudcasa.io) | Backup, disaster recovery and resilience | unknown | needs-review |
+| [CloudCasa](https://cloudcasa.io/) | Backup, disaster recovery and resilience | commercial | active |
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | active |
 | [Confidential Containers](https://confidentialcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
-| [ConfigHub](https://www.confighub.com) | Configuration management | unknown | needs-review |
+| [ConfigHub](https://www.confighub.com/) | Configuration management | commercial | active |
 | [containerd](https://containerd.io) | Virtualization, bare metal and homelab | oss | active |
 | [Containerized Data Importer](https://github.com/kubevirt/containerized-data-importer) | Kubernetes networking, storage and add-ons, Virtualization, bare metal and homelab | oss | active |
 | [Corosync](https://corosync.github.io/corosync/) | Virtualization, bare metal and homelab, Backup, disaster recovery and resilience | oss | active |
@@ -60,7 +60,7 @@
 | [ctop](https://ctop.sh) | Virtualization, bare metal and homelab | oss | needs-review |
 | [curl](https://curl.se) | Foundations, Linux and scripting | oss | active |
 | [Debian](https://www.debian.org/) | Foundations, Linux and scripting | oss | active |
-| [Docker Desktop](https://www.docker.com/products/docker-desktop) | Virtualization, bare metal and homelab | unknown | needs-review |
+| [Docker Desktop](https://www.docker.com/products/docker-desktop) | Virtualization, bare metal and homelab | commercial | active |
 | [Dockur macOS](https://github.com/dockur/macos) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Dockur Windows](https://github.com/dockur/windows) | Virtualization, bare metal and homelab | oss | needs-review |
 | [dool](https://github.com/scottchiefbaker/dool) | Foundations, Linux and scripting | oss | active |
