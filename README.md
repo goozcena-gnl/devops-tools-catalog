@@ -37,9 +37,9 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 | [Cloud platforms and cloud management](docs/categories/cloud-platforms-management.md) | 26 |
 | [Infrastructure as Code](docs/categories/infrastructure-as-code.md) | 37 |
 | [Configuration management](docs/categories/configuration-management.md) | 18 |
-| [Virtualization, bare metal and homelab](docs/categories/virtualization-bare-metal-homelab.md) | 70 |
+| [Virtualization, bare metal and homelab](docs/categories/virtualization-bare-metal-homelab.md) | 71 |
 | [Containers and image tooling](docs/categories/containers-image-tooling.md) | 24 |
-| [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 152 |
+| [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 151 |
 | [Kubernetes networking, storage and add-ons](docs/categories/kubernetes-networking-storage-addons.md) | 136 |
 | [CI, build and testing](docs/categories/ci-build-testing.md) | 88 |
 | [CD, GitOps, release and promotion](docs/categories/cd-gitops-release-promotion.md) | 34 |

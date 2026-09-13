@@ -371,6 +371,46 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L144
   - legacy:devopstools_final.md#L237
   needs_review: false
+- id: dockhand
+  name: Dockhand
+  summary: Self-hosted Docker management application for containers, Compose stacks, images, volumes, networks, and multiple Docker environments.
+  official_url: https://dockhand.pro/
+  repository_url: https://github.com/Finsys/dockhand
+  repository_archived: false
+  documentation_url: https://dockhand.pro/manual/
+  categories:
+  - virtualization-bare-metal-homelab
+  subcategories:
+  - Virtualization & Containerization
+  roles:
+  - infrastructure-systems-engineer
+  - devops-engineer
+  lifecycle_stages:
+  - deploy
+  - operate
+  use_when:
+  - You want a self-hosted UI for administering one or more Docker hosts and Compose stacks with Git-based deployment support.
+  avoid_when:
+  - You require Kubernetes or Swarm orchestration, or cannot accept the Business Source License restriction on offering a competing hosted service.
+  deployment_models:
+  - self-hosted
+  - container
+  license_model: source-available
+  license_spdx: BUSL-1.1
+  commercial_offering: true
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-09-13'
+  sources:
+  - https://dockhand.pro/
+  - https://dockhand.pro/manual/
+  - https://github.com/Finsys/dockhand
+  - https://github.com/Finsys/dockhand/blob/main/LICENSE.txt
+  - legacy:4_Kubernetes-Containers/README.md#L25
+  - legacy:devopstools_final.md#L457
+  needs_review: false
 - id: dockur-macos
   name: Dockur macOS
   summary: MacOS in a Docker container.

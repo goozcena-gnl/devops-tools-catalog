@@ -61,6 +61,14 @@ def test_product_and_standalone_software_licences_stay_separate() -> None:
     assert dockhand["repository_url"] == "https://github.com/Finsys/dockhand"
     assert dockhand["license_model"] == "source-available"
     assert dockhand["license_spdx"] == "BUSL-1.1"
+    assert dockhand["categories"] == ["virtualization-bare-metal-homelab"]
+    assert "kubernetes-distributions-operations" not in dockhand["categories"]
+    assert dockhand["subcategories"] == ["Virtualization & Containerization"]
+    assert "Kubernetes Management & Operations" not in dockhand.get("subcategories", [])
+    assert set(dockhand["roles"]) == {
+        "infrastructure-systems-engineer",
+        "devops-engineer",
+    }
 
     flathub = tools["flathub"]
     assert flathub["license_model"] == "free-saas"
