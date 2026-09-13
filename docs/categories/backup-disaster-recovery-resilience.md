@@ -47,20 +47,20 @@ Bootable disk-imaging and cloning system for bare-metal backup, recovery, and ma
 
 **Categories:** Backup, disaster recovery and resilience<br>
 **Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Kubernetes backup and disaster recovery.
+Kubernetes and cloud-native data protection service with SaaS and enterprise self-hosted editions.
 
 **Use when**
 
-- You want a SaaS-managed Kubernetes backup solution with minimal operational overhead.
+- You want policy-driven Kubernetes backup, recovery, and migration with a managed control plane or an enterprise self-hosted edition.
 
 **Consider alternatives when**
 
-- You need on-prem-only, self-hosted backup or prefer open-source (Velero).
+- You require an open-source product or want to operate only the separately available Kubernetes backup components.
 
-[Official site](https://cloudcasa.io)
+[Official site](https://cloudcasa.io/) · [Documentation](https://docs.cloudcasa.io/help/guide-kubernetes-backup.html)
 
 ### Corosync
 

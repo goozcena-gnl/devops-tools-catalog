@@ -87,8 +87,9 @@
   needs_review: false
 - id: cloudsmith
   name: Cloudsmith
-  summary: Managed package and artifact repository service.
-  official_url: https://cloudsmith.com
+  summary: Managed multi-format package and artifact repository service with access controls and supply-chain features.
+  official_url: https://cloudsmith.com/
+  documentation_url: https://docs.cloudsmith.com/
   categories:
   - artifact-package-management
   subcategories:
@@ -101,24 +102,30 @@
   - build
   - release
   use_when:
-  - '* You want a fully managed, multi-format package registry with fine-grained access control.'
+  - You want a fully managed, multi-format package registry with fine-grained access control.
   avoid_when:
-  - '* You prefer self-hosted solutions or have cost constraints for large storage.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require a self-hosted registry or need to avoid a proprietary hosted control plane.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://cloudsmith.com/
+  - https://docs.cloudsmith.com/
+  - https://cloudsmith.com/pricing
   - legacy:3_CI-CD-Automation/README.md#L104
   - legacy:devopstools_final.md#L368
-  needs_review: true
+  needs_review: false
 - id: docker-hardened-images
   name: Docker Hardened Images
-  summary: Curated hardened container images catalog.
+  summary: Docker-maintained catalog of minimal, hardened container images, Helm charts, and system packages with community and paid tiers.
   official_url: https://hub.docker.com/hardened-images/catalog
+  documentation_url: https://docs.docker.com/dhi/
   categories:
   - artifact-package-management
   subcategories:
@@ -131,24 +138,31 @@
   - build
   - release
   use_when:
-  - '* You need pre-hardened base images to reduce CVE count and meet compliance.'
+  - You need Docker-maintained hardened base images with provenance, SBOMs, and low-vulnerability defaults.
   avoid_when:
-  - '* You maintain your own hardened base images or need full control over image contents.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You need unrestricted customization or compliance variants without the relevant paid DHI tier.
+  deployment_models:
+  - container-registry
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://hub.docker.com/hardened-images/catalog
+  - https://docs.docker.com/dhi/
+  - https://docs.docker.com/subscription-billing/plans/dhi/
   - legacy:3_CI-CD-Automation/README.md#L106
   - legacy:devopstools_final.md#L369
-  needs_review: true
+  needs_review: false
 - id: docker-hub
   name: Docker Hub
-  summary: Cloud-based registry for Docker images.
+  summary: Hosted container registry and discovery service for publishing, sharing, and pulling container images.
   official_url: https://www.docker.com/products/docker-hub
+  documentation_url: https://docs.docker.com/docker-hub/
   categories:
   - artifact-package-management
   subcategories:
@@ -161,20 +175,25 @@
   - build
   - release
   use_when:
-  - '* You need a public registry for open-source images or a simple private registry.'
+  - You need a widely integrated hosted registry for public images or straightforward private repositories.
   avoid_when:
-  - '* You need advanced RBAC, vulnerability scanning, or have rate-limit concerns at scale.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require a self-hosted registry or cannot accept plan-specific storage, pull, and collaboration limits.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://www.docker.com/products/docker-hub
+  - https://docs.docker.com/docker-hub/
+  - https://docs.docker.com/docker-hub/usage/
   - legacy:3_CI-CD-Automation/README.md#L108
   - legacy:devopstools_final.md#L370
-  needs_review: true
+  needs_review: false
 - id: google-artifact-registry
   name: Google Artifact Registry
   summary: Google Cloud's unified repository for container images and language packages.

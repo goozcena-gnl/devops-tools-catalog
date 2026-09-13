@@ -351,20 +351,20 @@ Deep learning optimization library for large-scale model training and inference.
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
 Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want to define, run, and share provider-agnostic AI agents through declarative YAML and Docker-oriented tooling.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a long-established agent framework or do not want a local Docker CLI plugin and runtime.
 
-[Official site](https://docker.github.io/docker-agent)
+[Official site](https://docker.github.io/docker-agent/) · [Documentation](https://docker.github.io/docker-agent/) · [Source repository](https://github.com/docker/docker-agent)
 
 ### Docker Hub MCP
 
@@ -373,17 +373,17 @@ Declarative multi-agent framework from Docker for defining AI agents, tools, and
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-MCP-related Docker images.
+Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
 
 **Use when**
 
-- You want pre-packaged, containerized MCP servers for quick deployment.
+- You want to discover Docker-packaged MCP servers through the catalog integrated into Docker Hub.
 
 **Consider alternatives when**
 
-- You need heavily customized MCP server configurations not covered by available images.
+- You need a standalone licensable product or source repository; reconcile this catalog feature separately from Docker Hub, Docker MCP Gateway, and Docker Hub MCP Server.
 
-[Official site](https://hub.docker.com/mcp)
+[Official site](https://hub.docker.com/mcp) · [Documentation](https://docs.docker.com/ai/mcp-catalog-and-toolkit/)
 
 ### Docker MCP Gateway
 

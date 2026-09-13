@@ -31,7 +31,7 @@
 - [Combodo (iTop)](https://combodo.com) — ITSM/CMDB platform; Combodo-backed iTop ecosystem with commercial extensions and support.
 - [Coroot](https://coroot.com) — Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
 - [Cortex](https://cortexmetrics.io) — Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus and OpenTelemetry metrics (CNCF Incubating).
-- [Datadog](https://github.com/DataDog) — Full-stack cloud monitoring, log management, and APM.
+- [Datadog](https://www.datadoghq.com/product/) — Commercial hosted observability and security platform spanning infrastructure monitoring, logs, traces, application performance, and cloud services.
 - [DeepEval](https://deepeval.com/) — Local-first framework for evaluating and regression-testing LLM applications, agents, RAG pipelines, and MCP systems.
 - [dnsglobe](https://github.com/514-labs/dnsglobe) — Terminal UI for tracking global DNS propagation across public resolvers.
 - [Docker OpenTelemetry LGTM](https://github.com/grafana/docker-otel-lgtm) — Single-container OpenTelemetry backend bundling Grafana, Loki, Tempo, Mimir, and an OpenTelemetry Collector for development and demos.

@@ -993,8 +993,8 @@
   needs_review: false
 - id: codiga
   name: Codiga
-  summary: Automated code analysis and security.
-  official_url: https://github.com/codiga
+  summary: Discontinued static code analysis and coding-assistant service whose technology was integrated into Datadog Code Analysis.
+  official_url: https://www.codiga.io/blog/codiga-joins-datadog/
   categories:
   - application-cloud-security
   subcategories:
@@ -1006,20 +1006,25 @@
   - test
   - secure
   use_when:
-  - Real-time code review with IDE integration.
+  - You are maintaining historical references or migration records for the former Codiga service.
   avoid_when:
-  - You need a full SAST platform with compliance dashboards.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You are selecting a supported tool for new adoption; all Codiga products shut down on 2023-05-04 and the analyzer continued as Datadog Code Analysis.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: historical
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://www.codiga.io/blog/codiga-joins-datadog/
+  - https://www.datadoghq.com/blog/datadog-acquires-codiga/
+  - https://www.datadoghq.com/blog/engineering/how-we-migrated-our-static-analyzer-from-java-to-rust/
   - legacy:6_Security/README.md#L16
   - legacy:devopstools_final.md#L851
-  needs_review: true
+  needs_review: false
 - id: conftest
   name: Conftest
   summary: Test configuration files using OPA/Rego.
@@ -1350,8 +1355,9 @@
   needs_review: true
 - id: digicert
   name: DigiCert
-  summary: Digital certificates and SSL solutions.
-  official_url: https://github.com/digicert
+  summary: Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing, device trust, and related product families.
+  official_url: https://www.digicert.com/
+  documentation_url: https://docs.digicert.com/en/platform-overview.html
   categories:
   - application-cloud-security
   subcategories:
@@ -1363,17 +1369,20 @@
   - test
   - secure
   use_when:
-  - You need EV/OV certificates with enterprise PKI management.
+  - You are comparing DigiCert's enterprise certificate, PKI, signing, or digital-trust product families.
   avoid_when:
-  - For internal or dev certs (use Let's Encrypt or mkcert).
+  - You need one precise adoption and licensing boundary; reconcile this vendor-level record against DigiCert ONE, CertCentral, and related products first.
   deployment_models: []
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://www.digicert.com/
+  - https://docs.digicert.com/en/platform-overview.html
+  - https://docs.digicert.com/en/platform-overview/understand-your-licenses.html
   - legacy:6_Security/README.md#L67
   - legacy:devopstools_final.md#L936
   needs_review: true

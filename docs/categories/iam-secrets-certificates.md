@@ -178,43 +178,24 @@ Certificate management automation.
 
 [Official site](https://www.certmate.org) · [Source repository](https://github.com/usual2970/certmate)
 
-### Cosmian KMS
-
-**Categories:** IAM, secrets and certificate management<br>
-**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Key management service.
-
-**Use when**
-
-- You need privacy-enhancing cryptography (FHE, attribute-based encryption).
-
-**Consider alternatives when**
-
-- For standard key management needs.
-
-[Official site](https://cosmian.com/data-protection-suite/cosmian-kms)
-
 ### Descope
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a managed customer identity platform with visual authentication flows, SDKs, passkeys, MFA, and enterprise federation.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a fully open-source identity platform or need to operate the core control plane yourself.
 
-[Official site](https://www.descope.com)
+[Official site](https://www.descope.com/) · [Documentation](https://docs.descope.com/)
 
 ### Dex
 
@@ -272,6 +253,25 @@ Key management for enterprise.
 - For cloud-native workloads where native KMS services suffice.
 
 [Official site](https://www.entrust.com/products/key-management/keycontrol)
+
+### Eviden KMS
+
+**Categories:** IAM, secrets and certificate management<br>
+**Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Source Available<br>
+**Status:** Active
+
+Source-available key management server for KMIP, cloud key management, and privacy-enhancing cryptographic workflows, formerly Cosmian KMS.
+
+**Use when**
+
+- You need a deployable KMIP server with cloud key-management integrations and advanced cryptographic capabilities.
+
+**Consider alternatives when**
+
+- You need unrestricted open-source terms; production use beyond the Business Source License grant requires a commercial licence.
+
+[Official site](https://github.com/Cosmian/kms) · [Documentation](https://docs.cosmian.com/key_management_system/) · [Source repository](https://github.com/Cosmian/kms)
 
 ### External Secrets Operator
 

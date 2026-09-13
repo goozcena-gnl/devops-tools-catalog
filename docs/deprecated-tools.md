@@ -7,6 +7,7 @@ Records remain here for migration and historical context; they are not active re
 - **Bamboo** (deprecated) — Atlassian's commercially licensed, self-managed CI/CD server for build and deployment automation.
 - **CAI (RobotSec)** (archived) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
 - **CDKTF** (archived) — Archived framework for defining Terraform infrastructure with general-purpose programming languages.
+- **Codiga** (historical) — Discontinued static code analysis and coding-assistant service whose technology was integrated into Datadog Code Analysis.
 - **Datree** (archived) — Kubernetes policy enforcement tool.
 - **Grafana OnCall OSS** (archived) — Archived open-source on-call management and incident-response system whose active development continues in the commercial Grafana Cloud IRM service.
 - **Kaniko** (archived) — Build container images in Kubernetes without Docker daemon.

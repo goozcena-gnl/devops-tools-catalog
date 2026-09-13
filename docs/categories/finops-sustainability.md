@@ -85,20 +85,20 @@ Hybrid and multi-cloud operations platform for governed provisioning, orchestrat
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Multi-cloud FinOps and governance platform for cost reporting, optimization, and policy control.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need centralized multi-cloud cost visibility, optimization, governance, and policy management as a managed FinOps service.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a self-hosted FinOps control plane or an open-source cost-management product.
 
-[Official site](https://www.broadcom.com/products/software/finops/cloudhealth)
+[Official site](https://www.broadcom.com/products/software/finops/cloudhealth) · [Documentation](https://knowledge.broadcom.com/external/article/283543/status-page-user-guide.html)
 
 ### CloudZero
 

@@ -148,6 +148,7 @@
   name: CloudHealth
   summary: Multi-cloud FinOps and governance platform for cost reporting, optimization, and policy control.
   official_url: https://www.broadcom.com/products/software/finops/cloudhealth
+  documentation_url: https://knowledge.broadcom.com/external/article/283543/status-page-user-guide.html
   categories:
   - finops-sustainability
   subcategories:
@@ -158,18 +159,25 @@
   - finops-engineer
   lifecycle_stages:
   - optimize
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need centralized multi-cloud cost visibility, optimization, governance, and policy management as a managed FinOps service.
+  avoid_when:
+  - You need a self-hosted FinOps control plane or an open-source cost-management product.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://www.broadcom.com/products/software/finops/cloudhealth
+  - https://knowledge.broadcom.com/external/article/283543/status-page-user-guide.html
+  - https://knowledge.broadcom.com/external/article/393714/cloudhealth-new-experience-beta-support.html
   - legacy:devopstools_final.md#L790
-  needs_review: true
+  needs_review: false
 - id: cloudzero
   name: CloudZero
   summary: Cloud cost intelligence.

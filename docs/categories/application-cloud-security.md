@@ -719,20 +719,20 @@ Semantic code analysis for vulnerabilities.
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Historical
 
-Automated code analysis and security.
+Discontinued static code analysis and coding-assistant service whose technology was integrated into Datadog Code Analysis.
 
 **Use when**
 
-- Real-time code review with IDE integration.
+- You are maintaining historical references or migration records for the former Codiga service.
 
 **Consider alternatives when**
 
-- You need a full SAST platform with compliance dashboards.
+- You are selecting a supported tool for new adoption; all Codiga products shut down on 2023-05-04 and the analyzer continued as Datadog Code Analysis.
 
-[Official site](https://github.com/codiga)
+[Official site](https://www.codiga.io/blog/codiga-joins-datadog/)
 
 ### Conftest
 
@@ -969,17 +969,17 @@ Secrets detection with baseline support (reduce false positives).
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Digital certificates and SSL solutions.
+Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing, device trust, and related product families.
 
 **Use when**
 
-- You need EV/OV certificates with enterprise PKI management.
+- You are comparing DigiCert's enterprise certificate, PKI, signing, or digital-trust product families.
 
 **Consider alternatives when**
 
-- For internal or dev certs (use Let's Encrypt or mkcert).
+- You need one precise adoption and licensing boundary; reconcile this vendor-level record against DigiCert ONE, CertCentral, and related products first.
 
-[Official site](https://github.com/digicert)
+[Official site](https://www.digicert.com/) · [Documentation](https://docs.digicert.com/en/platform-overview.html)
 
 ### docker-socket-proxy
 

@@ -85,20 +85,20 @@ Workflow and process automation (BPMN/DMN).
 
 **Categories:** Workflow automation and ChatOps<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 AI-powered team knowledge base and collaboration workspace by Atlassian.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need an established collaborative knowledge workspace integrated with Atlassian's project and service-management products.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a new perpetual self-managed deployment; Confluence Data Center is in transition toward its announced 2029 end of life.
 
-[Official site](https://www.atlassian.com/software/confluence)
+[Official site](https://www.atlassian.com/software/confluence) · [Documentation](https://support.atlassian.com/confluence-cloud/)
 
 ### Gotify
 

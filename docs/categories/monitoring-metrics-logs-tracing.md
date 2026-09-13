@@ -448,20 +448,20 @@ Horizontally scalable, highly available, multi-tenant, long-term storage for Pro
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Full-stack cloud monitoring, log management, and APM.
+Commercial hosted observability and security platform spanning infrastructure monitoring, logs, traces, application performance, and cloud services.
 
 **Use when**
 
-- You want a single pane of glass with minimal ops overhead.
+- You want an integrated managed platform for infrastructure, application, log, trace, and cloud-service telemetry.
 
 **Consider alternatives when**
 
-- Budget is tight—costs scale steeply with data volume.
+- You require a self-hosted observability control plane or cannot accommodate usage-based commercial pricing.
 
-[Official site](https://github.com/DataDog)
+[Official site](https://www.datadoghq.com/product/) · [Documentation](https://docs.datadoghq.com/)
 
 ### Docker OpenTelemetry LGTM
 

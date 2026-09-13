@@ -49,11 +49,10 @@
 - [CloudFox](https://github.com/BishopFox/cloudfox) — Cloud environment situational-awareness utility for authorized AWS, Azure, and GCP security assessments.
 - [Codacy](https://www.codacy.com/) — Hosted code quality and security analysis platform that integrates findings and coverage into repository workflows.
 - [CodeQL](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql) — Semantic code analysis for vulnerabilities.
-- [Codiga](https://github.com/codiga) — Automated code analysis and security.
+- [Codiga](https://www.codiga.io/blog/codiga-joins-datadog/) — Discontinued static code analysis and coding-assistant service whose technology was integrated into Datadog Code Analysis.
 - [Conftest](https://www.conftest.dev) — Test configuration files using OPA/Rego.
 - [copy-fail-destroyer](https://github.com/NorskHelsenett/copy-fail-destroyer) — Kubernetes DaemonSet that detects and remediates Linux kernel page-cache write vulnerabilities (Copy Fail / Dirty Frag) and exposes Prometheus metrics.
 - [Coraza](https://coraza.io) — ModSecurity-compatible WAF library.
-- [Cosmian KMS](https://cosmian.com/data-protection-suite/cosmian-kms) — Key management service.
 - [CrowdSec](https://www.crowdsec.net) — Collaborative intrusion prevention/behavior detection engine.
 - [CVEMap](https://github.com/projectdiscovery/cvemap) — CVE mapping and analysis tool.
 - [CyberChef](https://gchq.github.io/CyberChef/) — Browser-based toolkit for defensively decoding, transforming, and analyzing data without sending it to a server.
@@ -62,10 +61,10 @@
 - [DefectDojo](https://www.defectdojo.com/) — Application security posture and vulnerability-management platform that ingests findings from many scanners.
 - [Dependency-Track](https://dependencytrack.org) — OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
 - [DependencyCheck](https://owasp.org/projects/dependency-check) — Identify vulnerable dependencies.
-- [Descope](https://www.descope.com) — Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
+- [Descope](https://www.descope.com/) — Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
 - [detect-secrets](https://github.com/Yelp/detect-secrets) — Secrets detection with baseline support (reduce false positives).
 - [Dex](https://dexidp.io) — OpenID Connect identity provider for Kubernetes and beyond.
-- [DigiCert](https://github.com/digicert) — Digital certificates and SSL solutions.
+- [DigiCert](https://www.digicert.com/) — Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing, device trust, and related product families.
 - [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) — Proxy that restricts access to the Docker socket API.
 - [Dockle](https://containers.goodwith.tech) — Container image linter for security best practices.
 - [Doppler](https://www.doppler.com) — Universal secrets management platform.
@@ -73,6 +72,7 @@
 - [Drata](https://drata.com) — Security and compliance automation platform.
 - [Duo Security](https://duo.com) — Multi-factor authentication and access security.
 - [Entrust KeyControl](https://www.entrust.com/products/key-management/keycontrol) — Key management for enterprise.
+- [Eviden KMS](https://github.com/Cosmian/kms) — Source-available key management server for KMIP, cloud key management, and privacy-enhancing cryptographic workflows, formerly Cosmian KMS.
 - [External Secrets Operator](https://external-secrets.io/main) — Sync external secrets into Kubernetes.
 - [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) — Commercial WAF for NGINX.
 - [fail2ban](https://github.com/fail2ban/fail2ban) — Intrusion prevention by monitoring logs and banning abusive IPs (e.g., SSH).

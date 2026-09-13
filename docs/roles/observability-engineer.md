@@ -29,7 +29,7 @@
 | [Combodo (iTop)](https://combodo.com) | SRE, incident response and on-call | open-core | needs-review |
 | [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Datadog](https://github.com/DataDog) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Datadog](https://www.datadoghq.com/product/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [dnsglobe](https://github.com/514-labs/dnsglobe) | SRE, incident response and on-call | oss | needs-review |
 | [Docker OpenTelemetry LGTM](https://github.com/grafana/docker-otel-lgtm) | Monitoring, metrics, logs and tracing, Developer experience and local environments | oss | active |
 | [Dozzle](https://dozzle.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |

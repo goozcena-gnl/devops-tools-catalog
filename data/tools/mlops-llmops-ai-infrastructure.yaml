@@ -588,7 +588,10 @@
   name: Docker Agent
   summary: Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration
     flows with YAML-based configuration.
-  official_url: https://docker.github.io/docker-agent
+  official_url: https://docker.github.io/docker-agent/
+  repository_url: https://github.com/docker/docker-agent
+  repository_archived: false
+  documentation_url: https://docker.github.io/docker-agent/
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -601,22 +604,31 @@
   - build
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want to define, run, and share provider-agnostic AI agents through declarative YAML and Docker-oriented tooling.
+  avoid_when:
+  - You require a long-established agent framework or do not want a local Docker CLI plugin and runtime.
+  deployment_models:
+  - local-cli
+  - container
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://github.com/docker/docker-agent
+  - https://github.com/docker/docker-agent/blob/main/LICENSE
+  - https://docker.github.io/docker-agent/
   - legacy:devopstools_final.md#L1235
-  needs_review: true
+  needs_review: false
 - id: docker-hub-mcp
   name: Docker Hub MCP
-  summary: MCP-related Docker images.
+  summary: Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
   official_url: https://hub.docker.com/mcp
+  documentation_url: https://docs.docker.com/ai/mcp-catalog-and-toolkit/
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -630,17 +642,20 @@
   - deploy
   - operate
   use_when:
-  - You want pre-packaged, containerized MCP servers for quick deployment.
+  - You want to discover Docker-packaged MCP servers through the catalog integrated into Docker Hub.
   avoid_when:
-  - You need heavily customized MCP server configurations not covered by available images.
+  - You need a standalone licensable product or source repository; reconcile this catalog feature separately from Docker Hub, Docker MCP Gateway, and Docker Hub MCP Server.
   deployment_models: []
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://hub.docker.com/mcp
+  - https://docs.docker.com/ai/mcp-catalog-and-toolkit/
+  - https://docs.docker.com/docker-hub/image-library/catalogs/
   - legacy:9_AI-MLOps/README.md#L48
   - legacy:devopstools_final.md#L1216
   needs_review: true

@@ -120,7 +120,7 @@
 - [ClickHouse](https://clickhouse.com) — Columnar database commonly used as an observability backend.
 - [ClickStack](https://clickhouse.com/clickstack) — Open-source observability stack for logs, metrics, traces, and session data built on ClickHouse and HyperDX.
 - [Clonezilla](https://clonezilla.org/) — Bootable disk-imaging and cloning system for bare-metal backup, recovery, and machine deployment.
-- [CloudCasa](https://cloudcasa.io) — Kubernetes backup and disaster recovery.
+- [CloudCasa](https://cloudcasa.io/) — Kubernetes and cloud-native data protection service with SaaS and enterprise self-hosted editions.
 - [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) — Cloudflare gateway for Kubernetes clusters.
 - [CloudFuze](https://www.cloudfuze.com) — Cloud file transfer and management.
 - [Cloudify](https://cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
@@ -134,7 +134,7 @@
 - [Compute Gardener](https://www.compute-gardener.com) — Carbon-aware Kubernetes scheduler for sustainable computing.
 - [Concierto Cloud](https://www.concierto.cloud) — Cloud management platform.
 - [Confidential Containers](https://confidentialcontainers.org) — CNCF project for running Kubernetes pods inside hardware-backed Trusted Execution Environments (TEEs).
-- [ConfigHub](https://www.confighub.com) — Configuration management platform for distributed applications.
+- [ConfigHub](https://www.confighub.com/) — Preview-stage commercial configuration control plane for modeling, governing, and reconciling distributed system configuration.
 - [Confluence](https://www.atlassian.com/software/confluence) — AI-powered team knowledge base and collaboration workspace by Atlassian.
 - [containerd](https://containerd.io) — Industry-standard container runtime focused on simplicity, portability, and robust Kubernetes integration.
 - [Containerized Data Importer](https://github.com/kubevirt/containerized-data-importer) — Kubernetes service for importing, cloning, and uploading virtual-machine disk images into persistent volumes for KubeVirt.
@@ -143,7 +143,6 @@
 - [Coroot](https://coroot.com) — Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
 - [Corosync](https://corosync.github.io/corosync/) — Cluster communication engine providing membership, quorum, and group communication services for high-availability systems.
 - [Cortex](https://cortexmetrics.io) — Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus and OpenTelemetry metrics (CNCF Incubating).
-- [Cosmian KMS](https://cosmian.com/data-protection-suite/cosmian-kms) — Key management service.
 - [CRI-O](https://cri-o.io) — Lightweight Kubernetes CRI implementation for running OCI-compatible container runtimes.
 - [CRIU](https://criu.org/Main_Page) — Checkpoint/Restore In Userspace for Linux containers and processes.
 - [CronJob Guardian](https://illeniumstudios.github.io/cronjob-guardian) — Kubernetes operator for monitoring CronJobs with SLA tracking, dead-man's switch detection, intelligent alerting, and a built-in dashboard.
@@ -155,21 +154,21 @@
 - [ctop](https://ctop.sh) — Container metrics viewer (top-like).
 - [curl](https://curl.se) — Command-line client and transfer library for working with URL-based network protocols.
 - [Dapr](https://dapr.io) — Distributed application runtime for microservices.
-- [Datadog](https://github.com/DataDog) — Full-stack cloud monitoring, log management, and APM.
+- [Datadog](https://www.datadoghq.com/product/) — Commercial hosted observability and security platform spanning infrastructure monitoring, logs, traces, application performance, and cloud services.
 - [Datree](https://github.com/datreeio/datree) — Kubernetes policy enforcement tool.
 - [DC/OS](https://dcos.io) — Open-source datacenter operating system built on Apache Mesos for running containers and distributed services.
 - [Debian](https://www.debian.org/) — Community-maintained operating-system distribution used for servers, cloud systems, and workstations.
 - [Deep Agents](https://github.com/langchain-ai/deepagents) — Agent harness with tool execution, context management, persistence, and sandbox integration built on LangGraph.
 - [DeepSpeed](https://www.deepspeed.ai) — Deep learning optimization library for large-scale model training and inference.
 - [Descheduler](https://github.com/kubernetes-sigs/descheduler) — Rebalance pods in Kubernetes clusters.
-- [Descope](https://www.descope.com) — Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
+- [Descope](https://www.descope.com/) — Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
 - [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) — Tooling to run Kubernetes locally on the desktop.
 - [Dex](https://dexidp.io) — OpenID Connect identity provider for Kubernetes and beyond.
 - [DigitalOcean](https://www.digitalocean.com) — Developer-friendly cloud infrastructure provider.
 - [dnsglobe](https://github.com/514-labs/dnsglobe) — Terminal UI for tracking global DNS propagation across public resolvers.
-- [Docker Agent](https://docker.github.io/docker-agent) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
-- [Docker Desktop](https://www.docker.com/products/docker-desktop) — Desktop Docker environment.
-- [Docker Hub MCP](https://hub.docker.com/mcp) — MCP-related Docker images.
+- [Docker Agent](https://docker.github.io/docker-agent/) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) — Proprietary desktop application bundling Docker container, image, Kubernetes, and developer tooling for macOS, Windows, and Linux.
+- [Docker Hub MCP](https://hub.docker.com/mcp) — Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
 - [Docker MCP Gateway](https://github.com/docker/mcp-gateway) — Docker CLI plugin and gateway for discovering, running, and routing MCP servers in containers.
 - [Docker Swarm](https://docs.docker.com/engine/swarm) — Container orchestration system by Docker.
 - [Dockhand](https://dockhand.pro) — Kubernetes deployment and management tool.
@@ -198,6 +197,7 @@
 - [etcd](https://etcd.io) — Distributed, reliable key-value store used as the primary data store for Kubernetes.
 - [etckeeper](https://etckeeper.branchable.com) — Version control for `/etc` (tracks config changes in Git).
 - [Eureka](https://github.com/Netflix/eureka) — Service registry supporting client-side discovery and failover.
+- [Eviden KMS](https://github.com/Cosmian/kms) — Source-available key management server for KMIP, cloud key management, and privacy-enhancing cryptographic workflows, formerly Cosmian KMS.
 - [Evidently](https://github.com/evidentlyai/evidently) — Open-source evaluation and monitoring framework for ML and AI systems.
 - [Exercism](https://exercism.org) — Language practice tracks across many programming languages.
 - [Exoscale SKS](https://www.exoscale.com/sks/) — Exoscale managed Kubernetes service with managed control planes and cloud infrastructure integration.

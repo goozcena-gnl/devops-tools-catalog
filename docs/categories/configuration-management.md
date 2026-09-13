@@ -104,20 +104,20 @@ Commercially distributed infrastructure configuration-management tooling with se
 
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Configuration management platform for distributed applications.
+Preview-stage commercial configuration control plane for modeling, governing, and reconciling distributed system configuration.
 
 **Use when**
 
-- You need centralized, context-aware config management across environments.
+- You want to evaluate a centralized configuration control plane across application and infrastructure systems.
 
 **Consider alternatives when**
 
-- A simple secrets manager or feature-flag service suffices.
+- You require a generally available production service, or you are looking for the unrelated ConfigHub LLC project that shut down in 2018.
 
-[Official site](https://www.confighub.com)
+[Official site](https://www.confighub.com/) · [Documentation](https://www.confighub.com/faq)
 
 ### etckeeper
 

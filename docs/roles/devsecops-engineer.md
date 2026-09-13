@@ -47,14 +47,13 @@
 | [Cisco Talos Intelligence](https://www.talosintelligence.com) | Application and cloud security | documentation | needs-review |
 | [ClamAV](https://www.clamav.net/) | Application and cloud security | oss | active |
 | [CloudFox](https://github.com/BishopFox/cloudfox) | Application and cloud security | oss | active |
-| [Cloudsmith](https://cloudsmith.com) | Artifact and package management | unknown | needs-review |
+| [Cloudsmith](https://cloudsmith.com/) | Artifact and package management | commercial | active |
 | [Codacy](https://www.codacy.com/) | CI, build and testing, Application and cloud security | commercial | active |
 | [CodeQL](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql) | Application and cloud security | oss | active |
-| [Codiga](https://github.com/codiga) | Application and cloud security | unknown | needs-review |
+| [Codiga](https://www.codiga.io/blog/codiga-joins-datadog/) | Application and cloud security | commercial | historical |
 | [Conftest](https://www.conftest.dev) | Application and cloud security | oss | active |
 | [copy-fail-destroyer](https://github.com/NorskHelsenett/copy-fail-destroyer) | Application and cloud security | oss | needs-review |
 | [Coraza](https://coraza.io) | Application and cloud security | oss | active |
-| [Cosmian KMS](https://cosmian.com/data-protection-suite/cosmian-kms) | IAM, secrets and certificate management | unknown | needs-review |
 | [CrowdSec](https://www.crowdsec.net) | Application and cloud security | open-core | active |
 | [CVEMap](https://github.com/projectdiscovery/cvemap) | Application and cloud security | oss | needs-review |
 | [CyberChef](https://gchq.github.io/CyberChef/) | Application and cloud security | oss | active |
@@ -63,12 +62,12 @@
 | [DefectDojo](https://www.defectdojo.com/) | Application and cloud security | open-core | active |
 | [Dependency-Track](https://dependencytrack.org) | Software supply-chain security, Application and cloud security | oss | active |
 | [DependencyCheck](https://owasp.org/projects/dependency-check) | Application and cloud security | oss | active |
-| [Descope](https://www.descope.com) | IAM, secrets and certificate management | unknown | needs-review |
+| [Descope](https://www.descope.com/) | IAM, secrets and certificate management | commercial | active |
 | [detect-secrets](https://github.com/Yelp/detect-secrets) | Application and cloud security | oss | needs-review |
 | [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | needs-review |
-| [DigiCert](https://github.com/digicert) | Application and cloud security | unknown | needs-review |
-| [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | unknown | needs-review |
-| [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | unknown | needs-review |
+| [DigiCert](https://www.digicert.com/) | Application and cloud security | unknown | needs-review |
+| [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | open-core | active |
+| [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | commercial | active |
 | [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) | Application and cloud security | oss | needs-review |
 | [Dockle](https://containers.goodwith.tech) | Application and cloud security | oss | active |
 | [Doppler](https://www.doppler.com) | IAM, secrets and certificate management | unknown | needs-review |
@@ -76,6 +75,7 @@
 | [Drata](https://drata.com) | Application and cloud security | unknown | needs-review |
 | [Duo Security](https://duo.com) | Application and cloud security | unknown | needs-review |
 | [Entrust KeyControl](https://www.entrust.com/products/key-management/keycontrol) | IAM, secrets and certificate management | unknown | needs-review |
+| [Eviden KMS](https://github.com/Cosmian/kms) | IAM, secrets and certificate management | source-available | active |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
 | [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) | Application and cloud security | unknown | needs-review |
 | [fail2ban](https://github.com/fail2ban/fail2ban) | Application and cloud security | oss | needs-review |

@@ -9,7 +9,7 @@
 | [Ballast](https://github.com/Tight-Line/ballast) | FinOps and sustainability, Emerging and experimental tools | oss | active |
 | [Cast AI](https://cast.ai) | FinOps and sustainability | commercial | active |
 | [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | commercial | active |
-| [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) | FinOps and sustainability | unknown | needs-review |
+| [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) | FinOps and sustainability | commercial | active |
 | [CloudZero](https://www.cloudzero.com) | FinOps and sustainability | commercial | active |
 | [CruiseKube](https://cruisekube.com/) | FinOps and sustainability, Emerging and experimental tools | source-available | active |
 | [Dash0](https://www.dash0.com) | FinOps and sustainability | commercial | active |

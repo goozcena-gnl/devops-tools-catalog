@@ -256,20 +256,20 @@ Container metrics viewer (top-like).
 
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Desktop Docker environment.
+Proprietary desktop application bundling Docker container, image, Kubernetes, and developer tooling for macOS, Windows, and Linux.
 
 **Use when**
 
-- You want a batteries-included Docker experience on Mac/Windows with GUI.
+- You want a supported, batteries-included local Docker environment with desktop management and integrated developer tools.
 
 **Consider alternatives when**
 
-- Licensing costs are a concern for large teams or you prefer open-source alternatives.
+- Your organization requires a paid subscription but cannot accept Docker's commercial terms, or a headless engine is sufficient.
 
-[Official site](https://www.docker.com/products/docker-desktop)
+[Official site](https://www.docker.com/products/docker-desktop) · [Documentation](https://docs.docker.com/desktop/)
 
 ### Dockur macOS
 

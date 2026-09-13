@@ -23,7 +23,7 @@
 | [Deep Agents](https://github.com/langchain-ai/deepagents) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [DeepEval](https://deepeval.com/) | MLOps, LLMOps and AI infrastructure, CI, build and testing | open-core | active |
 | [DeepSpeed](https://www.deepspeed.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Docker Agent](https://docker.github.io/docker-agent) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Docker Agent](https://docker.github.io/docker-agent/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Docker Hub MCP](https://hub.docker.com/mcp) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Docker MCP Gateway](https://github.com/docker/mcp-gateway) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Docling](https://docling.ai/) | MLOps, LLMOps and AI infrastructure | oss | active |

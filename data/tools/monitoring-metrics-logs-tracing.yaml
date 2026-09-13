@@ -760,8 +760,9 @@
   needs_review: true
 - id: datadog
   name: Datadog
-  summary: Full-stack cloud monitoring, log management, and APM.
-  official_url: https://github.com/DataDog
+  summary: Commercial hosted observability and security platform spanning infrastructure monitoring, logs, traces, application performance, and cloud services.
+  official_url: https://www.datadoghq.com/product/
+  documentation_url: https://docs.datadoghq.com/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -774,20 +775,26 @@
   - operate
   - monitor
   use_when:
-  - You want a single pane of glass with minimal ops overhead.
+  - You want an integrated managed platform for infrastructure, application, log, trace, and cloud-service telemetry.
   avoid_when:
-  - Budget is tight—costs scale steeply with data volume.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require a self-hosted observability control plane or cannot accommodate usage-based commercial pricing.
+  deployment_models:
+  - hosted-saas
+  - endpoint-agent
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://www.datadoghq.com/product/
+  - https://docs.datadoghq.com/
+  - https://www.datadoghq.com/pricing/
   - legacy:5_Monitoring-Observability/README.md#L10
   - legacy:devopstools_final.md#L702
-  needs_review: true
+  needs_review: false
 - id: docker-otel-lgtm
   name: Docker OpenTelemetry LGTM
   summary: Single-container OpenTelemetry backend bundling Grafana, Loki, Tempo, Mimir, and an OpenTelemetry
