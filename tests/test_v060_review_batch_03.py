@@ -57,6 +57,6 @@ def test_eviden_kms_preserves_source_available_product_boundary() -> None:
     assert kms["name"] == "Eviden KMS"
     assert kms["repository_url"] == "https://github.com/Cosmian/kms"
     assert kms["license_model"] == "source-available"
-    assert "license_spdx" not in kms
+    assert kms["license_spdx"] == "BUSL-1.1"
     assert kms["commercial_offering"] is True
     assert kms["needs_review"] is False

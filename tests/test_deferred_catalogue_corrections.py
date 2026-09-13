@@ -175,6 +175,7 @@ def test_n1a_supersession_is_exact_and_does_not_weaken_other_guards() -> None:
         ("cosmian-kms", "repository_url"),
         ("cosmian-kms", "official_url"),
         ("cosmian-kms", "license_model"),
+        ("cosmian-kms", "license_spdx"),
         ("cosmian-kms", "status"),
         ("cosmian-kms", "needs_review"),
         ("mcp-server-kubernetes", "repository_url"),

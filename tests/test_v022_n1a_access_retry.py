@@ -104,6 +104,7 @@ N1A_CURRENT_STATE_SUPERSESSIONS = {
     ("cosmian-kms", "repository_url"),
     ("cosmian-kms", "official_url"),
     ("cosmian-kms", "license_model"),
+    ("cosmian-kms", "license_spdx"),
     ("cosmian-kms", "status"),
     ("cosmian-kms", "needs_review"),
     ("mcp-server-kubernetes", "repository_url"),
