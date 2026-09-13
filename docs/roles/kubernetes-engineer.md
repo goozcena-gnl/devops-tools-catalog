@@ -9,11 +9,14 @@
 | [Agones](https://agones.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | commercial | active |
+| [Amazon ECS](https://aws.amazon.com/ecs/) | Kubernetes distributions and operations | commercial | active |
+| [Amazon EKS](https://aws.amazon.com/eks/) | Kubernetes distributions and operations | commercial | active |
 | [Ansible kubernetes.core collection](https://github.com/ansible-collections/kubernetes.core) | Configuration management, Kubernetes distributions and operations | oss | active |
 | [Antrea](https://antrea.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Aralez](https://aralez.rs) | Kubernetes networking, storage and add-ons | oss | active |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
 | [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [AWS Fargate](https://aws.amazon.com/fargate/) | Kubernetes distributions and operations | commercial | active |
 | [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Ballast](https://github.com/Tight-Line/ballast) | FinOps and sustainability, Emerging and experimental tools | oss | active |
 | [Bazel](https://bazel.build) | Containers and image tooling | oss | needs-review |
@@ -57,13 +60,11 @@
 | [Docker Buildx](https://github.com/docker/buildx) | Containers and image tooling | oss | needs-review |
 | [Docker Offload](https://www.docker.com/products/docker-offload) | Containers and image tooling | commercial | active |
 | [Docker Swarm](https://docs.docker.com/engine/swarm) | Kubernetes distributions and operations | unknown | needs-review |
-| [Dockhand](https://dockhand.pro) | Kubernetes distributions and operations | unknown | needs-review |
+| [Dockhand](https://dockhand.pro/) | Kubernetes distributions and operations | source-available | active |
 | [dotnet-operator-sdk](https://dotnet.github.io/dotnet-operator-sdk) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Earthly](https://earthly.dev) | Containers and image tooling | oss | needs-review |
 | [Easykube](https://torloejborg.github.io/easykube/easykube/latest) | Kubernetes distributions and operations | oss | needs-review |
 | [EasyMile PostgreSQL Operator](https://easymile.github.io/postgresql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [ECS](https://aws.amazon.com/ecs) | Kubernetes distributions and operations | unknown | needs-review |
-| [EKS](https://aws.amazon.com/eks) | Kubernetes distributions and operations | unknown | needs-review |
 | [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) | Kubernetes distributions and operations | oss | needs-review |
 | [Elemental](https://elemental.docs.rancher.com/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
 | [Envoy](https://www.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | active |
@@ -72,7 +73,6 @@
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
 | [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
-| [Fargate](https://aws.amazon.com/fargate) | Kubernetes distributions and operations | unknown | needs-review |
 | [flannel](https://github.com/flannel-io/flannel) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Forecastle](https://github.com/stakater/Forecastle) | Kubernetes distributions and operations | oss | needs-review |
 | [FreeLens](https://freelensapp.github.io) | Kubernetes distributions and operations | oss | active |

@@ -14,6 +14,8 @@
 | [AITMPL Agents](https://www.aitmpl.com/agents) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Akka.NET](https://getakka.net) | Emerging and experimental tools | oss | needs-review |
 | [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | commercial | active |
+| [Amazon ECS](https://aws.amazon.com/ecs/) | Kubernetes distributions and operations | commercial | active |
+| [Amazon EKS](https://aws.amazon.com/eks/) | Kubernetes distributions and operations | commercial | active |
 | [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Antrea](https://antrea.io/) | Kubernetes networking, storage and add-ons | oss | active |
@@ -40,6 +42,7 @@
 | [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | active |
 | [AWS Cloud Quest Practitioner](https://skillbuilder.aws/learn/FU5WCYVGKY/aws-cloud-quest-cloud-practitioner/learn) | Documentation, learning and career resources | documentation | needs-review |
 | [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
+| [AWS Fargate](https://aws.amazon.com/fargate/) | Kubernetes distributions and operations | commercial | active |
 | [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | commercial | active |
 | [AWS MCP](https://awslabs.github.io/mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AWS Skill Builder](https://skillbuilder.aws) | Documentation, learning and career resources | documentation | needs-review |
@@ -153,7 +156,7 @@
 | [Docker MCP Gateway](https://github.com/docker/mcp-gateway) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Docker Offload](https://www.docker.com/products/docker-offload) | Containers and image tooling | commercial | active |
 | [Docker Swarm](https://docs.docker.com/engine/swarm) | Kubernetes distributions and operations | unknown | needs-review |
-| [Dockhand](https://dockhand.pro) | Kubernetes distributions and operations | unknown | needs-review |
+| [Dockhand](https://dockhand.pro/) | Kubernetes distributions and operations | source-available | active |
 | [Docmost](https://docmost.com/) | Documentation, learning and career resources | open-core | active |
 | [Dokku](https://dokku.com) | CD, GitOps, release and promotion | oss | active |
 | [Dokploy](https://dokploy.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | open-core | active |
@@ -164,25 +167,22 @@
 | [Easykube](https://torloejborg.github.io/easykube/easykube/latest) | Kubernetes distributions and operations | oss | needs-review |
 | [EasyMile PostgreSQL Operator](https://easymile.github.io/postgresql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [ecc.tools](https://ecc.tools) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [ECS](https://aws.amazon.com/ecs) | Kubernetes distributions and operations | unknown | needs-review |
-| [EKS](https://aws.amazon.com/eks) | Kubernetes distributions and operations | unknown | needs-review |
 | [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) | Kubernetes distributions and operations | oss | needs-review |
 | [Elemental](https://elemental.docs.rancher.com/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
 | [endoflife.date](https://endoflife.date) | Documentation, learning and career resources | documentation | needs-review |
 | [Entire](https://entire.io) | Emerging and experimental tools | open-core | needs-review |
-| [Env0](https://github.com/env0) | Infrastructure as Code | unknown | needs-review |
+| [env zero](https://www.envzero.com/) | Infrastructure as Code | commercial | active |
 | [Envoy](https://www.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Envoy Gateway](https://gateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Eraser DiagramGPT](https://www.eraser.io/diagramgpt) | Emerging and experimental tools | unknown | needs-review |
 | [Eureka](https://github.com/Netflix/eureka) | Kubernetes networking, storage and add-ons | oss | active |
-| [EveryDev.ai](https://www.everydev.ai) | Documentation, learning and career resources | unknown | needs-review |
+| [EveryDev.ai](https://www.everydev.ai/) | Documentation, learning and career resources | unknown | active |
 | [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Exoscale SKS](https://www.exoscale.com/sks/) | Kubernetes distributions and operations | commercial | active |
 | [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | needs-review |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
 | [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
-| [Fargate](https://aws.amazon.com/fargate) | Kubernetes distributions and operations | unknown | needs-review |
 | [Finout](https://www.finout.io) | FinOps and sustainability | commercial | active |
 | [flannel](https://github.com/flannel-io/flannel) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Flawless](https://github.com/William-Lu-stack/Flawless) | MLOps, LLMOps and AI infrastructure | oss | needs-review |

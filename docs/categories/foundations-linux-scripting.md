@@ -389,10 +389,10 @@ Simple, fast alternative to `find`.
 
 **Categories:** Foundations, Linux and scripting<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Free Saas<br>
+**Status:** Active
 
-Main application repository ("app store") for Flatpak packages.
+Community-run hosted repository and discovery service for distributing Flatpak applications across Linux distributions.
 
 **Use when**
 
@@ -402,7 +402,7 @@ Main application repository ("app store") for Flatpak packages.
 
 - For server-side or headless deployments where native packages are more appropriate.* <!-- cspell:ignore Flathub -->.
 
-[Official site](https://flathub.org)
+[Official site](https://flathub.org) · [Documentation](https://docs.flathub.org/)
 
 ### Flatpak
 

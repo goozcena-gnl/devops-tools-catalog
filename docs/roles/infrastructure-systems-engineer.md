@@ -67,7 +67,7 @@
 | [duf](https://github.com/muesli/duf) | Foundations, Linux and scripting | oss | active |
 | [Eclipse Jetty](https://jetty.org/) | Foundations, Linux and scripting | oss | active |
 | [Elemental](https://elemental.docs.rancher.com/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
-| [Env0](https://github.com/env0) | Infrastructure as Code | unknown | needs-review |
+| [env zero](https://www.envzero.com/) | Infrastructure as Code | commercial | active |
 | [etcd](https://etcd.io) | Databases, caching and data infrastructure | oss | needs-review |
 | [etckeeper](https://etckeeper.branchable.com) | Configuration management | oss | needs-review |
 | [Exercism](https://exercism.org) | Foundations, Linux and scripting | documentation | needs-review |
@@ -75,12 +75,12 @@
 | [fd](https://github.com/sharkdp/fd) | Foundations, Linux and scripting | oss | active |
 | [Firecracker](https://firecracker-microvm.github.io) | Virtualization, bare metal and homelab | oss | active |
 | [Flatcar Container Linux](https://www.flatcar.org) | Virtualization, bare metal and homelab | oss | active |
-| [Flathub](https://flathub.org) | Foundations, Linux and scripting | unknown | needs-review |
+| [Flathub](https://flathub.org) | Foundations, Linux and scripting | free-saas | active |
 | [Flatpak](https://flatpak.org) | Foundations, Linux and scripting | oss | needs-review |
 | [freeCodeCamp](https://www.freecodecamp.org) | Foundations, Linux and scripting | documentation | needs-review |
-| [FuturFusion](https://futurfusion.io) | Virtualization, bare metal and homelab | unknown | needs-review |
+| [FuturFusion](https://futurfusion.io) | Virtualization, bare metal and homelab | commercial | active |
 | [Garage](https://garagehq.deuxfleurs.fr) | Databases, caching and data infrastructure | oss | needs-review |
-| [Garage WebUI](https://hub.docker.com/r/khairul169/garage-webui) | Databases, caching and data infrastructure | unknown | needs-review |
+| [Garage WebUI](https://github.com/khairul169/garage-webui) | Databases, caching and data infrastructure | oss | active |
 | [Go](https://go.dev/) | Foundations, Linux and scripting | oss | active |
 | [Go by Example](https://gobyexample.com) | Foundations, Linux and scripting | documentation | needs-review |
 | [gping](https://github.com/orf/gping) | Foundations, Linux and scripting | oss | active |

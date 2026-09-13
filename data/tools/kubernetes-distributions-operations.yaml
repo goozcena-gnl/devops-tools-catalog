@@ -427,8 +427,9 @@
   needs_review: true
 - id: docker-swarm
   name: Docker Swarm
-  summary: Container orchestration system by Docker.
+  summary: Ambiguous umbrella name spanning current Swarm mode embedded in Docker Engine and the archived historical standalone Docker Swarm project.
   official_url: https://docs.docker.com/engine/swarm
+  documentation_url: https://docs.docker.com/engine/swarm/swarm-mode/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -441,24 +442,31 @@
   - deploy
   - operate
   use_when:
-  - You need simple container orchestration with minimal learning curve for small-scale deployments.
+  - You are evaluating Docker Engine's built-in Swarm mode for comparatively simple multi-host container orchestration.
   avoid_when:
-  - You need the ecosystem, scalability, and community support of Kubernetes.
+  - You need a precise standalone project or licence boundary; reconcile Engine Swarm mode, SwarmKit, and the archived docker/swarm project first.
   deployment_models: []
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://docs.docker.com/engine/swarm/swarm-mode/
+  - https://docs.docker.com/engine/swarm/key-concepts/
+  - https://github.com/moby/swarmkit
+  - https://github.com/docker-archive/classicswarm
   - legacy:4_Kubernetes-Containers/README.md#L156
   - legacy:devopstools_final.md#L658
   needs_review: true
 - id: dockhand
   name: Dockhand
-  summary: Kubernetes deployment and management tool.
-  official_url: https://dockhand.pro
+  summary: Self-hosted Docker management application for containers, Compose stacks, images, volumes, networks, and multiple Docker environments.
+  official_url: https://dockhand.pro/
+  repository_url: https://github.com/Finsys/dockhand
+  repository_archived: false
+  documentation_url: https://dockhand.pro/manual/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -471,20 +479,28 @@
   - deploy
   - operate
   use_when:
-  - You need a streamlined deployment UI for smaller teams.
+  - You want a self-hosted UI for administering one or more Docker hosts and Compose stacks with Git-based deployment support.
   avoid_when:
-  - You have established GitOps or CI/CD pipelines.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require Kubernetes or Swarm orchestration, or cannot accept the Business Source License restriction on offering a competing hosted service.
+  deployment_models:
+  - self-hosted
+  - container
+  license_model: source-available
+  license_spdx: BUSL-1.1
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://dockhand.pro/
+  - https://dockhand.pro/manual/
+  - https://github.com/Finsys/dockhand
+  - https://github.com/Finsys/dockhand/blob/main/LICENSE.txt
   - legacy:4_Kubernetes-Containers/README.md#L25
   - legacy:devopstools_final.md#L457
-  needs_review: true
+  needs_review: false
 - id: easykube
   name: Easykube
   summary: Developer tool for reasoning about and running complex microservice backends locally with Kubernetes.
@@ -513,9 +529,10 @@
   - legacy:devopstools_final.md#L459
   needs_review: true
 - id: ecs
-  name: ECS
-  summary: Amazon Elastic Container Service.
-  official_url: https://aws.amazon.com/ecs
+  name: Amazon ECS
+  summary: AWS-managed container orchestration service for deploying and scaling containerized applications without operating a separate control plane.
+  official_url: https://aws.amazon.com/ecs/
+  documentation_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -531,21 +548,28 @@
   - You want AWS-native container orchestration without managing Kubernetes control planes.
   avoid_when:
   - You need Kubernetes API compatibility or multi-cloud portability.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  - customer-cloud
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://aws.amazon.com/ecs/
+  - https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html
+  - https://aws.amazon.com/ecs/pricing/
   - legacy:4_Kubernetes-Containers/README.md#L157
   - legacy:devopstools_final.md#L659
-  needs_review: true
+  needs_review: false
 - id: eks
-  name: EKS
-  summary: Amazon Elastic Kubernetes Service.
-  official_url: https://aws.amazon.com/eks
+  name: Amazon EKS
+  summary: AWS-managed Kubernetes service with an AWS-operated Kubernetes control plane and multiple node and serverless compute options.
+  official_url: https://aws.amazon.com/eks/
+  documentation_url: https://docs.aws.amazon.com/eks/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -561,17 +585,23 @@
   - You need managed Kubernetes on AWS with deep AWS service integration.
   avoid_when:
   - ECS's simpler model suffices or you want to avoid AWS lock-in.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  - customer-cloud
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://aws.amazon.com/eks/
+  - https://docs.aws.amazon.com/eks/
+  - https://aws.amazon.com/eks/pricing/
   - legacy:4_Kubernetes-Containers/README.md#L158
   - legacy:devopstools_final.md#L660
-  needs_review: true
+  needs_review: false
 - id: eks-node-viewer
   name: EKS Node Viewer
   summary: Visualize EKS node usage and capacity.
@@ -620,9 +650,10 @@
   sources: [https://www.exoscale.com/sks/, https://community.exoscale.com/documentation/sks/]
   needs_review: false
 - id: fargate
-  name: Fargate
-  summary: Serverless compute for containers.
-  official_url: https://aws.amazon.com/fargate
+  name: AWS Fargate
+  summary: AWS-managed serverless container compute execution model used by Amazon ECS tasks and Amazon EKS pods.
+  official_url: https://aws.amazon.com/fargate/
+  documentation_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -638,17 +669,23 @@
   - You want to run containers without managing nodes and your workloads have variable, bursty demand.
   avoid_when:
   - You need GPU support, DaemonSets, or cost-predictable steady-state workloads (EC2 nodes are cheaper).
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  - customer-cloud
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://aws.amazon.com/fargate/
+  - https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html
+  - https://aws.amazon.com/fargate/pricing/
   - legacy:4_Kubernetes-Containers/README.md#L159
   - legacy:devopstools_final.md#L661
-  needs_review: true
+  needs_review: false
 - id: forecastle
   name: Forecastle
   summary: Kubernetes dashboard that discovers and displays application URLs from Ingress annotations

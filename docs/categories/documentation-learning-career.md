@@ -523,9 +523,9 @@ Track software end-of-life dates.
 **Categories:** Documentation, learning and career resources<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
 **Model:** Unknown<br>
-**Status:** Needs Review
+**Status:** Active
 
-Community-driven directory, comparison hub, and discussion platform for AI developer tools.
+Active directory and comparison site for discovering AI developer tools; official evidence confirms the service identity but does not document a product-level license or operating model.
 
 **Use when**
 
@@ -533,9 +533,9 @@ Community-driven directory, comparison hub, and discussion platform for AI devel
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a catalogue with a documented licensing or commercial model.
 
-[Official site](https://www.everydev.ai)
+[Official site](https://www.everydev.ai/)
 
 ### FreeCodeCamp DevOps
 

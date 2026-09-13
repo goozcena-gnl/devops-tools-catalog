@@ -33,7 +33,7 @@
 | [dnsglobe](https://github.com/514-labs/dnsglobe) | SRE, incident response and on-call | oss | needs-review |
 | [Docker OpenTelemetry LGTM](https://github.com/grafana/docker-otel-lgtm) | Monitoring, metrics, logs and tracing, Developer experience and local environments | oss | active |
 | [Dozzle](https://dozzle.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Dynatrace](https://github.com/dynatrace) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Dynatrace](https://www.dynatrace.com/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Elastic APM Server](https://www.elastic.co/observability/application-performance-monitoring) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [Elastic Stack (ELK)](https://www.elastic.co/elastic-stack) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [flow](https://github.com/programmersd21/flow) | SRE, incident response and on-call | oss | needs-review |

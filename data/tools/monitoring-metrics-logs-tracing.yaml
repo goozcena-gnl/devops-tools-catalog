@@ -856,8 +856,10 @@
   needs_review: true
 - id: dynatrace
   name: Dynatrace
-  summary: Application performance monitoring and observability platform.
-  official_url: https://github.com/dynatrace
+  summary: Commercial observability and application-performance platform spanning infrastructure,
+    applications, logs, security, digital experience, and AI-assisted analysis.
+  official_url: https://www.dynatrace.com/
+  documentation_url: https://docs.dynatrace.com/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -873,17 +875,23 @@
   - Enterprise APM with AI-assisted root cause is a priority.
   avoid_when:
   - You need lightweight, self-hosted, or cost-sensitive monitoring.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L11
   - legacy:devopstools_final.md#L703
-  needs_review: true
+  - https://www.dynatrace.com/platform/
+  - https://docs.dynatrace.com/
+  - https://www.dynatrace.com/pricing/
+  needs_review: false
 - id: elastic-apm-server
   name: Elastic APM Server
   summary: APM intake/processing for Elastic Observability (agents + server + UI).

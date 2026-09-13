@@ -209,8 +209,12 @@
   needs_review: true
 - id: garage-webui
   name: Garage WebUI
-  summary: Web interface for Garage object storage.
-  official_url: https://hub.docker.com/r/khairul169/garage-webui
+  summary: Independent, self-hosted web administration interface for Garage object storage, packaged as a
+    container and maintained separately from Garage itself.
+  official_url: https://github.com/khairul169/garage-webui
+  repository_url: https://github.com/khairul169/garage-webui
+  repository_archived: false
+  documentation_url: https://github.com/khairul169/garage-webui#readme
   categories:
   - databases-caching-data-infrastructure
   subcategories:
@@ -226,17 +230,23 @@
   - You run Garage and want a simple browser-based management UI.
   avoid_when:
   - You manage Garage via CLI/API or use a different object store.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - self-hosted
+  - container
+  license_model: oss
+  license_spdx: MIT
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L208
   - legacy:devopstools_final.md#L282
-  needs_review: true
+  - https://github.com/khairul169/garage-webui
+  - https://github.com/khairul169/garage-webui/blob/main/LICENSE
+  - https://hub.docker.com/r/khairul169/garage-webui
+  needs_review: false
 - id: juicefs
   name: JuiceFS
   summary: Distributed POSIX file system with community edition and enterprise/cloud offerings.

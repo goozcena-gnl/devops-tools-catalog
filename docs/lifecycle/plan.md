@@ -22,7 +22,7 @@
 - [Confluence](https://www.atlassian.com/software/confluence) — AI-powered team knowledge base and collaboration workspace by Atlassian.
 - [Crossplane](https://www.crossplane.io) — Kubernetes-native IaC control plane.
 - [Cursor Origin](https://cursor.com/origin) — Cursor-hosted Git forge designed for human and coding-agent repository collaboration.
-- [Env0](https://github.com/env0) — Infrastructure as Code automation and governance platform.
+- [env zero](https://www.envzero.com/) — Commercial infrastructure-as-code control platform for self-service environments, workflow automation, policy, governance, and cloud-cost management.
 - [Gerrit Code Review](https://www.gerritcodereview.com/) — Self-hosted Git code-review system with change-based workflows and granular access controls.
 - [Git](https://git-scm.com) — Distributed version control system.
 - [Gitea](https://about.gitea.com/) — Self-hosted Git forge with repository hosting, code review, issues, packages, and automation integrations.

@@ -77,7 +77,7 @@
 | [Drone](https://www.drone.io) | CI, build and testing | open-core | active |
 | [ESLint](https://eslint.org) | Developer experience and local environments | oss | needs-review |
 | [Feint](https://github.com/stephrobert/feint) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
-| [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |
+| [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | commercial | active |
 | [FitNesse](https://fitnesse.org) | CI, build and testing | oss | active |
 | [Floci](https://floci.io/aws/) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
 | [Floci-AZ](https://floci.io/floci-az/) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |

@@ -370,10 +370,10 @@ Immutable Linux distro for containers.
 
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Dell-backed VMware exit solution that preserves and migrates existing VMware estates to open infrastructure.
+Commercial virtualization management and migration suite built on open-source infrastructure for operating and moving workloads away from VMware estates.
 
 **Use when**
 

@@ -44,6 +44,7 @@
 - [Checkmarx One](https://checkmarx.com) — Commercial cloud application-security platform combining multiple scanners and SDLC integrations.
 - [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) — Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
 - [Cilium](https://cilium.io) — EBPF-based networking, observability, and security for Kubernetes.
+- [Cisco Duo](https://duo.com/) — Cisco cloud-delivered identity security family spanning multi-factor authentication, passwordless access, SSO, device trust, and access policy.
 - [Cisco Talos Intelligence](https://www.talosintelligence.com) — Threat intelligence platform providing IP/domain reputation, vulnerability research, malware analysis, and security advisories by Cisco.
 - [ClamAV](https://www.clamav.net/) — Cross-platform antivirus engine and command-line toolkit for detecting malicious files and content.
 - [CloudFox](https://github.com/BishopFox/cloudfox) — Cloud environment situational-awareness utility for authorized AWS, Azure, and GCP security assessments.
@@ -69,21 +70,19 @@
 - [Dockle](https://containers.goodwith.tech) — Container image linter for security best practices.
 - [Doppler](https://www.doppler.com) — Universal secrets management platform.
 - [Dradis Community Edition](https://dradis.com/ce/) — Self-hosted collaboration and reporting platform for security assessment projects.
-- [Drata](https://drata.com) — Security and compliance automation platform.
-- [Duo Security](https://duo.com) — Multi-factor authentication and access security.
-- [Entrust KeyControl](https://www.entrust.com/products/key-management/keycontrol) — Key management for enterprise.
+- [Drata](https://drata.com/) — Commercial trust-management platform for compliance automation, control monitoring, evidence collection, and risk workflows.
+- [Entrust Cryptographic Security Platform Key Manager](https://www.entrust.com/products/key-management) — Enterprise key-management software, formerly KeyControl, for centralizing encryption keys and integrating with KMIP clients, HSMs, and cloud key-management services.
 - [Eviden KMS](https://github.com/Cosmian/kms) — Source-available key management server for KMIP, cloud key management, and privacy-enhancing cryptographic workflows, formerly Cosmian KMS.
 - [External Secrets Operator](https://external-secrets.io/main) — Sync external secrets into Kubernetes.
-- [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) — Commercial WAF for NGINX.
+- [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) — Commercial web application firewall for applications and APIs running on NGINX Plus or NGINX Ingress Controller, formerly NGINX App Protect WAF.
 - [fail2ban](https://github.com/fail2ban/fail2ban) — Intrusion prevention by monitoring logs and banning abusive IPs (e.g., SSH).
 - [Falco](https://falco.org) — Runtime security for cloud-native environments.
 - [feroxbuster](https://github.com/epi052/feroxbuster) — Recursive web content discovery utility for authorized application assessment.
 - [ffuf](https://github.com/ffuf/ffuf) — Web content and parameter discovery utility for authorized HTTP security assessment.
-- [Filigran](https://filigran.io) — Open threat intelligence and incident response platform (OpenCTI / OpenBAS) for collecting, analyzing, and acting on cyber threat intelligence.
+- [Filigran](https://filigran.io/platform) — Vendor and XTM Platform umbrella spanning the distinct OpenCTI, OpenAEV, and XTM One products rather than one precise software adoption identity.
 - [firewalld](https://firewalld.org) — Dynamically managed firewall for Linux with D-Bus interface.
-- [Fortify Static Code Analyzer](https://www.opentext.com/products/static-application-security-testing) — Static application security testing.
-- [FOSSA](https://fossa.com) — Software supply chain and license compliance platform.
-- [Futurex KMES Series 3](https://www.futurex.com/products/key-management-server/kmes-series-3) — Hardware key management.
+- [FOSSA](https://fossa.com/) — Commercial software supply-chain management platform for dependency licence compliance, vulnerability analysis, quality signals, and SBOM workflows.
+- [Futurex KMES Series 3](https://www.futurex.com/products/key-management-server/kmes-series-3) — Enterprise key-management server backed by a FIPS-validated hardware security module for centralized key lifecycle, policy, and cryptographic operations.
 - [ggshield](https://github.com/GitGuardian/ggshield) — GitGuardian CLI for secret scanning in local development, hooks, and CI.
 - [Ghostwriter](https://www.ghostwriter.wiki/home) — Collaborative platform for managing security assessments, findings, evidence, and reports.
 - [Gibson](https://github.com/HackingLZ/gibson) — Network monitoring and threat-hunting tool that maps processes to connections, flags beaconing, and helps generate firewall rules.
@@ -164,6 +163,7 @@
 - [OpenSCAP Tools](https://www.open-scap.org/tools) — Collection of OpenSCAP tools.
 - [OpenSSH](https://www.openssh.org) — The ubiquitous open-source SSH suite for secure remote login, file transfer, and tunneling.
 - [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) — OpenStack secrets management.
+- [OpenText Fortify Static Code Analyzer](https://www.opentext.com/products/static-application-security-testing) — Commercial static application security testing engine for source, bytecode, and binary analysis across developer and CI/CD workflows.
 - [OpenZiti](https://netfoundry.io/docs/openziti) — Open-source zero-trust overlay networking platform.
 - [OPNsense](https://opnsense.org/opnsense/) — FreeBSD-based open-source firewall and routing platform for network security gateways.
 - [OSINT Framework](https://osintframework.com) — Curated framework of OSINT resources and investigative tools.

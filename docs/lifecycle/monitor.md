@@ -37,7 +37,7 @@
 - [Docker OpenTelemetry LGTM](https://github.com/grafana/docker-otel-lgtm) — Single-container OpenTelemetry backend bundling Grafana, Loki, Tempo, Mimir, and an OpenTelemetry Collector for development and demos.
 - [dool](https://github.com/scottchiefbaker/dool) — Linux command-line monitor for correlating CPU, memory, disk, network, and process activity in real time.
 - [Dozzle](https://dozzle.dev) — Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes support.
-- [Dynatrace](https://github.com/dynatrace) — Application performance monitoring and observability platform.
+- [Dynatrace](https://www.dynatrace.com/) — Commercial observability and application-performance platform spanning infrastructure, applications, logs, security, digital experience, and AI-assisted analysis.
 - [Elastic APM Server](https://www.elastic.co/observability/application-performance-monitoring) — APM intake/processing for Elastic Observability (agents + server + UI).
 - [Elastic Stack (ELK)](https://www.elastic.co/elastic-stack) — Search/analytics/log platform; source licensing varies by component (Elastic License/SSPL and AGPL option for parts).
 - [Envoy](https://www.envoyproxy.io) — Cloud-native L4/L7 proxy used for edge routing, service networking, and observability-aware traffic control.

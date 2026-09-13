@@ -163,10 +163,10 @@ Lightweight S3-compatible object storage.
 
 **Categories:** Databases, caching and data infrastructure<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Web interface for Garage object storage.
+Independent, self-hosted web administration interface for Garage object storage, packaged as a container and maintained separately from Garage itself.
 
 **Use when**
 
@@ -176,7 +176,7 @@ Web interface for Garage object storage.
 
 - You manage Garage via CLI/API or use a different object store.
 
-[Official site](https://hub.docker.com/r/khairul169/garage-webui)
+[Official site](https://github.com/khairul169/garage-webui) · [Documentation](https://github.com/khairul169/garage-webui#readme) · [Source repository](https://github.com/khairul169/garage-webui)
 
 ### JuiceFS
 

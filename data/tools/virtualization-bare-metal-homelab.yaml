@@ -532,8 +532,8 @@
   needs_review: false
 - id: futurfusion
   name: FuturFusion
-  summary: Dell-backed VMware exit solution that preserves and migrates existing VMware estates to open
-    infrastructure.
+  summary: Commercial virtualization management and migration suite built on open-source infrastructure
+    for operating and moving workloads away from VMware estates.
   official_url: https://futurfusion.io
   categories:
   - virtualization-bare-metal-homelab
@@ -547,16 +547,21 @@
   - operate
   use_when: []
   avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
   - legacy:devopstools_final.md#L241
-  needs_review: true
+  - https://futurfusion.io/
+  - https://github.com/futurfusion
+  - https://www.dell.com/en-us/shop/ipovw/futurfusion
+  needs_review: false
 - id: gvisor
   name: gVisor
   summary: Application kernel and container sandbox runtime that provides strong isolation between containers

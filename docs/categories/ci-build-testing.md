@@ -598,10 +598,10 @@ Container-native CI/CD platform.
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud-based app testing on real and virtual devices.
+Google-hosted mobile application testing service that runs Android and iOS tests on real and virtual devices through Firebase and Google Cloud tooling.
 
 **Use when**
 
@@ -611,7 +611,7 @@ Cloud-based app testing on real and virtual devices.
 
 - You need a wide variety of device models beyond what Google offers.
 
-[Official site](https://firebase.google.com/products/test-lab)
+[Official site](https://firebase.google.com/products/test-lab) · [Documentation](https://firebase.google.com/docs/test-lab)
 
 ### FitNesse
 

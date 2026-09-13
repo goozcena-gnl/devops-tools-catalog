@@ -253,14 +253,14 @@ C# implementation toolkit for Crossplane composition functions, including templa
 
 [Documentation](https://github.com/IvanJosipovic/function-sdk-csharp/blob/alpha/README.md) · [Source repository](https://github.com/IvanJosipovic/function-sdk-csharp)
 
-### Env0
+### env zero
 
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Infrastructure as Code automation and governance platform.
+Commercial infrastructure-as-code control platform for self-service environments, workflow automation, policy, governance, and cloud-cost management.
 
 **Use when**
 
@@ -270,7 +270,7 @@ Infrastructure as Code automation and governance platform.
 
 - You want a fully self-hosted or open-source solution.
 
-[Official site](https://github.com/env0)
+[Official site](https://www.envzero.com/) · [Documentation](https://docs.envzero.com/)
 
 ### Infracost
 

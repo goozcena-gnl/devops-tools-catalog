@@ -24,6 +24,44 @@ Azure Kubernetes Service.
 
 [Official site](https://azure.microsoft.com/en-us/products/kubernetes-service) · [Documentation](https://learn.microsoft.com/en-us/azure/aks/)
 
+### Amazon ECS
+
+**Categories:** Kubernetes distributions and operations<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+AWS-managed container orchestration service for deploying and scaling containerized applications without operating a separate control plane.
+
+**Use when**
+
+- You want AWS-native container orchestration without managing Kubernetes control planes.
+
+**Consider alternatives when**
+
+- You need Kubernetes API compatibility or multi-cloud portability.
+
+[Official site](https://aws.amazon.com/ecs/) · [Documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
+
+### Amazon EKS
+
+**Categories:** Kubernetes distributions and operations<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+AWS-managed Kubernetes service with an AWS-operated Kubernetes control plane and multiple node and serverless compute options.
+
+**Use when**
+
+- You need managed Kubernetes on AWS with deep AWS service integration.
+
+**Consider alternatives when**
+
+- ECS's simpler model suffices or you want to avoid AWS lock-in.
+
+[Official site](https://aws.amazon.com/eks/) · [Documentation](https://docs.aws.amazon.com/eks/)
+
 ### Ansible kubernetes.core collection
 
 **Categories:** Configuration management, Kubernetes distributions and operations<br>
@@ -61,6 +99,25 @@ Collection of Kubernetes architecture diagrams.
 - You need production-ready templates.
 
 [Source repository](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams)
+
+### AWS Fargate
+
+**Categories:** Kubernetes distributions and operations<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+AWS-managed serverless container compute execution model used by Amazon ECS tasks and Amazon EKS pods.
+
+**Use when**
+
+- You want to run containers without managing nodes and your workloads have variable, bursty demand.
+
+**Consider alternatives when**
+
+- You need GPU support, DaemonSets, or cost-predictable steady-state workloads (EC2 nodes are cheaper).
+
+[Official site](https://aws.amazon.com/fargate/) · [Documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
 
 ### BotKube
 
@@ -298,36 +355,36 @@ Tooling to run Kubernetes locally on the desktop.
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Container orchestration system by Docker.
+Ambiguous umbrella name spanning current Swarm mode embedded in Docker Engine and the archived historical standalone Docker Swarm project.
 
 **Use when**
 
-- You need simple container orchestration with minimal learning curve for small-scale deployments.
+- You are evaluating Docker Engine's built-in Swarm mode for comparatively simple multi-host container orchestration.
 
 **Consider alternatives when**
 
-- You need the ecosystem, scalability, and community support of Kubernetes.
+- You need a precise standalone project or licence boundary; reconcile Engine Swarm mode, SwarmKit, and the archived docker/swarm project first.
 
-[Official site](https://docs.docker.com/engine/swarm)
+[Official site](https://docs.docker.com/engine/swarm) · [Documentation](https://docs.docker.com/engine/swarm/swarm-mode/)
 
 ### Dockhand
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Source Available<br>
+**Status:** Active
 
-Kubernetes deployment and management tool.
+Self-hosted Docker management application for containers, Compose stacks, images, volumes, networks, and multiple Docker environments.
 
 **Use when**
 
-- You need a streamlined deployment UI for smaller teams.
+- You want a self-hosted UI for administering one or more Docker hosts and Compose stacks with Git-based deployment support.
 
 **Consider alternatives when**
 
-- You have established GitOps or CI/CD pipelines.
+- You require Kubernetes or Swarm orchestration, or cannot accept the Business Source License restriction on offering a competing hosted service.
 
-[Official site](https://dockhand.pro)
+[Official site](https://dockhand.pro/) · [Documentation](https://dockhand.pro/manual/) · [Source repository](https://github.com/Finsys/dockhand)
 
 ### Easykube
 
@@ -347,44 +404,6 @@ Developer tool for reasoning about and running complex microservice backends loc
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
 [Official site](https://torloejborg.github.io/easykube/easykube/latest)
-
-### ECS
-
-**Categories:** Kubernetes distributions and operations<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Amazon Elastic Container Service.
-
-**Use when**
-
-- You want AWS-native container orchestration without managing Kubernetes control planes.
-
-**Consider alternatives when**
-
-- You need Kubernetes API compatibility or multi-cloud portability.
-
-[Official site](https://aws.amazon.com/ecs)
-
-### EKS
-
-**Categories:** Kubernetes distributions and operations<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Amazon Elastic Kubernetes Service.
-
-**Use when**
-
-- You need managed Kubernetes on AWS with deep AWS service integration.
-
-**Consider alternatives when**
-
-- ECS's simpler model suffices or you want to avoid AWS lock-in.
-
-[Official site](https://aws.amazon.com/eks)
 
 ### EKS Node Viewer
 
@@ -442,25 +461,6 @@ Exoscale managed Kubernetes service with managed control planes and cloud infras
 - You need a self-managed distribution or infrastructure outside Exoscale regions and APIs.
 
 [Official site](https://www.exoscale.com/sks/) · [Documentation](https://community.exoscale.com/documentation/sks/)
-
-### Fargate
-
-**Categories:** Kubernetes distributions and operations<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Serverless compute for containers.
-
-**Use when**
-
-- You want to run containers without managing nodes and your workloads have variable, bursty demand.
-
-**Consider alternatives when**
-
-- You need GPU support, DaemonSets, or cost-predictable steady-state workloads (EC2 nodes are cheaper).
-
-[Official site](https://aws.amazon.com/fargate)
 
 ### Forecastle
 

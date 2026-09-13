@@ -89,9 +89,9 @@
 - [Drone](https://www.drone.io) — Container-native CI/CD platform.
 - [Earthly](https://earthly.dev) — Build automation framework.
 - [ecc.tools](https://ecc.tools) — OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
-- [Env0](https://github.com/env0) — Infrastructure as Code automation and governance platform.
+- [env zero](https://www.envzero.com/) — Commercial infrastructure-as-code control platform for self-service environments, workflow automation, policy, governance, and cloud-cost management.
 - [Evidently](https://github.com/evidentlyai/evidently) — Open-source evaluation and monitoring framework for ML and AI systems.
-- [Firebase Test Lab](https://firebase.google.com/products/test-lab) — Cloud-based app testing on real and virtual devices.
+- [Firebase Test Lab](https://firebase.google.com/products/test-lab) — Google-hosted mobile application testing service that runs Android and iOS tests on real and virtual devices through Firebase and Google Cloud tooling.
 - [FitNesse](https://fitnesse.org) — Acceptance testing framework.
 - [Flawless](https://github.com/William-Lu-stack/Flawless) — AI SRE AgenticOps agent for autonomous incident detection, diagnosis, and remediation across Kubernetes and cloud infrastructure.
 - [fulling](https://github.com/FullAgent/fulling) — AI-powered full-stack engineer agent built with Next.js, Claude, and PostgreSQL, using Kubernetes as infrastructure.

@@ -182,6 +182,9 @@ AUTHORIZED_CURRENT_DRIFT = {
     ("burp-suite", "status"): "active",
     ("coroot", "license_model"): "open-core",
     ("coroot", "license_spdx"): "Apache-2.0",
+    ("fortify-static-code-analyzer", "license_model"): "commercial",
+    ("fortify-static-code-analyzer", "needs_review"): False,
+    ("fortify-static-code-analyzer", "status"): "active",
 }
 
 REQUIRED_LEDGER_COLUMNS = {
