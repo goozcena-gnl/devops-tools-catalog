@@ -940,20 +940,20 @@ JetBrains IDE for JVM development with a free core feature set and subscription-
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Interactive JSON visualizer that turns data structures into graphs.
+Open-source browser editor for visualizing, editing, converting, querying, and validating structured data.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need an interactive graph view and local editing workflow for JSON, YAML, CSV, or XML data.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need schema-governed automation rather than an interactive editor, or cannot expose sensitive data to a hosted tool.
 
-[Official site](https://jsoncrack.com)
+[Official site](https://jsoncrack.com/) · [Documentation](https://github.com/AykutSarac/jsoncrack.com/blob/main/README.md) · [Source repository](https://github.com/AykutSarac/jsoncrack.com)
 
 ### Kilo Code
 

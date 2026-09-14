@@ -30,7 +30,7 @@
 - [IBM Cloudability](https://www.apptio.com/products/cloudability/) — Enterprise FinOps and cloud cost management platform for multi-cloud visibility, allocation, and optimization.
 - [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) — Cloud resource optimization.
 - [k8s-overcommit-operator](https://github.com/InditexTech/k8s-overcommit-operator) — Kubernetes operator that manages namespace-level resource-request overcommit policies.
-- [Kion FinOps](https://kion.io/platform/finops) — Cloud governance and cost management.
+- [Kion FinOps+](https://kion.io/platform/) — Commercial self-hosted FinOps platform combining cost visibility and optimization with automated cloud governance and AI-assisted workflows.
 - [Kubecost (Apptio)](https://www.apptio.com/products/kubecost) — Commercial Kubernetes cost monitoring/optimization product built around OpenCost.
 - [kubectl-view-allocations](https://github.com/davidB/kubectl-view-allocations) — kubectl plugin for comparing Kubernetes resource allocations and utilization.
 - [KubeElasti](https://kubeelasti.dev/) — Kubernetes controller and request proxy for scaling HTTP workloads to zero and restoring them on demand.

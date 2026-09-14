@@ -2208,9 +2208,11 @@
   needs_review: true
 - id: kro
   name: kro
-  summary: Kube Resource Orchestrator for defining higher-level Kubernetes abstractions and composing
-    resources declaratively.
-  official_url: https://kro.run
+  summary: Kubernetes SIG Cloud Provider subproject that composes resources into reusable custom APIs through ResourceGraphDefinitions.
+  official_url: https://kro.run/
+  repository_url: https://github.com/kubernetes-sigs/kro
+  repository_archived: false
+  documentation_url: https://kro.run/docs/overview/
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -2222,18 +2224,26 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want Kubernetes-native reusable resource abstractions with explicit dependencies and generated controllers.
+  avoid_when:
+  - Established CRDs, Helm, or another composition framework already provide the lifecycle semantics you need.
+  deployment_models:
+  - kubernetes-controller
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L592
-  needs_review: true
+  - https://kro.run/
+  - https://github.com/kubernetes-sigs/kro
+  - https://github.com/kubernetes-sigs/kro/blob/main/LICENSE
+  needs_review: false
 - id: kroc
   name: kroc
   summary: Kubernetes Reactive Object Creator for event-driven resource automation.

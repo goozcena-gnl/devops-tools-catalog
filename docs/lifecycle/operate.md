@@ -313,7 +313,7 @@
 - [Istio](https://istio.io) — Service mesh for managing microservices traffic.
 - [Jaeger](https://www.jaegertracing.io) — Open source distributed tracing platform.
 - [jaq](https://github.com/01mf02/jaq) — JSON query CLI implementing a substantial subset of jq's language.
-- [Jira](https://www.atlassian.com/software/jira) — Issue tracking and project management platform by Atlassian.
+- [Jira](https://www.atlassian.com/software/jira) — Atlassian's commercial work-management product family, led by Jira Cloud with a winding-down Data Center edition.
 - [jq](https://jqlang.org) — Command-line processor for querying and transforming JSON data.
 - [JuiceFS](https://juicefs.com/en) — Distributed POSIX file system with community edition and enterprise/cloud offerings.
 - [Juju](https://canonical.com/juju) — Open-source application orchestration engine for deploying and operating charm-based applications across machines and Kubernetes.
@@ -327,7 +327,7 @@
 - [k3s](https://k3s.io) — Lightweight Kubernetes by Rancher.
 - [k3sup](https://github.com/alexellis/k3sup) — Command-line installer for bootstrapping and joining remote K3s nodes over SSH.
 - [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) — Kubernetes resource cleaner.
-- [K8s Diagram Builder](https://www.k8sdiagram.fun) — Visual generator for Kubernetes YAML and topology diagrams.
+- [K8s Diagram Builder](https://www.k8sdiagram.fun/) — Open-source visual editor that imports Kubernetes YAML into resource diagrams and generates YAML from edited topologies.
 - [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) — CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
 - [k8s-d2](https://github.com/vieitesss/k8s-d2) — Generate D2 diagrams from Kubernetes topology and resources.
 - [k8s-mechanic](https://github.com/lenaxia/k8s-mechanic) — Kubernetes controller that proposes GitOps pull requests for observed cluster failures with human approval.
@@ -335,7 +335,7 @@
 - [k8s-sidecar](https://github.com/kiwigrid/k8s-sidecar) — Kubernetes sidecar container that watches ConfigMaps/Secrets and syncs files.
 - [K8sGPT](https://k8sgpt.ai) — AI-powered Kubernetes troubleshooting.
 - [k8sql](https://github.com/ndenev/k8sql) — Query Kubernetes clusters with SQL and PRQL.
-- [K8Studio](https://k8studio.io) — Visual IDE to manage and monitor Kubernetes clusters.
+- [K8Studio](https://k8studio.io/) — Commercial, agent-free desktop Kubernetes IDE for local multi-cluster operations, visualization, logs, RBAC, and Helm workflows.
 - [K8up](https://k8up.io/) — Kubernetes backup operator that schedules Restic-based PVC and application-aware backups and restores.
 - [K9s](https://k9scli.io) — Terminal UI to manage Kubernetes clusters.
 - [k9sight](https://github.com/doganarif/k9sight) — Keyboard-driven TUI for debugging Kubernetes workloads and resources.
@@ -343,7 +343,6 @@
 - [Kairos](https://kairos.io/) — Immutable Linux meta-distribution for building edge appliances and Kubernetes-based operating-system images.
 - [Kamaji](https://kamaji.clastix.io) — Kubernetes control plane manager (multi-tenancy/security).
 - [Karpenter](https://karpenter.sh) — Kubernetes node autoscaler.
-- [Kasten K10](https://www.kasten.io) — Kubernetes backup and DR platform.
 - [Kata Containers](https://katacontainers.io) — Secure containers with lightweight VMs.
 - [Katello](https://theforeman.org/plugins/katello/) — Foreman plugin for repository synchronization, content views, lifecycle environments, and host patch content.
 - [KCL](https://www.kcl-lang.io) — Constraint-based configuration and policy language for Kubernetes and cloud-native environments.
@@ -370,7 +369,7 @@
 - [Komodor](https://komodor.com) — Kubernetes troubleshooting and monitoring.
 - [Kompose](https://kompose.io) — Convert Docker Compose to Kubernetes.
 - [Kong Gateway](https://developer.konghq.com/gateway/install/) — API gateway with an open-source core and commercial management and enterprise capabilities.
-- [Kontroler](https://www.kontroler.dev) — Kubernetes-native workflow orchestration platform with controller, API, and UI components.
+- [Kontroler](https://www.kontroler.dev/) — Experimental open-source Kubernetes-native DAG scheduler with controller, API server, and optional web UI components.
 - [kOps](https://kops.sigs.k8s.io/) — Kubernetes lifecycle manager for creating and upgrading production clusters, principally on cloud infrastructure.
 - [Kor](https://github.com/yonahd/kor) — CLI for discovering unused and orphaned Kubernetes resources.
 - [Koreo](https://github.com/koreo-dev) — Kubernetes resource orchestration framework.
@@ -378,18 +377,18 @@
 - [Krateo OASGen Provider](https://docs.krateo.io/key-concepts/kog/oasgen-provider) — OpenAPI generator for Kubernetes.
 - [Kratix](https://www.kratix.io) — Framework for platform engineering on Kubernetes.
 - [krew](https://krew.sigs.k8s.io) — `kubectl` plugin manager.
-- [kro](https://kro.run) — Kube Resource Orchestrator for defining higher-level Kubernetes abstractions and composing resources declaratively.
+- [kro](https://kro.run/) — Kubernetes SIG Cloud Provider subproject that composes resources into reusable custom APIs through ResourceGraphDefinitions.
 - [kroc](https://github.com/pawelcit/kroc) — Kubernetes Reactive Object Creator for event-driven resource automation.
 - [KRouter](https://krouter.cloud/) — Kubernetes Gateway API implementation for HTTP, gRPC, TCP, UDP, and TLS routing.
 - [KRR](https://github.com/robusta-dev/krr) — Kubernetes Resource Recommendations by Robusta.
 - [KServe](https://kserve.github.io/website) — Model serving on Kubernetes.
 - [Kthena](https://kthena.volcano.sh) — Kubernetes-native AI serving platform for scalable multi-model deployment, routing, and intelligent auto-scaling.
 - [kuba](https://github.com/hcgatewood/kuba) — Fuzzy, multi-cluster kubectl companion for faster day-to-day Kubernetes operations.
-- [kubara](https://kubara.io) — Platform engineering framework for building internal platforms.
+- [kubara](https://kubara.io/) — Open-source GitOps-first CLI for packaging, generating, and bootstrapping reusable Kubernetes platform architectures.
 - [Kube Copilot](https://github.com/feiskyer/kube-copilot) — AI assistant for Kubernetes operations.
 - [Kube Monkey](https://github.com/asobti/kube-monkey) — Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, opt-in pod-killing schedule for Kubernetes with minimal setup. ❌ **Avoid when** you need network/IO faults or fine-grained experiment control beyond random pod deletion.
 - [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) — Exposes Kubernetes cluster state as metrics.
-- [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Real-time Kubernetes dashboard.
+- [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
 - [kube-bench](https://aquasecurity.github.io/kube-bench) — CIS Kubernetes benchmark tool.
 - [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Exports precomputed Kubernetes cluster binpacking metrics.
 - [kube-dump](https://kube-dump.woozymasta.ru) — Backup tool for Kubernetes cluster resources.
@@ -418,8 +417,8 @@
 - [KubeElasti](https://kubeelasti.dev/) — Kubernetes controller and request proxy for scaling HTTP workloads to zero and restoring them on demand.
 - [KubeFlame](https://kubeflame.github.io) — Kubernetes flame graph profiling tool.
 - [Kubeflow](https://www.kubeflow.org) — ML workflows on Kubernetes.
-- [KubeGUI](https://kubegui.net) — GUI for Kubernetes cluster management.
-- [KubeHatch](https://vclusterlabs-experiments.github.io/kubehatch) — Minimal internal Kubernetes platform for creating isolated ephemeral vClusters with a CLI and web UI.
+- [KubeGUI](https://kubegui.net) — Open-source standalone desktop client for managing multiple Kubernetes clusters and their resources.
+- [KubeHatch](https://vclusterlabs-experiments.github.io/kubehatch/) — Experimental open-source internal developer portal for provisioning and managing ephemeral vCluster-based Kubernetes environments.
 - [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) — Gamified chaos engineering for Kubernetes. ✅ **Use when** you want a fun, visual way to introduce chaos engineering concepts in workshops or game days. ❌ **Avoid when** you need automated, scheduled, or CI-integrated chaos experiments.
 - [KubeKey](https://github.com/kubesphere/kubekey) — Command-line tool for installing Kubernetes, KubeSphere, and related cluster add-ons across Linux hosts.
 - [KubeLinter](https://docs.kubelinter.io/) — Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
@@ -761,6 +760,7 @@
 - [Vaultwarden](https://www.vaultwarden.net/) — Self-hosted server compatible with Bitwarden clients for team and personal secret vaults.
 - [vcluster](https://www.vcluster.com) — Run virtual Kubernetes clusters inside a host cluster (multi-tenancy / isolation).
 - [Vector](https://vector.dev) — High-performance observability data pipeline (logs/metrics/traces) as an alternative to Fluent Bit/Fluentd.
+- [Veeam Kasten for Kubernetes](https://www.veeam.com/products/cloud/kubernetes-data-protection.html) — Commercial Kubernetes-native data protection platform for backup, recovery, disaster recovery, and application mobility.
 - [Velero](https://velero.io) — Open-source backup, restore, disaster-recovery, and migration tooling for Kubernetes resources and persistent volumes.
 - [Ventoy](https://www.ventoy.net/) — Bootable USB tool that launches ISO, WIM, IMG, VHD, and EFI images directly from copied files.
 - [VictoriaMetrics](https://victoriametrics.com) — Time series database; OSS core with enterprise offerings.

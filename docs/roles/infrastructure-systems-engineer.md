@@ -102,7 +102,6 @@
 | [just](https://just.systems/) | Foundations, Linux and scripting | oss | active |
 | [k3sup](https://github.com/alexellis/k3sup) | Kubernetes distributions and operations | open-core | active |
 | [Kairos](https://kairos.io/) | Kubernetes distributions and operations | oss | active |
-| [Kasten K10](https://www.kasten.io) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [Kata Containers](https://katacontainers.io) | Virtualization, bare metal and homelab | oss | active |
 | [Katello](https://theforeman.org/plugins/katello/) | Configuration management | oss | active |
 | [kcli](https://kcli.readthedocs.io/en/latest) | Virtualization, bare metal and homelab | oss | needs-review |
@@ -226,6 +225,7 @@
 | [Uyuni](https://www.uyuni-project.org/) | Configuration management | oss | active |
 | [Varnish Cache](https://www.varnish.org/) | Databases, caching and data infrastructure | oss | active |
 | [Vates VMS](https://github.com/vatesfr) | Virtualization, bare metal and homelab | open-core | needs-review |
+| [Veeam Kasten for Kubernetes](https://www.veeam.com/products/cloud/kubernetes-data-protection.html) | Backup, disaster recovery and resilience | commercial | active |
 | [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | active |
 | [Ventoy](https://www.ventoy.net/) | Virtualization, bare metal and homelab | oss | active |
 | [Volare](https://github.com/AdamShannag/volare) | Virtualization, bare metal and homelab | oss | needs-review |

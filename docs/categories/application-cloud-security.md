@@ -1538,20 +1538,20 @@ Self-hosted information security management system builder for ISO 27001, NIS2, 
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-AI-native operating system and LLM security research platform.
+Experimental AI-native Linux distribution that integrates an LLM daemon with a custom kernel interface for security research.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You are evaluating kernel-integrated local LLM security in a dedicated research environment.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a mature general-purpose operating system or a production-supported AI platform.
 
-[Official site](https://jarvisoslinux.org)
+[Official site](https://www.jarvisoslinux.org/) · [Documentation](https://www.jarvisoslinux.org/download/) · [Source repository](https://github.com/JarvisOSLinux/jarvisos)
 
 ### John the Ripper
 
@@ -1711,20 +1711,20 @@ Kick devices off your local network using ARP spoofing (Node.js-based network se
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Application security and code quality platform.
+Commercial application-security platform for static analysis, software composition analysis, and code quality governance.
 
 **Use when**
 
-- Combined SAST and code quality in enterprise CI/CD.
+- You need centrally governed SAST, SCA, and code-quality analysis across enterprise CI/CD pipelines.
 
 **Consider alternatives when**
 
-- You have separate, preferred tools for each concern.
+- You require an open-source scanner or already standardize on separate tools for each analysis concern.
 
-[Official site](https://www.kiuwan.com)
+[Official site](https://www.kiuwan.com/) · [Documentation](https://support.kiuwan.com/hc/en-us)
 
 ### Kloak
 

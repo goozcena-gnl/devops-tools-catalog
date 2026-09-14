@@ -1265,8 +1265,11 @@
   needs_review: false
 - id: json-crack
   name: JSON Crack
-  summary: Interactive JSON visualizer that turns data structures into graphs.
-  official_url: https://jsoncrack.com
+  summary: Open-source browser editor for visualizing, editing, converting, querying, and validating structured data.
+  official_url: https://jsoncrack.com/
+  repository_url: https://github.com/AykutSarac/jsoncrack.com
+  repository_archived: false
+  documentation_url: https://github.com/AykutSarac/jsoncrack.com/blob/main/README.md
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -1277,18 +1280,27 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need an interactive graph view and local editing workflow for JSON, YAML, CSV, or XML data.
+  avoid_when:
+  - You need schema-governed automation rather than an interactive editor, or cannot expose sensitive data to a hosted tool.
+  deployment_models:
+  - hosted-saas
+  - local-web-application
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L1087
-  needs_review: true
+  - https://github.com/AykutSarac/jsoncrack.com
+  - https://github.com/AykutSarac/jsoncrack.com/blob/main/LICENSE
+  - https://github.com/AykutSarac/jsoncrack.com/releases/tag/v4.0.0
+  needs_review: false
 - id: kilo
   name: Kilo Code
   summary: Open-source coding-agent tooling with configurable model providers and commercial hosted services.

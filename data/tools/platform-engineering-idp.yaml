@@ -205,8 +205,11 @@
   needs_review: false
 - id: kubara
   name: kubara
-  summary: Platform engineering framework for building internal platforms.
-  official_url: https://kubara.io
+  summary: Open-source GitOps-first CLI for packaging, generating, and bootstrapping reusable Kubernetes platform architectures.
+  official_url: https://kubara.io/
+  repository_url: https://github.com/kubara-io/kubara
+  repository_archived: false
+  documentation_url: https://docs.kubara.io/latest-stable/
   categories:
   - platform-engineering-idp
   subcategories:
@@ -218,18 +221,26 @@
   - develop
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want a GitOps-first CLI and versioned catalog model for repeatable Kubernetes platform bootstrapping.
+  avoid_when:
+  - You need a hosted internal developer portal or prefer to own and assemble each platform component independently.
+  deployment_models:
+  - local-cli
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L1147
-  needs_review: true
+  - https://kubara.io/
+  - https://docs.kubara.io/latest-stable/
+  - https://github.com/kubara-io/kubara/blob/main/LICENSE
+  needs_review: false
 - id: openrun
   name: OpenRun
   summary: Internal tools deployment platform.

@@ -117,9 +117,9 @@
   - https://github.com/k8up-io/k8up/blob/master/LICENSE
   needs_review: false
 - id: kasten-k10
-  name: Kasten K10
-  summary: Kubernetes backup and DR platform.
-  official_url: https://www.kasten.io
+  name: Veeam Kasten for Kubernetes
+  summary: Commercial Kubernetes-native data protection platform for backup, recovery, disaster recovery, and application mobility.
+  official_url: https://www.veeam.com/products/cloud/kubernetes-data-protection.html
   categories:
   - backup-disaster-recovery-resilience
   subcategories:
@@ -134,18 +134,23 @@
   - You need enterprise-grade Kubernetes backup with application-consistent snapshots, DR, and compliance
     features.
   avoid_when:
-  - Velero meets your needs and you want to avoid commercial licensing costs.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - A simpler backup project meets your needs or you cannot accept subscription licensing beyond the node-limited free edition.
+  deployment_models:
+  - kubernetes
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L181
   - legacy:devopstools_final.md#L685
-  needs_review: true
+  - https://www.veeam.com/products/cloud/kubernetes-backup/pricing.html
+  - https://www.veeam.com/products/free/kubernetes.html
+  needs_review: false
 - id: kube-dump
   name: kube-dump
   summary: Backup tool for Kubernetes cluster resources.

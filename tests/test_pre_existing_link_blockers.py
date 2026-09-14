@@ -36,9 +36,9 @@ def test_firecracker_import_override_preserves_documentation_url() -> None:
     )
 
 
-def test_transient_kubegui_record_is_unchanged() -> None:
+def test_reviewed_kubegui_record_preserves_baseline_url() -> None:
     kubegui = next(tool for tool in load_tools() if tool["id"] == "kubegui")
 
     assert kubegui["official_url"] == "https://kubegui.net"
-    assert kubegui["status"] == "needs-review"
-    assert kubegui["needs_review"] is True
+    assert kubegui["status"] == "active"
+    assert kubegui["needs_review"] is False

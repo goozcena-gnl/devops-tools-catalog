@@ -164,27 +164,26 @@
 | [iPerf](https://iperf.fr/iperf-download.php) | Chaos and performance engineering | oss | needs-review |
 | [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | unknown | needs-review |
+| [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | commercial | active |
 | [k0s](https://k0sproject.io) | Kubernetes distributions and operations | oss | active |
 | [k0smotron](https://k0smotron.io) | Kubernetes distributions and operations | oss | needs-review |
 | [k10ls](https://github.com/besrabasant/k10ls) | Kubernetes distributions and operations | oss | needs-review |
 | [k3d](https://k3d.io/stable) | Kubernetes distributions and operations | oss | needs-review |
 | [k3s](https://k3s.io) | Kubernetes distributions and operations | oss | active |
 | [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) | Kubernetes distributions and operations | oss | needs-review |
-| [K8s Diagram Builder](https://www.k8sdiagram.fun) | Kubernetes distributions and operations | unknown | needs-review |
+| [K8s Diagram Builder](https://www.k8sdiagram.fun/) | Kubernetes distributions and operations | oss | active |
 | [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [k8s-d2](https://github.com/vieitesss/k8s-d2) | Kubernetes distributions and operations | oss | needs-review |
 | [k8s-mechanic](https://github.com/lenaxia/k8s-mechanic) | Kubernetes distributions and operations | oss | needs-review |
 | [k8s-sidecar](https://github.com/kiwigrid/k8s-sidecar) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [k8sql](https://github.com/ndenev/k8sql) | Kubernetes distributions and operations | oss | needs-review |
-| [K8Studio](https://k8studio.io) | Kubernetes distributions and operations | unknown | needs-review |
+| [K8Studio](https://k8studio.io/) | Kubernetes distributions and operations | commercial | active |
 | [K8up](https://k8up.io/) | Backup, disaster recovery and resilience, Kubernetes networking, storage and add-ons | oss | active |
 | [K9s](https://k9scli.io) | Kubernetes distributions and operations | oss | needs-review |
 | [k9sight](https://github.com/doganarif/k9sight) | Kubernetes distributions and operations | oss | needs-review |
 | [Kagent](https://kagent.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Karpenter](https://karpenter.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Kasten K10](https://www.kasten.io) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [KCL](https://www.kcl-lang.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KDash](https://kdash-rs.github.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KEDA](https://keda.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -198,20 +197,20 @@
 | [Komodor](https://komodor.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Kompose](https://kompose.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Kong Gateway](https://developer.konghq.com/gateway/install/) | Kubernetes networking, storage and add-ons | open-core | active |
-| [Kontroler](https://www.kontroler.dev) | Kubernetes distributions and operations | unknown | needs-review |
+| [Kontroler](https://www.kontroler.dev/) | Kubernetes distributions and operations | oss | active |
 | [Kor](https://github.com/yonahd/kor) | Kubernetes distributions and operations | oss | needs-review |
 | [Koreo](https://github.com/koreo-dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Krateo Core Provider](https://github.com/krateoplatformops/core-provider) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Krateo OASGen Provider](https://docs.krateo.io/key-concepts/kog/oasgen-provider) | Kubernetes networking, storage and add-ons | documentation | needs-review |
 | [Kratix](https://www.kratix.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [krew](https://krew.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
-| [kro](https://kro.run) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [kro](https://kro.run/) | Kubernetes networking, storage and add-ons | oss | active |
 | [kroc](https://github.com/pawelcit/kroc) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kuba](https://github.com/hcgatewood/kuba) | Kubernetes distributions and operations | oss | needs-review |
 | [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | needs-review |
 | [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) | Kubernetes distributions and operations | unknown | needs-review |
+| [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) | Kubernetes distributions and operations | oss | active |
 | [kube-bench](https://aquasecurity.github.io/kube-bench) | Kubernetes distributions and operations | oss | needs-review |
 | [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kube-dump](https://kube-dump.woozymasta.ru) | Backup, disaster recovery and resilience | oss | needs-review |
@@ -236,8 +235,8 @@
 | [KubeEdge](https://kubeedge.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeFlame](https://kubeflame.github.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubeflow](https://www.kubeflow.org) | Kubernetes distributions and operations | oss | needs-review |
-| [KubeGUI](https://kubegui.net) | Kubernetes distributions and operations | unknown | needs-review |
-| [KubeHatch](https://vclusterlabs-experiments.github.io/kubehatch) | Kubernetes distributions and operations | unknown | needs-review |
+| [KubeGUI](https://kubegui.net) | Kubernetes distributions and operations | oss | active |
+| [KubeHatch](https://vclusterlabs-experiments.github.io/kubehatch/) | Kubernetes distributions and operations | oss | active |
 | [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) | Chaos and performance engineering | oss | needs-review |
 | [KubeLinter](https://docs.kubelinter.io/) | Kubernetes distributions and operations, Application and cloud security | oss | active |
 | [Kubently](https://kubently.io) | Kubernetes networking, storage and add-ons | unknown | needs-review |
@@ -409,6 +408,7 @@
 | [Uptrace](https://uptrace.dev/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [vcluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | needs-review |
 | [Vector](https://vector.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Veeam Kasten for Kubernetes](https://www.veeam.com/products/cloud/kubernetes-data-protection.html) | Backup, disaster recovery and resilience | commercial | active |
 | [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | active |
 | [VictoriaMetrics](https://victoriametrics.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [VirtualEyes](https://virtualeyes.io/) | Monitoring, metrics, logs and tracing | free-saas | active |

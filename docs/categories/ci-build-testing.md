@@ -864,10 +864,10 @@ Load testing tool for performance testing.
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Automated testing for web, API, and mobile.
+Commercial desktop test-automation IDE for web, API, mobile, and desktop applications, with a limited free mode.
 
 **Use when**
 
@@ -877,7 +877,7 @@ Automated testing for web, API, and mobile.
 
 - You want full OSS freedom or fine-grained CI scripting control.
 
-[Official site](https://github.com/katalon-studio)
+[Official site](https://katalon.com/katalon-studio) · [Documentation](https://docs.katalon.com/katalon-studio)
 
 ### Keptn
 

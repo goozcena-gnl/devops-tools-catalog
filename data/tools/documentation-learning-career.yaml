@@ -1042,15 +1042,17 @@
   - platform-engineer
   lifecycle_stages:
   - learn
-  use_when: []
-  avoid_when: []
+  use_when:
+  - The original Kindling job-search identity and its current ownership can be verified from primary evidence.
+  avoid_when:
+  - Do not substitute an unrelated observability or developer-tool project with the same name.
   deployment_models: []
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L1287
   needs_review: true

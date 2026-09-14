@@ -681,11 +681,11 @@ AI-powered job search assistant for managing applications and career research.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- The original Kindling job-search identity and its current ownership can be verified from primary evidence.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Do not substitute an unrelated observability or developer-tool project with the same name.
 
 [Official site](https://mykindling.io/get-kindling)
 

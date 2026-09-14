@@ -31,7 +31,7 @@
 - [GitLab University](https://university.gitlab.com) — Training resources for GitLab, CI/CD, and DevOps practices.
 - [Gotify](https://gotify.net/) — Self-hosted server and clients for receiving application push notifications.
 - [Infracost](https://www.infracost.io) — Cost estimates for IaC projects.
-- [Jira](https://www.atlassian.com/software/jira) — Issue tracking and project management platform by Atlassian.
+- [Jira](https://www.atlassian.com/software/jira) — Atlassian's commercial work-management product family, led by Jira Cloud with a winding-down Data Center edition.
 - [Kestra](https://kestra.io/) — Workflow orchestration platform with an Apache-licensed core and commercial enterprise and hosted capabilities.
 - [KICS](https://kics.io) — IaC scanning for security issues.
 - [KusionStack](https://kusionstack.io) — Infrastructure automation platform.

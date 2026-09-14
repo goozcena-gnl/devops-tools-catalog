@@ -1445,8 +1445,9 @@
   needs_review: true
 - id: katalon-studio
   name: Katalon Studio
-  summary: Automated testing for web, API, and mobile.
-  official_url: https://github.com/katalon-studio
+  summary: Commercial desktop test-automation IDE for web, API, mobile, and desktop applications, with a limited free mode.
+  official_url: https://katalon.com/katalon-studio
+  documentation_url: https://docs.katalon.com/katalon-studio
   categories:
   - ci-build-testing
   subcategories:
@@ -1462,17 +1463,23 @@
   - QA teams need a low-code, all-in-one testing IDE.
   avoid_when:
   - You want full OSS freedom or fine-grained CI scripting control.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - desktop
+  - local-cli
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:7_Development-Collaboration/README.md#L13
   - legacy:devopstools_final.md#L1035
-  needs_review: true
+  - https://katalon.com/download
+  - https://katalon.com/simple-product-listing
+  - https://docs.katalon.com/katalon-studio/get-started/activate-licenses
+  needs_review: false
 - id: lightpanda
   name: Lightpanda Browser
   summary: Headless browser engine for JavaScript-driven automation without graphical rendering.

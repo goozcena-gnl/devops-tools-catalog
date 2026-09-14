@@ -159,8 +159,9 @@
   needs_review: false
 - id: jira
   name: Jira
-  summary: Issue tracking and project management platform by Atlassian.
+  summary: Atlassian's commercial work-management product family, led by Jira Cloud with a winding-down Data Center edition.
   official_url: https://www.atlassian.com/software/jira
+  documentation_url: https://www.atlassian.com/software/jira/guides
   categories:
   - workflow-automation-chatops
   subcategories:
@@ -173,20 +174,26 @@
   - plan
   - operate
   use_when:
-  - You need deep workflow customization and enterprise integrations.
+  - You need configurable work tracking with Atlassian ecosystem integrations and can select an appropriate Cloud plan.
   avoid_when:
-  - Teams are small and agile—overhead can slow you down.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require a new long-lived self-managed deployment; Jira Data Center reaches end of life on 2029-03-28.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:7_Development-Collaboration/README.md#L4
   - legacy:devopstools_final.md#L1023
-  needs_review: true
+  - https://www.atlassian.com/software/jira
+  - https://www.atlassian.com/software/jira/guides/more/jira-hosting
+  - https://www.atlassian.com/licensing/data-center-end-of-life
+  needs_review: false
 - id: kestra
   name: Kestra
   summary: Workflow orchestration platform with an Apache-licensed core and commercial enterprise and

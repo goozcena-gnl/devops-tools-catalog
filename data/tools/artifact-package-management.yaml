@@ -294,8 +294,8 @@
   needs_review: true
 - id: jfrog-connect
   name: JFrog Connect
-  summary: IoT device update and management platform.
-  official_url: https://jfrog.com/connect
+  summary: Commercial IoT and edge-device management component of the JFrog Platform for fleet monitoring and OTA software delivery.
+  official_url: https://jfrog.com/connect/
   categories:
   - artifact-package-management
   subcategories:
@@ -308,24 +308,31 @@
   - build
   - release
   use_when:
-  - '* You need OTA updates and device fleet management integrated with Artifactory.'
+  - You need fleet management and controlled OTA delivery integrated with Artifactory and JFrog Security.
   avoid_when:
-  - '* You don''t manage IoT/edge devices.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You do not manage Linux-based IoT or edge fleets, or need a standalone open-source updater.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  - endpoint-agent
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L116
   - legacy:devopstools_final.md#L374
-  needs_review: true
+  - https://jfrog.com/connect/
+  - https://jfrog.com/cloud/
+  needs_review: false
 - id: jfrog-distribution
   name: JFrog Distribution
-  summary: Release distribution for artifacts/binaries.
-  official_url: https://jfrog.com/distribution
+  summary: Commercial JFrog product for signing and distributing immutable release bundles to remote and edge locations.
+  official_url: https://jfrog.com/distribution/
+  documentation_url: https://docs.jfrog.com/artifactory/docs/jfrog-distribution
   categories:
   - artifact-package-management
   subcategories:
@@ -338,24 +345,29 @@
   - build
   - release
   use_when:
-  - '* You need to distribute signed release bundles to edge nodes or remote sites.'
+  - You need signed release bundles and governed delivery to JFrog Edge or remote locations.
   avoid_when:
-  - '* You don''t require multi-site artifact distribution.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You do not require multi-site binary distribution or an Enterprise+ JFrog subscription.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L118
   - legacy:devopstools_final.md#L375
-  needs_review: true
+  - https://docs.jfrog.com/artifactory/docs/jfrog-distribution
+  - https://docs.jfrog.com/releases/docs/distribution-release-notes
+  needs_review: false
 - id: jfrog-pipelines
   name: JFrog Pipelines
-  summary: CI/CD automation integrated with JFrog platform.
-  official_url: https://jfrog.com/pipelines
+  summary: Discontinued JFrog Platform CI/CD orchestration product retained for migration and historical reference.
+  official_url: https://docs.jfrog.com/releases/docs/pipeline-deprecation-end-of-life
   categories:
   - artifact-package-management
   subcategories:
@@ -368,24 +380,29 @@
   - build
   - release
   use_when:
-  - '* You want CI/CD tightly integrated with Artifactory and the JFrog ecosystem.'
+  - You are documenting or migrating an existing JFrog Pipelines deployment.
   avoid_when:
-  - '* You already have a CI/CD platform and don''t want vendor lock-in.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You are selecting a supported CI/CD platform; JFrog Pipelines reached end of life on 2026-05-01.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: historical
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L120
   - legacy:devopstools_final.md#L376
-  needs_review: true
+  - https://docs.jfrog.com/releases/docs/pipeline-deprecation-end-of-life
+  needs_review: false
 - id: jfrog-platform
   name: JFrog Platform
-  summary: Unified DevSecOps platform for artifact management, security, CI/CD, and distribution.
-  official_url: https://jfrog.com
+  summary: Commercial software supply-chain platform unifying artifact and AI asset management, security, governance, and release delivery.
+  official_url: https://jfrog.com/platform/
+  documentation_url: https://docs.jfrog.com/installation/docs/installing-the-jfrog-platform
   categories:
   - artifact-package-management
   subcategories:
@@ -398,20 +415,27 @@
   - build
   - release
   use_when:
-  - '* You want a single vendor for artifact management, security scanning, and distribution.'
+  - You want an integrated commercial system of record for artifacts, security, governance, and release delivery.
   avoid_when:
-  - '* You prefer best-of-breed tools or want to avoid enterprise licensing costs.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You prefer independent best-of-breed services or cannot accept platform subscription and operational coupling.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  - hybrid-cloud
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L122
   - legacy:devopstools_final.md#L377
-  needs_review: true
+  - https://jfrog.com/platform/
+  - https://docs.jfrog.com/installation/docs/installing-the-jfrog-platform
+  - https://docs.jfrog.com/installation/docs/feature-comparison-matrix-for-self-mangaged-jpds
+  needs_review: false
 - id: kubesearch
   name: Kubesearch
   summary: Search engine for Helm charts and Kubernetes packages.

@@ -2293,8 +2293,11 @@
   needs_review: false
 - id: jarvis-os
   name: JARVIS OS
-  summary: AI-native operating system and LLM security research platform.
-  official_url: https://jarvisoslinux.org
+  summary: Experimental AI-native Linux distribution that integrates an LLM daemon with a custom kernel interface for security research.
+  official_url: https://www.jarvisoslinux.org/
+  repository_url: https://github.com/JarvisOSLinux/jarvisos
+  repository_archived: false
+  documentation_url: https://www.jarvisoslinux.org/download/
   categories:
   - application-cloud-security
   subcategories:
@@ -2305,18 +2308,26 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You are evaluating kernel-integrated local LLM security in a dedicated research environment.
+  avoid_when:
+  - You need a mature general-purpose operating system or a production-supported AI platform.
+  deployment_models:
+  - local-system
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  commercial_offering: false
+  maturity: experimental
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L873
-  needs_review: true
+  - https://www.jarvisoslinux.org/download/
+  - https://github.com/JarvisOSLinux/jarvisos
+  - https://github.com/JarvisOSLinux/jarvisos/blob/main/LICENSE
+  needs_review: false
 - id: john-the-ripper
   name: John the Ripper
   summary: Password security auditing and recovery tool supporting many hash and encrypted-file formats.
@@ -2523,8 +2534,9 @@
   needs_review: true
 - id: kiuwan
   name: Kiuwan
-  summary: Application security and code quality platform.
-  official_url: https://www.kiuwan.com
+  summary: Commercial application-security platform for static analysis, software composition analysis, and code quality governance.
+  official_url: https://www.kiuwan.com/
+  documentation_url: https://support.kiuwan.com/hc/en-us
   categories:
   - application-cloud-security
   subcategories:
@@ -2536,20 +2548,26 @@
   - test
   - secure
   use_when:
-  - Combined SAST and code quality in enterprise CI/CD.
+  - You need centrally governed SAST, SCA, and code-quality analysis across enterprise CI/CD pipelines.
   avoid_when:
-  - You have separate, preferred tools for each concern.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an open-source scanner or already standardize on separate tools for each analysis concern.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:6_Security/README.md#L30
   - legacy:devopstools_final.md#L875
-  needs_review: true
+  - https://www.kiuwan.com/
+  - https://support.kiuwan.com/hc/en-us/articles/36993952204561-Kiuwan-Analysis-Options
+  - https://support.kiuwan.com/hc/en-us/articles/36362446892305-Kiuwan-On-Premises-Knowledge-Base
+  needs_review: false
 - id: kloak
   name: Kloak
   summary: eBPF-based Kubernetes runtime proxy that can keep application secrets out of workload processes.
