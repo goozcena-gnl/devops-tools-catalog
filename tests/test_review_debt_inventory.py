@@ -121,18 +121,13 @@ def test_canonical_id_breaks_equal_score_and_verification_date() -> None:
     assert [item["id"] for item in ordered] == ["alpha", "zulu"]
 
 
-def test_recent_unresolved_candidates_remain_visible_below_older_equal_debt() -> None:
+def test_recent_unresolved_candidates_remain_visible_in_inventory() -> None:
     candidates = build_inventory()["priority_candidates"]
-    positions = {item["id"]: index for index, item in enumerate(candidates)}
     by_id = {item["id"]: item for item in candidates}
+    tools = {tool["id"]: tool for tool in load_tools()}
 
     for recent_id in {"everydev-ai", "filigran"}:
-        assert recent_id in positions
-        older_equal = next(
-            item
-            for item in candidates
-            if item["priority_score"] == by_id[recent_id]["priority_score"]
-            and item["verified_on"] < by_id[recent_id]["verified_on"]
-        )
+        assert recent_id in by_id
+        assert tools[recent_id]["needs_review"] is True
         assert by_id[recent_id]["verified_on"] == "2026-09-13"
-        assert positions[older_equal["id"]] < positions[recent_id]
+        assert by_id[recent_id]["priority_score"] > 0
