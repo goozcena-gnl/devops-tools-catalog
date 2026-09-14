@@ -235,14 +235,14 @@ Universal secrets management platform.
 
 [Official site](https://www.doppler.com) · [Source repository](https://github.com/DopplerHQ/cli)
 
-### Entrust KeyControl
+### Entrust Cryptographic Security Platform Key Manager
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Key management for enterprise.
+Enterprise key-management software, formerly KeyControl, for centralizing encryption keys and integrating with KMIP clients, HSMs, and cloud key-management services.
 
 **Use when**
 
@@ -252,7 +252,7 @@ Key management for enterprise.
 
 - For cloud-native workloads where native KMS services suffice.
 
-[Official site](https://www.entrust.com/products/key-management/keycontrol)
+[Official site](https://www.entrust.com/products/key-management) · [Documentation](https://www.entrust.com/products/cryptographic-security-platform)
 
 ### Eviden KMS
 
@@ -298,10 +298,10 @@ Sync external secrets into Kubernetes.
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Hardware key management.
+Enterprise key-management server backed by a FIPS-validated hardware security module for centralized key lifecycle, policy, and cryptographic operations.
 
 **Use when**
 
@@ -311,7 +311,7 @@ Hardware key management.
 
 - Cloud KMS or software-based solutions meet your compliance needs.
 
-[Official site](https://www.futurex.com/products/key-management-server/kmes-series-3)
+[Official site](https://www.futurex.com/products/key-management-server/kmes-series-3) · [Documentation](https://www.futurex.com/resources)
 
 ### HashiCorp Boundary
 

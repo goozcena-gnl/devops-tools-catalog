@@ -67,6 +67,7 @@
 - [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) — Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
 - [Cilium](https://cilium.io) — EBPF-based networking, observability, and security for Kubernetes.
 - [CircleCI](https://circleci.com) — Commercial CI/CD platform offered as a managed cloud service or self-hosted CircleCI Server, with optional self-hosted runners.
+- [Cisco Duo](https://duo.com/) — Cisco cloud-delivered identity security family spanning multi-factor authentication, passwordless access, SSO, device trust, and access policy.
 - [Cisco Talos Intelligence](https://www.talosintelligence.com) — Threat intelligence platform providing IP/domain reputation, vulnerability research, malware analysis, and security advisories by Cisco.
 - [CloudBees](https://www.cloudbees.com) — Enterprise CI/CD built around Jenkins.
 - [CloudFox](https://github.com/BishopFox/cloudfox) — Cloud environment situational-awareness utility for authorized AWS, Azure, and GCP security assessments.
@@ -114,25 +115,23 @@
 - [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) — Proxy that restricts access to the Docker socket API.
 - [Dockle](https://containers.goodwith.tech) — Container image linter for security best practices.
 - [Dradis Community Edition](https://dradis.com/ce/) — Self-hosted collaboration and reporting platform for security assessment projects.
-- [Drata](https://drata.com) — Security and compliance automation platform.
+- [Drata](https://drata.com/) — Commercial trust-management platform for compliance automation, control monitoring, evidence collection, and risk workflows.
 - [drawDB](https://www.drawdb.app) — Database diagram editor.
 - [Drone](https://www.drone.io) — Container-native CI/CD platform.
-- [Duo Security](https://duo.com) — Multi-factor authentication and access security.
 - [ESLint](https://eslint.org) — Pluggable JavaScript and TypeScript linter.
-- [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) — Commercial WAF for NGINX.
+- [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) — Commercial web application firewall for applications and APIs running on NGINX Plus or NGINX Ingress Controller, formerly NGINX App Protect WAF.
 - [fail2ban](https://github.com/fail2ban/fail2ban) — Intrusion prevention by monitoring logs and banning abusive IPs (e.g., SSH).
 - [Falco](https://falco.org) — Runtime security for cloud-native environments.
 - [Feint](https://github.com/stephrobert/feint) — Local emulator for selected Scaleway, Outscale, and Exoscale cloud APIs.
 - [feroxbuster](https://github.com/epi052/feroxbuster) — Recursive web content discovery utility for authorized application assessment.
 - [ffuf](https://github.com/ffuf/ffuf) — Web content and parameter discovery utility for authorized HTTP security assessment.
-- [Filigran](https://filigran.io) — Open threat intelligence and incident response platform (OpenCTI / OpenBAS) for collecting, analyzing, and acting on cyber threat intelligence.
-- [Firebase Test Lab](https://firebase.google.com/products/test-lab) — Cloud-based app testing on real and virtual devices.
+- [Filigran](https://filigran.io/platform) — Vendor and XTM Platform umbrella spanning the distinct OpenCTI, OpenAEV, and XTM One products rather than one precise software adoption identity.
+- [Firebase Test Lab](https://firebase.google.com/products/test-lab) — Google-hosted mobile application testing service that runs Android and iOS tests on real and virtual devices through Firebase and Google Cloud tooling.
 - [firewalld](https://firewalld.org) — Dynamically managed firewall for Linux with D-Bus interface.
 - [FitNesse](https://fitnesse.org) — Acceptance testing framework.
 - [Floci](https://floci.io/aws/) — Local emulator for selected AWS services used in development, testing, and CI workflows.
 - [Floci-AZ](https://floci.io/floci-az/) — Local emulator for selected Azure services exposed through a single native process.
-- [Fortify Static Code Analyzer](https://www.opentext.com/products/static-application-security-testing) — Static application security testing.
-- [FOSSA](https://fossa.com) — Software supply chain and license compliance platform.
+- [FOSSA](https://fossa.com/) — Commercial software supply-chain management platform for dependency licence compliance, vulnerability analysis, quality signals, and SBOM workflows.
 - [Ghostty](https://ghostty.org) — Fast, cross-platform GPU-accelerated terminal emulator with native desktop integration.
 - [Ghostwriter](https://www.ghostwriter.wiki/home) — Collaborative platform for managing security assessments, findings, evidence, and reports.
 - [Gibson](https://github.com/HackingLZ/gibson) — Network monitoring and threat-hunting tool that maps processes to connections, flags beaconing, and helps generate firewall rules.
@@ -248,6 +247,7 @@
 - [OpenSCAP](https://www.open-scap.org) — Security Content Automation Protocol.
 - [OpenSCAP Tools](https://www.open-scap.org/tools) — Collection of OpenSCAP tools.
 - [OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) — Tekton-based CI/CD experience packaged and supported for OpenShift clusters (built on OSS Tekton).
+- [OpenText Fortify Static Code Analyzer](https://www.opentext.com/products/static-application-security-testing) — Commercial static application security testing engine for source, bytecode, and binary analysis across developer and CI/CD workflows.
 - [OpenWiki](https://github.com/langchain-ai/openwiki) — CLI that writes and maintains agent documentation for your codebase.
 - [OpenZiti](https://netfoundry.io/docs/openziti) — Open-source zero-trust overlay networking platform.
 - [OSINT Framework](https://osintframework.com) — Curated framework of OSINT resources and investigative tools.

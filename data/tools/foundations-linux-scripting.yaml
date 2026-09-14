@@ -597,8 +597,10 @@
   license_spdx: MIT OR Apache-2.0
 - id: flathub
   name: Flathub
-  summary: Main application repository ("app store") for Flatpak packages.
+  summary: Community-run hosted repository and discovery service for distributing Flatpak applications
+    across Linux distributions.
   official_url: https://flathub.org
+  documentation_url: https://docs.flathub.org/
   categories:
   - foundations-linux-scripting
   subcategories:
@@ -615,17 +617,20 @@
   avoid_when:
   - For server-side or headless deployments where native packages are more appropriate.* <!-- cspell:ignore
     Flathub -->.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  license_model: free-saas
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
   - legacy:1_Foundational-Skills/README.md#L29
   - legacy:devopstools_final.md#L108
-  needs_review: true
+  - https://docs.flathub.org/docs/for-users/installation/
+  - https://docs.flathub.org/docs/about/overview/
+  needs_review: false
 - id: flatpak
   name: Flatpak
   summary: Universal Linux application isolation and distribution framework.

@@ -69,7 +69,7 @@
 - [Exercism](https://exercism.org) — Language practice tracks across many programming languages.
 - [fd](https://github.com/sharkdp/fd) — Simple, fast alternative to `find`.
 - [Feint](https://github.com/stephrobert/feint) — Local emulator for selected Scaleway, Outscale, and Exoscale cloud APIs.
-- [Flathub](https://flathub.org) — Main application repository ("app store") for Flatpak packages.
+- [Flathub](https://flathub.org) — Community-run hosted repository and discovery service for distributing Flatpak applications across Linux distributions.
 - [Flatpak](https://flatpak.org) — Universal Linux application isolation and distribution framework.
 - [Floci](https://floci.io/aws/) — Local emulator for selected AWS services used in development, testing, and CI workflows.
 - [Floci-AZ](https://floci.io/floci-az/) — Local emulator for selected Azure services exposed through a single native process.

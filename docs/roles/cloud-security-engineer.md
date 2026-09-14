@@ -42,6 +42,7 @@
 | [Checkmarx One](https://checkmarx.com) | Application and cloud security | commercial | active |
 | [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) | Application and cloud security | oss | active |
 | [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
+| [Cisco Duo](https://duo.com/) | Application and cloud security | commercial | active |
 | [Cisco Talos Intelligence](https://www.talosintelligence.com) | Application and cloud security | documentation | needs-review |
 | [CloudFox](https://github.com/BishopFox/cloudfox) | Application and cloud security | oss | active |
 | [CodeQL](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql) | Application and cloud security | oss | active |
@@ -65,21 +66,19 @@
 | [Dockle](https://containers.goodwith.tech) | Application and cloud security | oss | active |
 | [Doppler](https://www.doppler.com) | IAM, secrets and certificate management | unknown | needs-review |
 | [Dradis Community Edition](https://dradis.com/ce/) | Application and cloud security | open-core | active |
-| [Drata](https://drata.com) | Application and cloud security | unknown | needs-review |
-| [Duo Security](https://duo.com) | Application and cloud security | unknown | needs-review |
-| [Entrust KeyControl](https://www.entrust.com/products/key-management/keycontrol) | IAM, secrets and certificate management | unknown | needs-review |
+| [Drata](https://drata.com/) | Application and cloud security | commercial | active |
+| [Entrust Cryptographic Security Platform Key Manager](https://www.entrust.com/products/key-management) | IAM, secrets and certificate management | commercial | active |
 | [Eviden KMS](https://github.com/Cosmian/kms) | IAM, secrets and certificate management | source-available | active |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
-| [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) | Application and cloud security | unknown | needs-review |
+| [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) | Application and cloud security | commercial | active |
 | [fail2ban](https://github.com/fail2ban/fail2ban) | Application and cloud security | oss | needs-review |
 | [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [feroxbuster](https://github.com/epi052/feroxbuster) | Application and cloud security | oss | active |
 | [ffuf](https://github.com/ffuf/ffuf) | Application and cloud security | oss | active |
-| [Filigran](https://filigran.io) | Application and cloud security | unknown | needs-review |
+| [Filigran](https://filigran.io/platform) | Application and cloud security | unknown | needs-review |
 | [firewalld](https://firewalld.org) | Application and cloud security | oss | needs-review |
-| [Fortify Static Code Analyzer](https://www.opentext.com/products/static-application-security-testing) | Application and cloud security | unknown | needs-review |
-| [FOSSA](https://fossa.com) | Application and cloud security | unknown | needs-review |
-| [Futurex KMES Series 3](https://www.futurex.com/products/key-management-server/kmes-series-3) | IAM, secrets and certificate management | unknown | needs-review |
+| [FOSSA](https://fossa.com/) | Application and cloud security | commercial | active |
+| [Futurex KMES Series 3](https://www.futurex.com/products/key-management-server/kmes-series-3) | IAM, secrets and certificate management | commercial | active |
 | [Ghostwriter](https://www.ghostwriter.wiki/home) | Application and cloud security | oss | active |
 | [Gibson](https://github.com/HackingLZ/gibson) | Application and cloud security | oss | needs-review |
 | [Gitleaks](https://gitleaks.io) | Application and cloud security | oss | needs-review |
@@ -151,6 +150,7 @@
 | [OpenSCAP Tools](https://www.open-scap.org/tools) | Application and cloud security | oss | needs-review |
 | [OpenSSH](https://www.openssh.org) | IAM, secrets and certificate management | oss | needs-review |
 | [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) | IAM, secrets and certificate management | oss | needs-review |
+| [OpenText Fortify Static Code Analyzer](https://www.opentext.com/products/static-application-security-testing) | Application and cloud security | commercial | active |
 | [OpenZiti](https://netfoundry.io/docs/openziti) | Application and cloud security | oss | needs-review |
 | [OPNsense](https://opnsense.org/opnsense/) | Application and cloud security | oss | active |
 | [OSINT Framework](https://osintframework.com) | Application and cloud security | documentation | needs-review |

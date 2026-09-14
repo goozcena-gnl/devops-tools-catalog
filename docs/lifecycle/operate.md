@@ -21,6 +21,8 @@
 - [AlmaLinux OS](https://almalinux.org/) — Community-governed enterprise Linux distribution with RHEL-compatible binaries and server and cloud images.
 - [Alpine Linux](https://github.com/alpinelinux) — Security-oriented, lightweight Linux distribution.
 - [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) — AWS monitoring and observability service.
+- [Amazon ECS](https://aws.amazon.com/ecs/) — AWS-managed container orchestration service for deploying and scaling containerized applications without operating a separate control plane.
+- [Amazon EKS](https://aws.amazon.com/eks/) — AWS-managed Kubernetes service with an AWS-operated Kubernetes control plane and multiple node and serverless compute options.
 - [Amazon Q Developer](https://aws.amazon.com/q/developer) — AI code suggestions for AWS and more.
 - [Amazon Web Services (AWS)](https://aws.amazon.com/) — Comprehensive cloud computing platform by Amazon.
 - [Ansible](https://www.ansible.com) — Agentless configuration management, orchestration, and automation.
@@ -54,6 +56,7 @@
 - [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) — AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
 - [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — MCP server for AWS Billing & Cost Management use cases (announced by AWS).
 - [AWS CLI](https://aws.amazon.com/cli/) — Official command-line interface for administering Amazon Web Services from shells and automation.
+- [AWS Fargate](https://aws.amazon.com/fargate/) — AWS-managed serverless container compute execution model used by Amazon ECS tasks and Amazon EKS pods.
 - [AWS Fault Injection Service](https://aws.amazon.com/fis) — Managed AWS service for running controlled fault-injection experiments against AWS workloads.
 - [AWS Lambda](https://aws.amazon.com/lambda) — Serverless compute service by AWS.
 - [AWS MCP](https://awslabs.github.io/mcp) — AWS implementation of Model Context Protocol.
@@ -170,8 +173,8 @@
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) — Proprietary desktop application bundling Docker container, image, Kubernetes, and developer tooling for macOS, Windows, and Linux.
 - [Docker Hub MCP](https://hub.docker.com/mcp) — Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
 - [Docker MCP Gateway](https://github.com/docker/mcp-gateway) — Docker CLI plugin and gateway for discovering, running, and routing MCP servers in containers.
-- [Docker Swarm](https://docs.docker.com/engine/swarm) — Container orchestration system by Docker.
-- [Dockhand](https://dockhand.pro) — Kubernetes deployment and management tool.
+- [Docker Swarm](https://docs.docker.com/engine/swarm) — Ambiguous umbrella name spanning current Swarm mode embedded in Docker Engine and the archived historical standalone Docker Swarm project.
+- [Dockhand](https://dockhand.pro/) — Self-hosted Docker management application for containers, Compose stacks, images, volumes, networks, and multiple Docker environments.
 - [Dockur macOS](https://github.com/dockur/macos) — MacOS in a Docker container.
 - [Dockur Windows](https://github.com/dockur/windows) — Windows in a Docker container.
 - [Dokploy](https://dokploy.com/) — Self-hostable platform for deploying applications, Docker Compose stacks, and databases across user-managed servers.
@@ -180,18 +183,16 @@
 - [dotnet-operator-sdk](https://dotnet.github.io/dotnet-operator-sdk) — Build Kubernetes operators/controllers using .NET.
 - [Dozzle](https://dozzle.dev) — Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes support.
 - [duf](https://github.com/muesli/duf) — Command-line utility that presents disk usage and free-space information for mounted filesystems.
-- [Dynatrace](https://github.com/dynatrace) — Application performance monitoring and observability platform.
+- [Dynatrace](https://www.dynatrace.com/) — Commercial observability and application-performance platform spanning infrastructure, applications, logs, security, digital experience, and AI-assisted analysis.
 - [Easykube](https://torloejborg.github.io/easykube/easykube/latest) — Developer tool for reasoning about and running complex microservice backends locally with Kubernetes.
 - [EasyMile PostgreSQL Operator](https://easymile.github.io/postgresql-operator) — Kubernetes operator for managing PostgreSQL instances.
 - [ecc.tools](https://ecc.tools) — OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
 - [Eclipse Jetty](https://jetty.org/) — Java HTTP server and servlet container usable standalone or embedded.
-- [ECS](https://aws.amazon.com/ecs) — Amazon Elastic Container Service.
-- [EKS](https://aws.amazon.com/eks) — Amazon Elastic Kubernetes Service.
 - [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) — Visualize EKS node usage and capacity.
 - [Elastic APM Server](https://www.elastic.co/observability/application-performance-monitoring) — APM intake/processing for Elastic Observability (agents + server + UI).
 - [Elastic Stack (ELK)](https://www.elastic.co/elastic-stack) — Search/analytics/log platform; source licensing varies by component (Elastic License/SSPL and AGPL option for parts).
 - [Elemental](https://elemental.docs.rancher.com/) — Rancher-integrated stack for centrally managing immutable operating-system images on Kubernetes nodes.
-- [Entrust KeyControl](https://www.entrust.com/products/key-management/keycontrol) — Key management for enterprise.
+- [Entrust Cryptographic Security Platform Key Manager](https://www.entrust.com/products/key-management) — Enterprise key-management software, formerly KeyControl, for centralizing encryption keys and integrating with KMIP clients, HSMs, and cloud key-management services.
 - [Envoy](https://www.envoyproxy.io) — Cloud-native L4/L7 proxy used for edge routing, service networking, and observability-aware traffic control.
 - [Envoy Gateway](https://gateway.envoyproxy.io) — Gateway API implementation for Envoy with traffic management, security, and observability features.
 - [etcd](https://etcd.io) — Distributed, reliable key-value store used as the primary data store for Kubernetes.
@@ -206,12 +207,11 @@
 - [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) — Kubernetes add-on that configures public DNS servers with information about exposed Kubernetes services.
 - [eza](https://eza.rocks/) — Directory-listing CLI with file metadata and Git-aware presentation.
 - [Falco](https://falco.org) — Runtime security for cloud-native environments.
-- [Fargate](https://aws.amazon.com/fargate) — Serverless compute for containers.
 - [fd](https://github.com/sharkdp/fd) — Simple, fast alternative to `find`.
 - [Firecracker](https://firecracker-microvm.github.io) — Lightweight virtualization for microVMs.
 - [flannel](https://github.com/flannel-io/flannel) — Simple Layer 3 network fabric (CNI) for Kubernetes.
 - [Flatcar Container Linux](https://www.flatcar.org) — Immutable Linux distro for containers.
-- [Flathub](https://flathub.org) — Main application repository ("app store") for Flatpak packages.
+- [Flathub](https://flathub.org) — Community-run hosted repository and discovery service for distributing Flatpak applications across Linux distributions.
 - [Flatpak](https://flatpak.org) — Universal Linux application isolation and distribution framework.
 - [Flawless](https://github.com/William-Lu-stack/Flawless) — AI SRE AgenticOps agent for autonomous incident detection, diagnosis, and remediation across Kubernetes and cloud infrastructure.
 - [flow](https://github.com/programmersd21/flow) — Terminal tool for visualizing live network traffic and behavior.
@@ -222,10 +222,10 @@
 - [freeCodeCamp](https://www.freecodecamp.org) — Free learning platform for multi-language coding tutorials.
 - [FreeLens](https://freelensapp.github.io) — Community-maintained Kubernetes IDE fork.
 - [fulling](https://github.com/FullAgent/fulling) — AI-powered full-stack engineer agent built with Next.js, Claude, and PostgreSQL, using Kubernetes as infrastructure.
-- [Futurex KMES Series 3](https://www.futurex.com/products/key-management-server/kmes-series-3) — Hardware key management.
-- [FuturFusion](https://futurfusion.io) — Dell-backed VMware exit solution that preserves and migrates existing VMware estates to open infrastructure.
+- [Futurex KMES Series 3](https://www.futurex.com/products/key-management-server/kmes-series-3) — Enterprise key-management server backed by a FIPS-validated hardware security module for centralized key lifecycle, policy, and cryptographic operations.
+- [FuturFusion](https://futurfusion.io) — Commercial virtualization management and migration suite built on open-source infrastructure for operating and moving workloads away from VMware estates.
 - [Garage](https://garagehq.deuxfleurs.fr) — Lightweight S3-compatible object storage.
-- [Garage WebUI](https://hub.docker.com/r/khairul169/garage-webui) — Web interface for Garage object storage.
+- [Garage WebUI](https://github.com/khairul169/garage-webui) — Independent, self-hosted web administration interface for Garage object storage, packaged as a container and maintained separately from Garage itself.
 - [Garden](https://garden.io) — Developer-first automation for building/testing/deploying cloud-native apps.
 - [Gardener](https://gardener.cloud/) — Kubernetes API-driven system for creating and operating homogeneous managed Kubernetes clusters across infrastructure providers.
 - [Gateway API](https://gateway-api.sigs.k8s.io) — Kubernetes service networking APIs.

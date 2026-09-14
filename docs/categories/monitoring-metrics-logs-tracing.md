@@ -505,10 +505,10 @@ Self-hosted real-time Docker and container log viewer with alerting, remote host
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Application performance monitoring and observability platform.
+Commercial observability and application-performance platform spanning infrastructure, applications, logs, security, digital experience, and AI-assisted analysis.
 
 **Use when**
 
@@ -518,7 +518,7 @@ Application performance monitoring and observability platform.
 
 - You need lightweight, self-hosted, or cost-sensitive monitoring.
 
-[Official site](https://github.com/dynatrace)
+[Official site](https://www.dynatrace.com/) · [Documentation](https://docs.dynatrace.com/)
 
 ### Elastic APM Server
 

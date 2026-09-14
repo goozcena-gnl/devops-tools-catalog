@@ -95,10 +95,10 @@
 | [dsoxlab](https://github.com/stephrobert/dsoxlab) | Documentation, learning and career resources | documentation | needs-review |
 | [ecc.tools](https://ecc.tools) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [endoflife.date](https://endoflife.date) | Documentation, learning and career resources | documentation | needs-review |
-| [Entrust KeyControl](https://www.entrust.com/products/key-management/keycontrol) | IAM, secrets and certificate management | unknown | needs-review |
-| [Env0](https://github.com/env0) | Infrastructure as Code | unknown | needs-review |
+| [Entrust Cryptographic Security Platform Key Manager](https://www.entrust.com/products/key-management) | IAM, secrets and certificate management | commercial | active |
+| [env zero](https://www.envzero.com/) | Infrastructure as Code | commercial | active |
 | [etcd](https://etcd.io) | Databases, caching and data infrastructure | oss | needs-review |
-| [EveryDev.ai](https://www.everydev.ai) | Documentation, learning and career resources | unknown | needs-review |
+| [EveryDev.ai](https://www.everydev.ai/) | Documentation, learning and career resources | unknown | active |
 | [Eviden KMS](https://github.com/Cosmian/kms) | IAM, secrets and certificate management | source-available | active |
 | [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Exoscale SKS](https://www.exoscale.com/sks/) | Kubernetes distributions and operations | commercial | active |
@@ -112,9 +112,9 @@
 | [Floci-AZ](https://floci.io/floci-az/) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
 | [FreeCodeCamp DevOps](https://www.freecodecamp.org/news/tag/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [fulling](https://github.com/FullAgent/fulling) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Futurex KMES Series 3](https://www.futurex.com/products/key-management-server/kmes-series-3) | IAM, secrets and certificate management | unknown | needs-review |
+| [Futurex KMES Series 3](https://www.futurex.com/products/key-management-server/kmes-series-3) | IAM, secrets and certificate management | commercial | active |
 | [Garage](https://garagehq.deuxfleurs.fr) | Databases, caching and data infrastructure | oss | needs-review |
-| [Garage WebUI](https://hub.docker.com/r/khairul169/garage-webui) | Databases, caching and data infrastructure | unknown | needs-review |
+| [Garage WebUI](https://github.com/khairul169/garage-webui) | Databases, caching and data infrastructure | oss | active |
 | [Gardener](https://gardener.cloud/) | Kubernetes distributions and operations | oss | active |
 | [genai-agentos](https://github.com/genai-works-org/genai-agentos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [GitHub Copilot](https://github.com/features/copilot) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |

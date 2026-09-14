@@ -51,9 +51,9 @@
 - [endoflife.date](https://endoflife.date) — Track software end-of-life dates.
 - [Entire](https://entire.io) — Developer platform with an open-source CLI that captures and versions AI agent coding sessions as searchable checkpoints alongside Git commits.
 - [Eraser DiagramGPT](https://www.eraser.io/diagramgpt) — AI-assisted diagramming tool.
-- [EveryDev.ai](https://www.everydev.ai) — Community-driven directory, comparison hub, and discussion platform for AI developer tools.
+- [EveryDev.ai](https://www.everydev.ai/) — Active directory and comparison site for discovering AI developer tools; official evidence confirms the service identity but does not document a product-level license or operating model.
 - [Exercism](https://exercism.org) — Language practice tracks across many programming languages.
-- [Flathub](https://flathub.org) — Main application repository ("app store") for Flatpak packages.
+- [Flathub](https://flathub.org) — Community-run hosted repository and discovery service for distributing Flatpak applications across Linux distributions.
 - [Flatpak](https://flatpak.org) — Universal Linux application isolation and distribution framework.
 - [freeCodeCamp](https://www.freecodecamp.org) — Free learning platform for multi-language coding tutorials.
 - [FreeCodeCamp DevOps](https://www.freecodecamp.org/news/tag/devops) — DevOps tutorials.

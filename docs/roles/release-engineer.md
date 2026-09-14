@@ -58,7 +58,7 @@
 | [Docker Hub](https://www.docker.com/products/docker-hub) | Artifact and package management | commercial | active |
 | [Dokku](https://dokku.com) | CD, GitOps, release and promotion | oss | active |
 | [Drone](https://www.drone.io) | CI, build and testing | open-core | active |
-| [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | unknown | needs-review |
+| [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | commercial | active |
 | [FitNesse](https://fitnesse.org) | CI, build and testing | oss | active |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
 | [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | needs-review |

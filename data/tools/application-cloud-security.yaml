@@ -1479,8 +1479,9 @@
   needs_review: false
 - id: drata
   name: Drata
-  summary: Security and compliance automation platform.
-  official_url: https://drata.com
+  summary: Commercial trust-management platform for compliance automation, control monitoring, evidence collection, and risk workflows.
+  official_url: https://drata.com/
+  documentation_url: https://help.drata.com/en/
   categories:
   - application-cloud-security
   subcategories:
@@ -1492,24 +1493,30 @@
   - test
   - secure
   use_when:
-  - SOC 2/ISO 27001 compliance automation with continuous monitoring.
+  - You need a managed platform to automate evidence collection, continuously monitor controls, and coordinate audit-readiness and GRC work.
   avoid_when:
-  - You just need a vulnerability scanner.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You only need vulnerability scanning or require an open-source, self-hosted compliance platform.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://drata.com/
+  - https://help.drata.com/en/
+  - https://help.drata.com/en/articles/9941251-welcome-to-drata
   - legacy:6_Security/README.md#L23
   - legacy:devopstools_final.md#L859
-  needs_review: true
+  needs_review: false
 - id: duo-security
-  name: Duo Security
-  summary: Multi-factor authentication and access security.
-  official_url: https://duo.com
+  name: Cisco Duo
+  summary: Cisco cloud-delivered identity security family spanning multi-factor authentication, passwordless access, SSO, device trust, and access policy.
+  official_url: https://duo.com/
+  documentation_url: https://duo.com/docs
   categories:
   - application-cloud-security
   subcategories:
@@ -1521,24 +1528,31 @@
   - test
   - secure
   use_when:
-  - Turnkey MFA integration across VPN/SSH/web apps.
+  - You need a cloud-managed identity security service for MFA and access policy across VPN, SSH, web, SaaS, and on-premises applications.
   avoid_when:
-  - You already have MFA via your IdP (Okta, Azure AD, etc.).
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - Your existing identity provider already supplies the required authentication and device-trust controls without another cloud service.
+  deployment_models:
+  - hosted-saas
+  - endpoint-agent
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://duo.com/about/duo-security-explainer
+  - https://duo.com/docs
+  - https://duo.com/editions-and-pricing
   - legacy:6_Security/README.md#L68
   - legacy:devopstools_final.md#L937
-  needs_review: true
+  needs_review: false
 - id: f5-waf-for-nginx
   name: F5 WAF for NGINX
-  summary: Commercial WAF for NGINX.
+  summary: Commercial web application firewall for applications and APIs running on NGINX Plus or NGINX Ingress Controller, formerly NGINX App Protect WAF.
   official_url: https://www.f5.com/products/nginx/f5-waf-for-nginx
+  documentation_url: https://docs.nginx.com/waf/
   categories:
   - application-cloud-security
   subcategories:
@@ -1553,17 +1567,24 @@
   - You need vendor-supported, enterprise-grade WAF with F5 threat intelligence.
   avoid_when:
   - Budget is limited (consider ModSecurity/Coraza).
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - self-hosted
+  - container
+  - kubernetes
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://docs.nginx.com/waf/fundamentals/overview
+  - https://docs.nginx.com/waf/install/virtual-environment/
+  - https://www.f5.com/products/nginx/f5-waf-for-nginx
   - legacy:6_Security/README.md#L24
   - legacy:devopstools_final.md#L860
-  needs_review: true
+  needs_review: false
 - id: fail2ban
   name: fail2ban
   summary: Intrusion prevention by monitoring logs and banning abusive IPs (e.g., SSH).
@@ -1655,9 +1676,8 @@
   needs_review: false
 - id: filigran
   name: Filigran
-  summary: Open threat intelligence and incident response platform (OpenCTI / OpenBAS) for collecting,
-    analyzing, and acting on cyber threat intelligence.
-  official_url: https://filigran.io
+  summary: Vendor and XTM Platform umbrella spanning the distinct OpenCTI, OpenAEV, and XTM One products rather than one precise software adoption identity.
+  official_url: https://filigran.io/platform
   categories:
   - application-cloud-security
   subcategories:
@@ -1668,16 +1688,22 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
+  use_when:
+  - You are evaluating Filigran's broader eXtended Threat Management product family.
+  avoid_when:
+  - You need one precise adoption or licensing boundary; evaluate OpenCTI, OpenAEV, and XTM One separately while this umbrella record is reconciled.
   deployment_models: []
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://filigran.io/platform
+  - https://filigran.io/products/opencti
+  - https://filigran.io/products/openaev
+  - https://github.com/OpenCTI-Platform/opencti/blob/master/LICENSE
   - legacy:devopstools_final.md#L862
   needs_review: true
 - id: firewalld
@@ -1711,9 +1737,10 @@
   - legacy:devopstools_final.md#L939
   needs_review: true
 - id: fortify-static-code-analyzer
-  name: Fortify Static Code Analyzer
-  summary: Static application security testing.
+  name: OpenText Fortify Static Code Analyzer
+  summary: Commercial static application security testing engine for source, bytecode, and binary analysis across developer and CI/CD workflows.
   official_url: https://www.opentext.com/products/static-application-security-testing
+  documentation_url: https://www.microfocus.com/documentation/fortify-static-code/
   categories:
   - application-cloud-security
   subcategories:
@@ -1728,21 +1755,28 @@
   - Enterprise SAST with broad language support and compliance reporting.
   avoid_when:
   - For small or OSS projects where CodeQL/Semgrep are sufficient.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://www.opentext.com/products/static-application-security-testing
+  - https://www.microfocus.com/documentation/fortify-static-code/
+  - https://www.opentext.com/assets/documents/en-US/pdf/opentext-ds-fortify-static-code-analyzer-static-application-security-testing-en.pdf
   - legacy:6_Security/README.md#L26
   - legacy:devopstools_final.md#L864
-  needs_review: true
+  needs_review: false
 - id: fossa
   name: FOSSA
-  summary: Software supply chain and license compliance platform.
-  official_url: https://fossa.com
+  summary: Commercial software supply-chain management platform for dependency licence compliance, vulnerability analysis, quality signals, and SBOM workflows.
+  official_url: https://fossa.com/
+  documentation_url: https://docs.fossa.com/
   categories:
   - application-cloud-security
   subcategories:
@@ -1753,18 +1787,27 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need organization-wide dependency licence, vulnerability, policy, and SBOM management integrated with source control and CI/CD.
+  avoid_when:
+  - You only need the standalone FOSSA CLI or require an entirely open-source control plane.
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  - local-cli
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
+  - https://fossa.com/pricing/
+  - https://docs.fossa.com/
+  - https://docs.fossa.com/docs/get-started
   - legacy:devopstools_final.md#L863
-  needs_review: true
+  needs_review: false
 - id: ghostwriter
   name: Ghostwriter
   summary: Collaborative platform for managing security assessments, findings, evidence, and reports.

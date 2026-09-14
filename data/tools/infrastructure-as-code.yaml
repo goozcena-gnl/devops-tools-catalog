@@ -423,9 +423,11 @@
   verified_on: '2026-09-08'
   needs_review: false
 - id: env0
-  name: Env0
-  summary: Infrastructure as Code automation and governance platform.
-  official_url: https://github.com/env0
+  name: env zero
+  summary: Commercial infrastructure-as-code control platform for self-service environments, workflow
+    automation, policy, governance, and cloud-cost management.
+  official_url: https://www.envzero.com/
+  documentation_url: https://docs.envzero.com/
   categories:
   - infrastructure-as-code
   subcategories:
@@ -443,17 +445,23 @@
   - You need managed IaC workflows with cost governance and environment-as-a-service.
   avoid_when:
   - You want a fully self-hosted or open-source solution.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  - customer-cloud
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L116
   - legacy:devopstools_final.md#L220
-  needs_review: true
+  - https://www.envzero.com/
+  - https://docs.envzero.com/
+  - https://www.envzero.com/pricing
+  needs_review: false
 - id: infracost
   name: Infracost
   summary: Cost estimates for IaC projects.

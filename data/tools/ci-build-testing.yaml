@@ -988,8 +988,10 @@
   needs_review: false
 - id: firebase-test-lab
   name: Firebase Test Lab
-  summary: Cloud-based app testing on real and virtual devices.
+  summary: Google-hosted mobile application testing service that runs Android and iOS tests on real and
+    virtual devices through Firebase and Google Cloud tooling.
   official_url: https://firebase.google.com/products/test-lab
+  documentation_url: https://firebase.google.com/docs/test-lab
   categories:
   - ci-build-testing
   subcategories:
@@ -1005,17 +1007,22 @@
   - You're in the Google/Firebase ecosystem and want quick Android/iOS device testing.
   avoid_when:
   - You need a wide variety of device models beyond what Google offers.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - managed-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
   - legacy:7_Development-Collaboration/README.md#L28
   - legacy:devopstools_final.md#L1052
-  needs_review: true
+  - https://firebase.google.com/products/test-lab
+  - https://firebase.google.com/docs/test-lab
+  - https://firebase.google.com/pricing
+  needs_review: false
 - id: fitnesse
   name: FitNesse
   summary: Acceptance testing framework.

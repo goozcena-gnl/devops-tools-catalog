@@ -99,7 +99,7 @@ FORBIDDEN_SELECTED_FIELDS = {
 # Later, evidence-backed catalogue maintenance may supersede an N1a current-state
 # protection without rewriting the pinned N1a history. Keep this allowlist at field
 # granularity: later evidence reviews independently verified only the listed fields
-# for Cosmian/Eviden KMS and mcp-server-kubernetes.
+# for Cosmian/Eviden KMS, Drata, Entrust KeyControl, and mcp-server-kubernetes.
 N1A_CURRENT_STATE_SUPERSESSIONS = {
     ("cosmian-kms", "repository_url"),
     ("cosmian-kms", "official_url"),
@@ -107,6 +107,14 @@ N1A_CURRENT_STATE_SUPERSESSIONS = {
     ("cosmian-kms", "license_spdx"),
     ("cosmian-kms", "status"),
     ("cosmian-kms", "needs_review"),
+    ("drata", "license_model"),
+    ("drata", "official_url"),
+    ("drata", "status"),
+    ("drata", "needs_review"),
+    ("entrust-keycontrol", "official_url"),
+    ("entrust-keycontrol", "license_model"),
+    ("entrust-keycontrol", "status"),
+    ("entrust-keycontrol", "needs_review"),
     ("mcp-server-kubernetes", "repository_url"),
     ("mcp-server-kubernetes", "license_spdx"),
     ("mcp-server-kubernetes", "status"),

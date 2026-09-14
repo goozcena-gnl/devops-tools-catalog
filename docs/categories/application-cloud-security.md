@@ -620,6 +620,25 @@ EBPF-based networking, observability, and security for Kubernetes.
 
 [Official site](https://cilium.io) · [Documentation](https://docs.cilium.io/en/stable/) · [Source repository](https://github.com/cilium/cilium)
 
+### Cisco Duo
+
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+Cisco cloud-delivered identity security family spanning multi-factor authentication, passwordless access, SSO, device trust, and access policy.
+
+**Use when**
+
+- You need a cloud-managed identity security service for MFA and access policy across VPN, SSH, web, SaaS, and on-premises applications.
+
+**Consider alternatives when**
+
+- Your existing identity provider already supplies the required authentication and device-trust controls without another cloud service.
+
+[Official site](https://duo.com/) · [Documentation](https://duo.com/docs)
+
 ### Cisco Talos Intelligence
 
 **Categories:** Application and cloud security<br>
@@ -1042,48 +1061,29 @@ Self-hosted collaboration and reporting platform for security assessment project
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Security and compliance automation platform.
-
-**Use when**
-
-- SOC 2/ISO 27001 compliance automation with continuous monitoring.
-
-**Consider alternatives when**
-
-- You just need a vulnerability scanner.
-
-[Official site](https://drata.com)
-
-### Duo Security
-
-**Categories:** Application and cloud security<br>
-**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Multi-factor authentication and access security.
+Commercial trust-management platform for compliance automation, control monitoring, evidence collection, and risk workflows.
 
 **Use when**
 
-- Turnkey MFA integration across VPN/SSH/web apps.
+- You need a managed platform to automate evidence collection, continuously monitor controls, and coordinate audit-readiness and GRC work.
 
 **Consider alternatives when**
 
-- You already have MFA via your IdP (Okta, Azure AD, etc.).
+- You only need vulnerability scanning or require an open-source, self-hosted compliance platform.
 
-[Official site](https://duo.com)
+[Official site](https://drata.com/) · [Documentation](https://help.drata.com/en/)
 
 ### F5 WAF for NGINX
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Commercial WAF for NGINX.
+Commercial web application firewall for applications and APIs running on NGINX Plus or NGINX Ingress Controller, formerly NGINX App Protect WAF.
 
 **Use when**
 
@@ -1093,7 +1093,7 @@ Commercial WAF for NGINX.
 
 - Budget is limited (consider ModSecurity/Coraza).
 
-[Official site](https://www.f5.com/products/nginx/f5-waf-for-nginx)
+[Official site](https://www.f5.com/products/nginx/f5-waf-for-nginx) · [Documentation](https://docs.nginx.com/waf/)
 
 ### fail2ban
 
@@ -1180,17 +1180,17 @@ Web content and parameter discovery utility for authorized HTTP security assessm
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Open threat intelligence and incident response platform (OpenCTI / OpenBAS) for collecting, analyzing, and acting on cyber threat intelligence.
+Vendor and XTM Platform umbrella spanning the distinct OpenCTI, OpenAEV, and XTM One products rather than one precise software adoption identity.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You are evaluating Filigran's broader eXtended Threat Management product family.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need one precise adoption or licensing boundary; evaluate OpenCTI, OpenAEV, and XTM One separately while this umbrella record is reconciled.
 
-[Official site](https://filigran.io)
+[Official site](https://filigran.io/platform)
 
 ### firewalld
 
@@ -1211,43 +1211,24 @@ Dynamically managed firewall for Linux with D-Bus interface.
 
 [Official site](https://firewalld.org) · [Source repository](https://github.com/firewalld/firewalld)
 
-### Fortify Static Code Analyzer
-
-**Categories:** Application and cloud security<br>
-**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Static application security testing.
-
-**Use when**
-
-- Enterprise SAST with broad language support and compliance reporting.
-
-**Consider alternatives when**
-
-- For small or OSS projects where CodeQL/Semgrep are sufficient.
-
-[Official site](https://www.opentext.com/products/static-application-security-testing)
-
 ### FOSSA
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Software supply chain and license compliance platform.
+Commercial software supply-chain management platform for dependency licence compliance, vulnerability analysis, quality signals, and SBOM workflows.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need organization-wide dependency licence, vulnerability, policy, and SBOM management integrated with source control and CI/CD.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You only need the standalone FOSSA CLI or require an entirely open-source control plane.
 
-[Official site](https://fossa.com)
+[Official site](https://fossa.com/) · [Documentation](https://docs.fossa.com/)
 
 ### Ghostwriter
 
@@ -2335,6 +2316,25 @@ Collection of OpenSCAP tools.
 - You're not using SCAP content.
 
 [Official site](https://www.open-scap.org/tools)
+
+### OpenText Fortify Static Code Analyzer
+
+**Categories:** Application and cloud security<br>
+**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+Commercial static application security testing engine for source, bytecode, and binary analysis across developer and CI/CD workflows.
+
+**Use when**
+
+- Enterprise SAST with broad language support and compliance reporting.
+
+**Consider alternatives when**
+
+- For small or OSS projects where CodeQL/Semgrep are sufficient.
+
+[Official site](https://www.opentext.com/products/static-application-security-testing) · [Documentation](https://www.microfocus.com/documentation/fortify-static-code/)
 
 ### OpenZiti
 

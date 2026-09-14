@@ -804,8 +804,9 @@
   needs_review: true
 - id: everydev-ai
   name: EveryDev.ai
-  summary: Community-driven directory, comparison hub, and discussion platform for AI developer tools.
-  official_url: https://www.everydev.ai
+  summary: Active directory and comparison site for discovering AI developer tools; official evidence
+    confirms the service identity but does not document a product-level license or operating model.
+  official_url: https://www.everydev.ai/
   categories:
   - documentation-learning-career
   subcategories:
@@ -817,16 +818,20 @@
   lifecycle_stages:
   - learn
   use_when: []
-  avoid_when: []
-  deployment_models: []
+  avoid_when:
+  - You require a catalogue with a documented licensing or commercial model.
+  deployment_models:
+  - hosted-saas
   license_model: unknown
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-13'
   sources:
   - legacy:devopstools_final.md#L1258
+  - https://www.everydev.ai/
+  - https://www.everydev.ai/tools
   needs_review: true
 - id: freecodecamp-devops
   name: FreeCodeCamp DevOps
