@@ -62,6 +62,16 @@ def _priority_score(signals: list[str]) -> int:
     return sum(weights[item] for item in signals)
 
 
+def _priority_candidate_sort_key(
+    candidate: dict[str, object],
+) -> tuple[int, date, str]:
+    return (
+        -int(candidate["priority_score"]),
+        _parse_date(candidate["verified_on"]),
+        str(candidate["id"]),
+    )
+
+
 def build_inventory(root: Path = ROOT) -> dict[str, object]:
     taxonomy = load_taxonomy(root)
     tools = load_tools(root)
@@ -131,7 +141,7 @@ def build_inventory(root: Path = ROOT) -> dict[str, object]:
                 }
             )
 
-    candidates.sort(key=lambda item: (-int(item["priority_score"]), str(item["id"])))
+    candidates.sort(key=_priority_candidate_sort_key)
 
     return {
         "schema_version": 1,
@@ -210,7 +220,7 @@ def render_markdown(inventory: dict[str, object], *, limit: int = 20) -> str:
             "",
             f"## Top {len(candidates)} deterministic review candidates",
             "",
-            "Priority is a triage aid, not an evidence decision. Scores favor unknown licensing first, then unknown maturity, missing repository/documentation/source evidence, and stale verification.",
+            "Priority is a triage aid, not an evidence decision. Scores favor unknown licensing first, then unknown maturity, missing repository/documentation/source evidence, and stale verification. Candidates are ordered by score, then oldest verification date, then stable canonical ID.",
             "",
             "| Score | Tool | Category | Licence | Verified | Signals |",
             "|---:|---|---|---|---|---|",
