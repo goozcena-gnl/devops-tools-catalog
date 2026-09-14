@@ -123,8 +123,8 @@ Hosted container registry and discovery service for publishing, sharing, and pul
 
 **Categories:** Artifact and package management<br>
 **Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Google Cloud's unified repository for container images and language packages.
 
@@ -136,7 +136,7 @@ Google Cloud's unified repository for container images and language packages.
 
 - * You're multi-cloud and want a vendor-neutral registry.
 
-[Official site](https://cloud.google.com/artifact-registry)
+[Official site](https://cloud.google.com/artifact-registry) · [Documentation](https://docs.cloud.google.com/artifact-registry/docs/overview)
 
 ### Harbor
 

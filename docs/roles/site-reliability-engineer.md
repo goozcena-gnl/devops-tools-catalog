@@ -115,12 +115,12 @@
 | [Gateway API](https://gateway-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Gatus](https://gatus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [git-sync](https://github.com/kubernetes/git-sync) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [GKE](https://cloud.google.com/kubernetes-engine) | Kubernetes distributions and operations | unknown | needs-review |
 | [GlitchTip](https://glitchtip.com/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [GoAccess](https://goaccess.io/) | Monitoring, metrics, logs and tracing | oss | active |
 | [GoAlert](https://goalert.me) | SRE, incident response and on-call | oss | needs-review |
 | [Goldilocks](https://goldilocks.docs.fairwinds.com/) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | active |
-| [Gonzo](https://www.controltheory.com/gonzo) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Gonzo](https://www.controltheory.com/gonzo) | Monitoring, metrics, logs and tracing | oss | active |
+| [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) | Kubernetes distributions and operations | commercial | active |
 | [Gotify](https://gotify.net/) | Workflow automation and ChatOps | oss | active |
 | [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) | Monitoring, metrics, logs and tracing | documentation | needs-review |
@@ -137,7 +137,7 @@
 | [Hanoi CLI](https://github.com/k-krew/hanoi-cli) | Kubernetes distributions and operations | oss | needs-review |
 | [HAProxy](https://www.haproxy.org) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [HAProxy Data Plane API](https://www.haproxy.com/documentation/dataplaneapi/) | Kubernetes networking, storage and add-ons | oss | active |
-| [HAProxy Kubernetes Ingress Controller](https://www.haproxy.com/documentation/kubernetes-ingress) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [HAProxy Kubernetes Ingress Controller](https://www.haproxy.com/documentation/kubernetes-ingress) | Kubernetes networking, storage and add-ons | oss | active |
 | [HashiCorp Consul](https://developer.hashicorp.com/consul) | Kubernetes networking, storage and add-ons | source-available | active |
 | [Headlamp](https://headlamp.dev/) | Kubernetes distributions and operations | oss | active |
 | [Headlamp Plugins](https://github.com/headlamp-k8s/plugins) | Kubernetes networking, storage and add-ons | oss | active |
@@ -153,7 +153,7 @@
 | [Helmper](https://christoffernissen.github.io/helmper) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [HolmesGPT](https://holmesgpt.dev/latest) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Holos](https://holos.run) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | commercial | active |
 | [HwameiStor](https://hwameistor.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Hybernate](https://okedeji.io/hybernate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | needs-review |

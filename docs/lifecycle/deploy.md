@@ -92,6 +92,7 @@
 - [Civo](https://www.civo.com) — Cloud infrastructure provider focused on Kubernetes.
 - [ClickHouse](https://clickhouse.com) — Columnar database commonly used as an observability backend.
 - [Clonezilla](https://clonezilla.org/) — Bootable disk-imaging and cloning system for bare-metal backup, recovery, and machine deployment.
+- [Cloud Run functions](https://cloud.google.com/functions) — Managed event-driven functions deployed on the unified Google Cloud Run platform.
 - [CloudCustodian](https://cloudcustodian.io) — Cloud governance rules engine.
 - [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) — Cloudflare gateway for Kubernetes clusters.
 - [CloudFuze](https://www.cloudfuze.com) — Cloud file transfer and management.
@@ -184,11 +185,10 @@
 - [GitHub MCP Server](https://github.com/github/github-mcp-server) — GitHub's MCP server implementation.
 - [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab MCP server documentation.
 - [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) — GitOps bridge for Kubernetes deployments.
-- [GKE](https://cloud.google.com/kubernetes-engine) — Google Kubernetes Engine.
 - [Goldilocks](https://goldilocks.docs.fairwinds.com/) — Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
-- [Google Cloud Functions](https://cloud.google.com/functions) — Event-driven serverless functions on Google Cloud.
 - [Google Cloud Platform](https://cloud.google.com) — Cloud services by Google.
-- [Google Cloud Run](https://cloud.google.com/run) — Serverless containers on Google Cloud.
+- [Google Cloud Run](https://cloud.google.com/run) — Fully managed Google Cloud application platform for running services, jobs, worker pools, and functions from code or containers.
+- [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) — Managed Kubernetes service with Standard and Autopilot operating modes on Google Cloud.
 - [Grafana MCP](https://github.com/grafana/mcp-grafana) — Model Context Protocol for Grafana.
 - [gVisor](https://gvisor.dev) — Application kernel and container sandbox runtime that provides strong isolation between containers and the host.
 - [HAMi](https://project-hami.io) — Heterogeneous AI computing virtualization middleware.
@@ -214,12 +214,12 @@
 - [Helmfile](https://helmfile.readthedocs.io/en/latest) — Declarative Helm deployments.
 - [Helmper](https://christoffernissen.github.io/helmper) — Helm helper for mirroring charts and images to OCI registries.
 - [Hermes Agent](https://hermes-agent.nousresearch.com) — Agent framework and runtime from Nous Research.
-- [Heroku](https://www.heroku.com) — Cloud platform as a service for app deployment.
+- [Heroku](https://www.heroku.com) — Managed cloud application platform for building, deploying, and operating applications on dynos and managed data services.
 - [Hoji AI](https://hoji.ai) — AI assistant for GitHub workflows.
 - [Holos](https://holos.run) — Platform for managing Kubernetes configuration holistically.
 - [Homarr](https://homarr.dev/) — Self-hosted dashboard for organizing and monitoring links to homelab and infrastructure services.
-- [Hortator](https://hortator.ai) — Kubernetes-native platform for orchestrating AI agents.
-- [Humanitec](https://humanitec.com) — Internal developer platform for platform engineering (app/service delivery with abstractions).
+- [Hortator](https://hortator.ai) — Kubernetes operator and CLI for allowing AI agents to spawn guarded child-agent workloads.
+- [Humanitec](https://humanitec.com) — Commercial platform orchestrator for building internal developer platforms across cloud and Kubernetes infrastructure.
 - [HwameiStor](https://hwameistor.io) — Cloud-native local storage system.
 - [Hybernate](https://okedeji.io/hybernate) — Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce resource consumption during off-peak hours.
 - [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) — Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows Server.

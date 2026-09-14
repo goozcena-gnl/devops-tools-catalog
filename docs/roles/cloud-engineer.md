@@ -60,6 +60,7 @@
 | [Civo](https://www.civo.com) | Cloud platforms and cloud management | commercial | active |
 | [Claude Code Cheat Sheet](https://shipyard.build/blog/claude-code-cheat-sheet) | Documentation, learning and career resources | documentation | needs-review |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
+| [Cloud Run functions](https://cloud.google.com/functions) | Serverless, edge and WebAssembly | commercial | active |
 | [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | commercial | active |
 | [CloudCasa](https://cloudcasa.io/) | Backup, disaster recovery and resilience | commercial | active |
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | active |
@@ -120,22 +121,21 @@
 | [GitHub Copilot](https://github.com/features/copilot) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [GitHub MCP Server](https://github.com/github/github-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
-| [Google Cloud Functions](https://cloud.google.com/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | commercial | active |
-| [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | commercial | active |
 | [Grafana MCP](https://github.com/grafana/mcp-grafana) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [HashiCorp Boundary](https://boundaryproject.io) | IAM, secrets and certificate management | source-available | needs-review |
 | [HashiCorp Vault](https://www.vaultproject.io) | IAM, secrets and certificate management | source-available | needs-review |
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Haystack](https://haystack.deepset.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Headroom](https://headroomlabs-ai.github.io/headroom) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Hermes Agent](https://hermes-agent.nousresearch.com) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Hermes Agent](https://hermes-agent.nousresearch.com) | MLOps, LLMOps and AI infrastructure | oss | active |
+| [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | commercial | active |
 | [Hoji AI](https://hoji.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Hortator](https://hortator.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Hortator](https://hortator.ai) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [IBM Cloud](https://www.ibm.com/products/cloud) | Cloud platforms and cloud management | commercial | active |
 | [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
-| [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | unknown | needs-review |
+| [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | commercial | active |
 | [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | commercial | active |
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [InfraHQ](https://infrahq.com) | IAM, secrets and certificate management | oss | needs-review |

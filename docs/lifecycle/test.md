@@ -143,8 +143,8 @@
 - [GoCD](https://www.gocd.org) — Open-source CI/CD server.
 - [Godcoder](https://github.com/eli-labz/Godcoder) — Local-first desktop coding agent that keeps your code on your machine.
 - [golangci-lint](https://golangci-lint.run) — Go lint aggregator (fast, many linters).
-- [Google Cloud Build](https://cloud.google.com/build) — CI/CD service for Google Cloud.
-- [Google Cloud Organization Policy](https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview) — GCP resource governance.
+- [Google Cloud Build](https://cloud.google.com/build) — Managed build service that executes containerized build steps on Google Cloud infrastructure.
+- [Google Cloud Organization Policy Service](https://docs.cloud.google.com/organization-policy/overview) — Centralized service for defining and enforcing constraints across a Google Cloud resource hierarchy.
 - [graphql-cop](https://github.com/dolevf/graphql-cop) — Security audit utility for identifying GraphQL configuration and implementation weaknesses.
 - [Greenbone (OpenVAS)](https://github.com/greenbone) — Vulnerability scanning and management framework (formerly OpenVAS).
 - [Gremlin](https://www.gremlin.com) — Chaos engineering platform for proactive reliability testing. ✅ **Use when** you need enterprise-grade chaos with built-in safety controls, team collaboration, and guided scenarios. ❌ **Avoid when** budget is tight or you prefer fully open-source tooling without vendor lock-in.
@@ -152,7 +152,7 @@
 - [GUAC](https://guac.sh) — Supply chain graph platform for ingesting SBOMs and metadata to map software relationships and provenance.
 - [Guardon](https://github.com/guardon-dev/guardon) — Open-source browser extension that brings Kubernetes guardrails and developer-first security checks directly into the browser workflow.
 - [Hadolint](https://github.com/hadolint/hadolint) — Dockerfile linter (best practices + common pitfalls).
-- [Harness](https://harness.io) — CI/CD and DevOps platform.
+- [Harness](https://harness.io) — Commercial software-delivery platform spanning CI, CD, GitOps, infrastructure, security, reliability, and developer-experience modules.
 - [Hashcat](https://hashcat.net/hashcat/) — Hardware-accelerated password recovery and security-auditing utility.
 - [HashiCorp Vagrant](https://www.vagrantup.com) — Tool for building and managing virtual machine environments (BUSL-1.1).
 - [hcxdumptool](https://github.com/ZerBea/hcxdumptool) — Wireless packet-capture utility for supported Linux Wi-Fi adapters.
@@ -164,7 +164,7 @@
 - [hyperfine](https://github.com/sharkdp/hyperfine) — CLI benchmark runner for repeated command timing and statistical comparison.
 - [Impacket](https://github.com/fortra/impacket) — Python library and utilities for programmatic access to common network and Windows protocols.
 - [Insomnia](https://insomnia.rest/) — API client and testing workspace with local workflows and paid collaboration capabilities.
-- [IntelliJ IDEA](https://www.jetbrains.com/idea) — Java IDE with support for many languages.
+- [IntelliJ IDEA](https://www.jetbrains.com/idea) — JetBrains IDE for JVM development with a free core feature set and subscription-gated advanced features.
 - [iPerf](https://iperf.fr/iperf-download.php) — Network performance measurement tool.
 - [Iroh](https://www.iroh.computer) — Peer-to-peer networking library for building distributed, hole-punching-capable, end-to-end encrypted connections.
 - [ISMS Builder](https://www.isms-builder.com) — Self-hosted information security management system builder for ISO 27001, NIS2, and GDPR compliance.

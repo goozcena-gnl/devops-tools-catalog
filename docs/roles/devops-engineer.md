@@ -138,6 +138,7 @@
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
 | [Clone-Wars](https://github.com/GorvGoyl/Clone-Wars) | Emerging and experimental tools | oss | needs-review |
 | [Clonezilla](https://clonezilla.org/) | Backup, disaster recovery and resilience | oss | active |
+| [Cloud Run functions](https://cloud.google.com/functions) | Serverless, edge and WebAssembly | commercial | active |
 | [CloudBees](https://www.cloudbees.com) | CI, build and testing | open-core | needs-review |
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | active |
 | [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | commercial | active |
@@ -262,7 +263,7 @@
 | [Ghostty](https://ghostty.org) | Developer experience and local environments | oss | needs-review |
 | [Git](https://git-scm.com) | Source control and repository management | oss | needs-review |
 | [Gitea](https://about.gitea.com/) | Source control and repository management | oss | active |
-| [GitHub](https://github.com) | Source control and repository management | unknown | needs-review |
+| [GitHub](https://github.com) | Source control and repository management | commercial | active |
 | [GitHub Actions](https://github.com/features/actions) | CI, build and testing | unknown | needs-review |
 | [GitHub CLI](https://cli.github.com) | Source control and repository management, Developer experience and local environments | oss | active |
 | [GitHub Codespaces](https://github.com/features/codespaces) | Developer experience and local environments | unknown | needs-review |
@@ -280,12 +281,11 @@
 | [Godcoder](https://github.com/eli-labz/Godcoder) | Developer experience and local environments | oss | needs-review |
 | [golangci-lint](https://golangci-lint.run) | Developer experience and local environments | oss | needs-review |
 | [Goldilocks](https://goldilocks.docs.fairwinds.com/) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | active |
-| [Gonzo](https://www.controltheory.com/gonzo) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [Google Artifact Registry](https://cloud.google.com/artifact-registry) | Artifact and package management | unknown | needs-review |
-| [Google Cloud Build](https://cloud.google.com/build) | CI, build and testing | unknown | needs-review |
-| [Google Cloud Functions](https://cloud.google.com/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [Gonzo](https://www.controltheory.com/gonzo) | Monitoring, metrics, logs and tracing | oss | active |
+| [Google Artifact Registry](https://cloud.google.com/artifact-registry) | Artifact and package management | commercial | active |
+| [Google Cloud Build](https://cloud.google.com/build) | CI, build and testing | commercial | active |
 | [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | commercial | active |
-| [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | commercial | active |
 | [Gotify](https://gotify.net/) | Workflow automation and ChatOps | oss | active |
 | [gping](https://github.com/orf/gping) | Foundations, Linux and scripting | oss | active |
 | [Gradle](https://gradle.org) | Containers and image tooling | oss | needs-review |
@@ -303,14 +303,14 @@
 | [Hadolint](https://github.com/hadolint/hadolint) | Developer experience and local environments | oss | needs-review |
 | [Harbor](https://goharbor.io) | Artifact and package management | oss | needs-review |
 | [HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools) | Foundations, Linux and scripting | oss | needs-review |
-| [Harness](https://harness.io) | CI, build and testing | unknown | needs-review |
+| [Harness](https://harness.io) | CI, build and testing | commercial | active |
 | [HashiCorp Vagrant](https://www.vagrantup.com) | Developer experience and local environments | source-available | needs-review |
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
-| [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | commercial | active |
 | [HolmesGPT](https://holmesgpt.dev/latest) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Homarr](https://homarr.dev/) | Virtualization, bare metal and homelab | oss | active |
 | [Homer](https://homer-demo.netlify.app) | Emerging and experimental tools | oss | needs-review |
-| [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Hoppscotch](https://hoppscotch.io/) | Developer experience and local environments | open-core | active |
 | [htop](https://htop.dev/) | Foundations, Linux and scripting | oss | active |
 | [HTTPX](https://www.python-httpx.org/) | Developer experience and local environments | oss | active |
@@ -326,7 +326,7 @@
 | [Informatica](https://www.informatica.com) | Emerging and experimental tools | unknown | needs-review |
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [Insomnia](https://insomnia.rest/) | Developer experience and local environments | open-core | active |
-| [IntelliJ IDEA](https://www.jetbrains.com/idea) | Developer experience and local environments | unknown | needs-review |
+| [IntelliJ IDEA](https://www.jetbrains.com/idea) | Developer experience and local environments | open-core | active |
 | [iPerf](https://iperf.fr/iperf-download.php) | Chaos and performance engineering | oss | needs-review |
 | [IT Tools](https://it-tools.tech) | Emerging and experimental tools | oss | needs-review |
 | [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | needs-review |

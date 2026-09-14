@@ -104,10 +104,10 @@ Developer-first automation for building/testing/deploying cloud-native apps.
 
 **Categories:** Platform engineering and internal developer platforms<br>
 **Roles:** Platform Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Internal developer platform for platform engineering (app/service delivery with abstractions).
+Commercial platform orchestrator for building internal developer platforms across cloud and Kubernetes infrastructure.
 
 **Use when**
 
@@ -117,7 +117,7 @@ Internal developer platform for platform engineering (app/service delivery with 
 
 - You want OSS flexibility or your platform team prefers building custom abstractions.
 
-[Official site](https://humanitec.com)
+[Official site](https://humanitec.com) · [Documentation](https://developer.humanitec.com/platform-orchestrator/)
 
 ### kubara
 

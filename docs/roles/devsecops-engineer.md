@@ -89,11 +89,11 @@
 | [ggshield](https://github.com/GitGuardian/ggshield) | Software supply-chain security | oss | active |
 | [Ghostwriter](https://www.ghostwriter.wiki/home) | Application and cloud security | oss | active |
 | [Gibson](https://github.com/HackingLZ/gibson) | Application and cloud security | oss | needs-review |
-| [git push no-mistakes](https://kunchenguid.github.io/no-mistakes) | Software supply-chain security | unknown | needs-review |
+| [git push no-mistakes](https://kunchenguid.github.io/no-mistakes/) | Software supply-chain security | oss | active |
 | [GitGuardian](https://www.gitguardian.com/) | Software supply-chain security | commercial | active |
 | [Gitleaks](https://gitleaks.io) | Application and cloud security | oss | needs-review |
-| [Google Artifact Registry](https://cloud.google.com/artifact-registry) | Artifact and package management | unknown | needs-review |
-| [Google Cloud Organization Policy](https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview) | Application and cloud security | unknown | needs-review |
+| [Google Artifact Registry](https://cloud.google.com/artifact-registry) | Artifact and package management | commercial | active |
+| [Google Cloud Organization Policy Service](https://docs.cloud.google.com/organization-policy/overview) | Application and cloud security | commercial | active |
 | [graphql-cop](https://github.com/dolevf/graphql-cop) | Application and cloud security | oss | active |
 | [Greenbone (OpenVAS)](https://github.com/greenbone) | Application and cloud security | oss | needs-review |
 | [Grype](https://github.com/anchore/grype) | Application and cloud security | oss | needs-review |
@@ -107,12 +107,12 @@
 | [hcxdumptool](https://github.com/ZerBea/hcxdumptool) | Application and cloud security | oss | active |
 | [hcxtools](https://github.com/ZerBea/hcxtools) | Application and cloud security | oss | active |
 | [Husky](https://typicode.github.io/husky) | Software supply-chain security | oss | needs-review |
-| [Hybrid Analysis](https://www.hybrid-analysis.com) | Application and cloud security | unknown | needs-review |
-| [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | unknown | needs-review |
+| [Hybrid Analysis](https://www.hybrid-analysis.com) | Application and cloud security | free-saas | active |
+| [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | commercial | active |
 | [Impacket](https://github.com/fortra/impacket) | Application and cloud security | oss | active |
 | [InfraHQ](https://infrahq.com) | IAM, secrets and certificate management | oss | needs-review |
 | [Iroh](https://www.iroh.computer) | Application and cloud security | oss | needs-review |
-| [ISMS Builder](https://www.isms-builder.com) | Application and cloud security | unknown | needs-review |
+| [ISMS Builder](https://www.isms-builder.com) | Application and cloud security | oss | active |
 | [JARVIS OS](https://jarvisoslinux.org) | Application and cloud security | unknown | needs-review |
 | [JFrog Artifactory](https://jfrog.com/artifactory) | Artifact and package management | open-core | needs-review |
 | [JFrog Connect](https://jfrog.com/connect) | Artifact and package management | unknown | needs-review |

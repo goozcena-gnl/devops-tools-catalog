@@ -78,14 +78,14 @@
 | [Gardener](https://gardener.cloud/) | Kubernetes distributions and operations | oss | active |
 | [Gateway API](https://gateway-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [git-sync](https://github.com/kubernetes/git-sync) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [GKE](https://cloud.google.com/kubernetes-engine) | Kubernetes distributions and operations | unknown | needs-review |
 | [Goldilocks](https://goldilocks.docs.fairwinds.com/) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | active |
+| [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) | Kubernetes distributions and operations | commercial | active |
 | [Gradle](https://gradle.org) | Containers and image tooling | oss | needs-review |
 | [HAMi](https://project-hami.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Hanoi CLI](https://github.com/k-krew/hanoi-cli) | Kubernetes distributions and operations | oss | needs-review |
 | [HAProxy](https://www.haproxy.org) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [HAProxy Data Plane API](https://www.haproxy.com/documentation/dataplaneapi/) | Kubernetes networking, storage and add-ons | oss | active |
-| [HAProxy Kubernetes Ingress Controller](https://www.haproxy.com/documentation/kubernetes-ingress) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [HAProxy Kubernetes Ingress Controller](https://www.haproxy.com/documentation/kubernetes-ingress) | Kubernetes networking, storage and add-ons | oss | active |
 | [Harvester](https://harvesterhci.io/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
 | [HashiCorp Consul](https://developer.hashicorp.com/consul) | Kubernetes networking, storage and add-ons | source-available | active |
 | [Headlamp](https://headlamp.dev/) | Kubernetes distributions and operations | oss | active |

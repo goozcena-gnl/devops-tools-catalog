@@ -26,7 +26,7 @@
 - [Gerrit Code Review](https://www.gerritcodereview.com/) — Self-hosted Git code-review system with change-based workflows and granular access controls.
 - [Git](https://git-scm.com) — Distributed version control system.
 - [Gitea](https://about.gitea.com/) — Self-hosted Git forge with repository hosting, code review, issues, packages, and automation integrations.
-- [GitHub](https://github.com) — Popular platform for hosting Git repositories.
+- [GitHub](https://github.com) — Hosted and self-managed developer platform for Git repositories, collaboration, automation, and software delivery.
 - [GitLab](https://about.gitlab.com) — Git repository management with CI/CD.
 - [GitLab University](https://university.gitlab.com) — Training resources for GitLab, CI/CD, and DevOps practices.
 - [Gotify](https://gotify.net/) — Self-hosted server and clients for receiving application push notifications.

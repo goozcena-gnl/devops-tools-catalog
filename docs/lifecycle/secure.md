@@ -86,10 +86,10 @@
 - [ggshield](https://github.com/GitGuardian/ggshield) — GitGuardian CLI for secret scanning in local development, hooks, and CI.
 - [Ghostwriter](https://www.ghostwriter.wiki/home) — Collaborative platform for managing security assessments, findings, evidence, and reports.
 - [Gibson](https://github.com/HackingLZ/gibson) — Network monitoring and threat-hunting tool that maps processes to connections, flags beaconing, and helps generate firewall rules.
-- [git push no-mistakes](https://kunchenguid.github.io/no-mistakes) — Guardrails to prevent common mistakes when pushing to Git.
+- [git push no-mistakes](https://kunchenguid.github.io/no-mistakes/) — Local Git push gate that validates changes in an isolated worktree before publishing a branch and opening a pull request.
 - [GitGuardian](https://www.gitguardian.com/) — Commercial secret-security platform for detecting and managing credential exposure across development systems.
 - [Gitleaks](https://gitleaks.io) — Detect hardcoded secrets in code.
-- [Google Cloud Organization Policy](https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview) — GCP resource governance.
+- [Google Cloud Organization Policy Service](https://docs.cloud.google.com/organization-policy/overview) — Centralized service for defining and enforcing constraints across a Google Cloud resource hierarchy.
 - [graphql-cop](https://github.com/dolevf/graphql-cop) — Security audit utility for identifying GraphQL configuration and implementation weaknesses.
 - [Greenbone (OpenVAS)](https://github.com/greenbone) — Vulnerability scanning and management framework (formerly OpenVAS).
 - [Grype](https://github.com/anchore/grype) — Vulnerability scanner for container images and filesystems.
@@ -103,7 +103,7 @@
 - [hcxtools](https://github.com/ZerBea/hcxtools) — Utilities for converting and processing wireless capture data for security-audit workflows.
 - [Husky](https://typicode.github.io/husky) — Git hooks for Node.js projects (commonly paired with lint-staged).
 - [Hybrid Analysis](https://www.hybrid-analysis.com) — Free malware analysis sandbox service powered by CrowdStrike Falcon Sandbox.
-- [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) — Enterprise key management.
+- [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) — Licensed enterprise software for centralized encryption-key serving, storage, rotation, and lifecycle management.
 - [Impacket](https://github.com/fortra/impacket) — Python library and utilities for programmatic access to common network and Windows protocols.
 - [InfraHQ](https://infrahq.com) — Identity-aware access management / access proxy for infrastructure.
 - [ipman](https://dialohq.github.io/ipman/) — Kubernetes operator that establishes encrypted IPsec connectivity between selected cluster networks.

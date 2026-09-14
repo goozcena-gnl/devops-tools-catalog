@@ -695,20 +695,20 @@ Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
 K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want an interactive local TUI for live logs, OpenTelemetry streams, or Kubernetes pod logs.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need durable centralized retention, multi-user access controls, or a managed observability backend.
 
-[Official site](https://www.controltheory.com/gonzo)
+[Official site](https://www.controltheory.com/gonzo) · [Documentation](https://github.com/control-theory/gonzo/tree/main/docs) · [Source repository](https://github.com/control-theory/gonzo)
 
 ### Grafana
 
@@ -904,20 +904,20 @@ Open-source SRE AI agent for investigating production incidents across Kubernete
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Observability platform built for high-cardinality events, tracing, and AI-era debugging.
+Hosted observability platform for high-cardinality telemetry, distributed tracing, and production debugging.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need managed high-cardinality observability and exploratory debugging across traces, events, and metrics.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a fully self-hosted observability backend or cannot send production telemetry to a hosted service.
 
-[Official site](https://www.honeycomb.io)
+[Official site](https://www.honeycomb.io) · [Documentation](https://docs.honeycomb.io/)
 
 ### HyperDX
 

@@ -1897,9 +1897,10 @@
   - legacy:devopstools_final.md#L865
   needs_review: true
 - id: google-cloud-organization-policy
-  name: Google Cloud Organization Policy
-  summary: GCP resource governance.
-  official_url: https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview
+  name: Google Cloud Organization Policy Service
+  summary: Centralized service for defining and enforcing constraints across a Google Cloud resource hierarchy.
+  official_url: https://docs.cloud.google.com/organization-policy/overview
+  documentation_url: https://docs.cloud.google.com/organization-policy
   categories:
   - application-cloud-security
   subcategories:
@@ -1914,17 +1915,21 @@
   - Enforce constraints across GCP projects/folders.
   avoid_when:
   - You're not on GCP or prefer cross-cloud policy tools like OPA.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:6_Security/README.md#L70
   - legacy:devopstools_final.md#L940
-  needs_review: true
+  - https://docs.cloud.google.com/organization-policy/overview
+  - https://docs.cloud.google.com/organization-policy
+  needs_review: false
 - id: graphql-cop
   name: graphql-cop
   summary: Security audit utility for identifying GraphQL configuration and implementation weaknesses.
@@ -2161,6 +2166,7 @@
   name: Hybrid Analysis
   summary: Free malware analysis sandbox service powered by CrowdStrike Falcon Sandbox.
   official_url: https://www.hybrid-analysis.com
+  documentation_url: https://www.hybrid-analysis.com/knowledge-base
   categories:
   - application-cloud-security
   subcategories:
@@ -2171,18 +2177,26 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need a free community-hosted sandbox for static and dynamic analysis of untrusted files or URLs.
+  avoid_when:
+  - You need private submissions, guaranteed capacity, commercial use rights, or an on-premises malware-analysis platform.
+  deployment_models:
+  - hosted-saas
+  license_model: free-saas
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L870
-  needs_review: true
+  - https://www.hybrid-analysis.com/
+  - https://www.hybrid-analysis.com/faq
+  - https://www.hybrid-analysis.com/terms
+  - https://go.crowdstrike.com/HybridAnalysisRequest.html
+  needs_review: false
 - id: impacket
   name: Impacket
   summary: Python library and utilities for programmatic access to common network and Windows protocols.
@@ -2244,6 +2258,8 @@
   name: ISMS Builder
   summary: Self-hosted information security management system builder for ISO 27001, NIS2, and GDPR compliance.
   official_url: https://www.isms-builder.com
+  repository_url: https://github.com/coolstartnow/isms-builder
+  documentation_url: https://github.com/coolstartnow/isms-builder#readme
   categories:
   - application-cloud-security
   subcategories:
@@ -2254,18 +2270,27 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want an open-source, self-hosted ISMS workflow for policy, risk, evidence, and compliance management.
+  avoid_when:
+  - You require a mature vendor-supported SaaS, formal certification content, or redistribution rights for proprietary ISO standards text.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: AGPL-3.0-only
+  commercial_offering: false
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L872
-  needs_review: true
+  - https://www.isms-builder.com/
+  - https://github.com/coolstartnow/isms-builder
+  - https://github.com/coolstartnow/isms-builder/blob/main/LICENSE
+  - https://github.com/coolstartnow/isms-builder/blob/main/SECURITY.md
+  needs_review: false
 - id: jarvis-os
   name: JARVIS OS
   summary: AI-native operating system and LLM security research platform.

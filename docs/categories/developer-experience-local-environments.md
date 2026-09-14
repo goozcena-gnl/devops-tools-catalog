@@ -921,10 +921,10 @@ API client and testing workspace with local workflows and paid collaboration cap
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Java IDE with support for many languages.
+JetBrains IDE for JVM development with a free core feature set and subscription-gated advanced features.
 
 **Use when**
 
@@ -934,7 +934,7 @@ Java IDE with support for many languages.
 
 - You primarily work outside the JVM ecosystem—it's heavyweight for scripting or web-only work.
 
-[Official site](https://www.jetbrains.com/idea)
+[Official site](https://www.jetbrains.com/idea) · [Documentation](https://www.jetbrains.com/help/idea/) · [Source repository](https://github.com/JetBrains/intellij-community)
 
 ### JSON Crack
 

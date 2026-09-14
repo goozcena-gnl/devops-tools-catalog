@@ -712,10 +712,10 @@ Open-source CI/CD server.
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-CI/CD service for Google Cloud.
+Managed build service that executes containerized build steps on Google Cloud infrastructure.
 
 **Use when**
 
@@ -725,16 +725,16 @@ CI/CD service for Google Cloud.
 
 - * You're multi-cloud or need on-prem build execution.
 
-[Official site](https://cloud.google.com/build)
+[Official site](https://cloud.google.com/build) · [Documentation](https://docs.cloud.google.com/build/docs/overview)
 
 ### Harness
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-CI/CD and DevOps platform.
+Commercial software-delivery platform spanning CI, CD, GitOps, infrastructure, security, reliability, and developer-experience modules.
 
 **Use when**
 
@@ -744,7 +744,7 @@ CI/CD and DevOps platform.
 
 - * You want a simple, lightweight CI or prefer OSS-only tooling.
 
-[Official site](https://harness.io)
+[Official site](https://harness.io) · [Documentation](https://developer.harness.io/docs/)
 
 ### Hurl
 

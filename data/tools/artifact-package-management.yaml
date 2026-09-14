@@ -198,6 +198,7 @@
   name: Google Artifact Registry
   summary: Google Cloud's unified repository for container images and language packages.
   official_url: https://cloud.google.com/artifact-registry
+  documentation_url: https://docs.cloud.google.com/artifact-registry/docs/overview
   categories:
   - artifact-package-management
   subcategories:
@@ -213,17 +214,22 @@
   - '* You''re on GCP and want a native, IAM-integrated registry for containers and packages.'
   avoid_when:
   - '* You''re multi-cloud and want a vendor-neutral registry.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L110
   - legacy:devopstools_final.md#L371
-  needs_review: true
+  - https://cloud.google.com/artifact-registry
+  - https://docs.cloud.google.com/artifact-registry/docs/overview
+  - https://cloud.google.com/artifact-registry/pricing
+  needs_review: false
 - id: harbor
   name: Harbor
   summary: Cloud-native registry for storing, signing, and scanning container images.

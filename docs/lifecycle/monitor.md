@@ -62,7 +62,7 @@
 - [groundcover](https://www.groundcover.com/) — Commercial observability platform offering infrastructure and application monitoring with BYOC deployment.
 - [grove](https://github.com/ai-dynamo/grove) — AI-powered Kubernetes troubleshooting.
 - [HolmesGPT](https://holmesgpt.dev/latest) — Open-source SRE AI agent for investigating production incidents across Kubernetes, VMs, cloud services, and databases with operator mode for 24/7 background monitoring (CNCF).
-- [Honeycomb](https://www.honeycomb.io) — Observability platform built for high-cardinality events, tracing, and AI-era debugging.
+- [Honeycomb](https://www.honeycomb.io) — Hosted observability platform for high-cardinality telemetry, distributed tracing, and production debugging.
 - [HyperDX](https://www.hyperdx.io) — Observability and troubleshooting platform.
 - [Icinga](https://icinga.com) — Open source monitoring system derived from Nagios.
 - [InfluxData](https://www.influxdata.com) — Time series platform with OSS components and commercial cloud/enterprise offerings.

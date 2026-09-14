@@ -1216,6 +1216,8 @@
   name: HAProxy Kubernetes Ingress Controller
   summary: HAProxy-powered Kubernetes ingress controller for high-performance Layer 7 traffic management.
   official_url: https://www.haproxy.com/documentation/kubernetes-ingress
+  repository_url: https://github.com/haproxytech/kubernetes-ingress
+  documentation_url: https://www.haproxy.com/documentation/kubernetes-ingress/
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -1227,18 +1229,27 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want an HAProxy-based ingress data plane with Kubernetes-native configuration and official Helm packaging.
+  avoid_when:
+  - You require a cloud-provider-native gateway or a service-mesh data plane rather than an ingress controller.
+  deployment_models:
+  - kubernetes
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L573
-  needs_review: true
+  - https://github.com/haproxytech/kubernetes-ingress
+  - https://github.com/haproxytech/kubernetes-ingress/blob/master/LICENSE
+  - https://www.haproxy.com/documentation/kubernetes-ingress/
+  needs_review: false
 - id: hashicorp-consul
   name: HashiCorp Consul
   summary: Service networking and discovery platform.

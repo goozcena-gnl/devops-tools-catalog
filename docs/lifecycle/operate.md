@@ -123,6 +123,7 @@
 - [ClickHouse](https://clickhouse.com) — Columnar database commonly used as an observability backend.
 - [ClickStack](https://clickhouse.com/clickstack) — Open-source observability stack for logs, metrics, traces, and session data built on ClickHouse and HyperDX.
 - [Clonezilla](https://clonezilla.org/) — Bootable disk-imaging and cloning system for bare-metal backup, recovery, and machine deployment.
+- [Cloud Run functions](https://cloud.google.com/functions) — Managed event-driven functions deployed on the unified Google Cloud Run platform.
 - [CloudCasa](https://cloudcasa.io/) — Kubernetes and cloud-native data protection service with SaaS and enterprise self-hosted editions.
 - [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) — Cloudflare gateway for Kubernetes clusters.
 - [CloudFuze](https://www.cloudfuze.com) — Cloud file transfer and management.
@@ -235,7 +236,6 @@
 - [GitHub Copilot](https://github.com/features/copilot) — AI-powered code completion assistant.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server) — GitHub's MCP server implementation.
 - [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab MCP server documentation.
-- [GKE](https://cloud.google.com/kubernetes-engine) — Google Kubernetes Engine.
 - [GlitchTip](https://glitchtip.com/) — Sentry-compatible error tracking and performance monitoring platform with self-hosted and managed offerings.
 - [Go](https://go.dev/) — Compiled language and toolchain used to build portable infrastructure services and command-line tools.
 - [Go by Example](https://gobyexample.com) — Hands-on Go programming snippets and examples.
@@ -244,9 +244,9 @@
 - [Gogs](https://gogs.io/) — Self-hosted Git service distributed as a lightweight application.
 - [Goldilocks](https://goldilocks.docs.fairwinds.com/) — Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 - [Gonzo](https://www.controltheory.com/gonzo) — K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.
-- [Google Cloud Functions](https://cloud.google.com/functions) — Event-driven serverless functions on Google Cloud.
 - [Google Cloud Platform](https://cloud.google.com) — Cloud services by Google.
-- [Google Cloud Run](https://cloud.google.com/run) — Serverless containers on Google Cloud.
+- [Google Cloud Run](https://cloud.google.com/run) — Fully managed Google Cloud application platform for running services, jobs, worker pools, and functions from code or containers.
+- [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) — Managed Kubernetes service with Standard and Autopilot operating modes on Google Cloud.
 - [Gotify](https://gotify.net/) — Self-hosted server and clients for receiving application push notifications.
 - [gping](https://github.com/orf/gping) — Ping utility with terminal graphs for comparing host latency.
 - [Grafana](https://grafana.com) — Visualization and analytics for metrics.
@@ -287,21 +287,21 @@
 - [Helmfile](https://helmfile.readthedocs.io/en/latest) — Declarative Helm deployments.
 - [Helmper](https://christoffernissen.github.io/helmper) — Helm helper for mirroring charts and images to OCI registries.
 - [Hermes Agent](https://hermes-agent.nousresearch.com) — Agent framework and runtime from Nous Research.
-- [Heroku](https://www.heroku.com) — Cloud platform as a service for app deployment.
+- [Heroku](https://www.heroku.com) — Managed cloud application platform for building, deploying, and operating applications on dynos and managed data services.
 - [Hoji AI](https://hoji.ai) — AI assistant for GitHub workflows.
 - [HolmesGPT](https://holmesgpt.dev/latest) — Open-source SRE AI agent for investigating production incidents across Kubernetes, VMs, cloud services, and databases with operator mode for 24/7 background monitoring (CNCF).
 - [Holos](https://holos.run) — Platform for managing Kubernetes configuration holistically.
 - [Homarr](https://homarr.dev/) — Self-hosted dashboard for organizing and monitoring links to homelab and infrastructure services.
-- [Honeycomb](https://www.honeycomb.io) — Observability platform built for high-cardinality events, tracing, and AI-era debugging.
-- [Hortator](https://hortator.ai) — Kubernetes-native platform for orchestrating AI agents.
+- [Honeycomb](https://www.honeycomb.io) — Hosted observability platform for high-cardinality telemetry, distributed tracing, and production debugging.
+- [Hortator](https://hortator.ai) — Kubernetes operator and CLI for allowing AI agents to spawn guarded child-agent workloads.
 - [htop](https://htop.dev/) — Interactive process viewer for inspecting system processes and resource usage.
-- [Humanitec](https://humanitec.com) — Internal developer platform for platform engineering (app/service delivery with abstractions).
+- [Humanitec](https://humanitec.com) — Commercial platform orchestrator for building internal developer platforms across cloud and Kubernetes infrastructure.
 - [HwameiStor](https://hwameistor.io) — Cloud-native local storage system.
 - [Hybernate](https://okedeji.io/hybernate) — Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce resource consumption during off-peak hours.
 - [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) — Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows Server.
 - [HyperDX](https://www.hyperdx.io) — Observability and troubleshooting platform.
 - [IBM Cloud](https://www.ibm.com/products/cloud) — Enterprise cloud services and infrastructure by IBM.
-- [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) — Enterprise key management.
+- [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) — Licensed enterprise software for centralized encryption-key serving, storage, rotation, and lifecycle management.
 - [Icinga](https://icinga.com) — Open source monitoring system derived from Nagios.
 - [Incus](https://linuxcontainers.org/incus/) — Modern system container and VM manager.
 - [Incus OS](https://linuxcontainers.org/incus-os) — Operating system images and distribution tooling for Incus environments.

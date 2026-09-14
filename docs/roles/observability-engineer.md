@@ -45,7 +45,7 @@
 | [GoAccess](https://goaccess.io/) | Monitoring, metrics, logs and tracing | oss | active |
 | [GoAlert](https://goalert.me) | SRE, incident response and on-call | oss | needs-review |
 | [Goldilocks](https://goldilocks.docs.fairwinds.com/) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | active |
-| [Gonzo](https://www.controltheory.com/gonzo) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Gonzo](https://www.controltheory.com/gonzo) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [Grafana Beyla](https://grafana.com/oss/beyla) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -57,7 +57,7 @@
 | [groundcover](https://www.groundcover.com/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [grove](https://github.com/ai-dynamo/grove) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [HolmesGPT](https://holmesgpt.dev/latest) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | commercial | active |
 | [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |

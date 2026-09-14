@@ -655,20 +655,20 @@ Context optimization layer that compresses tool outputs, logs, files, and RAG ch
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
 Agent framework and runtime from Nous Research.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a self-hosted personal agent runtime with tools, persistent memory, and messaging integrations.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a managed enterprise control plane with vendor-backed tenancy, compliance, and support guarantees.
 
-[Official site](https://hermes-agent.nousresearch.com)
+[Official site](https://hermes-agent.nousresearch.com) · [Documentation](https://hermes-agent.nousresearch.com/docs/) · [Source repository](https://github.com/NousResearch/hermes-agent)
 
 ### Hoji AI
 
@@ -693,20 +693,20 @@ AI assistant for GitHub workflows.
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Kubernetes-native platform for orchestrating AI agents.
+Kubernetes operator and CLI for allowing AI agents to spawn guarded child-agent workloads.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need Kubernetes-native agent hierarchy orchestration with explicit resource and policy guardrails.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a mature general-purpose agent framework without operating a Kubernetes control plane.
 
-[Official site](https://hortator.ai)
+[Official site](https://hortator.ai) · [Documentation](https://github.com/hortator-ai/Hortator#readme) · [Source repository](https://github.com/hortator-ai/Hortator)
 
 ### K8sGPT
 

@@ -275,10 +275,10 @@ Cloud services by Google.
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud platform as a service for app deployment.
+Managed cloud application platform for building, deploying, and operating applications on dynos and managed data services.
 
 **Use when**
 
@@ -288,7 +288,7 @@ Cloud platform as a service for app deployment.
 
 - You need fine-grained infrastructure control or cost-efficient scaling.
 
-[Official site](https://www.heroku.com)
+[Official site](https://www.heroku.com) · [Documentation](https://devcenter.heroku.com/)
 
 ### IBM Cloud
 

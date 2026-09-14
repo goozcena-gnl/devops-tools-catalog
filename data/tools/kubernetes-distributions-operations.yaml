@@ -757,9 +757,10 @@
   - legacy:devopstools_final.md#L433
   needs_review: false
 - id: gke
-  name: GKE
-  summary: Google Kubernetes Engine.
+  name: Google Kubernetes Engine (GKE)
+  summary: Managed Kubernetes service with Standard and Autopilot operating modes on Google Cloud.
   official_url: https://cloud.google.com/kubernetes-engine
+  documentation_url: https://docs.cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -775,17 +776,22 @@
   - You want best-in-class managed Kubernetes with Autopilot mode and deep GCP integration.
   avoid_when:
   - You're not on GCP or need to avoid vendor lock-in.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L160
   - legacy:devopstools_final.md#L662
-  needs_review: true
+  - https://cloud.google.com/kubernetes-engine
+  - https://docs.cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview
+  - https://cloud.google.com/kubernetes-engine/pricing
+  needs_review: false
 - id: goldilocks
   name: Goldilocks
   summary: Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
