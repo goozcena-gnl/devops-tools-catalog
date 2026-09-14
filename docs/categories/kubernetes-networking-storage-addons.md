@@ -760,20 +760,20 @@ API for managing HAProxy configuration, runtime operations, stats, and logs.
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
 HAProxy-powered Kubernetes ingress controller for high-performance Layer 7 traffic management.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want an HAProxy-based ingress data plane with Kubernetes-native configuration and official Helm packaging.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a cloud-provider-native gateway or a service-mesh data plane rather than an ingress controller.
 
-[Official site](https://www.haproxy.com/documentation/kubernetes-ingress)
+[Official site](https://www.haproxy.com/documentation/kubernetes-ingress) · [Documentation](https://www.haproxy.com/documentation/kubernetes-ingress/) · [Source repository](https://github.com/haproxytech/kubernetes-ingress)
 
 ### HashiCorp Consul
 

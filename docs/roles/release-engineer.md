@@ -66,11 +66,11 @@
 | [Gerrit Code Review](https://www.gerritcodereview.com/) | Source control and repository management | oss | active |
 | [ggshield](https://github.com/GitGuardian/ggshield) | Software supply-chain security | oss | active |
 | [Git](https://git-scm.com) | Source control and repository management | oss | needs-review |
-| [git push no-mistakes](https://kunchenguid.github.io/no-mistakes) | Software supply-chain security | unknown | needs-review |
+| [git push no-mistakes](https://kunchenguid.github.io/no-mistakes/) | Software supply-chain security | oss | active |
 | [GitButler](https://gitbutler.com/) | Source control and repository management, Developer experience and local environments | source-available | active |
 | [Gitea](https://about.gitea.com/) | Source control and repository management | oss | active |
 | [GitGuardian](https://www.gitguardian.com/) | Software supply-chain security | commercial | active |
-| [GitHub](https://github.com) | Source control and repository management | unknown | needs-review |
+| [GitHub](https://github.com) | Source control and repository management | commercial | active |
 | [GitHub Actions](https://github.com/features/actions) | CI, build and testing | unknown | needs-review |
 | [GitHub CLI](https://cli.github.com) | Source control and repository management, Developer experience and local environments | oss | active |
 | [GitLab](https://about.gitlab.com) | Source control and repository management | open-core | needs-review |
@@ -79,11 +79,11 @@
 | [gitmoji](https://gitmoji.dev) | CI, build and testing | documentation | needs-review |
 | [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) | CD, GitOps, release and promotion | oss | needs-review |
 | [GoCD](https://www.gocd.org) | CI, build and testing | oss | needs-review |
-| [Google Artifact Registry](https://cloud.google.com/artifact-registry) | Artifact and package management | unknown | needs-review |
-| [Google Cloud Build](https://cloud.google.com/build) | CI, build and testing | unknown | needs-review |
+| [Google Artifact Registry](https://cloud.google.com/artifact-registry) | Artifact and package management | commercial | active |
+| [Google Cloud Build](https://cloud.google.com/build) | CI, build and testing | commercial | active |
 | [Harbor](https://goharbor.io) | Artifact and package management | oss | needs-review |
 | [Harden-Runner](https://github.com/step-security/harden-runner) | Software supply-chain security | open-core | active |
-| [Harness](https://harness.io) | CI, build and testing | unknown | needs-review |
+| [Harness](https://harness.io) | CI, build and testing | commercial | active |
 | [Hurl](https://hurl.dev/) | CI, build and testing | oss | active |
 | [Husky](https://typicode.github.io/husky) | Software supply-chain security | oss | needs-review |
 | [Jasmine](https://jasmine.github.io/) | CI, build and testing | oss | active |

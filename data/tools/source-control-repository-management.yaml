@@ -210,8 +210,9 @@
   license_spdx: MIT
 - id: github
   name: GitHub
-  summary: Popular platform for hosting Git repositories.
+  summary: Hosted and self-managed developer platform for Git repositories, collaboration, automation, and software delivery.
   official_url: https://github.com
+  documentation_url: https://docs.github.com/
   categories:
   - source-control-repository-management
   subcategories:
@@ -227,17 +228,23 @@
   - Open-source projects or teams wanting best-in-class community and ecosystem.
   avoid_when:
   - You require full self-hosting without enterprise licensing costs.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:1_Foundational-Skills/README.md#L7
   - legacy:devopstools_final.md#L85
-  needs_review: true
+  - https://github.com/pricing
+  - https://docs.github.com/
+  - https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
+  needs_review: false
 - id: github-cli
   name: GitHub CLI
   summary: Official command-line interface for GitHub repositories, pull requests, issues, releases, and Actions workflows.

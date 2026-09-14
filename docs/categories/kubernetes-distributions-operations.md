@@ -519,25 +519,6 @@ Kubernetes service networking APIs.
 
 [Official site](https://gateway-api.sigs.k8s.io) · [Documentation](https://gateway-api.sigs.k8s.io/guides/) · [Source repository](https://github.com/kubernetes-sigs/gateway-api)
 
-### GKE
-
-**Categories:** Kubernetes distributions and operations<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Google Kubernetes Engine.
-
-**Use when**
-
-- You want best-in-class managed Kubernetes with Autopilot mode and deep GCP integration.
-
-**Consider alternatives when**
-
-- You're not on GCP or need to avoid vendor lock-in.
-
-[Official site](https://cloud.google.com/kubernetes-engine)
-
 ### Goldilocks
 
 **Categories:** Kubernetes distributions and operations, Monitoring, metrics, logs and tracing<br>
@@ -556,6 +537,25 @@ Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 - You require strict, manually controlled resource sizing or can’t use VPA recommendations due to workload characteristics (e.g., highly bursty or latency-critical services).
 
 [Official site](https://goldilocks.docs.fairwinds.com/) · [Documentation](https://goldilocks.docs.fairwinds.com/) · [Source repository](https://github.com/FairwindsOps/goldilocks)
+
+### Google Kubernetes Engine (GKE)
+
+**Categories:** Kubernetes distributions and operations<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+Managed Kubernetes service with Standard and Autopilot operating modes on Google Cloud.
+
+**Use when**
+
+- You want best-in-class managed Kubernetes with Autopilot mode and deep GCP integration.
+
+**Consider alternatives when**
+
+- You're not on GCP or need to avoid vendor lock-in.
+
+[Official site](https://cloud.google.com/kubernetes-engine) · [Documentation](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview)
 
 ### Hanoi CLI
 

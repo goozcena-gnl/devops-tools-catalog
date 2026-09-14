@@ -130,8 +130,10 @@
   needs_review: false
 - id: git-push-no-mistakes
   name: git push no-mistakes
-  summary: Guardrails to prevent common mistakes when pushing to Git.
-  official_url: https://kunchenguid.github.io/no-mistakes
+  summary: Local Git push gate that validates changes in an isolated worktree before publishing a branch and opening a pull request.
+  official_url: https://kunchenguid.github.io/no-mistakes/
+  repository_url: https://github.com/kunchenguid/no-mistakes
+  documentation_url: https://kunchenguid.github.io/no-mistakes/
   categories:
   - software-supply-chain-security
   subcategories:
@@ -143,18 +145,27 @@
   - build
   - release
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want a local, agent-assisted validation gate before branches reach the real Git remote.
+  avoid_when:
+  - You require a centrally enforced server-side merge control rather than a developer-side push workflow.
+  deployment_models:
+  - local
+  - self-hosted
+  license_model: oss
+  license_spdx: MIT
+  commercial_offering: false
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L1106
-  needs_review: true
+  - https://github.com/kunchenguid/no-mistakes
+  - https://github.com/kunchenguid/no-mistakes/blob/main/LICENSE
+  - https://kunchenguid.github.io/no-mistakes/
+  needs_review: false
 - id: gitguardian
   name: GitGuardian
   summary: Commercial secret-security platform for detecting and managing credential exposure across development

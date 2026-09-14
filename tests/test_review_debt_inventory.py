@@ -128,9 +128,11 @@ def test_recent_unresolved_candidates_remain_visible_below_older_equal_debt() ->
 
     for recent_id in {"everydev-ai", "filigran"}:
         assert recent_id in positions
-        assert (
-            by_id[recent_id]["priority_score"]
-            == by_id["git-push-no-mistakes"]["priority_score"]
+        older_equal = next(
+            item
+            for item in candidates
+            if item["priority_score"] == by_id[recent_id]["priority_score"]
+            and item["verified_on"] < by_id[recent_id]["verified_on"]
         )
         assert by_id[recent_id]["verified_on"] == "2026-09-13"
-        assert positions["git-push-no-mistakes"] < positions[recent_id]
+        assert positions[older_equal["id"]] < positions[recent_id]

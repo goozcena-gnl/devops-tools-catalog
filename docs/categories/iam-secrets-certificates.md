@@ -355,10 +355,10 @@ Secure secret storage and access.
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Enterprise key management.
+Licensed enterprise software for centralized encryption-key serving, storage, rotation, and lifecycle management.
 
 **Use when**
 
@@ -368,7 +368,7 @@ Enterprise key management.
 
 - You're not already invested in IBM infrastructure.
 
-[Official site](https://www.ibm.com/products/guardium-key-lifecycle-manager)
+[Official site](https://www.ibm.com/products/guardium-key-lifecycle-manager) · [Documentation](https://www.ibm.com/docs/en/gklm/5.x)
 
 ### InfraHQ
 

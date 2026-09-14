@@ -87,7 +87,7 @@
 | [Git](https://git-scm.com) | Source control and repository management | oss | needs-review |
 | [GitButler](https://gitbutler.com/) | Source control and repository management, Developer experience and local environments | source-available | active |
 | [Gitea](https://about.gitea.com/) | Source control and repository management | oss | active |
-| [GitHub](https://github.com) | Source control and repository management | unknown | needs-review |
+| [GitHub](https://github.com) | Source control and repository management | commercial | active |
 | [GitHub Actions](https://github.com/features/actions) | CI, build and testing | unknown | needs-review |
 | [GitHub CLI](https://cli.github.com) | Source control and repository management, Developer experience and local environments | oss | active |
 | [GitHub Codespaces](https://github.com/features/codespaces) | Developer experience and local environments | unknown | needs-review |
@@ -99,18 +99,18 @@
 | [Godcoder](https://github.com/eli-labz/Godcoder) | Developer experience and local environments | oss | needs-review |
 | [Gogs](https://gogs.io/) | Source control and repository management | oss | active |
 | [golangci-lint](https://golangci-lint.run) | Developer experience and local environments | oss | needs-review |
-| [Google Cloud Build](https://cloud.google.com/build) | CI, build and testing | unknown | needs-review |
+| [Google Cloud Build](https://cloud.google.com/build) | CI, build and testing | commercial | active |
 | [Gotify](https://gotify.net/) | Workflow automation and ChatOps | oss | active |
 | [Graft](https://trailhq.com/graft) | Developer experience and local environments, Source control and repository management | oss | active |
 | [Graphify](https://graphify.com/) | MLOps, LLMOps and AI infrastructure, Developer experience and local environments | oss | active |
 | [Hadolint](https://github.com/hadolint/hadolint) | Developer experience and local environments | oss | needs-review |
-| [Harness](https://harness.io) | CI, build and testing | unknown | needs-review |
+| [Harness](https://harness.io) | CI, build and testing | commercial | active |
 | [HashiCorp Vagrant](https://www.vagrantup.com) | Developer experience and local environments | source-available | needs-review |
 | [Hoppscotch](https://hoppscotch.io/) | Developer experience and local environments | open-core | active |
 | [HTTPX](https://www.python-httpx.org/) | Developer experience and local environments | oss | active |
-| [Humanitec](https://humanitec.com) | Platform engineering and internal developer platforms | unknown | needs-review |
+| [Humanitec](https://humanitec.com) | Platform engineering and internal developer platforms | commercial | active |
 | [Insomnia](https://insomnia.rest/) | Developer experience and local environments | open-core | active |
-| [IntelliJ IDEA](https://www.jetbrains.com/idea) | Developer experience and local environments | unknown | needs-review |
+| [IntelliJ IDEA](https://www.jetbrains.com/idea) | Developer experience and local environments | open-core | active |
 | [Jasmine](https://jasmine.github.io/) | CI, build and testing | oss | active |
 | [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | needs-review |
 | [Jenkins X](https://jenkins-x.io) | CI, build and testing | oss | needs-review |

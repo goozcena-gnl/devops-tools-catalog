@@ -24,7 +24,7 @@
 - [Finout](https://www.finout.io) — Cloud cost observability.
 - [Flexera One](https://www.flexera.com/products/flexera-one) — Cloud cost management.
 - [Google Cloud Platform](https://cloud.google.com) — Cloud services by Google.
-- [Heroku](https://www.heroku.com) — Cloud platform as a service for app deployment.
+- [Heroku](https://www.heroku.com) — Managed cloud application platform for building, deploying, and operating applications on dynos and managed data services.
 - [hyperfine](https://github.com/sharkdp/hyperfine) — CLI benchmark runner for repeated command timing and statistical comparison.
 - [IBM Cloud](https://www.ibm.com/products/cloud) — Enterprise cloud services and infrastructure by IBM.
 - [IBM Cloudability](https://www.apptio.com/products/cloudability/) — Enterprise FinOps and cloud cost management platform for multi-cloud visibility, allocation, and optimization.

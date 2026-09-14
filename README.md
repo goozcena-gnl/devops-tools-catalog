@@ -9,9 +9,9 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 - **Canonical records:** 1423
 - **Categories:** 30
-- **Records requiring review:** 886
+- **Records requiring review:** 866
 - **Archived repositories:** 11
-- **Last generation date:** 2026-09-13
+- **Last generation date:** 2026-09-14
 - **Maintenance status:** Active migration; unverified metadata is explicitly marked.
 
 ## Start with a task
@@ -98,20 +98,20 @@ A comprehensive, curated, and continuously maintained catalogue for DevOps, clou
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 908 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 913 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 23 |
-| `open-core` | OSS/community core with commercial features or service. | 105 |
-| `commercial` | Proprietary commercial product. | 106 |
-| `free-saas` | Hosted service with a free offering. | 4 |
+| `open-core` | OSS/community core with commercial features or service. | 107 |
+| `commercial` | Proprietary commercial product. | 118 |
+| `free-saas` | Hosted service with a free offering. | 5 |
 | `documentation` | Learning or documentation resource. | 108 |
-| `unknown` | Reliable licence evidence has not been recorded. | 169 |
+| `unknown` | Reliable licence evidence has not been recorded. | 149 |
 
 ## Project-status legend
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 525 |
-| `needs-review` | Imported but not yet fully verified. | 885 |
+| `active` | Maintained according to recorded primary-source evidence. | 545 |
+| `needs-review` | Imported but not yet fully verified. | 865 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 10 |
 | `historical` | Retained for context or migration work. | 1 |

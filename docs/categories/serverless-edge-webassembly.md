@@ -81,14 +81,14 @@ The runtime host and core execution engine for Azure Functions.
 
 [Source repository](https://github.com/Azure/azure-functions-host)
 
-### Google Cloud Functions
+### Cloud Run functions
 
 **Categories:** Serverless, edge and WebAssembly<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Event-driven serverless functions on Google Cloud.
+Managed event-driven functions deployed on the unified Google Cloud Run platform.
 
 **Use when**
 
@@ -98,16 +98,16 @@ Event-driven serverless functions on Google Cloud.
 
 - You need container-level flexibility or are not on GCP.
 
-[Official site](https://cloud.google.com/functions)
+[Official site](https://cloud.google.com/functions) · [Documentation](https://docs.cloud.google.com/run/docs/functions/overview)
 
 ### Google Cloud Run
 
 **Categories:** Serverless, edge and WebAssembly<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Serverless containers on Google Cloud.
+Fully managed Google Cloud application platform for running services, jobs, worker pools, and functions from code or containers.
 
 **Use when**
 
@@ -117,7 +117,7 @@ Serverless containers on Google Cloud.
 
 - You need persistent connections, GPU workloads, or non-HTTP triggers natively.
 
-[Official site](https://cloud.google.com/run)
+[Official site](https://cloud.google.com/run) · [Documentation](https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run)
 
 ### Knative
 

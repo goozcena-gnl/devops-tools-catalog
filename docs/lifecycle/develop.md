@@ -82,7 +82,7 @@
 - [Git](https://git-scm.com) — Distributed version control system.
 - [GitButler](https://gitbutler.com/) — Git client and collaboration workflow built around virtual branches and parallel changes.
 - [Gitea](https://about.gitea.com/) — Self-hosted Git forge with repository hosting, code review, issues, packages, and automation integrations.
-- [GitHub](https://github.com) — Popular platform for hosting Git repositories.
+- [GitHub](https://github.com) — Hosted and self-managed developer platform for Git repositories, collaboration, automation, and software delivery.
 - [GitHub CLI](https://cli.github.com) — Official command-line interface for GitHub repositories, pull requests, issues, releases, and Actions workflows.
 - [GitHub Codespaces](https://github.com/features/codespaces) — Hosted cloud development environments integrated with GitHub.
 - [GitLab](https://about.gitlab.com) — Git repository management with CI/CD.
@@ -103,11 +103,11 @@
 - [Hoppscotch](https://hoppscotch.io/) — API development workspace with community self-hosting and commercial collaboration options.
 - [htop](https://htop.dev/) — Interactive process viewer for inspecting system processes and resource usage.
 - [HTTPX](https://www.python-httpx.org/) — Python HTTP client library with synchronous, asynchronous, HTTP/2, and streaming APIs.
-- [Humanitec](https://humanitec.com) — Internal developer platform for platform engineering (app/service delivery with abstractions).
+- [Humanitec](https://humanitec.com) — Commercial platform orchestrator for building internal developer platforms across cloud and Kubernetes infrastructure.
 - [IcePanel](https://icepanel.io) — Collaborative software architecture modeling tool for mapping systems, services, and C4-style relationships.
 - [Informatica](https://www.informatica.com) — Data integration and cloud data management solutions.
 - [Insomnia](https://insomnia.rest/) — API client and testing workspace with local workflows and paid collaboration capabilities.
-- [IntelliJ IDEA](https://www.jetbrains.com/idea) — Java IDE with support for many languages.
+- [IntelliJ IDEA](https://www.jetbrains.com/idea) — JetBrains IDE for JVM development with a free core feature set and subscription-gated advanced features.
 - [IT Tools](https://it-tools.tech) — Collection of developer utility tools (converters, encoders, generators, and more) available as a self-hostable web app.
 - [jaq](https://github.com/01mf02/jaq) — JSON query CLI implementing a substantial subset of jq's language.
 - [jq](https://jqlang.org) — Command-line processor for querying and transforming JSON data.

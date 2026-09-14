@@ -168,8 +168,9 @@
   needs_review: true
 - id: humanitec
   name: Humanitec
-  summary: Internal developer platform for platform engineering (app/service delivery with abstractions).
+  summary: Commercial platform orchestrator for building internal developer platforms across cloud and Kubernetes infrastructure.
   official_url: https://humanitec.com
+  documentation_url: https://developer.humanitec.com/platform-orchestrator/
   categories:
   - platform-engineering-idp
   subcategories:
@@ -185,17 +186,23 @@
   - You want a commercial, score-based IDP with enterprise support and quick time-to-value.
   avoid_when:
   - You want OSS flexibility or your platform team prefers building custom abstractions.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:7_Development-Collaboration/README.md#L100
   - legacy:devopstools_final.md#L1146
-  needs_review: true
+  - https://humanitec.com/
+  - https://developer.humanitec.com/platform-orchestrator/
+  - https://humanitec.com/pricing
+  needs_review: false
 - id: kubara
   name: kubara
   summary: Platform engineering framework for building internal platforms.

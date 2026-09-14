@@ -1180,8 +1180,9 @@
   needs_review: true
 - id: google-cloud-build
   name: Google Cloud Build
-  summary: CI/CD service for Google Cloud.
+  summary: Managed build service that executes containerized build steps on Google Cloud infrastructure.
   official_url: https://cloud.google.com/build
+  documentation_url: https://docs.cloud.google.com/build/docs/overview
   categories:
   - ci-build-testing
   subcategories:
@@ -1197,21 +1198,27 @@
   - '* You''re on GCP and want a serverless, pay-per-build CI service.'
   avoid_when:
   - '* You''re multi-cloud or need on-prem build execution.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L40
   - legacy:devopstools_final.md#L327
-  needs_review: true
+  - https://cloud.google.com/build
+  - https://docs.cloud.google.com/build/docs/overview
+  - https://cloud.google.com/build/pricing
+  needs_review: false
 - id: harness
   name: Harness
-  summary: CI/CD and DevOps platform.
+  summary: Commercial software-delivery platform spanning CI, CD, GitOps, infrastructure, security, reliability, and developer-experience modules.
   official_url: https://harness.io
+  documentation_url: https://developer.harness.io/docs/
   categories:
   - ci-build-testing
   subcategories:
@@ -1227,17 +1234,24 @@
   - '* You want an enterprise platform covering CI, CD, feature flags, and cost management.'
   avoid_when:
   - '* You want a simple, lightweight CI or prefer OSS-only tooling.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L42
   - legacy:devopstools_final.md#L328
-  needs_review: true
+  - https://www.harness.io/
+  - https://developer.harness.io/docs/
+  - https://www.harness.io/pricing
+  - https://www.harness.io/legal/products-and-license-units
+  needs_review: false
 - id: hurl
   name: Hurl
   summary: HTTP request and assertion runner using plain-text test files.

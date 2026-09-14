@@ -39,9 +39,9 @@
 | [Graphify](https://graphify.com/) | MLOps, LLMOps and AI infrastructure, Developer experience and local environments | oss | active |
 | [Haystack](https://haystack.deepset.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Headroom](https://headroomlabs-ai.github.io/headroom) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Hermes Agent](https://hermes-agent.nousresearch.com) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Hermes Agent](https://hermes-agent.nousresearch.com) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Hoji AI](https://hoji.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Hortator](https://hortator.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Hortator](https://hortator.ai) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [K8sGPT](https://k8sgpt.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Kelos](https://github.com/kelos-dev/kelos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [KServe](https://kserve.github.io/website) | MLOps, LLMOps and AI infrastructure | oss | needs-review |

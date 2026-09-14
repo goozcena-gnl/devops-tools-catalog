@@ -54,6 +54,7 @@
 - [cdk8s](https://cdk8s.io) — Define Kubernetes applications and reusable abstractions in general-purpose programming languages and synthesize them to YAML.
 - [cek](https://github.com/bschaatsbergen/cek) — Inspect OCI image filesystems and layers without running containers.
 - [CircleCI](https://circleci.com) — Commercial CI/CD platform offered as a managed cloud service or self-hosted CircleCI Server, with optional self-hosted runners.
+- [Cloud Run functions](https://cloud.google.com/functions) — Managed event-driven functions deployed on the unified Google Cloud Run platform.
 - [CloudBees](https://www.cloudbees.com) — Enterprise CI/CD built around Jenkins.
 - [CloudCustodian](https://cloudcustodian.io) — Cloud governance rules engine.
 - [Cloudsmith](https://cloudsmith.com/) — Managed multi-format package and artifact repository service with access controls and supply-chain features.
@@ -97,7 +98,7 @@
 - [fulling](https://github.com/FullAgent/fulling) — AI-powered full-stack engineer agent built with Next.js, Claude, and PostgreSQL, using Kubernetes as infrastructure.
 - [genai-agentos](https://github.com/genai-works-org/genai-agentos) — Framework for building, running, and managing multi-agent AI workflows.
 - [ggshield](https://github.com/GitGuardian/ggshield) — GitGuardian CLI for secret scanning in local development, hooks, and CI.
-- [git push no-mistakes](https://kunchenguid.github.io/no-mistakes) — Guardrails to prevent common mistakes when pushing to Git.
+- [git push no-mistakes](https://kunchenguid.github.io/no-mistakes/) — Local Git push gate that validates changes in an isolated worktree before publishing a branch and opening a pull request.
 - [GitHub Actions](https://github.com/features/actions) — CI/CD automation built into GitHub.
 - [GitHub Copilot](https://github.com/features/copilot) — AI-powered code completion assistant.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server) — GitHub's MCP server implementation.
@@ -106,20 +107,19 @@
 - [gitmoji](https://gitmoji.dev) — Standardized emoji guide for commit messages.
 - [GoCD](https://www.gocd.org) — Open-source CI/CD server.
 - [Google Artifact Registry](https://cloud.google.com/artifact-registry) — Google Cloud's unified repository for container images and language packages.
-- [Google Cloud Build](https://cloud.google.com/build) — CI/CD service for Google Cloud.
-- [Google Cloud Functions](https://cloud.google.com/functions) — Event-driven serverless functions on Google Cloud.
-- [Google Cloud Run](https://cloud.google.com/run) — Serverless containers on Google Cloud.
+- [Google Cloud Build](https://cloud.google.com/build) — Managed build service that executes containerized build steps on Google Cloud infrastructure.
+- [Google Cloud Run](https://cloud.google.com/run) — Fully managed Google Cloud application platform for running services, jobs, worker pools, and functions from code or containers.
 - [Gradle](https://gradle.org) — Flexible build automation tool for Java and other languages.
 - [Grafana MCP](https://github.com/grafana/mcp-grafana) — Model Context Protocol for Grafana.
 - [Graphify](https://graphify.com/) — Local code-knowledge graph tool for mapping code, configuration, schemas, and documentation for AI coding assistants.
 - [Harbor](https://goharbor.io) — Cloud-native registry for storing, signing, and scanning container images.
 - [Harden-Runner](https://github.com/step-security/harden-runner) — GitHub Actions runner security component that observes runtime network, file, and process activity.
-- [Harness](https://harness.io) — CI/CD and DevOps platform.
+- [Harness](https://harness.io) — Commercial software-delivery platform spanning CI, CD, GitOps, infrastructure, security, reliability, and developer-experience modules.
 - [Haystack](https://haystack.deepset.ai) — Framework for building LLM-powered apps and search systems.
 - [Headroom](https://headroomlabs-ai.github.io/headroom) — Context optimization layer that compresses tool outputs, logs, files, and RAG chunks before they reach the LLM.
 - [Hermes Agent](https://hermes-agent.nousresearch.com) — Agent framework and runtime from Nous Research.
 - [Hoji AI](https://hoji.ai) — AI assistant for GitHub workflows.
-- [Hortator](https://hortator.ai) — Kubernetes-native platform for orchestrating AI agents.
+- [Hortator](https://hortator.ai) — Kubernetes operator and CLI for allowing AI agents to spawn guarded child-agent workloads.
 - [Husky](https://typicode.github.io/husky) — Git hooks for Node.js projects (commonly paired with lint-staged).
 - [Infracost](https://www.infracost.io) — Cost estimates for IaC projects.
 - [Jasmine](https://jasmine.github.io/) — Behavior-driven JavaScript testing framework for browser and Node.js applications.

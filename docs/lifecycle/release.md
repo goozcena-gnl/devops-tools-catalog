@@ -36,7 +36,7 @@
 - [Flux](https://fluxcd.io) — Open and extensible GitOps toolkit for Kubernetes.
 - [Flux Operator](https://fluxoperator.dev) — Kubernetes operator for managing Flux CD instances.
 - [flux9s](https://flux9s.ca) — K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
-- [git push no-mistakes](https://kunchenguid.github.io/no-mistakes) — Guardrails to prevent common mistakes when pushing to Git.
+- [git push no-mistakes](https://kunchenguid.github.io/no-mistakes/) — Local Git push gate that validates changes in an isolated worktree before publishing a branch and opening a pull request.
 - [GitHub CLI](https://cli.github.com) — Official command-line interface for GitHub repositories, pull requests, issues, releases, and Actions workflows.
 - [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) — GitOps bridge for Kubernetes deployments.
 - [Google Artifact Registry](https://cloud.google.com/artifact-registry) — Google Cloud's unified repository for container images and language packages.

@@ -1226,8 +1226,10 @@
   needs_review: false
 - id: intellij-idea
   name: IntelliJ IDEA
-  summary: Java IDE with support for many languages.
+  summary: JetBrains IDE for JVM development with a free core feature set and subscription-gated advanced features.
   official_url: https://www.jetbrains.com/idea
+  repository_url: https://github.com/JetBrains/intellij-community
+  documentation_url: https://www.jetbrains.com/help/idea/
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -1242,17 +1244,25 @@
   - Working in JVM languages where deep refactoring, inspections, and framework support matter.
   avoid_when:
   - You primarily work outside the JVM ecosystem—it's heavyweight for scripting or web-only work.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - local
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:7_Development-Collaboration/README.md#L46
   - legacy:devopstools_final.md#L1080
-  needs_review: true
+  - https://www.jetbrains.com/idea/
+  - https://www.jetbrains.com/help/idea/register.html
+  - https://blog.jetbrains.com/idea/2025/07/intellij-idea-unified-distribution-plan/
+  - https://github.com/JetBrains/intellij-community
+  - https://github.com/JetBrains/intellij-community/blob/master/LICENSE.txt
+  needs_review: false
 - id: json-crack
   name: JSON Crack
   summary: Interactive JSON visualizer that turns data structures into graphs.

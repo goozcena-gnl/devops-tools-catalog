@@ -95,6 +95,7 @@
 | [Civo](https://www.civo.com) | Cloud platforms and cloud management | commercial | active |
 | [Claude Code Cheat Sheet](https://shipyard.build/blog/claude-code-cheat-sheet) | Documentation, learning and career resources | documentation | needs-review |
 | [Clone-Wars](https://github.com/GorvGoyl/Clone-Wars) | Emerging and experimental tools | oss | needs-review |
+| [Cloud Run functions](https://cloud.google.com/functions) | Serverless, edge and WebAssembly | commercial | active |
 | [CloudBolt Cloud Operations](https://www.cloudbolt.io/solutions/cloud-operations-and-data-center-operations) | FinOps and sustainability | commercial | active |
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | active |
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -204,19 +205,18 @@
 | [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) | CD, GitOps, release and promotion | oss | needs-review |
 | [gitsign (sigstore)](https://github.com/sigstore/gitsign) | Emerging and experimental tools | oss | needs-review |
-| [GKE](https://cloud.google.com/kubernetes-engine) | Kubernetes distributions and operations | unknown | needs-review |
 | [glances](https://nicolargo.github.io/glances) | Emerging and experimental tools | oss | needs-review |
 | [Goldilocks](https://goldilocks.docs.fairwinds.com/) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | active |
-| [Google Cloud Functions](https://cloud.google.com/functions) | Serverless, edge and WebAssembly | unknown | needs-review |
 | [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | commercial | active |
-| [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | unknown | needs-review |
+| [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | commercial | active |
+| [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) | Kubernetes distributions and operations | commercial | active |
 | [Gradle](https://gradle.org) | Containers and image tooling | oss | needs-review |
 | [Grafana MCP](https://github.com/grafana/mcp-grafana) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [HAMi](https://project-hami.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Hanoi CLI](https://github.com/k-krew/hanoi-cli) | Kubernetes distributions and operations | oss | needs-review |
 | [HAProxy](https://www.haproxy.org) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [HAProxy Data Plane API](https://www.haproxy.com/documentation/dataplaneapi/) | Kubernetes networking, storage and add-ons | oss | active |
-| [HAProxy Kubernetes Ingress Controller](https://www.haproxy.com/documentation/kubernetes-ingress) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [HAProxy Kubernetes Ingress Controller](https://www.haproxy.com/documentation/kubernetes-ingress) | Kubernetes networking, storage and add-ons | oss | active |
 | [Harvester](https://harvesterhci.io/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
 | [HashiCorp Consul](https://developer.hashicorp.com/consul) | Kubernetes networking, storage and add-ons | source-available | active |
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
@@ -234,13 +234,13 @@
 | [helm-unittest](https://github.com/helm-unittest/helm-unittest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Helmfile](https://helmfile.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Helmper](https://christoffernissen.github.io/helmper) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Hermes Agent](https://hermes-agent.nousresearch.com) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Hermes Agent](https://hermes-agent.nousresearch.com) | MLOps, LLMOps and AI infrastructure | oss | active |
+| [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | commercial | active |
 | [Hoji AI](https://hoji.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Holos](https://holos.run) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Homer](https://homer-demo.netlify.app) | Emerging and experimental tools | oss | needs-review |
-| [Hortator](https://hortator.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [Humanitec](https://humanitec.com) | Platform engineering and internal developer platforms | unknown | needs-review |
+| [Hortator](https://hortator.ai) | MLOps, LLMOps and AI infrastructure | open-core | active |
+| [Humanitec](https://humanitec.com) | Platform engineering and internal developer platforms | commercial | active |
 | [HwameiStor](https://hwameistor.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Hybernate](https://okedeji.io/hybernate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [IBM Cloud](https://www.ibm.com/products/cloud) | Cloud platforms and cloud management | commercial | active |

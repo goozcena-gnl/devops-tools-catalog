@@ -366,8 +366,9 @@
   needs_review: false
 - id: heroku
   name: Heroku
-  summary: Cloud platform as a service for app deployment.
+  summary: Managed cloud application platform for building, deploying, and operating applications on dynos and managed data services.
   official_url: https://www.heroku.com
+  documentation_url: https://devcenter.heroku.com/
   categories:
   - cloud-platforms-management
   subcategories:
@@ -384,17 +385,22 @@
   - You want zero-ops app deployment with Git push.
   avoid_when:
   - You need fine-grained infrastructure control or cost-efficient scaling.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L16
   - legacy:devopstools_final.md#L156
-  needs_review: true
+  - https://www.heroku.com/
+  - https://devcenter.heroku.com/articles/how-heroku-works
+  - https://www.heroku.com/pricing/
+  needs_review: false
 - id: ibm-cloud
   name: IBM Cloud
   summary: Enterprise cloud services and infrastructure by IBM.

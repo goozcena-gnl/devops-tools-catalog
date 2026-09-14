@@ -142,10 +142,10 @@ Self-hosted Git forge with repository hosting, code review, issues, packages, an
 
 **Categories:** Source control and repository management<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Popular platform for hosting Git repositories.
+Hosted and self-managed developer platform for Git repositories, collaboration, automation, and software delivery.
 
 **Use when**
 
@@ -155,7 +155,7 @@ Popular platform for hosting Git repositories.
 
 - You require full self-hosting without enterprise licensing costs.
 
-[Official site](https://github.com)
+[Official site](https://github.com) · [Documentation](https://docs.github.com/)
 
 ### GitHub CLI
 

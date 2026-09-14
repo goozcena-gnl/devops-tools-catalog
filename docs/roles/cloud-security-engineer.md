@@ -82,7 +82,7 @@
 | [Ghostwriter](https://www.ghostwriter.wiki/home) | Application and cloud security | oss | active |
 | [Gibson](https://github.com/HackingLZ/gibson) | Application and cloud security | oss | needs-review |
 | [Gitleaks](https://gitleaks.io) | Application and cloud security | oss | needs-review |
-| [Google Cloud Organization Policy](https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview) | Application and cloud security | unknown | needs-review |
+| [Google Cloud Organization Policy Service](https://docs.cloud.google.com/organization-policy/overview) | Application and cloud security | commercial | active |
 | [graphql-cop](https://github.com/dolevf/graphql-cop) | Application and cloud security | oss | active |
 | [Greenbone (OpenVAS)](https://github.com/greenbone) | Application and cloud security | oss | needs-review |
 | [Grype](https://github.com/anchore/grype) | Application and cloud security | oss | needs-review |
@@ -93,13 +93,13 @@
 | [HashiCorp Vault](https://www.vaultproject.io) | IAM, secrets and certificate management | source-available | needs-review |
 | [hcxdumptool](https://github.com/ZerBea/hcxdumptool) | Application and cloud security | oss | active |
 | [hcxtools](https://github.com/ZerBea/hcxtools) | Application and cloud security | oss | active |
-| [Hybrid Analysis](https://www.hybrid-analysis.com) | Application and cloud security | unknown | needs-review |
-| [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | unknown | needs-review |
+| [Hybrid Analysis](https://www.hybrid-analysis.com) | Application and cloud security | free-saas | active |
+| [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | commercial | active |
 | [Impacket](https://github.com/fortra/impacket) | Application and cloud security | oss | active |
 | [InfraHQ](https://infrahq.com) | IAM, secrets and certificate management | oss | needs-review |
 | [ipman](https://dialohq.github.io/ipman/) | Kubernetes networking, storage and add-ons, Emerging and experimental tools | oss | active |
 | [Iroh](https://www.iroh.computer) | Application and cloud security | oss | needs-review |
-| [ISMS Builder](https://www.isms-builder.com) | Application and cloud security | unknown | needs-review |
+| [ISMS Builder](https://www.isms-builder.com) | Application and cloud security | oss | active |
 | [JARVIS OS](https://jarvisoslinux.org) | Application and cloud security | unknown | needs-review |
 | [John the Ripper](https://www.openwall.com/john/) | Application and cloud security | oss | active |
 | [JumpServer](https://www.jumpserver.com) | IAM, secrets and certificate management | oss | needs-review |

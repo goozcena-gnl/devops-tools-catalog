@@ -1140,6 +1140,8 @@
   name: Gonzo
   summary: K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.
   official_url: https://www.controltheory.com/gonzo
+  repository_url: https://github.com/control-theory/gonzo
+  documentation_url: https://github.com/control-theory/gonzo/tree/main/docs
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -1151,18 +1153,27 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want an interactive local TUI for live logs, OpenTelemetry streams, or Kubernetes pod logs.
+  avoid_when:
+  - You need durable centralized retention, multi-user access controls, or a managed observability backend.
+  deployment_models:
+  - local
+  - self-hosted
+  license_model: oss
+  license_spdx: MIT
+  commercial_offering: false
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L765
-  needs_review: true
+  - https://github.com/control-theory/gonzo
+  - https://github.com/control-theory/gonzo/blob/main/LICENSE
+  - https://github.com/control-theory/gonzo/tree/main/docs
+  needs_review: false
 - id: grafana
   name: Grafana
   summary: Visualization and analytics for metrics.
@@ -1467,8 +1478,9 @@
   needs_review: true
 - id: honeycomb
   name: Honeycomb
-  summary: Observability platform built for high-cardinality events, tracing, and AI-era debugging.
+  summary: Hosted observability platform for high-cardinality telemetry, distributed tracing, and production debugging.
   official_url: https://www.honeycomb.io
+  documentation_url: https://docs.honeycomb.io/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -1480,18 +1492,25 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need managed high-cardinality observability and exploratory debugging across traces, events, and metrics.
+  avoid_when:
+  - You require a fully self-hosted observability backend or cannot send production telemetry to a hosted service.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L705
-  needs_review: true
+  - https://www.honeycomb.io/
+  - https://docs.honeycomb.io/get-started
+  - https://www.honeycomb.io/pricing
+  needs_review: false
 - id: hyperdx
   name: HyperDX
   summary: Observability and troubleshooting platform.

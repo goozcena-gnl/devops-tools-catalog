@@ -1287,14 +1287,14 @@ Detect hardcoded secrets in code.
 
 [Official site](https://gitleaks.io) · [Source repository](https://github.com/gitleaks/gitleaks)
 
-### Google Cloud Organization Policy
+### Google Cloud Organization Policy Service
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-GCP resource governance.
+Centralized service for defining and enforcing constraints across a Google Cloud resource hierarchy.
 
 **Use when**
 
@@ -1304,7 +1304,7 @@ GCP resource governance.
 
 - You're not on GCP or prefer cross-cloud policy tools like OPA.
 
-[Official site](https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview)
+[Official site](https://docs.cloud.google.com/organization-policy/overview) · [Documentation](https://docs.cloud.google.com/organization-policy)
 
 ### graphql-cop
 
@@ -1462,20 +1462,20 @@ Utilities for converting and processing wireless capture data for security-audit
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Free Saas<br>
+**Status:** Active
 
 Free malware analysis sandbox service powered by CrowdStrike Falcon Sandbox.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a free community-hosted sandbox for static and dynamic analysis of untrusted files or URLs.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need private submissions, guaranteed capacity, commercial use rights, or an on-premises malware-analysis platform.
 
-[Official site](https://www.hybrid-analysis.com)
+[Official site](https://www.hybrid-analysis.com) · [Documentation](https://www.hybrid-analysis.com/knowledge-base)
 
 ### Impacket
 
@@ -1519,20 +1519,20 @@ Peer-to-peer networking library for building distributed, hole-punching-capable,
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
 Self-hosted information security management system builder for ISO 27001, NIS2, and GDPR compliance.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want an open-source, self-hosted ISMS workflow for policy, risk, evidence, and compliance management.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a mature vendor-supported SaaS, formal certification content, or redistribution rights for proprietary ISO standards text.
 
-[Official site](https://www.isms-builder.com)
+[Official site](https://www.isms-builder.com) · [Documentation](https://github.com/coolstartnow/isms-builder#readme) · [Source repository](https://github.com/coolstartnow/isms-builder)
 
 ### JARVIS OS
 

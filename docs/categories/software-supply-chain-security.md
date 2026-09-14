@@ -85,20 +85,20 @@ GitGuardian CLI for secret scanning in local development, hooks, and CI.
 
 **Categories:** Software supply-chain security<br>
 **Roles:** DevSecOps Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Guardrails to prevent common mistakes when pushing to Git.
+Local Git push gate that validates changes in an isolated worktree before publishing a branch and opening a pull request.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a local, agent-assisted validation gate before branches reach the real Git remote.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a centrally enforced server-side merge control rather than a developer-side push workflow.
 
-[Official site](https://kunchenguid.github.io/no-mistakes)
+[Official site](https://kunchenguid.github.io/no-mistakes/) · [Documentation](https://kunchenguid.github.io/no-mistakes/) · [Source repository](https://github.com/kunchenguid/no-mistakes)
 
 ### GitGuardian
 

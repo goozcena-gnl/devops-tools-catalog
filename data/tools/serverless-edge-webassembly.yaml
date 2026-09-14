@@ -140,9 +140,10 @@
   - legacy:devopstools_final.md#L211
   needs_review: true
 - id: google-cloud-functions
-  name: Google Cloud Functions
-  summary: Event-driven serverless functions on Google Cloud.
+  name: Cloud Run functions
+  summary: Managed event-driven functions deployed on the unified Google Cloud Run platform.
   official_url: https://cloud.google.com/functions
+  documentation_url: https://docs.cloud.google.com/run/docs/functions/overview
   categories:
   - serverless-edge-webassembly
   subcategories:
@@ -159,21 +160,28 @@
   - You need lightweight functions integrated with GCP services and Firebase.
   avoid_when:
   - You need container-level flexibility or are not on GCP.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L102
   - legacy:devopstools_final.md#L212
-  needs_review: true
+  - https://cloud.google.com/functions
+  - https://cloud.google.com/blog/products/serverless/google-cloud-functions-is-now-cloud-run-functions
+  - https://docs.cloud.google.com/functions/docs/release-notes
+  - https://docs.cloud.google.com/run/docs/functions/overview
+  needs_review: false
 - id: google-cloud-run
   name: Google Cloud Run
-  summary: Serverless containers on Google Cloud.
+  summary: Fully managed Google Cloud application platform for running services, jobs, worker pools, and functions from code or containers.
   official_url: https://cloud.google.com/run
+  documentation_url: https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run
   categories:
   - serverless-edge-webassembly
   subcategories:
@@ -190,17 +198,22 @@
   - You want serverless containers with any language/framework and pay-per-request pricing.
   avoid_when:
   - You need persistent connections, GPU workloads, or non-HTTP triggers natively.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L104
   - legacy:devopstools_final.md#L213
-  needs_review: true
+  - https://cloud.google.com/run
+  - https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run
+  - https://cloud.google.com/run/pricing
+  needs_review: false
 - id: knative
   name: Knative
   summary: Kubernetes-based platform APIs for deploying, scaling, and delivering serverless workloads

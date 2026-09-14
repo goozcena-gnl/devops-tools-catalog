@@ -1091,6 +1091,8 @@
   name: Hermes Agent
   summary: Agent framework and runtime from Nous Research.
   official_url: https://hermes-agent.nousresearch.com
+  repository_url: https://github.com/NousResearch/hermes-agent
+  documentation_url: https://hermes-agent.nousresearch.com/docs/
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -1103,18 +1105,27 @@
   - build
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want a self-hosted personal agent runtime with tools, persistent memory, and messaging integrations.
+  avoid_when:
+  - You require a managed enterprise control plane with vendor-backed tenancy, compliance, and support guarantees.
+  deployment_models:
+  - local
+  - self-hosted
+  license_model: oss
+  license_spdx: MIT
+  commercial_offering: false
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L1240
-  needs_review: true
+  - https://github.com/NousResearch/hermes-agent
+  - https://github.com/NousResearch/hermes-agent/blob/main/LICENSE
+  - https://hermes-agent.nousresearch.com/docs/
+  needs_review: false
 - id: hoji-ai
   name: Hoji AI
   summary: AI assistant for GitHub workflows.
@@ -1149,8 +1160,10 @@
   needs_review: true
 - id: hortator
   name: Hortator
-  summary: Kubernetes-native platform for orchestrating AI agents.
+  summary: Kubernetes operator and CLI for allowing AI agents to spawn guarded child-agent workloads.
   official_url: https://hortator.ai
+  repository_url: https://github.com/hortator-ai/Hortator
+  documentation_url: https://github.com/hortator-ai/Hortator#readme
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -1163,18 +1176,27 @@
   - build
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need Kubernetes-native agent hierarchy orchestration with explicit resource and policy guardrails.
+  avoid_when:
+  - You need a mature general-purpose agent framework without operating a Kubernetes control plane.
+  deployment_models:
+  - kubernetes
+  - self-hosted
+  license_model: open-core
+  license_spdx: MIT
+  commercial_offering: true
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L1241
-  needs_review: true
+  - https://hortator.ai/
+  - https://github.com/hortator-ai/Hortator
+  - https://github.com/hortator-ai/Hortator/blob/main/LICENSE
+  needs_review: false
 - id: k8sgpt
   name: K8sGPT
   summary: AI-powered Kubernetes troubleshooting.
