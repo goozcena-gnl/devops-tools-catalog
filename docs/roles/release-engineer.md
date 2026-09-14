@@ -90,15 +90,15 @@
 | [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | needs-review |
 | [Jenkins X](https://jenkins-x.io) | CI, build and testing | oss | needs-review |
 | [JFrog Artifactory](https://jfrog.com/artifactory) | Artifact and package management | open-core | needs-review |
-| [JFrog Connect](https://jfrog.com/connect) | Artifact and package management | unknown | needs-review |
-| [JFrog Distribution](https://jfrog.com/distribution) | Artifact and package management | unknown | needs-review |
-| [JFrog Pipelines](https://jfrog.com/pipelines) | Artifact and package management | unknown | needs-review |
-| [JFrog Platform](https://jfrog.com) | Artifact and package management | unknown | needs-review |
+| [JFrog Connect](https://jfrog.com/connect/) | Artifact and package management | commercial | active |
+| [JFrog Distribution](https://jfrog.com/distribution/) | Artifact and package management | commercial | active |
+| [JFrog Pipelines](https://docs.jfrog.com/releases/docs/pipeline-deprecation-end-of-life) | Artifact and package management | commercial | historical |
+| [JFrog Platform](https://jfrog.com/platform/) | Artifact and package management | commercial | active |
 | [JUnit](https://junit.org/) | CI, build and testing | oss | active |
 | [k6](https://k6.io) | CI, build and testing | oss | needs-review |
 | [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
-| [Katalon Studio](https://github.com/katalon-studio) | CI, build and testing | unknown | needs-review |
+| [Katalon Studio](https://katalon.com/katalon-studio) | CI, build and testing | commercial | active |
 | [Keel](https://keel.sh) | CD, GitOps, release and promotion | oss | active |
 | [Keptn](https://keptn.sh) | Deprecated and historical tools, CI, build and testing | oss | archived |
 | [KubeChecks](https://kubechecks.readthedocs.io/en/latest) | CD, GitOps, release and promotion | oss | needs-review |

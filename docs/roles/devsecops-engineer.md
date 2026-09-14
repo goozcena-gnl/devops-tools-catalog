@@ -113,12 +113,12 @@
 | [InfraHQ](https://infrahq.com) | IAM, secrets and certificate management | oss | needs-review |
 | [Iroh](https://www.iroh.computer) | Application and cloud security | oss | needs-review |
 | [ISMS Builder](https://www.isms-builder.com) | Application and cloud security | oss | active |
-| [JARVIS OS](https://jarvisoslinux.org) | Application and cloud security | unknown | needs-review |
+| [JARVIS OS](https://www.jarvisoslinux.org/) | Application and cloud security | oss | active |
 | [JFrog Artifactory](https://jfrog.com/artifactory) | Artifact and package management | open-core | needs-review |
-| [JFrog Connect](https://jfrog.com/connect) | Artifact and package management | unknown | needs-review |
-| [JFrog Distribution](https://jfrog.com/distribution) | Artifact and package management | unknown | needs-review |
-| [JFrog Pipelines](https://jfrog.com/pipelines) | Artifact and package management | unknown | needs-review |
-| [JFrog Platform](https://jfrog.com) | Artifact and package management | unknown | needs-review |
+| [JFrog Connect](https://jfrog.com/connect/) | Artifact and package management | commercial | active |
+| [JFrog Distribution](https://jfrog.com/distribution/) | Artifact and package management | commercial | active |
+| [JFrog Pipelines](https://docs.jfrog.com/releases/docs/pipeline-deprecation-end-of-life) | Artifact and package management | commercial | historical |
+| [JFrog Platform](https://jfrog.com/platform/) | Artifact and package management | commercial | active |
 | [John the Ripper](https://www.openwall.com/john/) | Application and cloud security | oss | active |
 | [JumpServer](https://www.jumpserver.com) | IAM, secrets and certificate management | oss | needs-review |
 | [k-guard](https://github.com/KamouloxPelvis/k-guard) | Application and cloud security | oss | needs-review |
@@ -130,7 +130,7 @@
 | [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | needs-review |
 | [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
 | [kickthemout](https://github.com/roccomuso/kickthemout) | Application and cloud security | oss | needs-review |
-| [Kiuwan](https://www.kiuwan.com) | Application and cloud security | unknown | needs-review |
+| [Kiuwan](https://www.kiuwan.com/) | Application and cloud security | commercial | active |
 | [Kps-zeroexposure](https://github.com/adrghph/kps-zeroexposure) | Application and cloud security | oss | needs-review |
 | [KubeArmor](https://kubearmor.io/) | Application and cloud security, Kubernetes networking, storage and add-ons | oss | active |
 | [KubeLinter](https://docs.kubelinter.io/) | Kubernetes distributions and operations, Application and cloud security | oss | active |

@@ -144,7 +144,6 @@
 | [K8s in a Box](https://github.com/moabukar/k8s-in-a-box) | Documentation, learning and career resources | documentation | needs-review |
 | [K8sGPT](https://k8sgpt.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [k8squest](https://github.com/Manoj-engineer/k8squest) | Documentation, learning and career resources | documentation | needs-review |
-| [Kasten K10](https://www.kasten.io) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [Kelos](https://github.com/kelos-dev/kelos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | needs-review |
 | [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
@@ -153,7 +152,7 @@
 | [Killercoda](https://github.com/killercoda) | Documentation, learning and career resources | documentation | needs-review |
 | [Killercoda CKA](https://killercoda.com/cka) | Documentation, learning and career resources | documentation | needs-review |
 | [Kindling](https://mykindling.io/get-kindling) | Documentation, learning and career resources | unknown | needs-review |
-| [Kion FinOps](https://kion.io/platform/finops) | FinOps and sustainability | unknown | needs-review |
+| [Kion FinOps+](https://kion.io/platform/) | FinOps and sustainability | commercial | active |
 | [Knative](https://knative.dev/) | Serverless, edge and WebAssembly | oss | active |
 | [KodeKloud](https://kodekloud.com) | Documentation, learning and career resources | documentation | needs-review |
 | [kOps](https://kops.sigs.k8s.io/) | Kubernetes distributions and operations | oss | active |
@@ -290,6 +289,7 @@
 | [Upjet](https://github.com/crossplane/upjet) | Infrastructure as Code | oss | active |
 | [Varnish Cache](https://www.varnish.org/) | Databases, caching and data infrastructure | oss | active |
 | [Vaultwarden](https://www.vaultwarden.net/) | IAM, secrets and certificate management | oss | active |
+| [Veeam Kasten for Kubernetes](https://www.veeam.com/products/cloud/kubernetes-data-protection.html) | Backup, disaster recovery and resilience | commercial | active |
 | [VegaCloud Inform](https://www.vegacloud.io/products/inform) | FinOps and sustainability | unknown | needs-review |
 | [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | active |
 | [VictoriaMetrics MCP server](https://github.com/VictoriaMetrics/mcp-victoriametrics) | MLOps, LLMOps and AI infrastructure | oss | active |

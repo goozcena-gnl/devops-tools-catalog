@@ -19,7 +19,7 @@
 | [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
 | [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | commercial | active |
 | [k8s-overcommit-operator](https://github.com/InditexTech/k8s-overcommit-operator) | FinOps and sustainability | oss | active |
-| [Kion FinOps](https://kion.io/platform/finops) | FinOps and sustainability | unknown | needs-review |
+| [Kion FinOps+](https://kion.io/platform/) | FinOps and sustainability | commercial | active |
 | [Kubecost (Apptio)](https://www.apptio.com/products/kubecost) | FinOps and sustainability | open-core | needs-review |
 | [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | needs-review |
 | [Kubex](https://kubex.ai) | FinOps and sustainability | unknown | needs-review |

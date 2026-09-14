@@ -123,20 +123,20 @@ Self-hosted server and clients for receiving application push notifications.
 
 **Categories:** Workflow automation and ChatOps<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Issue tracking and project management platform by Atlassian.
+Atlassian's commercial work-management product family, led by Jira Cloud with a winding-down Data Center edition.
 
 **Use when**
 
-- You need deep workflow customization and enterprise integrations.
+- You need configurable work tracking with Atlassian ecosystem integrations and can select an appropriate Cloud plan.
 
 **Consider alternatives when**
 
-- Teams are small and agile—overhead can slow you down.
+- You require a new long-lived self-managed deployment; Jira Data Center reaches end of life on 2029-03-28.
 
-[Official site](https://www.atlassian.com/software/jira)
+[Official site](https://www.atlassian.com/software/jira) · [Documentation](https://www.atlassian.com/software/jira/guides)
 
 ### Kestra
 

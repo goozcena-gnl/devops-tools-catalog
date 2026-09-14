@@ -114,18 +114,18 @@
 | [Jasmine](https://jasmine.github.io/) | CI, build and testing | oss | active |
 | [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | needs-review |
 | [Jenkins X](https://jenkins-x.io) | CI, build and testing | oss | needs-review |
-| [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | unknown | needs-review |
+| [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | commercial | active |
 | [jq](https://jqlang.org) | Foundations, Linux and scripting | oss | active |
-| [JSON Crack](https://jsoncrack.com) | Developer experience and local environments | unknown | needs-review |
+| [JSON Crack](https://jsoncrack.com/) | Developer experience and local environments | oss | active |
 | [json2k8s](https://github.com/0dotxyz/json2k8s) | Kubernetes distributions and operations | oss | active |
 | [JUnit](https://junit.org/) | CI, build and testing | oss | active |
 | [k6](https://k6.io) | CI, build and testing | oss | needs-review |
-| [Katalon Studio](https://github.com/katalon-studio) | CI, build and testing | unknown | needs-review |
+| [Katalon Studio](https://katalon.com/katalon-studio) | CI, build and testing | commercial | active |
 | [Keptn](https://keptn.sh) | Deprecated and historical tools, CI, build and testing | oss | archived |
 | [Kestra](https://kestra.io/) | Workflow automation and ChatOps | open-core | active |
 | [Kilo Code](https://kilo.ai/) | Developer experience and local environments | oss | active |
 | [kitty](https://sw.kovidgoyal.net/kitty/) | Developer experience and local environments | oss | active |
-| [kubara](https://kubara.io) | Platform engineering and internal developer platforms | unknown | needs-review |
+| [kubara](https://kubara.io/) | Platform engineering and internal developer platforms | oss | active |
 | [KubeTable](https://kubetable.dev/) | Developer experience and local environments, Emerging and experimental tools | oss | active |
 | [Learn Git Branching](https://learngitbranching.js.org) | Source control and repository management | documentation | needs-review |
 | [LocalStack](https://www.localstack.cloud) | Virtualization, bare metal and homelab, Developer experience and local environments | commercial | active |

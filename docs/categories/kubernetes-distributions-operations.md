@@ -808,20 +808,20 @@ Kubernetes resource cleaner.
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Visual generator for Kubernetes YAML and topology diagrams.
+Open-source visual editor that imports Kubernetes YAML into resource diagrams and generates YAML from edited topologies.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a visual, bidirectional workflow between Kubernetes resource diagrams and YAML manifests.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need authoritative live-cluster topology, broad resource coverage, or production policy validation.
 
-[Official site](https://www.k8sdiagram.fun)
+[Official site](https://www.k8sdiagram.fun/) · [Documentation](https://github.com/abhayraghuwanshi/k8s-ingress-gen/blob/main/README.md) · [Source repository](https://github.com/abhayraghuwanshi/k8s-ingress-gen)
 
 ### k8s-d2
 
@@ -884,20 +884,20 @@ Query Kubernetes clusters with SQL and PRQL.
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Visual IDE to manage and monitor Kubernetes clusters.
+Commercial, agent-free desktop Kubernetes IDE for local multi-cluster operations, visualization, logs, RBAC, and Helm workflows.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a local desktop Kubernetes workbench that connects through kubeconfig without deploying cluster agents.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require an open-source client or cannot accept per-user subscription and activation terms.
 
-[Official site](https://k8studio.io)
+[Official site](https://k8studio.io/) · [Documentation](https://doc.k8studio.io/)
 
 ### K9s
 
@@ -1093,20 +1093,20 @@ Convert Docker Compose to Kubernetes.
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Kubernetes-native workflow orchestration platform with controller, API, and UI components.
+Experimental open-source Kubernetes-native DAG scheduler with controller, API server, and optional web UI components.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You are evaluating Kubernetes-native scheduled or event-driven DAG execution and can tolerate early-alpha changes.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need production-ready workflow orchestration, published artifacts, or compatibility guarantees.
 
-[Official site](https://www.kontroler.dev)
+[Official site](https://www.kontroler.dev/) · [Documentation](https://www.kontroler.dev/) · [Source repository](https://github.com/GreedyKomodoDragon/Kontroler)
 
 ### kOps
 
@@ -1188,20 +1188,20 @@ Fuzzy, multi-cluster kubectl companion for faster day-to-day Kubernetes operatio
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Real-time Kubernetes dashboard.
+Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You are evaluating a self-hosted dashboard that combines Kubernetes operations and optional Prometheus, OIDC, cost, and AI integrations.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a mature, broadly proven operations platform or cannot harden its privileged cluster actions and optional integrations.
 
-[Official site](https://manishchaudhary101.github.io/kube-argus)
+[Official site](https://manishchaudhary101.github.io/kube-argus) · [Documentation](https://github.com/manishchaudhary101/kube-argus/blob/main/README.md) · [Source repository](https://github.com/manishchaudhary101/kube-argus)
 
 ### kube-bench
 
@@ -1664,39 +1664,39 @@ ML workflows on Kubernetes.
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-GUI for Kubernetes cluster management.
+Open-source standalone desktop client for managing multiple Kubernetes clusters and their resources.
 
 **Use when**
 
-- You want a simple graphical overview for less CLI-savvy team members.
+- You want a local graphical client for multi-cluster resource inspection and day-to-day operations.
 
 **Consider alternatives when**
 
-- You need deep operational capabilities or multi-cluster management.
+- You require an established enterprise support model or centrally hosted control plane.
 
-[Official site](https://kubegui.net)
+[Official site](https://kubegui.net) · [Documentation](https://github.com/gerbil/kubegui/blob/main/README.md) · [Source repository](https://github.com/gerbil/kubegui)
 
 ### KubeHatch
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Minimal internal Kubernetes platform for creating isolated ephemeral vClusters with a CLI and web UI.
+Experimental open-source internal developer portal for provisioning and managing ephemeral vCluster-based Kubernetes environments.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You are prototyping self-service creation of isolated ephemeral vClusters through a small web portal.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a mature supported platform, broader tenancy governance, or guarantees beyond an experiments repository.
 
-[Official site](https://vclusterlabs-experiments.github.io/kubehatch)
+[Official site](https://vclusterlabs-experiments.github.io/kubehatch/) · [Documentation](https://vclusterlabs-experiments.github.io/kubehatch/) · [Source repository](https://github.com/vClusterLabs-Experiments/kubehatch)
 
 ### KubeKey
 

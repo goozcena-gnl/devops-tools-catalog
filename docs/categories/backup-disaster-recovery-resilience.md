@@ -100,25 +100,6 @@ Kubernetes backup operator that schedules Restic-based PVC and application-aware
 
 [Official site](https://k8up.io/) · [Documentation](https://docs.k8up.io/k8up/) · [Source repository](https://github.com/k8up-io/k8up)
 
-### Kasten K10
-
-**Categories:** Backup, disaster recovery and resilience<br>
-**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Kubernetes backup and DR platform.
-
-**Use when**
-
-- You need enterprise-grade Kubernetes backup with application-consistent snapshots, DR, and compliance features.
-
-**Consider alternatives when**
-
-- Velero meets your needs and you want to avoid commercial licensing costs.
-
-[Official site](https://www.kasten.io)
-
 ### kube-dump
 
 **Categories:** Backup, disaster recovery and resilience<br>
@@ -251,6 +232,25 @@ Kubernetes backup and recovery platform.
 - Velero or Kasten already covers your backup requirements.
 
 [Official site](https://trilio.io/products/kubernetes-backup-and-recovery)
+
+### Veeam Kasten for Kubernetes
+
+**Categories:** Backup, disaster recovery and resilience<br>
+**Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+Commercial Kubernetes-native data protection platform for backup, recovery, disaster recovery, and application mobility.
+
+**Use when**
+
+- You need enterprise-grade Kubernetes backup with application-consistent snapshots, DR, and compliance features.
+
+**Consider alternatives when**
+
+- A simpler backup project meets your needs or you cannot accept subscription licensing beyond the node-limited free edition.
+
+[Official site](https://www.veeam.com/products/cloud/kubernetes-data-protection.html)
 
 ### Velero
 

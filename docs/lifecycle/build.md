@@ -126,16 +126,16 @@
 - [Jenkins](https://www.jenkins.io) — Automation server for CI/CD.
 - [Jenkins X](https://jenkins-x.io) — Kubernetes-native CI/CD.
 - [JFrog Artifactory](https://jfrog.com/artifactory) — Universal artifact repository manager.
-- [JFrog Connect](https://jfrog.com/connect) — IoT device update and management platform.
-- [JFrog Distribution](https://jfrog.com/distribution) — Release distribution for artifacts/binaries.
-- [JFrog Pipelines](https://jfrog.com/pipelines) — CI/CD automation integrated with JFrog platform.
-- [JFrog Platform](https://jfrog.com) — Unified DevSecOps platform for artifact management, security, CI/CD, and distribution.
+- [JFrog Connect](https://jfrog.com/connect/) — Commercial IoT and edge-device management component of the JFrog Platform for fleet monitoring and OTA software delivery.
+- [JFrog Distribution](https://jfrog.com/distribution/) — Commercial JFrog product for signing and distributing immutable release bundles to remote and edge locations.
+- [JFrog Pipelines](https://docs.jfrog.com/releases/docs/pipeline-deprecation-end-of-life) — Discontinued JFrog Platform CI/CD orchestration product retained for migration and historical reference.
+- [JFrog Platform](https://jfrog.com/platform/) — Commercial software supply-chain platform unifying artifact and AI asset management, security, governance, and release delivery.
 - [JUnit](https://junit.org/) — Testing framework for Java and other JVM languages.
 - [just](https://just.systems/) — Command runner for keeping project recipes in a versioned justfile.
 - [k6](https://k6.io) — Load testing tool for performance testing.
 - [K8sGPT](https://k8sgpt.ai) — AI-powered Kubernetes troubleshooting.
 - [Kairos](https://kairos.io/) — Immutable Linux meta-distribution for building edge appliances and Kubernetes-based operating-system images.
-- [Katalon Studio](https://github.com/katalon-studio) — Automated testing for web, API, and mobile.
+- [Katalon Studio](https://katalon.com/katalon-studio) — Commercial desktop test-automation IDE for web, API, mobile, and desktop applications, with a limited free mode.
 - [Kelos](https://github.com/kelos-dev/kelos) — Kubernetes-native framework for orchestrating autonomous AI coding agents.
 - [KICS](https://kics.io) — IaC scanning for security issues.
 - [Knative](https://knative.dev/) — Kubernetes-based platform APIs for deploying, scaling, and delivering serverless workloads and events.

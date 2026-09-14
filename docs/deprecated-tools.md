@@ -10,6 +10,7 @@ Records remain here for migration and historical context; they are not active re
 - **Codiga** (historical) — Discontinued static code analysis and coding-assistant service whose technology was integrated into Datadog Code Analysis.
 - **Datree** (archived) — Kubernetes policy enforcement tool.
 - **Grafana OnCall OSS** (archived) — Archived open-source on-call management and incident-response system whose active development continues in the commercial Grafana Cloud IRM service.
+- **JFrog Pipelines** (historical) — Discontinued JFrog Platform CI/CD orchestration product retained for migration and historical reference.
 - **Kaniko** (archived) — Build container images in Kubernetes without Docker daemon.
 - **Keptn** (archived) — Cloud-native lifecycle management and delivery.
 - **Kubeapps** (archived) — Kubernetes application dashboard for deploying and managing Helm charts and other packages.

@@ -111,14 +111,14 @@
 - [IT Tools](https://it-tools.tech) — Collection of developer utility tools (converters, encoders, generators, and more) available as a self-hostable web app.
 - [jaq](https://github.com/01mf02/jaq) — JSON query CLI implementing a substantial subset of jq's language.
 - [jq](https://jqlang.org) — Command-line processor for querying and transforming JSON data.
-- [JSON Crack](https://jsoncrack.com) — Interactive JSON visualizer that turns data structures into graphs.
+- [JSON Crack](https://jsoncrack.com/) — Open-source browser editor for visualizing, editing, converting, querying, and validating structured data.
 - [json2k8s](https://github.com/0dotxyz/json2k8s) — Command-line utility that generates Kubernetes manifests from JSON input.
 - [just](https://just.systems/) — Command runner for keeping project recipes in a versioned justfile.
 - [Keygraph](https://github.com/KeygraphHQ) — Knowledge graph tool with AI-powered pentesting capabilities.
 - [kftray](https://kftray.app/) — Desktop and terminal tools for managing Kubernetes port-forwarding sessions.
 - [Kilo Code](https://kilo.ai/) — Open-source coding-agent tooling with configurable model providers and commercial hosted services.
 - [kitty](https://sw.kovidgoyal.net/kitty/) — Cross-platform GPU-accelerated terminal emulator with extensible keyboard-driven workflows.
-- [kubara](https://kubara.io) — Platform engineering framework for building internal platforms.
+- [kubara](https://kubara.io/) — Open-source GitOps-first CLI for packaging, generating, and bootstrapping reusable Kubernetes platform architectures.
 - [kubernetes-sigs/bom](https://kubernetes-sigs.github.io/bom) — SBOM generation tooling for Kubernetes projects.
 - [KubernetesCRDModelGen](https://github.com/IvanJosipovic/KubernetesCRDModelGen) — CLI and build-time generator for C# models from Kubernetes custom-resource definitions.
 - [KubeTable](https://kubetable.dev/) — Local-first desktop database client that discovers and connects to databases running in Kubernetes clusters.

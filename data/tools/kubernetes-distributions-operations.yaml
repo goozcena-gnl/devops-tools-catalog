@@ -1179,8 +1179,11 @@
   needs_review: true
 - id: k8s-diagram-builder
   name: K8s Diagram Builder
-  summary: Visual generator for Kubernetes YAML and topology diagrams.
-  official_url: https://www.k8sdiagram.fun
+  summary: Open-source visual editor that imports Kubernetes YAML into resource diagrams and generates YAML from edited topologies.
+  official_url: https://www.k8sdiagram.fun/
+  repository_url: https://github.com/abhayraghuwanshi/k8s-ingress-gen
+  repository_archived: false
+  documentation_url: https://github.com/abhayraghuwanshi/k8s-ingress-gen/blob/main/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -1192,18 +1195,26 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want a visual, bidirectional workflow between Kubernetes resource diagrams and YAML manifests.
+  avoid_when:
+  - You need authoritative live-cluster topology, broad resource coverage, or production policy validation.
+  deployment_models:
+  - hosted-saas
+  - local-web-application
+  license_model: oss
+  license_spdx: MIT
+  commercial_offering: false
+  maturity: experimental
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L467
-  needs_review: true
+  - https://github.com/abhayraghuwanshi/k8s-ingress-gen
+  - https://github.com/abhayraghuwanshi/k8s-ingress-gen/blob/main/LICENSE
+  needs_review: false
 - id: k8s-mechanic
   name: k8s-mechanic
   summary: Kubernetes controller that proposes GitOps pull requests for observed cluster failures with
@@ -1265,8 +1276,9 @@
   needs_review: true
 - id: k8studio
   name: K8Studio
-  summary: Visual IDE to manage and monitor Kubernetes clusters.
-  official_url: https://k8studio.io
+  summary: Commercial, agent-free desktop Kubernetes IDE for local multi-cluster operations, visualization, logs, RBAC, and Helm workflows.
+  official_url: https://k8studio.io/
+  documentation_url: https://doc.k8studio.io/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -1278,18 +1290,25 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need a local desktop Kubernetes workbench that connects through kubeconfig without deploying cluster agents.
+  avoid_when:
+  - You require an open-source client or cannot accept per-user subscription and activation terms.
+  deployment_models:
+  - desktop
+  license_model: commercial
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L468
-  needs_review: true
+  - https://k8studio.io/
+  - https://k8studio.io/pricing/
+  - https://k8studio.io/eula/
+  needs_review: false
 - id: k9s
   name: K9s
   summary: Terminal UI to manage Kubernetes clusters.
@@ -1577,8 +1596,11 @@
   needs_review: true
 - id: kontroler
   name: Kontroler
-  summary: Kubernetes-native workflow orchestration platform with controller, API, and UI components.
-  official_url: https://www.kontroler.dev
+  summary: Experimental open-source Kubernetes-native DAG scheduler with controller, API server, and optional web UI components.
+  official_url: https://www.kontroler.dev/
+  repository_url: https://github.com/GreedyKomodoDragon/Kontroler
+  repository_archived: false
+  documentation_url: https://www.kontroler.dev/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -1590,18 +1612,27 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You are evaluating Kubernetes-native scheduled or event-driven DAG execution and can tolerate early-alpha changes.
+  avoid_when:
+  - You need production-ready workflow orchestration, published artifacts, or compatibility guarantees.
+  deployment_models:
+  - kubernetes-controller
+  - self-hosted
+  license_model: oss
+  license_spdx: AGPL-3.0-only
+  commercial_offering: false
+  maturity: experimental
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L479
-  needs_review: true
+  - https://www.kontroler.dev/
+  - https://github.com/GreedyKomodoDragon/Kontroler
+  - https://github.com/GreedyKomodoDragon/Kontroler/blob/main/LICENSE
+  needs_review: false
 - id: kops
   name: kOps
   summary: Kubernetes lifecycle manager for creating and upgrading production clusters, principally on cloud infrastructure.
@@ -1706,8 +1737,11 @@
   needs_review: true
 - id: kube-argus
   name: Kube-Argus
-  summary: Real-time Kubernetes dashboard.
+  summary: Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
   official_url: https://manishchaudhary101.github.io/kube-argus
+  repository_url: https://github.com/manishchaudhary101/kube-argus
+  repository_archived: false
+  documentation_url: https://github.com/manishchaudhary101/kube-argus/blob/main/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -1719,18 +1753,26 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You are evaluating a self-hosted dashboard that combines Kubernetes operations and optional Prometheus, OIDC, cost, and AI integrations.
+  avoid_when:
+  - You need a mature, broadly proven operations platform or cannot harden its privileged cluster actions and optional integrations.
+  deployment_models:
+  - self-hosted
+  - kubernetes
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: experimental
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L488
-  needs_review: true
+  - https://github.com/manishchaudhary101/kube-argus
+  - https://github.com/manishchaudhary101/kube-argus/blob/main/LICENSE
+  needs_review: false
 - id: kube-bench
   name: kube-bench
   summary: CIS Kubernetes benchmark tool.
@@ -2462,8 +2504,11 @@
   needs_review: true
 - id: kubegui
   name: KubeGUI
-  summary: GUI for Kubernetes cluster management.
+  summary: Open-source standalone desktop client for managing multiple Kubernetes clusters and their resources.
   official_url: https://kubegui.net
+  repository_url: https://github.com/gerbil/kubegui
+  repository_archived: false
+  documentation_url: https://github.com/gerbil/kubegui/blob/main/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -2476,25 +2521,33 @@
   - deploy
   - operate
   use_when:
-  - You want a simple graphical overview for less CLI-savvy team members.
+  - You want a local graphical client for multi-cluster resource inspection and day-to-day operations.
   avoid_when:
-  - You need deep operational capabilities or multi-cluster management.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an established enterprise support model or centrally hosted control plane.
+  deployment_models:
+  - desktop
+  - local-binary
+  license_model: oss
+  license_spdx: MIT
+  commercial_offering: false
+  maturity: experimental
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L51
   - legacy:devopstools_final.md#L502
-  needs_review: true
+  - https://github.com/gerbil/kubegui
+  - https://github.com/gerbil/kubegui/blob/master/LICENSE
+  needs_review: false
 - id: kubehatch
   name: KubeHatch
-  summary: Minimal internal Kubernetes platform for creating isolated ephemeral vClusters with a CLI and
-    web UI.
-  official_url: https://vclusterlabs-experiments.github.io/kubehatch
+  summary: Experimental open-source internal developer portal for provisioning and managing ephemeral vCluster-based Kubernetes environments.
+  official_url: https://vclusterlabs-experiments.github.io/kubehatch/
+  repository_url: https://github.com/vClusterLabs-Experiments/kubehatch
+  repository_archived: false
+  documentation_url: https://vclusterlabs-experiments.github.io/kubehatch/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -2506,18 +2559,26 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You are prototyping self-service creation of isolated ephemeral vClusters through a small web portal.
+  avoid_when:
+  - You need a mature supported platform, broader tenancy governance, or guarantees beyond an experiments repository.
+  deployment_models:
+  - kubernetes
+  - self-hosted
+  license_model: oss
+  license_spdx: MIT
+  commercial_offering: false
+  maturity: experimental
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:devopstools_final.md#L503
-  needs_review: true
+  - https://github.com/vClusterLabs-Experiments/kubehatch
+  - https://github.com/vClusterLabs-Experiments/kubehatch/blob/main/LICENSE
+  needs_review: false
 - id: kubekey
   name: KubeKey
   summary: Command-line tool for installing Kubernetes, KubeSphere, and related cluster add-ons across Linux hosts.

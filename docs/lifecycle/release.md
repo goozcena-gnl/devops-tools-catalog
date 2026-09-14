@@ -45,10 +45,10 @@
 - [Harden-Runner](https://github.com/step-security/harden-runner) — GitHub Actions runner security component that observes runtime network, file, and process activity.
 - [Husky](https://typicode.github.io/husky) — Git hooks for Node.js projects (commonly paired with lint-staged).
 - [JFrog Artifactory](https://jfrog.com/artifactory) — Universal artifact repository manager.
-- [JFrog Connect](https://jfrog.com/connect) — IoT device update and management platform.
-- [JFrog Distribution](https://jfrog.com/distribution) — Release distribution for artifacts/binaries.
-- [JFrog Pipelines](https://jfrog.com/pipelines) — CI/CD automation integrated with JFrog platform.
-- [JFrog Platform](https://jfrog.com) — Unified DevSecOps platform for artifact management, security, CI/CD, and distribution.
+- [JFrog Connect](https://jfrog.com/connect/) — Commercial IoT and edge-device management component of the JFrog Platform for fleet monitoring and OTA software delivery.
+- [JFrog Distribution](https://jfrog.com/distribution/) — Commercial JFrog product for signing and distributing immutable release bundles to remote and edge locations.
+- [JFrog Pipelines](https://docs.jfrog.com/releases/docs/pipeline-deprecation-end-of-life) — Discontinued JFrog Platform CI/CD orchestration product retained for migration and historical reference.
+- [JFrog Platform](https://jfrog.com/platform/) — Commercial software supply-chain platform unifying artifact and AI asset management, security, governance, and release delivery.
 - [Kamal](https://kamal-deploy.org) — Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
 - [Kargo](https://kargo.io) — GitOps promotion workflow for Kubernetes.
 - [Keel](https://keel.sh) — Automated Kubernetes deployment updates.

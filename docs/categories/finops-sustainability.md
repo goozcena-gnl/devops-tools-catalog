@@ -271,24 +271,24 @@ Kubernetes operator that manages namespace-level resource-request overcommit pol
 
 [Source repository](https://github.com/InditexTech/k8s-overcommit-operator)
 
-### Kion FinOps
+### Kion FinOps+
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud governance and cost management.
+Commercial self-hosted FinOps platform combining cost visibility and optimization with automated cloud governance and AI-assisted workflows.
 
 **Use when**
 
-- Combining cloud governance (accounts, policies) with FinOps.
+- You need self-hosted FinOps across cloud, SaaS, AI, and on-premises spend with policy-driven governance.
 
 **Consider alternatives when**
 
-- You only need cost analysis without governance controls.
+- You need only lightweight cost reporting or prefer a managed SaaS service over a customer-operated platform.
 
-[Official site](https://kion.io/platform/finops)
+[Official site](https://kion.io/platform/)
 
 ### Kubecost (Apptio)
 

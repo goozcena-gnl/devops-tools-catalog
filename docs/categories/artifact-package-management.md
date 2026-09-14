@@ -180,77 +180,77 @@ Universal artifact repository manager.
 
 **Categories:** Artifact and package management<br>
 **Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-IoT device update and management platform.
+Commercial IoT and edge-device management component of the JFrog Platform for fleet monitoring and OTA software delivery.
 
 **Use when**
 
-- * You need OTA updates and device fleet management integrated with Artifactory.
+- You need fleet management and controlled OTA delivery integrated with Artifactory and JFrog Security.
 
 **Consider alternatives when**
 
-- * You don't manage IoT/edge devices.
+- You do not manage Linux-based IoT or edge fleets, or need a standalone open-source updater.
 
-[Official site](https://jfrog.com/connect)
+[Official site](https://jfrog.com/connect/)
 
 ### JFrog Distribution
 
 **Categories:** Artifact and package management<br>
 **Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Release distribution for artifacts/binaries.
+Commercial JFrog product for signing and distributing immutable release bundles to remote and edge locations.
 
 **Use when**
 
-- * You need to distribute signed release bundles to edge nodes or remote sites.
+- You need signed release bundles and governed delivery to JFrog Edge or remote locations.
 
 **Consider alternatives when**
 
-- * You don't require multi-site artifact distribution.
+- You do not require multi-site binary distribution or an Enterprise+ JFrog subscription.
 
-[Official site](https://jfrog.com/distribution)
+[Official site](https://jfrog.com/distribution/) · [Documentation](https://docs.jfrog.com/artifactory/docs/jfrog-distribution)
 
 ### JFrog Pipelines
 
 **Categories:** Artifact and package management<br>
 **Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Historical
 
-CI/CD automation integrated with JFrog platform.
+Discontinued JFrog Platform CI/CD orchestration product retained for migration and historical reference.
 
 **Use when**
 
-- * You want CI/CD tightly integrated with Artifactory and the JFrog ecosystem.
+- You are documenting or migrating an existing JFrog Pipelines deployment.
 
 **Consider alternatives when**
 
-- * You already have a CI/CD platform and don't want vendor lock-in.
+- You are selecting a supported CI/CD platform; JFrog Pipelines reached end of life on 2026-05-01.
 
-[Official site](https://jfrog.com/pipelines)
+[Official site](https://docs.jfrog.com/releases/docs/pipeline-deprecation-end-of-life)
 
 ### JFrog Platform
 
 **Categories:** Artifact and package management<br>
 **Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Unified DevSecOps platform for artifact management, security, CI/CD, and distribution.
+Commercial software supply-chain platform unifying artifact and AI asset management, security, governance, and release delivery.
 
 **Use when**
 
-- * You want a single vendor for artifact management, security scanning, and distribution.
+- You want an integrated commercial system of record for artifacts, security, governance, and release delivery.
 
 **Consider alternatives when**
 
-- * You prefer best-of-breed tools or want to avoid enterprise licensing costs.
+- You prefer independent best-of-breed services or cannot accept platform subscription and operational coupling.
 
-[Official site](https://jfrog.com)
+[Official site](https://jfrog.com/platform/) · [Documentation](https://docs.jfrog.com/installation/docs/installing-the-jfrog-platform)
 
 ### Kubesearch
 

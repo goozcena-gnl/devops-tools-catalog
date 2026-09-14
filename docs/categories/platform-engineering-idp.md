@@ -123,20 +123,20 @@ Commercial platform orchestrator for building internal developer platforms acros
 
 **Categories:** Platform engineering and internal developer platforms<br>
 **Roles:** Platform Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Platform engineering framework for building internal platforms.
+Open-source GitOps-first CLI for packaging, generating, and bootstrapping reusable Kubernetes platform architectures.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a GitOps-first CLI and versioned catalog model for repeatable Kubernetes platform bootstrapping.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a hosted internal developer portal or prefer to own and assemble each platform component independently.
 
-[Official site](https://kubara.io)
+[Official site](https://kubara.io/) · [Documentation](https://docs.kubara.io/latest-stable/) · [Source repository](https://github.com/kubara-io/kubara)
 
 ### OpenRun
 

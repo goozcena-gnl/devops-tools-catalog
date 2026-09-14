@@ -399,9 +399,9 @@
   sources: [https://github.com/InditexTech/k8s-overcommit-operator, https://github.com/InditexTech/k8s-overcommit-operator/blob/main/LICENSE]
   needs_review: false
 - id: kion-finops
-  name: Kion FinOps
-  summary: Cloud governance and cost management.
-  official_url: https://kion.io/platform/finops
+  name: Kion FinOps+
+  summary: Commercial self-hosted FinOps platform combining cost visibility and optimization with automated cloud governance and AI-assisted workflows.
+  official_url: https://kion.io/platform/
   categories:
   - finops-sustainability
   subcategories:
@@ -413,20 +413,26 @@
   lifecycle_stages:
   - optimize
   use_when:
-  - Combining cloud governance (accounts, policies) with FinOps.
+  - You need self-hosted FinOps across cloud, SaaS, AI, and on-premises spend with policy-driven governance.
   avoid_when:
-  - You only need cost analysis without governance controls.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You need only lightweight cost reporting or prefer a managed SaaS service over a customer-operated platform.
+  deployment_models:
+  - self-hosted
+  - customer-cloud
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-14'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L86
   - legacy:devopstools_final.md#L797
-  needs_review: true
+  - https://kion.io/platform/
+  - https://kion.io/why-kion/finops-plus/
+  - https://kion.io/about/
+  needs_review: false
 - id: kubecost-apptio
   name: Kubecost (Apptio)
   summary: Commercial Kubernetes cost monitoring/optimization product built around OpenCost.

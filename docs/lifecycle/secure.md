@@ -109,7 +109,7 @@
 - [ipman](https://dialohq.github.io/ipman/) — Kubernetes operator that establishes encrypted IPsec connectivity between selected cluster networks.
 - [Iroh](https://www.iroh.computer) — Peer-to-peer networking library for building distributed, hole-punching-capable, end-to-end encrypted connections.
 - [ISMS Builder](https://www.isms-builder.com) — Self-hosted information security management system builder for ISO 27001, NIS2, and GDPR compliance.
-- [JARVIS OS](https://jarvisoslinux.org) — AI-native operating system and LLM security research platform.
+- [JARVIS OS](https://www.jarvisoslinux.org/) — Experimental AI-native Linux distribution that integrates an LLM daemon with a custom kernel interface for security research.
 - [John the Ripper](https://www.openwall.com/john/) — Password security auditing and recovery tool supporting many hash and encrypted-file formats.
 - [JumpServer](https://www.jumpserver.com) — Open-source bastion host / privileged access management (PAM) platform.
 - [k-guard](https://github.com/KamouloxPelvis/k-guard) — Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patching, and hardening.
@@ -121,7 +121,7 @@
 - [Keycloak](https://www.keycloak.org) — Open source identity and access management.
 - [Keystore Explorer](https://keystore-explorer.org) — GUI for managing keystores.
 - [kickthemout](https://github.com/roccomuso/kickthemout) — Kick devices off your local network using ARP spoofing (Node.js-based network security testing tool).
-- [Kiuwan](https://www.kiuwan.com) — Application security and code quality platform.
+- [Kiuwan](https://www.kiuwan.com/) — Commercial application-security platform for static analysis, software composition analysis, and code quality governance.
 - [Kloak](https://getkloak.io/) — eBPF-based Kubernetes runtime proxy that can keep application secrets out of workload processes.
 - [Kps-zeroexposure](https://github.com/adrghph/kps-zeroexposure) — Kubernetes zero-exposure policy tool.
 - [KubeArmor](https://kubearmor.io/) — Runtime security enforcement system for applying workload policies through Linux Security Modules.

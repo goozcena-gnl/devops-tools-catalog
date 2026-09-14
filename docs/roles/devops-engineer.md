@@ -335,13 +335,13 @@
 | [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | needs-review |
 | [Jenkins X](https://jenkins-x.io) | CI, build and testing | oss | needs-review |
 | [JFrog Artifactory](https://jfrog.com/artifactory) | Artifact and package management | open-core | needs-review |
-| [JFrog Connect](https://jfrog.com/connect) | Artifact and package management | unknown | needs-review |
-| [JFrog Distribution](https://jfrog.com/distribution) | Artifact and package management | unknown | needs-review |
-| [JFrog Pipelines](https://jfrog.com/pipelines) | Artifact and package management | unknown | needs-review |
-| [JFrog Platform](https://jfrog.com) | Artifact and package management | unknown | needs-review |
-| [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | unknown | needs-review |
+| [JFrog Connect](https://jfrog.com/connect/) | Artifact and package management | commercial | active |
+| [JFrog Distribution](https://jfrog.com/distribution/) | Artifact and package management | commercial | active |
+| [JFrog Pipelines](https://docs.jfrog.com/releases/docs/pipeline-deprecation-end-of-life) | Artifact and package management | commercial | historical |
+| [JFrog Platform](https://jfrog.com/platform/) | Artifact and package management | commercial | active |
+| [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | commercial | active |
 | [jq](https://jqlang.org) | Foundations, Linux and scripting | oss | active |
-| [JSON Crack](https://jsoncrack.com) | Developer experience and local environments | unknown | needs-review |
+| [JSON Crack](https://jsoncrack.com/) | Developer experience and local environments | oss | active |
 | [JuiceFS](https://juicefs.com/en) | Databases, caching and data infrastructure | open-core | needs-review |
 | [Juju](https://canonical.com/juju) | Configuration management | oss | active |
 | [JUnit](https://junit.org/) | CI, build and testing | oss | active |
@@ -353,7 +353,7 @@
 | [Kaniko](https://github.com/GoogleContainerTools/kaniko) | Deprecated and historical tools, Containers and image tooling | oss | archived |
 | [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
 | [Kata Containers](https://katacontainers.io) | Virtualization, bare metal and homelab | oss | active |
-| [Katalon Studio](https://github.com/katalon-studio) | CI, build and testing | unknown | needs-review |
+| [Katalon Studio](https://katalon.com/katalon-studio) | CI, build and testing | commercial | active |
 | [Katello](https://theforeman.org/plugins/katello/) | Configuration management | oss | active |
 | [kcli](https://kcli.readthedocs.io/en/latest) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Keel](https://keel.sh) | CD, GitOps, release and promotion | oss | active |

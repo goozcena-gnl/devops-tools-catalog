@@ -100,7 +100,7 @@
 | [ipman](https://dialohq.github.io/ipman/) | Kubernetes networking, storage and add-ons, Emerging and experimental tools | oss | active |
 | [Iroh](https://www.iroh.computer) | Application and cloud security | oss | needs-review |
 | [ISMS Builder](https://www.isms-builder.com) | Application and cloud security | oss | active |
-| [JARVIS OS](https://jarvisoslinux.org) | Application and cloud security | unknown | needs-review |
+| [JARVIS OS](https://www.jarvisoslinux.org/) | Application and cloud security | oss | active |
 | [John the Ripper](https://www.openwall.com/john/) | Application and cloud security | oss | active |
 | [JumpServer](https://www.jumpserver.com) | IAM, secrets and certificate management | oss | needs-review |
 | [k-guard](https://github.com/KamouloxPelvis/k-guard) | Application and cloud security | oss | needs-review |
@@ -112,7 +112,7 @@
 | [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | needs-review |
 | [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
 | [kickthemout](https://github.com/roccomuso/kickthemout) | Application and cloud security | oss | needs-review |
-| [Kiuwan](https://www.kiuwan.com) | Application and cloud security | unknown | needs-review |
+| [Kiuwan](https://www.kiuwan.com/) | Application and cloud security | commercial | active |
 | [Kloak](https://getkloak.io/) | Application and cloud security, Emerging and experimental tools | oss | active |
 | [Kps-zeroexposure](https://github.com/adrghph/kps-zeroexposure) | Application and cloud security | oss | needs-review |
 | [KubeArmor](https://kubearmor.io/) | Application and cloud security, Kubernetes networking, storage and add-ons | oss | active |

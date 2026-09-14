@@ -168,12 +168,12 @@
 - [iPerf](https://iperf.fr/iperf-download.php) — Network performance measurement tool.
 - [Iroh](https://www.iroh.computer) — Peer-to-peer networking library for building distributed, hole-punching-capable, end-to-end encrypted connections.
 - [ISMS Builder](https://www.isms-builder.com) — Self-hosted information security management system builder for ISO 27001, NIS2, and GDPR compliance.
-- [JARVIS OS](https://jarvisoslinux.org) — AI-native operating system and LLM security research platform.
+- [JARVIS OS](https://www.jarvisoslinux.org/) — Experimental AI-native Linux distribution that integrates an LLM daemon with a custom kernel interface for security research.
 - [Jasmine](https://jasmine.github.io/) — Behavior-driven JavaScript testing framework for browser and Node.js applications.
 - [Jenkins](https://www.jenkins.io) — Automation server for CI/CD.
 - [Jenkins X](https://jenkins-x.io) — Kubernetes-native CI/CD.
 - [John the Ripper](https://www.openwall.com/john/) — Password security auditing and recovery tool supporting many hash and encrypted-file formats.
-- [JSON Crack](https://jsoncrack.com) — Interactive JSON visualizer that turns data structures into graphs.
+- [JSON Crack](https://jsoncrack.com/) — Open-source browser editor for visualizing, editing, converting, querying, and validating structured data.
 - [JUnit](https://junit.org/) — Testing framework for Java and other JVM languages.
 - [k-guard](https://github.com/KamouloxPelvis/k-guard) — Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patching, and hardening.
 - [k0rdent](https://docs.k0rdent.io/latest) — Kubernetes security and compliance scanner.
@@ -181,11 +181,11 @@
 - [k8s Sidecar Secret Forge](https://github.com/stegianna/k8s-sidecar-secret-forge) — Kubernetes secret management sidecar.
 - [k8scout](https://github.com/k8scout/k8scout) — Drop-in binary that maps Kubernetes attack paths to cluster-admin escalation, node escape, secret theft, and cloud IAM takeover from within a pod.
 - [Kamaji](https://kamaji.clastix.io) — Kubernetes control plane manager (multi-tenancy/security).
-- [Katalon Studio](https://github.com/katalon-studio) — Automated testing for web, API, and mobile.
+- [Katalon Studio](https://katalon.com/katalon-studio) — Commercial desktop test-automation IDE for web, API, mobile, and desktop applications, with a limited free mode.
 - [Katana](https://github.com/projectdiscovery/katana) — Web crawling framework for discovering application endpoints during authorized assessment and testing.
 - [kickthemout](https://github.com/roccomuso/kickthemout) — Kick devices off your local network using ARP spoofing (Node.js-based network security testing tool).
 - [Kilo Code](https://kilo.ai/) — Open-source coding-agent tooling with configurable model providers and commercial hosted services.
-- [Kiuwan](https://www.kiuwan.com) — Application security and code quality platform.
+- [Kiuwan](https://www.kiuwan.com/) — Commercial application-security platform for static analysis, software composition analysis, and code quality governance.
 - [Kps-zeroexposure](https://github.com/adrghph/kps-zeroexposure) — Kubernetes zero-exposure policy tool.
 - [Kube Monkey](https://github.com/asobti/kube-monkey) — Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, opt-in pod-killing schedule for Kubernetes with minimal setup. ❌ **Avoid when** you need network/IO faults or fine-grained experiment control beyond random pod deletion.
 - [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) — Gamified chaos engineering for Kubernetes. ✅ **Use when** you want a fun, visual way to introduce chaos engineering concepts in workshops or game days. ❌ **Avoid when** you need automated, scheduled, or CI-integrated chaos experiments.

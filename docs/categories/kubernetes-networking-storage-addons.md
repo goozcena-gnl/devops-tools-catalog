@@ -1389,20 +1389,20 @@ Framework for platform engineering on Kubernetes.
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Kube Resource Orchestrator for defining higher-level Kubernetes abstractions and composing resources declaratively.
+Kubernetes SIG Cloud Provider subproject that composes resources into reusable custom APIs through ResourceGraphDefinitions.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want Kubernetes-native reusable resource abstractions with explicit dependencies and generated controllers.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Established CRDs, Helm, or another composition framework already provide the lifecycle semantics you need.
 
-[Official site](https://kro.run)
+[Official site](https://kro.run/) · [Documentation](https://kro.run/docs/overview/) · [Source repository](https://github.com/kubernetes-sigs/kro)
 
 ### kroc
 
