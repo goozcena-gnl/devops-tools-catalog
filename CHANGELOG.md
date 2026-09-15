@@ -2,6 +2,29 @@
 
 All notable catalogue architecture and governance changes are recorded here. Individual tool metadata changes remain visible in Git history and pull requests.
 
+## [Unreleased]
+
+### Public repository readiness
+
+- Repositioned the generated root README as an evidence-backed DevOps Tools
+  Catalog, with mechanically derived metrics, an abbreviated canonical record,
+  practical navigation, and a visible data-to-documentation pipeline.
+- Added an MIT licence for repository-owned material and explicit third-party
+  attribution and upstream-licence boundaries.
+- Documented lightweight project governance and expanded contributor guidance,
+  issue forms, pull-request checks, duplicate handling, evidence expectations,
+  and generated-file ownership.
+- Hardened repository hygiene with broader high-confidence secret patterns,
+  sensitive-file detection, and an immutable-digest Gitleaks history scan.
+- Reduced workflow credential persistence, added whitespace validation, and
+  retained expensive network auditing as a separate scheduled workflow.
+- Preserved the committed link-audit report as a reviewed regression baseline;
+  new runtime reports remain ignored unless intentionally promoted to evidence.
+
+This work does not change the `0.5.0` package version, catalogue classifications,
+or review status. Public positioning is not treated as a semantic feature
+release, and unresolved evidence debt remains visible.
+
 ## [0.5.0] - 2026-09-11
 
 ### Scope

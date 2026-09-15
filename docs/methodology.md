@@ -2,7 +2,9 @@
 
 ## Purpose and scope
 
-This repository is a comprehensive, curated reference for operational engineering work. It does not claim to list every product or project. Inclusion requires a concrete use case for at least one defined role.
+This repository is an evidence-backed, curated reference for operational
+engineering work. It does not claim to list every product or project. Inclusion
+requires a concrete use case for at least one defined role.
 
 ## Source of truth
 
@@ -28,6 +30,12 @@ Third-party listicles, badges, star counts, and generated summaries are discover
 
 The `verified_on` date records when cited information was checked. It is not a guarantee that every imported claim is correct forever.
 
+Review debt is a first-class catalog state. It must not be cleared because a
+record appears plausible, because a URL currently responds, or to improve public
+statistics. Use `python -m scripts.review_debt` to inspect and prioritize the
+deterministic queue; resolve an item only when the canonical record captures the
+required primary evidence.
+
 ## Identity and duplicates
 
 Identity uses normalized official and repository URLs, canonical names, and versioned aliases. A tool spanning multiple domains has one record with multiple categories. Product suites, managed services, runtimes, plugins, and forks remain separate only when their operational decisions differ.
@@ -37,6 +45,10 @@ Aliases and reviewed exceptions live in `config/import-overrides.yaml`. Every le
 ## Licence and offering model
 
 `license_model` describes the reviewed distribution or offering: OSS, source-available, open-core, commercial, free SaaS, documentation, or unknown. `license_spdx` is added only when supported by reliable licence evidence. Source visibility alone never proves an OSS licence.
+
+This upstream classification is distinct from the repository's own MIT licence.
+Listed tools, names, linked content, and trademarks remain with their respective
+owners. See [licensing and attribution](licensing.md).
 
 ## Lifecycle
 

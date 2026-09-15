@@ -238,26 +238,55 @@ def render_root(taxonomy: dict[str, object], tools: list[dict[str, object]]) -> 
     category_counts = Counter(
         category for tool in tools for category in tool["categories"]
     )
+    review_count = sum(bool(tool.get("needs_review")) for tool in tools)
+    reviewed_count = len(tools) - review_count
+    historical_count = sum(
+        status_counts[status] for status in ("deprecated", "archived", "historical")
+    )
+    example = next(tool for tool in tools if tool["id"] == "crun")
     rows = [
         GENERATED_NOTICE,
-        "# DevOps Tools Catalogue",
+        "# DevOps Tools Catalog",
         "",
-        "A comprehensive, curated, and continuously maintained catalogue for DevOps, cloud, "
-        "platform, SRE, DevSecOps, infrastructure, Kubernetes, FinOps, observability, release, "
-        "developer-experience, and MLOps practitioners.",
+        "[![Catalog quality](https://github.com/goozcena-gnl/devops-tools-catalog/actions/workflows/quality.yml/badge.svg)](https://github.com/goozcena-gnl/devops-tools-catalog/actions/workflows/quality.yml) "
+        "[![Latest release](https://img.shields.io/github/v/release/goozcena-gnl/devops-tools-catalog)](https://github.com/goozcena-gnl/devops-tools-catalog/releases/latest) "
+        "[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)",
         "",
-        "> The YAML under `data/` is authoritative. Generated Markdown is navigation, not a second source of truth.",
+        "**Evidence-backed catalog of DevOps, Cloud, Platform Engineering, SRE and DevSecOps tools.**",
         "",
-        "## Catalogue status",
+        "This repository is a machine-validated tooling knowledge base, not just a list of "
+        "bookmarks. It combines structured records with licence, lifecycle, provenance, and "
+        "review metadata, then generates practical category, role, lifecycle, and decision views.",
         "",
-        f"- **Canonical records:** {len(tools)}",
-        f"- **Categories:** {len(categories)}",
-        f"- **Records requiring review:** {sum(bool(tool.get('needs_review')) for tool in tools)}",
-        f"- **Archived repositories:** {sum(bool(tool.get('repository_archived')) for tool in tools)}",
-        f"- **Last generation date:** {last_generated}",
-        "- **Maintenance status:** Active migration; unverified metadata is explicitly marked.",
+        "> The YAML under `data/` is authoritative. Generated Markdown is navigation, not a "
+        "second source of truth. Unverified metadata remains visibly marked for review.",
         "",
-        "## Start with a task",
+        "## Why this catalog exists",
+        "",
+        "The DevOps ecosystem changes faster than a static list can safely represent: projects "
+        "are renamed or archived, licences change, commercial and community editions diverge, "
+        "and similar products are easily duplicated. This catalog treats those changes as a "
+        "data-governance problem. Claims are tied to evidence, uncertainty is retained, and "
+        "generated views are reproducible from canonical data.",
+        "",
+        "## Catalog at a glance",
+        "",
+        "| Measure | Current value |",
+        "|---|---:|",
+        f"| Canonical tool and resource records | **{len(tools):,}** |",
+        f"| Categories | **{len(categories)}** |",
+        f"| Engineering roles | **{len(roles)}** |",
+        f"| Lifecycle stages | **{len(stages)}** |",
+        f"| Records not flagged for review | **{reviewed_count:,}** |",
+        f"| Records requiring review | **{review_count:,}** |",
+        f"| Deprecated, archived, or historical records | **{historical_count:,}** |",
+        f"| Archived source repositories | **{sum(bool(tool.get('repository_archived')) for tool in tools):,}** |",
+        f"| Most recent recorded verification date | **{last_generated}** |",
+        "",
+        "Review debt is deliberate and actionable; it is not hidden to improve the numbers. "
+        "A record marked `needs-review` is useful discovery context, not a verified recommendation.",
+        "",
+        "## Find tools by task",
         "",
         "| I need to... | Start here |",
         "|---|---|",
@@ -271,7 +300,56 @@ def render_root(taxonomy: dict[str, object], tools: list[dict[str, object]]) -> 
         "| Build an MLOps platform | [MLOps and AI infrastructure](docs/categories/mlops-llmops-ai-infrastructure.md) |",
         "| Add FinOps controls | [FinOps and sustainability](docs/categories/finops-sustainability.md) |",
         "",
-        "## Category index",
+        "## How the catalog is built",
+        "",
+        "```mermaid",
+        "flowchart LR",
+        "    A[Primary sources] --> B[Evidence review]",
+        "    B --> C[Canonical YAML]",
+        "    C --> D[Schema and policy validation]",
+        "    D --> E[Generated documentation]",
+        "    E --> F[Category, role, lifecycle and decision views]",
+        "```",
+        "",
+        "- `data/tools/*.yaml` stores the canonical records; `data/taxonomy.yaml` defines the "
+        "allowed vocabulary.",
+        "- `schema/`, `scripts/`, and `tests/` enforce structure, identity, provenance, links, "
+        "generation, and repository hygiene.",
+        "- `migration/` preserves legacy-source reconciliation instead of erasing import history.",
+        "- GitHub Actions runs the fast quality gate on every pull request; the full network link "
+        "audit runs separately on a schedule.",
+        "",
+        "See the [methodology](docs/methodology.md), [review-debt workflow](docs/methodology.md#evidence-order), "
+        "[default stacks](docs/default-stacks.md), and [decision guides](docs/decision-guides/README.md).",
+        "",
+        "## Representative record",
+        "",
+        "Every entry carries operational context as well as discovery metadata. This abbreviated "
+        "example is rendered from the canonical `crun` record:",
+        "",
+        "```yaml",
+        f"id: {example['id']}",
+        f"name: {example['name']}",
+        f"summary: {example['summary']}",
+        f"categories: [{', '.join(example['categories'])}]",
+        f"roles: [{', '.join(example['roles'])}]",
+        f"lifecycle_stages: [{', '.join(example['lifecycle_stages'])}]",
+        f"license_model: {example['license_model']}",
+        f"license_spdx: {example['license_spdx']}",
+        f"status: {example['status']}",
+        f"verified_on: {example['verified_on']}",
+        f"needs_review: {str(example['needs_review']).lower()}",
+        f"# {len(example['sources'])} evidence sources are retained in the canonical record",
+        "```",
+        "",
+        "`license_model` describes the distribution or offering boundary; `license_spdx` is set "
+        "only when supported by evidence. `status`, `verified_on`, and `needs_review` make lifecycle "
+        "and verification debt explicit. `use_when` and `avoid_when` fields turn a listing into "
+        "decision support.",
+        "",
+        "## Browse the catalog",
+        "",
+        "### By category",
         "",
         "| Category | Records |",
         "|---|---:|",
@@ -280,10 +358,14 @@ def render_root(taxonomy: dict[str, object], tools: list[dict[str, object]]) -> 
         f"| [{item['name']}](docs/categories/{item['id']}.md) | {category_counts[item['id']]} |"
         for item in categories
     )
-    rows.extend(["", "## Browse by role", ""])
-    rows.extend(f"- [{item['name']}](docs/roles/{item['id']}.md)" for item in roles)
-    rows.extend(["", "## Browse by lifecycle", ""])
-    rows.extend(f"- [{stage.title()}](docs/lifecycle/{stage}.md)" for stage in stages)
+    rows.extend(["", "### By role", ""])
+    rows.append(
+        " · ".join(f"[{item['name']}](docs/roles/{item['id']}.md)" for item in roles)
+    )
+    rows.extend(["", "### By lifecycle", ""])
+    rows.append(
+        " · ".join(f"[{stage.title()}](docs/lifecycle/{stage}.md)" for stage in stages)
+    )
     rows.extend(
         [
             "",
@@ -317,20 +399,44 @@ def render_root(taxonomy: dict[str, object], tools: list[dict[str, object]]) -> 
                 )
             ),
             "",
-            "## Recommendations and decisions",
+            "## Methodology and trust model",
             "",
-            "- [Default stacks](docs/default-stacks.md)",
-            "- [Decision guides](docs/decision-guides/README.md)",
-            "- [Deprecated and historical tools](docs/deprecated-tools.md)",
+            "The [catalog methodology](docs/methodology.md) defines inclusion, evidence priority, "
+            "identity and duplicate rules, licence classification, lifecycle handling, and migration "
+            "provenance. [Deprecated and historical records](docs/deprecated-tools.md) remain visible "
+            "for migration context but are excluded from default recommendations.",
             "",
-            "## Contributing and methodology",
+            "Metadata is evidence-backed, not guaranteed forever. Consumers should re-check cited "
+            "primary sources before making security, legal, procurement, or production decisions.",
             "",
-            "Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a tool. The "
-            "[methodology](docs/methodology.md) explains inclusion, verification, provenance, "
-            "and lifecycle rules. Run `python -m scripts.generate_docs` after changing YAML, "
-            "then `python -m scripts.validate_catalog` before opening a pull request.",
+            "## Contributing",
+            "",
+            "Edit canonical YAML, provide primary-source evidence, regenerate documentation, and "
+            "open a focused pull request. Do not manually edit generated pages or resolve review "
+            "flags without evidence. Start with [CONTRIBUTING.md](CONTRIBUTING.md) or use a "
+            "[structured issue template](https://github.com/goozcena-gnl/devops-tools-catalog/issues/new/choose).",
             "",
             "Security concerns belong in [SECURITY.md](SECURITY.md), not a public issue.",
+            "",
+            "## Validation",
+            "",
+            "```bash",
+            "python -m ruff check scripts tests",
+            "python -m ruff format --check scripts tests",
+            "python -m pytest",
+            "python -m scripts.generate_docs --check",
+            "python -m scripts.validate_catalog",
+            "```",
+            "",
+            "The network-dependent strict link audit is intentionally separate: "
+            "`python -m scripts.check_links --strict --check-archived --workers 8`.",
+            "",
+            "## Licence and attribution",
+            "",
+            "Repository-owned code, documentation, and original catalog metadata are available "
+            "under the [MIT License](LICENSE). Listed tools, product names, trademarks, linked "
+            "content, and third-party projects remain the property of their respective owners and "
+            "retain their own licences. See [licensing and attribution](docs/licensing.md).",
             "",
         ]
     )

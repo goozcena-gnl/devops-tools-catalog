@@ -24,7 +24,7 @@ from typing import Any
 
 from scripts.catalog import ROOT, load_tools, stable_json, write_if_changed
 
-USER_AGENT = "DevOps-Tools-catalog-link-audit/1.0 (+https://github.com/goozcena-gnl/Devops-Tools)"
+USER_AGENT = "devops-tools-catalog-link-audit/1.0 (+https://github.com/goozcena-gnl/devops-tools-catalog)"
 DEFAULT_CACHE = ROOT / "reports" / "link-cache.json"
 DEFAULT_JSON_REPORT = ROOT / "reports" / "link-report.json"
 DEFAULT_MARKDOWN_REPORT = ROOT / "reports" / "link-report.md"

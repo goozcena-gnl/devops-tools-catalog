@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/goozcena-gnl/Devops-Tools/schema/tool.schema.json",
+  "$id": "https://github.com/goozcena-gnl/devops-tools-catalog/schema/tool.schema.json",
   "title": "DevOps Tools catalogue record",
   "type": "object",
   "additionalProperties": false,
