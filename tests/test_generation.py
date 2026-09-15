@@ -2,7 +2,11 @@ from __future__ import annotations
 
 from scripts.catalog import ROOT, load_taxonomy, load_tools
 from scripts.generate_docs import expected_outputs, generate, label_map, render_tool
-from scripts.validate_catalog import validate_markdown_links
+from scripts.validate_catalog import (
+    scan_secrets,
+    validate_markdown_links,
+    validate_sensitive_files,
+)
 
 
 def test_generation_is_deterministic_and_current() -> None:
@@ -51,3 +55,30 @@ def test_markdown_internal_link_validation(tmp_path) -> None:
 
 def test_repository_markdown_internal_links() -> None:
     assert validate_markdown_links(ROOT) == []
+
+
+def test_generated_readme_explains_public_trust_model() -> None:
+    readme = expected_outputs()[ROOT / "README.md"]
+    assert "# DevOps Tools Catalog" in readme
+    assert "Evidence-backed catalog" in readme
+    assert "Records requiring review" in readme
+    assert "not just a list of bookmarks" in readme
+    assert "## Representative record" in readme
+    assert "## Licence and attribution" in readme
+
+
+def test_sensitive_file_detection(tmp_path) -> None:
+    (tmp_path / ".env.production").write_text("SAFE_PLACEHOLDER=1\n", encoding="utf-8")
+    assert validate_sensitive_files(tmp_path) == [
+        ".env.production: sensitive file type must not be committed"
+    ]
+
+
+def test_high_confidence_secret_detection(tmp_path) -> None:
+    (tmp_path / "config.txt").write_text(
+        "endpoint=https://service.example\n"
+        + "credential=https://user:"
+        + "not-a-real-password@example.invalid\n",
+        encoding="utf-8",
+    )
+    assert scan_secrets(tmp_path) == ["config.txt: possible credential in URL"]

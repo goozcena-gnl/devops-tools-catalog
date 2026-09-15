@@ -1,0 +1,9 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Documented Git commit SHA misclassified as a Sourcegraph token"
+regexTarget = "match"
+regexes = [
+  '''94165042278ade9470c023c76e8b768138fd1b99''',
+]
