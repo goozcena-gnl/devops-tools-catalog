@@ -10,7 +10,7 @@ permissions:
 
 concurrency:
   group: scheduled-link-audit
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   audit:
@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
@@ -28,7 +30,7 @@ jobs:
           cache-dependency-path: pyproject.toml
 
       - name: Install catalogue dependencies
-        run: python -m pip install --disable-pip-version-check -e .
+        run: python -m pip install --disable-pip-version-check --no-input -e .
 
       - name: Run strict full audit
         id: link-audit

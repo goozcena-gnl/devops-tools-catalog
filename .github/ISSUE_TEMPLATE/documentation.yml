@@ -1,0 +1,23 @@
+name: Report a documentation problem
+description: Report unclear guidance, broken navigation, or a generated-document issue.
+title: "[Docs]: "
+labels: [documentation, needs-triage]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Documentation location
+      description: Link the page or provide its repository path.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Suggested improvement
+      description: If the page is generated, identify the canonical data or generator when known.

@@ -21,6 +21,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
@@ -30,7 +31,7 @@ jobs:
           cache-dependency-path: pyproject.toml
 
       - name: Install maintenance dependencies
-        run: python -m pip install --disable-pip-version-check -e '.[dev]'
+        run: python -m pip install --disable-pip-version-check --no-input -e '.[dev]'
 
       - name: Lint maintenance code
         run: python -m ruff check scripts tests
@@ -46,3 +47,6 @@ jobs:
 
       - name: Validate catalogue and repository hygiene
         run: python -m scripts.validate_catalog
+
+      - name: Check whitespace errors
+        run: git diff --check

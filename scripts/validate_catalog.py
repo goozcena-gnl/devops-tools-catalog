@@ -21,10 +21,28 @@ from scripts.import_archive import normalize_url
 MARKDOWN_LINK_RE = re.compile(r"(?<!!)\[[^]]*]\((?P<target>[^)]+)\)")
 SECRET_PATTERNS = {
     "AWS access key": re.compile(r"\b(?:AKIA|ASIA)[A-Z0-9]{16}\b"),
+    "Azure storage key": re.compile(
+        r"(?i)\b(?:AccountKey|SharedAccessKey)=[A-Za-z0-9+/]{40,}={0,2}"
+    ),
+    "Google API key": re.compile(r"\bAIza[A-Za-z0-9_-]{35}\b"),
     "GitHub token": re.compile(r"\bgh[pousr]_[A-Za-z0-9_]{36,}\b"),
-    "private key": re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
+    "GitLab token": re.compile(r"\bglpat-[A-Za-z0-9_-]{20,}\b"),
+    "npm token": re.compile(r"\bnpm_[A-Za-z0-9]{36}\b"),
+    "OpenAI API key": re.compile(r"\bsk-(?:proj-|svcacct-)?[A-Za-z0-9_-]{32,}\b"),
+    "private key": re.compile(
+        r"-----BEGIN (?:RSA |EC |OPENSSH |DSA |PGP )?PRIVATE KEY(?: BLOCK)?-----"
+    ),
     "Slack token": re.compile(r"\bxox[baprs]-[A-Za-z0-9-]{20,}\b"),
+    "credential in URL": re.compile(r"https?://[^\s/:]+:[^\s/@]+@"),
 }
+
+SENSITIVE_FILE_PATTERNS = (
+    re.compile(r"(?i)(?:^|/)\.env(?:\.|$)"),
+    re.compile(r"(?i)(?:^|/)(?:id_rsa|id_dsa|id_ecdsa|id_ed25519)(?:\.pub)?$"),
+    re.compile(r"(?i)(?:^|/)kubeconfig(?:\.|$)"),
+    re.compile(r"(?i)\.(?:key|pem|p12|pfx|jks|keystore|tfstate|tfplan)$"),
+    re.compile(r"(?i)(?:^|/)terraform\.tfstate(?:\.|$)"),
+)
 
 
 def duplicate_field_errors(tools: list[dict[str, object]], field: str) -> list[str]:
@@ -154,7 +172,7 @@ def validate_markdown_links(root: Path = ROOT) -> list[str]:
 
 def scan_secrets(root: Path = ROOT) -> list[str]:
     errors: list[str] = []
-    excluded = {".git", ".venv", ".pytest_cache", ".ruff_cache"}
+    excluded = {".git", ".venv", ".pytest_cache", ".ruff_cache", "__pycache__"}
     for path in sorted(item for item in root.rglob("*") if item.is_file()):
         if excluded.intersection(path.parts) or path.stat().st_size > 5_000_000:
             continue
@@ -162,6 +180,18 @@ def scan_secrets(root: Path = ROOT) -> list[str]:
         for label, pattern in SECRET_PATTERNS.items():
             if pattern.search(text):
                 errors.append(f"{path.relative_to(root)}: possible {label}")
+    return errors
+
+
+def validate_sensitive_files(root: Path = ROOT) -> list[str]:
+    errors: list[str] = []
+    excluded = {".git", ".venv", ".pytest_cache", ".ruff_cache", "__pycache__"}
+    for path in sorted(item for item in root.rglob("*") if item.is_file()):
+        if excluded.intersection(path.parts):
+            continue
+        relative = path.relative_to(root).as_posix()
+        if any(pattern.search(relative) for pattern in SENSITIVE_FILE_PATTERNS):
+            errors.append(f"{relative}: sensitive file type must not be committed")
     return errors
 
 
@@ -180,6 +210,7 @@ def collect_errors(
         errors.extend(f"generated drift: {path}" for path in generate(root, check=True))
     if check_secrets:
         errors.extend(scan_secrets(root))
+        errors.extend(validate_sensitive_files(root))
     return sorted(errors)
 
 
