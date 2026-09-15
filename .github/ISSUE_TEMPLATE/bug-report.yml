@@ -1,0 +1,38 @@
+name: Report a catalog or tooling bug
+description: Report incorrect behavior in validation, generation, import, or navigation.
+title: "[Bug]: "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include credentials, private URLs, or vulnerability details. Use the private security-reporting link for sensitive reports.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and its catalog or maintenance impact.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Provide the smallest safe command, record, or sequence that reproduces the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Commit or release
+      description: Provide a commit SHA or release tag when known.
+  - type: textarea
+    id: validation
+    attributes:
+      label: Relevant validation output
+      description: Include only sanitized output; never paste secrets or private data.

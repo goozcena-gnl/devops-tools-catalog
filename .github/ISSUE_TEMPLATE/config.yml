@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Security report
-    url: https://github.com/goozcena-gnl/Devops-Tools/security
+    url: https://github.com/goozcena-gnl/devops-tools-catalog/security/advisories/new
     about: Report vulnerabilities or exposed sensitive data privately.
