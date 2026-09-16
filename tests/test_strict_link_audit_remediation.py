@@ -12,7 +12,7 @@ from scripts.check_links import LinkResult, assess_strict_results, load_baseline
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_IDS = {"milvus", "systemd", "wozz"}
 BASELINE_NORMALIZED_SHA256 = (
-    "5d4a16c083d434ffa2a6d8e7cdf5c73bfa4bb1a925641b973a0117d19f4f5e1e"
+    "07661b448ecdfe266fef4b546d8bc58817cac5d005432ff6bd0c3199442813d4"
 )
 REVIEWED_BLOCKERS = {
     "https://github.com/gremlin-io/gremlin",
