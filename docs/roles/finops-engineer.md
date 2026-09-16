@@ -17,17 +17,17 @@
 | [Finout](https://www.finout.io) | FinOps and sustainability | commercial | active |
 | [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | commercial | active |
 | [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
+| [IBM Kubecost](https://www.kubecost.com/) | FinOps and sustainability | open-core | active |
 | [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | commercial | active |
 | [k8s-overcommit-operator](https://github.com/InditexTech/k8s-overcommit-operator) | FinOps and sustainability | oss | active |
 | [Kion FinOps+](https://kion.io/platform/) | FinOps and sustainability | commercial | active |
-| [Kubecost (Apptio)](https://www.apptio.com/products/kubecost) | FinOps and sustainability | open-core | needs-review |
 | [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | needs-review |
-| [Kubex](https://kubex.ai) | FinOps and sustainability | unknown | needs-review |
+| [Kubex](https://kubex.ai/) | FinOps and sustainability | commercial | active |
 | [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | needs-review |
-| [Nutanix Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | unknown | needs-review |
+| [Nutanix Cloud Manager Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | commercial | active |
 | [OpenCost](https://www.opencost.io) | FinOps and sustainability | oss | active |
-| [PointFive](https://www.pointfive.co) | FinOps and sustainability | unknown | needs-review |
-| [ProsperOps](https://www.prosperops.com) | FinOps and sustainability | unknown | needs-review |
+| [PointFive](https://www.pointfive.co/) | FinOps and sustainability | commercial | active |
+| [ProsperOps](https://www.prosperops.com/) | FinOps and sustainability | commercial | active |
 | [Spot FinOps](https://spot.io/solutions/finops) | FinOps and sustainability | unknown | needs-review |
 | [Ternary](https://ternary.app) | FinOps and sustainability | unknown | needs-review |
 | [VegaCloud Inform](https://www.vegacloud.io/products/inform) | FinOps and sustainability | unknown | needs-review |

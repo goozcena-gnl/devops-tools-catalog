@@ -28,25 +28,25 @@
 - [hyperfine](https://github.com/sharkdp/hyperfine) — CLI benchmark runner for repeated command timing and statistical comparison.
 - [IBM Cloud](https://www.ibm.com/products/cloud) — Enterprise cloud services and infrastructure by IBM.
 - [IBM Cloudability](https://www.apptio.com/products/cloudability/) — Enterprise FinOps and cloud cost management platform for multi-cloud visibility, allocation, and optimization.
+- [IBM Kubecost](https://www.kubecost.com/) — IBM-owned Kubernetes cost monitoring and optimization platform with free community, self-hosted enterprise, and cloud service offerings built around OpenCost.
 - [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) — Cloud resource optimization.
 - [k8s-overcommit-operator](https://github.com/InditexTech/k8s-overcommit-operator) — Kubernetes operator that manages namespace-level resource-request overcommit policies.
 - [Kion FinOps+](https://kion.io/platform/) — Commercial self-hosted FinOps platform combining cost visibility and optimization with automated cloud governance and AI-assisted workflows.
-- [Kubecost (Apptio)](https://www.apptio.com/products/kubecost) — Commercial Kubernetes cost monitoring/optimization product built around OpenCost.
 - [kubectl-view-allocations](https://github.com/davidB/kubectl-view-allocations) — kubectl plugin for comparing Kubernetes resource allocations and utilization.
 - [KubeElasti](https://kubeelasti.dev/) — Kubernetes controller and request proxy for scaling HTTP workloads to zero and restoring them on demand.
 - [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) — Calculator for estimating Kubernetes node counts and cluster capacity from workload requirements.
-- [Kubex](https://kubex.ai) — AI-driven Kubernetes and GPU resource optimization platform for pod scaling, node tuning, and capacity efficiency.
+- [Kubex](https://kubex.ai/) — AI-driven Kubernetes and GPU resource optimization platform for pod scaling, node tuning, and capacity efficiency.
 - [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) — Calculator for choosing cost-effective cloud instance sizes for Kubernetes workloads.
 - [Linode](https://www.linode.com) — Cloud hosting and compute services.
 - [Microsoft Azure](https://azure.microsoft.com) — Cloud computing services by Microsoft.
 - [Morpheus Data](https://morpheusdata.com) — Hybrid cloud management platform.
-- [Nutanix Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) — Cloud cost governance.
+- [Nutanix Cloud Manager Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) — Commercial on-premises cost metering, chargeback, budgeting, and analytics capability within Nutanix Cloud Manager.
 - [oha](https://github.com/hatoo/oha) — HTTP load-generation CLI with an interactive results display.
 - [OpenCost](https://www.opencost.io) — CNCF incubating open standard and project for Kubernetes cost monitoring and allocation.
 - [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) — Cloud services by Oracle.
-- [PointFive](https://www.pointfive.co) — Cloud cost optimization.
+- [PointFive](https://www.pointfive.co/) — Commercial agentless cloud and AI efficiency platform for detecting waste, attributing costs, and guiding or automating remediation.
 - [Praesto](https://github.com/federicolepera/praesto) — Kubernetes-native model cache system using an operator, node agent, and CSI driver to stage model artifacts on cluster nodes.
-- [ProsperOps](https://www.prosperops.com) — Cloud savings automation.
+- [ProsperOps](https://www.prosperops.com/) — Flexera-owned SaaS platform that autonomously manages cloud commitment discounts and scheduled workload optimization across AWS, Azure, and Google Cloud.
 - [Scaleway](https://www.scaleway.com) — European cloud provider offering compute/storage services.
 - [Spot FinOps](https://spot.io/solutions/finops) — Cloud cost optimization.
 - [Ternary](https://ternary.app) — Cloud cost optimization for Terraform.

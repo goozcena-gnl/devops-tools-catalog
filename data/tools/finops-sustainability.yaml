@@ -434,9 +434,11 @@
   - https://kion.io/about/
   needs_review: false
 - id: kubecost-apptio
-  name: Kubecost (Apptio)
-  summary: Commercial Kubernetes cost monitoring/optimization product built around OpenCost.
-  official_url: https://www.apptio.com/products/kubecost
+  name: IBM Kubecost
+  summary: IBM-owned Kubernetes cost monitoring and optimization platform with free community, self-hosted
+    enterprise, and cloud service offerings built around OpenCost.
+  official_url: https://www.kubecost.com/
+  documentation_url: https://www.ibm.com/docs/en/kubecost/self-hosted/3.x
   categories:
   - finops-sustainability
   subcategories:
@@ -451,17 +453,31 @@
   - Granular K8s cost allocation per namespace/deployment with savings recommendations.
   avoid_when:
   - OpenCost's free capabilities already cover your needs.
-  deployment_models: []
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  - in-cluster-agent
   license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L87
   - legacy:devopstools_final.md#L800
-  needs_review: true
+  - https://newsroom.ibm.com/blog-ibm-acquires-kubecost-to-broaden-hybrid-cloud-cost-management-capabilities
+  - https://www.ibm.com/products/apptio
+  - https://www.kubecost.com/
+  - https://www.ibm.com/docs/en/kubecost/self-hosted/3.x
+  - https://www.ibm.com/support/pages/product-support-details-ibm-kubecost
+  - https://github.com/kubecost/kubecost
+  - https://github.com/kubecost/kubecost/blob/develop/LICENSE
+  - https://www.ibm.com/support/pages/ibm-kubecost-self-hosted3xx
+  - https://www.ibm.com/support/pages/node/7229716
+  needs_review: false
 - id: kubernetes-capacity-calculator
   name: Kubernetes Capacity Calculator
   summary: Calculator for estimating Kubernetes node counts and cluster capacity from workload requirements.
@@ -492,7 +508,8 @@
   name: Kubex
   summary: AI-driven Kubernetes and GPU resource optimization platform for pod scaling, node tuning, and
     capacity efficiency.
-  official_url: https://kubex.ai
+  official_url: https://kubex.ai/
+  documentation_url: https://docs.kubex.ai/
   categories:
   - finops-sustainability
   subcategories:
@@ -503,18 +520,32 @@
   - finops-engineer
   lifecycle_stages:
   - optimize
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You want policy-controlled recommendations or automation for Kubernetes pod, node, GPU, and cloud
+    resource optimization.
+  avoid_when:
+  - You require an open-source or wholly self-hosted optimization control plane and cannot deploy Kubex's
+    controller into managed clusters.
+  deployment_models:
+  - hosted-saas
+  - in-cluster-agent
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:devopstools_final.md#L798
-  needs_review: true
+  - https://kubex.ai/blog/densify-is-rebranding-to-kubex/
+  - https://kubex.ai/product/automated-kubernetes-resource-optimization/
+  - https://docs.kubex.ai/docs-kubex/Content/Kubex/Automation_Overview
+  - https://github.com/densify-dev/helm-charts/tree/master/charts/kubex-automation-controller
+  - https://kubex.ai/pricing/
+  - https://www.kubex.ai/legal/schedule-a-cco
+  - https://kubex.ai/wp-content/uploads/kubex-legal-trial-agreement.pdf
+  needs_review: false
 - id: learnkube-kubernetes-instance-calculator
   name: Learnkube Kubernetes Instance Calculator
   summary: Calculator for choosing cost-effective cloud instance sizes for Kubernetes workloads.
@@ -542,8 +573,9 @@
   - legacy:devopstools_final.md#L801
   needs_review: true
 - id: nutanix-cost-governance
-  name: Nutanix Cost Governance
-  summary: Cloud cost governance.
+  name: Nutanix Cloud Manager Cost Governance
+  summary: Commercial on-premises cost metering, chargeback, budgeting, and analytics capability within
+    Nutanix Cloud Manager.
   official_url: https://www.nutanix.com/products/cloud-manager/cost-governance
   categories:
   - finops-sustainability
@@ -556,20 +588,29 @@
   lifecycle_stages:
   - optimize
   use_when:
-  - Nutanix hybrid cloud customers needing unified cost views.
+  - You need on-premises cost metering, chargeback, budgeting, and analytics for Nutanix infrastructure
+    without a SaaS dependency.
   avoid_when:
-  - You're not in the Nutanix ecosystem.
-  deployment_models: []
-  license_model: unknown
+  - You need a standalone SaaS FinOps service for public-cloud optimization or do not operate Nutanix
+    infrastructure.
+  deployment_models:
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L88
   - legacy:devopstools_final.md#L802
-  needs_review: true
+  - https://www.nutanix.com/press-releases/2018/nutanix-beam-gives-enterprises-control-cloud
+  - https://www.nutanix.com/blog/nutanix-adds-google-cloud-to-ncm-cost-governance
+  - https://www.nutanix.com/tech-center/blog/govern-the-secure-air-gapped-governance-platform
+  - https://www.nutanix.com/products/cloud-manager/cost-governance
+  - https://www.nutanix.com/products/cloud-platform/software-options
+  needs_review: false
 - id: opencost
   name: OpenCost
   summary: CNCF incubating open standard and project for Kubernetes cost monitoring and allocation.
@@ -604,8 +645,9 @@
   needs_review: false
 - id: pointfive
   name: PointFive
-  summary: Cloud cost optimization.
-  official_url: https://www.pointfive.co
+  summary: Commercial agentless cloud and AI efficiency platform for detecting waste, attributing costs,
+    and guiding or automating remediation.
+  official_url: https://www.pointfive.co/
   categories:
   - finops-sustainability
   subcategories:
@@ -617,24 +659,35 @@
   lifecycle_stages:
   - optimize
   use_when:
-  - Automated waste detection and savings recommendations.
+  - You want agentless, read-only cloud and Kubernetes cost analysis with engineering-focused remediation
+    across cloud, data, and AI services.
   avoid_when:
-  - Your cloud spend is small enough to manage manually.
-  deployment_models: []
-  license_model: unknown
+  - You require an open-source or self-hosted FinOps platform, or your cloud spend is small enough to
+    manage manually.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L90
   - legacy:devopstools_final.md#L804
-  needs_review: true
+  - https://www.pointfive.co/
+  - https://www.pointfive.co/product
+  - https://www.pointfive.co/kubernetes
+  - https://www.pointfive.co/about
+  - https://www.pointfive.co/terms
+  needs_review: false
 - id: prosperops
   name: ProsperOps
-  summary: Cloud savings automation.
-  official_url: https://www.prosperops.com
+  summary: Flexera-owned SaaS platform that autonomously manages cloud commitment discounts and scheduled
+    workload optimization across AWS, Azure, and Google Cloud.
+  official_url: https://www.prosperops.com/
+  documentation_url: https://help.prosperops.com/
   categories:
   - finops-sustainability
   subcategories:
@@ -646,20 +699,29 @@
   lifecycle_stages:
   - optimize
   use_when:
-  - Autonomous RI/Savings Plan purchasing to maximize discount coverage.
+  - You want autonomous commitment and rate optimization across AWS, Azure, and Google Cloud with
+    savings-based pricing.
   avoid_when:
   - You want manual control over commitment purchases.
-  deployment_models: []
-  license_model: unknown
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L91
   - legacy:devopstools_final.md#L805
-  needs_review: true
+  - https://www.flexera.com/about-us/press-center/flexera-expands-its-finops-solution-with-agentic-and-ai-enabled-cost-optimization
+  - https://www.prosperops.com/blog/the-next-chapter/
+  - https://www.prosperops.com/
+  - https://help.prosperops.com/what-does-prosperops-do
+  - https://www.prosperops.com/pricing/
+  - https://www.prosperops.com/legal/service-terms-02-2024/
+  needs_review: false
 - id: spot-finops
   name: Spot FinOps
   summary: Cloud cost optimization.

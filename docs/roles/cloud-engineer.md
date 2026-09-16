@@ -136,6 +136,7 @@
 | [IBM Cloud](https://www.ibm.com/products/cloud) | Cloud platforms and cloud management | commercial | active |
 | [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
 | [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | commercial | active |
+| [IBM Kubecost](https://www.kubecost.com/) | FinOps and sustainability | open-core | active |
 | [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | commercial | active |
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [InfraHQ](https://infrahq.com) | IAM, secrets and certificate management | oss | needs-review |
@@ -161,7 +162,6 @@
 | [Kube Copilot](https://github.com/feiskyer/kube-copilot) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [kube-dump](https://kube-dump.woozymasta.ru) | Backup, disaster recovery and resilience | oss | needs-review |
 | [kubeCodex](https://github.com/TheCodingSheikh/kubecodex) | Documentation, learning and career resources | documentation | needs-review |
-| [Kubecost (Apptio)](https://www.apptio.com/products/kubecost) | FinOps and sustainability | open-core | needs-review |
 | [KubeLearn](https://kubelearn.yoparchi.fr) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | needs-review |
 | [Kubernetes de A à Z](https://github.com/ibrahimbakayoko/kubernetes-de-a-z) | Documentation, learning and career resources | documentation | needs-review |
@@ -169,7 +169,7 @@
 | [Kubernetes Learning Path](https://kubernetes.io/docs/home) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes MCP Server](https://github.com/containers/kubernetes-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [kubernetes-skill for Claude Code](https://lukasniessen.github.io/kubernetes-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
-| [Kubex](https://kubex.ai) | FinOps and sustainability | unknown | needs-review |
+| [Kubex](https://kubex.ai/) | FinOps and sustainability | commercial | active |
 | [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
 | [LabEx DevOps Tutorials](https://labex.io/tutorials/category/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [LabsDevOps.fr](https://labsdevops.fr) | Documentation, learning and career resources | documentation | needs-review |
@@ -205,7 +205,7 @@
 | [Morpheus Data](https://morpheusdata.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [MySQL](https://www.mysql.com) | Databases, caching and data infrastructure | open-core | active |
 | [Nautobot](https://docs.nautobot.com/) | Infrastructure as Code | open-core | active |
-| [Nutanix Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | unknown | needs-review |
+| [Nutanix Cloud Manager Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | commercial | active |
 | [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Ollama](https://ollama.com) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -231,10 +231,10 @@
 | [phpIPAM](https://phpipam.net/) | Databases, caching and data infrastructure | oss | active |
 | [Pluralith](https://www.pluralith.com) | Infrastructure as Code | unknown | needs-review |
 | [PocketBase](https://pocketbase.io/) | Databases, caching and data infrastructure | oss | active |
-| [PointFive](https://www.pointfive.co) | FinOps and sustainability | unknown | needs-review |
+| [PointFive](https://www.pointfive.co/) | FinOps and sustainability | commercial | active |
 | [PostgreSQL](https://www.postgresql.org) | Databases, caching and data infrastructure | oss | active |
 | [Promptfoo](https://www.promptfoo.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [ProsperOps](https://www.prosperops.com) | FinOps and sustainability | unknown | needs-review |
+| [ProsperOps](https://www.prosperops.com/) | FinOps and sustainability | commercial | active |
 | [Prowler](https://prowler.com) | Application and cloud security, Policy, governance and compliance | open-core | active |
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
 | [RabbitMQ](https://www.rabbitmq.com) | Databases, caching and data infrastructure | oss | needs-review |
