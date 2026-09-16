@@ -61,7 +61,7 @@
 | [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
-| [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | needs-review |
+| [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | active |
 | [Barbara](https://www.barbara.tech) | Emerging and experimental tools | unknown | needs-review |
 | [Bazel](https://bazel.build) | Containers and image tooling | oss | needs-review |
 | [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
@@ -195,7 +195,7 @@
 | [FreeLens](https://freelensapp.github.io) | Kubernetes distributions and operations | oss | active |
 | [fulcio (sigstore)](https://github.com/sigstore/fulcio) | Emerging and experimental tools | oss | needs-review |
 | [fulling](https://github.com/FullAgent/fulling) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Garden](https://garden.io) | Platform engineering and internal developer platforms | oss | needs-review |
+| [Garden](https://garden.io) | Platform engineering and internal developer platforms | open-core | active |
 | [Gardener](https://gardener.cloud/) | Kubernetes distributions and operations | oss | active |
 | [Gateway API](https://gateway-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [genai-agentos](https://github.com/genai-works-org/genai-agentos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -463,13 +463,13 @@
 | [OpenKruise](https://openkruise.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [OpenKruise Agents](https://github.com/openkruise/agents) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | needs-review |
-| [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | unknown | needs-review |
+| [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | oss | active |
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
 | [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
 | [OperatorHub](https://operatorhub.io) | Kubernetes networking, storage and add-ons | unknown | needs-review |
-| [OpsLevel](https://www.opslevel.com) | Platform engineering and internal developer platforms | unknown | needs-review |
+| [OpsLevel](https://www.opslevel.com) | Platform engineering and internal developer platforms | commercial | active |
 | [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | unknown | needs-review |
 | [Oracle Kubernetes Engine](https://www.oracle.com/cloud/cloud-native/kubernetes-engine/) | Kubernetes distributions and operations | commercial | active |
 | [Orbit](https://gitlab.com/RMJx1/orbit) | Kubernetes distributions and operations | oss | needs-review |
@@ -484,7 +484,7 @@
 | [PointFive](https://www.pointfive.co) | FinOps and sustainability | unknown | needs-review |
 | [Polykube](https://github.com/Kismet-Engineering/polykube) | Kubernetes distributions and operations | oss | active |
 | [Popeye](https://popeyecli.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Port](https://docs.port.io) | Platform engineering and internal developer platforms | unknown | needs-review |
+| [Port](https://www.port.io/) | Platform engineering and internal developer platforms | commercial | active |
 | [Portabase](https://portabase.io) | Emerging and experimental tools | oss | needs-review |
 | [Porter](https://github.com/porter-dev) | CD, GitOps, release and promotion | unknown | needs-review |
 | [Portworx](https://portworx.com) | Kubernetes networking, storage and add-ons | unknown | needs-review |

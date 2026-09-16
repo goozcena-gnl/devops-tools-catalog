@@ -432,7 +432,7 @@
 - [OpenKruise](https://openkruise.io) — Enhanced workloads for Kubernetes.
 - [OpenKruise Agents](https://github.com/openkruise/agents) — Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
 - [OpenLens](https://github.com/MuhammedKalkan/OpenLens) — Open source distribution of Lens features.
-- [OpenRun](https://openrun.dev) — Internal tools deployment platform.
+- [OpenRun](https://openrun.dev) — Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
 - [OpenStack](https://www.openstack.org) — Open-source cloud infrastructure platform for operating compute, networking, storage, identity, and related services.
 - [OpenStack Ironic](https://ironicbaremetal.org/) — Bare-metal provisioning service supporting hardware inspection, deployment, and power management.
 - [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) — OpenStack service for provisioning and managing container orchestration clusters through OpenStack APIs.
@@ -463,7 +463,7 @@
 - [Podman](https://podman.io) — Daemonless container engine for developing and managing containers.
 - [Polykube](https://github.com/Kismet-Engineering/polykube) — Experimental GitOps-driven operators for portable workloads across Kubernetes clusters.
 - [Popeye](https://popeyecli.io) — Kubernetes cluster resource sanitizer that scans live clusters for potential issues and misconfigurations.
-- [Port](https://docs.port.io) — Internal developer portal and service catalog with automations/workflows.
+- [Port](https://www.port.io/) — Internal developer portal and service catalog with automations/workflows.
 - [Portainer](https://www.portainer.io) — Container management platform.
 - [Porter](https://github.com/porter-dev) — PaaS for deploying apps to Kubernetes.
 - [Portworx](https://portworx.com) — Kubernetes data services platform.

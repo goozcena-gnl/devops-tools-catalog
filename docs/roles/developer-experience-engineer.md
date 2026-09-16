@@ -24,7 +24,7 @@
 | [AWS Cloud9](https://aws.amazon.com/cloud9) | Developer experience and local environments | commercial | deprecated |
 | [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | commercial | active |
 | [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
-| [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | needs-review |
+| [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | active |
 | [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | deprecated |
 | [Bitbucket](https://www.atlassian.com/software/bitbucket) | Source control and repository management | commercial | active |
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | commercial | active |
@@ -81,7 +81,7 @@
 | [FitNesse](https://fitnesse.org) | CI, build and testing | oss | active |
 | [Floci](https://floci.io/aws/) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
 | [Floci-AZ](https://floci.io/floci-az/) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
-| [Garden](https://garden.io) | Platform engineering and internal developer platforms | oss | needs-review |
+| [Garden](https://garden.io) | Platform engineering and internal developer platforms | open-core | active |
 | [Gerrit Code Review](https://www.gerritcodereview.com/) | Source control and repository management | oss | active |
 | [Ghostty](https://ghostty.org) | Developer experience and local environments | oss | needs-review |
 | [Git](https://git-scm.com) | Source control and repository management | oss | needs-review |
@@ -156,15 +156,15 @@
 | [OneDev](https://onedev.io) | CI, build and testing | oss | needs-review |
 | [Open Interpreter](https://openinterpreter.com) | Developer experience and local environments | oss | needs-review |
 | [OpenCode](https://opencode.ai) | Developer experience and local environments | oss | needs-review |
-| [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | unknown | needs-review |
+| [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | oss | active |
 | [OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | unknown | needs-review |
 | [OpenWiki](https://github.com/langchain-ai/openwiki) | Developer experience and local environments | oss | needs-review |
-| [OpsLevel](https://www.opslevel.com) | Platform engineering and internal developer platforms | unknown | needs-review |
+| [OpsLevel](https://www.opslevel.com) | Platform engineering and internal developer platforms | commercial | active |
 | [Paseo](https://paseo.sh/) | Developer experience and local environments | oss | active |
 | [Plane](https://plane.so) | Workflow automation and ChatOps | oss | needs-review |
 | [Play with Docker](https://labs.play-with-docker.com) | Developer experience and local environments | documentation | needs-review |
 | [Playwright](https://playwright.dev) | CI, build and testing | oss | needs-review |
-| [Port](https://docs.port.io) | Platform engineering and internal developer platforms | unknown | needs-review |
+| [Port](https://www.port.io/) | Platform engineering and internal developer platforms | commercial | active |
 | [Postman](https://www.postman.com) | Developer experience and local environments | unknown | needs-review |
 | [Prettier](https://prettier.io) | Developer experience and local environments | oss | needs-review |
 | [Probot DCO](https://probot.github.io/apps/dco) | CI, build and testing | oss | needs-review |

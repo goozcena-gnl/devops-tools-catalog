@@ -563,7 +563,7 @@
 - [OpenKruise Agents](https://github.com/openkruise/agents) — Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
 - [OpenLens](https://github.com/MuhammedKalkan/OpenLens) — Open source distribution of Lens features.
 - [OpenObserve](https://openobserve.ai/) — Observability platform for logs, metrics, and traces with an open-source core and commercial enterprise offerings.
-- [OpenRun](https://openrun.dev) — Internal tools deployment platform.
+- [OpenRun](https://openrun.dev) — Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
 - [OpenSearch](https://opensearch.org) — Search/analytics engine commonly used for logs (Elastic-alternative fork).
 - [OpenSRE](https://www.opensre.com/) — Self-hostable framework for AI-assisted production incident investigation, evaluation, and remediation workflows.
 - [OpenSSH](https://www.openssh.org) — The ubiquitous open-source SSH suite for secure remote login, file transfer, and tunneling.
@@ -606,7 +606,7 @@
 - [Podman](https://podman.io) — Daemonless container engine for developing and managing containers.
 - [Polykube](https://github.com/Kismet-Engineering/polykube) — Experimental GitOps-driven operators for portable workloads across Kubernetes clusters.
 - [Popeye](https://popeyecli.io) — Kubernetes cluster resource sanitizer that scans live clusters for potential issues and misconfigurations.
-- [Port](https://docs.port.io) — Internal developer portal and service catalog with automations/workflows.
+- [Port](https://www.port.io/) — Internal developer portal and service catalog with automations/workflows.
 - [Portainer](https://www.portainer.io) — Container management platform.
 - [Portworx](https://portworx.com) — Kubernetes data services platform.
 - [PostgreSQL](https://www.postgresql.org) — Extensible open-source relational database with strong transactional, indexing, and SQL capabilities.
