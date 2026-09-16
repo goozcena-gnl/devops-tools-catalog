@@ -75,6 +75,37 @@ deterministic output. Full network link audits are intentionally separate:
 .venv/bin/python -m scripts.check_links --strict
 ```
 
+## Working a scoped evidence-review issue
+
+Review issues turn the catalogue's visible review debt into bounded work. Choose
+one issue, keep to its listed record IDs, and use this sequence:
+
+1. locate each canonical record under `data/tools/`;
+2. check primary evidence without inferring missing facts;
+3. update canonical metadata and `verified_on` only for claims actually checked;
+4. leave `needs_review: true` when any required claim remains uncertain;
+5. run `python -m scripts.generate_docs`, then the validation commands above;
+6. open one focused pull request and link the issue.
+
+Use evidence in this order:
+
+1. official project documentation;
+2. the canonical upstream GitHub or GitLab repository;
+3. the official vendor or project website;
+4. the official licence file for licence claims;
+5. an official release, archive, deprecation, or ownership notice.
+
+Blogs, generated summaries, catalogue aggregators, and search-result snippets
+can help discovery but are not authoritative evidence. Never guess a licence,
+lifecycle state, project owner, or canonical identity. If primary sources
+conflict or remain incomplete, document the uncertainty and retain the review
+flag.
+
+Maintainers scope review batches using the
+[review-batch playbook](docs/maintenance/review-batch-playbook.md). It defines
+the expected issue contents and keeps the public queue small enough to remain
+reviewable.
+
 ## Pull requests
 
 Keep changes focused. Explain primary-source evidence, unresolved fields,

@@ -5,63 +5,63 @@
       "url": "https://github.com/gremlin-io/gremlin",
       "classification": "manual-verification-required",
       "reason": "Reviewed pre-existing URL returns HTTP 404 after HEAD and ranged GET.",
-      "reference": "https://github.com/goozcena-gnl/Devops-Tools/issues/2",
+      "reference": "https://github.com/goozcena-gnl/devops-tools-catalog/issues/2",
       "reviewed_on": "2026-08-24"
     },
     {
       "url": "https://github.com/hoji-ai/hoji",
       "classification": "manual-verification-required",
       "reason": "Reviewed pre-existing URL returns HTTP 404 after HEAD and ranged GET.",
-      "reference": "https://github.com/goozcena-gnl/Devops-Tools/issues/2",
+      "reference": "https://github.com/goozcena-gnl/devops-tools-catalog/issues/2",
       "reviewed_on": "2026-08-24"
     },
     {
       "url": "https://github.com/komodorio/komodor",
       "classification": "manual-verification-required",
       "reason": "Reviewed pre-existing URL returns HTTP 404 after HEAD and ranged GET.",
-      "reference": "https://github.com/goozcena-gnl/Devops-Tools/issues/2",
+      "reference": "https://github.com/goozcena-gnl/devops-tools-catalog/issues/2",
       "reviewed_on": "2026-08-24"
     },
     {
       "url": "https://github.com/ophircloud/DevOps-Projects",
       "classification": "http-error",
       "reason": "Reviewed pre-existing GitHub API response is HTTP 451.",
-      "reference": "https://github.com/goozcena-gnl/Devops-Tools/issues/2",
+      "reference": "https://github.com/goozcena-gnl/devops-tools-catalog/issues/2",
       "reviewed_on": "2026-08-24"
     },
     {
       "url": "https://github.com/usual2970/certmate",
       "classification": "manual-verification-required",
       "reason": "Reviewed pre-existing URL returns HTTP 404 after HEAD and ranged GET.",
-      "reference": "https://github.com/goozcena-gnl/Devops-Tools/issues/2",
+      "reference": "https://github.com/goozcena-gnl/devops-tools-catalog/issues/2",
       "reviewed_on": "2026-08-24"
     },
     {
       "url": "https://hub.docker.com/r/soosio/dast",
       "classification": "manual-verification-required",
       "reason": "Reviewed pre-existing URL returns HTTP 404 after HEAD and ranged GET.",
-      "reference": "https://github.com/goozcena-gnl/Devops-Tools/issues/2",
+      "reference": "https://github.com/goozcena-gnl/devops-tools-catalog/issues/2",
       "reviewed_on": "2026-08-24"
     },
     {
       "url": "https://kubeflame.github.io",
       "classification": "manual-verification-required",
       "reason": "Reviewed pre-existing URL returns HTTP 404 after HEAD and ranged GET.",
-      "reference": "https://github.com/goozcena-gnl/Devops-Tools/issues/2",
+      "reference": "https://github.com/goozcena-gnl/devops-tools-catalog/issues/2",
       "reviewed_on": "2026-08-24"
     },
     {
       "url": "https://www.opentext.com/products/static-application-security-testing",
       "classification": "http-error",
       "reason": "Reviewed pre-existing endpoint returns a non-standard HTTP 444 response.",
-      "reference": "https://github.com/goozcena-gnl/Devops-Tools/issues/2",
+      "reference": "https://github.com/goozcena-gnl/devops-tools-catalog/issues/2",
       "reviewed_on": "2026-08-24"
     },
     {
       "url": "https://www.yotascale.com",
       "classification": "manual-verification-required",
       "reason": "Reviewed pre-existing URL returns HTTP 404 after HEAD and ranged GET.",
-      "reference": "https://github.com/goozcena-gnl/Devops-Tools/issues/2",
+      "reference": "https://github.com/goozcena-gnl/devops-tools-catalog/issues/2",
       "reviewed_on": "2026-08-24"
     }
   ]
