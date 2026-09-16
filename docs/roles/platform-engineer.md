@@ -269,7 +269,7 @@
 | [k8sql](https://github.com/ndenev/k8sql) | Kubernetes distributions and operations | oss | needs-review |
 | [k8squest](https://github.com/Manoj-engineer/k8squest) | Documentation, learning and career resources | documentation | needs-review |
 | [K8Studio](https://k8studio.io/) | Kubernetes distributions and operations | commercial | active |
-| [K9s](https://k9scli.io) | Kubernetes distributions and operations | oss | needs-review |
+| [K9s](https://k9scli.io) | Kubernetes distributions and operations | oss | active |
 | [k9sight](https://github.com/doganarif/k9sight) | Kubernetes distributions and operations | oss | needs-review |
 | [Kagent](https://kagent.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
@@ -292,14 +292,14 @@
 | [Killercoda](https://github.com/killercoda) | Documentation, learning and career resources | documentation | needs-review |
 | [Killercoda CKA](https://killercoda.com/cka) | Documentation, learning and career resources | documentation | needs-review |
 | [kimspect](https://github.com/koithos/kimspect) | Kubernetes distributions and operations | oss | needs-review |
-| [kind](https://kind.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [kind](https://kind.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Kindling](https://mykindling.io/get-kindling) | Documentation, learning and career resources | unknown | needs-review |
 | [Kion FinOps+](https://kion.io/platform/) | FinOps and sustainability | commercial | active |
 | [Knative](https://knative.dev/) | Serverless, edge and WebAssembly | oss | active |
 | [Ko](https://ko.build) | Containers and image tooling | oss | needs-review |
 | [KodeKloud](https://kodekloud.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Kogaro](https://github.com/topiaruss/kogaro) | Kubernetes distributions and operations | oss | needs-review |
-| [Kompose](https://kompose.io) | Kubernetes distributions and operations | oss | needs-review |
+| [Kompose](https://kompose.io) | Kubernetes distributions and operations | oss | active |
 | [Kong Gateway](https://developer.konghq.com/gateway/install/) | Kubernetes networking, storage and add-ons | open-core | active |
 | [Kontroler](https://www.kontroler.dev/) | Kubernetes distributions and operations | oss | active |
 | [Kor](https://github.com/yonahd/kor) | Kubernetes distributions and operations | oss | needs-review |
@@ -307,7 +307,7 @@
 | [Krateo Core Provider](https://github.com/krateoplatformops/core-provider) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Krateo OASGen Provider](https://docs.krateo.io/key-concepts/kog/oasgen-provider) | Kubernetes networking, storage and add-ons | documentation | needs-review |
 | [Kratix](https://www.kratix.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [krew](https://krew.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [krew](https://krew.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [kro](https://kro.run/) | Kubernetes networking, storage and add-ons | oss | active |
 | [kroc](https://github.com/pawelcit/kroc) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KRouter](https://krouter.cloud/) | Kubernetes networking, storage and add-ons | oss | active |
@@ -424,7 +424,7 @@
 | [Migratowl](https://migratowl.bitkaio.com) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Milvus](https://milvus.io) | MLOps, LLMOps and AI infrastructure, Databases, caching and data infrastructure | open-core | active |
 | [Mini-classes Ansible Public](https://github.com/apille-pro/miniclasses_ansible_public) | Documentation, learning and career resources | documentation | needs-review |
-| [Minikube](https://minikube.sigs.k8s.io/docs) | Kubernetes distributions and operations | oss | needs-review |
+| [Minikube](https://minikube.sigs.k8s.io/docs) | Kubernetes distributions and operations | oss | active |
 | [MLflow](https://mlflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [MLOps for DevOps Engineers](https://github.com/techiescamp/mlops-for-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | needs-review |
