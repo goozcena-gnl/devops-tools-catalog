@@ -29,7 +29,7 @@ Platform engineering automation for self-service environments and app delivery.
 **Categories:** Platform engineering and internal developer platforms<br>
 **Roles:** Platform Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Internal developer portal (IDP) / software catalog for improving developer experience.
 
@@ -41,7 +41,7 @@ Internal developer portal (IDP) / software catalog for improving developer exper
 
 - You have a small team—the setup and maintenance overhead won't pay off yet.
 
-[Official site](https://backstage.io) · [Source repository](https://github.com/backstage/backstage)
+[Official site](https://backstage.io) · [Documentation](https://backstage.io/docs/overview/what-is-backstage/) · [Source repository](https://github.com/backstage/backstage)
 
 ### Coolify
 
@@ -85,8 +85,8 @@ Self-hostable platform for deploying applications, Docker Compose stacks, and da
 
 **Categories:** Platform engineering and internal developer platforms<br>
 **Roles:** Platform Engineer, Developer Experience Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
 Developer-first automation for building/testing/deploying cloud-native apps.
 
@@ -98,7 +98,7 @@ Developer-first automation for building/testing/deploying cloud-native apps.
 
 - Your services are few and docker-compose handles the dev workflow fine.
 
-[Official site](https://garden.io) · [Source repository](https://github.com/garden-io/garden)
+[Official site](https://garden.io) · [Documentation](https://docs.garden.io/) · [Source repository](https://github.com/garden-io/garden)
 
 ### Humanitec
 
@@ -142,10 +142,10 @@ Open-source GitOps-first CLI for packaging, generating, and bootstrapping reusab
 
 **Categories:** Platform engineering and internal developer platforms<br>
 **Roles:** Platform Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Internal tools deployment platform.
+Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
 
 **Use when**
 
@@ -155,14 +155,14 @@ Internal tools deployment platform.
 
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
-[Official site](https://openrun.dev)
+[Official site](https://openrun.dev) · [Documentation](https://openrun.dev/docs/) · [Source repository](https://github.com/openrundev/openrun)
 
 ### OpsLevel
 
 **Categories:** Platform engineering and internal developer platforms<br>
 **Roles:** Platform Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 SaaS internal developer portal and service catalog (scorecards, ownership, maturity).
 
@@ -174,14 +174,14 @@ SaaS internal developer portal and service catalog (scorecards, ownership, matur
 
 - Backstage's plugin ecosystem covers your needs at lower cost.
 
-[Official site](https://www.opslevel.com)
+[Official site](https://www.opslevel.com) · [Documentation](https://docs.opslevel.com/)
 
 ### Port
 
 **Categories:** Platform engineering and internal developer platforms<br>
 **Roles:** Platform Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 Internal developer portal and service catalog with automations/workflows.
 
@@ -193,7 +193,7 @@ Internal developer portal and service catalog with automations/workflows.
 
 - You need deep customization that only a code-first approach (Backstage) can provide.
 
-[Official site](https://docs.port.io)
+[Official site](https://www.port.io/) · [Documentation](https://docs.port.io/)
 
 ### Railway
 

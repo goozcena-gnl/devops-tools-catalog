@@ -38,6 +38,7 @@
   summary: Internal developer portal (IDP) / software catalog for improving developer experience.
   official_url: https://backstage.io
   repository_url: https://github.com/backstage/backstage
+  documentation_url: https://backstage.io/docs/overview/what-is-backstage/
   categories:
   - platform-engineering-idp
   subcategories:
@@ -53,17 +54,25 @@
   - You have 50+ services and need a unified catalog, docs, and plugin ecosystem.
   avoid_when:
   - You have a small team—the setup and maintenance overhead won't pay off yet.
-  deployment_models: []
+  deployment_models:
+  - self-hosted
   license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:7_Development-Collaboration/README.md#L98
   - legacy:devopstools_final.md#L1144
-  needs_review: true
+  - https://backstage.io/docs/overview/what-is-backstage/
+  - https://backstage.io/docs/deployment/
+  - https://github.com/backstage/backstage
+  - https://github.com/backstage/backstage/blob/master/LICENSE
+  - https://github.com/backstage/backstage/releases/tag/v1.55.0
+  needs_review: false
 - id: coolify
   name: Coolify
   summary: Self-hostable application platform for deploying code, containers, databases, and packaged
@@ -140,6 +149,7 @@
   summary: Developer-first automation for building/testing/deploying cloud-native apps.
   official_url: https://garden.io
   repository_url: https://github.com/garden-io/garden
+  documentation_url: https://docs.garden.io/
   categories:
   - platform-engineering-idp
   subcategories:
@@ -155,17 +165,28 @@
   - Inner-loop development of multi-service Kubernetes apps is painfully slow.
   avoid_when:
   - Your services are few and docker-compose handles the dev workflow fine.
-  deployment_models: []
-  license_model: oss
+  deployment_models:
+  - local-cli
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: open-core
+  license_spdx: MPL-2.0
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:7_Development-Collaboration/README.md#L99
   - legacy:devopstools_final.md#L1145
-  needs_review: true
+  - https://docs.garden.io/
+  - https://docs.garden.io/reference/glossary
+  - https://enterprise-v1.docs.garden.io/enterprise-self-hosted/requirements
+  - https://github.com/garden-io/garden
+  - https://github.com/garden-io/garden/blob/main/LICENSE.md
+  - https://github.com/garden-io/garden/releases/tag/0.14.20
+  needs_review: false
 - id: humanitec
   name: Humanitec
   summary: Commercial platform orchestrator for building internal developer platforms across cloud and Kubernetes infrastructure.
@@ -243,8 +264,11 @@
   needs_review: false
 - id: openrun
   name: OpenRun
-  summary: Internal tools deployment platform.
+  summary: Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker,
+    Podman, or Kubernetes.
   official_url: https://openrun.dev
+  repository_url: https://github.com/openrundev/openrun
+  documentation_url: https://openrun.dev/docs/
   categories:
   - platform-engineering-idp
   subcategories:
@@ -258,20 +282,28 @@
   - operate
   use_when: []
   avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:devopstools_final.md#L1148
-  needs_review: true
+  - https://openrun.dev/
+  - https://openrun.dev/docs/
+  - https://github.com/openrundev/openrun
+  - https://github.com/openrundev/openrun/blob/main/LICENSE
+  - https://github.com/openrundev/openrun/releases/tag/v0.19.4
+  needs_review: false
 - id: opslevel
   name: OpsLevel
   summary: SaaS internal developer portal and service catalog (scorecards, ownership, maturity).
   official_url: https://www.opslevel.com
+  documentation_url: https://docs.opslevel.com/
   categories:
   - platform-engineering-idp
   subcategories:
@@ -288,21 +320,28 @@
     yourself.
   avoid_when:
   - Backstage's plugin ecosystem covers your needs at lower cost.
-  deployment_models: []
-  license_model: unknown
+  deployment_models:
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:7_Development-Collaboration/README.md#L101
   - legacy:devopstools_final.md#L1149
-  needs_review: true
+  - https://www.opslevel.com/
+  - https://docs.opslevel.com/
+  - https://www.opslevel.com/pricing
+  needs_review: false
 - id: port
   name: Port
   summary: Internal developer portal and service catalog with automations/workflows.
-  official_url: https://docs.port.io
+  official_url: https://www.port.io/
+  documentation_url: https://docs.port.io/
   categories:
   - platform-engineering-idp
   subcategories:
@@ -318,17 +357,22 @@
   - You want a low-code IDP with built-in self-service actions and software catalog.
   avoid_when:
   - You need deep customization that only a code-first approach (Backstage) can provide.
-  deployment_models: []
-  license_model: unknown
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:7_Development-Collaboration/README.md#L102
   - legacy:devopstools_final.md#L1150
-  needs_review: true
+  - https://www.port.io/
+  - https://docs.port.io/
+  - https://www.port.io/pricing
+  needs_review: false
 - id: railway
   name: Railway
   summary: Managed application platform for building, deploying, networking, scaling, and observing services

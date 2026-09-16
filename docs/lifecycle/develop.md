@@ -146,7 +146,7 @@
 - [Open Interpreter](https://openinterpreter.com) — Run AI that can execute tasks locally.
 - [OpenCode](https://opencode.ai) — Open-source AI coding agent.
 - [OpenDev](https://opendev.org/) — Public collaborative infrastructure service providing Git hosting, code review, CI, and related services for open-source projects.
-- [OpenRun](https://openrun.dev) — Internal tools deployment platform.
+- [OpenRun](https://openrun.dev) — Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
 - [openspeedtest](https://github.com/openspeedtest) — Self-hosted network speed test application.
 - [OpenWiki](https://github.com/langchain-ai/openwiki) — CLI that writes and maintains agent documentation for your codebase.
 - [OpsLevel](https://www.opslevel.com) — SaaS internal developer portal and service catalog (scorecards, ownership, maturity).
@@ -154,7 +154,7 @@
 - [Papra](https://github.com/papra-hq/papra) — Document/PDF organization (see project).
 - [Paseo](https://paseo.sh/) — Interface for accessing coding agents running on a development machine from other devices.
 - [Play with Docker](https://labs.play-with-docker.com) — Interactive Docker playground; open-source platform with hosted labs site.
-- [Port](https://docs.port.io) — Internal developer portal and service catalog with automations/workflows.
+- [Port](https://www.port.io/) — Internal developer portal and service catalog with automations/workflows.
 - [Portabase](https://portabase.io) — Self-hosted tool for automating and restoring database backups across many database engines.
 - [Postman](https://www.postman.com) — API development and testing platform.
 - [PowerShell](https://learn.microsoft.com/en-us/powershell/) — Cross-platform shell and scripting runtime for object-based system automation.
