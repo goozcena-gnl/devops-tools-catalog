@@ -437,14 +437,14 @@
 - [kubernetes-skill for Claude Code](https://lukasniessen.github.io/kubernetes-skill) — Claude Code agent skill for interacting with Kubernetes clusters.
 - [Kubescape](https://kubescape.io/) — Kubernetes security platform for posture, vulnerability, compliance, and runtime risk assessment.
 - [Kubesec](https://kubesec.io) — Security risk analysis for Kubernetes YAML.
-- [Kubeshark](https://kubeshark.co) — Kubernetes traffic analyzer.
+- [Kubeshark](https://kubeshark.com/) — Kubernetes network observability platform for packet capture, protocol analysis, dashboards, and MCP-based investigation.
 - [KubeSolo](https://www.kubesolo.io) — Native macOS application to run a local Kubernetes cluster.
 - [KubeSpec](https://kubespec.dev) — Interactive Kubernetes API specification reference.
 - [KubeSphere](https://kubesphere.io) — Kubernetes multi-tenant management platform.
 - [Kubespray](https://github.com/kubernetes-sigs/kubespray) — Ansible-based Kubernetes cluster deployment and lifecycle automation maintained by Kubernetes SIGs.
 - [kubeswitch](https://github.com/danielfoehrKn/kubeswitch) — Command-line context switcher for Kubernetes operators managing multiple clusters and kubeconfig stores.
 - [KubeTable](https://kubetable.dev/) — Local-first desktop database client that discovers and connects to databases running in Kubernetes clusters.
-- [Kubetail](https://www.kubetail.com) — Kubernetes log exploration and tailing tool.
+- [Kubetail](https://www.kubetail.com/) — Apache-licensed real-time Kubernetes logging dashboard for terminal, local web, container, and in-cluster use.
 - [KubeTUI](https://github.com/sarub0b0/kubetui) — Terminal UI for Kubernetes clusters.
 - [KubeUI](https://kubeui.com/) — Desktop Kubernetes client for browsing resources, logs, events, and YAML.
 - [KubeVela](https://kubevela.io) — Application delivery platform on Kubernetes.
@@ -464,7 +464,7 @@
 - [LangChain](https://www.langchain.com) — LLM application framework; OSS libraries with commercial companion products.
 - [Langflow](https://www.langflow.org) — Low-code builder for agentic and RAG applications.
 - [Langfuse](https://langfuse.com) — LLM observability and analytics; OSS self-hosted core with commercial cloud offering.
-- [LangGraph](https://www.langchain.com/langgraph) — Framework for building reliable stateful AI agents and multi-step workflows.
+- [LangGraph](https://www.langchain.com/langgraph) — MIT-licensed orchestration framework and runtime for building stateful, long-running agents.
 - [LangSmith](https://smith.langchain.com) — LLM application development platform with observability, testing, and evaluation (LangChain-affiliated).
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill) — Agent skill that researches current topics across web and social sources and synthesizes grounded summaries.
 - [Lazydocker](https://github.com/jesseduffield/lazydocker) — Terminal UI for Docker and Docker Compose.
@@ -639,7 +639,7 @@
 - [Rancher](https://rancher.com) — Kubernetes management platform by SUSE.
 - [Rancher Desktop](https://rancherdesktop.io) — Desktop Kubernetes and container management.
 - [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) — Run and manage k3s clusters via Kubernetes (see docs).
-- [Ray](https://www.ray.io) — Distributed compute framework for scaling ML, AI, and Python workloads.
+- [Ray](https://www.ray.io/) — Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
 - [Rclone](https://rclone.org/) — Command-line data transfer and synchronization tool for object stores, cloud file services, and local filesystems.
 - [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) — Enterprise automation platform built around Ansible.
 - [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) — Enterprise Kubernetes platform (commercial); upstream community distribution is OKD.

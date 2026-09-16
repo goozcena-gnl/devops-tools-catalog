@@ -2836,8 +2836,11 @@
   needs_review: true
 - id: kubeshark
   name: Kubeshark
-  summary: Kubernetes traffic analyzer.
-  official_url: https://kubeshark.co
+  summary: Kubernetes network observability platform for packet capture, protocol analysis, dashboards, and MCP-based investigation.
+  official_url: https://kubeshark.com/
+  repository_url: https://github.com/kubeshark/kubeshark
+  repository_archived: false
+  documentation_url: https://docs.kubeshark.com/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -2852,18 +2855,29 @@
   use_when:
   - You need deep packet-level visibility into pod-to-pod traffic for debugging.
   avoid_when:
-  - You already have a service mesh with built-in observability (Linkerd/Istio).
-  deployment_models: []
-  license_model: unknown
+  - You cannot permit cluster-wide packet capture or privileged eBPF components, or cannot accommodate edition capacity limits.
+  deployment_models:
+  - local-cli
+  - kubernetes
+  - enterprise-self-hosted
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L55
   - legacy:devopstools_final.md#L508
-  needs_review: true
+  - https://kubeshark.com/
+  - https://docs.kubeshark.com/
+  - https://github.com/kubeshark/kubeshark
+  - https://github.com/kubeshark/kubeshark/blob/master/LICENSE
+  - https://github.com/kubeshark/kubeshark/releases
+  - https://kubeshark.com/pricing
+  needs_review: false
 - id: kubesolo
   name: KubeSolo
   summary: Native macOS application to run a local Kubernetes cluster.
@@ -2999,8 +3013,11 @@
   needs_review: false
 - id: kubetail
   name: Kubetail
-  summary: Kubernetes log exploration and tailing tool.
-  official_url: https://www.kubetail.com
+  summary: Apache-licensed real-time Kubernetes logging dashboard for terminal, local web, container, and in-cluster use.
+  official_url: https://www.kubetail.com/
+  repository_url: https://github.com/kubetail-org/kubetail
+  repository_archived: false
+  documentation_url: https://docs.kubetail.com/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -3012,18 +3029,32 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You need real-time logs across multi-container Kubernetes workloads without first forwarding logs to an external service.
+  avoid_when:
+  - You require durable historical retention, centralized indexing, or analytics beyond live cluster log exploration.
+  deployment_models:
+  - local-cli
+  - local-web-application
+  - container
+  - kubernetes
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:devopstools_final.md#L509
-  needs_review: true
+  - https://github.com/kubetail-org/kubetail
+  - https://github.com/kubetail-org/kubetail/blob/main/LICENSE
+  - https://github.com/kubetail-org/kubetail/releases
+  - https://docs.kubetail.com/
+  - https://docs.kubetail.com/concepts/architecture
+  - https://docs.kubetail.com/guides/cluster/installation
+  needs_review: false
 - id: kubetui
   name: KubeTUI
   summary: Terminal UI for Kubernetes clusters.

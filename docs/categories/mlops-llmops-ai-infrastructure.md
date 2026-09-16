@@ -902,20 +902,20 @@ LLM observability and analytics; OSS self-hosted core with commercial cloud offe
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Framework for building reliable stateful AI agents and multi-step workflows.
+MIT-licensed orchestration framework and runtime for building stateful, long-running agents.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need durable execution, state, human-in-the-loop control, or branching workflows for long-running agents.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- A simple request-response agent is sufficient or you need a managed deployment product rather than an orchestration library.
 
-[Official site](https://www.langchain.com/langgraph)
+[Official site](https://www.langchain.com/langgraph) · [Documentation](https://docs.langchain.com/oss/python/langgraph/overview) · [Source repository](https://github.com/langchain-ai/langgraph)
 
 ### LangSmith
 
@@ -1415,20 +1415,20 @@ Self-hosted agent workspace with sandboxed browser and shell sessions, routines,
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Distributed compute framework for scaling ML, AI, and Python workloads.
+Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need to scale Python or AI workloads from one machine to a distributed cluster while retaining a common programming model.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- A single process or conventional batch system meets the workload without Ray's distributed runtime and cluster operations.
 
-[Official site](https://www.ray.io)
+[Official site](https://www.ray.io/) · [Documentation](https://docs.ray.io/en/latest/) · [Source repository](https://github.com/ray-project/ray)
 
 ### reShapr
 

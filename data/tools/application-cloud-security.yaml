@@ -3044,8 +3044,11 @@
   needs_review: true
 - id: netbird
   name: NetBird
-  summary: Zero-trust networking platform built on WireGuard.
-  official_url: https://netbird.io
+  summary: Open-core WireGuard-based zero-trust networking platform with community self-hosting, managed cloud, and licensed enterprise options.
+  official_url: https://netbird.io/
+  repository_url: https://github.com/netbirdio/netbird
+  repository_archived: false
+  documentation_url: https://docs.netbird.io/
   categories:
   - application-cloud-security
   subcategories:
@@ -3056,18 +3059,35 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You need identity-aware WireGuard networking with a choice of community self-hosting or a managed control plane.
+  avoid_when:
+  - You require high availability, SCIM, or traffic-flow logging in a self-hosted deployment but cannot use the commercial enterprise edition.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  - enterprise-self-hosted
+  - endpoint-agent
+  license_model: open-core
+  license_spdx: BSD-3-Clause AND AGPL-3.0-only
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:devopstools_final.md#L957
-  needs_review: true
+  - https://docs.netbird.io/about-netbird/self-hosted-vs-cloud
+  - https://github.com/netbirdio/netbird
+  - https://github.com/netbirdio/netbird/blob/main/LICENSE
+  - https://github.com/netbirdio/netbird/blob/main/management/LICENSE
+  - https://github.com/netbirdio/dashboard
+  - https://github.com/netbirdio/dashboard/blob/main/LICENSE
+  - https://docs.netbird.io/selfhosted/enterprise
+  - https://netbird.io/pricing
+  - https://github.com/netbirdio/netbird/releases
+  needs_review: false
 - id: netexec
   name: NetExec
   summary: Network service assessment framework for authorized Windows and directory security operations.

@@ -1895,10 +1895,10 @@ Security risk analysis for Kubernetes YAML.
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Kubernetes traffic analyzer.
+Kubernetes network observability platform for packet capture, protocol analysis, dashboards, and MCP-based investigation.
 
 **Use when**
 
@@ -1906,9 +1906,9 @@ Kubernetes traffic analyzer.
 
 **Consider alternatives when**
 
-- You already have a service mesh with built-in observability (Linkerd/Istio).
+- You cannot permit cluster-wide packet capture or privileged eBPF components, or cannot accommodate edition capacity limits.
 
-[Official site](https://kubeshark.co)
+[Official site](https://kubeshark.com/) · [Documentation](https://docs.kubeshark.com/) · [Source repository](https://github.com/kubeshark/kubeshark)
 
 ### KubeSolo
 
@@ -2009,20 +2009,20 @@ Command-line context switcher for Kubernetes operators managing multiple cluster
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Kubernetes log exploration and tailing tool.
+Apache-licensed real-time Kubernetes logging dashboard for terminal, local web, container, and in-cluster use.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need real-time logs across multi-container Kubernetes workloads without first forwarding logs to an external service.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require durable historical retention, centralized indexing, or analytics beyond live cluster log exploration.
 
-[Official site](https://www.kubetail.com)
+[Official site](https://www.kubetail.com/) · [Documentation](https://docs.kubetail.com/) · [Source repository](https://github.com/kubetail-org/kubetail)
 
 ### KubeTUI
 
