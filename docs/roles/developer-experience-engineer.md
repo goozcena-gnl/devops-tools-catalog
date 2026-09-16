@@ -157,7 +157,6 @@
 | [Open Interpreter](https://openinterpreter.com) | Developer experience and local environments | oss | needs-review |
 | [OpenCode](https://opencode.ai) | Developer experience and local environments | oss | needs-review |
 | [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | oss | active |
-| [OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | unknown | needs-review |
 | [OpenWiki](https://github.com/langchain-ai/openwiki) | Developer experience and local environments | oss | needs-review |
 | [OpsLevel](https://www.opslevel.com) | Platform engineering and internal developer platforms | commercial | active |
 | [Paseo](https://paseo.sh/) | Developer experience and local environments | oss | active |
@@ -175,6 +174,7 @@
 | [QuantumByte](https://github.com/QuantumByteOSS/quantumbyte) | Developer experience and local environments | oss | needs-review |
 | [Railway](https://railway.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | commercial | active |
 | [RamaLama](https://ramalama.ai) | Developer experience and local environments | oss | needs-review |
+| [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | commercial | active |
 | [Review Flow](https://dgouron.github.io/review-flow) | CI, build and testing | oss | needs-review |
 | [RTK AI](https://www.rtk-ai.app) | Developer experience and local environments | unknown | needs-review |
 | [Ruff](https://docs.astral.sh/ruff) | Developer experience and local environments | oss | needs-review |

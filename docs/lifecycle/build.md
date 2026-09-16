@@ -186,7 +186,6 @@
 - [OpenDepot](https://tonedefdev.github.io/opendepot/) — Kubernetes-native registry for publishing and consuming OpenTofu and Terraform providers and modules.
 - [OpenDev](https://opendev.org/) — Public collaborative infrastructure service providing Git hosting, code review, CI, and related services for open-source projects.
 - [OpenFaaS](https://www.openfaas.com) — Functions-as-a-Service framework for Kubernetes; OSS core with commercial Pro features.
-- [OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) — Tekton-based CI/CD experience packaged and supported for OpenShift clusters (built on OSS Tekton).
 - [OpenTaco](https://opentaco.dev) — Terraform/OpenTofu CI orchestration and pull-request automation.
 - [OpenTofu](https://opentofu.org) — Open-source Terraform fork.
 - [ORAS](https://oras.land) — OCI registry client/library (store artifacts in registries).
@@ -210,6 +209,7 @@
 - [Quay](https://quay.io) — Container registry for building, storing, and distributing images.
 - [Rakazo](https://rakazo.com/) — Self-hosted agent workspace with sandboxed browser and shell sessions, routines, approvals, and audit history.
 - [Ray](https://www.ray.io/) — Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
+- [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) — Red Hat-supported, Operator-delivered CI/CD distribution for OpenShift built from Tekton components and included with an OpenShift subscription.
 - [reShapr](https://reshapr.io) — No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MCP endpoints with security controls and flexible deployment (Apache-2.0).
 - [Review Flow](https://dgouron.github.io/review-flow) — GitHub pull request review workflow visualization and management tool.
 - [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) — Mobile app testing on a wide range of real devices.

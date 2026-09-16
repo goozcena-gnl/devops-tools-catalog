@@ -402,7 +402,7 @@
 - [MLflow](https://mlflow.org) — Platform for managing ML lifecycles.
 - [MOCO](https://cybozu-go.github.io/moco) — MySQL Operator for Kubernetes by Cybozu.
 - [Model Express](https://github.com/ai-dynamo/modelexpress) — Rust service that stages model data near inference systems to reduce startup time.
-- [MongoDB](https://www.mongodb.com) — Modern document database and developer data platform.
+- [MongoDB](https://www.mongodb.com/) — Document database server whose Community Edition source uses SSPL, with separate commercial Enterprise Advanced and managed Atlas offerings.
 - [Morpheus Data](https://morpheusdata.com) — Hybrid cloud management platform.
 - [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) — CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods.
 - [MySQL](https://www.mysql.com) — Relational database server with transactional storage, replication, and a large application ecosystem.
@@ -413,7 +413,7 @@
 - [Netlify](https://www.netlify.com/) — Managed web application platform for Git- and API-driven deployment, previews, functions, and global delivery.
 - [Nextcloud](https://nextcloud.com/) — Self-hosted collaboration platform for files, groupware, communication, and extensible applications.
 - [NGINX](https://nginx.org) — Web server, reverse proxy, load balancer, and HTTP cache.
-- [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) — F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS traffic to cluster services.
+- [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) — F5-maintained Kubernetes ingress controller that runs with NGINX Open Source or subscription-licensed NGINX Plus.
 - [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) — NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
 - [Nocalhost](https://nocalhost.dev) — Cloud-native app development tool.
 - [Nomad](https://www.nomadproject.io) — HashiCorp scheduler.
@@ -438,7 +438,7 @@
 - [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) — OpenStack service for provisioning and managing container orchestration clusters through OpenStack APIs.
 - [OpenTaco](https://opentaco.dev) — Terraform/OpenTofu CI orchestration and pull-request automation.
 - [OpenTofu](https://opentofu.org) — Open-source Terraform fork.
-- [OperatorHub](https://operatorhub.io) — Community catalog for discovering, installing, and publishing Kubernetes Operators.
+- [OperatorHub.io](https://operatorhub.io/) — Community-operated web portal and OLM catalog for discovering and publishing independently licensed Kubernetes Operators.
 - [OPNsense](https://opnsense.org/opnsense/) — FreeBSD-based open-source firewall and routing platform for network security gateways.
 - [OpsLevel](https://www.opslevel.com) — SaaS internal developer portal and service catalog (scorecards, ownership, maturity).
 - [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) — Cloud services by Oracle.
@@ -489,7 +489,7 @@
 - [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) — Run and manage k3s clusters via Kubernetes (see docs).
 - [Ray](https://www.ray.io/) — Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
 - [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) — Enterprise automation platform built around Ansible.
-- [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) — Enterprise Kubernetes platform (commercial); upstream community distribution is OKD.
+- [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) — Commercial Red Hat application-platform family with self-managed editions and managed cloud services; OKD is a separate upstream community distribution.
 - [Redis](https://redis.io) — In-memory data structure store, used as a database, cache, and message broker. **Licensing varies by version:** Redis ≤7.2 uses BSD (OSS); Redis CE 7.4–7.8 uses RSAL/SSPL (source-available); Redis 8+ uses tri-license (AGPL option available).
 - [Redis Operator](https://redis-operator.opstree.dev) — Kubernetes operator for provisioning and managing Redis clusters.
 - [Reloader](https://docs.stakater.com/reloader/latest) — Kubernetes controller that watches ConfigMap/Secret changes and triggers rolling upgrades.

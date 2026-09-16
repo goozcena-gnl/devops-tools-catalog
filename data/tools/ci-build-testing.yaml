@@ -1729,9 +1729,12 @@
   - legacy:devopstools_final.md#L335
   needs_review: true
 - id: openshift-pipelines
-  name: OpenShift Pipelines
-  summary: Tekton-based CI/CD experience packaged and supported for OpenShift clusters (built on OSS Tekton).
+  name: Red Hat OpenShift Pipelines
+  summary: Red Hat-supported, Operator-delivered CI/CD distribution for OpenShift built from Tekton components and included with an OpenShift subscription.
   official_url: https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines
+  repository_url: https://github.com/openshift-pipelines/operator
+  repository_archived: false
+  documentation_url: https://docs.redhat.com/en/documentation/red_hat_openshift_pipelines/latest/
   categories:
   - ci-build-testing
   subcategories:
@@ -1744,20 +1747,31 @@
   - build
   - test
   use_when:
-  - '* You run OpenShift and want integrated, supported Tekton pipelines.'
+  - You run supported Red Hat OpenShift and want its curated, integrated Tekton distribution and Operator lifecycle.
   avoid_when:
-  - '* You''re not on OpenShift; use plain Tekton instead.'
-  deployment_models: []
-  license_model: unknown
+  - You need an upstream, vendor-neutral Tekton installation for Kubernetes outside the Red Hat OpenShift subscription boundary.
+  deployment_models:
+  - kubernetes
+  - kubernetes-operator
+  - enterprise-self-hosted
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L56
   - legacy:devopstools_final.md#L337
-  needs_review: true
+  - https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines
+  - https://docs.redhat.com/en/documentation/red_hat_openshift_pipelines/latest/html-single/installing_and_configuring/index
+  - https://catalog.redhat.com/software/container-stacks/detail/5ec54a4628834587a6b85ca5
+  - https://catalog.redhat.com/en/software/containers/openshift-pipelines/pipelines-rhel8-operator/604b434b122bd89307e017a2
+  - https://github.com/openshift-pipelines/operator
+  - https://github.com/tektoncd/pipeline
+  - https://github.com/tektoncd/pipeline/blob/main/LICENSE
+  needs_review: false
 - id: playwright
   name: Playwright
   summary: End-to-end testing for web apps.

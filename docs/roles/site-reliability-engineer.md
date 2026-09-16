@@ -302,7 +302,7 @@
 | [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [NetWatch Labs](https://www.netwatchlabs.com) | SRE, incident response and on-call | oss | needs-review |
 | [New Relic](https://newrelic.com/platform) | Monitoring, metrics, logs and tracing | commercial | active |
-| [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) | Kubernetes networking, storage and add-ons | open-core | active |
 | [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nocalhost](https://nocalhost.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) | Monitoring, metrics, logs and tracing | oss | active |
@@ -321,7 +321,7 @@
 | [OpenTelemetry](https://github.com/open-telemetry) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | documentation | needs-review |
-| [OperatorHub](https://operatorhub.io) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [OperatorHub.io](https://operatorhub.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Orbit](https://gitlab.com/RMJx1/orbit) | Kubernetes distributions and operations | oss | needs-review |
 | [osquery](https://osquery.io/) | Application and cloud security, Monitoring, metrics, logs and tracing | oss | active |
 | [otel-gui](https://github.com/metafab/otel-gui) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -347,7 +347,7 @@
 | [Rancher](https://rancher.com) | Kubernetes distributions and operations | open-core | needs-review |
 | [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | needs-review |
 | [Rclone](https://rclone.org/) | Backup, disaster recovery and resilience | oss | active |
-| [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | unknown | needs-review |
+| [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | commercial | active |
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |

@@ -3032,9 +3032,11 @@
   needs_review: true
 - id: nginx-ingress-controller
   name: NGINX Ingress Controller
-  summary: F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS traffic to cluster
-    services.
-  official_url: https://docs.nginx.com/nginx-ingress-controller
+  summary: F5-maintained Kubernetes ingress controller that runs with NGINX Open Source or subscription-licensed NGINX Plus.
+  official_url: https://docs.nginx.com/nginx-ingress-controller/
+  repository_url: https://github.com/nginx/kubernetes-ingress
+  repository_archived: false
+  documentation_url: https://docs.nginx.com/nginx-ingress-controller/
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -3046,18 +3048,32 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You want F5's Kubernetes ingress implementation with NGINX configuration resources and an optional NGINX Plus data plane.
+  avoid_when:
+  - You intend to use the separate Kubernetes community ingress-nginx project or cannot accept NGINX Plus subscription requirements for commercial features.
+  deployment_models:
+  - kubernetes
+  - helm
+  - kubernetes-operator
+  license_model: open-core
+  license_spdx: Apache-2.0
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:devopstools_final.md#L613
-  needs_review: true
+  - https://github.com/nginx/kubernetes-ingress
+  - https://github.com/nginx/kubernetes-ingress/blob/main/LICENSE
+  - https://github.com/nginx/kubernetes-ingress/releases
+  - https://docs.nginx.com/nginx-ingress-controller/overview/about/
+  - https://docs.nginx.com/nginx-ingress-controller/install/migrate-ingress-nginx/
+  - https://docs.nginx.com/nginx-ingress-controller/overview/nginx-plus/
+  - https://docs.nginx.com/nginx-ingress-controller/install/license-secret/
+  needs_review: false
 - id: nocalhost
   name: Nocalhost
   summary: Cloud-native app development tool.
@@ -3180,9 +3196,12 @@
   - legacy:devopstools_final.md#L617
   needs_review: true
 - id: operatorhub
-  name: OperatorHub
-  summary: Community catalog for discovering, installing, and publishing Kubernetes Operators.
-  official_url: https://operatorhub.io
+  name: OperatorHub.io
+  summary: Community-operated web portal and OLM catalog for discovering and publishing independently licensed Kubernetes Operators.
+  official_url: https://operatorhub.io/
+  repository_url: https://github.com/k8s-operatorhub/operatorhub.io
+  repository_archived: false
+  documentation_url: https://operatorhub.io/about
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -3194,18 +3213,30 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You want to discover community Operators or consume the OperatorHub.io catalog through Operator Lifecycle Manager.
+  avoid_when:
+  - You require Red Hat-certified or supported Operators, or need one licence and support policy to apply to every listed Operator.
+  deployment_models:
+  - hosted-web-service
+  - kubernetes-catalog
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:devopstools_final.md#L615
-  needs_review: true
+  - https://operatorhub.io/about
+  - https://github.com/k8s-operatorhub/operatorhub.io
+  - https://github.com/k8s-operatorhub/operatorhub.io/blob/main/LICENSE
+  - https://github.com/k8s-operatorhub/community-operators
+  - https://github.com/k8s-operatorhub/community-operators/blob/main/LICENSE
+  - https://github.com/operator-framework/operator-lifecycle-manager
+  needs_review: false
 - id: ovn-kubernetes
   name: OVN-Kubernetes
   summary: Networking for Kubernetes using OVN.

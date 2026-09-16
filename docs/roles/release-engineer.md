@@ -119,7 +119,6 @@
 | [OneDev](https://onedev.io) | CI, build and testing | oss | needs-review |
 | [OpenDev](https://opendev.org/) | Source control and repository management, CI, build and testing | free-saas | active |
 | [OpenFeature](https://github.com/open-feature) | CD, GitOps, release and promotion | oss | needs-review |
-| [OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | unknown | needs-review |
 | [ORAS](https://oras.land) | Artifact and package management | oss | needs-review |
 | [Piku](https://piku.github.io) | CD, GitOps, release and promotion | oss | active |
 | [Playwright](https://playwright.dev) | CI, build and testing | oss | needs-review |
@@ -133,6 +132,7 @@
 | [pytest-cov](https://github.com/pytest-dev/pytest-cov) | CI, build and testing | oss | needs-review |
 | [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | unknown | needs-review |
 | [Quay](https://quay.io) | Artifact and package management | open-core | needs-review |
+| [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | commercial | active |
 | [Renovate](https://www.mend.io/renovate) | CD, GitOps, release and promotion | oss | needs-review |
 | [Review Flow](https://dgouron.github.io/review-flow) | CI, build and testing | oss | needs-review |
 | [RustSec Advisory Database](https://rustsec.org/) | Software supply-chain security | documentation | active |

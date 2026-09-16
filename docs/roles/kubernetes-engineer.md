@@ -243,7 +243,7 @@
 | [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) | Kubernetes networking, storage and add-ons | open-core | active |
 | [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nix](https://nixos.org) | Containers and image tooling | oss | needs-review |
 | [Nocalhost](https://nocalhost.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -254,7 +254,7 @@
 | [OpenKruise Agents](https://github.com/openkruise/agents) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | needs-review |
 | [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) | Kubernetes distributions and operations, Cloud platforms and cloud management | oss | active |
-| [OperatorHub](https://operatorhub.io) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [OperatorHub.io](https://operatorhub.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Oracle Kubernetes Engine](https://www.oracle.com/cloud/cloud-native/kubernetes-engine/) | Kubernetes distributions and operations | commercial | active |
 | [Orbit](https://gitlab.com/RMJx1/orbit) | Kubernetes distributions and operations | oss | needs-review |
 | [OVN-Kubernetes](https://ovn-kubernetes.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -270,7 +270,7 @@
 | [Radar](https://radarhq.io/) | Kubernetes distributions and operations | oss | active |
 | [Rancher](https://rancher.com) | Kubernetes distributions and operations | open-core | needs-review |
 | [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | needs-review |
-| [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | unknown | needs-review |
+| [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | commercial | active |
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |

@@ -1904,20 +1904,20 @@ Web server, reverse proxy, load balancer, and HTTP cache.
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS traffic to cluster services.
+F5-maintained Kubernetes ingress controller that runs with NGINX Open Source or subscription-licensed NGINX Plus.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want F5's Kubernetes ingress implementation with NGINX configuration resources and an optional NGINX Plus data plane.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You intend to use the separate Kubernetes community ingress-nginx project or cannot accept NGINX Plus subscription requirements for commercial features.
 
-[Official site](https://docs.nginx.com/nginx-ingress-controller)
+[Official site](https://docs.nginx.com/nginx-ingress-controller/) · [Documentation](https://docs.nginx.com/nginx-ingress-controller/) · [Source repository](https://github.com/nginx/kubernetes-ingress)
 
 ### nginx-gateway-fabric
 
@@ -2014,24 +2014,24 @@ Kubernetes sandboxing and operator patterns for running and managing AI agent wo
 
 [Source repository](https://github.com/openkruise/agents)
 
-### OperatorHub
+### OperatorHub.io
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Community catalog for discovering, installing, and publishing Kubernetes Operators.
+Community-operated web portal and OLM catalog for discovering and publishing independently licensed Kubernetes Operators.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want to discover community Operators or consume the OperatorHub.io catalog through Operator Lifecycle Manager.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require Red Hat-certified or supported Operators, or need one licence and support policy to apply to every listed Operator.
 
-[Official site](https://operatorhub.io)
+[Official site](https://operatorhub.io/) · [Documentation](https://operatorhub.io/about) · [Source repository](https://github.com/k8s-operatorhub/operatorhub.io)
 
 ### OVN-Kubernetes
 

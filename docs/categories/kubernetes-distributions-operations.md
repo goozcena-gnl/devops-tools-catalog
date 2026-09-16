@@ -2579,20 +2579,20 @@ Run and manage k3s clusters via Kubernetes (see docs).
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Enterprise Kubernetes platform (commercial); upstream community distribution is OKD.
+Commercial Red Hat application-platform family with self-managed editions and managed cloud services; OKD is a separate upstream community distribution.
 
 **Use when**
 
-- You need enterprise-grade Kubernetes with integrated CI/CD, monitoring, and Red Hat support.
+- You need a supported enterprise application platform across self-managed hybrid infrastructure or Red Hat-managed cloud services.
 
 **Consider alternatives when**
 
-- The licensing cost isn't justified or upstream Kubernetes with open-source tooling meets your needs.
+- You want the separate community OKD distribution or require one upstream repository licence to govern the complete supported product family.
 
-[Official site](https://www.redhat.com/en/technologies/cloud-computing/openshift)
+[Official site](https://www.redhat.com/en/technologies/cloud-computing/openshift) · [Documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/)
 
 ### RKE2
 
