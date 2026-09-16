@@ -1331,15 +1331,20 @@
   - You prefer scripted automation over interactive sessions.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L30
   - legacy:devopstools_final.md#L471
-  needs_review: true
+  - https://k9scli.io/
+  - https://github.com/derailed/k9s
+  - https://github.com/derailed/k9s/blob/master/LICENSE
+  - https://github.com/derailed/k9s/releases/tag/v0.51.0
+  needs_review: false
 - id: k9sight
   name: k9sight
   summary: Keyboard-driven TUI for debugging Kubernetes workloads and resources.
@@ -1526,15 +1531,20 @@
   - You need GPU passthrough or persistent local development environments.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L6
   - legacy:devopstools_final.md#L435
-  needs_review: true
+  - https://kind.sigs.k8s.io/
+  - https://github.com/kubernetes-sigs/kind
+  - https://github.com/kubernetes-sigs/kind/blob/main/LICENSE
+  - https://github.com/kubernetes-sigs/kind/releases/tag/v0.33.0
+  needs_review: false
 - id: kogaro
   name: Kogaro
   summary: Kubernetes configuration hygiene agent that catches silent failures and misconfigurations before
@@ -1585,15 +1595,20 @@
   - You're building Kubernetes-native apps from scratch—write proper manifests/Helm charts instead.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L34
   - legacy:devopstools_final.md#L478
-  needs_review: true
+  - https://kompose.io/
+  - https://github.com/kubernetes/kompose
+  - https://github.com/kubernetes/kompose/blob/main/LICENSE
+  - https://github.com/kubernetes/kompose/releases/tag/v1.38.0
+  needs_review: false
 - id: kontroler
   name: Kontroler
   summary: Experimental open-source Kubernetes-native DAG scheduler with controller, API server, and optional web UI components.
@@ -1699,15 +1714,20 @@
   - You only use one or two plugins and can install them directly.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L35
   - legacy:devopstools_final.md#L480
-  needs_review: true
+  - https://krew.sigs.k8s.io/
+  - https://github.com/kubernetes-sigs/krew
+  - https://github.com/kubernetes-sigs/krew/blob/master/LICENSE
+  - https://github.com/kubernetes-sigs/krew/releases/tag/v0.5.0
+  needs_review: false
 - id: kuba
   name: kuba
   summary: Fuzzy, multi-cluster kubectl companion for faster day-to-day Kubernetes operations.
@@ -3401,15 +3421,20 @@
   - You need multi-node testing (use kind) or production-like environments.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L14
   - legacy:devopstools_final.md#L443
-  needs_review: true
+  - https://minikube.sigs.k8s.io/docs/
+  - https://github.com/kubernetes/minikube
+  - https://github.com/kubernetes/minikube/blob/master/LICENSE
+  - https://github.com/kubernetes/minikube/releases/tag/v1.39.0
+  needs_review: false
 - id: nomad
   name: Nomad
   summary: HashiCorp scheduler.

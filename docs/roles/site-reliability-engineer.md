@@ -179,7 +179,7 @@
 | [k8sql](https://github.com/ndenev/k8sql) | Kubernetes distributions and operations | oss | needs-review |
 | [K8Studio](https://k8studio.io/) | Kubernetes distributions and operations | commercial | active |
 | [K8up](https://k8up.io/) | Backup, disaster recovery and resilience, Kubernetes networking, storage and add-ons | oss | active |
-| [K9s](https://k9scli.io) | Kubernetes distributions and operations | oss | needs-review |
+| [K9s](https://k9scli.io) | Kubernetes distributions and operations | oss | active |
 | [k9sight](https://github.com/doganarif/k9sight) | Kubernetes distributions and operations | oss | needs-review |
 | [Kagent](https://kagent.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
@@ -192,10 +192,10 @@
 | [KGateway](https://kgateway.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file) | Kubernetes distributions and operations | oss | needs-review |
 | [kimspect](https://github.com/koithos/kimspect) | Kubernetes distributions and operations | oss | needs-review |
-| [kind](https://kind.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [kind](https://kind.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Kogaro](https://github.com/topiaruss/kogaro) | Kubernetes distributions and operations | oss | needs-review |
 | [Komodor](https://komodor.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [Kompose](https://kompose.io) | Kubernetes distributions and operations | oss | needs-review |
+| [Kompose](https://kompose.io) | Kubernetes distributions and operations | oss | active |
 | [Kong Gateway](https://developer.konghq.com/gateway/install/) | Kubernetes networking, storage and add-ons | open-core | active |
 | [Kontroler](https://www.kontroler.dev/) | Kubernetes distributions and operations | oss | active |
 | [Kor](https://github.com/yonahd/kor) | Kubernetes distributions and operations | oss | needs-review |
@@ -203,7 +203,7 @@
 | [Krateo Core Provider](https://github.com/krateoplatformops/core-provider) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Krateo OASGen Provider](https://docs.krateo.io/key-concepts/kog/oasgen-provider) | Kubernetes networking, storage and add-ons | documentation | needs-review |
 | [Kratix](https://www.kratix.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [krew](https://krew.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [krew](https://krew.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [kro](https://kro.run/) | Kubernetes networking, storage and add-ons | oss | active |
 | [kroc](https://github.com/pawelcit/kroc) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -290,7 +290,7 @@
 | [MetalLB](https://metallb.universe.tf) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [MicroK8s](https://microk8s.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Minikube](https://minikube.sigs.k8s.io/docs) | Kubernetes distributions and operations | oss | needs-review |
+| [Minikube](https://minikube.sigs.k8s.io/docs) | Kubernetes distributions and operations | oss | active |
 | [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Moogsoft](https://www.moogsoft.com) | SRE, incident response and on-call | unknown | needs-review |
 | [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | needs-review |

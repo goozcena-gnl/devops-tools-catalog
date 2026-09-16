@@ -904,7 +904,7 @@ Commercial, agent-free desktop Kubernetes IDE for local multi-cluster operations
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Terminal UI to manage Kubernetes clusters.
 
@@ -1037,7 +1037,7 @@ Inspect container images used by pods, nodes, namespaces, and registries from th
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes IN Docker - local clusters for testing.
 
@@ -1075,7 +1075,7 @@ Kubernetes configuration hygiene agent that catches silent failures and misconfi
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Convert Docker Compose to Kubernetes.
 
@@ -1151,7 +1151,7 @@ CLI for discovering unused and orphaned Kubernetes resources.
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 `kubectl` plugin manager.
 
@@ -2314,7 +2314,7 @@ Lightweight Kubernetes by Canonical.
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Local Kubernetes development environment.
 
