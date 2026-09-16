@@ -245,6 +245,7 @@
 | [Hybernate](https://okedeji.io/hybernate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [IBM Cloud](https://www.ibm.com/products/cloud) | Cloud platforms and cloud management | commercial | active |
 | [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
+| [IBM Kubecost](https://www.kubecost.com/) | FinOps and sustainability | open-core | active |
 | [IBM Turbonomic Cloud Optimization](https://www.ibm.com/products/turbonomic/cloud-optimization) | FinOps and sustainability | commercial | active |
 | [IcePanel](https://icepanel.io) | Emerging and experimental tools | unknown | needs-review |
 | [Informatica](https://www.informatica.com) | Emerging and experimental tools | unknown | needs-review |
@@ -330,7 +331,6 @@
 | [KubeCM](https://kubecm.cloud/) | Kubernetes distributions and operations | oss | active |
 | [kubeCodex](https://github.com/TheCodingSheikh/kubecodex) | Documentation, learning and career resources | documentation | needs-review |
 | [kubeconform](https://github.com/yannh/kubeconform) | Kubernetes distributions and operations | oss | needs-review |
-| [Kubecost (Apptio)](https://www.apptio.com/products/kubecost) | FinOps and sustainability | open-core | needs-review |
 | [kubectl](https://kubernetes.io/docs/reference/kubectl) | Kubernetes distributions and operations | oss | needs-review |
 | [kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference) | Kubernetes distributions and operations | documentation | needs-review |
 | [kubectl-ai](https://github.com/GoogleCloudPlatform/kubectl-ai) | Kubernetes distributions and operations | oss | needs-review |
@@ -380,7 +380,7 @@
 | [KubeView](https://github.com/benc-uk/kubeview) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubevious](https://kubevious.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Kubex](https://kubex.ai) | FinOps and sustainability | unknown | needs-review |
+| [Kubex](https://kubex.ai/) | FinOps and sustainability | commercial | active |
 | [Kubey](https://kubey.app) | Kubernetes distributions and operations | oss | needs-review |
 | [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | active |
 | [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
@@ -442,7 +442,7 @@
 | [Nocalhost](https://nocalhost.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nomad](https://www.nomadproject.io) | Kubernetes distributions and operations | source-available | needs-review |
 | [nOps](https://www.nops.io) | Emerging and experimental tools | unknown | needs-review |
-| [Nutanix Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | unknown | needs-review |
+| [Nutanix Cloud Manager Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | commercial | active |
 | [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Ocelot](https://ocelot.readthedocs.io/en/latest/) | Kubernetes networking, storage and add-ons | oss | active |
@@ -481,7 +481,7 @@
 | [Piku](https://piku.github.io) | CD, GitOps, release and promotion | oss | active |
 | [Pluralith](https://www.pluralith.com) | Infrastructure as Code | unknown | needs-review |
 | [Pluto](https://github.com/FairwindsOps/pluto) | Kubernetes distributions and operations | oss | active |
-| [PointFive](https://www.pointfive.co) | FinOps and sustainability | unknown | needs-review |
+| [PointFive](https://www.pointfive.co/) | FinOps and sustainability | commercial | active |
 | [Polykube](https://github.com/Kismet-Engineering/polykube) | Kubernetes distributions and operations | oss | active |
 | [Popeye](https://popeyecli.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Port](https://www.port.io/) | Platform engineering and internal developer platforms | commercial | active |
@@ -493,7 +493,7 @@
 | [Project Contour](https://projectcontour.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Promptfoo](https://www.promptfoo.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [ProsperOps](https://www.prosperops.com) | FinOps and sustainability | unknown | needs-review |
+| [ProsperOps](https://www.prosperops.com/) | FinOps and sustainability | commercial | active |
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
 | [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | unknown | needs-review |

@@ -233,6 +233,25 @@ Enterprise FinOps and cloud cost management platform for multi-cloud visibility,
 
 [Official site](https://www.apptio.com/products/cloudability/)
 
+### IBM Kubecost
+
+**Categories:** FinOps and sustainability<br>
+**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Open Core<br>
+**Status:** Active
+
+IBM-owned Kubernetes cost monitoring and optimization platform with free community, self-hosted enterprise, and cloud service offerings built around OpenCost.
+
+**Use when**
+
+- Granular K8s cost allocation per namespace/deployment with savings recommendations.
+
+**Consider alternatives when**
+
+- OpenCost's free capabilities already cover your needs.
+
+[Official site](https://www.kubecost.com/) · [Documentation](https://www.ibm.com/docs/en/kubecost/self-hosted/3.x)
+
 ### IBM Turbonomic Cloud Optimization
 
 **Categories:** FinOps and sustainability<br>
@@ -290,25 +309,6 @@ Commercial self-hosted FinOps platform combining cost visibility and optimizatio
 
 [Official site](https://kion.io/platform/)
 
-### Kubecost (Apptio)
-
-**Categories:** FinOps and sustainability<br>
-**Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review
-
-Commercial Kubernetes cost monitoring/optimization product built around OpenCost.
-
-**Use when**
-
-- Granular K8s cost allocation per namespace/deployment with savings recommendations.
-
-**Consider alternatives when**
-
-- OpenCost's free capabilities already cover your needs.
-
-[Official site](https://www.apptio.com/products/kubecost)
-
 ### KubeElasti
 
 **Categories:** Kubernetes networking, storage and add-ons, FinOps and sustainability, Emerging and experimental tools<br>
@@ -351,20 +351,20 @@ Calculator for estimating Kubernetes node counts and cluster capacity from workl
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 AI-driven Kubernetes and GPU resource optimization platform for pod scaling, node tuning, and capacity efficiency.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want policy-controlled recommendations or automation for Kubernetes pod, node, GPU, and cloud resource optimization.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require an open-source or wholly self-hosted optimization control plane and cannot deploy Kubex's controller into managed clusters.
 
-[Official site](https://kubex.ai)
+[Official site](https://kubex.ai/) · [Documentation](https://docs.kubex.ai/)
 
 ### Learnkube Kubernetes Instance Calculator
 
@@ -385,22 +385,22 @@ Calculator for choosing cost-effective cloud instance sizes for Kubernetes workl
 
 [Official site](https://learnkube.com/kubernetes-instance-calculator)
 
-### Nutanix Cost Governance
+### Nutanix Cloud Manager Cost Governance
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud cost governance.
+Commercial on-premises cost metering, chargeback, budgeting, and analytics capability within Nutanix Cloud Manager.
 
 **Use when**
 
-- Nutanix hybrid cloud customers needing unified cost views.
+- You need on-premises cost metering, chargeback, budgeting, and analytics for Nutanix infrastructure without a SaaS dependency.
 
 **Consider alternatives when**
 
-- You're not in the Nutanix ecosystem.
+- You need a standalone SaaS FinOps service for public-cloud optimization or do not operate Nutanix infrastructure.
 
 [Official site](https://www.nutanix.com/products/cloud-manager/cost-governance)
 
@@ -427,39 +427,39 @@ CNCF incubating open standard and project for Kubernetes cost monitoring and all
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud cost optimization.
+Commercial agentless cloud and AI efficiency platform for detecting waste, attributing costs, and guiding or automating remediation.
 
 **Use when**
 
-- Automated waste detection and savings recommendations.
+- You want agentless, read-only cloud and Kubernetes cost analysis with engineering-focused remediation across cloud, data, and AI services.
 
 **Consider alternatives when**
 
-- Your cloud spend is small enough to manage manually.
+- You require an open-source or self-hosted FinOps platform, or your cloud spend is small enough to manage manually.
 
-[Official site](https://www.pointfive.co)
+[Official site](https://www.pointfive.co/)
 
 ### ProsperOps
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud savings automation.
+Flexera-owned SaaS platform that autonomously manages cloud commitment discounts and scheduled workload optimization across AWS, Azure, and Google Cloud.
 
 **Use when**
 
-- Autonomous RI/Savings Plan purchasing to maximize discount coverage.
+- You want autonomous commitment and rate optimization across AWS, Azure, and Google Cloud with savings-based pricing.
 
 **Consider alternatives when**
 
 - You want manual control over commitment purchases.
 
-[Official site](https://www.prosperops.com)
+[Official site](https://www.prosperops.com/) · [Documentation](https://help.prosperops.com/)
 
 ### Spot FinOps
 
