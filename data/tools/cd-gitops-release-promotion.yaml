@@ -605,8 +605,9 @@
   needs_review: true
 - id: netlify
   name: Netlify
-  summary: Modern web hosting and automation platform.
-  official_url: https://www.netlify.com
+  summary: Managed web application platform for Git- and API-driven deployment, previews, functions, and global delivery.
+  official_url: https://www.netlify.com/
+  documentation_url: https://docs.netlify.com/
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -619,21 +620,27 @@
   - release
   - deploy
   use_when:
-  - Static sites, Jamstack apps, and serverless functions with great DX (preview deploys, forms, edge
-    functions).
+  - You want managed web deployment with preview environments, a global delivery network, and serverless or edge functions.
   avoid_when:
-  - You need server-side rendering beyond what Netlify Functions supports or want to avoid vendor lock-in.
-  deployment_models: []
-  license_model: unknown
+  - You require a self-hosted application platform or need to minimize dependence on provider-specific build and runtime services.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:7_Development-Collaboration/README.md#L91
   - legacy:devopstools_final.md#L1135
-  needs_review: true
+  - https://www.netlify.com/
+  - https://docs.netlify.com/
+  - https://www.netlify.com/pricing/
+  - https://github.com/netlify/cli
+  - https://github.com/netlify/build
+  needs_review: false
 - id: openfeature
   name: OpenFeature
   summary: Open standard for feature flag management.

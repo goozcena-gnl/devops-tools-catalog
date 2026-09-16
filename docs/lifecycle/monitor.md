@@ -86,7 +86,7 @@
 - [Nagios](https://www.nagios.org) — Infrastructure monitoring (Nagios Core).
 - [Netdata Cloud](https://www.netdata.cloud) — SaaS control plane for Netdata (Netdata Agent is open-source; Cloud adds centralized management/collaboration).
 - [NetWatch Labs](https://www.netwatchlabs.com) — Collection of terminal-first network and system diagnostics tools for Linux operators.
-- [New Relic](https://github.com/newrelic) — Full-stack observability platform.
+- [New Relic](https://newrelic.com/platform) — Hosted observability platform for application, infrastructure, log, digital-experience, and AI telemetry.
 - [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) — Prometheus exporter that exposes hardware and operating-system metrics from Unix-like hosts.
 - [ntfy](https://ntfy.sh) — Simple pub-sub notifications (self-hostable).
 - [OpenObserve](https://openobserve.ai/) — Observability platform for logs, metrics, and traces with an open-source core and commercial enterprise offerings.
@@ -97,7 +97,7 @@
 - [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) — Zero-code eBPF-based instrumentation for collecting OpenTelemetry telemetry.
 - [osquery](https://osquery.io/) — Operating-system instrumentation framework that exposes host state through a SQL interface.
 - [otel-gui](https://github.com/metafab/otel-gui) — Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls, service maps, and correlated logs.
-- [PagerDuty](https://www.pagerduty.com) — Digital operations management and incident response.
+- [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) — Hosted operations platform for on-call management, incident response, and operational automation.
 - [Pandora FMS](https://pandorafms.com/community/pandora-fms-downloads) — Monitoring platform with community and enterprise editions.
 - [PatchMon](https://patchmon.net) — Patch management and monitoring platform.
 - [Prometheus](https://prometheus.io) — Monitoring and alerting toolkit.

@@ -1397,8 +1397,8 @@ Interactive Docker playground; open-source platform with hosted labs site.
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
 API development and testing platform.
 
@@ -1410,7 +1410,7 @@ API development and testing platform.
 
 - Your API tests should live in code/CI—consider scripted alternatives (curl, HTTPie, Bruno) to prevent test sprawl outside version control.
 
-[Official site](https://www.postman.com)
+[Official site](https://www.postman.com/product/) · [Documentation](https://learning.postman.com/docs/)
 
 ### Prettier
 

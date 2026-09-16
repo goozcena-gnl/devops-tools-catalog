@@ -445,8 +445,8 @@
 | [Neovim](https://neovim.io/) | Developer experience and local environments | oss | active |
 | [nerdctl](https://github.com/containerd/nerdctl) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | open-core | needs-review |
-| [Netlify](https://www.netlify.com) | CD, GitOps, release and promotion | unknown | needs-review |
-| [New Relic](https://github.com/newrelic) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |
+| [New Relic](https://newrelic.com/platform) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Nextcloud](https://nextcloud.com/) | Virtualization, bare metal and homelab | open-core | active |
 | [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) | Artifact and package management | open-core | needs-review |
 | [NGINX](https://nginx.org) | Kubernetes networking, storage and add-ons | open-core | active |
@@ -511,7 +511,7 @@
 | [Portainer](https://www.portainer.io) | Virtualization, bare metal and homelab | open-core | needs-review |
 | [Porter](https://github.com/porter-dev) | CD, GitOps, release and promotion | unknown | needs-review |
 | [PostgreSQL](https://www.postgresql.org) | Databases, caching and data infrastructure | oss | active |
-| [Postman](https://www.postman.com) | Developer experience and local environments | unknown | needs-review |
+| [Postman](https://www.postman.com/product/) | Developer experience and local environments | commercial | active |
 | [PowerShell](https://learn.microsoft.com/en-us/powershell/) | Foundations, Linux and scripting | oss | active |
 | [Prettier](https://prettier.io) | Developer experience and local environments | oss | needs-review |
 | [PrivateBin](https://privatebin.info) | Emerging and experimental tools | oss | needs-review |
@@ -592,7 +592,7 @@
 | [Site24x7](https://www.site24x7.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Skaffold](https://skaffold.dev) | Containers and image tooling | oss | needs-review |
 | [Skopeo](https://github.com/containers/skopeo) | Containers and image tooling | oss | needs-review |
-| [Slack](https://slack.com) | Workflow automation and ChatOps | unknown | needs-review |
+| [Slack](https://slack.com/) | Workflow automation and ChatOps | commercial | active |
 | [Snip](https://github.com/edouard-claude/snip) | Emerging and experimental tools | oss | needs-review |
 | [Snorlax](https://github.com/moonbeam-nyc/snorlax) | Emerging and experimental tools | oss | needs-review |
 | [Spacelift](https://spacelift.io) | Infrastructure as Code | unknown | needs-review |

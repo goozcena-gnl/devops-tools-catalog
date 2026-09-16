@@ -81,7 +81,7 @@
 | [Nagios](https://www.nagios.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [NetWatch Labs](https://www.netwatchlabs.com) | SRE, incident response and on-call | oss | needs-review |
-| [New Relic](https://github.com/newrelic) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [New Relic](https://newrelic.com/platform) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) | Monitoring, metrics, logs and tracing | oss | active |
 | [ntfy](https://ntfy.sh) | SRE, incident response and on-call | oss | needs-review |
 | [OpenObserve](https://openobserve.ai/) | Monitoring, metrics, logs and tracing | open-core | active |
@@ -90,7 +90,7 @@
 | [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [otel-gui](https://github.com/metafab/otel-gui) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [PagerDuty](https://www.pagerduty.com) | SRE, incident response and on-call | unknown | needs-review |
+| [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) | SRE, incident response and on-call | commercial | active |
 | [Pandora FMS](https://pandorafms.com/community/pandora-fms-downloads) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [PatchMon](https://patchmon.net) | SRE, incident response and on-call | unknown | needs-review |
 | [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |

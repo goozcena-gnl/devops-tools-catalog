@@ -535,7 +535,7 @@
 - [nerdctl](https://github.com/containerd/nerdctl) — Docker-compatible CLI for containerd.
 - [Netdata Cloud](https://www.netdata.cloud) — SaaS control plane for Netdata (Netdata Agent is open-source; Cloud adds centralized management/collaboration).
 - [NetWatch Labs](https://www.netwatchlabs.com) — Collection of terminal-first network and system diagnostics tools for Linux operators.
-- [New Relic](https://github.com/newrelic) — Full-stack observability platform.
+- [New Relic](https://newrelic.com/platform) — Hosted observability platform for application, infrastructure, log, digital-experience, and AI telemetry.
 - [Nextcloud](https://nextcloud.com/) — Self-hosted collaboration platform for files, groupware, communication, and extensible applications.
 - [NGINX](https://nginx.org) — Web server, reverse proxy, load balancer, and HTTP cache.
 - [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) — F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS traffic to cluster services.
@@ -589,7 +589,7 @@
 - [oVirt](https://www.ovirt.org/) — Open-source virtualization management platform for KVM hosts, virtual machines, storage, and networks.
 - [OVN-Kubernetes](https://ovn-kubernetes.io) — Networking for Kubernetes using OVN.
 - [Pacemaker](https://clusterlabs.org/projects/pacemaker/) — High-availability cluster resource manager that detects failures and coordinates service recovery across nodes.
-- [PagerDuty](https://www.pagerduty.com) — Digital operations management and incident response.
+- [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) — Hosted operations platform for on-call management, incident response, and operational automation.
 - [Pandora FMS](https://pandorafms.com/community/pandora-fms-downloads) — Monitoring platform with community and enterprise editions.
 - [Pangolin](https://pangolin.net) — Zero-trust remote access platform and VPN alternative.
 - [passbolt](https://www.passbolt.com) — Password manager for teams with self-hosted and paid offerings.
@@ -689,7 +689,7 @@
 - [Site24x7](https://www.site24x7.com) — Full-stack monitoring platform.
 - [sk8r](https://github.com/mvklingeren/sk8r) — Kubernetes dashboard.
 - [Skupper](https://skupper.io/) — Application-networking platform that securely connects services across Kubernetes clusters and local systems.
-- [Slack](https://slack.com) — Team communication and collaboration platform.
+- [Slack](https://slack.com/) — Salesforce-owned hosted collaboration and ChatOps platform for channels, workflows, integrations, and AI-assisted work.
 - [Slok](https://github.com/slok-operator/slok) — Kubernetes operator that manages service-level objectives and tracks error budgets.
 - [sniffglue](https://github.com/kpcyrd/sniffglue) — Network packet sniffer designed with sandboxing for interactive traffic inspection.
 - [Sniffnet](https://sniffnet.app/) — Desktop network-traffic monitor showing connections and traffic statistics.

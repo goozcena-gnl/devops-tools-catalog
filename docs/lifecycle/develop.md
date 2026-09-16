@@ -156,7 +156,7 @@
 - [Play with Docker](https://labs.play-with-docker.com) — Interactive Docker playground; open-source platform with hosted labs site.
 - [Port](https://www.port.io/) — Internal developer portal and service catalog with automations/workflows.
 - [Portabase](https://portabase.io) — Self-hosted tool for automating and restoring database backups across many database engines.
-- [Postman](https://www.postman.com) — API development and testing platform.
+- [Postman](https://www.postman.com/product/) — API development and testing platform.
 - [PowerShell](https://learn.microsoft.com/en-us/powershell/) — Cross-platform shell and scripting runtime for object-based system automation.
 - [Prettier](https://prettier.io) — Opinionated formatter for JSON/YAML/Markdown and more.
 - [PrivateBin](https://privatebin.info) — Secure pastebin alternative.

@@ -1284,20 +1284,20 @@ SaaS control plane for Netdata (Netdata Agent is open-source; Cloud adds central
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Full-stack observability platform.
+Hosted observability platform for application, infrastructure, log, digital-experience, and AI telemetry.
 
 **Use when**
 
-- Generous free tier fits and you want integrated APM + infra + logs.
+- You want a managed platform that correlates application, infrastructure, log, and digital-experience telemetry.
 
 **Consider alternatives when**
 
 - Data governance or on-prem requirements rule out SaaS.
 
-[Official site](https://github.com/newrelic)
+[Official site](https://newrelic.com/platform) · [Documentation](https://docs.newrelic.com/)
 
 ### Node Exporter
 

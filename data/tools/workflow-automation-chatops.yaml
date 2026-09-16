@@ -421,8 +421,9 @@
   needs_review: true
 - id: slack
   name: Slack
-  summary: Team communication and collaboration platform.
-  official_url: https://slack.com
+  summary: Salesforce-owned hosted collaboration and ChatOps platform for channels, workflows, integrations, and AI-assisted work.
+  official_url: https://slack.com/
+  documentation_url: https://slack.com/help
   categories:
   - workflow-automation-chatops
   subcategories:
@@ -435,20 +436,27 @@
   - plan
   - operate
   use_when:
-  - You want the richest integration ecosystem and your team is already there.
+  - You need channel-based team communication, workflow automation, and integrations in a managed workspace.
   avoid_when:
   - Data residency, self-hosting, or cost-per-seat is a concern at scale.
-  deployment_models: []
-  license_model: unknown
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:7_Development-Collaboration/README.md#L106
   - legacy:devopstools_final.md#L1155
-  needs_review: true
+  - https://slack.com/features
+  - https://slack.com/help
+  - https://slack.com/pricing
+  - https://www.salesforce.com/news/press-releases/2021/07/21/salesforce-slack-deal-close/
+  - https://github.com/slackapi
+  needs_review: false
 - id: tenzu
   name: Tenzu
   summary: Ethical open-source task and Kanban collaboration platform.

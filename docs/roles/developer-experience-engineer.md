@@ -165,7 +165,7 @@
 | [Play with Docker](https://labs.play-with-docker.com) | Developer experience and local environments | documentation | needs-review |
 | [Playwright](https://playwright.dev) | CI, build and testing | oss | needs-review |
 | [Port](https://www.port.io/) | Platform engineering and internal developer platforms | commercial | active |
-| [Postman](https://www.postman.com) | Developer experience and local environments | unknown | needs-review |
+| [Postman](https://www.postman.com/product/) | Developer experience and local environments | commercial | active |
 | [Prettier](https://prettier.io) | Developer experience and local environments | oss | needs-review |
 | [Probot DCO](https://probot.github.io/apps/dco) | CI, build and testing | oss | needs-review |
 | [PSScriptAnalyzer](https://www.powershellgallery.com/packages/PSScriptAnalyzer/) | Developer experience and local environments, CI, build and testing | oss | active |
@@ -187,7 +187,7 @@
 | [Semaphore CI](https://semaphoreci.com) | CI, build and testing | unknown | needs-review |
 | [ServerSpec](https://serverspec.org) | CI, build and testing | oss | needs-review |
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | needs-review |
-| [Slack](https://slack.com) | Workflow automation and ChatOps | unknown | needs-review |
+| [Slack](https://slack.com/) | Workflow automation and ChatOps | commercial | active |
 | [Spec Kit](https://github.com/github/spec-kit) | Developer experience and local environments | oss | needs-review |
 | [Spinnaker](https://spinnaker.io) | CI, build and testing | oss | needs-review |
 | [StackBlitz](https://stackblitz.com/) | Developer experience and local environments | commercial | active |

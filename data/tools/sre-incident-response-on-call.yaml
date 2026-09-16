@@ -317,8 +317,9 @@
   needs_review: false
 - id: pagerduty
   name: PagerDuty
-  summary: Digital operations management and incident response.
-  official_url: https://www.pagerduty.com
+  summary: Hosted operations platform for on-call management, incident response, and operational automation.
+  official_url: https://www.pagerduty.com/platform/operations-cloud/
+  documentation_url: https://support.pagerduty.com/
   categories:
   - sre-incident-response-on-call
   subcategories:
@@ -330,20 +331,26 @@
   - operate
   - monitor
   use_when:
-  - Enterprise-grade on-call, escalation, and incident orchestration with deep integrations.
+  - You need managed on-call scheduling, escalation, incident orchestration, and a broad integration ecosystem.
   avoid_when:
-  - Budget is a concern—open-source alternatives (GoAlert, Grafana OnCall) exist.
-  deployment_models: []
-  license_model: unknown
+  - You require a self-hosted incident-management control plane or only need basic alert routing.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L106
   - legacy:devopstools_final.md#L824
-  needs_review: true
+  - https://www.pagerduty.com/platform/operations-cloud/
+  - https://support.pagerduty.com/main/docs/introduction
+  - https://www.pagerduty.com/pricing/
+  - https://github.com/PagerDuty/terraform-provider-pagerduty
+  needs_review: false
 - id: patchmon
   name: PatchMon
   summary: Patch management and monitoring platform.
