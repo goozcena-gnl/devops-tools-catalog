@@ -1070,25 +1070,6 @@ Public collaborative infrastructure service providing Git hosting, code review, 
 
 [Official site](https://opendev.org/) · [Documentation](https://docs.opendev.org/opendev/system-config/latest/)
 
-### OpenShift Pipelines
-
-**Categories:** CI, build and testing<br>
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Tekton-based CI/CD experience packaged and supported for OpenShift clusters (built on OSS Tekton).
-
-**Use when**
-
-- * You run OpenShift and want integrated, supported Tekton pipelines.
-
-**Consider alternatives when**
-
-- * You're not on OpenShift; use plain Tekton instead.
-
-[Official site](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines)
-
 ### Playwright
 
 **Categories:** CI, build and testing<br>
@@ -1202,6 +1183,25 @@ Pytest plugin for coverage reporting, including support for distributed test run
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
 [Source repository](https://github.com/pytest-dev/pytest-cov)
+
+### Red Hat OpenShift Pipelines
+
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+Red Hat-supported, Operator-delivered CI/CD distribution for OpenShift built from Tekton components and included with an OpenShift subscription.
+
+**Use when**
+
+- You run supported Red Hat OpenShift and want its curated, integrated Tekton distribution and Operator lifecycle.
+
+**Consider alternatives when**
+
+- You need an upstream, vendor-neutral Tekton installation for Kubernetes outside the Red Hat OpenShift subscription boundary.
+
+[Official site](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) · [Documentation](https://docs.redhat.com/en/documentation/red_hat_openshift_pipelines/latest/) · [Source repository](https://github.com/openshift-pipelines/operator)
 
 ### Review Flow
 

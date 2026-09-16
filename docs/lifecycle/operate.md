@@ -521,7 +521,7 @@
 - [MobaXterm](https://mobaxterm.mobatek.net/) — Windows remote-administration terminal combining SSH, SFTP, X11, and other network clients.
 - [MOCO](https://cybozu-go.github.io/moco) — MySQL Operator for Kubernetes by Cybozu.
 - [Model Express](https://github.com/ai-dynamo/modelexpress) — Rust service that stages model data near inference systems to reduce startup time.
-- [MongoDB](https://www.mongodb.com) — Modern document database and developer data platform.
+- [MongoDB](https://www.mongodb.com/) — Document database server whose Community Edition source uses SSPL, with separate commercial Enterprise Advanced and managed Atlas offerings.
 - [Moogsoft](https://www.moogsoft.com) — AI-powered incident management and observability platform.
 - [Morpheus Data](https://morpheusdata.com) — Hybrid cloud management platform.
 - [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) — CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods.
@@ -538,7 +538,7 @@
 - [New Relic](https://newrelic.com/platform) — Hosted observability platform for application, infrastructure, log, digital-experience, and AI telemetry.
 - [Nextcloud](https://nextcloud.com/) — Self-hosted collaboration platform for files, groupware, communication, and extensible applications.
 - [NGINX](https://nginx.org) — Web server, reverse proxy, load balancer, and HTTP cache.
-- [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) — F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS traffic to cluster services.
+- [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) — F5-maintained Kubernetes ingress controller that runs with NGINX Open Source or subscription-licensed NGINX Plus.
 - [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) — NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
 - [Nocalhost](https://nocalhost.dev) — Cloud-native app development tool.
 - [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) — Prometheus exporter that exposes hardware and operating-system metrics from Unix-like hosts.
@@ -574,7 +574,7 @@
 - [OpenTelemetry](https://github.com/open-telemetry) — Observability framework for traces/metrics/logs.
 - [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) — Vendor-neutral collector to receive/process/export traces (and also logs/metrics) to backends.
 - [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) — Zero-code eBPF-based instrumentation for collecting OpenTelemetry telemetry.
-- [OperatorHub](https://operatorhub.io) — Community catalog for discovering, installing, and publishing Kubernetes Operators.
+- [OperatorHub.io](https://operatorhub.io/) — Community-operated web portal and OLM catalog for discovering and publishing independently licensed Kubernetes Operators.
 - [OPNsense](https://opnsense.org/opnsense/) — FreeBSD-based open-source firewall and routing platform for network security gateways.
 - [OpsLevel](https://www.opslevel.com) — SaaS internal developer portal and service catalog (scorecards, ownership, maturity).
 - [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) — Cloud services by Oracle.
@@ -642,7 +642,7 @@
 - [Ray](https://www.ray.io/) — Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
 - [Rclone](https://rclone.org/) — Command-line data transfer and synchronization tool for object stores, cloud file services, and local filesystems.
 - [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) — Enterprise automation platform built around Ansible.
-- [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) — Enterprise Kubernetes platform (commercial); upstream community distribution is OKD.
+- [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) — Commercial Red Hat application-platform family with self-managed editions and managed cloud services; OKD is a separate upstream community distribution.
 - [Redis](https://redis.io) — In-memory data structure store, used as a database, cache, and message broker. **Licensing varies by version:** Redis ≤7.2 uses BSD (OSS); Redis CE 7.4–7.8 uses RSAL/SSPL (source-available); Redis 8+ uses tri-license (AGPL option available).
 - [Redis Operator](https://redis-operator.opstree.dev) — Kubernetes operator for provisioning and managing Redis clusters.
 - [Redmine](https://www.redmine.org/) — Self-hosted project and issue tracking application with workflows, wikis, and repository integration.

@@ -201,7 +201,7 @@
 | [MLflow](https://mlflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [MLOps for DevOps Engineers](https://github.com/techiescamp/mlops-for-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Model Express](https://github.com/ai-dynamo/modelexpress) | MLOps, LLMOps and AI infrastructure | oss | active |
-| [MongoDB](https://www.mongodb.com) | Databases, caching and data infrastructure | unknown | needs-review |
+| [MongoDB](https://www.mongodb.com/) | Databases, caching and data infrastructure | source-available | active |
 | [Morpheus Data](https://morpheusdata.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [MySQL](https://www.mysql.com) | Databases, caching and data infrastructure | open-core | active |
 | [Nautobot](https://docs.nautobot.com/) | Infrastructure as Code | open-core | active |

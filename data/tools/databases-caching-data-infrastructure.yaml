@@ -369,8 +369,11 @@
   needs_review: true
 - id: mongodb
   name: MongoDB
-  summary: Modern document database and developer data platform.
-  official_url: https://www.mongodb.com
+  summary: Document database server whose Community Edition source uses SSPL, with separate commercial Enterprise Advanced and managed Atlas offerings.
+  official_url: https://www.mongodb.com/
+  repository_url: https://github.com/mongodb/mongo
+  repository_archived: false
+  documentation_url: https://www.mongodb.com/docs/
   categories:
   - databases-caching-data-infrastructure
   subcategories:
@@ -382,18 +385,33 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You need a document database with self-managed Community or Enterprise deployments and a separately managed Atlas option.
+  avoid_when:
+  - You require an OSI-approved database-server licence or want to avoid SSPL, commercial-edition, and hosted-service boundaries.
+  deployment_models:
+  - self-hosted
+  - container
+  - kubernetes
+  - enterprise-self-hosted
+  - hosted-saas
+  license_model: source-available
+  license_spdx: SSPL-1.0
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:devopstools_final.md#L287
-  needs_review: true
+  - https://github.com/mongodb/mongo
+  - https://github.com/mongodb/mongo/blob/master/LICENSE-Community.txt
+  - https://www.mongodb.com/legal/licensing/community-edition
+  - https://www.mongodb.com/docs/manual/installation/
+  - https://www.mongodb.com/docs/deployment/
+  - https://www.mongodb.com/docs/enterprise-advanced-deployment/
+  needs_review: false
 - id: mysql
   name: MySQL
   summary: Relational database server with transactional storage, replication, and a large application ecosystem.

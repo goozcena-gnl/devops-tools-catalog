@@ -130,7 +130,7 @@
 | [MinIO Community Server](https://github.com/minio/minio) | Deprecated and historical tools, Databases, caching and data infrastructure | oss | archived |
 | [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) | Configuration management | oss | needs-review |
 | [MobaXterm](https://mobaxterm.mobatek.net/) | Foundations, Linux and scripting | commercial | active |
-| [MongoDB](https://www.mongodb.com) | Databases, caching and data infrastructure | unknown | needs-review |
+| [MongoDB](https://www.mongodb.com/) | Databases, caching and data infrastructure | source-available | active |
 | [MySQL](https://www.mysql.com) | Databases, caching and data infrastructure | open-core | active |
 | [Nautobot](https://docs.nautobot.com/) | Infrastructure as Code | open-core | active |
 | [nerdctl](https://github.com/containerd/nerdctl) | Virtualization, bare metal and homelab | oss | needs-review |

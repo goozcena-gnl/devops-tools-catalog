@@ -433,7 +433,7 @@
 | [MLOps for DevOps Engineers](https://github.com/techiescamp/mlops-for-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [MobaXterm](https://mobaxterm.mobatek.net/) | Foundations, Linux and scripting | commercial | active |
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
-| [MongoDB](https://www.mongodb.com) | Databases, caching and data infrastructure | unknown | needs-review |
+| [MongoDB](https://www.mongodb.com/) | Databases, caching and data infrastructure | source-available | active |
 | [Morpheus Data](https://morpheusdata.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [Munin](https://munin-monitoring.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [mypy](https://mypy-lang.org) | Developer experience and local environments | oss | needs-review |
@@ -476,7 +476,6 @@
 | [OpenFeature](https://github.com/open-feature) | CD, GitOps, release and promotion | oss | needs-review |
 | [OpenObserve](https://openobserve.ai/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | unknown | needs-review |
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
 | [OpenTelemetry](https://github.com/open-telemetry) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -541,6 +540,7 @@
 | [RamaLama](https://ramalama.ai) | Developer experience and local environments | oss | needs-review |
 | [Rancher Desktop](https://rancherdesktop.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) | Configuration management | unknown | needs-review |
+| [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | commercial | active |
 | [Redis](https://redis.io) | Databases, caching and data infrastructure | source-available | needs-review |
 | [Redmine](https://www.redmine.org/) | Workflow automation and ChatOps | oss | active |
 | [Reference (cheatsheets.zip)](https://cheatsheets.zip) | Documentation, learning and career resources | documentation | needs-review |

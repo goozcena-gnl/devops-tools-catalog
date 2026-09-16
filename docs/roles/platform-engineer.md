@@ -436,7 +436,7 @@
 | [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |
 | [NGINX](https://nginx.org) | Kubernetes networking, storage and add-ons | open-core | active |
-| [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) | Kubernetes networking, storage and add-ons | open-core | active |
 | [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nix](https://nixos.org) | Containers and image tooling | oss | needs-review |
 | [Nocalhost](https://nocalhost.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -468,7 +468,7 @@
 | [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
-| [OperatorHub](https://operatorhub.io) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [OperatorHub.io](https://operatorhub.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [OpsLevel](https://www.opslevel.com) | Platform engineering and internal developer platforms | commercial | active |
 | [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | unknown | needs-review |
 | [Oracle Kubernetes Engine](https://www.oracle.com/cloud/cloud-native/kubernetes-engine/) | Kubernetes distributions and operations | commercial | active |
@@ -503,7 +503,7 @@
 | [Rancher](https://rancher.com) | Kubernetes distributions and operations | open-core | needs-review |
 | [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | needs-review |
 | [Ray](https://www.ray.io/) | MLOps, LLMOps and AI infrastructure | oss | active |
-| [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | unknown | needs-review |
+| [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | commercial | active |
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Reference (cheatsheets.zip)](https://cheatsheets.zip) | Documentation, learning and career resources | documentation | needs-review |
 | [rekor (sigstore)](https://github.com/sigstore/rekor) | Emerging and experimental tools | oss | needs-review |

@@ -246,7 +246,6 @@
 - [OpenDev](https://opendev.org/) — Public collaborative infrastructure service providing Git hosting, code review, CI, and related services for open-source projects.
 - [OpenSCAP](https://www.open-scap.org) — Security Content Automation Protocol.
 - [OpenSCAP Tools](https://www.open-scap.org/tools) — Collection of OpenSCAP tools.
-- [OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) — Tekton-based CI/CD experience packaged and supported for OpenShift clusters (built on OSS Tekton).
 - [OpenText Fortify Static Code Analyzer](https://www.opentext.com/products/static-application-security-testing) — Commercial static application security testing engine for source, bytecode, and binary analysis across developer and CI/CD workflows.
 - [OpenWiki](https://github.com/langchain-ai/openwiki) — CLI that writes and maintains agent documentation for your codebase.
 - [OpenZiti](https://netfoundry.io/docs/openziti) — Open-source zero-trust overlay networking platform.
@@ -281,6 +280,7 @@
 - [Qubes OS](https://github.com/QubesOS) — Security-focused desktop operating system using Xen-based virtualization for compartmentalization.
 - [RamaLama](https://ramalama.ai) — AI-powered development assistant.
 - [Reaver](https://github.com/t6x/reaver-wps-fork-t6x) — Wireless security assessment utility for evaluating WPS-enabled access points.
+- [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) — Red Hat-supported, Operator-delivered CI/CD distribution for OpenShift built from Tekton components and included with an OpenShift subscription.
 - [Red Labs](https://redlabs.enterprisesecurity.io) — Security labs/training environment.
 - [Review Flow](https://dgouron.github.io/review-flow) — GitHub pull request review workflow visualization and management tool.
 - [RITA](https://www.activecountermeasures.com/free-tools/rita) — Network traffic analysis tool for detecting command-and-control and beaconing behavior.

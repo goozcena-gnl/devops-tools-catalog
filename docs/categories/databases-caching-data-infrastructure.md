@@ -297,20 +297,20 @@ Archived and unmaintained AGPL-licensed S3-compatible object-storage server reta
 
 **Categories:** Databases, caching and data infrastructure<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Source Available<br>
+**Status:** Active
 
-Modern document database and developer data platform.
+Document database server whose Community Edition source uses SSPL, with separate commercial Enterprise Advanced and managed Atlas offerings.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a document database with self-managed Community or Enterprise deployments and a separately managed Atlas option.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require an OSI-approved database-server licence or want to avoid SSPL, commercial-edition, and hosted-service boundaries.
 
-[Official site](https://www.mongodb.com)
+[Official site](https://www.mongodb.com/) · [Documentation](https://www.mongodb.com/docs/) · [Source repository](https://github.com/mongodb/mongo)
 
 ### MySQL
 
