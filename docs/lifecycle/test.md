@@ -267,7 +267,7 @@
 - [Playwright](https://playwright.dev) — End-to-end testing for web apps.
 - [Plumber](https://getplumber.io) — CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
 - [Portmaster](https://safing.io) — Self-hosted application firewall and privacy suite for monitoring and controlling network connections.
-- [Postman](https://www.postman.com) — API development and testing platform.
+- [Postman](https://www.postman.com/product/) — API development and testing platform.
 - [Prettier](https://prettier.io) — Opinionated formatter for JSON/YAML/Markdown and more.
 - [Pritunl](https://pritunl.com) — VPN server for secure remote access; open-source core with commercial features.
 - [Probot DCO](https://probot.github.io/apps/dco) — DCO checks for GitHub pull requests.

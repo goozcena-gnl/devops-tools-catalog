@@ -410,20 +410,20 @@ Pre-merge validation for Kubernetes GitOps changes.
 
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Modern web hosting and automation platform.
+Managed web application platform for Git- and API-driven deployment, previews, functions, and global delivery.
 
 **Use when**
 
-- Static sites, Jamstack apps, and serverless functions with great DX (preview deploys, forms, edge functions).
+- You want managed web deployment with preview environments, a global delivery network, and serverless or edge functions.
 
 **Consider alternatives when**
 
-- You need server-side rendering beyond what Netlify Functions supports or want to avoid vendor lock-in.
+- You require a self-hosted application platform or need to minimize dependence on provider-specific build and runtime services.
 
-[Official site](https://www.netlify.com)
+[Official site](https://www.netlify.com/) · [Documentation](https://docs.netlify.com/)
 
 ### OpenFeature
 

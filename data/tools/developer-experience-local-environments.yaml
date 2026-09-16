@@ -1938,7 +1938,8 @@
 - id: postman
   name: Postman
   summary: API development and testing platform.
-  official_url: https://www.postman.com
+  official_url: https://www.postman.com/product/
+  documentation_url: https://learning.postman.com/docs/
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -1954,17 +1955,27 @@
   avoid_when:
   - Your API tests should live in code/CI—consider scripted alternatives (curl, HTTPie, Bruno) to prevent
     test sprawl outside version control.
-  deployment_models: []
-  license_model: unknown
+  deployment_models:
+  - hosted-saas
+  - desktop
+  - local-cli
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:7_Development-Collaboration/README.md#L53
   - legacy:devopstools_final.md#L1089
-  needs_review: true
+  - https://www.postman.com/product/
+  - https://learning.postman.com/docs/
+  - https://learning.postman.com/docs/getting-started/installation/install-app
+  - https://www.postman.com/pricing/
+  - https://github.com/postmanlabs/newman
+  - https://github.com/postmanlabs/postman-runtime
+  needs_review: false
 - id: prettier
   name: Prettier
   summary: Opinionated formatter for JSON/YAML/Markdown and more.

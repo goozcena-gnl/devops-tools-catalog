@@ -112,7 +112,7 @@
 | [Mergify](https://mergify.com) | CI, build and testing | unknown | needs-review |
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
 | [Nektos Act](https://nektosact.com) | CI, build and testing | oss | needs-review |
-| [Netlify](https://www.netlify.com) | CD, GitOps, release and promotion | unknown | needs-review |
+| [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |
 | [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) | Artifact and package management | open-core | needs-review |
 | [Octopus Deploy](https://octopus.com) | CI, build and testing | unknown | needs-review |
 | [Oh My Git!](https://ohmygit.org) | Source control and repository management | documentation | needs-review |

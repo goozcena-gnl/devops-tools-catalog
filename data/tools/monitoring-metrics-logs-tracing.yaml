@@ -2072,8 +2072,9 @@
   needs_review: true
 - id: new-relic
   name: New Relic
-  summary: Full-stack observability platform.
-  official_url: https://github.com/newrelic
+  summary: Hosted observability platform for application, infrastructure, log, digital-experience, and AI telemetry.
+  official_url: https://newrelic.com/platform
+  documentation_url: https://docs.newrelic.com/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -2086,20 +2087,28 @@
   - operate
   - monitor
   use_when:
-  - Generous free tier fits and you want integrated APM + infra + logs.
+  - You want a managed platform that correlates application, infrastructure, log, and digital-experience telemetry.
   avoid_when:
   - Data governance or on-prem requirements rule out SaaS.
-  deployment_models: []
-  license_model: unknown
+  deployment_models:
+  - hosted-saas
+  - endpoint-agent
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L17
   - legacy:devopstools_final.md#L712
-  needs_review: true
+  - https://newrelic.com/platform
+  - https://docs.newrelic.com/docs/new-relic-solutions/get-started/intro-new-relic/
+  - https://newrelic.com/pricing
+  - https://docs.newrelic.com/docs/new-relic-control/agent-control/overview/
+  - https://github.com/newrelic/infrastructure-agent
+  needs_review: false
 - id: node-exporter
   name: Node Exporter
   summary: Prometheus exporter that exposes hardware and operating-system metrics from Unix-like hosts.

@@ -58,7 +58,7 @@
 - [kURL](https://kurl.sh/) — Toolkit for packaging customized offline-capable Kubernetes installers for software appliances.
 - [Lefthook](https://lefthook.dev) — Fast Git hooks manager (parallel execution, cross-platform).
 - [lychee](https://lychee.cli.rs/) — Asynchronous command-line link checker for Markdown, HTML, reStructuredText, websites, and other inputs.
-- [Netlify](https://www.netlify.com) — Modern web hosting and automation platform.
+- [Netlify](https://www.netlify.com/) — Managed web application platform for Git- and API-driven deployment, previews, functions, and global delivery.
 - [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) — Universal artifact repository manager.
 - [Nix](https://nixos.org) — Reproducible build and package manager.
 - [OpenDepot](https://tonedefdev.github.io/opendepot/) — Kubernetes-native registry for publishing and consuming OpenTofu and Terraform providers and modules.

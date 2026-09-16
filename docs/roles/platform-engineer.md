@@ -434,7 +434,7 @@
 | [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nautobot](https://docs.nautobot.com/) | Infrastructure as Code | open-core | active |
 | [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Netlify](https://www.netlify.com) | CD, GitOps, release and promotion | unknown | needs-review |
+| [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |
 | [NGINX](https://nginx.org) | Kubernetes networking, storage and add-ons | open-core | active |
 | [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) | Kubernetes networking, storage and add-ons | unknown | needs-review |
 | [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | needs-review |

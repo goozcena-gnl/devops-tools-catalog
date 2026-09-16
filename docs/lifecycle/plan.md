@@ -53,7 +53,7 @@
 - [Rundeck](https://www.rundeck.com) — Runbook automation and self-service operations platform.
 - [Scalr](https://github.com/Scalr) — Terraform automation and collaboration software.
 - [Score](https://score.dev) — Developer-centric, platform-agnostic workload specification for defining runtime requirements once in `score.yaml` and targeting multiple environments.
-- [Slack](https://slack.com) — Team communication and collaboration platform.
+- [Slack](https://slack.com/) — Salesforce-owned hosted collaboration and ChatOps platform for channels, workflows, integrations, and AI-assisted work.
 - [Spacelift](https://spacelift.io) — IaC automation with policy-as-code and collaboration.
 - [Tenzu](https://tenzu.net/fr) — Ethical open-source task and Kanban collaboration platform.
 - [Terraform](https://www.terraform.io) — Infrastructure provisioning tool.

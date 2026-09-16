@@ -275,20 +275,20 @@ Runbook automation and self-service operations platform.
 
 **Categories:** Workflow automation and ChatOps<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Team communication and collaboration platform.
+Salesforce-owned hosted collaboration and ChatOps platform for channels, workflows, integrations, and AI-assisted work.
 
 **Use when**
 
-- You want the richest integration ecosystem and your team is already there.
+- You need channel-based team communication, workflow automation, and integrations in a managed workspace.
 
 **Consider alternatives when**
 
 - Data residency, self-hosting, or cost-per-seat is a concern at scale.
 
-[Official site](https://slack.com)
+[Official site](https://slack.com/) · [Documentation](https://slack.com/help)
 
 ### Tenzu
 

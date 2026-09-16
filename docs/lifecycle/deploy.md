@@ -410,7 +410,7 @@
 - [Nautobot](https://docs.nautobot.com/) — Network source-of-truth and automation platform with extensible data models and application plugins.
 - [Nelm](https://github.com/werf/nelm) — Helm-compatible Kubernetes deployment tool and Helm 4 alternative with plan previews, improved CRD handling, and secret workflows.
 - [nerdctl](https://github.com/containerd/nerdctl) — Docker-compatible CLI for containerd.
-- [Netlify](https://www.netlify.com) — Modern web hosting and automation platform.
+- [Netlify](https://www.netlify.com/) — Managed web application platform for Git- and API-driven deployment, previews, functions, and global delivery.
 - [Nextcloud](https://nextcloud.com/) — Self-hosted collaboration platform for files, groupware, communication, and extensible applications.
 - [NGINX](https://nginx.org) — Web server, reverse proxy, load balancer, and HTTP cache.
 - [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) — F5 NGINX-based Kubernetes ingress controller for routing external HTTP/HTTPS traffic to cluster services.

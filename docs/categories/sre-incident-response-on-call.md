@@ -257,20 +257,20 @@ Self-hostable framework for AI-assisted production incident investigation, evalu
 
 **Categories:** SRE, incident response and on-call<br>
 **Roles:** Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Digital operations management and incident response.
+Hosted operations platform for on-call management, incident response, and operational automation.
 
 **Use when**
 
-- Enterprise-grade on-call, escalation, and incident orchestration with deep integrations.
+- You need managed on-call scheduling, escalation, incident orchestration, and a broad integration ecosystem.
 
 **Consider alternatives when**
 
-- Budget is a concern—open-source alternatives (GoAlert, Grafana OnCall) exist.
+- You require a self-hosted incident-management control plane or only need basic alert routing.
 
-[Official site](https://www.pagerduty.com)
+[Official site](https://www.pagerduty.com/platform/operations-cloud/) · [Documentation](https://support.pagerduty.com/)
 
 ### PatchMon
 

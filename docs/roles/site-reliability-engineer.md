@@ -301,7 +301,7 @@
 | [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [NetWatch Labs](https://www.netwatchlabs.com) | SRE, incident response and on-call | oss | needs-review |
-| [New Relic](https://github.com/newrelic) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [New Relic](https://newrelic.com/platform) | Monitoring, metrics, logs and tracing | commercial | active |
 | [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller) | Kubernetes networking, storage and add-ons | unknown | needs-review |
 | [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nocalhost](https://nocalhost.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -328,7 +328,7 @@
 | [oVirt](https://www.ovirt.org/) | Virtualization, bare metal and homelab | oss | active |
 | [OVN-Kubernetes](https://ovn-kubernetes.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Pacemaker](https://clusterlabs.org/projects/pacemaker/) | Virtualization, bare metal and homelab, Backup, disaster recovery and resilience | oss | active |
-| [PagerDuty](https://www.pagerduty.com) | SRE, incident response and on-call | unknown | needs-review |
+| [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) | SRE, incident response and on-call | commercial | active |
 | [Pandora FMS](https://pandorafms.com/community/pandora-fms-downloads) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [PatchMon](https://patchmon.net) | SRE, incident response and on-call | unknown | needs-review |
 | [Plane](https://plane.so) | Workflow automation and ChatOps | oss | needs-review |
@@ -371,7 +371,7 @@
 | [SigNoz](https://signoz.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Site24x7](https://www.site24x7.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [sk8r](https://github.com/mvklingeren/sk8r) | Kubernetes distributions and operations | oss | needs-review |
-| [Slack](https://slack.com) | Workflow automation and ChatOps | unknown | needs-review |
+| [Slack](https://slack.com/) | Workflow automation and ChatOps | commercial | active |
 | [Slok](https://github.com/slok-operator/slok) | Monitoring, metrics, logs and tracing, SRE, incident response and on-call | oss | active |
 | [Sniffnet](https://sniffnet.app/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Spinkube](https://github.com/spinkube) | Kubernetes networking, storage and add-ons | oss | needs-review |
