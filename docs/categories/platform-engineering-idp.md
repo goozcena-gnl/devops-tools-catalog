@@ -149,11 +149,11 @@ Open-source, self-hosted GitOps platform for deploying web apps and internal too
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a self-hosted, declarative GitOps platform for web apps and internal tools that can run on Docker, Podman, or Kubernetes with built-in authentication and RBAC.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a managed hosted service or Docker Compose stack deployment rather than operating a self-hosted application platform.
 
 [Official site](https://openrun.dev) · [Documentation](https://openrun.dev/docs/) · [Source repository](https://github.com/openrundev/openrun)
 

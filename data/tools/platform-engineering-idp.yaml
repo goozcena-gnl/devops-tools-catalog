@@ -58,7 +58,7 @@
   - self-hosted
   license_model: oss
   license_spdx: Apache-2.0
-  commercial_offering: false
+  commercial_offering: true
   maturity: unknown
   status: active
   alternatives: []
@@ -72,6 +72,7 @@
   - https://github.com/backstage/backstage
   - https://github.com/backstage/backstage/blob/master/LICENSE
   - https://github.com/backstage/backstage/releases/tag/v1.55.0
+  - https://backstage.spotify.com/portal-vs-backstage
   needs_review: false
 - id: coolify
   name: Coolify
@@ -280,8 +281,12 @@
   - develop
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
+  use_when:
+  - You want a self-hosted, declarative GitOps platform for web apps and internal tools that can run
+    on Docker, Podman, or Kubernetes with built-in authentication and RBAC.
+  avoid_when:
+  - You need a managed hosted service or Docker Compose stack deployment rather than operating a
+    self-hosted application platform.
   deployment_models:
   - self-hosted
   license_model: oss
