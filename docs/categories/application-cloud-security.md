@@ -2074,20 +2074,20 @@ Open source WAF module for NGINX (NAXSI).
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Zero-trust networking platform built on WireGuard.
+Open-core WireGuard-based zero-trust networking platform with community self-hosting, managed cloud, and licensed enterprise options.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need identity-aware WireGuard networking with a choice of community self-hosting or a managed control plane.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require high availability, SCIM, or traffic-flow logging in a self-hosted deployment but cannot use the commercial enterprise edition.
 
-[Official site](https://netbird.io)
+[Official site](https://netbird.io/) · [Documentation](https://docs.netbird.io/) · [Source repository](https://github.com/netbirdio/netbird)
 
 ### NetExec
 

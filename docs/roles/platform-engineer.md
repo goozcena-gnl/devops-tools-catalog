@@ -368,12 +368,12 @@
 | [KubernetesCRDModelGen](https://github.com/IvanJosipovic/KubernetesCRDModelGen) | Developer experience and local environments | oss | active |
 | [Kubescape](https://kubescape.io/) | Kubernetes distributions and operations | oss | active |
 | [Kubesec](https://kubesec.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Kubeshark](https://kubeshark.co) | Kubernetes distributions and operations | unknown | needs-review |
+| [Kubeshark](https://kubeshark.com/) | Kubernetes distributions and operations | open-core | active |
 | [KubeSolo](https://www.kubesolo.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeSpec](https://kubespec.dev) | Kubernetes distributions and operations | documentation | needs-review |
 | [KubeSphere](https://kubesphere.io) | Kubernetes distributions and operations | oss | needs-review |
 | [kubeswitch](https://github.com/danielfoehrKn/kubeswitch) | Kubernetes distributions and operations | oss | active |
-| [Kubetail](https://www.kubetail.com) | Kubernetes distributions and operations | unknown | needs-review |
+| [Kubetail](https://www.kubetail.com/) | Kubernetes distributions and operations | oss | active |
 | [KubeTUI](https://github.com/sarub0b0/kubetui) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeUI](https://kubeui.com/) | Kubernetes distributions and operations | oss | active |
 | [KubeVela](https://kubevela.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -392,7 +392,7 @@
 | [LangChain](https://www.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [Langflow](https://www.langflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Langfuse](https://langfuse.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
-| [LangGraph](https://www.langchain.com/langgraph) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [LangGraph](https://www.langchain.com/langgraph) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [LangSmith](https://smith.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LearnKube](https://learnkube.com) | Documentation, learning and career resources | documentation | needs-review |
@@ -502,7 +502,7 @@
 | [Rakazo](https://rakazo.com/) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Rancher](https://rancher.com) | Kubernetes distributions and operations | open-core | needs-review |
 | [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | needs-review |
-| [Ray](https://www.ray.io) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Ray](https://www.ray.io/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | unknown | needs-review |
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Reference (cheatsheets.zip)](https://cheatsheets.zip) | Documentation, learning and career resources | documentation | needs-review |

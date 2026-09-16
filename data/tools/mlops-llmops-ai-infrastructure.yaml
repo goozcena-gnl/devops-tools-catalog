@@ -1501,8 +1501,11 @@
   needs_review: true
 - id: langgraph
   name: LangGraph
-  summary: Framework for building reliable stateful AI agents and multi-step workflows.
+  summary: MIT-licensed orchestration framework and runtime for building stateful, long-running agents.
   official_url: https://www.langchain.com/langgraph
+  repository_url: https://github.com/langchain-ai/langgraph
+  repository_archived: false
+  documentation_url: https://docs.langchain.com/oss/python/langgraph/overview
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -1515,18 +1518,29 @@
   - build
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You need durable execution, state, human-in-the-loop control, or branching workflows for long-running agents.
+  avoid_when:
+  - A simple request-response agent is sufficient or you need a managed deployment product rather than an orchestration library.
+  deployment_models:
+  - software-library
+  license_model: oss
+  license_spdx: MIT
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:devopstools_final.md#L1193
-  needs_review: true
+  - https://docs.langchain.com/oss/python/langgraph/overview
+  - https://github.com/langchain-ai/langgraph
+  - https://github.com/langchain-ai/langgraph/blob/main/LICENSE
+  - https://github.com/langchain-ai/langgraph/releases
+  - https://docs.langchain.com/langsmith/faq
+  - https://docs.langchain.com/langsmith/platform-setup
+  needs_review: false
 - id: langsmith
   name: LangSmith
   summary: LLM application development platform with observability, testing, and evaluation (LangChain-affiliated).
@@ -2254,8 +2268,11 @@
   needs_review: true
 - id: ray
   name: Ray
-  summary: Distributed compute framework for scaling ML, AI, and Python workloads.
-  official_url: https://www.ray.io
+  summary: Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
+  official_url: https://www.ray.io/
+  repository_url: https://github.com/ray-project/ray
+  repository_archived: false
+  documentation_url: https://docs.ray.io/en/latest/
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -2268,18 +2285,30 @@
   - build
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You need to scale Python or AI workloads from one machine to a distributed cluster while retaining a common programming model.
+  avoid_when:
+  - A single process or conventional batch system meets the workload without Ray's distributed runtime and cluster operations.
+  deployment_models:
+  - local
+  - self-hosted
+  - kubernetes
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-16'
   sources:
   - legacy:devopstools_final.md#L1187
-  needs_review: true
+  - https://github.com/ray-project/ray
+  - https://github.com/ray-project/ray/blob/master/LICENSE
+  - https://github.com/ray-project/ray/releases
+  - https://docs.ray.io/en/latest/cluster/getting-started.html
+  - https://docs.ray.io/en/latest/cluster/kubernetes/index.html
+  needs_review: false
 - id: reshapr
   name: reShapr
   summary: No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MCP endpoints

@@ -151,7 +151,7 @@
 | [mkcert](https://github.com/FiloSottile/mkcert) | IAM, secrets and certificate management | oss | needs-review |
 | [ModSecurity](https://modsecurity.org) | Application and cloud security | oss | needs-review |
 | [NAXSI (WAF for NGINX)](https://github.com/wargio/naxsi) | Application and cloud security | oss | needs-review |
-| [NetBird](https://netbird.io) | Application and cloud security | unknown | needs-review |
+| [NetBird](https://netbird.io/) | Application and cloud security | open-core | active |
 | [NetExec](https://www.netexec.wiki/) | Application and cloud security | oss | active |
 | [NextDNS](https://nextdns.io/) | Application and cloud security | commercial | active |
 | [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) | Artifact and package management | open-core | needs-review |

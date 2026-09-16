@@ -177,7 +177,7 @@
 | [LangChain](https://www.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [Langflow](https://www.langflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Langfuse](https://langfuse.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
-| [LangGraph](https://www.langchain.com/langgraph) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [LangGraph](https://www.langchain.com/langgraph) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [LangSmith](https://smith.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LearnKube](https://learnkube.com) | Documentation, learning and career resources | documentation | needs-review |
@@ -239,7 +239,7 @@
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
 | [RabbitMQ](https://www.rabbitmq.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Rakazo](https://rakazo.com/) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Ray](https://www.ray.io) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Ray](https://www.ray.io/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Redis](https://redis.io) | Databases, caching and data infrastructure | source-available | needs-review |
 | [Reference (cheatsheets.zip)](https://cheatsheets.zip) | Documentation, learning and career resources | documentation | needs-review |
 | [reShapr](https://reshapr.io) | MLOps, LLMOps and AI infrastructure | oss | needs-review |

@@ -152,7 +152,7 @@
 - [LangChain](https://www.langchain.com) — LLM application framework; OSS libraries with commercial companion products.
 - [Langflow](https://www.langflow.org) — Low-code builder for agentic and RAG applications.
 - [Langfuse](https://langfuse.com) — LLM observability and analytics; OSS self-hosted core with commercial cloud offering.
-- [LangGraph](https://www.langchain.com/langgraph) — Framework for building reliable stateful AI agents and multi-step workflows.
+- [LangGraph](https://www.langchain.com/langgraph) — MIT-licensed orchestration framework and runtime for building stateful, long-running agents.
 - [LangSmith](https://smith.langchain.com) — LLM application development platform with observability, testing, and evaluation (LangChain-affiliated).
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill) — Agent skill that researches current topics across web and social sources and synthesizes grounded summaries.
 - [Lefthook](https://lefthook.dev) — Fast Git hooks manager (parallel execution, cross-platform).
@@ -209,7 +209,7 @@
 - [Qdrant](https://qdrant.tech/) — Vector database and similarity-search engine available for self-hosted and managed deployments.
 - [Quay](https://quay.io) — Container registry for building, storing, and distributing images.
 - [Rakazo](https://rakazo.com/) — Self-hosted agent workspace with sandboxed browser and shell sessions, routines, approvals, and audit history.
-- [Ray](https://www.ray.io) — Distributed compute framework for scaling ML, AI, and Python workloads.
+- [Ray](https://www.ray.io/) — Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
 - [reShapr](https://reshapr.io) — No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MCP endpoints with security controls and flexible deployment (Apache-2.0).
 - [Review Flow](https://dgouron.github.io/review-flow) — GitHub pull request review workflow visualization and management tool.
 - [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) — Mobile app testing on a wide range of real devices.

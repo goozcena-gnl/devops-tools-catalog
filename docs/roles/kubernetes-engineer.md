@@ -202,14 +202,14 @@
 | [KubernetesCRDModelGen](https://github.com/IvanJosipovic/KubernetesCRDModelGen) | Developer experience and local environments | oss | active |
 | [Kubescape](https://kubescape.io/) | Kubernetes distributions and operations | oss | active |
 | [Kubesec](https://kubesec.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Kubeshark](https://kubeshark.co) | Kubernetes distributions and operations | unknown | needs-review |
+| [Kubeshark](https://kubeshark.com/) | Kubernetes distributions and operations | open-core | active |
 | [KubeSolo](https://www.kubesolo.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeSpec](https://kubespec.dev) | Kubernetes distributions and operations | documentation | needs-review |
 | [KubeSphere](https://kubesphere.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubespray](https://github.com/kubernetes-sigs/kubespray) | Kubernetes distributions and operations, Configuration management | oss | active |
 | [kubeswitch](https://github.com/danielfoehrKn/kubeswitch) | Kubernetes distributions and operations | oss | active |
 | [KubeTable](https://kubetable.dev/) | Developer experience and local environments, Emerging and experimental tools | oss | active |
-| [Kubetail](https://www.kubetail.com) | Kubernetes distributions and operations | unknown | needs-review |
+| [Kubetail](https://www.kubetail.com/) | Kubernetes distributions and operations | oss | active |
 | [KubeTUI](https://github.com/sarub0b0/kubetui) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeUI](https://kubeui.com/) | Kubernetes distributions and operations | oss | active |
 | [KubeVela](https://kubevela.io) | Kubernetes networking, storage and add-ons | oss | needs-review |

@@ -145,7 +145,7 @@
 - [mkcert](https://github.com/FiloSottile/mkcert) — Local SSL certificate generation.
 - [ModSecurity](https://modsecurity.org) — Web Application Firewall (WAF) engine.
 - [NAXSI (WAF for NGINX)](https://github.com/wargio/naxsi) — Open source WAF module for NGINX (NAXSI).
-- [NetBird](https://netbird.io) — Zero-trust networking platform built on WireGuard.
+- [NetBird](https://netbird.io/) — Open-core WireGuard-based zero-trust networking platform with community self-hosting, managed cloud, and licensed enterprise options.
 - [NetExec](https://www.netexec.wiki/) — Network service assessment framework for authorized Windows and directory security operations.
 - [NextDNS](https://nextdns.io/) — Managed recursive DNS service with policy-based filtering, analytics, and encrypted DNS endpoints.
 - [Nikto](https://github.com/sullo/nikto) — Web server scanner for dangerous files, outdated software, and common misconfigurations.
