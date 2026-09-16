@@ -2308,6 +2308,8 @@
   - https://github.com/ray-project/ray/releases
   - https://docs.ray.io/en/latest/cluster/getting-started.html
   - https://docs.ray.io/en/latest/cluster/kubernetes/index.html
+  - https://docs.anyscale.com/get-started/what-is-ray
+  - https://docs.anyscale.com/get-started/what-is-anyscale
   needs_review: false
 - id: reshapr
   name: reShapr
