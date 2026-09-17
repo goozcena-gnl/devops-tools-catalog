@@ -14,6 +14,7 @@
 | [AgentsRoom](https://agentsroom.dev/) | Developer experience and local environments | commercial | active |
 | [AIChat](https://github.com/sigoden/aichat) | Developer experience and local environments | oss | active |
 | [Aider](https://aider.chat) | Developer experience and local environments | oss | needs-review |
+| [Akamai Cloud (formerly Linode)](https://www.akamai.com/cloud) | Cloud platforms and cloud management | commercial | active |
 | [Akka.NET](https://getakka.net) | Emerging and experimental tools | oss | needs-review |
 | [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) | Monitoring, metrics, logs and tracing, SRE, incident response and on-call | oss | active |
 | [AlmaLinux OS](https://almalinux.org/) | Foundations, Linux and scripting | oss | active |
@@ -401,7 +402,6 @@
 | [Lightpanda Browser](https://lightpanda.io/) | CI, build and testing | oss | active |
 | [Lima](https://lima-vm.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Linnix](https://github.com/linnix-os/linnix) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Linode](https://www.linode.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [Linux Containers (LXC/LXD)](https://linuxcontainers.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Linux dsoxlab training](https://github.com/stephrobert/linux-dsoxlab-training) | Documentation, learning and career resources | documentation | active |
 | [Linux Foundation Training](https://training.linuxfoundation.org?_sft_product_type=training) | Foundations, Linux and scripting | documentation | needs-review |
@@ -423,7 +423,7 @@
 | [MemTest86](https://www.memtest86.com) | Chaos and performance engineering | unknown | needs-review |
 | [Mergify](https://mergify.com) | CI, build and testing | unknown | needs-review |
 | [micro](https://micro-editor.github.io) | Developer experience and local environments | oss | needs-review |
-| [Microsoft Azure](https://azure.microsoft.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Microsoft Azure](https://azure.microsoft.com) | Cloud platforms and cloud management | commercial | active |
 | [Microsoft Learn](https://learn.microsoft.com/en-us/training) | Documentation, learning and career resources | documentation | needs-review |
 | [Mini-classes Ansible Public](https://github.com/apille-pro/miniclasses_ansible_public) | Documentation, learning and career resources | documentation | needs-review |
 | [MiniBlue](https://miniblue.io) | Virtualization, bare metal and homelab | oss | needs-review |
@@ -484,7 +484,7 @@
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
 | [OpenWiki](https://github.com/langchain-ai/openwiki) | Developer experience and local environments | oss | needs-review |
 | [OpsQuiz](https://opsquiz.org/) | Documentation, learning and career resources | documentation | active |
-| [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | unknown | needs-review |
+| [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | commercial | active |
 | [Oracle Linux](https://www.oracle.com/linux/) | Foundations, Linux and scripting | oss | active |
 | [Oracle VirtualBox](https://www.virtualbox.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [ORAS](https://oras.land) | Artifact and package management | oss | needs-review |
@@ -566,7 +566,7 @@
 | [Salt](https://saltproject.io) | Configuration management | oss | needs-review |
 | [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) | CI, build and testing | unknown | needs-review |
 | [sbt](https://www.scala-sbt.org) | Containers and image tooling | oss | needs-review |
-| [Scaleway](https://www.scaleway.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Scaleway](https://www.scaleway.com/en/) | Cloud platforms and cloud management | commercial | active |
 | [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
 | [sccache](https://github.com/mozilla/sccache) | CI, build and testing | oss | active |
 | [Schemathesis](https://schemathesis.readthedocs.io/en/stable/) | CI, build and testing | oss | active |
@@ -679,7 +679,7 @@
 | [Volare](https://github.com/AdamShannag/volare) | Virtualization, bare metal and homelab | oss | needs-review |
 | [VSCode](https://code.visualstudio.com) | Developer experience and local environments | oss | needs-review |
 | [VSCodium](https://vscodium.com) | Developer experience and local environments | oss | needs-review |
-| [Vultr](https://www.vultr.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Vultr](https://www.vultr.com) | Cloud platforms and cloud management | commercial | active |
 | [Watchexec](https://watchexec.github.io/) | Developer experience and local environments | oss | active |
 | [Waypoint](https://developer.hashicorp.com/waypoint) | CD, GitOps, release and promotion | source-available | needs-review |
 | [Weaveworks GitOps](https://docs.gitops.weaveworks.org) | CD, GitOps, release and promotion | oss | needs-review |

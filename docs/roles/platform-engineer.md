@@ -12,6 +12,7 @@
 | [Agones](https://agones.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AITMPL Agents](https://www.aitmpl.com/agents) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Akamai Cloud (formerly Linode)](https://www.akamai.com/cloud) | Cloud platforms and cloud management | commercial | active |
 | [Akka.NET](https://getakka.net) | Emerging and experimental tools | oss | needs-review |
 | [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | commercial | active |
 | [Amazon ECS](https://aws.amazon.com/ecs/) | Kubernetes distributions and operations | commercial | active |
@@ -400,7 +401,6 @@
 | [Lens](https://lenshq.io) | Kubernetes distributions and operations | unknown | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
-| [Linode](https://www.linode.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | open-core | needs-review |
 | [LiteLLM](https://www.litellm.ai) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
@@ -419,7 +419,7 @@
 | [MetalLB](https://metallb.universe.tf) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [MicroK8s](https://microk8s.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Microsoft Azure](https://azure.microsoft.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Microsoft Azure](https://azure.microsoft.com) | Cloud platforms and cloud management | commercial | active |
 | [Microsoft Learn](https://learn.microsoft.com/en-us/training) | Documentation, learning and career resources | documentation | needs-review |
 | [Migratowl](https://migratowl.bitkaio.com) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Milvus](https://milvus.io) | MLOps, LLMOps and AI infrastructure, Databases, caching and data infrastructure | open-core | active |
@@ -470,7 +470,7 @@
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
 | [OperatorHub.io](https://operatorhub.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [OpsLevel](https://www.opslevel.com) | Platform engineering and internal developer platforms | commercial | active |
-| [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | unknown | needs-review |
+| [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | commercial | active |
 | [Oracle Kubernetes Engine](https://www.oracle.com/cloud/cloud-native/kubernetes-engine/) | Kubernetes distributions and operations | commercial | active |
 | [Orbit](https://gitlab.com/RMJx1/orbit) | Kubernetes distributions and operations | oss | needs-review |
 | [OVN-Kubernetes](https://ovn-kubernetes.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -519,7 +519,7 @@
 | [Rūsternetes](https://calfonso.github.io/rusternetes) | Kubernetes distributions and operations | oss | needs-review |
 | [Sablier](https://sablierapp.dev/) | Kubernetes distributions and operations | oss | active |
 | [sbt](https://www.scala-sbt.org) | Containers and image tooling | oss | needs-review |
-| [Scaleway](https://www.scaleway.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Scaleway](https://www.scaleway.com/en/) | Cloud platforms and cloud management | commercial | active |
 | [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) | Kubernetes distributions and operations | commercial | active |
 | [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) | Kubernetes distributions and operations | commercial | active |
 | [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
@@ -595,7 +595,7 @@
 | [vLLM](https://vllm.ai) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [VoltAgent](https://voltagent.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Vultr](https://www.vultr.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Vultr](https://www.vultr.com) | Cloud platforms and cloud management | commercial | active |
 | [Waypoint](https://developer.hashicorp.com/waypoint) | CD, GitOps, release and promotion | source-available | needs-review |
 | [Weaveworks GitOps](https://docs.gitops.weaveworks.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [webernetes](https://github.com/ngrok/webernetes) | Kubernetes distributions and operations | oss | needs-review |

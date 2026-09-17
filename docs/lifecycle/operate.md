@@ -15,6 +15,7 @@
 - [Agones](https://agones.dev) — Kubernetes-native platform for hosting, running, and scaling dedicated game servers.
 - [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) — Envoy-based AI gateway for managing LLM traffic in Kubernetes.
 - [AITMPL Agents](https://www.aitmpl.com/agents) — Directory and installer catalogue for reusable Claude Code agent prompt components.
+- [Akamai Cloud (formerly Linode)](https://www.akamai.com/cloud) — Akamai-operated public cloud platform for compute, storage, networking, Kubernetes, databases, and serverless services.
 - [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) — Azure Kubernetes Service.
 - [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) — Prometheus component that deduplicates, groups, silences, and routes alerts to notification receivers.
 - [Alertmanager receiver for Azure DevOps](https://github.com/IvanJosipovic/alertmanager-receiver-azdo) — Webhook receiver that creates and resolves Azure DevOps work items from Alertmanager notifications.
@@ -474,7 +475,6 @@
 - [Lima](https://lima-vm.io) — Linux VMs on macOS (and more).
 - [Linkerd](https://linkerd.io) — Lightweight service mesh for Kubernetes.
 - [Linnix](https://github.com/linnix-os/linnix) — EBPF and PSI-based observability for pinpointing processes and pods causing Linux stalls and incidents.
-- [Linode](https://www.linode.com) — Cloud hosting and compute services.
 - [LINSTOR](https://linbit.com/linstor) — Distributed storage management (DRBD-based) with community and enterprise support.
 - [Linux Containers (LXC/LXD)](https://linuxcontainers.org) — System containers and VM manager.
 - [Linux Foundation Training](https://training.linuxfoundation.org?_sft_product_type=training) — Official Linux and open source training resources.
@@ -510,7 +510,7 @@
 - [MetalLB](https://metallb.universe.tf) — Load balancer implementation for bare metal.
 - [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) — Resource usage metrics for Kubernetes.
 - [MicroK8s](https://microk8s.io) — Lightweight Kubernetes by Canonical.
-- [Microsoft Azure](https://azure.microsoft.com) — Cloud computing services by Microsoft.
+- [Microsoft Azure](https://azure.microsoft.com) — Microsoft's commercial cloud platform for compute, data, AI, networking, security, and hybrid and multicloud management services.
 - [Migratowl](https://migratowl.bitkaio.com) — AI-powered dependency migration analyzer.
 - [Milvus](https://milvus.io) — Distributed vector database for large-scale similarity search and retrieval workloads.
 - [MiniBlue](https://miniblue.io) — Local Azure emulator that emulates 26+ Azure services in a single binary for development and testing without an Azure account.
@@ -577,7 +577,7 @@
 - [OperatorHub.io](https://operatorhub.io/) — Community-operated web portal and OLM catalog for discovering and publishing independently licensed Kubernetes Operators.
 - [OPNsense](https://opnsense.org/opnsense/) — FreeBSD-based open-source firewall and routing platform for network security gateways.
 - [OpsLevel](https://www.opslevel.com) — SaaS internal developer portal and service catalog (scorecards, ownership, maturity).
-- [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) — Cloud services by Oracle.
+- [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) — Oracle's commercial cloud infrastructure platform for compute, storage, networking, databases, managed services, and dedicated or customer-site cloud options.
 - [Oracle Kubernetes Engine](https://www.oracle.com/cloud/cloud-native/kubernetes-engine/) — Oracle Cloud Infrastructure managed Kubernetes service for operating clusters with OCI networking and infrastructure.
 - [Oracle Linux](https://www.oracle.com/linux/) — Enterprise Linux distribution with optional commercial support and infrastructure-management services.
 - [Oracle VirtualBox](https://www.virtualbox.org) — Cross-platform type-2 hypervisor for running virtual machines on desktops and servers.
@@ -667,7 +667,7 @@
 - [Rūsternetes](https://calfonso.github.io/rusternetes) — Educational reimplementation of Kubernetes in Rust.
 - [Sablier](https://sablierapp.dev/) — Workload scaler that starts containerized services on demand and idles them after inactivity.
 - [Salt](https://saltproject.io) — Event-driven automation and configuration management.
-- [Scaleway](https://www.scaleway.com) — European cloud provider offering compute/storage services.
+- [Scaleway](https://www.scaleway.com/en/) — Commercial European cloud and AI platform providing compute, storage, networking, managed databases, Kubernetes, serverless, and bare-metal services.
 - [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) — Scaleway managed Kubernetes service for clusters running on Scaleway compute, network, and storage resources.
 - [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) — Scaleway managed Kubernetes control plane for clusters whose nodes can span cloud and on-premises infrastructure.
 - [Scanopy](https://scanopy.net/) — Self-hosted network inventory and topology mapping platform with automated device discovery.
@@ -773,7 +773,7 @@
 - [VolSync](https://volsync.readthedocs.io) — Kubernetes volume data replication.
 - [VoltAgent](https://voltagent.dev) — Open-source TypeScript framework for building AI agents.
 - [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) — Vertical Pod Autoscaler.
-- [Vultr](https://www.vultr.com) — High-performance cloud compute and infrastructure provider.
+- [Vultr](https://www.vultr.com) — Commercial public cloud platform for virtual machines, bare metal, GPU compute, managed Kubernetes, storage, networking, and databases.
 - [webernetes](https://github.com/ngrok/webernetes) — Run Kubernetes entirely in the browser for learning and experimentation.
 - [Webmin](https://webmin.com/) — Web-based administration interface for Unix systems and common server services.
 - [webssh](https://github.com/bifrost0x/webssh) — Modern web-based SSH terminal with SFTP file management.

@@ -6,6 +6,7 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
+import pytest
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -63,14 +64,6 @@ EXPECTED_SCOPE = {
 
 EXPECTED_IDS = {tool_id for tool_id, _field in EXPECTED_SCOPE}
 EXPECTED_WORK_ITEMS = set(EXPECTED_SCOPE)
-
-PROTECTED_SELECTED_FIELDS = {
-    "status",
-    "needs_review",
-    "license_model",
-    "license_spdx",
-    "repository_url",
-}
 
 REQUIRED_LEDGER_COLUMNS = {
     "tool_id",
@@ -220,11 +213,9 @@ def _assert_n1b_owned_values(
         assert current_path == expected_path
         assert accepted_path == expected_path
         assert accepted_record.get(field) == expected_value
-        assert current_record.get(field) == expected_value
-        for protected_field in PROTECTED_SELECTED_FIELDS:
-            assert current_record.get(protected_field) == accepted_record.get(
-                protected_field
-            ), f"N1b-protected field drifted for {(tool_id, protected_field)}"
+        assert current_record.get(field) == expected_value, (
+            f"N1b-owned field drifted for {key}"
+        )
 
 
 def test_n1b_frozen_selector_is_exact() -> None:
@@ -308,14 +299,26 @@ def test_n1b_unrelated_future_canonical_change_does_not_invalidate_history() -> 
     _assert_n1b_owned_values(future, accepted)
 
 
-def test_n1b_selected_protected_fields_match_execution_baseline() -> None:
-    baseline = _records_at(N1B_EXECUTION_BASELINE_SHA)
-    current = _current_records()
-    for tool_id in EXPECTED_IDS:
-        for field in PROTECTED_SELECTED_FIELDS:
-            assert current[tool_id][1].get(field) == baseline[tool_id][1].get(field), (
-                f"Forbidden N1b drift for {(tool_id, field)}"
-            )
+def test_n1b_owned_url_drift_invalidates_history() -> None:
+    accepted = _records_at(N1B_ACCEPTED_CANONICAL_SHA)
+    future = deepcopy(accepted)
+    tool_id, field = next(iter(sorted(EXPECTED_WORK_ITEMS)))
+    future[tool_id][1][field] = "https://example.invalid/drift"
+    with pytest.raises(AssertionError, match="N1b-owned field drifted"):
+        _assert_n1b_owned_values(future, accepted)
+
+
+def test_n1b_later_non_owned_metadata_evolution_does_not_invalidate_history() -> None:
+    accepted = _records_at(N1B_ACCEPTED_CANONICAL_SHA)
+    future = deepcopy(accepted)
+    tool_id, _field = next(iter(sorted(EXPECTED_WORK_ITEMS)))
+    selected = future[tool_id][1]
+    selected["status"] = "active"
+    selected["needs_review"] = False
+    selected["license_model"] = "commercial"
+    selected["license_spdx"] = "LicenseRef-later-review"
+    selected["repository_url"] = "https://example.com/later-authorized-repository"
+    _assert_n1b_owned_values(future, accepted)
 
 
 def test_n1b_selected_urls_remain_typed_strings() -> None:

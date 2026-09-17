@@ -437,9 +437,11 @@
   needs_review: false
   commercial_offering: true
 - id: linode
-  name: Linode
-  summary: Cloud hosting and compute services.
-  official_url: https://www.linode.com
+  name: Akamai Cloud (formerly Linode)
+  summary: Akamai-operated public cloud platform for compute, storage, networking, Kubernetes, databases,
+    and serverless services.
+  official_url: https://www.akamai.com/cloud
+  documentation_url: https://techdocs.akamai.com/cloud-computing/docs/welcome
   categories:
   - cloud-platforms-management
   subcategories:
@@ -453,24 +455,35 @@
   - operate
   - optimize
   use_when:
-  - You want straightforward, competitively priced Linux VMs.
+  - You need Akamai-operated public cloud compute, storage, networking, or managed Kubernetes with
+    distributed cloud regions and usage-based billing.
   avoid_when:
-  - You need a deep managed-services catalog.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an on-premises cloud deployment or an open-source platform that you can operate
+    independently of Akamai.
+  deployment_models:
+  - managed-cloud-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L20
   - legacy:devopstools_final.md#L158
-  needs_review: true
+  - https://www.akamai.com/cloud
+  - https://techdocs.akamai.com/cloud-computing/docs/welcome
+  - https://techdocs.akamai.com/cloud-computing/docs/understanding-how-billing-works
+  - https://www.akamai.com/newsroom/press-release/akamai-completes-acquisition-of-linode
+  - https://www.akamai.com/newsroom/press-release/akamai-unveils-akamai-connected-cloud-and-new-cloud-computing-services
+  needs_review: false
 - id: microsoft-azure
   name: Microsoft Azure
-  summary: Cloud computing services by Microsoft.
+  summary: Microsoft's commercial cloud platform for compute, data, AI, networking, security, and
+    hybrid and multicloud management services.
   official_url: https://azure.microsoft.com
+  documentation_url: https://learn.microsoft.com/en-us/azure/
   categories:
   - cloud-platforms-management
   subcategories:
@@ -484,20 +497,29 @@
   - operate
   - optimize
   use_when:
-  - You're invested in the Microsoft ecosystem or need hybrid with Azure Arc.
+  - You need Microsoft-operated public cloud services or Azure Arc-based management across Azure,
+    multicloud, and on-premises resources.
   avoid_when:
-  - You want the simplest developer onboarding experience.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require a self-hosted open-source cloud platform or cannot adopt Azure subscriptions,
+    regional availability constraints, and consumption-based billing.
+  deployment_models:
+  - managed-cloud-service
+  - hybrid-cloud
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L22
   - legacy:devopstools_final.md#L159
-  needs_review: true
+  - https://azure.microsoft.com/en-us
+  - https://learn.microsoft.com/en-us/azure/
+  - https://azure.microsoft.com/en-us/pricing/
+  - https://learn.microsoft.com/en-us/azure/azure-arc/overview
+  needs_review: false
 - id: morpheus-data
   name: Morpheus Data
   summary: Hybrid cloud management platform.
@@ -568,8 +590,10 @@
   needs_review: false
 - id: oracle-cloud-infrastructure-oci
   name: Oracle Cloud Infrastructure (OCI)
-  summary: Cloud services by Oracle.
+  summary: Oracle's commercial cloud infrastructure platform for compute, storage, networking,
+    databases, managed services, and dedicated or customer-site cloud options.
   official_url: https://www.oracle.com/cloud
+  documentation_url: https://docs.oracle.com/en-us/iaas/Content/home.htm
   categories:
   - cloud-platforms-management
   subcategories:
@@ -583,24 +607,35 @@
   - operate
   - optimize
   use_when:
-  - You need Oracle Database workloads or generous free-tier compute.
+  - You need Oracle-operated public cloud infrastructure, Oracle Database integration, or OCI
+    dedicated and Cloud@Customer deployment options.
   avoid_when:
-  - Community support and third-party integrations are critical.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require a self-hosted open-source cloud platform or a provider-independent control plane and
+    service catalogue.
+  deployment_models:
+  - managed-cloud-service
+  - hybrid-cloud
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L24
   - legacy:devopstools_final.md#L160
-  needs_review: true
+  - https://www.oracle.com/cloud/
+  - https://docs.oracle.com/en-us/iaas/Content/home.htm
+  - https://www.oracle.com/cloud/pricing/
+  - https://docs.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm
+  needs_review: false
 - id: scaleway
   name: Scaleway
-  summary: European cloud provider offering compute/storage services.
-  official_url: https://www.scaleway.com
+  summary: Commercial European cloud and AI platform providing compute, storage, networking, managed
+    databases, Kubernetes, serverless, and bare-metal services.
+  official_url: https://www.scaleway.com/en/
+  documentation_url: https://www.scaleway.com/en/docs/
   categories:
   - cloud-platforms-management
   subcategories:
@@ -614,20 +649,29 @@
   - operate
   - optimize
   use_when:
-  - You need EU data sovereignty and competitive pricing.
+  - You need commercially operated cloud and AI services hosted in European regions, including
+    compute, storage, Kubernetes, serverless, or bare metal.
   avoid_when:
-  - You require a global edge network or extensive managed services.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require regions outside Scaleway's documented footprint or need to operate the parent cloud
+    platform on your own infrastructure.
+  deployment_models:
+  - managed-cloud-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L26
   - legacy:devopstools_final.md#L161
-  needs_review: true
+  - https://www.scaleway.com/en/
+  - https://www.scaleway.com/en/docs/
+  - https://www.scaleway.com/en/pricing/
+  - https://www.scaleway.com/en/docs/billing/faq/
+  - https://www.scaleway.com/en/about-us/
+  needs_review: false
 - id: steampipe
   name: Steampipe
   summary: AGPL source project for querying cloud APIs with SQL; Turbot-built binaries and hosted services
@@ -695,8 +739,10 @@
   needs_review: true
 - id: vultr
   name: Vultr
-  summary: High-performance cloud compute and infrastructure provider.
+  summary: Commercial public cloud platform for virtual machines, bare metal, GPU compute, managed
+    Kubernetes, storage, networking, and databases.
   official_url: https://www.vultr.com
+  documentation_url: https://docs.vultr.com/
   categories:
   - cloud-platforms-management
   subcategories:
@@ -710,17 +756,26 @@
   - operate
   - optimize
   use_when:
-  - You want cheap, high-performance bare metal or cloud compute worldwide.
+  - You need usage-billed public cloud compute, GPU, bare metal, Kubernetes, storage, or networking
+    across Vultr regions.
   avoid_when:
-  - You require managed PaaS-level services.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an on-premises cloud deployment or a self-hosted open-source platform independent of
+    Vultr.
+  deployment_models:
+  - managed-cloud-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L28
   - legacy:devopstools_final.md#L162
-  needs_review: true
+  - https://www.vultr.com/
+  - https://docs.vultr.com/
+  - https://www.vultr.com/pricing/
+  - https://docs.vultr.com/support/platform/billing/how-am-i-billed-for-my-servers
+  - https://docs.vultr.com/reference/terraform
+  needs_review: false

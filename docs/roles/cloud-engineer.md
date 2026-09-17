@@ -10,6 +10,7 @@
 | [agentmemory](https://www.agent-memory.dev) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [agentsmith](https://github.com/PromptPartner/agentsmith) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AITMPL Agents](https://www.aitmpl.com/agents) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Akamai Cloud (formerly Linode)](https://www.akamai.com/cloud) | Cloud platforms and cloud management | commercial | active |
 | [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
@@ -182,7 +183,6 @@
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LearnKube](https://learnkube.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | needs-review |
-| [Linode](https://www.linode.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [LiteLLM](https://www.litellm.ai) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [llm-d](https://github.com/llm-d) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [llmfit](https://github.com/AlexsJones/llmfit) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -191,7 +191,7 @@
 | [mcpsnoop](https://github.com/kerlenton/mcpsnoop) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Meilisearch](https://www.meilisearch.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Memcached](https://memcached.org) | Databases, caching and data infrastructure | oss | needs-review |
-| [Microsoft Azure](https://azure.microsoft.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Microsoft Azure](https://azure.microsoft.com) | Cloud platforms and cloud management | commercial | active |
 | [Microsoft Learn](https://learn.microsoft.com/en-us/training) | Documentation, learning and career resources | documentation | needs-review |
 | [Migratowl](https://migratowl.bitkaio.com) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Milvus](https://milvus.io) | MLOps, LLMOps and AI infrastructure, Databases, caching and data infrastructure | open-core | active |
@@ -222,7 +222,7 @@
 | [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) | Kubernetes distributions and operations, Cloud platforms and cloud management | oss | active |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
-| [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | unknown | needs-review |
+| [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | commercial | active |
 | [Oracle Kubernetes Engine](https://www.oracle.com/cloud/cloud-native/kubernetes-engine/) | Kubernetes distributions and operations | commercial | active |
 | [Packer](https://www.packer.io) | Infrastructure as Code | source-available | needs-review |
 | [passbolt](https://www.passbolt.com) | IAM, secrets and certificate management | open-core | needs-review |
@@ -246,7 +246,7 @@
 | [Roadmap.sh](https://roadmap.sh) | Documentation, learning and career resources | documentation | needs-review |
 | [Root Me](https://www.root-me.org/) | Documentation, learning and career resources | documentation | active |
 | [RustFS](https://rustfs.com) | Databases, caching and data infrastructure | oss | needs-review |
-| [Scaleway](https://www.scaleway.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Scaleway](https://www.scaleway.com/en/) | Cloud platforms and cloud management | commercial | active |
 | [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) | Kubernetes distributions and operations | commercial | active |
 | [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) | Kubernetes distributions and operations | commercial | active |
 | [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
@@ -297,7 +297,7 @@
 | [vLLM](https://vllm.ai) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [VolSync](https://volsync.readthedocs.io) | Backup, disaster recovery and resilience | oss | needs-review |
 | [VoltAgent](https://voltagent.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Vultr](https://www.vultr.com) | Cloud platforms and cloud management | unknown | needs-review |
+| [Vultr](https://www.vultr.com) | Cloud platforms and cloud management | commercial | active |
 | [webssh](https://github.com/bifrost0x/webssh) | IAM, secrets and certificate management | oss | needs-review |
 | [Xata](https://xata.io) | Databases, caching and data infrastructure | unknown | needs-review |
 | [XCA](https://www.hohnstaedt.de/xca) | IAM, secrets and certificate management | oss | needs-review |

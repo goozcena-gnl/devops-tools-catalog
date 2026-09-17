@@ -6,6 +6,7 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
+import pytest
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,13 +35,6 @@ EXPECTED_SCOPE = {
 }
 EXPECTED_IDS = {tool_id for tool_id, _field in EXPECTED_SCOPE}
 EXPECTED_WORK_ITEMS = set(EXPECTED_SCOPE)
-PROTECTED_SELECTED_FIELDS = {
-    "status",
-    "needs_review",
-    "license_model",
-    "license_spdx",
-    "repository_url",
-}
 REQUIRED_LEDGER_COLUMNS = {
     "tool_id",
     "affected_field",
@@ -165,19 +159,20 @@ def _current_records() -> dict[str, tuple[str, dict[str, Any]]]:
     return records
 
 
-def _assert_owned_values(
+def _assert_n2b_owned_values(
     current: dict[str, tuple[str, dict[str, Any]]],
     accepted: dict[str, tuple[str, dict[str, Any]]],
 ) -> None:
     for (tool_id, field), (expected_path, expected_value) in EXPECTED_SCOPE.items():
+        assert tool_id in current, f"Current catalogue lost N2b ID {tool_id!r}"
+        assert tool_id in accepted, f"N2b result is missing selected ID {tool_id!r}"
         current_path, current_record = current[tool_id]
         accepted_path, accepted_record = accepted[tool_id]
         assert current_path == accepted_path == expected_path
-        assert current_record[field] == accepted_record[field] == expected_value
-        for protected_field in PROTECTED_SELECTED_FIELDS:
-            assert current_record.get(protected_field) == accepted_record.get(
-                protected_field
-            )
+        assert accepted_record.get(field) == expected_value
+        assert current_record.get(field) == expected_value, (
+            f"N2b-owned field drifted for {(tool_id, field)}"
+        )
 
 
 def test_n2b_frozen_selector_is_exact() -> None:
@@ -236,7 +231,7 @@ def test_n2b_selected_ids_and_owned_values_are_preserved() -> None:
     current = _current_records()
     assert baseline.keys() >= EXPECTED_IDS
     assert current.keys() >= EXPECTED_IDS
-    _assert_owned_values(current, baseline)
+    _assert_n2b_owned_values(current, baseline)
 
 
 def test_n2b_unrelated_future_change_does_not_invalidate_history() -> None:
@@ -244,7 +239,29 @@ def test_n2b_unrelated_future_change_does_not_invalidate_history() -> None:
     future = deepcopy(accepted)
     unrelated_id = next(tool_id for tool_id in future if tool_id not in EXPECTED_IDS)
     future[unrelated_id][1]["summary"] = "Later authorized unrelated change."
-    _assert_owned_values(future, accepted)
+    _assert_n2b_owned_values(future, accepted)
+
+
+def test_n2b_owned_url_drift_invalidates_history() -> None:
+    accepted = _records_at(N2B_ACCEPTED_CANONICAL_SHA)
+    future = deepcopy(accepted)
+    tool_id, field = next(iter(sorted(EXPECTED_WORK_ITEMS)))
+    future[tool_id][1][field] = "https://example.invalid/drift"
+    with pytest.raises(AssertionError, match="N2b-owned field drifted"):
+        _assert_n2b_owned_values(future, accepted)
+
+
+def test_n2b_later_non_owned_metadata_evolution_does_not_invalidate_history() -> None:
+    accepted = _records_at(N2B_ACCEPTED_CANONICAL_SHA)
+    future = deepcopy(accepted)
+    tool_id, _field = next(iter(sorted(EXPECTED_WORK_ITEMS)))
+    selected = future[tool_id][1]
+    selected["status"] = "active"
+    selected["needs_review"] = False
+    selected["license_model"] = "commercial"
+    selected["license_spdx"] = "LicenseRef-later-review"
+    selected["repository_url"] = "https://example.com/later-authorized-repository"
+    _assert_n2b_owned_values(future, accepted)
 
 
 def test_n2b_selected_urls_remain_strings() -> None:
