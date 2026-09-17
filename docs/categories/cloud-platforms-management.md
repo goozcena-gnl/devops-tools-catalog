@@ -5,6 +5,25 @@
 
 [Back to catalogue](../../README.md)
 
+### Akamai Cloud (formerly Linode)
+
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+Akamai-operated public cloud platform for compute, storage, networking, Kubernetes, databases, and serverless services.
+
+**Use when**
+
+- You need Akamai-operated public cloud compute, storage, networking, or managed Kubernetes with distributed cloud regions and usage-based billing.
+
+**Consider alternatives when**
+
+- You require an on-premises cloud deployment or an open-source platform that you can operate independently of Akamai.
+
+[Official site](https://www.akamai.com/cloud) · [Documentation](https://techdocs.akamai.com/cloud-computing/docs/welcome)
+
 ### Amazon Web Services (AWS)
 
 **Categories:** Cloud platforms and cloud management<br>
@@ -309,43 +328,24 @@ Enterprise cloud services and infrastructure by IBM.
 
 [Official site](https://www.ibm.com/products/cloud)
 
-### Linode
-
-**Categories:** Cloud platforms and cloud management<br>
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Cloud hosting and compute services.
-
-**Use when**
-
-- You want straightforward, competitively priced Linux VMs.
-
-**Consider alternatives when**
-
-- You need a deep managed-services catalog.
-
-[Official site](https://www.linode.com)
-
 ### Microsoft Azure
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud computing services by Microsoft.
+Microsoft's commercial cloud platform for compute, data, AI, networking, security, and hybrid and multicloud management services.
 
 **Use when**
 
-- You're invested in the Microsoft ecosystem or need hybrid with Azure Arc.
+- You need Microsoft-operated public cloud services or Azure Arc-based management across Azure, multicloud, and on-premises resources.
 
 **Consider alternatives when**
 
-- You want the simplest developer onboarding experience.
+- You require a self-hosted open-source cloud platform or cannot adopt Azure subscriptions, regional availability constraints, and consumption-based billing.
 
-[Official site](https://azure.microsoft.com)
+[Official site](https://azure.microsoft.com) · [Documentation](https://learn.microsoft.com/en-us/azure/)
 
 ### Morpheus Data
 
@@ -408,39 +408,39 @@ OpenStack service for provisioning and managing container orchestration clusters
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud services by Oracle.
+Oracle's commercial cloud infrastructure platform for compute, storage, networking, databases, managed services, and dedicated or customer-site cloud options.
 
 **Use when**
 
-- You need Oracle Database workloads or generous free-tier compute.
+- You need Oracle-operated public cloud infrastructure, Oracle Database integration, or OCI dedicated and Cloud@Customer deployment options.
 
 **Consider alternatives when**
 
-- Community support and third-party integrations are critical.
+- You require a self-hosted open-source cloud platform or a provider-independent control plane and service catalogue.
 
-[Official site](https://www.oracle.com/cloud)
+[Official site](https://www.oracle.com/cloud) · [Documentation](https://docs.oracle.com/en-us/iaas/Content/home.htm)
 
 ### Scaleway
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-European cloud provider offering compute/storage services.
+Commercial European cloud and AI platform providing compute, storage, networking, managed databases, Kubernetes, serverless, and bare-metal services.
 
 **Use when**
 
-- You need EU data sovereignty and competitive pricing.
+- You need commercially operated cloud and AI services hosted in European regions, including compute, storage, Kubernetes, serverless, or bare metal.
 
 **Consider alternatives when**
 
-- You require a global edge network or extensive managed services.
+- You require regions outside Scaleway's documented footprint or need to operate the parent cloud platform on your own infrastructure.
 
-[Official site](https://www.scaleway.com)
+[Official site](https://www.scaleway.com/en/) · [Documentation](https://www.scaleway.com/en/docs/)
 
 ### Steampipe
 
@@ -484,17 +484,17 @@ Hybrid cloud management.
 
 **Categories:** Cloud platforms and cloud management<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-High-performance cloud compute and infrastructure provider.
+Commercial public cloud platform for virtual machines, bare metal, GPU compute, managed Kubernetes, storage, networking, and databases.
 
 **Use when**
 
-- You want cheap, high-performance bare metal or cloud compute worldwide.
+- You need usage-billed public cloud compute, GPU, bare metal, Kubernetes, storage, or networking across Vultr regions.
 
 **Consider alternatives when**
 
-- You require managed PaaS-level services.
+- You require an on-premises cloud deployment or a self-hosted open-source platform independent of Vultr.
 
-[Official site](https://www.vultr.com)
+[Official site](https://www.vultr.com) · [Documentation](https://docs.vultr.com/)

@@ -3,6 +3,7 @@
 
 54 records support this lifecycle stage.
 
+- [Akamai Cloud (formerly Linode)](https://www.akamai.com/cloud) — Akamai-operated public cloud platform for compute, storage, networking, Kubernetes, databases, and serverless services.
 - [Amazon Web Services (AWS)](https://aws.amazon.com/) — Comprehensive cloud computing platform by Amazon.
 - [Apache CloudStack](https://cloudstack.apache.org) — Open source infrastructure-as-a-service platform for building and managing private and public clouds.
 - [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) — Hybrid cloud storage service.
@@ -37,22 +38,21 @@
 - [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) — Calculator for estimating Kubernetes node counts and cluster capacity from workload requirements.
 - [Kubex](https://kubex.ai/) — AI-driven Kubernetes and GPU resource optimization platform for pod scaling, node tuning, and capacity efficiency.
 - [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) — Calculator for choosing cost-effective cloud instance sizes for Kubernetes workloads.
-- [Linode](https://www.linode.com) — Cloud hosting and compute services.
-- [Microsoft Azure](https://azure.microsoft.com) — Cloud computing services by Microsoft.
+- [Microsoft Azure](https://azure.microsoft.com) — Microsoft's commercial cloud platform for compute, data, AI, networking, security, and hybrid and multicloud management services.
 - [Morpheus Data](https://morpheusdata.com) — Hybrid cloud management platform.
 - [Nutanix Cloud Manager Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) — Commercial on-premises cost metering, chargeback, budgeting, and analytics capability within Nutanix Cloud Manager.
 - [oha](https://github.com/hatoo/oha) — HTTP load-generation CLI with an interactive results display.
 - [OpenCost](https://www.opencost.io) — CNCF incubating open standard and project for Kubernetes cost monitoring and allocation.
-- [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) — Cloud services by Oracle.
+- [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) — Oracle's commercial cloud infrastructure platform for compute, storage, networking, databases, managed services, and dedicated or customer-site cloud options.
 - [PointFive](https://www.pointfive.co/) — Commercial agentless cloud and AI efficiency platform for detecting waste, attributing costs, and guiding or automating remediation.
 - [Praesto](https://github.com/federicolepera/praesto) — Kubernetes-native model cache system using an operator, node agent, and CSI driver to stage model artifacts on cluster nodes.
 - [ProsperOps](https://www.prosperops.com/) — Flexera-owned SaaS platform that autonomously manages cloud commitment discounts and scheduled workload optimization across AWS, Azure, and Google Cloud.
-- [Scaleway](https://www.scaleway.com) — European cloud provider offering compute/storage services.
+- [Scaleway](https://www.scaleway.com/en/) — Commercial European cloud and AI platform providing compute, storage, networking, managed databases, Kubernetes, serverless, and bare-metal services.
 - [Spot FinOps](https://spot.io/solutions/finops) — Cloud cost optimization.
 - [Ternary](https://ternary.app) — Cloud cost optimization for Terraform.
 - [VegaCloud Inform](https://www.vegacloud.io/products/inform) — Cloud cost management.
 - [Virtana](https://www.virtana.com) — Hybrid cloud management.
-- [Vultr](https://www.vultr.com) — High-performance cloud compute and infrastructure provider.
+- [Vultr](https://www.vultr.com) — Commercial public cloud platform for virtual machines, bare metal, GPU compute, managed Kubernetes, storage, networking, and databases.
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 - [Xosphere](https://www.xosphere.io) — Cloud cost optimization platform focused on automating AWS Spot and EC2 savings.
 - [Yotascale](https://www.yotascale.com) — Cloud cost management.
