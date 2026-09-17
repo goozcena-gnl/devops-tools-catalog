@@ -4126,8 +4126,12 @@
   needs_review: false
 - id: tarook
   name: Tarook
-  summary: Cloud-native platform for streamlined Kubernetes and infrastructure management.
-  official_url: https://tarook.cloud/en
+  summary: Apache-licensed Kubernetes distribution and lifecycle-management toolkit for OpenStack,
+    Proxmox VE, and bare-metal infrastructure.
+  official_url: https://tarook.cloud/en/
+  repository_url: https://gitlab.com/alasca.cloud/tarook/tarook
+  repository_archived: false
+  documentation_url: https://docs.tarook.cloud/
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -4139,18 +4143,32 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need reproducible lifecycle management for kubeadm-based clusters on OpenStack, Proxmox VE,
+    or bare-metal infrastructure.
+  avoid_when:
+  - You prefer a managed Kubernetes control plane or do not want to operate its Ansible, Nix, and
+    Terraform workflow.
+  deployment_models:
+  - self-hosted
+  - bare-metal
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:devopstools_final.md#L524
-  needs_review: true
+  - https://tarook.cloud/en/
+  - https://docs.tarook.cloud/
+  - https://gitlab.com/alasca.cloud/tarook/tarook
+  - https://gitlab.com/alasca.cloud/tarook/tarook/-/blob/devel/LICENSE.txt
+  - https://docs.tarook.cloud/release/v10.1/releasenotes.html
+  - https://docs.tarook.cloud/release/v14.0/releasenotes.html
+  needs_review: false
 - id: tuning-linux-swap-for-kubernetes
   name: Tuning Linux Swap for Kubernetes
   summary: Guide to optimizing swap for Kubernetes nodes.

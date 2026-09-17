@@ -276,7 +276,7 @@
 | [Loft Vind](https://github.com/loft-sh/vind) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Logstash](https://www.elastic.co/logstash) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Luxury Yacht](https://luxury-yacht.app) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [Luxury Yacht](https://luxury-yacht.app/) | Kubernetes networking, storage and add-ons | oss | active |
 | [M/Monit](https://www.mmonit.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [m9sweeper](https://m9sweeper.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Maintenant](https://maintenant.dev) | Monitoring, metrics, logs and tracing | unknown | needs-review |
@@ -389,7 +389,7 @@
 | [systemd](https://systemd.io) | Foundations, Linux and scripting | oss | active |
 | [Talos](https://www.talos.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Talos Node Updater (tnu)](https://github.com/jfroy/tnu) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
-| [Tarook](https://tarook.cloud/en) | Kubernetes distributions and operations | unknown | needs-review |
+| [Tarook](https://tarook.cloud/en/) | Kubernetes distributions and operations | oss | active |
 | [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Telepresence](https://www.telepresence.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |

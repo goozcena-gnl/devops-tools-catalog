@@ -201,7 +201,7 @@
 | [Reaver](https://github.com/t6x/reaver-wps-fork-t6x) | Application and cloud security | unknown | needs-review |
 | [Red Labs](https://redlabs.enterprisesecurity.io) | Application and cloud security | documentation | needs-review |
 | [Risk Analysis Editor](https://www.risk-analysis-editor.com/) | Policy, governance and compliance | oss | active |
-| [RITA](https://www.activecountermeasures.com/free-tools/rita) | Application and cloud security | unknown | needs-review |
+| [RITA](https://www.activecountermeasures.com/free-tools/rita/) | Application and cloud security | oss | active |
 | [ROADtools](https://github.com/dirkjanm/ROADtools) | Application and cloud security | oss | active |
 | [RustScan](https://github.com/bee-san/rustscan) | Application and cloud security | oss | active |
 | [RustSec Advisory Database](https://rustsec.org/) | Software supply-chain security | documentation | active |
@@ -223,7 +223,7 @@
 | [SOOS DAST](https://hub.docker.com/r/soosio/dast) | Application and cloud security | open-core | needs-review |
 | [SOPS](https://getsops.io) | IAM, secrets and certificate management | oss | needs-review |
 | [sqlmap](https://sqlmap.org/) | Application and cloud security | oss | active |
-| [SSOReady](https://ssoready.com) | IAM, secrets and certificate management | unknown | needs-review |
+| [SSOReady](https://ssoready.com/) | IAM, secrets and certificate management | oss | active |
 | [StepSecurity](https://www.stepsecurity.io/) | Software supply-chain security | commercial | active |
 | [StrongKey](https://www.strongkey.com) | IAM, secrets and certificate management | unknown | needs-review |
 | [subfinder](https://github.com/projectdiscovery/subfinder) | Application and cloud security | oss | active |

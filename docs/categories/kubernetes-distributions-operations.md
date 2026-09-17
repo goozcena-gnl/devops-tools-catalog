@@ -2789,20 +2789,20 @@ Archived Go utility that coordinated Talos Linux node upgrades through the Talos
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Cloud-native platform for streamlined Kubernetes and infrastructure management.
+Apache-licensed Kubernetes distribution and lifecycle-management toolkit for OpenStack, Proxmox VE, and bare-metal infrastructure.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need reproducible lifecycle management for kubeadm-based clusters on OpenStack, Proxmox VE, or bare-metal infrastructure.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You prefer a managed Kubernetes control plane or do not want to operate its Ansible, Nix, and Terraform workflow.
 
-[Official site](https://tarook.cloud/en)
+[Official site](https://tarook.cloud/en/) · [Documentation](https://docs.tarook.cloud/) · [Source repository](https://gitlab.com/alasca.cloud/tarook/tarook)
 
 ### Tuning Linux Swap for Kubernetes
 

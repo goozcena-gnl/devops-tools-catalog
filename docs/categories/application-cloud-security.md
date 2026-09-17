@@ -2779,20 +2779,20 @@ Security labs/training environment.
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Network traffic analysis tool for detecting command-and-control and beaconing behavior.
+Open-source network-traffic analysis framework for detecting command-and-control behavior in Zeek logs.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want to analyze Zeek logs for beaconing and other command-and-control behavior on self-managed Linux infrastructure.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a managed service, endpoint protection platform, or the commercial AC-Hunter GUI and support features.
 
-[Official site](https://www.activecountermeasures.com/free-tools/rita)
+[Official site](https://www.activecountermeasures.com/free-tools/rita/) · [Documentation](https://github.com/activecm/rita#readme) · [Source repository](https://github.com/activecm/rita)
 
 ### ROADtools
 

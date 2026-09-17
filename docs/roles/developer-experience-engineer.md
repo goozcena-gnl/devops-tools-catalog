@@ -201,7 +201,7 @@
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |
 | [Termic](https://termic.dev/) | Developer experience and local environments | oss | active |
 | [terminal-browser](https://terminal-browser.com/) | Developer experience and local environments | oss | active |
-| [Termix](https://termix.site) | Developer experience and local environments | unknown | needs-review |
+| [Termix](https://termix.site/) | Developer experience and local environments | oss | active |
 | [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | needs-review |
 | [Testcontainers](https://github.com/testcontainers) | CI, build and testing | open-core | needs-review |
 | [Testkube](https://testkube.io) | CI, build and testing | unknown | needs-review |

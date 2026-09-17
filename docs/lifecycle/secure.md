@@ -193,7 +193,7 @@
 - [Reaver](https://github.com/t6x/reaver-wps-fork-t6x) — Wireless security assessment utility for evaluating WPS-enabled access points.
 - [Red Labs](https://redlabs.enterprisesecurity.io) — Security labs/training environment.
 - [Risk Analysis Editor](https://www.risk-analysis-editor.com/) — Offline browser-based editor for configurable risk registers, treatment plans, matrices, and reports.
-- [RITA](https://www.activecountermeasures.com/free-tools/rita) — Network traffic analysis tool for detecting command-and-control and beaconing behavior.
+- [RITA](https://www.activecountermeasures.com/free-tools/rita/) — Open-source network-traffic analysis framework for detecting command-and-control behavior in Zeek logs.
 - [ROADtools](https://github.com/dirkjanm/ROADtools) — Collection of Microsoft Entra ID data, authentication, and security-analysis utilities.
 - [RustScan](https://github.com/bee-san/rustscan) — Fast port-discovery utility designed to hand identified services to deeper analysis tools.
 - [RustSec Advisory Database](https://rustsec.org/) — Community advisory database for security and maintenance issues in Rust dependencies.
@@ -217,7 +217,7 @@
 - [SOPS](https://getsops.io) — Secrets management tool for GitOps/IaC (encrypt YAML/JSON/env).
 - [SPIRE](https://spiffe.io/docs/latest/spire-about/) — SPIFFE runtime environment that issues and rotates workload identities across heterogeneous infrastructure.
 - [sqlmap](https://sqlmap.org/) — Automated SQL injection detection and database security-testing utility.
-- [SSOReady](https://ssoready.com) — Enterprise SSO and SCIM integration platform for adding SAML login and directory sync to applications.
+- [SSOReady](https://ssoready.com/) — MIT-licensed SAML and SCIM middleware available as a hosted service or complete self-hosted deployment.
 - [Steampipe](https://steampipe.io/) — AGPL source project for querying cloud APIs with SQL; Turbot-built binaries and hosted services use separate commercial terms.
 - [StepSecurity](https://www.stepsecurity.io/) — Commercial software supply-chain security platform for GitHub Actions policy, remediation, and runner runtime protection.
 - [StrongKey](https://www.strongkey.com) — Enterprise key management.

@@ -678,20 +678,20 @@ SPIFFE runtime environment that issues and rotates workload identities across he
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Enterprise SSO and SCIM integration platform for adding SAML login and directory sync to applications.
+MIT-licensed SAML and SCIM middleware available as a hosted service or complete self-hosted deployment.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need to add SAML SSO or SCIM provisioning to an application using a hosted service or a complete self-hosted implementation.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a full identity provider or cannot operate authentication middleware and its PostgreSQL-backed services.
 
-[Official site](https://ssoready.com)
+[Official site](https://ssoready.com/) · [Documentation](https://ssoready.com/docs) · [Source repository](https://github.com/ssoready/ssoready)
 
 ### StrongKey
 

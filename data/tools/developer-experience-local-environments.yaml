@@ -2509,8 +2509,12 @@
   needs_review: false
 - id: termix
   name: Termix
-  summary: Browser-based terminal multiplexer for managing remote shell sessions from any device.
-  official_url: https://termix.site
+  summary: Self-hosted server-management platform for SSH, remote desktop, file transfer, tunnels,
+    and infrastructure access from web, desktop, and mobile clients.
+  official_url: https://termix.site/
+  repository_url: https://github.com/Termix-SSH/Termix
+  repository_archived: false
+  documentation_url: https://docs.termix.site/
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -2521,18 +2525,34 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want a self-hosted interface for SSH, remote desktop, file transfer, tunnels, and server
+    management across web and native clients.
+  avoid_when:
+  - You require a vendor-operated hosted service or cannot secure and maintain the Termix server and
+    remote-access dependencies.
+  deployment_models:
+  - self-hosted
+  - container
+  - kubernetes
+  - desktop
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:devopstools_final.md#L1072
-  needs_review: true
+  - https://termix.site/
+  - https://docs.termix.site/
+  - https://github.com/Termix-SSH/Termix
+  - https://github.com/Termix-SSH/Termix/blob/main/LICENSE
+  - https://docs.termix.site/install/
+  - https://github.com/Termix-SSH/Termix/releases/tag/release-2.7.1-tag
+  needs_review: false
 - id: tunnelto-dev
   name: tunnelto.dev
   summary: Expose your local web server to the internet with a public URL via secure tunnels.

@@ -380,7 +380,7 @@
 - [LocalStack](https://www.localstack.cloud) — Licensed local AWS emulation platform delivered through a unified image, with a non-commercial Hobby plan and paid commercial-use plans.
 - [Loft Vind](https://github.com/loft-sh/vind) — Loft Labs tool (see repository for capabilities and usage).
 - [Longhorn](https://longhorn.io) — Cloud native distributed block storage for Kubernetes.
-- [Luxury Yacht](https://luxury-yacht.app) — Desktop application for Kubernetes management.
+- [Luxury Yacht](https://luxury-yacht.app/) — Cross-platform desktop application for inspecting and managing Kubernetes clusters.
 - [m9sweeper](https://m9sweeper.io) — Kubernetes security and compliance tool.
 - [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) — Kubernetes operator for managing MariaDB lifecycle, replication, Galera clustering, backups, and upgrades.
 - [MariaDB Server](https://mariadb.org/) — Open-source relational database server with MySQL heritage.
@@ -532,7 +532,7 @@
 - [System Upgrade Controller](https://github.com/rancher/system-upgrade-controller) — Automate Kubernetes upgrades.
 - [systemd](https://systemd.io) — Linux system and service manager providing process supervision, logging, timers, and host lifecycle controls.
 - [Talos](https://www.talos.dev) — Secure, immutable Kubernetes OS.
-- [Tarook](https://tarook.cloud/en) — Cloud-native platform for streamlined Kubernetes and infrastructure management.
+- [Tarook](https://tarook.cloud/en/) — Apache-licensed Kubernetes distribution and lifecycle-management toolkit for OpenStack, Proxmox VE, and bare-metal infrastructure.
 - [Technitium DNS Server](https://technitium.com/dns/) — Self-hosted authoritative and recursive DNS server with an administrative web interface and blocking capabilities.
 - [Telepresence](https://www.telepresence.io) — Local dev against remote Kubernetes.
 - [Terraform](https://www.terraform.io) — Infrastructure provisioning tool.
