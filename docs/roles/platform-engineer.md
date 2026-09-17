@@ -409,7 +409,7 @@
 | [LM Studio](https://lmstudio.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Loft Vind](https://github.com/loft-sh/vind) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Luxury Yacht](https://luxury-yacht.app) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [Luxury Yacht](https://luxury-yacht.app/) | Kubernetes networking, storage and add-ons | oss | active |
 | [m9sweeper](https://m9sweeper.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [mcp-server-kubernetes](https://www.npmjs.com/package/mcp-server-kubernetes) | MLOps, LLMOps and AI infrastructure, Kubernetes distributions and operations | oss | active |
@@ -556,7 +556,7 @@
 | [System Upgrade Controller](https://github.com/rancher/system-upgrade-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Talos](https://www.talos.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Talos Node Updater (tnu)](https://github.com/jfroy/tnu) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
-| [Tarook](https://tarook.cloud/en) | Kubernetes distributions and operations | unknown | needs-review |
+| [Tarook](https://tarook.cloud/en/) | Kubernetes distributions and operations | oss | active |
 | [TechOps Examples](https://www.techopsexamples.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Telepresence](https://www.telepresence.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Ternary](https://ternary.app) | FinOps and sustainability | unknown | needs-review |

@@ -4162,8 +4162,12 @@
   needs_review: true
 - id: rita
   name: RITA
-  summary: Network traffic analysis tool for detecting command-and-control and beaconing behavior.
-  official_url: https://www.activecountermeasures.com/free-tools/rita
+  summary: Open-source network-traffic analysis framework for detecting command-and-control behavior
+    in Zeek logs.
+  official_url: https://www.activecountermeasures.com/free-tools/rita/
+  repository_url: https://github.com/activecm/rita
+  repository_archived: false
+  documentation_url: https://github.com/activecm/rita#readme
   categories:
   - application-cloud-security
   subcategories:
@@ -4174,18 +4178,32 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want to analyze Zeek logs for beaconing and other command-and-control behavior on self-managed
+    Linux infrastructure.
+  avoid_when:
+  - You need a managed service, endpoint protection platform, or the commercial AC-Hunter GUI and
+    support features.
+  deployment_models:
+  - self-hosted
+  - container
+  - local-cli
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:devopstools_final.md#L964
-  needs_review: true
+  - https://www.activecountermeasures.com/free-tools/rita/
+  - https://github.com/activecm/rita
+  - https://github.com/activecm/rita/blob/main/LICENSE
+  - https://github.com/activecm/rita/releases/tag/v5.1.2
+  - https://www.activecountermeasures.com/ac-hunter-community-edition-v6-to-rita-v5/
+  needs_review: false
 - id: roadtools
   name: ROADtools
   summary: Collection of Microsoft Entra ID data, authentication, and security-analysis utilities.

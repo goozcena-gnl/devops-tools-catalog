@@ -230,7 +230,7 @@
 | [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
 | [Loft Vind](https://github.com/loft-sh/vind) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Luxury Yacht](https://luxury-yacht.app) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [Luxury Yacht](https://luxury-yacht.app/) | Kubernetes networking, storage and add-ons | oss | active |
 | [m9sweeper](https://m9sweeper.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [mcp-server-kubernetes](https://www.npmjs.com/package/mcp-server-kubernetes) | MLOps, LLMOps and AI infrastructure, Kubernetes distributions and operations | oss | active |
@@ -299,7 +299,7 @@
 | [System Upgrade Controller](https://github.com/rancher/system-upgrade-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Talos](https://www.talos.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Talos Node Updater (tnu)](https://github.com/jfroy/tnu) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
-| [Tarook](https://tarook.cloud/en) | Kubernetes distributions and operations | unknown | needs-review |
+| [Tarook](https://tarook.cloud/en/) | Kubernetes distributions and operations | oss | active |
 | [Tekton Chains](https://tekton.dev/docs/chains/) | Software supply-chain security, CI, build and testing | oss | active |
 | [Telepresence](https://www.telepresence.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Traefik Proxy](https://traefik.io/traefik) | Kubernetes networking, storage and add-ons | oss | active |

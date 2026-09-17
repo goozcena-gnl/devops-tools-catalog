@@ -259,7 +259,7 @@
 | [Spin](https://spinframework.dev) | Serverless, edge and WebAssembly | oss | needs-review |
 | [Spot FinOps](https://spot.io/solutions/finops) | FinOps and sustainability | unknown | needs-review |
 | [Squid](https://www.squid-cache.org) | Databases, caching and data infrastructure | oss | needs-review |
-| [SSOReady](https://ssoready.com) | IAM, secrets and certificate management | unknown | needs-review |
+| [SSOReady](https://ssoready.com/) | IAM, secrets and certificate management | oss | active |
 | [Stakpak](https://stakpak.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Stash](https://stash.run) | Backup, disaster recovery and resilience | oss | needs-review |
 | [Steampipe](https://steampipe.io/) | Cloud platforms and cloud management | oss | active |

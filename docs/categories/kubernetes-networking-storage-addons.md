@@ -1714,20 +1714,20 @@ Cloud native distributed block storage for Kubernetes.
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Desktop application for Kubernetes management.
+Cross-platform desktop application for inspecting and managing Kubernetes clusters.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a local desktop GUI for inspecting and managing multiple existing Kubernetes clusters through kubeconfig.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a shared browser-based control plane, unattended automation, or a vendor-supported enterprise service.
 
-[Official site](https://luxury-yacht.app)
+[Official site](https://luxury-yacht.app/) · [Documentation](https://luxury-yacht.app/features/) · [Source repository](https://github.com/luxury-yacht/app)
 
 ### m9sweeper
 

@@ -283,7 +283,7 @@
 - [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) — Red Hat-supported, Operator-delivered CI/CD distribution for OpenShift built from Tekton components and included with an OpenShift subscription.
 - [Red Labs](https://redlabs.enterprisesecurity.io) — Security labs/training environment.
 - [Review Flow](https://dgouron.github.io/review-flow) — GitHub pull request review workflow visualization and management tool.
-- [RITA](https://www.activecountermeasures.com/free-tools/rita) — Network traffic analysis tool for detecting command-and-control and beaconing behavior.
+- [RITA](https://www.activecountermeasures.com/free-tools/rita/) — Open-source network-traffic analysis framework for detecting command-and-control behavior in Zeek logs.
 - [ROADtools](https://github.com/dirkjanm/ROADtools) — Collection of Microsoft Entra ID data, authentication, and security-analysis utilities.
 - [RTK AI](https://www.rtk-ai.app) — AI-powered development assistant.
 - [Ruff](https://docs.astral.sh/ruff) — Ultra-fast Python linter/formatter.
@@ -334,7 +334,7 @@
 - [Tenable One](https://github.com/tenable) — Unified exposure management platform.
 - [Termic](https://termic.dev/) — Desktop development workspace combining agent sessions, terminals, Git worktrees, and review tools.
 - [terminal-browser](https://terminal-browser.com/) — Browser integrated with terminal sessions for interactive web previews and browser automation.
-- [Termix](https://termix.site) — Browser-based terminal multiplexer for managing remote shell sessions from any device.
+- [Termix](https://termix.site/) — Self-hosted server-management platform for SSH, remote desktop, file transfer, tunnels, and infrastructure access from web, desktop, and mobile clients.
 - [Test Kitchen](https://kitchen.ci) — Test infrastructure code on various platforms.
 - [Testcontainers](https://github.com/testcontainers) — Libraries for integration tests using disposable containers; OSS core with paid cloud add-ons.
 - [Testkube](https://testkube.io) — Kubernetes-native test orchestration platform for running, scheduling, and scaling automated tests across environments.

@@ -1758,20 +1758,20 @@ Browser integrated with terminal sessions for interactive web previews and brows
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Browser-based terminal multiplexer for managing remote shell sessions from any device.
+Self-hosted server-management platform for SSH, remote desktop, file transfer, tunnels, and infrastructure access from web, desktop, and mobile clients.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a self-hosted interface for SSH, remote desktop, file transfer, tunnels, and server management across web and native clients.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a vendor-operated hosted service or cannot secure and maintain the Termix server and remote-access dependencies.
 
-[Official site](https://termix.site)
+[Official site](https://termix.site/) · [Documentation](https://docs.termix.site/) · [Source repository](https://github.com/Termix-SSH/Termix)
 
 ### tunnelto.dev
 

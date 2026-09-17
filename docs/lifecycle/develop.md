@@ -195,7 +195,7 @@
 - [tailcat](https://tailscale.com/tailcat) — Tailscale project providing short-lived encrypted netcat-style connections without a tailnet account.
 - [Termic](https://termic.dev/) — Desktop development workspace combining agent sessions, terminals, Git worktrees, and review tools.
 - [terminal-browser](https://terminal-browser.com/) — Browser integrated with terminal sessions for interactive web previews and browser automation.
-- [Termix](https://termix.site) — Browser-based terminal multiplexer for managing remote shell sessions from any device.
+- [Termix](https://termix.site/) — Self-hosted server-management platform for SSH, remote desktop, file transfer, tunnels, and infrastructure access from web, desktop, and mobile clients.
 - [The Linux Command Line](https://linuxcommand.org/tlcl.php) — Free book on Linux CLI.
 - [The Linux Documentation Project (TLDP)](https://tldp.org) — Linux documentation library and community resource.
 - [Timoni](https://timoni.sh) — Package manager for Kubernetes.

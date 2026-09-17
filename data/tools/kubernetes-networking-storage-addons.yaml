@@ -2673,8 +2673,11 @@
   needs_review: true
 - id: luxury-yacht
   name: Luxury Yacht
-  summary: Desktop application for Kubernetes management.
-  official_url: https://luxury-yacht.app
+  summary: Cross-platform desktop application for inspecting and managing Kubernetes clusters.
+  official_url: https://luxury-yacht.app/
+  repository_url: https://github.com/luxury-yacht/app
+  repository_archived: false
+  documentation_url: https://luxury-yacht.app/features/
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -2686,18 +2689,30 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You want a local desktop GUI for inspecting and managing multiple existing Kubernetes clusters
+    through kubeconfig.
+  avoid_when:
+  - You need a shared browser-based control plane, unattended automation, or a vendor-supported
+    enterprise service.
+  deployment_models:
+  - desktop
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  commercial_offering: false
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-17'
   sources:
   - legacy:devopstools_final.md#L603
-  needs_review: true
+  - https://luxury-yacht.app/
+  - https://luxury-yacht.app/features/
+  - https://github.com/luxury-yacht/app
+  - https://github.com/luxury-yacht/app/blob/main/LICENSE
+  - https://github.com/luxury-yacht/app/releases/tag/v2.4.1
+  needs_review: false
 - id: m9sweeper
   name: m9sweeper
   summary: Kubernetes security and compliance tool.

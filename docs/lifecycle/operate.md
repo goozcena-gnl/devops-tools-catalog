@@ -490,7 +490,7 @@
 - [Loft Vind](https://github.com/loft-sh/vind) — Loft Labs tool (see repository for capabilities and usage).
 - [Logstash](https://www.elastic.co/logstash) — Log ingestion/processing pipeline (Elastic ecosystem).
 - [Longhorn](https://longhorn.io) — Cloud native distributed block storage for Kubernetes.
-- [Luxury Yacht](https://luxury-yacht.app) — Desktop application for Kubernetes management.
+- [Luxury Yacht](https://luxury-yacht.app/) — Cross-platform desktop application for inspecting and managing Kubernetes clusters.
 - [M/Monit](https://www.mmonit.com) — Systems monitoring and management (Monit/M/Monit).
 - [m9sweeper](https://m9sweeper.io) — Kubernetes security and compliance tool.
 - [Maintenant](https://maintenant.dev) — One-container self-hosted monitoring for Docker and Kubernetes with autodiscovery, uptime checks, metrics, and status pages.
@@ -700,7 +700,7 @@
 - [Spinkube](https://github.com/spinkube) — WebAssembly on Kubernetes ecosystem.
 - [SPIRE](https://spiffe.io/docs/latest/spire-about/) — SPIFFE runtime environment that issues and rotates workload identities across heterogeneous infrastructure.
 - [Squid](https://www.squid-cache.org) — Caching proxy for the web (HTTP, HTTPS, FTP, and more).
-- [SSOReady](https://ssoready.com) — Enterprise SSO and SCIM integration platform for adding SAML login and directory sync to applications.
+- [SSOReady](https://ssoready.com/) — MIT-licensed SAML and SCIM middleware available as a hosted service or complete self-hosted deployment.
 - [Stakpak](https://stakpak.dev) — Autonomous AI agent for production operations running 24/7 on your machines to auto-heal incidents, manage costs, and monitor infrastructure (Apache-2.0).
 - [Starship](https://starship.rs/) — Configurable cross-shell prompt showing repository and runtime context.
 - [Stash](https://stash.run) — Backup operator for Kubernetes.
@@ -723,7 +723,7 @@
 - [systemd](https://systemd.io) — Linux system and service manager providing process supervision, logging, timers, and host lifecycle controls.
 - [tailcat](https://tailscale.com/tailcat) — Tailscale project providing short-lived encrypted netcat-style connections without a tailnet account.
 - [Talos](https://www.talos.dev) — Secure, immutable Kubernetes OS.
-- [Tarook](https://tarook.cloud/en) — Cloud-native platform for streamlined Kubernetes and infrastructure management.
+- [Tarook](https://tarook.cloud/en/) — Apache-licensed Kubernetes distribution and lifecycle-management toolkit for OpenStack, Proxmox VE, and bare-metal infrastructure.
 - [Technitium DNS Server](https://technitium.com/dns/) — Self-hosted authoritative and recursive DNS server with an administrative web interface and blocking capabilities.
 - [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) — Plugin-driven server agent for collecting and reporting metrics (part of InfluxData ecosystem).
 - [Teleport](https://goteleport.com) — Secure access platform for SSH/Kubernetes/databases with OSS core and enterprise editions.

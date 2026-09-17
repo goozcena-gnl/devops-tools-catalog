@@ -629,7 +629,7 @@
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |
 | [Termic](https://termic.dev/) | Developer experience and local environments | oss | active |
 | [terminal-browser](https://terminal-browser.com/) | Developer experience and local environments | oss | active |
-| [Termix](https://termix.site) | Developer experience and local environments | unknown | needs-review |
+| [Termix](https://termix.site/) | Developer experience and local environments | oss | active |
 | [Terraform](https://www.terraform.io) | Infrastructure as Code | source-available | needs-review |
 | [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | unknown | needs-review |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
