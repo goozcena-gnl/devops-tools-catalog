@@ -187,6 +187,12 @@ AUTHORIZED_CURRENT_DRIFT = {
     ("fortify-static-code-analyzer", "status"): "active",
 }
 
+AUTHORIZED_CURRENT_URL_DRIFT = {
+    ("certmate", "repository_url"): "https://github.com/fabriziosalmi/certmate",
+    ("gremlin", "repository_url"): None,
+    ("komodor", "repository_url"): None,
+}
+
 REQUIRED_LEDGER_COLUMNS = {
     "tool_id",
     "affected_field",
@@ -351,7 +357,12 @@ def _assert_current_n2a_persistence(
         accepted_path, accepted_record = accepted[tool_id]
         assert current_path == expected_path == accepted_path
         assert accepted_record.get(field) == expected_value
-        assert current_record.get(field) == expected_value
+        current_value = current_record.get(field)
+        if current_value != expected_value:
+            assert key in AUTHORIZED_CURRENT_URL_DRIFT, (
+                f"N2a-owned field drifted without authorization for {key}"
+            )
+            assert current_value == AUTHORIZED_CURRENT_URL_DRIFT[key]
         for protected_field in PROTECTED_SELECTED_FIELDS:
             current_value = current_record.get(protected_field)
             accepted_value = accepted_record.get(protected_field)

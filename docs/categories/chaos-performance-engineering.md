@@ -155,7 +155,7 @@ Chaos engineering platform for proactive reliability testing. ✅ **Use when** y
 
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
-[Official site](https://www.gremlin.com) · [Source repository](https://github.com/gremlin-io/gremlin)
+[Official site](https://www.gremlin.com)
 
 ### hyperfine
 

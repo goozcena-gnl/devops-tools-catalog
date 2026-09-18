@@ -1031,7 +1031,7 @@ Kubernetes troubleshooting and monitoring.
 
 - A simple `kubectl` + Prometheus setup is sufficient.
 
-[Official site](https://komodor.com) · [Source repository](https://github.com/komodorio/komodor)
+[Official site](https://komodor.com)
 
 ### KRR
 
