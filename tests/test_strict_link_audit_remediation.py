@@ -12,14 +12,11 @@ from scripts.check_links import LinkResult, assess_strict_results, load_baseline
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_IDS = {"milvus", "systemd", "wozz"}
 BASELINE_NORMALIZED_SHA256 = (
-    "07661b448ecdfe266fef4b546d8bc58817cac5d005432ff6bd0c3199442813d4"
+    "9d91d5960126a2343a86c934e07eea0827915fa15c2171ba9331432e682164aa"
 )
 REVIEWED_BLOCKERS = {
-    "https://github.com/gremlin-io/gremlin",
     "https://github.com/hoji-ai/hoji",
-    "https://github.com/komodorio/komodor",
     "https://github.com/ophircloud/DevOps-Projects",
-    "https://github.com/usual2970/certmate",
     "https://hub.docker.com/r/soosio/dast",
     "https://kubeflame.github.io",
     "https://www.opentext.com/products/static-application-security-testing",
@@ -123,7 +120,7 @@ def test_reviewed_blocker_baseline_is_unchanged() -> None:
     assert hashlib.sha256(normalized_bytes).hexdigest() == BASELINE_NORMALIZED_SHA256
     baseline = load_baseline(path)
     assert set(baseline) == REVIEWED_BLOCKERS
-    assert len(baseline) == 9
+    assert len(baseline) == 6
 
 
 def test_generated_docs_reflect_corrected_links() -> None:

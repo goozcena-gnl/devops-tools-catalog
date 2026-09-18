@@ -176,7 +176,7 @@ Certificate management automation.
 
 - You're on Kubernetes (use cert-manager instead).
 
-[Official site](https://www.certmate.org) · [Source repository](https://github.com/usual2970/certmate)
+[Official site](https://www.certmate.org) · [Source repository](https://github.com/fabriziosalmi/certmate)
 
 ### Descope
 

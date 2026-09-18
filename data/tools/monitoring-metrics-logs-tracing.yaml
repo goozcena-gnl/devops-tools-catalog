@@ -1655,7 +1655,6 @@
   name: Komodor
   summary: Kubernetes troubleshooting and monitoring.
   official_url: https://komodor.com
-  repository_url: https://github.com/komodorio/komodor
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:

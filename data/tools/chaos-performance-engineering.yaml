@@ -221,7 +221,6 @@
     chaos with built-in safety controls, team collaboration, and guided scenarios. ❌ **Avoid when** budget
     is tight or you prefer fully open-source tooling without vendor lock-in.
   official_url: https://www.gremlin.com
-  repository_url: https://github.com/gremlin-io/gremlin
   categories:
   - chaos-performance-engineering
   subcategories:
