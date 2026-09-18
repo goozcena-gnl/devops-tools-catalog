@@ -204,7 +204,7 @@
 | [Termix](https://termix.site/) | Developer experience and local environments | oss | active |
 | [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | needs-review |
 | [Testcontainers](https://github.com/testcontainers) | CI, build and testing | open-core | needs-review |
-| [Testkube](https://testkube.io) | CI, build and testing | unknown | needs-review |
+| [Testkube](https://testkube.io) | CI, build and testing | open-core | active |
 | [TestRail](https://www.gurock.com/testrail) | CI, build and testing | unknown | needs-review |
 | [TestRigor](https://testrigor.com) | CI, build and testing | unknown | needs-review |
 | [To Be Continuous](https://to-be-continuous.gitlab.io/doc) | CI, build and testing | documentation | needs-review |

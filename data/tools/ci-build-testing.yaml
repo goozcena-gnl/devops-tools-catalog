@@ -2292,10 +2292,11 @@
   needs_review: true
 - id: testkube
   name: Testkube
-  summary: Kubernetes-native test orchestration platform for running, scheduling, and scaling automated
-    tests across environments.
+  summary: Kubernetes-native test orchestration product with a standalone public agent, mixed MIT and Testkube Community License code, and a commercial control plane.
   official_url: https://testkube.io
   repository_url: https://github.com/kubeshop/testkube
+  repository_archived: false
+  documentation_url: https://docs.testkube.io/
   categories:
   - ci-build-testing
   subcategories:
@@ -2307,18 +2308,32 @@
   lifecycle_stages:
   - build
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need Kubernetes-native test workflows, standalone in-cluster execution, or centralized orchestration across multiple agents and environments.
+  avoid_when:
+  - You require the complete multi-agent control plane under MIT terms or do not want test execution agents running in your infrastructure.
+  deployment_models:
+  - self-hosted-agent
+  - hosted-saas
+  - enterprise-self-hosted
+  license_model: open-core
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-18'
   sources:
   - legacy:devopstools_final.md#L1042
-  needs_review: true
+  - https://docs.testkube.io/
+  - https://github.com/kubeshop/testkube
+  - https://github.com/kubeshop/testkube/blob/main/LICENSE
+  - https://github.com/kubeshop/testkube/blob/main/licenses/MIT.txt
+  - https://github.com/kubeshop/testkube/blob/main/licenses/TCL.txt
+  - https://github.com/kubeshop/testkube/blob/main/ARCHITECTURE.md
+  - https://testkube.io/pricing
+  - https://github.com/kubeshop/testkube-operator
+  needs_review: false
 - id: testrail
   name: TestRail
   summary: Test case management platform.

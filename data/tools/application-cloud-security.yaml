@@ -4376,8 +4376,11 @@
   needs_review: true
 - id: semgrep
   name: Semgrep
-  summary: AI-assisted SAST, SCA, secrets detection, and code scanning platform.
+  summary: Application-security product family combining an LGPL analysis engine, separately licensed community rules, and a commercial hosted platform for SAST, SCA, and secrets scanning.
   official_url: https://semgrep.dev
+  repository_url: https://github.com/semgrep/semgrep
+  repository_archived: false
+  documentation_url: https://docs.semgrep.dev/
   categories:
   - application-cloud-security
   subcategories:
@@ -4388,18 +4391,31 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need local or CI static analysis, custom rules, or centralized application-security scanning and remediation workflows.
+  avoid_when:
+  - You require all bundled rules and hosted platform capabilities under the engine's LGPL licence or need unrestricted redistribution of Semgrep-maintained rules.
+  deployment_models:
+  - local-cli
+  - ci
+  - hosted-saas
+  license_model: open-core
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-18'
   sources:
   - legacy:devopstools_final.md#L904
-  needs_review: true
+  - https://semgrep.dev/products/community-edition/
+  - https://github.com/semgrep/semgrep
+  - https://github.com/semgrep/semgrep/blob/develop/LICENSE
+  - https://github.com/semgrep/semgrep-rules
+  - https://semgrep.dev/legal/rules-license/
+  - https://semgrep.dev/legal/terms/
+  - https://docs.semgrep.dev/
+  needs_review: false
 - id: shieldlist-agent
   name: Shieldlist agent
   summary: Host agent that tails service logs and applies rule-based IP sanctions through nftables, with an optional central controller.

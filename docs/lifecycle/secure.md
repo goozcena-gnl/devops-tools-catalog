@@ -201,7 +201,7 @@
 - [Security Onion](https://securityonionsolutions.com) — Free and open platform for network security monitoring, log management, and threat hunting.
 - [Securix](https://github.com/cloud-gouv/securix) — Linux server hardening and security configuration scripts designed for government cloud environments.
 - [SELinux Project](https://github.com/selinuxproject) — Security-Enhanced Linux project.
-- [Semgrep](https://semgrep.dev) — AI-assisted SAST, SCA, secrets detection, and code scanning platform.
+- [Semgrep](https://semgrep.dev) — Application-security product family combining an LGPL analysis engine, separately licensed community rules, and a commercial hosted platform for SAST, SCA, and secrets scanning.
 - [Shieldlist agent](https://git.lrob.net/Shieldlist/shieldlist-agent) — Host agent that tails service logs and applies rule-based IP sanctions through nftables, with an optional central controller.
 - [Shuffle Automation](https://shuffler.io) — Open-source SOAR platform for security automation and response workflows.
 - [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Lightweight Git hooks manager for Node.js.

@@ -184,7 +184,7 @@
 | [Security Onion](https://securityonionsolutions.com) | Application and cloud security | oss | needs-review |
 | [Securix](https://github.com/cloud-gouv/securix) | Application and cloud security | oss | needs-review |
 | [SELinux Project](https://github.com/selinuxproject) | Application and cloud security | oss | needs-review |
-| [Semgrep](https://semgrep.dev) | Application and cloud security | unknown | needs-review |
+| [Semgrep](https://semgrep.dev) | Application and cloud security | open-core | active |
 | [Shieldlist agent](https://git.lrob.net/Shieldlist/shieldlist-agent) | Application and cloud security, Emerging and experimental tools | oss | active |
 | [Shuffle Automation](https://shuffler.io) | Application and cloud security | oss | needs-review |
 | [SkillSpector](https://github.com/NVIDIA/SkillSpector) | Application and cloud security | oss | needs-review |

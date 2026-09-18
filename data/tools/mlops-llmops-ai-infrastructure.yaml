@@ -1722,8 +1722,9 @@
   needs_review: false
 - id: lm-studio
   name: LM Studio
-  summary: Desktop app for running local LLMs.
+  summary: Proprietary local-AI application for downloading, running, chatting with, and serving third-party language models on user-controlled machines.
   official_url: https://lmstudio.ai
+  documentation_url: https://lmstudio.ai/docs/app
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -1737,20 +1738,31 @@
   - deploy
   - operate
   use_when:
-  - You want a GUI-driven way to experiment with local LLMs on your workstation.
+  - You want a desktop interface or headless local service for running downloaded models with local APIs and developer tooling.
   avoid_when:
-  - You need headless/server deployments or programmatic API-first workflows.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an open-source application licence or need a vendor-hosted inference service instead of operating models on your own machines.
+  deployment_models:
+  - desktop
+  - local
+  - self-hosted-service
+  license_model: commercial
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-18'
   sources:
   - legacy:9_AI-MLOps/README.md#L32
   - legacy:devopstools_final.md#L1205
-  needs_review: true
+  - https://lmstudio.ai/app-terms
+  - https://lmstudio.ai/docs/app
+  - https://lmstudio.ai/docs/app/basics/lmstudio-vs-llmster-vs-lms
+  - https://lmstudio.ai/docs/developer/core/headless
+  - https://lmstudio.ai/docs/developer/core/server
+  - https://github.com/lmstudio-ai/lms
+  - https://github.com/lmstudio-ai/lms/blob/main/LICENSE
+  needs_review: false
 - id: mcp-server-kubernetes
   name: mcp-server-kubernetes
   summary: Model Context Protocol server for managing Kubernetes resources through

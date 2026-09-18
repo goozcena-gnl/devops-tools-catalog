@@ -486,20 +486,20 @@ PaaS for deploying apps to Kubernetes.
 
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Platform for deploying apps on Kubernetes.
+Commercial Kubernetes control-plane platform with a GPL-licensed orchestration engine that operates workloads and infrastructure in customer cloud accounts.
 
 **Use when**
 
-- You want an opinionated deployment layer over Kubernetes with preview environments and multi-cloud support.
+- You want governed self-service provisioning and application delivery across Kubernetes and customer-owned cloud infrastructure.
 
 **Consider alternatives when**
 
-- You need deep Kubernetes customization or want to avoid another abstraction layer.
+- You require the complete control plane under an open-source licence or do not want a commercial platform operating your cloud resources.
 
-[Official site](https://www.qovery.com) · [Source repository](https://github.com/Qovery/engine)
+[Official site](https://www.qovery.com) · [Documentation](https://www.qovery.com/docs/getting-started/introduction) · [Source repository](https://github.com/Qovery/engine)
 
 ### Railway
 

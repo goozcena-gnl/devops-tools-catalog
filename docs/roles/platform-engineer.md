@@ -352,7 +352,7 @@
 | [KubeLearn](https://kubelearn.yoparchi.fr) | Documentation, learning and career resources | documentation | needs-review |
 | [KubeLinter](https://docs.kubelinter.io/) | Kubernetes distributions and operations, Application and cloud security | oss | active |
 | [kubelogin (int128)](https://github.com/int128/kubelogin) | IAM, secrets and certificate management | oss | active |
-| [Kubently](https://kubently.io) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [Kubently](https://kubently.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [KubePlumber](https://github.com/David-VTUK/KubePlumber) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubernetes](https://kubernetes.io) | Kubernetes distributions and operations | oss | active |
 | [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -406,7 +406,7 @@
 | [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
 | [llm-d](https://github.com/llm-d) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [llmfit](https://github.com/AlexsJones/llmfit) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [LM Studio](https://lmstudio.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [LM Studio](https://lmstudio.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [Loft Vind](https://github.com/loft-sh/vind) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Luxury Yacht](https://luxury-yacht.app/) | Kubernetes networking, storage and add-ons | oss | active |
@@ -496,7 +496,7 @@
 | [ProsperOps](https://www.prosperops.com/) | FinOps and sustainability | commercial | active |
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
 | [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | unknown | needs-review |
+| [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | open-core | active |
 | [Radar](https://radarhq.io/) | Kubernetes distributions and operations | oss | active |
 | [Railway](https://railway.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | commercial | active |
 | [Rakazo](https://rakazo.com/) | MLOps, LLMOps and AI infrastructure | oss | needs-review |

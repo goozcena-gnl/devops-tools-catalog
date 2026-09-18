@@ -1035,20 +1035,20 @@ Framework for training, evaluating, and serving model-routing policies under qua
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Desktop app for running local LLMs.
+Proprietary local-AI application for downloading, running, chatting with, and serving third-party language models on user-controlled machines.
 
 **Use when**
 
-- You want a GUI-driven way to experiment with local LLMs on your workstation.
+- You want a desktop interface or headless local service for running downloaded models with local APIs and developer tooling.
 
 **Consider alternatives when**
 
-- You need headless/server deployments or programmatic API-first workflows.
+- You require an open-source application licence or need a vendor-hosted inference service instead of operating models on your own machines.
 
-[Official site](https://lmstudio.ai)
+[Official site](https://lmstudio.ai) · [Documentation](https://lmstudio.ai/docs/app)
 
 ### mcp-server-kubernetes
 

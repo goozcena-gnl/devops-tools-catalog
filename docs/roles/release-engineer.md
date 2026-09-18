@@ -130,7 +130,7 @@
 | [Pulp](https://pulpproject.org/) | Artifact and package management | oss | active |
 | [pytest](https://docs.pytest.org/en/stable) | CI, build and testing | oss | needs-review |
 | [pytest-cov](https://github.com/pytest-dev/pytest-cov) | CI, build and testing | oss | needs-review |
-| [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | unknown | needs-review |
+| [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | open-core | active |
 | [Quay](https://quay.io) | Artifact and package management | open-core | needs-review |
 | [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | commercial | active |
 | [Renovate](https://www.mend.io/renovate) | CD, GitOps, release and promotion | oss | needs-review |
@@ -151,7 +151,7 @@
 | [Tekton Chains](https://tekton.dev/docs/chains/) | Software supply-chain security, CI, build and testing | oss | active |
 | [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | needs-review |
 | [Testcontainers](https://github.com/testcontainers) | CI, build and testing | open-core | needs-review |
-| [Testkube](https://testkube.io) | CI, build and testing | unknown | needs-review |
+| [Testkube](https://testkube.io) | CI, build and testing | open-core | active |
 | [TestRail](https://www.gurock.com/testrail) | CI, build and testing | unknown | needs-review |
 | [TestRigor](https://testrigor.com) | CI, build and testing | unknown | needs-review |
 | [The Update Framework](https://theupdateframework.io/) | Software supply-chain security | oss | active |
