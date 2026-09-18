@@ -161,7 +161,7 @@
 - [llm-d](https://github.com/llm-d) — Kubernetes-native high-performance distributed LLM inference framework for serving models at scale.
 - [llmfit](https://github.com/AlexsJones/llmfit) — Hardware-aware CLI/TUI for recommending which LLM models fit local RAM, CPU, and GPU capacity.
 - [LLMRouter](https://ulab-uiuc.github.io/LLMRouter/) — Framework for training, evaluating, and serving model-routing policies under quality and cost objectives.
-- [LM Studio](https://lmstudio.ai) — Desktop app for running local LLMs.
+- [LM Studio](https://lmstudio.ai) — Proprietary local-AI application for downloading, running, chatting with, and serving third-party language models on user-controlled machines.
 - [Mantis](https://getmantis.ai) — CI/CD platform for ML and data workflows.
 - [mcpsnoop](https://github.com/kerlenton/mcpsnoop) — Transparent MCP proxy for inspecting live tool calls between clients and servers.
 - [Mem0](https://mem0.ai/) — Memory layer for AI applications that can run as an embedded library, self-hosted service, or managed platform.
@@ -247,7 +247,7 @@
 - [terravision](https://github.com/patrickchugh/terravision) — Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google, Azure).
 - [Test Kitchen](https://kitchen.ci) — Test infrastructure code on various platforms.
 - [Testcontainers](https://github.com/testcontainers) — Libraries for integration tests using disposable containers; OSS core with paid cloud add-ons.
-- [Testkube](https://testkube.io) — Kubernetes-native test orchestration platform for running, scheduling, and scaling automated tests across environments.
+- [Testkube](https://testkube.io) — Kubernetes-native test orchestration product with a standalone public agent, mixed MIT and Testkube Community License code, and a commercial control plane.
 - [TestRail](https://www.gurock.com/testrail) — Test case management platform.
 - [TestRigor](https://testrigor.com) — AI-powered end-to-end testing platform.
 - [TFLint](https://github.com/terraform-linters/tflint) — Terraform linter (style + provider-specific rules).

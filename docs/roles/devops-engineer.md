@@ -531,7 +531,7 @@
 | [Python](https://www.python.org/) | Foundations, Linux and scripting | oss | active |
 | [Python Official Tutorial](https://docs.python.org/3/tutorial) | Foundations, Linux and scripting | documentation | needs-review |
 | [QEMU](https://www.qemu.org/) | Virtualization, bare metal and homelab | oss | active |
-| [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | unknown | needs-review |
+| [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | open-core | active |
 | [QuantumByte](https://github.com/QuantumByteOSS/quantumbyte) | Developer experience and local environments | oss | needs-review |
 | [Quay](https://quay.io) | Artifact and package management | open-core | needs-review |
 | [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -640,7 +640,7 @@
 | [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
 | [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | needs-review |
 | [Testcontainers](https://github.com/testcontainers) | CI, build and testing | open-core | needs-review |
-| [Testkube](https://testkube.io) | CI, build and testing | unknown | needs-review |
+| [Testkube](https://testkube.io) | CI, build and testing | open-core | active |
 | [TestRail](https://www.gurock.com/testrail) | CI, build and testing | unknown | needs-review |
 | [TestRigor](https://testrigor.com) | CI, build and testing | unknown | needs-review |
 | [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | oss | needs-review |

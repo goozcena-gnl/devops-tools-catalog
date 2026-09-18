@@ -2912,20 +2912,20 @@ Security-Enhanced Linux project.
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-AI-assisted SAST, SCA, secrets detection, and code scanning platform.
+Application-security product family combining an LGPL analysis engine, separately licensed community rules, and a commercial hosted platform for SAST, SCA, and secrets scanning.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need local or CI static analysis, custom rules, or centralized application-security scanning and remediation workflows.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require all bundled rules and hosted platform capabilities under the engine's LGPL licence or need unrestricted redistribution of Semgrep-maintained rules.
 
-[Official site](https://semgrep.dev)
+[Official site](https://semgrep.dev) · [Documentation](https://docs.semgrep.dev/) · [Source repository](https://github.com/semgrep/semgrep)
 
 ### Shieldlist agent
 

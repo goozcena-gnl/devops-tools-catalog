@@ -191,7 +191,7 @@
 | [KubeKey](https://github.com/kubesphere/kubekey) | Kubernetes distributions and operations | oss | active |
 | [KubeLinter](https://docs.kubelinter.io/) | Kubernetes distributions and operations, Application and cloud security | oss | active |
 | [KubeMarine](https://github.com/Netcracker/KubeMarine) | Kubernetes distributions and operations | oss | active |
-| [Kubently](https://kubently.io) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [Kubently](https://kubently.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [KubePlumber](https://github.com/David-VTUK/KubePlumber) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubernetes](https://kubernetes.io) | Kubernetes distributions and operations | oss | active |
 | [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |

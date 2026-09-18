@@ -736,9 +736,11 @@
   needs_review: true
 - id: qovery
   name: Qovery
-  summary: Platform for deploying apps on Kubernetes.
+  summary: Commercial Kubernetes control-plane platform with a GPL-licensed orchestration engine that operates workloads and infrastructure in customer cloud accounts.
   official_url: https://www.qovery.com
   repository_url: https://github.com/Qovery/engine
+  repository_archived: false
+  documentation_url: https://www.qovery.com/docs/getting-started/introduction
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -751,21 +753,30 @@
   - release
   - deploy
   use_when:
-  - You want an opinionated deployment layer over Kubernetes with preview environments and multi-cloud
-    support.
+  - You want governed self-service provisioning and application delivery across Kubernetes and customer-owned cloud infrastructure.
   avoid_when:
-  - You need deep Kubernetes customization or want to avoid another abstraction layer.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require the complete control plane under an open-source licence or do not want a commercial platform operating your cloud resources.
+  deployment_models:
+  - hosted-saas
+  - customer-cloud
+  - enterprise-self-hosted
+  license_model: open-core
+  commercial_offering: true
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-18'
   sources:
   - legacy:7_Development-Collaboration/README.md#L94
   - legacy:devopstools_final.md#L1138
-  needs_review: true
+  - https://www.qovery.com/product
+  - https://www.qovery.com/docs/getting-started/introduction
+  - https://www.qovery.com/pricing
+  - https://www.qovery.com/about
+  - https://github.com/Qovery/engine
+  - https://github.com/Qovery/engine/blob/engine-public/LICENSE
+  needs_review: false
 - id: renovate
   name: Renovate
   summary: Automated dependency updates.

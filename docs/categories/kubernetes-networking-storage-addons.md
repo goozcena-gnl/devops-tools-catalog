@@ -1503,20 +1503,20 @@ Kubernetes controller and request proxy for scaling HTTP workloads to zero and r
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Kubernetes operations and management platform.
+Apache-licensed Kubernetes diagnosis engine with full self-hosted operation and an optional managed cloud service.
 
 **Use when**
 
-- You want a managed operations layer for Kubernetes clusters.
+- You want evidence-backed Kubernetes incident diagnosis that can run fully in your cluster or connect to a managed control plane.
 
 **Consider alternatives when**
 
-- You already have mature tooling (ArgoCD + monitoring + alerting) or prefer open-source-only stacks.
+- You do not want an AI-assisted incident workflow or cannot provide the required Kubernetes, observability, and LLM access.
 
-[Official site](https://kubently.io)
+[Official site](https://kubently.io) · [Documentation](https://kubently.io/guides/quick-start/) · [Source repository](https://github.com/kubently/kubently)
 
 ### Kubernetes Autoscaler
 

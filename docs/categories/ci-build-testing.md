@@ -1473,20 +1473,20 @@ Libraries for integration tests using disposable containers; OSS core with paid 
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Kubernetes-native test orchestration platform for running, scheduling, and scaling automated tests across environments.
+Kubernetes-native test orchestration product with a standalone public agent, mixed MIT and Testkube Community License code, and a commercial control plane.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need Kubernetes-native test workflows, standalone in-cluster execution, or centralized orchestration across multiple agents and environments.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require the complete multi-agent control plane under MIT terms or do not want test execution agents running in your infrastructure.
 
-[Official site](https://testkube.io) · [Source repository](https://github.com/kubeshop/testkube)
+[Official site](https://testkube.io) · [Documentation](https://docs.testkube.io/) · [Source repository](https://github.com/kubeshop/testkube)
 
 ### TestRail
 

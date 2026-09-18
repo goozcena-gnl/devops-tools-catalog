@@ -425,7 +425,7 @@
 - [KubeLinter](https://docs.kubelinter.io/) — Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
 - [kubelogin (int128)](https://github.com/int128/kubelogin) — Kubernetes exec credential plugin for interactive OpenID Connect authentication and token refresh.
 - [KubeMarine](https://github.com/Netcracker/KubeMarine) — Python-based automation framework for deploying and maintaining Kubernetes clusters on Linux hosts.
-- [Kubently](https://kubently.io) — Kubernetes operations and management platform.
+- [Kubently](https://kubently.io) — Apache-licensed Kubernetes diagnosis engine with full self-hosted operation and an optional managed cloud service.
 - [KubePlumber](https://github.com/David-VTUK/KubePlumber) — Kubernetes network connectivity validation and troubleshooting tool.
 - [Kubernetes](https://kubernetes.io) — CNCF-hosted orchestration system for deploying, scaling, and managing containerized applications.
 - [Kubernetes Audit Log Explorer](https://github.com/karlpvoss/kubernetes-audit-log-explorer) — Terminal interface for browsing and filtering Kubernetes audit-log events.
@@ -485,7 +485,7 @@
 - [llm-d](https://github.com/llm-d) — Kubernetes-native high-performance distributed LLM inference framework for serving models at scale.
 - [llmfit](https://github.com/AlexsJones/llmfit) — Hardware-aware CLI/TUI for recommending which LLM models fit local RAM, CPU, and GPU capacity.
 - [LLMRouter](https://ulab-uiuc.github.io/LLMRouter/) — Framework for training, evaluating, and serving model-routing policies under quality and cost objectives.
-- [LM Studio](https://lmstudio.ai) — Desktop app for running local LLMs.
+- [LM Studio](https://lmstudio.ai) — Proprietary local-AI application for downloading, running, chatting with, and serving third-party language models on user-controlled machines.
 - [LocalStack](https://www.localstack.cloud) — Licensed local AWS emulation platform delivered through a unified image, with a non-commercial Hobby plan and paid commercial-use plans.
 - [Loft Vind](https://github.com/loft-sh/vind) — Loft Labs tool (see repository for capabilities and usage).
 - [Logstash](https://www.elastic.co/logstash) — Log ingestion/processing pipeline (Elastic ecosystem).

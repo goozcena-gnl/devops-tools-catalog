@@ -298,7 +298,7 @@
 - [SELinux Project](https://github.com/selinuxproject) — Security-Enhanced Linux project.
 - [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) — Enforce semantic PR titles in GitHub Actions.
 - [Semaphore CI](https://semaphoreci.com) — CI/CD platform for software projects.
-- [Semgrep](https://semgrep.dev) — AI-assisted SAST, SCA, secrets detection, and code scanning platform.
+- [Semgrep](https://semgrep.dev) — Application-security product family combining an LGPL analysis engine, separately licensed community rules, and a commercial hosted platform for SAST, SCA, and secrets scanning.
 - [ServerSpec](https://serverspec.org) — Test server configurations using RSpec.
 - [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) — Shell formatter (`shfmt`).
 - [Shuffle Automation](https://shuffler.io) — Open-source SOAR platform for security automation and response workflows.
@@ -337,7 +337,7 @@
 - [Termix](https://termix.site/) — Self-hosted server-management platform for SSH, remote desktop, file transfer, tunnels, and infrastructure access from web, desktop, and mobile clients.
 - [Test Kitchen](https://kitchen.ci) — Test infrastructure code on various platforms.
 - [Testcontainers](https://github.com/testcontainers) — Libraries for integration tests using disposable containers; OSS core with paid cloud add-ons.
-- [Testkube](https://testkube.io) — Kubernetes-native test orchestration platform for running, scheduling, and scaling automated tests across environments.
+- [Testkube](https://testkube.io) — Kubernetes-native test orchestration product with a standalone public agent, mixed MIT and Testkube Community License code, and a commercial control plane.
 - [TestRail](https://www.gurock.com/testrail) — Test case management platform.
 - [TestRigor](https://testrigor.com) — AI-powered end-to-end testing platform.
 - [testssl.sh](https://testssl.sh) — Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities.

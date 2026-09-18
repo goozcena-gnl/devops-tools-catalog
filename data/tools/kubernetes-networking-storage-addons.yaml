@@ -2350,8 +2350,11 @@
   needs_review: false
 - id: kubently
   name: Kubently
-  summary: Kubernetes operations and management platform.
+  summary: Apache-licensed Kubernetes diagnosis engine with full self-hosted operation and an optional managed cloud service.
   official_url: https://kubently.io
+  repository_url: https://github.com/kubently/kubently
+  repository_archived: false
+  documentation_url: https://kubently.io/guides/quick-start/
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -2364,20 +2367,31 @@
   - deploy
   - operate
   use_when:
-  - You want a managed operations layer for Kubernetes clusters.
+  - You want evidence-backed Kubernetes incident diagnosis that can run fully in your cluster or connect to a managed control plane.
   avoid_when:
-  - You already have mature tooling (ArgoCD + monitoring + alerting) or prefer open-source-only stacks.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You do not want an AI-assisted incident workflow or cannot provide the required Kubernetes, observability, and LLM access.
+  deployment_models:
+  - kubernetes
+  - self-hosted
+  - hosted-saas
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-18'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L114
   - legacy:devopstools_final.md#L593
-  needs_review: true
+  - https://kubently.io/
+  - https://kubently.io/guides/quick-start/
+  - https://kubently.io/cloud/
+  - https://github.com/kubently/kubently
+  - https://github.com/kubently/kubently/blob/main/LICENSE
+  - https://github.com/kubently/kubently/releases
+  needs_review: false
 - id: kubernetes-autoscaler
   name: Kubernetes Autoscaler
   summary: Autoscaling components (HPA/VPA/Cluster Autoscaler).

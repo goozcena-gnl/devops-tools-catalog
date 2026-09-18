@@ -209,7 +209,7 @@
 | [Security Onion](https://securityonionsolutions.com) | Application and cloud security | oss | needs-review |
 | [Securix](https://github.com/cloud-gouv/securix) | Application and cloud security | oss | needs-review |
 | [SELinux Project](https://github.com/selinuxproject) | Application and cloud security | oss | needs-review |
-| [Semgrep](https://semgrep.dev) | Application and cloud security | unknown | needs-review |
+| [Semgrep](https://semgrep.dev) | Application and cloud security | open-core | active |
 | [Shuffle Automation](https://shuffler.io) | Application and cloud security | oss | needs-review |
 | [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | Software supply-chain security | oss | needs-review |
 | [SkillSpector](https://github.com/NVIDIA/SkillSpector) | Application and cloud security | oss | needs-review |

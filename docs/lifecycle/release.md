@@ -69,7 +69,7 @@
 - [pre-commit](https://pre-commit.com) — Multi-language Git hook framework (config-driven, reproducible hooks across teams).
 - [ProGet](https://inedo.com/proget) — Universal package manager for DevOps and CI/CD.
 - [Pulp](https://pulpproject.org/) — Repository platform for managing and distributing software packages and other content types through plugins.
-- [Qovery](https://www.qovery.com) — Platform for deploying apps on Kubernetes.
+- [Qovery](https://www.qovery.com) — Commercial Kubernetes control-plane platform with a GPL-licensed orchestration engine that operates workloads and infrastructure in customer cloud accounts.
 - [Quay](https://quay.io) — Container registry for building, storing, and distributing images.
 - [Renovate](https://www.mend.io/renovate) — Automated dependency updates.
 - [sbt](https://www.scala-sbt.org) — Interactive build tool for Scala, Java, and other JVM projects.

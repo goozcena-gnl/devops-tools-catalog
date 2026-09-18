@@ -186,7 +186,7 @@
 | [LiteLLM](https://www.litellm.ai) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [llm-d](https://github.com/llm-d) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [llmfit](https://github.com/AlexsJones/llmfit) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [LM Studio](https://lmstudio.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [LM Studio](https://lmstudio.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [mcp-server-kubernetes](https://www.npmjs.com/package/mcp-server-kubernetes) | MLOps, LLMOps and AI infrastructure, Kubernetes distributions and operations | oss | active |
 | [mcpsnoop](https://github.com/kerlenton/mcpsnoop) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Meilisearch](https://www.meilisearch.com) | Databases, caching and data infrastructure | oss | needs-review |
