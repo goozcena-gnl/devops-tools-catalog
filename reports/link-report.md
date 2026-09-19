@@ -8,16 +8,15 @@ Checked 2586 unique catalogue URLs.
 
 | Classification | Count |
 |---|---:|
-| dns-inconclusive | 7 |
+| dns-inconclusive | 5 |
 | http-error | 2 |
 | manual-verification-required | 4 |
-| network-inconclusive | 1 |
 | permanent-redirect | 355 |
-| rate-limited | 4 |
+| rate-limited | 1 |
 | repository-archived-expected | 11 |
-| restricted-or-bot-blocked | 16 |
+| restricted-or-bot-blocked | 17 |
 | transient-failure | 1 |
-| valid | 2149 |
+| valid | 2154 |
 | valid-redirect | 36 |
 
 ## Strict blockers
@@ -52,14 +51,9 @@ Checked 2586 unique catalogue URLs.
 
 | URL | Raw classification | Archive expectation | Status | Detail |
 |---|---|---|---:|---|
-| https://criu.org/Main_Page | network-inconclusive |  |  | TimeoutError: _ssl.c:993: The handshake operation timed out |
 | https://dev.mysql.com/doc/ | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
-| https://docs.ansible.com/ansible/latest/collections/kubernetes/core/ | rate-limited |  | 429 | HTTP 429: Too Many Requests |
-| https://docs.ansible.com/projects/lint/ | rate-limited |  | 429 | HTTP 429: Too Many Requests |
-| https://docs.ansible.com/projects/molecule/ | rate-limited |  | 429 | HTTP 429: Too Many Requests |
 | https://docs.cloudstack.apache.org | rate-limited |  | 429 | HTTP 429: Too Many Requests |
 | https://docs.flexera.com/flexera-one/ | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
-| https://docs.k0sproject.io/ | dns-inconclusive |  |  | gaierror: [Errno 11001] getaddrinfo failed |
 | https://docs.paperless-ngx.com | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://exercism.org | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://getmantis.ai | dns-inconclusive |  |  | gaierror: [Errno 11001] getaddrinfo failed |
@@ -82,18 +76,18 @@ Checked 2586 unique catalogue URLs.
 | https://hub.docker.com/r/soosio/dast | manual-verification-required |  | 404 | HTTP 404: Not Found |
 | https://kubeflame.github.io | manual-verification-required |  | 404 | HTTP 404: Not Found |
 | https://kuttl.dev | dns-inconclusive |  |  | gaierror: [Errno 11001] getaddrinfo failed |
-| https://labex.io/tutorials/category/devops | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
-| https://openkruise.io | dns-inconclusive |  |  | gaierror: [Errno 11001] getaddrinfo failed |
+| https://labex.io/linuxjourney | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://socket.dev | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://ssoready.com/ | dns-inconclusive |  |  | gaierror: [Errno 11001] getaddrinfo failed |
 | https://ssoready.com/docs | dns-inconclusive |  |  | gaierror: [Errno 11001] getaddrinfo failed |
-| https://support.kiuwan.com/hc/en-us | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://www.akamai.com/cloud | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://www.entrust.com/products/cryptographic-security-platform | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
+| https://www.entrust.com/products/key-management | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://www.mysql.com | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://www.npmjs.com/package/mcp-server-kubernetes | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://www.opentext.com/products/static-application-security-testing | http-error |  | 444 | HTTP 444: Unknown |
 | https://www.oracle.com/cloud | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
+| https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://www.vegacloud.io/products/inform | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://www.vultr.com | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://www.winehq.org | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
