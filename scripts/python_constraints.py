@@ -125,10 +125,21 @@ def resolve_constraints(root: Path = ROOT) -> dict[str, str]:
     return parse_pinned_requirements(freeze.stdout.splitlines())
 
 
+def resolve_constraints_path(path: Path, root: Path = ROOT) -> Path:
+    return path if path.is_absolute() else root / path
+
+
+def _display_path(path: Path, root: Path) -> Path:
+    try:
+        return path.relative_to(root)
+    except ValueError:
+        return path
+
+
 def write_constraints(path: Path, root: Path = ROOT) -> int:
     constraints = resolve_constraints(root)
     path.write_text(render_constraints(constraints), encoding="utf-8")
-    print(f"Wrote {path.relative_to(root)} with {len(constraints)} pinned packages.")
+    print(f"Wrote {_display_path(path, root)} with {len(constraints)} pinned packages.")
     return 0
 
 
@@ -137,10 +148,10 @@ def check_constraints(path: Path, root: Path = ROOT) -> int:
     actual = resolve_constraints(root)
     missing, added, changed = diff_constraints(expected, actual)
     if not any((missing, added, changed)):
-        print(f"Python constraints match {path.relative_to(root)}.")
+        print(f"Python constraints match {_display_path(path, root)}.")
         return 0
 
-    print(f"Python dependency drift detected against {path.relative_to(root)}:")
+    print(f"Python dependency drift detected against {_display_path(path, root)}:")
     for name in missing:
         print(f"- missing: {name}=={expected[name]}")
     for name in added:
@@ -167,9 +178,9 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
-    constraints_path = args.constraints_file.resolve()
-    constraints_path.parent.mkdir(parents=True, exist_ok=True)
+    constraints_path = resolve_constraints_path(args.constraints_file)
     if args.write:
+        constraints_path.parent.mkdir(parents=True, exist_ok=True)
         return write_constraints(constraints_path)
     return check_constraints(constraints_path)
 

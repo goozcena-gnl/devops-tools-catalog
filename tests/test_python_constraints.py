@@ -1,7 +1,14 @@
 from pathlib import Path
 
+import pytest
+
+import scripts.python_constraints as python_constraints
 from scripts.catalog import ROOT
-from scripts.python_constraints import diff_constraints, parse_pinned_requirements
+from scripts.python_constraints import (
+    diff_constraints,
+    parse_pinned_requirements,
+    resolve_constraints_path,
+)
 
 
 def test_parse_pinned_requirements_normalizes_names_and_ignores_tooling() -> None:
@@ -63,3 +70,30 @@ def test_constraints_file_contains_only_pinned_requirements() -> None:
 
     assert constraints_path == Path(ROOT / "config" / "python-constraints-3.12.txt")
     assert parsed
+
+
+def test_resolve_constraints_path_uses_root_for_relative_paths() -> None:
+    path = resolve_constraints_path(Path("config/custom-constraints.txt"), ROOT)
+
+    assert path == ROOT / "config" / "custom-constraints.txt"
+
+
+def test_main_check_custom_constraints_path_is_side_effect_free(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    constraints_path = tmp_path / "nested" / "constraints.txt"
+    captured: dict[str, Path] = {}
+
+    monkeypatch.setattr(
+        python_constraints,
+        "check_constraints",
+        lambda path, root=ROOT: captured.setdefault("path", path) and 0,
+    )
+
+    exit_code = python_constraints.main(
+        ["--check", "--constraints-file", str(constraints_path)]
+    )
+
+    assert exit_code == 0
+    assert captured["path"] == constraints_path
+    assert not constraints_path.parent.exists()
