@@ -76,7 +76,7 @@
   - compliance
   - hardening
   - cis
-  - ansii-bp-028
+  - anssi-bp-028
   - oscal
   verified_on: '2026-09-22'
   sources:
