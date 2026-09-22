@@ -33,6 +33,59 @@
   - https://wiki.ocsinventory-ng.org/
   - https://github.com/OCSInventory-NG/OCSInventory-Server
   needs_review: false
+- id: pavois
+  name: Pavois
+  summary: Linux compliance scanner and hardening tool that evaluates effective runtime configuration, maps controls across major standards, and applies reviewable remediation through CINC/InSpec and Chef.
+  official_url: https://pavois.dev
+  repository_url: https://github.com/stephrobert/pavois
+  repository_archived: false
+  documentation_url: https://pavois.dev/en/handbook/
+  categories:
+  - policy-governance-compliance
+  - application-cloud-security
+  subcategories:
+  - Infrastructure Security
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  - operate
+  use_when:
+  - You need Linux compliance evidence based on effective runtime configuration rather than file contents alone.
+  - You need one control corpus mapped across CIS, ANSSI BP-028, NIST, PCI-DSS, and DISA STIG with reviewable hardening and before/after evidence.
+  avoid_when:
+  - You need a general-purpose configuration-management platform rather than security compliance assessment and hardening.
+  - You need certification by itself; Pavois produces evidence and mappings, while an auditor or governance process makes the compliance determination.
+  deployment_models:
+  - local
+  - self-hosted
+  - ci
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: emerging
+  status: active
+  alternatives:
+  - openscap
+  - lynis
+  tags:
+  - linux
+  - compliance
+  - hardening
+  - cis
+  - ansii-bp-028
+  - oscal
+  verified_on: '2026-09-22'
+  sources:
+  - https://pavois.dev
+  - https://pavois.dev/en/handbook/
+  - https://github.com/stephrobert/pavois
+  - https://github.com/stephrobert/pavois/blob/main/README.md
+  - https://github.com/stephrobert/pavois/blob/main/LICENSE
+  needs_review: false
 - id: risk-analysis-editor
   name: Risk Analysis Editor
   summary: Offline browser-based editor for configurable risk registers, treatment plans, matrices, and reports.
