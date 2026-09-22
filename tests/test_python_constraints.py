@@ -87,10 +87,15 @@ def test_write_constraints_resolves_relative_path_against_root(
     root.mkdir()
     target = root / "config" / "custom-constraints.txt"
     target.parent.mkdir()
+
+    def fake_resolve_constraints(resolved_root: Path) -> dict[str, str]:
+        assert resolved_root == root
+        return {"pytest": "9.1.1"}
+
     monkeypatch.setattr(
         python_constraints,
         "resolve_constraints",
-        lambda resolved_root=root: {"pytest": "9.1.1"},
+        fake_resolve_constraints,
     )
 
     exit_code = write_constraints(Path("config/custom-constraints.txt"), root)
@@ -107,10 +112,15 @@ def test_check_constraints_resolves_relative_path_against_root(
     constraints_dir.mkdir(parents=True)
     target = constraints_dir / "custom-constraints.txt"
     target.write_text("pytest==9.1.1\n", encoding="utf-8")
+
+    def fake_resolve_constraints(resolved_root: Path) -> dict[str, str]:
+        assert resolved_root == root
+        return {"pytest": "9.1.1"}
+
     monkeypatch.setattr(
         python_constraints,
         "resolve_constraints",
-        lambda resolved_root=root: {"pytest": "9.1.1"},
+        fake_resolve_constraints,
     )
 
     exit_code = check_constraints(Path("config/custom-constraints.txt"), root)
@@ -124,10 +134,14 @@ def test_main_check_custom_constraints_path_is_side_effect_free(
     constraints_path = tmp_path / "nested" / "constraints.txt"
     captured: dict[str, Path] = {}
 
+    def fake_check_constraints(path: Path, root: Path = ROOT) -> int:
+        captured["path"] = path
+        return 0
+
     monkeypatch.setattr(
         python_constraints,
         "check_constraints",
-        lambda path, root=ROOT: captured.setdefault("path", path) and 0,
+        fake_check_constraints,
     )
 
     exit_code = python_constraints.main(
