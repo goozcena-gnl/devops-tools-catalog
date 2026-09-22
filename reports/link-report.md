@@ -1,6 +1,6 @@
 # Link audit summary
 
-Checked 2598 unique catalogue URLs.
+Checked 2599 unique catalogue URLs.
 
 - `blocking_new`: **0**
 - `blocking_known`: **1**
@@ -11,8 +11,8 @@ Checked 2598 unique catalogue URLs.
 | dns-inconclusive | 1394 |
 | manual-verification-required | 1 |
 | permanent-redirect | 5 |
-| restricted-or-bot-blocked | 1143 |
-| valid | 53 |
+| restricted-or-bot-blocked | 1145 |
+| valid | 52 |
 | valid-redirect | 2 |
 
 ## Strict blockers
@@ -40,7 +40,6 @@ Checked 2598 unique catalogue URLs.
 | https://affine.pro/ | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
 | https://agentsroom.dev/ | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
 | https://agones.dev | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
-| https://agones.dev/site/docs/ | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
 | https://aider.chat | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
 | https://aigateway.envoyproxy.io | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
 | https://aliasrobotics.github.io/cai | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
@@ -713,7 +712,6 @@ Checked 2598 unique catalogue URLs.
 | https://github.com/addyosmani/agent-skills/blob/main/README.md | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/adrghph/kps-zeroexposure | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/adrienverge/yamllint | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
-| https://github.com/agones-dev/agones | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/ahmetb/kubectx | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/ai-dynamo/grove | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/ai-dynamo/modelexpress | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
@@ -1043,6 +1041,7 @@ Checked 2598 unique catalogue URLs.
 | https://github.com/google/osv-scanner | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/google/seesaw | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/google/seesaw/blob/master/README.md | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
+| https://github.com/googleforgames/agones | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/gotify/server | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/gradle/gradle | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/grafana-cold-storage/oncall | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
@@ -1349,6 +1348,8 @@ Checked 2598 unique catalogue URLs.
 | https://github.com/okteto/okteto | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/ollama/ollama | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/onedr0p/cluster-template | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
+| https://github.com/open-feature/spec | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
+| https://github.com/open-feature/spec/blob/main/README.md | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/open-policy-agent/conftest | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/open-policy-agent/opa | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
 | https://github.com/open-telemetry/opentelemetry-collector | restricted-or-bot-blocked |  | 403 | HTTP 403: Forbidden |
@@ -1978,6 +1979,7 @@ Checked 2598 unique catalogue URLs.
 | https://opendev.org/ | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
 | https://opendev.org/openstack/ironic | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
 | https://opendev.org/openstack/magnum | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
+| https://openfeature.dev | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
 | https://openinterpreter.com | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
 | https://openkruise.io | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |
 | https://openobserve.ai/ | dns-inconclusive |  |  | gaierror: [Errno -5] No address associated with hostname |

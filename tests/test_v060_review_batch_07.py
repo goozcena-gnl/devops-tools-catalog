@@ -43,7 +43,9 @@ def test_batch_07_repository_and_license_boundaries_are_explicit() -> None:
     assert tools["artifact-hub"]["license_spdx"] == "Apache-2.0"
     assert tools["atmos"]["license_spdx"] == "Apache-2.0"
     assert tools["koreo"]["license_spdx"] == "Apache-2.0"
-    assert tools["openfeature"]["repository_url"] == "https://github.com/open-feature/spec"
+    assert (
+        tools["openfeature"]["repository_url"] == "https://github.com/open-feature/spec"
+    )
     assert tools["openfeature"]["license_spdx"] == "Apache-2.0"
     assert tools["rsyslog"]["license_spdx"] == "LGPL-3.0-only"
 
