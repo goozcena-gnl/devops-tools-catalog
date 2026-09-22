@@ -8,6 +8,7 @@ from scripts.python_constraints import (
     check_constraints,
     diff_constraints,
     parse_pinned_requirements,
+    render_constraints,
     resolve_constraints_path,
     write_constraints,
 )
@@ -101,7 +102,7 @@ def test_write_constraints_resolves_relative_path_against_root(
     exit_code = write_constraints(Path("config/custom-constraints.txt"), root)
 
     assert exit_code == 0
-    assert target.read_text(encoding="utf-8").endswith("pytest==9.1.1\n")
+    assert target.read_text(encoding="utf-8") == render_constraints({"pytest": "9.1.1"})
 
 
 def test_check_constraints_resolves_relative_path_against_root(
