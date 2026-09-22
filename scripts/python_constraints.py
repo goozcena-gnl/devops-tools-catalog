@@ -139,6 +139,7 @@ def _display_path(path: Path, root: Path) -> Path:
 def write_constraints(path: Path, root: Path = ROOT) -> int:
     path = resolve_constraints_path(path, root)
     constraints = resolve_constraints(root)
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(render_constraints(constraints), encoding="utf-8")
     print(f"Wrote {_display_path(path, root)} with {len(constraints)} pinned packages.")
     return 0

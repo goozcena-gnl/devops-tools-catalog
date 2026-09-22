@@ -87,7 +87,6 @@ def test_write_constraints_resolves_relative_path_against_root(
     root = tmp_path / "repo"
     root.mkdir()
     target = root / "config" / "custom-constraints.txt"
-    target.parent.mkdir()
 
     def fake_resolve_constraints(resolved_root: Path) -> dict[str, str]:
         assert resolved_root == root
