@@ -137,6 +137,7 @@ def _display_path(path: Path, root: Path) -> Path:
 
 
 def write_constraints(path: Path, root: Path = ROOT) -> int:
+    path = resolve_constraints_path(path, root)
     constraints = resolve_constraints(root)
     path.write_text(render_constraints(constraints), encoding="utf-8")
     print(f"Wrote {_display_path(path, root)} with {len(constraints)} pinned packages.")
@@ -144,6 +145,7 @@ def write_constraints(path: Path, root: Path = ROOT) -> int:
 
 
 def check_constraints(path: Path, root: Path = ROOT) -> int:
+    path = resolve_constraints_path(path, root)
     expected = parse_pinned_requirements(path.read_text(encoding="utf-8").splitlines())
     actual = resolve_constraints(root)
     missing, added, changed = diff_constraints(expected, actual)

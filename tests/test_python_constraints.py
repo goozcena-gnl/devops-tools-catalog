@@ -5,9 +5,11 @@ import pytest
 import scripts.python_constraints as python_constraints
 from scripts.catalog import ROOT
 from scripts.python_constraints import (
+    check_constraints,
     diff_constraints,
     parse_pinned_requirements,
     resolve_constraints_path,
+    write_constraints,
 )
 
 
@@ -76,6 +78,44 @@ def test_resolve_constraints_path_uses_root_for_relative_paths() -> None:
     path = resolve_constraints_path(Path("config/custom-constraints.txt"), ROOT)
 
     assert path == ROOT / "config" / "custom-constraints.txt"
+
+
+def test_write_constraints_resolves_relative_path_against_root(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    root = tmp_path / "repo"
+    root.mkdir()
+    target = root / "config" / "custom-constraints.txt"
+    target.parent.mkdir()
+    monkeypatch.setattr(
+        python_constraints,
+        "resolve_constraints",
+        lambda resolved_root=root: {"pytest": "9.1.1"},
+    )
+
+    exit_code = write_constraints(Path("config/custom-constraints.txt"), root)
+
+    assert exit_code == 0
+    assert target.read_text(encoding="utf-8").endswith("pytest==9.1.1\n")
+
+
+def test_check_constraints_resolves_relative_path_against_root(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    root = tmp_path / "repo"
+    constraints_dir = root / "config"
+    constraints_dir.mkdir(parents=True)
+    target = constraints_dir / "custom-constraints.txt"
+    target.write_text("pytest==9.1.1\n", encoding="utf-8")
+    monkeypatch.setattr(
+        python_constraints,
+        "resolve_constraints",
+        lambda resolved_root=root: {"pytest": "9.1.1"},
+    )
+
+    exit_code = check_constraints(Path("config/custom-constraints.txt"), root)
+
+    assert exit_code == 0
 
 
 def test_main_check_custom_constraints_path_is_side_effect_free(
