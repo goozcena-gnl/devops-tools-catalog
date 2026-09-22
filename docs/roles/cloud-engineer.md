@@ -20,7 +20,7 @@
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
 | [asciinema](https://asciinema.org/) | Documentation, learning and career resources | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
-| [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
+| [atmos](https://atmos.tools) | Infrastructure as Code | oss | active |
 | [Auth0](https://auth0.com) | IAM, secrets and certificate management | commercial | active |
 | [Awesome DevOps](https://github.com/wmariuss/awesome-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Awesome Kubernetes Operator Resources](https://github.com/calvin-puram/awesome-kubernetes-operator-resources) | Documentation, learning and career resources | documentation | needs-review |

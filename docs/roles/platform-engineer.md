@@ -5,7 +5,7 @@
 
 | Tool | Categories | Model | Status |
 |---|---|---|---|
-| [Actions Runner Controller](https://github.com/actions/actions-runner-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Actions Runner Controller](https://github.com/actions/actions-runner-controller) | Kubernetes networking, storage and add-ons | oss | active |
 | [Agent Reach](https://github.com/Panniantong/Agent-Reach) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [agentmemory](https://www.agent-memory.dev) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [agentsmith](https://github.com/PromptPartner/agentsmith) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -31,7 +31,7 @@
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
 | [asciinema](https://asciinema.org/) | Documentation, learning and career resources | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
-| [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
+| [atmos](https://atmos.tools) | Infrastructure as Code | oss | active |
 | [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | commercial | active |
 | [AutoGen](https://microsoft.github.io/autogen/stable/index.html) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Awesome DevOps](https://github.com/wmariuss/awesome-devops) | Documentation, learning and career resources | documentation | needs-review |
@@ -165,7 +165,7 @@
 | [dsoxlab](https://github.com/stephrobert/dsoxlab) | Documentation, learning and career resources | documentation | needs-review |
 | [Duplicati](https://duplicati.com) | Emerging and experimental tools | oss | needs-review |
 | [Earthly](https://earthly.dev) | Containers and image tooling | oss | needs-review |
-| [Easykube](https://torloejborg.github.io/easykube/easykube/latest) | Kubernetes distributions and operations | oss | needs-review |
+| [Easykube](https://torloejborg.github.io/easykube/) | Kubernetes distributions and operations | source-available | active |
 | [EasyMile PostgreSQL Operator](https://easymile.github.io/postgresql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [ecc.tools](https://ecc.tools) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) | Kubernetes distributions and operations | oss | needs-review |
@@ -305,7 +305,7 @@
 | [Kong Gateway](https://developer.konghq.com/gateway/install/) | Kubernetes networking, storage and add-ons | open-core | active |
 | [Kontroler](https://www.kontroler.dev/) | Kubernetes distributions and operations | oss | active |
 | [Kor](https://github.com/yonahd/kor) | Kubernetes distributions and operations | oss | needs-review |
-| [Koreo](https://github.com/koreo-dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Koreo](https://koreo.dev) | Kubernetes networking, storage and add-ons | oss | active |
 | [Krateo Core Provider](https://github.com/krateoplatformops/core-provider) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Krateo OASGen Provider](https://docs.krateo.io/key-concepts/kog/oasgen-provider) | Kubernetes networking, storage and add-ons | documentation | needs-review |
 | [Kratix](https://www.kratix.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -459,7 +459,7 @@
 | [OpenCost](https://www.opencost.io) | FinOps and sustainability | oss | active |
 | [OpenDepot](https://tonedefdev.github.io/opendepot/) | Artifact and package management, Infrastructure as Code, Emerging and experimental tools | oss | active |
 | [OpenFaaS](https://www.openfaas.com) | Serverless, edge and WebAssembly | open-core | needs-review |
-| [OpenFeature](https://github.com/open-feature) | CD, GitOps, release and promotion | oss | needs-review |
+| [OpenFeature](https://openfeature.dev) | CD, GitOps, release and promotion | oss | active |
 | [OpenKruise](https://openkruise.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [OpenKruise Agents](https://github.com/openkruise/agents) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | needs-review |

@@ -15,7 +15,7 @@
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [Arnica](https://www.arnica.io) | Application and cloud security | commercial | active |
 | [Arsenal](https://github.com/Orange-Cyberdefense/arsenal) | Application and cloud security | documentation | needs-review |
-| [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
+| [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | active |
 | [Auth0](https://auth0.com) | IAM, secrets and certificate management | commercial | active |
 | [AutoPWN Suite](https://kaangultekin.net/projects/autopwn-suite) | Application and cloud security | source-available | needs-review |
 | [Awesome DevSecOps](https://github.com/devsecops/awesome-devsecops) | Application and cloud security | documentation | needs-review |

@@ -3,6 +3,8 @@
   summary: Agentless configuration management, orchestration, and automation.
   official_url: https://www.ansible.com
   repository_url: https://github.com/ansible/ansible
+  repository_archived: false
+  documentation_url: https://docs.ansible.com/ansible/latest/
   categories:
   - configuration-management
   subcategories:
@@ -19,15 +21,21 @@
   - You need real-time state enforcement or managing thousands of nodes at high frequency.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: GPL-3.0-or-later
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-22'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L68
   - legacy:devopstools_final.md#L194
-  needs_review: true
+  - https://www.ansible.com/
+  - https://docs.ansible.com/ansible/latest/
+  - https://github.com/ansible/ansible
+  - https://github.com/ansible/ansible/blob/devel/README.md
+  - https://github.com/ansible/ansible/blob/devel/COPYING
+  needs_review: false
 - id: ansible-kubernetes-core
   name: Ansible kubernetes.core collection
   summary: Ansible collection of modules and plugins for managing Kubernetes and OpenShift resources and APIs.

@@ -29,7 +29,7 @@ Command-line tool for synchronizing container images into Azure Container Regist
 **Categories:** Artifact and package management<br>
 **Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Discover and share packages (Helm charts, operators, etc.).
 
@@ -41,7 +41,7 @@ Discover and share packages (Helm charts, operators, etc.).
 
 - * You need a private artifact registry; Artifact Hub is a discovery layer, not a storage backend.
 
-[Official site](https://artifacthub.io) · [Source repository](https://github.com/artifacthub/hub)
+[Official site](https://artifacthub.io) · [Documentation](https://artifacthub.io/docs/) · [Source repository](https://github.com/artifacthub/hub)
 
 ### cargo-binstall
 

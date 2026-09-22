@@ -62,7 +62,7 @@
 - [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) — Universal artifact repository manager.
 - [Nix](https://nixos.org) — Reproducible build and package manager.
 - [OpenDepot](https://tonedefdev.github.io/opendepot/) — Kubernetes-native registry for publishing and consuming OpenTofu and Terraform providers and modules.
-- [OpenFeature](https://github.com/open-feature) — Open standard for feature flag management.
+- [OpenFeature](https://openfeature.dev) — Open standard for feature flag management.
 - [ORAS](https://oras.land) — OCI registry client/library (store artifacts in registries).
 - [Piku](https://piku.github.io) — Heroku-like mini PaaS.
 - [Porter](https://github.com/porter-dev) — PaaS for deploying apps to Kubernetes.

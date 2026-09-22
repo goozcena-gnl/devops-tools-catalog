@@ -463,7 +463,10 @@
 - id: easykube
   name: Easykube
   summary: Developer tool for reasoning about and running complex microservice backends locally with Kubernetes.
-  official_url: https://torloejborg.github.io/easykube/easykube/latest
+  official_url: https://torloejborg.github.io/easykube/
+  repository_url: https://github.com/torloejborg/easykube
+  repository_archived: false
+  documentation_url: https://torloejborg.github.io/easykube/easykube/latest
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -478,15 +481,19 @@
   use_when: []
   avoid_when: []
   deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_model: source-available
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-22'
   sources:
   - legacy:devopstools_final.md#L459
-  needs_review: true
+  - https://github.com/torloejborg/easykube
+  - https://github.com/torloejborg/easykube/blob/main/README.md
+  - https://github.com/torloejborg/easykube/blob/main/LICENSE
+  - https://torloejborg.github.io/easykube/
+  needs_review: false
 - id: ecs
   name: Amazon ECS
   summary: AWS-managed container orchestration service for deploying and scaling containerized applications without operating a separate control plane.

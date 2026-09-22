@@ -10,7 +10,7 @@
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Agentless configuration management, orchestration, and automation.
 
@@ -22,7 +22,7 @@ Agentless configuration management, orchestration, and automation.
 
 - You need real-time state enforcement or managing thousands of nodes at high frequency.
 
-[Official site](https://www.ansible.com) · [Source repository](https://github.com/ansible/ansible)
+[Official site](https://www.ansible.com) · [Documentation](https://docs.ansible.com/ansible/latest/) · [Source repository](https://github.com/ansible/ansible)
 
 ### Ansible kubernetes.core collection
 

@@ -10,7 +10,7 @@
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Run GitHub Actions runners on Kubernetes.
 
@@ -22,7 +22,7 @@ Run GitHub Actions runners on Kubernetes.
 
 - GitHub-hosted runners or a simple VM-based setup meets your CI needs.
 
-[Source repository](https://github.com/actions/actions-runner-controller)
+[Official site](https://github.com/actions/actions-runner-controller) · [Documentation](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners-with-actions-runner-controller/quickstart-for-actions-runner-controller) · [Source repository](https://github.com/actions/actions-runner-controller)
 
 ### Agones
 
@@ -1314,7 +1314,7 @@ API gateway with an open-source core and commercial management and enterprise ca
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes resource orchestration framework.
 
@@ -1326,7 +1326,7 @@ Kubernetes resource orchestration framework.
 
 - Existing operators or Crossplane compositions cover your orchestration needs.
 
-[Official site](https://github.com/koreo-dev)
+[Official site](https://koreo.dev) · [Documentation](https://github.com/koreo-dev/koreo-core/blob/main/docs/workflow.md) · [Source repository](https://github.com/koreo-dev/koreo-core)
 
 ### Krateo Core Provider
 

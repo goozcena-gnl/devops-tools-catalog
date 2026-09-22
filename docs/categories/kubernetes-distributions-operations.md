@@ -371,8 +371,8 @@ Ambiguous umbrella name spanning current Swarm mode embedded in Docker Engine an
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Source Available<br>
+**Status:** Active
 
 Developer tool for reasoning about and running complex microservice backends locally with Kubernetes.
 
@@ -384,7 +384,7 @@ Developer tool for reasoning about and running complex microservice backends loc
 
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
-[Official site](https://torloejborg.github.io/easykube/easykube/latest)
+[Official site](https://torloejborg.github.io/easykube/) · [Documentation](https://torloejborg.github.io/easykube/easykube/latest) · [Source repository](https://github.com/torloejborg/easykube)
 
 ### EKS Node Viewer
 

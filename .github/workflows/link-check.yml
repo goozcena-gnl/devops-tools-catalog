@@ -29,8 +29,14 @@ jobs:
           cache: pip
           cache-dependency-path: pyproject.toml
 
+      - name: Check Python dependency drift
+        run: python -m scripts.python_constraints --check
+
+      - name: Install build backend
+        run: python -m pip install --disable-pip-version-check --no-input -c config/python-constraints-3.12.txt hatchling editables
+
       - name: Install catalogue dependencies
-        run: python -m pip install --disable-pip-version-check --no-input -e .
+        run: python -m pip install --disable-pip-version-check --no-input --no-build-isolation -c config/python-constraints-3.12.txt -e .
 
       - name: Run strict full audit
         id: link-audit

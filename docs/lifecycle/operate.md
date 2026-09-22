@@ -186,7 +186,7 @@
 - [Dozzle](https://dozzle.dev) — Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes support.
 - [duf](https://github.com/muesli/duf) — Command-line utility that presents disk usage and free-space information for mounted filesystems.
 - [Dynatrace](https://www.dynatrace.com/) — Commercial observability and application-performance platform spanning infrastructure, applications, logs, security, digital experience, and AI-assisted analysis.
-- [Easykube](https://torloejborg.github.io/easykube/easykube/latest) — Developer tool for reasoning about and running complex microservice backends locally with Kubernetes.
+- [Easykube](https://torloejborg.github.io/easykube/) — Developer tool for reasoning about and running complex microservice backends locally with Kubernetes.
 - [EasyMile PostgreSQL Operator](https://easymile.github.io/postgresql-operator) — Kubernetes operator for managing PostgreSQL instances.
 - [ecc.tools](https://ecc.tools) — OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
 - [Eclipse Jetty](https://jetty.org/) — Java HTTP server and servlet container usable standalone or embedded.
@@ -373,7 +373,7 @@
 - [Kontroler](https://www.kontroler.dev/) — Experimental open-source Kubernetes-native DAG scheduler with controller, API server, and optional web UI components.
 - [kOps](https://kops.sigs.k8s.io/) — Kubernetes lifecycle manager for creating and upgrading production clusters, principally on cloud infrastructure.
 - [Kor](https://github.com/yonahd/kor) — CLI for discovering unused and orphaned Kubernetes resources.
-- [Koreo](https://github.com/koreo-dev) — Kubernetes resource orchestration framework.
+- [Koreo](https://koreo.dev) — Kubernetes resource orchestration framework.
 - [Krateo Core Provider](https://github.com/krateoplatformops/core-provider) — Krateo component that manages Helm charts as Kubernetes-native resources and generates CRDs dynamically from chart schemas.
 - [Krateo OASGen Provider](https://docs.krateo.io/key-concepts/kog/oasgen-provider) — OpenAPI generator for Kubernetes.
 - [Kratix](https://www.kratix.io) — Framework for platform engineering on Kubernetes.
@@ -622,7 +622,7 @@
 - [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) — Proxmox datacenter management product.
 - [Proxmox Virtual Environment (VE)](https://github.com/proxmox) — Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
 - [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) — Proxmox optimization utilities.
-- [Pulse Relay](https://pulserelay.pro) — Incident/alert relay environment.
+- [Pulse](https://pulserelay.pro) — Self-hosted infrastructure monitoring workspace for Proxmox, Docker, Kubernetes, TrueNAS, hosts, and alerts, with a separate commercial Pulse Pro edition.
 - [Pumba](https://github.com/alexei-led/pumba) — Chaos testing, network emulation, and stress testing tool for containers.
 - [Puppet](https://puppet.com) — Configuration management and automation; open source core with enterprise features.
 - [pv-migrate](https://github.com/utkuozdemir/pv-migrate) — CLI tool for migrating data between Kubernetes Persistent Volumes.
@@ -653,7 +653,7 @@
 - [restic](https://restic.net/) — Encrypted deduplicating backup program for local and remote storage backends.
 - [ripgrep](https://github.com/BurntSushi/ripgrep) — Recursive text-search CLI with regular expressions and ignore-file support.
 - [RKE2](https://docs.rke2.io) — Rancher Kubernetes Engine 2 (hardened Kubernetes).
-- [Robusta](https://home.robusta.dev) — Kubernetes observability and automation.
+- [Robusta](https://home.robusta.dev) — Kubernetes alert enrichment, investigation, and automation platform centered on the open-source Robusta Classic engine with optional hosted platform capabilities.
 - [Rocky Linux](https://rockylinux.org) — Enterprise Linux distribution.
 - [Rook](https://rook.io) — Storage orchestrator for Kubernetes.
 - [RootlessKit](https://github.com/rootless-containers/rootlesskit) — Rootless container toolkit.

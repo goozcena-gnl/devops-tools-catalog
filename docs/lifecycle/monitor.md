@@ -102,11 +102,11 @@
 - [PatchMon](https://patchmon.net) — Patch management and monitoring platform.
 - [Prometheus](https://prometheus.io) — Monitoring and alerting toolkit.
 - [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) — Metrics cache that accepts pushed metrics from short-lived and batch jobs for Prometheus scraping.
-- [Pulse Relay](https://pulserelay.pro) — Incident/alert relay environment.
+- [Pulse](https://pulserelay.pro) — Self-hosted infrastructure monitoring workspace for Proxmox, Docker, Kubernetes, TrueNAS, hosts, and alerts, with a separate commercial Pulse Pro edition.
 - [Quickwit](https://quickwit.io) — Distributed log search/indexing built around fast ingestion and cost control.
 - [Radar](https://radarhq.io/) — Kubernetes inspection interface with resource topology, events, GitOps information, and an MCP surface.
 - [Railway](https://railway.com/) — Managed application platform for building, deploying, networking, scaling, and observing services from source repositories or containers.
-- [Robusta](https://home.robusta.dev) — Kubernetes observability and automation.
+- [Robusta](https://home.robusta.dev) — Kubernetes alert enrichment, investigation, and automation platform centered on the open-source Robusta Classic engine with optional hosted platform capabilities.
 - [rsyslog](https://www.rsyslog.com) — High-performance syslog daemon with flexible routing (often used as a log edge forwarder).
 - [RustNet](https://github.com/domcyrus/rustnet) — Cross-platform network monitoring TUI with packet inspection, process attribution, filtering, and connection analytics.
 - [Scanopy](https://scanopy.net/) — Self-hosted network inventory and topology mapping platform with automated device discovery.

@@ -291,24 +291,24 @@ Patch management and monitoring platform.
 
 [Official site](https://patchmon.net)
 
-### Pulse Relay
+### Pulse
 
 **Categories:** SRE, incident response and on-call<br>
 **Roles:** Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Incident/alert relay environment.
+Self-hosted infrastructure monitoring workspace for Proxmox, Docker, Kubernetes, TrueNAS, hosts, and alerts, with a separate commercial Pulse Pro edition.
 
 **Use when**
 
-- Forwarding alerts between systems with transformation logic.
+- You need a self-hosted monitoring workspace for homelab or SMB infrastructure spanning Proxmox, Docker, Kubernetes, storage, and hosts.
 
 **Consider alternatives when**
 
-- Native integrations between your monitoring and incident tools already work.
+- You already run a broader enterprise observability stack and only need a lightweight alert relay.
 
-[Official site](https://pulserelay.pro) · [Source repository](https://github.com/rcourtman/Pulse)
+[Official site](https://pulserelay.pro) · [Documentation](https://github.com/rcourtman/Pulse/blob/main/docs/README.md) · [Source repository](https://github.com/rcourtman/Pulse)
 
 ### RustNet
 

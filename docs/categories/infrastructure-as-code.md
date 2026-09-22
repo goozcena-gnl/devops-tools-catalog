@@ -48,7 +48,7 @@ Self-hosted pull-request automation for Terraform and OpenTofu plans and applies
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
 
@@ -60,7 +60,7 @@ Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile config
 
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
-[Official site](https://atmos.tools) · [Source repository](https://github.com/cloudposse/atmos)
+[Official site](https://atmos.tools) · [Documentation](https://github.com/cloudposse/atmos/blob/main/README.md) · [Source repository](https://github.com/cloudposse/atmos)
 
 ### AWS CDK
 
