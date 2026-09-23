@@ -128,6 +128,33 @@ def test_check_constraints_resolves_relative_path_against_root(
     assert exit_code == 0
 
 
+def test_check_constraints_reports_drift_without_modifying_file(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+) -> None:
+    constraints_path = tmp_path / "constraints.txt"
+    original = "missing==1.0\nchanged==2.0\n"
+    constraints_path.write_text(original, encoding="utf-8")
+
+    def fake_resolve_constraints(resolved_root: Path) -> dict[str, str]:
+        assert resolved_root == ROOT
+        return {"added": "3.0", "changed": "2.1"}
+
+    monkeypatch.setattr(
+        python_constraints, "resolve_constraints", fake_resolve_constraints
+    )
+
+    exit_code = python_constraints.main(
+        ["--check", "--constraints-file", str(constraints_path)]
+    )
+
+    assert exit_code == 1
+    assert constraints_path.read_text(encoding="utf-8") == original
+    output = capsys.readouterr().out
+    assert "missing: missing==1.0" in output
+    assert "added: added==3.0" in output
+    assert "changed: changed expected 2.0 resolved 2.1" in output
+
+
 def test_main_check_custom_constraints_path_is_side_effect_free(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
