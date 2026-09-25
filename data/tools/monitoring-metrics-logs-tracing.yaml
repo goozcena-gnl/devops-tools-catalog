@@ -2461,9 +2461,12 @@
   needs_review: true
 - id: robusta
   name: Robusta
-  summary: Kubernetes observability and automation.
+  summary: Kubernetes alert enrichment, investigation, and automation platform centered on the open-source
+    Robusta Classic engine with optional hosted platform capabilities.
   official_url: https://home.robusta.dev
   repository_url: https://github.com/robusta-dev/robusta
+  repository_archived: false
+  documentation_url: https://docs.robusta.dev/master/index.html
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -2481,20 +2484,29 @@
   - Your cluster is small and basic Prometheus alerting suffices.
   deployment_models: []
   license_model: open-core
-  maturity: unknown
-  status: needs-review
+  license_spdx: MIT
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-22'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L33
   - legacy:devopstools_final.md#L734
-  needs_review: true
+  - https://home.robusta.dev/
+  - https://docs.robusta.dev/master/index.html
+  - https://github.com/robusta-dev/robusta
+  - https://github.com/robusta-dev/robusta/blob/master/README.md
+  - https://github.com/robusta-dev/robusta/blob/master/LICENSE
+  needs_review: false
 - id: rsyslog
   name: rsyslog
   summary: High-performance syslog daemon with flexible routing (often used as a log edge forwarder).
   official_url: https://www.rsyslog.com
   repository_url: https://github.com/rsyslog/rsyslog
+  repository_archived: false
+  documentation_url: https://docs.rsyslog.com/doc/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -2512,15 +2524,21 @@
   - You need structured log parsing or container-native log collection.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: LGPL-3.0-only
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-22'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L62
   - legacy:devopstools_final.md#L770
-  needs_review: true
+  - https://www.rsyslog.com
+  - https://docs.rsyslog.com/doc/
+  - https://github.com/rsyslog/rsyslog
+  - https://github.com/rsyslog/rsyslog/blob/main/README.md
+  - https://github.com/rsyslog/rsyslog/blob/main/COPYING.LESSER
+  needs_review: false
 - id: scanopy
   name: Scanopy
   summary: Self-hosted network inventory and topology mapping platform with automated device discovery.

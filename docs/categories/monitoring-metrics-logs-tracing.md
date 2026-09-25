@@ -1532,9 +1532,9 @@ Distributed log search/indexing built around fast ingestion and cost control.
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes observability and automation.
+Kubernetes alert enrichment, investigation, and automation platform centered on the open-source Robusta Classic engine with optional hosted platform capabilities.
 
 **Use when**
 
@@ -1544,14 +1544,14 @@ Kubernetes observability and automation.
 
 - Your cluster is small and basic Prometheus alerting suffices.
 
-[Official site](https://home.robusta.dev) · [Source repository](https://github.com/robusta-dev/robusta)
+[Official site](https://home.robusta.dev) · [Documentation](https://docs.robusta.dev/master/index.html) · [Source repository](https://github.com/robusta-dev/robusta)
 
 ### rsyslog
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 High-performance syslog daemon with flexible routing (often used as a log edge forwarder).
 
@@ -1563,7 +1563,7 @@ High-performance syslog daemon with flexible routing (often used as a log edge f
 
 - You need structured log parsing or container-native log collection.
 
-[Official site](https://www.rsyslog.com) · [Source repository](https://github.com/rsyslog/rsyslog)
+[Official site](https://www.rsyslog.com) · [Documentation](https://docs.rsyslog.com/doc/) · [Source repository](https://github.com/rsyslog/rsyslog)
 
 ### Scanopy
 

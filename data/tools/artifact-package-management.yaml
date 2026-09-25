@@ -32,6 +32,8 @@
   summary: Discover and share packages (Helm charts, operators, etc.).
   official_url: https://artifacthub.io
   repository_url: https://github.com/artifacthub/hub
+  repository_archived: false
+  documentation_url: https://artifacthub.io/docs/
   categories:
   - artifact-package-management
   subcategories:
@@ -49,15 +51,21 @@
   - '* You need a private artifact registry; Artifact Hub is a discovery layer, not a storage backend.'
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-22'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L102
   - legacy:devopstools_final.md#L367
-  needs_review: true
+  - https://artifacthub.io
+  - https://artifacthub.io/docs/
+  - https://github.com/artifacthub/hub
+  - https://github.com/artifacthub/hub/blob/master/README.md
+  - https://github.com/artifacthub/hub/blob/master/LICENSE
+  needs_review: false
 - id: cargo-binstall
   name: cargo-binstall
   summary: Installer for prebuilt Rust package executables with source-build fallback.

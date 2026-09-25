@@ -10,7 +10,7 @@
 | [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) | Virtualization, bare metal and homelab, Application and cloud security | oss | active |
 | [AlmaLinux OS](https://almalinux.org/) | Foundations, Linux and scripting | oss | active |
 | [Alpine Linux](https://github.com/alpinelinux) | Virtualization, bare metal and homelab | oss | needs-review |
-| [Ansible](https://www.ansible.com) | Configuration management | oss | needs-review |
+| [Ansible](https://www.ansible.com) | Configuration management | oss | active |
 | [Apache Cassandra](https://cassandra.apache.org/) | Databases, caching and data infrastructure | oss | active |
 | [Apache HBase](https://hbase.apache.org/) | Databases, caching and data infrastructure | oss | active |
 | [Apache HTTP Server](https://httpd.apache.org/) | Foundations, Linux and scripting | oss | active |
@@ -21,7 +21,7 @@
 | [Arcane](https://getarcane.app/) | Virtualization, bare metal and homelab | oss | active |
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
-| [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
+| [atmos](https://atmos.tools) | Infrastructure as Code | oss | active |
 | [atop](https://github.com/Atoptool/atop) | Foundations, Linux and scripting | oss | active |
 | [AttuneOps](https://attuneops.io/) | Configuration management, Workflow automation and ChatOps | commercial | active |
 | [Atuin](https://atuin.sh/) | Foundations, Linux and scripting | oss | active |

@@ -22,7 +22,7 @@
 | [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Angular](https://angular.dev) | Developer experience and local environments | oss | needs-review |
-| [Ansible](https://www.ansible.com) | Configuration management | oss | needs-review |
+| [Ansible](https://www.ansible.com) | Configuration management | oss | active |
 | [Ansible kubernetes.core collection](https://github.com/ansible-collections/kubernetes.core) | Configuration management, Kubernetes distributions and operations | oss | active |
 | [Ansible Lint](https://docs.ansible.com/projects/lint/) | CI, build and testing | oss | active |
 | [Ansible Molecule](https://docs.ansible.com/projects/molecule/) | CI, build and testing | oss | active |
@@ -44,14 +44,14 @@
 | [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
-| [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
+| [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | active |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
 | [asciinema](https://asciinema.org/) | Documentation, learning and career resources | oss | active |
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) | Monitoring, metrics, logs and tracing | oss | active |
 | [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | needs-review |
 | [ast-grep](https://ast-grep.github.io/) | Developer experience and local environments | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
-| [atmos](https://atmos.tools) | Infrastructure as Code | oss | needs-review |
+| [atmos](https://atmos.tools) | Infrastructure as Code | oss | active |
 | [atop](https://github.com/Atoptool/atop) | Foundations, Linux and scripting | oss | active |
 | [AttuneOps](https://attuneops.io/) | Configuration management, Workflow automation and ChatOps | commercial | active |
 | [Atuin](https://atuin.sh/) | Foundations, Linux and scripting | oss | active |
@@ -473,7 +473,7 @@
 | [OpenDepot](https://tonedefdev.github.io/opendepot/) | Artifact and package management, Infrastructure as Code, Emerging and experimental tools | oss | active |
 | [OpenDev](https://opendev.org/) | Source control and repository management, CI, build and testing | free-saas | active |
 | [OpenFaaS](https://www.openfaas.com) | Serverless, edge and WebAssembly | open-core | needs-review |
-| [OpenFeature](https://github.com/open-feature) | CD, GitOps, release and promotion | oss | needs-review |
+| [OpenFeature](https://openfeature.dev) | CD, GitOps, release and promotion | oss | active |
 | [OpenObserve](https://openobserve.ai/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
@@ -550,11 +550,11 @@
 | [Review Flow](https://dgouron.github.io/review-flow) | CI, build and testing | oss | needs-review |
 | [ripgrep](https://github.com/BurntSushi/ripgrep) | Foundations, Linux and scripting | oss | active |
 | [Roadmap.sh](https://roadmap.sh) | Documentation, learning and career resources | documentation | needs-review |
-| [Robusta](https://home.robusta.dev) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Robusta](https://home.robusta.dev) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Rocky Linux](https://rockylinux.org) | Foundations, Linux and scripting | oss | needs-review |
 | [Root Me](https://www.root-me.org/) | Documentation, learning and career resources | documentation | active |
 | [RootlessKit](https://github.com/rootless-containers/rootlesskit) | Virtualization, bare metal and homelab | oss | needs-review |
-| [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [RTK AI](https://www.rtk-ai.app) | Developer experience and local environments | unknown | needs-review |
 | [Ruby](https://www.ruby-lang.org/en/) | Foundations, Linux and scripting | oss | active |
 | [Rudder](https://www.rudder.io) | Configuration management | open-core | needs-review |

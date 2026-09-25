@@ -74,6 +74,8 @@
     scale.
   official_url: https://atmos.tools
   repository_url: https://github.com/cloudposse/atmos
+  repository_archived: false
+  documentation_url: https://github.com/cloudposse/atmos/blob/main/README.md
   categories:
   - infrastructure-as-code
   subcategories:
@@ -91,14 +93,19 @@
   avoid_when: []
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-22'
   sources:
   - legacy:devopstools_final.md#L166
-  needs_review: true
+  - https://atmos.tools
+  - https://github.com/cloudposse/atmos
+  - https://github.com/cloudposse/atmos/blob/main/README.md
+  - https://github.com/cloudposse/atmos/blob/main/LICENSE
+  needs_review: false
 - id: aws-cdk
   name: AWS CDK
   summary: Infrastructure as code framework that defines cloud resources in familiar programming languages.

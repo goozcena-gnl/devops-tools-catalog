@@ -5,7 +5,7 @@
 
 | Tool | Categories | Model | Status |
 |---|---|---|---|
-| [Actions Runner Controller](https://github.com/actions/actions-runner-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Actions Runner Controller](https://github.com/actions/actions-runner-controller) | Kubernetes networking, storage and add-ons | oss | active |
 | [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [Agones](https://agones.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -95,7 +95,7 @@
 | [Dozzle](https://dozzle.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [duf](https://github.com/muesli/duf) | Foundations, Linux and scripting | oss | active |
 | [Dynatrace](https://www.dynatrace.com/) | Monitoring, metrics, logs and tracing | commercial | active |
-| [Easykube](https://torloejborg.github.io/easykube/easykube/latest) | Kubernetes distributions and operations | oss | needs-review |
+| [Easykube](https://torloejborg.github.io/easykube/) | Kubernetes distributions and operations | source-available | active |
 | [EasyMile PostgreSQL Operator](https://easymile.github.io/postgresql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) | Kubernetes distributions and operations | oss | needs-review |
 | [Elastic APM Server](https://www.elastic.co/observability/application-performance-monitoring) | Monitoring, metrics, logs and tracing | source-available | needs-review |
@@ -199,7 +199,7 @@
 | [Kong Gateway](https://developer.konghq.com/gateway/install/) | Kubernetes networking, storage and add-ons | open-core | active |
 | [Kontroler](https://www.kontroler.dev/) | Kubernetes distributions and operations | oss | active |
 | [Kor](https://github.com/yonahd/kor) | Kubernetes distributions and operations | oss | needs-review |
-| [Koreo](https://github.com/koreo-dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Koreo](https://koreo.dev) | Kubernetes networking, storage and add-ons | oss | active |
 | [Krateo Core Provider](https://github.com/krateoplatformops/core-provider) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Krateo OASGen Provider](https://docs.krateo.io/key-concepts/kog/oasgen-provider) | Kubernetes networking, storage and add-ons | documentation | needs-review |
 | [Kratix](https://www.kratix.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -340,7 +340,7 @@
 | [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) | Monitoring, metrics, logs and tracing | oss | active |
-| [Pulse Relay](https://pulserelay.pro) | SRE, incident response and on-call | unknown | needs-review |
+| [Pulse](https://pulserelay.pro) | SRE, incident response and on-call | oss | active |
 | [Pumba](https://github.com/alexei-led/pumba) | Chaos and performance engineering | oss | needs-review |
 | [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -353,9 +353,9 @@
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [restic](https://restic.net/) | Backup, disaster recovery and resilience | oss | active |
 | [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Robusta](https://home.robusta.dev) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Robusta](https://home.robusta.dev) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | needs-review |
 | [RustNet](https://github.com/domcyrus/rustnet) | SRE, incident response and on-call | oss | needs-review |
 | [Rūsternetes](https://calfonso.github.io/rusternetes) | Kubernetes distributions and operations | oss | needs-review |

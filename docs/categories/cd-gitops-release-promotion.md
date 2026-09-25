@@ -430,7 +430,7 @@ Managed web application platform for Git- and API-driven deployment, previews, f
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Open standard for feature flag management.
 
@@ -442,7 +442,7 @@ Open standard for feature flag management.
 
 - You only need a single provider's SDK and don't anticipate switching.
 
-[Official site](https://github.com/open-feature)
+[Official site](https://openfeature.dev) · [Documentation](https://github.com/open-feature/spec/blob/main/README.md) · [Source repository](https://github.com/open-feature/spec)
 
 ### Piku
 

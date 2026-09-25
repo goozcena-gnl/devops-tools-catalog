@@ -1,7 +1,10 @@
 - id: actions-runner-controller
   name: Actions Runner Controller
   summary: Run GitHub Actions runners on Kubernetes.
+  official_url: https://github.com/actions/actions-runner-controller
   repository_url: https://github.com/actions/actions-runner-controller
+  repository_archived: false
+  documentation_url: https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners-with-actions-runner-controller/quickstart-for-actions-runner-controller
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -19,15 +22,20 @@
   - GitHub-hosted runners or a simple VM-based setup meets your CI needs.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-22'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L68
   - legacy:devopstools_final.md#L528
-  needs_review: true
+  - https://github.com/actions/actions-runner-controller
+  - https://github.com/actions/actions-runner-controller/blob/master/README.md
+  - https://github.com/actions/actions-runner-controller/blob/master/LICENSE
+  - https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners-with-actions-runner-controller/quickstart-for-actions-runner-controller
+  needs_review: false
 - id: agones
   name: Agones
   summary: Kubernetes-native platform for hosting, running, and scaling dedicated game servers.
@@ -2090,7 +2098,10 @@
 - id: koreo
   name: Koreo
   summary: Kubernetes resource orchestration framework.
-  official_url: https://github.com/koreo-dev
+  official_url: https://koreo.dev
+  repository_url: https://github.com/koreo-dev/koreo-core
+  repository_archived: false
+  documentation_url: https://github.com/koreo-dev/koreo-core/blob/main/docs/workflow.md
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -2108,15 +2119,21 @@
   - Existing operators or Crossplane compositions cover your orchestration needs.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: emerging
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-22'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L111
   - legacy:devopstools_final.md#L587
-  needs_review: true
+  - https://koreo.dev
+  - https://github.com/koreo-dev/koreo-core
+  - https://github.com/koreo-dev/koreo-core/blob/main/README.md
+  - https://github.com/koreo-dev/koreo-core/blob/main/docs/workflow.md
+  - https://github.com/koreo-dev/koreo-core/blob/main/LICENSE
+  needs_review: false
 - id: krateo-core-provider
   name: Krateo Core Provider
   summary: Krateo component that manages Helm charts as Kubernetes-native resources and generates CRDs

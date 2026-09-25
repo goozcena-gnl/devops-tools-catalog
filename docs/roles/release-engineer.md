@@ -17,7 +17,7 @@
 | [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
-| [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | needs-review |
+| [Artifact Hub](https://artifacthub.io) | Artifact and package management | oss | active |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
 | [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | commercial | active |
 | [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | deprecated |
@@ -118,7 +118,7 @@
 | [Oh My Git!](https://ohmygit.org) | Source control and repository management | documentation | needs-review |
 | [OneDev](https://onedev.io) | CI, build and testing | oss | needs-review |
 | [OpenDev](https://opendev.org/) | Source control and repository management, CI, build and testing | free-saas | active |
-| [OpenFeature](https://github.com/open-feature) | CD, GitOps, release and promotion | oss | needs-review |
+| [OpenFeature](https://openfeature.dev) | CD, GitOps, release and promotion | oss | active |
 | [ORAS](https://oras.land) | Artifact and package management | oss | needs-review |
 | [Piku](https://piku.github.io) | CD, GitOps, release and promotion | oss | active |
 | [Playwright](https://playwright.dev) | CI, build and testing | oss | needs-review |

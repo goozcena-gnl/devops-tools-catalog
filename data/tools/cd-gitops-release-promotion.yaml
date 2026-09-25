@@ -644,7 +644,10 @@
 - id: openfeature
   name: OpenFeature
   summary: Open standard for feature flag management.
-  official_url: https://github.com/open-feature
+  official_url: https://openfeature.dev
+  repository_url: https://github.com/open-feature/spec
+  repository_archived: false
+  documentation_url: https://github.com/open-feature/spec/blob/main/README.md
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -662,15 +665,21 @@
   - You only need a single provider's SDK and don't anticipate switching.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-22'
   sources:
   - legacy:10_Miscellaneous/README.md#L14
   - legacy:devopstools_final.md#L1272
-  needs_review: true
+  - https://openfeature.dev
+  - https://github.com/open-feature/spec
+  - https://github.com/open-feature/spec/blob/main/README.md
+  - https://github.com/open-feature/spec/blob/main/LICENSE
+  - https://github.com/open-feature/spec/releases/tag/v0.9.0
+  needs_review: false
 - id: piku
   name: Piku
   summary: Heroku-like mini PaaS.

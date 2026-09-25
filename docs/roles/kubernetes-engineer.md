@@ -5,7 +5,7 @@
 
 | Tool | Categories | Model | Status |
 |---|---|---|---|
-| [Actions Runner Controller](https://github.com/actions/actions-runner-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Actions Runner Controller](https://github.com/actions/actions-runner-controller) | Kubernetes networking, storage and add-ons | oss | active |
 | [Agones](https://agones.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | commercial | active |
@@ -62,7 +62,7 @@
 | [Docker Swarm](https://docs.docker.com/engine/swarm) | Kubernetes distributions and operations | unknown | needs-review |
 | [dotnet-operator-sdk](https://dotnet.github.io/dotnet-operator-sdk) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Earthly](https://earthly.dev) | Containers and image tooling | oss | needs-review |
-| [Easykube](https://torloejborg.github.io/easykube/easykube/latest) | Kubernetes distributions and operations | oss | needs-review |
+| [Easykube](https://torloejborg.github.io/easykube/) | Kubernetes distributions and operations | source-available | active |
 | [EasyMile PostgreSQL Operator](https://easymile.github.io/postgresql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) | Kubernetes distributions and operations | oss | needs-review |
 | [Elemental](https://elemental.docs.rancher.com/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
@@ -149,7 +149,7 @@
 | [Kontroler](https://www.kontroler.dev/) | Kubernetes distributions and operations | oss | active |
 | [kOps](https://kops.sigs.k8s.io/) | Kubernetes distributions and operations | oss | active |
 | [Kor](https://github.com/yonahd/kor) | Kubernetes distributions and operations | oss | needs-review |
-| [Koreo](https://github.com/koreo-dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Koreo](https://koreo.dev) | Kubernetes networking, storage and add-ons | oss | active |
 | [Krateo Core Provider](https://github.com/krateoplatformops/core-provider) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Krateo OASGen Provider](https://docs.krateo.io/key-concepts/kog/oasgen-provider) | Kubernetes networking, storage and add-ons | documentation | needs-review |
 | [Kratix](https://www.kratix.io) | Kubernetes networking, storage and add-ons | oss | needs-review |

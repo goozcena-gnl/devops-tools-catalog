@@ -146,7 +146,7 @@
 - [Dokku](https://dokku.com) — PaaS for deploying apps using Docker.
 - [Dokploy](https://dokploy.com/) — Self-hostable platform for deploying applications, Docker Compose stacks, and databases across user-managed servers.
 - [dotnet-operator-sdk](https://dotnet.github.io/dotnet-operator-sdk) — Build Kubernetes operators/controllers using .NET.
-- [Easykube](https://torloejborg.github.io/easykube/easykube/latest) — Developer tool for reasoning about and running complex microservice backends locally with Kubernetes.
+- [Easykube](https://torloejborg.github.io/easykube/) — Developer tool for reasoning about and running complex microservice backends locally with Kubernetes.
 - [EasyMile PostgreSQL Operator](https://easymile.github.io/postgresql-operator) — Kubernetes operator for managing PostgreSQL instances.
 - [ecc.tools](https://ecc.tools) — OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
 - [Eclipse Jetty](https://jetty.org/) — Java HTTP server and servlet container usable standalone or embedded.
@@ -282,7 +282,7 @@
 - [Kontroler](https://www.kontroler.dev/) — Experimental open-source Kubernetes-native DAG scheduler with controller, API server, and optional web UI components.
 - [kOps](https://kops.sigs.k8s.io/) — Kubernetes lifecycle manager for creating and upgrading production clusters, principally on cloud infrastructure.
 - [Kor](https://github.com/yonahd/kor) — CLI for discovering unused and orphaned Kubernetes resources.
-- [Koreo](https://github.com/koreo-dev) — Kubernetes resource orchestration framework.
+- [Koreo](https://koreo.dev) — Kubernetes resource orchestration framework.
 - [Krateo Core Provider](https://github.com/krateoplatformops/core-provider) — Krateo component that manages Helm charts as Kubernetes-native resources and generates CRDs dynamically from chart schemas.
 - [Krateo OASGen Provider](https://docs.krateo.io/key-concepts/kog/oasgen-provider) — OpenAPI generator for Kubernetes.
 - [Kratix](https://www.kratix.io) — Framework for platform engineering on Kubernetes.
@@ -428,7 +428,7 @@
 - [Open WebUI](https://openwebui.com) — Self-hosted web UI for running and managing local AI model backends (e.g., Ollama).
 - [OpenDepot](https://tonedefdev.github.io/opendepot/) — Kubernetes-native registry for publishing and consuming OpenTofu and Terraform providers and modules.
 - [OpenFaaS](https://www.openfaas.com) — Functions-as-a-Service framework for Kubernetes; OSS core with commercial Pro features.
-- [OpenFeature](https://github.com/open-feature) — Open standard for feature flag management.
+- [OpenFeature](https://openfeature.dev) — Open standard for feature flag management.
 - [OpenKruise](https://openkruise.io) — Enhanced workloads for Kubernetes.
 - [OpenKruise Agents](https://github.com/openkruise/agents) — Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
 - [OpenLens](https://github.com/MuhammedKalkan/OpenLens) — Open source distribution of Lens features.

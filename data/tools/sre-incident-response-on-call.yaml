@@ -381,10 +381,13 @@
   - legacy:devopstools_final.md#L825
   needs_review: true
 - id: pulse-relay
-  name: Pulse Relay
-  summary: Incident/alert relay environment.
+  name: Pulse
+  summary: Self-hosted infrastructure monitoring workspace for Proxmox, Docker, Kubernetes, TrueNAS,
+    hosts, and alerts, with a separate commercial Pulse Pro edition.
   official_url: https://pulserelay.pro
   repository_url: https://github.com/rcourtman/Pulse
+  repository_archived: false
+  documentation_url: https://github.com/rcourtman/Pulse/blob/main/docs/README.md
   categories:
   - sre-incident-response-on-call
   subcategories:
@@ -396,20 +399,27 @@
   - operate
   - monitor
   use_when:
-  - Forwarding alerts between systems with transformation logic.
+  - You need a self-hosted monitoring workspace for homelab or SMB infrastructure spanning Proxmox, Docker, Kubernetes, storage, and hosts.
   avoid_when:
-  - Native integrations between your monitoring and incident tools already work.
+  - You already run a broader enterprise observability stack and only need a lightweight alert relay.
   deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  license_model: oss
+  license_spdx: MIT
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-09-22'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L108
   - legacy:devopstools_final.md#L826
-  needs_review: true
+  - https://pulserelay.pro
+  - https://github.com/rcourtman/Pulse
+  - https://github.com/rcourtman/Pulse/blob/main/README.md
+  - https://github.com/rcourtman/Pulse/blob/main/docs/README.md
+  - https://github.com/rcourtman/Pulse/blob/main/LICENSE
+  needs_review: false
 - id: rustnet
   name: RustNet
   summary: Cross-platform network monitoring TUI with packet inspection, process attribution, filtering,
