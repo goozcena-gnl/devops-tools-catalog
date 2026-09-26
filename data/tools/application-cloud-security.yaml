@@ -4834,10 +4834,11 @@
   needs_review: false
 - id: syswarden
   name: SysWarden
-  summary: Firewall orchestration platform that applies blocklists, GeoIP, ASN, and security integrations
-    to block malicious traffic.
-  official_url: https://www.syswarden.io
+  summary: Host-local Linux security orchestrator combining nftables enforcement, host telemetry, bounded threat intelligence, out-of-band WAAP log analysis, authenticated HA, and a terminal dashboard.
+  official_url: https://syswarden.io
   repository_url: https://github.com/duggytuxy/syswarden
+  repository_archived: false
+  documentation_url: https://github.com/duggytuxy/syswarden/wiki
   categories:
   - application-cloud-security
   subcategories:
@@ -4845,21 +4846,42 @@
   roles:
   - devsecops-engineer
   - cloud-security-engineer
+  - infrastructure-systems-engineer
   lifecycle_stages:
-  - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - operate
+  - monitor
+  use_when:
+  - You need auditable host-local Linux network defense with explicit nftables ownership, bounded threat-intelligence feeds, and local detection workflows.
+  - You want HIDS/HIPS-style telemetry and response without inserting another proxy into the application data path.
+  avoid_when:
+  - You need an inline HTTP reverse proxy, traffic sanitizer, or regulatory certification product; SysWarden explicitly does not provide those roles.
+  - You need a cloud-native Kubernetes runtime security platform rather than host-local Linux enforcement.
+  deployment_models:
+  - self-hosted
+  - local
+  license_model: oss
+  license_spdx: GPL-3.0-only
+  commercial_offering: false
+  maturity: growing
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - linux
+  - nftables
+  - hids
+  - hips
+  - threat-intelligence
+  - network-security
+  verified_on: '2026-09-22'
   sources:
+  - https://syswarden.io
+  - https://github.com/duggytuxy/syswarden
+  - https://github.com/duggytuxy/syswarden/blob/main/README.md
+  - https://github.com/duggytuxy/syswarden/blob/main/LICENSE
+  - https://github.com/duggytuxy/syswarden/wiki
   - legacy:devopstools_final.md#L968
-  needs_review: true
+  needs_review: false
 - id: tailscale
   name: Tailscale
   summary: Zero-config VPN for secure networking; OSS client with commercial/SaaS control plane (self-hosting
