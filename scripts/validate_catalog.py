@@ -7,9 +7,11 @@ import argparse
 import csv
 import json
 import re
+import sys
 from collections import Counter, defaultdict
-from collections.abc import Sequence
+from collections.abc import Iterable, Sequence
 from pathlib import Path
+from typing import TextIO
 from urllib.parse import unquote
 
 from jsonschema import Draft202012Validator, FormatChecker
@@ -44,17 +46,74 @@ SENSITIVE_FILE_PATTERNS = (
     re.compile(r"(?i)(?:^|/)terraform\.tfstate(?:\.|$)"),
 )
 
+PRIVATE_KEY_BLOCK_RE = re.compile(
+    r"-----BEGIN (?P<kind>(?:RSA |EC |OPENSSH |DSA |PGP )?PRIVATE KEY(?: BLOCK)?)-----"
+    r".*?(?:-----END (?P=kind)-----|$)",
+    re.S,
+)
+URL_USERINFO_RE = re.compile(r"(?i)((?:[a-z][a-z0-9+.-]*:)?//)[^/?#\s]*@")
+AUTHORIZATION_RE = re.compile(r"(?i)\b(Bearer\s+|Basic\s+)[A-Za-z0-9._~+/=-]+")
+JWT_RE = re.compile(r"\beyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\b")
+CREDENTIAL_ASSIGNMENT_RE = re.compile(
+    r"(?i)\b((?:[a-z][a-z0-9_-]*[_-])?(?:password|passwd|pwd|api[_-]?key|"
+    r"api[_-]?token|access[_-]?token|auth[_-]?token|token|secret|authorization))"
+    r"([\"']?\s*[:=]\s*)"
+    r"(?:\"[^\"]*\"|'[^']*'|\[REDACTED\]|[^\s,;&\"'\]\})]+)"
+)
+# Detection keeps its confidence boundaries; output must also protect tokens
+# attached to other filename/ID characters, such as an underscore prefix.
+DIAGNOSTIC_SECRET_PATTERNS = tuple(
+    re.compile(pattern.pattern.replace(r"\b", ""), pattern.flags)
+    for pattern in SECRET_PATTERNS.values()
+)
+
+
+def safe_diagnostic(message: str) -> str:
+    """Protect each diagnostic, including encoded credentials in metadata."""
+    patterns = (
+        PRIVATE_KEY_BLOCK_RE,
+        URL_USERINFO_RE,
+        AUTHORIZATION_RE,
+        JWT_RE,
+        CREDENTIAL_ASSIGNMENT_RE,
+        *DIAGNOSTIC_SECRET_PATTERNS,
+    )
+    decoded = message
+    while (candidate := unquote(decoded)) != decoded:
+        decoded = candidate
+    # Keep ordinary encoded paths unchanged; decode only to remove credentials.
+    if any(pattern.search(decoded) for pattern in patterns):
+        message = decoded
+    message = PRIVATE_KEY_BLOCK_RE.sub("[REDACTED]", message)
+    message = URL_USERINFO_RE.sub(r"\1[REDACTED]@", message)
+    message = AUTHORIZATION_RE.sub(r"\1[REDACTED]", message)
+    message = CREDENTIAL_ASSIGNMENT_RE.sub(r"\1\2[REDACTED]", message)
+    message = JWT_RE.sub("[REDACTED]", message)
+    for pattern in DIAGNOSTIC_SECRET_PATTERNS:
+        message = pattern.sub("[REDACTED]", message)
+    return message
+
+
+def safe_diagnostics(messages: Iterable[str]) -> list[str]:
+    return [safe_diagnostic(message) for message in messages]
+
+
+class DiagnosticArgumentParser(argparse.ArgumentParser):
+    def _print_message(self, message: str | None, file: TextIO | None = None) -> None:
+        if message:
+            super()._print_message(safe_diagnostic(message), file)
+
 
 def duplicate_field_errors(tools: list[dict[str, object]], field: str) -> list[str]:
     groups: dict[str, list[str]] = defaultdict(list)
     for tool in tools:
         if value := tool.get(field):
-            groups[normalize_url(str(value))].append(str(tool["id"]))
-    return [
-        f"duplicate {field} {value}: {', '.join(ids)}"
-        for value, ids in sorted(groups.items())
+            groups[normalize_url(str(value))].append(safe_diagnostic(str(tool["id"])))
+    return safe_diagnostics(
+        f"duplicate {field} detected for records {', '.join(ids)}"
+        for _, ids in sorted(groups.items())
         if len(ids) > 1
-    ]
+    )
 
 
 def validate_records(root: Path = ROOT) -> list[str]:
@@ -73,42 +132,44 @@ def validate_records(root: Path = ROOT) -> list[str]:
 
     for tool_id, count in sorted(ids.items()):
         if count > 1:
-            errors.append(f"duplicate id {tool_id}: {count} records")
+            errors.append(f"duplicate id {safe_diagnostic(tool_id)}: {count} records")
     errors.extend(duplicate_field_errors(tools, "official_url"))
     errors.extend(duplicate_field_errors(tools, "repository_url"))
 
     for tool in tools:
-        tool_id = str(tool.get("id", "<missing>"))
+        tool_id = safe_diagnostic(str(tool.get("id", "<missing>")))
         for issue in validator.iter_errors(tool):
             location = ".".join(str(item) for item in issue.absolute_path)
             errors.append(
-                f"{tool_id}{'.' + location if location else ''}: {issue.message}"
+                f"{tool_id}{'.' + location if location else ''}: "
+                f"invalid value ({issue.validator})"
             )
         invalid_categories = set(tool.get("categories", [])) - category_ids
         invalid_roles = set(tool.get("roles", [])) - role_ids
         invalid_stages = set(tool.get("lifecycle_stages", [])) - stages
         if invalid_categories:
-            errors.append(f"{tool_id}: invalid categories {sorted(invalid_categories)}")
+            errors.append(f"{tool_id}: invalid categories")
         if invalid_roles:
-            errors.append(f"{tool_id}: invalid roles {sorted(invalid_roles)}")
+            errors.append(f"{tool_id}: invalid roles")
         if invalid_stages:
-            errors.append(
-                f"{tool_id}: invalid lifecycle stages {sorted(invalid_stages)}"
-            )
+            errors.append(f"{tool_id}: invalid lifecycle stages")
         if tool.get("status") not in statuses:
-            errors.append(f"{tool_id}: invalid status {tool.get('status')}")
+            errors.append(f"{tool_id}: invalid value for field 'status'")
 
     for path in iter_tool_files(root):
         payload = __import__("yaml").safe_load(path.read_text(encoding="utf-8")) or []
         file_ids = [item["id"] for item in payload]
         if file_ids != sorted(file_ids):
-            errors.append(f"{path.relative_to(root)} is not sorted by id")
+            errors.append(
+                f"{safe_diagnostic(str(path.relative_to(root)))} is not sorted by id"
+            )
         for item in payload:
             if item["categories"][0] != path.stem:
                 errors.append(
-                    f"{item['id']}: primary category does not match {path.name}"
+                    f"{safe_diagnostic(str(item['id']))}: primary category does not match "
+                    f"{safe_diagnostic(path.name)}"
                 )
-    return errors
+    return safe_diagnostics(errors)
 
 
 def validate_reconciliation(root: Path = ROOT) -> list[str]:
@@ -136,14 +197,12 @@ def validate_reconciliation(root: Path = ROOT) -> list[str]:
     }
     for index, row in enumerate(rows, start=2):
         if row["disposition"] not in allowed:
-            errors.append(
-                f"migration/reconciliation.csv:{index}: invalid disposition {row['disposition']}"
-            )
+            errors.append(f"migration/reconciliation.csv:{index}: invalid disposition")
         if row["disposition"] in {"rejected", "archived"} and not row["reason"]:
             errors.append(
                 f"migration/reconciliation.csv:{index}: missing disposition reason"
             )
-    return errors
+    return safe_diagnostics(errors)
 
 
 def validate_markdown_links(root: Path = ROOT) -> list[str]:
@@ -165,9 +224,10 @@ def validate_markdown_links(root: Path = ROOT) -> list[str]:
                 resolved = (path.parent / file_target).resolve()
                 if not resolved.is_relative_to(root.resolve()) or not resolved.exists():
                     errors.append(
-                        f"{path.relative_to(root)}:{line_number}: broken link {raw_target}"
+                        f"{safe_diagnostic(str(path.relative_to(root)))}:{line_number}: "
+                        f"broken link {safe_diagnostic(raw_target)}"
                     )
-    return errors
+    return safe_diagnostics(errors)
 
 
 def scan_secrets(root: Path = ROOT) -> list[str]:
@@ -179,8 +239,10 @@ def scan_secrets(root: Path = ROOT) -> list[str]:
         text = path.read_text(encoding="utf-8", errors="ignore")
         for label, pattern in SECRET_PATTERNS.items():
             if pattern.search(text):
-                errors.append(f"{path.relative_to(root)}: possible {label}")
-    return errors
+                errors.append(
+                    f"{safe_diagnostic(str(path.relative_to(root)))}: possible {label}"
+                )
+    return safe_diagnostics(errors)
 
 
 def validate_sensitive_files(root: Path = ROOT) -> list[str]:
@@ -191,8 +253,10 @@ def validate_sensitive_files(root: Path = ROOT) -> list[str]:
             continue
         relative = path.relative_to(root).as_posix()
         if any(pattern.search(relative) for pattern in SENSITIVE_FILE_PATTERNS):
-            errors.append(f"{relative}: sensitive file type must not be committed")
-    return errors
+            errors.append(
+                f"{safe_diagnostic(relative)}: sensitive file type must not be committed"
+            )
+    return safe_diagnostics(errors)
 
 
 def collect_errors(
@@ -211,11 +275,13 @@ def collect_errors(
     if check_secrets:
         errors.extend(scan_secrets(root))
         errors.extend(validate_sensitive_files(root))
-    return sorted(errors)
+    return sorted(safe_diagnostics(errors))
 
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = DiagnosticArgumentParser(
+        description=__doc__, prog=safe_diagnostic(Path(sys.argv[0]).name)
+    )
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--skip-links", action="store_true")
     parser.add_argument("--skip-generated", action="store_true")
@@ -225,12 +291,21 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
-    errors = collect_errors(
-        args.root.resolve(),
-        check_links=not args.skip_links,
-        check_generated=not args.skip_generated,
-        check_secrets=not args.skip_secrets,
-    )
+    try:
+        errors = collect_errors(
+            args.root.resolve(),
+            check_links=not args.skip_links,
+            check_generated=not args.skip_generated,
+            check_secrets=not args.skip_secrets,
+        )
+    except Exception as error:
+        # Parser exceptions can contain input excerpts: never emit their text.
+        print(
+            f"Catalogue validation could not complete ({type(error).__name__}); "
+            "check catalogue input files and record structure.",
+            file=sys.stderr,
+        )
+        return 1
     if errors:
         print(f"Catalogue validation failed with {len(errors)} issue(s):")
         print("\n".join(f"- {error}" for error in errors))
