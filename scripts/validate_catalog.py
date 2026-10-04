@@ -52,13 +52,15 @@ PRIVATE_KEY_BLOCK_RE = re.compile(
     re.S,
 )
 URL_USERINFO_RE = re.compile(r"(//)[^/?#\s]*@")
-AUTHORIZATION_RE = re.compile(r"(?i)\b(Bearer\s+|Basic\s+)[A-Za-z0-9._~+/=-]+")
-JWT_RE = re.compile(r"\beyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\b")
+AUTHORIZATION_RE = re.compile(
+    r"(?i)(Bearer\s+|Basic\s+)(?:\"[^\"]*(?:\"|$)|'[^']*(?:'|$)|[A-Za-z0-9._~+/=-]+)"
+)
+JWT_RE = re.compile(r"eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+")
 CREDENTIAL_ASSIGNMENT_RE = re.compile(
-    r"(?i)(?<![a-z0-9])(password|passwd|pwd|api[_-]?key|api[_-]?token|"
+    r"(?i)(password|passwd|pwd|api[_-]?key|api[_-]?token|"
     r"access[_-]?token|auth[_-]?token|token|secret|authorization)"
     r"([\"']?\s*[:=]\s*)"
-    r"(?:\"[^\"]*\"|'[^']*'|\[REDACTED\]|[^\s,;&\"'\]\})]+)"
+    r"(?:\"[^\"]*(?:\"|$)|'[^']*(?:'|$)|\[REDACTED\]|[^,;&\"'\]\})]+)"
 )
 # Detection keeps its confidence boundaries; output must also protect tokens
 # attached to other filename/ID characters, such as an underscore prefix.

@@ -282,17 +282,46 @@ def test_validator_redacts_tokens_attached_to_metadata(tmp_path, capsys, label) 
 
 
 @pytest.mark.parametrize("alias", ["db_password", "client_secret", "API_TOKEN"])
+@pytest.mark.parametrize(
+    "secret",
+    ["fixture-alias-credential", "fixture password tail", '"fixture password tail'],
+)
 def test_validator_redacts_credential_aliases_in_metadata(
-    tmp_path, capsys, alias
+    tmp_path, capsys, alias, secret
 ) -> None:
-    secret = "fixture-alias-credential"
     write_catalog(tmp_path, [minimal_record(id=f"{alias}={secret}")])
 
     assert main(validator_args(tmp_path)) == 1
 
     captured = capsys.readouterr()
     assert secret not in captured.out + captured.err
+    assert "tail" not in captured.out + captured.err
     assert f"{alias}=[REDACTED]" in captured.out
+    assert "invalid value (pattern)" in captured.out
+    assert captured.err == ""
+
+
+@pytest.mark.parametrize(
+    "credential",
+    [
+        "Bearer fixture-authorization-payload",
+        'Bearer "fixture-authorization-payload"',
+        'Bearer "fixture-authorization-payload',
+        "Basic fixture-authorization-payload",
+        "eyJ" + "header.eyJpayload.signature",
+    ],
+)
+def test_validator_redacts_authorization_attached_to_metadata(
+    tmp_path, capsys, credential
+) -> None:
+    write_catalog(tmp_path, [minimal_record(id=f"backup_{credential}")])
+
+    assert main(validator_args(tmp_path)) == 1
+
+    captured = capsys.readouterr()
+    assert credential not in captured.out + captured.err
+    assert "payload" not in captured.out + captured.err
+    assert "[REDACTED]" in captured.out
     assert "invalid value (pattern)" in captured.out
     assert captured.err == ""
 
