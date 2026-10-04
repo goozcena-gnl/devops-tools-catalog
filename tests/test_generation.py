@@ -473,3 +473,13 @@ def test_safe_diagnostic_handles_mixed_encoded_url_and_token() -> None:
 def test_safe_diagnostic_preserves_ordinary_encoded_paths() -> None:
     message = "README.md:1: broken link docs/a%20file.md"
     assert safe_diagnostic(message) == message
+
+
+def test_safe_diagnostic_preserves_ordinary_dotted_names() -> None:
+    message = "README.md:1: broken link docs/a%20file.library.py"
+    assert safe_diagnostic(message) == message
+
+
+def test_safe_diagnostic_handles_repeated_jwt_prefixes() -> None:
+    message = "eyJ" * 10_000
+    assert safe_diagnostic(message) == message

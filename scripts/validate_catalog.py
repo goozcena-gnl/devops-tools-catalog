@@ -55,7 +55,8 @@ URL_USERINFO_RE = re.compile(r"(//)[^/?#\s]*@")
 AUTHORIZATION_RE = re.compile(
     r"(?i)(Bearer\s+|Basic\s+)(?:\"[^\"]*(?:\"|$)|'[^']*(?:'|$)|[A-Za-z0-9._~+/=-]+)"
 )
-JWT_RE = re.compile(r"eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+")
+# Tokenize whole segments once, rather than retrying at every embedded 'eyJ'.
+JWT_RE = re.compile(r"(?<![A-Za-z0-9_-])[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+")
 CREDENTIAL_ASSIGNMENT_RE = re.compile(
     r"(?i)(password|passwd|pwd|api[_-]?key|api[_-]?token|"
     r"access[_-]?token|auth[_-]?token|token|secret|authorization)"
@@ -70,20 +71,31 @@ DIAGNOSTIC_SECRET_PATTERNS = tuple(
 )
 
 
+def jwt_start(match: re.Match[str]) -> int:
+    return match.group().partition(".")[0].find("eyJ")
+
+
+def redact_jwt(match: re.Match[str]) -> str:
+    value = match.group()
+    start = jwt_start(match)
+    return value if start < 0 else value[:start] + "[REDACTED]"
+
+
 def safe_diagnostic(message: str) -> str:
     """Protect each diagnostic, including encoded credentials in metadata."""
     patterns = (
         PRIVATE_KEY_BLOCK_RE,
         URL_USERINFO_RE,
         AUTHORIZATION_RE,
-        JWT_RE,
         CREDENTIAL_ASSIGNMENT_RE,
         *DIAGNOSTIC_SECRET_PATTERNS,
     )
     decoded = message
     sensitive = False
     while True:
-        sensitive |= any(pattern.search(decoded) for pattern in patterns)
+        sensitive |= any(pattern.search(decoded) for pattern in patterns) or any(
+            jwt_start(match) >= 0 for match in JWT_RE.finditer(decoded)
+        )
         # Strip userinfo before decoding can turn an encoded '/' into a delimiter.
         decoded = URL_USERINFO_RE.sub(r"\1[REDACTED]@", decoded)
         candidate = unquote(decoded)
@@ -97,7 +109,7 @@ def safe_diagnostic(message: str) -> str:
     message = URL_USERINFO_RE.sub(r"\1[REDACTED]@", message)
     message = AUTHORIZATION_RE.sub(r"\1[REDACTED]", message)
     message = CREDENTIAL_ASSIGNMENT_RE.sub(r"\1\2[REDACTED]", message)
-    message = JWT_RE.sub("[REDACTED]", message)
+    message = JWT_RE.sub(redact_jwt, message)
     for pattern in DIAGNOSTIC_SECRET_PATTERNS:
         message = pattern.sub("[REDACTED]", message)
     return message
