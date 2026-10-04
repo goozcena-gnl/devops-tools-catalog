@@ -55,12 +55,12 @@ def test_quality_workflow_checks_and_uses_constraints() -> None:
     )
 
 
-def test_link_check_workflow_uses_constraints() -> None:
+def test_link_check_workflow_uses_pins_without_blocking_on_dependency_drift() -> None:
     workflow = (ROOT / ".github" / "workflows" / "link-check.yml").read_text(
         encoding="utf-8"
     )
 
-    assert "python -m scripts.python_constraints --check" in workflow
+    assert "python -m scripts.python_constraints --check" not in workflow
     assert "-c config/python-constraints-3.12.txt hatchling editables" in workflow
     assert "--no-build-isolation -c config/python-constraints-3.12.txt -e ." in workflow
 
