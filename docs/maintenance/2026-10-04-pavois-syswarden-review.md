@@ -15,10 +15,11 @@ history supports active maintenance. The existing canonical ID and legacy
 provenance are preserved.
 
 SysWarden's [licence](https://github.com/duggytuxy/syswarden/blob/main/LICENSE)
-contains the GPLv3 text, but the inspected primary sources do not establish an
-applied `only` versus `or-later` grant. The unsupported `GPL-3.0-only` SPDX
-claim was removed and `needs_review: true` retained pending an explicit upstream
-notice. The OSS licence model remains supported; no variant is guessed.
+contains the GPLv3 text. Its [official website](https://syswarden.io/) explicitly
+states `GPL-3.0-or-later`, establishing the applied grant and resolving the
+initial variant uncertainty. The unsupported `GPL-3.0-only` claim is replaced
+with that explicit variant. With the reviewed metadata supported by primary
+sources, `needs_review: false` is justified.
 
 Catalogue quality run
 [35707774156](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/35707774156)

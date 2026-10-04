@@ -21,8 +21,8 @@ The DevOps ecosystem changes faster than a static list can safely represent: pro
 | Categories | **30** |
 | Engineering roles | **13** |
 | Lifecycle stages | **12** |
-| Records not flagged for review | **622** |
-| Records requiring review | **802** |
+| Records not flagged for review | **623** |
+| Records requiring review | **801** |
 | Deprecated, archived, or historical records | **14** |
 | Archived source repositories | **11** |
 | Most recent recorded verification date | **2026-10-04** |
