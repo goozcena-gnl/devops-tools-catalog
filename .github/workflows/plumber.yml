@@ -28,9 +28,9 @@ jobs:
           persist-credentials: false
 
       - name: Analyze GitHub Actions security
-        uses: getplumber/plumber@dbaaf7384c4d5708ed07744eaa3d2d94b0aebfd9 # v0.5.12
+        uses: getplumber/plumber@fb943e4efba61cf7b0a0c56f6648710a7453519b # v0.5.20
         with:
-          version: v0.5.2
+          version: v0.5.20
           verify-attestation: true
           config-file: .plumber.yaml
           min-points: 100
