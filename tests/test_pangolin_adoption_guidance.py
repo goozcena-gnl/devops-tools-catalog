@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections import Counter
 
 from scripts.catalog import load_tools
+from tests.catalogue_baseline import assert_baseline_preserved
 
 EXPECTED_EXISTING_SOURCES = {
     "legacy:devopstools_final.md#L960",
@@ -27,7 +28,7 @@ EXPECTED_AVOID_WHEN = [
 def _pangolin() -> dict:
     tools = load_tools()
     counts = Counter(tool["id"] for tool in tools)
-    assert len(tools) == 1423
+    assert_baseline_preserved([tool["id"] for tool in tools])
     assert counts["pangolin"] == 1
     return next(tool for tool in tools if tool["id"] == "pangolin")
 

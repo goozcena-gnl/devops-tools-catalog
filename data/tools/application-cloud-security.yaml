@@ -4861,7 +4861,6 @@
   - self-hosted
   - local
   license_model: oss
-  license_spdx: GPL-3.0-only
   commercial_offering: false
   maturity: growing
   status: active
@@ -4873,7 +4872,7 @@
   - hips
   - threat-intelligence
   - network-security
-  verified_on: '2026-09-22'
+  verified_on: '2026-10-04'
   sources:
   - https://syswarden.io
   - https://github.com/duggytuxy/syswarden
@@ -4881,7 +4880,7 @@
   - https://github.com/duggytuxy/syswarden/blob/main/LICENSE
   - https://github.com/duggytuxy/syswarden/wiki
   - legacy:devopstools_final.md#L968
-  needs_review: false
+  needs_review: true
 - id: tailscale
   name: Tailscale
   summary: Zero-config VPN for secure networking; OSS client with commercial/SaaS control plane (self-hosting

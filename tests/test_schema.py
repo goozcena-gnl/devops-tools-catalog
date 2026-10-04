@@ -6,12 +6,13 @@ from jsonschema import Draft202012Validator, FormatChecker
 
 from scripts.catalog import ROOT, load_tools
 from scripts.validate_catalog import validate_records
+from tests.catalogue_baseline import assert_baseline_preserved
 from tests.conftest import minimal_record
 
 
 def test_catalogue_loads_successfully() -> None:
     tools = load_tools()
-    assert len(tools) == 1423
+    assert_baseline_preserved([tool["id"] for tool in tools])
     assert tools == sorted(tools, key=lambda item: item["id"])
 
 

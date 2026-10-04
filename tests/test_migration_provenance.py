@@ -11,6 +11,7 @@ import pytest
 import yaml
 
 from scripts.catalog import ROOT, load_tools
+from tests.catalogue_baseline import assert_baseline_preserved
 
 RESTORATION_BASE = "81e3774dc31589a7f19991645cbf5b6ed676a266"
 REPAIRED_IDS = {
@@ -74,7 +75,7 @@ def test_reconciliation_accounting_matches_every_original_occurrence(catalogue) 
         "merged": 802,
         "archived": 7,
     }
-    assert len(catalogue) == len({tool["id"] for tool in catalogue}) == 1423
+    assert_baseline_preserved([tool["id"] for tool in catalogue])
 
 
 def test_restoration_closes_exact_historical_twenty_pointer_gap(catalogue) -> None:

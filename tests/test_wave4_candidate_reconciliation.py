@@ -9,6 +9,7 @@ from pathlib import Path
 import pytest
 
 from scripts.catalog import load_tools, load_yaml
+from tests.catalogue_baseline import assert_baseline_preserved, baseline_ids
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/maintenance/2026-09-08-wave4-candidate-reconciliation.csv"
@@ -93,9 +94,11 @@ def test_wave4_additions_and_baseline_ids_are_preserved(rows, catalogue) -> None
     ]
     assert len(added) == len(set(added)) == 117
     assert set(added) <= set(catalogue)
-    assert len(catalogue) == 1306 + len(added) == 1423
-    baseline_ids = "\n".join(sorted(set(catalogue) - set(added))).encode()
-    assert hashlib.sha256(baseline_ids).hexdigest() == (
+    assert_baseline_preserved(list(catalogue))
+    historical_ids = baseline_ids()
+    assert len(historical_ids) == 1306 + len(added) == 1423
+    baseline_bytes = "\n".join(sorted(historical_ids - set(added))).encode()
+    assert hashlib.sha256(baseline_bytes).hexdigest() == (
         "be35d3c8a5fb8ab71b126e8dc7c52ab1b9b0b19412cd42e3cf3566e521f1565a"
     )
 
