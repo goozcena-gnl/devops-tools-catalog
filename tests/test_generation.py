@@ -297,11 +297,14 @@ def test_validator_redacts_credential_aliases_in_metadata(
     assert captured.err == ""
 
 
-def test_validator_redacts_scheme_relative_url_credentials(tmp_path, capsys) -> None:
+@pytest.mark.parametrize("username", ["fixture-user", "fixture-user%2Fname"])
+def test_validator_redacts_scheme_relative_url_credentials(
+    tmp_path, capsys, username
+) -> None:
     secret = "fixture-relative-credential"
     write_catalog(tmp_path, [minimal_record()])
     (tmp_path / "README.md").write_text(
-        f"[Missing](//fixture-user:{secret}@example.invalid/a.md)\n", encoding="utf-8"
+        f"[Missing](//{username}:{secret}@example.invalid/a.md)\n", encoding="utf-8"
     )
     args = validator_args(tmp_path)
     args.remove("--skip-links")
@@ -406,6 +409,7 @@ def test_validator_help_redacts_program_name(monkeypatch, capsys, label) -> None
         'password="quoted password payload"',
         "https://username-payload@example.invalid",
         "ftp://user-payload:password-payload@example.invalid",
+        "https://" + "user%2Fname:password-payload@example.invalid",
         "eyJ" + "header.eyJpayload.signature",
         SYNTHETIC_SECRETS["private key"],
     ],
@@ -426,6 +430,15 @@ def test_safe_diagnostic_handles_encoded_credentials_and_is_idempotent(
         assert "[REDACTED]" in safe
         assert safe.startswith("fixture.txt: ")
         assert safe_diagnostic(safe) == safe
+
+
+def test_safe_diagnostic_handles_mixed_encoded_url_and_token() -> None:
+    secret = SYNTHETIC_SECRETS["GitHub token"]
+    message = secret + " https://" + "user%2Fname:password-payload@example.invalid"
+    safe = safe_diagnostic(message)
+    assert secret not in safe
+    assert "password-payload" not in safe
+    assert safe == "[REDACTED] https://[REDACTED]@example.invalid"
 
 
 def test_safe_diagnostic_preserves_ordinary_encoded_paths() -> None:

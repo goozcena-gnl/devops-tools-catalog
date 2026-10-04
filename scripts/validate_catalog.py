@@ -51,12 +51,12 @@ PRIVATE_KEY_BLOCK_RE = re.compile(
     r".*?(?:-----END (?P=kind)-----|$)",
     re.S,
 )
-URL_USERINFO_RE = re.compile(r"(?i)((?:[a-z][a-z0-9+.-]*:)?//)[^/?#\s]*@")
+URL_USERINFO_RE = re.compile(r"(//)[^/?#\s]*@")
 AUTHORIZATION_RE = re.compile(r"(?i)\b(Bearer\s+|Basic\s+)[A-Za-z0-9._~+/=-]+")
 JWT_RE = re.compile(r"\beyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\b")
 CREDENTIAL_ASSIGNMENT_RE = re.compile(
-    r"(?i)\b((?:[a-z][a-z0-9_-]*[_-])?(?:password|passwd|pwd|api[_-]?key|"
-    r"api[_-]?token|access[_-]?token|auth[_-]?token|token|secret|authorization))"
+    r"(?i)(?<![a-z0-9])(password|passwd|pwd|api[_-]?key|api[_-]?token|"
+    r"access[_-]?token|auth[_-]?token|token|secret|authorization)"
     r"([\"']?\s*[:=]\s*)"
     r"(?:\"[^\"]*\"|'[^']*'|\[REDACTED\]|[^\s,;&\"'\]\})]+)"
 )
@@ -79,10 +79,17 @@ def safe_diagnostic(message: str) -> str:
         *DIAGNOSTIC_SECRET_PATTERNS,
     )
     decoded = message
-    while (candidate := unquote(decoded)) != decoded:
+    sensitive = False
+    while True:
+        sensitive |= any(pattern.search(decoded) for pattern in patterns)
+        # Strip userinfo before decoding can turn an encoded '/' into a delimiter.
+        decoded = URL_USERINFO_RE.sub(r"\1[REDACTED]@", decoded)
+        candidate = unquote(decoded)
+        if candidate == decoded:
+            break
         decoded = candidate
     # Keep ordinary encoded paths unchanged; decode only to remove credentials.
-    if any(pattern.search(decoded) for pattern in patterns):
+    if sensitive:
         message = decoded
     message = PRIVATE_KEY_BLOCK_RE.sub("[REDACTED]", message)
     message = URL_USERINFO_RE.sub(r"\1[REDACTED]@", message)
