@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 import pytest
+from jsonschema import Draft202012Validator
 
 from scripts.catalog import ROOT, load_taxonomy, load_tools
 from scripts.generate_docs import expected_outputs, generate, label_map, render_tool
@@ -14,6 +15,7 @@ from scripts.validate_catalog import (
     main,
     safe_diagnostic,
     scan_secrets,
+    schema_error_diagnostics,
     validate_markdown_links,
     validate_sensitive_files,
 )
@@ -489,3 +491,131 @@ def test_safe_diagnostic_preserves_filename_around_jwt() -> None:
     credential = "eyJ" + "header.eyJpayload.signature"
     message = f"docs/backup_{credential}.txt: invalid value"
     assert safe_diagnostic(message) == "docs/backup_[REDACTED].txt: invalid value"
+
+
+def test_validator_schema_missing_required_field_has_context(tmp_path, capsys) -> None:
+    record = minimal_record(summary="opaque-object-value")
+    del record["name"]
+    write_catalog(tmp_path, [record])
+
+    assert main(validator_args(tmp_path)) == 1
+
+    captured = capsys.readouterr()
+    assert "example-tool['name']: missing required field" in captured.out
+    assert "opaque-object-value" not in captured.out + captured.err
+    assert str(record) not in captured.out + captured.err
+    assert captured.err == ""
+
+
+def test_validator_schema_multiple_required_fields_are_distinct(
+    tmp_path, capsys
+) -> None:
+    record = minimal_record()
+    del record["name"]
+    del record["summary"]
+    write_catalog(tmp_path, [record])
+
+    assert main(validator_args(tmp_path)) == 1
+
+    captured = capsys.readouterr()
+    for field in ("name", "summary"):
+        assert (
+            captured.out.count(f"example-tool['{field}']: missing required field") == 1
+        )
+    assert "example-tool: invalid value (required)" not in captured.out
+    assert str(record) not in captured.out + captured.err
+    assert captured.err == ""
+
+
+@pytest.mark.parametrize(
+    "field", ["password", "extra", "quoted'field", "first, second"]
+)
+def test_validator_schema_unexpected_property_has_context(
+    tmp_path, capsys, field
+) -> None:
+    value = "opaque-unexpected-value"
+    write_catalog(tmp_path, [minimal_record(**{field: value})])
+
+    assert main(validator_args(tmp_path, "--skip-secrets")) == 1
+
+    captured = capsys.readouterr()
+    assert f"example-tool[{field!r}]: unexpected property" in captured.out
+    assert value not in captured.out + captured.err
+    assert captured.err == ""
+
+
+@pytest.mark.parametrize("label", SYNTHETIC_SECRETS)
+@pytest.mark.parametrize("placement", ["name", "value", "both"])
+def test_validator_schema_unexpected_property_hides_secrets(
+    tmp_path, capsys, label, placement
+) -> None:
+    secret = SYNTHETIC_SECRETS[label]
+    field = secret if placement in {"name", "both"} else "password"
+    value = secret if placement in {"value", "both"} else "opaque-property-value"
+    write_catalog(tmp_path, [minimal_record(**{field: value})])
+
+    assert main(validator_args(tmp_path, "--skip-secrets")) == 1
+
+    captured = capsys.readouterr()
+    assert secret not in captured.out + captured.err
+    assert "synthetic-key-body" not in captured.out + captured.err
+    assert value not in captured.out + captured.err
+    context = "[REDACTED]" if placement in {"name", "both"} else "password"
+    if label == "credential in URL" and placement in {"name", "both"}:
+        context = "https://[REDACTED]@example.invalid"
+    assert f"example-tool[{context!r}]: unexpected property" in captured.out
+    assert captured.err == ""
+
+
+def test_schema_object_errors_keep_nested_context_and_pattern_properties() -> None:
+    schema = {
+        "properties": {
+            "metadata": {
+                "type": "object",
+                "properties": {"name": {"type": "string"}},
+                "patternProperties": {"^allowed_": {"type": "string"}},
+                "required": ["name", "summary"],
+                "additionalProperties": False,
+            }
+        }
+    }
+    instance = {
+        "metadata": {
+            "allowed_label": "opaque-allowed-value",
+            "first": "opaque-first-value",
+            "second": "opaque-second-value",
+        }
+    }
+
+    messages = list(
+        dict.fromkeys(
+            message
+            for issue in Draft202012Validator(schema).iter_errors(instance)
+            for message in schema_error_diagnostics("example-tool", issue)
+        )
+    )
+
+    assert messages == [
+        "example-tool.metadata['name']: missing required field",
+        "example-tool.metadata['summary']: missing required field",
+        "example-tool.metadata['first']: unexpected property",
+        "example-tool.metadata['second']: unexpected property",
+    ]
+    assert "opaque-" not in "\n".join(messages)
+    assert "allowed_label" not in "\n".join(messages)
+
+
+@pytest.mark.parametrize("quote_marker", ['"', "'"])
+def test_validator_argument_errors_redact_unterminated_quotes(
+    capsys, quote_marker
+) -> None:
+    secret = "unterminated-" + "synthetic-value"
+
+    with pytest.raises(SystemExit, match="2"):
+        main(["--password=" + quote_marker + secret])
+
+    captured = capsys.readouterr()
+    assert secret not in captured.out + captured.err
+    assert "password=[REDACTED]" in captured.err
+    assert "unrecognized arguments" in captured.err
+    assert captured.out == ""

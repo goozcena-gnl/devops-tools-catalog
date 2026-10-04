@@ -15,6 +15,7 @@ from typing import TextIO
 from urllib.parse import unquote
 
 from jsonschema import Draft202012Validator, FormatChecker
+from jsonschema.exceptions import ValidationError
 
 from scripts.catalog import ROOT, iter_tool_files, load_taxonomy, load_tools
 from scripts.generate_docs import generate
@@ -148,6 +149,39 @@ def duplicate_field_errors(tools: list[dict[str, object]], field: str) -> list[s
     )
 
 
+def schema_error_diagnostics(tool_id: str, issue: ValidationError) -> list[str]:
+    """Describe failed fields using metadata, never messages or rejected values."""
+    location = safe_diagnostic(".".join(map(str, issue.absolute_path)))
+    context = f"{tool_id}{'.' + location if location else ''}"
+    names: list[str] = []
+    reason = f"invalid value ({issue.validator})"
+    if issue.validator == "required" and isinstance(issue.instance, dict):
+        names = [name for name in issue.validator_value if name not in issue.instance]
+        reason = "missing required field"
+    elif (
+        issue.validator == "additionalProperties"
+        and issue.validator_value is False
+        and isinstance(issue.instance, dict)
+    ):
+        names = [
+            name
+            for name in issue.instance
+            if name not in issue.schema.get("properties", {})
+            and not any(
+                Draft202012Validator({"pattern": pattern}).is_valid(name)
+                for pattern in issue.schema.get("patternProperties", {})
+            )
+        ]
+        reason = "unexpected property"
+    if names:
+        # The closing bracket keeps a bare key like 'password' from looking
+        # like an assignment of the fixed diagnostic text to a credential.
+        return safe_diagnostics(
+            f"{context}[{safe_diagnostic(str(name))!r}]: {reason}" for name in names
+        )
+    return safe_diagnostics([f"{context}: invalid value ({issue.validator})"])
+
+
 def validate_records(root: Path = ROOT) -> list[str]:
     errors: list[str] = []
     taxonomy = load_taxonomy(root)
@@ -170,12 +204,13 @@ def validate_records(root: Path = ROOT) -> list[str]:
 
     for tool in tools:
         tool_id = safe_diagnostic(str(tool.get("id", "<missing>")))
-        for issue in validator.iter_errors(tool):
-            location = ".".join(str(item) for item in issue.absolute_path)
-            errors.append(
-                f"{tool_id}{'.' + location if location else ''}: "
-                f"invalid value ({issue.validator})"
+        errors.extend(
+            dict.fromkeys(
+                message
+                for issue in validator.iter_errors(tool)
+                for message in schema_error_diagnostics(tool_id, issue)
             )
+        )
         invalid_categories = set(tool.get("categories", [])) - category_ids
         invalid_roles = set(tool.get("roles", [])) - role_ids
         invalid_stages = set(tool.get("lifecycle_stages", [])) - stages
