@@ -483,3 +483,9 @@ def test_safe_diagnostic_preserves_ordinary_dotted_names() -> None:
 def test_safe_diagnostic_handles_repeated_jwt_prefixes() -> None:
     message = "eyJ" * 10_000
     assert safe_diagnostic(message) == message
+
+
+def test_safe_diagnostic_preserves_filename_around_jwt() -> None:
+    credential = "eyJ" + "header.eyJpayload.signature"
+    message = f"docs/backup_{credential}.txt: invalid value"
+    assert safe_diagnostic(message) == "docs/backup_[REDACTED].txt: invalid value"
