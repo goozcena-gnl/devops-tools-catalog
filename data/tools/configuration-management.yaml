@@ -26,7 +26,7 @@
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-09-22'
+  verified_on: '2026-10-04'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L68
   - legacy:devopstools_final.md#L194

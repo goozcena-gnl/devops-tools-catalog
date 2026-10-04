@@ -486,7 +486,7 @@
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-09-22'
+  verified_on: '2026-10-04'
   sources:
   - legacy:devopstools_final.md#L459
   - https://github.com/torloejborg/easykube

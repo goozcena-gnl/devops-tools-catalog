@@ -16,7 +16,7 @@ pyyaml==6.0.3
 rarfile==4.5
 referencing==0.37.0
 rpds-py==2026.6.3
-ruff==0.16.8
+ruff==0.16.10
 tomlkit==0.15.1
 trove-classifiers==2026.9.21.13
 typing-extensions==4.16.0

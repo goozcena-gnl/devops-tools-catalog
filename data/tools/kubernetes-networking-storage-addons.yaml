@@ -27,7 +27,7 @@
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-09-22'
+  verified_on: '2026-10-04'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L68
   - legacy:devopstools_final.md#L528
@@ -2121,10 +2121,10 @@
   license_model: oss
   license_spdx: Apache-2.0
   maturity: emerging
-  status: active
+  status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-09-22'
+  verified_on: '2026-10-04'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L111
   - legacy:devopstools_final.md#L587
@@ -2133,7 +2133,7 @@
   - https://github.com/koreo-dev/koreo-core/blob/main/README.md
   - https://github.com/koreo-dev/koreo-core/blob/main/docs/workflow.md
   - https://github.com/koreo-dev/koreo-core/blob/main/LICENSE
-  needs_review: false
+  needs_review: true
 - id: krateo-core-provider
   name: Krateo Core Provider
   summary: Krateo component that manages Helm charts as Kubernetes-native resources and generates CRDs

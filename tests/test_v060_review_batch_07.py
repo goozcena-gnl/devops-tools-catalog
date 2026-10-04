@@ -18,17 +18,17 @@ def _tools_by_id() -> dict[str, dict[str, object]]:
     return {tool["id"]: tool for tool in load_tools()}
 
 
-def test_batch_07_records_are_current_and_fully_accounted() -> None:
+def test_batch_07_records_are_current_and_uncertainty_is_preserved() -> None:
     tools = _tools_by_id()
 
     assert len(BATCH_07_IDS) == 10
     for tool_id in BATCH_07_IDS:
         tool = tools[tool_id]
-        assert tool["verified_on"] == "2026-09-22"
-        assert tool["status"] == "active"
+        assert tool["verified_on"] == "2026-10-04"
+        assert tool["status"] == ("needs-review" if tool_id == "koreo" else "active")
         assert tool["maturity"] != "unknown"
         assert tool["license_model"] != "unknown"
-        assert tool["needs_review"] is False
+        assert tool["needs_review"] is (tool_id in {"koreo", "rsyslog"})
 
 
 def test_batch_07_repository_and_license_boundaries_are_explicit() -> None:
@@ -47,7 +47,8 @@ def test_batch_07_repository_and_license_boundaries_are_explicit() -> None:
         tools["openfeature"]["repository_url"] == "https://github.com/open-feature/spec"
     )
     assert tools["openfeature"]["license_spdx"] == "Apache-2.0"
-    assert tools["rsyslog"]["license_spdx"] == "LGPL-3.0-only"
+    assert "license_spdx" not in tools["rsyslog"]
+    assert tools["rsyslog"]["needs_review"] is True
 
 
 def test_batch_07_nonstandard_and_commercial_boundaries_stay_explicit() -> None:

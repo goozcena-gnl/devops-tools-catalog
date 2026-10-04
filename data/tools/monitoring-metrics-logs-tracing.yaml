@@ -2490,7 +2490,7 @@
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-09-22'
+  verified_on: '2026-10-04'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L33
   - legacy:devopstools_final.md#L734
@@ -2524,12 +2524,11 @@
   - You need structured log parsing or container-native log collection.
   deployment_models: []
   license_model: oss
-  license_spdx: LGPL-3.0-only
   maturity: established
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-09-22'
+  verified_on: '2026-10-04'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L62
   - legacy:devopstools_final.md#L770
@@ -2538,7 +2537,9 @@
   - https://github.com/rsyslog/rsyslog
   - https://github.com/rsyslog/rsyslog/blob/main/README.md
   - https://github.com/rsyslog/rsyslog/blob/main/COPYING.LESSER
-  needs_review: false
+  - https://github.com/rsyslog/rsyslog/blob/main/runtime/rsyslog.h
+  - https://github.com/rsyslog/rsyslog/blob/main/tools/rsyslogd.c
+  needs_review: true
 - id: scanopy
   name: Scanopy
   summary: Self-hosted network inventory and topology mapping platform with automated device discovery.

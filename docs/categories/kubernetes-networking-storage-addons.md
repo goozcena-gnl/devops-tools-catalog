@@ -1314,7 +1314,7 @@ API gateway with an open-source core and commercial management and enterprise ca
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Needs Review
 
 Kubernetes resource orchestration framework.
 

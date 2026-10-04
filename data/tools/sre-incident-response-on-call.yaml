@@ -410,7 +410,7 @@
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-09-22'
+  verified_on: '2026-10-04'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L108
   - legacy:devopstools_final.md#L826
