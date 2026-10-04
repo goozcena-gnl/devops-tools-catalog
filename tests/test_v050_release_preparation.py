@@ -5,6 +5,7 @@ import tomllib
 from pathlib import Path
 
 from scripts.catalog import load_tools
+from tests.catalogue_baseline import assert_baseline_preserved
 
 ROOT = Path(__file__).resolve().parents[1]
 PYPROJECT = ROOT / "pyproject.toml"
@@ -35,7 +36,7 @@ def test_v050_project_version_and_release_metadata_exist() -> None:
 
 def test_v050_catalogue_cardinality_and_advertised_growth() -> None:
     tools = load_tools(ROOT)
-    assert len(tools) == len({tool["id"] for tool in tools}) == 1423
+    assert_baseline_preserved([tool["id"] for tool in tools])
     for text in (
         CHANGELOG.read_text(encoding="utf-8"),
         RELEASE_NOTES.read_text(encoding="utf-8"),

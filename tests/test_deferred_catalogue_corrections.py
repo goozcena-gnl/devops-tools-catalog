@@ -6,6 +6,7 @@ from pathlib import Path
 
 from scripts.catalog import load_tools
 from tests import test_v022_n1a_access_retry as n1a
+from tests.catalogue_baseline import assert_baseline_preserved
 from tests.test_migration_provenance import legacy_pointer, reconciliation_rows
 
 EXPECTED_IDS = {
@@ -58,7 +59,7 @@ def test_deferred_correction_wave_has_exact_expected_ids() -> None:
     assert {tool_id: counts[tool_id] for tool_id in EXPECTED_IDS} == {
         tool_id: 1 for tool_id in EXPECTED_IDS
     }
-    assert len(catalogue) == 1423
+    assert_baseline_preserved([tool["id"] for tool in catalogue])
 
 
 def test_deferred_records_are_verified_active_and_documented() -> None:

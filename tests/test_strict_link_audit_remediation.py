@@ -8,6 +8,7 @@ from pathlib import Path
 
 from scripts.catalog import load_tools
 from scripts.check_links import LinkResult, assess_strict_results, load_baseline
+from tests.catalogue_baseline import assert_baseline_preserved
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_IDS = {"milvus", "systemd", "wozz"}
@@ -50,7 +51,7 @@ def test_remediation_scope_and_canonical_count() -> None:
     assert {tool_id: counts[tool_id] for tool_id in EXPECTED_IDS} == {
         tool_id: 1 for tool_id in EXPECTED_IDS
     }
-    assert len(catalogue) == 1423
+    assert_baseline_preserved([tool["id"] for tool in catalogue])
 
 
 def test_corrected_link_identities_are_exact() -> None:
