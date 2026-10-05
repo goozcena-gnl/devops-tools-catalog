@@ -1251,6 +1251,45 @@
   - legacy:6_Security/README.md#L19
   - legacy:devopstools_final.md#L855
   needs_review: true
+- id: darkmoon
+  name: Darkmoon
+  summary: Self-hosted AI penetration-testing platform that orchestrates specialist agents, supports local or cloud LLMs, and produces JSON findings with SARIF available through integrations.
+  official_url: https://dark-moon.org/
+  repository_url: https://github.com/ASCIT31/Dark-Moon
+  repository_archived: false
+  categories:
+  - application-cloud-security
+  subcategories:
+  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - secure
+  use_when:
+  - You are authorized to run an agent-driven penetration test against a staging or pre-production target and want JSON findings for review, or SARIF through the Darkmoon GitHub Action, from a self-hosted CI runner with a local Darkmoon install. Exploitation evidence is asserted by the agents; independent retest is part of the paid Pro remediation workflow.
+  avoid_when:
+  - You lack written authorization for the target, or you need a passive scanner that never sends exploit traffic.
+  deployment_models:
+  - self-hosted
+  - local-cli
+  license_model: open-core
+  commercial_offering: true
+  maturity: emerging
+  status: active
+  alternatives: []
+  tags:
+  - penetration-testing
+  - sarif
+  - ai-agents
+  verified_on: '2026-10-02'
+  sources:
+  - https://github.com/ASCIT31/Dark-Moon
+  - https://github.com/ASCIT31/Dark-Moon/blob/master/LICENSE
+  - https://github.com/ASCIT31/darkmoon-action
+  - https://dark-moon.org/
+  needs_review: false
 - id: defectdojo
   name: DefectDojo
   summary: Application security posture and vulnerability-management platform that ingests findings from
