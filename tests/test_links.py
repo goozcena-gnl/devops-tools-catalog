@@ -3,6 +3,8 @@ import http.server
 import json
 import socket
 import ssl
+import struct
+import sys
 import threading
 import urllib.error
 from collections import Counter
@@ -987,11 +989,26 @@ def test_confirmation_tls_failure_preserves_cycle_metadata(
     assert calls == expected
 
 
+@pytest.fixture(
+    params=[RemoteDisconnected, ConnectionResetError],
+    ids=["remote-disconnected", "connection-reset"],
+)
+def disconnect_error(request):
+    message = (
+        "Remote end closed connection without response"
+        if request.param is RemoteDisconnected
+        else "Connection reset by peer"
+    )
+    return request.param(message)
+
+
 @pytest.mark.parametrize("method", ["HEAD", "GET"])
-def test_http_request_remote_disconnect_is_retryable(monkeypatch, method) -> None:
+def test_http_request_disconnect_is_retryable(
+    monkeypatch, method, disconnect_error
+) -> None:
     class Opener:
         def open(self, request, timeout):
-            raise RemoteDisconnected("Remote end closed connection without response")
+            raise disconnect_error
 
     monkeypatch.setattr(
         check_links.urllib.request, "build_opener", lambda *args: Opener()
@@ -1002,14 +1019,14 @@ def test_http_request_remote_disconnect_is_retryable(monkeypatch, method) -> Non
     assert outcome.classification == "network-inconclusive"
     assert outcome.status is None
     assert outcome.final_url is None
-    assert outcome.error == (
-        "RemoteDisconnected: Remote end closed connection without response"
-    )
+    assert outcome.error == f"{type(disconnect_error).__name__}: {disconnect_error}"
     assert outcome.retryable is True
 
 
 @pytest.mark.parametrize("retries", [0, 2])
-def test_remote_disconnect_uses_bounded_retries(monkeypatch, retries) -> None:
+def test_disconnect_uses_bounded_retries(
+    monkeypatch, retries, disconnect_error
+) -> None:
     calls = []
     sleeps = []
     url = "https://disconnected.test/"
@@ -1017,7 +1034,7 @@ def test_remote_disconnect_uses_bounded_retries(monkeypatch, retries) -> None:
     class Opener:
         def open(self, request, timeout):
             calls.append((request.full_url, request.get_method()))
-            raise RemoteDisconnected("Remote end closed connection without response")
+            raise disconnect_error
 
     monkeypatch.setattr(
         check_links.urllib.request, "build_opener", lambda *args: Opener()
@@ -1037,13 +1054,11 @@ def test_remote_disconnect_uses_bounded_retries(monkeypatch, retries) -> None:
     assert sleeps == ([0.5, 1.0] if retries else [])
     assert checked.classification == "network-inconclusive"
     assert checked.status is None
-    assert checked.error == (
-        "RemoteDisconnected: Remote end closed connection without response"
-    )
+    assert checked.error == f"{type(disconnect_error).__name__}: {disconnect_error}"
     assert strict_exit_code(True, assess_strict_results([checked], {})) == 0
 
 
-def test_remote_disconnect_recovers_on_next_attempt(monkeypatch) -> None:
+def test_disconnect_recovers_on_next_attempt(monkeypatch, disconnect_error) -> None:
     calls = []
     sleeps = []
     url = "https://recovered.test/"
@@ -1064,9 +1079,7 @@ def test_remote_disconnect_recovers_on_next_attempt(monkeypatch) -> None:
         def open(self, request, timeout):
             calls.append(request.get_method())
             if len(calls) == 1:
-                raise RemoteDisconnected(
-                    "Remote end closed connection without response"
-                )
+                raise disconnect_error
             return Response()
 
     monkeypatch.setattr(
@@ -1090,8 +1103,8 @@ def test_remote_disconnect_recovers_on_next_attempt(monkeypatch) -> None:
     assert sleeps == [0.5]
 
 
-def test_run_audit_isolates_remote_disconnect_from_other_urls(
-    monkeypatch, tmp_path
+def test_run_audit_isolates_disconnect_from_other_urls(
+    monkeypatch, tmp_path, disconnect_error
 ) -> None:
     disconnected = "https://disconnected.test/"
     healthy = "https://healthy.test/"
@@ -1113,9 +1126,7 @@ def test_run_audit_isolates_remote_disconnect_from_other_urls(
         def open(self, request, timeout):
             calls[request.full_url] += 1
             if request.full_url == disconnected:
-                raise RemoteDisconnected(
-                    "Remote end closed connection without response"
-                )
+                raise disconnect_error
             assert request.full_url == healthy
             return Response()
 
@@ -1264,3 +1275,44 @@ def test_network_errors_keep_existing_bounded_retries(
     assert calls == ["HEAD"] * 3
     assert sleeps == [0.5, 1.0]
     assert strict_exit_code(True, assess_strict_results([checked], {})) == 0
+
+
+def test_http_request_handles_local_tcp_reset() -> None:
+    with socket.socket() as listener:
+        listener.bind(("127.0.0.1", 0))
+        listener.listen(1)
+        listener.settimeout(2)
+
+        def reset_response():
+            with listener.accept()[0] as connection:
+                connection.settimeout(2)
+                headers = b""
+                while b"\r\n\r\n" not in headers:
+                    chunk = connection.recv(4096)
+                    if not chunk:
+                        return
+                    headers += chunk
+                # SO_LINGER uses two shorts on Windows and two ints on Linux.
+                linger_format = "hh" if sys.platform == "win32" else "ii"
+                connection.setsockopt(
+                    socket.SOL_SOCKET,
+                    socket.SO_LINGER,
+                    struct.pack(linger_format, 1, 0),
+                )
+                # Closing after accepting all headers sends TCP RST during getresponse().
+
+        thread = threading.Thread(target=reset_response, daemon=True)
+        thread.start()
+        try:
+            outcome = _http_request(
+                f"http://127.0.0.1:{listener.getsockname()[1]}/",
+                method="HEAD",
+                timeout=2,
+            )
+        finally:
+            thread.join(timeout=2)
+
+    assert not thread.is_alive()
+    assert outcome.classification == "network-inconclusive"
+    assert outcome.status is None
+    assert "ConnectionResetError" in outcome.error
