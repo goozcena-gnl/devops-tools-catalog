@@ -35,6 +35,10 @@ jobs:
       - name: Install catalogue dependencies
         run: python -m pip install --disable-pip-version-check --no-input --no-build-isolation -c config/python-constraints-3.12.txt -e .
 
+      - name: Remove previous audit reports
+        id: report-cleanup
+        run: rm -f reports/link-report.json reports/link-report.md
+
       - name: Run strict full audit
         id: link-audit
         continue-on-error: true
@@ -43,11 +47,13 @@ jobs:
         run: python -m scripts.check_links --strict --check-archived --workers 8
 
       - name: Upload consolidated audit report
-        if: always()
+        if: always() && steps.report-cleanup.outcome == 'success'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: link-audit-report
-          path: reports/link-report.*
+          path: |
+            reports/link-report.json
+            reports/link-report.md
           if-no-files-found: error
           retention-days: 14
 

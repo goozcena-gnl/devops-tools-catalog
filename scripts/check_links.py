@@ -19,6 +19,7 @@ import urllib.request
 from collections import Counter
 from collections.abc import Mapping, Sequence
 from datetime import UTC, date, datetime, timedelta
+from http.client import RemoteDisconnected
 from pathlib import Path
 from typing import Any
 
@@ -301,6 +302,15 @@ def _http_request(
     except TimeoutError as error:
         return HttpOutcome(
             "timeout-inconclusive", None, None, (), f"{type(error).__name__}: {error}"
+        )
+    except RemoteDisconnected as error:
+        return HttpOutcome(
+            "network-inconclusive",
+            None,
+            None,
+            (),
+            f"{type(error).__name__}: {error}",
+            retryable=True,
         )
     except urllib.error.URLError as error:
         if isinstance(error.reason, ssl.SSLError):
