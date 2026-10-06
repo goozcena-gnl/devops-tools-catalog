@@ -236,7 +236,7 @@
 | [etcd](https://etcd.io) | Databases, caching and data infrastructure | oss | needs-review |
 | [etckeeper](https://etckeeper.branchable.com) | Configuration management | oss | needs-review |
 | [Eureka](https://github.com/Netflix/eureka) | Kubernetes networking, storage and add-ons | oss | active |
-| [EveryDev.ai](https://www.everydev.ai/) | Documentation, learning and career resources | unknown | active |
+| [EveryDev.ai](https://www.everydev.ai/) | Documentation, learning and career resources | unknown | needs-review |
 | [Exercism](https://exercism.org) | Foundations, Linux and scripting | documentation | needs-review |
 | [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | needs-review |
 | [eza](https://eza.rocks/) | Foundations, Linux and scripting | oss | active |
@@ -554,7 +554,7 @@
 | [Rocky Linux](https://rockylinux.org) | Foundations, Linux and scripting | oss | needs-review |
 | [Root Me](https://www.root-me.org/) | Documentation, learning and career resources | documentation | active |
 | [RootlessKit](https://github.com/rootless-containers/rootlesskit) | Virtualization, bare metal and homelab | oss | needs-review |
-| [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | active |
+| [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [RTK AI](https://www.rtk-ai.app) | Developer experience and local environments | unknown | needs-review |
 | [Ruby](https://www.ruby-lang.org/en/) | Foundations, Linux and scripting | oss | active |
 | [Rudder](https://www.rudder.io) | Configuration management | open-core | needs-review |

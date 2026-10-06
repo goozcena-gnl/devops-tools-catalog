@@ -98,7 +98,7 @@
 | [Pulse](https://pulserelay.pro) | SRE, incident response and on-call | oss | active |
 | [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Robusta](https://home.robusta.dev) | Monitoring, metrics, logs and tracing | open-core | active |
-| [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | active |
+| [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [RustNet](https://github.com/domcyrus/rustnet) | SRE, incident response and on-call | oss | needs-review |
 | [Scanopy](https://scanopy.net/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Sematext](https://sematext.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |

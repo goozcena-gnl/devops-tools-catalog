@@ -355,7 +355,7 @@
 | [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Robusta](https://home.robusta.dev) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | active |
+| [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | needs-review |
 | [RustNet](https://github.com/domcyrus/rustnet) | SRE, incident response and on-call | oss | needs-review |
 | [Rūsternetes](https://calfonso.github.io/rusternetes) | Kubernetes distributions and operations | oss | needs-review |

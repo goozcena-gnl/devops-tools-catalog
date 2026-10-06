@@ -29,6 +29,14 @@ def test_filigran_vendor_does_not_inherit_opencti_metadata() -> None:
     assert any("OpenCTI-Platform/opencti" in source for source in filigran["sources"])
 
 
+def test_everydev_ai_retains_unresolved_catalogue_review_state() -> None:
+    everydev = _tools_by_id()["everydev-ai"]
+
+    assert everydev["status"] == "needs-review"
+    assert everydev["needs_review"] is True
+    assert everydev["license_model"] == "unknown"
+
+
 def test_aws_container_service_boundaries_remain_distinct() -> None:
     tools = _tools_by_id()
 

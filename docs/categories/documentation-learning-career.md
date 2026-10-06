@@ -523,7 +523,7 @@ Track software end-of-life dates.
 **Categories:** Documentation, learning and career resources<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
 **Model:** Unknown<br>
-**Status:** Active
+**Status:** Needs Review
 
 Active directory and comparison site for discovering AI developer tools; official evidence confirms the service identity but does not document a product-level license or operating model.
 
