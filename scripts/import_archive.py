@@ -24,7 +24,6 @@ TOOL_RE = re.compile(r"^\s*-\s+\[(?P<name>[^]]+)]\((?P<url>[^)]+)\)(?P<rest>.*)$
 HEADING_RE = re.compile(r"^(?P<level>#{1,6})\s+(?P<title>.+?)\s*$")
 SECONDARY_LINK_RE = re.compile(r"\[(?P<label>[^]]+)]\((?P<url>[^)]+)\)")
 BADGE_RE = re.compile(r"<sup><span\b[^>]*>(?P<label>[^<]+)</span></sup>", re.I)
-HTML_COMMENT_RE = re.compile(r"\s*<!--.*?-->\s*")
 GUIDANCE_RE = re.compile(
     r"\*{1,2}Use(?: when| for| to)?(?:\*{1,2}|:)?\s*"
     r"(?P<use>.*?)(?:;|\.)\s*\*{0,2}Avoid(?: when| if)?"
@@ -80,6 +79,24 @@ def normalize_sentence(value: str) -> str:
     return value[0].upper() + value[1:] + "."
 
 
+def strip_html_comments(value: str) -> str:
+    """Remove literal comments, dropping an unclosed comment through EOF."""
+    parts: list[str] = []
+    position = 0
+    while True:
+        opening = value.find("<!--", position)
+        if opening == -1:
+            parts.append(value[position:])
+            break
+        parts.append(value[position:opening])
+        parts.append(" ")
+        closing = value.find("-->", opening + 4)
+        if closing == -1:
+            break
+        position = closing + 3
+    return "".join(parts)
+
+
 def extract_details(
     rest: str,
 ) -> tuple[str, tuple[str, ...], tuple[str, ...], tuple[str, ...]]:
@@ -94,9 +111,10 @@ def extract_details(
         use_when = (normalize_sentence(guidance.group("use")),)
         avoid_when = (normalize_sentence(guidance.group("avoid")),)
 
-    summary_text = GUIDANCE_RE.sub("", rest)
+    # Strip raw comments before other filters can consume their delimiters.
+    summary_text = strip_html_comments(rest)
+    summary_text = GUIDANCE_RE.sub("", summary_text)
     summary_text = BADGE_RE.sub("", summary_text)
-    summary_text = HTML_COMMENT_RE.sub("", summary_text)
     summary_text = SECONDARY_LINK_RE.sub("", summary_text)
     summary_text = summary_text.replace("()", "")
     return normalize_sentence(summary_text), badges, use_when, avoid_when
