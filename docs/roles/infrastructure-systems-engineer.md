@@ -18,7 +18,7 @@
 | [Apache Tomcat](https://tomcat.apache.org/) | Foundations, Linux and scripting | oss | active |
 | [Apache ZooKeeper](https://zookeeper.apache.org/) | Databases, caching and data infrastructure | oss | active |
 | [AppImage](https://appimage.org) | Foundations, Linux and scripting | oss | needs-review |
-| [Aralez](https://github.com/sadoyan/aralez) | Kubernetes networking, storage and add-ons | oss | active |
+| [Aralez](https://github.com/sadoyan/aralez) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Arcane](https://getarcane.app/) | Virtualization, bare metal and homelab | oss | active |
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |

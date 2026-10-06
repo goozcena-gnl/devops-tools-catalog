@@ -6,7 +6,8 @@ Reviewed on 2026-10-06. This is a bounded two-record maintenance change.
 
 - Starting main and branch base: `a9150d8f785afc6e1d850f41445d9c8a3f896b95` (PR #100 included).
 - Branch: `maintenance/resolve-aralez-pandora-urls`.
-- Working tree was clean before editing; fetched main matched the supplied SHA exactly.
+- Working tree was clean before both edits; fetched main matched the supplied SHA exactly.
+- P2 follow-up starts from PR HEAD `8326f604ca7a374afe0ee6cf641b1b3aee947cd4`; only `aralez.status` changes in canonical data, from `active` to `needs-review`. Pandora FMS and all canonical URLs remain unchanged.
 - The supplied fresh Full link audit checked 2,605 URLs: `blocking_known: 6`, `blocking_new: 2`, strict FAIL.
 - New blockers: `https://aralez.rs` and `https://pandorafms.com/community/pandora-fms-downloads`, each HEAD/GET 404 and `manual-verification-required`.
 - A missing URL is not lifecycle evidence. No known baseline blocker is changed.
@@ -70,7 +71,7 @@ Customer access to Enterprise source code in the FAQ is not an OSS grant.
 | `documentation_url` | `https://aralez.rs` | `https://github.com/sadoyan/aralez-docs/tree/main/content/docs` | A2/A3/A6: maintained official documentation source; hosted-domain replacement not established. |
 | `license_model`, `license_spdx` | oss, Apache-2.0 | Verified and retained | A4: explicit Apache licence. |
 | `maturity` | unknown | Retained as unresolved | A5 establishes releases, not adoption or production maturity. |
-| `status` | active | Verified and retained | A5 and current upstream commit history: release and code activity on 2026-10-05. |
+| `status` | active | needs-review | A5 and upstream commit history still evidence an active project. The catalogue methodology requires `status: needs-review` with `needs_review: true` while metadata remains unresolved. |
 | `deployment_models`, `alternatives`, `tags` | Empty lists | Retained | No new comparative or deployment taxonomy claims added in this bounded repair. |
 | `sources` | Two legacy references | Legacy references retained; A1, A2, A3, A4, A5 added | Preserve provenance and add current, pinned primary evidence. |
 | `verified_on` | 2026-08-03 | 2026-10-06 | Date of this primary-source review. |
@@ -80,6 +81,13 @@ Classification comparison: **Kubernetes operator** becomes **Rust/Pingora revers
 proxy with Kubernetes ingress/discovery integration**. Categories, roles and
 adoption guidance now match that identity. Performance is an upstream claim,
 not an independently measured benchmark in this review.
+
+Upstream lifecycle evidence and catalogue review status are distinct. Release
+and code activity on 2026-10-05 support active Aralez development. The catalogue
+record uses `status: needs-review` because the advertised domain inconsistency
+and maturity remain unresolved, following [catalogue methodology](../methodology.md).
+Generated status views therefore expose the review debt. This does not assert
+that Aralez itself is inactive, deprecated or archived.
 
 ## Pandora FMS field review
 
@@ -113,9 +121,9 @@ Historical identity and legacy provenance remain intact.
 
 Canonical dataset comparison against the starting SHA proves that exactly
 `aralez` and `pandora-fms` changed; no record was added, removed or renamed.
-The existing batch-05 test retains Aralez's licence and active-status coverage
-and explicitly expects its restored review debt. All other historical
-expectations remain unchanged.
+The existing batch-05 test retains Aralez's licence coverage and explicitly
+requires both `status: needs-review` and `needs_review: true`. Other fully
+reviewed batch-05 tools retain `status: active` and `needs_review: false`.
 
 Documentation was regenerated with `python -m scripts.generate_docs` and its
 determinism checked with `python -m scripts.generate_docs --check`. Generated
@@ -128,7 +136,7 @@ constraints. Constraints are deliberately unchanged; the Linux CI check is
 the authoritative platform-matched verification. Other validation results and
 GitHub checks are reported in the PR/session final report.
 
-## Targeted strict link audit
+## Initial URL-repair targeted strict link audit
 
 The unchanged checker was run against an ignored temporary catalogue containing
 only the two final records, with the unchanged default reviewed baseline:
@@ -144,8 +152,8 @@ was independently inspected through the GitHub file API. Both obsolete URLs
 are absent from the entire catalogue's checked-URL set.
 
 Before: `blocking_new: 2` in the supplied full audit. After: `blocking_new: 0`
-in this targeted audit. No remaining blocker in the reviewed records. No new
-full 2,605-URL audit was run, so a current catalogue-wide total is not claimed.
+in this targeted audit. No remaining blocker in the reviewed records. During
+the initial URL repair, no full audit was run and no catalogue-wide total was claimed.
 The six known blockers were outside the targeted sample; the report's
 `baseline_resolved` entries reflect that omission, not actual resolution.
 Raw audit output remains ignored and is not committed.

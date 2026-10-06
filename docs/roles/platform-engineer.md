@@ -21,7 +21,7 @@
 | [Amazon Web Services (AWS)](https://aws.amazon.com/) | Cloud platforms and cloud management | commercial | active |
 | [Antrea](https://antrea.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
-| [Aralez](https://github.com/sadoyan/aralez) | Kubernetes networking, storage and add-ons | oss | active |
+| [Aralez](https://github.com/sadoyan/aralez) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |
 | [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) | CD, GitOps, release and promotion | oss | active |

@@ -86,7 +86,7 @@ Kubernetes CNI and network-policy implementation built on Open vSwitch.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Needs Review
 
 Rust reverse proxy built on Cloudflare Pingora, with TLS, authentication, load balancing, and dynamic discovery through Consul and Kubernetes.
 

@@ -151,7 +151,7 @@
   license_model: oss
   license_spdx: Apache-2.0
   maturity: unknown
-  status: active
+  status: needs-review
   alternatives: []
   tags: []
   verified_on: '2026-10-06'

@@ -20,7 +20,7 @@
 | [Apache SkyWalking](https://skywalking.apache.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [Apache ZooKeeper](https://zookeeper.apache.org/) | Databases, caching and data infrastructure | oss | active |
 | [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | commercial | active |
-| [Aralez](https://github.com/sadoyan/aralez) | Kubernetes networking, storage and add-ons | oss | active |
+| [Aralez](https://github.com/sadoyan/aralez) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
 | [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) | Monitoring, metrics, logs and tracing | documentation | needs-review |
