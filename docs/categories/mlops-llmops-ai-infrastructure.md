@@ -1209,17 +1209,17 @@ NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Cloud platform for AI and ML workloads.
+NVIDIA AI cloud environment, currently described as an internal proving ground, with separately documented Run:ai on DGX Cloud managed subscriptions.
 
 **Use when**
 
-- You need massive GPU compute for large-scale model training or fine-tuning.
+- You are evaluating NVIDIA-managed GPU training infrastructure and can confirm the current DGX Cloud offering and customer availability.
 
 **Consider alternatives when**
 
-- Your workloads are inference-only or fit comfortably on commodity cloud GPUs.
+- You require a confirmed customer-facing service boundary without reconciling the internal DGX Cloud identity and managed-service documentation.
 
-[Official site](https://www.nvidia.com/en-us/data-center/dgx-cloud)
+[Official site](https://www.nvidia.com/en-us/data-center/dgx-cloud) · [Documentation](https://docs.nvidia.com/dgx-cloud/run-ai/latest/overview.html)
 
 ### Ollama
 

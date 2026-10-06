@@ -521,13 +521,14 @@
   - https://learn.microsoft.com/en-us/azure/azure-arc/overview
   needs_review: false
 - id: morpheus-data
-  name: Morpheus Data
-  summary: Hybrid cloud management platform.
-  official_url: https://morpheusdata.com
+  name: HPE Morpheus Software
+  summary: HPE hybrid-cloud management software, with Enterprise capabilities for self-service provisioning,
+    orchestration and governance across private and public clouds.
+  official_url: https://www.hpe.com/us/en/products/software/morpheus-software.html
   categories:
   - cloud-platforms-management
   subcategories:
-  - Cloud Management & Migration
+  - Hybrid Cloud Management & Orchestration
   roles:
   - devops-engineer
   - cloud-engineer
@@ -537,20 +538,29 @@
   - operate
   - optimize
   use_when:
-  - You need a single pane of glass for provisioning across private and public clouds.
+  - You need self-service hybrid-cloud provisioning and governance; select the Enterprise edition for
+    public-cloud and broader orchestration capabilities.
   avoid_when:
-  - You're cloud-native with existing IaC pipelines.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require a fully managed SaaS control plane or expect every Enterprise capability in VM Essentials.
+  deployment_models:
+  - self-hosted
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-06'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L232
   - legacy:devopstools_final.md#L302
-  needs_review: true
+  - https://www.hpe.com/us/en/products/software/morpheus-software.html
+  - https://support.hpe.com/hpesc/public/docDisplay?docId=sd00008433en_us
+  - https://www.hpe.com/us/en/collaterals/collateral.a50009231enw.html
+  - https://developer.hpe.com/platform/morpheus/home/
+  - https://docs.morpheusdata.com/en/latest/
+  needs_review: false
+  documentation_url: https://support.hpe.com/hpesc/public/docDisplay?docId=sd00008433en_us
+  commercial_offering: true
 - id: openstack
   name: OpenStack
   summary: Open-source cloud infrastructure platform for operating compute, networking, storage, identity, and related services.

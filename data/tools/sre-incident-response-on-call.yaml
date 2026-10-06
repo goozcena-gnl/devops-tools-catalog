@@ -138,6 +138,52 @@
   - legacy:5_Monitoring-Observability/README.md#L100
   - legacy:devopstools_final.md#L817
   needs_review: true
+- id: komodor
+  name: Komodor
+  summary: Agentic operations platform for production, covering AI SRE, cost optimization and software
+    operations with governed agent workflows.
+  official_url: https://komodor.com
+  categories:
+  - sre-incident-response-on-call
+  - monitoring-metrics-logs-tracing
+  - finops-sustainability
+  subcategories:
+  - Agentic Operations & Production Reliability
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  - platform-engineer
+  - finops-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  - optimize
+  use_when:
+  - You need governed AI workflows for production incidents, cloud or Kubernetes costs and software operations.
+  avoid_when:
+  - You only need basic Kubernetes telemetry, or require generally available self-service installation
+    of the entire control plane; self-hosting the control plane is beta and requires agreement.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-06'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L28
+  - legacy:devopstools_final.md#L727
+  - https://komodor.com/
+  - https://docs.komodor.com/
+  - https://komodor.com/contact-us/
+  - https://docs.komodor.com/get-started/deployment-methods
+  - https://komodor.com/platform/pricing-and-plans/
+  needs_review: false
+  documentation_url: https://docs.komodor.com/
+  commercial_offering: true
 - id: manageengine-it-operations-management
   name: ManageEngine IT Operations Management
   summary: Comprehensive IT operations management platform.
@@ -198,7 +244,9 @@
   needs_review: true
 - id: moogsoft
   name: Moogsoft
-  summary: AI-powered incident management and observability platform.
+  summary: AIOps alert-correlation and incident-management product family; its cloud service is renamed
+    Dell APEX AIOps Management Incident, while on-premises and hosted Moogsoft boundaries remain under
+    review.
   official_url: https://www.moogsoft.com
   categories:
   - sre-incident-response-on-call
@@ -211,20 +259,27 @@
   - operate
   - monitor
   use_when:
-  - AI-driven alert correlation and noise reduction across large alert volumes.
+  - You need alert correlation and incident management and can confirm the applicable Moogsoft on-premises,
+    hosted or renamed Dell cloud product.
   avoid_when:
-  - Your alert volume is manageable with simple routing rules.
+  - You require an unambiguous current supplier, product edition and support lifecycle before procurement.
   deployment_models: []
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-06'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L104
   - legacy:devopstools_final.md#L821
+  - https://www.moogsoft.com/
+  - https://docs.moogsoft.com/
+  - https://www.dell.com/en-us/legal/lp/cloud-and-hosting-services
+  - https://www.moogsoft.com/dell-technologies-acquires-moogsoft/
+  - https://www.dell.com/en-us/legal/lp/apex-ai-ops-incident-management
   needs_review: true
+  documentation_url: https://docs.moogsoft.com/
 - id: netwatch-labs
   name: NetWatch Labs
   summary: Collection of terminal-first network and system diagnostics tools for Linux operators.

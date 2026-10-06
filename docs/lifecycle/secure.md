@@ -134,7 +134,7 @@
 - [Lefthook](https://lefthook.dev) — Fast Git hooks manager (parallel execution, cross-platform).
 - [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) — Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow injection or unintended code execution.
 - [Lynis](https://cisofy.com/lynis) — Security auditing and hardening tool with an enterprise offering (CISOfy).
-- [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Network device configuration management.
+- [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Multi-vendor network configuration management with backups, change tracking, automation and compliance auditing.
 - [masscan](https://github.com/robertdavidgraham/masscan) — High-rate asynchronous TCP port scanner for large authorized network inventories.
 - [mcp-server-kubernetes](https://www.npmjs.com/package/mcp-server-kubernetes) — Model Context Protocol server for managing Kubernetes resources through kubectl and Helm operations.
 - [MCPDefender](https://mcpdefender.com) — Security proxy for MCP traffic between AI apps and MCP servers (AGPL-3.0).
@@ -174,7 +174,7 @@
 - [OWASP Amass](https://owasp.org/projects/amass) — Attack-surface mapping and external asset discovery framework.
 - [OWASP DockSec](https://owasp.org/projects/docksec) — Container-security analysis tool combining scanners with AI-assisted explanations and remediation guidance.
 - [OWASP ZAP](https://www.zaproxy.org) — Web application security scanner (DAST).
-- [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) — Cloud-native security operations platform.
+- [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) — Commercial CNAPP unifying application security, cloud posture and runtime protection with SOC workflows.
 - [Pangolin](https://pangolin.net) — Zero-trust remote access platform and VPN alternative.
 - [Parrot Security](https://www.parrotsec.org/) — Security-oriented Linux distribution for penetration testing, digital forensics, and privacy.
 - [passbolt](https://www.passbolt.com) — Password manager for teams with self-hosted and paid offerings.

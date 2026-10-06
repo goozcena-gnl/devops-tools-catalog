@@ -135,7 +135,7 @@
 | [MarkItDown](https://github.com/microsoft/markitdown) | Developer experience and local environments | oss | needs-review |
 | [Matt Pocock Skills](https://www.aihero.dev/skills) | Developer experience and local environments | oss | active |
 | [Mattermost](https://mattermost.com) | Workflow automation and ChatOps | open-core | needs-review |
-| [Mergify](https://mergify.com) | CI, build and testing | unknown | needs-review |
+| [Mergify](https://mergify.com) | CI, build and testing, Source control and repository management | commercial | active |
 | [micro](https://micro-editor.github.io) | Developer experience and local environments | oss | needs-review |
 | [mise](https://mise.jdx.dev/) | Developer experience and local environments | oss | active |
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
@@ -147,7 +147,7 @@
 | [Nixite](https://aspizu.github.io/nixite) | Developer experience and local environments | oss | needs-review |
 | [Node.js](https://nodejs.org/en) | Foundations, Linux and scripting | oss | active |
 | [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | needs-review |
-| [Octopus Deploy](https://octopus.com) | CI, build and testing | unknown | needs-review |
+| [Octopus Deploy](https://octopus.com) | CD, GitOps, release and promotion | commercial | active |
 | [Odysseus](https://odysseus-dev.github.io/odysseus) | Developer experience and local environments | oss | needs-review |
 | [Oh My Git!](https://ohmygit.org) | Source control and repository management | documentation | needs-review |
 | [Okteto](https://www.okteto.com/) | Developer experience and local environments, Kubernetes distributions and operations | open-core | active |

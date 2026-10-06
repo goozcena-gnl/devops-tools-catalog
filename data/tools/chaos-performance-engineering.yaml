@@ -217,33 +217,47 @@
   needs_review: true
 - id: gremlin
   name: Gremlin
-  summary: Chaos engineering platform for proactive reliability testing. ✅ **Use when** you need enterprise-grade
-    chaos with built-in safety controls, team collaboration, and guided scenarios. ❌ **Avoid when** budget
-    is tight or you prefer fully open-source tooling without vendor lock-in.
+  summary: Reliability management and resilience testing platform with controlled fault injection and
+    disaster-recovery validation.
   official_url: https://www.gremlin.com
   categories:
   - chaos-performance-engineering
+  - backup-disaster-recovery-resilience
   subcategories:
-  - Chaos Engineering Platforms
+  - Reliability Management & Resilience Testing
   roles:
   - devops-engineer
   - site-reliability-engineer
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need controlled fault injection, service reliability tests and disaster-recovery exercises with
+    health-check safety controls.
+  avoid_when:
+  - You require a fully open-source parent platform or cannot authorize controlled failure experiments
+    on the target systems.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-06'
   sources:
   - legacy:8_Chaos-Engineering/README.md#L14
   - legacy:devopstools_final.md#L1165
-  needs_review: true
+  - https://www.gremlin.com/
+  - https://www.gremlin.com/docs
+  - https://www.gremlin.com/terms
+  - https://www.gremlin.com/docs/platform-gremlin-private-edition
+  - https://www.gremlin.com/release-notes/general
+  - https://www.gremlin.com/docs/reliabillity-management-disaster-recovery-tests
+  needs_review: false
+  documentation_url: https://www.gremlin.com/docs
+  commercial_offering: true
 - id: hyperfine
   name: hyperfine
   summary: CLI benchmark runner for repeated command timing and statistical comparison.

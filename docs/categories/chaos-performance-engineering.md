@@ -140,22 +140,22 @@ Chaos engineering platform with comprehensive fault injection capabilities. ✅ 
 
 ### Gremlin
 
-**Categories:** Chaos and performance engineering<br>
+**Categories:** Chaos and performance engineering, Backup, disaster recovery and resilience<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Chaos engineering platform for proactive reliability testing. ✅ **Use when** you need enterprise-grade chaos with built-in safety controls, team collaboration, and guided scenarios. ❌ **Avoid when** budget is tight or you prefer fully open-source tooling without vendor lock-in.
+Reliability management and resilience testing platform with controlled fault injection and disaster-recovery validation.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need controlled fault injection, service reliability tests and disaster-recovery exercises with health-check safety controls.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a fully open-source parent platform or cannot authorize controlled failure experiments on the target systems.
 
-[Official site](https://www.gremlin.com)
+[Official site](https://www.gremlin.com) · [Documentation](https://www.gremlin.com/docs)
 
 ### hyperfine
 

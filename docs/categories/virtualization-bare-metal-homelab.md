@@ -863,22 +863,22 @@ Cross-platform type-2 hypervisor for running virtual machines on desktops and se
 
 ### OrbStack
 
-**Categories:** Virtualization, bare metal and homelab<br>
+**Categories:** Virtualization, bare metal and homelab, Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Fast Docker & Linux VM environment for macOS.
+Local macOS environment for Docker containers, Kubernetes and Linux virtual machines.
 
 **Use when**
 
-- You want a faster, lower-resource Docker Desktop alternative on macOS.
+- You need a local Docker, Kubernetes and Linux development environment on macOS.
 
 **Consider alternatives when**
 
 - You need cross-platform support or a fully open-source tool.
 
-[Official site](https://orbstack.dev)
+[Official site](https://orbstack.dev) · [Documentation](https://docs.orbstack.dev/)
 
 ### oVirt
 

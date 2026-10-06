@@ -1311,33 +1311,46 @@
   needs_review: true
 - id: orbstack
   name: OrbStack
-  summary: Fast Docker & Linux VM environment for macOS.
+  summary: Local macOS environment for Docker containers, Kubernetes and Linux virtual machines.
   official_url: https://orbstack.dev
   categories:
   - virtualization-bare-metal-homelab
+  - developer-experience-local-environments
   subcategories:
   - Virtualization & Containerization
   roles:
   - devops-engineer
   - infrastructure-systems-engineer
   lifecycle_stages:
+  - develop
+  - build
+  - test
   - deploy
   - operate
   use_when:
-  - You want a faster, lower-resource Docker Desktop alternative on macOS.
+  - You need a local Docker, Kubernetes and Linux development environment on macOS.
   avoid_when:
   - You need cross-platform support or a fully open-source tool.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  deployment_models:
+  - local
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-06'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L170
   - legacy:devopstools_final.md#L257
-  needs_review: true
+  - https://orbstack.dev/
+  - https://docs.orbstack.dev/
+  - https://docs.orbstack.dev/legal/terms
+  - https://docs.orbstack.dev/licensing
+  - https://docs.orbstack.dev/release-notes
+  - https://github.com/orbstack/orbstack
+  needs_review: false
+  documentation_url: https://docs.orbstack.dev/
+  commercial_offering: true
 - id: ovirt
   name: oVirt
   summary: Open-source virtualization management platform for KVM hosts, virtual machines, storage, and
