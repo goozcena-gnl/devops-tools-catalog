@@ -245,7 +245,7 @@
 - id: moogsoft
   name: Moogsoft
   summary: AIOps alert-correlation and incident-management product family; its cloud service is renamed
-    Dell APEX AIOps Management Incident, while on-premises and hosted Moogsoft boundaries remain under
+    Dell APEX AIOps Incident Management, while on-premises and hosted Moogsoft boundaries remain under
     review.
   official_url: https://www.moogsoft.com
   categories:
@@ -277,7 +277,8 @@
   - https://docs.moogsoft.com/
   - https://www.dell.com/en-us/legal/lp/cloud-and-hosting-services
   - https://www.moogsoft.com/dell-technologies-acquires-moogsoft/
-  - https://www.dell.com/en-us/legal/lp/apex-ai-ops-incident-management
+  - https://www.dell.com/en-us/legal/lp/dell-apex-aiops-incident-management
+  - https://www.dell.com/en-us/lp/legal/apex-ai-ops
   needs_review: true
   documentation_url: https://docs.moogsoft.com/
 - id: netwatch-labs

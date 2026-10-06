@@ -421,6 +421,8 @@ Maturity is an explicit reviewer judgement from release/operational evidence, no
 
 **Identity boundary:** The official Moogsoft domain has Dell AIOps branding plus an HCL Moogsoft sales contact. Its documentation separates Incident Management, Moogsoft Onprem/Hosted v9 and Enterprise v8. Dell confirms a cloud-service rename. None of these facts proves that every Moogsoft edition transferred to HCL or was renamed together.
 
+The dedicated Dell product/legal page establishes the word order **Dell APEX AIOps Incident Management**. The hosting index transposes those words; the canonical summary uses the dedicated product name. Its linked service-offering page was read directly.
+
 **Licensing boundary:** Dell hosting/legal material establishes commercial terms for the renamed cloud/hosting services. It does not establish a single current licence/vendor boundary for the entire ambiguous Moogsoft parent record. Parent license_model and maturity remain unknown; no SPDX or repository is assigned.
 
 **Lifecycle and maturity:** The acquisition notice establishes a completed Dell acquisition in 2023, not the current ownership of every edition. Branding changes, HTTP success and HCL contact text do not establish retirement; status remains needs-review rather than deprecated.
@@ -429,13 +431,13 @@ Maturity is an explicit reviewer judgement from release/operational evidence, no
 
 **Disposition: RETAIN REVIEW — SPECIFIC UNRESOLVED BOUNDARY**
 
-**Primary sources read:** [product][moogsoft-product], [docs][moogsoft-docs], [licence][moogsoft-licence], [ownership][moogsoft-ownership], [cloud][moogsoft-cloud].
+**Primary sources read:** [name][moogsoft-name], [product][moogsoft-product], [docs][moogsoft-docs], [licence][moogsoft-licence], [ownership][moogsoft-ownership], [cloud][moogsoft-cloud].
 
 | Field | Before | After | Primary evidence | Decision |
 |---|---|---|---|---|
 | `id` | moogsoft | moogsoft | [product][moogsoft-product], [docs][moogsoft-docs] | Reviewed; preserve stable identity and history. |
 | `name` | Moogsoft | Moogsoft | [product][moogsoft-product], [docs][moogsoft-docs], [ownership][moogsoft-ownership], [licence][moogsoft-licence] | Reviewed; retained: exact current parent identity/capabilities; boundaries explained above. |
-| `summary` | AI-powered incident management and observability platform. | AIOps alert-correlation and incident-management product family; its cloud service is renamed Dell APEX AIOps Management Incident, while on-premises and hosted Moogsoft boundaries remain under review. | [product][moogsoft-product], [docs][moogsoft-docs], [ownership][moogsoft-ownership], [licence][moogsoft-licence] | Changed: exact current parent identity/capabilities; boundaries explained above. |
+| `summary` | AI-powered incident management and observability platform. | AIOps alert-correlation and incident-management product family; its cloud service is renamed Dell APEX AIOps Incident Management, while on-premises and hosted Moogsoft boundaries remain under review. | [product][moogsoft-product], [docs][moogsoft-docs], [licence][moogsoft-licence], [ownership][moogsoft-ownership], [cloud][moogsoft-cloud], [name][moogsoft-name] | Changed: use the dedicated Dell product name; retain the unresolved parent boundary. |
 | `official_url` | https://www.moogsoft.com | https://www.moogsoft.com | [product][moogsoft-product], [docs][moogsoft-docs] | Reviewed current identity; retain official-domain entry point. |
 | `repository_url` | *absent* | *absent* | [docs][moogsoft-docs], [licence][moogsoft-licence] | Reviewed; no parent source repository established. Leave absent; do not invent an archival boolean or substitute a component. |
 | `documentation_url` | *absent* | https://docs.moogsoft.com/ | [docs][moogsoft-docs] | Add the directly identified product documentation entry point; scope caveat above applies. |
@@ -454,8 +456,8 @@ Maturity is an explicit reviewer judgement from release/operational evidence, no
 | `repository_archived` | *absent* | *absent* | [docs][moogsoft-docs], [licence][moogsoft-licence] | Reviewed; no parent source repository established. Leave absent; do not invent an archival boolean or substitute a component. |
 | `alternatives` | `[]` | `[]` | [product][moogsoft-product], [docs][moogsoft-docs] | Reviewed; retain empty optional metadata. No comparative substitution or tag claim is needed for this evidence batch. |
 | `tags` | `[]` | `[]` | [product][moogsoft-product], [docs][moogsoft-docs] | Reviewed; retain empty optional metadata. No comparative substitution or tag claim is needed for this evidence batch. |
-| `verified_on` | 2026-08-03 | 2026-10-06 | [product][moogsoft-product], [docs][moogsoft-docs], [licence][moogsoft-licence], [ownership][moogsoft-ownership], [cloud][moogsoft-cloud] | Date of this actual primary-source review, including retained records; not a ranking adjustment. |
-| `sources` | legacy:5_Monitoring-Observability/README.md#L104<br>legacy:devopstools_final.md#L821 | legacy:5_Monitoring-Observability/README.md#L104<br>legacy:devopstools_final.md#L821<br>https://www.moogsoft.com/<br>https://docs.moogsoft.com/<br>https://www.dell.com/en-us/legal/lp/cloud-and-hosting-services<br>https://www.moogsoft.com/dell-technologies-acquires-moogsoft/<br>https://www.dell.com/en-us/legal/lp/apex-ai-ops-incident-management | [product][moogsoft-product], [docs][moogsoft-docs], [licence][moogsoft-licence], [ownership][moogsoft-ownership], [cloud][moogsoft-cloud] | Preserve every historical provenance entry and append the primary sources actually reviewed. |
+| `verified_on` | 2026-08-03 | 2026-10-06 | [product][moogsoft-product], [docs][moogsoft-docs], [licence][moogsoft-licence], [ownership][moogsoft-ownership], [cloud][moogsoft-cloud], [name][moogsoft-name] | Date of this actual primary-source review, including the retained parent boundary. |
+| `sources` | legacy:5_Monitoring-Observability/README.md#L104<br>legacy:devopstools_final.md#L821 | legacy:5_Monitoring-Observability/README.md#L104<br>legacy:devopstools_final.md#L821<br>https://www.moogsoft.com/<br>https://docs.moogsoft.com/<br>https://www.dell.com/en-us/legal/lp/cloud-and-hosting-services<br>https://www.moogsoft.com/dell-technologies-acquires-moogsoft/<br>https://www.dell.com/en-us/legal/lp/dell-apex-aiops-incident-management<br>https://www.dell.com/en-us/lp/legal/apex-ai-ops | [product][moogsoft-product], [docs][moogsoft-docs], [licence][moogsoft-licence], [ownership][moogsoft-ownership], [cloud][moogsoft-cloud], [name][moogsoft-name] | Preserve legacy provenance and append the primary product/terms/naming evidence actually read. |
 | `needs_review` | `true` | `true` | [product][moogsoft-product], [docs][moogsoft-docs], [licence][moogsoft-licence], [ownership][moogsoft-ownership] | RETAIN REVIEW — SPECIFIC UNRESOLVED BOUNDARY; unresolved identity prevents clearing; no unsupported deprecation. |
 
 **Changed fields:** `summary`, `use_when`, `avoid_when`, `verified_on`, `sources`, `documentation_url`.
@@ -798,7 +800,7 @@ Priority is a triage aid, not an evidence decision. Scores favor unknown licensi
 [moogsoft-docs]: https://docs.moogsoft.com/
 [moogsoft-licence]: https://www.dell.com/en-us/legal/lp/cloud-and-hosting-services
 [moogsoft-ownership]: https://www.moogsoft.com/dell-technologies-acquires-moogsoft/
-[moogsoft-cloud]: https://www.dell.com/en-us/legal/lp/apex-ai-ops-incident-management
+[moogsoft-cloud]: https://www.dell.com/en-us/legal/lp/dell-apex-aiops-incident-management
 
 ## Generated changes
 
@@ -840,3 +842,9 @@ Only the following generated files changed, all through `scripts.generate_docs`:
 - `docs/roles/platform-engineer.md`
 - `docs/roles/release-engineer.md`
 - `docs/roles/site-reliability-engineer.md`
+
+[moogsoft-name]: https://www.dell.com/en-us/lp/legal/apex-ai-ops
+
+## PR review correction
+
+The automated P2 naming comment on PR #105 was confirmed against Dell's dedicated legal/product pages. Moogsoft's cloud-product name and its current service-offering evidence URL were corrected in canonical YAML; the affected generated pages were regenerated. Parent ownership/lifecycle uncertainty remains held. The audited canonical URL set is unchanged. Focused validation was rerun; final-head CI runs the full suite again.

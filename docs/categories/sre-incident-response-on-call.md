@@ -203,7 +203,7 @@ Network traffic monitoring and analysis.
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-AIOps alert-correlation and incident-management product family; its cloud service is renamed Dell APEX AIOps Management Incident, while on-premises and hosted Moogsoft boundaries remain under review.
+AIOps alert-correlation and incident-management product family; its cloud service is renamed Dell APEX AIOps Incident Management, while on-premises and hosted Moogsoft boundaries remain under review.
 
 **Use when**
 
