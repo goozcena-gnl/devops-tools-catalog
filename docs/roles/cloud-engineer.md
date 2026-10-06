@@ -100,7 +100,7 @@
 | [Entrust Cryptographic Security Platform Key Manager](https://www.entrust.com/products/key-management) | IAM, secrets and certificate management | commercial | active |
 | [env zero](https://www.envzero.com/) | Infrastructure as Code | commercial | active |
 | [etcd](https://etcd.io) | Databases, caching and data infrastructure | oss | needs-review |
-| [EveryDev.ai](https://www.everydev.ai/) | Documentation, learning and career resources | unknown | active |
+| [EveryDev.ai](https://www.everydev.ai/) | Documentation, learning and career resources | unknown | needs-review |
 | [Eviden KMS](https://github.com/Cosmian/kms) | IAM, secrets and certificate management | source-available | active |
 | [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Exoscale SKS](https://www.exoscale.com/sks/) | Kubernetes distributions and operations | commercial | active |

@@ -177,7 +177,7 @@
 | [Envoy Gateway](https://gateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Eraser DiagramGPT](https://www.eraser.io/diagramgpt) | Emerging and experimental tools | unknown | needs-review |
 | [Eureka](https://github.com/Netflix/eureka) | Kubernetes networking, storage and add-ons | oss | active |
-| [EveryDev.ai](https://www.everydev.ai/) | Documentation, learning and career resources | unknown | active |
+| [EveryDev.ai](https://www.everydev.ai/) | Documentation, learning and career resources | unknown | needs-review |
 | [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Exoscale SKS](https://www.exoscale.com/sks/) | Kubernetes distributions and operations | commercial | active |
 | [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | needs-review |

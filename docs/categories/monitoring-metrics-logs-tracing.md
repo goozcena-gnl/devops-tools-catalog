@@ -1551,7 +1551,7 @@ Kubernetes alert enrichment, investigation, and automation platform centered on 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Needs Review
 
 High-performance syslog daemon with flexible routing (often used as a log edge forwarder).
 

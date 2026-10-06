@@ -2535,7 +2535,7 @@
   deployment_models: []
   license_model: oss
   maturity: established
-  status: active
+  status: needs-review
   alternatives: []
   tags: []
   verified_on: '2026-10-04'

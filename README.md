@@ -143,8 +143,8 @@ needs_review: false
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 619 |
-| `needs-review` | Imported but not yet fully verified. | 792 |
+| `active` | Maintained according to recorded primary-source evidence. | 617 |
+| `needs-review` | Imported but not yet fully verified. | 794 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 10 |
 | `historical` | Retained for context or migration work. | 2 |
