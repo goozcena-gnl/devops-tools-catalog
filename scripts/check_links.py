@@ -302,6 +302,17 @@ def _http_request(
         return HttpOutcome(
             "timeout-inconclusive", None, None, (), f"{type(error).__name__}: {error}"
         )
+    except ConnectionResetError as error:
+        # RemoteDisconnected is a subclass; response-read resets can also escape
+        # urllib without the URLError wrapper used during request transmission.
+        return HttpOutcome(
+            "network-inconclusive",
+            None,
+            None,
+            (),
+            f"{type(error).__name__}: {error}",
+            retryable=True,
+        )
     except urllib.error.URLError as error:
         if isinstance(error.reason, ssl.SSLError):
             return _tls_outcome(error.reason)

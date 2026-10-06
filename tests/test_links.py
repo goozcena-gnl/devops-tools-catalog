@@ -1,11 +1,15 @@
 import dataclasses
 import http.server
 import json
+import socket
 import ssl
+import struct
+import sys
 import threading
 import urllib.error
 from collections import Counter
 from datetime import UTC, datetime, timedelta
+from http.client import RemoteDisconnected
 from pathlib import Path
 
 import pytest
@@ -983,3 +987,332 @@ def test_confirmation_tls_failure_preserves_cycle_metadata(
         assert sleeps == [0.5]
     assert checked.redirect_codes == ()  # Earlier ranged-probe redirects do not leak.
     assert calls == expected
+
+
+@pytest.fixture(
+    params=[RemoteDisconnected, ConnectionResetError],
+    ids=["remote-disconnected", "connection-reset"],
+)
+def disconnect_error(request):
+    message = (
+        "Remote end closed connection without response"
+        if request.param is RemoteDisconnected
+        else "Connection reset by peer"
+    )
+    return request.param(message)
+
+
+@pytest.mark.parametrize("method", ["HEAD", "GET"])
+def test_http_request_disconnect_is_retryable(
+    monkeypatch, method, disconnect_error
+) -> None:
+    class Opener:
+        def open(self, request, timeout):
+            raise disconnect_error
+
+    monkeypatch.setattr(
+        check_links.urllib.request, "build_opener", lambda *args: Opener()
+    )
+    outcome = _http_request("https://disconnected.test/", method=method, timeout=1)
+
+    assert isinstance(outcome, HttpOutcome)
+    assert outcome.classification == "network-inconclusive"
+    assert outcome.status is None
+    assert outcome.final_url is None
+    assert outcome.error == f"{type(disconnect_error).__name__}: {disconnect_error}"
+    assert outcome.retryable is True
+
+
+@pytest.mark.parametrize("retries", [0, 2])
+def test_disconnect_uses_bounded_retries(
+    monkeypatch, retries, disconnect_error
+) -> None:
+    calls = []
+    sleeps = []
+    url = "https://disconnected.test/"
+
+    class Opener:
+        def open(self, request, timeout):
+            calls.append((request.full_url, request.get_method()))
+            raise disconnect_error
+
+    monkeypatch.setattr(
+        check_links.urllib.request, "build_opener", lambda *args: Opener()
+    )
+    monkeypatch.setattr(check_links.time, "sleep", sleeps.append)
+    checked = check_url(
+        url,
+        limiter=DomainRateLimiter(0),
+        retries=retries,
+        timeout=1,
+        check_archived=False,
+    )
+
+    assert checked.url == url
+    assert checked.attempts == retries + 1
+    assert calls == [(url, "HEAD")] * (retries + 1)
+    assert sleeps == ([0.5, 1.0] if retries else [])
+    assert checked.classification == "network-inconclusive"
+    assert checked.status is None
+    assert checked.error == f"{type(disconnect_error).__name__}: {disconnect_error}"
+    assert strict_exit_code(True, assess_strict_results([checked], {})) == 0
+
+
+def test_disconnect_recovers_on_next_attempt(monkeypatch, disconnect_error) -> None:
+    calls = []
+    sleeps = []
+    url = "https://recovered.test/"
+
+    class Response:
+        status = 200
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            pass
+
+        def geturl(self):
+            return url
+
+    class Opener:
+        def open(self, request, timeout):
+            calls.append(request.get_method())
+            if len(calls) == 1:
+                raise disconnect_error
+            return Response()
+
+    monkeypatch.setattr(
+        check_links.urllib.request, "build_opener", lambda *args: Opener()
+    )
+    monkeypatch.setattr(check_links.time, "sleep", sleeps.append)
+    checked = check_url(
+        url,
+        limiter=DomainRateLimiter(0),
+        retries=2,
+        timeout=1,
+        check_archived=False,
+    )
+
+    assert checked.url == checked.final_url == url
+    assert checked.classification == "valid"
+    assert checked.status == 200
+    assert checked.error is None
+    assert checked.attempts == 2
+    assert calls == ["HEAD", "HEAD"]
+    assert sleeps == [0.5]
+
+
+def test_run_audit_isolates_disconnect_from_other_urls(
+    monkeypatch, tmp_path, disconnect_error
+) -> None:
+    disconnected = "https://disconnected.test/"
+    healthy = "https://healthy.test/"
+    calls = Counter()
+
+    class Response:
+        status = 200
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            pass
+
+        def geturl(self):
+            return healthy
+
+    class Opener:
+        def open(self, request, timeout):
+            calls[request.full_url] += 1
+            if request.full_url == disconnected:
+                raise disconnect_error
+            assert request.full_url == healthy
+            return Response()
+
+    monkeypatch.setattr(
+        check_links.urllib.request, "build_opener", lambda *args: Opener()
+    )
+    monkeypatch.setattr(
+        check_links,
+        "catalogue_url_contexts",
+        lambda root: {disconnected: UrlContext(), healthy: UrlContext()},
+    )
+    monkeypatch.setattr(check_links.time, "sleep", lambda _: None)
+    cache_path = tmp_path / "cache.json"
+    checked = run_audit(
+        tmp_path,
+        workers=8,
+        retries=2,
+        timeout=1,
+        domain_interval=0,
+        cache_path=cache_path,
+        cache_hours=0,
+        check_archived=False,
+    )
+
+    assert all(isinstance(item, LinkResult) for item in checked)
+    assert [(item.url, item.classification) for item in checked] == [
+        (disconnected, "network-inconclusive"),
+        (healthy, "valid"),
+    ]
+    assert calls == {disconnected: 3, healthy: 1}
+    assert set(json.loads(cache_path.read_text())) == {disconnected, healthy}
+
+
+def test_strict_cli_writes_fresh_reports_after_local_disconnect(tmp_path) -> None:
+    class Handler(http.server.BaseHTTPRequestHandler):
+        def do_HEAD(self):
+            if self.path == "/disconnect":
+                self.close_connection = True
+                return  # Close the connection without sending an HTTP response.
+            self.send_response(410 if self.path == "/missing" else 200)
+            self.end_headers()
+
+        def log_message(self, format, *args):
+            pass
+
+    server, thread = run_local_http_handler(Handler)
+    base = f"http://127.0.0.1:{server.server_port}"
+    tools = tmp_path / "data" / "tools"
+    tools.mkdir(parents=True)
+    (tools / "fixture.yaml").write_text(
+        f"- id: local\n  official_url: {base}/healthy\n"
+        f"  documentation_url: {base}/missing\n"
+        f"  repository_url: {base}/disconnect\n",
+        encoding="utf-8",
+    )
+    baseline = tmp_path / "baseline.json"
+    baseline.write_text('{"version": 1, "reviewed_blockers": []}', encoding="utf-8")
+    json_report = tmp_path / "link-report.json"
+    markdown_report = tmp_path / "link-report.md"
+    for path in (json_report, markdown_report):
+        path.write_text("STALE REPORT", encoding="utf-8")
+    try:
+        exit_code = check_links.main(
+            [
+                "--root",
+                str(tmp_path),
+                "--strict",
+                "--check-archived",
+                "--workers",
+                "8",
+                "--retries",
+                "0",
+                "--timeout",
+                "2",
+                "--domain-interval",
+                "0",
+                "--cache",
+                str(tmp_path / "cache.json"),
+                "--baseline",
+                str(baseline),
+                "--json-report",
+                str(json_report),
+                "--markdown-report",
+                str(markdown_report),
+            ]
+        )
+    finally:
+        server.shutdown()
+        server.server_close()
+        thread.join(timeout=2)
+
+    assert exit_code == 1  # The real HTTP 410 still fails strict assessment.
+    payload = json.loads(json_report.read_text(encoding="utf-8"))
+    by_url = {item["url"]: item for item in payload["results"]}
+    assert set(by_url) == {
+        f"{base}/{path}" for path in ("healthy", "missing", "disconnect")
+    }
+    assert by_url[f"{base}/disconnect"]["classification"] == "network-inconclusive"
+    assert by_url[f"{base}/disconnect"]["strict_status"] == "nonblocking"
+    assert "RemoteDisconnected" in by_url[f"{base}/disconnect"]["error"]
+    assert by_url[f"{base}/healthy"]["classification"] == "valid"
+    assert by_url[f"{base}/missing"]["strict_status"] == "blocking-new"
+    assert payload["strict"]["blocking_new"] == 1
+    assert payload["strict"]["strict_result"] == "FAIL"
+    assert "STALE REPORT" not in markdown_report.read_text(encoding="utf-8")
+
+
+@pytest.mark.parametrize(
+    "error,classification",
+    [
+        (TimeoutError("timed out"), "timeout-inconclusive"),
+        (urllib.error.URLError(socket.gaierror("no address")), "dns-inconclusive"),
+        (
+            urllib.error.URLError(ConnectionResetError("connection reset")),
+            "network-inconclusive",
+        ),
+    ],
+    ids=["timeout", "dns", "wrapped-reset"],
+)
+def test_network_errors_keep_existing_bounded_retries(
+    monkeypatch, error, classification
+) -> None:
+    calls = []
+    sleeps = []
+
+    class Opener:
+        def open(self, request, timeout):
+            calls.append(request.get_method())
+            raise error
+
+    monkeypatch.setattr(
+        check_links.urllib.request, "build_opener", lambda *args: Opener()
+    )
+    monkeypatch.setattr(check_links.time, "sleep", sleeps.append)
+    checked = check_url(
+        "https://unreachable.test/",
+        limiter=DomainRateLimiter(0),
+        retries=2,
+        timeout=1,
+        check_archived=False,
+    )
+
+    assert checked.classification == classification
+    assert checked.status is None
+    assert checked.attempts == 3
+    assert calls == ["HEAD"] * 3
+    assert sleeps == [0.5, 1.0]
+    assert strict_exit_code(True, assess_strict_results([checked], {})) == 0
+
+
+def test_http_request_handles_local_tcp_reset() -> None:
+    with socket.socket() as listener:
+        listener.bind(("127.0.0.1", 0))
+        listener.listen(1)
+        listener.settimeout(2)
+
+        def reset_response():
+            with listener.accept()[0] as connection:
+                connection.settimeout(2)
+                headers = b""
+                while b"\r\n\r\n" not in headers:
+                    chunk = connection.recv(4096)
+                    if not chunk:
+                        return
+                    headers += chunk
+                # SO_LINGER uses two shorts on Windows and two ints on Linux.
+                linger_format = "hh" if sys.platform == "win32" else "ii"
+                connection.setsockopt(
+                    socket.SOL_SOCKET,
+                    socket.SO_LINGER,
+                    struct.pack(linger_format, 1, 0),
+                )
+                # Closing after accepting all headers sends TCP RST during getresponse().
+
+        thread = threading.Thread(target=reset_response, daemon=True)
+        thread.start()
+        try:
+            outcome = _http_request(
+                f"http://127.0.0.1:{listener.getsockname()[1]}/",
+                method="HEAD",
+                timeout=2,
+            )
+        finally:
+            thread.join(timeout=2)
+
+    assert not thread.is_alive()
+    assert outcome.classification == "network-inconclusive"
+    assert outcome.status is None
+    assert "ConnectionResetError" in outcome.error
