@@ -40,7 +40,7 @@
 - [Apache ZooKeeper](https://zookeeper.apache.org/) — Distributed coordination service for naming, configuration, and synchronization.
 - [AppImage](https://appimage.org) — Portable Linux application packaging format (single executable).
 - [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) — Network performance monitoring.
-- [Aralez](https://aralez.rs) — Kubernetes operator (see docs).
+- [Aralez](https://github.com/sadoyan/aralez) — Rust reverse proxy built on Cloudflare Pingora, with TLS, authentication, load balancing, and dynamic discovery through Consul and Kubernetes.
 - [Arcane](https://getarcane.app/) — Self-hosted web interface for managing Docker containers, images, networks, and Compose projects.
 - [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
 - [Arize Phoenix](https://arize.com/docs/phoenix) — LLM observability and evaluation platform.
@@ -590,7 +590,7 @@
 - [OVN-Kubernetes](https://ovn-kubernetes.io) — Networking for Kubernetes using OVN.
 - [Pacemaker](https://clusterlabs.org/projects/pacemaker/) — High-availability cluster resource manager that detects failures and coordinates service recovery across nodes.
 - [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) — Hosted operations platform for on-call management, incident response, and operational automation.
-- [Pandora FMS](https://pandorafms.com/community/pandora-fms-downloads) — Monitoring platform with community and enterprise editions.
+- [Pandora FMS](https://pandorafms.com/en/product-overview/) — Monitoring platform with commercial and agent-limited free editions; the former open-source branch continues independently as Pandora OPEN.
 - [Pangolin](https://pangolin.net) — Zero-trust remote access platform and VPN alternative.
 - [passbolt](https://www.passbolt.com) — Password manager for teams with self-hosted and paid offerings.
 - [Password Pusher](https://pwpush.com/) — Secret-sharing application that creates expiring links for passwords, text, files, and URLs.

@@ -98,7 +98,7 @@
 - [osquery](https://osquery.io/) — Operating-system instrumentation framework that exposes host state through a SQL interface.
 - [otel-gui](https://github.com/metafab/otel-gui) — Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls, service maps, and correlated logs.
 - [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) — Hosted operations platform for on-call management, incident response, and operational automation.
-- [Pandora FMS](https://pandorafms.com/community/pandora-fms-downloads) — Monitoring platform with community and enterprise editions.
+- [Pandora FMS](https://pandorafms.com/en/product-overview/) — Monitoring platform with commercial and agent-limited free editions; the former open-source branch continues independently as Pandora OPEN.
 - [PatchMon](https://patchmon.net) — Patch management and monitoring platform.
 - [Prometheus](https://prometheus.io) — Monitoring and alerting toolkit.
 - [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) — Metrics cache that accepts pushed metrics from short-lived and batch jobs for Prometheus scraping.

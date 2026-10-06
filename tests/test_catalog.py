@@ -225,7 +225,7 @@ def test_batch04_elastic_apm_server_remains_under_review_for_license_boundary() 
     )
 
 
-def test_batch05_verified_tools_are_active_with_expected_metadata() -> None:
+def test_batch05_tools_have_expected_metadata_and_review_state() -> None:
     tools = load_tools()
 
     for tool_id, spdx in [
@@ -244,8 +244,13 @@ def test_batch05_verified_tools_are_active_with_expected_metadata() -> None:
         tool = next(tool for tool in tools if tool["id"] == tool_id)
         assert tool["license_model"] == "oss"
         assert tool["license_spdx"] == spdx
-        assert tool["status"] == "active"
-        assert tool["needs_review"] is False
+        if tool_id == "aralez":
+            # Catalogue review status exposes unresolved metadata, not inactivity.
+            assert tool["status"] == "needs-review"
+            assert tool["needs_review"] is True
+        else:
+            assert tool["status"] == "active"
+            assert tool["needs_review"] is False
 
     fitnesse = next(tool for tool in tools if tool["id"] == "fitnesse")
     assert fitnesse["license_model"] == "oss"

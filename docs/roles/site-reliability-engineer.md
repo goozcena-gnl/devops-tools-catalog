@@ -20,7 +20,7 @@
 | [Apache SkyWalking](https://skywalking.apache.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [Apache ZooKeeper](https://zookeeper.apache.org/) | Databases, caching and data infrastructure | oss | active |
 | [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) | Monitoring, metrics, logs and tracing | commercial | active |
-| [Aralez](https://aralez.rs) | Kubernetes networking, storage and add-ons | oss | active |
+| [Aralez](https://github.com/sadoyan/aralez) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
 | [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) | Monitoring, metrics, logs and tracing | documentation | needs-review |
@@ -329,7 +329,7 @@
 | [OVN-Kubernetes](https://ovn-kubernetes.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Pacemaker](https://clusterlabs.org/projects/pacemaker/) | Virtualization, bare metal and homelab, Backup, disaster recovery and resilience | oss | active |
 | [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) | SRE, incident response and on-call | commercial | active |
-| [Pandora FMS](https://pandorafms.com/community/pandora-fms-downloads) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Pandora FMS](https://pandorafms.com/en/product-overview/) | Monitoring, metrics, logs and tracing | commercial | needs-review |
 | [PatchMon](https://patchmon.net) | SRE, incident response and on-call | unknown | needs-review |
 | [Plane](https://plane.so) | Workflow automation and ChatOps | oss | needs-review |
 | [Pluto](https://github.com/FairwindsOps/pluto) | Kubernetes distributions and operations | oss | active |

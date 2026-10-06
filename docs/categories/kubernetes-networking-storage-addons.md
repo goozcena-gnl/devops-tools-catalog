@@ -84,21 +84,22 @@ Kubernetes CNI and network-policy implementation built on Open vSwitch.
 ### Aralez
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Needs Review
 
-Kubernetes operator (see docs).
+Rust reverse proxy built on Cloudflare Pingora, with TLS, authentication, load balancing, and dynamic discovery through Consul and Kubernetes.
 
 **Use when**
 
-- You need its specific operator capabilities (consult docs).
+- You need HTTP reverse proxying with TLS, authentication, and health-checked load balancing.
+- You need dynamic upstream discovery through Consul or Kubernetes for ingress-style routing.
 
 **Consider alternatives when**
 
-- A more established operator covers your use case.
+- You need a Kubernetes operator to reconcile application or infrastructure resources rather than proxy traffic.
 
-[Official site](https://aralez.rs) · [Documentation](https://aralez.rs) · [Source repository](https://github.com/sadoyan/aralez)
+[Official site](https://github.com/sadoyan/aralez) · [Documentation](https://github.com/sadoyan/aralez-docs/tree/main/content/docs) · [Source repository](https://github.com/sadoyan/aralez)
 
 ### AWS ACK RDS Controller
 

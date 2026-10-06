@@ -126,37 +126,44 @@
   needs_review: false
 - id: aralez
   name: Aralez
-  summary: Kubernetes operator (see docs).
-  official_url: https://aralez.rs
+  summary: Rust reverse proxy built on Cloudflare Pingora, with TLS, authentication, load balancing, and dynamic discovery through Consul and Kubernetes.
+  official_url: https://github.com/sadoyan/aralez
   repository_url: https://github.com/sadoyan/aralez
-  documentation_url: https://aralez.rs
+  documentation_url: https://github.com/sadoyan/aralez-docs/tree/main/content/docs
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - Reverse proxies & Kubernetes ingress
   roles:
   - platform-engineer
   - site-reliability-engineer
   - kubernetes-engineer
+  - infrastructure-systems-engineer
   lifecycle_stages:
   - deploy
   - operate
   use_when:
-  - You need its specific operator capabilities (consult docs).
+  - You need HTTP reverse proxying with TLS, authentication, and health-checked load balancing.
+  - You need dynamic upstream discovery through Consul or Kubernetes for ingress-style routing.
   avoid_when:
-  - A more established operator covers your use case.
+  - You need a Kubernetes operator to reconcile application or infrastructure resources rather than proxy traffic.
   deployment_models: []
   license_model: oss
   license_spdx: Apache-2.0
   maturity: unknown
-  status: active
+  status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-06'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L70
   - legacy:devopstools_final.md#L531
-  needs_review: false
+  - https://github.com/sadoyan/aralez/blob/a8dc98f636980b32613fb201f365bd905cbd3549/README.md
+  - https://github.com/sadoyan/aralez/blob/a8dc98f636980b32613fb201f365bd905cbd3549/LICENSE
+  - https://github.com/sadoyan/aralez-docs/blob/413fdeb8c75c56de50f6fc3035179eb87cad2585/content/_index.md
+  - https://github.com/sadoyan/aralez-docs/blob/413fdeb8c75c56de50f6fc3035179eb87cad2585/content/docs/kubernetes.md
+  - https://github.com/sadoyan/aralez/releases/tag/v.0.94.4
+  needs_review: true
 - id: aws-ack-rds-controller
   name: AWS ACK RDS Controller
   summary: AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.

@@ -2337,9 +2337,9 @@
   needs_review: true
 - id: pandora-fms
   name: Pandora FMS
-  summary: Monitoring platform with community and enterprise editions.
-  official_url: https://pandorafms.com/community/pandora-fms-downloads
-  repository_url: https://github.com/pandorafms/pandorafms
+  summary: Monitoring platform with commercial and agent-limited free editions; the former open-source branch continues independently as Pandora OPEN.
+  official_url: https://pandorafms.com/en/product-overview/
+  documentation_url: https://pandorafms.com/manual/!current/en/documentation/start
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -2354,17 +2354,27 @@
   use_when:
   - You need a single tool covering network, servers, and apps in traditional environments.
   avoid_when:
-  - Kubernetes-native or open-standards (OTel) alignment is required.
+  - You require an entirely open-source platform; evaluate the independent Pandora OPEN project.
   deployment_models: []
-  license_model: open-core
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-06'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L18
   - legacy:devopstools_final.md#L713
+  - https://pandorafms.com/en/product-overview/
+  - https://pandorafms.com/en/community/
+  - https://pandorafms.com/en/downloads/
+  - https://pandorafms.com/en/releases/
+  - https://pandorafms.com/en/versions-comparative/
+  - https://pandorafms.com/en/faq/
+  - https://pandorafms.com/downloads/PandoraFMS_License.pdf
+  - https://pandorafms.com/manual/!current/en/documentation/start
+  - https://github.com/pandorafms/pandorafms
+  - https://github.com/pandorafms/pandora-open
   needs_review: true
 - id: prometheus
   name: Prometheus
