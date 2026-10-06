@@ -91,7 +91,7 @@
 | [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [otel-gui](https://github.com/metafab/otel-gui) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) | SRE, incident response and on-call | commercial | active |
-| [Pandora FMS](https://pandorafms.com/community/pandora-fms-downloads) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Pandora FMS](https://pandorafms.com/en/product-overview/) | Monitoring, metrics, logs and tracing | commercial | needs-review |
 | [PatchMon](https://patchmon.net) | SRE, incident response and on-call | unknown | needs-review |
 | [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) | Monitoring, metrics, logs and tracing | oss | active |

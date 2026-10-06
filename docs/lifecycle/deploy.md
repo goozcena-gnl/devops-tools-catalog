@@ -31,7 +31,7 @@
 - [Apache Kafka](https://kafka.apache.org) — Distributed event streaming platform.
 - [Apache Tomcat](https://tomcat.apache.org/) — Java web application server implementing Jakarta servlet and related specifications.
 - [Apache ZooKeeper](https://zookeeper.apache.org/) — Distributed coordination service for naming, configuration, and synchronization.
-- [Aralez](https://aralez.rs) — Kubernetes operator (see docs).
+- [Aralez](https://github.com/sadoyan/aralez) — Rust reverse proxy built on Cloudflare Pingora, with TLS, authentication, load balancing, and dynamic discovery through Consul and Kubernetes.
 - [Arcane](https://getarcane.app/) — Self-hosted web interface for managing Docker containers, images, networks, and Compose projects.
 - [Argo CD](https://argo-cd.readthedocs.io/en/stable/) — Declarative GitOps continuous delivery for Kubernetes.
 - [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) — Agent-based architecture for ArgoCD to manage remote clusters.

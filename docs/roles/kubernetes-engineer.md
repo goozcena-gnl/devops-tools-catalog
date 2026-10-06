@@ -13,7 +13,7 @@
 | [Amazon EKS](https://aws.amazon.com/eks/) | Kubernetes distributions and operations | commercial | active |
 | [Ansible kubernetes.core collection](https://github.com/ansible-collections/kubernetes.core) | Configuration management, Kubernetes distributions and operations | oss | active |
 | [Antrea](https://antrea.io/) | Kubernetes networking, storage and add-ons | oss | active |
-| [Aralez](https://aralez.rs) | Kubernetes networking, storage and add-ons | oss | active |
+| [Aralez](https://github.com/sadoyan/aralez) | Kubernetes networking, storage and add-ons | oss | active |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
 | [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AWS Fargate](https://aws.amazon.com/fargate/) | Kubernetes distributions and operations | commercial | active |

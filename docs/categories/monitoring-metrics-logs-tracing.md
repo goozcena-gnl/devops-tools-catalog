@@ -1455,10 +1455,10 @@ Lightweight, zero-config OpenTelemetry trace viewer for local development with t
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Open Core<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Monitoring platform with community and enterprise editions.
+Monitoring platform with commercial and agent-limited free editions; the former open-source branch continues independently as Pandora OPEN.
 
 **Use when**
 
@@ -1466,9 +1466,9 @@ Monitoring platform with community and enterprise editions.
 
 **Consider alternatives when**
 
-- Kubernetes-native or open-standards (OTel) alignment is required.
+- You require an entirely open-source platform; evaluate the independent Pandora OPEN project.
 
-[Official site](https://pandorafms.com/community/pandora-fms-downloads) · [Source repository](https://github.com/pandorafms/pandorafms)
+[Official site](https://pandorafms.com/en/product-overview/) · [Documentation](https://pandorafms.com/manual/!current/en/documentation/start)
 
 ### Prometheus
 

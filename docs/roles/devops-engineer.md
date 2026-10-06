@@ -492,7 +492,7 @@
 | [otel-gui](https://github.com/metafab/otel-gui) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [ouch](https://github.com/ouch-org/ouch) | Foundations, Linux and scripting | oss | active |
 | [Packer](https://www.packer.io) | Infrastructure as Code | source-available | needs-review |
-| [Pandora FMS](https://pandorafms.com/community/pandora-fms-downloads) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Pandora FMS](https://pandorafms.com/en/product-overview/) | Monitoring, metrics, logs and tracing | commercial | needs-review |
 | [Paperless-ngx](https://docs.paperless-ngx.com) | Emerging and experimental tools | oss | needs-review |
 | [Papra](https://github.com/papra-hq/papra) | Emerging and experimental tools | oss | needs-review |
 | [Paseo](https://paseo.sh/) | Developer experience and local environments | oss | active |
