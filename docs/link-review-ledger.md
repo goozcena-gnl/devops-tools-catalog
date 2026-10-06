@@ -1,5 +1,20 @@
 # Unresolved Strict Link Review Ledger
 
+> [!IMPORTANT]
+> **Historical snapshot.** This ledger was generated from the 2026-08-03 committed
+> link audit and is retained as reconciliation evidence. It is not the current
+> unresolved URL queue. Some rows no longer correspond to canonical URLs after
+> subsequent evidence-reviewed maintenance.
+>
+> For current maintenance state, use [issue #2](https://github.com/goozcena-gnl/devops-tools-catalog/issues/2).
+> For the authoritative current reviewed strict exceptions, use
+> [`config/link-audit-baseline.json`](../config/link-audit-baseline.json).
+>
+> Committed reports are dated historical observations; runtime network results
+> are not timeless catalogue facts. Do not restore, replace, or remove canonical
+> URLs, or infer current project lifecycle, from this ledger without fresh,
+> field-appropriate primary-source evidence.
+
 Generated from committed `reports/link-report.json` on 2026-08-03T22:47:45.441996+00:00 UTC.
 
 Strict classes included: `manual-verification-required`, `tls-failure`, `http-error`, `repository-archived`.
