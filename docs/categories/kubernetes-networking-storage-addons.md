@@ -397,19 +397,19 @@ Kubernetes service for importing, cloning, and uploading virtual-machine disk im
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Flexible, plugin-based DNS server used as the default cluster DNS in Kubernetes.
+Plugin-based DNS server and forwarder used for Kubernetes cluster service discovery through its Kubernetes plugin; separate from kube-dns and ExternalDNS record automation.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a configurable DNS server for Kubernetes service discovery or DNS serving and forwarding with the appropriate CoreDNS plugins.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a controller that publishes Kubernetes resource addresses into an external DNS provider rather than a DNS server.
 
-[Official site](https://coredns.io) · [Source repository](https://github.com/coredns/coredns)
+[Official site](https://coredns.io) · [Documentation](https://coredns.io/manual/toc/) · [Source repository](https://github.com/coredns/coredns)
 
 ### CronJob Guardian
 
@@ -568,19 +568,19 @@ Cloud-native L4/L7 proxy used for edge routing, service networking, and observab
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Gateway API implementation for Envoy with traffic management, security, and observability features.
+Application-gateway control plane that provisions and configures Envoy Proxy using Kubernetes Gateway API resources; Envoy Proxy supplies the traffic dataplane and Gateway API defines the configuration standard.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a Kubernetes Gateway API implementation that manages Envoy Proxy deployments and routing, with compatible Gateway API and Envoy versions.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need the Gateway API specification alone, a standalone proxy binary or a service mesh rather than an application-gateway control plane.
 
-[Official site](https://gateway.envoyproxy.io) · [Source repository](https://github.com/envoyproxy/gateway)
+[Official site](https://gateway.envoyproxy.io) · [Documentation](https://gateway.envoyproxy.io/latest/tasks/quickstart/) · [Source repository](https://github.com/envoyproxy/gateway)
 
 ### Eureka
 
@@ -627,19 +627,19 @@ Sync external secrets into Kubernetes.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes add-on that configures public DNS servers with information about exposed Kubernetes services.
+Kubernetes controller that observes resources such as Services and Ingresses and synchronizes DNS records through configured provider integrations; it is not a DNS server, ingress controller or DNS provider.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need Kubernetes resource changes to drive DNS record updates through a supported provider integration with appropriate zone filters and record ownership configuration.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need cluster DNS query serving, an ingress dataplane or a DNS hosting provider, or have not checked the chosen provider's documented support and configuration.
 
-[Official site](https://kubernetes-sigs.github.io/external-dns/latest) · [Source repository](https://github.com/kubernetes-sigs/external-dns)
+[Official site](https://kubernetes-sigs.github.io/external-dns/latest) · [Documentation](https://kubernetes-sigs.github.io/external-dns/latest/) · [Source repository](https://github.com/kubernetes-sigs/external-dns)
 
 ### Falco
 
@@ -1085,19 +1085,19 @@ Kubernetes operator that establishes encrypted IPsec connectivity between select
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Service mesh for managing microservices traffic.
+Service mesh with an Istiod control plane and sidecar or ambient data planes for service traffic, security and telemetry; distinct from Envoy Proxy, Envoy Gateway and the Gateway API specification.
 
 **Use when**
 
-- You need advanced traffic management, mTLS, and observability at scale.
+- You need service-to-service traffic policies, mutual TLS and mesh telemetry, with sidecar or ambient mode selected for the documented workload and feature requirements.
 
 **Consider alternatives when**
 
-- For small clusters where the complexity and resource overhead aren't justified.
+- You need only an application gateway or expect ambient and sidecar modes to have identical capabilities without checking waypoint and feature requirements.
 
-[Official site](https://istio.io) · [Source repository](https://github.com/istio/istio)
+[Official site](https://istio.io) · [Documentation](https://istio.io/latest/docs/overview/what-is-istio/) · [Source repository](https://github.com/istio/istio)
 
 ### k8s-csi-s3
 
@@ -1201,19 +1201,19 @@ Kubernetes control plane manager (multi-tenancy/security).
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes node autoscaler.
+Kubernetes node autoscaling project with shared APIs and controllers plus separate provider implementations; provisions nodes for unschedulable pods and manages node lifecycle rather than workload replica counts.
 
 **Use when**
 
-- You need fast, flexible node provisioning with workload-aware instance selection (primarily AWS).
+- You need node provisioning driven by pod scheduling constraints and a compatible provider implementation with its documented infrastructure permissions and lifecycle behavior.
 
 **Consider alternatives when**
 
-- The standard Cluster Autoscaler works well enough or you're on a cloud without Karpenter support.
+- You need event-driven workload replica scaling or assume the shared core alone installs a cloud provider, replaces every cloud autoscaling service or gives all providers identical support.
 
-[Official site](https://karpenter.sh) · [Source repository](https://github.com/aws/karpenter-provider-aws)
+[Official site](https://github.com/kubernetes-sigs/karpenter) · [Documentation](https://github.com/kubernetes-sigs/karpenter/blob/main/README.md) · [Source repository](https://github.com/kubernetes-sigs/karpenter)
 
 ### KCL
 
@@ -1239,19 +1239,19 @@ Constraint-based configuration and policy language for Kubernetes and cloud-nati
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes-based Event Driven Autoscaler.
+Event-driven Kubernetes workload autoscaling that manages HPA resources and supplies external metrics, with workload activation from zero and event-driven Jobs; separate from node provisioning and the Metrics Server resource pipeline.
 
 **Use when**
 
-- You need to scale workloads based on external event sources (queues, streams, custom metrics).
+- You need workload replica activation or scaling from event-source signals, or event-triggered Kubernetes Jobs, with a documented KEDA scaler and credentials.
 
 **Consider alternatives when**
 
-- Standard HPA with CPU/memory metrics is sufficient.
+- You need Kubernetes node provisioning or assume KEDA replaces HPA, resource Metrics Server or the event-source system itself.
 
-[Official site](https://keda.sh) · [Source repository](https://github.com/kedacore/keda)
+[Official site](https://keda.sh) · [Documentation](https://keda.sh/docs/latest/concepts/) · [Source repository](https://github.com/kedacore/keda)
 
 ### keda-gpu-scaler
 
@@ -1524,19 +1524,19 @@ Apache-licensed Kubernetes diagnosis engine with full self-hosted operation and 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Autoscaling components (HPA/VPA/Cluster Autoscaler).
+Repository of Kubernetes autoscaling components including Cluster Autoscaler, Vertical Pod Autoscaler and Addon Resizer; Horizontal Pod Autoscaler is a separate Kubernetes-core API and controller.
 
 **Use when**
 
-- You need standard pod or node autoscaling based on resource utilization.
+- You need to select a repository component for node-count adjustment, pod CPU/memory request recommendations or updates, or cluster-proportional addon resource resizing.
 
 **Consider alternatives when**
 
-- Karpenter (for nodes) or KEDA (for event-driven scaling) better fits your workload patterns.
+- You expect one installed controller to implement every Kubernetes autoscaling mechanism, or assume this repository owns HPA, KEDA or Karpenter.
 
-[Source repository](https://github.com/kubernetes/autoscaler)
+[Official site](https://github.com/kubernetes/autoscaler) · [Documentation](https://github.com/kubernetes/autoscaler/blob/master/README.md) · [Source repository](https://github.com/kubernetes/autoscaler)
 
 ### KubeVela
 
@@ -1697,19 +1697,19 @@ Loft Labs tool (see repository for capabilities and usage).
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Cloud native distributed block storage for Kubernetes.
+Distributed block storage for Kubernetes persistent volumes, with replication, snapshots, backups and CSI integration; file-sharing components expose those block volumes and do not make it an object-storage system.
 
 **Use when**
 
-- You want easy-to-deploy distributed block storage with built-in backup and DR.
+- You need replicated Kubernetes persistent block volumes with CSI integration, snapshots and documented backup or recovery workflows.
 
 **Consider alternatives when**
 
-- You need high-IOPS workloads or enterprise-scale storage (consider Ceph/Portworx).
+- You need an object-store service or assume Longhorn is Rancher Manager, Rancher Prime or Rook/Ceph; assess storage prerequisites and the chosen volume access mode.
 
-[Official site](https://longhorn.io) · [Source repository](https://github.com/longhorn/longhorn)
+[Official site](https://longhorn.io) · [Documentation](https://longhorn.io/docs/latest/) · [Source repository](https://github.com/longhorn/longhorn)
 
 ### Luxury Yacht
 
@@ -1773,38 +1773,38 @@ Kubernetes operator for managing MariaDB lifecycle, replication, Galera clusteri
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Load balancer implementation for bare metal.
+Kubernetes LoadBalancer-service implementation for bare-metal clusters that allocates service IPs and advertises them through Layer 2 or BGP; separate from ingress controllers, CNIs and service meshes.
 
 **Use when**
 
-- You run Kubernetes on bare metal and need LoadBalancer-type services.
+- You need external IP allocation and Layer 2 or BGP advertisement for Kubernetes LoadBalancer Services on networks you control.
 
 **Consider alternatives when**
 
-- You're on a cloud provider with native load balancer integration.
+- You need HTTP ingress routing, a service mesh or a CNI, or cannot meet the documented network, router and BGP-mode requirements.
 
-[Official site](https://metallb.universe.tf) · [Source repository](https://github.com/metallb/metallb)
+[Official site](https://metallb.io) · [Documentation](https://metallb.io/concepts/) · [Source repository](https://github.com/metallb/metallb)
 
 ### Metrics Server
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Resource usage metrics for Kubernetes.
+Collects current CPU and memory resource metrics from kubelets and exposes the Kubernetes Metrics API for HPA, VPA and kubectl top; it is not historical time-series storage or a general monitoring platform.
 
 **Use when**
 
-- You need `kubectl top` and HPA/VPA to function—it's a baseline requirement.
+- You need Kubernetes resource metrics for CPU/memory autoscaling consumers or kubectl top and can meet the aggregation-layer, kubelet and network requirements.
 
 **Consider alternatives when**
 
-- Your managed Kubernetes already includes it or you rely solely on Prometheus for metrics.
+- You need historical monitoring, accurate monitoring exports or external/custom metrics; Prometheus, kube-state-metrics and cAdvisor have different roles and are not this implementation.
 
-[Source repository](https://github.com/kubernetes-sigs/metrics-server)
+[Official site](https://github.com/kubernetes-sigs/metrics-server) · [Documentation](https://github.com/kubernetes-sigs/metrics-server/blob/master/README.md) · [Source repository](https://github.com/kubernetes-sigs/metrics-server)
 
 ### MOCO
 

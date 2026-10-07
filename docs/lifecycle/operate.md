@@ -144,7 +144,7 @@
 - [containerd](https://containerd.io) — Industry-standard container runtime focused on simplicity, portability, and robust Kubernetes integration.
 - [Containerized Data Importer](https://github.com/kubevirt/containerized-data-importer) — Kubernetes service for importing, cloning, and uploading virtual-machine disk images into persistent volumes for KubeVirt.
 - [Coolify](https://coolify.io/) — Self-hostable application platform for deploying code, containers, databases, and packaged services to user-managed servers.
-- [CoreDNS](https://coredns.io) — Flexible, plugin-based DNS server used as the default cluster DNS in Kubernetes.
+- [CoreDNS](https://coredns.io) — Plugin-based DNS server and forwarder used for Kubernetes cluster service discovery through its Kubernetes plugin; separate from kube-dns and ExternalDNS record automation.
 - [Coroot](https://coroot.com) — Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
 - [Corosync](https://corosync.github.io/corosync/) — Cluster communication engine providing membership, quorum, and group communication services for high-availability systems.
 - [Cortex](https://cortexmetrics.io) — Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus and OpenTelemetry metrics (CNCF Incubating).
@@ -196,7 +196,7 @@
 - [Elemental](https://elemental.docs.rancher.com/) — Rancher-integrated stack for centrally managing immutable operating-system images on Kubernetes nodes.
 - [Entrust Cryptographic Security Platform Key Manager](https://www.entrust.com/products/key-management) — Enterprise key-management software, formerly KeyControl, for centralizing encryption keys and integrating with KMIP clients, HSMs, and cloud key-management services.
 - [Envoy](https://www.envoyproxy.io) — Cloud-native L4/L7 proxy used for edge routing, service networking, and observability-aware traffic control.
-- [Envoy Gateway](https://gateway.envoyproxy.io) — Gateway API implementation for Envoy with traffic management, security, and observability features.
+- [Envoy Gateway](https://gateway.envoyproxy.io) — Application-gateway control plane that provisions and configures Envoy Proxy using Kubernetes Gateway API resources; Envoy Proxy supplies the traffic dataplane and Gateway API defines the configuration standard.
 - [etcd](https://etcd.io) — Distributed, reliable key-value store used as the primary data store for Kubernetes.
 - [etckeeper](https://etckeeper.branchable.com) — Version control for `/etc` (tracks config changes in Git).
 - [Eureka](https://github.com/Netflix/eureka) — Service registry supporting client-side discovery and failover.
@@ -206,7 +206,7 @@
 - [Exoscale SKS](https://www.exoscale.com/sks/) — Exoscale managed Kubernetes service with managed control planes and cloud infrastructure integration.
 - [Exoway](https://www.exoway.io) — Cloud infrastructure and hosting services.
 - [External Secrets Operator](https://external-secrets.io/main) — Sync external secrets into Kubernetes.
-- [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) — Kubernetes add-on that configures public DNS servers with information about exposed Kubernetes services.
+- [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) — Kubernetes controller that observes resources such as Services and Ingresses and synchronizes DNS records through configured provider integrations; it is not a DNS server, ingress controller or DNS provider.
 - [eza](https://eza.rocks/) — Directory-listing CLI with file metadata and Git-aware presentation.
 - [Falco](https://falco.org) — Runtime security for cloud-native environments.
 - [fd](https://github.com/sharkdp/fd) — Simple, fast alternative to `find`.
@@ -313,7 +313,7 @@
 - [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) — Translate Ingress and provider-specific resources into Gateway API manifests.
 - [iPerf](https://iperf.fr/iperf-download.php) — Network performance measurement tool.
 - [ipman](https://dialohq.github.io/ipman/) — Kubernetes operator that establishes encrypted IPsec connectivity between selected cluster networks.
-- [Istio](https://istio.io) — Service mesh for managing microservices traffic.
+- [Istio](https://istio.io) — Service mesh with an Istiod control plane and sidecar or ambient data planes for service traffic, security and telemetry; distinct from Envoy Proxy, Envoy Gateway and the Gateway API specification.
 - [Jaeger](https://www.jaegertracing.io) — Open-source distributed tracing backend with trace storage, query APIs and UI; current Jaeger builds on the OpenTelemetry Collector framework and accepts OpenTelemetry instrumentation.
 - [jaq](https://github.com/01mf02/jaq) — JSON query CLI implementing a substantial subset of jq's language.
 - [Jira](https://www.atlassian.com/software/jira) — Atlassian's commercial work-management product family, led by Jira Cloud with a winding-down Data Center edition.
@@ -346,13 +346,13 @@
 - [Kagent](https://kagent.dev) — AI-powered Kubernetes agent for cluster management.
 - [Kairos](https://kairos.io/) — Immutable Linux meta-distribution for building edge appliances and Kubernetes-based operating-system images.
 - [Kamaji](https://kamaji.clastix.io) — Kubernetes control plane manager (multi-tenancy/security).
-- [Karpenter](https://karpenter.sh) — Kubernetes node autoscaler.
+- [Karpenter](https://github.com/kubernetes-sigs/karpenter) — Kubernetes node autoscaling project with shared APIs and controllers plus separate provider implementations; provisions nodes for unschedulable pods and manages node lifecycle rather than workload replica counts.
 - [Kata Containers](https://katacontainers.io) — Secure containers with lightweight VMs.
 - [Katello](https://theforeman.org/plugins/katello/) — Foreman plugin for repository synchronization, content views, lifecycle environments, and host patch content.
 - [KCL](https://www.kcl-lang.io) — Constraint-based configuration and policy language for Kubernetes and cloud-native environments.
 - [kcli](https://kcli.readthedocs.io/en/latest) — Unified CLI for provisioning VMs, Kubernetes clusters, and infrastructure across libvirt, cloud, and virtualization providers.
 - [KDash](https://kdash-rs.github.io) — Fast terminal dashboard for Kubernetes.
-- [KEDA](https://keda.sh) — Kubernetes-based Event Driven Autoscaler.
+- [KEDA](https://keda.sh) — Event-driven Kubernetes workload autoscaling that manages HPA resources and supplies external metrics, with workload activation from zero and event-driven Jobs; separate from node provisioning and the Metrics Server resource pipeline.
 - [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) — GPU-aware autoscaling extension for KEDA workloads.
 - [Kelos](https://github.com/kelos-dev/kelos) — Kubernetes-native framework for orchestrating autonomous AI coding agents.
 - [Kestra](https://kestra.io/) — Workflow orchestration platform with an Apache-licensed core and commercial enterprise and hosted capabilities.
@@ -432,7 +432,7 @@
 - [KubePlumber](https://github.com/David-VTUK/KubePlumber) — Kubernetes network connectivity validation and troubleshooting tool.
 - [Kubernetes](https://kubernetes.io) — CNCF-hosted orchestration system for deploying, scaling, and managing containerized applications.
 - [Kubernetes Audit Log Explorer](https://github.com/karlpvoss/kubernetes-audit-log-explorer) — Terminal interface for browsing and filtering Kubernetes audit-log events.
-- [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) — Autoscaling components (HPA/VPA/Cluster Autoscaler).
+- [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) — Repository of Kubernetes autoscaling components including Cluster Autoscaler, Vertical Pod Autoscaler and Addon Resizer; Horizontal Pod Autoscaler is a separate Kubernetes-core API and controller.
 - [Kubernetes Common Errors & Fixes](https://middleware.io/blog/kubernetes-common-errors-fix) — Troubleshooting Kubernetes.
 - [Kubernetes MCP Guard](https://github.com/mirusser/Kubernetes-MCP-Guard) — Security-focused MCP server that proposes Kubernetes remediation actions behind explicit human approval gates.
 - [Kubernetes MCP Server](https://github.com/containers/kubernetes-mcp-server) — Go-native MCP server for Kubernetes and OpenShift with direct API server integration, multi-cluster support, Helm/Tekton toolsets, and no external CLI dependencies (Apache-2.0).
@@ -492,7 +492,7 @@
 - [LocalStack](https://www.localstack.cloud) — Licensed local AWS emulation platform delivered through a unified image, with a non-commercial Hobby plan and paid commercial-use plans.
 - [Loft Vind](https://github.com/loft-sh/vind) — Loft Labs tool (see repository for capabilities and usage).
 - [Logstash](https://www.elastic.co/logstash) — Log ingestion/processing pipeline (Elastic ecosystem).
-- [Longhorn](https://longhorn.io) — Cloud native distributed block storage for Kubernetes.
+- [Longhorn](https://longhorn.io) — Distributed block storage for Kubernetes persistent volumes, with replication, snapshots, backups and CSI integration; file-sharing components expose those block volumes and do not make it an object-storage system.
 - [Luxury Yacht](https://luxury-yacht.app/) — Cross-platform desktop application for inspecting and managing Kubernetes clusters.
 - [M/Monit](https://www.mmonit.com) — Systems monitoring and management (Monit/M/Monit).
 - [m9sweeper](https://m9sweeper.io) — Kubernetes security and compliance tool.
@@ -511,8 +511,8 @@
 - [MemoryChecker](https://github.com/lordmulder/MemoryChecker) — Memory testing and diagnostics tool.
 - [MemTest86](https://www.memtest86.com) — Industry-standard memory diagnostics and stress testing tool.
 - [Metal3](https://metal3.io/) — Kubernetes-native components for provisioning and managing bare-metal hosts, including Cluster API integration.
-- [MetalLB](https://metallb.universe.tf) — Load balancer implementation for bare metal.
-- [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) — Resource usage metrics for Kubernetes.
+- [MetalLB](https://metallb.io) — Kubernetes LoadBalancer-service implementation for bare-metal clusters that allocates service IPs and advertises them through Layer 2 or BGP; separate from ingress controllers, CNIs and service meshes.
+- [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) — Collects current CPU and memory resource metrics from kubelets and exposes the Kubernetes Metrics API for HPA, VPA and kubectl top; it is not historical time-series storage or a general monitoring platform.
 - [MicroK8s](https://microk8s.io) — Lightweight Kubernetes by Canonical.
 - [Microsoft Azure](https://azure.microsoft.com) — Microsoft's commercial cloud platform for compute, data, AI, networking, security, and hybrid and multicloud management services.
 - [Migratowl](https://migratowl.bitkaio.com) — AI-powered dependency migration analyzer.

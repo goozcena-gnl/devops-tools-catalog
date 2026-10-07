@@ -75,7 +75,7 @@
 | [Combodo (iTop)](https://combodo.com) | SRE, incident response and on-call | open-core | needs-review |
 | [Compute Gardener](https://www.compute-gardener.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | commercial | active |
-| [CoreDNS](https://coredns.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [CoreDNS](https://coredns.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Corosync](https://corosync.github.io/corosync/) | Virtualization, bare metal and homelab, Backup, disaster recovery and resilience | oss | active |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -101,9 +101,9 @@
 | [Elastic APM Server](https://www.elastic.co/observability/application-performance-monitoring) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [Elastic Stack (ELK)](https://www.elastic.co/elastic-stack) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [Envoy](https://www.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | active |
-| [Envoy Gateway](https://gateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Envoy Gateway](https://gateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
-| [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | active |
 | [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [flannel](https://github.com/flannel-io/flannel) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [flow](https://github.com/programmersd21/flow) | SRE, incident response and on-call | oss | needs-review |
@@ -162,7 +162,7 @@
 | [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) | Kubernetes distributions and operations | oss | needs-review |
 | [iPerf](https://iperf.fr/iperf-download.php) | Chaos and performance engineering | oss | needs-review |
-| [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | commercial | active |
 | [k0s](https://k0sproject.io) | Kubernetes distributions and operations | oss | active |
@@ -183,10 +183,10 @@
 | [k9sight](https://github.com/doganarif/k9sight) | Kubernetes distributions and operations | oss | needs-review |
 | [Kagent](https://kagent.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
-| [Karpenter](https://karpenter.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Karpenter](https://github.com/kubernetes-sigs/karpenter) | Kubernetes networking, storage and add-ons | oss | active |
 | [KCL](https://www.kcl-lang.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KDash](https://kdash-rs.github.io) | Kubernetes distributions and operations | oss | needs-review |
-| [KEDA](https://keda.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [KEDA](https://keda.sh) | Kubernetes networking, storage and add-ons | oss | active |
 | [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kestra](https://kestra.io/) | Workflow automation and ChatOps | open-core | active |
 | [KGateway](https://kgateway.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -242,7 +242,7 @@
 | [Kubently](https://kubently.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [KubePlumber](https://github.com/David-VTUK/KubePlumber) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubernetes](https://kubernetes.io) | Kubernetes distributions and operations | oss | active |
-| [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | active |
 | [Kubernetes Common Errors & Fixes](https://middleware.io/blog/kubernetes-common-errors-fix) | Kubernetes distributions and operations | documentation | needs-review |
 | [Kubernetes Dashboard](https://github.com/kubernetes-retired/dashboard) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
 | [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) | Monitoring, metrics, logs and tracing | documentation | needs-review |
@@ -275,7 +275,7 @@
 | [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
 | [Loft Vind](https://github.com/loft-sh/vind) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Logstash](https://www.elastic.co/logstash) | Monitoring, metrics, logs and tracing | source-available | needs-review |
-| [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Luxury Yacht](https://luxury-yacht.app/) | Kubernetes networking, storage and add-ons | oss | active |
 | [M/Monit](https://www.mmonit.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [m9sweeper](https://m9sweeper.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -287,8 +287,8 @@
 | [Mattermost](https://mattermost.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [MemoryChecker](https://github.com/lordmulder/MemoryChecker) | Chaos and performance engineering | oss | needs-review |
 | [MemTest86](https://www.memtest86.com) | Chaos and performance engineering | unknown | needs-review |
-| [MetalLB](https://metallb.universe.tf) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [MetalLB](https://metallb.io) | Kubernetes networking, storage and add-ons | oss | active |
+| [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) | Kubernetes networking, storage and add-ons | oss | active |
 | [MicroK8s](https://microk8s.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Minikube](https://minikube.sigs.k8s.io/docs) | Kubernetes distributions and operations | oss | active |
 | [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | needs-review |
