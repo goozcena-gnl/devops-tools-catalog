@@ -74,7 +74,7 @@ def test_syft_sbom_formats_are_not_scanner_or_software_licences(catalogue) -> No
 def test_anchore_oss_is_separate_from_enterprise(catalogue, tool_id) -> None:
     tool = catalogue[tool_id]
     assert tool["commercial_offering"] is True
-    assert tool["deployment_models"] == ["self-hosted"]
+    assert set(tool["deployment_models"]) == {"local-cli", "ci"}
     assert "Anchore Enterprise" in tool["summary"]
     assert tool["license_model"] == "oss"
     assert "/docs/guides/" in tool["documentation_url"]
@@ -83,7 +83,7 @@ def test_anchore_oss_is_separate_from_enterprise(catalogue, tool_id) -> None:
 def test_gitleaks_cli_does_not_inherit_hosted_or_action_terms(catalogue) -> None:
     tool = catalogue["gitleaks"]
     assert tool["license_spdx"] == "MIT"
-    assert tool["deployment_models"] == ["self-hosted"]
+    assert set(tool["deployment_models"]) == {"local-cli", "ci"}
     assert "Git history" in tool["summary"]
     assert "pre-commit" in tool["summary"] and "CI" in tool["summary"]
     assert "credential revocation" in " ".join(tool["avoid_when"])
@@ -118,7 +118,7 @@ def test_vault_current_community_grant_is_not_enterprise_hcp_or_sdk(catalogue) -
     )
     assert "https://developer.hashicorp.com/vault/docs/license" in tool["sources"]
     assert "https://developer.hashicorp.com/vault/cloud" in tool["sources"]
-    assert "https://www.vaultproject.io" in tool["sources"]
+    assert any(source == "https://www.vaultproject.io" for source in tool["sources"])
 
 
 def test_keycloak_upstream_is_iam_not_vendor_package(catalogue) -> None:
@@ -182,3 +182,19 @@ def test_foundation_status_is_separate_from_licence(catalogue, tool_id) -> None:
     assert any(
         source.endswith(("/LICENSE", "/LICENSE.txt")) for source in tool["sources"]
     )
+
+
+@pytest.mark.parametrize(
+    ("tool_id", "modes"),
+    [
+        ("cosign-sigstore", {"local-cli", "ci"}),
+        ("syft", {"local-cli", "ci"}),
+        ("grype", {"local-cli", "ci"}),
+        ("gitleaks", {"local-cli", "ci"}),
+        ("sops", {"local-cli"}),
+    ],
+)
+def test_cli_execution_modes_are_not_persistent_hosted_services(
+    catalogue, tool_id, modes
+) -> None:
+    assert set(catalogue[tool_id]["deployment_models"]) == modes

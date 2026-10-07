@@ -83,7 +83,8 @@
   - You expect the CLI alone to provide a certificate authority, transparency log, Kubernetes admission
     controller or vulnerability scanner.
   deployment_models:
-  - self-hosted
+  - local-cli
+  - ci
   license_model: oss
   maturity: established
   status: active
@@ -101,6 +102,7 @@
   - https://docs.sigstore.dev/cosign/verifying/verify/
   - https://docs.sigstore.dev/about/api-stability/
   - https://github.com/sigstore/community/blob/main/PROJECT-TIERS.md
+  - https://docs.sigstore.dev/quickstart/quickstart-ci/
   needs_review: false
   documentation_url: https://docs.sigstore.dev/cosign/
   license_spdx: Apache-2.0
@@ -577,7 +579,8 @@
   - You need Syft alone to match known vulnerabilities or provide the commercial Anchore Enterprise service;
     SBOM completeness depends on supported catalogers and the selected target.
   deployment_models:
-  - self-hosted
+  - local-cli
+  - ci
   license_model: oss
   maturity: established
   status: active
@@ -593,6 +596,7 @@
   - https://oss.anchore.com/
   - https://oss.anchore.com/docs/guides/sbom/
   - https://github.com/anchore/syft/blob/main/README.md
+  - https://github.com/anchore/sbom-action/blob/main/README.md
   needs_review: false
   official_url: https://oss.anchore.com/docs/guides/sbom/
   documentation_url: https://oss.anchore.com/docs/guides/sbom/

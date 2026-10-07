@@ -1930,7 +1930,8 @@
   - You require hosted triage and credential revocation from the CLI itself, or ongoing new CLI features
     beyond upstream security-patch maintenance.
   deployment_models:
-  - self-hosted
+  - local-cli
+  - ci
   license_model: oss
   maturity: established
   status: active
@@ -2061,7 +2062,8 @@
   - You expect identical coverage to another scanner, application penetration testing, or vulnerability
     matches without a suitable database and supported package metadata.
   deployment_models:
-  - self-hosted
+  - local-cli
+  - ci
   license_model: oss
   maturity: established
   status: active
@@ -2077,6 +2079,7 @@
   - https://oss.anchore.com/
   - https://oss.anchore.com/docs/guides/vulnerability/
   - https://github.com/anchore/grype/blob/main/README.md
+  - https://github.com/anchore/scan-action/blob/main/README.md
   needs_review: false
   official_url: https://oss.anchore.com/
   documentation_url: https://oss.anchore.com/docs/guides/vulnerability/
