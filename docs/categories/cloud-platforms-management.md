@@ -309,6 +309,25 @@ Managed cloud application platform for building, deploying, and operating applic
 
 [Official site](https://www.heroku.com) · [Documentation](https://devcenter.heroku.com/)
 
+### HPE Morpheus Software
+
+**Categories:** Cloud platforms and cloud management<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+HPE hybrid-cloud management software, with Enterprise capabilities for self-service provisioning, orchestration and governance across private and public clouds.
+
+**Use when**
+
+- You need self-service hybrid-cloud provisioning and governance; select the Enterprise edition for public-cloud and broader orchestration capabilities.
+
+**Consider alternatives when**
+
+- You require a fully managed SaaS control plane or expect every Enterprise capability in VM Essentials.
+
+[Official site](https://www.hpe.com/us/en/products/software/morpheus-software.html) · [Documentation](https://support.hpe.com/hpesc/public/docDisplay?docId=sd00008433en_us)
+
 ### IBM Cloud
 
 **Categories:** Cloud platforms and cloud management<br>
@@ -346,25 +365,6 @@ Microsoft's commercial cloud platform for compute, data, AI, networking, securit
 - You require a self-hosted open-source cloud platform or cannot adopt Azure subscriptions, regional availability constraints, and consumption-based billing.
 
 [Official site](https://azure.microsoft.com) · [Documentation](https://learn.microsoft.com/en-us/azure/)
-
-### Morpheus Data
-
-**Categories:** Cloud platforms and cloud management<br>
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Hybrid cloud management platform.
-
-**Use when**
-
-- You need a single pane of glass for provisioning across private and public clouds.
-
-**Consider alternatives when**
-
-- You're cloud-native with existing IaC pipelines.
-
-[Official site](https://morpheusdata.com)
 
 ### OpenStack
 

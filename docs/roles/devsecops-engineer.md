@@ -141,7 +141,7 @@
 | [Lefthook](https://lefthook.dev) | Software supply-chain security | oss | needs-review |
 | [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) | Application and cloud security | documentation | needs-review |
 | [Lynis](https://cisofy.com/lynis) | Application and cloud security | open-core | needs-review |
-| [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) | Application and cloud security | unknown | needs-review |
+| [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) | Configuration management, Application and cloud security | commercial | active |
 | [masscan](https://github.com/robertdavidgraham/masscan) | Application and cloud security | oss | active |
 | [MCPDefender](https://mcpdefender.com) | Application and cloud security | oss | needs-review |
 | [MEDUSA](https://pantheonsecurity.io) | Application and cloud security | unknown | needs-review |
@@ -180,7 +180,7 @@
 | [OWASP Amass](https://owasp.org/projects/amass) | Application and cloud security | oss | active |
 | [OWASP DockSec](https://owasp.org/projects/docksec) | Application and cloud security | oss | active |
 | [OWASP ZAP](https://www.zaproxy.org) | Application and cloud security | oss | needs-review |
-| [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) | Application and cloud security | unknown | needs-review |
+| [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) | Application and cloud security | commercial | active |
 | [Pangolin](https://pangolin.net) | Application and cloud security | open-core | active |
 | [Parrot Security](https://www.parrotsec.org/) | Application and cloud security | oss | active |
 | [passbolt](https://www.passbolt.com) | IAM, secrets and certificate management | open-core | needs-review |

@@ -1651,36 +1651,6 @@
   verified_on: '2026-08-29'
   sources: [https://github.com/selvarajmurugesan90/klarity, https://github.com/selvarajmurugesan90/klarity/blob/main/LICENSE]
   needs_review: false
-- id: komodor
-  name: Komodor
-  summary: Kubernetes troubleshooting and monitoring.
-  official_url: https://komodor.com
-  categories:
-  - monitoring-metrics-logs-tracing
-  subcategories:
-  - Kubernetes Observability & Troubleshooting
-  roles:
-  - devops-engineer
-  - site-reliability-engineer
-  - observability-engineer
-  lifecycle_stages:
-  - operate
-  - monitor
-  use_when:
-  - Your team spends too much time correlating K8s events, deploys, and config changes.
-  avoid_when:
-  - A simple `kubectl` + Prometheus setup is sufficient.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:5_Monitoring-Observability/README.md#L28
-  - legacy:devopstools_final.md#L727
-  needs_review: true
 - id: krr
   name: KRR
   summary: Kubernetes Resource Recommendations by Robusta.

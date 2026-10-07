@@ -1016,22 +1016,22 @@ Self-hosted observability dashboard that correlates Kubernetes resources, logs, 
 
 ### Komodor
 
-**Categories:** Monitoring, metrics, logs and tracing<br>
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Categories:** SRE, incident response and on-call, Monitoring, metrics, logs and tracing, FinOps and sustainability<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer, Platform Engineer, FinOps Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
 
-Kubernetes troubleshooting and monitoring.
+Agentic operations platform for production, covering AI SRE, cost optimization and software operations with governed agent workflows.
 
 **Use when**
 
-- Your team spends too much time correlating K8s events, deploys, and config changes.
+- You need governed AI workflows for production incidents, cloud or Kubernetes costs and software operations.
 
 **Consider alternatives when**
 
-- A simple `kubectl` + Prometheus setup is sufficient.
+- You only need basic Kubernetes telemetry, or require generally available self-service installation of the entire control plane; self-hosting the control plane is beta and requires agreement.
 
-[Official site](https://komodor.com)
+[Official site](https://komodor.com) · [Documentation](https://docs.komodor.com/)
 
 ### KRR
 

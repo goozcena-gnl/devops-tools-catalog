@@ -641,6 +641,46 @@
   - https://github.com/netlify/cli
   - https://github.com/netlify/build
   needs_review: false
+- id: octopus-deploy
+  name: Octopus Deploy
+  summary: Deployment and release automation for applications and infrastructure across environments,
+    including Kubernetes.
+  official_url: https://octopus.com
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Deployment & Release Automation
+  roles:
+  - devops-engineer
+  - developer-experience-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  - operate
+  use_when:
+  - You need governed release promotion, deployment orchestration and operational runbooks across environments.
+  avoid_when:
+  - You only need CI builds and tests without deployment or release orchestration.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-06'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L54
+  - legacy:devopstools_final.md#L336
+  - https://octopus.com/docs
+  - https://octopus.com/legal/customer-agreement
+  - https://octopus.com/pricing/faq
+  - https://octopus.com/downloads/previous
+  needs_review: false
+  documentation_url: https://octopus.com/docs
+  commercial_offering: true
 - id: openfeature
   name: OpenFeature
   summary: Open standard for feature flag management.

@@ -134,6 +134,7 @@
 | [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | commercial | active |
 | [Hoji AI](https://hoji.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Hortator](https://hortator.ai) | MLOps, LLMOps and AI infrastructure | open-core | active |
+| [HPE Morpheus Software](https://www.hpe.com/us/en/products/software/morpheus-software.html) | Cloud platforms and cloud management | commercial | active |
 | [IBM Cloud](https://www.ibm.com/products/cloud) | Cloud platforms and cloud management | commercial | active |
 | [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
 | [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | commercial | active |
@@ -202,7 +203,6 @@
 | [MLOps for DevOps Engineers](https://github.com/techiescamp/mlops-for-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Model Express](https://github.com/ai-dynamo/modelexpress) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [MongoDB](https://www.mongodb.com/) | Databases, caching and data infrastructure | source-available | active |
-| [Morpheus Data](https://morpheusdata.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [MySQL](https://www.mysql.com) | Databases, caching and data infrastructure | open-core | active |
 | [Nautobot](https://docs.nautobot.com/) | Infrastructure as Code | open-core | active |
 | [Nutanix Cloud Manager Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | commercial | active |

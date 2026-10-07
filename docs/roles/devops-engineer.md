@@ -298,7 +298,7 @@
 | [Grafana Pyroscope](https://grafana.com/oss/pyroscope) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Graft](https://trailhq.com/graft) | Developer experience and local environments, Source control and repository management | oss | active |
-| [Gremlin](https://www.gremlin.com) | Chaos and performance engineering | unknown | needs-review |
+| [Gremlin](https://www.gremlin.com) | Chaos and performance engineering, Backup, disaster recovery and resilience | commercial | active |
 | [grove](https://github.com/ai-dynamo/grove) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [gVisor](https://gvisor.dev) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Hadolint](https://github.com/hadolint/hadolint) | Developer experience and local environments | oss | needs-review |
@@ -313,6 +313,7 @@
 | [Homer](https://homer-demo.netlify.app) | Emerging and experimental tools | oss | needs-review |
 | [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Hoppscotch](https://hoppscotch.io/) | Developer experience and local environments | open-core | active |
+| [HPE Morpheus Software](https://www.hpe.com/us/en/products/software/morpheus-software.html) | Cloud platforms and cloud management | commercial | active |
 | [htop](https://htop.dev/) | Foundations, Linux and scripting | oss | active |
 | [HTTPX](https://www.python-httpx.org/) | Developer experience and local environments | oss | active |
 | [Hurl](https://hurl.dev/) | CI, build and testing | oss | active |
@@ -373,7 +374,7 @@
 | [KodeKloud](https://kodekloud.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Kolla-Ansible](https://docs.openstack.org/kolla-ansible/latest) | Configuration management | oss | needs-review |
 | [Komodo](https://komo.do/) | Virtualization, bare metal and homelab | oss | active |
-| [Komodor](https://komodor.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
+| [Komodor](https://komodor.com) | SRE, incident response and on-call, Monitoring, metrics, logs and tracing, FinOps and sustainability | commercial | active |
 | [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | needs-review |
 | [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -421,7 +422,7 @@
 | [Memcached](https://memcached.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [MemoryChecker](https://github.com/lordmulder/MemoryChecker) | Chaos and performance engineering | oss | needs-review |
 | [MemTest86](https://www.memtest86.com) | Chaos and performance engineering | unknown | needs-review |
-| [Mergify](https://mergify.com) | CI, build and testing | unknown | needs-review |
+| [Mergify](https://mergify.com) | CI, build and testing, Source control and repository management | commercial | active |
 | [micro](https://micro-editor.github.io) | Developer experience and local environments | oss | needs-review |
 | [Microsoft Azure](https://azure.microsoft.com) | Cloud platforms and cloud management | commercial | active |
 | [Microsoft Learn](https://learn.microsoft.com/en-us/training) | Documentation, learning and career resources | documentation | needs-review |
@@ -434,7 +435,6 @@
 | [MobaXterm](https://mobaxterm.mobatek.net/) | Foundations, Linux and scripting | commercial | active |
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
 | [MongoDB](https://www.mongodb.com/) | Databases, caching and data infrastructure | source-available | active |
-| [Morpheus Data](https://morpheusdata.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [Munin](https://munin-monitoring.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [mypy](https://mypy-lang.org) | Developer experience and local environments | oss | needs-review |
 | [MySQL](https://www.mysql.com) | Databases, caching and data infrastructure | open-core | active |
@@ -458,7 +458,7 @@
 | [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | needs-review |
 | [OCCT](https://www.ocbase.com) | Chaos and performance engineering | unknown | needs-review |
 | [Ocelot](https://ocelot.readthedocs.io/en/latest/) | Kubernetes networking, storage and add-ons | oss | active |
-| [Octopus Deploy](https://octopus.com) | CI, build and testing | unknown | needs-review |
+| [Octopus Deploy](https://octopus.com) | CD, GitOps, release and promotion | commercial | active |
 | [Odysseus](https://odysseus-dev.github.io/odysseus) | Developer experience and local environments | oss | needs-review |
 | [Oh My Git!](https://ohmygit.org) | Source control and repository management | documentation | needs-review |
 | [OllyGarden](https://github.com/ollygarden) | Emerging and experimental tools | open-core | needs-review |
@@ -488,7 +488,7 @@
 | [Oracle Linux](https://www.oracle.com/linux/) | Foundations, Linux and scripting | oss | active |
 | [Oracle VirtualBox](https://www.virtualbox.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [ORAS](https://oras.land) | Artifact and package management | oss | needs-review |
-| [OrbStack](https://orbstack.dev) | Virtualization, bare metal and homelab | unknown | needs-review |
+| [OrbStack](https://orbstack.dev) | Virtualization, bare metal and homelab, Developer experience and local environments | commercial | active |
 | [otel-gui](https://github.com/metafab/otel-gui) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [ouch](https://github.com/ouch-org/ouch) | Foundations, Linux and scripting | oss | active |
 | [Packer](https://www.packer.io) | Infrastructure as Code | source-available | needs-review |

@@ -1901,22 +1901,22 @@ Security auditing and hardening tool with an enterprise offering (CISOfy).
 
 ### ManageEngine Network Configuration Manager
 
-**Categories:** Application and cloud security<br>
-**Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Categories:** Configuration management, Application and cloud security<br>
+**Roles:** Infrastructure and Systems Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
 
-Network device configuration management.
+Multi-vendor network configuration management with backups, change tracking, automation and compliance auditing.
 
 **Use when**
 
-- Managing multi-vendor network device configs with change tracking.
+- You manage supported routers, switches and firewalls and need configuration backups, change control and compliance checks.
 
 **Consider alternatives when**
 
-- Your infrastructure is fully software-defined or cloud-native.
+- You only need application configuration or cloud resource provisioning without managing supported network devices.
 
-[Official site](https://www.manageengine.com/network-configuration-manager)
+[Official site](https://www.manageengine.com/network-configuration-manager) · [Documentation](https://www.manageengine.com/network-configuration-manager/help/)
 
 ### masscan
 
@@ -2530,20 +2530,20 @@ Web application security scanner (DAST).
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud-native security operations platform.
+Commercial CNAPP unifying application security, cloud posture and runtime protection with SOC workflows.
 
 **Use when**
 
-- Unified CSPM/CWPP across multi-cloud with SOC integration.
+- You need code-to-cloud risk visibility, cloud posture management and runtime protection integrated with security operations.
 
 **Consider alternatives when**
 
 - You need lightweight, single-concern tooling.
 
-[Official site](https://www.paloaltonetworks.com/cortex/cloud)
+[Official site](https://www.paloaltonetworks.com/cortex/cloud) · [Documentation](https://cortex-docs.paloaltonetworks.com/cortex-cloud-docs)
 
 ### Pangolin
 

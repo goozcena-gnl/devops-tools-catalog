@@ -1580,31 +1580,44 @@
   needs_review: true
 - id: mergify
   name: Mergify
-  summary: Merge queue and pull-request automation to keep CI green and streamline merges.
+  summary: GitHub workflow platform combining Merge Queue, CI Insights, Test Insights and Merge Protections.
   official_url: https://mergify.com
   categories:
   - ci-build-testing
+  - source-control-repository-management
   subcategories:
-  - CI/CD Platforms
+  - Merge Queues & CI/Test Automation
   roles:
   - devops-engineer
   - developer-experience-engineer
   - release-engineer
   lifecycle_stages:
+  - develop
   - build
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - You need governed GitHub merge queues, CI visibility and flaky-test management across pull requests.
+  avoid_when:
+  - You need a platform independent of GitHub or only basic manual pull-request merging.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-06'
   sources:
   - legacy:devopstools_final.md#L333
-  needs_review: true
+  - https://mergify.com/
+  - https://docs.mergify.com/
+  - https://mergify.com/tos
+  - https://mergify.com/pricing
+  - https://docs.mergify.com/changelog/
+  needs_review: false
+  documentation_url: https://docs.mergify.com/
+  commercial_offering: true
 - id: mockito
   name: Mockito
   summary: Java mocking framework for isolating collaborators in automated unit tests.
@@ -1668,36 +1681,6 @@
   sources:
   - legacy:3_CI-CD-Automation/README.md#L52
   - legacy:devopstools_final.md#L334
-  needs_review: true
-- id: octopus-deploy
-  name: Octopus Deploy
-  summary: Deployment automation platform.
-  official_url: https://octopus.com
-  categories:
-  - ci-build-testing
-  subcategories:
-  - CI/CD Platforms
-  roles:
-  - devops-engineer
-  - developer-experience-engineer
-  - release-engineer
-  lifecycle_stages:
-  - build
-  - test
-  use_when:
-  - '* You need release management and deployment orchestration across multiple environments.'
-  avoid_when:
-  - '* You only need CI (Octopus focuses on CD) or you''re fully Kubernetes-native.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:3_CI-CD-Automation/README.md#L54
-  - legacy:devopstools_final.md#L336
   needs_review: true
 - id: onedev
   name: OneDev

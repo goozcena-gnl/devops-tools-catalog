@@ -109,12 +109,12 @@
 | [Lightpanda Browser](https://lightpanda.io/) | CI, build and testing | oss | active |
 | [lychee](https://lychee.cli.rs/) | CI, build and testing, Documentation, learning and career resources | oss | active |
 | [Mantis](https://getmantis.ai) | CI, build and testing | oss | needs-review |
-| [Mergify](https://mergify.com) | CI, build and testing | unknown | needs-review |
+| [Mergify](https://mergify.com) | CI, build and testing, Source control and repository management | commercial | active |
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
 | [Nektos Act](https://nektosact.com) | CI, build and testing | oss | needs-review |
 | [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |
 | [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) | Artifact and package management | open-core | needs-review |
-| [Octopus Deploy](https://octopus.com) | CI, build and testing | unknown | needs-review |
+| [Octopus Deploy](https://octopus.com) | CD, GitOps, release and promotion | commercial | active |
 | [Oh My Git!](https://ohmygit.org) | Source control and repository management | documentation | needs-review |
 | [OneDev](https://onedev.io) | CI, build and testing | oss | needs-review |
 | [OpenDev](https://opendev.org/) | Source control and repository management, CI, build and testing | free-saas | active |

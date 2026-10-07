@@ -185,6 +185,20 @@ AUTHORIZED_CURRENT_DRIFT = {
     ("fortify-static-code-analyzer", "license_model"): "commercial",
     ("fortify-static-code-analyzer", "needs_review"): False,
     ("fortify-static-code-analyzer", "status"): "active",
+    # Wave 4 evidence review supersedes these metadata values, not the pinned
+    # N2a URL decisions: docs/maintenance/2026-10-06-wave-4-evidence-review.md.
+    ("gremlin", "license_model"): "commercial",
+    ("gremlin", "needs_review"): False,
+    ("gremlin", "status"): "active",
+    ("komodor", "license_model"): "commercial",
+    ("komodor", "needs_review"): False,
+    ("komodor", "status"): "active",
+}
+
+AUTHORIZED_CURRENT_PATH_DRIFT = {
+    # Canonical storage follows the reviewed primary category; history retains
+    # its original path and the parent-product repository stays absent.
+    "komodor": "data/tools/sre-incident-response-on-call.yaml",
 }
 
 AUTHORIZED_CURRENT_URL_DRIFT = {
@@ -355,7 +369,9 @@ def _assert_current_n2a_persistence(
         assert tool_id in accepted, f"N2a candidate is missing selected ID {tool_id!r}"
         current_path, current_record = current[tool_id]
         accepted_path, accepted_record = accepted[tool_id]
-        assert current_path == expected_path == accepted_path
+        assert expected_path == accepted_path
+        if current_path != expected_path:
+            assert current_path == AUTHORIZED_CURRENT_PATH_DRIFT.get(tool_id)
         assert accepted_record.get(field) == expected_value
         current_value = current_record.get(field)
         if current_value != expected_value:

@@ -165,7 +165,7 @@
 - [Mantis](https://getmantis.ai) — CI/CD platform for ML and data workflows.
 - [mcpsnoop](https://github.com/kerlenton/mcpsnoop) — Transparent MCP proxy for inspecting live tool calls between clients and servers.
 - [Mem0](https://mem0.ai/) — Memory layer for AI applications that can run as an embedded library, self-hosted service, or managed platform.
-- [Mergify](https://mergify.com) — Merge queue and pull-request automation to keep CI green and streamline merges.
+- [Mergify](https://mergify.com) — GitHub workflow platform combining Merge Queue, CI Insights, Test Insights and Merge Protections.
 - [Migratowl](https://migratowl.bitkaio.com) — AI-powered dependency migration analyzer.
 - [MLflow](https://mlflow.org) — Platform for managing ML lifecycles.
 - [Mockito](https://site.mockito.org/) — Java mocking framework for isolating collaborators in automated unit tests.
@@ -176,9 +176,8 @@
 - [Nix](https://nixos.org) — Reproducible build and package manager.
 - [Node.js](https://nodejs.org/en) — Cross-platform JavaScript runtime used to build command-line tools, services, and automation.
 - [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) — NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
-- [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) — Cloud platform for AI and ML workloads.
+- [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) — NVIDIA AI cloud environment, currently described as an internal proving ground, with separately documented Run:ai on DGX Cloud managed subscriptions.
 - [Ocelot](https://ocelot.readthedocs.io/en/latest/) — API gateway middleware for .NET services with routing and request aggregation.
-- [Octopus Deploy](https://octopus.com) — Deployment automation platform.
 - [Ollama](https://ollama.com) — Local LLM runtime and model manager; open-source core (model licenses vary).
 - [OmniRoute](https://omniroute.online/) — Self-hosted gateway that presents multiple AI model providers behind one routing and fallback endpoint.
 - [OneDev](https://onedev.io) — Self-hosted Git server with integrated CI/CD, issue tracking, packages, code search, and AI-assisted workflows.
@@ -189,6 +188,7 @@
 - [OpenTaco](https://opentaco.dev) — Terraform/OpenTofu CI orchestration and pull-request automation.
 - [OpenTofu](https://opentofu.org) — Open-source Terraform fork.
 - [ORAS](https://oras.land) — OCI registry client/library (store artifacts in registries).
+- [OrbStack](https://orbstack.dev) — Local macOS environment for Docker containers, Kubernetes and Linux virtual machines.
 - [OSV-Scanner](https://google.github.io/osv-scanner/) — Vulnerability scanner that checks source trees, lockfiles, and container images against the OSV database.
 - [OWASP DockSec](https://owasp.org/projects/docksec) — Container-security analysis tool combining scanners with AI-assisted explanations and remediation guidance.
 - [Packer](https://www.packer.io) — Machine image creation.

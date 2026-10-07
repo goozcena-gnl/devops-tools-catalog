@@ -309,6 +309,49 @@
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L80
   - legacy:devopstools_final.md#L200
   needs_review: true
+- id: manageengine-network-configuration-manager
+  name: ManageEngine Network Configuration Manager
+  summary: Multi-vendor network configuration management with backups, change tracking, automation and
+    compliance auditing.
+  official_url: https://www.manageengine.com/network-configuration-manager
+  categories:
+  - configuration-management
+  - application-cloud-security
+  subcategories:
+  - Network Configuration Management & Compliance
+  roles:
+  - infrastructure-systems-engineer
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  - secure
+  use_when:
+  - You manage supported routers, switches and firewalls and need configuration backups, change control
+    and compliance checks.
+  avoid_when:
+  - You only need application configuration or cloud resource provisioning without managing supported
+    network devices.
+  deployment_models:
+  - self-hosted
+  license_model: commercial
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-06'
+  sources:
+  - legacy:6_Security/README.md#L80
+  - legacy:devopstools_final.md#L954
+  - https://www.manageengine.com/network-configuration-manager/
+  - https://www.manageengine.com/network-configuration-manager/help/
+  - https://www.manageengine.com/network-configuration-manager/license.html
+  - https://www.manageengine.com/network-configuration-manager/help/installation-getting-started.html
+  - https://www.manageengine.com/network-configuration-manager/release-notes.html
+  needs_review: false
+  documentation_url: https://www.manageengine.com/network-configuration-manager/help/
+  commercial_offering: true
 - id: mitogen-for-ansible
   name: Mitogen for Ansible
   summary: Ansible accelerator to speed up module execution and reduce SSH overhead.

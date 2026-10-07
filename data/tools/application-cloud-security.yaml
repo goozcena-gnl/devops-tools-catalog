@@ -2790,35 +2790,6 @@
   - legacy:6_Security/README.md#L33
   - legacy:devopstools_final.md#L879
   needs_review: true
-- id: manageengine-network-configuration-manager
-  name: ManageEngine Network Configuration Manager
-  summary: Network device configuration management.
-  official_url: https://www.manageengine.com/network-configuration-manager
-  categories:
-  - application-cloud-security
-  subcategories:
-  - Network Security
-  roles:
-  - devsecops-engineer
-  - cloud-security-engineer
-  lifecycle_stages:
-  - test
-  - secure
-  use_when:
-  - Managing multi-vendor network device configs with change tracking.
-  avoid_when:
-  - Your infrastructure is fully software-defined or cloud-native.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:6_Security/README.md#L80
-  - legacy:devopstools_final.md#L954
-  needs_review: true
 - id: masscan
   name: masscan
   summary: High-rate asynchronous TCP port scanner for large authorized network inventories.
@@ -3761,33 +3732,43 @@
   needs_review: true
 - id: palo-alto-cortex-cloud
   name: Palo Alto Cortex Cloud
-  summary: Cloud-native security operations platform.
+  summary: Commercial CNAPP unifying application security, cloud posture and runtime protection with SOC
+    workflows.
   official_url: https://www.paloaltonetworks.com/cortex/cloud
   categories:
   - application-cloud-security
   subcategories:
-  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  - Cloud-Native Application Protection Platforms (CNAPP)
   roles:
   - devsecops-engineer
   - cloud-security-engineer
   lifecycle_stages:
+  - develop
   - test
+  - operate
+  - monitor
   - secure
   use_when:
-  - Unified CSPM/CWPP across multi-cloud with SOC integration.
+  - You need code-to-cloud risk visibility, cloud posture management and runtime protection integrated
+    with security operations.
   avoid_when:
   - You need lightweight, single-concern tooling.
   deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  license_model: commercial
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-06'
   sources:
   - legacy:6_Security/README.md#L44
   - legacy:devopstools_final.md#L899
-  needs_review: true
+  - https://www.paloaltonetworks.com/cortex/cloud
+  - https://cortex-docs.paloaltonetworks.com/cortex-cloud-docs
+  - https://cortex-docs.paloaltonetworks.com/cortex-cloud-runtime-security/get-started/understand-license-plans
+  needs_review: false
+  documentation_url: https://cortex-docs.paloaltonetworks.com/cortex-cloud-docs
+  commercial_offering: true
 - id: pangolin
   name: Pangolin
   summary: Zero-trust remote access platform and VPN alternative.
