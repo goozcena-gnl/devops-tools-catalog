@@ -164,11 +164,11 @@ NET Blazor app with REST API for generating and validating Azure resource names 
 **Model:** Oss<br>
 **Status:** Active
 
-Open-source framework that synthesizes Kubernetes YAML from TypeScript, Python, Java or Go; deployment is performed by separate tools.
+Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python, Java or Go; deployment is performed by separate tools.
 
 **Use when**
 
-- You want reusable Kubernetes abstractions in TypeScript, Python, Java or Go and will apply the synthesized manifests with kubectl or a GitOps tool.
+- You want reusable Kubernetes abstractions in TypeScript, JavaScript, Python, Java or Go and will apply the synthesized manifests with kubectl or a GitOps tool.
 
 **Consider alternatives when**
 

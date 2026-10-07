@@ -484,7 +484,7 @@ Archival metadata checked: [GitHub repository API](https://api.github.com/repos/
 
 ### cdk8s
 
-**Identity boundary:** CNCF Sandbox project originally built at AWS. Apps generate standard manifests and do not apply them; four supported languages are evidenced by current API references.
+**Identity boundary:** CNCF Sandbox project originally built at AWS. Apps generate standard manifests and do not apply them. The official homepage lists TypeScript, JavaScript, Python, Java and Go; JavaScript is supported even though the API-reference navigation only lists four language bindings.
 
 **Licence boundary:** Apache-2.0 applies to cdk8s; it is not a licence for arbitrary generated application code, Kubernetes workloads or third-party constructs.
 
@@ -498,43 +498,44 @@ Archival metadata checked: [GitHub repository API](https://api.github.com/repos/
 
 **Disposition: CLEAR REVIEW**
 
-**Primary sources checked:** [Umbrella identity and synthesis-only scope][cdk8s-e1], [Software licence][cdk8s-e2], [Current 2.x documentation and languages][cdk8s-e3], [1.x to 2.x lifecycle boundary][cdk8s-e4], [Current core library][cdk8s-e5], [Core release history][cdk8s-e6].
+**Primary sources checked:** [Umbrella identity and synthesis-only scope][cdk8s-e1], [Software licence][cdk8s-e2], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4], [1.x to 2.x lifecycle boundary][cdk8s-e5], [Current core library][cdk8s-e6], [Core release history][cdk8s-e7].
 
 | Field | Before | After | Primary evidence | Decision |
 |---|---|---|---|---|
-| `id` | cdk8s | cdk8s | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Preserve stable catalogue identity and history. |
-| `name` | cdk8s | cdk8s | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Reviewed; retained: documented identity/capability; scoped boundary above applies. |
-| `summary` | Define Kubernetes applications and reusable abstractions in general-purpose programming languages and synthesize them to YAML. | Open-source framework that synthesizes Kubernetes YAML from TypeScript, Python, Java or Go; deployment is performed by separate tools. | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Changed: documented identity/capability; scoped boundary above applies. |
-| `official_url` | https://cdk8s.io | https://cdk8s.io | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Verified official product/project entry point; any deliberate scope/identity change is explained above. |
+| `id` | cdk8s | cdk8s | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Preserve stable catalogue identity and history. |
+| `name` | cdk8s | cdk8s | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Reviewed; retained: documented identity/capability; scoped boundary above applies. |
+| `summary` | Define Kubernetes applications and reusable abstractions in general-purpose programming languages and synthesize them to YAML. | Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python, Java or Go; deployment is performed by separate tools. | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Changed: documented identity/capability; scoped boundary above applies. |
+| `official_url` | https://cdk8s.io | https://cdk8s.io | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Verified official product/project entry point; any deliberate scope/identity change is explained above. |
 | `repository_url` | https://github.com/cdk8s-team/cdk8s | https://github.com/cdk8s-team/cdk8s | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Software licence][cdk8s-e2] | Keep the canonical project/core pointer with its explicit boundary. |
 | `documentation_url` | *absent* | https://cdk8s.io/docs/latest/ | [Current 2.x documentation and languages][cdk8s-e3] | Add the directly identified official documentation entry point. |
-| `categories` | infrastructure-as-code | infrastructure-as-code | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Reviewed; retained: reviewer taxonomy mapping of documented capabilities. |
-| `subcategories` | Infrastructure as Code (IaC) | Infrastructure as Code (IaC) | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Reviewed; retained: reviewer taxonomy mapping of documented capabilities. |
-| `roles` | devops-engineer<br>cloud-engineer<br>platform-engineer<br>infrastructure-systems-engineer | devops-engineer<br>platform-engineer<br>kubernetes-engineer<br>developer-experience-engineer | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Changed: reviewer taxonomy mapping of documented capabilities. |
-| `lifecycle_stages` | plan<br>build<br>deploy | plan<br>develop<br>build | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Changed: reviewer taxonomy mapping of documented capabilities. |
-| `use_when` | `[]` | You want reusable Kubernetes abstractions in TypeScript, Python, Java or Go and will apply the synthesized manifests with kubectl or a GitOps tool. | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Software licence][cdk8s-e2] | Changed: functional guidance from documented capability, licence and deployment boundaries. |
-| `avoid_when` | `[]` | You need a deployment controller rather than manifest synthesis, or plain YAML is sufficient without a programming-language toolchain. | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Software licence][cdk8s-e2] | Changed: functional guidance from documented capability, licence and deployment boundaries. |
+| `categories` | infrastructure-as-code | infrastructure-as-code | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Reviewed; retained: reviewer taxonomy mapping of documented capabilities. |
+| `subcategories` | Infrastructure as Code (IaC) | Infrastructure as Code (IaC) | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Reviewed; retained: reviewer taxonomy mapping of documented capabilities. |
+| `roles` | devops-engineer<br>cloud-engineer<br>platform-engineer<br>infrastructure-systems-engineer | devops-engineer<br>platform-engineer<br>kubernetes-engineer<br>developer-experience-engineer | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Changed: reviewer taxonomy mapping of documented capabilities. |
+| `lifecycle_stages` | plan<br>build<br>deploy | plan<br>develop<br>build | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Changed: reviewer taxonomy mapping of documented capabilities. |
+| `use_when` | `[]` | You want reusable Kubernetes abstractions in TypeScript, JavaScript, Python, Java or Go and will apply the synthesized manifests with kubectl or a GitOps tool. | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4], [Software licence][cdk8s-e2] | Changed: functional guidance from documented capability, licence and deployment boundaries. |
+| `avoid_when` | `[]` | You need a deployment controller rather than manifest synthesis, or plain YAML is sufficient without a programming-language toolchain. | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4], [Software licence][cdk8s-e2] | Changed: functional guidance from documented capability, licence and deployment boundaries. |
 | `deployment_models` | `[]` | local | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Record documented execution/control-plane modes only; workers, CLIs and vendor services are distinguished above. |
 | `license_model` | oss | oss | [Software licence][cdk8s-e2] | Reviewed; retained: actual software/legal grant and scoped offering boundary; no component/free-tier licence inheritance. |
 | `license_spdx` | *absent* | Apache-2.0 | [Software licence][cdk8s-e2] | Changed: actual software/legal grant and scoped offering boundary; no component/free-tier licence inheritance. |
 | `commercial_offering` | *absent* | *absent* | [Software licence][cdk8s-e2] | Leave optional field absent; no blanket assertion about all third-party support/distribution businesses. |
-| `maturity` | unknown | established | [1.x to 2.x lifecycle boundary][cdk8s-e4], [Core release history][cdk8s-e6], [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Reviewer judgement explained above; foundation level is not automatically mapped to catalogue maturity. |
-| `status` | needs-review | active | [1.x to 2.x lifecycle boundary][cdk8s-e4], [Core release history][cdk8s-e6], [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | CLEAR REVIEW; current release/operational evidence supports active status and consistent false review flag. |
+| `maturity` | unknown | established | [1.x to 2.x lifecycle boundary][cdk8s-e5], [Core release history][cdk8s-e7], [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Reviewer judgement explained above; foundation level is not automatically mapped to catalogue maturity. |
+| `status` | needs-review | active | [1.x to 2.x lifecycle boundary][cdk8s-e5], [Core release history][cdk8s-e7], [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | CLEAR REVIEW; current release/operational evidence supports active status and consistent false review flag. |
 | `repository_archived` | *absent* | `false` | [Umbrella identity and synthesis-only scope][cdk8s-e1] | GitHub API reports archived=false for the retained repository; activity/release evidence is reviewed separately. |
-| `alternatives` | `[]` | `[]` | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Retain empty optional metadata; no unsupported comparison, substitute record or additional tag claim. |
-| `tags` | `[]` | `[]` | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | Retain empty optional metadata; no unsupported comparison, substitute record or additional tag claim. |
-| `verified_on` | 2026-08-03 | 2026-10-07 | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Software licence][cdk8s-e2], [Current 2.x documentation and languages][cdk8s-e3], [1.x to 2.x lifecycle boundary][cdk8s-e4], [Current core library][cdk8s-e5], [Core release history][cdk8s-e6] | Date of this actual primary-source review, set only for these ten records. |
-| `sources` | legacy:devopstools_final.md#L172 | legacy:devopstools_final.md#L172<br>https://github.com/cdk8s-team/cdk8s<br>https://github.com/cdk8s-team/cdk8s/blob/master/LICENSE<br>https://cdk8s.io/docs/latest/<br>https://cdk8s.io/docs/latest/migrating-from-1.x/<br>https://github.com/cdk8s-team/cdk8s-core<br>https://github.com/cdk8s-team/cdk8s-core/releases | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Software licence][cdk8s-e2], [Current 2.x documentation and languages][cdk8s-e3], [1.x to 2.x lifecycle boundary][cdk8s-e4], [Current core library][cdk8s-e5], [Core release history][cdk8s-e6] | Preserve every historical source and append the primary sources checked. |
-| `needs_review` | `true` | `false` | [1.x to 2.x lifecycle boundary][cdk8s-e4], [Core release history][cdk8s-e6], [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3] | CLEAR REVIEW; current release/operational evidence supports active status and consistent false review flag. |
+| `alternatives` | `[]` | `[]` | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Retain empty optional metadata; no unsupported comparison, substitute record or additional tag claim. |
+| `tags` | `[]` | `[]` | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | Retain empty optional metadata; no unsupported comparison, substitute record or additional tag claim. |
+| `verified_on` | 2026-08-03 | 2026-10-07 | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Software licence][cdk8s-e2], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4], [1.x to 2.x lifecycle boundary][cdk8s-e5], [Current core library][cdk8s-e6], [Core release history][cdk8s-e7] | Date of this actual primary-source review, set only for these ten records. |
+| `sources` | legacy:devopstools_final.md#L172 | legacy:devopstools_final.md#L172<br>https://github.com/cdk8s-team/cdk8s<br>https://github.com/cdk8s-team/cdk8s/blob/master/LICENSE<br>https://cdk8s.io/docs/latest/<br>https://cdk8s.io/<br>https://cdk8s.io/docs/latest/migrating-from-1.x/<br>https://github.com/cdk8s-team/cdk8s-core<br>https://github.com/cdk8s-team/cdk8s-core/releases | [Umbrella identity and synthesis-only scope][cdk8s-e1], [Software licence][cdk8s-e2], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4], [1.x to 2.x lifecycle boundary][cdk8s-e5], [Current core library][cdk8s-e6], [Core release history][cdk8s-e7] | Preserve every historical source and append the primary sources checked. |
+| `needs_review` | `true` | `false` | [1.x to 2.x lifecycle boundary][cdk8s-e5], [Core release history][cdk8s-e7], [Umbrella identity and synthesis-only scope][cdk8s-e1], [Current 2.x documentation and languages][cdk8s-e3], [Full language support including JavaScript][cdk8s-e4] | CLEAR REVIEW; current release/operational evidence supports active status and consistent false review flag. |
 
 **Changed fields:** `summary`, `documentation_url`, `roles`, `lifecycle_stages`, `use_when`, `avoid_when`, `deployment_models`, `license_spdx`, `maturity`, `status`, `repository_archived`, `verified_on`, `sources`, `needs_review`.
 
 [cdk8s-e1]: https://github.com/cdk8s-team/cdk8s
 [cdk8s-e2]: https://github.com/cdk8s-team/cdk8s/blob/master/LICENSE
 [cdk8s-e3]: https://cdk8s.io/docs/latest/
-[cdk8s-e4]: https://cdk8s.io/docs/latest/migrating-from-1.x/
-[cdk8s-e5]: https://github.com/cdk8s-team/cdk8s-core
-[cdk8s-e6]: https://github.com/cdk8s-team/cdk8s-core/releases
+[cdk8s-e4]: https://cdk8s.io/
+[cdk8s-e5]: https://cdk8s.io/docs/latest/migrating-from-1.x/
+[cdk8s-e6]: https://github.com/cdk8s-team/cdk8s-core
+[cdk8s-e7]: https://github.com/cdk8s-team/cdk8s-core/releases
 
 Archival metadata checked: [GitHub repository API](https://api.github.com/repos/cdk8s-team/cdk8s) (`archived: false`).
 
@@ -544,7 +545,7 @@ Archival metadata checked: [GitHub repository API](https://api.github.com/repos/
 
 **Licence boundary:** Apache-2.0 applies to the project; vendor distributions and integrations have independent boundaries.
 
-**Lifecycle boundary:** Active CDF project with 2026.3 release and 2026.2 patches. Halyard was removed; native Kustomize is the documented supported installation. Installer removal does not deprecate the project.
+**Lifecycle boundary:** Active CDF project with 2026.3 release and 2026.2 patches. Halyard is deprecated and unsupported in favor of native Kustomize. CDF reports codebase removal, while historical Halyard and migration documentation remains available; codebase cleanup is not a claim that every installer artifact is unavailable and does not deprecate Spinnaker.
 
 **Repository boundary:** Keep spinnaker/spinnaker; GitHub API archived=false and October 2026 commits. Release/install documentation independently corroborates lifecycle.
 
@@ -554,7 +555,7 @@ Archival metadata checked: [GitHub repository API](https://api.github.com/repos/
 
 **Disposition: CLEAR REVIEW**
 
-**Primary sources checked:** [Canonical project][spinnaker-e1], [Software licence][spinnaker-e2], [Official documentation][spinnaker-e3], [Native Kustomize installation][spinnaker-e4], [Supported releases][spinnaker-e5], [Current CDF activity and Halyard removal][spinnaker-e6].
+**Primary sources checked:** [Canonical project][spinnaker-e1], [Software licence][spinnaker-e2], [Official documentation][spinnaker-e3], [Native Kustomize installation][spinnaker-e4], [Historical Halyard support notice][spinnaker-e5], [Supported releases][spinnaker-e6], [Current CDF activity and Halyard removal][spinnaker-e7].
 
 | Field | Before | After | Primary evidence | Decision |
 |---|---|---|---|---|
@@ -569,19 +570,19 @@ Archival metadata checked: [GitHub repository API](https://api.github.com/repos/
 | `roles` | devops-engineer<br>developer-experience-engineer<br>release-engineer | devops-engineer<br>release-engineer<br>platform-engineer<br>site-reliability-engineer | [Official documentation][spinnaker-e3] | Changed: reviewer taxonomy mapping of documented capabilities. |
 | `lifecycle_stages` | build<br>test | release<br>deploy<br>operate | [Official documentation][spinnaker-e3] | Changed: reviewer taxonomy mapping of documented capabilities. |
 | `use_when` | * You deploy across multiple clouds and need advanced deployment strategies (canary, blue/green). | You need multi-cloud delivery pipelines with canary or blue-green strategies and can operate Spinnaker using the documented native Kustomize installation. | [Official documentation][spinnaker-e3], [Native Kustomize installation][spinnaker-e4], [Software licence][spinnaker-e2] | Changed: functional guidance from documented capability, licence and deployment boundaries. |
-| `avoid_when` | * You have a single small cluster; Spinnaker&#x27;s operational overhead is significant. | You only need a small single-cluster deployment workflow, or require the removed Halyard installation mechanism instead of native Kustomize. | [Official documentation][spinnaker-e3], [Native Kustomize installation][spinnaker-e4], [Software licence][spinnaker-e2] | Changed: functional guidance from documented capability, licence and deployment boundaries. |
+| `avoid_when` | * You have a single small cluster; Spinnaker&#x27;s operational overhead is significant. | You only need a small single-cluster deployment workflow, or require the deprecated and unsupported Halyard installation mechanism instead of native Kustomize. | [Official documentation][spinnaker-e3], [Native Kustomize installation][spinnaker-e4], [Software licence][spinnaker-e2] | Changed: functional guidance from documented capability, licence and deployment boundaries. |
 | `deployment_models` | `[]` | self-hosted | [Official documentation][spinnaker-e3], [Native Kustomize installation][spinnaker-e4] | Record documented execution/control-plane modes only; workers, CLIs and vendor services are distinguished above. |
 | `license_model` | oss | oss | [Software licence][spinnaker-e2] | Reviewed; retained: actual software/legal grant and scoped offering boundary; no component/free-tier licence inheritance. |
 | `license_spdx` | *absent* | Apache-2.0 | [Software licence][spinnaker-e2] | Changed: actual software/legal grant and scoped offering boundary; no component/free-tier licence inheritance. |
 | `commercial_offering` | *absent* | *absent* | [Software licence][spinnaker-e2] | Leave optional field absent; no blanket assertion about all third-party support/distribution businesses. |
-| `maturity` | unknown | established | [Supported releases][spinnaker-e5], [Current CDF activity and Halyard removal][spinnaker-e6], [Official documentation][spinnaker-e3] | Reviewer judgement explained above; foundation level is not automatically mapped to catalogue maturity. |
-| `status` | needs-review | active | [Supported releases][spinnaker-e5], [Current CDF activity and Halyard removal][spinnaker-e6], [Official documentation][spinnaker-e3] | CLEAR REVIEW; current release/operational evidence supports active status and consistent false review flag. |
+| `maturity` | unknown | established | [Historical Halyard support notice][spinnaker-e5], [Supported releases][spinnaker-e6], [Current CDF activity and Halyard removal][spinnaker-e7], [Official documentation][spinnaker-e3] | Reviewer judgement explained above; foundation level is not automatically mapped to catalogue maturity. |
+| `status` | needs-review | active | [Historical Halyard support notice][spinnaker-e5], [Supported releases][spinnaker-e6], [Current CDF activity and Halyard removal][spinnaker-e7], [Official documentation][spinnaker-e3] | CLEAR REVIEW; current release/operational evidence supports active status and consistent false review flag. |
 | `repository_archived` | *absent* | `false` | [Official documentation][spinnaker-e3] | GitHub API reports archived=false for the retained repository; activity/release evidence is reviewed separately. |
 | `alternatives` | `[]` | `[]` | [Official documentation][spinnaker-e3] | Retain empty optional metadata; no unsupported comparison, substitute record or additional tag claim. |
 | `tags` | `[]` | `[]` | [Official documentation][spinnaker-e3] | Retain empty optional metadata; no unsupported comparison, substitute record or additional tag claim. |
-| `verified_on` | 2026-08-03 | 2026-10-07 | [Canonical project][spinnaker-e1], [Software licence][spinnaker-e2], [Official documentation][spinnaker-e3], [Native Kustomize installation][spinnaker-e4], [Supported releases][spinnaker-e5], [Current CDF activity and Halyard removal][spinnaker-e6] | Date of this actual primary-source review, set only for these ten records. |
-| `sources` | legacy:3_CI-CD-Automation/README.md#L60<br>legacy:devopstools_final.md#L339 | legacy:3_CI-CD-Automation/README.md#L60<br>legacy:devopstools_final.md#L339<br>https://github.com/spinnaker/spinnaker<br>https://github.com/spinnaker/spinnaker/blob/main/LICENSE<br>https://spinnaker.io/docs/<br>https://spinnaker.io/docs/setup/install/<br>https://spinnaker.io/docs/releases/<br>https://cd.foundation/blog/2026/09/30/project-updates-sept-2026/ | [Canonical project][spinnaker-e1], [Software licence][spinnaker-e2], [Official documentation][spinnaker-e3], [Native Kustomize installation][spinnaker-e4], [Supported releases][spinnaker-e5], [Current CDF activity and Halyard removal][spinnaker-e6] | Preserve every historical source and append the primary sources checked. |
-| `needs_review` | `true` | `false` | [Supported releases][spinnaker-e5], [Current CDF activity and Halyard removal][spinnaker-e6], [Official documentation][spinnaker-e3] | CLEAR REVIEW; current release/operational evidence supports active status and consistent false review flag. |
+| `verified_on` | 2026-08-03 | 2026-10-07 | [Canonical project][spinnaker-e1], [Software licence][spinnaker-e2], [Official documentation][spinnaker-e3], [Native Kustomize installation][spinnaker-e4], [Historical Halyard support notice][spinnaker-e5], [Supported releases][spinnaker-e6], [Current CDF activity and Halyard removal][spinnaker-e7] | Date of this actual primary-source review, set only for these ten records. |
+| `sources` | legacy:3_CI-CD-Automation/README.md#L60<br>legacy:devopstools_final.md#L339 | legacy:3_CI-CD-Automation/README.md#L60<br>legacy:devopstools_final.md#L339<br>https://github.com/spinnaker/spinnaker<br>https://github.com/spinnaker/spinnaker/blob/main/LICENSE<br>https://spinnaker.io/docs/<br>https://spinnaker.io/docs/setup/install/<br>https://spinnaker.io/docs/setup/install/halyard/<br>https://spinnaker.io/docs/releases/<br>https://cd.foundation/blog/2026/09/30/project-updates-sept-2026/ | [Canonical project][spinnaker-e1], [Software licence][spinnaker-e2], [Official documentation][spinnaker-e3], [Native Kustomize installation][spinnaker-e4], [Historical Halyard support notice][spinnaker-e5], [Supported releases][spinnaker-e6], [Current CDF activity and Halyard removal][spinnaker-e7] | Preserve every historical source and append the primary sources checked. |
+| `needs_review` | `true` | `false` | [Historical Halyard support notice][spinnaker-e5], [Supported releases][spinnaker-e6], [Current CDF activity and Halyard removal][spinnaker-e7], [Official documentation][spinnaker-e3] | CLEAR REVIEW; current release/operational evidence supports active status and consistent false review flag. |
 
 **Changed fields:** `summary`, `documentation_url`, `categories`, `subcategories`, `roles`, `lifecycle_stages`, `use_when`, `avoid_when`, `deployment_models`, `license_spdx`, `maturity`, `status`, `repository_archived`, `verified_on`, `sources`, `needs_review`.
 
@@ -589,8 +590,9 @@ Archival metadata checked: [GitHub repository API](https://api.github.com/repos/
 [spinnaker-e2]: https://github.com/spinnaker/spinnaker/blob/main/LICENSE
 [spinnaker-e3]: https://spinnaker.io/docs/
 [spinnaker-e4]: https://spinnaker.io/docs/setup/install/
-[spinnaker-e5]: https://spinnaker.io/docs/releases/
-[spinnaker-e6]: https://cd.foundation/blog/2026/09/30/project-updates-sept-2026/
+[spinnaker-e5]: https://spinnaker.io/docs/setup/install/halyard/
+[spinnaker-e6]: https://spinnaker.io/docs/releases/
+[spinnaker-e7]: https://cd.foundation/blog/2026/09/30/project-updates-sept-2026/
 
 Archival metadata checked: [GitHub repository API](https://api.github.com/repos/spinnaker/spinnaker) (`archived: false`).
 
@@ -656,7 +658,7 @@ Required checks passed. Python 3.12.3 on WSL Ubuntu used the constrained develop
 | `python -m ruff check scripts tests` | PASS |
 | `python -m ruff format --check scripts tests` | PASS; 58 files already formatted |
 | `python -m pytest tests/test_wave5_evidence_review.py` | PASS; 17 tests |
-| `python -m pytest` | PASS; 687 tests in 256.97 seconds |
+| `python -m pytest` | PASS; 687 tests in 308.38 seconds; rerun after the two material review corrections |
 | `python -m scripts.generate_docs` | PASS; regenerated after canonical edits |
 | `python -m scripts.generate_docs --check` | PASS |
 | `python -m scripts.validate_catalog` | PASS |
@@ -699,6 +701,13 @@ Raw audit/cache output stays in ignored `tmp/wave5/`; nothing under `reports/` i
 
 The pre-edit versus final comparison found exactly ten changed IDs, exactly ten changed verification dates, and exactly ten changed record blocks (line endings normalized for comparison). All other records and their provenance remain unchanged. The report contains exactly 240 material-field rows with resolved evidence references. The audit's 2,624 URLs match final canonical URL contexts. The baseline still has six unchanged entries. Issue #2's body and `updated_at` (`2026-10-07T11:37:41Z`) match the pre-edit snapshot.
 
-Material evidence corrections are resolved in the canonical data and documented above: k0rdent scanner misidentification; Nexus Core/CE licence separation; free versus OSS TeamCity; Spacelift workers versus control plane and Deploy rename; CloudBees CI versus portfolio/Jenkins; superseded Helm v3 support notice; Tekton's CNCF transfer and ecosystem boundary; Terragrunt's OpenTofu support; cdk8s synthesis-only and 2.x boundary; Spinnaker installer removal versus active project lifecycle.
+Material evidence corrections are resolved in the canonical data and documented above: k0rdent scanner misidentification; Nexus Core/CE licence separation; free versus OSS TeamCity; Spacelift workers versus control plane and Deploy rename; CloudBees CI versus portfolio/Jenkins; superseded Helm v3 support notice; Tekton's CNCF transfer and ecosystem boundary; Terragrunt's OpenTofu support; cdk8s synthesis-only and 2.x boundary; deprecated Halyard versus active Spinnaker lifecycle.
+
+Two material P2 findings from the automatic PR review were accepted and corrected within the fixed cohort:
+
+- [Halyard support terminology](https://github.com/goozcena-gnl/devops-tools-catalog/pull/107#discussion_r4206762636): canonical selection guidance now says deprecated and unsupported, matching the official installation/historical Halyard pages. CDF's codebase-removal statement remains specifically scoped in this report; continued historical documentation is not denied. The focused test guards the support boundary.
+- [cdk8s JavaScript support](https://github.com/goozcena-gnl/devops-tools-catalog/pull/107#discussion_r4206762649): JavaScript is included in summary/use guidance after checking the official homepage, rather than treating four API-reference navigation entries as an exhaustive language list. The homepage is appended to sources and the focused test guards JavaScript support.
+
+These corrections alter no audited official/repository/documentation URL contexts. The single fresh full audit still covers the final catalogue; it is not rerun merely for wording/source-list edits.
 
 CI/security outcomes and any subsequent PR review findings are reported in the PR and final handoff against the final commit. No merge or release is performed.

@@ -51,7 +51,7 @@
 - [cargo-chef](https://github.com/LukeMathWalker/cargo-chef) — Tool for separating Rust dependency builds into cacheable container-build stages.
 - [cargo-deny](https://github.com/EmbarkStudios/cargo-deny) — Cargo dependency policy checker for advisories, licences, sources, and banned packages.
 - [cargo-vet](https://mozilla.github.io/cargo-vet/) — Tool for recording and enforcing human audits of Rust dependencies.
-- [cdk8s](https://cdk8s.io) — Open-source framework that synthesizes Kubernetes YAML from TypeScript, Python, Java or Go; deployment is performed by separate tools.
+- [cdk8s](https://cdk8s.io) — Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python, Java or Go; deployment is performed by separate tools.
 - [cek](https://github.com/bschaatsbergen/cek) — Inspect OCI image filesystems and layers without running containers.
 - [CircleCI](https://circleci.com) — Commercial CI/CD platform offered as a managed cloud service or self-hosted CircleCI Server, with optional self-hosted runners.
 - [Cloud Run functions](https://cloud.google.com/functions) — Managed event-driven functions deployed on the unified Google Cloud Run platform.

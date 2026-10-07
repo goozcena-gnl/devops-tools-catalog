@@ -16,7 +16,7 @@
 - [Bitbucket](https://www.atlassian.com/software/bitbucket) — Atlassian's commercial Git repository-hosting product family, covering Bitbucket Cloud and the self-managed Bitbucket Data Center offering.
 - [Cal.com](https://cal.com) — Open-source scheduling and booking platform (Calendly alternative) for teams and individuals.
 - [Camunda](https://camunda.com) — Workflow and process automation (BPMN/DMN).
-- [cdk8s](https://cdk8s.io) — Open-source framework that synthesizes Kubernetes YAML from TypeScript, Python, Java or Go; deployment is performed by separate tools.
+- [cdk8s](https://cdk8s.io) — Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python, Java or Go; deployment is performed by separate tools.
 - [CloudCustodian](https://cloudcustodian.io) — Cloud governance rules engine.
 - [Codeberg](https://codeberg.org/) — Non-profit hosted software forge built on Forgejo for free and open-source projects.
 - [Confluence](https://www.atlassian.com/software/confluence) — AI-powered team knowledge base and collaboration workspace by Atlassian.

@@ -31,7 +31,7 @@
 - [Brainboard](https://www.brainboard.co) — Visual cloud architecture and IaC design platform.
 - [Braintrust](https://www.braintrust.dev) — Decentralized AI marketplace and DevOps collaboration platform.
 - [CC Switch](https://ccswitch.io/en) — Open-source desktop manager for configuring and switching among AI coding command-line tools and providers.
-- [cdk8s](https://cdk8s.io) — Open-source framework that synthesizes Kubernetes YAML from TypeScript, Python, Java or Go; deployment is performed by separate tools.
+- [cdk8s](https://cdk8s.io) — Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python, Java or Go; deployment is performed by separate tools.
 - [Chapril Services](https://www.chapril.org/-services-.html) — Community-hosted catalogue of libre online services including collaboration, communication, file sharing, and code hosting tools.
 - [Clone-Wars](https://github.com/GorvGoyl/Clone-Wars) — GitHub project (see repository for details).
 - [cmd.ms](https://cmd.ms) — Microsoft Cloud command-line shortcut browser with 355+ shortcuts to Azure, Entra, Intune, and Microsoft 365 admin portals via the browser address bar.

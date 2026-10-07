@@ -103,9 +103,11 @@ def test_cdk8s_synthesizes_manifests_without_deploying(catalogue) -> None:
     assert "synthes" in tool["summary"].lower()
     assert "separate tools" in tool["summary"].lower()
     assert "kubectl" in " ".join(tool["use_when"])
+    assert "JavaScript" in tool["summary"]
+    assert "JavaScript" in " ".join(tool["use_when"])
 
 
-def test_spinnaker_project_lifecycle_is_separate_from_halyard_removal(
+def test_spinnaker_project_lifecycle_is_separate_from_halyard_deprecation(
     catalogue,
 ) -> None:
     tool = catalogue["spinnaker"]
@@ -115,4 +117,7 @@ def test_spinnaker_project_lifecycle_is_separate_from_halyard_removal(
     assert {"release", "deploy"} <= set(tool["lifecycle_stages"])
     assert "https://spinnaker.io/docs/setup/install/" in tool["sources"]
     assert "Kustomize" in " ".join(tool["use_when"])
-    assert "Halyard" in " ".join(tool["avoid_when"])
+    guidance = " ".join(tool["avoid_when"])
+    assert "Halyard" in guidance
+    assert "deprecated" in guidance
+    assert "unsupported" in guidance

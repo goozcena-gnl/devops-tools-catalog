@@ -573,7 +573,7 @@ Open-source multi-cloud continuous delivery platform for orchestrating applicati
 
 **Consider alternatives when**
 
-- You only need a small single-cluster deployment workflow, or require the removed Halyard installation mechanism instead of native Kustomize.
+- You only need a small single-cluster deployment workflow, or require the deprecated and unsupported Halyard installation mechanism instead of native Kustomize.
 
 [Official site](https://spinnaker.io) · [Documentation](https://spinnaker.io/docs/) · [Source repository](https://github.com/spinnaker/spinnaker)
 

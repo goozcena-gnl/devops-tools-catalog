@@ -273,8 +273,8 @@
   needs_review: true
 - id: cdk8s
   name: cdk8s
-  summary: Open-source framework that synthesizes Kubernetes YAML from TypeScript, Python, Java or Go;
-    deployment is performed by separate tools.
+  summary: Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python,
+    Java or Go; deployment is performed by separate tools.
   official_url: https://cdk8s.io
   repository_url: https://github.com/cdk8s-team/cdk8s
   categories:
@@ -291,8 +291,8 @@
   - develop
   - build
   use_when:
-  - You want reusable Kubernetes abstractions in TypeScript, Python, Java or Go and will apply the synthesized
-    manifests with kubectl or a GitOps tool.
+  - You want reusable Kubernetes abstractions in TypeScript, JavaScript, Python, Java or Go and will apply
+    the synthesized manifests with kubectl or a GitOps tool.
   avoid_when:
   - You need a deployment controller rather than manifest synthesis, or plain YAML is sufficient without
     a programming-language toolchain.
@@ -309,6 +309,7 @@
   - https://github.com/cdk8s-team/cdk8s
   - https://github.com/cdk8s-team/cdk8s/blob/master/LICENSE
   - https://cdk8s.io/docs/latest/
+  - https://cdk8s.io/
   - https://cdk8s.io/docs/latest/migrating-from-1.x/
   - https://github.com/cdk8s-team/cdk8s-core
   - https://github.com/cdk8s-team/cdk8s-core/releases
