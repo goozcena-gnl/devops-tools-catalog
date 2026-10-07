@@ -826,37 +826,6 @@
   - https://github.com/Qovery/engine
   - https://github.com/Qovery/engine/blob/engine-public/LICENSE
   needs_review: false
-- id: renovate
-  name: Renovate
-  summary: Automated dependency updates.
-  official_url: https://www.mend.io/renovate
-  repository_url: https://github.com/renovatebot/renovate
-  categories:
-  - cd-gitops-release-promotion
-  subcategories:
-  - Release Management
-  roles:
-  - devops-engineer
-  - platform-engineer
-  - release-engineer
-  lifecycle_stages:
-  - release
-  - deploy
-  use_when:
-  - You manage many repos with diverse package ecosystems and want highly configurable auto-PRs.
-  avoid_when:
-  - Your project has very few dependencies and manual updates are trivial.
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:10_Miscellaneous/README.md#L10
-  - legacy:devopstools_final.md#L1269
-  needs_review: true
 - id: spinnaker
   name: Spinnaker
   summary: Open-source multi-cloud continuous delivery platform for orchestrating application releases

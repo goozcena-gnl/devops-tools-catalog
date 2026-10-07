@@ -2122,6 +2122,54 @@
   - legacy:3_CI-CD-Automation/README.md#L180
   - legacy:devopstools_final.md#L421
   needs_review: true
+- id: renovate
+  name: Renovate
+  summary: Renovate dependency-update automation that proposes repository changes as pull requests; its
+    AGPL CLI is distinct from Mend-hosted services and commercial platform capabilities.
+  official_url: https://www.mend.io/renovate
+  repository_url: https://github.com/renovatebot/renovate
+  categories:
+  - developer-experience-local-environments
+  - software-supply-chain-security
+  subcategories:
+  - Dependency update automation
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - release-engineer
+  - developer-experience-engineer
+  lifecycle_stages:
+  - develop
+  - secure
+  use_when:
+  - You need configurable dependency-update pull requests across supported package managers and can run
+    the OSS bot yourself or separately select a Mend-hosted service.
+  avoid_when:
+  - You need deployment orchestration or assume the OSS licence includes Mend-hosted scheduling, support
+    and commercial platform capabilities.
+  deployment_models:
+  - local
+  - self-hosted
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-07'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L10
+  - legacy:devopstools_final.md#L1269
+  - https://github.com/renovatebot/renovate
+  - https://github.com/renovatebot/renovate/blob/main/license
+  - https://github.com/renovatebot/renovate/blob/main/package.json
+  - https://docs.renovatebot.com/
+  - https://docs.renovatebot.com/mend-hosted/overview/
+  - https://github.com/renovatebot/renovate/releases
+  needs_review: false
+  documentation_url: https://docs.renovatebot.com/
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  repository_archived: false
 - id: rtk-ai
   name: RTK AI
   summary: AI-powered development assistant.

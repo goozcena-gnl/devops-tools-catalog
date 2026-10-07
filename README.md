@@ -21,8 +21,8 @@ The DevOps ecosystem changes faster than a static list can safely represent: pro
 | Categories | **30** |
 | Engineering roles | **13** |
 | Lifecycle stages | **12** |
-| Records not flagged for review | **659** |
-| Records requiring review | **766** |
+| Records not flagged for review | **669** |
+| Records requiring review | **756** |
 | Deprecated, archived, or historical records | **14** |
 | Archived source repositories | **11** |
 | Most recent recorded verification date | **2026-10-07** |
@@ -94,21 +94,21 @@ needs_review: false
 | [Infrastructure as Code](docs/categories/infrastructure-as-code.md) | 37 |
 | [Configuration management](docs/categories/configuration-management.md) | 19 |
 | [Virtualization, bare metal and homelab](docs/categories/virtualization-bare-metal-homelab.md) | 72 |
-| [Containers and image tooling](docs/categories/containers-image-tooling.md) | 24 |
+| [Containers and image tooling](docs/categories/containers-image-tooling.md) | 23 |
 | [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 152 |
 | [Kubernetes networking, storage and add-ons](docs/categories/kubernetes-networking-storage-addons.md) | 136 |
-| [CI, build and testing](docs/categories/ci-build-testing.md) | 86 |
-| [CD, GitOps, release and promotion](docs/categories/cd-gitops-release-promotion.md) | 37 |
+| [CI, build and testing](docs/categories/ci-build-testing.md) | 87 |
+| [CD, GitOps, release and promotion](docs/categories/cd-gitops-release-promotion.md) | 36 |
 | [Artifact and package management](docs/categories/artifact-package-management.md) | 21 |
 | [Platform engineering and internal developer platforms](docs/categories/platform-engineering-idp.md) | 13 |
-| [Developer experience and local environments](docs/categories/developer-experience-local-environments.md) | 109 |
+| [Developer experience and local environments](docs/categories/developer-experience-local-environments.md) | 111 |
 | [Monitoring, metrics, logs and tracing](docs/categories/monitoring-metrics-logs-tracing.md) | 102 |
 | [SRE, incident response and on-call](docs/categories/sre-incident-response-on-call.md) | 24 |
 | [Backup, disaster recovery and resilience](docs/categories/backup-disaster-recovery-resilience.md) | 16 |
 | [Chaos and performance engineering](docs/categories/chaos-performance-engineering.md) | 25 |
-| [Application and cloud security](docs/categories/application-cloud-security.md) | 187 |
+| [Application and cloud security](docs/categories/application-cloud-security.md) | 188 |
 | [IAM, secrets and certificate management](docs/categories/iam-secrets-certificates.md) | 44 |
-| [Software supply-chain security](docs/categories/software-supply-chain-security.md) | 17 |
+| [Software supply-chain security](docs/categories/software-supply-chain-security.md) | 18 |
 | [Policy, governance and compliance](docs/categories/policy-governance-compliance.md) | 5 |
 | [FinOps and sustainability](docs/categories/finops-sustainability.md) | 32 |
 | [Databases, caching and data infrastructure](docs/categories/databases-caching-data-infrastructure.md) | 30 |
@@ -131,20 +131,20 @@ needs_review: false
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 935 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 936 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 25 |
-| `open-core` | OSS/community core with commercial features or service. | 111 |
-| `commercial` | Proprietary commercial product. | 160 |
+| `open-core` | OSS/community core with commercial features or service. | 110 |
+| `commercial` | Proprietary commercial product. | 161 |
 | `free-saas` | Hosted service with a free offering. | 5 |
 | `documentation` | Learning or documentation resource. | 108 |
-| `unknown` | Reliable licence evidence has not been recorded. | 81 |
+| `unknown` | Reliable licence evidence has not been recorded. | 80 |
 
 ## Project-status legend
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 645 |
-| `needs-review` | Imported but not yet fully verified. | 766 |
+| `active` | Maintained according to recorded primary-source evidence. | 655 |
+| `needs-review` | Imported but not yet fully verified. | 756 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 10 |
 | `historical` | Retained for context or migration work. | 2 |

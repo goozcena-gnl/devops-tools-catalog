@@ -1,34 +1,3 @@
-- id: bazel
-  name: Bazel
-  summary: Fast, scalable, multi-language build system.
-  official_url: https://bazel.build
-  repository_url: https://github.com/bazelbuild/bazel
-  categories:
-  - containers-image-tooling
-  subcategories:
-  - Build & Image Tools
-  roles:
-  - devops-engineer
-  - platform-engineer
-  - kubernetes-engineer
-  lifecycle_stages:
-  - build
-  - release
-  use_when:
-  - '* You have a large monorepo and need hermetic, incremental builds at scale.'
-  avoid_when:
-  - '* You have a small project; Bazel''s complexity is not worth it for simple builds.'
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:3_CI-CD-Automation/README.md#L72
-  - legacy:devopstools_final.md#L347
-  needs_review: true
 - id: buildah
   name: Buildah
   summary: Daemonless OCI image-building CLI and library, with Dockerfile and scripted workflows; complementary
@@ -631,33 +600,50 @@
   needs_review: true
 - id: skaffold
   name: Skaffold
-  summary: Command-line workflow tool for fast, repeatable Kubernetes development across build, push,
-    deploy, and debug loops.
+  summary: Client-side container-development CLI for build, test, push, deploy and debug loops with Kubernetes
+    and other supported targets; upstream plans repository archival on 29 January 2027.
   official_url: https://skaffold.dev
   repository_url: https://github.com/GoogleContainerTools/skaffold
   categories:
   - containers-image-tooling
+  - developer-experience-local-environments
   subcategories:
-  - Build & Image Tools
+  - Container development workflows
   roles:
   - devops-engineer
   - platform-engineer
   - kubernetes-engineer
+  - developer-experience-engineer
   lifecycle_stages:
+  - develop
   - build
-  - release
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  - test
+  - deploy
+  use_when:
+  - You maintain a container-development workflow needing configurable build, test and deployment feedback
+    and can plan for the announced repository archival on 29 January 2027.
+  avoid_when:
+  - You need upstream maintenance beyond the announced archive date, or rely on gcloud CLI bundling after
+    15 January 2027 rather than standalone installation.
+  deployment_models:
+  - local
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:devopstools_final.md#L362
-  needs_review: true
+  - https://github.com/GoogleContainerTools/skaffold
+  - https://github.com/GoogleContainerTools/skaffold/blob/main/LICENSE
+  - https://skaffold.dev/docs/
+  - https://github.com/GoogleContainerTools/skaffold/blob/main/docs-v2/content/en/docs/_index.md
+  - https://github.com/GoogleContainerTools/skaffold/releases
+  needs_review: false
+  documentation_url: https://skaffold.dev/docs/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: skopeo
   name: Skopeo
   summary: Daemonless tool to inspect, copy, sign, and sync container images across registries and local

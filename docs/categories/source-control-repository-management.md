@@ -181,19 +181,19 @@ Official command-line interface for GitHub repositories, pull requests, issues, 
 **Categories:** Source control and repository management<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Git repository management with CI/CD.
+GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 
 **Use when**
 
-- You want an all-in-one DevOps platform (SCM + CI/CD + registry + planning).
+- You want integrated repositories, planning and CI/CD, and can select a deployment offering and Free, Premium or Ultimate feature tier under its applicable terms.
 
 **Consider alternatives when**
 
-- Your team only needs simple repo hosting — the complexity overhead may not be justified.
+- You require one OSS licence for every parent-product feature, assume Free means CE packaging, or cannot operate and upgrade a Self-Managed instance within the maintenance policy.
 
-[Official site](https://about.gitlab.com) · [Source repository](https://github.com/gitlabhq/gitlabhq)
+[Official site](https://about.gitlab.com) · [Documentation](https://docs.gitlab.com/) · [Source repository](https://gitlab.com/gitlab-org/gitlab)
 
 ### GitLab University
 

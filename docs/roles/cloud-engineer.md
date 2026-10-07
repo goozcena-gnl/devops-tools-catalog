@@ -128,6 +128,7 @@
 | [HashiCorp Vault](https://www.vaultproject.io) | IAM, secrets and certificate management | source-available | needs-review |
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Haystack](https://haystack.deepset.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | commercial | active |
 | [Headroom](https://headroomlabs-ai.github.io/headroom) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Hermes Agent](https://hermes-agent.nousresearch.com) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | commercial | active |
@@ -270,8 +271,7 @@
 | [Teleport](https://goteleport.com) | IAM, secrets and certificate management | open-core | needs-review |
 | [Teller](https://github.com/tellerops/teller) | IAM, secrets and certificate management | oss | needs-review |
 | [Ternary](https://ternary.app) | FinOps and sustainability | unknown | needs-review |
-| [Terraform](https://www.terraform.io) | Infrastructure as Code | source-available | needs-review |
-| [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | unknown | needs-review |
+| [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
 | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |

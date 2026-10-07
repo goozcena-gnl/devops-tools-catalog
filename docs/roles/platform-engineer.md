@@ -64,7 +64,7 @@
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
 | [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | active |
 | [Barbara](https://www.barbara.tech) | Emerging and experimental tools | unknown | needs-review |
-| [Bazel](https://bazel.build) | Containers and image tooling | oss | needs-review |
+| [Bazel](https://bazel.build) | CI, build and testing | oss | active |
 | [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [BMC Control-M](https://www.bmc.com/it-solutions/control-m.html) | Emerging and experimental tools | unknown | needs-review |
 | [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | active |
@@ -222,6 +222,7 @@
 | [HashiCorp Consul](https://developer.hashicorp.com/consul) | Kubernetes networking, storage and add-ons | source-available | active |
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Haystack](https://haystack.deepset.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | commercial | active |
 | [Headlamp](https://headlamp.dev/) | Kubernetes distributions and operations | oss | active |
 | [Headlamp Plugins](https://github.com/headlamp-k8s/plugins) | Kubernetes networking, storage and add-ons | oss | active |
 | [Headroom](https://headroomlabs-ai.github.io/headroom) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -322,7 +323,7 @@
 | [kubara](https://kubara.io/) | Platform engineering and internal developer platforms | oss | active |
 | [Kube Copilot](https://github.com/feiskyer/kube-copilot) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) | Kubernetes distributions and operations | oss | active |
-| [kube-bench](https://aquasecurity.github.io/kube-bench) | Kubernetes distributions and operations | oss | needs-review |
+| [kube-bench](https://github.com/aquasecurity/kube-bench) | Application and cloud security, Kubernetes distributions and operations | oss | active |
 | [kube-hunter](https://aquasecurity.github.io/kube-hunter) | Kubernetes distributions and operations | oss | needs-review |
 | [Kube-OVN](https://www.kube-ovn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [kube-score](https://kube-score.com) | Kubernetes distributions and operations | oss | needs-review |
@@ -442,7 +443,7 @@
 | [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nix](https://nixos.org) | Containers and image tooling | oss | needs-review |
 | [Nocalhost](https://nocalhost.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Nomad](https://www.nomadproject.io) | Kubernetes distributions and operations | source-available | needs-review |
+| [Nomad](https://www.nomadproject.io) | Kubernetes distributions and operations | source-available | active |
 | [nOps](https://www.nops.io) | Emerging and experimental tools | unknown | needs-review |
 | [Nutanix Cloud Manager Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | commercial | active |
 | [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
@@ -502,18 +503,18 @@
 | [Radar](https://radarhq.io/) | Kubernetes distributions and operations | oss | active |
 | [Railway](https://railway.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | commercial | active |
 | [Rakazo](https://rakazo.com/) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Rancher](https://rancher.com) | Kubernetes distributions and operations | open-core | needs-review |
 | [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | needs-review |
+| [Rancher Manager](https://rancher.com) | Kubernetes distributions and operations | oss | active |
 | [Ray](https://www.ray.io/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | commercial | active |
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Reference (cheatsheets.zip)](https://cheatsheets.zip) | Documentation, learning and career resources | documentation | needs-review |
 | [rekor (sigstore)](https://github.com/sigstore/rekor) | Emerging and experimental tools | oss | needs-review |
 | [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Renovate](https://www.mend.io/renovate) | CD, GitOps, release and promotion | oss | needs-review |
+| [Renovate](https://www.mend.io/renovate) | Developer experience and local environments, Software supply-chain security | oss | active |
 | [reShapr](https://reshapr.io) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | needs-review |
+| [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | active |
 | [Roadmap.sh](https://roadmap.sh) | Documentation, learning and career resources | documentation | needs-review |
 | [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Root Me](https://www.root-me.org/) | Documentation, learning and career resources | documentation | active |
@@ -535,7 +536,7 @@
 | [Shipwright](https://shipwright.io) | Containers and image tooling | oss | needs-review |
 | [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [sk8r](https://github.com/mvklingeren/sk8r) | Kubernetes distributions and operations | oss | needs-review |
-| [Skaffold](https://skaffold.dev) | Containers and image tooling | oss | needs-review |
+| [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
 | [Skopeo](https://github.com/containers/skopeo) | Containers and image tooling | oss | needs-review |
 | [Skupper](https://skupper.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Snip](https://github.com/edouard-claude/snip) | Emerging and experimental tools | oss | needs-review |
@@ -564,8 +565,7 @@
 | [Tekton](https://tekton.dev) | CI, build and testing, CD, GitOps, release and promotion | oss | active |
 | [Telepresence](https://www.telepresence.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Ternary](https://ternary.app) | FinOps and sustainability | unknown | needs-review |
-| [Terraform](https://www.terraform.io) | Infrastructure as Code | source-available | needs-review |
-| [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | unknown | needs-review |
+| [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
 | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
