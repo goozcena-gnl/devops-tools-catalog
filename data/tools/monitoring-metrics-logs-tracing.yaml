@@ -432,7 +432,7 @@
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Kubernetes Observability & Troubleshooting
+  - Container Resource Monitoring
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -440,18 +440,32 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need per-container and host resource/performance metrics from a cAdvisor daemon, including export
+    to a separate monitoring backend.
+  avoid_when:
+  - You need a complete alerting, tracing and long-term observability platform, or cannot provide the
+    documented host/runtime visibility needed to collect metrics.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:devopstools_final.md#L723
-  needs_review: true
+  - https://github.com/google/cadvisor
+  - https://github.com/google/cadvisor/blob/master/LICENSE
+  - https://github.com/google/cadvisor/tree/master/docs
+  - https://github.com/google/cadvisor/blob/master/docs/running.md
+  - https://github.com/google/cadvisor/releases
+  needs_review: false
+  official_url: https://github.com/google/cadvisor
+  documentation_url: https://github.com/google/cadvisor/tree/master/docs
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: cardamon
   name: cardamon
   summary: Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop rules for
@@ -2872,7 +2886,8 @@
   needs_review: true
 - id: uptime-kuma
   name: Uptime Kuma
-  summary: Self-hosted uptime monitoring.
+  summary: Self-hosted uptime-monitoring application with service checks, notifications and public status
+    pages.
   official_url: https://uptime.kuma.pet
   repository_url: https://github.com/louislam/uptime-kuma
   categories:
@@ -2887,20 +2902,31 @@
   - operate
   - monitor
   use_when:
-  - Simple, self-hosted uptime/status-page monitoring.
+  - You need self-hosted service uptime checks, notifications and status pages using documented HTTP,
+    TCP, DNS, ping or other supported monitors.
   avoid_when:
-  - You need full infrastructure observability beyond HTTP/TCP checks.
-  deployment_models: []
+  - You need comprehensive metrics, logs and distributed tracing, or a first-party managed monitoring
+    service rather than operating the application yourself.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L22
   - legacy:devopstools_final.md#L718
-  needs_review: true
+  - https://uptime.kuma.pet/
+  - https://github.com/louislam/uptime-kuma
+  - https://github.com/louislam/uptime-kuma/blob/master/LICENSE
+  - https://github.com/louislam/uptime-kuma/wiki
+  - https://github.com/louislam/uptime-kuma/releases
+  needs_review: false
+  documentation_url: https://github.com/louislam/uptime-kuma/wiki
+  license_spdx: MIT
+  repository_archived: false
 - id: uptimerobot
   name: UptimeRobot
   summary: Uptime monitoring service.

@@ -101,17 +101,17 @@
 | [BrowserStack App Automate](https://www.browserstack.com/app-automate) | CI, build and testing | commercial | active |
 | [Buddy](https://buddy.works) | CI, build and testing | commercial | active |
 | [Bugsink](https://www.bugsink.com/) | Monitoring, metrics, logs and tracing | source-available | active |
-| [Buildah](https://buildah.io) | Containers and image tooling | oss | needs-review |
-| [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | needs-review |
+| [Buildah](https://buildah.io) | Containers and image tooling | oss | active |
+| [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | active |
 | [Buildkite](https://buildkite.com) | CI, build and testing | commercial | active |
 | [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | commercial | active |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | active |
 | [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
 | [Cadence CI](https://cadence.ci) | CI, build and testing | commercial | active |
-| [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | active |
 | [Cal.com](https://cal.com) | Workflow automation and ChatOps | oss | needs-review |
-| [Camunda](https://camunda.com) | Workflow automation and ChatOps | open-core | needs-review |
+| [Camunda 8](https://camunda.com) | Workflow automation and ChatOps | commercial | active |
 | [cardamon](https://github.com/dominikhei/cardamon) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [cargo-chef](https://github.com/LukeMathWalker/cargo-chef) | CI, build and testing | oss | active |
 | [cargo-nextest](https://nexte.st/) | CI, build and testing | oss | active |
@@ -481,7 +481,7 @@
 | [OpenTelemetry](https://github.com/open-telemetry) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | documentation | needs-review |
-| [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
+| [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | active |
 | [OpenWiki](https://github.com/langchain-ai/openwiki) | Developer experience and local environments | oss | needs-review |
 | [OpsQuiz](https://opsquiz.org/) | Documentation, learning and career resources | documentation | active |
 | [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | commercial | active |
@@ -491,7 +491,7 @@
 | [OrbStack](https://orbstack.dev) | Virtualization, bare metal and homelab, Developer experience and local environments | commercial | active |
 | [otel-gui](https://github.com/metafab/otel-gui) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [ouch](https://github.com/ouch-org/ouch) | Foundations, Linux and scripting | oss | active |
-| [Packer](https://www.packer.io) | Infrastructure as Code | source-available | needs-review |
+| [Packer](https://www.packer.io) | Infrastructure as Code | source-available | active |
 | [Pandora FMS](https://pandorafms.com/en/product-overview/) | Monitoring, metrics, logs and tracing | commercial | needs-review |
 | [Paperless-ngx](https://docs.paperless-ngx.com) | Emerging and experimental tools | oss | needs-review |
 | [Papra](https://github.com/papra-hq/papra) | Emerging and experimental tools | oss | needs-review |
@@ -663,7 +663,7 @@
 | [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | needs-review |
 | [Understand Anything](https://understand-anything.com) | Developer experience and local environments | unknown | needs-review |
 | [Unraid](https://unraid.net) | Virtualization, bare metal and homelab | unknown | needs-review |
-| [Uptime Kuma](https://uptime.kuma.pet) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Uptime Kuma](https://uptime.kuma.pet) | Monitoring, metrics, logs and tracing | oss | active |
 | [UptimeRobot](https://uptimerobot.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [UrBackup](https://www.urbackup.org) | Emerging and experimental tools | oss | needs-review |
 | [Uyuni](https://www.uyuni-project.org/) | Configuration management | oss | active |

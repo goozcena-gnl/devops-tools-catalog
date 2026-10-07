@@ -162,7 +162,7 @@
 | [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) | Application and cloud security | commercial | active |
 | [Pangolin](https://pangolin.net) | Application and cloud security | open-core | active |
 | [Parrot Security](https://www.parrotsec.org/) | Application and cloud security | oss | active |
-| [passbolt](https://www.passbolt.com) | IAM, secrets and certificate management | open-core | needs-review |
+| [passbolt](https://www.passbolt.com) | IAM, secrets and certificate management | oss | active |
 | [Password Pusher](https://pwpush.com/) | IAM, secrets and certificate management | open-core | active |
 | [Pavois](https://pavois.dev) | Policy, governance and compliance, Application and cloud security | oss | active |
 | [PEASS-ng](https://github.com/peass-ng/PEASS-ng) | Application and cloud security | oss | active |

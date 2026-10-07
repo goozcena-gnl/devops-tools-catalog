@@ -21,8 +21,8 @@
 | [Ballast](https://github.com/Tight-Line/ballast) | FinOps and sustainability, Emerging and experimental tools | oss | active |
 | [Bazel](https://bazel.build) | Containers and image tooling | oss | needs-review |
 | [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | active |
-| [Buildah](https://buildah.io) | Containers and image tooling | oss | needs-review |
-| [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | needs-review |
+| [Buildah](https://buildah.io) | Containers and image tooling | oss | active |
+| [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | active |
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
 | [Capacitor Next](https://gimlet.io/capacitor-next/) | Kubernetes distributions and operations | oss | active |
@@ -217,7 +217,7 @@
 | [KubeVela](https://kubevela.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KubeView](https://github.com/benc-uk/kubeview) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubevious](https://kubevious.io) | Kubernetes distributions and operations | oss | needs-review |
-| [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations | oss | needs-review |
+| [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations, Virtualization, bare metal and homelab | oss | active |
 | [Kubey](https://kubey.app) | Kubernetes distributions and operations | oss | needs-review |
 | [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | active |
 | [kURL](https://kurl.sh/) | Kubernetes distributions and operations | oss | active |
@@ -311,7 +311,7 @@
 | [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) | Kubernetes distributions and operations | documentation | needs-review |
 | [Typhoon](https://typhoon.psdn.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Valkey Operator](https://github.com/valkey-io/valkey-operator) | Kubernetes networking, storage and add-ons | oss | active |
-| [vcluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | needs-review |
+| [vCluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | active |
 | [Vitess](https://vitess.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [webernetes](https://github.com/ngrok/webernetes) | Kubernetes distributions and operations | oss | needs-review |

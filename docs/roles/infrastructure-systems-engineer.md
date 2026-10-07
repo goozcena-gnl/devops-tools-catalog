@@ -143,7 +143,7 @@
 | [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
 | [OpenStack Ironic](https://ironicbaremetal.org/) | Virtualization, bare metal and homelab | oss | active |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
-| [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
+| [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | active |
 | [OPNsense](https://opnsense.org/opnsense/) | Application and cloud security | oss | active |
 | [Oracle Linux](https://www.oracle.com/linux/) | Foundations, Linux and scripting | oss | active |
 | [Oracle VirtualBox](https://www.virtualbox.org) | Virtualization, bare metal and homelab | oss | needs-review |
@@ -152,7 +152,7 @@
 | [ouch](https://github.com/ouch-org/ouch) | Foundations, Linux and scripting | oss | active |
 | [oVirt](https://www.ovirt.org/) | Virtualization, bare metal and homelab | oss | active |
 | [Pacemaker](https://clusterlabs.org/projects/pacemaker/) | Virtualization, bare metal and homelab, Backup, disaster recovery and resilience | oss | active |
-| [Packer](https://www.packer.io) | Infrastructure as Code | source-available | needs-review |
+| [Packer](https://www.packer.io) | Infrastructure as Code | source-available | active |
 | [Pavois](https://pavois.dev) | Policy, governance and compliance, Application and cloud security | oss | active |
 | [pgvector](https://github.com/pgvector/pgvector) | Databases, caching and data infrastructure, MLOps, LLMOps and AI infrastructure | oss | active |
 | [phpIPAM](https://phpipam.net/) | Databases, caching and data infrastructure | oss | active |

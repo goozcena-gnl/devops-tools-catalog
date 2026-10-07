@@ -75,6 +75,7 @@
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 - [Bunnyshell](https://www.bunnyshell.com) — Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven by environment-as-code workflows.
 - [Caddy](https://caddyserver.com) — Extensible web server and reverse proxy with automatic HTTPS.
+- [Camunda 8](https://camunda.com) — Commercial process-orchestration platform for BPMN workflows and DMN decisions, offered as SaaS or Self-Managed with separate production licensing.
 - [Canonical Kubernetes](https://ubuntu.com/kubernetes) — Canonical's open-source Kubernetes distribution for production clusters across public cloud, on-premises, and edge infrastructure.
 - [Capacitor Next](https://gimlet.io/capacitor-next/) — Local-first web interface for Kubernetes resources, Helm history, and Flux reconciliation state.
 - [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
@@ -349,7 +350,7 @@
 - [KubeVela](https://kubevela.io) — Application delivery platform on Kubernetes.
 - [KubeView](https://github.com/benc-uk/kubeview) — Kubernetes cluster visualizer.
 - [Kubevious](https://kubevious.io) — Kubernetes configuration analysis.
-- [KubeVirt](https://kubevirt.io) — Run VMs on Kubernetes.
+- [KubeVirt](https://kubevirt.io) — Kubernetes virtualization API and runtime for defining and managing virtual-machine workloads alongside containers.
 - [Kubey](https://kubey.app) — Self-hosted multi-cluster Kubernetes web UI with cross-cluster comparison, live logs, and team access.
 - [Kueue](https://kueue.sigs.k8s.io) — Kubernetes-native job queueing and quota management controller for batch and AI/ML workloads.
 - [kURL](https://kurl.sh/) — Toolkit for packaging customized offline-capable Kubernetes installers for software appliances.
@@ -438,7 +439,7 @@
 - [OpenStack Ironic](https://ironicbaremetal.org/) — Bare-metal provisioning service supporting hardware inspection, deployment, and power management.
 - [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) — OpenStack service for provisioning and managing container orchestration clusters through OpenStack APIs.
 - [OpenTaco](https://opentaco.dev) — Terraform/OpenTofu CI orchestration and pull-request automation.
-- [OpenTofu](https://opentofu.org) — Open-source Terraform fork.
+- [OpenTofu](https://opentofu.org) — Community-governed infrastructure-as-code CLI for declaratively provisioning and managing cloud and on-premises resources.
 - [OperatorHub.io](https://operatorhub.io/) — Community-operated web portal and OLM catalog for discovering and publishing independently licensed Kubernetes Operators.
 - [OPNsense](https://opnsense.org/opnsense/) — FreeBSD-based open-source firewall and routing platform for network security gateways.
 - [OpsLevel](https://www.opslevel.com) — SaaS internal developer portal and service catalog (scorecards, ownership, maturity).
@@ -451,7 +452,6 @@
 - [oVirt](https://www.ovirt.org/) — Open-source virtualization management platform for KVM hosts, virtual machines, storage, and networks.
 - [OVN-Kubernetes](https://ovn-kubernetes.io) — Networking for Kubernetes using OVN.
 - [Pacemaker](https://clusterlabs.org/projects/pacemaker/) — High-availability cluster resource manager that detects failures and coordinates service recovery across nodes.
-- [Packer](https://www.packer.io) — Machine image creation.
 - [peerd](https://peerd.ai) — Browser-native harness for AI agents.
 - [pgvector](https://github.com/pgvector/pgvector) — PostgreSQL extension that adds vector data types, similarity search, and vector indexes.
 - [phpIPAM](https://phpipam.net/) — Web application for IP address management, subnet planning, and address-space documentation.
@@ -565,7 +565,7 @@
 - [Valkey Operator](https://github.com/valkey-io/valkey-operator) — Kubernetes operator for deploying and managing Valkey clusters, including scaling and failover.
 - [Varnish Cache](https://www.varnish.org/) — HTTP reverse proxy and cache maintained by Varnish Software; distinct from the renamed Vinyl Cache project.
 - [Vates VMS](https://github.com/vatesfr) — Open virtualization stack built around XCP-ng, Xen Orchestra, and related tooling, with commercial support and management offerings.
-- [vcluster](https://www.vcluster.com) — Run virtual Kubernetes clusters inside a host cluster (multi-tenancy / isolation).
+- [vCluster](https://www.vcluster.com) — Open-source Kubernetes tenant-cluster software with separate control planes and resource syncing; commercial Platform and tier-gated features have separate licensing.
 - [Ventoy](https://www.ventoy.net/) — Bootable USB tool that launches ISO, WIM, IMG, VHD, and EFI images directly from copied files.
 - [Vercel](https://vercel.com/) — Managed web application platform providing Git-based builds, preview deployments, production hosting, and serverless infrastructure.
 - [VictoriaMetrics MCP server](https://github.com/VictoriaMetrics/mcp-victoriametrics) — Model Context Protocol server that exposes VictoriaMetrics observability operations to compatible AI clients.

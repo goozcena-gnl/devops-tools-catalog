@@ -58,8 +58,9 @@
   - legacy:devopstools_final.md#L1153
   needs_review: true
 - id: camunda
-  name: Camunda
-  summary: Workflow and process automation (BPMN/DMN).
+  name: Camunda 8
+  summary: Commercial process-orchestration platform for BPMN workflows and DMN decisions, offered as
+    SaaS or Self-Managed with separate production licensing.
   official_url: https://camunda.com
   categories:
   - workflow-automation-chatops
@@ -71,22 +72,40 @@
   - developer-experience-engineer
   lifecycle_stages:
   - plan
+  - develop
+  - deploy
   - operate
   use_when:
-  - '* You need BPMN-based process orchestration with long-running workflows and human tasks.'
+  - You need distributed BPMN/DMN process orchestration with service integration and human tasks, and
+    can select SaaS or license Self-Managed production deployment.
   avoid_when:
-  - '* You need lightweight CI/CD or task automation without formal process modeling.'
-  deployment_models: []
-  license_model: open-core
-  maturity: unknown
-  status: needs-review
+  - You require the entire current platform under an OSS licence, assume non-production permission allows
+    production use, or only need lightweight task automation.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L162
   - legacy:devopstools_final.md#L402
-  needs_review: true
+  - https://camunda.com/platform/
+  - https://github.com/camunda/camunda
+  - https://github.com/camunda/camunda/blob/main/licenses/CAMUNDA-LICENSE-1.0.txt
+  - https://docs.camunda.io/docs/
+  - https://docs.camunda.io/docs/reference/licenses/
+  - https://docs.camunda.io/docs/self-managed/setup/overview/
+  - https://camunda.com/blog/2025/02/camunda-7-enterprise-end-of-life-extension/
+  - https://github.com/camunda/camunda/releases
+  needs_review: false
+  repository_url: https://github.com/camunda/camunda
+  documentation_url: https://docs.camunda.io/docs/
+  commercial_offering: true
+  repository_archived: false
 - id: confluence
   name: Confluence
   summary: AI-powered team knowledge base and collaboration workspace by Atlassian.

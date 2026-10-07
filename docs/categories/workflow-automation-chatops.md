@@ -62,24 +62,24 @@ Open-source scheduling and booking platform (Calendly alternative) for teams and
 
 [Official site](https://cal.com) · [Source repository](https://github.com/calcom/cal.com)
 
-### Camunda
+### Camunda 8
 
 **Categories:** Workflow automation and ChatOps<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Workflow and process automation (BPMN/DMN).
+Commercial process-orchestration platform for BPMN workflows and DMN decisions, offered as SaaS or Self-Managed with separate production licensing.
 
 **Use when**
 
-- * You need BPMN-based process orchestration with long-running workflows and human tasks.
+- You need distributed BPMN/DMN process orchestration with service integration and human tasks, and can select SaaS or license Self-Managed production deployment.
 
 **Consider alternatives when**
 
-- * You need lightweight CI/CD or task automation without formal process modeling.
+- You require the entire current platform under an OSS licence, assume non-production permission allows production use, or only need lightweight task automation.
 
-[Official site](https://camunda.com)
+[Official site](https://camunda.com) · [Documentation](https://docs.camunda.io/docs/) · [Source repository](https://github.com/camunda/camunda)
 
 ### Confluence
 

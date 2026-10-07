@@ -3233,13 +3233,15 @@
   needs_review: true
 - id: kubevirt
   name: KubeVirt
-  summary: Run VMs on Kubernetes.
+  summary: Kubernetes virtualization API and runtime for defining and managing virtual-machine workloads
+    alongside containers.
   official_url: https://kubevirt.io
   repository_url: https://github.com/kubevirt/kubevirt
   categories:
   - kubernetes-distributions-operations
+  - virtualization-bare-metal-homelab
   subcategories:
-  - Kubernetes Management & Operations
+  - Kubernetes Virtual Machine Management
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -3248,20 +3250,32 @@
   - deploy
   - operate
   use_when:
-  - You need to run VM-based workloads alongside containers on the same platform.
+  - You need to operate virtual machines and container workloads through Kubernetes APIs on infrastructure
+    with the required virtualization, storage and networking support.
   avoid_when:
-  - All workloads are containerized—VMs add unnecessary complexity.
-  deployment_models: []
+  - You only operate container workloads, or your Kubernetes nodes and operational model cannot support
+    the required virtualization stack.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L60
   - legacy:devopstools_final.md#L515
-  needs_review: true
+  - https://kubevirt.io/
+  - https://github.com/kubevirt/kubevirt
+  - https://github.com/kubevirt/kubevirt/blob/main/LICENSE
+  - https://kubevirt.io/user-guide/
+  - https://www.cncf.io/projects/kubevirt/
+  - https://github.com/kubevirt/kubevirt/releases
+  needs_review: false
+  documentation_url: https://kubevirt.io/user-guide/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: kubey
   name: Kubey
   summary: Self-hosted multi-cluster Kubernetes web UI with cross-cluster comparison, live logs, and team
@@ -4283,8 +4297,9 @@
   - legacy:devopstools_final.md#L672
   needs_review: true
 - id: vcluster
-  name: vcluster
-  summary: Run virtual Kubernetes clusters inside a host cluster (multi-tenancy / isolation).
+  name: vCluster
+  summary: Open-source Kubernetes tenant-cluster software with separate control planes and resource syncing;
+    commercial Platform and tier-gated features have separate licensing.
   official_url: https://www.vcluster.com
   repository_url: https://github.com/loft-sh/vcluster
   categories:
@@ -4299,20 +4314,33 @@
   - deploy
   - operate
   use_when:
-  - You need isolated tenant clusters without provisioning physical infrastructure.
+  - You need tenant Kubernetes APIs, CRDs and RBAC independent of a shared host control plane, and can
+    choose documented OSS or separately licensed Platform capabilities.
   avoid_when:
-  - Namespace-level isolation with RBAC and network policies is sufficient.
-  deployment_models: []
+  - Namespace isolation is sufficient, or you assume the Apache-licensed OSS image includes tier-gated
+    Platform, private-node or enterprise features.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L65
   - legacy:devopstools_final.md#L525
-  needs_review: true
+  - https://github.com/loft-sh/vcluster
+  - https://github.com/loft-sh/vcluster/blob/main/LICENSE
+  - https://www.vcluster.com/docs/vcluster/
+  - https://www.vcluster.com/docs/vcluster/introduction/oss-vs-free
+  - https://www.vcluster.com/docs/platform/understand/licensing
+  - https://github.com/loft-sh/vcluster/releases
+  needs_review: false
+  documentation_url: https://www.vcluster.com/docs/vcluster/
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  repository_archived: false
 - id: webernetes
   name: webernetes
   summary: Run Kubernetes entirely in the browser for learning and experimentation.

@@ -129,7 +129,7 @@
 - [Tracetest](https://tracetest.io) — Trace-based testing for distributed systems.
 - [Trippy](https://trippy.rs/) — Cross-platform network diagnostic TUI that combines traceroute and ping with live hop statistics.
 - [TShark](https://www.wireshark.org/docs/man-pages/tshark.html) — Command-line network protocol analyzer from the Wireshark project for live captures and saved trace files.
-- [Uptime Kuma](https://uptime.kuma.pet) — Self-hosted uptime monitoring.
+- [Uptime Kuma](https://uptime.kuma.pet) — Self-hosted uptime-monitoring application with service checks, notifications and public status pages.
 - [UptimeRobot](https://uptimerobot.com) — Uptime monitoring service.
 - [Uptrace](https://uptrace.dev/) — OpenTelemetry-native APM platform for storing and correlating traces, metrics, and logs.
 - [Vector](https://vector.dev) — High-performance observability data pipeline (logs/metrics/traces) as an alternative to Fluent Bit/Fluentd.

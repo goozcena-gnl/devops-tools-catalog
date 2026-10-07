@@ -257,19 +257,19 @@ Network graphing solution (RRDTool-based).
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Container Advisor daemon that collects, aggregates, and exports container resource usage and performance data.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need per-container and host resource/performance metrics from a cAdvisor daemon, including export to a separate monitoring backend.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a complete alerting, tracing and long-term observability platform, or cannot provide the documented host/runtime visibility needed to collect metrics.
 
-[Source repository](https://github.com/google/cadvisor)
+[Official site](https://github.com/google/cadvisor) · [Documentation](https://github.com/google/cadvisor/tree/master/docs) · [Source repository](https://github.com/google/cadvisor)
 
 ### cardamon
 
@@ -1798,19 +1798,19 @@ Trace-based testing for distributed systems.
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Self-hosted uptime monitoring.
+Self-hosted uptime-monitoring application with service checks, notifications and public status pages.
 
 **Use when**
 
-- Simple, self-hosted uptime/status-page monitoring.
+- You need self-hosted service uptime checks, notifications and status pages using documented HTTP, TCP, DNS, ping or other supported monitors.
 
 **Consider alternatives when**
 
-- You need full infrastructure observability beyond HTTP/TCP checks.
+- You need comprehensive metrics, logs and distributed tracing, or a first-party managed monitoring service rather than operating the application yourself.
 
-[Official site](https://uptime.kuma.pet) · [Source repository](https://github.com/louislam/uptime-kuma)
+[Official site](https://uptime.kuma.pet) · [Documentation](https://github.com/louislam/uptime-kuma/wiki) · [Source repository](https://github.com/louislam/uptime-kuma)
 
 ### UptimeRobot
 

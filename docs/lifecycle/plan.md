@@ -15,7 +15,7 @@
 - [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
 - [Bitbucket](https://www.atlassian.com/software/bitbucket) — Atlassian's commercial Git repository-hosting product family, covering Bitbucket Cloud and the self-managed Bitbucket Data Center offering.
 - [Cal.com](https://cal.com) — Open-source scheduling and booking platform (Calendly alternative) for teams and individuals.
-- [Camunda](https://camunda.com) — Workflow and process automation (BPMN/DMN).
+- [Camunda 8](https://camunda.com) — Commercial process-orchestration platform for BPMN workflows and DMN decisions, offered as SaaS or Self-Managed with separate production licensing.
 - [cdk8s](https://cdk8s.io) — Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python, Java or Go; deployment is performed by separate tools.
 - [CloudCustodian](https://cloudcustodian.io) — Cloud governance rules engine.
 - [Codeberg](https://codeberg.org/) — Non-profit hosted software forge built on Forgejo for free and open-source projects.
@@ -43,8 +43,8 @@
 - [Numaflow](https://numaflow.numaproj.io) — Kubernetes-native data/stream processing platform.
 - [Oh My Git!](https://ohmygit.org) — Git learning game.
 - [OpenTaco](https://opentaco.dev) — Terraform/OpenTofu CI orchestration and pull-request automation.
-- [OpenTofu](https://opentofu.org) — Open-source Terraform fork.
-- [Packer](https://www.packer.io) — Machine image creation.
+- [OpenTofu](https://opentofu.org) — Community-governed infrastructure-as-code CLI for declaratively provisioning and managing cloud and on-premises resources.
+- [Packer](https://www.packer.io) — HashiCorp machine-image build CLI that creates reproducible images for multiple platforms from one configuration, with separately licensed plugins and HCP image metadata services.
 - [Plane](https://plane.so) — Open-source project management tool.
 - [Pluralith](https://www.pluralith.com) — Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
 - [Pulumi](https://www.pulumi.com) — IaC using real programming languages.

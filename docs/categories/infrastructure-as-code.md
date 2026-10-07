@@ -391,38 +391,38 @@ Terraform/OpenTofu CI orchestration and pull-request automation.
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open-source Terraform fork.
+Community-governed infrastructure-as-code CLI for declaratively provisioning and managing cloud and on-premises resources.
 
 **Use when**
 
-- You want Terraform-compatible IaC under a truly open-source license.
+- You need community-governed, MPL-licensed infrastructure as code and can validate existing Terraform configurations, providers and state using the documented migration process.
 
 **Consider alternatives when**
 
-- You rely on HashiCorp enterprise support or features exclusive to Terraform.
+- You require Terraform-specific commercial features or support, or cannot test configuration and state compatibility before migration.
 
-[Official site](https://opentofu.org) · [Source repository](https://github.com/opentofu/opentofu)
+[Official site](https://opentofu.org) · [Documentation](https://opentofu.org/docs/) · [Source repository](https://github.com/opentofu/opentofu)
 
 ### Packer
 
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Source Available<br>
-**Status:** Needs Review
+**Status:** Active
 
-Machine image creation.
+HashiCorp machine-image build CLI that creates reproducible images for multiple platforms from one configuration, with separately licensed plugins and HCP image metadata services.
 
 **Use when**
 
-- You need reproducible, versioned machine images (AMIs, VM images).
+- You need repeatable machine-image builds across cloud or virtualization platforms and can comply with the current Business Source License and each plugin licence.
 
 **Consider alternatives when**
 
-- You use immutable containers and don't need VM-level images.
+- You require an OSI-approved licence for current Packer source, or plan a competitive hosted or embedded offering outside the Additional Use Grant.
 
-[Official site](https://www.packer.io) · [Source repository](https://github.com/hashicorp/packer)
+[Official site](https://www.packer.io) · [Documentation](https://developer.hashicorp.com/packer/docs) · [Source repository](https://github.com/hashicorp/packer)
 
 ### Pluralith
 

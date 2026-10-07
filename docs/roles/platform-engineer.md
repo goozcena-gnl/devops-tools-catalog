@@ -70,8 +70,8 @@
 | [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | active |
 | [Brainboard](https://www.brainboard.co) | Emerging and experimental tools | unknown | needs-review |
 | [Braintrust](https://www.braintrust.dev) | Emerging and experimental tools | open-core | needs-review |
-| [Buildah](https://buildah.io) | Containers and image tooling | oss | needs-review |
-| [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | needs-review |
+| [Buildah](https://buildah.io) | Containers and image tooling | oss | active |
+| [BuildKit](https://docs.docker.com/build/buildkit) | Containers and image tooling | oss | active |
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | commercial | active |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
@@ -383,7 +383,7 @@
 | [KubeVela](https://kubevela.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KubeView](https://github.com/benc-uk/kubeview) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubevious](https://kubevious.io) | Kubernetes distributions and operations | oss | needs-review |
-| [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations | oss | needs-review |
+| [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations, Virtualization, bare metal and homelab | oss | active |
 | [Kubex](https://kubex.ai/) | FinOps and sustainability | commercial | active |
 | [Kubey](https://kubey.app) | Kubernetes distributions and operations | oss | needs-review |
 | [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | active |
@@ -469,14 +469,14 @@
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
 | [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
-| [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
+| [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | active |
 | [OperatorHub.io](https://operatorhub.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [OpsLevel](https://www.opslevel.com) | Platform engineering and internal developer platforms | commercial | active |
 | [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | commercial | active |
 | [Oracle Kubernetes Engine](https://www.oracle.com/cloud/cloud-native/kubernetes-engine/) | Kubernetes distributions and operations | commercial | active |
 | [Orbit](https://gitlab.com/RMJx1/orbit) | Kubernetes distributions and operations | oss | needs-review |
 | [OVN-Kubernetes](https://ovn-kubernetes.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Packer](https://www.packer.io) | Infrastructure as Code | source-available | needs-review |
+| [Packer](https://www.packer.io) | Infrastructure as Code | source-available | active |
 | [Paperless-ngx](https://docs.paperless-ngx.com) | Emerging and experimental tools | oss | needs-review |
 | [Papra](https://github.com/papra-hq/papra) | Emerging and experimental tools | oss | needs-review |
 | [peerd](https://peerd.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
@@ -590,7 +590,7 @@
 | [UrBackup](https://www.urbackup.org) | Emerging and experimental tools | oss | needs-review |
 | [Valkey](https://valkey.io) | Emerging and experimental tools | oss | needs-review |
 | [Valkey Operator](https://github.com/valkey-io/valkey-operator) | Kubernetes networking, storage and add-ons | oss | active |
-| [vcluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | needs-review |
+| [vCluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | active |
 | [VegaCloud Inform](https://www.vegacloud.io/products/inform) | FinOps and sustainability | unknown | needs-review |
 | [Vercel](https://vercel.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion, Serverless, edge and WebAssembly | commercial | active |
 | [VictoriaMetrics MCP server](https://github.com/VictoriaMetrics/mcp-victoriametrics) | MLOps, LLMOps and AI infrastructure | oss | active |
