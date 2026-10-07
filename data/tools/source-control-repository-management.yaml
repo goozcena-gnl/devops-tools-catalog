@@ -285,9 +285,10 @@
   needs_review: false
 - id: gitlab
   name: GitLab
-  summary: Git repository management with CI/CD.
+  summary: GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed
+    deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
   official_url: https://about.gitlab.com
-  repository_url: https://github.com/gitlabhq/gitlabhq
+  repository_url: https://gitlab.com/gitlab-org/gitlab
   categories:
   - source-control-repository-management
   subcategories:
@@ -299,21 +300,42 @@
   lifecycle_stages:
   - plan
   - develop
+  - build
+  - test
+  - release
+  - deploy
+  - secure
   use_when:
-  - You want an all-in-one DevOps platform (SCM + CI/CD + registry + planning).
+  - You want integrated repositories, planning and CI/CD, and can select a deployment offering and Free,
+    Premium or Ultimate feature tier under its applicable terms.
   avoid_when:
-  - Your team only needs simple repo hosting — the complexity overhead may not be justified.
-  deployment_models: []
+  - You require one OSS licence for every parent-product feature, assume Free means CE packaging, or cannot
+    operate and upgrade a Self-Managed instance within the maintenance policy.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
   license_model: open-core
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:1_Foundational-Skills/README.md#L8
   - legacy:devopstools_final.md#L86
-  needs_review: true
+  - https://github.com/gitlabhq/gitlabhq
+  - https://gitlab.com/gitlab-org/gitlab
+  - https://gitlab.com/gitlab-org/gitlab/-/raw/master/LICENSE
+  - https://gitlab.com/gitlab-org/gitlab/-/raw/master/ee/LICENSE
+  - https://docs.gitlab.com/development/licensing/
+  - https://docs.gitlab.com/
+  - https://docs.gitlab.com/subscriptions/choosing_subscription/
+  - https://docs.gitlab.com/install/package/
+  - https://docs.gitlab.com/policy/maintenance/
+  - https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab
+  needs_review: false
+  documentation_url: https://docs.gitlab.com/
+  commercial_offering: true
 - id: gitlab-university
   name: GitLab University
   summary: Training resources for GitLab, CI/CD, and DevOps practices.

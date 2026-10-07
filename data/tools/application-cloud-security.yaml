@@ -2623,6 +2623,55 @@
   - legacy:6_Security/README.md#L31
   - legacy:devopstools_final.md#L876
   needs_review: true
+- id: kube-bench
+  name: kube-bench
+  summary: Aqua Security tool that checks Kubernetes node configuration against selected CIS benchmark
+    profiles; it implements checks and does not define the CIS standard or certify full compliance.
+  official_url: https://github.com/aquasecurity/kube-bench
+  repository_url: https://github.com/aquasecurity/kube-bench
+  categories:
+  - application-cloud-security
+  - kubernetes-distributions-operations
+  subcategories:
+  - Kubernetes benchmark auditing
+  roles:
+  - platform-engineer
+  - site-reliability-engineer
+  - kubernetes-engineer
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  - secure
+  use_when:
+  - You need configuration checks on accessible Kubernetes nodes using a benchmark matched to the platform/version,
+    including supported managed-cluster worker-node profiles.
+  avoid_when:
+  - You require full CIS certification, audit access to an inaccessible provider-managed control plane,
+    or a benchmark/profile not supported for your platform and Kubernetes version.
+  deployment_models:
+  - local
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-07'
+  sources:
+  - legacy:4_Kubernetes-Containers/README.md#L36
+  - legacy:devopstools_final.md#L483
+  - https://github.com/aquasecurity/kube-bench
+  - https://github.com/aquasecurity/kube-bench/blob/main/LICENSE
+  - https://github.com/aquasecurity/kube-bench/tree/main/docs
+  - https://github.com/aquasecurity/kube-bench/blob/main/docs/platforms.md
+  - https://www.cisecurity.org/benchmark/kubernetes
+  - https://github.com/aquasecurity/kube-bench/releases
+  - https://aquasecurity.github.io/kube-bench
+  needs_review: false
+  documentation_url: https://github.com/aquasecurity/kube-bench/tree/main/docs
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: kubearmor
   name: KubeArmor
   summary: Runtime security enforcement system for applying workload policies through Linux Security Modules.

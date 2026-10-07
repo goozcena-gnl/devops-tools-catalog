@@ -211,7 +211,7 @@
 | [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | needs-review |
 | [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) | Kubernetes distributions and operations | oss | active |
-| [kube-bench](https://aquasecurity.github.io/kube-bench) | Kubernetes distributions and operations | oss | needs-review |
+| [kube-bench](https://github.com/aquasecurity/kube-bench) | Application and cloud security, Kubernetes distributions and operations | oss | active |
 | [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kube-dump](https://kube-dump.woozymasta.ru) | Backup, disaster recovery and resilience | oss | needs-review |
 | [kube-hunter](https://aquasecurity.github.io/kube-hunter) | Kubernetes distributions and operations | oss | needs-review |
@@ -306,7 +306,7 @@
 | [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nocalhost](https://nocalhost.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) | Monitoring, metrics, logs and tracing | oss | active |
-| [Nomad](https://www.nomadproject.io) | Kubernetes distributions and operations | source-available | needs-review |
+| [Nomad](https://www.nomadproject.io) | Kubernetes distributions and operations | source-available | active |
 | [ntfy](https://ntfy.sh) | SRE, incident response and on-call | oss | needs-review |
 | [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | needs-review |
 | [OCCT](https://www.ocbase.com) | Chaos and performance engineering | unknown | needs-review |
@@ -344,15 +344,15 @@
 | [Pumba](https://github.com/alexei-led/pumba) | Chaos and performance engineering | oss | needs-review |
 | [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Rancher](https://rancher.com) | Kubernetes distributions and operations | open-core | needs-review |
 | [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | needs-review |
+| [Rancher Manager](https://rancher.com) | Kubernetes distributions and operations | oss | active |
 | [Rclone](https://rclone.org/) | Backup, disaster recovery and resilience | oss | active |
 | [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | commercial | active |
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [restic](https://restic.net/) | Backup, disaster recovery and resilience | oss | active |
-| [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | needs-review |
+| [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | active |
 | [Robusta](https://home.robusta.dev) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | needs-review |

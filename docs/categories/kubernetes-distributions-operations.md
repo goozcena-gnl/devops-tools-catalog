@@ -1224,22 +1224,22 @@ Open-source real-time Kubernetes operations dashboard with cluster state, drain,
 
 ### kube-bench
 
-**Categories:** Kubernetes distributions and operations<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Categories:** Application and cloud security, Kubernetes distributions and operations<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-CIS Kubernetes benchmark tool.
+Aqua Security tool that checks Kubernetes node configuration against selected CIS benchmark profiles; it implements checks and does not define the CIS standard or certify full compliance.
 
 **Use when**
 
-- You need to audit cluster nodes against CIS benchmarks for compliance.
+- You need configuration checks on accessible Kubernetes nodes using a benchmark matched to the platform/version, including supported managed-cluster worker-node profiles.
 
 **Consider alternatives when**
 
-- Running managed Kubernetes where the provider handles control-plane hardening.
+- You require full CIS certification, audit access to an inaccessible provider-managed control plane, or a benchmark/profile not supported for your platform and Kubernetes version.
 
-[Official site](https://aquasecurity.github.io/kube-bench) · [Source repository](https://github.com/aquasecurity/kube-bench)
+[Official site](https://github.com/aquasecurity/kube-bench) · [Documentation](https://github.com/aquasecurity/kube-bench/tree/main/docs) · [Source repository](https://github.com/aquasecurity/kube-bench)
 
 ### kube-hunter
 
@@ -2352,19 +2352,19 @@ Local Kubernetes development environment.
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Source Available<br>
-**Status:** Needs Review
+**Status:** Active
 
-HashiCorp scheduler.
+HashiCorp workload orchestrator for containerized and non-containerized jobs; Community Edition is source-available and Enterprise features and support require separate entitlements.
 
 **Use when**
 
-- You need a simpler orchestrator that handles containers, VMs, and binaries without Kubernetes complexity.
+- You need a self-hosted scheduler for mixed workload types, can satisfy CE BUSL conditions and plan upgrades within the current CE backport lifecycle.
 
 **Consider alternatives when**
 
-- You need the Kubernetes ecosystem, CRDs, or operator model.
+- You require an OSI-approved current source licence, Kubernetes APIs, or Enterprise features and extended support without Enterprise entitlements.
 
-[Official site](https://www.nomadproject.io) · [Source repository](https://github.com/hashicorp/nomad)
+[Official site](https://www.nomadproject.io) · [Documentation](https://developer.hashicorp.com/nomad/docs) · [Source repository](https://github.com/hashicorp/nomad)
 
 ### OKD
 
@@ -2556,25 +2556,6 @@ Kubernetes inspection interface with resource topology, events, GitOps informati
 
 [Official site](https://radarhq.io/) · [Documentation](https://github.com/skyhook-io/radar/blob/main/README.md) · [Source repository](https://github.com/skyhook-io/radar)
 
-### Rancher
-
-**Categories:** Kubernetes distributions and operations<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review
-
-Kubernetes management platform by SUSE.
-
-**Use when**
-
-- You need multi-cluster management with a unified UI, RBAC, and catalog across on-prem and cloud.
-
-**Consider alternatives when**
-
-- You manage a single cluster or already use Cluster API/ArgoCD for fleet management.
-
-[Official site](https://rancher.com)
-
 ### Rancher k3k
 
 **Categories:** Kubernetes distributions and operations<br>
@@ -2593,6 +2574,25 @@ Run and manage k3s clusters via Kubernetes (see docs).
 - Vcluster or Kamaji already handles your virtual cluster needs.
 
 [Official site](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) · [Source repository](https://github.com/rancher/k3k)
+
+### Rancher Manager
+
+**Categories:** Kubernetes distributions and operations<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Model:** Oss<br>
+**Status:** Active
+
+SUSE Rancher open-source Kubernetes cluster management platform for provisioning, importing and governing clusters; Rancher Prime adds commercial support and distribution services.
+
+**Use when**
+
+- You need a self-hosted central management plane for Kubernetes clusters across distributions and environments, with optional Rancher Prime support.
+
+**Consider alternatives when**
+
+- You only need a Kubernetes distribution without a management plane, or expect Prime support, trusted registry access or separately licensed add-ons from the OSS licence alone.
+
+[Official site](https://rancher.com) · [Documentation](https://ranchermanager.docs.rancher.com/) · [Source repository](https://github.com/rancher/rancher)
 
 ### Red Hat OpenShift
 
@@ -2618,19 +2618,19 @@ Commercial Red Hat application-platform family with self-managed editions and ma
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Rancher Kubernetes Engine 2 (hardened Kubernetes).
+SUSE Rancher Kubernetes Engine 2, an Apache-licensed Kubernetes distribution focused on security and compliance, with documented CIS hardening and FIPS component boundaries.
 
 **Use when**
 
-- You need a FIPS-compliant, CIS-hardened Kubernetes distro for regulated environments.
+- You need a self-hosted Kubernetes distribution with security-focused defaults and can apply the version-appropriate CIS hardening guide and validate FIPS component choices for your environment.
 
 **Consider alternatives when**
 
-- A lightweight distro or managed service meets your compliance needs.
+- You require a managed Kubernetes control plane or assume installing RKE2 alone certifies compliance or grants Rancher Prime support entitlements.
 
-[Official site](https://docs.rke2.io) · [Source repository](https://github.com/rancher/rke2)
+[Official site](https://docs.rke2.io) · [Documentation](https://docs.rke2.io) · [Source repository](https://github.com/rancher/rke2)
 
 ### Rūsternetes
 

@@ -184,6 +184,7 @@
 - [git-sync](https://github.com/kubernetes/git-sync) — Sidecar app that clones a Git repository and keeps it synchronized with upstream.
 - [GitHub Copilot](https://github.com/features/copilot) — AI-powered code completion assistant.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server) — GitHub's MCP server implementation.
+- [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 - [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab MCP server documentation.
 - [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) — GitOps bridge for Kubernetes deployments.
 - [Goldilocks](https://goldilocks.docs.fairwinds.com/) — Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
@@ -201,6 +202,7 @@
 - [Harvester Seeder](https://github.com/harvester/seeder) — Kubernetes-based automation for installing Harvester onto bare-metal machines.
 - [HashiCorp Consul](https://developer.hashicorp.com/consul) — Service networking and discovery platform.
 - [Haystack](https://haystack.deepset.ai) — Framework for building LLM-powered apps and search systems.
+- [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) — HashiCorp-hosted infrastructure-as-code service for collaborative Terraform runs, state, access control and policy; Terraform Enterprise is the separate self-hosted offering.
 - [Headlamp](https://headlamp.dev/) — Maintained Kubernetes SIG UI project providing an extensible web and desktop interface for managing multiple Kubernetes clusters.
 - [Headlamp Plugins](https://github.com/headlamp-k8s/plugins) — Official plugin collection for the Headlamp Kubernetes UI.
 - [Headroom](https://headroomlabs-ai.github.io/headroom) — Context optimization layer that compresses tool outputs, logs, files, and RAG chunks before they reach the LLM.
@@ -298,7 +300,6 @@
 - [kubara](https://kubara.io/) — Open-source GitOps-first CLI for packaging, generating, and bootstrapping reusable Kubernetes platform architectures.
 - [Kube Copilot](https://github.com/feiskyer/kube-copilot) — AI assistant for Kubernetes operations.
 - [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
-- [kube-bench](https://aquasecurity.github.io/kube-bench) — CIS Kubernetes benchmark tool.
 - [kube-hunter](https://aquasecurity.github.io/kube-hunter) — Kubernetes security testing tool.
 - [Kube-OVN](https://www.kube-ovn.io) — CloudNative Network for KubeVirt and Multi-Tenancy.
 - [kube-score](https://kube-score.com) — Static analysis tool for Kubernetes YAML manifests with best-practice recommendations.
@@ -417,7 +418,7 @@
 - [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) — F5-maintained Kubernetes ingress controller that runs with NGINX Open Source or subscription-licensed NGINX Plus.
 - [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) — NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
 - [Nocalhost](https://nocalhost.dev) — Cloud-native app development tool.
-- [Nomad](https://www.nomadproject.io) — HashiCorp scheduler.
+- [Nomad](https://www.nomadproject.io) — HashiCorp workload orchestrator for containerized and non-containerized jobs; Community Edition is source-available and Enterprise features and support require separate entitlements.
 - [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) — NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
 - [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) — NVIDIA AI cloud environment, currently described as an internal proving ground, with separately documented Run:ai on DGX Cloud managed subscriptions.
 - [Ocelot](https://ocelot.readthedocs.io/en/latest/) — API gateway middleware for .NET services with routing and request aggregation.
@@ -485,9 +486,9 @@
 - [RabbitMQ](https://www.rabbitmq.com) — Open-source message broker and streaming platform for reliable asynchronous communication.
 - [Railway](https://railway.com/) — Managed application platform for building, deploying, networking, scaling, and observing services from source repositories or containers.
 - [Rakazo](https://rakazo.com/) — Self-hosted agent workspace with sandboxed browser and shell sessions, routines, approvals, and audit history.
-- [Rancher](https://rancher.com) — Kubernetes management platform by SUSE.
 - [Rancher Desktop](https://rancherdesktop.io) — Desktop Kubernetes and container management.
 - [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) — Run and manage k3s clusters via Kubernetes (see docs).
+- [Rancher Manager](https://rancher.com) — SUSE Rancher open-source Kubernetes cluster management platform for provisioning, importing and governing clusters; Rancher Prime adds commercial support and distribution services.
 - [Ray](https://www.ray.io/) — Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
 - [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) — Enterprise automation platform built around Ansible.
 - [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) — Commercial Red Hat application-platform family with self-managed editions and managed cloud services; OKD is a separate upstream community distribution.
@@ -495,10 +496,9 @@
 - [Redis Operator](https://redis-operator.opstree.dev) — Kubernetes operator for provisioning and managing Redis clusters.
 - [Reloader](https://docs.stakater.com/reloader/latest) — Kubernetes controller that watches ConfigMap/Secret changes and triggers rolling upgrades.
 - [Remmina](https://remmina.org) — Remote desktop client.
-- [Renovate](https://www.mend.io/renovate) — Automated dependency updates.
 - [reShapr](https://reshapr.io) — No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MCP endpoints with security controls and flexible deployment (Apache-2.0).
 - [restart-operator](https://github.com/archsyscall/restart-operator) — Kubernetes operator for scheduling recurring restarts of Deployments, StatefulSets, and DaemonSets with cron expressions.
-- [RKE2](https://docs.rke2.io) — Rancher Kubernetes Engine 2 (hardened Kubernetes).
+- [RKE2](https://docs.rke2.io) — SUSE Rancher Kubernetes Engine 2, an Apache-licensed Kubernetes distribution focused on security and compliance, with documented CIS hardening and FIPS component boundaries.
 - [Rook](https://rook.io) — Storage orchestrator for Kubernetes.
 - [RootlessKit](https://github.com/rootless-containers/rootlesskit) — Rootless container toolkit.
 - [Rudder](https://www.rudder.io) — Continuous configuration and automation platform.
@@ -521,6 +521,7 @@
 - [Seesaw](https://github.com/google/seesaw) — Linux Virtual Server-based load-balancing platform with redundant nodes and network configuration.
 - [Sim](https://www.sim.ai) — AI workspace for building, deploying, and monitoring agentic workflows.
 - [sk8r](https://github.com/mvklingeren/sk8r) — Kubernetes dashboard.
+- [Skaffold](https://skaffold.dev) — Client-side container-development CLI for build, test, push, deploy and debug loops with Kubernetes and other supported targets; upstream plans repository archival on 29 January 2027.
 - [Skupper](https://skupper.io/) — Application-networking platform that securely connects services across Kubernetes clusters and local systems.
 - [Spacelift Deploy](https://spacelift.io) — Commercial infrastructure-as-code orchestration control plane with worker pools and Open Policy Agent governance, available as SaaS or self-hosted Spacelift.
 - [Spin](https://spinframework.dev) — Framework for building and running serverless WebAssembly applications.
@@ -538,8 +539,7 @@
 - [Technitium DNS Server](https://technitium.com/dns/) — Self-hosted authoritative and recursive DNS server with an administrative web interface and blocking capabilities.
 - [Tekton](https://tekton.dev) — Kubernetes-native CI/CD framework and ecosystem built around Tekton Pipelines, with complementary triggers, tooling and supply-chain components.
 - [Telepresence](https://www.telepresence.io) — Local dev against remote Kubernetes.
-- [Terraform](https://www.terraform.io) — Infrastructure provisioning tool.
-- [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) — Managed service for Terraform workflows and state management.
+- [Terraform Community Edition](https://www.terraform.io) — HashiCorp infrastructure-as-code CLI for provisioning and managing infrastructure and state, with separately licensed providers; HCP Terraform and Terraform Enterprise are distinct offerings.
 - [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) — MCP server for Terraform automation and infrastructure-as-code workflows.
 - [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge for cost savings.
 - [terraform-docs](https://terraform-docs.io) — Generate documentation from Terraform modules in various output formats.

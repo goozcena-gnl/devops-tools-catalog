@@ -1848,37 +1848,6 @@
   - https://github.com/manishchaudhary101/kube-argus
   - https://github.com/manishchaudhary101/kube-argus/blob/main/LICENSE
   needs_review: false
-- id: kube-bench
-  name: kube-bench
-  summary: CIS Kubernetes benchmark tool.
-  official_url: https://aquasecurity.github.io/kube-bench
-  repository_url: https://github.com/aquasecurity/kube-bench
-  categories:
-  - kubernetes-distributions-operations
-  subcategories:
-  - Kubernetes Management & Operations
-  roles:
-  - platform-engineer
-  - site-reliability-engineer
-  - kubernetes-engineer
-  lifecycle_stages:
-  - deploy
-  - operate
-  use_when:
-  - You need to audit cluster nodes against CIS benchmarks for compliance.
-  avoid_when:
-  - Running managed Kubernetes where the provider handles control-plane hardening.
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:4_Kubernetes-Containers/README.md#L36
-  - legacy:devopstools_final.md#L483
-  needs_review: true
 - id: kube-hunter
   name: kube-hunter
   summary: Kubernetes security testing tool.
@@ -3537,13 +3506,14 @@
   needs_review: false
 - id: nomad
   name: Nomad
-  summary: HashiCorp scheduler.
+  summary: HashiCorp workload orchestrator for containerized and non-containerized jobs; Community Edition
+    is source-available and Enterprise features and support require separate entitlements.
   official_url: https://www.nomadproject.io
   repository_url: https://github.com/hashicorp/nomad
   categories:
   - kubernetes-distributions-operations
   subcategories:
-  - Kubernetes Alternatives & Platforms
+  - Workload orchestration
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -3552,20 +3522,34 @@
   - deploy
   - operate
   use_when:
-  - You need a simpler orchestrator that handles containers, VMs, and binaries without Kubernetes complexity.
+  - You need a self-hosted scheduler for mixed workload types, can satisfy CE BUSL conditions and plan
+    upgrades within the current CE backport lifecycle.
   avoid_when:
-  - You need the Kubernetes ecosystem, CRDs, or operator model.
-  deployment_models: []
+  - You require an OSI-approved current source licence, Kubernetes APIs, or Enterprise features and extended
+    support without Enterprise entitlements.
+  deployment_models:
+  - self-hosted
   license_model: source-available
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L164
   - legacy:devopstools_final.md#L666
-  needs_review: true
+  - https://github.com/hashicorp/nomad
+  - https://github.com/hashicorp/nomad/blob/main/LICENSE
+  - https://github.com/hashicorp/nomad/blob/v1.6.3/LICENSE
+  - https://developer.hashicorp.com/nomad/docs
+  - https://developer.hashicorp.com/nomad/docs/ce-license-support
+  - https://developer.hashicorp.com/nomad/commands/license/inspect
+  - https://github.com/hashicorp/nomad/releases
+  needs_review: false
+  documentation_url: https://developer.hashicorp.com/nomad/docs
+  license_spdx: BUSL-1.1
+  commercial_offering: true
+  repository_archived: false
 - id: okd
   name: OKD
   summary: Community Kubernetes distribution upstream of OpenShift.
@@ -3847,13 +3831,14 @@
   verified_on: '2026-09-08'
   needs_review: false
 - id: rancher
-  name: Rancher
-  summary: Kubernetes management platform by SUSE.
+  name: Rancher Manager
+  summary: SUSE Rancher open-source Kubernetes cluster management platform for provisioning, importing
+    and governing clusters; Rancher Prime adds commercial support and distribution services.
   official_url: https://rancher.com
   categories:
   - kubernetes-distributions-operations
   subcategories:
-  - Kubernetes Alternatives & Platforms
+  - Kubernetes cluster management
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -3862,20 +3847,33 @@
   - deploy
   - operate
   use_when:
-  - You need multi-cluster management with a unified UI, RBAC, and catalog across on-prem and cloud.
+  - You need a self-hosted central management plane for Kubernetes clusters across distributions and environments,
+    with optional Rancher Prime support.
   avoid_when:
-  - You manage a single cluster or already use Cluster API/ArgoCD for fleet management.
-  deployment_models: []
-  license_model: open-core
-  maturity: unknown
-  status: needs-review
+  - You only need a Kubernetes distribution without a management plane, or expect Prime support, trusted
+    registry access or separately licensed add-ons from the OSS licence alone.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L166
   - legacy:devopstools_final.md#L668
-  needs_review: true
+  - https://github.com/rancher/rancher
+  - https://github.com/rancher/rancher/blob/main/LICENSE
+  - https://ranchermanager.docs.rancher.com/
+  - https://ranchermanager.docs.rancher.com/getting-started/quick-start-guides/deploy-rancher-manager/prime
+  - https://github.com/rancher/rancher/releases
+  needs_review: false
+  repository_url: https://github.com/rancher/rancher
+  documentation_url: https://ranchermanager.docs.rancher.com/
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  repository_archived: false
 - id: rancher-k3k
   name: Rancher k3k
   summary: Run and manage k3s clusters via Kubernetes (see docs).
@@ -3950,13 +3948,14 @@
   needs_review: false
 - id: rke2
   name: RKE2
-  summary: Rancher Kubernetes Engine 2 (hardened Kubernetes).
+  summary: SUSE Rancher Kubernetes Engine 2, an Apache-licensed Kubernetes distribution focused on security
+    and compliance, with documented CIS hardening and FIPS component boundaries.
   official_url: https://docs.rke2.io
   repository_url: https://github.com/rancher/rke2
   categories:
   - kubernetes-distributions-operations
   subcategories:
-  - Kubernetes Core Concepts
+  - Kubernetes distributions
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -3964,21 +3963,36 @@
   lifecycle_stages:
   - deploy
   - operate
+  - secure
   use_when:
-  - You need a FIPS-compliant, CIS-hardened Kubernetes distro for regulated environments.
+  - You need a self-hosted Kubernetes distribution with security-focused defaults and can apply the version-appropriate
+    CIS hardening guide and validate FIPS component choices for your environment.
   avoid_when:
-  - A lightweight distro or managed service meets your compliance needs.
-  deployment_models: []
+  - You require a managed Kubernetes control plane or assume installing RKE2 alone certifies compliance
+    or grants Rancher Prime support entitlements.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L15
   - legacy:devopstools_final.md#L444
-  needs_review: true
+  - https://github.com/rancher/rke2
+  - https://github.com/rancher/rke2/blob/master/LICENSE
+  - https://docs.rke2.io
+  - https://docs.rke2.io/security/hardening_guide
+  - https://docs.rke2.io/security/fips_support
+  - https://ranchermanager.docs.rancher.com/getting-started/quick-start-guides/deploy-rancher-manager/prime
+  - https://github.com/rancher/rke2/releases
+  needs_review: false
+  documentation_url: https://docs.rke2.io
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  repository_archived: false
 - id: rothgar-k
   name: k (rothgar)
   summary: Experimental kubectl wrapper adding context, cluster, and namespace shorthand.

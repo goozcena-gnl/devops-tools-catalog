@@ -85,7 +85,7 @@
 | [Barbara](https://www.barbara.tech) | Emerging and experimental tools | unknown | needs-review |
 | [Bash](https://www.gnu.org/software/bash) | Foundations, Linux and scripting | oss | needs-review |
 | [Bat](https://github.com/sharkdp/bat) | Foundations, Linux and scripting | oss | needs-review |
-| [Bazel](https://bazel.build) | Containers and image tooling | oss | needs-review |
+| [Bazel](https://bazel.build) | CI, build and testing | oss | active |
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
 | [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Bitbucket](https://www.atlassian.com/software/bitbucket) | Source control and repository management | commercial | active |
@@ -268,7 +268,7 @@
 | [GitHub Actions](https://github.com/features/actions) | CI, build and testing | unknown | needs-review |
 | [GitHub CLI](https://cli.github.com) | Source control and repository management, Developer experience and local environments | oss | active |
 | [GitHub Codespaces](https://github.com/features/codespaces) | Developer experience and local environments | unknown | needs-review |
-| [GitLab](https://about.gitlab.com) | Source control and repository management | open-core | needs-review |
+| [GitLab](https://about.gitlab.com) | Source control and repository management | open-core | active |
 | [GitLab CI](https://docs.gitlab.com/ee/ci) | CI, build and testing | open-core | needs-review |
 | [GitLab University](https://university.gitlab.com) | Source control and repository management | documentation | needs-review |
 | [gitmoji](https://gitmoji.dev) | CI, build and testing | documentation | needs-review |
@@ -307,6 +307,7 @@
 | [Harness](https://harness.io) | CI, build and testing | commercial | active |
 | [HashiCorp Vagrant](https://www.vagrantup.com) | Developer experience and local environments | source-available | needs-review |
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
+| [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | commercial | active |
 | [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | commercial | active |
 | [HolmesGPT](https://holmesgpt.dev/latest) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Homarr](https://homarr.dev/) | Virtualization, bare metal and homelab | oss | active |
@@ -546,7 +547,7 @@
 | [Reference (cheatsheets.zip)](https://cheatsheets.zip) | Documentation, learning and career resources | documentation | needs-review |
 | [rekor (sigstore)](https://github.com/sigstore/rekor) | Emerging and experimental tools | oss | needs-review |
 | [Remmina](https://remmina.org) | Virtualization, bare metal and homelab | oss | needs-review |
-| [Renovate](https://www.mend.io/renovate) | CD, GitOps, release and promotion | oss | needs-review |
+| [Renovate](https://www.mend.io/renovate) | Developer experience and local environments, Software supply-chain security | oss | active |
 | [Review Flow](https://dgouron.github.io/review-flow) | CI, build and testing | oss | needs-review |
 | [ripgrep](https://github.com/BurntSushi/ripgrep) | Foundations, Linux and scripting | oss | active |
 | [Roadmap.sh](https://roadmap.sh) | Documentation, learning and career resources | documentation | needs-review |
@@ -590,7 +591,7 @@
 | [Shipwright](https://shipwright.io) | Containers and image tooling | oss | needs-review |
 | [SigNoz](https://signoz.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Site24x7](https://www.site24x7.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [Skaffold](https://skaffold.dev) | Containers and image tooling | oss | needs-review |
+| [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
 | [Skopeo](https://github.com/containers/skopeo) | Containers and image tooling | oss | needs-review |
 | [Slack](https://slack.com/) | Workflow automation and ChatOps | commercial | active |
 | [Snip](https://github.com/edouard-claude/snip) | Emerging and experimental tools | oss | needs-review |
@@ -630,8 +631,7 @@
 | [Termic](https://termic.dev/) | Developer experience and local environments | oss | active |
 | [terminal-browser](https://terminal-browser.com/) | Developer experience and local environments | oss | active |
 | [Termix](https://termix.site/) | Developer experience and local environments | oss | active |
-| [Terraform](https://www.terraform.io) | Infrastructure as Code | source-available | needs-review |
-| [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | unknown | needs-review |
+| [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |

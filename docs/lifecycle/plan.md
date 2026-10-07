@@ -27,9 +27,10 @@
 - [Git](https://git-scm.com) — Distributed version control system.
 - [Gitea](https://about.gitea.com/) — Self-hosted Git forge with repository hosting, code review, issues, packages, and automation integrations.
 - [GitHub](https://github.com) — Hosted and self-managed developer platform for Git repositories, collaboration, automation, and software delivery.
-- [GitLab](https://about.gitlab.com) — Git repository management with CI/CD.
+- [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 - [GitLab University](https://university.gitlab.com) — Training resources for GitLab, CI/CD, and DevOps practices.
 - [Gotify](https://gotify.net/) — Self-hosted server and clients for receiving application push notifications.
+- [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) — HashiCorp-hosted infrastructure-as-code service for collaborative Terraform runs, state, access control and policy; Terraform Enterprise is the separate self-hosted offering.
 - [Infracost](https://www.infracost.io) — Cost estimates for IaC projects.
 - [Jira](https://www.atlassian.com/software/jira) — Atlassian's commercial work-management product family, led by Jira Cloud with a winding-down Data Center edition.
 - [k0rdent](https://docs.k0rdent.io/latest) — Kubernetes-native platform for distributed cluster lifecycle and multi-cluster service management.
@@ -57,8 +58,7 @@
 - [Slack](https://slack.com/) — Salesforce-owned hosted collaboration and ChatOps platform for channels, workflows, integrations, and AI-assisted work.
 - [Spacelift Deploy](https://spacelift.io) — Commercial infrastructure-as-code orchestration control plane with worker pools and Open Policy Agent governance, available as SaaS or self-hosted Spacelift.
 - [Tenzu](https://tenzu.net/fr) — Ethical open-source task and Kanban collaboration platform.
-- [Terraform](https://www.terraform.io) — Infrastructure provisioning tool.
-- [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) — Managed service for Terraform workflows and state management.
+- [Terraform Community Edition](https://www.terraform.io) — HashiCorp infrastructure-as-code CLI for provisioning and managing infrastructure and state, with separately licensed providers; HCP Terraform and Terraform Enterprise are distinct offerings.
 - [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge for cost savings.
 - [terraform-docs](https://terraform-docs.io) — Generate documentation from Terraform modules in various output formats.
 - [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) — Generate and validate Terraform provider/plugin documentation from source.

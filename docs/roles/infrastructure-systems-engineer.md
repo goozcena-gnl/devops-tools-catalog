@@ -89,6 +89,7 @@
 | [HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools) | Foundations, Linux and scripting | oss | needs-review |
 | [Harvester](https://harvesterhci.io/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
 | [Harvester Seeder](https://github.com/harvester/seeder) | Virtualization, bare metal and homelab | oss | active |
+| [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | commercial | active |
 | [Homarr](https://homarr.dev/) | Virtualization, bare metal and homelab | oss | active |
 | [htop](https://htop.dev/) | Foundations, Linux and scripting | oss | active |
 | [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) | Virtualization, bare metal and homelab | documentation | needs-review |
@@ -209,8 +210,7 @@
 | [SysWarden](https://syswarden.io) | Application and cloud security | oss | active |
 | [tailcat](https://tailscale.com/tailcat) | Foundations, Linux and scripting | oss | active |
 | [Technitium DNS Server](https://technitium.com/dns/) | Virtualization, bare metal and homelab | oss | active |
-| [Terraform](https://www.terraform.io) | Infrastructure as Code | source-available | needs-review |
-| [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | unknown | needs-review |
+| [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |

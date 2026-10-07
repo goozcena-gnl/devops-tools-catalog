@@ -938,8 +938,9 @@
   documentation_url: https://docs.spacelift.io/
   commercial_offering: true
 - id: terraform
-  name: Terraform
-  summary: Infrastructure provisioning tool.
+  name: Terraform Community Edition
+  summary: HashiCorp infrastructure-as-code CLI for provisioning and managing infrastructure and state,
+    with separately licensed providers; HCP Terraform and Terraform Enterprise are distinct offerings.
   official_url: https://www.terraform.io
   repository_url: https://github.com/hashicorp/terraform
   categories:
@@ -953,23 +954,37 @@
   - infrastructure-systems-engineer
   lifecycle_stages:
   - plan
-  - build
   - deploy
+  - operate
   use_when:
-  - You need the largest provider ecosystem and industry-standard HCL workflows.
+  - You need declarative infrastructure provisioning and state management through the CLI and can satisfy
+    the current BUSL additional-use conditions and provider licences.
   avoid_when:
-  - The BSL license is incompatible with your organization's policies.
-  deployment_models: []
+  - You require OSI-approved licensing for current source, cannot satisfy BUSL competitive-offering restrictions,
+    or need a hosted collaboration control plane rather than the CLI.
+  deployment_models:
+  - local
   license_model: source-available
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L60
   - legacy:devopstools_final.md#L187
-  needs_review: true
+  - https://github.com/hashicorp/terraform
+  - https://github.com/hashicorp/terraform/blob/main/LICENSE
+  - https://github.com/hashicorp/terraform/blob/v1.5.7/LICENSE
+  - https://github.com/hashicorp/terraform/blob/v1.6.0/LICENSE
+  - https://developer.hashicorp.com/terraform/docs
+  - https://developer.hashicorp.com/terraform/intro/terraform-editions
+  - https://github.com/hashicorp/terraform/releases
+  needs_review: false
+  documentation_url: https://developer.hashicorp.com/terraform/docs
+  license_spdx: BUSL-1.1
+  commercial_offering: true
+  repository_archived: false
 - id: terraform-aws-eks-operation-scheduler
   name: terraform-aws-eks-operation-scheduler
   summary: Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge
@@ -1001,8 +1016,9 @@
   - legacy:devopstools_final.md#L188
   needs_review: true
 - id: terraform-cloud
-  name: Terraform Cloud
-  summary: Managed service for Terraform workflows and state management.
+  name: HCP Terraform
+  summary: HashiCorp-hosted infrastructure-as-code service for collaborative Terraform runs, state, access
+    control and policy; Terraform Enterprise is the separate self-hosted offering.
   official_url: https://developer.hashicorp.com/terraform/cloud-docs
   categories:
   - infrastructure-as-code
@@ -1015,23 +1031,33 @@
   - infrastructure-systems-engineer
   lifecycle_stages:
   - plan
-  - build
   - deploy
+  - operate
   use_when:
-  - You want HashiCorp-managed remote state, runs, and Sentinel policies.
+  - You want a vendor-managed Terraform control plane for shared state, runs and governance, with agents
+    where private infrastructure requires them.
   avoid_when:
-  - You want open-source tooling or need to avoid vendor dependency on HashiCorp.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require a fully self-hosted control plane or an OSS service licence; evaluate Terraform Enterprise
+    separately for self-hosting.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L124
   - legacy:devopstools_final.md#L224
-  needs_review: true
+  - https://developer.hashicorp.com/terraform/cloud-docs
+  - https://developer.hashicorp.com/terraform/intro/terraform-editions
+  - https://www.hashicorp.com/en/hcp-terraform
+  - https://developer.hashicorp.com/terraform/cloud-docs/agents
+  - https://developer.hashicorp.com/terraform/cloud-docs/changelog
+  needs_review: false
+  documentation_url: https://developer.hashicorp.com/terraform/cloud-docs
+  commercial_offering: true
 - id: terraform-docs
   name: terraform-docs
   summary: Generate documentation from Terraform modules in various output formats.

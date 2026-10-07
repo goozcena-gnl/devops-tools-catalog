@@ -272,6 +272,25 @@ Commercial infrastructure-as-code control platform for self-service environments
 
 [Official site](https://www.envzero.com/) · [Documentation](https://docs.envzero.com/)
 
+### HCP Terraform
+
+**Categories:** Infrastructure as Code<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Commercial<br>
+**Status:** Active
+
+HashiCorp-hosted infrastructure-as-code service for collaborative Terraform runs, state, access control and policy; Terraform Enterprise is the separate self-hosted offering.
+
+**Use when**
+
+- You want a vendor-managed Terraform control plane for shared state, runs and governance, with agents where private infrastructure requires them.
+
+**Consider alternatives when**
+
+- You require a fully self-hosted control plane or an OSS service licence; evaluate Terraform Enterprise separately for self-hosting.
+
+[Official site](https://developer.hashicorp.com/terraform/cloud-docs) · [Documentation](https://developer.hashicorp.com/terraform/cloud-docs)
+
 ### Infracost
 
 **Categories:** Infrastructure as Code<br>
@@ -519,43 +538,24 @@ Commercial infrastructure-as-code orchestration control plane with worker pools 
 
 [Official site](https://spacelift.io) · [Documentation](https://docs.spacelift.io/)
 
-### Terraform
+### Terraform Community Edition
 
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Source Available<br>
-**Status:** Needs Review
+**Status:** Active
 
-Infrastructure provisioning tool.
-
-**Use when**
-
-- You need the largest provider ecosystem and industry-standard HCL workflows.
-
-**Consider alternatives when**
-
-- The BSL license is incompatible with your organization's policies.
-
-[Official site](https://www.terraform.io) · [Source repository](https://github.com/hashicorp/terraform)
-
-### Terraform Cloud
-
-**Categories:** Infrastructure as Code<br>
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
-
-Managed service for Terraform workflows and state management.
+HashiCorp infrastructure-as-code CLI for provisioning and managing infrastructure and state, with separately licensed providers; HCP Terraform and Terraform Enterprise are distinct offerings.
 
 **Use when**
 
-- You want HashiCorp-managed remote state, runs, and Sentinel policies.
+- You need declarative infrastructure provisioning and state management through the CLI and can satisfy the current BUSL additional-use conditions and provider licences.
 
 **Consider alternatives when**
 
-- You want open-source tooling or need to avoid vendor dependency on HashiCorp.
+- You require OSI-approved licensing for current source, cannot satisfy BUSL competitive-offering restrictions, or need a hosted collaboration control plane rather than the CLI.
 
-[Official site](https://developer.hashicorp.com/terraform/cloud-docs)
+[Official site](https://www.terraform.io) · [Documentation](https://developer.hashicorp.com/terraform/docs) · [Source repository](https://github.com/hashicorp/terraform)
 
 ### terraform-aws-eks-operation-scheduler
 

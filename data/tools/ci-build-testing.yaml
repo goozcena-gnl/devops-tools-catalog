@@ -272,6 +272,50 @@
   - https://www.atlassian.com/licensing/bamboo
   - https://www.atlassian.com/licensing/data-center-end-of-life
   needs_review: false
+- id: bazel
+  name: Bazel
+  summary: Extensible build and test system for multi-language, multi-platform software, with incremental
+    execution and local or remote caching.
+  official_url: https://bazel.build
+  repository_url: https://github.com/bazelbuild/bazel
+  categories:
+  - ci-build-testing
+  subcategories:
+  - Build systems
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - developer-experience-engineer
+  - release-engineer
+  lifecycle_stages:
+  - build
+  - test
+  use_when:
+  - You need scalable, repeatable incremental builds and tests and can maintain explicit build rules,
+    toolchains and dependency inputs.
+  avoid_when:
+  - You cannot invest in build rules and toolchain migration, or need a container runtime, hosted CI service
+    or automatic hermeticity for arbitrary build actions.
+  deployment_models:
+  - local
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-07'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L72
+  - legacy:devopstools_final.md#L347
+  - https://github.com/bazelbuild/bazel
+  - https://github.com/bazelbuild/bazel/blob/master/LICENSE
+  - https://bazel.build/
+  - https://bazel.build/release
+  - https://github.com/bazelbuild/bazel/releases
+  needs_review: false
+  documentation_url: https://bazel.build/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: bitbucket-pipelines
   name: Bitbucket Pipelines
   summary: Integrated CI/CD for Bitbucket repositories.
