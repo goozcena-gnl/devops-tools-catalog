@@ -122,14 +122,14 @@
 | [Gonzo](https://www.controltheory.com/gonzo) | Monitoring, metrics, logs and tracing | oss | active |
 | [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) | Kubernetes distributions and operations | commercial | active |
 | [Gotify](https://gotify.net/) | Workflow automation and ChatOps | oss | active |
-| [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [Grafana Beyla](https://grafana.com/oss/beyla) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Grafana Loki](https://grafana.com/oss/loki) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Grafana Mimir](https://grafana.com/oss/mimir) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Grafana Loki](https://grafana.com/oss/loki) | Monitoring, metrics, logs and tracing | oss | active |
+| [Grafana Mimir](https://grafana.com/oss/mimir) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana OnCall OSS](https://grafana.com/docs/oncall/latest/intro/) | Deprecated and historical tools, SRE, incident response and on-call | oss | archived |
 | [Grafana Pyroscope](https://grafana.com/oss/pyroscope) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | active |
 | [Gremlin](https://www.gremlin.com) | Chaos and performance engineering, Backup, disaster recovery and resilience | commercial | active |
 | [groundcover](https://www.groundcover.com/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [grove](https://github.com/ai-dynamo/grove) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -163,7 +163,7 @@
 | [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) | Kubernetes distributions and operations | oss | needs-review |
 | [iPerf](https://iperf.fr/iperf-download.php) | Chaos and performance engineering | oss | needs-review |
 | [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | commercial | active |
 | [k0s](https://k0sproject.io) | Kubernetes distributions and operations | oss | active |
 | [k0smotron](https://k0smotron.io) | Kubernetes distributions and operations | oss | needs-review |
@@ -209,7 +209,6 @@
 | [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kuba](https://github.com/hcgatewood/kuba) | Kubernetes distributions and operations | oss | needs-review |
 | [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | needs-review |
-| [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) | Kubernetes distributions and operations | oss | active |
 | [kube-bench](https://github.com/aquasecurity/kube-bench) | Application and cloud security, Kubernetes distributions and operations | oss | active |
 | [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -217,6 +216,7 @@
 | [kube-hunter](https://aquasecurity.github.io/kube-hunter) | Kubernetes distributions and operations | oss | needs-review |
 | [Kube-OVN](https://www.kube-ovn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [kube-score](https://kube-score.com) | Kubernetes distributions and operations | oss | needs-review |
+| [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) | Monitoring, metrics, logs and tracing | oss | active |
 | [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubeapps](https://kubeapps.com) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
 | [kubebuilder Book](https://book.kubebuilder.io) | Kubernetes distributions and operations | documentation | needs-review |
@@ -318,8 +318,8 @@
 | [OpenObserve](https://openobserve.ai/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [OpenSRE](https://www.opensre.com/) | SRE, incident response and on-call, MLOps, LLMOps and AI infrastructure | oss | active |
-| [OpenTelemetry](https://github.com/open-telemetry) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [OpenTelemetry](https://opentelemetry.io/) | Monitoring, metrics, logs and tracing | oss | active |
+| [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [OperatorHub.io](https://operatorhub.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Orbit](https://gitlab.com/RMJx1/orbit) | Kubernetes distributions and operations | oss | needs-review |
@@ -338,7 +338,7 @@
 | [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Project Contour](https://projectcontour.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Pulse](https://pulserelay.pro) | SRE, incident response and on-call | oss | active |
 | [Pumba](https://github.com/alexei-led/pumba) | Chaos and performance engineering | oss | needs-review |
@@ -394,7 +394,7 @@
 | [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Telepresence](https://www.telepresence.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |
-| [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Toxiproxy](https://github.com/Shopify/toxiproxy) | Chaos and performance engineering | oss | needs-review |
 | [Tracetest](https://tracetest.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | unknown | needs-review |

@@ -1190,13 +1190,14 @@
   needs_review: false
 - id: grafana
   name: Grafana
-  summary: Visualization and analytics for metrics.
+  summary: 'Grafana visualization and alerting product family: OSS dashboards query external data sources;
+    Enterprise adds commercial features and plugins, and Grafana Cloud is the managed service.'
   official_url: https://grafana.com
   repository_url: https://github.com/grafana/grafana
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Visualization, Metrics, and Tracing
+  - Observability visualization and alerting
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -1205,20 +1206,38 @@
   - operate
   - monitor
   use_when:
-  - Building dashboards across heterogeneous data sources.
+  - You want dashboards, exploration and alerting across metrics, logs and traces, choosing self-hosted
+    OSS or Enterprise, or managed Grafana Cloud, according to required features and terms.
   avoid_when:
-  - You need an all-in-one monitoring solution—Grafana is a frontend, not a backend.
-  deployment_models: []
+  - You require the OSS repository licence to cover Enterprise binaries, proprietary plugins or Grafana
+    Cloud, or expect self-hosted Grafana alone to store all telemetry without external backends.
+  deployment_models:
+  - self-hosted
+  - hosted-saas
   license_model: open-core
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L39
   - legacy:devopstools_final.md#L743
-  needs_review: true
+  - https://github.com/grafana/grafana
+  - https://github.com/grafana/grafana/blob/main/LICENSE
+  - https://github.com/grafana/grafana/blob/main/LICENSING.md
+  - https://grafana.com/docs/grafana/latest/
+  - https://grafana.com/docs/grafana/latest/introduction/grafana-enterprise/
+  - https://grafana.com/docs/grafana/latest/introduction/grafana-cloud/
+  - https://grafana.com/legal/grafana-labs-license/
+  - https://grafana.com/legal/enterprise-plugins/
+  - https://grafana.com/legal/msa/
+  - https://github.com/grafana/grafana/blob/main/CONTRIBUTING.md
+  - https://github.com/grafana/grafana/releases
+  needs_review: false
+  documentation_url: https://grafana.com/docs/grafana/latest/
+  commercial_offering: true
+  repository_archived: false
 - id: grafana-alloy-deploy
   name: Grafana Alloy Deploy
   summary: Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).
@@ -1283,7 +1302,8 @@
   needs_review: true
 - id: grafana-loki
   name: Grafana Loki
-  summary: Log aggregation system designed to work with Grafana; label-based indexing.
+  summary: Open-source log aggregation backend that indexes log labels and queries log content with LogQL;
+    Grafana provides a separate UI and Grafana Cloud Logs is a managed offering.
   official_url: https://grafana.com/oss/loki
   repository_url: https://github.com/grafana/loki
   categories:
@@ -1298,29 +1318,46 @@
   - operate
   - monitor
   use_when:
-  - You want cost-effective logs tightly integrated with Grafana dashboards.
+  - You need label-based log aggregation with LogQL content filtering and can operate the log shipping,
+    storage and access-control components alongside Loki.
   avoid_when:
-  - You need full-text indexing or complex ad-hoc log analytics.
-  deployment_models: []
+  - You require a full-text index of every log line or expect Loki tenant headers alone to authenticate
+    users; configure an authenticating proxy or appropriate client-certificate controls.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L57
   - legacy:devopstools_final.md#L764
-  needs_review: true
+  - https://github.com/grafana/loki
+  - https://github.com/grafana/loki/blob/main/LICENSE
+  - https://github.com/grafana/loki/blob/main/LICENSING.md
+  - https://grafana.com/docs/loki/latest/
+  - https://grafana.com/docs/loki/latest/operations/authentication/
+  - https://grafana.com/docs/loki/latest/community/governance/
+  - https://github.com/grafana/loki/releases
+  - https://grafana.com/docs/grafana/latest/introduction/grafana-cloud/
+  - https://grafana.com/docs/enterprise-logs/latest/setup/
+  needs_review: false
+  documentation_url: https://grafana.com/docs/loki/latest/
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  repository_archived: false
 - id: grafana-mimir
   name: Grafana Mimir
-  summary: Horizontally scalable, multi-tenant Prometheus-compatible time series database.
+  summary: Open-source Prometheus-compatible metrics backend for multi-tenant ingestion, global PromQL
+    queries and long-term object storage; Grafana Cloud Metrics is a separate managed offering.
   official_url: https://grafana.com/oss/mimir
   repository_url: https://github.com/grafana/mimir
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Visualization, Metrics, and Tracing
+  - Long-term metrics storage
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -1329,20 +1366,37 @@
   - operate
   - monitor
   use_when:
-  - You outgrow single-node Prometheus and need multi-tenant long-term storage.
+  - You need Prometheus-compatible long-term metrics storage, multi-tenant isolation and queries across
+    multiple metrics sources, and can operate the required storage and ingestion architecture.
   avoid_when:
-  - Thanos already solves your HA/storage needs, or your scale is small.
-  deployment_models: []
+  - You only need a standalone local metrics server or expect the OSS backend to include Grafana Cloud
+    management, commercial entitlements or automatic tenant authentication.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L41
   - legacy:devopstools_final.md#L746
-  needs_review: true
+  - https://github.com/grafana/mimir
+  - https://github.com/grafana/mimir/blob/main/LICENSE
+  - https://github.com/grafana/mimir/blob/main/LICENSING.md
+  - https://github.com/grafana/mimir/blob/main/cmd/mimir/main.go
+  - https://grafana.com/docs/mimir/latest/
+  - https://grafana.com/docs/mimir/latest/manage/secure/authentication-and-authorization/
+  - https://github.com/grafana/mimir/blob/main/MAINTAINERS.md
+  - https://github.com/grafana/mimir/releases
+  - https://grafana.com/docs/grafana/latest/introduction/grafana-cloud/
+  - https://grafana.com/docs/enterprise-logs/latest/setup/
+  needs_review: false
+  documentation_url: https://grafana.com/docs/mimir/latest/
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  repository_archived: false
 - id: grafana-pyroscope
   name: Grafana Pyroscope
   summary: Continuous profiling (often paired with tracing/APM for root-cause).
@@ -1376,13 +1430,14 @@
   needs_review: true
 - id: grafana-tempo
   name: Grafana Tempo
-  summary: Distributed tracing backend (compatible with Jaeger/Zipkin/OTLP).
+  summary: Open-source distributed tracing backend with TraceQL search and configurable OTLP, Jaeger and
+    Zipkin receivers; Grafana Cloud Traces is a separate managed offering.
   official_url: https://grafana.com/oss/tempo
   repository_url: https://github.com/grafana/tempo
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Visualization, Metrics, and Tracing
+  - Distributed tracing backends
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -1391,20 +1446,36 @@
   - operate
   - monitor
   use_when:
-  - Cost-effective trace storage using object storage and tight Grafana integration.
+  - You need trace storage, TraceQL search and correlation with Grafana metrics/logs, with receivers configured
+    for the required tracing protocols and a deployment architecture you can operate.
   avoid_when:
-  - You need trace analytics/aggregation beyond trace-by-ID lookups.
-  deployment_models: []
+  - You require an included managed service or an architecture-independent object-storage-only deployment;
+    verify ingestion, query and storage dependencies for your chosen deployment mode.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L42
   - legacy:devopstools_final.md#L747
-  needs_review: true
+  - https://github.com/grafana/tempo
+  - https://github.com/grafana/tempo/blob/main/LICENSE
+  - https://github.com/grafana/tempo/blob/main/LICENSING.md
+  - https://grafana.com/docs/tempo/latest/
+  - https://grafana.com/docs/tempo/latest/configuration/
+  - https://github.com/grafana/tempo/blob/main/MAINTAINERS.md
+  - https://github.com/grafana/tempo/releases
+  - https://grafana.com/docs/grafana/latest/introduction/grafana-cloud/
+  - https://grafana.com/docs/enterprise-logs/latest/setup/
+  needs_review: false
+  documentation_url: https://grafana.com/docs/tempo/latest/
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  repository_archived: false
 - id: groundcover
   name: groundcover
   summary: Commercial observability platform offering infrastructure and application monitoring with BYOC
@@ -1620,7 +1691,8 @@
   needs_review: true
 - id: jaeger
   name: Jaeger
-  summary: Open source distributed tracing platform.
+  summary: Open-source distributed tracing backend with trace storage, query APIs and UI; current Jaeger
+    builds on the OpenTelemetry Collector framework and accepts OpenTelemetry instrumentation.
   official_url: https://www.jaegertracing.io
   repository_url: https://github.com/jaegertracing/jaeger
   categories:
@@ -1635,20 +1707,35 @@
   - operate
   - monitor
   use_when:
-  - CNCF-native distributed tracing with mature UI and backend options.
+  - You need a self-hosted tracing backend with query/UI and supported storage backends, accepting OTLP
+    from OpenTelemetry-instrumented applications or collectors.
   avoid_when:
-  - You need an all-in-one observability platform—Jaeger is tracing-only.
-  deployment_models: []
+  - You require a single backend for storing logs, metrics and traces, or durable production retention
+    while using only the temporary in-memory tracing configuration.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L71
   - legacy:devopstools_final.md#L779
-  needs_review: true
+  - https://github.com/jaegertracing/jaeger
+  - https://github.com/jaegertracing/jaeger/blob/main/LICENSE
+  - https://www.jaegertracing.io/docs/
+  - https://www.jaegertracing.io/docs/2.21/architecture/
+  - https://www.jaegertracing.io/docs/2.21/deployment/
+  - https://www.jaegertracing.io/docs/2.21/storage/memory/
+  - https://github.com/jaegertracing/jaeger/blob/main/GOVERNANCE.md
+  - https://www.cncf.io/projects/jaeger/
+  - https://github.com/jaegertracing/jaeger/releases
+  needs_review: false
+  documentation_url: https://www.jaegertracing.io/docs/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: klarity
   name: Klarity
   summary: Self-hosted observability dashboard that correlates Kubernetes resources, logs, metrics, events, and traces.
@@ -1723,8 +1810,10 @@
   - legacy:devopstools_final.md#L731
   needs_review: true
 - id: kube-state-metrics
-  name: Kube State Metrics
-  summary: Exposes Kubernetes cluster state as metrics.
+  name: kube-state-metrics
+  summary: Kubernetes SIG Instrumentation service exposing Prometheus-format metrics derived from Kubernetes
+    API object state; resource-usage collection by metrics-server or cAdvisor and storage/query by Prometheus
+    are separate.
   repository_url: https://github.com/kubernetes/kube-state-metrics
   categories:
   - monitoring-metrics-logs-tracing
@@ -1734,24 +1823,41 @@
   - devops-engineer
   - site-reliability-engineer
   - observability-engineer
+  - kubernetes-engineer
   lifecycle_stages:
   - operate
   - monitor
   use_when:
-  - You need K8s object-level metrics (deployments, pods, nodes) in Prometheus.
+  - You need scrapeable metrics for Kubernetes API object state, such as deployment replicas, pod phases
+    and node conditions, for a separate monitoring system.
   avoid_when:
-  - You only care about node/container resource metrics (use cAdvisor/metrics-server instead).
-  deployment_models: []
+  - You need CPU/memory resource-usage metrics from metrics-server or cAdvisor, or expect kube-state-metrics
+    to store, query or alert on the collected time series like Prometheus.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L30
   - legacy:devopstools_final.md#L730
-  needs_review: true
+  - https://github.com/kubernetes/kube-state-metrics
+  - https://github.com/kubernetes/kube-state-metrics/blob/main/LICENSE
+  - https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/
+  - https://github.com/kubernetes/kube-state-metrics/tree/main/docs
+  - https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/
+  - https://github.com/kubernetes/community/blob/main/sig-instrumentation/README.md
+  - https://github.com/kubernetes/kube-state-metrics/blob/main/OWNERS
+  - https://github.com/kubernetes/kube-state-metrics/blob/main/README.md
+  - https://github.com/kubernetes/kube-state-metrics/releases
+  needs_review: false
+  official_url: https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/
+  documentation_url: https://github.com/kubernetes/kube-state-metrics/tree/main/docs
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: kubernetes-monitoring-mixins
   name: Kubernetes Monitoring Mixins
   summary: Monitoring dashboards and alerts for Kubernetes.
@@ -2205,43 +2311,62 @@
   needs_review: true
 - id: opentelemetry
   name: OpenTelemetry
-  summary: Observability framework for traces/metrics/logs.
-  official_url: https://github.com/open-telemetry
+  summary: Vendor-neutral observability umbrella project defining specifications, APIs, SDKs and instrumentation
+    for traces, metrics and logs; the Collector is a separate implementation component, and storage/UI
+    backends are external.
+  official_url: https://opentelemetry.io/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Visualization, Metrics, and Tracing
+  - Telemetry instrumentation and standards
   roles:
   - devops-engineer
   - site-reliability-engineer
   - observability-engineer
   lifecycle_stages:
+  - develop
   - operate
   - monitor
   use_when:
-  - You want vendor-neutral instrumentation and backend flexibility.
+  - You need portable instrumentation and telemetry APIs/SDKs across services, with an independently chosen
+    Collector pipeline and observability backend.
   avoid_when:
-  - Your team isn't ready to learn OTel's configuration surface and maturity varies per language SDK.
+  - You need an included telemetry storage/UI backend or uniform stability across every language, signal
+    and component; check the relevant specification and implementation status first.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L46
   - legacy:devopstools_final.md#L751
-  needs_review: true
+  - https://opentelemetry.io/
+  - https://opentelemetry.io/docs/
+  - https://opentelemetry.io/docs/what-is-opentelemetry/
+  - https://github.com/open-telemetry/community/blob/main/README.md
+  - https://github.com/open-telemetry/community/blob/main/LICENSE
+  - https://github.com/open-telemetry/community/blob/main/governance-charter.md
+  - https://github.com/open-telemetry/opentelemetry-specification/blob/main/README.md
+  - https://opentelemetry.io/status/
+  - https://www.cncf.io/projects/opentelemetry/
+  - https://github.com/open-telemetry
+  needs_review: false
+  documentation_url: https://opentelemetry.io/docs/
+  license_spdx: Apache-2.0
 - id: opentelemetry-collector
   name: OpenTelemetry Collector
-  summary: Vendor-neutral collector to receive/process/export traces (and also logs/metrics) to backends.
+  summary: Vendor-neutral telemetry pipeline implementation using receivers, processors and exporters
+    for traces, metrics and logs; the core framework repository and the contrib component repository are
+    distinct.
   official_url: https://opentelemetry.io/docs/collector
   repository_url: https://github.com/open-telemetry/opentelemetry-collector
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Tracing & APM
+  - Telemetry collection and processing
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -2250,20 +2375,34 @@
   - operate
   - monitor
   use_when:
-  - You want a single, vendor-agnostic telemetry pipeline.
+  - You need a configurable agent or gateway to receive, process and export telemetry to separately selected
+    backends, using a distribution containing the required components.
   avoid_when:
-  - A simpler agent (Fluent Bit, Telegraf) already covers your single-signal needs.
-  deployment_models: []
+  - You need a telemetry storage/UI backend or assume the core distribution includes every contrib receiver/exporter
+    and that all components and signals have equal stability.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L72
   - legacy:devopstools_final.md#L780
-  needs_review: true
+  - https://github.com/open-telemetry/opentelemetry-collector
+  - https://github.com/open-telemetry/opentelemetry-collector/blob/main/LICENSE
+  - https://opentelemetry.io/docs/collector/
+  - https://opentelemetry.io/docs/collector/configuration/
+  - https://opentelemetry.io/docs/collector/distributions/
+  - https://github.com/open-telemetry/opentelemetry-collector/blob/main/docs/component-stability.md
+  - https://github.com/open-telemetry/opentelemetry-collector/blob/main/README.md
+  - https://github.com/open-telemetry/opentelemetry-collector/releases
+  needs_review: false
+  documentation_url: https://opentelemetry.io/docs/collector/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: opentelemetry-ebpf-instrumentation
   name: OpenTelemetry eBPF Instrumentation
   summary: Zero-code eBPF-based instrumentation for collecting OpenTelemetry telemetry.
@@ -2362,13 +2501,14 @@
   needs_review: true
 - id: prometheus
   name: Prometheus
-  summary: Monitoring and alerting toolkit.
+  summary: Open-source metrics monitoring server with a time-series database, PromQL and alerting rules;
+    Alertmanager, exporters and client libraries are separate ecosystem components.
   official_url: https://prometheus.io
   repository_url: https://github.com/prometheus/prometheus
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Monitoring & Observability Platforms
+  - Metrics monitoring and alerting
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -2377,20 +2517,32 @@
   - operate
   - monitor
   use_when:
-  - Cloud-native/Kubernetes metrics with a pull model and PromQL.
+  - You need labelled numeric time-series monitoring, PromQL and alerting rules with local storage and
+    pull-based scraping of instrumented applications or exporters.
   avoid_when:
-  - You need long-term storage out of the box or event/log-based monitoring.
-  deployment_models: []
+  - You need log or trace storage, complete per-request billing data, or a distributed long-term metrics
+    backend without adding separate components.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L19
   - legacy:devopstools_final.md#L714
-  needs_review: true
+  - https://github.com/prometheus/prometheus
+  - https://github.com/prometheus/prometheus/blob/main/LICENSE
+  - https://prometheus.io/docs/introduction/overview/
+  - https://prometheus.io/governance/
+  - https://www.cncf.io/projects/prometheus/
+  - https://github.com/prometheus/prometheus/releases
+  needs_review: false
+  documentation_url: https://prometheus.io/docs/introduction/overview/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: prometheus-pushgateway
   name: Prometheus Pushgateway
   summary: Metrics cache that accepts pushed metrics from short-lived and batch jobs for Prometheus scraping.
@@ -2824,13 +2976,14 @@
   needs_review: true
 - id: thanos
   name: Thanos
-  summary: Highly available Prometheus setup with long-term storage.
+  summary: Open-source components extending Prometheus with high availability, deduplicated global queries
+    and long-term metrics storage in object stores; it is distinct from Prometheus and Grafana Mimir.
   official_url: https://thanos.io
   repository_url: https://github.com/thanos-io/thanos
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Visualization, Metrics, and Tracing
+  - Long-term metrics storage
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -2839,20 +2992,32 @@
   - operate
   - monitor
   use_when:
-  - Extending Prometheus with global querying and cheap object-store retention.
+  - You need a global query view across Prometheus instances, deduplication of HA pairs and long-term
+    object storage through the appropriate Thanos components.
   avoid_when:
-  - Mimir's multi-tenancy or Cortex is a better fit, or you only have one small Prometheus instance.
-  deployment_models: []
+  - You need only a standalone Prometheus server or expect the component stack to include managed operations,
+    object-store capacity or every tenant access policy automatically.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L49
   - legacy:devopstools_final.md#L755
-  needs_review: true
+  - https://github.com/thanos-io/thanos
+  - https://github.com/thanos-io/thanos/blob/main/LICENSE
+  - https://thanos.io/tip/thanos/getting-started.md/
+  - https://github.com/thanos-io/thanos/blob/main/MAINTAINERS.md
+  - https://www.cncf.io/projects/thanos/
+  - https://github.com/thanos-io/thanos/releases
+  needs_review: false
+  documentation_url: https://thanos.io/tip/thanos/getting-started.md/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: tracetest
   name: Tracetest
   summary: Trace-based testing for distributed systems.

@@ -250,14 +250,14 @@
 - [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) — Managed Kubernetes service with Standard and Autopilot operating modes on Google Cloud.
 - [Gotify](https://gotify.net/) — Self-hosted server and clients for receiving application push notifications.
 - [gping](https://github.com/orf/gping) — Ping utility with terminal graphs for comparing host latency.
-- [Grafana](https://grafana.com) — Visualization and analytics for metrics.
+- [Grafana](https://grafana.com) — Grafana visualization and alerting product family: OSS dashboards query external data sources; Enterprise adds commercial features and plugins, and Grafana Cloud is the managed service.
 - [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) — Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).
 - [Grafana Beyla](https://grafana.com/oss/beyla) — EBPF-based auto-instrumentation for distributed tracing/metrics with minimal code changes.
-- [Grafana Loki](https://grafana.com/oss/loki) — Log aggregation system designed to work with Grafana; label-based indexing.
+- [Grafana Loki](https://grafana.com/oss/loki) — Open-source log aggregation backend that indexes log labels and queries log content with LogQL; Grafana provides a separate UI and Grafana Cloud Logs is a managed offering.
 - [Grafana MCP](https://github.com/grafana/mcp-grafana) — Model Context Protocol for Grafana.
-- [Grafana Mimir](https://grafana.com/oss/mimir) — Horizontally scalable, multi-tenant Prometheus-compatible time series database.
+- [Grafana Mimir](https://grafana.com/oss/mimir) — Open-source Prometheus-compatible metrics backend for multi-tenant ingestion, global PromQL queries and long-term object storage; Grafana Cloud Metrics is a separate managed offering.
 - [Grafana Pyroscope](https://grafana.com/oss/pyroscope) — Continuous profiling (often paired with tracing/APM for root-cause).
-- [Grafana Tempo](https://grafana.com/oss/tempo) — Distributed tracing backend (compatible with Jaeger/Zipkin/OTLP).
+- [Grafana Tempo](https://grafana.com/oss/tempo) — Open-source distributed tracing backend with TraceQL search and configurable OTLP, Jaeger and Zipkin receivers; Grafana Cloud Traces is a separate managed offering.
 - [Gremlin](https://www.gremlin.com) — Reliability management and resilience testing platform with controlled fault injection and disaster-recovery validation.
 - [groundcover](https://www.groundcover.com/) — Commercial observability platform offering infrastructure and application monitoring with BYOC deployment.
 - [grove](https://github.com/ai-dynamo/grove) — AI-powered Kubernetes troubleshooting.
@@ -314,7 +314,7 @@
 - [iPerf](https://iperf.fr/iperf-download.php) — Network performance measurement tool.
 - [ipman](https://dialohq.github.io/ipman/) — Kubernetes operator that establishes encrypted IPsec connectivity between selected cluster networks.
 - [Istio](https://istio.io) — Service mesh for managing microservices traffic.
-- [Jaeger](https://www.jaegertracing.io) — Open source distributed tracing platform.
+- [Jaeger](https://www.jaegertracing.io) — Open-source distributed tracing backend with trace storage, query APIs and UI; current Jaeger builds on the OpenTelemetry Collector framework and accepts OpenTelemetry instrumentation.
 - [jaq](https://github.com/01mf02/jaq) — JSON query CLI implementing a substantial subset of jq's language.
 - [Jira](https://www.atlassian.com/software/jira) — Atlassian's commercial work-management product family, led by Jira Cloud with a winding-down Data Center edition.
 - [jq](https://jqlang.org) — Command-line processor for querying and transforming JSON data.
@@ -391,7 +391,6 @@
 - [kubara](https://kubara.io/) — Open-source GitOps-first CLI for packaging, generating, and bootstrapping reusable Kubernetes platform architectures.
 - [Kube Copilot](https://github.com/feiskyer/kube-copilot) — AI assistant for Kubernetes operations.
 - [Kube Monkey](https://github.com/asobti/kube-monkey) — Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, opt-in pod-killing schedule for Kubernetes with minimal setup. ❌ **Avoid when** you need network/IO faults or fine-grained experiment control beyond random pod deletion.
-- [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) — Exposes Kubernetes cluster state as metrics.
 - [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
 - [kube-bench](https://github.com/aquasecurity/kube-bench) — Aqua Security tool that checks Kubernetes node configuration against selected CIS benchmark profiles; it implements checks and does not define the CIS standard or certify full compliance.
 - [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Exports precomputed Kubernetes cluster binpacking metrics.
@@ -399,6 +398,7 @@
 - [kube-hunter](https://aquasecurity.github.io/kube-hunter) — Kubernetes security testing tool.
 - [Kube-OVN](https://www.kube-ovn.io) — CloudNative Network for KubeVirt and Multi-Tenancy.
 - [kube-score](https://kube-score.com) — Static analysis tool for Kubernetes YAML manifests with best-practice recommendations.
+- [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) — Kubernetes SIG Instrumentation service exposing Prometheus-format metrics derived from Kubernetes API object state; resource-usage collection by metrics-server or cAdvisor and storage/query by Prometheus are separate.
 - [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) — Tool for bootstrapping Kubernetes clusters.
 - [KubeArmor](https://kubearmor.io/) — Runtime security enforcement system for applying workload policies through Linux Security Modules.
 - [kubebuilder Book](https://book.kubebuilder.io) — Guide for building Kubernetes APIs using `kubebuilder`.
@@ -575,8 +575,8 @@
 - [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) — OpenStack secrets management.
 - [OpenStack Ironic](https://ironicbaremetal.org/) — Bare-metal provisioning service supporting hardware inspection, deployment, and power management.
 - [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) — OpenStack service for provisioning and managing container orchestration clusters through OpenStack APIs.
-- [OpenTelemetry](https://github.com/open-telemetry) — Observability framework for traces/metrics/logs.
-- [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) — Vendor-neutral collector to receive/process/export traces (and also logs/metrics) to backends.
+- [OpenTelemetry](https://opentelemetry.io/) — Vendor-neutral observability umbrella project defining specifications, APIs, SDKs and instrumentation for traces, metrics and logs; the Collector is a separate implementation component, and storage/UI backends are external.
+- [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) — Vendor-neutral telemetry pipeline implementation using receivers, processors and exporters for traces, metrics and logs; the core framework repository and the contrib component repository are distinct.
 - [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) — Zero-code eBPF-based instrumentation for collecting OpenTelemetry telemetry.
 - [OpenTofu](https://opentofu.org) — Community-governed infrastructure-as-code CLI for declaratively provisioning and managing cloud and on-premises resources.
 - [OperatorHub.io](https://operatorhub.io/) — Community-operated web portal and OLM catalog for discovering and publishing independently licensed Kubernetes Operators.
@@ -622,7 +622,7 @@
 - [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) — Predictive scaling for Kubernetes workloads.
 - [Project Contour](https://projectcontour.io) — Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reconfiguration, and secure multi-team delegation.
 - [Project Sveltos](https://projectsveltos.io/latest) — Kubernetes add-on controller for deploying and managing Helm charts, Kustomize, and raw YAML across multi-cluster fleets from a management cluster.
-- [Prometheus](https://prometheus.io) — Monitoring and alerting toolkit.
+- [Prometheus](https://prometheus.io) — Open-source metrics monitoring server with a time-series database, PromQL and alerting rules; Alertmanager, exporters and client libraries are separate ecosystem components.
 - [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) — Metrics cache that accepts pushed metrics from short-lived and batch jobs for Prometheus scraping.
 - [Promptfoo](https://www.promptfoo.dev) — Test and evaluate LLM prompts.
 - [Prowler](https://prowler.com) — Cloud security posture and compliance assessment platform for AWS, Azure, Google Cloud, and Kubernetes.
@@ -744,7 +744,7 @@
 - [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) — MCP server for Terraform automation and infrastructure-as-code workflows.
 - [terraform-skill](https://github.com/antonbabenko/terraform-skill) — Claude Code skill for Terraform and OpenTofu best practices, testing, modules, CI/CD, and security.
 - [Thales CipherTrust Manager](https://cpl.thalesgroup.com/encryption/ciphertrust-manager) — Enterprise key and secret management.
-- [Thanos](https://thanos.io) — Highly available Prometheus setup with long-term storage.
+- [Thanos](https://thanos.io) — Open-source components extending Prometheus with high availability, deduplicated global queries and long-term metrics storage in object stores; it is distinct from Prometheus and Grafana Mimir.
 - [The Linux Command Line](https://linuxcommand.org/tlcl.php) — Free book on Linux CLI.
 - [The Linux Documentation Project (TLDP)](https://tldp.org) — Linux documentation library and community resource.
 - [TiKV](https://tikv.org) — Distributed transactional key-value database with horizontal scalability and strong consistency.

@@ -715,19 +715,19 @@ K9s-inspired log analysis TUI with live log exploration and AI-assisted insights
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Visualization and analytics for metrics.
+Grafana visualization and alerting product family: OSS dashboards query external data sources; Enterprise adds commercial features and plugins, and Grafana Cloud is the managed service.
 
 **Use when**
 
-- Building dashboards across heterogeneous data sources.
+- You want dashboards, exploration and alerting across metrics, logs and traces, choosing self-hosted OSS or Enterprise, or managed Grafana Cloud, according to required features and terms.
 
 **Consider alternatives when**
 
-- You need an all-in-one monitoring solution—Grafana is a frontend, not a backend.
+- You require the OSS repository licence to cover Enterprise binaries, proprietary plugins or Grafana Cloud, or expect self-hosted Grafana alone to store all telemetry without external backends.
 
-[Official site](https://grafana.com) · [Source repository](https://github.com/grafana/grafana)
+[Official site](https://grafana.com) · [Documentation](https://grafana.com/docs/grafana/latest/) · [Source repository](https://github.com/grafana/grafana)
 
 ### Grafana Alloy Deploy
 
@@ -772,38 +772,38 @@ EBPF-based auto-instrumentation for distributed tracing/metrics with minimal cod
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Log aggregation system designed to work with Grafana; label-based indexing.
+Open-source log aggregation backend that indexes log labels and queries log content with LogQL; Grafana provides a separate UI and Grafana Cloud Logs is a managed offering.
 
 **Use when**
 
-- You want cost-effective logs tightly integrated with Grafana dashboards.
+- You need label-based log aggregation with LogQL content filtering and can operate the log shipping, storage and access-control components alongside Loki.
 
 **Consider alternatives when**
 
-- You need full-text indexing or complex ad-hoc log analytics.
+- You require a full-text index of every log line or expect Loki tenant headers alone to authenticate users; configure an authenticating proxy or appropriate client-certificate controls.
 
-[Official site](https://grafana.com/oss/loki) · [Source repository](https://github.com/grafana/loki)
+[Official site](https://grafana.com/oss/loki) · [Documentation](https://grafana.com/docs/loki/latest/) · [Source repository](https://github.com/grafana/loki)
 
 ### Grafana Mimir
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Horizontally scalable, multi-tenant Prometheus-compatible time series database.
+Open-source Prometheus-compatible metrics backend for multi-tenant ingestion, global PromQL queries and long-term object storage; Grafana Cloud Metrics is a separate managed offering.
 
 **Use when**
 
-- You outgrow single-node Prometheus and need multi-tenant long-term storage.
+- You need Prometheus-compatible long-term metrics storage, multi-tenant isolation and queries across multiple metrics sources, and can operate the required storage and ingestion architecture.
 
 **Consider alternatives when**
 
-- Thanos already solves your HA/storage needs, or your scale is small.
+- You only need a standalone local metrics server or expect the OSS backend to include Grafana Cloud management, commercial entitlements or automatic tenant authentication.
 
-[Official site](https://grafana.com/oss/mimir) · [Source repository](https://github.com/grafana/mimir)
+[Official site](https://grafana.com/oss/mimir) · [Documentation](https://grafana.com/docs/mimir/latest/) · [Source repository](https://github.com/grafana/mimir)
 
 ### Grafana Pyroscope
 
@@ -829,19 +829,19 @@ Continuous profiling (often paired with tracing/APM for root-cause).
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Distributed tracing backend (compatible with Jaeger/Zipkin/OTLP).
+Open-source distributed tracing backend with TraceQL search and configurable OTLP, Jaeger and Zipkin receivers; Grafana Cloud Traces is a separate managed offering.
 
 **Use when**
 
-- Cost-effective trace storage using object storage and tight Grafana integration.
+- You need trace storage, TraceQL search and correlation with Grafana metrics/logs, with receivers configured for the required tracing protocols and a deployment architecture you can operate.
 
 **Consider alternatives when**
 
-- You need trace analytics/aggregation beyond trace-by-ID lookups.
+- You require an included managed service or an architecture-independent object-storage-only deployment; verify ingestion, query and storage dependencies for your chosen deployment mode.
 
-[Official site](https://grafana.com/oss/tempo) · [Source repository](https://github.com/grafana/tempo)
+[Official site](https://grafana.com/oss/tempo) · [Documentation](https://grafana.com/docs/tempo/latest/) · [Source repository](https://github.com/grafana/tempo)
 
 ### groundcover
 
@@ -981,19 +981,19 @@ Time series platform with OSS components and commercial cloud/enterprise offerin
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open source distributed tracing platform.
+Open-source distributed tracing backend with trace storage, query APIs and UI; current Jaeger builds on the OpenTelemetry Collector framework and accepts OpenTelemetry instrumentation.
 
 **Use when**
 
-- CNCF-native distributed tracing with mature UI and backend options.
+- You need a self-hosted tracing backend with query/UI and supported storage backends, accepting OTLP from OpenTelemetry-instrumented applications or collectors.
 
 **Consider alternatives when**
 
-- You need an all-in-one observability platform—Jaeger is tracing-only.
+- You require a single backend for storing logs, metrics and traces, or durable production retention while using only the temporary in-memory tracing configuration.
 
-[Official site](https://www.jaegertracing.io) · [Source repository](https://github.com/jaegertracing/jaeger)
+[Official site](https://www.jaegertracing.io) · [Documentation](https://www.jaegertracing.io/docs/) · [Source repository](https://github.com/jaegertracing/jaeger)
 
 ### Klarity
 
@@ -1052,25 +1052,6 @@ Kubernetes Resource Recommendations by Robusta.
 
 [Source repository](https://github.com/robusta-dev/krr)
 
-### Kube State Metrics
-
-**Categories:** Monitoring, metrics, logs and tracing<br>
-**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
-
-Exposes Kubernetes cluster state as metrics.
-
-**Use when**
-
-- You need K8s object-level metrics (deployments, pods, nodes) in Prometheus.
-
-**Consider alternatives when**
-
-- You only care about node/container resource metrics (use cAdvisor/metrics-server instead).
-
-[Source repository](https://github.com/kubernetes/kube-state-metrics)
-
 ### kube-binpacking-exporter
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
@@ -1089,6 +1070,25 @@ Exports precomputed Kubernetes cluster binpacking metrics.
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
 [Source repository](https://github.com/procore-oss/kube-binpacking-exporter)
+
+### kube-state-metrics
+
+**Categories:** Monitoring, metrics, logs and tracing<br>
+**Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer, Kubernetes Engineer<br>
+**Model:** Oss<br>
+**Status:** Active
+
+Kubernetes SIG Instrumentation service exposing Prometheus-format metrics derived from Kubernetes API object state; resource-usage collection by metrics-server or cAdvisor and storage/query by Prometheus are separate.
+
+**Use when**
+
+- You need scrapeable metrics for Kubernetes API object state, such as deployment replicas, pod phases and node conditions, for a separate monitoring system.
+
+**Consider alternatives when**
+
+- You need CPU/memory resource-usage metrics from metrics-server or cAdvisor, or expect kube-state-metrics to store, query or alert on the collected time series like Prometheus.
+
+[Official site](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) · [Documentation](https://github.com/kubernetes/kube-state-metrics/tree/main/docs) · [Source repository](https://github.com/kubernetes/kube-state-metrics)
 
 ### Kubernetes Monitoring Mixins
 
@@ -1361,38 +1361,38 @@ Search/analytics engine commonly used for logs (Elastic-alternative fork).
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Observability framework for traces/metrics/logs.
+Vendor-neutral observability umbrella project defining specifications, APIs, SDKs and instrumentation for traces, metrics and logs; the Collector is a separate implementation component, and storage/UI backends are external.
 
 **Use when**
 
-- You want vendor-neutral instrumentation and backend flexibility.
+- You need portable instrumentation and telemetry APIs/SDKs across services, with an independently chosen Collector pipeline and observability backend.
 
 **Consider alternatives when**
 
-- Your team isn't ready to learn OTel's configuration surface and maturity varies per language SDK.
+- You need an included telemetry storage/UI backend or uniform stability across every language, signal and component; check the relevant specification and implementation status first.
 
-[Official site](https://github.com/open-telemetry)
+[Official site](https://opentelemetry.io/) · [Documentation](https://opentelemetry.io/docs/)
 
 ### OpenTelemetry Collector
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Vendor-neutral collector to receive/process/export traces (and also logs/metrics) to backends.
+Vendor-neutral telemetry pipeline implementation using receivers, processors and exporters for traces, metrics and logs; the core framework repository and the contrib component repository are distinct.
 
 **Use when**
 
-- You want a single, vendor-agnostic telemetry pipeline.
+- You need a configurable agent or gateway to receive, process and export telemetry to separately selected backends, using a distribution containing the required components.
 
 **Consider alternatives when**
 
-- A simpler agent (Fluent Bit, Telegraf) already covers your single-signal needs.
+- You need a telemetry storage/UI backend or assume the core distribution includes every contrib receiver/exporter and that all components and signals have equal stability.
 
-[Official site](https://opentelemetry.io/docs/collector) · [Source repository](https://github.com/open-telemetry/opentelemetry-collector)
+[Official site](https://opentelemetry.io/docs/collector) · [Documentation](https://opentelemetry.io/docs/collector/) · [Source repository](https://github.com/open-telemetry/opentelemetry-collector)
 
 ### OpenTelemetry eBPF Instrumentation
 
@@ -1475,19 +1475,19 @@ Monitoring platform with commercial and agent-limited free editions; the former 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Monitoring and alerting toolkit.
+Open-source metrics monitoring server with a time-series database, PromQL and alerting rules; Alertmanager, exporters and client libraries are separate ecosystem components.
 
 **Use when**
 
-- Cloud-native/Kubernetes metrics with a pull model and PromQL.
+- You need labelled numeric time-series monitoring, PromQL and alerting rules with local storage and pull-based scraping of instrumented applications or exporters.
 
 **Consider alternatives when**
 
-- You need long-term storage out of the box or event/log-based monitoring.
+- You need log or trace storage, complete per-request billing data, or a distributed long-term metrics backend without adding separate components.
 
-[Official site](https://prometheus.io) · [Source repository](https://github.com/prometheus/prometheus)
+[Official site](https://prometheus.io) · [Documentation](https://prometheus.io/docs/introduction/overview/) · [Source repository](https://github.com/prometheus/prometheus)
 
 ### Prometheus Pushgateway
 
@@ -1760,19 +1760,19 @@ Plugin-driven server agent for collecting and reporting metrics (part of InfluxD
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Highly available Prometheus setup with long-term storage.
+Open-source components extending Prometheus with high availability, deduplicated global queries and long-term metrics storage in object stores; it is distinct from Prometheus and Grafana Mimir.
 
 **Use when**
 
-- Extending Prometheus with global querying and cheap object-store retention.
+- You need a global query view across Prometheus instances, deduplication of HA pairs and long-term object storage through the appropriate Thanos components.
 
 **Consider alternatives when**
 
-- Mimir's multi-tenancy or Cortex is a better fit, or you only have one small Prometheus instance.
+- You need only a standalone Prometheus server or expect the component stack to include managed operations, object-store capacity or every tenant access policy automatically.
 
-[Official site](https://thanos.io) · [Source repository](https://github.com/thanos-io/thanos)
+[Official site](https://thanos.io) · [Documentation](https://thanos.io/tip/thanos/getting-started.md/) · [Source repository](https://github.com/thanos-io/thanos)
 
 ### Tracetest
 
