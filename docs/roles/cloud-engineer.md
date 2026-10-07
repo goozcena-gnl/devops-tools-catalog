@@ -54,7 +54,6 @@
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
 | [Cast AI](https://cast.ai) | FinOps and sustainability | commercial | active |
-| [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [CertGames](https://certgames.com/) | Documentation, learning and career resources | documentation | needs-review |
 | [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | needs-review |
@@ -144,6 +143,7 @@
 | [InfraHQ](https://infrahq.com) | IAM, secrets and certificate management | oss | needs-review |
 | [JuiceFS](https://juicefs.com/en) | Databases, caching and data infrastructure | open-core | needs-review |
 | [JumpServer](https://www.jumpserver.com) | IAM, secrets and certificate management | oss | needs-review |
+| [k0rdent](https://docs.k0rdent.io/latest) | Kubernetes distributions and operations, Platform engineering and internal developer platforms | oss | active |
 | [K8s in a Box](https://github.com/moabukar/k8s-in-a-box) | Documentation, learning and career resources | documentation | needs-review |
 | [K8sGPT](https://k8sgpt.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [k8squest](https://github.com/Manoj-engineer/k8squest) | Documentation, learning and career resources | documentation | needs-review |
@@ -255,7 +255,7 @@
 | [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Skupper](https://skupper.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [SOPS](https://getsops.io) | IAM, secrets and certificate management | oss | needs-review |
-| [Spacelift](https://spacelift.io) | Infrastructure as Code | unknown | needs-review |
+| [Spacelift Deploy](https://spacelift.io) | Infrastructure as Code | commercial | active |
 | [Spin](https://spinframework.dev) | Serverless, edge and WebAssembly | oss | needs-review |
 | [Spot FinOps](https://spot.io/solutions/finops) | FinOps and sustainability | unknown | needs-review |
 | [Squid](https://www.squid-cache.org) | Databases, caching and data infrastructure | oss | needs-review |
@@ -277,7 +277,7 @@
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |
 | [terraform-skill](https://github.com/antonbabenko/terraform-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
-| [Terragrunt](https://terragrunt.gruntwork.io) | Infrastructure as Code | oss | needs-review |
+| [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
 | [Terrateam](https://terrateam.io) | Infrastructure as Code | open-core | needs-review |
 | [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
 | [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | oss | needs-review |

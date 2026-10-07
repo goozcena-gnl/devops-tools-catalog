@@ -41,7 +41,6 @@
 | [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | needs-review |
 | [Bottlerocket](https://bottlerocket.dev) | Virtualization, bare metal and homelab | oss | active |
 | [btop](https://github.com/aristocratos/btop) | Foundations, Linux and scripting | oss | active |
-| [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [CFEngine](https://cfengine.com) | Configuration management | open-core | needs-review |
 | [Chef Infra](https://www.chef.io/products/chef-infra) | Configuration management | commercial | active |
@@ -101,6 +100,7 @@
 | [JuiceFS](https://juicefs.com/en) | Databases, caching and data infrastructure | open-core | needs-review |
 | [Juju](https://canonical.com/juju) | Configuration management | oss | active |
 | [just](https://just.systems/) | Foundations, Linux and scripting | oss | active |
+| [k0rdent](https://docs.k0rdent.io/latest) | Kubernetes distributions and operations, Platform engineering and internal developer platforms | oss | active |
 | [k3sup](https://github.com/alexellis/k3sup) | Kubernetes distributions and operations | open-core | active |
 | [Kairos](https://kairos.io/) | Kubernetes distributions and operations | oss | active |
 | [Kata Containers](https://katacontainers.io) | Virtualization, bare metal and homelab | oss | active |
@@ -197,7 +197,7 @@
 | [Seesaw](https://github.com/google/seesaw) | Foundations, Linux and scripting | oss | active |
 | [ShellCheck](https://www.shellcheck.net) | Foundations, Linux and scripting | oss | needs-review |
 | [Shieldlist agent](https://git.lrob.net/Shieldlist/shieldlist-agent) | Application and cloud security, Emerging and experimental tools | oss | active |
-| [Spacelift](https://spacelift.io) | Infrastructure as Code | unknown | needs-review |
+| [Spacelift Deploy](https://spacelift.io) | Infrastructure as Code | commercial | active |
 | [Squid](https://www.squid-cache.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [Starship](https://starship.rs/) | Foundations, Linux and scripting | oss | active |
 | [Stash](https://stash.run) | Backup, disaster recovery and resilience | oss | needs-review |
@@ -214,7 +214,7 @@
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |
-| [Terragrunt](https://terragrunt.gruntwork.io) | Infrastructure as Code | oss | needs-review |
+| [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
 | [Terrateam](https://terrateam.io) | Infrastructure as Code | open-core | needs-review |
 | [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
 | [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | oss | needs-review |

@@ -273,8 +273,8 @@
   needs_review: true
 - id: cdk8s
   name: cdk8s
-  summary: Define Kubernetes applications and reusable abstractions in general-purpose programming languages
-    and synthesize them to YAML.
+  summary: Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python,
+    Java or Go; deployment is performed by separate tools.
   official_url: https://cdk8s.io
   repository_url: https://github.com/cdk8s-team/cdk8s
   categories:
@@ -283,25 +283,40 @@
   - Infrastructure as Code (IaC)
   roles:
   - devops-engineer
-  - cloud-engineer
   - platform-engineer
-  - infrastructure-systems-engineer
+  - kubernetes-engineer
+  - developer-experience-engineer
   lifecycle_stages:
   - plan
+  - develop
   - build
-  - deploy
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You want reusable Kubernetes abstractions in TypeScript, JavaScript, Python, Java or Go and will apply
+    the synthesized manifests with kubectl or a GitOps tool.
+  avoid_when:
+  - You need a deployment controller rather than manifest synthesis, or plain YAML is sufficient without
+    a programming-language toolchain.
+  deployment_models:
+  - local
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:devopstools_final.md#L172
-  needs_review: true
+  - https://github.com/cdk8s-team/cdk8s
+  - https://github.com/cdk8s-team/cdk8s/blob/master/LICENSE
+  - https://cdk8s.io/docs/latest/
+  - https://cdk8s.io/
+  - https://cdk8s.io/docs/latest/migrating-from-1.x/
+  - https://github.com/cdk8s-team/cdk8s-core
+  - https://github.com/cdk8s-team/cdk8s-core/releases
+  needs_review: false
+  documentation_url: https://cdk8s.io/docs/latest/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: cloudcustodian
   name: CloudCustodian
   summary: Cloud governance rules engine.
@@ -844,14 +859,15 @@
   - legacy:devopstools_final.md#L183
   needs_review: true
 - id: spacelift
-  name: Spacelift
-  summary: IaC automation with policy-as-code and collaboration.
+  name: Spacelift Deploy
+  summary: Commercial infrastructure-as-code orchestration control plane with worker pools and Open Policy
+    Agent governance, available as SaaS or self-hosted Spacelift.
   official_url: https://spacelift.io
   categories:
   - infrastructure-as-code
   subcategories:
-  - Collaborative Infrastructure
   - Infrastructure as Code (IaC)
+  - IaC Orchestration and Policy
   roles:
   - devops-engineer
   - cloud-engineer
@@ -859,27 +875,37 @@
   - infrastructure-systems-engineer
   lifecycle_stages:
   - plan
-  - build
   - deploy
+  - operate
   use_when:
-  - You need enterprise-grade IaC orchestration with drift detection and policies.
-  - You need enterprise-grade IaC orchestration with multi-tool support (Terraform, Pulumi, CloudFormation).
+  - You need governed IaC workflows for OpenTofu/Terraform, Terragrunt, Pulumi, CloudFormation, Kubernetes
+    or Ansible, with Rego policies and public or private workers.
   avoid_when:
-  - Budget is limited and simpler tooling covers your workflow.
-  - Budget is tight and Atlantis or native CI covers your needs.
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You only need a simple CI job, or assume private workers make the SaaS control plane self-hosted;
+    a full self-hosted installation is a separate deployment.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L122
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L58
   - legacy:devopstools_final.md#L184
   - legacy:devopstools_final.md#L223
-  needs_review: true
+  - https://docs.spacelift.io/
+  - https://docs.spacelift.io/legal/terms
+  - https://docs.spacelift.io/concepts/worker-pools
+  - https://docs.spacelift.io/self-hosted
+  - https://spacelift.io/pricing
+  - https://docs.spacelift.io/product/changelog
+  needs_review: false
+  documentation_url: https://docs.spacelift.io/
+  commercial_offering: true
 - id: terraform
   name: Terraform
   summary: Infrastructure provisioning tool.
@@ -1036,8 +1062,9 @@
   needs_review: true
 - id: terragrunt
   name: Terragrunt
-  summary: Terraform wrapper for DRY configurations.
-  official_url: https://terragrunt.gruntwork.io
+  summary: Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infrastructure with
+    reusable configuration, units and dependencies.
+  official_url: https://terragrunt.com/
   repository_url: https://github.com/gruntwork-io/terragrunt
   categories:
   - infrastructure-as-code
@@ -1053,20 +1080,34 @@
   - build
   - deploy
   use_when:
-  - You manage many Terraform modules/environments and want to keep configs DRY.
+  - You manage multiple OpenTofu or Terraform units and environments and need reusable configuration,
+    dependency ordering and coordinated runs.
   avoid_when:
-  - You have a simple, single-environment setup.
-  deployment_models: []
+  - You have a simple standalone OpenTofu or Terraform configuration that does not need an additional
+    orchestration layer.
+  deployment_models:
+  - local
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L62
   - legacy:devopstools_final.md#L189
-  needs_review: true
+  - https://github.com/gruntwork-io/terragrunt
+  - https://github.com/gruntwork-io/terragrunt/blob/main/LICENSE.txt
+  - https://terragrunt.com/
+  - https://docs.terragrunt.com/
+  - https://docs.terragrunt.com/getting-started/quick-start/
+  - https://www.gruntwork.io/blog/terragrunt-1-0-released
+  - https://github.com/gruntwork-io/terragrunt/releases
+  needs_review: false
+  documentation_url: https://docs.terragrunt.com/
+  license_spdx: MIT
+  commercial_offering: true
+  repository_archived: false
 - id: terrateam
   name: Terrateam
   summary: GitOps-style Terraform pull-request automation with collaboration features.

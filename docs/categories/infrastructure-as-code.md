@@ -160,21 +160,21 @@ NET Blazor app with REST API for generating and validating Azure resource names 
 ### cdk8s
 
 **Categories:** Infrastructure as Code<br>
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
+**Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Define Kubernetes applications and reusable abstractions in general-purpose programming languages and synthesize them to YAML.
+Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python, Java or Go; deployment is performed by separate tools.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want reusable Kubernetes abstractions in TypeScript, JavaScript, Python, Java or Go and will apply the synthesized manifests with kubectl or a GitOps tool.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a deployment controller rather than manifest synthesis, or plain YAML is sufficient without a programming-language toolchain.
 
-[Official site](https://cdk8s.io) · [Source repository](https://github.com/cdk8s-team/cdk8s)
+[Official site](https://cdk8s.io) · [Documentation](https://cdk8s.io/docs/latest/) · [Source repository](https://github.com/cdk8s-team/cdk8s)
 
 ### CDKTF
 
@@ -500,26 +500,24 @@ Developer-centric, platform-agnostic workload specification for defining runtime
 
 [Official site](https://score.dev) · [Source repository](https://github.com/score-spec/spec)
 
-### Spacelift
+### Spacelift Deploy
 
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-IaC automation with policy-as-code and collaboration.
+Commercial infrastructure-as-code orchestration control plane with worker pools and Open Policy Agent governance, available as SaaS or self-hosted Spacelift.
 
 **Use when**
 
-- You need enterprise-grade IaC orchestration with drift detection and policies.
-- You need enterprise-grade IaC orchestration with multi-tool support (Terraform, Pulumi, CloudFormation).
+- You need governed IaC workflows for OpenTofu/Terraform, Terragrunt, Pulumi, CloudFormation, Kubernetes or Ansible, with Rego policies and public or private workers.
 
 **Consider alternatives when**
 
-- Budget is limited and simpler tooling covers your workflow.
-- Budget is tight and Atlantis or native CI covers your needs.
+- You only need a simple CI job, or assume private workers make the SaaS control plane self-hosted; a full self-hosted installation is a separate deployment.
 
-[Official site](https://spacelift.io)
+[Official site](https://spacelift.io) · [Documentation](https://docs.spacelift.io/)
 
 ### Terraform
 
@@ -621,19 +619,19 @@ Generate and validate Terraform provider/plugin documentation from source.
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Terraform wrapper for DRY configurations.
+Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infrastructure with reusable configuration, units and dependencies.
 
 **Use when**
 
-- You manage many Terraform modules/environments and want to keep configs DRY.
+- You manage multiple OpenTofu or Terraform units and environments and need reusable configuration, dependency ordering and coordinated runs.
 
 **Consider alternatives when**
 
-- You have a simple, single-environment setup.
+- You have a simple standalone OpenTofu or Terraform configuration that does not need an additional orchestration layer.
 
-[Official site](https://terragrunt.gruntwork.io) · [Source repository](https://github.com/gruntwork-io/terragrunt)
+[Official site](https://terragrunt.com/) · [Documentation](https://docs.terragrunt.com/) · [Source repository](https://github.com/gruntwork-io/terragrunt)
 
 ### Terrateam
 

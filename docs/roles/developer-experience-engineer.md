@@ -38,8 +38,9 @@
 | [Cal.com](https://cal.com) | Workflow automation and ChatOps | oss | needs-review |
 | [Camunda](https://camunda.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [CC Switch](https://ccswitch.io/en) | Developer experience and local environments | oss | active |
+| [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | active |
 | [CircleCI](https://circleci.com) | CI, build and testing | commercial | active |
-| [CloudBees](https://www.cloudbees.com) | CI, build and testing | open-core | needs-review |
+| [CloudBees CI](https://docs.cloudbees.com/docs/cloudbees-ci/latest/) | CI, build and testing | commercial | active |
 | [Codacy](https://www.codacy.com/) | CI, build and testing, Application and cloud security | commercial | active |
 | [code-server](https://github.com/coder/code-server) | Developer experience and local environments | open-core | active |
 | [Codeberg](https://codeberg.org/) | Source control and repository management | free-saas | active |
@@ -189,15 +190,14 @@
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | needs-review |
 | [Slack](https://slack.com/) | Workflow automation and ChatOps | commercial | active |
 | [Spec Kit](https://github.com/github/spec-kit) | Developer experience and local environments | oss | needs-review |
-| [Spinnaker](https://spinnaker.io) | CI, build and testing | oss | needs-review |
 | [StackBlitz](https://stackblitz.com/) | Developer experience and local environments | commercial | active |
 | [Starlight](https://starlight.astro.build) | Developer experience and local environments | documentation | needs-review |
 | [Superpowers](https://github.com/obra/superpowers) | Developer experience and local environments | oss | active |
 | [Superset (agent workspace)](https://superset.sh/) | Developer experience and local environments | source-available | active |
 | [Tabby](https://www.tabbyml.com) | Developer experience and local environments | oss | needs-review |
 | [Tabby (Terminal)](https://tabby.sh) | Developer experience and local environments | oss | needs-review |
-| [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | unknown | needs-review |
-| [Tekton](https://tekton.dev) | CI, build and testing | oss | needs-review |
+| [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | commercial | active |
+| [Tekton](https://tekton.dev) | CI, build and testing, CD, GitOps, release and promotion | oss | active |
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |
 | [Termic](https://termic.dev/) | Developer experience and local environments | oss | active |
 | [terminal-browser](https://terminal-browser.com/) | Developer experience and local environments | oss | active |

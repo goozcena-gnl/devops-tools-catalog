@@ -473,7 +473,8 @@
   needs_review: true
 - id: nexus-repository
   name: Nexus Repository
-  summary: Universal artifact repository manager.
+  summary: Sonatype artifact repository family with open-source Core, separately licensed Community and
+    Professional editions, and managed Cloud hosting.
   official_url: https://www.sonatype.com/products/sonatype-nexus-repository
   repository_url: https://github.com/sonatype/nexus-public
   categories:
@@ -488,20 +489,34 @@
   - build
   - release
   use_when:
-  - '* You need a self-hosted, multi-format artifact repository (especially strong for Java/Maven).'
+  - You need centralized storage and proxying of build artifacts, with self-hosted or managed Cloud deployment
+    and edition-specific format support.
   avoid_when:
-  - '* You need advanced HA or replication features only in the Pro tier and can''t justify the cost.'
-  deployment_models: []
+  - You require unrestricted redistribution of the Community distribution, or enterprise HA and replication
+    without a Professional licence.
+  deployment_models:
+  - self-hosted
+  - hosted-saas
   license_model: open-core
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L124
   - legacy:devopstools_final.md#L379
-  needs_review: true
+  - https://www.sonatype.com/products/sonatype-nexus-repository
+  - https://github.com/sonatype/nexus-public
+  - https://github.com/sonatype/nexus-public/blob/main/LICENSE.txt
+  - https://www.sonatype.com/dnt/usage/community-edition-eula
+  - https://help.sonatype.com/en/sonatype-nexus-repository.html
+  - https://help.sonatype.com/en/nexus-repository-feature-matrix.html
+  - https://github.com/sonatype/nexus-public/releases
+  needs_review: false
+  documentation_url: https://help.sonatype.com/en/sonatype-nexus-repository.html
+  commercial_offering: true
+  repository_archived: false
 - id: opendepot
   name: OpenDepot
   summary: Kubernetes-native registry for publishing and consuming OpenTofu and Terraform providers and modules.

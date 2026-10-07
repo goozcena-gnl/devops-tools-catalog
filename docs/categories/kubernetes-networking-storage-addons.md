@@ -819,19 +819,19 @@ Official plugin collection for the Headlamp Kubernetes UI.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Kubernetes package manager.
 
 **Use when**
 
-- You need templated, versioned, reusable Kubernetes application packages.
+- You need reusable, versioned Kubernetes charts with installation, upgrades and rollback through Helm.
 
 **Consider alternatives when**
 
-- Simple apps with static manifests work fine with Kustomize or plain kubectl.
+- Your application only needs a few static manifests and chart templating or release management adds unnecessary complexity.
 
-[Official site](https://helm.sh) · [Source repository](https://github.com/helm/helm)
+[Official site](https://helm.sh) · [Documentation](https://helm.sh/docs/) · [Source repository](https://github.com/helm/helm)
 
 ### Helm Chart Generator
 

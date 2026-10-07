@@ -2427,36 +2427,6 @@
   sources:
   - legacy:devopstools_final.md#L942
   needs_review: true
-- id: k0rdent
-  name: k0rdent
-  summary: Kubernetes security and compliance scanner.
-  official_url: https://docs.k0rdent.io/latest
-  repository_url: https://github.com/k0rdent/k0rdent
-  categories:
-  - application-cloud-security
-  subcategories:
-  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
-  roles:
-  - devsecops-engineer
-  - cloud-security-engineer
-  lifecycle_stages:
-  - test
-  - secure
-  use_when:
-  - Kubernetes-native compliance checks.
-  avoid_when:
-  - You need broader cloud security posture beyond K8s.
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:6_Security/README.md#L29
-  - legacy:devopstools_final.md#L871
-  needs_review: true
 - id: k8s-sidecar-secret-forge
   name: k8s Sidecar Secret Forge
   summary: Kubernetes secret management sidecar.
