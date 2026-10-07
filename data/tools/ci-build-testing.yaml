@@ -621,13 +621,14 @@
   - https://circleci.com/pricing/
   needs_review: false
 - id: cloudbees
-  name: CloudBees
-  summary: Enterprise CI/CD built around Jenkins.
-  official_url: https://www.cloudbees.com
+  name: CloudBees CI
+  summary: Commercial Jenkins-based continuous integration product with proprietary controller management,
+    governance and enterprise support.
+  official_url: https://docs.cloudbees.com/docs/cloudbees-ci/latest/
   categories:
   - ci-build-testing
   subcategories:
-  - CI/CD Platforms
+  - Enterprise Continuous Integration
   roles:
   - devops-engineer
   - developer-experience-engineer
@@ -636,20 +637,29 @@
   - build
   - test
   use_when:
-  - '* You need enterprise Jenkins with governance, RBAC, and support.'
+  - You need enterprise governance, supported plugins and centralized management of Jenkins controllers
+    on Kubernetes or traditional infrastructure.
   avoid_when:
-  - '* You want to avoid Jenkins complexity or vendor lock-in.'
-  deployment_models: []
-  license_model: open-core
-  maturity: unknown
-  status: needs-review
+  - You need the open-source Jenkins licence for the entire product, or are selecting CloudBees Unify
+    or CD/RO rather than CloudBees CI.
+  deployment_models:
+  - self-hosted
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L24
   - legacy:devopstools_final.md#L318
-  needs_review: true
+  - https://docs.cloudbees.com/docs/cloudbees-ci/latest/
+  - https://docs.cloudbees.com/docs/cloudbees-ci/latest/traditional-onboarding
+  - https://docs.cloudbees.com/docs/cloudbees-common/latest/subscription-agreement/
+  - https://docs.cloudbees.com/docs/release-notes/latest/cloudbees-ci/
+  needs_review: false
+  documentation_url: https://docs.cloudbees.com/docs/cloudbees-ci/latest/
+  commercial_offering: true
 - id: codacy
   name: Codacy
   summary: Hosted code quality and security analysis platform that integrates findings and coverage into
@@ -2120,40 +2130,9 @@
   - legacy:7_Development-Collaboration/README.md#L17
   - legacy:devopstools_final.md#L1040
   needs_review: true
-- id: spinnaker
-  name: Spinnaker
-  summary: Multi-cloud continuous delivery platform.
-  official_url: https://spinnaker.io
-  repository_url: https://github.com/spinnaker/spinnaker
-  categories:
-  - ci-build-testing
-  subcategories:
-  - CI/CD Platforms
-  roles:
-  - devops-engineer
-  - developer-experience-engineer
-  - release-engineer
-  lifecycle_stages:
-  - build
-  - test
-  use_when:
-  - '* You deploy across multiple clouds and need advanced deployment strategies (canary, blue/green).'
-  avoid_when:
-  - '* You have a single small cluster; Spinnaker''s operational overhead is significant.'
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:3_CI-CD-Automation/README.md#L60
-  - legacy:devopstools_final.md#L339
-  needs_review: true
 - id: teamcity
   name: TeamCity
-  summary: CI/CD server by JetBrains.
+  summary: JetBrains commercial CI/CD product offered as TeamCity On-Premises and TeamCity Cloud.
   official_url: https://www.jetbrains.com/teamcity
   categories:
   - ci-build-testing
@@ -2167,51 +2146,85 @@
   - build
   - test
   use_when:
-  - '* You use JetBrains IDEs and want deep integration with excellent build configuration UI.'
+  - You need managed or self-hosted CI with build agents, a graphical configuration interface, and Kotlin
+    configuration as code.
   avoid_when:
-  - '* You prefer pipeline-as-code or need a large open-source plugin ecosystem.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an open-source CI server or unrestricted use beyond the free Professional or Cloud subscription
+    limits.
+  deployment_models:
+  - self-hosted
+  - hosted-saas
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L62
   - legacy:devopstools_final.md#L340
-  needs_review: true
+  - https://www.jetbrains.com/teamcity
+  - https://www.jetbrains.com/legal/docs/teamcity/license/
+  - https://www.jetbrains.com/help/teamcity/licensing-policy.html
+  - https://www.jetbrains.com/help/teamcity/teamcity-documentation.html
+  - https://www.jetbrains.com/legal/docs/teamcity/teamcity_cloud/
+  - https://www.jetbrains.com/help/teamcity/cloud/teamcity-cloud-documentation.html
+  - https://www.jetbrains.com/help/teamcity/kotlin-dsl.html
+  needs_review: false
+  documentation_url: https://www.jetbrains.com/help/teamcity/teamcity-documentation.html
+  commercial_offering: true
 - id: tekton
   name: Tekton
-  summary: Kubernetes-native CI/CD framework.
+  summary: Kubernetes-native CI/CD framework and ecosystem built around Tekton Pipelines, with complementary
+    triggers, tooling and supply-chain components.
   official_url: https://tekton.dev
   repository_url: https://github.com/tektoncd/pipeline
   categories:
   - ci-build-testing
+  - cd-gitops-release-promotion
   subcategories:
-  - CI/CD Platforms
+  - Kubernetes-native CI/CD
   roles:
   - devops-engineer
   - developer-experience-engineer
   - release-engineer
+  - platform-engineer
+  - kubernetes-engineer
   lifecycle_stages:
   - build
   - test
+  - release
+  - deploy
   use_when:
-  - '* You want a composable, Kubernetes-native CI/CD building block.'
+  - You operate Kubernetes and need composable CI/CD tasks and pipelines, adding other Tekton components
+    where required.
   avoid_when:
-  - '* You don''t run Kubernetes or want a batteries-included CI/CD experience.'
-  deployment_models: []
+  - You do not operate Kubernetes or need a complete managed CI service without assembling and maintaining
+    pipeline components.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L64
   - legacy:devopstools_final.md#L341
-  needs_review: true
+  - https://tekton.dev/docs/
+  - https://github.com/tektoncd/pipeline
+  - https://github.com/tektoncd/pipeline/blob/main/LICENSE
+  - https://github.com/tektoncd/cli/blob/main/LICENSE
+  - https://github.com/tektoncd/triggers/blob/main/LICENSE
+  - https://github.com/tektoncd/chains/blob/main/LICENSE
+  - https://github.com/tektoncd/pipeline/releases
+  - https://www.cncf.io/projects/tekton/
+  - https://tekton.dev/blog/2026/03/25/tekton-joins-the-cncf-as-an-incubating-project/
+  needs_review: false
+  documentation_url: https://tekton.dev/docs/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: test-kitchen
   name: Test Kitchen
   summary: Test infrastructure code on various platforms.

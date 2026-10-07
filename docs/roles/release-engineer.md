@@ -37,7 +37,7 @@
 | [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) | CI, build and testing | oss | active |
 | [cargo-vet](https://mozilla.github.io/cargo-vet/) | Software supply-chain security | oss | active |
 | [CircleCI](https://circleci.com) | CI, build and testing | commercial | active |
-| [CloudBees](https://www.cloudbees.com) | CI, build and testing | open-core | needs-review |
+| [CloudBees CI](https://docs.cloudbees.com/docs/cloudbees-ci/latest/) | CI, build and testing | commercial | active |
 | [Cloudsmith](https://cloudsmith.com/) | Artifact and package management | commercial | active |
 | [Codacy](https://www.codacy.com/) | CI, build and testing, Application and cloud security | commercial | active |
 | [Codeberg](https://codeberg.org/) | Source control and repository management | free-saas | active |
@@ -113,7 +113,7 @@
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
 | [Nektos Act](https://nektosact.com) | CI, build and testing | oss | needs-review |
 | [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |
-| [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) | Artifact and package management | open-core | needs-review |
+| [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) | Artifact and package management | open-core | active |
 | [Octopus Deploy](https://octopus.com) | CD, GitOps, release and promotion | commercial | active |
 | [Oh My Git!](https://ohmygit.org) | Source control and repository management | documentation | needs-review |
 | [OneDev](https://onedev.io) | CI, build and testing | oss | needs-review |
@@ -144,10 +144,10 @@
 | [Semaphore CI](https://semaphoreci.com) | CI, build and testing | unknown | needs-review |
 | [ServerSpec](https://serverspec.org) | CI, build and testing | oss | needs-review |
 | [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | Software supply-chain security | oss | needs-review |
-| [Spinnaker](https://spinnaker.io) | CI, build and testing | oss | needs-review |
+| [Spinnaker](https://spinnaker.io) | CD, GitOps, release and promotion | oss | active |
 | [StepSecurity](https://www.stepsecurity.io/) | Software supply-chain security | commercial | active |
-| [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | unknown | needs-review |
-| [Tekton](https://tekton.dev) | CI, build and testing | oss | needs-review |
+| [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | commercial | active |
+| [Tekton](https://tekton.dev) | CI, build and testing, CD, GitOps, release and promotion | oss | active |
 | [Tekton Chains](https://tekton.dev/docs/chains/) | Software supply-chain security, CI, build and testing | oss | active |
 | [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | needs-review |
 | [Testcontainers](https://github.com/testcontainers) | CI, build and testing | open-core | needs-review |

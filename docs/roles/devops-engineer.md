@@ -117,7 +117,7 @@
 | [cargo-nextest](https://nexte.st/) | CI, build and testing | oss | active |
 | [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) | CI, build and testing | oss | active |
 | [CC Switch](https://ccswitch.io/en) | Developer experience and local environments | oss | active |
-| [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | needs-review |
+| [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | active |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | needs-review |
 | [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
@@ -140,7 +140,7 @@
 | [Clone-Wars](https://github.com/GorvGoyl/Clone-Wars) | Emerging and experimental tools | oss | needs-review |
 | [Clonezilla](https://clonezilla.org/) | Backup, disaster recovery and resilience | oss | active |
 | [Cloud Run functions](https://cloud.google.com/functions) | Serverless, edge and WebAssembly | commercial | active |
-| [CloudBees](https://www.cloudbees.com) | CI, build and testing | open-core | needs-review |
+| [CloudBees CI](https://docs.cloudbees.com/docs/cloudbees-ci/latest/) | CI, build and testing | commercial | active |
 | [CloudCustodian](https://cloudcustodian.io) | Infrastructure as Code | oss | active |
 | [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | commercial | active |
 | [Cloudify](https://cloudify.co) | Cloud platforms and cloud management | oss | active |
@@ -448,7 +448,7 @@
 | [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |
 | [New Relic](https://newrelic.com/platform) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Nextcloud](https://nextcloud.com/) | Virtualization, bare metal and homelab | open-core | active |
-| [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) | Artifact and package management | open-core | needs-review |
+| [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) | Artifact and package management | open-core | active |
 | [NGINX](https://nginx.org) | Kubernetes networking, storage and add-ons | open-core | active |
 | [Ninite](https://ninite.com) | Developer experience and local environments | unknown | needs-review |
 | [Nix](https://nixos.org) | Containers and image tooling | oss | needs-review |
@@ -595,10 +595,10 @@
 | [Slack](https://slack.com/) | Workflow automation and ChatOps | commercial | active |
 | [Snip](https://github.com/edouard-claude/snip) | Emerging and experimental tools | oss | needs-review |
 | [Snorlax](https://github.com/moonbeam-nyc/snorlax) | Emerging and experimental tools | oss | needs-review |
-| [Spacelift](https://spacelift.io) | Infrastructure as Code | unknown | needs-review |
+| [Spacelift Deploy](https://spacelift.io) | Infrastructure as Code | commercial | active |
 | [Spec Kit](https://github.com/github/spec-kit) | Developer experience and local environments | oss | needs-review |
 | [Spin](https://spinframework.dev) | Serverless, edge and WebAssembly | oss | needs-review |
-| [Spinnaker](https://spinnaker.io) | CI, build and testing | oss | needs-review |
+| [Spinnaker](https://spinnaker.io) | CD, GitOps, release and promotion | oss | active |
 | [Squid](https://www.squid-cache.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [sshm](https://github.com/Gu1llaum-3/sshm) | Emerging and experimental tools | oss | needs-review |
 | [Starlight](https://starlight.astro.build) | Developer experience and local environments | documentation | needs-review |
@@ -622,9 +622,9 @@
 | [Tabby](https://www.tabbyml.com) | Developer experience and local environments | oss | needs-review |
 | [Tabby (Terminal)](https://tabby.sh) | Developer experience and local environments | oss | needs-review |
 | [tailcat](https://tailscale.com/tailcat) | Foundations, Linux and scripting | oss | active |
-| [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | unknown | needs-review |
+| [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | commercial | active |
 | [TechOps Examples](https://www.techopsexamples.com) | Documentation, learning and career resources | documentation | needs-review |
-| [Tekton](https://tekton.dev) | CI, build and testing | oss | needs-review |
+| [Tekton](https://tekton.dev) | CI, build and testing, CD, GitOps, release and promotion | oss | active |
 | [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |
 | [Termic](https://termic.dev/) | Developer experience and local environments | oss | active |
@@ -635,7 +635,7 @@
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |
-| [Terragrunt](https://terragrunt.gruntwork.io) | Infrastructure as Code | oss | needs-review |
+| [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
 | [Terrateam](https://terrateam.io) | Infrastructure as Code | open-core | needs-review |
 | [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
 | [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | needs-review |

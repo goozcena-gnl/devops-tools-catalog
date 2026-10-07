@@ -1357,20 +1357,31 @@
   - deploy
   - operate
   use_when:
-  - You need templated, versioned, reusable Kubernetes application packages.
+  - You need reusable, versioned Kubernetes charts with installation, upgrades and rollback through Helm.
   avoid_when:
-  - Simple apps with static manifests work fine with Kustomize or plain kubectl.
-  deployment_models: []
+  - Your application only needs a few static manifests and chart templating or release management adds
+    unnecessary complexity.
+  deployment_models:
+  - local
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L91
   - legacy:devopstools_final.md#L563
-  needs_review: true
+  - https://helm.sh/docs/
+  - https://github.com/helm/helm
+  - https://github.com/helm/helm/blob/main/LICENSE
+  - https://github.com/helm/helm/releases
+  - https://helm.sh/blog/helm-4-released/
+  - https://helm.sh/blog/helm-v3-end-of-life/
+  needs_review: false
+  documentation_url: https://helm.sh/docs/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: helm-chart-generator
   name: Helm Chart Generator
   summary: Tool for generating Helm charts from templates.

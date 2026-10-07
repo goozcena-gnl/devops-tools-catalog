@@ -276,19 +276,19 @@ Search engine for Helm charts and Kubernetes packages.
 **Categories:** Artifact and package management<br>
 **Roles:** DevOps Engineer, DevSecOps Engineer, Release Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Universal artifact repository manager.
+Sonatype artifact repository family with open-source Core, separately licensed Community and Professional editions, and managed Cloud hosting.
 
 **Use when**
 
-- * You need a self-hosted, multi-format artifact repository (especially strong for Java/Maven).
+- You need centralized storage and proxying of build artifacts, with self-hosted or managed Cloud deployment and edition-specific format support.
 
 **Consider alternatives when**
 
-- * You need advanced HA or replication features only in the Pro tier and can't justify the cost.
+- You require unrestricted redistribution of the Community distribution, or enterprise HA and replication without a Professional licence.
 
-[Official site](https://www.sonatype.com/products/sonatype-nexus-repository) · [Source repository](https://github.com/sonatype/nexus-public)
+[Official site](https://www.sonatype.com/products/sonatype-nexus-repository) · [Documentation](https://help.sonatype.com/en/sonatype-nexus-repository.html) · [Source repository](https://github.com/sonatype/nexus-public)
 
 ### OpenDepot
 

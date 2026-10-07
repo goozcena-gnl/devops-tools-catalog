@@ -857,6 +857,52 @@
   - legacy:10_Miscellaneous/README.md#L10
   - legacy:devopstools_final.md#L1269
   needs_review: true
+- id: spinnaker
+  name: Spinnaker
+  summary: Open-source multi-cloud continuous delivery platform for orchestrating application releases
+    and deployment strategies.
+  official_url: https://spinnaker.io
+  repository_url: https://github.com/spinnaker/spinnaker
+  categories:
+  - cd-gitops-release-promotion
+  subcategories:
+  - Multi-cloud Continuous Delivery
+  roles:
+  - devops-engineer
+  - release-engineer
+  - platform-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  - operate
+  use_when:
+  - You need multi-cloud delivery pipelines with canary or blue-green strategies and can operate Spinnaker
+    using the documented native Kustomize installation.
+  avoid_when:
+  - You only need a small single-cluster deployment workflow, or require the removed Halyard installation
+    mechanism instead of native Kustomize.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-07'
+  sources:
+  - legacy:3_CI-CD-Automation/README.md#L60
+  - legacy:devopstools_final.md#L339
+  - https://github.com/spinnaker/spinnaker
+  - https://github.com/spinnaker/spinnaker/blob/main/LICENSE
+  - https://spinnaker.io/docs/
+  - https://spinnaker.io/docs/setup/install/
+  - https://spinnaker.io/docs/releases/
+  - https://cd.foundation/blog/2026/09/30/project-updates-sept-2026/
+  needs_review: false
+  documentation_url: https://spinnaker.io/docs/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: tofu-controller
   name: Tofu Controller
   summary: Flux controller for managing Terraform and OpenTofu resources the GitOps way.

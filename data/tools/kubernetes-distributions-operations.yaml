@@ -958,6 +958,54 @@
   - https://github.com/0dotxyz/json2k8s
   - https://github.com/0dotxyz/json2k8s/blob/main/LICENSE
   needs_review: false
+- id: k0rdent
+  name: k0rdent
+  summary: Kubernetes-native platform for distributed cluster lifecycle and multi-cluster service management.
+  official_url: https://docs.k0rdent.io/latest
+  repository_url: https://github.com/k0rdent/k0rdent
+  categories:
+  - kubernetes-distributions-operations
+  - platform-engineering-idp
+  subcategories:
+  - Distributed Kubernetes Management
+  - Cluster and Service Lifecycle Management
+  roles:
+  - platform-engineer
+  - kubernetes-engineer
+  - cloud-engineer
+  - infrastructure-systems-engineer
+  lifecycle_stages:
+  - plan
+  - deploy
+  - operate
+  use_when:
+  - You need declarative provisioning and lifecycle management of Kubernetes clusters and services across
+    multiple infrastructure providers.
+  avoid_when:
+  - You only need a vulnerability or compliance scanner, or a single cluster without a distributed management
+    control plane.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  maturity: growing
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-07'
+  sources:
+  - legacy:6_Security/README.md#L29
+  - legacy:devopstools_final.md#L871
+  - https://docs.k0rdent.io/latest/
+  - https://github.com/k0rdent/k0rdent
+  - https://github.com/k0rdent/k0rdent/blob/main/LICENSE
+  - https://github.com/k0rdent/kcm/releases/tag/v1.12.0
+  - https://github.com/k0rdent/community/blob/main/GOVERNANCE.md
+  - https://docs.mirantis.com/k0rdent-enterprise/latest/release-notes/release-notes-v1.4.1/
+  needs_review: false
+  documentation_url: https://docs.k0rdent.io/latest/
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  repository_archived: false
 - id: k0s
   name: k0s
   summary: Kubernetes distribution.
