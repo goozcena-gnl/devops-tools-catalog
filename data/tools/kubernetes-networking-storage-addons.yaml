@@ -406,13 +406,15 @@
   needs_review: true
 - id: cert-manager
   name: cert-manager
-  summary: X.509 certificate management for Kubernetes.
+  summary: Kubernetes X.509 certificate-management controller issuing and renewing certificates through
+    configured issuers such as ACME and external CAs; it is distinct from Let's Encrypt, certbot and general
+    secrets backends.
   official_url: https://cert-manager.io
   repository_url: https://github.com/cert-manager/cert-manager
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - Certificate management
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -421,20 +423,34 @@
   - deploy
   - operate
   use_when:
-  - You need automated TLS certificate issuance and renewal (Let's Encrypt, Vault, etc.).
+  - You need Kubernetes certificate resources with automated issuance and renewal through a configured
+    ACME or other supported issuer.
   avoid_when:
-  - Your ingress controller or service mesh already handles certificate lifecycle.
-  deployment_models: []
+  - You need a general secrets backend, non-Kubernetes certbot workflow or expect the controller itself
+    to be Let's Encrypt or an external PKI vendor.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L77
   - legacy:devopstools_final.md#L538
-  needs_review: true
+  - https://github.com/cert-manager/cert-manager
+  - https://github.com/cert-manager/cert-manager/blob/master/LICENSE
+  - https://github.com/cert-manager/cert-manager/releases
+  - https://cert-manager.io/docs/
+  - https://cert-manager.io/docs/configuration/
+  - https://github.com/cert-manager/community/blob/main/GOVERNANCE.md
+  - https://github.com/cert-manager/community/blob/main/MAINTAINERS.md
+  - https://www.cncf.io/projects/cert-manager/
+  needs_review: false
+  documentation_url: https://cert-manager.io/docs/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: chisel-operator
   name: Chisel Operator
   summary: Operator for managing Chisel tunnels in Kubernetes.
@@ -2519,13 +2535,14 @@
   needs_review: true
 - id: kyverno
   name: Kyverno
-  summary: Kubernetes policy engine.
+  summary: Kubernetes policy engine for validation, mutation, generation, cleanup and image verification
+    with YAML/CEL policies; signing tools, OPA/Gatekeeper and other Kyverno subprojects remain separate.
   official_url: https://kyverno.io
   repository_url: https://github.com/kyverno/kyverno
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - Policy validation, mutation and verification
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -2533,21 +2550,35 @@
   lifecycle_stages:
   - deploy
   - operate
+  - secure
   use_when:
-  - You need Kubernetes-native policy enforcement without learning Rego (validate, mutate, generate).
+  - You need Kubernetes policy validation, mutation, generation, cleanup or image verification using supported
+    policy types, with signing and trust configuration supplied separately.
   avoid_when:
-  - You already have OPA Gatekeeper deployed and your team knows Rego.
-  deployment_models: []
+  - You expect policy enforcement to replace Kubernetes RBAC/API-server security, generate artifact signatures
+    itself or inherit every capability of OPA, Gatekeeper or companion Kyverno projects.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L118
   - legacy:devopstools_final.md#L599
-  needs_review: true
+  - https://github.com/kyverno/kyverno
+  - https://github.com/kyverno/kyverno/blob/main/LICENSE
+  - https://github.com/kyverno/kyverno/releases
+  - https://kyverno.io/docs/
+  - https://github.com/kyverno/kyverno/blob/main/README.md
+  - https://github.com/kyverno/community/blob/main/GOVERNANCE.md
+  - https://www.cncf.io/projects/kyverno/
+  needs_review: false
+  documentation_url: https://kyverno.io/docs/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: linkerd
   name: Linkerd
   summary: Lightweight service mesh for Kubernetes.

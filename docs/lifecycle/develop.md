@@ -46,7 +46,6 @@
 - [Codex](https://github.com/openai/codex) — Lightweight coding agent from OpenAI that runs in your terminal.
 - [Continue](https://www.continue.dev) — Open-source AI code assistant.
 - [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) — Commercial SOAR platform (Community/Starter/Enterprise licensing). Content packs are open on GitHub.
-- [cosign (sigstore)](https://docs.sigstore.dev/cosign) — Container/artifact signing and verification.
 - [CRC](https://crc.dev/) — Local virtual-machine environment for running OpenShift, MicroShift, or Podman for development and testing.
 - [CUE](https://cuelang.org) — Data validation language and tool.
 - [curl](https://curl.se) — Command-line client and transfer library for working with URL-based network protocols.
@@ -89,6 +88,7 @@
 - [GitHub Codespaces](https://github.com/features/codespaces) — Hosted cloud development environments integrated with GitHub.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 - [GitLab University](https://university.gitlab.com) — Training resources for GitLab, CI/CD, and DevOps practices.
+- [Gitleaks](https://gitleaks.io) — MIT-licensed CLI detecting secrets in Git history, files and standard input for local, pre-commit and CI use; upstream is feature-complete with future releases limited to security patches, distinct from hosted secret-scanning services.
 - [gitsign (sigstore)](https://github.com/sigstore/gitsign) — Keyless Git commit signing using Sigstore.
 - [glances](https://nicolargo.github.io/glances) — Cross-platform system monitoring tool (top/htop-like).
 - [Go](https://go.dev/) — Compiled language and toolchain used to build portable infrastructure services and command-line tools.

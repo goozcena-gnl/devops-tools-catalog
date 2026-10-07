@@ -332,24 +332,24 @@ Secure remote access to systems.
 
 [Official site](https://boundaryproject.io) · [Source repository](https://github.com/hashicorp/boundary)
 
-### HashiCorp Vault
+### HashiCorp Vault Community Edition
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Source Available<br>
-**Status:** Needs Review
+**Status:** Active
 
-Secure secret storage and access.
+Source-available Vault Community Edition for secrets storage, dynamic credentials and encryption services under BUSL-1.1; Vault Enterprise and HCP Vault offerings have separate commercial product terms.
 
 **Use when**
 
-- Centralized, multi-cloud secrets with dynamic credentials and encryption-as-a-service.
+- You need a self-hosted secrets backend, dynamic credentials or encryption services and can comply with the applicable Community Edition BUSL grant, or choose separately licensed Enterprise/hosted offerings.
 
 **Consider alternatives when**
 
-- For simple single-cloud setups where the native secrets manager suffices.
+- You require the current Community source to have an OSI open-source grant or expect its BUSL licence to cover Enterprise, HCP services or every plugin/SDK; evaluate each product/component grant separately.
 
-[Official site](https://www.vaultproject.io) · [Source repository](https://github.com/hashicorp/vault)
+[Official site](https://developer.hashicorp.com/vault) · [Documentation](https://developer.hashicorp.com/vault/docs) · [Source repository](https://github.com/hashicorp/vault)
 
 ### IBM Guardium Key Lifecycle Manager
 
@@ -413,19 +413,19 @@ Open-source bastion host / privileged access management (PAM) platform.
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open source identity and access management.
+Upstream open-source identity and access-management server providing SSO, identity federation and OpenID Connect, OAuth 2.0 and SAML for applications and services; Red Hat build packaging and managed IAM services are separate.
 
 **Use when**
 
-- Self-hosted SSO/OIDC/SAML with user federation and fine-grained authorization.
+- You need a self-hosted IAM/SSO server for applications and services using supported OIDC, OAuth 2.0 or SAML integrations and identity federation.
 
 **Consider alternatives when**
 
-- You only need IdP federation without user management (use Dex) or want a managed service.
+- You require a managed IAM service from upstream itself, vendor-product support terms inherited automatically, or only a narrow reverse-proxy authentication layer.
 
-[Official site](https://www.keycloak.org) · [Source repository](https://github.com/keycloak/keycloak)
+[Official site](https://www.keycloak.org) · [Documentation](https://www.keycloak.org/documentation) · [Source repository](https://github.com/keycloak/keycloak)
 
 ### Keystore Explorer
 
@@ -641,19 +641,19 @@ Self-hosted OpenID Connect provider that authenticates users with passkeys.
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Secrets management tool for GitOps/IaC (encrypt YAML/JSON/env).
+SOPS encrypted-file editor for YAML, JSON, ENV, INI and binary files, using age, PGP or supported KMS/key services; GitOps/IaC file encryption is distinct from a secrets backend such as Vault.
 
 **Use when**
 
-- Encrypt secrets in Git alongside your IaC for GitOps workflows.
+- You need encrypted configuration files in GitOps or IaC workflows while retaining supported structured-file keys for review and controlling decryption through selected recipients/key services.
 
 **Consider alternatives when**
 
-- You need dynamic secrets or centralized access control (use Vault).
+- You need SOPS itself to serve a secrets API, issue dynamic credentials or act as a Kubernetes External Secrets operator; KMS and Vault integrations provide key services separately.
 
-[Official site](https://getsops.io) · [Source repository](https://github.com/getsops/sops)
+[Official site](https://getsops.io) · [Documentation](https://getsops.io/docs/) · [Source repository](https://github.com/getsops/sops)
 
 ### SPIRE
 

@@ -1907,34 +1907,49 @@
   needs_review: true
 - id: gitleaks
   name: Gitleaks
-  summary: Detect hardcoded secrets in code.
+  summary: MIT-licensed CLI detecting secrets in Git history, files and standard input for local, pre-commit
+    and CI use; upstream is feature-complete with future releases limited to security patches, distinct
+    from hosted secret-scanning services.
   official_url: https://gitleaks.io
   repository_url: https://github.com/gitleaks/gitleaks
   categories:
   - application-cloud-security
   subcategories:
-  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  - Secret scanning
   roles:
   - devsecops-engineer
   - cloud-security-engineer
   lifecycle_stages:
+  - develop
   - test
   - secure
   use_when:
-  - As a fast, CI-friendly secret scanner for Git history.
+  - You need configurable secret detection in Git history/diffs, directories or standard input, integrated
+    into local pre-commit or CI checks.
   avoid_when:
-  - You need a managed platform with triage workflows (consider TruffleHog Enterprise or Snyk).
-  deployment_models: []
+  - You require hosted triage and credential revocation from the CLI itself, or ongoing new CLI features
+    beyond upstream security-patch maintenance.
+  deployment_models:
+  - local-cli
+  - ci
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:6_Security/README.md#L27
   - legacy:devopstools_final.md#L865
-  needs_review: true
+  - https://github.com/gitleaks/gitleaks
+  - https://github.com/gitleaks/gitleaks/blob/master/LICENSE
+  - https://github.com/gitleaks/gitleaks/releases
+  - https://gitleaks.io/
+  - https://github.com/gitleaks/gitleaks/blob/master/README.md
+  needs_review: false
+  documentation_url: https://github.com/gitleaks/gitleaks/blob/master/README.md
+  license_spdx: MIT
+  repository_archived: false
 - id: google-cloud-organization-policy
   name: Google Cloud Organization Policy Service
   summary: Centralized service for defining and enforcing constraints across a Google Cloud resource hierarchy.
@@ -2027,12 +2042,13 @@
   needs_review: true
 - id: grype
   name: Grype
-  summary: Vulnerability scanner for container images and filesystems.
+  summary: Anchore open-source vulnerability scanner for supported container images, filesystems and SBOMs;
+    it uses Syft package cataloging and is distinct from SBOM generation, Anchore Enterprise and Trivy.
   repository_url: https://github.com/anchore/grype
   categories:
   - application-cloud-security
   subcategories:
-  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
+  - Vulnerability scanning
   roles:
   - devsecops-engineer
   - cloud-security-engineer
@@ -2040,20 +2056,36 @@
   - test
   - secure
   use_when:
-  - You want a fast, offline-capable CVE scanner that pairs with Syft SBOMs.
+  - You need known-vulnerability matching for supported image/filesystem packages or an existing SBOM,
+    including Syft-generated SBOMs, with a suitable vulnerability database.
   avoid_when:
-  - You need a single tool covering IaC + secrets + vulnerabilities (use Trivy).
-  deployment_models: []
+  - You expect identical coverage to another scanner, application penetration testing, or vulnerability
+    matches without a suitable database and supported package metadata.
+  deployment_models:
+  - local-cli
+  - ci
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:6_Security/README.md#L28
   - legacy:devopstools_final.md#L868
-  needs_review: true
+  - https://github.com/anchore/grype
+  - https://github.com/anchore/grype/blob/main/LICENSE
+  - https://github.com/anchore/grype/releases
+  - https://oss.anchore.com/
+  - https://oss.anchore.com/docs/guides/vulnerability/
+  - https://github.com/anchore/grype/blob/main/README.md
+  - https://github.com/anchore/scan-action/blob/main/README.md
+  needs_review: false
+  official_url: https://oss.anchore.com/
+  documentation_url: https://oss.anchore.com/docs/guides/vulnerability/
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  repository_archived: false
 - id: guac
   name: GUAC
   summary: Supply chain graph platform for ingesting SBOMs and metadata to map software relationships
@@ -3264,35 +3296,6 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L887
-  needs_review: true
-- id: notary-project
-  name: Notary Project
-  summary: Supply chain signing and verification for artifacts (CNCF).
-  official_url: https://github.com/notaryproject
-  categories:
-  - application-cloud-security
-  subcategories:
-  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
-  roles:
-  - devsecops-engineer
-  - cloud-security-engineer
-  lifecycle_stages:
-  - test
-  - secure
-  use_when:
-  - Sign and verify container images/artifacts in your supply chain.
-  avoid_when:
-  - You only need image scanning without signature verification.
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:6_Security/README.md#L37
-  - legacy:devopstools_final.md#L888
   needs_review: true
 - id: nuclei
   name: Nuclei
@@ -4807,35 +4810,6 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L967
-  needs_review: true
-- id: syft
-  name: Syft
-  summary: Generate SBOMs for containers and filesystems.
-  repository_url: https://github.com/anchore/syft
-  categories:
-  - application-cloud-security
-  subcategories:
-  - Application Security (SAST, DAST, SCA) & Vulnerability Scanning
-  roles:
-  - devsecops-engineer
-  - cloud-security-engineer
-  lifecycle_stages:
-  - test
-  - secure
-  use_when:
-  - Produce SPDX/CycloneDX SBOMs for compliance and supply chain visibility.
-  avoid_when:
-  - You only need vulnerability counts (pipe Syft output into Grype).
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:6_Security/README.md#L50
-  - legacy:devopstools_final.md#L914
   needs_review: true
 - id: sysdig
   name: Sysdig Secure

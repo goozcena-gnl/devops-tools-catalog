@@ -33,7 +33,7 @@
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | active |
 | [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | needs-review |
 | [Ceph](https://ceph.io/en) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Chisel Operator](https://chisel.fyralabs.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Cilium](https://cilium.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -224,7 +224,7 @@
 | [Kustomize](https://kustomize.io) | Kubernetes distributions and operations | oss | active |
 | [KUTTL](https://kuttl.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KWOK](https://kwok.sigs.k8s.io/) | Kubernetes distributions and operations, Chaos and performance engineering | oss | active |
-| [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Lens](https://lenshq.io) | Kubernetes distributions and operations | unknown | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |

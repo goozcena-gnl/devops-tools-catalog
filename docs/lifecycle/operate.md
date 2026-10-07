@@ -105,7 +105,7 @@
 - [CasaVue](https://casavue.app) — Open-source progressive web application that indexes Kubernetes Ingress resources into a customizable application dashboard.
 - [Centreon](https://www.centreon.com) — Monitoring platform with open source base and enterprise/cloud offerings.
 - [Ceph](https://ceph.io/en) — Distributed storage system for object, block, and file storage.
-- [cert-manager](https://cert-manager.io) — X.509 certificate management for Kubernetes.
+- [cert-manager](https://cert-manager.io) — Kubernetes X.509 certificate-management controller issuing and renewing certificates through configured issuers such as ACME and external CAs; it is distinct from Let's Encrypt, certbot and general secrets backends.
 - [CertMate](https://www.certmate.org) — Certificate management automation.
 - [CFEngine](https://cfengine.com) — Policy-based configuration management; community + commercial editions.
 - [changedetection.io](https://changedetection.io/) — Website change-monitoring service with self-hosted and hosted deployment options.
@@ -272,7 +272,7 @@
 - [Harvester Seeder](https://github.com/harvester/seeder) — Kubernetes-based automation for installing Harvester onto bare-metal machines.
 - [HashiCorp Boundary](https://boundaryproject.io) — Secure remote access to systems.
 - [HashiCorp Consul](https://developer.hashicorp.com/consul) — Service networking and discovery platform.
-- [HashiCorp Vault](https://www.vaultproject.io) — Secure secret storage and access.
+- [HashiCorp Vault Community Edition](https://developer.hashicorp.com/vault) — Source-available Vault Community Edition for secrets storage, dynamic credentials and encryption services under BUSL-1.1; Vault Enterprise and HCP Vault offerings have separate commercial product terms.
 - [Haystack](https://haystack.deepset.ai) — Framework for building LLM-powered apps and search systems.
 - [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) — HashiCorp-hosted infrastructure-as-code service for collaborative Terraform runs, state, access control and policy; Terraform Enterprise is the separate self-hosted offering.
 - [Headlamp](https://headlamp.dev/) — Maintained Kubernetes SIG UI project providing an extensible web and desktop interface for managing multiple Kubernetes clusters.
@@ -356,7 +356,7 @@
 - [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) — GPU-aware autoscaling extension for KEDA workloads.
 - [Kelos](https://github.com/kelos-dev/kelos) — Kubernetes-native framework for orchestrating autonomous AI coding agents.
 - [Kestra](https://kestra.io/) — Workflow orchestration platform with an Apache-licensed core and commercial enterprise and hosted capabilities.
-- [Keycloak](https://www.keycloak.org) — Open source identity and access management.
+- [Keycloak](https://www.keycloak.org) — Upstream open-source identity and access-management server providing SSO, identity federation and OpenID Connect, OAuth 2.0 and SAML for applications and services; Red Hat build packaging and managed IAM services are separate.
 - [Keystore Explorer](https://keystore-explorer.org) — GUI for managing keystores.
 - [kftray](https://kftray.app/) — Desktop and terminal tools for managing Kubernetes port-forwarding sessions.
 - [KGateway](https://kgateway.dev) — Kubernetes gateway networking.
@@ -463,7 +463,7 @@
 - [KUTTL](https://kuttl.dev) — KUbernetes Test TooL for end-to-end testing of Kubernetes operators and controllers using declarative YAML test cases.
 - [Kwatcher](https://github.com/Berg-it/Kwatcher) — Kubernetes event watcher.
 - [KWOK](https://kwok.sigs.k8s.io/) — Kubernetes SIGs toolkit that simulates large numbers of nodes and pods without running real workloads.
-- [Kyverno](https://kyverno.io) — Kubernetes policy engine.
+- [Kyverno](https://kyverno.io) — Kubernetes policy engine for validation, mutation, generation, cleanup and image verification with YAML/CEL policies; signing tools, OPA/Gatekeeper and other Kyverno subprojects remain separate.
 - [Lade](https://github.com/zifeo/lade) — Auto-load secrets from vaults into environment variables or files for shell commands with minimal exposure.
 - [LangChain](https://www.langchain.com) — LLM application framework; OSS libraries with commercial companion products.
 - [Langflow](https://www.langflow.org) — Low-code builder for agentic and RAG applications.
@@ -702,7 +702,7 @@
 - [Sniffnet](https://sniffnet.app/) — Desktop network-traffic monitor showing connections and traffic statistics.
 - [Snipe-IT](https://snipeitapp.com/) — IT asset management platform for hardware, software licences, accessories, and custody history.
 - [sofka](https://sofka.rs/) — Terminal user interface for inspecting and operating Kubernetes resources.
-- [SOPS](https://getsops.io) — Secrets management tool for GitOps/IaC (encrypt YAML/JSON/env).
+- [SOPS](https://getsops.io) — SOPS encrypted-file editor for YAML, JSON, ENV, INI and binary files, using age, PGP or supported KMS/key services; GitOps/IaC file encryption is distinct from a secrets backend such as Vault.
 - [Spacelift Deploy](https://spacelift.io) — Commercial infrastructure-as-code orchestration control plane with worker pools and Open Policy Agent governance, available as SaaS or self-hosted Spacelift.
 - [Spin](https://spinframework.dev) — Framework for building and running serverless WebAssembly applications.
 - [Spinkube](https://github.com/spinkube) — WebAssembly on Kubernetes ecosystem.

@@ -82,16 +82,16 @@
 | [Futurex KMES Series 3](https://www.futurex.com/products/key-management-server/kmes-series-3) | IAM, secrets and certificate management | commercial | active |
 | [Ghostwriter](https://www.ghostwriter.wiki/home) | Application and cloud security | oss | active |
 | [Gibson](https://github.com/HackingLZ/gibson) | Application and cloud security | oss | needs-review |
-| [Gitleaks](https://gitleaks.io) | Application and cloud security | oss | needs-review |
+| [Gitleaks](https://gitleaks.io) | Application and cloud security | oss | active |
 | [Google Cloud Organization Policy Service](https://docs.cloud.google.com/organization-policy/overview) | Application and cloud security | commercial | active |
 | [graphql-cop](https://github.com/dolevf/graphql-cop) | Application and cloud security | oss | active |
 | [Greenbone (OpenVAS)](https://github.com/greenbone) | Application and cloud security | oss | needs-review |
-| [Grype](https://github.com/anchore/grype) | Application and cloud security | oss | needs-review |
+| [Grype](https://oss.anchore.com/) | Application and cloud security | oss | active |
 | [GUAC](https://guac.sh) | Application and cloud security | oss | needs-review |
 | [Guardon](https://github.com/guardon-dev/guardon) | Application and cloud security | oss | needs-review |
 | [Hashcat](https://hashcat.net/hashcat/) | Application and cloud security | oss | active |
 | [HashiCorp Boundary](https://boundaryproject.io) | IAM, secrets and certificate management | source-available | needs-review |
-| [HashiCorp Vault](https://www.vaultproject.io) | IAM, secrets and certificate management | source-available | needs-review |
+| [HashiCorp Vault Community Edition](https://developer.hashicorp.com/vault) | IAM, secrets and certificate management | source-available | active |
 | [hcxdumptool](https://github.com/ZerBea/hcxdumptool) | Application and cloud security | oss | active |
 | [hcxtools](https://github.com/ZerBea/hcxtools) | Application and cloud security | oss | active |
 | [Hybrid Analysis](https://www.hybrid-analysis.com) | Application and cloud security | free-saas | active |
@@ -109,7 +109,7 @@
 | [k8scout](https://github.com/k8scout/k8scout) | Application and cloud security | oss | needs-review |
 | [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Katana](https://github.com/projectdiscovery/katana) | Application and cloud security | oss | active |
-| [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | needs-review |
+| [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | active |
 | [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
 | [kickthemout](https://github.com/roccomuso/kickthemout) | Application and cloud security | oss | needs-review |
 | [Kiuwan](https://www.kiuwan.com/) | Application and cloud security | commercial | active |
@@ -139,7 +139,7 @@
 | [Nikto](https://github.com/sullo/nikto) | Application and cloud security | oss | needs-review |
 | [Nmap](https://nmap.org/) | Application and cloud security | source-available | active |
 | [nomos](https://github.com/safe-agentic-world/nomos) | Application and cloud security | oss | needs-review |
-| [Notary Project](https://github.com/notaryproject) | Application and cloud security | oss | needs-review |
+| [Notary Project](https://notaryproject.dev/) | Software supply-chain security | oss | active |
 | [Nuclei](https://docs.projectdiscovery.io/opensource/nuclei/overview) | Application and cloud security | oss | needs-review |
 | [OCS Inventory NG](https://ocsinventory-ng.org/) | Policy, governance and compliance | open-core | active |
 | [OIDC-Guard](https://github.com/IvanJosipovic/OIDC-Guard) | IAM, secrets and certificate management | oss | active |
@@ -197,14 +197,14 @@
 | [Snyk](https://snyk.io) | Application and cloud security | commercial | active |
 | [Socket](https://socket.dev) | Application and cloud security | unknown | needs-review |
 | [SOOS DAST](https://hub.docker.com/r/soosio/dast) | Application and cloud security | open-core | needs-review |
-| [SOPS](https://getsops.io) | IAM, secrets and certificate management | oss | needs-review |
+| [SOPS](https://getsops.io) | IAM, secrets and certificate management | oss | active |
 | [SPIRE](https://spiffe.io/docs/latest/spire-about/) | IAM, secrets and certificate management | oss | active |
 | [sqlmap](https://sqlmap.org/) | Application and cloud security | oss | active |
 | [SSOReady](https://ssoready.com/) | IAM, secrets and certificate management | oss | active |
 | [StrongKey](https://www.strongkey.com) | IAM, secrets and certificate management | unknown | needs-review |
 | [subfinder](https://github.com/projectdiscovery/subfinder) | Application and cloud security | oss | active |
 | [Suricata](https://suricata.io) | Application and cloud security | oss | needs-review |
-| [Syft](https://github.com/anchore/syft) | Application and cloud security | oss | needs-review |
+| [Syft](https://oss.anchore.com/docs/guides/sbom/) | Software supply-chain security | oss | active |
 | [Sysdig Secure](https://www.sysdig.com/) | Application and cloud security | commercial | active |
 | [SysWarden](https://syswarden.io) | Application and cloud security | oss | active |
 | [Tailscale](https://tailscale.com) | Application and cloud security | open-core | needs-review |

@@ -314,36 +314,6 @@
   - legacy:10_Miscellaneous/README.md#L66
   - legacy:devopstools_final.md#L1316
   needs_review: true
-- id: cosign-sigstore
-  name: cosign (sigstore)
-  summary: Container/artifact signing and verification.
-  official_url: https://docs.sigstore.dev/cosign
-  repository_url: https://github.com/sigstore/cosign
-  categories:
-  - emerging-experimental
-  subcategories:
-  - Other
-  roles:
-  - devops-engineer
-  - platform-engineer
-  lifecycle_stages:
-  - develop
-  - learn
-  use_when:
-  - You need keyless or key-based signing for container images in your supply chain.
-  avoid_when:
-  - You have no container supply-chain security requirements yet.
-  deployment_models: []
-  license_model: oss
-  maturity: experimental
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:10_Miscellaneous/README.md#L64
-  - legacy:devopstools_final.md#L1312
-  needs_review: true
 - id: cue
   name: CUE
   summary: Data validation language and tool.

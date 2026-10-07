@@ -125,7 +125,7 @@
 | [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | commercial | active |
 | [Grafana MCP](https://github.com/grafana/mcp-grafana) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [HashiCorp Boundary](https://boundaryproject.io) | IAM, secrets and certificate management | source-available | needs-review |
-| [HashiCorp Vault](https://www.vaultproject.io) | IAM, secrets and certificate management | source-available | needs-review |
+| [HashiCorp Vault Community Edition](https://developer.hashicorp.com/vault) | IAM, secrets and certificate management | source-available | active |
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Haystack](https://haystack.deepset.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | commercial | active |
@@ -149,7 +149,7 @@
 | [K8sGPT](https://k8sgpt.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [k8squest](https://github.com/Manoj-engineer/k8squest) | Documentation, learning and career resources | documentation | needs-review |
 | [Kelos](https://github.com/kelos-dev/kelos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | needs-review |
+| [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | active |
 | [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
 | [KICS](https://kics.io) | Infrastructure as Code | oss | active |
 | [Killer.sh](https://killer.sh) | Documentation, learning and career resources | documentation | needs-review |
@@ -255,7 +255,7 @@
 | [SeaweedFS](https://seaweedfs.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Skupper](https://skupper.io/) | Kubernetes networking, storage and add-ons | oss | active |
-| [SOPS](https://getsops.io) | IAM, secrets and certificate management | oss | needs-review |
+| [SOPS](https://getsops.io) | IAM, secrets and certificate management | oss | active |
 | [Spacelift Deploy](https://spacelift.io) | Infrastructure as Code | commercial | active |
 | [Spin](https://spinframework.dev) | Serverless, edge and WebAssembly | oss | needs-review |
 | [Spot FinOps](https://spot.io/solutions/finops) | FinOps and sustainability | unknown | needs-review |
