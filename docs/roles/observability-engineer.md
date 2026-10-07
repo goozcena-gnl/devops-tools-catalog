@@ -46,14 +46,14 @@
 | [GoAlert](https://goalert.me) | SRE, incident response and on-call | oss | needs-review |
 | [Goldilocks](https://goldilocks.docs.fairwinds.com/) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | active |
 | [Gonzo](https://www.controltheory.com/gonzo) | Monitoring, metrics, logs and tracing | oss | active |
-| [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [Grafana Beyla](https://grafana.com/oss/beyla) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Grafana Loki](https://grafana.com/oss/loki) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Grafana Mimir](https://grafana.com/oss/mimir) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Grafana Loki](https://grafana.com/oss/loki) | Monitoring, metrics, logs and tracing | oss | active |
+| [Grafana Mimir](https://grafana.com/oss/mimir) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana OnCall OSS](https://grafana.com/docs/oncall/latest/intro/) | Deprecated and historical tools, SRE, incident response and on-call | oss | archived |
 | [Grafana Pyroscope](https://grafana.com/oss/pyroscope) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | active |
 | [groundcover](https://www.groundcover.com/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [grove](https://github.com/ai-dynamo/grove) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [HolmesGPT](https://holmesgpt.dev/latest) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -61,12 +61,12 @@
 | [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
-| [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Klarity](https://github.com/selvarajmurugesan90/klarity) | Monitoring, metrics, logs and tracing, Emerging and experimental tools | oss | active |
 | [Komodor](https://komodor.com) | SRE, incident response and on-call, Monitoring, metrics, logs and tracing, FinOps and sustainability | commercial | active |
 | [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Kwatcher](https://github.com/Berg-it/Kwatcher) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -86,14 +86,14 @@
 | [ntfy](https://ntfy.sh) | SRE, incident response and on-call | oss | needs-review |
 | [OpenObserve](https://openobserve.ai/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [OpenTelemetry](https://github.com/open-telemetry) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [OpenTelemetry](https://opentelemetry.io/) | Monitoring, metrics, logs and tracing | oss | active |
+| [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [otel-gui](https://github.com/metafab/otel-gui) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) | SRE, incident response and on-call | commercial | active |
 | [Pandora FMS](https://pandorafms.com/en/product-overview/) | Monitoring, metrics, logs and tracing | commercial | needs-review |
 | [PatchMon](https://patchmon.net) | SRE, incident response and on-call | unknown | needs-review |
-| [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Pulse](https://pulserelay.pro) | SRE, incident response and on-call | oss | active |
 | [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -112,7 +112,7 @@
 | [Stratoshark](https://stratoshark.org/) | SRE, incident response and on-call | oss | active |
 | [syslog-ng](https://www.syslog-ng.com/products/open-source-log-management) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Tracetest](https://tracetest.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [TShark](https://www.wireshark.org/docs/man-pages/tshark.html) | SRE, incident response and on-call | oss | active |
 | [Uptime Kuma](https://uptime.kuma.pet) | Monitoring, metrics, logs and tracing | oss | active |

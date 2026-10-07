@@ -290,13 +290,13 @@
 | [Gotify](https://gotify.net/) | Workflow automation and ChatOps | oss | active |
 | [gping](https://github.com/orf/gping) | Foundations, Linux and scripting | oss | active |
 | [Gradle](https://gradle.org) | Containers and image tooling | oss | needs-review |
-| [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [Grafana Beyla](https://grafana.com/oss/beyla) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Grafana Loki](https://grafana.com/oss/loki) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Grafana Mimir](https://grafana.com/oss/mimir) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Grafana Loki](https://grafana.com/oss/loki) | Monitoring, metrics, logs and tracing | oss | active |
+| [Grafana Mimir](https://grafana.com/oss/mimir) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana Pyroscope](https://grafana.com/oss/pyroscope) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | active |
 | [Graft](https://trailhq.com/graft) | Developer experience and local environments, Source control and repository management | oss | active |
 | [Gremlin](https://www.gremlin.com) | Chaos and performance engineering, Backup, disaster recovery and resilience | commercial | active |
 | [grove](https://github.com/ai-dynamo/grove) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -332,7 +332,7 @@
 | [IntelliJ IDEA](https://www.jetbrains.com/idea) | Developer experience and local environments | open-core | active |
 | [iPerf](https://iperf.fr/iperf-download.php) | Chaos and performance engineering | oss | needs-review |
 | [IT Tools](https://it-tools.tech) | Emerging and experimental tools | oss | needs-review |
-| [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [jaq](https://github.com/01mf02/jaq) | Foundations, Linux and scripting | oss | active |
 | [Jasmine](https://jasmine.github.io/) | CI, build and testing | oss | active |
 | [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | needs-review |
@@ -378,8 +378,8 @@
 | [Komodor](https://komodor.com) | SRE, incident response and on-call, Monitoring, metrics, logs and tracing, FinOps and sustainability | commercial | active |
 | [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | needs-review |
-| [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) | Monitoring, metrics, logs and tracing | oss | active |
 | [KubeChecks](https://kubechecks.readthedocs.io/en/latest) | CD, GitOps, release and promotion | oss | needs-review |
 | [kubeCodex](https://github.com/TheCodingSheikh/kubecodex) | Documentation, learning and career resources | documentation | needs-review |
 | [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) | Chaos and performance engineering | oss | needs-review |
@@ -479,8 +479,8 @@
 | [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
-| [OpenTelemetry](https://github.com/open-telemetry) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [OpenTelemetry](https://opentelemetry.io/) | Monitoring, metrics, logs and tracing | oss | active |
+| [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | active |
 | [OpenWiki](https://github.com/langchain-ai/openwiki) | Developer experience and local environments | oss | needs-review |
@@ -517,7 +517,7 @@
 | [PrivateBin](https://privatebin.info) | Emerging and experimental tools | oss | needs-review |
 | [Probot DCO](https://probot.github.io/apps/dco) | CI, build and testing | oss | needs-review |
 | [ProGet](https://inedo.com/proget) | Artifact and package management | unknown | needs-review |
-| [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) | Virtualization, bare metal and homelab | unknown | needs-review |
 | [Proxmox Virtual Environment (VE)](https://github.com/proxmox) | Virtualization, bare metal and homelab | open-core | needs-review |
 | [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) | Virtualization, bare metal and homelab | oss | needs-review |
@@ -644,7 +644,7 @@
 | [TestRail](https://www.gurock.com/testrail) | CI, build and testing | unknown | needs-review |
 | [TestRigor](https://testrigor.com) | CI, build and testing | unknown | needs-review |
 | [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | oss | needs-review |
-| [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [The Linux Command Line](https://linuxcommand.org/tlcl.php) | Foundations, Linux and scripting | documentation | needs-review |
 | [The Linux Documentation Project (TLDP)](https://tldp.org) | Foundations, Linux and scripting | documentation | needs-review |
 | [TiKV](https://tikv.org) | Databases, caching and data infrastructure | oss | needs-review |
