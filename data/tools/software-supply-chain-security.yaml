@@ -56,6 +56,55 @@
   status: active
   verified_on: '2026-09-08'
   needs_review: false
+- id: cosign-sigstore
+  name: Cosign
+  summary: Sigstore CLI for signing and verifying container images, other artifacts and attestations using
+    identity-based or self-managed keys; Fulcio, Rekor, sigstore-go and policy-controller are separate
+    components.
+  official_url: https://docs.sigstore.dev/cosign
+  repository_url: https://github.com/sigstore/cosign
+  categories:
+  - software-supply-chain-security
+  subcategories:
+  - Artifact signing and verification
+  roles:
+  - devops-engineer
+  - platform-engineer
+  - devsecops-engineer
+  - release-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  - secure
+  use_when:
+  - You need artifact signatures or attestations in release and deployment workflows, with verification
+    constrained to expected identities, issuers or trusted keys.
+  avoid_when:
+  - You expect the CLI alone to provide a certificate authority, transparency log, Kubernetes admission
+    controller or vulnerability scanner.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-07'
+  sources:
+  - legacy:10_Miscellaneous/README.md#L64
+  - legacy:devopstools_final.md#L1312
+  - https://github.com/sigstore/cosign
+  - https://github.com/sigstore/cosign/blob/main/LICENSE
+  - https://github.com/sigstore/cosign/releases
+  - https://docs.sigstore.dev/cosign/
+  - https://docs.sigstore.dev/cosign/signing/overview/
+  - https://docs.sigstore.dev/cosign/verifying/verify/
+  - https://docs.sigstore.dev/about/api-stability/
+  - https://github.com/sigstore/community/blob/main/PROJECT-TIERS.md
+  needs_review: false
+  documentation_url: https://docs.sigstore.dev/cosign/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: dependency-track
   name: Dependency-Track
   summary: OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
@@ -289,6 +338,55 @@
   - legacy:7_Development-Collaboration/README.md#L65
   - legacy:devopstools_final.md#L1103
   needs_review: true
+- id: notary-project
+  name: Notary Project
+  summary: Notary Project umbrella for OCI artifact-signing and verification specifications and tools,
+    including Notation CLI/libraries; component grants and deployment differ, and legacy Notary workflows
+    and Sigstore/Cosign remain distinct.
+  official_url: https://notaryproject.dev/
+  categories:
+  - software-supply-chain-security
+  subcategories:
+  - Artifact trust specifications and tooling
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - release
+  - deploy
+  - secure
+  use_when:
+  - You need portable OCI artifact signature/trust workflows and can choose the relevant Notary specifications,
+    Notation implementation, libraries and trust-policy/key integrations.
+  avoid_when:
+  - You need one umbrella executable/control plane, one repository or a universal licence/stability guarantee
+    for every component, plugin and vendor service; evaluate selected implementations separately.
+  deployment_models: []
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-07'
+  sources:
+  - legacy:6_Security/README.md#L37
+  - legacy:devopstools_final.md#L888
+  - https://notaryproject.dev/
+  - https://notaryproject.dev/docs/
+  - https://github.com/notaryproject/.github/blob/main/README.md
+  - https://github.com/notaryproject/.github/blob/main/GOVERNANCE.md
+  - https://github.com/notaryproject/.github/blob/main/LICENSE
+  - https://github.com/notaryproject/specifications/blob/main/LICENSE
+  - https://github.com/notaryproject/notation/blob/main/README.md
+  - https://github.com/notaryproject/notation/blob/main/LICENSE
+  - https://github.com/notaryproject/notation-go/blob/main/LICENSE
+  - https://github.com/notaryproject/notation-core-go/blob/main/LICENSE
+  - https://github.com/notaryproject/notation/blob/main/RELEASE_MANAGEMENT.md
+  - https://github.com/notaryproject/notation/releases
+  - https://www.cncf.io/projects/notary-project/
+  - https://github.com/notaryproject
+  needs_review: false
+  documentation_url: https://notaryproject.dev/docs/
 - id: plumber
   name: Plumber
   summary: CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
@@ -455,6 +553,52 @@
   - https://www.stepsecurity.io/
   - https://docs.stepsecurity.io/
   needs_review: false
+- id: syft
+  name: Syft
+  summary: Anchore open-source CLI and Go library generating SBOMs from container images, filesystems
+    and supported archives in formats including SPDX and CycloneDX; Grype scanning and Anchore Enterprise
+    are separate.
+  repository_url: https://github.com/anchore/syft
+  categories:
+  - software-supply-chain-security
+  subcategories:
+  - SBOM generation
+  roles:
+  - devsecops-engineer
+  - cloud-security-engineer
+  lifecycle_stages:
+  - build
+  - test
+  - secure
+  use_when:
+  - You need package inventories and SBOM output for supported container images, filesystems or archives,
+    optionally passing the resulting SBOM to a separate vulnerability scanner.
+  avoid_when:
+  - You need Syft alone to match known vulnerabilities or provide the commercial Anchore Enterprise service;
+    SBOM completeness depends on supported catalogers and the selected target.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  maturity: established
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-07'
+  sources:
+  - legacy:6_Security/README.md#L50
+  - legacy:devopstools_final.md#L914
+  - https://github.com/anchore/syft
+  - https://github.com/anchore/syft/blob/main/LICENSE
+  - https://github.com/anchore/syft/releases
+  - https://oss.anchore.com/
+  - https://oss.anchore.com/docs/guides/sbom/
+  - https://github.com/anchore/syft/blob/main/README.md
+  needs_review: false
+  official_url: https://oss.anchore.com/docs/guides/sbom/
+  documentation_url: https://oss.anchore.com/docs/guides/sbom/
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  repository_archived: false
 - id: tekton-chains
   name: Tekton Chains
   summary: Tekton controller that records, signs, and stores supply-chain metadata for pipeline task runs.

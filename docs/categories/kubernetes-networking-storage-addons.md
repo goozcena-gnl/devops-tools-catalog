@@ -243,19 +243,19 @@ Distributed storage system for object, block, and file storage.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-X.509 certificate management for Kubernetes.
+Kubernetes X.509 certificate-management controller issuing and renewing certificates through configured issuers such as ACME and external CAs; it is distinct from Let's Encrypt, certbot and general secrets backends.
 
 **Use when**
 
-- You need automated TLS certificate issuance and renewal (Let's Encrypt, Vault, etc.).
+- You need Kubernetes certificate resources with automated issuance and renewal through a configured ACME or other supported issuer.
 
 **Consider alternatives when**
 
-- Your ingress controller or service mesh already handles certificate lifecycle.
+- You need a general secrets backend, non-Kubernetes certbot workflow or expect the controller itself to be Let's Encrypt or an external PKI vendor.
 
-[Official site](https://cert-manager.io) · [Source repository](https://github.com/cert-manager/cert-manager)
+[Official site](https://cert-manager.io) · [Documentation](https://cert-manager.io/docs/) · [Source repository](https://github.com/cert-manager/cert-manager)
 
 ### Chisel Operator
 
@@ -1600,19 +1600,19 @@ KUbernetes Test TooL for end-to-end testing of Kubernetes operators and controll
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes policy engine.
+Kubernetes policy engine for validation, mutation, generation, cleanup and image verification with YAML/CEL policies; signing tools, OPA/Gatekeeper and other Kyverno subprojects remain separate.
 
 **Use when**
 
-- You need Kubernetes-native policy enforcement without learning Rego (validate, mutate, generate).
+- You need Kubernetes policy validation, mutation, generation, cleanup or image verification using supported policy types, with signing and trust configuration supplied separately.
 
 **Consider alternatives when**
 
-- You already have OPA Gatekeeper deployed and your team knows Rego.
+- You expect policy enforcement to replace Kubernetes RBAC/API-server security, generate artifact signatures itself or inherit every capability of OPA, Gatekeeper or companion Kyverno projects.
 
-[Official site](https://kyverno.io) · [Source repository](https://github.com/kyverno/kyverno)
+[Official site](https://kyverno.io) · [Documentation](https://kyverno.io/docs/) · [Source repository](https://github.com/kyverno/kyverno)
 
 ### Linkerd
 

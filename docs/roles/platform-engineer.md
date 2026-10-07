@@ -88,7 +88,7 @@
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | needs-review |
 | [Ceph](https://ceph.io/en) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [CertGames](https://certgames.com/) | Documentation, learning and career resources | documentation | needs-review |
 | [Chapril Services](https://www.chapril.org/-services-.html) | Emerging and experimental tools | unknown | needs-review |
 | [Chisel Operator](https://chisel.fyralabs.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -121,7 +121,7 @@
 | [Coolify](https://coolify.io/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | open-core | active |
 | [CoreDNS](https://coredns.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) | Emerging and experimental tools | unknown | needs-review |
-| [cosign (sigstore)](https://docs.sigstore.dev/cosign) | Emerging and experimental tools | oss | needs-review |
+| [Cosign](https://docs.sigstore.dev/cosign) | Software supply-chain security | oss | active |
 | [CronJob Guardian](https://illeniumstudios.github.io/cronjob-guardian) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | active |
 | [Crossplane function SDK for C#](https://github.com/IvanJosipovic/function-sdk-csharp) | Infrastructure as Code | oss | active |
@@ -391,7 +391,7 @@
 | [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
 | [Kustomize](https://kustomize.io) | Kubernetes distributions and operations | oss | active |
 | [KUTTL](https://kuttl.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [LabEx DevOps Tutorials](https://labex.io/tutorials/category/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [LabsDevOps.fr](https://labsdevops.fr) | Documentation, learning and career resources | documentation | needs-review |
 | [LangChain](https://www.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |

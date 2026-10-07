@@ -169,7 +169,7 @@
 | [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) | Emerging and experimental tools | unknown | needs-review |
-| [cosign (sigstore)](https://docs.sigstore.dev/cosign) | Emerging and experimental tools | oss | needs-review |
+| [Cosign](https://docs.sigstore.dev/cosign) | Software supply-chain security | oss | active |
 | [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | active |
 | [CRIU](https://criu.org/Main_Page) | Virtualization, bare metal and homelab | oss | active |
 | [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | active |

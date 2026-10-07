@@ -21,8 +21,8 @@ The DevOps ecosystem changes faster than a static list can safely represent: pro
 | Categories | **30** |
 | Engineering roles | **13** |
 | Lifecycle stages | **12** |
-| Records not flagged for review | **679** |
-| Records requiring review | **746** |
+| Records not flagged for review | **689** |
+| Records requiring review | **736** |
 | Deprecated, archived, or historical records | **14** |
 | Archived source repositories | **11** |
 | Most recent recorded verification date | **2026-10-07** |
@@ -106,9 +106,9 @@ needs_review: false
 | [SRE, incident response and on-call](docs/categories/sre-incident-response-on-call.md) | 24 |
 | [Backup, disaster recovery and resilience](docs/categories/backup-disaster-recovery-resilience.md) | 16 |
 | [Chaos and performance engineering](docs/categories/chaos-performance-engineering.md) | 25 |
-| [Application and cloud security](docs/categories/application-cloud-security.md) | 188 |
+| [Application and cloud security](docs/categories/application-cloud-security.md) | 186 |
 | [IAM, secrets and certificate management](docs/categories/iam-secrets-certificates.md) | 44 |
-| [Software supply-chain security](docs/categories/software-supply-chain-security.md) | 18 |
+| [Software supply-chain security](docs/categories/software-supply-chain-security.md) | 21 |
 | [Policy, governance and compliance](docs/categories/policy-governance-compliance.md) | 5 |
 | [FinOps and sustainability](docs/categories/finops-sustainability.md) | 32 |
 | [Databases, caching and data infrastructure](docs/categories/databases-caching-data-infrastructure.md) | 30 |
@@ -116,7 +116,7 @@ needs_review: false
 | [Workflow automation and ChatOps](docs/categories/workflow-automation-chatops.md) | 18 |
 | [MLOps, LLMOps and AI infrastructure](docs/categories/mlops-llmops-ai-infrastructure.md) | 83 |
 | [Documentation, learning and career resources](docs/categories/documentation-learning-career.md) | 64 |
-| [Emerging and experimental tools](docs/categories/emerging-experimental.md) | 58 |
+| [Emerging and experimental tools](docs/categories/emerging-experimental.md) | 57 |
 | [Deprecated and historical tools](docs/categories/deprecated-historical.md) | 8 |
 
 ### By role
@@ -143,8 +143,8 @@ needs_review: false
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 665 |
-| `needs-review` | Imported but not yet fully verified. | 746 |
+| `active` | Maintained according to recorded primary-source evidence. | 675 |
+| `needs-review` | Imported but not yet fully verified. | 736 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 10 |
 | `historical` | Retained for context or migration work. | 2 |

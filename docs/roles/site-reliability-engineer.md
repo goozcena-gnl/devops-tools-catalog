@@ -53,7 +53,7 @@
 | [CasaVue](https://casavue.app) | Kubernetes distributions and operations | oss | active |
 | [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Ceph](https://ceph.io/en) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [changedetection.io](https://changedetection.io/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Chaos Mesh](https://chaos-mesh.org) | Chaos and performance engineering | oss | needs-review |
 | [Chaos Monkey](https://netflix.github.io/chaosmonkey) | Chaos and performance engineering | oss | needs-review |
@@ -266,7 +266,7 @@
 | [KUTTL](https://kuttl.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kwatcher](https://github.com/Berg-it/Kwatcher) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [KWOK](https://kwok.sigs.k8s.io/) | Kubernetes distributions and operations, Chaos and performance engineering | oss | active |
-| [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Lens](https://lenshq.io) | Kubernetes distributions and operations | unknown | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
