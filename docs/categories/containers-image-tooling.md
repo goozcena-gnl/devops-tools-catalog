@@ -29,38 +29,38 @@ Fast, scalable, multi-language build system.
 **Categories:** Containers and image tooling<br>
 **Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Build OCI images without a daemon.
+Daemonless OCI image-building CLI and library, with Dockerfile and scripted workflows; complementary to the Podman container runtime.
 
 **Use when**
 
-- * You need daemonless, rootless container image builds (especially in CI or restricted environments).
+- You need daemonless OCI image builds from Dockerfiles or scripted working-container operations, including rootless Linux workflows where supported.
 
 **Consider alternatives when**
 
-- * You're happy with standard Docker builds and don't have security constraints on the daemon.
+- You need a long-running container runtime rather than an image builder; Podman is complementary and can use Buildah libraries independently.
 
-[Official site](https://buildah.io) · [Source repository](https://github.com/containers/buildah)
+[Official site](https://buildah.io) · [Documentation](https://github.com/podman-container-tools/buildah/tree/main/docs) · [Source repository](https://github.com/containers/buildah)
 
 ### BuildKit
 
 **Categories:** Containers and image tooling<br>
 **Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Next-generation Docker image build engine used by Buildx.
+Moby build-execution toolkit and backend for concurrent, cache-efficient builds, used by Docker Buildx and other clients.
 
 **Use when**
 
-- * You want faster Docker builds with better caching, parallelism, and build secrets.
+- You need low-level build execution, reusable caches and extensible frontends, accessed through buildctl, Docker Buildx or another BuildKit client.
 
 **Consider alternatives when**
 
-- * You're already using it (it's the default in modern Docker); switching only matters on older Docker versions.
+- You only need a higher-level build interface and do not want to operate a standalone buildkitd backend; Docker integrations can manage it for you.
 
-[Official site](https://docs.docker.com/build/buildkit) · [Source repository](https://github.com/moby/buildkit)
+[Official site](https://docs.docker.com/build/buildkit) · [Documentation](https://docs.docker.com/build/buildkit/) · [Source repository](https://github.com/moby/buildkit)
 
 ### cek
 

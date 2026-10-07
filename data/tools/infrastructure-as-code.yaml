@@ -664,7 +664,8 @@
   needs_review: true
 - id: opentofu
   name: OpenTofu
-  summary: Open-source Terraform fork.
+  summary: Community-governed infrastructure-as-code CLI for declaratively provisioning and managing cloud
+    and on-premises resources.
   official_url: https://opentofu.org
   repository_url: https://github.com/opentofu/opentofu
   categories:
@@ -678,26 +679,40 @@
   - infrastructure-systems-engineer
   lifecycle_stages:
   - plan
-  - build
   - deploy
+  - operate
   use_when:
-  - You want Terraform-compatible IaC under a truly open-source license.
+  - You need community-governed, MPL-licensed infrastructure as code and can validate existing Terraform
+    configurations, providers and state using the documented migration process.
   avoid_when:
-  - You rely on HashiCorp enterprise support or features exclusive to Terraform.
-  deployment_models: []
+  - You require Terraform-specific commercial features or support, or cannot test configuration and state
+    compatibility before migration.
+  deployment_models:
+  - local
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L52
   - legacy:devopstools_final.md#L179
-  needs_review: true
+  - https://github.com/opentofu/opentofu
+  - https://github.com/opentofu/opentofu/blob/main/LICENSE
+  - https://opentofu.org/docs/
+  - https://opentofu.org/docs/intro/migration/
+  - https://github.com/opentofu/org/blob/main/CHARTER.md
+  - https://github.com/opentofu/org/blob/main/GOVERNANCE.md
+  - https://github.com/opentofu/opentofu/releases
+  needs_review: false
+  documentation_url: https://opentofu.org/docs/
+  license_spdx: MPL-2.0
+  repository_archived: false
 - id: packer
   name: Packer
-  summary: Machine image creation.
+  summary: HashiCorp machine-image build CLI that creates reproducible images for multiple platforms from
+    one configuration, with separately licensed plugins and HCP image metadata services.
   official_url: https://www.packer.io
   repository_url: https://github.com/hashicorp/packer
   categories:
@@ -712,22 +727,38 @@
   lifecycle_stages:
   - plan
   - build
-  - deploy
+  - release
   use_when:
-  - You need reproducible, versioned machine images (AMIs, VM images).
+  - You need repeatable machine-image builds across cloud or virtualization platforms and can comply with
+    the current Business Source License and each plugin licence.
   avoid_when:
-  - You use immutable containers and don't need VM-level images.
-  deployment_models: []
+  - You require an OSI-approved licence for current Packer source, or plan a competitive hosted or embedded
+    offering outside the Additional Use Grant.
+  deployment_models:
+  - local
   license_model: source-available
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L54
   - legacy:devopstools_final.md#L180
-  needs_review: true
+  - https://github.com/hashicorp/packer
+  - https://github.com/hashicorp/packer/blob/main/LICENSE
+  - https://github.com/hashicorp/packer/blob/v1.9.4/LICENSE
+  - https://github.com/hashicorp/packer/blob/v1.10.0/LICENSE
+  - https://developer.hashicorp.com/packer/docs
+  - https://developer.hashicorp.com/packer/docs/plugins/install
+  - https://developer.hashicorp.com/packer/docs/hcp
+  - https://github.com/hashicorp/packer/releases
+  - https://spdx.org/licenses/BUSL-1.1.html
+  needs_review: false
+  documentation_url: https://developer.hashicorp.com/packer/docs
+  license_spdx: BUSL-1.1
+  commercial_offering: true
+  repository_archived: false
 - id: pluralith
   name: Pluralith
   summary: Visualize and document Terraform infrastructure with automatically generated architecture diagrams.

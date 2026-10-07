@@ -21,8 +21,8 @@ The DevOps ecosystem changes faster than a static list can safely represent: pro
 | Categories | **30** |
 | Engineering roles | **13** |
 | Lifecycle stages | **12** |
-| Records not flagged for review | **649** |
-| Records requiring review | **776** |
+| Records not flagged for review | **659** |
+| Records requiring review | **766** |
 | Deprecated, archived, or historical records | **14** |
 | Archived source repositories | **11** |
 | Most recent recorded verification date | **2026-10-07** |
@@ -93,7 +93,7 @@ needs_review: false
 | [Cloud platforms and cloud management](docs/categories/cloud-platforms-management.md) | 26 |
 | [Infrastructure as Code](docs/categories/infrastructure-as-code.md) | 37 |
 | [Configuration management](docs/categories/configuration-management.md) | 19 |
-| [Virtualization, bare metal and homelab](docs/categories/virtualization-bare-metal-homelab.md) | 71 |
+| [Virtualization, bare metal and homelab](docs/categories/virtualization-bare-metal-homelab.md) | 72 |
 | [Containers and image tooling](docs/categories/containers-image-tooling.md) | 24 |
 | [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 152 |
 | [Kubernetes networking, storage and add-ons](docs/categories/kubernetes-networking-storage-addons.md) | 136 |
@@ -131,10 +131,10 @@ needs_review: false
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 934 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 935 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 25 |
-| `open-core` | OSS/community core with commercial features or service. | 113 |
-| `commercial` | Proprietary commercial product. | 159 |
+| `open-core` | OSS/community core with commercial features or service. | 111 |
+| `commercial` | Proprietary commercial product. | 160 |
 | `free-saas` | Hosted service with a free offering. | 5 |
 | `documentation` | Learning or documentation resource. | 108 |
 | `unknown` | Reliable licence evidence has not been recorded. | 81 |
@@ -143,8 +143,8 @@ needs_review: false
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 635 |
-| `needs-review` | Imported but not yet fully verified. | 776 |
+| `active` | Maintained according to recorded primary-source evidence. | 645 |
+| `needs-review` | Imported but not yet fully verified. | 766 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 10 |
 | `historical` | Retained for context or migration work. | 2 |

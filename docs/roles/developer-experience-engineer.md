@@ -36,7 +36,7 @@
 | [Buildkite](https://buildkite.com) | CI, build and testing | commercial | active |
 | [Cadence CI](https://cadence.ci) | CI, build and testing | commercial | active |
 | [Cal.com](https://cal.com) | Workflow automation and ChatOps | oss | needs-review |
-| [Camunda](https://camunda.com) | Workflow automation and ChatOps | open-core | needs-review |
+| [Camunda 8](https://camunda.com) | Workflow automation and ChatOps | commercial | active |
 | [CC Switch](https://ccswitch.io/en) | Developer experience and local environments | oss | active |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | active |
 | [CircleCI](https://circleci.com) | CI, build and testing | commercial | active |

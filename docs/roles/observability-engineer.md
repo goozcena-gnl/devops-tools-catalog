@@ -18,7 +18,7 @@
 | [bottom](https://bottom.pages.dev/stable/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Bugsink](https://www.bugsink.com/) | Monitoring, metrics, logs and tracing | source-available | active |
 | [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | active |
-| [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | active |
 | [cardamon](https://github.com/dominikhei/cardamon) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [changedetection.io](https://changedetection.io/) | Monitoring, metrics, logs and tracing | open-core | active |
@@ -115,7 +115,7 @@
 | [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Tracetest](https://tracetest.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [TShark](https://www.wireshark.org/docs/man-pages/tshark.html) | SRE, incident response and on-call | oss | active |
-| [Uptime Kuma](https://uptime.kuma.pet) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Uptime Kuma](https://uptime.kuma.pet) | Monitoring, metrics, logs and tracing | oss | active |
 | [UptimeRobot](https://uptimerobot.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Uptrace](https://uptrace.dev/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Vector](https://vector.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |

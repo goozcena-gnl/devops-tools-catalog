@@ -583,20 +583,20 @@ OpenStack secrets management.
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Password manager for teams with self-hosted and paid offerings.
+Open-source team password-management server with Community and subscription-enabled Pro features, offered self-hosted or through Passbolt Cloud.
 
 **Use when**
 
-- Team password sharing with GPG-based encryption and self-hosting.
+- You need end-to-end encrypted team credential sharing through the AGPL-licensed server, choosing Community, subscription-enabled Pro or vendor-managed Cloud deployment.
 
 **Consider alternatives when**
 
-- You need machine-to-machine secret management (use Vault).
+- You need machine-to-machine secret delivery instead of team credential collaboration, or assume software AGPL rights include unrestricted subscription-key transfer or hosted-service access.
 
-[Official site](https://www.passbolt.com)
+[Official site](https://www.passbolt.com) · [Documentation](https://www.passbolt.com/docs/) · [Source repository](https://github.com/passbolt/passbolt_api)
 
 ### Password Pusher
 

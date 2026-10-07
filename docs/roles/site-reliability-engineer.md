@@ -41,9 +41,9 @@
 | [Bugsink](https://www.bugsink.com/) | Monitoring, metrics, logs and tracing | source-available | active |
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | active |
-| [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | active |
 | [Cal.com](https://cal.com) | Workflow automation and ChatOps | oss | needs-review |
-| [Camunda](https://camunda.com) | Workflow automation and ChatOps | open-core | needs-review |
+| [Camunda 8](https://camunda.com) | Workflow automation and ChatOps | commercial | active |
 | [Capacitor Next](https://gimlet.io/capacitor-next/) | Kubernetes distributions and operations | oss | active |
 | [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [cardamon](https://github.com/dominikhei/cardamon) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -258,7 +258,7 @@
 | [KubeVela](https://kubevela.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KubeView](https://github.com/benc-uk/kubeview) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubevious](https://kubevious.io) | Kubernetes distributions and operations | oss | needs-review |
-| [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations | oss | needs-review |
+| [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations, Virtualization, bare metal and homelab | oss | active |
 | [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Kubey](https://kubey.app) | Kubernetes distributions and operations | oss | needs-review |
 | [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | active |
@@ -404,10 +404,10 @@
 | [TShark](https://www.wireshark.org/docs/man-pages/tshark.html) | SRE, incident response and on-call | oss | active |
 | [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) | Kubernetes distributions and operations | documentation | needs-review |
 | [Typhoon](https://typhoon.psdn.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Uptime Kuma](https://uptime.kuma.pet) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Uptime Kuma](https://uptime.kuma.pet) | Monitoring, metrics, logs and tracing | oss | active |
 | [UptimeRobot](https://uptimerobot.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Uptrace](https://uptrace.dev/) | Monitoring, metrics, logs and tracing | open-core | active |
-| [vcluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | needs-review |
+| [vCluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | active |
 | [Vector](https://vector.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Veeam Kasten for Kubernetes](https://www.veeam.com/products/cloud/kubernetes-data-protection.html) | Backup, disaster recovery and resilience | commercial | active |
 | [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | active |

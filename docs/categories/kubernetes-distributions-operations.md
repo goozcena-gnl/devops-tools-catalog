@@ -2121,22 +2121,22 @@ Kubernetes configuration analysis.
 
 ### KubeVirt
 
-**Categories:** Kubernetes distributions and operations<br>
+**Categories:** Kubernetes distributions and operations, Virtualization, bare metal and homelab<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Run VMs on Kubernetes.
+Kubernetes virtualization API and runtime for defining and managing virtual-machine workloads alongside containers.
 
 **Use when**
 
-- You need to run VM-based workloads alongside containers on the same platform.
+- You need to operate virtual machines and container workloads through Kubernetes APIs on infrastructure with the required virtualization, storage and networking support.
 
 **Consider alternatives when**
 
-- All workloads are containerized—VMs add unnecessary complexity.
+- You only operate container workloads, or your Kubernetes nodes and operational model cannot support the required virtualization stack.
 
-[Official site](https://kubevirt.io) · [Source repository](https://github.com/kubevirt/kubevirt)
+[Official site](https://kubevirt.io) · [Documentation](https://kubevirt.io/user-guide/) · [Source repository](https://github.com/kubevirt/kubevirt)
 
 ### Kubey
 
@@ -2861,24 +2861,24 @@ Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platfo
 
 [Official site](https://typhoon.psdn.io) · [Source repository](https://github.com/poseidon/typhoon)
 
-### vcluster
+### vCluster
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Run virtual Kubernetes clusters inside a host cluster (multi-tenancy / isolation).
+Open-source Kubernetes tenant-cluster software with separate control planes and resource syncing; commercial Platform and tier-gated features have separate licensing.
 
 **Use when**
 
-- You need isolated tenant clusters without provisioning physical infrastructure.
+- You need tenant Kubernetes APIs, CRDs and RBAC independent of a shared host control plane, and can choose documented OSS or separately licensed Platform capabilities.
 
 **Consider alternatives when**
 
-- Namespace-level isolation with RBAC and network policies is sufficient.
+- Namespace isolation is sufficient, or you assume the Apache-licensed OSS image includes tier-gated Platform, private-node or enterprise features.
 
-[Official site](https://www.vcluster.com) · [Source repository](https://github.com/loft-sh/vcluster)
+[Official site](https://www.vcluster.com) · [Documentation](https://www.vcluster.com/docs/vcluster/) · [Source repository](https://github.com/loft-sh/vcluster)
 
 ### webernetes
 

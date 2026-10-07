@@ -31,7 +31,8 @@
   needs_review: true
 - id: buildah
   name: Buildah
-  summary: Build OCI images without a daemon.
+  summary: Daemonless OCI image-building CLI and library, with Dockerfile and scripted workflows; complementary
+    to the Podman container runtime.
   official_url: https://buildah.io
   repository_url: https://github.com/containers/buildah
   categories:
@@ -46,23 +47,36 @@
   - build
   - release
   use_when:
-  - '* You need daemonless, rootless container image builds (especially in CI or restricted environments).'
+  - You need daemonless OCI image builds from Dockerfiles or scripted working-container operations, including
+    rootless Linux workflows where supported.
   avoid_when:
-  - '* You''re happy with standard Docker builds and don''t have security constraints on the daemon.'
-  deployment_models: []
+  - You need a long-running container runtime rather than an image builder; Podman is complementary and
+    can use Buildah libraries independently.
+  deployment_models:
+  - local
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L74
   - legacy:devopstools_final.md#L348
-  needs_review: true
+  - https://buildah.io/
+  - https://github.com/podman-container-tools/buildah
+  - https://github.com/podman-container-tools/buildah/blob/main/LICENSE
+  - https://github.com/podman-container-tools/buildah/tree/main/docs
+  - https://github.com/podman-container-tools/buildah/blob/main/docs/buildah.1.md
+  - https://github.com/podman-container-tools/buildah/releases
+  needs_review: false
+  documentation_url: https://github.com/podman-container-tools/buildah/tree/main/docs
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: buildkit
   name: BuildKit
-  summary: Next-generation Docker image build engine used by Buildx.
+  summary: Moby build-execution toolkit and backend for concurrent, cache-efficient builds, used by Docker
+    Buildx and other clients.
   official_url: https://docs.docker.com/build/buildkit
   repository_url: https://github.com/moby/buildkit
   categories:
@@ -77,21 +91,31 @@
   - build
   - release
   use_when:
-  - '* You want faster Docker builds with better caching, parallelism, and build secrets.'
+  - You need low-level build execution, reusable caches and extensible frontends, accessed through buildctl,
+    Docker Buildx or another BuildKit client.
   avoid_when:
-  - '* You''re already using it (it''s the default in modern Docker); switching only matters on older
-    Docker versions.'
-  deployment_models: []
+  - You only need a higher-level build interface and do not want to operate a standalone buildkitd backend;
+    Docker integrations can manage it for you.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-07'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L76
   - legacy:devopstools_final.md#L349
-  needs_review: true
+  - https://github.com/moby/buildkit
+  - https://github.com/moby/buildkit/blob/master/LICENSE
+  - https://docs.docker.com/build/buildkit/
+  - https://docs.docker.com/build/concepts/overview/
+  - https://github.com/moby/buildkit/releases
+  needs_review: false
+  documentation_url: https://docs.docker.com/build/buildkit/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: cek
   name: cek
   summary: Inspect OCI image filesystems and layers without running containers.

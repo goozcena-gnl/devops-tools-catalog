@@ -221,11 +221,11 @@
 | [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) | IAM, secrets and certificate management | oss | needs-review |
 | [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) | Kubernetes distributions and operations, Cloud platforms and cloud management | oss | active |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
-| [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | needs-review |
+| [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | active |
 | [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | commercial | active |
 | [Oracle Kubernetes Engine](https://www.oracle.com/cloud/cloud-native/kubernetes-engine/) | Kubernetes distributions and operations | commercial | active |
-| [Packer](https://www.packer.io) | Infrastructure as Code | source-available | needs-review |
-| [passbolt](https://www.passbolt.com) | IAM, secrets and certificate management | open-core | needs-review |
+| [Packer](https://www.packer.io) | Infrastructure as Code | source-available | active |
+| [passbolt](https://www.passbolt.com) | IAM, secrets and certificate management | oss | active |
 | [Password Pusher](https://pwpush.com/) | IAM, secrets and certificate management | open-core | active |
 | [peerd](https://peerd.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [phpIPAM](https://phpipam.net/) | Databases, caching and data infrastructure | oss | active |

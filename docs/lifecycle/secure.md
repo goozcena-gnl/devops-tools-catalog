@@ -176,7 +176,7 @@
 - [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) — Commercial CNAPP unifying application security, cloud posture and runtime protection with SOC workflows.
 - [Pangolin](https://pangolin.net) — Zero-trust remote access platform and VPN alternative.
 - [Parrot Security](https://www.parrotsec.org/) — Security-oriented Linux distribution for penetration testing, digital forensics, and privacy.
-- [passbolt](https://www.passbolt.com) — Password manager for teams with self-hosted and paid offerings.
+- [passbolt](https://www.passbolt.com) — Open-source team password-management server with Community and subscription-enabled Pro features, offered self-hosted or through Passbolt Cloud.
 - [Password Pusher](https://pwpush.com/) — Secret-sharing application that creates expiring links for passwords, text, files, and URLs.
 - [Pavois](https://pavois.dev) — Linux compliance scanner and hardening tool that evaluates effective runtime configuration, maps controls across major standards, and applies reviewable remediation through CINC/InSpec and Chef.
 - [PEASS-ng](https://github.com/peass-ng/PEASS-ng) — Security assessment script suite for identifying local privilege-escalation exposure on supported systems.
