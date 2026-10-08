@@ -119,7 +119,7 @@
 | [ContainerYard](https://github.com/mcmah309/containeryard) | Containers and image tooling | oss | active |
 | [Convox](https://www.convox.com) | CD, GitOps, release and promotion | oss | active |
 | [Coolify](https://coolify.io/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | open-core | active |
-| [CoreDNS](https://coredns.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [CoreDNS](https://coredns.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) | Emerging and experimental tools | unknown | needs-review |
 | [Cosign](https://docs.sigstore.dev/cosign) | Software supply-chain security | oss | active |
 | [CronJob Guardian](https://illeniumstudios.github.io/cronjob-guardian) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -174,7 +174,7 @@
 | [Entire](https://entire.io) | Emerging and experimental tools | open-core | needs-review |
 | [env zero](https://www.envzero.com/) | Infrastructure as Code | commercial | active |
 | [Envoy](https://www.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | active |
-| [Envoy Gateway](https://gateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Envoy Gateway](https://gateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Eraser DiagramGPT](https://www.eraser.io/diagramgpt) | Emerging and experimental tools | unknown | needs-review |
 | [Eureka](https://github.com/Netflix/eureka) | Kubernetes networking, storage and add-ons | oss | active |
 | [EveryDev.ai](https://www.everydev.ai/) | Documentation, learning and career resources | unknown | needs-review |
@@ -182,7 +182,7 @@
 | [Exoscale SKS](https://www.exoscale.com/sks/) | Kubernetes distributions and operations | commercial | active |
 | [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | needs-review |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
-| [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | active |
 | [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Finout](https://www.finout.io) | FinOps and sustainability | commercial | active |
 | [flannel](https://github.com/flannel-io/flannel) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -254,7 +254,7 @@
 | [Informatica](https://www.informatica.com) | Emerging and experimental tools | unknown | needs-review |
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) | Kubernetes distributions and operations | oss | needs-review |
-| [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [IT Tools](https://it-tools.tech) | Emerging and experimental tools | oss | needs-review |
 | [k (rothgar)](https://github.com/rothgar/k) | Kubernetes distributions and operations | oss | active |
 | [k0rdent](https://docs.k0rdent.io/latest) | Kubernetes distributions and operations, Platform engineering and internal developer platforms | oss | active |
@@ -281,10 +281,10 @@
 | [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [Kaniko](https://github.com/GoogleContainerTools/kaniko) | Deprecated and historical tools, Containers and image tooling | oss | archived |
 | [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
-| [Karpenter](https://karpenter.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Karpenter](https://github.com/kubernetes-sigs/karpenter) | Kubernetes networking, storage and add-ons | oss | active |
 | [KCL](https://www.kcl-lang.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KDash](https://kdash-rs.github.io) | Kubernetes distributions and operations | oss | needs-review |
-| [KEDA](https://keda.sh) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [KEDA](https://keda.sh) | Kubernetes networking, storage and add-ons | oss | active |
 | [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Keel](https://keel.sh) | CD, GitOps, release and promotion | oss | active |
 | [Kelos](https://github.com/kelos-dev/kelos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -359,7 +359,7 @@
 | [Kubently](https://kubently.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [KubePlumber](https://github.com/David-VTUK/KubePlumber) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubernetes](https://kubernetes.io) | Kubernetes distributions and operations | oss | active |
-| [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | active |
 | [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | needs-review |
 | [Kubernetes Common Errors & Fixes](https://middleware.io/blog/kubernetes-common-errors-fix) | Kubernetes distributions and operations | documentation | needs-review |
 | [Kubernetes Dashboard](https://github.com/kubernetes-retired/dashboard) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
@@ -412,7 +412,7 @@
 | [llmfit](https://github.com/AlexsJones/llmfit) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LM Studio](https://lmstudio.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [Loft Vind](https://github.com/loft-sh/vind) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Luxury Yacht](https://luxury-yacht.app/) | Kubernetes networking, storage and add-ons | oss | active |
 | [m9sweeper](https://m9sweeper.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -420,8 +420,8 @@
 | [mcpsnoop](https://github.com/kerlenton/mcpsnoop) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Mem0](https://mem0.ai/) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [Metal3](https://metal3.io/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
-| [MetalLB](https://metallb.universe.tf) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [MetalLB](https://metallb.io) | Kubernetes networking, storage and add-ons | oss | active |
+| [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) | Kubernetes networking, storage and add-ons | oss | active |
 | [MicroK8s](https://microk8s.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Microsoft Azure](https://azure.microsoft.com) | Cloud platforms and cloud management | commercial | active |
 | [Microsoft Learn](https://learn.microsoft.com/en-us/training) | Documentation, learning and career resources | documentation | needs-review |

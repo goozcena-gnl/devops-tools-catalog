@@ -673,13 +673,14 @@
   needs_review: false
 - id: coredns
   name: CoreDNS
-  summary: Flexible, plugin-based DNS server used as the default cluster DNS in Kubernetes.
+  summary: Plugin-based DNS server and forwarder used for Kubernetes cluster service discovery through
+    its Kubernetes plugin; separate from kube-dns and ExternalDNS record automation.
   official_url: https://coredns.io
   repository_url: https://github.com/coredns/coredns
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - Cluster DNS
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -687,18 +688,33 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need a configurable DNS server for Kubernetes service discovery or DNS serving and forwarding
+    with the appropriate CoreDNS plugins.
+  avoid_when:
+  - You need a controller that publishes Kubernetes resource addresses into an external DNS provider rather
+    than a DNS server.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-08'
   sources:
   - legacy:devopstools_final.md#L545
-  needs_review: true
+  - https://github.com/coredns/coredns
+  - https://github.com/coredns/coredns/blob/master/LICENSE
+  - https://github.com/coredns/coredns/releases
+  - https://coredns.io/manual/toc/
+  - https://kubernetes.io/docs/tasks/administer-cluster/coredns/
+  - https://github.com/coredns/coredns/blob/master/GOVERNANCE.md
+  - https://www.cncf.io/projects/coredns/
+  needs_review: false
+  documentation_url: https://coredns.io/manual/toc/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: cronjob-guardian
   name: CronJob Guardian
   summary: Kubernetes operator for monitoring CronJobs with SLA tracking, dead-man's switch detection,
@@ -950,13 +966,15 @@
   needs_review: false
 - id: envoy-gateway
   name: Envoy Gateway
-  summary: Gateway API implementation for Envoy with traffic management, security, and observability features.
+  summary: Application-gateway control plane that provisions and configures Envoy Proxy using Kubernetes
+    Gateway API resources; Envoy Proxy supplies the traffic dataplane and Gateway API defines the configuration
+    standard.
   official_url: https://gateway.envoyproxy.io
   repository_url: https://github.com/envoyproxy/gateway
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - Gateway API implementation
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -964,18 +982,32 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need a Kubernetes Gateway API implementation that manages Envoy Proxy deployments and routing,
+    with compatible Gateway API and Envoy versions.
+  avoid_when:
+  - You need the Gateway API specification alone, a standalone proxy binary or a service mesh rather than
+    an application-gateway control plane.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-08'
   sources:
   - legacy:devopstools_final.md#L555
-  needs_review: true
+  - https://github.com/envoyproxy/gateway
+  - https://github.com/envoyproxy/gateway/blob/main/LICENSE
+  - https://github.com/envoyproxy/gateway/releases
+  - https://gateway.envoyproxy.io/latest/tasks/quickstart/
+  - https://gateway.envoyproxy.io/news/releases/matrix/
+  - https://github.com/envoyproxy/gateway/blob/main/GOVERNANCE.md
+  needs_review: false
+  documentation_url: https://gateway.envoyproxy.io/latest/tasks/quickstart/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: external-secrets-operator
   name: External Secrets Operator
   summary: Sync external secrets into Kubernetes.
@@ -1021,14 +1053,15 @@
   needs_review: false
 - id: externaldns
   name: ExternalDNS
-  summary: Kubernetes add-on that configures public DNS servers with information about exposed Kubernetes
-    services.
+  summary: Kubernetes controller that observes resources such as Services and Ingresses and synchronizes
+    DNS records through configured provider integrations; it is not a DNS server, ingress controller or
+    DNS provider.
   official_url: https://kubernetes-sigs.github.io/external-dns/latest
   repository_url: https://github.com/kubernetes-sigs/external-dns
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - DNS record automation
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -1036,18 +1069,31 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need Kubernetes resource changes to drive DNS record updates through a supported provider integration
+    with appropriate zone filters and record ownership configuration.
+  avoid_when:
+  - You need cluster DNS query serving, an ingress dataplane or a DNS hosting provider, or have not checked
+    the chosen provider's documented support and configuration.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-08'
   sources:
   - legacy:devopstools_final.md#L554
-  needs_review: true
+  - https://github.com/kubernetes-sigs/external-dns
+  - https://github.com/kubernetes-sigs/external-dns/blob/master/LICENSE.md
+  - https://github.com/kubernetes-sigs/external-dns/releases
+  - https://kubernetes-sigs.github.io/external-dns/latest/
+  - https://github.com/kubernetes/community/blob/main/sig-network/README.md
+  needs_review: false
+  documentation_url: https://kubernetes-sigs.github.io/external-dns/latest/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: falco
   name: Falco
   summary: Runtime security for cloud-native environments.
@@ -1779,7 +1825,8 @@
   needs_review: false
 - id: istio
   name: Istio
-  summary: Service mesh for managing microservices traffic.
+  summary: Service mesh with an Istiod control plane and sidecar or ambient data planes for service traffic,
+    security and telemetry; distinct from Envoy Proxy, Envoy Gateway and the Gateway API specification.
   official_url: https://istio.io
   repository_url: https://github.com/istio/istio
   categories:
@@ -1794,20 +1841,33 @@
   - deploy
   - operate
   use_when:
-  - You need advanced traffic management, mTLS, and observability at scale.
+  - You need service-to-service traffic policies, mutual TLS and mesh telemetry, with sidecar or ambient
+    mode selected for the documented workload and feature requirements.
   avoid_when:
-  - For small clusters where the complexity and resource overhead aren't justified.
-  deployment_models: []
+  - You need only an application gateway or expect ambient and sidecar modes to have identical capabilities
+    without checking waypoint and feature requirements.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-08'
   sources:
   - legacy:6_Security/README.md#L121
   - legacy:devopstools_final.md#L1016
-  needs_review: true
+  - https://github.com/istio/istio
+  - https://github.com/istio/istio/blob/master/LICENSE
+  - https://github.com/istio/istio/releases
+  - https://istio.io/latest/docs/overview/what-is-istio/
+  - https://istio.io/latest/docs/overview/dataplane-modes/
+  - https://github.com/istio/community/blob/master/README.md
+  - https://www.cncf.io/projects/istio/
+  needs_review: false
+  documentation_url: https://istio.io/latest/docs/overview/what-is-istio/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: k8s-csi-s3
   name: k8s-csi-s3
   summary: CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
@@ -1941,13 +2001,15 @@
   needs_review: false
 - id: karpenter
   name: Karpenter
-  summary: Kubernetes node autoscaler.
-  official_url: https://karpenter.sh
-  repository_url: https://github.com/aws/karpenter-provider-aws
+  summary: Kubernetes node autoscaling project with shared APIs and controllers plus separate provider
+    implementations; provisions nodes for unschedulable pods and manages node lifecycle rather than workload
+    replica counts.
+  official_url: https://github.com/kubernetes-sigs/karpenter
+  repository_url: https://github.com/kubernetes-sigs/karpenter
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - Node provisioning
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -1956,20 +2018,35 @@
   - deploy
   - operate
   use_when:
-  - You need fast, flexible node provisioning with workload-aware instance selection (primarily AWS).
+  - You need node provisioning driven by pod scheduling constraints and a compatible provider implementation
+    with its documented infrastructure permissions and lifecycle behavior.
   avoid_when:
-  - The standard Cluster Autoscaler works well enough or you're on a cloud without Karpenter support.
-  deployment_models: []
+  - You need event-driven workload replica scaling or assume the shared core alone installs a cloud provider,
+    replaces every cloud autoscaling service or gives all providers identical support.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-08'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L106
   - legacy:devopstools_final.md#L581
-  needs_review: true
+  - https://github.com/kubernetes-sigs/karpenter
+  - https://github.com/kubernetes-sigs/karpenter/blob/main/LICENSE
+  - https://github.com/kubernetes-sigs/karpenter/releases
+  - https://github.com/kubernetes-sigs/karpenter/blob/main/README.md
+  - https://github.com/kubernetes-sigs/karpenter/blob/main/pkg/cloudprovider/types.go
+  - https://github.com/kubernetes/community/blob/main/sig-autoscaling/README.md
+  - https://github.com/aws/karpenter-provider-aws
+  - https://karpenter.sh/docs/getting-started/getting-started-with-karpenter/
+  - https://karpenter.sh
+  needs_review: false
+  documentation_url: https://github.com/kubernetes-sigs/karpenter/blob/main/README.md
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: kcl
   name: KCL
   summary: Constraint-based configuration and policy language for Kubernetes and cloud-native environments.
@@ -2003,13 +2080,15 @@
   needs_review: true
 - id: keda
   name: KEDA
-  summary: Kubernetes-based Event Driven Autoscaler.
+  summary: Event-driven Kubernetes workload autoscaling that manages HPA resources and supplies external
+    metrics, with workload activation from zero and event-driven Jobs; separate from node provisioning
+    and the Metrics Server resource pipeline.
   official_url: https://keda.sh
   repository_url: https://github.com/kedacore/keda
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - Event-driven workload autoscaling
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -2018,20 +2097,32 @@
   - deploy
   - operate
   use_when:
-  - You need to scale workloads based on external event sources (queues, streams, custom metrics).
+  - You need workload replica activation or scaling from event-source signals, or event-triggered Kubernetes
+    Jobs, with a documented KEDA scaler and credentials.
   avoid_when:
-  - Standard HPA with CPU/memory metrics is sufficient.
-  deployment_models: []
+  - You need Kubernetes node provisioning or assume KEDA replaces HPA, resource Metrics Server or the
+    event-source system itself.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-08'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L108
   - legacy:devopstools_final.md#L583
-  needs_review: true
+  - https://github.com/kedacore/keda
+  - https://github.com/kedacore/keda/blob/main/LICENSE
+  - https://github.com/kedacore/keda/releases
+  - https://keda.sh/docs/latest/concepts/
+  - https://github.com/kedacore/governance/blob/main/GOVERNANCE.md
+  - https://www.cncf.io/projects/keda/
+  needs_review: false
+  documentation_url: https://keda.sh/docs/latest/concepts/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: keda-gpu-scaler
   name: keda-gpu-scaler
   summary: GPU-aware autoscaling extension for KEDA workloads.
@@ -2445,12 +2536,13 @@
   needs_review: false
 - id: kubernetes-autoscaler
   name: Kubernetes Autoscaler
-  summary: Autoscaling components (HPA/VPA/Cluster Autoscaler).
+  summary: Repository of Kubernetes autoscaling components including Cluster Autoscaler, Vertical Pod
+    Autoscaler and Addon Resizer; Horizontal Pod Autoscaler is a separate Kubernetes-core API and controller.
   repository_url: https://github.com/kubernetes/autoscaler
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - Autoscaling components
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -2459,20 +2551,35 @@
   - deploy
   - operate
   use_when:
-  - You need standard pod or node autoscaling based on resource utilization.
+  - You need to select a repository component for node-count adjustment, pod CPU/memory request recommendations
+    or updates, or cluster-proportional addon resource resizing.
   avoid_when:
-  - Karpenter (for nodes) or KEDA (for event-driven scaling) better fits your workload patterns.
+  - You expect one installed controller to implement every Kubernetes autoscaling mechanism, or assume
+    this repository owns HPA, KEDA or Karpenter.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-08'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L115
   - legacy:devopstools_final.md#L594
-  needs_review: true
+  - https://github.com/kubernetes/autoscaler
+  - https://github.com/kubernetes/autoscaler/blob/master/LICENSE
+  - https://github.com/kubernetes/autoscaler/releases
+  - https://github.com/kubernetes/autoscaler/blob/master/README.md
+  - https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/README.md
+  - https://github.com/kubernetes/autoscaler/blob/master/vertical-pod-autoscaler/README.md
+  - https://github.com/kubernetes/autoscaler/blob/master/addon-resizer/README.md
+  - https://github.com/kubernetes/community/blob/main/sig-autoscaling/README.md
+  - https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/
+  needs_review: false
+  documentation_url: https://github.com/kubernetes/autoscaler/blob/master/README.md
+  license_spdx: Apache-2.0
+  repository_archived: false
+  official_url: https://github.com/kubernetes/autoscaler
 - id: kubevela
   name: KubeVela
   summary: Application delivery platform on Kubernetes.
@@ -2722,7 +2829,9 @@
   needs_review: true
 - id: longhorn
   name: Longhorn
-  summary: Cloud native distributed block storage for Kubernetes.
+  summary: Distributed block storage for Kubernetes persistent volumes, with replication, snapshots, backups
+    and CSI integration; file-sharing components expose those block volumes and do not make it an object-storage
+    system.
   official_url: https://longhorn.io
   repository_url: https://github.com/longhorn/longhorn
   categories:
@@ -2737,20 +2846,33 @@
   - deploy
   - operate
   use_when:
-  - You want easy-to-deploy distributed block storage with built-in backup and DR.
+  - You need replicated Kubernetes persistent block volumes with CSI integration, snapshots and documented
+    backup or recovery workflows.
   avoid_when:
-  - You need high-IOPS workloads or enterprise-scale storage (consider Ceph/Portworx).
-  deployment_models: []
+  - You need an object-store service or assume Longhorn is Rancher Manager, Rancher Prime or Rook/Ceph;
+    assess storage prerequisites and the chosen volume access mode.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-08'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L173
   - legacy:devopstools_final.md#L677
-  needs_review: true
+  - https://github.com/longhorn/longhorn
+  - https://github.com/longhorn/longhorn/blob/master/LICENSE
+  - https://github.com/longhorn/longhorn/releases
+  - https://longhorn.io/docs/latest/
+  - https://github.com/longhorn/longhorn/blob/master/GOVERNANCE.md
+  - https://www.cncf.io/projects/longhorn/
+  - https://github.com/longhorn/longhorn-manager/blob/master/LICENSE
+  needs_review: false
+  documentation_url: https://longhorn.io/docs/latest/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: luxury-yacht
   name: Luxury Yacht
   summary: Cross-platform desktop application for inspecting and managing Kubernetes clusters.
@@ -2854,13 +2976,15 @@
   needs_review: true
 - id: metallb
   name: MetalLB
-  summary: Load balancer implementation for bare metal.
-  official_url: https://metallb.universe.tf
+  summary: Kubernetes LoadBalancer-service implementation for bare-metal clusters that allocates service
+    IPs and advertises them through Layer 2 or BGP; separate from ingress controllers, CNIs and service
+    meshes.
+  official_url: https://metallb.io
   repository_url: https://github.com/metallb/metallb
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - LoadBalancer services
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -2869,28 +2993,44 @@
   - deploy
   - operate
   use_when:
-  - You run Kubernetes on bare metal and need LoadBalancer-type services.
+  - You need external IP allocation and Layer 2 or BGP advertisement for Kubernetes LoadBalancer Services
+    on networks you control.
   avoid_when:
-  - You're on a cloud provider with native load balancer integration.
-  deployment_models: []
+  - You need HTTP ingress routing, a service mesh or a CNI, or cannot meet the documented network, router
+    and BGP-mode requirements.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-08'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L123
   - legacy:devopstools_final.md#L606
-  needs_review: true
+  - https://github.com/metallb/metallb
+  - https://github.com/metallb/metallb/blob/main/LICENSE
+  - https://github.com/metallb/metallb/releases
+  - https://metallb.io/concepts/
+  - https://metallb.io/concepts/bgp/
+  - https://metallb.io/concepts/maturity/
+  - https://github.com/metallb/metallb/blob/main/CODEOWNERS
+  - https://metallb.universe.tf
+  needs_review: false
+  documentation_url: https://metallb.io/concepts/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: metrics-server
   name: Metrics Server
-  summary: Resource usage metrics for Kubernetes.
+  summary: Collects current CPU and memory resource metrics from kubelets and exposes the Kubernetes Metrics
+    API for HPA, VPA and kubectl top; it is not historical time-series storage or a general monitoring
+    platform.
   repository_url: https://github.com/kubernetes-sigs/metrics-server
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
-  - Kubernetes Ecosystem & Add-ons
+  - Resource metrics
   roles:
   - platform-engineer
   - site-reliability-engineer
@@ -2899,20 +3039,32 @@
   - deploy
   - operate
   use_when:
-  - You need `kubectl top` and HPA/VPA to function—it's a baseline requirement.
+  - You need Kubernetes resource metrics for CPU/memory autoscaling consumers or kubectl top and can meet
+    the aggregation-layer, kubelet and network requirements.
   avoid_when:
-  - Your managed Kubernetes already includes it or you rely solely on Prometheus for metrics.
-  deployment_models: []
+  - You need historical monitoring, accurate monitoring exports or external/custom metrics; Prometheus,
+    kube-state-metrics and cAdvisor have different roles and are not this implementation.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-08'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L124
   - legacy:devopstools_final.md#L607
-  needs_review: true
+  - https://github.com/kubernetes-sigs/metrics-server
+  - https://github.com/kubernetes-sigs/metrics-server/blob/master/LICENSE
+  - https://github.com/kubernetes-sigs/metrics-server/releases
+  - https://github.com/kubernetes-sigs/metrics-server/blob/master/README.md
+  - https://github.com/kubernetes/community/blob/main/sig-instrumentation/README.md
+  needs_review: false
+  documentation_url: https://github.com/kubernetes-sigs/metrics-server/blob/master/README.md
+  license_spdx: Apache-2.0
+  repository_archived: false
+  official_url: https://github.com/kubernetes-sigs/metrics-server
 - id: moco
   name: MOCO
   summary: MySQL Operator for Kubernetes by Cybozu.
