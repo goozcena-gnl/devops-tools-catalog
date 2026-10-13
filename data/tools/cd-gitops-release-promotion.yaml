@@ -393,12 +393,14 @@
   needs_review: false
 - id: flux-operator
   name: Flux Operator
-  summary: Kubernetes operator for managing Flux CD instances.
+  summary: ControlPlane-maintained Kubernetes operator installing, configuring and upgrading Flux CD instances
+    through FluxInstance resources, with additional self-service APIs. Its AGPL-3.0 software is separate
+    from Flux CD core and commercial ControlPlane distribution/support terms.
   official_url: https://fluxoperator.dev
   categories:
   - cd-gitops-release-promotion
   subcategories:
-  - GitOps
+  - Flux installation lifecycle
   roles:
   - devops-engineer
   - platform-engineer
@@ -407,20 +409,35 @@
   - release
   - deploy
   use_when:
-  - '* You manage multiple Flux installations and want operator-driven lifecycle management.'
+  - Manage declarative Flux installation, configuration and upgrades across Kubernetes clusters using
+    FluxInstance and the operator's documented APIs.
   avoid_when:
-  - '* You run a single Flux instance and don''t need operator abstraction.'
-  deployment_models: []
+  - Do not inherit Flux CD core's Apache-2.0 licence or governance, assume Enterprise distribution/support
+    entitlements, or use Flux lifecycle management as a Terraform/OpenTofu execution controller.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-13'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L146
   - legacy:devopstools_final.md#L391
-  needs_review: true
+  - https://github.com/controlplaneio-fluxcd/flux-operator
+  - https://github.com/controlplaneio-fluxcd/flux-operator/blob/main/README.md
+  - https://github.com/controlplaneio-fluxcd/flux-operator/blob/main/LICENSE
+  - https://fluxoperator.dev/docs/
+  - https://github.com/controlplaneio-fluxcd/flux-operator/blob/main/cmd/operator/main.go
+  - https://fluxoperator.dev/
+  - https://github.com/controlplaneio-fluxcd/flux-operator/releases
+  needs_review: false
+  documentation_url: https://fluxoperator.dev/docs/
+  license_spdx: AGPL-3.0
+  repository_archived: false
+  repository_url: https://github.com/controlplaneio-fluxcd/flux-operator
+  commercial_offering: true
 - id: flux9s
   name: flux9s
   summary: K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
@@ -451,12 +468,14 @@
   needs_review: true
 - id: gitops-bridge
   name: GitOps Bridge
-  summary: GitOps bridge for Kubernetes deployments.
+  summary: GitOps Bridge is a community pattern and example repository passing cluster-provisioning metadata
+    from IaC to GitOps-managed Kubernetes addons and workloads. Its Terraform/Argo CD example is described
+    as stable; Flux integration is listed as in progress, not universal executable-platform support.
   repository_url: https://github.com/gitops-bridge-dev/gitops-bridge
   categories:
   - cd-gitops-release-promotion
   subcategories:
-  - GitOps
+  - IaC to GitOps bootstrap patterns
   roles:
   - devops-engineer
   - platform-engineer
@@ -465,20 +484,31 @@
   - release
   - deploy
   use_when:
-  - '* You want to connect Terraform/IaC provisioning with ArgoCD/Flux bootstrapping.'
+  - Study and adapt the Terraform/Argo CD bootstrap examples to pass cloud resource and workload-identity
+    metadata into GitOps configuration.
   avoid_when:
-  - '* You don''t use Terraform for cluster provisioning or have your own bootstrap scripts.'
+  - Do not treat the pattern as an installable platform or assume completed Flux integration; verify present
+    maintenance and example compatibility before production adoption.
   deployment_models: []
   license_model: oss
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-13'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L148
   - legacy:devopstools_final.md#L393
+  - https://github.com/gitops-bridge-dev/gitops-bridge
+  - https://github.com/gitops-bridge-dev/gitops-bridge/blob/main/README.md
+  - https://github.com/gitops-bridge-dev/gitops-bridge/blob/main/LICENSE
+  - https://github.com/gitops-bridge-dev/gitops-bridge/commits/main/
+  - https://github.com/gitops-bridge-dev/gitops-bridge/releases
   needs_review: true
+  documentation_url: https://github.com/gitops-bridge-dev/gitops-bridge/blob/main/README.md
+  license_spdx: Apache-2.0
+  repository_archived: false
+  official_url: https://github.com/gitops-bridge-dev/gitops-bridge
 - id: kamal
   name: Kamal
   summary: Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
@@ -875,13 +905,15 @@
   repository_archived: false
 - id: tofu-controller
   name: Tofu Controller
-  summary: Flux controller for managing Terraform and OpenTofu resources the GitOps way.
+  summary: Tofu Controller is the flux-iac Kubernetes controller integrating Flux with OpenTofu/Terraform
+    reconciliation, plans, applies and drift detection through runner Pods; it is separate from Flux CD
+    core, Flux Operator and either IaC CLI.
   official_url: https://flux-iac.github.io/tofu-controller
   repository_url: https://github.com/flux-iac/tofu-controller
   categories:
   - cd-gitops-release-promotion
   subcategories:
-  - GitOps
+  - IaC reconciliation with Flux
   roles:
   - devops-engineer
   - platform-engineer
@@ -889,18 +921,33 @@
   lifecycle_stages:
   - release
   - deploy
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - Reconcile Terraform/OpenTofu resources from Flux sources with explicit approvals, scoped runner credentials
+    and a reviewed state-backend strategy.
+  avoid_when:
+  - Do not assume this controller is Flux CD core or a managed Terraform service; review runner ServiceAccounts,
+    cloud credentials, sensitive Kubernetes state Secrets and engine compatibility before automatic applies.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-13'
   sources:
   - legacy:devopstools_final.md#L396
-  needs_review: true
+  - https://github.com/flux-iac/tofu-controller
+  - https://github.com/flux-iac/tofu-controller/blob/main/README.md
+  - https://github.com/flux-iac/tofu-controller/blob/main/LICENSE
+  - https://flux-iac.github.io/tofu-controller/
+  - https://github.com/flux-iac/tofu-controller/blob/main/docs/getting_started.md
+  - https://github.com/flux-iac/tofu-controller/blob/main/MAINTAINERS
+  - https://github.com/flux-iac/tofu-controller/releases
+  needs_review: false
+  documentation_url: https://flux-iac.github.io/tofu-controller/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: uncloud
   name: Uncloud
   summary: Multi-node Docker Compose for running containerized apps in production without Kubernetes.

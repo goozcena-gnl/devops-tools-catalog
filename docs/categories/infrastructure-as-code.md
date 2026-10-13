@@ -124,19 +124,19 @@ Declarative IaC language for Azure Resource Manager deployments.
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Microsoft-curated, consistently designed Bicep and Terraform modules for Azure resources.
+Microsoft-led Azure Verified Modules initiative defining standards and indexes for Bicep and Terraform resource and pattern modules; the central repository hosts governance and documentation, while implementations live in separate module repositories and registries.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Use AVM standards and indexes to select reusable Azure resource or pattern modules and review each implementation's lifecycle, licence and support.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Do not treat the central standards repository as a deployable module, or extend its MIT licence and support status to every indexed implementation.
 
-[Official site](https://azure.github.io/Azure-Verified-Modules) · [Source repository](https://github.com/Azure/Azure-Verified-Modules)
+[Official site](https://azure.github.io/Azure-Verified-Modules) · [Documentation](https://azure.github.io/Azure-Verified-Modules/) · [Source repository](https://github.com/Azure/Azure-Verified-Modules)
 
 ### AzureNamingTool
 
@@ -390,20 +390,20 @@ Kubernetes-native registry for publishing and consuming OpenTofu and Terraform p
 
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Terraform/OpenTofu CI orchestration and pull-request automation.
+OpenTaco, the renamed Digger software project, combines Terraform/OpenTofu PR plan/apply automation with state management, drift workflows and beta remote runs. CI orchestration uses a backend and CI workers; public core and backend licences are distinct from Digger Enterprise terms.
 
 **Use when**
 
-- You want open-source PR automation that runs in your own CI (no separate server).
+- Adopt PR automation in your CI, or selected state-management and drift services, with a hosted or self-hosted orchestrator as documented; review the architecture for your chosen components.
 
 **Consider alternatives when**
 
-- You need an all-in-one platform with state management and a dashboard.
+- Do not assume there is no backend server, that every remote-run path executes in existing CI, or that MIT/Apache-2.0 cover Enterprise code and managed-service terms.
 
-[Official site](https://opentaco.dev) · [Source repository](https://github.com/diggerhq/digger)
+[Official site](https://opentaco.dev) · [Documentation](https://github.com/diggerhq/digger/blob/develop/docs/introduction/introduction.mdx) · [Source repository](https://github.com/diggerhq/digger)
 
 ### OpenTofu
 
@@ -505,19 +505,19 @@ Terraform automation and collaboration software.
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Developer-centric, platform-agnostic workload specification for defining runtime requirements once in `score.yaml` and targeting multiple environments.
+Score is a platform-agnostic container workload specification expressed in score.yaml; separate implementations such as score-compose and score-k8s translate it into platform configuration. The specification repository is not a Kubernetes deployment platform.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Define developer-owned workload requirements once and select a Score implementation and platform-specific provisioners for each target environment.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Do not assume the specification executes deployments, provisions every resource, or guarantees that all implementations support the same integrations.
 
-[Official site](https://score.dev) · [Source repository](https://github.com/score-spec/spec)
+[Official site](https://score.dev) · [Documentation](https://docs.score.dev/docs/) · [Source repository](https://github.com/score-spec/spec)
 
 ### Spacelift Deploy
 
@@ -537,6 +537,25 @@ Commercial infrastructure-as-code orchestration control plane with worker pools 
 - You only need a simple CI job, or assume private workers make the SaaS control plane self-hosted; a full self-hosted installation is a separate deployment.
 
 [Official site](https://spacelift.io) · [Documentation](https://docs.spacelift.io/)
+
+### Stategraph Orchestration (formerly Terrateam)
+
+**Categories:** Infrastructure as Code<br>
+**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
+**Model:** Open Core<br>
+**Status:** Active
+
+Stategraph Orchestration, formerly Terrateam, automates Terraform/OpenTofu plans and applies through GitHub or GitLab pull requests and CI runners. Its MPL-2.0 open-source core is distinct from commercial Enterprise, hosted services and Stategraph Infrastructure as a Database.
+
+**Use when**
+
+- Coordinate IaC pull-request plans, applies, locking and drift on your CI runners using a self-hosted orchestration server or the hosted offering.
+
+**Consider alternatives when**
+
+- Do not assume MPL-2.0 covers Enterprise or Infrastructure as a Database, or that open-source editions include every governance feature; review current edition and service terms.
+
+[Official site](https://stategraph.com) · [Documentation](https://stategraph.com/docs/orchestration) · [Source repository](https://github.com/stategraph/stategraph)
 
 ### Terraform Community Edition
 
@@ -581,38 +600,38 @@ Terraform module that schedules AWS EKS node groups to scale up and down with La
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Generate documentation from Terraform modules in various output formats.
+CLI and library generating Terraform module documentation from module configuration in multiple formats, with CI and pre-commit integration; it does not execute infrastructure or generate provider reference documentation.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Generate and check module inputs, outputs, requirements and other reference documentation locally, in CI or with pre-commit.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Use separate tools for Terraform provider/plugin documentation, provider validation, security checks and infrastructure plan/apply.
 
-[Official site](https://terraform-docs.io) · [Source repository](https://github.com/terraform-docs/terraform-docs)
+[Official site](https://terraform-docs.io) · [Documentation](https://terraform-docs.io/user-guide/introduction/) · [Source repository](https://github.com/terraform-docs/terraform-docs)
 
 ### terraform-plugin-docs
 
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Generate and validate Terraform provider/plugin documentation from source.
+HashiCorp tfplugindocs CLI and packages generate, migrate and validate Terraform provider/plugin documentation using examples, templates and provider schema; distinct from terraform-docs for modules.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Maintain Terraform provider reference documentation from templates, examples and provider schema, and validate Registry documentation structure.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Do not use provider documentation generation as module documentation generation, provider correctness testing or infrastructure deployment; default schema extraction builds the provider and invokes Terraform.
 
-[Source repository](https://github.com/hashicorp/terraform-plugin-docs)
+[Official site](https://github.com/hashicorp/terraform-plugin-docs) · [Documentation](https://github.com/hashicorp/terraform-plugin-docs/blob/main/README.md) · [Source repository](https://github.com/hashicorp/terraform-plugin-docs)
 
 ### Terragrunt
 
@@ -632,25 +651,6 @@ Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infra
 - You have a simple standalone OpenTofu or Terraform configuration that does not need an additional orchestration layer.
 
 [Official site](https://terragrunt.com/) · [Documentation](https://docs.terragrunt.com/) · [Source repository](https://github.com/gruntwork-io/terragrunt)
-
-### Terrateam
-
-**Categories:** Infrastructure as Code<br>
-**Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review
-
-GitOps-style Terraform pull-request automation with collaboration features.
-
-**Use when**
-
-- You want GitHub-native Terraform automation with access controls and apply locks.
-
-**Consider alternatives when**
-
-- You use GitLab/Bitbucket or prefer a fully self-hosted solution.
-
-[Official site](https://terrateam.io) · [Source repository](https://github.com/terrateamio/terrateam)
 
 ### terravision
 
@@ -675,20 +675,20 @@ Generate professional cloud architecture diagrams automatically from Terraform c
 
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Source Available<br>
+**Status:** Active
 
-Terraform linter (style + provider-specific rules).
+Pluggable Terraform-language linter for local and CI static analysis, including provider-specific rules. Much of the core is MPL-2.0; release binaries also include BUSL-1.1 Terraform-derived files, and external plugins have separate licences.
 
 **Use when**
 
-- You want to catch Terraform errors and enforce conventions before `plan`.
+- Run local or CI static checks for Terraform-language conventions, deprecated syntax and provider-specific errors using reviewed ruleset plugins.
 
 **Consider alternatives when**
 
-- You already have comprehensive CI validation covering the same rules.
+- Do not substitute linting for plan/apply, provider execution or security testing; verify syntax compatibility for OpenTofu and licences of binaries and each plugin.
 
-[Source repository](https://github.com/terraform-linters/tflint)
+[Official site](https://github.com/terraform-linters/tflint) · [Documentation](https://github.com/terraform-linters/tflint/blob/master/docs/README.md) · [Source repository](https://github.com/terraform-linters/tflint)
 
 ### Upjet
 

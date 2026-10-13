@@ -60,7 +60,7 @@
 | [Azure Messaging for AWS Professionals](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | active |
 | [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
+| [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
 | [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | active |
 | [Barbara](https://www.barbara.tech) | Emerging and experimental tools | unknown | needs-review |
@@ -189,7 +189,7 @@
 | [Flawless](https://github.com/William-Lu-stack/Flawless) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | commercial | active |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
-| [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | needs-review |
+| [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | active |
 | [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
 | [Forecastle](https://github.com/stakater/Forecastle) | Kubernetes distributions and operations | oss | needs-review |
 | [FreeCodeCamp DevOps](https://www.freecodecamp.org/news/tag/devops) | Documentation, learning and career resources | documentation | needs-review |
@@ -469,7 +469,7 @@
 | [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | oss | active |
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
 | [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
-| [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
+| [OpenTaco](https://opentaco.dev) | Infrastructure as Code | open-core | active |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | active |
 | [OperatorHub.io](https://operatorhub.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [OpsLevel](https://www.opslevel.com) | Platform engineering and internal developer platforms | commercial | active |
@@ -526,7 +526,7 @@
 | [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) | Kubernetes distributions and operations | commercial | active |
 | [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) | Kubernetes distributions and operations | commercial | active |
 | [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
-| [Score](https://score.dev) | Infrastructure as Code | oss | needs-review |
+| [Score](https://score.dev) | Infrastructure as Code | oss | active |
 | [Seabird](https://getseabird.github.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [SearXNG](https://docs.searxng.org) | Emerging and experimental tools | oss | needs-review |
@@ -552,6 +552,7 @@
 | [sshm](https://github.com/Gu1llaum-3/sshm) | Emerging and experimental tools | oss | needs-review |
 | [StackBlitz](https://stackblitz.com/) | Developer experience and local environments | commercial | active |
 | [Stakpak](https://stakpak.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) | Infrastructure as Code | open-core | active |
 | [Strimzi](https://strimzi.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Structurizr](https://github.com/structurizr) | Emerging and experimental tools | oss | needs-review |
 | [Swimmer](https://github.com/teru01/swimmer) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -568,15 +569,14 @@
 | [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
 | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
-| [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
-| [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |
+| [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | active |
+| [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | active |
 | [terraform-skill](https://github.com/antonbabenko/terraform-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
-| [Terrateam](https://terrateam.io) | Infrastructure as Code | open-core | needs-review |
 | [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
-| [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | oss | needs-review |
+| [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | source-available | active |
 | [Timoni](https://timoni.sh) | Emerging and experimental tools | oss | needs-review |
-| [Tofu Controller](https://flux-iac.github.io/tofu-controller) | CD, GitOps, release and promotion | oss | needs-review |
+| [Tofu Controller](https://flux-iac.github.io/tofu-controller) | CD, GitOps, release and promotion | oss | active |
 | [Traefik Proxy](https://traefik.io/traefik) | Kubernetes networking, storage and add-ons | oss | active |
 | [Trendshift](https://trendshift.io) | Documentation, learning and career resources | unknown | needs-review |
 | [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |

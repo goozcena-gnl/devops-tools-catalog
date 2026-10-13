@@ -31,7 +31,7 @@
 | [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
 | [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) | Virtualization, bare metal and homelab | documentation | needs-review |
-| [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
+| [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
 | [Bash](https://www.gnu.org/software/bash) | Foundations, Linux and scripting | oss | needs-review |
 | [Bat](https://github.com/sharkdp/bat) | Foundations, Linux and scripting | oss | needs-review |
@@ -143,7 +143,7 @@
 | [Open vSwitch](https://www.openvswitch.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
 | [OpenStack Ironic](https://ironicbaremetal.org/) | Virtualization, bare metal and homelab | oss | active |
-| [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
+| [OpenTaco](https://opentaco.dev) | Infrastructure as Code | open-core | active |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | active |
 | [OPNsense](https://opnsense.org/opnsense/) | Application and cloud security | oss | active |
 | [Oracle Linux](https://www.oracle.com/linux/) | Foundations, Linux and scripting | oss | active |
@@ -192,7 +192,7 @@
 | [Salt](https://saltproject.io) | Configuration management | oss | needs-review |
 | [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
 | [Scanopy](https://scanopy.net/) | Monitoring, metrics, logs and tracing | oss | active |
-| [Score](https://score.dev) | Infrastructure as Code | oss | needs-review |
+| [Score](https://score.dev) | Infrastructure as Code | oss | active |
 | [Sealos](https://sealos.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [SeaweedFS](https://seaweedfs.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Seesaw](https://github.com/google/seesaw) | Foundations, Linux and scripting | oss | active |
@@ -202,6 +202,7 @@
 | [Squid](https://www.squid-cache.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [Starship](https://starship.rs/) | Foundations, Linux and scripting | oss | active |
 | [Stash](https://stash.run) | Backup, disaster recovery and resilience | oss | needs-review |
+| [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) | Infrastructure as Code | open-core | active |
 | [Sustainable Computing (Kepler)](https://sustainable-computing.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Swiftorial](https://www.swiftorial.com/swiftlessons) | Foundations, Linux and scripting | documentation | needs-review |
 | [Syncthing](https://syncthing.net/) | Backup, disaster recovery and resilience | oss | active |
@@ -212,12 +213,11 @@
 | [Technitium DNS Server](https://technitium.com/dns/) | Virtualization, bare metal and homelab | oss | active |
 | [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
-| [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
-| [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |
+| [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | active |
+| [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | active |
 | [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
-| [Terrateam](https://terrateam.io) | Infrastructure as Code | open-core | needs-review |
 | [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
-| [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | oss | needs-review |
+| [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | source-available | active |
 | [The Linux Command Line](https://linuxcommand.org/tlcl.php) | Foundations, Linux and scripting | documentation | needs-review |
 | [The Linux Documentation Project (TLDP)](https://tldp.org) | Foundations, Linux and scripting | documentation | needs-review |
 | [TiKV](https://tikv.org) | Databases, caching and data infrastructure | oss | needs-review |

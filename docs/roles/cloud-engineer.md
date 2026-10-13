@@ -45,7 +45,7 @@
 | [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Azure Messaging for AWS Professionals](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | active |
-| [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
+| [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
 | [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
@@ -221,7 +221,7 @@
 | [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
 | [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) | IAM, secrets and certificate management | oss | needs-review |
 | [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) | Kubernetes distributions and operations, Cloud platforms and cloud management | oss | active |
-| [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
+| [OpenTaco](https://opentaco.dev) | Infrastructure as Code | open-core | active |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | active |
 | [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | commercial | active |
 | [Oracle Kubernetes Engine](https://www.oracle.com/cloud/cloud-native/kubernetes-engine/) | Kubernetes distributions and operations | commercial | active |
@@ -251,7 +251,7 @@
 | [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) | Kubernetes distributions and operations | commercial | active |
 | [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) | Kubernetes distributions and operations | commercial | active |
 | [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
-| [Score](https://score.dev) | Infrastructure as Code | oss | needs-review |
+| [Score](https://score.dev) | Infrastructure as Code | oss | active |
 | [SeaweedFS](https://seaweedfs.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Skupper](https://skupper.io/) | Kubernetes networking, storage and add-ons | oss | active |
@@ -263,6 +263,7 @@
 | [SSOReady](https://ssoready.com/) | IAM, secrets and certificate management | oss | active |
 | [Stakpak](https://stakpak.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Stash](https://stash.run) | Backup, disaster recovery and resilience | oss | needs-review |
+| [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) | Infrastructure as Code | open-core | active |
 | [Steampipe](https://steampipe.io/) | Cloud platforms and cloud management | oss | active |
 | [StrongKey](https://www.strongkey.com) | IAM, secrets and certificate management | unknown | needs-review |
 | [SysAdmin to SRE Roadmap](https://sre.yoparchi.fr) | Documentation, learning and career resources | documentation | needs-review |
@@ -274,13 +275,12 @@
 | [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
 | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
-| [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
-| [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |
+| [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | active |
+| [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | active |
 | [terraform-skill](https://github.com/antonbabenko/terraform-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
-| [Terrateam](https://terrateam.io) | Infrastructure as Code | open-core | needs-review |
 | [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
-| [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | oss | needs-review |
+| [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | source-available | active |
 | [Thales CipherTrust Manager](https://cpl.thalesgroup.com/encryption/ciphertrust-manager) | IAM, secrets and certificate management | unknown | needs-review |
 | [TiKV](https://tikv.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [Trendshift](https://trendshift.io) | Documentation, learning and career resources | unknown | needs-review |

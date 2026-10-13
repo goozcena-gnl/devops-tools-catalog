@@ -213,13 +213,15 @@
   needs_review: false
 - id: azure-verified-modules-avm
   name: Azure Verified Modules (AVM)
-  summary: Microsoft-curated, consistently designed Bicep and Terraform modules for Azure resources.
+  summary: Microsoft-led Azure Verified Modules initiative defining standards and indexes for Bicep and
+    Terraform resource and pattern modules; the central repository hosts governance and documentation,
+    while implementations live in separate module repositories and registries.
   official_url: https://azure.github.io/Azure-Verified-Modules
   repository_url: https://github.com/Azure/Azure-Verified-Modules
   categories:
   - infrastructure-as-code
   subcategories:
-  - Infrastructure as Code (IaC)
+  - IaC module standards and indexes
   roles:
   - devops-engineer
   - cloud-engineer
@@ -229,18 +231,31 @@
   - plan
   - build
   - deploy
-  use_when: []
-  avoid_when: []
+  use_when:
+  - Use AVM standards and indexes to select reusable Azure resource or pattern modules and review each
+    implementation's lifecycle, licence and support.
+  avoid_when:
+  - Do not treat the central standards repository as a deployable module, or extend its MIT licence and
+    support status to every indexed implementation.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-13'
   sources:
   - legacy:devopstools_final.md#L167
-  needs_review: true
+  - https://github.com/Azure/Azure-Verified-Modules
+  - https://github.com/Azure/Azure-Verified-Modules/blob/main/README.md
+  - https://github.com/Azure/Azure-Verified-Modules/blob/main/LICENSE
+  - https://azure.github.io/Azure-Verified-Modules/
+  - https://azure.github.io/Azure-Verified-Modules/specs/
+  - https://azure.github.io/Azure-Verified-Modules/help-support/module-support/
+  needs_review: false
+  documentation_url: https://azure.github.io/Azure-Verified-Modules/
+  license_spdx: MIT
+  repository_archived: false
 - id: azurenamingtool
   name: AzureNamingTool
   summary: NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed
@@ -631,7 +646,9 @@
   needs_review: false
 - id: opentaco
   name: OpenTaco
-  summary: Terraform/OpenTofu CI orchestration and pull-request automation.
+  summary: OpenTaco, the renamed Digger software project, combines Terraform/OpenTofu PR plan/apply automation
+    with state management, drift workflows and beta remote runs. CI orchestration uses a backend and CI
+    workers; public core and backend licences are distinct from Digger Enterprise terms.
   official_url: https://opentaco.dev
   repository_url: https://github.com/diggerhq/digger
   categories:
@@ -648,20 +665,36 @@
   - build
   - deploy
   use_when:
-  - You want open-source PR automation that runs in your own CI (no separate server).
+  - Adopt PR automation in your CI, or selected state-management and drift services, with a hosted or
+    self-hosted orchestrator as documented; review the architecture for your chosen components.
   avoid_when:
-  - You need an all-in-one platform with state management and a dashboard.
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
+  - Do not assume there is no backend server, that every remote-run path executes in existing CI, or that
+    MIT/Apache-2.0 cover Enterprise code and managed-service terms.
+  deployment_models:
+  - self-hosted
+  license_model: open-core
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-13'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L118
   - legacy:devopstools_final.md#L221
-  needs_review: true
+  - https://github.com/diggerhq/digger
+  - https://github.com/diggerhq/digger/blob/develop/README.md
+  - https://github.com/diggerhq/digger/blob/develop/LICENSE
+  - https://github.com/diggerhq/digger/blob/develop/docs/introduction/introduction.mdx
+  - https://github.com/diggerhq/digger/blob/develop/backend/LICENSE
+  - https://github.com/diggerhq/digger/blob/develop/ee/LICENSE
+  - https://github.com/diggerhq/digger/blob/develop/docs/self-host-and-develop/system-architecture.mdx
+  - https://github.com/diggerhq/digger/blob/develop/docs/ce/state-management/overview.mdx
+  - https://github.com/diggerhq/digger/releases
+  needs_review: false
+  documentation_url: https://github.com/diggerhq/digger/blob/develop/docs/introduction/introduction.mdx
+  license_spdx: MIT AND Apache-2.0
+  repository_archived: false
+  commercial_offering: true
 - id: opentofu
   name: OpenTofu
   summary: Community-governed infrastructure-as-code CLI for declaratively provisioning and managing cloud
@@ -860,14 +893,15 @@
   needs_review: true
 - id: score
   name: Score
-  summary: Developer-centric, platform-agnostic workload specification for defining runtime requirements
-    once in `score.yaml` and targeting multiple environments.
+  summary: Score is a platform-agnostic container workload specification expressed in score.yaml; separate
+    implementations such as score-compose and score-k8s translate it into platform configuration. The
+    specification repository is not a Kubernetes deployment platform.
   official_url: https://score.dev
   repository_url: https://github.com/score-spec/spec
   categories:
   - infrastructure-as-code
   subcategories:
-  - Infrastructure as Code (IaC)
+  - Workload specification
   roles:
   - devops-engineer
   - cloud-engineer
@@ -877,18 +911,32 @@
   - plan
   - build
   - deploy
-  use_when: []
-  avoid_when: []
+  use_when:
+  - Define developer-owned workload requirements once and select a Score implementation and platform-specific
+    provisioners for each target environment.
+  avoid_when:
+  - Do not assume the specification executes deployments, provisions every resource, or guarantees that
+    all implementations support the same integrations.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-13'
   sources:
   - legacy:devopstools_final.md#L183
-  needs_review: true
+  - https://github.com/score-spec/spec
+  - https://github.com/score-spec/spec/blob/main/README.md
+  - https://github.com/score-spec/spec/blob/main/LICENSE
+  - https://docs.score.dev/docs/
+  - https://github.com/score-spec/spec/blob/main/GOVERNANCE.md
+  - https://www.cncf.io/projects/score/
+  - https://github.com/score-spec/spec/releases
+  needs_review: false
+  documentation_url: https://docs.score.dev/docs/
+  license_spdx: Apache-2.0
+  repository_archived: false
 - id: spacelift
   name: Spacelift Deploy
   summary: Commercial infrastructure-as-code orchestration control plane with worker pools and Open Policy
@@ -1060,63 +1108,88 @@
   commercial_offering: true
 - id: terraform-docs
   name: terraform-docs
-  summary: Generate documentation from Terraform modules in various output formats.
+  summary: CLI and library generating Terraform module documentation from module configuration in multiple
+    formats, with CI and pre-commit integration; it does not execute infrastructure or generate provider
+    reference documentation.
   official_url: https://terraform-docs.io
   repository_url: https://github.com/terraform-docs/terraform-docs
   categories:
   - infrastructure-as-code
   subcategories:
-  - Infrastructure as Code (IaC)
+  - Terraform module documentation
   roles:
   - devops-engineer
   - cloud-engineer
   - platform-engineer
   - infrastructure-systems-engineer
   lifecycle_stages:
-  - plan
+  - develop
   - build
-  - deploy
-  use_when: []
-  avoid_when: []
+  use_when:
+  - Generate and check module inputs, outputs, requirements and other reference documentation locally,
+    in CI or with pre-commit.
+  avoid_when:
+  - Use separate tools for Terraform provider/plugin documentation, provider validation, security checks
+    and infrastructure plan/apply.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-13'
   sources:
   - legacy:devopstools_final.md#L185
-  needs_review: true
+  - https://github.com/terraform-docs/terraform-docs
+  - https://github.com/terraform-docs/terraform-docs/blob/master/README.md
+  - https://github.com/terraform-docs/terraform-docs/blob/master/LICENSE
+  - https://terraform-docs.io/user-guide/introduction/
+  - https://github.com/terraform-docs/terraform-docs/releases
+  needs_review: false
+  documentation_url: https://terraform-docs.io/user-guide/introduction/
+  license_spdx: MIT
+  repository_archived: false
 - id: terraform-plugin-docs
   name: terraform-plugin-docs
-  summary: Generate and validate Terraform provider/plugin documentation from source.
+  summary: HashiCorp tfplugindocs CLI and packages generate, migrate and validate Terraform provider/plugin
+    documentation using examples, templates and provider schema; distinct from terraform-docs for modules.
   repository_url: https://github.com/hashicorp/terraform-plugin-docs
   categories:
   - infrastructure-as-code
   subcategories:
-  - Infrastructure as Code (IaC)
+  - Terraform provider documentation
   roles:
   - devops-engineer
   - cloud-engineer
   - platform-engineer
   - infrastructure-systems-engineer
   lifecycle_stages:
-  - plan
+  - develop
   - build
-  - deploy
-  use_when: []
-  avoid_when: []
+  use_when:
+  - Maintain Terraform provider reference documentation from templates, examples and provider schema,
+    and validate Registry documentation structure.
+  avoid_when:
+  - Do not use provider documentation generation as module documentation generation, provider correctness
+    testing or infrastructure deployment; default schema extraction builds the provider and invokes Terraform.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-13'
   sources:
   - legacy:devopstools_final.md#L186
-  needs_review: true
+  - https://github.com/hashicorp/terraform-plugin-docs
+  - https://github.com/hashicorp/terraform-plugin-docs/blob/main/README.md
+  - https://github.com/hashicorp/terraform-plugin-docs/blob/main/LICENSE
+  - https://github.com/hashicorp/terraform-plugin-docs/releases
+  needs_review: false
+  documentation_url: https://github.com/hashicorp/terraform-plugin-docs/blob/main/README.md
+  license_spdx: MPL-2.0
+  repository_archived: false
+  official_url: https://github.com/hashicorp/terraform-plugin-docs
 - id: terragrunt
   name: Terragrunt
   summary: Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infrastructure with
@@ -1166,10 +1239,12 @@
   commercial_offering: true
   repository_archived: false
 - id: terrateam
-  name: Terrateam
-  summary: GitOps-style Terraform pull-request automation with collaboration features.
-  official_url: https://terrateam.io
-  repository_url: https://github.com/terrateamio/terrateam
+  name: Stategraph Orchestration (formerly Terrateam)
+  summary: Stategraph Orchestration, formerly Terrateam, automates Terraform/OpenTofu plans and applies
+    through GitHub or GitLab pull requests and CI runners. Its MPL-2.0 open-source core is distinct from
+    commercial Enterprise, hosted services and Stategraph Infrastructure as a Database.
+  official_url: https://stategraph.com
+  repository_url: https://github.com/stategraph/stategraph
   categories:
   - infrastructure-as-code
   subcategories:
@@ -1184,20 +1259,38 @@
   - build
   - deploy
   use_when:
-  - You want GitHub-native Terraform automation with access controls and apply locks.
+  - Coordinate IaC pull-request plans, applies, locking and drift on your CI runners using a self-hosted
+    orchestration server or the hosted offering.
   avoid_when:
-  - You use GitLab/Bitbucket or prefer a fully self-hosted solution.
-  deployment_models: []
+  - Do not assume MPL-2.0 covers Enterprise or Infrastructure as a Database, or that open-source editions
+    include every governance feature; review current edition and service terms.
+  deployment_models:
+  - self-hosted
+  - saas
   license_model: open-core
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-13'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L126
   - legacy:devopstools_final.md#L225
-  needs_review: true
+  - https://github.com/stategraph/stategraph
+  - https://github.com/stategraph/stategraph/blob/main/README.md
+  - https://github.com/stategraph/stategraph/blob/main/LICENSE
+  - https://stategraph.com/docs/orchestration
+  - https://stategraph.com/about
+  - https://stategraph.com/docs/get-started/editions
+  - https://stategraph.com/blog/terrateam-open-source
+  - https://github.com/stategraph/stategraph/releases
+  - https://terrateam.io
+  - https://github.com/terrateamio/terrateam
+  needs_review: false
+  documentation_url: https://stategraph.com/docs/orchestration
+  license_spdx: MPL-2.0
+  repository_archived: false
+  commercial_offering: true
 - id: terravision
   name: terravision
   summary: Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google,
@@ -1230,33 +1323,50 @@
   needs_review: true
 - id: tflint
   name: TFLint
-  summary: Terraform linter (style + provider-specific rules).
+  summary: Pluggable Terraform-language linter for local and CI static analysis, including provider-specific
+    rules. Much of the core is MPL-2.0; release binaries also include BUSL-1.1 Terraform-derived files,
+    and external plugins have separate licences.
   repository_url: https://github.com/terraform-linters/tflint
   categories:
   - infrastructure-as-code
   subcategories:
-  - Infrastructure as Code (IaC)
+  - Terraform static analysis
   roles:
   - devops-engineer
   - cloud-engineer
   - platform-engineer
   - infrastructure-systems-engineer
   lifecycle_stages:
-  - plan
-  - build
-  - deploy
+  - develop
+  - test
   use_when:
-  - You want to catch Terraform errors and enforce conventions before `plan`.
+  - Run local or CI static checks for Terraform-language conventions, deprecated syntax and provider-specific
+    errors using reviewed ruleset plugins.
   avoid_when:
-  - You already have comprehensive CI validation covering the same rules.
+  - Do not substitute linting for plan/apply, provider execution or security testing; verify syntax compatibility
+    for OpenTofu and licences of binaries and each plugin.
   deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_model: source-available
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-13'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L64
   - legacy:devopstools_final.md#L191
-  needs_review: true
+  - https://github.com/terraform-linters/tflint
+  - https://github.com/terraform-linters/tflint/blob/master/README.md
+  - https://github.com/terraform-linters/tflint/blob/master/LICENSE
+  - https://github.com/terraform-linters/tflint/blob/master/docs/README.md
+  - https://github.com/terraform-linters/tflint/blob/master/LICENSE-BUSL
+  - https://github.com/terraform-linters/tflint/blob/master/terraform/LICENSE
+  - https://github.com/terraform-linters/tflint/blob/master/terraform/LICENSE-BUSL
+  - https://github.com/terraform-linters/tflint/blob/master/docs/user-guide/compatibility.md
+  - https://github.com/terraform-linters/tflint/blob/master/docs/user-guide/plugins.md
+  - https://github.com/terraform-linters/tflint/releases
+  needs_review: false
+  documentation_url: https://github.com/terraform-linters/tflint/blob/master/docs/README.md
+  license_spdx: MPL-2.0 AND BUSL-1.1
+  repository_archived: false
+  official_url: https://github.com/terraform-linters/tflint

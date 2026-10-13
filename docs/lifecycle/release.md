@@ -34,12 +34,12 @@
 - [Dokku](https://dokku.com) — PaaS for deploying apps using Docker.
 - [Earthly](https://earthly.dev) — Build automation framework.
 - [Flux](https://fluxcd.io) — Open and extensible GitOps toolkit for Kubernetes.
-- [Flux Operator](https://fluxoperator.dev) — Kubernetes operator for managing Flux CD instances.
+- [Flux Operator](https://fluxoperator.dev) — ControlPlane-maintained Kubernetes operator installing, configuring and upgrading Flux CD instances through FluxInstance resources, with additional self-service APIs. Its AGPL-3.0 software is separate from Flux CD core and commercial ControlPlane distribution/support terms.
 - [flux9s](https://flux9s.ca) — K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
 - [git push no-mistakes](https://kunchenguid.github.io/no-mistakes/) — Local Git push gate that validates changes in an isolated worktree before publishing a branch and opening a pull request.
 - [GitHub CLI](https://cli.github.com) — Official command-line interface for GitHub repositories, pull requests, issues, releases, and Actions workflows.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
-- [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) — GitOps bridge for Kubernetes deployments.
+- [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) — GitOps Bridge is a community pattern and example repository passing cluster-provisioning metadata from IaC to GitOps-managed Kubernetes addons and workloads. Its Terraform/Argo CD example is described as stable; Flux integration is listed as in progress, not universal executable-platform support.
 - [Google Artifact Registry](https://cloud.google.com/artifact-registry) — Google Cloud's unified repository for container images and language packages.
 - [Gradle](https://gradle.org) — Flexible build automation tool for Java and other languages.
 - [Harbor](https://goharbor.io) — Cloud-native registry for storing, signing, and scanning container images.
@@ -84,7 +84,7 @@
 - [Tekton](https://tekton.dev) — Kubernetes-native CI/CD framework and ecosystem built around Tekton Pipelines, with complementary triggers, tooling and supply-chain components.
 - [Tekton Chains](https://tekton.dev/docs/chains/) — Tekton controller that records, signs, and stores supply-chain metadata for pipeline task runs.
 - [The Update Framework](https://theupdateframework.io/) — CNCF framework and specification for securing software update metadata against repository and signing-key compromise.
-- [Tofu Controller](https://flux-iac.github.io/tofu-controller) — Flux controller for managing Terraform and OpenTofu resources the GitOps way.
+- [Tofu Controller](https://flux-iac.github.io/tofu-controller) — Tofu Controller is the flux-iac Kubernetes controller integrating Flux with OpenTofu/Terraform reconciliation, plans, applies and drift detection through runner Pods; it is separate from Flux CD core, Flux Operator and either IaC CLI.
 - [Uncloud](https://uncloud.run) — Multi-node Docker Compose for running containerized apps in production without Kubernetes.
 - [Vercel](https://vercel.com/) — Managed web application platform providing Git-based builds, preview deployments, production hosting, and serverless infrastructure.
 - [Waypoint](https://developer.hashicorp.com/waypoint) — Application build, deploy, and release workflow platform from HashiCorp.

@@ -79,7 +79,7 @@
 | [Azure Mastery](https://www.azurekt.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Messaging for AWS Professionals](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
-| [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | needs-review |
+| [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
 | [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | deprecated |
 | [Barbara](https://www.barbara.tech) | Emerging and experimental tools | unknown | needs-review |
@@ -251,7 +251,7 @@
 | [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
-| [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | needs-review |
+| [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | active |
 | [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
 | [freeCodeCamp](https://www.freecodecamp.org) | Foundations, Linux and scripting | documentation | needs-review |
 | [FreeCodeCamp DevOps](https://www.freecodecamp.org/news/tag/devops) | Documentation, learning and career resources | documentation | needs-review |
@@ -478,7 +478,7 @@
 | [OpenObserve](https://openobserve.ai/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
-| [OpenTaco](https://opentaco.dev) | Infrastructure as Code | oss | needs-review |
+| [OpenTaco](https://opentaco.dev) | Infrastructure as Code | open-core | active |
 | [OpenTelemetry](https://opentelemetry.io/) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | documentation | needs-review |
@@ -571,7 +571,7 @@
 | [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
 | [sccache](https://github.com/mozilla/sccache) | CI, build and testing | oss | active |
 | [Schemathesis](https://schemathesis.readthedocs.io/en/stable/) | CI, build and testing | oss | active |
-| [Score](https://score.dev) | Infrastructure as Code | oss | needs-review |
+| [Score](https://score.dev) | Infrastructure as Code | oss | active |
 | [Scrapling](https://scrapling.readthedocs.io/en/latest) | Developer experience and local environments | oss | needs-review |
 | [Sealos](https://sealos.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [SearXNG](https://docs.searxng.org) | Emerging and experimental tools | oss | needs-review |
@@ -604,6 +604,7 @@
 | [sshm](https://github.com/Gu1llaum-3/sshm) | Emerging and experimental tools | oss | needs-review |
 | [Starlight](https://starlight.astro.build) | Developer experience and local environments | documentation | needs-review |
 | [Starship](https://starship.rs/) | Foundations, Linux and scripting | oss | active |
+| [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) | Infrastructure as Code | open-core | active |
 | [strace-tui](https://github.com/Rodrigodd/strace-tui) | Chaos and performance engineering | oss | needs-review |
 | [stress](https://github.com/resurrecting-open-source-projects/stress) | Chaos and performance engineering | oss | needs-review |
 | [stress-ng](https://github.com/ColinIanKing/stress-ng) | Chaos and performance engineering | oss | needs-review |
@@ -633,24 +634,23 @@
 | [Termix](https://termix.site/) | Developer experience and local environments | oss | active |
 | [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
-| [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | needs-review |
-| [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | needs-review |
+| [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | active |
+| [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | active |
 | [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
-| [Terrateam](https://terrateam.io) | Infrastructure as Code | open-core | needs-review |
 | [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
 | [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | needs-review |
 | [Testcontainers](https://github.com/testcontainers) | CI, build and testing | open-core | needs-review |
 | [Testkube](https://testkube.io) | CI, build and testing | open-core | active |
 | [TestRail](https://www.gurock.com/testrail) | CI, build and testing | unknown | needs-review |
 | [TestRigor](https://testrigor.com) | CI, build and testing | unknown | needs-review |
-| [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | oss | needs-review |
+| [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | source-available | active |
 | [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [The Linux Command Line](https://linuxcommand.org/tlcl.php) | Foundations, Linux and scripting | documentation | needs-review |
 | [The Linux Documentation Project (TLDP)](https://tldp.org) | Foundations, Linux and scripting | documentation | needs-review |
 | [TiKV](https://tikv.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [Timoni](https://timoni.sh) | Emerging and experimental tools | oss | needs-review |
 | [To Be Continuous](https://to-be-continuous.gitlab.io/doc) | CI, build and testing | documentation | needs-review |
-| [Tofu Controller](https://flux-iac.github.io/tofu-controller) | CD, GitOps, release and promotion | oss | needs-review |
+| [Tofu Controller](https://flux-iac.github.io/tofu-controller) | CD, GitOps, release and promotion | oss | active |
 | [Toxiproxy](https://github.com/Shopify/toxiproxy) | Chaos and performance engineering | oss | needs-review |
 | [Tracetest](https://tracetest.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Travis CI](https://www.travis-ci.com) | CI, build and testing | unknown | needs-review |
