@@ -201,3 +201,34 @@ def test_gitops_bridge_keeps_precise_maintenance_review_debt(catalogue):
     assert "pattern and example repository" in tool["summary"]
     assert "Flux integration is listed as in progress" in tool["summary"]
     assert "verify present maintenance" in " ".join(tool["avoid_when"])
+
+
+def test_evidence_report_uses_record_specific_workflow_and_provenance_rationale():
+    report = (
+        Path(__file__).resolve().parents[1]
+        / "docs/maintenance/2026-10-13-wave-11-iac-gitops-evidence-review.md"
+    ).read_text(encoding="utf-8")
+    workflows = {
+        "azure-verified-modules-avm": "central index does not execute deployments",
+        "tflint": "static checks",
+        "terraform-docs": "module reference preparation",
+        "terraform-plugin-docs": "provider documentation generation",
+        "terrateam": "separate CI runners",
+        "opentaco": "beta remote runs",
+        "score": "specification itself does not execute",
+        "tofu-controller": "runner execution",
+        "flux-operator": "FluxInstance",
+        "gitops-bridge": "no independent deployment runtime",
+    }
+    for tool_id, scope in workflows.items():
+        section = report.split(f"### {tool_id}\n", 1)[1].split("\n### ", 1)[0]
+        rows = {
+            line.split(" | ")[0].removeprefix("| ").strip("`"): line
+            for line in section.splitlines()
+            if line.startswith("| `")
+        }
+        assert scope in rows["lifecycle_stages"]
+        if tool_id != "gitops-bridge":
+            assert "GitOps Bridge" not in rows["repository_archived"]
+        if tool_id != "terrateam":
+            assert "terrateam.io" not in rows["sources"]
