@@ -301,12 +301,15 @@
   needs_review: false
 - id: blackbox-exporter
   name: blackbox_exporter
-  summary: Prometheus exporter for probing HTTP, HTTPS, DNS, TCP, ICMP, and gRPC endpoints.
+  summary: Prometheus multi-target exporter that probes endpoints including HTTP(S), DNS, TCP, ICMP and
+    gRPC and exposes probe results as metrics for a separate monitoring system.
+  official_url: https://github.com/prometheus/blackbox_exporter
   repository_url: https://github.com/prometheus/blackbox_exporter
+  documentation_url: https://github.com/prometheus/blackbox_exporter/blob/master/README.md
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Visualization, Metrics, and Tracing
+  - Endpoint probing
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -314,18 +317,35 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - Configure probe modules and Prometheus relabeling to monitor endpoint behavior from the exporter's
+    network location.
+  avoid_when:
+  - 'Restrict access to the probe endpoint: callers can supply arbitrary targets, and configured client
+    credentials can increase exposure.'
+  - Configure TLS/authentication, module timeouts and ICMP privileges as needed; individual probes do
+    not guarantee overall availability.
+  - The exporter does not provide Prometheus storage, Alertmanager routing or distributed tracing.
+  deployment_models:
+  - self-hosted
+  - container
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  repository_archived: false
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-14'
   sources:
   - legacy:devopstools_final.md#L739
-  needs_review: true
+  - https://github.com/prometheus/blackbox_exporter
+  - https://api.github.com/repos/prometheus/blackbox_exporter
+  - https://github.com/prometheus/blackbox_exporter/blob/master/README.md
+  - https://github.com/prometheus/blackbox_exporter/blob/master/LICENSE
+  - https://github.com/prometheus/blackbox_exporter/releases
+  - https://prometheus.io/docs/operating/security/
+  needs_review: false
 - id: bottom
   name: bottom
   summary: Terminal resource monitor for processes, CPU, memory, and disks.
@@ -745,14 +765,15 @@
   needs_review: false
 - id: cortex
   name: Cortex
-  summary: Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus and
-    OpenTelemetry metrics (CNCF Incubating).
+  summary: CNCF Cortex metrics backend for multi-tenant, horizontally scalable Prometheus-compatible ingestion,
+    long-term object storage and queries, maintained separately from Grafana Mimir.
   official_url: https://cortexmetrics.io
   repository_url: https://github.com/cortexproject/cortex
+  documentation_url: https://cortexmetrics.io/docs/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Visualization, Metrics, and Tracing
+  - Metrics storage
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -760,18 +781,40 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - Operate a shared metrics backend for multiple Prometheus sources or supported OpenTelemetry metrics
+    ingestion.
+  - Plan distributor, ingester, query and object-storage capacity for long-term metrics retention and
+    tenant isolation.
+  avoid_when:
+  - Authentication and authorization must be configured outside Cortex; a tenant identifier alone is not
+    an access-control boundary.
+  - Do not substitute Grafana Mimir metadata or assume Cortex is a lightweight telemetry agent or a complete
+    replacement for source scraping.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  repository_archived: false
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-14'
   sources:
   - legacy:devopstools_final.md#L742
-  needs_review: true
+  - https://cortexmetrics.io
+  - https://github.com/cortexproject/cortex
+  - https://api.github.com/repos/cortexproject/cortex
+  - https://github.com/cortexproject/cortex/blob/master/README.md
+  - https://github.com/cortexproject/cortex/blob/master/LICENSE
+  - https://cortexmetrics.io/docs/
+  - https://github.com/cortexproject/cortex/releases
+  - https://github.com/cortexproject/cortex/blob/master/GOVERNANCE.md
+  - https://www.cncf.io/projects/cortex/
+  - https://cortexmetrics.io/docs/architecture/
+  - https://cortexmetrics.io/docs/guides/security/
+  needs_review: false
 - id: datadog
   name: Datadog
   summary: Commercial hosted observability and security platform spanning infrastructure monitoring, logs, traces, application performance, and cloud services.
@@ -1026,13 +1069,15 @@
   needs_review: false
 - id: fluentd
   name: Fluentd
-  summary: Unified logging layer.
+  summary: CNCF-graduated Ruby-based log-event collector and forwarder with configurable input, routing,
+    buffering and output plugins, maintained separately from Fluent Bit.
   official_url: https://www.fluentd.org
   repository_url: https://github.com/fluent/fluentd
+  documentation_url: https://docs.fluentd.org/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Log Management
+  - Log collection and forwarding
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -1041,20 +1086,37 @@
   - operate
   - monitor
   use_when:
-  - Routing logs between many inputs and outputs with a large plugin ecosystem.
+  - Collect and route log events through the Fluentd plugin ecosystem to files, databases or other downstream
+    systems.
   avoid_when:
-  - Memory footprint matters—Fluent Bit or Vector are leaner.
-  deployment_models: []
+  - Choose and size memory or file buffers and review output retry behavior; buffering is not a general
+    exactly-once or unlimited-storage guarantee.
+  - Fluent Bit is a separate project, and independently supplied plugins and dependencies need their own
+    licence and support checks.
+  - Fluentd is not itself a persistent log-query database or tracing backend.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  repository_archived: false
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-14'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L56
   - legacy:devopstools_final.md#L763
-  needs_review: true
+  - https://www.fluentd.org
+  - https://github.com/fluent/fluentd
+  - https://api.github.com/repos/fluent/fluentd
+  - https://github.com/fluent/fluentd/blob/master/README.md
+  - https://github.com/fluent/fluentd/blob/master/LICENSE
+  - https://docs.fluentd.org/
+  - https://github.com/fluent/fluentd/releases
+  - https://www.cncf.io/projects/fluentd/
+  - https://docs.fluentd.org/buffer
+  needs_review: false
 - id: gatus
   name: Gatus
   summary: Developer-oriented health dashboard and status page for monitoring endpoints and services.
@@ -1271,13 +1333,16 @@
   needs_review: true
 - id: grafana-beyla
   name: Grafana Beyla
-  summary: EBPF-based auto-instrumentation for distributed tracing/metrics with minimal code changes.
+  summary: Grafana-supported distribution of OpenTelemetry eBPF Instrumentation for Linux application
+    metrics and transaction tracing, with Grafana-specific integrations and a release cycle distinct from
+    upstream OBI.
   official_url: https://grafana.com/oss/beyla
   repository_url: https://github.com/grafana/beyla
+  documentation_url: https://grafana.com/docs/beyla/latest/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Tracing & APM
+  - eBPF auto-instrumentation
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -1286,20 +1351,39 @@
   - operate
   - monitor
   use_when:
-  - You want zero-code-change HTTP/gRPC tracing on Linux.
+  - Collect baseline RED metrics and transaction spans from supported Linux services without changing
+    application code.
+  - Choose the Grafana distribution when its Alloy integration and Grafana-specific discovery or telemetry
+    features are needed.
   avoid_when:
-  - You need deep application-level span detail or run non-Linux kernels.
-  deployment_models: []
+  - Validate kernel, BTF, capabilities and runtime-specific tracing limits; add SDK instrumentation for
+    internal spans and reliable deep tracing.
+  - Do not assume Beyla and OBI releases, feature sets or telemetry names are interchangeable, or that
+    Grafana Cloud service rights follow the software licence.
+  deployment_models:
+  - self-hosted
+  - container
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  maturity: growing
+  status: active
+  repository_archived: false
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-14'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L69
   - legacy:devopstools_final.md#L777
-  needs_review: true
+  - https://grafana.com/oss/beyla
+  - https://github.com/grafana/beyla
+  - https://api.github.com/repos/grafana/beyla
+  - https://github.com/grafana/beyla/blob/main/README.md
+  - https://github.com/grafana/beyla/blob/main/LICENSE
+  - https://grafana.com/docs/beyla/latest/
+  - https://github.com/grafana/beyla/releases
+  - https://grafana.com/docs/beyla/latest/obi/
+  - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/blob/main/bpf/generictracer/generictracer.c
+  needs_review: false
 - id: grafana-loki
   name: Grafana Loki
   summary: Open-source log aggregation backend that indexes log labels and queries log content with LogQL;
@@ -1399,13 +1483,15 @@
   repository_archived: false
 - id: grafana-pyroscope
   name: Grafana Pyroscope
-  summary: Continuous profiling (often paired with tracing/APM for root-cause).
+  summary: Continuous-profiling server that ingests, stores and queries application profiles for Grafana
+    analysis, separate from distributed tracing storage and the hosted Grafana Cloud Profiles service.
   official_url: https://grafana.com/oss/pyroscope
   repository_url: https://github.com/grafana/pyroscope
+  documentation_url: https://grafana.com/docs/pyroscope/latest/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Tracing & APM
+  - Continuous profiling
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -1413,21 +1499,44 @@
   lifecycle_stages:
   - operate
   - monitor
+  - optimize
   use_when:
-  - Correlating CPU/memory flamegraphs with traces for root-cause analysis.
+  - Collect profiles through supported SDKs, Grafana Alloy or OpenTelemetry-compatible profiling sources
+    to investigate resource use.
+  - Correlate profiles with traces and other Grafana signals while operating the profiling ingestion,
+    storage and query services.
   avoid_when:
-  - You don't yet have basic metrics and tracing—profiling adds complexity on top.
-  deployment_models: []
+  - Profiling is not a replacement for distributed tracing, log storage or application instrumentation.
+  - The default AGPL-3.0-only grant has listed Apache-2.0 component exceptions and original vendor licences;
+    Grafana Cloud service terms are separate.
+  - Provision the storage and deployment architecture required by the chosen Pyroscope release instead
+    of assuming profiling is storage-free.
+  deployment_models:
+  - self-hosted
+  - container
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  maturity: established
+  status: active
+  repository_archived: false
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-14'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L70
   - legacy:devopstools_final.md#L778
-  needs_review: true
+  - https://grafana.com/oss/pyroscope
+  - https://github.com/grafana/pyroscope
+  - https://api.github.com/repos/grafana/pyroscope
+  - https://github.com/grafana/pyroscope/blob/main/README.md
+  - https://github.com/grafana/pyroscope/blob/main/LICENSE
+  - https://grafana.com/docs/pyroscope/latest/
+  - https://github.com/grafana/pyroscope/releases
+  - https://github.com/grafana/pyroscope/blob/main/LICENSING.md
+  - https://github.com/grafana/pyroscope/blob/main/GOVERNANCE.md
+  - https://grafana.com/docs/pyroscope/latest/reference-pyroscope-v2-architecture/
+  needs_review: false
 - id: grafana-tempo
   name: Grafana Tempo
   summary: Open-source distributed tracing backend with TraceQL search and configurable OTLP, Jaeger and
@@ -1860,35 +1969,53 @@
   repository_archived: false
 - id: kubernetes-monitoring-mixins
   name: Kubernetes Monitoring Mixins
-  summary: Monitoring dashboards and alerts for Kubernetes.
+  summary: Jsonnet monitoring mixin that generates Kubernetes Prometheus alerting and recording rules
+    and Grafana dashboards, maintained under kubernetes-sigs rather than a standalone monitoring server.
   official_url: https://monitoring.mixins.dev/kubernetes
-  repository_url: https://github.com/kubernetes-monitoring/kubernetes-mixin
+  repository_url: https://github.com/kubernetes-sigs/kubernetes-mixin
+  documentation_url: https://github.com/kubernetes-sigs/kubernetes-mixin/blob/master/README.md
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Visualization, Metrics, and Tracing
+  - Monitoring rules and dashboards
   roles:
   - devops-engineer
   - site-reliability-engineer
   - observability-engineer
   lifecycle_stages:
-  - operate
+  - build
+  - deploy
   - monitor
   use_when:
-  - Bootstrapping Grafana dashboards and Prometheus rules for K8s.
+  - Vendor and customize the mixin with jsonnet-bundler and Jsonnet, then generate rules and dashboards
+    for an existing Prometheus/Grafana stack.
+  - Pin a release and verify its metric names, labels and exporter requirements against the target cluster.
   avoid_when:
-  - You've already customized dashboards to your workload and don't want overrides.
+  - The mixin does not deploy a standalone monitoring backend and is not kube-prometheus itself.
+  - Kubernetes version alone does not prove dashboard/rule compatibility; exporter metrics, selectors
+    and collected labels must match.
   deployment_models: []
-  license_model: documentation
-  maturity: unknown
-  status: needs-review
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: established
+  status: active
+  repository_archived: false
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-14'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L45
   - legacy:devopstools_final.md#L750
-  needs_review: true
+  - https://monitoring.mixins.dev/kubernetes
+  - https://github.com/kubernetes-monitoring/kubernetes-mixin
+  - https://github.com/kubernetes-sigs/kubernetes-mixin
+  - https://api.github.com/repos/kubernetes-sigs/kubernetes-mixin
+  - https://github.com/kubernetes-sigs/kubernetes-mixin/blob/master/README.md
+  - https://github.com/kubernetes-sigs/kubernetes-mixin/blob/master/LICENSE
+  - https://github.com/kubernetes-sigs/kubernetes-mixin/releases
+  - https://github.com/kubernetes-sigs/kubernetes-mixin/blob/master/OWNERS
+  - https://github.com/kubernetes-sigs/kubernetes-mixin/blob/master/CONTRIBUTING.md
+  needs_review: false
 - id: kubewatch
   name: Kubewatch
   summary: Kubernetes event watcher and notifier.
@@ -2405,12 +2532,16 @@
   repository_archived: false
 - id: opentelemetry-ebpf-instrumentation
   name: OpenTelemetry eBPF Instrumentation
-  summary: Zero-code eBPF-based instrumentation for collecting OpenTelemetry telemetry.
+  summary: OpenTelemetry's development-stage Linux eBPF auto-instrumentation software for application
+    metrics and spans, with supported standalone and container artifacts and version-zero compatibility
+    limitations.
   official_url: https://opentelemetry.io/docs/zero-code/obi
+  repository_url: https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation
+  documentation_url: https://opentelemetry.io/docs/zero-code/obi/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Tracing & APM
+  - eBPF auto-instrumentation
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -2418,18 +2549,44 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: documentation
-  maturity: unknown
-  status: needs-review
+  use_when:
+  - Evaluate upstream OpenTelemetry auto-instrumentation on supported Linux amd64 or arm64 hosts, containers
+    or Kubernetes environments.
+  - Pin a semver release and review configuration, support-matrix and telemetry changes before each upgrade.
+  avoid_when:
+  - 'OBI remains in Development: v0 minor releases may break configuration, runtime support and emitted
+    telemetry; a v1 release candidate does not declare general stability.'
+  - Use SDK or manual instrumentation for internal application spans; the future v1 contract protects
+    only explicitly stable signals and attributes, not every telemetry surface.
+  - Require compatible Linux kernels, BTF and feature-specific capabilities; inspect eBPF and bundled
+    component notices separately from the repository grant.
+  deployment_models:
+  - self-hosted
+  - container
+  license_model: oss
+  license_spdx: Apache-2.0
+  maturity: emerging
+  status: active
+  repository_archived: false
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-14'
   sources:
   - legacy:devopstools_final.md#L781
-  needs_review: true
+  - https://opentelemetry.io/docs/zero-code/obi
+  - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation
+  - https://api.github.com/repos/open-telemetry/opentelemetry-ebpf-instrumentation
+  - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/blob/main/README.md
+  - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/blob/main/LICENSE
+  - https://opentelemetry.io/docs/zero-code/obi/
+  - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/releases
+  - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/blob/main/VERSIONING.md
+  - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/blob/main/TELEMETRY.md
+  - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/blob/main/SUPPORT_MATRIX.md
+  - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/blob/main/CONTRIBUTING.md
+  - https://www.cncf.io/projects/opentelemetry/
+  - https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/blob/main/bpf/generictracer/generictracer.c
+  needs_review: false
 - id: otel-gui
   name: otel-gui
   summary: Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls,
@@ -2945,13 +3102,16 @@
   needs_review: true
 - id: telegraf
   name: Telegraf
-  summary: Plugin-driven server agent for collecting and reporting metrics (part of InfluxData ecosystem).
+  summary: InfluxData's plugin-driven telemetry agent for collecting, processing, aggregating and writing
+    metrics and events to InfluxDB or other backends, distinct from a time-series database and Telegraf
+    Enterprise.
   official_url: https://www.influxdata.com/time-series-platform/telegraf
   repository_url: https://github.com/influxdata/telegraf
+  documentation_url: https://docs.influxdata.com/telegraf/v1/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Visualization, Metrics, and Tracing
+  - Telemetry agents
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -2960,20 +3120,40 @@
   - operate
   - monitor
   use_when:
-  - You need a batteries-included agent with 300+ input plugins.
+  - Configure TOML input, processor, aggregator and output plugins to collect telemetry and send it to
+    InfluxDB or supported third-party backends.
   avoid_when:
-  - Prometheus exporters or OTel Collector already cover your collection needs.
-  deployment_models: []
+  - The agent does not supply database storage/query services, and backend or plugin capabilities do not
+    follow from the Telegraf name alone.
+  - The MIT repository grant does not license Telegraf Enterprise, Controller enterprise features or InfluxDB
+    Cloud/Enterprise services; verify the chosen package and dependencies.
+  - Size buffers and inspect selected output retry behavior rather than assuming lossless or exactly-once
+    delivery.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: MIT
+  commercial_offering: true
+  maturity: established
+  status: active
+  repository_archived: false
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-14'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L48
   - legacy:devopstools_final.md#L754
-  needs_review: true
+  - https://www.influxdata.com/time-series-platform/telegraf
+  - https://github.com/influxdata/telegraf
+  - https://api.github.com/repos/influxdata/telegraf
+  - https://github.com/influxdata/telegraf/blob/master/README.md
+  - https://github.com/influxdata/telegraf/blob/master/LICENSE
+  - https://docs.influxdata.com/telegraf/v1/
+  - https://github.com/influxdata/telegraf/releases
+  - https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md
+  - https://github.com/influxdata/telegraf/blob/master/docs/RELEASES.md
+  - https://docs.influxdata.com/telegraf/v1/enterprise/
+  needs_review: false
 - id: thanos
   name: Thanos
   summary: Open-source components extending Prometheus with high availability, deduplicated global queries
@@ -3157,14 +3337,15 @@
   needs_review: false
 - id: vector
   name: Vector
-  summary: High-performance observability data pipeline (logs/metrics/traces) as an alternative to Fluent
-    Bit/Fluentd.
+  summary: Datadog-maintained Rust telemetry agent and aggregator with source-transform-sink pipelines
+    for logs and metrics and component-specific trace handling.
   official_url: https://vector.dev
   repository_url: https://github.com/vectordotdev/vector
+  documentation_url: https://vector.dev/docs/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Log Management
+  - Telemetry pipelines
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -3173,29 +3354,50 @@
   - operate
   - monitor
   use_when:
-  - You want a fast, Rust-based pipeline with VRL transforms and unified log/metric routing.
+  - Collect, transform with VRL and route telemetry between supported sources and sinks in agent or aggregator
+    topologies.
   avoid_when:
-  - Fluent Bit/Fluentd plugin ecosystem is critical to your workflow.
-  deployment_models: []
+  - Verify each component's supported event types and stability; the OTLP source is beta even where other
+    components are stable.
+  - Delivery depends on protocols, acknowledgements and buffering; durable buffers do not create universal
+    exactly-once guarantees.
+  - Vector routes and processes telemetry; it is not a queryable observability storage backend.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: MPL-2.0
+  maturity: established
+  status: active
+  repository_archived: false
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-14'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L64
   - legacy:devopstools_final.md#L772
-  needs_review: true
+  - https://vector.dev
+  - https://github.com/vectordotdev/vector
+  - https://api.github.com/repos/vectordotdev/vector
+  - https://github.com/vectordotdev/vector/blob/master/README.md
+  - https://github.com/vectordotdev/vector/blob/master/LICENSE
+  - https://vector.dev/docs/
+  - https://github.com/vectordotdev/vector/releases
+  - https://vector.dev/docs/architecture/data-model/
+  - https://vector.dev/docs/architecture/guarantees/
+  - https://vector.dev/docs/reference/configuration/sources/opentelemetry/
+  needs_review: false
 - id: victoriametrics
   name: VictoriaMetrics
-  summary: Time series database; OSS core with enterprise offerings.
+  summary: Open-source VictoriaMetrics metrics database in Apache-2.0 single-node and cluster forms, with
+    Prometheus integrations and MetricsQL queries distinct from separately licensed Enterprise and Cloud
+    offerings.
   official_url: https://victoriametrics.com
   repository_url: https://github.com/VictoriaMetrics/VictoriaMetrics
+  documentation_url: https://docs.victoriametrics.com/victoriametrics/
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
-  - Visualization, Metrics, and Tracing
+  - Metrics storage
   roles:
   - devops-engineer
   - site-reliability-engineer
@@ -3204,20 +3406,39 @@
   - operate
   - monitor
   use_when:
-  - You want a Prometheus-compatible TSDB with better compression and simpler ops.
+  - Store and query metrics through the single-node server or distributed vminsert/vmstorage/vmselect
+    cluster, including Prometheus remote-write ingestion.
   avoid_when:
-  - You need enterprise clustering features—those require a paid license.
-  deployment_models: []
-  license_model: open-core
-  maturity: unknown
-  status: needs-review
+  - Clustering is available in OSS; Enterprise-only features and managed Cloud services require their
+    own terms and are not covered by the repository grant.
+  - Review MetricsQL/PromQL semantic differences, capacity, replication and partial-query behavior instead
+    of assuming exact Prometheus equivalence.
+  deployment_models:
+  - self-hosted
+  - container
+  license_model: oss
+  license_spdx: Apache-2.0
+  commercial_offering: true
+  maturity: established
+  status: active
+  repository_archived: false
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-14'
   sources:
   - legacy:5_Monitoring-Observability/README.md#L50
   - legacy:devopstools_final.md#L756
-  needs_review: true
+  - https://victoriametrics.com
+  - https://github.com/VictoriaMetrics/VictoriaMetrics
+  - https://api.github.com/repos/VictoriaMetrics/VictoriaMetrics
+  - https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/README.md
+  - https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/LICENSE
+  - https://docs.victoriametrics.com/victoriametrics/
+  - https://github.com/VictoriaMetrics/VictoriaMetrics/releases
+  - https://docs.victoriametrics.com/victoriametrics/enterprise/
+  - https://docs.victoriametrics.com/victoriametrics/cluster-victoriametrics/
+  - https://docs.victoriametrics.com/victoriametrics/metricsql/
+  needs_review: false
 - id: virtualeyes
   name: VirtualEyes
   summary: Hosted monitoring service for website and server uptime, DNS records, certificates, domains, and scheduled-job heartbeats.

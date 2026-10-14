@@ -32,7 +32,7 @@
 | [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Better Stack](https://betterstack.com/) | Monitoring, metrics, logs and tracing | commercial | active |
-| [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | active |
 | [bmon](https://jafaral.github.io/bmon/) | Foundations, Linux and scripting | oss | active |
 | [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | needs-review |
 | [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | active |
@@ -78,7 +78,7 @@
 | [CoreDNS](https://coredns.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Corosync](https://corosync.github.io/corosync/) | Virtualization, bare metal and homelab, Backup, disaster recovery and resilience | oss | active |
-| [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [CronJob Guardian](https://illeniumstudios.github.io/cronjob-guardian) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Crossplane Provider Upjet](https://github.com/upbound/upjet) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [crossview](https://github.com/crossplane-contrib/crossview) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -109,7 +109,7 @@
 | [flow](https://github.com/programmersd21/flow) | SRE, incident response and on-call | oss | needs-review |
 | [FlowG](https://flowg.cloud/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | active |
-| [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [Forecastle](https://github.com/stakater/Forecastle) | Kubernetes distributions and operations | oss | needs-review |
 | [FreeLens](https://freelensapp.github.io) | Kubernetes distributions and operations | oss | active |
 | [Gateway API](https://gateway-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
@@ -124,11 +124,11 @@
 | [Gotify](https://gotify.net/) | Workflow automation and ChatOps | oss | active |
 | [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) | Monitoring, metrics, logs and tracing | documentation | needs-review |
-| [Grafana Beyla](https://grafana.com/oss/beyla) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Grafana Beyla](https://grafana.com/oss/beyla) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana Loki](https://grafana.com/oss/loki) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana Mimir](https://grafana.com/oss/mimir) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana OnCall OSS](https://grafana.com/docs/oncall/latest/intro/) | Deprecated and historical tools, SRE, incident response and on-call | oss | archived |
-| [Grafana Pyroscope](https://grafana.com/oss/pyroscope) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Grafana Pyroscope](https://grafana.com/oss/pyroscope) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | active |
 | [Gremlin](https://www.gremlin.com) | Chaos and performance engineering, Backup, disaster recovery and resilience | commercial | active |
 | [groundcover](https://www.groundcover.com/) | Monitoring, metrics, logs and tracing | commercial | active |
@@ -245,7 +245,7 @@
 | [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | active |
 | [Kubernetes Common Errors & Fixes](https://middleware.io/blog/kubernetes-common-errors-fix) | Kubernetes distributions and operations | documentation | needs-review |
 | [Kubernetes Dashboard](https://github.com/kubernetes-retired/dashboard) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
-| [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) | Monitoring, metrics, logs and tracing | documentation | needs-review |
+| [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) | Monitoring, metrics, logs and tracing | oss | active |
 | [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) | Kubernetes distributions and operations | documentation | needs-review |
 | [Kubescape](https://kubescape.io/) | Kubernetes distributions and operations | oss | active |
 | [Kubesec](https://kubesec.io) | Kubernetes distributions and operations | oss | needs-review |
@@ -320,7 +320,7 @@
 | [OpenSRE](https://www.opensre.com/) | SRE, incident response and on-call, MLOps, LLMOps and AI infrastructure | oss | active |
 | [OpenTelemetry](https://opentelemetry.io/) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | active |
-| [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | documentation | needs-review |
+| [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | oss | active |
 | [OperatorHub.io](https://operatorhub.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Orbit](https://gitlab.com/RMJx1/orbit) | Kubernetes distributions and operations | oss | needs-review |
 | [osquery](https://osquery.io/) | Application and cloud security, Monitoring, metrics, logs and tracing | oss | active |
@@ -391,7 +391,7 @@
 | [Talos](https://www.talos.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Talos Node Updater (tnu)](https://github.com/jfroy/tnu) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
 | [Tarook](https://tarook.cloud/en/) | Kubernetes distributions and operations | oss | active |
-| [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) | Monitoring, metrics, logs and tracing | oss | active |
 | [Telepresence](https://www.telepresence.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |
 | [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | active |
@@ -408,10 +408,10 @@
 | [UptimeRobot](https://uptimerobot.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Uptrace](https://uptrace.dev/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [vCluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | active |
-| [Vector](https://vector.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Vector](https://vector.dev) | Monitoring, metrics, logs and tracing | oss | active |
 | [Veeam Kasten for Kubernetes](https://www.veeam.com/products/cloud/kubernetes-data-protection.html) | Backup, disaster recovery and resilience | commercial | active |
 | [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | active |
-| [VictoriaMetrics](https://victoriametrics.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [VictoriaMetrics](https://victoriametrics.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [VirtualEyes](https://virtualeyes.io/) | Monitoring, metrics, logs and tracing | free-saas | active |
 | [Vitess](https://vitess.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [VolSync](https://volsync.readthedocs.io) | Backup, disaster recovery and resilience | oss | needs-review |
