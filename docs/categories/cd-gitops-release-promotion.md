@@ -278,19 +278,19 @@ Open and extensible GitOps toolkit for Kubernetes.
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes operator for managing Flux CD instances.
+ControlPlane-maintained Kubernetes operator installing, configuring and upgrading Flux CD instances through FluxInstance resources, with additional self-service APIs. Its AGPL-3.0 software is separate from Flux CD core and commercial ControlPlane distribution/support terms.
 
 **Use when**
 
-- * You manage multiple Flux installations and want operator-driven lifecycle management.
+- Manage declarative Flux installation, configuration and upgrades across Kubernetes clusters using FluxInstance and the operator's documented APIs.
 
 **Consider alternatives when**
 
-- * You run a single Flux instance and don't need operator abstraction.
+- Do not inherit Flux CD core's Apache-2.0 licence or governance, assume Enterprise distribution/support entitlements, or use Flux lifecycle management as a Terraform/OpenTofu execution controller.
 
-[Official site](https://fluxoperator.dev)
+[Official site](https://fluxoperator.dev) · [Documentation](https://fluxoperator.dev/docs/) · [Source repository](https://github.com/controlplaneio-fluxcd/flux-operator)
 
 ### flux9s
 
@@ -318,17 +318,17 @@ K9s-inspired terminal UI for Flux resources, controller health, and GitOps state
 **Model:** Oss<br>
 **Status:** Needs Review
 
-GitOps bridge for Kubernetes deployments.
+GitOps Bridge is a community pattern and example repository passing cluster-provisioning metadata from IaC to GitOps-managed Kubernetes addons and workloads. Its Terraform/Argo CD example is described as stable; Flux integration is listed as in progress, not universal executable-platform support.
 
 **Use when**
 
-- * You want to connect Terraform/IaC provisioning with ArgoCD/Flux bootstrapping.
+- Study and adapt the Terraform/Argo CD bootstrap examples to pass cloud resource and workload-identity metadata into GitOps configuration.
 
 **Consider alternatives when**
 
-- * You don't use Terraform for cluster provisioning or have your own bootstrap scripts.
+- Do not treat the pattern as an installable platform or assume completed Flux integration; verify present maintenance and example compatibility before production adoption.
 
-[Source repository](https://github.com/gitops-bridge-dev/gitops-bridge)
+[Official site](https://github.com/gitops-bridge-dev/gitops-bridge) · [Documentation](https://github.com/gitops-bridge-dev/gitops-bridge/blob/main/README.md) · [Source repository](https://github.com/gitops-bridge-dev/gitops-bridge)
 
 ### Kamal
 
@@ -582,19 +582,19 @@ Kubernetes-native CI/CD framework and ecosystem built around Tekton Pipelines, w
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Flux controller for managing Terraform and OpenTofu resources the GitOps way.
+Tofu Controller is the flux-iac Kubernetes controller integrating Flux with OpenTofu/Terraform reconciliation, plans, applies and drift detection through runner Pods; it is separate from Flux CD core, Flux Operator and either IaC CLI.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Reconcile Terraform/OpenTofu resources from Flux sources with explicit approvals, scoped runner credentials and a reviewed state-backend strategy.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Do not assume this controller is Flux CD core or a managed Terraform service; review runner ServiceAccounts, cloud credentials, sensitive Kubernetes state Secrets and engine compatibility before automatic applies.
 
-[Official site](https://flux-iac.github.io/tofu-controller) · [Source repository](https://github.com/flux-iac/tofu-controller)
+[Official site](https://flux-iac.github.io/tofu-controller) · [Documentation](https://flux-iac.github.io/tofu-controller/) · [Source repository](https://github.com/flux-iac/tofu-controller)
 
 ### Uncloud
 

@@ -63,7 +63,7 @@
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | commercial | active |
 | [FitNesse](https://fitnesse.org) | CI, build and testing | oss | active |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
-| [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | needs-review |
+| [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | active |
 | [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
 | [Gerrit Code Review](https://www.gerritcodereview.com/) | Source control and repository management | oss | active |
 | [ggshield](https://github.com/GitGuardian/ggshield) | Software supply-chain security | oss | active |
@@ -158,7 +158,7 @@
 | [TestRigor](https://testrigor.com) | CI, build and testing | unknown | needs-review |
 | [The Update Framework](https://theupdateframework.io/) | Software supply-chain security | oss | active |
 | [To Be Continuous](https://to-be-continuous.gitlab.io/doc) | CI, build and testing | documentation | needs-review |
-| [Tofu Controller](https://flux-iac.github.io/tofu-controller) | CD, GitOps, release and promotion | oss | needs-review |
+| [Tofu Controller](https://flux-iac.github.io/tofu-controller) | CD, GitOps, release and promotion | oss | active |
 | [Travis CI](https://www.travis-ci.com) | CI, build and testing | unknown | needs-review |
 | [Trunk](https://trunk.io/) | CI, build and testing | commercial | active |
 | [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | needs-review |
