@@ -181,19 +181,21 @@ Commercial observability and incident-management platform with telemetry, on-cal
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Prometheus exporter for probing HTTP, HTTPS, DNS, TCP, ICMP, and gRPC endpoints.
+Prometheus multi-target exporter that probes endpoints including HTTP(S), DNS, TCP, ICMP and gRPC and exposes probe results as metrics for a separate monitoring system.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Configure probe modules and Prometheus relabeling to monitor endpoint behavior from the exporter's network location.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Restrict access to the probe endpoint: callers can supply arbitrary targets, and configured client credentials can increase exposure.
+- Configure TLS/authentication, module timeouts and ICMP privileges as needed; individual probes do not guarantee overall availability.
+- The exporter does not provide Prometheus storage, Alertmanager routing or distributed tracing.
 
-[Source repository](https://github.com/prometheus/blackbox_exporter)
+[Official site](https://github.com/prometheus/blackbox_exporter) · [Documentation](https://github.com/prometheus/blackbox_exporter/blob/master/README.md) · [Source repository](https://github.com/prometheus/blackbox_exporter)
 
 ### bottom
 
@@ -430,19 +432,21 @@ Open source APM/observability platform (metrics/logs/traces/profiling) with RCA 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus and OpenTelemetry metrics (CNCF Incubating).
+CNCF Cortex metrics backend for multi-tenant, horizontally scalable Prometheus-compatible ingestion, long-term object storage and queries, maintained separately from Grafana Mimir.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Operate a shared metrics backend for multiple Prometheus sources or supported OpenTelemetry metrics ingestion.
+- Plan distributor, ingester, query and object-storage capacity for long-term metrics retention and tenant isolation.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Authentication and authorization must be configured outside Cortex; a tenant identifier alone is not an access-control boundary.
+- Do not substitute Grafana Mimir metadata or assume Cortex is a lightweight telemetry agent or a complete replacement for source scraping.
 
-[Official site](https://cortexmetrics.io) · [Source repository](https://github.com/cortexproject/cortex)
+[Official site](https://cortexmetrics.io) · [Documentation](https://cortexmetrics.io/docs/) · [Source repository](https://github.com/cortexproject/cortex)
 
 ### Datadog
 
@@ -601,19 +605,21 @@ Fast and lightweight log processor.
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Unified logging layer.
+CNCF-graduated Ruby-based log-event collector and forwarder with configurable input, routing, buffering and output plugins, maintained separately from Fluent Bit.
 
 **Use when**
 
-- Routing logs between many inputs and outputs with a large plugin ecosystem.
+- Collect and route log events through the Fluentd plugin ecosystem to files, databases or other downstream systems.
 
 **Consider alternatives when**
 
-- Memory footprint matters—Fluent Bit or Vector are leaner.
+- Choose and size memory or file buffers and review output retry behavior; buffering is not a general exactly-once or unlimited-storage guarantee.
+- Fluent Bit is a separate project, and independently supplied plugins and dependencies need their own licence and support checks.
+- Fluentd is not itself a persistent log-query database or tracing backend.
 
-[Official site](https://www.fluentd.org) · [Source repository](https://github.com/fluent/fluentd)
+[Official site](https://www.fluentd.org) · [Documentation](https://docs.fluentd.org/) · [Source repository](https://github.com/fluent/fluentd)
 
 ### Gatus
 
@@ -753,19 +759,21 @@ Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/tra
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-EBPF-based auto-instrumentation for distributed tracing/metrics with minimal code changes.
+Grafana-supported distribution of OpenTelemetry eBPF Instrumentation for Linux application metrics and transaction tracing, with Grafana-specific integrations and a release cycle distinct from upstream OBI.
 
 **Use when**
 
-- You want zero-code-change HTTP/gRPC tracing on Linux.
+- Collect baseline RED metrics and transaction spans from supported Linux services without changing application code.
+- Choose the Grafana distribution when its Alloy integration and Grafana-specific discovery or telemetry features are needed.
 
 **Consider alternatives when**
 
-- You need deep application-level span detail or run non-Linux kernels.
+- Validate kernel, BTF, capabilities and runtime-specific tracing limits; add SDK instrumentation for internal spans and reliable deep tracing.
+- Do not assume Beyla and OBI releases, feature sets or telemetry names are interchangeable, or that Grafana Cloud service rights follow the software licence.
 
-[Official site](https://grafana.com/oss/beyla) · [Source repository](https://github.com/grafana/beyla)
+[Official site](https://grafana.com/oss/beyla) · [Documentation](https://grafana.com/docs/beyla/latest/) · [Source repository](https://github.com/grafana/beyla)
 
 ### Grafana Loki
 
@@ -810,19 +818,22 @@ Open-source Prometheus-compatible metrics backend for multi-tenant ingestion, gl
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Continuous profiling (often paired with tracing/APM for root-cause).
+Continuous-profiling server that ingests, stores and queries application profiles for Grafana analysis, separate from distributed tracing storage and the hosted Grafana Cloud Profiles service.
 
 **Use when**
 
-- Correlating CPU/memory flamegraphs with traces for root-cause analysis.
+- Collect profiles through supported SDKs, Grafana Alloy or OpenTelemetry-compatible profiling sources to investigate resource use.
+- Correlate profiles with traces and other Grafana signals while operating the profiling ingestion, storage and query services.
 
 **Consider alternatives when**
 
-- You don't yet have basic metrics and tracing—profiling adds complexity on top.
+- Profiling is not a replacement for distributed tracing, log storage or application instrumentation.
+- The default AGPL-3.0-only grant has listed Apache-2.0 component exceptions and original vendor licences; Grafana Cloud service terms are separate.
+- Provision the storage and deployment architecture required by the chosen Pyroscope release instead of assuming profiling is storage-free.
 
-[Official site](https://grafana.com/oss/pyroscope) · [Source repository](https://github.com/grafana/pyroscope)
+[Official site](https://grafana.com/oss/pyroscope) · [Documentation](https://grafana.com/docs/pyroscope/latest/) · [Source repository](https://github.com/grafana/pyroscope)
 
 ### Grafana Tempo
 
@@ -1094,20 +1105,22 @@ Kubernetes SIG Instrumentation service exposing Prometheus-format metrics derive
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Documentation<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Monitoring dashboards and alerts for Kubernetes.
+Jsonnet monitoring mixin that generates Kubernetes Prometheus alerting and recording rules and Grafana dashboards, maintained under kubernetes-sigs rather than a standalone monitoring server.
 
 **Use when**
 
-- Bootstrapping Grafana dashboards and Prometheus rules for K8s.
+- Vendor and customize the mixin with jsonnet-bundler and Jsonnet, then generate rules and dashboards for an existing Prometheus/Grafana stack.
+- Pin a release and verify its metric names, labels and exporter requirements against the target cluster.
 
 **Consider alternatives when**
 
-- You've already customized dashboards to your workload and don't want overrides.
+- The mixin does not deploy a standalone monitoring backend and is not kube-prometheus itself.
+- Kubernetes version alone does not prove dashboard/rule compatibility; exporter metrics, selectors and collected labels must match.
 
-[Official site](https://monitoring.mixins.dev/kubernetes) · [Source repository](https://github.com/kubernetes-monitoring/kubernetes-mixin)
+[Official site](https://monitoring.mixins.dev/kubernetes) · [Documentation](https://github.com/kubernetes-sigs/kubernetes-mixin/blob/master/README.md) · [Source repository](https://github.com/kubernetes-sigs/kubernetes-mixin)
 
 ### Kubewatch
 
@@ -1398,20 +1411,23 @@ Vendor-neutral telemetry pipeline implementation using receivers, processors and
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Documentation<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Zero-code eBPF-based instrumentation for collecting OpenTelemetry telemetry.
+OpenTelemetry's development-stage Linux eBPF auto-instrumentation software for application metrics and spans, with supported standalone and container artifacts and version-zero compatibility limitations.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Evaluate upstream OpenTelemetry auto-instrumentation on supported Linux amd64 or arm64 hosts, containers or Kubernetes environments.
+- Pin a semver release and review configuration, support-matrix and telemetry changes before each upgrade.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- OBI remains in Development: v0 minor releases may break configuration, runtime support and emitted telemetry; a v1 release candidate does not declare general stability.
+- Use SDK or manual instrumentation for internal application spans; the future v1 contract protects only explicitly stable signals and attributes, not every telemetry surface.
+- Require compatible Linux kernels, BTF and feature-specific capabilities; inspect eBPF and bundled component notices separately from the repository grant.
 
-[Official site](https://opentelemetry.io/docs/zero-code/obi)
+[Official site](https://opentelemetry.io/docs/zero-code/obi) · [Documentation](https://opentelemetry.io/docs/zero-code/obi/) · [Source repository](https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation)
 
 ### osquery
 
@@ -1741,19 +1757,21 @@ Syslog daemon/log collector with parsing and multiple destinations.
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Plugin-driven server agent for collecting and reporting metrics (part of InfluxData ecosystem).
+InfluxData's plugin-driven telemetry agent for collecting, processing, aggregating and writing metrics and events to InfluxDB or other backends, distinct from a time-series database and Telegraf Enterprise.
 
 **Use when**
 
-- You need a batteries-included agent with 300+ input plugins.
+- Configure TOML input, processor, aggregator and output plugins to collect telemetry and send it to InfluxDB or supported third-party backends.
 
 **Consider alternatives when**
 
-- Prometheus exporters or OTel Collector already cover your collection needs.
+- The agent does not supply database storage/query services, and backend or plugin capabilities do not follow from the Telegraf name alone.
+- The MIT repository grant does not license Telegraf Enterprise, Controller enterprise features or InfluxDB Cloud/Enterprise services; verify the chosen package and dependencies.
+- Size buffers and inspect selected output retry behavior rather than assuming lossless or exactly-once delivery.
 
-[Official site](https://www.influxdata.com/time-series-platform/telegraf) · [Source repository](https://github.com/influxdata/telegraf)
+[Official site](https://www.influxdata.com/time-series-platform/telegraf) · [Documentation](https://docs.influxdata.com/telegraf/v1/) · [Source repository](https://github.com/influxdata/telegraf)
 
 ### Thanos
 
@@ -1855,38 +1873,41 @@ OpenTelemetry-native APM platform for storing and correlating traces, metrics, a
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-High-performance observability data pipeline (logs/metrics/traces) as an alternative to Fluent Bit/Fluentd.
+Datadog-maintained Rust telemetry agent and aggregator with source-transform-sink pipelines for logs and metrics and component-specific trace handling.
 
 **Use when**
 
-- You want a fast, Rust-based pipeline with VRL transforms and unified log/metric routing.
+- Collect, transform with VRL and route telemetry between supported sources and sinks in agent or aggregator topologies.
 
 **Consider alternatives when**
 
-- Fluent Bit/Fluentd plugin ecosystem is critical to your workflow.
+- Verify each component's supported event types and stability; the OTLP source is beta even where other components are stable.
+- Delivery depends on protocols, acknowledgements and buffering; durable buffers do not create universal exactly-once guarantees.
+- Vector routes and processes telemetry; it is not a queryable observability storage backend.
 
-[Official site](https://vector.dev) · [Source repository](https://github.com/vectordotdev/vector)
+[Official site](https://vector.dev) · [Documentation](https://vector.dev/docs/) · [Source repository](https://github.com/vectordotdev/vector)
 
 ### VictoriaMetrics
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Time series database; OSS core with enterprise offerings.
+Open-source VictoriaMetrics metrics database in Apache-2.0 single-node and cluster forms, with Prometheus integrations and MetricsQL queries distinct from separately licensed Enterprise and Cloud offerings.
 
 **Use when**
 
-- You want a Prometheus-compatible TSDB with better compression and simpler ops.
+- Store and query metrics through the single-node server or distributed vminsert/vmstorage/vmselect cluster, including Prometheus remote-write ingestion.
 
 **Consider alternatives when**
 
-- You need enterprise clustering features—those require a paid license.
+- Clustering is available in OSS; Enterprise-only features and managed Cloud services require their own terms and are not covered by the repository grant.
+- Review MetricsQL/PromQL semantic differences, capacity, replication and partial-query behavior instead of assuming exact Prometheus equivalence.
 
-[Official site](https://victoriametrics.com) · [Source repository](https://github.com/VictoriaMetrics/VictoriaMetrics)
+[Official site](https://victoriametrics.com) · [Documentation](https://docs.victoriametrics.com/victoriametrics/) · [Source repository](https://github.com/VictoriaMetrics/VictoriaMetrics)
 
 ### VirtualEyes
 

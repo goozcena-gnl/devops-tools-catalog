@@ -14,7 +14,7 @@
 - [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) — Curated, copy-pasteable Prometheus alert rules and guidance for common services and platforms.
 - [Beszel](https://beszel.dev) — Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC, backups, and REST API.
 - [Better Stack](https://betterstack.com/) — Commercial observability and incident-management platform with telemetry, on-call, and status-page services.
-- [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) — Prometheus exporter for probing HTTP, HTTPS, DNS, TCP, ICMP, and gRPC endpoints.
+- [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) — Prometheus multi-target exporter that probes endpoints including HTTP(S), DNS, TCP, ICMP and gRPC and exposes probe results as metrics for a separate monitoring system.
 - [bmon](https://jafaral.github.io/bmon/) — Terminal bandwidth monitor and rate estimator for network interfaces.
 - [bottom](https://bottom.pages.dev/stable/) — Terminal resource monitor for processes, CPU, memory, and disks.
 - [btop](https://github.com/aristocratos/btop) — Terminal resource monitor for CPU, memory, disks, networks, and processes.
@@ -30,7 +30,7 @@
 - [ClickStack](https://clickhouse.com/clickstack) — Open-source observability stack for logs, metrics, traces, and session data built on ClickHouse and HyperDX.
 - [Combodo (iTop)](https://combodo.com) — ITSM/CMDB platform; Combodo-backed iTop ecosystem with commercial extensions and support.
 - [Coroot](https://coroot.com) — Open source APM/observability platform (metrics/logs/traces/profiling) with RCA features.
-- [Cortex](https://cortexmetrics.io) — Horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus and OpenTelemetry metrics (CNCF Incubating).
+- [Cortex](https://cortexmetrics.io) — CNCF Cortex metrics backend for multi-tenant, horizontally scalable Prometheus-compatible ingestion, long-term object storage and queries, maintained separately from Grafana Mimir.
 - [Datadog](https://www.datadoghq.com/product/) — Commercial hosted observability and security platform spanning infrastructure monitoring, logs, traces, application performance, and cloud services.
 - [DeepEval](https://deepeval.com/) — Local-first framework for evaluating and regression-testing LLM applications, agents, RAG pipelines, and MCP systems.
 - [dnsglobe](https://github.com/514-labs/dnsglobe) — Terminal UI for tracking global DNS propagation across public resolvers.
@@ -44,7 +44,7 @@
 - [flow](https://github.com/programmersd21/flow) — Terminal tool for visualizing live network traffic and behavior.
 - [FlowG](https://flowg.cloud/) — Self-hosted log processing and observability platform with visual pipelines, search, and dashboards.
 - [Fluent Bit](https://fluentbit.io) — Fast and lightweight log processor.
-- [Fluentd](https://www.fluentd.org) — Unified logging layer.
+- [Fluentd](https://www.fluentd.org) — CNCF-graduated Ruby-based log-event collector and forwarder with configurable input, routing, buffering and output plugins, maintained separately from Fluent Bit.
 - [Gatus](https://gatus.io) — Developer-oriented health dashboard and status page for monitoring endpoints and services.
 - [GlitchTip](https://glitchtip.com/) — Sentry-compatible error tracking and performance monitoring platform with self-hosted and managed offerings.
 - [GoAccess](https://goaccess.io/) — Terminal and HTML web-log analyser providing real-time HTTP traffic statistics.
@@ -54,10 +54,10 @@
 - [gping](https://github.com/orf/gping) — Ping utility with terminal graphs for comparing host latency.
 - [Grafana](https://grafana.com) — Grafana visualization and alerting product family: OSS dashboards query external data sources; Enterprise adds commercial features and plugins, and Grafana Cloud is the managed service.
 - [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) — Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).
-- [Grafana Beyla](https://grafana.com/oss/beyla) — EBPF-based auto-instrumentation for distributed tracing/metrics with minimal code changes.
+- [Grafana Beyla](https://grafana.com/oss/beyla) — Grafana-supported distribution of OpenTelemetry eBPF Instrumentation for Linux application metrics and transaction tracing, with Grafana-specific integrations and a release cycle distinct from upstream OBI.
 - [Grafana Loki](https://grafana.com/oss/loki) — Open-source log aggregation backend that indexes log labels and queries log content with LogQL; Grafana provides a separate UI and Grafana Cloud Logs is a managed offering.
 - [Grafana Mimir](https://grafana.com/oss/mimir) — Open-source Prometheus-compatible metrics backend for multi-tenant ingestion, global PromQL queries and long-term object storage; Grafana Cloud Metrics is a separate managed offering.
-- [Grafana Pyroscope](https://grafana.com/oss/pyroscope) — Continuous profiling (often paired with tracing/APM for root-cause).
+- [Grafana Pyroscope](https://grafana.com/oss/pyroscope) — Continuous-profiling server that ingests, stores and queries application profiles for Grafana analysis, separate from distributed tracing storage and the hosted Grafana Cloud Profiles service.
 - [Grafana Tempo](https://grafana.com/oss/tempo) — Open-source distributed tracing backend with TraceQL search and configurable OTLP, Jaeger and Zipkin receivers; Grafana Cloud Traces is a separate managed offering.
 - [groundcover](https://www.groundcover.com/) — Commercial observability platform offering infrastructure and application monitoring with BYOC deployment.
 - [grove](https://github.com/ai-dynamo/grove) — AI-powered Kubernetes troubleshooting.
@@ -72,7 +72,7 @@
 - [KRR](https://github.com/robusta-dev/krr) — Kubernetes Resource Recommendations by Robusta.
 - [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Exports precomputed Kubernetes cluster binpacking metrics.
 - [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) — Kubernetes SIG Instrumentation service exposing Prometheus-format metrics derived from Kubernetes API object state; resource-usage collection by metrics-server or cAdvisor and storage/query by Prometheus are separate.
-- [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) — Monitoring dashboards and alerts for Kubernetes.
+- [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) — Jsonnet monitoring mixin that generates Kubernetes Prometheus alerting and recording rules and Grafana dashboards, maintained under kubernetes-sigs rather than a standalone monitoring server.
 - [Kubewatch](https://github.com/robusta-dev/kubewatch) — Kubernetes event watcher and notifier.
 - [Kwatcher](https://github.com/Berg-it/Kwatcher) — Kubernetes event watcher.
 - [Linnix](https://github.com/linnix-os/linnix) — EBPF and PSI-based observability for pinpointing processes and pods causing Linux stalls and incidents.
@@ -95,7 +95,7 @@
 - [OpenSRE](https://www.opensre.com/) — Self-hostable framework for AI-assisted production incident investigation, evaluation, and remediation workflows.
 - [OpenTelemetry](https://opentelemetry.io/) — Vendor-neutral observability umbrella project defining specifications, APIs, SDKs and instrumentation for traces, metrics and logs; the Collector is a separate implementation component, and storage/UI backends are external.
 - [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) — Vendor-neutral telemetry pipeline implementation using receivers, processors and exporters for traces, metrics and logs; the core framework repository and the contrib component repository are distinct.
-- [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) — Zero-code eBPF-based instrumentation for collecting OpenTelemetry telemetry.
+- [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) — OpenTelemetry's development-stage Linux eBPF auto-instrumentation software for application metrics and spans, with supported standalone and container artifacts and version-zero compatibility limitations.
 - [osquery](https://osquery.io/) — Operating-system instrumentation framework that exposes host state through a SQL interface.
 - [otel-gui](https://github.com/metafab/otel-gui) — Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls, service maps, and correlated logs.
 - [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) — Hosted operations platform for on-call management, incident response, and operational automation.
@@ -124,7 +124,7 @@
 - [syslog-ng](https://www.syslog-ng.com/products/open-source-log-management) — Syslog daemon/log collector with parsing and multiple destinations.
 - [sysstat](https://sysstat.github.io/) — Linux performance-monitoring utilities including sar, iostat, mpstat, and pidstat.
 - [SysWarden](https://syswarden.io) — Host-local Linux security orchestrator combining nftables enforcement, host telemetry, bounded threat intelligence, out-of-band WAAP log analysis, authenticated HA, and a terminal dashboard.
-- [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) — Plugin-driven server agent for collecting and reporting metrics (part of InfluxData ecosystem).
+- [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) — InfluxData's plugin-driven telemetry agent for collecting, processing, aggregating and writing metrics and events to InfluxDB or other backends, distinct from a time-series database and Telegraf Enterprise.
 - [Thanos](https://thanos.io) — Open-source components extending Prometheus with high availability, deduplicated global queries and long-term metrics storage in object stores; it is distinct from Prometheus and Grafana Mimir.
 - [Tracetest](https://tracetest.io) — Trace-based testing for distributed systems.
 - [Trippy](https://trippy.rs/) — Cross-platform network diagnostic TUI that combines traceroute and ping with live hop statistics.
@@ -132,8 +132,8 @@
 - [Uptime Kuma](https://uptime.kuma.pet) — Self-hosted uptime-monitoring application with service checks, notifications and public status pages.
 - [UptimeRobot](https://uptimerobot.com) — Uptime monitoring service.
 - [Uptrace](https://uptrace.dev/) — OpenTelemetry-native APM platform for storing and correlating traces, metrics, and logs.
-- [Vector](https://vector.dev) — High-performance observability data pipeline (logs/metrics/traces) as an alternative to Fluent Bit/Fluentd.
-- [VictoriaMetrics](https://victoriametrics.com) — Time series database; OSS core with enterprise offerings.
+- [Vector](https://vector.dev) — Datadog-maintained Rust telemetry agent and aggregator with source-transform-sink pipelines for logs and metrics and component-specific trace handling.
+- [VictoriaMetrics](https://victoriametrics.com) — Open-source VictoriaMetrics metrics database in Apache-2.0 single-node and cluster forms, with Prometheus integrations and MetricsQL queries distinct from separately licensed Enterprise and Cloud offerings.
 - [VirtualEyes](https://virtualeyes.io/) — Hosted monitoring service for website and server uptime, DNS records, certificates, domains, and scheduled-job heartbeats.
 - [Wireshark](https://www.wireshark.org) — Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
 - [Zabbix](https://www.zabbix.com) — Enterprise-grade monitoring platform (metrics, triggers, dashboards).

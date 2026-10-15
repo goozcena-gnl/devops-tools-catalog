@@ -92,7 +92,7 @@
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | commercial | active |
 | [Bitrise](https://bitrise.io) | CI, build and testing | commercial | active |
 | [Black](https://black.readthedocs.io) | Developer experience and local environments | oss | needs-review |
-| [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | active |
 | [BMC Control-M](https://www.bmc.com/it-solutions/control-m.html) | Emerging and experimental tools | unknown | needs-review |
 | [Bottlerocket](https://bottlerocket.dev) | Virtualization, bare metal and homelab | oss | active |
 | [Bottles](https://usebottles.com) | Developer experience and local environments | oss | needs-review |
@@ -167,7 +167,7 @@
 | [Continue](https://www.continue.dev) | Developer experience and local environments | oss | needs-review |
 | [Convox](https://www.convox.com) | CD, GitOps, release and promotion | oss | active |
 | [Coroot](https://coroot.com) | Monitoring, metrics, logs and tracing | open-core | active |
-| [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Cortex](https://cortexmetrics.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) | Emerging and experimental tools | unknown | needs-review |
 | [Cosign](https://docs.sigstore.dev/cosign) | Software supply-chain security | oss | active |
 | [CRI-O](https://cri-o.io) | Virtualization, bare metal and homelab | oss | active |
@@ -249,7 +249,7 @@
 | [Flatpak](https://flatpak.org) | Foundations, Linux and scripting | oss | needs-review |
 | [Floci](https://floci.io/aws/) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
 | [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | active |
-| [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
 | [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | active |
 | [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
@@ -292,10 +292,10 @@
 | [Gradle](https://gradle.org) | Containers and image tooling | oss | needs-review |
 | [Grafana](https://grafana.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) | Monitoring, metrics, logs and tracing | documentation | needs-review |
-| [Grafana Beyla](https://grafana.com/oss/beyla) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Grafana Beyla](https://grafana.com/oss/beyla) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana Loki](https://grafana.com/oss/loki) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana Mimir](https://grafana.com/oss/mimir) | Monitoring, metrics, logs and tracing | oss | active |
-| [Grafana Pyroscope](https://grafana.com/oss/pyroscope) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Grafana Pyroscope](https://grafana.com/oss/pyroscope) | Monitoring, metrics, logs and tracing | oss | active |
 | [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | active |
 | [Graft](https://trailhq.com/graft) | Developer experience and local environments, Source control and repository management | oss | active |
 | [Gremlin](https://www.gremlin.com) | Chaos and performance engineering, Backup, disaster recovery and resilience | commercial | active |
@@ -389,7 +389,7 @@
 | [Kubernetes de A à Z](https://github.com/ibrahimbakayoko/kubernetes-de-a-z) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes GitOps Guide](https://github.com/thezawzaw/kubernetes-gitops-guide) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes Learning Path](https://kubernetes.io/docs/home) | Documentation, learning and career resources | documentation | needs-review |
-| [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) | Monitoring, metrics, logs and tracing | documentation | needs-review |
+| [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) | Monitoring, metrics, logs and tracing | oss | active |
 | [kubernetes-sigs/bom](https://kubernetes-sigs.github.io/bom) | Emerging and experimental tools | oss | needs-review |
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
 | [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -481,7 +481,7 @@
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | open-core | active |
 | [OpenTelemetry](https://opentelemetry.io/) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | active |
-| [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | documentation | needs-review |
+| [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | active |
 | [OpenWiki](https://github.com/langchain-ai/openwiki) | Developer experience and local environments | oss | needs-review |
 | [OpsQuiz](https://opsquiz.org/) | Documentation, learning and career resources | documentation | active |
@@ -627,7 +627,7 @@
 | [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | commercial | active |
 | [TechOps Examples](https://www.techopsexamples.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Tekton](https://tekton.dev) | CI, build and testing, CD, GitOps, release and promotion | oss | active |
-| [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) | Monitoring, metrics, logs and tracing | oss | active |
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |
 | [Termic](https://termic.dev/) | Developer experience and local environments | oss | active |
 | [terminal-browser](https://terminal-browser.com/) | Developer experience and local environments | oss | active |
@@ -671,9 +671,9 @@
 | [Valkey](https://valkey.io) | Emerging and experimental tools | oss | needs-review |
 | [Varnish Cache](https://www.varnish.org/) | Databases, caching and data infrastructure | oss | active |
 | [Vates VMS](https://github.com/vatesfr) | Virtualization, bare metal and homelab | open-core | needs-review |
-| [Vector](https://vector.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Vector](https://vector.dev) | Monitoring, metrics, logs and tracing | oss | active |
 | [Ventoy](https://www.ventoy.net/) | Virtualization, bare metal and homelab | oss | active |
-| [VictoriaMetrics](https://victoriametrics.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [VictoriaMetrics](https://victoriametrics.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [Virtana](https://www.virtana.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [Vitest](https://vitest.dev) | CI, build and testing | oss | needs-review |
 | [Volare](https://github.com/AdamShannag/volare) | Virtualization, bare metal and homelab | oss | needs-review |
