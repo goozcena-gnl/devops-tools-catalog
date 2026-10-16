@@ -47,7 +47,9 @@ def test_quality_workflow_checks_and_uses_constraints() -> None:
         encoding="utf-8"
     )
 
-    assert "python -m scripts.python_constraints --check" in workflow
+    assert "python -m scripts.python_constraints --check" not in workflow
+    assert "python -m scripts.python_constraints --verify-locked" in workflow
+    assert "python -m pip check" in workflow
     assert "-c config/python-constraints-3.12.txt hatchling editables" in workflow
     assert (
         "--no-build-isolation -c config/python-constraints-3.12.txt -e '.[dev]'"

@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
-"""Generate and verify the pinned Python constraints used by CI."""
+"""Verify installed CI pins, check upstream freshness, or refresh constraints."""
 
 from __future__ import annotations
 
 import argparse
 import os
+import platform
 import re
 import subprocess
 import tempfile
 import tomllib
 import venv
 from collections.abc import Iterable, Sequence
+from importlib.metadata import Distribution, distributions
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,6 +25,9 @@ EXCLUDED_PACKAGES = {
     "wheel",
 }
 NAME_NORMALIZER = re.compile(r"[-_.]+")
+PIN = re.compile(
+    r"([A-Za-z0-9](?:[A-Za-z0-9._-]*[A-Za-z0-9])?)==([A-Za-z0-9][A-Za-z0-9.!+_-]*)"
+)
 
 
 def canonicalize_name(name: str) -> str:
@@ -31,14 +36,19 @@ def canonicalize_name(name: str) -> str:
 
 def parse_pinned_requirements(lines: Iterable[str]) -> dict[str, str]:
     requirements: dict[str, str] = {}
+    seen: set[str] = set()
     for raw_line in lines:
         line = raw_line.strip()
         if not line or line.startswith("#"):
             continue
-        name, separator, version = line.partition("==")
-        if not separator or not version:
+        match = PIN.fullmatch(line)
+        if not match:
             raise ValueError(f"expected pinned requirement, got: {raw_line!r}")
+        name, version = match.groups()
         canonical_name = canonicalize_name(name)
+        if canonical_name in seen:
+            raise ValueError(f"duplicate pin: {canonical_name}")
+        seen.add(canonical_name)
         if canonical_name in EXCLUDED_PACKAGES:
             continue
         requirements[canonical_name] = version
@@ -84,6 +94,7 @@ def _run(command: Sequence[str], *, cwd: Path) -> subprocess.CompletedProcess[st
         text=True,
         capture_output=True,
         check=True,
+        timeout=300,
     )
 
 
@@ -156,13 +167,103 @@ def check_constraints(path: Path, root: Path = ROOT) -> int:
 
     print(f"Python dependency drift detected against {_display_path(path, root)}:")
     for name in missing:
-        print(f"- missing: {name}=={expected[name]}")
+        print(f"- missing: {name}=={expected[name]} (removed from fresh resolution)")
     for name in added:
         print(f"- added: {name}=={actual[name]}")
     for name in changed:
         print(f"- changed: {name} expected {expected[name]} resolved {actual[name]}")
     print("Refresh with: python -m scripts.python_constraints --write")
     return 1
+
+
+def validate_locked(
+    pins: dict[str, str], installed: Iterable[Distribution], pyproject: dict
+) -> None:
+    # Fresh resolution and --write remain usable with only the standard library.
+    # The constrained build backend supplies packaging before locked verification.
+    from packaging.requirements import Requirement
+    from packaging.specifiers import SpecifierSet
+    from packaging.version import Version
+
+    if not pins:
+        raise ValueError("constraints contain no relevant pins")
+    for version in pins.values():
+        Version(version)
+    packages: dict[str, Distribution] = {}
+    for dist in installed:
+        name = canonicalize_name(dist.metadata["Name"])
+        if name in packages:
+            raise ValueError(f"duplicate installed distribution: {name}")
+        packages[name] = dist
+    actual = {
+        name: dist.version
+        for name, dist in packages.items()
+        if name not in EXCLUDED_PACKAGES
+    }
+    missing, added, changed = diff_constraints(pins, actual)
+    if any((missing, added, changed)):
+        raise ValueError(
+            f"installed packages differ from pins: missing={missing}, "
+            f"unexpected={added}, wrong_version={changed}"
+        )
+
+    project = pyproject["project"]
+    python_version = platform.python_version()
+    if not SpecifierSet(project["requires-python"]).contains(python_version):
+        raise ValueError("Python version violates project requires-python")
+    # (requirement, extras selected on its parent); project is installed as .[dev].
+    pending = [
+        (text, {""})
+        for text in [*pyproject["build-system"]["requires"], *EXTRA_BUILD_REQUIREMENTS]
+    ]
+    pending.extend(
+        (text, {"", "dev"})
+        for text in [
+            *project["dependencies"],
+            *project["optional-dependencies"]["dev"],
+        ]
+    )
+    visited: set[tuple[str, frozenset[str]]] = set()
+    reachable: set[str] = set()
+    while pending:
+        text, parent_extras = pending.pop()
+        req = Requirement(text)
+        if req.marker and not any(
+            req.marker.evaluate({"extra": extra}) for extra in parent_extras
+        ):
+            continue
+        name = canonicalize_name(req.name)
+        if req.url:
+            raise ValueError(
+                f"URL requirement cannot be verified by a version pin: {req}"
+            )
+        dist = packages.get(name)
+        if dist is None:
+            raise ValueError(f"missing dependency: {req}")
+        if not req.specifier.contains(dist.version, prereleases=True):
+            raise ValueError(f"{req} is incompatible with installed {dist.version}")
+        requires_python = dist.metadata.get("Requires-Python", "")
+        if not SpecifierSet(requires_python).contains(python_version):
+            raise ValueError(f"{name} requires Python {requires_python}")
+        extras = frozenset({"", *req.extras})
+        key = name, extras
+        if key in visited:
+            continue
+        visited.add(key)
+        reachable.add(name)
+        pending.extend((child, extras) for child in (dist.requires or []))
+    unused = sorted(set(pins) - reachable)
+    if unused:
+        raise ValueError(f"pins outside the declared dependency closure: {unused}")
+
+
+def verify_locked(path: Path, root: Path = ROOT) -> int:
+    path = resolve_constraints_path(path, root)
+    pins = parse_pinned_requirements(path.read_text(encoding="utf-8").splitlines())
+    pyproject = tomllib.loads((root / "pyproject.toml").read_text(encoding="utf-8"))
+    validate_locked(pins, distributions(), pyproject)
+    print(f"Locked Python environment verified: {len(pins)} pins; no fresh resolution.")
+    return 0
 
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
@@ -176,16 +277,31 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--check", action="store_true")
     mode.add_argument("--write", action="store_true")
+    mode.add_argument("--verify-locked", action="store_true")
     return parser.parse_args(argv)
 
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_args(argv)
     constraints_path = resolve_constraints_path(args.constraints_file)
-    if args.write:
-        constraints_path.parent.mkdir(parents=True, exist_ok=True)
-        return write_constraints(constraints_path)
-    return check_constraints(constraints_path)
+    try:
+        if args.write:
+            return write_constraints(constraints_path)
+        if args.verify_locked:
+            return verify_locked(constraints_path)
+        return check_constraints(constraints_path)
+    except (
+        OSError,
+        ValueError,
+        KeyError,
+        ImportError,
+        subprocess.SubprocessError,
+    ) as exc:
+        print(f"Python constraint operation failed ({type(exc).__name__}): {exc}")
+        if isinstance(exc, (subprocess.CalledProcessError, subprocess.TimeoutExpired)):
+            print(exc.stdout or "")
+            print(exc.stderr or "")
+        return 2
 
 
 if __name__ == "__main__":
