@@ -75,6 +75,70 @@ deterministic output. Full network link audits are intentionally separate:
 .venv/bin/python -m scripts.check_links --strict
 ```
 
+## Reproducing Python CI and monitoring upstream dependencies
+
+Mandatory PR/main CI uses the committed Linux Python 3.12 constraints. In a
+fresh Python 3.12 virtual environment, reproduce its dependency setup with:
+
+```bash
+python -m pip install --disable-pip-version-check --no-input -c config/python-constraints-3.12.txt hatchling editables
+python -m pip install --disable-pip-version-check --no-input --no-build-isolation -c config/python-constraints-3.12.txt -e '.[dev]'
+python -m scripts.python_constraints --verify-locked
+python -m pip check
+```
+
+Then run the full Ruff, pytest, catalogue and generated-document checks above.
+The verifier uses the installed `packaging` library supplied by the constrained
+build backend. It performs no network access or fresh resolution: every relevant
+installed distribution must match a unique, syntactically valid committed pin.
+It checks current `pyproject.toml` build/runtime/dev declarations and the selected
+transitive dependency closure, including version bounds, Python requirements,
+environment markers and requested extras. Missing, unexpected, duplicated,
+incorrectly versioned or unused packages/pins fail verification. The editable
+catalogue and bootstrap `pip`, `setuptools` and `wheel` are excluded from the pin
+comparison; declared dependencies on them still undergo compatibility checks.
+This constraint set targets Linux Python 3.12; other platforms can need different
+marker-selected dependencies.
+
+Explicit upstream freshness checking remains available:
+
+```bash
+python -m scripts.python_constraints --check
+```
+
+This creates an independent temporary environment, installs the latest versions
+allowed by the declarations, and compares its package set with the committed
+constraints. Exit status **0** means current; **1** means drift, with changed,
+added and missing (removed from fresh resolution) packages listed; **2** means
+an operation failed, such as invalid pins, unavailable network, resolver failure
+or a subprocess timeout. Locked verification returns 0 on success and 2 on
+failure. Neither check writes constraints. Each resolver subprocess has a
+five-minute timeout; the Actions job has a fifteen-minute limit.
+
+The independent **Python dependency freshness** workflow runs Tuesdays at
+**05:23 UTC**, alongside the existing weekly maintenance cadence, and supports
+manual dispatch. GitHub schedules can be delayed; this workflow becomes available
+on the default branch after merge. Its Actions job summary and fourteen-day
+`python-freshness-report` artifact retain the comparison or failure details.
+Drift and errors fail that maintenance run visibly without participating in PR
+or push checks. Failures during setup or job cancellation remain visible in
+Actions logs even if no report can be produced. Maintainers should monitor these
+runs and configure GitHub Actions failure notifications as needed; no issue or
+PR is automatically created and no dependency change is automatically applied.
+The workflow has only `contents: read`, checks out without persisted credentials,
+uses commit-pinned actions, and does not cache resolution results.
+
+To refresh, run `python -m scripts.python_constraints --write` on Linux Python
+3.12, review the entire pin diff and upstream release/security information,
+repeat the constrained installation and full validation in a fresh environment,
+then submit a separate PR. Freshness detects updates within declared bounds; it
+does not audit vulnerability advisories or detect versions excluded by those
+bounds. Existing CodeQL, secret scanning and workflow security checks remain
+independent. Pins guarantee selected versions, not artifact hashes or offline
+availability: installation still needs an accessible package index/cache.
+To roll back this separation, revert its PR commit; `--check` and `--write`
+retain their original freshness/generation roles.
+
 ## Working a scoped evidence-review issue
 
 Review issues turn the catalogue's visible review debt into bounded work. Choose

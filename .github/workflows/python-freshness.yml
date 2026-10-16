@@ -1,0 +1,53 @@
+name: Python dependency freshness
+
+on:
+  schedule:
+    - cron: "23 5 * * 2"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: python-freshness-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      - name: Compare upstream dependencies and publish summary
+        run: |
+          set +e
+          python -m scripts.python_constraints --check > python-freshness.txt 2>&1
+          result=$?
+          set -e
+          {
+            echo '# Python dependency freshness'
+            echo "Commit: $GITHUB_SHA; exit status: $result (0=current, 1=drift, 2=error)"
+            echo '```text'
+            cat python-freshness.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          cat python-freshness.txt
+          exit "$result"
+
+      - name: Preserve freshness report even on failure
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: python-freshness-report
+          path: python-freshness.txt
+          if-no-files-found: error
+          retention-days: 14
