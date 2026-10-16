@@ -184,7 +184,7 @@
 - [Gateway API](https://gateway-api.sigs.k8s.io) — Kubernetes service networking APIs.
 - [genai-agentos](https://github.com/genai-works-org/genai-agentos) — Framework for building, running, and managing multi-agent AI workflows.
 - [git-sync](https://github.com/kubernetes/git-sync) — Sidecar app that clones a Git repository and keeps it synchronized with upstream.
-- [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD workflow platform with GitHub-hosted or self-hosted runners; service terms are separate from open-source runner and action licences.
+- [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform terms separate from the MIT runner and independent action licences.
 - [GitHub Copilot](https://github.com/features/copilot) — AI-powered code completion assistant.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server) — GitHub's MCP server implementation.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.

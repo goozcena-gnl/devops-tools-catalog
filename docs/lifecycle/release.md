@@ -38,7 +38,7 @@
 - [Flux Operator](https://fluxoperator.dev) — ControlPlane-maintained Kubernetes operator installing, configuring and upgrading Flux CD instances through FluxInstance resources, with additional self-service APIs. Its AGPL-3.0 software is separate from Flux CD core and commercial ControlPlane distribution/support terms.
 - [flux9s](https://flux9s.ca) — K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
 - [git push no-mistakes](https://kunchenguid.github.io/no-mistakes/) — Local Git push gate that validates changes in an isolated worktree before publishing a branch and opening a pull request.
-- [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD workflow platform with GitHub-hosted or self-hosted runners; service terms are separate from open-source runner and action licences.
+- [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform terms separate from the MIT runner and independent action licences.
 - [GitHub CLI](https://cli.github.com) — Official command-line interface for GitHub repositories, pull requests, issues, releases, and Actions workflows.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 - [GitLab CI](https://docs.gitlab.com/ci/) — GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, with separately deployed GitLab Runner and distinct Community, Enterprise and service terms.

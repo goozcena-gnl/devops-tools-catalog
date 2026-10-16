@@ -166,6 +166,30 @@ def test_gitlab_application_source_is_not_runner_or_all_saas(catalogue):
     )
 
 
+def test_github_enterprise_control_plane_is_separate_from_job_execution(catalogue):
+    tool = catalogue["github-actions"]
+    assert {"hosted-saas", "enterprise-self-hosted", "self-hosted-agent"} <= set(
+        tool["deployment_models"]
+    )
+    assert any("/enterprise-server@" in url for url in tool["sources"])
+    assert "GitHub Enterprise Server" in tool["summary"]
+    assert any(
+        "GitHub-hosted runners for GitHub Enterprise Server" in text
+        and "require self-hosted runners" in text
+        for text in tool["avoid_when"]
+    )
+
+
+def test_gitlab_free_self_managed_is_not_hidden_by_enterprise_filter(catalogue):
+    tool = catalogue["gitlab-ci"]
+    assert {"self-hosted", "enterprise-self-hosted", "self-hosted-agent"} <= set(
+        tool["deployment_models"]
+    )
+    assert "https://docs.gitlab.com/install/package/" in tool["sources"]
+    assert "free Community" in " ".join(tool["use_when"])
+    assert "repository_url" not in tool
+
+
 def test_jenkins_x_rename_preserves_id_and_independent_licensing(catalogue):
     tool = catalogue["jenkins-x"]
     assert "JayeX" in tool["name"] and "Jenkins X" in tool["name"]

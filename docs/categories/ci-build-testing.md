@@ -659,16 +659,17 @@ Acceptance testing framework.
 **Model:** Commercial<br>
 **Status:** Active
 
-GitHub's CI/CD workflow platform with GitHub-hosted or self-hosted runners; service terms are separate from open-source runner and action licences.
+GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform terms separate from the MIT runner and independent action licences.
 
 **Use when**
 
-- You host repositories on GitHub and need event-driven build, test, release and deployment workflows with hosted or self-hosted execution.
+- You need GitHub workflows with GitHub-hosted or self-hosted runners on GitHub.com, or a customer-managed GitHub Enterprise Server control plane with self-hosted runners.
 
 **Consider alternatives when**
 
 - You require an entirely open-source orchestration service; the MIT-licensed runner is only one component of GitHub Actions.
 - Untrusted workflows could reach privileged tokens, secrets or persistent self-hosted machines without explicit trust separation.
+- You require GitHub-hosted runners for GitHub Enterprise Server; its Actions jobs require self-hosted runners and administrator-managed platform resources.
 
 [Official site](https://github.com/features/actions) · [Documentation](https://docs.github.com/en/actions)
 
@@ -683,7 +684,7 @@ GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, wi
 
 **Use when**
 
-- You use GitLab and need YAML-defined pipelines, runner-executed jobs, release/deployment workflows and edition-appropriate platform controls.
+- You use GitLab.com or GitLab Self-Managed and need YAML pipelines and runner jobs, including free Community deployments or licensed Enterprise features.
 
 **Consider alternatives when**
 

@@ -137,7 +137,7 @@
 - [Ghostty](https://ghostty.org) — Fast, cross-platform GPU-accelerated terminal emulator with native desktop integration.
 - [Ghostwriter](https://www.ghostwriter.wiki/home) — Collaborative platform for managing security assessments, findings, evidence, and reports.
 - [Gibson](https://github.com/HackingLZ/gibson) — Network monitoring and threat-hunting tool that maps processes to connections, flags beaconing, and helps generate firewall rules.
-- [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD workflow platform with GitHub-hosted or self-hosted runners; service terms are separate from open-source runner and action licences.
+- [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform terms separate from the MIT runner and independent action licences.
 - [GitHub Codespaces](https://github.com/features/codespaces) — Hosted cloud development environments integrated with GitHub.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 - [GitLab CI](https://docs.gitlab.com/ci/) — GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, with separately deployed GitLab Runner and distinct Community, Enterprise and service terms.

@@ -1137,8 +1137,8 @@
   needs_review: false
 - id: github-actions
   name: GitHub Actions
-  summary: GitHub's CI/CD workflow platform with GitHub-hosted or self-hosted runners; service terms are
-    separate from open-source runner and action licences.
+  summary: GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform
+    terms separate from the MIT runner and independent action licences.
   categories:
   - ci-build-testing
   subcategories:
@@ -1153,16 +1153,19 @@
   - release
   - deploy
   use_when:
-  - You host repositories on GitHub and need event-driven build, test, release and deployment workflows
-    with hosted or self-hosted execution.
+  - You need GitHub workflows with GitHub-hosted or self-hosted runners on GitHub.com, or a customer-managed
+    GitHub Enterprise Server control plane with self-hosted runners.
   avoid_when:
   - You require an entirely open-source orchestration service; the MIT-licensed runner is only one component
     of GitHub Actions.
   - Untrusted workflows could reach privileged tokens, secrets or persistent self-hosted machines without
     explicit trust separation.
+  - You require GitHub-hosted runners for GitHub Enterprise Server; its Actions jobs require self-hosted
+    runners and administrator-managed platform resources.
   deployment_models:
   - hosted-saas
   - self-hosted-agent
+  - enterprise-self-hosted
   license_model: commercial
   maturity: established
   status: active
@@ -1179,6 +1182,7 @@
   - https://docs.github.com/en/actions/reference/security/secure-use
   - https://docs.github.com/en/actions/concepts/runners/self-hosted-runners
   - https://docs.github.com/en/actions/concepts/security/openid-connect
+  - https://docs.github.com/en/enterprise-server@3.21/admin/managing-github-actions-for-your-enterprise/getting-started-with-github-actions-for-your-enterprise/getting-started-with-github-actions-for-github-enterprise-server
   needs_review: false
   official_url: https://github.com/features/actions
   documentation_url: https://docs.github.com/en/actions
@@ -1202,8 +1206,8 @@
   - release
   - deploy
   use_when:
-  - You use GitLab and need YAML-defined pipelines, runner-executed jobs, release/deployment workflows
-    and edition-appropriate platform controls.
+  - You use GitLab.com or GitLab Self-Managed and need YAML pipelines and runner jobs, including free
+    Community deployments or licensed Enterprise features.
   avoid_when:
   - You need a standalone CI service independent of the GitLab platform or assume every paid GitLab.com
     feature is covered by an OSS licence.
@@ -1211,6 +1215,7 @@
     without protected execution and permissions.
   deployment_models:
   - hosted-saas
+  - self-hosted
   - enterprise-self-hosted
   - self-hosted-agent
   license_model: open-core
@@ -1230,6 +1235,7 @@
   - https://docs.gitlab.com/development/licensing/
   - https://docs.gitlab.com/ci/pipeline_security/
   - https://docs.gitlab.com/ee/ci
+  - https://docs.gitlab.com/install/package/
   needs_review: false
   documentation_url: https://docs.gitlab.com/ci/
   commercial_offering: true
