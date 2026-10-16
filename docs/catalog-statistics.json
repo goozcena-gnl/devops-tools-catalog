@@ -11,10 +11,10 @@
     "unknown": 80
   },
   "statuses": {
-    "active": 704,
+    "active": 713,
     "archived": 10,
     "deprecated": 2,
     "historical": 2,
-    "needs-review": 707
+    "needs-review": 698
   }
 }

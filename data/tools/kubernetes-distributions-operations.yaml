@@ -1722,8 +1722,12 @@
   needs_review: false
 - id: kor
   name: Kor
-  summary: CLI for discovering unused and orphaned Kubernetes resources.
+  summary: Kubernetes resource-reference analyzer that reports potentially unused objects and optionally
+    deletes selected findings; distinct from the separately offered KorPro platform.
+  official_url: https://github.com/yonahd/kor
   repository_url: https://github.com/yonahd/kor
+  repository_archived: false
+  documentation_url: https://github.com/yonahd/kor/blob/main/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -1733,20 +1737,46 @@
   - site-reliability-engineer
   - kubernetes-engineer
   lifecycle_stages:
-  - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  - optimize
+  use_when:
+  - Investigate potentially unused resources with namespace/label/age filters and --show-reason before
+    deciding on cleanup.
+  - Export table, JSON, YAML or Prometheus results through the CLI or documented in-cluster deployment/CronJob.
+  avoid_when:
+  - 'A detection is not proof that deletion is safe: dynamic ConfigMap/Secret consumers and relationships
+    outside supported rules can produce false positives.'
+  - Kor can mutate the cluster with --delete; --no-interactive bypasses deletion prompts. Review findings,
+    labels, owner references and RBAC before enabling cleanup.
+  - Read/list/watch visibility must cover the selected resources; deletion needs separate write permissions.
+    KorPro pricing and service terms do not change the CLI's MIT grant.
+  deployment_models:
+  - self-hosted
+  - container
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: MIT
+  commercial_offering: true
+  maturity: growing
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - unused-resources
+  - cleanup
+  - reference-analysis
+  verified_on: '2026-10-16'
   sources:
   - legacy:devopstools_final.md#L477
-  needs_review: true
+  - https://github.com/yonahd/kor
+  - https://github.com/yonahd/kor/blob/main/README.md
+  - https://github.com/yonahd/kor/blob/main/LICENSE
+  - https://github.com/yonahd/kor/releases/tag/v0.6.9
+  - https://api.github.com/repos/yonahd/kor
+  - https://github.com/yonahd/kor/blob/main/CONTRIBUTING.md
+  - https://github.com/yonahd/kor/blob/main/charts/kor/templates/role.yaml
+  - https://korpro.io/
+  - https://korpro.io/pricing
+  needs_review: false
 - id: krew
   name: krew
   summary: '`kubectl` plugin manager.'
@@ -1850,9 +1880,12 @@
   needs_review: false
 - id: kube-hunter
   name: kube-hunter
-  summary: Kubernetes security testing tool.
+  summary: Legacy Aqua Kubernetes security-assessment tool with passive discovery and optional active
+    exploitation; upstream states it is no longer under active development and recommends Trivy.
   official_url: https://aquasecurity.github.io/kube-hunter
   repository_url: https://github.com/aquasecurity/kube-hunter
+  repository_archived: false
+  documentation_url: https://github.com/aquasecurity/kube-hunter/blob/main/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -1861,23 +1894,45 @@
   - platform-engineer
   - site-reliability-engineer
   - kubernetes-engineer
+  - devsecops-engineer
   lifecycle_stages:
-  - deploy
   - operate
+  - secure
   use_when:
-  - You want to discover exploitable vulnerabilities from an attacker's perspective.
+  - Study historical Kubernetes attack-surface findings or conduct explicitly authorized, isolated assessments
+    with a separately evaluated legacy tool.
   avoid_when:
-  - You need continuous runtime protection (use Falco/Kubescape instead).
-  deployment_models: []
+  - Current supported Kubernetes versions and ongoing support are not established; upstream states no
+    active development and recommends Trivy. Non-archived repository status is not evidence of active
+    support.
+  - Only assess clusters and networks you own or are explicitly authorized to test. Passive discovery
+    still sends network probes; --active can exploit weaknesses and change cluster state harmfully.
+  - This is distinct from Popeye's read-only hygiene linting, Kubescape posture assessment and Falco runtime
+    detection; it is not continuous runtime protection.
+  - Historical Aqua reporting containers include a closed-source plugin under separate terms; that plugin
+    and current hosted-report availability are not established by the repository's Apache-2.0 grant.
+  deployment_models:
+  - self-hosted
+  - container
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - legacy-security-assessment
+  - network-probing
+  verified_on: '2026-10-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L37
   - legacy:devopstools_final.md#L484
+  - https://github.com/aquasecurity/kube-hunter
+  - https://aquasecurity.github.io/kube-hunter
+  - https://github.com/aquasecurity/kube-hunter/blob/main/README.md
+  - https://github.com/aquasecurity/kube-hunter/blob/main/LICENSE
+  - https://github.com/aquasecurity/kube-hunter/releases/tag/v0.6.8
+  - https://api.github.com/repos/aquasecurity/kube-hunter
   needs_review: true
 - id: kube-linter
   name: KubeLinter
@@ -1925,9 +1980,12 @@
   needs_review: false
 - id: kube-score
   name: kube-score
-  summary: Static analysis tool for Kubernetes YAML manifests with best-practice recommendations.
+  summary: Static Kubernetes object analysis that recommends reliability and security improvements for
+    manifests, including probes, resource limits and security contexts.
   official_url: https://kube-score.com
   repository_url: https://github.com/zegl/kube-score
+  repository_archived: false
+  documentation_url: https://github.com/zegl/kube-score/blob/master/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -1936,24 +1994,48 @@
   - platform-engineer
   - site-reliability-engineer
   - kubernetes-engineer
+  - devsecops-engineer
   lifecycle_stages:
+  - build
   - deploy
-  - operate
+  - secure
   use_when:
-  - You want opinionated best-practice scoring during development.
+  - Score rendered Helm, Kustomize or YAML objects in CI and fail at the configured finding severity.
+  - Analyze related objects from the same namespace together to assess selectors, policies and workload
+    recommendations.
   avoid_when:
-  - You need customizable policy rules (use Kyverno/OPA instead).
-  deployment_models: []
+  - Recommendations are curated static checks, not kubeconform schema validation, Kubesec's risk-point
+    model or live-cluster vulnerability hunting.
+  - Select the relevant Kubernetes version and review optional checks and ignore annotations; a passing
+    score does not establish compliance or runtime safety.
+  deployment_models:
+  - self-hosted
+  - container
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: MIT
+  commercial_offering: false
+  maturity: established
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - static-analysis
+  - reliability
+  - security-context
+  verified_on: '2026-10-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L39
   - legacy:devopstools_final.md#L486
-  needs_review: true
+  - https://github.com/zegl/kube-score
+  - https://kube-score.com
+  - https://github.com/zegl/kube-score/blob/master/README.md
+  - https://github.com/zegl/kube-score/blob/master/LICENSE
+  - https://github.com/zegl/kube-score/releases/tag/v1.20.0
+  - https://api.github.com/repos/zegl/kube-score
+  - https://github.com/zegl/kube-score/blob/master/README_CHECKS.md
+  - https://github.com/zegl/kube-score/blob/master/README_PROBES.md
+  - https://github.com/zegl/kube-score/blob/master/README_SECURITYCONTEXT.md
+  needs_review: false
 - id: kubeadm
   name: kubeadm
   summary: Tool for bootstrapping Kubernetes clusters.
@@ -2101,8 +2183,12 @@
   needs_review: false
 - id: kubeconform
   name: kubeconform
-  summary: Fast Kubernetes manifest schema validation (offline schema support).
+  summary: Kubernetes manifest validator that checks JSON schemas locally or in CI, with configurable
+    schemas for custom resources and offline operation.
+  official_url: https://github.com/yannh/kubeconform
   repository_url: https://github.com/yannh/kubeconform
+  repository_archived: false
+  documentation_url: https://github.com/yannh/kubeconform/blob/master/Readme.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -2112,23 +2198,43 @@
   - site-reliability-engineer
   - kubernetes-engineer
   lifecycle_stages:
+  - build
   - deploy
-  - operate
   use_when:
-  - You need fast CI validation of manifests against Kubernetes schemas (including CRDs).
+  - Validate rendered Kubernetes manifests against a selected Kubernetes schema version before deployment.
+  - Supply local schema files or explicitly configured CRD schema registries for custom-resource and offline
+    validation.
   avoid_when:
-  - You only need runtime admission control.
-  deployment_models: []
+  - Schema validation does not cover controller-side semantic validation, admission policy or security
+    best-practice scoring; use server-side dry runs and complementary checks.
+  - Default schemas are downloaded remotely; offline validation requires all required schemas and references
+    to be available locally.
+  - Custom resources are not in the default built-in schema set, and ignored missing schemas are skipped
+    rather than validated; the Go library interface is not considered stable.
+  deployment_models:
+  - self-hosted
+  - container
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: established
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - json-schema
+  - manifest-validation
+  - offline
+  verified_on: '2026-10-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L41
   - legacy:devopstools_final.md#L489
-  needs_review: true
+  - https://github.com/yannh/kubeconform
+  - https://github.com/yannh/kubeconform/blob/master/Readme.md
+  - https://github.com/yannh/kubeconform/blob/master/LICENSE
+  - https://github.com/yannh/kubeconform/releases/tag/v0.8.0
+  - https://api.github.com/repos/yannh/kubeconform
+  needs_review: false
 - id: kubectl
   name: kubectl
   summary: Kubernetes command-line tool.
@@ -2161,8 +2267,12 @@
   needs_review: true
 - id: kubectl-ai
   name: kubectl-ai
-  summary: AI-powered kubectl plugin.
+  summary: GoogleCloudPlatform-hosted, community kubectl AI assistant that can execute kubectl and shell
+    tools using configured Kubernetes credentials and local or hosted model backends.
+  official_url: https://github.com/GoogleCloudPlatform/kubectl-ai
   repository_url: https://github.com/GoogleCloudPlatform/kubectl-ai
+  repository_archived: false
+  documentation_url: https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -2171,24 +2281,56 @@
   - platform-engineer
   - site-reliability-engineer
   - kubernetes-engineer
+  - devsecops-engineer
   lifecycle_stages:
   - deploy
   - operate
   use_when:
-  - You want natural-language-to-kubectl translation for exploration.
+  - Explore cluster state and propose or execute reviewed Kubernetes operations through documented model
+    backends and configured tools.
+  - Choose an appropriate local Ollama/llama.cpp endpoint or hosted provider, and explicitly assess cluster
+    data, tool permissions and model costs.
   avoid_when:
-  - You need deterministic, auditable commands in production workflows.
-  deployment_models: []
+  - This is not an officially supported Google product. AI suggestions and confirmation prompts do not
+    grant permission to mutate a cluster or make arbitrary commands safe.
+  - Default permission checks request approval for operations classified as modifying or unknown; --skip-permissions
+    can bypass them. Keep least-privilege Kubernetes credentials and host controls independent.
+  - Prompts, supplied files and tool results can enter model context, traces or persisted sessions; hosted
+    APIs have separate data handling and billing, and a configured local provider endpoint can itself
+    be remote.
+  - Built-in bash, custom/MCP tools and MCP serving expand access beyond kubectl; HTTP MCP is unauthenticated
+    by default unless optional OAuth is configured. Protect endpoints and do not treat command classification
+    as a security sandbox.
+  deployment_models:
+  - self-hosted
+  - container
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: emerging
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - ai-assistant
+  - kubectl
+  - llm
+  verified_on: '2026-10-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L43
   - legacy:devopstools_final.md#L493
-  needs_review: true
+  - https://github.com/GoogleCloudPlatform/kubectl-ai
+  - https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/README.md
+  - https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/LICENSE
+  - https://github.com/GoogleCloudPlatform/kubectl-ai/releases/tag/v0.0.31
+  - https://api.github.com/repos/GoogleCloudPlatform/kubectl-ai
+  - https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/docs/tools.md
+  - https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/pkg/agent/conversation.go
+  - https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/pkg/tools/kubectl_tool.go
+  - https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/pkg/tools/bash_tool.go
+  - https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/pkg/tools/kubectl_filter.go
+  - https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/docs/mcp-server.md
+  needs_review: false
 - id: kubectl-browse-pvc
   name: kubectl-browse-pvc
   summary: Browse Kubernetes PVCs from the CLI.
@@ -2399,8 +2541,12 @@
   needs_review: false
 - id: kubectx-kubens
   name: kubectx + kubens
-  summary: Switch contexts/namespaces quickly.
+  summary: Companion kubectx and kubens CLIs for switching kubectl contexts and namespaces, with shell
+    completion, optional fzf selection and context-shell conveniences.
+  official_url: https://github.com/ahmetb/kubectx
   repository_url: https://github.com/ahmetb/kubectx
+  repository_archived: false
+  documentation_url: https://github.com/ahmetb/kubectx/blob/master/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -2413,20 +2559,39 @@
   - deploy
   - operate
   use_when:
-  - You juggle multiple clusters/namespaces daily.
+  - Switch among existing kubeconfig contexts and namespaces while deploying or operating clusters.
+  - Install the companion tools through documented package managers, release binaries or Krew, with optional
+    shell completion and fzf.
   avoid_when:
-  - You work with a single cluster and namespace.
-  deployment_models: []
+  - Switching contexts or namespaces does not authenticate a user, grant permissions or enforce Kubernetes
+    RBAC; kubeconfig credentials and API-server authorization remain separate.
+  - The optional kubectx -r shell is a client-side convenience that blocks kubectl edits, not a tamper-resistant
+    authorization boundary; other tools and credentials still require controls.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: established
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - kubeconfig
+  - context-switching
+  - shell-integration
+  verified_on: '2026-10-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L48
   - legacy:devopstools_final.md#L498
-  needs_review: true
+  - https://github.com/ahmetb/kubectx
+  - https://github.com/ahmetb/kubectx/blob/master/README.md
+  - https://github.com/ahmetb/kubectx/blob/master/LICENSE
+  - https://github.com/ahmetb/kubectx/releases/tag/v0.11.0
+  - https://api.github.com/repos/ahmetb/kubectx
+  - https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/
+  - https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+  needs_review: false
 - id: kubedock
   name: Kubedock
   summary: Minimal Docker API implementation that orchestrates containers on Kubernetes clusters.
@@ -2657,8 +2822,12 @@
   needs_review: false
 - id: kubeplumber
   name: KubePlumber
-  summary: Kubernetes network connectivity validation and troubleshooting tool.
+  summary: Kubernetes connectivity diagnostic utility that creates test workloads for internal/external
+    DNS, inter-node HTTP and bandwidth checks and displays results in a web UI.
+  official_url: https://github.com/David-VTUK/KubePlumber
   repository_url: https://github.com/David-VTUK/KubePlumber
+  repository_archived: false
+  documentation_url: https://github.com/David-VTUK/KubePlumber/blob/main/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -2670,18 +2839,48 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - Diagnose specific DNS, pod connectivity, node-network attributes and iperf bandwidth paths in an explicitly
+    permitted test scope.
+  - Use the documented kubeconfig/namespace/configuration inputs, review created workload images and permissions,
+    and protect the results UI.
+  avoid_when:
+  - 'This is not read-only: it creates namespaces, pods, DaemonSets and Jobs, uses pods/exec and reads
+    logs, then deletes test resources.'
+  - NIC probes use host networking, and cleanup includes kubeplumber=true labeled resources/namespaces;
+    use a dedicated scope and check admission and cleanup permissions.
+  - The upstream E2E recipe exercises K3d/K3s, not every CNI or managed-cluster restriction. Point-in-time
+    DNS/HTTP/iperf checks do not prove general network security or continuous availability.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: emerging
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - network-diagnostics
+  - dns
+  - connectivity
+  verified_on: '2026-10-16'
   sources:
   - legacy:devopstools_final.md#L482
-  needs_review: true
+  - https://github.com/David-VTUK/KubePlumber
+  - https://github.com/David-VTUK/KubePlumber/blob/main/README.md
+  - https://github.com/David-VTUK/KubePlumber/blob/main/LICENSE
+  - https://github.com/David-VTUK/KubePlumber/releases/tag/v1.0.0
+  - https://api.github.com/repos/David-VTUK/KubePlumber
+  - https://github.com/David-VTUK/KubePlumber/blob/main/cmd/main.go
+  - https://github.com/David-VTUK/KubePlumber/blob/main/internal/setup/namespace.go
+  - https://github.com/David-VTUK/KubePlumber/blob/main/internal/validate/dns.go
+  - https://github.com/David-VTUK/KubePlumber/blob/main/internal/validate/overlayNetwork.go
+  - https://github.com/David-VTUK/KubePlumber/blob/main/internal/validate/overlayNetworkSpeed.go
+  - https://github.com/David-VTUK/KubePlumber/blob/main/internal/detect/nic.go
+  - https://github.com/David-VTUK/KubePlumber/blob/main/internal/cleanup/removeTestResources.go
+  - https://github.com/David-VTUK/KubePlumber/blob/main/.github/workflows/e2e-tests.yml
+  needs_review: false
 - id: kubernetes
   name: Kubernetes
   summary: CNCF-hosted orchestration system for deploying, scaling, and managing containerized applications.
@@ -2829,9 +3028,12 @@
   license_spdx: Apache-2.0
 - id: kubesec
   name: Kubesec
-  summary: Security risk analysis for Kubernetes YAML.
+  summary: Kubernetes manifest security risk scoring through local CLI/container, a self-hosted HTTP API
+    or a best-effort public v2 API, with schema validation and scored recommendations.
   official_url: https://kubesec.io
   repository_url: https://github.com/controlplaneio/kubesec
+  repository_archived: false
+  documentation_url: https://github.com/controlplaneio/kubesec/blob/master/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -2840,24 +3042,50 @@
   - platform-engineer
   - site-reliability-engineer
   - kubernetes-engineer
+  - devsecops-engineer
   lifecycle_stages:
+  - build
   - deploy
-  - operate
+  - secure
   use_when:
-  - You want a quick risk score for manifest security posture in CI.
+  - Score manifest security settings in build/deployment review using the local binary/container or a
+    controlled HTTP service.
+  - Inspect risk rules and version/schema configuration; use the public v2 API only for non-sensitive
+    manifests.
   avoid_when:
-  - You already run kube-linter or Kubescape in your pipeline.
-  deployment_models: []
+  - Risk scores are not intrusion testing or proof of compliance, and admission enforcement requires a
+    separate integration such as kubesec-webhook.
+  - Do not submit sensitive YAML to the public API; it is a best-effort service with no availability guarantee.
+    Prefer local/self-hosted analysis for confidential input.
+  - The v1 API is deprecated; use documented v2 modes and appropriate schemas. kubeconform schema checks,
+    kube-score recommendations and Kubesec point scoring remain distinct.
+  deployment_models:
+  - self-hosted
+  - container
+  - saas
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: established
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - manifest-security
+  - risk-scoring
+  - static-analysis
+  verified_on: '2026-10-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L54
   - legacy:devopstools_final.md#L507
-  needs_review: true
+  - https://github.com/controlplaneio/kubesec
+  - https://kubesec.io
+  - https://github.com/controlplaneio/kubesec/blob/master/README.md
+  - https://github.com/controlplaneio/kubesec/blob/master/LICENSE
+  - https://github.com/controlplaneio/kubesec/releases/tag/v2.15.0
+  - https://api.github.com/repos/controlplaneio/kubesec
+  - https://github.com/controlplaneio/kubesec/blob/master/MAINTAINERS
+  needs_review: false
 - id: kubeshark
   name: Kubeshark
   summary: Kubernetes network observability platform for packet capture, protocol analysis, dashboards, and MCP-based investigation.
@@ -3141,8 +3369,12 @@
   needs_review: false
 - id: kubeview
   name: KubeView
-  summary: Kubernetes cluster visualizer.
+  summary: Read-only Kubernetes resource and relationship visualization with live SSE updates and optional
+    pod-log viewing, served by a local or in-cluster Go web application.
+  official_url: https://github.com/benc-uk/kubeview
   repository_url: https://github.com/benc-uk/kubeview
+  repository_archived: false
+  documentation_url: https://github.com/benc-uk/kubeview/blob/main/readme.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -3152,23 +3384,45 @@
   - site-reliability-engineer
   - kubernetes-engineer
   lifecycle_stages:
-  - deploy
   - operate
+  - monitor
   use_when:
-  - You want a real-time graphical topology view of deployments and their relationships.
+  - Visualize supported Kubernetes objects, derived relationships and live events while troubleshooting
+    a cluster.
+  - Use a scoped kubeconfig or Helm-deployed service account and configure namespace filters or disable
+    pod logs as appropriate.
   avoid_when:
-  - You need actionable management capabilities beyond visualization.
-  deployment_models: []
+  - The application does not enforce user authentication or authorization; protect the web endpoint and
+    restrict its backend Kubernetes identity.
+  - Read-only get/list/watch permissions can expose Secrets, ConfigMaps and pod logs; namespace UI filters
+    are not a substitute for RBAC.
+  - KubeView is not a monitoring storage backend, configuration validator or management console, and derived
+    topology does not establish complete application dependencies.
+  deployment_models:
+  - self-hosted
+  - container
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: MIT
+  commercial_offering: false
+  maturity: growing
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - visualization
+  - topology
+  - read-only
+  verified_on: '2026-10-16'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L58
   - legacy:devopstools_final.md#L512
-  needs_review: true
+  - https://github.com/benc-uk/kubeview
+  - https://github.com/benc-uk/kubeview/blob/main/readme.md
+  - https://github.com/benc-uk/kubeview/blob/main/LICENSE
+  - https://github.com/benc-uk/kubeview/releases/tag/2.2.1
+  - https://api.github.com/repos/benc-uk/kubeview
+  - https://github.com/benc-uk/kubeview/blob/main/deploy/helm/kubeview/templates/service-account.yaml
+  needs_review: false
 - id: kubevious
   name: Kubevious
   summary: Kubernetes configuration analysis.
@@ -3744,9 +3998,12 @@
   needs_review: false
 - id: popeye
   name: Popeye
-  summary: Kubernetes cluster resource sanitizer that scans live clusters for potential issues and misconfigurations.
+  summary: Read-only Kubernetes live-cluster linter for resource hygiene and configuration issues, with
+    optional metrics-server utilization checks and configurable reports.
   official_url: https://popeyecli.io
   repository_url: https://github.com/derailed/popeye
+  repository_archived: false
+  documentation_url: https://github.com/derailed/popeye/blob/master/README.md
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -3756,20 +4013,45 @@
   - site-reliability-engineer
   - kubernetes-engineer
   lifecycle_stages:
-  - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  - monitor
+  - optimize
+  use_when:
+  - Inspect deployed resources for stale references, misconfiguration and curated hygiene checks using
+    a scoped kubeconfig or service account.
+  - Tune spinach YAML exclusions and severity levels, and use optional metrics-server data to investigate
+    resource allocations.
+  avoid_when:
+  - Popeye is a read-only live-cluster linter, not kube-hunter intrusion testing, a CVE scanner or a full
+    compliance engine.
+  - Scanning needs get/list permissions, including sensitive resource types in the sample role; scope
+    permissions and protect reports.
+  - Upstream calls the tool work in progress and says it works best with Kubernetes 1.25.X; curated checks
+    and old or newer API compatibility require evaluation.
+  deployment_models:
+  - self-hosted
+  - container
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  license_spdx: Apache-2.0
+  commercial_offering: false
+  maturity: growing
+  status: active
   alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
+  tags:
+  - kubernetes
+  - live-cluster-lint
+  - resource-hygiene
+  - read-only
+  verified_on: '2026-10-16'
   sources:
   - legacy:devopstools_final.md#L521
-  needs_review: true
+  - https://github.com/derailed/popeye
+  - https://popeyecli.io
+  - https://github.com/derailed/popeye/blob/master/README.md
+  - https://github.com/derailed/popeye/blob/master/LICENSE
+  - https://github.com/derailed/popeye/releases/tag/v0.22.1
+  - https://api.github.com/repos/derailed/popeye
+  needs_review: false
 - id: r-sternetes
   name: Rūsternetes
   summary: Educational reimplementation of Kubernetes in Rust.
