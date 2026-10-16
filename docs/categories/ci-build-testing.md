@@ -560,20 +560,21 @@ Local-first framework for evaluating and regression-testing LLM applications, ag
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and day-2 operations.
+Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations, plus separately offered commercial platform capabilities.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You operate Kubernetes and want an integrated platform for application delivery, CI/CD, Helm and optional GitOps integrations with appropriate edition controls.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a Kubernetes-independent CI service or assume the Apache-2.0 repository includes every Enterprise, Freemium or hosted entitlement.
+- You cannot secure cluster, registry and SCM credentials, configure RBAC, or operate the selected integrations and platform prerequisites.
 
-[Official site](https://devtron.ai) · [Source repository](https://github.com/devtron-labs/devtron)
+[Official site](https://devtron.ai) · [Documentation](https://docs.devtron.ai/) · [Source repository](https://github.com/devtron-labs/devtron)
 
 ### docker-http-https-echo
 
@@ -655,39 +656,41 @@ Acceptance testing framework.
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-CI/CD automation built into GitHub.
+GitHub's CI/CD workflow platform with GitHub-hosted or self-hosted runners; service terms are separate from open-source runner and action licences.
 
 **Use when**
 
-- * Your code is on GitHub and you want frictionless CI/CD with a massive marketplace.
+- You host repositories on GitHub and need event-driven build, test, release and deployment workflows with hosted or self-hosted execution.
 
 **Consider alternatives when**
 
-- * You need full control over runner infrastructure or are not on GitHub.
+- You require an entirely open-source orchestration service; the MIT-licensed runner is only one component of GitHub Actions.
+- Untrusted workflows could reach privileged tokens, secrets or persistent self-hosted machines without explicit trust separation.
 
-[Source repository](https://github.com/features/actions)
+[Official site](https://github.com/features/actions) · [Documentation](https://docs.github.com/en/actions)
 
 ### GitLab CI
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-CI/CD built into GitLab.
+GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, with separately deployed GitLab Runner and distinct Community, Enterprise and service terms.
 
 **Use when**
 
-- * You use GitLab for SCM and want a single platform for code, CI/CD, and security scanning.
+- You use GitLab and need YAML-defined pipelines, runner-executed jobs, release/deployment workflows and edition-appropriate platform controls.
 
 **Consider alternatives when**
 
-- * You don't use GitLab, or you need a CI-only tool without the full platform.
+- You need a standalone CI service independent of the GitLab platform or assume every paid GitLab.com feature is covered by an OSS licence.
+- Untrusted pipeline code or shared runners can access sensitive variables or deployment infrastructure without protected execution and permissions.
 
-[Official site](https://docs.gitlab.com/ee/ci)
+[Official site](https://docs.gitlab.com/ci/) · [Documentation](https://docs.gitlab.com/ci/)
 
 ### gitmoji
 
@@ -713,19 +716,20 @@ Standardized emoji guide for commit messages.
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open-source CI/CD server.
+Apache-2.0 continuous-delivery server with agents, pipeline dependencies, materials and value-stream visibility; plugins and support terms remain separate.
 
 **Use when**
 
-- * You need advanced pipeline modeling (fan-in/fan-out, value stream maps).
+- You need a self-hosted continuous-delivery server to model dependent pipelines, material provenance and fan-in/fan-out delivery workflows.
 
 **Consider alternatives when**
 
-- * You want a large plugin ecosystem or cloud-native integrations.
+- You need only a local workflow runner or cannot operate and secure the GoCD server, agents and required integrations.
+- You rely on security maintenance for old releases; the project actively fixes security issues on its most recent release.
 
-[Official site](https://www.gocd.org) · [Source repository](https://github.com/gocd/gocd)
+[Official site](https://www.gocd.org) · [Documentation](https://docs.gocd.org/current/) · [Source repository](https://github.com/gocd/gocd)
 
 ### Google Cloud Build
 
@@ -803,43 +807,45 @@ Behavior-driven JavaScript testing framework for browser and Node.js application
 
 [Official site](https://jasmine.github.io/) · [Source repository](https://github.com/jasmine/jasmine)
 
+### JayeX (formerly Jenkins X)
+
+**Categories:** CI, build and testing<br>
+**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
+**Model:** Oss<br>
+**Status:** Active
+
+JayeX, formerly Jenkins X, is a Kubernetes CI/CD and GitOps tool suite using Tekton and Lighthouse, with the Apache-2.0 jx CLI and separately maintained components.
+
+**Use when**
+
+- You operate Kubernetes and want GitOps-managed environments, Tekton pipelines and pull-request preview/promotion workflows with the JayeX tool suite.
+
+**Consider alternatives when**
+
+- You need a Jenkins controller/plugin replacement with identical behaviour, or cannot operate Kubernetes, SCM webhooks, registry and secret-management integrations.
+- You depend on legacy Jenkins integrations, which the project declares deprecated, or assume all providers and optional components share one support policy.
+
+[Official site](https://jayex.io/) · [Documentation](https://jayex.io/v3/about/) · [Source repository](https://github.com/jenkins-x/jx)
+
 ### Jenkins
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Automation server for CI/CD.
-
-**Use when**
-
-- * You need maximum flexibility with 1,800+ plugins and full self-hosted control.
-
-**Consider alternatives when**
-
-- * You don't want to maintain infrastructure, manage plugin compatibility, or deal with Groovy DSL complexity.
-
-[Official site](https://www.jenkins.io) · [Source repository](https://github.com/jenkinsci/jenkins)
-
-### Jenkins X
-
-**Categories:** CI, build and testing<br>
-**Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
-
-Kubernetes-native CI/CD.
+MIT-licensed Jenkins automation server for controller/agent CI/CD pipelines, with independently licensed plugins and operator-managed execution infrastructure.
 
 **Use when**
 
-- * You want opinionated, GitOps-driven CI/CD on Kubernetes with automated environments.
+- You need an extensible self-hosted automation controller, agents and pipeline/plugin integrations and can maintain that infrastructure.
 
 **Consider alternatives when**
 
-- * You don't run Kubernetes or want fine-grained pipeline control; community activity has slowed.
+- You cannot maintain controller, agent and plugin updates, compatibility and credentials, or require Jenkins X/JayeX's Kubernetes GitOps architecture.
+- Untrusted builds would run on the controller or share credentials and agent hosts without suitable isolation.
 
-[Official site](https://jenkins-x.io) · [Source repository](https://github.com/jenkins-x/jx)
+[Official site](https://www.jenkins.io) · [Documentation](https://www.jenkins.io/doc/) · [Source repository](https://github.com/jenkinsci/jenkins)
 
 ### JUnit
 
@@ -1018,38 +1024,40 @@ Java mocking framework for isolating collaborators in automated unit tests.
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Run GitHub Actions locally.
+MIT-licensed community CLI for running selected GitHub Actions workflows locally, commonly with Docker, with documented differences from GitHub's official runners.
 
 **Use when**
 
-- * You want to test and debug GitHub Actions workflows locally before pushing.
+- You need local feedback on GitHub Actions workflows and can provide the required container engine, runner images and explicitly scoped secrets.
 
 **Consider alternatives when**
 
-- * You don't use GitHub Actions, or your workflows depend heavily on GitHub-hosted runner features.
+- You require complete GitHub-hosted runner compatibility, enforcement of every job permission/timeout/environment control, or native GitHub OIDC behaviour.
+- Untrusted workflows or actions would receive real credentials, host execution privileges or access to the Docker socket.
 
-[Official site](https://nektosact.com) · [Source repository](https://github.com/nektos/act)
+[Official site](https://nektosact.com) · [Documentation](https://nektosact.com/) · [Source repository](https://github.com/nektos/act)
 
 ### OneDev
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Self-hosted Git server with integrated CI/CD, issue tracking, packages, code search, and AI-assisted workflows.
+Self-hosted Git and CI/CD platform with MIT-licensed Community software, issue/package management and a separately licensed commercial Enterprise module.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a self-hosted Git platform with integrated CI/CD, issue management and package registries, using an appropriate server, agent or Kubernetes job executor.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You assume the MIT Community grant includes the separately licensed Enterprise module or every clustering, auditing and support feature.
+- Untrusted jobs can select shell executors or production clusters without executor applicability, secret authorization and access controls.
 
-[Official site](https://onedev.io) · [Source repository](https://github.com/theonedev/onedev)
+[Official site](https://onedev.io) · [Documentation](https://docs.onedev.io/) · [Source repository](https://code.onedev.io/onedev/server)
 
 ### OpenDev
 
@@ -1321,20 +1329,21 @@ Enforce semantic PR titles in GitHub Actions.
 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-CI/CD platform for software projects.
+Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
 
 **Use when**
 
-- * You want fast, parallelized cloud CI with a clean UI.
+- You need Semaphore's YAML/visual CI/CD pipelines and can choose hosted Cloud, self-hosted Community or Enterprise and the appropriate job infrastructure.
 
 **Consider alternatives when**
 
-- * You need heavy on-prem or self-hosted capabilities.
+- You assume the archived semaphoreci/semaphore repository means the hosted service ended, or that Apache-2.0 licenses Cloud and the Enterprise ee/ code.
+- You require identical hosted/self-hosted agent features or cannot control agent registration, job isolation and credentials under the selected edition.
 
-[Official site](https://semaphoreci.com)
+[Official site](https://semaphore.io/) · [Documentation](https://docs.semaphore.io/) · [Source repository](https://github.com/semaphoreio/semaphore)
 
 ### ServerSpec
 
@@ -1626,19 +1635,20 @@ JavaScript module bundler with code splitting and a plugin-based build pipeline.
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-CI/CD platform for Git.
+Apache-2.0 self-hosted CI/CD engine with a server and agents, forge integration and backend-dependent Docker, Kubernetes or local execution.
 
 **Use when**
 
-- * You want a lightweight, community-driven Drone fork with active development.
+- You want a community-maintained self-hosted CI/CD server with forge integration and pipeline execution through a documented agent backend.
 
 **Consider alternatives when**
 
-- * You need enterprise support or a large commercial ecosystem.
+- You need identical isolation from every backend; local execution runs on the agent host and privileged container features extend access.
+- Untrusted contributors can access deployment secrets, trusted clone plugins or privileged repositories without approval and scope controls.
 
-[Official site](https://woodpecker-ci.org) · [Source repository](https://github.com/woodpecker-ci/woodpecker)
+[Official site](https://woodpecker-ci.org) · [Documentation](https://woodpecker-ci.org/docs/intro) · [Source repository](https://github.com/woodpecker-ci/woodpecker)
 
 ### Xray
 

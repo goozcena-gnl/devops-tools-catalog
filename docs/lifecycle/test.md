@@ -106,7 +106,7 @@
 - [detect-secrets](https://github.com/Yelp/detect-secrets) — Secrets detection with baseline support (reduce false positives).
 - [Development Containers](https://containers.dev) — Open specification for defining reproducible, containerized development environments (devcontainers).
 - [DevPod](https://devpod.sh) — Open-source dev environments that can run locally or on remote providers.
-- [Devtron](https://devtron.ai) — AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and day-2 operations.
+- [Devtron](https://devtron.ai) — Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations, plus separately offered commercial platform capabilities.
 - [diffyml](https://szhekpisov.github.io/diffyml/) — Command-line tool that compares YAML documents structurally instead of as line-oriented text.
 - [DigiCert](https://www.digicert.com/) — Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing, device trust, and related product families.
 - [direnv](https://direnv.net/) — Shell extension that loads and unloads directory-specific environment variables.
@@ -137,13 +137,13 @@
 - [Ghostty](https://ghostty.org) — Fast, cross-platform GPU-accelerated terminal emulator with native desktop integration.
 - [Ghostwriter](https://www.ghostwriter.wiki/home) — Collaborative platform for managing security assessments, findings, evidence, and reports.
 - [Gibson](https://github.com/HackingLZ/gibson) — Network monitoring and threat-hunting tool that maps processes to connections, flags beaconing, and helps generate firewall rules.
-- [GitHub Actions](https://github.com/features/actions) — CI/CD automation built into GitHub.
+- [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD workflow platform with GitHub-hosted or self-hosted runners; service terms are separate from open-source runner and action licences.
 - [GitHub Codespaces](https://github.com/features/codespaces) — Hosted cloud development environments integrated with GitHub.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
-- [GitLab CI](https://docs.gitlab.com/ee/ci) — CI/CD built into GitLab.
+- [GitLab CI](https://docs.gitlab.com/ci/) — GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, with separately deployed GitLab Runner and distinct Community, Enterprise and service terms.
 - [Gitleaks](https://gitleaks.io) — MIT-licensed CLI detecting secrets in Git history, files and standard input for local, pre-commit and CI use; upstream is feature-complete with future releases limited to security patches, distinct from hosted secret-scanning services.
 - [gitmoji](https://gitmoji.dev) — Standardized emoji guide for commit messages.
-- [GoCD](https://www.gocd.org) — Open-source CI/CD server.
+- [GoCD](https://www.gocd.org) — Apache-2.0 continuous-delivery server with agents, pipeline dependencies, materials and value-stream visibility; plugins and support terms remain separate.
 - [Godcoder](https://github.com/eli-labz/Godcoder) — Local-first desktop coding agent that keeps your code on your machine.
 - [golangci-lint](https://golangci-lint.run) — Go lint aggregator (fast, many linters).
 - [Google Cloud Build](https://cloud.google.com/build) — Managed build service that executes containerized build steps on Google Cloud infrastructure.
@@ -173,8 +173,8 @@
 - [ISMS Builder](https://www.isms-builder.com) — Self-hosted information security management system builder for ISO 27001, NIS2, and GDPR compliance.
 - [JARVIS OS](https://www.jarvisoslinux.org/) — Experimental AI-native Linux distribution that integrates an LLM daemon with a custom kernel interface for security research.
 - [Jasmine](https://jasmine.github.io/) — Behavior-driven JavaScript testing framework for browser and Node.js applications.
-- [Jenkins](https://www.jenkins.io) — Automation server for CI/CD.
-- [Jenkins X](https://jenkins-x.io) — Kubernetes-native CI/CD.
+- [JayeX (formerly Jenkins X)](https://jayex.io/) — JayeX, formerly Jenkins X, is a Kubernetes CI/CD and GitOps tool suite using Tekton and Lighthouse, with the Apache-2.0 jx CLI and separately maintained components.
+- [Jenkins](https://www.jenkins.io) — MIT-licensed Jenkins automation server for controller/agent CI/CD pipelines, with independently licensed plugins and operator-managed execution infrastructure.
 - [John the Ripper](https://www.openwall.com/john/) — Password security auditing and recovery tool supporting many hash and encrypted-file formats.
 - [JSON Crack](https://jsoncrack.com/) — Open-source browser editor for visualizing, editing, converting, querying, and validating structured data.
 - [JUnit](https://junit.org/) — Testing framework for Java and other JVM languages.
@@ -221,7 +221,7 @@
 - [ModSecurity](https://modsecurity.org) — Web Application Firewall (WAF) engine.
 - [mypy](https://mypy-lang.org) — Static type checker for Python.
 - [NAXSI (WAF for NGINX)](https://github.com/wargio/naxsi) — Open source WAF module for NGINX (NAXSI).
-- [Nektos Act](https://nektosact.com) — Run GitHub Actions locally.
+- [Nektos Act](https://nektosact.com) — MIT-licensed community CLI for running selected GitHub Actions workflows locally, commonly with Docker, with documented differences from GitHub's official runners.
 - [NetBird](https://netbird.io/) — Open-core WireGuard-based zero-trust networking platform with community self-hosting, managed cloud, and licensed enterprise options.
 - [NetExec](https://www.netexec.wiki/) — Network service assessment framework for authorized Windows and directory security operations.
 - [NextDNS](https://nextdns.io/) — Managed recursive DNS service with policy-based filtering, analytics, and encrypted DNS endpoints.
@@ -238,7 +238,7 @@
 - [Omarchy](https://omarchy.org) — Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.
 - [Omni](https://www.siderolabs.com/omni) — Kubernetes cluster lifecycle management platform by Sidero Labs; BSL/source-available + SaaS.
 - [Ona (formerly Gitpod)](https://github.com/gitpod-io) — Cloud-based development environments.
-- [OneDev](https://onedev.io) — Self-hosted Git server with integrated CI/CD, issue tracking, packages, code search, and AI-assisted workflows.
+- [OneDev](https://onedev.io) — Self-hosted Git and CI/CD platform with MIT-licensed Community software, issue/package management and a separately licensed commercial Enterprise module.
 - [Open Interpreter](https://openinterpreter.com) — Run AI that can execute tasks locally.
 - [Open Policy Agent](https://www.openpolicyagent.org) — Policy-based control for cloud-native environments.
 - [open-appsec](https://www.openappsec.io) — ML-based application & API security (WAF/RASP style).
@@ -299,7 +299,7 @@
 - [Selenium](https://www.selenium.dev) — Browser automation for testing web applications.
 - [SELinux Project](https://github.com/selinuxproject) — Security-Enhanced Linux project.
 - [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) — Enforce semantic PR titles in GitHub Actions.
-- [Semaphore CI](https://semaphoreci.com) — CI/CD platform for software projects.
+- [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
 - [Semgrep](https://semgrep.dev) — Application-security product family combining an LGPL analysis engine, separately licensed community rules, and a commercial hosted platform for SAST, SCA, and secrets scanning.
 - [ServerSpec](https://serverspec.org) — Test server configurations using RSpec.
 - [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) — Shell formatter (`shfmt`).
@@ -372,7 +372,7 @@
 - [Wine](https://www.winehq.org) — Run Windows applications on Unix-like OSes.
 - [WireGuard](https://www.wireguard.com) — Fast, modern, and secure VPN tunneling protocol.
 - [Wiz](https://www.wiz.io) — Cloud security platform.
-- [Woodpecker CI](https://woodpecker-ci.org) — CI/CD platform for Git.
+- [Woodpecker CI](https://woodpecker-ci.org) — Apache-2.0 self-hosted CI/CD engine with a server and agents, forge integration and backend-dependent Docker, Kubernetes or local execution.
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 - [xh](https://github.com/ducaale/xh) — Command-line HTTP client with concise request syntax and formatted responses.
 - [Xray](https://www.getxray.app) — Test management for Jira (manual + automated tests).

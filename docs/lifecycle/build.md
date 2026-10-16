@@ -73,7 +73,7 @@
 - [Deep Agents](https://github.com/langchain-ai/deepagents) — Agent harness with tool execution, context management, persistence, and sandbox integration built on LangGraph.
 - [DeepSpeed](https://www.deepspeed.ai) — Deep learning optimization library for large-scale model training and inference.
 - [Dependency-Track](https://dependencytrack.org) — OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
-- [Devtron](https://devtron.ai) — AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and day-2 operations.
+- [Devtron](https://devtron.ai) — Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations, plus separately offered commercial platform capabilities.
 - [dist (cargo-dist)](https://github.com/axodotdev/cargo-dist) — Release automation for building and distributing application binaries and installers.
 - [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal container images for secure deployments.
 - [dive](https://github.com/wagoodman/dive) — Command-line and terminal user interface for inspecting image layers and their contribution to container image contents.
@@ -99,14 +99,14 @@
 - [genai-agentos](https://github.com/genai-works-org/genai-agentos) — Framework for building, running, and managing multi-agent AI workflows.
 - [ggshield](https://github.com/GitGuardian/ggshield) — GitGuardian CLI for secret scanning in local development, hooks, and CI.
 - [git push no-mistakes](https://kunchenguid.github.io/no-mistakes/) — Local Git push gate that validates changes in an isolated worktree before publishing a branch and opening a pull request.
-- [GitHub Actions](https://github.com/features/actions) — CI/CD automation built into GitHub.
+- [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD workflow platform with GitHub-hosted or self-hosted runners; service terms are separate from open-source runner and action licences.
 - [GitHub Copilot](https://github.com/features/copilot) — AI-powered code completion assistant.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server) — GitHub's MCP server implementation.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
-- [GitLab CI](https://docs.gitlab.com/ee/ci) — CI/CD built into GitLab.
+- [GitLab CI](https://docs.gitlab.com/ci/) — GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, with separately deployed GitLab Runner and distinct Community, Enterprise and service terms.
 - [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab MCP server documentation.
 - [gitmoji](https://gitmoji.dev) — Standardized emoji guide for commit messages.
-- [GoCD](https://www.gocd.org) — Open-source CI/CD server.
+- [GoCD](https://www.gocd.org) — Apache-2.0 continuous-delivery server with agents, pipeline dependencies, materials and value-stream visibility; plugins and support terms remain separate.
 - [Google Artifact Registry](https://cloud.google.com/artifact-registry) — Google Cloud's unified repository for container images and language packages.
 - [Google Cloud Build](https://cloud.google.com/build) — Managed build service that executes containerized build steps on Google Cloud infrastructure.
 - [Google Cloud Run](https://cloud.google.com/run) — Fully managed Google Cloud application platform for running services, jobs, worker pools, and functions from code or containers.
@@ -124,8 +124,8 @@
 - [Husky](https://typicode.github.io/husky) — Git hooks for Node.js projects (commonly paired with lint-staged).
 - [Infracost](https://www.infracost.io) — Cost estimates for IaC projects.
 - [Jasmine](https://jasmine.github.io/) — Behavior-driven JavaScript testing framework for browser and Node.js applications.
-- [Jenkins](https://www.jenkins.io) — Automation server for CI/CD.
-- [Jenkins X](https://jenkins-x.io) — Kubernetes-native CI/CD.
+- [JayeX (formerly Jenkins X)](https://jayex.io/) — JayeX, formerly Jenkins X, is a Kubernetes CI/CD and GitOps tool suite using Tekton and Lighthouse, with the Apache-2.0 jx CLI and separately maintained components.
+- [Jenkins](https://www.jenkins.io) — MIT-licensed Jenkins automation server for controller/agent CI/CD pipelines, with independently licensed plugins and operator-managed execution infrastructure.
 - [JFrog Artifactory](https://jfrog.com/artifactory) — Universal artifact repository manager.
 - [JFrog Connect](https://jfrog.com/connect/) — Commercial IoT and edge-device management component of the JFrog Platform for fleet monitoring and OTA software delivery.
 - [JFrog Distribution](https://jfrog.com/distribution/) — Commercial JFrog product for signing and distributing immutable release bundles to remote and edge locations.
@@ -176,7 +176,7 @@
 - [Mockito](https://site.mockito.org/) — Java mocking framework for isolating collaborators in automated unit tests.
 - [Model Express](https://github.com/ai-dynamo/modelexpress) — Rust service that stages model data near inference systems to reduce startup time.
 - [Nautobot](https://docs.nautobot.com/) — Network source-of-truth and automation platform with extensible data models and application plugins.
-- [Nektos Act](https://nektosact.com) — Run GitHub Actions locally.
+- [Nektos Act](https://nektosact.com) — MIT-licensed community CLI for running selected GitHub Actions workflows locally, commonly with Docker, with documented differences from GitHub's official runners.
 - [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) — Sonatype artifact repository family with open-source Core, separately licensed Community and Professional editions, and managed Cloud hosting.
 - [Nix](https://nixos.org) — Reproducible build and package manager.
 - [Node.js](https://nodejs.org/en) — Cross-platform JavaScript runtime used to build command-line tools, services, and automation.
@@ -185,7 +185,7 @@
 - [Ocelot](https://ocelot.readthedocs.io/en/latest/) — API gateway middleware for .NET services with routing and request aggregation.
 - [Ollama](https://ollama.com) — Local LLM runtime and model manager; open-source core (model licenses vary).
 - [OmniRoute](https://omniroute.online/) — Self-hosted gateway that presents multiple AI model providers behind one routing and fallback endpoint.
-- [OneDev](https://onedev.io) — Self-hosted Git server with integrated CI/CD, issue tracking, packages, code search, and AI-assisted workflows.
+- [OneDev](https://onedev.io) — Self-hosted Git and CI/CD platform with MIT-licensed Community software, issue/package management and a separately licensed commercial Enterprise module.
 - [Open WebUI](https://openwebui.com) — Self-hosted web UI for running and managing local AI model backends (e.g., Ollama).
 - [OpenDepot](https://tonedefdev.github.io/opendepot/) — Kubernetes-native registry for publishing and consuming OpenTofu and Terraform providers and modules.
 - [OpenDev](https://opendev.org/) — Public collaborative infrastructure service providing Git hosting, code review, CI, and related services for open-source projects.
@@ -224,7 +224,7 @@
 - [Score](https://score.dev) — Score is a platform-agnostic container workload specification expressed in score.yaml; separate implementations such as score-compose and score-k8s translate it into platform configuration. The specification repository is not a Kubernetes deployment platform.
 - [Selenium](https://www.selenium.dev) — Browser automation for testing web applications.
 - [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) — Enforce semantic PR titles in GitHub Actions.
-- [Semaphore CI](https://semaphoreci.com) — CI/CD platform for software projects.
+- [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
 - [ServerSpec](https://serverspec.org) — Test server configurations using RSpec.
 - [Shipwright](https://shipwright.io) — Framework for building container images on Kubernetes.
 - [Sim](https://www.sim.ai) — AI workspace for building, deploying, and monitoring agentic workflows.
@@ -263,7 +263,7 @@
 - [VoltAgent](https://voltagent.dev) — Open-source TypeScript framework for building AI agents.
 - [webpack](https://webpack.js.org/) — JavaScript module bundler with code splitting and a plugin-based build pipeline.
 - [werf](https://werf.io) — GitOps tool for building and deploying containers.
-- [Woodpecker CI](https://woodpecker-ci.org) — CI/CD platform for Git.
+- [Woodpecker CI](https://woodpecker-ci.org) — Apache-2.0 self-hosted CI/CD engine with a server and agents, forge integration and backend-dependent Docker, Kubernetes or local execution.
 - [Xray](https://www.getxray.app) — Test management for Jira (manual + automated tests).
 - [Yarn](https://yarnpkg.com/) — JavaScript package manager with lockfiles, workspaces, and configurable dependency-installation modes.
 

@@ -53,7 +53,7 @@
 | [Dagger](https://dagger.io) | CI, build and testing | open-core | active |
 | [DeepEval](https://deepeval.com/) | MLOps, LLMOps and AI infrastructure, CI, build and testing | open-core | active |
 | [Dependency-Track](https://dependencytrack.org) | Software supply-chain security, Application and cloud security | oss | active |
-| [Devtron](https://devtron.ai) | CI, build and testing | oss | needs-review |
+| [Devtron](https://devtron.ai) | CI, build and testing | open-core | active |
 | [dist (cargo-dist)](https://github.com/axodotdev/cargo-dist) | CD, GitOps, release and promotion | oss | active |
 | [dive](https://github.com/wagoodman/dive) | Containers and image tooling | oss | active |
 | [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | open-core | active |
@@ -73,14 +73,14 @@
 | [Gitea](https://about.gitea.com/) | Source control and repository management | oss | active |
 | [GitGuardian](https://www.gitguardian.com/) | Software supply-chain security | commercial | active |
 | [GitHub](https://github.com) | Source control and repository management | commercial | active |
-| [GitHub Actions](https://github.com/features/actions) | CI, build and testing | unknown | needs-review |
+| [GitHub Actions](https://github.com/features/actions) | CI, build and testing | commercial | active |
 | [GitHub CLI](https://cli.github.com) | Source control and repository management, Developer experience and local environments | oss | active |
 | [GitLab](https://about.gitlab.com) | Source control and repository management | open-core | active |
-| [GitLab CI](https://docs.gitlab.com/ee/ci) | CI, build and testing | open-core | needs-review |
+| [GitLab CI](https://docs.gitlab.com/ci/) | CI, build and testing | open-core | active |
 | [GitLab University](https://university.gitlab.com) | Source control and repository management | documentation | needs-review |
 | [gitmoji](https://gitmoji.dev) | CI, build and testing | documentation | needs-review |
 | [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) | CD, GitOps, release and promotion | oss | needs-review |
-| [GoCD](https://www.gocd.org) | CI, build and testing | oss | needs-review |
+| [GoCD](https://www.gocd.org) | CI, build and testing | oss | active |
 | [Google Artifact Registry](https://cloud.google.com/artifact-registry) | Artifact and package management | commercial | active |
 | [Google Cloud Build](https://cloud.google.com/build) | CI, build and testing | commercial | active |
 | [Harbor](https://goharbor.io) | Artifact and package management | oss | needs-review |
@@ -89,8 +89,8 @@
 | [Hurl](https://hurl.dev/) | CI, build and testing | oss | active |
 | [Husky](https://typicode.github.io/husky) | Software supply-chain security | oss | needs-review |
 | [Jasmine](https://jasmine.github.io/) | CI, build and testing | oss | active |
-| [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | needs-review |
-| [Jenkins X](https://jenkins-x.io) | CI, build and testing | oss | needs-review |
+| [JayeX (formerly Jenkins X)](https://jayex.io/) | CI, build and testing | oss | active |
+| [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | active |
 | [JFrog Artifactory](https://jfrog.com/artifactory) | Artifact and package management | open-core | needs-review |
 | [JFrog Connect](https://jfrog.com/connect/) | Artifact and package management | commercial | active |
 | [JFrog Distribution](https://jfrog.com/distribution/) | Artifact and package management | commercial | active |
@@ -113,12 +113,12 @@
 | [Mantis](https://getmantis.ai) | CI, build and testing | oss | needs-review |
 | [Mergify](https://mergify.com) | CI, build and testing, Source control and repository management | commercial | active |
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
-| [Nektos Act](https://nektosact.com) | CI, build and testing | oss | needs-review |
+| [Nektos Act](https://nektosact.com) | CI, build and testing | oss | active |
 | [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |
 | [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) | Artifact and package management | open-core | active |
 | [Octopus Deploy](https://octopus.com) | CD, GitOps, release and promotion | commercial | active |
 | [Oh My Git!](https://ohmygit.org) | Source control and repository management | documentation | needs-review |
-| [OneDev](https://onedev.io) | CI, build and testing | oss | needs-review |
+| [OneDev](https://onedev.io) | CI, build and testing | open-core | active |
 | [OpenDev](https://opendev.org/) | Source control and repository management, CI, build and testing | free-saas | active |
 | [OpenFeature](https://openfeature.dev) | CD, GitOps, release and promotion | oss | active |
 | [ORAS](https://oras.land) | Artifact and package management | oss | needs-review |
@@ -143,7 +143,7 @@
 | [Schemathesis](https://schemathesis.readthedocs.io/en/stable/) | CI, build and testing | oss | active |
 | [Selenium](https://www.selenium.dev) | CI, build and testing | oss | needs-review |
 | [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | needs-review |
-| [Semaphore CI](https://semaphoreci.com) | CI, build and testing | unknown | needs-review |
+| [Semaphore CI](https://semaphore.io/) | CI, build and testing | open-core | active |
 | [ServerSpec](https://serverspec.org) | CI, build and testing | oss | needs-review |
 | [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | Software supply-chain security | oss | needs-review |
 | [Spinnaker](https://spinnaker.io) | CD, GitOps, release and promotion | oss | active |
@@ -168,7 +168,7 @@
 | [Waypoint](https://developer.hashicorp.com/waypoint) | CD, GitOps, release and promotion | source-available | needs-review |
 | [Weaveworks GitOps](https://docs.gitops.weaveworks.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [webpack](https://webpack.js.org/) | CI, build and testing | oss | active |
-| [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | needs-review |
+| [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | active |
 | [Xray](https://www.getxray.app) | CI, build and testing | unknown | needs-review |
 | [Yarn](https://yarnpkg.com/) | Artifact and package management | oss | active |
 | [Yoke](https://yokecd.github.io/) | CD, GitOps, release and promotion | oss | active |
