@@ -1151,19 +1151,22 @@ Kubernetes lifecycle manager for creating and upgrading production clusters, pri
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-CLI for discovering unused and orphaned Kubernetes resources.
+Kubernetes resource-reference analyzer that reports potentially unused objects and optionally deletes selected findings; distinct from the separately offered KorPro platform.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Investigate potentially unused resources with namespace/label/age filters and --show-reason before deciding on cleanup.
+- Export table, JSON, YAML or Prometheus results through the CLI or documented in-cluster deployment/CronJob.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- A detection is not proof that deletion is safe: dynamic ConfigMap/Secret consumers and relationships outside supported rules can produce false positives.
+- Kor can mutate the cluster with --delete; --no-interactive bypasses deletion prompts. Review findings, labels, owner references and RBAC before enabling cleanup.
+- Read/list/watch visibility must cover the selected resources; deletion needs separate write permissions. KorPro pricing and service terms do not change the CLI's MIT grant.
 
-[Source repository](https://github.com/yonahd/kor)
+[Official site](https://github.com/yonahd/kor) · [Documentation](https://github.com/yonahd/kor/blob/main/README.md) · [Source repository](https://github.com/yonahd/kor)
 
 ### krew
 
@@ -1244,40 +1247,45 @@ Aqua Security tool that checks Kubernetes node configuration against selected CI
 ### kube-hunter
 
 **Categories:** Kubernetes distributions and operations<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, DevSecOps Engineer<br>
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Kubernetes security testing tool.
+Legacy Aqua Kubernetes security-assessment tool with passive discovery and optional active exploitation; upstream states it is no longer under active development and recommends Trivy.
 
 **Use when**
 
-- You want to discover exploitable vulnerabilities from an attacker's perspective.
+- Study historical Kubernetes attack-surface findings or conduct explicitly authorized, isolated assessments with a separately evaluated legacy tool.
 
 **Consider alternatives when**
 
-- You need continuous runtime protection (use Falco/Kubescape instead).
+- Current supported Kubernetes versions and ongoing support are not established; upstream states no active development and recommends Trivy. Non-archived repository status is not evidence of active support.
+- Only assess clusters and networks you own or are explicitly authorized to test. Passive discovery still sends network probes; --active can exploit weaknesses and change cluster state harmfully.
+- This is distinct from Popeye's read-only hygiene linting, Kubescape posture assessment and Falco runtime detection; it is not continuous runtime protection.
+- Historical Aqua reporting containers include a closed-source plugin under separate terms; that plugin and current hosted-report availability are not established by the repository's Apache-2.0 grant.
 
-[Official site](https://aquasecurity.github.io/kube-hunter) · [Source repository](https://github.com/aquasecurity/kube-hunter)
+[Official site](https://aquasecurity.github.io/kube-hunter) · [Documentation](https://github.com/aquasecurity/kube-hunter/blob/main/README.md) · [Source repository](https://github.com/aquasecurity/kube-hunter)
 
 ### kube-score
 
 **Categories:** Kubernetes distributions and operations<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, DevSecOps Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Static analysis tool for Kubernetes YAML manifests with best-practice recommendations.
+Static Kubernetes object analysis that recommends reliability and security improvements for manifests, including probes, resource limits and security contexts.
 
 **Use when**
 
-- You want opinionated best-practice scoring during development.
+- Score rendered Helm, Kustomize or YAML objects in CI and fail at the configured finding severity.
+- Analyze related objects from the same namespace together to assess selectors, policies and workload recommendations.
 
 **Consider alternatives when**
 
-- You need customizable policy rules (use Kyverno/OPA instead).
+- Recommendations are curated static checks, not kubeconform schema validation, Kubesec's risk-point model or live-cluster vulnerability hunting.
+- Select the relevant Kubernetes version and review optional checks and ignore annotations; a passing score does not establish compliance or runtime safety.
 
-[Official site](https://kube-score.com) · [Source repository](https://github.com/zegl/kube-score)
+[Official site](https://kube-score.com) · [Documentation](https://github.com/zegl/kube-score/blob/master/README.md) · [Source repository](https://github.com/zegl/kube-score)
 
 ### kubeadm
 
@@ -1399,19 +1407,22 @@ Command-line utility for merging, switching, and managing kubeconfig files and c
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Fast Kubernetes manifest schema validation (offline schema support).
+Kubernetes manifest validator that checks JSON schemas locally or in CI, with configurable schemas for custom resources and offline operation.
 
 **Use when**
 
-- You need fast CI validation of manifests against Kubernetes schemas (including CRDs).
+- Validate rendered Kubernetes manifests against a selected Kubernetes schema version before deployment.
+- Supply local schema files or explicitly configured CRD schema registries for custom-resource and offline validation.
 
 **Consider alternatives when**
 
-- You only need runtime admission control.
+- Schema validation does not cover controller-side semantic validation, admission policy or security best-practice scoring; use server-side dry runs and complementary checks.
+- Default schemas are downloaded remotely; offline validation requires all required schemas and references to be available locally.
+- Custom resources are not in the default built-in schema set, and ignored missing schemas are skipped rather than validated; the Go library interface is not considered stable.
 
-[Source repository](https://github.com/yannh/kubeconform)
+[Official site](https://github.com/yannh/kubeconform) · [Documentation](https://github.com/yannh/kubeconform/blob/master/Readme.md) · [Source repository](https://github.com/yannh/kubeconform)
 
 ### kubectl
 
@@ -1454,21 +1465,25 @@ Cheat sheet for `kubectl` commands.
 ### kubectl-ai
 
 **Categories:** Kubernetes distributions and operations<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, DevSecOps Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-AI-powered kubectl plugin.
+GoogleCloudPlatform-hosted, community kubectl AI assistant that can execute kubectl and shell tools using configured Kubernetes credentials and local or hosted model backends.
 
 **Use when**
 
-- You want natural-language-to-kubectl translation for exploration.
+- Explore cluster state and propose or execute reviewed Kubernetes operations through documented model backends and configured tools.
+- Choose an appropriate local Ollama/llama.cpp endpoint or hosted provider, and explicitly assess cluster data, tool permissions and model costs.
 
 **Consider alternatives when**
 
-- You need deterministic, auditable commands in production workflows.
+- This is not an officially supported Google product. AI suggestions and confirmation prompts do not grant permission to mutate a cluster or make arbitrary commands safe.
+- Default permission checks request approval for operations classified as modifying or unknown; --skip-permissions can bypass them. Keep least-privilege Kubernetes credentials and host controls independent.
+- Prompts, supplied files and tool results can enter model context, traces or persisted sessions; hosted APIs have separate data handling and billing, and a configured local provider endpoint can itself be remote.
+- Built-in bash, custom/MCP tools and MCP serving expand access beyond kubectl; HTTP MCP is unauthenticated by default unless optional OAuth is configured. Protect endpoints and do not treat command classification as a security sandbox.
 
-[Source repository](https://github.com/GoogleCloudPlatform/kubectl-ai)
+[Official site](https://github.com/GoogleCloudPlatform/kubectl-ai) · [Documentation](https://github.com/GoogleCloudPlatform/kubectl-ai/blob/main/README.md) · [Source repository](https://github.com/GoogleCloudPlatform/kubectl-ai)
 
 ### kubectl-browse-pvc
 
@@ -1589,19 +1604,21 @@ Read-only kubectl plugin for querying and streaming logs across multiple kubecon
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Switch contexts/namespaces quickly.
+Companion kubectx and kubens CLIs for switching kubectl contexts and namespaces, with shell completion, optional fzf selection and context-shell conveniences.
 
 **Use when**
 
-- You juggle multiple clusters/namespaces daily.
+- Switch among existing kubeconfig contexts and namespaces while deploying or operating clusters.
+- Install the companion tools through documented package managers, release binaries or Krew, with optional shell completion and fzf.
 
 **Consider alternatives when**
 
-- You work with a single cluster and namespace.
+- Switching contexts or namespaces does not authenticate a user, grant permissions or enforce Kubernetes RBAC; kubeconfig credentials and API-server authorization remain separate.
+- The optional kubectx -r shell is a client-side convenience that blocks kubectl edits, not a tamper-resistant authorization boundary; other tools and credentials still require controls.
 
-[Source repository](https://github.com/ahmetb/kubectx)
+[Official site](https://github.com/ahmetb/kubectx) · [Documentation](https://github.com/ahmetb/kubectx/blob/master/README.md) · [Source repository](https://github.com/ahmetb/kubectx)
 
 ### Kubedock
 
@@ -1781,19 +1798,22 @@ Python-based automation framework for deploying and maintaining Kubernetes clust
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes network connectivity validation and troubleshooting tool.
+Kubernetes connectivity diagnostic utility that creates test workloads for internal/external DNS, inter-node HTTP and bandwidth checks and displays results in a web UI.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Diagnose specific DNS, pod connectivity, node-network attributes and iperf bandwidth paths in an explicitly permitted test scope.
+- Use the documented kubeconfig/namespace/configuration inputs, review created workload images and permissions, and protect the results UI.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- This is not read-only: it creates namespaces, pods, DaemonSets and Jobs, uses pods/exec and reads logs, then deletes test resources.
+- NIC probes use host networking, and cleanup includes kubeplumber=true labeled resources/namespaces; use a dedicated scope and check admission and cleanup permissions.
+- The upstream E2E recipe exercises K3d/K3s, not every CNI or managed-cluster restriction. Point-in-time DNS/HTTP/iperf checks do not prove general network security or continuous availability.
 
-[Source repository](https://github.com/David-VTUK/KubePlumber)
+[Official site](https://github.com/David-VTUK/KubePlumber) · [Documentation](https://github.com/David-VTUK/KubePlumber/blob/main/README.md) · [Source repository](https://github.com/David-VTUK/KubePlumber)
 
 ### Kubernetes
 
@@ -1894,21 +1914,24 @@ Kubernetes security platform for posture, vulnerability, compliance, and runtime
 ### Kubesec
 
 **Categories:** Kubernetes distributions and operations<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer, DevSecOps Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Security risk analysis for Kubernetes YAML.
+Kubernetes manifest security risk scoring through local CLI/container, a self-hosted HTTP API or a best-effort public v2 API, with schema validation and scored recommendations.
 
 **Use when**
 
-- You want a quick risk score for manifest security posture in CI.
+- Score manifest security settings in build/deployment review using the local binary/container or a controlled HTTP service.
+- Inspect risk rules and version/schema configuration; use the public v2 API only for non-sensitive manifests.
 
 **Consider alternatives when**
 
-- You already run kube-linter or Kubescape in your pipeline.
+- Risk scores are not intrusion testing or proof of compliance, and admission enforcement requires a separate integration such as kubesec-webhook.
+- Do not submit sensitive YAML to the public API; it is a best-effort service with no availability guarantee. Prefer local/self-hosted analysis for confidential input.
+- The v1 API is deprecated; use documented v2 modes and appropriate schemas. kubeconform schema checks, kube-score recommendations and Kubesec point scoring remain distinct.
 
-[Official site](https://kubesec.io) · [Source repository](https://github.com/controlplaneio/kubesec)
+[Official site](https://kubesec.io) · [Documentation](https://github.com/controlplaneio/kubesec/blob/master/README.md) · [Source repository](https://github.com/controlplaneio/kubesec)
 
 ### Kubeshark
 
@@ -2086,19 +2109,22 @@ Desktop Kubernetes client for browsing resources, logs, events, and YAML.
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes cluster visualizer.
+Read-only Kubernetes resource and relationship visualization with live SSE updates and optional pod-log viewing, served by a local or in-cluster Go web application.
 
 **Use when**
 
-- You want a real-time graphical topology view of deployments and their relationships.
+- Visualize supported Kubernetes objects, derived relationships and live events while troubleshooting a cluster.
+- Use a scoped kubeconfig or Helm-deployed service account and configure namespace filters or disable pod logs as appropriate.
 
 **Consider alternatives when**
 
-- You need actionable management capabilities beyond visualization.
+- The application does not enforce user authentication or authorization; protect the web endpoint and restrict its backend Kubernetes identity.
+- Read-only get/list/watch permissions can expose Secrets, ConfigMaps and pod logs; namespace UI filters are not a substitute for RBAC.
+- KubeView is not a monitoring storage backend, configuration validator or management console, and derived topology does not establish complete application dependencies.
 
-[Source repository](https://github.com/benc-uk/kubeview)
+[Official site](https://github.com/benc-uk/kubeview) · [Documentation](https://github.com/benc-uk/kubeview/blob/main/readme.md) · [Source repository](https://github.com/benc-uk/kubeview)
 
 ### Kubevious
 
@@ -2523,19 +2549,22 @@ Experimental GitOps-driven operators for portable workloads across Kubernetes cl
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes cluster resource sanitizer that scans live clusters for potential issues and misconfigurations.
+Read-only Kubernetes live-cluster linter for resource hygiene and configuration issues, with optional metrics-server utilization checks and configurable reports.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Inspect deployed resources for stale references, misconfiguration and curated hygiene checks using a scoped kubeconfig or service account.
+- Tune spinach YAML exclusions and severity levels, and use optional metrics-server data to investigate resource allocations.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Popeye is a read-only live-cluster linter, not kube-hunter intrusion testing, a CVE scanner or a full compliance engine.
+- Scanning needs get/list permissions, including sensitive resource types in the sample role; scope permissions and protect reports.
+- Upstream calls the tool work in progress and says it works best with Kubernetes 1.25.X; curated checks and old or newer API compatibility require evaluation.
 
-[Official site](https://popeyecli.io) · [Source repository](https://github.com/derailed/popeye)
+[Official site](https://popeyecli.io) · [Documentation](https://github.com/derailed/popeye/blob/master/README.md) · [Source repository](https://github.com/derailed/popeye)
 
 ### Radar
 
