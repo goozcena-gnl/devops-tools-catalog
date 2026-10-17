@@ -31,3 +31,27 @@ Issue: https://github.com/goozcena-gnl/devops-tools-catalog/issues/121
 - Record exact final SHA, actual before/after counts, required checks, CI and network limitations. Keep PR **draft** until these items are complete; never merge without human decision.
 
 This dated report is a transparent work-in-progress evidence checkpoint, **not** a claim that Wave 16 is finished.
+
+
+## Canonical follow-up — 2026-10-18 (commit `102ddd02c84194a1e5be20a4e38fa42297d01695`)
+
+Nine additional canonical entries have been edited in `data/tools/iam-secrets-certificates.yaml` and the initial Boundary CE change is retained, making ten selected records touched overall.
+
+| ID | Canonical outcome in working branch | Material edits | Remaining caution |
+|---|---|---|---|
+| `hashicorp-boundary` | RETAIN (P0 facts updated) | CE archival, separate active commercial editions, official docs and README | Product-versus-community lifecycle, BSL boundary; status kept needs-review |
+| `openbao` | CLEAR (provisional pending CI) | Official upstream, MPL-2.0, docs, self-hosting and usage limits | HashiCorp Enterprise plugin parity not claimed |
+| `dex` | CLEAR (provisional pending CI) | OIDC connector boundary, Apache-2.0, docs, upstream | Not a complete IAM directory |
+| `jumpserver` | CLEAR (provisional pending CI) | Core GPL-3.0-only, open-core/paid tiers, privileged access boundaries | Features of paid modules not inherited |
+| `openstack-barbican` | CLEAR (provisional pending CI) | OpenDev canonical upstream, official OpenStack docs and Apache-2.0 | GitHub is an upstream mirror |
+| `doppler` | CLEAR (provisional pending CI) | Commercial SaaS vs independent Apache CLI, deployment scope and sources | No SaaS licence inferred from CLI |
+| `boulder-let-s-encrypt` | CLEAR (provisional pending CI) | MPL-2.0, ACME CA **server** vs clients, docs, maintenance sources | High-risk production CA deployment not assumed safe |
+| `teleport` | RETAIN | Root AGPL-3.0-only, Apache API module, restricted Community binary, deployment source distinctions | No single SPDX for all deliverables; clarification remains necessary |
+| `mkcert` | RETAIN | BSD-3-Clause, development CA only, private CA key warning and dated releases | Last observed release v1.4.4 (2022-04-26); maintenance not proved |
+| `teller` | RETAIN | Apache-2.0 from LICENSE.txt, Rust provider CLI and available releases | Last observed release v2.0.7 (2024-05-20); ongoing support not proved |
+
+The proposed catalogue review debt would be **679 → 673** if the six provisional clearances survive schema validation and full tests. All ten retain their original stable IDs and legacy source entries.
+
+Official upstream GitHub API (2026-10-18) showed OpenBao v2.7.1 (2026-10-01), Dex v2.46.0 (2026-10-07), JumpServer v5.1.0 (2026-10-15), Boulder v0.20261013.0 (2026-10-13), Doppler CLI 3.77.0 (2026-10-07). Those facts support dated activity, not product-wide security guarantees.
+
+**Blocker / implementation limitation**: remote connector edits do not run the local Python generator or pinned test environment. README/category/role/lifecycle outputs are stale following canonical changes; Ruff, complete pytest, catalogue validator, the review-debt executable and strict network link audit were not run here. No green validation is claimed. The branch and PR must remain **draft**, pending regeneration, tests, CI and a final evidence review. No six-entry reviewed link baseline changes were made.
