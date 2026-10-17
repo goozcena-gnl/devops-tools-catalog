@@ -145,19 +145,20 @@ Graph-based platform for authorized analysis of identity relationships and attac
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-ACME-based certificate authority server powering Let's Encrypt.
+MPL-2.0 ACME certificate-authority server implementing issuance, validation and revocation for the Lets Encrypt infrastructure.
 
 **Use when**
 
-- You need to run your own ACME CA internally.
+- You build or study the operations of an ACME certificate authority with its registration validation and issuance services.
 
 **Consider alternatives when**
 
-- You just need free public certs (use Let's Encrypt directly via cert-manager or Certbot).
+- You only need to request public TLS certificates as an ACME client; use a client such as Certbot instead.
+- You cannot operate a security-sensitive multi-service CA backend and required database infrastructure.
 
-[Source repository](https://github.com/letsencrypt/boulder)
+[Documentation](https://github.com/letsencrypt/boulder/blob/main/README.md) · [Source repository](https://github.com/letsencrypt/boulder)
 
 ### CertMate
 
@@ -202,38 +203,41 @@ Customer identity and access management platform with flows, SDKs, SSO, MFA, pas
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-OpenID Connect identity provider for Kubernetes and beyond.
+Apache-2.0 OpenID Connect provider and federation broker for applications using external identity connectors.
 
 **Use when**
 
-- As a lightweight OIDC federation layer to bridge upstream IdPs into K8s and GitOps tools.
+- Applications or Kubernetes authentication integrations need federated OIDC tokens from upstream identity providers.
 
 **Consider alternatives when**
 
-- You need a full-featured IAM with user management (use Keycloak).
+- You require a complete employee directory, broad lifecycle governance or full enterprise identity management.
+- You cannot manage secure connectors, issuer configuration, client secrets and token verification.
 
-[Official site](https://dexidp.io) · [Source repository](https://github.com/dexidp/dex)
+[Official site](https://dexidp.io) · [Documentation](https://dexidp.io/docs/) · [Source repository](https://github.com/dexidp/dex)
 
 ### Doppler
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Universal secrets management platform.
+Hosted Doppler secrets and configuration service with a separately Apache-2.0 licensed CLI for retrieving and injecting configuration.
 
 **Use when**
 
-- A SaaS-first, developer-friendly secrets platform across multiple environments.
+- Your team needs centrally managed secrets shared across development staging and production applications.
+- You can issue narrowly scoped Doppler service tokens for CI or runtime injection through its separate CLI.
 
 **Consider alternatives when**
 
-- You need self-hosted or air-gapped secret management.
+- You require a self-hosted service independent of the Doppler cloud control plane.
+- You assume the Apache-2.0 CLI licence also licenses the hosted service or your service tokens need no protection.
 
-[Official site](https://www.doppler.com) · [Source repository](https://github.com/DopplerHQ/cli)
+[Official site](https://www.doppler.com) · [Documentation](https://docs.doppler.com/) · [Source repository](https://github.com/DopplerHQ/cli)
 
 ### Entrust Cryptographic Security Platform Key Manager
 
@@ -317,20 +321,22 @@ Enterprise key-management server backed by a FIPS-validated hardware security mo
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Source Available<br>
-**Status:** Needs Review
+**Model:** Source available<br>
+**Status:** Needs review<br>
+**Repository:** Archived
 
-Secure remote access to systems.
+Identity-aware infrastructure access product; Boundary Community Edition (CE) repository was archived on 2026-10-08 and no further CE fixes, releases or security patches are planned. HCP Boundary and Boundary Enterprise continue separately.
 
 **Use when**
 
-- Identity-based, zero-trust access to infrastructure without a traditional VPN.
+- You are maintaining a previously deployed Boundary CE estate and explicitly accept a frozen, unmaintained community codebase, or you are evaluating separately supported Enterprise/HCP products.
 
 **Consider alternatives when**
 
-- You need a full PAM solution with session recording out of the box (use Teleport or JumpServer).
+- You require community security patches, maintenance, ongoing feature development or supported production CE deployment; the CE repository is read-only and no new fixes or releases are planned.
+- Do not mistake continued HCP Boundary or Boundary Enterprise development for active development of the archived Community Edition.
 
-[Official site](https://boundaryproject.io) · [Source repository](https://github.com/hashicorp/boundary)
+[Official site](https://developer.hashicorp.com/boundary) · [Documentation](https://developer.hashicorp.com/boundary/docs) · [Source repository](https://github.com/hashicorp/boundary)
 
 ### HashiCorp Vault Community Edition
 
@@ -393,20 +399,22 @@ Identity-aware access management / access proxy for infrastructure.
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Open core<br>
+**Status:** Active
 
-Open-source bastion host / privileged access management (PAM) platform.
+Self-hosted privileged access management and bastion platform with GPL-3.0 Community core and distinct paid Enterprise tiers.
 
 **Use when**
 
-- A self-hosted bastion with session recording, RBAC, and asset management.
+- You need centralized controlled access and auditing for supported SSH RDP database or Kubernetes resources.
+- Community Edition capabilities and asset limits meet requirements or a separately licensed Enterprise plan is approved.
 
 **Consider alternatives when**
 
-- You prefer agent-based zero-trust access (use Teleport/Boundary).
+- You assume paid just-in-time access, enterprise SSO or high-availability features exist in the Community package.
+- You cannot enforce privileged access controls and protect recordings, audit data and administrative accounts.
 
-[Official site](https://www.jumpserver.com) · [Source repository](https://github.com/jumpserver/jumpserver)
+[Official site](https://www.jumpserver.com) · [Documentation](https://www.jumpserver.com/docs) · [Source repository](https://github.com/jumpserver/jumpserver)
 
 ### Keycloak
 
@@ -489,19 +497,20 @@ Auto-load secrets from vaults into environment variables or files for shell comm
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Needs review
 
-Local SSL certificate generation.
+BSD-3-Clause CLI creating a locally trusted development CA and TLS certificates; current upstream maintenance remains unconfirmed.
 
 **Use when**
 
-- Instant, trusted localhost TLS certs during development.
+- You need local HTTPS development certificates trusted by your workstation browsers and runtimes.
 
 **Consider alternatives when**
 
-- For production or any non-local use case.
+- You need a production public certificate authority or automated corporate PKI lifecycle.
+- You cannot protect the generated local rootCA-key.pem private key or require proven ongoing security maintenance.
 
-[Source repository](https://github.com/FiloSottile/mkcert)
+[Official site](https://mkcert.dev) · [Documentation](https://github.com/FiloSottile/mkcert#readme) · [Source repository](https://github.com/FiloSottile/mkcert)
 
 ### OIDC-Guard
 
@@ -527,19 +536,21 @@ External-authentication API service for JWT and cookie validation at Kubernetes 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open-source secrets management and encryption platform.
+Community-governed MPL-2.0 secrets service providing encrypted KV storage, dynamic credentials, leases, encryption and audit interfaces.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need an independent open-source secrets service with audited policies and managed encryption keys.
+- You can operate and secure the storage backend, authentication methods, unsealing and backup procedures.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You only need a hosted secrets SaaS and cannot operate secure storage and disaster recovery.
+- You assume complete compatibility with every HashiCorp Vault Enterprise feature or plugin.
 
-[Official site](https://openbao.org)
+[Official site](https://openbao.org) · [Documentation](https://openbao.org/docs/) · [Source repository](https://github.com/openbao/openbao)
 
 ### OpenSSH
 
@@ -565,19 +576,21 @@ The ubiquitous open-source SSH suite for secure remote login, file transfer, and
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-OpenStack secrets management.
+Apache-2.0 OpenStack Key Manager service exposing REST APIs for encrypted secret, key and certificate material with pluggable backends.
 
 **Use when**
 
-- Running OpenStack and need integrated key/secret management.
+- You operate an OpenStack environment requiring API-managed secrets and encryption-key material.
+- You can configure access policy, secret-store plugins and the backing service securely.
 
 **Consider alternatives when**
 
-- Outside OpenStack environments.
+- You need a drop-in general-purpose secret store without an OpenStack service deployment.
+- You assume GitHub is authoritative instead of the canonical OpenDev project.
 
-[Official site](https://wiki.openstack.org/wiki/Barbican)
+[Official site](https://docs.openstack.org/barbican/latest/) · [Documentation](https://docs.openstack.org/barbican/latest/) · [Source repository](https://opendev.org/openstack/barbican)
 
 ### passbolt
 
@@ -716,39 +729,42 @@ Enterprise key management.
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review
+**Model:** Open core<br>
+**Status:** Needs review
 
-Secure access platform for SSH/Kubernetes/databases with OSS core and enterprise editions.
+Infrastructure access platform for SSH Kubernetes databases and apps with separate AGPL source, Apache API module and restricted Community binary terms.
 
 **Use when**
 
-- Unified, certificate-based access to SSH/K8s/DB with audit logging.
+- You evaluate certificate-backed infrastructure access with identity federation and audit logging.
+- You can confirm the licence and feature availability of the specific source build Community binary or Enterprise offering.
 
 **Consider alternatives when**
 
-- You only need simple SSH bastion functionality (JumpServer is lighter).
+- You treat AGPL-3.0 source code or Apache-2.0 API-module terms as granting unrestricted Community binary rights.
+- You need unrestricted distribution or business use but have not evaluated the Community size and revenue limitations.
 
-[Official site](https://goteleport.com) · [Source repository](https://github.com/gravitational/teleport)
+[Official site](https://goteleport.com) · [Documentation](https://goteleport.com/docs/) · [Source repository](https://github.com/gravitational/teleport)
 
 ### Teller
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Needs review
 
-Run processes with secrets from multiple providers and manage secret scanning, syncing, templating, and redaction.
+Apache-2.0 Rust CLI for retrieving and injecting secrets from configured external providers; current release support remains inconclusive.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need to map external secret stores into local or CI processes without checking secrets into source control.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a standalone secrets database; Teller reads from other providers.
+- You cannot verify provider compatibility and release maintenance or safely protect local credentials and exported secrets.
 
-[Source repository](https://github.com/tellerops/teller)
+[Documentation](https://github.com/tellerops/teller/blob/master/README.md) · [Source repository](https://github.com/tellerops/teller)
 
 ### Thales CipherTrust Manager
 
