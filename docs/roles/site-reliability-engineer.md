@@ -55,11 +55,11 @@
 | [Ceph](https://ceph.io/en) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [changedetection.io](https://changedetection.io/) | Monitoring, metrics, logs and tracing | open-core | active |
-| [Chaos Mesh](https://chaos-mesh.org) | Chaos and performance engineering | oss | needs-review |
+| [Chaos Mesh](https://chaos-mesh.org) | Chaos and performance engineering | oss | active |
 | [Chaos Monkey](https://netflix.github.io/chaosmonkey) | Chaos and performance engineering | oss | needs-review |
 | [Chaos Room](https://github.com/fpaparoni/chaos-room) | Chaos and performance engineering | oss | needs-review |
-| [Chaos Toolkit](https://chaostoolkit.org) | Chaos and performance engineering | oss | needs-review |
-| [ChaosBlade](https://chaosblade.io/en) | Chaos and performance engineering | oss | needs-review |
+| [Chaos Toolkit](https://chaostoolkit.org) | Chaos and performance engineering | oss | active |
+| [ChaosBlade](https://chaosblade.io/en) | Chaos and performance engineering | oss | active |
 | [Checkmate](https://checkmate.so/) | Monitoring, metrics, logs and tracing | oss | active |
 | [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Chisel Operator](https://chisel.fyralabs.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -161,7 +161,7 @@
 | [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) | Kubernetes distributions and operations | oss | needs-review |
-| [iPerf](https://iperf.fr/iperf-download.php) | Chaos and performance engineering | oss | needs-review |
+| [iPerf3 (ESnet)](https://software.es.net/iperf/) | Chaos and performance engineering | oss | active |
 | [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | commercial | active |
@@ -208,7 +208,7 @@
 | [kroc](https://github.com/pawelcit/kroc) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kuba](https://github.com/hcgatewood/kuba) | Kubernetes distributions and operations | oss | needs-review |
-| [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | needs-review |
+| [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | active |
 | [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) | Kubernetes distributions and operations | oss | active |
 | [kube-bench](https://github.com/aquasecurity/kube-bench) | Application and cloud security, Kubernetes distributions and operations | oss | active |
 | [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -237,7 +237,7 @@
 | [Kubeflow](https://www.kubeflow.org) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeGUI](https://kubegui.net) | Kubernetes distributions and operations | oss | active |
 | [KubeHatch](https://vclusterlabs-experiments.github.io/kubehatch/) | Kubernetes distributions and operations | oss | active |
-| [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) | Chaos and performance engineering | oss | needs-review |
+| [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) | Chaos and performance engineering | oss | active |
 | [KubeLinter](https://docs.kubelinter.io/) | Kubernetes distributions and operations, Application and cloud security | oss | active |
 | [Kubently](https://kubently.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [KubePlumber](https://github.com/David-VTUK/KubePlumber) | Kubernetes distributions and operations | oss | active |
@@ -341,7 +341,7 @@
 | [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Pulse](https://pulserelay.pro) | SRE, incident response and on-call | oss | active |
-| [Pumba](https://github.com/alexei-led/pumba) | Chaos and performance engineering | oss | needs-review |
+| [Pumba](https://github.com/alexei-led/pumba) | Chaos and performance engineering | oss | active |
 | [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | needs-review |
@@ -380,7 +380,7 @@
 | [strace-tui](https://github.com/Rodrigodd/strace-tui) | Chaos and performance engineering | oss | needs-review |
 | [Stratoshark](https://stratoshark.org/) | SRE, incident response and on-call | oss | active |
 | [stress](https://github.com/resurrecting-open-source-projects/stress) | Chaos and performance engineering | oss | needs-review |
-| [stress-ng](https://github.com/ColinIanKing/stress-ng) | Chaos and performance engineering | oss | needs-review |
+| [stress-ng](https://github.com/ColinIanKing/stress-ng) | Chaos and performance engineering | oss | active |
 | [stressapptest](https://github.com/stressapptest/stressapptest) | Chaos and performance engineering | oss | needs-review |
 | [stressdisk](https://github.com/ncw/stressdisk) | Chaos and performance engineering | oss | needs-review |
 | [Strimzi](https://strimzi.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -395,7 +395,7 @@
 | [Telepresence](https://www.telepresence.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |
 | [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | active |
-| [Toxiproxy](https://github.com/Shopify/toxiproxy) | Chaos and performance engineering | oss | needs-review |
+| [Toxiproxy](https://github.com/Shopify/toxiproxy) | Chaos and performance engineering | oss | active |
 | [Tracetest](https://tracetest.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | unknown | needs-review |
 | [Trippy](https://trippy.rs/) | Foundations, Linux and scripting | oss | active |

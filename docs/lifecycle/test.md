@@ -59,11 +59,11 @@
 - [Certipy](https://github.com/ly4k/Certipy) — Active Directory Certificate Services assessment tool for identifying configuration and trust weaknesses.
 - [Chain Bench](https://github.com/aquasecurity/chain-bench) — Supply chain security auditing tool.
 - [Chainguard Containers](https://www.chainguard.dev) — Minimal, security-hardened container images offered as a limited free set and licensed production catalog with remediation SLAs.
-- [Chaos Mesh](https://chaos-mesh.org) — Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you want a CNCF-backed, Kubernetes-native chaos platform with a dashboard and CRD-based workflows. ❌ **Avoid when** your workloads aren't on Kubernetes or you need bare-metal/VM-level experiments.
-- [Chaos Monkey](https://netflix.github.io/chaosmonkey) — Tool for randomly terminating instances to test resilience. ✅ **Use when** you want simple, continuous instance-termination tests to validate auto-scaling and failover. ❌ **Avoid when** you need fault types beyond instance killing or aren't running on Spinnaker.
+- [Chaos Mesh](https://chaos-mesh.org) — Apache-2.0 Kubernetes chaos platform using CRDs, a controller manager, an optional dashboard and node daemons for pod, network, IO, time, stress and supported external faults.
+- [Chaos Monkey](https://netflix.github.io/chaosmonkey) — Apache-2.0 Netflix tool for scheduled instance termination through Spinnaker, with MySQL state; current maintenance/support remains inconclusive despite an active lifecycle declaration.
 - [Chaos Room](https://github.com/fpaparoni/chaos-room) — Chaos engineering tool. ✅ **Use when** you want a lightweight, experimental chaos tool for learning or small projects. ❌ **Avoid when** you need production-grade reliability, active maintenance, or broad fault coverage.
-- [Chaos Toolkit](https://chaostoolkit.org) — Open-source chaos engineering toolkit for building reliability experiments. ✅ **Use when** you want declarative, version-controlled experiments that are CI/CD-friendly and platform-agnostic. ❌ **Avoid when** you need real-time orchestration or a rich UI—it's primarily CLI/JSON-driven.
-- [ChaosBlade](https://chaosblade.io/en) — Chaos engineering platform with comprehensive fault injection capabilities. ✅ **Use when** you need broad fault injection (OS, JVM, Docker, K8s) in a single CLI tool. ❌ **Avoid when** you need a polished UI-driven workflow or strong English-language community support.
+- [Chaos Toolkit](https://chaostoolkit.org) — Apache-2.0 Chaos Toolkit core CLI orchestrates declarative experiments, probes, actions, steady-state checks and rollbacks through separately installed extensions.
+- [ChaosBlade](https://chaosblade.io/en) — Apache-2.0 ChaosBlade CLI manages fault experiments through separate OS, process, network, container and JVM executors; Kubernetes scenarios require the ChaosBlade operator.
 - [Checkmarx One](https://checkmarx.com) — Commercial cloud application-security platform combining multiple scanners and SDLC integrations.
 - [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) — Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
 - [Cilium](https://cilium.io) — EBPF-based networking, observability, and security for Kubernetes.
@@ -168,7 +168,7 @@
 - [Impacket](https://github.com/fortra/impacket) — Python library and utilities for programmatic access to common network and Windows protocols.
 - [Insomnia](https://insomnia.rest/) — API client and testing workspace with local workflows and paid collaboration capabilities.
 - [IntelliJ IDEA](https://www.jetbrains.com/idea) — JetBrains IDE for JVM development with a free core feature set and subscription-gated advanced features.
-- [iPerf](https://iperf.fr/iperf-download.php) — Network performance measurement tool.
+- [iPerf3 (ESnet)](https://software.es.net/iperf/) — ESnet iPerf3 client/server measures network throughput using TCP, UDP and supported SCTP; core BSD-3-Clause-LBNL terms include an enhancement clause, with separate bundled-component notices.
 - [Iroh](https://www.iroh.computer) — Peer-to-peer networking library for building distributed, hole-punching-capable, end-to-end encrypted connections.
 - [ISMS Builder](https://www.isms-builder.com) — Self-hosted information security management system builder for ISO 27001, NIS2, and GDPR compliance.
 - [JARVIS OS](https://www.jarvisoslinux.org/) — Experimental AI-native Linux distribution that integrates an LLM daemon with a custom kernel interface for security research.
@@ -189,9 +189,9 @@
 - [Kilo Code](https://kilo.ai/) — Open-source coding-agent tooling with configurable model providers and commercial hosted services.
 - [Kiuwan](https://www.kiuwan.com/) — Commercial application-security platform for static analysis, software composition analysis, and code quality governance.
 - [Kps-zeroexposure](https://github.com/adrghph/kps-zeroexposure) — Kubernetes zero-exposure policy tool.
-- [Kube Monkey](https://github.com/asobti/kube-monkey) — Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, opt-in pod-killing schedule for Kubernetes with minimal setup. ❌ **Avoid when** you need network/IO faults or fine-grained experiment control beyond random pod deletion.
+- [Kube Monkey](https://github.com/asobti/kube-monkey) — Apache-2.0 Kubernetes pod-disruption service using opt-in application labels, scheduled termination windows and namespace filters; distinct from Netflix Chaos Monkey.
 - [kube-bench](https://github.com/aquasecurity/kube-bench) — Aqua Security tool that checks Kubernetes node configuration against selected CIS benchmark profiles; it implements checks and does not define the CIS standard or certify full compliance.
-- [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) — Gamified chaos engineering for Kubernetes. ✅ **Use when** you want a fun, visual way to introduce chaos engineering concepts in workshops or game days. ❌ **Avoid when** you need automated, scheduled, or CI-integrated chaos experiments.
+- [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) — Apache-2.0 web interface for gamified Kubernetes pod deletion and node chaos jobs, with a simulated demo mode and separate real-cluster credentials.
 - [KubeLinter](https://docs.kubelinter.io/) — Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
 - [KWOK](https://kwok.sigs.k8s.io/) — Kubernetes SIGs toolkit that simulates large numbers of nodes and pods without running real workloads.
 - [Lightpanda Browser](https://lightpanda.io/) — Headless browser engine for JavaScript-driven automation without graphical rendering.
@@ -273,7 +273,7 @@
 - [Pritunl](https://pritunl.com) — VPN server for secure remote access; open-source core with commercial features.
 - [Probot DCO](https://probot.github.io/apps/dco) — DCO checks for GitHub pull requests.
 - [PSScriptAnalyzer](https://www.powershellgallery.com/packages/PSScriptAnalyzer/) — Static code checker and formatter for PowerShell scripts and modules.
-- [Pumba](https://github.com/alexei-led/pumba) — Chaos testing, network emulation, and stress testing tool for containers.
+- [Pumba](https://github.com/alexei-led/pumba) — Apache-2.0 CLI for Linux-container disruption, network emulation and resource stress through Docker, containerd and Podman runtime APIs.
 - [PyCharm](https://www.jetbrains.com/pycharm) — Python IDE by JetBrains.
 - [pytest](https://docs.pytest.org/en/stable) — Python testing framework.
 - [pytest-cov](https://github.com/pytest-dev/pytest-cov) — Pytest plugin for coverage reporting, including support for distributed test runs.
@@ -318,7 +318,7 @@
 - [Starlight](https://starlight.astro.build) — Documentation site framework.
 - [strace-tui](https://github.com/Rodrigodd/strace-tui) — Terminal UI for visualizing and exploring `strace` output.
 - [stress](https://github.com/resurrecting-open-source-projects/stress) — Simple workload generator for POSIX systems.
-- [stress-ng](https://github.com/ColinIanKing/stress-ng) — Stress test tool for a wide range of subsystems.
+- [stress-ng](https://github.com/ColinIanKing/stress-ng) — GPL-2.0-or-later system stress generator exercising CPU, memory, filesystem, kernel and other resources on supported Unix-like platforms; throughput counters are not a precise benchmark suite.
 - [stressapptest](https://github.com/stressapptest/stressapptest) — Memory and I/O stress test tool.
 - [stressdisk](https://github.com/ncw/stressdisk) — Disk stress testing utility.
 - [subfinder](https://github.com/projectdiscovery/subfinder) — Passive subdomain discovery utility using external data sources.
@@ -347,7 +347,7 @@
 - [ThreatLocker](https://www.threatlocker.com) — Zero trust endpoint protection platform.
 - [To Be Continuous](https://to-be-continuous.gitlab.io/doc) — Modular GitLab CI template ecosystem for standardizing and accelerating professional pipelines.
 - [Touti-Cracker](https://github.com/Touti-Sudo/Touti-Cracker) — Security testing tool.
-- [Toxiproxy](https://github.com/Shopify/toxiproxy) — Framework for simulating network conditions and toxic network behavior. ✅ **Use when** you want to inject network faults (latency, timeouts, bandwidth limits) in integration/CI tests. ❌ **Avoid when** you need infrastructure-level chaos beyond the network layer or production-scale distributed experiments.
+- [Toxiproxy](https://github.com/Shopify/toxiproxy) — MIT-licensed TCP proxy with an HTTP control API for injecting stream latency, bandwidth limits, timeouts, resets and other faults into connections routed through it.
 - [Tracee](https://aquasecurity.github.io/tracee/latest) — EBPF-based runtime security and threat detection for Linux systems and containers.
 - [Travis CI](https://www.travis-ci.com) — CI/CD service for GitHub.
 - [Trivy](https://aquasecurity.github.io/trivy) — Vulnerability scanner for containers and Kubernetes.

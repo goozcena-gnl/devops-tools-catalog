@@ -124,11 +124,11 @@
 | [CertGames](https://certgames.com/) | Documentation, learning and career resources | documentation | needs-review |
 | [CFEngine](https://cfengine.com) | Configuration management | open-core | needs-review |
 | [changedetection.io](https://changedetection.io/) | Monitoring, metrics, logs and tracing | open-core | active |
-| [Chaos Mesh](https://chaos-mesh.org) | Chaos and performance engineering | oss | needs-review |
+| [Chaos Mesh](https://chaos-mesh.org) | Chaos and performance engineering | oss | active |
 | [Chaos Monkey](https://netflix.github.io/chaosmonkey) | Chaos and performance engineering | oss | needs-review |
 | [Chaos Room](https://github.com/fpaparoni/chaos-room) | Chaos and performance engineering | oss | needs-review |
-| [Chaos Toolkit](https://chaostoolkit.org) | Chaos and performance engineering | oss | needs-review |
-| [ChaosBlade](https://chaosblade.io/en) | Chaos and performance engineering | oss | needs-review |
+| [Chaos Toolkit](https://chaostoolkit.org) | Chaos and performance engineering | oss | active |
+| [ChaosBlade](https://chaosblade.io/en) | Chaos and performance engineering | oss | active |
 | [Chapril Services](https://www.chapril.org/-services-.html) | Emerging and experimental tools | unknown | needs-review |
 | [Checkmate](https://checkmate.so/) | Monitoring, metrics, logs and tracing | oss | active |
 | [checkmk](https://checkmk.com) | Monitoring, metrics, logs and tracing | open-core | active |
@@ -330,7 +330,7 @@
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [Insomnia](https://insomnia.rest/) | Developer experience and local environments | open-core | active |
 | [IntelliJ IDEA](https://www.jetbrains.com/idea) | Developer experience and local environments | open-core | active |
-| [iPerf](https://iperf.fr/iperf-download.php) | Chaos and performance engineering | oss | needs-review |
+| [iPerf3 (ESnet)](https://software.es.net/iperf/) | Chaos and performance engineering | oss | active |
 | [IT Tools](https://it-tools.tech) | Emerging and experimental tools | oss | needs-review |
 | [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [jaq](https://github.com/01mf02/jaq) | Foundations, Linux and scripting | oss | active |
@@ -377,12 +377,12 @@
 | [Komodo](https://komo.do/) | Virtualization, bare metal and homelab | oss | active |
 | [Komodor](https://komodor.com) | SRE, incident response and on-call, Monitoring, metrics, logs and tracing, FinOps and sustainability | commercial | active |
 | [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | needs-review |
+| [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | active |
 | [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) | Monitoring, metrics, logs and tracing | oss | active |
 | [KubeChecks](https://kubechecks.readthedocs.io/en/latest) | CD, GitOps, release and promotion | oss | needs-review |
 | [kubeCodex](https://github.com/TheCodingSheikh/kubecodex) | Documentation, learning and career resources | documentation | needs-review |
-| [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) | Chaos and performance engineering | oss | needs-review |
+| [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) | Chaos and performance engineering | oss | active |
 | [KubeLearn](https://kubelearn.yoparchi.fr) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes](https://kubernetes.io) | Kubernetes distributions and operations | oss | active |
 | [Kubernetes Contributors](https://www.kubernetes.dev/) | Documentation, learning and career resources | documentation | active |
@@ -524,7 +524,7 @@
 | [PSScriptAnalyzer](https://www.powershellgallery.com/packages/PSScriptAnalyzer/) | Developer experience and local environments, CI, build and testing | oss | active |
 | [Pulp](https://pulpproject.org/) | Artifact and package management | oss | active |
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
-| [Pumba](https://github.com/alexei-led/pumba) | Chaos and performance engineering | oss | needs-review |
+| [Pumba](https://github.com/alexei-led/pumba) | Chaos and performance engineering | oss | active |
 | [Puppet](https://puppet.com) | Configuration management | open-core | needs-review |
 | [PyCharm](https://www.jetbrains.com/pycharm) | Developer experience and local environments | unknown | needs-review |
 | [pytest](https://docs.pytest.org/en/stable) | CI, build and testing | oss | needs-review |
@@ -607,7 +607,7 @@
 | [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) | Infrastructure as Code | open-core | active |
 | [strace-tui](https://github.com/Rodrigodd/strace-tui) | Chaos and performance engineering | oss | needs-review |
 | [stress](https://github.com/resurrecting-open-source-projects/stress) | Chaos and performance engineering | oss | needs-review |
-| [stress-ng](https://github.com/ColinIanKing/stress-ng) | Chaos and performance engineering | oss | needs-review |
+| [stress-ng](https://github.com/ColinIanKing/stress-ng) | Chaos and performance engineering | oss | active |
 | [stressapptest](https://github.com/stressapptest/stressapptest) | Chaos and performance engineering | oss | needs-review |
 | [stressdisk](https://github.com/ncw/stressdisk) | Chaos and performance engineering | oss | needs-review |
 | [Structurizr](https://github.com/structurizr) | Emerging and experimental tools | oss | needs-review |
@@ -651,7 +651,7 @@
 | [Timoni](https://timoni.sh) | Emerging and experimental tools | oss | needs-review |
 | [To Be Continuous](https://to-be-continuous.gitlab.io/doc) | CI, build and testing | documentation | needs-review |
 | [Tofu Controller](https://flux-iac.github.io/tofu-controller) | CD, GitOps, release and promotion | oss | active |
-| [Toxiproxy](https://github.com/Shopify/toxiproxy) | Chaos and performance engineering | oss | needs-review |
+| [Toxiproxy](https://github.com/Shopify/toxiproxy) | Chaos and performance engineering | oss | active |
 | [Tracetest](https://tracetest.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Travis CI](https://www.travis-ci.com) | CI, build and testing | unknown | needs-review |
 | [Trendshift](https://trendshift.io) | Documentation, learning and career resources | unknown | needs-review |
