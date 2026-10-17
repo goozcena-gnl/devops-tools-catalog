@@ -87,7 +87,7 @@
 - [BotKube](https://botkube.io) — Kubernetes troubleshooting and monitoring platform with chat integrations and automation plugins.
 - [Bottlerocket](https://bottlerocket.dev) — Linux-based, security-hardened operating system purpose-built for running containers.
 - [bottom](https://bottom.pages.dev/stable/) — Terminal resource monitor for processes, CPU, memory, and disks.
-- [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) — ACME-based certificate authority server powering Let's Encrypt.
+- [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) — MPL-2.0 ACME certificate-authority server implementing issuance, validation and revocation for the Lets Encrypt infrastructure.
 - [btop](https://github.com/aristocratos/btop) — Terminal resource monitor for CPU, memory, disks, networks, and processes.
 - [Bugsink](https://www.bugsink.com/) — Self-hosted Sentry SDK-compatible error tracking service.
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
@@ -169,7 +169,7 @@
 - [Descope](https://www.descope.com/) — Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
 - [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) — Tooling to run Kubernetes locally on the desktop.
 - [Devtron](https://devtron.ai) — Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations, plus separately offered commercial platform capabilities.
-- [Dex](https://dexidp.io) — OpenID Connect identity provider for Kubernetes and beyond.
+- [Dex](https://dexidp.io) — Apache-2.0 OpenID Connect provider and federation broker for applications using external identity connectors.
 - [DigitalOcean](https://www.digitalocean.com) — Developer-friendly cloud infrastructure provider.
 - [dnsglobe](https://github.com/514-labs/dnsglobe) — Terminal UI for tracking global DNS propagation across public resolvers.
 - [Docker Agent](https://docker.github.io/docker-agent/) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
@@ -182,7 +182,7 @@
 - [Dockur Windows](https://github.com/dockur/windows) — Windows in a Docker container.
 - [Dokploy](https://dokploy.com/) — Self-hostable platform for deploying applications, Docker Compose stacks, and databases across user-managed servers.
 - [dool](https://github.com/scottchiefbaker/dool) — Linux command-line monitor for correlating CPU, memory, disk, network, and process activity in real time.
-- [Doppler](https://www.doppler.com) — Universal secrets management platform.
+- [Doppler](https://www.doppler.com) — Hosted Doppler secrets and configuration service with a separately Apache-2.0 licensed CLI for retrieving and injecting configuration.
 - [dotnet-operator-sdk](https://dotnet.github.io/dotnet-operator-sdk) — Build Kubernetes operators/controllers using .NET.
 - [Dozzle](https://dozzle.dev) — Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes support.
 - [duf](https://github.com/muesli/duf) — Command-line utility that presents disk usage and free-space information for mounted filesystems.
@@ -271,7 +271,7 @@
 - [HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools) — Large collection of Bash scripts, shell helpers, and automation tooling for DevOps, cloud, CI/CD, Kubernetes, and APIs.
 - [Harvester](https://harvesterhci.io/) — Kubernetes-based hyperconverged infrastructure platform integrating KubeVirt virtualization and Longhorn storage.
 - [Harvester Seeder](https://github.com/harvester/seeder) — Kubernetes-based automation for installing Harvester onto bare-metal machines.
-- [HashiCorp Boundary](https://boundaryproject.io) — Secure remote access to systems.
+- [HashiCorp Boundary](https://developer.hashicorp.com/boundary) — Identity-aware infrastructure access product; Boundary Community Edition (CE) repository was archived on 2026-10-08 and no further CE fixes, releases or security patches are planned. HCP Boundary and Boundary Enterprise continue separately.
 - [HashiCorp Consul](https://developer.hashicorp.com/consul) — Service networking and discovery platform.
 - [HashiCorp Vault Community Edition](https://developer.hashicorp.com/vault) — Source-available Vault Community Edition for secrets storage, dynamic credentials and encryption services under BUSL-1.1; Vault Enterprise and HCP Vault offerings have separate commercial product terms.
 - [Haystack](https://haystack.deepset.ai) — Framework for building LLM-powered apps and search systems.
@@ -321,7 +321,7 @@
 - [jq](https://jqlang.org) — Command-line processor for querying and transforming JSON data.
 - [JuiceFS](https://juicefs.com/en) — Distributed POSIX file system with community edition and enterprise/cloud offerings.
 - [Juju](https://canonical.com/juju) — Open-source application orchestration engine for deploying and operating charm-based applications across machines and Kubernetes.
-- [JumpServer](https://www.jumpserver.com) — Open-source bastion host / privileged access management (PAM) platform.
+- [JumpServer](https://www.jumpserver.com) — Self-hosted privileged access management and bastion platform with GPL-3.0 Community core and distinct paid Enterprise tiers.
 - [just](https://just.systems/) — Command runner for keeping project recipes in a versioned justfile.
 - [k (rothgar)](https://github.com/rothgar/k) — Experimental kubectl wrapper adding context, cluster, and namespace shorthand.
 - [k0rdent](https://docs.k0rdent.io/latest) — Kubernetes-native platform for distributed cluster lifecycle and multi-cluster service management.
@@ -517,7 +517,7 @@
 - [MiniBlue](https://miniblue.io) — Local Azure emulator that emulates 26+ Azure services in a single binary for development and testing without an Azure account.
 - [Minikube](https://minikube.sigs.k8s.io/docs) — Local Kubernetes development environment.
 - [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) — Ansible accelerator to speed up module execution and reduce SSH overhead.
-- [mkcert](https://github.com/FiloSottile/mkcert) — Local SSL certificate generation.
+- [mkcert](https://mkcert.dev) — BSD-3-Clause CLI creating a locally trusted development CA and TLS certificates; current upstream maintenance remains unconfirmed.
 - [MLflow](https://mlflow.org) — Platform for managing ML lifecycles.
 - [MobaXterm](https://mobaxterm.mobatek.net/) — Windows remote-administration terminal combining SSH, SFTP, X11, and other network clients.
 - [MOCO](https://cybozu-go.github.io/moco) — MySQL Operator for Kubernetes by Cybozu.
@@ -558,7 +558,7 @@
 - [OmniRoute](https://omniroute.online/) — Self-hosted gateway that presents multiple AI model providers behind one routing and fallback endpoint.
 - [Open vSwitch](https://www.openvswitch.org) — Production-quality multilayer virtual switch for network automation, programmatic control, and virtualized environments.
 - [Open WebUI](https://openwebui.com) — Self-hosted web UI for running and managing local AI model backends (e.g., Ollama).
-- [OpenBao](https://openbao.org) — Open-source secrets management and encryption platform.
+- [OpenBao](https://openbao.org) — Community-governed MPL-2.0 secrets service providing encrypted KV storage, dynamic credentials, leases, encryption and audit interfaces.
 - [OpenFaaS](https://www.openfaas.com) — Functions-as-a-Service framework for Kubernetes; OSS core with commercial Pro features.
 - [OpenKruise](https://openkruise.io) — Enhanced workloads for Kubernetes.
 - [OpenKruise Agents](https://github.com/openkruise/agents) — Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
@@ -569,7 +569,7 @@
 - [OpenSRE](https://www.opensre.com/) — Self-hostable framework for AI-assisted production incident investigation, evaluation, and remediation workflows.
 - [OpenSSH](https://www.openssh.org) — The ubiquitous open-source SSH suite for secure remote login, file transfer, and tunneling.
 - [OpenStack](https://www.openstack.org) — Open-source cloud infrastructure platform for operating compute, networking, storage, identity, and related services.
-- [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) — OpenStack secrets management.
+- [OpenStack Barbican](https://docs.openstack.org/barbican/latest/) — Apache-2.0 OpenStack Key Manager service exposing REST APIs for encrypted secret, key and certificate material with pluggable backends.
 - [OpenStack Ironic](https://ironicbaremetal.org/) — Bare-metal provisioning service supporting hardware inspection, deployment, and power management.
 - [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) — OpenStack service for provisioning and managing container orchestration clusters through OpenStack APIs.
 - [OpenTelemetry](https://opentelemetry.io/) — Vendor-neutral observability umbrella project defining specifications, APIs, SDKs and instrumentation for traces, metrics and logs; the Collector is a separate implementation component, and storage/UI backends are external.
@@ -733,9 +733,9 @@
 - [Tarook](https://tarook.cloud/en/) — Apache-licensed Kubernetes distribution and lifecycle-management toolkit for OpenStack, Proxmox VE, and bare-metal infrastructure.
 - [Technitium DNS Server](https://technitium.com/dns/) — Self-hosted authoritative and recursive DNS server with an administrative web interface and blocking capabilities.
 - [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) — InfluxData's plugin-driven telemetry agent for collecting, processing, aggregating and writing metrics and events to InfluxDB or other backends, distinct from a time-series database and Telegraf Enterprise.
-- [Teleport](https://goteleport.com) — Secure access platform for SSH/Kubernetes/databases with OSS core and enterprise editions.
+- [Teleport](https://goteleport.com) — Infrastructure access platform for SSH Kubernetes databases and apps with separate AGPL source, Apache API module and restricted Community binary terms.
 - [Telepresence](https://www.telepresence.io) — Local dev against remote Kubernetes.
-- [Teller](https://github.com/tellerops/teller) — Run processes with secrets from multiple providers and manage secret scanning, syncing, templating, and redaction.
+- [Teller](https://github.com/tellerops/teller) — Apache-2.0 Rust CLI for retrieving and injecting secrets from configured external providers; current release support remains inconclusive.
 - [Tenzu](https://tenzu.net/fr) — Ethical open-source task and Kanban collaboration platform.
 - [Terraform Community Edition](https://www.terraform.io) — HashiCorp infrastructure-as-code CLI for provisioning and managing infrastructure and state, with separately licensed providers; HCP Terraform and Terraform Enterprise are distinct offerings.
 - [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) — MCP server for Terraform automation and infrastructure-as-code workflows.
