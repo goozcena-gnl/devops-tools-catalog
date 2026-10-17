@@ -432,9 +432,33 @@ Nine reviews cleared; one retained deliberately. All ten gain documentation, cor
 
 ## Validation and review outcome
 
-Validation is recorded below after the final URL set and focused semantic tests are complete. Final-head GitHub checks, security results and automated-review thread state are reported in the PR body; they cannot be known before that head is published.
+Validation below uses the final canonical URL set and focused semantic tests. Final-head GitHub checks, security results and automated-review thread state are reported in the PR body; they cannot be known before that head is published.
 
 
 The fresh strict full-catalogue audit completed at 2026-10-17 09:14 UTC against the final set of **2,726 URLs**: **blocking_new=0; blocking_known=4; PASS**. The audited URL set exactly matches the final canonical set. All six historical reviewed exceptions remain unchanged (Git blob `a834e2af711693def40078a55e31dfeb29bee2c7` matches the verified baseline). Two baseline URLs returned nonblocking observations; this does not authorize deleting those exceptions.
 
 Network classifications: 1,293 valid, 36 valid redirects, 202 permanent redirects, 785 rate-limited, 399 restricted/bot-blocked, 5 DNS-inconclusive, 1 timeout-inconclusive, 1 transient failure, 1 HTTP error and 3 manual-verification-required. These are network observations, not evidence of project retirement or support. No bulk URL replacements or baseline changes were made. Reports and evidence snapshots remain ignored under `tmp/wave15/`.
+
+
+Final local validation used a dedicated **Python 3.12.3** Linux environment with the unchanged **19 locked dependencies**. All commands below passed. Focused suite: **24 passed**. Complete suite: **1,003 passed, 3 skipped** (1,006 collected). The skips are earlier waves already merged into the base; the new Wave 15 scope/provenance test executes. The initial full run exposed a local-only issue: copied upstream Markdown snapshots in ignored tmp were scanned for their original relative links. Renaming those snapshots as plain text resolved it; no unrelated test or catalogue behavior changed, and the full rerun passed.
+
+```bash
+python -m pip install --disable-pip-version-check --no-input -c config/python-constraints-3.12.txt hatchling editables
+python -m pip install --disable-pip-version-check --no-input --no-build-isolation -c config/python-constraints-3.12.txt -e '.[dev]'
+python -m scripts.python_constraints --verify-locked
+python -m pip check
+python -m ruff check scripts tests
+python -m ruff format --check scripts tests
+python -m pytest tests/test_wave15_evidence_review.py
+python -m pytest
+python -m scripts.generate_docs
+python -m scripts.generate_docs --check
+python -m scripts.validate_catalog
+python -m scripts.review_debt --format markdown --limit 30
+git diff --check
+python -m scripts.check_links --strict --check-archived --workers 8 --cache-hours 0 --cache tmp/wave15/link-cache.json --json-report tmp/wave15/link-report.json --markdown-report tmp/wave15/link-report.md
+```
+
+Generated-file and catalogue validation also ran against an LF-normalized export of the same tracked sources to avoid pre-existing Windows CRLF checkout artifacts. The full tests and explicit scope/provenance checks ran against the working Git checkout. Generation owns README, catalog statistics, the chaos/performance category, test/operate lifecycle and DevOps/SRE role pages. Temporary outputs and caches are excluded from the commit.
+
+No requested network-dependent check was omitted: the full audit ran fresh with archive checking, eight workers and zero cache age. External rate limiting and bot restrictions remain explicitly inconclusive. Final-head CI/security and automated review results, including any resolutions, are recorded in the PR body after publication; this report makes no advance claim about those future checks. The PR is left unmerged.
