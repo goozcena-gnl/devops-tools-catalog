@@ -1,0 +1,33 @@
+# Wave 16 — IAM, secrets and certificates: primary-source evidence and scope
+Date: 2026-10-18
+Baseline main: `013b7907be7a100f21c5d417e75dbe9e662f8506`
+Issue: https://github.com/goozcena-gnl/devops-tools-catalog/issues/121
+
+## Status
+
+**Partial evidence review, not a completed clearance or ready-to-merge approval.** The ten existing records below are the full fixed scope. The baseline inventory is 1,425 canonical records, 679 review flags, and zero open pull requests. Avoid inventing post-review counts before canonical edits and regeneration.
+
+## Primary-source observations (2026-10-18)
+
+| Canonical ID | Primary evidence inspected | Observations and unresolved boundaries | Planned disposition |
+| --- | --- | --- | --- |
+| `hashicorp-boundary` | [archived upstream](https://github.com/hashicorp/boundary), [repository README](https://github.com/hashicorp/boundary/blob/main/README.md), [BSL LICENSE](https://github.com/hashicorp/boundary/blob/main/LICENSE) | README explicitly dates **Community Edition archive to 2026-10-08**, with no planned CE security patches, bug fixes or releases; enterprise/HCP development continues. Repository BSL with additional grant; do **not** infer OSI SPDX from licence-model field. Distinguish CE from active product. Also reconcile historical tracker #2 observation. | P0 targeted lifecycle correction; CE archived, product offerings separate |
+| `openbao` | [upstream](https://github.com/openbao/openbao), [licence](https://github.com/openbao/openbao/blob/main/LICENSE), [docs](https://openbao.org/docs/) | Nonarchived canonical upstream; GitHub reports MPL-2.0. Currently missing `repository_url` and `documentation_url`. Upstream sources do not imply the HashiCorp Vault commercial licence model. | Candidate for evidence-supported clearance after field-level verification |
+| `teleport` | [upstream](https://github.com/gravitational/teleport), [root licence](https://github.com/gravitational/teleport/blob/master/LICENSE), [API licence](https://github.com/gravitational/teleport/blob/master/api/LICENSE), [Community binary licence](https://github.com/gravitational/teleport/blob/master/build.assets/LICENSE-community) | Root AGPL-3.0; API Apache-2.0; Community binary licence has separate organization size/revenue restrictions and security exception; Enterprise differs. Do **not** represent all artifacts as uniformly AGPL or OSI-OSS. | Retain review until distribution boundary and licence-model/clearance evidence fully reconciled |
+| `dex` | [upstream](https://github.com/dexidp/dex), [README](https://github.com/dexidp/dex/blob/master/README.md), [official project](https://dexidp.io) | GitHub reports Apache-2.0; federated OIDC provider/connector, not a complete IAM directory. Upstream nonarchived and recently pushed. | Candidate for clearance after release/docs verification |
+| `jumpserver` | [upstream](https://github.com/jumpserver/jumpserver), [website](https://www.jumpserver.com) | GitHub reports GPL-3.0 for repository, product PAM access, enterprise capabilities need separate review; nonarchived. | Retain review pending edition-specific source grants and exact capability matrix |
+| `openstack-barbican` | [canonical OpenDev](https://opendev.org/openstack/barbican), [GitHub mirror](https://github.com/openstack/barbican), [official docs](https://docs.openstack.org/barbican/latest/), [mirrored LICENSE](https://github.com/openstack/barbican/blob/master/LICENSE) | Apache-2.0, maintained OpenStack secret storage API; GitHub repo self-identifies as **mirror** of code at OpenDev. Existing record lacks canonical repository/documentation URLs. | Candidate for clearance after canonical-source links are recorded |
+| `doppler` | [SaaS product](https://www.doppler.com), [CLI upstream](https://github.com/DopplerHQ/cli), [CLI LICENSE](https://github.com/DopplerHQ/cli/blob/master/LICENSE), [docs](https://docs.doppler.com/) | CLI Apache-2.0 does **not** license the managed secret service. Record currently `license_model: unknown`; product is SaaS and CLI is a separate component. | Retain review pending precise service licensing/edition, no inherited OSS claim |
+| `boulder-let-s-encrypt` | [upstream](https://github.com/letsencrypt/boulder), [licence](https://github.com/letsencrypt/boulder/blob/main/LICENSE) | GitHub reports MPL-2.0; ACME **CA server**, not certbot/client and not equivalent to issuance from Let's Encrypt. Nonarchived with current activity. | Candidate for clearance after ops/support docs and caveats are checked |
+| `mkcert` | [upstream](https://github.com/FiloSottile/mkcert), [README](https://github.com/FiloSottile/mkcert/blob/master/README.md) | BSD-3-Clause; local trusted development CA, **never public/production PKI**; README warns rootCA private key grants interception ability. Repo nonarchived but last pushed 2024-08-13; visibility alone does not prove maintenance. | **RETAIN REVIEW — INCONCLUSIVE** ongoing maintenance |
+| `teller` | [upstream](https://github.com/tellerops/teller), [actual LICENSE.txt](https://github.com/tellerops/teller/blob/master/LICENSE.txt) | Apache-2.0; repository uses **LICENSE.txt**, not LICENSE. Nonarchived, last pushed 2026-01-27; check current Rust implementation, providers and release cadence instead of assuming ongoing support. | Retain review pending provider/release/maintenance verification |
+
+## Remaining work before ready-for-human-review
+
+- Update exactly these ten YAML records with supported per-field changes; preserve all legacy sources and stable identifiers. Do not clear `needs_review` based solely on GitHub licence badges and timestamps.
+- Include full field-decision ledger (before / after / official URL / rationale) for **all ten**; explicitly document any retained `needs_review: true` cases. Boundary CE archival deserves independent, precise lifecycle representation.
+- Regenerate all docs from canonical YAML (`python -m scripts.generate_docs`) and verify (`--check`), not manual edits to generated pages. Ensure README, category, role, lifecycle pages and statistics remain synchronized.
+- Run pinned Python 3.12 environment, focused and complete tests, Ruff lint and formatting, catalog validation, review-debt inventory and `git diff --check`. Run strict URL audit with a fresh cache if URLs changed; preserve the six historically reviewed exceptions absent primary evidence for remediation.
+- Record exact final SHA, actual before/after counts, required checks, CI and network limitations. Keep PR **draft** until these items are complete; never merge without human decision.
+
+This dated report is a transparent work-in-progress evidence checkpoint, **not** a claim that Wave 16 is finished.
