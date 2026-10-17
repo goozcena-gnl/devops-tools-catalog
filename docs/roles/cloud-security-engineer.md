@@ -25,7 +25,7 @@
 | [BlackArch Linux](https://blackarch.org/) | Application and cloud security | oss | active |
 | [blocky](https://0xerr0r.github.io/blocky/latest/) | Virtualization, bare metal and homelab, Application and cloud security | oss | active |
 | [BloodHound](https://bloodhound.specterops.io/) | Application and cloud security, IAM, secrets and certificate management | open-core | active |
-| [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) | IAM, secrets and certificate management | oss | needs-review |
+| [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) | IAM, secrets and certificate management | oss | active |
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Burp Suite](https://portswigger.net/burp) | Application and cloud security | commercial | active |
 | [Burp Suite Community Edition](https://portswigger.net/burp/downloads) | Application and cloud security | commercial | active |
@@ -61,11 +61,11 @@
 | [DependencyCheck](https://owasp.org/projects/dependency-check) | Application and cloud security | oss | active |
 | [Descope](https://www.descope.com/) | IAM, secrets and certificate management | commercial | active |
 | [detect-secrets](https://github.com/Yelp/detect-secrets) | Application and cloud security | oss | needs-review |
-| [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | needs-review |
+| [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | active |
 | [DigiCert](https://www.digicert.com/) | Application and cloud security | unknown | needs-review |
 | [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) | Application and cloud security | oss | needs-review |
 | [Dockle](https://containers.goodwith.tech) | Application and cloud security | oss | active |
-| [Doppler](https://www.doppler.com) | IAM, secrets and certificate management | unknown | needs-review |
+| [Doppler](https://www.doppler.com) | IAM, secrets and certificate management | commercial | active |
 | [Dradis Community Edition](https://dradis.com/ce/) | Application and cloud security | open-core | active |
 | [Drata](https://drata.com/) | Application and cloud security | commercial | active |
 | [Entrust Cryptographic Security Platform Key Manager](https://www.entrust.com/products/key-management) | IAM, secrets and certificate management | commercial | active |
@@ -90,7 +90,7 @@
 | [GUAC](https://guac.sh) | Application and cloud security | oss | needs-review |
 | [Guardon](https://github.com/guardon-dev/guardon) | Application and cloud security | oss | needs-review |
 | [Hashcat](https://hashcat.net/hashcat/) | Application and cloud security | oss | active |
-| [HashiCorp Boundary](https://boundaryproject.io) | IAM, secrets and certificate management | source-available | needs-review |
+| [HashiCorp Boundary](https://developer.hashicorp.com/boundary) | IAM, secrets and certificate management | source-available | needs-review |
 | [HashiCorp Vault Community Edition](https://developer.hashicorp.com/vault) | IAM, secrets and certificate management | source-available | active |
 | [hcxdumptool](https://github.com/ZerBea/hcxdumptool) | Application and cloud security | oss | active |
 | [hcxtools](https://github.com/ZerBea/hcxtools) | Application and cloud security | oss | active |
@@ -103,7 +103,7 @@
 | [ISMS Builder](https://www.isms-builder.com) | Application and cloud security | oss | active |
 | [JARVIS OS](https://www.jarvisoslinux.org/) | Application and cloud security | oss | active |
 | [John the Ripper](https://www.openwall.com/john/) | Application and cloud security | oss | active |
-| [JumpServer](https://www.jumpserver.com) | IAM, secrets and certificate management | oss | needs-review |
+| [JumpServer](https://www.jumpserver.com) | IAM, secrets and certificate management | open-core | active |
 | [k-guard](https://github.com/KamouloxPelvis/k-guard) | Application and cloud security | oss | needs-review |
 | [k8s Sidecar Secret Forge](https://github.com/stegianna/k8s-sidecar-secret-forge) | Application and cloud security | oss | needs-review |
 | [k8scout](https://github.com/k8scout/k8scout) | Application and cloud security | oss | needs-review |
@@ -130,7 +130,7 @@
 | [Metasploit Framework](https://www.metasploit.com/) | Application and cloud security | oss | active |
 | [MFASweep](https://github.com/dafthack/MFASweep) | Application and cloud security | oss | needs-review |
 | [mitmproxy](https://mitmproxy.org) | Application and cloud security | oss | needs-review |
-| [mkcert](https://github.com/FiloSottile/mkcert) | IAM, secrets and certificate management | oss | needs-review |
+| [mkcert](https://mkcert.dev) | IAM, secrets and certificate management | oss | needs-review |
 | [ModSecurity](https://modsecurity.org) | Application and cloud security | oss | needs-review |
 | [NAXSI (WAF for NGINX)](https://github.com/wargio/naxsi) | Application and cloud security | oss | needs-review |
 | [NetBird](https://netbird.io/) | Application and cloud security | open-core | active |
@@ -146,11 +146,11 @@
 | [Omni](https://www.siderolabs.com/omni) | Application and cloud security | source-available | needs-review |
 | [Open Policy Agent](https://www.openpolicyagent.org) | Application and cloud security | oss | needs-review |
 | [open-appsec](https://www.openappsec.io) | Application and cloud security | oss | needs-review |
-| [OpenBao](https://openbao.org) | IAM, secrets and certificate management | oss | needs-review |
+| [OpenBao](https://openbao.org) | IAM, secrets and certificate management | oss | active |
 | [OpenSCAP](https://www.open-scap.org) | Application and cloud security | oss | needs-review |
 | [OpenSCAP Tools](https://www.open-scap.org/tools) | Application and cloud security | oss | needs-review |
 | [OpenSSH](https://www.openssh.org) | IAM, secrets and certificate management | oss | needs-review |
-| [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) | IAM, secrets and certificate management | oss | needs-review |
+| [OpenStack Barbican](https://docs.openstack.org/barbican/latest/) | IAM, secrets and certificate management | oss | active |
 | [OpenText Fortify Static Code Analyzer](https://www.opentext.com/products/static-application-security-testing) | Application and cloud security | commercial | active |
 | [OpenZiti](https://netfoundry.io/docs/openziti) | Application and cloud security | oss | needs-review |
 | [OPNsense](https://opnsense.org/opnsense/) | Application and cloud security | oss | active |
