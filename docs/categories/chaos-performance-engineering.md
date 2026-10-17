@@ -48,19 +48,20 @@ Managed Azure service for validating application resilience with controlled disr
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you want a CNCF-backed, Kubernetes-native chaos platform with a dashboard and CRD-based workflows. ❌ **Avoid when** your workloads aren't on Kubernetes or you need bare-metal/VM-level experiments.
+Apache-2.0 Kubernetes chaos platform using CRDs, a controller manager, an optional dashboard and node daemons for pod, network, IO, time, stress and supported external faults.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need Kubernetes CRD workflows, schedules and status checks with explicit selectors and namespace-scoped experiment permissions.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You cannot authorize privileged Chaos Daemon operations, scope RBAC and selectors, retain dashboard authentication, monitor health and recover faults; test-environment success does not authorize production experiments.
+- You need a standalone host CLI without a Kubernetes management plane; supported physical-machine and cloud targets require their own configuration and permissions.
 
-[Official site](https://chaos-mesh.org) · [Source repository](https://github.com/chaos-mesh/chaos-mesh)
+[Official site](https://chaos-mesh.org) · [Documentation](https://chaos-mesh.org/docs/) · [Source repository](https://github.com/chaos-mesh/chaos-mesh)
 
 ### Chaos Monkey
 
@@ -69,17 +70,18 @@ Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you wan
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Tool for randomly terminating instances to test resilience. ✅ **Use when** you want simple, continuous instance-termination tests to validate auto-scaling and failover. ❌ **Avoid when** you need fault types beyond instance killing or aren't running on Spinnaker.
+Apache-2.0 Netflix tool for scheduled instance termination through Spinnaker, with MySQL state; current maintenance/support remains inconclusive despite an active lifecycle declaration.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You evaluate the historical Spinnaker-integrated termination workflow and can independently confirm compatibility, maintenance and scoped cloud or container credentials.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a general Kubernetes pod-chaos controller or broad fault injection; this version requires Spinnaker-managed applications, MySQL and cron scheduling, and provider support must be validated.
+- You require confirmed current support: the unarchived repository, active OSSMETADATA and January 2025 release do not establish ongoing maintenance; instance termination requires explicit authorization and recovery capacity.
 
-[Official site](https://netflix.github.io/chaosmonkey) · [Source repository](https://github.com/Netflix/chaosmonkey)
+[Official site](https://netflix.github.io/chaosmonkey) · [Documentation](https://netflix.github.io/chaosmonkey/) · [Source repository](https://github.com/Netflix/chaosmonkey)
 
 ### Chaos Room
 
@@ -105,38 +107,38 @@ Chaos engineering tool. ✅ **Use when** you want a lightweight, experimental ch
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open-source chaos engineering toolkit for building reliability experiments. ✅ **Use when** you want declarative, version-controlled experiments that are CI/CD-friendly and platform-agnostic. ❌ **Avoid when** you need real-time orchestration or a rich UI—it's primarily CLI/JSON-driven.
+Apache-2.0 Chaos Toolkit core CLI orchestrates declarative experiments, probes, actions, steady-state checks and rollbacks through separately installed extensions.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You author version-controlled resilience experiments and review each extension, target credentials, probes and rollback actions before execution.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You expect the core licence or maintenance status to cover every third-party extension, or assume rollback guarantees recovery; extensions and experiments execute with the supplied credentials and local privileges.
 
-[Official site](https://chaostoolkit.org) · [Source repository](https://github.com/chaostoolkit/chaostoolkit)
+[Official site](https://chaostoolkit.org) · [Documentation](https://chaostoolkit.org/reference/concepts/) · [Source repository](https://github.com/chaostoolkit/chaostoolkit)
 
 ### ChaosBlade
 
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Chaos engineering platform with comprehensive fault injection capabilities. ✅ **Use when** you need broad fault injection (OS, JVM, Docker, K8s) in a single CLI tool. ❌ **Avoid when** you need a polished UI-driven workflow or strong English-language community support.
+Apache-2.0 ChaosBlade CLI manages fault experiments through separate OS, process, network, container and JVM executors; Kubernetes scenarios require the ChaosBlade operator.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need scoped system or application faults and can install the appropriate executor, or the Kubernetes operator for CRD-based scenarios.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You assume the core CLI alone provides every executor or platform UI, or cannot authorize host, runtime, process-attach or Kubernetes permissions required by the selected fault; restrict the HTTP control endpoint and plan destroy/revoke recovery.
 
-[Official site](https://chaosblade.io/en) · [Source repository](https://github.com/chaosblade-io/chaosblade)
+[Official site](https://chaosblade.io/en) · [Documentation](https://github.com/chaosblade-io/chaosblade/blob/master/README.md) · [Source repository](https://github.com/chaosblade-io/chaosblade)
 
 ### Gremlin
 
@@ -176,62 +178,64 @@ CLI benchmark runner for repeated command timing and statistical comparison.
 
 [Documentation](https://github.com/sharkdp/hyperfine/blob/master/README.md) · [Source repository](https://github.com/sharkdp/hyperfine)
 
-### iPerf
+### iPerf3 (ESnet)
 
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Network performance measurement tool.
+ESnet iPerf3 client/server measures network throughput using TCP, UDP and supported SCTP; core BSD-3-Clause-LBNL terms include an enhancement clause, with separate bundled-component notices.
 
 **Use when**
 
-- Measuring real network throughput between two endpoints.
+- You measure throughput between authorized endpoints with controlled protocol, duration, rate and host/network conditions.
 
 **Consider alternatives when**
 
-- Confusing iPerf results with application-level performance — it tests raw bandwidth, not app behavior.
+- You need chaos fault injection, application-level performance guarantees or compatibility with iPerf2; iPerf3 is a separate implementation with an incompatible protocol.
+- You cannot authorize traffic on both endpoints or bound bandwidth and CPU impact; protect server access and credentials, and do not assume ESnet supports third-party Windows binaries.
 
-[Official site](https://iperf.fr/iperf-download.php) · [Source repository](https://github.com/esnet/iperf)
+[Official site](https://software.es.net/iperf/) · [Documentation](https://software.es.net/iperf/) · [Source repository](https://github.com/esnet/iperf)
 
 ### Kube Monkey
 
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, opt-in pod-killing schedule for Kubernetes with minimal setup. ❌ **Avoid when** you need network/IO faults or fine-grained experiment control beyond random pod deletion.
+Apache-2.0 Kubernetes pod-disruption service using opt-in application labels, scheduled termination windows and namespace filters; distinct from Netflix Chaos Monkey.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You test replacement and recovery of opted-in Kubernetes workloads with suitable replicas, controllers, namespace scope and an explicit termination schedule.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need cloud-instance termination or network/IO faults, or cannot grant pod-deletion RBAC and verify workload recovery; dry-run defaults and namespace filters do not guarantee availability or PodDisruptionBudget protection.
 
-[Source repository](https://github.com/asobti/kube-monkey)
+[Documentation](https://asobti.github.io/kube-monkey/) · [Source repository](https://github.com/asobti/kube-monkey)
 
 ### KubeInvaders
 
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Gamified chaos engineering for Kubernetes. ✅ **Use when** you want a fun, visual way to introduce chaos engineering concepts in workshops or game days. ❌ **Avoid when** you need automated, scheduled, or CI-integrated chaos experiments.
+Apache-2.0 web interface for gamified Kubernetes pod deletion and node chaos jobs, with a simulated demo mode and separate real-cluster credentials.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You teach Kubernetes recovery or run an authorized game day using explicit target namespaces, reviewed RBAC and bounded node-chaos job definitions.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You equate a game UI with production readiness or security; real-cluster mode needs protected API credentials, restricted UI access and least-privilege RBAC, and node chaos jobs can disrupt hosts.
+- You expect namespace selection to narrow the supplied ClusterRoleBinding, or disable TLS certificate verification; review the broad sample RBAC and optional KubeVirt restart rights before deployment.
 
-[Source repository](https://github.com/lucky-sideburn/kubeinvaders)
+[Documentation](https://github.com/lucky-sideburn/kubeinvaders/blob/master/README.md) · [Source repository](https://github.com/lucky-sideburn/kubeinvaders)
 
 ### KWOK
 
@@ -352,19 +356,20 @@ HTTP load-generation CLI with an interactive results display.
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Chaos testing, network emulation, and stress testing tool for containers.
+Apache-2.0 CLI for Linux-container disruption, network emulation and resource stress through Docker, containerd and Podman runtime APIs.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need selected container kill, stop or pause actions, or controlled tc/netem and iptables faults with compatible helper images and runtime access.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You cannot grant Docker socket or equivalent runtime access and required capabilities such as NET_ADMIN; these permissions can affect the host and neighboring containers.
+- You need a Kubernetes-native CRD controller or Windows-container chaos; DaemonSet deployment remains runtime-level execution, containerd sidecars require root and network/stress actions need rootful Podman.
 
-[Source repository](https://github.com/alexei-led/pumba)
+[Documentation](https://github.com/alexei-led/pumba/blob/master/README.md) · [Source repository](https://github.com/alexei-led/pumba)
 
 ### strace-tui
 
@@ -409,19 +414,20 @@ Simple workload generator for POSIX systems.
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Stress test tool for a wide range of subsystems.
+GPL-2.0-or-later system stress generator exercising CPU, memory, filesystem, kernel and other resources on supported Unix-like platforms; throughput counters are not a precise benchmark suite.
 
 **Use when**
 
-- Comprehensive, configurable stress testing across CPU, memory, I/O, and more.
+- You investigate kernel or hardware behavior under controlled resource pressure and select platform-supported stressors with bounded duration and monitoring.
 
 **Consider alternatives when**
 
-- In production without resource limits — it can easily OOM-kill critical processes.
+- You need precise benchmark accuracy or production-safe operation; stressors can cause thermal load, resource exhaustion and difficult-to-stop thrashing.
+- You cannot accept host impact or privilege-dependent behavior; root changes Linux OOM protection and enables additional operations, while available stressors depend on platform and build libraries.
 
-[Source repository](https://github.com/ColinIanKing/stress-ng)
+[Documentation](https://github.com/ColinIanKing/stress-ng/blob/master/README.md) · [Source repository](https://github.com/ColinIanKing/stress-ng)
 
 ### stressapptest
 
@@ -466,16 +472,17 @@ Disk stress testing utility.
 **Categories:** Chaos and performance engineering<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Framework for simulating network conditions and toxic network behavior. ✅ **Use when** you want to inject network faults (latency, timeouts, bandwidth limits) in integration/CI tests. ❌ **Avoid when** you need infrastructure-level chaos beyond the network layer or production-scale distributed experiments.
+MIT-licensed TCP proxy with an HTTP control API for injecting stream latency, bandwidth limits, timeouts, resets and other faults into connections routed through it.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You route application TCP connections through a controllable proxy for reproducible dependency-failure tests.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need universal network emulation, UDP or host-wide packet faults, or expect proxy tests to guarantee resilience; only proxied TCP streams are affected.
+- You cannot restrict the HTTP control API: it is unauthenticated by default, can target arbitrary upstreams and should use network isolation and the documented optional bearer token.
 
-[Source repository](https://github.com/Shopify/toxiproxy)
+[Documentation](https://github.com/Shopify/toxiproxy/blob/main/README.md) · [Source repository](https://github.com/Shopify/toxiproxy)

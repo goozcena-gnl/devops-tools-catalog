@@ -109,11 +109,11 @@
 - [CertMate](https://www.certmate.org) — Certificate management automation.
 - [CFEngine](https://cfengine.com) — Policy-based configuration management; community + commercial editions.
 - [changedetection.io](https://changedetection.io/) — Website change-monitoring service with self-hosted and hosted deployment options.
-- [Chaos Mesh](https://chaos-mesh.org) — Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you want a CNCF-backed, Kubernetes-native chaos platform with a dashboard and CRD-based workflows. ❌ **Avoid when** your workloads aren't on Kubernetes or you need bare-metal/VM-level experiments.
-- [Chaos Monkey](https://netflix.github.io/chaosmonkey) — Tool for randomly terminating instances to test resilience. ✅ **Use when** you want simple, continuous instance-termination tests to validate auto-scaling and failover. ❌ **Avoid when** you need fault types beyond instance killing or aren't running on Spinnaker.
+- [Chaos Mesh](https://chaos-mesh.org) — Apache-2.0 Kubernetes chaos platform using CRDs, a controller manager, an optional dashboard and node daemons for pod, network, IO, time, stress and supported external faults.
+- [Chaos Monkey](https://netflix.github.io/chaosmonkey) — Apache-2.0 Netflix tool for scheduled instance termination through Spinnaker, with MySQL state; current maintenance/support remains inconclusive despite an active lifecycle declaration.
 - [Chaos Room](https://github.com/fpaparoni/chaos-room) — Chaos engineering tool. ✅ **Use when** you want a lightweight, experimental chaos tool for learning or small projects. ❌ **Avoid when** you need production-grade reliability, active maintenance, or broad fault coverage.
-- [Chaos Toolkit](https://chaostoolkit.org) — Open-source chaos engineering toolkit for building reliability experiments. ✅ **Use when** you want declarative, version-controlled experiments that are CI/CD-friendly and platform-agnostic. ❌ **Avoid when** you need real-time orchestration or a rich UI—it's primarily CLI/JSON-driven.
-- [ChaosBlade](https://chaosblade.io/en) — Chaos engineering platform with comprehensive fault injection capabilities. ✅ **Use when** you need broad fault injection (OS, JVM, Docker, K8s) in a single CLI tool. ❌ **Avoid when** you need a polished UI-driven workflow or strong English-language community support.
+- [Chaos Toolkit](https://chaostoolkit.org) — Apache-2.0 Chaos Toolkit core CLI orchestrates declarative experiments, probes, actions, steady-state checks and rollbacks through separately installed extensions.
+- [ChaosBlade](https://chaosblade.io/en) — Apache-2.0 ChaosBlade CLI manages fault experiments through separate OS, process, network, container and JVM executors; Kubernetes scenarios require the ChaosBlade operator.
 - [Checkmate](https://checkmate.so/) — Self-hosted uptime and infrastructure monitoring platform with incidents, status pages, and host metrics.
 - [checkmk](https://checkmk.com) — IT monitoring platform with open source Raw Edition and paid enterprise editions.
 - [Chef Infra](https://www.chef.io/products/chef-infra) — Commercially distributed infrastructure configuration-management tooling with separately Apache-licensed upstream source.
@@ -312,7 +312,7 @@
 - [InfluxData](https://www.influxdata.com) — Time series platform with OSS components and commercial cloud/enterprise offerings.
 - [InfraHQ](https://infrahq.com) — Identity-aware access management / access proxy for infrastructure.
 - [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) — Translate Ingress and provider-specific resources into Gateway API manifests.
-- [iPerf](https://iperf.fr/iperf-download.php) — Network performance measurement tool.
+- [iPerf3 (ESnet)](https://software.es.net/iperf/) — ESnet iPerf3 client/server measures network throughput using TCP, UDP and supported SCTP; core BSD-3-Clause-LBNL terms include an enhancement clause, with separate bundled-component notices.
 - [ipman](https://dialohq.github.io/ipman/) — Kubernetes operator that establishes encrypted IPsec connectivity between selected cluster networks.
 - [Istio](https://istio.io) — Service mesh with an Istiod control plane and sidecar or ambient data planes for service traffic, security and telemetry; distinct from Envoy Proxy, Envoy Gateway and the Gateway API specification.
 - [Jaeger](https://www.jaegertracing.io) — Open-source distributed tracing backend with trace storage, query APIs and UI; current Jaeger builds on the OpenTelemetry Collector framework and accepts OpenTelemetry instrumentation.
@@ -391,7 +391,7 @@
 - [kuba](https://github.com/hcgatewood/kuba) — Fuzzy, multi-cluster kubectl companion for faster day-to-day Kubernetes operations.
 - [kubara](https://kubara.io/) — Open-source GitOps-first CLI for packaging, generating, and bootstrapping reusable Kubernetes platform architectures.
 - [Kube Copilot](https://github.com/feiskyer/kube-copilot) — AI assistant for Kubernetes operations.
-- [Kube Monkey](https://github.com/asobti/kube-monkey) — Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, opt-in pod-killing schedule for Kubernetes with minimal setup. ❌ **Avoid when** you need network/IO faults or fine-grained experiment control beyond random pod deletion.
+- [Kube Monkey](https://github.com/asobti/kube-monkey) — Apache-2.0 Kubernetes pod-disruption service using opt-in application labels, scheduled termination windows and namespace filters; distinct from Netflix Chaos Monkey.
 - [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
 - [kube-bench](https://github.com/aquasecurity/kube-bench) — Aqua Security tool that checks Kubernetes node configuration against selected CIS benchmark profiles; it implements checks and does not define the CIS standard or certify full compliance.
 - [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Exports precomputed Kubernetes cluster binpacking metrics.
@@ -422,7 +422,7 @@
 - [Kubeflow](https://www.kubeflow.org) — ML workflows on Kubernetes.
 - [KubeGUI](https://kubegui.net) — Open-source standalone desktop client for managing multiple Kubernetes clusters and their resources.
 - [KubeHatch](https://vclusterlabs-experiments.github.io/kubehatch/) — Experimental open-source internal developer portal for provisioning and managing ephemeral vCluster-based Kubernetes environments.
-- [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) — Gamified chaos engineering for Kubernetes. ✅ **Use when** you want a fun, visual way to introduce chaos engineering concepts in workshops or game days. ❌ **Avoid when** you need automated, scheduled, or CI-integrated chaos experiments.
+- [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) — Apache-2.0 web interface for gamified Kubernetes pod deletion and node chaos jobs, with a simulated demo mode and separate real-cluster credentials.
 - [KubeKey](https://github.com/kubesphere/kubekey) — Command-line tool for installing Kubernetes, KubeSphere, and related cluster add-ons across Linux hosts.
 - [KubeLinter](https://docs.kubelinter.io/) — Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
 - [kubelogin (int128)](https://github.com/int128/kubelogin) — Kubernetes exec credential plugin for interactive OpenID Connect authentication and token refresh.
@@ -627,7 +627,7 @@
 - [Proxmox Virtual Environment (VE)](https://github.com/proxmox) — Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
 - [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) — Proxmox optimization utilities.
 - [Pulse](https://pulserelay.pro) — Self-hosted infrastructure monitoring workspace for Proxmox, Docker, Kubernetes, TrueNAS, hosts, and alerts, with a separate commercial Pulse Pro edition.
-- [Pumba](https://github.com/alexei-led/pumba) — Chaos testing, network emulation, and stress testing tool for containers.
+- [Pumba](https://github.com/alexei-led/pumba) — Apache-2.0 CLI for Linux-container disruption, network emulation and resource stress through Docker, containerd and Podman runtime APIs.
 - [Puppet](https://puppet.com) — Configuration management and automation; open source core with enterprise features.
 - [pv-migrate](https://github.com/utkuozdemir/pv-migrate) — CLI tool for migrating data between Kubernetes Persistent Volumes.
 - [Python](https://www.python.org/) — Programming language and reference runtime widely used for infrastructure automation and operational tooling.
@@ -714,7 +714,7 @@
 - [strace-tui](https://github.com/Rodrigodd/strace-tui) — Terminal UI for visualizing and exploring `strace` output.
 - [Stratoshark](https://stratoshark.org/) — System-call and log analyzer from the Wireshark project for inspecting captured system activity.
 - [stress](https://github.com/resurrecting-open-source-projects/stress) — Simple workload generator for POSIX systems.
-- [stress-ng](https://github.com/ColinIanKing/stress-ng) — Stress test tool for a wide range of subsystems.
+- [stress-ng](https://github.com/ColinIanKing/stress-ng) — GPL-2.0-or-later system stress generator exercising CPU, memory, filesystem, kernel and other resources on supported Unix-like platforms; throughput counters are not a precise benchmark suite.
 - [stressapptest](https://github.com/stressapptest/stressapptest) — Memory and I/O stress test tool.
 - [stressdisk](https://github.com/ncw/stressdisk) — Disk stress testing utility.
 - [Strimzi](https://strimzi.io) — Apache Kafka on Kubernetes operator.
@@ -747,7 +747,7 @@
 - [TiKV](https://tikv.org) — Distributed transactional key-value database with horizontal scalability and strong consistency.
 - [Tinkerbell](https://tinkerbell.org/) — Bare-metal provisioning stack for declarative machine installation workflows.
 - [Tinyauth](https://tinyauth.app/) — Lightweight self-hosted authentication gateway for protecting applications behind a reverse proxy.
-- [Toxiproxy](https://github.com/Shopify/toxiproxy) — Framework for simulating network conditions and toxic network behavior. ✅ **Use when** you want to inject network faults (latency, timeouts, bandwidth limits) in integration/CI tests. ❌ **Avoid when** you need infrastructure-level chaos beyond the network layer or production-scale distributed experiments.
+- [Toxiproxy](https://github.com/Shopify/toxiproxy) — MIT-licensed TCP proxy with an HTTP control API for injecting stream latency, bandwidth limits, timeouts, resets and other faults into connections routed through it.
 - [Tracetest](https://tracetest.io) — Trace-based testing for distributed systems.
 - [Traefik Proxy](https://traefik.io/traefik) — Reverse proxy and ingress controller with dynamic service discovery.
 - [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) — Kubernetes backup and recovery platform.

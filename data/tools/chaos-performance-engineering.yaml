@@ -68,9 +68,8 @@
   needs_review: false
 - id: chaos-mesh
   name: Chaos Mesh
-  summary: Cloud-native chaos engineering platform for Kubernetes. ✅ **Use when** you want a CNCF-backed,
-    Kubernetes-native chaos platform with a dashboard and CRD-based workflows. ❌ **Avoid when** your workloads
-    aren't on Kubernetes or you need bare-metal/VM-level experiments.
+  summary: Apache-2.0 Kubernetes chaos platform using CRDs, a controller manager, an optional dashboard
+    and node daemons for pod, network, IO, time, stress and supported external faults.
   official_url: https://chaos-mesh.org
   repository_url: https://github.com/chaos-mesh/chaos-mesh
   categories:
@@ -83,24 +82,43 @@
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need Kubernetes CRD workflows, schedules and status checks with explicit selectors and namespace-scoped
+    experiment permissions.
+  avoid_when:
+  - You cannot authorize privileged Chaos Daemon operations, scope RBAC and selectors, retain dashboard
+    authentication, monitor health and recover faults; test-environment success does not authorize production
+    experiments.
+  - You need a standalone host CLI without a Kubernetes management plane; supported physical-machine and
+    cloud targets require their own configuration and permissions.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-17'
   sources:
   - legacy:8_Chaos-Engineering/README.md#L10
   - legacy:devopstools_final.md#L1163
-  needs_review: true
+  - https://github.com/chaos-mesh/chaos-mesh
+  - https://github.com/chaos-mesh/chaos-mesh/blob/master/README.md
+  - https://github.com/chaos-mesh/chaos-mesh/blob/master/LICENSE
+  - https://chaos-mesh.org/docs/
+  - https://github.com/chaos-mesh/chaos-mesh/releases
+  - https://github.com/chaos-mesh/chaos-mesh/blob/master/GOVERNANCE.md
+  - https://github.com/chaos-mesh/chaos-mesh/blob/master/MAINTAINERS.md
+  - https://chaos-mesh.org/docs/manage-user-permissions/
+  - https://chaos-mesh.org/docs/configure-enabled-namespace/
+  needs_review: false
+  license_spdx: Apache-2.0
+  repository_archived: false
+  documentation_url: https://chaos-mesh.org/docs/
 - id: chaos-monkey
   name: Chaos Monkey
-  summary: Tool for randomly terminating instances to test resilience. ✅ **Use when** you want simple,
-    continuous instance-termination tests to validate auto-scaling and failover. ❌ **Avoid when** you
-    need fault types beyond instance killing or aren't running on Spinnaker.
+  summary: Apache-2.0 Netflix tool for scheduled instance termination through Spinnaker, with MySQL state;
+    current maintenance/support remains inconclusive despite an active lifecycle declaration.
   official_url: https://netflix.github.io/chaosmonkey
   repository_url: https://github.com/Netflix/chaosmonkey
   categories:
@@ -113,19 +131,39 @@
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You evaluate the historical Spinnaker-integrated termination workflow and can independently confirm
+    compatibility, maintenance and scoped cloud or container credentials.
+  avoid_when:
+  - You need a general Kubernetes pod-chaos controller or broad fault injection; this version requires
+    Spinnaker-managed applications, MySQL and cron scheduling, and provider support must be validated.
+  - 'You require confirmed current support: the unarchived repository, active OSSMETADATA and January
+    2025 release do not establish ongoing maintenance; instance termination requires explicit authorization
+    and recovery capacity.'
+  deployment_models:
+  - cli
+  - self-hosted
   license_model: oss
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-17'
   sources:
   - legacy:8_Chaos-Engineering/README.md#L18
   - legacy:devopstools_final.md#L1168
+  - https://github.com/Netflix/chaosmonkey
+  - https://github.com/Netflix/chaosmonkey/blob/master/README.md
+  - https://github.com/Netflix/chaosmonkey/blob/master/LICENSE
+  - https://netflix.github.io/chaosmonkey/
+  - https://github.com/Netflix/chaosmonkey/releases
+  - https://github.com/Netflix/chaosmonkey/blob/master/NOTICE
+  - https://github.com/Netflix/chaosmonkey/blob/master/OSSMETADATA
+  - https://github.com/Netflix/chaosmonkey/blob/master/docs/How-to-deploy.md
   needs_review: true
+  license_spdx: Apache-2.0
+  repository_archived: false
+  documentation_url: https://netflix.github.io/chaosmonkey/
 - id: chaos-room
   name: Chaos Room
   summary: Chaos engineering tool. ✅ **Use when** you want a lightweight, experimental chaos tool for
@@ -157,9 +195,8 @@
   needs_review: true
 - id: chaos-toolkit
   name: Chaos Toolkit
-  summary: Open-source chaos engineering toolkit for building reliability experiments. ✅ **Use when**
-    you want declarative, version-controlled experiments that are CI/CD-friendly and platform-agnostic.
-    ❌ **Avoid when** you need real-time orchestration or a rich UI—it's primarily CLI/JSON-driven.
+  summary: Apache-2.0 Chaos Toolkit core CLI orchestrates declarative experiments, probes, actions, steady-state
+    checks and rollbacks through separately installed extensions.
   official_url: https://chaostoolkit.org
   repository_url: https://github.com/chaostoolkit/chaostoolkit
   categories:
@@ -172,24 +209,40 @@
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You author version-controlled resilience experiments and review each extension, target credentials,
+    probes and rollback actions before execution.
+  avoid_when:
+  - You expect the core licence or maintenance status to cover every third-party extension, or assume
+    rollback guarantees recovery; extensions and experiments execute with the supplied credentials and
+    local privileges.
+  deployment_models:
+  - cli
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-17'
   sources:
   - legacy:8_Chaos-Engineering/README.md#L12
   - legacy:devopstools_final.md#L1164
-  needs_review: true
+  - https://github.com/chaostoolkit/chaostoolkit
+  - https://github.com/chaostoolkit/chaostoolkit/blob/master/README.md
+  - https://github.com/chaostoolkit/chaostoolkit/blob/master/LICENSE
+  - https://chaostoolkit.org/reference/concepts/
+  - https://github.com/chaostoolkit/chaostoolkit/releases
+  - https://chaostoolkit.org/drivers/overview/
+  - https://chaostoolkit.org/reference/contributing/
+  needs_review: false
+  license_spdx: Apache-2.0
+  repository_archived: false
+  documentation_url: https://chaostoolkit.org/reference/concepts/
 - id: chaosblade
   name: ChaosBlade
-  summary: Chaos engineering platform with comprehensive fault injection capabilities. ✅ **Use when**
-    you need broad fault injection (OS, JVM, Docker, K8s) in a single CLI tool. ❌ **Avoid when** you need
-    a polished UI-driven workflow or strong English-language community support.
+  summary: Apache-2.0 ChaosBlade CLI manages fault experiments through separate OS, process, network,
+    container and JVM executors; Kubernetes scenarios require the ChaosBlade operator.
   official_url: https://chaosblade.io/en
   repository_url: https://github.com/chaosblade-io/chaosblade
   categories:
@@ -202,19 +255,36 @@
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need scoped system or application faults and can install the appropriate executor, or the Kubernetes
+    operator for CRD-based scenarios.
+  avoid_when:
+  - You assume the core CLI alone provides every executor or platform UI, or cannot authorize host, runtime,
+    process-attach or Kubernetes permissions required by the selected fault; restrict the HTTP control
+    endpoint and plan destroy/revoke recovery.
+  deployment_models:
+  - cli
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-17'
   sources:
   - legacy:8_Chaos-Engineering/README.md#L8
   - legacy:devopstools_final.md#L1162
-  needs_review: true
+  - https://github.com/chaosblade-io/chaosblade
+  - https://github.com/chaosblade-io/chaosblade/blob/master/README.md
+  - https://github.com/chaosblade-io/chaosblade/blob/master/LICENSE
+  - https://github.com/chaosblade-io/chaosblade/releases
+  - https://github.com/chaosblade-io/chaosblade/blob/master/GOVERNANCE.md
+  - https://github.com/chaosblade-io/chaosblade/blob/master/MAINTAINERS.md
+  - https://www.cncf.io/projects/chaosblade/
+  needs_review: false
+  license_spdx: Apache-2.0
+  repository_archived: false
+  documentation_url: https://github.com/chaosblade-io/chaosblade/blob/master/README.md
 - id: gremlin
   name: Gremlin
   summary: Reliability management and resilience testing platform with controlled fault injection and
@@ -287,9 +357,10 @@
   verified_on: '2026-09-08'
   needs_review: false
 - id: iperf
-  name: iPerf
-  summary: Network performance measurement tool.
-  official_url: https://iperf.fr/iperf-download.php
+  name: iPerf3 (ESnet)
+  summary: ESnet iPerf3 client/server measures network throughput using TCP, UDP and supported SCTP; core
+    BSD-3-Clause-LBNL terms include an enhancement clause, with separate bundled-component notices.
+  official_url: https://software.es.net/iperf/
   repository_url: https://github.com/esnet/iperf
   categories:
   - chaos-performance-engineering
@@ -302,25 +373,42 @@
   - test
   - operate
   use_when:
-  - Measuring real network throughput between two endpoints.
+  - You measure throughput between authorized endpoints with controlled protocol, duration, rate and host/network
+    conditions.
   avoid_when:
-  - Confusing iPerf results with application-level performance — it tests raw bandwidth, not app behavior.
-  deployment_models: []
+  - You need chaos fault injection, application-level performance guarantees or compatibility with iPerf2;
+    iPerf3 is a separate implementation with an incompatible protocol.
+  - You cannot authorize traffic on both endpoints or bound bandwidth and CPU impact; protect server access
+    and credentials, and do not assume ESnet supports third-party Windows binaries.
+  deployment_models:
+  - cli
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-17'
   sources:
   - legacy:1_Foundational-Skills/README.md#L63
   - legacy:devopstools_final.md#L145
-  needs_review: true
+  - https://iperf.fr/iperf-download.php
+  - https://github.com/esnet/iperf
+  - https://github.com/esnet/iperf/blob/master/README.md
+  - https://github.com/esnet/iperf/blob/master/LICENSE
+  - https://software.es.net/iperf/
+  - https://github.com/esnet/iperf/releases
+  - https://software.es.net/iperf/faq.html
+  - https://software.es.net/iperf/invoking.html
+  - https://spdx.org/licenses/BSD-3-Clause-LBNL.html
+  needs_review: false
+  license_spdx: BSD-3-Clause-LBNL
+  repository_archived: false
+  documentation_url: https://software.es.net/iperf/
 - id: kube-monkey
   name: Kube Monkey
-  summary: Chaos engineering for Kubernetes clusters. ✅ **Use when** you want a simple, opt-in pod-killing
-    schedule for Kubernetes with minimal setup. ❌ **Avoid when** you need network/IO faults or fine-grained
-    experiment control beyond random pod deletion.
+  summary: Apache-2.0 Kubernetes pod-disruption service using opt-in application labels, scheduled termination
+    windows and namespace filters; distinct from Netflix Chaos Monkey.
   repository_url: https://github.com/asobti/kube-monkey
   categories:
   - chaos-performance-engineering
@@ -332,24 +420,39 @@
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You test replacement and recovery of opted-in Kubernetes workloads with suitable replicas, controllers,
+    namespace scope and an explicit termination schedule.
+  avoid_when:
+  - You need cloud-instance termination or network/IO faults, or cannot grant pod-deletion RBAC and verify
+    workload recovery; dry-run defaults and namespace filters do not guarantee availability or PodDisruptionBudget
+    protection.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-17'
   sources:
   - legacy:8_Chaos-Engineering/README.md#L22
   - legacy:devopstools_final.md#L1170
-  needs_review: true
+  - https://github.com/asobti/kube-monkey
+  - https://github.com/asobti/kube-monkey/blob/master/README.md
+  - https://github.com/asobti/kube-monkey/blob/master/LICENSE
+  - https://asobti.github.io/kube-monkey/
+  - https://github.com/asobti/kube-monkey/releases
+  - https://asobti.github.io/kube-monkey/configuration/
+  - https://asobti.github.io/kube-monkey/helm-chart/
+  needs_review: false
+  license_spdx: Apache-2.0
+  repository_archived: false
+  documentation_url: https://asobti.github.io/kube-monkey/
 - id: kubeinvaders
   name: KubeInvaders
-  summary: Gamified chaos engineering for Kubernetes. ✅ **Use when** you want a fun, visual way to introduce
-    chaos engineering concepts in workshops or game days. ❌ **Avoid when** you need automated, scheduled,
-    or CI-integrated chaos experiments.
+  summary: Apache-2.0 web interface for gamified Kubernetes pod deletion and node chaos jobs, with a simulated
+    demo mode and separate real-cluster credentials.
   repository_url: https://github.com/lucky-sideburn/kubeinvaders
   categories:
   - chaos-performance-engineering
@@ -361,19 +464,35 @@
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You teach Kubernetes recovery or run an authorized game day using explicit target namespaces, reviewed
+    RBAC and bounded node-chaos job definitions.
+  avoid_when:
+  - You equate a game UI with production readiness or security; real-cluster mode needs protected API
+    credentials, restricted UI access and least-privilege RBAC, and node chaos jobs can disrupt hosts.
+  - You expect namespace selection to narrow the supplied ClusterRoleBinding, or disable TLS certificate
+    verification; review the broad sample RBAC and optional KubeVirt restart rights before deployment.
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-17'
   sources:
   - legacy:8_Chaos-Engineering/README.md#L24
   - legacy:devopstools_final.md#L1171
-  needs_review: true
+  - https://github.com/lucky-sideburn/kubeinvaders
+  - https://github.com/lucky-sideburn/kubeinvaders/blob/master/README.md
+  - https://github.com/lucky-sideburn/kubeinvaders/blob/master/LICENSE
+  - https://github.com/lucky-sideburn/kubeinvaders/releases
+  - https://github.com/lucky-sideburn/kubeinvaders/blob/master/manifests/kubeinvaders-rbac.yaml
+  - https://github.com/lucky-sideburn/kubeinvaders/blob/master/docs/features.md
+  needs_review: false
+  license_spdx: Apache-2.0
+  repository_archived: false
+  documentation_url: https://github.com/lucky-sideburn/kubeinvaders/blob/master/README.md
 - id: memorychecker
   name: MemoryChecker
   summary: Memory testing and diagnostics tool.
@@ -490,7 +609,8 @@
   needs_review: false
 - id: pumba
   name: Pumba
-  summary: Chaos testing, network emulation, and stress testing tool for containers.
+  summary: Apache-2.0 CLI for Linux-container disruption, network emulation and resource stress through
+    Docker, containerd and Podman runtime APIs.
   repository_url: https://github.com/alexei-led/pumba
   categories:
   - chaos-performance-engineering
@@ -502,18 +622,36 @@
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need selected container kill, stop or pause actions, or controlled tc/netem and iptables faults
+    with compatible helper images and runtime access.
+  avoid_when:
+  - You cannot grant Docker socket or equivalent runtime access and required capabilities such as NET_ADMIN;
+    these permissions can affect the host and neighboring containers.
+  - You need a Kubernetes-native CRD controller or Windows-container chaos; DaemonSet deployment remains
+    runtime-level execution, containerd sidecars require root and network/stress actions need rootful
+    Podman.
+  deployment_models:
+  - cli
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-17'
   sources:
   - legacy:devopstools_final.md#L1173
-  needs_review: true
+  - https://github.com/alexei-led/pumba
+  - https://github.com/alexei-led/pumba/blob/master/README.md
+  - https://github.com/alexei-led/pumba/blob/master/LICENSE
+  - https://github.com/alexei-led/pumba/releases
+  - https://github.com/alexei-led/pumba/blob/master/docs/deployment.md
+  - https://github.com/alexei-led/pumba/blob/master/docs/network-chaos.md
+  needs_review: false
+  license_spdx: Apache-2.0
+  repository_archived: false
+  documentation_url: https://github.com/alexei-led/pumba/blob/master/README.md
 - id: strace-tui
   name: strace-tui
   summary: Terminal UI for visualizing and exploring `strace` output.
@@ -571,7 +709,8 @@
   needs_review: true
 - id: stress-ng
   name: stress-ng
-  summary: Stress test tool for a wide range of subsystems.
+  summary: GPL-2.0-or-later system stress generator exercising CPU, memory, filesystem, kernel and other
+    resources on supported Unix-like platforms; throughput counters are not a precise benchmark suite.
   repository_url: https://github.com/ColinIanKing/stress-ng
   categories:
   - chaos-performance-engineering
@@ -584,20 +723,34 @@
   - test
   - operate
   use_when:
-  - Comprehensive, configurable stress testing across CPU, memory, I/O, and more.
+  - You investigate kernel or hardware behavior under controlled resource pressure and select platform-supported
+    stressors with bounded duration and monitoring.
   avoid_when:
-  - In production without resource limits — it can easily OOM-kill critical processes.
-  deployment_models: []
+  - You need precise benchmark accuracy or production-safe operation; stressors can cause thermal load,
+    resource exhaustion and difficult-to-stop thrashing.
+  - You cannot accept host impact or privilege-dependent behavior; root changes Linux OOM protection and
+    enables additional operations, while available stressors depend on platform and build libraries.
+  deployment_models:
+  - cli
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-17'
   sources:
   - legacy:1_Foundational-Skills/README.md#L60
   - legacy:devopstools_final.md#L141
-  needs_review: true
+  - https://github.com/ColinIanKing/stress-ng
+  - https://github.com/ColinIanKing/stress-ng/blob/master/README.md
+  - https://github.com/ColinIanKing/stress-ng/blob/master/COPYING
+  - https://github.com/ColinIanKing/stress-ng/releases
+  - https://github.com/ColinIanKing/stress-ng/blob/master/stress-ng.c
+  needs_review: false
+  license_spdx: GPL-2.0-or-later
+  repository_archived: false
+  documentation_url: https://github.com/ColinIanKing/stress-ng/blob/master/README.md
 - id: stressapptest
   name: stressapptest
   summary: Memory and I/O stress test tool.
@@ -659,10 +812,8 @@
   needs_review: true
 - id: toxiproxy
   name: Toxiproxy
-  summary: Framework for simulating network conditions and toxic network behavior. ✅ **Use when** you
-    want to inject network faults (latency, timeouts, bandwidth limits) in integration/CI tests. ❌ **Avoid
-    when** you need infrastructure-level chaos beyond the network layer or production-scale distributed
-    experiments.
+  summary: MIT-licensed TCP proxy with an HTTP control API for injecting stream latency, bandwidth limits,
+    timeouts, resets and other faults into connections routed through it.
   repository_url: https://github.com/Shopify/toxiproxy
   categories:
   - chaos-performance-engineering
@@ -674,16 +825,30 @@
   lifecycle_stages:
   - test
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You route application TCP connections through a controllable proxy for reproducible dependency-failure
+    tests.
+  avoid_when:
+  - You need universal network emulation, UDP or host-wide packet faults, or expect proxy tests to guarantee
+    resilience; only proxied TCP streams are affected.
+  - 'You cannot restrict the HTTP control API: it is unauthenticated by default, can target arbitrary
+    upstreams and should use network isolation and the documented optional bearer token.'
+  deployment_models:
+  - self-hosted
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-17'
   sources:
   - legacy:8_Chaos-Engineering/README.md#L28
   - legacy:devopstools_final.md#L1174
-  needs_review: true
+  - https://github.com/Shopify/toxiproxy
+  - https://github.com/Shopify/toxiproxy/blob/main/README.md
+  - https://github.com/Shopify/toxiproxy/blob/main/LICENSE
+  - https://github.com/Shopify/toxiproxy/releases
+  needs_review: false
+  license_spdx: MIT
+  repository_archived: false
+  documentation_url: https://github.com/Shopify/toxiproxy/blob/main/README.md
