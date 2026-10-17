@@ -65,7 +65,7 @@
 | [delta](https://dandavison.github.io/delta/) | Developer experience and local environments | oss | active |
 | [Development Containers](https://containers.dev) | Developer experience and local environments | oss | needs-review |
 | [DevPod](https://devpod.sh) | Developer experience and local environments | oss | needs-review |
-| [Devtron](https://devtron.ai) | CI, build and testing | oss | needs-review |
+| [Devtron](https://devtron.ai) | CI, build and testing | open-core | active |
 | [diffyml](https://szhekpisov.github.io/diffyml/) | Developer experience and local environments | oss | active |
 | [direnv](https://direnv.net/) | Developer experience and local environments | oss | active |
 | [dive](https://github.com/wagoodman/dive) | Containers and image tooling | oss | active |
@@ -90,14 +90,14 @@
 | [GitButler](https://gitbutler.com/) | Source control and repository management, Developer experience and local environments | source-available | active |
 | [Gitea](https://about.gitea.com/) | Source control and repository management | oss | active |
 | [GitHub](https://github.com) | Source control and repository management | commercial | active |
-| [GitHub Actions](https://github.com/features/actions) | CI, build and testing | unknown | needs-review |
+| [GitHub Actions](https://github.com/features/actions) | CI, build and testing | commercial | active |
 | [GitHub CLI](https://cli.github.com) | Source control and repository management, Developer experience and local environments | oss | active |
 | [GitHub Codespaces](https://github.com/features/codespaces) | Developer experience and local environments | unknown | needs-review |
 | [GitLab](https://about.gitlab.com) | Source control and repository management | open-core | active |
-| [GitLab CI](https://docs.gitlab.com/ee/ci) | CI, build and testing | open-core | needs-review |
+| [GitLab CI](https://docs.gitlab.com/ci/) | CI, build and testing | open-core | active |
 | [GitLab University](https://university.gitlab.com) | Source control and repository management | documentation | needs-review |
 | [gitmoji](https://gitmoji.dev) | CI, build and testing | documentation | needs-review |
-| [GoCD](https://www.gocd.org) | CI, build and testing | oss | needs-review |
+| [GoCD](https://www.gocd.org) | CI, build and testing | oss | active |
 | [Godcoder](https://github.com/eli-labz/Godcoder) | Developer experience and local environments | oss | needs-review |
 | [Gogs](https://gogs.io/) | Source control and repository management | oss | active |
 | [golangci-lint](https://golangci-lint.run) | Developer experience and local environments | oss | needs-review |
@@ -114,8 +114,8 @@
 | [Insomnia](https://insomnia.rest/) | Developer experience and local environments | open-core | active |
 | [IntelliJ IDEA](https://www.jetbrains.com/idea) | Developer experience and local environments | open-core | active |
 | [Jasmine](https://jasmine.github.io/) | CI, build and testing | oss | active |
-| [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | needs-review |
-| [Jenkins X](https://jenkins-x.io) | CI, build and testing | oss | needs-review |
+| [JayeX (formerly Jenkins X)](https://jayex.io/) | CI, build and testing | oss | active |
+| [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | active |
 | [Jira](https://www.atlassian.com/software/jira) | Workflow automation and ChatOps | commercial | active |
 | [jq](https://jqlang.org) | Foundations, Linux and scripting | oss | active |
 | [JSON Crack](https://jsoncrack.com/) | Developer experience and local environments | oss | active |
@@ -143,7 +143,7 @@
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
 | [mypy](https://mypy-lang.org) | Developer experience and local environments | oss | needs-review |
 | [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | needs-review |
-| [Nektos Act](https://nektosact.com) | CI, build and testing | oss | needs-review |
+| [Nektos Act](https://nektosact.com) | CI, build and testing | oss | active |
 | [Neovim](https://neovim.io/) | Developer experience and local environments | oss | active |
 | [Ninite](https://ninite.com) | Developer experience and local environments | unknown | needs-review |
 | [Nixite](https://aspizu.github.io/nixite) | Developer experience and local environments | oss | needs-review |
@@ -155,7 +155,7 @@
 | [Okteto](https://www.okteto.com/) | Developer experience and local environments, Kubernetes distributions and operations | open-core | active |
 | [Omarchy](https://omarchy.org) | Developer experience and local environments | oss | needs-review |
 | [Ona (formerly Gitpod)](https://github.com/gitpod-io) | Developer experience and local environments | open-core | needs-review |
-| [OneDev](https://onedev.io) | CI, build and testing | oss | needs-review |
+| [OneDev](https://onedev.io) | CI, build and testing | open-core | active |
 | [Open Interpreter](https://openinterpreter.com) | Developer experience and local environments | oss | needs-review |
 | [OpenCode](https://opencode.ai) | Developer experience and local environments | oss | needs-review |
 | [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | oss | active |
@@ -187,7 +187,7 @@
 | [Scrapling](https://scrapling.readthedocs.io/en/latest) | Developer experience and local environments | oss | needs-review |
 | [Selenium](https://www.selenium.dev) | CI, build and testing | oss | needs-review |
 | [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | needs-review |
-| [Semaphore CI](https://semaphoreci.com) | CI, build and testing | unknown | needs-review |
+| [Semaphore CI](https://semaphore.io/) | CI, build and testing | open-core | active |
 | [ServerSpec](https://serverspec.org) | CI, build and testing | oss | needs-review |
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | needs-review |
 | [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
@@ -228,7 +228,7 @@
 | [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | needs-review |
 | [Windsurf](https://windsurf.com) | Developer experience and local environments | open-core | needs-review |
 | [Wine](https://www.winehq.org) | Developer experience and local environments | oss | needs-review |
-| [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | needs-review |
+| [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | active |
 | [Xray](https://www.getxray.app) | CI, build and testing | unknown | needs-review |
 | [yamllint](https://github.com/adrienverge/yamllint) | Developer experience and local environments | oss | needs-review |
 | [Yazi](https://yazi-rs.github.io) | Developer experience and local environments | oss | needs-review |

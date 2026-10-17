@@ -196,7 +196,7 @@
 | [DevOps'ish](https://devopsish.com/) | Documentation, learning and career resources | documentation | active |
 | [DevOpsCube Kubernetes Tutorials (Beginners)](https://devopscube.com/kubernetes-tutorials-beginners) | Documentation, learning and career resources | documentation | needs-review |
 | [DevPod](https://devpod.sh) | Developer experience and local environments | oss | needs-review |
-| [Devtron](https://devtron.ai) | CI, build and testing | oss | needs-review |
+| [Devtron](https://devtron.ai) | CI, build and testing | open-core | active |
 | [Diagrams](https://pypi.org/project/diagrams) | Emerging and experimental tools | oss | needs-review |
 | [diffyml](https://szhekpisov.github.io/diffyml/) | Developer experience and local environments | oss | active |
 | [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | commercial | active |
@@ -265,11 +265,11 @@
 | [Git](https://git-scm.com) | Source control and repository management | oss | needs-review |
 | [Gitea](https://about.gitea.com/) | Source control and repository management | oss | active |
 | [GitHub](https://github.com) | Source control and repository management | commercial | active |
-| [GitHub Actions](https://github.com/features/actions) | CI, build and testing | unknown | needs-review |
+| [GitHub Actions](https://github.com/features/actions) | CI, build and testing | commercial | active |
 | [GitHub CLI](https://cli.github.com) | Source control and repository management, Developer experience and local environments | oss | active |
 | [GitHub Codespaces](https://github.com/features/codespaces) | Developer experience and local environments | unknown | needs-review |
 | [GitLab](https://about.gitlab.com) | Source control and repository management | open-core | active |
-| [GitLab CI](https://docs.gitlab.com/ee/ci) | CI, build and testing | open-core | needs-review |
+| [GitLab CI](https://docs.gitlab.com/ci/) | CI, build and testing | open-core | active |
 | [GitLab University](https://university.gitlab.com) | Source control and repository management | documentation | needs-review |
 | [gitmoji](https://gitmoji.dev) | CI, build and testing | documentation | needs-review |
 | [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) | CD, GitOps, release and promotion | oss | needs-review |
@@ -278,7 +278,7 @@
 | [GlitchTip](https://glitchtip.com/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Go](https://go.dev/) | Foundations, Linux and scripting | oss | active |
 | [Go by Example](https://gobyexample.com) | Foundations, Linux and scripting | documentation | needs-review |
-| [GoCD](https://www.gocd.org) | CI, build and testing | oss | needs-review |
+| [GoCD](https://www.gocd.org) | CI, build and testing | oss | active |
 | [Godcoder](https://github.com/eli-labz/Godcoder) | Developer experience and local environments | oss | needs-review |
 | [golangci-lint](https://golangci-lint.run) | Developer experience and local environments | oss | needs-review |
 | [Goldilocks](https://goldilocks.docs.fairwinds.com/) | Kubernetes distributions and operations, Monitoring, metrics, logs and tracing | oss | active |
@@ -335,8 +335,8 @@
 | [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [jaq](https://github.com/01mf02/jaq) | Foundations, Linux and scripting | oss | active |
 | [Jasmine](https://jasmine.github.io/) | CI, build and testing | oss | active |
-| [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | needs-review |
-| [Jenkins X](https://jenkins-x.io) | CI, build and testing | oss | needs-review |
+| [JayeX (formerly Jenkins X)](https://jayex.io/) | CI, build and testing | oss | active |
+| [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | active |
 | [JFrog Artifactory](https://jfrog.com/artifactory) | Artifact and package management | open-core | needs-review |
 | [JFrog Connect](https://jfrog.com/connect/) | Artifact and package management | commercial | active |
 | [JFrog Distribution](https://jfrog.com/distribution/) | Artifact and package management | commercial | active |
@@ -442,7 +442,7 @@
 | [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | needs-review |
 | [Nagios](https://www.nagios.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Nautobot](https://docs.nautobot.com/) | Infrastructure as Code | open-core | active |
-| [Nektos Act](https://nektosact.com) | CI, build and testing | oss | needs-review |
+| [Nektos Act](https://nektosact.com) | CI, build and testing | oss | active |
 | [Neovim](https://neovim.io/) | Developer experience and local environments | oss | active |
 | [nerdctl](https://github.com/containerd/nerdctl) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | open-core | needs-review |
@@ -465,7 +465,7 @@
 | [OllyGarden](https://github.com/ollygarden) | Emerging and experimental tools | open-core | needs-review |
 | [Omarchy](https://omarchy.org) | Developer experience and local environments | oss | needs-review |
 | [Ona (formerly Gitpod)](https://github.com/gitpod-io) | Developer experience and local environments | open-core | needs-review |
-| [OneDev](https://onedev.io) | CI, build and testing | oss | needs-review |
+| [OneDev](https://onedev.io) | CI, build and testing | open-core | active |
 | [onedr0p/cluster-template](https://github.com/onedr0p/cluster-template) | Documentation, learning and career resources | oss | needs-review |
 | [Open Interpreter](https://openinterpreter.com) | Developer experience and local environments | oss | needs-review |
 | [Open Notebook](https://www.open-notebook.ai) | Documentation, learning and career resources | oss | needs-review |
@@ -580,7 +580,7 @@
 | [Selenium](https://www.selenium.dev) | CI, build and testing | oss | needs-review |
 | [selfh.st](https://selfh.st/) | Documentation, learning and career resources | documentation | active |
 | [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | needs-review |
-| [Semaphore CI](https://semaphoreci.com) | CI, build and testing | unknown | needs-review |
+| [Semaphore CI](https://semaphore.io/) | CI, build and testing | open-core | active |
 | [Sematext](https://sematext.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Sensu](https://sensu.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Sentry](https://sentry.io/welcome) | Monitoring, metrics, logs and tracing | open-core | needs-review |
@@ -692,7 +692,7 @@
 | [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | needs-review |
 | [Windsurf](https://windsurf.com) | Developer experience and local environments | open-core | needs-review |
 | [Wine](https://www.winehq.org) | Developer experience and local environments | oss | needs-review |
-| [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | needs-review |
+| [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | active |
 | [WSL container](https://learn.microsoft.com/en-us/windows/wsl/wsl-container) | Virtualization, bare metal and homelab | documentation | needs-review |
 | [WSO2 API Platform](https://wso2.com/api-platform/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Xata](https://xata.io) | Databases, caching and data infrastructure | unknown | needs-review |

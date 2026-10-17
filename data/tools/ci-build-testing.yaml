@@ -980,7 +980,8 @@
   needs_review: false
 - id: devtron
   name: Devtron
-  summary: AI-native Kubernetes platform for CI/CD, GitOps, security, observability, and day-2 operations.
+  summary: Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations,
+    plus separately offered commercial platform capabilities.
   official_url: https://devtron.ai
   repository_url: https://github.com/devtron-labs/devtron
   categories:
@@ -994,18 +995,42 @@
   lifecycle_stages:
   - build
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
+  - release
+  - deploy
+  - operate
+  use_when:
+  - You operate Kubernetes and want an integrated platform for application delivery, CI/CD, Helm and optional
+    GitOps integrations with appropriate edition controls.
+  avoid_when:
+  - You need a Kubernetes-independent CI service or assume the Apache-2.0 repository includes every Enterprise,
+    Freemium or hosted entitlement.
+  - You cannot secure cluster, registry and SCM credentials, configure RBAC, or operate the selected integrations
+    and platform prerequisites.
+  deployment_models:
+  - kubernetes
+  - enterprise-self-hosted
+  - hosted-saas
+  license_model: open-core
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-16'
   sources:
   - legacy:devopstools_final.md#L322
-  needs_review: true
+  - https://github.com/devtron-labs/devtron
+  - https://github.com/devtron-labs/devtron/blob/main/LICENSE
+  - https://github.com/devtron-labs/devtron/blob/main/README.md
+  - https://docs.devtron.ai/
+  - https://docs.devtron.ai/docs
+  - https://docs.devtron.ai/docs/setup/getting-started/initial-setup
+  - https://devtron.ai/pricing
+  - https://github.com/devtron-labs/devtron/releases
+  needs_review: false
+  documentation_url: https://docs.devtron.ai/
+  repository_archived: false
+  license_spdx: Apache-2.0
+  commercial_offering: true
 - id: drone
   name: Drone
   summary: Container-native CI/CD platform.
@@ -1112,8 +1137,8 @@
   needs_review: false
 - id: github-actions
   name: GitHub Actions
-  summary: CI/CD automation built into GitHub.
-  repository_url: https://github.com/features/actions
+  summary: GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform
+    terms separate from the MIT runner and independent action licences.
   categories:
   - ci-build-testing
   subcategories:
@@ -1125,25 +1150,48 @@
   lifecycle_stages:
   - build
   - test
+  - release
+  - deploy
   use_when:
-  - '* Your code is on GitHub and you want frictionless CI/CD with a massive marketplace.'
+  - You need GitHub workflows with GitHub-hosted or self-hosted runners on GitHub.com, or a customer-managed
+    GitHub Enterprise Server control plane with self-hosted runners.
   avoid_when:
-  - '* You need full control over runner infrastructure or are not on GitHub.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You require an entirely open-source orchestration service; the MIT-licensed runner is only one component
+    of GitHub Actions.
+  - Untrusted workflows could reach privileged tokens, secrets or persistent self-hosted machines without
+    explicit trust separation.
+  - You require GitHub-hosted runners for GitHub Enterprise Server; its Actions jobs require self-hosted
+    runners and administrator-managed platform resources.
+  deployment_models:
+  - hosted-saas
+  - self-hosted-agent
+  - enterprise-self-hosted
+  license_model: commercial
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-16'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L34
   - legacy:devopstools_final.md#L324
-  needs_review: true
+  - https://github.com/features/actions
+  - https://docs.github.com/en/actions
+  - https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features
+  - https://github.com/actions/runner/blob/main/LICENSE
+  - https://docs.github.com/en/actions/reference/security/secure-use
+  - https://docs.github.com/en/actions/concepts/runners/self-hosted-runners
+  - https://docs.github.com/en/actions/concepts/security/openid-connect
+  - https://docs.github.com/en/enterprise-server@3.21/admin/managing-github-actions-for-your-enterprise/getting-started-with-github-actions-for-your-enterprise/getting-started-with-github-actions-for-github-enterprise-server
+  needs_review: false
+  official_url: https://github.com/features/actions
+  documentation_url: https://docs.github.com/en/actions
+  commercial_offering: true
 - id: gitlab-ci
   name: GitLab CI
-  summary: CI/CD built into GitLab.
-  official_url: https://docs.gitlab.com/ee/ci
+  summary: GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, with separately
+    deployed GitLab Runner and distinct Community, Enterprise and service terms.
+  official_url: https://docs.gitlab.com/ci/
   categories:
   - ci-build-testing
   subcategories:
@@ -1155,21 +1203,42 @@
   lifecycle_stages:
   - build
   - test
+  - release
+  - deploy
   use_when:
-  - '* You use GitLab for SCM and want a single platform for code, CI/CD, and security scanning.'
+  - You use GitLab.com or GitLab Self-Managed and need YAML pipelines and runner jobs, including free
+    Community deployments or licensed Enterprise features.
   avoid_when:
-  - '* You don''t use GitLab, or you need a CI-only tool without the full platform.'
-  deployment_models: []
+  - You need a standalone CI service independent of the GitLab platform or assume every paid GitLab.com
+    feature is covered by an OSS licence.
+  - Untrusted pipeline code or shared runners can access sensitive variables or deployment infrastructure
+    without protected execution and permissions.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  - enterprise-self-hosted
+  - self-hosted-agent
   license_model: open-core
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-16'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L36
   - legacy:devopstools_final.md#L325
-  needs_review: true
+  - https://docs.gitlab.com/ci/
+  - https://gitlab.com/gitlab-org/gitlab
+  - https://gitlab.com/gitlab-org/gitlab/-/blob/master/README.md
+  - https://gitlab.com/gitlab-org/gitlab/-/blob/master/LICENSE
+  - https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/LICENSE
+  - https://docs.gitlab.com/development/licensing/
+  - https://docs.gitlab.com/ci/pipeline_security/
+  - https://docs.gitlab.com/ee/ci
+  - https://docs.gitlab.com/install/package/
+  needs_review: false
+  documentation_url: https://docs.gitlab.com/ci/
+  commercial_offering: true
 - id: gitmoji
   name: gitmoji
   summary: Standardized emoji guide for commit messages.
@@ -1203,7 +1272,8 @@
   needs_review: true
 - id: gocd
   name: GoCD
-  summary: Open-source CI/CD server.
+  summary: Apache-2.0 continuous-delivery server with agents, pipeline dependencies, materials and value-stream
+    visibility; plugins and support terms remain separate.
   official_url: https://www.gocd.org
   repository_url: https://github.com/gocd/gocd
   categories:
@@ -1217,21 +1287,39 @@
   lifecycle_stages:
   - build
   - test
+  - release
+  - deploy
   use_when:
-  - '* You need advanced pipeline modeling (fan-in/fan-out, value stream maps).'
+  - You need a self-hosted continuous-delivery server to model dependent pipelines, material provenance
+    and fan-in/fan-out delivery workflows.
   avoid_when:
-  - '* You want a large plugin ecosystem or cloud-native integrations.'
-  deployment_models: []
+  - You need only a local workflow runner or cannot operate and secure the GoCD server, agents and required
+    integrations.
+  - You rely on security maintenance for old releases; the project actively fixes security issues on its
+    most recent release.
+  deployment_models:
+  - self-hosted
+  - self-hosted-agent
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-16'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L38
   - legacy:devopstools_final.md#L326
-  needs_review: true
+  - https://github.com/gocd/gocd
+  - https://github.com/gocd/gocd/blob/master/LICENSE
+  - https://github.com/gocd/gocd/blob/master/README.md
+  - https://docs.gocd.org/current/
+  - https://github.com/gocd/gocd/releases
+  - https://github.com/gocd/gocd/blob/master/SECURITY.md
+  - https://github.com/gocd/gocd/blob/master/SECURITY_THREAT_MODEL.md
+  needs_review: false
+  documentation_url: https://docs.gocd.org/current/
+  repository_archived: false
+  license_spdx: Apache-2.0
 - id: google-cloud-build
   name: Google Cloud Build
   summary: Managed build service that executes containerized build steps on Google Cloud infrastructure.
@@ -1370,7 +1458,8 @@
   needs_review: false
 - id: jenkins
   name: Jenkins
-  summary: Automation server for CI/CD.
+  summary: MIT-licensed Jenkins automation server for controller/agent CI/CD pipelines, with independently
+    licensed plugins and operator-managed execution infrastructure.
   official_url: https://www.jenkins.io
   repository_url: https://github.com/jenkinsci/jenkins
   categories:
@@ -1384,26 +1473,44 @@
   lifecycle_stages:
   - build
   - test
+  - release
+  - deploy
   use_when:
-  - '* You need maximum flexibility with 1,800+ plugins and full self-hosted control.'
+  - You need an extensible self-hosted automation controller, agents and pipeline/plugin integrations
+    and can maintain that infrastructure.
   avoid_when:
-  - '* You don''t want to maintain infrastructure, manage plugin compatibility, or deal with Groovy DSL
-    complexity.'
-  deployment_models: []
+  - You cannot maintain controller, agent and plugin updates, compatibility and credentials, or require
+    Jenkins X/JayeX's Kubernetes GitOps architecture.
+  - Untrusted builds would run on the controller or share credentials and agent hosts without suitable
+    isolation.
+  deployment_models:
+  - self-hosted
+  - self-hosted-agent
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-16'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L44
   - legacy:devopstools_final.md#L329
-  needs_review: true
+  - https://github.com/jenkinsci/jenkins
+  - https://github.com/jenkinsci/jenkins/blob/master/LICENSE.txt
+  - https://www.jenkins.io/doc/
+  - https://www.jenkins.io/project/governance/
+  - https://github.com/jenkinsci/jenkins/releases
+  - https://www.jenkins.io/doc/book/security/
+  - https://www.jenkins.io/doc/book/security/controller-isolation/
+  needs_review: false
+  documentation_url: https://www.jenkins.io/doc/
+  repository_archived: false
+  license_spdx: MIT
 - id: jenkins-x
-  name: Jenkins X
-  summary: Kubernetes-native CI/CD.
-  official_url: https://jenkins-x.io
+  name: JayeX (formerly Jenkins X)
+  summary: JayeX, formerly Jenkins X, is a Kubernetes CI/CD and GitOps tool suite using Tekton and Lighthouse,
+    with the Apache-2.0 jx CLI and separately maintained components.
+  official_url: https://jayex.io/
   repository_url: https://github.com/jenkins-x/jx
   categories:
   - ci-build-testing
@@ -1416,21 +1523,42 @@
   lifecycle_stages:
   - build
   - test
+  - release
+  - deploy
   use_when:
-  - '* You want opinionated, GitOps-driven CI/CD on Kubernetes with automated environments.'
+  - You operate Kubernetes and want GitOps-managed environments, Tekton pipelines and pull-request preview/promotion
+    workflows with the JayeX tool suite.
   avoid_when:
-  - '* You don''t run Kubernetes or want fine-grained pipeline control; community activity has slowed.'
-  deployment_models: []
+  - You need a Jenkins controller/plugin replacement with identical behaviour, or cannot operate Kubernetes,
+    SCM webhooks, registry and secret-management integrations.
+  - You depend on legacy Jenkins integrations, which the project declares deprecated, or assume all providers
+    and optional components share one support policy.
+  deployment_models:
+  - kubernetes
+  - local
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-16'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L46
   - legacy:devopstools_final.md#L330
-  needs_review: true
+  - https://github.com/jenkins-x/jx
+  - https://github.com/jenkins-x/jx/blob/main/LICENSE
+  - https://github.com/jenkins-x/jx/blob/main/README.md
+  - https://jayex.io/v3/about/
+  - https://jayex.io/v3/about/overview/
+  - https://jayex.io/blog/2026/03/19/jayex/
+  - https://cd.foundation/blog/2026/04/16/announcing-jayex/
+  - https://github.com/jenkins-x/jx/blob/main/SECURITY.md
+  - https://github.com/jenkins-x/jx/releases
+  - https://jenkins-x.io
+  needs_review: false
+  documentation_url: https://jayex.io/v3/about/
+  repository_archived: false
+  license_spdx: Apache-2.0
 - id: junit
   name: JUnit
   summary: Testing framework for Java and other JVM languages.
@@ -1707,7 +1835,8 @@
   needs_review: false
 - id: nektos-act
   name: Nektos Act
-  summary: Run GitHub Actions locally.
+  summary: MIT-licensed community CLI for running selected GitHub Actions workflows locally, commonly
+    with Docker, with documented differences from GitHub's official runners.
   official_url: https://nektosact.com
   repository_url: https://github.com/nektos/act
   categories:
@@ -1719,29 +1848,45 @@
   - developer-experience-engineer
   - release-engineer
   lifecycle_stages:
+  - develop
   - build
   - test
   use_when:
-  - '* You want to test and debug GitHub Actions workflows locally before pushing.'
+  - You need local feedback on GitHub Actions workflows and can provide the required container engine,
+    runner images and explicitly scoped secrets.
   avoid_when:
-  - '* You don''t use GitHub Actions, or your workflows depend heavily on GitHub-hosted runner features.'
-  deployment_models: []
+  - You require complete GitHub-hosted runner compatibility, enforcement of every job permission/timeout/environment
+    control, or native GitHub OIDC behaviour.
+  - Untrusted workflows or actions would receive real credentials, host execution privileges or access
+    to the Docker socket.
+  deployment_models:
+  - local
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-16'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L52
   - legacy:devopstools_final.md#L334
-  needs_review: true
+  - https://github.com/nektos/act
+  - https://github.com/nektos/act/blob/master/LICENSE
+  - https://nektosact.com/
+  - https://nektosact.com/not_supported.html
+  - https://nektosact.com/usage/runners.html
+  - https://nektosact.com/usage/index.html
+  - https://github.com/nektos/act/releases
+  needs_review: false
+  documentation_url: https://nektosact.com/
+  repository_archived: false
+  license_spdx: MIT
 - id: onedev
   name: OneDev
-  summary: Self-hosted Git server with integrated CI/CD, issue tracking, packages, code search, and AI-assisted
-    workflows.
+  summary: Self-hosted Git and CI/CD platform with MIT-licensed Community software, issue/package management
+    and a separately licensed commercial Enterprise module.
   official_url: https://onedev.io
-  repository_url: https://github.com/theonedev/onedev
+  repository_url: https://code.onedev.io/onedev/server
   categories:
   - ci-build-testing
   subcategories:
@@ -1753,18 +1898,44 @@
   lifecycle_stages:
   - build
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
+  - release
+  - deploy
+  use_when:
+  - You need a self-hosted Git platform with integrated CI/CD, issue management and package registries,
+    using an appropriate server, agent or Kubernetes job executor.
+  avoid_when:
+  - You assume the MIT Community grant includes the separately licensed Enterprise module or every clustering,
+    auditing and support feature.
+  - Untrusted jobs can select shell executors or production clusters without executor applicability, secret
+    authorization and access controls.
+  deployment_models:
+  - self-hosted
+  - self-hosted-agent
+  - enterprise-self-hosted
+  license_model: open-core
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-16'
   sources:
   - legacy:devopstools_final.md#L335
-  needs_review: true
+  - https://onedev.io
+  - https://code.onedev.io/onedev/server
+  - https://github.com/theonedev/onedev
+  - https://github.com/theonedev/onedev/blob/main/readme.md
+  - https://github.com/theonedev/onedev/blob/main/license.txt
+  - https://github.com/theonedev/onedev/blob/main/.gitmodules
+  - https://onedev.io/license-agreement
+  - https://onedev.io/pricing
+  - https://docs.onedev.io/
+  - https://docs.onedev.io/tutorials/cicd/plain-old-build
+  - https://docs.onedev.io/tutorials/cicd/protect-production-k8s-cluster
+  - https://github.com/theonedev/onedev/releases
+  needs_review: false
+  documentation_url: https://docs.onedev.io/
+  license_spdx: MIT
+  commercial_offering: true
 - id: openshift-pipelines
   name: Red Hat OpenShift Pipelines
   summary: Red Hat-supported, Operator-delivered CI/CD distribution for OpenShift built from Tekton components and included with an OpenShift subscription.
@@ -2115,8 +2286,9 @@
   needs_review: true
 - id: semaphore-ci
   name: Semaphore CI
-  summary: CI/CD platform for software projects.
-  official_url: https://semaphoreci.com
+  summary: Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside
+    ee/, and a separately licensed commercial Enterprise edition.
+  official_url: https://semaphore.io/
   categories:
   - ci-build-testing
   subcategories:
@@ -2128,21 +2300,51 @@
   lifecycle_stages:
   - build
   - test
+  - release
+  - deploy
   use_when:
-  - '* You want fast, parallelized cloud CI with a clean UI.'
+  - You need Semaphore's YAML/visual CI/CD pipelines and can choose hosted Cloud, self-hosted Community
+    or Enterprise and the appropriate job infrastructure.
   avoid_when:
-  - '* You need heavy on-prem or self-hosted capabilities.'
-  deployment_models: []
-  license_model: unknown
-  maturity: unknown
-  status: needs-review
+  - You assume the archived semaphoreci/semaphore repository means the hosted service ended, or that Apache-2.0
+    licenses Cloud and the Enterprise ee/ code.
+  - You require identical hosted/self-hosted agent features or cannot control agent registration, job
+    isolation and credentials under the selected edition.
+  deployment_models:
+  - hosted-saas
+  - self-hosted
+  - enterprise-self-hosted
+  - self-hosted-agent
+  license_model: open-core
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-16'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L58
   - legacy:devopstools_final.md#L338
-  needs_review: true
+  - https://semaphore.io/
+  - https://docs.semaphore.io/
+  - https://docs.semaphore.io/getting-started/about-semaphore
+  - https://docs.semaphore.io/getting-started/features
+  - https://github.com/semaphoreci/semaphore
+  - https://github.com/semaphoreci/semaphore/blob/main/README.md
+  - https://github.com/semaphoreio/semaphore
+  - https://github.com/semaphoreio/semaphore/blob/main/README.md
+  - https://github.com/semaphoreio/semaphore/blob/main/LICENSE
+  - https://github.com/semaphoreio/semaphore/blob/main/ee/LICENSE
+  - https://github.com/semaphoreio/semaphore/blob/main/GOVERNANCE.md
+  - https://github.com/semaphoreio/semaphore/releases
+  - https://docs.semaphore.io/using-semaphore/self-hosted
+  - https://semaphore.io/semaphore-goes-open-source-today
+  - https://semaphoreci.com
+  - https://docs.semaphoreci.com/
+  needs_review: false
+  documentation_url: https://docs.semaphore.io/
+  repository_url: https://github.com/semaphoreio/semaphore
+  repository_archived: false
+  commercial_offering: true
 - id: serverspec
   name: ServerSpec
   summary: Test server configurations using RSpec.
@@ -2610,7 +2812,8 @@
   needs_review: false
 - id: woodpecker-ci
   name: Woodpecker CI
-  summary: CI/CD platform for Git.
+  summary: Apache-2.0 self-hosted CI/CD engine with a server and agents, forge integration and backend-dependent
+    Docker, Kubernetes or local execution.
   official_url: https://woodpecker-ci.org
   repository_url: https://github.com/woodpecker-ci/woodpecker
   categories:
@@ -2624,21 +2827,42 @@
   lifecycle_stages:
   - build
   - test
+  - release
+  - deploy
   use_when:
-  - '* You want a lightweight, community-driven Drone fork with active development.'
+  - You want a community-maintained self-hosted CI/CD server with forge integration and pipeline execution
+    through a documented agent backend.
   avoid_when:
-  - '* You need enterprise support or a large commercial ecosystem.'
-  deployment_models: []
+  - You need identical isolation from every backend; local execution runs on the agent host and privileged
+    container features extend access.
+  - Untrusted contributors can access deployment secrets, trusted clone plugins or privileged repositories
+    without approval and scope controls.
+  deployment_models:
+  - self-hosted
+  - self-hosted-agent
+  - kubernetes
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-16'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L68
   - legacy:devopstools_final.md#L344
-  needs_review: true
+  - https://github.com/woodpecker-ci/woodpecker
+  - https://github.com/woodpecker-ci/woodpecker/blob/main/LICENSE
+  - https://github.com/woodpecker-ci/woodpecker/blob/main/README.md
+  - https://woodpecker-ci.org/docs/intro
+  - https://woodpecker-ci.org/docs/administration/configuration/backends/docker
+  - https://woodpecker-ci.org/docs/administration/configuration/backends/kubernetes
+  - https://woodpecker-ci.org/docs/usage/project-settings
+  - https://github.com/woodpecker-ci/woodpecker/releases
+  - https://woodpecker-ci.org/docs/administration/configuration/backends/local
+  needs_review: false
+  documentation_url: https://woodpecker-ci.org/docs/intro
+  repository_archived: false
+  license_spdx: Apache-2.0
 - id: xray
   name: Xray
   summary: Test management for Jira (manual + automated tests).
