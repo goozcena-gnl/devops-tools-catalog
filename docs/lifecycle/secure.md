@@ -25,7 +25,7 @@
 - [BlackArch Linux](https://blackarch.org/) — Arch Linux-based distribution that packages tools for authorized security testing and research.
 - [blocky](https://0xerr0r.github.io/blocky/latest/) — Configurable DNS proxy and ad blocker with upstream groups, caching, filtering, and Prometheus metrics.
 - [BloodHound](https://bloodhound.specterops.io/) — Graph-based platform for authorized analysis of identity relationships and attack paths in directory and cloud environments.
-- [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) — ACME-based certificate authority server powering Let's Encrypt.
+- [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) — MPL-2.0 ACME certificate-authority server implementing issuance, validation and revocation for the Lets Encrypt infrastructure.
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 - [Burp Suite](https://portswigger.net/burp) — Proprietary product family for manual web security testing and automated dynamic application security testing.
 - [Burp Suite Community Edition](https://portswigger.net/burp/downloads) — Proprietary no-cost desktop toolkit for manual web application security testing.
@@ -66,11 +66,11 @@
 - [DependencyCheck](https://owasp.org/projects/dependency-check) — Identify vulnerable dependencies.
 - [Descope](https://www.descope.com/) — Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
 - [detect-secrets](https://github.com/Yelp/detect-secrets) — Secrets detection with baseline support (reduce false positives).
-- [Dex](https://dexidp.io) — OpenID Connect identity provider for Kubernetes and beyond.
+- [Dex](https://dexidp.io) — Apache-2.0 OpenID Connect provider and federation broker for applications using external identity connectors.
 - [DigiCert](https://www.digicert.com/) — Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing, device trust, and related product families.
 - [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) — Proxy that restricts access to the Docker socket API.
 - [Dockle](https://containers.goodwith.tech) — Container image linter for security best practices.
-- [Doppler](https://www.doppler.com) — Universal secrets management platform.
+- [Doppler](https://www.doppler.com) — Hosted Doppler secrets and configuration service with a separately Apache-2.0 licensed CLI for retrieving and injecting configuration.
 - [Dradis Community Edition](https://dradis.com/ce/) — Self-hosted collaboration and reporting platform for security assessment projects.
 - [Drata](https://drata.com/) — Commercial trust-management platform for compliance automation, control monitoring, evidence collection, and risk workflows.
 - [Entrust Cryptographic Security Platform Key Manager](https://www.entrust.com/products/key-management) — Enterprise key-management software, formerly KeyControl, for centralizing encryption keys and integrating with KMIP clients, HSMs, and cloud key-management services.
@@ -100,7 +100,7 @@
 - [Guardon](https://github.com/guardon-dev/guardon) — Open-source browser extension that brings Kubernetes guardrails and developer-first security checks directly into the browser workflow.
 - [Harden-Runner](https://github.com/step-security/harden-runner) — GitHub Actions runner security component that observes runtime network, file, and process activity.
 - [Hashcat](https://hashcat.net/hashcat/) — Hardware-accelerated password recovery and security-auditing utility.
-- [HashiCorp Boundary](https://boundaryproject.io) — Secure remote access to systems.
+- [HashiCorp Boundary](https://developer.hashicorp.com/boundary) — Identity-aware infrastructure access product; Boundary Community Edition (CE) repository was archived on 2026-10-08 and no further CE fixes, releases or security patches are planned. HCP Boundary and Boundary Enterprise continue separately.
 - [HashiCorp Vault Community Edition](https://developer.hashicorp.com/vault) — Source-available Vault Community Edition for secrets storage, dynamic credentials and encryption services under BUSL-1.1; Vault Enterprise and HCP Vault offerings have separate commercial product terms.
 - [hcxdumptool](https://github.com/ZerBea/hcxdumptool) — Wireless packet-capture utility for supported Linux Wi-Fi adapters.
 - [hcxtools](https://github.com/ZerBea/hcxtools) — Utilities for converting and processing wireless capture data for security-audit workflows.
@@ -114,7 +114,7 @@
 - [ISMS Builder](https://www.isms-builder.com) — Self-hosted information security management system builder for ISO 27001, NIS2, and GDPR compliance.
 - [JARVIS OS](https://www.jarvisoslinux.org/) — Experimental AI-native Linux distribution that integrates an LLM daemon with a custom kernel interface for security research.
 - [John the Ripper](https://www.openwall.com/john/) — Password security auditing and recovery tool supporting many hash and encrypted-file formats.
-- [JumpServer](https://www.jumpserver.com) — Open-source bastion host / privileged access management (PAM) platform.
+- [JumpServer](https://www.jumpserver.com) — Self-hosted privileged access management and bastion platform with GPL-3.0 Community core and distinct paid Enterprise tiers.
 - [k-guard](https://github.com/KamouloxPelvis/k-guard) — Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patching, and hardening.
 - [k8s Sidecar Secret Forge](https://github.com/stegianna/k8s-sidecar-secret-forge) — Kubernetes secret management sidecar.
 - [k8scout](https://github.com/k8scout/k8scout) — Drop-in binary that maps Kubernetes attack paths to cluster-admin escalation, node escape, secret theft, and cloud IAM takeover from within a pod.
@@ -149,7 +149,7 @@
 - [METATRON](https://github.com/sooryathejas/METATRON) — Experimental local-model assistant combining reconnaissance tools and stored scan results for security assessment.
 - [MFASweep](https://github.com/dafthack/MFASweep) — PowerShell tool for enumerating and testing MFA bypass paths across Microsoft 365 and Azure AD environments.
 - [mitmproxy](https://mitmproxy.org) — Interactive HTTPS proxy with CLI, web UI, and Python scripting for traffic inspection and testing.
-- [mkcert](https://github.com/FiloSottile/mkcert) — Local SSL certificate generation.
+- [mkcert](https://mkcert.dev) — BSD-3-Clause CLI creating a locally trusted development CA and TLS certificates; current upstream maintenance remains unconfirmed.
 - [ModSecurity](https://modsecurity.org) — Web Application Firewall (WAF) engine.
 - [NAXSI (WAF for NGINX)](https://github.com/wargio/naxsi) — Open source WAF module for NGINX (NAXSI).
 - [NetBird](https://netbird.io/) — Open-core WireGuard-based zero-trust networking platform with community self-hosting, managed cloud, and licensed enterprise options.
@@ -165,11 +165,11 @@
 - [Omni](https://www.siderolabs.com/omni) — Kubernetes cluster lifecycle management platform by Sidero Labs; BSL/source-available + SaaS.
 - [Open Policy Agent](https://www.openpolicyagent.org) — Policy-based control for cloud-native environments.
 - [open-appsec](https://www.openappsec.io) — ML-based application & API security (WAF/RASP style).
-- [OpenBao](https://openbao.org) — Open-source secrets management and encryption platform.
+- [OpenBao](https://openbao.org) — Community-governed MPL-2.0 secrets service providing encrypted KV storage, dynamic credentials, leases, encryption and audit interfaces.
 - [OpenSCAP](https://www.open-scap.org) — Security Content Automation Protocol.
 - [OpenSCAP Tools](https://www.open-scap.org/tools) — Collection of OpenSCAP tools.
 - [OpenSSH](https://www.openssh.org) — The ubiquitous open-source SSH suite for secure remote login, file transfer, and tunneling.
-- [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) — OpenStack secrets management.
+- [OpenStack Barbican](https://docs.openstack.org/barbican/latest/) — Apache-2.0 OpenStack Key Manager service exposing REST APIs for encrypted secret, key and certificate material with pluggable backends.
 - [OpenText Fortify Static Code Analyzer](https://www.opentext.com/products/static-application-security-testing) — Commercial static application security testing engine for source, bytecode, and binary analysis across developer and CI/CD workflows.
 - [OpenZiti](https://netfoundry.io/docs/openziti) — Open-source zero-trust overlay networking platform.
 - [OPNsense](https://opnsense.org/opnsense/) — FreeBSD-based open-source firewall and routing platform for network security gateways.
@@ -239,8 +239,8 @@
 - [Tailscale](https://tailscale.com) — Zero-config VPN for secure networking; OSS client with commercial/SaaS control plane (self-hosting via Headscale available).
 - [Technitium DNS Server](https://technitium.com/dns/) — Self-hosted authoritative and recursive DNS server with an administrative web interface and blocking capabilities.
 - [Tekton Chains](https://tekton.dev/docs/chains/) — Tekton controller that records, signs, and stores supply-chain metadata for pipeline task runs.
-- [Teleport](https://goteleport.com) — Secure access platform for SSH/Kubernetes/databases with OSS core and enterprise editions.
-- [Teller](https://github.com/tellerops/teller) — Run processes with secrets from multiple providers and manage secret scanning, syncing, templating, and redaction.
+- [Teleport](https://goteleport.com) — Infrastructure access platform for SSH Kubernetes databases and apps with separate AGPL source, Apache API module and restricted Community binary terms.
+- [Teller](https://github.com/tellerops/teller) — Apache-2.0 Rust CLI for retrieving and injecting secrets from configured external providers; current release support remains inconclusive.
 - [Tenable One](https://github.com/tenable) — Unified exposure management platform.
 - [testssl.sh](https://testssl.sh) — Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities.
 - [Tetragon](https://tetragon.io) — EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
