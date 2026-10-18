@@ -22,7 +22,7 @@
 
 ## Complete field-level change ledger
 
-The following tables compare the **exact changed fields** in canonical YAML against the fixed main baseline. Values are kept complete; `∅` denotes an absent field. Source lists include old legacy references plus added official evidence. The evidence URLs shown for each tool support the field-level decisions and are not network-reachability guarantees.
+The following tables compare the **exact changed fields** in canonical YAML against the fixed main baseline. Values are kept complete, including folded YAML list continuations; list items are separated with `; `, and `∅` denotes an absent field. Source lists include old legacy references plus added official evidence. The evidence URLs shown for each tool support the field-level decisions and are not network-reachability guarantees.
 
 ### `hashicorp-boundary` — RETAIN — archival recorded, product/licence boundary unresolved
 
@@ -32,8 +32,8 @@ The following tables compare the **exact changed fields** in canonical YAML agai
 |---|---|---|
 | `summary` | `Secure remote access to systems.` | `Identity-aware infrastructure access product; Boundary Community Edition (CE) repository was archived on 2026-10-08 and no further CE fixes, releases or security patches are planned. HCP Boundary and Boundary Enterprise continue separately.` |
 | `official_url` | `https://boundaryproject.io` | `https://developer.hashicorp.com/boundary` |
-| `use_when` | `Identity-based, zero-trust access to infrastructure without a traditional VPN.` | `You are maintaining a previously deployed Boundary CE estate and explicitly accept a frozen,` |
-| `avoid_when` | `You need a full PAM solution with session recording out of the box (use Teleport or JumpServer).` | `You require community security patches, maintenance, ongoing feature development or supported; Do not mistake continued HCP Boundary or Boundary Enterprise development for active development` |
+| `use_when` | `Identity-based, zero-trust access to infrastructure without a traditional VPN.` | `You are maintaining a previously deployed Boundary CE estate and explicitly accept a frozen, unmaintained community codebase, or you are evaluating separately supported Enterprise/HCP products.` |
+| `avoid_when` | `You need a full PAM solution with session recording out of the box (use Teleport or JumpServer).` | `You require community security patches, maintenance, ongoing feature development or supported production CE deployment; the CE repository is read-only and no new fixes or releases are planned.; Do not mistake continued HCP Boundary or Boundary Enterprise development for active development of the archived Community Edition.` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-18'` |
 | `sources` | `legacy:6_Security/README.md#L114; legacy:devopstools_final.md#L1007` | `legacy:6_Security/README.md#L114; legacy:devopstools_final.md#L1007; https://github.com/hashicorp/boundary; https://github.com/hashicorp/boundary/blob/main/README.md; https://github.com/hashicorp/boundary/blob/main/LICENSE; https://developer.hashicorp.com/boundary/docs` |
 | `repository_archived` | ∅ | `true` |
