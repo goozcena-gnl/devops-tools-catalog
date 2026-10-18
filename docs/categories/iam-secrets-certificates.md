@@ -321,8 +321,8 @@ Enterprise key-management server backed by a FIPS-validated hardware security mo
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Source available<br>
-**Status:** Needs review<br>
+**Model:** Source Available<br>
+**Status:** Needs Review<br>
 **Repository:** Archived
 
 Identity-aware infrastructure access product; Boundary Community Edition (CE) repository was archived on 2026-10-08 and no further CE fixes, releases or security patches are planned. HCP Boundary and Boundary Enterprise continue separately.
@@ -399,7 +399,7 @@ Identity-aware access management / access proxy for infrastructure.
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Open core<br>
+**Model:** Open Core<br>
 **Status:** Active
 
 Self-hosted privileged access management and bastion platform with GPL-3.0 Community core and distinct paid Enterprise tiers.
@@ -497,7 +497,7 @@ Auto-load secrets from vaults into environment variables or files for shell comm
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs review
+**Status:** Needs Review
 
 BSD-3-Clause CLI creating a locally trusted development CA and TLS certificates; current upstream maintenance remains unconfirmed.
 
@@ -729,8 +729,8 @@ Enterprise key management.
 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Open core<br>
-**Status:** Needs review
+**Model:** Open Core<br>
+**Status:** Needs Review
 
 Infrastructure access platform for SSH Kubernetes databases and apps with separate AGPL source, Apache API module and restricted Community binary terms.
 
@@ -751,7 +751,7 @@ Infrastructure access platform for SSH Kubernetes databases and apps with separa
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs review
+**Status:** Needs Review
 
 Apache-2.0 Rust CLI for retrieving and injecting secrets from configured external providers; current release support remains inconclusive.
 
