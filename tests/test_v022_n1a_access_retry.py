@@ -115,6 +115,15 @@ N1A_CURRENT_STATE_SUPERSESSIONS = {
     ("entrust-keycontrol", "license_model"),
     ("entrust-keycontrol", "status"),
     ("entrust-keycontrol", "needs_review"),
+    # Wave 17: Helmfile's independent primary-source licence/release review
+    # supersedes only these three *current-state* fields. The N1a-owned
+    # official_url remains pinned to the historical accepted value.
+    # https://github.com/helmfile/helmfile/blob/main/LICENSE
+    # https://github.com/helmfile/helmfile/releases/tag/v1.8.2
+    # https://helmfile.readthedocs.io/en/latest/
+    ("helmfile", "status"),
+    ("helmfile", "needs_review"),
+    ("helmfile", "license_spdx"),
     ("mcp-server-kubernetes", "repository_url"),
     ("mcp-server-kubernetes", "license_spdx"),
     ("mcp-server-kubernetes", "status"),
@@ -402,6 +411,17 @@ def test_n1a_current_state_preserves_owned_decisions() -> None:
         _current_records(),
         _records_at(N1A_RESULT_SHA),
     )
+
+def test_wave17_helmfile_supersession_is_bounded() -> None:
+    accepted = _records_at(N1A_RESULT_SHA)["helmfile"][1]
+    current = _current_records()["helmfile"][1]
+    assert current["status"] == "active"
+    assert current["needs_review"] is False
+    assert current["license_spdx"] == "MIT"
+    assert current["license_model"] == accepted["license_model"] == "oss"
+    assert current["repository_url"] == accepted["repository_url"]
+    assert current["official_url"] == accepted["official_url"]
+
 
 
 def test_n1a_unrelated_future_canonical_change_does_not_invalidate_history() -> None:
