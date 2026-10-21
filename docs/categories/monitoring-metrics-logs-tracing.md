@@ -1541,7 +1541,7 @@ Cloud-native distributed log and trace search engine using object storage and de
 
 - You need a turnkey metrics platform, universal Elasticsearch compatibility or unverified latency/availability guarantees.
 
-[Official site](https://quickwit.io) · [Documentation](https://quickwit.io/docs/) · [Source repository](https://github.com/quickwit-oss/quickwit)
+[Official site](https://quickwit.io) · [Documentation](https://quickwit.io/docs/main-branch) · [Source repository](https://github.com/quickwit-oss/quickwit)
 
 ### Robusta
 

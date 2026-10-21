@@ -2805,7 +2805,7 @@
   alternatives: []
   tags: []
   verified_on: '2026-10-21'
-  documentation_url: https://quickwit.io/docs/
+  documentation_url: https://quickwit.io/docs/main-branch
   repository_archived: false
   license_spdx: Apache-2.0
   sources:
@@ -2814,7 +2814,7 @@
   - https://github.com/quickwit-oss/quickwit
   - https://github.com/quickwit-oss/quickwit/blob/main/LICENSE
   - https://github.com/quickwit-oss/quickwit/releases
-  - https://quickwit.io/docs/
+  - https://quickwit.io/docs/main-branch
   - https://github.com/quickwit-oss/quickwit/blob/main/LICENSE-3rdparty.csv
   needs_review: false
 - id: robusta

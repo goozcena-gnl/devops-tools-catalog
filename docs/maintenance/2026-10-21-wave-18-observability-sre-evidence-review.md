@@ -129,9 +129,9 @@ YAML folded list values are represented completely, with list items separated by
 | `maturity` | `unknown` | `established` |
 | `status` | `needs-review` | `active` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:5_Monitoring-Observability/README.md#L61; legacy:devopstools_final.md#L769` | `legacy:5_Monitoring-Observability/README.md#L61; legacy:devopstools_final.md#L769; https://github.com/quickwit-oss/quickwit; https://github.com/quickwit-oss/quickwit/blob/main/LICENSE; https://github.com/quickwit-oss/quickwit/releases; https://quickwit.io/docs/; https://github.com/quickwit-oss/quickwit/blob/main/LICENSE-3rdparty.csv` |
+| `sources` | `legacy:5_Monitoring-Observability/README.md#L61; legacy:devopstools_final.md#L769` | `legacy:5_Monitoring-Observability/README.md#L61; legacy:devopstools_final.md#L769; https://github.com/quickwit-oss/quickwit; https://github.com/quickwit-oss/quickwit/blob/main/LICENSE; https://github.com/quickwit-oss/quickwit/releases; https://quickwit.io/docs/main-branch; https://github.com/quickwit-oss/quickwit/blob/main/LICENSE-3rdparty.csv` |
 | `needs_review` | `true` | `false` |
-| `documentation_url` | ∅ | `https://quickwit.io/docs/` |
+| `documentation_url` | ∅ | `https://quickwit.io/docs/main-branch` |
 | `repository_archived` | ∅ | `false` |
 | `license_spdx` | ∅ | `Apache-2.0` |
 
@@ -179,6 +179,13 @@ YAML folded list values are represented completely, with list items separated by
 | `documentation_url` | ∅ | `https://zipkin.io/pages/quickstart` |
 | `repository_archived` | ∅ | `false` |
 | `license_spdx` | ∅ | `Apache-2.0` |
+
+## Wave 18 strict link audit #23 — corrective evidence (2026-10-21)
+
+- [Attempt #23](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/39656251469) checked 2,756 URLs on the earlier Wave 18 HEAD `9233cc509f453694f0fc05d160dc985dad41c465`: `strict_result: FAIL`, `blocking_new: 1`, `blocking_known: 6`, and no baseline changes/resolutions. [Artifact](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/39656251469/artifacts/12371982970).
+- The sole new failure was `https://quickwit.io/docs/` (HEAD 404 and fallback GET 404 at 2026-10-21T18:55:36Z).
+- Replaced that obsolete docs root with the official Quickwit documentation home [`https://quickwit.io/docs/main-branch`](https://quickwit.io/docs/main-branch), confirmed to serve the documentation page. The correction is limited to Quickwit's canonical `documentation_url`, its evidence `sources` entry, the generated category documentation link, and this report ledger; no review/lifecycle/licence decision changed.
+- Run a **new strict full link audit on the corrected branch HEAD** before Ready for review. The preceding failed report remains preserved as historical evidence.
 
 ## Remaining uncertainty
 
