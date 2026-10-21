@@ -840,150 +840,159 @@ Kubernetes package manager.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Tool for generating Helm charts from templates.
+Alpha-stage interactive generator scaffolding customizable Helm charts; current maintenance and Kubernetes compatibility need confirmation.
 
 **Use when**
 
-- You want to scaffold new Helm charts quickly with consistent structure.
+- You want to experiment with generating starter Helm charts through an interactive CLI or container.
 
 **Consider alternatives when**
 
-- `helm create` or an existing chart boilerplate covers your needs.
+- You require verified current Kubernetes/Helm compatibility or a stable maintenance and security release process.
+- The supported helm create command or an existing chart template already covers your scaffolding needs.
 
-[Source repository](https://github.com/ravaga/helm-chart-generator)
+[Documentation](https://github.com/ravaga/helm-chart-generator/blob/main/README.md) · [Source repository](https://github.com/ravaga/helm-chart-generator)
 
 ### helm-chart-testing
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Tooling for testing Helm charts.
+Helm chart-testing (ct) CLI lints changed charts and optionally tests chart installation in Kubernetes CI; separate from Helm chart test hooks.
 
 **Use when**
 
-- You maintain Helm chart repositories and need CI-based lint and install testing.
+- You maintain Helm chart repositories and need CI lint checks and optional Kubernetes installation tests on changed charts.
 
 **Consider alternatives when**
 
-- You only consume upstream charts without modification.
+- You require only Helm's built-in chart test hook support; ct is a separate CLI.
+- You cannot provision a safe test cluster for install tests or verify the version-specific CI prerequisites.
 
-[Official site](https://helm.sh/docs/topics/chart_tests) · [Source repository](https://github.com/helm/chart-testing)
+[Official site](https://github.com/helm/chart-testing) · [Documentation](https://github.com/helm/chart-testing/blob/main/README.md) · [Source repository](https://github.com/helm/chart-testing)
 
 ### helm-diff
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Helm plugin to show differences between releases.
+Helm plugin showing a diff between a deployed release and rendered upgrade manifests, including revision comparisons.
 
 **Use when**
 
-- You want to preview changes before `helm upgrade` to catch unexpected diffs.
+- You need to preview manifest changes before upgrading a Helm release and can review sensitive output carefully.
 
 **Consider alternatives when**
 
-- You use GitOps tools (ArgoCD/Flux) that already show diffs before sync.
+- You assume a textual diff guarantees a safe live deployment or that redaction prevents all secrets from leaking.
+- Your GitOps process already performs authoritative controller-side diff and approval checks.
 
-[Source repository](https://github.com/databus23/helm-diff)
+[Documentation](https://github.com/databus23/helm-diff/blob/master/README.md) · [Source repository](https://github.com/databus23/helm-diff)
 
 ### helm-docs
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Generate documentation for Helm charts.
+GPL-3.0 Helm chart documentation generator deriving README tables and descriptions from chart metadata, values and comments.
 
 **Use when**
 
-- You want auto-generated README docs from `values.yaml` comments.
+- You maintain Helm charts and want templated Markdown documentation derived from values.yaml and chart metadata.
 
 **Consider alternatives when**
 
-- Your charts are internal with minimal consumers and hand-written docs suffice.
+- You expect documentation generation to validate Kubernetes resource semantics or test Helm chart behavior.
+- You need redistribution rights incompatible with the GPL-3.0 licence of the tool.
 
-[Source repository](https://github.com/norwoodj/helm-docs)
+[Documentation](https://github.com/norwoodj/helm-docs/blob/master/README.md) · [Source repository](https://github.com/norwoodj/helm-docs)
 
 ### helm-mapkubeapis
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Helm plugin for API version migration.
+Helm 3 plugin migrating deprecated Kubernetes API references stored in Helm release metadata; source charts must be migrated separately.
 
 **Use when**
 
-- Upgrading Kubernetes and Helm releases reference deprecated/removed API versions.
+- You must repair Helm release metadata that references removed Kubernetes APIs before a compatible upgrade.
 
 **Consider alternatives when**
 
-- Your charts already target current API versions.
+- You expect the plugin to update source charts, arbitrary Kubernetes resources or all unsupported API versions.
+- You cannot inspect and back up the release state before an in-place metadata rewrite.
 
-[Source repository](https://github.com/helm/helm-mapkubeapis)
+[Documentation](https://github.com/helm/helm-mapkubeapis/blob/main/README.md) · [Source repository](https://github.com/helm/helm-mapkubeapis)
 
 ### helm-secrets
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Manage secrets with Helm charts.
+Helm plugin that decrypts encrypted values using SOPS or resolves secret references via supported external backends; not a secrets store.
 
 **Use when**
 
-- You need to encrypt secrets in Helm values files using SOPS/Vault for GitOps.
+- You need to supply encrypted Helm values through SOPS or supported secret-manager integrations during controlled deployment.
+- You can manage plugin permissions, backend credentials and plaintext handling in CI or Argo CD integrations.
 
 **Consider alternatives when**
 
-- You use External Secrets Operator or Sealed Secrets for secret management.
+- You need a standalone secret storage service or guaranteed prevention of plaintext exposure during rendering.
+- You cannot protect temporary decrypted content, debug output or credentials consumed by the deployment process.
 
-[Source repository](https://github.com/jkroepke/helm-secrets)
+[Documentation](https://github.com/jkroepke/helm-secrets/wiki/Usage) · [Source repository](https://github.com/jkroepke/helm-secrets)
 
 ### helm-unittest
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Unit test framework for Helm charts.
+Helm plugin for YAML-defined unit and snapshot tests of rendered chart templates without deploying resources to a Kubernetes cluster.
 
 **Use when**
 
-- You want to test rendered Helm templates without deploying to a cluster.
+- You need repeatable Helm template assertions and snapshot checks without provisioning a Kubernetes cluster.
 
 **Consider alternatives when**
 
-- Simple `helm template` + diff checks are sufficient for your CI pipeline.
+- You require actual deployment, admission, network, runtime or integration testing in a live cluster.
+- You disable Helm 4 plugin provenance checks without verifying the release artifact and its signing instructions.
 
-[Source repository](https://github.com/helm-unittest/helm-unittest)
+[Documentation](https://github.com/helm-unittest/helm-unittest/blob/main/DOCUMENT.md) · [Source repository](https://github.com/helm-unittest/helm-unittest)
 
 ### Helmfile
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Declarative Helm deployments.
+Declarative Helm release orchestration using state files and environments, with integrations for charts and Kustomize; not itself a GitOps reconciliation controller.
 
 **Use when**
 
-- You manage multiple Helm releases across environments and want declarative, diff-able state.
+- You coordinate Helm releases across environments through reviewed declarative state and diffable deployment commands.
 
 **Consider alternatives when**
 
-- You deploy a single chart or already use ArgoCD/Flux for Helm release management.
+- You expect continuous cluster reconciliation without external automation such as Argo CD, Flux or CI.
+- You have one simple chart and do not need additional orchestration state or templating.
 
-[Official site](https://helmfile.readthedocs.io/en/latest) · [Source repository](https://github.com/helmfile/helmfile)
+[Official site](https://helmfile.readthedocs.io/en/latest) · [Documentation](https://helmfile.readthedocs.io/en/latest/) · [Source repository](https://github.com/helmfile/helmfile)
 
 ### Helmper
 
@@ -992,17 +1001,19 @@ Declarative Helm deployments.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Helm helper for mirroring charts and images to OCI registries.
+Beta-stage tool for mirroring Helm charts and container images to OCI registries, with optional vulnerability scanning, patching and signing integrations.
 
 **Use when**
 
-- You need to mirror Helm charts and their images into air-gapped or private registries.
+- You are piloting Helm chart and container-image mirroring into private or air-gapped OCI registries.
 
 **Consider alternatives when**
 
-- You pull charts directly from public registries without mirroring requirements.
+- You require stable production support guarantees from a project that still describes itself as beta.
+- You assume optional Trivy, Copacetic and Cosign integrations automatically establish supply-chain safety.
+- You cannot protect registry credentials or validate imported and rewritten artifacts.
 
-[Official site](https://christoffernissen.github.io/helmper) · [Source repository](https://github.com/christoffernissen/helmper)
+[Official site](https://christoffernissen.github.io/helmper) · [Documentation](https://christoffernissen.github.io/helmper/) · [Source repository](https://github.com/christoffernissen/helmper)
 
 ### Holos
 
@@ -1868,19 +1879,20 @@ Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecy
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Helm-compatible Kubernetes deployment tool and Helm 4 alternative with plan previews, improved CRD handling, and secret workflows.
+Helm-compatible Kubernetes deployment tool and Helm alternative with release planning and resource lifecycle management; not proven a drop-in replacement for every Helm plugin.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want to evaluate modern Helm-compatible release deployment and planning with a controlled compatibility pilot.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You assume universal Helm plugin or chart interoperability without testing current Nelm and Helm versions.
+- You infer that all documentation and bundled third-party components are Apache-2.0 licensed; repository docs use CC BY-SA 4.0.
 
-[Source repository](https://github.com/werf/nelm)
+[Documentation](https://github.com/werf/nelm/blob/main/README.md) · [Source repository](https://github.com/werf/nelm)
 
 ### NGINX
 

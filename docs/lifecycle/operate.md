@@ -280,15 +280,15 @@
 - [Headlamp Plugins](https://github.com/headlamp-k8s/plugins) — Official plugin collection for the Headlamp Kubernetes UI.
 - [Headroom](https://headroomlabs-ai.github.io/headroom) — Context optimization layer that compresses tool outputs, logs, files, and RAG chunks before they reach the LLM.
 - [Helm](https://helm.sh) — Kubernetes package manager.
-- [Helm Chart Generator](https://github.com/ravaga/helm-chart-generator) — Tool for generating Helm charts from templates.
-- [helm-chart-testing](https://helm.sh/docs/topics/chart_tests) — Tooling for testing Helm charts.
-- [helm-diff](https://github.com/databus23/helm-diff) — Helm plugin to show differences between releases.
-- [helm-docs](https://github.com/norwoodj/helm-docs) — Generate documentation for Helm charts.
-- [helm-mapkubeapis](https://github.com/helm/helm-mapkubeapis) — Helm plugin for API version migration.
-- [helm-secrets](https://github.com/jkroepke/helm-secrets) — Manage secrets with Helm charts.
-- [helm-unittest](https://github.com/helm-unittest/helm-unittest) — Unit test framework for Helm charts.
-- [Helmfile](https://helmfile.readthedocs.io/en/latest) — Declarative Helm deployments.
-- [Helmper](https://christoffernissen.github.io/helmper) — Helm helper for mirroring charts and images to OCI registries.
+- [Helm Chart Generator](https://github.com/ravaga/helm-chart-generator) — Alpha-stage interactive generator scaffolding customizable Helm charts; current maintenance and Kubernetes compatibility need confirmation.
+- [helm-chart-testing](https://github.com/helm/chart-testing) — Helm chart-testing (ct) CLI lints changed charts and optionally tests chart installation in Kubernetes CI; separate from Helm chart test hooks.
+- [helm-diff](https://github.com/databus23/helm-diff) — Helm plugin showing a diff between a deployed release and rendered upgrade manifests, including revision comparisons.
+- [helm-docs](https://github.com/norwoodj/helm-docs) — GPL-3.0 Helm chart documentation generator deriving README tables and descriptions from chart metadata, values and comments.
+- [helm-mapkubeapis](https://github.com/helm/helm-mapkubeapis) — Helm 3 plugin migrating deprecated Kubernetes API references stored in Helm release metadata; source charts must be migrated separately.
+- [helm-secrets](https://github.com/jkroepke/helm-secrets) — Helm plugin that decrypts encrypted values using SOPS or resolves secret references via supported external backends; not a secrets store.
+- [helm-unittest](https://github.com/helm-unittest/helm-unittest) — Helm plugin for YAML-defined unit and snapshot tests of rendered chart templates without deploying resources to a Kubernetes cluster.
+- [Helmfile](https://helmfile.readthedocs.io/en/latest) — Declarative Helm release orchestration using state files and environments, with integrations for charts and Kustomize; not itself a GitOps reconciliation controller.
+- [Helmper](https://christoffernissen.github.io/helmper) — Beta-stage tool for mirroring Helm charts and container images to OCI registries, with optional vulnerability scanning, patching and signing integrations.
 - [Hermes Agent](https://hermes-agent.nousresearch.com) — Agent framework and runtime from Nous Research.
 - [Heroku](https://www.heroku.com) — Managed cloud application platform for building, deploying, and operating applications on dynos and managed data services.
 - [Hoji AI](https://hoji.ai) — AI assistant for GitHub workflows.
@@ -530,7 +530,7 @@
 - [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) — Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups, and upgrades.
 - [n8n](https://n8n.io) — Workflow automation platform (fair-code / Sustainable Use License; not OSI open source).
 - [Nagios](https://www.nagios.org) — Infrastructure monitoring (Nagios Core).
-- [Nelm](https://github.com/werf/nelm) — Helm-compatible Kubernetes deployment tool and Helm 4 alternative with plan previews, improved CRD handling, and secret workflows.
+- [Nelm](https://github.com/werf/nelm) — Helm-compatible Kubernetes deployment tool and Helm alternative with release planning and resource lifecycle management; not proven a drop-in replacement for every Helm plugin.
 - [Neovim](https://neovim.io/) — Extensible Vim-derived text editor with built-in APIs for plugins and editor automation.
 - [nerdctl](https://github.com/containerd/nerdctl) — Docker-compatible CLI for containerd.
 - [Netdata Cloud](https://www.netdata.cloud) — SaaS control plane for Netdata (Netdata Agent is open-source; Cloud adds centralized management/collaboration).

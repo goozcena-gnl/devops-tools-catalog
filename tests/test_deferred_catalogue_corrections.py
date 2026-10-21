@@ -187,6 +187,11 @@ def test_n1a_supersession_is_exact_and_does_not_weaken_other_guards() -> None:
         ("entrust-keycontrol", "license_model"),
         ("entrust-keycontrol", "status"),
         ("entrust-keycontrol", "needs_review"),
+        # Wave 17 reviewed Helmfile's three current-state fields independently;
+        # preserve N1a's original decision for its official URL and all other fields.
+        ("helmfile", "license_spdx"),
+        ("helmfile", "needs_review"),
+        ("helmfile", "status"),
         ("mcp-server-kubernetes", "repository_url"),
         ("mcp-server-kubernetes", "license_spdx"),
         ("mcp-server-kubernetes", "status"),

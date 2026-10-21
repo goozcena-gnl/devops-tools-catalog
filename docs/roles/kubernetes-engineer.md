@@ -92,13 +92,13 @@
 | [Headlamp Plugins](https://github.com/headlamp-k8s/plugins) | Kubernetes networking, storage and add-ons | oss | active |
 | [Helm](https://helm.sh) | Kubernetes networking, storage and add-ons | oss | active |
 | [Helm Chart Generator](https://github.com/ravaga/helm-chart-generator) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [helm-chart-testing](https://helm.sh/docs/topics/chart_tests) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [helm-diff](https://github.com/databus23/helm-diff) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [helm-docs](https://github.com/norwoodj/helm-docs) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [helm-mapkubeapis](https://github.com/helm/helm-mapkubeapis) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [helm-secrets](https://github.com/jkroepke/helm-secrets) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [helm-unittest](https://github.com/helm-unittest/helm-unittest) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Helmfile](https://helmfile.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [helm-chart-testing](https://github.com/helm/chart-testing) | Kubernetes networking, storage and add-ons | oss | active |
+| [helm-diff](https://github.com/databus23/helm-diff) | Kubernetes networking, storage and add-ons | oss | active |
+| [helm-docs](https://github.com/norwoodj/helm-docs) | Kubernetes networking, storage and add-ons | oss | active |
+| [helm-mapkubeapis](https://github.com/helm/helm-mapkubeapis) | Kubernetes networking, storage and add-ons | oss | active |
+| [helm-secrets](https://github.com/jkroepke/helm-secrets) | Kubernetes networking, storage and add-ons | oss | active |
+| [helm-unittest](https://github.com/helm-unittest/helm-unittest) | Kubernetes networking, storage and add-ons | oss | active |
+| [Helmfile](https://helmfile.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | active |
 | [Helmper](https://christoffernissen.github.io/helmper) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Holos](https://holos.run) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [HwameiStor](https://hwameistor.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -244,7 +244,7 @@
 | [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | active |
 | [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) | Kubernetes networking, storage and add-ons | open-core | active |
 | [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nix](https://nixos.org) | Containers and image tooling | oss | needs-review |
