@@ -50,7 +50,7 @@
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
 | [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | needs-review |
-| [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) | IAM, secrets and certificate management | oss | needs-review |
+| [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) | IAM, secrets and certificate management | oss | active |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
 | [Cast AI](https://cast.ai) | FinOps and sustainability | commercial | active |
@@ -86,13 +86,13 @@
 | [DevOps Projects](https://github.com/ophircloud/DevOps-Projects) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOps Resources](https://github.com/bregman-arie/devops-resources) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOpsCube Kubernetes Tutorials (Beginners)](https://devopscube.com/kubernetes-tutorials-beginners) | Documentation, learning and career resources | documentation | needs-review |
-| [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | needs-review |
+| [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | active |
 | [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | commercial | active |
 | [Docker Agent](https://docker.github.io/docker-agent/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Docker Hub MCP](https://hub.docker.com/mcp) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Docker MCP Gateway](https://github.com/docker/mcp-gateway) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Docmost](https://docmost.com/) | Documentation, learning and career resources | open-core | active |
-| [Doppler](https://www.doppler.com) | IAM, secrets and certificate management | unknown | needs-review |
+| [Doppler](https://www.doppler.com) | IAM, secrets and certificate management | commercial | active |
 | [dsoxlab](https://github.com/stephrobert/dsoxlab) | Documentation, learning and career resources | documentation | needs-review |
 | [ecc.tools](https://ecc.tools) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [endoflife.date](https://endoflife.date) | Documentation, learning and career resources | documentation | needs-review |
@@ -124,7 +124,7 @@
 | [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | commercial | active |
 | [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | commercial | active |
 | [Grafana MCP](https://github.com/grafana/mcp-grafana) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [HashiCorp Boundary](https://boundaryproject.io) | IAM, secrets and certificate management | source-available | needs-review |
+| [HashiCorp Boundary](https://developer.hashicorp.com/boundary) | IAM, secrets and certificate management | source-available | needs-review |
 | [HashiCorp Vault Community Edition](https://developer.hashicorp.com/vault) | IAM, secrets and certificate management | source-available | active |
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Haystack](https://haystack.deepset.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -143,7 +143,7 @@
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [InfraHQ](https://infrahq.com) | IAM, secrets and certificate management | oss | needs-review |
 | [JuiceFS](https://juicefs.com/en) | Databases, caching and data infrastructure | open-core | needs-review |
-| [JumpServer](https://www.jumpserver.com) | IAM, secrets and certificate management | oss | needs-review |
+| [JumpServer](https://www.jumpserver.com) | IAM, secrets and certificate management | open-core | active |
 | [k0rdent](https://docs.k0rdent.io/latest) | Kubernetes distributions and operations, Platform engineering and internal developer platforms | oss | active |
 | [K8s in a Box](https://github.com/moabukar/k8s-in-a-box) | Documentation, learning and career resources | documentation | needs-review |
 | [K8sGPT](https://k8sgpt.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -199,7 +199,7 @@
 | [Milvus](https://milvus.io) | MLOps, LLMOps and AI infrastructure, Databases, caching and data infrastructure | open-core | active |
 | [Mini-classes Ansible Public](https://github.com/apille-pro/miniclasses_ansible_public) | Documentation, learning and career resources | documentation | needs-review |
 | [MinIO Community Server](https://github.com/minio/minio) | Deprecated and historical tools, Databases, caching and data infrastructure | oss | archived |
-| [mkcert](https://github.com/FiloSottile/mkcert) | IAM, secrets and certificate management | oss | needs-review |
+| [mkcert](https://mkcert.dev) | IAM, secrets and certificate management | oss | needs-review |
 | [MLflow](https://mlflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [MLOps for DevOps Engineers](https://github.com/techiescamp/mlops-for-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Model Express](https://github.com/ai-dynamo/modelexpress) | MLOps, LLMOps and AI infrastructure | oss | active |
@@ -214,12 +214,12 @@
 | [onedr0p/cluster-template](https://github.com/onedr0p/cluster-template) | Documentation, learning and career resources | oss | needs-review |
 | [Open Notebook](https://www.open-notebook.ai) | Documentation, learning and career resources | oss | needs-review |
 | [Open WebUI](https://openwebui.com) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [OpenBao](https://openbao.org) | IAM, secrets and certificate management | oss | needs-review |
+| [OpenBao](https://openbao.org) | IAM, secrets and certificate management | oss | active |
 | [OpenCost](https://www.opencost.io) | FinOps and sustainability | oss | active |
 | [OpenFaaS](https://www.openfaas.com) | Serverless, edge and WebAssembly | open-core | needs-review |
 | [OpenSSH](https://www.openssh.org) | IAM, secrets and certificate management | oss | needs-review |
 | [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |
-| [OpenStack Barbican](https://wiki.openstack.org/wiki/Barbican) | IAM, secrets and certificate management | oss | needs-review |
+| [OpenStack Barbican](https://docs.openstack.org/barbican/latest/) | IAM, secrets and certificate management | oss | active |
 | [OpenStack Magnum](https://docs.openstack.org/magnum/latest/) | Kubernetes distributions and operations, Cloud platforms and cloud management | oss | active |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | open-core | active |
 | [OpenTofu](https://opentofu.org) | Infrastructure as Code | oss | active |

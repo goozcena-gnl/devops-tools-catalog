@@ -193,6 +193,14 @@ AUTHORIZED_CURRENT_DRIFT = {
     ("komodor", "license_model"): "commercial",
     ("komodor", "needs_review"): False,
     ("komodor", "status"): "active",
+    # Wave 16 primary-source review supersedes JumpServer's original N2a
+    # licence/review flags while preserving the N2a-owned official URL.
+    # https://github.com/jumpserver/jumpserver/blob/dev/LICENSE
+    # https://github.com/jumpserver/jumpserver/blob/dev/README.md
+    ("jumpserver", "license_model"): "open-core",
+    ("jumpserver", "license_spdx"): "GPL-3.0-only",
+    ("jumpserver", "needs_review"): False,
+    ("jumpserver", "status"): "active",
 }
 
 AUTHORIZED_CURRENT_PATH_DRIFT = {
