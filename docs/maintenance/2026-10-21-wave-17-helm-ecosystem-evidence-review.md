@@ -4,7 +4,7 @@
 
 **Provisional result:** 10 reviewed, **8 cleared / 2 retained**, total canonical records 1,425 unchanged, review flags **673 → 665** pending generated documentation and CI. This is an evidence review in progress, not completed validation.
 
-The ten records below are the only canonical data changes. They retain their stable IDs and legacy provenance. Licence boundaries and upstream status were checked against GitHub upstream repository metadata, README, licence file and releases on 2026-10-21. Repo visibility and last-push dates do not alone prove lifecycle support.
+The ten records below are the only canonical data changes. They retain their stable IDs and legacy provenance. Licence boundaries and upstream status were checked against GitHub upstream repository metadata, README, the actual upstream LICENSE text (all ten records), and releases on 2026-10-21. Nelm's LICENSE explicitly distinguishes Apache-2.0 core code from CC BY-SA 4.0 documentation and separately licensed third-party components; `license_spdx` applies only to the core code. Repo visibility and last-push dates do not alone prove lifecycle support.
 
 ## Decisions
 
@@ -27,7 +27,7 @@ Multi-line YAML arrays below are serialized by joining the full folded items wit
 
 ### `helm-chart-testing`
 
-Sources: [https://github.com/helm/chart-testing](https://github.com/helm/chart-testing) · [https://github.com/helm/chart-testing/releases](https://github.com/helm/chart-testing/releases) · [https://github.com/helm/chart-testing/blob/main/README.md](https://github.com/helm/chart-testing/blob/main/README.md).
+Sources: [https://github.com/helm/chart-testing](https://github.com/helm/chart-testing) · [https://github.com/helm/chart-testing/releases](https://github.com/helm/chart-testing/releases) · [https://github.com/helm/chart-testing/blob/main/README.md](https://github.com/helm/chart-testing/blob/main/README.md) · [https://github.com/helm/chart-testing/blob/main/LICENSE](https://github.com/helm/chart-testing/blob/main/LICENSE).
 
 | Field | Before | After |
 |---|---|---|
@@ -38,7 +38,7 @@ Sources: [https://github.com/helm/chart-testing](https://github.com/helm/chart-t
 | `maturity` | `unknown` | `established` |
 | `status` | `needs-review` | `active` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L95; legacy:devopstools_final.md#L567` | `legacy:4_Kubernetes-Containers/README.md#L95; legacy:devopstools_final.md#L567; https://github.com/helm/chart-testing; https://github.com/helm/chart-testing/releases; https://github.com/helm/chart-testing/blob/main/README.md` |
+| `sources` | `legacy:4_Kubernetes-Containers/README.md#L95; legacy:devopstools_final.md#L567` | `legacy:4_Kubernetes-Containers/README.md#L95; legacy:devopstools_final.md#L567; https://github.com/helm/chart-testing; https://github.com/helm/chart-testing/releases; https://github.com/helm/chart-testing/blob/main/README.md; https://github.com/helm/chart-testing/blob/main/LICENSE` |
 | `needs_review` | `true` | `false` |
 | `documentation_url` | ∅ | `https://github.com/helm/chart-testing/blob/main/README.md` |
 | `repository_archived` | ∅ | `false` |
@@ -46,7 +46,7 @@ Sources: [https://github.com/helm/chart-testing](https://github.com/helm/chart-t
 
 ### `helm-diff`
 
-Sources: [https://github.com/databus23/helm-diff](https://github.com/databus23/helm-diff) · [https://github.com/databus23/helm-diff/releases](https://github.com/databus23/helm-diff/releases) · [https://github.com/databus23/helm-diff/blob/master/README.md](https://github.com/databus23/helm-diff/blob/master/README.md).
+Sources: [https://github.com/databus23/helm-diff](https://github.com/databus23/helm-diff) · [https://github.com/databus23/helm-diff/releases](https://github.com/databus23/helm-diff/releases) · [https://github.com/databus23/helm-diff/blob/master/README.md](https://github.com/databus23/helm-diff/blob/master/README.md) · [https://github.com/databus23/helm-diff/blob/master/LICENSE](https://github.com/databus23/helm-diff/blob/master/LICENSE).
 
 | Field | Before | After |
 |---|---|---|
@@ -56,7 +56,7 @@ Sources: [https://github.com/databus23/helm-diff](https://github.com/databus23/h
 | `maturity` | `unknown` | `established` |
 | `status` | `needs-review` | `active` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L96; legacy:devopstools_final.md#L568` | `legacy:4_Kubernetes-Containers/README.md#L96; legacy:devopstools_final.md#L568; https://github.com/databus23/helm-diff; https://github.com/databus23/helm-diff/releases; https://github.com/databus23/helm-diff/blob/master/README.md` |
+| `sources` | `legacy:4_Kubernetes-Containers/README.md#L96; legacy:devopstools_final.md#L568` | `legacy:4_Kubernetes-Containers/README.md#L96; legacy:devopstools_final.md#L568; https://github.com/databus23/helm-diff; https://github.com/databus23/helm-diff/releases; https://github.com/databus23/helm-diff/blob/master/README.md; https://github.com/databus23/helm-diff/blob/master/LICENSE` |
 | `needs_review` | `true` | `false` |
 | `documentation_url` | ∅ | `https://github.com/databus23/helm-diff/blob/master/README.md` |
 | `repository_archived` | ∅ | `false` |
@@ -64,7 +64,7 @@ Sources: [https://github.com/databus23/helm-diff](https://github.com/databus23/h
 
 ### `helm-secrets`
 
-Sources: [https://github.com/jkroepke/helm-secrets](https://github.com/jkroepke/helm-secrets) · [https://github.com/jkroepke/helm-secrets/releases](https://github.com/jkroepke/helm-secrets/releases) · [https://github.com/jkroepke/helm-secrets/wiki/Usage](https://github.com/jkroepke/helm-secrets/wiki/Usage).
+Sources: [https://github.com/jkroepke/helm-secrets](https://github.com/jkroepke/helm-secrets) · [https://github.com/jkroepke/helm-secrets/releases](https://github.com/jkroepke/helm-secrets/releases) · [https://github.com/jkroepke/helm-secrets/wiki/Usage](https://github.com/jkroepke/helm-secrets/wiki/Usage) · [https://github.com/jkroepke/helm-secrets/blob/main/LICENSE](https://github.com/jkroepke/helm-secrets/blob/main/LICENSE).
 
 | Field | Before | After |
 |---|---|---|
@@ -74,7 +74,7 @@ Sources: [https://github.com/jkroepke/helm-secrets](https://github.com/jkroepke/
 | `maturity` | `unknown` | `established` |
 | `status` | `needs-review` | `active` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L99; legacy:devopstools_final.md#L571` | `legacy:4_Kubernetes-Containers/README.md#L99; legacy:devopstools_final.md#L571; https://github.com/jkroepke/helm-secrets; https://github.com/jkroepke/helm-secrets/releases; https://github.com/jkroepke/helm-secrets/wiki/Usage` |
+| `sources` | `legacy:4_Kubernetes-Containers/README.md#L99; legacy:devopstools_final.md#L571` | `legacy:4_Kubernetes-Containers/README.md#L99; legacy:devopstools_final.md#L571; https://github.com/jkroepke/helm-secrets; https://github.com/jkroepke/helm-secrets/releases; https://github.com/jkroepke/helm-secrets/wiki/Usage; https://github.com/jkroepke/helm-secrets/blob/main/LICENSE` |
 | `needs_review` | `true` | `false` |
 | `documentation_url` | ∅ | `https://github.com/jkroepke/helm-secrets/wiki/Usage` |
 | `repository_archived` | ∅ | `false` |
@@ -82,7 +82,7 @@ Sources: [https://github.com/jkroepke/helm-secrets](https://github.com/jkroepke/
 
 ### `helm-mapkubeapis`
 
-Sources: [https://github.com/helm/helm-mapkubeapis](https://github.com/helm/helm-mapkubeapis) · [https://github.com/helm/helm-mapkubeapis/releases](https://github.com/helm/helm-mapkubeapis/releases) · [https://github.com/helm/helm-mapkubeapis/blob/main/README.md](https://github.com/helm/helm-mapkubeapis/blob/main/README.md).
+Sources: [https://github.com/helm/helm-mapkubeapis](https://github.com/helm/helm-mapkubeapis) · [https://github.com/helm/helm-mapkubeapis/releases](https://github.com/helm/helm-mapkubeapis/releases) · [https://github.com/helm/helm-mapkubeapis/blob/main/README.md](https://github.com/helm/helm-mapkubeapis/blob/main/README.md) · [https://github.com/helm/helm-mapkubeapis/blob/main/LICENSE](https://github.com/helm/helm-mapkubeapis/blob/main/LICENSE).
 
 | Field | Before | After |
 |---|---|---|
@@ -92,7 +92,7 @@ Sources: [https://github.com/helm/helm-mapkubeapis](https://github.com/helm/helm
 | `maturity` | `unknown` | `established` |
 | `status` | `needs-review` | `active` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L98; legacy:devopstools_final.md#L570` | `legacy:4_Kubernetes-Containers/README.md#L98; legacy:devopstools_final.md#L570; https://github.com/helm/helm-mapkubeapis; https://github.com/helm/helm-mapkubeapis/releases; https://github.com/helm/helm-mapkubeapis/blob/main/README.md` |
+| `sources` | `legacy:4_Kubernetes-Containers/README.md#L98; legacy:devopstools_final.md#L570` | `legacy:4_Kubernetes-Containers/README.md#L98; legacy:devopstools_final.md#L570; https://github.com/helm/helm-mapkubeapis; https://github.com/helm/helm-mapkubeapis/releases; https://github.com/helm/helm-mapkubeapis/blob/main/README.md; https://github.com/helm/helm-mapkubeapis/blob/main/LICENSE` |
 | `needs_review` | `true` | `false` |
 | `documentation_url` | ∅ | `https://github.com/helm/helm-mapkubeapis/blob/main/README.md` |
 | `repository_archived` | ∅ | `false` |
@@ -100,7 +100,7 @@ Sources: [https://github.com/helm/helm-mapkubeapis](https://github.com/helm/helm
 
 ### `helmfile`
 
-Sources: [https://github.com/helmfile/helmfile](https://github.com/helmfile/helmfile) · [https://github.com/helmfile/helmfile/releases](https://github.com/helmfile/helmfile/releases) · [https://helmfile.readthedocs.io/en/latest/](https://helmfile.readthedocs.io/en/latest/).
+Sources: [https://github.com/helmfile/helmfile](https://github.com/helmfile/helmfile) · [https://github.com/helmfile/helmfile/releases](https://github.com/helmfile/helmfile/releases) · [https://helmfile.readthedocs.io/en/latest/](https://helmfile.readthedocs.io/en/latest/) · [https://github.com/helmfile/helmfile/blob/main/LICENSE](https://github.com/helmfile/helmfile/blob/main/LICENSE).
 
 | Field | Before | After |
 |---|---|---|
@@ -110,7 +110,7 @@ Sources: [https://github.com/helmfile/helmfile](https://github.com/helmfile/helm
 | `maturity` | `unknown` | `established` |
 | `status` | `needs-review` | `active` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L93; legacy:devopstools_final.md#L565` | `legacy:4_Kubernetes-Containers/README.md#L93; legacy:devopstools_final.md#L565; https://github.com/helmfile/helmfile; https://github.com/helmfile/helmfile/releases; https://helmfile.readthedocs.io/en/latest/` |
+| `sources` | `legacy:4_Kubernetes-Containers/README.md#L93; legacy:devopstools_final.md#L565` | `legacy:4_Kubernetes-Containers/README.md#L93; legacy:devopstools_final.md#L565; https://github.com/helmfile/helmfile; https://github.com/helmfile/helmfile/releases; https://helmfile.readthedocs.io/en/latest/; https://github.com/helmfile/helmfile/blob/main/LICENSE` |
 | `needs_review` | `true` | `false` |
 | `documentation_url` | ∅ | `https://helmfile.readthedocs.io/en/latest/` |
 | `repository_archived` | ∅ | `false` |
@@ -118,7 +118,7 @@ Sources: [https://github.com/helmfile/helmfile](https://github.com/helmfile/helm
 
 ### `nelm`
 
-Sources: [https://github.com/werf/nelm](https://github.com/werf/nelm) · [https://github.com/werf/nelm/releases](https://github.com/werf/nelm/releases) · [https://github.com/werf/nelm/blob/main/README.md](https://github.com/werf/nelm/blob/main/README.md).
+Sources: [https://github.com/werf/nelm](https://github.com/werf/nelm) · [https://github.com/werf/nelm/releases](https://github.com/werf/nelm/releases) · [https://github.com/werf/nelm/blob/main/README.md](https://github.com/werf/nelm/blob/main/README.md) · [https://github.com/werf/nelm/blob/main/LICENSE](https://github.com/werf/nelm/blob/main/LICENSE).
 
 | Field | Before | After |
 |---|---|---|
@@ -128,7 +128,7 @@ Sources: [https://github.com/werf/nelm](https://github.com/werf/nelm) · [https:
 | `maturity` | `unknown` | `growing` |
 | `status` | `needs-review` | `active` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:devopstools_final.md#L611` | `legacy:devopstools_final.md#L611; https://github.com/werf/nelm; https://github.com/werf/nelm/releases; https://github.com/werf/nelm/blob/main/README.md` |
+| `sources` | `legacy:devopstools_final.md#L611` | `legacy:devopstools_final.md#L611; https://github.com/werf/nelm; https://github.com/werf/nelm/releases; https://github.com/werf/nelm/blob/main/README.md; https://github.com/werf/nelm/blob/main/LICENSE` |
 | `needs_review` | `true` | `false` |
 | `documentation_url` | ∅ | `https://github.com/werf/nelm/blob/main/README.md` |
 | `repository_archived` | ∅ | `false` |
@@ -136,7 +136,7 @@ Sources: [https://github.com/werf/nelm](https://github.com/werf/nelm) · [https:
 
 ### `helm-unittest`
 
-Sources: [https://github.com/helm-unittest/helm-unittest](https://github.com/helm-unittest/helm-unittest) · [https://github.com/helm-unittest/helm-unittest/releases](https://github.com/helm-unittest/helm-unittest/releases) · [https://github.com/helm-unittest/helm-unittest/blob/main/DOCUMENT.md](https://github.com/helm-unittest/helm-unittest/blob/main/DOCUMENT.md).
+Sources: [https://github.com/helm-unittest/helm-unittest](https://github.com/helm-unittest/helm-unittest) · [https://github.com/helm-unittest/helm-unittest/releases](https://github.com/helm-unittest/helm-unittest/releases) · [https://github.com/helm-unittest/helm-unittest/blob/main/DOCUMENT.md](https://github.com/helm-unittest/helm-unittest/blob/main/DOCUMENT.md) · [https://github.com/helm-unittest/helm-unittest/blob/main/LICENSE](https://github.com/helm-unittest/helm-unittest/blob/main/LICENSE).
 
 | Field | Before | After |
 |---|---|---|
@@ -146,7 +146,7 @@ Sources: [https://github.com/helm-unittest/helm-unittest](https://github.com/hel
 | `maturity` | `unknown` | `established` |
 | `status` | `needs-review` | `active` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L100; legacy:devopstools_final.md#L572` | `legacy:4_Kubernetes-Containers/README.md#L100; legacy:devopstools_final.md#L572; https://github.com/helm-unittest/helm-unittest; https://github.com/helm-unittest/helm-unittest/releases; https://github.com/helm-unittest/helm-unittest/blob/main/DOCUMENT.md` |
+| `sources` | `legacy:4_Kubernetes-Containers/README.md#L100; legacy:devopstools_final.md#L572` | `legacy:4_Kubernetes-Containers/README.md#L100; legacy:devopstools_final.md#L572; https://github.com/helm-unittest/helm-unittest; https://github.com/helm-unittest/helm-unittest/releases; https://github.com/helm-unittest/helm-unittest/blob/main/DOCUMENT.md; https://github.com/helm-unittest/helm-unittest/blob/main/LICENSE` |
 | `needs_review` | `true` | `false` |
 | `documentation_url` | ∅ | `https://github.com/helm-unittest/helm-unittest/blob/main/DOCUMENT.md` |
 | `repository_archived` | ∅ | `false` |
@@ -154,7 +154,7 @@ Sources: [https://github.com/helm-unittest/helm-unittest](https://github.com/hel
 
 ### `helm-docs`
 
-Sources: [https://github.com/norwoodj/helm-docs](https://github.com/norwoodj/helm-docs) · [https://github.com/norwoodj/helm-docs/releases](https://github.com/norwoodj/helm-docs/releases) · [https://github.com/norwoodj/helm-docs/blob/master/README.md](https://github.com/norwoodj/helm-docs/blob/master/README.md).
+Sources: [https://github.com/norwoodj/helm-docs](https://github.com/norwoodj/helm-docs) · [https://github.com/norwoodj/helm-docs/releases](https://github.com/norwoodj/helm-docs/releases) · [https://github.com/norwoodj/helm-docs/blob/master/README.md](https://github.com/norwoodj/helm-docs/blob/master/README.md) · [https://github.com/norwoodj/helm-docs/blob/master/LICENSE](https://github.com/norwoodj/helm-docs/blob/master/LICENSE).
 
 | Field | Before | After |
 |---|---|---|
@@ -164,7 +164,7 @@ Sources: [https://github.com/norwoodj/helm-docs](https://github.com/norwoodj/hel
 | `maturity` | `unknown` | `established` |
 | `status` | `needs-review` | `active` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L97; legacy:devopstools_final.md#L569` | `legacy:4_Kubernetes-Containers/README.md#L97; legacy:devopstools_final.md#L569; https://github.com/norwoodj/helm-docs; https://github.com/norwoodj/helm-docs/releases; https://github.com/norwoodj/helm-docs/blob/master/README.md` |
+| `sources` | `legacy:4_Kubernetes-Containers/README.md#L97; legacy:devopstools_final.md#L569` | `legacy:4_Kubernetes-Containers/README.md#L97; legacy:devopstools_final.md#L569; https://github.com/norwoodj/helm-docs; https://github.com/norwoodj/helm-docs/releases; https://github.com/norwoodj/helm-docs/blob/master/README.md; https://github.com/norwoodj/helm-docs/blob/master/LICENSE` |
 | `needs_review` | `true` | `false` |
 | `documentation_url` | ∅ | `https://github.com/norwoodj/helm-docs/blob/master/README.md` |
 | `repository_archived` | ∅ | `false` |
@@ -172,7 +172,7 @@ Sources: [https://github.com/norwoodj/helm-docs](https://github.com/norwoodj/hel
 
 ### `helmper`
 
-Sources: [https://github.com/ChristofferNissen/helmper](https://github.com/ChristofferNissen/helmper) · [https://github.com/ChristofferNissen/helmper/releases](https://github.com/ChristofferNissen/helmper/releases) · [https://christoffernissen.github.io/helmper/](https://christoffernissen.github.io/helmper/).
+Sources: [https://github.com/ChristofferNissen/helmper](https://github.com/ChristofferNissen/helmper) · [https://github.com/ChristofferNissen/helmper/releases](https://github.com/ChristofferNissen/helmper/releases) · [https://christoffernissen.github.io/helmper/](https://christoffernissen.github.io/helmper/) · [https://github.com/ChristofferNissen/helmper/blob/main/LICENSE](https://github.com/ChristofferNissen/helmper/blob/main/LICENSE).
 
 | Field | Before | After |
 |---|---|---|
@@ -180,14 +180,14 @@ Sources: [https://github.com/ChristofferNissen/helmper](https://github.com/Chris
 | `use_when` | `You need to mirror Helm charts and their images into air-gapped or private registries.` | `You are piloting Helm chart and container-image mirroring into private or air-gapped OCI registries.` |
 | `avoid_when` | `You pull charts directly from public registries without mirroring requirements.` | `You require stable production support guarantees from a project that still describes itself as beta.; You assume optional Trivy, Copacetic and Cosign integrations automatically establish supply-chain safety.; You cannot protect registry credentials or validate imported and rewritten artifacts.` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L94; legacy:devopstools_final.md#L566` | `legacy:4_Kubernetes-Containers/README.md#L94; legacy:devopstools_final.md#L566; https://github.com/ChristofferNissen/helmper; https://github.com/ChristofferNissen/helmper/releases; https://christoffernissen.github.io/helmper/` |
+| `sources` | `legacy:4_Kubernetes-Containers/README.md#L94; legacy:devopstools_final.md#L566` | `legacy:4_Kubernetes-Containers/README.md#L94; legacy:devopstools_final.md#L566; https://github.com/ChristofferNissen/helmper; https://github.com/ChristofferNissen/helmper/releases; https://christoffernissen.github.io/helmper/; https://github.com/ChristofferNissen/helmper/blob/main/LICENSE` |
 | `documentation_url` | ∅ | `https://christoffernissen.github.io/helmper/` |
 | `repository_archived` | ∅ | `false` |
 | `license_spdx` | ∅ | `Apache-2.0` |
 
 ### `helm-chart-generator`
 
-Sources: [https://github.com/ravaga/helm-chart-generator](https://github.com/ravaga/helm-chart-generator) · [https://github.com/ravaga/helm-chart-generator/releases](https://github.com/ravaga/helm-chart-generator/releases) · [https://github.com/ravaga/helm-chart-generator/blob/main/README.md](https://github.com/ravaga/helm-chart-generator/blob/main/README.md).
+Sources: [https://github.com/ravaga/helm-chart-generator](https://github.com/ravaga/helm-chart-generator) · [https://github.com/ravaga/helm-chart-generator/releases](https://github.com/ravaga/helm-chart-generator/releases) · [https://github.com/ravaga/helm-chart-generator/blob/main/README.md](https://github.com/ravaga/helm-chart-generator/blob/main/README.md) · [https://github.com/ravaga/helm-chart-generator/blob/main/LICENSE](https://github.com/ravaga/helm-chart-generator/blob/main/LICENSE).
 
 | Field | Before | After |
 |---|---|---|
@@ -196,7 +196,7 @@ Sources: [https://github.com/ravaga/helm-chart-generator](https://github.com/rav
 | `avoid_when` | `'\`helm create\` or an existing chart boilerplate covers your needs.'` | `You require verified current Kubernetes/Helm compatibility or a stable maintenance and security release process.; The supported helm create command or an existing chart template already covers your scaffolding needs.` |
 | `maturity` | `unknown` | `experimental` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-21'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L92; legacy:devopstools_final.md#L564` | `legacy:4_Kubernetes-Containers/README.md#L92; legacy:devopstools_final.md#L564; https://github.com/ravaga/helm-chart-generator; https://github.com/ravaga/helm-chart-generator/releases; https://github.com/ravaga/helm-chart-generator/blob/main/README.md` |
+| `sources` | `legacy:4_Kubernetes-Containers/README.md#L92; legacy:devopstools_final.md#L564` | `legacy:4_Kubernetes-Containers/README.md#L92; legacy:devopstools_final.md#L564; https://github.com/ravaga/helm-chart-generator; https://github.com/ravaga/helm-chart-generator/releases; https://github.com/ravaga/helm-chart-generator/blob/main/README.md; https://github.com/ravaga/helm-chart-generator/blob/main/LICENSE` |
 | `documentation_url` | ∅ | `https://github.com/ravaga/helm-chart-generator/blob/main/README.md` |
 | `repository_archived` | ∅ | `false` |
 | `license_spdx` | ∅ | `Apache-2.0` |
