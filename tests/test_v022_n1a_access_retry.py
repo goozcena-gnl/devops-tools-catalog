@@ -412,6 +412,7 @@ def test_n1a_current_state_preserves_owned_decisions() -> None:
         _records_at(N1A_RESULT_SHA),
     )
 
+
 def test_wave17_helmfile_supersession_is_bounded() -> None:
     accepted = _records_at(N1A_RESULT_SHA)["helmfile"][1]
     current = _current_records()["helmfile"][1]
@@ -421,7 +422,6 @@ def test_wave17_helmfile_supersession_is_bounded() -> None:
     assert current["license_model"] == accepted["license_model"] == "oss"
     assert current["repository_url"] == accepted["repository_url"]
     assert current["official_url"] == accepted["official_url"]
-
 
 
 def test_n1a_unrelated_future_canonical_change_does_not_invalidate_history() -> None:
