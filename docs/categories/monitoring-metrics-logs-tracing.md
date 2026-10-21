@@ -1965,4 +1965,3 @@ Open-source distributed tracing collector and UI for investigating service laten
 - You expect automatic application instrumentation or guaranteed parity with Jaeger and OpenTelemetry-native backends.
 
 [Official site](https://zipkin.io) · [Documentation](https://zipkin.io/pages/quickstart) · [Source repository](https://github.com/openzipkin/zipkin)
-
