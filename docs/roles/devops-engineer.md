@@ -87,7 +87,7 @@
 | [Bat](https://github.com/sharkdp/bat) | Foundations, Linux and scripting | oss | needs-review |
 | [Bazel](https://bazel.build) | CI, build and testing | oss | active |
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
-| [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | active |
 | [Bitbucket](https://www.atlassian.com/software/bitbucket) | Source control and repository management | commercial | active |
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | commercial | active |
 | [Bitrise](https://bitrise.io) | CI, build and testing | commercial | active |
@@ -218,7 +218,7 @@
 | [Docmost](https://docmost.com/) | Documentation, learning and career resources | open-core | active |
 | [Dokku](https://dokku.com) | CD, GitOps, release and promotion | oss | active |
 | [dool](https://github.com/scottchiefbaker/dool) | Foundations, Linux and scripting | oss | active |
-| [Dozzle](https://dozzle.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Dozzle](https://dozzle.dev) | Monitoring, metrics, logs and tracing | oss | active |
 | [drawDB](https://www.drawdb.app) | Developer experience and local environments | oss | needs-review |
 | [Drone](https://www.drone.io) | CI, build and testing | open-core | active |
 | [dsoxlab](https://github.com/stephrobert/dsoxlab) | Documentation, learning and career resources | documentation | needs-review |
@@ -259,7 +259,7 @@
 | [FuturFusion](https://futurfusion.io) | Virtualization, bare metal and homelab | commercial | active |
 | [Garage](https://garagehq.deuxfleurs.fr) | Databases, caching and data infrastructure | oss | needs-review |
 | [Garage WebUI](https://github.com/khairul169/garage-webui) | Databases, caching and data infrastructure | oss | active |
-| [Gatus](https://gatus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Gatus](https://gatus.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Gerrit Code Review](https://www.gerritcodereview.com/) | Source control and repository management | oss | active |
 | [Ghostty](https://ghostty.org) | Developer experience and local environments | oss | needs-review |
 | [Git](https://git-scm.com) | Source control and repository management | oss | needs-review |
@@ -309,7 +309,7 @@
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
 | [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | commercial | active |
 | [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | commercial | active |
-| [HolmesGPT](https://holmesgpt.dev/latest) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [HolmesGPT](https://holmesgpt.dev/latest) | Monitoring, metrics, logs and tracing | oss | active |
 | [Homarr](https://homarr.dev/) | Virtualization, bare metal and homelab | oss | active |
 | [Homer](https://homer-demo.netlify.app) | Emerging and experimental tools | oss | needs-review |
 | [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | commercial | active |
@@ -319,7 +319,7 @@
 | [HTTPX](https://www.python-httpx.org/) | Developer experience and local environments | oss | active |
 | [Hurl](https://hurl.dev/) | CI, build and testing | oss | active |
 | [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) | Virtualization, bare metal and homelab | documentation | needs-review |
-| [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [IBM Cloud](https://www.ibm.com/products/cloud) | Cloud platforms and cloud management | commercial | active |
 | [IcePanel](https://icepanel.io) | Emerging and experimental tools | unknown | needs-review |
 | [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -476,7 +476,7 @@
 | [OpenFaaS](https://www.openfaas.com) | Serverless, edge and WebAssembly | open-core | needs-review |
 | [OpenFeature](https://openfeature.dev) | CD, GitOps, release and promotion | oss | active |
 | [OpenObserve](https://openobserve.ai/) | Monitoring, metrics, logs and tracing | open-core | active |
-| [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
 | [OpenTaco](https://opentaco.dev) | Infrastructure as Code | open-core | active |
 | [OpenTelemetry](https://opentelemetry.io/) | Monitoring, metrics, logs and tracing | oss | active |
@@ -535,7 +535,7 @@
 | [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | open-core | active |
 | [QuantumByte](https://github.com/QuantumByteOSS/quantumbyte) | Developer experience and local environments | oss | needs-review |
 | [Quay](https://quay.io) | Artifact and package management | open-core | needs-review |
-| [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [RabbitMQ](https://www.rabbitmq.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Rackula](https://www.racku.la/) | Virtualization, bare metal and homelab | oss | active |
 | [RamaLama](https://ramalama.ai) | Developer experience and local environments | oss | needs-review |
@@ -589,7 +589,7 @@
 | [ShellCheck](https://www.shellcheck.net) | Foundations, Linux and scripting | oss | needs-review |
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | needs-review |
 | [Shipwright](https://shipwright.io) | Containers and image tooling | oss | needs-review |
-| [SigNoz](https://signoz.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [SigNoz](https://signoz.io) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Site24x7](https://www.site24x7.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
 | [Skopeo](https://github.com/containers/skopeo) | Containers and image tooling | oss | needs-review |
@@ -707,7 +707,7 @@
 | [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Zed](https://zed.dev/) | Developer experience and local environments | oss | active |
 | [Zellij](https://zellij.dev/) | Developer experience and local environments | oss | active |
-| [Zipkin](https://zipkin.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Zipkin](https://zipkin.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [zoxide](https://github.com/ajeetdsouza/zoxide) | Developer experience and local environments | oss | active |
 | [Zsh](https://www.zsh.org) | Foundations, Linux and scripting | oss | needs-review |
 
