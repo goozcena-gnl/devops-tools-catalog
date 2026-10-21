@@ -77,7 +77,7 @@
 - [Bash](https://www.gnu.org/software/bash) — Bourne Again Shell.
 - [Bat](https://github.com/sharkdp/bat) — Better `cat` with syntax highlighting.
 - [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) — Embedded key/value store for Go applications.
-- [Beszel](https://beszel.dev) — Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC, backups, and REST API.
+- [Beszel](https://beszel.dev) — Lightweight self-hosted hub-and-agent monitoring for hosts and Docker/Podman containers, with metric history and alerting.
 - [Better Stack](https://betterstack.com/) — Commercial observability and incident-management platform with telemetry, on-call, and status-page services.
 - [Bito](https://bito.ai) — Commercial AI code-review and codebase-intelligence platform for repositories, IDEs, CLIs, and engineering workflows.
 - [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) — Prometheus multi-target exporter that probes endpoints including HTTP(S), DNS, TCP, ICMP and gRPC and exposes probe results as metrics for a separate monitoring system.
@@ -184,7 +184,7 @@
 - [dool](https://github.com/scottchiefbaker/dool) — Linux command-line monitor for correlating CPU, memory, disk, network, and process activity in real time.
 - [Doppler](https://www.doppler.com) — Hosted Doppler secrets and configuration service with a separately Apache-2.0 licensed CLI for retrieving and injecting configuration.
 - [dotnet-operator-sdk](https://dotnet.github.io/dotnet-operator-sdk) — Build Kubernetes operators/controllers using .NET.
-- [Dozzle](https://dozzle.dev) — Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes support.
+- [Dozzle](https://dozzle.dev) — Real-time container log viewer for Docker, Swarm and supported Kubernetes deployments; it does not persist logs.
 - [duf](https://github.com/muesli/duf) — Command-line utility that presents disk usage and free-space information for mounted filesystems.
 - [Dynatrace](https://www.dynatrace.com/) — Commercial observability and application-performance platform spanning infrastructure, applications, logs, security, digital experience, and AI-assisted analysis.
 - [Easykube](https://torloejborg.github.io/easykube/) — Developer tool for reasoning about and running complex microservice backends locally with Kubernetes.
@@ -232,7 +232,7 @@
 - [Garden](https://garden.io) — Developer-first automation for building/testing/deploying cloud-native apps.
 - [Gardener](https://gardener.cloud/) — Kubernetes API-driven system for creating and operating homogeneous managed Kubernetes clusters across infrastructure providers.
 - [Gateway API](https://gateway-api.sigs.k8s.io) — Kubernetes service networking APIs.
-- [Gatus](https://gatus.io) — Developer-oriented health dashboard and status page for monitoring endpoints and services.
+- [Gatus](https://gatus.io) — Self-hosted endpoint health dashboard with HTTP, TCP, ICMP and DNS checks, status pages and alert integrations.
 - [genai-agentos](https://github.com/genai-works-org/genai-agentos) — Framework for building, running, and managing multi-agent AI workflows.
 - [git-sync](https://github.com/kubernetes/git-sync) — Sidecar app that clones a Git repository and keeps it synchronized with upstream.
 - [GitHub Copilot](https://github.com/features/copilot) — AI-powered code completion assistant.
@@ -292,7 +292,7 @@
 - [Hermes Agent](https://hermes-agent.nousresearch.com) — Agent framework and runtime from Nous Research.
 - [Heroku](https://www.heroku.com) — Managed cloud application platform for building, deploying, and operating applications on dynos and managed data services.
 - [Hoji AI](https://hoji.ai) — AI assistant for GitHub workflows.
-- [HolmesGPT](https://holmesgpt.dev/latest) — Open-source SRE AI agent for investigating production incidents across Kubernetes, VMs, cloud services, and databases with operator mode for 24/7 background monitoring (CNCF).
+- [HolmesGPT](https://holmesgpt.dev/latest) — Open-source AI SRE investigation agent integrating Kubernetes, cloud and observability data sources; operator mode needs explicit permissions.
 - [Holos](https://holos.run) — Platform for managing Kubernetes configuration holistically.
 - [Homarr](https://homarr.dev/) — Self-hosted dashboard for organizing and monitoring links to homelab and infrastructure services.
 - [Honeycomb](https://www.honeycomb.io) — Hosted observability platform for high-cardinality telemetry, distributed tracing, and production debugging.
@@ -303,7 +303,7 @@
 - [HwameiStor](https://hwameistor.io) — Cloud-native local storage system.
 - [Hybernate](https://okedeji.io/hybernate) — Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce resource consumption during off-peak hours.
 - [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) — Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows Server.
-- [HyperDX](https://www.hyperdx.io) — Observability and troubleshooting platform.
+- [HyperDX](https://www.hyperdx.io) — ClickHouse-backed observability interface for correlating logs, traces, metrics and session replay within ClickStack deployments.
 - [IBM Cloud](https://www.ibm.com/products/cloud) — Enterprise cloud services and infrastructure by IBM.
 - [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) — Licensed enterprise software for centralized encryption-key serving, storage, rotation, and lifecycle management.
 - [Icinga](https://icinga.com) — Open source monitoring system derived from Nagios.
@@ -565,7 +565,7 @@
 - [OpenLens](https://github.com/MuhammedKalkan/OpenLens) — Open source distribution of Lens features.
 - [OpenObserve](https://openobserve.ai/) — Observability platform for logs, metrics, and traces with an open-source core and commercial enterprise offerings.
 - [OpenRun](https://openrun.dev) — Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
-- [OpenSearch](https://opensearch.org) — Search/analytics engine commonly used for logs (Elastic-alternative fork).
+- [OpenSearch](https://opensearch.org) — Apache-licensed distributed search and analytics engine used for log indexing and observability, distinct from Dashboards and ingestion components.
 - [OpenSRE](https://www.opensre.com/) — Self-hostable framework for AI-assisted production incident investigation, evaluation, and remediation workflows.
 - [OpenSSH](https://www.openssh.org) — The ubiquitous open-source SSH suite for secure remote login, file transfer, and tunneling.
 - [OpenStack](https://www.openstack.org) — Open-source cloud infrastructure platform for operating compute, networking, storage, identity, and related services.
@@ -634,7 +634,7 @@
 - [Python Official Tutorial](https://docs.python.org/3/tutorial) — Official Python documentation and tutorial.
 - [Qdrant](https://qdrant.tech/) — Vector database and similarity-search engine available for self-hosted and managed deployments.
 - [QEMU](https://www.qemu.org/) — Machine emulator and virtualizer supporting full-system emulation, user-mode emulation, and hardware-assisted virtualization.
-- [Quickwit](https://quickwit.io) — Distributed log search/indexing built around fast ingestion and cost control.
+- [Quickwit](https://quickwit.io) — Cloud-native distributed log and trace search engine using object storage and decoupled indexing and search.
 - [RabbitMQ](https://www.rabbitmq.com) — Open-source message broker and streaming platform for reliable asynchronous communication.
 - [Rackula](https://www.racku.la/) — Browser-based rack layout designer for planning equipment placement and exporting rack diagrams.
 - [Radar](https://radarhq.io/) — Kubernetes inspection interface with resource topology, events, GitOps information, and an MCP surface.
@@ -688,7 +688,7 @@
 - [Server Pulse](https://github.com/Server-Pulse/server-pulse) — Linux server diagnostics and monitoring TUI covering system health, Docker containers, logs, networking, and security checks.
 - [ShellCheck](https://www.shellcheck.net) — Shell script linter.
 - [Shieldlist agent](https://git.lrob.net/Shieldlist/shieldlist-agent) — Host agent that tails service logs and applies rule-based IP sanctions through nftables, with an optional central controller.
-- [SigNoz](https://signoz.io) — Open-source observability platform.
+- [SigNoz](https://signoz.io) — OpenTelemetry-native observability platform for logs, metrics and traces, with MIT community code and separately restricted Enterprise components.
 - [Sim](https://www.sim.ai) — AI workspace for building, deploying, and monitoring agentic workflows.
 - [Site24x7](https://www.site24x7.com) — Full-stack monitoring platform.
 - [sk8r](https://github.com/mvklingeren/sk8r) — Kubernetes dashboard.
@@ -748,7 +748,7 @@
 - [Tinkerbell](https://tinkerbell.org/) — Bare-metal provisioning stack for declarative machine installation workflows.
 - [Tinyauth](https://tinyauth.app/) — Lightweight self-hosted authentication gateway for protecting applications behind a reverse proxy.
 - [Toxiproxy](https://github.com/Shopify/toxiproxy) — MIT-licensed TCP proxy with an HTTP control API for injecting stream latency, bandwidth limits, timeouts, resets and other faults into connections routed through it.
-- [Tracetest](https://tracetest.io) — Trace-based testing for distributed systems.
+- [Tracetest](https://tracetest.io) — Trace-based integration testing using OpenTelemetry, with mixed MIT/Tracetest Community licensing and unclear current support.
 - [Traefik Proxy](https://traefik.io/traefik) — Reverse proxy and ingress controller with dynamic service discovery.
 - [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) — Kubernetes backup and recovery platform.
 - [Trippy](https://trippy.rs/) — Cross-platform network diagnostic TUI that combines traceroute and ping with live hop statistics.
@@ -802,7 +802,7 @@
 - [Zellij](https://zellij.dev/) — Terminal workspace and multiplexer with layouts, panes, sessions, and plugins.
 - [Zenduty](https://github.com/zenduty) — Incident management and on-call platform with developer-friendly APIs.
 - [zeropod](https://github.com/ctrox/zeropod) — Scale Kubernetes pods to zero and restore them on demand using checkpoint and restore.
-- [Zipkin](https://zipkin.io) — Distributed tracing system.
+- [Zipkin](https://zipkin.io) — Open-source distributed tracing collector and UI for investigating service latency and dependencies using pluggable storage.
 - [zoxide](https://github.com/ajeetdsouza/zoxide) — Shell command that ranks visited directories to provide faster directory navigation.
 - [Zsh](https://www.zsh.org) — Z shell.
 
