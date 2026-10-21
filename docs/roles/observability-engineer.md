@@ -12,7 +12,7 @@
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) | Monitoring, metrics, logs and tracing | documentation | needs-review |
 | [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) | Monitoring, metrics, logs and tracing | documentation | active |
-| [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | active |
 | [Better Stack](https://betterstack.com/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | active |
 | [bottom](https://bottom.pages.dev/stable/) | Monitoring, metrics, logs and tracing | oss | active |
@@ -32,7 +32,7 @@
 | [Datadog](https://www.datadoghq.com/product/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [dnsglobe](https://github.com/514-labs/dnsglobe) | SRE, incident response and on-call | oss | needs-review |
 | [Docker OpenTelemetry LGTM](https://github.com/grafana/docker-otel-lgtm) | Monitoring, metrics, logs and tracing, Developer experience and local environments | oss | active |
-| [Dozzle](https://dozzle.dev) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Dozzle](https://dozzle.dev) | Monitoring, metrics, logs and tracing | oss | active |
 | [Dynatrace](https://www.dynatrace.com/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Elastic APM Server](https://www.elastic.co/observability/application-performance-monitoring) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [Elastic Stack (ELK)](https://www.elastic.co/elastic-stack) | Monitoring, metrics, logs and tracing | source-available | needs-review |
@@ -40,7 +40,7 @@
 | [FlowG](https://flowg.cloud/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Fluent Bit](https://fluentbit.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | active |
-| [Gatus](https://gatus.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Gatus](https://gatus.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [GlitchTip](https://glitchtip.com/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [GoAccess](https://goaccess.io/) | Monitoring, metrics, logs and tracing | oss | active |
 | [GoAlert](https://goalert.me) | SRE, incident response and on-call | oss | needs-review |
@@ -56,9 +56,9 @@
 | [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | active |
 | [groundcover](https://www.groundcover.com/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [grove](https://github.com/ai-dynamo/grove) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [HolmesGPT](https://holmesgpt.dev/latest) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [HolmesGPT](https://holmesgpt.dev/latest) | Monitoring, metrics, logs and tracing | oss | active |
 | [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | commercial | active |
-| [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | active |
@@ -85,7 +85,7 @@
 | [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) | Monitoring, metrics, logs and tracing | oss | active |
 | [ntfy](https://ntfy.sh) | SRE, incident response and on-call | oss | needs-review |
 | [OpenObserve](https://openobserve.ai/) | Monitoring, metrics, logs and tracing | open-core | active |
-| [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTelemetry](https://opentelemetry.io/) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) | Monitoring, metrics, logs and tracing | oss | active |
@@ -96,7 +96,7 @@
 | [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Pulse](https://pulserelay.pro) | SRE, incident response and on-call | oss | active |
-| [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Robusta](https://home.robusta.dev) | Monitoring, metrics, logs and tracing | open-core | active |
 | [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [RustNet](https://github.com/domcyrus/rustnet) | SRE, incident response and on-call | oss | needs-review |
@@ -105,7 +105,7 @@
 | [Sensu](https://sensu.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Sentry](https://sentry.io/welcome) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Server Pulse](https://github.com/Server-Pulse/server-pulse) | SRE, incident response and on-call | oss | needs-review |
-| [SigNoz](https://signoz.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [SigNoz](https://signoz.io) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Site24x7](https://www.site24x7.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Slok](https://github.com/slok-operator/slok) | Monitoring, metrics, logs and tracing, SRE, incident response and on-call | oss | active |
 | [Sniffnet](https://sniffnet.app/) | Monitoring, metrics, logs and tracing | oss | active |
@@ -124,6 +124,6 @@
 | [Wireshark](https://www.wireshark.org) | SRE, incident response and on-call | oss | needs-review |
 | [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Zenduty](https://github.com/zenduty) | SRE, incident response and on-call | open-core | needs-review |
-| [Zipkin](https://zipkin.io) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Zipkin](https://zipkin.io) | Monitoring, metrics, logs and tracing | oss | active |
 
 [Back to catalogue](../../README.md)
