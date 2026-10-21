@@ -12,7 +12,7 @@
 - [atop](https://github.com/Atoptool/atop) — Linux system and process monitor that records resource utilization for live and historical analysis.
 - [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) — Curated list of Prometheus resources.
 - [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) — Curated, copy-pasteable Prometheus alert rules and guidance for common services and platforms.
-- [Beszel](https://beszel.dev) — Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC, backups, and REST API.
+- [Beszel](https://beszel.dev) — Lightweight self-hosted hub-and-agent monitoring for hosts and Docker/Podman containers, with metric history and alerting.
 - [Better Stack](https://betterstack.com/) — Commercial observability and incident-management platform with telemetry, on-call, and status-page services.
 - [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) — Prometheus multi-target exporter that probes endpoints including HTTP(S), DNS, TCP, ICMP and gRPC and exposes probe results as metrics for a separate monitoring system.
 - [bmon](https://jafaral.github.io/bmon/) — Terminal bandwidth monitor and rate estimator for network interfaces.
@@ -36,7 +36,7 @@
 - [dnsglobe](https://github.com/514-labs/dnsglobe) — Terminal UI for tracking global DNS propagation across public resolvers.
 - [Docker OpenTelemetry LGTM](https://github.com/grafana/docker-otel-lgtm) — Single-container OpenTelemetry backend bundling Grafana, Loki, Tempo, Mimir, and an OpenTelemetry Collector for development and demos.
 - [dool](https://github.com/scottchiefbaker/dool) — Linux command-line monitor for correlating CPU, memory, disk, network, and process activity in real time.
-- [Dozzle](https://dozzle.dev) — Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes support.
+- [Dozzle](https://dozzle.dev) — Real-time container log viewer for Docker, Swarm and supported Kubernetes deployments; it does not persist logs.
 - [Dynatrace](https://www.dynatrace.com/) — Commercial observability and application-performance platform spanning infrastructure, applications, logs, security, digital experience, and AI-assisted analysis.
 - [Elastic APM Server](https://www.elastic.co/observability/application-performance-monitoring) — APM intake/processing for Elastic Observability (agents + server + UI).
 - [Elastic Stack (ELK)](https://www.elastic.co/elastic-stack) — Search/analytics/log platform; source licensing varies by component (Elastic License/SSPL and AGPL option for parts).
@@ -45,7 +45,7 @@
 - [FlowG](https://flowg.cloud/) — Self-hosted log processing and observability platform with visual pipelines, search, and dashboards.
 - [Fluent Bit](https://fluentbit.io) — Fast and lightweight log processor.
 - [Fluentd](https://www.fluentd.org) — CNCF-graduated Ruby-based log-event collector and forwarder with configurable input, routing, buffering and output plugins, maintained separately from Fluent Bit.
-- [Gatus](https://gatus.io) — Developer-oriented health dashboard and status page for monitoring endpoints and services.
+- [Gatus](https://gatus.io) — Self-hosted endpoint health dashboard with HTTP, TCP, ICMP and DNS checks, status pages and alert integrations.
 - [GlitchTip](https://glitchtip.com/) — Sentry-compatible error tracking and performance monitoring platform with self-hosted and managed offerings.
 - [GoAccess](https://goaccess.io/) — Terminal and HTML web-log analyser providing real-time HTTP traffic statistics.
 - [GoAlert](https://goalert.me) — On-call alert and escalation management.
@@ -61,9 +61,9 @@
 - [Grafana Tempo](https://grafana.com/oss/tempo) — Open-source distributed tracing backend with TraceQL search and configurable OTLP, Jaeger and Zipkin receivers; Grafana Cloud Traces is a separate managed offering.
 - [groundcover](https://www.groundcover.com/) — Commercial observability platform offering infrastructure and application monitoring with BYOC deployment.
 - [grove](https://github.com/ai-dynamo/grove) — AI-powered Kubernetes troubleshooting.
-- [HolmesGPT](https://holmesgpt.dev/latest) — Open-source SRE AI agent for investigating production incidents across Kubernetes, VMs, cloud services, and databases with operator mode for 24/7 background monitoring (CNCF).
+- [HolmesGPT](https://holmesgpt.dev/latest) — Open-source AI SRE investigation agent integrating Kubernetes, cloud and observability data sources; operator mode needs explicit permissions.
 - [Honeycomb](https://www.honeycomb.io) — Hosted observability platform for high-cardinality telemetry, distributed tracing, and production debugging.
-- [HyperDX](https://www.hyperdx.io) — Observability and troubleshooting platform.
+- [HyperDX](https://www.hyperdx.io) — ClickHouse-backed observability interface for correlating logs, traces, metrics and session replay within ClickStack deployments.
 - [Icinga](https://icinga.com) — Open source monitoring system derived from Nagios.
 - [InfluxData](https://www.influxdata.com) — Time series platform with OSS components and commercial cloud/enterprise offerings.
 - [Jaeger](https://www.jaegertracing.io) — Open-source distributed tracing backend with trace storage, query APIs and UI; current Jaeger builds on the OpenTelemetry Collector framework and accepts OpenTelemetry instrumentation.
@@ -92,7 +92,7 @@
 - [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) — Prometheus exporter that exposes hardware and operating-system metrics from Unix-like hosts.
 - [ntfy](https://ntfy.sh) — Simple pub-sub notifications (self-hostable).
 - [OpenObserve](https://openobserve.ai/) — Observability platform for logs, metrics, and traces with an open-source core and commercial enterprise offerings.
-- [OpenSearch](https://opensearch.org) — Search/analytics engine commonly used for logs (Elastic-alternative fork).
+- [OpenSearch](https://opensearch.org) — Apache-licensed distributed search and analytics engine used for log indexing and observability, distinct from Dashboards and ingestion components.
 - [OpenSRE](https://www.opensre.com/) — Self-hostable framework for AI-assisted production incident investigation, evaluation, and remediation workflows.
 - [OpenTelemetry](https://opentelemetry.io/) — Vendor-neutral observability umbrella project defining specifications, APIs, SDKs and instrumentation for traces, metrics and logs; the Collector is a separate implementation component, and storage/UI backends are external.
 - [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) — Vendor-neutral telemetry pipeline implementation using receivers, processors and exporters for traces, metrics and logs; the core framework repository and the contrib component repository are distinct.
@@ -107,7 +107,7 @@
 - [Prometheus](https://prometheus.io) — Open-source metrics monitoring server with a time-series database, PromQL and alerting rules; Alertmanager, exporters and client libraries are separate ecosystem components.
 - [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) — Metrics cache that accepts pushed metrics from short-lived and batch jobs for Prometheus scraping.
 - [Pulse](https://pulserelay.pro) — Self-hosted infrastructure monitoring workspace for Proxmox, Docker, Kubernetes, TrueNAS, hosts, and alerts, with a separate commercial Pulse Pro edition.
-- [Quickwit](https://quickwit.io) — Distributed log search/indexing built around fast ingestion and cost control.
+- [Quickwit](https://quickwit.io) — Cloud-native distributed log and trace search engine using object storage and decoupled indexing and search.
 - [Radar](https://radarhq.io/) — Kubernetes inspection interface with resource topology, events, GitOps information, and an MCP surface.
 - [Railway](https://railway.com/) — Managed application platform for building, deploying, networking, scaling, and observing services from source repositories or containers.
 - [Robusta](https://home.robusta.dev) — Kubernetes alert enrichment, investigation, and automation platform centered on the open-source Robusta Classic engine with optional hosted platform capabilities.
@@ -118,7 +118,7 @@
 - [Sensu](https://sensu.io) — Observability pipeline (metrics/events/alerts).
 - [Sentry](https://sentry.io/welcome) — Error monitoring with performance/tracing features (popular for app-level APM signals).
 - [Server Pulse](https://github.com/Server-Pulse/server-pulse) — Linux server diagnostics and monitoring TUI covering system health, Docker containers, logs, networking, and security checks.
-- [SigNoz](https://signoz.io) — Open-source observability platform.
+- [SigNoz](https://signoz.io) — OpenTelemetry-native observability platform for logs, metrics and traces, with MIT community code and separately restricted Enterprise components.
 - [Site24x7](https://www.site24x7.com) — Full-stack monitoring platform.
 - [Slok](https://github.com/slok-operator/slok) — Kubernetes operator that manages service-level objectives and tracks error budgets.
 - [Sniffnet](https://sniffnet.app/) — Desktop network-traffic monitor showing connections and traffic statistics.
@@ -128,7 +128,7 @@
 - [SysWarden](https://syswarden.io) — Host-local Linux security orchestrator combining nftables enforcement, host telemetry, bounded threat intelligence, out-of-band WAAP log analysis, authenticated HA, and a terminal dashboard.
 - [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) — InfluxData's plugin-driven telemetry agent for collecting, processing, aggregating and writing metrics and events to InfluxDB or other backends, distinct from a time-series database and Telegraf Enterprise.
 - [Thanos](https://thanos.io) — Open-source components extending Prometheus with high availability, deduplicated global queries and long-term metrics storage in object stores; it is distinct from Prometheus and Grafana Mimir.
-- [Tracetest](https://tracetest.io) — Trace-based testing for distributed systems.
+- [Tracetest](https://tracetest.io) — Trace-based integration testing using OpenTelemetry, with mixed MIT/Tracetest Community licensing and unclear current support.
 - [Trippy](https://trippy.rs/) — Cross-platform network diagnostic TUI that combines traceroute and ping with live hop statistics.
 - [TShark](https://www.wireshark.org/docs/man-pages/tshark.html) — Command-line network protocol analyzer from the Wireshark project for live captures and saved trace files.
 - [Uptime Kuma](https://uptime.kuma.pet) — Self-hosted uptime-monitoring application with service checks, notifications and public status pages.
@@ -140,6 +140,6 @@
 - [Wireshark](https://www.wireshark.org) — Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
 - [Zabbix](https://www.zabbix.com) — Enterprise-grade monitoring platform (metrics, triggers, dashboards).
 - [Zenduty](https://github.com/zenduty) — Incident management and on-call platform with developer-friendly APIs.
-- [Zipkin](https://zipkin.io) — Distributed tracing system.
+- [Zipkin](https://zipkin.io) — Open-source distributed tracing collector and UI for investigating service latency and dependencies using pluggable storage.
 
 [Back to catalogue](../../README.md)
