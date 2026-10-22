@@ -158,8 +158,8 @@
 | [Hybernate](https://okedeji.io/hybernate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [hyperfine](https://github.com/sharkdp/hyperfine) | Chaos and performance engineering | oss | active |
-| [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | active |
+| [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) | Kubernetes distributions and operations | oss | needs-review |
 | [iPerf3 (ESnet)](https://software.es.net/iperf/) | Chaos and performance engineering | oss | active |
 | [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | active |
@@ -206,7 +206,7 @@
 | [krew](https://krew.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [kro](https://kro.run/) | Kubernetes networking, storage and add-ons | oss | active |
 | [kroc](https://github.com/pawelcit/kroc) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | active |
 | [kuba](https://github.com/hcgatewood/kuba) | Kubernetes distributions and operations | oss | needs-review |
 | [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | active |
 | [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) | Kubernetes distributions and operations | oss | active |
@@ -259,7 +259,7 @@
 | [KubeView](https://github.com/benc-uk/kubeview) | Kubernetes distributions and operations | oss | active |
 | [Kubevious](https://kubevious.io) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeVirt](https://kubevirt.io) | Kubernetes distributions and operations, Virtualization, bare metal and homelab | oss | active |
-| [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | active |
 | [Kubey](https://kubey.app) | Kubernetes distributions and operations | oss | needs-review |
 | [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | active |
 | [Kustomize](https://kustomize.io) | Kubernetes distributions and operations | oss | active |
@@ -299,7 +299,7 @@
 | [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | needs-review |
 | [Nagios](https://www.nagios.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | active |
-| [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | free-saas | active |
 | [NetWatch Labs](https://www.netwatchlabs.com) | SRE, incident response and on-call | oss | needs-review |
 | [New Relic](https://newrelic.com/platform) | Monitoring, metrics, logs and tracing | commercial | active |
 | [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) | Kubernetes networking, storage and add-ons | open-core | active |
@@ -366,7 +366,7 @@
 | [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [Sematext](https://sematext.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Sensu](https://sensu.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
-| [Sentry](https://sentry.io/welcome) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Sentry](https://sentry.io/welcome) | Monitoring, metrics, logs and tracing | source-available | active |
 | [Server Pulse](https://github.com/Server-Pulse/server-pulse) | SRE, incident response and on-call | oss | needs-review |
 | [SigNoz](https://signoz.io) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Site24x7](https://www.site24x7.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
@@ -422,7 +422,7 @@
 | [Wireshark](https://www.wireshark.org) | SRE, incident response and on-call | oss | needs-review |
 | [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
 | [YAML](https://yaml.org) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [Zenduty](https://github.com/zenduty) | SRE, incident response and on-call | open-core | needs-review |
 | [zeropod](https://github.com/ctrox/zeropod) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Zipkin](https://zipkin.io) | Monitoring, metrics, logs and tracing | oss | active |

@@ -193,7 +193,7 @@
 - [Eclipse Jetty](https://jetty.org/) — Java HTTP server and servlet container usable standalone or embedded.
 - [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) — Visualize EKS node usage and capacity.
 - [Elastic APM Server](https://www.elastic.co/observability/application-performance-monitoring) — APM intake/processing for Elastic Observability (agents + server + UI).
-- [Elastic Stack (ELK)](https://www.elastic.co/elastic-stack) — Search/analytics/log platform; source licensing varies by component (Elastic License/SSPL and AGPL option for parts).
+- [Elastic Stack (ELK)](https://www.elastic.co/elastic-stack) — Elastic Stack combines Elasticsearch search and analytics with separate Kibana and Logstash components; Elasticsearch source has file-dependent AGPLv3, SSPL and Elastic License terms, not one Stack-wide licence.
 - [Elemental](https://elemental.docs.rancher.com/) — Rancher-integrated stack for centrally managing immutable operating-system images on Kubernetes nodes.
 - [Entrust Cryptographic Security Platform Key Manager](https://www.entrust.com/products/key-management) — Enterprise key-management software, formerly KeyControl, for centralizing encryption keys and integrating with KMIP clients, HSMs, and cloud key-management services.
 - [Envoy](https://www.envoyproxy.io) — Cloud-native L4/L7 proxy used for edge routing, service networking, and observability-aware traffic control.
@@ -306,10 +306,10 @@
 - [HyperDX](https://www.hyperdx.io) — ClickHouse-backed observability interface for correlating logs, traces, metrics and session replay within ClickStack deployments.
 - [IBM Cloud](https://www.ibm.com/products/cloud) — Enterprise cloud services and infrastructure by IBM.
 - [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) — Licensed enterprise software for centralized encryption-key serving, storage, rotation, and lifecycle management.
-- [Icinga](https://icinga.com) — Open source monitoring system derived from Nagios.
+- [Icinga](https://icinga.com) — Icinga 2 monitors hosts and services with checks, notifications, an API and distributed zones. Releases from 2.16.0 use GPL-3.0-or-later; earlier releases and existing file-level grants retain GPL-2.0-or-later. Web, DB and Director are separate components.
 - [Incus](https://linuxcontainers.org/incus/) — Modern system container and VM manager.
 - [Incus OS](https://linuxcontainers.org/incus-os) — Operating system images and distribution tooling for Incus environments.
-- [InfluxData](https://www.influxdata.com) — Time series platform with OSS components and commercial cloud/enterprise offerings.
+- [InfluxData](https://www.influxdata.com) — InfluxData offers InfluxDB 3 Core under MIT or Apache-2.0 and separate commercial Enterprise and Cloud products. Version 3 supports SQL and InfluxQL without official Flux support; older v1/v2 products have different APIs and query-language support.
 - [InfraHQ](https://infrahq.com) — Identity-aware access management / access proxy for infrastructure.
 - [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) — Translate Ingress and provider-specific resources into Gateway API manifests.
 - [iPerf3 (ESnet)](https://software.es.net/iperf/) — ESnet iPerf3 client/server measures network throughput using TCP, UDP and supported SCTP; core BSD-3-Clause-LBNL terms include an enhancement clause, with separate bundled-component notices.
@@ -385,7 +385,7 @@
 - [kro](https://kro.run/) — Kubernetes SIG Cloud Provider subproject that composes resources into reusable custom APIs through ResourceGraphDefinitions.
 - [kroc](https://github.com/pawelcit/kroc) — Kubernetes Reactive Object Creator for event-driven resource automation.
 - [KRouter](https://krouter.cloud/) — Kubernetes Gateway API implementation for HTTP, gRPC, TCP, UDP, and TLS routing.
-- [KRR](https://github.com/robusta-dev/krr) — Kubernetes Resource Recommendations by Robusta.
+- [KRR](https://github.com/robusta-dev/krr) — Robusta KRR's MIT-licensed CLI analyzes Prometheus-compatible telemetry and recommends Kubernetes CPU and memory requests and limits; the optional KRR Enforcer webhook automatically applies recommendations when pods are created.
 - [KServe](https://kserve.github.io/website) — Model serving on Kubernetes.
 - [Kthena](https://kthena.volcano.sh) — Kubernetes-native AI serving platform for scalable multi-model deployment, routing, and intelligent auto-scaling.
 - [kuba](https://github.com/hcgatewood/kuba) — Fuzzy, multi-cluster kubectl companion for faster day-to-day Kubernetes operations.
@@ -453,7 +453,7 @@
 - [Kubevious](https://kubevious.io) — Kubernetes configuration analysis.
 - [KubeVirt](https://kubevirt.io) — Kubernetes virtualization API and runtime for defining and managing virtual-machine workloads alongside containers.
 - [KubeVirtBMC](https://docs.kubevirtbmc.io/) — IPMI and Redfish management interfaces for KubeVirt virtual machines.
-- [Kubewatch](https://github.com/robusta-dev/kubewatch) — Kubernetes event watcher and notifier.
+- [Kubewatch](https://github.com/robusta-dev/kubewatch) — Robusta-maintained Kubewatch watches selected Kubernetes resource changes and sends notifications to configured handlers and collaboration channels.
 - [Kubey](https://kubey.app) — Self-hosted multi-cluster Kubernetes web UI with cross-cluster comparison, live logs, and team access.
 - [Kueue](https://kueue.sigs.k8s.io) — Kubernetes-native job queueing and quota management controller for batch and AI/ML workloads.
 - [Kustomize](https://kustomize.io) — Kubernetes configuration customization tool.
@@ -533,7 +533,7 @@
 - [Nelm](https://github.com/werf/nelm) — Helm-compatible Kubernetes deployment tool and Helm alternative with release planning and resource lifecycle management; not proven a drop-in replacement for every Helm plugin.
 - [Neovim](https://neovim.io/) — Extensible Vim-derived text editor with built-in APIs for plugins and editor automation.
 - [nerdctl](https://github.com/containerd/nerdctl) — Docker-compatible CLI for containerd.
-- [Netdata Cloud](https://www.netdata.cloud) — SaaS control plane for Netdata (Netdata Agent is open-source; Cloud adds centralized management/collaboration).
+- [Netdata Cloud](https://www.netdata.cloud) — Netdata Cloud's proprietary hosted control plane has a personal non-commercial free tier and paid plans; telemetry stays on separate GPL-3.0-or-later Agents and Parents. The UI uses NCUL1, and commercial Cloud On-Premises is a separate deployment option.
 - [NetWatch Labs](https://www.netwatchlabs.com) — Collection of terminal-first network and system diagnostics tools for Linux operators.
 - [New Relic](https://newrelic.com/platform) — Hosted observability platform for application, infrastructure, log, digital-experience, and AI telemetry.
 - [Nextcloud](https://nextcloud.com/) — Self-hosted collaboration platform for files, groupware, communication, and extensible applications.
@@ -661,7 +661,7 @@
 - [Rocky Linux](https://rockylinux.org) — Enterprise Linux distribution.
 - [Rook](https://rook.io) — Storage orchestrator for Kubernetes.
 - [RootlessKit](https://github.com/rootless-containers/rootlesskit) — Rootless container toolkit.
-- [rsyslog](https://www.rsyslog.com) — High-performance syslog daemon with flexible routing (often used as a log edge forwarder).
+- [rsyslog](https://www.rsyslog.com) — rsyslog collects and routes syslog data; the checked daemon source is Apache-2.0 and its runtime header is LGPL-3.0-or-later, while aggregate component licensing still needs review.
 - [Ruby](https://www.ruby-lang.org/en/) — Programming language and runtime used by automation tools and application services.
 - [Rudder](https://www.rudder.io) — Continuous configuration and automation platform.
 - [runc](https://github.com/opencontainers/runc) — OCI runtime for containers.
@@ -684,7 +684,7 @@
 - [Seesaw](https://github.com/google/seesaw) — Linux Virtual Server-based load-balancing platform with redundant nodes and network configuration.
 - [Sematext](https://sematext.com) — Full-stack observability platform covering logs, metrics, tracing, real user monitoring, and synthetic monitoring.
 - [Sensu](https://sensu.io) — Observability pipeline (metrics/events/alerts).
-- [Sentry](https://sentry.io/welcome) — Error monitoring with performance/tracing features (popular for app-level APM signals).
+- [Sentry](https://sentry.io/welcome) — Sentry monitors application errors, releases and performance. Its main server source uses FSL-1.1-Apache-2.0 with a competing-use restriction and an Apache-2.0 grant effective two years after each version is made available; hosted plans are separate commercial offerings.
 - [Server Pulse](https://github.com/Server-Pulse/server-pulse) — Linux server diagnostics and monitoring TUI covering system health, Docker containers, logs, networking, and security checks.
 - [ShellCheck](https://www.shellcheck.net) — Shell script linter.
 - [Shieldlist agent](https://git.lrob.net/Shieldlist/shieldlist-agent) — Host agent that tails service logs and applies rule-based IP sanctions through nftables, with an optional central controller.
@@ -748,7 +748,7 @@
 - [Tinkerbell](https://tinkerbell.org/) — Bare-metal provisioning stack for declarative machine installation workflows.
 - [Tinyauth](https://tinyauth.app/) — Lightweight self-hosted authentication gateway for protecting applications behind a reverse proxy.
 - [Toxiproxy](https://github.com/Shopify/toxiproxy) — MIT-licensed TCP proxy with an HTTP control API for injecting stream latency, bandwidth limits, timeouts, resets and other faults into connections routed through it.
-- [Tracetest](https://tracetest.io) — Trace-based integration testing using OpenTelemetry, with mixed MIT/Tracetest Community licensing and unclear current support.
+- [Tracetest](https://tracetest.io) — Tracetest provides OpenTelemetry trace-based integration testing; source files have mixed MIT and Tracetest Community terms and current support remains unverified.
 - [Traefik Proxy](https://traefik.io/traefik) — Reverse proxy and ingress controller with dynamic service discovery.
 - [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) — Kubernetes backup and recovery platform.
 - [Trippy](https://trippy.rs/) — Cross-platform network diagnostic TUI that combines traceroute and ping with live hop statistics.
@@ -798,7 +798,7 @@
 - [xh](https://github.com/ducaale/xh) — Command-line HTTP client with concise request syntax and formatted responses.
 - [YAML](https://yaml.org) — Data serialization format used in Kubernetes.
 - [youki](https://youki-dev.github.io/youki/) — OCI container runtime implemented in Rust.
-- [Zabbix](https://www.zabbix.com) — Enterprise-grade monitoring platform (metrics, triggers, dashboards).
+- [Zabbix](https://www.zabbix.com) — Zabbix monitors infrastructure with server, proxy, agent and alerting components. Software from 7.0 uses AGPL-3.0-only; releases through 6.4 use GPL-2.0-or-later. Documentation has separate terms.
 - [Zellij](https://zellij.dev/) — Terminal workspace and multiplexer with layouts, panes, sessions, and plugins.
 - [Zenduty](https://github.com/zenduty) — Incident management and on-call platform with developer-friendly APIs.
 - [zeropod](https://github.com/ctrox/zeropod) — Scale Kubernetes pods to zero and restore them on demand using checkpoint and restore.

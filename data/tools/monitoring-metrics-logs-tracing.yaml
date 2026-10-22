@@ -1034,6 +1034,8 @@
   - https://github.com/elastic/elasticsearch/blob/main/LICENSE.txt
   - https://github.com/elastic/elasticsearch/releases/tag/v9.5.5
   - https://www.elastic.co/pricing/faq/licensing
+  - https://github.com/elastic/kibana/blob/main/LICENSE.txt
+  - https://github.com/elastic/logstash/blob/main/LICENSE.txt
   repository_archived: false
   needs_review: true
 - id: flowg
@@ -1781,7 +1783,7 @@
   needs_review: false
 - id: icinga
   name: Icinga
-  summary: Icinga 2 monitors hosts and services using checks, notifications, an API and distributed zones; Web, DB and Director are separate components.
+  summary: Icinga 2 monitors hosts and services with checks, notifications, an API and distributed zones. Releases from 2.16.0 use GPL-3.0-or-later; earlier releases and existing file-level grants retain GPL-2.0-or-later. Web, DB and Director are separate components.
   official_url: https://icinga.com
   repository_url: https://github.com/Icinga/icinga2
   categories:
@@ -1814,13 +1816,16 @@
   - https://github.com/Icinga/icinga2/blob/master/LICENSE.md
   - https://github.com/Icinga/icinga2/releases/tag/v2.16.5
   - https://icinga.com/docs/icinga-2/latest/doc/06-distributed-monitoring/
+  - https://github.com/Icinga/icinga2/blob/v2.16.5/README.md
+  - https://github.com/Icinga/icinga2/blob/v2.16.5/LICENSE.md
+  - https://github.com/Icinga/icinga2/blob/v2.16.5/lib/base/application.cpp
   license_spdx: GPL-3.0-or-later
   documentation_url: https://icinga.com/docs/icinga-2/latest/
   repository_archived: false
   needs_review: false
 - id: influxdata
   name: InfluxData
-  summary: InfluxData offers InfluxDB time-series products; InfluxDB 3 Core is open source, while Enterprise and Cloud offerings differ in price and deployment. Version 3 supports SQL and InfluxQL, not Flux.
+  summary: InfluxData offers InfluxDB 3 Core under MIT or Apache-2.0 and separate commercial Enterprise and Cloud products. Version 3 supports SQL and InfluxQL without official Flux support; older v1/v2 products have different APIs and query-language support.
   official_url: https://www.influxdata.com
   repository_url: https://github.com/influxdata/influxdb
   categories:
@@ -1854,6 +1859,9 @@
   - https://github.com/influxdata/influxdb/releases/tag/v3.12.1
   - https://docs.influxdata.com/platform/identify-version/
   - https://docs.influxdata.com/influxdb3/which-influxdb-3/
+  - https://github.com/influxdata/influxdb/blob/v3.12.1/README.md
+  - https://github.com/influxdata/influxdb/blob/v3.12.1/LICENSE-MIT
+  - https://github.com/influxdata/influxdb/blob/v3.12.1/LICENSE-APACHE
   commercial_offering: true
   documentation_url: https://docs.influxdata.com/platform/
   repository_archived: false
@@ -1923,7 +1931,7 @@
   needs_review: false
 - id: krr
   name: KRR
-  summary: Robusta KRR analyzes Prometheus-compatible telemetry and recommends Kubernetes CPU and memory requests and limits; automatic application requires separate tools.
+  summary: Robusta KRR's MIT-licensed CLI analyzes Prometheus-compatible telemetry and recommends Kubernetes CPU and memory requests and limits; the optional KRR Enforcer webhook automatically applies recommendations when pods are created.
   repository_url: https://github.com/robusta-dev/krr
   categories:
   - monitoring-metrics-logs-tracing
@@ -1939,7 +1947,7 @@
   use_when:
   - You have representative Prometheus-compatible resource usage history and want to review pod right-sizing proposals.
   avoid_when:
-  - You assume the KRR CLI safely changes workloads itself or do not have representative metrics.
+  - You lack representative metrics or cannot approve the resource mutations introduced by the optional KRR Enforcer.
   - You cannot review recommendation accuracy and disruption risks before applying changes.
   deployment_models: []
   license_model: oss
@@ -1954,6 +1962,9 @@
   - https://github.com/robusta-dev/krr/blob/main/LICENSE
   - https://github.com/robusta-dev/krr/releases/tag/v1.31.1
   - https://github.com/robusta-dev/krr/blob/main/README.md
+  - https://github.com/robusta-dev/krr/blob/v1.31.1/LICENSE
+  - https://github.com/robusta-dev/krr/blob/v1.31.1/README.md
+  - https://github.com/robusta-dev/krr/blob/v1.31.1/enforcer/README.md
   license_spdx: MIT
   documentation_url: https://github.com/robusta-dev/krr/blob/main/README.md
   repository_archived: false
@@ -2116,6 +2127,8 @@
   - https://github.com/robusta-dev/kubewatch/blob/master/LICENSE
   - https://github.com/robusta-dev/kubewatch/blob/master/README.md
   - https://github.com/robusta-dev/kubewatch/releases/tag/v2.16.1
+  - https://github.com/robusta-dev/kubewatch/blob/v2.16.1/LICENSE
+  - https://github.com/robusta-dev/kubewatch/blob/v2.16.1/README.md
   license_spdx: Apache-2.0
   documentation_url: https://github.com/robusta-dev/kubewatch/blob/master/README.md
   repository_archived: false
@@ -2331,7 +2344,7 @@
   needs_review: true
 - id: netdata-cloud
   name: Netdata Cloud
-  summary: Netdata Cloud is a proprietary hosted control plane with free and paid tiers; the separate GPLv3+ Agent collects and stores metrics, and the browser UI has a distinct licence.
+  summary: Netdata Cloud's proprietary hosted control plane has a personal non-commercial free tier and paid plans; telemetry stays on separate GPL-3.0-or-later Agents and Parents. The UI uses NCUL1, and commercial Cloud On-Premises is a separate deployment option.
   official_url: https://www.netdata.cloud
   repository_url: https://github.com/netdata/netdata
   categories:
@@ -2348,8 +2361,8 @@
   use_when:
   - You need hosted access and collaborative monitoring across agents and accept Netdata Cloud account and network dependencies.
   avoid_when:
-  - You require the Cloud service and UI to be fully open source or self-hosted.
-  - You cannot approve cloud data flows or subscription limits; the linked source repo contains the Agent, not Cloud.
+  - You require an entirely OSI-licensed Cloud service and UI; the Agent's GPL licence does not cover either.
+  - You need an air-gapped control plane without evaluating commercial Cloud On-Premises, or cannot approve Cloud data flows and plan limits; the linked source repository contains the Agent, not Cloud.
   deployment_models: []
   license_model: free-saas
   maturity: established
@@ -2364,6 +2377,11 @@
   - https://github.com/netdata/netdata/blob/master/LICENSE
   - https://github.com/netdata/netdata/releases/tag/v2.12.1
   - https://www.netdata.cloud/
+  - https://github.com/netdata/netdata/blob/v2.12.1/README.md
+  - https://www.netdata.cloud/pricing/
+  - https://www.netdata.cloud/product/netdata-cloud-saas/
+  - https://www.netdata.cloud/product/cloud-on-premises/
+  - https://app.netdata.cloud/LICENSE.txt
   commercial_offering: true
   documentation_url: https://learn.netdata.cloud/
   repository_archived: false
@@ -2902,7 +2920,7 @@
   needs_review: false
 - id: rsyslog
   name: rsyslog
-  summary: rsyslog is a high-throughput syslog daemon and routing engine; its repository contains GPLv3 and LGPLv3 texts whose exact component applicability still needs review.
+  summary: rsyslog collects and routes syslog data; the checked daemon source is Apache-2.0 and its runtime header is LGPL-3.0-or-later, while aggregate component licensing still needs review.
   official_url: https://www.rsyslog.com
   repository_url: https://github.com/rsyslog/rsyslog
   repository_archived: false
@@ -2942,6 +2960,10 @@
   - https://github.com/rsyslog/rsyslog/blob/main/tools/rsyslogd.c
   - https://github.com/rsyslog/rsyslog/blob/main/COPYING
   - https://github.com/rsyslog/rsyslog/releases/tag/v8.2610.0
+  - https://github.com/rsyslog/rsyslog/blob/v8.2610.0/tools/rsyslogd.c
+  - https://github.com/rsyslog/rsyslog/blob/v8.2610.0/runtime/rsyslog.h
+  - https://github.com/rsyslog/rsyslog/blob/v8.2610.0/COPYING.ASL20
+  - https://github.com/rsyslog/rsyslog/blob/v8.2610.0/README.md
   needs_review: true
 - id: scanopy
   name: Scanopy
@@ -3021,7 +3043,7 @@
   needs_review: true
 - id: sentry
   name: Sentry
-  summary: Sentry monitors application errors, releases and performance; its main self-hosted server source uses Functional Source License 1.1 with a future Apache-2.0 grant, distinct from hosted commercial plans.
+  summary: Sentry monitors application errors, releases and performance. Its main server source uses FSL-1.1-Apache-2.0 with a competing-use restriction and an Apache-2.0 grant effective two years after each version is made available; hosted plans are separate commercial offerings.
   official_url: https://sentry.io/welcome
   repository_url: https://github.com/getsentry/sentry
   categories:
@@ -3038,7 +3060,7 @@
   use_when:
   - You need application error diagnostics, performance telemetry and release-linked troubleshooting with controlled ingestion.
   avoid_when:
-  - You require immediate unrestricted OSI-licensed commercial redistribution or infrastructure-wide metrics.
+  - You require an immediately OSI-licensed current server or a competing commercial service; the FSL permits internal use but restricts competing uses before each version's future Apache grant.
   - You cannot govern captured data, self-hosted service dependencies or subscription limits.
   deployment_models: []
   license_model: source-available
@@ -3053,6 +3075,7 @@
   - https://github.com/getsentry/sentry/blob/master/LICENSE.md
   - https://github.com/getsentry/sentry/releases/tag/26.10.0
   - https://docs.sentry.io/
+  - https://github.com/getsentry/sentry/blob/26.10.0/LICENSE.md
   commercial_offering: true
   documentation_url: https://docs.sentry.io/
   repository_archived: false
@@ -3581,7 +3604,7 @@
   needs_review: false
 - id: zabbix
   name: Zabbix
-  summary: Zabbix monitors infrastructure with server, proxy, agent and alerting components; software from version 7.0 uses AGPLv3 while older releases used GPLv2 terms.
+  summary: Zabbix monitors infrastructure with server, proxy, agent and alerting components. Software from 7.0 uses AGPL-3.0-only; releases through 6.4 use GPL-2.0-or-later. Documentation has separate terms.
   official_url: https://www.zabbix.com
   repository_url: https://github.com/zabbix/zabbix
   categories:
@@ -3614,6 +3637,9 @@
   - https://github.com/zabbix/zabbix/blob/master/COPYING
   - https://www.zabbix.com/license
   - https://www.zabbix.com/documentation/current/en/manual
+  - https://github.com/zabbix/zabbix/blob/7.0.0/src/zabbix_server/server.c
+  - https://github.com/zabbix/zabbix/blob/master/src/zabbix_server/server.c
+  - https://www.zabbix.com/documentation/current/en/manual/introduction/about
   license_spdx: AGPL-3.0-only
   documentation_url: https://www.zabbix.com/documentation/current/en/manual
   repository_archived: false
