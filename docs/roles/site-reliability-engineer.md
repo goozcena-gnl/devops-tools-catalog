@@ -29,7 +29,7 @@
 | [AWS Fargate](https://aws.amazon.com/fargate/) | Kubernetes distributions and operations | commercial | active |
 | [AWS Fault Injection Service](https://aws.amazon.com/fis) | Chaos and performance engineering | commercial | active |
 | [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) | Chaos and performance engineering | commercial | active |
-| [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [Beszel](https://beszel.dev) | Monitoring, metrics, logs and tracing | oss | active |
 | [Better Stack](https://betterstack.com/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | active |
@@ -68,7 +68,7 @@
 | [ClickStack](https://clickhouse.com/clickstack) | Monitoring, metrics, logs and tracing | open-core | active |
 | [CloudCasa](https://cloudcasa.io/) | Backup, disaster recovery and resilience | commercial | active |
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [CloudNativePG](https://cloudnative-pg.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [CloudNativePG](https://cloudnative-pg.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Cluster API](https://cluster-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Cluster Bare Autoscaler](https://github.com/docent-net/cluster-bare-autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -87,7 +87,7 @@
 | [Datadog](https://www.datadoghq.com/product/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Datree](https://github.com/datreeio/datree) | Kubernetes distributions and operations | oss | archived |
 | [DC/OS](https://dcos.io) | Kubernetes distributions and operations | oss | needs-review |
-| [Descheduler](https://github.com/kubernetes-sigs/descheduler) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Descheduler](https://github.com/kubernetes-sigs/descheduler) | Kubernetes networking, storage and add-ons | oss | active |
 | [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) | Kubernetes distributions and operations | oss | needs-review |
 | [dnsglobe](https://github.com/514-labs/dnsglobe) | SRE, incident response and on-call | oss | needs-review |
 | [Docker Swarm](https://docs.docker.com/engine/swarm) | Kubernetes distributions and operations | unknown | needs-review |
@@ -282,7 +282,7 @@
 | [Maintenant](https://maintenant.dev) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) | SRE, incident response and on-call | unknown | needs-review |
 | [ManageEngine NetFlow Analyzer](https://www.manageengine.com/netflow) | SRE, incident response and on-call | unknown | needs-review |
-| [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [MariaDB Server](https://mariadb.org/) | Databases, caching and data infrastructure | oss | active |
 | [Mattermost](https://mattermost.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [MemoryChecker](https://github.com/lordmulder/MemoryChecker) | Chaos and performance engineering | oss | needs-review |
@@ -312,7 +312,7 @@
 | [OCCT](https://www.ocbase.com) | Chaos and performance engineering | unknown | needs-review |
 | [oha](https://github.com/hatoo/oha) | Chaos and performance engineering | oss | active |
 | [OKD](https://okd.io) | Kubernetes distributions and operations | oss | active |
-| [OpenKruise](https://openkruise.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [OpenKruise](https://openkruise.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [OpenKruise Agents](https://github.com/openkruise/agents) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | needs-review |
 | [OpenObserve](https://openobserve.ai/) | Monitoring, metrics, logs and tracing | open-core | active |
@@ -337,7 +337,7 @@
 | [Portworx](https://portworx.com) | Kubernetes networking, storage and add-ons | unknown | needs-review |
 | [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Project Contour](https://projectcontour.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | active |
 | [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Pulse](https://pulserelay.pro) | SRE, incident response and on-call | oss | active |
@@ -349,7 +349,7 @@
 | [Rclone](https://rclone.org/) | Backup, disaster recovery and resilience | oss | active |
 | [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | commercial | active |
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | oss | active |
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [restic](https://restic.net/) | Backup, disaster recovery and resilience | oss | active |
 | [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | active |
@@ -363,7 +363,7 @@
 | [Seabird](https://getseabird.github.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Security Contexts](https://learnkube.com/security-contexts) | Kubernetes distributions and operations | documentation | needs-review |
-| [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [Sematext](https://sematext.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Sensu](https://sensu.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Sentry](https://sentry.io/welcome) | Monitoring, metrics, logs and tracing | open-core | needs-review |
@@ -383,7 +383,7 @@
 | [stress-ng](https://github.com/ColinIanKing/stress-ng) | Chaos and performance engineering | oss | active |
 | [stressapptest](https://github.com/stressapptest/stressapptest) | Chaos and performance engineering | oss | needs-review |
 | [stressdisk](https://github.com/ncw/stressdisk) | Chaos and performance engineering | oss | needs-review |
-| [Strimzi](https://strimzi.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Strimzi](https://strimzi.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Swimmer](https://github.com/teru01/swimmer) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [syslog-ng](https://www.syslog-ng.com/products/open-source-log-management) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [System Upgrade Controller](https://github.com/rancher/system-upgrade-controller) | Kubernetes networking, storage and add-ons | oss | needs-review |

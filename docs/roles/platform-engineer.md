@@ -59,7 +59,7 @@
 | [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Azure Messaging for AWS Professionals](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | active |
-| [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
 | [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | active |
@@ -103,7 +103,7 @@
 | [CloudFuze](https://www.cloudfuze.com) | Cloud platforms and cloud management | commercial | active |
 | [CloudHealth](https://www.broadcom.com/products/software/finops/cloudhealth) | FinOps and sustainability | commercial | active |
 | [Cloudify](https://cloudify.co) | Cloud platforms and cloud management | oss | active |
-| [CloudNativePG](https://cloudnative-pg.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [CloudNativePG](https://cloudnative-pg.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [CloudZero](https://www.cloudzero.com) | FinOps and sustainability | commercial | active |
 | [Cluster API](https://cluster-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
@@ -137,7 +137,7 @@
 | [DC/OS](https://dcos.io) | Kubernetes distributions and operations | oss | needs-review |
 | [DeepSpeed](https://www.deepspeed.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [DeepTutor](https://deeptutor.info/) | Documentation, learning and career resources | documentation | needs-review |
-| [Descheduler](https://github.com/kubernetes-sigs/descheduler) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Descheduler](https://github.com/kubernetes-sigs/descheduler) | Kubernetes networking, storage and add-ons | oss | active |
 | [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) | Kubernetes distributions and operations | oss | needs-review |
 | [DEV Community #devops](https://dev.to/t/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOps Community](https://www.devopscommunity.in) | Documentation, learning and career resources | documentation | needs-review |
@@ -415,7 +415,7 @@
 | [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Luxury Yacht](https://luxury-yacht.app/) | Kubernetes networking, storage and add-ons | oss | active |
 | [m9sweeper](https://m9sweeper.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [mcp-server-kubernetes](https://www.npmjs.com/package/mcp-server-kubernetes) | MLOps, LLMOps and AI infrastructure, Kubernetes distributions and operations | oss | active |
 | [mcpsnoop](https://github.com/kerlenton/mcpsnoop) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Mem0](https://mem0.ai/) | MLOps, LLMOps and AI infrastructure | open-core | active |
@@ -463,7 +463,7 @@
 | [OpenDepot](https://tonedefdev.github.io/opendepot/) | Artifact and package management, Infrastructure as Code, Emerging and experimental tools | oss | active |
 | [OpenFaaS](https://www.openfaas.com) | Serverless, edge and WebAssembly | open-core | needs-review |
 | [OpenFeature](https://openfeature.dev) | CD, GitOps, release and promotion | oss | active |
-| [OpenKruise](https://openkruise.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [OpenKruise](https://openkruise.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [OpenKruise Agents](https://github.com/openkruise/agents) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | needs-review |
 | [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | oss | active |
@@ -494,7 +494,7 @@
 | [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [PrivateBin](https://privatebin.info) | Emerging and experimental tools | oss | needs-review |
 | [Project Contour](https://projectcontour.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | active |
 | [Promptfoo](https://www.promptfoo.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [ProsperOps](https://www.prosperops.com/) | FinOps and sustainability | commercial | active |
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
@@ -510,7 +510,7 @@
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Reference (cheatsheets.zip)](https://cheatsheets.zip) | Documentation, learning and career resources | documentation | needs-review |
 | [rekor (sigstore)](https://github.com/sigstore/rekor) | Emerging and experimental tools | oss | needs-review |
-| [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | oss | active |
 | [Renovate](https://www.mend.io/renovate) | Developer experience and local environments, Software supply-chain security | oss | active |
 | [reShapr](https://reshapr.io) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -531,7 +531,7 @@
 | [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [SearXNG](https://docs.searxng.org) | Emerging and experimental tools | oss | needs-review |
 | [Security Contexts](https://learnkube.com/security-contexts) | Kubernetes distributions and operations | documentation | needs-review |
-| [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [Shannon](https://github.com/KeygraphHQ/shannon) | Emerging and experimental tools | open-core | needs-review |
 | [Shipwright](https://shipwright.io) | Containers and image tooling | oss | needs-review |
 | [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
@@ -553,7 +553,7 @@
 | [StackBlitz](https://stackblitz.com/) | Developer experience and local environments | commercial | active |
 | [Stakpak](https://stakpak.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) | Infrastructure as Code | open-core | active |
-| [Strimzi](https://strimzi.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Strimzi](https://strimzi.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Structurizr](https://github.com/structurizr) | Emerging and experimental tools | oss | needs-review |
 | [Swimmer](https://github.com/teru01/swimmer) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [SysAdmin to SRE Roadmap](https://sre.yoparchi.fr) | Documentation, learning and career resources | documentation | needs-review |

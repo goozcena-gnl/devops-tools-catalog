@@ -63,7 +63,7 @@
 - [Azure Functions Host](https://github.com/Azure/azure-functions-host) — The runtime host and core execution engine for Azure Functions.
 - [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) — Microsoft's CBL-Mariner-based Linux distribution optimized for container and cloud workloads on Azure.
 - [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) — Azure MCP server implementation.
-- [Azure Service Operator](https://azure.github.io/azure-service-operator) — Kubernetes operator for Azure resources.
+- [Azure Service Operator](https://azure.github.io/azure-service-operator) — Azure Service Operator reconciles Azure resources from Kubernetes custom resources using Azure Resource Manager.
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) — Microsoft-led Azure Verified Modules initiative defining standards and indexes for Bicep and Terraform resource and pattern modules; the central repository hosts governance and documentation, while implementations live in separate module repositories and registries.
 - [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
 - [Backstage](https://backstage.io) — Internal developer portal (IDP) / software catalog for improving developer experience.
@@ -98,7 +98,7 @@
 - [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) — Cloudflare gateway for Kubernetes clusters.
 - [CloudFuze](https://www.cloudfuze.com) — Cloud file transfer and management.
 - [Cloudify](https://cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
-- [CloudNativePG](https://cloudnative-pg.io) — Kubernetes operator for managing PostgreSQL clusters with high availability, backups, and day-2 operations.
+- [CloudNativePG](https://cloudnative-pg.io) — CloudNativePG operator manages PostgreSQL clusters on Kubernetes, including HA, backups, failover and recovery workflows.
 - [Cluster API](https://cluster-api.sigs.k8s.io) — Declarative APIs and tooling for provisioning, upgrading, and operating multiple Kubernetes clusters.
 - [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) — Kubernetes-native declarative infrastructure provider for creating and operating self-managed and EKS clusters on AWS.
 - [Cluster Bare Autoscaler](https://github.com/docent-net/cluster-bare-autoscaler) — Bare-metal Kubernetes autoscaler that powers nodes on or off based on cluster demand while safely cordoning and draining them.
@@ -131,7 +131,7 @@
 - [Debian](https://www.debian.org/) — Community-maintained operating-system distribution used for servers, cloud systems, and workstations.
 - [Deep Agents](https://github.com/langchain-ai/deepagents) — Agent harness with tool execution, context management, persistence, and sandbox integration built on LangGraph.
 - [DeepSpeed](https://www.deepspeed.ai) — Deep learning optimization library for large-scale model training and inference.
-- [Descheduler](https://github.com/kubernetes-sigs/descheduler) — Rebalance pods in Kubernetes clusters.
+- [Descheduler](https://github.com/kubernetes-sigs/descheduler) — Kubernetes Descheduler evicts selected pods under configured policies to enable improved subsequent scheduling.
 - [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) — Tooling to run Kubernetes locally on the desktop.
 - [Devtron](https://devtron.ai) — Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations, plus separately offered commercial platform capabilities.
 - [DigitalOcean](https://www.digitalocean.com) — Developer-friendly cloud infrastructure provider.
@@ -390,7 +390,7 @@
 - [Longhorn](https://longhorn.io) — Distributed block storage for Kubernetes persistent volumes, with replication, snapshots, backups and CSI integration; file-sharing components expose those block volumes and do not make it an object-storage system.
 - [Luxury Yacht](https://luxury-yacht.app/) — Cross-platform desktop application for inspecting and managing Kubernetes clusters.
 - [m9sweeper](https://m9sweeper.io) — Kubernetes security and compliance tool.
-- [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) — Kubernetes operator for managing MariaDB lifecycle, replication, Galera clustering, backups, and upgrades.
+- [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) — MariaDB Operator reconciles MariaDB custom resources for database deployment, high availability and backup operations on Kubernetes.
 - [MariaDB Server](https://mariadb.org/) — Open-source relational database server with MySQL heritage.
 - [mcp-server-kubernetes](https://www.npmjs.com/package/mcp-server-kubernetes) — Model Context Protocol server for managing Kubernetes resources through kubectl and Helm operations.
 - [mcpsnoop](https://github.com/kerlenton/mcpsnoop) — Transparent MCP proxy for inspecting live tool calls between clients and servers.
@@ -439,7 +439,7 @@
 - [OpenDepot](https://tonedefdev.github.io/opendepot/) — Kubernetes-native registry for publishing and consuming OpenTofu and Terraform providers and modules.
 - [OpenFaaS](https://www.openfaas.com) — Functions-as-a-Service framework for Kubernetes; OSS core with commercial Pro features.
 - [OpenFeature](https://openfeature.dev) — Open standard for feature flag management.
-- [OpenKruise](https://openkruise.io) — Enhanced workloads for Kubernetes.
+- [OpenKruise](https://openkruise.io) — OpenKruise adds advanced Kubernetes workload controllers and lifecycle operations such as in-place updates and sidecar management.
 - [OpenKruise Agents](https://github.com/openkruise/agents) — Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
 - [OpenLens](https://github.com/MuhammedKalkan/OpenLens) — Open source distribution of Lens features.
 - [OpenRun](https://openrun.dev) — Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
@@ -479,7 +479,7 @@
 - [Praesto](https://github.com/federicolepera/praesto) — Kubernetes-native model cache system using an operator, node agent, and CSI driver to stage model artifacts on cluster nodes.
 - [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) — Predictive scaling for Kubernetes workloads.
 - [Project Contour](https://projectcontour.io) — Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reconfiguration, and secure multi-team delegation.
-- [Project Sveltos](https://projectsveltos.io/latest) — Kubernetes add-on controller for deploying and managing Helm charts, Kustomize, and raw YAML across multi-cluster fleets from a management cluster.
+- [Project Sveltos](https://projectsveltos.io/latest) — Project Sveltos distributes and reconciles cluster add-ons, Helm charts, Kustomize resources and manifests across Kubernetes fleets.
 - [Promptfoo](https://www.promptfoo.dev) — Test and evaluate LLM prompts.
 - [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) — Proxmox datacenter management product.
 - [Proxmox Virtual Environment (VE)](https://github.com/proxmox) — Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
@@ -500,7 +500,7 @@
 - [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) — Commercial Red Hat application-platform family with self-managed editions and managed cloud services; OKD is a separate upstream community distribution.
 - [Redis](https://redis.io) — In-memory data structure store, used as a database, cache, and message broker. **Licensing varies by version:** Redis ≤7.2 uses BSD (OSS); Redis CE 7.4–7.8 uses RSAL/SSPL (source-available); Redis 8+ uses tri-license (AGPL option available).
 - [Redis Operator](https://redis-operator.opstree.dev) — Kubernetes operator for provisioning and managing Redis clusters.
-- [Reloader](https://docs.stakater.com/reloader/latest) — Kubernetes controller that watches ConfigMap/Secret changes and triggers rolling upgrades.
+- [Reloader](https://docs.stakater.com/reloader/latest) — Stakater Reloader watches selected ConfigMap and Secret updates and triggers workload rollouts so pods pick up changed configuration.
 - [Remmina](https://remmina.org) — Remote desktop client.
 - [reShapr](https://reshapr.io) — No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MCP endpoints with security controls and flexible deployment (Apache-2.0).
 - [restart-operator](https://github.com/archsyscall/restart-operator) — Kubernetes operator for scheduling recurring restarts of Deployments, StatefulSets, and DaemonSets with cron expressions.
@@ -523,7 +523,7 @@
 - [Sealos](https://sealos.io) — Cloud operating system for Kubernetes.
 - [SeaweedFS](https://seaweedfs.com) — Distributed storage system for files, objects, and volumes.
 - [Security Contexts](https://learnkube.com/security-contexts) — Kubernetes security context configuration.
-- [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) — Kubernetes operator for managing seccomp, SELinux, and AppArmor security profiles.
+- [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) — Security Profiles Operator manages and optionally records Linux seccomp, SELinux and AppArmor profiles for Kubernetes workloads.
 - [Seesaw](https://github.com/google/seesaw) — Linux Virtual Server-based load-balancing platform with redundant nodes and network configuration.
 - [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
 - [Sim](https://www.sim.ai) — AI workspace for building, deploying, and monitoring agentic workflows.
@@ -538,7 +538,7 @@
 - [Squid](https://www.squid-cache.org) — Caching proxy for the web (HTTP, HTTPS, FTP, and more).
 - [Stakpak](https://stakpak.dev) — Autonomous AI agent for production operations running 24/7 on your machines to auto-heal incidents, manage costs, and monitor infrastructure (Apache-2.0).
 - [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) — Stategraph Orchestration, formerly Terrateam, automates Terraform/OpenTofu plans and applies through GitHub or GitLab pull requests and CI runners. Its MPL-2.0 open-source core is distinct from commercial Enterprise, hosted services and Stategraph Infrastructure as a Database.
-- [Strimzi](https://strimzi.io) — Apache Kafka on Kubernetes operator.
+- [Strimzi](https://strimzi.io) — Strimzi manages Apache Kafka clusters and related resources on Kubernetes via custom resources and controllers.
 - [Sustainable Computing (Kepler)](https://sustainable-computing.io) — Power consumption monitoring for Kubernetes (project ecosystem).
 - [Swimmer](https://github.com/teru01/swimmer) — User-friendly multi-cluster Kubernetes GUI client.
 - [System Upgrade Controller](https://github.com/rancher/system-upgrade-controller) — Automate Kubernetes upgrades.
