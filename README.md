@@ -131,9 +131,9 @@ needs_review: false
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 934 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 933 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 26 |
-| `open-core` | OSS/community core with commercial features or service. | 114 |
+| `open-core` | OSS/community core with commercial features or service. | 115 |
 | `commercial` | Proprietary commercial product. | 163 |
 | `free-saas` | Hosted service with a free offering. | 5 |
 | `documentation` | Learning or documentation resource. | 106 |

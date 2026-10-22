@@ -274,7 +274,7 @@
 | [Rancher Manager](https://rancher.com) | Kubernetes distributions and operations | oss | active |
 | [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | commercial | active |
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | oss | active |
+| [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | open-core | active |
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | active |
 | [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | needs-review |

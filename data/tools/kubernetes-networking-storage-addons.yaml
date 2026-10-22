@@ -3819,7 +3819,7 @@
   needs_review: true
 - id: reloader
   name: Reloader
-  summary: Stakater Reloader watches selected ConfigMap and Secret updates and triggers workload rollouts so pods pick up changed configuration.
+  summary: Stakater Reloader's Apache-2.0 OSS controller triggers workload rollouts on ConfigMap and Secret updates; its subscription Enterprise distribution adds hardened images, validated integrations, long-term maintenance and commercial support with SLA.
   official_url: https://docs.stakater.com/reloader/latest
   repository_url: https://github.com/stakater/Reloader
   categories:
@@ -3837,8 +3837,10 @@
   - You need automatic rollout restarts for workloads that do not reload ConfigMaps or Secrets at runtime.
   avoid_when:
   - You need real hot reload without restarts or cannot tolerate automatically triggered workload rollouts.
+  - You require Enterprise-only hardened images (standard or UBI), continuously validated Vault/OpenBao/Conjur integrations, backported fixes or SLA-backed support without an Enterprise subscription; these guarantees do not apply to the OSS controller.
   deployment_models: []
-  license_model: oss
+  license_model: open-core
+  commercial_offering: true
   maturity: established
   status: active
   alternatives: []
@@ -3854,6 +3856,9 @@
   - https://github.com/stakater/Reloader/blob/master/LICENSE
   - https://github.com/stakater/Reloader/releases
   - https://docs.stakater.com/reloader/latest/
+  - https://docs.stakater.com/reloader/latest/about/editions.html
+  - https://docs.stakater.com/reloader/latest/installation/install-oss.html
+  - https://docs.stakater.com/reloader/latest/installation/install.html
   needs_review: false
 - id: restart-operator
   name: restart-operator

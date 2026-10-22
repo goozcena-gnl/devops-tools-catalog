@@ -2202,10 +2202,10 @@ Kubernetes operator for provisioning and managing Redis clusters.
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Oss<br>
+**Model:** Open Core<br>
 **Status:** Active
 
-Stakater Reloader watches selected ConfigMap and Secret updates and triggers workload rollouts so pods pick up changed configuration.
+Stakater Reloader's Apache-2.0 OSS controller triggers workload rollouts on ConfigMap and Secret updates; its subscription Enterprise distribution adds hardened images, validated integrations, long-term maintenance and commercial support with SLA.
 
 **Use when**
 
@@ -2214,6 +2214,7 @@ Stakater Reloader watches selected ConfigMap and Secret updates and triggers wor
 **Consider alternatives when**
 
 - You need real hot reload without restarts or cannot tolerate automatically triggered workload rollouts.
+- You require Enterprise-only hardened images (standard or UBI), continuously validated Vault/OpenBao/Conjur integrations, backported fixes or SLA-backed support without an Enterprise subscription; these guarantees do not apply to the OSS controller.
 
 [Official site](https://docs.stakater.com/reloader/latest) · [Documentation](https://docs.stakater.com/reloader/latest/) · [Source repository](https://github.com/stakater/Reloader)
 

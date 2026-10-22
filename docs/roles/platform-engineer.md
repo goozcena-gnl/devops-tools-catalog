@@ -510,7 +510,7 @@
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Reference (cheatsheets.zip)](https://cheatsheets.zip) | Documentation, learning and career resources | documentation | needs-review |
 | [rekor (sigstore)](https://github.com/sigstore/rekor) | Emerging and experimental tools | oss | needs-review |
-| [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | oss | active |
+| [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | open-core | active |
 | [Renovate](https://www.mend.io/renovate) | Developer experience and local environments, Software supply-chain security | oss | active |
 | [reShapr](https://reshapr.io) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |

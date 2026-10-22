@@ -500,7 +500,7 @@
 - [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) — Commercial Red Hat application-platform family with self-managed editions and managed cloud services; OKD is a separate upstream community distribution.
 - [Redis](https://redis.io) — In-memory data structure store, used as a database, cache, and message broker. **Licensing varies by version:** Redis ≤7.2 uses BSD (OSS); Redis CE 7.4–7.8 uses RSAL/SSPL (source-available); Redis 8+ uses tri-license (AGPL option available).
 - [Redis Operator](https://redis-operator.opstree.dev) — Kubernetes operator for provisioning and managing Redis clusters.
-- [Reloader](https://docs.stakater.com/reloader/latest) — Stakater Reloader watches selected ConfigMap and Secret updates and triggers workload rollouts so pods pick up changed configuration.
+- [Reloader](https://docs.stakater.com/reloader/latest) — Stakater Reloader's Apache-2.0 OSS controller triggers workload rollouts on ConfigMap and Secret updates; its subscription Enterprise distribution adds hardened images, validated integrations, long-term maintenance and commercial support with SLA.
 - [Remmina](https://remmina.org) — Remote desktop client.
 - [reShapr](https://reshapr.io) — No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MCP endpoints with security controls and flexible deployment (Apache-2.0).
 - [restart-operator](https://github.com/archsyscall/restart-operator) — Kubernetes operator for scheduling recurring restarts of Deployments, StatefulSets, and DaemonSets with cron expressions.

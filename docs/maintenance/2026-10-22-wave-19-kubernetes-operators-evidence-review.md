@@ -15,7 +15,7 @@ Ten existing canonical entries were reviewed, with **nine provisional CLEAR deci
 | `mariadb-operator` | **CLEAR (provisional)** | MIT operator code, separate database/runtime terms and recovery responsibilities |
 | `openkruise` | **CLEAR (provisional)** | Direct LICENSE.md contains Apache-2.0 despite API NOASSERTION; validate workload controller versions |
 | `project-sveltos` | **CLEAR (provisional)** | Apache-2.0 management/controller; protect multi-cluster credentials |
-| `reloader` | **CLEAR (provisional)** | Apache-2.0 rollout trigger, not in-process hot reload |
+| `reloader` | **CLEAR (provisional)** | Open-core offering: Apache-2.0 OSS rollout controller; separate subscription Enterprise distribution and guarantees |
 | `security-profiles-operator` | **CLEAR (provisional)** | Apache core; node/OS profile and privileges must match |
 | `strimzi` | **CLEAR (provisional)** | Apache core; Kafka/KRaft/cluster storage compatibility and maintenance matter |
 
@@ -127,13 +127,15 @@ No current-state field change is applied to this historical alias. The prior dra
 
 | Field | Before | After |
 |---|---|---|
-| `summary` | `Kubernetes controller that watches ConfigMap/Secret changes and triggers rolling upgrades.` | `Stakater Reloader watches selected ConfigMap and Secret updates and triggers workload rollouts so pods pick up changed configuration.` |
+| `summary` | `Kubernetes controller that watches ConfigMap/Secret changes and triggers rolling upgrades.` | `Stakater Reloader's Apache-2.0 OSS controller triggers workload rollouts on ConfigMap and Secret updates; its subscription Enterprise distribution adds hardened images, validated integrations, long-term maintenance and commercial support with SLA.` |
 | `use_when` | `Your apps don't support hot-reloading config and need pod restarts on ConfigMap/Secret changes.` | `You need automatic rollout restarts for workloads that do not reload ConfigMaps or Secrets at runtime.` |
-| `avoid_when` | `Your apps watch config files natively or you use k8s-sidecar for file syncing.` | `You need real hot reload without restarts or cannot tolerate automatically triggered workload rollouts.` |
+| `avoid_when` | `Your apps watch config files natively or you use k8s-sidecar for file syncing.` | `You need real hot reload without restarts or cannot tolerate automatically triggered workload rollouts.; You require Enterprise-only hardened images (standard or UBI), continuously validated Vault/OpenBao/Conjur integrations, backported fixes or SLA-backed support without an Enterprise subscription; these guarantees do not apply to the OSS controller.` |
+| `license_model` | `oss` | `open-core` |
+| `commercial_offering` | ∅ | `true` |
 | `maturity` | `unknown` | `established` |
 | `status` | `needs-review` | `active` |
 | `verified_on` | `'2026-08-03'` | `'2026-10-22'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L131; legacy:devopstools_final.md#L624` | `legacy:4_Kubernetes-Containers/README.md#L131; legacy:devopstools_final.md#L624; https://github.com/stakater/Reloader; https://github.com/stakater/Reloader/blob/master/LICENSE; https://github.com/stakater/Reloader/releases; https://docs.stakater.com/reloader/latest/` |
+| `sources` | `legacy:4_Kubernetes-Containers/README.md#L131; legacy:devopstools_final.md#L624` | `legacy:4_Kubernetes-Containers/README.md#L131; legacy:devopstools_final.md#L624; https://github.com/stakater/Reloader; https://github.com/stakater/Reloader/blob/master/LICENSE; https://github.com/stakater/Reloader/releases; https://docs.stakater.com/reloader/latest/; https://docs.stakater.com/reloader/latest/about/editions.html; https://docs.stakater.com/reloader/latest/installation/install-oss.html; https://docs.stakater.com/reloader/latest/installation/install.html` |
 | `needs_review` | `true` | `false` |
 | `documentation_url` | ∅ | `https://docs.stakater.com/reloader/latest/` |
 | `license_spdx` | ∅ | `Apache-2.0` |
@@ -178,7 +180,29 @@ No current-state field change is applied to this historical alias. The prior dra
 - The reviewed active `crossplane-upjet` in Infrastructure as Code is preserved; neither deleted nor edited. The total canonical inventory remains 1,425.
 - Corrected proposed review debt: **656 → 647 (9 clear / 1 retained)**.
 
-## Outstanding gates and qualifications
+## Reloader P2 correction — 2026-10-22
+
+Addresses [Codex's P2 comment in PR #128](https://github.com/goozcena-gnl/devops-tools-catalog/pull/128#discussion_r4349865665), against pre-fix HEAD `1f74692873021cab1a7c0aba463803de471b85f9`. Only canonical ID `reloader` changes in this correction.
+
+Primary sources checked directly:
+
+- [Upstream LICENSE](https://github.com/stakater/Reloader/blob/master/LICENSE): Apache License version 2.0 for the OSS controller; retain `license_spdx: Apache-2.0`.
+- [OSS installation](https://docs.stakater.com/reloader/latest/installation/install-oss.html): freely available controller via public Helm chart, manifests or Kustomize.
+- [Official edition comparison](https://docs.stakater.com/reloader/latest/about/editions.html): shared reload functionality; Enterprise adds standard/UBI hardened images, vulnerability scanning, continuously validated Vault/OpenBao/Conjur integrations, maintenance with backports, and commercial support with SLA. OSS integration compatibility does not include these Enterprise guarantees.
+- [Enterprise installation](https://docs.stakater.com/reloader/latest/installation/install.html): active subscription and private image registry access; uses the OSS chart with Enterprise image overrides.
+
+Following [catalogue methodology](../methodology.md#licence-and-offering-model) and existing NGINX distribution records, `license_model: open-core` classifies the combined offering; `commercial_offering: true` records the subscription distribution. This is supported by a separately distributed Enterprise image, not merely paid support for the unchanged OSS artifact. Apache-2.0 applies to the upstream OSS code; no Enterprise image licence or contractual SLA duration is inferred. The summary and selection guidance now state that boundary explicitly, so `needs_review: false` remains justified. Crossplane alias reconciliation stays open and review-debt counts remain unchanged.
+
+### Correction validation and scope
+
+- Used Python 3.12.14 and the existing Windows virtual environment. `python -m pip install -e '.[dev]'` and `python -m pip check` passed. The optional lock verifier found that this Windows environment differs from CI's locked package set; no dependency or lock files were changed. Locked Linux verification remains a CI gate.
+- Ran `python -m scripts.generate_docs`; only the expected eight derived views changed: README, category, three roles, two lifecycle views and JSON statistics. Model totals change from OSS 934 / open-core 114 to OSS 933 / open-core 115. Total records, active records and review debt stay unchanged.
+- `python -m ruff check scripts tests`, `python -m ruff format --check scripts tests` (69 files), `python -m scripts.generate_docs --check`, `python -m scripts.validate_catalog` and `git diff --check` passed on a clean local checkout containing byte-identical corrected files. The isolated checkout avoids pre-existing ignored `tmp/` artifacts in the original workspace; nothing in those artifacts was changed. Local `origin/main` was refreshed to the actual PR base for historical scope checks.
+- Full `python -m pytest` with explicit external `--basetemp` and `-o cache_dir` paths passed: **999 passed, 8 skipped** in 326.90 seconds. All tests were collected; no test selection or skip override was used. Temporary/cache paths were supplied to avoid Windows ACL failures and the scanner's intentionally ignored directory names.
+- Scope inspection confirms exactly five changed fields on canonical ID `reloader`: `summary`, `avoid_when`, `license_model`, `commercial_offering`, `sources`. The complete correction contains ten files: that YAML file, this report and eight generated views. No workflow, taxonomy, schema, migration, audit baseline, test or other canonical record changes.
+- Network checks: the four Reloader primary sources above were inspected directly. The full network link audit was not rerun for this correction; the prior successful audit applies to pre-fix SHA `1f74692873021cab1a7c0aba463803de471b85f9`. Audited `official_url`, `repository_url` and `documentation_url` values are unchanged; newly added evidence-only `sources` URLs are outside the link audit's scope. The six known blockers in issue #2 remain open.
+
+## Historical outstanding gates and qualifications (before initial PR validation)
 
 - The current branch includes canonical edits only; derived documentation must be generated using the repository's own `python -m scripts.generate_docs`, committed and verified by `--check`. Do not manually guess generated pages.
 - Locked Python dependencies, Ruff, full pytest, catalogue schema/metadata, historical N1a/N2a constraints and whitespace checks are pending.
