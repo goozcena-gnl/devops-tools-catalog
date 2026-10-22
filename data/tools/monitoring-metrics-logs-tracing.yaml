@@ -2346,7 +2346,6 @@
   name: Netdata Cloud
   summary: Netdata Cloud's proprietary hosted control plane has a personal non-commercial free tier and paid plans; telemetry stays on separate GPL-3.0-or-later Agents and Parents. The UI uses NCUL1, and commercial Cloud On-Premises is a separate deployment option.
   official_url: https://www.netdata.cloud
-  repository_url: https://github.com/netdata/netdata
   categories:
   - monitoring-metrics-logs-tracing
   subcategories:
@@ -2362,7 +2361,7 @@
   - You need hosted access and collaborative monitoring across agents and accept Netdata Cloud account and network dependencies.
   avoid_when:
   - You require an entirely OSI-licensed Cloud service and UI; the Agent's GPL licence does not cover either.
-  - You need an air-gapped control plane without evaluating commercial Cloud On-Premises, or cannot approve Cloud data flows and plan limits; the linked source repository contains the Agent, not Cloud.
+  - You need an air-gapped control plane without evaluating commercial Cloud On-Premises, or cannot approve Cloud data flows and plan limits; Netdata Agent's repository is cited only as supporting evidence, not as the source for Cloud.
   deployment_models: []
   license_model: free-saas
   maturity: established
@@ -2384,7 +2383,6 @@
   - https://app.netdata.cloud/LICENSE.txt
   commercial_offering: true
   documentation_url: https://learn.netdata.cloud/
-  repository_archived: false
   needs_review: false
 - id: new-relic
   name: New Relic
