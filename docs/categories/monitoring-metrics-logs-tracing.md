@@ -1295,9 +1295,9 @@ Netdata Cloud's proprietary hosted control plane has a personal non-commercial f
 **Consider alternatives when**
 
 - You require an entirely OSI-licensed Cloud service and UI; the Agent's GPL licence does not cover either.
-- You need an air-gapped control plane without evaluating commercial Cloud On-Premises, or cannot approve Cloud data flows and plan limits; the linked source repository contains the Agent, not Cloud.
+- You need an air-gapped control plane without evaluating commercial Cloud On-Premises, or cannot approve Cloud data flows and plan limits; Netdata Agent's repository is cited only as supporting evidence, not as the source for Cloud.
 
-[Official site](https://www.netdata.cloud) · [Documentation](https://learn.netdata.cloud/) · [Source repository](https://github.com/netdata/netdata)
+[Official site](https://www.netdata.cloud) · [Documentation](https://learn.netdata.cloud/)
 
 ### New Relic
 
