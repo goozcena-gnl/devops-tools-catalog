@@ -125,19 +125,19 @@ AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes operator for Azure resources.
+Azure Service Operator reconciles Azure resources from Kubernetes custom resources using Azure Resource Manager.
 
 **Use when**
 
-- You want to provision Azure resources (databases, storage, etc.) via Kubernetes CRDs.
+- Use Kubernetes custom resources to manage supported Azure resources with explicit identity and permission controls.
 
 **Consider alternatives when**
 
-- You already manage Azure infra through Terraform/Bicep or don't run on Azure.
+- Prefer Terraform/Bicep if resources must be managed independently of a Kubernetes control plane.
 
-[Official site](https://azure.github.io/azure-service-operator) · [Source repository](https://github.com/Azure/azure-service-operator)
+[Official site](https://azure.github.io/azure-service-operator) · [Documentation](https://azure.github.io/azure-service-operator/) · [Source repository](https://github.com/Azure/azure-service-operator)
 
 ### BunkerWeb
 
@@ -321,19 +321,19 @@ Cloudflare gateway for Kubernetes clusters.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes operator for managing PostgreSQL clusters with high availability, backups, and day-2 operations.
+CloudNativePG operator manages PostgreSQL clusters on Kubernetes, including HA, backups, failover and recovery workflows.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Operate PostgreSQL on Kubernetes with provisioned persistent storage, tested restore plans and operator lifecycle management.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Use managed PostgreSQL if running database HA, storage, disaster recovery and upgrades yourself is unsuitable.
 
-[Official site](https://cloudnative-pg.io) · [Source repository](https://github.com/cloudnative-pg/cloudnative-pg)
+[Official site](https://cloudnative-pg.io) · [Documentation](https://cloudnative-pg.io/documentation/current/) · [Source repository](https://github.com/cloudnative-pg/cloudnative-pg)
 
 ### Cluster Bare Autoscaler
 
@@ -492,19 +492,19 @@ Distributed application runtime for microservices.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Rebalance pods in Kubernetes clusters.
+Kubernetes Descheduler evicts selected pods under configured policies to enable improved subsequent scheduling.
 
 **Use when**
 
-- Pods become unevenly distributed after node additions, taints, or affinity changes.
+- You need policy-driven pod eviction after topology, node or placement conditions change, with disruption budgets validated.
 
 **Consider alternatives when**
 
-- Workloads are stateful or disruption-sensitive and can't tolerate evictions.
+- Your stateful or latency-sensitive workloads cannot tolerate the eviction risks or your use case requires immediate placement guarantees.
 
-[Source repository](https://github.com/kubernetes-sigs/descheduler)
+[Documentation](https://github.com/kubernetes-sigs/descheduler) · [Source repository](https://github.com/kubernetes-sigs/descheduler)
 
 ### dotnet-operator-sdk
 
@@ -1765,19 +1765,19 @@ Kubernetes security and compliance tool.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes operator for managing MariaDB lifecycle, replication, Galera clustering, backups, and upgrades.
+MariaDB Operator reconciles MariaDB custom resources for database deployment, high availability and backup operations on Kubernetes.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Run MariaDB with explicit storage, backup, recovery and upgrade procedures on Kubernetes.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- A managed MariaDB service better meets availability requirements or you lack tested database recovery processes.
 
-[Source repository](https://github.com/mariadb-operator/mariadb-operator)
+[Documentation](https://github.com/mariadb-operator/mariadb-operator) · [Source repository](https://github.com/mariadb-operator/mariadb-operator)
 
 ### MetalLB
 
@@ -1994,19 +1994,19 @@ API gateway middleware for .NET services with routing and request aggregation.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Enhanced workloads for Kubernetes.
+OpenKruise adds advanced Kubernetes workload controllers and lifecycle operations such as in-place updates and sidecar management.
 
 **Use when**
 
-- You need advanced deployment strategies (in-place updates, canary, sidecar management) beyond native Deployments.
+- You need documented advanced rollout and workload capabilities not available from native Deployments or StatefulSets.
 
 **Consider alternatives when**
 
-- Standard Deployments/StatefulSets with a service mesh handle your rollout needs.
+- Standard Kubernetes workload controllers suffice or additional CRDs and webhooks exceed your operational security budget.
 
-[Official site](https://openkruise.io) · [Source repository](https://github.com/openkruise/kruise)
+[Official site](https://openkruise.io) · [Documentation](https://openkruise.io/) · [Source repository](https://github.com/openkruise/kruise)
 
 ### OpenKruise Agents
 
@@ -2146,19 +2146,19 @@ Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reco
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes add-on controller for deploying and managing Helm charts, Kustomize, and raw YAML across multi-cluster fleets from a management cluster.
+Project Sveltos distributes and reconciles cluster add-ons, Helm charts, Kustomize resources and manifests across Kubernetes fleets.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Manage add-ons across multiple clusters with protected management-cluster credentials and explicit rollout policy.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You cannot securely grant remote cluster access or an existing GitOps controller already satisfies fleet reconciliation.
 
-[Official site](https://projectsveltos.io/latest) · [Source repository](https://github.com/projectsveltos/addon-controller)
+[Official site](https://projectsveltos.io/latest) · [Documentation](https://projectsveltos.io/latest/) · [Source repository](https://github.com/projectsveltos/addon-controller)
 
 ### pv-migrate
 
@@ -2202,20 +2202,21 @@ Kubernetes operator for provisioning and managing Redis clusters.
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Kubernetes controller that watches ConfigMap/Secret changes and triggers rolling upgrades.
+Stakater Reloader's Apache-2.0 OSS controller triggers workload rollouts on ConfigMap and Secret updates; its subscription Enterprise distribution adds hardened images, validated integrations, long-term maintenance and commercial support with SLA.
 
 **Use when**
 
-- Your apps don't support hot-reloading config and need pod restarts on ConfigMap/Secret changes.
+- You need automatic rollout restarts for workloads that do not reload ConfigMaps or Secrets at runtime.
 
 **Consider alternatives when**
 
-- Your apps watch config files natively or you use k8s-sidecar for file syncing.
+- You need real hot reload without restarts or cannot tolerate automatically triggered workload rollouts.
+- You require Enterprise-only hardened images (standard or UBI), continuously validated Vault/OpenBao/Conjur integrations, backported fixes or SLA-backed support without an Enterprise subscription; these guarantees do not apply to the OSS controller.
 
-[Official site](https://docs.stakater.com/reloader/latest) · [Source repository](https://github.com/stakater/Reloader)
+[Official site](https://docs.stakater.com/reloader/latest) · [Documentation](https://docs.stakater.com/reloader/latest/) · [Source repository](https://github.com/stakater/Reloader)
 
 ### restart-operator
 
@@ -2279,19 +2280,19 @@ Encrypt Kubernetes secrets for GitOps workflows.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes operator for managing seccomp, SELinux, and AppArmor security profiles.
+Security Profiles Operator manages and optionally records Linux seccomp, SELinux and AppArmor profiles for Kubernetes workloads.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Manage supported node security profiles across clusters with compatible Linux kernels and carefully controlled operator permissions.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Your nodes or container runtime do not support the profile types or you cannot approve required privileged components.
 
-[Source repository](https://github.com/kubernetes-sigs/security-profiles-operator)
+[Documentation](https://github.com/kubernetes-sigs/security-profiles-operator) · [Source repository](https://github.com/kubernetes-sigs/security-profiles-operator)
 
 ### Skupper
 
@@ -2336,19 +2337,19 @@ WebAssembly on Kubernetes ecosystem.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Apache Kafka on Kubernetes operator.
+Strimzi manages Apache Kafka clusters and related resources on Kubernetes via custom resources and controllers.
 
 **Use when**
 
-- You need to run and manage Kafka clusters on Kubernetes with automated operations.
+- Run Kafka with supported Kafka/KRaft versions, tested upgrades, persistent storage and capacity planning.
 
 **Consider alternatives when**
 
-- A managed Kafka service (Confluent Cloud/MSK/Event Hubs) better fits your operational model.
+- Managed Kafka better meets your reliability needs or the team cannot operate broker upgrades and storage recovery.
 
-[Official site](https://strimzi.io) · [Source repository](https://github.com/strimzi/strimzi-kafka-operator)
+[Official site](https://strimzi.io) · [Documentation](https://strimzi.io/docs/operators/latest/overview) · [Source repository](https://github.com/strimzi/strimzi-kafka-operator)
 
 ### Swimmer
 

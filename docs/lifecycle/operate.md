@@ -71,7 +71,7 @@
 - [Azure kubelogin](https://azure.github.io/kubelogin/) — Kubernetes exec credential plugin implementing Microsoft Entra authentication for Azure clusters.
 - [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) — Microsoft's CBL-Mariner-based Linux distribution optimized for container and cloud workloads on Azure.
 - [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) — Azure MCP server implementation.
-- [Azure Service Operator](https://azure.github.io/azure-service-operator) — Kubernetes operator for Azure resources.
+- [Azure Service Operator](https://azure.github.io/azure-service-operator) — Azure Service Operator reconciles Azure resources from Kubernetes custom resources using Azure Resource Manager.
 - [Backstage](https://backstage.io) — Internal developer portal (IDP) / software catalog for improving developer experience.
 - [Ballast](https://github.com/Tight-Line/ballast) — Kubernetes operator that recommends and applies workload resource requests from observed usage.
 - [Bash](https://www.gnu.org/software/bash) — Bourne Again Shell.
@@ -129,7 +129,7 @@
 - [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) — Cloudflare gateway for Kubernetes clusters.
 - [CloudFuze](https://www.cloudfuze.com) — Cloud file transfer and management.
 - [Cloudify](https://cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
-- [CloudNativePG](https://cloudnative-pg.io) — Kubernetes operator for managing PostgreSQL clusters with high availability, backups, and day-2 operations.
+- [CloudNativePG](https://cloudnative-pg.io) — CloudNativePG operator manages PostgreSQL clusters on Kubernetes, including HA, backups, failover and recovery workflows.
 - [Cluster API](https://cluster-api.sigs.k8s.io) — Declarative APIs and tooling for provisioning, upgrading, and operating multiple Kubernetes clusters.
 - [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) — Kubernetes-native declarative infrastructure provider for creating and operating self-managed and EKS clusters on AWS.
 - [Cluster Bare Autoscaler](https://github.com/docent-net/cluster-bare-autoscaler) — Bare-metal Kubernetes autoscaler that powers nodes on or off based on cluster demand while safely cordoning and draining them.
@@ -165,7 +165,7 @@
 - [Debian](https://www.debian.org/) — Community-maintained operating-system distribution used for servers, cloud systems, and workstations.
 - [Deep Agents](https://github.com/langchain-ai/deepagents) — Agent harness with tool execution, context management, persistence, and sandbox integration built on LangGraph.
 - [DeepSpeed](https://www.deepspeed.ai) — Deep learning optimization library for large-scale model training and inference.
-- [Descheduler](https://github.com/kubernetes-sigs/descheduler) — Rebalance pods in Kubernetes clusters.
+- [Descheduler](https://github.com/kubernetes-sigs/descheduler) — Kubernetes Descheduler evicts selected pods under configured policies to enable improved subsequent scheduling.
 - [Descope](https://www.descope.com/) — Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
 - [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) — Tooling to run Kubernetes locally on the desktop.
 - [Devtron](https://devtron.ai) — Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations, plus separately offered commercial platform capabilities.
@@ -497,7 +497,7 @@
 - [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) — Comprehensive IT operations management platform.
 - [ManageEngine NetFlow Analyzer](https://www.manageengine.com/netflow) — Network traffic monitoring and analysis.
 - [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Multi-vendor network configuration management with backups, change tracking, automation and compliance auditing.
-- [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) — Kubernetes operator for managing MariaDB lifecycle, replication, Galera clustering, backups, and upgrades.
+- [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) — MariaDB Operator reconciles MariaDB custom resources for database deployment, high availability and backup operations on Kubernetes.
 - [MariaDB Server](https://mariadb.org/) — Open-source relational database server with MySQL heritage.
 - [Mattermost](https://mattermost.com) — Self-hostable collaboration platform; open-source core with enterprise editions.
 - [mcp-server-kubernetes](https://www.npmjs.com/package/mcp-server-kubernetes) — Model Context Protocol server for managing Kubernetes resources through kubectl and Helm operations.
@@ -560,7 +560,7 @@
 - [Open WebUI](https://openwebui.com) — Self-hosted web UI for running and managing local AI model backends (e.g., Ollama).
 - [OpenBao](https://openbao.org) — Community-governed MPL-2.0 secrets service providing encrypted KV storage, dynamic credentials, leases, encryption and audit interfaces.
 - [OpenFaaS](https://www.openfaas.com) — Functions-as-a-Service framework for Kubernetes; OSS core with commercial Pro features.
-- [OpenKruise](https://openkruise.io) — Enhanced workloads for Kubernetes.
+- [OpenKruise](https://openkruise.io) — OpenKruise adds advanced Kubernetes workload controllers and lifecycle operations such as in-place updates and sidecar management.
 - [OpenKruise Agents](https://github.com/openkruise/agents) — Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
 - [OpenLens](https://github.com/MuhammedKalkan/OpenLens) — Open source distribution of Lens features.
 - [OpenObserve](https://openobserve.ai/) — Observability platform for logs, metrics, and traces with an open-source core and commercial enterprise offerings.
@@ -618,7 +618,7 @@
 - [Praesto](https://github.com/federicolepera/praesto) — Kubernetes-native model cache system using an operator, node agent, and CSI driver to stage model artifacts on cluster nodes.
 - [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) — Predictive scaling for Kubernetes workloads.
 - [Project Contour](https://projectcontour.io) — Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reconfiguration, and secure multi-team delegation.
-- [Project Sveltos](https://projectsveltos.io/latest) — Kubernetes add-on controller for deploying and managing Helm charts, Kustomize, and raw YAML across multi-cluster fleets from a management cluster.
+- [Project Sveltos](https://projectsveltos.io/latest) — Project Sveltos distributes and reconciles cluster add-ons, Helm charts, Kustomize resources and manifests across Kubernetes fleets.
 - [Prometheus](https://prometheus.io) — Open-source metrics monitoring server with a time-series database, PromQL and alerting rules; Alertmanager, exporters and client libraries are separate ecosystem components.
 - [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) — Metrics cache that accepts pushed metrics from short-lived and batch jobs for Prometheus scraping.
 - [Promptfoo](https://www.promptfoo.dev) — Test and evaluate LLM prompts.
@@ -650,7 +650,7 @@
 - [Redis](https://redis.io) — In-memory data structure store, used as a database, cache, and message broker. **Licensing varies by version:** Redis ≤7.2 uses BSD (OSS); Redis CE 7.4–7.8 uses RSAL/SSPL (source-available); Redis 8+ uses tri-license (AGPL option available).
 - [Redis Operator](https://redis-operator.opstree.dev) — Kubernetes operator for provisioning and managing Redis clusters.
 - [Redmine](https://www.redmine.org/) — Self-hosted project and issue tracking application with workflows, wikis, and repository integration.
-- [Reloader](https://docs.stakater.com/reloader/latest) — Kubernetes controller that watches ConfigMap/Secret changes and triggers rolling upgrades.
+- [Reloader](https://docs.stakater.com/reloader/latest) — Stakater Reloader's Apache-2.0 OSS controller triggers workload rollouts on ConfigMap and Secret updates; its subscription Enterprise distribution adds hardened images, validated integrations, long-term maintenance and commercial support with SLA.
 - [Remmina](https://remmina.org) — Remote desktop client.
 - [reShapr](https://reshapr.io) — No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MCP endpoints with security controls and flexible deployment (Apache-2.0).
 - [restart-operator](https://github.com/archsyscall/restart-operator) — Kubernetes operator for scheduling recurring restarts of Deployments, StatefulSets, and DaemonSets with cron expressions.
@@ -680,7 +680,7 @@
 - [Sealos](https://sealos.io) — Cloud operating system for Kubernetes.
 - [SeaweedFS](https://seaweedfs.com) — Distributed storage system for files, objects, and volumes.
 - [Security Contexts](https://learnkube.com/security-contexts) — Kubernetes security context configuration.
-- [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) — Kubernetes operator for managing seccomp, SELinux, and AppArmor security profiles.
+- [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) — Security Profiles Operator manages and optionally records Linux seccomp, SELinux and AppArmor profiles for Kubernetes workloads.
 - [Seesaw](https://github.com/google/seesaw) — Linux Virtual Server-based load-balancing platform with redundant nodes and network configuration.
 - [Sematext](https://sematext.com) — Full-stack observability platform covering logs, metrics, tracing, real user monitoring, and synthetic monitoring.
 - [Sensu](https://sensu.io) — Observability pipeline (metrics/events/alerts).
@@ -717,7 +717,7 @@
 - [stress-ng](https://github.com/ColinIanKing/stress-ng) — GPL-2.0-or-later system stress generator exercising CPU, memory, filesystem, kernel and other resources on supported Unix-like platforms; throughput counters are not a precise benchmark suite.
 - [stressapptest](https://github.com/stressapptest/stressapptest) — Memory and I/O stress test tool.
 - [stressdisk](https://github.com/ncw/stressdisk) — Disk stress testing utility.
-- [Strimzi](https://strimzi.io) — Apache Kafka on Kubernetes operator.
+- [Strimzi](https://strimzi.io) — Strimzi manages Apache Kafka clusters and related resources on Kubernetes via custom resources and controllers.
 - [StrongKey](https://www.strongkey.com) — Enterprise key management.
 - [Sustainable Computing (Kepler)](https://sustainable-computing.io) — Power consumption monitoring for Kubernetes (project ecosystem).
 - [Swiftorial](https://www.swiftorial.com/swiftlessons) — Interactive tutorials for learning Swift programming.
