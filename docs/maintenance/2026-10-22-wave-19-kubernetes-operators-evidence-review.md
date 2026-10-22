@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-22. **Main baseline:** `07bd19f4b37683197c9d36d6869d837816c0655b`. **Issue:** [#127](https://github.com/goozcena-gnl/devops-tools-catalog/issues/127).
 
-Ten existing canonical entries were reviewed, with **ten provisional CLEAR decisions**. Global count 1,425 unchanged. Proposed remaining review debt 656 → 646, pending independent generator output, full pytest, strict links, CodeQL and human review.
+Ten existing canonical entries were reviewed, with **nine provisional CLEAR decisions, one RETAIN REVIEW due to duplicate identity**. Global count 1,425 unchanged. Proposed remaining review debt 656 → 647, pending independent generator output, full pytest, strict links, CodeQL and human review.
 
 ## Decision notes
 
@@ -10,7 +10,7 @@ Ten existing canonical entries were reviewed, with **ten provisional CLEAR decis
 |---|---|---|
 | `azure-service-operator` | **CLEAR (provisional)** | MIT core, Azure ARM/identity CRDs; does not replace Terraform/Bicep in all lifecycles |
 | `cloudnativepg` | **CLEAR (provisional)** | Apache core; HA and backups still require restoration tests and storage planning |
-| `crossplane-provider-upjet` | **CLEAR (provisional)** | Canonical source relocated to crossplane/upjet; generates providers rather than itself provisioning ready-made cloud resources |
+| `crossplane-provider-upjet` | **RETAIN REVIEW — duplicate canonical identity** | Canonical source relocated to crossplane/upjet; generates providers rather than itself provisioning ready-made cloud resources |
 | `descheduler` | **CLEAR (provisional)** | Apache core; policy-based evictions, respect budgets and disruption risk |
 | `mariadb-operator` | **CLEAR (provisional)** | MIT operator code, separate database/runtime terms and recovery responsibilities |
 | `openkruise` | **CLEAR (provisional)** | Direct LICENSE.md contains Apache-2.0 despite API NOASSERTION; validate workload controller versions |
@@ -57,20 +57,7 @@ All list items and folded YAML strings are represented in full, with list entrie
 
 ### `crossplane-provider-upjet`
 
-| Field | Before | After |
-|---|---|---|
-| `summary` | `Build Crossplane providers from Terraform.` | `Upjet generates Crossplane provider implementations from Terraform provider schemas and supports provider runtime integration.` |
-| `repository_url` | `https://github.com/upbound/upjet` | `https://github.com/crossplane/upjet` |
-| `use_when` | `You want to reuse existing Terraform providers as Crossplane managed resources.` | `You need to author or maintain Crossplane providers based on supported Terraform provider schemas.` |
-| `avoid_when` | `A native Crossplane provider already exists for your target service.` | `You need an already packaged Crossplane provider rather than a provider code-generation framework.` |
-| `maturity` | `unknown` | `established` |
-| `status` | `needs-review` | `active` |
-| `verified_on` | `'2026-08-03'` | `'2026-10-22'` |
-| `sources` | `legacy:4_Kubernetes-Containers/README.md#L82; legacy:devopstools_final.md#L546` | `legacy:4_Kubernetes-Containers/README.md#L82; legacy:devopstools_final.md#L546; https://github.com/crossplane/upjet; https://github.com/crossplane/upjet/blob/main/LICENSE; https://github.com/crossplane/upjet/releases` |
-| `needs_review` | `true` | `false` |
-| `documentation_url` | ∅ | `https://github.com/crossplane/upjet` |
-| `license_spdx` | ∅ | `Apache-2.0` |
-| `repository_archived` | ∅ | `false` |
+No current-state field change is applied to this historical alias. The prior draft inadvertently assigned the already used `https://github.com/crossplane/upjet` to `crossplane-provider-upjet`, causing the schema duplicate-URL failure. All its baseline fields are restored, and the already active canonical `crossplane-upjet` in `data/tools/infrastructure-as-code.yaml` remains unchanged. Further alias reconciliation must follow the repository's migration procedure rather than creating two approved canonical records.
 
 ### `descheduler`
 
@@ -183,6 +170,13 @@ All list items and folded YAML strings are represented in full, with list entrie
 | `documentation_url` | ∅ | `https://strimzi.io/docs/operators/latest/overview` |
 | `license_spdx` | ∅ | `Apache-2.0` |
 | `repository_archived` | ∅ | `false` |
+
+## Corrected identity decision after initial CI
+
+- The initial CI detected duplicate `repository_url`: `crossplane-provider-upjet` and the older active `crossplane-upjet` both resolving to `https://github.com/crossplane/upjet`.
+- Reverted all edits to the Wave 19 `crossplane-provider-upjet` record to its original main version. **Retain `status: needs-review` / `needs_review: true`** pending canonical alias reconciliation. Keep its legacy source pointers unchanged.
+- The reviewed active `crossplane-upjet` in Infrastructure as Code is preserved; neither deleted nor edited. The total canonical inventory remains 1,425.
+- Corrected proposed review debt: **656 → 647 (9 clear / 1 retained)**.
 
 ## Outstanding gates and qualifications
 
