@@ -550,15 +550,16 @@ APM intake/processing for Elastic Observability (agents + server + UI).
 **Model:** Source Available<br>
 **Status:** Needs Review
 
-Search/analytics/log platform; source licensing varies by component (Elastic License/SSPL and AGPL option for parts).
+Elastic Stack combines Elasticsearch search and analytics with separate Kibana and Logstash components; Elasticsearch source has file-dependent AGPLv3, SSPL and Elastic License terms, not one Stack-wide licence.
 
 **Use when**
 
-- Powerful full-text search and analytics over logs.
+- You need full-text search and log analytics and can check each deployed component and distribution.
 
 **Consider alternatives when**
 
-- Licensing concerns, high cost of running Elasticsearch, or you only need label-based log queries (Loki is simpler).
+- You require one permissive Stack-wide licence; source options, x-pack files and shipped distributions have different terms.
+- A simpler log or metrics stack meets the requirement.
 
 [Official site](https://www.elastic.co/elastic-stack) · [Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) · [Source repository](https://github.com/elastic/elasticsearch)
 
@@ -954,38 +955,40 @@ ClickHouse-backed observability interface for correlating logs, traces, metrics 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open source monitoring system derived from Nagios.
+Icinga 2 monitors hosts and services with checks, notifications, an API and distributed zones. Releases from 2.16.0 use GPL-3.0-or-later; earlier releases and existing file-level grants retain GPL-2.0-or-later. Web, DB and Director are separate components.
 
 **Use when**
 
-- You want Nagios-style host/service checks with a modern API and HA.
+- You need distributed host and service checks with managed API access, certificates and alerting.
 
 **Consider alternatives when**
 
-- You need metrics-first or tracing-centric observability.
+- You expect Icinga 2 alone to contain Icinga Web, DB and Director.
+- You cannot secure API users, certificates and cluster trust zones.
 
-[Official site](https://icinga.com) · [Source repository](https://github.com/Icinga/icinga2)
+[Official site](https://icinga.com) · [Documentation](https://icinga.com/docs/icinga-2/latest/) · [Source repository](https://github.com/Icinga/icinga2)
 
 ### InfluxData
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Time series platform with OSS components and commercial cloud/enterprise offerings.
+InfluxData offers InfluxDB 3 Core under MIT or Apache-2.0 and separate commercial Enterprise and Cloud products. Version 3 supports SQL and InfluxQL without official Flux support; older v1/v2 products have different APIs and query-language support.
 
 **Use when**
 
-- IoT/sensor-heavy time series with Flux query language.
+- You need time-series ingest and analytics and can select the specific version, topology and supported query language.
 
 **Consider alternatives when**
 
-- Prometheus-compatible ecosystem or PromQL is your standard.
+- You rely on Flux without migrating InfluxDB 2 queries to InfluxDB 3 SQL or InfluxQL.
+- You expect free single-node Core to provide Enterprise HA or managed cloud capabilities.
 
-[Official site](https://www.influxdata.com) · [Source repository](https://github.com/influxdata/influxdb)
+[Official site](https://www.influxdata.com) · [Documentation](https://docs.influxdata.com/platform/) · [Source repository](https://github.com/influxdata/influxdb)
 
 ### Jaeger
 
@@ -1049,19 +1052,20 @@ Agentic operations platform for production, covering AI SRE, cost optimization a
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes Resource Recommendations by Robusta.
+Robusta KRR's MIT-licensed CLI analyzes Prometheus-compatible telemetry and recommends Kubernetes CPU and memory requests and limits; the optional KRR Enforcer webhook automatically applies recommendations when pods are created.
 
 **Use when**
 
-- Right-sizing pod requests/limits based on real usage data.
+- You have representative Prometheus-compatible resource usage history and want to review pod right-sizing proposals.
 
 **Consider alternatives when**
 
-- VPA already handles your resource tuning needs.
+- You lack representative metrics or cannot approve the resource mutations introduced by the optional KRR Enforcer.
+- You cannot review recommendation accuracy and disruption risks before applying changes.
 
-[Source repository](https://github.com/robusta-dev/krr)
+[Documentation](https://github.com/robusta-dev/krr/blob/main/README.md) · [Source repository](https://github.com/robusta-dev/krr)
 
 ### kube-binpacking-exporter
 
@@ -1127,19 +1131,20 @@ Jsonnet monitoring mixin that generates Kubernetes Prometheus alerting and recor
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes event watcher and notifier.
+Robusta-maintained Kubewatch watches selected Kubernetes resource changes and sends notifications to configured handlers and collaboration channels.
 
 **Use when**
 
-- You want Slack/webhook alerts on K8s resource changes.
+- You need lightweight Kubernetes event notifications with limited watch permissions and approved delivery endpoints.
 
 **Consider alternatives when**
 
-- You already have event routing via Robusta or a full observability platform.
+- You need a full incident-management or telemetry correlation platform rather than object-change alerts.
+- You cannot restrict RBAC scope or protect metadata sent to external channels.
 
-[Source repository](https://github.com/robusta-dev/kubewatch)
+[Documentation](https://github.com/robusta-dev/kubewatch/blob/master/README.md) · [Source repository](https://github.com/robusta-dev/kubewatch)
 
 ### Kwatcher
 
@@ -1278,20 +1283,21 @@ Infrastructure monitoring (Nagios Core).
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review
+**Model:** Free Saas<br>
+**Status:** Active
 
-SaaS control plane for Netdata (Netdata Agent is open-source; Cloud adds centralized management/collaboration).
+Netdata Cloud's proprietary hosted control plane has a personal non-commercial free tier and paid plans; telemetry stays on separate GPL-3.0-or-later Agents and Parents. The UI uses NCUL1, and commercial Cloud On-Premises is a separate deployment option.
 
 **Use when**
 
-- You want per-second granularity with near-zero config.
+- You need hosted access and collaborative monitoring across agents and accept Netdata Cloud account and network dependencies.
 
 **Consider alternatives when**
 
-- Long-term storage or complex cross-service correlation is the main goal.
+- You require an entirely OSI-licensed Cloud service and UI; the Agent's GPL licence does not cover either.
+- You need an air-gapped control plane without evaluating commercial Cloud On-Premises, or cannot approve Cloud data flows and plan limits; Netdata Agent's repository is cited only as supporting evidence, not as the source for Cloud.
 
-[Official site](https://www.netdata.cloud) · [Source repository](https://github.com/netdata/netdata)
+[Official site](https://www.netdata.cloud) · [Documentation](https://learn.netdata.cloud/)
 
 ### New Relic
 
@@ -1569,15 +1575,16 @@ Kubernetes alert enrichment, investigation, and automation platform centered on 
 **Model:** Oss<br>
 **Status:** Needs Review
 
-High-performance syslog daemon with flexible routing (often used as a log edge forwarder).
+rsyslog collects and routes syslog data; the checked daemon source is Apache-2.0 and its runtime header is LGPL-3.0-or-later, while aggregate component licensing still needs review.
 
 **Use when**
 
-- High-throughput syslog forwarding on Linux hosts.
+- You need configurable syslog collection, filtering and reliable forwarding on Linux systems.
 
 **Consider alternatives when**
 
-- You need structured log parsing or container-native log collection.
+- You need downstream log indexing, search and dashboards rather than a forwarding engine.
+- You require one verified SPDX for the full project before checking file-level licensing.
 
 [Official site](https://www.rsyslog.com) · [Documentation](https://docs.rsyslog.com/doc/) · [Source repository](https://github.com/rsyslog/rsyslog)
 
@@ -1642,20 +1649,21 @@ Observability pipeline (metrics/events/alerts).
 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review
+**Model:** Source Available<br>
+**Status:** Active
 
-Error monitoring with performance/tracing features (popular for app-level APM signals).
+Sentry monitors application errors, releases and performance. Its main server source uses FSL-1.1-Apache-2.0 with a competing-use restriction and an Apache-2.0 grant effective two years after each version is made available; hosted plans are separate commercial offerings.
 
 **Use when**
 
-- Developer-facing error tracking with stack traces and release health.
+- You need application error diagnostics, performance telemetry and release-linked troubleshooting with controlled ingestion.
 
 **Consider alternatives when**
 
-- Infrastructure-level tracing or metrics monitoring is the goal.
+- You require an immediately OSI-licensed current server or a competing commercial service; the FSL permits internal use but restricts competing uses before each version's future Apache grant.
+- You cannot govern captured data, self-hosted service dependencies or subscription limits.
 
-[Official site](https://sentry.io/welcome) · [Source repository](https://github.com/getsentry/sentry)
+[Official site](https://sentry.io/welcome) · [Documentation](https://docs.sentry.io/) · [Source repository](https://github.com/getsentry/sentry)
 
 ### SigNoz
 
@@ -1799,15 +1807,15 @@ Open-source components extending Prometheus with high availability, deduplicated
 **Model:** Open Core<br>
 **Status:** Needs Review
 
-Trace-based integration testing using OpenTelemetry, with mixed MIT/Tracetest Community licensing and unclear current support.
+Tracetest provides OpenTelemetry trace-based integration testing; source files have mixed MIT and Tracetest Community terms and current support remains unverified.
 
 **Use when**
 
-- You are evaluating assertions against distributed traces for integration and end-to-end tests.
+- You are testing distributed traces in a controlled evaluation and can check edition-specific and per-file licensing.
 
 **Consider alternatives when**
 
-- You require a clearly maintained and uniformly permissive production tool; source files have different license grants.
+- You require established current maintenance or a uniformly permissive licence; the last checked stable release is from 2024.
 
 [Official site](https://tracetest.io) · [Documentation](https://docs.tracetest.io/) · [Source repository](https://github.com/kubeshop/tracetest)
 
@@ -1933,19 +1941,20 @@ Hosted monitoring service for website and server uptime, DNS records, certificat
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Enterprise-grade monitoring platform (metrics, triggers, dashboards).
+Zabbix monitors infrastructure with server, proxy, agent and alerting components. Software from 7.0 uses AGPL-3.0-only; releases through 6.4 use GPL-2.0-or-later. Documentation has separate terms.
 
 **Use when**
 
-- Large-scale traditional infra monitoring with templates and agent support.
+- You need broad distributed agent or agentless infrastructure monitoring, templates and configurable alerts.
 
 **Consider alternatives when**
 
-- Your workload is fully cloud-native and you prefer PromQL/OTel standards.
+- You assume older GPLv2 releases and current AGPLv3 have identical sharing obligations.
+- You need native tracing instead of infrastructure monitoring or cannot manage Zabbix storage and access.
 
-[Official site](https://www.zabbix.com) · [Source repository](https://github.com/zabbix/zabbix)
+[Official site](https://www.zabbix.com) · [Documentation](https://www.zabbix.com/documentation/current/en/manual) · [Source repository](https://github.com/zabbix/zabbix)
 
 ### Zipkin
 

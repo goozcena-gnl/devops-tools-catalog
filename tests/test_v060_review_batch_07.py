@@ -24,7 +24,9 @@ def test_batch_07_records_are_current_and_uncertainty_is_preserved() -> None:
     assert len(BATCH_07_IDS) == 10
     for tool_id in BATCH_07_IDS:
         tool = tools[tool_id]
-        assert tool["verified_on"] == "2026-10-04"
+        assert tool["verified_on"] == (
+            "2026-10-22" if tool_id == "rsyslog" else "2026-10-04"
+        )
         assert tool["status"] == (
             "needs-review" if tool_id in {"koreo", "rsyslog"} else "active"
         )

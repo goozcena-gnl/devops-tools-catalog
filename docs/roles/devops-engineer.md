@@ -322,10 +322,10 @@
 | [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [IBM Cloud](https://www.ibm.com/products/cloud) | Cloud platforms and cloud management | commercial | active |
 | [IcePanel](https://icepanel.io) | Emerging and experimental tools | unknown | needs-review |
-| [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [Incus](https://linuxcontainers.org/incus/) | Virtualization, bare metal and homelab | oss | active |
 | [Incus OS](https://linuxcontainers.org/incus-os) | Virtualization, bare metal and homelab | oss | needs-review |
-| [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Informatica](https://www.informatica.com) | Emerging and experimental tools | unknown | needs-review |
 | [Infracost](https://www.infracost.io) | Infrastructure as Code | open-core | active |
 | [Insomnia](https://insomnia.rest/) | Developer experience and local environments | open-core | active |
@@ -376,7 +376,7 @@
 | [Kolla-Ansible](https://docs.openstack.org/kolla-ansible/latest) | Configuration management | oss | needs-review |
 | [Komodo](https://komo.do/) | Virtualization, bare metal and homelab | oss | active |
 | [Komodor](https://komodor.com) | SRE, incident response and on-call, Monitoring, metrics, logs and tracing, FinOps and sustainability | commercial | active |
-| [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | active |
 | [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | active |
 | [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) | Monitoring, metrics, logs and tracing | oss | active |
@@ -392,7 +392,7 @@
 | [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) | Monitoring, metrics, logs and tracing | oss | active |
 | [kubernetes-sigs/bom](https://kubernetes-sigs.github.io/bom) | Emerging and experimental tools | oss | needs-review |
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
-| [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | active |
 | [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
 | [Kwatcher](https://github.com/Berg-it/Kwatcher) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [LabEx DevOps Tutorials](https://labex.io/tutorials/category/devops) | Documentation, learning and career resources | documentation | needs-review |
@@ -445,7 +445,7 @@
 | [Nektos Act](https://nektosact.com) | CI, build and testing | oss | active |
 | [Neovim](https://neovim.io/) | Developer experience and local environments | oss | active |
 | [nerdctl](https://github.com/containerd/nerdctl) | Virtualization, bare metal and homelab | oss | needs-review |
-| [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | free-saas | active |
 | [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |
 | [New Relic](https://newrelic.com/platform) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Nextcloud](https://nextcloud.com/) | Virtualization, bare metal and homelab | open-core | active |
@@ -583,7 +583,7 @@
 | [Semaphore CI](https://semaphore.io/) | CI, build and testing | open-core | active |
 | [Sematext](https://sematext.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Sensu](https://sensu.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
-| [Sentry](https://sentry.io/welcome) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Sentry](https://sentry.io/welcome) | Monitoring, metrics, logs and tracing | source-available | active |
 | [ServerSpec](https://serverspec.org) | CI, build and testing | oss | needs-review |
 | [Shannon](https://github.com/KeygraphHQ/shannon) | Emerging and experimental tools | open-core | needs-review |
 | [ShellCheck](https://www.shellcheck.net) | Foundations, Linux and scripting | oss | needs-review |
@@ -704,7 +704,7 @@
 | [Yarn](https://yarnpkg.com/) | Artifact and package management | oss | active |
 | [Yazi](https://yazi-rs.github.io) | Developer experience and local environments | oss | needs-review |
 | [Yoke](https://yokecd.github.io/) | CD, GitOps, release and promotion | oss | active |
-| [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [Zed](https://zed.dev/) | Developer experience and local environments | oss | active |
 | [Zellij](https://zellij.dev/) | Developer experience and local environments | oss | active |
 | [Zipkin](https://zipkin.io) | Monitoring, metrics, logs and tracing | oss | active |

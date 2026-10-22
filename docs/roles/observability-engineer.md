@@ -59,16 +59,16 @@
 | [HolmesGPT](https://holmesgpt.dev/latest) | Monitoring, metrics, logs and tracing | oss | active |
 | [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | commercial | active |
 | [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | active |
-| [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | active |
+| [InfluxData](https://www.influxdata.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Jaeger](https://www.jaegertracing.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Klarity](https://github.com/selvarajmurugesan90/klarity) | Monitoring, metrics, logs and tracing, Emerging and experimental tools | oss | active |
 | [Komodor](https://komodor.com) | SRE, incident response and on-call, Monitoring, metrics, logs and tracing, FinOps and sustainability | commercial | active |
-| [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | active |
 | [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) | Monitoring, metrics, logs and tracing | oss | active |
-| [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | active |
 | [Kwatcher](https://github.com/Berg-it/Kwatcher) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Linnix](https://github.com/linnix-os/linnix) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Logstash](https://www.elastic.co/logstash) | Monitoring, metrics, logs and tracing | source-available | needs-review |
@@ -79,7 +79,7 @@
 | [Moogsoft](https://www.moogsoft.com) | SRE, incident response and on-call | unknown | needs-review |
 | [Munin](https://munin-monitoring.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Nagios](https://www.nagios.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | free-saas | active |
 | [NetWatch Labs](https://www.netwatchlabs.com) | SRE, incident response and on-call | oss | needs-review |
 | [New Relic](https://newrelic.com/platform) | Monitoring, metrics, logs and tracing | commercial | active |
 | [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) | Monitoring, metrics, logs and tracing | oss | active |
@@ -103,7 +103,7 @@
 | [Scanopy](https://scanopy.net/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Sematext](https://sematext.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Sensu](https://sensu.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
-| [Sentry](https://sentry.io/welcome) | Monitoring, metrics, logs and tracing | open-core | needs-review |
+| [Sentry](https://sentry.io/welcome) | Monitoring, metrics, logs and tracing | source-available | active |
 | [Server Pulse](https://github.com/Server-Pulse/server-pulse) | SRE, incident response and on-call | oss | needs-review |
 | [SigNoz](https://signoz.io) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Site24x7](https://www.site24x7.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
@@ -122,7 +122,7 @@
 | [VictoriaMetrics](https://victoriametrics.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [VirtualEyes](https://virtualeyes.io/) | Monitoring, metrics, logs and tracing | free-saas | active |
 | [Wireshark](https://www.wireshark.org) | SRE, incident response and on-call | oss | needs-review |
-| [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [Zenduty](https://github.com/zenduty) | SRE, incident response and on-call | open-core | needs-review |
 | [Zipkin](https://zipkin.io) | Monitoring, metrics, logs and tracing | oss | active |
 
