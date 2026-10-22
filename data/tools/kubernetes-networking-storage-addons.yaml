@@ -761,8 +761,8 @@
   needs_review: true
 - id: crossplane-provider-upjet
   name: Crossplane Provider Upjet
-  summary: Upjet generates Crossplane provider implementations from Terraform provider schemas and supports provider runtime integration.
-  repository_url: https://github.com/crossplane/upjet
+  summary: Build Crossplane providers from Terraform.
+  repository_url: https://github.com/upbound/upjet
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -775,26 +775,20 @@
   - deploy
   - operate
   use_when:
-  - You need to author or maintain Crossplane providers based on supported Terraform provider schemas.
+  - You want to reuse existing Terraform providers as Crossplane managed resources.
   avoid_when:
-  - You need an already packaged Crossplane provider rather than a provider code-generation framework.
+  - A native Crossplane provider already exists for your target service.
   deployment_models: []
   license_model: oss
-  maturity: established
-  status: active
+  maturity: unknown
+  status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-10-22'
-  documentation_url: https://github.com/crossplane/upjet
-  license_spdx: Apache-2.0
-  repository_archived: false
+  verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L82
   - legacy:devopstools_final.md#L546
-  - https://github.com/crossplane/upjet
-  - https://github.com/crossplane/upjet/blob/main/LICENSE
-  - https://github.com/crossplane/upjet/releases
-  needs_review: false
+  needs_review: true
 - id: crossview
   name: crossview
   summary: Standard UI dashboard for Crossplane resources.
