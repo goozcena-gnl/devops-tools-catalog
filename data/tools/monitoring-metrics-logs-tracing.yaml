@@ -245,8 +245,7 @@
   needs_review: false
 - id: beszel
   name: Beszel
-  summary: Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC, backups, and
-    REST API.
+  summary: Lightweight self-hosted hub-and-agent monitoring for hosts and Docker/Podman containers, with metric history and alerting.
   official_url: https://beszel.dev
   repository_url: https://github.com/henrygd/beszel
   categories:
@@ -260,18 +259,27 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
+  use_when:
+  - You need lightweight host and container metrics, alerts and simple multi-system dashboards without a full observability pipeline.
+  avoid_when:
+  - You require full distributed tracing or centralized long-term log analytics; verify agent permissions and hub authentication.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-21'
+  documentation_url: https://beszel.dev/guide/getting-started
+  repository_archived: false
+  license_spdx: MIT
   sources:
   - legacy:devopstools_final.md#L697
-  needs_review: true
+  - https://github.com/henrygd/beszel
+  - https://github.com/henrygd/beszel/blob/main/LICENSE
+  - https://github.com/henrygd/beszel/releases
+  - https://beszel.dev/guide/getting-started
+  needs_review: false
 - id: better-stack
   name: Better Stack
   summary: Commercial observability and incident-management platform with telemetry, on-call, and status-page
@@ -884,8 +892,7 @@
   needs_review: false
 - id: dozzle
   name: Dozzle
-  summary: Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes
-    support.
+  summary: Real-time container log viewer for Docker, Swarm and supported Kubernetes deployments; it does not persist logs.
   official_url: https://dozzle.dev
   repository_url: https://github.com/amir20/dozzle
   categories:
@@ -899,18 +906,27 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
+  use_when:
+  - You need immediate live container log inspection on trusted Docker hosts or Kubernetes environments.
+  avoid_when:
+  - You need log retention, offline historical search or can not safely expose the Docker socket or sensitive log contents.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-21'
+  documentation_url: https://dozzle.dev/guide/getting-started
+  repository_archived: false
+  license_spdx: MIT
   sources:
   - legacy:devopstools_final.md#L760
-  needs_review: true
+  - https://github.com/amir20/dozzle
+  - https://github.com/amir20/dozzle/blob/main/LICENSE
+  - https://github.com/amir20/dozzle/releases
+  - https://dozzle.dev/guide/getting-started
+  needs_review: false
 - id: dynatrace
   name: Dynatrace
   summary: Commercial observability and application-performance platform spanning infrastructure,
@@ -1119,7 +1135,7 @@
   needs_review: false
 - id: gatus
   name: Gatus
-  summary: Developer-oriented health dashboard and status page for monitoring endpoints and services.
+  summary: Self-hosted endpoint health dashboard with HTTP, TCP, ICMP and DNS checks, status pages and alert integrations.
   official_url: https://gatus.io
   repository_url: https://github.com/TwiN/gatus
   categories:
@@ -1133,18 +1149,27 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
+  use_when:
+  - You want declarative synthetic health checks and alert routing for endpoints and basic service status.
+  avoid_when:
+  - You require full infrastructure metrics, distributed traces or application profiling; protect probe credentials.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-21'
+  documentation_url: https://github.com/TwiN/gatus/blob/master/README.md
+  repository_archived: false
+  license_spdx: Apache-2.0
   sources:
   - legacy:devopstools_final.md#L704
-  needs_review: true
+  - https://github.com/TwiN/gatus
+  - https://github.com/TwiN/gatus/blob/master/LICENSE
+  - https://github.com/TwiN/gatus/releases
+  - https://github.com/TwiN/gatus/blob/master/README.md
+  needs_review: false
 - id: glitchtip
   name: GlitchTip
   summary: Sentry-compatible error tracking and performance monitoring platform with self-hosted and managed
@@ -1643,8 +1668,7 @@
   needs_review: true
 - id: holmesgpt
   name: HolmesGPT
-  summary: Open-source SRE AI agent for investigating production incidents across Kubernetes, VMs, cloud
-    services, and databases with operator mode for 24/7 background monitoring (CNCF).
+  summary: Open-source AI SRE investigation agent integrating Kubernetes, cloud and observability data sources; operator mode needs explicit permissions.
   official_url: https://holmesgpt.dev/latest
   repository_url: https://github.com/HolmesGPT/holmesgpt
   categories:
@@ -1658,18 +1682,27 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
+  use_when:
+  - You need assisted incident investigation across connected telemetry and Kubernetes resources with reviewed LLM access.
+  avoid_when:
+  - You cannot govern model data sharing, API-token costs, tool permissions or autonomous incident responses.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-21'
+  documentation_url: https://holmesgpt.dev/
+  repository_archived: false
+  license_spdx: Apache-2.0
   sources:
   - legacy:devopstools_final.md#L726
-  needs_review: true
+  - https://github.com/HolmesGPT/holmesgpt
+  - https://github.com/HolmesGPT/holmesgpt/blob/master/LICENSE
+  - https://github.com/HolmesGPT/holmesgpt/releases
+  - https://holmesgpt.dev/
+  needs_review: false
 - id: honeycomb
   name: Honeycomb
   summary: Hosted observability platform for high-cardinality telemetry, distributed tracing, and production debugging.
@@ -1707,7 +1740,7 @@
   needs_review: false
 - id: hyperdx
   name: HyperDX
-  summary: Observability and troubleshooting platform.
+  summary: ClickHouse-backed observability interface for correlating logs, traces, metrics and session replay within ClickStack deployments.
   official_url: https://www.hyperdx.io
   repository_url: https://github.com/hyperdxio/hyperdx
   categories:
@@ -1722,20 +1755,27 @@
   - operate
   - monitor
   use_when:
-  - You want a self-hosted Datadog-like experience with session replay.
+  - You want correlated telemetry exploration on ClickHouse with OpenTelemetry collection and session replay.
   avoid_when:
-  - You need proven large-scale production deployments.
+  - You expect the most recent CLI tag to validate server support or cannot maintain the required ClickHouse and collector stack.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-21'
+  documentation_url: https://clickhouse.com/docs/use-cases/observability/clickstack/overview
+  repository_archived: false
+  license_spdx: MIT
   sources:
   - legacy:5_Monitoring-Observability/README.md#L43
   - legacy:devopstools_final.md#L748
-  needs_review: true
+  - https://github.com/hyperdxio/hyperdx
+  - https://github.com/hyperdxio/hyperdx/blob/main/LICENSE
+  - https://github.com/hyperdxio/hyperdx/releases
+  - https://clickhouse.com/docs/use-cases/observability/clickstack/overview
+  needs_review: false
 - id: icinga
   name: Icinga
   summary: Open source monitoring system derived from Nagios.
@@ -2407,7 +2447,7 @@
   license_spdx: AGPL-3.0-only
 - id: opensearch
   name: OpenSearch
-  summary: Search/analytics engine commonly used for logs (Elastic-alternative fork).
+  summary: Apache-licensed distributed search and analytics engine used for log indexing and observability, distinct from Dashboards and ingestion components.
   official_url: https://opensearch.org
   repository_url: https://github.com/opensearch-project/OpenSearch
   categories:
@@ -2422,20 +2462,27 @@
   - operate
   - monitor
   use_when:
-  - You need ELK-like capabilities under a true open-source license.
+  - You need a distributed search and analytics backend for logs with controllable deployment and storage.
   avoid_when:
-  - You're happy with Elastic's licensing, as plugin/feature parity may lag.
+  - You assume full Elasticsearch or plugin feature compatibility or cannot manage storage, cluster security and upgrades.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-21'
+  documentation_url: https://docs.opensearch.org/latest/
+  repository_archived: false
+  license_spdx: Apache-2.0
   sources:
   - legacy:5_Monitoring-Observability/README.md#L60
   - legacy:devopstools_final.md#L768
-  needs_review: true
+  - https://github.com/opensearch-project/OpenSearch
+  - https://github.com/opensearch-project/OpenSearch/blob/main/LICENSE.txt
+  - https://github.com/opensearch-project/OpenSearch/releases
+  - https://docs.opensearch.org/latest/
+  needs_review: false
 - id: opentelemetry
   name: OpenTelemetry
   summary: Vendor-neutral observability umbrella project defining specifications, APIs, SDKs and instrumentation
@@ -2733,7 +2780,7 @@
   needs_review: false
 - id: quickwit
   name: Quickwit
-  summary: Distributed log search/indexing built around fast ingestion and cost control.
+  summary: Cloud-native distributed log and trace search engine using object storage and decoupled indexing and search.
   official_url: https://quickwit.io
   repository_url: https://github.com/quickwit-oss/quickwit
   categories:
@@ -2748,20 +2795,28 @@
   - operate
   - monitor
   use_when:
-  - Cost-efficient log search on object storage with sub-second latency.
+  - You need logs or traces search on object storage and can operate its ingestion and query components.
   avoid_when:
-  - You need the broad ecosystem and maturity of Elasticsearch/OpenSearch.
+  - You need a turnkey metrics platform, universal Elasticsearch compatibility or unverified latency/availability guarantees.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-21'
+  documentation_url: https://quickwit.io/docs/main-branch
+  repository_archived: false
+  license_spdx: Apache-2.0
   sources:
   - legacy:5_Monitoring-Observability/README.md#L61
   - legacy:devopstools_final.md#L769
-  needs_review: true
+  - https://github.com/quickwit-oss/quickwit
+  - https://github.com/quickwit-oss/quickwit/blob/main/LICENSE
+  - https://github.com/quickwit-oss/quickwit/releases
+  - https://quickwit.io/docs/main-branch
+  - https://github.com/quickwit-oss/quickwit/blob/main/LICENSE-3rdparty.csv
+  needs_review: false
 - id: robusta
   name: Robusta
   summary: Kubernetes alert enrichment, investigation, and automation platform centered on the open-source
@@ -2952,7 +3007,7 @@
   needs_review: true
 - id: signoz
   name: SigNoz
-  summary: Open-source observability platform.
+  summary: OpenTelemetry-native observability platform for logs, metrics and traces, with MIT community code and separately restricted Enterprise components.
   official_url: https://signoz.io
   repository_url: https://github.com/SigNoz/signoz
   categories:
@@ -2967,20 +3022,29 @@
   - operate
   - monitor
   use_when:
-  - Self-hosted Datadog alternative with OTel-native traces, metrics, and logs.
+  - You need self-hosted correlated metrics, logs, tracing and dashboards and can manage ClickHouse-based infrastructure.
   avoid_when:
-  - You lack capacity to run ClickHouse-based infra.
+  - You assume Enterprise features are MIT licensed or need a small-footprint stack without ClickHouse operations.
   deployment_models: []
   license_model: open-core
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-21'
+  documentation_url: https://signoz.io/docs/install/self-host/
+  repository_archived: false
+  license_spdx: MIT
+  commercial_offering: true
   sources:
   - legacy:5_Monitoring-Observability/README.md#L47
   - legacy:devopstools_final.md#L753
-  needs_review: true
+  - https://github.com/SigNoz/signoz
+  - https://github.com/SigNoz/signoz/blob/main/LICENSE
+  - https://github.com/SigNoz/signoz/releases
+  - https://signoz.io/docs/install/self-host/
+  - https://github.com/SigNoz/signoz/blob/main/ee/LICENSE
+  needs_review: false
 - id: site24x7
   name: Site24x7
   summary: Full-stack monitoring platform.
@@ -3200,7 +3264,7 @@
   repository_archived: false
 - id: tracetest
   name: Tracetest
-  summary: Trace-based testing for distributed systems.
+  summary: Trace-based integration testing using OpenTelemetry, with mixed MIT/Tracetest Community licensing and unclear current support.
   official_url: https://tracetest.io
   repository_url: https://github.com/kubeshop/tracetest
   categories:
@@ -3215,19 +3279,25 @@
   - operate
   - monitor
   use_when:
-  - Writing integration tests that assert on distributed trace structure.
+  - You are evaluating assertions against distributed traces for integration and end-to-end tests.
   avoid_when:
-  - Traditional API/contract testing already gives sufficient coverage.
+  - You require a clearly maintained and uniformly permissive production tool; source files have different license grants.
   deployment_models: []
   license_model: open-core
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-21'
+  documentation_url: https://docs.tracetest.io/
+  repository_archived: false
   sources:
   - legacy:5_Monitoring-Observability/README.md#L74
   - legacy:devopstools_final.md#L783
+  - https://github.com/kubeshop/tracetest
+  - https://github.com/kubeshop/tracetest/blob/main/LICENSE
+  - https://github.com/kubeshop/tracetest/releases
+  - https://docs.tracetest.io/
   needs_review: true
 - id: uptime-kuma
   name: Uptime Kuma
@@ -3488,7 +3558,7 @@
   needs_review: true
 - id: zipkin
   name: Zipkin
-  summary: Distributed tracing system.
+  summary: Open-source distributed tracing collector and UI for investigating service latency and dependencies using pluggable storage.
   official_url: https://zipkin.io
   repository_url: https://github.com/openzipkin/zipkin
   categories:
@@ -3503,17 +3573,24 @@
   - operate
   - monitor
   use_when:
-  - Simple, lightweight distributed tracing for Java-centric stacks.
+  - You need a distributed trace collector and query UI with supported Zipkin ingestion and storage.
   avoid_when:
-  - Jaeger or OTel Collector already serves as your tracing backend.
+  - You expect automatic application instrumentation or guaranteed parity with Jaeger and OpenTelemetry-native backends.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-21'
+  documentation_url: https://zipkin.io/pages/quickstart
+  repository_archived: false
+  license_spdx: Apache-2.0
   sources:
   - legacy:5_Monitoring-Observability/README.md#L51
   - legacy:devopstools_final.md#L757
-  needs_review: true
+  - https://github.com/openzipkin/zipkin
+  - https://github.com/openzipkin/zipkin/blob/master/LICENSE
+  - https://github.com/openzipkin/zipkin/releases
+  - https://zipkin.io/pages/quickstart
+  needs_review: false

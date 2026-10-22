@@ -143,19 +143,19 @@ Curated, copy-pasteable Prometheus alert rules and guidance for common services 
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Lightweight self-hosted server and container monitoring with alerts, OAuth/OIDC, backups, and REST API.
+Lightweight self-hosted hub-and-agent monitoring for hosts and Docker/Podman containers, with metric history and alerting.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need lightweight host and container metrics, alerts and simple multi-system dashboards without a full observability pipeline.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require full distributed tracing or centralized long-term log analytics; verify agent permissions and hub authentication.
 
-[Official site](https://beszel.dev) · [Source repository](https://github.com/henrygd/beszel)
+[Official site](https://beszel.dev) · [Documentation](https://beszel.dev/guide/getting-started) · [Source repository](https://github.com/henrygd/beszel)
 
 ### Better Stack
 
@@ -491,19 +491,19 @@ Single-container OpenTelemetry backend bundling Grafana, Loki, Tempo, Mimir, and
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Self-hosted real-time Docker and container log viewer with alerting, remote hosts, and Kubernetes support.
+Real-time container log viewer for Docker, Swarm and supported Kubernetes deployments; it does not persist logs.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need immediate live container log inspection on trusted Docker hosts or Kubernetes environments.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need log retention, offline historical search or can not safely expose the Docker socket or sensitive log contents.
 
-[Official site](https://dozzle.dev) · [Source repository](https://github.com/amir20/dozzle)
+[Official site](https://dozzle.dev) · [Documentation](https://dozzle.dev/guide/getting-started) · [Source repository](https://github.com/amir20/dozzle)
 
 ### Dynatrace
 
@@ -626,19 +626,19 @@ CNCF-graduated Ruby-based log-event collector and forwarder with configurable in
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Developer-oriented health dashboard and status page for monitoring endpoints and services.
+Self-hosted endpoint health dashboard with HTTP, TCP, ICMP and DNS checks, status pages and alert integrations.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want declarative synthetic health checks and alert routing for endpoints and basic service status.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require full infrastructure metrics, distributed traces or application profiling; protect probe credentials.
 
-[Official site](https://gatus.io) · [Source repository](https://github.com/TwiN/gatus)
+[Official site](https://gatus.io) · [Documentation](https://github.com/TwiN/gatus/blob/master/README.md) · [Source repository](https://github.com/TwiN/gatus)
 
 ### GlitchTip
 
@@ -897,19 +897,19 @@ AI-powered Kubernetes troubleshooting.
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open-source SRE AI agent for investigating production incidents across Kubernetes, VMs, cloud services, and databases with operator mode for 24/7 background monitoring (CNCF).
+Open-source AI SRE investigation agent integrating Kubernetes, cloud and observability data sources; operator mode needs explicit permissions.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need assisted incident investigation across connected telemetry and Kubernetes resources with reviewed LLM access.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You cannot govern model data sharing, API-token costs, tool permissions or autonomous incident responses.
 
-[Official site](https://holmesgpt.dev/latest) · [Source repository](https://github.com/HolmesGPT/holmesgpt)
+[Official site](https://holmesgpt.dev/latest) · [Documentation](https://holmesgpt.dev/) · [Source repository](https://github.com/HolmesGPT/holmesgpt)
 
 ### Honeycomb
 
@@ -935,19 +935,19 @@ Hosted observability platform for high-cardinality telemetry, distributed tracin
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Observability and troubleshooting platform.
+ClickHouse-backed observability interface for correlating logs, traces, metrics and session replay within ClickStack deployments.
 
 **Use when**
 
-- You want a self-hosted Datadog-like experience with session replay.
+- You want correlated telemetry exploration on ClickHouse with OpenTelemetry collection and session replay.
 
 **Consider alternatives when**
 
-- You need proven large-scale production deployments.
+- You expect the most recent CLI tag to validate server support or cannot maintain the required ClickHouse and collector stack.
 
-[Official site](https://www.hyperdx.io) · [Source repository](https://github.com/hyperdxio/hyperdx)
+[Official site](https://www.hyperdx.io) · [Documentation](https://clickhouse.com/docs/use-cases/observability/clickstack/overview) · [Source repository](https://github.com/hyperdxio/hyperdx)
 
 ### Icinga
 
@@ -1355,19 +1355,19 @@ Observability platform for logs, metrics, and traces with an open-source core an
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Search/analytics engine commonly used for logs (Elastic-alternative fork).
+Apache-licensed distributed search and analytics engine used for log indexing and observability, distinct from Dashboards and ingestion components.
 
 **Use when**
 
-- You need ELK-like capabilities under a true open-source license.
+- You need a distributed search and analytics backend for logs with controllable deployment and storage.
 
 **Consider alternatives when**
 
-- You're happy with Elastic's licensing, as plugin/feature parity may lag.
+- You assume full Elasticsearch or plugin feature compatibility or cannot manage storage, cluster security and upgrades.
 
-[Official site](https://opensearch.org) · [Source repository](https://github.com/opensearch-project/OpenSearch)
+[Official site](https://opensearch.org) · [Documentation](https://docs.opensearch.org/latest/) · [Source repository](https://github.com/opensearch-project/OpenSearch)
 
 ### OpenTelemetry
 
@@ -1529,19 +1529,19 @@ Metrics cache that accepts pushed metrics from short-lived and batch jobs for Pr
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Distributed log search/indexing built around fast ingestion and cost control.
+Cloud-native distributed log and trace search engine using object storage and decoupled indexing and search.
 
 **Use when**
 
-- Cost-efficient log search on object storage with sub-second latency.
+- You need logs or traces search on object storage and can operate its ingestion and query components.
 
 **Consider alternatives when**
 
-- You need the broad ecosystem and maturity of Elasticsearch/OpenSearch.
+- You need a turnkey metrics platform, universal Elasticsearch compatibility or unverified latency/availability guarantees.
 
-[Official site](https://quickwit.io) · [Source repository](https://github.com/quickwit-oss/quickwit)
+[Official site](https://quickwit.io) · [Documentation](https://quickwit.io/docs/main-branch) · [Source repository](https://github.com/quickwit-oss/quickwit)
 
 ### Robusta
 
@@ -1662,19 +1662,19 @@ Error monitoring with performance/tracing features (popular for app-level APM si
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open-source observability platform.
+OpenTelemetry-native observability platform for logs, metrics and traces, with MIT community code and separately restricted Enterprise components.
 
 **Use when**
 
-- Self-hosted Datadog alternative with OTel-native traces, metrics, and logs.
+- You need self-hosted correlated metrics, logs, tracing and dashboards and can manage ClickHouse-based infrastructure.
 
 **Consider alternatives when**
 
-- You lack capacity to run ClickHouse-based infra.
+- You assume Enterprise features are MIT licensed or need a small-footprint stack without ClickHouse operations.
 
-[Official site](https://signoz.io) · [Source repository](https://github.com/SigNoz/signoz)
+[Official site](https://signoz.io) · [Documentation](https://signoz.io/docs/install/self-host/) · [Source repository](https://github.com/SigNoz/signoz)
 
 ### Site24x7
 
@@ -1799,17 +1799,17 @@ Open-source components extending Prometheus with high availability, deduplicated
 **Model:** Open Core<br>
 **Status:** Needs Review
 
-Trace-based testing for distributed systems.
+Trace-based integration testing using OpenTelemetry, with mixed MIT/Tracetest Community licensing and unclear current support.
 
 **Use when**
 
-- Writing integration tests that assert on distributed trace structure.
+- You are evaluating assertions against distributed traces for integration and end-to-end tests.
 
 **Consider alternatives when**
 
-- Traditional API/contract testing already gives sufficient coverage.
+- You require a clearly maintained and uniformly permissive production tool; source files have different license grants.
 
-[Official site](https://tracetest.io) · [Source repository](https://github.com/kubeshop/tracetest)
+[Official site](https://tracetest.io) · [Documentation](https://docs.tracetest.io/) · [Source repository](https://github.com/kubeshop/tracetest)
 
 ### Uptime Kuma
 
@@ -1952,16 +1952,16 @@ Enterprise-grade monitoring platform (metrics, triggers, dashboards).
 **Categories:** Monitoring, metrics, logs and tracing<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Observability Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Distributed tracing system.
+Open-source distributed tracing collector and UI for investigating service latency and dependencies using pluggable storage.
 
 **Use when**
 
-- Simple, lightweight distributed tracing for Java-centric stacks.
+- You need a distributed trace collector and query UI with supported Zipkin ingestion and storage.
 
 **Consider alternatives when**
 
-- Jaeger or OTel Collector already serves as your tracing backend.
+- You expect automatic application instrumentation or guaranteed parity with Jaeger and OpenTelemetry-native backends.
 
-[Official site](https://zipkin.io) · [Source repository](https://github.com/openzipkin/zipkin)
+[Official site](https://zipkin.io) · [Documentation](https://zipkin.io/pages/quickstart) · [Source repository](https://github.com/openzipkin/zipkin)
