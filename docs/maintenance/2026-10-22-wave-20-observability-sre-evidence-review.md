@@ -2,7 +2,7 @@
 
 **Reviewed:** 2026-10-22. **Main baseline:** `0af956384ed33211352b249cf4c1f0d84795e168`. **PR:** [#130](https://github.com/goozcena-gnl/devops-tools-catalog/pull/130). **Issue:** [#129](https://github.com/goozcena-gnl/devops-tools-catalog/issues/129).
 
-The initial draft at `ba21b208b921b341e85af992119ade8756875bdf` was independently rechecked against official documentation, upstream licence grants and source headers, and release metadata. All ten existing canonical IDs remain in scope; no IDs were added or removed. **Seven CLEAR decisions, three RETAIN REVIEW decisions.** Canonical inventory remains 1,425 across 30 categories; review debt 647 → 640 and active records 764 → 771. CLEAR describes the evidence decision, not approval to merge: **PR #130 must remain Draft.**
+The initial draft at `ba21b208b921b341e85af992119ade8756875bdf` was independently rechecked against official documentation, upstream licence grants and source headers, and release metadata. All ten existing canonical IDs remain in scope; no IDs were added or removed. **Seven CLEAR decisions, three RETAIN REVIEW decisions.** Canonical inventory remains 1,425 across 30 categories; review debt 647 → 640 and active records 764 → 771. CLEAR describes the evidence decision, not permission to merge: **PR #130 must remain unmerged until human approval.**
 
 ## Independent field-level decisions and evidence
 
@@ -33,7 +33,7 @@ The [v3.12.1 README](https://github.com/influxdata/influxdb/blob/v3.12.1/README.
 
 ### Netdata Cloud — service, Agent, UI and On-Premises
 
-The [tagged architecture and licence table](https://github.com/netdata/netdata/blob/v2.12.1/README.md) assigns GPLv3+ to the Agent, identifies Cloud separately, and links the [NCUL1 UI terms](https://app.netdata.cloud/LICENSE.txt), which restrict use to Netdata components and do not grant a general open-source UI licence. [Cloud SaaS](https://www.netdata.cloud/product/netdata-cloud-saas/) documents a control plane with telemetry retained on Agents/Parents. [Pricing](https://www.netdata.cloud/pricing/) confirms a personal/non-commercial Community free tier and paid plans; `free-saas` plus `commercial_offering: true` describes the hosted entry, without applying Agent GPL to Cloud. The initial statement implying Cloud cannot be self-hosted was incorrect: [commercial Cloud On-Premises](https://www.netdata.cloud/product/cloud-on-premises/) explicitly supports private and air-gapped deployment. Summary and avoidance criteria now acknowledge that separate option. No single Cloud SPDX is asserted. Agent [v2.12.1](https://github.com/netdata/netdata/releases/tag/v2.12.1) and its archive flag apply to the linked Agent repository, not the proprietary Cloud implementation.
+The [tagged architecture and licence table](https://github.com/netdata/netdata/blob/v2.12.1/README.md) assigns GPLv3+ to the Agent, identifies Cloud separately, and links the [NCUL1 UI terms](https://app.netdata.cloud/LICENSE.txt), which restrict use to Netdata components and do not grant a general open-source UI licence. [Cloud SaaS](https://www.netdata.cloud/product/netdata-cloud-saas/) documents a control plane with telemetry retained on Agents/Parents. [Pricing](https://www.netdata.cloud/pricing/) confirms a personal/non-commercial Community free tier and paid plans; `free-saas` plus `commercial_offering: true` describes the hosted entry, without applying Agent GPL to Cloud. The initial statement implying Cloud cannot be self-hosted was incorrect: [commercial Cloud On-Premises](https://www.netdata.cloud/product/cloud-on-premises/) explicitly supports private and air-gapped deployment. Summary and avoidance criteria now acknowledge that separate option. No single Cloud SPDX is asserted. Agent [v2.12.1](https://github.com/netdata/netdata/releases/tag/v2.12.1) and its archive flag apply to the distinct Agent repository, cited only as primary supporting evidence instead of the Cloud service's canonical source.
 
 ### Sentry — current restriction and version-specific future grant
 
@@ -133,9 +133,10 @@ Every changed canonical field is represented below, with full list values and no
 
 | Field | Before | After |
 |---|---|---|
+| `repository_url` | `"https://github.com/netdata/netdata"` | ∅ |
 | `summary` | `"SaaS control plane for Netdata (Netdata Agent is open-source; Cloud adds centralized management/collaboration)."` | `"Netdata Cloud's proprietary hosted control plane has a personal non-commercial free tier and paid plans; telemetry stays on separate GPL-3.0-or-later Agents and Parents. The UI uses NCUL1, and commercial Cloud On-Premises is a separate deployment option."` |
 | `use_when` | `["You want per-second granularity with near-zero config."]` | `["You need hosted access and collaborative monitoring across agents and accept Netdata Cloud account and network dependencies."]` |
-| `avoid_when` | `["Long-term storage or complex cross-service correlation is the main goal."]` | `["You require an entirely OSI-licensed Cloud service and UI; the Agent's GPL licence does not cover either.", "You need an air-gapped control plane without evaluating commercial Cloud On-Premises, or cannot approve Cloud data flows and plan limits; the linked source repository contains the Agent, not Cloud."]` |
+| `avoid_when` | `["Long-term storage or complex cross-service correlation is the main goal."]` | `["You require an entirely OSI-licensed Cloud service and UI; the Agent's GPL licence does not cover either.", "You need an air-gapped control plane without evaluating commercial Cloud On-Premises, or cannot approve Cloud data flows and plan limits; Netdata Agent's repository is cited only as supporting evidence, not as the source for Cloud."]` |
 | `license_model` | `"open-core"` | `"free-saas"` |
 | `maturity` | `"unknown"` | `"established"` |
 | `status` | `"needs-review"` | `"active"` |
@@ -144,7 +145,6 @@ Every changed canonical field is represented below, with full list values and no
 | `needs_review` | `true` | `false` |
 | `commercial_offering` | ∅ | `true` |
 | `documentation_url` | ∅ | `"https://learn.netdata.cloud/"` |
-| `repository_archived` | ∅ | `false` |
 
 ### `rsyslog`
 
@@ -199,6 +199,14 @@ Every changed canonical field is represented below, with full list values and no
 | `documentation_url` | ∅ | `"https://www.zabbix.com/documentation/current/en/manual"` |
 | `repository_archived` | ∅ | `false` |
 
+## Codex P2 — Netdata Cloud canonical-source identity correction (2026-10-22)
+
+The [Codex P2 review](https://github.com/goozcena-gnl/devops-tools-catalog/pull/130#discussion_r4352753900) identified a product/component identity mismatch: `netdata-cloud` describes proprietary Netdata Cloud but its historical `repository_url` linked the separate GPL-licensed Netdata Agent repository. Since generated docs label `repository_url` as **Source repository**, the original entry misidentified Cloud's source.
+
+**Correction:** remove `repository_url: https://github.com/netdata/netdata` and remove `repository_archived: false` from the Cloud product record. The Netdata Agent README, licence and release references are **retained in `sources`** with their existing URLs because they explain the Agent dependency and grant. The Cloud `official_url`, `documentation_url`, `free-saas` licence offering, commercial flag and reviewed status remain intact, and the `avoid_when` text now accurately describes the Agent evidence boundary. No unsupported Cloud source repository or licensing grant is invented. The category detail no longer includes an Agent **Source repository** link.
+
+The full baseline-to-final ledger above includes the removal of `repository_url` (baseline Agent link to absent), while omitting the introduced-then-removed `repository_archived` field; this keeps the ledger consistent with canonical YAML. Changes to other nine Wave 20 IDs, review debt, baseline URL exceptions and any historic migration artefacts are prohibited. Run the *real* generator and full validation independently; this corrective commit invalidates the earlier exact-SHA audit and CI as final-head evidence.
+
 ## CI correction, generation and validation
 
 The initial CI run failed on two demonstrated issues: generated documentation was stale, and `tests/test_v060_review_batch_07.py` froze rsyslog's review date at 2026-10-04. The historical test now permits exactly rsyslog's evidenced 2026-10-22 follow-up while preserving all other dates, licence assertions and retained uncertainty. No validation was disabled or generalized to accept arbitrary future dates.
@@ -227,4 +235,4 @@ After all CI checks pass, dispatch the existing strict Full link audit on the fi
 
 - Elastic Stack component/distribution licensing, rsyslog aggregate licensing and Tracetest current support/per-file terms remain open, with `needs_review: true` and `status: needs-review` on all three records.
 - Six historical URL blockers remain tracked by [issue #2](https://github.com/goozcena-gnl/devops-tools-catalog/issues/2): `https://github.com/hoji-ai/hoji`, `https://github.com/ophircloud/DevOps-Projects`, `https://hub.docker.com/r/soosio/dast`, `https://kubeflame.github.io`, `https://www.opentext.com/products/static-application-security-testing`, `https://www.yotascale.com`. The baseline is unchanged.
-- Keep PR #130 **Draft**, and issues #129 and #2 open. Do not merge, auto-merge, tag, release or alter branch protections. Completion of technical gates does not authorize any of those actions.
+- Keep PR #130 **unmerged** until human approval, and issues #129 and #2 open. Do not merge, auto-merge, tag, release or alter branch protections. Completion of technical gates does not authorize any of those actions.
