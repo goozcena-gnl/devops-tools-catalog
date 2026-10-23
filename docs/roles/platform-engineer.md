@@ -86,7 +86,7 @@
 | [Cast AI](https://cast.ai) | FinOps and sustainability | commercial | active |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | active |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
-| [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | needs-review |
+| [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | active |
 | [Ceph](https://ceph.io/en) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [CertGames](https://certgames.com/) | Documentation, learning and career resources | documentation | needs-review |
@@ -152,7 +152,7 @@
 | [Docker](https://www.docker.com) | Containers and image tooling, Developer experience and local environments | open-core | active |
 | [Docker Agent](https://docker.github.io/docker-agent/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Docker Build](https://docs.docker.com/build/) | Containers and image tooling | unknown | needs-review |
-| [Docker Buildx](https://github.com/docker/buildx) | Containers and image tooling | oss | needs-review |
+| [Docker Buildx](https://github.com/docker/buildx) | Containers and image tooling | oss | active |
 | [Docker Compose](https://docs.docker.com/compose/) | Containers and image tooling, Developer experience and local environments | oss | active |
 | [Docker Hub MCP](https://hub.docker.com/mcp) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Docker MCP Gateway](https://github.com/docker/mcp-gateway) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -301,7 +301,7 @@
 | [Kindling](https://mykindling.io/get-kindling) | Documentation, learning and career resources | unknown | needs-review |
 | [Kion FinOps+](https://kion.io/platform/) | FinOps and sustainability | commercial | active |
 | [Knative](https://knative.dev/) | Serverless, edge and WebAssembly | oss | active |
-| [Ko](https://ko.build) | Containers and image tooling | oss | needs-review |
+| [Ko](https://ko.build) | Containers and image tooling | oss | active |
 | [KodeKloud](https://kodekloud.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Kogaro](https://github.com/topiaruss/kogaro) | Kubernetes distributions and operations | oss | needs-review |
 | [Komodor](https://komodor.com) | SRE, incident response and on-call, Monitoring, metrics, logs and tracing, FinOps and sustainability | commercial | active |
@@ -537,7 +537,7 @@
 | [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [sk8r](https://github.com/mvklingeren/sk8r) | Kubernetes distributions and operations | oss | needs-review |
 | [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
-| [Skopeo](https://github.com/containers/skopeo) | Containers and image tooling | oss | needs-review |
+| [Skopeo](https://github.com/podman-container-tools/skopeo) | Containers and image tooling | oss | active |
 | [Skupper](https://skupper.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Snip](https://github.com/edouard-claude/snip) | Emerging and experimental tools | oss | needs-review |
 | [Snipe-IT](https://snipeitapp.com/) | Policy, governance and compliance | open-core | active |
@@ -603,7 +603,7 @@
 | [Waypoint](https://developer.hashicorp.com/waypoint) | CD, GitOps, release and promotion | source-available | needs-review |
 | [Weaveworks GitOps](https://docs.gitops.weaveworks.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [webernetes](https://github.com/ngrok/webernetes) | Kubernetes distributions and operations | oss | needs-review |
-| [werf](https://werf.io) | Containers and image tooling | oss | needs-review |
+| [werf](https://werf.io) | Containers and image tooling | oss | active |
 | [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
 | [WSO2 API Platform](https://wso2.com/api-platform/) | Kubernetes networking, storage and add-ons | oss | active |
 | [XCP-ng](https://xcp-ng.org/) | Virtualization, bare metal and homelab | oss | active |

@@ -48,9 +48,9 @@ Moby build-execution toolkit and backend for concurrent, cache-efficient builds,
 **Categories:** Containers and image tooling<br>
 **Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Inspect OCI image filesystems and layers without running containers.
+Read-only exploration of OCI container-image filesystem contents and layers without executing containers.
 
 **Use when**
 
@@ -107,7 +107,7 @@ OCI container runtime implemented in C for running Linux containers.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Minimal container images for secure deployments.
+Minimal runtime container images without a shell or package manager in standard variants; separately published debug variants support troubleshooting.
 
 **Use when**
 
@@ -116,6 +116,7 @@ Minimal container images for secure deployments.
 **Consider alternatives when**
 
 - * You need to exec into containers for debugging or require OS-level packages at runtime.
+- You assume the source repository's Apache-2.0 licence covers every image layer and runtime dependency.
 
 [Source repository](https://github.com/GoogleContainerTools/distroless)
 
@@ -164,7 +165,7 @@ Product ecosystem for developing, building, distributing, and running applicatio
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Umbrella Docker image-build feature implemented through the separately catalogued Docker Buildx client and BuildKit backend.
+Documentation umbrella for Docker image building: Buildx is the CLI client and BuildKit its execution backend; not a separate source repository or licence grant.
 
 **Use when**
 
@@ -181,9 +182,9 @@ Umbrella Docker image-build feature implemented through the separately catalogue
 **Categories:** Containers and image tooling<br>
 **Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Docker CLI plugin for extended build capabilities.
+Docker CLI build client for BuildKit, supporting configurable builders, multi-platform images and external build caches.
 
 **Use when**
 
@@ -240,7 +241,7 @@ Fully managed Docker service for building and running containers in cloud comput
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Build automation framework.
+Dockerfile-like build orchestration CLI; upstream ended active OSS maintenance in April 2025 and retired its Cloud/Satellite services in July 2025.
 
 **Use when**
 
@@ -249,6 +250,7 @@ Build automation framework.
 **Consider alternatives when**
 
 - * Your team already has a well-tuned build system and doesn't need another abstraction layer.
+- You require actively maintained OSS builds or the discontinued Earthly Cloud/Satellite services.
 
 [Official site](https://earthly.dev) · [Source repository](https://github.com/earthly/earthly)
 
@@ -296,9 +298,9 @@ Build container images in Kubernetes without Docker daemon.
 **Categories:** Containers and image tooling<br>
 **Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Build Go apps into container images.
+Build and publish Go application OCI images without writing Dockerfiles; publishes SBOMs by default in supported releases.
 
 **Use when**
 
@@ -317,7 +319,7 @@ Build Go apps into container images.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Reproducible build and package manager.
+Functional, reproducible package manager and build system; distinct from NixOS/nixpkgs and not a standalone OCI image builder.
 
 **Use when**
 
@@ -355,7 +357,7 @@ Interactive build tool for Scala, Java, and other JVM projects.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Framework for building container images on Kubernetes.
+Kubernetes-native image-build orchestration using Build and BuildRun resources and pluggable build strategies backed by Tekton.
 
 **Use when**
 
@@ -391,9 +393,9 @@ Client-side container-development CLI for build, test, push, deploy and debug lo
 **Categories:** Containers and image tooling<br>
 **Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Daemonless tool to inspect, copy, sign, and sync container images across registries and local stores.
+Daemonless tool to inspect, copy and synchronize remote OCI/container images and registries without building or running images.
 
 **Use when**
 
@@ -403,16 +405,16 @@ Daemonless tool to inspect, copy, sign, and sync container images across registr
 
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
-[Source repository](https://github.com/containers/skopeo)
+[Source repository](https://github.com/podman-container-tools/skopeo)
 
 ### werf
 
 **Categories:** Containers and image tooling<br>
 **Roles:** DevOps Engineer, Platform Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-GitOps tool for building and deploying containers.
+Git-driven Kubernetes delivery tool combining container-image builds, deployment and Helm-based release workflows.
 
 **Use when**
 

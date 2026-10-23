@@ -52,7 +52,7 @@
 - [cargo-deny](https://github.com/EmbarkStudios/cargo-deny) — Cargo dependency policy checker for advisories, licences, sources, and banned packages.
 - [cargo-vet](https://mozilla.github.io/cargo-vet/) — Tool for recording and enforcing human audits of Rust dependencies.
 - [cdk8s](https://cdk8s.io) — Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python, Java or Go; deployment is performed by separate tools.
-- [cek](https://github.com/bschaatsbergen/cek) — Inspect OCI image filesystems and layers without running containers.
+- [cek](https://github.com/bschaatsbergen/cek) — Read-only exploration of OCI container-image filesystem contents and layers without executing containers.
 - [CircleCI](https://circleci.com) — Commercial CI/CD platform offered as a managed cloud service or self-hosted CircleCI Server, with optional self-hosted runners.
 - [Cloud Run functions](https://cloud.google.com/functions) — Managed event-driven functions deployed on the unified Google Cloud Run platform.
 - [CloudBees CI](https://docs.cloudbees.com/docs/cloudbees-ci/latest/) — Commercial Jenkins-based continuous integration product with proprietary controller management, governance and enterprise support.
@@ -75,12 +75,12 @@
 - [Dependency-Track](https://dependencytrack.org) — OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
 - [Devtron](https://devtron.ai) — Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations, plus separately offered commercial platform capabilities.
 - [dist (cargo-dist)](https://github.com/axodotdev/cargo-dist) — Release automation for building and distributing application binaries and installers.
-- [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal container images for secure deployments.
+- [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal runtime container images without a shell or package manager in standard variants; separately published debug variants support troubleshooting.
 - [dive](https://github.com/wagoodman/dive) — Command-line and terminal user interface for inspecting image layers and their contribution to container image contents.
 - [Docker](https://www.docker.com) — Product ecosystem for developing, building, distributing, and running application containers.
 - [Docker Agent](https://docker.github.io/docker-agent/) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
-- [Docker Build](https://docs.docker.com/build/) — Umbrella Docker image-build feature implemented through the separately catalogued Docker Buildx client and BuildKit backend.
-- [Docker Buildx](https://github.com/docker/buildx) — Docker CLI plugin for extended build capabilities.
+- [Docker Build](https://docs.docker.com/build/) — Documentation umbrella for Docker image building: Buildx is the CLI client and BuildKit its execution backend; not a separate source repository or licence grant.
+- [Docker Buildx](https://github.com/docker/buildx) — Docker CLI build client for BuildKit, supporting configurable builders, multi-platform images and external build caches.
 - [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) — Docker-maintained catalog of minimal, hardened container images, Helm charts, and system packages with community and paid tiers.
 - [Docker Hub](https://www.docker.com/products/docker-hub) — Hosted container registry and discovery service for publishing, sharing, and pulling container images.
 - [Docker Hub MCP](https://hub.docker.com/mcp) — Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
@@ -88,7 +88,7 @@
 - [Docker Offload](https://www.docker.com/products/docker-offload) — Fully managed Docker service for building and running containers in cloud compute through Docker Desktop workflows.
 - [Docling](https://docling.ai/) — Document conversion toolkit that extracts structured content for downstream data and AI pipelines.
 - [Drone](https://www.drone.io) — Container-native CI/CD platform.
-- [Earthly](https://earthly.dev) — Build automation framework.
+- [Earthly](https://earthly.dev) — Dockerfile-like build orchestration CLI; upstream ended active OSS maintenance in April 2025 and retired its Cloud/Satellite services in July 2025.
 - [ecc.tools](https://ecc.tools) — OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
 - [env zero](https://www.envzero.com/) — Commercial infrastructure-as-code control platform for self-service environments, workflow automation, policy, governance, and cloud-cost management.
 - [Evidently](https://github.com/evidentlyai/evidently) — Open-source evaluation and monitoring framework for ML and AI systems.
@@ -140,7 +140,7 @@
 - [Kelos](https://github.com/kelos-dev/kelos) — Kubernetes-native framework for orchestrating autonomous AI coding agents.
 - [KICS](https://kics.io) — IaC scanning for security issues.
 - [Knative](https://knative.dev/) — Kubernetes-based platform APIs for deploying, scaling, and delivering serverless workloads and events.
-- [Ko](https://ko.build) — Build Go apps into container images.
+- [Ko](https://ko.build) — Build and publish Go application OCI images without writing Dockerfiles; publishes SBOMs by default in supported releases.
 - [KServe](https://kserve.github.io/website) — Model serving on Kubernetes.
 - [Kthena](https://kthena.volcano.sh) — Kubernetes-native AI serving platform for scalable multi-model deployment, routing, and intelligent auto-scaling.
 - [Kube Copilot](https://github.com/feiskyer/kube-copilot) — AI assistant for Kubernetes operations.
@@ -178,7 +178,7 @@
 - [Nautobot](https://docs.nautobot.com/) — Network source-of-truth and automation platform with extensible data models and application plugins.
 - [Nektos Act](https://nektosact.com) — MIT-licensed community CLI for running selected GitHub Actions workflows locally, commonly with Docker, with documented differences from GitHub's official runners.
 - [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) — Sonatype artifact repository family with open-source Core, separately licensed Community and Professional editions, and managed Cloud hosting.
-- [Nix](https://nixos.org) — Reproducible build and package manager.
+- [Nix](https://nixos.org) — Functional, reproducible package manager and build system; distinct from NixOS/nixpkgs and not a standalone OCI image builder.
 - [Node.js](https://nodejs.org/en) — Cross-platform JavaScript runtime used to build command-line tools, services, and automation.
 - [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) — NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
 - [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) — NVIDIA AI cloud environment, currently described as an internal proving ground, with separately documented Run:ai on DGX Cloud managed subscriptions.
@@ -226,11 +226,11 @@
 - [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) — Enforce semantic PR titles in GitHub Actions.
 - [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
 - [ServerSpec](https://serverspec.org) — Test server configurations using RSpec.
-- [Shipwright](https://shipwright.io) — Framework for building container images on Kubernetes.
+- [Shipwright](https://shipwright.io) — Kubernetes-native image-build orchestration using Build and BuildRun resources and pluggable build strategies backed by Tekton.
 - [Sim](https://www.sim.ai) — AI workspace for building, deploying, and monitoring agentic workflows.
 - [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Lightweight Git hooks manager for Node.js.
 - [Skaffold](https://skaffold.dev) — Client-side container-development CLI for build, test, push, deploy and debug loops with Kubernetes and other supported targets; upstream plans repository archival on 29 January 2027.
-- [Skopeo](https://github.com/containers/skopeo) — Daemonless tool to inspect, copy, sign, and sync container images across registries and local stores.
+- [Skopeo](https://github.com/podman-container-tools/skopeo) — Daemonless tool to inspect, copy and synchronize remote OCI/container images and registries without building or running images.
 - [Spin](https://spinframework.dev) — Framework for building and running serverless WebAssembly applications.
 - [Stakpak](https://stakpak.dev) — Autonomous AI agent for production operations running 24/7 on your machines to auto-heal incidents, manage costs, and monitor infrastructure (Apache-2.0).
 - [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) — Stategraph Orchestration, formerly Terrateam, automates Terraform/OpenTofu plans and applies through GitHub or GitLab pull requests and CI runners. Its MPL-2.0 open-source core is distinct from commercial Enterprise, hosted services and Stategraph Infrastructure as a Database.
@@ -262,7 +262,7 @@
 - [Vitest](https://vitest.dev) — Blazing fast Vite-native unit testing framework.
 - [VoltAgent](https://voltagent.dev) — Open-source TypeScript framework for building AI agents.
 - [webpack](https://webpack.js.org/) — JavaScript module bundler with code splitting and a plugin-based build pipeline.
-- [werf](https://werf.io) — GitOps tool for building and deploying containers.
+- [werf](https://werf.io) — Git-driven Kubernetes delivery tool combining container-image builds, deployment and Helm-based release workflows.
 - [Woodpecker CI](https://woodpecker-ci.org) — Apache-2.0 self-hosted CI/CD engine with a server and agents, forge integration and backend-dependent Docker, Kubernetes or local execution.
 - [Xray](https://www.getxray.app) — Test management for Jira (manual + automated tests).
 - [Yarn](https://yarnpkg.com/) — JavaScript package manager with lockfiles, workspaces, and configurable dependency-installation modes.

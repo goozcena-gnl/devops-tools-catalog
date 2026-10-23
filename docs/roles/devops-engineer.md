@@ -119,7 +119,7 @@
 | [CC Switch](https://ccswitch.io/en) | Developer experience and local environments | oss | active |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | active |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
-| [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | needs-review |
+| [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | active |
 | [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [CertGames](https://certgames.com/) | Documentation, learning and career resources | documentation | needs-review |
 | [CFEngine](https://cfengine.com) | Configuration management | open-core | needs-review |
@@ -205,7 +205,7 @@
 | [dive](https://github.com/wagoodman/dive) | Containers and image tooling | oss | active |
 | [Docker](https://www.docker.com) | Containers and image tooling, Developer experience and local environments | open-core | active |
 | [Docker Build](https://docs.docker.com/build/) | Containers and image tooling | unknown | needs-review |
-| [Docker Buildx](https://github.com/docker/buildx) | Containers and image tooling | oss | needs-review |
+| [Docker Buildx](https://github.com/docker/buildx) | Containers and image tooling | oss | active |
 | [Docker Compose](https://docs.docker.com/compose/) | Containers and image tooling, Developer experience and local environments | oss | active |
 | [Docker Desktop](https://www.docker.com/products/docker-desktop) | Virtualization, bare metal and homelab | commercial | active |
 | [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | open-core | active |
@@ -371,7 +371,7 @@
 | [Kindling](https://mykindling.io/get-kindling) | Documentation, learning and career resources | unknown | needs-review |
 | [kitty](https://sw.kovidgoyal.net/kitty/) | Developer experience and local environments | oss | active |
 | [Knative](https://knative.dev/) | Serverless, edge and WebAssembly | oss | active |
-| [Ko](https://ko.build) | Containers and image tooling | oss | needs-review |
+| [Ko](https://ko.build) | Containers and image tooling | oss | active |
 | [KodeKloud](https://kodekloud.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Kolla-Ansible](https://docs.openstack.org/kolla-ansible/latest) | Configuration management | oss | needs-review |
 | [Komodo](https://komo.do/) | Virtualization, bare metal and homelab | oss | active |
@@ -592,7 +592,7 @@
 | [SigNoz](https://signoz.io) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Site24x7](https://www.site24x7.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
-| [Skopeo](https://github.com/containers/skopeo) | Containers and image tooling | oss | needs-review |
+| [Skopeo](https://github.com/podman-container-tools/skopeo) | Containers and image tooling | oss | active |
 | [Slack](https://slack.com/) | Workflow automation and ChatOps | commercial | active |
 | [Snip](https://github.com/edouard-claude/snip) | Emerging and experimental tools | oss | needs-review |
 | [Snorlax](https://github.com/moonbeam-nyc/snorlax) | Emerging and experimental tools | oss | needs-review |
@@ -686,7 +686,7 @@
 | [Webmin](https://webmin.com/) | Configuration management | oss | active |
 | [webpack](https://webpack.js.org/) | CI, build and testing | oss | active |
 | [WeKan](https://wekan.fi) | Workflow automation and ChatOps | oss | needs-review |
-| [werf](https://werf.io) | Containers and image tooling | oss | needs-review |
+| [werf](https://werf.io) | Containers and image tooling | oss | active |
 | [WezTerm](https://wezterm.org) | Developer experience and local environments | oss | needs-review |
 | [WinApps](https://github.com/winapps-org/winapps) | Developer experience and local environments | oss | needs-review |
 | [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | needs-review |

@@ -31,7 +31,7 @@
 | [Carvel ytt](https://carvel.dev/ytt) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CasaVue](https://casavue.app) | Kubernetes distributions and operations | oss | active |
 | [cdk8s](https://cdk8s.io) | Infrastructure as Code | oss | active |
-| [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | needs-review |
+| [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | active |
 | [Ceph](https://ceph.io/en) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [cert-manager](https://cert-manager.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Chisel Operator](https://chisel.fyralabs.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -57,7 +57,7 @@
 | [Desktop Kubernetes](https://aceeric.github.io/desktop-kubernetes) | Kubernetes distributions and operations | oss | needs-review |
 | [Distroless](https://github.com/GoogleContainerTools/distroless) | Containers and image tooling | oss | needs-review |
 | [Docker Build](https://docs.docker.com/build/) | Containers and image tooling | unknown | needs-review |
-| [Docker Buildx](https://github.com/docker/buildx) | Containers and image tooling | oss | needs-review |
+| [Docker Buildx](https://github.com/docker/buildx) | Containers and image tooling | oss | active |
 | [Docker Offload](https://www.docker.com/products/docker-offload) | Containers and image tooling | commercial | active |
 | [Docker Swarm](https://docs.docker.com/engine/swarm) | Kubernetes distributions and operations | unknown | needs-review |
 | [dotnet-operator-sdk](https://dotnet.github.io/dotnet-operator-sdk) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -143,7 +143,7 @@
 | [kind](https://kind.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Klarity](https://github.com/selvarajmurugesan90/klarity) | Monitoring, metrics, logs and tracing, Emerging and experimental tools | oss | active |
 | [Kloak](https://getkloak.io/) | Application and cloud security, Emerging and experimental tools | oss | active |
-| [Ko](https://ko.build) | Containers and image tooling | oss | needs-review |
+| [Ko](https://ko.build) | Containers and image tooling | oss | active |
 | [Kogaro](https://github.com/topiaruss/kogaro) | Kubernetes distributions and operations | oss | needs-review |
 | [Kompose](https://kompose.io) | Kubernetes distributions and operations | oss | active |
 | [Kong Gateway](https://developer.konghq.com/gateway/install/) | Kubernetes networking, storage and add-ons | open-core | active |
@@ -290,7 +290,7 @@
 | [Shipwright](https://shipwright.io) | Containers and image tooling | oss | needs-review |
 | [sk8r](https://github.com/mvklingeren/sk8r) | Kubernetes distributions and operations | oss | needs-review |
 | [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
-| [Skopeo](https://github.com/containers/skopeo) | Containers and image tooling | oss | needs-review |
+| [Skopeo](https://github.com/podman-container-tools/skopeo) | Containers and image tooling | oss | active |
 | [Skupper](https://skupper.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Slok](https://github.com/slok-operator/slok) | Monitoring, metrics, logs and tracing, SRE, incident response and on-call | oss | active |
 | [sofka](https://sofka.rs/) | Kubernetes distributions and operations | oss | active |
@@ -315,7 +315,7 @@
 | [Vitess](https://vitess.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [webernetes](https://github.com/ngrok/webernetes) | Kubernetes distributions and operations | oss | needs-review |
-| [werf](https://werf.io) | Containers and image tooling | oss | needs-review |
+| [werf](https://werf.io) | Containers and image tooling | oss | active |
 | [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
 | [YAML](https://yaml.org) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [zeropod](https://github.com/ctrox/zeropod) | Kubernetes networking, storage and add-ons | oss | needs-review |

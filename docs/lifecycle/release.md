@@ -16,7 +16,7 @@
 - [Bunnyshell](https://www.bunnyshell.com) — Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven by environment-as-code workflows.
 - [Caddy](https://caddyserver.com) — Extensible web server and reverse proxy with automatic HTTPS.
 - [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) — Rust library API compatibility checker for detecting semantic-versioning violations.
-- [cek](https://github.com/bschaatsbergen/cek) — Inspect OCI image filesystems and layers without running containers.
+- [cek](https://github.com/bschaatsbergen/cek) — Read-only exploration of OCI container-image filesystem contents and layers without executing containers.
 - [Cloudsmith](https://cloudsmith.com/) — Managed multi-format package and artifact repository service with access controls and supply-chain features.
 - [ContainerYard](https://github.com/mcmah309/containeryard) — Tool for composing reusable modules into generated Containerfiles.
 - [Convox](https://www.convox.com) — Platform for deploying and managing containers.
@@ -25,15 +25,15 @@
 - [Dependency-Track](https://dependencytrack.org) — OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
 - [Devtron](https://devtron.ai) — Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations, plus separately offered commercial platform capabilities.
 - [dist (cargo-dist)](https://github.com/axodotdev/cargo-dist) — Release automation for building and distributing application binaries and installers.
-- [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal container images for secure deployments.
+- [Distroless](https://github.com/GoogleContainerTools/distroless) — Minimal runtime container images without a shell or package manager in standard variants; separately published debug variants support troubleshooting.
 - [Docker](https://www.docker.com) — Product ecosystem for developing, building, distributing, and running application containers.
-- [Docker Build](https://docs.docker.com/build/) — Umbrella Docker image-build feature implemented through the separately catalogued Docker Buildx client and BuildKit backend.
-- [Docker Buildx](https://github.com/docker/buildx) — Docker CLI plugin for extended build capabilities.
+- [Docker Build](https://docs.docker.com/build/) — Documentation umbrella for Docker image building: Buildx is the CLI client and BuildKit its execution backend; not a separate source repository or licence grant.
+- [Docker Buildx](https://github.com/docker/buildx) — Docker CLI build client for BuildKit, supporting configurable builders, multi-platform images and external build caches.
 - [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) — Docker-maintained catalog of minimal, hardened container images, Helm charts, and system packages with community and paid tiers.
 - [Docker Hub](https://www.docker.com/products/docker-hub) — Hosted container registry and discovery service for publishing, sharing, and pulling container images.
 - [Docker Offload](https://www.docker.com/products/docker-offload) — Fully managed Docker service for building and running containers in cloud compute through Docker Desktop workflows.
 - [Dokku](https://dokku.com) — PaaS for deploying apps using Docker.
-- [Earthly](https://earthly.dev) — Build automation framework.
+- [Earthly](https://earthly.dev) — Dockerfile-like build orchestration CLI; upstream ended active OSS maintenance in April 2025 and retired its Cloud/Satellite services in July 2025.
 - [Flux](https://fluxcd.io) — Open and extensible GitOps toolkit for Kubernetes.
 - [Flux Operator](https://fluxoperator.dev) — ControlPlane-maintained Kubernetes operator installing, configuring and upgrading Flux CD instances through FluxInstance resources, with additional self-service APIs. Its AGPL-3.0 software is separate from Flux CD core and commercial ControlPlane distribution/support terms.
 - [flux9s](https://flux9s.ca) — K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
@@ -59,7 +59,7 @@
 - [Kamal](https://kamal-deploy.org) — Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
 - [Kargo](https://kargo.io) — GitOps promotion workflow for Kubernetes.
 - [Keel](https://keel.sh) — Automated Kubernetes deployment updates.
-- [Ko](https://ko.build) — Build Go apps into container images.
+- [Ko](https://ko.build) — Build and publish Go application OCI images without writing Dockerfiles; publishes SBOMs by default in supported releases.
 - [KubeChecks](https://kubechecks.readthedocs.io/en/latest) — Pre-merge validation for Kubernetes GitOps changes.
 - [Kubesearch](https://kubesearch.dev) — Search engine for Helm charts and Kubernetes packages.
 - [kURL](https://kurl.sh/) — Toolkit for packaging customized offline-capable Kubernetes installers for software appliances.
@@ -67,7 +67,7 @@
 - [lychee](https://lychee.cli.rs/) — Asynchronous command-line link checker for Markdown, HTML, reStructuredText, websites, and other inputs.
 - [Netlify](https://www.netlify.com/) — Managed web application platform for Git- and API-driven deployment, previews, functions, and global delivery.
 - [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) — Sonatype artifact repository family with open-source Core, separately licensed Community and Professional editions, and managed Cloud hosting.
-- [Nix](https://nixos.org) — Reproducible build and package manager.
+- [Nix](https://nixos.org) — Functional, reproducible package manager and build system; distinct from NixOS/nixpkgs and not a standalone OCI image builder.
 - [Notary Project](https://notaryproject.dev/) — Notary Project umbrella for OCI artifact-signing and verification specifications and tools, including Notation CLI/libraries; component grants and deployment differ, and legacy Notary workflows and Sigstore/Cosign remain distinct.
 - [Octopus Deploy](https://octopus.com) — Deployment and release automation for applications and infrastructure across environments, including Kubernetes.
 - [OneDev](https://onedev.io) — Self-hosted Git and CI/CD platform with MIT-licensed Community software, issue/package management and a separately licensed commercial Enterprise module.
@@ -84,9 +84,9 @@
 - [Quay](https://quay.io) — Container registry for building, storing, and distributing images.
 - [sbt](https://www.scala-sbt.org) — Interactive build tool for Scala, Java, and other JVM projects.
 - [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
-- [Shipwright](https://shipwright.io) — Framework for building container images on Kubernetes.
+- [Shipwright](https://shipwright.io) — Kubernetes-native image-build orchestration using Build and BuildRun resources and pluggable build strategies backed by Tekton.
 - [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Lightweight Git hooks manager for Node.js.
-- [Skopeo](https://github.com/containers/skopeo) — Daemonless tool to inspect, copy, sign, and sync container images across registries and local stores.
+- [Skopeo](https://github.com/podman-container-tools/skopeo) — Daemonless tool to inspect, copy and synchronize remote OCI/container images and registries without building or running images.
 - [Spinnaker](https://spinnaker.io) — Open-source multi-cloud continuous delivery platform for orchestrating application releases and deployment strategies.
 - [StepSecurity](https://www.stepsecurity.io/) — Commercial software supply-chain security platform for GitHub Actions policy, remediation, and runner runtime protection.
 - [Tekton](https://tekton.dev) — Kubernetes-native CI/CD framework and ecosystem built around Tekton Pipelines, with complementary triggers, tooling and supply-chain components.
@@ -97,7 +97,7 @@
 - [Vercel](https://vercel.com/) — Managed web application platform providing Git-based builds, preview deployments, production hosting, and serverless infrastructure.
 - [Waypoint](https://developer.hashicorp.com/waypoint) — Application build, deploy, and release workflow platform from HashiCorp.
 - [Weaveworks GitOps](https://docs.gitops.weaveworks.org) — GitOps automation for Kubernetes and cloud-native apps.
-- [werf](https://werf.io) — GitOps tool for building and deploying containers.
+- [werf](https://werf.io) — Git-driven Kubernetes delivery tool combining container-image builds, deployment and Helm-based release workflows.
 - [Woodpecker CI](https://woodpecker-ci.org) — Apache-2.0 self-hosted CI/CD engine with a server and agents, forge integration and backend-dependent Docker, Kubernetes or local execution.
 - [Yarn](https://yarnpkg.com/) — JavaScript package manager with lockfiles, workspaces, and configurable dependency-installation modes.
 - [Yoke](https://yokecd.github.io/) — Kubernetes package management and deployment tool that evaluates Go-based configuration as code.
