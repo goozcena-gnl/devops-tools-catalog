@@ -5142,7 +5142,7 @@
   deployment_models: []
   license_model: open-core
   maturity: established
-  status: active
+  status: needs-review
   alternatives: []
   tags: []
   verified_on: '2026-10-23'
@@ -5152,11 +5152,10 @@
   - https://github.com/trufflesecurity/trufflehog/blob/main/LICENSE
   - https://github.com/trufflesecurity/trufflehog/blob/main/README.md
   - https://github.com/trufflesecurity/trufflehog/releases/tag/v3.99.4
-  license_spdx: AGPL-3.0-only
   commercial_offering: true
   documentation_url: https://github.com/trufflesecurity/trufflehog/blob/main/README.md
   repository_archived: false
-  needs_review: false
+  needs_review: true
 - id: valqore
   name: Valqore
   summary: Automatic safety and security checks for cloud and AI environments.
