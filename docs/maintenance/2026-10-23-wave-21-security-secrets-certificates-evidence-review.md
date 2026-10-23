@@ -2,21 +2,21 @@
 
 Reviewed: 2026-10-23. Baseline main: `f50a239e7dff2f782e4e413bbf80846cabd62e09`. Tracker: [#131](https://github.com/goozcena-gnl/devops-tools-catalog/issues/131).
 
-**Provisional evidence decisions: 7 CLEAR, 3 RETAIN REVIEW.** All 10 IDs unchanged; review debt is expected to move 640 → 633, active 771 → 778 after generating statistics. These are **proposals**, not acceptance to merge. There is a concurrent unrelated contributor PR #132 that this branch must not touch.
+**Revised decisions following Codex P1: 5 CLEAR, 5 RETAIN REVIEW.** All 10 IDs unchanged; review debt 640 → 635, active 771 → 776 once the official generator is rerun. These are **proposals**, not acceptance to merge. There is a concurrent unrelated contributor PR #132 that this branch must not touch.
 
 ## Decisions and remaining uncertainties
 
 | ID | Decision | Evidence and unresolved issue |
 |---|---|---|
 | `certmate` | **CLEAR** | MIT self-hosted TLS certificate inventory and ACME automation; v2.52.0 Oct 2026. Safeguard credentials, private keys, administrative API. |
-| `keystore-explorer` | **CLEAR** | GUI Java keystores; GPLv3 source, JRE 17+, v5.7.0. Check GPL exact grant and dependent components during external review. |
+| `keystore-explorer` | **RETAIN REVIEW** | GPLv3 family confirmed, but no authoritative grant establishes GPL-3.0-only versus GPL-3.0-or-later. Codex P1; no exact SPDX asserted. |
 | `lade` | **CLEAR** | Tagged v0.19.2 MPL-2.0 CLI using per-command ephemeral secret resolution, agent shell hooks and network forwarding; do not imply it is a vault. |
 | `mkcert` | **RETAIN REVIEW** | BSD-3-Clause local development CA. Stable GitHub release v1.4.4 from April 2022; no verified security-maintenance guarantee. |
 | `teleport` | **RETAIN REVIEW** | Source AGPLv3 and API Apache licensing differ from restrictive Community binary licence (<100 employees and <$10m annual revenue with narrow emergency exception). Need versioned distribution/entitlement verification. |
 | `teller` | **RETAIN REVIEW** | Apache CLI reads secrets from external providers, last stable GitHub release v2.0.7 May 2024. Support cadence uncertain. |
 | `detect-secrets` | **CLEAR** | Yelp Apache-2.0 baseline and triage driven secret detector; repository activity April 2026 but last GitHub stable v1.5.0 May 2024. |
 | `pip-audit` | **CLEAR** | PyPA Apache-2.0 dependency advisory scans, optional --fix and June 2026 v2.10.1 release. |
-| `trufflehog` | **CLEAR** | TruffleHog v3 AGPL-3.0 source, active verifiable secret detectors and distinct commercial offering; v3.99.4 October 2026. |
+| `trufflehog` | **RETAIN REVIEW** | AGPLv3 family confirmed, but explicit upstream variant AGPL-3.0-only versus AGPL-3.0-or-later unresolved, as noted by Codex P1. |
 | `testssl-sh` | **CLEAR** | Original drwetter repository redirects to testssl/testssl.sh; stable v3.2.4 July 2026, GPLv2 terms, Bash-based authorized TLS probing. |
 
 ## Complete changed-field baseline → proposed final ledger
@@ -47,11 +47,10 @@ All changed canonical fields, including complete sources and legacy provenance, 
 | `use_when` | use_when:; Visual inspection/editing of JKS/PKCS#12 keystores during development. | use_when:; You need a local GUI to inspect or manage Java trust stores, private keys and PKCS#12 certificates. |
 | `avoid_when` | avoid_when:; For automated cert management in CI/CD. | avoid_when:; You need headless automated certificate issuance, fleet-scale PKI or centralized key custody.; You cannot securely handle exported private keys, workstation access and password-protected keystores. |
 | `maturity` | maturity: unknown | maturity: established |
-| `status` | status: needs-review | status: active |
+| `status` | status: needs-review | status: needs-review |
 | `verified_on` | verified_on: '2026-08-03' | verified_on: '2026-10-23' |
 | `sources` | sources:; legacy:6_Security/README.md#L103; legacy:devopstools_final.md#L993 | sources:; legacy:6_Security/README.md#L103; legacy:devopstools_final.md#L993; https://github.com/kaikramer/keystore-explorer/blob/main/LICENSE; https://github.com/kaikramer/keystore-explorer/blob/v5.7.0/README.md; https://github.com/kaikramer/keystore-explorer/releases/tag/v5.7.0 |
-| `needs_review` | needs_review: true | needs_review: false |
-| `license_spdx` | ∅ | license_spdx: GPL-3.0-only |
+| `needs_review` | needs_review: true | needs_review: true |
 | `documentation_url` | ∅ | documentation_url: https://github.com/kaikramer/keystore-explorer/blob/main/README.md |
 | `repository_archived` | ∅ | repository_archived: false |
 
@@ -138,11 +137,10 @@ All changed canonical fields, including complete sources and legacy provenance, 
 | `use_when` | use_when:; Deep Git history scanning with credential verification. | use_when:; You need permissioned scans for leaked credentials with verified findings and controlled remediation workflows. |
 | `avoid_when` | avoid_when:; You only need pre-commit hooks (use detect-secrets or Gitleaks). | avoid_when:; You cannot authorize scanning of repositories or provider API verification that could contact external services.; You assume all detectors verify secrets or the v2 GPL code and v3 AGPL code have identical licence terms. |
 | `maturity` | maturity: unknown | maturity: established |
-| `status` | status: needs-review | status: active |
+| `status` | status: needs-review | status: needs-review |
 | `verified_on` | verified_on: '2026-08-03' | verified_on: '2026-10-23' |
 | `sources` | sources:; legacy:6_Security/README.md#L55; legacy:devopstools_final.md#L919 | sources:; legacy:6_Security/README.md#L55; legacy:devopstools_final.md#L919; https://github.com/trufflesecurity/trufflehog/blob/main/LICENSE; https://github.com/trufflesecurity/trufflehog/blob/main/README.md; https://github.com/trufflesecurity/trufflehog/releases/tag/v3.99.4 |
-| `needs_review` | needs_review: true | needs_review: false |
-| `license_spdx` | ∅ | license_spdx: AGPL-3.0-only |
+| `needs_review` | needs_review: true | needs_review: true |
 | `commercial_offering` | ∅ | commercial_offering: true |
 | `documentation_url` | ∅ | documentation_url: https://github.com/trufflesecurity/trufflehog/blob/main/README.md |
 | `repository_archived` | ∅ | repository_archived: false |
@@ -163,6 +161,10 @@ All changed canonical fields, including complete sources and legacy provenance, 
 | `license_spdx` | ∅ | license_spdx: GPL-2.0-only |
 | `documentation_url` | ∅ | documentation_url: https://github.com/testssl/testssl.sh/blob/v3.2.4/Readme.md |
 | `repository_archived` | ∅ | repository_archived: false |
+
+## Codex P1 corrections — exact licence grant remains unverified
+
+The Codex review on PR #133 identified two material errors in premature clearance. `keystore-explorer` has standard GPLv3 boilerplate but no verified project-specific `-only` / `-or-later` grant. `trufflehog` has AGPLv3 boilerplate without a verified exact variant, including an upstream licence ambiguity discussion. Both records now **retain** `needs_review: true` and `status: needs-review` and **omit** `license_spdx` entirely; version, maintenance and general licence-family context are preserved. No claim of fully resolved licensing is made. This replaces the initial seven-cleared/five-retained projection with **five cleared/five retained**. Regenerate all derived statistics and pages, then re-run CI and a strict link audit on the updated SHA. Do not resolve P1 threads until the updates and evidence are checked. The earlier audit #29 applies only to the superseded SHA `10178d8eb4930d029797fb1549a28f6ba6d60fae`.
 
 ## Required validation and blockers
 
