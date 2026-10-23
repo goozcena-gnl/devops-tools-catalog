@@ -193,6 +193,16 @@ AUTHORIZED_CURRENT_DRIFT = {
     ("komodor", "license_model"): "commercial",
     ("komodor", "needs_review"): False,
     ("komodor", "status"): "active",
+    # Wave 21 (issue #131) reviews the newer CertMate distribution without
+    # altering N2a's independently pinned repository_url and historical diff.
+    # The MIT grant applies to the exact v2.52.0 tagged source, and the
+    # maintainer published that stable release on 2026-10-21.
+    # https://github.com/fabriziosalmi/certmate/blob/v2.52.0/LICENSE
+    # https://github.com/fabriziosalmi/certmate/releases/tag/v2.52.0
+    # docs/maintenance/2026-10-23-wave-21-security-secrets-certificates-evidence-review.md
+    ("certmate", "license_spdx"): "MIT",
+    ("certmate", "needs_review"): False,
+    ("certmate", "status"): "active",
     # Wave 16 primary-source review supersedes JumpServer's original N2a
     # licence/review flags while preserving the N2a-owned official URL.
     # https://github.com/jumpserver/jumpserver/blob/dev/LICENSE
