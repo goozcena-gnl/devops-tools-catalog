@@ -2,13 +2,13 @@
 
 Reviewed: 2026-10-23. Baseline main: `f50a239e7dff2f782e4e413bbf80846cabd62e09`. Tracker: [#131](https://github.com/goozcena-gnl/devops-tools-catalog/issues/131).
 
-**Revised decisions following Codex P1: 4 CLEAR, 6 RETAIN REVIEW.** All 10 IDs unchanged; review debt 640 → 636, active 771 → 775 once the official generator is rerun. These are **proposals**, not acceptance to merge. There is a concurrent unrelated contributor PR #132 that this branch must not touch.
+**Revised decisions following Codex P1: 3 CLEAR, 7 RETAIN REVIEW.** All 10 IDs unchanged; review debt 640 → 637, active 771 → 774 once the official generator is rerun. These are **proposals**, not acceptance to merge. There is a concurrent unrelated contributor PR #132 that this branch must not touch.
 
 ## Decisions and remaining uncertainties
 
 | ID | Decision | Evidence and unresolved issue |
 |---|---|---|
-| `certmate` | **CLEAR** | MIT self-hosted TLS certificate inventory and ACME automation; v2.52.0 Oct 2026. Safeguard credentials, private keys, administrative API. |
+| `certmate` | **RETAIN REVIEW** | Identity unresolved: historical `usual2970/certmate` repository and legacy provenance are not linked by authoritative owner/migration evidence to `fabriziosalmi/certmate`. Reverted record to exact main baseline; no MIT/active assertion transferred. |
 | `keystore-explorer` | **RETAIN REVIEW** | GPLv3 family confirmed, but no authoritative grant establishes GPL-3.0-only versus GPL-3.0-or-later. Codex P1; no exact SPDX asserted. |
 | `lade` | **CLEAR** | Tagged v0.19.2 MPL-2.0 CLI using per-command ephemeral secret resolution, agent shell hooks and network forwarding; do not imply it is a vault. |
 | `mkcert` | **RETAIN REVIEW** | BSD-3-Clause local development CA. Stable GitHub release v1.4.4 from April 2022; no verified security-maintenance guarantee. |
@@ -25,19 +25,7 @@ All changed canonical fields, including complete sources and legacy provenance, 
 
 ### `certmate` — data/tools/iam-secrets-certificates.yaml
 
-| Field | Before | After |
-|---|---|---|
-| `summary` | summary: Certificate management automation. | summary: Self-hosted TLS certificate inventory and lifecycle management for issuance, renewals and deployment hooks using ACME, with operator-controlled CA credentials and private keys. |
-| `use_when` | use_when:; Lightweight cert lifecycle automation. | use_when:; You need inventory, ACME automation and repeatable certificate deployment across self-managed infrastructure. |
-| `avoid_when` | avoid_when:; You're on Kubernetes (use cert-manager instead). | avoid_when:; You cannot protect DNS API credentials, private keys, backup secrets or access to the management API.; You require Kubernetes-native Secret/cert issuance integration directly rather than a separate certificate service. |
-| `maturity` | maturity: unknown | maturity: growing |
-| `status` | status: needs-review | status: active |
-| `verified_on` | verified_on: '2026-08-03' | verified_on: '2026-10-23' |
-| `sources` | sources:; legacy:6_Security/README.md#L98; legacy:devopstools_final.md#L988 | sources:; legacy:6_Security/README.md#L98; legacy:devopstools_final.md#L988; https://github.com/fabriziosalmi/certmate/blob/main/LICENSE; https://github.com/fabriziosalmi/certmate/blob/v2.52.0/README.md; https://github.com/fabriziosalmi/certmate/releases/tag/v2.52.0 |
-| `needs_review` | needs_review: true | needs_review: false |
-| `license_spdx` | ∅ | license_spdx: MIT |
-| `repository_archived` | ∅ | repository_archived: false |
-| `documentation_url` | ∅ | documentation_url: https://github.com/fabriziosalmi/certmate/blob/main/README.md |
+**No canonical field changes versus baseline `main`.** Record restored to the exact original YAML block because continuity between the historical `usual2970/certmate` identity and the current `fabriziosalmi/certmate` project has not been demonstrated. The older [Batch A1 remediation review](https://github.com/goozcena-gnl/devops-tools-catalog/blob/main/docs/maintenance/v0.2.1-url-remediation-batch-a1-review.md) explicitly required repository-owner proof; a matching project name or shared website is insufficient. `needs_review: true`, `status: needs-review` and both legacy source references stay intact. Distinct modern CertMate upstream metadata must not be transferred to this existing ID without identity proof.
 
 ### `keystore-explorer` — data/tools/iam-secrets-certificates.yaml
 
@@ -168,6 +156,10 @@ The Codex review on PR #133 identified two material errors in premature clearanc
 ## Codex third P1 — testssl.sh exact GPLv2 variant (2026-10-23)
 
 Following a fresh review of the prior ready-for-review SHA `a346129550c5ff04e428b9f1e6d2f16fa8b577b5`, Codex flagged that the versioned README and generic GPLv2 LICENSE cannot establish whether the project grants `GPL-2.0-only` or `GPL-2.0-or-later`. The record therefore retains `needs_review: true` and `status: needs-review`; its unsupported exact `license_spdx` was removed, and the summary now says GPLv2-family. Repo relocation, edition-independent behavior and historical source references remain intact. The tally is now **4 CLEAR / 6 RETAIN REVIEW**, predicted 775 active / 636 needs-review once the official generator runs. The previous audit #30 is NOT valid for this newly modified SHA. Re-run generation, complete CI, and strict link audit on the final SHA before resolving this P1 or merging.
+
+## Codex fourth P1 — CertMate historical repository identity (2026-10-23)
+
+Codex identified unproven continuity from the historical `usual2970/certmate` referenced in the migration ledger to the newer `fabriziosalmi/certmate`. The original ten-ID scope is preserved, but **the entire `certmate` canonical record has been reverted to its exact `main` form**, rather than selectively preserving claims potentially describing a different product. As a result, the Wave 21 decision is **3 CLEAR / 7 RETAIN REVIEW**; after the official generator runs, expect **774 active / 637 needs-review**. Re-run CI and strict link audit on the new exact SHA. The earlier audit #31 is historical evidence, not final-head approval. Keep the P1 thread open until those checks complete.
 
 ## Required validation and blockers
 
