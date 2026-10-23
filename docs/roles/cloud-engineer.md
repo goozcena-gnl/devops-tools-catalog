@@ -56,7 +56,7 @@
 | [Cast AI](https://cast.ai) | FinOps and sustainability | commercial | active |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [CertGames](https://certgames.com/) | Documentation, learning and career resources | documentation | needs-review |
-| [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | active |
+| [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | needs-review |
 | [Civo](https://www.civo.com) | Cloud platforms and cloud management | commercial | active |
 | [Claude Code Cheat Sheet](https://shipyard.build/blog/claude-code-cheat-sheet) | Documentation, learning and career resources | documentation | needs-review |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |

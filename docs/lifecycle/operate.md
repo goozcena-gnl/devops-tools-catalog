@@ -106,7 +106,7 @@
 - [Centreon](https://www.centreon.com) — Monitoring platform with open source base and enterprise/cloud offerings.
 - [Ceph](https://ceph.io/en) — Distributed storage system for object, block, and file storage.
 - [cert-manager](https://cert-manager.io) — Kubernetes X.509 certificate-management controller issuing and renewing certificates through configured issuers such as ACME and external CAs; it is distinct from Let's Encrypt, certbot and general secrets backends.
-- [CertMate](https://www.certmate.org) — Self-hosted TLS certificate inventory and lifecycle management for issuance, renewals and deployment hooks using ACME, with operator-controlled CA credentials and private keys.
+- [CertMate](https://www.certmate.org) — Certificate management automation.
 - [CFEngine](https://cfengine.com) — Policy-based configuration management; community + commercial editions.
 - [changedetection.io](https://changedetection.io/) — Website change-monitoring service with self-hosted and hosted deployment options.
 - [Chaos Mesh](https://chaos-mesh.org) — Apache-2.0 Kubernetes chaos platform using CRDs, a controller manager, an optional dashboard and node daemons for pod, network, IO, time, stress and supported external faults.

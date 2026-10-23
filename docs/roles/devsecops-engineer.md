@@ -38,7 +38,7 @@
 | [Cato Networks](https://www.catonetworks.com/solutions/sase-platform/) | Application and cloud security | commercial | active |
 | [Cedar Policy](https://www.cedarpolicy.com) | Application and cloud security | oss | active |
 | [Certipy](https://github.com/ly4k/Certipy) | Application and cloud security | oss | active |
-| [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | active |
+| [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | needs-review |
 | [Chain Bench](https://github.com/aquasecurity/chain-bench) | Application and cloud security | oss | needs-review |
 | [Chainguard Containers](https://www.chainguard.dev) | Application and cloud security | commercial | active |
 | [Checkmarx One](https://checkmarx.com) | Application and cloud security | commercial | active |

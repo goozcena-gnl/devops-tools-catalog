@@ -38,7 +38,7 @@
 - [Cato Networks](https://www.catonetworks.com/solutions/sase-platform/) — Commercial cloud-delivered SASE platform combining networking, security, access, and centralized policy management.
 - [Cedar Policy](https://www.cedarpolicy.com) — Policy language and authorization engine (Cedar) for fine-grained access control.
 - [Certipy](https://github.com/ly4k/Certipy) — Active Directory Certificate Services assessment tool for identifying configuration and trust weaknesses.
-- [CertMate](https://www.certmate.org) — Self-hosted TLS certificate inventory and lifecycle management for issuance, renewals and deployment hooks using ACME, with operator-controlled CA credentials and private keys.
+- [CertMate](https://www.certmate.org) — Certificate management automation.
 - [Chain Bench](https://github.com/aquasecurity/chain-bench) — Supply chain security auditing tool.
 - [Chainguard Containers](https://www.chainguard.dev) — Minimal, security-hardened container images offered as a limited free set and licensed production catalog with remediation SLAs.
 - [Checkmarx One](https://checkmarx.com) — Commercial cloud application-security platform combining multiple scanners and SDLC integrations.

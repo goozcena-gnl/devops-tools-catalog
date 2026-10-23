@@ -165,20 +165,19 @@ MPL-2.0 ACME certificate-authority server implementing issuance, validation and 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Needs Review
 
-Self-hosted TLS certificate inventory and lifecycle management for issuance, renewals and deployment hooks using ACME, with operator-controlled CA credentials and private keys.
+Certificate management automation.
 
 **Use when**
 
-- You need inventory, ACME automation and repeatable certificate deployment across self-managed infrastructure.
+- Lightweight cert lifecycle automation.
 
 **Consider alternatives when**
 
-- You cannot protect DNS API credentials, private keys, backup secrets or access to the management API.
-- You require Kubernetes-native Secret/cert issuance integration directly rather than a separate certificate service.
+- You're on Kubernetes (use cert-manager instead).
 
-[Official site](https://www.certmate.org) · [Documentation](https://github.com/fabriziosalmi/certmate/blob/main/README.md) · [Source repository](https://github.com/fabriziosalmi/certmate)
+[Official site](https://www.certmate.org) · [Source repository](https://github.com/fabriziosalmi/certmate)
 
 ### Descope
 
