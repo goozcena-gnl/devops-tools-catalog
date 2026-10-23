@@ -243,7 +243,7 @@
 | [Teleport](https://goteleport.com) | IAM, secrets and certificate management | open-core | needs-review |
 | [Teller](https://github.com/tellerops/teller) | IAM, secrets and certificate management | oss | needs-review |
 | [Tenable One](https://github.com/tenable) | Application and cloud security | unknown | needs-review |
-| [testssl.sh](https://testssl.sh) | Application and cloud security | oss | active |
+| [testssl.sh](https://testssl.sh) | Application and cloud security | oss | needs-review |
 | [Tetragon](https://tetragon.io) | Application and cloud security | oss | needs-review |
 | [Thales CipherTrust Manager](https://cpl.thalesgroup.com/encryption/ciphertrust-manager) | IAM, secrets and certificate management | unknown | needs-review |
 | [The Update Framework](https://theupdateframework.io/) | Software supply-chain security | oss | active |

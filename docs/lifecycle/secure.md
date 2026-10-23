@@ -242,7 +242,7 @@
 - [Teleport](https://goteleport.com) — Teleport manages audited SSH, Kubernetes, database and application access; AGPL source/API module licences differ from the restricted Community binary and commercial Enterprise offerings.
 - [Teller](https://github.com/tellerops/teller) — Apache-2.0 CLI for accessing secrets from external stores and injecting them into local and CI commands; fresh stable release support remains unverified.
 - [Tenable One](https://github.com/tenable) — Unified exposure management platform.
-- [testssl.sh](https://testssl.sh) — GPL-2.0-only Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
+- [testssl.sh](https://testssl.sh) — GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
 - [Tetragon](https://tetragon.io) — EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
 - [Thales CipherTrust Manager](https://cpl.thalesgroup.com/encryption/ciphertrust-manager) — Enterprise key and secret management.
 - [The Update Framework](https://theupdateframework.io/) — CNCF framework and specification for securing software update metadata against repository and signing-key compromise.

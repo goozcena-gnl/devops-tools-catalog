@@ -3280,9 +3280,9 @@ Unified exposure management platform.
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Needs Review
 
-GPL-2.0-only Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
+GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
 
 **Use when**
 

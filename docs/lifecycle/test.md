@@ -341,7 +341,7 @@
 - [Testkube](https://testkube.io) — Kubernetes-native test orchestration product with a standalone public agent, mixed MIT and Testkube Community License code, and a commercial control plane.
 - [TestRail](https://www.gurock.com/testrail) — Test case management platform.
 - [TestRigor](https://testrigor.com) — AI-powered end-to-end testing platform.
-- [testssl.sh](https://testssl.sh) — GPL-2.0-only Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
+- [testssl.sh](https://testssl.sh) — GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
 - [Tetragon](https://tetragon.io) — EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
 - [TFLint](https://github.com/terraform-linters/tflint) — Pluggable Terraform-language linter for local and CI static analysis, including provider-specific rules. Much of the core is MPL-2.0; release binaries also include BUSL-1.1 Terraform-derived files, and external plugins have separate licences.
 - [ThreatLocker](https://www.threatlocker.com) — Zero trust endpoint protection platform.
