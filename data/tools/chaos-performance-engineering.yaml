@@ -852,3 +852,41 @@
   license_spdx: MIT
   repository_archived: false
   documentation_url: https://github.com/Shopify/toxiproxy/blob/main/README.md
+- id: vhr-bench
+  name: vhr-bench
+  summary: MIT-licensed Bash script that benchmarks a Linux server in about a minute with sysbench CPU
+    and memory tests and fio 4k random read and write IOPS.
+  repository_url: https://github.com/vpshostreview/vhr-vps-benchmark
+  categories:
+  - chaos-performance-engineering
+  subcategories:
+  - System Diagnostics & Stress Tools
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  lifecycle_stages:
+  - test
+  - operate
+  use_when:
+  - You want a quick CPU, memory and 4k random disk IOPS baseline for a new Linux VPS or server before
+    putting workloads on it.
+  avoid_when:
+  - You need network throughput tests, application load testing or long-running stress runs; it measures
+    only CPU, memory and 4k random disk IOPS.
+  deployment_models:
+  - cli
+  license_model: oss
+  maturity: emerging
+  status: active
+  alternatives: []
+  tags: []
+  verified_on: '2026-10-22'
+  sources:
+  - https://github.com/vpshostreview/vhr-vps-benchmark
+  - https://github.com/vpshostreview/vhr-vps-benchmark/blob/main/README.md
+  - https://github.com/vpshostreview/vhr-vps-benchmark/blob/main/LICENSE
+  - https://github.com/vpshostreview/vhr-vps-benchmark/releases
+  needs_review: false
+  license_spdx: MIT
+  repository_archived: false
+  documentation_url: https://github.com/vpshostreview/vhr-vps-benchmark/blob/main/README.md
