@@ -441,7 +441,7 @@ Upstream open-source identity and access-management server providing SSO, identi
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Needs Review
 
 Desktop Java KeyStore and certificate manager for PKCS#12, JKS and related formats, with JRE 17+ required and GPLv3 project licensing.
 

@@ -129,7 +129,7 @@
 | [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Katana](https://github.com/projectdiscovery/katana) | Application and cloud security | oss | active |
 | [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | active |
-| [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | active |
+| [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
 | [kickthemout](https://github.com/roccomuso/kickthemout) | Application and cloud security | oss | needs-review |
 | [Kiuwan](https://www.kiuwan.com/) | Application and cloud security | commercial | active |
 | [Kps-zeroexposure](https://github.com/adrghph/kps-zeroexposure) | Application and cloud security | oss | needs-review |
@@ -251,7 +251,7 @@
 | [Touti-Cracker](https://github.com/Touti-Sudo/Touti-Cracker) | Application and cloud security | oss | needs-review |
 | [Tracee](https://aquasecurity.github.io/tracee/latest) | Application and cloud security | oss | needs-review |
 | [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
-| [TruffleHog](https://trufflesecurity.com) | Application and cloud security | open-core | active |
+| [TruffleHog](https://trufflesecurity.com) | Application and cloud security | open-core | needs-review |
 | [Valqore](https://www.valqore.io) | Application and cloud security | unknown | needs-review |
 | [Vaultwarden](https://www.vaultwarden.net/) | IAM, secrets and certificate management | oss | active |
 | [Velociraptor](https://docs.velociraptor.app) | Application and cloud security | oss | needs-review |

@@ -150,7 +150,7 @@
 | [k8squest](https://github.com/Manoj-engineer/k8squest) | Documentation, learning and career resources | documentation | needs-review |
 | [Kelos](https://github.com/kelos-dev/kelos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | active |
-| [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | active |
+| [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
 | [KICS](https://kics.io) | Infrastructure as Code | oss | active |
 | [Killer.sh](https://killer.sh) | Documentation, learning and career resources | documentation | needs-review |
 | [Killercoda](https://github.com/killercoda) | Documentation, learning and career resources | documentation | needs-review |

@@ -3397,7 +3397,7 @@ Vulnerability scanner for containers and Kubernetes.
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Open Core<br>
-**Status:** Active
+**Status:** Needs Review
 
 AGPLv3 TruffleHog v3 scans Git repositories and other sources for secrets and can verify selected credentials; enterprise monitoring is a separate commercial product.
 
