@@ -36,7 +36,7 @@
 | [Cato Networks](https://www.catonetworks.com/solutions/sase-platform/) | Application and cloud security | commercial | active |
 | [Cedar Policy](https://www.cedarpolicy.com) | Application and cloud security | oss | active |
 | [Certipy](https://github.com/ly4k/Certipy) | Application and cloud security | oss | active |
-| [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | needs-review |
+| [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | active |
 | [Chain Bench](https://github.com/aquasecurity/chain-bench) | Application and cloud security | oss | needs-review |
 | [Chainguard Containers](https://www.chainguard.dev) | Application and cloud security | commercial | active |
 | [Checkmarx One](https://checkmarx.com) | Application and cloud security | commercial | active |
@@ -60,7 +60,7 @@
 | [Dependency-Track](https://dependencytrack.org) | Software supply-chain security, Application and cloud security | oss | active |
 | [DependencyCheck](https://owasp.org/projects/dependency-check) | Application and cloud security | oss | active |
 | [Descope](https://www.descope.com/) | IAM, secrets and certificate management | commercial | active |
-| [detect-secrets](https://github.com/Yelp/detect-secrets) | Application and cloud security | oss | needs-review |
+| [detect-secrets](https://github.com/Yelp/detect-secrets) | Application and cloud security | oss | active |
 | [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | active |
 | [DigiCert](https://www.digicert.com/) | Application and cloud security | unknown | needs-review |
 | [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) | Application and cloud security | oss | needs-review |
@@ -110,7 +110,7 @@
 | [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Katana](https://github.com/projectdiscovery/katana) | Application and cloud security | oss | active |
 | [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | active |
-| [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
+| [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | active |
 | [kickthemout](https://github.com/roccomuso/kickthemout) | Application and cloud security | oss | needs-review |
 | [Kiuwan](https://www.kiuwan.com/) | Application and cloud security | commercial | active |
 | [Kloak](https://getkloak.io/) | Application and cloud security, Emerging and experimental tools | oss | active |
@@ -120,7 +120,7 @@
 | [KubeLinter](https://docs.kubelinter.io/) | Kubernetes distributions and operations, Application and cloud security | oss | active |
 | [kubelogin (int128)](https://github.com/int128/kubelogin) | IAM, secrets and certificate management | oss | active |
 | [Kubernetes MCP Guard](https://github.com/mirusser/Kubernetes-MCP-Guard) | Application and cloud security, Emerging and experimental tools | oss | active |
-| [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | needs-review |
+| [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | active |
 | [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) | Application and cloud security | documentation | needs-review |
 | [Lynis](https://cisofy.com/lynis) | Application and cloud security | open-core | needs-review |
 | [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) | Configuration management, Application and cloud security | commercial | active |
@@ -169,7 +169,7 @@
 | [PEASS-ng](https://github.com/peass-ng/PEASS-ng) | Application and cloud security | oss | active |
 | [PenTest Toolkit Pro](https://github.com/Cyber-Autopsie/PenTest-Toolkit-Pro) | Application and cloud security | oss | needs-review |
 | [pfSense](https://www.pfsense.org) | Application and cloud security | oss | needs-review |
-| [pip-audit](https://pypi.org/project/pip-audit) | Application and cloud security | oss | needs-review |
+| [pip-audit](https://pypi.org/project/pip-audit) | Application and cloud security | oss | active |
 | [piqc](https://github.com/paralleliq/piqc) | Application and cloud security | oss | needs-review |
 | [Pocket ID](https://pocket-id.org/) | IAM, secrets and certificate management | oss | active |
 | [Portmaster](https://safing.io) | Application and cloud security | oss | needs-review |
@@ -212,7 +212,7 @@
 | [Teleport](https://goteleport.com) | IAM, secrets and certificate management | open-core | needs-review |
 | [Teller](https://github.com/tellerops/teller) | IAM, secrets and certificate management | oss | needs-review |
 | [Tenable One](https://github.com/tenable) | Application and cloud security | unknown | needs-review |
-| [testssl.sh](https://testssl.sh) | Application and cloud security | oss | needs-review |
+| [testssl.sh](https://testssl.sh) | Application and cloud security | oss | active |
 | [Tetragon](https://tetragon.io) | Application and cloud security | oss | needs-review |
 | [Thales CipherTrust Manager](https://cpl.thalesgroup.com/encryption/ciphertrust-manager) | IAM, secrets and certificate management | unknown | needs-review |
 | [ThreatLocker](https://www.threatlocker.com) | Application and cloud security | unknown | needs-review |
@@ -220,7 +220,7 @@
 | [Touti-Cracker](https://github.com/Touti-Sudo/Touti-Cracker) | Application and cloud security | oss | needs-review |
 | [Tracee](https://aquasecurity.github.io/tracee/latest) | Application and cloud security | oss | needs-review |
 | [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
-| [TruffleHog](https://trufflesecurity.com) | Application and cloud security | open-core | needs-review |
+| [TruffleHog](https://trufflesecurity.com) | Application and cloud security | open-core | active |
 | [Valqore](https://www.valqore.io) | Application and cloud security | unknown | needs-review |
 | [Vaultwarden](https://www.vaultwarden.net/) | IAM, secrets and certificate management | oss | active |
 | [Velociraptor](https://docs.velociraptor.app) | Application and cloud security | oss | needs-review |

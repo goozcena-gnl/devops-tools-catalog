@@ -56,7 +56,7 @@
 | [Cast AI](https://cast.ai) | FinOps and sustainability | commercial | active |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
 | [CertGames](https://certgames.com/) | Documentation, learning and career resources | documentation | needs-review |
-| [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | needs-review |
+| [CertMate](https://www.certmate.org) | IAM, secrets and certificate management | oss | active |
 | [Civo](https://www.civo.com) | Cloud platforms and cloud management | commercial | active |
 | [Claude Code Cheat Sheet](https://shipyard.build/blog/claude-code-cheat-sheet) | Documentation, learning and career resources | documentation | needs-review |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
@@ -150,7 +150,7 @@
 | [k8squest](https://github.com/Manoj-engineer/k8squest) | Documentation, learning and career resources | documentation | needs-review |
 | [Kelos](https://github.com/kelos-dev/kelos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | active |
-| [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | needs-review |
+| [Keystore Explorer](https://keystore-explorer.org) | IAM, secrets and certificate management | oss | active |
 | [KICS](https://kics.io) | Infrastructure as Code | oss | active |
 | [Killer.sh](https://killer.sh) | Documentation, learning and career resources | documentation | needs-review |
 | [Killercoda](https://github.com/killercoda) | Documentation, learning and career resources | documentation | needs-review |
@@ -176,7 +176,7 @@
 | [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
 | [LabEx DevOps Tutorials](https://labex.io/tutorials/category/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [LabsDevOps.fr](https://labsdevops.fr) | Documentation, learning and career resources | documentation | needs-review |
-| [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | needs-review |
+| [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | active |
 | [LangChain](https://www.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [Langflow](https://www.langflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Langfuse](https://langfuse.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |

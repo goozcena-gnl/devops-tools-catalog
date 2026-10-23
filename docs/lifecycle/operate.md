@@ -106,7 +106,7 @@
 - [Centreon](https://www.centreon.com) — Monitoring platform with open source base and enterprise/cloud offerings.
 - [Ceph](https://ceph.io/en) — Distributed storage system for object, block, and file storage.
 - [cert-manager](https://cert-manager.io) — Kubernetes X.509 certificate-management controller issuing and renewing certificates through configured issuers such as ACME and external CAs; it is distinct from Let's Encrypt, certbot and general secrets backends.
-- [CertMate](https://www.certmate.org) — Certificate management automation.
+- [CertMate](https://www.certmate.org) — Self-hosted TLS certificate inventory and lifecycle management for issuance, renewals and deployment hooks using ACME, with operator-controlled CA credentials and private keys.
 - [CFEngine](https://cfengine.com) — Policy-based configuration management; community + commercial editions.
 - [changedetection.io](https://changedetection.io/) — Website change-monitoring service with self-hosted and hosted deployment options.
 - [Chaos Mesh](https://chaos-mesh.org) — Apache-2.0 Kubernetes chaos platform using CRDs, a controller manager, an optional dashboard and node daemons for pod, network, IO, time, stress and supported external faults.
@@ -358,7 +358,7 @@
 - [Kelos](https://github.com/kelos-dev/kelos) — Kubernetes-native framework for orchestrating autonomous AI coding agents.
 - [Kestra](https://kestra.io/) — Workflow orchestration platform with an Apache-licensed core and commercial enterprise and hosted capabilities.
 - [Keycloak](https://www.keycloak.org) — Upstream open-source identity and access-management server providing SSO, identity federation and OpenID Connect, OAuth 2.0 and SAML for applications and services; Red Hat build packaging and managed IAM services are separate.
-- [Keystore Explorer](https://keystore-explorer.org) — GUI for managing keystores.
+- [Keystore Explorer](https://keystore-explorer.org) — Desktop Java KeyStore and certificate manager for PKCS#12, JKS and related formats, with JRE 17+ required and GPLv3 project licensing.
 - [kftray](https://kftray.app/) — Desktop and terminal tools for managing Kubernetes port-forwarding sessions.
 - [KGateway](https://kgateway.dev) — Kubernetes gateway networking.
 - [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file) — Visualize and inspect Kubernetes cluster event history.
@@ -461,7 +461,7 @@
 - [Kwatcher](https://github.com/Berg-it/Kwatcher) — Kubernetes event watcher.
 - [KWOK](https://kwok.sigs.k8s.io/) — Kubernetes SIGs toolkit that simulates large numbers of nodes and pods without running real workloads.
 - [Kyverno](https://kyverno.io) — Kubernetes policy engine for validation, mutation, generation, cleanup and image verification with YAML/CEL policies; signing tools, OPA/Gatekeeper and other Kyverno subprojects remain separate.
-- [Lade](https://github.com/zifeo/lade) — Auto-load secrets from vaults into environment variables or files for shell commands with minimal exposure.
+- [Lade](https://github.com/zifeo/lade) — MPL-2.0 command-scoped secret and private-network access wrapper using provider-resolved environment variables, short-lived tunnels, shell hooks and agent harness hooks.
 - [LangChain](https://www.langchain.com) — LLM application framework; OSS libraries with commercial companion products.
 - [Langflow](https://www.langflow.org) — Low-code builder for agentic and RAG applications.
 - [Langfuse](https://langfuse.com) — LLM observability and analytics; OSS self-hosted core with commercial cloud offering.
@@ -517,7 +517,7 @@
 - [MiniBlue](https://miniblue.io) — Local Azure emulator that emulates 26+ Azure services in a single binary for development and testing without an Azure account.
 - [Minikube](https://minikube.sigs.k8s.io/docs) — Local Kubernetes development environment.
 - [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) — Ansible accelerator to speed up module execution and reduce SSH overhead.
-- [mkcert](https://mkcert.dev) — BSD-3-Clause CLI creating a locally trusted development CA and TLS certificates; current upstream maintenance remains unconfirmed.
+- [mkcert](https://mkcert.dev) — BSD-3-Clause local development certificate authority and TLS certificate CLI; the local rootCA-key.pem is highly sensitive and recent security maintenance remains unproven.
 - [MLflow](https://mlflow.org) — Platform for managing ML lifecycles.
 - [MobaXterm](https://mobaxterm.mobatek.net/) — Windows remote-administration terminal combining SSH, SFTP, X11, and other network clients.
 - [MOCO](https://cybozu-go.github.io/moco) — MySQL Operator for Kubernetes by Cybozu.
@@ -733,9 +733,9 @@
 - [Tarook](https://tarook.cloud/en/) — Apache-licensed Kubernetes distribution and lifecycle-management toolkit for OpenStack, Proxmox VE, and bare-metal infrastructure.
 - [Technitium DNS Server](https://technitium.com/dns/) — Self-hosted authoritative and recursive DNS server with an administrative web interface and blocking capabilities.
 - [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) — InfluxData's plugin-driven telemetry agent for collecting, processing, aggregating and writing metrics and events to InfluxDB or other backends, distinct from a time-series database and Telegraf Enterprise.
-- [Teleport](https://goteleport.com) — Infrastructure access platform for SSH Kubernetes databases and apps with separate AGPL source, Apache API module and restricted Community binary terms.
+- [Teleport](https://goteleport.com) — Teleport manages audited SSH, Kubernetes, database and application access; AGPL source/API module licences differ from the restricted Community binary and commercial Enterprise offerings.
 - [Telepresence](https://www.telepresence.io) — Local dev against remote Kubernetes.
-- [Teller](https://github.com/tellerops/teller) — Apache-2.0 Rust CLI for retrieving and injecting secrets from configured external providers; current release support remains inconclusive.
+- [Teller](https://github.com/tellerops/teller) — Apache-2.0 CLI for accessing secrets from external stores and injecting them into local and CI commands; fresh stable release support remains unverified.
 - [Tenzu](https://tenzu.net/fr) — Ethical open-source task and Kanban collaboration platform.
 - [Terraform Community Edition](https://www.terraform.io) — HashiCorp infrastructure-as-code CLI for provisioning and managing infrastructure and state, with separately licensed providers; HCP Terraform and Terraform Enterprise are distinct offerings.
 - [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) — MCP server for Terraform automation and infrastructure-as-code workflows.

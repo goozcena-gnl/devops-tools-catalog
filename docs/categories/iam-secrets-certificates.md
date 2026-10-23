@@ -165,19 +165,20 @@ MPL-2.0 ACME certificate-authority server implementing issuance, validation and 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Certificate management automation.
+Self-hosted TLS certificate inventory and lifecycle management for issuance, renewals and deployment hooks using ACME, with operator-controlled CA credentials and private keys.
 
 **Use when**
 
-- Lightweight cert lifecycle automation.
+- You need inventory, ACME automation and repeatable certificate deployment across self-managed infrastructure.
 
 **Consider alternatives when**
 
-- You're on Kubernetes (use cert-manager instead).
+- You cannot protect DNS API credentials, private keys, backup secrets or access to the management API.
+- You require Kubernetes-native Secret/cert issuance integration directly rather than a separate certificate service.
 
-[Official site](https://www.certmate.org) · [Source repository](https://github.com/fabriziosalmi/certmate)
+[Official site](https://www.certmate.org) · [Documentation](https://github.com/fabriziosalmi/certmate/blob/main/README.md) · [Source repository](https://github.com/fabriziosalmi/certmate)
 
 ### Descope
 
@@ -440,19 +441,20 @@ Upstream open-source identity and access-management server providing SSO, identi
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-GUI for managing keystores.
+Desktop Java KeyStore and certificate manager for PKCS#12, JKS and related formats, with JRE 17+ required and GPLv3 project licensing.
 
 **Use when**
 
-- Visual inspection/editing of JKS/PKCS#12 keystores during development.
+- You need a local GUI to inspect or manage Java trust stores, private keys and PKCS#12 certificates.
 
 **Consider alternatives when**
 
-- For automated cert management in CI/CD.
+- You need headless automated certificate issuance, fleet-scale PKI or centralized key custody.
+- You cannot securely handle exported private keys, workstation access and password-protected keystores.
 
-[Official site](https://keystore-explorer.org) · [Source repository](https://github.com/kaikramer/keystore-explorer)
+[Official site](https://keystore-explorer.org) · [Documentation](https://github.com/kaikramer/keystore-explorer/blob/main/README.md) · [Source repository](https://github.com/kaikramer/keystore-explorer)
 
 ### kubelogin (int128)
 
@@ -478,19 +480,20 @@ Kubernetes exec credential plugin for interactive OpenID Connect authentication 
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Engineer, DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Auto-load secrets from vaults into environment variables or files for shell commands with minimal exposure.
+MPL-2.0 command-scoped secret and private-network access wrapper using provider-resolved environment variables, short-lived tunnels, shell hooks and agent harness hooks.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need secrets or private tunnels injected only while a matching local command, CI command or agent harness step runs.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You cannot audit shell pre-exec hooks, provider CLI privileges, temporary files or agent tool execution boundaries.
+- You need a managed secrets database rather than just-in-time retrieval from external providers.
 
-[Source repository](https://github.com/zifeo/lade)
+[Documentation](https://github.com/zifeo/lade/blob/v0.19.2/README.md) · [Source repository](https://github.com/zifeo/lade)
 
 ### mkcert
 
@@ -499,7 +502,7 @@ Auto-load secrets from vaults into environment variables or files for shell comm
 **Model:** Oss<br>
 **Status:** Needs Review
 
-BSD-3-Clause CLI creating a locally trusted development CA and TLS certificates; current upstream maintenance remains unconfirmed.
+BSD-3-Clause local development certificate authority and TLS certificate CLI; the local rootCA-key.pem is highly sensitive and recent security maintenance remains unproven.
 
 **Use when**
 
@@ -507,8 +510,8 @@ BSD-3-Clause CLI creating a locally trusted development CA and TLS certificates;
 
 **Consider alternatives when**
 
-- You need a production public certificate authority or automated corporate PKI lifecycle.
-- You cannot protect the generated local rootCA-key.pem private key or require proven ongoing security maintenance.
+- You need publicly trusted production certificates or automated enterprise PKI; mkcert is for development environments.
+- You cannot protect the local rootCA-key.pem or require verified ongoing releases and security support.
 
 [Official site](https://mkcert.dev) · [Documentation](https://github.com/FiloSottile/mkcert#readme) · [Source repository](https://github.com/FiloSottile/mkcert)
 
@@ -732,7 +735,7 @@ Enterprise key management.
 **Model:** Open Core<br>
 **Status:** Needs Review
 
-Infrastructure access platform for SSH Kubernetes databases and apps with separate AGPL source, Apache API module and restricted Community binary terms.
+Teleport manages audited SSH, Kubernetes, database and application access; AGPL source/API module licences differ from the restricted Community binary and commercial Enterprise offerings.
 
 **Use when**
 
@@ -741,8 +744,8 @@ Infrastructure access platform for SSH Kubernetes databases and apps with separa
 
 **Consider alternatives when**
 
-- You treat AGPL-3.0 source code or Apache-2.0 API-module terms as granting unrestricted Community binary rights.
-- You need unrestricted distribution or business use but have not evaluated the Community size and revenue limitations.
+- You assume the source AGPL or API Apache grant permits unrestricted use or redistribution of Community binaries.
+- Your organization exceeds Community employee or revenue limits or cannot verify Enterprise/HCP eligibility and critical-patch exception conditions.
 
 [Official site](https://goteleport.com) · [Documentation](https://goteleport.com/docs/) · [Source repository](https://github.com/gravitational/teleport)
 
@@ -753,7 +756,7 @@ Infrastructure access platform for SSH Kubernetes databases and apps with separa
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Apache-2.0 Rust CLI for retrieving and injecting secrets from configured external providers; current release support remains inconclusive.
+Apache-2.0 CLI for accessing secrets from external stores and injecting them into local and CI commands; fresh stable release support remains unverified.
 
 **Use when**
 
@@ -761,8 +764,8 @@ Apache-2.0 Rust CLI for retrieving and injecting secrets from configured externa
 
 **Consider alternatives when**
 
-- You require a standalone secrets database; Teller reads from other providers.
-- You cannot verify provider compatibility and release maintenance or safely protect local credentials and exported secrets.
+- You need a standalone encrypted secrets database; Teller retrieves secrets from other provider services.
+- You cannot restrict shell environment exposure and credentials or require a verified current security release cadence.
 
 [Documentation](https://github.com/tellerops/teller/blob/master/README.md) · [Source repository](https://github.com/tellerops/teller)
 
