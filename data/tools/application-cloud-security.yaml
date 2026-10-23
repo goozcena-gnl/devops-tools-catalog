@@ -4972,7 +4972,7 @@
   needs_review: true
 - id: testssl-sh
   name: testssl.sh
-  summary: GPL-2.0-only Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
+  summary: GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
   official_url: https://testssl.sh
   repository_url: https://github.com/testssl/testssl.sh
   categories:
@@ -4993,7 +4993,7 @@
   deployment_models: []
   license_model: oss
   maturity: established
-  status: active
+  status: needs-review
   alternatives: []
   tags: []
   verified_on: '2026-10-23'
@@ -5003,10 +5003,9 @@
   - https://github.com/testssl/testssl.sh/blob/v3.2.4/LICENSE
   - https://github.com/testssl/testssl.sh/blob/v3.2.4/Readme.md
   - https://github.com/testssl/testssl.sh/releases/tag/v3.2.4
-  license_spdx: GPL-2.0-only
   documentation_url: https://github.com/testssl/testssl.sh/blob/v3.2.4/Readme.md
   repository_archived: false
-  needs_review: false
+  needs_review: true
 - id: tetragon
   name: Tetragon
   summary: EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
