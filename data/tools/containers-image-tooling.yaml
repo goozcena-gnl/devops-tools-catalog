@@ -87,7 +87,7 @@
   repository_archived: false
 - id: cek
   name: cek
-  summary: Inspect OCI image filesystems and layers without running containers.
+  summary: Read-only exploration of OCI container-image filesystem contents and layers without executing containers.
   repository_url: https://github.com/bschaatsbergen/cek
   categories:
   - containers-image-tooling
@@ -104,14 +104,18 @@
   avoid_when: []
   deployment_models: []
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
+  - https://github.com/bschaatsbergen/cek/blob/v0.3.0/LICENSE
+  - https://github.com/bschaatsbergen/cek/releases/tag/v0.3.0
+  - https://github.com/bschaatsbergen/cek
   - legacy:devopstools_final.md#L350
-  needs_review: true
+  needs_review: false
 - id: containeryard
   name: ContainerYard
   summary: Tool for composing reusable modules into generated Containerfiles.
@@ -171,7 +175,7 @@
   license_spdx: GPL-2.0-or-later
 - id: distroless
   name: Distroless
-  summary: Minimal container images for secure deployments.
+  summary: Minimal runtime container images without a shell or package manager in standard variants; separately published debug variants support troubleshooting.
   repository_url: https://github.com/GoogleContainerTools/distroless
   categories:
   - containers-image-tooling
@@ -188,14 +192,18 @@
   - '* You want to minimize attack surface by shipping images without shells or package managers.'
   avoid_when:
   - '* You need to exec into containers for debugging or require OS-level packages at runtime.'
+  - You assume the source repository's Apache-2.0 licence covers every image layer and runtime dependency.
   deployment_models: []
   license_model: oss
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
+  - https://github.com/GoogleContainerTools/distroless
+  - https://github.com/GoogleContainerTools/distroless/blob/main/LICENSE
+  - https://github.com/GoogleContainerTools/distroless/blob/main/SUPPORT_POLICY.md
   - legacy:3_CI-CD-Automation/README.md#L78
   - legacy:devopstools_final.md#L351
   needs_review: true
@@ -275,7 +283,7 @@
   needs_review: false
 - id: docker-build
   name: Docker Build
-  summary: Umbrella Docker image-build feature implemented through the separately catalogued Docker Buildx client and BuildKit backend.
+  summary: 'Documentation umbrella for Docker image building: Buildx is the CLI client and BuildKit its execution backend; not a separate source repository or licence grant.'
   official_url: https://docs.docker.com/build/
   documentation_url: https://docs.docker.com/build/concepts/overview/
   categories:
@@ -299,8 +307,9 @@
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-09-13'
+  verified_on: '2026-10-23'
   sources:
+  - https://docs.docker.com/build/builders/
   - https://docs.docker.com/build/
   - https://docs.docker.com/build/concepts/overview/
   - https://github.com/docker/buildx
@@ -310,7 +319,7 @@
   needs_review: true
 - id: docker-buildx
   name: Docker Buildx
-  summary: Docker CLI plugin for extended build capabilities.
+  summary: Docker CLI build client for BuildKit, supporting configurable builders, multi-platform images and external build caches.
   repository_url: https://github.com/docker/buildx
   categories:
   - containers-image-tooling
@@ -329,15 +338,20 @@
   - '* You only build for a single platform and don''t need extended features.'
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
+  - https://github.com/docker/buildx/blob/v0.38.1/LICENSE
+  - https://github.com/docker/buildx/releases/tag/v0.38.1
+  - https://docs.docker.com/build/concepts/overview/
+  - https://docs.docker.com/build/builders/
   - legacy:3_CI-CD-Automation/README.md#L82
   - legacy:devopstools_final.md#L353
-  needs_review: true
+  needs_review: false
 - id: docker-compose
   name: Docker Compose
   summary: Declarative tool for defining and running multi-container applications from a Compose file.
@@ -417,7 +431,7 @@
   needs_review: false
 - id: earthly
   name: Earthly
-  summary: Build automation framework.
+  summary: Dockerfile-like build orchestration CLI; upstream ended active OSS maintenance in April 2025 and retired its Cloud/Satellite services in July 2025.
   official_url: https://earthly.dev
   repository_url: https://github.com/earthly/earthly
   categories:
@@ -435,14 +449,19 @@
   - '* You want Dockerfile-like syntax with Makefile-like orchestration for reproducible builds.'
   avoid_when:
   - '* Your team already has a well-tuned build system and doesn''t need another abstraction layer.'
+  - You require actively maintained OSS builds or the discontinued Earthly Cloud/Satellite services.
   deployment_models: []
   license_model: oss
+  license_spdx: MPL-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
+  - https://earthly.dev/blog/shutting-down-earthfiles-cloud/
+  - https://github.com/earthly/earthly/blob/v0.8.16/LICENSE
+  - https://github.com/earthly/earthly/releases/tag/v0.8.16
   - legacy:3_CI-CD-Automation/README.md#L86
   - legacy:devopstools_final.md#L355
   needs_review: true
@@ -479,7 +498,7 @@
   needs_review: true
 - id: ko
   name: Ko
-  summary: Build Go apps into container images.
+  summary: Build and publish Go application OCI images without writing Dockerfiles; publishes SBOMs by default in supported releases.
   official_url: https://ko.build
   repository_url: https://github.com/ko-build/ko
   categories:
@@ -499,18 +518,23 @@
   - '* Your application is not written in Go or needs custom OS-level dependencies.'
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
+  - https://github.com/ko-build/ko/blob/v0.19.1/LICENSE
+  - https://github.com/ko-build/ko/releases/tag/v0.19.1
+  - https://ko.build/features/sboms/
+  - https://ko.build/
   - legacy:3_CI-CD-Automation/README.md#L92
   - legacy:devopstools_final.md#L358
-  needs_review: true
+  needs_review: false
 - id: nix
   name: Nix
-  summary: Reproducible build and package manager.
+  summary: Functional, reproducible package manager and build system; distinct from NixOS/nixpkgs and not a standalone OCI image builder.
   official_url: https://nixos.org
   repository_url: https://github.com/NixOS/nix
   categories:
@@ -534,8 +558,10 @@
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
+  - https://github.com/NixOS/nix
+  - https://github.com/NixOS/nix/blob/master/COPYING
   - legacy:3_CI-CD-Automation/README.md#L94
   - legacy:devopstools_final.md#L359
   needs_review: true
@@ -569,7 +595,7 @@
   needs_review: true
 - id: shipwright
   name: Shipwright
-  summary: Framework for building container images on Kubernetes.
+  summary: Kubernetes-native image-build orchestration using Build and BuildRun resources and pluggable build strategies backed by Tekton.
   official_url: https://shipwright.io
   categories:
   - containers-image-tooling
@@ -593,8 +619,12 @@
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
+  - https://github.com/shipwright-io/build
+  - https://github.com/shipwright-io/build/blob/v0.21.10/LICENSE
+  - https://github.com/shipwright-io/build/releases/tag/v0.21.10
+  - https://shipwright.io/docs/build/buildrun/
   - legacy:3_CI-CD-Automation/README.md#L96
   - legacy:devopstools_final.md#L361
   needs_review: true
@@ -646,9 +676,8 @@
   repository_archived: false
 - id: skopeo
   name: Skopeo
-  summary: Daemonless tool to inspect, copy, sign, and sync container images across registries and local
-    stores.
-  repository_url: https://github.com/containers/skopeo
+  summary: Daemonless tool to inspect, copy and synchronize remote OCI/container images and registries without building or running images.
+  repository_url: https://github.com/podman-container-tools/skopeo
   categories:
   - containers-image-tooling
   subcategories:
@@ -664,17 +693,22 @@
   avoid_when: []
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
+  - https://github.com/containers/skopeo
+  - https://github.com/podman-container-tools/skopeo/blob/main/README.md
+  - https://github.com/podman-container-tools/skopeo/blob/v1.24.1/LICENSE
+  - https://github.com/podman-container-tools/skopeo/releases/tag/v1.24.1
   - legacy:devopstools_final.md#L363
-  needs_review: true
+  needs_review: false
 - id: werf
   name: werf
-  summary: GitOps tool for building and deploying containers.
+  summary: Git-driven Kubernetes delivery tool combining container-image builds, deployment and Helm-based release workflows.
   official_url: https://werf.io
   repository_url: https://github.com/werf/werf
   categories:
@@ -694,15 +728,19 @@
   - '* You already have separate, well-established build and deploy pipelines.'
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
+  - https://github.com/werf/werf/blob/v2.81.4/LICENSE
+  - https://github.com/werf/werf/releases/tag/v2.81.4
+  - https://werf.io/
   - legacy:3_CI-CD-Automation/README.md#L98
   - legacy:devopstools_final.md#L364
-  needs_review: true
+  needs_review: false
 - id: youki
   name: youki
   summary: OCI container runtime implemented in Rust.
