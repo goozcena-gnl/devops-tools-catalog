@@ -176,7 +176,7 @@
 | [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
 | [LabEx DevOps Tutorials](https://labex.io/tutorials/category/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [LabsDevOps.fr](https://labsdevops.fr) | Documentation, learning and career resources | documentation | needs-review |
-| [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | needs-review |
+| [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | active |
 | [LangChain](https://www.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [Langflow](https://www.langflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Langfuse](https://langfuse.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |

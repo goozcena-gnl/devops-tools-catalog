@@ -66,7 +66,7 @@
 | [Dependency-Track](https://dependencytrack.org) | Software supply-chain security, Application and cloud security | oss | active |
 | [DependencyCheck](https://owasp.org/projects/dependency-check) | Application and cloud security | oss | active |
 | [Descope](https://www.descope.com/) | IAM, secrets and certificate management | commercial | active |
-| [detect-secrets](https://github.com/Yelp/detect-secrets) | Application and cloud security | oss | needs-review |
+| [detect-secrets](https://github.com/Yelp/detect-secrets) | Application and cloud security | oss | active |
 | [Dex](https://dexidp.io) | IAM, secrets and certificate management | oss | active |
 | [DigiCert](https://www.digicert.com/) | Application and cloud security | unknown | needs-review |
 | [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) | Artifact and package management | open-core | active |
@@ -142,7 +142,7 @@
 | [Kubernetes Audit Log Explorer](https://github.com/karlpvoss/kubernetes-audit-log-explorer) | Application and cloud security | oss | active |
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
 | [Kubesec](https://kubesec.io) | Kubernetes distributions and operations | oss | active |
-| [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | needs-review |
+| [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | active |
 | [Lefthook](https://lefthook.dev) | Software supply-chain security | oss | needs-review |
 | [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) | Application and cloud security | documentation | needs-review |
 | [Lynis](https://cisofy.com/lynis) | Application and cloud security | open-core | needs-review |
@@ -194,7 +194,7 @@
 | [PEASS-ng](https://github.com/peass-ng/PEASS-ng) | Application and cloud security | oss | active |
 | [PenTest Toolkit Pro](https://github.com/Cyber-Autopsie/PenTest-Toolkit-Pro) | Application and cloud security | oss | needs-review |
 | [pfSense](https://www.pfsense.org) | Application and cloud security | oss | needs-review |
-| [pip-audit](https://pypi.org/project/pip-audit) | Application and cloud security | oss | needs-review |
+| [pip-audit](https://pypi.org/project/pip-audit) | Application and cloud security | oss | active |
 | [piqc](https://github.com/paralleliq/piqc) | Application and cloud security | oss | needs-review |
 | [Plumber](https://getplumber.io) | Software supply-chain security, CI, build and testing | oss | active |
 | [Portmaster](https://safing.io) | Application and cloud security | oss | needs-review |

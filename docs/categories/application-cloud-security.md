@@ -986,19 +986,20 @@ Identify vulnerable dependencies.
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Secrets detection with baseline support (reduce false positives).
+Apache-2.0 repository secret detector using configurable plugins, baselines and manual triage to prevent new credentials entering version control.
 
 **Use when**
 
-- As a pre-commit hook to prevent secret leaks with manageable false-positive rates.
+- You need pre-commit and CI checks with a reviewed secret baseline that helps control false positives.
 
 **Consider alternatives when**
 
-- You need historical repo scanning (use TruffleHog/Gitleaks).
+- You need guaranteed detection of all leaked credentials or verified live validity without additional tools.
+- You require repository-wide secret history triage beyond a configured baseline-only pre-commit process.
 
-[Source repository](https://github.com/Yelp/detect-secrets)
+[Documentation](https://github.com/Yelp/detect-secrets/blob/master/README.md) · [Source repository](https://github.com/Yelp/detect-secrets)
 
 ### DigiCert
 
@@ -2649,19 +2650,20 @@ Open-source firewall and router platform.
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Audit Python environments/dependencies for known vulnerabilities.
+Apache-2.0 Python dependency vulnerability auditor using packaging advisory data, with requirements or environment scans and optional remediation via --fix.
 
 **Use when**
 
-- Python-specific SCA in CI.
+- You need vulnerability checking for installed Python packages or requirements in CI and want advisory-backed findings.
 
 **Consider alternatives when**
 
-- You already run Trivy/Grype which also cover Python packages.
+- You need malicious package discovery, a complete security assessment or proof that packages without advisories are safe.
+- Automatic --fix updates would be applied without dependency-lock review, regression tests and change control.
 
-[Official site](https://pypi.org/project/pip-audit) · [Source repository](https://github.com/pypa/pip-audit)
+[Official site](https://pypi.org/project/pip-audit) · [Documentation](https://github.com/pypa/pip-audit/blob/main/README.md) · [Source repository](https://github.com/pypa/pip-audit)
 
 ### piqc
 
@@ -3280,17 +3282,18 @@ Unified exposure management platform.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities.
+GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
 
 **Use when**
 
-- Quick, scriptable TLS configuration audits.
+- You have authorization to assess TLS versions, cipher suites, certificates and known protocol weaknesses on owned endpoints.
 
 **Consider alternatives when**
 
-- You need continuous monitoring (use a TLS observatory or Qualys SSL Labs API).
+- You need passive, continuous certificate inventory or cannot obtain authorization to actively probe endpoints.
+- You assume the stable 3.2.x release and the separate 3.3 development snapshots provide identical tested capabilities.
 
-[Official site](https://testssl.sh) · [Source repository](https://github.com/drwetter/testssl.sh)
+[Official site](https://testssl.sh) · [Documentation](https://github.com/testssl/testssl.sh/blob/v3.2.4/Readme.md) · [Source repository](https://github.com/testssl/testssl.sh)
 
 ### Tetragon
 
@@ -3396,17 +3399,18 @@ Vulnerability scanner for containers and Kubernetes.
 **Model:** Open Core<br>
 **Status:** Needs Review
 
-Secret scanning tool; OSS core with enterprise features and integrations.
+AGPLv3 TruffleHog v3 scans Git repositories and other sources for secrets and can verify selected credentials; enterprise monitoring is a separate commercial product.
 
 **Use when**
 
-- Deep Git history scanning with credential verification.
+- You need permissioned scans for leaked credentials with verified findings and controlled remediation workflows.
 
 **Consider alternatives when**
 
-- You only need pre-commit hooks (use detect-secrets or Gitleaks).
+- You cannot authorize scanning of repositories or provider API verification that could contact external services.
+- You assume all detectors verify secrets or the v2 GPL code and v3 AGPL code have identical licence terms.
 
-[Official site](https://trufflesecurity.com) · [Source repository](https://github.com/trufflesecurity/trufflehog)
+[Official site](https://trufflesecurity.com) · [Documentation](https://github.com/trufflesecurity/trufflehog/blob/main/README.md) · [Source repository](https://github.com/trufflesecurity/trufflehog)
 
 ### Valqore
 

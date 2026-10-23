@@ -65,7 +65,7 @@
 - [Dependency-Track](https://dependencytrack.org) — OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
 - [DependencyCheck](https://owasp.org/projects/dependency-check) — Identify vulnerable dependencies.
 - [Descope](https://www.descope.com/) — Customer identity and access management platform with flows, SDKs, SSO, MFA, passkeys, and API integrations.
-- [detect-secrets](https://github.com/Yelp/detect-secrets) — Secrets detection with baseline support (reduce false positives).
+- [detect-secrets](https://github.com/Yelp/detect-secrets) — Apache-2.0 repository secret detector using configurable plugins, baselines and manual triage to prevent new credentials entering version control.
 - [Dex](https://dexidp.io) — Apache-2.0 OpenID Connect provider and federation broker for applications using external identity connectors.
 - [DigiCert](https://www.digicert.com/) — Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing, device trust, and related product families.
 - [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) — Proxy that restricts access to the Docker socket API.
@@ -121,7 +121,7 @@
 - [Kamaji](https://kamaji.clastix.io) — Kubernetes control plane manager (multi-tenancy/security).
 - [Katana](https://github.com/projectdiscovery/katana) — Web crawling framework for discovering application endpoints during authorized assessment and testing.
 - [Keycloak](https://www.keycloak.org) — Upstream open-source identity and access-management server providing SSO, identity federation and OpenID Connect, OAuth 2.0 and SAML for applications and services; Red Hat build packaging and managed IAM services are separate.
-- [Keystore Explorer](https://keystore-explorer.org) — GUI for managing keystores.
+- [Keystore Explorer](https://keystore-explorer.org) — Desktop Java KeyStore and certificate manager for PKCS#12, JKS and related formats, with JRE 17+ required and GPLv3 project licensing.
 - [kickthemout](https://github.com/roccomuso/kickthemout) — Kick devices off your local network using ARP spoofing (Node.js-based network security testing tool).
 - [Kiuwan](https://www.kiuwan.com/) — Commercial application-security platform for static analysis, software composition analysis, and code quality governance.
 - [Kloak](https://getkloak.io/) — eBPF-based Kubernetes runtime proxy that can keep application secrets out of workload processes.
@@ -136,7 +136,7 @@
 - [Kubernetes MCP Guard](https://github.com/mirusser/Kubernetes-MCP-Guard) — Security-focused MCP server that proposes Kubernetes remediation actions behind explicit human approval gates.
 - [Kubesec](https://kubesec.io) — Kubernetes manifest security risk scoring through local CLI/container, a self-hosted HTTP API or a best-effort public v2 API, with schema validation and scored recommendations.
 - [Kyverno](https://kyverno.io) — Kubernetes policy engine for validation, mutation, generation, cleanup and image verification with YAML/CEL policies; signing tools, OPA/Gatekeeper and other Kyverno subprojects remain separate.
-- [Lade](https://github.com/zifeo/lade) — Auto-load secrets from vaults into environment variables or files for shell commands with minimal exposure.
+- [Lade](https://github.com/zifeo/lade) — MPL-2.0 command-scoped secret and private-network access wrapper using provider-resolved environment variables, short-lived tunnels, shell hooks and agent harness hooks.
 - [Lefthook](https://lefthook.dev) — Fast Git hooks manager (parallel execution, cross-platform).
 - [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) — Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow injection or unintended code execution.
 - [Lynis](https://cisofy.com/lynis) — Security auditing and hardening tool with an enterprise offering (CISOfy).
@@ -149,7 +149,7 @@
 - [METATRON](https://github.com/sooryathejas/METATRON) — Experimental local-model assistant combining reconnaissance tools and stored scan results for security assessment.
 - [MFASweep](https://github.com/dafthack/MFASweep) — PowerShell tool for enumerating and testing MFA bypass paths across Microsoft 365 and Azure AD environments.
 - [mitmproxy](https://mitmproxy.org) — Interactive HTTPS proxy with CLI, web UI, and Python scripting for traffic inspection and testing.
-- [mkcert](https://mkcert.dev) — BSD-3-Clause CLI creating a locally trusted development CA and TLS certificates; current upstream maintenance remains unconfirmed.
+- [mkcert](https://mkcert.dev) — BSD-3-Clause local development certificate authority and TLS certificate CLI; the local rootCA-key.pem is highly sensitive and recent security maintenance remains unproven.
 - [ModSecurity](https://modsecurity.org) — Web Application Firewall (WAF) engine.
 - [NAXSI (WAF for NGINX)](https://github.com/wargio/naxsi) — Open source WAF module for NGINX (NAXSI).
 - [NetBird](https://netbird.io/) — Open-core WireGuard-based zero-trust networking platform with community self-hosting, managed cloud, and licensed enterprise options.
@@ -189,7 +189,7 @@
 - [PEASS-ng](https://github.com/peass-ng/PEASS-ng) — Security assessment script suite for identifying local privilege-escalation exposure on supported systems.
 - [PenTest Toolkit Pro](https://github.com/Cyber-Autopsie/PenTest-Toolkit-Pro) — Offline HTML toolkit for pentest checklists, audits, reporting, and action plans.
 - [pfSense](https://www.pfsense.org) — Open-source firewall and router platform.
-- [pip-audit](https://pypi.org/project/pip-audit) — Audit Python environments/dependencies for known vulnerabilities.
+- [pip-audit](https://pypi.org/project/pip-audit) — Apache-2.0 Python dependency vulnerability auditor using packaging advisory data, with requirements or environment scans and optional remediation via --fix.
 - [piqc](https://github.com/paralleliq/piqc) — Kubernetes scanner that discovers LLMs running on vLLM and extracts their deployment and runtime facts.
 - [Plumber](https://getplumber.io) — CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
 - [Pocket ID](https://pocket-id.org/) — Self-hosted OpenID Connect provider that authenticates users with passkeys.
@@ -239,10 +239,10 @@
 - [Tailscale](https://tailscale.com) — Zero-config VPN for secure networking; OSS client with commercial/SaaS control plane (self-hosting via Headscale available).
 - [Technitium DNS Server](https://technitium.com/dns/) — Self-hosted authoritative and recursive DNS server with an administrative web interface and blocking capabilities.
 - [Tekton Chains](https://tekton.dev/docs/chains/) — Tekton controller that records, signs, and stores supply-chain metadata for pipeline task runs.
-- [Teleport](https://goteleport.com) — Infrastructure access platform for SSH Kubernetes databases and apps with separate AGPL source, Apache API module and restricted Community binary terms.
-- [Teller](https://github.com/tellerops/teller) — Apache-2.0 Rust CLI for retrieving and injecting secrets from configured external providers; current release support remains inconclusive.
+- [Teleport](https://goteleport.com) — Teleport manages audited SSH, Kubernetes, database and application access; AGPL source/API module licences differ from the restricted Community binary and commercial Enterprise offerings.
+- [Teller](https://github.com/tellerops/teller) — Apache-2.0 CLI for accessing secrets from external stores and injecting them into local and CI commands; fresh stable release support remains unverified.
 - [Tenable One](https://github.com/tenable) — Unified exposure management platform.
-- [testssl.sh](https://testssl.sh) — Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities.
+- [testssl.sh](https://testssl.sh) — GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
 - [Tetragon](https://tetragon.io) — EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
 - [Thales CipherTrust Manager](https://cpl.thalesgroup.com/encryption/ciphertrust-manager) — Enterprise key and secret management.
 - [The Update Framework](https://theupdateframework.io/) — CNCF framework and specification for securing software update metadata against repository and signing-key compromise.
@@ -251,7 +251,7 @@
 - [Touti-Cracker](https://github.com/Touti-Sudo/Touti-Cracker) — Security testing tool.
 - [Tracee](https://aquasecurity.github.io/tracee/latest) — EBPF-based runtime security and threat detection for Linux systems and containers.
 - [Trivy](https://aquasecurity.github.io/trivy) — Vulnerability scanner for containers and Kubernetes.
-- [TruffleHog](https://trufflesecurity.com) — Secret scanning tool; OSS core with enterprise features and integrations.
+- [TruffleHog](https://trufflesecurity.com) — AGPLv3 TruffleHog v3 scans Git repositories and other sources for secrets and can verify selected credentials; enterprise monitoring is a separate commercial product.
 - [Valqore](https://www.valqore.io) — Automatic safety and security checks for cloud and AI environments.
 - [Vaultwarden](https://www.vaultwarden.net/) — Self-hosted server compatible with Bitwarden clients for team and personal secret vaults.
 - [Velociraptor](https://docs.velociraptor.app) — Digital forensics and incident response platform for endpoint investigation and threat hunting.

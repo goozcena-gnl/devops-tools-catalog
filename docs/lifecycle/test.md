@@ -103,7 +103,7 @@
 - [DeepEval](https://deepeval.com/) — Local-first framework for evaluating and regression-testing LLM applications, agents, RAG pipelines, and MCP systems.
 - [DefectDojo](https://www.defectdojo.com/) — Application security posture and vulnerability-management platform that ingests findings from many scanners.
 - [DependencyCheck](https://owasp.org/projects/dependency-check) — Identify vulnerable dependencies.
-- [detect-secrets](https://github.com/Yelp/detect-secrets) — Secrets detection with baseline support (reduce false positives).
+- [detect-secrets](https://github.com/Yelp/detect-secrets) — Apache-2.0 repository secret detector using configurable plugins, baselines and manual triage to prevent new credentials entering version control.
 - [Development Containers](https://containers.dev) — Open specification for defining reproducible, containerized development environments (devcontainers).
 - [DevPod](https://devpod.sh) — Open-source dev environments that can run locally or on remote providers.
 - [Devtron](https://devtron.ai) — Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations, plus separately offered commercial platform capabilities.
@@ -262,7 +262,7 @@
 - [PEASS-ng](https://github.com/peass-ng/PEASS-ng) — Security assessment script suite for identifying local privilege-escalation exposure on supported systems.
 - [PenTest Toolkit Pro](https://github.com/Cyber-Autopsie/PenTest-Toolkit-Pro) — Offline HTML toolkit for pentest checklists, audits, reporting, and action plans.
 - [pfSense](https://www.pfsense.org) — Open-source firewall and router platform.
-- [pip-audit](https://pypi.org/project/pip-audit) — Audit Python environments/dependencies for known vulnerabilities.
+- [pip-audit](https://pypi.org/project/pip-audit) — Apache-2.0 Python dependency vulnerability auditor using packaging advisory data, with requirements or environment scans and optional remediation via --fix.
 - [piqc](https://github.com/paralleliq/piqc) — Kubernetes scanner that discovers LLMs running on vLLM and extracts their deployment and runtime facts.
 - [Play with Docker](https://labs.play-with-docker.com) — Interactive Docker playground; open-source platform with hosted labs site.
 - [Playwright](https://playwright.dev) — End-to-end testing for web apps.
@@ -341,7 +341,7 @@
 - [Testkube](https://testkube.io) — Kubernetes-native test orchestration product with a standalone public agent, mixed MIT and Testkube Community License code, and a commercial control plane.
 - [TestRail](https://www.gurock.com/testrail) — Test case management platform.
 - [TestRigor](https://testrigor.com) — AI-powered end-to-end testing platform.
-- [testssl.sh](https://testssl.sh) — Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities.
+- [testssl.sh](https://testssl.sh) — GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
 - [Tetragon](https://tetragon.io) — EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
 - [TFLint](https://github.com/terraform-linters/tflint) — Pluggable Terraform-language linter for local and CI static analysis, including provider-specific rules. Much of the core is MPL-2.0; release binaries also include BUSL-1.1 Terraform-derived files, and external plugins have separate licences.
 - [ThreatLocker](https://www.threatlocker.com) — Zero trust endpoint protection platform.
@@ -351,7 +351,7 @@
 - [Tracee](https://aquasecurity.github.io/tracee/latest) — EBPF-based runtime security and threat detection for Linux systems and containers.
 - [Travis CI](https://www.travis-ci.com) — CI/CD service for GitHub.
 - [Trivy](https://aquasecurity.github.io/trivy) — Vulnerability scanner for containers and Kubernetes.
-- [TruffleHog](https://trufflesecurity.com) — Secret scanning tool; OSS core with enterprise features and integrations.
+- [TruffleHog](https://trufflesecurity.com) — AGPLv3 TruffleHog v3 scans Git repositories and other sources for secrets and can verify selected credentials; enterprise monitoring is a separate commercial product.
 - [Trunk](https://trunk.io/) — Developer workflow platform for code checks, flaky-test management, and merge automation.
 - [tunnelto.dev](https://tunnelto.dev) — Expose your local web server to the internet with a public URL via secure tunnels.
 - [Understand Anything](https://understand-anything.com) — AI-powered codebase graph and explainer for understanding repositories.
