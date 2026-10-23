@@ -283,7 +283,7 @@
   needs_review: false
 - id: docker-build
   name: Docker Build
-  summary: Documentation umbrella for Docker image building: Buildx is the CLI client and BuildKit its execution backend; not a separate source repository or licence grant.
+  summary: 'Documentation umbrella for Docker image building: Buildx is the CLI client and BuildKit its execution backend; not a separate source repository or licence grant.'
   official_url: https://docs.docker.com/build/
   documentation_url: https://docs.docker.com/build/concepts/overview/
   categories:
