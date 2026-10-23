@@ -77,4 +77,72 @@ This supplements, but does not replace, the original ten PENDING decisions. The 
 
 ### Decision gate after second pass
 
-**0 CLEAR / 0 RETAIN finalized / 10 PENDING.** Evidence is strengthened for Earthly's announced maintenance sunset and Skopeo's repository transfer but neither finding alone proves every canonical field. No changes have yet been made to canonical YAML, generated outputs, the strict-link baseline, or the historical N2a test. Proceed in a full checkout with a ten-ID field-level matrix, conservative status decisions, official docs generation, locked Python 3.12 pytest/Ruff/validator, independent review, and strict URL audit on the final SHA.
+**Initial second-pass position (superseded by the provisional decision section below): 0 CLEAR / 0 RETAIN finalized / 10 PENDING.** Evidence is strengthened for Earthly's announced maintenance sunset and Skopeo's repository transfer but neither finding alone proves every canonical field. No changes have yet been made to canonical YAML, generated outputs, the strict-link baseline, or the historical N2a test. Proceed in a full checkout with a ten-ID field-level matrix, conservative status decisions, official docs generation, locked Python 3.12 pytest/Ruff/validator, independent review, and strict URL audit on the final SHA.
+
+## Provisional Wave 22 canonical decision ledger — 2026-10-23
+
+**5 PROVISIONAL CLEAR / 5 RETAIN REVIEW**, subject to clean generation, complete Python 3.12 test suite, CI and independent reviewer scrutiny. This is a proposal, not approval to merge. Provisional clear: `cek`, `docker-buildx`, `ko`, `skopeo`, `werf`. Retain review: `distroless`, `docker-build`, `earthly`, `nix`, `shipwright`.
+
+The five provisional clears have tagged primary upstream licence files and release/repository evidence, canonical identity and bounded technical descriptions; this **does not** certify product or package security. They are suitable for independent scrutiny of their source-licence/maintenance and product boundaries. The other five remain under review for material unresolved assertions (image-layer grants, umbrella product identity, ceased active OSS maintenance, LGPL `-only` vs `-or-later`, versioned Kubernetes operator privilege/strategy claims).
+
+**Preliminary inventory after official generator (unverified until regeneration):** 1,425 total, 779 active, 632 needs-review. Existing records outside the exact ten IDs remain untouched; original legacy source lines are retained. No new canonical IDs, no URL baseline edits, no historical N2a changes. Skopeo points to the transferred GitHub repository of the same immutable repository ID; the old URL is retained as a source.
+
+### Canonical changed-field matrix (previous `main` → Draft PR)
+
+The following matrix is generated from a complete comparison of each selected ID's YAML block. `sources` field displays official primary URLs and original historical provenance; `status` and `needs_review` stay unchanged for retained records. This full ledger must be rechecked after any subsequent data correction.
+
+| ID | Field | Before | Proposed after |
+|---|---|---|---|
+| `cek` | `summary` | Inspect OCI image filesystems and layers without running containers.;  | Read-only exploration of OCI container-image filesystem contents and layers without executing containers.;  |
+| `cek` | `status` | needs-review;  | active;  |
+| `cek` | `verified_on` | '2026-08-03';  | '2026-10-23';  |
+| `cek` | `sources` | ;   - legacy:devopstools_final.md#L350;  | ;   - https://github.com/bschaatsbergen/cek/blob/v0.3.0/LICENSE;   - https://github.com/bschaatsbergen/cek/releases/tag/v0.3.0;   - https://github.com/bschaatsbergen/cek;   - legacy:devopstools_final.md#L350;  |
+| `cek` | `needs_review` | true | false |
+| `cek` | `license_spdx` | (absent) | MIT;  |
+| `distroless` | `summary` | Minimal container images for secure deployments.;  | Minimal runtime container images without a shell or package manager in standard variants; separately published debug variants support troubleshooting.;  |
+| `distroless` | `avoid_when` | ;   - '* You need to exec into containers for debugging or require OS-level packages at runtime.';  | ;   - '* You need to exec into containers for debugging or require OS-level packages at runtime.';   - You assume the source repository's Apache-2.0 licence covers every image layer and runtime dependency.;  |
+| `distroless` | `verified_on` | '2026-08-03';  | '2026-10-23';  |
+| `distroless` | `sources` | ;   - legacy:3_CI-CD-Automation/README.md#L78;   - legacy:devopstools_final.md#L351;  | ;   - https://github.com/GoogleContainerTools/distroless;   - https://github.com/GoogleContainerTools/distroless/blob/main/LICENSE;   - https://github.com/GoogleContainerTools/distroless/blob/main/SUPPORT_POLICY.md;   - legacy:3_CI-CD-Automation/README.md#L78;   - legacy:devopstools_final.md#L351;  |
+| `docker-build` | `summary` | Umbrella Docker image-build feature implemented through the separately catalogued Docker Buildx client and BuildKit backend.;  | Documentation umbrella for Docker image building: Buildx is the CLI client and BuildKit its execution backend; not a separate source repository or licence grant.;  |
+| `docker-build` | `verified_on` | '2026-09-13';  | '2026-10-23';  |
+| `docker-build` | `sources` | ;   - https://docs.docker.com/build/;   - https://docs.docker.com/build/concepts/overview/;   - https://github.com/docker/buildx;   - https://github.com/moby/buildkit;   - legacy:3_CI-CD-Automation/README.md#L80;   - legacy:devopstools_final.md#L352;  | ;   - https://docs.docker.com/build/builders/;   - https://docs.docker.com/build/;   - https://docs.docker.com/build/concepts/overview/;   - https://github.com/docker/buildx;   - https://github.com/moby/buildkit;   - legacy:3_CI-CD-Automation/README.md#L80;   - legacy:devopstools_final.md#L352;  |
+| `docker-buildx` | `summary` | Docker CLI plugin for extended build capabilities.;  | Docker CLI build client for BuildKit, supporting configurable builders, multi-platform images and external build caches.;  |
+| `docker-buildx` | `status` | needs-review;  | active;  |
+| `docker-buildx` | `verified_on` | '2026-08-03';  | '2026-10-23';  |
+| `docker-buildx` | `sources` | ;   - legacy:3_CI-CD-Automation/README.md#L82;   - legacy:devopstools_final.md#L353;  | ;   - https://github.com/docker/buildx/blob/v0.38.1/LICENSE;   - https://github.com/docker/buildx/releases/tag/v0.38.1;   - https://docs.docker.com/build/concepts/overview/;   - https://docs.docker.com/build/builders/;   - legacy:3_CI-CD-Automation/README.md#L82;   - legacy:devopstools_final.md#L353;  |
+| `docker-buildx` | `needs_review` | true | false |
+| `docker-buildx` | `license_spdx` | (absent) | Apache-2.0;  |
+| `earthly` | `summary` | Build automation framework.;  | Dockerfile-like build orchestration CLI; upstream ended active OSS maintenance in April 2025 and retired its Cloud/Satellite services in July 2025.;  |
+| `earthly` | `avoid_when` | ;   - '* Your team already has a well-tuned build system and doesn''t need another abstraction layer.';  | ;   - '* Your team already has a well-tuned build system and doesn''t need another abstraction layer.';   - You require actively maintained OSS builds or the discontinued Earthly Cloud/Satellite services.;  |
+| `earthly` | `verified_on` | '2026-08-03';  | '2026-10-23';  |
+| `earthly` | `sources` | ;   - legacy:3_CI-CD-Automation/README.md#L86;   - legacy:devopstools_final.md#L355;  | ;   - https://earthly.dev/blog/shutting-down-earthfiles-cloud/;   - https://github.com/earthly/earthly/blob/v0.8.16/LICENSE;   - https://github.com/earthly/earthly/releases/tag/v0.8.16;   - legacy:3_CI-CD-Automation/README.md#L86;   - legacy:devopstools_final.md#L355;  |
+| `earthly` | `license_spdx` | (absent) | MPL-2.0;  |
+| `ko` | `summary` | Build Go apps into container images.;  | Build and publish Go application OCI images without writing Dockerfiles; publishes SBOMs by default in supported releases.;  |
+| `ko` | `status` | needs-review;  | active;  |
+| `ko` | `verified_on` | '2026-08-03';  | '2026-10-23';  |
+| `ko` | `sources` | ;   - legacy:3_CI-CD-Automation/README.md#L92;   - legacy:devopstools_final.md#L358;  | ;   - https://github.com/ko-build/ko/blob/v0.19.1/LICENSE;   - https://github.com/ko-build/ko/releases/tag/v0.19.1;   - https://ko.build/features/sboms/;   - https://ko.build/;   - legacy:3_CI-CD-Automation/README.md#L92;   - legacy:devopstools_final.md#L358;  |
+| `ko` | `needs_review` | true | false |
+| `ko` | `license_spdx` | (absent) | Apache-2.0;  |
+| `nix` | `summary` | Reproducible build and package manager.;  | Functional, reproducible package manager and build system; distinct from NixOS/nixpkgs and not a standalone OCI image builder.;  |
+| `nix` | `verified_on` | '2026-08-03';  | '2026-10-23';  |
+| `nix` | `sources` | ;   - legacy:3_CI-CD-Automation/README.md#L94;   - legacy:devopstools_final.md#L359;  | ;   - https://github.com/NixOS/nix;   - https://github.com/NixOS/nix/blob/master/COPYING;   - legacy:3_CI-CD-Automation/README.md#L94;   - legacy:devopstools_final.md#L359;  |
+| `shipwright` | `summary` | Framework for building container images on Kubernetes.;  | Kubernetes-native image-build orchestration using Build and BuildRun resources and pluggable build strategies backed by Tekton.;  |
+| `shipwright` | `verified_on` | '2026-08-03';  | '2026-10-23';  |
+| `shipwright` | `sources` | ;   - legacy:3_CI-CD-Automation/README.md#L96;   - legacy:devopstools_final.md#L361;  | ;   - https://github.com/shipwright-io/build;   - https://github.com/shipwright-io/build/blob/v0.21.10/LICENSE;   - https://github.com/shipwright-io/build/releases/tag/v0.21.10;   - https://shipwright.io/docs/build/buildrun/;   - legacy:3_CI-CD-Automation/README.md#L96;   - legacy:devopstools_final.md#L361;  |
+| `skopeo` | `summary` | Daemonless tool to inspect, copy, sign, and sync container images across registries and local;     stores.;  | Daemonless tool to inspect, copy and synchronize remote OCI/container images and registries without building or running images.;  |
+| `skopeo` | `repository_url` | https://github.com/containers/skopeo;  | https://github.com/podman-container-tools/skopeo;  |
+| `skopeo` | `status` | needs-review;  | active;  |
+| `skopeo` | `verified_on` | '2026-08-03';  | '2026-10-23';  |
+| `skopeo` | `sources` | ;   - legacy:devopstools_final.md#L363;  | ;   - https://github.com/containers/skopeo;   - https://github.com/podman-container-tools/skopeo/blob/main/README.md;   - https://github.com/podman-container-tools/skopeo/blob/v1.24.1/LICENSE;   - https://github.com/podman-container-tools/skopeo/releases/tag/v1.24.1;   - legacy:devopstools_final.md#L363;  |
+| `skopeo` | `needs_review` | true | false |
+| `skopeo` | `license_spdx` | (absent) | Apache-2.0;  |
+| `werf` | `summary` | GitOps tool for building and deploying containers.;  | Git-driven Kubernetes delivery tool combining container-image builds, deployment and Helm-based release workflows.;  |
+| `werf` | `status` | needs-review;  | active;  |
+| `werf` | `verified_on` | '2026-08-03';  | '2026-10-23';  |
+| `werf` | `sources` | ;   - legacy:3_CI-CD-Automation/README.md#L98;   - legacy:devopstools_final.md#L364;  | ;   - https://github.com/werf/werf/blob/v2.81.4/LICENSE;   - https://github.com/werf/werf/releases/tag/v2.81.4;   - https://werf.io/;   - legacy:3_CI-CD-Automation/README.md#L98;   - legacy:devopstools_final.md#L364;  |
+| `werf` | `needs_review` | true | false |
+| `werf` | `license_spdx` | (absent) | Apache-2.0;  |
+
+### Validation pending
+
+The canonical YAML modification was committed to the Draft branch **without locally executing** Python 3.12 tests or the official generator: the available GitHub connector edits source files but cannot run repository-side commands. CI is expected to fail generated-output consistency until official regeneration. **Do not merge, mark Ready for review, or treat any CLEAR as final yet.** Regenerate with `python -m scripts.generate_docs`, verify output list and stats; then run locked deps, full pytest, Ruff, catalogue validator and a final-HEAD strict link audit only after the checks are green. If a source is not actually sufficient, reverse only that record's clearance and update this matrix.
