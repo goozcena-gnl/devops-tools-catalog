@@ -1365,7 +1365,7 @@
   needs_review: false
 - id: detect-secrets
   name: detect-secrets
-  summary: Secrets detection with baseline support (reduce false positives).
+  summary: Apache-2.0 repository secret detector using configurable plugins, baselines and manual triage to prevent new credentials entering version control.
   repository_url: https://github.com/Yelp/detect-secrets
   categories:
   - application-cloud-security
@@ -1378,20 +1378,27 @@
   - test
   - secure
   use_when:
-  - As a pre-commit hook to prevent secret leaks with manageable false-positive rates.
+  - You need pre-commit and CI checks with a reviewed secret baseline that helps control false positives.
   avoid_when:
-  - You need historical repo scanning (use TruffleHog/Gitleaks).
+  - You need guaranteed detection of all leaked credentials or verified live validity without additional tools.
+  - You require repository-wide secret history triage beyond a configured baseline-only pre-commit process.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
   - legacy:6_Security/README.md#L21
   - legacy:devopstools_final.md#L857
-  needs_review: true
+  - https://github.com/Yelp/detect-secrets/blob/master/LICENSE
+  - https://github.com/Yelp/detect-secrets/releases/tag/v1.5.0
+  - https://github.com/Yelp/detect-secrets/blob/master/README.md
+  license_spdx: Apache-2.0
+  documentation_url: https://github.com/Yelp/detect-secrets/blob/master/README.md
+  repository_archived: false
+  needs_review: false
 - id: digicert
   name: DigiCert
   summary: Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing, device trust, and related product families.
@@ -3963,7 +3970,7 @@
   needs_review: true
 - id: pip-audit
   name: pip-audit
-  summary: Audit Python environments/dependencies for known vulnerabilities.
+  summary: Apache-2.0 Python dependency vulnerability auditor using packaging advisory data, with requirements or environment scans and optional remediation via --fix.
   official_url: https://pypi.org/project/pip-audit
   repository_url: https://github.com/pypa/pip-audit
   categories:
@@ -3977,20 +3984,27 @@
   - test
   - secure
   use_when:
-  - Python-specific SCA in CI.
+  - You need vulnerability checking for installed Python packages or requirements in CI and want advisory-backed findings.
   avoid_when:
-  - You already run Trivy/Grype which also cover Python packages.
+  - You need malicious package discovery, a complete security assessment or proof that packages without advisories are safe.
+  - Automatic --fix updates would be applied without dependency-lock review, regression tests and change control.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
   - legacy:6_Security/README.md#L45
   - legacy:devopstools_final.md#L900
-  needs_review: true
+  - https://github.com/pypa/pip-audit/blob/main/LICENSE
+  - https://github.com/pypa/pip-audit/releases/tag/v2.10.1
+  - https://github.com/pypa/pip-audit/blob/v2.10.1/README.md
+  license_spdx: Apache-2.0
+  documentation_url: https://github.com/pypa/pip-audit/blob/main/README.md
+  repository_archived: false
+  needs_review: false
 - id: piqc
   name: piqc
   summary: Kubernetes scanner that discovers LLMs running on vLLM and extracts their deployment and runtime
@@ -4958,9 +4972,9 @@
   needs_review: true
 - id: testssl-sh
   name: testssl.sh
-  summary: Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities.
+  summary: GPL-2.0-only Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
   official_url: https://testssl.sh
-  repository_url: https://github.com/drwetter/testssl.sh
+  repository_url: https://github.com/testssl/testssl.sh
   categories:
   - application-cloud-security
   subcategories:
@@ -4972,20 +4986,27 @@
   - test
   - secure
   use_when:
-  - Quick, scriptable TLS configuration audits.
+  - You have authorization to assess TLS versions, cipher suites, certificates and known protocol weaknesses on owned endpoints.
   avoid_when:
-  - You need continuous monitoring (use a TLS observatory or Qualys SSL Labs API).
+  - You need passive, continuous certificate inventory or cannot obtain authorization to actively probe endpoints.
+  - You assume the stable 3.2.x release and the separate 3.3 development snapshots provide identical tested capabilities.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
   - legacy:6_Security/README.md#L52
   - legacy:devopstools_final.md#L916
-  needs_review: true
+  - https://github.com/testssl/testssl.sh/blob/v3.2.4/LICENSE
+  - https://github.com/testssl/testssl.sh/blob/v3.2.4/Readme.md
+  - https://github.com/testssl/testssl.sh/releases/tag/v3.2.4
+  license_spdx: GPL-2.0-only
+  documentation_url: https://github.com/testssl/testssl.sh/blob/v3.2.4/Readme.md
+  repository_archived: false
+  needs_review: false
 - id: tetragon
   name: Tetragon
   summary: EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
@@ -5100,7 +5121,7 @@
   needs_review: true
 - id: trufflehog
   name: TruffleHog
-  summary: Secret scanning tool; OSS core with enterprise features and integrations.
+  summary: AGPLv3 TruffleHog v3 scans Git repositories and other sources for secrets and can verify selected credentials; enterprise monitoring is a separate commercial product.
   official_url: https://trufflesecurity.com
   repository_url: https://github.com/trufflesecurity/trufflehog
   categories:
@@ -5114,20 +5135,28 @@
   - test
   - secure
   use_when:
-  - Deep Git history scanning with credential verification.
+  - You need permissioned scans for leaked credentials with verified findings and controlled remediation workflows.
   avoid_when:
-  - You only need pre-commit hooks (use detect-secrets or Gitleaks).
+  - You cannot authorize scanning of repositories or provider API verification that could contact external services.
+  - You assume all detectors verify secrets or the v2 GPL code and v3 AGPL code have identical licence terms.
   deployment_models: []
   license_model: open-core
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-23'
   sources:
   - legacy:6_Security/README.md#L55
   - legacy:devopstools_final.md#L919
-  needs_review: true
+  - https://github.com/trufflesecurity/trufflehog/blob/main/LICENSE
+  - https://github.com/trufflesecurity/trufflehog/blob/main/README.md
+  - https://github.com/trufflesecurity/trufflehog/releases/tag/v3.99.4
+  license_spdx: AGPL-3.0-only
+  commercial_offering: true
+  documentation_url: https://github.com/trufflesecurity/trufflehog/blob/main/README.md
+  repository_archived: false
+  needs_review: false
 - id: valqore
   name: Valqore
   summary: Automatic safety and security checks for cloud and AI environments.
