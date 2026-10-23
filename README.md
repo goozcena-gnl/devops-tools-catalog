@@ -17,11 +17,11 @@ The DevOps ecosystem changes faster than a static list can safely represent: pro
 
 | Measure | Current value |
 |---|---:|
-| Canonical tool and resource records | **1,425** |
+| Canonical tool and resource records | **1,426** |
 | Categories | **30** |
 | Engineering roles | **13** |
 | Lifecycle stages | **12** |
-| Records not flagged for review | **785** |
+| Records not flagged for review | **786** |
 | Records requiring review | **640** |
 | Deprecated, archived, or historical records | **14** |
 | Archived source repositories | **12** |
@@ -105,7 +105,7 @@ needs_review: false
 | [Monitoring, metrics, logs and tracing](docs/categories/monitoring-metrics-logs-tracing.md) | 102 |
 | [SRE, incident response and on-call](docs/categories/sre-incident-response-on-call.md) | 24 |
 | [Backup, disaster recovery and resilience](docs/categories/backup-disaster-recovery-resilience.md) | 16 |
-| [Chaos and performance engineering](docs/categories/chaos-performance-engineering.md) | 25 |
+| [Chaos and performance engineering](docs/categories/chaos-performance-engineering.md) | 26 |
 | [Application and cloud security](docs/categories/application-cloud-security.md) | 186 |
 | [IAM, secrets and certificate management](docs/categories/iam-secrets-certificates.md) | 44 |
 | [Software supply-chain security](docs/categories/software-supply-chain-security.md) | 21 |
@@ -131,7 +131,7 @@ needs_review: false
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 933 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 934 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 27 |
 | `open-core` | OSS/community core with commercial features or service. | 113 |
 | `commercial` | Proprietary commercial product. | 163 |
@@ -143,7 +143,7 @@ needs_review: false
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 771 |
+| `active` | Maintained according to recorded primary-source evidence. | 772 |
 | `needs-review` | Imported but not yet fully verified. | 640 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 10 |
