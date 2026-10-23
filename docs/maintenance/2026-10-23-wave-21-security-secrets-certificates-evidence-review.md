@@ -2,7 +2,7 @@
 
 Reviewed: 2026-10-23. Baseline main: `f50a239e7dff2f782e4e413bbf80846cabd62e09`. Tracker: [#131](https://github.com/goozcena-gnl/devops-tools-catalog/issues/131).
 
-**Revised decisions following Codex P1: 5 CLEAR, 5 RETAIN REVIEW.** All 10 IDs unchanged; review debt 640 → 635, active 771 → 776 once the official generator is rerun. These are **proposals**, not acceptance to merge. There is a concurrent unrelated contributor PR #132 that this branch must not touch.
+**Revised decisions following Codex P1: 4 CLEAR, 6 RETAIN REVIEW.** All 10 IDs unchanged; review debt 640 → 636, active 771 → 775 once the official generator is rerun. These are **proposals**, not acceptance to merge. There is a concurrent unrelated contributor PR #132 that this branch must not touch.
 
 ## Decisions and remaining uncertainties
 
@@ -17,7 +17,7 @@ Reviewed: 2026-10-23. Baseline main: `f50a239e7dff2f782e4e413bbf80846cabd62e09`.
 | `detect-secrets` | **CLEAR** | Yelp Apache-2.0 baseline and triage driven secret detector; repository activity April 2026 but last GitHub stable v1.5.0 May 2024. |
 | `pip-audit` | **CLEAR** | PyPA Apache-2.0 dependency advisory scans, optional --fix and June 2026 v2.10.1 release. |
 | `trufflehog` | **RETAIN REVIEW** | AGPLv3 family confirmed, but explicit upstream variant AGPL-3.0-only versus AGPL-3.0-or-later unresolved, as noted by Codex P1. |
-| `testssl-sh` | **CLEAR** | Original drwetter repository redirects to testssl/testssl.sh; stable v3.2.4 July 2026, GPLv2 terms, Bash-based authorized TLS probing. |
+| `testssl-sh` | **RETAIN REVIEW** | Original drwetter repository redirects to testssl/testssl.sh; GPLv2 family confirmed but no explicit authoritative `GPL-2.0-only` versus `GPL-2.0-or-later` grant. |
 
 ## Complete changed-field baseline → proposed final ledger
 
@@ -149,22 +149,25 @@ All changed canonical fields, including complete sources and legacy provenance, 
 
 | Field | Before | After |
 |---|---|---|
-| `summary` | summary: Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities. | summary: GPL-2.0-only Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output. |
+| `summary` | summary: Command-line tool for testing TLS/SSL ciphers, protocols, and vulnerabilities. | summary: GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output. |
 | `repository_url` | repository_url: https://github.com/drwetter/testssl.sh | repository_url: https://github.com/testssl/testssl.sh |
 | `use_when` | use_when:; Quick, scriptable TLS configuration audits. | use_when:; You have authorization to assess TLS versions, cipher suites, certificates and known protocol weaknesses on owned endpoints. |
 | `avoid_when` | avoid_when:; You need continuous monitoring (use a TLS observatory or Qualys SSL Labs API). | avoid_when:; You need passive, continuous certificate inventory or cannot obtain authorization to actively probe endpoints.; You assume the stable 3.2.x release and the separate 3.3 development snapshots provide identical tested capabilities. |
 | `maturity` | maturity: unknown | maturity: established |
-| `status` | status: needs-review | status: active |
+| `status` | status: needs-review | status: needs-review |
 | `verified_on` | verified_on: '2026-08-03' | verified_on: '2026-10-23' |
 | `sources` | sources:; legacy:6_Security/README.md#L52; legacy:devopstools_final.md#L916 | sources:; legacy:6_Security/README.md#L52; legacy:devopstools_final.md#L916; https://github.com/testssl/testssl.sh/blob/v3.2.4/LICENSE; https://github.com/testssl/testssl.sh/blob/v3.2.4/Readme.md; https://github.com/testssl/testssl.sh/releases/tag/v3.2.4 |
-| `needs_review` | needs_review: true | needs_review: false |
-| `license_spdx` | ∅ | license_spdx: GPL-2.0-only |
+| `needs_review` | needs_review: true | needs_review: true |
 | `documentation_url` | ∅ | documentation_url: https://github.com/testssl/testssl.sh/blob/v3.2.4/Readme.md |
 | `repository_archived` | ∅ | repository_archived: false |
 
 ## Codex P1 corrections — exact licence grant remains unverified
 
 The Codex review on PR #133 identified two material errors in premature clearance. `keystore-explorer` has standard GPLv3 boilerplate but no verified project-specific `-only` / `-or-later` grant. `trufflehog` has AGPLv3 boilerplate without a verified exact variant, including an upstream licence ambiguity discussion. Both records now **retain** `needs_review: true` and `status: needs-review` and **omit** `license_spdx` entirely; version, maintenance and general licence-family context are preserved. No claim of fully resolved licensing is made. This replaces the initial seven-cleared/five-retained projection with **five cleared/five retained**. Regenerate all derived statistics and pages, then re-run CI and a strict link audit on the updated SHA. Do not resolve P1 threads until the updates and evidence are checked. The earlier audit #29 applies only to the superseded SHA `10178d8eb4930d029797fb1549a28f6ba6d60fae`.
+
+## Codex third P1 — testssl.sh exact GPLv2 variant (2026-10-23)
+
+Following a fresh review of the prior ready-for-review SHA `a346129550c5ff04e428b9f1e6d2f16fa8b577b5`, Codex flagged that the versioned README and generic GPLv2 LICENSE cannot establish whether the project grants `GPL-2.0-only` or `GPL-2.0-or-later`. The record therefore retains `needs_review: true` and `status: needs-review`; its unsupported exact `license_spdx` was removed, and the summary now says GPLv2-family. Repo relocation, edition-independent behavior and historical source references remain intact. The tally is now **4 CLEAR / 6 RETAIN REVIEW**, predicted 775 active / 636 needs-review once the official generator runs. The previous audit #30 is NOT valid for this newly modified SHA. Re-run generation, complete CI, and strict link audit on the final SHA before resolving this P1 or merging.
 
 ## Required validation and blockers
 
