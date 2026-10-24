@@ -39,7 +39,7 @@
 | [Arcane](https://getarcane.app/) | Virtualization, bare metal and homelab | oss | active |
 | [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) | CI, build and testing | oss | active |
-| [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |
+| [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
@@ -107,7 +107,7 @@
 | [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | commercial | active |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Cacti](https://www.cacti.net) | Monitoring, metrics, logs and tracing | oss | active |
-| [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
+| [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | active |
 | [Cadence CI](https://cadence.ci) | CI, build and testing | commercial | active |
 | [cAdvisor](https://github.com/google/cadvisor) | Monitoring, metrics, logs and tracing | oss | active |
 | [Cal.com](https://cal.com) | Workflow automation and ChatOps | oss | needs-review |
@@ -252,7 +252,7 @@
 | [Fluentd](https://www.fluentd.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
 | [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | active |
-| [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
+| [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | active |
 | [freeCodeCamp](https://www.freecodecamp.org) | Foundations, Linux and scripting | documentation | needs-review |
 | [FreeCodeCamp DevOps](https://www.freecodecamp.org/news/tag/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [fulcio (sigstore)](https://github.com/sigstore/fulcio) | Emerging and experimental tools | oss | needs-review |
@@ -352,7 +352,7 @@
 | [k6](https://k6.io) | CI, build and testing | oss | needs-review |
 | [K8s in a Box](https://github.com/moabukar/k8s-in-a-box) | Documentation, learning and career resources | documentation | needs-review |
 | [k8squest](https://github.com/Manoj-engineer/k8squest) | Documentation, learning and career resources | documentation | needs-review |
-| [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | needs-review |
+| [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | active |
 | [Kaniko](https://github.com/GoogleContainerTools/kaniko) | Deprecated and historical tools, Containers and image tooling | oss | archived |
 | [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
 | [Kata Containers](https://katacontainers.io) | Virtualization, bare metal and homelab | oss | active |
@@ -380,7 +380,7 @@
 | [Kube Monkey](https://github.com/asobti/kube-monkey) | Chaos and performance engineering | oss | active |
 | [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) | Monitoring, metrics, logs and tracing | oss | active |
-| [KubeChecks](https://kubechecks.readthedocs.io/en/latest) | CD, GitOps, release and promotion | oss | needs-review |
+| [KubeChecks](https://kubechecks.readthedocs.io/en/latest) | CD, GitOps, release and promotion | oss | active |
 | [kubeCodex](https://github.com/TheCodingSheikh/kubecodex) | Documentation, learning and career resources | documentation | needs-review |
 | [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) | Chaos and performance engineering | oss | active |
 | [KubeLearn](https://kubelearn.yoparchi.fr) | Documentation, learning and career resources | documentation | needs-review |
@@ -660,7 +660,7 @@
 | [tunnelto.dev](https://tunnelto.dev) | Developer experience and local environments | unknown | needs-review |
 | [Ubuntu-fr community documentation](https://www.ubuntu-fr.org/) | Documentation, learning and career resources | documentation | active |
 | [Udemy CKA Course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests) | Documentation, learning and career resources | documentation | needs-review |
-| [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | needs-review |
+| [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | active |
 | [Understand Anything](https://understand-anything.com) | Developer experience and local environments | unknown | needs-review |
 | [Unraid](https://unraid.net) | Virtualization, bare metal and homelab | unknown | needs-review |
 | [Uptime Kuma](https://uptime.kuma.pet) | Monitoring, metrics, logs and tracing | oss | active |
