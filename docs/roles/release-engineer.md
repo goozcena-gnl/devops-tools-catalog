@@ -13,7 +13,7 @@
 | [Appcircle](https://appcircle.io) | CI, build and testing | commercial | active |
 | [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) | CI, build and testing | oss | active |
-| [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |
+| [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
@@ -29,7 +29,7 @@
 | [Buddy](https://buddy.works) | CI, build and testing | commercial | active |
 | [Buildkite](https://buildkite.com) | CI, build and testing | commercial | active |
 | [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | commercial | active |
-| [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
+| [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | active |
 | [Cadence CI](https://cadence.ci) | CI, build and testing | commercial | active |
 | [cargo-binstall](https://github.com/cargo-bins/cargo-binstall) | Artifact and package management | oss | active |
 | [cargo-chef](https://github.com/LukeMathWalker/cargo-chef) | CI, build and testing | oss | active |
@@ -64,7 +64,7 @@
 | [FitNesse](https://fitnesse.org) | CI, build and testing | oss | active |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
 | [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | active |
-| [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
+| [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | active |
 | [Gerrit Code Review](https://www.gerritcodereview.com/) | Source control and repository management | oss | active |
 | [ggshield](https://github.com/GitGuardian/ggshield) | Software supply-chain security | oss | active |
 | [Git](https://git-scm.com) | Source control and repository management | oss | needs-review |
@@ -98,12 +98,12 @@
 | [JFrog Platform](https://jfrog.com/platform/) | Artifact and package management | commercial | active |
 | [JUnit](https://junit.org/) | CI, build and testing | oss | active |
 | [k6](https://k6.io) | CI, build and testing | oss | needs-review |
-| [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | needs-review |
+| [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | active |
 | [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
 | [Katalon Studio](https://katalon.com/katalon-studio) | CI, build and testing | commercial | active |
 | [Keel](https://keel.sh) | CD, GitOps, release and promotion | oss | active |
 | [Keptn](https://keptn.sh) | Deprecated and historical tools, CI, build and testing | oss | archived |
-| [KubeChecks](https://kubechecks.readthedocs.io/en/latest) | CD, GitOps, release and promotion | oss | needs-review |
+| [KubeChecks](https://kubechecks.readthedocs.io/en/latest) | CD, GitOps, release and promotion | oss | active |
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
 | [kURL](https://kurl.sh/) | Kubernetes distributions and operations | oss | active |
 | [Learn Git Branching](https://learngitbranching.js.org) | Source control and repository management | documentation | needs-review |
@@ -161,7 +161,7 @@
 | [Tofu Controller](https://flux-iac.github.io/tofu-controller) | CD, GitOps, release and promotion | oss | active |
 | [Travis CI](https://www.travis-ci.com) | CI, build and testing | unknown | needs-review |
 | [Trunk](https://trunk.io/) | CI, build and testing | commercial | active |
-| [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | needs-review |
+| [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | active |
 | [validate-dependabot](https://github.com/marocchino/validate-dependabot) | CI, build and testing | oss | needs-review |
 | [Vercel](https://vercel.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion, Serverless, edge and WebAssembly | commercial | active |
 | [Vitest](https://vitest.dev) | CI, build and testing | oss | needs-review |

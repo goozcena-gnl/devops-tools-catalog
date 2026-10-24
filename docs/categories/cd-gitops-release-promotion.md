@@ -48,9 +48,9 @@ Declarative GitOps continuous delivery for Kubernetes.
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Agent-based architecture for ArgoCD to manage remote clusters.
+Agent and principal components for managing remote Argo CD clusters over authenticated mTLS connections; a separate project from Argo CD core.
 
 **Use when**
 
@@ -59,8 +59,9 @@ Agent-based architecture for ArgoCD to manage remote clusters.
 **Consider alternatives when**
 
 - * Your clusters are reachable from ArgoCD and the standard model works fine.
+- Do not assume Argo CD core and argocd-agent share release maturity or Kubernetes privileges; verify principal/agent mTLS and RBAC.
 
-[Official site](https://argocd-agent.readthedocs.io/latest)
+[Official site](https://argocd-agent.readthedocs.io/latest) · [Source repository](https://github.com/argoproj-labs/argocd-agent)
 
 ### ArgoCD Diff Preview
 
@@ -145,9 +146,9 @@ Environment-as-a-service platform for preview, staging, and ephemeral cloud envi
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Extensible web server and reverse proxy with automatic HTTPS.
+Extensible web server, reverse proxy and HTTPS endpoint with automatic certificate management; not a GitOps reconciliation controller.
 
 **Use when**
 
@@ -155,7 +156,7 @@ Extensible web server and reverse proxy with automatic HTTPS.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need GitOps reconciliation; Caddy serves and proxies traffic rather than managing Kubernetes application state.
 
 [Official site](https://caddyserver.com) · [Source repository](https://github.com/caddyserver/caddy)
 
@@ -297,9 +298,9 @@ ControlPlane-maintained Kubernetes operator installing, configuring and upgradin
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
+Terminal UI for inspecting Flux GitOps controllers and Kubernetes workloads, with RBAC-gated cluster operations.
 
 **Use when**
 
@@ -307,7 +308,7 @@ K9s-inspired terminal UI for Flux resources, controller health, and GitOps state
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You expect a Flux controller or assume the terminal UI can change cluster resources without Kubernetes RBAC.
 
 [Official site](https://flux9s.ca) · [Source repository](https://github.com/dgunzy/flux9s)
 
@@ -327,6 +328,7 @@ GitOps Bridge is a community pattern and example repository passing cluster-prov
 **Consider alternatives when**
 
 - Do not treat the pattern as an installable platform or assume completed Flux integration; verify present maintenance and example compatibility before production adoption.
+- You require an independently maintained and fully supported GitOps controller; this project publishes examples and maintenance is not established.
 
 [Official site](https://github.com/gitops-bridge-dev/gitops-bridge) · [Documentation](https://github.com/gitops-bridge-dev/gitops-bridge/blob/main/README.md) · [Source repository](https://github.com/gitops-bridge-dev/gitops-bridge)
 
@@ -335,9 +337,9 @@ GitOps Bridge is a community pattern and example repository passing cluster-prov
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
+Deploy and roll containerized web applications onto remote servers over SSH using Kamal and kamal-proxy, without requiring Kubernetes.
 
 **Use when**
 
@@ -345,7 +347,7 @@ Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You specifically need Kubernetes-native reconciliation or do not control SSH and Docker credentials on deployment hosts.
 
 [Official site](https://kamal-deploy.org) · [Source repository](https://github.com/basecamp/kamal)
 
@@ -392,9 +394,9 @@ Automated Kubernetes deployment updates.
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Pre-merge validation for Kubernetes GitOps changes.
+Pre-merge Kubernetes GitOps application change review that integrates with Kubernetes and Argo CD rather than reconciling deployments itself.
 
 **Use when**
 
@@ -403,8 +405,9 @@ Pre-merge validation for Kubernetes GitOps changes.
 **Consider alternatives when**
 
 - * You already have CI-based validation or don't do PR-based GitOps.
+- Your review bot must have no access to cluster or GitOps API credentials; evaluate the required Kubernetes and Argo CD permissions.
 
-[Official site](https://kubechecks.readthedocs.io/en/latest)
+[Official site](https://kubechecks.readthedocs.io/en/latest) · [Source repository](https://github.com/zapier/kubechecks)
 
 ### Netlify
 
@@ -489,7 +492,7 @@ Heroku-like mini PaaS.
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-PaaS for deploying apps to Kubernetes.
+Porter cloud platform for deploying applications into user-owned Kubernetes clusters; current commercial and source-licence boundaries require review.
 
 **Use when**
 
@@ -498,6 +501,7 @@ PaaS for deploying apps to Kubernetes.
 **Consider alternatives when**
 
 - You don't need Kubernetes or prefer lower-level Helm/ArgoCD control.
+- You require verified fully open-source code or confuse Porter PaaS with the unrelated getporter/porter CNAB tool.
 
 [Official site](https://github.com/porter-dev)
 
@@ -601,9 +605,9 @@ Tofu Controller is the flux-iac Kubernetes controller integrating Flux with Open
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Multi-node Docker Compose for running containerized apps in production without Kubernetes.
+Deploy and operate containerized workloads across Docker hosts with service discovery and HTTPS ingress, without a Kubernetes control plane.
 
 **Use when**
 
@@ -611,7 +615,7 @@ Multi-node Docker Compose for running containerized apps in production without K
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need Kubernetes APIs or a mature managed control plane; evaluate host SSH access, Docker privileges and storage/network maturity.
 
 [Official site](https://uncloud.run) · [Source repository](https://github.com/psviderski/uncloud)
 
@@ -639,9 +643,10 @@ Managed web application platform providing Git-based builds, preview deployments
 **Categories:** CD, GitOps, release and promotion<br>
 **Roles:** DevOps Engineer, Platform Engineer, Release Engineer<br>
 **Model:** Source Available<br>
-**Status:** Needs Review
+**Status:** Needs Review<br>
+**Repository:** Archived
 
-Application build, deploy, and release workflow platform from HashiCorp.
+Archived HashiCorp Waypoint Community Edition build, deploy and release CLI; distinct from the later HCP Waypoint SaaS platform.
 
 **Use when**
 
@@ -649,9 +654,9 @@ Application build, deploy, and release workflow platform from HashiCorp.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a supported Waypoint Community Edition; HashiCorp ended active development and archived the original repository.
 
-[Official site](https://developer.hashicorp.com/waypoint)
+[Official site](https://developer.hashicorp.com/waypoint) · [Source repository](https://github.com/hashicorp/waypoint)
 
 ### Weaveworks GitOps
 
@@ -660,7 +665,7 @@ Application build, deploy, and release workflow platform from HashiCorp.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-GitOps automation for Kubernetes and cloud-native apps.
+Flux-based Kubernetes GitOps management UI; the project advertises a transition to community stewardship and maintenance support remains under review.
 
 **Use when**
 
@@ -669,6 +674,7 @@ GitOps automation for Kubernetes and cloud-native apps.
 **Consider alternatives when**
 
 - * Weaveworks has shut down; consider long-term maintenance risks.
+- You need a documented enterprise maintenance commitment; community stewardship and repository activity alone do not prove support.
 
 [Official site](https://docs.gitops.weaveworks.org) · [Source repository](https://github.com/weaveworks/weave-gitops)
 

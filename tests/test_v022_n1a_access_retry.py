@@ -130,6 +130,26 @@ N1A_CURRENT_STATE_SUPERSESSIONS = {
     ("mcp-server-kubernetes", "needs_review"),
 }
 
+# Wave 23 independently supersedes these *current-state* fields only. Keeping
+# this separate preserves the frozen N1a supersession contract and its exact
+# regression guard in test_deferred_catalogue_corrections.py.
+# Argo CD Agent v0.10.0: Apache-2.0 source, official project/release identity.
+# https://github.com/argoproj-labs/argocd-agent/blob/v0.10.0/LICENSE
+# https://github.com/argoproj-labs/argocd-agent/releases/tag/v0.10.0
+# KubeChecks v3.5.1: MPL-2.0 source and official project/release identity.
+# https://github.com/zapier/kubechecks/blob/v3.5.1/LICENSE
+# https://github.com/zapier/kubechecks/releases/tag/v3.5.1
+WAVE23_CURRENT_STATE_SUPERSESSIONS = {
+    ("argocd-agent", "repository_url"),
+    ("argocd-agent", "license_spdx"),
+    ("argocd-agent", "status"),
+    ("argocd-agent", "needs_review"),
+    ("kubechecks", "repository_url"),
+    ("kubechecks", "license_spdx"),
+    ("kubechecks", "status"),
+    ("kubechecks", "needs_review"),
+}
+
 REQUIRED_LEDGER_COLUMNS = {
     "tool_id",
     "affected_field",
@@ -298,14 +318,18 @@ def _assert_current_n1a_persistence(
         current_record = current[tool_id][1]
         accepted_record = accepted[tool_id][1]
         for field in FORBIDDEN_SELECTED_FIELDS:
-            if (tool_id, field) in N1A_CURRENT_STATE_SUPERSESSIONS:
+            if (tool_id, field) in (
+                N1A_CURRENT_STATE_SUPERSESSIONS | WAVE23_CURRENT_STATE_SUPERSESSIONS
+            ):
                 continue
             assert current_record.get(field) == accepted_record.get(field), (
                 f"N1a-protected field drifted for {(tool_id, field)}"
             )
 
     for tool_id, field in EXPECTED_WORK_ITEMS:
-        if (tool_id, field) in N1A_CURRENT_STATE_SUPERSESSIONS:
+        if (tool_id, field) in (
+            N1A_CURRENT_STATE_SUPERSESSIONS | WAVE23_CURRENT_STATE_SUPERSESSIONS
+        ):
             continue
         assert current[tool_id][1].get(field) == accepted[tool_id][1].get(field), (
             f"Accepted N1a decision drifted for {(tool_id, field)}"

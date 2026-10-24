@@ -23,7 +23,7 @@
 | [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
 | [Aralez](https://github.com/sadoyan/aralez) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Argo CD](https://argo-cd.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
-| [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | needs-review |
+| [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) | CD, GitOps, release and promotion | oss | active |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
@@ -75,7 +75,7 @@
 | [BunkerWeb](https://www.bunkerweb.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Bunnyshell](https://www.bunnyshell.com) | CD, GitOps, release and promotion | commercial | active |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
-| [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | needs-review |
+| [Caddy](https://caddyserver.com) | CD, GitOps, release and promotion | oss | active |
 | [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
 | [Capacitor Next](https://gimlet.io/capacitor-next/) | Kubernetes distributions and operations | oss | active |
 | [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
@@ -190,7 +190,7 @@
 | [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | commercial | active |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
 | [Flux Operator](https://fluxoperator.dev) | CD, GitOps, release and promotion | oss | active |
-| [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | needs-review |
+| [flux9s](https://flux9s.ca) | CD, GitOps, release and promotion | oss | active |
 | [Forecastle](https://github.com/stakater/Forecastle) | Kubernetes distributions and operations | oss | needs-review |
 | [FreeCodeCamp DevOps](https://www.freecodecamp.org/news/tag/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [FreeLens](https://freelensapp.github.io) | Kubernetes distributions and operations | oss | active |
@@ -278,7 +278,7 @@
 | [k9sight](https://github.com/doganarif/k9sight) | Kubernetes distributions and operations | oss | needs-review |
 | [Kagent](https://kagent.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kamaji](https://kamaji.clastix.io) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
-| [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | needs-review |
+| [Kamal](https://kamal-deploy.org) | CD, GitOps, release and promotion | oss | active |
 | [Kaniko](https://github.com/GoogleContainerTools/kaniko) | Deprecated and historical tools, Containers and image tooling | oss | archived |
 | [Kargo](https://kargo.io) | CD, GitOps, release and promotion | oss | active |
 | [Karpenter](https://github.com/kubernetes-sigs/karpenter) | Kubernetes networking, storage and add-ons | oss | active |
@@ -331,7 +331,7 @@
 | [Kubeapps](https://kubeapps.com) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
 | [kubebuilder Book](https://book.kubebuilder.io) | Kubernetes distributions and operations | documentation | needs-review |
 | [kubecfg](https://github.com/kadirbelkuyu/kubecfg) | Kubernetes distributions and operations | oss | needs-review |
-| [KubeChecks](https://kubechecks.readthedocs.io/en/latest) | CD, GitOps, release and promotion | oss | needs-review |
+| [KubeChecks](https://kubechecks.readthedocs.io/en/latest) | CD, GitOps, release and promotion | oss | active |
 | [KubeClipper](https://kubeclipper.io/en) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeCM](https://kubecm.cloud/) | Kubernetes distributions and operations | oss | active |
 | [kubeCodex](https://github.com/TheCodingSheikh/kubecodex) | Documentation, learning and career resources | documentation | needs-review |
@@ -585,7 +585,7 @@
 | [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) | Kubernetes distributions and operations | documentation | needs-review |
 | [Typhoon](https://typhoon.psdn.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Udemy CKA Course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests) | Documentation, learning and career resources | documentation | needs-review |
-| [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | needs-review |
+| [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | active |
 | [Upjet](https://github.com/crossplane/upjet) | Infrastructure as Code | oss | active |
 | [UrBackup](https://www.urbackup.org) | Emerging and experimental tools | oss | needs-review |
 | [Valkey](https://valkey.io) | Emerging and experimental tools | oss | needs-review |

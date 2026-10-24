@@ -6,7 +6,7 @@
 - [ACR-SyncTool](https://github.com/IvanJosipovic/ACR-SyncTool) — Command-line tool for synchronizing container images into Azure Container Registry.
 - [AKS Kargo AnalysisRun logs](https://github.com/IvanJosipovic/aks-kargo-analysisrun-logs) — API service exposing Azure Log Analytics job logs through Kargo's AnalysisRun log interface.
 - [Argo CD](https://argo-cd.readthedocs.io/en/stable/) — Declarative GitOps continuous delivery for Kubernetes.
-- [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) — Agent-based architecture for ArgoCD to manage remote clusters.
+- [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) — Agent and principal components for managing remote Argo CD clusters over authenticated mTLS connections; a separate project from Argo CD core.
 - [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) — Pull-request diff tool for previewing Argo CD application manifest changes before sync.
 - [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) — Automated image updates for ArgoCD.
 - [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
@@ -14,7 +14,7 @@
 - [Buildah](https://buildah.io) — Daemonless OCI image-building CLI and library, with Dockerfile and scripted workflows; complementary to the Podman container runtime.
 - [BuildKit](https://docs.docker.com/build/buildkit) — Moby build-execution toolkit and backend for concurrent, cache-efficient builds, used by Docker Buildx and other clients.
 - [Bunnyshell](https://www.bunnyshell.com) — Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven by environment-as-code workflows.
-- [Caddy](https://caddyserver.com) — Extensible web server and reverse proxy with automatic HTTPS.
+- [Caddy](https://caddyserver.com) — Extensible web server, reverse proxy and HTTPS endpoint with automatic certificate management; not a GitOps reconciliation controller.
 - [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) — Rust library API compatibility checker for detecting semantic-versioning violations.
 - [cek](https://github.com/bschaatsbergen/cek) — Read-only exploration of OCI container-image filesystem contents and layers without executing containers.
 - [Cloudsmith](https://cloudsmith.com/) — Managed multi-format package and artifact repository service with access controls and supply-chain features.
@@ -36,7 +36,7 @@
 - [Earthly](https://earthly.dev) — Dockerfile-like build orchestration CLI; upstream ended active OSS maintenance in April 2025 and retired its Cloud/Satellite services in July 2025.
 - [Flux](https://fluxcd.io) — Open and extensible GitOps toolkit for Kubernetes.
 - [Flux Operator](https://fluxoperator.dev) — ControlPlane-maintained Kubernetes operator installing, configuring and upgrading Flux CD instances through FluxInstance resources, with additional self-service APIs. Its AGPL-3.0 software is separate from Flux CD core and commercial ControlPlane distribution/support terms.
-- [flux9s](https://flux9s.ca) — K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
+- [flux9s](https://flux9s.ca) — Terminal UI for inspecting Flux GitOps controllers and Kubernetes workloads, with RBAC-gated cluster operations.
 - [git push no-mistakes](https://kunchenguid.github.io/no-mistakes/) — Local Git push gate that validates changes in an isolated worktree before publishing a branch and opening a pull request.
 - [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform terms separate from the MIT runner and independent action licences.
 - [GitHub CLI](https://cli.github.com) — Official command-line interface for GitHub repositories, pull requests, issues, releases, and Actions workflows.
@@ -56,11 +56,11 @@
 - [JFrog Distribution](https://jfrog.com/distribution/) — Commercial JFrog product for signing and distributing immutable release bundles to remote and edge locations.
 - [JFrog Pipelines](https://docs.jfrog.com/releases/docs/pipeline-deprecation-end-of-life) — Discontinued JFrog Platform CI/CD orchestration product retained for migration and historical reference.
 - [JFrog Platform](https://jfrog.com/platform/) — Commercial software supply-chain platform unifying artifact and AI asset management, security, governance, and release delivery.
-- [Kamal](https://kamal-deploy.org) — Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
+- [Kamal](https://kamal-deploy.org) — Deploy and roll containerized web applications onto remote servers over SSH using Kamal and kamal-proxy, without requiring Kubernetes.
 - [Kargo](https://kargo.io) — GitOps promotion workflow for Kubernetes.
 - [Keel](https://keel.sh) — Automated Kubernetes deployment updates.
 - [Ko](https://ko.build) — Build and publish Go application OCI images without writing Dockerfiles; publishes SBOMs by default in supported releases.
-- [KubeChecks](https://kubechecks.readthedocs.io/en/latest) — Pre-merge validation for Kubernetes GitOps changes.
+- [KubeChecks](https://kubechecks.readthedocs.io/en/latest) — Pre-merge Kubernetes GitOps application change review that integrates with Kubernetes and Argo CD rather than reconciling deployments itself.
 - [Kubesearch](https://kubesearch.dev) — Search engine for Helm charts and Kubernetes packages.
 - [kURL](https://kurl.sh/) — Toolkit for packaging customized offline-capable Kubernetes installers for software appliances.
 - [Lefthook](https://lefthook.dev) — Fast Git hooks manager (parallel execution, cross-platform).
@@ -76,7 +76,7 @@
 - [ORAS](https://oras.land) — OCI registry client/library (store artifacts in registries).
 - [Packer](https://www.packer.io) — HashiCorp machine-image build CLI that creates reproducible images for multiple platforms from one configuration, with separately licensed plugins and HCP image metadata services.
 - [Piku](https://piku.github.io) — Heroku-like mini PaaS.
-- [Porter](https://github.com/porter-dev) — PaaS for deploying apps to Kubernetes.
+- [Porter](https://github.com/porter-dev) — Porter cloud platform for deploying applications into user-owned Kubernetes clusters; current commercial and source-licence boundaries require review.
 - [pre-commit](https://pre-commit.com) — Multi-language Git hook framework (config-driven, reproducible hooks across teams).
 - [ProGet](https://inedo.com/proget) — Universal package manager for DevOps and CI/CD.
 - [Pulp](https://pulpproject.org/) — Repository platform for managing and distributing software packages and other content types through plugins.
@@ -93,10 +93,10 @@
 - [Tekton Chains](https://tekton.dev/docs/chains/) — Tekton controller that records, signs, and stores supply-chain metadata for pipeline task runs.
 - [The Update Framework](https://theupdateframework.io/) — CNCF framework and specification for securing software update metadata against repository and signing-key compromise.
 - [Tofu Controller](https://flux-iac.github.io/tofu-controller) — Tofu Controller is the flux-iac Kubernetes controller integrating Flux with OpenTofu/Terraform reconciliation, plans, applies and drift detection through runner Pods; it is separate from Flux CD core, Flux Operator and either IaC CLI.
-- [Uncloud](https://uncloud.run) — Multi-node Docker Compose for running containerized apps in production without Kubernetes.
+- [Uncloud](https://uncloud.run) — Deploy and operate containerized workloads across Docker hosts with service discovery and HTTPS ingress, without a Kubernetes control plane.
 - [Vercel](https://vercel.com/) — Managed web application platform providing Git-based builds, preview deployments, production hosting, and serverless infrastructure.
-- [Waypoint](https://developer.hashicorp.com/waypoint) — Application build, deploy, and release workflow platform from HashiCorp.
-- [Weaveworks GitOps](https://docs.gitops.weaveworks.org) — GitOps automation for Kubernetes and cloud-native apps.
+- [Waypoint](https://developer.hashicorp.com/waypoint) — Archived HashiCorp Waypoint Community Edition build, deploy and release CLI; distinct from the later HCP Waypoint SaaS platform.
+- [Weaveworks GitOps](https://docs.gitops.weaveworks.org) — Flux-based Kubernetes GitOps management UI; the project advertises a transition to community stewardship and maintenance support remains under review.
 - [werf](https://werf.io) — Git-driven Kubernetes delivery tool combining container-image builds, deployment and Helm-based release workflows.
 - [Woodpecker CI](https://woodpecker-ci.org) — Apache-2.0 self-hosted CI/CD engine with a server and agents, forge integration and backend-dependent Docker, Kubernetes or local execution.
 - [Yarn](https://yarnpkg.com/) — JavaScript package manager with lockfiles, workspaces, and configurable dependency-installation modes.
