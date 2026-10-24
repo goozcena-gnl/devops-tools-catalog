@@ -128,6 +128,15 @@ N1A_CURRENT_STATE_SUPERSESSIONS = {
     ("mcp-server-kubernetes", "license_spdx"),
     ("mcp-server-kubernetes", "status"),
     ("mcp-server-kubernetes", "needs_review"),
+    # Wave 23: tagged argocd-agent v0.10.0 Apache-2.0 source and official
+    # release evidence supersede only these N1a current-state fields.
+    # https://github.com/argoproj-labs/argocd-agent/blob/v0.10.0/LICENSE
+    # https://github.com/argoproj-labs/argocd-agent/releases/tag/v0.10.0
+    # Preserve pinned N1a history and unrelated fields.
+    ("argocd-agent", "repository_url"),
+    ("argocd-agent", "license_spdx"),
+    ("argocd-agent", "status"),
+    ("argocd-agent", "needs_review"),
 }
 
 REQUIRED_LEDGER_COLUMNS = {
