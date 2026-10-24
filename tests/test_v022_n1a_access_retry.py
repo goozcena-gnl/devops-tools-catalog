@@ -328,8 +328,8 @@ def _assert_current_n1a_persistence(
 
     for tool_id, field in EXPECTED_WORK_ITEMS:
         if (tool_id, field) in (
-                N1A_CURRENT_STATE_SUPERSESSIONS | WAVE23_CURRENT_STATE_SUPERSESSIONS
-            ):
+            N1A_CURRENT_STATE_SUPERSESSIONS | WAVE23_CURRENT_STATE_SUPERSESSIONS
+        ):
             continue
         assert current[tool_id][1].get(field) == accepted[tool_id][1].get(field), (
             f"Accepted N1a decision drifted for {(tool_id, field)}"
