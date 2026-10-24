@@ -150,6 +150,19 @@ WAVE23_CURRENT_STATE_SUPERSESSIONS = {
     ("kubechecks", "needs_review"),
 }
 
+# Exact values approved by the Wave 23 source/release review, separately
+# pinned so the N1a supersession cannot accept a later unrelated replacement.
+WAVE23_APPROVED_CURRENT_STATE_VALUES: dict[tuple[str, str], str | bool] = {
+    ("argocd-agent", "repository_url"): "https://github.com/argoproj-labs/argocd-agent",
+    ("argocd-agent", "license_spdx"): "Apache-2.0",
+    ("argocd-agent", "status"): "active",
+    ("argocd-agent", "needs_review"): False,
+    ("kubechecks", "repository_url"): "https://github.com/zapier/kubechecks",
+    ("kubechecks", "license_spdx"): "MPL-2.0",
+    ("kubechecks", "status"): "active",
+    ("kubechecks", "needs_review"): False,
+}
+
 REQUIRED_LEDGER_COLUMNS = {
     "tool_id",
     "affected_field",
@@ -333,6 +346,22 @@ def _assert_current_n1a_persistence(
             continue
         assert current[tool_id][1].get(field) == accepted[tool_id][1].get(field), (
             f"Accepted N1a decision drifted for {(tool_id, field)}"
+        )
+
+
+def _assert_wave23_approved_current_state(
+    current: dict[str, tuple[str, dict[str, Any]]],
+) -> None:
+    """Pin the eight reviewed current values without rewriting frozen N1a history."""
+    assert set(WAVE23_APPROVED_CURRENT_STATE_VALUES) == (
+        WAVE23_CURRENT_STATE_SUPERSESSIONS
+    )
+    for (tool_id, field), approved_value in WAVE23_APPROVED_CURRENT_STATE_VALUES.items():
+        assert tool_id in current, f"Wave 23 reviewed ID missing: {tool_id!r}"
+        actual = current[tool_id][1].get(field)
+        assert approved_value == actual, (
+            f"Wave 23 approved field drifted for {(tool_id, field)}: "
+            f"expected {approved_value!r}, got {actual!r}"
         )
 
 
