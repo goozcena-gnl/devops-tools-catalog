@@ -236,7 +236,7 @@ def test_wave23_supersessions_are_evidence_scoped_and_exact() -> None:
         ("kubechecks", "status"),
         ("kubechecks", "needs_review"),
     }
-    assert n1a.WAVE23_CURRENT_STATE_SUPERSESSIONS == expected
+    assert expected == n1a.WAVE23_CURRENT_STATE_SUPERSESSIONS
     assert not (expected & n1a.N1A_CURRENT_STATE_SUPERSESSIONS)
     assert all(field in n1a.FORBIDDEN_SELECTED_FIELDS for _, field in expected)
 
