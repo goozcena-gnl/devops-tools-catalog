@@ -356,7 +356,10 @@ def _assert_wave23_approved_current_state(
     assert set(WAVE23_APPROVED_CURRENT_STATE_VALUES) == (
         WAVE23_CURRENT_STATE_SUPERSESSIONS
     )
-    for (tool_id, field), approved_value in WAVE23_APPROVED_CURRENT_STATE_VALUES.items():
+    for (
+        tool_id,
+        field,
+    ), approved_value in WAVE23_APPROVED_CURRENT_STATE_VALUES.items():
         assert tool_id in current, f"Wave 23 reviewed ID missing: {tool_id!r}"
         actual = current[tool_id][1].get(field)
         assert approved_value == actual, (
