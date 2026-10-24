@@ -266,6 +266,30 @@ def test_wave23_supersessions_are_evidence_scoped_and_exact() -> None:
         assert "license_model" in str(exc)
 
 
+def test_wave23_actual_catalogue_pins_exact_eight_values() -> None:
+    # Unlike the frozen N1a fixtures, this reads the real current catalogue.
+    current = n1a._current_records()
+    n1a._assert_wave23_approved_current_state(current)
+
+    for (tool_id, field), approved in n1a.WAVE23_APPROVED_CURRENT_STATE_VALUES.items():
+        changed = deepcopy(current)
+        if isinstance(approved, bool):
+            changed[tool_id][1][field] = not approved
+        else:
+            changed[tool_id][1][field] = (
+                "AGPL-3.0-only"
+                if field == "license_spdx"
+                else "https://example.invalid/unapproved-repository"
+                if field == "repository_url"
+                else "needs-review"
+            )
+        try:
+            n1a._assert_wave23_approved_current_state(changed)
+            raise AssertionError(f"Wave 23 drift must fail for {(tool_id, field)}")
+        except AssertionError as exc:
+            assert "Wave 23 approved field drifted" in str(exc)
+
+
 def test_n1a_historical_accounting_remains_exact() -> None:
     assert len(n1a.EXPECTED_IDS) == 20
     assert len(n1a.EXPECTED_WORK_ITEMS) == 25
