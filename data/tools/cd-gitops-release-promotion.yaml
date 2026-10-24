@@ -507,8 +507,8 @@
     metadata into GitOps configuration.
   avoid_when:
   - Do not treat the pattern as an installable platform or assume completed Flux integration; verify present
-  - You require an independently maintained and fully supported GitOps controller; this project publishes examples and maintenance is not established.
     maintenance and example compatibility before production adoption.
+  - You require an independently maintained and fully supported GitOps controller; this project publishes examples and maintenance is not established.
   deployment_models: []
   license_model: oss
   maturity: unknown
