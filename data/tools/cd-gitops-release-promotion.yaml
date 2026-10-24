@@ -60,8 +60,9 @@
   needs_review: false
 - id: argocd-agent
   name: ArgoCD Agent
-  summary: Agent-based architecture for ArgoCD to manage remote clusters.
+  summary: Agent and principal components for managing remote Argo CD clusters over authenticated mTLS connections; a separate project from Argo CD core.
   official_url: https://argocd-agent.readthedocs.io/latest
+  repository_url: https://github.com/argoproj-labs/argocd-agent
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -77,17 +78,23 @@
   - '* You manage clusters behind firewalls or want agent-based control-plane decoupling.'
   avoid_when:
   - '* Your clusters are reachable from ArgoCD and the standard model works fine.'
+  - Do not assume Argo CD core and argocd-agent share release maturity or Kubernetes privileges; verify principal/agent mTLS and RBAC.
   deployment_models: []
   license_model: oss
+  repository_archived: false
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-24'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L136
   - legacy:devopstools_final.md#L386
-  needs_review: true
+  - https://github.com/argoproj-labs/argocd-agent/blob/v0.10.0/LICENSE
+  - https://github.com/argoproj-labs/argocd-agent/blob/v0.10.0/README.md
+  - https://github.com/argoproj-labs/argocd-agent/releases/tag/v0.10.0
+  needs_review: false
 - id: argocd-diff-preview
   name: ArgoCD Diff Preview
   summary: Pull-request diff tool for previewing Argo CD application manifest changes before sync.
@@ -239,7 +246,7 @@
   needs_review: false
 - id: caddy
   name: Caddy
-  summary: Extensible web server and reverse proxy with automatic HTTPS.
+  summary: Extensible web server, reverse proxy and HTTPS endpoint with automatic certificate management; not a GitOps reconciliation controller.
   official_url: https://caddyserver.com
   repository_url: https://github.com/caddyserver/caddy
   categories:
@@ -254,17 +261,23 @@
   - release
   - deploy
   use_when: []
-  avoid_when: []
+  avoid_when:
+  - You need GitOps reconciliation; Caddy serves and proxies traffic rather than managing Kubernetes application state.
   deployment_models: []
   license_model: oss
+  repository_archived: false
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-24'
   sources:
   - legacy:devopstools_final.md#L1131
-  needs_review: true
+  - https://github.com/caddyserver/caddy/blob/v2.11.7/LICENSE
+  - https://github.com/caddyserver/caddy/releases/tag/v2.11.7
+  - https://caddyserver.com/docs/
+  needs_review: false
 - id: cargo-dist
   name: dist (cargo-dist)
   summary: Release automation for building and distributing application binaries and installers.
@@ -440,7 +453,7 @@
   commercial_offering: true
 - id: flux9s
   name: flux9s
-  summary: K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
+  summary: Terminal UI for inspecting Flux GitOps controllers and Kubernetes workloads, with RBAC-gated cluster operations.
   official_url: https://flux9s.ca
   repository_url: https://github.com/dgunzy/flux9s
   categories:
@@ -455,17 +468,23 @@
   - release
   - deploy
   use_when: []
-  avoid_when: []
+  avoid_when:
+  - You expect a Flux controller or assume the terminal UI can change cluster resources without Kubernetes RBAC.
   deployment_models: []
   license_model: oss
+  repository_archived: false
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-24'
   sources:
   - legacy:devopstools_final.md#L392
-  needs_review: true
+  - https://github.com/dgunzy/flux9s/blob/v1.4.2/LICENSE
+  - https://github.com/dgunzy/flux9s/blob/v1.4.2/README.md
+  - https://github.com/dgunzy/flux9s/releases/tag/v1.4.2
+  needs_review: false
 - id: gitops-bridge
   name: GitOps Bridge
   summary: GitOps Bridge is a community pattern and example repository passing cluster-provisioning metadata
@@ -488,6 +507,7 @@
     metadata into GitOps configuration.
   avoid_when:
   - Do not treat the pattern as an installable platform or assume completed Flux integration; verify present
+  - You require an independently maintained and fully supported GitOps controller; this project publishes examples and maintenance is not established.
     maintenance and example compatibility before production adoption.
   deployment_models: []
   license_model: oss
@@ -495,7 +515,7 @@
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-10-13'
+  verified_on: '2026-10-24'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L148
   - legacy:devopstools_final.md#L393
@@ -504,6 +524,8 @@
   - https://github.com/gitops-bridge-dev/gitops-bridge/blob/main/LICENSE
   - https://github.com/gitops-bridge-dev/gitops-bridge/commits/main/
   - https://github.com/gitops-bridge-dev/gitops-bridge/releases
+  - https://github.com/gitops-bridge-dev/gitops-bridge/blob/v0.0.1/LICENSE
+  - https://github.com/gitops-bridge-dev/gitops-bridge/releases/tag/v0.0.1
   needs_review: true
   documentation_url: https://github.com/gitops-bridge-dev/gitops-bridge/blob/main/README.md
   license_spdx: Apache-2.0
@@ -511,7 +533,7 @@
   official_url: https://github.com/gitops-bridge-dev/gitops-bridge
 - id: kamal
   name: Kamal
-  summary: Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
+  summary: Deploy and roll containerized web applications onto remote servers over SSH using Kamal and kamal-proxy, without requiring Kubernetes.
   official_url: https://kamal-deploy.org
   repository_url: https://github.com/basecamp/kamal
   categories:
@@ -526,17 +548,23 @@
   - release
   - deploy
   use_when: []
-  avoid_when: []
+  avoid_when:
+  - You specifically need Kubernetes-native reconciliation or do not control SSH and Docker credentials on deployment hosts.
   deployment_models: []
   license_model: oss
+  repository_archived: false
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-24'
   sources:
   - legacy:devopstools_final.md#L1134
-  needs_review: true
+  - https://github.com/basecamp/kamal/blob/v2.12.0/MIT-LICENSE
+  - https://github.com/basecamp/kamal/blob/v2.12.0/README.md
+  - https://github.com/basecamp/kamal/releases/tag/v2.12.0
+  needs_review: false
 - id: kargo
   name: Kargo
   summary: GitOps promotion workflow for Kubernetes.
@@ -605,8 +633,9 @@
   needs_review: false
 - id: kubechecks
   name: KubeChecks
-  summary: Pre-merge validation for Kubernetes GitOps changes.
+  summary: Pre-merge Kubernetes GitOps application change review that integrates with Kubernetes and Argo CD rather than reconciling deployments itself.
   official_url: https://kubechecks.readthedocs.io/en/latest
+  repository_url: https://github.com/zapier/kubechecks
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -622,17 +651,23 @@
   - '* You want automated policy and diff checks on PRs before GitOps changes merge.'
   avoid_when:
   - '* You already have CI-based validation or don''t do PR-based GitOps.'
+  - Your review bot must have no access to cluster or GitOps API credentials; evaluate the required Kubernetes and Argo CD permissions.
   deployment_models: []
   license_model: oss
+  repository_archived: false
+  license_spdx: MPL-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-24'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L152
   - legacy:devopstools_final.md#L395
-  needs_review: true
+  - https://github.com/zapier/kubechecks/blob/v3.5.1/LICENSE
+  - https://github.com/zapier/kubechecks/blob/v3.5.1/README.md
+  - https://github.com/zapier/kubechecks/releases/tag/v3.5.1
+  needs_review: false
 - id: netlify
   name: Netlify
   summary: Managed web application platform for Git- and API-driven deployment, previews, functions, and global delivery.
@@ -785,7 +820,7 @@
   needs_review: false
 - id: porter
   name: Porter
-  summary: PaaS for deploying apps to Kubernetes.
+  summary: Porter cloud platform for deploying applications into user-owned Kubernetes clusters; current commercial and source-licence boundaries require review.
   official_url: https://github.com/porter-dev
   categories:
   - cd-gitops-release-promotion
@@ -802,16 +837,20 @@
   - You want Heroku-like UX on top of your own Kubernetes cluster.
   avoid_when:
   - You don't need Kubernetes or prefer lower-level Helm/ArgoCD control.
+  - You require verified fully open-source code or confuse Porter PaaS with the unrelated getporter/porter CNAB tool.
   deployment_models: []
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-24'
   sources:
   - legacy:7_Development-Collaboration/README.md#L93
   - legacy:devopstools_final.md#L1137
+  - https://github.com/porter-dev
+  - https://www.porter.run/
+  - https://www.porter.run/pricing
   needs_review: true
 - id: qovery
   name: Qovery
@@ -950,7 +989,7 @@
   repository_archived: false
 - id: uncloud
   name: Uncloud
-  summary: Multi-node Docker Compose for running containerized apps in production without Kubernetes.
+  summary: Deploy and operate containerized workloads across Docker hosts with service discovery and HTTPS ingress, without a Kubernetes control plane.
   official_url: https://uncloud.run
   repository_url: https://github.com/psviderski/uncloud
   categories:
@@ -965,21 +1004,28 @@
   - release
   - deploy
   use_when: []
-  avoid_when: []
+  avoid_when:
+  - You need Kubernetes APIs or a mature managed control plane; evaluate host SSH access, Docker privileges and storage/network maturity.
   deployment_models: []
   license_model: oss
+  repository_archived: false
+  license_spdx: Apache-2.0
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-24'
   sources:
   - legacy:devopstools_final.md#L1139
-  needs_review: true
+  - https://github.com/psviderski/uncloud/blob/v0.21.0/LICENSE
+  - https://github.com/psviderski/uncloud/blob/v0.21.0/README.md
+  - https://github.com/psviderski/uncloud/releases/tag/v0.21.0
+  needs_review: false
 - id: waypoint
   name: Waypoint
-  summary: Application build, deploy, and release workflow platform from HashiCorp.
+  summary: Archived HashiCorp Waypoint Community Edition build, deploy and release CLI; distinct from the later HCP Waypoint SaaS platform.
   official_url: https://developer.hashicorp.com/waypoint
+  repository_url: https://github.com/hashicorp/waypoint
   categories:
   - cd-gitops-release-promotion
   subcategories:
@@ -992,20 +1038,25 @@
   - release
   - deploy
   use_when: []
-  avoid_when: []
+  avoid_when:
+  - You require a supported Waypoint Community Edition; HashiCorp ended active development and archived the original repository.
   deployment_models: []
   license_model: source-available
+  repository_archived: true
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-24'
   sources:
   - legacy:devopstools_final.md#L1140
+  - https://github.com/hashicorp/waypoint/blob/v0.11.4/LICENSE
+  - https://github.com/hashicorp/waypoint/blob/main/README.md
+  - https://www.hashicorp.com/en/blog/a-new-vision-for-hcp-waypoint
   needs_review: true
 - id: weaveworks-gitops
   name: Weaveworks GitOps
-  summary: GitOps automation for Kubernetes and cloud-native apps.
+  summary: Flux-based Kubernetes GitOps management UI; the project advertises a transition to community stewardship and maintenance support remains under review.
   official_url: https://docs.gitops.weaveworks.org
   repository_url: https://github.com/weaveworks/weave-gitops
   categories:
@@ -1023,16 +1074,21 @@
   - '* You want a UI/dashboard layer on top of Flux.'
   avoid_when:
   - '* Weaveworks has shut down; consider long-term maintenance risks.'
+  - You need a documented enterprise maintenance commitment; community stewardship and repository activity alone do not prove support.
   deployment_models: []
   license_model: oss
+  repository_archived: false
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-24'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L154
   - legacy:devopstools_final.md#L397
+  - https://github.com/weaveworks/weave-gitops/blob/v0.39.1-rc.1/LICENSE
+  - https://github.com/weaveworks/weave-gitops/releases/tag/v0.39.1-rc.1
+  - https://github.com/weaveworks/weave-gitops
   needs_review: true
 - id: yokecd
   name: Yoke
