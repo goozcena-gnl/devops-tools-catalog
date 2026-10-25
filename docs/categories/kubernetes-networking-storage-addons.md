@@ -1053,25 +1053,6 @@ Cloud-native local storage system.
 
 [Official site](https://hwameistor.io) · [Source repository](https://github.com/hwameistor/hwameistor)
 
-### Hybernate
-
-**Categories:** Kubernetes networking, storage and add-ons<br>
-**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
-
-Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce resource consumption during off-peak hours.
-
-**Use when**
-
-- Use after confirming that the documented capability matches a concrete operational requirement.
-
-**Consider alternatives when**
-
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
-
-[Official site](https://okedeji.io/hybernate)
-
 ### ipman
 
 **Categories:** Kubernetes networking, storage and add-ons, Emerging and experimental tools<br>
@@ -1873,6 +1854,25 @@ Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecy
 - Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
 
 [Source repository](https://github.com/mysql/mysql-operator)
+
+### Napwake (formerly Hybernate)
+
+**Categories:** Kubernetes networking, storage and add-ons<br>
+**Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
+**Model:** Oss<br>
+**Status:** Needs Review
+
+Kubernetes operator that pauses idle workloads and wakes them on demand to reduce non-production resource consumption.
+
+**Use when**
+
+- Use after confirming that the documented capability matches a concrete operational requirement.
+
+**Consider alternatives when**
+
+- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+
+[Official site](https://github.com/napwake/napwake) · [Documentation](https://docs.napwake.dev/) · [Source repository](https://github.com/napwake/napwake)
 
 ### Nelm
 

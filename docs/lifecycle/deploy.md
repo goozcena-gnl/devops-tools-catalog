@@ -230,7 +230,6 @@
 - [HPE Morpheus Software](https://www.hpe.com/us/en/products/software/morpheus-software.html) — HPE hybrid-cloud management software, with Enterprise capabilities for self-service provisioning, orchestration and governance across private and public clouds.
 - [Humanitec](https://humanitec.com) — Commercial platform orchestrator for building internal developer platforms across cloud and Kubernetes infrastructure.
 - [HwameiStor](https://hwameistor.io) — Cloud-native local storage system.
-- [Hybernate](https://okedeji.io/hybernate) — Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce resource consumption during off-peak hours.
 - [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) — Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows Server.
 - [IBM Cloud](https://www.ibm.com/products/cloud) — Enterprise cloud services and infrastructure by IBM.
 - [Incus](https://linuxcontainers.org/incus/) — Modern system container and VM manager.
@@ -414,6 +413,7 @@
 - [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) — CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods.
 - [MySQL](https://www.mysql.com) — Relational database server with transactional storage, replication, and a large application ecosystem.
 - [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) — Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups, and upgrades.
+- [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) — Kubernetes operator that pauses idle workloads and wakes them on demand to reduce non-production resource consumption.
 - [Nautobot](https://docs.nautobot.com/) — Network source-of-truth and automation platform with extensible data models and application plugins.
 - [Nelm](https://github.com/werf/nelm) — Helm-compatible Kubernetes deployment tool and Helm alternative with release planning and resource lifecycle management; not proven a drop-in replacement for every Helm plugin.
 - [nerdctl](https://github.com/containerd/nerdctl) — Docker-compatible CLI for containerd.
