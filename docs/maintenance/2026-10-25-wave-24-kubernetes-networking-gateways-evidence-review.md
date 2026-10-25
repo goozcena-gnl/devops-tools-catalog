@@ -1,10 +1,12 @@
-# Wave 24 — Kubernetes networking, CNI and gateways: primary-source triage
+# Wave 24 — Kubernetes networking, CNI and gateways: evidence review
 
-**Observed:** 2026-10-25. **Stage: documentary triage only — 0 cleared; 10 pending.** Selection contract: [issue #139](https://github.com/goozcena-gnl/devops-tools-catalog/issues/139). Pinned `main` baseline: `bb9915c0edb093e32db9974ea26d73db189561b0`.
+**Current Wave 24 decision (2026-10-25): 7 CLEAR / 3 RETAIN REVIEW.** The original first-pass triage remains below as historical evidence; the second-pass canonical edits and their field-level ledger are recorded later in this document. Current merged-`main` baseline: `bb9915c0edb093e32db9974ea26d73db189561b0`. **PR #140 remains Draft and unmerged**; independent review and a fresh strict Full link audit on the final PR HEAD remain pending.
+
+**First pass observed:** 2026-10-25. **Historical stage: documentary triage only — 0 cleared; 10 pending at that time.** Selection contract: [issue #139](https://github.com/goozcena-gnl/devops-tools-catalog/issues/139). Pinned `main` baseline: `bb9915c0edb093e32db9974ea26d73db189561b0`.
 
 This preliminary ledger reports **directly checked primary repository metadata, README files, releases and licence files**. The observations do *not* authorize automatic status clearance or assert that tags, hosted offerings, product editions, Kubernetes versions, or support have been comprehensively checked. A present `LICENSE` is evidence for the referenced source tree, not all services/dependencies/product tiers.
 
-## Inventory and scope
+## First-pass inventory and scope (historical)
 
 - Baseline: **1,425** canonical records, **785 active**, **626 needs-review**, 30 category files. No open PR at selection; URL tracker [#2](https://github.com/goozcena-gnl/devops-tools-catalog/issues/2) OPEN.
 - Only permitted eventual canonical file: `data/tools/kubernetes-networking-storage-addons.yaml` (132 entries, 68 with both `status: needs-review` and `needs_review: true`).
@@ -12,7 +14,7 @@ This preliminary ledger reports **directly checked primary repository metadata, 
 - All ten retain **`status: needs-review`** and **`needs_review: true`** at this stage. No canonical record or generated view changed in this first commit.
 - Strict URL baseline `config/link-audit-baseline.json` holds six historical reviewed exceptions (blob SHA `a834e2af711693def40078a55e31dfeb29bee2c7`). Do not modify the baseline or close #2.
 
-## Versioned primary-source observations (not clearance decisions)
+## First-pass versioned primary-source observations (historical)
 
 | Canonical ID | Repository and directly inspected release | Inspected source licence | Proven scope and remaining questions |
 |---|---|---|---|
@@ -29,7 +31,7 @@ This preliminary ledger reports **directly checked primary repository metadata, 
 
 Repository metadata inspection on 2026-10-25 reports all ten canonical source repositories as **unarchived**; this is an observation, *not* proof of sustained support, completed security review, GA stability or licence compatibility.
 
-## Evidence gaps to resolve before status changes
+## First-pass evidence gaps (historical)
 
 1. Read exact documentation/source **at pinned stable tags**, not only unversioned repository README. Link versioned compatibility matrices, architectural and authentication/security controls, first-party licence notices, release and governance/maintenance statements; record dated provenance per assertion. Pay special attention to product and controller identity (four CNI vs four Gateway API vs generic HAProxy vs Chisel).
 2. Resolve whether OVN-Kubernetes repository URL should be updated to its current primary repository path; keep historic sources and stable catalogue ID. Confirm origin with immutable GitHub ID **65489927**, and do not conflate with Kube-OVN.
@@ -40,11 +42,11 @@ Repository metadata inspection on 2026-10-25 reports all ten canonical source re
 7. For all ten, decide **CLEAR vs RETAIN REVIEW** on individually complete evidence, with no quota. Add field-level before/after/source rows only if canonical fields change; retain unresolved facts as explicit debt.
 8. Preserve legacy sources, taxonomy, canonical IDs, all unrelated records, strict link exceptions, tests and generated views until official generator is run after any canonical change.
 
-## Required subsequent execution and approval
+## First-pass execution contract (historical)
 
 The next implementation stage may edit only these ten canonical records in `data/tools/kubernetes-networking-storage-addons.yaml`, keeping every other ID unchanged. Regenerate with `python -m scripts.generate_docs` (not direct Markdown edits) and verify `python -m scripts.generate_docs --check`; then locked Python 3.12 verification and `pip check`, Ruff lint/format, full pytest, `python -m scripts.validate_catalog`, `git diff --check`. Confirm expected counts, CI security gates and independent Codex/human P1/P2 review on final head. Manually run a **new strict Full link audit on the exact final SHA** and demand `blocking_new: 0`, `strict_result: PASS`, unchanged six known exception URL/classification pairs. No merge/auto-merge, release, tag, waived protections, or closing [#2](https://github.com/goozcena-gnl/devops-tools-catalog/issues/2). Close #139 only after explicit human merge and all post-merge `main` checks.
 
-**Actions in this stage:** evidence ledger only. Zero canonical changes; zero status flips; no generated docs touched; no tests or network audit run in this GitHub-only step.
+**Actions in that first-pass stage (historical):** evidence ledger only. Zero canonical changes; zero status flips; no generated docs touched; no tests or network audit run in this GitHub-only step.
 
 
 ## Second pass — evidence-scoped canonical decisions (2026-10-25)
@@ -221,16 +223,23 @@ canonical fields were changed.
 | `sources` | sources: ⏎   - legacy:devopstools_final.md#L620 | sources: ⏎   - legacy:devopstools_final.md#L620 ⏎   - https://github.com/projectcontour/contour/blob/v1.33.7/LICENSE ⏎   - https://github.com/projectcontour/contour/blob/v1.33.7/README.md ⏎   - https://github.com/projectcontour/contour/releases/tag/v1.33.7 ⏎   - https://projectcontour.io/resources/compatibility-matrix/ |
 | `needs_review` | needs_review: true | needs_review: false |
 
-### Verification and merge gate
+### Current verification checkpoint and merge gate — 2026-10-25
 
-- The proposal retains original canonical record IDs, categories, roles, lifecycle,
-  previous legacy sources, and all records outside the selection cohort.
-- **Predicted overall counts only:** 1,425 total, 792 active, 619 needs-review.
-  The generator and catalogue validation must confirm these numbers.
-- The repository's official documentation generator has **not yet run** in this
-  package. Never hand-edit generated Markdown; run it after the patch.
-- Require constraints, pip check, full pytest, Ruff lint/format, catalogue validation,
-  generated docs check, whitespace validation, exact-scope inspection, CI security,
-  independent P1/P2 review and a strict full link audit on the final branch SHA.
-- Retain historical URL baseline blob `a834e2af711693def40078a55e31dfeb29bee2c7`
-  and issue #2 OPEN. Keep PR #140 Draft, never merge automatically; keep #139 open.
+**Canonical scope verified:** one YAML file (`data/tools/kubernetes-networking-storage-addons.yaml`), exactly the ten selected record IDs; 132 records and their ordering preserved. Seven records switched to `status: active` with `needs_review: false`; three remain `status: needs-review` with `needs_review: true`. Legacy sources and taxonomy remained intact, and all non-cohort records were unchanged. The six reviewed historical link baseline exceptions were preserved (blob SHA `a834e2af711693def40078a55e31dfeb29bee2c7`).
+
+**Observed generated inventory on validated PR head `950760335268129fae33b79cc84078e7db572705`: 1,425 canonical records; 792 active; 619 needs-review; 30 categories.** This is a verified value, no longer a predicted figure.
+
+The official generator `python -m scripts.generate_docs` was executed locally and its `--check` subsequently passed. Local `python -m scripts.validate_catalog`, Ruff lint/format, full pytest (8 skipped), `python -m pip check` and `git diff --check` passed. The local Windows Python 3.12 `--verify-locked` check reported **one extra platform package, `colorama`**, but no wrong or missing locked package versions; this is recorded as a platform-specific observation, **not** a change to or exemption from the lock file. Linux CI performed its own mandatory strict `--verify-locked` with a clean environment and passed. No Python constraints file was changed.
+
+On that exact pre-documentation-correction commit `950760335268129fae33b79cc84078e7db572705`, **all PR quality/security gates PASSED**:
+
+- [Catalogue quality #382](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/40214453239): success, including locked dependency verification, pytest, documentation and catalogue validation.
+- [Secret scan #210](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/40214453220): success.
+- [Plumber CI/CD Security #175](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/40214453305): success.
+- [CodeQL #219](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/40214451796): success, Python and GitHub Actions.
+
+**Independent-review limitation:** `@codex review` requested on PR #140 for `9507603` was **not completed** because Codex returned its usage-limit error; the bot failure is not an actionable code-review finding, and it must not be misrepresented as a successful P1/P2 review. Arrange a different independent maintainer/Work review or retry when quota permits. All substantive P1/P2 findings must be addressed with exact-SHA revalidation.
+
+**Mandatory final-head gates remain pending:** this documentation-only checkpoint produces a **new SHA**, so confirm the four PR CI workflows on that new SHA and review its diff; then obtain an independent review and manually run a **fresh Full link audit** against that **same final SHA**. Require `strict_result: PASS`, `blocking_new: 0`, and all **six historical reviewed URL/classification pairs unchanged**. [Audit #37](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/40198833224) belongs to Wave 23 and is **not** a Wave 24 full-audit pass.
+
+Keep [PR #140](https://github.com/goozcena-gnl/devops-tools-catalog/pull/140) **Draft/unmerged** pending the review, fresh audit and human approval. Do not enable auto-merge, publish a release/tag, change historical URL baseline, or close [#139](https://github.com/goozcena-gnl/devops-tools-catalog/issues/139) or [#2](https://github.com/goozcena-gnl/devops-tools-catalog/issues/2). Close #139 only after an explicit human merge and successful post-merge checks on the new `main`.
