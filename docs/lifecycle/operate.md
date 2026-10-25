@@ -117,7 +117,7 @@
 - [Checkmate](https://checkmate.so/) — Self-hosted uptime and infrastructure monitoring platform with incidents, status pages, and host metrics.
 - [checkmk](https://checkmk.com) — IT monitoring platform with open source Raw Edition and paid enterprise editions.
 - [Chef Infra](https://www.chef.io/products/chef-infra) — Commercially distributed infrastructure configuration-management tooling with separately Apache-licensed upstream source.
-- [Chisel Operator](https://chisel.fyralabs.com) — Operator for managing Chisel tunnels in Kubernetes.
+- [Chisel Operator](https://chisel.fyralabs.com) — Kubernetes operator for exposing LoadBalancer services via Chisel SSH tunnels and external exit nodes.
 - [Cilium](https://cilium.io) — EBPF-based networking, observability, and security for Kubernetes.
 - [Civo](https://www.civo.com) — Cloud infrastructure provider focused on Kubernetes.
 - [ClamAV](https://www.clamav.net/) — Cross-platform antivirus engine and command-line toolkit for detecting malicious files and content.
@@ -126,7 +126,7 @@
 - [Clonezilla](https://clonezilla.org/) — Bootable disk-imaging and cloning system for bare-metal backup, recovery, and machine deployment.
 - [Cloud Run functions](https://cloud.google.com/functions) — Managed event-driven functions deployed on the unified Google Cloud Run platform.
 - [CloudCasa](https://cloudcasa.io/) — Kubernetes and cloud-native data protection service with SaaS and enterprise self-hosted editions.
-- [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) — Cloudflare gateway for Kubernetes clusters.
+- [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) — Independently maintained Kubernetes Gateway API controller for exposing selected services via Cloudflare Tunnels.
 - [CloudFuze](https://www.cloudfuze.com) — Cloud file transfer and management.
 - [Cloudify](https://cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
 - [CloudNativePG](https://cloudnative-pg.io) — CloudNativePG operator manages PostgreSQL clusters on Kubernetes, including HA, backups, failover and recovery workflows.
@@ -212,7 +212,7 @@
 - [Falco](https://falco.org) — Runtime security for cloud-native environments.
 - [fd](https://github.com/sharkdp/fd) — Simple, fast alternative to `find`.
 - [Firecracker](https://firecracker-microvm.github.io) — Lightweight virtualization for microVMs.
-- [flannel](https://github.com/flannel-io/flannel) — Simple Layer 3 network fabric (CNI) for Kubernetes.
+- [flannel](https://github.com/flannel-io/flannel) — Kubernetes layer-3 network fabric for pod traffic across nodes; network policy requires a separate controller.
 - [Flatcar Container Linux](https://www.flatcar.org) — Immutable Linux distro for containers.
 - [Flathub](https://flathub.org) — Community-run hosted repository and discovery service for distributing Flatpak applications across Linux distributions.
 - [Flatpak](https://flatpak.org) — Universal Linux application isolation and distribution framework.
@@ -265,7 +265,7 @@
 - [gVisor](https://gvisor.dev) — Application kernel and container sandbox runtime that provides strong isolation between containers and the host.
 - [HAMi](https://project-hami.io) — Heterogeneous AI computing virtualization middleware.
 - [Hanoi CLI](https://github.com/k-krew/hanoi-cli) — Interactive rebalance advisor for Kubernetes.
-- [HAProxy](https://www.haproxy.org) — Reliable, high-performance TCP/HTTP load balancer.
+- [HAProxy](https://www.haproxy.org) — General-purpose high-performance TCP/HTTP reverse proxy and load balancer, distinct from HAProxy Kubernetes Ingress.
 - [HAProxy Data Plane API](https://www.haproxy.com/documentation/dataplaneapi/) — API for managing HAProxy configuration, runtime operations, stats, and logs.
 - [HAProxy Kubernetes Ingress Controller](https://www.haproxy.com/documentation/kubernetes-ingress) — HAProxy-powered Kubernetes ingress controller for high-performance Layer 7 traffic management.
 - [HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools) — Large collection of Bash scripts, shell helpers, and automation tooling for DevOps, cloud, CI/CD, Kubernetes, and APIs.
@@ -359,7 +359,7 @@
 - [Keycloak](https://www.keycloak.org) — Upstream open-source identity and access-management server providing SSO, identity federation and OpenID Connect, OAuth 2.0 and SAML for applications and services; Red Hat build packaging and managed IAM services are separate.
 - [Keystore Explorer](https://keystore-explorer.org) — Desktop Java KeyStore and certificate manager for PKCS#12, JKS and related formats, with JRE 17+ required and GPLv3 project licensing.
 - [kftray](https://kftray.app/) — Desktop and terminal tools for managing Kubernetes port-forwarding sessions.
-- [KGateway](https://kgateway.dev) — Kubernetes gateway networking.
+- [KGateway](https://kgateway.dev) — Envoy-based Kubernetes Gateway API control plane for routing applications and API traffic.
 - [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file) — Visualize and inspect Kubernetes cluster event history.
 - [kimspect](https://github.com/koithos/kimspect) — Inspect container images used by pods, nodes, namespaces, and registries from the CLI.
 - [kind](https://kind.sigs.k8s.io) — Kubernetes IN Docker - local clusters for testing.
@@ -396,7 +396,7 @@
 - [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Exports precomputed Kubernetes cluster binpacking metrics.
 - [kube-dump](https://kube-dump.woozymasta.ru) — Backup tool for Kubernetes cluster resources.
 - [kube-hunter](https://aquasecurity.github.io/kube-hunter) — Legacy Aqua Kubernetes security-assessment tool with passive discovery and optional active exploitation; upstream states it is no longer under active development and recommends Trivy.
-- [Kube-OVN](https://www.kube-ovn.io) — CloudNative Network for KubeVirt and Multi-Tenancy.
+- [Kube-OVN](https://www.kube-ovn.io) — OVN and Open vSwitch-based Kubernetes CNI supporting VPCs, overlays, underlays, and KubeVirt networking.
 - [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) — Kubernetes SIG Instrumentation service exposing Prometheus-format metrics derived from Kubernetes API object state; resource-usage collection by metrics-server or cAdvisor and storage/query by Prometheus are separate.
 - [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) — Tool for bootstrapping Kubernetes clusters.
 - [KubeArmor](https://kubearmor.io/) — Runtime security enforcement system for applying workload policies through Linux Security Modules.
@@ -523,7 +523,7 @@
 - [Model Express](https://github.com/ai-dynamo/modelexpress) — Rust service that stages model data near inference systems to reduce startup time.
 - [MongoDB](https://www.mongodb.com/) — Document database server whose Community Edition source uses SSPL, with separate commercial Enterprise Advanced and managed Atlas offerings.
 - [Moogsoft](https://www.moogsoft.com) — AIOps alert-correlation and incident-management product family; its cloud service is renamed Dell APEX AIOps Incident Management, while on-premises and hosted Moogsoft boundaries remain under review.
-- [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) — CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods.
+- [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) — Kubernetes CNI meta-plugin that delegates to other CNIs to attach multiple network interfaces to pods.
 - [Munin](https://munin-monitoring.org) — Classic monitoring and graphing tool.
 - [MySQL](https://www.mysql.com) — Relational database server with transactional storage, replication, and a large application ecosystem.
 - [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) — Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups, and upgrades.
@@ -539,7 +539,7 @@
 - [Nextcloud](https://nextcloud.com/) — Self-hosted collaboration platform for files, groupware, communication, and extensible applications.
 - [NGINX](https://nginx.org) — Web server, reverse proxy, load balancer, and HTTP cache.
 - [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) — F5-maintained Kubernetes ingress controller that runs with NGINX Open Source or subscription-licensed NGINX Plus.
-- [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) — NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
+- [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) — Kubernetes Gateway API controller using NGINX as data plane for HTTP, gRPC, and supported TCP/UDP traffic.
 - [Nocalhost](https://nocalhost.dev) — Cloud-native app development tool.
 - [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) — Prometheus exporter that exposes hardware and operating-system metrics from Unix-like hosts.
 - [Node.js](https://nodejs.org/en) — Cross-platform JavaScript runtime used to build command-line tools, services, and automation.
@@ -589,7 +589,7 @@
 - [otel-gui](https://github.com/metafab/otel-gui) — Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls, service maps, and correlated logs.
 - [ouch](https://github.com/ouch-org/ouch) — Command-line archive compression and extraction tool with format detection.
 - [oVirt](https://www.ovirt.org/) — Open-source virtualization management platform for KVM hosts, virtual machines, storage, and networks.
-- [OVN-Kubernetes](https://ovn-kubernetes.io) — Networking for Kubernetes using OVN.
+- [OVN-Kubernetes](https://ovn-kubernetes.io) — Kubernetes network plugin based on OVN and Open vSwitch; a separate project from Kube-OVN.
 - [Pacemaker](https://clusterlabs.org/projects/pacemaker/) — High-availability cluster resource manager that detects failures and coordinates service recovery across nodes.
 - [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) — Hosted operations platform for on-call management, incident response, and operational automation.
 - [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) — Commercial CNAPP unifying application security, cloud posture and runtime protection with SOC workflows.
@@ -617,7 +617,7 @@
 - [PowerShell](https://learn.microsoft.com/en-us/powershell/) — Cross-platform shell and scripting runtime for object-based system automation.
 - [Praesto](https://github.com/federicolepera/praesto) — Kubernetes-native model cache system using an operator, node agent, and CSI driver to stage model artifacts on cluster nodes.
 - [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) — Predictive scaling for Kubernetes workloads.
-- [Project Contour](https://projectcontour.io) — Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reconfiguration, and secure multi-team delegation.
+- [Project Contour](https://projectcontour.io) — Envoy-powered Kubernetes ingress controller supporting Ingress, HTTPProxy and Gateway API resources.
 - [Project Sveltos](https://projectsveltos.io/latest) — Project Sveltos distributes and reconciles cluster add-ons, Helm charts, Kustomize resources and manifests across Kubernetes fleets.
 - [Prometheus](https://prometheus.io) — Open-source metrics monitoring server with a time-series database, PromQL and alerting rules; Alertmanager, exporters and client libraries are separate ecosystem components.
 - [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) — Metrics cache that accepts pushed metrics from short-lived and batch jobs for Prometheus scraping.

@@ -460,7 +460,7 @@
   repository_archived: false
 - id: chisel-operator
   name: Chisel Operator
-  summary: Operator for managing Chisel tunnels in Kubernetes.
+  summary: "Kubernetes operator for exposing LoadBalancer services via Chisel SSH tunnels and external exit nodes."
   official_url: https://chisel.fyralabs.com
   repository_url: https://github.com/FyraLabs/chisel-operator
   categories:
@@ -478,16 +478,22 @@
   - You need to expose Kubernetes services through HTTP tunnels without public IPs.
   avoid_when:
   - You have proper ingress, VPN, or cloud load balancers available.
+  - "You cannot secure SSH exit-node access, exposed service endpoints, or cloud API and operator credentials."
+  - "You require a verified exact GPL-3.0-only versus -or-later grant or confirmed long-term production support."
   deployment_models: []
+  repository_archived: false
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-25"
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L78
   - legacy:devopstools_final.md#L539
+  - https://github.com/FyraLabs/chisel-operator/blob/v0.7.1/LICENSE.md
+  - https://github.com/FyraLabs/chisel-operator/blob/v0.7.1/README.md
+  - https://github.com/FyraLabs/chisel-operator/releases/tag/v0.7.1
   needs_review: true
 - id: cilium
   name: Cilium
@@ -534,7 +540,7 @@
   needs_review: false
 - id: cloudflare-kubernetes-gateway
   name: Cloudflare Kubernetes Gateway
-  summary: Cloudflare gateway for Kubernetes clusters.
+  summary: "Independently maintained Kubernetes Gateway API controller for exposing selected services via Cloudflare Tunnels."
   repository_url: https://github.com/pl4nty/cloudflare-kubernetes-gateway
   categories:
   - kubernetes-networking-storage-addons
@@ -551,16 +557,23 @@
   - You want to expose Kubernetes services through Cloudflare Tunnels using the Gateway API.
   avoid_when:
   - You don't use Cloudflare or need a vendor-neutral ingress solution.
+  - "You require full Gateway API v1 Core, weighted routes, or automatic cleanup of obsolete Cloudflare DNS records."
+  - "You cannot protect and rotate scoped Cloudflare Tunnel and DNS tokens stored in Kubernetes Secrets."
   deployment_models: []
+  repository_archived: false
   license_model: oss
+  license_spdx: "MIT"
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-25"
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L80
   - legacy:devopstools_final.md#L543
+  - https://github.com/pl4nty/cloudflare-kubernetes-gateway/blob/v0.10.1/LICENSE
+  - https://github.com/pl4nty/cloudflare-kubernetes-gateway/blob/v0.10.1/README.md
+  - https://github.com/pl4nty/cloudflare-kubernetes-gateway/releases/tag/v0.10.1
   needs_review: true
 - id: cloudnativepg
   name: CloudNativePG
@@ -1160,7 +1173,7 @@
   needs_review: false
 - id: flannel
   name: flannel
-  summary: Simple Layer 3 network fabric (CNI) for Kubernetes.
+  summary: "Kubernetes layer-3 network fabric for pod traffic across nodes; network policy requires a separate controller."
   repository_url: https://github.com/flannel-io/flannel
   categories:
   - kubernetes-networking-storage-addons
@@ -1173,18 +1186,25 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
+  use_when:
+  - "You need straightforward layer-3 Kubernetes inter-node networking."
+  avoid_when:
+  - "You require native NetworkPolicy enforcement in flanneld; deploy a compatible policy controller."
   deployment_models: []
+  repository_archived: false
   license_model: oss
+  license_spdx: "Apache-2.0"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-25"
   sources:
   - legacy:devopstools_final.md#L557
-  needs_review: true
+  - https://github.com/flannel-io/flannel/blob/v0.28.10/LICENSE
+  - https://github.com/flannel-io/flannel/blob/v0.28.10/README.md
+  - https://github.com/flannel-io/flannel/releases/tag/v0.28.10
+  needs_review: false
 - id: git-sync
   name: git-sync
   summary: Sidecar app that clones a Git repository and keeps it synchronized with upstream.
@@ -1245,7 +1265,7 @@
   needs_review: true
 - id: haproxy
   name: HAProxy
-  summary: Reliable, high-performance TCP/HTTP load balancer.
+  summary: "General-purpose high-performance TCP/HTTP reverse proxy and load balancer, distinct from HAProxy Kubernetes Ingress."
   official_url: https://www.haproxy.org
   repository_url: https://github.com/haproxy/haproxy
   categories:
@@ -1263,16 +1283,21 @@
   - You need a battle-tested L4/L7 load balancer with fine-grained traffic control.
   avoid_when:
   - Cloud-native load balancers or an ingress controller (NGINX/Envoy) already handle your traffic.
+  - "You assume HAProxy core is the separate Kubernetes ingress-controller project."
+  - "You need a single SPDX conclusion without verifying GPL, LGPL header, and OpenSSL exceptions for a specific version."
   deployment_models: []
+  repository_archived: false
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-25"
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L90
   - legacy:devopstools_final.md#L560
+  - https://github.com/haproxy/haproxy/blob/master/LICENSE
+  - https://github.com/haproxy/haproxy/blob/master/README.md
   needs_review: true
 - id: haproxy-data-plane-api
   name: HAProxy Data Plane API
@@ -2253,7 +2278,7 @@
   needs_review: true
 - id: kgateway
   name: KGateway
-  summary: Kubernetes gateway networking.
+  summary: "Envoy-based Kubernetes Gateway API control plane for routing applications and API traffic."
   official_url: https://kgateway.dev
   repository_url: https://github.com/kgateway-dev/kgateway
   categories:
@@ -2271,17 +2296,23 @@
   - You want an Envoy-based Gateway API implementation with advanced routing.
   avoid_when:
   - Your existing ingress controller already supports Gateway API.
+  - "You require unsupported Gateway API extensions or assume v2.5 prereleases have stable-series support."
   deployment_models: []
+  repository_archived: false
   license_model: oss
+  license_spdx: "Apache-2.0"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-25"
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L109
   - legacy:devopstools_final.md#L585
-  needs_review: true
+  - https://github.com/kgateway-dev/kgateway/blob/v2.4.7/LICENSE
+  - https://github.com/kgateway-dev/kgateway/releases/tag/v2.4.7
+  - https://kgateway.dev/docs/envoy/latest/reference/versions/
+  needs_review: false
 - id: kong
   name: Kong Gateway
   summary: API gateway with an open-source core and commercial management and enterprise capabilities.
@@ -2545,7 +2576,7 @@
   needs_review: false
 - id: kube-ovn
   name: Kube-OVN
-  summary: CloudNative Network for KubeVirt and Multi-Tenancy.
+  summary: "OVN and Open vSwitch-based Kubernetes CNI supporting VPCs, overlays, underlays, and KubeVirt networking."
   official_url: https://www.kube-ovn.io
   repository_url: https://github.com/kubeovn/kube-ovn
   categories:
@@ -2563,17 +2594,23 @@
   - You need advanced networking features like subnet isolation, VPC, QoS, and traffic mirroring.
   avoid_when:
   - A simpler CNI (Calico/Flannel/Cilium) provides sufficient network policy and performance.
+  - "You need a minimal pod network without the operational complexity of OVN and OVS."
   deployment_models: []
+  repository_archived: false
   license_model: oss
+  license_spdx: "Apache-2.0"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-25"
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L117
   - legacy:devopstools_final.md#L596
-  needs_review: true
+  - https://github.com/kubeovn/kube-ovn/blob/v1.16.15/LICENSE
+  - https://github.com/kubeovn/kube-ovn/blob/v1.16.15/README.md
+  - https://github.com/kubeovn/kube-ovn/releases/tag/v1.16.15
+  needs_review: false
 - id: kubeelasti
   name: KubeElasti
   summary: Kubernetes controller and request proxy for scaling HTTP workloads to zero and restoring them on demand.
@@ -3206,7 +3243,7 @@
   needs_review: true
 - id: multus-cni
   name: Multus CNI
-  summary: CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods.
+  summary: "Kubernetes CNI meta-plugin that delegates to other CNIs to attach multiple network interfaces to pods."
   repository_url: https://github.com/k8snetworkplumbingwg/multus-cni
   categories:
   - kubernetes-networking-storage-addons
@@ -3219,18 +3256,25 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
+  use_when:
+  - "Your Kubernetes workloads require multiple network attachments through delegated CNI plugins."
+  avoid_when:
+  - "You need a standalone primary pod network; Multus requires a pre-existing default CNI."
   deployment_models: []
+  repository_archived: false
   license_model: oss
+  license_spdx: "Apache-2.0"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-25"
   sources:
   - legacy:devopstools_final.md#L608
-  needs_review: true
+  - https://github.com/k8snetworkplumbingwg/multus-cni/blob/v4.3.1/LICENSE
+  - https://github.com/k8snetworkplumbingwg/multus-cni/blob/v4.3.1/README.md
+  - https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v4.3.1
+  needs_review: false
 - id: mysql-operator-for-kubernetes
   name: MySQL Operator for Kubernetes
   summary: Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups,
@@ -3369,8 +3413,9 @@
   needs_review: false
 - id: nginx-gateway-fabric
   name: nginx-gateway-fabric
-  summary: NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
+  summary: "Kubernetes Gateway API controller using NGINX as data plane for HTTP, gRPC, and supported TCP/UDP traffic."
   repository_url: https://github.com/nginx/nginx-gateway-fabric
+  documentation_url: "https://docs.nginx.com/nginx-gateway-fabric/"
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -3382,18 +3427,27 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
+  use_when:
+  - "You want Gateway API routing backed by NGINX with a published version compatibility matrix."
+  avoid_when:
+  - "You require Ingress NGINX behavior or Gateway API features listed as unsupported in its compatibility matrix."
   deployment_models: []
+  repository_archived: false
   license_model: oss
+  license_spdx: "Apache-2.0"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-25"
   sources:
   - legacy:devopstools_final.md#L612
-  needs_review: true
+  - https://github.com/nginx/nginx-gateway-fabric/blob/v2.8.0/LICENSE
+  - https://github.com/nginx/nginx-gateway-fabric/blob/v2.8.0/README.md
+  - https://github.com/nginx/nginx-gateway-fabric/releases/tag/v2.8.0
+  - https://docs.nginx.com/nginx-gateway-fabric/overview/technical-specifications/
+  - https://docs.nginx.com/nginx-gateway-fabric/overview/gateway-api-compatibility/
+  needs_review: false
 - id: nginx-ingress-controller
   name: NGINX Ingress Controller
   summary: F5-maintained Kubernetes ingress controller that runs with NGINX Open Source or subscription-licensed NGINX Plus.
@@ -3609,9 +3663,9 @@
   needs_review: false
 - id: ovn-kubernetes
   name: OVN-Kubernetes
-  summary: Networking for Kubernetes using OVN.
+  summary: "Kubernetes network plugin based on OVN and Open vSwitch; a separate project from Kube-OVN."
   official_url: https://ovn-kubernetes.io
-  repository_url: https://github.com/ovn-org/ovn-kubernetes
+  repository_url: "https://github.com/ovn-kubernetes/ovn-kubernetes"
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -3627,17 +3681,23 @@
   - You need enterprise-grade SDN with OVS/OVN features (network virtualization, multi-tenancy).
   avoid_when:
   - Simpler CNI plugins provide adequate performance and policy enforcement.
+  - "You assume the separate Kube-OVN project or every Kubernetes distribution shares this implementation's support matrix."
   deployment_models: []
+  repository_archived: false
   license_model: oss
+  license_spdx: "Apache-2.0"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-25"
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L128
   - legacy:devopstools_final.md#L618
-  needs_review: true
+  - https://github.com/ovn-kubernetes/ovn-kubernetes/blob/v1.4.0/LICENSE
+  - https://github.com/ovn-kubernetes/ovn-kubernetes/blob/v1.4.0/README.md
+  - https://github.com/ovn-kubernetes/ovn-kubernetes/releases/tag/v1.4.0
+  needs_review: false
 - id: portworx
   name: Portworx
   summary: Kubernetes data services platform.
@@ -3702,10 +3762,10 @@
   needs_review: true
 - id: project-contour
   name: Project Contour
-  summary: Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reconfiguration,
-    and secure multi-team delegation.
+  summary: "Envoy-powered Kubernetes ingress controller supporting Ingress, HTTPProxy and Gateway API resources."
   official_url: https://projectcontour.io
   repository_url: https://github.com/projectcontour/contour
+  documentation_url: "https://projectcontour.io/docs"
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -3717,18 +3777,26 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
+  use_when:
+  - "You need an Envoy-backed ingress controller with HTTPProxy delegation and documented support matrices."
+  avoid_when:
+  - "You require Gateway API features beyond its documented support or an untested Kubernetes and Envoy combination."
   deployment_models: []
+  repository_archived: false
   license_model: oss
+  license_spdx: "Apache-2.0"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-25"
   sources:
   - legacy:devopstools_final.md#L620
-  needs_review: true
+  - https://github.com/projectcontour/contour/blob/v1.33.7/LICENSE
+  - https://github.com/projectcontour/contour/blob/v1.33.7/README.md
+  - https://github.com/projectcontour/contour/releases/tag/v1.33.7
+  - https://projectcontour.io/resources/compatibility-matrix/
+  needs_review: false
 - id: project-sveltos
   name: Project Sveltos
   summary: Project Sveltos distributes and reconciles cluster add-ons, Helm charts, Kustomize resources and manifests across Kubernetes fleets.
