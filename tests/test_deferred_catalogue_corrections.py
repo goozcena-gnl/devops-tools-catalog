@@ -225,6 +225,71 @@ def test_n1a_supersession_is_exact_and_does_not_weaken_other_guards() -> None:
         assert "repository_url" in str(exc)
 
 
+def test_wave23_supersessions_are_evidence_scoped_and_exact() -> None:
+    expected = {
+        ("argocd-agent", "repository_url"),
+        ("argocd-agent", "license_spdx"),
+        ("argocd-agent", "status"),
+        ("argocd-agent", "needs_review"),
+        ("kubechecks", "repository_url"),
+        ("kubechecks", "license_spdx"),
+        ("kubechecks", "status"),
+        ("kubechecks", "needs_review"),
+    }
+    assert expected == n1a.WAVE23_CURRENT_STATE_SUPERSESSIONS
+    assert not (expected & n1a.N1A_CURRENT_STATE_SUPERSESSIONS)
+    assert all(field in n1a.FORBIDDEN_SELECTED_FIELDS for _, field in expected)
+
+    accepted = n1a._records_at(n1a.N1A_RESULT_SHA)
+    future = deepcopy(accepted)
+    for tool_id, field in expected:
+        record = future[tool_id][1]
+        if field == "needs_review":
+            record[field] = False
+        elif field == "status":
+            record[field] = "active"
+        elif field == "repository_url":
+            record[field] = (
+                "https://github.com/argoproj-labs/argocd-agent"
+                if tool_id == "argocd-agent"
+                else "https://github.com/zapier/kubechecks"
+            )
+        else:
+            record[field] = "Apache-2.0" if tool_id == "argocd-agent" else "MPL-2.0"
+    n1a._assert_current_n1a_persistence(future, accepted)
+
+    future["kubechecks"][1]["license_model"] = "commercial"
+    try:
+        n1a._assert_current_n1a_persistence(future, accepted)
+        raise AssertionError("Unreviewed N1a protected fields must still fail")
+    except AssertionError as exc:
+        assert "license_model" in str(exc)
+
+
+def test_wave23_actual_catalogue_pins_exact_eight_values() -> None:
+    # Unlike the frozen N1a fixtures, this reads the real current catalogue.
+    current = n1a._current_records()
+    n1a._assert_wave23_approved_current_state(current)
+
+    for (tool_id, field), approved in n1a.WAVE23_APPROVED_CURRENT_STATE_VALUES.items():
+        changed = deepcopy(current)
+        if isinstance(approved, bool):
+            changed[tool_id][1][field] = not approved
+        else:
+            changed[tool_id][1][field] = (
+                "AGPL-3.0-only"
+                if field == "license_spdx"
+                else "https://example.invalid/unapproved-repository"
+                if field == "repository_url"
+                else "needs-review"
+            )
+        try:
+            n1a._assert_wave23_approved_current_state(changed)
+            raise AssertionError(f"Wave 23 drift must fail for {(tool_id, field)}")
+        except AssertionError as exc:
+            assert "Wave 23 approved field drifted" in str(exc)
+
+
 def test_n1a_historical_accounting_remains_exact() -> None:
     assert len(n1a.EXPECTED_IDS) == 20
     assert len(n1a.EXPECTED_WORK_ITEMS) == 25

@@ -34,7 +34,7 @@
 - [Aralez](https://github.com/sadoyan/aralez) — Rust reverse proxy built on Cloudflare Pingora, with TLS, authentication, load balancing, and dynamic discovery through Consul and Kubernetes.
 - [Arcane](https://getarcane.app/) — Self-hosted web interface for managing Docker containers, images, networks, and Compose projects.
 - [Argo CD](https://argo-cd.readthedocs.io/en/stable/) — Declarative GitOps continuous delivery for Kubernetes.
-- [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) — Agent-based architecture for ArgoCD to manage remote clusters.
+- [ArgoCD Agent](https://argocd-agent.readthedocs.io/latest) — Agent and principal components for managing remote Argo CD clusters over authenticated mTLS connections; a separate project from Argo CD core.
 - [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) — Pull-request diff tool for previewing Argo CD application manifest changes before sync.
 - [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) — Automated image updates for ArgoCD.
 - [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
@@ -74,7 +74,7 @@
 - [Bottlerocket](https://bottlerocket.dev) — Linux-based, security-hardened operating system purpose-built for running containers.
 - [BunkerWeb](https://www.bunkerweb.io) — Open source, cloud-native web application firewall and security gateway for reverse-proxy deployments.
 - [Bunnyshell](https://www.bunnyshell.com) — Environment-as-a-service platform for preview, staging, and ephemeral cloud environments driven by environment-as-code workflows.
-- [Caddy](https://caddyserver.com) — Extensible web server and reverse proxy with automatic HTTPS.
+- [Caddy](https://caddyserver.com) — Extensible web server, reverse proxy and HTTPS endpoint with automatic certificate management; not a GitOps reconciliation controller.
 - [Camunda 8](https://camunda.com) — Commercial process-orchestration platform for BPMN workflows and DMN decisions, offered as SaaS or Self-Managed with separate production licensing.
 - [Canonical Kubernetes](https://ubuntu.com/kubernetes) — Canonical's open-source Kubernetes distribution for production clusters across public cloud, on-premises, and edge infrastructure.
 - [Capacitor Next](https://gimlet.io/capacitor-next/) — Local-first web interface for Kubernetes resources, Helm history, and Flux reconciliation state.
@@ -172,7 +172,7 @@
 - [Flawless](https://github.com/William-Lu-stack/Flawless) — AI SRE AgenticOps agent for autonomous incident detection, diagnosis, and remediation across Kubernetes and cloud infrastructure.
 - [Flux](https://fluxcd.io) — Open and extensible GitOps toolkit for Kubernetes.
 - [Flux Operator](https://fluxoperator.dev) — ControlPlane-maintained Kubernetes operator installing, configuring and upgrading Flux CD instances through FluxInstance resources, with additional self-service APIs. Its AGPL-3.0 software is separate from Flux CD core and commercial ControlPlane distribution/support terms.
-- [flux9s](https://flux9s.ca) — K9s-inspired terminal UI for Flux resources, controller health, and GitOps state.
+- [flux9s](https://flux9s.ca) — Terminal UI for inspecting Flux GitOps controllers and Kubernetes workloads, with RBAC-gated cluster operations.
 - [Forecastle](https://github.com/stakater/Forecastle) — Kubernetes dashboard that discovers and displays application URLs from Ingress annotations as a dynamic launchpad.
 - [FreeLens](https://freelensapp.github.io) — Community-maintained Kubernetes IDE fork.
 - [fulling](https://github.com/FullAgent/fulling) — AI-powered full-stack engineer agent built with Next.js, Claude, and PostgreSQL, using Kubernetes as infrastructure.
@@ -265,7 +265,7 @@
 - [Kagent](https://kagent.dev) — AI-powered Kubernetes agent for cluster management.
 - [Kairos](https://kairos.io/) — Immutable Linux meta-distribution for building edge appliances and Kubernetes-based operating-system images.
 - [Kamaji](https://kamaji.clastix.io) — Kubernetes control plane manager (multi-tenancy/security).
-- [Kamal](https://kamal-deploy.org) — Deploy web apps anywhere with zero-downtime deploys over SSH using containers.
+- [Kamal](https://kamal-deploy.org) — Deploy and roll containerized web applications onto remote servers over SSH using Kamal and kamal-proxy, without requiring Kubernetes.
 - [Kargo](https://kargo.io) — GitOps promotion workflow for Kubernetes.
 - [Karpenter](https://github.com/kubernetes-sigs/karpenter) — Kubernetes node autoscaling project with shared APIs and controllers plus separate provider implementations; provisions nodes for unschedulable pods and manages node lifecycle rather than workload replica counts.
 - [Kata Containers](https://katacontainers.io) — Secure containers with lightweight VMs.
@@ -311,7 +311,7 @@
 - [KubeArmor](https://kubearmor.io/) — Runtime security enforcement system for applying workload policies through Linux Security Modules.
 - [kubebuilder Book](https://book.kubebuilder.io) — Guide for building Kubernetes APIs using `kubebuilder`.
 - [kubecfg](https://github.com/kadirbelkuyu/kubecfg) — CLI/TUI for managing kubeconfig contexts and namespaces.
-- [KubeChecks](https://kubechecks.readthedocs.io/en/latest) — Pre-merge validation for Kubernetes GitOps changes.
+- [KubeChecks](https://kubechecks.readthedocs.io/en/latest) — Pre-merge Kubernetes GitOps application change review that integrates with Kubernetes and Argo CD rather than reconciling deployments itself.
 - [KubeClipper](https://kubeclipper.io/en) — Web-based tool for rapid deployment and management of Kubernetes clusters.
 - [KubeCM](https://kubecm.cloud/) — Command-line utility for merging, switching, and managing kubeconfig files and contexts.
 - [kubeconform](https://github.com/yannh/kubeconform) — Kubernetes manifest validator that checks JSON schemas locally or in CI, with configurable schemas for custom resources and offline operation.
@@ -473,7 +473,7 @@
 - [Polykube](https://github.com/Kismet-Engineering/polykube) — Experimental GitOps-driven operators for portable workloads across Kubernetes clusters.
 - [Port](https://www.port.io/) — Internal developer portal and service catalog with automations/workflows.
 - [Portainer](https://www.portainer.io) — Container management platform.
-- [Porter](https://github.com/porter-dev) — PaaS for deploying apps to Kubernetes.
+- [Porter](https://github.com/porter-dev) — Porter cloud platform for deploying applications into user-owned Kubernetes clusters; current commercial and source-licence boundaries require review.
 - [Portworx](https://portworx.com) — Kubernetes data services platform.
 - [PostgreSQL](https://www.postgresql.org) — Extensible open-source relational database with strong transactional, indexing, and SQL capabilities.
 - [Praesto](https://github.com/federicolepera/praesto) — Kubernetes-native model cache system using an operator, node agent, and CSI driver to stage model artifacts on cluster nodes.
@@ -563,7 +563,7 @@
 - [TrueNAS](https://www.truenas.com) — Storage platform/OS for NAS and SAN with community and enterprise editions.
 - [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) — Guide to optimizing swap for Kubernetes nodes.
 - [Typhoon](https://typhoon.psdn.io) — Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platforms.
-- [Uncloud](https://uncloud.run) — Multi-node Docker Compose for running containerized apps in production without Kubernetes.
+- [Uncloud](https://uncloud.run) — Deploy and operate containerized workloads across Docker hosts with service discovery and HTTPS ingress, without a Kubernetes control plane.
 - [Unraid](https://unraid.net) — Operating system for network-attached storage and virtualization.
 - [Upjet](https://github.com/crossplane/upjet) — Code generation and controller runtime for building Crossplane providers from Terraform providers.
 - [Uyuni](https://www.uyuni-project.org/) — Open-source systems management platform for software channels, configuration, patching, and client lifecycle.
@@ -581,8 +581,8 @@
 - [VoltAgent](https://voltagent.dev) — Open-source TypeScript framework for building AI agents.
 - [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) — Vertical Pod Autoscaler.
 - [Vultr](https://www.vultr.com) — Commercial public cloud platform for virtual machines, bare metal, GPU compute, managed Kubernetes, storage, networking, and databases.
-- [Waypoint](https://developer.hashicorp.com/waypoint) — Application build, deploy, and release workflow platform from HashiCorp.
-- [Weaveworks GitOps](https://docs.gitops.weaveworks.org) — GitOps automation for Kubernetes and cloud-native apps.
+- [Waypoint](https://developer.hashicorp.com/waypoint) — Archived HashiCorp Waypoint Community Edition build, deploy and release CLI; distinct from the later HCP Waypoint SaaS platform.
+- [Weaveworks GitOps](https://docs.gitops.weaveworks.org) — Flux-based Kubernetes GitOps management UI; the project advertises a transition to community stewardship and maintenance support remains under review.
 - [webernetes](https://github.com/ngrok/webernetes) — Run Kubernetes entirely in the browser for learning and experimentation.
 - [Webmin](https://webmin.com/) — Web-based administration interface for Unix systems and common server services.
 - [Woodpecker CI](https://woodpecker-ci.org) — Apache-2.0 self-hosted CI/CD engine with a server and agents, forge integration and backend-dependent Docker, Kubernetes or local execution.
