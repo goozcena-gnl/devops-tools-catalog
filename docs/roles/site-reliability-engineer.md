@@ -155,7 +155,6 @@
 | [Holos](https://holos.run) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Honeycomb](https://www.honeycomb.io) | Monitoring, metrics, logs and tracing | commercial | active |
 | [HwameiStor](https://hwameistor.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Hybernate](https://okedeji.io/hybernate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [HyperDX](https://www.hyperdx.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [hyperfine](https://github.com/sharkdp/hyperfine) | Chaos and performance engineering | oss | active |
 | [Icinga](https://icinga.com) | Monitoring, metrics, logs and tracing | oss | active |
@@ -298,6 +297,7 @@
 | [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | needs-review |
 | [Nagios](https://www.nagios.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | active |
 | [Netdata Cloud](https://www.netdata.cloud) | Monitoring, metrics, logs and tracing | free-saas | active |
 | [NetWatch Labs](https://www.netwatchlabs.com) | SRE, incident response and on-call | oss | needs-review |

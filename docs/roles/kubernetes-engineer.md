@@ -102,7 +102,6 @@
 | [Helmper](https://christoffernissen.github.io/helmper) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Holos](https://holos.run) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [HwameiStor](https://hwameistor.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Hybernate](https://okedeji.io/hybernate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) | Kubernetes distributions and operations | oss | needs-review |
 | [ipman](https://dialohq.github.io/ipman/) | Kubernetes networking, storage and add-ons, Emerging and experimental tools | oss | active |
 | [Istio](https://istio.io) | Kubernetes networking, storage and add-ons | oss | active |
@@ -244,6 +243,7 @@
 | [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | active |
 | [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) | Kubernetes networking, storage and add-ons | open-core | active |
 | [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | needs-review |

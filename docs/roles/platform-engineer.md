@@ -245,7 +245,6 @@
 | [HPE Morpheus Software](https://www.hpe.com/us/en/products/software/morpheus-software.html) | Cloud platforms and cloud management | commercial | active |
 | [Humanitec](https://humanitec.com) | Platform engineering and internal developer platforms | commercial | active |
 | [HwameiStor](https://hwameistor.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Hybernate](https://okedeji.io/hybernate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [IBM Cloud](https://www.ibm.com/products/cloud) | Cloud platforms and cloud management | commercial | active |
 | [IBM Cloudability](https://www.apptio.com/products/cloudability/) | FinOps and sustainability | commercial | active |
 | [IBM Kubecost](https://www.kubecost.com/) | FinOps and sustainability | open-core | active |
@@ -435,6 +434,7 @@
 | [Model Express](https://github.com/ai-dynamo/modelexpress) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nautobot](https://docs.nautobot.com/) | Infrastructure as Code | open-core | active |
 | [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | active |
 | [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |

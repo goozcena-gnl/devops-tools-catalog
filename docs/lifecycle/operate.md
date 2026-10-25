@@ -301,7 +301,6 @@
 - [htop](https://htop.dev/) — Interactive process viewer for inspecting system processes and resource usage.
 - [Humanitec](https://humanitec.com) — Commercial platform orchestrator for building internal developer platforms across cloud and Kubernetes infrastructure.
 - [HwameiStor](https://hwameistor.io) — Cloud-native local storage system.
-- [Hybernate](https://okedeji.io/hybernate) — Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce resource consumption during off-peak hours.
 - [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) — Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows Server.
 - [HyperDX](https://www.hyperdx.io) — ClickHouse-backed observability interface for correlating logs, traces, metrics and session replay within ClickStack deployments.
 - [IBM Cloud](https://www.ibm.com/products/cloud) — Enterprise cloud services and infrastructure by IBM.
@@ -530,6 +529,7 @@
 - [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) — Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups, and upgrades.
 - [n8n](https://n8n.io) — Workflow automation platform (fair-code / Sustainable Use License; not OSI open source).
 - [Nagios](https://www.nagios.org) — Infrastructure monitoring (Nagios Core).
+- [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) — Kubernetes operator that pauses idle workloads and wakes them on demand to reduce non-production resource consumption.
 - [Nelm](https://github.com/werf/nelm) — Helm-compatible Kubernetes deployment tool and Helm alternative with release planning and resource lifecycle management; not proven a drop-in replacement for every Helm plugin.
 - [Neovim](https://neovim.io/) — Extensible Vim-derived text editor with built-in APIs for plugins and editor automation.
 - [nerdctl](https://github.com/containerd/nerdctl) — Docker-compatible CLI for containerd.
