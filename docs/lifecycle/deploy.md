@@ -88,14 +88,14 @@
 - [cert-manager](https://cert-manager.io) — Kubernetes X.509 certificate-management controller issuing and renewing certificates through configured issuers such as ACME and external CAs; it is distinct from Let's Encrypt, certbot and general secrets backends.
 - [CFEngine](https://cfengine.com) — Policy-based configuration management; community + commercial editions.
 - [Chef Infra](https://www.chef.io/products/chef-infra) — Commercially distributed infrastructure configuration-management tooling with separately Apache-licensed upstream source.
-- [Chisel Operator](https://chisel.fyralabs.com) — Operator for managing Chisel tunnels in Kubernetes.
+- [Chisel Operator](https://chisel.fyralabs.com) — Kubernetes operator for exposing LoadBalancer services via Chisel SSH tunnels and external exit nodes.
 - [Cilium](https://cilium.io) — EBPF-based networking, observability, and security for Kubernetes.
 - [Civo](https://www.civo.com) — Cloud infrastructure provider focused on Kubernetes.
 - [ClickHouse](https://clickhouse.com) — Columnar database commonly used as an observability backend.
 - [Clonezilla](https://clonezilla.org/) — Bootable disk-imaging and cloning system for bare-metal backup, recovery, and machine deployment.
 - [Cloud Run functions](https://cloud.google.com/functions) — Managed event-driven functions deployed on the unified Google Cloud Run platform.
 - [CloudCustodian](https://cloudcustodian.io) — Cloud governance rules engine.
-- [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) — Cloudflare gateway for Kubernetes clusters.
+- [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) — Independently maintained Kubernetes Gateway API controller for exposing selected services via Cloudflare Tunnels.
 - [CloudFuze](https://www.cloudfuze.com) — Cloud file transfer and management.
 - [Cloudify](https://cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
 - [CloudNativePG](https://cloudnative-pg.io) — CloudNativePG operator manages PostgreSQL clusters on Kubernetes, including HA, backups, failover and recovery workflows.
@@ -167,7 +167,7 @@
 - [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) — Kubernetes controller that observes resources such as Services and Ingresses and synchronizes DNS records through configured provider integrations; it is not a DNS server, ingress controller or DNS provider.
 - [Falco](https://falco.org) — Runtime security for cloud-native environments.
 - [Firecracker](https://firecracker-microvm.github.io) — Lightweight virtualization for microVMs.
-- [flannel](https://github.com/flannel-io/flannel) — Simple Layer 3 network fabric (CNI) for Kubernetes.
+- [flannel](https://github.com/flannel-io/flannel) — Kubernetes layer-3 network fabric for pod traffic across nodes; network policy requires a separate controller.
 - [Flatcar Container Linux](https://www.flatcar.org) — Immutable Linux distro for containers.
 - [Flawless](https://github.com/William-Lu-stack/Flawless) — AI SRE AgenticOps agent for autonomous incident detection, diagnosis, and remediation across Kubernetes and cloud infrastructure.
 - [Flux](https://fluxcd.io) — Open and extensible GitOps toolkit for Kubernetes.
@@ -200,7 +200,7 @@
 - [gVisor](https://gvisor.dev) — Application kernel and container sandbox runtime that provides strong isolation between containers and the host.
 - [HAMi](https://project-hami.io) — Heterogeneous AI computing virtualization middleware.
 - [Hanoi CLI](https://github.com/k-krew/hanoi-cli) — Interactive rebalance advisor for Kubernetes.
-- [HAProxy](https://www.haproxy.org) — Reliable, high-performance TCP/HTTP load balancer.
+- [HAProxy](https://www.haproxy.org) — General-purpose high-performance TCP/HTTP reverse proxy and load balancer, distinct from HAProxy Kubernetes Ingress.
 - [HAProxy Data Plane API](https://www.haproxy.com/documentation/dataplaneapi/) — API for managing HAProxy configuration, runtime operations, stats, and logs.
 - [HAProxy Kubernetes Ingress Controller](https://www.haproxy.com/documentation/kubernetes-ingress) — HAProxy-powered Kubernetes ingress controller for high-performance Layer 7 traffic management.
 - [Harvester](https://harvesterhci.io/) — Kubernetes-based hyperconverged infrastructure platform integrating KubeVirt virtualization and Longhorn storage.
@@ -277,7 +277,7 @@
 - [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) — GPU-aware autoscaling extension for KEDA workloads.
 - [Keel](https://keel.sh) — Automated Kubernetes deployment updates.
 - [Kelos](https://github.com/kelos-dev/kelos) — Kubernetes-native framework for orchestrating autonomous AI coding agents.
-- [KGateway](https://kgateway.dev) — Kubernetes gateway networking.
+- [KGateway](https://kgateway.dev) — Envoy-based Kubernetes Gateway API control plane for routing applications and API traffic.
 - [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file) — Visualize and inspect Kubernetes cluster event history.
 - [KICS](https://kics.io) — IaC scanning for security issues.
 - [kimspect](https://github.com/koithos/kimspect) — Inspect container images used by pods, nodes, namespaces, and registries from the CLI.
@@ -305,7 +305,7 @@
 - [kubara](https://kubara.io/) — Open-source GitOps-first CLI for packaging, generating, and bootstrapping reusable Kubernetes platform architectures.
 - [Kube Copilot](https://github.com/feiskyer/kube-copilot) — AI assistant for Kubernetes operations.
 - [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
-- [Kube-OVN](https://www.kube-ovn.io) — CloudNative Network for KubeVirt and Multi-Tenancy.
+- [Kube-OVN](https://www.kube-ovn.io) — OVN and Open vSwitch-based Kubernetes CNI supporting VPCs, overlays, underlays, and KubeVirt networking.
 - [kube-score](https://kube-score.com) — Static Kubernetes object analysis that recommends reliability and security improvements for manifests, including probes, resource limits and security contexts.
 - [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) — Tool for bootstrapping Kubernetes clusters.
 - [KubeArmor](https://kubearmor.io/) — Runtime security enforcement system for applying workload policies through Linux Security Modules.
@@ -410,7 +410,7 @@
 - [MOCO](https://cybozu-go.github.io/moco) — MySQL Operator for Kubernetes by Cybozu.
 - [Model Express](https://github.com/ai-dynamo/modelexpress) — Rust service that stages model data near inference systems to reduce startup time.
 - [MongoDB](https://www.mongodb.com/) — Document database server whose Community Edition source uses SSPL, with separate commercial Enterprise Advanced and managed Atlas offerings.
-- [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) — CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods.
+- [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) — Kubernetes CNI meta-plugin that delegates to other CNIs to attach multiple network interfaces to pods.
 - [MySQL](https://www.mysql.com) — Relational database server with transactional storage, replication, and a large application ecosystem.
 - [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) — Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups, and upgrades.
 - [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) — Kubernetes operator that pauses idle workloads and wakes them on demand to reduce non-production resource consumption.
@@ -421,7 +421,7 @@
 - [Nextcloud](https://nextcloud.com/) — Self-hosted collaboration platform for files, groupware, communication, and extensible applications.
 - [NGINX](https://nginx.org) — Web server, reverse proxy, load balancer, and HTTP cache.
 - [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) — F5-maintained Kubernetes ingress controller that runs with NGINX Open Source or subscription-licensed NGINX Plus.
-- [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) — NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
+- [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) — Kubernetes Gateway API controller using NGINX as data plane for HTTP, gRPC, and supported TCP/UDP traffic.
 - [Nocalhost](https://nocalhost.dev) — Cloud-native app development tool.
 - [Nomad](https://www.nomadproject.io) — HashiCorp workload orchestrator for containerized and non-containerized jobs; Community Edition is source-available and Enterprise features and support require separate entitlements.
 - [Notary Project](https://notaryproject.dev/) — Notary Project umbrella for OCI artifact-signing and verification specifications and tools, including Notation CLI/libraries; component grants and deployment differ, and legacy Notary workflows and Sigstore/Cosign remain distinct.
@@ -458,7 +458,7 @@
 - [Orbit](https://gitlab.com/RMJx1/orbit) — Kubernetes multi-cluster management.
 - [OrbStack](https://orbstack.dev) — Local macOS environment for Docker containers, Kubernetes and Linux virtual machines.
 - [oVirt](https://www.ovirt.org/) — Open-source virtualization management platform for KVM hosts, virtual machines, storage, and networks.
-- [OVN-Kubernetes](https://ovn-kubernetes.io) — Networking for Kubernetes using OVN.
+- [OVN-Kubernetes](https://ovn-kubernetes.io) — Kubernetes network plugin based on OVN and Open vSwitch; a separate project from Kube-OVN.
 - [Pacemaker](https://clusterlabs.org/projects/pacemaker/) — High-availability cluster resource manager that detects failures and coordinates service recovery across nodes.
 - [peerd](https://peerd.ai) — Browser-native harness for AI agents.
 - [pgvector](https://github.com/pgvector/pgvector) — PostgreSQL extension that adds vector data types, similarity search, and vector indexes.
@@ -478,7 +478,7 @@
 - [PostgreSQL](https://www.postgresql.org) — Extensible open-source relational database with strong transactional, indexing, and SQL capabilities.
 - [Praesto](https://github.com/federicolepera/praesto) — Kubernetes-native model cache system using an operator, node agent, and CSI driver to stage model artifacts on cluster nodes.
 - [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) — Predictive scaling for Kubernetes workloads.
-- [Project Contour](https://projectcontour.io) — Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reconfiguration, and secure multi-team delegation.
+- [Project Contour](https://projectcontour.io) — Envoy-powered Kubernetes ingress controller supporting Ingress, HTTPProxy and Gateway API resources.
 - [Project Sveltos](https://projectsveltos.io/latest) — Project Sveltos distributes and reconciles cluster add-ons, Helm charts, Kustomize resources and manifests across Kubernetes fleets.
 - [Promptfoo](https://www.promptfoo.dev) — Test and evaluate LLM prompts.
 - [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) — Proxmox datacenter management product.

@@ -45,3 +45,192 @@ Repository metadata inspection on 2026-10-25 reports all ten canonical source re
 The next implementation stage may edit only these ten canonical records in `data/tools/kubernetes-networking-storage-addons.yaml`, keeping every other ID unchanged. Regenerate with `python -m scripts.generate_docs` (not direct Markdown edits) and verify `python -m scripts.generate_docs --check`; then locked Python 3.12 verification and `pip check`, Ruff lint/format, full pytest, `python -m scripts.validate_catalog`, `git diff --check`. Confirm expected counts, CI security gates and independent Codex/human P1/P2 review on final head. Manually run a **new strict Full link audit on the exact final SHA** and demand `blocking_new: 0`, `strict_result: PASS`, unchanged six known exception URL/classification pairs. No merge/auto-merge, release, tag, waived protections, or closing [#2](https://github.com/goozcena-gnl/devops-tools-catalog/issues/2). Close #139 only after explicit human merge and all post-merge `main` checks.
 
 **Actions in this stage:** evidence ledger only. Zero canonical changes; zero status flips; no generated docs touched; no tests or network audit run in this GitHub-only step.
+
+
+## Second pass — evidence-scoped canonical decisions (2026-10-25)
+
+**This section supersedes the initial documentary-triage count of 0/10 cleared above.**
+**7 CLEAR / 3 RETAIN REVIEW** is the result proposed for this second pass, subject to
+final generator checks, regression tests, CI, independent review, and strict link audit.
+The original first-pass record remains above as dated evidence, not the current result.
+
+| Decision | Stable canonical IDs |
+|---|---|
+| CLEAR (7) | `flannel`, `kube-ovn`, `ovn-kubernetes`, `multus-cni`, `kgateway`, `nginx-gateway-fabric`, `project-contour` |
+| RETAIN REVIEW (3) | `cloudflare-kubernetes-gateway`, `haproxy`, `chisel-operator` |
+
+**Important limits documented by primary sources:**
+
+- Flannel v0.28.10 `flanneld` does not natively enforce NetworkPolicy; separate policy components are necessary.
+- Kube-OVN and OVN-Kubernetes are different projects even though both use OVN/OVS.
+  OVN-Kubernetes historical GitHub owner path redirects to `ovn-kubernetes/ovn-kubernetes`
+  with immutable GitHub repository ID `65489927`.
+- Multus v4.3.1 is a multi-interface **meta-plugin** which delegates to a default primary CNI.
+- Kgateway v2.4.7 is a stable release; v2.5.0-beta.4 is a prerelease, not a GA upgrade.
+- NGINX Gateway Fabric v2.8.0 and Contour v1.33.7 publish compatibility matrices;
+  Gateway API extended routes/filters must not be presumed universally supported.
+- The independently maintained `pl4nty/cloudflare-kubernetes-gateway` v0.10.1 has MIT
+  source licensing but explicitly incomplete Gateway API v1 Core functionality and
+  documented limitations around DNS cleanup. Cloudflare account tokens and Kubernetes
+  Secrets need careful privilege management. **Retain review**.
+- HAProxy generic core is not HAProxy Kubernetes Ingress. Its source LICENSE discusses
+  GPL core, LGPL-exportable headers and an OpenSSL exception; the canonical SPDX grant
+  cannot be guessed solely from GitHub metadata. **Retain review**.
+- Chisel Operator's v0.7.1 source contains a GPL-3.0 licence document, but the precise
+  `-only`/`-or-later` statement and external SSH tunnel/exit-node security require
+  more review. Do not assign an unproven exact SPDX identifier. **Retain review**.
+
+No `maturity` score has been invented; `active` is a reviewed catalogue status, not a
+claim that every production deployment is suitable. Retained records remain
+`status: needs-review` and `needs_review: true`, with specific usage warnings and
+new primary evidence links. Legacy provenance is preserved. No unrelated IDs or
+canonical fields were changed.
+
+### Field-level before / after ledger (only changed fields)
+
+
+#### `chisel-operator` — RETAIN REVIEW
+
+| Canonical field | Before | After |
+|---|---|---|
+| `summary` | summary: Operator for managing Chisel tunnels in Kubernetes. | summary: "Kubernetes operator for exposing LoadBalancer services via Chisel SSH tunnels and external exit nodes." |
+| `avoid_when` | avoid_when: ⏎   - You have proper ingress, VPN, or cloud load balancers available. | avoid_when: ⏎   - You have proper ingress, VPN, or cloud load balancers available. ⏎   - "You cannot secure SSH exit-node access, exposed service endpoints, or cloud API and operator credentials." ⏎   - "You require a verified exact GPL-3.0-only versus -or-later grant or confirmed long-term production support." |
+| `repository_archived` | (absent) | repository_archived: false |
+| `status` | status: needs-review | status: "needs-review" |
+| `verified_on` | verified_on: '2026-08-03' | verified_on: "2026-10-25" |
+| `sources` | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L78 ⏎   - legacy:devopstools_final.md#L539 | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L78 ⏎   - legacy:devopstools_final.md#L539 ⏎   - https://github.com/FyraLabs/chisel-operator/blob/v0.7.1/LICENSE.md ⏎   - https://github.com/FyraLabs/chisel-operator/blob/v0.7.1/README.md ⏎   - https://github.com/FyraLabs/chisel-operator/releases/tag/v0.7.1 |
+
+#### `cloudflare-kubernetes-gateway` — RETAIN REVIEW
+
+| Canonical field | Before | After |
+|---|---|---|
+| `summary` | summary: Cloudflare gateway for Kubernetes clusters. | summary: "Independently maintained Kubernetes Gateway API controller for exposing selected services via Cloudflare Tunnels." |
+| `avoid_when` | avoid_when: ⏎   - You don't use Cloudflare or need a vendor-neutral ingress solution. | avoid_when: ⏎   - You don't use Cloudflare or need a vendor-neutral ingress solution. ⏎   - "You require full Gateway API v1 Core, weighted routes, or automatic cleanup of obsolete Cloudflare DNS records." ⏎   - "You cannot protect and rotate scoped Cloudflare Tunnel and DNS tokens stored in Kubernetes Secrets." |
+| `repository_archived` | (absent) | repository_archived: false |
+| `license_spdx` | (absent) | license_spdx: "MIT" |
+| `status` | status: needs-review | status: "needs-review" |
+| `verified_on` | verified_on: '2026-08-03' | verified_on: "2026-10-25" |
+| `sources` | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L80 ⏎   - legacy:devopstools_final.md#L543 | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L80 ⏎   - legacy:devopstools_final.md#L543 ⏎   - https://github.com/pl4nty/cloudflare-kubernetes-gateway/blob/v0.10.1/LICENSE ⏎   - https://github.com/pl4nty/cloudflare-kubernetes-gateway/blob/v0.10.1/README.md ⏎   - https://github.com/pl4nty/cloudflare-kubernetes-gateway/releases/tag/v0.10.1 |
+
+#### `flannel` — CLEAR
+
+| Canonical field | Before | After |
+|---|---|---|
+| `summary` | summary: Simple Layer 3 network fabric (CNI) for Kubernetes. | summary: "Kubernetes layer-3 network fabric for pod traffic across nodes; network policy requires a separate controller." |
+| `use_when` | use_when: [] | use_when: ⏎   - "You need straightforward layer-3 Kubernetes inter-node networking." |
+| `avoid_when` | avoid_when: [] | avoid_when: ⏎   - "You require native NetworkPolicy enforcement in flanneld; deploy a compatible policy controller." |
+| `repository_archived` | (absent) | repository_archived: false |
+| `license_spdx` | (absent) | license_spdx: "Apache-2.0" |
+| `status` | status: needs-review | status: "active" |
+| `verified_on` | verified_on: '2026-08-03' | verified_on: "2026-10-25" |
+| `sources` | sources: ⏎   - legacy:devopstools_final.md#L557 | sources: ⏎   - legacy:devopstools_final.md#L557 ⏎   - https://github.com/flannel-io/flannel/blob/v0.28.10/LICENSE ⏎   - https://github.com/flannel-io/flannel/blob/v0.28.10/README.md ⏎   - https://github.com/flannel-io/flannel/releases/tag/v0.28.10 |
+| `needs_review` | needs_review: true | needs_review: false |
+
+#### `haproxy` — RETAIN REVIEW
+
+| Canonical field | Before | After |
+|---|---|---|
+| `summary` | summary: Reliable, high-performance TCP/HTTP load balancer. | summary: "General-purpose high-performance TCP/HTTP reverse proxy and load balancer, distinct from HAProxy Kubernetes Ingress." |
+| `avoid_when` | avoid_when: ⏎   - Cloud-native load balancers or an ingress controller (NGINX/Envoy) already handle your traffic. | avoid_when: ⏎   - Cloud-native load balancers or an ingress controller (NGINX/Envoy) already handle your traffic. ⏎   - "You assume HAProxy core is the separate Kubernetes ingress-controller project." ⏎   - "You need a single SPDX conclusion without verifying GPL, LGPL header, and OpenSSL exceptions for a specific version." |
+| `repository_archived` | (absent) | repository_archived: false |
+| `status` | status: needs-review | status: "needs-review" |
+| `verified_on` | verified_on: '2026-08-03' | verified_on: "2026-10-25" |
+| `sources` | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L90 ⏎   - legacy:devopstools_final.md#L560 | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L90 ⏎   - legacy:devopstools_final.md#L560 ⏎   - https://github.com/haproxy/haproxy/blob/master/LICENSE ⏎   - https://github.com/haproxy/haproxy/blob/master/README.md |
+
+#### `kgateway` — CLEAR
+
+| Canonical field | Before | After |
+|---|---|---|
+| `summary` | summary: Kubernetes gateway networking. | summary: "Envoy-based Kubernetes Gateway API control plane for routing applications and API traffic." |
+| `avoid_when` | avoid_when: ⏎   - Your existing ingress controller already supports Gateway API. | avoid_when: ⏎   - Your existing ingress controller already supports Gateway API. ⏎   - "You require unsupported Gateway API extensions or assume v2.5 prereleases have stable-series support." |
+| `repository_archived` | (absent) | repository_archived: false |
+| `license_spdx` | (absent) | license_spdx: "Apache-2.0" |
+| `status` | status: needs-review | status: "active" |
+| `verified_on` | verified_on: '2026-08-03' | verified_on: "2026-10-25" |
+| `sources` | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L109 ⏎   - legacy:devopstools_final.md#L585 | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L109 ⏎   - legacy:devopstools_final.md#L585 ⏎   - https://github.com/kgateway-dev/kgateway/blob/v2.4.7/LICENSE ⏎   - https://github.com/kgateway-dev/kgateway/releases/tag/v2.4.7 ⏎   - https://kgateway.dev/docs/envoy/latest/reference/versions/ |
+| `needs_review` | needs_review: true | needs_review: false |
+
+#### `kube-ovn` — CLEAR
+
+| Canonical field | Before | After |
+|---|---|---|
+| `summary` | summary: CloudNative Network for KubeVirt and Multi-Tenancy. | summary: "OVN and Open vSwitch-based Kubernetes CNI supporting VPCs, overlays, underlays, and KubeVirt networking." |
+| `avoid_when` | avoid_when: ⏎   - A simpler CNI (Calico/Flannel/Cilium) provides sufficient network policy and performance. | avoid_when: ⏎   - A simpler CNI (Calico/Flannel/Cilium) provides sufficient network policy and performance. ⏎   - "You need a minimal pod network without the operational complexity of OVN and OVS." |
+| `repository_archived` | (absent) | repository_archived: false |
+| `license_spdx` | (absent) | license_spdx: "Apache-2.0" |
+| `status` | status: needs-review | status: "active" |
+| `verified_on` | verified_on: '2026-08-03' | verified_on: "2026-10-25" |
+| `sources` | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L117 ⏎   - legacy:devopstools_final.md#L596 | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L117 ⏎   - legacy:devopstools_final.md#L596 ⏎   - https://github.com/kubeovn/kube-ovn/blob/v1.16.15/LICENSE ⏎   - https://github.com/kubeovn/kube-ovn/blob/v1.16.15/README.md ⏎   - https://github.com/kubeovn/kube-ovn/releases/tag/v1.16.15 |
+| `needs_review` | needs_review: true | needs_review: false |
+
+#### `multus-cni` — CLEAR
+
+| Canonical field | Before | After |
+|---|---|---|
+| `summary` | summary: CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods. | summary: "Kubernetes CNI meta-plugin that delegates to other CNIs to attach multiple network interfaces to pods." |
+| `use_when` | use_when: [] | use_when: ⏎   - "Your Kubernetes workloads require multiple network attachments through delegated CNI plugins." |
+| `avoid_when` | avoid_when: [] | avoid_when: ⏎   - "You need a standalone primary pod network; Multus requires a pre-existing default CNI." |
+| `repository_archived` | (absent) | repository_archived: false |
+| `license_spdx` | (absent) | license_spdx: "Apache-2.0" |
+| `status` | status: needs-review | status: "active" |
+| `verified_on` | verified_on: '2026-08-03' | verified_on: "2026-10-25" |
+| `sources` | sources: ⏎   - legacy:devopstools_final.md#L608 | sources: ⏎   - legacy:devopstools_final.md#L608 ⏎   - https://github.com/k8snetworkplumbingwg/multus-cni/blob/v4.3.1/LICENSE ⏎   - https://github.com/k8snetworkplumbingwg/multus-cni/blob/v4.3.1/README.md ⏎   - https://github.com/k8snetworkplumbingwg/multus-cni/releases/tag/v4.3.1 |
+| `needs_review` | needs_review: true | needs_review: false |
+
+#### `nginx-gateway-fabric` — CLEAR
+
+| Canonical field | Before | After |
+|---|---|---|
+| `summary` | summary: NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic. | summary: "Kubernetes Gateway API controller using NGINX as data plane for HTTP, gRPC, and supported TCP/UDP traffic." |
+| `documentation_url` | (absent) | documentation_url: "https://docs.nginx.com/nginx-gateway-fabric/" |
+| `use_when` | use_when: [] | use_when: ⏎   - "You want Gateway API routing backed by NGINX with a published version compatibility matrix." |
+| `avoid_when` | avoid_when: [] | avoid_when: ⏎   - "You require Ingress NGINX behavior or Gateway API features listed as unsupported in its compatibility matrix." |
+| `repository_archived` | (absent) | repository_archived: false |
+| `license_spdx` | (absent) | license_spdx: "Apache-2.0" |
+| `status` | status: needs-review | status: "active" |
+| `verified_on` | verified_on: '2026-08-03' | verified_on: "2026-10-25" |
+| `sources` | sources: ⏎   - legacy:devopstools_final.md#L612 | sources: ⏎   - legacy:devopstools_final.md#L612 ⏎   - https://github.com/nginx/nginx-gateway-fabric/blob/v2.8.0/LICENSE ⏎   - https://github.com/nginx/nginx-gateway-fabric/blob/v2.8.0/README.md ⏎   - https://github.com/nginx/nginx-gateway-fabric/releases/tag/v2.8.0 ⏎   - https://docs.nginx.com/nginx-gateway-fabric/overview/technical-specifications/ ⏎   - https://docs.nginx.com/nginx-gateway-fabric/overview/gateway-api-compatibility/ |
+| `needs_review` | needs_review: true | needs_review: false |
+
+#### `ovn-kubernetes` — CLEAR
+
+| Canonical field | Before | After |
+|---|---|---|
+| `summary` | summary: Networking for Kubernetes using OVN. | summary: "Kubernetes network plugin based on OVN and Open vSwitch; a separate project from Kube-OVN." |
+| `repository_url` | repository_url: https://github.com/ovn-org/ovn-kubernetes | repository_url: "https://github.com/ovn-kubernetes/ovn-kubernetes" |
+| `avoid_when` | avoid_when: ⏎   - Simpler CNI plugins provide adequate performance and policy enforcement. | avoid_when: ⏎   - Simpler CNI plugins provide adequate performance and policy enforcement. ⏎   - "You assume the separate Kube-OVN project or every Kubernetes distribution shares this implementation's support matrix." |
+| `repository_archived` | (absent) | repository_archived: false |
+| `license_spdx` | (absent) | license_spdx: "Apache-2.0" |
+| `status` | status: needs-review | status: "active" |
+| `verified_on` | verified_on: '2026-08-03' | verified_on: "2026-10-25" |
+| `sources` | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L128 ⏎   - legacy:devopstools_final.md#L618 | sources: ⏎   - legacy:4_Kubernetes-Containers/README.md#L128 ⏎   - legacy:devopstools_final.md#L618 ⏎   - https://github.com/ovn-kubernetes/ovn-kubernetes/blob/v1.4.0/LICENSE ⏎   - https://github.com/ovn-kubernetes/ovn-kubernetes/blob/v1.4.0/README.md ⏎   - https://github.com/ovn-kubernetes/ovn-kubernetes/releases/tag/v1.4.0 |
+| `needs_review` | needs_review: true | needs_review: false |
+
+#### `project-contour` — CLEAR
+
+| Canonical field | Before | After |
+|---|---|---|
+| `summary` | summary: Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reconfiguration, ⏎     and secure multi-team delegation. | summary: "Envoy-powered Kubernetes ingress controller supporting Ingress, HTTPProxy and Gateway API resources." |
+| `documentation_url` | (absent) | documentation_url: "https://projectcontour.io/docs" |
+| `use_when` | use_when: [] | use_when: ⏎   - "You need an Envoy-backed ingress controller with HTTPProxy delegation and documented support matrices." |
+| `avoid_when` | avoid_when: [] | avoid_when: ⏎   - "You require Gateway API features beyond its documented support or an untested Kubernetes and Envoy combination." |
+| `repository_archived` | (absent) | repository_archived: false |
+| `license_spdx` | (absent) | license_spdx: "Apache-2.0" |
+| `status` | status: needs-review | status: "active" |
+| `verified_on` | verified_on: '2026-08-03' | verified_on: "2026-10-25" |
+| `sources` | sources: ⏎   - legacy:devopstools_final.md#L620 | sources: ⏎   - legacy:devopstools_final.md#L620 ⏎   - https://github.com/projectcontour/contour/blob/v1.33.7/LICENSE ⏎   - https://github.com/projectcontour/contour/blob/v1.33.7/README.md ⏎   - https://github.com/projectcontour/contour/releases/tag/v1.33.7 ⏎   - https://projectcontour.io/resources/compatibility-matrix/ |
+| `needs_review` | needs_review: true | needs_review: false |
+
+### Verification and merge gate
+
+- The proposal retains original canonical record IDs, categories, roles, lifecycle,
+  previous legacy sources, and all records outside the selection cohort.
+- **Predicted overall counts only:** 1,425 total, 792 active, 619 needs-review.
+  The generator and catalogue validation must confirm these numbers.
+- The repository's official documentation generator has **not yet run** in this
+  package. Never hand-edit generated Markdown; run it after the patch.
+- Require constraints, pip check, full pytest, Ruff lint/format, catalogue validation,
+  generated docs check, whitespace validation, exact-scope inspection, CI security,
+  independent P1/P2 review and a strict full link audit on the final branch SHA.
+- Retain historical URL baseline blob `a834e2af711693def40078a55e31dfeb29bee2c7`
+  and issue #2 OPEN. Keep PR #140 Draft, never merge automatically; keep #139 open.

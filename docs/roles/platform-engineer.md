@@ -185,7 +185,7 @@
 | [ExternalDNS](https://kubernetes-sigs.github.io/external-dns/latest) | Kubernetes networking, storage and add-ons | oss | active |
 | [Falco](https://falco.org) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [Finout](https://www.finout.io) | FinOps and sustainability | commercial | active |
-| [flannel](https://github.com/flannel-io/flannel) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [flannel](https://github.com/flannel-io/flannel) | Kubernetes networking, storage and add-ons | oss | active |
 | [Flawless](https://github.com/William-Lu-stack/Flawless) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Flexera One](https://www.flexera.com/products/flexera-one) | FinOps and sustainability | commercial | active |
 | [Flux](https://fluxcd.io) | CD, GitOps, release and promotion | oss | active |
@@ -289,7 +289,7 @@
 | [Kelos](https://github.com/kelos-dev/kelos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Keygraph](https://github.com/KeygraphHQ) | Emerging and experimental tools | open-core | needs-review |
 | [kftray](https://kftray.app/) | Kubernetes distributions and operations | oss | active |
-| [KGateway](https://kgateway.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [KGateway](https://kgateway.dev) | Kubernetes networking, storage and add-ons | oss | active |
 | [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file) | Kubernetes distributions and operations | oss | needs-review |
 | [KICS](https://kics.io) | Infrastructure as Code | oss | active |
 | [Killer.sh](https://killer.sh) | Documentation, learning and career resources | documentation | needs-review |
@@ -324,7 +324,7 @@
 | [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) | Kubernetes distributions and operations | oss | active |
 | [kube-bench](https://github.com/aquasecurity/kube-bench) | Application and cloud security, Kubernetes distributions and operations | oss | active |
 | [kube-hunter](https://aquasecurity.github.io/kube-hunter) | Kubernetes distributions and operations | oss | needs-review |
-| [Kube-OVN](https://www.kube-ovn.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Kube-OVN](https://www.kube-ovn.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [kube-score](https://kube-score.com) | Kubernetes distributions and operations | oss | active |
 | [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubeapps](https://kubeapps.com) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
@@ -432,7 +432,7 @@
 | [MLOps for DevOps Engineers](https://github.com/techiescamp/mlops-for-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Model Express](https://github.com/ai-dynamo/modelexpress) | MLOps, LLMOps and AI infrastructure | oss | active |
-| [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | active |
 | [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nautobot](https://docs.nautobot.com/) | Infrastructure as Code | open-core | active |
@@ -440,7 +440,7 @@
 | [Netlify](https://www.netlify.com/) | CD, GitOps, release and promotion | commercial | active |
 | [NGINX](https://nginx.org) | Kubernetes networking, storage and add-ons | open-core | active |
 | [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) | Kubernetes networking, storage and add-ons | open-core | active |
-| [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [nginx-gateway-fabric](https://github.com/nginx/nginx-gateway-fabric) | Kubernetes networking, storage and add-ons | oss | active |
 | [Nix](https://nixos.org) | Containers and image tooling | oss | needs-review |
 | [Nocalhost](https://nocalhost.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nomad](https://www.nomadproject.io) | Kubernetes distributions and operations | source-available | active |
@@ -476,7 +476,7 @@
 | [Oracle Cloud Infrastructure (OCI)](https://www.oracle.com/cloud) | Cloud platforms and cloud management | commercial | active |
 | [Oracle Kubernetes Engine](https://www.oracle.com/cloud/cloud-native/kubernetes-engine/) | Kubernetes distributions and operations | commercial | active |
 | [Orbit](https://gitlab.com/RMJx1/orbit) | Kubernetes distributions and operations | oss | needs-review |
-| [OVN-Kubernetes](https://ovn-kubernetes.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [OVN-Kubernetes](https://ovn-kubernetes.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Packer](https://www.packer.io) | Infrastructure as Code | source-available | active |
 | [Paperless-ngx](https://docs.paperless-ngx.com) | Emerging and experimental tools | oss | needs-review |
 | [Papra](https://github.com/papra-hq/papra) | Emerging and experimental tools | oss | needs-review |
@@ -493,7 +493,7 @@
 | [Portworx](https://portworx.com) | Kubernetes networking, storage and add-ons | unknown | needs-review |
 | [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [PrivateBin](https://privatebin.info) | Emerging and experimental tools | oss | needs-review |
-| [Project Contour](https://projectcontour.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Project Contour](https://projectcontour.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | active |
 | [Promptfoo](https://www.promptfoo.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [ProsperOps](https://www.prosperops.com/) | FinOps and sustainability | commercial | active |

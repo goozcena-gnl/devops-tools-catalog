@@ -264,7 +264,7 @@ Kubernetes X.509 certificate-management controller issuing and renewing certific
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Operator for managing Chisel tunnels in Kubernetes.
+Kubernetes operator for exposing LoadBalancer services via Chisel SSH tunnels and external exit nodes.
 
 **Use when**
 
@@ -273,6 +273,8 @@ Operator for managing Chisel tunnels in Kubernetes.
 **Consider alternatives when**
 
 - You have proper ingress, VPN, or cloud load balancers available.
+- You cannot secure SSH exit-node access, exposed service endpoints, or cloud API and operator credentials.
+- You require a verified exact GPL-3.0-only versus -or-later grant or confirmed long-term production support.
 
 [Official site](https://chisel.fyralabs.com) · [Source repository](https://github.com/FyraLabs/chisel-operator)
 
@@ -304,7 +306,7 @@ EBPF-based networking, observability, and security for Kubernetes.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Cloudflare gateway for Kubernetes clusters.
+Independently maintained Kubernetes Gateway API controller for exposing selected services via Cloudflare Tunnels.
 
 **Use when**
 
@@ -313,6 +315,8 @@ Cloudflare gateway for Kubernetes clusters.
 **Consider alternatives when**
 
 - You don't use Cloudflare or need a vendor-neutral ingress solution.
+- You require full Gateway API v1 Core, weighted routes, or automatic cleanup of obsolete Cloudflare DNS records.
+- You cannot protect and rotate scoped Cloudflare Tunnel and DNS tokens stored in Kubernetes Secrets.
 
 [Source repository](https://github.com/pl4nty/cloudflare-kubernetes-gateway)
 
@@ -667,17 +671,17 @@ Runtime security for cloud-native environments.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Simple Layer 3 network fabric (CNI) for Kubernetes.
+Kubernetes layer-3 network fabric for pod traffic across nodes; network policy requires a separate controller.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need straightforward layer-3 Kubernetes inter-node networking.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require native NetworkPolicy enforcement in flanneld; deploy a compatible policy controller.
 
 [Source repository](https://github.com/flannel-io/flannel)
 
@@ -726,7 +730,7 @@ Heterogeneous AI computing virtualization middleware.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Reliable, high-performance TCP/HTTP load balancer.
+General-purpose high-performance TCP/HTTP reverse proxy and load balancer, distinct from HAProxy Kubernetes Ingress.
 
 **Use when**
 
@@ -735,6 +739,8 @@ Reliable, high-performance TCP/HTTP load balancer.
 **Consider alternatives when**
 
 - Cloud-native load balancers or an ingress controller (NGINX/Envoy) already handle your traffic.
+- You assume HAProxy core is the separate Kubernetes ingress-controller project.
+- You need a single SPDX conclusion without verifying GPL, LGPL header, and OpenSSL exceptions for a specific version.
 
 [Official site](https://www.haproxy.org) · [Source repository](https://github.com/haproxy/haproxy)
 
@@ -1269,9 +1275,9 @@ GPU-aware autoscaling extension for KEDA workloads.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes gateway networking.
+Envoy-based Kubernetes Gateway API control plane for routing applications and API traffic.
 
 **Use when**
 
@@ -1280,6 +1286,7 @@ Kubernetes gateway networking.
 **Consider alternatives when**
 
 - Your existing ingress controller already supports Gateway API.
+- You require unsupported Gateway API extensions or assume v2.5 prereleases have stable-series support.
 
 [Official site](https://kgateway.dev) · [Source repository](https://github.com/kgateway-dev/kgateway)
 
@@ -1440,9 +1447,9 @@ Kubernetes Gateway API implementation for HTTP, gRPC, TCP, UDP, and TLS routing.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-CloudNative Network for KubeVirt and Multi-Tenancy.
+OVN and Open vSwitch-based Kubernetes CNI supporting VPCs, overlays, underlays, and KubeVirt networking.
 
 **Use when**
 
@@ -1451,6 +1458,7 @@ CloudNative Network for KubeVirt and Multi-Tenancy.
 **Consider alternatives when**
 
 - A simpler CNI (Calico/Flannel/Cilium) provides sufficient network policy and performance.
+- You need a minimal pod network without the operational complexity of OVN and OVS.
 
 [Official site](https://www.kube-ovn.io) · [Source repository](https://github.com/kubeovn/kube-ovn)
 
@@ -1822,17 +1830,17 @@ MySQL Operator for Kubernetes by Cybozu.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-CNI meta-plugin for attaching multiple network interfaces to Kubernetes pods.
+Kubernetes CNI meta-plugin that delegates to other CNIs to attach multiple network interfaces to pods.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Your Kubernetes workloads require multiple network attachments through delegated CNI plugins.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a standalone primary pod network; Multus requires a pre-existing default CNI.
 
 [Source repository](https://github.com/k8snetworkplumbingwg/multus-cni)
 
@@ -1937,19 +1945,19 @@ F5-maintained Kubernetes ingress controller that runs with NGINX Open Source or 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-NGINX-powered implementation of the Kubernetes Gateway API for managing north-south traffic.
+Kubernetes Gateway API controller using NGINX as data plane for HTTP, gRPC, and supported TCP/UDP traffic.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want Gateway API routing backed by NGINX with a published version compatibility matrix.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require Ingress NGINX behavior or Gateway API features listed as unsupported in its compatibility matrix.
 
-[Source repository](https://github.com/nginx/nginx-gateway-fabric)
+[Documentation](https://docs.nginx.com/nginx-gateway-fabric/) · [Source repository](https://github.com/nginx/nginx-gateway-fabric)
 
 ### Nocalhost
 
@@ -2051,9 +2059,9 @@ Community-operated web portal and OLM catalog for discovering and publishing ind
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Networking for Kubernetes using OVN.
+Kubernetes network plugin based on OVN and Open vSwitch; a separate project from Kube-OVN.
 
 **Use when**
 
@@ -2062,8 +2070,9 @@ Networking for Kubernetes using OVN.
 **Consider alternatives when**
 
 - Simpler CNI plugins provide adequate performance and policy enforcement.
+- You assume the separate Kube-OVN project or every Kubernetes distribution shares this implementation's support matrix.
 
-[Official site](https://ovn-kubernetes.io) · [Source repository](https://github.com/ovn-org/ovn-kubernetes)
+[Official site](https://ovn-kubernetes.io) · [Source repository](https://github.com/ovn-kubernetes/ovn-kubernetes)
 
 ### Portworx
 
@@ -2127,19 +2136,19 @@ Predictive scaling for Kubernetes workloads.
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Envoy-powered Kubernetes ingress controller with the HTTPProxy API, dynamic reconfiguration, and secure multi-team delegation.
+Envoy-powered Kubernetes ingress controller supporting Ingress, HTTPProxy and Gateway API resources.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need an Envoy-backed ingress controller with HTTPProxy delegation and documented support matrices.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require Gateway API features beyond its documented support or an untested Kubernetes and Envoy combination.
 
-[Official site](https://projectcontour.io) · [Source repository](https://github.com/projectcontour/contour)
+[Official site](https://projectcontour.io) · [Documentation](https://projectcontour.io/docs) · [Source repository](https://github.com/projectcontour/contour)
 
 ### Project Sveltos
 
