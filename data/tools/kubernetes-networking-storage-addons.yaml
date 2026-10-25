@@ -1874,10 +1874,12 @@
   - legacy:devopstools_final.md#L576
   needs_review: true
 - id: hybernate
-  name: Hybernate
-  summary: Kubernetes controller for scheduling pod hibernation (sleep and wake) to reduce resource consumption
-    during off-peak hours.
-  official_url: https://okedeji.io/hybernate
+  name: Napwake (formerly Hybernate)
+  summary: Kubernetes operator that pauses idle workloads and wakes them on demand to reduce
+    non-production resource consumption.
+  official_url: https://github.com/napwake/napwake
+  repository_url: https://github.com/napwake/napwake
+  documentation_url: https://docs.napwake.dev/
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
@@ -1893,13 +1895,17 @@
   avoid_when: []
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-10-25'
   sources:
   - legacy:devopstools_final.md#L575
+  - https://github.com/napwake/napwake
+  - https://github.com/napwake/napwake/blob/main/LICENSE
+  - https://docs.napwake.dev/
   needs_review: true
 - id: ipman
   name: ipman
