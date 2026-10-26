@@ -1,6 +1,6 @@
 - id: actionlint
   name: actionlint
-  summary: Lint GitHub Actions workflows locally (catches many YAML/runtime mistakes early).
+  summary: "Static checker for GitHub Actions workflow syntax, expressions and referenced actions."
   official_url: https://rhysd.github.io/actionlint
   repository_url: https://github.com/rhysd/actionlint
   categories:
@@ -18,17 +18,21 @@
     push.
   avoid_when:
   - Only if you don't use GitHub Actions.
+  - "Does not execute workflows or replace dedicated secret scanning; optional ShellCheck has separate dependencies."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L70
   - legacy:devopstools_final.md#L1109
-  needs_review: true
+  - "https://github.com/rhysd/actionlint/blob/v1.7.12/LICENSE.txt"
+  - "https://github.com/rhysd/actionlint/releases/tag/v1.7.12"
+  needs_review: false
 - id: agent-skills
   name: Addy Osmani Agent Skills
   summary: Versioned coding-agent workflows covering specifications, implementation, testing, review,
@@ -306,7 +310,7 @@
   needs_review: true
 - id: black
   name: Black
-  summary: Python code formatter.
+  summary: "Opinionated Python source formatter with configurable target-version rules."
   official_url: https://black.readthedocs.io
   repository_url: https://github.com/psf/black
   categories:
@@ -323,17 +327,21 @@
   - You want zero-debate, deterministic Python formatting.
   avoid_when:
   - Ruff's formatter (which is Black-compatible and faster) already covers your needs.
+  - "Formatting does not detect type errors; evaluate Ruff formatter compatibility before switching."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L71
   - legacy:devopstools_final.md#L1110
-  needs_review: true
+  - "https://github.com/psf/black/blob/26.10.1/LICENSE"
+  - "https://github.com/psf/black/releases/tag/26.10.1"
+  needs_review: false
 - id: bottles
   name: Bottles
   summary: Open-source tool to manage Windows applications on Linux using Wine.
@@ -808,8 +816,9 @@
   needs_review: true
 - id: eslint
   name: ESLint
-  summary: Pluggable JavaScript and TypeScript linter.
+  summary: "Pluggable JavaScript linting engine with optional parsers and rule plugins."
   official_url: https://eslint.org
+  repository_url: "https://github.com/eslint/eslint"
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -821,17 +830,21 @@
   - develop
   - test
   use_when: []
-  avoid_when: []
+  avoid_when:
+  - "TypeScript-specific analysis requires separately installed parser/plugins; ESLint 10 requires supported Node versions."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:devopstools_final.md#L1111
-  needs_review: true
+  - "https://github.com/eslint/eslint/blob/v10.13.0/LICENSE"
+  - "https://github.com/eslint/eslint/releases/tag/v10.13.0"
+  needs_review: false
 - id: feint
   name: Feint
   summary: Local emulator for selected Scaleway, Outscale, and Exoscale cloud APIs.
@@ -1023,7 +1036,7 @@
   needs_review: true
 - id: golangci-lint
   name: golangci-lint
-  summary: Go lint aggregator (fast, many linters).
+  summary: "Go linters aggregation runner with configurable analyzers and CI integration."
   official_url: https://golangci-lint.run
   repository_url: https://github.com/golangci/golangci-lint
   categories:
@@ -1040,16 +1053,21 @@
   - As the default Go linting tool—aggregates dozens of linters in one fast pass.
   avoid_when:
   - Only if you intentionally want a single specific linter in isolation.
+  - "Exact GPLv3-only versus GPLv3-or-later grant and bundled linter licenses remain unverified; Go 1.26 and v2 configuration require compatibility checks."
   deployment_models: []
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L72
   - legacy:devopstools_final.md#L1112
+  - "https://github.com/golangci/golangci-lint/blob/v2.15.0/LICENSE"
+  - "https://github.com/golangci/golangci-lint/releases/tag/v2.15.0"
+  - "https://github.com/golangci/golangci-lint/blob/v2.15.0/.goreleaser.yml"
+  - "https://github.com/golangci/golangci-lint/blob/v2.15.0/go.mod"
   needs_review: true
 - id: graft
   name: Graft
@@ -1070,7 +1088,7 @@
   needs_review: false
 - id: hadolint
   name: Hadolint
-  summary: Dockerfile linter (best practices + common pitfalls).
+  summary: "Haskell-based Dockerfile linter with ShellCheck-derived shell diagnostics."
   repository_url: https://github.com/hadolint/hadolint
   categories:
   - developer-experience-local-environments
@@ -1086,16 +1104,20 @@
   - Ever you write Dockerfiles—catches insecure or inefficient patterns.
   avoid_when:
   - Only if you use Buildpacks or other non-Dockerfile build methods.
+  - "Exact GPLv3-only versus GPLv3-or-later grant and dependency redistribution terms remain unverified."
   deployment_models: []
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L73
   - legacy:devopstools_final.md#L1113
+  - "https://github.com/hadolint/hadolint/blob/v2.15.1/LICENSE"
+  - "https://github.com/hadolint/hadolint/releases/tag/v2.15.1"
+  - "https://github.com/hadolint/hadolint/blob/v2.15.1/hadolint.cabal"
   needs_review: true
 - id: hashicorp-vagrant
   name: HashiCorp Vagrant
@@ -1558,7 +1580,7 @@
   needs_review: false
 - id: mypy
   name: mypy
-  summary: Static type checker for Python.
+  summary: "Gradual static type checker for Python with type stubs, plugins and optional mypyc acceleration."
   official_url: https://mypy-lang.org
   repository_url: https://github.com/python/mypy
   categories:
@@ -1575,17 +1597,22 @@
   - Your Python codebase has type annotations and you want to catch type errors before runtime.
   avoid_when:
   - Your code is untyped and the team isn't ready to adopt gradual typing.
+  - "Main source is MIT but includes separately licensed portions; typing support depends on annotations and stubs."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L81
   - legacy:devopstools_final.md#L1121
-  needs_review: true
+  - "https://github.com/python/mypy/blob/v1.19.1/LICENSE"
+  - "https://github.com/python/mypy/tree/v1.19.1"
+  - "https://github.com/python/mypy/blob/v1.19.1/pyproject.toml"
+  needs_review: false
 - id: neovim
   name: Neovim
   summary: Extensible Vim-derived text editor with built-in APIs for plugins and editor automation.
@@ -1978,7 +2005,7 @@
   needs_review: false
 - id: prettier
   name: Prettier
-  summary: Opinionated formatter for JSON/YAML/Markdown and more.
+  summary: "Opinionated formatter for JavaScript, TypeScript, JSON, YAML, Markdown and other supported languages."
   official_url: https://prettier.io
   repository_url: https://github.com/prettier/prettier
   categories:
@@ -1995,17 +2022,21 @@
   - You want one formatter for JS/TS/JSON/YAML/Markdown with zero config debates.
   avoid_when:
   - For Python (use Black/Ruff) or languages Prettier doesn't support.
+  - "Formatting is not linting or code security analysis; optional plugins carry separate licenses and runtime constraints."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L75
   - legacy:devopstools_final.md#L1115
-  needs_review: true
+  - "https://github.com/prettier/prettier/blob/3.9.10/LICENSE"
+  - "https://github.com/prettier/prettier/releases/tag/3.9.10"
+  needs_review: false
 - id: psscriptanalyzer
   name: PSScriptAnalyzer
   summary: Static code checker and formatter for PowerShell scripts and modules.
@@ -2201,7 +2232,7 @@
   needs_review: true
 - id: ruff
   name: Ruff
-  summary: Ultra-fast Python linter/formatter.
+  summary: "Python linter and formatter implemented in Rust with configurable rule sets."
   official_url: https://docs.astral.sh/ruff
   repository_url: https://github.com/astral-sh/ruff
   categories:
@@ -2218,17 +2249,21 @@
   - As a drop-in replacement for Flake8 + isort + Black with 10–100× speed gains.
   avoid_when:
   - You depend on niche Flake8 plugins Ruff hasn't yet reimplemented.
+  - "Not a universal drop-in for Black, Flake8 and isort plugins; check supported rules and preview settings."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L76
   - legacy:devopstools_final.md#L1116
-  needs_review: true
+  - "https://github.com/astral-sh/ruff/blob/0.17.2/LICENSE"
+  - "https://github.com/astral-sh/ruff/releases/tag/0.17.2"
+  needs_review: false
 - id: scrapling
   name: Scrapling
   summary: Web scraping toolkit for extracting and parsing web content.
@@ -2257,7 +2292,7 @@
   needs_review: true
 - id: shfmt
   name: shfmt
-  summary: Shell formatter (`shfmt`).
+  summary: "Shell script formatter from the mvdan/sh parser and toolchain."
   official_url: https://pkg.go.dev/mvdan.cc/sh/v3
   repository_url: https://github.com/mvdan/sh
   categories:
@@ -2274,17 +2309,21 @@
   - Ever you have shell scripts in your repo—consistent formatting prevents merge conflicts.
   avoid_when:
   - Only if you have no shell scripts.
+  - "Formatting does not replace ShellCheck security lint; validate shell dialect and Go runtime version."
   deployment_models: []
+  license_spdx: "BSD-3-Clause"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L77
   - legacy:devopstools_final.md#L1117
-  needs_review: true
+  - "https://github.com/mvdan/sh/blob/v3.14.1/LICENSE"
+  - "https://github.com/mvdan/sh/releases/tag/v3.14.1"
+  needs_review: false
 - id: spec-kit
   name: Spec Kit
   summary: Toolkit from GitHub for getting started with Spec-Driven Development.
@@ -2880,7 +2919,7 @@
   needs_review: true
 - id: yamllint
   name: yamllint
-  summary: YAML linter (structure + style checks).
+  summary: "YAML syntax and style linter with configurable formatting and validation rules."
   repository_url: https://github.com/adrienverge/yamllint
   categories:
   - developer-experience-local-environments
@@ -2896,17 +2935,22 @@
   - YAML-heavy projects (k8s manifests, CI configs) need consistent style.
   avoid_when:
   - Prettier already handles your YAML formatting needs.
+  - "Does not validate Kubernetes resource schemas or Helm/Kustomize policies."
   deployment_models: []
+  license_spdx: "GPL-3.0-or-later"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L78
   - legacy:devopstools_final.md#L1118
-  needs_review: true
+  - "https://github.com/adrienverge/yamllint/blob/v1.38.0/LICENSE"
+  - "https://github.com/adrienverge/yamllint/releases/tag/v1.38.0"
+  - "https://github.com/adrienverge/yamllint/blob/v1.38.0/pyproject.toml"
+  needs_review: false
 - id: yazi
   name: Yazi
   summary: Blazing-fast terminal file manager written in Rust with async I/O.

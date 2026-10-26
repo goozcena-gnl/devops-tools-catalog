@@ -5,7 +5,7 @@
 
 - [.NET](https://dotnet.microsoft.com/) — Cross-platform runtime and tooling for building and operating managed applications and services.
 - [Academy JetBrains](https://academy.jetbrains.com) — Interactive programming courses and tutorials by JetBrains.
-- [actionlint](https://rhysd.github.io/actionlint) — Lint GitHub Actions workflows locally (catches many YAML/runtime mistakes early).
+- [actionlint](https://rhysd.github.io/actionlint) — Static checker for GitHub Actions workflow syntax, expressions and referenced actions.
 - [Addy Osmani Agent Skills](https://skills.addy.ie/) — Versioned coding-agent workflows covering specifications, implementation, testing, review, and delivery.
 - [AgentsRoom](https://agentsroom.dev/) — Desktop workspace for managing projects and coordinating coding-agent sessions and team workflows.
 - [AIChat](https://github.com/sigoden/aichat) — Terminal model client with multiple provider integrations and optional tool and retrieval workflows.
@@ -25,7 +25,7 @@
 - [Bash](https://www.gnu.org/software/bash) — Bourne Again Shell.
 - [Bat](https://github.com/sharkdp/bat) — Better `cat` with syntax highlighting.
 - [Bitbucket](https://www.atlassian.com/software/bitbucket) — Atlassian's commercial Git repository-hosting product family, covering Bitbucket Cloud and the self-managed Bitbucket Data Center offering.
-- [Black](https://black.readthedocs.io) — Python code formatter.
+- [Black](https://black.readthedocs.io) — Opinionated Python source formatter with configurable target-version rules.
 - [BMC Control-M](https://www.bmc.com/it-solutions/control-m.html) — Application and data workflow orchestration platform.
 - [Bottles](https://usebottles.com) — Open-source tool to manage Windows applications on Linux using Wine.
 - [Brainboard](https://www.brainboard.co) — Visual cloud architecture and IaC design platform.
@@ -66,7 +66,7 @@
 - [Duplicati](https://duplicati.com) — Free backup software with strong encryption and support for many cloud storage backends.
 - [Entire](https://entire.io) — Developer platform with an open-source CLI that captures and versions AI agent coding sessions as searchable checkpoints alongside Git commits.
 - [Eraser DiagramGPT](https://www.eraser.io/diagramgpt) — AI-assisted diagramming tool.
-- [ESLint](https://eslint.org) — Pluggable JavaScript and TypeScript linter.
+- [ESLint](https://eslint.org) — Pluggable JavaScript linting engine with optional parsers and rule plugins.
 - [Exercism](https://exercism.org) — Language practice tracks across many programming languages.
 - [fd](https://github.com/sharkdp/fd) — Simple, fast alternative to `find`.
 - [Feint](https://github.com/stephrobert/feint) — Local emulator for selected Scaleway, Outscale, and Exoscale cloud APIs.
@@ -95,10 +95,10 @@
 - [Go by Example](https://gobyexample.com) — Hands-on Go programming snippets and examples.
 - [Godcoder](https://github.com/eli-labz/Godcoder) — Local-first desktop coding agent that keeps your code on your machine.
 - [Gogs](https://gogs.io/) — Self-hosted Git service distributed as a lightweight application.
-- [golangci-lint](https://golangci-lint.run) — Go lint aggregator (fast, many linters).
+- [golangci-lint](https://golangci-lint.run) — Go linters aggregation runner with configurable analyzers and CI integration.
 - [Graft](https://trailhq.com/graft) — Local-first developer tool for creating isolated Git-backed workspaces and coordinating parallel coding-agent work.
 - [Graphify](https://graphify.com/) — Local code-knowledge graph tool for mapping code, configuration, schemas, and documentation for AI coding assistants.
-- [Hadolint](https://github.com/hadolint/hadolint) — Dockerfile linter (best practices + common pitfalls).
+- [Hadolint](https://github.com/hadolint/hadolint) — Haskell-based Dockerfile linter with ShellCheck-derived shell diagnostics.
 - [HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools) — Large collection of Bash scripts, shell helpers, and automation tooling for DevOps, cloud, CI/CD, Kubernetes, and APIs.
 - [HashiCorp Vagrant](https://www.vagrantup.com) — Tool for building and managing virtual machine environments (BUSL-1.1).
 - [Homer](https://homer-demo.netlify.app) — Static dashboard for organizing links to self-hosted services and tools.
@@ -134,7 +134,7 @@
 - [Mergify](https://mergify.com) — GitHub workflow platform combining Merge Queue, CI Insights, Test Insights and Merge Protections.
 - [micro](https://micro-editor.github.io) — Easy-to-use terminal text editor with plugins, mouse support, and Lua customization.
 - [mise](https://mise.jdx.dev/) — Tool-version, environment, and task manager with project configuration usable locally and in CI.
-- [mypy](https://mypy-lang.org) — Static type checker for Python.
+- [mypy](https://mypy-lang.org) — Gradual static type checker for Python with type stubs, plugins and optional mypyc acceleration.
 - [Nektos Act](https://nektosact.com) — MIT-licensed community CLI for running selected GitHub Actions workflows locally, commonly with Docker, with documented differences from GitHub's official runners.
 - [Neovim](https://neovim.io/) — Extensible Vim-derived text editor with built-in APIs for plugins and editor automation.
 - [Ninite](https://ninite.com) — Windows app installer/updater (bundled installers).
@@ -165,7 +165,7 @@
 - [Portabase](https://portabase.io) — Self-hosted tool for automating and restoring database backups across many database engines.
 - [Postman](https://www.postman.com/product/) — API development and testing platform.
 - [PowerShell](https://learn.microsoft.com/en-us/powershell/) — Cross-platform shell and scripting runtime for object-based system automation.
-- [Prettier](https://prettier.io) — Opinionated formatter for JSON/YAML/Markdown and more.
+- [Prettier](https://prettier.io) — Opinionated formatter for JavaScript, TypeScript, JSON, YAML, Markdown and other supported languages.
 - [PrivateBin](https://privatebin.info) — Secure pastebin alternative.
 - [PSScriptAnalyzer](https://www.powershellgallery.com/packages/PSScriptAnalyzer/) — Static code checker and formatter for PowerShell scripts and modules.
 - [PyCharm](https://www.jetbrains.com/pycharm) — Python IDE by JetBrains.
@@ -181,12 +181,12 @@
 - [RTK AI](https://www.rtk-ai.app) — AI-powered development assistant.
 - [Ruby](https://www.ruby-lang.org/en/) — Programming language and runtime used by automation tools and application services.
 - [Rude Tools](https://rudetools.dev) — Developer utilities collection.
-- [Ruff](https://docs.astral.sh/ruff) — Ultra-fast Python linter/formatter.
+- [Ruff](https://docs.astral.sh/ruff) — Python linter and formatter implemented in Rust with configurable rule sets.
 - [Scrapling](https://scrapling.readthedocs.io/en/latest) — Web scraping toolkit for extracting and parsing web content.
 - [SearXNG](https://docs.searxng.org) — Self-hosted metasearch engine.
 - [Shannon](https://github.com/KeygraphHQ/shannon) — AI pentester that autonomously hunts for vulnerabilities.
 - [ShellCheck](https://www.shellcheck.net) — Shell script linter.
-- [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) — Shell formatter (`shfmt`).
+- [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) — Shell script formatter from the mvdan/sh parser and toolchain.
 - [Skaffold](https://skaffold.dev) — Client-side container-development CLI for build, test, push, deploy and debug loops with Kubernetes and other supported targets; upstream plans repository archival on 29 January 2027.
 - [Snip](https://github.com/edouard-claude/snip) — Code snippet manager.
 - [Snorlax](https://github.com/moonbeam-nyc/snorlax) — Kubernetes operator for scheduling deployment sleep/wake cycles to reduce resource costs.
@@ -224,7 +224,7 @@
 - [WinBoat](https://www.winboat.app/) — Linux desktop application that runs Windows in a managed virtual machine with integrated applications and filesystem access.
 - [Windsurf](https://windsurf.com) — AI-powered code editor/IDE with agentic workflows (chat, code completion, refactoring) to speed up development.
 - [Wine](https://www.winehq.org) — Run Windows applications on Unix-like OSes.
-- [yamllint](https://github.com/adrienverge/yamllint) — YAML linter (structure + style checks).
+- [yamllint](https://github.com/adrienverge/yamllint) — YAML syntax and style linter with configurable formatting and validation rules.
 - [YamlQL](https://github.com/AKSarav/YamlQL) — Query YAML files using SQL-like syntax.
 - [Yazi](https://yazi-rs.github.io) — Blazing-fast terminal file manager written in Rust with async I/O.
 - [Zed](https://zed.dev/) — Code editor supporting collaborative editing, language tooling, and coding-agent workflows.

@@ -374,7 +374,8 @@ Web application for IP address management, subnet planning, and address-space do
 **Categories:** Databases, caching and data infrastructure<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Active<br>
+**Repository:** Archived
 
 Embedded backend service combining SQLite, authentication, file storage, realtime subscriptions, and an HTTP API.
 
@@ -385,6 +386,7 @@ Embedded backend service combining SQLite, authentication, file storage, realtim
 **Consider alternatives when**
 
 - Avoid it when independent database scaling, high availability, or mature enterprise operations are required.
+- The historical GitHub repository is archived following the upstream migration; confirm the new source location before contributing or building from source.
 
 [Official site](https://pocketbase.io/) · [Documentation](https://pocketbase.io/docs/) · [Source repository](https://github.com/pocketbase/pocketbase)
 

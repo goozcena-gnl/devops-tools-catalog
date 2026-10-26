@@ -3,7 +3,7 @@
 
 376 records support this lifecycle stage.
 
-- [actionlint](https://rhysd.github.io/actionlint) — Lint GitHub Actions workflows locally (catches many YAML/runtime mistakes early).
+- [actionlint](https://rhysd.github.io/actionlint) — Static checker for GitHub Actions workflow syntax, expressions and referenced actions.
 - [Addy Osmani Agent Skills](https://skills.addy.ie/) — Versioned coding-agent workflows covering specifications, implementation, testing, review, and delivery.
 - [AgentsRoom](https://agentsroom.dev/) — Desktop workspace for managing projects and coordinating coding-agent sessions and team workflows.
 - [AIChat](https://github.com/sigoden/aichat) — Terminal model client with multiple provider integrations and optional tool and retrieval workflows.
@@ -37,7 +37,7 @@
 - [Bazel](https://bazel.build) — Extensible build and test system for multi-language, multi-platform software, with incremental execution and local or remote caching.
 - [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) — Integrated CI/CD for Bitbucket repositories.
 - [Bitrise](https://bitrise.io) — Commercial mobile DevOps platform for building, testing, and releasing mobile applications.
-- [Black](https://black.readthedocs.io) — Python code formatter.
+- [Black](https://black.readthedocs.io) — Opinionated Python source formatter with configurable target-version rules.
 - [BlackArch Linux](https://blackarch.org/) — Arch Linux-based distribution that packages tools for authorized security testing and research.
 - [Bottles](https://usebottles.com) — Open-source tool to manage Windows applications on Linux using Wine.
 - [BrowserStack App Automate](https://www.browserstack.com/app-automate) — Commercial cloud service for automated native and hybrid mobile-app testing on real devices.
@@ -120,7 +120,7 @@
 - [Drata](https://drata.com/) — Commercial trust-management platform for compliance automation, control monitoring, evidence collection, and risk workflows.
 - [drawDB](https://www.drawdb.app) — Database diagram editor.
 - [Drone](https://www.drone.io) — Container-native CI/CD platform.
-- [ESLint](https://eslint.org) — Pluggable JavaScript and TypeScript linter.
+- [ESLint](https://eslint.org) — Pluggable JavaScript linting engine with optional parsers and rule plugins.
 - [F5 WAF for NGINX](https://www.f5.com/products/nginx/f5-waf-for-nginx) — Commercial web application firewall for applications and APIs running on NGINX Plus or NGINX Ingress Controller, formerly NGINX App Protect WAF.
 - [fail2ban](https://github.com/fail2ban/fail2ban) — Intrusion prevention by monitoring logs and banning abusive IPs (e.g., SSH).
 - [Falco](https://falco.org) — Runtime security for cloud-native environments.
@@ -145,7 +145,7 @@
 - [gitmoji](https://gitmoji.dev) — Standardized emoji guide for commit messages.
 - [GoCD](https://www.gocd.org) — Apache-2.0 continuous-delivery server with agents, pipeline dependencies, materials and value-stream visibility; plugins and support terms remain separate.
 - [Godcoder](https://github.com/eli-labz/Godcoder) — Local-first desktop coding agent that keeps your code on your machine.
-- [golangci-lint](https://golangci-lint.run) — Go lint aggregator (fast, many linters).
+- [golangci-lint](https://golangci-lint.run) — Go linters aggregation runner with configurable analyzers and CI integration.
 - [Google Cloud Build](https://cloud.google.com/build) — Managed build service that executes containerized build steps on Google Cloud infrastructure.
 - [Google Cloud Organization Policy Service](https://docs.cloud.google.com/organization-policy/overview) — Centralized service for defining and enforcing constraints across a Google Cloud resource hierarchy.
 - [graphql-cop](https://github.com/dolevf/graphql-cop) — Security audit utility for identifying GraphQL configuration and implementation weaknesses.
@@ -154,7 +154,7 @@
 - [Grype](https://oss.anchore.com/) — Anchore open-source vulnerability scanner for supported container images, filesystems and SBOMs; it uses Syft package cataloging and is distinct from SBOM generation, Anchore Enterprise and Trivy.
 - [GUAC](https://guac.sh) — Supply chain graph platform for ingesting SBOMs and metadata to map software relationships and provenance.
 - [Guardon](https://github.com/guardon-dev/guardon) — Open-source browser extension that brings Kubernetes guardrails and developer-first security checks directly into the browser workflow.
-- [Hadolint](https://github.com/hadolint/hadolint) — Dockerfile linter (best practices + common pitfalls).
+- [Hadolint](https://github.com/hadolint/hadolint) — Haskell-based Dockerfile linter with ShellCheck-derived shell diagnostics.
 - [Harness](https://harness.io) — Commercial software-delivery platform spanning CI, CD, GitOps, infrastructure, security, reliability, and developer-experience modules.
 - [Hashcat](https://hashcat.net/hashcat/) — Hardware-accelerated password recovery and security-auditing utility.
 - [HashiCorp Vagrant](https://www.vagrantup.com) — Tool for building and managing virtual machine environments (BUSL-1.1).
@@ -219,7 +219,7 @@
 - [mitmproxy](https://mitmproxy.org) — Interactive HTTPS proxy with CLI, web UI, and Python scripting for traffic inspection and testing.
 - [Mockito](https://site.mockito.org/) — Java mocking framework for isolating collaborators in automated unit tests.
 - [ModSecurity](https://modsecurity.org) — Web Application Firewall (WAF) engine.
-- [mypy](https://mypy-lang.org) — Static type checker for Python.
+- [mypy](https://mypy-lang.org) — Gradual static type checker for Python with type stubs, plugins and optional mypyc acceleration.
 - [NAXSI (WAF for NGINX)](https://github.com/wargio/naxsi) — Open source WAF module for NGINX (NAXSI).
 - [Nektos Act](https://nektosact.com) — MIT-licensed community CLI for running selected GitHub Actions workflows locally, commonly with Docker, with documented differences from GitHub's official runners.
 - [NetBird](https://netbird.io/) — Open-core WireGuard-based zero-trust networking platform with community self-hosting, managed cloud, and licensed enterprise options.
@@ -269,7 +269,7 @@
 - [Plumber](https://getplumber.io) — CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
 - [Portmaster](https://safing.io) — Self-hosted application firewall and privacy suite for monitoring and controlling network connections.
 - [Postman](https://www.postman.com/product/) — API development and testing platform.
-- [Prettier](https://prettier.io) — Opinionated formatter for JSON/YAML/Markdown and more.
+- [Prettier](https://prettier.io) — Opinionated formatter for JavaScript, TypeScript, JSON, YAML, Markdown and other supported languages.
 - [Pritunl](https://pritunl.com) — VPN server for secure remote access; open-source core with commercial features.
 - [Probot DCO](https://probot.github.io/apps/dco) — DCO checks for GitHub pull requests.
 - [PSScriptAnalyzer](https://www.powershellgallery.com/packages/PSScriptAnalyzer/) — Static code checker and formatter for PowerShell scripts and modules.
@@ -288,7 +288,7 @@
 - [RITA](https://www.activecountermeasures.com/free-tools/rita/) — Open-source network-traffic analysis framework for detecting command-and-control behavior in Zeek logs.
 - [ROADtools](https://github.com/dirkjanm/ROADtools) — Collection of Microsoft Entra ID data, authentication, and security-analysis utilities.
 - [RTK AI](https://www.rtk-ai.app) — AI-powered development assistant.
-- [Ruff](https://docs.astral.sh/ruff) — Ultra-fast Python linter/formatter.
+- [Ruff](https://docs.astral.sh/ruff) — Python linter and formatter implemented in Rust with configurable rule sets.
 - [RustScan](https://github.com/bee-san/rustscan) — Fast port-discovery utility designed to hand identified services to deeper analysis tools.
 - [SafeLine](https://safepoint.cloud/landing/safeline) — Self-hosted web application firewall (WAF) / reverse proxy; OSS core with paid tiers.
 - [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) — Mobile app testing on a wide range of real devices.
@@ -302,7 +302,7 @@
 - [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
 - [Semgrep](https://semgrep.dev) — Application-security product family combining an LGPL analysis engine, separately licensed community rules, and a commercial hosted platform for SAST, SCA, and secrets scanning.
 - [ServerSpec](https://serverspec.org) — Ruby/RSpec-based server-state assertions for installed packages, services, ports and configuration.
-- [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) — Shell formatter (`shfmt`).
+- [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) — Shell script formatter from the mvdan/sh parser and toolchain.
 - [Shuffle Automation](https://shuffler.io) — Open-source SOAR platform for security automation and response workflows.
 - [Skaffold](https://skaffold.dev) — Client-side container-development CLI for build, test, push, deploy and debug loops with Kubernetes and other supported targets; upstream plans repository archival on 29 January 2027.
 - [SkillSpector](https://github.com/NVIDIA/SkillSpector) — Security scanner for AI agent skills, prompts, and tool definitions.
@@ -376,7 +376,7 @@
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 - [xh](https://github.com/ducaale/xh) — Command-line HTTP client with concise request syntax and formatted responses.
 - [Xray](https://www.getxray.app) — Test management for Jira (manual + automated tests).
-- [yamllint](https://github.com/adrienverge/yamllint) — YAML linter (structure + style checks).
+- [yamllint](https://github.com/adrienverge/yamllint) — YAML syntax and style linter with configurable formatting and validation rules.
 - [Yazi](https://yazi-rs.github.io) — Blazing-fast terminal file manager written in Rust with async I/O.
 - [Zed](https://zed.dev/) — Code editor supporting collaborative editing, language tooling, and coding-agent workflows.
 

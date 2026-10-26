@@ -10,9 +10,9 @@
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Lint GitHub Actions workflows locally (catches many YAML/runtime mistakes early).
+Static checker for GitHub Actions workflow syntax, expressions and referenced actions.
 
 **Use when**
 
@@ -21,6 +21,7 @@ Lint GitHub Actions workflows locally (catches many YAML/runtime mistakes early)
 **Consider alternatives when**
 
 - Only if you don't use GitHub Actions.
+- Does not execute workflows or replace dedicated secret scanning; optional ShellCheck has separate dependencies.
 
 [Official site](https://rhysd.github.io/actionlint) · [Source repository](https://github.com/rhysd/actionlint)
 
@@ -200,9 +201,9 @@ GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Python code formatter.
+Opinionated Python source formatter with configurable target-version rules.
 
 **Use when**
 
@@ -211,6 +212,7 @@ Python code formatter.
 **Consider alternatives when**
 
 - Ruff's formatter (which is Black-compatible and faster) already covers your needs.
+- Formatting does not detect type errors; evaluate Ruff formatter compatibility before switching.
 
 [Official site](https://black.readthedocs.io) · [Source repository](https://github.com/psf/black)
 
@@ -599,9 +601,9 @@ Database diagram editor.
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Pluggable JavaScript and TypeScript linter.
+Pluggable JavaScript linting engine with optional parsers and rule plugins.
 
 **Use when**
 
@@ -609,9 +611,9 @@ Pluggable JavaScript and TypeScript linter.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- TypeScript-specific analysis requires separately installed parser/plugins; ESLint 10 requires supported Node versions.
 
-[Official site](https://eslint.org)
+[Official site](https://eslint.org) · [Source repository](https://github.com/eslint/eslint)
 
 ### Feint
 
@@ -772,7 +774,7 @@ Local-first desktop coding agent that keeps your code on your machine.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Go lint aggregator (fast, many linters).
+Go linters aggregation runner with configurable analyzers and CI integration.
 
 **Use when**
 
@@ -781,6 +783,7 @@ Go lint aggregator (fast, many linters).
 **Consider alternatives when**
 
 - Only if you intentionally want a single specific linter in isolation.
+- Exact GPLv3-only versus GPLv3-or-later grant and bundled linter licenses remain unverified; Go 1.26 and v2 configuration require compatibility checks.
 
 [Official site](https://golangci-lint.run) · [Source repository](https://github.com/golangci/golangci-lint)
 
@@ -829,7 +832,7 @@ Local code-knowledge graph tool for mapping code, configuration, schemas, and do
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Dockerfile linter (best practices + common pitfalls).
+Haskell-based Dockerfile linter with ShellCheck-derived shell diagnostics.
 
 **Use when**
 
@@ -838,6 +841,7 @@ Dockerfile linter (best practices + common pitfalls).
 **Consider alternatives when**
 
 - Only if you use Buildpacks or other non-Dockerfile build methods.
+- Exact GPLv3-only versus GPLv3-or-later grant and dependency redistribution terms remain unverified.
 
 [Source repository](https://github.com/hadolint/hadolint)
 
@@ -1151,9 +1155,9 @@ Tool-version, environment, and task manager with project configuration usable lo
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Static type checker for Python.
+Gradual static type checker for Python with type stubs, plugins and optional mypyc acceleration.
 
 **Use when**
 
@@ -1162,6 +1166,7 @@ Static type checker for Python.
 **Consider alternatives when**
 
 - Your code is untyped and the team isn't ready to adopt gradual typing.
+- Main source is MIT but includes separately licensed portions; typing support depends on annotations and stubs.
 
 [Official site](https://mypy-lang.org) · [Source repository](https://github.com/python/mypy)
 
@@ -1436,9 +1441,9 @@ API development and testing platform.
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Opinionated formatter for JSON/YAML/Markdown and more.
+Opinionated formatter for JavaScript, TypeScript, JSON, YAML, Markdown and other supported languages.
 
 **Use when**
 
@@ -1447,6 +1452,7 @@ Opinionated formatter for JSON/YAML/Markdown and more.
 **Consider alternatives when**
 
 - For Python (use Black/Ruff) or languages Prettier doesn't support.
+- Formatting is not linting or code security analysis; optional plugins carry separate licenses and runtime constraints.
 
 [Official site](https://prettier.io) · [Source repository](https://github.com/prettier/prettier)
 
@@ -1569,9 +1575,9 @@ AI-powered development assistant.
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Ultra-fast Python linter/formatter.
+Python linter and formatter implemented in Rust with configurable rule sets.
 
 **Use when**
 
@@ -1580,6 +1586,7 @@ Ultra-fast Python linter/formatter.
 **Consider alternatives when**
 
 - You depend on niche Flake8 plugins Ruff hasn't yet reimplemented.
+- Not a universal drop-in for Black, Flake8 and isort plugins; check supported rules and preview settings.
 
 [Official site](https://docs.astral.sh/ruff) · [Source repository](https://github.com/astral-sh/ruff)
 
@@ -1607,9 +1614,9 @@ Web scraping toolkit for extracting and parsing web content.
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Shell formatter (`shfmt`).
+Shell script formatter from the mvdan/sh parser and toolchain.
 
 **Use when**
 
@@ -1618,6 +1625,7 @@ Shell formatter (`shfmt`).
 **Consider alternatives when**
 
 - Only if you have no shell scripts.
+- Formatting does not replace ShellCheck security lint; validate shell dialect and Go runtime version.
 
 [Official site](https://pkg.go.dev/mvdan.cc/sh/v3) · [Source repository](https://github.com/mvdan/sh)
 
@@ -2025,9 +2033,9 @@ Run Windows applications on Unix-like OSes.
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-YAML linter (structure + style checks).
+YAML syntax and style linter with configurable formatting and validation rules.
 
 **Use when**
 
@@ -2036,6 +2044,7 @@ YAML linter (structure + style checks).
 **Consider alternatives when**
 
 - Prettier already handles your YAML formatting needs.
+- Does not validate Kubernetes resource schemas or Helm/Kustomize policies.
 
 [Source repository](https://github.com/adrienverge/yamllint)
 

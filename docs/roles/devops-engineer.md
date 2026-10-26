@@ -7,7 +7,7 @@
 |---|---|---|---|
 | [.NET](https://dotnet.microsoft.com/) | Foundations, Linux and scripting | oss | active |
 | [Academy JetBrains](https://academy.jetbrains.com) | Foundations, Linux and scripting | documentation | needs-review |
-| [actionlint](https://rhysd.github.io/actionlint) | Developer experience and local environments | oss | needs-review |
+| [actionlint](https://rhysd.github.io/actionlint) | Developer experience and local environments | oss | active |
 | [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [Addy Osmani Agent Skills](https://skills.addy.ie/) | Developer experience and local environments | oss | active |
 | [AFFiNE](https://affine.pro/) | Documentation, learning and career resources | open-core | active |
@@ -91,7 +91,7 @@
 | [Bitbucket](https://www.atlassian.com/software/bitbucket) | Source control and repository management | commercial | active |
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | commercial | active |
 | [Bitrise](https://bitrise.io) | CI, build and testing | commercial | active |
-| [Black](https://black.readthedocs.io) | Developer experience and local environments | oss | needs-review |
+| [Black](https://black.readthedocs.io) | Developer experience and local environments | oss | active |
 | [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | active |
 | [BMC Control-M](https://www.bmc.com/it-solutions/control-m.html) | Emerging and experimental tools | unknown | needs-review |
 | [Bottlerocket](https://bottlerocket.dev) | Virtualization, bare metal and homelab | oss | active |
@@ -232,7 +232,7 @@
 | [Entire](https://entire.io) | Emerging and experimental tools | open-core | needs-review |
 | [env zero](https://www.envzero.com/) | Infrastructure as Code | commercial | active |
 | [Eraser DiagramGPT](https://www.eraser.io/diagramgpt) | Emerging and experimental tools | unknown | needs-review |
-| [ESLint](https://eslint.org) | Developer experience and local environments | oss | needs-review |
+| [ESLint](https://eslint.org) | Developer experience and local environments | oss | active |
 | [etcd](https://etcd.io) | Databases, caching and data infrastructure | oss | needs-review |
 | [etckeeper](https://etckeeper.branchable.com) | Configuration management | oss | needs-review |
 | [Eureka](https://github.com/Netflix/eureka) | Kubernetes networking, storage and add-ons | oss | active |
@@ -437,7 +437,7 @@
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
 | [MongoDB](https://www.mongodb.com/) | Databases, caching and data infrastructure | source-available | active |
 | [Munin](https://munin-monitoring.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [mypy](https://mypy-lang.org) | Developer experience and local environments | oss | needs-review |
+| [mypy](https://mypy-lang.org) | Developer experience and local environments | oss | active |
 | [MySQL](https://www.mysql.com) | Databases, caching and data infrastructure | open-core | active |
 | [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | needs-review |
 | [Nagios](https://www.nagios.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -513,7 +513,7 @@
 | [PostgreSQL](https://www.postgresql.org) | Databases, caching and data infrastructure | oss | active |
 | [Postman](https://www.postman.com/product/) | Developer experience and local environments | commercial | active |
 | [PowerShell](https://learn.microsoft.com/en-us/powershell/) | Foundations, Linux and scripting | oss | active |
-| [Prettier](https://prettier.io) | Developer experience and local environments | oss | needs-review |
+| [Prettier](https://prettier.io) | Developer experience and local environments | oss | active |
 | [PrivateBin](https://privatebin.info) | Emerging and experimental tools | oss | needs-review |
 | [Probot DCO](https://probot.github.io/apps/dco) | CI, build and testing | oss | needs-review |
 | [ProGet](https://inedo.com/proget) | Artifact and package management | unknown | needs-review |
@@ -560,7 +560,7 @@
 | [Ruby](https://www.ruby-lang.org/en/) | Foundations, Linux and scripting | oss | active |
 | [Rudder](https://www.rudder.io) | Configuration management | open-core | needs-review |
 | [Rude Tools](https://rudetools.dev) | Emerging and experimental tools | oss | needs-review |
-| [Ruff](https://docs.astral.sh/ruff) | Developer experience and local environments | oss | needs-review |
+| [Ruff](https://docs.astral.sh/ruff) | Developer experience and local environments | oss | active |
 | [runc](https://github.com/opencontainers/runc) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | needs-review |
 | [RustFS](https://rustfs.com) | Databases, caching and data infrastructure | oss | needs-review |
@@ -587,7 +587,7 @@
 | [ServerSpec](https://serverspec.org) | CI, build and testing | oss | active |
 | [Shannon](https://github.com/KeygraphHQ/shannon) | Emerging and experimental tools | open-core | needs-review |
 | [ShellCheck](https://www.shellcheck.net) | Foundations, Linux and scripting | oss | needs-review |
-| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | needs-review |
+| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | active |
 | [Shipwright](https://shipwright.io) | Containers and image tooling | oss | needs-review |
 | [SigNoz](https://signoz.io) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Site24x7](https://www.site24x7.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
@@ -699,7 +699,7 @@
 | [XCP-ng](https://xcp-ng.org/) | Virtualization, bare metal and homelab | oss | active |
 | [xh](https://github.com/ducaale/xh) | Foundations, Linux and scripting | oss | active |
 | [Xray](https://www.getxray.app) | CI, build and testing | unknown | needs-review |
-| [yamllint](https://github.com/adrienverge/yamllint) | Developer experience and local environments | oss | needs-review |
+| [yamllint](https://github.com/adrienverge/yamllint) | Developer experience and local environments | oss | active |
 | [YamlQL](https://github.com/AKSarav/YamlQL) | Emerging and experimental tools | oss | needs-review |
 | [Yarn](https://yarnpkg.com/) | Artifact and package management | oss | active |
 | [Yazi](https://yazi-rs.github.io) | Developer experience and local environments | oss | needs-review |
