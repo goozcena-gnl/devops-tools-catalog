@@ -9,10 +9,9 @@ regexes = [
 ]
 
 [[allowlists]]
-description = "Wave 27 yamllint GPL SPDX documentation false positive at pinned commit"
+description = "Wave 27 yamllint SPDX documentation false positive (squash-safe)"
 targetRules = ["generic-api-key"]
 condition = "AND"
 regexTarget = "line"
-commits = ["34dc4694dac88a9985040acedcaaaae7b4247729"]
 paths = ['''^docs/maintenance/2026-10-26-wave-27-devops-code-quality-evidence-review\.md$''']
 regexes = ['''adrienverge/yamllint/blob/v1\.38\.0/pyproject\.toml.*GPL-3\.0-or-later.*Python''']
