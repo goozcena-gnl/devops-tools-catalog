@@ -123,15 +123,15 @@
 | [OpenFeature](https://openfeature.dev) | CD, GitOps, release and promotion | oss | active |
 | [ORAS](https://oras.land) | Artifact and package management | oss | needs-review |
 | [Piku](https://piku.github.io) | CD, GitOps, release and promotion | oss | active |
-| [Playwright](https://playwright.dev) | CI, build and testing | oss | needs-review |
+| [Playwright](https://playwright.dev) | CI, build and testing | oss | active |
 | [Plumber](https://getplumber.io) | Software supply-chain security, CI, build and testing | oss | active |
 | [Porter](https://github.com/porter-dev) | CD, GitOps, release and promotion | unknown | needs-review |
 | [pre-commit](https://pre-commit.com) | Software supply-chain security | oss | needs-review |
 | [Probot DCO](https://probot.github.io/apps/dco) | CI, build and testing | oss | needs-review |
 | [ProGet](https://inedo.com/proget) | Artifact and package management | unknown | needs-review |
 | [Pulp](https://pulpproject.org/) | Artifact and package management | oss | active |
-| [pytest](https://docs.pytest.org/en/stable) | CI, build and testing | oss | needs-review |
-| [pytest-cov](https://github.com/pytest-dev/pytest-cov) | CI, build and testing | oss | needs-review |
+| [pytest](https://docs.pytest.org/en/stable) | CI, build and testing | oss | active |
+| [pytest-cov](https://github.com/pytest-dev/pytest-cov) | CI, build and testing | oss | active |
 | [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | open-core | active |
 | [Quay](https://quay.io) | Artifact and package management | open-core | needs-review |
 | [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | commercial | active |
@@ -141,17 +141,17 @@
 | [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) | CI, build and testing | unknown | needs-review |
 | [sccache](https://github.com/mozilla/sccache) | CI, build and testing | oss | active |
 | [Schemathesis](https://schemathesis.readthedocs.io/en/stable/) | CI, build and testing | oss | active |
-| [Selenium](https://www.selenium.dev) | CI, build and testing | oss | needs-review |
-| [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | needs-review |
+| [Selenium](https://www.selenium.dev) | CI, build and testing | oss | active |
+| [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | active |
 | [Semaphore CI](https://semaphore.io/) | CI, build and testing | open-core | active |
-| [ServerSpec](https://serverspec.org) | CI, build and testing | oss | needs-review |
+| [ServerSpec](https://serverspec.org) | CI, build and testing | oss | active |
 | [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | Software supply-chain security | oss | needs-review |
 | [Spinnaker](https://spinnaker.io) | CD, GitOps, release and promotion | oss | active |
 | [StepSecurity](https://www.stepsecurity.io/) | Software supply-chain security | commercial | active |
 | [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | commercial | active |
 | [Tekton](https://tekton.dev) | CI, build and testing, CD, GitOps, release and promotion | oss | active |
 | [Tekton Chains](https://tekton.dev/docs/chains/) | Software supply-chain security, CI, build and testing | oss | active |
-| [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | needs-review |
+| [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | active |
 | [Testcontainers](https://github.com/testcontainers) | CI, build and testing | open-core | needs-review |
 | [Testkube](https://testkube.io) | CI, build and testing | open-core | active |
 | [TestRail](https://www.gurock.com/testrail) | CI, build and testing | unknown | needs-review |
@@ -164,7 +164,7 @@
 | [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | active |
 | [validate-dependabot](https://github.com/marocchino/validate-dependabot) | CI, build and testing | oss | needs-review |
 | [Vercel](https://vercel.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion, Serverless, edge and WebAssembly | commercial | active |
-| [Vitest](https://vitest.dev) | CI, build and testing | oss | needs-review |
+| [Vitest](https://vitest.dev) | CI, build and testing | oss | active |
 | [Waypoint](https://developer.hashicorp.com/waypoint) | CD, GitOps, release and promotion | source-available | needs-review |
 | [Weaveworks GitOps](https://docs.gitops.weaveworks.org) | CD, GitOps, release and promotion | oss | needs-review |
 | [webpack](https://webpack.js.org/) | CI, build and testing | oss | active |

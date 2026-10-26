@@ -179,7 +179,7 @@
 - [JSON Crack](https://jsoncrack.com/) — Open-source browser editor for visualizing, editing, converting, querying, and validating structured data.
 - [JUnit](https://junit.org/) — Testing framework for Java and other JVM languages.
 - [k-guard](https://github.com/KamouloxPelvis/k-guard) — Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patching, and hardening.
-- [k6](https://k6.io) — Load testing tool for performance testing.
+- [k6](https://k6.io) — Open-source JavaScript-based load testing CLI with HTTP, WebSocket, gRPC and browser test capabilities; Grafana Cloud k6 is a separate service.
 - [k8s Sidecar Secret Forge](https://github.com/stegianna/k8s-sidecar-secret-forge) — Kubernetes secret management sidecar.
 - [k8scout](https://github.com/k8scout/k8scout) — Drop-in binary that maps Kubernetes attack paths to cluster-admin escalation, node escape, secret theft, and cloud IAM takeover from within a pod.
 - [Kamaji](https://kamaji.clastix.io) — Kubernetes control plane manager (multi-tenancy/security).
@@ -265,7 +265,7 @@
 - [pip-audit](https://pypi.org/project/pip-audit) — Apache-2.0 Python dependency vulnerability auditor using packaging advisory data, with requirements or environment scans and optional remediation via --fix.
 - [piqc](https://github.com/paralleliq/piqc) — Kubernetes scanner that discovers LLMs running on vLLM and extracts their deployment and runtime facts.
 - [Play with Docker](https://labs.play-with-docker.com) — Interactive Docker playground; open-source platform with hosted labs site.
-- [Playwright](https://playwright.dev) — End-to-end testing for web apps.
+- [Playwright](https://playwright.dev) — Cross-browser web test runner and browser automation framework supporting Chromium, Firefox and WebKit.
 - [Plumber](https://getplumber.io) — CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
 - [Portmaster](https://safing.io) — Self-hosted application firewall and privacy suite for monitoring and controlling network connections.
 - [Postman](https://www.postman.com/product/) — API development and testing platform.
@@ -275,8 +275,8 @@
 - [PSScriptAnalyzer](https://www.powershellgallery.com/packages/PSScriptAnalyzer/) — Static code checker and formatter for PowerShell scripts and modules.
 - [Pumba](https://github.com/alexei-led/pumba) — Apache-2.0 CLI for Linux-container disruption, network emulation and resource stress through Docker, containerd and Podman runtime APIs.
 - [PyCharm](https://www.jetbrains.com/pycharm) — Python IDE by JetBrains.
-- [pytest](https://docs.pytest.org/en/stable) — Python testing framework.
-- [pytest-cov](https://github.com/pytest-dev/pytest-cov) — Pytest plugin for coverage reporting, including support for distributed test runs.
+- [pytest](https://docs.pytest.org/en/stable) — Python test runner with fixtures, parametrization and an extensible plugin ecosystem.
+- [pytest-cov](https://github.com/pytest-dev/pytest-cov) — pytest plugin for measuring Python test coverage through coverage.py, including optional distributed-test integration.
 - [QEMU](https://www.qemu.org/) — Machine emulator and virtualizer supporting full-system emulation, user-mode emulation, and hardware-assisted virtualization.
 - [QuantumByte](https://github.com/QuantumByteOSS/quantumbyte) — Intent-to-working-app open-source application builder engine.
 - [Qubes OS](https://github.com/QubesOS) — Security-focused desktop operating system using Xen-based virtualization for compartmentalization.
@@ -296,12 +296,12 @@
 - [Scrapling](https://scrapling.readthedocs.io/en/latest) — Web scraping toolkit for extracting and parsing web content.
 - [Security Onion](https://securityonionsolutions.com) — Free and open platform for network security monitoring, log management, and threat hunting.
 - [Securix](https://github.com/cloud-gouv/securix) — Linux server hardening and security configuration scripts designed for government cloud environments.
-- [Selenium](https://www.selenium.dev) — Browser automation for testing web applications.
+- [Selenium](https://www.selenium.dev) — Browser WebDriver automation and Selenium Grid ecosystem for cross-browser application testing.
 - [SELinux Project](https://github.com/selinuxproject) — Security-Enhanced Linux project.
-- [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) — Enforce semantic PR titles in GitHub Actions.
+- [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) — GitHub Action validating pull request titles against Conventional Commits naming conventions.
 - [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
 - [Semgrep](https://semgrep.dev) — Application-security product family combining an LGPL analysis engine, separately licensed community rules, and a commercial hosted platform for SAST, SCA, and secrets scanning.
-- [ServerSpec](https://serverspec.org) — Test server configurations using RSpec.
+- [ServerSpec](https://serverspec.org) — Ruby/RSpec-based server-state assertions for installed packages, services, ports and configuration.
 - [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) — Shell formatter (`shfmt`).
 - [Shuffle Automation](https://shuffler.io) — Open-source SOAR platform for security automation and response workflows.
 - [Skaffold](https://skaffold.dev) — Client-side container-development CLI for build, test, push, deploy and debug loops with Kubernetes and other supported targets; upstream plans repository archival on 29 January 2027.
@@ -336,8 +336,8 @@
 - [Termic](https://termic.dev/) — Desktop development workspace combining agent sessions, terminals, Git worktrees, and review tools.
 - [terminal-browser](https://terminal-browser.com/) — Browser integrated with terminal sessions for interactive web previews and browser automation.
 - [Termix](https://termix.site/) — Self-hosted server-management platform for SSH, remote desktop, file transfer, tunnels, and infrastructure access from web, desktop, and mobile clients.
-- [Test Kitchen](https://kitchen.ci) — Test infrastructure code on various platforms.
-- [Testcontainers](https://github.com/testcontainers) — Libraries for integration tests using disposable containers; OSS core with paid cloud add-ons.
+- [Test Kitchen](https://kitchen.ci) — Ruby integration testing framework that provisions and verifies infrastructure code on isolated test targets.
+- [Testcontainers](https://github.com/testcontainers) — Multi-language libraries for integration testing with disposable containers; language libraries and paid cloud offerings have separate licences.
 - [Testkube](https://testkube.io) — Kubernetes-native test orchestration product with a standalone public agent, mixed MIT and Testkube Community License code, and a commercial control plane.
 - [TestRail](https://www.gurock.com/testrail) — Test case management platform.
 - [TestRigor](https://testrigor.com) — AI-powered end-to-end testing platform.
@@ -359,7 +359,7 @@
 - [Valqore](https://www.valqore.io) — Automatic safety and security checks for cloud and AI environments.
 - [Velociraptor](https://docs.velociraptor.app) — Digital forensics and incident response platform for endpoint investigation and threat hunting.
 - [VirusTotal](https://www.virustotal.com/gui/home/upload) — Analyze files, domains, IPs, and URLs with multi-engine scanning and community intelligence.
-- [Vitest](https://vitest.dev) — Blazing fast Vite-native unit testing framework.
+- [Vitest](https://vitest.dev) — Vite-native JavaScript and TypeScript test runner with component, watch and optional browser testing modes.
 - [VSCode](https://code.visualstudio.com) — Code editor by Microsoft. Source is MIT on GitHub; official binaries are under Microsoft license.
 - [VSCodium](https://vscodium.com) — Community-built, telemetry-free distributions of VS Code, based on the open-source codebase.
 - [Watchexec](https://watchexec.github.io/) — Filesystem-event command runner for repeating checks and development tasks.

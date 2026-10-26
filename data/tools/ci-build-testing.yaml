@@ -1596,7 +1596,7 @@
   needs_review: false
 - id: k6
   name: k6
-  summary: Load testing tool for performance testing.
+  summary: "Open-source JavaScript-based load testing CLI with HTTP, WebSocket, gRPC and browser test capabilities; Grafana Cloud k6 is a separate service."
   official_url: https://k6.io
   repository_url: https://github.com/grafana/k6
   categories:
@@ -1614,16 +1614,23 @@
   - Developers want to write load tests in JavaScript with a CLI-first workflow.
   avoid_when:
   - You need a GUI-based test builder or non-HTTP protocol support without extensions.
+  - "You assume Grafana Cloud k6 has the same AGPL licence as the standalone CLI."
+  - "You require a single unambiguous latest stable line or exact AGPL-3.0-only versus -or-later grant without additional licence research."
   deployment_models: []
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L12
   - legacy:devopstools_final.md#L1034
+  - "https://github.com/grafana/k6/blob/v1.8.2/LICENSE.md"
+  - "https://github.com/grafana/k6/blob/v2.3.0/LICENSE.md"
+  - "https://github.com/grafana/k6/blob/v2.3.0/README.md"
+  - "https://github.com/grafana/k6/releases/tag/v2.3.0"
+  - "https://github.com/grafana/k6/releases/tag/v1.8.2"
   needs_review: true
 - id: katalon-studio
   name: Katalon Studio
@@ -1982,7 +1989,7 @@
   needs_review: false
 - id: playwright
   name: Playwright
-  summary: End-to-end testing for web apps.
+  summary: "Cross-browser web test runner and browser automation framework supporting Chromium, Firefox and WebKit."
   official_url: https://playwright.dev
   repository_url: https://github.com/microsoft/playwright
   categories:
@@ -2000,17 +2007,22 @@
   - You need cross-browser (Chromium, Firefox, WebKit), multi-tab, or multi-origin E2E tests.
   avoid_when:
   - Your team is already productive with Cypress and doesn't need the extra browser coverage.
+  - "You assume browser binaries and external OS dependencies share the test runner Apache-2.0 source licence or do not need CI version pinning."
   deployment_models: []
+  license_spdx: "Apache-2.0"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L14
   - legacy:devopstools_final.md#L1036
-  needs_review: true
+  - "https://github.com/microsoft/playwright/blob/v1.64.1/LICENSE"
+  - "https://github.com/microsoft/playwright/releases/tag/v1.64.1"
+  - "https://playwright.dev/docs/intro"
+  needs_review: false
 - id: probot-dco
   name: Probot DCO
   summary: DCO checks for GitHub pull requests.
@@ -2044,7 +2056,7 @@
   needs_review: true
 - id: pytest
   name: pytest
-  summary: Python testing framework.
+  summary: "Python test runner with fixtures, parametrization and an extensible plugin ecosystem."
   official_url: https://docs.pytest.org/en/stable
   repository_url: https://github.com/pytest-dev/pytest
   categories:
@@ -2062,20 +2074,25 @@
   - Virtually any Python testing need—its fixture/plugin ecosystem is unmatched.
   avoid_when:
   - Only if you're in a non-Python stack.
+  - "You require a cross-language test runner or need support for Python versions below the upstream pytest 9.1.1 minimum of 3.10."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L15
   - legacy:devopstools_final.md#L1037
-  needs_review: true
+  - "https://github.com/pytest-dev/pytest/blob/9.1.1/LICENSE"
+  - "https://github.com/pytest-dev/pytest/blob/9.1.1/pyproject.toml"
+  - "https://github.com/pytest-dev/pytest/releases/tag/9.1.1"
+  needs_review: false
 - id: pytest-cov
   name: pytest-cov
-  summary: Pytest plugin for coverage reporting, including support for distributed test runs.
+  summary: "pytest plugin for measuring Python test coverage through coverage.py, including optional distributed-test integration."
   repository_url: https://github.com/pytest-dev/pytest-cov
   categories:
   - ci-build-testing
@@ -2088,18 +2105,25 @@
   lifecycle_stages:
   - build
   - test
-  use_when: []
-  avoid_when: []
+  use_when:
+  - "You want reproducible Python coverage reports as part of pytest in CI."
+  avoid_when:
+  - "You need a standalone test runner or cannot meet pytest-cov v7.1.0 dependencies including coverage.py 7.10.6 or newer."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:devopstools_final.md#L1038
-  needs_review: true
+  - "https://github.com/pytest-dev/pytest-cov/blob/v7.1.0/LICENSE"
+  - "https://github.com/pytest-dev/pytest-cov/blob/v7.1.0/pyproject.toml"
+  - "https://github.com/pytest-dev/pytest-cov/blob/v7.1.0/README.rst"
+  - "https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst"
+  needs_review: false
 - id: review-flow
   name: Review Flow
   summary: GitHub pull request review workflow visualization and management tool.
@@ -2224,7 +2248,7 @@
   needs_review: false
 - id: selenium
   name: Selenium
-  summary: Browser automation for testing web applications.
+  summary: "Browser WebDriver automation and Selenium Grid ecosystem for cross-browser application testing."
   official_url: https://www.selenium.dev
   repository_url: https://github.com/SeleniumHQ/selenium
   categories:
@@ -2243,20 +2267,25 @@
     runs.
   avoid_when:
   - For new greenfield projects where Playwright or Cypress offer better DX out of the box.
+  - "You cannot isolate and secure Selenium Grid endpoints or coordinate the browser and driver versions used by CI."
   deployment_models: []
+  license_spdx: "Apache-2.0"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L16
   - legacy:devopstools_final.md#L1039
-  needs_review: true
+  - "https://github.com/SeleniumHQ/selenium/blob/selenium-4.51.0/LICENSE"
+  - "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.51.0"
+  - "https://www.selenium.dev/documentation/"
+  needs_review: false
 - id: semantic-pull-request-github-action
   name: Semantic Pull Request (GitHub Action)
-  summary: Enforce semantic PR titles in GitHub Actions.
+  summary: "GitHub Action validating pull request titles against Conventional Commits naming conventions."
   repository_url: https://github.com/amannn/action-semantic-pull-request
   categories:
   - ci-build-testing
@@ -2273,17 +2302,23 @@
   - You squash-merge and want PR titles to drive automated changelogs.
   avoid_when:
   - You use per-commit linting (commitlint) and don't squash.
+  - "You need application code scanning rather than PR title linting or would run untrusted PR code with privileged pull_request_target access."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L61
   - legacy:devopstools_final.md#L1098
-  needs_review: true
+  - "https://github.com/amannn/action-semantic-pull-request/blob/v6.1.1/LICENSE"
+  - "https://github.com/amannn/action-semantic-pull-request/blob/v6.1.1/README.md"
+  - "https://github.com/amannn/action-semantic-pull-request/blob/v6.1.1/action.yml"
+  - "https://github.com/amannn/action-semantic-pull-request/releases/tag/v6.1.1"
+  needs_review: false
 - id: semaphore-ci
   name: Semaphore CI
   summary: Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside
@@ -2347,7 +2382,7 @@
   commercial_offering: true
 - id: serverspec
   name: ServerSpec
-  summary: Test server configurations using RSpec.
+  summary: "Ruby/RSpec-based server-state assertions for installed packages, services, ports and configuration."
   official_url: https://serverspec.org
   repository_url: https://github.com/mizzy/serverspec
   categories:
@@ -2365,17 +2400,22 @@
   - You want to validate running server state (packages, services, ports) with Ruby/RSpec.
   avoid_when:
   - You prefer a language-agnostic approach (consider InSpec or Goss).
+  - "You require a commercial maintenance SLA or cannot secure Ruby execution and SSH or other remote test access."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L17
   - legacy:devopstools_final.md#L1040
-  needs_review: true
+  - "https://github.com/mizzy/serverspec/blob/v2.43.0/LICENSE.txt"
+  - "https://github.com/mizzy/serverspec/blob/v2.43.0/README.md"
+  - "https://github.com/mizzy/serverspec/releases/tag/v2.43.0"
+  needs_review: false
 - id: teamcity
   name: TeamCity
   summary: JetBrains commercial CI/CD product offered as TeamCity On-Premises and TeamCity Cloud.
@@ -2473,7 +2513,7 @@
   repository_archived: false
 - id: test-kitchen
   name: Test Kitchen
-  summary: Test infrastructure code on various platforms.
+  summary: "Ruby integration testing framework that provisions and verifies infrastructure code on isolated test targets."
   official_url: https://kitchen.ci
   repository_url: https://github.com/test-kitchen/test-kitchen
   categories:
@@ -2491,20 +2531,25 @@
   - Testing Chef cookbooks or other IaC against real VMs/containers.
   avoid_when:
   - Your IaC tooling (Terraform, Ansible) has its own mature testing story.
+  - "You cannot isolate test drivers, virtualization or cloud credentials; their dependencies and images carry separate licences."
   deployment_models: []
+  license_spdx: "Apache-2.0"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L18
   - legacy:devopstools_final.md#L1041
-  needs_review: true
+  - "https://github.com/test-kitchen/test-kitchen/blob/v4.1.5/LICENSE"
+  - "https://github.com/test-kitchen/test-kitchen/blob/v4.1.5/README.md"
+  - "https://github.com/test-kitchen/test-kitchen/releases/tag/v4.1.5"
+  needs_review: false
 - id: testcontainers
   name: Testcontainers
-  summary: Libraries for integration tests using disposable containers; OSS core with paid cloud add-ons.
+  summary: "Multi-language libraries for integration testing with disposable containers; language libraries and paid cloud offerings have separate licences."
   official_url: https://github.com/testcontainers
   categories:
   - ci-build-testing
@@ -2521,16 +2566,23 @@
   - Integration tests need real databases, message brokers, or services without shared test environments.
   avoid_when:
   - Your CI runners can't run Docker (rootless or DinD) or tests are purely unit-level.
+  - "You assume one licence covers every Testcontainers language library and commercial service."
+  - "Your CI cannot safely run a supported container runtime or isolate privileged containers and external resources."
   deployment_models: []
   license_model: open-core
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L19
   - legacy:devopstools_final.md#L1043
+  - "https://github.com/testcontainers/testcontainers-java/blob/2.0.5/LICENSE"
+  - "https://github.com/testcontainers/testcontainers-go/blob/main/LICENSE"
+  - "https://github.com/testcontainers/testcontainers-node/blob/main/LICENSE"
+  - "https://github.com/testcontainers/testcontainers-python/blob/main/LICENSE.txt"
+  - "https://github.com/testcontainers/testcontainers-python/blob/main/pyproject.toml"
   needs_review: true
 - id: testkube
   name: Testkube
@@ -2748,7 +2800,7 @@
   needs_review: true
 - id: vitest
   name: Vitest
-  summary: Blazing fast Vite-native unit testing framework.
+  summary: "Vite-native JavaScript and TypeScript test runner with component, watch and optional browser testing modes."
   official_url: https://vitest.dev
   repository_url: https://github.com/vitest-dev/vitest
   categories:
@@ -2766,17 +2818,22 @@
   - Your project already uses Vite—shared config and instant HMR-powered re-runs are a big win.
   avoid_when:
   - You're not in the Vite ecosystem and Jest works fine.
+  - "You cannot satisfy the Node and Vite compatibility requirements or plan to use v5.1 prereleases as stable versions."
   deployment_models: []
+  license_spdx: "MIT"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-26"
   sources:
   - legacy:7_Development-Collaboration/README.md#L23
   - legacy:devopstools_final.md#L1047
-  needs_review: true
+  - "https://github.com/vitest-dev/vitest/blob/v5.0.5/LICENSE"
+  - "https://github.com/vitest-dev/vitest/blob/v5.0.5/package.json"
+  - "https://github.com/vitest-dev/vitest/releases/tag/v5.0.5"
+  needs_review: false
 - id: webpack
   name: webpack
   summary: JavaScript module bundler with code splitting and a plugin-based build pipeline.

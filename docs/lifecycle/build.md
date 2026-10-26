@@ -133,7 +133,7 @@
 - [JFrog Platform](https://jfrog.com/platform/) — Commercial software supply-chain platform unifying artifact and AI asset management, security, governance, and release delivery.
 - [JUnit](https://junit.org/) — Testing framework for Java and other JVM languages.
 - [just](https://just.systems/) — Command runner for keeping project recipes in a versioned justfile.
-- [k6](https://k6.io) — Load testing tool for performance testing.
+- [k6](https://k6.io) — Open-source JavaScript-based load testing CLI with HTTP, WebSocket, gRPC and browser test capabilities; Grafana Cloud k6 is a separate service.
 - [K8sGPT](https://k8sgpt.ai) — AI-powered Kubernetes troubleshooting.
 - [Kairos](https://kairos.io/) — Immutable Linux meta-distribution for building edge appliances and Kubernetes-based operating-system images.
 - [Katalon Studio](https://katalon.com/katalon-studio) — Commercial desktop test-automation IDE for web, API, mobile, and desktop applications, with a limited free mode.
@@ -198,7 +198,7 @@
 - [Packer](https://www.packer.io) — HashiCorp machine-image build CLI that creates reproducible images for multiple platforms from one configuration, with separately licensed plugins and HCP image metadata services.
 - [peerd](https://peerd.ai) — Browser-native harness for AI agents.
 - [pgvector](https://github.com/pgvector/pgvector) — PostgreSQL extension that adds vector data types, similarity search, and vector indexes.
-- [Playwright](https://playwright.dev) — End-to-end testing for web apps.
+- [Playwright](https://playwright.dev) — Cross-browser web test runner and browser automation framework supporting Chromium, Firefox and WebKit.
 - [Plumber](https://getplumber.io) — CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
 - [Pluralith](https://www.pluralith.com) — Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
 - [pre-commit](https://pre-commit.com) — Multi-language Git hook framework (config-driven, reproducible hooks across teams).
@@ -207,8 +207,8 @@
 - [Promptfoo](https://www.promptfoo.dev) — Test and evaluate LLM prompts.
 - [Pulp](https://pulpproject.org/) — Repository platform for managing and distributing software packages and other content types through plugins.
 - [Pulumi](https://www.pulumi.com) — IaC using real programming languages.
-- [pytest](https://docs.pytest.org/en/stable) — Python testing framework.
-- [pytest-cov](https://github.com/pytest-dev/pytest-cov) — Pytest plugin for coverage reporting, including support for distributed test runs.
+- [pytest](https://docs.pytest.org/en/stable) — Python test runner with fixtures, parametrization and an extensible plugin ecosystem.
+- [pytest-cov](https://github.com/pytest-dev/pytest-cov) — pytest plugin for measuring Python test coverage through coverage.py, including optional distributed-test integration.
 - [Qdrant](https://qdrant.tech/) — Vector database and similarity-search engine available for self-hosted and managed deployments.
 - [Quay](https://quay.io) — Container registry for building, storing, and distributing images.
 - [Rakazo](https://rakazo.com/) — Self-hosted agent workspace with sandboxed browser and shell sessions, routines, approvals, and audit history.
@@ -222,10 +222,10 @@
 - [sccache](https://github.com/mozilla/sccache) — Compiler cache supporting local and remote storage backends.
 - [Schemathesis](https://schemathesis.readthedocs.io/en/stable/) — Property-based API testing tool that generates cases from OpenAPI and GraphQL schemas.
 - [Score](https://score.dev) — Score is a platform-agnostic container workload specification expressed in score.yaml; separate implementations such as score-compose and score-k8s translate it into platform configuration. The specification repository is not a Kubernetes deployment platform.
-- [Selenium](https://www.selenium.dev) — Browser automation for testing web applications.
-- [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) — Enforce semantic PR titles in GitHub Actions.
+- [Selenium](https://www.selenium.dev) — Browser WebDriver automation and Selenium Grid ecosystem for cross-browser application testing.
+- [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) — GitHub Action validating pull request titles against Conventional Commits naming conventions.
 - [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
-- [ServerSpec](https://serverspec.org) — Test server configurations using RSpec.
+- [ServerSpec](https://serverspec.org) — Ruby/RSpec-based server-state assertions for installed packages, services, ports and configuration.
 - [Shipwright](https://shipwright.io) — Kubernetes-native image-build orchestration using Build and BuildRun resources and pluggable build strategies backed by Tekton.
 - [Sim](https://www.sim.ai) — AI workspace for building, deploying, and monitoring agentic workflows.
 - [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Lightweight Git hooks manager for Node.js.
@@ -246,8 +246,8 @@
 - [terraform-skill](https://github.com/antonbabenko/terraform-skill) — Claude Code skill for Terraform and OpenTofu best practices, testing, modules, CI/CD, and security.
 - [Terragrunt](https://terragrunt.com/) — Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infrastructure with reusable configuration, units and dependencies.
 - [terravision](https://github.com/patrickchugh/terravision) — Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google, Azure).
-- [Test Kitchen](https://kitchen.ci) — Test infrastructure code on various platforms.
-- [Testcontainers](https://github.com/testcontainers) — Libraries for integration tests using disposable containers; OSS core with paid cloud add-ons.
+- [Test Kitchen](https://kitchen.ci) — Ruby integration testing framework that provisions and verifies infrastructure code on isolated test targets.
+- [Testcontainers](https://github.com/testcontainers) — Multi-language libraries for integration testing with disposable containers; language libraries and paid cloud offerings have separate licences.
 - [Testkube](https://testkube.io) — Kubernetes-native test orchestration product with a standalone public agent, mixed MIT and Testkube Community License code, and a commercial control plane.
 - [TestRail](https://www.gurock.com/testrail) — Test case management platform.
 - [TestRigor](https://testrigor.com) — AI-powered end-to-end testing platform.
@@ -259,7 +259,7 @@
 - [validate-dependabot](https://github.com/marocchino/validate-dependabot) — GitHub Action that validates `dependabot.yml` against the official Dependabot schema before merge.
 - [Vercel](https://vercel.com/) — Managed web application platform providing Git-based builds, preview deployments, production hosting, and serverless infrastructure.
 - [VictoriaMetrics MCP server](https://github.com/VictoriaMetrics/mcp-victoriametrics) — Model Context Protocol server that exposes VictoriaMetrics observability operations to compatible AI clients.
-- [Vitest](https://vitest.dev) — Blazing fast Vite-native unit testing framework.
+- [Vitest](https://vitest.dev) — Vite-native JavaScript and TypeScript test runner with component, watch and optional browser testing modes.
 - [VoltAgent](https://voltagent.dev) — Open-source TypeScript framework for building AI agents.
 - [webpack](https://webpack.js.org/) — JavaScript module bundler with code splitting and a plugin-based build pipeline.
 - [werf](https://werf.io) — Git-driven Kubernetes delivery tool combining container-image builds, deployment and Helm-based release workflows.
