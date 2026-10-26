@@ -73,3 +73,222 @@ Initial documentary evidence only, **0 CLEAR**, **10 pending**. This stage did n
 Apply in clean branch `maintenance/wave-26-kubernetes-cluster-lifecycle-evidence-review` from this documentation checkpoint. Verify exact original YAML at pinned `main` and branch base. Before writing, present a dry-run field-level diff covering precisely the selected ten. Generate official views and append **actual** pre/post canonical data and local QA outcomes to the ledger. Run `python -m scripts.generate_docs`/`--check`, `validate_catalog`, Ruff lint/format, full pytest, pip check, git diff --check and strict 10/132 cohort comparison. Preserve 3.12 lock and the six historic URL exceptions. Commit/push only after verification and explicit human action; never alter main directly.
 
 After push, require fresh all-7-check PR CI, completed independent Codex P1/P2 review on final SHA, and a fresh manually triggered strict Full link audit with `strict_result: PASS`, `blocking_new: 0`, six historic exception pairs unchanged. PR remains Draft, #143 open, #2 open. Only explicit human squash merge after all gates and post-merge verification may close #143.
+
+### Duplicate repository URL correction — 2026-10-26
+
+The original second-pass proposal pointed `kubeadm.repository_url` to the repository root
+`https://github.com/kubernetes/kubernetes`. Local `scripts.validate_catalog` correctly rejected it: the existing
+independent `kubernetes` record already owns this canonical root, and duplicate
+`repository_url` values are forbidden. This follow-up chooses the accurate, unique
+**source subdirectory link** `https://github.com/kubernetes/kubernetes/tree/master/cmd/kubeadm` for kubeadm. Both records still
+refer to one Kubernetes upstream repository (not two different repositories).
+The former `kubernetes/kubeadm` issue-tracker URL and immutable tagged
+`v1.35.0/cmd/kubeadm` source remain documented in kubeadm `sources`.
+The 8 CLEAR / 2 RETAIN decisions, original IDs, licences, 132 untouched records,
+counts, baseline exceptions and date remain unchanged. The prior proposal is kept
+above as historical context; the regenerated applied field-level table below is
+now authoritative for the actual local values.
+
+<!-- WAVE26_APPLIED_CANONICAL_CHANGELOG_START -->
+## Local canonical application — Wave 26 field-level evidence log
+
+**Status:** Canonical changes applied locally, official regeneration/QA and fresh PR CI pending until actually observed. The first-pass and second-pass recommendations above are historical checkpoints.
+
+**Decisions applied to local canonical records:** 8 CLEAR / 2 RETAIN REVIEW. The catalogue-level expected inventory after official generation is 1,425 canonical, 808 active, 603 needs-review, subject to generator and CI validation.
+
+| Decision | IDs |
+|---|---|
+| CLEAR | `cluster-api-provider-aws`, `k3d`, `kubeadm`, `kubeedge`, `kubesolo`, `microk8s`, `rancher-k3k`, `typhoon` |
+| RETAIN REVIEW | `k0smotron`, `kubesphere` |
+
+All 132 non-cohort YAML records are unchanged byte-for-byte after line-ending normalization; original historical sources, taxonomy, role and lifecycle fields are preserved. No constraints or URL audit baseline update is authorized.
+
+### `cluster-api-provider-aws` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>[]</code> | <code>["You cannot secure AWS IAM, network provisioning costs or align CAPI/CAPA compatibility versions."]</code> |
+| `license_spdx` | <code>null</code> | <code>"Apache-2.0"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:devopstools_final.md#L454"]</code> | <code>["legacy:devopstools_final.md#L454", "https://github.com/kubernetes-sigs/cluster-api-provider-aws/blob/v2.13.1/LICENSE", "https://github.com/kubernetes-sigs/cluster-api-provider-aws/releases/tag/v2.13.1", "https://cluster-api-aws.sigs.k8s.io/"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Kubernetes-native declarative infrastructure provider for creating and operating self-managed and EKS clusters on AWS."</code> | <code>"Kubernetes Cluster API infrastructure provider for AWS self-managed Kubernetes clusters and EKS integrations."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/kubernetes-sigs/cluster-api-provider-aws/blob/v2.13.1/LICENSE
+- https://github.com/kubernetes-sigs/cluster-api-provider-aws/releases/tag/v2.13.1
+- https://cluster-api-aws.sigs.k8s.io/
+
+
+### `k0smotron` — RETAIN REVIEW
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>[]</code> | <code>["You need one confirmed licence for software and documentation or have not validated k0s/CAPI compatibility and hosted control-plane isolation."]</code> |
+| `sources` | <code>["legacy:devopstools_final.md#L464"]</code> | <code>["legacy:devopstools_final.md#L464", "https://github.com/k0sproject/k0smotron/blob/v2.3.0/LICENSE", "https://github.com/k0sproject/k0smotron/releases/tag/v2.3.0", "https://docs.k0smotron.io/"]</code> |
+| `summary` | <code>"Kubernetes operator and Cluster API provider for managing hosted k0s control planes and child clusters inside Kubernetes."</code> | <code>"Hosted k0s control-plane operator and Cluster API integration with separate software and documentation licences."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/k0sproject/k0smotron/blob/v2.3.0/LICENSE
+- https://github.com/k0sproject/k0smotron/releases/tag/v2.3.0
+- https://docs.k0smotron.io/
+
+
+### `k3d` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>[]</code> | <code>["You require production high availability or cannot secure the local Docker socket and host resources."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:devopstools_final.md#L434"]</code> | <code>["legacy:devopstools_final.md#L434", "https://github.com/k3d-io/k3d/blob/v5.9.0/LICENSE", "https://github.com/k3d-io/k3d/releases/tag/v5.9.0", "https://k3d.io/"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Lightweight wrapper to run k3s (Rancher Lab's minimal Kubernetes distribution) in Docker."</code> | <code>"Docker-based local cluster wrapper running the lightweight k3s Kubernetes distribution."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/k3d-io/k3d/blob/v5.9.0/LICENSE
+- https://github.com/k3d-io/k3d/releases/tag/v5.9.0
+- https://k3d.io/
+
+
+### `kubeadm` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["A managed service (EKS/GKE/AKS) or lightweight distro (k3s) would reduce operational burden."]</code> | <code>["A managed service (EKS/GKE/AKS) or lightweight distro (k3s) would reduce operational burden.", "You expect kubeadm alone to provision machines, networking, storage or a complete managed Kubernetes service."]</code> |
+| `license_spdx` | <code>null</code> | <code>"Apache-2.0"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `repository_url` | <code>"https://github.com/kubernetes/kubeadm"</code> | <code>"https://github.com/kubernetes/kubernetes/tree/master/cmd/kubeadm"</code> |
+| `sources` | <code>["legacy:4_Kubernetes-Containers/README.md#L7", "legacy:devopstools_final.md#L436"]</code> | <code>["legacy:4_Kubernetes-Containers/README.md#L7", "legacy:devopstools_final.md#L436", "https://github.com/kubernetes/kubeadm/blob/main/README.md", "https://github.com/kubernetes/kubernetes/blob/v1.35.0/cmd/kubeadm/kubeadm.go", "https://github.com/kubernetes/kubernetes/blob/v1.35.0/LICENSE", "https://kubernetes.io/docs/reference/setup-tools/kubeadm/"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Tool for bootstrapping Kubernetes clusters."</code> | <code>"Upstream Kubernetes bootstrap and upgrade CLI for creating and managing control-plane and worker node configuration."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/kubernetes/kubeadm/blob/main/README.md
+- https://github.com/kubernetes/kubernetes/blob/v1.35.0/cmd/kubeadm/kubeadm.go
+- https://github.com/kubernetes/kubernetes/blob/v1.35.0/LICENSE
+- https://kubernetes.io/docs/reference/setup-tools/kubeadm/
+
+
+### `kubeedge` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Your edge devices are too resource-constrained or a simpler agent model (e.g., k3s) suffices."]</code> | <code>["Your edge devices are too resource-constrained or a simpler agent model (e.g., k3s) suffices.", "You cannot manage cloud-edge identities, certificate lifecycle, connectivity loss and device trust boundaries."]</code> |
+| `license_spdx` | <code>null</code> | <code>"Apache-2.0"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:4_Kubernetes-Containers/README.md#L10", "legacy:devopstools_final.md#L439"]</code> | <code>["legacy:4_Kubernetes-Containers/README.md#L10", "legacy:devopstools_final.md#L439", "https://github.com/kubeedge/kubeedge/blob/v1.23.1/LICENSE", "https://github.com/kubeedge/kubeedge/releases/tag/v1.23.1", "https://kubeedge.io/"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Extend Kubernetes to edge computing."</code> | <code>"Kubernetes-native edge computing framework connecting cloud control planes with edge devices and nodes."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/kubeedge/kubeedge/blob/v1.23.1/LICENSE
+- https://github.com/kubeedge/kubeedge/releases/tag/v1.23.1
+- https://kubeedge.io/
+
+
+### `kubesolo` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>[]</code> | <code>["You need multi-node scheduling or high availability, or assume a native macOS IDE rather than a single-node Kubernetes runtime."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:devopstools_final.md#L442"]</code> | <code>["legacy:devopstools_final.md#L442", "https://github.com/portainer/kubesolo/blob/v1.2.2/LICENSE", "https://github.com/portainer/kubesolo/blob/v1.2.2/README.md", "https://github.com/portainer/kubesolo/releases/tag/v1.2.2"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Native macOS application to run a local Kubernetes cluster."</code> | <code>"Lightweight single-node Kubernetes implementation for edge and server hosts, with container-mode use for development."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/portainer/kubesolo/blob/v1.2.2/LICENSE
+- https://github.com/portainer/kubesolo/blob/v1.2.2/README.md
+- https://github.com/portainer/kubesolo/releases/tag/v1.2.2
+
+
+### `kubesphere` — RETAIN REVIEW
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["You prefer composing best-of-breed tools (ArgoCD + Grafana + etc.)."]</code> | <code>["You prefer composing best-of-breed tools (ArgoCD + Grafana + etc.).", "You require unmodified OSI Apache-2.0 licence permissions for KubeSphere v4.x or intend third-party commercial redistribution without authorization."]</code> |
+| `license_model` | <code>"oss"</code> | <code>"source-available"</code> |
+| `sources` | <code>["legacy:4_Kubernetes-Containers/README.md#L57", "legacy:devopstools_final.md#L511"]</code> | <code>["legacy:4_Kubernetes-Containers/README.md#L57", "legacy:devopstools_final.md#L511", "https://github.com/kubesphere/kubesphere/blob/v4.1.3/LICENSE", "https://github.com/kubesphere/kubesphere/releases/tag/v4.1.3", "https://kubesphere.io/"]</code> |
+| `summary` | <code>"Kubernetes multi-tenant management platform."</code> | <code>"Kubernetes multi-tenant management platform; KubeSphere 4.x imposes additional commercial-use and distribution restrictions."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/kubesphere/kubesphere/blob/v4.1.3/LICENSE
+- https://github.com/kubesphere/kubesphere/releases/tag/v4.1.3
+- https://kubesphere.io/
+
+
+### `microk8s` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["You need wider community tooling compatibility or prefer non-snap packaging."]</code> | <code>["You need wider community tooling compatibility or prefer non-snap packaging.", "You assume every Snap track or optional add-on offers identical version, architecture or production HA support."]</code> |
+| `license_spdx` | <code>null</code> | <code>"Apache-2.0"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:4_Kubernetes-Containers/README.md#L163", "legacy:devopstools_final.md#L665"]</code> | <code>["legacy:4_Kubernetes-Containers/README.md#L163", "legacy:devopstools_final.md#L665", "https://github.com/canonical/microk8s/blob/v1.36/LICENSE", "https://github.com/canonical/microk8s/releases/tag/v1.36", "https://microk8s.io/"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Lightweight Kubernetes by Canonical."</code> | <code>"Canonical-packaged lightweight Kubernetes distribution with Snap tracks and optional add-ons."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/canonical/microk8s/blob/v1.36/LICENSE
+- https://github.com/canonical/microk8s/releases/tag/v1.36
+- https://microk8s.io/
+
+
+### `rancher-k3k` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Vcluster or Kamaji already handles your virtual cluster needs."]</code> | <code>["Vcluster or Kamaji already handles your virtual cluster needs.", "You need a hard tenant security boundary without verifying privileged agent pods, host isolation and the shared-mode policy model.", "You plan to treat chart 1.2.1 release candidates as a stable GA application version."]</code> |
+| `license_spdx` | <code>null</code> | <code>"Apache-2.0"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:4_Kubernetes-Containers/README.md#L167", "legacy:devopstools_final.md#L669"]</code> | <code>["legacy:4_Kubernetes-Containers/README.md#L167", "legacy:devopstools_final.md#L669", "https://github.com/rancher/k3k/blob/v1.2.0/LICENSE", "https://github.com/rancher/k3k/blob/v1.2.0/README.md", "https://github.com/rancher/k3k/releases/tag/v1.2.0"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Run and manage k3s clusters via Kubernetes (see docs)."</code> | <code>"Kubernetes-in-Kubernetes control-plane tooling for shared or virtual k3s guest clusters."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/rancher/k3k/blob/v1.2.0/LICENSE
+- https://github.com/rancher/k3k/blob/v1.2.0/README.md
+- https://github.com/rancher/k3k/releases/tag/v1.2.0
+
+
+### `typhoon` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>[]</code> | <code>["You cannot safeguard Terraform state and provider credentials or verify cloud provider and Kubernetes version compatibility."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:devopstools_final.md#L672"]</code> | <code>["legacy:devopstools_final.md#L672", "https://github.com/poseidon/typhoon/blob/v1.36.1/LICENSE", "https://github.com/poseidon/typhoon/releases/tag/v1.36.1", "https://typhoon.psdn.io/"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platforms."</code> | <code>"Minimal Kubernetes distribution and Terraform provisioning toolkit for cloud and bare-metal clusters."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/poseidon/typhoon/blob/v1.36.1/LICENSE
+- https://github.com/poseidon/typhoon/releases/tag/v1.36.1
+- https://typhoon.psdn.io/
+
+
+**Publication checkpoint:** This local change log is not itself evidence of test/CI completion. After the official local generator and full QA pass, review the final diff, push through an explicit human-authorized commit, obtain fresh PR CI + independent P1/P2 review and a new strict full URL audit on the exact final SHA before a human merge decision.
+<!-- WAVE26_APPLIED_CANONICAL_CHANGELOG_END -->
