@@ -523,7 +523,7 @@
     and an HTTP API.
   official_url: https://pocketbase.io/
   repository_url: https://github.com/pocketbase/pocketbase
-  repository_archived: false
+  repository_archived: true
   documentation_url: https://pocketbase.io/docs/
   categories:
   - databases-caching-data-infrastructure
@@ -540,6 +540,7 @@
   avoid_when:
   - Avoid it when independent database scaling, high availability, or mature enterprise operations are
     required.
+  - "The historical GitHub repository is archived following the upstream migration; confirm the new source location before contributing or building from source."
   deployment_models:
   - self-hosted
   - embedded
@@ -549,11 +550,12 @@
   status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-21'
+  verified_on: '2026-10-26'
   sources:
   - https://pocketbase.io/
   - https://pocketbase.io/docs/
   - https://github.com/pocketbase/pocketbase
+  - https://github.com/pocketbase/pocketbase/commit/7f2773ec234b62d0b80ca47c508397cb3d0da3ea
   needs_review: false
 - id: postgresql
   name: PostgreSQL

@@ -296,3 +296,49 @@ Only the N1a test and this maintenance ledger are new changes on top of the
 already-applied ten-ID Wave 27 YAML and official generated views. Verification
 results must be taken from the repair command output; no PASS is claimed
 until tests have actually completed locally. No commit, push or merge here.
+
+---
+
+## External strict-link-audit blocker — PocketBase source relocation (2026-10-26)
+<!-- WAVE27_POCKETBASE_EXTERNAL_AUDIT_REMEDIATION -->
+
+**This is a separate, one-record, post-review link-audit correction outside the fixed
+10-item Wave 27 DevEx cohort.** It does not alter the 10/91 DevEx contract,
+license determinations, link baseline, or GitHub workflow. The [Full link audit
+#42](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/40405137137)
+on branch HEAD `b35a26df39ba3c171e9583b842e8784dca1dbd62` checked **2,781** URLs and reported
+`blocking_new: 1`, `blocking_known: 6`, `strict_result: FAIL`, with
+`baseline_changed: []`, `baseline_resolved: []`.
+
+The sole new blocker was `https://github.com/pocketbase/pocketbase` classified
+`repository-archived-unexpected`: the [GitHub repository metadata](https://github.com/pocketbase/pocketbase)
+returns `archived=true`, whereas the catalogue's archived expectation was false.
+In an [upstream commit on 2026-10-26](https://github.com/pocketbase/pocketbase/commit/7f2773ec234b62d0b80ca47c508397cb3d0da3ea), project maintainer
+`ganigeorgiev` added a README notice that source development **moved to**
+`https://ganigeorgiev.com/pocketbase/pocketbase`. This source relocation is
+not evidence that PocketBase itself has been discontinued. The destination
+forge's direct availability could not independently be confirmed in this
+review environment, so the historical GitHub repository is retained as the
+catalogue's provenance URL rather than silently substituting an unverified
+replacement.
+
+Exactly one additional record changed in
+`data/tools/databases-caching-data-infrastructure.yaml`:
+
+| PocketBase field | Old | New | Justification |
+|---|---|---|---|
+| `repository_archived` | `false` | `true` | Exact GitHub API/archive evidence for retained historical repo URL |
+| `verified_on` | `2026-08-21` | `2026-10-26` | Fresh upstream migration and archive observation |
+| `sources` | prior list | prior list **plus** [maintainer migration commit](https://github.com/pocketbase/pocketbase/commit/7f2773ec234b62d0b80ca47c508397cb3d0da3ea) | Preserve all historical primary evidence |
+| `avoid_when` | prior list | prior list **plus** migration/provenance caution | Do not confuse archived GitHub repository with inactive product |
+
+Protected fields `status: active`, `needs_review: false`, `license_model: oss`,
+`license_spdx: MIT`, existing repository and official/docs URLs, canonical ID,
+roles/categories/lifecycle and all other records are unchanged. The new
+`repository_archived: true` refers to the **historical GitHub repo only**.
+
+Generate official docs and rerun full local QA, confirm independent 1/remaining
+canonical field-level diff, request new Codex review, verify seven CI checks,
+then manually dispatch a fresh Full link audit at the updated **final PR SHA**.
+Do not add the new blocker to the six-entry historical baseline or bypass the
+required strict audit gate. Previous link audit #42 remains failed in history.
