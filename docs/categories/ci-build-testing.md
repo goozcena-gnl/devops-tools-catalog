@@ -874,7 +874,7 @@ Testing framework for Java and other JVM languages.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Load testing tool for performance testing.
+Open-source JavaScript-based load testing CLI with HTTP, WebSocket, gRPC and browser test capabilities; Grafana Cloud k6 is a separate service.
 
 **Use when**
 
@@ -883,6 +883,8 @@ Load testing tool for performance testing.
 **Consider alternatives when**
 
 - You need a GUI-based test builder or non-HTTP protocol support without extensions.
+- You assume Grafana Cloud k6 has the same AGPL licence as the standalone CLI.
+- You require a single unambiguous latest stable line or exact AGPL-3.0-only versus -or-later grant without additional licence research.
 
 [Official site](https://k6.io) · [Source repository](https://github.com/grafana/k6)
 
@@ -1084,9 +1086,9 @@ Public collaborative infrastructure service providing Git hosting, code review, 
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-End-to-end testing for web apps.
+Cross-browser web test runner and browser automation framework supporting Chromium, Firefox and WebKit.
 
 **Use when**
 
@@ -1095,6 +1097,7 @@ End-to-end testing for web apps.
 **Consider alternatives when**
 
 - Your team is already productive with Cypress and doesn't need the extra browser coverage.
+- You assume browser binaries and external OS dependencies share the test runner Apache-2.0 source licence or do not need CI version pinning.
 
 [Official site](https://playwright.dev) · [Source repository](https://github.com/microsoft/playwright)
 
@@ -1160,9 +1163,9 @@ Static code checker and formatter for PowerShell scripts and modules.
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Python testing framework.
+Python test runner with fixtures, parametrization and an extensible plugin ecosystem.
 
 **Use when**
 
@@ -1171,6 +1174,7 @@ Python testing framework.
 **Consider alternatives when**
 
 - Only if you're in a non-Python stack.
+- You require a cross-language test runner or need support for Python versions below the upstream pytest 9.1.1 minimum of 3.10.
 
 [Official site](https://docs.pytest.org/en/stable) · [Source repository](https://github.com/pytest-dev/pytest)
 
@@ -1179,17 +1183,17 @@ Python testing framework.
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Pytest plugin for coverage reporting, including support for distributed test runs.
+pytest plugin for measuring Python test coverage through coverage.py, including optional distributed-test integration.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want reproducible Python coverage reports as part of pytest in CI.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a standalone test runner or cannot meet pytest-cov v7.1.0 dependencies including coverage.py 7.10.6 or newer.
 
 [Source repository](https://github.com/pytest-dev/pytest-cov)
 
@@ -1293,9 +1297,9 @@ Property-based API testing tool that generates cases from OpenAPI and GraphQL sc
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Browser automation for testing web applications.
+Browser WebDriver automation and Selenium Grid ecosystem for cross-browser application testing.
 
 **Use when**
 
@@ -1304,6 +1308,7 @@ Browser automation for testing web applications.
 **Consider alternatives when**
 
 - For new greenfield projects where Playwright or Cypress offer better DX out of the box.
+- You cannot isolate and secure Selenium Grid endpoints or coordinate the browser and driver versions used by CI.
 
 [Official site](https://www.selenium.dev) · [Source repository](https://github.com/SeleniumHQ/selenium)
 
@@ -1312,9 +1317,9 @@ Browser automation for testing web applications.
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Enforce semantic PR titles in GitHub Actions.
+GitHub Action validating pull request titles against Conventional Commits naming conventions.
 
 **Use when**
 
@@ -1323,6 +1328,7 @@ Enforce semantic PR titles in GitHub Actions.
 **Consider alternatives when**
 
 - You use per-commit linting (commitlint) and don't squash.
+- You need application code scanning rather than PR title linting or would run untrusted PR code with privileged pull_request_target access.
 
 [Source repository](https://github.com/amannn/action-semantic-pull-request)
 
@@ -1351,9 +1357,9 @@ Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Communi
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Test server configurations using RSpec.
+Ruby/RSpec-based server-state assertions for installed packages, services, ports and configuration.
 
 **Use when**
 
@@ -1362,6 +1368,7 @@ Test server configurations using RSpec.
 **Consider alternatives when**
 
 - You prefer a language-agnostic approach (consider InSpec or Goss).
+- You require a commercial maintenance SLA or cannot secure Ruby execution and SSH or other remote test access.
 
 [Official site](https://serverspec.org) · [Source repository](https://github.com/mizzy/serverspec)
 
@@ -1427,9 +1434,9 @@ Tekton controller that records, signs, and stores supply-chain metadata for pipe
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Test infrastructure code on various platforms.
+Ruby integration testing framework that provisions and verifies infrastructure code on isolated test targets.
 
 **Use when**
 
@@ -1438,6 +1445,7 @@ Test infrastructure code on various platforms.
 **Consider alternatives when**
 
 - Your IaC tooling (Terraform, Ansible) has its own mature testing story.
+- You cannot isolate test drivers, virtualization or cloud credentials; their dependencies and images carry separate licences.
 
 [Official site](https://kitchen.ci) · [Source repository](https://github.com/test-kitchen/test-kitchen)
 
@@ -1448,7 +1456,7 @@ Test infrastructure code on various platforms.
 **Model:** Open Core<br>
 **Status:** Needs Review
 
-Libraries for integration tests using disposable containers; OSS core with paid cloud add-ons.
+Multi-language libraries for integration testing with disposable containers; language libraries and paid cloud offerings have separate licences.
 
 **Use when**
 
@@ -1457,6 +1465,8 @@ Libraries for integration tests using disposable containers; OSS core with paid 
 **Consider alternatives when**
 
 - Your CI runners can't run Docker (rootless or DinD) or tests are purely unit-level.
+- You assume one licence covers every Testcontainers language library and commercial service.
+- Your CI cannot safely run a supported container runtime or isolate privileged containers and external resources.
 
 [Official site](https://github.com/testcontainers)
 
@@ -1598,9 +1608,9 @@ GitHub Action that validates `dependabot.yml` against the official Dependabot sc
 **Categories:** CI, build and testing<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Blazing fast Vite-native unit testing framework.
+Vite-native JavaScript and TypeScript test runner with component, watch and optional browser testing modes.
 
 **Use when**
 
@@ -1609,6 +1619,7 @@ Blazing fast Vite-native unit testing framework.
 **Consider alternatives when**
 
 - You're not in the Vite ecosystem and Jest works fine.
+- You cannot satisfy the Node and Vite compatibility requirements or plan to use v5.1 prereleases as stable versions.
 
 [Official site](https://vitest.dev) · [Source repository](https://github.com/vitest-dev/vitest)
 

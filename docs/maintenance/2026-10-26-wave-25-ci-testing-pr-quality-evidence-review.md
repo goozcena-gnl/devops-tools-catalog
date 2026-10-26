@@ -84,3 +84,211 @@ Bounded changes, conditional on a clean local check of the pinned branch:
 Use the verified local PowerShell/Python 3.12 environment only after a clean checkout of this PR head. Run official generator then `generate_docs --check`, `validate_catalog`, `ruff check scripts tests`, `ruff format --check scripts tests`, full `pytest -q`, `pip check`, `git diff --check`; CI `python_constraints --verify-locked` on Linux must pass. Windows extra `colorama` remains a local-environment observation, never a reason to update repository lockfiles. Before commit, check **exactly 10** changed YAML records, unchanged other 70, preserved source list and taxonomy, and only documented official generated views. The first-pass PR CI cannot substitute for final generated-doc QA.
 
 After actual application, **append an observed field-by-field before/after log and verified command results here**; do not leave unperformed QA described as successful or a projected inventory presented as achieved. Then rerun all PR CI, obtain **completed independent Codex/human P1/P2 review on exact final SHA**, fresh manually triggered strict Full link audit with `blocking_new: 0`, `strict_result: PASS`, unchanged six known baseline exceptions. Maintain Draft/strict human merge boundary; [issue #141](https://github.com/goozcena-gnl/devops-tools-catalog/issues/141) stays OPEN and [issue #2](https://github.com/goozcena-gnl/devops-tools-catalog/issues/2) stays OPEN.
+
+<!-- WAVE25_APPLIED_CANONICAL_CHANGELOG_START -->
+## Local canonical application — Wave 25 field-level evidence log
+
+**Status:** Canonical changes applied locally, official regeneration/QA and fresh PR CI pending until actually observed. The first-pass and second-pass recommendations above are historical checkpoints.
+
+**Decisions applied to local canonical records:** 8 CLEAR / 2 RETAIN REVIEW. The catalogue-level expected inventory after official generation is 1,425 canonical, 800 active, 611 needs-review, subject to generator and CI validation.
+
+| Decision | IDs |
+|---|---|
+| CLEAR | `playwright`, `pytest`, `pytest-cov`, `selenium`, `semantic-pull-request-github-action`, `serverspec`, `test-kitchen`, `vitest` |
+| RETAIN REVIEW | `k6`, `testcontainers` |
+
+All 70 non-cohort YAML records are unchanged byte-for-byte after line-ending normalization; original historical sources, taxonomy, role and lifecycle fields are preserved. No constraints or URL audit baseline update is authorized.
+
+### `k6` — RETAIN REVIEW
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["You need a GUI-based test builder or non-HTTP protocol support without extensions."]</code> | <code>["You need a GUI-based test builder or non-HTTP protocol support without extensions.", "You assume Grafana Cloud k6 has the same AGPL licence as the standalone CLI.", "You require a single unambiguous latest stable line or exact AGPL-3.0-only versus -or-later grant without additional licence research."]</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L12", "legacy:devopstools_final.md#L1034"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L12", "legacy:devopstools_final.md#L1034", "https://github.com/grafana/k6/blob/v1.8.2/LICENSE.md", "https://github.com/grafana/k6/blob/v2.3.0/LICENSE.md", "https://github.com/grafana/k6/blob/v2.3.0/README.md", "https://github.com/grafana/k6/releases/tag/v2.3.0", "https://github.com/grafana/k6/releases/tag/v1.8.2"]</code> |
+| `summary` | <code>"Load testing tool for performance testing."</code> | <code>"Open-source JavaScript-based load testing CLI with HTTP, WebSocket, gRPC and browser test capabilities; Grafana Cloud k6 is a separate service."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/grafana/k6/blob/v1.8.2/LICENSE.md
+- https://github.com/grafana/k6/blob/v2.3.0/LICENSE.md
+- https://github.com/grafana/k6/blob/v2.3.0/README.md
+- https://github.com/grafana/k6/releases/tag/v2.3.0
+- https://github.com/grafana/k6/releases/tag/v1.8.2
+
+
+### `playwright` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Your team is already productive with Cypress and doesn't need the extra browser coverage."]</code> | <code>["Your team is already productive with Cypress and doesn't need the extra browser coverage.", "You assume browser binaries and external OS dependencies share the test runner Apache-2.0 source licence or do not need CI version pinning."]</code> |
+| `license_spdx` | <code>null</code> | <code>"Apache-2.0"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L14", "legacy:devopstools_final.md#L1036"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L14", "legacy:devopstools_final.md#L1036", "https://github.com/microsoft/playwright/blob/v1.64.1/LICENSE", "https://github.com/microsoft/playwright/releases/tag/v1.64.1", "https://playwright.dev/docs/intro"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"End-to-end testing for web apps."</code> | <code>"Cross-browser web test runner and browser automation framework supporting Chromium, Firefox and WebKit."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/microsoft/playwright/blob/v1.64.1/LICENSE
+- https://github.com/microsoft/playwright/releases/tag/v1.64.1
+- https://playwright.dev/docs/intro
+
+
+### `pytest` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Only if you're in a non-Python stack."]</code> | <code>["Only if you're in a non-Python stack.", "You require a cross-language test runner or need support for Python versions below the upstream pytest 9.1.1 minimum of 3.10."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L15", "legacy:devopstools_final.md#L1037"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L15", "legacy:devopstools_final.md#L1037", "https://github.com/pytest-dev/pytest/blob/9.1.1/LICENSE", "https://github.com/pytest-dev/pytest/blob/9.1.1/pyproject.toml", "https://github.com/pytest-dev/pytest/releases/tag/9.1.1"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Python testing framework."</code> | <code>"Python test runner with fixtures, parametrization and an extensible plugin ecosystem."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/pytest-dev/pytest/blob/9.1.1/LICENSE
+- https://github.com/pytest-dev/pytest/blob/9.1.1/pyproject.toml
+- https://github.com/pytest-dev/pytest/releases/tag/9.1.1
+
+
+### `pytest-cov` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>[]</code> | <code>["You need a standalone test runner or cannot meet pytest-cov v7.1.0 dependencies including coverage.py 7.10.6 or newer."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:devopstools_final.md#L1038"]</code> | <code>["legacy:devopstools_final.md#L1038", "https://github.com/pytest-dev/pytest-cov/blob/v7.1.0/LICENSE", "https://github.com/pytest-dev/pytest-cov/blob/v7.1.0/pyproject.toml", "https://github.com/pytest-dev/pytest-cov/blob/v7.1.0/README.rst", "https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Pytest plugin for coverage reporting, including support for distributed test runs."</code> | <code>"pytest plugin for measuring Python test coverage through coverage.py, including optional distributed-test integration."</code> |
+| `use_when` | <code>[]</code> | <code>["You want reproducible Python coverage reports as part of pytest in CI."]</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/pytest-dev/pytest-cov/blob/v7.1.0/LICENSE
+- https://github.com/pytest-dev/pytest-cov/blob/v7.1.0/pyproject.toml
+- https://github.com/pytest-dev/pytest-cov/blob/v7.1.0/README.rst
+- https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst
+
+
+### `selenium` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["For new greenfield projects where Playwright or Cypress offer better DX out of the box."]</code> | <code>["For new greenfield projects where Playwright or Cypress offer better DX out of the box.", "You cannot isolate and secure Selenium Grid endpoints or coordinate the browser and driver versions used by CI."]</code> |
+| `license_spdx` | <code>null</code> | <code>"Apache-2.0"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L16", "legacy:devopstools_final.md#L1039"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L16", "legacy:devopstools_final.md#L1039", "https://github.com/SeleniumHQ/selenium/blob/selenium-4.51.0/LICENSE", "https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.51.0", "https://www.selenium.dev/documentation/"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Browser automation for testing web applications."</code> | <code>"Browser WebDriver automation and Selenium Grid ecosystem for cross-browser application testing."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/SeleniumHQ/selenium/blob/selenium-4.51.0/LICENSE
+- https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.51.0
+- https://www.selenium.dev/documentation/
+
+
+### `semantic-pull-request-github-action` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["You use per-commit linting (commitlint) and don't squash."]</code> | <code>["You use per-commit linting (commitlint) and don't squash.", "You need application code scanning rather than PR title linting or would run untrusted PR code with privileged pull_request_target access."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L61", "legacy:devopstools_final.md#L1098"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L61", "legacy:devopstools_final.md#L1098", "https://github.com/amannn/action-semantic-pull-request/blob/v6.1.1/LICENSE", "https://github.com/amannn/action-semantic-pull-request/blob/v6.1.1/README.md", "https://github.com/amannn/action-semantic-pull-request/blob/v6.1.1/action.yml", "https://github.com/amannn/action-semantic-pull-request/releases/tag/v6.1.1"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Enforce semantic PR titles in GitHub Actions."</code> | <code>"GitHub Action validating pull request titles against Conventional Commits naming conventions."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/amannn/action-semantic-pull-request/blob/v6.1.1/LICENSE
+- https://github.com/amannn/action-semantic-pull-request/blob/v6.1.1/README.md
+- https://github.com/amannn/action-semantic-pull-request/blob/v6.1.1/action.yml
+- https://github.com/amannn/action-semantic-pull-request/releases/tag/v6.1.1
+
+
+### `serverspec` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["You prefer a language-agnostic approach (consider InSpec or Goss)."]</code> | <code>["You prefer a language-agnostic approach (consider InSpec or Goss).", "You require a commercial maintenance SLA or cannot secure Ruby execution and SSH or other remote test access."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L17", "legacy:devopstools_final.md#L1040"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L17", "legacy:devopstools_final.md#L1040", "https://github.com/mizzy/serverspec/blob/v2.43.0/LICENSE.txt", "https://github.com/mizzy/serverspec/blob/v2.43.0/README.md", "https://github.com/mizzy/serverspec/releases/tag/v2.43.0"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Test server configurations using RSpec."</code> | <code>"Ruby/RSpec-based server-state assertions for installed packages, services, ports and configuration."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/mizzy/serverspec/blob/v2.43.0/LICENSE.txt
+- https://github.com/mizzy/serverspec/blob/v2.43.0/README.md
+- https://github.com/mizzy/serverspec/releases/tag/v2.43.0
+
+
+### `test-kitchen` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Your IaC tooling (Terraform, Ansible) has its own mature testing story."]</code> | <code>["Your IaC tooling (Terraform, Ansible) has its own mature testing story.", "You cannot isolate test drivers, virtualization or cloud credentials; their dependencies and images carry separate licences."]</code> |
+| `license_spdx` | <code>null</code> | <code>"Apache-2.0"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L18", "legacy:devopstools_final.md#L1041"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L18", "legacy:devopstools_final.md#L1041", "https://github.com/test-kitchen/test-kitchen/blob/v4.1.5/LICENSE", "https://github.com/test-kitchen/test-kitchen/blob/v4.1.5/README.md", "https://github.com/test-kitchen/test-kitchen/releases/tag/v4.1.5"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Test infrastructure code on various platforms."</code> | <code>"Ruby integration testing framework that provisions and verifies infrastructure code on isolated test targets."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/test-kitchen/test-kitchen/blob/v4.1.5/LICENSE
+- https://github.com/test-kitchen/test-kitchen/blob/v4.1.5/README.md
+- https://github.com/test-kitchen/test-kitchen/releases/tag/v4.1.5
+
+
+### `testcontainers` — RETAIN REVIEW
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Your CI runners can't run Docker (rootless or DinD) or tests are purely unit-level."]</code> | <code>["Your CI runners can't run Docker (rootless or DinD) or tests are purely unit-level.", "You assume one licence covers every Testcontainers language library and commercial service.", "Your CI cannot safely run a supported container runtime or isolate privileged containers and external resources."]</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L19", "legacy:devopstools_final.md#L1043"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L19", "legacy:devopstools_final.md#L1043", "https://github.com/testcontainers/testcontainers-java/blob/2.0.5/LICENSE", "https://github.com/testcontainers/testcontainers-go/blob/main/LICENSE", "https://github.com/testcontainers/testcontainers-node/blob/main/LICENSE", "https://github.com/testcontainers/testcontainers-python/blob/main/LICENSE.txt", "https://github.com/testcontainers/testcontainers-python/blob/main/pyproject.toml"]</code> |
+| `summary` | <code>"Libraries for integration tests using disposable containers; OSS core with paid cloud add-ons."</code> | <code>"Multi-language libraries for integration testing with disposable containers; language libraries and paid cloud offerings have separate licences."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/testcontainers/testcontainers-java/blob/2.0.5/LICENSE
+- https://github.com/testcontainers/testcontainers-go/blob/main/LICENSE
+- https://github.com/testcontainers/testcontainers-node/blob/main/LICENSE
+- https://github.com/testcontainers/testcontainers-python/blob/main/LICENSE.txt
+- https://github.com/testcontainers/testcontainers-python/blob/main/pyproject.toml
+
+
+### `vitest` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["You're not in the Vite ecosystem and Jest works fine."]</code> | <code>["You're not in the Vite ecosystem and Jest works fine.", "You cannot satisfy the Node and Vite compatibility requirements or plan to use v5.1 prereleases as stable versions."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L23", "legacy:devopstools_final.md#L1047"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L23", "legacy:devopstools_final.md#L1047", "https://github.com/vitest-dev/vitest/blob/v5.0.5/LICENSE", "https://github.com/vitest-dev/vitest/blob/v5.0.5/package.json", "https://github.com/vitest-dev/vitest/releases/tag/v5.0.5"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Blazing fast Vite-native unit testing framework."</code> | <code>"Vite-native JavaScript and TypeScript test runner with component, watch and optional browser testing modes."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/vitest-dev/vitest/blob/v5.0.5/LICENSE
+- https://github.com/vitest-dev/vitest/blob/v5.0.5/package.json
+- https://github.com/vitest-dev/vitest/releases/tag/v5.0.5
+
+
+**Publication checkpoint:** This local change log is not itself evidence of test/CI completion. After the official local generator and full QA pass, review the final diff, push through an explicit human-authorized commit, obtain fresh PR CI + independent P1/P2 review and a new strict full URL audit on the exact final SHA before a human merge decision.
+<!-- WAVE25_APPLIED_CANONICAL_CHANGELOG_END -->

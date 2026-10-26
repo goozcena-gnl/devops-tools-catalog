@@ -502,7 +502,7 @@
 | [Piku](https://piku.github.io) | CD, GitOps, release and promotion | oss | active |
 | [Plane](https://plane.so) | Workflow automation and ChatOps | oss | needs-review |
 | [Play with Docker](https://labs.play-with-docker.com) | Developer experience and local environments | documentation | needs-review |
-| [Playwright](https://playwright.dev) | CI, build and testing | oss | needs-review |
+| [Playwright](https://playwright.dev) | CI, build and testing | oss | active |
 | [Plumber](https://getplumber.io) | Software supply-chain security, CI, build and testing | oss | active |
 | [Pluralith](https://www.pluralith.com) | Infrastructure as Code | unknown | needs-review |
 | [PocketBase](https://pocketbase.io/) | Databases, caching and data infrastructure | oss | active |
@@ -527,8 +527,8 @@
 | [Pumba](https://github.com/alexei-led/pumba) | Chaos and performance engineering | oss | active |
 | [Puppet](https://puppet.com) | Configuration management | open-core | needs-review |
 | [PyCharm](https://www.jetbrains.com/pycharm) | Developer experience and local environments | unknown | needs-review |
-| [pytest](https://docs.pytest.org/en/stable) | CI, build and testing | oss | needs-review |
-| [pytest-cov](https://github.com/pytest-dev/pytest-cov) | CI, build and testing | oss | needs-review |
+| [pytest](https://docs.pytest.org/en/stable) | CI, build and testing | oss | active |
+| [pytest-cov](https://github.com/pytest-dev/pytest-cov) | CI, build and testing | oss | active |
 | [Python](https://www.python.org/) | Foundations, Linux and scripting | oss | active |
 | [Python Official Tutorial](https://docs.python.org/3/tutorial) | Foundations, Linux and scripting | documentation | needs-review |
 | [QEMU](https://www.qemu.org/) | Virtualization, bare metal and homelab | oss | active |
@@ -577,14 +577,14 @@
 | [SearXNG](https://docs.searxng.org) | Emerging and experimental tools | oss | needs-review |
 | [SeaweedFS](https://seaweedfs.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Seesaw](https://github.com/google/seesaw) | Foundations, Linux and scripting | oss | active |
-| [Selenium](https://www.selenium.dev) | CI, build and testing | oss | needs-review |
+| [Selenium](https://www.selenium.dev) | CI, build and testing | oss | active |
 | [selfh.st](https://selfh.st/) | Documentation, learning and career resources | documentation | active |
-| [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | needs-review |
+| [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | active |
 | [Semaphore CI](https://semaphore.io/) | CI, build and testing | open-core | active |
 | [Sematext](https://sematext.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Sensu](https://sensu.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
 | [Sentry](https://sentry.io/welcome) | Monitoring, metrics, logs and tracing | source-available | active |
-| [ServerSpec](https://serverspec.org) | CI, build and testing | oss | needs-review |
+| [ServerSpec](https://serverspec.org) | CI, build and testing | oss | active |
 | [Shannon](https://github.com/KeygraphHQ/shannon) | Emerging and experimental tools | open-core | needs-review |
 | [ShellCheck](https://www.shellcheck.net) | Foundations, Linux and scripting | oss | needs-review |
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | needs-review |
@@ -638,7 +638,7 @@
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | active |
 | [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
 | [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
-| [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | needs-review |
+| [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | active |
 | [Testcontainers](https://github.com/testcontainers) | CI, build and testing | open-core | needs-review |
 | [Testkube](https://testkube.io) | CI, build and testing | open-core | active |
 | [TestRail](https://www.gurock.com/testrail) | CI, build and testing | unknown | needs-review |
@@ -675,7 +675,7 @@
 | [Ventoy](https://www.ventoy.net/) | Virtualization, bare metal and homelab | oss | active |
 | [VictoriaMetrics](https://victoriametrics.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [Virtana](https://www.virtana.com) | Cloud platforms and cloud management | unknown | needs-review |
-| [Vitest](https://vitest.dev) | CI, build and testing | oss | needs-review |
+| [Vitest](https://vitest.dev) | CI, build and testing | oss | active |
 | [Volare](https://github.com/AdamShannag/volare) | Virtualization, bare metal and homelab | oss | needs-review |
 | [VSCode](https://code.visualstudio.com) | Developer experience and local environments | oss | needs-review |
 | [VSCodium](https://vscodium.com) | Developer experience and local environments | oss | needs-review |

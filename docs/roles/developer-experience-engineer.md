@@ -164,15 +164,15 @@
 | [Paseo](https://paseo.sh/) | Developer experience and local environments | oss | active |
 | [Plane](https://plane.so) | Workflow automation and ChatOps | oss | needs-review |
 | [Play with Docker](https://labs.play-with-docker.com) | Developer experience and local environments | documentation | needs-review |
-| [Playwright](https://playwright.dev) | CI, build and testing | oss | needs-review |
+| [Playwright](https://playwright.dev) | CI, build and testing | oss | active |
 | [Port](https://www.port.io/) | Platform engineering and internal developer platforms | commercial | active |
 | [Postman](https://www.postman.com/product/) | Developer experience and local environments | commercial | active |
 | [Prettier](https://prettier.io) | Developer experience and local environments | oss | needs-review |
 | [Probot DCO](https://probot.github.io/apps/dco) | CI, build and testing | oss | needs-review |
 | [PSScriptAnalyzer](https://www.powershellgallery.com/packages/PSScriptAnalyzer/) | Developer experience and local environments, CI, build and testing | oss | active |
 | [PyCharm](https://www.jetbrains.com/pycharm) | Developer experience and local environments | unknown | needs-review |
-| [pytest](https://docs.pytest.org/en/stable) | CI, build and testing | oss | needs-review |
-| [pytest-cov](https://github.com/pytest-dev/pytest-cov) | CI, build and testing | oss | needs-review |
+| [pytest](https://docs.pytest.org/en/stable) | CI, build and testing | oss | active |
+| [pytest-cov](https://github.com/pytest-dev/pytest-cov) | CI, build and testing | oss | active |
 | [QuantumByte](https://github.com/QuantumByteOSS/quantumbyte) | Developer experience and local environments | oss | needs-review |
 | [Railway](https://railway.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | commercial | active |
 | [RamaLama](https://ramalama.ai) | Developer experience and local environments | oss | needs-review |
@@ -185,10 +185,10 @@
 | [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) | CI, build and testing | unknown | needs-review |
 | [Schemathesis](https://schemathesis.readthedocs.io/en/stable/) | CI, build and testing | oss | active |
 | [Scrapling](https://scrapling.readthedocs.io/en/latest) | Developer experience and local environments | oss | needs-review |
-| [Selenium](https://www.selenium.dev) | CI, build and testing | oss | needs-review |
-| [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | needs-review |
+| [Selenium](https://www.selenium.dev) | CI, build and testing | oss | active |
+| [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | active |
 | [Semaphore CI](https://semaphore.io/) | CI, build and testing | open-core | active |
-| [ServerSpec](https://serverspec.org) | CI, build and testing | oss | needs-review |
+| [ServerSpec](https://serverspec.org) | CI, build and testing | oss | active |
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | needs-review |
 | [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
 | [Slack](https://slack.com/) | Workflow automation and ChatOps | commercial | active |
@@ -205,7 +205,7 @@
 | [Termic](https://termic.dev/) | Developer experience and local environments | oss | active |
 | [terminal-browser](https://terminal-browser.com/) | Developer experience and local environments | oss | active |
 | [Termix](https://termix.site/) | Developer experience and local environments | oss | active |
-| [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | needs-review |
+| [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | active |
 | [Testcontainers](https://github.com/testcontainers) | CI, build and testing | open-core | needs-review |
 | [Testkube](https://testkube.io) | CI, build and testing | open-core | active |
 | [TestRail](https://www.gurock.com/testrail) | CI, build and testing | unknown | needs-review |
@@ -216,7 +216,7 @@
 | [Understand Anything](https://understand-anything.com) | Developer experience and local environments | unknown | needs-review |
 | [validate-dependabot](https://github.com/marocchino/validate-dependabot) | CI, build and testing | oss | needs-review |
 | [Vercel](https://vercel.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion, Serverless, edge and WebAssembly | commercial | active |
-| [Vitest](https://vitest.dev) | CI, build and testing | oss | needs-review |
+| [Vitest](https://vitest.dev) | CI, build and testing | oss | active |
 | [VSCode](https://code.visualstudio.com) | Developer experience and local environments | oss | needs-review |
 | [VSCodium](https://vscodium.com) | Developer experience and local environments | oss | needs-review |
 | [Watchexec](https://watchexec.github.io/) | Developer experience and local environments | oss | active |
