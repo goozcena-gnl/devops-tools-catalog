@@ -163,6 +163,22 @@ WAVE23_APPROVED_CURRENT_STATE_VALUES: dict[tuple[str, str], str | bool] = {
     ("kubechecks", "needs_review"): False,
 }
 
+
+# Wave 27: Black's primary-source MIT licence was independently verified at
+# the immutable 26.10.1 tag, after the N1a historical checkpoint.
+# https://github.com/psf/black/blob/26.10.1/LICENSE
+# https://github.com/psf/black/blob/26.10.1/pyproject.toml
+# Only these 3 later approved values supersede the N1a *current-state* guard;
+# the pinned N1a historical result and Black's URLs remain protected.
+WAVE27_BLACK_APPROVED_CURRENT_STATE_VALUES: dict[tuple[str, str], str | bool] = {
+    ("black", "license_spdx"): "MIT",
+    ("black", "status"): "active",
+    ("black", "needs_review"): False,
+}
+WAVE27_BLACK_CURRENT_STATE_SUPERSESSIONS = set(
+    WAVE27_BLACK_APPROVED_CURRENT_STATE_VALUES
+)
+
 REQUIRED_LEDGER_COLUMNS = {
     "tool_id",
     "affected_field",
@@ -332,7 +348,9 @@ def _assert_current_n1a_persistence(
         accepted_record = accepted[tool_id][1]
         for field in FORBIDDEN_SELECTED_FIELDS:
             if (tool_id, field) in (
-                N1A_CURRENT_STATE_SUPERSESSIONS | WAVE23_CURRENT_STATE_SUPERSESSIONS
+                N1A_CURRENT_STATE_SUPERSESSIONS
+                | WAVE23_CURRENT_STATE_SUPERSESSIONS
+                | WAVE27_BLACK_CURRENT_STATE_SUPERSESSIONS
             ):
                 continue
             assert current_record.get(field) == accepted_record.get(field), (
@@ -478,6 +496,48 @@ def test_wave17_helmfile_supersession_is_bounded() -> None:
     assert current["license_model"] == accepted["license_model"] == "oss"
     assert current["repository_url"] == accepted["repository_url"]
     assert current["official_url"] == accepted["official_url"]
+
+
+def test_wave27_black_current_state_is_exact_and_evidence_scoped() -> None:
+    expected = {
+        ("black", "license_spdx"): "MIT",
+        ("black", "status"): "active",
+        ("black", "needs_review"): False,
+    }
+    assert expected == WAVE27_BLACK_APPROVED_CURRENT_STATE_VALUES
+    assert set(expected) == WAVE27_BLACK_CURRENT_STATE_SUPERSESSIONS
+    assert not (
+        WAVE27_BLACK_CURRENT_STATE_SUPERSESSIONS
+        & (N1A_CURRENT_STATE_SUPERSESSIONS | WAVE23_CURRENT_STATE_SUPERSESSIONS)
+    )
+    assert {field for _, field in expected} <= FORBIDDEN_SELECTED_FIELDS
+
+    # Do not alter or reinterpret the immutable original N1a acceptance.
+    old_black = _records_at(N1A_RESULT_SHA)["black"][1]
+    assert old_black.get("license_spdx") is None
+    assert old_black["status"] == "needs-review"
+    assert old_black["needs_review"] is True
+
+    current = _current_records()
+    current_black = current["black"][1]
+    for (tool_id, field), approved in expected.items():
+        assert tool_id == "black"
+        assert current_black.get(field) == approved, (
+            f"Wave 27 approved Black field drifted: {field}"
+        )
+
+    # Original N1a URL/repository and unrelated guards must remain enforced.
+    approved = _records_at(N1A_RESULT_SHA)
+    candidate = deepcopy(current)
+    candidate["black"][1]["repository_url"] = (
+        "https://example.invalid/not-an-approved-source"
+    )
+    try:
+        _assert_current_n1a_persistence(candidate, approved)
+    except AssertionError as exc:
+        assert "('black', 'repository_url')" in str(exc)
+    else:
+        raise AssertionError("Wave 27 must not weaken the N1a Black repository guard")
 
 
 def test_n1a_unrelated_future_canonical_change_does_not_invalidate_history() -> None:

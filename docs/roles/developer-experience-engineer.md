@@ -5,7 +5,7 @@
 
 | Tool | Categories | Model | Status |
 |---|---|---|---|
-| [actionlint](https://rhysd.github.io/actionlint) | Developer experience and local environments | oss | needs-review |
+| [actionlint](https://rhysd.github.io/actionlint) | Developer experience and local environments | oss | active |
 | [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [Addy Osmani Agent Skills](https://skills.addy.ie/) | Developer experience and local environments | oss | active |
 | [AFFiNE](https://affine.pro/) | Documentation, learning and career resources | open-core | active |
@@ -30,7 +30,7 @@
 | [Bitbucket](https://www.atlassian.com/software/bitbucket) | Source control and repository management | commercial | active |
 | [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) | CI, build and testing | commercial | active |
 | [Bitrise](https://bitrise.io) | CI, build and testing | commercial | active |
-| [Black](https://black.readthedocs.io) | Developer experience and local environments | oss | needs-review |
+| [Black](https://black.readthedocs.io) | Developer experience and local environments | oss | active |
 | [Bottles](https://usebottles.com) | Developer experience and local environments | oss | needs-review |
 | [BrowserStack App Automate](https://www.browserstack.com/app-automate) | CI, build and testing | commercial | active |
 | [Buddy](https://buddy.works) | CI, build and testing | commercial | active |
@@ -77,7 +77,7 @@
 | [Dokploy](https://dokploy.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | open-core | active |
 | [drawDB](https://www.drawdb.app) | Developer experience and local environments | oss | needs-review |
 | [Drone](https://www.drone.io) | CI, build and testing | open-core | active |
-| [ESLint](https://eslint.org) | Developer experience and local environments | oss | needs-review |
+| [ESLint](https://eslint.org) | Developer experience and local environments | oss | active |
 | [Feint](https://github.com/stephrobert/feint) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
 | [Firebase Test Lab](https://firebase.google.com/products/test-lab) | CI, build and testing | commercial | active |
 | [FitNesse](https://fitnesse.org) | CI, build and testing | oss | active |
@@ -141,7 +141,7 @@
 | [micro](https://micro-editor.github.io) | Developer experience and local environments | oss | needs-review |
 | [mise](https://mise.jdx.dev/) | Developer experience and local environments | oss | active |
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
-| [mypy](https://mypy-lang.org) | Developer experience and local environments | oss | needs-review |
+| [mypy](https://mypy-lang.org) | Developer experience and local environments | oss | active |
 | [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | needs-review |
 | [Nektos Act](https://nektosact.com) | CI, build and testing | oss | active |
 | [Neovim](https://neovim.io/) | Developer experience and local environments | oss | active |
@@ -167,7 +167,7 @@
 | [Playwright](https://playwright.dev) | CI, build and testing | oss | active |
 | [Port](https://www.port.io/) | Platform engineering and internal developer platforms | commercial | active |
 | [Postman](https://www.postman.com/product/) | Developer experience and local environments | commercial | active |
-| [Prettier](https://prettier.io) | Developer experience and local environments | oss | needs-review |
+| [Prettier](https://prettier.io) | Developer experience and local environments | oss | active |
 | [Probot DCO](https://probot.github.io/apps/dco) | CI, build and testing | oss | needs-review |
 | [PSScriptAnalyzer](https://www.powershellgallery.com/packages/PSScriptAnalyzer/) | Developer experience and local environments, CI, build and testing | oss | active |
 | [PyCharm](https://www.jetbrains.com/pycharm) | Developer experience and local environments | unknown | needs-review |
@@ -180,7 +180,7 @@
 | [Renovate](https://www.mend.io/renovate) | Developer experience and local environments, Software supply-chain security | oss | active |
 | [Review Flow](https://dgouron.github.io/review-flow) | CI, build and testing | oss | needs-review |
 | [RTK AI](https://www.rtk-ai.app) | Developer experience and local environments | unknown | needs-review |
-| [Ruff](https://docs.astral.sh/ruff) | Developer experience and local environments | oss | needs-review |
+| [Ruff](https://docs.astral.sh/ruff) | Developer experience and local environments | oss | active |
 | [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | needs-review |
 | [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) | CI, build and testing | unknown | needs-review |
 | [Schemathesis](https://schemathesis.readthedocs.io/en/stable/) | CI, build and testing | oss | active |
@@ -189,7 +189,7 @@
 | [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | active |
 | [Semaphore CI](https://semaphore.io/) | CI, build and testing | open-core | active |
 | [ServerSpec](https://serverspec.org) | CI, build and testing | oss | active |
-| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | needs-review |
+| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | active |
 | [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
 | [Slack](https://slack.com/) | Workflow automation and ChatOps | commercial | active |
 | [Spec Kit](https://github.com/github/spec-kit) | Developer experience and local environments | oss | needs-review |
@@ -230,7 +230,7 @@
 | [Wine](https://www.winehq.org) | Developer experience and local environments | oss | needs-review |
 | [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | active |
 | [Xray](https://www.getxray.app) | CI, build and testing | unknown | needs-review |
-| [yamllint](https://github.com/adrienverge/yamllint) | Developer experience and local environments | oss | needs-review |
+| [yamllint](https://github.com/adrienverge/yamllint) | Developer experience and local environments | oss | active |
 | [Yazi](https://yazi-rs.github.io) | Developer experience and local environments | oss | needs-review |
 | [Zed](https://zed.dev/) | Developer experience and local environments | oss | active |
 | [Zellij](https://zellij.dev/) | Developer experience and local environments | oss | active |

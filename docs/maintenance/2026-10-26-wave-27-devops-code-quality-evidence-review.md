@@ -72,3 +72,227 @@ Selection frozen and evidence leads documented. **0/10 cleared, 10/10 still in c
 Apply the exact ten IDs locally from the pinned documentary branch after a dry-run; generate the official Markdown/stats views using `scripts.generate_docs`, run `--check` and the full catalogue validation, Ruff, pytest, pip check, Python 3.12 lock verification in Linux CI and an independent 10/91 record comparison. Append actual old→new field-level tables, preserving this historical first-pass section.
 
 **Do not commit or push automatically from the application script.** Inspect changed-file allowlist, revalidate the PR HEAD, then explicitly decide to commit/push. Require all seven new checks, completed independent P1/P2 Codex review and fresh manually dispatched full strict link audit of the *exact final PR SHA* before any human Ready/Squash-and-merge decision. Keep historical [issue #2](https://github.com/goozcena-gnl/devops-tools-catalog/issues/2) OPEN.
+
+<!-- WAVE27_APPLIED_CANONICAL_CHANGELOG_START -->
+## Local canonical application — Wave 27 field-level evidence log
+
+**Status:** Canonical changes applied locally, official regeneration/QA and fresh PR CI pending until actually observed. The first-pass and second-pass recommendations above are historical checkpoints.
+
+**Decisions applied to local canonical records:** 8 CLEAR / 2 RETAIN REVIEW. The catalogue-level expected inventory after official generation is 1,425 canonical, 816 active, 595 needs-review, subject to generator and CI validation.
+
+| Decision | IDs |
+|---|---|
+| CLEAR | `actionlint`, `black`, `eslint`, `mypy`, `prettier`, `ruff`, `shfmt`, `yamllint` |
+| RETAIN REVIEW | `golangci-lint`, `hadolint` |
+
+All 91 non-cohort YAML records are unchanged byte-for-byte after line-ending normalization; original historical sources, taxonomy, role and lifecycle fields are preserved. No constraints or URL audit baseline update is authorized.
+
+### `actionlint` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Only if you don't use GitHub Actions."]</code> | <code>["Only if you don't use GitHub Actions.", "Does not execute workflows or replace dedicated secret scanning; optional ShellCheck has separate dependencies."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L70", "legacy:devopstools_final.md#L1109"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L70", "legacy:devopstools_final.md#L1109", "https://github.com/rhysd/actionlint/blob/v1.7.12/LICENSE.txt", "https://github.com/rhysd/actionlint/releases/tag/v1.7.12"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Lint GitHub Actions workflows locally (catches many YAML/runtime mistakes early)."</code> | <code>"Static checker for GitHub Actions workflow syntax, expressions and referenced actions."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/rhysd/actionlint/blob/v1.7.12/LICENSE.txt
+- https://github.com/rhysd/actionlint/releases/tag/v1.7.12
+
+
+### `black` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Ruff's formatter (which is Black-compatible and faster) already covers your needs."]</code> | <code>["Ruff's formatter (which is Black-compatible and faster) already covers your needs.", "Formatting does not detect type errors; evaluate Ruff formatter compatibility before switching."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L71", "legacy:devopstools_final.md#L1110"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L71", "legacy:devopstools_final.md#L1110", "https://github.com/psf/black/blob/26.10.1/LICENSE", "https://github.com/psf/black/releases/tag/26.10.1"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Python code formatter."</code> | <code>"Opinionated Python source formatter with configurable target-version rules."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/psf/black/blob/26.10.1/LICENSE
+- https://github.com/psf/black/releases/tag/26.10.1
+
+
+### `eslint` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>[]</code> | <code>["TypeScript-specific analysis requires separately installed parser/plugins; ESLint 10 requires supported Node versions."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `repository_url` | <code>null</code> | <code>"https://github.com/eslint/eslint"</code> |
+| `sources` | <code>["legacy:devopstools_final.md#L1111"]</code> | <code>["legacy:devopstools_final.md#L1111", "https://github.com/eslint/eslint/blob/v10.13.0/LICENSE", "https://github.com/eslint/eslint/releases/tag/v10.13.0"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Pluggable JavaScript and TypeScript linter."</code> | <code>"Pluggable JavaScript linting engine with optional parsers and rule plugins."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/eslint/eslint/blob/v10.13.0/LICENSE
+- https://github.com/eslint/eslint/releases/tag/v10.13.0
+
+
+### `golangci-lint` — RETAIN REVIEW
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Only if you intentionally want a single specific linter in isolation."]</code> | <code>["Only if you intentionally want a single specific linter in isolation.", "Exact GPLv3-only versus GPLv3-or-later grant and bundled linter licenses remain unverified; Go 1.26 and v2 configuration require compatibility checks."]</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L72", "legacy:devopstools_final.md#L1112"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L72", "legacy:devopstools_final.md#L1112", "https://github.com/golangci/golangci-lint/blob/v2.15.0/LICENSE", "https://github.com/golangci/golangci-lint/releases/tag/v2.15.0", "https://github.com/golangci/golangci-lint/blob/v2.15.0/.goreleaser.yml", "https://github.com/golangci/golangci-lint/blob/v2.15.0/go.mod"]</code> |
+| `summary` | <code>"Go lint aggregator (fast, many linters)."</code> | <code>"Go linters aggregation runner with configurable analyzers and CI integration."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/golangci/golangci-lint/blob/v2.15.0/LICENSE
+- https://github.com/golangci/golangci-lint/releases/tag/v2.15.0
+- https://github.com/golangci/golangci-lint/blob/v2.15.0/.goreleaser.yml
+- https://github.com/golangci/golangci-lint/blob/v2.15.0/go.mod
+
+
+### `hadolint` — RETAIN REVIEW
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Only if you use Buildpacks or other non-Dockerfile build methods."]</code> | <code>["Only if you use Buildpacks or other non-Dockerfile build methods.", "Exact GPLv3-only versus GPLv3-or-later grant and dependency redistribution terms remain unverified."]</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L73", "legacy:devopstools_final.md#L1113"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L73", "legacy:devopstools_final.md#L1113", "https://github.com/hadolint/hadolint/blob/v2.15.1/LICENSE", "https://github.com/hadolint/hadolint/releases/tag/v2.15.1", "https://github.com/hadolint/hadolint/blob/v2.15.1/hadolint.cabal"]</code> |
+| `summary` | <code>"Dockerfile linter (best practices + common pitfalls)."</code> | <code>"Haskell-based Dockerfile linter with ShellCheck-derived shell diagnostics."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/hadolint/hadolint/blob/v2.15.1/LICENSE
+- https://github.com/hadolint/hadolint/releases/tag/v2.15.1
+- https://github.com/hadolint/hadolint/blob/v2.15.1/hadolint.cabal
+
+
+### `mypy` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Your code is untyped and the team isn't ready to adopt gradual typing."]</code> | <code>["Your code is untyped and the team isn't ready to adopt gradual typing.", "Main source is MIT but includes separately licensed portions; typing support depends on annotations and stubs."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L81", "legacy:devopstools_final.md#L1121"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L81", "legacy:devopstools_final.md#L1121", "https://github.com/python/mypy/blob/v1.19.1/LICENSE", "https://github.com/python/mypy/tree/v1.19.1", "https://github.com/python/mypy/blob/v1.19.1/pyproject.toml"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Static type checker for Python."</code> | <code>"Gradual static type checker for Python with type stubs, plugins and optional mypyc acceleration."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/python/mypy/blob/v1.19.1/LICENSE
+- https://github.com/python/mypy/tree/v1.19.1
+- https://github.com/python/mypy/blob/v1.19.1/pyproject.toml
+
+
+### `prettier` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["For Python (use Black/Ruff) or languages Prettier doesn't support."]</code> | <code>["For Python (use Black/Ruff) or languages Prettier doesn't support.", "Formatting is not linting or code security analysis; optional plugins carry separate licenses and runtime constraints."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L75", "legacy:devopstools_final.md#L1115"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L75", "legacy:devopstools_final.md#L1115", "https://github.com/prettier/prettier/blob/3.9.10/LICENSE", "https://github.com/prettier/prettier/releases/tag/3.9.10"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Opinionated formatter for JSON/YAML/Markdown and more."</code> | <code>"Opinionated formatter for JavaScript, TypeScript, JSON, YAML, Markdown and other supported languages."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/prettier/prettier/blob/3.9.10/LICENSE
+- https://github.com/prettier/prettier/releases/tag/3.9.10
+
+
+### `ruff` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["You depend on niche Flake8 plugins Ruff hasn't yet reimplemented."]</code> | <code>["You depend on niche Flake8 plugins Ruff hasn't yet reimplemented.", "Not a universal drop-in for Black, Flake8 and isort plugins; check supported rules and preview settings."]</code> |
+| `license_spdx` | <code>null</code> | <code>"MIT"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L76", "legacy:devopstools_final.md#L1116"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L76", "legacy:devopstools_final.md#L1116", "https://github.com/astral-sh/ruff/blob/0.17.2/LICENSE", "https://github.com/astral-sh/ruff/releases/tag/0.17.2"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Ultra-fast Python linter/formatter."</code> | <code>"Python linter and formatter implemented in Rust with configurable rule sets."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/astral-sh/ruff/blob/0.17.2/LICENSE
+- https://github.com/astral-sh/ruff/releases/tag/0.17.2
+
+
+### `shfmt` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Only if you have no shell scripts."]</code> | <code>["Only if you have no shell scripts.", "Formatting does not replace ShellCheck security lint; validate shell dialect and Go runtime version."]</code> |
+| `license_spdx` | <code>null</code> | <code>"BSD-3-Clause"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L77", "legacy:devopstools_final.md#L1117"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L77", "legacy:devopstools_final.md#L1117", "https://github.com/mvdan/sh/blob/v3.14.1/LICENSE", "https://github.com/mvdan/sh/releases/tag/v3.14.1"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"Shell formatter (`shfmt`)."</code> | <code>"Shell script formatter from the mvdan/sh parser and toolchain."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/mvdan/sh/blob/v3.14.1/LICENSE
+- https://github.com/mvdan/sh/releases/tag/v3.14.1
+
+
+### `yamllint` — CLEAR
+
+| Modified field | Original | Proposed local value |
+|---|---|---|
+| `avoid_when` | <code>["Prettier already handles your YAML formatting needs."]</code> | <code>["Prettier already handles your YAML formatting needs.", "Does not validate Kubernetes resource schemas or Helm/Kustomize policies."]</code> |
+| `license_spdx` | <code>null</code> | <code>"GPL-3.0-or-later"</code> |
+| `needs_review` | <code>true</code> | <code>false</code> |
+| `sources` | <code>["legacy:7_Development-Collaboration/README.md#L78", "legacy:devopstools_final.md#L1118"]</code> | <code>["legacy:7_Development-Collaboration/README.md#L78", "legacy:devopstools_final.md#L1118", "https://github.com/adrienverge/yamllint/blob/v1.38.0/LICENSE", "https://github.com/adrienverge/yamllint/releases/tag/v1.38.0", "https://github.com/adrienverge/yamllint/blob/v1.38.0/pyproject.toml"]</code> |
+| `status` | <code>"needs-review"</code> | <code>"active"</code> |
+| `summary` | <code>"YAML linter (structure + style checks)."</code> | <code>"YAML syntax and style linter with configurable formatting and validation rules."</code> |
+| `verified_on` | <code>"2026-08-03"</code> | <code>"2026-10-26"</code> |
+
+**Primary upstream evidence retained in updated `sources`:**
+
+- https://github.com/adrienverge/yamllint/blob/v1.38.0/LICENSE
+- https://github.com/adrienverge/yamllint/releases/tag/v1.38.0
+- https://github.com/adrienverge/yamllint/blob/v1.38.0/pyproject.toml
+
+
+**Publication checkpoint:** This local change log is not itself evidence of test/CI completion. After the official local generator and full QA pass, review the final diff, push through an explicit human-authorized commit, obtain fresh PR CI + independent P1/P2 review and a new strict full URL audit on the exact final SHA before a human merge decision.
+<!-- WAVE27_APPLIED_CANONICAL_CHANGELOG_END -->
+
+
+## Wave 27 N1a current-state regression guard follow-up — 2026-10-26
+
+A full local pytest run after the bounded Wave 27 YAML application initially
+failed in `test_n1a_current_state_preserves_owned_decisions`: the frozen N1a
+current-state checker still compared Black's `license_spdx` against the old
+accepted `None`, whereas the independently tagged
+[Black 26.10.1 MIT LICENSE](https://github.com/psf/black/blob/26.10.1/LICENSE)
+and [project metadata](https://github.com/psf/black/blob/26.10.1/pyproject.toml)
+support `MIT`. The same evidence review intentionally changed Black from
+`needs-review` to `active` with `needs_review: false`.
+
+The follow-up patch extends only the **current-state supersession mechanism**
+for precisely three pairs: `(black, license_spdx)=MIT`,
+`(black, status)=active`, `(black, needs_review)=false` in
+`tests/test_v022_n1a_access_retry.py`. It adds a regression test asserting
+the exact approved values and rejects an unauthorized change of Black's
+`repository_url`. It **does not alter** the frozen N1a historical baseline,
+original N1a or Wave 23 allowlist, immutable N1a accepted historical result,
+or any other tool's protected fields/URLs. The existing exact allowlist test
+in `tests/test_deferred_catalogue_corrections.py` remains untouched.
+
+Only the N1a test and this maintenance ledger are new changes on top of the
+already-applied ten-ID Wave 27 YAML and official generated views. Verification
+results must be taken from the repair command output; no PASS is claimed
+until tests have actually completed locally. No commit, push or merge here.
