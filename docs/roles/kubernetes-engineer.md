@@ -39,7 +39,7 @@
 | [Cloudflare Kubernetes Gateway](https://github.com/pl4nty/cloudflare-kubernetes-gateway) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [CloudNativePG](https://cloudnative-pg.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Cluster API](https://cluster-api.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
-| [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Cluster Bare Autoscaler](https://github.com/docent-net/cluster-bare-autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Compute Gardener](https://www.compute-gardener.com) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Containerized Data Importer](https://github.com/kubevirt/containerized-data-importer) | Kubernetes networking, storage and add-ons, Virtualization, bare metal and homelab | oss | active |
@@ -111,7 +111,7 @@
 | [k0s](https://k0sproject.io) | Kubernetes distributions and operations | oss | active |
 | [k0smotron](https://k0smotron.io) | Kubernetes distributions and operations | oss | needs-review |
 | [k10ls](https://github.com/besrabasant/k10ls) | Kubernetes distributions and operations | oss | needs-review |
-| [k3d](https://k3d.io/stable) | Kubernetes distributions and operations | oss | needs-review |
+| [k3d](https://k3d.io/stable) | Kubernetes distributions and operations | oss | active |
 | [k3s](https://k3s.io) | Kubernetes distributions and operations | oss | active |
 | [k3sup](https://github.com/alexellis/k3sup) | Kubernetes distributions and operations | open-core | active |
 | [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) | Kubernetes distributions and operations | oss | needs-review |
@@ -164,7 +164,7 @@
 | [Kube-OVN](https://www.kube-ovn.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [kube-score](https://kube-score.com) | Kubernetes distributions and operations | oss | active |
 | [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) | Monitoring, metrics, logs and tracing | oss | active |
-| [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) | Kubernetes distributions and operations | oss | needs-review |
+| [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) | Kubernetes distributions and operations | oss | active |
 | [Kubeapps](https://kubeapps.com) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
 | [KubeArmor](https://kubearmor.io/) | Application and cloud security, Kubernetes networking, storage and add-ons | oss | active |
 | [kubebuilder Book](https://book.kubebuilder.io) | Kubernetes distributions and operations | documentation | needs-review |
@@ -183,7 +183,7 @@
 | [kubectl-x](https://github.com/platformersdev/kubectl-x) | Kubernetes distributions and operations | oss | active |
 | [kubectx + kubens](https://github.com/ahmetb/kubectx) | Kubernetes distributions and operations | oss | active |
 | [Kubedock](https://github.com/joyrex2001/kubedock) | Kubernetes distributions and operations | oss | needs-review |
-| [KubeEdge](https://kubeedge.io) | Kubernetes distributions and operations | oss | needs-review |
+| [KubeEdge](https://kubeedge.io) | Kubernetes distributions and operations | oss | active |
 | [KubeElasti](https://kubeelasti.dev/) | Kubernetes networking, storage and add-ons, FinOps and sustainability, Emerging and experimental tools | oss | active |
 | [KubeFlame](https://kubeflame.github.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Kubeflow](https://www.kubeflow.org) | Kubernetes distributions and operations | oss | needs-review |
@@ -204,9 +204,9 @@
 | [Kubescape](https://kubescape.io/) | Kubernetes distributions and operations | oss | active |
 | [Kubesec](https://kubesec.io) | Kubernetes distributions and operations | oss | active |
 | [Kubeshark](https://kubeshark.com/) | Kubernetes distributions and operations | open-core | active |
-| [KubeSolo](https://www.kubesolo.io) | Kubernetes distributions and operations | oss | needs-review |
+| [KubeSolo](https://www.kubesolo.io) | Kubernetes distributions and operations | oss | active |
 | [KubeSpec](https://kubespec.dev) | Kubernetes distributions and operations | documentation | needs-review |
-| [KubeSphere](https://kubesphere.io) | Kubernetes distributions and operations | oss | needs-review |
+| [KubeSphere](https://kubesphere.io) | Kubernetes distributions and operations | source-available | needs-review |
 | [Kubespray](https://github.com/kubernetes-sigs/kubespray) | Kubernetes distributions and operations, Configuration management | oss | active |
 | [kubeswitch](https://github.com/danielfoehrKn/kubeswitch) | Kubernetes distributions and operations | oss | active |
 | [KubeTable](https://kubetable.dev/) | Developer experience and local environments, Emerging and experimental tools | oss | active |
@@ -238,7 +238,7 @@
 | [Metal3](https://metal3.io/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
 | [MetalLB](https://metallb.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) | Kubernetes networking, storage and add-ons | oss | active |
-| [MicroK8s](https://microk8s.io) | Kubernetes distributions and operations | oss | needs-review |
+| [MicroK8s](https://microk8s.io) | Kubernetes distributions and operations | oss | active |
 | [Minikube](https://minikube.sigs.k8s.io/docs) | Kubernetes distributions and operations | oss | active |
 | [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | active |
@@ -270,7 +270,7 @@
 | [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | active |
 | [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Radar](https://radarhq.io/) | Kubernetes distributions and operations | oss | active |
-| [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | needs-review |
+| [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | active |
 | [Rancher Manager](https://rancher.com) | Kubernetes distributions and operations | oss | active |
 | [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | Kubernetes distributions and operations | commercial | active |
 | [Redis Operator](https://redis-operator.opstree.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -309,7 +309,7 @@
 | [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [TrueNAS](https://www.truenas.com) | Kubernetes networking, storage and add-ons | open-core | needs-review |
 | [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) | Kubernetes distributions and operations | documentation | needs-review |
-| [Typhoon](https://typhoon.psdn.io) | Kubernetes distributions and operations | oss | needs-review |
+| [Typhoon](https://typhoon.psdn.io) | Kubernetes distributions and operations | oss | active |
 | [Valkey Operator](https://github.com/valkey-io/valkey-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [vCluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | active |
 | [Vitess](https://vitess.io) | Kubernetes networking, storage and add-ons | oss | needs-review |

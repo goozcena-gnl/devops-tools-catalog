@@ -100,7 +100,7 @@
 - [Cloudify](https://cloudify.co) — Cloud orchestration framework for automating application and infrastructure lifecycle across hybrid and multi-cloud environments.
 - [CloudNativePG](https://cloudnative-pg.io) — CloudNativePG operator manages PostgreSQL clusters on Kubernetes, including HA, backups, failover and recovery workflows.
 - [Cluster API](https://cluster-api.sigs.k8s.io) — Declarative APIs and tooling for provisioning, upgrading, and operating multiple Kubernetes clusters.
-- [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) — Kubernetes-native declarative infrastructure provider for creating and operating self-managed and EKS clusters on AWS.
+- [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) — Kubernetes Cluster API infrastructure provider for AWS self-managed Kubernetes clusters and EKS integrations.
 - [Cluster Bare Autoscaler](https://github.com/docent-net/cluster-bare-autoscaler) — Bare-metal Kubernetes autoscaler that powers nodes on or off based on cluster demand while safely cordoning and draining them.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) — High-performance code intelligence MCP server that indexes repositories into a persistent knowledge graph.
 - [Composio](https://composio.dev) — Agent tooling platform for managed auth, app connectors, triggers, and sandboxed tool execution across developer and business apps.
@@ -245,9 +245,9 @@
 - [Juju](https://canonical.com/juju) — Open-source application orchestration engine for deploying and operating charm-based applications across machines and Kubernetes.
 - [k0rdent](https://docs.k0rdent.io/latest) — Kubernetes-native platform for distributed cluster lifecycle and multi-cluster service management.
 - [k0s](https://k0sproject.io) — Kubernetes distribution.
-- [k0smotron](https://k0smotron.io) — Kubernetes operator and Cluster API provider for managing hosted k0s control planes and child clusters inside Kubernetes.
+- [k0smotron](https://k0smotron.io) — Hosted k0s control-plane operator and Cluster API integration with separate software and documentation licences.
 - [k10ls](https://github.com/besrabasant/k10ls) — Native Kubernetes API-based CLI for keeping port-forwards to pods and services open across clusters and contexts.
-- [k3d](https://k3d.io/stable) — Lightweight wrapper to run k3s (Rancher Lab's minimal Kubernetes distribution) in Docker.
+- [k3d](https://k3d.io/stable) — Docker-based local cluster wrapper running the lightweight k3s Kubernetes distribution.
 - [k3s](https://k3s.io) — Lightweight Kubernetes by Rancher.
 - [k3sup](https://github.com/alexellis/k3sup) — Command-line installer for bootstrapping and joining remote K3s nodes over SSH.
 - [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) — Kubernetes resource cleaner.
@@ -307,7 +307,7 @@
 - [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
 - [Kube-OVN](https://www.kube-ovn.io) — OVN and Open vSwitch-based Kubernetes CNI supporting VPCs, overlays, underlays, and KubeVirt networking.
 - [kube-score](https://kube-score.com) — Static Kubernetes object analysis that recommends reliability and security improvements for manifests, including probes, resource limits and security contexts.
-- [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) — Tool for bootstrapping Kubernetes clusters.
+- [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) — Upstream Kubernetes bootstrap and upgrade CLI for creating and managing control-plane and worker node configuration.
 - [KubeArmor](https://kubearmor.io/) — Runtime security enforcement system for applying workload policies through Linux Security Modules.
 - [kubebuilder Book](https://book.kubebuilder.io) — Guide for building Kubernetes APIs using `kubebuilder`.
 - [kubecfg](https://github.com/kadirbelkuyu/kubecfg) — CLI/TUI for managing kubeconfig contexts and namespaces.
@@ -324,7 +324,7 @@
 - [kubectl-klock](https://software.opensuse.org/package/kubectl-klock) — Lock resources in Kubernetes clusters.
 - [kubectx + kubens](https://github.com/ahmetb/kubectx) — Companion kubectx and kubens CLIs for switching kubectl contexts and namespaces, with shell completion, optional fzf selection and context-shell conveniences.
 - [Kubedock](https://github.com/joyrex2001/kubedock) — Minimal Docker API implementation that orchestrates containers on Kubernetes clusters.
-- [KubeEdge](https://kubeedge.io) — Extend Kubernetes to edge computing.
+- [KubeEdge](https://kubeedge.io) — Kubernetes-native edge computing framework connecting cloud control planes with edge devices and nodes.
 - [KubeElasti](https://kubeelasti.dev/) — Kubernetes controller and request proxy for scaling HTTP workloads to zero and restoring them on demand.
 - [KubeFlame](https://kubeflame.github.io) — Kubernetes flame graph profiling tool.
 - [Kubeflow](https://www.kubeflow.org) — ML workflows on Kubernetes.
@@ -345,9 +345,9 @@
 - [Kubescape](https://kubescape.io/) — Kubernetes security platform for posture, vulnerability, compliance, and runtime risk assessment.
 - [Kubesec](https://kubesec.io) — Kubernetes manifest security risk scoring through local CLI/container, a self-hosted HTTP API or a best-effort public v2 API, with schema validation and scored recommendations.
 - [Kubeshark](https://kubeshark.com/) — Kubernetes network observability platform for packet capture, protocol analysis, dashboards, and MCP-based investigation.
-- [KubeSolo](https://www.kubesolo.io) — Native macOS application to run a local Kubernetes cluster.
+- [KubeSolo](https://www.kubesolo.io) — Lightweight single-node Kubernetes implementation for edge and server hosts, with container-mode use for development.
 - [KubeSpec](https://kubespec.dev) — Interactive Kubernetes API specification reference.
-- [KubeSphere](https://kubesphere.io) — Kubernetes multi-tenant management platform.
+- [KubeSphere](https://kubesphere.io) — Kubernetes multi-tenant management platform; KubeSphere 4.x imposes additional commercial-use and distribution restrictions.
 - [Kubespray](https://github.com/kubernetes-sigs/kubespray) — Ansible-based Kubernetes cluster deployment and lifecycle automation maintained by Kubernetes SIGs.
 - [kubeswitch](https://github.com/danielfoehrKn/kubeswitch) — Command-line context switcher for Kubernetes operators managing multiple clusters and kubeconfig stores.
 - [Kubetail](https://www.kubetail.com/) — Apache-licensed real-time Kubernetes logging dashboard for terminal, local web, container, and in-cluster use.
@@ -399,7 +399,7 @@
 - [Metal3](https://metal3.io/) — Kubernetes-native components for provisioning and managing bare-metal hosts, including Cluster API integration.
 - [MetalLB](https://metallb.io) — Kubernetes LoadBalancer-service implementation for bare-metal clusters that allocates service IPs and advertises them through Layer 2 or BGP; separate from ingress controllers, CNIs and service meshes.
 - [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) — Collects current CPU and memory resource metrics from kubelets and exposes the Kubernetes Metrics API for HPA, VPA and kubectl top; it is not historical time-series storage or a general monitoring platform.
-- [MicroK8s](https://microk8s.io) — Lightweight Kubernetes by Canonical.
+- [MicroK8s](https://microk8s.io) — Canonical-packaged lightweight Kubernetes distribution with Snap tracks and optional add-ons.
 - [Microsoft Azure](https://azure.microsoft.com) — Microsoft's commercial cloud platform for compute, data, AI, networking, security, and hybrid and multicloud management services.
 - [Migratowl](https://migratowl.bitkaio.com) — AI-powered dependency migration analyzer.
 - [Milvus](https://milvus.io) — Distributed vector database for large-scale similarity search and retrieval workloads.
@@ -493,7 +493,7 @@
 - [Railway](https://railway.com/) — Managed application platform for building, deploying, networking, scaling, and observing services from source repositories or containers.
 - [Rakazo](https://rakazo.com/) — Self-hosted agent workspace with sandboxed browser and shell sessions, routines, approvals, and audit history.
 - [Rancher Desktop](https://rancherdesktop.io) — Desktop Kubernetes and container management.
-- [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) — Run and manage k3s clusters via Kubernetes (see docs).
+- [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) — Kubernetes-in-Kubernetes control-plane tooling for shared or virtual k3s guest clusters.
 - [Rancher Manager](https://rancher.com) — SUSE Rancher open-source Kubernetes cluster management platform for provisioning, importing and governing clusters; Rancher Prime adds commercial support and distribution services.
 - [Ray](https://www.ray.io/) — Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
 - [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) — Enterprise automation platform built around Ansible.
@@ -562,7 +562,7 @@
 - [Trivy](https://aquasecurity.github.io/trivy) — Vulnerability scanner for containers and Kubernetes.
 - [TrueNAS](https://www.truenas.com) — Storage platform/OS for NAS and SAN with community and enterprise editions.
 - [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) — Guide to optimizing swap for Kubernetes nodes.
-- [Typhoon](https://typhoon.psdn.io) — Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platforms.
+- [Typhoon](https://typhoon.psdn.io) — Minimal Kubernetes distribution and Terraform provisioning toolkit for cloud and bare-metal clusters.
 - [Uncloud](https://uncloud.run) — Deploy and operate containerized workloads across Docker hosts with service discovery and HTTPS ingress, without a Kubernetes control plane.
 - [Unraid](https://unraid.net) — Operating system for network-attached storage and virtualization.
 - [Upjet](https://github.com/crossplane/upjet) — Code generation and controller runtime for building Crossplane providers from Terraform providers.

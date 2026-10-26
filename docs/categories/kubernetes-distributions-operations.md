@@ -238,9 +238,9 @@ Declarative APIs and tooling for provisioning, upgrading, and operating multiple
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes-native declarative infrastructure provider for creating and operating self-managed and EKS clusters on AWS.
+Kubernetes Cluster API infrastructure provider for AWS self-managed Kubernetes clusters and EKS integrations.
 
 **Use when**
 
@@ -248,7 +248,7 @@ Kubernetes-native declarative infrastructure provider for creating and operating
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You cannot secure AWS IAM, network provisioning costs or align CAPI/CAPA compatibility versions.
 
 [Official site](https://cluster-api-aws.sigs.k8s.io) · [Source repository](https://github.com/kubernetes-sigs/cluster-api-provider-aws)
 
@@ -716,7 +716,7 @@ Kubernetes distribution.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Kubernetes operator and Cluster API provider for managing hosted k0s control planes and child clusters inside Kubernetes.
+Hosted k0s control-plane operator and Cluster API integration with separate software and documentation licences.
 
 **Use when**
 
@@ -724,7 +724,7 @@ Kubernetes operator and Cluster API provider for managing hosted k0s control pla
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need one confirmed licence for software and documentation or have not validated k0s/CAPI compatibility and hosted control-plane isolation.
 
 [Official site](https://k0smotron.io) · [Source repository](https://github.com/k0sproject/k0smotron)
 
@@ -752,9 +752,9 @@ Native Kubernetes API-based CLI for keeping port-forwards to pods and services o
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Lightweight wrapper to run k3s (Rancher Lab's minimal Kubernetes distribution) in Docker.
+Docker-based local cluster wrapper running the lightweight k3s Kubernetes distribution.
 
 **Use when**
 
@@ -762,7 +762,7 @@ Lightweight wrapper to run k3s (Rancher Lab's minimal Kubernetes distribution) i
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require production high availability or cannot secure the local Docker socket and host resources.
 
 [Official site](https://k3d.io/stable) · [Source repository](https://github.com/k3d-io/k3d)
 
@@ -1292,9 +1292,9 @@ Static Kubernetes object analysis that recommends reliability and security impro
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Tool for bootstrapping Kubernetes clusters.
+Upstream Kubernetes bootstrap and upgrade CLI for creating and managing control-plane and worker node configuration.
 
 **Use when**
 
@@ -1303,8 +1303,9 @@ Tool for bootstrapping Kubernetes clusters.
 **Consider alternatives when**
 
 - A managed service (EKS/GKE/AKS) or lightweight distro (k3s) would reduce operational burden.
+- You expect kubeadm alone to provision machines, networking, storage or a complete managed Kubernetes service.
 
-[Official site](https://kubernetes.io/docs/reference/setup-tools/kubeadm) · [Source repository](https://github.com/kubernetes/kubeadm)
+[Official site](https://kubernetes.io/docs/reference/setup-tools/kubeadm) · [Source repository](https://github.com/kubernetes/kubernetes/tree/master/cmd/kubeadm)
 
 ### Kubeapps
 
@@ -1644,9 +1645,9 @@ Minimal Docker API implementation that orchestrates containers on Kubernetes clu
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Extend Kubernetes to edge computing.
+Kubernetes-native edge computing framework connecting cloud control planes with edge devices and nodes.
 
 **Use when**
 
@@ -1655,6 +1656,7 @@ Extend Kubernetes to edge computing.
 **Consider alternatives when**
 
 - Your edge devices are too resource-constrained or a simpler agent model (e.g., k3s) suffices.
+- You cannot manage cloud-edge identities, certificate lifecycle, connectivity loss and device trust boundaries.
 
 [Official site](https://kubeedge.io) · [Source repository](https://github.com/kubeedge/kubeedge)
 
@@ -1957,9 +1959,9 @@ Kubernetes network observability platform for packet capture, protocol analysis,
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Native macOS application to run a local Kubernetes cluster.
+Lightweight single-node Kubernetes implementation for edge and server hosts, with container-mode use for development.
 
 **Use when**
 
@@ -1967,7 +1969,7 @@ Native macOS application to run a local Kubernetes cluster.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need multi-node scheduling or high availability, or assume a native macOS IDE rather than a single-node Kubernetes runtime.
 
 [Official site](https://www.kubesolo.io) · [Source repository](https://github.com/portainer/kubesolo)
 
@@ -1994,10 +1996,10 @@ Interactive Kubernetes API specification reference.
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Oss<br>
+**Model:** Source Available<br>
 **Status:** Needs Review
 
-Kubernetes multi-tenant management platform.
+Kubernetes multi-tenant management platform; KubeSphere 4.x imposes additional commercial-use and distribution restrictions.
 
 **Use when**
 
@@ -2006,6 +2008,7 @@ Kubernetes multi-tenant management platform.
 **Consider alternatives when**
 
 - You prefer composing best-of-breed tools (ArgoCD + Grafana + etc.).
+- You require unmodified OSI Apache-2.0 licence permissions for KubeSphere v4.x or intend third-party commercial redistribution without authorization.
 
 [Official site](https://kubesphere.io) · [Source repository](https://github.com/kubesphere/kubesphere)
 
@@ -2340,9 +2343,9 @@ Kubernetes-native components for provisioning and managing bare-metal hosts, inc
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Lightweight Kubernetes by Canonical.
+Canonical-packaged lightweight Kubernetes distribution with Snap tracks and optional add-ons.
 
 **Use when**
 
@@ -2351,6 +2354,7 @@ Lightweight Kubernetes by Canonical.
 **Consider alternatives when**
 
 - You need wider community tooling compatibility or prefer non-snap packaging.
+- You assume every Snap track or optional add-on offers identical version, architecture or production HA support.
 
 [Official site](https://microk8s.io) · [Source repository](https://github.com/canonical/microk8s)
 
@@ -2590,9 +2594,9 @@ Kubernetes inspection interface with resource topology, events, GitOps informati
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Run and manage k3s clusters via Kubernetes (see docs).
+Kubernetes-in-Kubernetes control-plane tooling for shared or virtual k3s guest clusters.
 
 **Use when**
 
@@ -2601,6 +2605,8 @@ Run and manage k3s clusters via Kubernetes (see docs).
 **Consider alternatives when**
 
 - Vcluster or Kamaji already handles your virtual cluster needs.
+- You need a hard tenant security boundary without verifying privileged agent pods, host isolation and the shared-mode policy model.
+- You plan to treat chart 1.2.1 release candidates as a stable GA application version.
 
 [Official site](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) · [Source repository](https://github.com/rancher/k3k)
 
@@ -2876,9 +2882,9 @@ Guide to optimizing swap for Kubernetes nodes.
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platforms.
+Minimal Kubernetes distribution and Terraform provisioning toolkit for cloud and bare-metal clusters.
 
 **Use when**
 
@@ -2886,7 +2892,7 @@ Minimal, Terraform-based Kubernetes distribution for cloud and bare-metal platfo
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You cannot safeguard Terraform state and provider credentials or verify cloud provider and Kubernetes version compatibility.
 
 [Official site](https://typhoon.psdn.io) · [Source repository](https://github.com/poseidon/typhoon)
 
