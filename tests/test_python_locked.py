@@ -295,7 +295,17 @@ def test_freshness_workflow_is_separate_read_only_and_retains_failed_report():
         ),
         Loader=yaml.BaseLoader,
     )
-    assert set(workflow["on"]) == {"schedule", "workflow_dispatch"}
+    assert set(workflow["on"]) == {
+        "pull_request",
+        "schedule",
+        "workflow_dispatch",
+    }
+    assert set(workflow["on"]["pull_request"]["paths"]) == {
+        "config/python-constraints-3.12.txt",
+        "pyproject.toml",
+        "scripts/python_constraints.py",
+        ".github/workflows/python-freshness.yml",
+    }
     assert workflow["permissions"] == {"contents": "read"}
     job = workflow["jobs"]["freshness"]
     assert job["timeout-minutes"] == "15"
