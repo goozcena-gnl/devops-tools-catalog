@@ -1,0 +1,88 @@
+name: Ubuntu 26.04 compatibility canary
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/ubuntu26-canary.yml"
+      - "docs/maintenance/2026-10-28-github-actions-ubuntu-26-compatibility-audit.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ubuntu26-canary-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  canary:
+    name: Compatibility (${{ matrix.os }}, Python 3.12)
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, ubuntu-26.04]
+    steps:
+      - name: Checkout full repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Record exact host OS and Docker availability
+        run: |
+          cat /etc/os-release
+          uname -r
+          git --version
+          docker version --format '{{.Server.Version}}'
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            pyproject.toml
+            config/python-constraints-3.12.txt
+
+      - name: Install pinned build backend
+        run: python -m pip install --disable-pip-version-check --no-input -c config/python-constraints-3.12.txt hatchling editables
+
+      - name: Install pinned maintenance dependencies
+        run: python -m pip install --disable-pip-version-check --no-input --no-build-isolation -c config/python-constraints-3.12.txt -e '.[dev]'
+
+      - name: Verify locked dependencies and Python environment
+        run: |
+          python --version
+          python -m scripts.python_constraints --verify-locked
+          python -m pip check
+
+      - name: Lint and format
+        run: |
+          python -m ruff check scripts tests
+          python -m ruff format --check scripts tests
+
+      - name: Run full test suite
+        run: python -m pytest
+
+      - name: Verify generated docs and catalogue
+        run: |
+          python -m scripts.generate_docs --check
+          python -m scripts.validate_catalog
+          python -m scripts.review_debt --format json > "$RUNNER_TEMP/review-debt.json"
+          python -m scripts.check_links --help > "$RUNNER_TEMP/link-check-help.txt"
+
+      - name: Run the production Gitleaks container on this host
+        run: >-
+          docker run --rm
+          --volume "$GITHUB_WORKSPACE:/repo"
+          --workdir /repo
+          ghcr.io/gitleaks/gitleaks:v8.29.1@sha256:aa036a2f4bdfe3cc3c55fa4326308efabb4a6be498c883c864fd1d0d5585438a
+          git /repo
+          --config /repo/.gitleaks.toml
+          --redact
+          --no-banner
+
+      - name: Check branch diff whitespace
+        run: git diff --check origin/main...HEAD
