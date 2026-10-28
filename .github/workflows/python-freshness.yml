@@ -1,6 +1,12 @@
 name: Python dependency freshness
 
 on:
+  pull_request:
+    paths:
+      - "config/python-constraints-3.12.txt"
+      - "pyproject.toml"
+      - "scripts/python_constraints.py"
+      - ".github/workflows/python-freshness.yml"
   schedule:
     - cron: "23 5 * * 2"
   workflow_dispatch:
