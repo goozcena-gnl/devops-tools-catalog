@@ -173,9 +173,11 @@
   needs_review: false
 - id: arize-phoenix
   name: Arize Phoenix
-  summary: LLM observability and evaluation platform.
+  summary: "Self-hostable AI and LLM observability platform for OpenTelemetry/OpenInference tracing, evaluations and experiments; Phoenix server is ELv2 licensed."
   official_url: https://arize.com/docs/phoenix
   repository_url: https://github.com/Arize-ai/phoenix
+  repository_archived: false
+  documentation_url: "https://arize.com/docs/phoenix/self-hosting"
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -189,20 +191,31 @@
   - deploy
   - operate
   use_when:
-  - You need tracing, evaluation, and debugging for LLM applications with a self-hosted option.
+  - "You need to self-host LLM traces, evaluations or experiments and accept the Elastic License 2.0 restrictions."
   avoid_when:
-  - You're not running LLM workloads or already have sufficient observability through your existing stack.
-  deployment_models: []
-  license_model: oss
+  - "You need an OSI-approved open-source licence or intend to offer Phoenix functionality to third parties as a managed service; ELv2 restricts that use."
+  - "You cannot protect trace payloads and Phoenix UI/OTLP endpoints; self-hosted Phoenix documentation says authentication is disabled by default, so enable authentication and restrict network access."
+  - "You require assurances that traced prompts, responses or integrations never reach an external model or service without verifying exporters, evaluations and telemetry."
+  deployment_models:
+  - "self-hosted"
+  - "container"
+  license_model: "source-available"
+  license_spdx: "Elastic-2.0"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-28"
   sources:
-  - legacy:9_AI-MLOps/README.md#L64
-  - legacy:devopstools_final.md#L1251
-  needs_review: true
+  - "legacy:9_AI-MLOps/README.md#L64"
+  - "legacy:devopstools_final.md#L1251"
+  - "https://github.com/Arize-ai/phoenix/blob/0370188bcff193bdab02ca5f4b1b4ca8fb087051/LICENSE"
+  - "https://github.com/Arize-ai/phoenix/blob/0370188bcff193bdab02ca5f4b1b4ca8fb087051/docs/phoenix/self-hosting/license.mdx"
+  - "https://github.com/Arize-ai/phoenix/blob/0370188bcff193bdab02ca5f4b1b4ca8fb087051/README.md"
+  - "https://arize.com/docs/phoenix/self-hosting/features/authentication"
+  - "https://arize.com/docs/phoenix/self-hosting"
+  - "https://spdx.org/licenses/Elastic-2.0.html"
+  needs_review: false
 - id: autogen
   name: AutoGen
   summary: Microsoft framework for building single-agent and multi-agent applications, runtimes, and extensions.
@@ -785,8 +798,11 @@
   needs_review: true
 - id: evidently
   name: Evidently
-  summary: Open-source evaluation and monitoring framework for ML and AI systems.
+  summary: "Apache-2.0 Python framework for data quality, drift monitoring and ML/LLM evaluations; separate Evidently Cloud offers managed capabilities."
+  official_url: "https://www.evidentlyai.com/"
   repository_url: https://github.com/evidentlyai/evidently
+  repository_archived: false
+  documentation_url: "https://docs.evidentlyai.com/introduction"
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -799,18 +815,29 @@
   - build
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You need reproducible data-quality, ML-drift or LLM evaluation checks in Python, locally or within a self-hosted workflow."
+  avoid_when:
+  - "You assume Evidently Cloud features, hosted collaboration, alerting or enterprise services are part of the Apache-2.0 Python-library licence."
+  - "Your datasets or evaluation results are sensitive and you have not reviewed deployment boundaries, storage, hosted endpoints and LLM judge providers."
+  deployment_models:
+  - "software-library"
+  - "self-hosted"
+  - "hosted-saas"
   license_model: oss
+  license_spdx: "Apache-2.0"
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-28"
   sources:
-  - legacy:devopstools_final.md#L1252
-  needs_review: true
+  - "legacy:devopstools_final.md#L1252"
+  - "https://github.com/evidentlyai/evidently/blob/34771fe41c08ca074d96a52aaf4a45cd640cbaf5/LICENSE"
+  - "https://github.com/evidentlyai/evidently/blob/34771fe41c08ca074d96a52aaf4a45cd640cbaf5/README.md"
+  - "https://docs.evidentlyai.com/introduction"
+  needs_review: false
 - id: flawless
   name: Flawless
   summary: AI SRE AgenticOps agent for autonomous incident detection, diagnosis, and remediation across
@@ -1566,9 +1593,11 @@
   needs_review: true
 - id: langfuse
   name: Langfuse
-  summary: LLM observability and analytics; OSS self-hosted core with commercial cloud offering.
+  summary: "Open-core LLM tracing and evaluation platform with a self-hostable MIT core, separately licensed Enterprise modules and managed Cloud offering."
   official_url: https://langfuse.com
   repository_url: https://github.com/langfuse/langfuse
+  repository_archived: false
+  documentation_url: "https://langfuse.com/self-hosting"
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -1582,20 +1611,31 @@
   - deploy
   - operate
   use_when:
-  - You want detailed LLM trace analytics with the option to self-host or use managed cloud.
+  - "You want self-hosted or managed LLM traces, evaluations, prompt management and operational analytics with explicit hosting and licence boundaries."
   avoid_when:
-  - You have minimal LLM usage and don't need per-request cost/latency tracking.
-  deployment_models: []
+  - "You require all Langfuse features or all repository files to be MIT-licensed; Enterprise directories and paid features have separate terms."
+  - "Your deployment cannot protect prompts, traces, ClickHouse/Postgres data and access tokens, or you need retention and security features without checking plan-specific restrictions."
+  - "You require zero telemetry: OSS can disable application telemetry with TELEMETRY_ENABLED=false; Enterprise self-hosted telemetry used for licence compliance cannot be disabled under standard terms."
+  deployment_models:
+  - "self-hosted"
+  - "container"
+  - "hosted-saas"
   license_model: open-core
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-28"
   sources:
-  - legacy:9_AI-MLOps/README.md#L66
-  - legacy:devopstools_final.md#L1253
-  needs_review: true
+  - "legacy:9_AI-MLOps/README.md#L66"
+  - "legacy:devopstools_final.md#L1253"
+  - "https://github.com/langfuse/langfuse/blob/7adf573f8e19a56ada72fd8e816122174c3c88ac/LICENSE"
+  - "https://github.com/langfuse/langfuse/blob/7adf573f8e19a56ada72fd8e816122174c3c88ac/ee/LICENSE"
+  - "https://langfuse.com/self-hosting"
+  - "https://langfuse.com/self-hosting/security/telemetry"
+  - "https://langfuse.com/self-hosting/license-key"
+  needs_review: false
 - id: langgraph
   name: LangGraph
   summary: MIT-licensed orchestration framework and runtime for building stateful, long-running agents.
@@ -1640,8 +1680,9 @@
   needs_review: false
 - id: langsmith
   name: LangSmith
-  summary: LLM application development platform with observability, testing, and evaluation (LangChain-affiliated).
+  summary: "Commercial LangSmith platform for LLM and agent observability, evaluations and debugging, with Cloud, Hybrid and Enterprise-licensed self-hosted deployment options."
   official_url: https://smith.langchain.com
+  documentation_url: "https://docs.langchain.com/langsmith/observability"
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -1655,20 +1696,29 @@
   - deploy
   - operate
   use_when:
-  - You're already using LangChain and want tightly integrated tracing, testing, and prompt management.
+  - "You need managed or contractually licensed tracing and evaluations for agents across LLM frameworks, and can meet LangSmith billing, access and data-governance requirements."
   avoid_when:
-  - You don't use LangChain—vendor lock-in to the LangChain ecosystem may not be worth it.
-  deployment_models: []
-  license_model: open-core
+  - "You require a redistributable open-source platform; LangSmith is commercially licensed even though LangChain SDKs and integrations may be open-source."
+  - "You want self-hosted LangSmith without an Enterprise agreement and authorised licence key, or cannot approve trace storage, data residency or contractual restrictions."
+  deployment_models:
+  - "hosted-saas"
+  - "hybrid"
+  - "enterprise-self-hosted"
+  license_model: "commercial"
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-28"
   sources:
-  - legacy:9_AI-MLOps/README.md#L68
-  - legacy:devopstools_final.md#L1254
-  needs_review: true
+  - "legacy:9_AI-MLOps/README.md#L68"
+  - "legacy:devopstools_final.md#L1254"
+  - "https://www.langchain.com/terms-of-service"
+  - "https://www.langchain.com/pricing"
+  - "https://docs.langchain.com/langsmith/observability"
+  - "https://support.langchain.com/articles/7011309930-how-do-i-obtain-a-self-hosted-langsmith-license-key"
+  needs_review: false
 - id: last30days-skill
   name: last30days-skill
   summary: Agent skill that researches current topics across web and social sources and synthesizes grounded
@@ -2373,9 +2423,11 @@
   needs_review: false
 - id: promptfoo
   name: Promptfoo
-  summary: Test and evaluate LLM prompts.
+  summary: "MIT-licensed CLI for LLM regression evaluation and red-team testing in CI; generation, grading, sharing and telemetry may use external services."
   official_url: https://www.promptfoo.dev
   repository_url: https://github.com/promptfoo/promptfoo
+  repository_archived: false
+  documentation_url: "https://www.promptfoo.dev/docs/red-team/quickstart/"
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -2389,20 +2441,33 @@
   - deploy
   - operate
   use_when:
-  - You want CI-friendly, automated prompt regression testing and red-teaming.
+  - "You need reproducible local or CI-based LLM prompt evaluations or authorised red-team tests with configured attack and grading providers."
   avoid_when:
-  - You're still in early prototyping and prompt stability isn't yet a concern.
-  deployment_models: []
+  - "You cannot permit sensitive application context, prompts or target responses to leave your environment: without suitable local credentials or providers, some red-team generation and grading uses Promptfoo-hosted inference."
+  - "You treat PROMPTFOO_DISABLE_REMOTE_GENERATION as a complete network isolation control; remote-only plugins, explicitly configured providers, telemetry, sharing and Cloud features require separate checks."
+  - "You share evaluations, target setup forms or provider configuration containing secrets without reviewing hosted upload destinations and telemetry settings."
+  deployment_models:
+  - "local-cli"
+  - "on-premises"
+  - "hosted-saas"
   license_model: oss
+  license_spdx: "MIT"
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-28"
   sources:
-  - legacy:9_AI-MLOps/README.md#L70
-  - legacy:devopstools_final.md#L1255
-  needs_review: true
+  - "legacy:9_AI-MLOps/README.md#L70"
+  - "legacy:devopstools_final.md#L1255"
+  - "https://github.com/promptfoo/promptfoo/blob/bfe97095b6d9eabd424021f004b13038068881d3/LICENSE"
+  - "https://github.com/promptfoo/promptfoo/blob/bfe97095b6d9eabd424021f004b13038068881d3/README.md"
+  - "https://www.promptfoo.dev/docs/red-team/troubleshooting/data-handling/"
+  - "https://www.promptfoo.dev/docs/usage/sharing/"
+  - "https://www.promptfoo.dev/docs/configuration/telemetry/"
+  - "https://www.promptfoo.dev/docs/red-team/quickstart/"
+  needs_review: false
 - id: rakazo
   name: Rakazo
   summary: Self-hosted agent workspace with sandboxed browser and shell sessions, routines, approvals,

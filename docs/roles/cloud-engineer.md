@@ -16,7 +16,7 @@
 | [Apache CloudStack](https://cloudstack.apache.org) | Cloud platforms and cloud management | oss | active |
 | [Apache Kafka](https://kafka.apache.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) | CD, GitOps, release and promotion, IAM, secrets and certificate management | oss | active |
-| [Arize Phoenix](https://arize.com/docs/phoenix) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Arize Phoenix](https://arize.com/docs/phoenix) | MLOps, LLMOps and AI infrastructure | source-available | active |
 | [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) | Infrastructure as Code | oss | active |
 | [asciinema](https://asciinema.org/) | Documentation, learning and career resources | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
@@ -101,7 +101,7 @@
 | [etcd](https://etcd.io) | Databases, caching and data infrastructure | oss | needs-review |
 | [EveryDev.ai](https://www.everydev.ai/) | Documentation, learning and career resources | unknown | needs-review |
 | [Eviden KMS](https://github.com/Cosmian/kms) | IAM, secrets and certificate management | source-available | active |
-| [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Evidently](https://www.evidentlyai.com/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Exoscale SKS](https://www.exoscale.com/sks/) | Kubernetes distributions and operations | commercial | active |
 | [Exoway](https://www.exoway.io) | Cloud platforms and cloud management | commercial | needs-review |
 | [External Secrets Operator](https://external-secrets.io/main) | Kubernetes networking, storage and add-ons, IAM, secrets and certificate management | oss | active |
@@ -179,9 +179,9 @@
 | [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | active |
 | [LangChain](https://www.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [Langflow](https://www.langflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Langfuse](https://langfuse.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
+| [Langfuse](https://langfuse.com) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [LangGraph](https://www.langchain.com/langgraph) | MLOps, LLMOps and AI infrastructure | oss | active |
-| [LangSmith](https://smith.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
+| [LangSmith](https://smith.langchain.com) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LearnKube](https://learnkube.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | needs-review |
@@ -234,7 +234,7 @@
 | [PocketBase](https://pocketbase.io/) | Databases, caching and data infrastructure | oss | active |
 | [PointFive](https://www.pointfive.co/) | FinOps and sustainability | commercial | active |
 | [PostgreSQL](https://www.postgresql.org) | Databases, caching and data infrastructure | oss | active |
-| [Promptfoo](https://www.promptfoo.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Promptfoo](https://www.promptfoo.dev) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [ProsperOps](https://www.prosperops.com/) | FinOps and sustainability | commercial | active |
 | [Prowler](https://prowler.com) | Application and cloud security, Policy, governance and compliance | open-core | active |
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
