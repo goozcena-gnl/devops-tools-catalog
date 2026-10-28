@@ -62,7 +62,7 @@
 - [Azure Functions](https://azure.microsoft.com/en-us/products/functions) — Commercial managed Azure PaaS for event-driven and scheduled compute; the separately catalogued Functions Host runtime is open source.
 - [Azure Functions Host](https://github.com/Azure/azure-functions-host) — The runtime host and core execution engine for Azure Functions.
 - [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) — Microsoft's CBL-Mariner-based Linux distribution optimized for container and cloud workloads on Azure.
-- [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) — Azure MCP server implementation.
+- [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) — Microsoft MCP server connecting AI agents to Azure services and resource operations; maintained in microsoft/mcp.
 - [Azure Service Operator](https://azure.github.io/azure-service-operator) — Azure Service Operator reconciles Azure resources from Kubernetes custom resources using Azure Resource Manager.
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) — Microsoft-led Azure Verified Modules initiative defining standards and indexes for Bicep and Terraform resource and pattern modules; the central repository hosts governance and documentation, while implementations live in separate module repositories and registries.
 - [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
@@ -186,7 +186,7 @@
 - [git-sync](https://github.com/kubernetes/git-sync) — Sidecar app that clones a Git repository and keeps it synchronized with upstream.
 - [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform terms separate from the MIT runner and independent action licences.
 - [GitHub Copilot](https://github.com/features/copilot) — AI-powered code completion assistant.
-- [GitHub MCP Server](https://github.com/github/github-mcp-server) — GitHub's MCP server implementation.
+- [GitHub MCP Server](https://github.com/github/github-mcp-server) — Official GitHub MCP server exposing repository, issue and pull-request operations through local or GitHub-hosted connections.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 - [GitLab CI](https://docs.gitlab.com/ci/) — GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, with separately deployed GitLab Runner and distinct Community, Enterprise and service terms.
 - [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab MCP server documentation.
@@ -196,7 +196,7 @@
 - [Google Cloud Platform](https://cloud.google.com) — Cloud services by Google.
 - [Google Cloud Run](https://cloud.google.com/run) — Fully managed Google Cloud application platform for running services, jobs, worker pools, and functions from code or containers.
 - [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine) — Managed Kubernetes service with Standard and Autopilot operating modes on Google Cloud.
-- [Grafana MCP](https://github.com/grafana/mcp-grafana) — Model Context Protocol for Grafana.
+- [Grafana MCP](https://github.com/grafana/mcp-grafana) — MCP server for Grafana observability queries and permission-controlled dashboard and alerting operations.
 - [gVisor](https://gvisor.dev) — Application kernel and container sandbox runtime that provides strong isolation between containers and the host.
 - [HAMi](https://project-hami.io) — Heterogeneous AI computing virtualization middleware.
 - [Hanoi CLI](https://github.com/k-krew/hanoi-cli) — Interactive rebalance advisor for Kubernetes.
@@ -256,7 +256,7 @@
 - [k8s-d2](https://github.com/vieitesss/k8s-d2) — Generate D2 diagrams from Kubernetes topology and resources.
 - [k8s-mechanic](https://github.com/lenaxia/k8s-mechanic) — Kubernetes controller that proposes GitOps pull requests for observed cluster failures with human approval.
 - [k8s-sidecar](https://github.com/kiwigrid/k8s-sidecar) — Kubernetes sidecar container that watches ConfigMaps/Secrets and syncs files.
-- [K8sGPT](https://k8sgpt.ai) — AI-powered Kubernetes troubleshooting.
+- [K8sGPT](https://k8sgpt.ai) — Kubernetes analyzers for diagnostic triage with optional explanations from a configured AI backend.
 - [k8sql](https://github.com/ndenev/k8sql) — Query Kubernetes clusters with SQL and PRQL.
 - [K8Studio](https://k8studio.io/) — Commercial, agent-free desktop Kubernetes IDE for local multi-cluster operations, visualization, logs, RBAC, and Helm workflows.
 - [K8up](https://k8up.io/) — Kubernetes backup operator that schedules Restic-based PVC and application-aware backups and restores.
@@ -338,7 +338,7 @@
 - [Kubernetes](https://kubernetes.io) — CNCF-hosted orchestration system for deploying, scaling, and managing containerized applications.
 - [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) — Repository of Kubernetes autoscaling components including Cluster Autoscaler, Vertical Pod Autoscaler and Addon Resizer; Horizontal Pod Autoscaler is a separate Kubernetes-core API and controller.
 - [Kubernetes Common Errors & Fixes](https://middleware.io/blog/kubernetes-common-errors-fix) — Troubleshooting Kubernetes.
-- [Kubernetes MCP Server](https://github.com/containers/kubernetes-mcp-server) — Go-native MCP server for Kubernetes and OpenShift with direct API server integration, multi-cluster support, Helm/Tekton toolsets, and no external CLI dependencies (Apache-2.0).
+- [Kubernetes MCP Server](https://github.com/containers/kubernetes-mcp-server) — Go-native MCP server for Kubernetes and OpenShift with direct API access, multi-cluster configuration and optional ecosystem toolsets.
 - [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) — Jsonnet monitoring mixin that generates Kubernetes Prometheus alerting and recording rules and Grafana dashboards, maintained under kubernetes-sigs rather than a standalone monitoring server.
 - [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) — Guide to bootstrapping Kubernetes the hard way.
 - [kubernetes-skill for Claude Code](https://lukasniessen.github.io/kubernetes-skill) — Claude Code agent skill for interacting with Kubernetes clusters.
@@ -378,7 +378,7 @@
 - [LINSTOR](https://linbit.com/linstor) — Distributed storage management (DRBD-based) with community and enterprise support.
 - [Linux Containers (LXC/LXD)](https://linuxcontainers.org) — System containers and VM manager.
 - [Linux kernel](https://www.kernel.org/) — Operating-system kernel underpinning Linux server, cloud, and container hosts.
-- [LiteLLM](https://www.litellm.ai) — Gateway and proxy for 100+ LLM providers with budgets, rate limiting, logging, and spend tracking.
+- [LiteLLM](https://www.litellm.ai) — LLM SDK and gateway with an MIT-licensed community core and separately licensed Enterprise components; MIT does not cover the whole product.
 - [LitmusChaos](https://litmuschaos.io) — Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with a hub of pre-built experiments and GitOps-friendly CRD workflows. ❌ **Avoid when** your environment is non-Kubernetes or you find ChaosHub's experiment catalog doesn't cover your stack.
 - [llm-d](https://github.com/llm-d) — Kubernetes-native high-performance distributed LLM inference framework for serving models at scale.
 - [llmfit](https://github.com/AlexsJones/llmfit) — Hardware-aware CLI/TUI for recommending which LLM models fit local RAM, CPU, and GPU capacity.
@@ -431,11 +431,11 @@
 - [Octopus Deploy](https://octopus.com) — Deployment and release automation for applications and infrastructure across environments, including Kubernetes.
 - [OIDC-Guard](https://github.com/IvanJosipovic/OIDC-Guard) — External-authentication API service for JWT and cookie validation at Kubernetes ingress.
 - [OKD](https://okd.io) — Community Kubernetes distribution upstream of OpenShift.
-- [Ollama](https://ollama.com) — Local LLM runtime and model manager; open-source core (model licenses vary).
+- [Ollama](https://ollama.com) — MIT-licensed model runtime and manager supporting local inference and optional cloud features; model licenses are separate.
 - [OmniRoute](https://omniroute.online/) — Self-hosted gateway that presents multiple AI model providers behind one routing and fallback endpoint.
 - [OneDev](https://onedev.io) — Self-hosted Git and CI/CD platform with MIT-licensed Community software, issue/package management and a separately licensed commercial Enterprise module.
 - [Open vSwitch](https://www.openvswitch.org) — Production-quality multilayer virtual switch for network automation, programmatic control, and virtualized environments.
-- [Open WebUI](https://openwebui.com) — Self-hosted web UI for running and managing local AI model backends (e.g., Ollama).
+- [Open WebUI](https://openwebui.com) — Self-hosted AI web platform for Ollama and compatible APIs; current code uses the custom Open WebUI License with branding conditions, alongside legacy BSD-3-Clause and MIT code.
 - [OpenDepot](https://tonedefdev.github.io/opendepot/) — Kubernetes-native registry for publishing and consuming OpenTofu and Terraform providers and modules.
 - [OpenFaaS](https://www.openfaas.com) — Functions-as-a-Service framework for Kubernetes; OSS core with commercial Pro features.
 - [OpenFeature](https://openfeature.dev) — Open standard for feature flag management.
@@ -549,7 +549,7 @@
 - [Tekton](https://tekton.dev) — Kubernetes-native CI/CD framework and ecosystem built around Tekton Pipelines, with complementary triggers, tooling and supply-chain components.
 - [Telepresence](https://www.telepresence.io) — Local dev against remote Kubernetes.
 - [Terraform Community Edition](https://www.terraform.io) — HashiCorp infrastructure-as-code CLI for provisioning and managing infrastructure and state, with separately licensed providers; HCP Terraform and Terraform Enterprise are distinct offerings.
-- [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) — MCP server for Terraform automation and infrastructure-as-code workflows.
+- [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) — HashiCorp MCP server for Terraform Registry discovery and authenticated HCP Terraform/Terraform Enterprise workspace and run workflows.
 - [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge for cost savings.
 - [terraform-skill](https://github.com/antonbabenko/terraform-skill) — Claude Code skill for Terraform and OpenTofu best practices, testing, modules, CI/CD, and security.
 - [Terragrunt](https://terragrunt.com/) — Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infrastructure with reusable configuration, units and dependencies.

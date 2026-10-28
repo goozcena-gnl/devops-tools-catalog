@@ -3,18 +3,18 @@
   "categories": 30,
   "license_models": {
     "commercial": 163,
-    "documentation": 106,
+    "documentation": 105,
     "free-saas": 6,
     "open-core": 113,
     "oss": 932,
-    "source-available": 28,
+    "source-available": 29,
     "unknown": 77
   },
   "statuses": {
-    "active": 816,
+    "active": 826,
     "archived": 10,
     "deprecated": 2,
     "historical": 2,
-    "needs-review": 595
+    "needs-review": 585
   }
 }

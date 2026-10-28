@@ -42,7 +42,7 @@
 | [Azure Functions](https://azure.microsoft.com/en-us/products/functions) | Serverless, edge and WebAssembly | commercial | active |
 | [Azure Functions Host](https://github.com/Azure/azure-functions-host) | Serverless, edge and WebAssembly | oss | needs-review |
 | [Azure Mastery](https://www.azurekt.com) | Documentation, learning and career resources | documentation | needs-review |
-| [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
+| [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Azure Messaging for AWS Professionals](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | active |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
@@ -90,7 +90,7 @@
 | [DigitalOcean](https://www.digitalocean.com) | Cloud platforms and cloud management | commercial | active |
 | [Docker Agent](https://docker.github.io/docker-agent/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Docker Hub MCP](https://hub.docker.com/mcp) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [Docker MCP Gateway](https://github.com/docker/mcp-gateway) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Docker MCP Gateway](https://github.com/docker/mcp-gateway) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Docmost](https://docmost.com/) | Documentation, learning and career resources | open-core | active |
 | [Doppler](https://www.doppler.com) | IAM, secrets and certificate management | commercial | active |
 | [dsoxlab](https://github.com/stephrobert/dsoxlab) | Documentation, learning and career resources | documentation | needs-review |
@@ -119,11 +119,11 @@
 | [Gardener](https://gardener.cloud/) | Kubernetes distributions and operations | oss | active |
 | [genai-agentos](https://github.com/genai-works-org/genai-agentos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [GitHub Copilot](https://github.com/features/copilot) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [GitHub MCP Server](https://github.com/github/github-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [GitHub MCP Server](https://github.com/github/github-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | commercial | active |
 | [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | commercial | active |
-| [Grafana MCP](https://github.com/grafana/mcp-grafana) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Grafana MCP](https://github.com/grafana/mcp-grafana) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [HashiCorp Boundary](https://developer.hashicorp.com/boundary) | IAM, secrets and certificate management | source-available | needs-review |
 | [HashiCorp Vault Community Edition](https://developer.hashicorp.com/vault) | IAM, secrets and certificate management | source-available | active |
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
@@ -146,7 +146,7 @@
 | [JumpServer](https://www.jumpserver.com) | IAM, secrets and certificate management | open-core | active |
 | [k0rdent](https://docs.k0rdent.io/latest) | Kubernetes distributions and operations, Platform engineering and internal developer platforms | oss | active |
 | [K8s in a Box](https://github.com/moabukar/k8s-in-a-box) | Documentation, learning and career resources | documentation | needs-review |
-| [K8sGPT](https://k8sgpt.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [K8sGPT](https://k8sgpt.ai) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [k8squest](https://github.com/Manoj-engineer/k8squest) | Documentation, learning and career resources | documentation | needs-review |
 | [Kelos](https://github.com/kelos-dev/kelos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Keycloak](https://www.keycloak.org) | IAM, secrets and certificate management | oss | active |
@@ -170,7 +170,7 @@
 | [Kubernetes de A à Z](https://github.com/ibrahimbakayoko/kubernetes-de-a-z) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes GitOps Guide](https://github.com/thezawzaw/kubernetes-gitops-guide) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes Learning Path](https://kubernetes.io/docs/home) | Documentation, learning and career resources | documentation | needs-review |
-| [Kubernetes MCP Server](https://github.com/containers/kubernetes-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Kubernetes MCP Server](https://github.com/containers/kubernetes-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [kubernetes-skill for Claude Code](https://lukasniessen.github.io/kubernetes-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Kubex](https://kubex.ai/) | FinOps and sustainability | commercial | active |
 | [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
@@ -185,7 +185,7 @@
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LearnKube](https://learnkube.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | needs-review |
-| [LiteLLM](https://www.litellm.ai) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
+| [LiteLLM](https://www.litellm.ai) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [llm-d](https://github.com/llm-d) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [llmfit](https://github.com/AlexsJones/llmfit) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LM Studio](https://lmstudio.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
@@ -209,11 +209,11 @@
 | [Nutanix Cloud Manager Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | commercial | active |
 | [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
-| [Ollama](https://ollama.com) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Ollama](https://ollama.com) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [OmniRoute](https://omniroute.online/) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [onedr0p/cluster-template](https://github.com/onedr0p/cluster-template) | Documentation, learning and career resources | oss | needs-review |
 | [Open Notebook](https://www.open-notebook.ai) | Documentation, learning and career resources | oss | needs-review |
-| [Open WebUI](https://openwebui.com) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Open WebUI](https://openwebui.com) | MLOps, LLMOps and AI infrastructure | source-available | active |
 | [OpenBao](https://openbao.org) | IAM, secrets and certificate management | oss | active |
 | [OpenCost](https://www.opencost.io) | FinOps and sustainability | oss | active |
 | [OpenFaaS](https://www.openfaas.com) | Serverless, edge and WebAssembly | open-core | needs-review |
@@ -273,7 +273,7 @@
 | [Teller](https://github.com/tellerops/teller) | IAM, secrets and certificate management | oss | needs-review |
 | [Ternary](https://ternary.app) | FinOps and sustainability | unknown | needs-review |
 | [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
-| [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | active |
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | active |

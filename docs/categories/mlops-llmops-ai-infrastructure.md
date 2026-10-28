@@ -218,20 +218,21 @@ Azure platform for building, deploying, and operating AI solutions (models, agen
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Documentation<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-Azure MCP server implementation.
+Microsoft MCP server connecting AI agents to Azure services and resource operations; maintained in microsoft/mcp.
 
 **Use when**
 
-- You want AI tools to interact with Azure resources via the MCP standard.
+- You need MCP-assisted Azure discovery or operations with a dedicated least-privilege identity and an explicit tool allowlist.
 
 **Consider alternatives when**
 
-- You're not on Azure or your AI tooling doesn't support MCP.
+- Do not use a local Azure MCP server with production data or production credentials; Microsoft documents the local deployment for development use.
+- Avoid broad Azure roles, unreviewed mutations or untrusted endpoints; authenticate callers, validate tokens and TLS, and review tool outputs before sending them to a model.
 
-[Official site](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server)
+[Official site](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) · [Documentation](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/overview) · [Source repository](https://github.com/microsoft/mcp)
 
 ### Bito
 
@@ -390,19 +391,21 @@ Docker Hub surface for discovering the containerized servers in Docker's MCP Cat
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
 Docker CLI plugin and gateway for discovering, running, and routing MCP servers in containers.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a Docker CLI gateway to manage containerized MCP servers, profiles, credentials and routing, and can accept an emerging release channel.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- The reviewed GitHub releases are prereleases and Docker Desktop's MCP Toolkit is documented as Beta; no production-supported gateway version or Desktop-to-plugin version mapping is established here.
+- MIT covers the gateway implementation, not Docker Desktop, AI Governance, catalog servers or third-party images; check their separate terms.
+- Container isolation and secret scanning do not guarantee confidentiality: review mounts, Docker daemon access, allowed servers, secrets and network egress, which is not globally denied by default.
 
-[Source repository](https://github.com/docker/mcp-gateway)
+[Documentation](https://docs.docker.com/ai/mcp-catalog-and-toolkit/mcp-gateway/) · [Source repository](https://github.com/docker/mcp-gateway)
 
 ### Docling
 
@@ -542,19 +545,21 @@ AI-powered code completion assistant.
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-GitHub's MCP server implementation.
+Official GitHub MCP server exposing repository, issue and pull-request operations through local or GitHub-hosted connections.
 
 **Use when**
 
-- You want AI assistants to read/write GitHub repos, issues, and PRs via MCP.
+- You need AI-assisted GitHub repository exploration, issue triage or pull-request work with narrowly scoped credentials and reviewed tool permissions.
 
 **Consider alternatives when**
 
-- You use GitLab/Bitbucket or don't need AI-driven GitHub interactions.
+- Avoid broad tokens or unreviewed repository, workflow and issue mutations; treat repository content and tool results as untrusted model inputs.
+- Read-only mode and tool allowlists reduce the exposed tool surface; lockdown is a best-effort content filter, not an authorization boundary or a prompt-injection guarantee.
+- Verify the deployment path for GitHub Enterprise Server; the GitHub-hosted remote server is not available for GHES.
 
-[Source repository](https://github.com/github/github-mcp-server)
+[Documentation](https://github.com/github/github-mcp-server/blob/b98d115bbb080e9555466a96656ec4df605aea21/README.md) · [Source repository](https://github.com/github/github-mcp-server)
 
 ### GitLab MCP Server
 
@@ -580,19 +585,21 @@ GitLab MCP server documentation.
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Model Context Protocol for Grafana.
+MCP server for Grafana observability queries and permission-controlled dashboard and alerting operations.
 
 **Use when**
 
-- You want AI assistants to query dashboards, alerts, and data sources in Grafana.
+- You need AI-assisted Grafana investigation or reviewed dashboard and alerting changes with scoped service-account and datasource permissions.
 
 **Consider alternatives when**
 
-- You don't use Grafana or prefer direct API integrations over MCP.
+- Avoid exposing HTTP transports without caller authentication and TLS or granting broader Grafana and datasource permissions than the selected tools need.
+- Do not treat --disable-write as sufficient when --enable-query or --enable-write-tools restores tools; raw SQL can mutate a datasource if its credentials allow it.
+- Review logs and dashboards for sensitive data, query costs, and each tool's Grafana version and plugin requirements.
 
-[Source repository](https://github.com/grafana/mcp-grafana)
+[Documentation](https://github.com/grafana/mcp-grafana/blob/244d1adde04194ecad15125cb17159a1db50626b/README.md) · [Source repository](https://github.com/grafana/mcp-grafana)
 
 ### Graphify
 
@@ -713,19 +720,21 @@ Kubernetes operator and CLI for allowing AI agents to spawn guarded child-agent 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-AI-powered Kubernetes troubleshooting.
+Kubernetes analyzers for diagnostic triage with optional explanations from a configured AI backend.
 
 **Use when**
 
-- You want natural-language diagnostics for Kubernetes cluster issues.
+- You need Kubernetes diagnostic triage and can approve the analyzers, AI backend, data destinations and cache policy before requesting explanations.
 
 **Consider alternatives when**
 
-- Your team already has strong K8s expertise and established runbooks—AI triage adds little value.
+- When the optional Log analyzer and --explain are enabled, a matching log line can be sent to the configured AI backend on a cache miss; secrets in that text are not generically scrubbed by --anonymize.
+- In the reviewed CLI version, Log is not a default core analyzer and --explain and --anonymize default to false; configured active filters can change the analyzer selection.
+- Do not rely on the privacy page's blanket no-logs statement; scope pod/log RBAC and approve external data transfer, cache retention and human review of AI advice.
 
-[Official site](https://k8sgpt.ai) · [Source repository](https://github.com/k8sgpt-ai/k8sgpt)
+[Official site](https://k8sgpt.ai) · [Documentation](https://docs.k8sgpt.ai/) · [Source repository](https://github.com/k8sgpt-ai/k8sgpt)
 
 ### Kelos
 
@@ -808,19 +817,20 @@ AI assistant for Kubernetes operations.
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Go-native MCP server for Kubernetes and OpenShift with direct API server integration, multi-cluster support, Helm/Tekton toolsets, and no external CLI dependencies (Apache-2.0).
+Go-native MCP server for Kubernetes and OpenShift with direct API access, multi-cluster configuration and optional ecosystem toolsets.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need MCP-assisted Kubernetes or OpenShift diagnostics with scoped kubeconfigs or a dedicated ServiceAccount, minimal RBAC and reviewed tool selection.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Avoid cluster-admin credentials, unnecessary Secret or log access, unreviewed exec or resource mutations, and HTTP endpoints without caller authentication and network controls.
+- For the reviewed version, set TOML read_only = true when needed; disable_destructive is not equivalent to read-only, and tool filtering does not replace Kubernetes RBAC.
 
-[Source repository](https://github.com/containers/kubernetes-mcp-server)
+[Documentation](https://github.com/containers/kubernetes-mcp-server/blob/bcadfee0e724836da2657ba609ff25c27ab35f58/README.md) · [Source repository](https://github.com/containers/kubernetes-mcp-server)
 
 ### kubernetes-skill for Claude Code
 
@@ -960,19 +970,21 @@ Agent skill that researches current topics across web and social sources and syn
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Gateway and proxy for 100+ LLM providers with budgets, rate limiting, logging, and spend tracking.
+LLM SDK and gateway with an MIT-licensed community core and separately licensed Enterprise components; MIT does not cover the whole product.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a multi-provider LLM SDK or gateway with routing, virtual keys, budgets and spend tracking, and can separately review Enterprise features and provider terms.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- MIT applies to community code outside enterprise/; Enterprise production use requires the applicable agreement and a valid license for the required seats, and is not authorized by this catalog entry.
+- The product can ship community and Enterprise functionality in the same image; inspect the selected artifact and enabled features before commercial deployment or redistribution.
+- Self-hosting does not prevent configured providers or logging callbacks from receiving prompts and responses; protect provider and master keys, tenant boundaries, retention and budgets.
 
-[Official site](https://www.litellm.ai) · [Source repository](https://github.com/BerriAI/litellm)
+[Official site](https://www.litellm.ai) · [Documentation](https://docs.litellm.ai/) · [Source repository](https://github.com/BerriAI/litellm)
 
 ### llm-d
 
@@ -1226,19 +1238,21 @@ NVIDIA AI cloud environment, currently described as an internal proving ground, 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Local LLM runtime and model manager; open-source core (model licenses vary).
+MIT-licensed model runtime and manager supporting local inference and optional cloud features; model licenses are separate.
 
 **Use when**
 
-- You need a lightweight CLI/API to run LLMs locally with zero cloud dependency.
+- You need local model inference after downloading the required artifacts, with sufficient RAM or GPU capacity and cloud features disabled when local-only operation is required.
 
 **Consider alternatives when**
 
-- You need production-scale multi-node inference or enterprise support.
+- Do not expose the unauthenticated local API directly to untrusted networks; the default bind is 127.0.0.1:11434, and wider access needs network and authentication controls.
+- For local-only operation, disable cloud features with OLLAMA_NO_CLOUD=1 or the documented server setting, restart the service and provision required model artifacts locally.
+- Review every model's license and hardware requirements separately; the runtime's MIT license grants no uniform rights to model weights or cloud services.
 
-[Official site](https://ollama.com) · [Source repository](https://github.com/ollama/ollama)
+[Official site](https://ollama.com) · [Documentation](https://docs.ollama.com/) · [Source repository](https://github.com/ollama/ollama)
 
 ### OmniRoute
 
@@ -1263,20 +1277,22 @@ Self-hosted gateway that presents multiple AI model providers behind one routing
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Source Available<br>
+**Status:** Active
 
-Self-hosted web UI for running and managing local AI model backends (e.g., Ollama).
+Self-hosted AI web platform for Ollama and compatible APIs; current code uses the custom Open WebUI License with branding conditions, alongside legacy BSD-3-Clause and MIT code.
 
 **Use when**
 
-- You want a ChatGPT-like interface for self-hosted models with multi-user support.
+- You need a self-hosted multi-user AI portal and can meet the current branding conditions, review external providers and restrict executable extensions to trusted administrators.
 
 **Consider alternatives when**
 
-- You only interact with models programmatically and don't need a web frontend.
+- Current licensing from v0.6.6 adds branding restrictions; it is not a project-wide BSD-3-Clause or MIT grant. Legacy rights through v0.6.5 remain under their original licenses.
+- Branding changes require no more than 50 natural persons with direct access in any rolling 30-day period, specific prior written permission, or an executed Enterprise license expressly permitting the change; otherwise preserve the branding.
+- Tools, Functions and Pipelines can execute Python with backend privileges; grant creation and installation rights only to trusted administrators and review provider data flows, stored conversations and documents.
 
-[Official site](https://openwebui.com) · [Source repository](https://github.com/open-webui/open-webui)
+[Official site](https://openwebui.com) · [Documentation](https://docs.openwebui.com/) · [Source repository](https://github.com/open-webui/open-webui)
 
 ### OpenSRE
 
@@ -1492,19 +1508,21 @@ Autonomous AI agent for production operations running 24/7 on your machines to a
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-MCP server for Terraform automation and infrastructure-as-code workflows.
+HashiCorp MCP server for Terraform Registry discovery and authenticated HCP Terraform/Terraform Enterprise workspace and run workflows.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need Terraform Registry context or selected authenticated HCP Terraform/Terraform Enterprise workflows under existing plan, policy and approval controls.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Do not treat ENABLE_TF_OPERATIONS=false as a read-only policy: selected workspace, variable and other writes remain available; allowlist tools and scope HCP/TFE tokens.
+- Review run options, workspace policies and approval paths before enabling run workflows; plans, logs, variables and state may expose sensitive data to clients or models.
+- Do not assume generic local Terraform CLI plan/apply support or that the server's MPL-2.0 license covers Terraform, providers or hosted services.
 
-[Source repository](https://github.com/hashicorp/terraform-mcp-server)
+[Documentation](https://developer.hashicorp.com/terraform/mcp-server/reference) · [Source repository](https://github.com/hashicorp/terraform-mcp-server)
 
 ### terraform-skill
 
