@@ -14,7 +14,7 @@
 - [Apache JMeter](https://jmeter.apache.org) — Load testing and performance measurement tool.
 - [Appcircle](https://appcircle.io) — CI/CD platform for mobile apps.
 - [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) — Kubernetes-native workflow engine for orchestrating DAG-based CI, data, and ML pipelines.
-- [Arize Phoenix](https://arize.com/docs/phoenix) — LLM observability and evaluation platform.
+- [Arize Phoenix](https://arize.com/docs/phoenix) — Self-hostable AI and LLM observability platform for OpenTelemetry/OpenInference tracing, evaluations and experiments; Phoenix server is ELv2 licensed.
 - [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager JSON template format for declarative Azure deployments, with Bicep recommended for new authoring.
 - [Artifact Hub](https://artifacthub.io) — Discover and share packages (Helm charts, operators, etc.).
 - [Artillery](https://www.artillery.io) — Load testing platform and toolkit for HTTP, APIs, and Playwright-based scenarios.
@@ -91,7 +91,7 @@
 - [Earthly](https://earthly.dev) — Dockerfile-like build orchestration CLI; upstream ended active OSS maintenance in April 2025 and retired its Cloud/Satellite services in July 2025.
 - [ecc.tools](https://ecc.tools) — OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
 - [env zero](https://www.envzero.com/) — Commercial infrastructure-as-code control platform for self-service environments, workflow automation, policy, governance, and cloud-cost management.
-- [Evidently](https://github.com/evidentlyai/evidently) — Open-source evaluation and monitoring framework for ML and AI systems.
+- [Evidently](https://www.evidentlyai.com/) — Apache-2.0 Python framework for data quality, drift monitoring and ML/LLM evaluations; separate Evidently Cloud offers managed capabilities.
 - [Firebase Test Lab](https://firebase.google.com/products/test-lab) — Google-hosted mobile application testing service that runs Android and iOS tests on real and virtual devices through Firebase and Google Cloud tooling.
 - [FitNesse](https://fitnesse.org) — Acceptance testing framework.
 - [Flawless](https://github.com/William-Lu-stack/Flawless) — AI SRE AgenticOps agent for autonomous incident detection, diagnosis, and remediation across Kubernetes and cloud infrastructure.
@@ -156,9 +156,9 @@
 - [KusionStack](https://kusionstack.io) — Infrastructure automation platform.
 - [LangChain](https://www.langchain.com) — LLM application framework; OSS libraries with commercial companion products.
 - [Langflow](https://www.langflow.org) — Low-code builder for agentic and RAG applications.
-- [Langfuse](https://langfuse.com) — LLM observability and analytics; OSS self-hosted core with commercial cloud offering.
+- [Langfuse](https://langfuse.com) — Open-core LLM tracing and evaluation platform with a self-hostable MIT core, separately licensed Enterprise modules and managed Cloud offering.
 - [LangGraph](https://www.langchain.com/langgraph) — MIT-licensed orchestration framework and runtime for building stateful, long-running agents.
-- [LangSmith](https://smith.langchain.com) — LLM application development platform with observability, testing, and evaluation (LangChain-affiliated).
+- [LangSmith](https://smith.langchain.com) — Commercial LangSmith platform for LLM and agent observability, evaluations and debugging, with Cloud, Hybrid and Enterprise-licensed self-hosted deployment options.
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill) — Agent skill that researches current topics across web and social sources and synthesizes grounded summaries.
 - [Lefthook](https://lefthook.dev) — Fast Git hooks manager (parallel execution, cross-platform).
 - [Lightpanda Browser](https://lightpanda.io/) — Headless browser engine for JavaScript-driven automation without graphical rendering.
@@ -204,7 +204,7 @@
 - [pre-commit](https://pre-commit.com) — Multi-language Git hook framework (config-driven, reproducible hooks across teams).
 - [Probot DCO](https://probot.github.io/apps/dco) — DCO checks for GitHub pull requests.
 - [ProGet](https://inedo.com/proget) — Universal package manager for DevOps and CI/CD.
-- [Promptfoo](https://www.promptfoo.dev) — Test and evaluate LLM prompts.
+- [Promptfoo](https://www.promptfoo.dev) — MIT-licensed CLI for LLM regression evaluation and red-team testing in CI; generation, grading, sharing and telemetry may use external services.
 - [Pulp](https://pulpproject.org/) — Repository platform for managing and distributing software packages and other content types through plugins.
 - [Pulumi](https://www.pulumi.com) — IaC using real programming languages.
 - [pytest](https://docs.pytest.org/en/stable) — Python test runner with fixtures, parametrization and an extensible plugin ecosystem.

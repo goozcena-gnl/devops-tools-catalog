@@ -10,7 +10,7 @@
 | [agentsmith](https://github.com/PromptPartner/agentsmith) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AITMPL Agents](https://www.aitmpl.com/agents) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Amazon Q Developer](https://aws.amazon.com/q/developer) | MLOps, LLMOps and AI infrastructure | commercial | active |
-| [Arize Phoenix](https://arize.com/docs/phoenix) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Arize Phoenix](https://arize.com/docs/phoenix) | MLOps, LLMOps and AI infrastructure | source-available | active |
 | [AutoGen](https://microsoft.github.io/autogen/stable/index.html) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
@@ -28,7 +28,7 @@
 | [Docker MCP Gateway](https://github.com/docker/mcp-gateway) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Docling](https://docling.ai/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [ecc.tools](https://ecc.tools) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Evidently](https://github.com/evidentlyai/evidently) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Evidently](https://www.evidentlyai.com/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Flawless](https://github.com/William-Lu-stack/Flawless) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [fulling](https://github.com/FullAgent/fulling) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [genai-agentos](https://github.com/genai-works-org/genai-agentos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -51,9 +51,9 @@
 | [kubernetes-skill for Claude Code](https://lukasniessen.github.io/kubernetes-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [LangChain](https://www.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [Langflow](https://www.langflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Langfuse](https://langfuse.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
+| [Langfuse](https://langfuse.com) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [LangGraph](https://www.langchain.com/langgraph) | MLOps, LLMOps and AI infrastructure | oss | active |
-| [LangSmith](https://smith.langchain.com) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
+| [LangSmith](https://smith.langchain.com) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LiteLLM](https://www.litellm.ai) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [llm-d](https://github.com/llm-d) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -76,7 +76,7 @@
 | [peerd](https://peerd.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [pgvector](https://github.com/pgvector/pgvector) | Databases, caching and data infrastructure, MLOps, LLMOps and AI infrastructure | oss | active |
 | [Praesto](https://github.com/federicolepera/praesto) | MLOps, LLMOps and AI infrastructure, Kubernetes networking, storage and add-ons, Emerging and experimental tools | oss | active |
-| [Promptfoo](https://www.promptfoo.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [Promptfoo](https://www.promptfoo.dev) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Qdrant](https://qdrant.tech/) | Databases, caching and data infrastructure, MLOps, LLMOps and AI infrastructure | open-core | active |
 | [Rakazo](https://rakazo.com/) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Ray](https://www.ray.io/) | MLOps, LLMOps and AI infrastructure | oss | active |

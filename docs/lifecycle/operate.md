@@ -43,7 +43,7 @@
 - [Aralez](https://github.com/sadoyan/aralez) — Rust reverse proxy built on Cloudflare Pingora, with TLS, authentication, load balancing, and dynamic discovery through Consul and Kubernetes.
 - [Arcane](https://getarcane.app/) — Self-hosted web interface for managing Docker containers, images, networks, and Compose projects.
 - [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
-- [Arize Phoenix](https://arize.com/docs/phoenix) — LLM observability and evaluation platform.
+- [Arize Phoenix](https://arize.com/docs/phoenix) — Self-hostable AI and LLM observability platform for OpenTelemetry/OpenInference tracing, evaluations and experiments; Phoenix server is ELv2 licensed.
 - [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) — Grafana plugin that provides natural-language observability exploration.
 - [Atmosly](https://atmosly.com) — Platform engineering automation for self-service environments and app delivery.
 - [atop](https://github.com/Atoptool/atop) — Linux system and process monitor that records resource utilization for live and historical analysis.
@@ -202,7 +202,7 @@
 - [etckeeper](https://etckeeper.branchable.com) — Version control for `/etc` (tracks config changes in Git).
 - [Eureka](https://github.com/Netflix/eureka) — Service registry supporting client-side discovery and failover.
 - [Eviden KMS](https://github.com/Cosmian/kms) — Source-available key management server for KMIP, cloud key management, and privacy-enhancing cryptographic workflows, formerly Cosmian KMS.
-- [Evidently](https://github.com/evidentlyai/evidently) — Open-source evaluation and monitoring framework for ML and AI systems.
+- [Evidently](https://www.evidentlyai.com/) — Apache-2.0 Python framework for data quality, drift monitoring and ML/LLM evaluations; separate Evidently Cloud offers managed capabilities.
 - [Exercism](https://exercism.org) — Language practice tracks across many programming languages.
 - [Exoscale SKS](https://www.exoscale.com/sks/) — Exoscale managed Kubernetes service with managed control planes and cloud infrastructure integration.
 - [Exoway](https://www.exoway.io) — Cloud infrastructure and hosting services.
@@ -463,9 +463,9 @@
 - [Lade](https://github.com/zifeo/lade) — MPL-2.0 command-scoped secret and private-network access wrapper using provider-resolved environment variables, short-lived tunnels, shell hooks and agent harness hooks.
 - [LangChain](https://www.langchain.com) — LLM application framework; OSS libraries with commercial companion products.
 - [Langflow](https://www.langflow.org) — Low-code builder for agentic and RAG applications.
-- [Langfuse](https://langfuse.com) — LLM observability and analytics; OSS self-hosted core with commercial cloud offering.
+- [Langfuse](https://langfuse.com) — Open-core LLM tracing and evaluation platform with a self-hostable MIT core, separately licensed Enterprise modules and managed Cloud offering.
 - [LangGraph](https://www.langchain.com/langgraph) — MIT-licensed orchestration framework and runtime for building stateful, long-running agents.
-- [LangSmith](https://smith.langchain.com) — LLM application development platform with observability, testing, and evaluation (LangChain-affiliated).
+- [LangSmith](https://smith.langchain.com) — Commercial LangSmith platform for LLM and agent observability, evaluations and debugging, with Cloud, Hybrid and Enterprise-licensed self-hosted deployment options.
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill) — Agent skill that researches current topics across web and social sources and synthesizes grounded summaries.
 - [Lazydocker](https://github.com/jesseduffield/lazydocker) — Terminal UI for Docker and Docker Compose.
 - [Lens](https://lenshq.io) — Kubernetes IDE (the former open-source core has been retired; current product is proprietary).
@@ -621,7 +621,7 @@
 - [Project Sveltos](https://projectsveltos.io/latest) — Project Sveltos distributes and reconciles cluster add-ons, Helm charts, Kustomize resources and manifests across Kubernetes fleets.
 - [Prometheus](https://prometheus.io) — Open-source metrics monitoring server with a time-series database, PromQL and alerting rules; Alertmanager, exporters and client libraries are separate ecosystem components.
 - [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) — Metrics cache that accepts pushed metrics from short-lived and batch jobs for Prometheus scraping.
-- [Promptfoo](https://www.promptfoo.dev) — Test and evaluate LLM prompts.
+- [Promptfoo](https://www.promptfoo.dev) — MIT-licensed CLI for LLM regression evaluation and red-team testing in CI; generation, grading, sharing and telemetry may use external services.
 - [Prowler](https://prowler.com) — Cloud security posture and compliance assessment platform for AWS, Azure, Google Cloud, and Kubernetes.
 - [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) — Proxmox datacenter management product.
 - [Proxmox Virtual Environment (VE)](https://github.com/proxmox) — Open source virtualization platform (KVM + LXC) with optional enterprise subscription.

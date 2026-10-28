@@ -38,7 +38,7 @@
 - [ArgoCD Diff Preview](https://dag-andersen.github.io/argocd-diff-preview/) — Pull-request diff tool for previewing Argo CD application manifest changes before sync.
 - [ArgoCD Image Updater](https://argocd-image-updater.readthedocs.io/en/stable/) — Automated image updates for ArgoCD.
 - [ArgoCD Vault Plugin](https://argocd-vault-plugin.readthedocs.io/en/stable/) — Integrates secrets from external stores into ArgoCD.
-- [Arize Phoenix](https://arize.com/docs/phoenix) — LLM observability and evaluation platform.
+- [Arize Phoenix](https://arize.com/docs/phoenix) — Self-hostable AI and LLM observability platform for OpenTelemetry/OpenInference tracing, evaluations and experiments; Phoenix server is ELv2 licensed.
 - [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager JSON template format for declarative Azure deployments, with Bicep recommended for new authoring.
 - [Atlantis](https://www.runatlantis.io) — Self-hosted pull-request automation for Terraform and OpenTofu plans and applies.
 - [atmos](https://atmos.tools) — Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
@@ -160,7 +160,7 @@
 - [etcd](https://etcd.io) — Distributed, reliable key-value store used as the primary data store for Kubernetes.
 - [etckeeper](https://etckeeper.branchable.com) — Version control for `/etc` (tracks config changes in Git).
 - [Eureka](https://github.com/Netflix/eureka) — Service registry supporting client-side discovery and failover.
-- [Evidently](https://github.com/evidentlyai/evidently) — Open-source evaluation and monitoring framework for ML and AI systems.
+- [Evidently](https://www.evidentlyai.com/) — Apache-2.0 Python framework for data quality, drift monitoring and ML/LLM evaluations; separate Evidently Cloud offers managed capabilities.
 - [Exoscale SKS](https://www.exoscale.com/sks/) — Exoscale managed Kubernetes service with managed control planes and cloud infrastructure integration.
 - [Exoway](https://www.exoway.io) — Cloud infrastructure and hosting services.
 - [External Secrets Operator](https://external-secrets.io/main) — Sync external secrets into Kubernetes.
@@ -365,9 +365,9 @@
 - [Kyverno](https://kyverno.io) — Kubernetes policy engine for validation, mutation, generation, cleanup and image verification with YAML/CEL policies; signing tools, OPA/Gatekeeper and other Kyverno subprojects remain separate.
 - [LangChain](https://www.langchain.com) — LLM application framework; OSS libraries with commercial companion products.
 - [Langflow](https://www.langflow.org) — Low-code builder for agentic and RAG applications.
-- [Langfuse](https://langfuse.com) — LLM observability and analytics; OSS self-hosted core with commercial cloud offering.
+- [Langfuse](https://langfuse.com) — Open-core LLM tracing and evaluation platform with a self-hostable MIT core, separately licensed Enterprise modules and managed Cloud offering.
 - [LangGraph](https://www.langchain.com/langgraph) — MIT-licensed orchestration framework and runtime for building stateful, long-running agents.
-- [LangSmith](https://smith.langchain.com) — LLM application development platform with observability, testing, and evaluation (LangChain-affiliated).
+- [LangSmith](https://smith.langchain.com) — Commercial LangSmith platform for LLM and agent observability, evaluations and debugging, with Cloud, Hybrid and Enterprise-licensed self-hosted deployment options.
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill) — Agent skill that researches current topics across web and social sources and synthesizes grounded summaries.
 - [Lazydocker](https://github.com/jesseduffield/lazydocker) — Terminal UI for Docker and Docker Compose.
 - [Lens](https://lenshq.io) — Kubernetes IDE (the former open-source core has been retired; current product is proprietary).
@@ -480,7 +480,7 @@
 - [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) — Predictive scaling for Kubernetes workloads.
 - [Project Contour](https://projectcontour.io) — Envoy-powered Kubernetes ingress controller supporting Ingress, HTTPProxy and Gateway API resources.
 - [Project Sveltos](https://projectsveltos.io/latest) — Project Sveltos distributes and reconciles cluster add-ons, Helm charts, Kustomize resources and manifests across Kubernetes fleets.
-- [Promptfoo](https://www.promptfoo.dev) — Test and evaluate LLM prompts.
+- [Promptfoo](https://www.promptfoo.dev) — MIT-licensed CLI for LLM regression evaluation and red-team testing in CI; generation, grading, sharing and telemetry may use external services.
 - [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) — Proxmox datacenter management product.
 - [Proxmox Virtual Environment (VE)](https://github.com/proxmox) — Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
 - [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) — Proxmox optimization utilities.

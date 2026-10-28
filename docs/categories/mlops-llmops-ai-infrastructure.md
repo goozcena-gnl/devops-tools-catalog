@@ -104,20 +104,22 @@ AI code suggestions for AWS and more.
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Source Available<br>
+**Status:** Active
 
-LLM observability and evaluation platform.
+Self-hostable AI and LLM observability platform for OpenTelemetry/OpenInference tracing, evaluations and experiments; Phoenix server is ELv2 licensed.
 
 **Use when**
 
-- You need tracing, evaluation, and debugging for LLM applications with a self-hosted option.
+- You need to self-host LLM traces, evaluations or experiments and accept the Elastic License 2.0 restrictions.
 
 **Consider alternatives when**
 
-- You're not running LLM workloads or already have sufficient observability through your existing stack.
+- You need an OSI-approved open-source licence or intend to offer Phoenix functionality to third parties as a managed service; ELv2 restricts that use.
+- You cannot protect trace payloads and Phoenix UI/OTLP endpoints; self-hosted Phoenix documentation says authentication is disabled by default, so enable authentication and restrict network access.
+- You require assurances that traced prompts, responses or integrations never reach an external model or service without verifying exporters, evaluations and telemetry.
 
-[Official site](https://arize.com/docs/phoenix) · [Source repository](https://github.com/Arize-ai/phoenix)
+[Official site](https://arize.com/docs/phoenix) · [Documentation](https://arize.com/docs/phoenix/self-hosting) · [Source repository](https://github.com/Arize-ai/phoenix)
 
 ### AutoGen
 
@@ -450,19 +452,20 @@ OSS-first ecosystem for agent skills, agents, and security tooling around AI cod
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open-source evaluation and monitoring framework for ML and AI systems.
+Apache-2.0 Python framework for data quality, drift monitoring and ML/LLM evaluations; separate Evidently Cloud offers managed capabilities.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need reproducible data-quality, ML-drift or LLM evaluation checks in Python, locally or within a self-hosted workflow.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You assume Evidently Cloud features, hosted collaboration, alerting or enterprise services are part of the Apache-2.0 Python-library licence.
+- Your datasets or evaluation results are sensitive and you have not reviewed deployment boundaries, storage, hosted endpoints and LLM judge providers.
 
-[Source repository](https://github.com/evidentlyai/evidently)
+[Official site](https://www.evidentlyai.com/) · [Documentation](https://docs.evidentlyai.com/introduction) · [Source repository](https://github.com/evidentlyai/evidently)
 
 ### Flawless
 
@@ -894,19 +897,21 @@ Low-code builder for agentic and RAG applications.
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-LLM observability and analytics; OSS self-hosted core with commercial cloud offering.
+Open-core LLM tracing and evaluation platform with a self-hostable MIT core, separately licensed Enterprise modules and managed Cloud offering.
 
 **Use when**
 
-- You want detailed LLM trace analytics with the option to self-host or use managed cloud.
+- You want self-hosted or managed LLM traces, evaluations, prompt management and operational analytics with explicit hosting and licence boundaries.
 
 **Consider alternatives when**
 
-- You have minimal LLM usage and don't need per-request cost/latency tracking.
+- You require all Langfuse features or all repository files to be MIT-licensed; Enterprise directories and paid features have separate terms.
+- Your deployment cannot protect prompts, traces, ClickHouse/Postgres data and access tokens, or you need retention and security features without checking plan-specific restrictions.
+- You require zero telemetry: OSS can disable application telemetry with TELEMETRY_ENABLED=false; Enterprise self-hosted telemetry used for licence compliance cannot be disabled under standard terms.
 
-[Official site](https://langfuse.com) · [Source repository](https://github.com/langfuse/langfuse)
+[Official site](https://langfuse.com) · [Documentation](https://langfuse.com/self-hosting) · [Source repository](https://github.com/langfuse/langfuse)
 
 ### LangGraph
 
@@ -931,20 +936,21 @@ MIT-licensed orchestration framework and runtime for building stateful, long-run
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Open Core<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-LLM application development platform with observability, testing, and evaluation (LangChain-affiliated).
+Commercial LangSmith platform for LLM and agent observability, evaluations and debugging, with Cloud, Hybrid and Enterprise-licensed self-hosted deployment options.
 
 **Use when**
 
-- You're already using LangChain and want tightly integrated tracing, testing, and prompt management.
+- You need managed or contractually licensed tracing and evaluations for agents across LLM frameworks, and can meet LangSmith billing, access and data-governance requirements.
 
 **Consider alternatives when**
 
-- You don't use LangChain—vendor lock-in to the LangChain ecosystem may not be worth it.
+- You require a redistributable open-source platform; LangSmith is commercially licensed even though LangChain SDKs and integrations may be open-source.
+- You want self-hosted LangSmith without an Enterprise agreement and authorised licence key, or cannot approve trace storage, data residency or contractual restrictions.
 
-[Official site](https://smith.langchain.com)
+[Official site](https://smith.langchain.com) · [Documentation](https://docs.langchain.com/langsmith/observability)
 
 ### last30days-skill
 
@@ -1375,19 +1381,21 @@ Kubernetes-native model cache system using an operator, node agent, and CSI driv
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Test and evaluate LLM prompts.
+MIT-licensed CLI for LLM regression evaluation and red-team testing in CI; generation, grading, sharing and telemetry may use external services.
 
 **Use when**
 
-- You want CI-friendly, automated prompt regression testing and red-teaming.
+- You need reproducible local or CI-based LLM prompt evaluations or authorised red-team tests with configured attack and grading providers.
 
 **Consider alternatives when**
 
-- You're still in early prototyping and prompt stability isn't yet a concern.
+- You cannot permit sensitive application context, prompts or target responses to leave your environment: without suitable local credentials or providers, some red-team generation and grading uses Promptfoo-hosted inference.
+- You treat PROMPTFOO_DISABLE_REMOTE_GENERATION as a complete network isolation control; remote-only plugins, explicitly configured providers, telemetry, sharing and Cloud features require separate checks.
+- You share evaluations, target setup forms or provider configuration containing secrets without reviewing hosted upload destinations and telemetry settings.
 
-[Official site](https://www.promptfoo.dev) · [Source repository](https://github.com/promptfoo/promptfoo)
+[Official site](https://www.promptfoo.dev) · [Documentation](https://www.promptfoo.dev/docs/red-team/quickstart/) · [Source repository](https://github.com/promptfoo/promptfoo)
 
 ### Qdrant
 
