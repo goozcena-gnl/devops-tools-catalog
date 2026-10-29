@@ -2,6 +2,8 @@
 
 **Date:** 2026-10-29 (Europe/Paris). **Status:** evidence-backed canonical patch staged on isolated branch; generated documentation, Python checks and PR gates NOT YET RUN. **Not ready for merge.**
 
+> **Chronology note (2026-10-29):** The preparation and execution-boundary statements below describe the state **when this report was drafted**. They are retained verbatim as historical evidence, not current execution status. The final validation checkpoint at the end records subsequent tests, publication and audit results. A later documentation-only commit creates a new HEAD that requires renewed checks before Ready or merge.
+
 ## Baseline / frozen scope
 
 - Tracking issue: https://github.com/goozcena-gnl/devops-tools-catalog/issues/153
@@ -557,3 +559,39 @@ NEW:
 - Verify `python -m scripts.generate_docs --check`, `python -m scripts.validate_catalog`, `python -m scripts.review_debt --format json`, Ruff lint/format, `python -m pip check`, full pytest, `git diff --check`.
 - Confirm official URL uniqueness and actual link audit before clearing status. Check `main` SHA and strict scope before Draft PR.
 - After successful deterministic checks, commit generated docs and open Draft PR. Check remote quality, CodeQL, Gitleaks, Plumber and strict Full link audit at final SHA. Human approval before Ready or squash merge; never auto-merge.
+
+## Final validation and review checkpoint (2026-10-29)
+
+> **Historical checkpoints vs. current HEAD:** All successful checks below are attached to the **previous**, fully validated Wave 33 SHA `2f76f13d2734b873978d58796bb1b48cd51ca0e0`. This section is being added in a later documentation-only commit; **do not** claim the preceding checks validate its new SHA. The PR must remain Draft until the new SHA has fresh passing checks and a separately run strict link audit.
+
+### Frozen source and scope
+
+- Base `main` at pre-commit check: `7c0e749a7454280b93d7f032af149153d363323b` (unchanged).
+- Prior validated branch HEAD: `2f76f13d2734b873978d58796bb1b48cd51ca0e0`.
+- [PR #154](https://github.com/goozcena-gnl/devops-tools-catalog/pull/154) was opened in **Draft** against `main` and remained open, unmerged, without auto-merge at review time.
+- The prior reviewed diff changed exactly **12 paths**: `data/tools/infrastructure-as-code.yaml`, this report, and **10 deterministically generated** documentation/statistics files. Exactly five canonical IaC IDs changed semantically; the other 30 records and historical `legacy:` entries remained intact.
+- Three evidence-cleared records: `azurenamingtool` (source MIT), `terravision` (source AGPL-3.0-only), and `scalr` (commercial SaaS; **no** product-wide SPDX inherited from its separately licensed provider). `pluralith` and `terraform-aws-eks-operation-scheduler` remain `needs-review` with their unresolved support/licence boundaries. Do not claim operational runtime qualification from `active` status.
+
+### Local and automated validation — prior SHA only
+
+| Gate | Observed result | Provenance |
+| --- | --- | --- |
+| Guarded PowerShell 5.1 preflight, exact scope and provenance | **PASS** | User-provided local run log |
+| Python 3.12 dependencies | **PASS**: 19 exact CI pins, Windows-only `colorama==0.4.6`, `pip check` | User-provided isolated `wave33-py312` environment log |
+| Documentation generation + `--check` | **PASS**: 10 generated files | User-provided local run log |
+| Catalogue validation; Ruff lint/format | **PASS** | User-provided local run log |
+| Full `pytest` | **1,004 passed; 8 skipped** | User-provided local run log |
+| Regenerated global inventory | **1,425** records; **847** `active`; **564** `needs-review`; **75** unknown licensing models | Generated `README.md` and `docs/catalog-statistics.json` on prior SHA |
+| GitHub checks | **8/8 success** including strict audit, Catalogue quality, Gitleaks, Plumber and CodeQL jobs | [PR #154 checks](https://github.com/goozcena-gnl/devops-tools-catalog/pull/154/checks) at `2f76f13d2734b873978d58796bb1b48cd51ca0e0` |
+| Separately dispatched strict Full link audit | **PASS**: `blocking_new: 0`; `blocking_known: 6`; `strict_result: PASS` | [Workflow run #40956748698](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/40956748698) and [report artifact #12933948377](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/40956748698/artifacts/12933948377) |
+| Independent evidence/diff review | **Completed with documentary follow-up** | [Maintainer review on PR #154](https://github.com/goozcena-gnl/devops-tools-catalog/pull/154) |
+
+The six `blocking_known` URLs were pre-existing baseline blockers; **no** exceptions were added, removed or reclassified to obtain PASS. The licence discrepancy between the EKS scheduler's tagged `LICENSE` (Apache-2.0) and same-tag README (MIT) was intentionally left unresolved. The Pluralith CLI MPL-2.0 licence does not establish the UI/API's legal terms or current maintenance.
+
+### Post-documentation-commit release gates (not yet satisfied by this historical report)
+
+1. Verify **only this maintenance report** changed relative to the previously validated branch HEAD; retain the 12-path overall PR allowlist and exactly five amended canonical records.
+2. Record the resulting **new full commit SHA** and confirm `main` remains at the authorized base (or stop and reassess if it changed).
+3. Re-run deterministic documentation check, catalogue validation, dependency/format/lint checks and full `pytest` on the **new HEAD**, or provide trustworthy CI results for the equivalent checks and note any local gates not rerun.
+4. Run the **separate** `.github/workflows/link-check.yml` strict Full link audit on the new HEAD. Verify `blocking_new: 0`, `strict_result: PASS`, and separately disclose `blocking_known` from the logs/artifact. A successful check on the preceding SHA is **not** sufficient.
+5. Update [PR #154](https://github.com/goozcena-gnl/devops-tools-catalog/pull/154) with links to results on the final SHA; obtain **explicit human authorization** before Ready for Review and a separate explicit decision before any merge. **Never enable auto-merge.**
