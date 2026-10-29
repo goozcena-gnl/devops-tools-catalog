@@ -8,7 +8,7 @@
 | [.NET](https://dotnet.microsoft.com/) | Foundations, Linux and scripting | oss | active |
 | [Academy JetBrains](https://academy.jetbrains.com) | Foundations, Linux and scripting | documentation | needs-review |
 | [actionlint](https://rhysd.github.io/actionlint) | Developer experience and local environments | oss | active |
-| [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
+| [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | active |
 | [Addy Osmani Agent Skills](https://skills.addy.ie/) | Developer experience and local environments | oss | active |
 | [AFFiNE](https://affine.pro/) | Documentation, learning and career resources | open-core | active |
 | [AgentsRoom](https://agentsroom.dev/) | Developer experience and local environments | commercial | active |
@@ -439,7 +439,7 @@
 | [Munin](https://munin-monitoring.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [mypy](https://mypy-lang.org) | Developer experience and local environments | oss | active |
 | [MySQL](https://www.mysql.com) | Databases, caching and data infrastructure | open-core | active |
-| [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | needs-review |
+| [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | active |
 | [Nagios](https://www.nagios.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Nautobot](https://docs.nautobot.com/) | Infrastructure as Code | open-core | active |
 | [Nektos Act](https://nektosact.com) | CI, build and testing | oss | active |
@@ -456,7 +456,7 @@
 | [Nixite](https://aspizu.github.io/nixite) | Developer experience and local environments | oss | needs-review |
 | [Node.js](https://nodejs.org/en) | Foundations, Linux and scripting | oss | active |
 | [nOps](https://www.nops.io) | Emerging and experimental tools | unknown | needs-review |
-| [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | needs-review |
+| [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | active |
 | [OCCT](https://www.ocbase.com) | Chaos and performance engineering | unknown | needs-review |
 | [Ocelot](https://ocelot.readthedocs.io/en/latest/) | Kubernetes networking, storage and add-ons | oss | active |
 | [Octopus Deploy](https://octopus.com) | CD, GitOps, release and promotion | commercial | active |
@@ -562,7 +562,7 @@
 | [Rude Tools](https://rudetools.dev) | Emerging and experimental tools | oss | needs-review |
 | [Ruff](https://docs.astral.sh/ruff) | Developer experience and local environments | oss | active |
 | [runc](https://github.com/opencontainers/runc) | Virtualization, bare metal and homelab | oss | needs-review |
-| [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | needs-review |
+| [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | active |
 | [RustFS](https://rustfs.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Salt](https://saltproject.io) | Configuration management | oss | needs-review |
 | [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) | CI, build and testing | unknown | needs-review |
@@ -689,7 +689,7 @@
 | [werf](https://werf.io) | Containers and image tooling | oss | active |
 | [WezTerm](https://wezterm.org) | Developer experience and local environments | oss | needs-review |
 | [WinApps](https://github.com/winapps-org/winapps) | Developer experience and local environments | oss | needs-review |
-| [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | needs-review |
+| [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | active |
 | [Windsurf](https://windsurf.com) | Developer experience and local environments | open-core | needs-review |
 | [Wine](https://www.winehq.org) | Developer experience and local environments | oss | needs-review |
 | [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | active |

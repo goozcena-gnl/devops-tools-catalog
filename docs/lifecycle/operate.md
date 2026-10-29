@@ -7,7 +7,7 @@
 - [1Password Connect](https://www.1password.dev/connect) — Embeddable API server for programmatic access to 1Password vaults from infrastructure and applications.
 - [Academy JetBrains](https://academy.jetbrains.com) — Interactive programming courses and tutorials by JetBrains.
 - [Actions Runner Controller](https://github.com/actions/actions-runner-controller) — Run GitHub Actions runners on Kubernetes.
-- [Activepieces](https://www.activepieces.com) — Workflow automation platform; OSS core with commercial cloud/enterprise features.
+- [Activepieces](https://www.activepieces.com) — Self-hostable visual workflow and AI automation platform with MIT-licensed core and separately licensed enterprise features.
 - [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) — Self-hosted DNS resolver and filtering service for network-wide blocking and DNS controls.
 - [Agent Reach](https://github.com/Panniantong/Agent-Reach) — CLI that gives agents search and reading access across web, social, and code platforms.
 - [agentmemory](https://www.agent-memory.dev) — Local persistent-memory runtime with hooks, MCP, REST, retrieval, and session replay for AI coding agents.
@@ -527,7 +527,7 @@
 - [Munin](https://munin-monitoring.org) — Classic monitoring and graphing tool.
 - [MySQL](https://www.mysql.com) — Relational database server with transactional storage, replication, and a large application ecosystem.
 - [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) — Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups, and upgrades.
-- [n8n](https://n8n.io) — Workflow automation platform (fair-code / Sustainable Use License; not OSI open source).
+- [n8n](https://n8n.io) — Self-hostable visual and code-based workflow/AI automation platform under the restrictive Sustainable Use License, with separately licensed enterprise modules.
 - [Nagios](https://www.nagios.org) — Infrastructure monitoring (Nagios Core).
 - [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) — Kubernetes operator that pauses idle workloads and wakes them on demand to reduce non-production resource consumption.
 - [Nelm](https://github.com/werf/nelm) — Helm-compatible Kubernetes deployment tool and Helm alternative with release planning and resource lifecycle management; not proven a drop-in replacement for every Helm plugin.
@@ -545,7 +545,7 @@
 - [Node.js](https://nodejs.org/en) — Cross-platform JavaScript runtime used to build command-line tools, services, and automation.
 - [Nomad](https://www.nomadproject.io) — HashiCorp workload orchestrator for containerized and non-containerized jobs; Community Edition is source-available and Enterprise features and support require separate entitlements.
 - [ntfy](https://ntfy.sh) — Simple pub-sub notifications (self-hostable).
-- [Numaflow](https://numaflow.numaproj.io) — Kubernetes-native data/stream processing platform.
+- [Numaflow](https://numaflow.numaproj.io) — Apache-2.0 Kubernetes-native stream-processing platform for event-driven, parallel data pipelines with independent sources and sinks.
 - [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) — NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
 - [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) — NVIDIA AI cloud environment, currently described as an internal proving ground, with separately documented Run:ai on DGX Cloud managed subscriptions.
 - [OCCT](https://www.ocbase.com) — Comprehensive system stability and stress testing tool.
@@ -665,7 +665,7 @@
 - [Ruby](https://www.ruby-lang.org/en/) — Programming language and runtime used by automation tools and application services.
 - [Rudder](https://www.rudder.io) — Continuous configuration and automation platform.
 - [runc](https://github.com/opencontainers/runc) — OCI runtime for containers.
-- [Rundeck](https://www.rundeck.com) — Runbook automation and self-service operations platform.
+- [Rundeck](https://www.rundeck.com) — Apache-2.0 runbook and self-service operations automation server with CLI and API; PagerDuty commercial Runbook Automation is a separate offering.
 - [RustFS](https://rustfs.com) — S3-compatible object storage system implemented in Rust.
 - [RustNet](https://github.com/domcyrus/rustnet) — Cross-platform network monitoring TUI with packet inspection, process attribution, filtering, and connection analytics.
 - [Rūsternetes](https://calfonso.github.io/rusternetes) — Educational reimplementation of Kubernetes in Rust.
@@ -787,7 +787,7 @@
 - [webssh](https://github.com/bifrost0x/webssh) — Modern web-based SSH terminal with SFTP file management.
 - [WeKan](https://wekan.fi) — Open-source kanban board for task and project management.
 - [WinBoat](https://www.winboat.app/) — Linux desktop application that runs Windows in a managed virtual machine with integrated applications and filesystem access.
-- [Windmill](https://www.windmill.dev) — Developer platform to build internal tools and automations.
+- [Windmill](https://www.windmill.dev) — Code-first self-hostable workflow, app and AI-agent execution platform with AGPL/Apache open-source components and separately licensed enterprise and distributed-image features.
 - [Wireshark](https://www.wireshark.org) — Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 - [WSL container](https://learn.microsoft.com/en-us/windows/wsl/wsl-container) — Run Linux containers directly inside WSL 2 without a Docker daemon.

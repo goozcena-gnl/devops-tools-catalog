@@ -6,7 +6,7 @@
 | Tool | Categories | Model | Status |
 |---|---|---|---|
 | [actionlint](https://rhysd.github.io/actionlint) | Developer experience and local environments | oss | active |
-| [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
+| [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | active |
 | [Addy Osmani Agent Skills](https://skills.addy.ie/) | Developer experience and local environments | oss | active |
 | [AFFiNE](https://affine.pro/) | Documentation, learning and career resources | open-core | active |
 | [AgentsRoom](https://agentsroom.dev/) | Developer experience and local environments | commercial | active |
@@ -142,13 +142,13 @@
 | [mise](https://mise.jdx.dev/) | Developer experience and local environments | oss | active |
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
 | [mypy](https://mypy-lang.org) | Developer experience and local environments | oss | active |
-| [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | needs-review |
+| [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | active |
 | [Nektos Act](https://nektosact.com) | CI, build and testing | oss | active |
 | [Neovim](https://neovim.io/) | Developer experience and local environments | oss | active |
 | [Ninite](https://ninite.com) | Developer experience and local environments | unknown | needs-review |
 | [Nixite](https://aspizu.github.io/nixite) | Developer experience and local environments | oss | needs-review |
 | [Node.js](https://nodejs.org/en) | Foundations, Linux and scripting | oss | active |
-| [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | needs-review |
+| [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | active |
 | [Octopus Deploy](https://octopus.com) | CD, GitOps, release and promotion | commercial | active |
 | [Odysseus](https://odysseus-dev.github.io/odysseus) | Developer experience and local environments | oss | needs-review |
 | [Oh My Git!](https://ohmygit.org) | Source control and repository management | documentation | needs-review |
@@ -181,7 +181,7 @@
 | [Review Flow](https://dgouron.github.io/review-flow) | CI, build and testing | oss | needs-review |
 | [RTK AI](https://www.rtk-ai.app) | Developer experience and local environments | unknown | needs-review |
 | [Ruff](https://docs.astral.sh/ruff) | Developer experience and local environments | oss | active |
-| [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | needs-review |
+| [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | active |
 | [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) | CI, build and testing | unknown | needs-review |
 | [Schemathesis](https://schemathesis.readthedocs.io/en/stable/) | CI, build and testing | oss | active |
 | [Scrapling](https://scrapling.readthedocs.io/en/latest) | Developer experience and local environments | oss | needs-review |
@@ -225,7 +225,7 @@
 | [WezTerm](https://wezterm.org) | Developer experience and local environments | oss | needs-review |
 | [WinApps](https://github.com/winapps-org/winapps) | Developer experience and local environments | oss | needs-review |
 | [WinBoat](https://www.winboat.app/) | Developer experience and local environments, Virtualization, bare metal and homelab | oss | active |
-| [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | needs-review |
+| [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | active |
 | [Windsurf](https://windsurf.com) | Developer experience and local environments | open-core | needs-review |
 | [Wine](https://www.winehq.org) | Developer experience and local environments | oss | needs-review |
 | [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | active |
