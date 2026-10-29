@@ -258,8 +258,7 @@
   repository_archived: false
 - id: azurenamingtool
   name: AzureNamingTool
-  summary: NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed
-    configuration.
+  summary: "Microsoft Azure Naming Tool web app and REST API for generating Azure resource names from administrator-defined conventions."
   repository_url: https://github.com/Azure/AzureNamingTool
   categories:
   - infrastructure-as-code
@@ -274,18 +273,30 @@
   - plan
   - build
   - deploy
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You want a self-hosted naming convention generator and API for Azure resources."
+  avoid_when:
+  - "You need enforcement of Azure naming policy: generating names is not a replacement for Azure Policy."
+  - "You cannot secure the application's administrative configuration, access and API."
+  deployment_models:
+  - "self-hosted"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:devopstools_final.md#L168
-  needs_review: true
+  - "- legacy:devopstools_final.md#L168"
+  - "https://github.com/Azure/AzureNamingTool/tree/99353c223cdf2e0254f102b5b2ed2c92f5ec2d96"
+  - "https://github.com/Azure/AzureNamingTool/blob/99353c223cdf2e0254f102b5b2ed2c92f5ec2d96/LICENSE"
+  - "https://github.com/Azure/AzureNamingTool/blob/99353c223cdf2e0254f102b5b2ed2c92f5ec2d96/README.md"
+  - "https://github.com/mspnp/AzureNamingTool/wiki"
+  - "https://github.com/Azure/AzureNamingTool/releases/tag/v5.0.3"
+  needs_review: false
+  documentation_url: "https://github.com/mspnp/AzureNamingTool/wiki"
+  license_spdx: "MIT"
+  repository_archived: false
 - id: cdk8s
   name: cdk8s
   summary: Open-source framework that synthesizes Kubernetes YAML from TypeScript, JavaScript, Python,
@@ -794,7 +805,7 @@
   repository_archived: false
 - id: pluralith
   name: Pluralith
-  summary: Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
+  summary: "Terraform plan and state diagramming CLI with a separately accessed UI/API; service licensing and current CLI maintenance still require verification."
   official_url: https://www.pluralith.com
   categories:
   - infrastructure-as-code
@@ -809,18 +820,28 @@
   - plan
   - build
   - deploy
-  use_when: []
-  avoid_when: []
+  use_when:
+  - "You can verify current access and terms for the Pluralith UI/API and want Terraform infrastructure diagrams."
+  avoid_when:
+  - "You require evidence of continuing CLI maintenance: last observed release was March 2023."
+  - "You need an entirely open-source and offline Pluralith product: only the separate CLI's MPL-2.0 licence was established."
   deployment_models: []
   license_model: unknown
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:devopstools_final.md#L181
+  - "- legacy:devopstools_final.md#L181"
+  - "https://github.com/Pluralith/pluralith-cli/tree/2c03ddb60e97fcd858071b6b1190bd376be860e5"
+  - "https://github.com/Pluralith/pluralith-cli/blob/2c03ddb60e97fcd858071b6b1190bd376be860e5/LICENSE"
+  - "https://github.com/Pluralith/pluralith-cli/blob/2c03ddb60e97fcd858071b6b1190bd376be860e5/README.md"
+  - "https://github.com/Pluralith/pluralith-cli/releases/tag/v0.2.2"
+  - "https://www.pluralith.com/"
   needs_review: true
+  repository_url: "https://github.com/Pluralith/pluralith-cli"
+  repository_archived: false
 - id: pulumi
   name: Pulumi
   summary: IaC using real programming languages.
@@ -861,8 +882,8 @@
   needs_review: false
 - id: scalr
   name: Scalr
-  summary: Terraform automation and collaboration software.
-  official_url: https://github.com/Scalr
+  summary: "Commercial Terraform/OpenTofu remote operations platform for central runs, state, policy and drift detection, with optional private run agents."
+  official_url: "https://scalr.com/"
   categories:
   - infrastructure-as-code
   subcategories:
@@ -877,20 +898,31 @@
   - build
   - deploy
   use_when:
-  - You need a Terraform Cloud alternative with OPA policy enforcement and hierarchical configs.
+  - "You need hosted Terraform/OpenTofu remote execution, state, policy-as-code and pull-request workflows."
+  - "You want optional private self-hosted agents while using a managed control plane."
   avoid_when:
-  - Atlantis or native CI pipelines suffice.
-  deployment_models: []
-  license_model: unknown
+  - "You need an open-source or fully self-hosted control plane; self-hosted agents do not make the platform OSS."
+  - "You cannot entrust Terraform state, run logs, credentials or VCS integration to an external service."
+  deployment_models:
+  - "hosted-saas"
+  license_model: "commercial"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L120
-  - legacy:devopstools_final.md#L222
-  needs_review: true
+  - "- legacy:2_Cloud-Infrastructure-Serverless/README.md#L120"
+  - "legacy:devopstools_final.md#L222"
+  - "https://scalr.com/"
+  - "https://scalr.com/pricing"
+  - "https://docs.scalr.io/docs/introduction"
+  - "https://docs.scalr.io/docs/agent-pools"
+  - "https://docs.scalr.io/docs/requirements"
+  - "https://github.com/Scalr/terraform-provider-scalr"
+  needs_review: false
+  documentation_url: "https://docs.scalr.io/docs/introduction"
+  commercial_offering: true
 - id: score
   name: Score
   summary: Score is a platform-agnostic container workload specification expressed in score.yaml; separate
@@ -1035,8 +1067,7 @@
   repository_archived: false
 - id: terraform-aws-eks-operation-scheduler
   name: terraform-aws-eks-operation-scheduler
-  summary: Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge
-    for cost savings.
+  summary: "Terraform module scheduling Amazon EKS worker-node capacity using Lambda and EventBridge; does not pause EKS control-plane billing."
   repository_url: https://github.com/gianniskt/terraform-aws-eks-operation-scheduler
   categories:
   - infrastructure-as-code
@@ -1051,18 +1082,27 @@
   - plan
   - build
   - deploy
-  use_when: []
-  avoid_when: []
+  use_when:
+  - "You need scheduled EKS worker-node capacity changes and can test IAM, time zones and cluster-autoscaler interactions."
+  avoid_when:
+  - "You need resolved SPDX terms: v1.0.4 LICENSE says Apache-2.0 but v1.0.4 README says MIT."
+  - "You expect to suspend EKS control-plane charges by scaling worker nodes to zero."
+  - "You have not tested workloads and recovery during scheduled node scaling."
   deployment_models: []
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:devopstools_final.md#L188
+  - "- legacy:devopstools_final.md#L188"
+  - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/tree/e8e9ed38c27bd76c1f2b3e308dd37aaec9c04f6d"
+  - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/blob/v1.0.4/LICENSE"
+  - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/blob/v1.0.4/README.md"
+  - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/releases/tag/v1.0.4"
   needs_review: true
+  repository_archived: false
 - id: terraform-cloud
   name: HCP Terraform
   summary: HashiCorp-hosted infrastructure-as-code service for collaborative Terraform runs, state, access
@@ -1293,8 +1333,7 @@
   commercial_offering: true
 - id: terravision
   name: terravision
-  summary: Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google,
-    Azure).
+  summary: "Cloud architecture diagram generator from Terraform for AWS, Azure and Google Cloud, with optional AI/MCP integration."
   repository_url: https://github.com/patrickchugh/terravision
   categories:
   - infrastructure-as-code
@@ -1309,18 +1348,29 @@
   - plan
   - build
   - deploy
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You want cloud infrastructure diagrams from Terraform code for local documentation or CI review."
+  - "You can constrain optional AI/MCP tools and review their architecture-data flows."
+  avoid_when:
+  - "Architecture details or Terraform state may be sent to third-party AI services without approved data controls."
+  - "You need a guarantee that generated diagrams or AI-assisted IaC are complete or deployment-safe without review."
+  deployment_models:
+  - "local"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:devopstools_final.md#L190
-  needs_review: true
+  - "- legacy:devopstools_final.md#L190"
+  - "https://github.com/patrickchugh/terravision/tree/849bf43b8bbe074c0f798777e4eb1e7cc825dda2"
+  - "https://github.com/patrickchugh/terravision/blob/849bf43b8bbe074c0f798777e4eb1e7cc825dda2/LICENSE"
+  - "https://github.com/patrickchugh/terravision/blob/849bf43b8bbe074c0f798777e4eb1e7cc825dda2/pyproject.toml"
+  - "https://github.com/patrickchugh/terravision/releases/tag/v0.56.0"
+  needs_review: false
+  license_spdx: "AGPL-3.0-only"
+  repository_archived: false
 - id: tflint
   name: TFLint
   summary: Pluggable Terraform-language linter for local and CI static analysis, including provider-specific

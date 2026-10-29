@@ -1,6 +1,6 @@
 # Wave 33 — Infrastructure as Code: evidence preparation (NOT a clearance)
 
-**Date:** 2026-10-29 (Europe/Paris). **Status:** initial primary-source evidence pass, no canonical edits. **Human review and local deterministic verification still required.**
+**Date:** 2026-10-29 (Europe/Paris). **Status:** evidence-backed canonical patch staged on isolated branch; generated documentation, Python checks and PR gates NOT YET RUN. **Not ready for merge.**
 
 ## Baseline / frozen scope
 
@@ -8,7 +8,7 @@
 - Base `main`: `7c0e749a7454280b93d7f032af149153d363323b` (Wave 32 merged)
 - Canonical YAML: `data/tools/infrastructure-as-code.yaml`, original Git blob `f49d39ebd8b3311bf63514fac811f7b41afcf3f0`.
 - Exactly five selected existing IDs out of 35, 30 other records must remain untouched: `azurenamingtool`, `pluralith`, `scalr`, `terraform-aws-eks-operation-scheduler`, `terravision`.
-- Main README reports 1,425 records / 567 `needs-review` before this review. No projected or verified post-patch counters.
+- Main README reports 1,425 records / 567 `needs-review` before this review. Proposed 3 CLEAR / 2 RETAIN; projected global needs-review count 564, not regenerated/validated. No verified post-patch counters.
 - Strict link baseline, issue #2, schemas, workflows, and existing documentation may change **only** through the standard process; never manipulate link exceptions to obtain a passing result.
 
 ## Initial primary-source evidence (review snapshot, not final approval)
@@ -41,4 +41,519 @@
 
 ## Execution boundary / unverified work
 
-This preparatory document records **reviewed official pointers and unresolved issues**, not a successful patch. The GitHub connector can write repository content but cannot execute the repository's Python 3.12 generator/tests. In the current container GitHub git transport could not resolve `github.com`, and only Python 3.13 was available. Therefore **no canonical YAML, generated documents or tests have been altered or claimed successful**. No Draft PR should be opened from this preparation-only commit.
+The five-record canonical patch has been staged on the isolated branch. Generated Markdown has NOT been regenerated; full Python validation and tests have NOT run; no Draft PR or merge has been created. GitHub transport fails DNS in the execution container, which only has Python 3.13 instead of the repo's pinned Python 3.12.
+
+## Canonical patch — exact OLD/NEW field manifest
+
+### `azurenamingtool` — 11 changed fields
+
+`summary` — OLD:
+```yaml
+  summary: NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed
+    configuration.
+```
+NEW:
+```yaml
+  summary: "Microsoft Azure Naming Tool web app and REST API for generating Azure resource names from administrator-defined conventions."
+```
+
+`documentation_url` — OLD:
+```yaml
+<absent>
+```
+NEW:
+```yaml
+  documentation_url: "https://github.com/mspnp/AzureNamingTool/wiki"
+```
+
+`use_when` — OLD:
+```yaml
+  use_when: []
+```
+NEW:
+```yaml
+  use_when:
+  - "You want a self-hosted naming convention generator and API for Azure resources."
+```
+
+`avoid_when` — OLD:
+```yaml
+  avoid_when: []
+```
+NEW:
+```yaml
+  avoid_when:
+  - "You need enforcement of Azure naming policy: generating names is not a replacement for Azure Policy."
+  - "You cannot secure the application's administrative configuration, access and API."
+```
+
+`deployment_models` — OLD:
+```yaml
+  deployment_models: []
+```
+NEW:
+```yaml
+  deployment_models:
+  - "self-hosted"
+```
+
+`license_spdx` — OLD:
+```yaml
+<absent>
+```
+NEW:
+```yaml
+  license_spdx: "MIT"
+```
+
+`repository_archived` — OLD:
+```yaml
+<absent>
+```
+NEW:
+```yaml
+  repository_archived: false
+```
+
+`status` — OLD:
+```yaml
+  status: needs-review
+```
+NEW:
+```yaml
+  status: "active"
+```
+
+`needs_review` — OLD:
+```yaml
+  needs_review: true
+```
+NEW:
+```yaml
+  needs_review: false
+```
+
+`sources` — OLD:
+```yaml
+  sources:
+  - legacy:devopstools_final.md#L168
+```
+NEW:
+```yaml
+  sources:
+  - "- legacy:devopstools_final.md#L168"
+  - "https://github.com/Azure/AzureNamingTool/tree/99353c223cdf2e0254f102b5b2ed2c92f5ec2d96"
+  - "https://github.com/Azure/AzureNamingTool/blob/99353c223cdf2e0254f102b5b2ed2c92f5ec2d96/LICENSE"
+  - "https://github.com/Azure/AzureNamingTool/blob/99353c223cdf2e0254f102b5b2ed2c92f5ec2d96/README.md"
+  - "https://github.com/mspnp/AzureNamingTool/wiki"
+  - "https://github.com/Azure/AzureNamingTool/releases/tag/v5.0.3"
+```
+
+`verified_on` — OLD:
+```yaml
+  verified_on: '2026-08-03'
+```
+NEW:
+```yaml
+  verified_on: "2026-10-29"
+```
+
+### `pluralith` — 8 changed fields
+
+`summary` — OLD:
+```yaml
+  summary: Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
+```
+NEW:
+```yaml
+  summary: "Terraform plan and state diagramming CLI with a separately accessed UI/API; service licensing and current CLI maintenance still require verification."
+```
+
+`repository_url` — OLD:
+```yaml
+<absent>
+```
+NEW:
+```yaml
+  repository_url: "https://github.com/Pluralith/pluralith-cli"
+```
+
+`use_when` — OLD:
+```yaml
+  use_when: []
+```
+NEW:
+```yaml
+  use_when:
+  - "You can verify current access and terms for the Pluralith UI/API and want Terraform infrastructure diagrams."
+```
+
+`avoid_when` — OLD:
+```yaml
+  avoid_when: []
+```
+NEW:
+```yaml
+  avoid_when:
+  - "You require evidence of continuing CLI maintenance: last observed release was March 2023."
+  - "You need an entirely open-source and offline Pluralith product: only the separate CLI's MPL-2.0 licence was established."
+```
+
+`repository_archived` — OLD:
+```yaml
+<absent>
+```
+NEW:
+```yaml
+  repository_archived: false
+```
+
+`status` — OLD:
+```yaml
+  status: needs-review
+```
+NEW:
+```yaml
+  status: "needs-review"
+```
+
+`sources` — OLD:
+```yaml
+  sources:
+  - legacy:devopstools_final.md#L181
+```
+NEW:
+```yaml
+  sources:
+  - "- legacy:devopstools_final.md#L181"
+  - "https://github.com/Pluralith/pluralith-cli/tree/2c03ddb60e97fcd858071b6b1190bd376be860e5"
+  - "https://github.com/Pluralith/pluralith-cli/blob/2c03ddb60e97fcd858071b6b1190bd376be860e5/LICENSE"
+  - "https://github.com/Pluralith/pluralith-cli/blob/2c03ddb60e97fcd858071b6b1190bd376be860e5/README.md"
+  - "https://github.com/Pluralith/pluralith-cli/releases/tag/v0.2.2"
+  - "https://www.pluralith.com/"
+```
+
+`verified_on` — OLD:
+```yaml
+  verified_on: '2026-08-03'
+```
+NEW:
+```yaml
+  verified_on: "2026-10-29"
+```
+
+### `scalr` — 12 changed fields
+
+`summary` — OLD:
+```yaml
+  summary: Terraform automation and collaboration software.
+```
+NEW:
+```yaml
+  summary: "Commercial Terraform/OpenTofu remote operations platform for central runs, state, policy and drift detection, with optional private run agents."
+```
+
+`official_url` — OLD:
+```yaml
+  official_url: https://github.com/Scalr
+```
+NEW:
+```yaml
+  official_url: "https://scalr.com/"
+```
+
+`documentation_url` — OLD:
+```yaml
+<absent>
+```
+NEW:
+```yaml
+  documentation_url: "https://docs.scalr.io/docs/introduction"
+```
+
+`use_when` — OLD:
+```yaml
+  use_when:
+  - You need a Terraform Cloud alternative with OPA policy enforcement and hierarchical configs.
+```
+NEW:
+```yaml
+  use_when:
+  - "You need hosted Terraform/OpenTofu remote execution, state, policy-as-code and pull-request workflows."
+  - "You want optional private self-hosted agents while using a managed control plane."
+```
+
+`avoid_when` — OLD:
+```yaml
+  avoid_when:
+  - Atlantis or native CI pipelines suffice.
+```
+NEW:
+```yaml
+  avoid_when:
+  - "You need an open-source or fully self-hosted control plane; self-hosted agents do not make the platform OSS."
+  - "You cannot entrust Terraform state, run logs, credentials or VCS integration to an external service."
+```
+
+`deployment_models` — OLD:
+```yaml
+  deployment_models: []
+```
+NEW:
+```yaml
+  deployment_models:
+  - "hosted-saas"
+```
+
+`license_model` — OLD:
+```yaml
+  license_model: unknown
+```
+NEW:
+```yaml
+  license_model: "commercial"
+```
+
+`commercial_offering` — OLD:
+```yaml
+<absent>
+```
+NEW:
+```yaml
+  commercial_offering: true
+```
+
+`status` — OLD:
+```yaml
+  status: needs-review
+```
+NEW:
+```yaml
+  status: "active"
+```
+
+`needs_review` — OLD:
+```yaml
+  needs_review: true
+```
+NEW:
+```yaml
+  needs_review: false
+```
+
+`sources` — OLD:
+```yaml
+  sources:
+  - legacy:2_Cloud-Infrastructure-Serverless/README.md#L120
+  - legacy:devopstools_final.md#L222
+```
+NEW:
+```yaml
+  sources:
+  - "- legacy:2_Cloud-Infrastructure-Serverless/README.md#L120"
+  - "legacy:devopstools_final.md#L222"
+  - "https://scalr.com/"
+  - "https://scalr.com/pricing"
+  - "https://docs.scalr.io/docs/introduction"
+  - "https://docs.scalr.io/docs/agent-pools"
+  - "https://docs.scalr.io/docs/requirements"
+  - "https://github.com/Scalr/terraform-provider-scalr"
+```
+
+`verified_on` — OLD:
+```yaml
+  verified_on: '2026-08-03'
+```
+NEW:
+```yaml
+  verified_on: "2026-10-29"
+```
+
+### `terraform-aws-eks-operation-scheduler` — 7 changed fields
+
+`summary` — OLD:
+```yaml
+  summary: Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge
+    for cost savings.
+```
+NEW:
+```yaml
+  summary: "Terraform module scheduling Amazon EKS worker-node capacity using Lambda and EventBridge; does not pause EKS control-plane billing."
+```
+
+`use_when` — OLD:
+```yaml
+  use_when: []
+```
+NEW:
+```yaml
+  use_when:
+  - "You need scheduled EKS worker-node capacity changes and can test IAM, time zones and cluster-autoscaler interactions."
+```
+
+`avoid_when` — OLD:
+```yaml
+  avoid_when: []
+```
+NEW:
+```yaml
+  avoid_when:
+  - "You need resolved SPDX terms: v1.0.4 LICENSE says Apache-2.0 but v1.0.4 README says MIT."
+  - "You expect to suspend EKS control-plane charges by scaling worker nodes to zero."
+  - "You have not tested workloads and recovery during scheduled node scaling."
+```
+
+`repository_archived` — OLD:
+```yaml
+<absent>
+```
+NEW:
+```yaml
+  repository_archived: false
+```
+
+`status` — OLD:
+```yaml
+  status: needs-review
+```
+NEW:
+```yaml
+  status: "needs-review"
+```
+
+`sources` — OLD:
+```yaml
+  sources:
+  - legacy:devopstools_final.md#L188
+```
+NEW:
+```yaml
+  sources:
+  - "- legacy:devopstools_final.md#L188"
+  - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/tree/e8e9ed38c27bd76c1f2b3e308dd37aaec9c04f6d"
+  - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/blob/v1.0.4/LICENSE"
+  - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/blob/v1.0.4/README.md"
+  - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/releases/tag/v1.0.4"
+```
+
+`verified_on` — OLD:
+```yaml
+  verified_on: '2026-08-03'
+```
+NEW:
+```yaml
+  verified_on: "2026-10-29"
+```
+
+### `terravision` — 10 changed fields
+
+`summary` — OLD:
+```yaml
+  summary: Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google,
+    Azure).
+```
+NEW:
+```yaml
+  summary: "Cloud architecture diagram generator from Terraform for AWS, Azure and Google Cloud, with optional AI/MCP integration."
+```
+
+`use_when` — OLD:
+```yaml
+  use_when: []
+```
+NEW:
+```yaml
+  use_when:
+  - "You want cloud infrastructure diagrams from Terraform code for local documentation or CI review."
+  - "You can constrain optional AI/MCP tools and review their architecture-data flows."
+```
+
+`avoid_when` — OLD:
+```yaml
+  avoid_when: []
+```
+NEW:
+```yaml
+  avoid_when:
+  - "Architecture details or Terraform state may be sent to third-party AI services without approved data controls."
+  - "You need a guarantee that generated diagrams or AI-assisted IaC are complete or deployment-safe without review."
+```
+
+`deployment_models` — OLD:
+```yaml
+  deployment_models: []
+```
+NEW:
+```yaml
+  deployment_models:
+  - "local"
+```
+
+`license_spdx` — OLD:
+```yaml
+<absent>
+```
+NEW:
+```yaml
+  license_spdx: "AGPL-3.0-only"
+```
+
+`repository_archived` — OLD:
+```yaml
+<absent>
+```
+NEW:
+```yaml
+  repository_archived: false
+```
+
+`status` — OLD:
+```yaml
+  status: needs-review
+```
+NEW:
+```yaml
+  status: "active"
+```
+
+`needs_review` — OLD:
+```yaml
+  needs_review: true
+```
+NEW:
+```yaml
+  needs_review: false
+```
+
+`sources` — OLD:
+```yaml
+  sources:
+  - legacy:devopstools_final.md#L190
+```
+NEW:
+```yaml
+  sources:
+  - "- legacy:devopstools_final.md#L190"
+  - "https://github.com/patrickchugh/terravision/tree/849bf43b8bbe074c0f798777e4eb1e7cc825dda2"
+  - "https://github.com/patrickchugh/terravision/blob/849bf43b8bbe074c0f798777e4eb1e7cc825dda2/LICENSE"
+  - "https://github.com/patrickchugh/terravision/blob/849bf43b8bbe074c0f798777e4eb1e7cc825dda2/pyproject.toml"
+  - "https://github.com/patrickchugh/terravision/releases/tag/v0.56.0"
+```
+
+`verified_on` — OLD:
+```yaml
+  verified_on: '2026-08-03'
+```
+NEW:
+```yaml
+  verified_on: "2026-10-29"
+```
+
+
+## Mandatory completion gates
+
+- Exact five IDs changed and 30 untouched ID blocks; retain status/flag alignment; no made-up SPDX; original legacy provenance preserved.
+- Regenerate documentation from the exact canonical YAML using Python 3.12 pinned dependencies. Do not manually change generated files.
+- Verify `python -m scripts.generate_docs --check`, `python -m scripts.validate_catalog`, `python -m scripts.review_debt --format json`, Ruff lint/format, `python -m pip check`, full pytest, `git diff --check`.
+- Confirm official URL uniqueness and actual link audit before clearing status. Check `main` SHA and strict scope before Draft PR.
+- After successful deterministic checks, commit generated docs and open Draft PR. Check remote quality, CodeQL, Gitleaks, Plumber and strict Full link audit at final SHA. Human approval before Ready or squash merge; never auto-merge.
