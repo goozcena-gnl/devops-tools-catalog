@@ -197,7 +197,7 @@ Self-hostable visual and code-based workflow/AI automation platform under the re
 - You want to use .ee modules in production without the applicable n8n Enterprise license.
 - You cannot restrict arbitrary workflow code, third-party nodes, external network access and access to stored credentials.
 
-[Official site](https://n8n.io) · [Documentation](https://docs.n8n.io/sustainable-use-license/) · [Source repository](https://github.com/n8n-io/n8n)
+[Official site](https://n8n.io) · [Documentation](https://docs.n8n.io/) · [Source repository](https://github.com/n8n-io/n8n)
 
 ### Numaflow
 
