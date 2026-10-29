@@ -6,7 +6,7 @@
 | Tool | Categories | Model | Status |
 |---|---|---|---|
 | [Actions Runner Controller](https://github.com/actions/actions-runner-controller) | Kubernetes networking, storage and add-ons | oss | active |
-| [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | needs-review |
+| [Activepieces](https://www.activepieces.com) | Workflow automation and ChatOps | open-core | active |
 | [Agones](https://agones.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AI Gateway (Envoy)](https://aigateway.envoyproxy.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service) | Kubernetes distributions and operations | commercial | active |
@@ -295,7 +295,7 @@
 | [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | active |
 | [Munin](https://munin-monitoring.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | needs-review |
+| [n8n](https://n8n.io) | Workflow automation and ChatOps | source-available | active |
 | [Nagios](https://www.nagios.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Nelm](https://github.com/werf/nelm) | Kubernetes networking, storage and add-ons | oss | active |
@@ -308,7 +308,7 @@
 | [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Nomad](https://www.nomadproject.io) | Kubernetes distributions and operations | source-available | active |
 | [ntfy](https://ntfy.sh) | SRE, incident response and on-call | oss | needs-review |
-| [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | needs-review |
+| [Numaflow](https://numaflow.numaproj.io) | Workflow automation and ChatOps | oss | active |
 | [OCCT](https://www.ocbase.com) | Chaos and performance engineering | unknown | needs-review |
 | [oha](https://github.com/hatoo/oha) | Chaos and performance engineering | oss | active |
 | [OKD](https://okd.io) | Kubernetes distributions and operations | oss | active |
@@ -356,7 +356,7 @@
 | [Robusta](https://home.robusta.dev) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | needs-review |
+| [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | active |
 | [RustNet](https://github.com/domcyrus/rustnet) | SRE, incident response and on-call | oss | needs-review |
 | [Rūsternetes](https://calfonso.github.io/rusternetes) | Kubernetes distributions and operations | oss | needs-review |
 | [Sablier](https://sablierapp.dev/) | Kubernetes distributions and operations | oss | active |
@@ -418,7 +418,7 @@
 | [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [webernetes](https://github.com/ngrok/webernetes) | Kubernetes distributions and operations | oss | needs-review |
 | [WeKan](https://wekan.fi) | Workflow automation and ChatOps | oss | needs-review |
-| [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | needs-review |
+| [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | active |
 | [Wireshark](https://www.wireshark.org) | SRE, incident response and on-call | oss | needs-review |
 | [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
 | [YAML](https://yaml.org) | Kubernetes networking, storage and add-ons | oss | needs-review |

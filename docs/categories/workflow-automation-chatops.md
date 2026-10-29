@@ -10,19 +10,21 @@
 **Categories:** Workflow automation and ChatOps<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Workflow automation platform; OSS core with commercial cloud/enterprise features.
+Self-hostable visual workflow and AI automation platform with MIT-licensed core and separately licensed enterprise features.
 
 **Use when**
 
-- * You want a self-hostable, open-core alternative to Zapier for integrating apps and automating tasks.
+- You need integration workflows or AI-driven automations with a self-hostable builder, reviewed third-party connectors and a defined edition/license.
 
 **Consider alternatives when**
 
-- * You need deep DevOps-specific workflows; it's more suited for business automation.
+- You need enterprise or cloud-edition capabilities under the MIT core license; enterprise directories require separate licensing.
+- You cannot isolate workflow execution from production credentials and untrusted webhooks or audit connector permissions.
+- You assume one-click installation or remote setup scripts are safe without reviewing their content, secrets and infrastructure prerequisites.
 
-[Official site](https://www.activepieces.com) · [Source repository](https://github.com/activepieces/activepieces)
+[Official site](https://www.activepieces.com) · [Documentation](https://www.activepieces.com/docs/install/overview) · [Source repository](https://github.com/activepieces/activepieces)
 
 ### AttuneOps
 
@@ -181,38 +183,41 @@ Self-hostable collaboration platform; open-source core with enterprise editions.
 **Categories:** Workflow automation and ChatOps<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer<br>
 **Model:** Source Available<br>
-**Status:** Needs Review
+**Status:** Active
 
-Workflow automation platform (fair-code / Sustainable Use License; not OSI open source).
+Self-hostable visual and code-based workflow/AI automation platform under the restrictive Sustainable Use License, with separately licensed enterprise modules.
 
 **Use when**
 
-- * You want a self-hostable, visual workflow automation tool with many integrations.
+- You need internal-business or personal automations with integration nodes and can comply with the Sustainable Use License and secure your deployment.
 
 **Consider alternatives when**
 
-- * You need a truly OSS-licensed tool or enterprise-scale orchestration.
+- You require OSI-open-source rights or want to sell, rebrand, provide or distribute a hosted automation service beyond the license restrictions.
+- You want to use .ee modules in production without the applicable n8n Enterprise license.
+- You cannot restrict arbitrary workflow code, third-party nodes, external network access and access to stored credentials.
 
-[Official site](https://n8n.io) · [Source repository](https://github.com/n8n-io/n8n)
+[Official site](https://n8n.io) · [Documentation](https://docs.n8n.io/) · [Source repository](https://github.com/n8n-io/n8n)
 
 ### Numaflow
 
 **Categories:** Workflow automation and ChatOps<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes-native data/stream processing platform.
+Apache-2.0 Kubernetes-native stream-processing platform for event-driven, parallel data pipelines with independent sources and sinks.
 
 **Use when**
 
-- * You need Kubernetes-native stream processing for event-driven data pipelines.
+- You operate Kubernetes and need scalable data stream pipelines with decoupled sources, processing vertices and sinks.
 
 **Consider alternatives when**
 
-- * You need a general-purpose workflow engine or are not on Kubernetes.
+- You need a low-code business workflow or incident runbook engine rather than Kubernetes-native streaming infrastructure.
+- You cannot provide cluster RBAC, storage and observability or validate delivery, ordering and replay semantics with your chosen sources and sinks.
 
-[Official site](https://numaflow.numaproj.io) · [Source repository](https://github.com/numaproj/numaflow)
+[Official site](https://numaflow.numaproj.io) · [Documentation](https://numaflow.numaproj.io) · [Source repository](https://github.com/numaproj/numaflow)
 
 ### Plane
 
@@ -257,19 +262,20 @@ Self-hosted project and issue tracking application with workflows, wikis, and re
 **Categories:** Workflow automation and ChatOps<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Runbook automation and self-service operations platform.
+Apache-2.0 runbook and self-service operations automation server with CLI and API; PagerDuty commercial Runbook Automation is a separate offering.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need audited operator runbooks and delegated execution of repeatable infrastructure tasks using ACL-protected jobs and nodes.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You expect the OSS Rundeck server to include the separate commercial PagerDuty Runbook Automation features or licensing entitlements.
+- You cannot design least-privilege ACLs, segregate job credentials or control who may execute privileged scripts and commands.
 
-[Official site](https://www.rundeck.com) · [Source repository](https://github.com/rundeck/rundeck)
+[Official site](https://www.rundeck.com) · [Documentation](https://docs.rundeck.com/docs/learning/getting-started/acl-overview.html) · [Source repository](https://github.com/rundeck/rundeck)
 
 ### Slack
 
@@ -333,16 +339,18 @@ Open-source kanban board for task and project management.
 **Categories:** Workflow automation and ChatOps<br>
 **Roles:** DevOps Engineer, Site Reliability Engineer, Developer Experience Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Developer platform to build internal tools and automations.
+Code-first self-hostable workflow, app and AI-agent execution platform with AGPL/Apache open-source components and separately licensed enterprise and distributed-image features.
 
 **Use when**
 
-- * You want to build internal tools, scripts, and automations with a code-first approach.
+- You want Git-integrated scripts, scheduled workflows or internal tools with controlled worker execution, self-hosted infrastructure and edition-aware licensing.
 
 **Consider alternatives when**
 
-- * You need a no-code platform or already have a mature internal tools framework.
+- You assume published Community Edition containers are entirely AGPL open source; images also contain proprietary/non-public features under separate restrictions.
+- You intend resale, embedding, white-labelling or managed service use without checking Windmill's commercial license conditions and AGPL obligations.
+- You cannot isolate workers executing arbitrary code, protect database credentials or apply roles, network boundaries and secret controls.
 
-[Official site](https://www.windmill.dev) · [Source repository](https://github.com/windmill-labs/windmill)
+[Official site](https://www.windmill.dev) · [Documentation](https://www.windmill.dev/docs/intro) · [Source repository](https://github.com/windmill-labs/windmill)

@@ -3,7 +3,7 @@
 
 63 records support this lifecycle stage.
 
-- [Activepieces](https://www.activepieces.com) — Workflow automation platform; OSS core with commercial cloud/enterprise features.
+- [Activepieces](https://www.activepieces.com) — Self-hostable visual workflow and AI automation platform with MIT-licensed core and separately licensed enterprise features.
 - [AFFiNE](https://affine.pro/) — Local-first collaborative workspace combining documents, whiteboards, and databases with self-hosting and hosted-service options.
 - [ARM Templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview) — Azure Resource Manager JSON template format for declarative Azure deployments, with Bicep recommended for new authoring.
 - [Atlantis](https://www.runatlantis.io) — Self-hosted pull-request automation for Terraform and OpenTofu plans and applies.
@@ -39,9 +39,9 @@
 - [KusionStack](https://kusionstack.io) — Infrastructure automation platform.
 - [Learn Git Branching](https://learngitbranching.js.org) — Interactive Git learning tool.
 - [Mattermost](https://mattermost.com) — Self-hostable collaboration platform; open-source core with enterprise editions.
-- [n8n](https://n8n.io) — Workflow automation platform (fair-code / Sustainable Use License; not OSI open source).
+- [n8n](https://n8n.io) — Self-hostable visual and code-based workflow/AI automation platform under the restrictive Sustainable Use License, with separately licensed enterprise modules.
 - [Nautobot](https://docs.nautobot.com/) — Network source-of-truth and automation platform with extensible data models and application plugins.
-- [Numaflow](https://numaflow.numaproj.io) — Kubernetes-native data/stream processing platform.
+- [Numaflow](https://numaflow.numaproj.io) — Apache-2.0 Kubernetes-native stream-processing platform for event-driven, parallel data pipelines with independent sources and sinks.
 - [Oh My Git!](https://ohmygit.org) — Git learning game.
 - [OpenTaco](https://opentaco.dev) — OpenTaco, the renamed Digger software project, combines Terraform/OpenTofu PR plan/apply automation with state management, drift workflows and beta remote runs. CI orchestration uses a backend and CI workers; public core and backend licences are distinct from Digger Enterprise terms.
 - [OpenTofu](https://opentofu.org) — Community-governed infrastructure-as-code CLI for declaratively provisioning and managing cloud and on-premises resources.
@@ -52,7 +52,7 @@
 - [Rackula](https://www.racku.la/) — Browser-based rack layout designer for planning equipment placement and exporting rack diagrams.
 - [Redmine](https://www.redmine.org/) — Self-hosted project and issue tracking application with workflows, wikis, and repository integration.
 - [Risk Analysis Editor](https://www.risk-analysis-editor.com/) — Offline browser-based editor for configurable risk registers, treatment plans, matrices, and reports.
-- [Rundeck](https://www.rundeck.com) — Runbook automation and self-service operations platform.
+- [Rundeck](https://www.rundeck.com) — Apache-2.0 runbook and self-service operations automation server with CLI and API; PagerDuty commercial Runbook Automation is a separate offering.
 - [Scalr](https://github.com/Scalr) — Terraform automation and collaboration software.
 - [Score](https://score.dev) — Score is a platform-agnostic container workload specification expressed in score.yaml; separate implementations such as score-compose and score-k8s translate it into platform configuration. The specification repository is not a Kubernetes deployment platform.
 - [Slack](https://slack.com/) — Salesforce-owned hosted collaboration and ChatOps platform for channels, workflows, integrations, and AI-assisted work.
@@ -64,7 +64,7 @@
 - [Terragrunt](https://terragrunt.com/) — Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infrastructure with reusable configuration, units and dependencies.
 - [terravision](https://github.com/patrickchugh/terravision) — Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google, Azure).
 - [WeKan](https://wekan.fi) — Open-source kanban board for task and project management.
-- [Windmill](https://www.windmill.dev) — Developer platform to build internal tools and automations.
+- [Windmill](https://www.windmill.dev) — Code-first self-hostable workflow, app and AI-agent execution platform with AGPL/Apache open-source components and separately licensed enterprise and distributed-image features.
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 
 [Back to catalogue](../../README.md)
