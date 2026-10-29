@@ -162,38 +162,42 @@ GitHub Actions runner security component that observes runtime network, file, an
 **Categories:** Software supply-chain security<br>
 **Roles:** DevSecOps Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Git hooks for Node.js projects (commonly paired with lint-staged).
+Node.js Git hooks manager that installs project-local scripts for pre-commit and other Git lifecycle events.
 
 **Use when**
 
-- In Node.js projects where pairing with lint-staged is the idiomatic approach.
+- You maintain a Node.js project and want versioned local Git hook scripts to run linting or tests before commits.
 
 **Consider alternatives when**
 
-- In polyglot repos—pre-commit or Lefthook handle multiple languages better.
+- You require enforceable commit policy: local hooks can be bypassed with --no-verify or HUSKY=0; enforce critical checks in server-side CI.
+- You cannot review installed shell commands or control package-manager prepare scripts during CI and production installation.
+- Your team uses GUI Git clients or Node version managers without arranging a compatible shell PATH for hooks.
 
-[Official site](https://typicode.github.io/husky) · [Source repository](https://github.com/typicode/husky)
+[Official site](https://typicode.github.io/husky) · [Documentation](https://typicode.github.io/husky/get-started.html) · [Source repository](https://github.com/typicode/husky)
 
 ### Lefthook
 
 **Categories:** Software supply-chain security<br>
 **Roles:** DevSecOps Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Fast Git hooks manager (parallel execution, cross-platform).
+Cross-platform Go-based Git hooks manager with configurable file selection, commands and optional parallel execution.
 
 **Use when**
 
-- You need fast, parallel hook execution without a runtime dependency (single Go binary).
+- You want declarative, cross-language Git hooks, file-aware execution or optional parallel commands with a standalone binary.
 
 **Consider alternatives when**
 
-- Pre-commit's massive hook repository already covers your needs.
+- You need mandatory compliance checks: local hooks can be skipped, so duplicate release and security gates in CI.
+- You run parallel hooks that write to the same files without coordination, or execute commands from untrusted repository configuration.
+- You expect hook installation alone to verify the provenance or safety of third-party scripts and package-manager commands.
 
-[Official site](https://lefthook.dev) · [Source repository](https://github.com/evilmartians/lefthook)
+[Official site](https://lefthook.dev) · [Documentation](https://lefthook.dev) · [Source repository](https://github.com/evilmartians/lefthook)
 
 ### Notary Project
 
@@ -257,19 +261,21 @@ CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and rep
 **Categories:** Software supply-chain security<br>
 **Roles:** DevSecOps Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Multi-language Git hook framework (config-driven, reproducible hooks across teams).
+Multi-language Git hook framework using declarative configuration and managed hook environments for repeatable local or CI checks.
 
 **Use when**
 
-- Your repo spans multiple languages and you want a single, declarative hook config.
+- You need cross-language linting, formatting or validation with pinned hook revisions and repeatable developer and CI execution.
 
 **Consider alternatives when**
 
-- You're in a pure Node.js project where Husky + lint-staged is simpler.
+- You assume local hooks enforce server-side policy: users can bypass them; run pre-commit run --all-files in CI for required gates.
+- You cannot review and pin remote hook repositories or allow first-run downloads and execution of third-party hook code.
+- You require offline setup without a pre-populated cache, hook runtimes or approved dependencies.
 
-[Official site](https://pre-commit.com) · [Source repository](https://github.com/pre-commit/pre-commit)
+[Official site](https://pre-commit.com) · [Documentation](https://pre-commit.com/) · [Source repository](https://github.com/pre-commit/pre-commit)
 
 ### Renovate
 
@@ -314,19 +320,21 @@ Community advisory database for security and maintenance issues in Rust dependen
 **Categories:** Software supply-chain security<br>
 **Roles:** DevSecOps Engineer, Release Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Lightweight Git hooks manager for Node.js.
+Minimal Node.js Git hooks manager using package.json or local configuration, with one command per hook.
 
 **Use when**
 
-- You need a zero-dependency, minimal hooks setup for a small Node.js project.
+- You need a lightweight, low-dependency hook setup for a small Node.js project and can manage explicit installation.
 
 **Consider alternatives when**
 
-- You need parallel execution or per-file staged filtering.
+- You need built-in parallel tasks, multiple independent commands per hook or native staged-file filtering; use a complementary tool or another manager.
+- Your package manager blocks install scripts and you have not configured a supported prepare command or manual installation.
+- You rely on local hooks as mandatory security controls, or cannot review postinstall and hook commands from dependencies.
 
-[Source repository](https://github.com/toplenboren/simple-git-hooks)
+[Documentation](https://github.com/toplenboren/simple-git-hooks/blob/39b29bb8797a29bd62985976975d0751878d36b4/README.md) · [Source repository](https://github.com/toplenboren/simple-git-hooks)
 
 ### StepSecurity
 

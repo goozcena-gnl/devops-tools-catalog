@@ -108,7 +108,7 @@
 | [HashiCorp Vault Community Edition](https://developer.hashicorp.com/vault) | IAM, secrets and certificate management | source-available | active |
 | [hcxdumptool](https://github.com/ZerBea/hcxdumptool) | Application and cloud security | oss | active |
 | [hcxtools](https://github.com/ZerBea/hcxtools) | Application and cloud security | oss | active |
-| [Husky](https://typicode.github.io/husky) | Software supply-chain security | oss | needs-review |
+| [Husky](https://typicode.github.io/husky) | Software supply-chain security | oss | active |
 | [Hybrid Analysis](https://www.hybrid-analysis.com) | Application and cloud security | free-saas | active |
 | [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) | IAM, secrets and certificate management | commercial | active |
 | [Impacket](https://github.com/fortra/impacket) | Application and cloud security | oss | active |
@@ -143,7 +143,7 @@
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
 | [Kubesec](https://kubesec.io) | Kubernetes distributions and operations | oss | active |
 | [Lade](https://github.com/zifeo/lade) | IAM, secrets and certificate management | oss | active |
-| [Lefthook](https://lefthook.dev) | Software supply-chain security | oss | needs-review |
+| [Lefthook](https://lefthook.dev) | Software supply-chain security | oss | active |
 | [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) | Application and cloud security | documentation | needs-review |
 | [Lynis](https://cisofy.com/lynis) | Application and cloud security | open-core | needs-review |
 | [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) | Configuration management, Application and cloud security | commercial | active |
@@ -198,7 +198,7 @@
 | [piqc](https://github.com/paralleliq/piqc) | Application and cloud security | oss | needs-review |
 | [Plumber](https://getplumber.io) | Software supply-chain security, CI, build and testing | oss | active |
 | [Portmaster](https://safing.io) | Application and cloud security | oss | needs-review |
-| [pre-commit](https://pre-commit.com) | Software supply-chain security | oss | needs-review |
+| [pre-commit](https://pre-commit.com) | Software supply-chain security | oss | active |
 | [Pritunl](https://pritunl.com) | Application and cloud security | open-core | needs-review |
 | [ProGet](https://inedo.com/proget) | Artifact and package management | unknown | needs-review |
 | [Prowler](https://prowler.com) | Application and cloud security, Policy, governance and compliance | open-core | active |
@@ -218,7 +218,7 @@
 | [SELinux Project](https://github.com/selinuxproject) | Application and cloud security | oss | needs-review |
 | [Semgrep](https://semgrep.dev) | Application and cloud security | open-core | active |
 | [Shuffle Automation](https://shuffler.io) | Application and cloud security | oss | needs-review |
-| [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | Software supply-chain security | oss | needs-review |
+| [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | Software supply-chain security | oss | active |
 | [SkillSpector](https://github.com/NVIDIA/SkillSpector) | Application and cloud security | oss | needs-review |
 | [SLSA](https://slsa.dev) | Application and cloud security | documentation | needs-review |
 | [slsa-verifier](https://github.com/slsa-framework/slsa-verifier) | Application and cloud security | oss | needs-review |

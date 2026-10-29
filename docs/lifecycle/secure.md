@@ -104,7 +104,7 @@
 - [HashiCorp Vault Community Edition](https://developer.hashicorp.com/vault) — Source-available Vault Community Edition for secrets storage, dynamic credentials and encryption services under BUSL-1.1; Vault Enterprise and HCP Vault offerings have separate commercial product terms.
 - [hcxdumptool](https://github.com/ZerBea/hcxdumptool) — Wireless packet-capture utility for supported Linux Wi-Fi adapters.
 - [hcxtools](https://github.com/ZerBea/hcxtools) — Utilities for converting and processing wireless capture data for security-audit workflows.
-- [Husky](https://typicode.github.io/husky) — Git hooks for Node.js projects (commonly paired with lint-staged).
+- [Husky](https://typicode.github.io/husky) — Node.js Git hooks manager that installs project-local scripts for pre-commit and other Git lifecycle events.
 - [Hybrid Analysis](https://www.hybrid-analysis.com) — Free malware analysis sandbox service powered by CrowdStrike Falcon Sandbox.
 - [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) — Licensed enterprise software for centralized encryption-key serving, storage, rotation, and lifecycle management.
 - [Impacket](https://github.com/fortra/impacket) — Python library and utilities for programmatic access to common network and Windows protocols.
@@ -137,7 +137,7 @@
 - [Kubesec](https://kubesec.io) — Kubernetes manifest security risk scoring through local CLI/container, a self-hosted HTTP API or a best-effort public v2 API, with schema validation and scored recommendations.
 - [Kyverno](https://kyverno.io) — Kubernetes policy engine for validation, mutation, generation, cleanup and image verification with YAML/CEL policies; signing tools, OPA/Gatekeeper and other Kyverno subprojects remain separate.
 - [Lade](https://github.com/zifeo/lade) — MPL-2.0 command-scoped secret and private-network access wrapper using provider-resolved environment variables, short-lived tunnels, shell hooks and agent harness hooks.
-- [Lefthook](https://lefthook.dev) — Fast Git hooks manager (parallel execution, cross-platform).
+- [Lefthook](https://lefthook.dev) — Cross-platform Go-based Git hooks manager with configurable file selection, commands and optional parallel execution.
 - [LOTP (Living Off the Pipeline)](https://boostsecurityio.github.io/lotp) — Reference catalog of CI/CD tools and pipeline foot-guns that can enable workflow injection or unintended code execution.
 - [Lynis](https://cisofy.com/lynis) — Security auditing and hardening tool with an enterprise offering (CISOfy).
 - [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Multi-vendor network configuration management with backups, change tracking, automation and compliance auditing.
@@ -194,7 +194,7 @@
 - [Plumber](https://getplumber.io) — CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
 - [Pocket ID](https://pocket-id.org/) — Self-hosted OpenID Connect provider that authenticates users with passkeys.
 - [Portmaster](https://safing.io) — Self-hosted application firewall and privacy suite for monitoring and controlling network connections.
-- [pre-commit](https://pre-commit.com) — Multi-language Git hook framework (config-driven, reproducible hooks across teams).
+- [pre-commit](https://pre-commit.com) — Multi-language Git hook framework using declarative configuration and managed hook environments for repeatable local or CI checks.
 - [Pritunl](https://pritunl.com) — VPN server for secure remote access; open-source core with commercial features.
 - [Prowler](https://prowler.com) — Cloud security posture and compliance assessment platform for AWS, Azure, Google Cloud, and Kubernetes.
 - [Qubes OS](https://github.com/QubesOS) — Security-focused desktop operating system using Xen-based virtualization for compartmentalization.
@@ -214,7 +214,7 @@
 - [Semgrep](https://semgrep.dev) — Application-security product family combining an LGPL analysis engine, separately licensed community rules, and a commercial hosted platform for SAST, SCA, and secrets scanning.
 - [Shieldlist agent](https://git.lrob.net/Shieldlist/shieldlist-agent) — Host agent that tails service logs and applies rule-based IP sanctions through nftables, with an optional central controller.
 - [Shuffle Automation](https://shuffler.io) — Open-source SOAR platform for security automation and response workflows.
-- [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Lightweight Git hooks manager for Node.js.
+- [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Minimal Node.js Git hooks manager using package.json or local configuration, with one command per hook.
 - [SkillSpector](https://github.com/NVIDIA/SkillSpector) — Security scanner for AI agent skills, prompts, and tool definitions.
 - [SLSA](https://slsa.dev) — Supply-chain Levels for Software Artifacts: a framework and set of standards for improving software supply chain integrity and provenance.
 - [slsa-verifier](https://github.com/slsa-framework/slsa-verifier) — Verify SLSA provenance and attestations for artifacts, images, and packages.

@@ -280,9 +280,11 @@
   needs_review: false
 - id: husky
   name: Husky
-  summary: Git hooks for Node.js projects (commonly paired with lint-staged).
+  summary: "Node.js Git hooks manager that installs project-local scripts for pre-commit and other Git lifecycle events."
   official_url: https://typicode.github.io/husky
   repository_url: https://github.com/typicode/husky
+  repository_archived: false
+  documentation_url: "https://typicode.github.io/husky/get-started.html"
   categories:
   - software-supply-chain-security
   subcategories:
@@ -295,25 +297,37 @@
   - release
   - secure
   use_when:
-  - In Node.js projects where pairing with lint-staged is the idiomatic approach.
+  - "You maintain a Node.js project and want versioned local Git hook scripts to run linting or tests before commits."
   avoid_when:
-  - In polyglot repos—pre-commit or Lefthook handle multiple languages better.
-  deployment_models: []
+  - "You require enforceable commit policy: local hooks can be bypassed with --no-verify or HUSKY=0; enforce critical checks in server-side CI."
+  - "You cannot review installed shell commands or control package-manager prepare scripts during CI and production installation."
+  - "Your team uses GUI Git clients or Node version managers without arranging a compatible shell PATH for hooks."
+  deployment_models:
+  - "local-cli"
   license_model: oss
+  license_spdx: "MIT"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:7_Development-Collaboration/README.md#L66
-  - legacy:devopstools_final.md#L1104
-  needs_review: true
+  - "legacy:7_Development-Collaboration/README.md#L66"
+  - "legacy:devopstools_final.md#L1104"
+  - "https://github.com/typicode/husky"
+  - "https://github.com/typicode/husky/blob/3f0023dc10d7003d70f2e31aa56300eab80e76d6/LICENSE"
+  - "https://typicode.github.io/husky/get-started.html"
+  - "https://typicode.github.io/husky/how-to.html"
+  - "https://git-scm.com/docs/gitfaq"
+  - "https://git-scm.com/docs/githooks"
+  needs_review: false
 - id: lefthook
   name: Lefthook
-  summary: Fast Git hooks manager (parallel execution, cross-platform).
+  summary: "Cross-platform Go-based Git hooks manager with configurable file selection, commands and optional parallel execution."
   official_url: https://lefthook.dev
   repository_url: https://github.com/evilmartians/lefthook
+  repository_archived: false
+  documentation_url: "https://lefthook.dev"
   categories:
   - software-supply-chain-security
   subcategories:
@@ -326,20 +340,30 @@
   - release
   - secure
   use_when:
-  - You need fast, parallel hook execution without a runtime dependency (single Go binary).
+  - "You want declarative, cross-language Git hooks, file-aware execution or optional parallel commands with a standalone binary."
   avoid_when:
-  - Pre-commit's massive hook repository already covers your needs.
-  deployment_models: []
+  - "You need mandatory compliance checks: local hooks can be skipped, so duplicate release and security gates in CI."
+  - "You run parallel hooks that write to the same files without coordination, or execute commands from untrusted repository configuration."
+  - "You expect hook installation alone to verify the provenance or safety of third-party scripts and package-manager commands."
+  deployment_models:
+  - "local-cli"
   license_model: oss
+  license_spdx: "MIT"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:7_Development-Collaboration/README.md#L65
-  - legacy:devopstools_final.md#L1103
-  needs_review: true
+  - "legacy:7_Development-Collaboration/README.md#L65"
+  - "legacy:devopstools_final.md#L1103"
+  - "https://github.com/evilmartians/lefthook"
+  - "https://github.com/evilmartians/lefthook/blob/13d66a090ac6e73f3ff44652761facb02b00e91c/LICENSE"
+  - "https://lefthook.dev"
+  - "https://lefthook.dev/configuration/parallel/"
+  - "https://git-scm.com/docs/gitfaq"
+  - "https://git-scm.com/docs/githooks"
+  needs_review: false
 - id: notary-project
   name: Notary Project
   summary: Notary Project umbrella for OCI artifact-signing and verification specifications and tools,
@@ -434,9 +458,11 @@
   needs_review: false
 - id: pre-commit
   name: pre-commit
-  summary: Multi-language Git hook framework (config-driven, reproducible hooks across teams).
+  summary: "Multi-language Git hook framework using declarative configuration and managed hook environments for repeatable local or CI checks."
   official_url: https://pre-commit.com
   repository_url: https://github.com/pre-commit/pre-commit
+  repository_archived: false
+  documentation_url: "https://pre-commit.com/"
   categories:
   - software-supply-chain-security
   subcategories:
@@ -449,20 +475,30 @@
   - release
   - secure
   use_when:
-  - Your repo spans multiple languages and you want a single, declarative hook config.
+  - "You need cross-language linting, formatting or validation with pinned hook revisions and repeatable developer and CI execution."
   avoid_when:
-  - You're in a pure Node.js project where Husky + lint-staged is simpler.
-  deployment_models: []
+  - "You assume local hooks enforce server-side policy: users can bypass them; run pre-commit run --all-files in CI for required gates."
+  - "You cannot review and pin remote hook repositories or allow first-run downloads and execution of third-party hook code."
+  - "You require offline setup without a pre-populated cache, hook runtimes or approved dependencies."
+  deployment_models:
+  - "local-cli"
+  - "ci"
   license_model: oss
+  license_spdx: "MIT"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:7_Development-Collaboration/README.md#L64
-  - legacy:devopstools_final.md#L1102
-  needs_review: true
+  - "legacy:7_Development-Collaboration/README.md#L64"
+  - "legacy:devopstools_final.md#L1102"
+  - "https://github.com/pre-commit/pre-commit"
+  - "https://github.com/pre-commit/pre-commit/blob/8cb5845c835b1ff72240eb2484239411ec481d92/LICENSE"
+  - "https://pre-commit.com/"
+  - "https://git-scm.com/docs/gitfaq"
+  - "https://git-scm.com/docs/githooks"
+  needs_review: false
 - id: rustsec-advisory-db
   name: RustSec Advisory Database
   summary: Community advisory database for security and maintenance issues in Rust dependencies.
@@ -494,8 +530,10 @@
   needs_review: false
 - id: simple-git-hooks
   name: simple-git-hooks
-  summary: Lightweight Git hooks manager for Node.js.
+  summary: "Minimal Node.js Git hooks manager using package.json or local configuration, with one command per hook."
   repository_url: https://github.com/toplenboren/simple-git-hooks
+  repository_archived: false
+  documentation_url: "https://github.com/toplenboren/simple-git-hooks/blob/39b29bb8797a29bd62985976975d0751878d36b4/README.md"
   categories:
   - software-supply-chain-security
   subcategories:
@@ -508,20 +546,30 @@
   - release
   - secure
   use_when:
-  - You need a zero-dependency, minimal hooks setup for a small Node.js project.
+  - "You need a lightweight, low-dependency hook setup for a small Node.js project and can manage explicit installation."
   avoid_when:
-  - You need parallel execution or per-file staged filtering.
-  deployment_models: []
+  - "You need built-in parallel tasks, multiple independent commands per hook or native staged-file filtering; use a complementary tool or another manager."
+  - "Your package manager blocks install scripts and you have not configured a supported prepare command or manual installation."
+  - "You rely on local hooks as mandatory security controls, or cannot review postinstall and hook commands from dependencies."
+  deployment_models:
+  - "local-cli"
   license_model: oss
+  license_spdx: "MIT"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:7_Development-Collaboration/README.md#L67
-  - legacy:devopstools_final.md#L1105
-  needs_review: true
+  - "legacy:7_Development-Collaboration/README.md#L67"
+  - "legacy:devopstools_final.md#L1105"
+  - "https://github.com/toplenboren/simple-git-hooks"
+  - "https://github.com/toplenboren/simple-git-hooks/blob/39b29bb8797a29bd62985976975d0751878d36b4/LICENSE.txt"
+  - "https://github.com/toplenboren/simple-git-hooks/blob/39b29bb8797a29bd62985976975d0751878d36b4/README.md"
+  - "https://github.com/toplenboren/simple-git-hooks/blob/39b29bb8797a29bd62985976975d0751878d36b4/package.json"
+  - "https://git-scm.com/docs/gitfaq"
+  - "https://git-scm.com/docs/githooks"
+  needs_review: false
 - id: stepsecurity
   name: StepSecurity
   summary: Commercial software supply-chain security platform for GitHub Actions policy, remediation,
