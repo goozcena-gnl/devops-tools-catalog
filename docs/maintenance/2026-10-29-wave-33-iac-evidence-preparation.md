@@ -141,7 +141,7 @@ NEW:
 NEW:
 ```yaml
   sources:
-  - "- legacy:devopstools_final.md#L168"
+  - "legacy:devopstools_final.md#L168"
   - "https://github.com/Azure/AzureNamingTool/tree/99353c223cdf2e0254f102b5b2ed2c92f5ec2d96"
   - "https://github.com/Azure/AzureNamingTool/blob/99353c223cdf2e0254f102b5b2ed2c92f5ec2d96/LICENSE"
   - "https://github.com/Azure/AzureNamingTool/blob/99353c223cdf2e0254f102b5b2ed2c92f5ec2d96/README.md"
@@ -225,7 +225,7 @@ NEW:
 NEW:
 ```yaml
   sources:
-  - "- legacy:devopstools_final.md#L181"
+  - "legacy:devopstools_final.md#L181"
   - "https://github.com/Pluralith/pluralith-cli/tree/2c03ddb60e97fcd858071b6b1190bd376be860e5"
   - "https://github.com/Pluralith/pluralith-cli/blob/2c03ddb60e97fcd858071b6b1190bd376be860e5/LICENSE"
   - "https://github.com/Pluralith/pluralith-cli/blob/2c03ddb60e97fcd858071b6b1190bd376be860e5/README.md"
@@ -350,7 +350,7 @@ NEW:
 NEW:
 ```yaml
   sources:
-  - "- legacy:2_Cloud-Infrastructure-Serverless/README.md#L120"
+  - "legacy:2_Cloud-Infrastructure-Serverless/README.md#L120"
   - "legacy:devopstools_final.md#L222"
   - "https://scalr.com/"
   - "https://scalr.com/pricing"
@@ -429,7 +429,7 @@ NEW:
 NEW:
 ```yaml
   sources:
-  - "- legacy:devopstools_final.md#L188"
+  - "legacy:devopstools_final.md#L188"
   - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/tree/e8e9ed38c27bd76c1f2b3e308dd37aaec9c04f6d"
   - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/blob/v1.0.4/LICENSE"
   - "https://github.com/gianniskt/terraform-aws-eks-operation-scheduler/blob/v1.0.4/README.md"
@@ -533,7 +533,7 @@ NEW:
 NEW:
 ```yaml
   sources:
-  - "- legacy:devopstools_final.md#L190"
+  - "legacy:devopstools_final.md#L190"
   - "https://github.com/patrickchugh/terravision/tree/849bf43b8bbe074c0f798777e4eb1e7cc825dda2"
   - "https://github.com/patrickchugh/terravision/blob/849bf43b8bbe074c0f798777e4eb1e7cc825dda2/LICENSE"
   - "https://github.com/patrickchugh/terravision/blob/849bf43b8bbe074c0f798777e4eb1e7cc825dda2/pyproject.toml"
