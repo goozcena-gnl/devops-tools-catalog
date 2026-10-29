@@ -32,7 +32,7 @@ GitHub repository metadata was checked (each repo is not archived); license file
 
 ### n8n — CLEAR
 
-- **Sustainable Use License (SUL)** restricts use to internal-business/personal and limited noncommercial distribution; not an OSI-approved open source license. `.ee` files require the separately defined Enterprise license. Primary: https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/LICENSE.md and https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/LICENSE_EE.md ; product description: https://docs.n8n.io/sustainable-use-license/
+- **Sustainable Use License (SUL)** restricts use to internal-business/personal and limited noncommercial distribution; not an OSI-approved open source license. `.ee` files require the separately defined Enterprise license. Primary: https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/LICENSE.md and https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/LICENSE_EE.md ; product description: https://docs.n8n.io/
 - Keep `license_model: source-available` and **do not invent SPDX** for SUL; `commercial_offering: true` reflects separately paid features/cloud. License of non-master branches needs separate attention according to the repository terms.
 - Review code nodes, third-party connectors, credential scopes, exposed webhooks and outbound network access. Latest observed release `n8n@2.45.6`.
 
@@ -160,7 +160,7 @@ GitHub repository metadata was checked (each repo is not archived); license file
   "set": {
     "summary": "Self-hostable visual and code-based workflow/AI automation platform under the restrictive Sustainable Use License, with separately licensed enterprise modules.",
     "repository_archived": false,
-    "documentation_url": "https://docs.n8n.io/sustainable-use-license/",
+    "documentation_url": "https://docs.n8n.io/",
     "use_when": [
       "You need internal-business or personal automations with integration nodes and can comply with the Sustainable Use License and secure your deployment."
     ],
@@ -182,7 +182,7 @@ GitHub repository metadata was checked (each repo is not archived); license file
       "legacy:devopstools_final.md#L404",
       "https://github.com/n8n-io/n8n",
       "https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/LICENSE.md",
-      "https://docs.n8n.io/sustainable-use-license/",
+      "https://docs.n8n.io/",
       "https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/LICENSE_EE.md",
       "https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/README.md"
     ],
@@ -423,3 +423,11 @@ GitHub repository metadata was checked (each repo is not archived); license file
 5. Trigger `@codex review` after readiness and verify review completion without findings, rather than inferring it from a green check. Human approval of final diff and **squash merge only**, followed by post-merge CI and local sync. Do not modify historical issue #2.
 
 **Status: CANONICAL PATCH ONLY; GENERATED DOCUMENTATION AND CI NOT YET VERIFIED.**
+
+## 5.1. Link-audit #48 failure and evidence-only corrective change (2026-10-29)
+
+- Strict audit #48 ran against PR SHA `14ec11298eaa2a1a3147228a6df5db204b0f65f5`: `blocking_new: 2`, `blocking_known: 6`, `strict_result: FAIL`.
+- New n8n docs path `/sustainable-use-license/` returned HTTP 404 (both HEAD and fallback GET); replaced with the functioning official documentation root in the `n8n` record (`documentation_url` and `sources`) and the above OLD/NEW evidence manifest. The exact immutable upstream `LICENSE.md` and `LICENSE_EE.md` citations remain the primary legal evidence for SUL and Enterprise terms.
+- Separate, pre-existing Prometheus documentation path `/docs/introduction/overview/` returned HTTP 520 during #48; it returned 200 in audit #47 and is accessible through independent web verification. This is consistent with an intermittent upstream or network error, **not a reason to change the catalogue or whitelist the link**.
+- Old/current YAML field count and fixed review cohort remain unchanged: five reviewed IDs, 58 originally changed canonical fields. This repair changes **two fields within the same `n8n` record**, with no taxonomy, license, status or other tool modification.
+- The affected generated category page must be regenerated deterministically from canonical YAML; check its exact diff before staging. CI, a new strict link audit on the final HEAD, and human review are still blocking. No claim of a passing strict audit has been made.

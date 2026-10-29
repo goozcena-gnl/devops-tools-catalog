@@ -307,7 +307,7 @@
   official_url: https://n8n.io
   repository_url: https://github.com/n8n-io/n8n
   repository_archived: false
-  documentation_url: "https://docs.n8n.io/sustainable-use-license/"
+  documentation_url: "https://docs.n8n.io/"
   categories:
   - workflow-automation-chatops
   subcategories:
@@ -341,7 +341,7 @@
   - "legacy:devopstools_final.md#L404"
   - "https://github.com/n8n-io/n8n"
   - "https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/LICENSE.md"
-  - "https://docs.n8n.io/sustainable-use-license/"
+  - "https://docs.n8n.io/"
   - "https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/LICENSE_EE.md"
   - "https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/README.md"
   needs_review: false
