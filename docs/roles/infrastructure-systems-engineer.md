@@ -38,7 +38,7 @@
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
 | [blocky](https://0xerr0r.github.io/blocky/latest/) | Virtualization, bare metal and homelab, Application and cloud security | oss | active |
 | [bmon](https://jafaral.github.io/bmon/) | Foundations, Linux and scripting | oss | active |
-| [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | needs-review |
+| [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | active |
 | [Bottlerocket](https://bottlerocket.dev) | Virtualization, bare metal and homelab | oss | active |
 | [btop](https://github.com/aristocratos/btop) | Foundations, Linux and scripting | oss | active |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
@@ -201,7 +201,7 @@
 | [Spacelift Deploy](https://spacelift.io) | Infrastructure as Code | commercial | active |
 | [Squid](https://www.squid-cache.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [Starship](https://starship.rs/) | Foundations, Linux and scripting | oss | active |
-| [Stash](https://stash.run) | Backup, disaster recovery and resilience | oss | needs-review |
+| [Stash](https://stash.run) | Backup, disaster recovery and resilience | source-available | active |
 | [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) | Infrastructure as Code | open-core | active |
 | [Sustainable Computing (Kepler)](https://sustainable-computing.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Swiftorial](https://www.swiftorial.com/swiftlessons) | Foundations, Linux and scripting | documentation | needs-review |
@@ -223,7 +223,7 @@
 | [TiKV](https://tikv.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [Tinkerbell](https://tinkerbell.org/) | Virtualization, bare metal and homelab | oss | active |
 | [Tinyauth](https://tinyauth.app/) | IAM, secrets and certificate management | oss | active |
-| [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | unknown | needs-review |
+| [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | commercial | active |
 | [Trippy](https://trippy.rs/) | Foundations, Linux and scripting | oss | active |
 | [Unraid](https://unraid.net) | Virtualization, bare metal and homelab | unknown | needs-review |
 | [Uyuni](https://www.uyuni-project.org/) | Configuration management | oss | active |
@@ -233,7 +233,7 @@
 | [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | active |
 | [Ventoy](https://www.ventoy.net/) | Virtualization, bare metal and homelab | oss | active |
 | [Volare](https://github.com/AdamShannag/volare) | Virtualization, bare metal and homelab | oss | needs-review |
-| [VolSync](https://volsync.readthedocs.io) | Backup, disaster recovery and resilience | oss | needs-review |
+| [VolSync](https://volsync.readthedocs.io) | Backup, disaster recovery and resilience | oss | active |
 | [Webmin](https://webmin.com/) | Configuration management | oss | active |
 | [WinBoat](https://www.winboat.app/) | Developer experience and local environments, Virtualization, bare metal and homelab | oss | active |
 | [WSL container](https://learn.microsoft.com/en-us/windows/wsl/wsl-container) | Virtualization, bare metal and homelab | documentation | needs-review |

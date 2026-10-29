@@ -10,19 +10,21 @@
 **Categories:** Backup, disaster recovery and resilience<br>
 **Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Deduplicating backup program (often used for cluster/VM backups).
+Deduplicating backup CLI with optional compression and authenticated encryption for filesystem data and off-site repositories.
 
 **Use when**
 
-- You need efficient, deduplicated backups with encryption for filesystems or VM/node-level data.
+- You need efficient, encrypted, deduplicated filesystem backups to local or SSH-accessible repositories, with regular restore testing.
 
 **Consider alternatives when**
 
-- You need Kubernetes-native backup of resources and PVs (use Velero/Kasten instead).
+- You need application-consistent backups for live databases or running VMs without coordinating quiescence or snapshots.
+- You cannot protect and separately recover the repository key and passphrase, or have not tested restores.
+- You require Kubernetes resource or PVC orchestration from the backup CLI alone.
 
-[Official site](https://www.borgbackup.org) · [Source repository](https://github.com/borgbackup/borg)
+[Official site](https://www.borgbackup.org) · [Documentation](https://borgbackup.readthedocs.io/en/stable/) · [Source repository](https://github.com/borgbackup/borg)
 
 ### Clonezilla
 
@@ -126,17 +128,19 @@ Kubernetes backup operator that schedules Restic-based PVC and application-aware
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Backup tool for Kubernetes cluster resources.
+CLI and container scripts exporting readable Kubernetes API resources as YAML manifests; not a persistent-volume data backup.
 
 **Use when**
 
-- You need a simple export of Kubernetes resource definitions for disaster recovery or auditing.
+- You need an export of readable Kubernetes resource manifests for inspection or recovery planning, and can independently validate restored objects.
 
 **Consider alternatives when**
 
-- You also need persistent volume data backup (use Velero/Kasten).
+- You need backup of PV contents, application-consistent database state or a complete cluster recovery procedure.
+- You cannot protect exported Secrets, kubeconfigs or pushed Git repositories; README lists git-crypt protection as a future plan, not a guaranteed feature.
+- You require confirmed recent upstream code maintenance or a tested compatibility claim for current Kubernetes versions.
 
-[Official site](https://kube-dump.woozymasta.ru) · [Source repository](https://github.com/WoozyMasta/kube-dump)
+[Official site](https://kube-dump.woozymasta.ru) · [Documentation](https://github.com/WoozyMasta/kube-dump/blob/f1ae560a8b9da8dba1c28619f38089d40d0d2357/README.md) · [Source repository](https://github.com/WoozyMasta/kube-dump)
 
 ### Pacemaker
 
@@ -199,20 +203,22 @@ Encrypted deduplicating backup program for local and remote storage backends.
 
 **Categories:** Backup, disaster recovery and resilience<br>
 **Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Source Available<br>
+**Status:** Active
 
-Backup operator for Kubernetes.
+Kubernetes backup and restore operator for workload volumes; database backup and some advanced capabilities depend on its licensed edition.
 
 **Use when**
 
-- You want a Kubernetes-native backup operator with support for databases, volumes, and scheduled backups.
+- You need Kubernetes-native, policy-driven volume backup and recovery, and can validate the current operator edition and license entitlements.
 
 **Consider alternatives when**
 
-- Velero's ecosystem and community adoption better fits your support needs.
+- You require OSI-approved open-source redistribution and modification rights: current repository artifacts are under a restrictive AppsCode Community License.
+- You expect database backup and enterprise features to be included in the free/community entitlement without checking the product edition.
+- You cannot test restore consistency, protect storage credentials or apply least-privilege RBAC to backup controllers.
 
-[Official site](https://stash.run) · [Source repository](https://github.com/stashed/stash)
+[Official site](https://stash.run) · [Documentation](https://stash.run/docs/v2025.10.17/welcome/) · [Source repository](https://github.com/stashed/stash)
 
 ### Syncthing
 
@@ -237,20 +243,22 @@ Continuous peer-to-peer file synchronization service with encrypted transport an
 
 **Categories:** Backup, disaster recovery and resilience<br>
 **Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Kubernetes backup and recovery platform.
+Commercial subscription-licensed Kubernetes backup and disaster recovery platform for application resources, persistent volumes and KubeVirt workloads.
 
 **Use when**
 
-- You need enterprise backup with application-consistent snapshots and multi-cloud recovery.
+- You need vendor-supported application-centric Kubernetes backup, recovery or cross-cluster migration with commercial licensing and verified CSI integration.
 
 **Consider alternatives when**
 
-- Velero or Kasten already covers your backup requirements.
+- You need a fully open-source, license-free backup platform or cannot accept a subscription license.
+- You assume a time-limited evaluation license provides perpetual production rights, or have not validated worker vCPU pricing and edition terms.
+- You need tested application-consistent recovery but have not configured hooks, storage prerequisites and restore drills.
 
-[Official site](https://trilio.io/products/kubernetes-backup-and-recovery)
+[Official site](https://trilio.io/products/kubernetes-backup-and-recovery) · [Documentation](https://docs.trilio.io/kubernetes)
 
 ### Veeam Kasten for Kubernetes
 
@@ -295,16 +303,18 @@ Open-source backup, restore, disaster-recovery, and migration tooling for Kubern
 **Categories:** Backup, disaster recovery and resilience<br>
 **Roles:** Cloud Engineer, Site Reliability Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Kubernetes volume data replication.
+Kubernetes operator for asynchronous PVC replication using rsync or rclone, with Restic-based volume backup.
 
 **Use when**
 
-- You need asynchronous PV replication across clusters or storage backends for DR.
+- You need storage-independent asynchronous replication of Kubernetes PVC data across namespaces or clusters, or Restic-backed volume copies.
 
 **Consider alternatives when**
 
-- Your storage backend has native replication or you only need full-cluster backup (use Velero).
+- You expect automatic backup of every Kubernetes object, application-consistent databases or zero-RPO/zero-RTO failover without independent orchestration.
+- Your CSI storage lacks the snapshot or clone capabilities required by the chosen copy method, or replicated data and keys are not protected.
+- You cannot satisfy AGPL-3.0 obligations for the operator; API directory files additionally permit Apache-2.0 use.
 
-[Official site](https://volsync.readthedocs.io) · [Source repository](https://github.com/backube/volsync)
+[Official site](https://volsync.readthedocs.io) · [Documentation](https://volsync.readthedocs.io/en/stable/) · [Source repository](https://github.com/backube/volsync)

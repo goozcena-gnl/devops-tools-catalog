@@ -83,7 +83,7 @@
 - [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) — Prometheus multi-target exporter that probes endpoints including HTTP(S), DNS, TCP, ICMP and gRPC and exposes probe results as metrics for a separate monitoring system.
 - [blocky](https://0xerr0r.github.io/blocky/latest/) — Configurable DNS proxy and ad blocker with upstream groups, caching, filtering, and Prometheus metrics.
 - [bmon](https://jafaral.github.io/bmon/) — Terminal bandwidth monitor and rate estimator for network interfaces.
-- [BorgBackup](https://www.borgbackup.org) — Deduplicating backup program (often used for cluster/VM backups).
+- [BorgBackup](https://www.borgbackup.org) — Deduplicating backup CLI with optional compression and authenticated encryption for filesystem data and off-site repositories.
 - [BotKube](https://botkube.io) — Kubernetes troubleshooting and monitoring platform with chat integrations and automation plugins.
 - [Bottlerocket](https://bottlerocket.dev) — Linux-based, security-hardened operating system purpose-built for running containers.
 - [bottom](https://bottom.pages.dev/stable/) — Terminal resource monitor for processes, CPU, memory, and disks.
@@ -394,7 +394,7 @@
 - [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
 - [kube-bench](https://github.com/aquasecurity/kube-bench) — Aqua Security tool that checks Kubernetes node configuration against selected CIS benchmark profiles; it implements checks and does not define the CIS standard or certify full compliance.
 - [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Exports precomputed Kubernetes cluster binpacking metrics.
-- [kube-dump](https://kube-dump.woozymasta.ru) — Backup tool for Kubernetes cluster resources.
+- [kube-dump](https://kube-dump.woozymasta.ru) — CLI and container scripts exporting readable Kubernetes API resources as YAML manifests; not a persistent-volume data backup.
 - [kube-hunter](https://aquasecurity.github.io/kube-hunter) — Legacy Aqua Kubernetes security-assessment tool with passive discovery and optional active exploitation; upstream states it is no longer under active development and recommends Trivy.
 - [Kube-OVN](https://www.kube-ovn.io) — OVN and Open vSwitch-based Kubernetes CNI supporting VPCs, overlays, underlays, and KubeVirt networking.
 - [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) — Kubernetes SIG Instrumentation service exposing Prometheus-format metrics derived from Kubernetes API object state; resource-usage collection by metrics-server or cAdvisor and storage/query by Prometheus are separate.
@@ -709,7 +709,7 @@
 - [SSOReady](https://ssoready.com/) — MIT-licensed SAML and SCIM middleware available as a hosted service or complete self-hosted deployment.
 - [Stakpak](https://stakpak.dev) — Autonomous AI agent for production operations running 24/7 on your machines to auto-heal incidents, manage costs, and monitor infrastructure (Apache-2.0).
 - [Starship](https://starship.rs/) — Configurable cross-shell prompt showing repository and runtime context.
-- [Stash](https://stash.run) — Backup operator for Kubernetes.
+- [Stash](https://stash.run) — Kubernetes backup and restore operator for workload volumes; database backup and some advanced capabilities depend on its licensed edition.
 - [Steampipe](https://steampipe.io/) — AGPL source project for querying cloud APIs with SQL; Turbot-built binaries and hosted services use separate commercial terms.
 - [strace-tui](https://github.com/Rodrigodd/strace-tui) — Terminal UI for visualizing and exploring `strace` output.
 - [Stratoshark](https://stratoshark.org/) — System-call and log analyzer from the Wireshark project for inspecting captured system activity.
@@ -750,7 +750,7 @@
 - [Toxiproxy](https://github.com/Shopify/toxiproxy) — MIT-licensed TCP proxy with an HTTP control API for injecting stream latency, bandwidth limits, timeouts, resets and other faults into connections routed through it.
 - [Tracetest](https://tracetest.io) — Tracetest provides OpenTelemetry trace-based integration testing; source files have mixed MIT and Tracetest Community terms and current support remains unverified.
 - [Traefik Proxy](https://traefik.io/traefik) — Reverse proxy and ingress controller with dynamic service discovery.
-- [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) — Kubernetes backup and recovery platform.
+- [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) — Commercial subscription-licensed Kubernetes backup and disaster recovery platform for application resources, persistent volumes and KubeVirt workloads.
 - [Trippy](https://trippy.rs/) — Cross-platform network diagnostic TUI that combines traceroute and ping with live hop statistics.
 - [Trivy](https://aquasecurity.github.io/trivy) — Vulnerability scanner for containers and Kubernetes.
 - [TrueNAS](https://www.truenas.com) — Storage platform/OS for NAS and SAN with community and enterprise editions.
@@ -778,7 +778,7 @@
 - [Vitess](https://vitess.io) — Database clustering system for horizontal scaling of MySQL.
 - [vLLM](https://vllm.ai) — High-throughput, memory-efficient inference and serving engine for large language models.
 - [Volare](https://github.com/AdamShannag/volare) — Kubernetes volume populator that populates Persistent Volume Claims (PVCs) from multiple external sources concurrently.
-- [VolSync](https://volsync.readthedocs.io) — Kubernetes volume data replication.
+- [VolSync](https://volsync.readthedocs.io) — Kubernetes operator for asynchronous PVC replication using rsync or rclone, with Restic-based volume backup.
 - [VoltAgent](https://voltagent.dev) — Open-source TypeScript framework for building AI agents.
 - [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) — Vertical Pod Autoscaler.
 - [Vultr](https://www.vultr.com) — Commercial public cloud platform for virtual machines, bare metal, GPU compute, managed Kubernetes, storage, networking, and databases.
