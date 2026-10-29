@@ -87,7 +87,7 @@
 | [Harden-Runner](https://github.com/step-security/harden-runner) | Software supply-chain security | open-core | active |
 | [Harness](https://harness.io) | CI, build and testing | commercial | active |
 | [Hurl](https://hurl.dev/) | CI, build and testing | oss | active |
-| [Husky](https://typicode.github.io/husky) | Software supply-chain security | oss | needs-review |
+| [Husky](https://typicode.github.io/husky) | Software supply-chain security | oss | active |
 | [Jasmine](https://jasmine.github.io/) | CI, build and testing | oss | active |
 | [JayeX (formerly Jenkins X)](https://jayex.io/) | CI, build and testing | oss | active |
 | [Jenkins](https://www.jenkins.io) | CI, build and testing | oss | active |
@@ -107,7 +107,7 @@
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
 | [kURL](https://kurl.sh/) | Kubernetes distributions and operations | oss | active |
 | [Learn Git Branching](https://learngitbranching.js.org) | Source control and repository management | documentation | needs-review |
-| [Lefthook](https://lefthook.dev) | Software supply-chain security | oss | needs-review |
+| [Lefthook](https://lefthook.dev) | Software supply-chain security | oss | active |
 | [Lightpanda Browser](https://lightpanda.io/) | CI, build and testing | oss | active |
 | [lychee](https://lychee.cli.rs/) | CI, build and testing, Documentation, learning and career resources | oss | active |
 | [Mantis](https://getmantis.ai) | CI, build and testing | oss | needs-review |
@@ -126,7 +126,7 @@
 | [Playwright](https://playwright.dev) | CI, build and testing | oss | active |
 | [Plumber](https://getplumber.io) | Software supply-chain security, CI, build and testing | oss | active |
 | [Porter](https://github.com/porter-dev) | CD, GitOps, release and promotion | unknown | needs-review |
-| [pre-commit](https://pre-commit.com) | Software supply-chain security | oss | needs-review |
+| [pre-commit](https://pre-commit.com) | Software supply-chain security | oss | active |
 | [Probot DCO](https://probot.github.io/apps/dco) | CI, build and testing | oss | needs-review |
 | [ProGet](https://inedo.com/proget) | Artifact and package management | unknown | needs-review |
 | [Pulp](https://pulpproject.org/) | Artifact and package management | oss | active |
@@ -145,7 +145,7 @@
 | [Semantic Pull Request (GitHub Action)](https://github.com/amannn/action-semantic-pull-request) | CI, build and testing | oss | active |
 | [Semaphore CI](https://semaphore.io/) | CI, build and testing | open-core | active |
 | [ServerSpec](https://serverspec.org) | CI, build and testing | oss | active |
-| [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | Software supply-chain security | oss | needs-review |
+| [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) | Software supply-chain security | oss | active |
 | [Spinnaker](https://spinnaker.io) | CD, GitOps, release and promotion | oss | active |
 | [StepSecurity](https://www.stepsecurity.io/) | Software supply-chain security | commercial | active |
 | [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | commercial | active |

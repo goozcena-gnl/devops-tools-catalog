@@ -48,7 +48,7 @@
 - [Gradle](https://gradle.org) — Flexible build automation tool for Java and other languages.
 - [Harbor](https://goharbor.io) — Cloud-native registry for storing, signing, and scanning container images.
 - [Harden-Runner](https://github.com/step-security/harden-runner) — GitHub Actions runner security component that observes runtime network, file, and process activity.
-- [Husky](https://typicode.github.io/husky) — Git hooks for Node.js projects (commonly paired with lint-staged).
+- [Husky](https://typicode.github.io/husky) — Node.js Git hooks manager that installs project-local scripts for pre-commit and other Git lifecycle events.
 - [JayeX (formerly Jenkins X)](https://jayex.io/) — JayeX, formerly Jenkins X, is a Kubernetes CI/CD and GitOps tool suite using Tekton and Lighthouse, with the Apache-2.0 jx CLI and separately maintained components.
 - [Jenkins](https://www.jenkins.io) — MIT-licensed Jenkins automation server for controller/agent CI/CD pipelines, with independently licensed plugins and operator-managed execution infrastructure.
 - [JFrog Artifactory](https://jfrog.com/artifactory) — Universal artifact repository manager.
@@ -63,7 +63,7 @@
 - [KubeChecks](https://kubechecks.readthedocs.io/en/latest) — Pre-merge Kubernetes GitOps application change review that integrates with Kubernetes and Argo CD rather than reconciling deployments itself.
 - [Kubesearch](https://kubesearch.dev) — Search engine for Helm charts and Kubernetes packages.
 - [kURL](https://kurl.sh/) — Toolkit for packaging customized offline-capable Kubernetes installers for software appliances.
-- [Lefthook](https://lefthook.dev) — Fast Git hooks manager (parallel execution, cross-platform).
+- [Lefthook](https://lefthook.dev) — Cross-platform Go-based Git hooks manager with configurable file selection, commands and optional parallel execution.
 - [lychee](https://lychee.cli.rs/) — Asynchronous command-line link checker for Markdown, HTML, reStructuredText, websites, and other inputs.
 - [Netlify](https://www.netlify.com/) — Managed web application platform for Git- and API-driven deployment, previews, functions, and global delivery.
 - [Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) — Sonatype artifact repository family with open-source Core, separately licensed Community and Professional editions, and managed Cloud hosting.
@@ -77,7 +77,7 @@
 - [Packer](https://www.packer.io) — HashiCorp machine-image build CLI that creates reproducible images for multiple platforms from one configuration, with separately licensed plugins and HCP image metadata services.
 - [Piku](https://piku.github.io) — Heroku-like mini PaaS.
 - [Porter](https://github.com/porter-dev) — Porter cloud platform for deploying applications into user-owned Kubernetes clusters; current commercial and source-licence boundaries require review.
-- [pre-commit](https://pre-commit.com) — Multi-language Git hook framework (config-driven, reproducible hooks across teams).
+- [pre-commit](https://pre-commit.com) — Multi-language Git hook framework using declarative configuration and managed hook environments for repeatable local or CI checks.
 - [ProGet](https://inedo.com/proget) — Universal package manager for DevOps and CI/CD.
 - [Pulp](https://pulpproject.org/) — Repository platform for managing and distributing software packages and other content types through plugins.
 - [Qovery](https://www.qovery.com) — Commercial Kubernetes control-plane platform with a GPL-licensed orchestration engine that operates workloads and infrastructure in customer cloud accounts.
@@ -85,7 +85,7 @@
 - [sbt](https://www.scala-sbt.org) — Interactive build tool for Scala, Java, and other JVM projects.
 - [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
 - [Shipwright](https://shipwright.io) — Kubernetes-native image-build orchestration using Build and BuildRun resources and pluggable build strategies backed by Tekton.
-- [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Lightweight Git hooks manager for Node.js.
+- [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Minimal Node.js Git hooks manager using package.json or local configuration, with one command per hook.
 - [Skopeo](https://github.com/podman-container-tools/skopeo) — Daemonless tool to inspect, copy and synchronize remote OCI/container images and registries without building or running images.
 - [Spinnaker](https://spinnaker.io) — Open-source multi-cloud continuous delivery platform for orchestrating application releases and deployment strategies.
 - [StepSecurity](https://www.stepsecurity.io/) — Commercial software supply-chain security platform for GitHub Actions policy, remediation, and runner runtime protection.

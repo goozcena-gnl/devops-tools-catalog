@@ -121,7 +121,7 @@
 - [Hermes Agent](https://hermes-agent.nousresearch.com) — Agent framework and runtime from Nous Research.
 - [Hoji AI](https://hoji.ai) — AI assistant for GitHub workflows.
 - [Hortator](https://hortator.ai) — Kubernetes operator and CLI for allowing AI agents to spawn guarded child-agent workloads.
-- [Husky](https://typicode.github.io/husky) — Git hooks for Node.js projects (commonly paired with lint-staged).
+- [Husky](https://typicode.github.io/husky) — Node.js Git hooks manager that installs project-local scripts for pre-commit and other Git lifecycle events.
 - [Infracost](https://www.infracost.io) — Cost estimates for IaC projects.
 - [Jasmine](https://jasmine.github.io/) — Behavior-driven JavaScript testing framework for browser and Node.js applications.
 - [JayeX (formerly Jenkins X)](https://jayex.io/) — JayeX, formerly Jenkins X, is a Kubernetes CI/CD and GitOps tool suite using Tekton and Lighthouse, with the Apache-2.0 jx CLI and separately maintained components.
@@ -160,7 +160,7 @@
 - [LangGraph](https://www.langchain.com/langgraph) — MIT-licensed orchestration framework and runtime for building stateful, long-running agents.
 - [LangSmith](https://smith.langchain.com) — Commercial LangSmith platform for LLM and agent observability, evaluations and debugging, with Cloud, Hybrid and Enterprise-licensed self-hosted deployment options.
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill) — Agent skill that researches current topics across web and social sources and synthesizes grounded summaries.
-- [Lefthook](https://lefthook.dev) — Fast Git hooks manager (parallel execution, cross-platform).
+- [Lefthook](https://lefthook.dev) — Cross-platform Go-based Git hooks manager with configurable file selection, commands and optional parallel execution.
 - [Lightpanda Browser](https://lightpanda.io/) — Headless browser engine for JavaScript-driven automation without graphical rendering.
 - [LiteLLM](https://www.litellm.ai) — LLM SDK and gateway with an MIT-licensed community core and separately licensed Enterprise components; MIT does not cover the whole product.
 - [llm-d](https://github.com/llm-d) — Kubernetes-native high-performance distributed LLM inference framework for serving models at scale.
@@ -201,7 +201,7 @@
 - [Playwright](https://playwright.dev) — Cross-browser web test runner and browser automation framework supporting Chromium, Firefox and WebKit.
 - [Plumber](https://getplumber.io) — CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
 - [Pluralith](https://www.pluralith.com) — Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
-- [pre-commit](https://pre-commit.com) — Multi-language Git hook framework (config-driven, reproducible hooks across teams).
+- [pre-commit](https://pre-commit.com) — Multi-language Git hook framework using declarative configuration and managed hook environments for repeatable local or CI checks.
 - [Probot DCO](https://probot.github.io/apps/dco) — DCO checks for GitHub pull requests.
 - [ProGet](https://inedo.com/proget) — Universal package manager for DevOps and CI/CD.
 - [Promptfoo](https://www.promptfoo.dev) — MIT-licensed CLI for LLM regression evaluation and red-team testing in CI; generation, grading, sharing and telemetry may use external services.
@@ -228,7 +228,7 @@
 - [ServerSpec](https://serverspec.org) — Ruby/RSpec-based server-state assertions for installed packages, services, ports and configuration.
 - [Shipwright](https://shipwright.io) — Kubernetes-native image-build orchestration using Build and BuildRun resources and pluggable build strategies backed by Tekton.
 - [Sim](https://www.sim.ai) — AI workspace for building, deploying, and monitoring agentic workflows.
-- [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Lightweight Git hooks manager for Node.js.
+- [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Minimal Node.js Git hooks manager using package.json or local configuration, with one command per hook.
 - [Skaffold](https://skaffold.dev) — Client-side container-development CLI for build, test, push, deploy and debug loops with Kubernetes and other supported targets; upstream plans repository archival on 29 January 2027.
 - [Skopeo](https://github.com/podman-container-tools/skopeo) — Daemonless tool to inspect, copy and synchronize remote OCI/container images and registries without building or running images.
 - [Spin](https://spinframework.dev) — Framework for building and running serverless WebAssembly applications.

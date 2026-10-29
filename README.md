@@ -21,11 +21,11 @@ The DevOps ecosystem changes faster than a static list can safely represent: pro
 | Categories | **30** |
 | Engineering roles | **13** |
 | Lifecycle stages | **12** |
-| Records not flagged for review | **845** |
-| Records requiring review | **580** |
+| Records not flagged for review | **849** |
+| Records requiring review | **576** |
 | Deprecated, archived, or historical records | **14** |
 | Archived source repositories | **14** |
-| Most recent recorded verification date | **2026-10-28** |
+| Most recent recorded verification date | **2026-10-29** |
 
 Review debt is deliberate and actionable; it is not hidden to improve the numbers. A record marked `needs-review` is useful discovery context, not a verified recommendation.
 
@@ -143,8 +143,8 @@ needs_review: false
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 831 |
-| `needs-review` | Imported but not yet fully verified. | 580 |
+| `active` | Maintained according to recorded primary-source evidence. | 835 |
+| `needs-review` | Imported but not yet fully verified. | 576 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 10 |
 | `historical` | Retained for context or migration work. | 2 |
