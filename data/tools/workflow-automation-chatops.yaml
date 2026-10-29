@@ -1,8 +1,10 @@
 - id: activepieces
   name: Activepieces
-  summary: Workflow automation platform; OSS core with commercial cloud/enterprise features.
+  summary: "Self-hostable visual workflow and AI automation platform with MIT-licensed core and separately licensed enterprise features."
   official_url: https://www.activepieces.com
   repository_url: https://github.com/activepieces/activepieces
+  repository_archived: false
+  documentation_url: "https://www.activepieces.com/docs/install/overview"
   categories:
   - workflow-automation-chatops
   subcategories:
@@ -15,20 +17,33 @@
   - plan
   - operate
   use_when:
-  - '* You want a self-hostable, open-core alternative to Zapier for integrating apps and automating tasks.'
+  - "You need integration workflows or AI-driven automations with a self-hostable builder, reviewed third-party connectors and a defined edition/license."
   avoid_when:
-  - '* You need deep DevOps-specific workflows; it''s more suited for business automation.'
-  deployment_models: []
+  - "You need enterprise or cloud-edition capabilities under the MIT core license; enterprise directories require separate licensing."
+  - "You cannot isolate workflow execution from production credentials and untrusted webhooks or audit connector permissions."
+  - "You assume one-click installation or remote setup scripts are safe without reviewing their content, secrets and infrastructure prerequisites."
+  deployment_models:
+  - "self-hosted"
+  - "hosted-saas"
+  - "container"
+  - "kubernetes"
   license_model: open-core
+  license_spdx: "MIT"
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:3_CI-CD-Automation/README.md#L160
-  - legacy:devopstools_final.md#L401
-  needs_review: true
+  - "legacy:3_CI-CD-Automation/README.md#L160"
+  - "legacy:devopstools_final.md#L401"
+  - "https://github.com/activepieces/activepieces"
+  - "https://github.com/activepieces/activepieces/blob/b2080e13d89b826a408a9f4c5736dbf490e00541/LICENSE"
+  - "https://www.activepieces.com/docs/install/overview"
+  - "https://github.com/activepieces/activepieces/blob/b2080e13d89b826a408a9f4c5736dbf490e00541/packages/ee/LICENSE"
+  - "https://www.activepieces.com/docs/about/license"
+  needs_review: false
 - id: cal-com
   name: Cal.com
   summary: Open-source scheduling and booking platform (Calendly alternative) for teams and individuals.
@@ -288,9 +303,11 @@
   needs_review: true
 - id: n8n
   name: n8n
-  summary: Workflow automation platform (fair-code / Sustainable Use License; not OSI open source).
+  summary: "Self-hostable visual and code-based workflow/AI automation platform under the restrictive Sustainable Use License, with separately licensed enterprise modules."
   official_url: https://n8n.io
   repository_url: https://github.com/n8n-io/n8n
+  repository_archived: false
+  documentation_url: "https://docs.n8n.io/sustainable-use-license/"
   categories:
   - workflow-automation-chatops
   subcategories:
@@ -303,25 +320,38 @@
   - plan
   - operate
   use_when:
-  - '* You want a self-hostable, visual workflow automation tool with many integrations.'
+  - "You need internal-business or personal automations with integration nodes and can comply with the Sustainable Use License and secure your deployment."
   avoid_when:
-  - '* You need a truly OSS-licensed tool or enterprise-scale orchestration.'
-  deployment_models: []
+  - "You require OSI-open-source rights or want to sell, rebrand, provide or distribute a hosted automation service beyond the license restrictions."
+  - "You want to use .ee modules in production without the applicable n8n Enterprise license."
+  - "You cannot restrict arbitrary workflow code, third-party nodes, external network access and access to stored credentials."
+  deployment_models:
+  - "self-hosted"
+  - "hosted-saas"
+  - "container"
   license_model: source-available
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:3_CI-CD-Automation/README.md#L164
-  - legacy:devopstools_final.md#L404
-  needs_review: true
+  - "legacy:3_CI-CD-Automation/README.md#L164"
+  - "legacy:devopstools_final.md#L404"
+  - "https://github.com/n8n-io/n8n"
+  - "https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/LICENSE.md"
+  - "https://docs.n8n.io/sustainable-use-license/"
+  - "https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/LICENSE_EE.md"
+  - "https://github.com/n8n-io/n8n/blob/d93f6130fa3f488c0ccc045fee7c3c507de3c999/README.md"
+  needs_review: false
 - id: numaflow
   name: Numaflow
-  summary: Kubernetes-native data/stream processing platform.
+  summary: "Apache-2.0 Kubernetes-native stream-processing platform for event-driven, parallel data pipelines with independent sources and sinks."
   official_url: https://numaflow.numaproj.io
   repository_url: https://github.com/numaproj/numaflow
+  repository_archived: false
+  documentation_url: "https://numaflow.numaproj.io"
   categories:
   - workflow-automation-chatops
   subcategories:
@@ -334,20 +364,27 @@
   - plan
   - operate
   use_when:
-  - '* You need Kubernetes-native stream processing for event-driven data pipelines.'
+  - "You operate Kubernetes and need scalable data stream pipelines with decoupled sources, processing vertices and sinks."
   avoid_when:
-  - '* You need a general-purpose workflow engine or are not on Kubernetes.'
-  deployment_models: []
+  - "You need a low-code business workflow or incident runbook engine rather than Kubernetes-native streaming infrastructure."
+  - "You cannot provide cluster RBAC, storage and observability or validate delivery, ordering and replay semantics with your chosen sources and sinks."
+  deployment_models:
+  - "kubernetes"
   license_model: oss
+  license_spdx: "Apache-2.0"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:3_CI-CD-Automation/README.md#L166
-  - legacy:devopstools_final.md#L405
-  needs_review: true
+  - "legacy:3_CI-CD-Automation/README.md#L166"
+  - "legacy:devopstools_final.md#L405"
+  - "https://github.com/numaproj/numaflow"
+  - "https://github.com/numaproj/numaflow/blob/d2545229b37718b6e39565237922c2cb416ae66f/LICENSE"
+  - "https://numaflow.numaproj.io"
+  - "https://github.com/numaproj/numaflow/blob/d2545229b37718b6e39565237922c2cb416ae66f/README.md"
+  needs_review: false
 - id: plane
   name: Plane
   summary: Open-source project management tool.
@@ -412,9 +449,11 @@
   needs_review: false
 - id: rundeck
   name: Rundeck
-  summary: Runbook automation and self-service operations platform.
+  summary: "Apache-2.0 runbook and self-service operations automation server with CLI and API; PagerDuty commercial Runbook Automation is a separate offering."
   official_url: https://www.rundeck.com
   repository_url: https://github.com/rundeck/rundeck
+  repository_archived: false
+  documentation_url: "https://docs.rundeck.com/docs/learning/getting-started/acl-overview.html"
   categories:
   - workflow-automation-chatops
   subcategories:
@@ -426,18 +465,29 @@
   lifecycle_stages:
   - plan
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You need audited operator runbooks and delegated execution of repeatable infrastructure tasks using ACL-protected jobs and nodes."
+  avoid_when:
+  - "You expect the OSS Rundeck server to include the separate commercial PagerDuty Runbook Automation features or licensing entitlements."
+  - "You cannot design least-privilege ACLs, segregate job credentials or control who may execute privileged scripts and commands."
+  deployment_models:
+  - "self-hosted"
+  - "container"
   license_model: oss
+  license_spdx: "Apache-2.0"
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:devopstools_final.md#L407
-  needs_review: true
+  - "legacy:devopstools_final.md#L407"
+  - "https://github.com/rundeck/rundeck"
+  - "https://github.com/rundeck/rundeck/blob/9573b48d5658d71e37d8387e0dacee3a0cfe2047/LICENSE"
+  - "https://docs.rundeck.com/docs/learning/getting-started/acl-overview.html"
+  - "https://github.com/rundeck/rundeck/blob/9573b48d5658d71e37d8387e0dacee3a0cfe2047/README.md"
+  needs_review: false
 - id: slack
   name: Slack
   summary: Salesforce-owned hosted collaboration and ChatOps platform for channels, workflows, integrations, and AI-assisted work.
@@ -533,9 +583,11 @@
   needs_review: true
 - id: windmill
   name: Windmill
-  summary: Developer platform to build internal tools and automations.
+  summary: "Code-first self-hostable workflow, app and AI-agent execution platform with AGPL/Apache open-source components and separately licensed enterprise and distributed-image features."
   official_url: https://www.windmill.dev
   repository_url: https://github.com/windmill-labs/windmill
+  repository_archived: false
+  documentation_url: "https://www.windmill.dev/docs/intro"
   categories:
   - workflow-automation-chatops
   subcategories:
@@ -548,17 +600,31 @@
   - plan
   - operate
   use_when:
-  - '* You want to build internal tools, scripts, and automations with a code-first approach.'
+  - "You want Git-integrated scripts, scheduled workflows or internal tools with controlled worker execution, self-hosted infrastructure and edition-aware licensing."
   avoid_when:
-  - '* You need a no-code platform or already have a mature internal tools framework.'
-  deployment_models: []
+  - "You assume published Community Edition containers are entirely AGPL open source; images also contain proprietary/non-public features under separate restrictions."
+  - "You intend resale, embedding, white-labelling or managed service use without checking Windmill's commercial license conditions and AGPL obligations."
+  - "You cannot isolate workers executing arbitrary code, protect database credentials or apply roles, network boundaries and secret controls."
+  deployment_models:
+  - "self-hosted"
+  - "hosted-saas"
+  - "container"
+  - "kubernetes"
   license_model: open-core
+  license_spdx: "AGPL-3.0-only"
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:3_CI-CD-Automation/README.md#L170
-  - legacy:devopstools_final.md#L408
-  needs_review: true
+  - "legacy:3_CI-CD-Automation/README.md#L170"
+  - "legacy:devopstools_final.md#L408"
+  - "https://github.com/windmill-labs/windmill"
+  - "https://github.com/windmill-labs/windmill/blob/30c544eba8ab71a7f803c4c425849f8b47530ca8/LICENSE"
+  - "https://www.windmill.dev/docs/intro"
+  - "https://github.com/windmill-labs/windmill/blob/30c544eba8ab71a7f803c4c425849f8b47530ca8/LICENSE-AGPL"
+  - "https://github.com/windmill-labs/windmill/blob/30c544eba8ab71a7f803c4c425849f8b47530ca8/LICENSE-APACHE"
+  - "https://www.windmill.dev/docs/advanced/self_host"
+  needs_review: false
