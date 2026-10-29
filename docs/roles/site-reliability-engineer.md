@@ -34,7 +34,7 @@
 | [Better Stack](https://betterstack.com/) | Monitoring, metrics, logs and tracing | commercial | active |
 | [blackbox_exporter](https://github.com/prometheus/blackbox_exporter) | Monitoring, metrics, logs and tracing | oss | active |
 | [bmon](https://jafaral.github.io/bmon/) | Foundations, Linux and scripting | oss | active |
-| [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | needs-review |
+| [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | active |
 | [BotKube](https://botkube.io) | Kubernetes distributions and operations | oss | active |
 | [bottom](https://bottom.pages.dev/stable/) | Monitoring, metrics, logs and tracing | oss | active |
 | [btop](https://github.com/aristocratos/btop) | Foundations, Linux and scripting | oss | active |
@@ -376,7 +376,7 @@
 | [Sniffnet](https://sniffnet.app/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Spinkube](https://github.com/spinkube) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Spinnaker](https://spinnaker.io) | CD, GitOps, release and promotion | oss | active |
-| [Stash](https://stash.run) | Backup, disaster recovery and resilience | oss | needs-review |
+| [Stash](https://stash.run) | Backup, disaster recovery and resilience | source-available | active |
 | [strace-tui](https://github.com/Rodrigodd/strace-tui) | Chaos and performance engineering | oss | needs-review |
 | [Stratoshark](https://stratoshark.org/) | SRE, incident response and on-call | oss | active |
 | [stress](https://github.com/resurrecting-open-source-projects/stress) | Chaos and performance engineering | oss | needs-review |
@@ -397,7 +397,7 @@
 | [Thanos](https://thanos.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Toxiproxy](https://github.com/Shopify/toxiproxy) | Chaos and performance engineering | oss | active |
 | [Tracetest](https://tracetest.io) | Monitoring, metrics, logs and tracing | open-core | needs-review |
-| [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | unknown | needs-review |
+| [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | commercial | active |
 | [Trippy](https://trippy.rs/) | Foundations, Linux and scripting | oss | active |
 | [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [TrueNAS](https://www.truenas.com) | Kubernetes networking, storage and add-ons | open-core | needs-review |
@@ -414,7 +414,7 @@
 | [VictoriaMetrics](https://victoriametrics.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [VirtualEyes](https://virtualeyes.io/) | Monitoring, metrics, logs and tracing | free-saas | active |
 | [Vitess](https://vitess.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [VolSync](https://volsync.readthedocs.io) | Backup, disaster recovery and resilience | oss | needs-review |
+| [VolSync](https://volsync.readthedocs.io) | Backup, disaster recovery and resilience | oss | active |
 | [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [webernetes](https://github.com/ngrok/webernetes) | Kubernetes distributions and operations | oss | needs-review |
 | [WeKan](https://wekan.fi) | Workflow automation and ChatOps | oss | needs-review |

@@ -1,8 +1,10 @@
 - id: borgbackup
   name: BorgBackup
-  summary: Deduplicating backup program (often used for cluster/VM backups).
+  summary: "Deduplicating backup CLI with optional compression and authenticated encryption for filesystem data and off-site repositories."
   official_url: https://www.borgbackup.org
   repository_url: https://github.com/borgbackup/borg
+  repository_archived: false
+  documentation_url: "https://borgbackup.readthedocs.io/en/stable/"
   categories:
   - backup-disaster-recovery-resilience
   subcategories:
@@ -14,20 +16,29 @@
   lifecycle_stages:
   - operate
   use_when:
-  - You need efficient, deduplicated backups with encryption for filesystems or VM/node-level data.
+  - "You need efficient, encrypted, deduplicated filesystem backups to local or SSH-accessible repositories, with regular restore testing."
   avoid_when:
-  - You need Kubernetes-native backup of resources and PVs (use Velero/Kasten instead).
-  deployment_models: []
+  - "You need application-consistent backups for live databases or running VMs without coordinating quiescence or snapshots."
+  - "You cannot protect and separately recover the repository key and passphrase, or have not tested restores."
+  - "You require Kubernetes resource or PVC orchestration from the backup CLI alone."
+  deployment_models:
+  - "local-cli"
   license_model: oss
+  license_spdx: "BSD-3-Clause"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L179
-  - legacy:devopstools_final.md#L683
-  needs_review: true
+  - "legacy:4_Kubernetes-Containers/README.md#L179"
+  - "legacy:devopstools_final.md#L683"
+  - "https://github.com/borgbackup/borg"
+  - "https://github.com/borgbackup/borg/blob/62051de6a0f90eab5f18a55871f9881542800e6c/LICENSE"
+  - "https://borgbackup.readthedocs.io/en/stable/"
+  - "https://github.com/borgbackup/borg/releases/tag/1.4.5"
+  - "https://borgbackup.readthedocs.io/en/stable/quickstart.html"
+  needs_review: false
 - id: clonezilla
   name: Clonezilla
   summary: Bootable disk-imaging and cloning system for bare-metal backup, recovery, and machine deployment.
@@ -153,9 +164,11 @@
   needs_review: false
 - id: kube-dump
   name: kube-dump
-  summary: Backup tool for Kubernetes cluster resources.
+  summary: "CLI and container scripts exporting readable Kubernetes API resources as YAML manifests; not a persistent-volume data backup."
   official_url: https://kube-dump.woozymasta.ru
   repository_url: https://github.com/WoozyMasta/kube-dump
+  repository_archived: false
+  documentation_url: "https://github.com/WoozyMasta/kube-dump/blob/f1ae560a8b9da8dba1c28619f38089d40d0d2357/README.md"
   categories:
   - backup-disaster-recovery-resilience
   subcategories:
@@ -167,19 +180,30 @@
   lifecycle_stages:
   - operate
   use_when:
-  - You need a simple export of Kubernetes resource definitions for disaster recovery or auditing.
+  - "You need an export of readable Kubernetes resource manifests for inspection or recovery planning, and can independently validate restored objects."
   avoid_when:
-  - You also need persistent volume data backup (use Velero/Kasten).
-  deployment_models: []
+  - "You need backup of PV contents, application-consistent database state or a complete cluster recovery procedure."
+  - "You cannot protect exported Secrets, kubeconfigs or pushed Git repositories; README lists git-crypt protection as a future plan, not a guaranteed feature."
+  - "You require confirmed recent upstream code maintenance or a tested compatibility claim for current Kubernetes versions."
+  deployment_models:
+  - "local-cli"
+  - "container"
+  - "kubernetes"
   license_model: oss
+  license_spdx: "GPL-3.0-only"
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L182
-  - legacy:devopstools_final.md#L686
+  - "legacy:4_Kubernetes-Containers/README.md#L182"
+  - "legacy:devopstools_final.md#L686"
+  - "https://github.com/WoozyMasta/kube-dump"
+  - "https://github.com/WoozyMasta/kube-dump/blob/f1ae560a8b9da8dba1c28619f38089d40d0d2357/LICENSE"
+  - "https://github.com/WoozyMasta/kube-dump/blob/f1ae560a8b9da8dba1c28619f38089d40d0d2357/README.md"
+  - "https://github.com/WoozyMasta/kube-dump/releases/tag/1.1.2"
+  - "https://github.com/WoozyMasta/kube-dump/blob/f1ae560a8b9da8dba1c28619f38089d40d0d2357/docs/cronjob.md"
   needs_review: true
 - id: rclone
   name: Rclone
@@ -217,9 +241,11 @@
   needs_review: false
 - id: stash
   name: Stash
-  summary: Backup operator for Kubernetes.
+  summary: "Kubernetes backup and restore operator for workload volumes; database backup and some advanced capabilities depend on its licensed edition."
   official_url: https://stash.run
   repository_url: https://github.com/stashed/stash
+  repository_archived: false
+  documentation_url: "https://stash.run/docs/v2025.10.17/welcome/"
   categories:
   - backup-disaster-recovery-resilience
   subcategories:
@@ -231,20 +257,30 @@
   lifecycle_stages:
   - operate
   use_when:
-  - You want a Kubernetes-native backup operator with support for databases, volumes, and scheduled backups.
+  - "You need Kubernetes-native, policy-driven volume backup and recovery, and can validate the current operator edition and license entitlements."
   avoid_when:
-  - Velero's ecosystem and community adoption better fits your support needs.
-  deployment_models: []
-  license_model: oss
+  - "You require OSI-approved open-source redistribution and modification rights: current repository artifacts are under a restrictive AppsCode Community License."
+  - "You expect database backup and enterprise features to be included in the free/community entitlement without checking the product edition."
+  - "You cannot test restore consistency, protect storage credentials or apply least-privilege RBAC to backup controllers."
+  deployment_models:
+  - "kubernetes-operator"
+  license_model: "source-available"
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L183
-  - legacy:devopstools_final.md#L687
-  needs_review: true
+  - "legacy:4_Kubernetes-Containers/README.md#L183"
+  - "legacy:devopstools_final.md#L687"
+  - "https://github.com/stashed/stash"
+  - "https://github.com/stashed/stash/blob/1c655538dd4fa50ec1af1f322300758990940125/LICENSE.md"
+  - "https://stash.run/docs/v2025.10.17/welcome/"
+  - "https://github.com/appscode/licenses/blob/1.0.0/AppsCode-Community-1.0.0.md"
+  - "https://stash.run/docs/v2025.10.17/concepts/what-is-stash/overview/"
+  - "https://stash.run/"
+  needs_review: false
 - id: syncthing
   name: Syncthing
   summary: Continuous peer-to-peer file synchronization service with encrypted transport and no mandatory central server.
@@ -264,8 +300,9 @@
   needs_review: false
 - id: trilio
   name: Trilio
-  summary: Kubernetes backup and recovery platform.
+  summary: "Commercial subscription-licensed Kubernetes backup and disaster recovery platform for application resources, persistent volumes and KubeVirt workloads."
   official_url: https://trilio.io/products/kubernetes-backup-and-recovery
+  documentation_url: "https://docs.trilio.io/kubernetes"
   categories:
   - backup-disaster-recovery-resilience
   subcategories:
@@ -277,20 +314,29 @@
   lifecycle_stages:
   - operate
   use_when:
-  - You need enterprise backup with application-consistent snapshots and multi-cloud recovery.
+  - "You need vendor-supported application-centric Kubernetes backup, recovery or cross-cluster migration with commercial licensing and verified CSI integration."
   avoid_when:
-  - Velero or Kasten already covers your backup requirements.
-  deployment_models: []
-  license_model: unknown
+  - "You need a fully open-source, license-free backup platform or cannot accept a subscription license."
+  - "You assume a time-limited evaluation license provides perpetual production rights, or have not validated worker vCPU pricing and edition terms."
+  - "You need tested application-consistent recovery but have not configured hooks, storage prerequisites and restore drills."
+  deployment_models:
+  - "kubernetes-operator"
+  - "self-hosted"
+  license_model: "commercial"
+  commercial_offering: true
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L184
-  - legacy:devopstools_final.md#L688
-  needs_review: true
+  - "legacy:4_Kubernetes-Containers/README.md#L184"
+  - "legacy:devopstools_final.md#L688"
+  - "https://trilio.io/products/kubernetes-backup-and-recovery/"
+  - "https://trilio.io/resources/kubernetes-backup-frequently-asked-questions/"
+  - "https://trilio.io/kubernetes-backup-trial/"
+  - "https://docs.trilio.io/kubernetes"
+  needs_review: false
 - id: velero
   name: Velero
   summary: Open-source backup, restore, disaster-recovery, and migration tooling for Kubernetes resources
@@ -330,9 +376,11 @@
   needs_review: false
 - id: volsync
   name: VolSync
-  summary: Kubernetes volume data replication.
+  summary: "Kubernetes operator for asynchronous PVC replication using rsync or rclone, with Restic-based volume backup."
   official_url: https://volsync.readthedocs.io
   repository_url: https://github.com/backube/volsync
+  repository_archived: false
+  documentation_url: "https://volsync.readthedocs.io/en/stable/"
   categories:
   - backup-disaster-recovery-resilience
   subcategories:
@@ -344,17 +392,26 @@
   lifecycle_stages:
   - operate
   use_when:
-  - You need asynchronous PV replication across clusters or storage backends for DR.
+  - "You need storage-independent asynchronous replication of Kubernetes PVC data across namespaces or clusters, or Restic-backed volume copies."
   avoid_when:
-  - Your storage backend has native replication or you only need full-cluster backup (use Velero).
-  deployment_models: []
+  - "You expect automatic backup of every Kubernetes object, application-consistent databases or zero-RPO/zero-RTO failover without independent orchestration."
+  - "Your CSI storage lacks the snapshot or clone capabilities required by the chosen copy method, or replicated data and keys are not protected."
+  - "You cannot satisfy AGPL-3.0 obligations for the operator; API directory files additionally permit Apache-2.0 use."
+  deployment_models:
+  - "kubernetes-operator"
   license_model: oss
+  license_spdx: "AGPL-3.0-only"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-29"
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L186
-  - legacy:devopstools_final.md#L690
-  needs_review: true
+  - "legacy:4_Kubernetes-Containers/README.md#L186"
+  - "legacy:devopstools_final.md#L690"
+  - "https://github.com/backube/volsync"
+  - "https://github.com/backube/volsync/blob/7ba1990e0b2233a1bf6bb47466bee3ef1de1881f/LICENSE"
+  - "https://volsync.readthedocs.io/en/stable/"
+  - "https://github.com/backube/volsync/blob/7ba1990e0b2233a1bf6bb47466bee3ef1de1881f/README.md"
+  - "https://volsync.readthedocs.io/en/stable/usage/"
+  needs_review: false

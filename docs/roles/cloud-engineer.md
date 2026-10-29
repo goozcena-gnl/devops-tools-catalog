@@ -49,7 +49,7 @@
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
 | [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
-| [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | needs-review |
+| [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | active |
 | [Boulder (Let's Encrypt)](https://github.com/letsencrypt/boulder) | IAM, secrets and certificate management | oss | active |
 | [ByteByteGo DevOps Guide](https://bytebytego.com/guides/devops-cicd) | Documentation, learning and career resources | documentation | needs-review |
 | [Canonical Kubernetes](https://ubuntu.com/kubernetes) | Kubernetes distributions and operations | oss | active |
@@ -262,7 +262,7 @@
 | [Squid](https://www.squid-cache.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [SSOReady](https://ssoready.com/) | IAM, secrets and certificate management | oss | active |
 | [Stakpak](https://stakpak.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Stash](https://stash.run) | Backup, disaster recovery and resilience | oss | needs-review |
+| [Stash](https://stash.run) | Backup, disaster recovery and resilience | source-available | active |
 | [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) | Infrastructure as Code | open-core | active |
 | [Steampipe](https://steampipe.io/) | Cloud platforms and cloud management | oss | active |
 | [StrongKey](https://www.strongkey.com) | IAM, secrets and certificate management | unknown | needs-review |
@@ -284,7 +284,7 @@
 | [Thales CipherTrust Manager](https://cpl.thalesgroup.com/encryption/ciphertrust-manager) | IAM, secrets and certificate management | unknown | needs-review |
 | [TiKV](https://tikv.org) | Databases, caching and data infrastructure | oss | needs-review |
 | [Trendshift](https://trendshift.io) | Documentation, learning and career resources | unknown | needs-review |
-| [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | unknown | needs-review |
+| [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | commercial | active |
 | [Udemy CKA Course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests) | Documentation, learning and career resources | documentation | needs-review |
 | [Upjet](https://github.com/crossplane/upjet) | Infrastructure as Code | oss | active |
 | [Varnish Cache](https://www.varnish.org/) | Databases, caching and data infrastructure | oss | active |
@@ -295,7 +295,7 @@
 | [VictoriaMetrics MCP server](https://github.com/VictoriaMetrics/mcp-victoriametrics) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Virtana](https://www.virtana.com) | Cloud platforms and cloud management | unknown | needs-review |
 | [vLLM](https://vllm.ai) | MLOps, LLMOps and AI infrastructure | oss | active |
-| [VolSync](https://volsync.readthedocs.io) | Backup, disaster recovery and resilience | oss | needs-review |
+| [VolSync](https://volsync.readthedocs.io) | Backup, disaster recovery and resilience | oss | active |
 | [VoltAgent](https://voltagent.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Vultr](https://www.vultr.com) | Cloud platforms and cloud management | commercial | active |
 | [webssh](https://github.com/bifrost0x/webssh) | IAM, secrets and certificate management | oss | needs-review |
