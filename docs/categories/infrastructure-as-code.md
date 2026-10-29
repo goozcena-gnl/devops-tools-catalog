@@ -143,19 +143,20 @@ Microsoft-led Azure Verified Modules initiative defining standards and indexes f
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
+Microsoft Azure Naming Tool web app and REST API for generating Azure resource names from administrator-defined conventions.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a self-hosted naming convention generator and API for Azure resources.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need enforcement of Azure naming policy: generating names is not a replacement for Azure Policy.
+- You cannot secure the application's administrative configuration, access and API.
 
-[Source repository](https://github.com/Azure/AzureNamingTool)
+[Documentation](https://github.com/mspnp/AzureNamingTool/wiki) · [Source repository](https://github.com/Azure/AzureNamingTool)
 
 ### cdk8s
 
@@ -450,17 +451,18 @@ HashiCorp machine-image build CLI that creates reproducible images for multiple 
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
+Terraform plan and state diagramming CLI with a separately accessed UI/API; service licensing and current CLI maintenance still require verification.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You can verify current access and terms for the Pluralith UI/API and want Terraform infrastructure diagrams.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require evidence of continuing CLI maintenance: last observed release was March 2023.
+- You need an entirely open-source and offline Pluralith product: only the separate CLI's MPL-2.0 licence was established.
 
-[Official site](https://www.pluralith.com)
+[Official site](https://www.pluralith.com) · [Source repository](https://github.com/Pluralith/pluralith-cli)
 
 ### Pulumi
 
@@ -485,20 +487,22 @@ IaC using real programming languages.
 
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Terraform automation and collaboration software.
+Commercial Terraform/OpenTofu remote operations platform for central runs, state, policy and drift detection, with optional private run agents.
 
 **Use when**
 
-- You need a Terraform Cloud alternative with OPA policy enforcement and hierarchical configs.
+- You need hosted Terraform/OpenTofu remote execution, state, policy-as-code and pull-request workflows.
+- You want optional private self-hosted agents while using a managed control plane.
 
 **Consider alternatives when**
 
-- Atlantis or native CI pipelines suffice.
+- You need an open-source or fully self-hosted control plane; self-hosted agents do not make the platform OSS.
+- You cannot entrust Terraform state, run logs, credentials or VCS integration to an external service.
 
-[Official site](https://github.com/Scalr)
+[Official site](https://scalr.com/) · [Documentation](https://docs.scalr.io/docs/introduction)
 
 ### Score
 
@@ -583,15 +587,17 @@ HashiCorp infrastructure-as-code CLI for provisioning and managing infrastructur
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge for cost savings.
+Terraform module scheduling Amazon EKS worker-node capacity using Lambda and EventBridge; does not pause EKS control-plane billing.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need scheduled EKS worker-node capacity changes and can test IAM, time zones and cluster-autoscaler interactions.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need resolved SPDX terms: v1.0.4 LICENSE says Apache-2.0 but v1.0.4 README says MIT.
+- You expect to suspend EKS control-plane charges by scaling worker nodes to zero.
+- You have not tested workloads and recovery during scheduled node scaling.
 
 [Source repository](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler)
 
@@ -657,17 +663,19 @@ Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infra
 **Categories:** Infrastructure as Code<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Platform Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google, Azure).
+Cloud architecture diagram generator from Terraform for AWS, Azure and Google Cloud, with optional AI/MCP integration.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want cloud infrastructure diagrams from Terraform code for local documentation or CI review.
+- You can constrain optional AI/MCP tools and review their architecture-data flows.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Architecture details or Terraform state may be sent to third-party AI services without approved data controls.
+- You need a guarantee that generated diagrams or AI-assisted IaC are complete or deployment-safe without review.
 
 [Source repository](https://github.com/patrickchugh/terravision)
 

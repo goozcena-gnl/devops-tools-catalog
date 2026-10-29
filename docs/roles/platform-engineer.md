@@ -61,7 +61,7 @@
 | [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | active |
 | [Azure Service Operator](https://azure.github.io/azure-service-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
-| [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
+| [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | active |
 | [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | active |
 | [Barbara](https://www.barbara.tech) | Emerging and experimental tools | unknown | needs-review |
 | [Bazel](https://bazel.build) | CI, build and testing | oss | active |
@@ -525,7 +525,7 @@
 | [Scaleway](https://www.scaleway.com/en/) | Cloud platforms and cloud management | commercial | active |
 | [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) | Kubernetes distributions and operations | commercial | active |
 | [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) | Kubernetes distributions and operations | commercial | active |
-| [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
+| [Scalr](https://scalr.com/) | Infrastructure as Code | commercial | active |
 | [Score](https://score.dev) | Infrastructure as Code | oss | active |
 | [Seabird](https://getseabird.github.io) | Kubernetes distributions and operations | oss | needs-review |
 | [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -573,7 +573,7 @@
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | active |
 | [terraform-skill](https://github.com/antonbabenko/terraform-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
-| [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
+| [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | active |
 | [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | source-available | active |
 | [Timoni](https://timoni.sh) | Emerging and experimental tools | oss | needs-review |
 | [Tofu Controller](https://flux-iac.github.io/tofu-controller) | CD, GitOps, release and promotion | oss | active |

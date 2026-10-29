@@ -46,7 +46,7 @@
 | [Azure Messaging for AWS Professionals](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Orphan Resources](https://github.com/dolevshor/azure-orphan-resources) | FinOps and sustainability | oss | active |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
-| [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
+| [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | active |
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
 | [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [BorgBackup](https://www.borgbackup.org) | Backup, disaster recovery and resilience | oss | active |
@@ -250,7 +250,7 @@
 | [Scaleway](https://www.scaleway.com/en/) | Cloud platforms and cloud management | commercial | active |
 | [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) | Kubernetes distributions and operations | commercial | active |
 | [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) | Kubernetes distributions and operations | commercial | active |
-| [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
+| [Scalr](https://scalr.com/) | Infrastructure as Code | commercial | active |
 | [Score](https://score.dev) | Infrastructure as Code | oss | active |
 | [SeaweedFS](https://seaweedfs.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
@@ -279,7 +279,7 @@
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | active |
 | [terraform-skill](https://github.com/antonbabenko/terraform-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
-| [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
+| [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | active |
 | [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | source-available | active |
 | [Thales CipherTrust Manager](https://cpl.thalesgroup.com/encryption/ciphertrust-manager) | IAM, secrets and certificate management | unknown | needs-review |
 | [TiKV](https://tikv.org) | Databases, caching and data infrastructure | oss | needs-review |
