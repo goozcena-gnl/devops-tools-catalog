@@ -125,9 +125,9 @@
   needs_review: false
 - id: aider
   name: Aider
-  summary: AI pair programming in the terminal.
+  summary: "Apache-2.0 terminal AI pair programmer that edits Git-tracked code using separately configured model providers; latest identified stable release dates from August 2025."
   official_url: https://aider.chat
-  repository_url: https://github.com/paul-gauthier/aider
+  repository_url: "https://github.com/Aider-AI/aider"
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -139,20 +139,28 @@
   - develop
   - test
   use_when:
-  - '* You want terminal-based AI coding assistance that works with your existing editor and git workflow.'
+  - "You want terminal-based AI assistance for reviewed Git changes and can control model-provider data access."
   avoid_when:
-  - '* You prefer IDE-integrated AI or need a visual interface.'
-  deployment_models: []
+  - "You cannot send source code or prompts to selected model providers under your organization's data policy."
+  - "You require independently verified frequent security fixes and recent stable releases; the most recent identified stable release is v0.86.0 from August 2025."
+  deployment_models:
+  - "cli"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:3_CI-CD-Automation/README.md#L174
-  - legacy:devopstools_final.md#L411
+  - "legacy:3_CI-CD-Automation/README.md#L174"
+  - "legacy:devopstools_final.md#L411"
+  - "https://github.com/Aider-AI/aider/tree/5dc9490bb35f9729ef2c95d00a19ccd30c26339c"
+  - "https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/LICENSE.txt"
+  - "https://github.com/Aider-AI/aider/releases/tag/v0.86.0"
+  - "https://aider.chat/"
   needs_review: true
+  license_spdx: "Apache-2.0"
+  repository_archived: false
 - id: angular
   name: Angular
   summary: Web application framework.
@@ -479,7 +487,7 @@
   needs_review: false
 - id: coder
   name: Coder
-  summary: Self-hosted cloud development environments and AI development infrastructure with governance.
+  summary: "Self-hosted Terraform-defined development workspaces and AI agent infrastructure, with AGPL-3.0 source and separate paid Premium features."
   official_url: https://coder.com
   repository_url: https://github.com/coder/coder
   categories:
@@ -492,18 +500,27 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: oss
+  use_when:
+  - "You need centrally governed cloud development workspaces defined with Terraform and optional coding agents on infrastructure you control."
+  avoid_when:
+  - "You assume paid Coder Premium features are included under the public source licence."
+  - "You cannot isolate workspace privileges, provider credentials, model access or agents that execute untrusted code."
+  deployment_models:
+  - "self-hosted"
+  license_model: "open-core"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:devopstools_final.md#L1057
-  needs_review: true
+  - "legacy:devopstools_final.md#L1057"
+  - "https://github.com/coder/coder/tree/d5a03911dad4c0294e50581a97a7ee65bcf9b258"
+  - "https://github.com/coder/coder/blob/d5a03911dad4c0294e50581a97a7ee65bcf9b258/LICENSE"
+  - "https://github.com/coder/coder/blob/d5a03911dad4c0294e50581a97a7ee65bcf9b258/README.md"
+  - "https://coder.com/pricing"
+  needs_review: false
+  repository_archived: false
 - id: codewhale
   name: CodeWhale
   summary: Open-source terminal coding agent with multi-provider model support and local tool execution.
@@ -543,7 +560,7 @@
   needs_review: false
 - id: codex
   name: Codex
-  summary: Lightweight coding agent from OpenAI that runs in your terminal.
+  summary: "Apache-2.0 open-source Codex CLI coding agent; model inference, IDE integrations and hosted Codex services have separate account and service terms."
   repository_url: https://github.com/openai/codex
   categories:
   - developer-experience-local-environments
@@ -555,21 +572,30 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You want an AI coding assistant in the terminal with explicit command approvals, sandbox boundaries and reviewed Git changes."
+  avoid_when:
+  - "You assume the Codex CLI Apache-2.0 licence covers hosted Codex services or third-party models."
+  - "You cannot review model data flows, command permissions or secrets exposure before executing agent-generated changes."
+  deployment_models:
+  - "cli"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:devopstools_final.md#L414
-  needs_review: true
+  - "legacy:devopstools_final.md#L414"
+  - "https://github.com/openai/codex/tree/f752c97f7d0be0cbef5cece327f52a16ad6fb1c6"
+  - "https://github.com/openai/codex/blob/f752c97f7d0be0cbef5cece327f52a16ad6fb1c6/LICENSE"
+  - "https://github.com/openai/codex/blob/f752c97f7d0be0cbef5cece327f52a16ad6fb1c6/README.md"
+  needs_review: false
+  license_spdx: "Apache-2.0"
+  repository_archived: false
 - id: continue
   name: Continue
-  summary: Open-source AI code assistant.
+  summary: "Apache-2.0 CLI and IDE coding assistant whose publisher declares the repository read-only and no longer actively maintained following its final 2.0.0 release."
   official_url: https://www.continue.dev
   repository_url: https://github.com/continuedev/continue
   categories:
@@ -583,20 +609,28 @@
   - develop
   - test
   use_when:
-  - '* You want an open-source, IDE-integrated AI assistant with flexibility to choose your own LLM backend.'
+  - "You maintain a previously deployed Continue installation and can accept the publisher's end-of-maintenance statement."
   avoid_when:
-  - '* You want a polished, turnkey AI coding experience without setup.'
-  deployment_models: []
+  - "You need an actively maintained assistant with reliable future fixes or vulnerability patches."
+  - "You infer ongoing support from GitHub's unarchived status or recent repository metadata despite the explicit read-only statement."
+  deployment_models:
+  - "cli"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:3_CI-CD-Automation/README.md#L176
-  - legacy:devopstools_final.md#L415
+  - "legacy:3_CI-CD-Automation/README.md#L176"
+  - "legacy:devopstools_final.md#L415"
+  - "https://github.com/continuedev/continue/tree/5522c6f44ca0ac3528b37244818fbfa39b5af470"
+  - "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/LICENSE"
+  - "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/README.md"
+  - "https://github.com/continuedev/continue/releases"
   needs_review: true
+  license_spdx: "Apache-2.0"
+  repository_archived: false
 - id: cursor
   name: Cursor
   summary: Commercial AI coding workspace and editor for agent-assisted repository development.
@@ -664,7 +698,7 @@
   needs_review: false
 - id: development-containers
   name: Development Containers
-  summary: Open specification for defining reproducible, containerized development environments (devcontainers).
+  summary: "Open development-container specification for reproducible dev environments; the specification is CC-BY-4.0 and its separately licensed reference CLI is MIT."
   official_url: https://containers.dev
   categories:
   - developer-experience-local-environments
@@ -676,21 +710,30 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
+  use_when:
+  - "You need a portable devcontainer.json definition usable with compatible tools, editors and container runtimes."
+  avoid_when:
+  - "You expect the specification alone to supply a working runtime or guaranteed sandbox isolation."
+  - "You assume that the CC-BY-4.0 specification, MIT reference CLI and third-party images all share the same licence."
   deployment_models: []
-  license_model: oss
+  license_model: "documentation"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:devopstools_final.md#L1058
-  needs_review: true
+  - "legacy:devopstools_final.md#L1058"
+  - "https://github.com/devcontainers/spec/tree/c95ffeed1d059abfe9ffbe79762dc2fa4e7c2421"
+  - "https://github.com/devcontainers/spec/blob/c95ffeed1d059abfe9ffbe79762dc2fa4e7c2421/LICENSE"
+  - "https://github.com/devcontainers/cli/tree/d807cb27c195b6bc0e89d893fc20f44a30bf27ee"
+  - "https://github.com/devcontainers/cli/blob/d807cb27c195b6bc0e89d893fc20f44a30bf27ee/LICENSE.txt"
+  - "https://containers.dev/"
+  needs_review: false
+  documentation_url: "https://containers.dev/"
 - id: devpod
   name: DevPod
-  summary: Open-source dev environments that can run locally or on remote providers.
+  summary: "MPL-2.0 devcontainer workspace client connecting local IDEs to local Docker, remote SSH, Kubernetes and cloud providers; recent release support remains uncertain."
   official_url: https://devpod.sh
   repository_url: https://github.com/loft-sh/devpod
   categories:
@@ -704,20 +747,29 @@
   - develop
   - test
   use_when:
-  - You want reproducible dev containers across local Docker, SSH hosts, or cloud VMs without vendor lock-in.
+  - "You want provider-agnostic containerized development environments across local and remote infrastructure."
   avoid_when:
-  - Your team is already standardized on GitHub Codespaces or Gitpod.
-  deployment_models: []
+  - "You rely on guaranteed current upstream security maintenance; recent stable release support was not established."
+  - "You cannot protect cloud or Kubernetes provider credentials and enforce workspace image trust."
+  deployment_models:
+  - "local"
+  - "self-hosted"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:7_Development-Collaboration/README.md#L33
-  - legacy:devopstools_final.md#L1059
+  - "legacy:7_Development-Collaboration/README.md#L33"
+  - "legacy:devopstools_final.md#L1059"
+  - "https://github.com/loft-sh/devpod/tree/5a0efcbff6610ab114b421f68a890739a452e66b"
+  - "https://github.com/loft-sh/devpod/blob/5a0efcbff6610ab114b421f68a890739a452e66b/LICENSE"
+  - "https://github.com/loft-sh/devpod/releases"
+  - "https://github.com/loft-sh/devpod/blob/5a0efcbff6610ab114b421f68a890739a452e66b/README.md"
   needs_review: true
+  license_spdx: "MPL-2.0"
+  repository_archived: false
 - id: diffyml
   name: diffyml
   summary: Command-line tool that compares YAML documents structurally instead of as line-oriented text.
@@ -981,7 +1033,7 @@
   needs_review: true
 - id: github-codespaces
   name: GitHub Codespaces
-  summary: Hosted cloud development environments integrated with GitHub.
+  summary: "GitHub-hosted cloud development environments billed for compute and storage, with account-specific included quotas and no product-wide open-source licence."
   repository_url: https://github.com/features/codespaces
   categories:
   - developer-experience-local-environments
@@ -994,20 +1046,27 @@
   - develop
   - test
   use_when:
-  - Your team is on GitHub and wants zero-setup, cloud-based dev environments.
+  - "You need GitHub-integrated hosted development environments with standardized devcontainer configuration and approved spending controls."
   avoid_when:
-  - You need self-hosted control or want to minimize per-seat cloud costs.
-  deployment_models: []
-  license_model: unknown
+  - "You require a self-hosted control plane or zero-cost unlimited compute and storage."
+  - "You cannot grant GitHub cloud workspaces the needed repository, network or secrets access under approved organization policies."
+  deployment_models:
+  - "hosted-saas"
+  license_model: "commercial"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:7_Development-Collaboration/README.md#L34
-  - legacy:devopstools_final.md#L1061
-  needs_review: true
+  - "legacy:7_Development-Collaboration/README.md#L34"
+  - "legacy:devopstools_final.md#L1061"
+  - "https://docs.github.com/en/codespaces/overview"
+  - "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces"
+  - "https://github.com/features/codespaces"
+  needs_review: false
+  official_url: "https://github.com/features/codespaces"
+  commercial_offering: true
 - id: godcoder
   name: Godcoder
   summary: Local-first desktop coding agent that keeps your code on your machine.
@@ -1121,7 +1180,7 @@
   needs_review: true
 - id: hashicorp-vagrant
   name: HashiCorp Vagrant
-  summary: Tool for building and managing virtual machine environments (BUSL-1.1).
+  summary: "Version-dependent source-available VM development environment CLI: Vagrant 2.4.3+ uses IBM Business Source License 1.1; HCP Vagrant service deprecation is separate."
   official_url: https://www.vagrantup.com
   repository_url: https://github.com/hashicorp/vagrant
   categories:
@@ -1135,20 +1194,28 @@
   - develop
   - test
   use_when:
-  - You need full VM-based dev environments (e.g., kernel work, multi-node clusters).
+  - "You need portable, provider-backed local or remote virtual machine development and test environments."
   avoid_when:
-  - Containers suffice—VMs are heavier and slower to provision.
-  deployment_models: []
-  license_model: source-available
+  - "You assume Business Source License 1.1 is OSI-approved open source or that all historic Vagrant versions share the same terms."
+  - "You confuse the HCP Vagrant service deprecation with the continuing Vagrant CLI."
+  - "Containers are adequate and you cannot justify VM overhead or privileged hypervisor access."
+  deployment_models:
+  - "cli"
+  license_model: "source-available"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:7_Development-Collaboration/README.md#L35
-  - legacy:devopstools_final.md#L1063
-  needs_review: true
+  - "legacy:7_Development-Collaboration/README.md#L35"
+  - "legacy:devopstools_final.md#L1063"
+  - "https://github.com/hashicorp/vagrant/tree/dc55920a284544919340b975098b4ac9005b08b0"
+  - "https://github.com/hashicorp/vagrant/blob/dc55920a284544919340b975098b4ac9005b08b0/LICENSE"
+  - "https://github.com/hashicorp/vagrant/blob/dc55920a284544919340b975098b4ac9005b08b0/README.md"
+  - "https://developer.hashicorp.com/hcp/docs/vagrant/hcp-vagrant-eol"
+  needs_review: false
+  repository_archived: false
 - id: hoppscotch
   name: Hoppscotch
   summary: API development workspace with community self-hosting and commercial collaboration options.
@@ -1852,7 +1919,7 @@
   needs_review: true
 - id: opencode
   name: OpenCode
-  summary: Open-source AI coding agent.
+  summary: "MIT-licensed open-source coding agent with independently billed or licensed model providers and optional online services."
   official_url: https://opencode.ai
   categories:
   - developer-experience-local-environments
@@ -1864,18 +1931,29 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You want an open-source coding agent and can evaluate model provider, shell tools and repository permissions."
+  avoid_when:
+  - "You equate the agent's MIT source licence with free inference, private cloud services or unrestricted third-party model rights."
+  - "You cannot approve prompt/code disclosure and restrict the agent's file, shell and credential access."
+  deployment_models:
+  - "cli"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:devopstools_final.md#L417
-  needs_review: true
+  - "legacy:devopstools_final.md#L417"
+  - "https://github.com/anomalyco/opencode/tree/92b2ca0dd727942e00aba3523ed141d53e78ea28"
+  - "https://github.com/anomalyco/opencode/blob/92b2ca0dd727942e00aba3523ed141d53e78ea28/LICENSE"
+  - "https://github.com/anomalyco/opencode/blob/92b2ca0dd727942e00aba3523ed141d53e78ea28/README.md"
+  - "https://opencode.ai"
+  needs_review: false
+  repository_url: "https://github.com/anomalyco/opencode"
+  license_spdx: "MIT"
+  repository_archived: false
 - id: openwiki
   name: OpenWiki
   summary: CLI that writes and maintains agent documentation for your codebase.
@@ -2326,7 +2404,7 @@
   needs_review: false
 - id: spec-kit
   name: Spec Kit
-  summary: Toolkit from GitHub for getting started with Spec-Driven Development.
+  summary: "MIT-licensed GitHub toolkit for specification-driven development workflows and templates that integrate with independently operated coding agents."
   repository_url: https://github.com/github/spec-kit
   categories:
   - developer-experience-local-environments
@@ -2338,18 +2416,29 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You want a repeatable specification-to-plan-to-task workflow before delegating coding to an AI agent."
+  avoid_when:
+  - "You expect Spec Kit to run, validate or secure generated application code autonomously."
+  - "You assume external coding agents, models and hosted providers share Spec Kit's MIT licence."
+  deployment_models:
+  - "cli"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:devopstools_final.md#L423
-  needs_review: true
+  - "legacy:devopstools_final.md#L423"
+  - "https://github.com/github/spec-kit/tree/2a23a848f888de05f0107061d45232c485d6bae0"
+  - "https://github.com/github/spec-kit/blob/2a23a848f888de05f0107061d45232c485d6bae0/LICENSE"
+  - "https://github.com/github/spec-kit/blob/2a23a848f888de05f0107061d45232c485d6bae0/README.md"
+  - "https://github.github.com/spec-kit/"
+  needs_review: false
+  documentation_url: "https://github.github.com/spec-kit/"
+  license_spdx: "MIT"
+  repository_archived: false
 - id: stackblitz
   name: StackBlitz
   summary: Browser-based development environment powered by in-browser WebContainers.

@@ -154,9 +154,9 @@
 | [Codefresh](https://codefresh.io/) | CI, build and testing | commercial | active |
 | [codegraph](https://colbymchenry.github.io/codegraph) | Emerging and experimental tools | unknown | needs-review |
 | [Codemod](https://codemod.com/) | Developer experience and local environments | open-core | active |
-| [Coder](https://coder.com) | Developer experience and local environments | oss | needs-review |
+| [Coder](https://coder.com) | Developer experience and local environments | open-core | active |
 | [CodeWhale](https://codewhale.net/en) | Developer experience and local environments | oss | active |
-| [Codex](https://github.com/openai/codex) | Developer experience and local environments | oss | needs-review |
+| [Codex](https://github.com/openai/codex) | Developer experience and local environments | oss | active |
 | [commitlint](https://commitlint.js.org) | CI, build and testing | oss | active |
 | [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | commercial | active |
 | [Concourse](https://concourse-ci.org) | CI, build and testing | oss | active |
@@ -186,7 +186,7 @@
 | [DeepTutor](https://deeptutor.info/) | Documentation, learning and career resources | documentation | needs-review |
 | [delta](https://dandavison.github.io/delta/) | Developer experience and local environments | oss | active |
 | [DEV Community #devops](https://dev.to/t/devops) | Documentation, learning and career resources | documentation | needs-review |
-| [Development Containers](https://containers.dev) | Developer experience and local environments | oss | needs-review |
+| [Development Containers](https://containers.dev) | Developer experience and local environments | documentation | active |
 | [DevOps Bulletin](https://www.devopsbulletin.com/) | Documentation, learning and career resources | documentation | active |
 | [DevOps Community](https://www.devopscommunity.in) | Documentation, learning and career resources | documentation | needs-review |
 | [DevOps Exercises](https://github.com/bregman-arie/devops-exercises) | Documentation, learning and career resources | documentation | needs-review |
@@ -267,7 +267,7 @@
 | [GitHub](https://github.com) | Source control and repository management | commercial | active |
 | [GitHub Actions](https://github.com/features/actions) | CI, build and testing | commercial | active |
 | [GitHub CLI](https://cli.github.com) | Source control and repository management, Developer experience and local environments | oss | active |
-| [GitHub Codespaces](https://github.com/features/codespaces) | Developer experience and local environments | unknown | needs-review |
+| [GitHub Codespaces](https://github.com/features/codespaces) | Developer experience and local environments | commercial | active |
 | [GitLab](https://about.gitlab.com) | Source control and repository management | open-core | active |
 | [GitLab CI](https://docs.gitlab.com/ci/) | CI, build and testing | open-core | active |
 | [GitLab University](https://university.gitlab.com) | Source control and repository management | documentation | needs-review |
@@ -305,7 +305,7 @@
 | [Harbor](https://goharbor.io) | Artifact and package management | oss | needs-review |
 | [HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools) | Foundations, Linux and scripting | oss | needs-review |
 | [Harness](https://harness.io) | CI, build and testing | commercial | active |
-| [HashiCorp Vagrant](https://www.vagrantup.com) | Developer experience and local environments | source-available | needs-review |
+| [HashiCorp Vagrant](https://www.vagrantup.com) | Developer experience and local environments | source-available | active |
 | [Hashnode](https://hashnode.com) | Documentation, learning and career resources | documentation | needs-review |
 | [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) | Infrastructure as Code | commercial | active |
 | [Heroku](https://www.heroku.com) | Cloud platforms and cloud management | commercial | active |
@@ -470,7 +470,7 @@
 | [Open Interpreter](https://openinterpreter.com) | Developer experience and local environments | oss | needs-review |
 | [Open Notebook](https://www.open-notebook.ai) | Documentation, learning and career resources | oss | needs-review |
 | [Open vSwitch](https://www.openvswitch.org) | Virtualization, bare metal and homelab | oss | needs-review |
-| [OpenCode](https://opencode.ai) | Developer experience and local environments | oss | needs-review |
+| [OpenCode](https://opencode.ai) | Developer experience and local environments | oss | active |
 | [OpenDepot](https://tonedefdev.github.io/opendepot/) | Artifact and package management, Infrastructure as Code, Emerging and experimental tools | oss | active |
 | [OpenDev](https://opendev.org/) | Source control and repository management, CI, build and testing | free-saas | active |
 | [OpenFaaS](https://www.openfaas.com) | Serverless, edge and WebAssembly | open-core | needs-review |
@@ -597,7 +597,7 @@
 | [Snip](https://github.com/edouard-claude/snip) | Emerging and experimental tools | oss | needs-review |
 | [Snorlax](https://github.com/moonbeam-nyc/snorlax) | Emerging and experimental tools | oss | needs-review |
 | [Spacelift Deploy](https://spacelift.io) | Infrastructure as Code | commercial | active |
-| [Spec Kit](https://github.com/github/spec-kit) | Developer experience and local environments | oss | needs-review |
+| [Spec Kit](https://github.com/github/spec-kit) | Developer experience and local environments | oss | active |
 | [Spin](https://spinframework.dev) | Serverless, edge and WebAssembly | oss | needs-review |
 | [Spinnaker](https://spinnaker.io) | CD, GitOps, release and promotion | oss | active |
 | [Squid](https://www.squid-cache.org) | Databases, caching and data infrastructure | oss | needs-review |

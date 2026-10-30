@@ -48,9 +48,9 @@
 | [Codecov](https://about.codecov.io/) | CI, build and testing | commercial | active |
 | [Codefresh](https://codefresh.io/) | CI, build and testing | commercial | active |
 | [Codemod](https://codemod.com/) | Developer experience and local environments | open-core | active |
-| [Coder](https://coder.com) | Developer experience and local environments | oss | needs-review |
+| [Coder](https://coder.com) | Developer experience and local environments | open-core | active |
 | [CodeWhale](https://codewhale.net/en) | Developer experience and local environments | oss | active |
-| [Codex](https://github.com/openai/codex) | Developer experience and local environments | oss | needs-review |
+| [Codex](https://github.com/openai/codex) | Developer experience and local environments | oss | active |
 | [commitlint](https://commitlint.js.org) | CI, build and testing | oss | active |
 | [Concourse](https://concourse-ci.org) | CI, build and testing | oss | active |
 | [Confluence](https://www.atlassian.com/software/confluence) | Workflow automation and ChatOps | commercial | active |
@@ -63,7 +63,7 @@
 | [Cypress](https://www.cypress.io) | CI, build and testing | open-core | active |
 | [Dagger](https://dagger.io) | CI, build and testing | open-core | active |
 | [delta](https://dandavison.github.io/delta/) | Developer experience and local environments | oss | active |
-| [Development Containers](https://containers.dev) | Developer experience and local environments | oss | needs-review |
+| [Development Containers](https://containers.dev) | Developer experience and local environments | documentation | active |
 | [DevPod](https://devpod.sh) | Developer experience and local environments | oss | needs-review |
 | [Devtron](https://devtron.ai) | CI, build and testing | open-core | active |
 | [diffyml](https://szhekpisov.github.io/diffyml/) | Developer experience and local environments | oss | active |
@@ -92,7 +92,7 @@
 | [GitHub](https://github.com) | Source control and repository management | commercial | active |
 | [GitHub Actions](https://github.com/features/actions) | CI, build and testing | commercial | active |
 | [GitHub CLI](https://cli.github.com) | Source control and repository management, Developer experience and local environments | oss | active |
-| [GitHub Codespaces](https://github.com/features/codespaces) | Developer experience and local environments | unknown | needs-review |
+| [GitHub Codespaces](https://github.com/features/codespaces) | Developer experience and local environments | commercial | active |
 | [GitLab](https://about.gitlab.com) | Source control and repository management | open-core | active |
 | [GitLab CI](https://docs.gitlab.com/ci/) | CI, build and testing | open-core | active |
 | [GitLab University](https://university.gitlab.com) | Source control and repository management | documentation | needs-review |
@@ -107,7 +107,7 @@
 | [Graphify](https://graphify.com/) | MLOps, LLMOps and AI infrastructure, Developer experience and local environments | oss | active |
 | [Hadolint](https://github.com/hadolint/hadolint) | Developer experience and local environments | oss | needs-review |
 | [Harness](https://harness.io) | CI, build and testing | commercial | active |
-| [HashiCorp Vagrant](https://www.vagrantup.com) | Developer experience and local environments | source-available | needs-review |
+| [HashiCorp Vagrant](https://www.vagrantup.com) | Developer experience and local environments | source-available | active |
 | [Hoppscotch](https://hoppscotch.io/) | Developer experience and local environments | open-core | active |
 | [HTTPX](https://www.python-httpx.org/) | Developer experience and local environments | oss | active |
 | [Humanitec](https://humanitec.com) | Platform engineering and internal developer platforms | commercial | active |
@@ -157,7 +157,7 @@
 | [Ona (formerly Gitpod)](https://github.com/gitpod-io) | Developer experience and local environments | open-core | needs-review |
 | [OneDev](https://onedev.io) | CI, build and testing | open-core | active |
 | [Open Interpreter](https://openinterpreter.com) | Developer experience and local environments | oss | needs-review |
-| [OpenCode](https://opencode.ai) | Developer experience and local environments | oss | needs-review |
+| [OpenCode](https://opencode.ai) | Developer experience and local environments | oss | active |
 | [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | oss | active |
 | [OpenWiki](https://github.com/langchain-ai/openwiki) | Developer experience and local environments | oss | needs-review |
 | [OpsLevel](https://www.opslevel.com) | Platform engineering and internal developer platforms | commercial | active |
@@ -192,7 +192,7 @@
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | Developer experience and local environments | oss | active |
 | [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
 | [Slack](https://slack.com/) | Workflow automation and ChatOps | commercial | active |
-| [Spec Kit](https://github.com/github/spec-kit) | Developer experience and local environments | oss | needs-review |
+| [Spec Kit](https://github.com/github/spec-kit) | Developer experience and local environments | oss | active |
 | [StackBlitz](https://stackblitz.com/) | Developer experience and local environments | commercial | active |
 | [Starlight](https://starlight.astro.build) | Developer experience and local environments | documentation | needs-review |
 | [Superpowers](https://github.com/obra/superpowers) | Developer experience and local environments | oss | active |
