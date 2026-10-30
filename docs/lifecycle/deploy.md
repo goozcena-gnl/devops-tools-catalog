@@ -65,7 +65,7 @@
 - [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) — Microsoft MCP server connecting AI agents to Azure services and resource operations; maintained in microsoft/mcp.
 - [Azure Service Operator](https://azure.github.io/azure-service-operator) — Azure Service Operator reconciles Azure resources from Kubernetes custom resources using Azure Resource Manager.
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) — Microsoft-led Azure Verified Modules initiative defining standards and indexes for Bicep and Terraform resource and pattern modules; the central repository hosts governance and documentation, while implementations live in separate module repositories and registries.
-- [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
+- [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — Microsoft Azure Naming Tool web app and REST API for generating Azure resource names from administrator-defined conventions.
 - [Backstage](https://backstage.io) — Internal developer portal (IDP) / software catalog for improving developer experience.
 - [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) — Embedded key/value store for Go applications.
 - [Bito](https://bito.ai) — Commercial AI code-review and codebase-intelligence platform for repositories, IDEs, CLIs, and engineering workflows.
@@ -465,7 +465,7 @@
 - [phpIPAM](https://phpipam.net/) — Web application for IP address management, subnet planning, and address-space documentation.
 - [PikaPods](https://www.pikapods.com/) — Managed hosting service for deploying supported open-source applications as isolated pods.
 - [Piku](https://piku.github.io) — Heroku-like mini PaaS.
-- [Pluralith](https://www.pluralith.com) — Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
+- [Pluralith](https://www.pluralith.com) — Terraform plan and state diagramming CLI with a separately accessed UI/API; service licensing and current CLI maintenance still require verification.
 - [Pluto](https://github.com/FairwindsOps/pluto) — Command-line utility for detecting deprecated Kubernetes API versions in live clusters and manifests.
 - [Pocket ID](https://pocket-id.org/) — Self-hosted OpenID Connect provider that authenticates users with passkeys.
 - [PocketBase](https://pocketbase.io/) — Embedded backend service combining SQLite, authentication, file storage, realtime subscriptions, and an HTTP API.
@@ -516,7 +516,7 @@
 - [Scaleway](https://www.scaleway.com/en/) — Commercial European cloud and AI platform providing compute, storage, networking, managed databases, Kubernetes, serverless, and bare-metal services.
 - [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) — Scaleway managed Kubernetes service for clusters running on Scaleway compute, network, and storage resources.
 - [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) — Scaleway managed Kubernetes control plane for clusters whose nodes can span cloud and on-premises infrastructure.
-- [Scalr](https://github.com/Scalr) — Terraform automation and collaboration software.
+- [Scalr](https://scalr.com/) — Commercial Terraform/OpenTofu remote operations platform for central runs, state, policy and drift detection, with optional private run agents.
 - [Score](https://score.dev) — Score is a platform-agnostic container workload specification expressed in score.yaml; separate implementations such as score-compose and score-k8s translate it into platform configuration. The specification repository is not a Kubernetes deployment platform.
 - [Seabird](https://getseabird.github.io) — Native desktop app for exploring and managing Kubernetes clusters with an integrated terminal and manifest editor (MPL-2.0).
 - [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) — Encrypt Kubernetes secrets for GitOps workflows.
@@ -550,10 +550,10 @@
 - [Telepresence](https://www.telepresence.io) — Local dev against remote Kubernetes.
 - [Terraform Community Edition](https://www.terraform.io) — HashiCorp infrastructure-as-code CLI for provisioning and managing infrastructure and state, with separately licensed providers; HCP Terraform and Terraform Enterprise are distinct offerings.
 - [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) — HashiCorp MCP server for Terraform Registry discovery and authenticated HCP Terraform/Terraform Enterprise workspace and run workflows.
-- [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge for cost savings.
+- [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module scheduling Amazon EKS worker-node capacity using Lambda and EventBridge; does not pause EKS control-plane billing.
 - [terraform-skill](https://github.com/antonbabenko/terraform-skill) — Claude Code skill for Terraform and OpenTofu best practices, testing, modules, CI/CD, and security.
 - [Terragrunt](https://terragrunt.com/) — Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infrastructure with reusable configuration, units and dependencies.
-- [terravision](https://github.com/patrickchugh/terravision) — Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google, Azure).
+- [terravision](https://github.com/patrickchugh/terravision) — Cloud architecture diagram generator from Terraform for AWS, Azure and Google Cloud, with optional AI/MCP integration.
 - [TiKV](https://tikv.org) — Distributed transactional key-value database with horizontal scalability and strong consistency.
 - [Tinkerbell](https://tinkerbell.org/) — Bare-metal provisioning stack for declarative machine installation workflows.
 - [Tinyauth](https://tinyauth.app/) — Lightweight self-hosted authentication gateway for protecting applications behind a reverse proxy.

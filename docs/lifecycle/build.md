@@ -35,7 +35,7 @@
 - [Azure Functions Host](https://github.com/Azure/azure-functions-host) — The runtime host and core execution engine for Azure Functions.
 - [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) — Microsoft MCP server connecting AI agents to Azure services and resource operations; maintained in microsoft/mcp.
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) — Microsoft-led Azure Verified Modules initiative defining standards and indexes for Bicep and Terraform resource and pattern modules; the central repository hosts governance and documentation, while implementations live in separate module repositories and registries.
-- [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
+- [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — Microsoft Azure Naming Tool web app and REST API for generating Azure resource names from administrator-defined conventions.
 - [Bamboo](https://www.atlassian.com/software/bamboo) — Atlassian's commercially licensed, self-managed CI/CD server for build and deployment automation.
 - [Bazel](https://bazel.build) — Extensible build and test system for multi-language, multi-platform software, with incremental execution and local or remote caching.
 - [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) — Integrated CI/CD for Bitbucket repositories.
@@ -200,7 +200,7 @@
 - [pgvector](https://github.com/pgvector/pgvector) — PostgreSQL extension that adds vector data types, similarity search, and vector indexes.
 - [Playwright](https://playwright.dev) — Cross-browser web test runner and browser automation framework supporting Chromium, Firefox and WebKit.
 - [Plumber](https://getplumber.io) — CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
-- [Pluralith](https://www.pluralith.com) — Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
+- [Pluralith](https://www.pluralith.com) — Terraform plan and state diagramming CLI with a separately accessed UI/API; service licensing and current CLI maintenance still require verification.
 - [pre-commit](https://pre-commit.com) — Multi-language Git hook framework using declarative configuration and managed hook environments for repeatable local or CI checks.
 - [Probot DCO](https://probot.github.io/apps/dco) — DCO checks for GitHub pull requests.
 - [ProGet](https://inedo.com/proget) — Universal package manager for DevOps and CI/CD.
@@ -218,7 +218,7 @@
 - [Review Flow](https://dgouron.github.io/review-flow) — GitHub pull request review workflow visualization and management tool.
 - [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) — Mobile app testing on a wide range of real devices.
 - [sbt](https://www.scala-sbt.org) — Interactive build tool for Scala, Java, and other JVM projects.
-- [Scalr](https://github.com/Scalr) — Terraform automation and collaboration software.
+- [Scalr](https://scalr.com/) — Commercial Terraform/OpenTofu remote operations platform for central runs, state, policy and drift detection, with optional private run agents.
 - [sccache](https://github.com/mozilla/sccache) — Compiler cache supporting local and remote storage backends.
 - [Schemathesis](https://schemathesis.readthedocs.io/en/stable/) — Property-based API testing tool that generates cases from OpenAPI and GraphQL schemas.
 - [Score](https://score.dev) — Score is a platform-agnostic container workload specification expressed in score.yaml; separate implementations such as score-compose and score-k8s translate it into platform configuration. The specification repository is not a Kubernetes deployment platform.
@@ -240,12 +240,12 @@
 - [Tekton](https://tekton.dev) — Kubernetes-native CI/CD framework and ecosystem built around Tekton Pipelines, with complementary triggers, tooling and supply-chain components.
 - [Tekton Chains](https://tekton.dev/docs/chains/) — Tekton controller that records, signs, and stores supply-chain metadata for pipeline task runs.
 - [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) — HashiCorp MCP server for Terraform Registry discovery and authenticated HCP Terraform/Terraform Enterprise workspace and run workflows.
-- [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge for cost savings.
+- [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module scheduling Amazon EKS worker-node capacity using Lambda and EventBridge; does not pause EKS control-plane billing.
 - [terraform-docs](https://terraform-docs.io) — CLI and library generating Terraform module documentation from module configuration in multiple formats, with CI and pre-commit integration; it does not execute infrastructure or generate provider reference documentation.
 - [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) — HashiCorp tfplugindocs CLI and packages generate, migrate and validate Terraform provider/plugin documentation using examples, templates and provider schema; distinct from terraform-docs for modules.
 - [terraform-skill](https://github.com/antonbabenko/terraform-skill) — Claude Code skill for Terraform and OpenTofu best practices, testing, modules, CI/CD, and security.
 - [Terragrunt](https://terragrunt.com/) — Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infrastructure with reusable configuration, units and dependencies.
-- [terravision](https://github.com/patrickchugh/terravision) — Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google, Azure).
+- [terravision](https://github.com/patrickchugh/terravision) — Cloud architecture diagram generator from Terraform for AWS, Azure and Google Cloud, with optional AI/MCP integration.
 - [Test Kitchen](https://kitchen.ci) — Ruby integration testing framework that provisions and verifies infrastructure code on isolated test targets.
 - [Testcontainers](https://github.com/testcontainers) — Multi-language libraries for integration testing with disposable containers; language libraries and paid cloud offerings have separate licences.
 - [Testkube](https://testkube.io) — Kubernetes-native test orchestration product with a standalone public agent, mixed MIT and Testkube Community License code, and a commercial control plane.

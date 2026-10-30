@@ -12,7 +12,7 @@
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation) — Managed AWS infrastructure provisioning service for modeling resources as templates and stacks.
 - [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) — Declarative IaC language for Azure Resource Manager deployments.
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) — Microsoft-led Azure Verified Modules initiative defining standards and indexes for Bicep and Terraform resource and pattern modules; the central repository hosts governance and documentation, while implementations live in separate module repositories and registries.
-- [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — NET Blazor app with REST API for generating and validating Azure resource names with SQLite-backed configuration.
+- [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — Microsoft Azure Naming Tool web app and REST API for generating Azure resource names from administrator-defined conventions.
 - [Bitbucket](https://www.atlassian.com/software/bitbucket) — Atlassian's commercial Git repository-hosting product family, covering Bitbucket Cloud and the self-managed Bitbucket Data Center offering.
 - [Cal.com](https://cal.com) — Open-source scheduling and booking platform (Calendly alternative) for teams and individuals.
 - [Camunda 8](https://camunda.com) — Commercial process-orchestration platform for BPMN workflows and DMN decisions, offered as SaaS or Self-Managed with separate production licensing.
@@ -47,22 +47,22 @@
 - [OpenTofu](https://opentofu.org) — Community-governed infrastructure-as-code CLI for declaratively provisioning and managing cloud and on-premises resources.
 - [Packer](https://www.packer.io) — HashiCorp machine-image build CLI that creates reproducible images for multiple platforms from one configuration, with separately licensed plugins and HCP image metadata services.
 - [Plane](https://plane.so) — Open-source project management tool.
-- [Pluralith](https://www.pluralith.com) — Visualize and document Terraform infrastructure with automatically generated architecture diagrams.
+- [Pluralith](https://www.pluralith.com) — Terraform plan and state diagramming CLI with a separately accessed UI/API; service licensing and current CLI maintenance still require verification.
 - [Pulumi](https://www.pulumi.com) — IaC using real programming languages.
 - [Rackula](https://www.racku.la/) — Browser-based rack layout designer for planning equipment placement and exporting rack diagrams.
 - [Redmine](https://www.redmine.org/) — Self-hosted project and issue tracking application with workflows, wikis, and repository integration.
 - [Risk Analysis Editor](https://www.risk-analysis-editor.com/) — Offline browser-based editor for configurable risk registers, treatment plans, matrices, and reports.
 - [Rundeck](https://www.rundeck.com) — Apache-2.0 runbook and self-service operations automation server with CLI and API; PagerDuty commercial Runbook Automation is a separate offering.
-- [Scalr](https://github.com/Scalr) — Terraform automation and collaboration software.
+- [Scalr](https://scalr.com/) — Commercial Terraform/OpenTofu remote operations platform for central runs, state, policy and drift detection, with optional private run agents.
 - [Score](https://score.dev) — Score is a platform-agnostic container workload specification expressed in score.yaml; separate implementations such as score-compose and score-k8s translate it into platform configuration. The specification repository is not a Kubernetes deployment platform.
 - [Slack](https://slack.com/) — Salesforce-owned hosted collaboration and ChatOps platform for channels, workflows, integrations, and AI-assisted work.
 - [Spacelift Deploy](https://spacelift.io) — Commercial infrastructure-as-code orchestration control plane with worker pools and Open Policy Agent governance, available as SaaS or self-hosted Spacelift.
 - [Stategraph Orchestration (formerly Terrateam)](https://stategraph.com) — Stategraph Orchestration, formerly Terrateam, automates Terraform/OpenTofu plans and applies through GitHub or GitLab pull requests and CI runners. Its MPL-2.0 open-source core is distinct from commercial Enterprise, hosted services and Stategraph Infrastructure as a Database.
 - [Tenzu](https://tenzu.net/fr) — Ethical open-source task and Kanban collaboration platform.
 - [Terraform Community Edition](https://www.terraform.io) — HashiCorp infrastructure-as-code CLI for provisioning and managing infrastructure and state, with separately licensed providers; HCP Terraform and Terraform Enterprise are distinct offerings.
-- [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module that schedules AWS EKS node groups to scale up and down with Lambda and EventBridge for cost savings.
+- [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) — Terraform module scheduling Amazon EKS worker-node capacity using Lambda and EventBridge; does not pause EKS control-plane billing.
 - [Terragrunt](https://terragrunt.com/) — Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infrastructure with reusable configuration, units and dependencies.
-- [terravision](https://github.com/patrickchugh/terravision) — Generate professional cloud architecture diagrams automatically from Terraform code (AWS, Google, Azure).
+- [terravision](https://github.com/patrickchugh/terravision) — Cloud architecture diagram generator from Terraform for AWS, Azure and Google Cloud, with optional AI/MCP integration.
 - [WeKan](https://wekan.fi) — Open-source kanban board for task and project management.
 - [Windmill](https://www.windmill.dev) — Code-first self-hostable workflow, app and AI-agent execution platform with AGPL/Apache open-source components and separately licensed enterprise and distributed-image features.
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.

@@ -80,7 +80,7 @@
 | [Azure Messaging for AWS Professionals](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
-| [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
+| [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | active |
 | [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | deprecated |
 | [Barbara](https://www.barbara.tech) | Emerging and experimental tools | unknown | needs-review |
 | [Bash](https://www.gnu.org/software/bash) | Foundations, Linux and scripting | oss | needs-review |
@@ -568,7 +568,7 @@
 | [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) | CI, build and testing | unknown | needs-review |
 | [sbt](https://www.scala-sbt.org) | Containers and image tooling | oss | needs-review |
 | [Scaleway](https://www.scaleway.com/en/) | Cloud platforms and cloud management | commercial | active |
-| [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
+| [Scalr](https://scalr.com/) | Infrastructure as Code | commercial | active |
 | [sccache](https://github.com/mozilla/sccache) | CI, build and testing | oss | active |
 | [Schemathesis](https://schemathesis.readthedocs.io/en/stable/) | CI, build and testing | oss | active |
 | [Score](https://score.dev) | Infrastructure as Code | oss | active |
@@ -637,7 +637,7 @@
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | active |
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | active |
 | [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
-| [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
+| [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | active |
 | [Test Kitchen](https://kitchen.ci) | CI, build and testing | oss | active |
 | [Testcontainers](https://github.com/testcontainers) | CI, build and testing | open-core | needs-review |
 | [Testkube](https://testkube.io) | CI, build and testing | open-core | active |

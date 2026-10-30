@@ -32,7 +32,7 @@
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
 | [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) | Virtualization, bare metal and homelab | documentation | needs-review |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
-| [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | needs-review |
+| [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | active |
 | [Bash](https://www.gnu.org/software/bash) | Foundations, Linux and scripting | oss | needs-review |
 | [Bat](https://github.com/sharkdp/bat) | Foundations, Linux and scripting | oss | needs-review |
 | [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) | Databases, caching and data infrastructure | oss | needs-review |
@@ -190,7 +190,7 @@
 | [runc](https://github.com/opencontainers/runc) | Virtualization, bare metal and homelab | oss | needs-review |
 | [RustFS](https://rustfs.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Salt](https://saltproject.io) | Configuration management | oss | needs-review |
-| [Scalr](https://github.com/Scalr) | Infrastructure as Code | unknown | needs-review |
+| [Scalr](https://scalr.com/) | Infrastructure as Code | commercial | active |
 | [Scanopy](https://scanopy.net/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Score](https://score.dev) | Infrastructure as Code | oss | active |
 | [Sealos](https://sealos.io) | Virtualization, bare metal and homelab | oss | needs-review |
@@ -216,7 +216,7 @@
 | [terraform-docs](https://terraform-docs.io) | Infrastructure as Code | oss | active |
 | [terraform-plugin-docs](https://github.com/hashicorp/terraform-plugin-docs) | Infrastructure as Code | oss | active |
 | [Terragrunt](https://terragrunt.com/) | Infrastructure as Code | oss | active |
-| [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | needs-review |
+| [terravision](https://github.com/patrickchugh/terravision) | Infrastructure as Code | oss | active |
 | [TFLint](https://github.com/terraform-linters/tflint) | Infrastructure as Code | source-available | active |
 | [The Linux Command Line](https://linuxcommand.org/tlcl.php) | Foundations, Linux and scripting | documentation | needs-review |
 | [The Linux Documentation Project (TLDP)](https://tldp.org) | Foundations, Linux and scripting | documentation | needs-review |
