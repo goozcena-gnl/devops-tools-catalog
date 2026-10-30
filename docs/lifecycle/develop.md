@@ -9,7 +9,7 @@
 - [Addy Osmani Agent Skills](https://skills.addy.ie/) — Versioned coding-agent workflows covering specifications, implementation, testing, review, and delivery.
 - [AgentsRoom](https://agentsroom.dev/) — Desktop workspace for managing projects and coordinating coding-agent sessions and team workflows.
 - [AIChat](https://github.com/sigoden/aichat) — Terminal model client with multiple provider integrations and optional tool and retrieval workflows.
-- [Aider](https://aider.chat) — AI pair programming in the terminal.
+- [Aider](https://aider.chat) — Apache-2.0 terminal AI pair programmer that edits Git-tracked code using separately configured model providers; latest identified stable release dates from August 2025.
 - [Akka.NET](https://getakka.net) — Actor-based concurrency framework for .NET.
 - [Angular](https://angular.dev) — Web application framework.
 - [AppImage](https://appimage.org) — Portable Linux application packaging format (single executable).
@@ -41,10 +41,10 @@
 - [Codeberg](https://codeberg.org/) — Non-profit hosted software forge built on Forgejo for free and open-source projects.
 - [codegraph](https://colbymchenry.github.io/codegraph) — Codebase graph visualization tool for understanding repository structure.
 - [Codemod](https://codemod.com/) — Code transformation and maintenance platform with an open-source engine and paid organization-wide workflow features.
-- [Coder](https://coder.com) — Self-hosted cloud development environments and AI development infrastructure with governance.
+- [Coder](https://coder.com) — Self-hosted Terraform-defined development workspaces and AI agent infrastructure, with AGPL-3.0 source and separate paid Premium features.
 - [CodeWhale](https://codewhale.net/en) — Open-source terminal coding agent with multi-provider model support and local tool execution.
-- [Codex](https://github.com/openai/codex) — Lightweight coding agent from OpenAI that runs in your terminal.
-- [Continue](https://www.continue.dev) — Open-source AI code assistant.
+- [Codex](https://github.com/openai/codex) — Apache-2.0 open-source Codex CLI coding agent; model inference, IDE integrations and hosted Codex services have separate account and service terms.
+- [Continue](https://www.continue.dev) — Apache-2.0 CLI and IDE coding assistant whose publisher declares the repository read-only and no longer actively maintained following its final 2.0.0 release.
 - [Cortex XSOAR](https://www.paloaltonetworks.com/cortex/cortex-xsoar) — Commercial SOAR platform (Community/Starter/Enterprise licensing). Content packs are open on GitHub.
 - [CRC](https://crc.dev/) — Local virtual-machine environment for running OpenShift, MicroShift, or Podman for development and testing.
 - [CUE](https://cuelang.org) — Data validation language and tool.
@@ -52,8 +52,8 @@
 - [Cursor](https://cursor.com) — Commercial AI coding workspace and editor for agent-assisted repository development.
 - [Cursor Origin](https://cursor.com/origin) — Cursor-hosted Git forge designed for human and coding-agent repository collaboration.
 - [delta](https://dandavison.github.io/delta/) — Terminal pager that improves presentation of Git and other diffs.
-- [Development Containers](https://containers.dev) — Open specification for defining reproducible, containerized development environments (devcontainers).
-- [DevPod](https://devpod.sh) — Open-source dev environments that can run locally or on remote providers.
+- [Development Containers](https://containers.dev) — Open development-container specification for reproducible dev environments; the specification is CC-BY-4.0 and its separately licensed reference CLI is MIT.
+- [DevPod](https://devpod.sh) — MPL-2.0 devcontainer workspace client connecting local IDEs to local Docker, remote SSH, Kubernetes and cloud providers; recent release support remains uncertain.
 - [Diagrams](https://pypi.org/project/diagrams) — Python library for building cloud and system architecture diagrams as code.
 - [diffyml](https://szhekpisov.github.io/diffyml/) — Command-line tool that compares YAML documents structurally instead of as line-oriented text.
 - [direnv](https://direnv.net/) — Shell extension that loads and unloads directory-specific environment variables.
@@ -85,7 +85,7 @@
 - [Gitea](https://about.gitea.com/) — Self-hosted Git forge with repository hosting, code review, issues, packages, and automation integrations.
 - [GitHub](https://github.com) — Hosted and self-managed developer platform for Git repositories, collaboration, automation, and software delivery.
 - [GitHub CLI](https://cli.github.com) — Official command-line interface for GitHub repositories, pull requests, issues, releases, and Actions workflows.
-- [GitHub Codespaces](https://github.com/features/codespaces) — Hosted cloud development environments integrated with GitHub.
+- [GitHub Codespaces](https://github.com/features/codespaces) — GitHub-hosted cloud development environments billed for compute and storage, with account-specific included quotas and no product-wide open-source licence.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 - [GitLab University](https://university.gitlab.com) — Training resources for GitLab, CI/CD, and DevOps practices.
 - [Gitleaks](https://gitleaks.io) — MIT-licensed CLI detecting secrets in Git history, files and standard input for local, pre-commit and CI use; upstream is feature-complete with future releases limited to security patches, distinct from hosted secret-scanning services.
@@ -100,7 +100,7 @@
 - [Graphify](https://graphify.com/) — Local code-knowledge graph tool for mapping code, configuration, schemas, and documentation for AI coding assistants.
 - [Hadolint](https://github.com/hadolint/hadolint) — Haskell-based Dockerfile linter with ShellCheck-derived shell diagnostics.
 - [HariSekhon/DevOps-Bash-tools](https://github.com/HariSekhon/DevOps-Bash-tools) — Large collection of Bash scripts, shell helpers, and automation tooling for DevOps, cloud, CI/CD, Kubernetes, and APIs.
-- [HashiCorp Vagrant](https://www.vagrantup.com) — Tool for building and managing virtual machine environments (BUSL-1.1).
+- [HashiCorp Vagrant](https://www.vagrantup.com) — Version-dependent source-available VM development environment CLI: Vagrant 2.4.3+ uses IBM Business Source License 1.1; HCP Vagrant service deprecation is separate.
 - [Homer](https://homer-demo.netlify.app) — Static dashboard for organizing links to self-hosted services and tools.
 - [Hoppscotch](https://hoppscotch.io/) — API development workspace with community self-hosting and commercial collaboration options.
 - [htop](https://htop.dev/) — Interactive process viewer for inspecting system processes and resource usage.
@@ -148,7 +148,7 @@
 - [Omarchy](https://omarchy.org) — Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.
 - [Ona (formerly Gitpod)](https://github.com/gitpod-io) — Cloud-based development environments.
 - [Open Interpreter](https://openinterpreter.com) — Run AI that can execute tasks locally.
-- [OpenCode](https://opencode.ai) — Open-source AI coding agent.
+- [OpenCode](https://opencode.ai) — MIT-licensed open-source coding agent with independently billed or licensed model providers and optional online services.
 - [OpenDev](https://opendev.org/) — Public collaborative infrastructure service providing Git hosting, code review, CI, and related services for open-source projects.
 - [OpenRun](https://openrun.dev) — Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
 - [openspeedtest](https://github.com/openspeedtest) — Self-hosted network speed test application.
@@ -190,7 +190,7 @@
 - [Skaffold](https://skaffold.dev) — Client-side container-development CLI for build, test, push, deploy and debug loops with Kubernetes and other supported targets; upstream plans repository archival on 29 January 2027.
 - [Snip](https://github.com/edouard-claude/snip) — Code snippet manager.
 - [Snorlax](https://github.com/moonbeam-nyc/snorlax) — Kubernetes operator for scheduling deployment sleep/wake cycles to reduce resource costs.
-- [Spec Kit](https://github.com/github/spec-kit) — Toolkit from GitHub for getting started with Spec-Driven Development.
+- [Spec Kit](https://github.com/github/spec-kit) — MIT-licensed GitHub toolkit for specification-driven development workflows and templates that integrate with independently operated coding agents.
 - [sshm](https://github.com/Gu1llaum-3/sshm) — SSH connection manager (see project).
 - [StackBlitz](https://stackblitz.com/) — Browser-based development environment powered by in-browser WebContainers.
 - [Starlight](https://starlight.astro.build) — Documentation site framework.

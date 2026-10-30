@@ -89,17 +89,18 @@ Terminal model client with multiple provider integrations and optional tool and 
 **Model:** Oss<br>
 **Status:** Needs Review
 
-AI pair programming in the terminal.
+Apache-2.0 terminal AI pair programmer that edits Git-tracked code using separately configured model providers; latest identified stable release dates from August 2025.
 
 **Use when**
 
-- * You want terminal-based AI coding assistance that works with your existing editor and git workflow.
+- You want terminal-based AI assistance for reviewed Git changes and can control model-provider data access.
 
 **Consider alternatives when**
 
-- * You prefer IDE-integrated AI or need a visual interface.
+- You cannot send source code or prompts to selected model providers under your organization's data policy.
+- You require independently verified frequent security fixes and recent stable releases; the most recent identified stable release is v0.86.0 from August 2025.
 
-[Official site](https://aider.chat) · [Source repository](https://github.com/paul-gauthier/aider)
+[Official site](https://aider.chat) · [Source repository](https://github.com/Aider-AI/aider)
 
 ### Angular
 
@@ -296,18 +297,19 @@ Code transformation and maintenance platform with an open-source engine and paid
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Open Core<br>
+**Status:** Active
 
-Self-hosted cloud development environments and AI development infrastructure with governance.
+Self-hosted Terraform-defined development workspaces and AI agent infrastructure, with AGPL-3.0 source and separate paid Premium features.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need centrally governed cloud development workspaces defined with Terraform and optional coding agents on infrastructure you control.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You assume paid Coder Premium features are included under the public source licence.
+- You cannot isolate workspace privileges, provider credentials, model access or agents that execute untrusted code.
 
 [Official site](https://coder.com) · [Source repository](https://github.com/coder/coder)
 
@@ -335,17 +337,18 @@ Open-source terminal coding agent with multi-provider model support and local to
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Lightweight coding agent from OpenAI that runs in your terminal.
+Apache-2.0 open-source Codex CLI coding agent; model inference, IDE integrations and hosted Codex services have separate account and service terms.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want an AI coding assistant in the terminal with explicit command approvals, sandbox boundaries and reviewed Git changes.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You assume the Codex CLI Apache-2.0 licence covers hosted Codex services or third-party models.
+- You cannot review model data flows, command permissions or secrets exposure before executing agent-generated changes.
 
 [Source repository](https://github.com/openai/codex)
 
@@ -356,15 +359,16 @@ Lightweight coding agent from OpenAI that runs in your terminal.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Open-source AI code assistant.
+Apache-2.0 CLI and IDE coding assistant whose publisher declares the repository read-only and no longer actively maintained following its final 2.0.0 release.
 
 **Use when**
 
-- * You want an open-source, IDE-integrated AI assistant with flexibility to choose your own LLM backend.
+- You maintain a previously deployed Continue installation and can accept the publisher's end-of-maintenance statement.
 
 **Consider alternatives when**
 
-- * You want a polished, turnkey AI coding experience without setup.
+- You need an actively maintained assistant with reliable future fixes or vulnerability patches.
+- You infer ongoing support from GitHub's unarchived status or recent repository metadata despite the explicit read-only statement.
 
 [Official site](https://www.continue.dev) · [Source repository](https://github.com/continuedev/continue)
 
@@ -429,20 +433,21 @@ Terminal pager that improves presentation of Git and other diffs.
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Oss<br>
-**Status:** Needs Review
+**Model:** Documentation<br>
+**Status:** Active
 
-Open specification for defining reproducible, containerized development environments (devcontainers).
+Open development-container specification for reproducible dev environments; the specification is CC-BY-4.0 and its separately licensed reference CLI is MIT.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a portable devcontainer.json definition usable with compatible tools, editors and container runtimes.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You expect the specification alone to supply a working runtime or guaranteed sandbox isolation.
+- You assume that the CC-BY-4.0 specification, MIT reference CLI and third-party images all share the same licence.
 
-[Official site](https://containers.dev)
+[Official site](https://containers.dev) · [Documentation](https://containers.dev/)
 
 ### DevPod
 
@@ -451,15 +456,16 @@ Open specification for defining reproducible, containerized development environm
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Open-source dev environments that can run locally or on remote providers.
+MPL-2.0 devcontainer workspace client connecting local IDEs to local Docker, remote SSH, Kubernetes and cloud providers; recent release support remains uncertain.
 
 **Use when**
 
-- You want reproducible dev containers across local Docker, SSH hosts, or cloud VMs without vendor lock-in.
+- You want provider-agnostic containerized development environments across local and remote infrastructure.
 
 **Consider alternatives when**
 
-- Your team is already standardized on GitHub Codespaces or Gitpod.
+- You rely on guaranteed current upstream security maintenance; recent stable release support was not established.
+- You cannot protect cloud or Kubernetes provider credentials and enforce workspace image trust.
 
 [Official site](https://devpod.sh) · [Source repository](https://github.com/loft-sh/devpod)
 
@@ -733,20 +739,21 @@ Official command-line interface for GitHub repositories, pull requests, issues, 
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Hosted cloud development environments integrated with GitHub.
+GitHub-hosted cloud development environments billed for compute and storage, with account-specific included quotas and no product-wide open-source licence.
 
 **Use when**
 
-- Your team is on GitHub and wants zero-setup, cloud-based dev environments.
+- You need GitHub-integrated hosted development environments with standardized devcontainer configuration and approved spending controls.
 
 **Consider alternatives when**
 
-- You need self-hosted control or want to minimize per-seat cloud costs.
+- You require a self-hosted control plane or zero-cost unlimited compute and storage.
+- You cannot grant GitHub cloud workspaces the needed repository, network or secrets access under approved organization policies.
 
-[Source repository](https://github.com/features/codespaces)
+[Official site](https://github.com/features/codespaces) · [Source repository](https://github.com/features/codespaces)
 
 ### Godcoder
 
@@ -850,17 +857,19 @@ Haskell-based Dockerfile linter with ShellCheck-derived shell diagnostics.
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Source Available<br>
-**Status:** Needs Review
+**Status:** Active
 
-Tool for building and managing virtual machine environments (BUSL-1.1).
+Version-dependent source-available VM development environment CLI: Vagrant 2.4.3+ uses IBM Business Source License 1.1; HCP Vagrant service deprecation is separate.
 
 **Use when**
 
-- You need full VM-based dev environments (e.g., kernel work, multi-node clusters).
+- You need portable, provider-backed local or remote virtual machine development and test environments.
 
 **Consider alternatives when**
 
-- Containers suffice—VMs are heavier and slower to provision.
+- You assume Business Source License 1.1 is OSI-approved open source or that all historic Vagrant versions share the same terms.
+- You confuse the HCP Vagrant service deprecation with the continuing Vagrant CLI.
+- Containers are adequate and you cannot justify VM overhead or privileged hypervisor access.
 
 [Official site](https://www.vagrantup.com) · [Source repository](https://github.com/hashicorp/vagrant)
 
@@ -1327,19 +1336,20 @@ Run AI that can execute tasks locally.
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Open-source AI coding agent.
+MIT-licensed open-source coding agent with independently billed or licensed model providers and optional online services.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want an open-source coding agent and can evaluate model provider, shell tools and repository permissions.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You equate the agent's MIT source licence with free inference, private cloud services or unrestricted third-party model rights.
+- You cannot approve prompt/code disclosure and restrict the agent's file, shell and credential access.
 
-[Official site](https://opencode.ai)
+[Official site](https://opencode.ai) · [Source repository](https://github.com/anomalyco/opencode)
 
 ### OpenWiki
 
@@ -1653,19 +1663,20 @@ Client-side container-development CLI for build, test, push, deploy and debug lo
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Toolkit from GitHub for getting started with Spec-Driven Development.
+MIT-licensed GitHub toolkit for specification-driven development workflows and templates that integrate with independently operated coding agents.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a repeatable specification-to-plan-to-task workflow before delegating coding to an AI agent.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You expect Spec Kit to run, validate or secure generated application code autonomously.
+- You assume external coding agents, models and hosted providers share Spec Kit's MIT licence.
 
-[Source repository](https://github.com/github/spec-kit)
+[Documentation](https://github.github.com/spec-kit/) · [Source repository](https://github.com/github/spec-kit)
 
 ### StackBlitz
 

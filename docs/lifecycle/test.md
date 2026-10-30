@@ -7,7 +7,7 @@
 - [Addy Osmani Agent Skills](https://skills.addy.ie/) — Versioned coding-agent workflows covering specifications, implementation, testing, review, and delivery.
 - [AgentsRoom](https://agentsroom.dev/) — Desktop workspace for managing projects and coordinating coding-agent sessions and team workflows.
 - [AIChat](https://github.com/sigoden/aichat) — Terminal model client with multiple provider integrations and optional tool and retrieval workflows.
-- [Aider](https://aider.chat) — AI pair programming in the terminal.
+- [Aider](https://aider.chat) — Apache-2.0 terminal AI pair programmer that edits Git-tracked code using separately configured model providers; latest identified stable release dates from August 2025.
 - [Aikido](https://www.aikido.dev) — Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud posture scanning.
 - [Aircrack-ng](https://www.aircrack-ng.org/) — Wireless network security-auditing suite for capture analysis and controlled Wi-Fi validation.
 - [ALTCHA](https://altcha.org/) — Bot-protection family with a self-hosted MIT-licensed proof-of-work core and commercial Sentinel and Cloud capabilities.
@@ -78,14 +78,14 @@
 - [Codefresh](https://codefresh.io/) — Commercial software-delivery platform combining CI, deployment, and Argo-based GitOps capabilities.
 - [Codemod](https://codemod.com/) — Code transformation and maintenance platform with an open-source engine and paid organization-wide workflow features.
 - [CodeQL](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql) — Semantic code analysis for vulnerabilities.
-- [Coder](https://coder.com) — Self-hosted cloud development environments and AI development infrastructure with governance.
+- [Coder](https://coder.com) — Self-hosted Terraform-defined development workspaces and AI agent infrastructure, with AGPL-3.0 source and separate paid Premium features.
 - [CodeWhale](https://codewhale.net/en) — Open-source terminal coding agent with multi-provider model support and local tool execution.
-- [Codex](https://github.com/openai/codex) — Lightweight coding agent from OpenAI that runs in your terminal.
+- [Codex](https://github.com/openai/codex) — Apache-2.0 open-source Codex CLI coding agent; model inference, IDE integrations and hosted Codex services have separate account and service terms.
 - [Codiga](https://www.codiga.io/blog/codiga-joins-datadog/) — Discontinued static code analysis and coding-assistant service whose technology was integrated into Datadog Code Analysis.
 - [commitlint](https://commitlint.js.org) — Lint commit messages (Conventional Commits).
 - [Concourse](https://concourse-ci.org) — CI/CD system with declarative pipelines.
 - [Conftest](https://www.conftest.dev) — Test configuration files using OPA/Rego.
-- [Continue](https://www.continue.dev) — Open-source AI code assistant.
+- [Continue](https://www.continue.dev) — Apache-2.0 CLI and IDE coding assistant whose publisher declares the repository read-only and no longer actively maintained following its final 2.0.0 release.
 - [copy-fail-destroyer](https://github.com/NorskHelsenett/copy-fail-destroyer) — Kubernetes DaemonSet that detects and remediates Linux kernel page-cache write vulnerabilities (Copy Fail / Dirty Frag) and exposes Prometheus metrics.
 - [Coraza](https://coraza.io) — ModSecurity-compatible WAF library.
 - [CRC](https://crc.dev/) — Local virtual-machine environment for running OpenShift, MicroShift, or Podman for development and testing.
@@ -104,8 +104,8 @@
 - [DefectDojo](https://www.defectdojo.com/) — Application security posture and vulnerability-management platform that ingests findings from many scanners.
 - [DependencyCheck](https://owasp.org/projects/dependency-check) — Identify vulnerable dependencies.
 - [detect-secrets](https://github.com/Yelp/detect-secrets) — Apache-2.0 repository secret detector using configurable plugins, baselines and manual triage to prevent new credentials entering version control.
-- [Development Containers](https://containers.dev) — Open specification for defining reproducible, containerized development environments (devcontainers).
-- [DevPod](https://devpod.sh) — Open-source dev environments that can run locally or on remote providers.
+- [Development Containers](https://containers.dev) — Open development-container specification for reproducible dev environments; the specification is CC-BY-4.0 and its separately licensed reference CLI is MIT.
+- [DevPod](https://devpod.sh) — MPL-2.0 devcontainer workspace client connecting local IDEs to local Docker, remote SSH, Kubernetes and cloud providers; recent release support remains uncertain.
 - [Devtron](https://devtron.ai) — Kubernetes application-delivery platform with an Apache-2.0 core, CI/CD and Helm/GitOps integrations, plus separately offered commercial platform capabilities.
 - [diffyml](https://szhekpisov.github.io/diffyml/) — Command-line tool that compares YAML documents structurally instead of as line-oriented text.
 - [DigiCert](https://www.digicert.com/) — Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing, device trust, and related product families.
@@ -138,7 +138,7 @@
 - [Ghostwriter](https://www.ghostwriter.wiki/home) — Collaborative platform for managing security assessments, findings, evidence, and reports.
 - [Gibson](https://github.com/HackingLZ/gibson) — Network monitoring and threat-hunting tool that maps processes to connections, flags beaconing, and helps generate firewall rules.
 - [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform terms separate from the MIT runner and independent action licences.
-- [GitHub Codespaces](https://github.com/features/codespaces) — Hosted cloud development environments integrated with GitHub.
+- [GitHub Codespaces](https://github.com/features/codespaces) — GitHub-hosted cloud development environments billed for compute and storage, with account-specific included quotas and no product-wide open-source licence.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 - [GitLab CI](https://docs.gitlab.com/ci/) — GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, with separately deployed GitLab Runner and distinct Community, Enterprise and service terms.
 - [Gitleaks](https://gitleaks.io) — MIT-licensed CLI detecting secrets in Git history, files and standard input for local, pre-commit and CI use; upstream is feature-complete with future releases limited to security patches, distinct from hosted secret-scanning services.
@@ -157,7 +157,7 @@
 - [Hadolint](https://github.com/hadolint/hadolint) — Haskell-based Dockerfile linter with ShellCheck-derived shell diagnostics.
 - [Harness](https://harness.io) — Commercial software-delivery platform spanning CI, CD, GitOps, infrastructure, security, reliability, and developer-experience modules.
 - [Hashcat](https://hashcat.net/hashcat/) — Hardware-accelerated password recovery and security-auditing utility.
-- [HashiCorp Vagrant](https://www.vagrantup.com) — Tool for building and managing virtual machine environments (BUSL-1.1).
+- [HashiCorp Vagrant](https://www.vagrantup.com) — Version-dependent source-available VM development environment CLI: Vagrant 2.4.3+ uses IBM Business Source License 1.1; HCP Vagrant service deprecation is separate.
 - [hcxdumptool](https://github.com/ZerBea/hcxdumptool) — Wireless packet-capture utility for supported Linux Wi-Fi adapters.
 - [hcxtools](https://github.com/ZerBea/hcxtools) — Utilities for converting and processing wireless capture data for security-audit workflows.
 - [Hoppscotch](https://hoppscotch.io/) — API development workspace with community self-hosting and commercial collaboration options.
@@ -242,7 +242,7 @@
 - [Open Interpreter](https://openinterpreter.com) — Run AI that can execute tasks locally.
 - [Open Policy Agent](https://www.openpolicyagent.org) — Policy-based control for cloud-native environments.
 - [open-appsec](https://www.openappsec.io) — ML-based application & API security (WAF/RASP style).
-- [OpenCode](https://opencode.ai) — Open-source AI coding agent.
+- [OpenCode](https://opencode.ai) — MIT-licensed open-source coding agent with independently billed or licensed model providers and optional online services.
 - [OpenDev](https://opendev.org/) — Public collaborative infrastructure service providing Git hosting, code review, CI, and related services for open-source projects.
 - [OpenSCAP](https://www.open-scap.org) — Security Content Automation Protocol.
 - [OpenSCAP Tools](https://www.open-scap.org/tools) — Collection of OpenSCAP tools.
@@ -312,7 +312,7 @@
 - [Snyk](https://snyk.io) — Security scanning for code, dependencies, and containers.
 - [Socket](https://socket.dev) — Supply chain security platform focused on malicious and zero-day dependency risks.
 - [SOOS DAST](https://hub.docker.com/r/soosio/dast) — DAST scanning Docker image for dynamic application security testing, runnable in CI/CD pipelines.
-- [Spec Kit](https://github.com/github/spec-kit) — Toolkit from GitHub for getting started with Spec-Driven Development.
+- [Spec Kit](https://github.com/github/spec-kit) — MIT-licensed GitHub toolkit for specification-driven development workflows and templates that integrate with independently operated coding agents.
 - [sqlmap](https://sqlmap.org/) — Automated SQL injection detection and database security-testing utility.
 - [StackBlitz](https://stackblitz.com/) — Browser-based development environment powered by in-browser WebContainers.
 - [Starlight](https://starlight.astro.build) — Documentation site framework.
