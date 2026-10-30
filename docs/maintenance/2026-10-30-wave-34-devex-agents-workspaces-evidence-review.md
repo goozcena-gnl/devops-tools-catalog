@@ -153,7 +153,7 @@ OLD:
 NEW:
 ```yaml
   sources:
-  - "- legacy:3_CI-CD-Automation/README.md#L174"
+  - "legacy:3_CI-CD-Automation/README.md#L174"
   - "legacy:devopstools_final.md#L411"
   - "https://github.com/Aider-AI/aider/tree/5dc9490bb35f9729ef2c95d00a19ccd30c26339c"
   - "https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/LICENSE.txt"
@@ -276,7 +276,7 @@ OLD:
 NEW:
 ```yaml
   sources:
-  - "- legacy:devopstools_final.md#L1057"
+  - "legacy:devopstools_final.md#L1057"
   - "https://github.com/coder/coder/tree/d5a03911dad4c0294e50581a97a7ee65bcf9b258"
   - "https://github.com/coder/coder/blob/d5a03911dad4c0294e50581a97a7ee65bcf9b258/LICENSE"
   - "https://github.com/coder/coder/blob/d5a03911dad4c0294e50581a97a7ee65bcf9b258/README.md"
@@ -398,7 +398,7 @@ OLD:
 NEW:
 ```yaml
   sources:
-  - "- legacy:devopstools_final.md#L414"
+  - "legacy:devopstools_final.md#L414"
   - "https://github.com/openai/codex/tree/f752c97f7d0be0cbef5cece327f52a16ad6fb1c6"
   - "https://github.com/openai/codex/blob/f752c97f7d0be0cbef5cece327f52a16ad6fb1c6/LICENSE"
   - "https://github.com/openai/codex/blob/f752c97f7d0be0cbef5cece327f52a16ad6fb1c6/README.md"
@@ -511,7 +511,7 @@ OLD:
 NEW:
 ```yaml
   sources:
-  - "- legacy:3_CI-CD-Automation/README.md#L176"
+  - "legacy:3_CI-CD-Automation/README.md#L176"
   - "legacy:devopstools_final.md#L415"
   - "https://github.com/continuedev/continue/tree/5522c6f44ca0ac3528b37244818fbfa39b5af470"
   - "https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/LICENSE"
@@ -622,7 +622,7 @@ OLD:
 NEW:
 ```yaml
   sources:
-  - "- legacy:devopstools_final.md#L1058"
+  - "legacy:devopstools_final.md#L1058"
   - "https://github.com/devcontainers/spec/tree/c95ffeed1d059abfe9ffbe79762dc2fa4e7c2421"
   - "https://github.com/devcontainers/spec/blob/c95ffeed1d059abfe9ffbe79762dc2fa4e7c2421/LICENSE"
   - "https://github.com/devcontainers/cli/tree/d807cb27c195b6bc0e89d893fc20f44a30bf27ee"
@@ -738,7 +738,7 @@ OLD:
 NEW:
 ```yaml
   sources:
-  - "- legacy:7_Development-Collaboration/README.md#L33"
+  - "legacy:7_Development-Collaboration/README.md#L33"
   - "legacy:devopstools_final.md#L1059"
   - "https://github.com/loft-sh/devpod/tree/5a0efcbff6610ab114b421f68a890739a452e66b"
   - "https://github.com/loft-sh/devpod/blob/5a0efcbff6610ab114b421f68a890739a452e66b/LICENSE"
@@ -875,7 +875,7 @@ OLD:
 NEW:
 ```yaml
   sources:
-  - "- legacy:7_Development-Collaboration/README.md#L34"
+  - "legacy:7_Development-Collaboration/README.md#L34"
   - "legacy:devopstools_final.md#L1061"
   - "https://docs.github.com/en/codespaces/overview"
   - "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces"
@@ -1001,7 +1001,7 @@ OLD:
 NEW:
 ```yaml
   sources:
-  - "- legacy:7_Development-Collaboration/README.md#L35"
+  - "legacy:7_Development-Collaboration/README.md#L35"
   - "legacy:devopstools_final.md#L1063"
   - "https://github.com/hashicorp/vagrant/tree/dc55920a284544919340b975098b4ac9005b08b0"
   - "https://github.com/hashicorp/vagrant/blob/dc55920a284544919340b975098b4ac9005b08b0/LICENSE"
@@ -1135,7 +1135,7 @@ OLD:
 NEW:
 ```yaml
   sources:
-  - "- legacy:devopstools_final.md#L417"
+  - "legacy:devopstools_final.md#L417"
   - "https://github.com/anomalyco/opencode/tree/92b2ca0dd727942e00aba3523ed141d53e78ea28"
   - "https://github.com/anomalyco/opencode/blob/92b2ca0dd727942e00aba3523ed141d53e78ea28/LICENSE"
   - "https://github.com/anomalyco/opencode/blob/92b2ca0dd727942e00aba3523ed141d53e78ea28/README.md"
@@ -1268,7 +1268,7 @@ OLD:
 NEW:
 ```yaml
   sources:
-  - "- legacy:devopstools_final.md#L423"
+  - "legacy:devopstools_final.md#L423"
   - "https://github.com/github/spec-kit/tree/2a23a848f888de05f0107061d45232c485d6bae0"
   - "https://github.com/github/spec-kit/blob/2a23a848f888de05f0107061d45232c485d6bae0/LICENSE"
   - "https://github.com/github/spec-kit/blob/2a23a848f888de05f0107061d45232c485d6bae0/README.md"
@@ -1286,3 +1286,7 @@ NEW:
 6. Human review and explicit authorization before Ready; separate explicit approval before merge; never enable auto-merge. Post-merge CI before issue closure.
 
 **Execution boundary:** GitHub connector can commit repository files, but cannot run local Windows/Python 3.12 validation. No generated docs or passing tests claimed. This stage is intentionally **not merge-ready**.
+
+## Provenance serialization repair (2026-10-30)
+
+The initial Wave 34 staging commit accidentally serialized the **first** `legacy:` source of each selected record as `- legacy:...` inside the YAML string. The guarded PowerShell 5.1 preflight correctly blocked both read-only validation and `-Apply` (`legacy provenance changed: continue`). This commit corrects **exactly ten** first-source values back to their original string content, preserving every pre-existing `legacy:` source in order. The exact OLD/NEW field manifest above is corrected to match the new YAML. None of the 91 out-of-scope records, status decisions or additional primary evidence is altered. The local deterministic generator, lint, pytest and strict link audit still have **NOT** been executed on this repaired HEAD; do not open a Draft PR before their successful completion.
