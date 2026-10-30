@@ -1290,3 +1290,25 @@ NEW:
 ## Provenance serialization repair (2026-10-30)
 
 The initial Wave 34 staging commit accidentally serialized the **first** `legacy:` source of each selected record as `- legacy:...` inside the YAML string. The guarded PowerShell 5.1 preflight correctly blocked both read-only validation and `-Apply` (`legacy provenance changed: continue`). This commit corrects **exactly ten** first-source values back to their original string content, preserving every pre-existing `legacy:` source in order. The exact OLD/NEW field manifest above is corrected to match the new YAML. None of the 91 out-of-scope records, status decisions or additional primary evidence is altered. The local deterministic generator, lint, pytest and strict link audit still have **NOT** been executed on this repaired HEAD; do not open a Draft PR before their successful completion.
+
+## Verified local generation and testing checkpoint — 2026-10-30
+
+> **Chronology note:** all earlier statements that the generator and tests were *not yet run* describe the preparation/staging phase, before this dated checkpoint. The original evidence and serialization-repair history remain intact rather than being retrospectively rewritten. This section supersedes those *pending execution* statements from this point forward.
+
+- **Source of results:** user-provided Windows PowerShell 5.1 transcript of guarded `Wave34_DevEx_guarded_validate_v3.ps1 -Apply`; not a claim that GitHub Actions has already run.
+- Guarded preflight PASS at **canonical patch SHA `7ca131f12996d389aaf8f21aa82c34efdea287f7`**, base `main` `6c0f8235bb87795961c86834187f0969ca1ee25d`: exactly **101** DevEx canonical records, **10** selected changed / **91** untouched, unchanged original `legacy:` provenance; **7 CLEAR / 3 RETAIN**; **1,425** global records.
+- Regenerated exactly **7** deterministic documentation files, then `python -m scripts.generate_docs --check` PASS: `README.md`, `docs/catalog-statistics.json`, `docs/categories/developer-experience-local-environments.md`, `docs/lifecycle/develop.md`, `docs/lifecycle/test.md`, `docs/roles/developer-experience-engineer.md`, `docs/roles/devops-engineer.md`.
+- `python -m scripts.validate_catalog` **PASS**, `python -m pip check` **PASS**, `python -m ruff check scripts tests` **PASS**, `python -m ruff format --check scripts tests` **PASS** (**70** files formatted).
+- Full Python 3.12 pytest suite **1,004 passed / 8 skipped in 411.60 sec**.
+- `python -m scripts.review_debt --format json` completed successfully; user log and generated `docs/catalog-statistics.json` corroborate **1,425** canonical, **854 active**, **557 needs-review**, **74 unknown licence models**.
+- Guarded post-test scope and `git diff --check` **PASS**; the local V3 executor did not push, commit, merge or open a PR.
+- User then produced and verified a local **generated-docs-only** commit `800434fdf48e9e7c15bcbd612e82d19a9a7bd9b2` (parent `7ca131f12996d389aaf8f21aa82c34efdea287f7`), changing **exactly seven** generator-created files, 107 insertions and 96 deletions; pushed the exact commit to the isolated Wave 34 remote branch and confirmed via `git ls-remote`. Independent remote GitHub inspection corroborates its exact SHA and seven-file commit.
+- Compared with frozen `main`, the branch at that checkpoint changed **nine files**: the canonical DevEx YAML, this maintenance report and the seven generated documents; no additional catalogue categories, workflows, schema or link-audit baseline changes.
+- **Current checkpoint change:** the present follow-up commit appends only this dated validation text to the maintenance report. It does **not** touch the validated canonical YAML or any generated files. The prior local full-suite validation therefore applies to the identical canonical records and generated content; remote CI and a separately dispatched strict Full link audit must still verify the **new final PR HEAD**.
+
+### Remaining gates
+
+1. Publish only as a **Draft PR**, with the final exact SHA and link to [issue #155](https://github.com/goozcena-gnl/devops-tools-catalog/issues/155); no auto-merge and no merge.
+2. Review all final PR diff and official edition/licence/lifecycle evidence independently, especially Continue unmaintained, Aider and DevPod release cadence, Development Containers specification vs CLI, Coder Premium vs open source, Codespaces SaaS fees, and Vagrant CLI vs HCP EOL.
+3. Wait for required GitHub Actions checks on the final PR SHA; separately run strict Full link audit on **that same SHA**, require `blocking_new: 0` and `strict_result: PASS` while separately disclosing `blocking_known`. Never adjust audit baseline to force a pass.
+4. Require explicit human authorization for Ready for Review and later **separate explicit human authorization** before any squash merge. Verify post-merge checks before closing issue #155.
