@@ -253,7 +253,7 @@
 | [Scalr](https://scalr.com/) | Infrastructure as Code | commercial | active |
 | [Score](https://score.dev) | Infrastructure as Code | oss | active |
 | [SeaweedFS](https://seaweedfs.com) | Databases, caching and data infrastructure | oss | needs-review |
-| [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
+| [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Skupper](https://skupper.io/) | Kubernetes networking, storage and add-ons | oss | active |
 | [SOPS](https://getsops.io) | IAM, secrets and certificate management | oss | active |
 | [Spacelift Deploy](https://spacelift.io) | Infrastructure as Code | commercial | active |

@@ -956,7 +956,6 @@
 - id: github-copilot
   name: GitHub Copilot
   summary: "GitHub's managed AI coding assistant and agent offerings with account- and feature-dependent plans, usage quotas and data policies."
-  repository_url: https://github.com/features/copilot
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -2646,7 +2645,7 @@
   deployment_models:
   - "self-hosted"
   - "hosted-saas"
-  license_model: "open-core"
+  license_model: "unknown"
   maturity: unknown
   status: "needs-review"
   alternatives: []

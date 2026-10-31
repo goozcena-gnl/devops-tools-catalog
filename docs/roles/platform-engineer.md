@@ -534,7 +534,7 @@
 | [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [Shannon](https://github.com/KeygraphHQ/shannon) | Emerging and experimental tools | open-core | needs-review |
 | [Shipwright](https://shipwright.io) | Containers and image tooling | oss | needs-review |
-| [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
+| [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [sk8r](https://github.com/mvklingeren/sk8r) | Kubernetes distributions and operations | oss | needs-review |
 | [Skaffold](https://skaffold.dev) | Containers and image tooling, Developer experience and local environments | oss | active |
 | [Skopeo](https://github.com/podman-container-tools/skopeo) | Containers and image tooling | oss | active |

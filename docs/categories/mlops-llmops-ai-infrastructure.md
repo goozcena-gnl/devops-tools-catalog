@@ -541,7 +541,7 @@ GitHub's managed AI coding assistant and agent offerings with account- and featu
 
 - You require fully local inference or assume Copilot's managed service is open-source because an extension or SDK is available.
 
-[Official site](https://github.com/features/copilot) · [Source repository](https://github.com/features/copilot)
+[Official site](https://github.com/features/copilot)
 
 ### GitHub MCP Server
 
@@ -1477,7 +1477,7 @@ No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MC
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Open Core<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
 Apache-2.0 source for Sim's AI-agent and workflow builder, with separately operated hosted services, connectors and inference billing.

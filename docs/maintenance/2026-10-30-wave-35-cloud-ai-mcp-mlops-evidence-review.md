@@ -1200,3 +1200,34 @@ NEW:
 - Distinct human gates: approval for Ready for Review, **separate** approval for squash merge; post-merge verification precedes issue closure.
 
 **Execution boundary:** This is source-evidence staging, not a tested or merge-ready patch. No local Python execution, generated docs, CI, strict link audit, Draft PR, Ready transition or merge is claimed.
+
+
+---
+
+## 2026-10-31 — Human semantic review corrections
+
+This subsection **supersedes the preliminary classification of Sim** in the
+2026-10-30 staging manifest and records a semantic correction noticed after a
+no-findings Codex review on PR #158. It does not retroactively claim full
+post-correction validation, CI, or a new link audit: those gates must be rerun
+on the **new final SHA** before merge.
+
+1. **`github-copilot`:** removed `repository_url: https://github.com/features/copilot`.
+   That address is the product marketing URL, not a verifiable source repository.
+   The verified `official_url` remains unchanged. The catalogue generator would
+   otherwise render the product page as **Source repository**.
+2. **`sim`:** reverted `license_model` from `open-core` to `unknown` because
+   the source's Apache-2.0 licence alone does not prove a commercial
+   open-core distribution model or cover the hosted offering. Retained the
+   repository-scoped `license_spdx: Apache-2.0`, `status: needs-review`,
+   `needs_review: true`, and all historical source provenance. This remains
+   a **RETAIN** decision.
+
+**Expected derived counters after deterministic regeneration:** 1,425 records;
+861 active; 550 needs-review; **73 unknown licence models** (was 72);
+`open-core` count 113 (was 114). There are no new CLEAR decisions.
+
+**Change guard:** exactly two YAML field-level edits in two already selected
+Wave 35 records; all other 78 category YAML records remain byte-for-byte
+unchanged; historical `legacy:` sources remain in original order. The
+post-review regenerated outputs and tests must be checked before commit/push.

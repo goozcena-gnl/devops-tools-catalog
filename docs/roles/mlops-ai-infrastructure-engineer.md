@@ -81,7 +81,7 @@
 | [Rakazo](https://rakazo.com/) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Ray](https://www.ray.io/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [reShapr](https://reshapr.io) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
+| [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Stakpak](https://stakpak.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [terraform-skill](https://github.com/antonbabenko/terraform-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
