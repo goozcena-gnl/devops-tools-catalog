@@ -163,37 +163,37 @@ Collection of 130+ specialized Codex subagents for a wide range of development u
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Documentation<br>
-**Status:** Needs Review
+**Model:** Oss<br>
+**Status:** Active
 
-MCP server for AWS Billing & Cost Management use cases (announced by AWS).
+Apache-2.0 AWS Labs MCP server wrapping Billing and Cost Management APIs using caller AWS credentials; API quotas and charges still apply.
 
 **Use when**
 
-- You want AI assistants to query and reason over your AWS billing data via MCP.
+- You want cost, Free Tier, anomaly and budget insights through a locally configured AWS Billing MCP server using scoped IAM credentials.
 
 **Consider alternatives when**
 
-- You don't use AWS or already have FinOps tooling that meets your needs.
+- You cannot protect billing-account information, restrict MCP tool access, or account for paid Cost Explorer and other API calls.
 
-[Official site](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server)
+[Official site](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) · [Source repository](https://github.com/awslabs/mcp/tree/main/src/billing-cost-management-mcp-server)
 
 ### AWS MCP
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-AWS implementation of Model Context Protocol.
+AWS Labs collection of Apache-2.0 MCP servers for AWS services; individual servers require separate IAM and runtime configuration.
 
 **Use when**
 
-- You want AI agents to interact with AWS services through a standardized context protocol.
+- You need reviewed AWS-specific MCP tools and can constrain IAM roles, AWS regions, tool execution and API charges.
 
 **Consider alternatives when**
 
-- Your infrastructure isn't on AWS or you don't use MCP-compatible clients.
+- You expect one server to implement the entire AWS MCP collection or to bypass IAM, request quotas or usage charges.
 
 [Official site](https://awslabs.github.io/mcp) · [Source repository](https://github.com/awslabs/mcp)
 
@@ -201,18 +201,18 @@ AWS implementation of Model Context Protocol.
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Documentation<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
+Microsoft Foundry (formerly Azure AI Foundry) is an Azure-managed platform for models, agents and AI application operations, billed separately from its SDKs.
 
 **Use when**
 
-- You're already on Azure and need an integrated AI lifecycle platform.
+- You operate AI workloads in Azure and need managed models, evaluations, agents and Azure access controls.
 
 **Consider alternatives when**
 
-- You need cloud-agnostic tooling or aren't building production AI workloads.
+- You require a self-hosted OSS platform or presume all Foundry models, regions and project interfaces share the same pricing or API surface.
 
 [Official site](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry)
 
@@ -279,19 +279,19 @@ High-performance code intelligence MCP server that indexes repositories into a p
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Agent tooling platform for managed auth, app connectors, triggers, and sandboxed tool execution across developer and business apps.
+MIT-licensed Composio SDK for agent tool integrations alongside distinct managed authentication, connectors and hosted workbench services.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need agent tool integrations and can manage connector OAuth consent, tokens, permissions and managed-service billing.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You assume the open-source SDK's MIT license also covers all commercial hosted connectors and authentication services.
 
-[Official site](https://composio.dev) · [Source repository](https://github.com/composiohq/composio)
+[Official site](https://composio.dev) · [Source repository](https://github.com/ComposioHQ/composio)
 
 ### Deep Agents
 
@@ -376,15 +376,15 @@ Declarative multi-agent framework from Docker for defining AI agents, tools, and
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
+Docker Hub's discovery catalog for container-packaged MCP servers; it is distinct from the MIT-licensed Docker MCP Gateway and registry repositories.
 
 **Use when**
 
-- You want to discover Docker-packaged MCP servers through the catalog integrated into Docker Hub.
+- You need to discover MCP server container images and evaluate their publishers, permissions and provenance.
 
 **Consider alternatives when**
 
-- You need a standalone licensable product or source repository; reconcile this catalog feature separately from Docker Hub, Docker MCP Gateway, and Docker Hub MCP Server.
+- You need one standalone open-source MCP server or assume the Docker MCP Gateway MIT license covers Docker Hub or listed server images.
 
 [Official site](https://hub.docker.com/mcp) · [Documentation](https://docs.docker.com/ai/mcp-catalog-and-toolkit/)
 
@@ -528,20 +528,20 @@ Framework for building, running, and managing multi-agent AI workflows.
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-AI-powered code completion assistant.
+GitHub's managed AI coding assistant and agent offerings with account- and feature-dependent plans, usage quotas and data policies.
 
 **Use when**
 
-- You want inline code suggestions tightly integrated with VS Code, JetBrains, or GitHub workflows.
+- You need GitHub-integrated AI coding assistance under approved plan, repository and organization data policies.
 
 **Consider alternatives when**
 
-- Your organization prohibits sending code to external AI services.
+- You require fully local inference or assume Copilot's managed service is open-source because an extension or SDK is available.
 
-[Source repository](https://github.com/features/copilot)
+[Official site](https://github.com/features/copilot)
 
 ### GitHub MCP Server
 
@@ -571,17 +571,17 @@ Official GitHub MCP server exposing repository, issue and pull-request operation
 **Model:** Documentation<br>
 **Status:** Needs Review
 
-GitLab MCP server documentation.
+GitLab's documented MCP server interface for authorized GitLab-project tools; editions, account entitlements, OAuth scopes and instance configuration must be checked.
 
 **Use when**
 
-- You're on GitLab and want MCP-compatible AI agents to interact with your projects.
+- You need to connect approved MCP clients to authorized GitLab resources using least-privilege tokens or OAuth.
 
 **Consider alternatives when**
 
-- You don't use GitLab or aren't adopting MCP-based tooling.
+- You cannot validate GitLab tier or instance availability, client permissions, and the distinction from GitLab Duo MCP clients.
 
-[Official site](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server)
+[Official site](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) · [Documentation](https://docs.gitlab.com/user/model_context_protocol/mcp_server/)
 
 ### Grafana MCP
 
@@ -763,17 +763,17 @@ Kubernetes-native framework for orchestrating autonomous AI coding agents.
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Model serving on Kubernetes.
+Apache-2.0 Kubernetes inference platform for predictive and generative models, requiring cluster, model-runtime and networking operations.
 
 **Use when**
 
-- You need scalable, standardized model inference on existing Kubernetes clusters.
+- You operate Kubernetes and need standardized inference controllers and scalable model serving with vetted runtimes.
 
 **Consider alternatives when**
 
-- You don't run Kubernetes or only need simple batch predictions.
+- You need a hosted inference service without Kubernetes operations or expect all upstream runtime images and models to share KServe's license.
 
 [Official site](https://kserve.github.io/website) · [Source repository](https://github.com/kserve/kserve)
 
@@ -1168,17 +1168,17 @@ Distributed vector database for large-scale similarity search and retrieval work
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** Cloud Engineer, Platform Engineer, MLOps and AI Infrastructure Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Platform for managing ML lifecycles.
+Apache-2.0 open-source AI engineering platform for ML experiments, model lifecycle, LLM evaluation and tracing; hosted offerings are separate.
 
 **Use when**
 
-- You need experiment tracking, model registry, and reproducibility across ML projects.
+- You need experiment tracking, model artifacts, evaluations or agent/LLM traces with controlled backend storage.
 
 **Consider alternatives when**
 
-- You have no ML model training workflows or already use a tightly integrated managed platform.
+- You cannot secure MLflow tracking servers, model artifacts or authentication, or assume third-party hosted deployments are Apache licensed.
 
 [Official site](https://mlflow.org) · [Source repository](https://github.com/mlflow/mlflow)
 
@@ -1480,15 +1480,15 @@ No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MC
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-AI workspace for building, deploying, and monitoring agentic workflows.
+Apache-2.0 source for Sim's AI-agent and workflow builder, with separately operated hosted services, connectors and inference billing.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want a visual agent workflow builder and can review workflow actions, provider data flow and hosting costs.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You assume the source license includes hosted Sim services, model credits, connectors or enterprise support without separate terms.
 
 [Official site](https://www.sim.ai) · [Source repository](https://github.com/simstudioai/sim)
 

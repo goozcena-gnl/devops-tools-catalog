@@ -25,17 +25,17 @@
 | [Awesome DevOps](https://github.com/wmariuss/awesome-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Awesome Kubernetes Operator Resources](https://github.com/calvin-puram/awesome-kubernetes-operator-resources) | Documentation, learning and career resources | documentation | needs-review |
 | [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
+| [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [AWS CDK](https://aws.amazon.com/cdk) | Infrastructure as Code | oss | active |
 | [AWS CLI](https://aws.amazon.com/cli/) | Cloud platforms and cloud management | oss | active |
 | [AWS Cloud Quest Practitioner](https://skillbuilder.aws/learn/FU5WCYVGKY/aws-cloud-quest-cloud-practitioner/learn) | Documentation, learning and career resources | documentation | needs-review |
 | [AWS CloudFormation](https://aws.amazon.com/cloudformation) | Infrastructure as Code | commercial | active |
 | [AWS Lambda](https://aws.amazon.com/lambda) | Serverless, edge and WebAssembly | commercial | active |
-| [AWS MCP](https://awslabs.github.io/mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [AWS MCP](https://awslabs.github.io/mcp) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) | IAM, secrets and certificate management | commercial | active |
 | [AWS Skill Builder](https://skillbuilder.aws) | Documentation, learning and career resources | documentation | needs-review |
 | [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) | Cloud platforms and cloud management | commercial | active |
-| [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
+| [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) | Infrastructure as Code | oss | active |
 | [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) | Serverless, edge and WebAssembly | commercial | active |
 | [Azure DevOps Labs](https://www.azuredevopslabs.com) | Documentation, learning and career resources | documentation | needs-review |
@@ -70,7 +70,7 @@
 | [CloudZero](https://www.cloudzero.com) | FinOps and sustainability | commercial | active |
 | [CNCF Free Courses](https://www.cncf.io/training/courses?_sfm_lf_course_free=1) | Documentation, learning and career resources | documentation | needs-review |
 | [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Composio](https://composio.dev) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
+| [Composio](https://composio.dev) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [Concierto Cloud](https://www.concierto.cloud) | Cloud platforms and cloud management | commercial | active |
 | [Crossplane](https://www.crossplane.io) | Infrastructure as Code | oss | active |
 | [curl](https://curl.se) | Foundations, Linux and scripting | oss | active |
@@ -118,7 +118,7 @@
 | [Garage WebUI](https://github.com/khairul169/garage-webui) | Databases, caching and data infrastructure | oss | active |
 | [Gardener](https://gardener.cloud/) | Kubernetes distributions and operations | oss | active |
 | [genai-agentos](https://github.com/genai-works-org/genai-agentos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [GitHub Copilot](https://github.com/features/copilot) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [GitHub Copilot](https://github.com/features/copilot) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [GitHub MCP Server](https://github.com/github/github-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | commercial | active |
@@ -160,7 +160,7 @@
 | [Knative](https://knative.dev/) | Serverless, edge and WebAssembly | oss | active |
 | [KodeKloud](https://kodekloud.com) | Documentation, learning and career resources | documentation | needs-review |
 | [kOps](https://kops.sigs.k8s.io/) | Kubernetes distributions and operations | oss | active |
-| [KServe](https://kserve.github.io/website) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [KServe](https://kserve.github.io/website) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Kthena](https://kthena.volcano.sh) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Kube Copilot](https://github.com/feiskyer/kube-copilot) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [kube-dump](https://kube-dump.woozymasta.ru) | Backup, disaster recovery and resilience | oss | needs-review |
@@ -200,7 +200,7 @@
 | [Mini-classes Ansible Public](https://github.com/apille-pro/miniclasses_ansible_public) | Documentation, learning and career resources | documentation | needs-review |
 | [MinIO Community Server](https://github.com/minio/minio) | Deprecated and historical tools, Databases, caching and data infrastructure | oss | archived |
 | [mkcert](https://mkcert.dev) | IAM, secrets and certificate management | oss | needs-review |
-| [MLflow](https://mlflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [MLflow](https://mlflow.org) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [MLOps for DevOps Engineers](https://github.com/techiescamp/mlops-for-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Model Express](https://github.com/ai-dynamo/modelexpress) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [MongoDB](https://www.mongodb.com/) | Databases, caching and data infrastructure | source-available | active |

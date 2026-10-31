@@ -278,7 +278,7 @@
   needs_review: true
 - id: aws-billing-and-cost-management-mcp-server
   name: AWS Billing and Cost Management MCP Server
-  summary: MCP server for AWS Billing & Cost Management use cases (announced by AWS).
+  summary: "Apache-2.0 AWS Labs MCP server wrapping Billing and Cost Management APIs using caller AWS credentials; API quotas and charges still apply."
   official_url: https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server
   categories:
   - mlops-llmops-ai-infrastructure
@@ -293,23 +293,30 @@
   - deploy
   - operate
   use_when:
-  - You want AI assistants to query and reason over your AWS billing data via MCP.
+  - "You want cost, Free Tier, anomaly and budget insights through a locally configured AWS Billing MCP server using scoped IAM credentials."
   avoid_when:
-  - You don't use AWS or already have FinOps tooling that meets your needs.
-  deployment_models: []
-  license_model: documentation
+  - "You cannot protect billing-account information, restrict MCP tool access, or account for paid Cost Explorer and other API calls."
+  deployment_models:
+  - "self-hosted"
+  license_model: "oss"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:9_AI-MLOps/README.md#L42
-  - legacy:devopstools_final.md#L1213
-  needs_review: true
+  - "legacy:9_AI-MLOps/README.md#L42"
+  - "legacy:devopstools_final.md#L1213"
+  - "https://github.com/awslabs/mcp/tree/7a06f09f1acd21e0ac78acc3ac11d2edcfa93bec/src/billing-cost-management-mcp-server"
+  - "https://github.com/awslabs/mcp/blob/7a06f09f1acd21e0ac78acc3ac11d2edcfa93bec/src/billing-cost-management-mcp-server/pyproject.toml"
+  - "https://github.com/awslabs/mcp/blob/7a06f09f1acd21e0ac78acc3ac11d2edcfa93bec/src/billing-cost-management-mcp-server/README.md"
+  - "https://github.com/awslabs/mcp/blob/7a06f09f1acd21e0ac78acc3ac11d2edcfa93bec/src/billing-cost-management-mcp-server/LICENSE"
+  needs_review: false
+  repository_url: "https://github.com/awslabs/mcp/tree/main/src/billing-cost-management-mcp-server"
+  license_spdx: "Apache-2.0"
 - id: aws-mcp
   name: AWS MCP
-  summary: AWS implementation of Model Context Protocol.
+  summary: "AWS Labs collection of Apache-2.0 MCP servers for AWS services; individual servers require separate IAM and runtime configuration."
   official_url: https://awslabs.github.io/mcp
   repository_url: https://github.com/awslabs/mcp
   categories:
@@ -325,24 +332,29 @@
   - deploy
   - operate
   use_when:
-  - You want AI agents to interact with AWS services through a standardized context protocol.
+  - "You need reviewed AWS-specific MCP tools and can constrain IAM roles, AWS regions, tool execution and API charges."
   avoid_when:
-  - Your infrastructure isn't on AWS or you don't use MCP-compatible clients.
-  deployment_models: []
+  - "You expect one server to implement the entire AWS MCP collection or to bypass IAM, request quotas or usage charges."
+  deployment_models:
+  - "self-hosted"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:9_AI-MLOps/README.md#L44
-  - legacy:devopstools_final.md#L1214
-  needs_review: true
+  - "legacy:9_AI-MLOps/README.md#L44"
+  - "legacy:devopstools_final.md#L1214"
+  - "https://github.com/awslabs/mcp/tree/7a06f09f1acd21e0ac78acc3ac11d2edcfa93bec"
+  - "https://github.com/awslabs/mcp/blob/7a06f09f1acd21e0ac78acc3ac11d2edcfa93bec/LICENSE"
+  - "https://awslabs.github.io/mcp"
+  needs_review: false
+  repository_archived: false
+  license_spdx: "Apache-2.0"
 - id: azure-ai-foundry
   name: Azure AI Foundry
-  summary: Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation,
-    safety).
+  summary: "Microsoft Foundry (formerly Azure AI Foundry) is an Azure-managed platform for models, agents and AI application operations, billed separately from its SDKs."
   official_url: https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry
   categories:
   - mlops-llmops-ai-infrastructure
@@ -357,20 +369,24 @@
   - deploy
   - operate
   use_when:
-  - You're already on Azure and need an integrated AI lifecycle platform.
+  - "You operate AI workloads in Azure and need managed models, evaluations, agents and Azure access controls."
   avoid_when:
-  - You need cloud-agnostic tooling or aren't building production AI workloads.
-  deployment_models: []
-  license_model: documentation
+  - "You require a self-hosted OSS platform or presume all Foundry models, regions and project interfaces share the same pricing or API surface."
+  deployment_models:
+  - "hosted-saas"
+  license_model: "commercial"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:9_AI-MLOps/README.md#L4
-  - legacy:devopstools_final.md#L1179
-  needs_review: true
+  - "legacy:9_AI-MLOps/README.md#L4"
+  - "legacy:devopstools_final.md#L1179"
+  - "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry"
+  - "https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry"
+  needs_review: false
+  commercial_offering: true
 - id: azure-mcp-server
   name: Azure MCP Server
   summary: Microsoft MCP server connecting AI agents to Azure services and resource operations; maintained in microsoft/mcp.
@@ -488,10 +504,9 @@
   needs_review: true
 - id: composio
   name: Composio
-  summary: Agent tooling platform for managed auth, app connectors, triggers, and sandboxed tool execution
-    across developer and business apps.
+  summary: "MIT-licensed Composio SDK for agent tool integrations alongside distinct managed authentication, connectors and hosted workbench services."
   official_url: https://composio.dev
-  repository_url: https://github.com/composiohq/composio
+  repository_url: "https://github.com/ComposioHQ/composio"
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -504,18 +519,26 @@
   - build
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You need agent tool integrations and can manage connector OAuth consent, tokens, permissions and managed-service billing."
+  avoid_when:
+  - "You assume the open-source SDK's MIT license also covers all commercial hosted connectors and authentication services."
+  deployment_models:
+  - "hosted-saas"
+  - "self-hosted"
   license_model: open-core
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:devopstools_final.md#L1234
-  needs_review: true
+  - "legacy:devopstools_final.md#L1234"
+  - "https://github.com/ComposioHQ/composio/tree/4694de1fcd0d57e67490dfb8df936aafae78b915"
+  - "https://github.com/ComposioHQ/composio/blob/4694de1fcd0d57e67490dfb8df936aafae78b915/LICENSE"
+  - "https://composio.dev"
+  needs_review: false
+  license_spdx: "MIT"
 - id: deepagents
   name: Deep Agents
   summary: Agent harness with tool execution, context management, persistence, and sandbox integration
@@ -654,7 +677,7 @@
   needs_review: false
 - id: docker-hub-mcp
   name: Docker Hub MCP
-  summary: Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
+  summary: "Docker Hub's discovery catalog for container-packaged MCP servers; it is distinct from the MIT-licensed Docker MCP Gateway and registry repositories."
   official_url: https://hub.docker.com/mcp
   documentation_url: https://docs.docker.com/ai/mcp-catalog-and-toolkit/
   categories:
@@ -670,22 +693,25 @@
   - deploy
   - operate
   use_when:
-  - You want to discover Docker-packaged MCP servers through the catalog integrated into Docker Hub.
+  - "You need to discover MCP server container images and evaluate their publishers, permissions and provenance."
   avoid_when:
-  - You need a standalone licensable product or source repository; reconcile this catalog feature separately from Docker Hub, Docker MCP Gateway, and Docker Hub MCP Server.
-  deployment_models: []
+  - "You need one standalone open-source MCP server or assume the Docker MCP Gateway MIT license covers Docker Hub or listed server images."
+  deployment_models:
+  - "hosted-saas"
   license_model: unknown
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-09-13'
+  verified_on: "2026-10-30"
   sources:
-  - https://hub.docker.com/mcp
-  - https://docs.docker.com/ai/mcp-catalog-and-toolkit/
-  - https://docs.docker.com/docker-hub/image-library/catalogs/
-  - legacy:9_AI-MLOps/README.md#L48
-  - legacy:devopstools_final.md#L1216
+  - "https://hub.docker.com/mcp"
+  - "https://docs.docker.com/ai/mcp-catalog-and-toolkit/"
+  - "https://docs.docker.com/docker-hub/image-library/catalogs/"
+  - "legacy:9_AI-MLOps/README.md#L48"
+  - "legacy:devopstools_final.md#L1216"
+  - "https://github.com/docker/mcp-gateway"
+  - "https://github.com/docker/mcp-registry"
   needs_review: true
 - id: docker-mcp-gateway
   name: Docker MCP Gateway
@@ -929,8 +955,7 @@
   needs_review: true
 - id: github-copilot
   name: GitHub Copilot
-  summary: AI-powered code completion assistant.
-  repository_url: https://github.com/features/copilot
+  summary: "GitHub's managed AI coding assistant and agent offerings with account- and feature-dependent plans, usage quotas and data policies."
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
@@ -944,20 +969,26 @@
   - deploy
   - operate
   use_when:
-  - You want inline code suggestions tightly integrated with VS Code, JetBrains, or GitHub workflows.
+  - "You need GitHub-integrated AI coding assistance under approved plan, repository and organization data policies."
   avoid_when:
-  - Your organization prohibits sending code to external AI services.
-  deployment_models: []
-  license_model: unknown
+  - "You require fully local inference or assume Copilot's managed service is open-source because an extension or SDK is available."
+  deployment_models:
+  - "hosted-saas"
+  license_model: "commercial"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:9_AI-MLOps/README.md#L24
-  - legacy:devopstools_final.md#L1200
-  needs_review: true
+  - "legacy:9_AI-MLOps/README.md#L24"
+  - "legacy:devopstools_final.md#L1200"
+  - "https://github.com/features/copilot"
+  - "https://docs.github.com/en/copilot/get-started/plans"
+  - "https://docs.github.com/en/copilot"
+  needs_review: false
+  official_url: "https://github.com/features/copilot"
+  commercial_offering: true
 - id: github-mcp-server
   name: GitHub MCP Server
   summary: Official GitHub MCP server exposing repository, issue and pull-request operations through local or GitHub-hosted
@@ -1006,7 +1037,7 @@
   needs_review: false
 - id: gitlab-mcp-server
   name: GitLab MCP Server
-  summary: GitLab MCP server documentation.
+  summary: "GitLab's documented MCP server interface for authorized GitLab-project tools; editions, account entitlements, OAuth scopes and instance configuration must be checked."
   official_url: https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server
   categories:
   - mlops-llmops-ai-infrastructure
@@ -1021,20 +1052,23 @@
   - deploy
   - operate
   use_when:
-  - You're on GitLab and want MCP-compatible AI agents to interact with your projects.
+  - "You need to connect approved MCP clients to authorized GitLab resources using least-privilege tokens or OAuth."
   avoid_when:
-  - You don't use GitLab or aren't adopting MCP-based tooling.
+  - "You cannot validate GitLab tier or instance availability, client permissions, and the distinction from GitLab Duo MCP clients."
   deployment_models: []
   license_model: documentation
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:9_AI-MLOps/README.md#L52
-  - legacy:devopstools_final.md#L1219
+  - "legacy:9_AI-MLOps/README.md#L52"
+  - "legacy:devopstools_final.md#L1219"
+  - "https://docs.gitlab.com/user/model_context_protocol/mcp_server/"
+  - "https://docs.gitlab.com/user/model_context_protocol/"
   needs_review: true
+  documentation_url: "https://docs.gitlab.com/user/model_context_protocol/mcp_server/"
 - id: grafana-mcp
   name: Grafana MCP
   summary: MCP server for Grafana observability queries and permission-controlled dashboard and alerting operations.
@@ -1368,7 +1402,7 @@
   needs_review: true
 - id: kserve
   name: KServe
-  summary: Model serving on Kubernetes.
+  summary: "Apache-2.0 Kubernetes inference platform for predictive and generative models, requiring cluster, model-runtime and networking operations."
   official_url: https://kserve.github.io/website
   repository_url: https://github.com/kserve/kserve
   categories:
@@ -1384,20 +1418,25 @@
   - deploy
   - operate
   use_when:
-  - You need scalable, standardized model inference on existing Kubernetes clusters.
+  - "You operate Kubernetes and need standardized inference controllers and scalable model serving with vetted runtimes."
   avoid_when:
-  - You don't run Kubernetes or only need simple batch predictions.
-  deployment_models: []
+  - "You need a hosted inference service without Kubernetes operations or expect all upstream runtime images and models to share KServe's license."
+  deployment_models:
+  - "self-hosted"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:9_AI-MLOps/README.md#L6
-  - legacy:devopstools_final.md#L1181
-  needs_review: true
+  - "legacy:9_AI-MLOps/README.md#L6"
+  - "legacy:devopstools_final.md#L1181"
+  - "https://github.com/kserve/kserve/tree/77ef35c12c26dd9ba69efc81b00446420bd84014"
+  - "https://github.com/kserve/kserve/blob/77ef35c12c26dd9ba69efc81b00446420bd84014/LICENSE"
+  - "https://kserve.github.io/website"
+  needs_review: false
+  license_spdx: "Apache-2.0"
 - id: kthena
   name: Kthena
   summary: Kubernetes-native AI serving platform for scalable multi-model deployment, routing, and intelligent
@@ -2116,7 +2155,7 @@
   needs_review: false
 - id: mlflow
   name: MLflow
-  summary: Platform for managing ML lifecycles.
+  summary: "Apache-2.0 open-source AI engineering platform for ML experiments, model lifecycle, LLM evaluation and tracing; hosted offerings are separate."
   official_url: https://mlflow.org
   repository_url: https://github.com/mlflow/mlflow
   categories:
@@ -2132,20 +2171,25 @@
   - deploy
   - operate
   use_when:
-  - You need experiment tracking, model registry, and reproducibility across ML projects.
+  - "You need experiment tracking, model artifacts, evaluations or agent/LLM traces with controlled backend storage."
   avoid_when:
-  - You have no ML model training workflows or already use a tightly integrated managed platform.
-  deployment_models: []
+  - "You cannot secure MLflow tracking servers, model artifacts or authentication, or assume third-party hosted deployments are Apache licensed."
+  deployment_models:
+  - "self-hosted"
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:9_AI-MLOps/README.md#L8
-  - legacy:devopstools_final.md#L1184
-  needs_review: true
+  - "legacy:9_AI-MLOps/README.md#L8"
+  - "legacy:devopstools_final.md#L1184"
+  - "https://github.com/mlflow/mlflow/tree/bdb94c654505e8d02249b4895b75b0c1ff61bb75"
+  - "https://github.com/mlflow/mlflow/blob/bdb94c654505e8d02249b4895b75b0c1ff61bb75/LICENSE.txt"
+  - "https://mlflow.org"
+  needs_review: false
+  license_spdx: "Apache-2.0"
 - id: model-express
   name: Model Express
   summary: Rust service that stages model data near inference systems to reduce startup time.
@@ -2579,7 +2623,7 @@
   needs_review: true
 - id: sim
   name: Sim
-  summary: AI workspace for building, deploying, and monitoring agentic workflows.
+  summary: "Apache-2.0 source for Sim's AI-agent and workflow builder, with separately operated hosted services, connectors and inference billing."
   official_url: https://www.sim.ai
   repository_url: https://github.com/simstudioai/sim
   categories:
@@ -2594,18 +2638,26 @@
   - build
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - "You want a visual agent workflow builder and can review workflow actions, provider data flow and hosting costs."
+  avoid_when:
+  - "You assume the source license includes hosted Sim services, model credits, connectors or enterprise support without separate terms."
+  deployment_models:
+  - "self-hosted"
+  - "hosted-saas"
+  license_model: "unknown"
   maturity: unknown
-  status: needs-review
+  status: "needs-review"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-30"
   sources:
-  - legacy:devopstools_final.md#L1246
+  - "legacy:devopstools_final.md#L1246"
+  - "https://github.com/simstudioai/sim/tree/a52fc509b5b8a18df519ff0781f00c8d45711164"
+  - "https://github.com/simstudioai/sim/blob/a52fc509b5b8a18df519ff0781f00c8d45711164/LICENSE"
+  - "https://www.sim.ai"
   needs_review: true
+  license_spdx: "Apache-2.0"
 - id: stakpak
   name: Stakpak
   summary: Autonomous AI agent for production operations running 24/7 on your machines to auto-heal incidents,
