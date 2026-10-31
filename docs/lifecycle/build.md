@@ -22,12 +22,12 @@
 - [atmos](https://atmos.tools) — Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
 - [AutoGen](https://microsoft.github.io/autogen/stable/index.html) — Microsoft framework for building single-agent and multi-agent applications, runtimes, and extensions.
 - [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) — Collection of 130+ specialized Codex subagents for a wide range of development use cases.
-- [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — MCP server for AWS Billing & Cost Management use cases (announced by AWS).
+- [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — Apache-2.0 AWS Labs MCP server wrapping Billing and Cost Management APIs using caller AWS credentials; API quotas and charges still apply.
 - [AWS CDK](https://aws.amazon.com/cdk) — Infrastructure as code framework that defines cloud resources in familiar programming languages.
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation) — Managed AWS infrastructure provisioning service for modeling resources as templates and stacks.
 - [AWS Lambda](https://aws.amazon.com/lambda) — Serverless compute service by AWS.
-- [AWS MCP](https://awslabs.github.io/mcp) — AWS implementation of Model Context Protocol.
-- [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
+- [AWS MCP](https://awslabs.github.io/mcp) — AWS Labs collection of Apache-2.0 MCP servers for AWS services; individual servers require separate IAM and runtime configuration.
+- [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Microsoft Foundry (formerly Azure AI Foundry) is an Azure-managed platform for models, agents and AI application operations, billed separately from its SDKs.
 - [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) — Declarative IaC language for Azure Resource Manager deployments.
 - [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) — Azure service for running containerized apps.
 - [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) — Microsoft's commercial DevOps product family, available as Azure DevOps Services and self-hosted Azure DevOps Server.
@@ -62,7 +62,7 @@
 - [Codecov](https://about.codecov.io/) — Hosted code coverage reporting, test analytics, and quality-gating platform operated by Harness.
 - [Codefresh](https://codefresh.io/) — Commercial software-delivery platform combining CI, deployment, and Argo-based GitOps capabilities.
 - [commitlint](https://commitlint.js.org) — Lint commit messages (Conventional Commits).
-- [Composio](https://composio.dev) — Agent tooling platform for managed auth, app connectors, triggers, and sandboxed tool execution across developer and business apps.
+- [Composio](https://composio.dev) — MIT-licensed Composio SDK for agent tool integrations alongside distinct managed authentication, connectors and hosted workbench services.
 - [Concourse](https://concourse-ci.org) — CI/CD system with declarative pipelines.
 - [ContainerYard](https://github.com/mcmah309/containeryard) — Tool for composing reusable modules into generated Containerfiles.
 - [Crossplane](https://www.crossplane.io) — Kubernetes-native IaC control plane.
@@ -83,7 +83,7 @@
 - [Docker Buildx](https://github.com/docker/buildx) — Docker CLI build client for BuildKit, supporting configurable builders, multi-platform images and external build caches.
 - [Docker Hardened Images](https://hub.docker.com/hardened-images/catalog) — Docker-maintained catalog of minimal, hardened container images, Helm charts, and system packages with community and paid tiers.
 - [Docker Hub](https://www.docker.com/products/docker-hub) — Hosted container registry and discovery service for publishing, sharing, and pulling container images.
-- [Docker Hub MCP](https://hub.docker.com/mcp) — Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
+- [Docker Hub MCP](https://hub.docker.com/mcp) — Docker Hub's discovery catalog for container-packaged MCP servers; it is distinct from the MIT-licensed Docker MCP Gateway and registry repositories.
 - [Docker MCP Gateway](https://github.com/docker/mcp-gateway) — Docker CLI plugin and gateway for discovering, running, and routing MCP servers in containers.
 - [Docker Offload](https://www.docker.com/products/docker-offload) — Fully managed Docker service for building and running containers in cloud compute through Docker Desktop workflows.
 - [Docling](https://docling.ai/) — Document conversion toolkit that extracts structured content for downstream data and AI pipelines.
@@ -100,11 +100,11 @@
 - [ggshield](https://github.com/GitGuardian/ggshield) — GitGuardian CLI for secret scanning in local development, hooks, and CI.
 - [git push no-mistakes](https://kunchenguid.github.io/no-mistakes/) — Local Git push gate that validates changes in an isolated worktree before publishing a branch and opening a pull request.
 - [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform terms separate from the MIT runner and independent action licences.
-- [GitHub Copilot](https://github.com/features/copilot) — AI-powered code completion assistant.
+- [GitHub Copilot](https://github.com/features/copilot) — GitHub's managed AI coding assistant and agent offerings with account- and feature-dependent plans, usage quotas and data policies.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server) — Official GitHub MCP server exposing repository, issue and pull-request operations through local or GitHub-hosted connections.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 - [GitLab CI](https://docs.gitlab.com/ci/) — GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, with separately deployed GitLab Runner and distinct Community, Enterprise and service terms.
-- [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab MCP server documentation.
+- [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab's documented MCP server interface for authorized GitLab-project tools; editions, account entitlements, OAuth scopes and instance configuration must be checked.
 - [gitmoji](https://gitmoji.dev) — Standardized emoji guide for commit messages.
 - [GoCD](https://www.gocd.org) — Apache-2.0 continuous-delivery server with agents, pipeline dependencies, materials and value-stream visibility; plugins and support terms remain separate.
 - [Google Artifact Registry](https://cloud.google.com/artifact-registry) — Google Cloud's unified repository for container images and language packages.
@@ -141,7 +141,7 @@
 - [KICS](https://kics.io) — IaC scanning for security issues.
 - [Knative](https://knative.dev/) — Kubernetes-based platform APIs for deploying, scaling, and delivering serverless workloads and events.
 - [Ko](https://ko.build) — Build and publish Go application OCI images without writing Dockerfiles; publishes SBOMs by default in supported releases.
-- [KServe](https://kserve.github.io/website) — Model serving on Kubernetes.
+- [KServe](https://kserve.github.io/website) — Apache-2.0 Kubernetes inference platform for predictive and generative models, requiring cluster, model-runtime and networking operations.
 - [Kthena](https://kthena.volcano.sh) — Kubernetes-native AI serving platform for scalable multi-model deployment, routing, and intelligent auto-scaling.
 - [Kube Copilot](https://github.com/feiskyer/kube-copilot) — AI assistant for Kubernetes operations.
 - [kube-score](https://kube-score.com) — Static Kubernetes object analysis that recommends reliability and security improvements for manifests, including probes, resource limits and security contexts.
@@ -172,7 +172,7 @@
 - [Mem0](https://mem0.ai/) — Memory layer for AI applications that can run as an embedded library, self-hosted service, or managed platform.
 - [Mergify](https://mergify.com) — GitHub workflow platform combining Merge Queue, CI Insights, Test Insights and Merge Protections.
 - [Migratowl](https://migratowl.bitkaio.com) — AI-powered dependency migration analyzer.
-- [MLflow](https://mlflow.org) — Platform for managing ML lifecycles.
+- [MLflow](https://mlflow.org) — Apache-2.0 open-source AI engineering platform for ML experiments, model lifecycle, LLM evaluation and tracing; hosted offerings are separate.
 - [Mockito](https://site.mockito.org/) — Java mocking framework for isolating collaborators in automated unit tests.
 - [Model Express](https://github.com/ai-dynamo/modelexpress) — Rust service that stages model data near inference systems to reduce startup time.
 - [Nautobot](https://docs.nautobot.com/) — Network source-of-truth and automation platform with extensible data models and application plugins.
@@ -227,7 +227,7 @@
 - [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
 - [ServerSpec](https://serverspec.org) — Ruby/RSpec-based server-state assertions for installed packages, services, ports and configuration.
 - [Shipwright](https://shipwright.io) — Kubernetes-native image-build orchestration using Build and BuildRun resources and pluggable build strategies backed by Tekton.
-- [Sim](https://www.sim.ai) — AI workspace for building, deploying, and monitoring agentic workflows.
+- [Sim](https://www.sim.ai) — Apache-2.0 source for Sim's AI-agent and workflow builder, with separately operated hosted services, connectors and inference billing.
 - [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks) — Minimal Node.js Git hooks manager using package.json or local configuration, with one command per hook.
 - [Skaffold](https://skaffold.dev) — Client-side container-development CLI for build, test, push, deploy and debug loops with Kubernetes and other supported targets; upstream plans repository archival on 29 January 2027.
 - [Skopeo](https://github.com/podman-container-tools/skopeo) — Daemonless tool to inspect, copy and synchronize remote OCI/container images and registries without building or running images.

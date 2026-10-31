@@ -13,13 +13,13 @@
 | [Arize Phoenix](https://arize.com/docs/phoenix) | MLOps, LLMOps and AI infrastructure | source-available | active |
 | [AutoGen](https://microsoft.github.io/autogen/stable/index.html) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
-| [AWS MCP](https://awslabs.github.io/mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
+| [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
+| [AWS MCP](https://awslabs.github.io/mcp) | MLOps, LLMOps and AI infrastructure | oss | active |
+| [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Bito](https://bito.ai) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Composio](https://composio.dev) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
+| [Composio](https://composio.dev) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [Deep Agents](https://github.com/langchain-ai/deepagents) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [DeepEval](https://deepeval.com/) | MLOps, LLMOps and AI infrastructure, CI, build and testing | open-core | active |
 | [DeepSpeed](https://www.deepspeed.ai) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -32,7 +32,7 @@
 | [Flawless](https://github.com/William-Lu-stack/Flawless) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [fulling](https://github.com/FullAgent/fulling) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [genai-agentos](https://github.com/genai-works-org/genai-agentos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [GitHub Copilot](https://github.com/features/copilot) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [GitHub Copilot](https://github.com/features/copilot) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [GitHub MCP Server](https://github.com/github/github-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Grafana MCP](https://github.com/grafana/mcp-grafana) | MLOps, LLMOps and AI infrastructure | oss | active |
@@ -44,7 +44,7 @@
 | [Hortator](https://hortator.ai) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [K8sGPT](https://k8sgpt.ai) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Kelos](https://github.com/kelos-dev/kelos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [KServe](https://kserve.github.io/website) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [KServe](https://kserve.github.io/website) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Kthena](https://kthena.volcano.sh) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Kube Copilot](https://github.com/feiskyer/kube-copilot) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Kubernetes MCP Server](https://github.com/containers/kubernetes-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
@@ -65,7 +65,7 @@
 | [Mem0](https://mem0.ai/) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [Migratowl](https://migratowl.bitkaio.com) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
 | [Milvus](https://milvus.io) | MLOps, LLMOps and AI infrastructure, Databases, caching and data infrastructure | open-core | active |
-| [MLflow](https://mlflow.org) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
+| [MLflow](https://mlflow.org) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Model Express](https://github.com/ai-dynamo/modelexpress) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
@@ -81,7 +81,7 @@
 | [Rakazo](https://rakazo.com/) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Ray](https://www.ray.io/) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [reShapr](https://reshapr.io) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
-| [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | unknown | needs-review |
+| [Sim](https://www.sim.ai) | MLOps, LLMOps and AI infrastructure | open-core | needs-review |
 | [Stakpak](https://stakpak.dev) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [terraform-skill](https://github.com/antonbabenko/terraform-skill) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |

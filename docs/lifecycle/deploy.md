@@ -48,15 +48,15 @@
 - [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) — Collection of Kubernetes architecture diagrams.
 - [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) — Collection of 130+ specialized Codex subagents for a wide range of development use cases.
 - [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) — AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
-- [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — MCP server for AWS Billing & Cost Management use cases (announced by AWS).
+- [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — Apache-2.0 AWS Labs MCP server wrapping Billing and Cost Management APIs using caller AWS credentials; API quotas and charges still apply.
 - [AWS CDK](https://aws.amazon.com/cdk) — Infrastructure as code framework that defines cloud resources in familiar programming languages.
 - [AWS CLI](https://aws.amazon.com/cli/) — Official command-line interface for administering Amazon Web Services from shells and automation.
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation) — Managed AWS infrastructure provisioning service for modeling resources as templates and stacks.
 - [AWS Fargate](https://aws.amazon.com/fargate/) — AWS-managed serverless container compute execution model used by Amazon ECS tasks and Amazon EKS pods.
 - [AWS Lambda](https://aws.amazon.com/lambda) — Serverless compute service by AWS.
-- [AWS MCP](https://awslabs.github.io/mcp) — AWS implementation of Model Context Protocol.
+- [AWS MCP](https://awslabs.github.io/mcp) — AWS Labs collection of Apache-2.0 MCP servers for AWS services; individual servers require separate IAM and runtime configuration.
 - [AWS Storage Gateway](https://aws.amazon.com/storagegateway/) — Hybrid cloud storage service.
-- [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Azure platform for building, deploying, and operating AI solutions (models, agents, evaluation, safety).
+- [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry) — Microsoft Foundry (formerly Azure AI Foundry) is an Azure-managed platform for models, agents and AI application operations, billed separately from its SDKs.
 - [Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) — Declarative IaC language for Azure Resource Manager deployments.
 - [Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps) — Azure service for running containerized apps.
 - [Azure Functions](https://azure.microsoft.com/en-us/products/functions) — Commercial managed Azure PaaS for event-driven and scheduled compute; the separately catalogued Functions Host runtime is open source.
@@ -103,7 +103,7 @@
 - [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) — Kubernetes Cluster API infrastructure provider for AWS self-managed Kubernetes clusters and EKS integrations.
 - [Cluster Bare Autoscaler](https://github.com/docent-net/cluster-bare-autoscaler) — Bare-metal Kubernetes autoscaler that powers nodes on or off based on cluster demand while safely cordoning and draining them.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) — High-performance code intelligence MCP server that indexes repositories into a persistent knowledge graph.
-- [Composio](https://composio.dev) — Agent tooling platform for managed auth, app connectors, triggers, and sandboxed tool execution across developer and business apps.
+- [Composio](https://composio.dev) — MIT-licensed Composio SDK for agent tool integrations alongside distinct managed authentication, connectors and hosted workbench services.
 - [Compute Gardener](https://www.compute-gardener.com) — Carbon-aware Kubernetes scheduler for sustainable computing.
 - [Concierto Cloud](https://www.concierto.cloud) — Cloud management platform.
 - [Confidential Containers](https://confidentialcontainers.org) — CNCF project for running Kubernetes pods inside hardware-backed Trusted Execution Environments (TEEs).
@@ -139,7 +139,7 @@
 - [Docker Agent](https://docker.github.io/docker-agent/) — Declarative multi-agent framework from Docker for defining AI agents, tools, and orchestration flows with YAML-based configuration.
 - [Docker Compose](https://docs.docker.com/compose/) — Declarative tool for defining and running multi-container applications from a Compose file.
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) — Proprietary desktop application bundling Docker container, image, Kubernetes, and developer tooling for macOS, Windows, and Linux.
-- [Docker Hub MCP](https://hub.docker.com/mcp) — Docker Hub surface for discovering the containerized servers in Docker's MCP Catalog.
+- [Docker Hub MCP](https://hub.docker.com/mcp) — Docker Hub's discovery catalog for container-packaged MCP servers; it is distinct from the MIT-licensed Docker MCP Gateway and registry repositories.
 - [Docker MCP Gateway](https://github.com/docker/mcp-gateway) — Docker CLI plugin and gateway for discovering, running, and routing MCP servers in containers.
 - [Docker Swarm](https://docs.docker.com/engine/swarm) — Ambiguous umbrella name spanning current Swarm mode embedded in Docker Engine and the archived historical standalone Docker Swarm project.
 - [Dockhand](https://dockhand.pro/) — Self-hosted Docker management application for containers, Compose stacks, images, volumes, networks, and multiple Docker environments.
@@ -185,11 +185,11 @@
 - [genai-agentos](https://github.com/genai-works-org/genai-agentos) — Framework for building, running, and managing multi-agent AI workflows.
 - [git-sync](https://github.com/kubernetes/git-sync) — Sidecar app that clones a Git repository and keeps it synchronized with upstream.
 - [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform terms separate from the MIT runner and independent action licences.
-- [GitHub Copilot](https://github.com/features/copilot) — AI-powered code completion assistant.
+- [GitHub Copilot](https://github.com/features/copilot) — GitHub's managed AI coding assistant and agent offerings with account- and feature-dependent plans, usage quotas and data policies.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server) — Official GitHub MCP server exposing repository, issue and pull-request operations through local or GitHub-hosted connections.
 - [GitLab](https://about.gitlab.com) — GitLab source-control and CI/CD product family, offered as GitLab.com SaaS and Self-Managed deployments, with MIT base code and separately licensed Enterprise features and subscriptions.
 - [GitLab CI](https://docs.gitlab.com/ci/) — GitLab's CI/CD pipeline platform across GitLab.com and self-managed editions, with separately deployed GitLab Runner and distinct Community, Enterprise and service terms.
-- [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab MCP server documentation.
+- [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab's documented MCP server interface for authorized GitLab-project tools; editions, account entitlements, OAuth scopes and instance configuration must be checked.
 - [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) — GitOps Bridge is a community pattern and example repository passing cluster-provisioning metadata from IaC to GitOps-managed Kubernetes addons and workloads. Its Terraform/Argo CD example is described as stable; Flux integration is listed as in progress, not universal executable-platform support.
 - [GoCD](https://www.gocd.org) — Apache-2.0 continuous-delivery server with agents, pipeline dependencies, materials and value-stream visibility; plugins and support terms remain separate.
 - [Goldilocks](https://goldilocks.docs.fairwinds.com/) — Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
@@ -299,7 +299,7 @@
 - [kro](https://kro.run/) — Kubernetes SIG Cloud Provider subproject that composes resources into reusable custom APIs through ResourceGraphDefinitions.
 - [kroc](https://github.com/pawelcit/kroc) — Kubernetes Reactive Object Creator for event-driven resource automation.
 - [KRouter](https://krouter.cloud/) — Kubernetes Gateway API implementation for HTTP, gRPC, TCP, UDP, and TLS routing.
-- [KServe](https://kserve.github.io/website) — Model serving on Kubernetes.
+- [KServe](https://kserve.github.io/website) — Apache-2.0 Kubernetes inference platform for predictive and generative models, requiring cluster, model-runtime and networking operations.
 - [Kthena](https://kthena.volcano.sh) — Kubernetes-native AI serving platform for scalable multi-model deployment, routing, and intelligent auto-scaling.
 - [kuba](https://github.com/hcgatewood/kuba) — Fuzzy, multi-cluster kubectl companion for faster day-to-day Kubernetes operations.
 - [kubara](https://kubara.io/) — Open-source GitOps-first CLI for packaging, generating, and bootstrapping reusable Kubernetes platform architectures.
@@ -406,7 +406,7 @@
 - [MiniBlue](https://miniblue.io) — Local Azure emulator that emulates 26+ Azure services in a single binary for development and testing without an Azure account.
 - [Minikube](https://minikube.sigs.k8s.io/docs) — Local Kubernetes development environment.
 - [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) — Ansible accelerator to speed up module execution and reduce SSH overhead.
-- [MLflow](https://mlflow.org) — Platform for managing ML lifecycles.
+- [MLflow](https://mlflow.org) — Apache-2.0 open-source AI engineering platform for ML experiments, model lifecycle, LLM evaluation and tracing; hosted offerings are separate.
 - [MOCO](https://cybozu-go.github.io/moco) — MySQL Operator for Kubernetes by Cybozu.
 - [Model Express](https://github.com/ai-dynamo/modelexpress) — Rust service that stages model data near inference systems to reduce startup time.
 - [MongoDB](https://www.mongodb.com/) — Document database server whose Community Edition source uses SSPL, with separate commercial Enterprise Advanced and managed Atlas offerings.
@@ -526,7 +526,7 @@
 - [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) — Security Profiles Operator manages and optionally records Linux seccomp, SELinux and AppArmor profiles for Kubernetes workloads.
 - [Seesaw](https://github.com/google/seesaw) — Linux Virtual Server-based load-balancing platform with redundant nodes and network configuration.
 - [Semaphore CI](https://semaphore.io/) — Semaphore CI/CD product family with hosted Cloud, self-hosted Apache-2.0 Community code outside ee/, and a separately licensed commercial Enterprise edition.
-- [Sim](https://www.sim.ai) — AI workspace for building, deploying, and monitoring agentic workflows.
+- [Sim](https://www.sim.ai) — Apache-2.0 source for Sim's AI-agent and workflow builder, with separately operated hosted services, connectors and inference billing.
 - [sk8r](https://github.com/mvklingeren/sk8r) — Kubernetes dashboard.
 - [Skaffold](https://skaffold.dev) — Client-side container-development CLI for build, test, push, deploy and debug loops with Kubernetes and other supported targets; upstream plans repository archival on 29 January 2027.
 - [Skupper](https://skupper.io/) — Application-networking platform that securely connects services across Kubernetes clusters and local systems.
