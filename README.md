@@ -21,11 +21,11 @@ The DevOps ecosystem changes faster than a static list can safely represent: pro
 | Categories | **30** |
 | Engineering roles | **13** |
 | Lifecycle stages | **12** |
-| Records not flagged for review | **875** |
-| Records requiring review | **550** |
+| Records not flagged for review | **881** |
+| Records requiring review | **544** |
 | Deprecated, archived, or historical records | **14** |
 | Archived source repositories | **14** |
-| Most recent recorded verification date | **2026-10-30** |
+| Most recent recorded verification date | **2026-10-31** |
 
 Review debt is deliberate and actionable; it is not hidden to improve the numbers. A record marked `needs-review` is useful discovery context, not a verified recommendation.
 
@@ -134,17 +134,17 @@ needs_review: false
 | `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 929 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 31 |
 | `open-core` | OSS/community core with commercial features or service. | 113 |
-| `commercial` | Proprietary commercial product. | 169 |
+| `commercial` | Proprietary commercial product. | 173 |
 | `free-saas` | Hosted service with a free offering. | 6 |
 | `documentation` | Learning or documentation resource. | 104 |
-| `unknown` | Reliable licence evidence has not been recorded. | 73 |
+| `unknown` | Reliable licence evidence has not been recorded. | 69 |
 
 ## Project-status legend
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 861 |
-| `needs-review` | Imported but not yet fully verified. | 550 |
+| `active` | Maintained according to recorded primary-source evidence. | 867 |
+| `needs-review` | Imported but not yet fully verified. | 544 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 10 |
 | `historical` | Retained for context or migration work. | 2 |

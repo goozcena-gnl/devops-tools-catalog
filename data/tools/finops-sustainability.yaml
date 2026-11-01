@@ -480,7 +480,7 @@
   needs_review: false
 - id: kubernetes-capacity-calculator
   name: Kubernetes Capacity Calculator
-  summary: Calculator for estimating Kubernetes node counts and cluster capacity from workload requirements.
+  summary: "Web-based Kubernetes capacity calculator estimating node counts or node specifications from pod CPU/memory, DaemonSets and system reservations."
   official_url: https://wintelguy.com/kubernetes-capacity-calculator.pl
   categories:
   - finops-sustainability
@@ -492,18 +492,21 @@
   - finops-engineer
   lifecycle_stages:
   - optimize
-  use_when: []
-  avoid_when: []
+  use_when:
+  - "You need early cluster CPU and memory sizing from planned workloads, node constraints and target utilization."
+  avoid_when:
+  - "You require live scheduler measurements, cloud provider prices or a production performance guarantee."
   deployment_models: []
   license_model: documentation
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-31"
   sources:
   - legacy:devopstools_final.md#L799
-  needs_review: true
+  - "https://wintelguy.com/kubernetes-capacity-calculator.pl"
+  needs_review: false
 - id: kubex
   name: Kubex
   summary: AI-driven Kubernetes and GPU resource optimization platform for pod scaling, node tuning, and
@@ -548,7 +551,7 @@
   needs_review: false
 - id: learnkube-kubernetes-instance-calculator
   name: Learnkube Kubernetes Instance Calculator
-  summary: Calculator for choosing cost-effective cloud instance sizes for Kubernetes workloads.
+  summary: "Web-based Kubernetes cloud instance and pricing comparator covering AWS, GCP, Azure and Linode for preliminary capacity planning."
   official_url: https://learnkube.com/kubernetes-instance-calculator
   categories:
   - finops-sustainability
@@ -560,18 +563,21 @@
   - finops-engineer
   lifecycle_stages:
   - optimize
-  use_when: []
-  avoid_when: []
+  use_when:
+  - "You need an initial cross-cloud node-cost or instance-size comparison before selecting Kubernetes capacity."
+  avoid_when:
+  - "You require contract-specific billing, real-time instance inventory or guaranteed current regional cloud prices."
   deployment_models: []
   license_model: documentation
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-31"
   sources:
   - legacy:devopstools_final.md#L801
-  needs_review: true
+  - "https://learnkube.com/kubernetes-instance-calculator"
+  needs_review: false
 - id: nutanix-cost-governance
   name: Nutanix Cloud Manager Cost Governance
   summary: Commercial on-premises cost metering, chargeback, budgeting, and analytics capability within
@@ -724,7 +730,7 @@
   needs_review: false
 - id: spot-finops
   name: Spot FinOps
-  summary: Cloud cost optimization.
+  summary: "Spot FinOps portfolio acquired by Flexera from NetApp in March 2025; product lines include Eco, Ocean, Elastigroup and CloudCheckr."
   official_url: https://spot.io/solutions/finops
   categories:
   - finops-sustainability
@@ -737,23 +743,25 @@
   lifecycle_stages:
   - optimize
   use_when:
-  - Leveraging spot/preemptible instances with automated fallback.
+  - "You are assessing a specified Flexera Spot product for commitments, containers or interruptible compute after checking vendor entitlements."
   avoid_when:
-  - Your workloads can't tolerate interruption and you don't use spot.
+  - "You need a separately licensable product named Spot FinOps without verifying current Flexera portfolio mappings and terms."
   deployment_models: []
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-31"
   sources:
   - legacy:5_Monitoring-Observability/README.md#L92
   - legacy:devopstools_final.md#L806
+  - "https://www.flexera.com/about-us/press-center/flexera-completes-acquisition-of-netapps-spot-finops-portfolio"
+  - "https://www.flexera.com/more/spot"
   needs_review: true
 - id: ternary
   name: Ternary
-  summary: Cloud cost optimization for Terraform.
+  summary: "Commercial multi-cloud FinOps and technology spend platform integrating billing from AWS, Azure and GCP, offered as SaaS or licensed self-hosted deployment."
   official_url: https://ternary.app
   categories:
   - finops-sustainability
@@ -766,23 +774,28 @@
   lifecycle_stages:
   - optimize
   use_when:
-  - GCP-focused FinOps with BigQuery billing integration.
+  - "You need multi-cloud billing normalization, cost allocation, anomaly detection and financial reporting with controlled data ingestion."
   avoid_when:
-  - You're primarily on AWS/Azure.
-  deployment_models: []
-  license_model: unknown
+  - "You require a Terraform-only tool or assume a licensed self-hosted commercial deployment makes the platform open source."
+  deployment_models:
+  - "hosted-saas"
+  - "self-hosted"
+  license_model: "commercial"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-31"
   sources:
   - legacy:5_Monitoring-Observability/README.md#L93
   - legacy:devopstools_final.md#L807
-  needs_review: true
+  - "https://ternary.app/ternary-cloud-finops/"
+  - "https://docs.ternary.app/docs/administrator-quick-start"
+  - "https://docs.ternary.app/docs/ternary-self-hosted"
+  needs_review: false
 - id: vegacloud-inform
   name: VegaCloud Inform
-  summary: Cloud cost management.
+  summary: "VegaCloud Inform is the cloud cost visibility tier of a commercial multi-cloud FinOps platform, covering reporting, budgeting, forecasts and anomaly insights."
   official_url: https://www.vegacloud.io/products/inform
   categories:
   - finops-sustainability
@@ -795,23 +808,26 @@
   lifecycle_stages:
   - optimize
   use_when:
-  - Automated anomaly detection on cloud spend.
+  - "You need cloud spend visibility, chargeback or forecasts across AWS, Azure and other supported providers."
   avoid_when:
-  - Simpler alerting on billing thresholds is sufficient.
-  deployment_models: []
-  license_model: unknown
+  - "You expect Inform alone to perform all Vega Optimize or Operate workflows, or require an open-source deployment."
+  deployment_models:
+  - "hosted-saas"
+  license_model: "commercial"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-31"
   sources:
   - legacy:5_Monitoring-Observability/README.md#L94
   - legacy:devopstools_final.md#L808
-  needs_review: true
+  - "https://docs.vegacloud.io/docs/intro"
+  - "https://www.vegacloud.io/aws"
+  needs_review: false
 - id: xosphere
   name: Xosphere
-  summary: Cloud cost optimization platform focused on automating AWS Spot and EC2 savings.
+  summary: "Commercial Xosphere IQ cloud and AI optimization platform combining SpotIQ compute automation, ClusterIQ Kubernetes scaling and TokenIQ AI-cost analysis."
   official_url: https://www.xosphere.io
   categories:
   - finops-sustainability
@@ -823,21 +839,26 @@
   - finops-engineer
   lifecycle_stages:
   - optimize
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - "You optimize eligible AWS or GCP Spot capacity or Kubernetes node costs under controlled reliability policies."
+  avoid_when:
+  - "You require guaranteed Spot capacity, an open-source on-premises platform or mature general availability for TokenIQ."
+  deployment_models:
+  - "hosted-saas"
+  license_model: "commercial"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-31"
   sources:
   - legacy:devopstools_final.md#L809
-  needs_review: true
+  - "https://www.xosphere.io/"
+  - "https://www.xosphere.io/pricing/"
+  needs_review: false
 - id: yotascale
   name: Yotascale
-  summary: Cloud cost management.
+  summary: "Former Yotascale FinOps platform now identified by its original vendor site as acquired by CoreStack; standalone product identity needs review."
   official_url: https://www.yotascale.com
   categories:
   - finops-sustainability
@@ -850,23 +871,24 @@
   lifecycle_stages:
   - optimize
   use_when:
-  - Context-aware cost attribution for dynamic, containerized environments.
+  - "You need to trace historical Yotascale cost attribution and reporting into the successor CoreStack FinOps portfolio."
   avoid_when:
-  - Basic tagging-based reports meet your needs.
+  - "You require a currently sold standalone Yotascale SKU without verifying migration support, entitlement and product mapping."
   deployment_models: []
   license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-31"
   sources:
   - legacy:5_Monitoring-Observability/README.md#L95
   - legacy:devopstools_final.md#L810
+  - "https://yotascale.com/"
   needs_review: true
 - id: zesty
   name: Zesty
-  summary: Cloud cost optimization.
+  summary: "Commercial Zesty cloud optimization platform covering Kubernetes resource efficiency and AWS or Azure compute commitment management."
   official_url: https://zesty.co
   categories:
   - finops-sustainability
@@ -879,17 +901,20 @@
   lifecycle_stages:
   - optimize
   use_when:
-  - Automated disk and reserved instance optimization on AWS.
+  - "You operate Kubernetes or AWS/Azure spend and can authorize scoped cost optimization and commitment controls."
   avoid_when:
-  - You need multi-cloud support or prefer manual commitment management.
-  deployment_models: []
-  license_model: unknown
+  - "You need entirely open-source control software or cannot approve billing-data access and automation of cloud financial commitments."
+  deployment_models:
+  - "hosted-saas"
+  license_model: "commercial"
   maturity: unknown
-  status: needs-review
+  status: "active"
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: "2026-10-31"
   sources:
   - legacy:5_Monitoring-Observability/README.md#L96
   - legacy:devopstools_final.md#L811
-  needs_review: true
+  - "https://docs.zesty.co/docs"
+  - "https://docs.zesty.co/docs/commitment-manager"
+  needs_review: false
