@@ -39,9 +39,9 @@
 - [Kor](https://github.com/yonahd/kor) — Kubernetes resource-reference analyzer that reports potentially unused objects and optionally deletes selected findings; distinct from the separately offered KorPro platform.
 - [kubectl-view-allocations](https://github.com/davidB/kubectl-view-allocations) — kubectl plugin for comparing Kubernetes resource allocations and utilization.
 - [KubeElasti](https://kubeelasti.dev/) — Kubernetes controller and request proxy for scaling HTTP workloads to zero and restoring them on demand.
-- [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) — Calculator for estimating Kubernetes node counts and cluster capacity from workload requirements.
+- [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) — Web-based Kubernetes capacity calculator estimating node counts or node specifications from pod CPU/memory, DaemonSets and system reservations.
 - [Kubex](https://kubex.ai/) — AI-driven Kubernetes and GPU resource optimization platform for pod scaling, node tuning, and capacity efficiency.
-- [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) — Calculator for choosing cost-effective cloud instance sizes for Kubernetes workloads.
+- [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) — Web-based Kubernetes cloud instance and pricing comparator covering AWS, GCP, Azure and Linode for preliminary capacity planning.
 - [Microsoft Azure](https://azure.microsoft.com) — Microsoft's commercial cloud platform for compute, data, AI, networking, security, and hybrid and multicloud management services.
 - [Nutanix Cloud Manager Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) — Commercial on-premises cost metering, chargeback, budgeting, and analytics capability within Nutanix Cloud Manager.
 - [oha](https://github.com/hatoo/oha) — HTTP load-generation CLI with an interactive results display.
@@ -52,14 +52,14 @@
 - [Praesto](https://github.com/federicolepera/praesto) — Kubernetes-native model cache system using an operator, node agent, and CSI driver to stage model artifacts on cluster nodes.
 - [ProsperOps](https://www.prosperops.com/) — Flexera-owned SaaS platform that autonomously manages cloud commitment discounts and scheduled workload optimization across AWS, Azure, and Google Cloud.
 - [Scaleway](https://www.scaleway.com/en/) — Commercial European cloud and AI platform providing compute, storage, networking, managed databases, Kubernetes, serverless, and bare-metal services.
-- [Spot FinOps](https://spot.io/solutions/finops) — Cloud cost optimization.
-- [Ternary](https://ternary.app) — Cloud cost optimization for Terraform.
-- [VegaCloud Inform](https://www.vegacloud.io/products/inform) — Cloud cost management.
+- [Spot FinOps](https://spot.io/solutions/finops) — Spot FinOps portfolio acquired by Flexera from NetApp in March 2025; product lines include Eco, Ocean, Elastigroup and CloudCheckr.
+- [Ternary](https://ternary.app) — Commercial multi-cloud FinOps and technology spend platform integrating billing from AWS, Azure and GCP, offered as SaaS or licensed self-hosted deployment.
+- [VegaCloud Inform](https://www.vegacloud.io/products/inform) — VegaCloud Inform is the cloud cost visibility tier of a commercial multi-cloud FinOps platform, covering reporting, budgeting, forecasts and anomaly insights.
 - [Virtana](https://www.virtana.com) — Hybrid cloud management.
 - [Vultr](https://www.vultr.com) — Commercial public cloud platform for virtual machines, bare metal, GPU compute, managed Kubernetes, storage, networking, and databases.
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
-- [Xosphere](https://www.xosphere.io) — Cloud cost optimization platform focused on automating AWS Spot and EC2 savings.
-- [Yotascale](https://www.yotascale.com) — Cloud cost management.
-- [Zesty](https://zesty.co) — Cloud cost optimization.
+- [Xosphere](https://www.xosphere.io) — Commercial Xosphere IQ cloud and AI optimization platform combining SpotIQ compute automation, ClusterIQ Kubernetes scaling and TokenIQ AI-cost analysis.
+- [Yotascale](https://www.yotascale.com) — Former Yotascale FinOps platform now identified by its original vendor site as acquired by CoreStack; standalone product identity needs review.
+- [Zesty](https://zesty.co) — Commercial Zesty cloud optimization platform covering Kubernetes resource efficiency and AWS or Azure compute commitment management.
 
 [Back to catalogue](../../README.md)

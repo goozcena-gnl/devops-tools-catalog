@@ -359,7 +359,7 @@
 | [KubePlumber](https://github.com/David-VTUK/KubePlumber) | Kubernetes distributions and operations | oss | active |
 | [Kubernetes](https://kubernetes.io) | Kubernetes distributions and operations | oss | active |
 | [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | active |
-| [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | needs-review |
+| [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | active |
 | [Kubernetes Common Errors & Fixes](https://middleware.io/blog/kubernetes-common-errors-fix) | Kubernetes distributions and operations | documentation | needs-review |
 | [Kubernetes Dashboard](https://github.com/kubernetes-retired/dashboard) | Deprecated and historical tools, Kubernetes distributions and operations | oss | archived |
 | [Kubernetes de A à Z](https://github.com/ibrahimbakayoko/kubernetes-de-a-z) | Documentation, learning and career resources | documentation | needs-review |
@@ -400,7 +400,7 @@
 | [LangSmith](https://smith.langchain.com) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LearnKube](https://learnkube.com) | Documentation, learning and career resources | documentation | needs-review |
-| [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | needs-review |
+| [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | active |
 | [Lens](https://lenshq.io) | Kubernetes distributions and operations | unknown | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
@@ -565,7 +565,7 @@
 | [TechOps Examples](https://www.techopsexamples.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Tekton](https://tekton.dev) | CI, build and testing, CD, GitOps, release and promotion | oss | active |
 | [Telepresence](https://www.telepresence.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Ternary](https://ternary.app) | FinOps and sustainability | unknown | needs-review |
+| [Ternary](https://ternary.app) | FinOps and sustainability | commercial | active |
 | [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
 | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
@@ -591,7 +591,7 @@
 | [Valkey](https://valkey.io) | Emerging and experimental tools | oss | needs-review |
 | [Valkey Operator](https://github.com/valkey-io/valkey-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [vCluster](https://www.vcluster.com) | Kubernetes distributions and operations | oss | active |
-| [VegaCloud Inform](https://www.vegacloud.io/products/inform) | FinOps and sustainability | unknown | needs-review |
+| [VegaCloud Inform](https://www.vegacloud.io/products/inform) | FinOps and sustainability | commercial | active |
 | [Vercel](https://vercel.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion, Serverless, edge and WebAssembly | commercial | active |
 | [VictoriaMetrics MCP server](https://github.com/VictoriaMetrics/mcp-victoriametrics) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Virtana](https://www.virtana.com) | Cloud platforms and cloud management | unknown | needs-review |
@@ -607,13 +607,13 @@
 | [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
 | [WSO2 API Platform](https://wso2.com/api-platform/) | Kubernetes networking, storage and add-ons | oss | active |
 | [XCP-ng](https://xcp-ng.org/) | Virtualization, bare metal and homelab | oss | active |
-| [Xosphere](https://www.xosphere.io) | FinOps and sustainability | unknown | needs-review |
+| [Xosphere](https://www.xosphere.io) | FinOps and sustainability | commercial | active |
 | [YAML](https://yaml.org) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [YamlQL](https://github.com/AKSarav/YamlQL) | Emerging and experimental tools | oss | needs-review |
 | [Yoke](https://yokecd.github.io/) | CD, GitOps, release and promotion | oss | active |
 | [Yotascale](https://www.yotascale.com) | FinOps and sustainability | unknown | needs-review |
 | [youki](https://youki-dev.github.io/youki/) | Containers and image tooling | oss | active |
 | [zeropod](https://github.com/ctrox/zeropod) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Zesty](https://zesty.co) | FinOps and sustainability | unknown | needs-review |
+| [Zesty](https://zesty.co) | FinOps and sustainability | commercial | active |
 
 [Back to catalogue](../../README.md)
