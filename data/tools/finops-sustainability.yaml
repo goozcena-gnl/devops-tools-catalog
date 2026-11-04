@@ -845,6 +845,7 @@
   - "You require guaranteed Spot capacity, an open-source on-premises platform or mature general availability for TokenIQ."
   deployment_models:
   - "hosted-saas"
+  - "self-hosted"
   license_model: "commercial"
   maturity: unknown
   status: "active"
@@ -855,6 +856,7 @@
   - legacy:devopstools_final.md#L809
   - "https://www.xosphere.io/"
   - "https://www.xosphere.io/pricing/"
+  - "https://www.xosphere.io/downloads/xosphere-user-guide.pdf"
   needs_review: false
 - id: yotascale
   name: Yotascale

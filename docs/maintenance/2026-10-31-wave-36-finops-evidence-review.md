@@ -44,3 +44,35 @@ The eight original YAML `id`, `name`, `categories`, `roles`, `lifecycle_stages`,
 - Re-run `python -m scripts.generate_docs` and `--check`, `python -m scripts.validate_catalog`, `python -m pip check`, Ruff lint and format, full `python -m pytest`, `python -m scripts.review_debt --format json`, and strict changed-path/record-count/provenance controls.
 - Only after full validation: human-scoped commit/push; **Draft PR**. PR CI, independent strict Full link audit (zero new blockers), fresh review and manual Ready/merge gates are separate future steps.
 - Never auto-merge, relax audit baselines, or close issue #159 before successful post-merge checks.
+
+---
+
+## 2026-11-03 - Codex P1 correction: Xosphere deployment
+
+This addendum **supersedes the earlier SaaS-only deployment classification**
+for `xosphere` in the initial Wave 36 evidence table and field-level manifest.
+Codex identified this as a P1 issue on PR #163, reviewed HEAD
+`8e907093b9d179fcab45c9bc62d8c04920e49c51`:
+https://github.com/goozcena-gnl/devops-tools-catalog/pull/163#discussion_r4437496089
+
+Xosphere's official *Instance Orchestrator User Guide* documents software
+installed within the customer's AWS account, with the optimizer running as
+customer-account resources rather than exclusively as a vendor-hosted SaaS.
+Official primary evidence:
+https://www.xosphere.io/downloads/xosphere-user-guide.pdf
+
+The canonical Xosphere record therefore now declares
+`deployment_models: [hosted-saas, self-hosted]`. The two model values describe
+capabilities across the product family, not a claim that every Xosphere
+component runs in both modes. In particular, the AWS-side optimizer is
+customer-account deployed; any vendor dashboard or separately hosted feature
+must be evaluated independently for data residency and account access.
+
+Only the Xosphere deployment model and one official source citation are
+changed in the canonical category YAML. All other 28 canonical raw blocks,
+original `legacy:` sources, offering classification `commercial`, `active`
+status and `needs_review: false` remain unchanged. No SPDX licence is added.
+Inventory counters remain **1,425 canonical, 867 active, 544 needs-review,
+69 unknown licence models**. Generated documentation must be regenerated and
+checked. This erratum does not claim post-correction CI, strict audit, Codex
+approval, Ready/merge approval, or merge; all final-SHA gates must be repeated.
