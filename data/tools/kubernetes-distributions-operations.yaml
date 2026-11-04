@@ -2441,8 +2441,8 @@
   needs_review: true
 - id: kubectl-klock
   name: kubectl-klock
-  summary: Lock resources in Kubernetes clusters.
-  official_url: https://software.opensuse.org/package/kubectl-klock
+  summary: Stream and display Kubernetes resource watch updates in a readable terminal view.
+  official_url: https://github.com/applejag/kubectl-klock
   repository_url: https://github.com/applejag/kubectl-klock
   categories:
   - kubernetes-distributions-operations
@@ -2456,9 +2456,9 @@
   - deploy
   - operate
   use_when:
-  - You need to prevent accidental deletion of critical resources.
+  - You need a readable live view of Kubernetes resource changes using the Kubernetes watch API.
   avoid_when:
-  - RBAC policies and admission webhooks already guard your resources.
+  - You need to prevent resource deletion or enforce access policies; this plugin only displays watch output.
   deployment_models: []
   license_model: oss
   maturity: unknown
@@ -2469,6 +2469,7 @@
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L47
   - legacy:devopstools_final.md#L497
+  - https://github.com/applejag/kubectl-klock/blob/main/README.md
   needs_review: true
 - id: kubectl-quick-reference
   name: kubectl Quick Reference
