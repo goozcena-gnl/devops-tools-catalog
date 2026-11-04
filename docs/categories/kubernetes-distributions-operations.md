@@ -1550,17 +1550,17 @@ Interactive kubectl resource explorer.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Lock resources in Kubernetes clusters.
+Stream and display Kubernetes resource watch updates in a readable terminal view.
 
 **Use when**
 
-- You need to prevent accidental deletion of critical resources.
+- You need a readable live view of Kubernetes resource changes using the Kubernetes watch API.
 
 **Consider alternatives when**
 
-- RBAC policies and admission webhooks already guard your resources.
+- You need to prevent resource deletion or enforce access policies; this plugin only displays watch output.
 
-[Official site](https://software.opensuse.org/package/kubectl-klock) · [Source repository](https://github.com/applejag/kubectl-klock)
+[Official site](https://github.com/applejag/kubectl-klock) · [Source repository](https://github.com/applejag/kubectl-klock)
 
 ### kubectl-view-allocations
 
