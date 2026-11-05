@@ -1517,7 +1517,7 @@ Apache-licensed Kubernetes diagnosis engine with full self-hosted operation and 
 
 - You do not want an AI-assisted incident workflow or cannot provide the required Kubernetes, observability, and LLM access.
 
-[Official site](https://kubently.io) · [Documentation](https://kubently.io/guides/quick-start/) · [Source repository](https://github.com/kubently/kubently)
+[Official site](https://github.com/kubently/kubently) · [Documentation](https://github.com/kubently/kubently/blob/main/docs/QUICK_START.md) · [Source repository](https://github.com/kubently/kubently)
 
 ### Kubernetes Autoscaler
 

@@ -2631,10 +2631,10 @@
 - id: kubently
   name: Kubently
   summary: Apache-licensed Kubernetes diagnosis engine with full self-hosted operation and an optional managed cloud service.
-  official_url: https://kubently.io
+  official_url: https://github.com/kubently/kubently
   repository_url: https://github.com/kubently/kubently
   repository_archived: false
-  documentation_url: https://kubently.io/guides/quick-start/
+  documentation_url: https://github.com/kubently/kubently/blob/main/docs/QUICK_START.md
   categories:
   - kubernetes-networking-storage-addons
   subcategories:
