@@ -166,7 +166,7 @@
 | [kube-dump](https://kube-dump.woozymasta.ru) | Backup, disaster recovery and resilience | oss | needs-review |
 | [kubeCodex](https://github.com/TheCodingSheikh/kubecodex) | Documentation, learning and career resources | documentation | needs-review |
 | [KubeLearn](https://kubelearn.yoparchi.fr) | Documentation, learning and career resources | documentation | needs-review |
-| [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | needs-review |
+| [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | active |
 | [Kubernetes de A à Z](https://github.com/ibrahimbakayoko/kubernetes-de-a-z) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes GitOps Guide](https://github.com/thezawzaw/kubernetes-gitops-guide) | Documentation, learning and career resources | documentation | needs-review |
 | [Kubernetes Learning Path](https://kubernetes.io/docs/home) | Documentation, learning and career resources | documentation | needs-review |
@@ -184,7 +184,7 @@
 | [LangSmith](https://smith.langchain.com) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LearnKube](https://learnkube.com) | Documentation, learning and career resources | documentation | needs-review |
-| [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | needs-review |
+| [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | active |
 | [LiteLLM](https://www.litellm.ai) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [llm-d](https://github.com/llm-d) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [llmfit](https://github.com/AlexsJones/llmfit) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -271,7 +271,7 @@
 | [TechOps Examples](https://www.techopsexamples.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Teleport](https://goteleport.com) | IAM, secrets and certificate management | open-core | needs-review |
 | [Teller](https://github.com/tellerops/teller) | IAM, secrets and certificate management | oss | needs-review |
-| [Ternary](https://ternary.app) | FinOps and sustainability | unknown | needs-review |
+| [Ternary](https://ternary.app) | FinOps and sustainability | commercial | active |
 | [Terraform Community Edition](https://www.terraform.io) | Infrastructure as Code | source-available | active |
 | [Terraform MCP Server](https://github.com/hashicorp/terraform-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [terraform-aws-eks-operation-scheduler](https://github.com/gianniskt/terraform-aws-eks-operation-scheduler) | Infrastructure as Code | oss | needs-review |
@@ -290,7 +290,7 @@
 | [Varnish Cache](https://www.varnish.org/) | Databases, caching and data infrastructure | oss | active |
 | [Vaultwarden](https://www.vaultwarden.net/) | IAM, secrets and certificate management | oss | active |
 | [Veeam Kasten for Kubernetes](https://www.veeam.com/products/cloud/kubernetes-data-protection.html) | Backup, disaster recovery and resilience | commercial | active |
-| [VegaCloud Inform](https://www.vegacloud.io/products/inform) | FinOps and sustainability | unknown | needs-review |
+| [VegaCloud Inform](https://www.vegacloud.io/products/inform) | FinOps and sustainability | commercial | active |
 | [Velero](https://velero.io) | Backup, disaster recovery and resilience | oss | active |
 | [VictoriaMetrics MCP server](https://github.com/VictoriaMetrics/mcp-victoriametrics) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Virtana](https://www.virtana.com) | Cloud platforms and cloud management | unknown | needs-review |
@@ -301,8 +301,8 @@
 | [webssh](https://github.com/bifrost0x/webssh) | IAM, secrets and certificate management | oss | needs-review |
 | [Xata](https://xata.io) | Databases, caching and data infrastructure | unknown | needs-review |
 | [XCA](https://www.hohnstaedt.de/xca) | IAM, secrets and certificate management | oss | needs-review |
-| [Xosphere](https://www.xosphere.io) | FinOps and sustainability | unknown | needs-review |
+| [Xosphere](https://www.xosphere.io) | FinOps and sustainability | commercial | active |
 | [Yotascale](https://www.yotascale.com) | FinOps and sustainability | unknown | needs-review |
-| [Zesty](https://zesty.co) | FinOps and sustainability | unknown | needs-review |
+| [Zesty](https://zesty.co) | FinOps and sustainability | commercial | active |
 
 [Back to catalogue](../../README.md)

@@ -352,17 +352,17 @@ Kubernetes controller and request proxy for scaling HTTP workloads to zero and r
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
 **Model:** Documentation<br>
-**Status:** Needs Review
+**Status:** Active
 
-Calculator for estimating Kubernetes node counts and cluster capacity from workload requirements.
+Web-based Kubernetes capacity calculator estimating node counts or node specifications from pod CPU/memory, DaemonSets and system reservations.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need early cluster CPU and memory sizing from planned workloads, node constraints and target utilization.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require live scheduler measurements, cloud provider prices or a production performance guarantee.
 
 [Official site](https://wintelguy.com/kubernetes-capacity-calculator.pl)
 
@@ -390,17 +390,17 @@ AI-driven Kubernetes and GPU resource optimization platform for pod scaling, nod
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
 **Model:** Documentation<br>
-**Status:** Needs Review
+**Status:** Active
 
-Calculator for choosing cost-effective cloud instance sizes for Kubernetes workloads.
+Web-based Kubernetes cloud instance and pricing comparator covering AWS, GCP, Azure and Linode for preliminary capacity planning.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need an initial cross-cloud node-cost or instance-size comparison before selecting Kubernetes capacity.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require contract-specific billing, real-time instance inventory or guaranteed current regional cloud prices.
 
 [Official site](https://learnkube.com/kubernetes-instance-calculator)
 
@@ -487,15 +487,15 @@ Flexera-owned SaaS platform that autonomously manages cloud commitment discounts
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Cloud cost optimization.
+Spot FinOps portfolio acquired by Flexera from NetApp in March 2025; product lines include Eco, Ocean, Elastigroup and CloudCheckr.
 
 **Use when**
 
-- Leveraging spot/preemptible instances with automated fallback.
+- You are assessing a specified Flexera Spot product for commitments, containers or interruptible compute after checking vendor entitlements.
 
 **Consider alternatives when**
 
-- Your workloads can't tolerate interruption and you don't use spot.
+- You need a separately licensable product named Spot FinOps without verifying current Flexera portfolio mappings and terms.
 
 [Official site](https://spot.io/solutions/finops)
 
@@ -503,18 +503,18 @@ Cloud cost optimization.
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud cost optimization for Terraform.
+Commercial multi-cloud FinOps and technology spend platform integrating billing from AWS, Azure and GCP, offered as SaaS or licensed self-hosted deployment.
 
 **Use when**
 
-- GCP-focused FinOps with BigQuery billing integration.
+- You need multi-cloud billing normalization, cost allocation, anomaly detection and financial reporting with controlled data ingestion.
 
 **Consider alternatives when**
 
-- You're primarily on AWS/Azure.
+- You require a Terraform-only tool or assume a licensed self-hosted commercial deployment makes the platform open source.
 
 [Official site](https://ternary.app)
 
@@ -522,18 +522,18 @@ Cloud cost optimization for Terraform.
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud cost management.
+VegaCloud Inform is the cloud cost visibility tier of a commercial multi-cloud FinOps platform, covering reporting, budgeting, forecasts and anomaly insights.
 
 **Use when**
 
-- Automated anomaly detection on cloud spend.
+- You need cloud spend visibility, chargeback or forecasts across AWS, Azure and other supported providers.
 
 **Consider alternatives when**
 
-- Simpler alerting on billing thresholds is sufficient.
+- You expect Inform alone to perform all Vega Optimize or Operate workflows, or require an open-source deployment.
 
 [Official site](https://www.vegacloud.io/products/inform)
 
@@ -560,18 +560,18 @@ Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increas
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud cost optimization platform focused on automating AWS Spot and EC2 savings.
+Commercial Xosphere IQ cloud and AI optimization platform combining SpotIQ compute automation, ClusterIQ Kubernetes scaling and TokenIQ AI-cost analysis.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You optimize eligible AWS or GCP Spot capacity or Kubernetes node costs under controlled reliability policies.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require guaranteed Spot capacity, an open-source on-premises platform or mature general availability for TokenIQ.
 
 [Official site](https://www.xosphere.io)
 
@@ -582,15 +582,15 @@ Cloud cost optimization platform focused on automating AWS Spot and EC2 savings.
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Cloud cost management.
+Former Yotascale FinOps platform now identified by its original vendor site as acquired by CoreStack; standalone product identity needs review.
 
 **Use when**
 
-- Context-aware cost attribution for dynamic, containerized environments.
+- You need to trace historical Yotascale cost attribution and reporting into the successor CoreStack FinOps portfolio.
 
 **Consider alternatives when**
 
-- Basic tagging-based reports meet your needs.
+- You require a currently sold standalone Yotascale SKU without verifying migration support, entitlement and product mapping.
 
 [Official site](https://www.yotascale.com)
 
@@ -598,17 +598,17 @@ Cloud cost management.
 
 **Categories:** FinOps and sustainability<br>
 **Roles:** Cloud Engineer, Platform Engineer, FinOps Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Cloud cost optimization.
+Commercial Zesty cloud optimization platform covering Kubernetes resource efficiency and AWS or Azure compute commitment management.
 
 **Use when**
 
-- Automated disk and reserved instance optimization on AWS.
+- You operate Kubernetes or AWS/Azure spend and can authorize scoped cost optimization and commitment controls.
 
 **Consider alternatives when**
 
-- You need multi-cloud support or prefer manual commitment management.
+- You need entirely open-source control software or cannot approve billing-data access and automation of cloud financial commitments.
 
 [Official site](https://zesty.co)

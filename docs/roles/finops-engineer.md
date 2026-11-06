@@ -22,19 +22,19 @@
 | [k8s-overcommit-operator](https://github.com/InditexTech/k8s-overcommit-operator) | FinOps and sustainability | oss | active |
 | [Kion FinOps+](https://kion.io/platform/) | FinOps and sustainability | commercial | active |
 | [Komodor](https://komodor.com) | SRE, incident response and on-call, Monitoring, metrics, logs and tracing, FinOps and sustainability | commercial | active |
-| [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | needs-review |
+| [Kubernetes Capacity Calculator](https://wintelguy.com/kubernetes-capacity-calculator.pl) | FinOps and sustainability | documentation | active |
 | [Kubex](https://kubex.ai/) | FinOps and sustainability | commercial | active |
-| [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | needs-review |
+| [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | active |
 | [Nutanix Cloud Manager Cost Governance](https://www.nutanix.com/products/cloud-manager/cost-governance) | FinOps and sustainability | commercial | active |
 | [OpenCost](https://www.opencost.io) | FinOps and sustainability | oss | active |
 | [PointFive](https://www.pointfive.co/) | FinOps and sustainability | commercial | active |
 | [ProsperOps](https://www.prosperops.com/) | FinOps and sustainability | commercial | active |
 | [Spot FinOps](https://spot.io/solutions/finops) | FinOps and sustainability | unknown | needs-review |
-| [Ternary](https://ternary.app) | FinOps and sustainability | unknown | needs-review |
-| [VegaCloud Inform](https://www.vegacloud.io/products/inform) | FinOps and sustainability | unknown | needs-review |
+| [Ternary](https://ternary.app) | FinOps and sustainability | commercial | active |
+| [VegaCloud Inform](https://www.vegacloud.io/products/inform) | FinOps and sustainability | commercial | active |
 | [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
-| [Xosphere](https://www.xosphere.io) | FinOps and sustainability | unknown | needs-review |
+| [Xosphere](https://www.xosphere.io) | FinOps and sustainability | commercial | active |
 | [Yotascale](https://www.yotascale.com) | FinOps and sustainability | unknown | needs-review |
-| [Zesty](https://zesty.co) | FinOps and sustainability | unknown | needs-review |
+| [Zesty](https://zesty.co) | FinOps and sustainability | commercial | active |
 
 [Back to catalogue](../../README.md)
