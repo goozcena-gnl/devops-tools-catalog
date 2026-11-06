@@ -315,7 +315,7 @@ Enterprise key-management server backed by a FIPS-validated hardware security mo
 
 - Cloud KMS or software-based solutions meet your compliance needs.
 
-[Official site](https://www.futurex.com/products/key-management-server/kmes-series-3) · [Documentation](https://www.futurex.com/resources)
+[Official site](https://www.futurex.com/products/key-management-server/kmes-series-3) · [Documentation](https://www.futurex.com/resource-library)
 
 ### HashiCorp Boundary
 
