@@ -228,7 +228,7 @@
 | [kubectl-browse-pvc](https://github.com/clbx/kubectl-browse-pvc) | Kubernetes distributions and operations | oss | needs-review |
 | [kubectl-df-pv](https://github.com/yashbhutwala/kubectl-df-pv) | Kubernetes distributions and operations | oss | needs-review |
 | [kubectl-explore](https://github.com/keisku/kubectl-explore) | Kubernetes distributions and operations | oss | needs-review |
-| [kubectl-klock](https://software.opensuse.org/package/kubectl-klock) | Kubernetes distributions and operations | oss | needs-review |
+| [kubectl-klock](https://github.com/applejag/kubectl-klock) | Kubernetes distributions and operations | oss | needs-review |
 | [kubectx + kubens](https://github.com/ahmetb/kubectx) | Kubernetes distributions and operations | oss | active |
 | [Kubedock](https://github.com/joyrex2001/kubedock) | Kubernetes distributions and operations | oss | needs-review |
 | [KubeEdge](https://kubeedge.io) | Kubernetes distributions and operations | oss | active |
@@ -238,7 +238,7 @@
 | [KubeHatch](https://vclusterlabs-experiments.github.io/kubehatch/) | Kubernetes distributions and operations | oss | active |
 | [KubeInvaders](https://github.com/lucky-sideburn/kubeinvaders) | Chaos and performance engineering | oss | active |
 | [KubeLinter](https://docs.kubelinter.io/) | Kubernetes distributions and operations, Application and cloud security | oss | active |
-| [Kubently](https://kubently.io) | Kubernetes networking, storage and add-ons | oss | active |
+| [Kubently](https://github.com/kubently/kubently) | Kubernetes networking, storage and add-ons | oss | active |
 | [KubePlumber](https://github.com/David-VTUK/KubePlumber) | Kubernetes distributions and operations | oss | active |
 | [Kubernetes](https://kubernetes.io) | Kubernetes distributions and operations | oss | active |
 | [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) | Kubernetes networking, storage and add-ons | oss | active |

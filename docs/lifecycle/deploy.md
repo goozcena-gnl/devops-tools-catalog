@@ -321,7 +321,7 @@
 - [kubectl-browse-pvc](https://github.com/clbx/kubectl-browse-pvc) — Browse Kubernetes PVCs from the CLI.
 - [kubectl-df-pv](https://github.com/yashbhutwala/kubectl-df-pv) — Show disk usage for Kubernetes persistent volumes.
 - [kubectl-explore](https://github.com/keisku/kubectl-explore) — Interactive kubectl resource explorer.
-- [kubectl-klock](https://software.opensuse.org/package/kubectl-klock) — Lock resources in Kubernetes clusters.
+- [kubectl-klock](https://github.com/applejag/kubectl-klock) — Stream and display Kubernetes resource watch updates in a readable terminal view.
 - [kubectx + kubens](https://github.com/ahmetb/kubectx) — Companion kubectx and kubens CLIs for switching kubectl contexts and namespaces, with shell completion, optional fzf selection and context-shell conveniences.
 - [Kubedock](https://github.com/joyrex2001/kubedock) — Minimal Docker API implementation that orchestrates containers on Kubernetes clusters.
 - [KubeEdge](https://kubeedge.io) — Kubernetes-native edge computing framework connecting cloud control planes with edge devices and nodes.
@@ -333,7 +333,7 @@
 - [KubeKey](https://github.com/kubesphere/kubekey) — Command-line tool for installing Kubernetes, KubeSphere, and related cluster add-ons across Linux hosts.
 - [KubeLinter](https://docs.kubelinter.io/) — Static analysis tool for Kubernetes YAML and Helm manifests that detects security and reliability anti-patterns.
 - [KubeMarine](https://github.com/Netcracker/KubeMarine) — Python-based automation framework for deploying and maintaining Kubernetes clusters on Linux hosts.
-- [Kubently](https://kubently.io) — Apache-licensed Kubernetes diagnosis engine with full self-hosted operation and an optional managed cloud service.
+- [Kubently](https://github.com/kubently/kubently) — Apache-licensed Kubernetes diagnosis engine with full self-hosted operation and an optional managed cloud service.
 - [KubePlumber](https://github.com/David-VTUK/KubePlumber) — Kubernetes connectivity diagnostic utility that creates test workloads for internal/external DNS, inter-node HTTP and bandwidth checks and displays results in a web UI.
 - [Kubernetes](https://kubernetes.io) — CNCF-hosted orchestration system for deploying, scaling, and managing containerized applications.
 - [Kubernetes Autoscaler](https://github.com/kubernetes/autoscaler) — Repository of Kubernetes autoscaling components including Cluster Autoscaler, Vertical Pod Autoscaler and Addon Resizer; Horizontal Pod Autoscaler is a separate Kubernetes-core API and controller.
