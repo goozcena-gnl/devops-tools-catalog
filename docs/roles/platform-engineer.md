@@ -203,7 +203,7 @@
 | [git-sync](https://github.com/kubernetes/git-sync) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [GitHub Copilot](https://github.com/features/copilot) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [GitHub MCP Server](https://github.com/github/github-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
-| [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
+| [GitLab MCP Server](https://docs.gitlab.com/user/model_context_protocol/mcp_server/) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [GitOps Bridge](https://github.com/gitops-bridge-dev/gitops-bridge) | CD, GitOps, release and promotion | oss | needs-review |
 | [gitsign (sigstore)](https://github.com/sigstore/gitsign) | Emerging and experimental tools | oss | needs-review |
 | [glances](https://nicolargo.github.io/glances) | Emerging and experimental tools | oss | needs-review |
