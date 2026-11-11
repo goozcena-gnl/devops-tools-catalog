@@ -237,7 +237,7 @@
 - [git-sync](https://github.com/kubernetes/git-sync) — Sidecar app that clones a Git repository and keeps it synchronized with upstream.
 - [GitHub Copilot](https://github.com/features/copilot) — GitHub's managed AI coding assistant and agent offerings with account- and feature-dependent plans, usage quotas and data policies.
 - [GitHub MCP Server](https://github.com/github/github-mcp-server) — Official GitHub MCP server exposing repository, issue and pull-request operations through local or GitHub-hosted connections.
-- [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) — GitLab's documented MCP server interface for authorized GitLab-project tools; editions, account entitlements, OAuth scopes and instance configuration must be checked.
+- [GitLab MCP Server](https://docs.gitlab.com/user/model_context_protocol/mcp_server/) — GitLab's documented MCP server interface for authorized GitLab-project tools; editions, account entitlements, OAuth scopes and instance configuration must be checked.
 - [GlitchTip](https://glitchtip.com/) — Sentry-compatible error tracking and performance monitoring platform with self-hosted and managed offerings.
 - [Go](https://go.dev/) — Compiled language and toolchain used to build portable infrastructure services and command-line tools.
 - [Go by Example](https://gobyexample.com) — Hands-on Go programming snippets and examples.

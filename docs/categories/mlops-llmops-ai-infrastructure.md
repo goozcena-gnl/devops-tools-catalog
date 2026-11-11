@@ -581,7 +581,7 @@ GitLab's documented MCP server interface for authorized GitLab-project tools; ed
 
 - You cannot validate GitLab tier or instance availability, client permissions, and the distinction from GitLab Duo MCP clients.
 
-[Official site](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) · [Documentation](https://docs.gitlab.com/user/model_context_protocol/mcp_server/)
+[Official site](https://docs.gitlab.com/user/model_context_protocol/mcp_server/) · [Documentation](https://docs.gitlab.com/user/model_context_protocol/mcp_server/)
 
 ### Grafana MCP
 
