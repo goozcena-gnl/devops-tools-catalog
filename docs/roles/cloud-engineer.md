@@ -120,7 +120,7 @@
 | [genai-agentos](https://github.com/genai-works-org/genai-agentos) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [GitHub Copilot](https://github.com/features/copilot) | MLOps, LLMOps and AI infrastructure | commercial | active |
 | [GitHub MCP Server](https://github.com/github/github-mcp-server) | MLOps, LLMOps and AI infrastructure | oss | active |
-| [GitLab MCP Server](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
+| [GitLab MCP Server](https://docs.gitlab.com/user/model_context_protocol/mcp_server/) | MLOps, LLMOps and AI infrastructure | documentation | needs-review |
 | [Google Cloud Platform](https://cloud.google.com) | Cloud platforms and cloud management | commercial | active |
 | [Google Cloud Run](https://cloud.google.com/run) | Serverless, edge and WebAssembly | commercial | active |
 | [Grafana MCP](https://github.com/grafana/mcp-grafana) | MLOps, LLMOps and AI infrastructure | oss | active |

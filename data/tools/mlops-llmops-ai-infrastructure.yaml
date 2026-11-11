@@ -1038,7 +1038,7 @@
 - id: gitlab-mcp-server
   name: GitLab MCP Server
   summary: "GitLab's documented MCP server interface for authorized GitLab-project tools; editions, account entitlements, OAuth scopes and instance configuration must be checked."
-  official_url: https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server
+  official_url: https://docs.gitlab.com/user/model_context_protocol/mcp_server/
   categories:
   - mlops-llmops-ai-infrastructure
   subcategories:
