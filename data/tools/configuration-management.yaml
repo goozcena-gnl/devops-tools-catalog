@@ -72,7 +72,7 @@
   needs_review: false
 - id: cfengine
   name: CFEngine
-  summary: Policy-based configuration management; community + commercial editions.
+  summary: Policy-driven convergent configuration management with GPL-licensed Community components and separately licensed Enterprise features.
   official_url: https://cfengine.com
   repository_url: https://github.com/cfengine/core
   categories:
@@ -89,17 +89,25 @@
   - You need an ultra-lightweight agent with convergent policy enforcement at massive scale.
   avoid_when:
   - Community size and ecosystem matter more than raw performance.
-  deployment_models: []
+  deployment_models:
+  - self-hosted
   license_model: open-core
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-12'
+  documentation_url: https://docs.cfengine.com/
+  repository_archived: false
+  commercial_offering: true
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L70
   - legacy:devopstools_final.md#L195
-  needs_review: true
+  - https://cfengine.com/community-vs-enterprise-comparison/
+  - https://github.com/cfengine/core
+  - https://github.com/cfengine/core/blob/master/LICENSE
+  - https://github.com/cfengine/core/blob/master/README.md
+  needs_review: false
 - id: chef
   name: Chef Infra
   summary: Commercially distributed infrastructure configuration-management tooling with separately Apache-licensed
@@ -180,7 +188,7 @@
   needs_review: false
 - id: etckeeper
   name: etckeeper
-  summary: Version control for `/etc` (tracks config changes in Git).
+  summary: Tracks /etc configuration and metadata in a version-control system, with Git as the default.
   official_url: https://etckeeper.branchable.com
   repository_url: https://git.joeyh.name/index.cgi/etckeeper.git
   categories:
@@ -203,10 +211,12 @@
   status: needs-review
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-12'
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L76
   - legacy:devopstools_final.md#L198
+  - https://etckeeper.branchable.com/README/
+  - https://etckeeper.branchable.com/recentchanges/
   needs_review: true
 - id: juju
   name: Juju
@@ -281,7 +291,7 @@
   needs_review: false
 - id: kolla-ansible
   name: Kolla-Ansible
-  summary: Ansible playbooks for deploying OpenStack.
+  summary: Deploys and operates containerized OpenStack services with Ansible playbooks and Kolla images.
   official_url: https://docs.openstack.org/kolla-ansible/latest
   repository_url: https://github.com/openstack/kolla-ansible
   categories:
@@ -298,17 +308,25 @@
   - You're deploying OpenStack and want containerized services via Ansible.
   avoid_when:
   - You're not running OpenStack.
-  deployment_models: []
+  deployment_models:
+  - self-hosted
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-12'
+  documentation_url: https://docs.openstack.org/kolla-ansible/latest/
+  repository_archived: false
+  license_spdx: Apache-2.0
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L80
   - legacy:devopstools_final.md#L200
-  needs_review: true
+  - https://opendev.org/openstack/kolla-ansible
+  - https://docs.openstack.org/kolla-ansible/latest/
+  - https://releases.openstack.org/teams/kolla.html
+  - https://github.com/openstack/kolla-ansible/blob/master/LICENSE
+  needs_review: false
 - id: manageengine-network-configuration-manager
   name: ManageEngine Network Configuration Manager
   summary: Multi-vendor network configuration management with backups, change tracking, automation and
@@ -354,7 +372,7 @@
   commercial_offering: true
 - id: mitogen-for-ansible
   name: Mitogen for Ansible
-  summary: Ansible accelerator to speed up module execution and reduce SSH overhead.
+  summary: Python-based acceleration and connection layer for Ansible, using persistent remote interpreters to reduce execution overhead.
   official_url: https://mitogen.networkgenomics.com/ansible_detailed.html
   repository_url: https://github.com/mitogen-hq/mitogen
   categories:
@@ -370,22 +388,30 @@
   use_when:
   - Ansible playbook execution is slow due to SSH overhead on many hosts.
   avoid_when:
-  - You're on the latest Ansible versions where compatibility may lag.
-  deployment_models: []
+  - You need compatibility with future Ansible releases without verification; third-party strategy plugins face deprecation.
+  deployment_models:
+  - self-hosted
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-12'
+  documentation_url: https://mitogen.networkgenomics.com/ansible_detailed.html
+  repository_archived: false
+  license_spdx: BSD-3-Clause
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L82
   - legacy:devopstools_final.md#L201
-  needs_review: true
+  - https://mitogen.networkgenomics.com/ansible_detailed.html
+  - https://mitogen.networkgenomics.com/changelog.html
+  - https://github.com/mitogen-hq/mitogen/blob/master/LICENSE
+  - https://github.com/mitogen-hq/mitogen/releases
+  needs_review: false
 - id: puppet
   name: Puppet
-  summary: Configuration management and automation; open source core with enterprise features.
-  official_url: https://puppet.com
+  summary: Declarative configuration management with Apache-licensed open-source Puppet and separately licensed Core and Enterprise offerings.
+  official_url: https://www.puppet.com/
   repository_url: https://github.com/puppetlabs/puppet
   categories:
   - configuration-management
@@ -401,20 +427,29 @@
   - You need a mature, agent-based system with strong state enforcement and reporting.
   avoid_when:
   - You want agentless simplicity or your team doesn't want to learn Puppet DSL.
-  deployment_models: []
+  deployment_models:
+  - self-hosted
   license_model: open-core
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-12'
+  documentation_url: https://help.puppet.com/
+  repository_archived: false
+  license_spdx: Apache-2.0
+  commercial_offering: true
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L84
   - legacy:devopstools_final.md#L202
-  needs_review: true
+  - https://github.com/puppetlabs/puppet/blob/main/LICENSE
+  - https://github.com/puppetlabs/puppet
+  - https://www.puppet.com/resources/puppet-editions-guide
+  - https://www.puppet.com/pricing
+  needs_review: false
 - id: red-hat-ansible-automation-platform
   name: Red Hat Ansible Automation Platform
-  summary: Enterprise automation platform built around Ansible.
+  summary: Subscription-based Red Hat enterprise automation platform with self-managed and managed deployment options.
   official_url: https://www.redhat.com/en/technologies/management/ansible
   categories:
   - configuration-management
@@ -430,20 +465,27 @@
   - You need enterprise support, RBAC, and a centralized dashboard for Ansible at scale.
   avoid_when:
   - Community Ansible and AWX cover your needs.
-  deployment_models: []
-  license_model: unknown
+  deployment_models:
+  - self-hosted
+  - hosted-saas
+  license_model: commercial
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-12'
+  documentation_url: https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/
+  commercial_offering: true
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L86
   - legacy:devopstools_final.md#L203
-  needs_review: true
+  - https://www.redhat.com/en/technologies/management/ansible/pricing
+  - https://www.redhat.com/en/technologies/management/ansible/ansible-deployment-options
+  - https://access.redhat.com/articles/6057451
+  needs_review: false
 - id: rudder
   name: Rudder
-  summary: Continuous configuration and automation platform.
+  summary: Continuous configuration and compliance platform with GPL-licensed Rudder Core and separately licensed enterprise plugins.
   official_url: https://www.rudder.io
   repository_url: https://github.com/Normation/rudder
   categories:
@@ -460,20 +502,28 @@
   - You want continuous compliance with a web UI and audit trails out of the box.
   avoid_when:
   - Your team prefers code-first workflows over GUI-driven management.
-  deployment_models: []
+  deployment_models:
+  - self-hosted
   license_model: open-core
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-12'
+  documentation_url: https://docs.rudder.io/
+  repository_archived: false
+  commercial_offering: true
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L88
   - legacy:devopstools_final.md#L204
-  needs_review: true
+  - https://github.com/Normation/rudder/blob/master/README.md
+  - https://github.com/Normation/rudder/blob/master/LICENSE
+  - https://github.com/Normation/rudder/blob/master/LICENSE_EXCEPTION
+  - https://docs.rudder.io/reference/9.1/plugins/index.html
+  needs_review: false
 - id: salt
   name: Salt
-  summary: Event-driven automation and configuration management.
+  summary: Open-source event-driven remote execution, configuration management and infrastructure automation.
   official_url: https://saltproject.io
   repository_url: https://github.com/saltstack/salt
   categories:
@@ -490,17 +540,24 @@
   - You need event-driven, highly scalable remote execution and config management.
   avoid_when:
   - The learning curve for states/pillars/grains feels excessive for your team size.
-  deployment_models: []
+  deployment_models:
+  - self-hosted
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-12'
+  documentation_url: https://docs.saltproject.io/
+  repository_archived: false
+  license_spdx: Apache-2.0
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L90
   - legacy:devopstools_final.md#L205
-  needs_review: true
+  - https://github.com/saltstack/salt
+  - https://github.com/saltstack/salt/blob/master/LICENSE
+  - https://docs.saltproject.io/en/master/topics/about_salt_project.html
+  needs_review: false
 - id: uyuni
   name: Uyuni
   summary: Open-source systems management platform for software channels, configuration, patching, and

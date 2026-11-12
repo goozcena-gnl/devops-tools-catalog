@@ -86,7 +86,7 @@
 - [CasaVue](https://casavue.app) — Open-source progressive web application that indexes Kubernetes Ingress resources into a customizable application dashboard.
 - [Ceph](https://ceph.io/en) — Distributed storage system for object, block, and file storage.
 - [cert-manager](https://cert-manager.io) — Kubernetes X.509 certificate-management controller issuing and renewing certificates through configured issuers such as ACME and external CAs; it is distinct from Let's Encrypt, certbot and general secrets backends.
-- [CFEngine](https://cfengine.com) — Policy-based configuration management; community + commercial editions.
+- [CFEngine](https://cfengine.com) — Policy-driven convergent configuration management with GPL-licensed Community components and separately licensed Enterprise features.
 - [Chef Infra](https://www.chef.io/products/chef-infra) — Commercially distributed infrastructure configuration-management tooling with separately Apache-licensed upstream source.
 - [Chisel Operator](https://chisel.fyralabs.com) — Kubernetes operator for exposing LoadBalancer services via Chisel SSH tunnels and external exit nodes.
 - [Cilium](https://cilium.io) — EBPF-based networking, observability, and security for Kubernetes.
@@ -158,7 +158,7 @@
 - [Envoy](https://www.envoyproxy.io) — Cloud-native L4/L7 proxy used for edge routing, service networking, and observability-aware traffic control.
 - [Envoy Gateway](https://gateway.envoyproxy.io) — Application-gateway control plane that provisions and configures Envoy Proxy using Kubernetes Gateway API resources; Envoy Proxy supplies the traffic dataplane and Gateway API defines the configuration standard.
 - [etcd](https://etcd.io) — Distributed, reliable key-value store used as the primary data store for Kubernetes.
-- [etckeeper](https://etckeeper.branchable.com) — Version control for `/etc` (tracks config changes in Git).
+- [etckeeper](https://etckeeper.branchable.com) — Tracks /etc configuration and metadata in a version-control system, with Git as the default.
 - [Eureka](https://github.com/Netflix/eureka) — Service registry supporting client-side discovery and failover.
 - [Evidently](https://www.evidentlyai.com/) — Apache-2.0 Python framework for data quality, drift monitoring and ML/LLM evaluations; separate Evidently Cloud offers managed capabilities.
 - [Exoscale SKS](https://www.exoscale.com/sks/) — Exoscale managed Kubernetes service with managed control planes and cloud infrastructure integration.
@@ -285,7 +285,7 @@
 - [Kloak](https://getkloak.io/) — eBPF-based Kubernetes runtime proxy that can keep application secrets out of workload processes.
 - [Knative](https://knative.dev/) — Kubernetes-based platform APIs for deploying, scaling, and delivering serverless workloads and events.
 - [Kogaro](https://github.com/topiaruss/kogaro) — Kubernetes configuration hygiene agent that catches silent failures and misconfigurations before they become incidents.
-- [Kolla-Ansible](https://docs.openstack.org/kolla-ansible/latest) — Ansible playbooks for deploying OpenStack.
+- [Kolla-Ansible](https://docs.openstack.org/kolla-ansible/latest) — Deploys and operates containerized OpenStack services with Ansible playbooks and Kolla images.
 - [Komodo](https://komo.do/) — Self-hosted platform for building, deploying, and operating containerized workloads across servers.
 - [Kompose](https://kompose.io) — Convert Docker Compose to Kubernetes.
 - [Kong Gateway](https://developer.konghq.com/gateway/install/) — API gateway with an open-source core and commercial management and enterprise capabilities.
@@ -405,7 +405,7 @@
 - [Milvus](https://milvus.io) — Distributed vector database for large-scale similarity search and retrieval workloads.
 - [MiniBlue](https://miniblue.io) — Local Azure emulator that emulates 26+ Azure services in a single binary for development and testing without an Azure account.
 - [Minikube](https://minikube.sigs.k8s.io/docs) — Local Kubernetes development environment.
-- [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) — Ansible accelerator to speed up module execution and reduce SSH overhead.
+- [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) — Python-based acceleration and connection layer for Ansible, using persistent remote interpreters to reduce execution overhead.
 - [MLflow](https://mlflow.org) — Apache-2.0 open-source AI engineering platform for ML experiments, model lifecycle, LLM evaluation and tracing; hosted offerings are separate.
 - [MOCO](https://cybozu-go.github.io/moco) — MySQL Operator for Kubernetes by Cybozu.
 - [Model Express](https://github.com/ai-dynamo/modelexpress) — Rust service that stages model data near inference systems to reduce startup time.
@@ -485,7 +485,7 @@
 - [Proxmox Virtual Environment (VE)](https://github.com/proxmox) — Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
 - [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) — Proxmox optimization utilities.
 - [Pulumi](https://www.pulumi.com) — IaC using real programming languages.
-- [Puppet](https://puppet.com) — Configuration management and automation; open source core with enterprise features.
+- [Puppet](https://www.puppet.com/) — Declarative configuration management with Apache-licensed open-source Puppet and separately licensed Core and Enterprise offerings.
 - [pv-migrate](https://github.com/utkuozdemir/pv-migrate) — CLI tool for migrating data between Kubernetes Persistent Volumes.
 - [Qdrant](https://qdrant.tech/) — Vector database and similarity-search engine available for self-hosted and managed deployments.
 - [Qovery](https://www.qovery.com) — Commercial Kubernetes control-plane platform with a GPL-licensed orchestration engine that operates workloads and infrastructure in customer cloud accounts.
@@ -496,7 +496,7 @@
 - [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) — Kubernetes-in-Kubernetes control-plane tooling for shared or virtual k3s guest clusters.
 - [Rancher Manager](https://rancher.com) — SUSE Rancher open-source Kubernetes cluster management platform for provisioning, importing and governing clusters; Rancher Prime adds commercial support and distribution services.
 - [Ray](https://www.ray.io/) — Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
-- [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) — Enterprise automation platform built around Ansible.
+- [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) — Subscription-based Red Hat enterprise automation platform with self-managed and managed deployment options.
 - [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) — Commercial Red Hat application-platform family with self-managed editions and managed cloud services; OKD is a separate upstream community distribution.
 - [Redis](https://redis.io) — In-memory data structure store, used as a database, cache, and message broker. **Licensing varies by version:** Redis ≤7.2 uses BSD (OSS); Redis CE 7.4–7.8 uses RSAL/SSPL (source-available); Redis 8+ uses tri-license (AGPL option available).
 - [Redis Operator](https://redis-operator.opstree.dev) — Kubernetes operator for provisioning and managing Redis clusters.
@@ -507,12 +507,12 @@
 - [RKE2](https://docs.rke2.io) — SUSE Rancher Kubernetes Engine 2, an Apache-licensed Kubernetes distribution focused on security and compliance, with documented CIS hardening and FIPS component boundaries.
 - [Rook](https://rook.io) — Storage orchestrator for Kubernetes.
 - [RootlessKit](https://github.com/rootless-containers/rootlesskit) — Rootless container toolkit.
-- [Rudder](https://www.rudder.io) — Continuous configuration and automation platform.
+- [Rudder](https://www.rudder.io) — Continuous configuration and compliance platform with GPL-licensed Rudder Core and separately licensed enterprise plugins.
 - [runc](https://github.com/opencontainers/runc) — OCI runtime for containers.
 - [RustFS](https://rustfs.com) — S3-compatible object storage system implemented in Rust.
 - [Rūsternetes](https://calfonso.github.io/rusternetes) — Educational reimplementation of Kubernetes in Rust.
 - [Sablier](https://sablierapp.dev/) — Workload scaler that starts containerized services on demand and idles them after inactivity.
-- [Salt](https://saltproject.io) — Event-driven automation and configuration management.
+- [Salt](https://saltproject.io) — Open-source event-driven remote execution, configuration management and infrastructure automation.
 - [Scaleway](https://www.scaleway.com/en/) — Commercial European cloud and AI platform providing compute, storage, networking, managed databases, Kubernetes, serverless, and bare-metal services.
 - [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) — Scaleway managed Kubernetes service for clusters running on Scaleway compute, network, and storage resources.
 - [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) — Scaleway managed Kubernetes control plane for clusters whose nodes can span cloud and on-premises infrastructure.

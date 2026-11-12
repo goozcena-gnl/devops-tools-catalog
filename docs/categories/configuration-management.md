@@ -67,9 +67,9 @@ Infrastructure orchestration application for authoring and running resumable mul
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Policy-based configuration management; community + commercial editions.
+Policy-driven convergent configuration management with GPL-licensed Community components and separately licensed Enterprise features.
 
 **Use when**
 
@@ -79,7 +79,7 @@ Policy-based configuration management; community + commercial editions.
 
 - Community size and ecosystem matter more than raw performance.
 
-[Official site](https://cfengine.com) · [Source repository](https://github.com/cfengine/core)
+[Official site](https://cfengine.com) · [Documentation](https://docs.cfengine.com/) · [Source repository](https://github.com/cfengine/core)
 
 ### Chef Infra
 
@@ -126,7 +126,7 @@ Preview-stage commercial configuration control plane for modeling, governing, an
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Version control for `/etc` (tracks config changes in Git).
+Tracks /etc configuration and metadata in a version-control system, with Git as the default.
 
 **Use when**
 
@@ -181,9 +181,9 @@ Foreman plugin for repository synchronization, content views, lifecycle environm
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Ansible playbooks for deploying OpenStack.
+Deploys and operates containerized OpenStack services with Ansible playbooks and Kolla images.
 
 **Use when**
 
@@ -193,7 +193,7 @@ Ansible playbooks for deploying OpenStack.
 
 - You're not running OpenStack.
 
-[Official site](https://docs.openstack.org/kolla-ansible/latest) · [Source repository](https://github.com/openstack/kolla-ansible)
+[Official site](https://docs.openstack.org/kolla-ansible/latest) · [Documentation](https://docs.openstack.org/kolla-ansible/latest/) · [Source repository](https://github.com/openstack/kolla-ansible)
 
 ### Kubespray
 
@@ -238,9 +238,9 @@ Multi-vendor network configuration management with backups, change tracking, aut
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Ansible accelerator to speed up module execution and reduce SSH overhead.
+Python-based acceleration and connection layer for Ansible, using persistent remote interpreters to reduce execution overhead.
 
 **Use when**
 
@@ -248,18 +248,18 @@ Ansible accelerator to speed up module execution and reduce SSH overhead.
 
 **Consider alternatives when**
 
-- You're on the latest Ansible versions where compatibility may lag.
+- You need compatibility with future Ansible releases without verification; third-party strategy plugins face deprecation.
 
-[Official site](https://mitogen.networkgenomics.com/ansible_detailed.html) · [Source repository](https://github.com/mitogen-hq/mitogen)
+[Official site](https://mitogen.networkgenomics.com/ansible_detailed.html) · [Documentation](https://mitogen.networkgenomics.com/ansible_detailed.html) · [Source repository](https://github.com/mitogen-hq/mitogen)
 
 ### Puppet
 
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Configuration management and automation; open source core with enterprise features.
+Declarative configuration management with Apache-licensed open-source Puppet and separately licensed Core and Enterprise offerings.
 
 **Use when**
 
@@ -269,16 +269,16 @@ Configuration management and automation; open source core with enterprise featur
 
 - You want agentless simplicity or your team doesn't want to learn Puppet DSL.
 
-[Official site](https://puppet.com) · [Source repository](https://github.com/puppetlabs/puppet)
+[Official site](https://www.puppet.com/) · [Documentation](https://help.puppet.com/) · [Source repository](https://github.com/puppetlabs/puppet)
 
 ### Red Hat Ansible Automation Platform
 
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
-**Status:** Needs Review
+**Model:** Commercial<br>
+**Status:** Active
 
-Enterprise automation platform built around Ansible.
+Subscription-based Red Hat enterprise automation platform with self-managed and managed deployment options.
 
 **Use when**
 
@@ -288,16 +288,16 @@ Enterprise automation platform built around Ansible.
 
 - Community Ansible and AWX cover your needs.
 
-[Official site](https://www.redhat.com/en/technologies/management/ansible)
+[Official site](https://www.redhat.com/en/technologies/management/ansible) · [Documentation](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/)
 
 ### Rudder
 
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Open Core<br>
-**Status:** Needs Review
+**Status:** Active
 
-Continuous configuration and automation platform.
+Continuous configuration and compliance platform with GPL-licensed Rudder Core and separately licensed enterprise plugins.
 
 **Use when**
 
@@ -307,16 +307,16 @@ Continuous configuration and automation platform.
 
 - Your team prefers code-first workflows over GUI-driven management.
 
-[Official site](https://www.rudder.io) · [Source repository](https://github.com/Normation/rudder)
+[Official site](https://www.rudder.io) · [Documentation](https://docs.rudder.io/) · [Source repository](https://github.com/Normation/rudder)
 
 ### Salt
 
 **Categories:** Configuration management<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Event-driven automation and configuration management.
+Open-source event-driven remote execution, configuration management and infrastructure automation.
 
 **Use when**
 
@@ -326,7 +326,7 @@ Event-driven automation and configuration management.
 
 - The learning curve for states/pillars/grains feels excessive for your team size.
 
-[Official site](https://saltproject.io) · [Source repository](https://github.com/saltstack/salt)
+[Official site](https://saltproject.io) · [Documentation](https://docs.saltproject.io/) · [Source repository](https://github.com/saltstack/salt)
 
 ### Uyuni
 
