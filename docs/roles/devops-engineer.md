@@ -518,8 +518,8 @@
 | [Probot DCO](https://probot.github.io/apps/dco) | CI, build and testing | oss | needs-review |
 | [ProGet](https://inedo.com/proget) | Artifact and package management | unknown | needs-review |
 | [Prometheus](https://prometheus.io) | Monitoring, metrics, logs and tracing | oss | active |
-| [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) | Virtualization, bare metal and homelab | unknown | needs-review |
-| [Proxmox Virtual Environment (VE)](https://github.com/proxmox) | Virtualization, bare metal and homelab | open-core | needs-review |
+| [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Proxmox Virtual Environment (VE)](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) | Virtualization, bare metal and homelab | oss | needs-review |
 | [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) | Virtualization, bare metal and homelab | oss | needs-review |
 | [PSScriptAnalyzer](https://www.powershellgallery.com/packages/PSScriptAnalyzer/) | Developer experience and local environments, CI, build and testing | oss | active |
 | [Pulp](https://pulpproject.org/) | Artifact and package management | oss | active |
@@ -662,7 +662,7 @@
 | [Udemy CKA Course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests) | Documentation, learning and career resources | documentation | needs-review |
 | [Uncloud](https://uncloud.run) | CD, GitOps, release and promotion | oss | active |
 | [Understand Anything](https://understand-anything.com) | Developer experience and local environments | unknown | needs-review |
-| [Unraid](https://unraid.net) | Virtualization, bare metal and homelab | unknown | needs-review |
+| [Unraid](https://unraid.net) | Virtualization, bare metal and homelab | commercial | needs-review |
 | [Uptime Kuma](https://uptime.kuma.pet) | Monitoring, metrics, logs and tracing | oss | active |
 | [UptimeRobot](https://uptimerobot.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [UrBackup](https://www.urbackup.org) | Emerging and experimental tools | oss | needs-review |

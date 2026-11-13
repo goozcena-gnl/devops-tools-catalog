@@ -307,7 +307,7 @@
 - [IBM Guardium Key Lifecycle Manager](https://www.ibm.com/products/guardium-key-lifecycle-manager) — Licensed enterprise software for centralized encryption-key serving, storage, rotation, and lifecycle management.
 - [Icinga](https://icinga.com) — Icinga 2 monitors hosts and services with checks, notifications, an API and distributed zones. Releases from 2.16.0 use GPL-3.0-or-later; earlier releases and existing file-level grants retain GPL-2.0-or-later. Web, DB and Director are separate components.
 - [Incus](https://linuxcontainers.org/incus/) — Modern system container and VM manager.
-- [Incus OS](https://linuxcontainers.org/incus-os) — Operating system images and distribution tooling for Incus environments.
+- [Incus OS](https://linuxcontainers.org/incus-os) — Immutable, API-managed host OS dedicated to Incus, with UEFI Secure Boot, TPM 2.0, and atomic A/B updates.
 - [InfluxData](https://www.influxdata.com) — InfluxData offers InfluxDB 3 Core under MIT or Apache-2.0 and separate commercial Enterprise and Cloud products. Version 3 supports SQL and InfluxQL without official Flux support; older v1/v2 products have different APIs and query-language support.
 - [InfraHQ](https://infrahq.com) — Identity-aware access management / access proxy for infrastructure.
 - [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) — Translate Ingress and provider-specific resources into Gateway API manifests.
@@ -470,8 +470,8 @@
 - [Lazydocker](https://github.com/jesseduffield/lazydocker) — Terminal UI for Docker and Docker Compose.
 - [Lens](https://lenshq.io) — Kubernetes IDE (the former open-source core has been retired; current product is proprietary).
 - [lfk](https://github.com/janosmiko/lfk) — Lightning-fast, keyboard-focused TUI for navigating and managing Kubernetes clusters with a three-column Miller columns layout and owner-based resource hierarchy.
-- [libvirt](https://libvirt.org) — API/daemon for managing virtualization platforms.
-- [Lima](https://lima-vm.io) — Linux VMs on macOS (and more).
+- [libvirt](https://libvirt.org) — C library, API, and daemons for managing virtualization through drivers such as QEMU/KVM and Xen.
+- [Lima](https://lima-vm.io) — Runs Linux virtual machines on macOS and Linux hosts for local container and development workflows.
 - [Linkerd](https://linkerd.io) — Lightweight service mesh for Kubernetes.
 - [Linnix](https://github.com/linnix-os/linnix) — EBPF and PSI-based observability for pinpointing processes and pods causing Linux stalls and incidents.
 - [LINSTOR](https://linbit.com/linstor) — Distributed storage management (DRBD-based) with community and enterprise support.
@@ -611,7 +611,7 @@
 - [Polykube](https://github.com/Kismet-Engineering/polykube) — Experimental GitOps-driven operators for portable workloads across Kubernetes clusters.
 - [Popeye](https://popeyecli.io) — Read-only Kubernetes live-cluster linter for resource hygiene and configuration issues, with optional metrics-server utilization checks and configurable reports.
 - [Port](https://www.port.io/) — Internal developer portal and service catalog with automations/workflows.
-- [Portainer](https://www.portainer.io) — Container management platform.
+- [Portainer](https://www.portainer.io) — Self-hosted Docker and Kubernetes management with an open-source Community Edition and a separately licensed Business Edition.
 - [Portworx](https://portworx.com) — Kubernetes data services platform.
 - [PostgreSQL](https://www.postgresql.org) — Extensible open-source relational database with strong transactional, indexing, and SQL capabilities.
 - [PowerShell](https://learn.microsoft.com/en-us/powershell/) — Cross-platform shell and scripting runtime for object-based system automation.
@@ -623,8 +623,8 @@
 - [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) — Metrics cache that accepts pushed metrics from short-lived and batch jobs for Prometheus scraping.
 - [Promptfoo](https://www.promptfoo.dev) — MIT-licensed CLI for LLM regression evaluation and red-team testing in CI; generation, grading, sharing and telemetry may use external services.
 - [Prowler](https://prowler.com) — Cloud security posture and compliance assessment platform for AWS, Azure, Google Cloud, and Kubernetes.
-- [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) — Proxmox datacenter management product.
-- [Proxmox Virtual Environment (VE)](https://github.com/proxmox) — Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
+- [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) — Centralizes inventory, monitoring, and operations across independent Proxmox VE and Proxmox Backup Server remotes.
+- [Proxmox Virtual Environment (VE)](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) — Open-source server virtualization platform with a web UI for KVM VMs and LXC containers. Optional subscriptions provide enterprise repository access and support.
 - [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) — Proxmox optimization utilities.
 - [Pulse](https://pulserelay.pro) — Self-hosted infrastructure monitoring workspace for Proxmox, Docker, Kubernetes, TrueNAS, hosts, and alerts, with a separate commercial Pulse Pro edition.
 - [Pumba](https://github.com/alexei-led/pumba) — Apache-2.0 CLI for Linux-container disruption, network emulation and resource stress through Docker, containerd and Podman runtime APIs.
@@ -640,7 +640,7 @@
 - [Radar](https://radarhq.io/) — Kubernetes inspection interface with resource topology, events, GitOps information, and an MCP surface.
 - [Railway](https://railway.com/) — Managed application platform for building, deploying, networking, scaling, and observing services from source repositories or containers.
 - [Rakazo](https://rakazo.com/) — Self-hosted agent workspace with sandboxed browser and shell sessions, routines, approvals, and audit history.
-- [Rancher Desktop](https://rancherdesktop.io) — Desktop Kubernetes and container management.
+- [Rancher Desktop](https://rancherdesktop.io) — Local container management on Windows, macOS, and Linux, with optional Kubernetes.
 - [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) — Kubernetes-in-Kubernetes control-plane tooling for shared or virtual k3s guest clusters.
 - [Rancher Manager](https://rancher.com) — SUSE Rancher open-source Kubernetes cluster management platform for provisioning, importing and governing clusters; Rancher Prime adds commercial support and distribution services.
 - [Ray](https://www.ray.io/) — Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
@@ -757,7 +757,7 @@
 - [TShark](https://www.wireshark.org/docs/man-pages/tshark.html) — Command-line network protocol analyzer from the Wireshark project for live captures and saved trace files.
 - [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) — Guide to optimizing swap for Kubernetes nodes.
 - [Typhoon](https://typhoon.psdn.io) — Minimal Kubernetes distribution and Terraform provisioning toolkit for cloud and bare-metal clusters.
-- [Unraid](https://unraid.net) — Operating system for network-attached storage and virtualization.
+- [Unraid](https://unraid.net) — Commercial, self-hosted operating system for network-attached storage, Docker containers, and virtual machines.
 - [Uptime Kuma](https://uptime.kuma.pet) — Self-hosted uptime-monitoring application with service checks, notifications and public status pages.
 - [UptimeRobot](https://uptimerobot.com) — Uptime monitoring service.
 - [Uptrace](https://uptrace.dev/) — OpenTelemetry-native APM platform for storing and correlating traces, metrics, and logs.

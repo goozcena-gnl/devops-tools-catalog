@@ -790,8 +790,10 @@
   needs_review: false
 - id: incus-os
   name: Incus OS
-  summary: Operating system images and distribution tooling for Incus environments.
+  summary: Immutable, API-managed host OS dedicated to Incus, with UEFI Secure Boot, TPM 2.0, and atomic A/B updates.
   official_url: https://linuxcontainers.org/incus-os
+  repository_url: https://github.com/lxc/incus-os
+  documentation_url: https://linuxcontainers.org/incus-os/docs/main/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -802,9 +804,12 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You want an immutable host dedicated to running Incus.
+  avoid_when:
+  - You require shell access to the host OS or cannot meet its standard Secure Boot and TPM 2.0 requirements.
+  deployment_models:
+  - self-hosted
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -813,6 +818,11 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L246
+  - https://linuxcontainers.org/incus-os/docs/main/
+  - https://linuxcontainers.org/incus-os/docs/main/getting-started/requirements/
+  - https://linuxcontainers.org/incus-os/docs/main/reference/licenses/
+  - https://github.com/lxc/incus-os
+  - https://discuss.linuxcontainers.org/t/upcoming-changes-to-incusos/27161
   needs_review: true
 - id: ironic
   name: OpenStack Ironic
@@ -995,9 +1005,10 @@
   needs_review: true
 - id: libvirt
   name: libvirt
-  summary: API/daemon for managing virtualization platforms.
+  summary: C library, API, and daemons for managing virtualization through drivers such as QEMU/KVM and Xen.
   official_url: https://libvirt.org
-  repository_url: https://github.com/libvirt/libvirt
+  repository_url: https://gitlab.com/libvirt/libvirt
+  documentation_url: https://libvirt.org/docs.html
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -1022,10 +1033,16 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L160
   - legacy:devopstools_final.md#L250
+  - https://libvirt.org/docs.html
+  - https://libvirt.org/downloads.html
+  - https://libvirt.org/drivers.html
+  - https://gitlab.com/libvirt/libvirt
+  - https://github.com/libvirt/libvirt
+  - https://libvirt.org/news.html#v12-9-0-2026-11-02
   needs_review: true
 - id: lima
   name: Lima
-  summary: Linux VMs on macOS (and more).
+  summary: Runs Linux virtual machines on macOS and Linux hosts for local container and development workflows.
   official_url: https://lima-vm.io
   repository_url: https://github.com/lima-vm/lima
   categories:
@@ -1039,11 +1056,12 @@
   - deploy
   - operate
   use_when:
-  - You need lightweight Linux VMs on macOS for container development without Docker Desktop.
+  - You need local Linux VMs for container development on macOS or Linux.
   avoid_when:
-  - You're on Linux or prefer a more integrated solution like OrbStack.
+  - You require a tested host platform and plan to run Lima on Windows, NetBSD, or DragonFlyBSD.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1052,6 +1070,10 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L162
   - legacy:devopstools_final.md#L251
+  - https://lima-vm.io/docs/
+  - https://lima-vm.io/docs/installation/
+  - https://github.com/lima-vm/lima/blob/master/LICENSE
+  - https://github.com/lima-vm/lima/releases/tag/v2.3.0
   needs_review: true
 - id: linux-containers-lxc-lxd
   name: Linux Containers (LXC/LXD)
@@ -1476,9 +1498,11 @@
   needs_review: true
 - id: portainer
   name: Portainer
-  summary: Container management platform.
+  summary: Self-hosted Docker and Kubernetes management with an open-source Community Edition and a separately licensed
+    Business Edition.
   official_url: https://www.portainer.io
   repository_url: https://github.com/portainer/portainer
+  documentation_url: https://docs.portainer.io/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -1493,8 +1517,11 @@
   - You want a web UI to manage Docker/Kubernetes for small teams or edge environments.
   avoid_when:
   - You need GitOps-style declarative management or are already using a full platform.
-  deployment_models: []
+  deployment_models:
+  - self-hosted
   license_model: open-core
+  license_spdx: Zlib
+  commercial_offering: true
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1503,11 +1530,18 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L174
   - legacy:devopstools_final.md#L261
+  - https://docs.portainer.io/
+  - https://docs.portainer.io/start/install-ce
+  - https://github.com/portainer/portainer/blob/release/2.45/LICENSE
+  - https://github.com/portainer/portainer/releases/tag/2.45.3
   needs_review: true
 - id: proxmox-datacenter-manager
   name: Proxmox Datacenter Manager
-  summary: Proxmox datacenter management product.
+  summary: Centralizes inventory, monitoring, and operations across independent Proxmox VE and Proxmox Backup
+    Server remotes.
   official_url: https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview
+  repository_url: https://git.proxmox.com/?p=proxmox-datacenter-manager.git;a=summary
+  documentation_url: https://pdm.proxmox.com/docs/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -1522,8 +1556,10 @@
   - You operate multiple Proxmox clusters and need centralized management.
   avoid_when:
   - You run a single Proxmox node or prefer cloud-based orchestration.
-  deployment_models: []
-  license_model: unknown
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  license_spdx: AGPL-3.0-or-later
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1532,6 +1568,11 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L176
   - legacy:devopstools_final.md#L262
+  - https://pdm.proxmox.com/docs/
+  - https://pdm.proxmox.com/docs/introduction.html
+  - https://pdm.proxmox.com/docs/faq.html
+  - https://git.proxmox.com/?p=proxmox-datacenter-manager.git;a=summary
+  - https://git.proxmox.com/?p=proxmox-datacenter-manager.git;a=blob_plain;f=debian/copyright;hb=HEAD
   needs_review: true
 - id: proxmox-optimizer
   name: proxmox-optimizer
@@ -1564,8 +1605,9 @@
   needs_review: true
 - id: proxmox-virtual-environment-ve
   name: Proxmox Virtual Environment (VE)
-  summary: Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
-  official_url: https://github.com/proxmox
+  summary: Open-source server virtualization platform with a web UI for KVM VMs and LXC containers. Optional
+    subscriptions provide enterprise repository access and support.
+  official_url: https://www.proxmox.com/en/products/proxmox-virtual-environment/overview
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -1579,9 +1621,11 @@
   use_when:
   - You want a powerful, free hypervisor with a web UI for on-prem VMs and containers.
   avoid_when:
-  - You need VMware-level enterprise support or advanced vSAN features.
-  deployment_models: []
-  license_model: open-core
+  - You require a vendor-hosted virtualization service.
+  deployment_models:
+  - self-hosted
+  license_model: oss
+  commercial_offering: true
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1590,6 +1634,10 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L178
   - legacy:devopstools_final.md#L263
+  - https://www.proxmox.com/en/products/proxmox-virtual-environment/overview
+  - https://www.proxmox.com/en/products/proxmox-virtual-environment/features
+  - https://www.proxmox.com/en/products/proxmox-virtual-environment/pricing/
+  - https://www.proxmox.com/en/about/company-details/press-releases/proxmox-virtual-environment-9-2
   needs_review: true
 - id: qemu
   name: QEMU
@@ -1644,9 +1692,10 @@
   needs_review: false
 - id: rancher-desktop
   name: Rancher Desktop
-  summary: Desktop Kubernetes and container management.
+  summary: Local container management on Windows, macOS, and Linux, with optional Kubernetes.
   official_url: https://rancherdesktop.io
   repository_url: https://github.com/rancher-sandbox/rancher-desktop
+  documentation_url: https://docs.rancherdesktop.io/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -1658,11 +1707,12 @@
   - deploy
   - operate
   use_when:
-  - You want a free, open-source Docker Desktop alternative with built-in K8s.
+  - You need a local Docker or containerd workflow, with or without Kubernetes.
   avoid_when:
-  - You don't need local Kubernetes and just want a simple Docker environment.
+  - You need a platform to operate remote production clusters.
   deployment_models: []
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1671,6 +1721,11 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L182
   - legacy:devopstools_final.md#L265
+  - https://docs.rancherdesktop.io/
+  - https://docs.rancherdesktop.io/getting-started/installation/
+  - https://docs.rancherdesktop.io/ui/preferences/kubernetes/
+  - https://github.com/rancher-sandbox/rancher-desktop/blob/main/LICENSE
+  - https://github.com/rancher-sandbox/rancher-desktop/releases/tag/v1.25.0
   needs_review: true
 - id: remmina
   name: Remmina
@@ -1869,8 +1924,9 @@
   needs_review: false
 - id: unraid
   name: Unraid
-  summary: Operating system for network-attached storage and virtualization.
+  summary: Commercial, self-hosted operating system for network-attached storage, Docker containers, and virtual machines.
   official_url: https://unraid.net
+  documentation_url: https://docs.unraid.net/
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -1885,8 +1941,10 @@
   - You want an easy-to-use home/prosumer NAS+VM platform with a plugin ecosystem.
   avoid_when:
   - You need enterprise storage features or a free/open-source solution.
-  deployment_models: []
-  license_model: unknown
+  deployment_models:
+  - self-hosted
+  license_model: commercial
+  commercial_offering: true
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1895,6 +1953,11 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L194
   - legacy:devopstools_final.md#L271
+  - https://docs.unraid.net/
+  - https://unraid.net/policies
+  - https://docs.unraid.net/unraid-os/faq/licensing-faq/
+  - https://docs.unraid.net/unraid-os/using-unraid-to/create-virtual-machines/overview-and-system-prep/
+  - https://docs.unraid.net/unraid-os/release-notes/7.4.0/
   needs_review: true
 - id: vates-vms
   name: Vates VMS

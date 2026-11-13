@@ -525,17 +525,17 @@ Modern system container and VM manager.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Operating system images and distribution tooling for Incus environments.
+Immutable, API-managed host OS dedicated to Incus, with UEFI Secure Boot, TPM 2.0, and atomic A/B updates.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want an immutable host dedicated to running Incus.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require shell access to the host OS or cannot meet its standard Secure Boot and TPM 2.0 requirements.
 
-[Official site](https://linuxcontainers.org/incus-os)
+[Official site](https://linuxcontainers.org/incus-os) · [Documentation](https://linuxcontainers.org/incus-os/docs/main/) · [Source repository](https://github.com/lxc/incus-os)
 
 ### Kata Containers
 
@@ -658,7 +658,7 @@ Terminal UI for Docker and Docker Compose.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-API/daemon for managing virtualization platforms.
+C library, API, and daemons for managing virtualization through drivers such as QEMU/KVM and Xen.
 
 **Use when**
 
@@ -668,7 +668,7 @@ API/daemon for managing virtualization platforms.
 
 - You only run containers or use a higher-level orchestrator like Proxmox.
 
-[Official site](https://libvirt.org) · [Source repository](https://github.com/libvirt/libvirt)
+[Official site](https://libvirt.org) · [Documentation](https://libvirt.org/docs.html) · [Source repository](https://gitlab.com/libvirt/libvirt)
 
 ### Lima
 
@@ -677,15 +677,15 @@ API/daemon for managing virtualization platforms.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Linux VMs on macOS (and more).
+Runs Linux virtual machines on macOS and Linux hosts for local container and development workflows.
 
 **Use when**
 
-- You need lightweight Linux VMs on macOS for container development without Docker Desktop.
+- You need local Linux VMs for container development on macOS or Linux.
 
 **Consider alternatives when**
 
-- You're on Linux or prefer a more integrated solution like OrbStack.
+- You require a tested host platform and plan to run Lima on Windows, NetBSD, or DragonFlyBSD.
 
 [Official site](https://lima-vm.io) · [Source repository](https://github.com/lima-vm/lima)
 
@@ -982,7 +982,7 @@ Daemonless container engine for developing and managing containers.
 **Model:** Open Core<br>
 **Status:** Needs Review
 
-Container management platform.
+Self-hosted Docker and Kubernetes management with an open-source Community Edition and a separately licensed Business Edition.
 
 **Use when**
 
@@ -992,16 +992,16 @@ Container management platform.
 
 - You need GitOps-style declarative management or are already using a full platform.
 
-[Official site](https://www.portainer.io) · [Source repository](https://github.com/portainer/portainer)
+[Official site](https://www.portainer.io) · [Documentation](https://docs.portainer.io/) · [Source repository](https://github.com/portainer/portainer)
 
 ### Proxmox Datacenter Manager
 
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
-Proxmox datacenter management product.
+Centralizes inventory, monitoring, and operations across independent Proxmox VE and Proxmox Backup Server remotes.
 
 **Use when**
 
@@ -1011,16 +1011,16 @@ Proxmox datacenter management product.
 
 - You run a single Proxmox node or prefer cloud-based orchestration.
 
-[Official site](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview)
+[Official site](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) · [Documentation](https://pdm.proxmox.com/docs/) · [Source repository](https://git.proxmox.com/?p=proxmox-datacenter-manager.git;a=summary)
 
 ### Proxmox Virtual Environment (VE)
 
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Open Core<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
-Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
+Open-source server virtualization platform with a web UI for KVM VMs and LXC containers. Optional subscriptions provide enterprise repository access and support.
 
 **Use when**
 
@@ -1028,9 +1028,9 @@ Open source virtualization platform (KVM + LXC) with optional enterprise subscri
 
 **Consider alternatives when**
 
-- You need VMware-level enterprise support or advanced vSAN features.
+- You require a vendor-hosted virtualization service.
 
-[Official site](https://github.com/proxmox)
+[Official site](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview)
 
 ### proxmox-optimizer
 
@@ -1096,17 +1096,17 @@ Browser-based rack layout designer for planning equipment placement and exportin
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Desktop Kubernetes and container management.
+Local container management on Windows, macOS, and Linux, with optional Kubernetes.
 
 **Use when**
 
-- You want a free, open-source Docker Desktop alternative with built-in K8s.
+- You need a local Docker or containerd workflow, with or without Kubernetes.
 
 **Consider alternatives when**
 
-- You don't need local Kubernetes and just want a simple Docker environment.
+- You need a platform to operate remote production clusters.
 
-[Official site](https://rancherdesktop.io) · [Source repository](https://github.com/rancher-sandbox/rancher-desktop)
+[Official site](https://rancherdesktop.io) · [Documentation](https://docs.rancherdesktop.io/) · [Source repository](https://github.com/rancher-sandbox/rancher-desktop)
 
 ### Remmina
 
@@ -1245,10 +1245,10 @@ Bare-metal provisioning stack for declarative machine installation workflows.
 
 **Categories:** Virtualization, bare metal and homelab<br>
 **Roles:** DevOps Engineer, Infrastructure and Systems Engineer<br>
-**Model:** Unknown<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Operating system for network-attached storage and virtualization.
+Commercial, self-hosted operating system for network-attached storage, Docker containers, and virtual machines.
 
 **Use when**
 
@@ -1258,7 +1258,7 @@ Operating system for network-attached storage and virtualization.
 
 - You need enterprise storage features or a free/open-source solution.
 
-[Official site](https://unraid.net)
+[Official site](https://unraid.net) · [Documentation](https://docs.unraid.net/)
 
 ### Vates VMS
 
