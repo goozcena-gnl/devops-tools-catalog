@@ -28,7 +28,7 @@
   needs_review: false
 - id: combodo-itop
   name: Combodo (iTop)
-  summary: ITSM/CMDB platform; Combodo-backed iTop ecosystem with commercial extensions and support.
+  summary: "Self-hosted iTop ITSM and CMDB platform with an openly licensed core and separately offered vendor services and extensions."
   official_url: https://combodo.com
   repository_url: https://github.com/Combodo/iTop
   categories:
@@ -42,10 +42,12 @@
   - operate
   - monitor
   use_when:
-  - You need an open-source CMDB and ITIL-aligned service management.
+  - "You need a self-hosted ITSM platform with a CMDB, service management and impact analysis."
   avoid_when:
-  - You want modern incident-response tooling rather than traditional ITSM.
-  deployment_models: []
+  - "You need native on-call rotation and paging rather than a broader ITSM and CMDB platform."
+  - "You require vendor extensions or support to be covered by the core source licence."
+  deployment_models:
+  - "self-hosted"
   license_model: open-core
   maturity: unknown
   status: needs-review
@@ -55,6 +57,11 @@
   sources:
   - legacy:5_Monitoring-Observability/README.md#L99
   - legacy:devopstools_final.md#L814
+  - "https://github.com/Combodo/iTop/blob/develop/composer.json"
+  - "https://github.com/Combodo/iTop"
+  - "https://combodo.com/fr/offres-services/"
+  license_spdx: "AGPL-3.0-only"
+  commercial_offering: true
   needs_review: true
 - id: dnsglobe
   name: dnsglobe
@@ -110,7 +117,7 @@
   needs_review: true
 - id: goalert
   name: GoAlert
-  summary: On-call alert and escalation management.
+  summary: "Self-hosted on-call scheduling, alert routing and escalation platform with SMS and voice notification integrations."
   official_url: https://goalert.me
   repository_url: https://github.com/target/goalert
   categories:
@@ -124,10 +131,11 @@
   - operate
   - monitor
   use_when:
-  - Self-hosted on-call scheduling and escalation without SaaS costs.
+  - "You need on-call rotations and automated escalations managed in your own infrastructure."
   avoid_when:
-  - You need rich integrations and mobile apps that PagerDuty/Opsgenie provide.
-  deployment_models: []
+  - "You need a fully managed incident-response SaaS or assume third-party SMS and voice delivery is free."
+  deployment_models:
+  - "self-hosted"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -137,6 +145,10 @@
   sources:
   - legacy:5_Monitoring-Observability/README.md#L100
   - legacy:devopstools_final.md#L817
+  - "https://github.com/target/goalert"
+  - "https://goalert.me/docs/"
+  documentation_url: "https://goalert.me/docs/"
+  license_spdx: "Apache-2.0"
   needs_review: true
 - id: komodor
   name: Komodor
@@ -215,8 +227,8 @@
   needs_review: true
 - id: manageengine-netflow-analyzer
   name: ManageEngine NetFlow Analyzer
-  summary: Network traffic monitoring and analysis.
-  official_url: https://www.manageengine.com/netflow
+  summary: "Proprietary network flow and bandwidth analysis platform with paid editions and a limited free edition."
+  official_url: "https://www.manageengine.com/products/netflow/"
   categories:
   - sre-incident-response-on-call
   subcategories:
@@ -228,11 +240,12 @@
   - operate
   - monitor
   use_when:
-  - Deep network bandwidth and traffic analysis using NetFlow/sFlow/IPFIX.
+  - "You need licensed network bandwidth and traffic analysis from NetFlow, sFlow or IPFIX exporters."
   avoid_when:
-  - Your monitoring needs are application-centric, not network-centric.
-  deployment_models: []
-  license_model: unknown
+  - "You need an open-source flow collector or the limited free edition does not cover the required interfaces."
+  deployment_models:
+  - "self-hosted"
+  license_model: "commercial"
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -241,6 +254,11 @@
   sources:
   - legacy:5_Monitoring-Observability/README.md#L103
   - legacy:devopstools_final.md#L820
+  - "https://www.manageengine.com/products/netflow/"
+  - "https://www.manageengine.com/products/netflow/help/licensing.html"
+  - "https://www.manageengine.com/eu/products/netflow/license.html"
+  documentation_url: "https://www.manageengine.com/products/netflow/help/licensing.html"
+  commercial_offering: true
   needs_review: true
 - id: moogsoft
   name: Moogsoft
@@ -309,7 +327,7 @@
   needs_review: true
 - id: ntfy
   name: ntfy
-  summary: Simple pub-sub notifications (self-hostable).
+  summary: "HTTP-based push notification server and clients, available for self-hosting and as a separately paid hosted service."
   official_url: https://ntfy.sh
   repository_url: https://github.com/binwiederhier/ntfy
   categories:
@@ -323,10 +341,12 @@
   - operate
   - monitor
   use_when:
-  - Lightweight, self-hosted push notifications via HTTP.
+  - "You need lightweight push notifications from scripts, automation and infrastructure alerts via HTTP."
   avoid_when:
-  - You need on-call scheduling, escalations, or incident workflows.
-  deployment_models: []
+  - "You need a complete on-call rotation, escalation and incident-command platform."
+  deployment_models:
+  - "self-hosted"
+  - "hosted-saas"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -336,6 +356,12 @@
   sources:
   - legacy:5_Monitoring-Observability/README.md#L105
   - legacy:devopstools_final.md#L823
+  - "https://github.com/binwiederhier/ntfy"
+  - "https://github.com/binwiederhier/ntfy/blob/main/README.md"
+  - "https://docs.ntfy.sh/faq/"
+  - "https://docs.ntfy.sh/config/"
+  documentation_url: "https://docs.ntfy.sh/"
+  commercial_offering: true
   needs_review: true
 - id: opensre
   name: OpenSRE
@@ -505,8 +531,7 @@
   needs_review: true
 - id: server-pulse
   name: Server Pulse
-  summary: Linux server diagnostics and monitoring TUI covering system health, Docker containers, logs,
-    networking, and security checks.
+  summary: "Linux terminal UI for server health, Docker control, system logs, network diagnostics and security checks."
   repository_url: https://github.com/Server-Pulse/server-pulse
   categories:
   - sre-incident-response-on-call
@@ -518,9 +543,12 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You administer a Linux server with Docker access and need interactive local diagnostics."
+  avoid_when:
+  - "You need a Windows or macOS agent, a managed SaaS, or remote fleet-wide incident escalation."
+  deployment_models:
+  - "local-cli"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -529,6 +557,10 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L828
+  - "https://github.com/Server-Pulse/server-pulse"
+  - "https://github.com/Server-Pulse/server-pulse/blob/main/README.md"
+  - "https://github.com/Server-Pulse/server-pulse/blob/main/LICENSE"
+  documentation_url: "https://github.com/Server-Pulse/server-pulse/blob/main/README.md"
   needs_review: true
 - id: stratoshark
   name: Stratoshark
@@ -594,7 +626,7 @@
   needs_review: false
 - id: wireshark
   name: Wireshark
-  summary: Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
+  summary: "Desktop network protocol analyzer for live packet capture and saved trace inspection."
   official_url: https://www.wireshark.org
   repository_url: https://gitlab.com/wireshark/wireshark
   categories:
@@ -607,9 +639,12 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You need interactive packet capture and protocol-level network troubleshooting."
+  avoid_when:
+  - "You need distributed infrastructure telemetry, automated on-call escalation or cannot capture traffic legally."
+  deployment_models:
+  - "local"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -618,11 +653,16 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L829
+  - "https://gitlab.com/wireshark/wireshark"
+  - "https://www.wireshark.org/docs/wsdg_html/"
+  - "https://www.wireshark.org/docs/"
+  documentation_url: "https://www.wireshark.org/docs/"
+  license_spdx: "GPL-2.0-or-later"
   needs_review: true
 - id: zenduty
-  name: Zenduty
-  summary: Incident management and on-call platform with developer-friendly APIs.
-  official_url: https://github.com/zenduty
+  name: "Xurrent IMR (formerly Zenduty)"
+  summary: "Commercial hosted incident-management and on-call response platform, renamed from Zenduty to Xurrent IMR in November 2025."
+  official_url: "https://www.xurrent.com/incident-management-response"
   categories:
   - sre-incident-response-on-call
   subcategories:
@@ -634,11 +674,12 @@
   - operate
   - monitor
   use_when:
-  - Cost-effective PagerDuty alternative with good API/integration coverage.
+  - "You need managed on-call schedules, alert escalation and incident coordination with commercial support."
   avoid_when:
-  - You need the ecosystem maturity and enterprise features of PagerDuty.
-  deployment_models: []
-  license_model: open-core
+  - "You require an entirely self-hosted or open-source on-call platform."
+  deployment_models:
+  - "hosted-saas"
+  license_model: "commercial"
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -647,4 +688,8 @@
   sources:
   - legacy:5_Monitoring-Observability/README.md#L109
   - legacy:devopstools_final.md#L830
+  - "https://www.xurrent.com/blog/zenduty-is-rebranding-to-xurrent-imr"
+  - "https://www.xurrent.com/incident-management-response"
+  - "https://www.xurrent.com/pricing/incident-management-response"
+  commercial_offering: true
   needs_review: true
