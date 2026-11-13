@@ -165,8 +165,8 @@
 | [Portainer](https://www.portainer.io) | Virtualization, bare metal and homelab | open-core | needs-review |
 | [PostgreSQL](https://www.postgresql.org) | Databases, caching and data infrastructure | oss | active |
 | [PowerShell](https://learn.microsoft.com/en-us/powershell/) | Foundations, Linux and scripting | oss | active |
-| [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) | Virtualization, bare metal and homelab | unknown | needs-review |
-| [Proxmox Virtual Environment (VE)](https://github.com/proxmox) | Virtualization, bare metal and homelab | open-core | needs-review |
+| [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) | Virtualization, bare metal and homelab | oss | needs-review |
+| [Proxmox Virtual Environment (VE)](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) | Virtualization, bare metal and homelab | oss | needs-review |
 | [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
 | [Puppet](https://www.puppet.com/) | Configuration management | open-core | active |
@@ -225,7 +225,7 @@
 | [Tinyauth](https://tinyauth.app/) | IAM, secrets and certificate management | oss | active |
 | [Trilio](https://trilio.io/products/kubernetes-backup-and-recovery) | Backup, disaster recovery and resilience | commercial | active |
 | [Trippy](https://trippy.rs/) | Foundations, Linux and scripting | oss | active |
-| [Unraid](https://unraid.net) | Virtualization, bare metal and homelab | unknown | needs-review |
+| [Unraid](https://unraid.net) | Virtualization, bare metal and homelab | commercial | needs-review |
 | [Uyuni](https://www.uyuni-project.org/) | Configuration management | oss | active |
 | [Varnish Cache](https://www.varnish.org/) | Databases, caching and data infrastructure | oss | active |
 | [Vates VMS](https://github.com/vatesfr) | Virtualization, bare metal and homelab | open-core | needs-review |

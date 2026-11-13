@@ -233,7 +233,7 @@
 - [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) — Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows Server.
 - [IBM Cloud](https://www.ibm.com/products/cloud) — Enterprise cloud services and infrastructure by IBM.
 - [Incus](https://linuxcontainers.org/incus/) — Modern system container and VM manager.
-- [Incus OS](https://linuxcontainers.org/incus-os) — Operating system images and distribution tooling for Incus environments.
+- [Incus OS](https://linuxcontainers.org/incus-os) — Immutable, API-managed host OS dedicated to Incus, with UEFI Secure Boot, TPM 2.0, and atomic A/B updates.
 - [Infracost](https://www.infracost.io) — Cost estimates for IaC projects.
 - [ingress2gateway](https://github.com/kubernetes-sigs/ingress2gateway) — Translate Ingress and provider-specific resources into Gateway API manifests.
 - [ipman](https://dialohq.github.io/ipman/) — Kubernetes operator that establishes encrypted IPsec connectivity between selected cluster networks.
@@ -372,8 +372,8 @@
 - [Lazydocker](https://github.com/jesseduffield/lazydocker) — Terminal UI for Docker and Docker Compose.
 - [Lens](https://lenshq.io) — Kubernetes IDE (the former open-source core has been retired; current product is proprietary).
 - [lfk](https://github.com/janosmiko/lfk) — Lightning-fast, keyboard-focused TUI for navigating and managing Kubernetes clusters with a three-column Miller columns layout and owner-based resource hierarchy.
-- [libvirt](https://libvirt.org) — API/daemon for managing virtualization platforms.
-- [Lima](https://lima-vm.io) — Linux VMs on macOS (and more).
+- [libvirt](https://libvirt.org) — C library, API, and daemons for managing virtualization through drivers such as QEMU/KVM and Xen.
+- [Lima](https://lima-vm.io) — Runs Linux virtual machines on macOS and Linux hosts for local container and development workflows.
 - [Linkerd](https://linkerd.io) — Lightweight service mesh for Kubernetes.
 - [LINSTOR](https://linbit.com/linstor) — Distributed storage management (DRBD-based) with community and enterprise support.
 - [Linux Containers (LXC/LXD)](https://linuxcontainers.org) — System containers and VM manager.
@@ -472,7 +472,7 @@
 - [Podman](https://podman.io) — Daemonless container engine for developing and managing containers.
 - [Polykube](https://github.com/Kismet-Engineering/polykube) — Experimental GitOps-driven operators for portable workloads across Kubernetes clusters.
 - [Port](https://www.port.io/) — Internal developer portal and service catalog with automations/workflows.
-- [Portainer](https://www.portainer.io) — Container management platform.
+- [Portainer](https://www.portainer.io) — Self-hosted Docker and Kubernetes management with an open-source Community Edition and a separately licensed Business Edition.
 - [Porter](https://github.com/porter-dev) — Porter cloud platform for deploying applications into user-owned Kubernetes clusters; current commercial and source-licence boundaries require review.
 - [Portworx](https://portworx.com) — Kubernetes data services platform.
 - [PostgreSQL](https://www.postgresql.org) — Extensible open-source relational database with strong transactional, indexing, and SQL capabilities.
@@ -481,8 +481,8 @@
 - [Project Contour](https://projectcontour.io) — Envoy-powered Kubernetes ingress controller supporting Ingress, HTTPProxy and Gateway API resources.
 - [Project Sveltos](https://projectsveltos.io/latest) — Project Sveltos distributes and reconciles cluster add-ons, Helm charts, Kustomize resources and manifests across Kubernetes fleets.
 - [Promptfoo](https://www.promptfoo.dev) — MIT-licensed CLI for LLM regression evaluation and red-team testing in CI; generation, grading, sharing and telemetry may use external services.
-- [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) — Proxmox datacenter management product.
-- [Proxmox Virtual Environment (VE)](https://github.com/proxmox) — Open source virtualization platform (KVM + LXC) with optional enterprise subscription.
+- [Proxmox Datacenter Manager](https://www.proxmox.com/en/products/proxmox-datacenter-manager/overview) — Centralizes inventory, monitoring, and operations across independent Proxmox VE and Proxmox Backup Server remotes.
+- [Proxmox Virtual Environment (VE)](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) — Open-source server virtualization platform with a web UI for KVM VMs and LXC containers. Optional subscriptions provide enterprise repository access and support.
 - [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) — Proxmox optimization utilities.
 - [Pulumi](https://www.pulumi.com) — IaC using real programming languages.
 - [Puppet](https://www.puppet.com/) — Declarative configuration management with Apache-licensed open-source Puppet and separately licensed Core and Enterprise offerings.
@@ -492,7 +492,7 @@
 - [RabbitMQ](https://www.rabbitmq.com) — Open-source message broker and streaming platform for reliable asynchronous communication.
 - [Railway](https://railway.com/) — Managed application platform for building, deploying, networking, scaling, and observing services from source repositories or containers.
 - [Rakazo](https://rakazo.com/) — Self-hosted agent workspace with sandboxed browser and shell sessions, routines, approvals, and audit history.
-- [Rancher Desktop](https://rancherdesktop.io) — Desktop Kubernetes and container management.
+- [Rancher Desktop](https://rancherdesktop.io) — Local container management on Windows, macOS, and Linux, with optional Kubernetes.
 - [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) — Kubernetes-in-Kubernetes control-plane tooling for shared or virtual k3s guest clusters.
 - [Rancher Manager](https://rancher.com) — SUSE Rancher open-source Kubernetes cluster management platform for provisioning, importing and governing clusters; Rancher Prime adds commercial support and distribution services.
 - [Ray](https://www.ray.io/) — Apache-licensed distributed computing framework and AI compute engine for scaling Python and machine-learning workloads.
@@ -564,7 +564,7 @@
 - [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) — Guide to optimizing swap for Kubernetes nodes.
 - [Typhoon](https://typhoon.psdn.io) — Minimal Kubernetes distribution and Terraform provisioning toolkit for cloud and bare-metal clusters.
 - [Uncloud](https://uncloud.run) — Deploy and operate containerized workloads across Docker hosts with service discovery and HTTPS ingress, without a Kubernetes control plane.
-- [Unraid](https://unraid.net) — Operating system for network-attached storage and virtualization.
+- [Unraid](https://unraid.net) — Commercial, self-hosted operating system for network-attached storage, Docker containers, and virtual machines.
 - [Upjet](https://github.com/crossplane/upjet) — Code generation and controller runtime for building Crossplane providers from Terraform providers.
 - [Uyuni](https://www.uyuni-project.org/) — Open-source systems management platform for software channels, configuration, patching, and client lifecycle.
 - [Valkey Operator](https://github.com/valkey-io/valkey-operator) — Kubernetes operator for deploying and managing Valkey clusters, including scaling and failover.
