@@ -533,7 +533,7 @@ Immutable, API-managed host OS dedicated to Incus, with UEFI Secure Boot, TPM 2.
 
 **Consider alternatives when**
 
-- You require shell access to the host OS or cannot meet its standard Secure Boot and TPM 2.0 requirements.
+- You need host shell access, or require enterprise-supported security but cannot provide Secure Boot and a physical TPM 2.0; degraded homelab/evaluation modes weaken security.
 
 [Official site](https://linuxcontainers.org/incus-os) · [Documentation](https://linuxcontainers.org/incus-os/docs/main/) · [Source repository](https://github.com/lxc/incus-os)
 

@@ -807,7 +807,7 @@
   use_when:
   - You want an immutable host dedicated to running Incus.
   avoid_when:
-  - You require shell access to the host OS or cannot meet its standard Secure Boot and TPM 2.0 requirements.
+  - You need host shell access, or require enterprise-supported security but cannot provide Secure Boot and a physical TPM 2.0; degraded homelab/evaluation modes weaken security.
   deployment_models:
   - self-hosted
   license_model: oss
@@ -821,6 +821,8 @@
   - https://linuxcontainers.org/incus-os/docs/main/
   - https://linuxcontainers.org/incus-os/docs/main/getting-started/requirements/
   - https://linuxcontainers.org/incus-os/docs/main/reference/licenses/
+  - https://linuxcontainers.org/incus-os/docs/main/reference/installing-without-secureboot/
+  - https://linuxcontainers.org/incus-os/docs/main/reference/installing-without-tpm/
   - https://github.com/lxc/incus-os
   - https://discuss.linuxcontainers.org/t/upcoming-changes-to-incusos/27161
   needs_review: true
