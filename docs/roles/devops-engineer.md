@@ -122,7 +122,7 @@
 | [cek](https://github.com/bschaatsbergen/cek) | Containers and image tooling | oss | active |
 | [Centreon](https://www.centreon.com) | Monitoring, metrics, logs and tracing | open-core | active |
 | [CertGames](https://certgames.com/) | Documentation, learning and career resources | documentation | needs-review |
-| [CFEngine](https://cfengine.com) | Configuration management | open-core | needs-review |
+| [CFEngine](https://cfengine.com) | Configuration management | open-core | active |
 | [changedetection.io](https://changedetection.io/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [Chaos Mesh](https://chaos-mesh.org) | Chaos and performance engineering | oss | active |
 | [Chaos Monkey](https://netflix.github.io/chaosmonkey) | Chaos and performance engineering | oss | needs-review |
@@ -373,7 +373,7 @@
 | [Knative](https://knative.dev/) | Serverless, edge and WebAssembly | oss | active |
 | [Ko](https://ko.build) | Containers and image tooling | oss | active |
 | [KodeKloud](https://kodekloud.com) | Documentation, learning and career resources | documentation | needs-review |
-| [Kolla-Ansible](https://docs.openstack.org/kolla-ansible/latest) | Configuration management | oss | needs-review |
+| [Kolla-Ansible](https://docs.openstack.org/kolla-ansible/latest) | Configuration management | oss | active |
 | [Komodo](https://komo.do/) | Virtualization, bare metal and homelab | oss | active |
 | [Komodor](https://komodor.com) | SRE, incident response and on-call, Monitoring, metrics, logs and tracing, FinOps and sustainability | commercial | active |
 | [KRR](https://github.com/robusta-dev/krr) | Monitoring, metrics, logs and tracing | oss | active |
@@ -431,7 +431,7 @@
 | [MiniBlue](https://miniblue.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [MinIO Community Server](https://github.com/minio/minio) | Deprecated and historical tools, Databases, caching and data infrastructure | oss | archived |
 | [mise](https://mise.jdx.dev/) | Developer experience and local environments | oss | active |
-| [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) | Configuration management | oss | needs-review |
+| [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) | Configuration management | oss | active |
 | [MLOps for DevOps Engineers](https://github.com/techiescamp/mlops-for-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [MobaXterm](https://mobaxterm.mobatek.net/) | Foundations, Linux and scripting | commercial | active |
 | [Mockito](https://site.mockito.org/) | CI, build and testing | oss | active |
@@ -525,7 +525,7 @@
 | [Pulp](https://pulpproject.org/) | Artifact and package management | oss | active |
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
 | [Pumba](https://github.com/alexei-led/pumba) | Chaos and performance engineering | oss | active |
-| [Puppet](https://puppet.com) | Configuration management | open-core | needs-review |
+| [Puppet](https://www.puppet.com/) | Configuration management | open-core | active |
 | [PyCharm](https://www.jetbrains.com/pycharm) | Developer experience and local environments | unknown | needs-review |
 | [pytest](https://docs.pytest.org/en/stable) | CI, build and testing | oss | active |
 | [pytest-cov](https://github.com/pytest-dev/pytest-cov) | CI, build and testing | oss | active |
@@ -540,7 +540,7 @@
 | [Rackula](https://www.racku.la/) | Virtualization, bare metal and homelab | oss | active |
 | [RamaLama](https://ramalama.ai) | Developer experience and local environments | oss | needs-review |
 | [Rancher Desktop](https://rancherdesktop.io) | Virtualization, bare metal and homelab | oss | needs-review |
-| [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) | Configuration management | unknown | needs-review |
+| [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) | Configuration management | commercial | active |
 | [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | commercial | active |
 | [Redis](https://redis.io) | Databases, caching and data infrastructure | source-available | needs-review |
 | [Redmine](https://www.redmine.org/) | Workflow automation and ChatOps | oss | active |
@@ -558,13 +558,13 @@
 | [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [RTK AI](https://www.rtk-ai.app) | Developer experience and local environments | unknown | needs-review |
 | [Ruby](https://www.ruby-lang.org/en/) | Foundations, Linux and scripting | oss | active |
-| [Rudder](https://www.rudder.io) | Configuration management | open-core | needs-review |
+| [Rudder](https://www.rudder.io) | Configuration management | open-core | active |
 | [Rude Tools](https://rudetools.dev) | Emerging and experimental tools | oss | needs-review |
 | [Ruff](https://docs.astral.sh/ruff) | Developer experience and local environments | oss | active |
 | [runc](https://github.com/opencontainers/runc) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | active |
 | [RustFS](https://rustfs.com) | Databases, caching and data infrastructure | oss | needs-review |
-| [Salt](https://saltproject.io) | Configuration management | oss | needs-review |
+| [Salt](https://saltproject.io) | Configuration management | oss | active |
 | [Sauce Labs Real Device Cloud](https://saucelabs.com/platform/real-device-cloud) | CI, build and testing | unknown | needs-review |
 | [sbt](https://www.scala-sbt.org) | Containers and image tooling | oss | needs-review |
 | [Scaleway](https://www.scaleway.com/en/) | Cloud platforms and cloud management | commercial | active |

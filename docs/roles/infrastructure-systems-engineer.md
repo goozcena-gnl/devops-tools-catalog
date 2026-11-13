@@ -42,7 +42,7 @@
 | [Bottlerocket](https://bottlerocket.dev) | Virtualization, bare metal and homelab | oss | active |
 | [btop](https://github.com/aristocratos/btop) | Foundations, Linux and scripting | oss | active |
 | [CDKTF](https://developer.hashicorp.com/terraform/cdktf) | Deprecated and historical tools, Infrastructure as Code | oss | archived |
-| [CFEngine](https://cfengine.com) | Configuration management | open-core | needs-review |
+| [CFEngine](https://cfengine.com) | Configuration management | open-core | active |
 | [Chef Infra](https://www.chef.io/products/chef-infra) | Configuration management | commercial | active |
 | [ClamAV](https://www.clamav.net/) | Application and cloud security | oss | active |
 | [ClickHouse](https://clickhouse.com) | Monitoring, metrics, logs and tracing, Databases, caching and data infrastructure | open-core | active |
@@ -108,7 +108,7 @@
 | [Katello](https://theforeman.org/plugins/katello/) | Configuration management | oss | active |
 | [kcli](https://kcli.readthedocs.io/en/latest) | Virtualization, bare metal and homelab | oss | needs-review |
 | [KICS](https://kics.io) | Infrastructure as Code | oss | active |
-| [Kolla-Ansible](https://docs.openstack.org/kolla-ansible/latest) | Configuration management | oss | needs-review |
+| [Kolla-Ansible](https://docs.openstack.org/kolla-ansible/latest) | Configuration management | oss | active |
 | [Komodo](https://komo.do/) | Virtualization, bare metal and homelab | oss | active |
 | [kube-dump](https://kube-dump.woozymasta.ru) | Backup, disaster recovery and resilience | oss | needs-review |
 | [KubeKey](https://github.com/kubesphere/kubekey) | Kubernetes distributions and operations | oss | active |
@@ -131,7 +131,7 @@
 | [Metal3](https://metal3.io/) | Virtualization, bare metal and homelab, Kubernetes distributions and operations | oss | active |
 | [MiniBlue](https://miniblue.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [MinIO Community Server](https://github.com/minio/minio) | Deprecated and historical tools, Databases, caching and data infrastructure | oss | archived |
-| [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) | Configuration management | oss | needs-review |
+| [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) | Configuration management | oss | active |
 | [MobaXterm](https://mobaxterm.mobatek.net/) | Foundations, Linux and scripting | commercial | active |
 | [MongoDB](https://www.mongodb.com/) | Databases, caching and data infrastructure | source-available | active |
 | [MySQL](https://www.mysql.com) | Databases, caching and data infrastructure | open-core | active |
@@ -169,7 +169,7 @@
 | [Proxmox Virtual Environment (VE)](https://github.com/proxmox) | Virtualization, bare metal and homelab | open-core | needs-review |
 | [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
-| [Puppet](https://puppet.com) | Configuration management | open-core | needs-review |
+| [Puppet](https://www.puppet.com/) | Configuration management | open-core | active |
 | [Python](https://www.python.org/) | Foundations, Linux and scripting | oss | active |
 | [Python Official Tutorial](https://docs.python.org/3/tutorial) | Foundations, Linux and scripting | documentation | needs-review |
 | [Qdrant](https://qdrant.tech/) | Databases, caching and data infrastructure, MLOps, LLMOps and AI infrastructure | open-core | active |
@@ -178,7 +178,7 @@
 | [Rackula](https://www.racku.la/) | Virtualization, bare metal and homelab | oss | active |
 | [Rancher Desktop](https://rancherdesktop.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Rclone](https://rclone.org/) | Backup, disaster recovery and resilience | oss | active |
-| [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) | Configuration management | unknown | needs-review |
+| [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) | Configuration management | commercial | active |
 | [Redis](https://redis.io) | Databases, caching and data infrastructure | source-available | needs-review |
 | [Remmina](https://remmina.org) | Virtualization, bare metal and homelab | oss | needs-review |
 | [restic](https://restic.net/) | Backup, disaster recovery and resilience | oss | active |
@@ -186,10 +186,10 @@
 | [Rocky Linux](https://rockylinux.org) | Foundations, Linux and scripting | oss | needs-review |
 | [RootlessKit](https://github.com/rootless-containers/rootlesskit) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Ruby](https://www.ruby-lang.org/en/) | Foundations, Linux and scripting | oss | active |
-| [Rudder](https://www.rudder.io) | Configuration management | open-core | needs-review |
+| [Rudder](https://www.rudder.io) | Configuration management | open-core | active |
 | [runc](https://github.com/opencontainers/runc) | Virtualization, bare metal and homelab | oss | needs-review |
 | [RustFS](https://rustfs.com) | Databases, caching and data infrastructure | oss | needs-review |
-| [Salt](https://saltproject.io) | Configuration management | oss | needs-review |
+| [Salt](https://saltproject.io) | Configuration management | oss | active |
 | [Scalr](https://scalr.com/) | Infrastructure as Code | commercial | active |
 | [Scanopy](https://scanopy.net/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Score](https://score.dev) | Infrastructure as Code | oss | active |
