@@ -134,7 +134,7 @@
 - [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) — Kubernetes Cluster API infrastructure provider for AWS self-managed Kubernetes clusters and EKS integrations.
 - [Cluster Bare Autoscaler](https://github.com/docent-net/cluster-bare-autoscaler) — Bare-metal Kubernetes autoscaler that powers nodes on or off based on cluster demand while safely cordoning and draining them.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) — High-performance code intelligence MCP server that indexes repositories into a persistent knowledge graph.
-- [Combodo (iTop)](https://combodo.com) — ITSM/CMDB platform; Combodo-backed iTop ecosystem with commercial extensions and support.
+- [Combodo (iTop)](https://combodo.com) — Self-hosted iTop ITSM and CMDB platform with an openly licensed core and separately offered vendor services and extensions.
 - [Composio](https://composio.dev) — MIT-licensed Composio SDK for agent tool integrations alongside distinct managed authentication, connectors and hosted workbench services.
 - [Compute Gardener](https://www.compute-gardener.com) — Carbon-aware Kubernetes scheduler for sustainable computing.
 - [Concierto Cloud](https://www.concierto.cloud) — Cloud management platform.
@@ -242,7 +242,7 @@
 - [Go](https://go.dev/) — Compiled language and toolchain used to build portable infrastructure services and command-line tools.
 - [Go by Example](https://gobyexample.com) — Hands-on Go programming snippets and examples.
 - [GoAccess](https://goaccess.io/) — Terminal and HTML web-log analyser providing real-time HTTP traffic statistics.
-- [GoAlert](https://goalert.me) — On-call alert and escalation management.
+- [GoAlert](https://goalert.me) — Self-hosted on-call scheduling, alert routing and escalation platform with SMS and voice notification integrations.
 - [Gogs](https://gogs.io/) — Self-hosted Git service distributed as a lightweight application.
 - [Goldilocks](https://goldilocks.docs.fairwinds.com/) — Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 - [Gonzo](https://www.controltheory.com/gonzo) — K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.
@@ -494,7 +494,7 @@
 - [m9sweeper](https://m9sweeper.io) — Kubernetes security and compliance tool.
 - [Maintenant](https://maintenant.dev) — One-container self-hosted monitoring for Docker and Kubernetes with autodiscovery, uptime checks, metrics, and status pages.
 - [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) — Comprehensive IT operations management platform.
-- [ManageEngine NetFlow Analyzer](https://www.manageengine.com/netflow) — Network traffic monitoring and analysis.
+- [ManageEngine NetFlow Analyzer](https://www.manageengine.com/products/netflow/) — Proprietary network flow and bandwidth analysis platform with paid editions and a limited free edition.
 - [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Multi-vendor network configuration management with backups, change tracking, automation and compliance auditing.
 - [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) — MariaDB Operator reconciles MariaDB custom resources for database deployment, high availability and backup operations on Kubernetes.
 - [MariaDB Server](https://mariadb.org/) — Open-source relational database server with MySQL heritage.
@@ -544,7 +544,7 @@
 - [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) — Prometheus exporter that exposes hardware and operating-system metrics from Unix-like hosts.
 - [Node.js](https://nodejs.org/en) — Cross-platform JavaScript runtime used to build command-line tools, services, and automation.
 - [Nomad](https://www.nomadproject.io) — HashiCorp workload orchestrator for containerized and non-containerized jobs; Community Edition is source-available and Enterprise features and support require separate entitlements.
-- [ntfy](https://ntfy.sh) — Simple pub-sub notifications (self-hostable).
+- [ntfy](https://ntfy.sh) — HTTP-based push notification server and clients, available for self-hosting and as a separately paid hosted service.
 - [Numaflow](https://numaflow.numaproj.io) — Apache-2.0 Kubernetes-native stream-processing platform for event-driven, parallel data pipelines with independent sources and sinks.
 - [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) — NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
 - [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) — NVIDIA AI cloud environment, currently described as an internal proving ground, with separately documented Run:ai on DGX Cloud managed subscriptions.
@@ -685,7 +685,7 @@
 - [Sematext](https://sematext.com) — Full-stack observability platform covering logs, metrics, tracing, real user monitoring, and synthetic monitoring.
 - [Sensu](https://sensu.io) — Observability pipeline (metrics/events/alerts).
 - [Sentry](https://sentry.io/welcome) — Sentry monitors application errors, releases and performance. Its main server source uses FSL-1.1-Apache-2.0 with a competing-use restriction and an Apache-2.0 grant effective two years after each version is made available; hosted plans are separate commercial offerings.
-- [Server Pulse](https://github.com/Server-Pulse/server-pulse) — Linux server diagnostics and monitoring TUI covering system health, Docker containers, logs, networking, and security checks.
+- [Server Pulse](https://github.com/Server-Pulse/server-pulse) — Linux terminal UI for server health, Docker control, system logs, network diagnostics and security checks.
 - [ShellCheck](https://www.shellcheck.net) — Shell script linter.
 - [Shieldlist agent](https://git.lrob.net/Shieldlist/shieldlist-agent) — Host agent that tails service logs and applies rule-based IP sanctions through nftables, with an optional central controller.
 - [SigNoz](https://signoz.io) — OpenTelemetry-native observability platform for logs, metrics and traces, with MIT community code and separately restricted Enterprise components.
@@ -788,7 +788,7 @@
 - [WeKan](https://wekan.fi) — Open-source kanban board for task and project management.
 - [WinBoat](https://www.winboat.app/) — Linux desktop application that runs Windows in a managed virtual machine with integrated applications and filesystem access.
 - [Windmill](https://www.windmill.dev) — Code-first self-hostable workflow, app and AI-agent execution platform with AGPL/Apache open-source components and separately licensed enterprise and distributed-image features.
-- [Wireshark](https://www.wireshark.org) — Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
+- [Wireshark](https://www.wireshark.org) — Desktop network protocol analyzer for live packet capture and saved trace inspection.
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 - [WSL container](https://learn.microsoft.com/en-us/windows/wsl/wsl-container) — Run Linux containers directly inside WSL 2 without a Docker daemon.
 - [WSO2 API Platform](https://wso2.com/api-platform/) — API lifecycle platform with gateway, governance, and developer-portal capabilities across deployment models.
@@ -796,11 +796,11 @@
 - [XCA](https://www.hohnstaedt.de/xca) — X.509 certificate and key management.
 - [XCP-ng](https://xcp-ng.org/) — Xen-based open-source virtualization platform for managing hosts, resource pools, and virtual machines.
 - [xh](https://github.com/ducaale/xh) — Command-line HTTP client with concise request syntax and formatted responses.
+- [Xurrent IMR (formerly Zenduty)](https://www.xurrent.com/incident-management-response) — Commercial hosted incident-management and on-call response platform, renamed from Zenduty to Xurrent IMR in November 2025.
 - [YAML](https://yaml.org) — Data serialization format used in Kubernetes.
 - [youki](https://youki-dev.github.io/youki/) — OCI container runtime implemented in Rust.
 - [Zabbix](https://www.zabbix.com) — Zabbix monitors infrastructure with server, proxy, agent and alerting components. Software from 7.0 uses AGPL-3.0-only; releases through 6.4 use GPL-2.0-or-later. Documentation has separate terms.
 - [Zellij](https://zellij.dev/) — Terminal workspace and multiplexer with layouts, panes, sessions, and plugins.
-- [Zenduty](https://github.com/zenduty) — Incident management and on-call platform with developer-friendly APIs.
 - [zeropod](https://github.com/ctrox/zeropod) — Scale Kubernetes pods to zero and restore them on demand using checkpoint and restore.
 - [Zipkin](https://zipkin.io) — Open-source distributed tracing collector and UI for investigating service latency and dependencies using pluggable storage.
 - [zoxide](https://github.com/ajeetdsouza/zoxide) — Shell command that ranks visited directories to provide faster directory navigation.
