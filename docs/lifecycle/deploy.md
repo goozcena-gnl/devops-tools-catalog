@@ -152,7 +152,7 @@
 - [EasyMile PostgreSQL Operator](https://easymile.github.io/postgresql-operator) — Kubernetes operator for managing PostgreSQL instances.
 - [ecc.tools](https://ecc.tools) — OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
 - [Eclipse Jetty](https://jetty.org/) — Java HTTP server and servlet container usable standalone or embedded.
-- [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) — Visualize EKS node usage and capacity.
+- [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) — Terminal view of EKS node allocatable capacity against scheduled pod resource requests, not measured usage.
 - [Elemental](https://elemental.docs.rancher.com/) — Rancher-integrated stack for centrally managing immutable operating-system images on Kubernetes nodes.
 - [env zero](https://www.envzero.com/) — Commercial infrastructure-as-code control platform for self-service environments, workflow automation, policy, governance, and cloud-cost management.
 - [Envoy](https://www.envoyproxy.io) — Cloud-native L4/L7 proxy used for edge routing, service networking, and observability-aware traffic control.
@@ -245,12 +245,12 @@
 - [Juju](https://canonical.com/juju) — Open-source application orchestration engine for deploying and operating charm-based applications across machines and Kubernetes.
 - [k0rdent](https://docs.k0rdent.io/latest) — Kubernetes-native platform for distributed cluster lifecycle and multi-cluster service management.
 - [k0s](https://k0sproject.io) — Kubernetes distribution.
-- [k0smotron](https://k0smotron.io) — Hosted k0s control-plane operator and Cluster API integration with separate software and documentation licences.
+- [k0smotron](https://k0smotron.io) — Hosted k0s control-plane operator for managing child Kubernetes clusters through Cluster API.
 - [k10ls](https://github.com/besrabasant/k10ls) — Native Kubernetes API-based CLI for keeping port-forwards to pods and services open across clusters and contexts.
 - [k3d](https://k3d.io/stable) — Docker-based local cluster wrapper running the lightweight k3s Kubernetes distribution.
 - [k3s](https://k3s.io) — Lightweight Kubernetes by Rancher.
 - [k3sup](https://github.com/alexellis/k3sup) — Command-line installer for bootstrapping and joining remote K3s nodes over SSH.
-- [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) — Kubernetes resource cleaner.
+- [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) — Kubernetes controller that finds stale or unhealthy resources and can notify, transform or delete them.
 - [K8s Diagram Builder](https://www.k8sdiagram.fun/) — Open-source visual editor that imports Kubernetes YAML into resource diagrams and generates YAML from edited topologies.
 - [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) — CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
 - [k8s-d2](https://github.com/vieitesss/k8s-d2) — Generate D2 diagrams from Kubernetes topology and resources.
@@ -278,7 +278,7 @@
 - [Keel](https://keel.sh) — Automated Kubernetes deployment updates.
 - [Kelos](https://github.com/kelos-dev/kelos) — Kubernetes-native framework for orchestrating autonomous AI coding agents.
 - [KGateway](https://kgateway.dev) — Envoy-based Kubernetes Gateway API control plane for routing applications and API traffic.
-- [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file) — Visualize and inspect Kubernetes cluster event history.
+- [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi) — Agentless Kubernetes log visualizer for diagnosing historical incidents through resource timelines and topology.
 - [KICS](https://kics.io) — IaC scanning for security issues.
 - [kimspect](https://github.com/koithos/kimspect) — Inspect container images used by pods, nodes, namespaces, and registries from the CLI.
 - [kind](https://kind.sigs.k8s.io) — Kubernetes IN Docker - local clusters for testing.
@@ -315,11 +315,11 @@
 - [KubeClipper](https://kubeclipper.io/en) — Web-based tool for rapid deployment and management of Kubernetes clusters.
 - [KubeCM](https://kubecm.cloud/) — Command-line utility for merging, switching, and managing kubeconfig files and contexts.
 - [kubeconform](https://github.com/yannh/kubeconform) — Kubernetes manifest validator that checks JSON schemas locally or in CI, with configurable schemas for custom resources and offline operation.
-- [kubectl](https://kubernetes.io/docs/reference/kubectl) — Kubernetes command-line tool.
+- [kubectl](https://kubernetes.io/docs/reference/kubectl) — Kubernetes command-line client for inspecting and managing cluster resources, including declarative manifests.
 - [kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference) — Cheat sheet for `kubectl` commands.
 - [kubectl-ai](https://github.com/GoogleCloudPlatform/kubectl-ai) — GoogleCloudPlatform-hosted, community kubectl AI assistant that can execute kubectl and shell tools using configured Kubernetes credentials and local or hosted model backends.
 - [kubectl-browse-pvc](https://github.com/clbx/kubectl-browse-pvc) — Browse Kubernetes PVCs from the CLI.
-- [kubectl-df-pv](https://github.com/yashbhutwala/kubectl-df-pv) — Show disk usage for Kubernetes persistent volumes.
+- [kubectl-df-pv](https://github.com/yashbhutwala/kubectl-df-pv) — kubectl plugin for reporting persistent-volume space usage when compatible node and storage metrics are available.
 - [kubectl-explore](https://github.com/keisku/kubectl-explore) — Interactive kubectl resource explorer.
 - [kubectl-klock](https://github.com/applejag/kubectl-klock) — Stream and display Kubernetes resource watch updates in a readable terminal view.
 - [kubectx + kubens](https://github.com/ahmetb/kubectx) — Companion kubectx and kubens CLIs for switching kubectl contexts and namespaces, with shell completion, optional fzf selection and context-shell conveniences.
@@ -370,7 +370,7 @@
 - [LangSmith](https://smith.langchain.com) — Commercial LangSmith platform for LLM and agent observability, evaluations and debugging, with Cloud, Hybrid and Enterprise-licensed self-hosted deployment options.
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill) — Agent skill that researches current topics across web and social sources and synthesizes grounded summaries.
 - [Lazydocker](https://github.com/jesseduffield/lazydocker) — Terminal UI for Docker and Docker Compose.
-- [Lens](https://lenshq.io) — Kubernetes IDE (the former open-source core has been retired; current product is proprietary).
+- [Lens](https://lenshq.io) — Commercial Mirantis Lens Desktop Kubernetes IDE; its formerly open-source core is retired.
 - [lfk](https://github.com/janosmiko/lfk) — Lightning-fast, keyboard-focused TUI for navigating and managing Kubernetes clusters with a three-column Miller columns layout and owner-based resource hierarchy.
 - [libvirt](https://libvirt.org) — C library, API, and daemons for managing virtualization through drivers such as QEMU/KVM and Xen.
 - [Lima](https://lima-vm.io) — Runs Linux virtual machines on macOS and Linux hosts for local container and development workflows.
@@ -518,7 +518,7 @@
 - [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) — Scaleway managed Kubernetes control plane for clusters whose nodes can span cloud and on-premises infrastructure.
 - [Scalr](https://scalr.com/) — Commercial Terraform/OpenTofu remote operations platform for central runs, state, policy and drift detection, with optional private run agents.
 - [Score](https://score.dev) — Score is a platform-agnostic container workload specification expressed in score.yaml; separate implementations such as score-compose and score-k8s translate it into platform configuration. The specification repository is not a Kubernetes deployment platform.
-- [Seabird](https://getseabird.github.io) — Native desktop app for exploring and managing Kubernetes clusters with an integrated terminal and manifest editor (MPL-2.0).
+- [Seabird](https://getseabird.github.io) — Native Kubernetes desktop IDE with terminal, logs and resource editing; MPL-2.0 source and paid software with an unlimited free trial. and manifest editor (MPL-2.0).
 - [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) — Encrypt Kubernetes secrets for GitOps workflows.
 - [Sealos](https://sealos.io) — Cloud operating system for Kubernetes.
 - [SeaweedFS](https://seaweedfs.com) — Distributed storage system for files, objects, and volumes.

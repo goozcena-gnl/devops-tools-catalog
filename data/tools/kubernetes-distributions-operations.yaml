@@ -574,7 +574,7 @@
   needs_review: false
 - id: eks-node-viewer
   name: EKS Node Viewer
-  summary: Visualize EKS node usage and capacity.
+  summary: "Terminal view of EKS node allocatable capacity against scheduled pod resource requests, not measured usage."
   repository_url: https://github.com/awslabs/eks-node-viewer
   categories:
   - kubernetes-distributions-operations
@@ -588,10 +588,11 @@
   - deploy
   - operate
   use_when:
-  - You need quick CLI visibility into EKS node utilization and Karpenter/CA decisions.
+  - "Inspect EKS node packing using pod resource requests and allocatable capacity."
   avoid_when:
-  - You're not on EKS or already have Grafana dashboards for node metrics.
-  deployment_models: []
+  - "You need actual CPU/memory utilization; optional cloud pricing lookups need additional AWS IAM permissions."
+  deployment_models:
+  - "local"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -599,8 +600,11 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L26
-  - legacy:devopstools_final.md#L458
+  - "legacy:4_Kubernetes-Containers/README.md#L26"
+  - "legacy:devopstools_final.md#L458"
+  - "https://github.com/awslabs/eks-node-viewer"
+  - "https://github.com/awslabs/eks-node-viewer/blob/main/LICENSE"
+  license_spdx: Apache-2.0
   needs_review: true
 - id: exoscale-sks
   name: Exoscale SKS
@@ -924,9 +928,12 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "Create candidate Gateway API resources from supported Kubernetes Ingress resources during a reviewed migration."
+  avoid_when:
+  - "Provider-specific annotations or unsupported fields cannot be independently reviewed for conversion gaps."
+  deployment_models:
+  - "local"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -934,7 +941,10 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:devopstools_final.md#L463
+  - "legacy:devopstools_final.md#L463"
+  - "https://github.com/kubernetes-sigs/ingress2gateway"
+  - "https://github.com/kubernetes-sigs/ingress2gateway/blob/main/LICENSE"
+  license_spdx: Apache-2.0
   needs_review: true
 - id: json2k8s
   name: json2k8s
@@ -1045,7 +1055,7 @@
   needs_review: false
 - id: k0smotron
   name: k0smotron
-  summary: "Hosted k0s control-plane operator and Cluster API integration with separate software and documentation licences."
+  summary: "Hosted k0s control-plane operator for managing child Kubernetes clusters through Cluster API."
   official_url: https://k0smotron.io
   repository_url: https://github.com/k0sproject/k0smotron
   categories:
@@ -1059,10 +1069,12 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
+  use_when:
+  - "Provision hosted k0s child control planes using Cluster API with validated version and isolation requirements."
   avoid_when:
-  - "You need one confirmed licence for software and documentation or have not validated k0s/CAPI compatibility and hosted control-plane isolation."
-  deployment_models: []
+  - "Management cluster isolation or compatibility is not established; repository docs use CC-BY-SA-4.0 rather than the code's Apache-2.0."
+  deployment_models:
+  - "kubernetes"
   license_model: oss
   maturity: unknown
   status: "needs-review"
@@ -1070,10 +1082,12 @@
   tags: []
   verified_on: "2026-10-26"
   sources:
-  - legacy:devopstools_final.md#L464
+  - "legacy:devopstools_final.md#L464"
   - "https://github.com/k0sproject/k0smotron/blob/v2.3.0/LICENSE"
   - "https://github.com/k0sproject/k0smotron/releases/tag/v2.3.0"
   - "https://docs.k0smotron.io/"
+  - "https://github.com/k0sproject/k0smotron/blob/main/LICENSE"
+  license_spdx: Apache-2.0
   needs_review: true
 - id: k10ls
   name: k10ls
@@ -1188,7 +1202,7 @@
   needs_review: false
 - id: k8s-cleaner-sveltos
   name: K8s Cleaner (Sveltos)
-  summary: Kubernetes resource cleaner.
+  summary: "Kubernetes controller that finds stale or unhealthy resources and can notify, transform or delete them."
   official_url: https://gianlucam76.github.io/k8s-cleaner/
   repository_url: https://github.com/gianlucam76/k8s-cleaner
   categories:
@@ -1203,10 +1217,11 @@
   - deploy
   - operate
   use_when:
-  - You have stale resources (completed jobs, orphaned configmaps) accumulating.
+  - "Apply an approved cleanup policy to Kubernetes resources with carefully scoped RBAC."
   avoid_when:
-  - You already have TTL controllers or namespace-level lifecycle policies.
-  deployment_models: []
+  - "Delete or transform operations could damage protected resources; verify selections with dry-run first."
+  deployment_models:
+  - "kubernetes"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -1214,8 +1229,11 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L29
-  - legacy:devopstools_final.md#L466
+  - "legacy:4_Kubernetes-Containers/README.md#L29"
+  - "legacy:devopstools_final.md#L466"
+  - "https://github.com/gianlucam76/k8s-cleaner"
+  - "https://github.com/gianlucam76/k8s-cleaner/blob/main/LICENSE"
+  license_spdx: Apache-2.0
   needs_review: true
 - id: k8s-d2
   name: k8s-d2
@@ -1521,8 +1539,8 @@
   license_spdx: GPL-3.0-only
 - id: khi-kubernetes-history-inspector
   name: KHI (Kubernetes History Inspector)
-  summary: Visualize and inspect Kubernetes cluster event history.
-  repository_url: https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file
+  summary: "Agentless Kubernetes log visualizer for diagnosing historical incidents through resource timelines and topology."
+  repository_url: "https://github.com/GoogleCloudPlatform/khi"
   categories:
   - kubernetes-distributions-operations
   subcategories:
@@ -1535,10 +1553,12 @@
   - deploy
   - operate
   use_when:
-  - You need to reconstruct incident timelines from cluster events.
+  - "Reconstruct incident timelines using available Kubernetes log and audit records."
   avoid_when:
-  - You already aggregate events into a SIEM or observability platform.
-  deployment_models: []
+  - "Necessary logs or audit events are unavailable, or their access conflicts with retention and privacy controls."
+  deployment_models:
+  - "local"
+  - "container"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -1546,8 +1566,11 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L33
-  - legacy:devopstools_final.md#L474
+  - "legacy:4_Kubernetes-Containers/README.md#L33"
+  - "legacy:devopstools_final.md#L474"
+  - "https://github.com/GoogleCloudPlatform/khi"
+  - "https://github.com/GoogleCloudPlatform/khi/blob/main/LICENSE"
+  license_spdx: Apache-2.0
   needs_review: true
 - id: kimspect
   name: kimspect
@@ -2255,7 +2278,7 @@
   needs_review: false
 - id: kubectl
   name: kubectl
-  summary: Kubernetes command-line tool.
+  summary: "Kubernetes command-line client for inspecting and managing cluster resources, including declarative manifests."
   official_url: https://kubernetes.io/docs/reference/kubectl
   categories:
   - kubernetes-distributions-operations
@@ -2269,10 +2292,11 @@
   - deploy
   - operate
   use_when:
-  - Interacting with any Kubernetes cluster—it's the essential baseline tool.
+  - "Inspect Kubernetes resources, troubleshoot workloads or apply declarative manifests with approved access."
   avoid_when:
-  - You should be using declarative GitOps instead of imperative commands in production.
-  deployment_models: []
+  - "The kubectl client is outside supported version skew or unreviewed changes would bypass GitOps controls."
+  deployment_models:
+  - "local"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -2280,8 +2304,14 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L42
-  - legacy:devopstools_final.md#L492
+  - "legacy:4_Kubernetes-Containers/README.md#L42"
+  - "legacy:devopstools_final.md#L492"
+  - "https://kubernetes.io/docs/reference/kubectl/"
+  - "https://kubernetes.io/releases/version-skew-policy/"
+  - "https://github.com/kubernetes/kubernetes/blob/master/LICENSE"
+  repository_url: "https://github.com/kubernetes/kubernetes"
+  documentation_url: "https://kubernetes.io/docs/reference/kubectl/"
+  license_spdx: Apache-2.0
   needs_review: true
 - id: kubectl-ai
   name: kubectl-ai
@@ -2381,7 +2411,7 @@
   needs_review: true
 - id: kubectl-df-pv
   name: kubectl-df-pv
-  summary: Show disk usage for Kubernetes persistent volumes.
+  summary: "kubectl plugin for reporting persistent-volume space usage when compatible node and storage metrics are available."
   repository_url: https://github.com/yashbhutwala/kubectl-df-pv
   categories:
   - kubernetes-distributions-operations
@@ -2395,10 +2425,11 @@
   - deploy
   - operate
   use_when:
-  - You need a quick `df`-like view of PV utilization.
+  - "Inspect PV utilization with suitable node API access, RBAC and compatible storage metrics."
   avoid_when:
-  - You already monitor PV usage via Prometheus/Grafana.
-  deployment_models: []
+  - "Your storage provisioner lacks supported metrics, or AKS/EKS compatibility has not been tested."
+  deployment_models:
+  - "local"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -2406,8 +2437,11 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L45
-  - legacy:devopstools_final.md#L495
+  - "legacy:4_Kubernetes-Containers/README.md#L45"
+  - "legacy:devopstools_final.md#L495"
+  - "https://github.com/yashbhutwala/kubectl-df-pv"
+  - "https://github.com/yashbhutwala/kubectl-df-pv/blob/master/LICENSE"
+  license_spdx: Apache-2.0
   needs_review: true
 - id: kubectl-explore
   name: kubectl-explore
@@ -3667,7 +3701,7 @@
   needs_review: false
 - id: lens
   name: Lens
-  summary: Kubernetes IDE (the former open-source core has been retired; current product is proprietary).
+  summary: "Commercial Mirantis Lens Desktop Kubernetes IDE; its formerly open-source core is retired."
   official_url: https://lenshq.io
   repository_url: https://github.com/lensapp/lens
   categories:
@@ -3682,19 +3716,25 @@
   - deploy
   - operate
   use_when:
-  - You want a polished GUI with enterprise support and extensions.
+  - "Use a vendor-supported Kubernetes desktop IDE with subscription-based offerings."
   avoid_when:
-  - You prefer open-source alternatives (FreeLens/OpenLens) or terminal workflows.
-  deployment_models: []
-  license_model: unknown
+  - "You need a maintained open-source distribution; historical MIT code does not license the current proprietary Lens desktop product."
+  deployment_models:
+  - "local"
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:4_Kubernetes-Containers/README.md#L62
-  - legacy:devopstools_final.md#L517
+  - "legacy:4_Kubernetes-Containers/README.md#L62"
+  - "legacy:devopstools_final.md#L517"
+  - "https://github.com/lensapp/lens"
+  - "https://docs.k8slens.dev/"
+  - "https://lenshq.io/"
+  documentation_url: "https://docs.k8slens.dev/"
+  commercial_offering: true
   needs_review: true
 - id: lfk
   name: lfk
@@ -4418,8 +4458,7 @@
   needs_review: false
 - id: seabird
   name: Seabird
-  summary: Native desktop app for exploring and managing Kubernetes clusters with an integrated terminal
-    and manifest editor (MPL-2.0).
+  summary: "Native Kubernetes desktop IDE with terminal, logs and resource editing; MPL-2.0 source and paid software with an unlimited free trial."
   official_url: https://getseabird.github.io
   repository_url: https://github.com/getseabird/seabird
   categories:
@@ -4433,9 +4472,12 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "Explore Kubernetes workloads with a local desktop IDE under its distribution terms."
+  avoid_when:
+  - "You require independently confirmed current upstream support, or assume the software is entirely free because its source is MPL-2.0."
+  deployment_models:
+  - "local"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -4443,7 +4485,11 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:devopstools_final.md#L522
+  - "legacy:devopstools_final.md#L522"
+  - "https://github.com/getseabird/seabird"
+  - "https://github.com/getseabird/seabird/blob/main/LICENSE"
+  license_spdx: MPL-2.0
+  commercial_offering: true
   needs_review: true
 - id: security-contexts
   name: Security Contexts

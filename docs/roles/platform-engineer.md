@@ -290,7 +290,7 @@
 | [Keygraph](https://github.com/KeygraphHQ) | Emerging and experimental tools | open-core | needs-review |
 | [kftray](https://kftray.app/) | Kubernetes distributions and operations | oss | active |
 | [KGateway](https://kgateway.dev) | Kubernetes networking, storage and add-ons | oss | active |
-| [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file) | Kubernetes distributions and operations | oss | needs-review |
+| [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi) | Kubernetes distributions and operations | oss | needs-review |
 | [KICS](https://kics.io) | Infrastructure as Code | oss | active |
 | [Killer.sh](https://killer.sh) | Documentation, learning and career resources | documentation | needs-review |
 | [Killercoda](https://github.com/killercoda) | Documentation, learning and career resources | documentation | needs-review |
@@ -401,7 +401,7 @@
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [LearnKube](https://learnkube.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Learnkube Kubernetes Instance Calculator](https://learnkube.com/kubernetes-instance-calculator) | FinOps and sustainability | documentation | active |
-| [Lens](https://lenshq.io) | Kubernetes distributions and operations | unknown | needs-review |
+| [Lens](https://lenshq.io) | Kubernetes distributions and operations | commercial | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | open-core | needs-review |
