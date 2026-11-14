@@ -1233,7 +1233,6 @@
   - "legacy:devopstools_final.md#L466"
   - "https://github.com/gianlucam76/k8s-cleaner"
   - "https://github.com/gianlucam76/k8s-cleaner/blob/main/LICENSE"
-  license_spdx: Apache-2.0
   needs_review: true
 - id: k8s-d2
   name: k8s-d2
@@ -2309,7 +2308,6 @@
   - "https://kubernetes.io/docs/reference/kubectl/"
   - "https://kubernetes.io/releases/version-skew-policy/"
   - "https://github.com/kubernetes/kubernetes/blob/master/LICENSE"
-  repository_url: "https://github.com/kubernetes/kubernetes"
   documentation_url: "https://kubernetes.io/docs/reference/kubectl/"
   license_spdx: Apache-2.0
   needs_review: true

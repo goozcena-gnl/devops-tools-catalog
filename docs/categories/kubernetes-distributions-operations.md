@@ -1442,7 +1442,7 @@ Kubernetes command-line client for inspecting and managing cluster resources, in
 
 - The kubectl client is outside supported version skew or unreviewed changes would bypass GitOps controls.
 
-[Official site](https://kubernetes.io/docs/reference/kubectl) · [Documentation](https://kubernetes.io/docs/reference/kubectl/) · [Source repository](https://github.com/kubernetes/kubernetes)
+[Official site](https://kubernetes.io/docs/reference/kubectl) · [Documentation](https://kubernetes.io/docs/reference/kubectl/)
 
 ### kubectl Quick Reference
 

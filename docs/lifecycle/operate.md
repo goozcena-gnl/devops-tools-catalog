@@ -675,7 +675,7 @@
 - [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) — Scaleway managed Kubernetes service for clusters running on Scaleway compute, network, and storage resources.
 - [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) — Scaleway managed Kubernetes control plane for clusters whose nodes can span cloud and on-premises infrastructure.
 - [Scanopy](https://scanopy.net/) — Self-hosted network inventory and topology mapping platform with automated device discovery.
-- [Seabird](https://getseabird.github.io) — Native Kubernetes desktop IDE with terminal, logs and resource editing; MPL-2.0 source and paid software with an unlimited free trial. and manifest editor (MPL-2.0).
+- [Seabird](https://getseabird.github.io) — Native Kubernetes desktop IDE with terminal, logs and resource editing; MPL-2.0 source and paid software with an unlimited free trial.
 - [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) — Encrypt Kubernetes secrets for GitOps workflows.
 - [Sealos](https://sealos.io) — Cloud operating system for Kubernetes.
 - [SeaweedFS](https://seaweedfs.com) — Distributed storage system for files, objects, and volumes.

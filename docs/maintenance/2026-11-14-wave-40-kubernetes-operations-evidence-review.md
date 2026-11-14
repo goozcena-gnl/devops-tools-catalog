@@ -6,6 +6,7 @@ Inspected: **2026-11-14**. Planning and exact field freeze: [issue #175](https:/
 - **142 canonical raw records**, **51 needing review** before and after. Nine bounded corrections; one selected RETAIN (`openlens`); 132 nonselected records remain byte-for-byte unchanged.
 - All original `status`, `needs_review`, `maturity`, `verified_on`, IDs, names, categories, roles, stages, and `legacy:` entries are preserved. No lifecycle promotion.
 - Source-scoped `license_spdx` is not a grant for hosted services, historical editions or paid binaries.
+- **N2A preservation / corrective commit:** historical N2A guard (`tests/test_v022_n2a_hard_url.py`) protects `k8s-cleaner-sveltos.license_spdx`; preserve its pre-Wave-40 absent value despite verified upstream Apache-2.0 evidence, which remains in `sources` and this ledger. A separately reviewed supersession would be required before setting canonical SPDX. `kubectl.repository_url` remains absent to avoid duplicating the canonical Kubernetes repository URL; source LICENSE evidence stays in `sources`. Seabird's lifecycle descriptions are regenerated from the exact canonical summary without carrying forward the earlier stale suffix. No tests, policies or review flags were weakened.
 - Model counts after patch: 176 commercial / 65 unknown. Only the `lens` product classification changed.
 
 ## Field-level evidence
