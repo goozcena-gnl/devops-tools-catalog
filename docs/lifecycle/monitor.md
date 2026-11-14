@@ -10,7 +10,7 @@
 - [AppNeta](https://www.broadcom.com/products/software/network-management/appneta) — Network performance monitoring.
 - [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) — Grafana plugin that provides natural-language observability exploration.
 - [atop](https://github.com/Atoptool/atop) — Linux system and process monitor that records resource utilization for live and historical analysis.
-- [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) — Curated list of Prometheus resources.
+- [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) — Curated community collection of Prometheus learning resources, dashboards, exporters and tooling.
 - [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) — Curated, copy-pasteable Prometheus alert rules and guidance for common services and platforms.
 - [Beszel](https://beszel.dev) — Lightweight self-hosted hub-and-agent monitoring for hosts and Docker/Podman containers, with metric history and alerting.
 - [Better Stack](https://betterstack.com/) — Commercial observability and incident-management platform with telemetry, on-call, and status-page services.
@@ -21,7 +21,7 @@
 - [Bugsink](https://www.bugsink.com/) — Self-hosted Sentry SDK-compatible error tracking service.
 - [Cacti](https://www.cacti.net) — Network graphing solution (RRDTool-based).
 - [cAdvisor](https://github.com/google/cadvisor) — Container Advisor daemon that collects, aggregates, and exports container resource usage and performance data.
-- [cardamon](https://github.com/dominikhei/cardamon) — Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop rules for them.
+- [cardamon](https://github.com/dominikhei/cardamon) — Prometheus metrics auditor comparing stored metric names with query logs, alerting rules and Grafana dashboards.
 - [Centreon](https://www.centreon.com) — Monitoring platform with open source base and enterprise/cloud offerings.
 - [changedetection.io](https://changedetection.io/) — Website change-monitoring service with self-hosted and hosted deployment options.
 - [Checkmate](https://checkmate.so/) — Self-hosted uptime and infrastructure monitoring platform with incidents, status pages, and host metrics.
@@ -53,7 +53,7 @@
 - [Gonzo](https://www.controltheory.com/gonzo) — K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.
 - [gping](https://github.com/orf/gping) — Ping utility with terminal graphs for comparing host latency.
 - [Grafana](https://grafana.com) — Grafana visualization and alerting product family: OSS dashboards query external data sources; Enterprise adds commercial features and plugins, and Grafana Cloud is the managed service.
-- [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) — Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).
+- [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) — Grafana Alloy deployment documentation for OpenTelemetry Collector pipelines covering metrics, logs, traces and profiles.
 - [Grafana Beyla](https://grafana.com/oss/beyla) — Grafana-supported distribution of OpenTelemetry eBPF Instrumentation for Linux application metrics and transaction tracing, with Grafana-specific integrations and a release cycle distinct from upstream OBI.
 - [Grafana Loki](https://grafana.com/oss/loki) — Open-source log aggregation backend that indexes log labels and queries log content with LogQL; Grafana provides a separate UI and Grafana Cloud Logs is a managed offering.
 - [Grafana Mimir](https://grafana.com/oss/mimir) — Open-source Prometheus-compatible metrics backend for multi-tenant ingestion, global PromQL queries and long-term object storage; Grafana Cloud Metrics is a separate managed offering.
@@ -70,7 +70,7 @@
 - [Klarity](https://github.com/selvarajmurugesan90/klarity) — Self-hosted observability dashboard that correlates Kubernetes resources, logs, metrics, events, and traces.
 - [Komodor](https://komodor.com) — Agentic operations platform for production, covering AI SRE, cost optimization and software operations with governed agent workflows.
 - [KRR](https://github.com/robusta-dev/krr) — Robusta KRR's MIT-licensed CLI analyzes Prometheus-compatible telemetry and recommends Kubernetes CPU and memory requests and limits; the optional KRR Enforcer webhook automatically applies recommendations when pods are created.
-- [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Exports precomputed Kubernetes cluster binpacking metrics.
+- [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Prometheus exporter comparing Kubernetes pod requests with node allocatable resources over time.
 - [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) — Kubernetes SIG Instrumentation service exposing Prometheus-format metrics derived from Kubernetes API object state; resource-usage collection by metrics-server or cAdvisor and storage/query by Prometheus are separate.
 - [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) — Jsonnet monitoring mixin that generates Kubernetes Prometheus alerting and recording rules and Grafana dashboards, maintained under kubernetes-sigs rather than a standalone monitoring server.
 - [KubeView](https://github.com/benc-uk/kubeview) — Read-only Kubernetes resource and relationship visualization with live SSE updates and optional pod-log viewing, served by a local or in-cluster Go web application.
@@ -84,8 +84,8 @@
 - [ManageEngine NetFlow Analyzer](https://www.manageengine.com/netflow) — Network traffic monitoring and analysis.
 - [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Multi-vendor network configuration management with backups, change tracking, automation and compliance auditing.
 - [Moogsoft](https://www.moogsoft.com) — AIOps alert-correlation and incident-management product family; its cloud service is renamed Dell APEX AIOps Incident Management, while on-premises and hosted Moogsoft boundaries remain under review.
-- [Munin](https://munin-monitoring.org) — Classic monitoring and graphing tool.
-- [Nagios](https://www.nagios.org) — Infrastructure monitoring (Nagios Core).
+- [Munin](https://munin-monitoring.org) — Network-wide plugin-based monitoring framework with node collection and historical graphs.
+- [Nagios](https://www.nagios.org) — Nagios Core monitors hosts and services through checks, plugins, notifications and an optional web interface.
 - [Netdata Cloud](https://www.netdata.cloud) — Netdata Cloud's proprietary hosted control plane has a personal non-commercial free tier and paid plans; telemetry stays on separate GPL-3.0-or-later Agents and Parents. The UI uses NCUL1, and commercial Cloud On-Premises is a separate deployment option.
 - [NetWatch Labs](https://www.netwatchlabs.com) — Collection of terminal-first network and system diagnostics tools for Linux operators.
 - [New Relic](https://newrelic.com/platform) — Hosted observability platform for application, infrastructure, log, digital-experience, and AI telemetry.
@@ -98,7 +98,7 @@
 - [OpenTelemetry Collector](https://opentelemetry.io/docs/collector) — Vendor-neutral telemetry pipeline implementation using receivers, processors and exporters for traces, metrics and logs; the core framework repository and the contrib component repository are distinct.
 - [OpenTelemetry eBPF Instrumentation](https://opentelemetry.io/docs/zero-code/obi) — OpenTelemetry's development-stage Linux eBPF auto-instrumentation software for application metrics and spans, with supported standalone and container artifacts and version-zero compatibility limitations.
 - [osquery](https://osquery.io/) — Operating-system instrumentation framework that exposes host state through a SQL interface.
-- [otel-gui](https://github.com/metafab/otel-gui) — Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls, service maps, and correlated logs.
+- [otel-gui](https://github.com/metafab/otel-gui) — Local OpenTelemetry OTLP viewer for development-time traces, logs and metrics.
 - [PagerDuty](https://www.pagerduty.com/platform/operations-cloud/) — Hosted operations platform for on-call management, incident response, and operational automation.
 - [Palo Alto Cortex Cloud](https://www.paloaltonetworks.com/cortex/cloud) — Commercial CNAPP unifying application security, cloud posture and runtime protection with SOC workflows.
 - [Pandora FMS](https://pandorafms.com/en/product-overview/) — Monitoring platform with commercial and agent-limited free editions; the former open-source branch continues independently as Pandora OPEN.
@@ -123,7 +123,7 @@
 - [Slok](https://github.com/slok-operator/slok) — Kubernetes operator that manages service-level objectives and tracks error budgets.
 - [Sniffnet](https://sniffnet.app/) — Desktop network-traffic monitor showing connections and traffic statistics.
 - [Stratoshark](https://stratoshark.org/) — System-call and log analyzer from the Wireshark project for inspecting captured system activity.
-- [syslog-ng](https://www.syslog-ng.com/products/open-source-log-management) — Syslog daemon/log collector with parsing and multiple destinations.
+- [syslog-ng](https://www.syslog-ng.com/products/open-source-log-management) — Extensible syslog daemon for collecting, parsing, filtering and forwarding logs to multiple destinations.
 - [sysstat](https://sysstat.github.io/) — Linux performance-monitoring utilities including sar, iostat, mpstat, and pidstat.
 - [SysWarden](https://syswarden.io) — Host-local Linux security orchestrator combining nftables enforcement, host telemetry, bounded threat intelligence, out-of-band WAAP log analysis, authenticated HA, and a terminal dashboard.
 - [Telegraf](https://www.influxdata.com/time-series-platform/telegraf) — InfluxData's plugin-driven telemetry agent for collecting, processing, aggregating and writing metrics and events to InfluxDB or other backends, distinct from a time-series database and Telegraf Enterprise.
