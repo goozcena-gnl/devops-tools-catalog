@@ -107,15 +107,15 @@ Grafana plugin that provides natural-language observability exploration.
 **Model:** Documentation<br>
 **Status:** Needs Review
 
-Curated list of Prometheus resources.
+Curated community collection of Prometheus learning resources, dashboards, exporters and tooling.
 
 **Use when**
 
-- Ramping up on the Prometheus ecosystem.
+- Find external reference material and community examples for Prometheus.
 
 **Consider alternatives when**
 
-- You need hands-on tooling, not reading lists.
+- You need an executable monitoring tool or assume external links inherit the list's CC0 licence.
 
 [Source repository](https://github.com/roaldnefs/awesome-prometheus)
 
@@ -280,15 +280,15 @@ Container Advisor daemon that collects, aggregates, and exports container resour
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop rules for them.
+Prometheus metrics auditor comparing stored metric names with query logs, alerting rules and Grafana dashboards.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Identify candidates for reducing unused metrics after reviewing queries, rules and dashboards.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You intend to apply drop rules blindly: unqueried metrics can still matter during incidents.
 
 [Source repository](https://github.com/dominikhei/cardamon)
 
@@ -743,15 +743,15 @@ Grafana visualization and alerting product family: OSS dashboards query external
 **Model:** Documentation<br>
 **Status:** Needs Review
 
-Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).
+Grafana Alloy deployment documentation for OpenTelemetry Collector pipelines covering metrics, logs, traces and profiles.
 
 **Use when**
 
-- Already in the Grafana ecosystem and want a unified collector replacing Promtail/Agent.
+- Plan a documented deployment of Grafana Alloy telemetry collection and routing pipelines.
 
 **Consider alternatives when**
 
-- OTel Collector already satisfies your vendor-neutral pipeline needs.
+- You need a different collector implementation or mistake these docs for separately licensed Alloy software.
 
 [Official site](https://grafana.com/docs/alloy/latest/set-up/deploy) · [Source repository](https://github.com/grafana/alloy)
 
@@ -1074,15 +1074,15 @@ Robusta KRR's MIT-licensed CLI analyzes Prometheus-compatible telemetry and reco
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Exports precomputed Kubernetes cluster binpacking metrics.
+Prometheus exporter comparing Kubernetes pod requests with node allocatable resources over time.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Track request-based binpacking ratios by node and node group with Prometheus.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require actual CPU utilization or have not reviewed scraping, RBAC or cluster compatibility.
 
 [Source repository](https://github.com/procore-oss/kube-binpacking-exporter)
 
@@ -1248,15 +1248,15 @@ One-container self-hosted monitoring for Docker and Kubernetes with autodiscover
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Classic monitoring and graphing tool.
+Network-wide plugin-based monitoring framework with node collection and historical graphs.
 
 **Use when**
 
-- Quick capacity-planning graphs for a small fleet.
+- Monitor hosts and network services using Munin master, nodes and community plugins.
 
 **Consider alternatives when**
 
-- You need real-time alerting or high-resolution metrics.
+- You need distributed tracing, or require unverified plugins to inherit the core software licence.
 
 [Official site](https://munin-monitoring.org) · [Source repository](https://github.com/munin-monitoring/munin)
 
@@ -1267,15 +1267,15 @@ Classic monitoring and graphing tool.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Infrastructure monitoring (Nagios Core).
+Nagios Core monitors hosts and services through checks, plugins, notifications and an optional web interface.
 
 **Use when**
 
-- Legacy check plugins already exist and your team knows the ecosystem.
+- Operate Nagios Core host and service checks in a legacy or plugin-based monitoring environment.
 
 **Consider alternatives when**
 
-- Starting green-field—modern alternatives offer better UX and scalability.
+- You need separately licensed Nagios XI features or a distributed-tracing backend.
 
 [Official site](https://www.nagios.org) · [Source repository](https://github.com/NagiosEnterprises/nagioscore)
 
@@ -1461,15 +1461,15 @@ Operating-system instrumentation framework that exposes host state through a SQL
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls, service maps, and correlated logs.
+Local OpenTelemetry OTLP viewer for development-time traces, logs and metrics.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Inspect local OTLP/HTTP or OTLP/gRPC traces, logs and metrics without a full telemetry backend.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require production retention or cannot securely handle potentially sensitive telemetry.
 
 [Source repository](https://github.com/metafab/otel-gui)
 
@@ -1748,15 +1748,15 @@ Desktop network-traffic monitor showing connections and traffic statistics.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Syslog daemon/log collector with parsing and multiple destinations.
+Extensible syslog daemon for collecting, parsing, filtering and forwarding logs to multiple destinations.
 
 **Use when**
 
-- Advanced syslog parsing, filtering, and multi-destination routing.
+- Route system and application logs through an extensible log-processing daemon.
 
 **Consider alternatives when**
 
-- Rsyslog already meets your needs or you're in a container-only environment.
+- You need a complete search-and-dashboard backend or a uniform SPDX for mixed GPL/LGPL source modules.
 
 [Official site](https://www.syslog-ng.com/products/open-source-log-management) · [Source repository](https://github.com/syslog-ng/syslog-ng)
 
