@@ -51,7 +51,7 @@
 - [Atuin](https://atuin.sh/) — Shell-history tool with searchable local storage and optional encrypted synchronization.
 - [Auth0](https://auth0.com) — Identity platform for authenticating users, applications, and AI agents.
 - [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) — Collection of Kubernetes architecture diagrams.
-- [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) — Curated list of Prometheus resources.
+- [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) — Curated community collection of Prometheus learning resources, dashboards, exporters and tooling.
 - [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) — Curated, copy-pasteable Prometheus alert rules and guidance for common services and platforms.
 - [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) — Collection of 130+ specialized Codex subagents for a wide range of development use cases.
 - [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) — AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
@@ -98,7 +98,7 @@
 - [Canonical Kubernetes](https://ubuntu.com/kubernetes) — Canonical's open-source Kubernetes distribution for production clusters across public cloud, on-premises, and edge infrastructure.
 - [Capacitor Next](https://gimlet.io/capacitor-next/) — Local-first web interface for Kubernetes resources, Helm history, and Flux reconciliation state.
 - [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
-- [cardamon](https://github.com/dominikhei/cardamon) — Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop rules for them.
+- [cardamon](https://github.com/dominikhei/cardamon) — Prometheus metrics auditor comparing stored metric names with query logs, alerting rules and Grafana dashboards.
 - [Carvel](https://carvel.dev) — Kubernetes tools suite.
 - [Carvel kapp](https://carvel.dev/kapp) — Simple deployment tool for Kubernetes.
 - [Carvel ytt](https://carvel.dev/ytt) — YAML templating tool for Kubernetes configurations.
@@ -252,7 +252,7 @@
 - [Gotify](https://gotify.net/) — Self-hosted server and clients for receiving application push notifications.
 - [gping](https://github.com/orf/gping) — Ping utility with terminal graphs for comparing host latency.
 - [Grafana](https://grafana.com) — Grafana visualization and alerting product family: OSS dashboards query external data sources; Enterprise adds commercial features and plugins, and Grafana Cloud is the managed service.
-- [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) — Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).
+- [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) — Grafana Alloy deployment documentation for OpenTelemetry Collector pipelines covering metrics, logs, traces and profiles.
 - [Grafana Beyla](https://grafana.com/oss/beyla) — Grafana-supported distribution of OpenTelemetry eBPF Instrumentation for Linux application metrics and transaction tracing, with Grafana-specific integrations and a release cycle distinct from upstream OBI.
 - [Grafana Loki](https://grafana.com/oss/loki) — Open-source log aggregation backend that indexes log labels and queries log content with LogQL; Grafana provides a separate UI and Grafana Cloud Logs is a managed offering.
 - [Grafana MCP](https://github.com/grafana/mcp-grafana) — MCP server for Grafana observability queries and permission-controlled dashboard and alerting operations.
@@ -393,7 +393,7 @@
 - [Kube Monkey](https://github.com/asobti/kube-monkey) — Apache-2.0 Kubernetes pod-disruption service using opt-in application labels, scheduled termination windows and namespace filters; distinct from Netflix Chaos Monkey.
 - [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
 - [kube-bench](https://github.com/aquasecurity/kube-bench) — Aqua Security tool that checks Kubernetes node configuration against selected CIS benchmark profiles; it implements checks and does not define the CIS standard or certify full compliance.
-- [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Exports precomputed Kubernetes cluster binpacking metrics.
+- [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Prometheus exporter comparing Kubernetes pod requests with node allocatable resources over time.
 - [kube-dump](https://kube-dump.woozymasta.ru) — CLI and container scripts exporting readable Kubernetes API resources as YAML manifests; not a persistent-volume data backup.
 - [kube-hunter](https://aquasecurity.github.io/kube-hunter) — Legacy Aqua Kubernetes security-assessment tool with passive discovery and optional active exploitation; upstream states it is no longer under active development and recommends Trivy.
 - [Kube-OVN](https://www.kube-ovn.io) — OVN and Open vSwitch-based Kubernetes CNI supporting VPCs, overlays, underlays, and KubeVirt networking.
@@ -524,11 +524,11 @@
 - [MongoDB](https://www.mongodb.com/) — Document database server whose Community Edition source uses SSPL, with separate commercial Enterprise Advanced and managed Atlas offerings.
 - [Moogsoft](https://www.moogsoft.com) — AIOps alert-correlation and incident-management product family; its cloud service is renamed Dell APEX AIOps Incident Management, while on-premises and hosted Moogsoft boundaries remain under review.
 - [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) — Kubernetes CNI meta-plugin that delegates to other CNIs to attach multiple network interfaces to pods.
-- [Munin](https://munin-monitoring.org) — Classic monitoring and graphing tool.
+- [Munin](https://munin-monitoring.org) — Network-wide plugin-based monitoring framework with node collection and historical graphs.
 - [MySQL](https://www.mysql.com) — Relational database server with transactional storage, replication, and a large application ecosystem.
 - [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) — Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups, and upgrades.
 - [n8n](https://n8n.io) — Self-hostable visual and code-based workflow/AI automation platform under the restrictive Sustainable Use License, with separately licensed enterprise modules.
-- [Nagios](https://www.nagios.org) — Infrastructure monitoring (Nagios Core).
+- [Nagios](https://www.nagios.org) — Nagios Core monitors hosts and services through checks, plugins, notifications and an optional web interface.
 - [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) — Kubernetes operator that pauses idle workloads and wakes them on demand to reduce non-production resource consumption.
 - [Nelm](https://github.com/werf/nelm) — Helm-compatible Kubernetes deployment tool and Helm alternative with release planning and resource lifecycle management; not proven a drop-in replacement for every Helm plugin.
 - [Neovim](https://neovim.io/) — Extensible Vim-derived text editor with built-in APIs for plugins and editor automation.
@@ -586,7 +586,7 @@
 - [Orbit](https://gitlab.com/RMJx1/orbit) — Kubernetes multi-cluster management.
 - [OrbStack](https://orbstack.dev) — Local macOS environment for Docker containers, Kubernetes and Linux virtual machines.
 - [osquery](https://osquery.io/) — Operating-system instrumentation framework that exposes host state through a SQL interface.
-- [otel-gui](https://github.com/metafab/otel-gui) — Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls, service maps, and correlated logs.
+- [otel-gui](https://github.com/metafab/otel-gui) — Local OpenTelemetry OTLP viewer for development-time traces, logs and metrics.
 - [ouch](https://github.com/ouch-org/ouch) — Command-line archive compression and extraction tool with format detection.
 - [oVirt](https://www.ovirt.org/) — Open-source virtualization management platform for KVM hosts, virtual machines, storage, and networks.
 - [OVN-Kubernetes](https://ovn-kubernetes.io) — Kubernetes network plugin based on OVN and Open vSwitch; a separate project from Kube-OVN.
@@ -723,7 +723,7 @@
 - [Swiftorial](https://www.swiftorial.com/swiftlessons) — Interactive tutorials for learning Swift programming.
 - [Swimmer](https://github.com/teru01/swimmer) — User-friendly multi-cluster Kubernetes GUI client.
 - [Syncthing](https://syncthing.net/) — Continuous peer-to-peer file synchronization service with encrypted transport and no mandatory central server.
-- [syslog-ng](https://www.syslog-ng.com/products/open-source-log-management) — Syslog daemon/log collector with parsing and multiple destinations.
+- [syslog-ng](https://www.syslog-ng.com/products/open-source-log-management) — Extensible syslog daemon for collecting, parsing, filtering and forwarding logs to multiple destinations.
 - [sysstat](https://sysstat.github.io/) — Linux performance-monitoring utilities including sar, iostat, mpstat, and pidstat.
 - [System Upgrade Controller](https://github.com/rancher/system-upgrade-controller) — Automate Kubernetes upgrades.
 - [systemd](https://systemd.io) — Linux system and service manager providing process supervision, logging, timers, and host lifecycle controls.

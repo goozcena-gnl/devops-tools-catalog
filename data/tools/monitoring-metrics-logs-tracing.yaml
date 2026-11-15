@@ -182,7 +182,7 @@
   needs_review: false
 - id: awesome-prometheus
   name: Awesome Prometheus
-  summary: Curated list of Prometheus resources.
+  summary: "Curated community collection of Prometheus learning resources, dashboards, exporters and tooling."
   repository_url: https://github.com/roaldnefs/awesome-prometheus
   categories:
   - monitoring-metrics-logs-tracing
@@ -196,9 +196,9 @@
   - operate
   - monitor
   use_when:
-  - Ramping up on the Prometheus ecosystem.
+  - "Find external reference material and community examples for Prometheus."
   avoid_when:
-  - You need hands-on tooling, not reading lists.
+  - "You need an executable monitoring tool or assume external links inherit the list's CC0 licence."
   deployment_models: []
   license_model: documentation
   maturity: unknown
@@ -207,8 +207,10 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:5_Monitoring-Observability/README.md#L36
-  - legacy:devopstools_final.md#L737
+  - "legacy:5_Monitoring-Observability/README.md#L36"
+  - "legacy:devopstools_final.md#L737"
+  - "https://github.com/roaldnefs/awesome-prometheus/blob/main/README.md"
+  - "https://github.com/roaldnefs/awesome-prometheus/blob/main/LICENSE"
   needs_review: true
 - id: awesome-prometheus-alerts
   name: Awesome Prometheus Alerts
@@ -496,8 +498,7 @@
   repository_archived: false
 - id: cardamon
   name: cardamon
-  summary: Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop rules for
-    them.
+  summary: "Prometheus metrics auditor comparing stored metric names with query logs, alerting rules and Grafana dashboards."
   repository_url: https://github.com/dominikhei/cardamon
   categories:
   - monitoring-metrics-logs-tracing
@@ -510,9 +511,12 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "Identify candidates for reducing unused metrics after reviewing queries, rules and dashboards."
+  avoid_when:
+  - "You intend to apply drop rules blindly: unqueried metrics can still matter during incidents."
+  deployment_models:
+  - "local"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -520,7 +524,10 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:devopstools_final.md#L740
+  - "legacy:devopstools_final.md#L740"
+  - "https://github.com/dominikhei/cardamon/blob/main/README.md"
+  - "https://github.com/dominikhei/cardamon/blob/main/LICENSE"
+  license_spdx: Apache-2.0
   needs_review: true
 - id: centreon
   name: Centreon
@@ -1332,7 +1339,7 @@
   repository_archived: false
 - id: grafana-alloy-deploy
   name: Grafana Alloy Deploy
-  summary: Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).
+  summary: "Grafana Alloy deployment documentation for OpenTelemetry Collector pipelines covering metrics, logs, traces and profiles."
   official_url: https://grafana.com/docs/alloy/latest/set-up/deploy
   repository_url: https://github.com/grafana/alloy
   categories:
@@ -1347,9 +1354,9 @@
   - operate
   - monitor
   use_when:
-  - Already in the Grafana ecosystem and want a unified collector replacing Promtail/Agent.
+  - "Plan a documented deployment of Grafana Alloy telemetry collection and routing pipelines."
   avoid_when:
-  - OTel Collector already satisfies your vendor-neutral pipeline needs.
+  - "You need a different collector implementation or mistake these docs for separately licensed Alloy software."
   deployment_models: []
   license_model: documentation
   maturity: unknown
@@ -1358,8 +1365,11 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:5_Monitoring-Observability/README.md#L40
-  - legacy:devopstools_final.md#L745
+  - "legacy:5_Monitoring-Observability/README.md#L40"
+  - "legacy:devopstools_final.md#L745"
+  - "https://github.com/grafana/alloy/blob/main/README.md"
+  - "https://github.com/grafana/alloy/blob/main/LICENSING.md"
+  - "https://grafana.com/docs/alloy/latest/set-up/deploy/"
   needs_review: true
 - id: grafana-beyla
   name: Grafana Beyla
@@ -1971,7 +1981,7 @@
   needs_review: false
 - id: kube-binpacking-exporter
   name: kube-binpacking-exporter
-  summary: Exports precomputed Kubernetes cluster binpacking metrics.
+  summary: "Prometheus exporter comparing Kubernetes pod requests with node allocatable resources over time."
   repository_url: https://github.com/procore-oss/kube-binpacking-exporter
   categories:
   - monitoring-metrics-logs-tracing
@@ -1984,9 +1994,12 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "Track request-based binpacking ratios by node and node group with Prometheus."
+  avoid_when:
+  - "You require actual CPU utilization or have not reviewed scraping, RBAC or cluster compatibility."
+  deployment_models:
+  - "kubernetes"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -1994,7 +2007,10 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:devopstools_final.md#L731
+  - "legacy:devopstools_final.md#L731"
+  - "https://github.com/procore-oss/kube-binpacking-exporter/blob/main/README.md"
+  - "https://github.com/procore-oss/kube-binpacking-exporter/blob/main/LICENSE"
+  license_spdx: MIT
   needs_review: true
 - id: kube-state-metrics
   name: kube-state-metrics
@@ -2282,7 +2298,7 @@
   needs_review: true
 - id: munin
   name: Munin
-  summary: Classic monitoring and graphing tool.
+  summary: "Network-wide plugin-based monitoring framework with node collection and historical graphs."
   official_url: https://munin-monitoring.org
   repository_url: https://github.com/munin-monitoring/munin
   categories:
@@ -2297,10 +2313,11 @@
   - operate
   - monitor
   use_when:
-  - Quick capacity-planning graphs for a small fleet.
+  - "Monitor hosts and network services using Munin master, nodes and community plugins."
   avoid_when:
-  - You need real-time alerting or high-resolution metrics.
-  deployment_models: []
+  - "You need distributed tracing, or require unverified plugins to inherit the core software licence."
+  deployment_models:
+  - "self-hosted"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -2308,12 +2325,14 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:5_Monitoring-Observability/README.md#L14
-  - legacy:devopstools_final.md#L709
+  - "legacy:5_Monitoring-Observability/README.md#L14"
+  - "legacy:devopstools_final.md#L709"
+  - "https://github.com/munin-monitoring/munin/blob/master/README.rst"
+  - "https://github.com/munin-monitoring/munin/blob/master/COPYING"
   needs_review: true
 - id: nagios
   name: Nagios
-  summary: Infrastructure monitoring (Nagios Core).
+  summary: "Nagios Core monitors hosts and services through checks, plugins, notifications and an optional web interface."
   official_url: https://www.nagios.org
   repository_url: https://github.com/NagiosEnterprises/nagioscore
   categories:
@@ -2328,10 +2347,11 @@
   - operate
   - monitor
   use_when:
-  - Legacy check plugins already exist and your team knows the ecosystem.
+  - "Operate Nagios Core host and service checks in a legacy or plugin-based monitoring environment."
   avoid_when:
-  - Starting green-field—modern alternatives offer better UX and scalability.
-  deployment_models: []
+  - "You need separately licensed Nagios XI features or a distributed-tracing backend."
+  deployment_models:
+  - "self-hosted"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -2339,8 +2359,10 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:5_Monitoring-Observability/README.md#L15
-  - legacy:devopstools_final.md#L710
+  - "legacy:5_Monitoring-Observability/README.md#L15"
+  - "legacy:devopstools_final.md#L710"
+  - "https://github.com/NagiosEnterprises/nagioscore/blob/master/README.md"
+  - "https://github.com/NagiosEnterprises/nagioscore/blob/master/LICENSE"
   needs_review: true
 - id: netdata-cloud
   name: Netdata Cloud
@@ -2694,8 +2716,7 @@
   needs_review: false
 - id: otel-gui
   name: otel-gui
-  summary: Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls,
-    service maps, and correlated logs.
+  summary: "Local OpenTelemetry OTLP viewer for development-time traces, logs and metrics."
   repository_url: https://github.com/metafab/otel-gui
   categories:
   - monitoring-metrics-logs-tracing
@@ -2708,9 +2729,13 @@
   lifecycle_stages:
   - operate
   - monitor
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "Inspect local OTLP/HTTP or OTLP/gRPC traces, logs and metrics without a full telemetry backend."
+  avoid_when:
+  - "You require production retention or cannot securely handle potentially sensitive telemetry."
+  deployment_models:
+  - "local"
+  - "container"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -2718,7 +2743,10 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:devopstools_final.md#L752
+  - "legacy:devopstools_final.md#L752"
+  - "https://github.com/metafab/otel-gui/blob/main/README.md"
+  - "https://github.com/metafab/otel-gui/blob/main/LICENSE"
+  license_spdx: MIT
   needs_review: true
 - id: pandora-fms
   name: Pandora FMS
@@ -3208,7 +3236,7 @@
   needs_review: false
 - id: syslog-ng
   name: syslog-ng
-  summary: Syslog daemon/log collector with parsing and multiple destinations.
+  summary: "Extensible syslog daemon for collecting, parsing, filtering and forwarding logs to multiple destinations."
   official_url: https://www.syslog-ng.com/products/open-source-log-management
   repository_url: https://github.com/syslog-ng/syslog-ng
   categories:
@@ -3223,10 +3251,11 @@
   - operate
   - monitor
   use_when:
-  - Advanced syslog parsing, filtering, and multi-destination routing.
+  - "Route system and application logs through an extensible log-processing daemon."
   avoid_when:
-  - Rsyslog already meets your needs or you're in a container-only environment.
-  deployment_models: []
+  - "You need a complete search-and-dashboard backend or a uniform SPDX for mixed GPL/LGPL source modules."
+  deployment_models:
+  - "self-hosted"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -3234,8 +3263,10 @@
   tags: []
   verified_on: '2026-08-03'
   sources:
-  - legacy:5_Monitoring-Observability/README.md#L63
-  - legacy:devopstools_final.md#L771
+  - "legacy:5_Monitoring-Observability/README.md#L63"
+  - "legacy:devopstools_final.md#L771"
+  - "https://github.com/syslog-ng/syslog-ng/blob/develop/README.md"
+  - "https://github.com/syslog-ng/syslog-ng/blob/develop/COPYING"
   needs_review: true
 - id: telegraf
   name: Telegraf
