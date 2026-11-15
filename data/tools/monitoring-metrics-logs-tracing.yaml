@@ -2730,7 +2730,7 @@
   - operate
   - monitor
   use_when:
-  - "Inspect local OTLP/HTTP or OTLP/gRPC traces, logs and metrics without a full telemetry backend."
+  - "Inspect local OTLP/HTTP traces, logs and metrics without a full telemetry backend."
   avoid_when:
   - "You require production retention or cannot securely handle potentially sensitive telemetry."
   deployment_models:
