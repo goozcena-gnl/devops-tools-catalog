@@ -1465,7 +1465,7 @@ Local OpenTelemetry OTLP viewer for development-time traces, logs and metrics.
 
 **Use when**
 
-- Inspect local OTLP/HTTP or OTLP/gRPC traces, logs and metrics without a full telemetry backend.
+- Inspect local OTLP/HTTP traces, logs and metrics without a full telemetry backend.
 
 **Consider alternatives when**
 
