@@ -137,7 +137,7 @@
 | [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [kftray](https://kftray.app/) | Kubernetes distributions and operations | oss | active |
 | [KGateway](https://kgateway.dev) | Kubernetes networking, storage and add-ons | oss | active |
-| [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file) | Kubernetes distributions and operations | oss | needs-review |
+| [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi) | Kubernetes distributions and operations | oss | needs-review |
 | [kimspect](https://github.com/koithos/kimspect) | Kubernetes distributions and operations | oss | needs-review |
 | [kind](https://kind.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Klarity](https://github.com/selvarajmurugesan90/klarity) | Monitoring, metrics, logs and tracing, Emerging and experimental tools | oss | active |
@@ -224,7 +224,7 @@
 | [KUTTL](https://kuttl.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KWOK](https://kwok.sigs.k8s.io/) | Kubernetes distributions and operations, Chaos and performance engineering | oss | active |
 | [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | active |
-| [Lens](https://lenshq.io) | Kubernetes distributions and operations | unknown | needs-review |
+| [Lens](https://lenshq.io) | Kubernetes distributions and operations | commercial | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | open-core | needs-review |
