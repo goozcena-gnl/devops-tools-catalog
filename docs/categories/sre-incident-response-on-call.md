@@ -50,15 +50,16 @@ Webhook receiver that creates and resolves Azure DevOps work items from Alertman
 **Model:** Open Core<br>
 **Status:** Needs Review
 
-ITSM/CMDB platform; Combodo-backed iTop ecosystem with commercial extensions and support.
+Self-hosted iTop ITSM and CMDB platform with an openly licensed core and separately offered vendor services and extensions.
 
 **Use when**
 
-- You need an open-source CMDB and ITIL-aligned service management.
+- You need a self-hosted ITSM platform with a CMDB, service management and impact analysis.
 
 **Consider alternatives when**
 
-- You want modern incident-response tooling rather than traditional ITSM.
+- You need native on-call rotation and paging rather than a broader ITSM and CMDB platform.
+- You require vendor extensions or support to be covered by the core source licence.
 
 [Official site](https://combodo.com) · [Source repository](https://github.com/Combodo/iTop)
 
@@ -107,17 +108,17 @@ Terminal tool for visualizing live network traffic and behavior.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-On-call alert and escalation management.
+Self-hosted on-call scheduling, alert routing and escalation platform with SMS and voice notification integrations.
 
 **Use when**
 
-- Self-hosted on-call scheduling and escalation without SaaS costs.
+- You need on-call rotations and automated escalations managed in your own infrastructure.
 
 **Consider alternatives when**
 
-- You need rich integrations and mobile apps that PagerDuty/Opsgenie provide.
+- You need a fully managed incident-response SaaS or assume third-party SMS and voice delivery is free.
 
-[Official site](https://goalert.me) · [Source repository](https://github.com/target/goalert)
+[Official site](https://goalert.me) · [Documentation](https://goalert.me/docs/) · [Source repository](https://github.com/target/goalert)
 
 ### Grafana OnCall OSS
 
@@ -181,20 +182,20 @@ Comprehensive IT operations management platform.
 
 **Categories:** SRE, incident response and on-call<br>
 **Roles:** Site Reliability Engineer, Observability Engineer<br>
-**Model:** Unknown<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Network traffic monitoring and analysis.
+Proprietary network flow and bandwidth analysis platform with paid editions and a limited free edition.
 
 **Use when**
 
-- Deep network bandwidth and traffic analysis using NetFlow/sFlow/IPFIX.
+- You need licensed network bandwidth and traffic analysis from NetFlow, sFlow or IPFIX exporters.
 
 **Consider alternatives when**
 
-- Your monitoring needs are application-centric, not network-centric.
+- You need an open-source flow collector or the limited free edition does not cover the required interfaces.
 
-[Official site](https://www.manageengine.com/netflow)
+[Official site](https://www.manageengine.com/products/netflow/) · [Documentation](https://www.manageengine.com/products/netflow/help/licensing.html)
 
 ### Moogsoft
 
@@ -241,17 +242,17 @@ Collection of terminal-first network and system diagnostics tools for Linux oper
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Simple pub-sub notifications (self-hostable).
+HTTP-based push notification server and clients, available for self-hosting and as a separately paid hosted service.
 
 **Use when**
 
-- Lightweight, self-hosted push notifications via HTTP.
+- You need lightweight push notifications from scripts, automation and infrastructure alerts via HTTP.
 
 **Consider alternatives when**
 
-- You need on-call scheduling, escalations, or incident workflows.
+- You need a complete on-call rotation, escalation and incident-command platform.
 
-[Official site](https://ntfy.sh) · [Source repository](https://github.com/binwiederhier/ntfy)
+[Official site](https://ntfy.sh) · [Documentation](https://docs.ntfy.sh/) · [Source repository](https://github.com/binwiederhier/ntfy)
 
 ### OpenSRE
 
@@ -355,17 +356,17 @@ Cross-platform network monitoring TUI with packet inspection, process attributio
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Linux server diagnostics and monitoring TUI covering system health, Docker containers, logs, networking, and security checks.
+Linux terminal UI for server health, Docker control, system logs, network diagnostics and security checks.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You administer a Linux server with Docker access and need interactive local diagnostics.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a Windows or macOS agent, a managed SaaS, or remote fleet-wide incident escalation.
 
-[Source repository](https://github.com/Server-Pulse/server-pulse)
+[Documentation](https://github.com/Server-Pulse/server-pulse/blob/main/README.md) · [Source repository](https://github.com/Server-Pulse/server-pulse)
 
 ### Slok
 
@@ -431,33 +432,33 @@ Command-line network protocol analyzer from the Wireshark project for live captu
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
+Desktop network protocol analyzer for live packet capture and saved trace inspection.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need interactive packet capture and protocol-level network troubleshooting.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need distributed infrastructure telemetry, automated on-call escalation or cannot capture traffic legally.
 
-[Official site](https://www.wireshark.org) · [Source repository](https://gitlab.com/wireshark/wireshark)
+[Official site](https://www.wireshark.org) · [Documentation](https://www.wireshark.org/docs/) · [Source repository](https://gitlab.com/wireshark/wireshark)
 
-### Zenduty
+### Xurrent IMR (formerly Zenduty)
 
 **Categories:** SRE, incident response and on-call<br>
 **Roles:** Site Reliability Engineer, Observability Engineer<br>
-**Model:** Open Core<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Incident management and on-call platform with developer-friendly APIs.
+Commercial hosted incident-management and on-call response platform, renamed from Zenduty to Xurrent IMR in November 2025.
 
 **Use when**
 
-- Cost-effective PagerDuty alternative with good API/integration coverage.
+- You need managed on-call schedules, alert escalation and incident coordination with commercial support.
 
 **Consider alternatives when**
 
-- You need the ecosystem maturity and enterprise features of PagerDuty.
+- You require an entirely self-hosted or open-source on-call platform.
 
-[Official site](https://github.com/zenduty)
+[Official site](https://www.xurrent.com/incident-management-response)

@@ -51,7 +51,7 @@
 - [Atuin](https://atuin.sh/) — Shell-history tool with searchable local storage and optional encrypted synchronization.
 - [Auth0](https://auth0.com) — Identity platform for authenticating users, applications, and AI agents.
 - [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) — Collection of Kubernetes architecture diagrams.
-- [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) — Curated list of Prometheus resources.
+- [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) — Curated community collection of Prometheus learning resources, dashboards, exporters and tooling.
 - [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) — Curated, copy-pasteable Prometheus alert rules and guidance for common services and platforms.
 - [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) — Collection of 130+ specialized Codex subagents for a wide range of development use cases.
 - [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) — AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
@@ -98,7 +98,7 @@
 - [Canonical Kubernetes](https://ubuntu.com/kubernetes) — Canonical's open-source Kubernetes distribution for production clusters across public cloud, on-premises, and edge infrastructure.
 - [Capacitor Next](https://gimlet.io/capacitor-next/) — Local-first web interface for Kubernetes resources, Helm history, and Flux reconciliation state.
 - [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
-- [cardamon](https://github.com/dominikhei/cardamon) — Cleanup tool that finds unused Prometheus metrics via Grafana and generates drop rules for them.
+- [cardamon](https://github.com/dominikhei/cardamon) — Prometheus metrics auditor comparing stored metric names with query logs, alerting rules and Grafana dashboards.
 - [Carvel](https://carvel.dev) — Kubernetes tools suite.
 - [Carvel kapp](https://carvel.dev/kapp) — Simple deployment tool for Kubernetes.
 - [Carvel ytt](https://carvel.dev/ytt) — YAML templating tool for Kubernetes configurations.
@@ -134,7 +134,7 @@
 - [Cluster API Provider AWS](https://cluster-api-aws.sigs.k8s.io) — Kubernetes Cluster API infrastructure provider for AWS self-managed Kubernetes clusters and EKS integrations.
 - [Cluster Bare Autoscaler](https://github.com/docent-net/cluster-bare-autoscaler) — Bare-metal Kubernetes autoscaler that powers nodes on or off based on cluster demand while safely cordoning and draining them.
 - [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) — High-performance code intelligence MCP server that indexes repositories into a persistent knowledge graph.
-- [Combodo (iTop)](https://combodo.com) — ITSM/CMDB platform; Combodo-backed iTop ecosystem with commercial extensions and support.
+- [Combodo (iTop)](https://combodo.com) — Self-hosted iTop ITSM and CMDB platform with an openly licensed core and separately offered vendor services and extensions.
 - [Composio](https://composio.dev) — MIT-licensed Composio SDK for agent tool integrations alongside distinct managed authentication, connectors and hosted workbench services.
 - [Compute Gardener](https://www.compute-gardener.com) — Carbon-aware Kubernetes scheduler for sustainable computing.
 - [Concierto Cloud](https://www.concierto.cloud) — Cloud management platform.
@@ -191,7 +191,7 @@
 - [EasyMile PostgreSQL Operator](https://easymile.github.io/postgresql-operator) — Kubernetes operator for managing PostgreSQL instances.
 - [ecc.tools](https://ecc.tools) — OSS-first ecosystem for agent skills, agents, and security tooling around AI coding workflows.
 - [Eclipse Jetty](https://jetty.org/) — Java HTTP server and servlet container usable standalone or embedded.
-- [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) — Visualize EKS node usage and capacity.
+- [EKS Node Viewer](https://github.com/awslabs/eks-node-viewer) — Terminal view of EKS node allocatable capacity against scheduled pod resource requests, not measured usage.
 - [Elastic APM Server](https://www.elastic.co/observability/application-performance-monitoring) — APM intake/processing for Elastic Observability (agents + server + UI).
 - [Elastic Stack (ELK)](https://www.elastic.co/elastic-stack) — Elastic Stack combines Elasticsearch search and analytics with separate Kibana and Logstash components; Elasticsearch source has file-dependent AGPLv3, SSPL and Elastic License terms, not one Stack-wide licence.
 - [Elemental](https://elemental.docs.rancher.com/) — Rancher-integrated stack for centrally managing immutable operating-system images on Kubernetes nodes.
@@ -242,7 +242,7 @@
 - [Go](https://go.dev/) — Compiled language and toolchain used to build portable infrastructure services and command-line tools.
 - [Go by Example](https://gobyexample.com) — Hands-on Go programming snippets and examples.
 - [GoAccess](https://goaccess.io/) — Terminal and HTML web-log analyser providing real-time HTTP traffic statistics.
-- [GoAlert](https://goalert.me) — On-call alert and escalation management.
+- [GoAlert](https://goalert.me) — Self-hosted on-call scheduling, alert routing and escalation platform with SMS and voice notification integrations.
 - [Gogs](https://gogs.io/) — Self-hosted Git service distributed as a lightweight application.
 - [Goldilocks](https://goldilocks.docs.fairwinds.com/) — Kubernetes resource requests/limits right-sizing dashboard (VPA-based).
 - [Gonzo](https://www.controltheory.com/gonzo) — K9s-inspired log analysis TUI with live log exploration and AI-assisted insights.
@@ -252,7 +252,7 @@
 - [Gotify](https://gotify.net/) — Self-hosted server and clients for receiving application push notifications.
 - [gping](https://github.com/orf/gping) — Ping utility with terminal graphs for comparing host latency.
 - [Grafana](https://grafana.com) — Grafana visualization and alerting product family: OSS dashboards query external data sources; Enterprise adds commercial features and plugins, and Grafana Cloud is the managed service.
-- [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) — Docs for deploying Grafana Alloy (telemetry collector/agent for logs/metrics/traces).
+- [Grafana Alloy Deploy](https://grafana.com/docs/alloy/latest/set-up/deploy) — Grafana Alloy deployment documentation for OpenTelemetry Collector pipelines covering metrics, logs, traces and profiles.
 - [Grafana Beyla](https://grafana.com/oss/beyla) — Grafana-supported distribution of OpenTelemetry eBPF Instrumentation for Linux application metrics and transaction tracing, with Grafana-specific integrations and a release cycle distinct from upstream OBI.
 - [Grafana Loki](https://grafana.com/oss/loki) — Open-source log aggregation backend that indexes log labels and queries log content with LogQL; Grafana provides a separate UI and Grafana Cloud Logs is a managed offering.
 - [Grafana MCP](https://github.com/grafana/mcp-grafana) — MCP server for Grafana observability queries and permission-controlled dashboard and alerting operations.
@@ -325,12 +325,12 @@
 - [k (rothgar)](https://github.com/rothgar/k) — Experimental kubectl wrapper adding context, cluster, and namespace shorthand.
 - [k0rdent](https://docs.k0rdent.io/latest) — Kubernetes-native platform for distributed cluster lifecycle and multi-cluster service management.
 - [k0s](https://k0sproject.io) — Kubernetes distribution.
-- [k0smotron](https://k0smotron.io) — Hosted k0s control-plane operator and Cluster API integration with separate software and documentation licences.
+- [k0smotron](https://k0smotron.io) — Hosted k0s control-plane operator for managing child Kubernetes clusters through Cluster API.
 - [k10ls](https://github.com/besrabasant/k10ls) — Native Kubernetes API-based CLI for keeping port-forwards to pods and services open across clusters and contexts.
 - [k3d](https://k3d.io/stable) — Docker-based local cluster wrapper running the lightweight k3s Kubernetes distribution.
 - [k3s](https://k3s.io) — Lightweight Kubernetes by Rancher.
 - [k3sup](https://github.com/alexellis/k3sup) — Command-line installer for bootstrapping and joining remote K3s nodes over SSH.
-- [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) — Kubernetes resource cleaner.
+- [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) — Kubernetes controller that finds stale or unhealthy resources and can notify, transform or delete them.
 - [K8s Diagram Builder](https://www.k8sdiagram.fun/) — Open-source visual editor that imports Kubernetes YAML into resource diagrams and generates YAML from edited topologies.
 - [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) — CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
 - [k8s-d2](https://github.com/vieitesss/k8s-d2) — Generate D2 diagrams from Kubernetes topology and resources.
@@ -360,7 +360,7 @@
 - [Keystore Explorer](https://keystore-explorer.org) — Desktop Java KeyStore and certificate manager for PKCS#12, JKS and related formats, with JRE 17+ required and GPLv3 project licensing.
 - [kftray](https://kftray.app/) — Desktop and terminal tools for managing Kubernetes port-forwarding sessions.
 - [KGateway](https://kgateway.dev) — Envoy-based Kubernetes Gateway API control plane for routing applications and API traffic.
-- [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file) — Visualize and inspect Kubernetes cluster event history.
+- [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi) — Agentless Kubernetes log visualizer for diagnosing historical incidents through resource timelines and topology.
 - [kimspect](https://github.com/koithos/kimspect) — Inspect container images used by pods, nodes, namespaces, and registries from the CLI.
 - [kind](https://kind.sigs.k8s.io) — Kubernetes IN Docker - local clusters for testing.
 - [kitty](https://sw.kovidgoyal.net/kitty/) — Cross-platform GPU-accelerated terminal emulator with extensible keyboard-driven workflows.
@@ -393,7 +393,7 @@
 - [Kube Monkey](https://github.com/asobti/kube-monkey) — Apache-2.0 Kubernetes pod-disruption service using opt-in application labels, scheduled termination windows and namespace filters; distinct from Netflix Chaos Monkey.
 - [Kube-Argus](https://manishchaudhary101.github.io/kube-argus) — Open-source real-time Kubernetes operations dashboard with cluster state, drain, YAML, access, cost, and diagnostic workflows.
 - [kube-bench](https://github.com/aquasecurity/kube-bench) — Aqua Security tool that checks Kubernetes node configuration against selected CIS benchmark profiles; it implements checks and does not define the CIS standard or certify full compliance.
-- [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Exports precomputed Kubernetes cluster binpacking metrics.
+- [kube-binpacking-exporter](https://github.com/procore-oss/kube-binpacking-exporter) — Prometheus exporter comparing Kubernetes pod requests with node allocatable resources over time.
 - [kube-dump](https://kube-dump.woozymasta.ru) — CLI and container scripts exporting readable Kubernetes API resources as YAML manifests; not a persistent-volume data backup.
 - [kube-hunter](https://aquasecurity.github.io/kube-hunter) — Legacy Aqua Kubernetes security-assessment tool with passive discovery and optional active exploitation; upstream states it is no longer under active development and recommends Trivy.
 - [Kube-OVN](https://www.kube-ovn.io) — OVN and Open vSwitch-based Kubernetes CNI supporting VPCs, overlays, underlays, and KubeVirt networking.
@@ -404,11 +404,11 @@
 - [kubecfg](https://github.com/kadirbelkuyu/kubecfg) — CLI/TUI for managing kubeconfig contexts and namespaces.
 - [KubeClipper](https://kubeclipper.io/en) — Web-based tool for rapid deployment and management of Kubernetes clusters.
 - [KubeCM](https://kubecm.cloud/) — Command-line utility for merging, switching, and managing kubeconfig files and contexts.
-- [kubectl](https://kubernetes.io/docs/reference/kubectl) — Kubernetes command-line tool.
+- [kubectl](https://kubernetes.io/docs/reference/kubectl) — Kubernetes command-line client for inspecting and managing cluster resources, including declarative manifests.
 - [kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference) — Cheat sheet for `kubectl` commands.
 - [kubectl-ai](https://github.com/GoogleCloudPlatform/kubectl-ai) — GoogleCloudPlatform-hosted, community kubectl AI assistant that can execute kubectl and shell tools using configured Kubernetes credentials and local or hosted model backends.
 - [kubectl-browse-pvc](https://github.com/clbx/kubectl-browse-pvc) — Browse Kubernetes PVCs from the CLI.
-- [kubectl-df-pv](https://github.com/yashbhutwala/kubectl-df-pv) — Show disk usage for Kubernetes persistent volumes.
+- [kubectl-df-pv](https://github.com/yashbhutwala/kubectl-df-pv) — kubectl plugin for reporting persistent-volume space usage when compatible node and storage metrics are available.
 - [kubectl-explore](https://github.com/keisku/kubectl-explore) — Interactive kubectl resource explorer.
 - [kubectl-klock](https://github.com/applejag/kubectl-klock) — Stream and display Kubernetes resource watch updates in a readable terminal view.
 - [kubectl-view-allocations](https://github.com/davidB/kubectl-view-allocations) — kubectl plugin for comparing Kubernetes resource allocations and utilization.
@@ -468,7 +468,7 @@
 - [LangSmith](https://smith.langchain.com) — Commercial LangSmith platform for LLM and agent observability, evaluations and debugging, with Cloud, Hybrid and Enterprise-licensed self-hosted deployment options.
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill) — Agent skill that researches current topics across web and social sources and synthesizes grounded summaries.
 - [Lazydocker](https://github.com/jesseduffield/lazydocker) — Terminal UI for Docker and Docker Compose.
-- [Lens](https://lenshq.io) — Kubernetes IDE (the former open-source core has been retired; current product is proprietary).
+- [Lens](https://lenshq.io) — Commercial Mirantis Lens Desktop Kubernetes IDE; its formerly open-source core is retired.
 - [lfk](https://github.com/janosmiko/lfk) — Lightning-fast, keyboard-focused TUI for navigating and managing Kubernetes clusters with a three-column Miller columns layout and owner-based resource hierarchy.
 - [libvirt](https://libvirt.org) — C library, API, and daemons for managing virtualization through drivers such as QEMU/KVM and Xen.
 - [Lima](https://lima-vm.io) — Runs Linux virtual machines on macOS and Linux hosts for local container and development workflows.
@@ -494,7 +494,7 @@
 - [m9sweeper](https://m9sweeper.io) — Kubernetes security and compliance tool.
 - [Maintenant](https://maintenant.dev) — One-container self-hosted monitoring for Docker and Kubernetes with autodiscovery, uptime checks, metrics, and status pages.
 - [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) — Comprehensive IT operations management platform.
-- [ManageEngine NetFlow Analyzer](https://www.manageengine.com/netflow) — Network traffic monitoring and analysis.
+- [ManageEngine NetFlow Analyzer](https://www.manageengine.com/products/netflow/) — Proprietary network flow and bandwidth analysis platform with paid editions and a limited free edition.
 - [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Multi-vendor network configuration management with backups, change tracking, automation and compliance auditing.
 - [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) — MariaDB Operator reconciles MariaDB custom resources for database deployment, high availability and backup operations on Kubernetes.
 - [MariaDB Server](https://mariadb.org/) — Open-source relational database server with MySQL heritage.
@@ -524,11 +524,11 @@
 - [MongoDB](https://www.mongodb.com/) — Document database server whose Community Edition source uses SSPL, with separate commercial Enterprise Advanced and managed Atlas offerings.
 - [Moogsoft](https://www.moogsoft.com) — AIOps alert-correlation and incident-management product family; its cloud service is renamed Dell APEX AIOps Incident Management, while on-premises and hosted Moogsoft boundaries remain under review.
 - [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) — Kubernetes CNI meta-plugin that delegates to other CNIs to attach multiple network interfaces to pods.
-- [Munin](https://munin-monitoring.org) — Classic monitoring and graphing tool.
+- [Munin](https://munin-monitoring.org) — Network-wide plugin-based monitoring framework with node collection and historical graphs.
 - [MySQL](https://www.mysql.com) — Relational database server with transactional storage, replication, and a large application ecosystem.
 - [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) — Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecycle, backups, and upgrades.
 - [n8n](https://n8n.io) — Self-hostable visual and code-based workflow/AI automation platform under the restrictive Sustainable Use License, with separately licensed enterprise modules.
-- [Nagios](https://www.nagios.org) — Infrastructure monitoring (Nagios Core).
+- [Nagios](https://www.nagios.org) — Nagios Core monitors hosts and services through checks, plugins, notifications and an optional web interface.
 - [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) — Kubernetes operator that pauses idle workloads and wakes them on demand to reduce non-production resource consumption.
 - [Nelm](https://github.com/werf/nelm) — Helm-compatible Kubernetes deployment tool and Helm alternative with release planning and resource lifecycle management; not proven a drop-in replacement for every Helm plugin.
 - [Neovim](https://neovim.io/) — Extensible Vim-derived text editor with built-in APIs for plugins and editor automation.
@@ -544,7 +544,7 @@
 - [Node Exporter](https://prometheus.io/docs/guides/node-exporter/) — Prometheus exporter that exposes hardware and operating-system metrics from Unix-like hosts.
 - [Node.js](https://nodejs.org/en) — Cross-platform JavaScript runtime used to build command-line tools, services, and automation.
 - [Nomad](https://www.nomadproject.io) — HashiCorp workload orchestrator for containerized and non-containerized jobs; Community Edition is source-available and Enterprise features and support require separate entitlements.
-- [ntfy](https://ntfy.sh) — Simple pub-sub notifications (self-hostable).
+- [ntfy](https://ntfy.sh) — HTTP-based push notification server and clients, available for self-hosting and as a separately paid hosted service.
 - [Numaflow](https://numaflow.numaproj.io) — Apache-2.0 Kubernetes-native stream-processing platform for event-driven, parallel data pipelines with independent sources and sinks.
 - [NVIDIA AI Cluster Runtime](https://docs.nvidia.com/aicr/overview/introduction) — NVIDIA runtime for deploying and managing AI workloads across GPU clusters.
 - [NVIDIA DGX Cloud](https://www.nvidia.com/en-us/data-center/dgx-cloud) — NVIDIA AI cloud environment, currently described as an internal proving ground, with separately documented Run:ai on DGX Cloud managed subscriptions.
@@ -586,7 +586,7 @@
 - [Orbit](https://gitlab.com/RMJx1/orbit) — Kubernetes multi-cluster management.
 - [OrbStack](https://orbstack.dev) — Local macOS environment for Docker containers, Kubernetes and Linux virtual machines.
 - [osquery](https://osquery.io/) — Operating-system instrumentation framework that exposes host state through a SQL interface.
-- [otel-gui](https://github.com/metafab/otel-gui) — Lightweight, zero-config OpenTelemetry trace viewer for local development with trace waterfalls, service maps, and correlated logs.
+- [otel-gui](https://github.com/metafab/otel-gui) — Local OpenTelemetry OTLP viewer for development-time traces, logs and metrics.
 - [ouch](https://github.com/ouch-org/ouch) — Command-line archive compression and extraction tool with format detection.
 - [oVirt](https://www.ovirt.org/) — Open-source virtualization management platform for KVM hosts, virtual machines, storage, and networks.
 - [OVN-Kubernetes](https://ovn-kubernetes.io) — Kubernetes network plugin based on OVN and Open vSwitch; a separate project from Kube-OVN.
@@ -675,7 +675,7 @@
 - [Scaleway Kubernetes Kapsule](https://www.scaleway.com/en/kubernetes-kapsule/) — Scaleway managed Kubernetes service for clusters running on Scaleway compute, network, and storage resources.
 - [Scaleway Kubernetes Kosmos](https://www.scaleway.com/en/kubernetes-kosmos/) — Scaleway managed Kubernetes control plane for clusters whose nodes can span cloud and on-premises infrastructure.
 - [Scanopy](https://scanopy.net/) — Self-hosted network inventory and topology mapping platform with automated device discovery.
-- [Seabird](https://getseabird.github.io) — Native desktop app for exploring and managing Kubernetes clusters with an integrated terminal and manifest editor (MPL-2.0).
+- [Seabird](https://getseabird.github.io) — Native Kubernetes desktop IDE with terminal, logs and resource editing; MPL-2.0 source and paid software with an unlimited free trial.
 - [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) — Encrypt Kubernetes secrets for GitOps workflows.
 - [Sealos](https://sealos.io) — Cloud operating system for Kubernetes.
 - [SeaweedFS](https://seaweedfs.com) — Distributed storage system for files, objects, and volumes.
@@ -685,7 +685,7 @@
 - [Sematext](https://sematext.com) — Full-stack observability platform covering logs, metrics, tracing, real user monitoring, and synthetic monitoring.
 - [Sensu](https://sensu.io) — Observability pipeline (metrics/events/alerts).
 - [Sentry](https://sentry.io/welcome) — Sentry monitors application errors, releases and performance. Its main server source uses FSL-1.1-Apache-2.0 with a competing-use restriction and an Apache-2.0 grant effective two years after each version is made available; hosted plans are separate commercial offerings.
-- [Server Pulse](https://github.com/Server-Pulse/server-pulse) — Linux server diagnostics and monitoring TUI covering system health, Docker containers, logs, networking, and security checks.
+- [Server Pulse](https://github.com/Server-Pulse/server-pulse) — Linux terminal UI for server health, Docker control, system logs, network diagnostics and security checks.
 - [ShellCheck](https://www.shellcheck.net) — Shell script linter.
 - [Shieldlist agent](https://git.lrob.net/Shieldlist/shieldlist-agent) — Host agent that tails service logs and applies rule-based IP sanctions through nftables, with an optional central controller.
 - [SigNoz](https://signoz.io) — OpenTelemetry-native observability platform for logs, metrics and traces, with MIT community code and separately restricted Enterprise components.
@@ -723,7 +723,7 @@
 - [Swiftorial](https://www.swiftorial.com/swiftlessons) — Interactive tutorials for learning Swift programming.
 - [Swimmer](https://github.com/teru01/swimmer) — User-friendly multi-cluster Kubernetes GUI client.
 - [Syncthing](https://syncthing.net/) — Continuous peer-to-peer file synchronization service with encrypted transport and no mandatory central server.
-- [syslog-ng](https://www.syslog-ng.com/products/open-source-log-management) — Syslog daemon/log collector with parsing and multiple destinations.
+- [syslog-ng](https://www.syslog-ng.com/products/open-source-log-management) — Extensible syslog daemon for collecting, parsing, filtering and forwarding logs to multiple destinations.
 - [sysstat](https://sysstat.github.io/) — Linux performance-monitoring utilities including sar, iostat, mpstat, and pidstat.
 - [System Upgrade Controller](https://github.com/rancher/system-upgrade-controller) — Automate Kubernetes upgrades.
 - [systemd](https://systemd.io) — Linux system and service manager providing process supervision, logging, timers, and host lifecycle controls.
@@ -788,7 +788,7 @@
 - [WeKan](https://wekan.fi) — Open-source kanban board for task and project management.
 - [WinBoat](https://www.winboat.app/) — Linux desktop application that runs Windows in a managed virtual machine with integrated applications and filesystem access.
 - [Windmill](https://www.windmill.dev) — Code-first self-hostable workflow, app and AI-agent execution platform with AGPL/Apache open-source components and separately licensed enterprise and distributed-image features.
-- [Wireshark](https://www.wireshark.org) — Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
+- [Wireshark](https://www.wireshark.org) — Desktop network protocol analyzer for live packet capture and saved trace inspection.
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 - [WSL container](https://learn.microsoft.com/en-us/windows/wsl/wsl-container) — Run Linux containers directly inside WSL 2 without a Docker daemon.
 - [WSO2 API Platform](https://wso2.com/api-platform/) — API lifecycle platform with gateway, governance, and developer-portal capabilities across deployment models.
@@ -796,11 +796,11 @@
 - [XCA](https://www.hohnstaedt.de/xca) — X.509 certificate and key management.
 - [XCP-ng](https://xcp-ng.org/) — Xen-based open-source virtualization platform for managing hosts, resource pools, and virtual machines.
 - [xh](https://github.com/ducaale/xh) — Command-line HTTP client with concise request syntax and formatted responses.
+- [Xurrent IMR (formerly Zenduty)](https://www.xurrent.com/incident-management-response) — Commercial hosted incident-management and on-call response platform, renamed from Zenduty to Xurrent IMR in November 2025.
 - [YAML](https://yaml.org) — Data serialization format used in Kubernetes.
 - [youki](https://youki-dev.github.io/youki/) — OCI container runtime implemented in Rust.
 - [Zabbix](https://www.zabbix.com) — Zabbix monitors infrastructure with server, proxy, agent and alerting components. Software from 7.0 uses AGPL-3.0-only; releases through 6.4 use GPL-2.0-or-later. Documentation has separate terms.
 - [Zellij](https://zellij.dev/) — Terminal workspace and multiplexer with layouts, panes, sessions, and plugins.
-- [Zenduty](https://github.com/zenduty) — Incident management and on-call platform with developer-friendly APIs.
 - [zeropod](https://github.com/ctrox/zeropod) — Scale Kubernetes pods to zero and restore them on demand using checkpoint and restore.
 - [Zipkin](https://zipkin.io) — Open-source distributed tracing collector and UI for investigating service latency and dependencies using pluggable storage.
 - [zoxide](https://github.com/ajeetdsouza/zoxide) — Shell command that ranks visited directories to provide faster directory navigation.

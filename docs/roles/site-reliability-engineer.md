@@ -189,7 +189,7 @@
 | [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Kestra](https://kestra.io/) | Workflow automation and ChatOps | open-core | active |
 | [KGateway](https://kgateway.dev) | Kubernetes networking, storage and add-ons | oss | active |
-| [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file) | Kubernetes distributions and operations | oss | needs-review |
+| [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi) | Kubernetes distributions and operations | oss | needs-review |
 | [kimspect](https://github.com/koithos/kimspect) | Kubernetes distributions and operations | oss | needs-review |
 | [kind](https://kind.sigs.k8s.io) | Kubernetes distributions and operations | oss | active |
 | [Kogaro](https://github.com/topiaruss/kogaro) | Kubernetes distributions and operations | oss | needs-review |
@@ -266,7 +266,7 @@
 | [Kwatcher](https://github.com/Berg-it/Kwatcher) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [KWOK](https://kwok.sigs.k8s.io/) | Kubernetes distributions and operations, Chaos and performance engineering | oss | active |
 | [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | active |
-| [Lens](https://lenshq.io) | Kubernetes distributions and operations | unknown | needs-review |
+| [Lens](https://lenshq.io) | Kubernetes distributions and operations | commercial | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Linnix](https://github.com/linnix-os/linnix) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -280,7 +280,7 @@
 | [m9sweeper](https://m9sweeper.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Maintenant](https://maintenant.dev) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) | SRE, incident response and on-call | unknown | needs-review |
-| [ManageEngine NetFlow Analyzer](https://www.manageengine.com/netflow) | SRE, incident response and on-call | unknown | needs-review |
+| [ManageEngine NetFlow Analyzer](https://www.manageengine.com/products/netflow/) | SRE, incident response and on-call | commercial | needs-review |
 | [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [MariaDB Server](https://mariadb.org/) | Databases, caching and data infrastructure | oss | active |
 | [Mattermost](https://mattermost.com) | Workflow automation and ChatOps | open-core | needs-review |
@@ -421,9 +421,9 @@
 | [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | active |
 | [Wireshark](https://www.wireshark.org) | SRE, incident response and on-call | oss | needs-review |
 | [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
+| [Xurrent IMR (formerly Zenduty)](https://www.xurrent.com/incident-management-response) | SRE, incident response and on-call | commercial | needs-review |
 | [YAML](https://yaml.org) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | active |
-| [Zenduty](https://github.com/zenduty) | SRE, incident response and on-call | open-core | needs-review |
 | [zeropod](https://github.com/ctrox/zeropod) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Zipkin](https://zipkin.io) | Monitoring, metrics, logs and tracing | oss | active |
 

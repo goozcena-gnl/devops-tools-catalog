@@ -393,15 +393,15 @@ Developer tool for reasoning about and running complex microservice backends loc
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Visualize EKS node usage and capacity.
+Terminal view of EKS node allocatable capacity against scheduled pod resource requests, not measured usage.
 
 **Use when**
 
-- You need quick CLI visibility into EKS node utilization and Karpenter/CA decisions.
+- Inspect EKS node packing using pod resource requests and allocatable capacity.
 
 **Consider alternatives when**
 
-- You're not on EKS or already have Grafana dashboards for node metrics.
+- You need actual CPU/memory utilization; optional cloud pricing lookups need additional AWS IAM permissions.
 
 [Source repository](https://github.com/awslabs/eks-node-viewer)
 
@@ -625,11 +625,11 @@ Translate Ingress and provider-specific resources into Gateway API manifests.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Create candidate Gateway API resources from supported Kubernetes Ingress resources during a reviewed migration.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Provider-specific annotations or unsupported fields cannot be independently reviewed for conversion gaps.
 
 [Source repository](https://github.com/kubernetes-sigs/ingress2gateway)
 
@@ -716,15 +716,15 @@ Kubernetes distribution.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Hosted k0s control-plane operator and Cluster API integration with separate software and documentation licences.
+Hosted k0s control-plane operator for managing child Kubernetes clusters through Cluster API.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Provision hosted k0s child control planes using Cluster API with validated version and isolation requirements.
 
 **Consider alternatives when**
 
-- You need one confirmed licence for software and documentation or have not validated k0s/CAPI compatibility and hosted control-plane isolation.
+- Management cluster isolation or compatibility is not established; repository docs use CC-BY-SA-4.0 rather than the code's Apache-2.0.
 
 [Official site](https://k0smotron.io) · [Source repository](https://github.com/k0sproject/k0smotron)
 
@@ -811,15 +811,15 @@ Command-line installer for bootstrapping and joining remote K3s nodes over SSH.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Kubernetes resource cleaner.
+Kubernetes controller that finds stale or unhealthy resources and can notify, transform or delete them.
 
 **Use when**
 
-- You have stale resources (completed jobs, orphaned configmaps) accumulating.
+- Apply an approved cleanup policy to Kubernetes resources with carefully scoped RBAC.
 
 **Consider alternatives when**
 
-- You already have TTL controllers or namespace-level lifecycle policies.
+- Delete or transform operations could damage protected resources; verify selections with dry-run first.
 
 [Official site](https://gianlucam76.github.io/k8s-cleaner/) · [Source repository](https://github.com/gianlucam76/k8s-cleaner)
 
@@ -1020,17 +1020,17 @@ Desktop and terminal tools for managing Kubernetes port-forwarding sessions.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Visualize and inspect Kubernetes cluster event history.
+Agentless Kubernetes log visualizer for diagnosing historical incidents through resource timelines and topology.
 
 **Use when**
 
-- You need to reconstruct incident timelines from cluster events.
+- Reconstruct incident timelines using available Kubernetes log and audit records.
 
 **Consider alternatives when**
 
-- You already aggregate events into a SIEM or observability platform.
+- Necessary logs or audit events are unavailable, or their access conflicts with retention and privacy controls.
 
-[Source repository](https://github.com/GoogleCloudPlatform/khi?tab=readme-ov-file)
+[Source repository](https://github.com/GoogleCloudPlatform/khi)
 
 ### kimspect
 
@@ -1432,17 +1432,17 @@ Kubernetes manifest validator that checks JSON schemas locally or in CI, with co
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Kubernetes command-line tool.
+Kubernetes command-line client for inspecting and managing cluster resources, including declarative manifests.
 
 **Use when**
 
-- Interacting with any Kubernetes cluster—it's the essential baseline tool.
+- Inspect Kubernetes resources, troubleshoot workloads or apply declarative manifests with approved access.
 
 **Consider alternatives when**
 
-- You should be using declarative GitOps instead of imperative commands in production.
+- The kubectl client is outside supported version skew or unreviewed changes would bypass GitOps controls.
 
-[Official site](https://kubernetes.io/docs/reference/kubectl)
+[Official site](https://kubernetes.io/docs/reference/kubectl) · [Documentation](https://kubernetes.io/docs/reference/kubectl/)
 
 ### kubectl Quick Reference
 
@@ -1512,15 +1512,15 @@ Browse Kubernetes PVCs from the CLI.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Show disk usage for Kubernetes persistent volumes.
+kubectl plugin for reporting persistent-volume space usage when compatible node and storage metrics are available.
 
 **Use when**
 
-- You need a quick `df`-like view of PV utilization.
+- Inspect PV utilization with suitable node API access, RBAC and compatible storage metrics.
 
 **Consider alternatives when**
 
-- You already monitor PV usage via Prometheus/Grafana.
+- Your storage provisioner lacks supported metrics, or AKS/EKS compatibility has not been tested.
 
 [Source repository](https://github.com/yashbhutwala/kubectl-df-pv)
 
@@ -2266,20 +2266,20 @@ Kubernetes SIGs toolkit that simulates large numbers of nodes and pods without r
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Kubernetes IDE (the former open-source core has been retired; current product is proprietary).
+Commercial Mirantis Lens Desktop Kubernetes IDE; its formerly open-source core is retired.
 
 **Use when**
 
-- You want a polished GUI with enterprise support and extensions.
+- Use a vendor-supported Kubernetes desktop IDE with subscription-based offerings.
 
 **Consider alternatives when**
 
-- You prefer open-source alternatives (FreeLens/OpenLens) or terminal workflows.
+- You need a maintained open-source distribution; historical MIT code does not license the current proprietary Lens desktop product.
 
-[Official site](https://lenshq.io) · [Source repository](https://github.com/lensapp/lens)
+[Official site](https://lenshq.io) · [Documentation](https://docs.k8slens.dev/) · [Source repository](https://github.com/lensapp/lens)
 
 ### lfk
 
@@ -2750,15 +2750,15 @@ Scaleway managed Kubernetes control plane for clusters whose nodes can span clou
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Native desktop app for exploring and managing Kubernetes clusters with an integrated terminal and manifest editor (MPL-2.0).
+Native Kubernetes desktop IDE with terminal, logs and resource editing; MPL-2.0 source and paid software with an unlimited free trial.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Explore Kubernetes workloads with a local desktop IDE under its distribution terms.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require independently confirmed current upstream support, or assume the software is entirely free because its source is MPL-2.0.
 
 [Official site](https://getseabird.github.io) · [Source repository](https://github.com/getseabird/seabird)
 
