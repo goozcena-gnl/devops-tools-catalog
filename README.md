@@ -134,10 +134,10 @@ needs_review: false
 | `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 931 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 31 |
 | `open-core` | OSS/community core with commercial features or service. | 112 |
-| `commercial` | Proprietary commercial product. | 175 |
+| `commercial` | Proprietary commercial product. | 176 |
 | `free-saas` | Hosted service with a free offering. | 6 |
 | `documentation` | Learning or documentation resource. | 104 |
-| `unknown` | Reliable licence evidence has not been recorded. | 66 |
+| `unknown` | Reliable licence evidence has not been recorded. | 65 |
 
 ## Project-status legend
 
