@@ -2588,7 +2588,7 @@ API lifecycle platform with gateway, governance, and developer-portal capabiliti
 
 - You expect the upstream software licence to provide production subscriptions, managed hosting, or vendor update rights.
 
-[Official site](https://wso2.com/api-platform/) · [Documentation](https://github.com/wso2/api-platform/blob/main/README.md) · [Source repository](https://github.com/wso2/api-platform)
+[Official site](https://github.com/wso2/api-platform) · [Documentation](https://github.com/wso2/api-platform/blob/main/README.md) · [Source repository](https://github.com/wso2/api-platform)
 
 ### YAML
 

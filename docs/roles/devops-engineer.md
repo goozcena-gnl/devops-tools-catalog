@@ -694,7 +694,7 @@
 | [Wine](https://www.winehq.org) | Developer experience and local environments | oss | needs-review |
 | [Woodpecker CI](https://woodpecker-ci.org) | CI, build and testing | oss | active |
 | [WSL container](https://learn.microsoft.com/en-us/windows/wsl/wsl-container) | Virtualization, bare metal and homelab | documentation | needs-review |
-| [WSO2 API Platform](https://wso2.com/api-platform/) | Kubernetes networking, storage and add-ons | oss | active |
+| [WSO2 API Platform](https://github.com/wso2/api-platform) | Kubernetes networking, storage and add-ons | oss | active |
 | [Xata](https://xata.io) | Databases, caching and data infrastructure | unknown | needs-review |
 | [XCP-ng](https://xcp-ng.org/) | Virtualization, bare metal and homelab | oss | active |
 | [xh](https://github.com/ducaale/xh) | Foundations, Linux and scripting | oss | active |
