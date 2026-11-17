@@ -280,7 +280,7 @@
 | [m9sweeper](https://m9sweeper.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Maintenant](https://maintenant.dev) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) | SRE, incident response and on-call | unknown | needs-review |
-| [ManageEngine NetFlow Analyzer](https://www.manageengine.com/netflow) | SRE, incident response and on-call | unknown | needs-review |
+| [ManageEngine NetFlow Analyzer](https://www.manageengine.com/products/netflow/) | SRE, incident response and on-call | commercial | needs-review |
 | [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [MariaDB Server](https://mariadb.org/) | Databases, caching and data infrastructure | oss | active |
 | [Mattermost](https://mattermost.com) | Workflow automation and ChatOps | open-core | needs-review |
@@ -421,9 +421,9 @@
 | [Windmill](https://www.windmill.dev) | Workflow automation and ChatOps | open-core | active |
 | [Wireshark](https://www.wireshark.org) | SRE, incident response and on-call | oss | needs-review |
 | [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
+| [Xurrent IMR (formerly Zenduty)](https://www.xurrent.com/incident-management-response) | SRE, incident response and on-call | commercial | needs-review |
 | [YAML](https://yaml.org) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | active |
-| [Zenduty](https://github.com/zenduty) | SRE, incident response and on-call | open-core | needs-review |
 | [zeropod](https://github.com/ctrox/zeropod) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Zipkin](https://zipkin.io) | Monitoring, metrics, logs and tracing | oss | active |
 
