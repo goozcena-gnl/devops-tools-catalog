@@ -75,7 +75,7 @@
 | [M/Monit](https://www.mmonit.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Maintenant](https://maintenant.dev) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) | SRE, incident response and on-call | unknown | needs-review |
-| [ManageEngine NetFlow Analyzer](https://www.manageengine.com/netflow) | SRE, incident response and on-call | unknown | needs-review |
+| [ManageEngine NetFlow Analyzer](https://www.manageengine.com/products/netflow/) | SRE, incident response and on-call | commercial | needs-review |
 | [Moogsoft](https://www.moogsoft.com) | SRE, incident response and on-call | unknown | needs-review |
 | [Munin](https://munin-monitoring.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Nagios](https://www.nagios.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -122,8 +122,8 @@
 | [VictoriaMetrics](https://victoriametrics.com) | Monitoring, metrics, logs and tracing | oss | active |
 | [VirtualEyes](https://virtualeyes.io/) | Monitoring, metrics, logs and tracing | free-saas | active |
 | [Wireshark](https://www.wireshark.org) | SRE, incident response and on-call | oss | needs-review |
+| [Xurrent IMR (formerly Zenduty)](https://www.xurrent.com/incident-management-response) | SRE, incident response and on-call | commercial | needs-review |
 | [Zabbix](https://www.zabbix.com) | Monitoring, metrics, logs and tracing | oss | active |
-| [Zenduty](https://github.com/zenduty) | SRE, incident response and on-call | open-core | needs-review |
 | [Zipkin](https://zipkin.io) | Monitoring, metrics, logs and tracing | oss | active |
 
 [Back to catalogue](../../README.md)
