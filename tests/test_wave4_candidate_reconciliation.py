@@ -148,6 +148,17 @@ def test_wave4_ledger_matches_canonical_metadata(rows, catalogue) -> None:
                 assert row[column] in tool["sources"]
                 assert tool[field] == "https://owasp.org/projects/docksec"
                 continue
+            if (
+                row["resulting_catalog_id"] == "wso2-api-platform"
+                and field == "official_url"
+            ):
+                # Wave 4 retains the vendor URL preceding the 2026 migration.
+                assert row["input_index"] in {"51", "52"}
+                assert row[column] == "https://wso2.com/api-platform/"
+                assert row[column] in tool["sources"]
+                assert tool["repository_url"] == "https://github.com/wso2/api-platform"
+                assert tool[field] == tool["repository_url"]
+                continue
             assert row[column] == tool.get(field, ""), (row["input_index"], column)
         assert row["categories"].split(";") == tool["categories"]
         assert row["needs_review"] == str(tool["needs_review"]).lower()

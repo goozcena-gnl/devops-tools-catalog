@@ -587,7 +587,7 @@
 - [Webmin](https://webmin.com/) — Web-based administration interface for Unix systems and common server services.
 - [Woodpecker CI](https://woodpecker-ci.org) — Apache-2.0 self-hosted CI/CD engine with a server and agents, forge integration and backend-dependent Docker, Kubernetes or local execution.
 - [WSL container](https://learn.microsoft.com/en-us/windows/wsl/wsl-container) — Run Linux containers directly inside WSL 2 without a Docker daemon.
-- [WSO2 API Platform](https://wso2.com/api-platform/) — API lifecycle platform with gateway, governance, and developer-portal capabilities across deployment models.
+- [WSO2 API Platform](https://github.com/wso2/api-platform) — API lifecycle platform with gateway, governance, and developer-portal capabilities across deployment models.
 - [Xata](https://xata.io) — Managed Postgres platform with branching workflows for databases.
 - [XCP-ng](https://xcp-ng.org/) — Xen-based open-source virtualization platform for managing hosts, resource pools, and virtual machines.
 - [YAML](https://yaml.org) — Data serialization format used in Kubernetes.

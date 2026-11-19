@@ -605,7 +605,7 @@
 | [webernetes](https://github.com/ngrok/webernetes) | Kubernetes distributions and operations | oss | needs-review |
 | [werf](https://werf.io) | Containers and image tooling | oss | active |
 | [Wozz](https://github.com/WozzHQ/wozz) | Kubernetes networking, storage and add-ons, FinOps and sustainability | oss | active |
-| [WSO2 API Platform](https://wso2.com/api-platform/) | Kubernetes networking, storage and add-ons | oss | active |
+| [WSO2 API Platform](https://github.com/wso2/api-platform) | Kubernetes networking, storage and add-ons | oss | active |
 | [XCP-ng](https://xcp-ng.org/) | Virtualization, bare metal and homelab | oss | active |
 | [Xosphere](https://www.xosphere.io) | FinOps and sustainability | commercial | active |
 | [YAML](https://yaml.org) | Kubernetes networking, storage and add-ons | oss | needs-review |

@@ -1,0 +1,13 @@
+# WSO2 API Platform — independent official URL fallback candidate (2026-11-17)
+
+**LOCAL RESEARCH PATCH ONLY — not merged, not released and not an audit waiver.**
+
+- Exact source base: `7ab81cd96dc3fb58e30d3a1c9c0a11b31fdf8e2e`. Separate from Wave 39 PR #184, HEAD `e5d8cfa5f923f7f97d3b53ed46163de0affecce4`.
+- Scope: only the `official_url` on canonical `wso2-api-platform`; the canonical ID, name, Apache-2.0 source licence, model, status, `needs_review`, repository URL, legacy sources and support claims remain unchanged.
+- Prior official landing: `https://wso2.com/api-platform/`. On 2026-11-17 it redirected to `https://choreolabs.com/api-platform/`, which returned HTTP 404 in GitHub Actions [strict audit #82](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/44060568964) and HTTP 403 in maintainer Windows tests.
+- Replacement candidate: [https://github.com/wso2/api-platform](https://github.com/wso2/api-platform), **official upstream for the entire API Platform**, not a substitute proprietary/commercial component. The same exact URL was checked by GitHub's API in audit #82 with HTTP 200, valid, not archived and nonblocking; source repository is Apache-2.0. Windows independent 2xx probe must pass before this local draft is created.
+- WSO2 → Choreo Labs rebrand context: [vendor announcement](https://choreolabs.com/news/wso2-is-now-choreo-labs/) and [API Platform downloads](https://choreolabs.com/products/downloads/). The vendor downloads page includes commercial/EULA distributions; do not transfer its licence terms to the Apache-2.0 upstream source.
+- Original dead/redirecting URL is retained only in historical `sources` and any migration history. Repository strict-link checker scans canonical `official_url`, `repository_url`, `documentation_url`, not historical sources. Existing `config/import-overrides.yaml` already maps the old WSO2 product landing to upstream GitHub.
+- Potential tradeoff: `official_url` will equal `repository_url` as a temporary *full-platform official source fallback*, until Choreo Labs provides a stable canonical full-platform site. It avoids mislabelling an API Manager component landing page as the complete platform.
+- Independent generated docs and nonfunctional change review required. No change to `config/link-audit-baseline.json`, checker logic or historical six blocker classifications.
+- **Merge conditions:** separate Draft PR only on distinct explicit authorization, exact-head CI, separate strict full link audit with `blocking_new: 0`, `blocking_known: 6`, `strict_result: PASS`; human approval thereafter. Do not merge Wave 39 PR #184 or this candidate solely because a local URL probe passed.

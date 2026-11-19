@@ -791,7 +791,7 @@
 - [Wireshark](https://www.wireshark.org) — Leading network protocol analyzer for capturing and inspecting traffic across hundreds of protocols.
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 - [WSL container](https://learn.microsoft.com/en-us/windows/wsl/wsl-container) — Run Linux containers directly inside WSL 2 without a Docker daemon.
-- [WSO2 API Platform](https://wso2.com/api-platform/) — API lifecycle platform with gateway, governance, and developer-portal capabilities across deployment models.
+- [WSO2 API Platform](https://github.com/wso2/api-platform) — API lifecycle platform with gateway, governance, and developer-portal capabilities across deployment models.
 - [Xata](https://xata.io) — Managed Postgres platform with branching workflows for databases.
 - [XCA](https://www.hohnstaedt.de/xca) — X.509 certificate and key management.
 - [XCP-ng](https://xcp-ng.org/) — Xen-based open-source virtualization platform for managing hosts, resource pools, and virtual machines.
