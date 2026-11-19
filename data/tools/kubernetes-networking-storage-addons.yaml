@@ -4537,7 +4537,7 @@
   - You expect the upstream software licence to provide production subscriptions, managed hosting, or
     vendor update rights.
   maturity: growing
-  official_url: https://wso2.com/api-platform/
+  official_url: https://github.com/wso2/api-platform
   repository_url: https://github.com/wso2/api-platform
   repository_archived: false
   documentation_url: https://github.com/wso2/api-platform/blob/main/README.md
