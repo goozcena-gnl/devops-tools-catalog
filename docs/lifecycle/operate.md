@@ -493,7 +493,7 @@
 - [M/Monit](https://www.mmonit.com) — Systems monitoring and management (Monit/M/Monit).
 - [m9sweeper](https://m9sweeper.io) — Kubernetes security and compliance tool.
 - [Maintenant](https://maintenant.dev) — One-container self-hosted monitoring for Docker and Kubernetes with autodiscovery, uptime checks, metrics, and status pages.
-- [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) — Comprehensive IT operations management platform.
+- [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management.html) — ManageEngine IT operations management and observability portfolio spanning distinct network, infrastructure, application, and digital-experience monitoring products.
 - [ManageEngine NetFlow Analyzer](https://www.manageengine.com/products/netflow/) — Proprietary network flow and bandwidth analysis platform with paid editions and a limited free edition.
 - [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Multi-vendor network configuration management with backups, change tracking, automation and compliance auditing.
 - [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) — MariaDB Operator reconciles MariaDB custom resources for database deployment, high availability and backup operations on Kubernetes.

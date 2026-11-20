@@ -166,17 +166,17 @@ Agentic operations platform for production, covering AI SRE, cost optimization a
 **Model:** Unknown<br>
 **Status:** Needs Review
 
-Comprehensive IT operations management platform.
+ManageEngine IT operations management and observability portfolio spanning distinct network, infrastructure, application, and digital-experience monitoring products.
 
 **Use when**
 
-- Traditional enterprise IT ops needing a single vendor for monitoring, ITSM, and network management.
+- You are comparing ManageEngine ITOM and observability products before selecting a specific offering with its own licensing and deployment terms.
 
 **Consider alternatives when**
 
-- Cloud-native DevOps teams wanting open, composable tooling.
+- You need one purchasable product with defined licensing, deployment, and support terms; consult the specific product instead of this portfolio entry.
 
-[Official site](https://www.manageengine.com/it-operations-management)
+[Official site](https://www.manageengine.com/it-operations-management.html)
 
 ### ManageEngine NetFlow Analyzer
 
