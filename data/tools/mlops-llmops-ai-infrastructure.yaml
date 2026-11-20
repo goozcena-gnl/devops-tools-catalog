@@ -218,9 +218,10 @@
   needs_review: false
 - id: autogen
   name: AutoGen
-  summary: Microsoft framework for building single-agent and multi-agent applications, runtimes, and extensions.
+  summary: Archived Microsoft multi-agent framework retained for legacy use and migration.
   official_url: https://microsoft.github.io/autogen/stable/index.html
   repository_url: https://github.com/microsoft/autogen
+  repository_archived: true
   documentation_url: https://microsoft.github.io/autogen/stable/index.html
   categories:
   - mlops-llmops-ai-infrastructure
@@ -232,22 +233,23 @@
   - build
   - deploy
   use_when:
-  - You need programmable agent workflows, multi-agent messaging, or distributed agent runtimes with supported
-    extensions.
+  - You are studying legacy AutoGen applications or planning migration to Microsoft Agent Framework.
   avoid_when:
-  - A single model call or a simpler workflow library meets the application requirement.
+  - You need maintained production tooling; Microsoft no longer supplies AutoGen security fixes.
   deployment_models:
   - software-library
   - self-hosted
   license_model: oss
   license_spdx: MIT
-  status: active
+  status: archived
   verified_on: '2026-08-12'
   sources:
   - https://microsoft.github.io/autogen/stable/index.html
   - https://github.com/microsoft/autogen
   - https://github.com/microsoft/autogen/blob/main/LICENSE-CODE
-  needs_review: false
+  - https://github.com/microsoft/autogen/blob/main/README.md
+  - https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen/
+  needs_review: true
 - id: awesome-codex-subagents
   name: awesome-codex-subagents
   summary: Collection of 130+ specialized Codex subagents for a wide range of development use cases.

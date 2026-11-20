@@ -33,7 +33,7 @@
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
 | [atmos](https://atmos.tools) | Infrastructure as Code | oss | active |
 | [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | commercial | active |
-| [AutoGen](https://microsoft.github.io/autogen/stable/index.html) | MLOps, LLMOps and AI infrastructure | oss | active |
+| [AutoGen](https://microsoft.github.io/autogen/stable/index.html) | MLOps, LLMOps and AI infrastructure | oss | archived |
 | [Awesome DevOps](https://github.com/wmariuss/awesome-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
 | [Awesome Kubernetes Operator Resources](https://github.com/calvin-puram/awesome-kubernetes-operator-resources) | Documentation, learning and career resources | documentation | needs-review |

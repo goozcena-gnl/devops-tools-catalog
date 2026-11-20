@@ -44,7 +44,7 @@
 - [atmos](https://atmos.tools) — Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
 - [Atmosly](https://atmosly.com) — Platform engineering automation for self-service environments and app delivery.
 - [AttuneOps](https://attuneops.io/) — Infrastructure orchestration application for authoring and running resumable multi-host automation procedures.
-- [AutoGen](https://microsoft.github.io/autogen/stable/index.html) — Microsoft framework for building single-agent and multi-agent applications, runtimes, and extensions.
+- [AutoGen](https://microsoft.github.io/autogen/stable/index.html) — Archived Microsoft multi-agent framework retained for legacy use and migration.
 - [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) — Collection of Kubernetes architecture diagrams.
 - [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) — Collection of 130+ specialized Codex subagents for a wide range of development use cases.
 - [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) — AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.

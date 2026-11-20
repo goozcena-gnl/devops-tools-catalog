@@ -126,17 +126,18 @@ Self-hostable AI and LLM observability platform for OpenTelemetry/OpenInference 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** MLOps and AI Infrastructure Engineer, Platform Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Archived<br>
+**Repository:** Archived
 
-Microsoft framework for building single-agent and multi-agent applications, runtimes, and extensions.
+Archived Microsoft multi-agent framework retained for legacy use and migration.
 
 **Use when**
 
-- You need programmable agent workflows, multi-agent messaging, or distributed agent runtimes with supported extensions.
+- You are studying legacy AutoGen applications or planning migration to Microsoft Agent Framework.
 
 **Consider alternatives when**
 
-- A single model call or a simpler workflow library meets the application requirement.
+- You need maintained production tooling; Microsoft no longer supplies AutoGen security fixes.
 
 [Official site](https://microsoft.github.io/autogen/stable/index.html) · [Documentation](https://microsoft.github.io/autogen/stable/index.html) · [Source repository](https://github.com/microsoft/autogen)
 
