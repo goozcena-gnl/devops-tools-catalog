@@ -50,15 +50,17 @@ Distributed wide-column datastore integrated with the Hadoop ecosystem.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Distributed event streaming platform.
+Distributed event streaming platform for replicated topic logs, independent consumers and replay.
 
 **Use when**
 
-- You need durable, high-throughput event streaming with replay capability.
+- You need retained event streams, independent consumers and replay after processing failures.
+- You can operate broker quorum, partitions, replication and storage capacity.
 
 **Consider alternatives when**
 
-- You only need simple message queuing (consider RabbitMQ or SQS instead).
+- Your workload is a simple task queue without retained streams or replay requirements.
+- You cannot plan cluster operations, delivery semantics and long-term storage growth.
 
 [Official site](https://kafka.apache.org) · [Source repository](https://github.com/apache/kafka)
 
@@ -88,17 +90,19 @@ Distributed coordination service for naming, configuration, and synchronization.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Embedded key/value store for Go applications.
+Embedded transactional key-value database for Go using a local file and a single writer.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- A Go application needs embedded ACID key-value persistence without a separate database service.
+- Read-heavy workloads can accommodate a single concurrent writer and file-backed transactions.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need multi-node replication, networked database access or concurrent write transactions.
+- The application cannot manage local database file locking, backups and lifecycle.
 
-[Official site](https://pkg.go.dev/go.etcd.io/bbolt)
+[Official site](https://pkg.go.dev/go.etcd.io/bbolt) · [Source repository](https://github.com/etcd-io/bbolt)
 
 ### ClickHouse
 
@@ -128,15 +132,17 @@ Columnar database commonly used as an observability backend.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Distributed, reliable key-value store used as the primary data store for Kubernetes.
+Distributed consistent key-value store for control-plane state, including Kubernetes cluster metadata.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need strongly consistent, replicated configuration or coordination data.
+- You can provision an odd-sized quorum, secure peer and client traffic, and test snapshot recovery.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a general-purpose analytical database or an unbounded large-value data store.
+- You cannot maintain quorum, monitor storage and latency, or regularly test restore procedures.
 
 [Official site](https://etcd.io) · [Source repository](https://github.com/etcd-io/etcd)
 
@@ -147,17 +153,19 @@ Distributed, reliable key-value store used as the primary data store for Kuberne
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Lightweight S3-compatible object storage.
+Self-hosted S3-compatible distributed object store for small to medium geo-distributed clusters.
 
 **Use when**
 
-- You want a self-hosted, geo-distributed S3-compatible store with minimal resources.
+- You need object storage replicated across self-managed locations with modest infrastructure.
+- You can validate S3 API compatibility, placement and replication for your actual clients.
 
 **Consider alternatives when**
 
-- You need enterprise-grade performance or a mature ecosystem.
+- You require full AWS S3 feature equivalence or a managed object-storage SLA.
+- You cannot operate and recover a distributed storage cluster across failures.
 
-[Official site](https://garagehq.deuxfleurs.fr)
+[Official site](https://garagehq.deuxfleurs.fr) · [Source repository](https://github.com/deuxfleurs-org/garage)
 
 ### Garage WebUI
 
@@ -242,17 +250,19 @@ Fast, typo-tolerant search and AI retrieval engine.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-High-performance, distributed memory object caching system.
+Distributed in-memory key-value cache for accelerating applications without durable persistence.
 
 **Use when**
 
-- You need dead-simple, high-speed key-value caching with minimal overhead.
+- You need a simple, disposable cache for frequently retrieved application or database results.
+- Applications tolerate expiration, eviction and cache misses without losing authoritative data.
 
 **Consider alternatives when**
 
-- You need persistence, data structures, or pub/sub (use Redis instead).
+- You need persistent storage, durable message delivery or rich data structures.
+- Losing cached entries would cause data loss or your network cannot isolate the cache service.
 
-[Official site](https://memcached.org)
+[Official site](https://memcached.org) · [Source repository](https://github.com/memcached/memcached)
 
 ### Milvus
 
@@ -435,15 +445,17 @@ Vector database and similarity-search engine available for self-hosted and manag
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Open-source message broker and streaming platform for reliable asynchronous communication.
+Message broker supporting queues, pub/sub routing and streams for asynchronous applications.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need routed messaging, consumer acknowledgements or replicated queues between services.
+- You can select queue types, persistence, clustering and back-pressure for delivery requirements.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a database or assume all queue types provide identical ordering and durability.
+- You cannot operate broker capacity, quorum availability and consumer retry or dead-letter flows.
 
 [Official site](https://www.rabbitmq.com) · [Source repository](https://github.com/rabbitmq/rabbitmq-server)
 
@@ -492,15 +504,17 @@ S3-compatible object storage system implemented in Rust.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Distributed storage system for files, objects, and volumes.
+Distributed file and object storage with S3 gateway, filer metadata and volume servers.
 
 **Use when**
 
-- You need a fast distributed filesystem that also speaks S3 and supports tiered storage.
+- You need self-hosted object or file storage with scalable volumes and S3 access.
+- You can plan filer metadata persistence, replication, credentials and storage operations.
 
 **Consider alternatives when**
 
-- You only need simple object storage and want a larger community (use MinIO).
+- You need a fully managed storage SLA or assume every S3 extension is compatible.
+- You cannot manage persistent volume capacity, filer metadata backups and access controls.
 
 [Official site](https://seaweedfs.com) · [Source repository](https://github.com/seaweedfs/seaweedfs)
 
@@ -530,15 +544,17 @@ Caching proxy for the web (HTTP, HTTPS, FTP, and more).
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Distributed transactional key-value database with horizontal scalability and strong consistency.
+Distributed transactional key-value store using Raft replication and Placement Driver coordination.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need horizontally scaled, strongly consistent key-value storage with transactions.
+- You can operate TiKV stores and Placement Driver nodes with replication and capacity planning.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need a single-node embedded database or expect TiDB SQL features from TiKV alone.
+- You cannot operate quorum, placement, disk performance and distributed recovery.
 
 [Official site](https://tikv.org) · [Source repository](https://github.com/tikv/tikv)
 
