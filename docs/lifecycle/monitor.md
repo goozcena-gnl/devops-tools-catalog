@@ -80,7 +80,7 @@
 - [Logstash](https://www.elastic.co/logstash) — Log ingestion/processing pipeline (Elastic ecosystem).
 - [M/Monit](https://www.mmonit.com) — Systems monitoring and management (Monit/M/Monit).
 - [Maintenant](https://maintenant.dev) — One-container self-hosted monitoring for Docker and Kubernetes with autodiscovery, uptime checks, metrics, and status pages.
-- [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) — Comprehensive IT operations management platform.
+- [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management.html) — ManageEngine IT operations management and observability portfolio spanning distinct network, infrastructure, application, and digital-experience monitoring products.
 - [ManageEngine NetFlow Analyzer](https://www.manageengine.com/products/netflow/) — Proprietary network flow and bandwidth analysis platform with paid editions and a limited free edition.
 - [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) — Multi-vendor network configuration management with backups, change tracking, automation and compliance auditing.
 - [Moogsoft](https://www.moogsoft.com) — AIOps alert-correlation and incident-management product family; its cloud service is renamed Dell APEX AIOps Incident Management, while on-premises and hosted Moogsoft boundaries remain under review.
