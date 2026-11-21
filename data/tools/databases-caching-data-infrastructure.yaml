@@ -235,8 +235,8 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L206
   - legacy:devopstools_final.md#L281
-  - https://github.com/deuxfleurs-org/garage/blob/main/README.md
-  - https://github.com/deuxfleurs-org/garage/blob/main/LICENSE
+  - https://github.com/deuxfleurs-org/garage/blob/984cb2afe7b40e4818c727a2d1b0b017b7dadff1/README.md
+  - https://github.com/deuxfleurs-org/garage/blob/984cb2afe7b40e4818c727a2d1b0b017b7dadff1/LICENSE
   needs_review: true
 - id: garage-webui
   name: Garage WebUI
