@@ -28,7 +28,7 @@
 - [Apache CloudStack](https://cloudstack.apache.org) — Open source infrastructure-as-a-service platform for building and managing private and public clouds.
 - [Apache HBase](https://hbase.apache.org/) — Distributed wide-column datastore integrated with the Hadoop ecosystem.
 - [Apache HTTP Server](https://httpd.apache.org/) — Modular HTTP server supporting web hosting, TLS, authentication, and reverse proxying.
-- [Apache Kafka](https://kafka.apache.org) — Distributed event streaming platform.
+- [Apache Kafka](https://kafka.apache.org) — Distributed event streaming platform for replicated topic logs, independent consumers and replay.
 - [Apache Tomcat](https://tomcat.apache.org/) — Java web application server implementing Jakarta servlet and related specifications.
 - [Apache ZooKeeper](https://zookeeper.apache.org/) — Distributed coordination service for naming, configuration, and synchronization.
 - [Aralez](https://github.com/sadoyan/aralez) — Rust reverse proxy built on Cloudflare Pingora, with TLS, authentication, load balancing, and dynamic discovery through Consul and Kubernetes.
@@ -67,7 +67,7 @@
 - [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) — Microsoft-led Azure Verified Modules initiative defining standards and indexes for Bicep and Terraform resource and pattern modules; the central repository hosts governance and documentation, while implementations live in separate module repositories and registries.
 - [AzureNamingTool](https://github.com/Azure/AzureNamingTool) — Microsoft Azure Naming Tool web app and REST API for generating Azure resource names from administrator-defined conventions.
 - [Backstage](https://backstage.io) — Internal developer portal (IDP) / software catalog for improving developer experience.
-- [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) — Embedded key/value store for Go applications.
+- [bbolt](https://pkg.go.dev/go.etcd.io/bbolt) — Embedded transactional key-value database for Go using a local file and a single writer.
 - [Bito](https://bito.ai) — Commercial AI code-review and codebase-intelligence platform for repositories, IDEs, CLIs, and engineering workflows.
 - [blocky](https://0xerr0r.github.io/blocky/latest/) — Configurable DNS proxy and ad blocker with upstream groups, caching, filtering, and Prometheus metrics.
 - [BotKube](https://botkube.io) — Kubernetes troubleshooting and monitoring platform with chat integrations and automation plugins.
@@ -157,7 +157,7 @@
 - [env zero](https://www.envzero.com/) — Commercial infrastructure-as-code control platform for self-service environments, workflow automation, policy, governance, and cloud-cost management.
 - [Envoy](https://www.envoyproxy.io) — Cloud-native L4/L7 proxy used for edge routing, service networking, and observability-aware traffic control.
 - [Envoy Gateway](https://gateway.envoyproxy.io) — Application-gateway control plane that provisions and configures Envoy Proxy using Kubernetes Gateway API resources; Envoy Proxy supplies the traffic dataplane and Gateway API defines the configuration standard.
-- [etcd](https://etcd.io) — Distributed, reliable key-value store used as the primary data store for Kubernetes.
+- [etcd](https://etcd.io) — Distributed consistent key-value store for control-plane state, including Kubernetes cluster metadata.
 - [etckeeper](https://etckeeper.branchable.com) — Tracks /etc configuration and metadata in a version-control system, with Git as the default.
 - [Eureka](https://github.com/Netflix/eureka) — Service registry supporting client-side discovery and failover.
 - [Evidently](https://www.evidentlyai.com/) — Apache-2.0 Python framework for data quality, drift monitoring and ML/LLM evaluations; separate Evidently Cloud offers managed capabilities.
@@ -177,7 +177,7 @@
 - [FreeLens](https://freelensapp.github.io) — Community-maintained Kubernetes IDE fork.
 - [fulling](https://github.com/FullAgent/fulling) — AI-powered full-stack engineer agent built with Next.js, Claude, and PostgreSQL, using Kubernetes as infrastructure.
 - [FuturFusion](https://futurfusion.io) — Commercial virtualization management and migration suite built on open-source infrastructure for operating and moving workloads away from VMware estates.
-- [Garage](https://garagehq.deuxfleurs.fr) — Lightweight S3-compatible object storage.
+- [Garage](https://garagehq.deuxfleurs.fr) — Self-hosted S3-compatible distributed object store for small to medium geo-distributed clusters.
 - [Garage WebUI](https://github.com/khairul169/garage-webui) — Independent, self-hosted web administration interface for Garage object storage, packaged as a container and maintained separately from Garage itself.
 - [Garden](https://garden.io) — Developer-first automation for building/testing/deploying cloud-native apps.
 - [Gardener](https://gardener.cloud/) — Kubernetes API-driven system for creating and operating homogeneous managed Kubernetes clusters across infrastructure providers.
@@ -395,7 +395,7 @@
 - [mcpsnoop](https://github.com/kerlenton/mcpsnoop) — Transparent MCP proxy for inspecting live tool calls between clients and servers.
 - [Meilisearch](https://www.meilisearch.com) — Fast, typo-tolerant search and AI retrieval engine.
 - [Mem0](https://mem0.ai/) — Memory layer for AI applications that can run as an embedded library, self-hosted service, or managed platform.
-- [Memcached](https://memcached.org) — High-performance, distributed memory object caching system.
+- [Memcached](https://memcached.org) — Distributed in-memory key-value cache for accelerating applications without durable persistence.
 - [Metal3](https://metal3.io/) — Kubernetes-native components for provisioning and managing bare-metal hosts, including Cluster API integration.
 - [MetalLB](https://metallb.io) — Kubernetes LoadBalancer-service implementation for bare-metal clusters that allocates service IPs and advertises them through Layer 2 or BGP; separate from ingress controllers, CNIs and service meshes.
 - [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) — Collects current CPU and memory resource metrics from kubelets and exposes the Kubernetes Metrics API for HPA, VPA and kubectl top; it is not historical time-series storage or a general monitoring platform.
@@ -489,7 +489,7 @@
 - [pv-migrate](https://github.com/utkuozdemir/pv-migrate) — CLI tool for migrating data between Kubernetes Persistent Volumes.
 - [Qdrant](https://qdrant.tech/) — Vector database and similarity-search engine available for self-hosted and managed deployments.
 - [Qovery](https://www.qovery.com) — Commercial Kubernetes control-plane platform with a GPL-licensed orchestration engine that operates workloads and infrastructure in customer cloud accounts.
-- [RabbitMQ](https://www.rabbitmq.com) — Open-source message broker and streaming platform for reliable asynchronous communication.
+- [RabbitMQ](https://www.rabbitmq.com) — Message broker supporting queues, pub/sub routing and streams for asynchronous applications.
 - [Railway](https://railway.com/) — Managed application platform for building, deploying, networking, scaling, and observing services from source repositories or containers.
 - [Rakazo](https://rakazo.com/) — Self-hosted agent workspace with sandboxed browser and shell sessions, routines, approvals, and audit history.
 - [Rancher Desktop](https://rancherdesktop.io) — Local container management on Windows, macOS, and Linux, with optional Kubernetes.
@@ -521,7 +521,7 @@
 - [Seabird](https://getseabird.github.io) — Native Kubernetes desktop IDE with terminal, logs and resource editing; MPL-2.0 source and paid software with an unlimited free trial.
 - [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) — Encrypt Kubernetes secrets for GitOps workflows.
 - [Sealos](https://sealos.io) — Cloud operating system for Kubernetes.
-- [SeaweedFS](https://seaweedfs.com) — Distributed storage system for files, objects, and volumes.
+- [SeaweedFS](https://seaweedfs.com) — Distributed file and object storage with S3 gateway, filer metadata and volume servers.
 - [Security Contexts](https://learnkube.com/security-contexts) — Kubernetes security context configuration.
 - [security-profiles-operator](https://github.com/kubernetes-sigs/security-profiles-operator) — Security Profiles Operator manages and optionally records Linux seccomp, SELinux and AppArmor profiles for Kubernetes workloads.
 - [Seesaw](https://github.com/google/seesaw) — Linux Virtual Server-based load-balancing platform with redundant nodes and network configuration.
@@ -554,7 +554,7 @@
 - [terraform-skill](https://github.com/antonbabenko/terraform-skill) — Claude Code skill for Terraform and OpenTofu best practices, testing, modules, CI/CD, and security.
 - [Terragrunt](https://terragrunt.com/) — Gruntwork open-source orchestration CLI for scaling OpenTofu and Terraform infrastructure with reusable configuration, units and dependencies.
 - [terravision](https://github.com/patrickchugh/terravision) — Cloud architecture diagram generator from Terraform for AWS, Azure and Google Cloud, with optional AI/MCP integration.
-- [TiKV](https://tikv.org) — Distributed transactional key-value database with horizontal scalability and strong consistency.
+- [TiKV](https://tikv.org) — Distributed transactional key-value store using Raft replication and Placement Driver coordination.
 - [Tinkerbell](https://tinkerbell.org/) — Bare-metal provisioning stack for declarative machine installation workflows.
 - [Tinyauth](https://tinyauth.app/) — Lightweight self-hosted authentication gateway for protecting applications behind a reverse proxy.
 - [Tofu Controller](https://flux-iac.github.io/tofu-controller) — Tofu Controller is the flux-iac Kubernetes controller integrating Flux with OpenTofu/Terraform reconciliation, plans, applies and drift detection through runner Pods; it is separate from Flux CD core, Flux Operator and either IaC CLI.
