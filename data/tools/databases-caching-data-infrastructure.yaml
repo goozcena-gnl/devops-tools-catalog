@@ -62,7 +62,7 @@
   needs_review: false
 - id: apache-kafka
   name: Apache Kafka
-  summary: Distributed event streaming platform.
+  summary: Distributed event streaming platform for replicated topic logs, independent consumers and replay.
   official_url: https://kafka.apache.org
   repository_url: https://github.com/apache/kafka
   categories:
@@ -77,11 +77,15 @@
   - deploy
   - operate
   use_when:
-  - You need durable, high-throughput event streaming with replay capability.
+  - You need retained event streams, independent consumers and replay after processing failures.
+  - You can operate broker quorum, partitions, replication and storage capacity.
   avoid_when:
-  - You only need simple message queuing (consider RabbitMQ or SQS instead).
-  deployment_models: []
+  - Your workload is a simple task queue without retained streams or replay requirements.
+  - You cannot plan cluster operations, delivery semantics and long-term storage growth.
+  deployment_models:
+  - self-hosted
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -90,6 +94,8 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L202
   - legacy:devopstools_final.md#L277
+  - https://github.com/apache/kafka/blob/trunk/README.md
+  - https://github.com/apache/kafka/blob/trunk/LICENSE
   needs_review: true
 - id: apache-zookeeper
   name: Apache ZooKeeper
@@ -124,8 +130,9 @@
   needs_review: false
 - id: bbolt
   name: bbolt
-  summary: Embedded key/value store for Go applications.
+  summary: Embedded transactional key-value database for Go using a local file and a single writer.
   official_url: https://pkg.go.dev/go.etcd.io/bbolt
+  repository_url: https://github.com/etcd-io/bbolt
   categories:
   - databases-caching-data-infrastructure
   subcategories:
@@ -137,10 +144,16 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - A Go application needs embedded ACID key-value persistence without a separate database service.
+  - Read-heavy workloads can accommodate a single concurrent writer and file-backed transactions.
+  avoid_when:
+  - You need multi-node replication, networked database access or concurrent write transactions.
+  - The application cannot manage local database file locking, backups and lifecycle.
+  deployment_models:
+  - embedded
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -148,10 +161,12 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L278
+  - https://github.com/etcd-io/bbolt/blob/main/README.md
+  - https://github.com/etcd-io/bbolt/blob/main/LICENSE
   needs_review: true
 - id: etcd
   name: etcd
-  summary: Distributed, reliable key-value store used as the primary data store for Kubernetes.
+  summary: Distributed consistent key-value store for control-plane state, including Kubernetes cluster metadata.
   official_url: https://etcd.io
   repository_url: https://github.com/etcd-io/etcd
   categories:
@@ -165,10 +180,18 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need strongly consistent, replicated configuration or coordination data.
+  - You can provision an odd-sized quorum, secure peer and client traffic, and test snapshot recovery.
+  avoid_when:
+  - You need a general-purpose analytical database or an unbounded large-value data store.
+  - You cannot maintain quorum, monitor storage and latency, or regularly test restore procedures.
+  deployment_models:
+  - self-hosted
+  - container
+  - kubernetes
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -176,11 +199,14 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L279
+  - https://etcd.io/docs/v3.6/op-guide/
+  - https://github.com/etcd-io/etcd/blob/main/LICENSE
   needs_review: true
 - id: garage
   name: Garage
-  summary: Lightweight S3-compatible object storage.
+  summary: Self-hosted S3-compatible distributed object store for small to medium geo-distributed clusters.
   official_url: https://garagehq.deuxfleurs.fr
+  repository_url: https://github.com/deuxfleurs-org/garage
   categories:
   - databases-caching-data-infrastructure
   subcategories:
@@ -193,10 +219,13 @@
   - deploy
   - operate
   use_when:
-  - You want a self-hosted, geo-distributed S3-compatible store with minimal resources.
+  - You need object storage replicated across self-managed locations with modest infrastructure.
+  - You can validate S3 API compatibility, placement and replication for your actual clients.
   avoid_when:
-  - You need enterprise-grade performance or a mature ecosystem.
-  deployment_models: []
+  - You require full AWS S3 feature equivalence or a managed object-storage SLA.
+  - You cannot operate and recover a distributed storage cluster across failures.
+  deployment_models:
+  - self-hosted
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -206,6 +235,8 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L206
   - legacy:devopstools_final.md#L281
+  - https://github.com/deuxfleurs-org/garage/blob/984cb2afe7b40e4818c727a2d1b0b017b7dadff1/README.md
+  - https://github.com/deuxfleurs-org/garage/blob/984cb2afe7b40e4818c727a2d1b0b017b7dadff1/LICENSE
   needs_review: true
 - id: garage-webui
   name: Garage WebUI
@@ -339,8 +370,9 @@
   needs_review: true
 - id: memcached
   name: Memcached
-  summary: High-performance, distributed memory object caching system.
+  summary: Distributed in-memory key-value cache for accelerating applications without durable persistence.
   official_url: https://memcached.org
+  repository_url: https://github.com/memcached/memcached
   categories:
   - databases-caching-data-infrastructure
   subcategories:
@@ -353,11 +385,15 @@
   - deploy
   - operate
   use_when:
-  - You need dead-simple, high-speed key-value caching with minimal overhead.
+  - You need a simple, disposable cache for frequently retrieved application or database results.
+  - Applications tolerate expiration, eviction and cache misses without losing authoritative data.
   avoid_when:
-  - You need persistence, data structures, or pub/sub (use Redis instead).
-  deployment_models: []
+  - You need persistent storage, durable message delivery or rich data structures.
+  - Losing cached entries would cause data loss or your network cannot isolate the cache service.
+  deployment_models:
+  - self-hosted
   license_model: oss
+  license_spdx: BSD-3-Clause
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -366,6 +402,8 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L212
   - legacy:devopstools_final.md#L285
+  - https://docs.memcached.org/
+  - https://github.com/memcached/memcached/blob/master/LICENSE
   needs_review: true
 - id: mongodb
   name: MongoDB
@@ -635,7 +673,7 @@
   needs_review: false
 - id: rabbitmq
   name: RabbitMQ
-  summary: Open-source message broker and streaming platform for reliable asynchronous communication.
+  summary: Message broker supporting queues, pub/sub routing and streams for asynchronous applications.
   official_url: https://www.rabbitmq.com
   repository_url: https://github.com/rabbitmq/rabbitmq-server
   categories:
@@ -649,9 +687,15 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need routed messaging, consumer acknowledgements or replicated queues between services.
+  - You can select queue types, persistence, clustering and back-pressure for delivery requirements.
+  avoid_when:
+  - You need a database or assume all queue types provide identical ordering and durability.
+  - You cannot operate broker capacity, quorum availability and consumer retry or dead-letter flows.
+  deployment_models:
+  - self-hosted
+  - kubernetes
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -660,6 +704,8 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L288
+  - https://github.com/rabbitmq/rabbitmq-server/blob/main/LICENSE
+  - https://www.rabbitmq.com/docs/quorum-queues
   needs_review: true
 - id: redis
   name: Redis
@@ -727,7 +773,7 @@
   needs_review: true
 - id: seaweedfs
   name: SeaweedFS
-  summary: Distributed storage system for files, objects, and volumes.
+  summary: Distributed file and object storage with S3 gateway, filer metadata and volume servers.
   official_url: https://seaweedfs.com
   repository_url: https://github.com/seaweedfs/seaweedfs
   categories:
@@ -742,11 +788,17 @@
   - deploy
   - operate
   use_when:
-  - You need a fast distributed filesystem that also speaks S3 and supports tiered storage.
+  - You need self-hosted object or file storage with scalable volumes and S3 access.
+  - You can plan filer metadata persistence, replication, credentials and storage operations.
   avoid_when:
-  - You only need simple object storage and want a larger community (use MinIO).
-  deployment_models: []
+  - You need a fully managed storage SLA or assume every S3 extension is compatible.
+  - You cannot manage persistent volume capacity, filer metadata backups and access controls.
+  deployment_models:
+  - self-hosted
+  - container
+  - kubernetes
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -755,6 +807,8 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L220
   - legacy:devopstools_final.md#L291
+  - https://github.com/seaweedfs/seaweedfs/blob/master/README.md
+  - https://github.com/seaweedfs/seaweedfs/blob/master/LICENSE
   needs_review: true
 - id: squid
   name: Squid
@@ -788,7 +842,7 @@
   needs_review: true
 - id: tikv
   name: TiKV
-  summary: Distributed transactional key-value database with horizontal scalability and strong consistency.
+  summary: Distributed transactional key-value store using Raft replication and Placement Driver coordination.
   official_url: https://tikv.org
   repository_url: https://github.com/tikv/tikv
   categories:
@@ -802,10 +856,16 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need horizontally scaled, strongly consistent key-value storage with transactions.
+  - You can operate TiKV stores and Placement Driver nodes with replication and capacity planning.
+  avoid_when:
+  - You need a single-node embedded database or expect TiDB SQL features from TiKV alone.
+  - You cannot operate quorum, placement, disk performance and distributed recovery.
+  deployment_models:
+  - self-hosted
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -813,6 +873,9 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L293
+  - https://github.com/tikv/tikv/blob/master/README.md
+  - https://tikv.org/docs/7.1/reference/architecture/overview/
+  - https://github.com/tikv/tikv/blob/master/LICENSE
   needs_review: true
 - id: varnish-cache
   name: Varnish Cache
