@@ -17,7 +17,7 @@
 - [ast-grep](https://ast-grep.github.io/) — Syntax-tree-based code search, linting, and rewriting tool.
 - [Atmosly](https://atmosly.com) — Platform engineering automation for self-service environments and app delivery.
 - [Atuin](https://atuin.sh/) — Shell-history tool with searchable local storage and optional encrypted synchronization.
-- [AutoGen](https://microsoft.github.io/autogen/stable/index.html) — Microsoft framework for building single-agent and multi-agent applications, runtimes, and extensions.
+- [AutoGen](https://microsoft.github.io/autogen/stable/index.html) — Archived Microsoft multi-agent framework retained for legacy use and migration.
 - [AWS Cloud9](https://aws.amazon.com/cloud9) — Cloud-based IDE for writing, running, and debugging code.
 - [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) — GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
 - [Backstage](https://backstage.io) — Internal developer portal (IDP) / software catalog for improving developer experience.
