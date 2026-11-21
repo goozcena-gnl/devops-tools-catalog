@@ -279,7 +279,7 @@
 | [M/Monit](https://www.mmonit.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [m9sweeper](https://m9sweeper.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Maintenant](https://maintenant.dev) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) | SRE, incident response and on-call | unknown | needs-review |
+| [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management.html) | SRE, incident response and on-call | unknown | needs-review |
 | [ManageEngine NetFlow Analyzer](https://www.manageengine.com/products/netflow/) | SRE, incident response and on-call | commercial | needs-review |
 | [MariaDB Operator](https://github.com/mariadb-operator/mariadb-operator) | Kubernetes networking, storage and add-ons | oss | active |
 | [MariaDB Server](https://mariadb.org/) | Databases, caching and data infrastructure | oss | active |

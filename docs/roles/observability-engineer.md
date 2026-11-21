@@ -74,7 +74,7 @@
 | [Logstash](https://www.elastic.co/logstash) | Monitoring, metrics, logs and tracing | source-available | needs-review |
 | [M/Monit](https://www.mmonit.com) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Maintenant](https://maintenant.dev) | Monitoring, metrics, logs and tracing | unknown | needs-review |
-| [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management) | SRE, incident response and on-call | unknown | needs-review |
+| [ManageEngine IT Operations Management](https://www.manageengine.com/it-operations-management.html) | SRE, incident response and on-call | unknown | needs-review |
 | [ManageEngine NetFlow Analyzer](https://www.manageengine.com/products/netflow/) | SRE, incident response and on-call | commercial | needs-review |
 | [Moogsoft](https://www.moogsoft.com) | SRE, incident response and on-call | unknown | needs-review |
 | [Munin](https://munin-monitoring.org) | Monitoring, metrics, logs and tracing | oss | needs-review |

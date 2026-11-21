@@ -198,8 +198,8 @@
   commercial_offering: true
 - id: manageengine-it-operations-management
   name: ManageEngine IT Operations Management
-  summary: Comprehensive IT operations management platform.
-  official_url: https://www.manageengine.com/it-operations-management
+  summary: ManageEngine IT operations management and observability portfolio spanning distinct network, infrastructure, application, and digital-experience monitoring products.
+  official_url: https://www.manageengine.com/it-operations-management.html
   categories:
   - sre-incident-response-on-call
   subcategories:
@@ -211,9 +211,9 @@
   - operate
   - monitor
   use_when:
-  - Traditional enterprise IT ops needing a single vendor for monitoring, ITSM, and network management.
+  - You are comparing ManageEngine ITOM and observability products before selecting a specific offering with its own licensing and deployment terms.
   avoid_when:
-  - Cloud-native DevOps teams wanting open, composable tooling.
+  - You need one purchasable product with defined licensing, deployment, and support terms; consult the specific product instead of this portfolio entry.
   deployment_models: []
   license_model: unknown
   maturity: unknown
@@ -224,6 +224,9 @@
   sources:
   - legacy:5_Monitoring-Observability/README.md#L102
   - legacy:devopstools_final.md#L819
+  - https://www.manageengine.com/it-operations-management.html
+  - https://www.manageengine.com/it-operations-management/
+  - https://www.manageengine.com/fr/it-operations-management/product-announcement.html
   needs_review: true
 - id: manageengine-netflow-analyzer
   name: ManageEngine NetFlow Analyzer
