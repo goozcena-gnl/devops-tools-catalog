@@ -307,8 +307,9 @@
   needs_review: false
 - id: ctop
   name: ctop
-  summary: Container metrics viewer (top-like).
+  summary: "Terminal interface for Docker and runc container metrics, process state and interactive troubleshooting."
   official_url: https://ctop.sh
+  documentation_url: https://github.com/bcicen/ctop/blob/59f00dd6aaebf48f3bc501e174f75f815c2619f0/README.md
   repository_url: https://github.com/bcicen/ctop
   categories:
   - virtualization-bare-metal-homelab
@@ -321,10 +322,13 @@
   - deploy
   - operate
   use_when:
-  - You want a quick, visual overview of container resource usage in a terminal.
+  - "You need an interactive view of supported local or remote container resource usage without a full observability stack."
+  - "You can grant appropriately limited access to the Docker endpoint or documented runtime connector."
   avoid_when:
-  - You already have a full monitoring stack (Prometheus/Grafana) in place.
-  deployment_models: []
+  - "You need historical metrics, central alerting or cluster-wide monitoring rather than a terminal snapshot."
+  - "You cannot safely allow access to a privileged container runtime socket."
+  deployment_models:
+  - "local-cli"
   license_model: oss
   license_spdx: MIT
   maturity: unknown
@@ -335,6 +339,8 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L140
   - legacy:devopstools_final.md#L235
+  - "https://github.com/bcicen/ctop/blob/59f00dd6aaebf48f3bc501e174f75f815c2619f0/README.md"
+  - "https://github.com/bcicen/ctop/blob/59f00dd6aaebf48f3bc501e174f75f815c2619f0/LICENSE"
   needs_review: true
 - id: docker-desktop
   name: Docker Desktop
@@ -604,10 +610,10 @@
   needs_review: false
 - id: gvisor
   name: gVisor
-  summary: Application kernel and container sandbox runtime that provides strong isolation between containers
-    and the host.
+  summary: "Linux container sandbox providing a userspace application kernel and OCI-compatible runsc runtime for stronger isolation."
   official_url: https://gvisor.dev
-  repository_url: https://github.com/google/gvisor
+  documentation_url: https://gvisor.dev/docs/
+  repository_url: https://github.com/gvisor/gvisor
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -618,9 +624,14 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You run potentially untrusted Linux container workloads and can configure runsc integration with an OCI-aware container stack."
+  - "You can test system-call, device and application compatibility against your actual workloads."
+  avoid_when:
+  - "You require identical Linux kernel feature support, native runtime performance or untested device access."
+  - "Your host cannot satisfy documented Linux requirements or you cannot validate the sandbox isolation boundary."
+  deployment_models:
+  - "linux-oci-runtime"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -629,6 +640,10 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L243
+  - "https://github.com/gvisor/gvisor/blob/eb263e1f414d0bceaf10decea6c73e2c77332112/README.md"
+  - "https://github.com/gvisor/gvisor/blob/eb263e1f414d0bceaf10decea6c73e2c77332112/LICENSE"
+  - "https://gvisor.dev/docs/"
+  - "https://gvisor.dev/blog/2026/10/02/gvisor-cncf/"
   needs_review: true
 - id: harvester
   name: Harvester
@@ -888,8 +903,7 @@
   needs_review: false
 - id: kcli
   name: kcli
-  summary: Unified CLI for provisioning VMs, Kubernetes clusters, and infrastructure across libvirt, cloud,
-    and virtualization providers.
+  summary: "CLI for provisioning VMs and Kubernetes environments across libvirt, vSphere and supported cloud providers."
   official_url: https://kcli.readthedocs.io/en/latest
   repository_url: https://github.com/karmab/kcli
   categories:
@@ -902,9 +916,14 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - "You manage VMs or Kubernetes environments across supported virtualization and cloud providers using one CLI."
+  - "You can supply each provider's credentials, access permissions, cloud images and configuration templates."
+  avoid_when:
+  - "You need provisioning without access to the underlying hypervisor or cloud control plane."
+  - "You require identical feature coverage and production support across every documented provider."
+  deployment_models:
+  - "local-cli"
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -913,6 +932,8 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L248
+  - "https://github.com/karmab/kcli/blob/1fdde9a5c03ade3eae7fcc2d6942df5cb387d3f8/README.md"
+  - "https://github.com/karmab/kcli/blob/1fdde9a5c03ade3eae7fcc2d6942df5cb387d3f8/LICENSE"
   needs_review: true
 - id: komodo
   name: Komodo
@@ -978,8 +999,9 @@
   needs_review: false
 - id: lazydocker
   name: Lazydocker
-  summary: Terminal UI for Docker and Docker Compose.
+  summary: "Interactive terminal UI for Docker and Compose containers, images, services and log inspection."
   repository_url: https://github.com/jesseduffield/lazydocker
+  documentation_url: https://github.com/jesseduffield/lazydocker/blob/596fd59df6b088bb1e38c5bb08cd4fbf28b3ebfb/README.md
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -991,11 +1013,16 @@
   - deploy
   - operate
   use_when:
-  - You want a quick TUI to manage containers, images, and logs without memorizing CLI flags.
+  - "You want rapid, interactive Docker and Compose troubleshooting without repeatedly invoking individual CLI commands."
+  - "You can run the TUI with appropriate access to a Docker daemon and its containers."
   avoid_when:
-  - You prefer scripted automation or already use Portainer.
-  deployment_models: []
+  - "You need auditable fleet-wide production automation instead of an interactive local tool."
+  - "You cannot safely grant Docker API access or depend on in-container metrics and logging features with known limitations."
+  deployment_models:
+  - "local-cli"
+  - "container"
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1004,6 +1031,8 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L158
   - legacy:devopstools_final.md#L249
+  - "https://github.com/jesseduffield/lazydocker/blob/596fd59df6b088bb1e38c5bb08cd4fbf28b3ebfb/README.md"
+  - "https://github.com/jesseduffield/lazydocker/blob/596fd59df6b088bb1e38c5bb08cd4fbf28b3ebfb/LICENSE"
   needs_review: true
 - id: libvirt
   name: libvirt
@@ -1217,8 +1246,9 @@
   needs_review: true
 - id: nerdctl
   name: nerdctl
-  summary: Docker-compatible CLI for containerd.
+  summary: "Docker-compatible CLI for containerd, with Compose support and optional BuildKit and rootless integrations."
   repository_url: https://github.com/containerd/nerdctl
+  documentation_url: https://github.com/containerd/nerdctl/blob/52b705e52dc873da6db3b1d05c4ea352f7c167ab/README.md
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -1230,11 +1260,16 @@
   - deploy
   - operate
   use_when:
-  - You want a Docker-like CLI experience on top of containerd without Docker daemon.
+  - "You operate containerd directly and need Docker-like container, image or Compose commands without the Docker daemon."
+  - "You can configure optional BuildKit and rootless dependencies when those workflows are required."
   avoid_when:
-  - You're already using Docker or Podman and don't want to switch.
-  deployment_models: []
+  - "You require full Docker daemon or Compose feature parity without testing the chosen commands."
+  - "You cannot manage containerd, namespaces, networking and optional build or rootless prerequisites."
+  deployment_models:
+  - "local-cli"
+  - "containerd"
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1243,6 +1278,8 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L168
   - legacy:devopstools_final.md#L255
+  - "https://github.com/containerd/nerdctl/blob/52b705e52dc873da6db3b1d05c4ea352f7c167ab/README.md"
+  - "https://github.com/containerd/nerdctl/blob/52b705e52dc873da6db3b1d05c4ea352f7c167ab/LICENSE"
   needs_review: true
 - id: nextcloud
   name: Nextcloud
@@ -1470,9 +1507,10 @@
   needs_review: false
 - id: podman
   name: Podman
-  summary: Daemonless container engine for developing and managing containers.
+  summary: "Daemonless OCI container and pod engine on Linux, with rootless operation and VM-backed macOS/Windows clients."
   official_url: https://podman.io
-  repository_url: https://github.com/containers/podman
+  documentation_url: https://podman.io/docs/installation
+  repository_url: https://github.com/podman-container-tools/podman
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -1484,11 +1522,16 @@
   - deploy
   - operate
   use_when:
-  - You want rootless, daemonless containers with Docker CLI compatibility.
+  - "You need Linux-native, optionally rootless management of OCI containers and pods without a persistent daemon."
+  - "You can deploy and maintain a Podman-managed Linux VM for containers on macOS or Windows hosts."
   avoid_when:
-  - Docker Compose ecosystem compatibility (especially on macOS) is a hard requirement.
-  deployment_models: []
+  - "You require a Kubernetes CRI daemon or assume Docker API and Compose behavior are identical for every workload."
+  - "Host user namespace restrictions or VM requirements prevent your expected rootless or non-Linux workflow."
+  deployment_models:
+  - "linux-container-engine"
+  - "vm-backed-client"
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1497,6 +1540,9 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L172
   - legacy:devopstools_final.md#L260
+  - "https://github.com/podman-container-tools/podman/blob/06bc48f486720aa5d6ea6d24e22a0bec325d49a5/README.md"
+  - "https://github.com/podman-container-tools/podman/blob/06bc48f486720aa5d6ea6d24e22a0bec325d49a5/LICENSE"
+  - "https://podman.io/docs/installation"
   needs_review: true
 - id: portainer
   name: Portainer
@@ -1761,8 +1807,9 @@
   needs_review: true
 - id: rootlesskit
   name: RootlessKit
-  summary: Rootless container toolkit.
+  summary: "Linux user-namespace and network plumbing to support rootless Docker, containerd and related container stacks."
   repository_url: https://github.com/rootless-containers/rootlesskit
+  documentation_url: https://github.com/rootless-containers/rootlesskit/blob/5ee9a26bc30ac5ca5b13928eede9ad4168fb053a/README.md
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -1774,11 +1821,15 @@
   - deploy
   - operate
   use_when:
-  - You're building rootless container runtimes and need user namespace plumbing.
+  - "You build or operate rootless container stacks that require user, mount or network namespaces."
+  - "You can configure subordinate UID/GID mappings and required host security profiles for rootless operation."
   avoid_when:
-  - You're an end-user—tools like Podman/Docker already integrate this.
-  deployment_models: []
+  - "You need a standalone container image engine or an application orchestrator rather than a rootless infrastructure component."
+  - "Host user namespace or security policy constraints prevent safe rootless operation."
+  deployment_models:
+  - "linux-host-tool"
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1787,11 +1838,14 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L186
   - legacy:devopstools_final.md#L267
+  - "https://github.com/rootless-containers/rootlesskit/blob/5ee9a26bc30ac5ca5b13928eede9ad4168fb053a/README.md"
+  - "https://github.com/rootless-containers/rootlesskit/blob/5ee9a26bc30ac5ca5b13928eede9ad4168fb053a/LICENSE"
   needs_review: true
 - id: runc
   name: runc
-  summary: OCI runtime for containers.
+  summary: "Low-level CLI for creating and running Linux containers according to the OCI Runtime Specification."
   repository_url: https://github.com/opencontainers/runc
+  documentation_url: https://github.com/opencontainers/runc/blob/e86228d9034ffde0c11296eeb31bd781cd2db86f/README.md
   categories:
   - virtualization-bare-metal-homelab
   subcategories:
@@ -1803,11 +1857,15 @@
   - deploy
   - operate
   use_when:
-  - You need the reference OCI container runtime (used by Docker, containerd, CRI-O).
+  - "You need a low-level Linux OCI execution component under containerd or another higher-level container manager."
+  - "You can provide a valid OCI runtime bundle and configure host security and isolation controls."
   avoid_when:
-  - You need stronger isolation (consider Kata Containers or gVisor instead).
-  deployment_models: []
+  - "You need image builds, a persistent management daemon or Kubernetes orchestration from one tool."
+  - "You require native Windows or macOS container execution or treat OCI runtime isolation as a complete sandbox."
+  deployment_models:
+  - "linux-oci-runtime"
   license_model: oss
+  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -1816,6 +1874,8 @@
   sources:
   - legacy:2_Cloud-Infrastructure-Serverless/README.md#L188
   - legacy:devopstools_final.md#L268
+  - "https://github.com/opencontainers/runc/blob/e86228d9034ffde0c11296eeb31bd781cd2db86f/README.md"
+  - "https://github.com/opencontainers/runc/blob/e86228d9034ffde0c11296eeb31bd781cd2db86f/LICENSE"
   needs_review: true
 - id: sealos
   name: Sealos
