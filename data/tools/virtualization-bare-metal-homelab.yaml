@@ -925,7 +925,6 @@
   deployment_models:
   - "local-cli"
   license_model: oss
-  license_spdx: Apache-2.0
   maturity: unknown
   status: needs-review
   alternatives: []
