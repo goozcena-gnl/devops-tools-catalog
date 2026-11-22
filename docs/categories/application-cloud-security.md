@@ -530,17 +530,17 @@ Active Directory Certificate Services assessment tool for identifying configurat
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Supply chain security auditing tool.
+CLI that audits software supply-chain practices across the development lifecycle against the CIS Software Supply Chain benchmark.
 
 **Use when**
 
-- Audit your CI/CD pipeline against CIS Software Supply Chain benchmarks.
+- You want to identify and prioritize gaps in repository and CI/CD practices against the CIS benchmark.
 
 **Consider alternatives when**
 
-- You only need image vulnerability scanning (use Trivy/Grype).
+- You need compliance certification, SBOM generation, or vulnerability scanning.
 
-[Source repository](https://github.com/aquasecurity/chain-bench)
+[Documentation](https://github.com/aquasecurity/chain-bench/blob/936b65a3576ed5f1bc99bef5d9e7ec513a352de3/README.md) · [Source repository](https://github.com/aquasecurity/chain-bench)
 
 ### Chainguard Containers
 
@@ -893,17 +893,17 @@ Open standard for SBOMs and related software supply chain BOM formats, including
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Kubernetes network policy testing tool.
+Research and experimentation toolkit that explains Kubernetes NetworkPolicy behavior, probes connectivity, and generates network policy tests.
 
 **Use when**
 
-- Verify and debug Kubernetes NetworkPolicy behavior.
+- You want to analyze policy behavior or run connectivity and conformance tests in an authorized Kubernetes test cluster.
 
 **Consider alternatives when**
 
-- You're not actively managing network policies.
+- You need the official Kubernetes Network Policy API or its current upstream verification tooling.
 
-[Source repository](https://github.com/mattfenwick/cyclonus)
+[Documentation](https://github.com/mattfenwick/cyclonus/blob/12f646fbd7d348dedb538e4bb7f076e4d927d7a6/README.md) · [Source repository](https://github.com/mattfenwick/cyclonus)
 
 ### Darkmoon
 
@@ -1027,17 +1027,18 @@ Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Proxy that restricts access to the Docker socket API.
+HAProxy-based proxy that filters HTTP access to the Docker Engine API by request method and API path while retaining privileged access to the host socket.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- A trusted Docker client needs a narrowly scoped set of API methods and paths on an isolated private Docker network.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- The proxy would be reachable from a public network or you require built-in TLS.
+- You cannot tightly control proxy clients or accept its privileged access to the host Docker socket.
 
-[Source repository](https://github.com/Tecnativa/docker-socket-proxy)
+[Documentation](https://github.com/Tecnativa/docker-socket-proxy/blob/1d2966298e83ca5253e1b95b54e9cf6d081855af/README.md) · [Source repository](https://github.com/Tecnativa/docker-socket-proxy)
 
 ### Dockle
 
@@ -1390,17 +1391,17 @@ Anchore open-source vulnerability scanner for supported container images, filesy
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Supply chain graph platform for ingesting SBOMs and metadata to map software relationships and provenance.
+Graph for Understanding Artifact Composition ingests and normalizes SBOMs, attestations, and other software supply-chain metadata into a queryable graph.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You have supply-chain metadata from multiple sources and want to correlate artifact relationships and provenance for audit or risk analysis.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need to generate SBOMs or enforce attestation policy at deployment as the primary task.
 
-[Official site](https://guac.sh) · [Source repository](https://github.com/guacsec/guac)
+[Official site](https://guac.sh) · [Documentation](https://github.com/guacsec/guac/blob/af8abdb5e1a4823f7c2afa1b5fddcbba7fc2e98f/README.md) · [Source repository](https://github.com/guacsec/guac)
 
 ### Guardon
 
@@ -1599,17 +1600,17 @@ Password security auditing and recovery tool supporting many hash and encrypted-
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patching, and hardening.
+Self-hosted Kubernetes and K3s security orchestration with Falco runtime events, Wazuh endpoint data, Ollama-assisted triage, and optional Webex notifications.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want to correlate runtime and endpoint alerts and can review AI-generated triage and approve any network policy changes.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You cannot scope the separate integrations' permissions, protect their credentials, or validate the impact of automated actions.
 
-[Source repository](https://github.com/KamouloxPelvis/k-guard)
+[Documentation](https://github.com/KamouloxPelvis/k-guard/blob/bc372a77fb5c5a952add8e01b7945c0c7663c30f/README.md) · [Source repository](https://github.com/KamouloxPelvis/k-guard)
 
 ### k8s Sidecar Secret Forge
 
@@ -1637,17 +1638,17 @@ Kubernetes secret management sidecar.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Drop-in binary that maps Kubernetes attack paths to cluster-admin escalation, node escape, secret theft, and cloud IAM takeover from within a pod.
+Beta Kubernetes RBAC and attack-path assessment tool with a pod-identity perspective and a separate reviewer mode using read-only cluster permissions.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You have explicit authorization to assess RBAC exposure and can distinguish the permissions visible to the assessed pod from the scope of read-only reviewer access.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You lack explicit authorization for the cluster assessment or cannot approve and scope the identity and permissions required for the chosen mode.
 
-[Source repository](https://github.com/k8scout/k8scout)
+[Documentation](https://github.com/k8scout/k8scout/blob/f10a87c30d9bcc0d378530e3cdfb475bde3913b1/README.md) · [Source repository](https://github.com/k8scout/k8scout)
 
 ### Kamaji
 
@@ -2249,17 +2250,17 @@ Kubernetes cluster lifecycle management platform by Sidero Labs; BSL/source-avai
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Policy-based control for cloud-native environments.
+General-purpose Rego policy decision engine for applications and infrastructure integrations.
 
 **Use when**
 
-- Cross-cutting policy enforcement (K8s admission, API auth, Terraform).
+- You want to evaluate policy centrally or alongside a workload and can deploy and test an integration that enforces the returned decisions.
 
 **Consider alternatives when**
 
-- You only need Kubernetes-specific policies (Kyverno may be simpler).
+- You need standalone Kubernetes admission enforcement without a separately deployed and configured integration or controller.
 
-[Official site](https://www.openpolicyagent.org) · [Source repository](https://github.com/open-policy-agent/opa)
+[Official site](https://www.openpolicyagent.org) · [Documentation](https://github.com/open-policy-agent/opa/blob/e4f652d8d8c1ceaf9028e441e0f63d2168e62f00/README.md) · [Source repository](https://github.com/open-policy-agent/opa)
 
 ### open-appsec
 
@@ -2268,17 +2269,18 @@ Policy-based control for cloud-native environments.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-ML-based application & API security (WAF/RASP style).
+Machine-learning-based protection for HTTP applications and APIs that attaches to gateways such as NGINX or Kong and supports Kubernetes deployments.
 
 **Use when**
 
-- You want ML-driven threat detection that doesn't rely on static signatures.
+- You can evaluate the engine with representative HTTP traffic and assess its gateway integration, model, and management options separately.
 
 **Consider alternatives when**
 
-- You need deterministic, auditable rule-based filtering.
+- You require deterministic rule-based filtering or assured coverage for a specific vulnerability class.
+- You need the source engine, separately distributed models, and SaaS management to share one set of deployment and licensing terms.
 
-[Official site](https://www.openappsec.io) · [Source repository](https://github.com/openappsec/openappsec)
+[Official site](https://www.openappsec.io) · [Documentation](https://github.com/openappsec/openappsec/blob/634f840534e07952b1a449079a0d1b2e885c6aec/README.md) · [Source repository](https://github.com/openappsec/openappsec)
 
 ### OpenSCAP
 
@@ -3359,17 +3361,17 @@ Security testing tool.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-EBPF-based runtime security and threat detection for Linux systems and containers.
+Runtime security and observability tool that uses eBPF to collect Linux host and container activity and detect suspicious behavior.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need runtime telemetry or behavioral detections and can verify kernel compatibility, required host visibility, and elevated container privileges where applicable.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- The monitored Linux kernel is incompatible or your environment cannot grant the required host access and container privileges.
 
-[Official site](https://aquasecurity.github.io/tracee/latest) · [Source repository](https://github.com/aquasecurity/tracee)
+[Official site](https://aquasecurity.github.io/tracee/latest) · [Documentation](https://github.com/aquasecurity/tracee/blob/2f9dc40c20b17c2ba27f6d92b25e62790bd48a62/Readme.md) · [Source repository](https://github.com/aquasecurity/tracee)
 
 ### Trivy
 

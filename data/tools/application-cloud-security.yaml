@@ -767,8 +767,10 @@
   needs_review: false
 - id: chain-bench
   name: Chain Bench
-  summary: Supply chain security auditing tool.
+  summary: CLI that audits software supply-chain practices across the development lifecycle against the
+    CIS Software Supply Chain benchmark.
   repository_url: https://github.com/aquasecurity/chain-bench
+  documentation_url: https://github.com/aquasecurity/chain-bench/blob/936b65a3576ed5f1bc99bef5d9e7ec513a352de3/README.md
   categories:
   - application-cloud-security
   subcategories:
@@ -780,10 +782,11 @@
   - test
   - secure
   use_when:
-  - Audit your CI/CD pipeline against CIS Software Supply Chain benchmarks.
+  - You want to identify and prioritize gaps in repository and CI/CD practices against the CIS benchmark.
   avoid_when:
-  - You only need image vulnerability scanning (use Trivy/Grype).
-  deployment_models: []
+  - You need compliance certification, SBOM generation, or vulnerability scanning.
+  deployment_models:
+  - local
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -793,6 +796,8 @@
   sources:
   - legacy:6_Security/README.md#L12
   - legacy:devopstools_final.md#L846
+  - https://github.com/aquasecurity/chain-bench/blob/936b65a3576ed5f1bc99bef5d9e7ec513a352de3/README.md
+  - https://github.com/aquasecurity/chain-bench/blob/936b65a3576ed5f1bc99bef5d9e7ec513a352de3/LICENSE
   needs_review: true
 - id: chainguard
   name: Chainguard Containers
@@ -1224,8 +1229,10 @@
   needs_review: true
 - id: cyclonus
   name: Cyclonus
-  summary: Kubernetes network policy testing tool.
+  summary: Research and experimentation toolkit that explains Kubernetes NetworkPolicy behavior, probes
+    connectivity, and generates network policy tests.
   repository_url: https://github.com/mattfenwick/cyclonus
+  documentation_url: https://github.com/mattfenwick/cyclonus/blob/12f646fbd7d348dedb538e4bb7f076e4d927d7a6/README.md
   categories:
   - application-cloud-security
   subcategories:
@@ -1237,10 +1244,12 @@
   - test
   - secure
   use_when:
-  - Verify and debug Kubernetes NetworkPolicy behavior.
+  - You want to analyze policy behavior or run connectivity and conformance tests in an authorized Kubernetes
+    test cluster.
   avoid_when:
-  - You're not actively managing network policies.
-  deployment_models: []
+  - You need the official Kubernetes Network Policy API or its current upstream verification tooling.
+  deployment_models:
+  - local
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -1250,6 +1259,8 @@
   sources:
   - legacy:6_Security/README.md#L19
   - legacy:devopstools_final.md#L855
+  - https://github.com/mattfenwick/cyclonus/blob/12f646fbd7d348dedb538e4bb7f076e4d927d7a6/README.md
+  - https://github.com/mattfenwick/cyclonus/blob/12f646fbd7d348dedb538e4bb7f076e4d927d7a6/LICENSE
   needs_review: true
 - id: darkmoon
   name: Darkmoon
@@ -1434,8 +1445,10 @@
   needs_review: true
 - id: docker-socket-proxy
   name: docker-socket-proxy
-  summary: Proxy that restricts access to the Docker socket API.
+  summary: HAProxy-based proxy that filters HTTP access to the Docker Engine API by request method and
+    API path while retaining privileged access to the host socket.
   repository_url: https://github.com/Tecnativa/docker-socket-proxy
+  documentation_url: https://github.com/Tecnativa/docker-socket-proxy/blob/1d2966298e83ca5253e1b95b54e9cf6d081855af/README.md
   categories:
   - application-cloud-security
   subcategories:
@@ -1446,9 +1459,14 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - A trusted Docker client needs a narrowly scoped set of API methods and paths on an isolated private
+    Docker network.
+  avoid_when:
+  - The proxy would be reachable from a public network or you require built-in TLS.
+  - You cannot tightly control proxy clients or accept its privileged access to the host Docker socket.
+  deployment_models:
+  - self-hosted
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -1457,6 +1475,8 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L938
+  - https://github.com/Tecnativa/docker-socket-proxy/blob/1d2966298e83ca5253e1b95b54e9cf6d081855af/README.md
+  - https://github.com/Tecnativa/docker-socket-proxy/blob/1d2966298e83ca5253e1b95b54e9cf6d081855af/LICENSE.txt
   needs_review: true
 - id: dockle
   name: Dockle
@@ -2095,10 +2115,11 @@
   repository_archived: false
 - id: guac
   name: GUAC
-  summary: Supply chain graph platform for ingesting SBOMs and metadata to map software relationships
-    and provenance.
+  summary: Graph for Understanding Artifact Composition ingests and normalizes SBOMs, attestations, and
+    other software supply-chain metadata into a queryable graph.
   official_url: https://guac.sh
   repository_url: https://github.com/guacsec/guac
+  documentation_url: https://github.com/guacsec/guac/blob/af8abdb5e1a4823f7c2afa1b5fddcbba7fc2e98f/README.md
   categories:
   - application-cloud-security
   subcategories:
@@ -2109,9 +2130,13 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You have supply-chain metadata from multiple sources and want to correlate artifact relationships
+    and provenance for audit or risk analysis.
+  avoid_when:
+  - You need to generate SBOMs or enforce attestation policy at deployment as the primary task.
+  deployment_models:
+  - self-hosted
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -2120,6 +2145,8 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L867
+  - https://github.com/guacsec/guac/blob/af8abdb5e1a4823f7c2afa1b5fddcbba7fc2e98f/README.md
+  - https://github.com/guacsec/guac/blob/af8abdb5e1a4823f7c2afa1b5fddcbba7fc2e98f/LICENSE
   needs_review: true
 - id: guardon
   name: Guardon
@@ -2442,8 +2469,10 @@
   needs_review: false
 - id: k-guard
   name: k-guard
-  summary: Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patching, and hardening.
+  summary: Self-hosted Kubernetes and K3s security orchestration with Falco runtime events, Wazuh endpoint
+    data, Ollama-assisted triage, and optional Webex notifications.
   repository_url: https://github.com/KamouloxPelvis/k-guard
+  documentation_url: https://github.com/KamouloxPelvis/k-guard/blob/bc372a77fb5c5a952add8e01b7945c0c7663c30f/README.md
   categories:
   - application-cloud-security
   subcategories:
@@ -2454,9 +2483,14 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You want to correlate runtime and endpoint alerts and can review AI-generated triage and approve any
+    network policy changes.
+  avoid_when:
+  - You cannot scope the separate integrations' permissions, protect their credentials, or validate the
+    impact of automated actions.
+  deployment_models:
+  - self-hosted
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -2465,6 +2499,8 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L942
+  - https://github.com/KamouloxPelvis/k-guard/blob/bc372a77fb5c5a952add8e01b7945c0c7663c30f/README.md
+  - https://github.com/KamouloxPelvis/k-guard/blob/bc372a77fb5c5a952add8e01b7945c0c7663c30f/LICENSE
   needs_review: true
 - id: k8s-sidecar-secret-forge
   name: k8s Sidecar Secret Forge
@@ -2497,9 +2533,10 @@
   needs_review: true
 - id: k8scout
   name: k8scout
-  summary: Drop-in binary that maps Kubernetes attack paths to cluster-admin escalation, node escape,
-    secret theft, and cloud IAM takeover from within a pod.
+  summary: Beta Kubernetes RBAC and attack-path assessment tool with a pod-identity perspective and a
+    separate reviewer mode using read-only cluster permissions.
   repository_url: https://github.com/k8scout/k8scout
+  documentation_url: https://github.com/k8scout/k8scout/blob/f10a87c30d9bcc0d378530e3cdfb475bde3913b1/README.md
   categories:
   - application-cloud-security
   subcategories:
@@ -2510,9 +2547,15 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You have explicit authorization to assess RBAC exposure and can distinguish the permissions visible
+    to the assessed pod from the scope of read-only reviewer access.
+  avoid_when:
+  - You lack explicit authorization for the cluster assessment or cannot approve and scope the identity
+    and permissions required for the chosen mode.
+  deployment_models:
+  - local
+  - self-hosted
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -2521,6 +2564,8 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L874
+  - https://github.com/k8scout/k8scout/blob/f10a87c30d9bcc0d378530e3cdfb475bde3913b1/README.md
+  - https://github.com/k8scout/k8scout/blob/f10a87c30d9bcc0d378530e3cdfb475bde3913b1/LICENSE
   needs_review: true
 - id: katana
   name: Katana
@@ -3366,9 +3411,11 @@
   needs_review: true
 - id: open-appsec
   name: open-appsec
-  summary: ML-based application & API security (WAF/RASP style).
+  summary: Machine-learning-based protection for HTTP applications and APIs that attaches to gateways
+    such as NGINX or Kong and supports Kubernetes deployments.
   official_url: https://www.openappsec.io
   repository_url: https://github.com/openappsec/openappsec
+  documentation_url: https://github.com/openappsec/openappsec/blob/634f840534e07952b1a449079a0d1b2e885c6aec/README.md
   categories:
   - application-cloud-security
   subcategories:
@@ -3380,10 +3427,14 @@
   - test
   - secure
   use_when:
-  - You want ML-driven threat detection that doesn't rely on static signatures.
+  - You can evaluate the engine with representative HTTP traffic and assess its gateway integration, model,
+    and management options separately.
   avoid_when:
-  - You need deterministic, auditable rule-based filtering.
-  deployment_models: []
+  - You require deterministic rule-based filtering or assured coverage for a specific vulnerability class.
+  - You need the source engine, separately distributed models, and SaaS management to share one set of
+    deployment and licensing terms.
+  deployment_models:
+  - self-hosted
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -3393,12 +3444,15 @@
   sources:
   - legacy:6_Security/README.md#L40
   - legacy:devopstools_final.md#L892
+  - https://github.com/openappsec/openappsec/blob/634f840534e07952b1a449079a0d1b2e885c6aec/README.md
+  - https://github.com/openappsec/openappsec/blob/634f840534e07952b1a449079a0d1b2e885c6aec/LICENSE
   needs_review: true
 - id: open-policy-agent
   name: Open Policy Agent
-  summary: Policy-based control for cloud-native environments.
+  summary: General-purpose Rego policy decision engine for applications and infrastructure integrations.
   official_url: https://www.openpolicyagent.org
   repository_url: https://github.com/open-policy-agent/opa
+  documentation_url: https://github.com/open-policy-agent/opa/blob/e4f652d8d8c1ceaf9028e441e0f63d2168e62f00/README.md
   categories:
   - application-cloud-security
   subcategories:
@@ -3410,10 +3464,14 @@
   - test
   - secure
   use_when:
-  - Cross-cutting policy enforcement (K8s admission, API auth, Terraform).
+  - You want to evaluate policy centrally or alongside a workload and can deploy and test an integration
+    that enforces the returned decisions.
   avoid_when:
-  - You only need Kubernetes-specific policies (Kyverno may be simpler).
-  deployment_models: []
+  - You need standalone Kubernetes admission enforcement without a separately deployed and configured
+    integration or controller.
+  deployment_models:
+  - local
+  - self-hosted
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -3423,6 +3481,8 @@
   sources:
   - legacy:6_Security/README.md#L73
   - legacy:devopstools_final.md#L944
+  - https://github.com/open-policy-agent/opa/blob/e4f652d8d8c1ceaf9028e441e0f63d2168e62f00/README.md
+  - https://github.com/open-policy-agent/opa/blob/e4f652d8d8c1ceaf9028e441e0f63d2168e62f00/LICENSE
   needs_review: true
 - id: openscap
   name: OpenSCAP
@@ -5093,9 +5153,11 @@
   needs_review: true
 - id: tracee
   name: Tracee
-  summary: EBPF-based runtime security and threat detection for Linux systems and containers.
+  summary: Runtime security and observability tool that uses eBPF to collect Linux host and container
+    activity and detect suspicious behavior.
   official_url: https://aquasecurity.github.io/tracee/latest
   repository_url: https://github.com/aquasecurity/tracee
+  documentation_url: https://github.com/aquasecurity/tracee/blob/2f9dc40c20b17c2ba27f6d92b25e62790bd48a62/Readme.md
   categories:
   - application-cloud-security
   subcategories:
@@ -5106,9 +5168,14 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need runtime telemetry or behavioral detections and can verify kernel compatibility, required
+    host visibility, and elevated container privileges where applicable.
+  avoid_when:
+  - The monitored Linux kernel is incompatible or your environment cannot grant the required host access
+    and container privileges.
+  deployment_models:
+  - self-hosted
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -5117,6 +5184,8 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L923
+  - https://github.com/aquasecurity/tracee/blob/2f9dc40c20b17c2ba27f6d92b25e62790bd48a62/Readme.md
+  - https://github.com/aquasecurity/tracee/blob/2f9dc40c20b17c2ba27f6d92b25e62790bd48a62/LICENSE
   needs_review: true
 - id: trufflehog
   name: TruffleHog
