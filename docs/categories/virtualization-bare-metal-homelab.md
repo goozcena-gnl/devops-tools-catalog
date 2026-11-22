@@ -240,17 +240,19 @@ Checkpoint/Restore In Userspace for Linux containers and processes.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Container metrics viewer (top-like).
+Terminal interface for Docker and runc container metrics, process state and interactive troubleshooting.
 
 **Use when**
 
-- You want a quick, visual overview of container resource usage in a terminal.
+- You need an interactive view of supported local or remote container resource usage without a full observability stack.
+- You can grant appropriately limited access to the Docker endpoint or documented runtime connector.
 
 **Consider alternatives when**
 
-- You already have a full monitoring stack (Prometheus/Grafana) in place.
+- You need historical metrics, central alerting or cluster-wide monitoring rather than a terminal snapshot.
+- You cannot safely allow access to a privileged container runtime socket.
 
-[Official site](https://ctop.sh) · [Source repository](https://github.com/bcicen/ctop)
+[Official site](https://ctop.sh) · [Documentation](https://github.com/bcicen/ctop/blob/59f00dd6aaebf48f3bc501e174f75f815c2619f0/README.md) · [Source repository](https://github.com/bcicen/ctop)
 
 ### Docker Desktop
 
@@ -411,17 +413,19 @@ Commercial virtualization management and migration suite built on open-source in
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Application kernel and container sandbox runtime that provides strong isolation between containers and the host.
+Linux container sandbox providing a userspace application kernel and OCI-compatible runsc runtime for stronger isolation.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You run potentially untrusted Linux container workloads and can configure runsc integration with an OCI-aware container stack.
+- You can test system-call, device and application compatibility against your actual workloads.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require identical Linux kernel feature support, native runtime performance or untested device access.
+- Your host cannot satisfy documented Linux requirements or you cannot validate the sandbox isolation boundary.
 
-[Official site](https://gvisor.dev) · [Source repository](https://github.com/google/gvisor)
+[Official site](https://gvisor.dev) · [Documentation](https://gvisor.dev/docs/) · [Source repository](https://github.com/gvisor/gvisor)
 
 ### Harvester
 
@@ -563,15 +567,17 @@ Secure containers with lightweight VMs.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Unified CLI for provisioning VMs, Kubernetes clusters, and infrastructure across libvirt, cloud, and virtualization providers.
+CLI for provisioning VMs and Kubernetes environments across libvirt, vSphere and supported cloud providers.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You manage VMs or Kubernetes environments across supported virtualization and cloud providers using one CLI.
+- You can supply each provider's credentials, access permissions, cloud images and configuration templates.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need provisioning without access to the underlying hypervisor or cloud control plane.
+- You require identical feature coverage and production support across every documented provider.
 
 [Official site](https://kcli.readthedocs.io/en/latest) · [Source repository](https://github.com/karmab/kcli)
 
@@ -639,17 +645,19 @@ IPMI and Redfish management interfaces for KubeVirt virtual machines.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Terminal UI for Docker and Docker Compose.
+Interactive terminal UI for Docker and Compose containers, images, services and log inspection.
 
 **Use when**
 
-- You want a quick TUI to manage containers, images, and logs without memorizing CLI flags.
+- You want rapid, interactive Docker and Compose troubleshooting without repeatedly invoking individual CLI commands.
+- You can run the TUI with appropriate access to a Docker daemon and its containers.
 
 **Consider alternatives when**
 
-- You prefer scripted automation or already use Portainer.
+- You need auditable fleet-wide production automation instead of an interactive local tool.
+- You cannot safely grant Docker API access or depend on in-container metrics and logging features with known limitations.
 
-[Source repository](https://github.com/jesseduffield/lazydocker)
+[Documentation](https://github.com/jesseduffield/lazydocker/blob/596fd59df6b088bb1e38c5bb08cd4fbf28b3ebfb/README.md) · [Source repository](https://github.com/jesseduffield/lazydocker)
 
 ### libvirt
 
@@ -773,17 +781,19 @@ Local Azure emulator that emulates 26+ Azure services in a single binary for dev
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Docker-compatible CLI for containerd.
+Docker-compatible CLI for containerd, with Compose support and optional BuildKit and rootless integrations.
 
 **Use when**
 
-- You want a Docker-like CLI experience on top of containerd without Docker daemon.
+- You operate containerd directly and need Docker-like container, image or Compose commands without the Docker daemon.
+- You can configure optional BuildKit and rootless dependencies when those workflows are required.
 
 **Consider alternatives when**
 
-- You're already using Docker or Podman and don't want to switch.
+- You require full Docker daemon or Compose feature parity without testing the chosen commands.
+- You cannot manage containerd, namespaces, networking and optional build or rootless prerequisites.
 
-[Source repository](https://github.com/containerd/nerdctl)
+[Documentation](https://github.com/containerd/nerdctl/blob/52b705e52dc873da6db3b1d05c4ea352f7c167ab/README.md) · [Source repository](https://github.com/containerd/nerdctl)
 
 ### Nextcloud
 
@@ -963,17 +973,19 @@ Managed hosting service for deploying supported open-source applications as isol
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Daemonless container engine for developing and managing containers.
+Daemonless OCI container and pod engine on Linux, with rootless operation and VM-backed macOS/Windows clients.
 
 **Use when**
 
-- You want rootless, daemonless containers with Docker CLI compatibility.
+- You need Linux-native, optionally rootless management of OCI containers and pods without a persistent daemon.
+- You can deploy and maintain a Podman-managed Linux VM for containers on macOS or Windows hosts.
 
 **Consider alternatives when**
 
-- Docker Compose ecosystem compatibility (especially on macOS) is a hard requirement.
+- You require a Kubernetes CRI daemon or assume Docker API and Compose behavior are identical for every workload.
+- Host user namespace restrictions or VM requirements prevent your expected rootless or non-Linux workflow.
 
-[Official site](https://podman.io) · [Source repository](https://github.com/containers/podman)
+[Official site](https://podman.io) · [Documentation](https://podman.io/docs/installation) · [Source repository](https://github.com/podman-container-tools/podman)
 
 ### Portainer
 
@@ -1134,17 +1146,19 @@ Remote desktop client.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Rootless container toolkit.
+Linux user-namespace and network plumbing to support rootless Docker, containerd and related container stacks.
 
 **Use when**
 
-- You're building rootless container runtimes and need user namespace plumbing.
+- You build or operate rootless container stacks that require user, mount or network namespaces.
+- You can configure subordinate UID/GID mappings and required host security profiles for rootless operation.
 
 **Consider alternatives when**
 
-- You're an end-user—tools like Podman/Docker already integrate this.
+- You need a standalone container image engine or an application orchestrator rather than a rootless infrastructure component.
+- Host user namespace or security policy constraints prevent safe rootless operation.
 
-[Source repository](https://github.com/rootless-containers/rootlesskit)
+[Documentation](https://github.com/rootless-containers/rootlesskit/blob/5ee9a26bc30ac5ca5b13928eede9ad4168fb053a/README.md) · [Source repository](https://github.com/rootless-containers/rootlesskit)
 
 ### runc
 
@@ -1153,17 +1167,19 @@ Rootless container toolkit.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-OCI runtime for containers.
+Low-level CLI for creating and running Linux containers according to the OCI Runtime Specification.
 
 **Use when**
 
-- You need the reference OCI container runtime (used by Docker, containerd, CRI-O).
+- You need a low-level Linux OCI execution component under containerd or another higher-level container manager.
+- You can provide a valid OCI runtime bundle and configure host security and isolation controls.
 
 **Consider alternatives when**
 
-- You need stronger isolation (consider Kata Containers or gVisor instead).
+- You need image builds, a persistent management daemon or Kubernetes orchestration from one tool.
+- You require native Windows or macOS container execution or treat OCI runtime isolation as a complete sandbox.
 
-[Source repository](https://github.com/opencontainers/runc)
+[Documentation](https://github.com/opencontainers/runc/blob/e86228d9034ffde0c11296eeb31bd781cd2db86f/README.md) · [Source repository](https://github.com/opencontainers/runc)
 
 ### Sealos
 

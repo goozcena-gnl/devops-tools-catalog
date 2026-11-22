@@ -156,7 +156,7 @@
 - [CruiseKube](https://cruisekube.com/) — Kubernetes controller that recommends and automates workload CPU and memory right-sizing.
 - [crun](https://github.com/containers/crun) — OCI container runtime implemented in C for running Linux containers.
 - [crust-gather](https://deepwiki.com/crust-gather/crust-gather) — Kubectl plugin for collecting Kubernetes cluster state, logs, and events into browsable snapshots for debugging and post-mortem analysis.
-- [ctop](https://ctop.sh) — Container metrics viewer (top-like).
+- [ctop](https://ctop.sh) — Terminal interface for Docker and runc container metrics, process state and interactive troubleshooting.
 - [curl](https://curl.se) — Command-line client and transfer library for working with URL-based network protocols.
 - [Dapr](https://dapr.io) — Distributed application runtime for microservices.
 - [Datadog](https://www.datadoghq.com/product/) — Commercial hosted observability and security platform spanning infrastructure monitoring, logs, traces, application performance, and cloud services.
@@ -262,7 +262,7 @@
 - [Gremlin](https://www.gremlin.com) — Reliability management and resilience testing platform with controlled fault injection and disaster-recovery validation.
 - [groundcover](https://www.groundcover.com/) — Commercial observability platform offering infrastructure and application monitoring with BYOC deployment.
 - [grove](https://github.com/ai-dynamo/grove) — AI-powered Kubernetes troubleshooting.
-- [gVisor](https://gvisor.dev) — Application kernel and container sandbox runtime that provides strong isolation between containers and the host.
+- [gVisor](https://gvisor.dev) — Linux container sandbox providing a userspace application kernel and OCI-compatible runsc runtime for stronger isolation.
 - [HAMi](https://project-hami.io) — Heterogeneous AI computing virtualization middleware.
 - [Hanoi CLI](https://github.com/k-krew/hanoi-cli) — Interactive rebalance advisor for Kubernetes.
 - [HAProxy](https://www.haproxy.org) — General-purpose high-performance TCP/HTTP reverse proxy and load balancer, distinct from HAProxy Kubernetes Ingress.
@@ -350,7 +350,7 @@
 - [Kata Containers](https://katacontainers.io) — Secure containers with lightweight VMs.
 - [Katello](https://theforeman.org/plugins/katello/) — Foreman plugin for repository synchronization, content views, lifecycle environments, and host patch content.
 - [KCL](https://www.kcl-lang.io) — Constraint-based configuration and policy language for Kubernetes and cloud-native environments.
-- [kcli](https://kcli.readthedocs.io/en/latest) — Unified CLI for provisioning VMs, Kubernetes clusters, and infrastructure across libvirt, cloud, and virtualization providers.
+- [kcli](https://kcli.readthedocs.io/en/latest) — CLI for provisioning VMs and Kubernetes environments across libvirt, vSphere and supported cloud providers.
 - [KDash](https://kdash-rs.github.io) — Fast terminal dashboard for Kubernetes.
 - [KEDA](https://keda.sh) — Event-driven Kubernetes workload autoscaling that manages HPA resources and supplies external metrics, with workload activation from zero and event-driven Jobs; separate from node provisioning and the Metrics Server resource pipeline.
 - [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) — GPU-aware autoscaling extension for KEDA workloads.
@@ -467,7 +467,7 @@
 - [LangGraph](https://www.langchain.com/langgraph) — MIT-licensed orchestration framework and runtime for building stateful, long-running agents.
 - [LangSmith](https://smith.langchain.com) — Commercial LangSmith platform for LLM and agent observability, evaluations and debugging, with Cloud, Hybrid and Enterprise-licensed self-hosted deployment options.
 - [last30days-skill](https://github.com/mvanhorn/last30days-skill) — Agent skill that researches current topics across web and social sources and synthesizes grounded summaries.
-- [Lazydocker](https://github.com/jesseduffield/lazydocker) — Terminal UI for Docker and Docker Compose.
+- [Lazydocker](https://github.com/jesseduffield/lazydocker) — Interactive terminal UI for Docker and Compose containers, images, services and log inspection.
 - [Lens](https://lenshq.io) — Commercial Mirantis Lens Desktop Kubernetes IDE; its formerly open-source core is retired.
 - [lfk](https://github.com/janosmiko/lfk) — Lightning-fast, keyboard-focused TUI for navigating and managing Kubernetes clusters with a three-column Miller columns layout and owner-based resource hierarchy.
 - [libvirt](https://libvirt.org) — C library, API, and daemons for managing virtualization through drivers such as QEMU/KVM and Xen.
@@ -532,7 +532,7 @@
 - [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) — Kubernetes operator that pauses idle workloads and wakes them on demand to reduce non-production resource consumption.
 - [Nelm](https://github.com/werf/nelm) — Helm-compatible Kubernetes deployment tool and Helm alternative with release planning and resource lifecycle management; not proven a drop-in replacement for every Helm plugin.
 - [Neovim](https://neovim.io/) — Extensible Vim-derived text editor with built-in APIs for plugins and editor automation.
-- [nerdctl](https://github.com/containerd/nerdctl) — Docker-compatible CLI for containerd.
+- [nerdctl](https://github.com/containerd/nerdctl) — Docker-compatible CLI for containerd, with Compose support and optional BuildKit and rootless integrations.
 - [Netdata Cloud](https://www.netdata.cloud) — Netdata Cloud's proprietary hosted control plane has a personal non-commercial free tier and paid plans; telemetry stays on separate GPL-3.0-or-later Agents and Parents. The UI uses NCUL1, and commercial Cloud On-Premises is a separate deployment option.
 - [NetWatch Labs](https://www.netwatchlabs.com) — Collection of terminal-first network and system diagnostics tools for Linux operators.
 - [New Relic](https://newrelic.com/platform) — Hosted observability platform for application, infrastructure, log, digital-experience, and AI telemetry.
@@ -607,7 +607,7 @@
 - [Pluto](https://github.com/FairwindsOps/pluto) — Command-line utility for detecting deprecated Kubernetes API versions in live clusters and manifests.
 - [Pocket ID](https://pocket-id.org/) — Self-hosted OpenID Connect provider that authenticates users with passkeys.
 - [PocketBase](https://pocketbase.io/) — Embedded backend service combining SQLite, authentication, file storage, realtime subscriptions, and an HTTP API.
-- [Podman](https://podman.io) — Daemonless container engine for developing and managing containers.
+- [Podman](https://podman.io) — Daemonless OCI container and pod engine on Linux, with rootless operation and VM-backed macOS/Windows clients.
 - [Polykube](https://github.com/Kismet-Engineering/polykube) — Experimental GitOps-driven operators for portable workloads across Kubernetes clusters.
 - [Popeye](https://popeyecli.io) — Read-only Kubernetes live-cluster linter for resource hygiene and configuration issues, with optional metrics-server utilization checks and configurable reports.
 - [Port](https://www.port.io/) — Internal developer portal and service catalog with automations/workflows.
@@ -660,11 +660,11 @@
 - [Robusta](https://home.robusta.dev) — Kubernetes alert enrichment, investigation, and automation platform centered on the open-source Robusta Classic engine with optional hosted platform capabilities.
 - [Rocky Linux](https://rockylinux.org) — Enterprise Linux distribution.
 - [Rook](https://rook.io) — Storage orchestrator for Kubernetes.
-- [RootlessKit](https://github.com/rootless-containers/rootlesskit) — Rootless container toolkit.
+- [RootlessKit](https://github.com/rootless-containers/rootlesskit) — Linux user-namespace and network plumbing to support rootless Docker, containerd and related container stacks.
 - [rsyslog](https://www.rsyslog.com) — rsyslog collects and routes syslog data; the checked daemon source is Apache-2.0 and its runtime header is LGPL-3.0-or-later, while aggregate component licensing still needs review.
 - [Ruby](https://www.ruby-lang.org/en/) — Programming language and runtime used by automation tools and application services.
 - [Rudder](https://www.rudder.io) — Continuous configuration and compliance platform with GPL-licensed Rudder Core and separately licensed enterprise plugins.
-- [runc](https://github.com/opencontainers/runc) — OCI runtime for containers.
+- [runc](https://github.com/opencontainers/runc) — Low-level CLI for creating and running Linux containers according to the OCI Runtime Specification.
 - [Rundeck](https://www.rundeck.com) — Apache-2.0 runbook and self-service operations automation server with CLI and API; PagerDuty commercial Runbook Automation is a separate offering.
 - [RustFS](https://rustfs.com) — S3-compatible object storage system implemented in Rust.
 - [RustNet](https://github.com/domcyrus/rustnet) — Cross-platform network monitoring TUI with packet inspection, process attribution, filtering, and connection analytics.
