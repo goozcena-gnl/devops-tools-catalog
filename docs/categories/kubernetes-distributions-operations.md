@@ -450,17 +450,19 @@ Exoscale managed Kubernetes service with managed control planes and cloud infras
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Kubernetes dashboard that discovers and displays application URLs from Ingress annotations as a dynamic launchpad.
+Kubernetes application launchpad that discovers configured application URLs across namespaces and custom resources.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a centralized launchpad for applications exposed from selected Kubernetes or OpenShift namespaces.
+- You can configure namespace discovery and control which application URLs are disclosed to dashboard users.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need an authorization gateway or identity enforcement rather than an application link directory.
+- You cannot safely expose application metadata, external URLs or cluster discovery permissions to dashboard viewers.
 
-[Source repository](https://github.com/stakater/Forecastle)
+[Documentation](https://github.com/stakater/Forecastle/blob/60137f4f3e190176f2434811385db240bfd23600/README.md) · [Source repository](https://github.com/stakater/Forecastle)
 
 ### FreeLens
 
@@ -564,17 +566,19 @@ Managed Kubernetes service with Standard and Autopilot operating modes on Google
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Interactive rebalance advisor for Kubernetes.
+Read-only Kubernetes node-balance advisor that analyzes pod placement and suggests simulated redistribution plans.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want to investigate CPU or memory imbalance and review scheduler-constrained pod redistribution options.
+- You can inspect node and pod requests and evaluate proposed moves before independently choosing any action.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You expect the CLI to rebalance pods automatically or guarantee live scheduler placement.
+- Your kubeconfig lacks suitable read permissions or the simulation is not validated against your workload constraints.
 
-[Source repository](https://github.com/k-krew/hanoi-cli)
+[Documentation](https://github.com/k-krew/hanoi-cli/blob/29c42b3675d3a3c2ee244eee6b9ead00b7d54a68/README.md) · [Source repository](https://github.com/k-krew/hanoi-cli)
 
 ### Harvester
 
@@ -849,17 +853,19 @@ Open-source visual editor that imports Kubernetes YAML into resource diagrams an
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Generate D2 diagrams from Kubernetes topology and resources.
+CLI that converts observed Kubernetes resource topology into D2 diagrams, with optional SVG rendering.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need visual documentation of namespaces, workloads and services from a reachable Kubernetes cluster.
+- You can verify the cluster access scope and control whether optional remote diagram rendering is permitted.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require historical topology evidence or a complete runtime security posture assessment.
+- Your topology contains sensitive resource metadata that must not be sent to an external SVG rendering endpoint.
 
-[Source repository](https://github.com/vieitesss/k8s-d2)
+[Documentation](https://github.com/vieitesss/k8s-d2/blob/6a31b5f6335c2a8f7d87d9700357294e8c94f703/README.md) · [Source repository](https://github.com/vieitesss/k8s-d2)
 
 ### k8s-mechanic
 
@@ -868,17 +874,19 @@ Generate D2 diagrams from Kubernetes topology and resources.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Kubernetes controller that proposes GitOps pull requests for observed cluster failures with human approval.
+In-cluster Kubernetes failure investigator that opens proposed GitOps remediation pull requests for human review.
 
 **Use when**
 
-- You are evaluating read-only, human-reviewed remediation proposals for a GitOps-managed cluster.
+- You are evaluating in-cluster incident investigations that propose GitOps changes without directly applying them.
+- You can isolate the agent, review its repository access and Kubernetes RBAC, and require human approval for each PR.
 
 **Consider alternatives when**
 
-- Avoid granting write access or relying on generated fixes without independent review and secret-redaction validation.
+- You expect AI-generated changes to be safe to merge without independent validation and policy checks.
+- Secret exposure, prompt injection, excessive repository credentials or controller permissions are not controlled.
 
-[Source repository](https://github.com/lenaxia/k8s-mechanic)
+[Documentation](https://github.com/lenaxia/k8s-mechanic/blob/a4cb60a8d911af568710ac43414410c40e5d7fe5/README.md) · [Source repository](https://github.com/lenaxia/k8s-mechanic)
 
 ### k8sql
 
@@ -887,17 +895,19 @@ Kubernetes controller that proposes GitOps pull requests for observed cluster fa
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Query Kubernetes clusters with SQL and PRQL.
+SQL and PRQL query CLI for Kubernetes resources, including multi-cluster queries and custom resource discovery.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want to filter and aggregate Kubernetes API objects using SQL or PRQL across allowed namespaces or contexts.
+- You can constrain kubeconfig permissions and separately secure any interactive or PostgreSQL-compatible query interface.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need application data SQL storage or assume this query interface is a Kubernetes metrics time-series database.
+- Cross-cluster access, queried secrets or a network-facing query endpoint would exceed your read permissions.
 
-[Source repository](https://github.com/ndenev/k8sql)
+[Documentation](https://github.com/ndenev/k8sql/blob/9126a23daa29d35009a4f5e0363c1254c46854a1/README.md) · [Source repository](https://github.com/ndenev/k8sql)
 
 ### K8Studio
 
@@ -944,17 +954,19 @@ Terminal UI to manage Kubernetes clusters.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Keyboard-driven TUI for debugging Kubernetes workloads and resources.
+Keyboard-driven Kubernetes debugging TUI with logs, pod exec, port forwarding, scaling and restarts.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need interactive workload diagnosis using logs, events and resource details from an authorized kubeconfig.
+- You can restrict or approve write-capable actions such as scaling, restart, exec and delete using Kubernetes RBAC.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a strictly read-only viewer because the tool exposes mutating or interactive operations.
+- A shared terminal session or kubeconfig could expose sensitive logs, container shells or privileged actions.
 
-[Source repository](https://github.com/doganarif/k9sight)
+[Documentation](https://github.com/doganarif/k9sight/blob/00ce0851fac74e071987c113d8e82c2dcefdc904/README.md) · [Source repository](https://github.com/doganarif/k9sight)
 
 ### Kairos
 
@@ -982,17 +994,19 @@ Immutable Linux meta-distribution for building edge appliances and Kubernetes-ba
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Fast terminal dashboard for Kubernetes.
+Rust terminal dashboard for Kubernetes resources with inspection and authorized edit, delete and restart actions.
 
 **Use when**
 
-- You want a lightweight Rust-based TUI alternative to k9s.
+- You want a terminal dashboard to inspect workloads, logs and Kubernetes resource state.
+- You have appropriate RBAC for any interactive edit, delete, shell, restart or port-forward operation.
 
 **Consider alternatives when**
 
-- You need the richer plugin ecosystem of k9s.
+- You need an immutable read-only cluster display rather than a TUI with management commands.
+- You cannot safely provide the kubeconfig credentials or permissions required by the selected action.
 
-[Official site](https://kdash-rs.github.io) · [Source repository](https://github.com/kdash-rs/kdash)
+[Official site](https://kdash-rs.github.io) · [Documentation](https://github.com/kdash-rs/kdash/blob/c30367346640266485ad4abdc662adb9c754dce2/README.md) · [Source repository](https://github.com/kdash-rs/kdash)
 
 ### kftray
 
@@ -1039,17 +1053,19 @@ Agentless Kubernetes log visualizer for diagnosing historical incidents through 
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Inspect container images used by pods, nodes, namespaces, and registries from the CLI.
+Kubernetes CLI and kubectl plugin for listing container images deployed across Pods, namespaces and nodes.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need an inventory of in-use container image names, registries, digests or nodes from the Kubernetes API.
+- You can grant the required pod and node read scope without exposing unrelated namespaces.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need vulnerability scanning, image signature verification or SBOM generation rather than an image inventory.
+- You cannot safely enumerate cross-namespace image metadata or lack the required Kubernetes read permissions.
 
-[Source repository](https://github.com/koithos/kimspect)
+[Documentation](https://github.com/koithos/kimspect/blob/09df10ea59eeca64a8fe358e04f92c96e75d69be/README.md) · [Source repository](https://github.com/koithos/kimspect)
 
 ### kind
 
@@ -2076,17 +2092,19 @@ Apache-licensed real-time Kubernetes logging dashboard for terminal, local web, 
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Terminal UI for Kubernetes clusters.
+Kubernetes terminal UI for exploring resource views, filtering workloads and querying container logs.
 
 **Use when**
 
-- You want a lightweight terminal-first UI for day-to-day cluster navigation and troubleshooting.
+- You want terminal-based navigation of Pods, Nodes, Services, Gateway API objects and logs.
+- You can constrain context and namespace visibility through your kubeconfig and Kubernetes RBAC.
 
 **Consider alternatives when**
 
-- You already standardize on k9s/KDash or prefer GUI tools like Lens/FreeLens.
+- You need historical observability storage or guaranteed security visibility beyond the resources exposed by the API.
+- You cannot grant the required log and resource access or must avoid exposure of sensitive workload output.
 
-[Source repository](https://github.com/sarub0b0/kubetui)
+[Documentation](https://github.com/sarub0b0/kubetui/blob/352b08add9d8046c173ca195dd8a94a6e5100c50/README.md) · [Source repository](https://github.com/sarub0b0/kubetui)
 
 ### KubeUI
 

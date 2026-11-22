@@ -173,7 +173,7 @@
 - [Flux](https://fluxcd.io) — Open and extensible GitOps toolkit for Kubernetes.
 - [Flux Operator](https://fluxoperator.dev) — ControlPlane-maintained Kubernetes operator installing, configuring and upgrading Flux CD instances through FluxInstance resources, with additional self-service APIs. Its AGPL-3.0 software is separate from Flux CD core and commercial ControlPlane distribution/support terms.
 - [flux9s](https://flux9s.ca) — Terminal UI for inspecting Flux GitOps controllers and Kubernetes workloads, with RBAC-gated cluster operations.
-- [Forecastle](https://github.com/stakater/Forecastle) — Kubernetes dashboard that discovers and displays application URLs from Ingress annotations as a dynamic launchpad.
+- [Forecastle](https://github.com/stakater/Forecastle) — Kubernetes application launchpad that discovers configured application URLs across namespaces and custom resources.
 - [FreeLens](https://freelensapp.github.io) — Community-maintained Kubernetes IDE fork.
 - [fulling](https://github.com/FullAgent/fulling) — AI-powered full-stack engineer agent built with Next.js, Claude, and PostgreSQL, using Kubernetes as infrastructure.
 - [FuturFusion](https://futurfusion.io) — Commercial virtualization management and migration suite built on open-source infrastructure for operating and moving workloads away from VMware estates.
@@ -199,7 +199,7 @@
 - [Grafana MCP](https://github.com/grafana/mcp-grafana) — MCP server for Grafana observability queries and permission-controlled dashboard and alerting operations.
 - [gVisor](https://gvisor.dev) — Linux container sandbox providing a userspace application kernel and OCI-compatible runsc runtime for stronger isolation.
 - [HAMi](https://project-hami.io) — Heterogeneous AI computing virtualization middleware.
-- [Hanoi CLI](https://github.com/k-krew/hanoi-cli) — Interactive rebalance advisor for Kubernetes.
+- [Hanoi CLI](https://github.com/k-krew/hanoi-cli) — Read-only Kubernetes node-balance advisor that analyzes pod placement and suggests simulated redistribution plans.
 - [HAProxy](https://www.haproxy.org) — General-purpose high-performance TCP/HTTP reverse proxy and load balancer, distinct from HAProxy Kubernetes Ingress.
 - [HAProxy Data Plane API](https://www.haproxy.com/documentation/dataplaneapi/) — API for managing HAProxy configuration, runtime operations, stats, and logs.
 - [HAProxy Kubernetes Ingress Controller](https://www.haproxy.com/documentation/kubernetes-ingress) — HAProxy-powered Kubernetes ingress controller for high-performance Layer 7 traffic management.
@@ -253,15 +253,15 @@
 - [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) — Kubernetes controller that finds stale or unhealthy resources and can notify, transform or delete them.
 - [K8s Diagram Builder](https://www.k8sdiagram.fun/) — Open-source visual editor that imports Kubernetes YAML into resource diagrams and generates YAML from edited topologies.
 - [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) — CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
-- [k8s-d2](https://github.com/vieitesss/k8s-d2) — Generate D2 diagrams from Kubernetes topology and resources.
-- [k8s-mechanic](https://github.com/lenaxia/k8s-mechanic) — Kubernetes controller that proposes GitOps pull requests for observed cluster failures with human approval.
+- [k8s-d2](https://github.com/vieitesss/k8s-d2) — CLI that converts observed Kubernetes resource topology into D2 diagrams, with optional SVG rendering.
+- [k8s-mechanic](https://github.com/lenaxia/k8s-mechanic) — In-cluster Kubernetes failure investigator that opens proposed GitOps remediation pull requests for human review.
 - [k8s-sidecar](https://github.com/kiwigrid/k8s-sidecar) — Kubernetes sidecar container that watches ConfigMaps/Secrets and syncs files.
 - [K8sGPT](https://k8sgpt.ai) — Kubernetes analyzers for diagnostic triage with optional explanations from a configured AI backend.
-- [k8sql](https://github.com/ndenev/k8sql) — Query Kubernetes clusters with SQL and PRQL.
+- [k8sql](https://github.com/ndenev/k8sql) — SQL and PRQL query CLI for Kubernetes resources, including multi-cluster queries and custom resource discovery.
 - [K8Studio](https://k8studio.io/) — Commercial, agent-free desktop Kubernetes IDE for local multi-cluster operations, visualization, logs, RBAC, and Helm workflows.
 - [K8up](https://k8up.io/) — Kubernetes backup operator that schedules Restic-based PVC and application-aware backups and restores.
 - [K9s](https://k9scli.io) — Terminal UI to manage Kubernetes clusters.
-- [k9sight](https://github.com/doganarif/k9sight) — Keyboard-driven TUI for debugging Kubernetes workloads and resources.
+- [k9sight](https://github.com/doganarif/k9sight) — Keyboard-driven Kubernetes debugging TUI with logs, pod exec, port forwarding, scaling and restarts.
 - [Kagent](https://kagent.dev) — AI-powered Kubernetes agent for cluster management.
 - [Kairos](https://kairos.io/) — Immutable Linux meta-distribution for building edge appliances and Kubernetes-based operating-system images.
 - [Kamaji](https://kamaji.clastix.io) — Kubernetes control plane manager (multi-tenancy/security).
@@ -272,7 +272,7 @@
 - [Katello](https://theforeman.org/plugins/katello/) — Foreman plugin for repository synchronization, content views, lifecycle environments, and host patch content.
 - [KCL](https://www.kcl-lang.io) — Constraint-based configuration and policy language for Kubernetes and cloud-native environments.
 - [kcli](https://kcli.readthedocs.io/en/latest) — CLI for provisioning VMs and Kubernetes environments across libvirt, vSphere and supported cloud providers.
-- [KDash](https://kdash-rs.github.io) — Fast terminal dashboard for Kubernetes.
+- [KDash](https://kdash-rs.github.io) — Rust terminal dashboard for Kubernetes resources with inspection and authorized edit, delete and restart actions.
 - [KEDA](https://keda.sh) — Event-driven Kubernetes workload autoscaling that manages HPA resources and supplies external metrics, with workload activation from zero and event-driven Jobs; separate from node provisioning and the Metrics Server resource pipeline.
 - [keda-gpu-scaler](https://keda-gpu-scaler.readthedocs.io/en/latest) — GPU-aware autoscaling extension for KEDA workloads.
 - [Keel](https://keel.sh) — Automated Kubernetes deployment updates.
@@ -280,7 +280,7 @@
 - [KGateway](https://kgateway.dev) — Envoy-based Kubernetes Gateway API control plane for routing applications and API traffic.
 - [KHI (Kubernetes History Inspector)](https://github.com/GoogleCloudPlatform/khi) — Agentless Kubernetes log visualizer for diagnosing historical incidents through resource timelines and topology.
 - [KICS](https://kics.io) — IaC scanning for security issues.
-- [kimspect](https://github.com/koithos/kimspect) — Inspect container images used by pods, nodes, namespaces, and registries from the CLI.
+- [kimspect](https://github.com/koithos/kimspect) — Kubernetes CLI and kubectl plugin for listing container images deployed across Pods, namespaces and nodes.
 - [kind](https://kind.sigs.k8s.io) — Kubernetes IN Docker - local clusters for testing.
 - [Kloak](https://getkloak.io/) — eBPF-based Kubernetes runtime proxy that can keep application secrets out of workload processes.
 - [Knative](https://knative.dev/) — Kubernetes-based platform APIs for deploying, scaling, and delivering serverless workloads and events.
@@ -351,7 +351,7 @@
 - [Kubespray](https://github.com/kubernetes-sigs/kubespray) — Ansible-based Kubernetes cluster deployment and lifecycle automation maintained by Kubernetes SIGs.
 - [kubeswitch](https://github.com/danielfoehrKn/kubeswitch) — Command-line context switcher for Kubernetes operators managing multiple clusters and kubeconfig stores.
 - [Kubetail](https://www.kubetail.com/) — Apache-licensed real-time Kubernetes logging dashboard for terminal, local web, container, and in-cluster use.
-- [KubeTUI](https://github.com/sarub0b0/kubetui) — Terminal UI for Kubernetes clusters.
+- [KubeTUI](https://github.com/sarub0b0/kubetui) — Kubernetes terminal UI for exploring resource views, filtering workloads and querying container logs.
 - [KubeUI](https://kubeui.com/) — Desktop Kubernetes client for browsing resources, logs, events, and YAML.
 - [KubeVela](https://kubevela.io) — Application delivery platform on Kubernetes.
 - [Kubevious](https://kubevious.io) — Kubernetes configuration analysis.
