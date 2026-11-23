@@ -172,7 +172,8 @@ Self-hosted S3-compatible distributed object store for small to medium geo-distr
 **Categories:** Databases, caching and data infrastructure<br>
 **Roles:** DevOps Engineer, Cloud Engineer, Infrastructure and Systems Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Active<br>
+**Repository:** Archived
 
 Independent, self-hosted web administration interface for Garage object storage, packaged as a container and maintained separately from Garage itself.
 

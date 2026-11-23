@@ -366,11 +366,15 @@ def test_repository_archive_expectation_comes_only_from_repository_records(
         "https://github.com/org/unexpected"
     ].repository_archived_expected
     assert not contexts["https://github.com/org/shared"].repository_archived_expected
-    assert contexts["https://github.com/org/expected#readme"].repository_archived_expected
+    assert contexts[
+        "https://github.com/org/expected#readme"
+    ].repository_archived_expected
     assert not contexts[
         "https://github.com/org/unexpected#readme"
     ].repository_archived_expected
-    assert not contexts["https://github.com/org/shared#readme"].repository_archived_expected
+    assert not contexts[
+        "https://github.com/org/shared#readme"
+    ].repository_archived_expected
     assert not contexts[
         "https://github.com/org/expected/tree/main#readme"
     ].repository_archived_expected

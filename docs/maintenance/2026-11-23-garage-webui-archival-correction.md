@@ -12,11 +12,15 @@
 - Only `garage-webui.repository_archived` changes: `false` to `true`. Preserve all other tools, identity fields, `status: active`, `needs_review: false`, `verified_on`, existing `license_model: oss` and `license_spdx: MIT`. No new inference about product lifecycle or licence.
 - Update `scripts/check_links.py` so a GitHub URL with a **nonempty fragment** can inherit `repository_archived` only where the URL without its fragment exactly matches a canonical `repository_url`. This must not introduce owner-wide, host-wide or arbitrary subpath waivers.
 - Add targeted `tests/test_links.py` cases for matching `#readme`, absent archive metadata, mixed canonical metadata and unrelated GitHub subpaths.
-- This evidence note is the fourth and only new file. Do not modify `config/link-audit-baseline.json`, unrelated lifecycle/role views, licence fields or catalogue statistics.
+- The generator also requires two derived outputs: `README.md` (archived source repository count 15 → 16) and `docs/categories/databases-caching-data-infrastructure.md` (Garage WebUI archive label). These are deterministic `scripts.generate_docs` outputs from the canonical YAML change. This evidence note remains the only newly created path. The six-path combined PR scope is: canonical YAML, link checker, link tests, these two generated outputs and this note. Do not modify `config/link-audit-baseline.json`, unrelated lifecycle/role views, licence fields or catalogue statistics.
+
+## CI follow-up
+
+- Initial PR #200 CI run [Catalogue quality #490](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/45140711396) failed solely at `ruff format --check scripts tests`, reporting two long assertions in `tests/test_links.py`. No tests or generated-doc checks ran in that failed job. The follow-up commit reformats only those assertions and updates the two deterministic generated views. Fresh CI on the new SHA is mandatory.
 
 ## Required independent gates (not preemptively PASS)
 
-1. Confirm one-parent commit on exact base and the four-file allowlist; all unrelated blobs unchanged.
+1. Confirm the initial exact-base commit plus the follow-up formatting/generated-doc correction commit, with the six-path combined PR allowlist; all unrelated blobs unchanged.
 2. Run locked Python 3.12 dependency checks, Ruff check/format, full pytest, generated documentation validation, catalogue validation and Git whitespace checks on the exact correction SHA.
 3. Run independent strict `link-check.yml` on correction SHA, inspect published JSON and Markdown: expect `blocking_new: 0` and `strict_result: PASS` if no other external link drift; independently examine `blocking_known`, `baseline_changed`, `baseline_resolved`.
 4. Human review before any merge. Keep correction PR and Wave 45 PR #199 OPEN/DRAFT, no merge, auto-merge, tag, release, baseline waiver or branch deletion.
