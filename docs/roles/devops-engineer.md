@@ -48,7 +48,7 @@
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
 | [asciinema](https://asciinema.org/) | Documentation, learning and career resources | oss | active |
 | [Ask O11y plugin for Grafana](https://grafana.com/grafana/plugins/consensys-asko11y-app/) | Monitoring, metrics, logs and tracing | oss | active |
-| [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | needs-review |
+| [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | active |
 | [ast-grep](https://ast-grep.github.io/) | Developer experience and local environments | oss | active |
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
 | [atmos](https://atmos.tools) | Infrastructure as Code | oss | active |
@@ -78,7 +78,7 @@
 | [Azure Linux](https://learn.microsoft.com/en-us/azure/azure-linux/azure-linux-overview) | Virtualization, bare metal and homelab | documentation | needs-review |
 | [Azure Mastery](https://www.azurekt.com) | Documentation, learning and career resources | documentation | needs-review |
 | [Azure Messaging for AWS Professionals](https://learn.microsoft.com/en-us/azure/architecture/aws-professional/messaging) | Documentation, learning and career resources | documentation | needs-review |
-| [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
+| [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | unknown | needs-review |
 | [Azure Verified Modules (AVM)](https://azure.github.io/Azure-Verified-Modules) | Infrastructure as Code | oss | active |
 | [AzureNamingTool](https://github.com/Azure/AzureNamingTool) | Infrastructure as Code | oss | active |
 | [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | deprecated |
@@ -261,7 +261,7 @@
 | [Garage WebUI](https://github.com/khairul169/garage-webui) | Databases, caching and data infrastructure | oss | active |
 | [Gatus](https://gatus.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Gerrit Code Review](https://www.gerritcodereview.com/) | Source control and repository management | oss | active |
-| [Ghostty](https://ghostty.org) | Developer experience and local environments | oss | needs-review |
+| [Ghostty](https://ghostty.org) | Developer experience and local environments | oss | active |
 | [Git](https://git-scm.com) | Source control and repository management | oss | needs-review |
 | [Gitea](https://about.gitea.com/) | Source control and repository management | oss | active |
 | [GitHub](https://github.com) | Source control and repository management | commercial | active |
@@ -416,7 +416,7 @@
 | [Maintenant](https://maintenant.dev) | Monitoring, metrics, logs and tracing | unknown | needs-review |
 | [Mantis](https://getmantis.ai) | CI, build and testing | oss | needs-review |
 | [markdownlint](https://github.com/DavidAnson/markdownlint) | Developer experience and local environments | oss | active |
-| [MarkItDown](https://github.com/microsoft/markitdown) | Developer experience and local environments | oss | needs-review |
+| [MarkItDown](https://github.com/microsoft/markitdown) | Developer experience and local environments | oss | active |
 | [Matt Pocock Skills](https://www.aihero.dev/skills) | Developer experience and local environments | oss | active |
 | [Mattermost](https://mattermost.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [Meilisearch](https://www.meilisearch.com) | Databases, caching and data infrastructure | oss | needs-review |
@@ -538,7 +538,7 @@
 | [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [RabbitMQ](https://www.rabbitmq.com) | Databases, caching and data infrastructure | oss | needs-review |
 | [Rackula](https://www.racku.la/) | Virtualization, bare metal and homelab | oss | active |
-| [RamaLama](https://ramalama.ai) | Developer experience and local environments | oss | needs-review |
+| [RamaLama](https://ramalama.ai) | Developer experience and local environments | oss | active |
 | [Rancher Desktop](https://rancherdesktop.io) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) | Configuration management | commercial | active |
 | [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | commercial | active |
@@ -621,8 +621,8 @@
 | [sysstat](https://sysstat.github.io/) | Foundations, Linux and scripting | oss | active |
 | [System Design](https://github.com/karanpratapsingh/system-design) | Documentation, learning and career resources | documentation | needs-review |
 | [systemd](https://systemd.io) | Foundations, Linux and scripting | oss | active |
-| [Tabby](https://www.tabbyml.com) | Developer experience and local environments | oss | needs-review |
-| [Tabby (Terminal)](https://tabby.sh) | Developer experience and local environments | oss | needs-review |
+| [Tabby](https://www.tabbyml.com) | Developer experience and local environments | open-core | needs-review |
+| [Tabby (Terminal)](https://tabby.sh) | Developer experience and local environments | oss | active |
 | [tailcat](https://tailscale.com/tailcat) | Foundations, Linux and scripting | oss | active |
 | [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | commercial | active |
 | [TechOps Examples](https://www.techopsexamples.com) | Documentation, learning and career resources | documentation | needs-review |

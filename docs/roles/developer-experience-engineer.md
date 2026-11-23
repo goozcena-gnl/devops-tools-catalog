@@ -18,12 +18,12 @@
 | [Appcircle](https://appcircle.io) | CI, build and testing | commercial | active |
 | [Argo Workflows](https://argo-workflows.readthedocs.io/en/latest/) | CI, build and testing | oss | active |
 | [Artillery](https://www.artillery.io) | CI, build and testing | oss | active |
-| [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | needs-review |
+| [ASP.NET Aspire](https://aspire.dev) | Developer experience and local environments | oss | active |
 | [ast-grep](https://ast-grep.github.io/) | Developer experience and local environments | oss | active |
 | [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | commercial | active |
 | [AWS Cloud9](https://aws.amazon.com/cloud9) | Developer experience and local environments | commercial | deprecated |
 | [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | CI, build and testing | commercial | active |
-| [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | oss | needs-review |
+| [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) | Developer experience and local environments | unknown | needs-review |
 | [Backstage](https://backstage.io) | Platform engineering and internal developer platforms | oss | active |
 | [Bamboo](https://www.atlassian.com/software/bamboo) | CI, build and testing | commercial | deprecated |
 | [Bazel](https://bazel.build) | CI, build and testing | oss | active |
@@ -85,7 +85,7 @@
 | [Floci-AZ](https://floci.io/floci-az/) | Developer experience and local environments, Cloud platforms and cloud management | oss | active |
 | [Garden](https://garden.io) | Platform engineering and internal developer platforms | open-core | active |
 | [Gerrit Code Review](https://www.gerritcodereview.com/) | Source control and repository management | oss | active |
-| [Ghostty](https://ghostty.org) | Developer experience and local environments | oss | needs-review |
+| [Ghostty](https://ghostty.org) | Developer experience and local environments | oss | active |
 | [Git](https://git-scm.com) | Source control and repository management | oss | needs-review |
 | [GitButler](https://gitbutler.com/) | Source control and repository management, Developer experience and local environments | source-available | active |
 | [Gitea](https://about.gitea.com/) | Source control and repository management | oss | active |
@@ -134,7 +134,7 @@
 | [lychee](https://lychee.cli.rs/) | CI, build and testing, Documentation, learning and career resources | oss | active |
 | [Mantis](https://getmantis.ai) | CI, build and testing | oss | needs-review |
 | [markdownlint](https://github.com/DavidAnson/markdownlint) | Developer experience and local environments | oss | active |
-| [MarkItDown](https://github.com/microsoft/markitdown) | Developer experience and local environments | oss | needs-review |
+| [MarkItDown](https://github.com/microsoft/markitdown) | Developer experience and local environments | oss | active |
 | [Matt Pocock Skills](https://www.aihero.dev/skills) | Developer experience and local environments | oss | active |
 | [Mattermost](https://mattermost.com) | Workflow automation and ChatOps | open-core | needs-review |
 | [Mergify](https://mergify.com) | CI, build and testing, Source control and repository management | commercial | active |
@@ -175,7 +175,7 @@
 | [pytest-cov](https://github.com/pytest-dev/pytest-cov) | CI, build and testing | oss | active |
 | [QuantumByte](https://github.com/QuantumByteOSS/quantumbyte) | Developer experience and local environments | oss | needs-review |
 | [Railway](https://railway.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | commercial | active |
-| [RamaLama](https://ramalama.ai) | Developer experience and local environments | oss | needs-review |
+| [RamaLama](https://ramalama.ai) | Developer experience and local environments | oss | active |
 | [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) | CI, build and testing | commercial | active |
 | [Renovate](https://www.mend.io/renovate) | Developer experience and local environments, Software supply-chain security | oss | active |
 | [Review Flow](https://dgouron.github.io/review-flow) | CI, build and testing | oss | needs-review |
@@ -197,8 +197,8 @@
 | [Starlight](https://starlight.astro.build) | Developer experience and local environments | documentation | needs-review |
 | [Superpowers](https://github.com/obra/superpowers) | Developer experience and local environments | oss | active |
 | [Superset (agent workspace)](https://superset.sh/) | Developer experience and local environments | source-available | active |
-| [Tabby](https://www.tabbyml.com) | Developer experience and local environments | oss | needs-review |
-| [Tabby (Terminal)](https://tabby.sh) | Developer experience and local environments | oss | needs-review |
+| [Tabby](https://www.tabbyml.com) | Developer experience and local environments | open-core | needs-review |
+| [Tabby (Terminal)](https://tabby.sh) | Developer experience and local environments | oss | active |
 | [TeamCity](https://www.jetbrains.com/teamcity) | CI, build and testing | commercial | active |
 | [Tekton](https://tekton.dev) | CI, build and testing, CD, GitOps, release and promotion | oss | active |
 | [Tenzu](https://tenzu.net/fr) | Workflow automation and ChatOps | oss | needs-review |

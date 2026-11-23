@@ -126,19 +126,19 @@ Web application framework.
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Orchestration + tooling for building cloud-native .NET distributed applications.
+Multi-language, code-first orchestration and observability toolchain that uses Aspire AppHost and CLI to run distributed applications locally and support deployment.
 
 **Use when**
 
-- Building .NET distributed apps and you want built-in service discovery, telemetry, and health checks.
+- You want to describe service dependencies in code, run the application locally, and carry the model into a supported deployment workflow.
 
 **Consider alternatives when**
 
-- You're not in the .NET ecosystem.
+- You need preapproved third-party images or managed services and cannot verify their terms, security, and compatibility independently.
 
-[Official site](https://aspire.dev) · [Source repository](https://github.com/dotnet/aspire)
+[Official site](https://aspire.dev) · [Documentation](https://aspire.dev/docs/) · [Source repository](https://github.com/microsoft/aspire)
 
 ### ast-grep
 
@@ -182,20 +182,20 @@ Cloud-based IDE for writing, running, and debugging code.
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Oss<br>
+**Model:** Unknown<br>
 **Status:** Needs Review
 
-GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
+Microsoft desktop client for browsing and managing Azure Storage resources, including blobs, file shares, queues, and tables.
 
 **Use when**
 
-- You need a visual way to browse/manage Azure Storage during development.
+- You want interactive storage operations and can grant the required permissions for the connection mode. Full subscription browsing requires management- and data-layer permissions.
 
 **Consider alternatives when**
 
-- CLI scripts or IaC already handle your storage operations.
+- You need unattended reproducible storage changes or must establish redistribution rights for the application before adoption.
 
-[Official site](https://azure.microsoft.com/en-us/products/storage/storage-explorer) · [Source repository](https://github.com/microsoft/AzureStorageExplorer)
+[Official site](https://azure.microsoft.com/en-us/products/storage/storage-explorer) · [Documentation](https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer) · [Source repository](https://github.com/microsoft/AzureStorageExplorer)
 
 ### Black
 
@@ -683,19 +683,19 @@ Local emulator for selected Azure services exposed through a single native proce
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Fast, cross-platform GPU-accelerated terminal emulator with native desktop integration.
+GPU-accelerated terminal emulator with native macOS and Linux interfaces built on the shared libghostty terminal core.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want local terminal tabs, splits, and native desktop integration on macOS or Linux.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a first-party Windows desktop app, a stable standalone libghostty API, or guaranteed isolation from untrusted terminal output.
 
-[Official site](https://ghostty.org) · [Source repository](https://github.com/ghostty-org/ghostty)
+[Official site](https://ghostty.org) · [Documentation](https://ghostty.org/docs) · [Source repository](https://github.com/ghostty-org/ghostty)
 
 ### GitButler
 
@@ -1088,19 +1088,19 @@ Node.js style checker and configurable rule set for Markdown and CommonMark file
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Python tool for converting files and Office documents to Markdown.
+Python library and CLI that convert Office documents, PDFs, and other supported inputs into Markdown.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need Markdown extraction from supported files and can control file access, optional plugins, and any external document or model requests.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need to accept untrusted files or URLs without validation and isolation. Conversion uses the current process's file and network privileges.
 
-[Source repository](https://github.com/microsoft/markitdown)
+[Documentation](https://github.com/microsoft/markitdown/blob/ed178952a6672abdfd35b5f9e76a80b6cefc086e/README.md) · [Source repository](https://github.com/microsoft/markitdown)
 
 ### Matt Pocock Skills
 
@@ -1281,17 +1281,17 @@ Development platform for building and testing applications directly in Kubernete
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.
+Arch Linux-based workstation distribution with a curated Hyprland desktop, bundled applications, and its own installer and package repository.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You want an opinionated local Linux workstation and can review installation, hardware, package sources, and actual security settings.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a separately validated workstation security baseline or cannot review the installer and third-party package sources.
 
-[Official site](https://omarchy.org) · [Source repository](https://github.com/basecamp/omarchy)
+[Official site](https://omarchy.org) · [Documentation](https://github.com/omacom/omarchy/blob/6a7e265491d655abe0a658e435b14dd3895d703f/manual/01-welcome-to-omarchy.md) · [Source repository](https://github.com/omacom/omarchy)
 
 ### Ona (formerly Gitpod)
 
@@ -1319,15 +1319,15 @@ Cloud-based development environments.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Run AI that can execute tasks locally.
+Terminal coding agent with local command execution. The publisher's current Rust agent and the original Python implementation have separate compatibility and execution boundaries.
 
 **Use when**
 
-- * You want an AI that can execute code, manage files, and control your computer via natural language.
+- You can identify the installed implementation and review its command, file, network, model-provider, and approval controls.
 
 **Consider alternatives when**
 
-- * You're uncomfortable with AI having system-level access or need isolated sandboxed execution.
+- You rely on original Python behavior or require execution isolation that you have not verified for the chosen release.
 
 [Official site](https://openinterpreter.com) · [Source repository](https://github.com/KillianLucas/open-interpreter)
 
@@ -1415,17 +1415,17 @@ Interface for accessing coding agents running on a development machine from othe
 **Model:** Documentation<br>
 **Status:** Needs Review
 
-Interactive Docker playground; open-source platform with hosted labs site.
+Source for a browser-based Docker playground. The publisher announced that hosted Play with Docker and Play with Kubernetes labs would become unavailable starting 2026-03-01.
 
 **Use when**
 
-- Quick Docker experiments, workshops, or demos without installing anything.
+- You need the historical playground source or want to review its documented self-hosted development setup.
 
 **Consider alternatives when**
 
-- For persistent work—sessions are ephemeral.
+- You need an available publisher-hosted lab or persistent Docker infrastructure.
 
-[Official site](https://labs.play-with-docker.com) · [Source repository](https://github.com/play-with-docker/play-with-docker)
+[Official site](https://labs.play-with-docker.com) · [Documentation](https://github.com/play-with-docker/play-with-docker/blob/62cb0727cab93cf4273017d33e965a5f26c83b05/README.md) · [Source repository](https://github.com/play-with-docker/play-with-docker)
 
 ### Postman
 
@@ -1528,19 +1528,19 @@ Intent-to-working-app open-source application builder engine.
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-AI-powered development assistant.
+CLI for fetching, running, and serving AI models with OCI-oriented workflows. It uses Podman or Docker when available and attempts host execution when neither engine is installed.
 
 **Use when**
 
-- * You want to run LLMs locally in containers with OCI-native tooling.
+- You want to manage models from registries and run inference locally or serve a model through an API.
 
 **Consider alternatives when**
 
-- * You prefer cloud-hosted AI or don't need containerized LLM management.
+- You require container-only execution and cannot ensure that a supported engine is available, or cannot verify model and image provenance, GPU access, and effective runtime permissions.
 
-[Official site](https://ramalama.ai) · [Source repository](https://github.com/containers/ramalama)
+[Official site](https://ramalama.ai) · [Documentation](https://github.com/containers/ramalama/blob/58c808965f181c3b7c3fa9c3f6061d25811c053a/README.md) · [Source repository](https://github.com/containers/ramalama)
 
 ### Renovate
 
@@ -1758,39 +1758,39 @@ Source-available development workspace for parallel coding-agent sessions and Gi
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
-**Model:** Oss<br>
+**Model:** Open Core<br>
 **Status:** Needs Review
 
-Self-hosted AI coding assistant.
+Self-hosted AI coding assistant from TabbyML with a code completion server and IDE extensions, including separately licensed Enterprise components.
 
 **Use when**
 
-- * You want a self-hosted GitHub Copilot alternative with full control over your data and model.
+- You can operate a coding-assistant server and review which code context, model backends, and credentials are used.
 
 **Consider alternatives when**
 
-- * You lack GPU infrastructure for self-hosting or want zero-maintenance AI code completion.
+- You need a managed service or cannot govern source-code egress, model rights, and Enterprise terms for your deployment.
 
-[Official site](https://www.tabbyml.com) · [Source repository](https://github.com/TabbyML/tabby)
+[Official site](https://www.tabbyml.com) · [Documentation](https://tabby.tabbyml.com/docs/welcome/) · [Source repository](https://github.com/TabbyML/tabby)
 
 ### Tabby (Terminal)
 
 **Categories:** Developer experience and local environments<br>
 **Roles:** DevOps Engineer, Developer Experience Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Cross-platform terminal emulator with built-in SSH, serial, and theming/plugins.
+Desktop terminal emulator and SSH and serial client for Windows, macOS, and Linux, with plugin support including optional SFTP.
 
 **Use when**
 
-- You want a modern, extensible terminal with SSH management built in.
+- You want to manage local shells, remote SSH sessions, or serial connections from one desktop client.
 
 **Consider alternatives when**
 
-- You prefer lightweight, native terminals (iTerm2, Windows Terminal) and manage SSH via config files.
+- You cannot govern third-party plugins or how SSH keys, agent forwarding, and synchronized connection profiles are handled.
 
-[Official site](https://tabby.sh) · [Source repository](https://github.com/eugeny/tabby)
+[Official site](https://tabby.sh) · [Documentation](https://github.com/Eugeny/tabby/blob/467ce8ebfa467fb88cf6d154c9a5891e3d3647f0/README.md) · [Source repository](https://github.com/eugeny/tabby)
 
 ### Termic
 

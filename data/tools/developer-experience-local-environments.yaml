@@ -193,9 +193,11 @@
   needs_review: true
 - id: asp-net-aspire
   name: ASP.NET Aspire
-  summary: Orchestration + tooling for building cloud-native .NET distributed applications.
+  summary: Multi-language, code-first orchestration and observability toolchain that uses Aspire AppHost
+    and CLI to run distributed applications locally and support deployment.
   official_url: https://aspire.dev
-  repository_url: https://github.com/dotnet/aspire
+  repository_url: https://github.com/microsoft/aspire
+  documentation_url: https://aspire.dev/docs/
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -207,20 +209,28 @@
   - develop
   - test
   use_when:
-  - Building .NET distributed apps and you want built-in service discovery, telemetry, and health checks.
+  - You want to describe service dependencies in code, run the application locally, and carry the model
+    into a supported deployment workflow.
   avoid_when:
-  - You're not in the .NET ecosystem.
-  deployment_models: []
+  - You need preapproved third-party images or managed services and cannot verify their terms, security,
+    and compatibility independently.
+  deployment_models:
+  - local
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-23'
   sources:
   - legacy:7_Development-Collaboration/README.md#L85
   - legacy:devopstools_final.md#L1125
-  needs_review: true
+  - https://github.com/microsoft/aspire/blob/f9da20e55ed248cb56e4235772fb415b24551fe3/README.md
+  - https://github.com/microsoft/aspire/blob/f9da20e55ed248cb56e4235772fb415b24551fe3/LICENSE.TXT
+  - https://aspire.dev/docs/
+  - https://github.com/microsoft/aspire/releases/tag/v17.0.0
+  needs_review: false
 - id: ast-grep
   name: ast-grep
   summary: Syntax-tree-based code search, linting, and rewriting tool.
@@ -288,9 +298,11 @@
   needs_review: false
 - id: azure-storage-explorer
   name: Azure Storage Explorer
-  summary: GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
+  summary: Microsoft desktop client for browsing and managing Azure Storage resources, including blobs,
+    file shares, queues, and tables.
   official_url: https://azure.microsoft.com/en-us/products/storage/storage-explorer
   repository_url: https://github.com/microsoft/AzureStorageExplorer
+  documentation_url: https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -302,11 +314,14 @@
   - develop
   - test
   use_when:
-  - You need a visual way to browse/manage Azure Storage during development.
+  - You want interactive storage operations and can grant the required permissions for the connection
+    mode. Full subscription browsing requires management- and data-layer permissions.
   avoid_when:
-  - CLI scripts or IaC already handle your storage operations.
-  deployment_models: []
-  license_model: oss
+  - You need unattended reproducible storage changes or must establish redistribution rights for the application
+    before adoption.
+  deployment_models:
+  - local
+  license_model: unknown
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -315,6 +330,12 @@
   sources:
   - legacy:7_Development-Collaboration/README.md#L32
   - legacy:devopstools_final.md#L1056
+  - https://github.com/microsoft/AzureStorageExplorer/blob/4ff5933cf52342bca125e0a0b80d15a69ad34901/README.md
+  - https://github.com/microsoft/AzureStorageExplorer/blob/4ff5933cf52342bca125e0a0b80d15a69ad34901/LICENSE
+  - https://github.com/microsoft/AzureStorageExplorer/blob/4ff5933cf52342bca125e0a0b80d15a69ad34901/LICENSE-CODE
+  - https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer
+  - https://learn.microsoft.com/en-us/azure/storage/common/storage-explorer-support-policy-lifecycle
+  - https://github.com/microsoft/AzureStorageExplorer/releases/tag/v1.47.1
   needs_review: true
 - id: black
   name: Black
@@ -1006,9 +1027,11 @@
   needs_review: false
 - id: ghostty
   name: Ghostty
-  summary: Fast, cross-platform GPU-accelerated terminal emulator with native desktop integration.
+  summary: GPU-accelerated terminal emulator with native macOS and Linux interfaces built on the shared
+    libghostty terminal core.
   official_url: https://ghostty.org
   repository_url: https://github.com/ghostty-org/ghostty
+  documentation_url: https://ghostty.org/docs
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -1019,18 +1042,28 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You want local terminal tabs, splits, and native desktop integration on macOS or Linux.
+  avoid_when:
+  - You require a first-party Windows desktop app, a stable standalone libghostty API, or guaranteed isolation
+    from untrusted terminal output.
+  deployment_models:
+  - local
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-23'
   sources:
   - legacy:devopstools_final.md#L1062
-  needs_review: true
+  - https://github.com/ghostty-org/ghostty/blob/3e9b1cca3775bc31dcc055b5172832a3dcd1d66c/README.md
+  - https://github.com/ghostty-org/ghostty/blob/3e9b1cca3775bc31dcc055b5172832a3dcd1d66c/LICENSE
+  - https://ghostty.org/docs
+  - https://ghostty.org/docs/about
+  - https://ghostty.org/docs/install/release-notes/1-4-0
+  needs_review: false
 - id: github-codespaces
   name: GitHub Codespaces
   summary: "GitHub-hosted cloud development environments billed for compute and storage, with account-specific included quotas and no product-wide open-source licence."
@@ -1533,8 +1566,10 @@
   needs_review: false
 - id: markitdown
   name: MarkItDown
-  summary: Python tool for converting files and Office documents to Markdown.
+  summary: Python library and CLI that convert Office documents, PDFs, and other supported inputs into
+    Markdown.
   repository_url: https://github.com/microsoft/markitdown
+  documentation_url: https://github.com/microsoft/markitdown/blob/ed178952a6672abdfd35b5f9e76a80b6cefc086e/README.md
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -1545,18 +1580,27 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You need Markdown extraction from supported files and can control file access, optional plugins, and
+    any external document or model requests.
+  avoid_when:
+  - You need to accept untrusted files or URLs without validation and isolation. Conversion uses the current
+    process's file and network privileges.
+  deployment_models:
+  - local
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-23'
   sources:
   - legacy:devopstools_final.md#L1088
-  needs_review: true
+  - https://github.com/microsoft/markitdown/blob/ed178952a6672abdfd35b5f9e76a80b6cefc086e/README.md
+  - https://github.com/microsoft/markitdown/blob/ed178952a6672abdfd35b5f9e76a80b6cefc086e/LICENSE
+  - https://github.com/microsoft/markitdown/releases/tag/v0.1.9
+  needs_review: false
 - id: matt-pocock-skills
   name: Matt Pocock Skills
   summary: Reusable coding-agent skills for specifications, testing, review, and maintenance workflows.
@@ -1833,9 +1877,11 @@
   needs_review: false
 - id: omarchy
   name: Omarchy
-  summary: Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.
+  summary: Arch Linux-based workstation distribution with a curated Hyprland desktop, bundled applications,
+    and its own installer and package repository.
   official_url: https://omarchy.org
-  repository_url: https://github.com/basecamp/omarchy
+  repository_url: https://github.com/omacom/omarchy
+  documentation_url: https://github.com/omacom/omarchy/blob/6a7e265491d655abe0a658e435b14dd3895d703f/manual/01-welcome-to-omarchy.md
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -1846,9 +1892,14 @@
   lifecycle_stages:
   - develop
   - test
-  use_when: []
-  avoid_when: []
-  deployment_models: []
+  use_when:
+  - You want an opinionated local Linux workstation and can review installation, hardware, package sources,
+    and actual security settings.
+  avoid_when:
+  - You require a separately validated workstation security baseline or cannot review the installer and
+    third-party package sources.
+  deployment_models:
+  - local
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -1857,6 +1908,11 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L1069
+  - https://github.com/omacom/omarchy/blob/6a7e265491d655abe0a658e435b14dd3895d703f/README.md
+  - https://github.com/omacom/omarchy/blob/6a7e265491d655abe0a658e435b14dd3895d703f/LICENSE
+  - https://github.com/omacom/omarchy/blob/6a7e265491d655abe0a658e435b14dd3895d703f/manual/48-security.md
+  - https://github.com/omacom/omarchy/blob/6a7e265491d655abe0a658e435b14dd3895d703f/manual/01-welcome-to-omarchy.md
+  - https://github.com/omacom/omarchy/releases/tag/v4.5.0
   needs_review: true
 - id: ona-formerly-gitpod
   name: Ona (formerly Gitpod)
@@ -1889,7 +1945,8 @@
   needs_review: true
 - id: open-interpreter
   name: Open Interpreter
-  summary: Run AI that can execute tasks locally.
+  summary: Terminal coding agent with local command execution. The publisher's current Rust agent and
+    the original Python implementation have separate compatibility and execution boundaries.
   official_url: https://openinterpreter.com
   repository_url: https://github.com/KillianLucas/open-interpreter
   categories:
@@ -1903,10 +1960,13 @@
   - develop
   - test
   use_when:
-  - '* You want an AI that can execute code, manage files, and control your computer via natural language.'
+  - You can identify the installed implementation and review its command, file, network, model-provider,
+    and approval controls.
   avoid_when:
-  - '* You''re uncomfortable with AI having system-level access or need isolated sandboxed execution.'
-  deployment_models: []
+  - You rely on original Python behavior or require execution isolation that you have not verified for
+    the chosen release.
+  deployment_models:
+  - local
   license_model: oss
   maturity: unknown
   status: needs-review
@@ -1916,6 +1976,10 @@
   sources:
   - legacy:3_CI-CD-Automation/README.md#L178
   - legacy:devopstools_final.md#L418
+  - https://github.com/openinterpreter/openinterpreter/blob/a786d8474b0d7289320c16f00e852679fae7866e/README.md
+  - https://github.com/openinterpreter/openinterpreter/blob/a786d8474b0d7289320c16f00e852679fae7866e/LICENSE
+  - https://github.com/openinterpreter/openinterpreter/blob/a786d8474b0d7289320c16f00e852679fae7866e/SECURITY.md
+  - https://github.com/openinterpreter/openinterpreter/releases/tag/rust-v0.0.61
   needs_review: true
 - id: opencode
   name: OpenCode
@@ -2012,9 +2076,11 @@
   needs_review: false
 - id: play-with-docker
   name: Play with Docker
-  summary: Interactive Docker playground; open-source platform with hosted labs site.
+  summary: Source for a browser-based Docker playground. The publisher announced that hosted Play with
+    Docker and Play with Kubernetes labs would become unavailable starting 2026-03-01.
   official_url: https://labs.play-with-docker.com
   repository_url: https://github.com/play-with-docker/play-with-docker
+  documentation_url: https://github.com/play-with-docker/play-with-docker/blob/62cb0727cab93cf4273017d33e965a5f26c83b05/README.md
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -2026,10 +2092,12 @@
   - develop
   - test
   use_when:
-  - Quick Docker experiments, workshops, or demos without installing anything.
+  - You need the historical playground source or want to review its documented self-hosted development
+    setup.
   avoid_when:
-  - For persistent work—sessions are ephemeral.
-  deployment_models: []
+  - You need an available publisher-hosted lab or persistent Docker infrastructure.
+  deployment_models:
+  - self-hosted
   license_model: documentation
   maturity: unknown
   status: needs-review
@@ -2039,6 +2107,8 @@
   sources:
   - legacy:7_Development-Collaboration/README.md#L40
   - legacy:devopstools_final.md#L1070
+  - https://github.com/play-with-docker/play-with-docker/blob/62cb0727cab93cf4273017d33e965a5f26c83b05/README.md
+  - https://github.com/play-with-docker/play-with-docker/blob/62cb0727cab93cf4273017d33e965a5f26c83b05/LICENSE
   needs_review: true
 - id: postman
   name: Postman
@@ -2203,9 +2273,11 @@
   needs_review: true
 - id: ramalama
   name: RamaLama
-  summary: AI-powered development assistant.
+  summary: CLI for fetching, running, and serving AI models with OCI-oriented workflows. It uses Podman
+    or Docker when available and attempts host execution when neither engine is installed.
   official_url: https://ramalama.ai
   repository_url: https://github.com/containers/ramalama
+  documentation_url: https://github.com/containers/ramalama/blob/58c808965f181c3b7c3fa9c3f6061d25811c053a/README.md
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -2217,20 +2289,27 @@
   - develop
   - test
   use_when:
-  - '* You want to run LLMs locally in containers with OCI-native tooling.'
+  - You want to manage models from registries and run inference locally or serve a model through an API.
   avoid_when:
-  - '* You prefer cloud-hosted AI or don''t need containerized LLM management.'
-  deployment_models: []
+  - You require container-only execution and cannot ensure that a supported engine is available, or cannot
+    verify model and image provenance, GPU access, and effective runtime permissions.
+  deployment_models:
+  - local
+  - self-hosted
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-23'
   sources:
   - legacy:3_CI-CD-Automation/README.md#L180
   - legacy:devopstools_final.md#L421
-  needs_review: true
+  - https://github.com/containers/ramalama/blob/58c808965f181c3b7c3fa9c3f6061d25811c053a/README.md
+  - https://github.com/containers/ramalama/blob/58c808965f181c3b7c3fa9c3f6061d25811c053a/LICENSE
+  - https://github.com/containers/ramalama/releases/tag/v0.26.0
+  needs_review: false
 - id: renovate
   name: Renovate
   summary: Renovate dependency-update automation that proposes repository changes as pull requests; its
@@ -2564,9 +2643,11 @@
   commercial_offering: true
 - id: tabby
   name: Tabby
-  summary: Self-hosted AI coding assistant.
+  summary: Self-hosted AI coding assistant from TabbyML with a code completion server and IDE extensions,
+    including separately licensed Enterprise components.
   official_url: https://www.tabbyml.com
   repository_url: https://github.com/TabbyML/tabby
+  documentation_url: https://tabby.tabbyml.com/docs/welcome/
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -2578,11 +2659,14 @@
   - develop
   - test
   use_when:
-  - '* You want a self-hosted GitHub Copilot alternative with full control over your data and model.'
+  - You can operate a coding-assistant server and review which code context, model backends, and credentials
+    are used.
   avoid_when:
-  - '* You lack GPU infrastructure for self-hosting or want zero-maintenance AI code completion.'
-  deployment_models: []
-  license_model: oss
+  - You need a managed service or cannot govern source-code egress, model rights, and Enterprise terms
+    for your deployment.
+  deployment_models:
+  - self-hosted
+  license_model: open-core
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -2591,12 +2675,20 @@
   sources:
   - legacy:3_CI-CD-Automation/README.md#L184
   - legacy:devopstools_final.md#L424
+  - https://github.com/TabbyML/tabby/blob/21b29048d7bcf6b94f9f482f2d0fd05efadfd19f/README.md
+  - https://github.com/TabbyML/tabby/blob/21b29048d7bcf6b94f9f482f2d0fd05efadfd19f/LICENSE
+  - https://github.com/TabbyML/tabby/blob/21b29048d7bcf6b94f9f482f2d0fd05efadfd19f/ee/LICENSE
+  - https://tabby.tabbyml.com/docs/welcome/
+  - https://tabby.tabbyml.com/docs/administration/license/
+  - https://tabby.tabbyml.com/terms/
   needs_review: true
 - id: tabby-terminal
   name: Tabby (Terminal)
-  summary: Cross-platform terminal emulator with built-in SSH, serial, and theming/plugins.
+  summary: Desktop terminal emulator and SSH and serial client for Windows, macOS, and Linux, with plugin
+    support including optional SFTP.
   official_url: https://tabby.sh
   repository_url: https://github.com/eugeny/tabby
+  documentation_url: https://github.com/Eugeny/tabby/blob/467ce8ebfa467fb88cf6d154c9a5891e3d3647f0/README.md
   categories:
   - developer-experience-local-environments
   subcategories:
@@ -2608,20 +2700,26 @@
   - develop
   - test
   use_when:
-  - You want a modern, extensible terminal with SSH management built in.
+  - You want to manage local shells, remote SSH sessions, or serial connections from one desktop client.
   avoid_when:
-  - You prefer lightweight, native terminals (iTerm2, Windows Terminal) and manage SSH via config files.
-  deployment_models: []
+  - You cannot govern third-party plugins or how SSH keys, agent forwarding, and synchronized connection
+    profiles are handled.
+  deployment_models:
+  - local
   license_model: oss
+  license_spdx: MIT
   maturity: unknown
-  status: needs-review
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-23'
   sources:
   - legacy:7_Development-Collaboration/README.md#L41
   - legacy:devopstools_final.md#L1071
-  needs_review: true
+  - https://github.com/Eugeny/tabby/blob/467ce8ebfa467fb88cf6d154c9a5891e3d3647f0/README.md
+  - https://github.com/Eugeny/tabby/blob/467ce8ebfa467fb88cf6d154c9a5891e3d3647f0/LICENSE
+  - https://github.com/Eugeny/tabby/releases/tag/v1.0.238
+  needs_review: false
 - id: termic
   name: Termic
   summary: Desktop development workspace combining agent sessions, terminals, Git worktrees, and review

@@ -13,13 +13,13 @@
 - [Akka.NET](https://getakka.net) — Actor-based concurrency framework for .NET.
 - [Angular](https://angular.dev) — Web application framework.
 - [AppImage](https://appimage.org) — Portable Linux application packaging format (single executable).
-- [ASP.NET Aspire](https://aspire.dev) — Orchestration + tooling for building cloud-native .NET distributed applications.
+- [ASP.NET Aspire](https://aspire.dev) — Multi-language, code-first orchestration and observability toolchain that uses Aspire AppHost and CLI to run distributed applications locally and support deployment.
 - [ast-grep](https://ast-grep.github.io/) — Syntax-tree-based code search, linting, and rewriting tool.
 - [Atmosly](https://atmosly.com) — Platform engineering automation for self-service environments and app delivery.
 - [Atuin](https://atuin.sh/) — Shell-history tool with searchable local storage and optional encrypted synchronization.
 - [AutoGen](https://microsoft.github.io/autogen/stable/index.html) — Archived Microsoft multi-agent framework retained for legacy use and migration.
 - [AWS Cloud9](https://aws.amazon.com/cloud9) — Cloud-based IDE for writing, running, and debugging code.
-- [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) — GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
+- [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) — Microsoft desktop client for browsing and managing Azure Storage resources, including blobs, file shares, queues, and tables.
 - [Backstage](https://backstage.io) — Internal developer portal (IDP) / software catalog for improving developer experience.
 - [Barbara](https://www.barbara.tech) — DevOps/engineering platform.
 - [Bash](https://www.gnu.org/software/bash) — Bourne Again Shell.
@@ -79,7 +79,7 @@
 - [Garden](https://garden.io) — Developer-first automation for building/testing/deploying cloud-native apps.
 - [Gerrit Code Review](https://www.gerritcodereview.com/) — Self-hosted Git code-review system with change-based workflows and granular access controls.
 - [ggshield](https://github.com/GitGuardian/ggshield) — GitGuardian CLI for secret scanning in local development, hooks, and CI.
-- [Ghostty](https://ghostty.org) — Fast, cross-platform GPU-accelerated terminal emulator with native desktop integration.
+- [Ghostty](https://ghostty.org) — GPU-accelerated terminal emulator with native macOS and Linux interfaces built on the shared libghostty terminal core.
 - [Git](https://git-scm.com) — Distributed version control system.
 - [GitButler](https://gitbutler.com/) — Git client and collaboration workflow built around virtual branches and parallel changes.
 - [Gitea](https://about.gitea.com/) — Self-hosted Git forge with repository hosting, code review, issues, packages, and automation integrations.
@@ -129,7 +129,7 @@
 - [LinuxJourney](https://labex.io/linuxjourney) — Learn Linux from scratch.
 - [LocalStack](https://www.localstack.cloud) — Licensed local AWS emulation platform delivered through a unified image, with a non-commercial Hobby plan and paid commercial-use plans.
 - [markdownlint](https://github.com/DavidAnson/markdownlint) — Node.js style checker and configurable rule set for Markdown and CommonMark files.
-- [MarkItDown](https://github.com/microsoft/markitdown) — Python tool for converting files and Office documents to Markdown.
+- [MarkItDown](https://github.com/microsoft/markitdown) — Python library and CLI that convert Office documents, PDFs, and other supported inputs into Markdown.
 - [Matt Pocock Skills](https://www.aihero.dev/skills) — Reusable coding-agent skills for specifications, testing, review, and maintenance workflows.
 - [Mergify](https://mergify.com) — GitHub workflow platform combining Merge Queue, CI Insights, Test Insights and Merge Protections.
 - [micro](https://micro-editor.github.io) — Easy-to-use terminal text editor with plugins, mouse support, and Lua customization.
@@ -145,9 +145,9 @@
 - [Oh My Git!](https://ohmygit.org) — Git learning game.
 - [Okteto](https://www.okteto.com/) — Development platform for building and testing applications directly in Kubernetes environments.
 - [OllyGarden](https://github.com/ollygarden) — OpenTelemetry adoption platform with tools for improving telemetry pipelines; built by OpenTelemetry contributors.
-- [Omarchy](https://omarchy.org) — Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.
+- [Omarchy](https://omarchy.org) — Arch Linux-based workstation distribution with a curated Hyprland desktop, bundled applications, and its own installer and package repository.
 - [Ona (formerly Gitpod)](https://github.com/gitpod-io) — Cloud-based development environments.
-- [Open Interpreter](https://openinterpreter.com) — Run AI that can execute tasks locally.
+- [Open Interpreter](https://openinterpreter.com) — Terminal coding agent with local command execution. The publisher's current Rust agent and the original Python implementation have separate compatibility and execution boundaries.
 - [OpenCode](https://opencode.ai) — MIT-licensed open-source coding agent with independently billed or licensed model providers and optional online services.
 - [OpenDev](https://opendev.org/) — Public collaborative infrastructure service providing Git hosting, code review, CI, and related services for open-source projects.
 - [OpenRun](https://openrun.dev) — Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
@@ -160,7 +160,7 @@
 - [Paperless-ngx](https://docs.paperless-ngx.com) — Document management system for scanning, indexing, and searching your paper documents.
 - [Papra](https://github.com/papra-hq/papra) — Document/PDF organization (see project).
 - [Paseo](https://paseo.sh/) — Interface for accessing coding agents running on a development machine from other devices.
-- [Play with Docker](https://labs.play-with-docker.com) — Interactive Docker playground; open-source platform with hosted labs site.
+- [Play with Docker](https://labs.play-with-docker.com) — Source for a browser-based Docker playground. The publisher announced that hosted Play with Docker and Play with Kubernetes labs would become unavailable starting 2026-03-01.
 - [Port](https://www.port.io/) — Internal developer portal and service catalog with automations/workflows.
 - [Portabase](https://portabase.io) — Self-hosted tool for automating and restoring database backups across many database engines.
 - [Postman](https://www.postman.com/product/) — API development and testing platform.
@@ -173,7 +173,7 @@
 - [Python Official Tutorial](https://docs.python.org/3/tutorial) — Official Python documentation and tutorial.
 - [QEMU](https://www.qemu.org/) — Machine emulator and virtualizer supporting full-system emulation, user-mode emulation, and hardware-assisted virtualization.
 - [QuantumByte](https://github.com/QuantumByteOSS/quantumbyte) — Intent-to-working-app open-source application builder engine.
-- [RamaLama](https://ramalama.ai) — AI-powered development assistant.
+- [RamaLama](https://ramalama.ai) — CLI for fetching, running, and serving AI models with OCI-oriented workflows. It uses Podman or Docker when available and attempts host execution when neither engine is installed.
 - [rekor (sigstore)](https://github.com/sigstore/rekor) — Software supply chain transparency log for recording signed metadata.
 - [Renovate](https://www.mend.io/renovate) — Renovate dependency-update automation that proposes repository changes as pull requests; its AGPL CLI is distinct from Mend-hosted services and commercial platform capabilities.
 - [ripgrep](https://github.com/BurntSushi/ripgrep) — Recursive text-search CLI with regular expressions and ignore-file support.
@@ -199,8 +199,8 @@
 - [Superpowers](https://github.com/obra/superpowers) — Reusable coding-agent skills and workflow instructions for planning, testing, and code review.
 - [Superset (agent workspace)](https://superset.sh/) — Source-available development workspace for parallel coding-agent sessions and Git worktrees.
 - [Swiftorial](https://www.swiftorial.com/swiftlessons) — Interactive tutorials for learning Swift programming.
-- [Tabby](https://www.tabbyml.com) — Self-hosted AI coding assistant.
-- [Tabby (Terminal)](https://tabby.sh) — Cross-platform terminal emulator with built-in SSH, serial, and theming/plugins.
+- [Tabby](https://www.tabbyml.com) — Self-hosted AI coding assistant from TabbyML with a code completion server and IDE extensions, including separately licensed Enterprise components.
+- [Tabby (Terminal)](https://tabby.sh) — Desktop terminal emulator and SSH and serial client for Windows, macOS, and Linux, with plugin support including optional SFTP.
 - [tailcat](https://tailscale.com/tailcat) — Tailscale project providing short-lived encrypted netcat-style connections without a tailnet account.
 - [Termic](https://termic.dev/) — Desktop development workspace combining agent sessions, terminals, Git worktrees, and review tools.
 - [terminal-browser](https://terminal-browser.com/) — Browser integrated with terminal sessions for interactive web previews and browser automation.

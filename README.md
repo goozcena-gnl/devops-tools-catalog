@@ -21,11 +21,11 @@ The DevOps ecosystem changes faster than a static list can safely represent: pro
 | Categories | **30** |
 | Engineering roles | **13** |
 | Lifecycle stages | **12** |
-| Records not flagged for review | **887** |
-| Records requiring review | **538** |
+| Records not flagged for review | **892** |
+| Records requiring review | **533** |
 | Deprecated, archived, or historical records | **15** |
 | Archived source repositories | **16** |
-| Most recent recorded verification date | **2026-11-12** |
+| Most recent recorded verification date | **2026-11-23** |
 
 Review debt is deliberate and actionable; it is not hidden to improve the numbers. A record marked `needs-review` is useful discovery context, not a verified recommendation.
 
@@ -131,20 +131,20 @@ needs_review: false
 
 | Model | Meaning | Records |
 |---|---|---:|
-| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 931 |
+| `oss` | Source claims an OSI-approved licence; verify SPDX before adoption. | 929 |
 | `source-available` | Source is visible under a non-OSI or restricted licence. | 31 |
-| `open-core` | OSS/community core with commercial features or service. | 111 |
+| `open-core` | OSS/community core with commercial features or service. | 112 |
 | `commercial` | Proprietary commercial product. | 178 |
 | `free-saas` | Hosted service with a free offering. | 6 |
 | `documentation` | Learning or documentation resource. | 104 |
-| `unknown` | Reliable licence evidence has not been recorded. | 64 |
+| `unknown` | Reliable licence evidence has not been recorded. | 65 |
 
 ## Project-status legend
 
 | Status | Meaning | Records |
 |---|---|---:|
-| `active` | Maintained according to recorded primary-source evidence. | 873 |
-| `needs-review` | Imported but not yet fully verified. | 537 |
+| `active` | Maintained according to recorded primary-source evidence. | 878 |
+| `needs-review` | Imported but not yet fully verified. | 532 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 11 |
 | `historical` | Retained for context or migration work. | 2 |
