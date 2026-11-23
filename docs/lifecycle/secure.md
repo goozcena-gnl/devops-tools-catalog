@@ -39,7 +39,7 @@
 - [Cedar Policy](https://www.cedarpolicy.com) — Policy language and authorization engine (Cedar) for fine-grained access control.
 - [Certipy](https://github.com/ly4k/Certipy) — Active Directory Certificate Services assessment tool for identifying configuration and trust weaknesses.
 - [CertMate](https://www.certmate.org) — Certificate management automation.
-- [Chain Bench](https://github.com/aquasecurity/chain-bench) — Supply chain security auditing tool.
+- [Chain Bench](https://github.com/aquasecurity/chain-bench) — CLI that audits software supply-chain practices across the development lifecycle against the CIS Software Supply Chain benchmark.
 - [Chainguard Containers](https://www.chainguard.dev) — Minimal, security-hardened container images offered as a limited free set and licensed production catalog with remediation SLAs.
 - [Checkmarx One](https://checkmarx.com) — Commercial cloud application-security platform combining multiple scanners and SDLC integrations.
 - [Checkov (Bridgecrew / Prisma Cloud)](https://www.checkov.io) — Open source IaC and software supply chain scanner maintained under the Bridgecrew and Prisma Cloud ecosystem.
@@ -59,7 +59,7 @@
 - [CVEMap](https://github.com/projectdiscovery/cvemap) — CVE mapping and analysis tool.
 - [CyberChef](https://gchq.github.io/CyberChef/) — Browser-based toolkit for defensively decoding, transforming, and analyzing data without sending it to a server.
 - [CycloneDX](https://cyclonedx.org) — Open standard for SBOMs and related software supply chain BOM formats, including support for VEX and AI/ML metadata.
-- [Cyclonus](https://github.com/mattfenwick/cyclonus) — Kubernetes network policy testing tool.
+- [Cyclonus](https://github.com/mattfenwick/cyclonus) — Research and experimentation toolkit that explains Kubernetes NetworkPolicy behavior, probes connectivity, and generates network policy tests.
 - [Darkmoon](https://dark-moon.org/) — Self-hosted AI penetration-testing platform that orchestrates specialist agents, supports local or cloud LLMs, and produces JSON findings with SARIF available through integrations.
 - [DefectDojo](https://www.defectdojo.com/) — Application security posture and vulnerability-management platform that ingests findings from many scanners.
 - [Dependency-Track](https://dependencytrack.org) — OWASP component-analysis platform that continuously evaluates software bills of materials and supply-chain risk.
@@ -68,7 +68,7 @@
 - [detect-secrets](https://github.com/Yelp/detect-secrets) — Apache-2.0 repository secret detector using configurable plugins, baselines and manual triage to prevent new credentials entering version control.
 - [Dex](https://dexidp.io) — Apache-2.0 OpenID Connect provider and federation broker for applications using external identity connectors.
 - [DigiCert](https://www.digicert.com/) — Vendor-level digital trust identity spanning certificate lifecycle, PKI, signing, device trust, and related product families.
-- [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) — Proxy that restricts access to the Docker socket API.
+- [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) — HAProxy-based proxy that filters HTTP access to the Docker Engine API by request method and API path while retaining privileged access to the host socket.
 - [Dockle](https://containers.goodwith.tech) — Container image linter for security best practices.
 - [Doppler](https://www.doppler.com) — Hosted Doppler secrets and configuration service with a separately Apache-2.0 licensed CLI for retrieving and injecting configuration.
 - [Dradis Community Edition](https://dradis.com/ce/) — Self-hosted collaboration and reporting platform for security assessment projects.
@@ -96,7 +96,7 @@
 - [graphql-cop](https://github.com/dolevf/graphql-cop) — Security audit utility for identifying GraphQL configuration and implementation weaknesses.
 - [Greenbone (OpenVAS)](https://github.com/greenbone) — Vulnerability scanning and management framework (formerly OpenVAS).
 - [Grype](https://oss.anchore.com/) — Anchore open-source vulnerability scanner for supported container images, filesystems and SBOMs; it uses Syft package cataloging and is distinct from SBOM generation, Anchore Enterprise and Trivy.
-- [GUAC](https://guac.sh) — Supply chain graph platform for ingesting SBOMs and metadata to map software relationships and provenance.
+- [GUAC](https://guac.sh) — Graph for Understanding Artifact Composition ingests and normalizes SBOMs, attestations, and other software supply-chain metadata into a queryable graph.
 - [Guardon](https://github.com/guardon-dev/guardon) — Open-source browser extension that brings Kubernetes guardrails and developer-first security checks directly into the browser workflow.
 - [Harden-Runner](https://github.com/step-security/harden-runner) — GitHub Actions runner security component that observes runtime network, file, and process activity.
 - [Hashcat](https://hashcat.net/hashcat/) — Hardware-accelerated password recovery and security-auditing utility.
@@ -115,9 +115,9 @@
 - [JARVIS OS](https://www.jarvisoslinux.org/) — Experimental AI-native Linux distribution that integrates an LLM daemon with a custom kernel interface for security research.
 - [John the Ripper](https://www.openwall.com/john/) — Password security auditing and recovery tool supporting many hash and encrypted-file formats.
 - [JumpServer](https://www.jumpserver.com) — Self-hosted privileged access management and bastion platform with GPL-3.0 Community core and distinct paid Enterprise tiers.
-- [k-guard](https://github.com/KamouloxPelvis/k-guard) — Experimental DevSecOps and NetDevOps automation for K3s with CVE scanning, patching, and hardening.
+- [k-guard](https://github.com/KamouloxPelvis/k-guard) — Self-hosted Kubernetes and K3s security orchestration with Falco runtime events, Wazuh endpoint data, Ollama-assisted triage, and optional Webex notifications.
 - [k8s Sidecar Secret Forge](https://github.com/stegianna/k8s-sidecar-secret-forge) — Kubernetes secret management sidecar.
-- [k8scout](https://github.com/k8scout/k8scout) — Drop-in binary that maps Kubernetes attack paths to cluster-admin escalation, node escape, secret theft, and cloud IAM takeover from within a pod.
+- [k8scout](https://github.com/k8scout/k8scout) — Beta Kubernetes RBAC and attack-path assessment tool with a pod-identity perspective and a separate reviewer mode using read-only cluster permissions.
 - [Kamaji](https://kamaji.clastix.io) — Kubernetes control plane manager (multi-tenancy/security).
 - [Katana](https://github.com/projectdiscovery/katana) — Web crawling framework for discovering application endpoints during authorized assessment and testing.
 - [Keycloak](https://www.keycloak.org) — Upstream open-source identity and access-management server providing SSO, identity federation and OpenID Connect, OAuth 2.0 and SAML for applications and services; Red Hat build packaging and managed IAM services are separate.
@@ -163,8 +163,8 @@
 - [OCS Inventory NG](https://ocsinventory-ng.org/) — IT inventory platform that collects hardware and software data from agents and network discovery.
 - [OIDC-Guard](https://github.com/IvanJosipovic/OIDC-Guard) — External-authentication API service for JWT and cookie validation at Kubernetes ingress.
 - [Omni](https://www.siderolabs.com/omni) — Kubernetes cluster lifecycle management platform by Sidero Labs; BSL/source-available + SaaS.
-- [Open Policy Agent](https://www.openpolicyagent.org) — Policy-based control for cloud-native environments.
-- [open-appsec](https://www.openappsec.io) — ML-based application & API security (WAF/RASP style).
+- [Open Policy Agent](https://www.openpolicyagent.org) — General-purpose Rego policy decision engine for applications and infrastructure integrations.
+- [open-appsec](https://www.openappsec.io) — Machine-learning-based protection for HTTP applications and APIs that attaches to gateways such as NGINX or Kong and supports Kubernetes deployments.
 - [OpenBao](https://openbao.org) — Community-governed MPL-2.0 secrets service providing encrypted KV storage, dynamic credentials, leases, encryption and audit interfaces.
 - [OpenSCAP](https://www.open-scap.org) — Security Content Automation Protocol.
 - [OpenSCAP Tools](https://www.open-scap.org/tools) — Collection of OpenSCAP tools.
@@ -249,7 +249,7 @@
 - [ThreatLocker](https://www.threatlocker.com) — Zero trust endpoint protection platform.
 - [Tinyauth](https://tinyauth.app/) — Lightweight self-hosted authentication gateway for protecting applications behind a reverse proxy.
 - [Touti-Cracker](https://github.com/Touti-Sudo/Touti-Cracker) — Security testing tool.
-- [Tracee](https://aquasecurity.github.io/tracee/latest) — EBPF-based runtime security and threat detection for Linux systems and containers.
+- [Tracee](https://aquasecurity.github.io/tracee/latest) — Runtime security and observability tool that uses eBPF to collect Linux host and container activity and detect suspicious behavior.
 - [Trivy](https://aquasecurity.github.io/trivy) — Vulnerability scanner for containers and Kubernetes.
 - [TruffleHog](https://trufflesecurity.com) — AGPLv3 TruffleHog v3 scans Git repositories and other sources for secrets and can verify selected credentials; enterprise monitoring is a separate commercial product.
 - [Valqore](https://www.valqore.io) — Automatic safety and security checks for cloud and AI environments.
