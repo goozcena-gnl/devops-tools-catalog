@@ -414,7 +414,13 @@ def catalogue_url_contexts(root: Path) -> dict[str, UrlContext]:
     urls = {str(tool[field]) for tool in tools for field in fields if tool.get(field)}
     contexts: dict[str, UrlContext] = {}
     for url in sorted(urls):
-        records = [tool for tool in tools if tool.get("repository_url") == url]
+        canonical_url, fragment = urllib.parse.urldefrag(url)
+        records = [
+            tool
+            for tool in tools
+            if tool.get("repository_url") == url
+            or (fragment and tool.get("repository_url") == canonical_url)
+        ]
         contexts[url] = UrlContext(
             repository_record_ids=tuple(str(tool["id"]) for tool in records),
             repository_archived_expected=bool(records)

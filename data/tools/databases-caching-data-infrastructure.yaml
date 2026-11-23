@@ -244,7 +244,7 @@
     container and maintained separately from Garage itself.
   official_url: https://github.com/khairul169/garage-webui
   repository_url: https://github.com/khairul169/garage-webui
-  repository_archived: false
+  repository_archived: true
   documentation_url: https://github.com/khairul169/garage-webui#readme
   categories:
   - databases-caching-data-infrastructure

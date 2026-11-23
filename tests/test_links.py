@@ -334,6 +334,7 @@ def test_repository_archive_expectation_comes_only_from_repository_records(
         """- id: expected
   official_url: https://product.test
   repository_url: https://github.com/org/expected
+  documentation_url: https://github.com/org/expected#readme
   repository_archived: true
 - id: active-product
   status: active
@@ -342,11 +343,15 @@ def test_repository_archive_expectation_comes_only_from_repository_records(
   repository_archived: true
 - id: missing-metadata
   repository_url: https://github.com/org/unexpected
+  documentation_url: https://github.com/org/unexpected#readme
 - id: shared-with-mixed-metadata
   repository_url: https://github.com/org/shared
+  documentation_url: https://github.com/org/shared#readme
   repository_archived: true
 - id: shared-without-metadata
   repository_url: https://github.com/org/shared
+- id: unrelated-github-subpath
+  documentation_url: https://github.com/org/expected/tree/main#readme
 """,
         encoding="utf-8",
     )
@@ -361,6 +366,18 @@ def test_repository_archive_expectation_comes_only_from_repository_records(
         "https://github.com/org/unexpected"
     ].repository_archived_expected
     assert not contexts["https://github.com/org/shared"].repository_archived_expected
+    assert contexts[
+        "https://github.com/org/expected#readme"
+    ].repository_archived_expected
+    assert not contexts[
+        "https://github.com/org/unexpected#readme"
+    ].repository_archived_expected
+    assert not contexts[
+        "https://github.com/org/shared#readme"
+    ].repository_archived_expected
+    assert not contexts[
+        "https://github.com/org/expected/tree/main#readme"
+    ].repository_archived_expected
     assert not contexts["https://product.test"].repository_archived_expected
 
 
