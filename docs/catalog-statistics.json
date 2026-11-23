@@ -5,16 +5,16 @@
     "commercial": 178,
     "documentation": 104,
     "free-saas": 6,
-    "open-core": 111,
-    "oss": 931,
+    "open-core": 112,
+    "oss": 929,
     "source-available": 31,
-    "unknown": 64
+    "unknown": 65
   },
   "statuses": {
-    "active": 873,
+    "active": 878,
     "archived": 11,
     "deprecated": 2,
     "historical": 2,
-    "needs-review": 537
+    "needs-review": 532
   }
 }

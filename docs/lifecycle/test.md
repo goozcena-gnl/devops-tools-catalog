@@ -21,7 +21,7 @@
 - [Arnica](https://www.arnica.io) — Application security platform covering SAST, SCA, IaC, and secrets scanning.
 - [Arsenal](https://github.com/Orange-Cyberdefense/arsenal) — Security tools knowledge base.
 - [Artillery](https://www.artillery.io) — Load testing platform and toolkit for HTTP, APIs, and Playwright-based scenarios.
-- [ASP.NET Aspire](https://aspire.dev) — Orchestration + tooling for building cloud-native .NET distributed applications.
+- [ASP.NET Aspire](https://aspire.dev) — Multi-language, code-first orchestration and observability toolchain that uses Aspire AppHost and CLI to run distributed applications locally and support deployment.
 - [ast-grep](https://ast-grep.github.io/) — Syntax-tree-based code search, linting, and rewriting tool.
 - [AutoPWN Suite](https://kaangultekin.net/projects/autopwn-suite) — Automated reconnaissance and vulnerability discovery framework for security testing labs.
 - [Awesome DevSecOps](https://github.com/devsecops/awesome-devsecops) — Curated list of DevSecOps resources.
@@ -32,7 +32,7 @@
 - [Azure Chaos Studio](https://azure.microsoft.com/en-us/products/chaos-studio) — Managed Azure service for validating application resilience with controlled disruptions and fault-injection experiments.
 - [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) — Microsoft's commercial DevOps product family, available as Azure DevOps Services and self-hosted Azure DevOps Server.
 - [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy) — Managed Azure governance service for enforcing organizational standards and assessing compliance at scale.
-- [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) — GUI tool for managing Azure Storage accounts, blobs, queues, and tables.
+- [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer) — Microsoft desktop client for browsing and managing Azure Storage resources, including blobs, file shares, queues, and tables.
 - [Bamboo](https://www.atlassian.com/software/bamboo) — Atlassian's commercially licensed, self-managed CI/CD server for build and deployment automation.
 - [Bazel](https://bazel.build) — Extensible build and test system for multi-language, multi-platform software, with incremental execution and local or remote caching.
 - [Bitbucket Pipelines](https://www.atlassian.com/software/bitbucket/features/pipelines) — Integrated CI/CD for Bitbucket repositories.
@@ -134,7 +134,7 @@
 - [Floci](https://floci.io/aws/) — Local emulator for selected AWS services used in development, testing, and CI workflows.
 - [Floci-AZ](https://floci.io/floci-az/) — Local emulator for selected Azure services exposed through a single native process.
 - [FOSSA](https://fossa.com/) — Commercial software supply-chain management platform for dependency licence compliance, vulnerability analysis, quality signals, and SBOM workflows.
-- [Ghostty](https://ghostty.org) — Fast, cross-platform GPU-accelerated terminal emulator with native desktop integration.
+- [Ghostty](https://ghostty.org) — GPU-accelerated terminal emulator with native macOS and Linux interfaces built on the shared libghostty terminal core.
 - [Ghostwriter](https://www.ghostwriter.wiki/home) — Collaborative platform for managing security assessments, findings, evidence, and reports.
 - [Gibson](https://github.com/HackingLZ/gibson) — Network monitoring and threat-hunting tool that maps processes to connections, flags beaconing, and helps generate firewall rules.
 - [GitHub Actions](https://github.com/features/actions) — GitHub's CI/CD platform on GitHub.com or self-hosted GitHub Enterprise Server, with platform terms separate from the MIT runner and independent action licences.
@@ -203,7 +203,7 @@
 - [Lynis](https://cisofy.com/lynis) — Security auditing and hardening tool with an enterprise offering (CISOfy).
 - [Mantis](https://getmantis.ai) — CI/CD platform for ML and data workflows.
 - [markdownlint](https://github.com/DavidAnson/markdownlint) — Node.js style checker and configurable rule set for Markdown and CommonMark files.
-- [MarkItDown](https://github.com/microsoft/markitdown) — Python tool for converting files and Office documents to Markdown.
+- [MarkItDown](https://github.com/microsoft/markitdown) — Python library and CLI that convert Office documents, PDFs, and other supported inputs into Markdown.
 - [masscan](https://github.com/robertdavidgraham/masscan) — High-rate asynchronous TCP port scanner for large authorized network inventories.
 - [Matt Pocock Skills](https://www.aihero.dev/skills) — Reusable coding-agent skills for specifications, testing, review, and maintenance workflows.
 - [MCPDefender](https://mcpdefender.com) — Security proxy for MCP traffic between AI apps and MCP servers (AGPL-3.0).
@@ -235,11 +235,11 @@
 - [Odysseus](https://odysseus-dev.github.io/odysseus) — Self-hosted AI workspace for local agent workflows.
 - [oha](https://github.com/hatoo/oha) — HTTP load-generation CLI with an interactive results display.
 - [Okteto](https://www.okteto.com/) — Development platform for building and testing applications directly in Kubernetes environments.
-- [Omarchy](https://omarchy.org) — Beautiful, opinionated Linux workstation environment focused on a curated desktop setup.
+- [Omarchy](https://omarchy.org) — Arch Linux-based workstation distribution with a curated Hyprland desktop, bundled applications, and its own installer and package repository.
 - [Omni](https://www.siderolabs.com/omni) — Kubernetes cluster lifecycle management platform by Sidero Labs; BSL/source-available + SaaS.
 - [Ona (formerly Gitpod)](https://github.com/gitpod-io) — Cloud-based development environments.
 - [OneDev](https://onedev.io) — Self-hosted Git and CI/CD platform with MIT-licensed Community software, issue/package management and a separately licensed commercial Enterprise module.
-- [Open Interpreter](https://openinterpreter.com) — Run AI that can execute tasks locally.
+- [Open Interpreter](https://openinterpreter.com) — Terminal coding agent with local command execution. The publisher's current Rust agent and the original Python implementation have separate compatibility and execution boundaries.
 - [Open Policy Agent](https://www.openpolicyagent.org) — General-purpose Rego policy decision engine for applications and infrastructure integrations.
 - [open-appsec](https://www.openappsec.io) — Machine-learning-based protection for HTTP applications and APIs that attaches to gateways such as NGINX or Kong and supports Kubernetes deployments.
 - [OpenCode](https://opencode.ai) — MIT-licensed open-source coding agent with independently billed or licensed model providers and optional online services.
@@ -264,7 +264,7 @@
 - [pfSense](https://www.pfsense.org) — Open-source firewall and router platform.
 - [pip-audit](https://pypi.org/project/pip-audit) — Apache-2.0 Python dependency vulnerability auditor using packaging advisory data, with requirements or environment scans and optional remediation via --fix.
 - [piqc](https://github.com/paralleliq/piqc) — Kubernetes scanner that discovers LLMs running on vLLM and extracts their deployment and runtime facts.
-- [Play with Docker](https://labs.play-with-docker.com) — Interactive Docker playground; open-source platform with hosted labs site.
+- [Play with Docker](https://labs.play-with-docker.com) — Source for a browser-based Docker playground. The publisher announced that hosted Play with Docker and Play with Kubernetes labs would become unavailable starting 2026-03-01.
 - [Playwright](https://playwright.dev) — Cross-browser web test runner and browser automation framework supporting Chromium, Firefox and WebKit.
 - [Plumber](https://getplumber.io) — CI/CD security scanner that analyzes GitHub Actions and GitLab pipelines and reports a graded security posture.
 - [Portmaster](https://safing.io) — Self-hosted application firewall and privacy suite for monitoring and controlling network connections.
@@ -280,7 +280,7 @@
 - [QEMU](https://www.qemu.org/) — Machine emulator and virtualizer supporting full-system emulation, user-mode emulation, and hardware-assisted virtualization.
 - [QuantumByte](https://github.com/QuantumByteOSS/quantumbyte) — Intent-to-working-app open-source application builder engine.
 - [Qubes OS](https://github.com/QubesOS) — Security-focused desktop operating system using Xen-based virtualization for compartmentalization.
-- [RamaLama](https://ramalama.ai) — AI-powered development assistant.
+- [RamaLama](https://ramalama.ai) — CLI for fetching, running, and serving AI models with OCI-oriented workflows. It uses Podman or Docker when available and attempts host execution when neither engine is installed.
 - [Reaver](https://github.com/t6x/reaver-wps-fork-t6x) — Wireless security assessment utility for evaluating WPS-enabled access points.
 - [Red Hat OpenShift Pipelines](https://www.redhat.com/en/technologies/cloud-computing/openshift/pipelines) — Red Hat-supported, Operator-delivered CI/CD distribution for OpenShift built from Tekton components and included with an OpenShift subscription.
 - [Red Labs](https://redlabs.enterprisesecurity.io) — Security labs/training environment.
@@ -327,8 +327,8 @@
 - [Suricata](https://suricata.io) — High-performance network IDS, IPS, and threat detection engine.
 - [Syft](https://oss.anchore.com/docs/guides/sbom/) — Anchore open-source CLI and Go library generating SBOMs from container images, filesystems and supported archives in formats including SPDX and CycloneDX; Grype scanning and Anchore Enterprise are separate.
 - [Sysdig Secure](https://www.sysdig.com/) — Commercial cloud-native application protection platform for runtime detection, vulnerability, posture, and entitlement risk.
-- [Tabby](https://www.tabbyml.com) — Self-hosted AI coding assistant.
-- [Tabby (Terminal)](https://tabby.sh) — Cross-platform terminal emulator with built-in SSH, serial, and theming/plugins.
+- [Tabby](https://www.tabbyml.com) — Self-hosted AI coding assistant from TabbyML with a code completion server and IDE extensions, including separately licensed Enterprise components.
+- [Tabby (Terminal)](https://tabby.sh) — Desktop terminal emulator and SSH and serial client for Windows, macOS, and Linux, with plugin support including optional SFTP.
 - [Tailscale](https://tailscale.com) — Zero-config VPN for secure networking; OSS client with commercial/SaaS control plane (self-hosting via Headscale available).
 - [TeamCity](https://www.jetbrains.com/teamcity) — JetBrains commercial CI/CD product offered as TeamCity On-Premises and TeamCity Cloud.
 - [Tekton](https://tekton.dev) — Kubernetes-native CI/CD framework and ecosystem built around Tekton Pipelines, with complementary triggers, tooling and supply-chain components.
