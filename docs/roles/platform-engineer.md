@@ -33,7 +33,7 @@
 | [Atlantis](https://www.runatlantis.io) | Infrastructure as Code | oss | active |
 | [atmos](https://atmos.tools) | Infrastructure as Code | oss | active |
 | [Atmosly](https://atmosly.com) | Platform engineering and internal developer platforms | commercial | active |
-| [AutoGen](https://microsoft.github.io/autogen/stable/index.html) | MLOps, LLMOps and AI infrastructure | oss | archived |
+| [AutoGen](https://microsoft.github.io/autogen/stable/index.html) | MLOps, LLMOps and AI infrastructure | oss (recorded; SPDX scope not established by this label) | archived (review required) — Archived Microsoft multi-agent framework retained for legacy use and migration. |
 | [Awesome DevOps](https://github.com/wmariuss/awesome-devops) | Documentation, learning and career resources | documentation | needs-review |
 | [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) | Kubernetes distributions and operations | documentation | needs-review |
 | [Awesome Kubernetes Operator Resources](https://github.com/calvin-puram/awesome-kubernetes-operator-resources) | Documentation, learning and career resources | documentation | needs-review |
@@ -465,7 +465,7 @@
 | [OpenFeature](https://openfeature.dev) | CD, GitOps, release and promotion | oss | active |
 | [OpenKruise](https://openkruise.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [OpenKruise Agents](https://github.com/openkruise/agents) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | needs-review |
+| [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss (recorded; not a licence attestation) | historical (review required) — Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher and distributed-binary licensing still unverified. |
 | [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | oss | active |
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
 | [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |

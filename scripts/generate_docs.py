@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 from collections import Counter
 from collections.abc import Sequence
 from pathlib import Path
@@ -38,6 +39,46 @@ def tool_links(tool: dict[str, object]) -> str:
     return " · ".join(links)
 
 
+def independent_review(tool: dict[str, object]) -> bool:
+    """Expose outstanding review separately when status does not already do so."""
+    return tool.get("needs_review") is True and tool["status"] != "needs-review"
+
+
+def review_suffix(tool: dict[str, object]) -> str:
+    return " (review required)" if independent_review(tool) else ""
+
+
+def model_label(tool: dict[str, object], *, title: bool = False) -> str:
+    model = str(tool["license_model"])
+    if title:
+        model = model.replace("-", " ").title()
+    if independent_review(tool):
+        if tool.get("license_spdx"):
+            model += " (recorded; SPDX scope not established by this label)"
+        else:
+            model += " (recorded; not a licence attestation)"
+    return model
+
+
+TABLE_TEXT_ESCAPES = str.maketrans(
+    {char: f"&#{ord(char)};" for char in "&\\|<>[]`*_~:@"}
+)
+
+
+def markdown_table_text(value: object) -> str:
+    """Render plain text in a GFM table cell."""
+    text = " ".join(str(value).split()).translate(TABLE_TEXT_ESCAPES)
+    # GFM also recognizes bare www links, including mixed-case prefixes.
+    return re.sub(r"(www)\.", r"\1&#46;", text, flags=re.IGNORECASE)
+
+
+def role_status(tool: dict[str, object]) -> str:
+    status = str(tool["status"]) + review_suffix(tool)
+    if independent_review(tool):
+        status += f" — {markdown_table_text(tool['summary'])}"
+    return status
+
+
 def render_tool(
     tool: dict[str, object],
     categories: dict[str, str],
@@ -48,9 +89,11 @@ def render_tool(
     metadata_lines = [
         f"**Categories:** {category_names}",
         f"**Roles:** {role_names}",
-        f"**Model:** {str(tool['license_model']).replace('-', ' ').title()}",
+        f"**Model:** {model_label(tool, title=True)}",
         f"**Status:** {str(tool['status']).replace('-', ' ').title()}",
     ]
+    if independent_review(tool):
+        metadata_lines.append("**Review:** Required")
     if tool.get("repository_archived"):
         metadata_lines.append("**Repository:** Archived")
     use_fallback = (
@@ -129,7 +172,7 @@ def render_role(
         category_names = ", ".join(categories[item] for item in tool["categories"])
         rows.append(
             f"| [{tool['name']}]({url}) | {category_names} | "
-            f"{tool['license_model']} | {tool['status']} |"
+            f"{model_label(tool)} | {role_status(tool)} |"
         )
     rows.extend(["", "[Back to catalogue](../../README.md)", ""])
     return "\n".join(rows)
@@ -148,7 +191,7 @@ def render_lifecycle(stage: str, tools: list[dict[str, object]]) -> str:
         "",
     ]
     rows.extend(
-        f"- [{tool['name']}]({tool.get('official_url') or tool.get('repository_url')}) — {tool['summary']}"
+        f"- [{tool['name']}]({tool.get('official_url') or tool.get('repository_url')}){review_suffix(tool)} — {tool['summary']}"
         for tool in selected
     )
     rows.extend(["", "[Back to catalogue](../../README.md)", ""])
@@ -185,7 +228,7 @@ def render_deprecated(tools: list[dict[str, object]]) -> str:
     ]
     if selected:
         rows.extend(
-            f"- **{tool['name']}** ({tool['status']}) — {tool['summary']}"
+            f"- **{tool['name']}** ({tool['status']}){review_suffix(tool)} — {tool['summary']}"
             for tool in selected
         )
     else:

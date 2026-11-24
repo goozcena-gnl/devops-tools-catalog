@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import json
+import re
 import subprocess
 import sys
+from html import unescape
 from pathlib import Path
 from urllib.parse import quote
 
@@ -9,7 +12,15 @@ import pytest
 from jsonschema import Draft202012Validator
 
 from scripts.catalog import ROOT, load_taxonomy, load_tools
-from scripts.generate_docs import expected_outputs, generate, label_map, render_tool
+from scripts.generate_docs import (
+    expected_outputs,
+    generate,
+    label_map,
+    render_deprecated,
+    render_lifecycle,
+    render_role,
+    render_tool,
+)
 from scripts.validate_catalog import (
     SECRET_PATTERNS,
     main,
@@ -619,3 +630,188 @@ def test_validator_argument_errors_redact_unterminated_quotes(
     assert "password=[REDACTED]" in captured.err
     assert "unrecognized arguments" in captured.err
     assert captured.out == ""
+
+
+def test_independent_review_visibility_issue204() -> None:
+    taxonomy = load_taxonomy()
+    categories = label_map(taxonomy["categories"])
+    roles = label_map(taxonomy["roles"])
+    records = {tool["id"]: tool for tool in load_tools()}
+    openlens = records["openlens"]
+    autogen = records["autogen"]
+    grove = records["grove"]
+    role = {"id": "platform-engineer", "name": "Platform Engineer"}
+
+    category = render_tool(openlens, categories, roles)
+    assert "**Status:** Historical" in category
+    assert "**Review:** Required" in category
+    assert "Oss (recorded; not a licence attestation)" in category
+    assert "distributed-binary licensing still unverified" in category
+    table = render_role(role, [openlens, autogen], categories)
+    assert "oss (recorded; not a licence attestation)" in table
+    assert "historical (review required)" in table
+    assert "distributed-binary licensing still unverified" in table
+    assert (
+        "| oss (recorded; SPDX scope not established by this label) | "
+        f"archived (review required) — {autogen['summary']} |"
+    ) in table
+    assert autogen["license_spdx"] == "MIT"
+    assert autogen["status"] == "archived"
+    assert "(review required)" in render_lifecycle("deploy", [openlens])
+    assert "(historical) (review required)" in render_deprecated([openlens])
+    assert "**Review:** Required" in render_tool(autogen, categories, roles)
+    assert "not a licence attestation" not in render_tool(autogen, categories, roles)
+    assert "Oss (recorded; SPDX scope not established by this label)" in render_tool(
+        autogen, categories, roles
+    )
+    reviewed = {**openlens, "needs_review": False}
+    assert "**Review:** Required" not in render_tool(reviewed, categories, roles)
+    assert "review required" not in render_role(role, [reviewed], categories)
+    assert "**Status:** Needs Review" in render_tool(grove, categories, roles)
+    assert "**Review:** Required" not in render_tool(grove, categories, roles)
+    assert openlens["license_model"] == "oss"
+    assert "license_spdx" not in openlens
+    assert openlens["status"] == "historical"
+    assert openlens["needs_review"] is True
+
+
+@pytest.fixture
+def role_row():
+    schema = json.loads((ROOT / "schema/tool.schema.json").read_text(encoding="utf-8"))
+    validator = Draft202012Validator(schema)
+    role = {"id": "devops-engineer", "name": "DevOps Engineer"}
+    categories = {"foundations-linux-scripting": "Foundations"}
+    separator = "|---|---|---|"
+
+    def render(record):
+        validator.validate(record)
+        _, _, table = render_role(role, [record], categories).partition(
+            separator + "\n"
+        )
+        rows = table.split("\n\n", 1)[0].splitlines()
+        assert len(rows) == 1
+        left, *cells, right = rows[0].split("|")
+        assert left == right == ""
+        assert len(cells) == 4
+        link, category, model, status = (cell.strip() for cell in cells)
+        assert link == "[Example Tool](https://example.com/tool)"
+        assert category == "Foundations"
+        return model, status
+
+    return render
+
+
+@pytest.mark.parametrize(
+    "summary",
+    [
+        "first\rsecond",
+        "first\nsecond",
+        "first\r\nsecond",
+        "first\r\n\n\rsecond",
+        "  first\t  second   ",
+        "first | second",
+        r"first \| second",
+        r"first \\\| second",
+        "`code` **bold** *italic* _em_ ~~strike~~ [link](target) ![image](target)",
+        "R&D &lt; &#124; &amp;",
+        "<em>literal</em> <!-- comment -->",
+        "Équipe déploiement — 雀",
+        "www.example.com WWW.example.com https://example.com a@example.com",
+        "Café\t  " + r"\||\\| &lt; <em>x</em> **littéral**" + "\r\n\r\n fin",
+    ],
+    ids=[
+        "cr",
+        "lf",
+        "crlf",
+        "consecutive",
+        "tabs-and-spaces",
+        "pipe",
+        "one-backslash",
+        "multiple-backslashes",
+        "markdown",
+        "entities",
+        "html",
+        "unicode",
+        "autolinks",
+        "combined",
+    ],
+)
+def test_role_summary_is_plain_text_in_one_cell(role_row, summary) -> None:
+    _, status = role_row(minimal_record(status="historical", summary=summary))
+    prefix = "historical (review required) — "
+    assert status.startswith(prefix)
+    context = status.removeprefix(prefix)
+    markup = re.sub(r"&#[0-9]+;", "", context)
+    assert not set("&\\|<>[]`*_~:@").intersection(markup)
+    assert "www." not in markup.lower()
+    assert unescape(context) == " ".join(summary.split())
+
+
+@pytest.mark.parametrize(
+    ("status", "review", "spdx", "summary", "qualification", "expected_status"),
+    [
+        (
+            "historical",
+            True,
+            None,
+            "Historical package.",
+            " (recorded; not a licence attestation)",
+            "historical (review required) — Historical package.",
+        ),
+        (
+            "historical",
+            True,
+            "Apache-2.0",
+            "Apache-2.0 applies to source only. Distributed-binary licensing remains unverified.",
+            " (recorded; SPDX scope not established by this label)",
+            "historical (review required) — Apache-2.0 applies to source only. "
+            "Distributed-binary licensing remains unverified.",
+        ),
+        (
+            "archived",
+            True,
+            "MIT",
+            "Project archived after development moved upstream.",
+            " (recorded; SPDX scope not established by this label)",
+            "archived (review required) — Project archived after development moved upstream.",
+        ),
+        ("historical", False, None, "Historical package.", "", "historical"),
+        ("needs-review", True, None, "Needs review.", "", "needs-review"),
+        (
+            "active",
+            True,
+            None,
+            "Active service.",
+            " (recorded; not a licence attestation)",
+            "active (review required) — Active service.",
+        ),
+        ("historical", None, None, "Review flag omitted.", "", "historical"),
+    ],
+    ids=[
+        "historical-no-spdx",
+        "source-only-spdx",
+        "archived-mit",
+        "review-not-required",
+        "needs-review-status",
+        "active-review",
+        "missing-review-field",
+    ],
+)
+def test_role_review_context_and_licence_scope(
+    role_row, status, review, spdx, summary, qualification, expected_status
+) -> None:
+    record = minimal_record(status=status, summary=summary, license_model="oss")
+    if review is None:
+        del record["needs_review"]
+    else:
+        record["needs_review"] = review
+    if spdx is not None:
+        record["license_spdx"] = spdx
+
+    model, rendered_status = role_row(record)
+
+    assert unescape(rendered_status) == expected_status
+    assert model == f"oss{qualification}"
+    assert record["license_model"] == "oss"
+    assert record.get("license_spdx") == spdx
+    assert record["status"] == status

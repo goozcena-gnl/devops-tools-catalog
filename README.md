@@ -23,7 +23,7 @@ The DevOps ecosystem changes faster than a static list can safely represent: pro
 | Lifecycle stages | **12** |
 | Records not flagged for review | **892** |
 | Records requiring review | **533** |
-| Deprecated, archived, or historical records | **15** |
+| Deprecated, archived, or historical records | **16** |
 | Archived source repositories | **16** |
 | Most recent recorded verification date | **2026-11-23** |
 
@@ -96,13 +96,13 @@ needs_review: false
 | [Virtualization, bare metal and homelab](docs/categories/virtualization-bare-metal-homelab.md) | 72 |
 | [Containers and image tooling](docs/categories/containers-image-tooling.md) | 23 |
 | [Kubernetes distributions and operations](docs/categories/kubernetes-distributions-operations.md) | 152 |
-| [Kubernetes networking, storage and add-ons](docs/categories/kubernetes-networking-storage-addons.md) | 136 |
+| [Kubernetes networking, storage and add-ons](docs/categories/kubernetes-networking-storage-addons.md) | 137 |
 | [CI, build and testing](docs/categories/ci-build-testing.md) | 87 |
 | [CD, GitOps, release and promotion](docs/categories/cd-gitops-release-promotion.md) | 36 |
 | [Artifact and package management](docs/categories/artifact-package-management.md) | 21 |
 | [Platform engineering and internal developer platforms](docs/categories/platform-engineering-idp.md) | 13 |
 | [Developer experience and local environments](docs/categories/developer-experience-local-environments.md) | 111 |
-| [Monitoring, metrics, logs and tracing](docs/categories/monitoring-metrics-logs-tracing.md) | 102 |
+| [Monitoring, metrics, logs and tracing](docs/categories/monitoring-metrics-logs-tracing.md) | 100 |
 | [SRE, incident response and on-call](docs/categories/sre-incident-response-on-call.md) | 24 |
 | [Backup, disaster recovery and resilience](docs/categories/backup-disaster-recovery-resilience.md) | 16 |
 | [Chaos and performance engineering](docs/categories/chaos-performance-engineering.md) | 25 |
@@ -114,7 +114,7 @@ needs_review: false
 | [Databases, caching and data infrastructure](docs/categories/databases-caching-data-infrastructure.md) | 30 |
 | [Serverless, edge and WebAssembly](docs/categories/serverless-edge-webassembly.md) | 10 |
 | [Workflow automation and ChatOps](docs/categories/workflow-automation-chatops.md) | 18 |
-| [MLOps, LLMOps and AI infrastructure](docs/categories/mlops-llmops-ai-infrastructure.md) | 83 |
+| [MLOps, LLMOps and AI infrastructure](docs/categories/mlops-llmops-ai-infrastructure.md) | 84 |
 | [Documentation, learning and career resources](docs/categories/documentation-learning-career.md) | 64 |
 | [Emerging and experimental tools](docs/categories/emerging-experimental.md) | 57 |
 | [Deprecated and historical tools](docs/categories/deprecated-historical.md) | 8 |
@@ -144,10 +144,10 @@ needs_review: false
 | Status | Meaning | Records |
 |---|---|---:|
 | `active` | Maintained according to recorded primary-source evidence. | 878 |
-| `needs-review` | Imported but not yet fully verified. | 532 |
+| `needs-review` | Imported but not yet fully verified. | 531 |
 | `deprecated` | Superseded or discouraged by its maintainer. | 2 |
 | `archived` | Repository or product is archived. | 11 |
-| `historical` | Retained for context or migration work. | 2 |
+| `historical` | Retained for context or migration work. | 3 |
 
 ## Methodology and trust model
 

@@ -3979,7 +3979,7 @@
   needs_review: false
 - id: openlens
   name: OpenLens
-  summary: Open source distribution of Lens features.
+  summary: Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher and distributed-binary licensing still unverified.
   repository_url: https://github.com/MuhammedKalkan/OpenLens
   categories:
   - kubernetes-distributions-operations
@@ -3993,19 +3993,20 @@
   - deploy
   - operate
   use_when:
-  - You want the Lens experience without proprietary licensing.
+  - You need to examine or maintain a historical OpenLens binary installation with its original compatibility and licence limitations.
   avoid_when:
-  - The project's maintenance cadence lags behind upstream Kubernetes versions.
+  - You need a currently updated Kubernetes IDE or confirmed redistribution terms for historical binary artifacts.
   deployment_models: []
   license_model: oss
   maturity: unknown
-  status: needs-review
+  status: historical
   alternatives: []
   tags: []
   verified_on: '2026-08-03'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L63
   - legacy:devopstools_final.md#L518
+  - https://github.com/MuhammedKalkan/OpenLens/blob/a7d44fba75e1a35087fe592ed77d51d6d260797b/README.md
   needs_review: true
 - id: openstack-magnum
   name: OpenStack Magnum

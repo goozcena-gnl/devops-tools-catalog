@@ -60,7 +60,7 @@
 - [Grafana Pyroscope](https://grafana.com/oss/pyroscope) — Continuous-profiling server that ingests, stores and queries application profiles for Grafana analysis, separate from distributed tracing storage and the hosted Grafana Cloud Profiles service.
 - [Grafana Tempo](https://grafana.com/oss/tempo) — Open-source distributed tracing backend with TraceQL search and configurable OTLP, Jaeger and Zipkin receivers; Grafana Cloud Traces is a separate managed offering.
 - [groundcover](https://www.groundcover.com/) — Commercial observability platform offering infrastructure and application monitoring with BYOC deployment.
-- [grove](https://github.com/ai-dynamo/grove) — AI-powered Kubernetes troubleshooting.
+- [grove](https://github.com/ai-dynamo/grove) — Kubernetes-native orchestration for distributed AI inference with gang scheduling, startup ordering, topology-aware placement, and autoscaling.
 - [HolmesGPT](https://holmesgpt.dev/latest) — Open-source AI SRE investigation agent integrating Kubernetes, cloud and observability data sources; operator mode needs explicit permissions.
 - [Honeycomb](https://www.honeycomb.io) — Hosted observability platform for high-cardinality telemetry, distributed tracing, and production debugging.
 - [HyperDX](https://www.hyperdx.io) — ClickHouse-backed observability interface for correlating logs, traces, metrics and session replay within ClickStack deployments.
@@ -75,7 +75,7 @@
 - [Kubernetes Monitoring Mixins](https://monitoring.mixins.dev/kubernetes) — Jsonnet monitoring mixin that generates Kubernetes Prometheus alerting and recording rules and Grafana dashboards, maintained under kubernetes-sigs rather than a standalone monitoring server.
 - [KubeView](https://github.com/benc-uk/kubeview) — Read-only Kubernetes resource and relationship visualization with live SSE updates and optional pod-log viewing, served by a local or in-cluster Go web application.
 - [Kubewatch](https://github.com/robusta-dev/kubewatch) — Robusta-maintained Kubewatch watches selected Kubernetes resource changes and sends notifications to configured handlers and collaboration channels.
-- [Kwatcher](https://github.com/Berg-it/Kwatcher) — Kubernetes event watcher.
+- [Kwatcher](https://github.com/Berg-it/Kwatcher) — Kubernetes operator that polls external configuration into ConfigMaps and triggers controlled Deployment rollouts.
 - [Linnix](https://github.com/linnix-os/linnix) — EBPF and PSI-based observability for pinpointing processes and pods causing Linux stalls and incidents.
 - [Logstash](https://www.elastic.co/logstash) — Log ingestion/processing pipeline (Elastic ecosystem).
 - [M/Monit](https://www.mmonit.com) — Systems monitoring and management (Monit/M/Monit).

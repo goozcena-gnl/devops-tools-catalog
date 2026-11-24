@@ -299,7 +299,7 @@
 | [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | active |
 | [Graft](https://trailhq.com/graft) | Developer experience and local environments, Source control and repository management | oss | active |
 | [Gremlin](https://www.gremlin.com) | Chaos and performance engineering, Backup, disaster recovery and resilience | commercial | active |
-| [grove](https://github.com/ai-dynamo/grove) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [grove](https://github.com/ai-dynamo/grove) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [gVisor](https://gvisor.dev) | Virtualization, bare metal and homelab | oss | needs-review |
 | [Hadolint](https://github.com/hadolint/hadolint) | Developer experience and local environments | oss | needs-review |
 | [Harbor](https://goharbor.io) | Artifact and package management | oss | needs-review |
@@ -394,7 +394,7 @@
 | [Kubesearch](https://kubesearch.dev) | Artifact and package management | unknown | needs-review |
 | [Kubewatch](https://github.com/robusta-dev/kubewatch) | Monitoring, metrics, logs and tracing | oss | active |
 | [KusionStack](https://kusionstack.io) | Infrastructure as Code | oss | active |
-| [Kwatcher](https://github.com/Berg-it/Kwatcher) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Kwatcher](https://github.com/Berg-it/Kwatcher) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [LabEx DevOps Tutorials](https://labex.io/tutorials/category/devops) | Documentation, learning and career resources | documentation | needs-review |
 | [LabsDevOps.fr](https://labsdevops.fr) | Documentation, learning and career resources | documentation | needs-review |
 | [Lazydocker](https://github.com/jesseduffield/lazydocker) | Virtualization, bare metal and homelab | oss | needs-review |
