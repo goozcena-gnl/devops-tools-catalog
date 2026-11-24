@@ -7,7 +7,7 @@ hatchling==1.33.0
 iniconfig==2.3.1
 jsonschema==4.26.0
 jsonschema-specifications==2025.9.1
-packaging==26.3
+packaging==26.4
 pathspec==1.1.1
 pluggy==1.7.0
 pygments==2.21.0
@@ -16,7 +16,7 @@ pyyaml==6.0.3
 rarfile==4.5
 referencing==0.37.0
 rpds-py==2026.9.1
-ruff==0.17.5
-tomlkit==0.15.2
+ruff==0.17.6
+tomlkit==0.15.3
 trove-classifiers==2026.9.21.13
 typing-extensions==4.16.0
