@@ -2778,6 +2778,37 @@
   sources:
   - legacy:devopstools_final.md#L598
   needs_review: true
+- id: kwatcher
+  name: Kwatcher
+  summary: Kubernetes operator that polls external configuration into ConfigMaps and triggers controlled Deployment rollouts.
+  repository_url: https://github.com/Berg-it/Kwatcher
+  categories:
+  - kubernetes-networking-storage-addons
+  subcategories:
+  - Kubernetes Ecosystem & Add-ons
+  roles:
+  - devops-engineer
+  - site-reliability-engineer
+  - observability-engineer
+  lifecycle_stages:
+  - operate
+  - monitor
+  use_when:
+  - You need to synchronize remote configuration into Kubernetes ConfigMaps and roll out affected Deployments.
+  avoid_when:
+  - You need Kubernetes event streaming; review external URL trust, Secret access, RBAC, polling frequency, and rollout change controls.
+  deployment_models: []
+  license_model: oss
+  maturity: unknown
+  status: needs-review
+  alternatives: []
+  tags: []
+  verified_on: '2026-08-03'
+  sources:
+  - legacy:5_Monitoring-Observability/README.md#L32
+  - legacy:devopstools_final.md#L733
+  - https://github.com/Berg-it/Kwatcher/blob/d31e98aafb39878dab12fc97fa65b0b80ad0fbfe/README.md
+  needs_review: true
 - id: kyverno
   name: Kyverno
   summary: Kubernetes policy engine for validation, mutation, generation, cleanup and image verification

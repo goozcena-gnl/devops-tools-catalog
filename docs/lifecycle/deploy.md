@@ -441,7 +441,7 @@
 - [OpenFeature](https://openfeature.dev) — Open standard for feature flag management.
 - [OpenKruise](https://openkruise.io) — OpenKruise adds advanced Kubernetes workload controllers and lifecycle operations such as in-place updates and sidecar management.
 - [OpenKruise Agents](https://github.com/openkruise/agents) — Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
-- [OpenLens](https://github.com/MuhammedKalkan/OpenLens) — Open source distribution of Lens features.
+- [OpenLens](https://github.com/MuhammedKalkan/OpenLens) — Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher.
 - [OpenRun](https://openrun.dev) — Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
 - [OpenStack](https://www.openstack.org) — Open-source cloud infrastructure platform for operating compute, networking, storage, identity, and related services.
 - [OpenStack Ironic](https://ironicbaremetal.org/) — Bare-metal provisioning service supporting hardware inspection, deployment, and power management.

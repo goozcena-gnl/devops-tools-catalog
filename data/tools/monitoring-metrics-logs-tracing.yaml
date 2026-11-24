@@ -1651,36 +1651,6 @@
   status: active
   verified_on: '2026-09-08'
   needs_review: false
-- id: grove
-  name: grove
-  summary: AI-powered Kubernetes troubleshooting.
-  repository_url: https://github.com/ai-dynamo/grove
-  categories:
-  - monitoring-metrics-logs-tracing
-  subcategories:
-  - Kubernetes Observability & Troubleshooting
-  roles:
-  - devops-engineer
-  - site-reliability-engineer
-  - observability-engineer
-  lifecycle_stages:
-  - operate
-  - monitor
-  use_when:
-  - Experimenting with AI-assisted K8s debugging.
-  avoid_when:
-  - You need production-proven, auditable troubleshooting workflows.
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:5_Monitoring-Observability/README.md#L27
-  - legacy:devopstools_final.md#L725
-  needs_review: true
 - id: holmesgpt
   name: HolmesGPT
   summary: Open-source AI SRE investigation agent integrating Kubernetes, cloud and observability data sources; operator mode needs explicit permissions.
@@ -2149,36 +2119,6 @@
   documentation_url: https://github.com/robusta-dev/kubewatch/blob/master/README.md
   repository_archived: false
   needs_review: false
-- id: kwatcher
-  name: Kwatcher
-  summary: Kubernetes event watcher.
-  repository_url: https://github.com/Berg-it/Kwatcher
-  categories:
-  - monitoring-metrics-logs-tracing
-  subcategories:
-  - Kubernetes Observability & Troubleshooting
-  roles:
-  - devops-engineer
-  - site-reliability-engineer
-  - observability-engineer
-  lifecycle_stages:
-  - operate
-  - monitor
-  use_when:
-  - Lightweight K8s event streaming to external systems.
-  avoid_when:
-  - Kubewatch or Robusta already covers your event-watching needs.
-  deployment_models: []
-  license_model: oss
-  maturity: unknown
-  status: needs-review
-  alternatives: []
-  tags: []
-  verified_on: '2026-08-03'
-  sources:
-  - legacy:5_Monitoring-Observability/README.md#L32
-  - legacy:devopstools_final.md#L733
-  needs_review: true
 - id: linnix
   name: Linnix
   summary: EBPF and PSI-based observability for pinpointing processes and pods causing Linux stalls and

@@ -465,7 +465,7 @@
 | [OpenFeature](https://openfeature.dev) | CD, GitOps, release and promotion | oss | active |
 | [OpenKruise](https://openkruise.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [OpenKruise Agents](https://github.com/openkruise/agents) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | needs-review |
+| [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | historical |
 | [OpenRun](https://openrun.dev) | Platform engineering and internal developer platforms | oss | active |
 | [openspeedtest](https://github.com/openspeedtest) | Emerging and experimental tools | oss | needs-review |
 | [OpenStack](https://www.openstack.org) | Cloud platforms and cloud management, Virtualization, bare metal and homelab | oss | active |

@@ -17,4 +17,5 @@ Records remain here for migration and historical context; they are not active re
 - **Kubeapps** (archived) — Kubernetes application dashboard for deploying and managing Helm charts and other packages.
 - **Kubernetes Dashboard** (archived) — Retired general-purpose web UI for Kubernetes clusters.
 - **MinIO Community Server** (archived) — Archived and unmaintained AGPL-licensed S3-compatible object-storage server retained for historical and migration reference.
+- **OpenLens** (historical) — Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher.
 - **Talos Node Updater (tnu)** (archived) — Archived Go utility that coordinated Talos Linux node upgrades through the Talos API and Rancher System Upgrade Controller.

@@ -2457,17 +2457,17 @@ Development platform for building and testing applications directly in Kubernete
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Historical
 
-Open source distribution of Lens features.
+Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher.
 
 **Use when**
 
-- You want the Lens experience without proprietary licensing.
+- You need to examine or maintain a historical OpenLens binary installation with its original compatibility and licence limitations.
 
 **Consider alternatives when**
 
-- The project's maintenance cadence lags behind upstream Kubernetes versions.
+- You need a currently updated Kubernetes IDE or confirmed redistribution terms for historical binary artifacts.
 
 [Source repository](https://github.com/MuhammedKalkan/OpenLens)
 

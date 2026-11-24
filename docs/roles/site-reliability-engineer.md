@@ -132,7 +132,7 @@
 | [Grafana Tempo](https://grafana.com/oss/tempo) | Monitoring, metrics, logs and tracing | oss | active |
 | [Gremlin](https://www.gremlin.com) | Chaos and performance engineering, Backup, disaster recovery and resilience | commercial | active |
 | [groundcover](https://www.groundcover.com/) | Monitoring, metrics, logs and tracing | commercial | active |
-| [grove](https://github.com/ai-dynamo/grove) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [grove](https://github.com/ai-dynamo/grove) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
 | [HAMi](https://project-hami.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Hanoi CLI](https://github.com/k-krew/hanoi-cli) | Kubernetes distributions and operations | oss | needs-review |
 | [HAProxy](https://www.haproxy.org) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -263,7 +263,7 @@
 | [Kueue](https://kueue.sigs.k8s.io) | Kubernetes distributions and operations, Kubernetes networking, storage and add-ons | oss | active |
 | [Kustomize](https://kustomize.io) | Kubernetes distributions and operations | oss | active |
 | [KUTTL](https://kuttl.dev) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [Kwatcher](https://github.com/Berg-it/Kwatcher) | Monitoring, metrics, logs and tracing | oss | needs-review |
+| [Kwatcher](https://github.com/Berg-it/Kwatcher) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [KWOK](https://kwok.sigs.k8s.io/) | Kubernetes distributions and operations, Chaos and performance engineering | oss | active |
 | [Kyverno](https://kyverno.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Lens](https://lenshq.io) | Kubernetes distributions and operations | commercial | needs-review |
@@ -314,7 +314,7 @@
 | [OKD](https://okd.io) | Kubernetes distributions and operations | oss | active |
 | [OpenKruise](https://openkruise.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [OpenKruise Agents](https://github.com/openkruise/agents) | Kubernetes networking, storage and add-ons | oss | needs-review |
-| [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | needs-review |
+| [OpenLens](https://github.com/MuhammedKalkan/OpenLens) | Kubernetes distributions and operations | oss | historical |
 | [OpenObserve](https://openobserve.ai/) | Monitoring, metrics, logs and tracing | open-core | active |
 | [OpenSearch](https://opensearch.org) | Monitoring, metrics, logs and tracing | oss | active |
 | [OpenSRE](https://www.opensre.com/) | SRE, incident response and on-call, MLOps, LLMOps and AI infrastructure | oss | active |
