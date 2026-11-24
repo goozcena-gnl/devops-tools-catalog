@@ -39,3 +39,10 @@ The table above must **never** be updated to PASS before actual execution. Stop 
 - Independent verifier v1.1 allows the official generated historical index `docs/deprecated-tools.md`; external verifier SHA256 `915d44862bc8e1a19fb4f2d4a4442e6abc67180d96bfbea8e5886a040c71a326`.
 - The earlier LF/CRLF warnings were captured separately; Git returned exit 0. No configuration change or baseline waiver.
 - Full pytest result supplied by the operator in the 2026-11-24 validation transcript (SHA256 `36d1c9c89c3ae17fd3593bfa2b4913a638f882ba0320f5142e07a61a866080ab`). Eight skips retained as skips; Linux CI and strict audit remain NOT RUN.
+
+## V1.1 corrective preparation — independent review follow-up
+
+- F01: remove the newly appended mutable release-tag URL from canonical sources; retain both legacy entries and the pinned publisher README. The earlier ledger's release link is retained as dated observational evidence only: release ID 110534371, tag `v6.5.2-366`, published `2023-06-30T17:54:36Z`, observed tag target `0f102c4f64bdc0174bc5ed382f741d0befa61ffe`, API `immutable: false`. This observation is not a binary integrity or licence attestation.
+- F03: explicitly restore startup ordering to Grove's summary and adoption guidance, supported by the already pinned README. All deferred decisions and review flags remain unchanged.
+- F02 proposal (separate maintainer scope authorization required): expose independent review debt when the canonical status does not already communicate it; affected records OpenLens and AutoGen. For missing SPDX in this case, qualify the recorded model without inferring legal status; repeat record context in role views. OpenLens summary explicitly retains unresolved distributed-binary licensing. AutoGen canonical fields are unchanged; its MIT SPDX is not called unresolved.
+- Local validation for this candidate is recorded in external evidence logs; exact-commit CI and strict link audit NOT RUN. Prior successful results apply only to the previous HEAD. No publication or Ready transition authorized.

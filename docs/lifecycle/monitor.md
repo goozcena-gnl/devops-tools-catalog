@@ -60,7 +60,7 @@
 - [Grafana Pyroscope](https://grafana.com/oss/pyroscope) — Continuous-profiling server that ingests, stores and queries application profiles for Grafana analysis, separate from distributed tracing storage and the hosted Grafana Cloud Profiles service.
 - [Grafana Tempo](https://grafana.com/oss/tempo) — Open-source distributed tracing backend with TraceQL search and configurable OTLP, Jaeger and Zipkin receivers; Grafana Cloud Traces is a separate managed offering.
 - [groundcover](https://www.groundcover.com/) — Commercial observability platform offering infrastructure and application monitoring with BYOC deployment.
-- [grove](https://github.com/ai-dynamo/grove) — Kubernetes-native orchestration for distributed AI inference with gang scheduling, topology-aware placement, and autoscaling.
+- [grove](https://github.com/ai-dynamo/grove) — Kubernetes-native orchestration for distributed AI inference with gang scheduling, startup ordering, topology-aware placement, and autoscaling.
 - [HolmesGPT](https://holmesgpt.dev/latest) — Open-source AI SRE investigation agent integrating Kubernetes, cloud and observability data sources; operator mode needs explicit permissions.
 - [Honeycomb](https://www.honeycomb.io) — Hosted observability platform for high-cardinality telemetry, distributed tracing, and production debugging.
 - [HyperDX](https://www.hyperdx.io) — ClickHouse-backed observability interface for correlating logs, traces, metrics and session replay within ClickStack deployments.

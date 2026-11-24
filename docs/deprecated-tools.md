@@ -3,7 +3,7 @@
 
 Records remain here for migration and historical context; they are not active recommendations.
 
-- **AutoGen** (archived) — Archived Microsoft multi-agent framework retained for legacy use and migration.
+- **AutoGen** (archived) (review required) — Archived Microsoft multi-agent framework retained for legacy use and migration.
 - **AWS Cloud9** (deprecated) — Cloud-based IDE for writing, running, and debugging code.
 - **Bamboo** (deprecated) — Atlassian's commercially licensed, self-managed CI/CD server for build and deployment automation.
 - **CAI (RobotSec)** (archived) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
@@ -17,5 +17,5 @@ Records remain here for migration and historical context; they are not active re
 - **Kubeapps** (archived) — Kubernetes application dashboard for deploying and managing Helm charts and other packages.
 - **Kubernetes Dashboard** (archived) — Retired general-purpose web UI for Kubernetes clusters.
 - **MinIO Community Server** (archived) — Archived and unmaintained AGPL-licensed S3-compatible object-storage server retained for historical and migration reference.
-- **OpenLens** (historical) — Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher.
+- **OpenLens** (historical) (review required) — Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher and distributed-binary licensing still unverified.
 - **Talos Node Updater (tnu)** (archived) — Archived Go utility that coordinated Talos Linux node upgrades through the Talos API and Rancher System Upgrade Controller.

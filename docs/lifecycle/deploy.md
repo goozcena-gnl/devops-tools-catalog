@@ -44,7 +44,7 @@
 - [atmos](https://atmos.tools) — Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
 - [Atmosly](https://atmosly.com) — Platform engineering automation for self-service environments and app delivery.
 - [AttuneOps](https://attuneops.io/) — Infrastructure orchestration application for authoring and running resumable multi-host automation procedures.
-- [AutoGen](https://microsoft.github.io/autogen/stable/index.html) — Archived Microsoft multi-agent framework retained for legacy use and migration.
+- [AutoGen](https://microsoft.github.io/autogen/stable/index.html) (review required) — Archived Microsoft multi-agent framework retained for legacy use and migration.
 - [Awesome Kubernetes Architecture Diagrams](https://github.com/philippemerle/Awesome-Kubernetes-Architecture-Diagrams) — Collection of Kubernetes architecture diagrams.
 - [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) — Collection of 130+ specialized Codex subagents for a wide range of development use cases.
 - [AWS ACK RDS Controller](https://github.com/aws-controllers-k8s/rds-controller) — AWS Controllers for Kubernetes (ACK) operator for managing RDS resources.
@@ -441,7 +441,7 @@
 - [OpenFeature](https://openfeature.dev) — Open standard for feature flag management.
 - [OpenKruise](https://openkruise.io) — OpenKruise adds advanced Kubernetes workload controllers and lifecycle operations such as in-place updates and sidecar management.
 - [OpenKruise Agents](https://github.com/openkruise/agents) — Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
-- [OpenLens](https://github.com/MuhammedKalkan/OpenLens) — Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher.
+- [OpenLens](https://github.com/MuhammedKalkan/OpenLens) (review required) — Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher and distributed-binary licensing still unverified.
 - [OpenRun](https://openrun.dev) — Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
 - [OpenStack](https://www.openstack.org) — Open-source cloud infrastructure platform for operating compute, networking, storage, identity, and related services.
 - [OpenStack Ironic](https://ironicbaremetal.org/) — Bare-metal provisioning service supporting hardware inspection, deployment, and power management.

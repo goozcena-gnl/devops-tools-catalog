@@ -127,6 +127,7 @@ Self-hostable AI and LLM observability platform for OpenTelemetry/OpenInference 
 **Roles:** MLOps and AI Infrastructure Engineer, Platform Engineer<br>
 **Model:** Oss<br>
 **Status:** Archived<br>
+**Review:** Required<br>
 **Repository:** Archived
 
 Archived Microsoft multi-agent framework retained for legacy use and migration.
@@ -631,11 +632,11 @@ Local code-knowledge graph tool for mapping code, configuration, schemas, and do
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Kubernetes-native orchestration for distributed AI inference with gang scheduling, topology-aware placement, and autoscaling.
+Kubernetes-native orchestration for distributed AI inference with gang scheduling, startup ordering, topology-aware placement, and autoscaling.
 
 **Use when**
 
-- You orchestrate distributed or multi-node AI inference with coordinated placement, gang scheduling, and scaling.
+- You orchestrate distributed or multi-node AI inference with coordinated placement, gang scheduling, explicit startup ordering, and scaling.
 
 **Consider alternatives when**
 

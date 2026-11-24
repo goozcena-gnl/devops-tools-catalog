@@ -2456,10 +2456,11 @@ Development platform for building and testing applications directly in Kubernete
 
 **Categories:** Kubernetes distributions and operations<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Oss<br>
-**Status:** Historical
+**Model:** Oss (recorded; not a licence attestation)<br>
+**Status:** Historical<br>
+**Review:** Required
 
-Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher.
+Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher and distributed-binary licensing still unverified.
 
 **Use when**
 

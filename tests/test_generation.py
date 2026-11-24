@@ -9,7 +9,15 @@ import pytest
 from jsonschema import Draft202012Validator
 
 from scripts.catalog import ROOT, load_taxonomy, load_tools
-from scripts.generate_docs import expected_outputs, generate, label_map, render_tool
+from scripts.generate_docs import (
+    expected_outputs,
+    generate,
+    label_map,
+    render_deprecated,
+    render_lifecycle,
+    render_role,
+    render_tool,
+)
 from scripts.validate_catalog import (
     SECRET_PATTERNS,
     main,
@@ -619,3 +627,38 @@ def test_validator_argument_errors_redact_unterminated_quotes(
     assert "password=[REDACTED]" in captured.err
     assert "unrecognized arguments" in captured.err
     assert captured.out == ""
+
+
+def test_independent_review_visibility_issue204() -> None:
+    taxonomy = load_taxonomy()
+    categories = label_map(taxonomy["categories"])
+    roles = label_map(taxonomy["roles"])
+    records = {tool["id"]: tool for tool in load_tools()}
+    openlens = records["openlens"]
+    autogen = records["autogen"]
+    grove = records["grove"]
+    role = {"id": "platform-engineer", "name": "Platform Engineer"}
+
+    category = render_tool(openlens, categories, roles)
+    assert "**Status:** Historical" in category
+    assert "**Review:** Required" in category
+    assert "Oss (recorded; not a licence attestation)" in category
+    assert "distributed-binary licensing still unverified" in category
+    table = render_role(role, [openlens, autogen], categories)
+    assert "oss (recorded; not a licence attestation)" in table
+    assert "historical (review required)" in table
+    assert "distributed-binary licensing still unverified" in table
+    assert "| oss | archived (review required) |" in table
+    assert "(review required)" in render_lifecycle("deploy", [openlens])
+    assert "(historical) (review required)" in render_deprecated([openlens])
+    assert "**Review:** Required" in render_tool(autogen, categories, roles)
+    assert "not a licence attestation" not in render_tool(autogen, categories, roles)
+    reviewed = {**openlens, "needs_review": False}
+    assert "**Review:** Required" not in render_tool(reviewed, categories, roles)
+    assert "review required" not in render_role(role, [reviewed], categories)
+    assert "**Status:** Needs Review" in render_tool(grove, categories, roles)
+    assert "**Review:** Required" not in render_tool(grove, categories, roles)
+    assert openlens["license_model"] == "oss"
+    assert "license_spdx" not in openlens
+    assert openlens["status"] == "historical"
+    assert openlens["needs_review"] is True

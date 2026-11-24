@@ -20,7 +20,7 @@
 - [Artillery](https://www.artillery.io) — Load testing platform and toolkit for HTTP, APIs, and Playwright-based scenarios.
 - [Atlantis](https://www.runatlantis.io) — Self-hosted pull-request automation for Terraform and OpenTofu plans and applies.
 - [atmos](https://atmos.tools) — Runtime and framework for orchestrating Terraform, OpenTofu, and Helmfile configurations at scale.
-- [AutoGen](https://microsoft.github.io/autogen/stable/index.html) — Archived Microsoft multi-agent framework retained for legacy use and migration.
+- [AutoGen](https://microsoft.github.io/autogen/stable/index.html) (review required) — Archived Microsoft multi-agent framework retained for legacy use and migration.
 - [awesome-codex-subagents](https://github.com/VoltAgent/awesome-codex-subagents) — Collection of 130+ specialized Codex subagents for a wide range of development use cases.
 - [AWS Billing and Cost Management MCP Server](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-announces-billing-and-cost-management-mcp-server) — Apache-2.0 AWS Labs MCP server wrapping Billing and Cost Management APIs using caller AWS credentials; API quotas and charges still apply.
 - [AWS CDK](https://aws.amazon.com/cdk) — Infrastructure as code framework that defines cloud resources in familiar programming languages.

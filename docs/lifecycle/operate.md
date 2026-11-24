@@ -261,7 +261,7 @@
 - [Grafana Tempo](https://grafana.com/oss/tempo) — Open-source distributed tracing backend with TraceQL search and configurable OTLP, Jaeger and Zipkin receivers; Grafana Cloud Traces is a separate managed offering.
 - [Gremlin](https://www.gremlin.com) — Reliability management and resilience testing platform with controlled fault injection and disaster-recovery validation.
 - [groundcover](https://www.groundcover.com/) — Commercial observability platform offering infrastructure and application monitoring with BYOC deployment.
-- [grove](https://github.com/ai-dynamo/grove) — Kubernetes-native orchestration for distributed AI inference with gang scheduling, topology-aware placement, and autoscaling.
+- [grove](https://github.com/ai-dynamo/grove) — Kubernetes-native orchestration for distributed AI inference with gang scheduling, startup ordering, topology-aware placement, and autoscaling.
 - [gVisor](https://gvisor.dev) — Linux container sandbox providing a userspace application kernel and OCI-compatible runsc runtime for stronger isolation.
 - [HAMi](https://project-hami.io) — Heterogeneous AI computing virtualization middleware.
 - [Hanoi CLI](https://github.com/k-krew/hanoi-cli) — Read-only Kubernetes node-balance advisor that analyzes pod placement and suggests simulated redistribution plans.
@@ -562,7 +562,7 @@
 - [OpenFaaS](https://www.openfaas.com) — Functions-as-a-Service framework for Kubernetes; OSS core with commercial Pro features.
 - [OpenKruise](https://openkruise.io) — OpenKruise adds advanced Kubernetes workload controllers and lifecycle operations such as in-place updates and sidecar management.
 - [OpenKruise Agents](https://github.com/openkruise/agents) — Kubernetes sandboxing and operator patterns for running and managing AI agent workloads.
-- [OpenLens](https://github.com/MuhammedKalkan/OpenLens) — Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher.
+- [OpenLens](https://github.com/MuhammedKalkan/OpenLens) (review required) — Historical third-party binary builds of the former open Lens IDE, with further updates no longer expected by the publisher and distributed-binary licensing still unverified.
 - [OpenObserve](https://openobserve.ai/) — Observability platform for logs, metrics, and traces with an open-source core and commercial enterprise offerings.
 - [OpenRun](https://openrun.dev) — Open-source, self-hosted GitOps platform for deploying web apps and internal tools to Docker, Podman, or Kubernetes.
 - [OpenSearch](https://opensearch.org) — Apache-licensed distributed search and analytics engine used for log indexing and observability, distinct from Dashboards and ingestion components.

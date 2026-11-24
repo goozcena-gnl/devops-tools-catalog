@@ -1151,7 +1151,7 @@
   needs_review: false
 - id: grove
   name: grove
-  summary: Kubernetes-native orchestration for distributed AI inference with gang scheduling, topology-aware placement, and autoscaling.
+  summary: Kubernetes-native orchestration for distributed AI inference with gang scheduling, startup ordering, topology-aware placement, and autoscaling.
   repository_url: https://github.com/ai-dynamo/grove
   categories:
   - mlops-llmops-ai-infrastructure
@@ -1165,7 +1165,7 @@
   - operate
   - monitor
   use_when:
-  - You orchestrate distributed or multi-node AI inference with coordinated placement, gang scheduling, and scaling.
+  - You orchestrate distributed or multi-node AI inference with coordinated placement, gang scheduling, explicit startup ordering, and scaling.
   avoid_when:
   - You need an incident-debugging tool or cannot meet documented Kubernetes, scheduler, CRD, and controller security requirements.
   deployment_models: []
