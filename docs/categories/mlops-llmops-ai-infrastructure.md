@@ -125,7 +125,7 @@ Self-hostable AI and LLM observability platform for OpenTelemetry/OpenInference 
 
 **Categories:** MLOps, LLMOps and AI infrastructure<br>
 **Roles:** MLOps and AI Infrastructure Engineer, Platform Engineer<br>
-**Model:** Oss<br>
+**Model:** Oss (recorded; SPDX scope not established by this label)<br>
 **Status:** Archived<br>
 **Review:** Required<br>
 **Repository:** Archived

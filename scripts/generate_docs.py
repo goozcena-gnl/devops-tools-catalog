@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 from collections import Counter
 from collections.abc import Sequence
 from pathlib import Path
@@ -51,17 +52,30 @@ def model_label(tool: dict[str, object], *, title: bool = False) -> str:
     model = str(tool["license_model"])
     if title:
         model = model.replace("-", " ").title()
-    if independent_review(tool) and not tool.get("license_spdx"):
-        model += " (recorded; not a licence attestation)"
+    if independent_review(tool):
+        if tool.get("license_spdx"):
+            model += " (recorded; SPDX scope not established by this label)"
+        else:
+            model += " (recorded; not a licence attestation)"
     return model
+
+
+TABLE_TEXT_ESCAPES = str.maketrans(
+    {char: f"&#{ord(char)};" for char in "&\\|<>[]`*_~:@"}
+)
+
+
+def markdown_table_text(value: object) -> str:
+    """Render plain text in a GFM table cell."""
+    text = " ".join(str(value).split()).translate(TABLE_TEXT_ESCAPES)
+    # GFM also recognizes bare www links, including mixed-case prefixes.
+    return re.sub(r"(www)\.", r"\1&#46;", text, flags=re.IGNORECASE)
 
 
 def role_status(tool: dict[str, object]) -> str:
     status = str(tool["status"]) + review_suffix(tool)
-    if independent_review(tool) and not tool.get("license_spdx"):
-        # Surface existing record context; missing SPDX alone proves no licence claim.
-        summary = str(tool["summary"]).replace("|", r"\|").replace("\n", " ")
-        status += f" — {summary}"
+    if independent_review(tool):
+        status += f" — {markdown_table_text(tool['summary'])}"
     return status
 
 
