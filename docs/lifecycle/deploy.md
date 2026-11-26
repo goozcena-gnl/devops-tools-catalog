@@ -229,7 +229,7 @@
 - [Hortator](https://hortator.ai) — Kubernetes operator and CLI for allowing AI agents to spawn guarded child-agent workloads.
 - [HPE Morpheus Software](https://www.hpe.com/us/en/products/software/morpheus-software.html) — HPE hybrid-cloud management software, with Enterprise capabilities for self-service provisioning, orchestration and governance across private and public clouds.
 - [Humanitec](https://humanitec.com) — Commercial platform orchestrator for building internal developer platforms across cloud and Kubernetes infrastructure.
-- [HwameiStor](https://hwameistor.io) — Cloud-native local storage system.
+- [HwameiStor](https://hwameistor.io) — Kubernetes CSI local storage system providing local LVM and disk volumes, including replicated HA configurations.
 - [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview) — Microsoft's native hypervisor for creating and running virtual machines on Windows and Windows Server.
 - [IBM Cloud](https://www.ibm.com/products/cloud) — Enterprise cloud services and infrastructure by IBM.
 - [Incus](https://linuxcontainers.org/incus/) — Modern system container and VM manager.
@@ -252,7 +252,7 @@
 - [k3sup](https://github.com/alexellis/k3sup) — Command-line installer for bootstrapping and joining remote K3s nodes over SSH.
 - [K8s Cleaner (Sveltos)](https://gianlucam76.github.io/k8s-cleaner/) — Kubernetes controller that finds stale or unhealthy resources and can notify, transform or delete them.
 - [K8s Diagram Builder](https://www.k8sdiagram.fun/) — Open-source visual editor that imports Kubernetes YAML into resource diagrams and generates YAML from edited topologies.
-- [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) — CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
+- [k8s-csi-s3](https://github.com/yandex-cloud/k8s-csi-s3) — Kubernetes CSI driver that exposes S3-compatible object storage through FUSE-mounted persistent volumes.
 - [k8s-d2](https://github.com/vieitesss/k8s-d2) — CLI that converts observed Kubernetes resource topology into D2 diagrams, with optional SVG rendering.
 - [k8s-mechanic](https://github.com/lenaxia/k8s-mechanic) — In-cluster Kubernetes failure investigator that opens proposed GitOps remediation pull requests for human review.
 - [k8s-sidecar](https://github.com/kiwigrid/k8s-sidecar) — Kubernetes sidecar container that watches ConfigMaps/Secrets and syncs files.
@@ -375,7 +375,7 @@
 - [libvirt](https://libvirt.org) — C library, API, and daemons for managing virtualization through drivers such as QEMU/KVM and Xen.
 - [Lima](https://lima-vm.io) — Runs Linux virtual machines on macOS and Linux hosts for local container and development workflows.
 - [Linkerd](https://linkerd.io) — Lightweight service mesh for Kubernetes.
-- [LINSTOR](https://linbit.com/linstor) — Distributed storage management (DRBD-based) with community and enterprise support.
+- [LINSTOR](https://linbit.com/linstor) — Open-source software-defined block storage management with controller and satellite services, including DRBD integration.
 - [Linux Containers (LXC/LXD)](https://linuxcontainers.org) — System containers and VM manager.
 - [Linux kernel](https://www.kernel.org/) — Operating-system kernel underpinning Linux server, cloud, and container hosts.
 - [LiteLLM](https://www.litellm.ai) — LLM SDK and gateway with an MIT-licensed community core and separately licensed Enterprise components; MIT does not cover the whole product.
@@ -407,7 +407,7 @@
 - [Minikube](https://minikube.sigs.k8s.io/docs) — Local Kubernetes development environment.
 - [Mitogen for Ansible](https://mitogen.networkgenomics.com/ansible_detailed.html) — Python-based acceleration and connection layer for Ansible, using persistent remote interpreters to reduce execution overhead.
 - [MLflow](https://mlflow.org) — Apache-2.0 open-source AI engineering platform for ML experiments, model lifecycle, LLM evaluation and tracing; hosted offerings are separate.
-- [MOCO](https://cybozu-go.github.io/moco) — MySQL Operator for Kubernetes by Cybozu.
+- [MOCO](https://cybozu-go.github.io/moco) — Kubernetes operator for MySQL clusters using GTID-based semi-synchronous replication, with primary failover and backup/PITR support.
 - [Model Express](https://github.com/ai-dynamo/modelexpress) — Rust service that stages model data near inference systems to reduce startup time.
 - [MongoDB](https://www.mongodb.com/) — Document database server whose Community Edition source uses SSPL, with separate commercial Enterprise Advanced and managed Atlas offerings.
 - [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) — Kubernetes CNI meta-plugin that delegates to other CNIs to attach multiple network interfaces to pods.
@@ -474,7 +474,7 @@
 - [Port](https://www.port.io/) — Internal developer portal and service catalog with automations/workflows.
 - [Portainer](https://www.portainer.io) — Self-hosted Docker and Kubernetes management with an open-source Community Edition and a separately licensed Business Edition.
 - [Porter](https://github.com/porter-dev) — Porter cloud platform for deploying applications into user-owned Kubernetes clusters; current commercial and source-licence boundaries require review.
-- [Portworx](https://portworx.com) — Kubernetes data services platform.
+- [Portworx](https://portworx.com) — Commercial Kubernetes storage platform providing persistent storage and data services through Portworx Enterprise.
 - [PostgreSQL](https://www.postgresql.org) — Extensible open-source relational database with strong transactional, indexing, and SQL capabilities.
 - [Praesto](https://github.com/federicolepera/praesto) — Kubernetes-native model cache system using an operator, node agent, and CSI driver to stage model artifacts on cluster nodes.
 - [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) — Predictive scaling for Kubernetes workloads.
@@ -486,7 +486,7 @@
 - [proxmox-optimizer](https://github.com/dtouzeau/proxmox-optimizer) — Proxmox optimization utilities.
 - [Pulumi](https://www.pulumi.com) — IaC using real programming languages.
 - [Puppet](https://www.puppet.com/) — Declarative configuration management with Apache-licensed open-source Puppet and separately licensed Core and Enterprise offerings.
-- [pv-migrate](https://github.com/utkuozdemir/pv-migrate) — CLI tool for migrating data between Kubernetes Persistent Volumes.
+- [pv-migrate](https://github.com/utkuozdemir/pv-migrate) — CLI and kubectl plugin for copying Kubernetes PVC data and backing up or restoring PVC contents through object storage.
 - [Qdrant](https://qdrant.tech/) — Vector database and similarity-search engine available for self-hosted and managed deployments.
 - [Qovery](https://www.qovery.com) — Commercial Kubernetes control-plane platform with a GPL-licensed orchestration engine that operates workloads and infrastructure in customer cloud accounts.
 - [RabbitMQ](https://www.rabbitmq.com) — Message broker supporting queues, pub/sub routing and streams for asynchronous applications.
@@ -505,7 +505,7 @@
 - [reShapr](https://reshapr.io) — No-code MCP server that translates existing REST, GraphQL, and gRPC APIs into MCP endpoints with security controls and flexible deployment (Apache-2.0).
 - [restart-operator](https://github.com/archsyscall/restart-operator) — Kubernetes operator for scheduling recurring restarts of Deployments, StatefulSets, and DaemonSets with cron expressions.
 - [RKE2](https://docs.rke2.io) — SUSE Rancher Kubernetes Engine 2, an Apache-licensed Kubernetes distribution focused on security and compliance, with documented CIS hardening and FIPS component boundaries.
-- [Rook](https://rook.io) — Storage orchestrator for Kubernetes.
+- [Rook](https://rook.io) — Kubernetes operator for deploying, provisioning, monitoring and managing Ceph storage clusters.
 - [RootlessKit](https://github.com/rootless-containers/rootlesskit) — Linux user-namespace and network plumbing to support rootless Docker, containerd and related container stacks.
 - [Rudder](https://www.rudder.io) — Continuous configuration and compliance platform with GPL-licensed Rudder Core and separately licensed enterprise plugins.
 - [runc](https://github.com/opencontainers/runc) — Low-level CLI for creating and running Linux containers according to the OCI Runtime Specification.
@@ -560,7 +560,7 @@
 - [Tofu Controller](https://flux-iac.github.io/tofu-controller) — Tofu Controller is the flux-iac Kubernetes controller integrating Flux with OpenTofu/Terraform reconciliation, plans, applies and drift detection through runner Pods; it is separate from Flux CD core, Flux Operator and either IaC CLI.
 - [Traefik Proxy](https://traefik.io/traefik) — Reverse proxy and ingress controller with dynamic service discovery.
 - [Trivy](https://aquasecurity.github.io/trivy) — Vulnerability scanner for containers and Kubernetes.
-- [TrueNAS](https://www.truenas.com) — Storage platform/OS for NAS and SAN with community and enterprise editions.
+- [TrueNAS](https://www.truenas.com) — ZFS-based NAS and SAN storage platform with Community and licensed Enterprise functionality.
 - [Tuning Linux Swap for Kubernetes](https://kubernetes.io/blog/2025/08/19/tuning-linux-swap-for-kubernetes-a-deep-dive) — Guide to optimizing swap for Kubernetes nodes.
 - [Typhoon](https://typhoon.psdn.io) — Minimal Kubernetes distribution and Terraform provisioning toolkit for cloud and bare-metal clusters.
 - [Uncloud](https://uncloud.run) — Deploy and operate containerized workloads across Docker hosts with service discovery and HTTPS ingress, without a Kubernetes control plane.

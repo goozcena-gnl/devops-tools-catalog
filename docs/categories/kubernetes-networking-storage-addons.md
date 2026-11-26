@@ -230,13 +230,13 @@ Distributed storage system for object, block, and file storage.
 
 **Use when**
 
-- You need battle-tested, unified distributed storage at scale with multi-protocol support.
+- You need unified distributed block, file and object storage and can operate the underlying storage cluster.
 
 **Consider alternatives when**
 
-- Your team lacks the expertise to manage Ceph's operational complexity or cloud-native storage suffices.
+- A simpler managed storage service meets your requirements, or your team cannot operate storage failure domains, capacity and recovery.
 
-[Official site](https://ceph.io/en) · [Source repository](https://github.com/ceph/ceph)
+[Official site](https://ceph.io/en) · [Documentation](https://github.com/ceph/ceph/blob/b060042deb05d33e6cc358970cfb8221240bcf3e/doc/index.rst) · [Source repository](https://github.com/ceph/ceph)
 
 ### cert-manager
 
@@ -1047,17 +1047,17 @@ Platform for managing Kubernetes configuration holistically.
 **Model:** Oss<br>
 **Status:** Needs Review
 
-Cloud-native local storage system.
+Kubernetes CSI local storage system providing local LVM and disk volumes, including replicated HA configurations.
 
 **Use when**
 
-- You need high-performance local persistent storage with HA and volume migration on bare metal.
+- You need local persistent storage and can select suitable non-HA or replicated HA volume configurations.
 
 **Consider alternatives when**
 
-- Cloud-provided block storage (EBS/PD) or distributed storage (Ceph/Longhorn) is available.
+- Workloads require unsupported platforms, storage configurations or host kernel capabilities, or simpler managed storage meets the requirements.
 
-[Official site](https://hwameistor.io) · [Source repository](https://github.com/hwameistor/hwameistor)
+[Official site](https://hwameistor.io) · [Documentation](https://hwameistor.io/docs/install/prereq) · [Source repository](https://github.com/hwameistor/hwameistor)
 
 ### ipman
 
@@ -1104,17 +1104,17 @@ Service mesh with an Istiod control plane and sidecar or ambient data planes for
 **Model:** Oss<br>
 **Status:** Needs Review
 
-CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
+Kubernetes CSI driver that exposes S3-compatible object storage through FUSE-mounted persistent volumes.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- Applications require mounted access to S3-compatible objects and tolerate the selected mounter's documented filesystem semantics.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- Workloads require native block storage, strict POSIX or transactional consistency guarantees, or privileged CSI containers are prohibited.
 
-[Source repository](https://github.com/yandex-cloud/k8s-csi-s3)
+[Documentation](https://github.com/yandex-cloud/k8s-csi-s3/blob/cd2d29f0e655e30812c75fa5fb4c212cc04631b4/README.md) · [Source repository](https://github.com/yandex-cloud/k8s-csi-s3)
 
 ### k8s-sidecar
 
@@ -1658,20 +1658,20 @@ Lightweight service mesh for Kubernetes.
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Open Core<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
-Distributed storage management (DRBD-based) with community and enterprise support.
+Open-source software-defined block storage management with controller and satellite services, including DRBD integration.
 
 **Use when**
 
-- You need synchronous replication with DRBD for low-latency block storage on bare metal.
+- You need managed Linux block storage and optional DRBD replication across storage nodes.
 
 **Consider alternatives when**
 
-- Longhorn or Ceph (via Rook) provides sufficient performance with simpler operations.
+- The environment cannot satisfy LINSTOR and DRBD host, network or quorum requirements, or simpler storage meets your needs.
 
-[Official site](https://linbit.com/linstor) · [Source repository](https://github.com/LINBIT/linstor-server)
+[Official site](https://linbit.com/linstor) · [Documentation](https://linbit.com/drbd-user-guide/linstor-guide-1_0-en/) · [Source repository](https://github.com/LINBIT/linstor-server)
 
 ### LitmusChaos
 
@@ -1830,19 +1830,19 @@ Collects current CPU and memory resource metrics from kubelets and exposes the K
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-MySQL Operator for Kubernetes by Cybozu.
+Kubernetes operator for MySQL clusters using GTID-based semi-synchronous replication, with primary failover and backup/PITR support.
 
 **Use when**
 
-- You need automated MySQL InnoDB Cluster management on Kubernetes with GTID-based replication.
+- You need automated management of MySQL primary and replica instances using GTID-based semi-synchronous replication on Kubernetes.
 
 **Consider alternatives when**
 
-- A managed MySQL service (RDS/Cloud SQL) reduces your operational burden.
+- You specifically require MySQL InnoDB Cluster or Group Replication, or a managed database service better meets your operational needs.
 
-[Official site](https://cybozu-go.github.io/moco) · [Source repository](https://github.com/cybozu-go/moco)
+[Official site](https://cybozu-go.github.io/moco) · [Documentation](https://cybozu-go.github.io/moco/) · [Source repository](https://github.com/cybozu-go/moco)
 
 ### Multus CNI
 
@@ -1874,13 +1874,13 @@ Kubernetes operator from the MySQL team for managing MySQL InnoDB Cluster lifecy
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need operator-managed MySQL InnoDB Cluster deployment, maintenance, upgrades and backups on Kubernetes.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require a GTID-based semi-synchronous replication architecture instead of Group Replication, or prefer a managed database service.
 
-[Source repository](https://github.com/mysql/mysql-operator)
+[Documentation](https://dev.mysql.com/doc/mysql-operator/en/) · [Source repository](https://github.com/mysql/mysql-operator)
 
 ### Napwake (formerly Hybernate)
 
@@ -2097,20 +2097,20 @@ Kubernetes network plugin based on OVN and Open vSwitch; a separate project from
 
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
-**Model:** Unknown<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Kubernetes data services platform.
+Commercial Kubernetes storage platform providing persistent storage and data services through Portworx Enterprise.
 
 **Use when**
 
-- You need enterprise-grade persistent storage with advanced features (encryption, migration, disaster recovery).
+- You need enterprise Kubernetes storage and data services supported by the selected Portworx licence and deployment configuration.
 
 **Consider alternatives when**
 
-- Open-source alternatives (Longhorn/Rook-Ceph) meet your requirements and budget is a concern.
+- Open-source or managed storage meets your requirements, or the required Portworx licences and supported infrastructure are unavailable.
 
-[Official site](https://portworx.com)
+[Official site](https://portworx.com) · [Documentation](https://docs.portworx.com/portworx-enterprise)
 
 ### Praesto
 
@@ -2193,19 +2193,19 @@ Project Sveltos distributes and reconciles cluster add-ons, Helm charts, Kustomi
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-CLI tool for migrating data between Kubernetes Persistent Volumes.
+CLI and kubectl plugin for copying Kubernetes PVC data and backing up or restoring PVC contents through object storage.
 
 **Use when**
 
-- You need to move PV data across storage classes, namespaces, or clusters.
+- You need PVC-to-PVC data migration across supported storage, namespace or cluster boundaries, or file-level backup and restore through object storage.
 
 **Consider alternatives when**
 
-- Your storage backend supports native volume cloning or VolSync handles replication.
+- You require application-consistent backups, managed retention, restore verification or continuous replication without additional controls.
 
-[Source repository](https://github.com/utkuozdemir/pv-migrate)
+[Documentation](https://github.com/utkuozdemir/pv-migrate/blob/7ba089ec1d0dd2b202952ba183d0c4a2198c4323/README.md) · [Source repository](https://github.com/utkuozdemir/pv-migrate)
 
 ### Redis Operator
 
@@ -2270,19 +2270,19 @@ Kubernetes operator for scheduling recurring restarts of Deployments, StatefulSe
 **Categories:** Kubernetes networking, storage and add-ons<br>
 **Roles:** Platform Engineer, Site Reliability Engineer, Kubernetes Engineer<br>
 **Model:** Oss<br>
-**Status:** Needs Review
+**Status:** Active
 
-Storage orchestrator for Kubernetes.
+Kubernetes operator for deploying, provisioning, monitoring and managing Ceph storage clusters.
 
 **Use when**
 
-- You want Kubernetes-native orchestration of Ceph (or NFS) with operator-managed lifecycle.
+- You need operator-managed Ceph block, file or object storage in Kubernetes.
 
 **Consider alternatives when**
 
-- You don't need distributed storage or a managed storage service (EBS/PD) is simpler.
+- Managed storage meets your requirements, or the cluster cannot satisfy Ceph and Rook storage, host and privilege prerequisites.
 
-[Official site](https://rook.io) · [Source repository](https://github.com/rook/rook)
+[Official site](https://rook.io) · [Documentation](https://rook.io/docs/rook/v1.21/Getting-Started/Prerequisites/prerequisites/) · [Source repository](https://github.com/rook/rook)
 
 ### Sealed Secrets
 
@@ -2502,17 +2502,17 @@ Vulnerability scanner for containers and Kubernetes.
 **Model:** Open Core<br>
 **Status:** Needs Review
 
-Storage platform/OS for NAS and SAN with community and enterprise editions.
+ZFS-based NAS and SAN storage platform with Community and licensed Enterprise functionality.
 
 **Use when**
 
-- You need a feature-rich NAS/SAN platform with ZFS for home lab or enterprise file storage.
+- You need ZFS-based file or block storage and can select hardware and features appropriate to the TrueNAS edition.
 
 **Consider alternatives when**
 
-- You need Kubernetes-native distributed block storage (use Longhorn/Rook instead).
+- You require an independently managed Kubernetes-native distributed storage backend rather than an external storage platform.
 
-[Official site](https://www.truenas.com)
+[Official site](https://www.truenas.com) · [Documentation](https://www.truenas.com/docs/scale/25.10/)
 
 ### Valkey Operator
 

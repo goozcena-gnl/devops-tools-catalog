@@ -397,9 +397,11 @@
   - deploy
   - operate
   use_when:
-  - You need battle-tested, unified distributed storage at scale with multi-protocol support.
+  - You need unified distributed block, file and object storage and can operate the underlying storage
+    cluster.
   avoid_when:
-  - Your team lacks the expertise to manage Ceph's operational complexity or cloud-native storage suffices.
+  - A simpler managed storage service meets your requirements, or your team cannot operate storage failure
+    domains, capacity and recovery.
   deployment_models: []
   license_model: oss
   maturity: unknown
@@ -410,7 +412,12 @@
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L171
   - legacy:devopstools_final.md#L675
+  - https://github.com/ceph/ceph/blob/b060042deb05d33e6cc358970cfb8221240bcf3e/README.md
+  - https://github.com/ceph/ceph/blob/b060042deb05d33e6cc358970cfb8221240bcf3e/COPYING
+  - https://github.com/ceph/ceph/blob/b060042deb05d33e6cc358970cfb8221240bcf3e/doc/index.rst
+  - https://github.com/ceph/ceph/blob/e8559c00d218beab20d0f516710299454f9bb631/doc/releases/releases.yml
   needs_review: true
+  documentation_url: https://github.com/ceph/ceph/blob/b060042deb05d33e6cc358970cfb8221240bcf3e/doc/index.rst
 - id: cert-manager
   name: cert-manager
   summary: Kubernetes X.509 certificate-management controller issuing and renewing certificates through
@@ -1869,7 +1876,8 @@
   needs_review: true
 - id: hwameistor
   name: HwameiStor
-  summary: Cloud-native local storage system.
+  summary: Kubernetes CSI local storage system providing local LVM and disk volumes, including replicated
+    HA configurations.
   official_url: https://hwameistor.io
   repository_url: https://github.com/hwameistor/hwameistor
   categories:
@@ -1884,9 +1892,10 @@
   - deploy
   - operate
   use_when:
-  - You need high-performance local persistent storage with HA and volume migration on bare metal.
+  - You need local persistent storage and can select suitable non-HA or replicated HA volume configurations.
   avoid_when:
-  - Cloud-provided block storage (EBS/PD) or distributed storage (Ceph/Longhorn) is available.
+  - Workloads require unsupported platforms, storage configurations or host kernel capabilities, or simpler
+    managed storage meets the requirements.
   deployment_models: []
   license_model: oss
   maturity: unknown
@@ -1897,7 +1906,14 @@
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L102
   - legacy:devopstools_final.md#L576
+  - https://github.com/hwameistor/hwameistor/blob/1d2d50ccf095a8a8a54aecac677cd6441269e4f1/README.md
+  - https://github.com/hwameistor/hwameistor/blob/1d2d50ccf095a8a8a54aecac677cd6441269e4f1/LICENSE
+  - https://github.com/hwameistor/hwameistor/blob/1d2d50ccf095a8a8a54aecac677cd6441269e4f1/docs/docs/modules/ls.md
+  - https://github.com/hwameistor/hwameistor/releases/tag/v1.1.2
+  - https://hwameistor.io/docs/install/prereq
   needs_review: true
+  documentation_url: https://hwameistor.io/docs/install/prereq
+  license_spdx: Apache-2.0
 - id: hybernate
   name: Napwake (formerly Hybernate)
   summary: Kubernetes operator that pauses idle workloads and wakes them on demand to reduce
@@ -1996,7 +2012,8 @@
   repository_archived: false
 - id: k8s-csi-s3
   name: k8s-csi-s3
-  summary: CSI driver for mounting S3-compatible object storage as Kubernetes persistent volumes.
+  summary: Kubernetes CSI driver that exposes S3-compatible object storage through FUSE-mounted persistent
+    volumes.
   repository_url: https://github.com/yandex-cloud/k8s-csi-s3
   categories:
   - kubernetes-networking-storage-addons
@@ -2009,8 +2026,12 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
+  use_when:
+  - Applications require mounted access to S3-compatible objects and tolerate the selected mounter's documented
+    filesystem semantics.
+  avoid_when:
+  - Workloads require native block storage, strict POSIX or transactional consistency guarantees, or privileged
+    CSI containers are prohibited.
   deployment_models: []
   license_model: oss
   maturity: unknown
@@ -2020,7 +2041,12 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L578
+  - https://github.com/yandex-cloud/k8s-csi-s3/blob/cd2d29f0e655e30812c75fa5fb4c212cc04631b4/README.md
+  - https://github.com/yandex-cloud/k8s-csi-s3/blob/cd2d29f0e655e30812c75fa5fb4c212cc04631b4/LICENSE
+  - https://github.com/yandex-cloud/k8s-csi-s3/releases/tag/v0.43.7
   needs_review: true
+  documentation_url: https://github.com/yandex-cloud/k8s-csi-s3/blob/cd2d29f0e655e30812c75fa5fb4c212cc04631b4/README.md
+  license_spdx: Apache-2.0
 - id: k8s-sidecar
   name: k8s-sidecar
   summary: Kubernetes sidecar container that watches ConfigMaps/Secrets and syncs files.
@@ -2895,7 +2921,8 @@
   needs_review: false
 - id: linstor
   name: LINSTOR
-  summary: Distributed storage management (DRBD-based) with community and enterprise support.
+  summary: Open-source software-defined block storage management with controller and satellite services,
+    including DRBD integration.
   official_url: https://linbit.com/linstor
   repository_url: https://github.com/LINBIT/linstor-server
   categories:
@@ -2910,11 +2937,12 @@
   - deploy
   - operate
   use_when:
-  - You need synchronous replication with DRBD for low-latency block storage on bare metal.
+  - You need managed Linux block storage and optional DRBD replication across storage nodes.
   avoid_when:
-  - Longhorn or Ceph (via Rook) provides sufficient performance with simpler operations.
+  - The environment cannot satisfy LINSTOR and DRBD host, network or quorum requirements, or simpler storage
+    meets your needs.
   deployment_models: []
-  license_model: open-core
+  license_model: oss
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -2923,7 +2951,13 @@
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L172
   - legacy:devopstools_final.md#L676
+  - https://github.com/LINBIT/linstor-server/blob/75d5fa72d504ccfe55c421ccccda9505af8371f8/README.md
+  - https://github.com/LINBIT/linstor-server/blob/75d5fa72d504ccfe55c421ccccda9505af8371f8/LICENSE
+  - https://github.com/LINBIT/linstor-server/blob/75d5fa72d504ccfe55c421ccccda9505af8371f8/debian/copyright
+  - https://github.com/LINBIT/linstor-server/releases/tag/v1.35.3
+  - https://linbit.com/drbd-user-guide/linstor-guide-1_0-en/
   needs_review: true
+  documentation_url: https://linbit.com/drbd-user-guide/linstor-guide-1_0-en/
 - id: litmuschaos
   name: LitmusChaos
   summary: Chaos engineering for Kubernetes. ✅ **Use when** you want a CNCF project with a hub of pre-built
@@ -3243,7 +3277,8 @@
   official_url: https://github.com/kubernetes-sigs/metrics-server
 - id: moco
   name: MOCO
-  summary: MySQL Operator for Kubernetes by Cybozu.
+  summary: Kubernetes operator for MySQL clusters using GTID-based semi-synchronous replication, with
+    primary failover and backup/PITR support.
   official_url: https://cybozu-go.github.io/moco
   repository_url: https://github.com/cybozu-go/moco
   categories:
@@ -3258,20 +3293,28 @@
   - deploy
   - operate
   use_when:
-  - You need automated MySQL InnoDB Cluster management on Kubernetes with GTID-based replication.
+  - You need automated management of MySQL primary and replica instances using GTID-based semi-synchronous
+    replication on Kubernetes.
   avoid_when:
-  - A managed MySQL service (RDS/Cloud SQL) reduces your operational burden.
+  - You specifically require MySQL InnoDB Cluster or Group Replication, or a managed database service
+    better meets your operational needs.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-26'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L125
   - legacy:devopstools_final.md#L609
-  needs_review: true
+  - https://github.com/cybozu-go/moco/blob/acb2716d1ef13a8953dd18d55cf230c0edf90f04/README.md
+  - https://github.com/cybozu-go/moco/blob/acb2716d1ef13a8953dd18d55cf230c0edf90f04/LICENSE
+  - https://github.com/cybozu-go/moco/releases/tag/v0.38.0
+  - https://cybozu-go.github.io/moco/
+  needs_review: false
+  documentation_url: https://cybozu-go.github.io/moco/
+  license_spdx: Apache-2.0
 - id: multus-cni
   name: Multus CNI
   summary: "Kubernetes CNI meta-plugin that delegates to other CNIs to attach multiple network interfaces to pods."
@@ -3322,8 +3365,11 @@
   lifecycle_stages:
   - deploy
   - operate
-  use_when: []
-  avoid_when: []
+  use_when:
+  - You need operator-managed MySQL InnoDB Cluster deployment, maintenance, upgrades and backups on Kubernetes.
+  avoid_when:
+  - You require a GTID-based semi-synchronous replication architecture instead of Group Replication, or
+    prefer a managed database service.
   deployment_models: []
   license_model: oss
   maturity: unknown
@@ -3333,7 +3379,12 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L610
+  - https://github.com/mysql/mysql-operator/blob/e21334e9179ccea6c8a12205dd5a708a46fbad26/README.md
+  - https://github.com/mysql/mysql-operator/blob/e21334e9179ccea6c8a12205dd5a708a46fbad26/LICENSE
+  - https://dev.mysql.com/doc/mysql-operator/en/
+  - https://dev.mysql.com/downloads/operator/
   needs_review: true
+  documentation_url: https://dev.mysql.com/doc/mysql-operator/en/
 - id: nelm
   name: Nelm
   summary: Helm-compatible Kubernetes deployment tool and Helm alternative with release planning and resource lifecycle management; not proven a drop-in replacement for every Helm plugin.
@@ -3731,7 +3782,8 @@
   needs_review: false
 - id: portworx
   name: Portworx
-  summary: Kubernetes data services platform.
+  summary: Commercial Kubernetes storage platform providing persistent storage and data services through
+    Portworx Enterprise.
   official_url: https://portworx.com
   categories:
   - kubernetes-networking-storage-addons
@@ -3745,12 +3797,13 @@
   - deploy
   - operate
   use_when:
-  - You need enterprise-grade persistent storage with advanced features (encryption, migration, disaster
-    recovery).
+  - You need enterprise Kubernetes storage and data services supported by the selected Portworx licence
+    and deployment configuration.
   avoid_when:
-  - Open-source alternatives (Longhorn/Rook-Ceph) meet your requirements and budget is a concern.
+  - Open-source or managed storage meets your requirements, or the required Portworx licences and supported
+    infrastructure are unavailable.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -3759,7 +3812,12 @@
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L174
   - legacy:devopstools_final.md#L678
+  - https://docs.portworx.com/portworx-enterprise/platform/license
+  - https://docs.portworx.com/portworx-enterprise/platform/license/features-supported
+  - https://docs.portworx.com/portworx-enterprise/support/support-policy
+  - https://docs.portworx.com/portworx-enterprise/release-notes
   needs_review: true
+  documentation_url: https://docs.portworx.com/portworx-enterprise
 - id: predictive-horizontal-pod-autoscaler
   name: Predictive Horizontal Pod Autoscaler
   summary: Predictive scaling for Kubernetes workloads.
@@ -3867,7 +3925,8 @@
   needs_review: false
 - id: pv-migrate
   name: pv-migrate
-  summary: CLI tool for migrating data between Kubernetes Persistent Volumes.
+  summary: CLI and kubectl plugin for copying Kubernetes PVC data and backing up or restoring PVC contents
+    through object storage.
   repository_url: https://github.com/utkuozdemir/pv-migrate
   categories:
   - kubernetes-networking-storage-addons
@@ -3881,20 +3940,28 @@
   - deploy
   - operate
   use_when:
-  - You need to move PV data across storage classes, namespaces, or clusters.
+  - You need PVC-to-PVC data migration across supported storage, namespace or cluster boundaries, or file-level
+    backup and restore through object storage.
   avoid_when:
-  - Your storage backend supports native volume cloning or VolSync handles replication.
+  - You require application-consistent backups, managed retention, restore verification or continuous
+    replication without additional controls.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: growing
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-26'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L130
   - legacy:devopstools_final.md#L623
-  needs_review: true
+  - https://github.com/utkuozdemir/pv-migrate/blob/7ba089ec1d0dd2b202952ba183d0c4a2198c4323/README.md
+  - https://github.com/utkuozdemir/pv-migrate/blob/7ba089ec1d0dd2b202952ba183d0c4a2198c4323/LICENSE
+  - https://github.com/utkuozdemir/pv-migrate/blob/7ba089ec1d0dd2b202952ba183d0c4a2198c4323/docs/backup-restore.md
+  - https://github.com/utkuozdemir/pv-migrate/releases/tag/v3.8.0
+  needs_review: false
+  documentation_url: https://github.com/utkuozdemir/pv-migrate/blob/7ba089ec1d0dd2b202952ba183d0c4a2198c4323/README.md
+  license_spdx: Apache-2.0
 - id: redis-operator
   name: Redis Operator
   summary: Kubernetes operator for provisioning and managing Redis clusters.
@@ -3995,7 +4062,7 @@
   needs_review: true
 - id: rook
   name: Rook
-  summary: Storage orchestrator for Kubernetes.
+  summary: Kubernetes operator for deploying, provisioning, monitoring and managing Ceph storage clusters.
   official_url: https://rook.io
   repository_url: https://github.com/rook/rook
   categories:
@@ -4010,20 +4077,27 @@
   - deploy
   - operate
   use_when:
-  - You want Kubernetes-native orchestration of Ceph (or NFS) with operator-managed lifecycle.
+  - You need operator-managed Ceph block, file or object storage in Kubernetes.
   avoid_when:
-  - You don't need distributed storage or a managed storage service (EBS/PD) is simpler.
+  - Managed storage meets your requirements, or the cluster cannot satisfy Ceph and Rook storage, host
+    and privilege prerequisites.
   deployment_models: []
   license_model: oss
-  maturity: unknown
-  status: needs-review
+  maturity: established
+  status: active
   alternatives: []
   tags: []
-  verified_on: '2026-08-03'
+  verified_on: '2026-11-26'
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L175
   - legacy:devopstools_final.md#L679
-  needs_review: true
+  - https://github.com/rook/rook/blob/0338330b484066be277e7d2ac34edec99435dd6d/README.md
+  - https://github.com/rook/rook/blob/0338330b484066be277e7d2ac34edec99435dd6d/LICENSE
+  - https://github.com/rook/rook/releases/tag/v1.21.3
+  - https://rook.io/docs/rook/v1.21/Getting-Started/Prerequisites/prerequisites/
+  needs_review: false
+  documentation_url: https://rook.io/docs/rook/v1.21/Getting-Started/Prerequisites/prerequisites/
+  license_spdx: Apache-2.0
 - id: sealed-secrets
   name: Sealed Secrets
   summary: Encrypt Kubernetes secrets for GitOps workflows.
@@ -4387,7 +4461,7 @@
   needs_review: false
 - id: truenas
   name: TrueNAS
-  summary: Storage platform/OS for NAS and SAN with community and enterprise editions.
+  summary: ZFS-based NAS and SAN storage platform with Community and licensed Enterprise functionality.
   official_url: https://www.truenas.com
   categories:
   - kubernetes-networking-storage-addons
@@ -4401,9 +4475,11 @@
   - deploy
   - operate
   use_when:
-  - You need a feature-rich NAS/SAN platform with ZFS for home lab or enterprise file storage.
+  - You need ZFS-based file or block storage and can select hardware and features appropriate to the TrueNAS
+    edition.
   avoid_when:
-  - You need Kubernetes-native distributed block storage (use Longhorn/Rook instead).
+  - You require an independently managed Kubernetes-native distributed storage backend rather than an
+    external storage platform.
   deployment_models: []
   license_model: open-core
   maturity: unknown
@@ -4414,7 +4490,13 @@
   sources:
   - legacy:4_Kubernetes-Containers/README.md#L176
   - legacy:devopstools_final.md#L680
+  - https://github.com/truenas/middleware/blob/29ed02b8082f38494b0d2896bada8151f0d59716/README.md
+  - https://github.com/truenas/middleware/blob/29ed02b8082f38494b0d2896bada8151f0d59716/LICENSE
+  - https://github.com/truenas/middleware/blob/29ed02b8082f38494b0d2896bada8151f0d59716/LICENSE.IX
+  - https://www.truenas.com/docs/scale/26/gettingstarted/useragreements/softwaredevelopmentlifecycle/
+  - https://www.truenas.com/docs/scale/25.10/
   needs_review: true
+  documentation_url: https://www.truenas.com/docs/scale/25.10/
 - id: valkey-operator
   name: Valkey Operator
   summary: Kubernetes operator for deploying and managing Valkey clusters, including scaling and failover.

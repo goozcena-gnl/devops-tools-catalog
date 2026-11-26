@@ -227,7 +227,7 @@
 | [Lens](https://lenshq.io) | Kubernetes distributions and operations | commercial | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
-| [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | open-core | needs-review |
+| [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
 | [Loft Vind](https://github.com/loft-sh/vind) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Longhorn](https://longhorn.io) | Kubernetes networking, storage and add-ons | oss | active |
@@ -240,7 +240,7 @@
 | [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) | Kubernetes networking, storage and add-ons | oss | active |
 | [MicroK8s](https://microk8s.io) | Kubernetes distributions and operations | oss | active |
 | [Minikube](https://minikube.sigs.k8s.io/docs) | Kubernetes distributions and operations | oss | active |
-| [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | active |
 | [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | active |
 | [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Napwake (formerly Hybernate)](https://github.com/napwake/napwake) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -263,12 +263,12 @@
 | [Pluto](https://github.com/FairwindsOps/pluto) | Kubernetes distributions and operations | oss | active |
 | [Polykube](https://github.com/Kismet-Engineering/polykube) | Kubernetes distributions and operations | oss | active |
 | [Popeye](https://popeyecli.io) | Kubernetes distributions and operations | oss | active |
-| [Portworx](https://portworx.com) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [Portworx](https://portworx.com) | Kubernetes networking, storage and add-ons | commercial | needs-review |
 | [Praesto](https://github.com/federicolepera/praesto) | MLOps, LLMOps and AI infrastructure, Kubernetes networking, storage and add-ons, Emerging and experimental tools | oss | active |
 | [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Project Contour](https://projectcontour.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | active |
-| [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | active |
 | [Radar](https://radarhq.io/) | Kubernetes distributions and operations | oss | active |
 | [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | active |
 | [Rancher Manager](https://rancher.com) | Kubernetes distributions and operations | oss | active |
@@ -277,7 +277,7 @@
 | [Reloader](https://docs.stakater.com/reloader/latest) | Kubernetes networking, storage and add-ons | open-core | active |
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | active |
-| [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Rūsternetes](https://calfonso.github.io/rusternetes) | Kubernetes distributions and operations | oss | needs-review |
 | [Sablier](https://sablierapp.dev/) | Kubernetes distributions and operations | oss | active |
 | [sbt](https://www.scala-sbt.org) | Containers and image tooling | oss | needs-review |
