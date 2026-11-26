@@ -270,7 +270,7 @@
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Linnix](https://github.com/linnix-os/linnix) | Monitoring, metrics, logs and tracing | oss | needs-review |
-| [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | open-core | needs-review |
+| [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
 | [Loft Vind](https://github.com/loft-sh/vind) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Logstash](https://www.elastic.co/logstash) | Monitoring, metrics, logs and tracing | source-available | needs-review |
@@ -290,7 +290,7 @@
 | [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) | Kubernetes networking, storage and add-ons | oss | active |
 | [MicroK8s](https://microk8s.io) | Kubernetes distributions and operations | oss | active |
 | [Minikube](https://minikube.sigs.k8s.io/docs) | Kubernetes distributions and operations | oss | active |
-| [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | active |
 | [Moogsoft](https://www.moogsoft.com) | SRE, incident response and on-call | unknown | needs-review |
 | [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | active |
 | [Munin](https://munin-monitoring.org) | Monitoring, metrics, logs and tracing | oss | needs-review |
@@ -334,7 +334,7 @@
 | [Plane](https://plane.so) | Workflow automation and ChatOps | oss | needs-review |
 | [Pluto](https://github.com/FairwindsOps/pluto) | Kubernetes distributions and operations | oss | active |
 | [Popeye](https://popeyecli.io) | Kubernetes distributions and operations | oss | active |
-| [Portworx](https://portworx.com) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [Portworx](https://portworx.com) | Kubernetes networking, storage and add-ons | commercial | needs-review |
 | [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [Project Contour](https://projectcontour.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Project Sveltos](https://projectsveltos.io/latest) | Kubernetes networking, storage and add-ons | oss | active |
@@ -342,7 +342,7 @@
 | [Prometheus Pushgateway](https://prometheus.io/docs/practices/pushing/) | Monitoring, metrics, logs and tracing | oss | active |
 | [Pulse](https://pulserelay.pro) | SRE, incident response and on-call | oss | active |
 | [Pumba](https://github.com/alexei-led/pumba) | Chaos and performance engineering | oss | active |
-| [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | active |
 | [Quickwit](https://quickwit.io) | Monitoring, metrics, logs and tracing | oss | active |
 | [Rancher k3k](https://rancher.github.io/k3k-product-docs/k3k/latest/en/introduction.html) | Kubernetes distributions and operations | oss | active |
 | [Rancher Manager](https://rancher.com) | Kubernetes distributions and operations | oss | active |
@@ -354,7 +354,7 @@
 | [restic](https://restic.net/) | Backup, disaster recovery and resilience | oss | active |
 | [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | active |
 | [Robusta](https://home.robusta.dev) | Monitoring, metrics, logs and tracing | open-core | active |
-| [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [rsyslog](https://www.rsyslog.com) | Monitoring, metrics, logs and tracing | oss | needs-review |
 | [Rundeck](https://www.rundeck.com) | Workflow automation and ChatOps | oss | active |
 | [RustNet](https://github.com/domcyrus/rustnet) | SRE, incident response and on-call | oss | needs-review |

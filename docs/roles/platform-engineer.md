@@ -404,7 +404,7 @@
 | [Lens](https://lenshq.io) | Kubernetes distributions and operations | commercial | needs-review |
 | [lfk](https://github.com/janosmiko/lfk) | Kubernetes distributions and operations | oss | needs-review |
 | [Linkerd](https://linkerd.io) | Kubernetes networking, storage and add-ons | oss | active |
-| [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | open-core | needs-review |
+| [LINSTOR](https://linbit.com/linstor) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [LiteLLM](https://www.litellm.ai) | MLOps, LLMOps and AI infrastructure | open-core | active |
 | [LitmusChaos](https://litmuschaos.io) | Kubernetes networking, storage and add-ons, Chaos and performance engineering | oss | active |
 | [llm-d](https://github.com/llm-d) | MLOps, LLMOps and AI infrastructure | oss | needs-review |
@@ -430,7 +430,7 @@
 | [Minikube](https://minikube.sigs.k8s.io/docs) | Kubernetes distributions and operations | oss | active |
 | [MLflow](https://mlflow.org) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [MLOps for DevOps Engineers](https://github.com/techiescamp/mlops-for-devops) | Documentation, learning and career resources | documentation | needs-review |
-| [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [MOCO](https://cybozu-go.github.io/moco) | Kubernetes networking, storage and add-ons | oss | active |
 | [Model Express](https://github.com/ai-dynamo/modelexpress) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [Multus CNI](https://github.com/k8snetworkplumbingwg/multus-cni) | Kubernetes networking, storage and add-ons | oss | active |
 | [MySQL Operator for Kubernetes](https://github.com/mysql/mysql-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
@@ -490,7 +490,7 @@
 | [Port](https://www.port.io/) | Platform engineering and internal developer platforms | commercial | active |
 | [Portabase](https://portabase.io) | Emerging and experimental tools | oss | needs-review |
 | [Porter](https://github.com/porter-dev) | CD, GitOps, release and promotion | unknown | needs-review |
-| [Portworx](https://portworx.com) | Kubernetes networking, storage and add-ons | unknown | needs-review |
+| [Portworx](https://portworx.com) | Kubernetes networking, storage and add-ons | commercial | needs-review |
 | [Predictive Horizontal Pod Autoscaler](https://predictive-horizontal-pod-autoscaler.readthedocs.io/en/latest) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [PrivateBin](https://privatebin.info) | Emerging and experimental tools | oss | needs-review |
 | [Project Contour](https://projectcontour.io) | Kubernetes networking, storage and add-ons | oss | active |
@@ -498,7 +498,7 @@
 | [Promptfoo](https://www.promptfoo.dev) | MLOps, LLMOps and AI infrastructure | oss | active |
 | [ProsperOps](https://www.prosperops.com/) | FinOps and sustainability | commercial | active |
 | [Pulumi](https://www.pulumi.com) | Infrastructure as Code | open-core | active |
-| [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [pv-migrate](https://github.com/utkuozdemir/pv-migrate) | Kubernetes networking, storage and add-ons | oss | active |
 | [Qovery](https://www.qovery.com) | CD, GitOps, release and promotion | open-core | active |
 | [Radar](https://radarhq.io/) | Kubernetes distributions and operations | oss | active |
 | [Railway](https://railway.com/) | Platform engineering and internal developer platforms, CD, GitOps, release and promotion | commercial | active |
@@ -516,7 +516,7 @@
 | [restart-operator](https://github.com/archsyscall/restart-operator) | Kubernetes networking, storage and add-ons | oss | needs-review |
 | [RKE2](https://docs.rke2.io) | Kubernetes distributions and operations | oss | active |
 | [Roadmap.sh](https://roadmap.sh) | Documentation, learning and career resources | documentation | needs-review |
-| [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | needs-review |
+| [Rook](https://rook.io) | Kubernetes networking, storage and add-ons | oss | active |
 | [Root Me](https://www.root-me.org/) | Documentation, learning and career resources | documentation | active |
 | [Rude Tools](https://rudetools.dev) | Emerging and experimental tools | oss | needs-review |
 | [Rūsternetes](https://calfonso.github.io/rusternetes) | Kubernetes distributions and operations | oss | needs-review |
