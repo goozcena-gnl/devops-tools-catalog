@@ -7,7 +7,7 @@
 |---|---|---|---|
 | [1Password Connect](https://www.1password.dev/connect) | IAM, secrets and certificate management | commercial | active |
 | [AD Miner](https://github.com/AD-Security/AD_Miner) | Application and cloud security, IAM, secrets and certificate management | oss | active |
-| [Aikido](https://www.aikido.dev) | Application and cloud security | open-core | needs-review |
+| [Aikido](https://www.aikido.dev) | Application and cloud security | commercial | needs-review |
 | [Aircrack-ng](https://www.aircrack-ng.org/) | Application and cloud security | oss | active |
 | [ALTCHA](https://altcha.org/) | Application and cloud security | open-core | active |
 | [Anubis](https://anubis.techaro.lol/) | Application and cloud security | oss | active |
@@ -30,7 +30,7 @@
 | [Burp Suite](https://portswigger.net/burp) | Application and cloud security | commercial | active |
 | [Burp Suite Community Edition](https://portswigger.net/burp/downloads) | Application and cloud security | commercial | active |
 | [CAI (RobotSec)](https://aliasrobotics.github.io/cai) | Application and cloud security | source-available | archived |
-| [Calico Cloud](https://www.calicocloud.io/home) | Application and cloud security | open-core | needs-review |
+| [Calico Cloud](https://www.calicocloud.io/home) | Application and cloud security | commercial | needs-review |
 | [Capsule](https://projectcapsule.dev/) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [cargo-deny](https://github.com/EmbarkStudios/cargo-deny) | Software supply-chain security | oss | active |
 | [cargo-vet](https://mozilla.github.io/cargo-vet/) | Software supply-chain security | oss | active |
@@ -149,7 +149,7 @@
 | [ManageEngine Network Configuration Manager](https://www.manageengine.com/network-configuration-manager) | Configuration management, Application and cloud security | commercial | active |
 | [masscan](https://github.com/robertdavidgraham/masscan) | Application and cloud security | oss | active |
 | [MCPDefender](https://mcpdefender.com) | Application and cloud security | oss | needs-review |
-| [MEDUSA](https://pantheonsecurity.io) | Application and cloud security | unknown | needs-review |
+| [MEDUSA](https://pantheonsecurity.io) | Application and cloud security | oss | needs-review |
 | [Metasploit Framework](https://www.metasploit.com/) | Application and cloud security | oss | active |
 | [METATRON](https://github.com/sooryathejas/METATRON) | Application and cloud security | oss | active |
 | [MFASweep](https://github.com/dafthack/MFASweep) | Application and cloud security | oss | needs-review |
@@ -226,7 +226,7 @@
 | [Snipe-IT](https://snipeitapp.com/) | Policy, governance and compliance | open-core | active |
 | [Snort](https://www.snort.org) | Application and cloud security | oss | needs-review |
 | [Snyk](https://snyk.io) | Application and cloud security | commercial | active |
-| [Socket](https://socket.dev) | Application and cloud security | unknown | needs-review |
+| [Socket](https://socket.dev) | Application and cloud security | commercial | needs-review |
 | [SOOS DAST](https://hub.docker.com/r/soosio/dast) | Application and cloud security | open-core | needs-review |
 | [SOPS](https://getsops.io) | IAM, secrets and certificate management | oss | active |
 | [sqlmap](https://sqlmap.org/) | Application and cloud security | oss | active |
@@ -242,26 +242,26 @@
 | [Tekton Chains](https://tekton.dev/docs/chains/) | Software supply-chain security, CI, build and testing | oss | active |
 | [Teleport](https://goteleport.com) | IAM, secrets and certificate management | open-core | needs-review |
 | [Teller](https://github.com/tellerops/teller) | IAM, secrets and certificate management | oss | needs-review |
-| [Tenable One](https://github.com/tenable) | Application and cloud security | unknown | needs-review |
+| [Tenable One](https://www.tenable.com/products/tenable-one) | Application and cloud security | commercial | needs-review |
 | [testssl.sh](https://testssl.sh) | Application and cloud security | oss | needs-review |
 | [Tetragon](https://tetragon.io) | Application and cloud security | oss | needs-review |
 | [Thales CipherTrust Manager](https://cpl.thalesgroup.com/encryption/ciphertrust-manager) | IAM, secrets and certificate management | unknown | needs-review |
 | [The Update Framework](https://theupdateframework.io/) | Software supply-chain security | oss | active |
-| [ThreatLocker](https://www.threatlocker.com) | Application and cloud security | unknown | needs-review |
+| [ThreatLocker](https://www.threatlocker.com) | Application and cloud security | commercial | needs-review |
 | [Touti-Cracker](https://github.com/Touti-Sudo/Touti-Cracker) | Application and cloud security | oss | needs-review |
 | [Tracee](https://aquasecurity.github.io/tracee/latest) | Application and cloud security | oss | needs-review |
 | [Trivy](https://aquasecurity.github.io/trivy) | Kubernetes networking, storage and add-ons, Application and cloud security | oss | active |
 | [TruffleHog](https://trufflesecurity.com) | Application and cloud security | open-core | needs-review |
-| [Valqore](https://www.valqore.io) | Application and cloud security | unknown | needs-review |
+| [Valqore](https://www.valqore.io) | Application and cloud security | commercial | needs-review |
 | [Vaultwarden](https://www.vaultwarden.net/) | IAM, secrets and certificate management | oss | active |
 | [Velociraptor](https://docs.velociraptor.app) | Application and cloud security | oss | needs-review |
-| [VirusTotal](https://www.virustotal.com/gui/home/upload) | Application and cloud security | unknown | needs-review |
+| [VirusTotal](https://www.virustotal.com/gui/home/upload) | Application and cloud security | commercial | needs-review |
 | [vulnx](https://github.com/projectdiscovery/vulnx) | Application and cloud security | oss | active |
 | [Wazuh](https://wazuh.com) | Application and cloud security | oss | needs-review |
 | [webssh](https://github.com/bifrost0x/webssh) | IAM, secrets and certificate management | oss | needs-review |
 | [Wifit3](https://github.com/derv82/wifit3) | Application and cloud security | oss | active |
 | [WireGuard](https://www.wireguard.com) | Application and cloud security | oss | needs-review |
-| [Wiz](https://www.wiz.io) | Application and cloud security | unknown | needs-review |
+| [Wiz](https://www.wiz.io) | Application and cloud security | commercial | needs-review |
 | [XCA](https://www.hohnstaedt.de/xca) | IAM, secrets and certificate management | oss | needs-review |
 | [Yarn](https://yarnpkg.com/) | Artifact and package management | oss | active |
 

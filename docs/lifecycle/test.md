@@ -8,7 +8,7 @@
 - [AgentsRoom](https://agentsroom.dev/) — Desktop workspace for managing projects and coordinating coding-agent sessions and team workflows.
 - [AIChat](https://github.com/sigoden/aichat) — Terminal model client with multiple provider integrations and optional tool and retrieval workflows.
 - [Aider](https://aider.chat) — Apache-2.0 terminal AI pair programmer that edits Git-tracked code using separately configured model providers; latest identified stable release dates from August 2025.
-- [Aikido](https://www.aikido.dev) — Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud posture scanning.
+- [Aikido](https://www.aikido.dev) — Commercial application security platform combining multiple security scanning capabilities with hosted integrations and optional local scanning.
 - [Aircrack-ng](https://www.aircrack-ng.org/) — Wireless network security-auditing suite for capture analysis and controlled Wi-Fi validation.
 - [ALTCHA](https://altcha.org/) — Bot-protection family with a self-hosted MIT-licensed proof-of-work core and commercial Sentinel and Cloud capabilities.
 - [Angular](https://angular.dev) — Web application framework.
@@ -48,7 +48,7 @@
 - [Burp Suite Community Edition](https://portswigger.net/burp/downloads) — Proprietary no-cost desktop toolkit for manual web application security testing.
 - [Cadence CI](https://cadence.ci) — Commercial integration platform using Mélodium pipelines with managed orchestration and bring-your-own compute.
 - [CAI (RobotSec)](https://aliasrobotics.github.io/cai) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
-- [Calico Cloud](https://www.calicocloud.io/home) — Managed SaaS platform built on Calico Open Source for networking/security/observability.
+- [Calico Cloud](https://www.calicocloud.io/home) — Commercial managed SaaS platform for Kubernetes networking, security and observability, distinct from Calico Open Source and Calico Enterprise.
 - [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 - [cargo-nextest](https://nexte.st/) — Rust test runner with parallel execution, profiles, and CI-oriented reporting.
 - [cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) — Rust library API compatibility checker for detecting semantic-versioning violations.
@@ -207,7 +207,7 @@
 - [masscan](https://github.com/robertdavidgraham/masscan) — High-rate asynchronous TCP port scanner for large authorized network inventories.
 - [Matt Pocock Skills](https://www.aihero.dev/skills) — Reusable coding-agent skills for specifications, testing, review, and maintenance workflows.
 - [MCPDefender](https://mcpdefender.com) — Security proxy for MCP traffic between AI apps and MCP servers (AGPL-3.0).
-- [MEDUSA](https://pantheonsecurity.io) — AI security scanner with extensive detection rules for application and model risks.
+- [MEDUSA](https://pantheonsecurity.io) — Open-source AI-focused security scanner for application code, LLM integrations, MCP servers and agentic systems.
 - [MemoryChecker](https://github.com/lordmulder/MemoryChecker) — Memory testing and diagnostics tool.
 - [MemTest86](https://www.memtest86.com) — Industry-standard memory diagnostics and stress testing tool.
 - [Mergify](https://mergify.com) — GitHub workflow platform combining Merge Queue, CI Insights, Test Insights and Merge Protections.
@@ -310,7 +310,7 @@
 - [slsa-verifier](https://github.com/slsa-framework/slsa-verifier) — Verify SLSA provenance and attestations for artifacts, images, and packages.
 - [Snort](https://www.snort.org) — Open-source network intrusion detection and prevention system (IDS/IPS).
 - [Snyk](https://snyk.io) — Security scanning for code, dependencies, and containers.
-- [Socket](https://socket.dev) — Supply chain security platform focused on malicious and zero-day dependency risks.
+- [Socket](https://socket.dev) — Commercial software supply-chain security platform assessing dependency risks through repository and CLI integrations.
 - [SOOS DAST](https://hub.docker.com/r/soosio/dast) — DAST scanning Docker image for dynamic application security testing, runnable in CI/CD pipelines.
 - [Spec Kit](https://github.com/github/spec-kit) — MIT-licensed GitHub toolkit for specification-driven development workflows and templates that integrate with independently operated coding agents.
 - [sqlmap](https://sqlmap.org/) — Automated SQL injection detection and database security-testing utility.
@@ -332,7 +332,7 @@
 - [Tailscale](https://tailscale.com) — Zero-config VPN for secure networking; OSS client with commercial/SaaS control plane (self-hosting via Headscale available).
 - [TeamCity](https://www.jetbrains.com/teamcity) — JetBrains commercial CI/CD product offered as TeamCity On-Premises and TeamCity Cloud.
 - [Tekton](https://tekton.dev) — Kubernetes-native CI/CD framework and ecosystem built around Tekton Pipelines, with complementary triggers, tooling and supply-chain components.
-- [Tenable One](https://github.com/tenable) — Unified exposure management platform.
+- [Tenable One](https://www.tenable.com/products/tenable-one) — Commercial exposure management platform aggregating vulnerability and exposure information across multiple security products.
 - [Termic](https://termic.dev/) — Desktop development workspace combining agent sessions, terminals, Git worktrees, and review tools.
 - [terminal-browser](https://terminal-browser.com/) — Browser integrated with terminal sessions for interactive web previews and browser automation.
 - [Termix](https://termix.site/) — Self-hosted server-management platform for SSH, remote desktop, file transfer, tunnels, and infrastructure access from web, desktop, and mobile clients.
@@ -344,7 +344,7 @@
 - [testssl.sh](https://testssl.sh) — GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
 - [Tetragon](https://tetragon.io) — EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
 - [TFLint](https://github.com/terraform-linters/tflint) — Pluggable Terraform-language linter for local and CI static analysis, including provider-specific rules. Much of the core is MPL-2.0; release binaries also include BUSL-1.1 Terraform-derived files, and external plugins have separate licences.
-- [ThreatLocker](https://www.threatlocker.com) — Zero trust endpoint protection platform.
+- [ThreatLocker](https://www.threatlocker.com) — Commercial endpoint security platform providing application allowlisting and policy-based application controls through supported endpoint agents.
 - [To Be Continuous](https://to-be-continuous.gitlab.io/doc) — Modular GitLab CI template ecosystem for standardizing and accelerating professional pipelines.
 - [Touti-Cracker](https://github.com/Touti-Sudo/Touti-Cracker) — Security testing tool.
 - [Toxiproxy](https://github.com/Shopify/toxiproxy) — MIT-licensed TCP proxy with an HTTP control API for injecting stream latency, bandwidth limits, timeouts, resets and other faults into connections routed through it.
@@ -356,9 +356,9 @@
 - [tunnelto.dev](https://tunnelto.dev) — Expose your local web server to the internet with a public URL via secure tunnels.
 - [Understand Anything](https://understand-anything.com) — AI-powered codebase graph and explainer for understanding repositories.
 - [validate-dependabot](https://github.com/marocchino/validate-dependabot) — GitHub Action that validates `dependabot.yml` against the official Dependabot schema before merge.
-- [Valqore](https://www.valqore.io) — Automatic safety and security checks for cloud and AI environments.
+- [Valqore](https://www.valqore.io) — Proprietary infrastructure governance engine distributed as self-hosted containers, with a free core engine, separately licensed AI image and commercial enterprise offering.
 - [Velociraptor](https://docs.velociraptor.app) — Digital forensics and incident response platform for endpoint investigation and threat hunting.
-- [VirusTotal](https://www.virustotal.com/gui/home/upload) — Analyze files, domains, IPs, and URLs with multi-engine scanning and community intelligence.
+- [VirusTotal](https://www.virustotal.com/gui/home/upload) — Hosted threat intelligence and analysis service for files, URLs and other security indicators, with public and commercial offerings.
 - [Vitest](https://vitest.dev) — Vite-native JavaScript and TypeScript test runner with component, watch and optional browser testing modes.
 - [VSCode](https://code.visualstudio.com) — Code editor by Microsoft. Source is MIT on GitHub; official binaries are under Microsoft license.
 - [VSCodium](https://vscodium.com) — Community-built, telemetry-free distributions of VS Code, based on the open-source codebase.
@@ -371,7 +371,7 @@
 - [Windsurf](https://windsurf.com) — AI-powered code editor/IDE with agentic workflows (chat, code completion, refactoring) to speed up development.
 - [Wine](https://www.winehq.org) — Run Windows applications on Unix-like OSes.
 - [WireGuard](https://www.wireguard.com) — Fast, modern, and secure VPN tunneling protocol.
-- [Wiz](https://www.wiz.io) — Cloud security platform.
+- [Wiz](https://www.wiz.io) — Commercial cloud and AI security platform combining cloud posture assessment, risk correlation and runtime protection.
 - [Woodpecker CI](https://woodpecker-ci.org) — Apache-2.0 self-hosted CI/CD engine with a server and agents, forge integration and backend-dependent Docker, Kubernetes or local execution.
 - [Wozz](https://github.com/WozzHQ/wozz) — Open-source GitHub Action and CLI for detecting Kubernetes resource-cost increases and overprovisioned workloads.
 - [xh](https://github.com/ducaale/xh) — Command-line HTTP client with concise request syntax and formatted responses.

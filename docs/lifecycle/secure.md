@@ -6,7 +6,7 @@
 - [1Password Connect](https://www.1password.dev/connect) — Embeddable API server for programmatic access to 1Password vaults from infrastructure and applications.
 - [AD Miner](https://github.com/AD-Security/AD_Miner) — Defensive Active Directory audit tool that analyzes BloodHound graph data to identify security weaknesses.
 - [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) — Self-hosted DNS resolver and filtering service for network-wide blocking and DNS controls.
-- [Aikido](https://www.aikido.dev) — Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud posture scanning.
+- [Aikido](https://www.aikido.dev) — Commercial application security platform combining multiple security scanning capabilities with hosted integrations and optional local scanning.
 - [Aircrack-ng](https://www.aircrack-ng.org/) — Wireless network security-auditing suite for capture analysis and controlled Wi-Fi validation.
 - [ALTCHA](https://altcha.org/) — Bot-protection family with a self-hosted MIT-licensed proof-of-work core and commercial Sentinel and Cloud capabilities.
 - [Anubis](https://anubis.techaro.lol/) — Reverse proxy middleware that uses proof-of-work challenges to reduce automated web scraping load.
@@ -30,7 +30,7 @@
 - [Burp Suite](https://portswigger.net/burp) — Proprietary product family for manual web security testing and automated dynamic application security testing.
 - [Burp Suite Community Edition](https://portswigger.net/burp/downloads) — Proprietary no-cost desktop toolkit for manual web application security testing.
 - [CAI (RobotSec)](https://aliasrobotics.github.io/cai) — Open cybersecurity AI framework for robotics and offensive security workflows, with commercial pro licensing options.
-- [Calico Cloud](https://www.calicocloud.io/home) — Managed SaaS platform built on Calico Open Source for networking/security/observability.
+- [Calico Cloud](https://www.calicocloud.io/home) — Commercial managed SaaS platform for Kubernetes networking, security and observability, distinct from Calico Open Source and Calico Enterprise.
 - [Capsule](https://projectcapsule.dev/) — Kubernetes multi-tenancy framework for tenant isolation, policy inheritance, and self-service namespaces.
 - [cargo-deny](https://github.com/EmbarkStudios/cargo-deny) — Cargo dependency policy checker for advisories, licences, sources, and banned packages.
 - [cargo-vet](https://mozilla.github.io/cargo-vet/) — Tool for recording and enforcing human audits of Rust dependencies.
@@ -144,7 +144,7 @@
 - [masscan](https://github.com/robertdavidgraham/masscan) — High-rate asynchronous TCP port scanner for large authorized network inventories.
 - [mcp-server-kubernetes](https://www.npmjs.com/package/mcp-server-kubernetes) — Model Context Protocol server for managing Kubernetes resources through kubectl and Helm operations.
 - [MCPDefender](https://mcpdefender.com) — Security proxy for MCP traffic between AI apps and MCP servers (AGPL-3.0).
-- [MEDUSA](https://pantheonsecurity.io) — AI security scanner with extensive detection rules for application and model risks.
+- [MEDUSA](https://pantheonsecurity.io) — Open-source AI-focused security scanner for application code, LLM integrations, MCP servers and agentic systems.
 - [Metasploit Framework](https://www.metasploit.com/) — Modular framework for authorized security validation, exploit research, and controlled testing.
 - [METATRON](https://github.com/sooryathejas/METATRON) — Experimental local-model assistant combining reconnaissance tools and stored scan results for security assessment.
 - [MFASweep](https://github.com/dafthack/MFASweep) — PowerShell tool for enumerating and testing MFA bypass paths across Microsoft 365 and Azure AD environments.
@@ -222,7 +222,7 @@
 - [Snipe-IT](https://snipeitapp.com/) — IT asset management platform for hardware, software licences, accessories, and custody history.
 - [Snort](https://www.snort.org) — Open-source network intrusion detection and prevention system (IDS/IPS).
 - [Snyk](https://snyk.io) — Security scanning for code, dependencies, and containers.
-- [Socket](https://socket.dev) — Supply chain security platform focused on malicious and zero-day dependency risks.
+- [Socket](https://socket.dev) — Commercial software supply-chain security platform assessing dependency risks through repository and CLI integrations.
 - [SOOS DAST](https://hub.docker.com/r/soosio/dast) — DAST scanning Docker image for dynamic application security testing, runnable in CI/CD pipelines.
 - [SOPS](https://getsops.io) — SOPS encrypted-file editor for YAML, JSON, ENV, INI and binary files, using age, PGP or supported KMS/key services; GitOps/IaC file encryption is distinct from a secrets backend such as Vault.
 - [SPIRE](https://spiffe.io/docs/latest/spire-about/) — SPIFFE runtime environment that issues and rotates workload identities across heterogeneous infrastructure.
@@ -241,27 +241,27 @@
 - [Tekton Chains](https://tekton.dev/docs/chains/) — Tekton controller that records, signs, and stores supply-chain metadata for pipeline task runs.
 - [Teleport](https://goteleport.com) — Teleport manages audited SSH, Kubernetes, database and application access; AGPL source/API module licences differ from the restricted Community binary and commercial Enterprise offerings.
 - [Teller](https://github.com/tellerops/teller) — Apache-2.0 CLI for accessing secrets from external stores and injecting them into local and CI commands; fresh stable release support remains unverified.
-- [Tenable One](https://github.com/tenable) — Unified exposure management platform.
+- [Tenable One](https://www.tenable.com/products/tenable-one) — Commercial exposure management platform aggregating vulnerability and exposure information across multiple security products.
 - [testssl.sh](https://testssl.sh) — GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
 - [Tetragon](https://tetragon.io) — EBPF-based Kubernetes security observability and runtime enforcement engine (Cilium project).
 - [Thales CipherTrust Manager](https://cpl.thalesgroup.com/encryption/ciphertrust-manager) — Enterprise key and secret management.
 - [The Update Framework](https://theupdateframework.io/) — CNCF framework and specification for securing software update metadata against repository and signing-key compromise.
-- [ThreatLocker](https://www.threatlocker.com) — Zero trust endpoint protection platform.
+- [ThreatLocker](https://www.threatlocker.com) — Commercial endpoint security platform providing application allowlisting and policy-based application controls through supported endpoint agents.
 - [Tinyauth](https://tinyauth.app/) — Lightweight self-hosted authentication gateway for protecting applications behind a reverse proxy.
 - [Touti-Cracker](https://github.com/Touti-Sudo/Touti-Cracker) — Security testing tool.
 - [Tracee](https://aquasecurity.github.io/tracee/latest) — Runtime security and observability tool that uses eBPF to collect Linux host and container activity and detect suspicious behavior.
 - [Trivy](https://aquasecurity.github.io/trivy) — Vulnerability scanner for containers and Kubernetes.
 - [TruffleHog](https://trufflesecurity.com) — AGPLv3 TruffleHog v3 scans Git repositories and other sources for secrets and can verify selected credentials; enterprise monitoring is a separate commercial product.
-- [Valqore](https://www.valqore.io) — Automatic safety and security checks for cloud and AI environments.
+- [Valqore](https://www.valqore.io) — Proprietary infrastructure governance engine distributed as self-hosted containers, with a free core engine, separately licensed AI image and commercial enterprise offering.
 - [Vaultwarden](https://www.vaultwarden.net/) — Self-hosted server compatible with Bitwarden clients for team and personal secret vaults.
 - [Velociraptor](https://docs.velociraptor.app) — Digital forensics and incident response platform for endpoint investigation and threat hunting.
-- [VirusTotal](https://www.virustotal.com/gui/home/upload) — Analyze files, domains, IPs, and URLs with multi-engine scanning and community intelligence.
+- [VirusTotal](https://www.virustotal.com/gui/home/upload) — Hosted threat intelligence and analysis service for files, URLs and other security indicators, with public and commercial offerings.
 - [vulnx](https://github.com/projectdiscovery/vulnx) — CLI for searching and analysing vulnerability intelligence from ProjectDiscovery services.
 - [Wazuh](https://wazuh.com) — Open-source XDR and SIEM platform for threat detection and compliance monitoring.
 - [webssh](https://github.com/bifrost0x/webssh) — Modern web-based SSH terminal with SFTP file management.
 - [Wifit3](https://github.com/derv82/wifit3) — Cross-platform wireless security auditing utility designed around external USB Wi-Fi adapters.
 - [WireGuard](https://www.wireguard.com) — Fast, modern, and secure VPN tunneling protocol.
-- [Wiz](https://www.wiz.io) — Cloud security platform.
+- [Wiz](https://www.wiz.io) — Commercial cloud and AI security platform combining cloud posture assessment, risk correlation and runtime protection.
 - [XCA](https://www.hohnstaedt.de/xca) — X.509 certificate and key management.
 
 [Back to catalogue](../../README.md)
