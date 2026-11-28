@@ -29,8 +29,8 @@
   needs_review: false
 - id: aikido
   name: Aikido
-  summary: Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud
-    posture scanning.
+  summary: Commercial application security platform combining multiple security scanning capabilities
+    with hosted integrations and optional local scanning.
   official_url: https://www.aikido.dev
   categories:
   - application-cloud-security
@@ -42,10 +42,16 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: open-core
+  use_when:
+  - You need integrated application security checks and can use the appropriate Aikido plan, workspace
+    and supported scanning integrations.
+  avoid_when:
+  - You need an independently operated open-source platform or cannot use the service account and result-sharing
+    workflow required by the selected scanning mode.
+  deployment_models:
+  - hosted-saas
+  - local
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -53,7 +59,11 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L839
+  - https://www.aikido.dev/pricing
+  - https://help.aikido.dev/code-scanning/local-code-scanning
   needs_review: true
+  documentation_url: https://help.aikido.dev/code-scanning/local-code-scanning
+  commercial_offering: true
 - id: aircrack-ng
   name: Aircrack-ng
   summary: Wireless network security-auditing suite for capture analysis and controlled Wi-Fi validation.
@@ -607,7 +617,8 @@
   needs_review: false
 - id: calico-cloud
   name: Calico Cloud
-  summary: Managed SaaS platform built on Calico Open Source for networking/security/observability.
+  summary: Commercial managed SaaS platform for Kubernetes networking, security and observability, distinct
+    from Calico Open Source and Calico Enterprise.
   official_url: https://www.calicocloud.io/home
   categories:
   - application-cloud-security
@@ -620,11 +631,14 @@
   - test
   - secure
   use_when:
-  - You want managed Calico with a dashboard and threat feeds.
+  - You need managed Kubernetes network security and observability and can connect supported clusters
+    to the Calico Cloud service.
   avoid_when:
-  - Calico Open Source already meets your needs.
-  deployment_models: []
-  license_model: open-core
+  - Calico Open Source already meets your requirements, or you need a self-managed control plane rather
+    than the hosted Calico Cloud edition.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -633,7 +647,12 @@
   sources:
   - legacy:6_Security/README.md#L61
   - legacy:devopstools_final.md#L929
+  - https://docs.tigera.io/calico-cloud/about/calico-product-editions
+  - https://docs.tigera.io/calico/latest/about/calico-product-editions
+  - https://www.tigera.io/tigera-products/calico-cloud-pricing/
   needs_review: true
+  documentation_url: https://docs.tigera.io/calico-cloud/about/calico-product-editions
+  commercial_offering: true
 - id: cartography
   name: Cartography
   summary: Graph-based asset inventory that maps cloud and infrastructure relationships into Neo4j.
@@ -2954,7 +2973,8 @@
   needs_review: true
 - id: medusa
   name: MEDUSA
-  summary: AI security scanner with extensive detection rules for application and model risks.
+  summary: Open-source AI-focused security scanner for application code, LLM integrations, MCP servers
+    and agentic systems.
   official_url: https://pantheonsecurity.io
   categories:
   - application-cloud-security
@@ -2966,10 +2986,15 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You need a local scanner for code and AI-related security findings and can review the findings and
+    the scanner licence obligations.
+  avoid_when:
+  - You require inline production LLM runtime enforcement, commercial runtime features, or independently
+    validated detection coverage rather than the scoped open-source scanner.
+  deployment_models:
+  - local
+  license_model: oss
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -2977,7 +3002,17 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L882
+  - https://github.com/Pantheon-Security/medusa/blob/5f217edf8b09b960a32311982754dd2717a70c9b/README.md
+  - https://github.com/Pantheon-Security/medusa/blob/5f217edf8b09b960a32311982754dd2717a70c9b/LICENSE
+  - https://github.com/Pantheon-Security/medusa/blob/5f217edf8b09b960a32311982754dd2717a70c9b/pyproject.toml
+  - https://github.com/Pantheon-Security/medusa/releases/tag/v2026.7.0
+  - https://github.com/Pantheon-Security/medusa
   needs_review: true
+  documentation_url: https://github.com/Pantheon-Security/medusa/blob/5f217edf8b09b960a32311982754dd2717a70c9b/README.md
+  commercial_offering: true
+  repository_url: https://github.com/Pantheon-Security/medusa
+  repository_archived: false
+  license_spdx: AGPL-3.0-or-later
 - id: metasploit
   name: Metasploit Framework
   summary: Modular framework for authorized security validation, exploit research, and controlled testing.
@@ -4747,7 +4782,8 @@
   needs_review: false
 - id: socket
   name: Socket
-  summary: Supply chain security platform focused on malicious and zero-day dependency risks.
+  summary: Commercial software supply-chain security platform assessing dependency risks through repository
+    and CLI integrations.
   official_url: https://socket.dev
   categories:
   - application-cloud-security
@@ -4759,10 +4795,16 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You need dependency risk assessment and policy checks in development workflows and can use Socket
+    services under the applicable plan.
+  avoid_when:
+  - You require fully offline dependency analysis or cannot send dependency manifests and lockfiles to
+    the service for API-backed operations.
+  deployment_models:
+  - hosted-saas
+  - local
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -4770,7 +4812,12 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L912
+  - https://docs.socket.dev/docs/faq
+  - https://docs.socket.dev/docs/socket-cli-faq
+  - https://socket.dev/terms
   needs_review: true
+  documentation_url: https://docs.socket.dev/docs/faq
+  commercial_offering: true
 - id: soos-dast
   name: SOOS DAST
   summary: DAST scanning Docker image for dynamic application security testing, runnable in CI/CD pipelines.
@@ -5003,8 +5050,9 @@
   needs_review: true
 - id: tenable-one
   name: Tenable One
-  summary: Unified exposure management platform.
-  official_url: https://github.com/tenable
+  summary: Commercial exposure management platform aggregating vulnerability and exposure information
+    across multiple security products.
+  official_url: https://www.tenable.com/products/tenable-one
   categories:
   - application-cloud-security
   subcategories:
@@ -5016,11 +5064,13 @@
   - test
   - secure
   use_when:
-  - Enterprise-wide vulnerability management across IT, cloud, and OT.
+  - You need enterprise exposure management across supported asset domains and can provision the relevant
+    Tenable products and connectors.
   avoid_when:
-  - For lightweight or developer-centric scanning.
+  - You only need a standalone scanner or cannot meet the component-specific deployment, integration or
+    licensing requirements.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -5029,7 +5079,12 @@
   sources:
   - legacy:6_Security/README.md#L51
   - legacy:devopstools_final.md#L915
+  - https://www.tenable.com/products/tenable-one
+  - https://docs.tenable.com/quick-reference/tenable-one-deployment-guide/Content/Welcome.htm
+  - https://docs.tenable.com/exposure-management/Content/getting-started/t1-foundation-advanced-licensing.htm
   needs_review: true
+  documentation_url: https://docs.tenable.com/quick-reference/tenable-one-deployment-guide/Content/Welcome.htm
+  commercial_offering: true
 - id: testssl-sh
   name: testssl.sh
   summary: GPLv2-family Bash TLS/SSL endpoint configuration scanner reporting protocols, cipher suites and selected cryptographic flaws, with stable upstream v3.2.4 and machine-readable output.
@@ -5095,7 +5150,8 @@
   needs_review: true
 - id: threatlocker
   name: ThreatLocker
-  summary: Zero trust endpoint protection platform.
+  summary: Commercial endpoint security platform providing application allowlisting and policy-based application
+    controls through supported endpoint agents.
   official_url: https://www.threatlocker.com
   categories:
   - application-cloud-security
@@ -5108,11 +5164,13 @@
   - test
   - secure
   use_when:
-  - Allowlist-based endpoint lockdown in regulated environments.
+  - You need centrally managed application allowlisting on supported endpoints and can maintain application
+    policies and agent compatibility.
   avoid_when:
-  - You need Linux-first or cloud-native runtime protection (use Falco).
+  - You require Kubernetes-native workload runtime security or cannot maintain supported endpoint operating
+    systems and, on Linux, supported kernel builds.
   deployment_models: []
-  license_model: unknown
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -5121,7 +5179,12 @@
   sources:
   - legacy:6_Security/README.md#L75
   - legacy:devopstools_final.md#L947
+  - https://www.threatlocker.com/capabilities/allowlisting
+  - https://threatlocker.kb.help/linux-agent-installing-and-uninstalling-process/
+  - https://www.threatlocker.com/terms-and-conditions
   needs_review: true
+  documentation_url: https://threatlocker.kb.help/linux-agent-installing-and-uninstalling-process/
+  commercial_offering: true
 - id: touti-cracker
   name: Touti-Cracker
   summary: Security testing tool.
@@ -5226,7 +5289,8 @@
   needs_review: true
 - id: valqore
   name: Valqore
-  summary: Automatic safety and security checks for cloud and AI environments.
+  summary: Proprietary infrastructure governance engine distributed as self-hosted containers, with a
+    free core engine, separately licensed AI image and commercial enterprise offering.
   official_url: https://www.valqore.io
   categories:
   - application-cloud-security
@@ -5238,10 +5302,16 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You need local container-based infrastructure policy assessment and can evaluate the vendor terms,
+    image provenance and any optional AI licence requirements.
+  avoid_when:
+  - You require the full engine source under an open-source licence or cannot independently verify the
+    image provenance and applicable binary or AI terms.
+  deployment_models:
+  - container
+  - self-hosted
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -5249,7 +5319,13 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L948
+  - https://github.com/valqore/valqore/blob/7858a749905225720a94163a5e23403c147ec6a9/README.md
+  - https://github.com/valqore/valqore/blob/7858a749905225720a94163a5e23403c147ec6a9/LICENSE
+  - https://www.valqore.io/pricing
+  - https://www.valqore.io/faq
   needs_review: true
+  documentation_url: https://github.com/valqore/valqore/blob/7858a749905225720a94163a5e23403c147ec6a9/README.md
+  commercial_offering: true
 - id: velociraptor
   name: Velociraptor
   summary: Digital forensics and incident response platform for endpoint investigation and threat hunting.
@@ -5278,7 +5354,8 @@
   needs_review: true
 - id: virustotal
   name: VirusTotal
-  summary: Analyze files, domains, IPs, and URLs with multi-engine scanning and community intelligence.
+  summary: Hosted threat intelligence and analysis service for files, URLs and other security indicators,
+    with public and commercial offerings.
   official_url: https://www.virustotal.com/gui/home/upload
   categories:
   - application-cloud-security
@@ -5290,10 +5367,15 @@
   lifecycle_stages:
   - test
   - secure
-  use_when: []
-  avoid_when: []
-  deployment_models: []
-  license_model: unknown
+  use_when:
+  - You need threat intelligence or file and URL analysis and can use the appropriate public or commercial
+    access under its terms.
+  avoid_when:
+  - You require local-only analysis or cannot authorize data sharing for standard uploads; never submit
+    confidential files, secrets or restricted indicators through standard VirusTotal.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -5301,7 +5383,12 @@
   verified_on: '2026-08-03'
   sources:
   - legacy:devopstools_final.md#L921
+  - https://docs.virustotal.com/docs/how-it-works
+  - https://docs.virustotal.com/docs/difference-public-private
+  - https://docs.virustotal.com/docs/private-scanning
   needs_review: true
+  documentation_url: https://docs.virustotal.com/docs/how-it-works
+  commercial_offering: true
 - id: vulnx
   name: vulnx
   summary: CLI for searching and analysing vulnerability intelligence from ProjectDiscovery services.
@@ -5413,7 +5500,8 @@
   needs_review: true
 - id: wiz
   name: Wiz
-  summary: Cloud security platform.
+  summary: Commercial cloud and AI security platform combining cloud posture assessment, risk correlation
+    and runtime protection.
   official_url: https://www.wiz.io
   categories:
   - application-cloud-security
@@ -5426,11 +5514,14 @@
   - test
   - secure
   use_when:
-  - Agentless CSPM/CWPP with a unified risk graph across multi-cloud.
+  - You need unified cloud risk visibility and code-to-runtime security across supported environments,
+    with licensed modules and appropriate cloud integrations.
   avoid_when:
-  - You need on-prem-only or OSS-first security tooling.
-  deployment_models: []
-  license_model: unknown
+  - You require an entirely self-hosted or open-source security platform, or cannot grant the required
+    cloud access or deploy sensors for the runtime coverage you need.
+  deployment_models:
+  - hosted-saas
+  license_model: commercial
   maturity: unknown
   status: needs-review
   alternatives: []
@@ -5439,4 +5530,9 @@
   sources:
   - legacy:6_Security/README.md#L56
   - legacy:devopstools_final.md#L924
+  - https://www.wiz.io/platform
+  - https://www.wiz.io/academy/cloud-security/how-to-evaluate-wiz-faq
+  - https://www.wiz.io/pricing
   needs_review: true
+  documentation_url: https://www.wiz.io/academy/cloud-security/how-to-evaluate-wiz-faq
+  commercial_offering: true

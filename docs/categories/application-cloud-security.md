@@ -47,20 +47,20 @@ Self-hosted DNS resolver and filtering service for network-wide blocking and DNS
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Open Core<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Developer-first security platform covering SAST, SCA, DAST, IaC, container, secrets, and cloud posture scanning.
+Commercial application security platform combining multiple security scanning capabilities with hosted integrations and optional local scanning.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need integrated application security checks and can use the appropriate Aikido plan, workspace and supported scanning integrations.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You need an independently operated open-source platform or cannot use the service account and result-sharing workflow required by the selected scanning mode.
 
-[Official site](https://www.aikido.dev)
+[Official site](https://www.aikido.dev) · [Documentation](https://help.aikido.dev/code-scanning/local-code-scanning)
 
 ### Aircrack-ng
 
@@ -411,20 +411,20 @@ Open cybersecurity AI framework for robotics and offensive security workflows, w
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Open Core<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Managed SaaS platform built on Calico Open Source for networking/security/observability.
+Commercial managed SaaS platform for Kubernetes networking, security and observability, distinct from Calico Open Source and Calico Enterprise.
 
 **Use when**
 
-- You want managed Calico with a dashboard and threat feeds.
+- You need managed Kubernetes network security and observability and can connect supported clusters to the Calico Cloud service.
 
 **Consider alternatives when**
 
-- Calico Open Source already meets your needs.
+- Calico Open Source already meets your requirements, or you need a self-managed control plane rather than the hosted Calico Cloud edition.
 
-[Official site](https://www.calicocloud.io/home)
+[Official site](https://www.calicocloud.io/home) · [Documentation](https://docs.tigera.io/calico-cloud/about/calico-product-editions)
 
 ### Capsule
 
@@ -1962,20 +1962,20 @@ Security proxy for MCP traffic between AI apps and MCP servers (AGPL-3.0).
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
+**Model:** Oss<br>
 **Status:** Needs Review
 
-AI security scanner with extensive detection rules for application and model risks.
+Open-source AI-focused security scanner for application code, LLM integrations, MCP servers and agentic systems.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need a local scanner for code and AI-related security findings and can review the findings and the scanner licence obligations.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require inline production LLM runtime enforcement, commercial runtime features, or independently validated detection coverage rather than the scoped open-source scanner.
 
-[Official site](https://pantheonsecurity.io)
+[Official site](https://pantheonsecurity.io) · [Documentation](https://github.com/Pantheon-Security/medusa/blob/5f217edf8b09b960a32311982754dd2717a70c9b/README.md) · [Source repository](https://github.com/Pantheon-Security/medusa)
 
 ### Metasploit Framework
 
@@ -3108,20 +3108,20 @@ Security scanning for code, dependencies, and containers.
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Supply chain security platform focused on malicious and zero-day dependency risks.
+Commercial software supply-chain security platform assessing dependency risks through repository and CLI integrations.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need dependency risk assessment and policy checks in development workflows and can use Socket services under the applicable plan.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require fully offline dependency analysis or cannot send dependency manifests and lockfiles to the service for API-backed operations.
 
-[Official site](https://socket.dev)
+[Official site](https://socket.dev) · [Documentation](https://docs.socket.dev/docs/faq)
 
 ### SOOS DAST
 
@@ -3262,20 +3262,20 @@ Zero-config VPN for secure networking; OSS client with commercial/SaaS control p
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Unified exposure management platform.
+Commercial exposure management platform aggregating vulnerability and exposure information across multiple security products.
 
 **Use when**
 
-- Enterprise-wide vulnerability management across IT, cloud, and OT.
+- You need enterprise exposure management across supported asset domains and can provision the relevant Tenable products and connectors.
 
 **Consider alternatives when**
 
-- For lightweight or developer-centric scanning.
+- You only need a standalone scanner or cannot meet the component-specific deployment, integration or licensing requirements.
 
-[Official site](https://github.com/tenable)
+[Official site](https://www.tenable.com/products/tenable-one) · [Documentation](https://docs.tenable.com/quick-reference/tenable-one-deployment-guide/Content/Welcome.htm)
 
 ### testssl.sh
 
@@ -3320,20 +3320,20 @@ EBPF-based Kubernetes security observability and runtime enforcement engine (Cil
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Zero trust endpoint protection platform.
+Commercial endpoint security platform providing application allowlisting and policy-based application controls through supported endpoint agents.
 
 **Use when**
 
-- Allowlist-based endpoint lockdown in regulated environments.
+- You need centrally managed application allowlisting on supported endpoints and can maintain application policies and agent compatibility.
 
 **Consider alternatives when**
 
-- You need Linux-first or cloud-native runtime protection (use Falco).
+- You require Kubernetes-native workload runtime security or cannot maintain supported endpoint operating systems and, on Linux, supported kernel builds.
 
-[Official site](https://www.threatlocker.com)
+[Official site](https://www.threatlocker.com) · [Documentation](https://threatlocker.kb.help/linux-agent-installing-and-uninstalling-process/)
 
 ### Touti-Cracker
 
@@ -3418,20 +3418,20 @@ AGPLv3 TruffleHog v3 scans Git repositories and other sources for secrets and ca
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Automatic safety and security checks for cloud and AI environments.
+Proprietary infrastructure governance engine distributed as self-hosted containers, with a free core engine, separately licensed AI image and commercial enterprise offering.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need local container-based infrastructure policy assessment and can evaluate the vendor terms, image provenance and any optional AI licence requirements.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require the full engine source under an open-source licence or cannot independently verify the image provenance and applicable binary or AI terms.
 
-[Official site](https://www.valqore.io)
+[Official site](https://www.valqore.io) · [Documentation](https://github.com/valqore/valqore/blob/7858a749905225720a94163a5e23403c147ec6a9/README.md)
 
 ### Velociraptor
 
@@ -3456,20 +3456,20 @@ Digital forensics and incident response platform for endpoint investigation and 
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Analyze files, domains, IPs, and URLs with multi-engine scanning and community intelligence.
+Hosted threat intelligence and analysis service for files, URLs and other security indicators, with public and commercial offerings.
 
 **Use when**
 
-- Use after confirming that the documented capability matches a concrete operational requirement.
+- You need threat intelligence or file and URL analysis and can use the appropriate public or commercial access under its terms.
 
 **Consider alternatives when**
 
-- Consider alternatives until primary-source, licence, and maintenance verification is complete for your risk profile.
+- You require local-only analysis or cannot authorize data sharing for standard uploads; never submit confidential files, secrets or restricted indicators through standard VirusTotal.
 
-[Official site](https://www.virustotal.com/gui/home/upload)
+[Official site](https://www.virustotal.com/gui/home/upload) · [Documentation](https://docs.virustotal.com/docs/how-it-works)
 
 ### vulnx
 
@@ -3551,17 +3551,17 @@ Fast, modern, and secure VPN tunneling protocol.
 
 **Categories:** Application and cloud security<br>
 **Roles:** DevSecOps Engineer, Cloud Security Engineer<br>
-**Model:** Unknown<br>
+**Model:** Commercial<br>
 **Status:** Needs Review
 
-Cloud security platform.
+Commercial cloud and AI security platform combining cloud posture assessment, risk correlation and runtime protection.
 
 **Use when**
 
-- Agentless CSPM/CWPP with a unified risk graph across multi-cloud.
+- You need unified cloud risk visibility and code-to-runtime security across supported environments, with licensed modules and appropriate cloud integrations.
 
 **Consider alternatives when**
 
-- You need on-prem-only or OSS-first security tooling.
+- You require an entirely self-hosted or open-source security platform, or cannot grant the required cloud access or deploy sensors for the runtime coverage you need.
 
-[Official site](https://www.wiz.io)
+[Official site](https://www.wiz.io) · [Documentation](https://www.wiz.io/academy/cloud-security/how-to-evaluate-wiz-faq)
