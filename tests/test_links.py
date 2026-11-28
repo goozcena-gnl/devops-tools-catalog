@@ -11,6 +11,7 @@ from collections import Counter
 from datetime import UTC, datetime, timedelta
 from http.client import RemoteDisconnected
 from pathlib import Path
+from urllib.parse import urlunsplit
 
 import pytest
 
@@ -1333,3 +1334,312 @@ def test_http_request_handles_local_tcp_reset() -> None:
     assert outcome.classification == "network-inconclusive"
     assert outcome.status is None
     assert "ConnectionResetError" in outcome.error
+
+
+# OIDC-Guard archival documentation context regressions (2026-11-28).
+_ARCHIVE_ROOT = "https://github.com/org/repo"
+_ARCHIVE_DOC = _ARCHIVE_ROOT + "/blob/main/README.md"
+
+
+def _archive_row(
+    id="one", repo=_ARCHIVE_ROOT, doc=_ARCHIVE_DOC, archived=True, **extra
+):
+    return {
+        "id": id,
+        "repository_url": repo,
+        "documentation_url": doc,
+        "repository_archived": archived,
+        **extra,
+    }
+
+
+def _archive_contexts(monkeypatch, *rows):
+    monkeypatch.setattr(
+        check_links, "load_tools", lambda root: sorted(rows, key=lambda x: x["id"])
+    )
+    return catalogue_url_contexts(Path("."))
+
+
+def test_archive_document_oidc_guard_exact_two_contexts(monkeypatch):
+    root = "https://github.com/IvanJosipovic/OIDC-Guard"
+    doc = root + "/blob/main/README.md"
+    row = _archive_row(id="oidc-guard", repo=root, doc=doc, archived=False)
+    before = _archive_contexts(monkeypatch, row)
+    after = _archive_contexts(monkeypatch, dict(row, repository_archived=True))
+    assert set(before) == set(after) == {root, doc}
+    assert before[root] == UrlContext(("oidc-guard",), False)
+    assert before[doc] == UrlContext()
+    assert after[root] == after[doc] == UrlContext(("oidc-guard",), True)
+
+
+@pytest.mark.parametrize(
+    "suffix",
+    [
+        "/blob/main/README.md",
+        "/blob/release-1/docs/setup.md",
+        "/blob/" + "a" * 40 + "/README.md",
+    ],
+)
+def test_archive_document_explicit_same_repo(monkeypatch, suffix):
+    doc = _ARCHIVE_ROOT + suffix
+    contexts = _archive_contexts(monkeypatch, _archive_row(doc=doc))
+    assert contexts[doc] == UrlContext(("one",), True)
+
+
+@pytest.mark.parametrize("value", [False, None, "true", 1])
+def test_archive_document_requires_boolean_true(monkeypatch, value):
+    assert (
+        _archive_contexts(monkeypatch, _archive_row(archived=value))[_ARCHIVE_DOC]
+        == UrlContext()
+    )
+
+
+def test_archive_document_missing_metadata(monkeypatch):
+    row = _archive_row()
+    del row["repository_archived"]
+    assert _archive_contexts(monkeypatch, row)[_ARCHIVE_DOC] == UrlContext()
+
+
+def test_archive_document_shared_all_true(monkeypatch):
+    contexts = _archive_contexts(
+        monkeypatch, _archive_row(), _archive_row(id="two", doc=None)
+    )
+    assert contexts[_ARCHIVE_DOC] == UrlContext(("one", "two"), True)
+
+
+@pytest.mark.parametrize(
+    "alias",
+    [
+        _ARCHIVE_ROOT,
+        "https://github.com/ORG/REPO",
+        _ARCHIVE_ROOT + ".git",
+        _ARCHIVE_ROOT + "/",
+    ],
+)
+def test_archive_document_conflicting_repository_metadata(monkeypatch, alias):
+    contexts = _archive_contexts(
+        monkeypatch,
+        _archive_row(),
+        _archive_row(id="two", repo=alias, doc=None, archived=False),
+    )
+    assert contexts[_ARCHIVE_DOC] == UrlContext()
+
+
+@pytest.mark.parametrize("second_repo", [None, "https://github.com/org/other"])
+def test_archive_document_conflicting_document_owner(monkeypatch, second_repo):
+    contexts = _archive_contexts(
+        monkeypatch, _archive_row(), _archive_row(id="two", repo=second_repo)
+    )
+    assert contexts[_ARCHIVE_DOC] == UrlContext()
+
+
+def test_archive_document_official_only_not_eligible(monkeypatch):
+    contexts = _archive_contexts(
+        monkeypatch, _archive_row(doc=None, official_url=_ARCHIVE_DOC)
+    )
+    assert contexts[_ARCHIVE_DOC] == UrlContext()
+    contexts = _archive_contexts(
+        monkeypatch,
+        _archive_row(),
+        _archive_row(id="two", doc=None, official_url=_ARCHIVE_DOC),
+    )
+    assert contexts[_ARCHIVE_DOC] == UrlContext()
+
+
+@pytest.mark.parametrize(
+    "suffix",
+    [
+        "/tree/main",
+        "/tree/main#readme",
+        "/wiki",
+        "/issues/1",
+        "/releases/tag/v1",
+        "/raw/main/README.md",
+        "/blob/main",
+        "/blob/main/",
+        "/blob//main/README.md",
+        "/blob/main/../README.md",
+        "/blob/main/./README.md",
+        "/blob/main/%2e%2e/README.md",
+        "/blob/main/README.md?x=1",
+        "/blob/main/README.md#section",
+        "/blob/main/README.md\n",
+        "/blob/main/a b.md",
+        "/blob/main/é.md",
+        "/blob/main/a\\b.md",
+    ],
+)
+def test_archive_document_rejects_ambiguous_routes(monkeypatch, suffix):
+    doc = _ARCHIVE_ROOT + suffix
+    assert _archive_contexts(monkeypatch, _archive_row(doc=doc))[doc] == UrlContext()
+
+
+@pytest.mark.parametrize(
+    "doc",
+    [
+        "http://github.com/org/repo/blob/main/README.md",
+        "https://github.com.evil.test/org/repo/blob/main/README.md",
+        "https://github.com@evil.test/org/repo/blob/main/README.md",
+        "https://user@github.com/org/repo/blob/main/README.md",
+        "https://github.com:443/org/repo/blob/main/README.md",
+        "https://github.com/org/other/blob/main/README.md",
+        "https://github.com/org/repo-other/blob/main/README.md",
+    ],
+)
+def test_archive_document_rejects_other_repositories(monkeypatch, doc):
+    assert _archive_contexts(monkeypatch, _archive_row(doc=doc))[doc] == UrlContext()
+
+
+def test_archive_document_preserves_legacy_fragment(monkeypatch):
+    fragment = _ARCHIVE_ROOT + "#readme"
+    contexts = _archive_contexts(monkeypatch, _archive_row(doc=fragment))
+    assert contexts[fragment] == contexts[_ARCHIVE_ROOT] == UrlContext(("one",), True)
+    root = "https://github.com/features/actions"
+    doc = root + "/blob/main/README.md"
+    assert (
+        _archive_contexts(monkeypatch, _archive_row(repo=root, doc=doc))[doc]
+        == UrlContext()
+    )
+
+
+def test_archive_document_context_change_reprobes_cache(monkeypatch, tmp_path):
+    actual = _archive_contexts(monkeypatch, _archive_row())[_ARCHIVE_DOC]
+    assert actual.repository_archived_expected is True
+    fresh = archived_result(_ARCHIVE_DOC, True)
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=archived_result(_ARCHIVE_DOC, False),
+        current_expected=actual.repository_archived_expected,
+        check_archived=True,
+        fresh=fresh,
+    )
+    assert checked is fresh
+    assert len(calls) == 1
+    assert calls[0]["repository_archived_expected"] is True
+
+
+def test_archive_document_strict_assessment(monkeypatch):
+    before = _archive_contexts(monkeypatch, _archive_row(archived=False))
+    after = _archive_contexts(monkeypatch, _archive_row())
+    for context, expected_count in ((before, 2), (after, 0)):
+        results = [
+            archived_result(url, context[url].repository_archived_expected)
+            for url in (_ARCHIVE_ROOT, _ARCHIVE_DOC)
+        ]
+        assessment = assess_strict_results(results, {})
+        assert len(assessment.blocking_new) == expected_count
+        assert not assessment.blocking_known
+        assert strict_exit_code(True, assessment) == int(bool(expected_count))
+
+
+# F01 V1.1: default-port aliases must not bypass mixed archive metadata.
+@pytest.mark.parametrize(
+    "alias",
+    [
+        "https://github.com:443/ORG/REPO",
+        "http://github.com:80/org/repo",
+        "https://GITHUB.COM:443/org/repo.git/",
+        "https://github.com:0443/org/repo/",
+    ],
+)
+@pytest.mark.parametrize("metadata", [False, None, "missing"])
+def test_f01_default_port_conflict(monkeypatch, alias, metadata):
+    row = _archive_row(id="two", repo=alias, doc=None, archived=metadata)
+    if metadata == "missing":
+        del row["repository_archived"]
+    contexts = _archive_contexts(monkeypatch, _archive_row(), row)
+    assert contexts[_ARCHIVE_DOC] == UrlContext()
+    # The existing direct repository URL and transport rules are unchanged.
+    assert contexts[_ARCHIVE_ROOT] == UrlContext(("one",), True)
+    assert contexts[alias] == UrlContext(("two",), False)
+    assert repository_coordinates(alias) is None
+
+
+@pytest.mark.parametrize(
+    "alias",
+    [
+        "https://github.com:443/ORG/REPO",
+        "http://github.com:80/org/repo",
+        "https://GITHUB.COM:443/org/repo.git/",
+        "https://github.com:0443/org/repo/",
+    ],
+)
+def test_f01_default_port_consensus(monkeypatch, alias):
+    contexts = _archive_contexts(
+        monkeypatch, _archive_row(), _archive_row(id="two", repo=alias, doc=None)
+    )
+    assert contexts[_ARCHIVE_DOC] == UrlContext(("one", "two"), True)
+
+
+@pytest.mark.parametrize(
+    "alias",
+    [
+        "https://github.com:444/org/repo",
+        "http://github.com:443/org/repo",
+        "https://github.com:80/org/repo",
+        "https://github.com:bad/org/repo",
+        "https://github.com:65536/org/repo",
+        "https://user@github.com:443/org/repo",
+        urlunsplit(("https", "github.com:443@evil.test", "/org/repo", "", "")),
+        "https://github.com.evil.test:443/org/repo",
+        "https://github.com:443/org/other",
+        "https://github.com:443/other/repo",
+        "https://github.com:443/features/actions",
+    ],
+)
+def test_f01_unrelated_or_invalid_authority_not_a_conflict(monkeypatch, alias):
+    contexts = _archive_contexts(
+        monkeypatch,
+        _archive_row(),
+        _archive_row(id="two", repo=alias, doc=None, archived=False),
+    )
+    assert contexts[_ARCHIVE_DOC] == UrlContext(("one",), True)
+    assert repository_coordinates(alias) is None
+
+
+@pytest.mark.parametrize(
+    "root",
+    ["https://github.com:443/org/repo", "http://github.com:80/org/repo"],
+)
+def test_f01_port_document_does_not_become_eligible(monkeypatch, root):
+    doc = root + "/blob/main/README.md"
+    contexts = _archive_contexts(monkeypatch, _archive_row(repo=root, doc=doc))
+    assert contexts[doc] == UrlContext()
+    assert contexts[root] == UrlContext(("one",), True)
+    assert repository_coordinates(doc) is None
+
+
+def test_f01_conflict_invalidates_expected_cache_and_blocks_strict(
+    monkeypatch, tmp_path
+):
+    before = _archive_contexts(monkeypatch, _archive_row())[_ARCHIVE_DOC]
+    after = _archive_contexts(
+        monkeypatch,
+        _archive_row(),
+        _archive_row(
+            id="two",
+            repo="https://github.com:443/ORG/REPO",
+            doc=None,
+            archived=False,
+        ),
+    )[_ARCHIVE_DOC]
+    assert before == UrlContext(("one",), True)
+    assert after == UrlContext()
+    fresh = archived_result(_ARCHIVE_DOC, after.repository_archived_expected)
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=archived_result(_ARCHIVE_DOC, True),
+        current_expected=after.repository_archived_expected,
+        check_archived=True,
+        fresh=fresh,
+    )
+    assert checked is fresh
+    assert len(calls) == 1
+    assert calls[0]["repository_archived_expected"] is False
+    assert checked.classification == "repository-archived-unexpected"
+    assessment = assess_strict_results([checked], {})
+    assert len(assessment.blocking_new) == 1
+    assert not assessment.blocking_known
+    assert strict_exit_code(True, assessment) == 1

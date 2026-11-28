@@ -1,0 +1,19 @@
+# OIDC-Guard — archival metadata and documentation URL review (2026-11-28)
+
+## Evidence and scope
+
+- Exact independent correction base: `069596beaa98cd7bab823dc9b2297ad67c2111aa`, tree `c1c5a3ec3dc06ca87c56f865adb349e8fa7b5c95`; original IAM YAML blob `535cfcaff5f0336e033faf83e10ce25aaa50035c`.
+- [Wave 48 PR #211](https://github.com/goozcena-gnl/devops-tools-catalog/pull/211), HEAD `1e6b8eea7f3fb4c0094a6f88b867408a622eb322`, is outside this correction. The IAM file is identical on both refs.
+- [Audit #117](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/46068685297) failed on GitLab University HTTP 521. [Audit #118](https://github.com/goozcena-gnl/devops-tools-catalog/actions/runs/46135431646) confirmed its recovery, but found two new `repository-archived-unexpected` blockers for OIDC-Guard's repository and declared README. Both runs remain preserved; #118 reported 2,892 URLs, `blocking_new=2`, `blocking_known=6`, `strict_result=FAIL`.
+- Official [repository](https://github.com/IvanJosipovic/OIDC-Guard) and [REST API](https://api.github.com/repos/IvanJosipovic/OIDC-Guard) returned `archived: true`, `disabled: false` on 2026-11-28. Upstream main `933b53e8d4948a2f66f2089bc2ca68b17dacc812`; [README](https://github.com/IvanJosipovic/OIDC-Guard/blob/933b53e8d4948a2f66f2089bc2ca68b17dacc812/README.md) blob `89c33f2000fd8fd9e6e0b1defa8b31600206b41b`; [LICENSE](https://github.com/IvanJosipovic/OIDC-Guard/blob/933b53e8d4948a2f66f2089bc2ca68b17dacc812/LICENSE) blob `d8e4ae5213d95c7f68d381b40bac32ce477f099a` confirms MIT. Latest release observed [v3.8.57](https://github.com/IvanJosipovic/OIDC-Guard/releases/tag/v3.8.57), 2026-10-30. Exact archive date/reason and ongoing product/security support are not established. The README contains no explicit discontinuation or migration announcement.
+
+## Exact correction
+
+- Only `oidc-guard.repository_archived: false -> true`. Preserve the historical `verified_on`, status, review flag, maturity, licence, URLs, source list, roles and lifecycle. This is repository metadata, not renewed endorsement of production use, security support or active maintenance. A separate lifecycle/security review may be warranted.
+- Extend archive context association only for explicitly declared HTTPS GitHub `/blob/ref/path` documentation belonging to the exact canonical repository root. Reject ambiguous paths, nonmatching owners and missing/mixed archive metadata, including aliases. Preserve existing exact repository and fragment rules. No hardcoded OIDC-Guard exception, baseline waiver or transport/classifier changes. The existing repository API classification does not establish documentary file reachability; the pinned README was separately inspected.
+- Add positive and negative regression tests, cache invalidation and strict assessment coverage without weakening existing tests. Regenerate README and IAM category page. The only other added path is this ledger. All other catalogue files, baseline, taxonomy, schema, dependencies, workflows and generated views remain unchanged.
+- Read-only projection approved: 1,425 records, 30 categories, 2,882 unique URLs; exactly two context differences (repository and declared README) and 2,880 unchanged. Archived repository count 16 -> 17. All product-status, licence and review totals unchanged. See Garage WebUI and AutoGen maintenance notes for the distinction between repository and product lifecycle metadata.
+
+## Required acceptance (not pre-certified)
+
+Locked Python 3.12 validation, full pytest, Ruff, deterministic generated docs, catalogue validation, whitespace checks and independent review of the exact six-path candidate. Fresh exact-SHA CI and separate strict Full Link Audit must subsequently demonstrate both URLs `repository-archived-expected`, no new blockers and unchanged baseline. No merge or Wave 48 integration without separate authorization.

@@ -24,7 +24,7 @@ The DevOps ecosystem changes faster than a static list can safely represent: pro
 | Records not flagged for review | **895** |
 | Records requiring review | **530** |
 | Deprecated, archived, or historical records | **16** |
-| Archived source repositories | **16** |
+| Archived source repositories | **17** |
 | Most recent recorded verification date | **2026-11-26** |
 
 Review debt is deliberate and actionable; it is not hidden to improve the numbers. A record marked `needs-review` is useful discovery context, not a verified recommendation.

@@ -408,6 +408,72 @@ def check_url(
     )
 
 
+def repository_conflict_coordinates(url: str) -> tuple[str, str] | None:
+    """Recognize default-port aliases only for documentary conflict detection."""
+    coordinates = repository_coordinates(url)
+    if coordinates is not None:
+        return coordinates
+    parsed = urllib.parse.urlsplit(url)
+    default_port = {"http": 80, "https": 443}.get(parsed.scheme)
+    if default_port is None or not parsed.netloc.casefold().startswith("github.com:"):
+        return None
+    try:
+        if parsed.hostname != "github.com" or parsed.port != default_port:
+            return None
+        if parsed.username is not None or parsed.password is not None:
+            return None
+    except ValueError:
+        return None
+    return repository_coordinates(parsed._replace(netloc="github.com").geturl())
+
+
+def documentation_archive_records(
+    url: str, tools: list[dict[str, Any]], fields: tuple[str, ...]
+) -> list[dict[str, Any]]:
+    """Return repository declarations only for explicitly owned GitHub blob docs."""
+    prefix = "https://github.com/"
+    if not url.startswith(prefix):
+        return []
+    parts = url.removeprefix(prefix).split("/")
+    if len(parts) < 5 or parts[2] != "blob":
+        return []
+    # Deliberately fail closed on ambiguous or encoded paths, queries,
+    # fragments, non-ASCII, whitespace and empty segments.
+    if any(
+        not part
+        or part in {".", ".."}
+        or any(not (c.isascii() and (c.isalnum() or c in "._-")) for c in part)
+        for part in parts
+    ):
+        return []
+    root = prefix + "/".join(parts[:2])
+    coordinates = repository_coordinates(root)
+    if coordinates != tuple(parts[:2]):
+        return []
+    owners = [tool for tool in tools if any(tool.get(field) == url for field in fields)]
+    if not owners or any(
+        tool.get("documentation_url") != url or tool.get("repository_url") != root
+        for tool in owners
+    ):
+        return []
+    # Do not let another canonical declaration for the same repository
+    # (including case or .git aliases) silently bypass mixed metadata.
+    identity = tuple(part.casefold() for part in coordinates)
+    records = []
+    for tool in tools:
+        repository = tool.get("repository_url")
+        if not isinstance(repository, str):
+            continue
+        other = repository_conflict_coordinates(repository)
+        if other and tuple(part.casefold() for part in other) == identity:
+            records.append(tool)
+    return (
+        records
+        if records and all(tool.get("repository_archived") is True for tool in records)
+        else []
+    )
+
+
 def catalogue_url_contexts(root: Path) -> dict[str, UrlContext]:
     fields = ("official_url", "repository_url", "documentation_url")
     tools = load_tools(root)
@@ -421,6 +487,8 @@ def catalogue_url_contexts(root: Path) -> dict[str, UrlContext]:
             if tool.get("repository_url") == url
             or (fragment and tool.get("repository_url") == canonical_url)
         ]
+        if not records:
+            records = documentation_archive_records(url, tools, fields)
         contexts[url] = UrlContext(
             repository_record_ids=tuple(str(tool["id"]) for tool in records),
             repository_archived_expected=bool(records)

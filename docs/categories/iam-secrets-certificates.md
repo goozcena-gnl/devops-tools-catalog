@@ -519,7 +519,8 @@ BSD-3-Clause local development certificate authority and TLS certificate CLI; th
 **Categories:** IAM, secrets and certificate management<br>
 **Roles:** Cloud Security Engineer, Platform Engineer<br>
 **Model:** Oss<br>
-**Status:** Active
+**Status:** Active<br>
+**Repository:** Archived
 
 External-authentication API service for JWT and cookie validation at Kubernetes ingress.
 
