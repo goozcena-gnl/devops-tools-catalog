@@ -11,6 +11,7 @@ from collections import Counter
 from datetime import UTC, datetime, timedelta
 from http.client import RemoteDisconnected
 from pathlib import Path
+from urllib.parse import urlunsplit
 
 import pytest
 
@@ -1530,3 +1531,115 @@ def test_archive_document_strict_assessment(monkeypatch):
         assert len(assessment.blocking_new) == expected_count
         assert not assessment.blocking_known
         assert strict_exit_code(True, assessment) == int(bool(expected_count))
+
+
+# F01 V1.1: default-port aliases must not bypass mixed archive metadata.
+@pytest.mark.parametrize(
+    "alias",
+    [
+        "https://github.com:443/ORG/REPO",
+        "http://github.com:80/org/repo",
+        "https://GITHUB.COM:443/org/repo.git/",
+        "https://github.com:0443/org/repo/",
+    ],
+)
+@pytest.mark.parametrize("metadata", [False, None, "missing"])
+def test_f01_default_port_conflict(monkeypatch, alias, metadata):
+    row = _archive_row(id="two", repo=alias, doc=None, archived=metadata)
+    if metadata == "missing":
+        del row["repository_archived"]
+    contexts = _archive_contexts(monkeypatch, _archive_row(), row)
+    assert contexts[_ARCHIVE_DOC] == UrlContext()
+    # The existing direct repository URL and transport rules are unchanged.
+    assert contexts[_ARCHIVE_ROOT] == UrlContext(("one",), True)
+    assert contexts[alias] == UrlContext(("two",), False)
+    assert repository_coordinates(alias) is None
+
+
+@pytest.mark.parametrize(
+    "alias",
+    [
+        "https://github.com:443/ORG/REPO",
+        "http://github.com:80/org/repo",
+        "https://GITHUB.COM:443/org/repo.git/",
+        "https://github.com:0443/org/repo/",
+    ],
+)
+def test_f01_default_port_consensus(monkeypatch, alias):
+    contexts = _archive_contexts(
+        monkeypatch, _archive_row(), _archive_row(id="two", repo=alias, doc=None)
+    )
+    assert contexts[_ARCHIVE_DOC] == UrlContext(("one", "two"), True)
+
+
+@pytest.mark.parametrize(
+    "alias",
+    [
+        "https://github.com:444/org/repo",
+        "http://github.com:443/org/repo",
+        "https://github.com:80/org/repo",
+        "https://github.com:bad/org/repo",
+        "https://github.com:65536/org/repo",
+        "https://user@github.com:443/org/repo",
+        urlunsplit(("https", "github.com:443@evil.test", "/org/repo", "", "")),
+        "https://github.com.evil.test:443/org/repo",
+        "https://github.com:443/org/other",
+        "https://github.com:443/other/repo",
+        "https://github.com:443/features/actions",
+    ],
+)
+def test_f01_unrelated_or_invalid_authority_not_a_conflict(monkeypatch, alias):
+    contexts = _archive_contexts(
+        monkeypatch,
+        _archive_row(),
+        _archive_row(id="two", repo=alias, doc=None, archived=False),
+    )
+    assert contexts[_ARCHIVE_DOC] == UrlContext(("one",), True)
+    assert repository_coordinates(alias) is None
+
+
+@pytest.mark.parametrize(
+    "root",
+    ["https://github.com:443/org/repo", "http://github.com:80/org/repo"],
+)
+def test_f01_port_document_does_not_become_eligible(monkeypatch, root):
+    doc = root + "/blob/main/README.md"
+    contexts = _archive_contexts(monkeypatch, _archive_row(repo=root, doc=doc))
+    assert contexts[doc] == UrlContext()
+    assert contexts[root] == UrlContext(("one",), True)
+    assert repository_coordinates(doc) is None
+
+
+def test_f01_conflict_invalidates_expected_cache_and_blocks_strict(
+    monkeypatch, tmp_path
+):
+    before = _archive_contexts(monkeypatch, _archive_row())[_ARCHIVE_DOC]
+    after = _archive_contexts(
+        monkeypatch,
+        _archive_row(),
+        _archive_row(
+            id="two",
+            repo="https://github.com:443/ORG/REPO",
+            doc=None,
+            archived=False,
+        ),
+    )[_ARCHIVE_DOC]
+    assert before == UrlContext(("one",), True)
+    assert after == UrlContext()
+    fresh = archived_result(_ARCHIVE_DOC, after.repository_archived_expected)
+    checked, calls = run_with_cached_result(
+        monkeypatch,
+        tmp_path,
+        cached=archived_result(_ARCHIVE_DOC, True),
+        current_expected=after.repository_archived_expected,
+        check_archived=True,
+        fresh=fresh,
+    )
+    assert checked is fresh
+    assert len(calls) == 1
+    assert calls[0]["repository_archived_expected"] is False
+    assert checked.classification == "repository-archived-unexpected"
+    assessment = assess_strict_results([checked], {})
+    assert len(assessment.blocking_new) == 1
+    assert not assessment.blocking_known
+    assert strict_exit_code(True, assessment) == 1

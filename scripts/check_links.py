@@ -408,6 +408,25 @@ def check_url(
     )
 
 
+def repository_conflict_coordinates(url: str) -> tuple[str, str] | None:
+    """Recognize default-port aliases only for documentary conflict detection."""
+    coordinates = repository_coordinates(url)
+    if coordinates is not None:
+        return coordinates
+    parsed = urllib.parse.urlsplit(url)
+    default_port = {"http": 80, "https": 443}.get(parsed.scheme)
+    if default_port is None or not parsed.netloc.casefold().startswith("github.com:"):
+        return None
+    try:
+        if parsed.hostname != "github.com" or parsed.port != default_port:
+            return None
+        if parsed.username is not None or parsed.password is not None:
+            return None
+    except ValueError:
+        return None
+    return repository_coordinates(parsed._replace(netloc="github.com").geturl())
+
+
 def documentation_archive_records(
     url: str, tools: list[dict[str, Any]], fields: tuple[str, ...]
 ) -> list[dict[str, Any]]:
@@ -445,7 +464,7 @@ def documentation_archive_records(
         repository = tool.get("repository_url")
         if not isinstance(repository, str):
             continue
-        other = repository_coordinates(repository)
+        other = repository_conflict_coordinates(repository)
         if other and tuple(part.casefold() for part in other) == identity:
             records.append(tool)
     return (
